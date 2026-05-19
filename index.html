@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIMAP Plataforma de Exámenes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .correct-bg { background-color: #dcfce7; border-color: #22c55e; color: #166534; }
+        .wrong-bg { background-color: #fee2e2; border-color: #ef4444; color: #991b1b; }
+        .fade-in { animation: fadeIn 0.3s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen">
+    <div id="app" class="min-h-screen flex flex-col"></div>
+    <script>
+        // --- CONSTANTES Y ESTADO ---
+        let ALL_QUESTIONS = [];
+        let subjectName = "Examen Autocargado";
+
+        let state = {
+            gameState: 'select',      // 'select' (upload/menu), 'playing', 'finished'
+            mode: 'sim',              // 'sim' (repaso), 'exam' (examen)
+            questionCount: 30,      
+            activeQuestions: [],
+            currentIndex: 0,
+            userAnswers: {},
+            simFeedback: null,
+            hiddenOptions: [],
+            timeLeft: 3600, 
+            timerInterval: null,
+            timeSpentSeconds: 0,
+            playInterval: null
+        };
+
+        // --- MANEJO DE HISTORIAL (localStorage) ---
+        function getHistory() {
+            try {
+                return JSON.parse(localStorage.getItem('saimap_history')) || [];
+            } catch(e) {
+                return [];
+            }
+        }
+
+        function saveAttempt(attempt) {
+            const history = getHistory();
+            history.unshift(attempt); // Añadir al principio
+            localStorage.setItem('saimap_history', JSON.stringify(history));
+        }
+
+        function clearHistory() {
+            if (confirm("¿Estás seguro de que quieres borrar todo tu historial de exámenes? Esto no se puede deshacer.")) {
+                localStorage.removeItem('saimap_history');
+                render();
+            }
+        }
+
+        // --- CARGA DE DATOS ---
+        const urlParams = new URLSearchParams(window.location.search);
+        const asignaturaParam = urlParams.get('asignatura');
+
+        if (asignaturaParam) {
+            // Intentar cargar el archivo JSON del servidor
+            subjectName = asignaturaParam.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+            fetch(`json/${asignaturaParam}.json`)
+                .then(res => {
+                    if (!res.ok) throw new Error("No se pudo encontrar el archivo JSON en el servidor.");
+                    return res.json();
+                })
+                .then(data => {
+                    initQuestions(data);
+                })
+                .catch(err => {
+                    console.error(err);
+                    alert(`Error cargando asignatura "${asignaturaParam}": ${err.message}\n\nPor favor, selecciona un archivo local manualmente.`);
+                    state.gameState = 'select';
+                    render();
+                });
+        }
+
+        function handleLocalFile(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            // Extraer nombre legible del archivo
+            subjectName = file.name.replace(/\.[^/.]+$/, "").replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    initQuestions(data);
+                } catch(err) {
+                    alert("Error leyendo el archivo JSON. Asegúrate de que sea un formato de examen válido.");
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function initQuestions(data) {
+            ALL_QUESTIONS = data.map((q, idx) => ({ id: idx + 1, ...q }));
+            state.gameState = 'menu';
+            state.questionCount = Math.min(30, ALL_QUESTIONS.length);
+            render();
+        }
+
+        const shuffleArray = (array) => {
+            const newArray = [...array];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        };
+
+        // --- MÉTODOS DEL JUEGO ---
+        const appMethods = {
+            setQuestionCount: (n) => { state.questionCount = n; render(); },
+            startExam: (selectedMode) => {
+                state.mode = selectedMode;
+                let count = Math.min(state.questionCount, ALL_QUESTIONS.length);
+                let selected = shuffleArray(ALL_QUESTIONS).slice(0, count);
+
+                state.activeQuestions = selected.map(q => {
+                    let opts = q.options.map((text, idx) => ({ text, isCorrect: idx === q.correct }));
+                    let shuffledOpts = shuffleArray(opts);
+                    return {
+                        ...q,
+                        options: shuffledOpts.map(o => o.text),
+                        correctIndex: shuffledOpts.findIndex(o => o.isCorrect)
+                    };
+                });
+
+                state.gameState = 'playing';
+                state.currentIndex = 0;
+                state.userAnswers = {};
+                state.simFeedback = null;
+                state.hiddenOptions = [];
+                state.timeSpentSeconds = 0;
+                
+                // Temporizador e Intervalo de juego
+                if(state.playInterval) clearInterval(state.playInterval);
+                state.playInterval = setInterval(() => {
+                    state.timeSpentSeconds++;
+                }, 1000);
+
+                if (state.mode === 'exam') {
+                    state.timeLeft = 3600; // 1 Hora
+                    if(state.timerInterval) clearInterval(state.timerInterval);
+                    state.timerInterval = setInterval(() => {
+                        state.timeLeft--;
+                        if(state.timeLeft <= 0) {
+                            clearInterval(state.timerInterval);
+                            appMethods.finishExam();
+                        } else {
+                            renderTimer();
+                        }
+                    }, 1000);
+                }
+                render();
+            },
+            handleAnswer: (optionIndex) => {
+                const currentQ = state.activeQuestions[state.currentIndex];
+                if (state.mode === 'sim' && state.simFeedback) return;
+                
+                if (state.mode === 'sim') {
+                    state.simFeedback = { isCorrect: optionIndex === currentQ.correctIndex, selected: optionIndex };
+                }
+                state.userAnswers[currentQ.id] = optionIndex;
+                render();
+            },
+            nextQuestion: () => {
+                if (state.currentIndex < state.activeQuestions.length - 1) {
+                    state.currentIndex++;
+                    state.simFeedback = null;
+                    state.hiddenOptions = [];
+                    render();
+                } else {
+                    appMethods.finishExam();
+                }
+            },
+            prevQuestion: () => {
+                if (state.currentIndex > 0) {
+                    state.currentIndex--;
+                    state.simFeedback = null; 
+                    state.hiddenOptions = [];
+                    render();
+                }
+            },
+            finishExam: () => {
+                if(state.timerInterval) clearInterval(state.timerInterval);
+                if(state.playInterval) clearInterval(state.playInterval);
+                state.gameState = 'finished';
+
+                // Guardar resultado en el historial local
+                const { correct, incorrect, blank, score } = calculateScore();
+                saveAttempt({
+                    subject: subjectName,
+                    date: new Date().toISOString(),
+                    mode: state.mode,
+                    correct,
+                    incorrect,
+                    blank,
+                    score: Number(score.toFixed(1)),
+                    total: state.activeQuestions.length,
+                    timeSpent: formatTime(state.timeSpentSeconds)
+                });
+
+                render();
+            },
+            useHint: () => {
+                if (state.hiddenOptions.length > 0) return;
+                const currentQ = state.activeQuestions[state.currentIndex];
+                const wrongs = currentQ.options.map((_, i) => i).filter(i => i !== currentQ.correctIndex);
+                state.hiddenOptions = [wrongs[Math.floor(Math.random() * wrongs.length)]];
+                
+                if (currentQ.hint) {
+                    alert("PISTA: " + currentQ.hint);
+                }
+                render();
+            },
+            restart: () => {
+                state.gameState = 'menu';
+                render();
+            },
+            backToSelector: () => {
+                state.gameState = 'select';
+                ALL_QUESTIONS = [];
+                render();
+            }
+        };
+
+        const calculateScore = () => {
+            let correct = 0, incorrect = 0, blank = 0;
+            state.activeQuestions.forEach(q => {
+                const ans = state.userAnswers[q.id];
+                if (ans === undefined) blank++;
+                else if (ans === q.correctIndex) correct++;
+                else incorrect++;
+            });
+            // Fórmula: Aciertos - (Fallos * 0.5)
+            const score = (correct * 1) - (incorrect * 0.5);
+            return { correct, incorrect, blank, score: Math.max(0, score) };
+        };
+
+        // --- VISTAS / RENDERS ---
+
+        function renderBrandFooter() {
+            return `
+                <div class="mt-auto py-6 text-center opacity-40">
+                    <div class="flex items-center justify-center gap-2 text-xs font-bold tracking-widest text-slate-400">
+                        <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+                        SAIMAP PLATFORM
+                        <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+                    </div>
+                </div>
+            `;
+        }
+
+        function formatTime(secs) {
+            const m = Math.floor(secs / 60);
+            const s = secs % 60;
+            return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function renderTimer() {
+            const timerEl = document.getElementById('exam-timer');
+            if (timerEl) {
+                timerEl.innerText = formatTime(state.timeLeft);
+                if (state.timeLeft < 300) {
+                    timerEl.classList.add('text-red-500', 'animate-pulse');
+                }
+            }
+        }
+
+        // 1. Selector de asignatura (cuando no se pasa url param o carga local)
+        function renderSelector() {
+            const history = getHistory();
+            
+            // Calcular estadísticas agregadas
+            const totalTests = history.length;
+            const avgScore = totalTests > 0 
+                ? (history.reduce((acc, curr) => acc + (curr.score / curr.total * 10), 0) / totalTests).toFixed(1)
+                : "0.0";
+            const passRate = totalTests > 0
+                ? Math.round((history.filter(h => (h.score / h.total) >= 0.5).length / totalTests) * 100)
+                : 0;
+
+            let historyHTML = '';
+            if (history.length === 0) {
+                historyHTML = `
+                    <div class="text-center py-8 text-slate-400 text-sm">
+                        <i data-lucide="history" class="w-12 h-12 mx-auto mb-2 opacity-30"></i>
+                        No tienes intentos guardados todavía.
+                    </div>
+                `;
+            } else {
+                historyHTML = `
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left text-slate-500">
+                            <thead class="text-xs text-slate-700 uppercase bg-slate-100 rounded-lg">
+                                <tr>
+                                    <th class="px-4 py-3">Asignatura</th>
+                                    <th class="px-4 py-3">Fecha</th>
+                                    <th class="px-4 py-3 text-center">Modo</th>
+                                    <th class="px-4 py-3 text-right">Nota (sobre 10)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100">
+                                ${history.slice(0, 5).map(h => {
+                                    const scoreTen = ((h.score / h.total) * 10).toFixed(1);
+                                    const passed = (h.score / h.total) >= 0.5;
+                                    return `
+                                    <tr class="hover:bg-slate-50/50">
+                                        <td class="px-4 py-3 font-semibold text-slate-700 truncate max-w-[180px]">${h.subject}</td>
+                                        <td class="px-4 py-3 text-xs">${new Date(h.date).toLocaleDateString()}</td>
+                                        <td class="px-4 py-3 text-center">
+                                            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${h.mode === 'sim' ? 'bg-green-100 text-green-800' : 'bg-indigo-100 text-indigo-800'}">
+                                                ${h.mode === 'sim' ? 'Repaso' : 'Examen'}
+                                            </span>
+                                        </td>
+                                        <td class="px-4 py-3 text-right font-bold ${passed ? 'text-emerald-600' : 'text-rose-600'}">
+                                            ${scoreTen} <span class="text-[10px] text-slate-400 font-normal">(${h.correct}/${h.total})</span>
+                                        </td>
+                                    </tr>`;
+                                }).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                    ${history.length > 5 ? `<p class="text-[11px] text-center text-slate-400 mt-3">Mostrando los últimos 5 intentos de ${history.length}</p>` : ''}
+                `;
+            }
+
+            return `
+                <div class="flex items-center justify-center p-4 flex-grow fade-in">
+                    <div class="max-w-2xl w-full bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+                        <div class="bg-slate-900 p-10 text-white text-center relative overflow-hidden">
+                            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
+                            <h2 class="text-xs font-bold tracking-[0.3em] text-indigo-300 mb-2 uppercase">Plataforma SAIMAP</h2>
+                            <h1 class="text-3xl font-black mb-2 tracking-tight">Cargar Asignatura</h1>
+                            <p class="opacity-60 text-xs">Sube la base de datos JSON de tu asignatura para empezar a practicar</p>
+                        </div>
+
+                        <div class="p-8 space-y-8">
+                            <!-- Input File Drag Drop -->
+                            <div class="flex items-center justify-center w-full">
+                                <label class="flex flex-col items-center justify-center w-full h-40 border-2 border-slate-200 border-dashed rounded-2xl cursor-pointer bg-slate-50 hover:bg-slate-100/50 transition-all group">
+                                    <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                        <i data-lucide="file-json" class="w-10 h-10 text-slate-400 group-hover:text-indigo-500 transition-colors mb-3"></i>
+                                        <p class="mb-2 text-sm text-slate-500"><span class="font-bold text-indigo-600">Haz clic para buscar</span> o arrastra tu archivo JSON</p>
+                                        <p class="text-xs text-slate-400">p.ej. memoria.json, desarrollo.json</p>
+                                    </div>
+                                    <input type="file" class="hidden" accept=".json" onchange="handleLocalFile(event)" />
+                                </label>
+                            </div>
+
+                            <!-- Panel de Historial -->
+                            <div class="border-t border-slate-100 pt-6">
+                                <div class="flex justify-between items-center mb-4">
+                                    <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Tu Rendimiento Histórico</h3>
+                                    ${history.length > 0 ? `<button onclick="clearHistory()" class="text-xs text-rose-500 hover:text-rose-700 font-bold">Borrar historial</button>` : ''}
+                                </div>
+
+                                <div class="grid grid-cols-3 gap-3 mb-6">
+                                    <div class="bg-slate-50 p-4 rounded-xl text-center border border-slate-100">
+                                        <span class="text-2xl font-black text-slate-700">${totalTests}</span>
+                                        <p class="text-[10px] text-slate-400 font-bold uppercase mt-1">Exámenes</p>
+                                    </div>
+                                    <div class="bg-slate-50 p-4 rounded-xl text-center border border-slate-100">
+                                        <span class="text-2xl font-black text-emerald-600">${avgScore}/10</span>
+                                        <p class="text-[10px] text-slate-400 font-bold uppercase mt-1">Nota Media</p>
+                                    </div>
+                                    <div class="bg-slate-50 p-4 rounded-xl text-center border border-slate-100">
+                                        <span class="text-2xl font-black text-indigo-600">${passRate}%</span>
+                                        <p class="text-[10px] text-slate-400 font-bold uppercase mt-1">Aprobados</p>
+                                    </div>
+                                </div>
+
+                                ${historyHTML}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                ${renderBrandFooter()}
+            `;
+        }
+
+        // 2. Menú de configuración del Test
+        function renderMenu() {
+            const availableQuestions = ALL_QUESTIONS.length;
+            const buttons = [30, 75, 150, 300].filter(n => n <= availableQuestions || n === 30);
+            
+            const countButtonsHTML = buttons.map(n => `
+                <button onclick="appMethods.setQuestionCount(${n})" 
+                    class="py-3 rounded-xl font-bold transition-all border-2 ${state.questionCount === n ? 'bg-indigo-50 border-indigo-600 text-indigo-700' : 'bg-slate-50 border-slate-100 text-slate-400 hover:bg-slate-100'}">
+                    ${n}
+                </button>`).join('');
+
+            return `
+                <div class="flex items-center justify-center p-4 flex-grow fade-in">
+                    <div class="max-w-2xl w-full bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+                        <div class="bg-slate-900 p-10 text-white text-center relative overflow-hidden">
+                            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
+                            <button onclick="appMethods.backToSelector()" class="absolute top-4 left-4 text-xs font-bold text-white/50 hover:text-white flex items-center gap-1">
+                                <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Cambiar Asignatura
+                            </button>
+                            <div class="relative z-10 mt-2">
+                                <div class="inline-flex items-center justify-center p-3 bg-white/10 rounded-2xl mb-4 backdrop-blur-sm">
+                                    <i data-lucide="layers" class="w-10 h-10 text-indigo-300"></i>
+                                </div>
+                                <h2 class="text-xs font-bold tracking-[0.3em] text-indigo-200 mb-2">SAIMAP EVAL</h2>
+                                <h1 class="text-3xl font-black mb-2 tracking-tight text-white">${subjectName}</h1>
+                                <p class="opacity-60 text-xs">Banco cargado: ${availableQuestions} preguntas disponibles</p>
+                            </div>
+                        </div>
+
+                        <div class="p-8 space-y-8">
+                            <div class="space-y-4">
+                                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Número de Preguntas</h3>
+                                <div class="grid grid-cols-4 gap-3">
+                                    ${countButtonsHTML}
+                                </div>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <button onclick="appMethods.startExam('sim')" class="flex flex-col p-5 border-2 border-slate-100 rounded-2xl hover:border-green-500 hover:bg-green-50/30 transition-all text-left group">
+                                    <div class="flex items-center gap-2 mb-2 text-green-600 font-bold">
+                                        <div class="p-2 bg-green-100 rounded-lg"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
+                                        <span>Modo Repaso</span>
+                                    </div>
+                                    <p class="text-xs text-slate-500 pl-11">Corrección instantánea con explicaciones al momento. Ideal para estudiar.</p>
+                                </button>
+                                
+                                <button onclick="appMethods.startExam('exam')" class="flex flex-col p-5 border-2 border-slate-100 rounded-2xl hover:border-indigo-500 hover:bg-indigo-50/30 transition-all text-left group">
+                                    <div class="flex items-center gap-2 mb-2 text-indigo-600 font-bold">
+                                        <div class="p-2 bg-indigo-100 rounded-lg"><i data-lucide="timer" class="w-5 h-5"></i></div>
+                                        <span>Modo Examen (1H)</span>
+                                    </div>
+                                    <p class="text-xs text-slate-500 pl-11">Sin ayudas. Temporizador de 1 hora. Corrección y explicaciones al final de la prueba.</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                ${renderBrandFooter()}
+            `;
+        }
+
+        // 3. Ejecución del Examen
+        function renderPlaying() {
+            const currentQ = state.activeQuestions[state.currentIndex];
+            const progress = ((state.currentIndex + 1) / state.activeQuestions.length) * 100;
+            const isSim = state.mode === 'sim';
+
+            return `
+                <div class="flex flex-col items-center p-4 w-full flex-grow fade-in">
+                    <div class="w-full max-w-3xl mb-6 flex justify-between items-center text-slate-400">
+                        <div class="flex flex-col">
+                            <span class="text-[10px] font-black tracking-widest uppercase text-slate-300">${subjectName}</span>
+                            <span class="text-sm font-bold text-slate-700">Pregunta ${state.currentIndex + 1} <span class="text-slate-300 font-normal">/ ${state.activeQuestions.length}</span></span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            ${!isSim ? `
+                            <div class="flex items-center gap-2 px-3 py-1 bg-slate-100 rounded-full text-slate-600 font-mono font-bold">
+                                <i data-lucide="clock" class="w-4 h-4"></i>
+                                <span id="exam-timer">${formatTime(state.timeLeft)}</span>
+                            </div>
+                            ` : ''}
+                            <button onclick="appMethods.finishExam()" title="Terminar y Corregir ahora" class="flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold border bg-red-50 border-red-200 text-red-600 hover:bg-red-100 transition-colors cursor-pointer">
+                                <i data-lucide="check-square" class="w-3 h-3"></i> Corregir
+                            </button>
+                            <span class="px-3 py-1 rounded-full text-xs font-bold border ${isSim ? 'bg-green-50 border-green-200 text-green-700' : 'bg-indigo-50 border-indigo-200 text-indigo-700'}">
+                                ${isSim ? 'REPASO' : 'EXAMEN'}
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="w-full max-w-3xl h-1.5 bg-slate-100 rounded-full mb-8 overflow-hidden">
+                        <div class="h-full bg-slate-800 transition-all duration-500 ease-out" style="width: ${progress}%"></div>
+                    </div>
+
+                    <div class="w-full max-w-3xl bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-10 mb-6 relative">
+                        <h2 class="text-lg md:text-xl font-bold text-slate-800 mb-8 leading-relaxed">${currentQ.question || currentQ.q}</h2>
+                        
+                        <div class="space-y-3">
+                            ${currentQ.options.map((option, idx) => {
+                                if (state.hiddenOptions.includes(idx)) return ''; 
+
+                                let statusClass = "border-slate-100 bg-slate-50 text-slate-600 hover:border-slate-300 hover:bg-white";
+                                let iconContent = String.fromCharCode(65 + idx);
+                                let iconClass = "bg-white border-slate-200 text-slate-400";
+
+                                if (isSim && state.simFeedback) {
+                                    if (idx === currentQ.correctIndex) {
+                                        statusClass = "correct-bg border-green-500 ring-1 ring-green-500";
+                                        iconClass = "bg-green-500 text-white border-green-500";
+                                        iconContent = `<i data-lucide="check" class="w-4 h-4"></i>`;
+                                    } else if (state.simFeedback.selected === idx) {
+                                        statusClass = "wrong-bg border-red-500";
+                                        iconClass = "bg-red-500 text-white border-red-500";
+                                        iconContent = `<i data-lucide="x" class="w-4 h-4"></i>`;
+                                    } else {
+                                        statusClass = "opacity-40 border-transparent bg-transparent";
+                                    }
+                                } else if (!isSim && state.userAnswers[currentQ.id] === idx) {
+                                    statusClass = "bg-slate-800 border-slate-800 text-white shadow-lg shadow-slate-200";
+                                    iconClass = "bg-white/20 text-white border-transparent";
+                                }
+
+                                return `
+                                <button onclick="appMethods.handleAnswer(${idx})" ${(isSim && state.simFeedback) ? 'disabled' : ''} 
+                                    class="w-full text-left p-4 rounded-xl border-2 transition-all duration-200 flex items-start gap-4 font-medium group ${statusClass}">
+                                    <div class="w-8 h-8 rounded-lg border-2 flex-shrink-0 flex items-center justify-center text-xs font-bold transition-colors ${iconClass}">
+                                        ${iconContent}
+                                    </div>
+                                    <span class="mt-0.5 leading-snug">${option}</span>
+                                </button>`;
+                            }).join('')}
+                        </div>
+                        
+                        ${isSim && state.simFeedback && currentQ.explanation ? `
+                            <div class="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-xl text-sm text-blue-800">
+                                <div class="font-bold flex items-center gap-2 mb-1"><i data-lucide="info" class="w-4 h-4"></i> Explicación:</div>
+                                ${currentQ.explanation}
+                            </div>
+                        ` : ''}
+                    </div>
+
+                    <div class="w-full max-w-3xl flex justify-between items-center gap-4">
+                        <button onclick="appMethods.prevQuestion()" ${(state.currentIndex === 0) ? 'disabled' : ''} 
+                            class="flex items-center gap-2 px-5 py-3 rounded-xl font-bold transition-all text-sm ${(state.currentIndex === 0) ? 'opacity-0' : 'text-slate-400 hover:text-slate-600 hover:bg-slate-100'}">
+                            <i data-lucide="arrow-left" class="w-4 h-4"></i> Anterior
+                        </button>
+                        
+                        <div class="flex gap-2">
+                             ${(isSim && !state.simFeedback) ? `
+                                <button onclick="appMethods.useHint()" ${state.hiddenOptions.length > 0 ? 'disabled' : ''} 
+                                    class="flex items-center gap-2 px-4 py-3 text-amber-500 font-bold rounded-xl hover:bg-amber-50 transition-all text-sm ${state.hiddenOptions.length > 0 ? 'opacity-30 grayscale' : ''}">
+                                    <i data-lucide="zap" class="w-4 h-4"></i> ${currentQ.hint ? 'Pista' : '50/50'}
+                                </button>
+                             ` : ''}
+                        </div>
+
+                        <button onclick="${state.currentIndex === state.activeQuestions.length - 1 ? 'appMethods.finishExam()' : 'appMethods.nextQuestion()'}" 
+                            class="flex items-center gap-2 px-8 py-3 bg-slate-900 text-white rounded-xl font-bold shadow-lg shadow-slate-200 hover:bg-slate-800 hover:-translate-y-0.5 transition-all text-sm ${(isSim && !state.simFeedback) ? 'opacity-50 grayscale cursor-not-allowed' : ''}" ${(isSim && !state.simFeedback) ? 'disabled' : ''}>
+                            ${state.currentIndex === state.activeQuestions.length - 1 ? 'Finalizar' : 'Siguiente'} <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        // 4. Resultados del Examen
+        function renderFinished() {
+            const { correct, incorrect, blank, score } = calculateScore();
+            const max = state.activeQuestions.length;
+            const passed = (score / max) >= 0.5;
+
+            const isExam = state.mode === 'exam';
+            let explanationsHTML = '';
+            
+            if (isExam) {
+                explanationsHTML = `
+                <div class="mt-8 border-t border-slate-100 pt-8 text-left w-full max-h-[30rem] overflow-y-auto pr-2">
+                    <h3 class="font-bold text-slate-800 mb-4">Revisión de Respuestas:</h3>
+                    <div class="space-y-6">
+                        ${state.activeQuestions.map((q, i) => {
+                            const ans = state.userAnswers[q.id];
+                            const isCorrect = ans === q.correctIndex;
+                            const isBlank = ans === undefined;
+                            
+                            return `
+                            <div class="p-4 rounded-xl border ${isCorrect ? 'border-green-200 bg-green-50' : (isBlank ? 'border-slate-200 bg-slate-50' : 'border-red-200 bg-red-50')}">
+                                <div class="font-bold text-sm mb-2">${i+1}. ${q.question || q.q}</div>
+                                <div class="text-xs mb-2">Tu respuesta: ${isBlank ? 'En blanco' : q.options[ans]} ${isCorrect ? '✅' : '❌'}</div>
+                                ${!isCorrect && !isBlank ? `<div class="text-xs font-semibold text-green-700 mb-2">Correcta: ${q.options[q.correctIndex]}</div>` : ''}
+                                ${q.explanation ? `<div class="text-xs text-slate-600 mt-2 pt-2 border-t border-slate-200"><strong>Explicación:</strong> ${q.explanation}</div>` : ''}
+                            </div>
+                            `
+                        }).join('')}
+                    </div>
+                </div>`;
+            }
+
+            return `
+                <div class="p-6 flex-grow flex items-center justify-center fade-in">
+                    <div class="max-w-2xl w-full bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 relative">
+                        <div class="${passed ? 'bg-emerald-500' : 'bg-rose-500'} p-10 text-white text-center relative overflow-hidden">
+                            <div class="relative z-10">
+                                <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
+                                    <i data-lucide="${passed ? 'trophy' : 'alert-circle'}" class="w-10 h-10 text-white"></i>
+                                </div>
+                                <h2 class="text-3xl font-black mb-1">${passed ? '¡Aprobado!' : 'No superado'}</h2>
+                                <p class="text-white/80 font-medium text-sm">${subjectName}</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 divide-x divide-slate-100 border-b border-slate-100">
+                            <div class="p-6 text-center">
+                                <div class="text-2xl font-black text-emerald-500 mb-1">${correct}</div>
+                                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Aciertos</div>
+                            </div>
+                            <div class="p-6 text-center">
+                                <div class="text-2xl font-black text-rose-500 mb-1">${incorrect}</div>
+                                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Fallos</div>
+                            </div>
+                            <div class="p-6 text-center">
+                                <div class="text-2xl font-black text-slate-400 mb-1">${blank}</div>
+                                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Blancos</div>
+                            </div>
+                        </div>
+
+                        <div class="p-8 text-center bg-slate-50">
+                            <div class="text-xs text-slate-400 font-bold uppercase tracking-widest mb-2">Puntuación Global</div>
+                            <div class="text-5xl font-black text-slate-800 tracking-tight">${score.toFixed(1)} <span class="text-xl text-slate-400 font-normal">/ ${max}</span></div>
+                        </div>
+                        
+                        ${isExam ? `<div class="px-8 pb-4">${explanationsHTML}</div>` : ''}
+
+                        <div class="p-6 flex gap-3">
+                            <button onclick="appMethods.restart()" class="flex-grow py-4 bg-slate-900 text-white rounded-xl font-bold shadow-lg shadow-slate-200 hover:bg-slate-800 transition-all flex items-center justify-center gap-2">
+                                <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Volver a Configurar
+                            </button>
+                            <button onclick="appMethods.backToSelector()" class="py-4 px-6 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
+                                <i data-lucide="log-out" class="w-4 h-4"></i> Salir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function render() {
+            const app = document.getElementById('app');
+            if (state.gameState === 'select') app.innerHTML = renderSelector();
+            else if (state.gameState === 'menu') app.innerHTML = renderMenu();
+            else if (state.gameState === 'playing') app.innerHTML = renderPlaying();
+            else if (state.gameState === 'finished') app.innerHTML = renderFinished();
+            lucide.createIcons();
+            window.scrollTo(0, 0);
+        }
+
+        render();
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Archivos de sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node (por si instalan algo en el futuro)
+node_modules/
+dist/
+.env
+.env.local
