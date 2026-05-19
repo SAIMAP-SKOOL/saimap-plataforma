@@ -19,11 +19,23 @@
     <div id="app" class="min-h-screen flex flex-col"></div>
     <script>
         // --- CONSTANTES Y ESTADO ---
+        const AVAILABLE_SUBJECTS = [
+            { id: "psicologia-de-la-memoria", name: "Psicología de la Memoria", year: "1º" },
+            { id: "psicologia-del-desarrollo", name: "Psicología del Desarrollo", year: "1º" },
+            { id: "historia-de-la-psicologia", name: "Historia de la Psicología", year: "1º" },
+            { id: "psicologia-social", name: "Psicología Social", year: "1º" },
+            { id: "psicologia-de-la-atencion-y-percepcion", name: "Psicología de la Atención y Percepción", year: "1º" },
+            { id: "psicologia-de-la-motivacion-y-emocion", name: "Psicología de la Motivación y Emoción", year: "1º" },
+            { id: "psicologia-del-aprendizaje", name: "Psicología del Aprendizaje", year: "1º" },
+            { id: "psicologia-clinica", name: "Psicología Clínica", year: "3º" },
+            { id: "psicologia-del-trabajo", name: "Psicología del Trabajo", year: "3º" }
+        ];
+
         let ALL_QUESTIONS = [];
         let subjectName = "Examen Autocargado";
 
         let state = {
-            gameState: 'select',      // 'select' (upload/menu), 'playing', 'finished'
+            gameState: 'select',      // 'select' (dashboard/menu), 'playing', 'finished'
             mode: 'sim',              // 'sim' (repaso), 'exam' (examen)
             questionCount: 30,      
             activeQuestions: [],
@@ -34,7 +46,9 @@
             timeLeft: 3600, 
             timerInterval: null,
             timeSpentSeconds: 0,
-            playInterval: null
+            playInterval: null,
+            filterYear: 'Todos',      // 'Todos', '1º', '3º'
+            showUploader: false       // Mostrar/ocultar zona de carga manual
         };
 
         // --- MANEJO DE HISTORIAL (localStorage) ---
@@ -64,9 +78,18 @@
         const asignaturaParam = urlParams.get('asignatura');
 
         if (asignaturaParam) {
-            // Intentar cargar el archivo JSON del servidor
-            subjectName = asignaturaParam.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-            fetch(`json/${asignaturaParam}.json`)
+            loadSubject(asignaturaParam, false);
+        }
+
+        function loadSubject(id, updateHistoryState = true) {
+            const subject = AVAILABLE_SUBJECTS.find(s => s.id === id);
+            subjectName = subject ? subject.name : id.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+            
+            if (updateHistoryState) {
+                window.history.pushState(null, '', `?asignatura=${id}`);
+            }
+
+            fetch(`json/${id}.json`)
                 .then(res => {
                     if (!res.ok) throw new Error("No se pudo encontrar el archivo JSON en el servidor.");
                     return res.json();
@@ -76,7 +99,7 @@
                 })
                 .catch(err => {
                     console.error(err);
-                    alert(`Error cargando asignatura "${asignaturaParam}": ${err.message}\n\nPor favor, selecciona un archivo local manualmente.`);
+                    alert(`Error cargando asignatura "${id}": ${err.message}\n\nPor favor, selecciona un archivo local manualmente.`);
                     state.gameState = 'select';
                     render();
                 });
@@ -86,7 +109,6 @@
             const file = event.target.files[0];
             if (!file) return;
 
-            // Extraer nombre legible del archivo
             subjectName = file.name.replace(/\.[^/.]+$/, "").replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
             const reader = new FileReader();
@@ -142,14 +164,13 @@
                 state.hiddenOptions = [];
                 state.timeSpentSeconds = 0;
                 
-                // Temporizador e Intervalo de juego
                 if(state.playInterval) clearInterval(state.playInterval);
                 state.playInterval = setInterval(() => {
                     state.timeSpentSeconds++;
                 }, 1000);
 
                 if (state.mode === 'exam') {
-                    state.timeLeft = 3600; // 1 Hora
+                    state.timeLeft = 3600; 
                     if(state.timerInterval) clearInterval(state.timerInterval);
                     state.timerInterval = setInterval(() => {
                         state.timeLeft--;
@@ -196,7 +217,6 @@
                 if(state.playInterval) clearInterval(state.playInterval);
                 state.gameState = 'finished';
 
-                // Guardar resultado en el historial local
                 const { correct, incorrect, blank, score } = calculateScore();
                 saveAttempt({
                     subject: subjectName,
@@ -230,6 +250,15 @@
             backToSelector: () => {
                 state.gameState = 'select';
                 ALL_QUESTIONS = [];
+                window.history.pushState(null, '', window.location.pathname);
+                render();
+            },
+            setFilterYear: (year) => {
+                state.filterYear = year;
+                render();
+            },
+            toggleUploader: () => {
+                state.showUploader = !state.showUploader;
                 render();
             }
         };
@@ -242,7 +271,6 @@
                 else if (ans === q.correctIndex) correct++;
                 else incorrect++;
             });
-            // Fórmula: Aciertos - (Fallos * 0.5)
             const score = (correct * 1) - (incorrect * 0.5);
             return { correct, incorrect, blank, score: Math.max(0, score) };
         };
@@ -251,11 +279,11 @@
 
         function renderBrandFooter() {
             return `
-                <div class="mt-auto py-6 text-center opacity-40">
+                <div class="mt-auto py-8 text-center opacity-30">
                     <div class="flex items-center justify-center gap-2 text-xs font-bold tracking-widest text-slate-400">
-                        <span class="w-2 h-2 rounded-full bg-slate-400"></span>
-                        SAIMAP PLATFORM
-                        <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                        SAIMAP ACADEMY
+                        <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
                     </div>
                 </div>
             `;
@@ -277,11 +305,11 @@
             }
         }
 
-        // 1. Selector de asignatura (cuando no se pasa url param o carga local)
+        // Dashboard principal
         function renderSelector() {
             const history = getHistory();
             
-            // Calcular estadísticas agregadas
+            // Estadísticas generales
             const totalTests = history.length;
             const avgScore = totalTests > 0 
                 ? (history.reduce((acc, curr) => acc + (curr.score / curr.total * 10), 0) / totalTests).toFixed(1)
@@ -290,98 +318,198 @@
                 ? Math.round((history.filter(h => (h.score / h.total) >= 0.5).length / totalTests) * 100)
                 : 0;
 
-            let historyHTML = '';
-            if (history.length === 0) {
-                historyHTML = `
-                    <div class="text-center py-8 text-slate-400 text-sm">
-                        <i data-lucide="history" class="w-12 h-12 mx-auto mb-2 opacity-30"></i>
-                        No tienes intentos guardados todavía.
+            // Extraer asignaturas practicadas recientemente (máximo 3 únicas)
+            const recentPracticedNames = [...new Set(history.map(h => h.subject))].slice(0, 3);
+            
+            let recentSectionHTML = '';
+            if (recentPracticedNames.length > 0) {
+                recentSectionHTML = `
+                    <div class="space-y-3">
+                        <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
+                            <i data-lucide="sparkles" class="w-4 h-4 text-indigo-500"></i> Seguir Practicando
+                        </h3>
+                        <div class="grid sm:grid-cols-3 gap-3">
+                            ${recentPracticedNames.map(name => {
+                                // Buscar si pertenece a las disponibles para sacar su ID
+                                const matched = AVAILABLE_SUBJECTS.find(s => s.name === name);
+                                const clickAction = matched 
+                                    ? `loadSubject('${matched.id}')` 
+                                    : `alert('Esta asignatura fue cargada localmente. Vuelve a arrastrar el archivo para practicar.')`;
+                                
+                                // Sacar el último intento para esta asignatura
+                                const lastAttempt = history.find(h => h.subject === name);
+                                const lastScore = lastAttempt ? ((lastAttempt.score / lastAttempt.total) * 10).toFixed(1) : '0.0';
+                                const passed = lastAttempt && (lastAttempt.score / lastAttempt.total) >= 0.5;
+
+                                return `
+                                <button onclick="${clickAction}" class="p-4 bg-white hover:bg-slate-50 border border-slate-200 hover:border-indigo-400 rounded-2xl text-left transition-all hover:-translate-y-0.5 shadow-sm group">
+                                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest block mb-1">Reciente</span>
+                                    <h4 class="font-bold text-slate-800 text-sm truncate mb-3 group-hover:text-indigo-600">${name}</h4>
+                                    <div class="flex items-center justify-between text-xs text-slate-400 pt-2 border-t border-slate-100">
+                                        <span>Última nota:</span>
+                                        <span class="font-bold ${passed ? 'text-emerald-600' : 'text-rose-600'}">${lastScore}/10</span>
+                                    </div>
+                                </button>
+                                `;
+                            }).join('')}
+                        </div>
                     </div>
-                `;
-            } else {
-                historyHTML = `
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-sm text-left text-slate-500">
-                            <thead class="text-xs text-slate-700 uppercase bg-slate-100 rounded-lg">
-                                <tr>
-                                    <th class="px-4 py-3">Asignatura</th>
-                                    <th class="px-4 py-3">Fecha</th>
-                                    <th class="px-4 py-3 text-center">Modo</th>
-                                    <th class="px-4 py-3 text-right">Nota (sobre 10)</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-slate-100">
-                                ${history.slice(0, 5).map(h => {
-                                    const scoreTen = ((h.score / h.total) * 10).toFixed(1);
-                                    const passed = (h.score / h.total) >= 0.5;
-                                    return `
-                                    <tr class="hover:bg-slate-50/50">
-                                        <td class="px-4 py-3 font-semibold text-slate-700 truncate max-w-[180px]">${h.subject}</td>
-                                        <td class="px-4 py-3 text-xs">${new Date(h.date).toLocaleDateString()}</td>
-                                        <td class="px-4 py-3 text-center">
-                                            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${h.mode === 'sim' ? 'bg-green-100 text-green-800' : 'bg-indigo-100 text-indigo-800'}">
-                                                ${h.mode === 'sim' ? 'Repaso' : 'Examen'}
-                                            </span>
-                                        </td>
-                                        <td class="px-4 py-3 text-right font-bold ${passed ? 'text-emerald-600' : 'text-rose-600'}">
-                                            ${scoreTen} <span class="text-[10px] text-slate-400 font-normal">(${h.correct}/${h.total})</span>
-                                        </td>
-                                    </tr>`;
-                                }).join('')}
-                            </tbody>
-                        </table>
-                    </div>
-                    ${history.length > 5 ? `<p class="text-[11px] text-center text-slate-400 mt-3">Mostrando los últimos 5 intentos de ${history.length}</p>` : ''}
                 `;
             }
 
+            // Asignaturas Disponibles Filtradas
+            const filteredSubjects = AVAILABLE_SUBJECTS.filter(s => 
+                state.filterYear === 'Todos' || s.year === state.filterYear
+            );
+
+            const subjectsGridHTML = filteredSubjects.map(s => {
+                // Contar intentos de esta asignatura en el historial
+                const attemptsCount = history.filter(h => h.subject === s.name).length;
+                
+                return `
+                <button onclick="loadSubject('${s.id}')" class="p-5 bg-white hover:bg-slate-50 border border-slate-200 hover:border-indigo-500 rounded-2xl text-left transition-all hover:-translate-y-0.5 shadow-sm group relative overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-slate-100 text-slate-600">${s.year} Curso</span>
+                            ${attemptsCount > 0 ? `<span class="text-[10px] font-bold text-emerald-600 flex items-center gap-1"><i data-lucide="check-circle" class="w-3 h-3"></i> Practicada</span>` : ''}
+                        </div>
+                        <h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-indigo-600 mb-4">${s.name}</h3>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-slate-400 border-t border-slate-100 pt-3 mt-auto">
+                        <span>Intentos: <strong>${attemptsCount}</strong></span>
+                        <span class="font-bold text-indigo-600 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                            Iniciar <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                        </span>
+                    </div>
+                </button>
+                `;
+            }).join('');
+
             return `
-                <div class="flex items-center justify-center p-4 flex-grow fade-in">
-                    <div class="max-w-2xl w-full bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
-                        <div class="bg-slate-900 p-10 text-white text-center relative overflow-hidden">
-                            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
-                            <h2 class="text-xs font-bold tracking-[0.3em] text-indigo-300 mb-2 uppercase">Plataforma SAIMAP</h2>
-                            <h1 class="text-3xl font-black mb-2 tracking-tight">Cargar Asignatura</h1>
-                            <p class="opacity-60 text-xs">Sube la base de datos JSON de tu asignatura para empezar a practicar</p>
+                <div class="max-w-5xl w-full mx-auto px-4 py-8 space-y-8 flex-grow fade-in">
+                    <!-- Cabecera / Banner -->
+                    <div class="bg-slate-900 text-white rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden flex flex-col md:flex-row md:items-center justify-between gap-6">
+                        <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
+                        <div class="space-y-2 max-w-xl">
+                            <span class="text-xs font-bold tracking-[0.3em] text-indigo-300 uppercase block">Portal SAIMAP</span>
+                            <h1 class="text-3xl md:text-4xl font-black tracking-tight">Academia de Psicología</h1>
+                            <p class="text-slate-400 text-sm">Practica exámenes de todas tus asignaturas de la VIU con correcciones y explicaciones al instante.</p>
+                        </div>
+                        <div class="flex gap-3">
+                            <button onclick="appMethods.toggleUploader()" class="px-5 py-3 rounded-xl border border-white/20 hover:bg-white/10 text-white font-bold text-sm transition-all flex items-center gap-2">
+                                <i data-lucide="${state.showUploader ? 'x-circle' : 'upload-cloud'}" class="w-4 h-4"></i>
+                                ${state.showUploader ? 'Cerrar Carga' : 'Cargar JSON local'}
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Dropzone manual oculto/mostrado -->
+                    ${state.showUploader ? `
+                    <div class="bg-white border-2 border-slate-200 border-dashed rounded-3xl p-8 text-center hover:bg-slate-100/30 transition-all relative fade-in">
+                        <label class="cursor-pointer flex flex-col items-center justify-center gap-2">
+                            <i data-lucide="file-json" class="w-10 h-10 text-indigo-500 mb-2"></i>
+                            <span class="font-bold text-slate-700">Arrastra tu JSON local aquí o <span class="text-indigo-600">búscalo en tu ordenador</span></span>
+                            <span class="text-xs text-slate-400">Usa esto para probar nuevos archivos JSON que no estén subidos al servidor todavía</span>
+                            <input type="file" class="hidden" accept=".json" onchange="handleLocalFile(event)" />
+                        </label>
+                    </div>
+                    ` : ''}
+
+                    <!-- Sección Recientes -->
+                    ${recentSectionHTML}
+
+                    <!-- Catálogo de Asignaturas -->
+                    <div class="space-y-4">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-3">
+                            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
+                                <i data-lucide="book-open" class="w-4 h-4"></i> Catálogo de Asignaturas
+                            </h3>
+                            <!-- Filtros de Curso -->
+                            <div class="flex bg-slate-200/60 p-1 rounded-xl text-xs font-bold text-slate-500 self-start">
+                                ${['Todos', '1º', '3º'].map(y => `
+                                <button onclick="appMethods.setFilterYear('${y}')" class="px-4 py-1.5 rounded-lg transition-all ${state.filterYear === y ? 'bg-white text-slate-800 shadow-sm' : 'hover:text-slate-700'}">
+                                    ${y === 'Todos' ? 'Todos' : y + ' Curso'}
+                                </button>
+                                `).join('')}
+                            </div>
                         </div>
 
-                        <div class="p-8 space-y-8">
-                            <!-- Input File Drag Drop -->
-                            <div class="flex items-center justify-center w-full">
-                                <label class="flex flex-col items-center justify-center w-full h-40 border-2 border-slate-200 border-dashed rounded-2xl cursor-pointer bg-slate-50 hover:bg-slate-100/50 transition-all group">
-                                    <div class="flex flex-col items-center justify-center pt-5 pb-6">
-                                        <i data-lucide="file-json" class="w-10 h-10 text-slate-400 group-hover:text-indigo-500 transition-colors mb-3"></i>
-                                        <p class="mb-2 text-sm text-slate-500"><span class="font-bold text-indigo-600">Haz clic para buscar</span> o arrastra tu archivo JSON</p>
-                                        <p class="text-xs text-slate-400">p.ej. memoria.json, desarrollo.json</p>
-                                    </div>
-                                    <input type="file" class="hidden" accept=".json" onchange="handleLocalFile(event)" />
-                                </label>
+                        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            ${subjectsGridHTML}
+                        </div>
+                    </div>
+
+                    <!-- Panel de Rendimiento e Historial -->
+                    <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-8 space-y-6">
+                        <div class="flex justify-between items-center border-b border-slate-100 pb-4">
+                            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
+                                <i data-lucide="activity" class="w-4 h-4"></i> Tu Rendimiento Global
+                            </h3>
+                            ${history.length > 0 ? `<button onclick="clearHistory()" class="text-xs text-rose-500 hover:text-rose-700 font-bold">Borrar Historial</button>` : ''}
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="bg-slate-50 p-4 rounded-2xl text-center border border-slate-100">
+                                <span class="text-3xl font-black text-slate-700">${totalTests}</span>
+                                <p class="text-[10px] text-slate-400 font-bold uppercase mt-1">Exámenes Realizados</p>
                             </div>
-
-                            <!-- Panel de Historial -->
-                            <div class="border-t border-slate-100 pt-6">
-                                <div class="flex justify-between items-center mb-4">
-                                    <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Tu Rendimiento Histórico</h3>
-                                    ${history.length > 0 ? `<button onclick="clearHistory()" class="text-xs text-rose-500 hover:text-rose-700 font-bold">Borrar historial</button>` : ''}
-                                </div>
-
-                                <div class="grid grid-cols-3 gap-3 mb-6">
-                                    <div class="bg-slate-50 p-4 rounded-xl text-center border border-slate-100">
-                                        <span class="text-2xl font-black text-slate-700">${totalTests}</span>
-                                        <p class="text-[10px] text-slate-400 font-bold uppercase mt-1">Exámenes</p>
-                                    </div>
-                                    <div class="bg-slate-50 p-4 rounded-xl text-center border border-slate-100">
-                                        <span class="text-2xl font-black text-emerald-600">${avgScore}/10</span>
-                                        <p class="text-[10px] text-slate-400 font-bold uppercase mt-1">Nota Media</p>
-                                    </div>
-                                    <div class="bg-slate-50 p-4 rounded-xl text-center border border-slate-100">
-                                        <span class="text-2xl font-black text-indigo-600">${passRate}%</span>
-                                        <p class="text-[10px] text-slate-400 font-bold uppercase mt-1">Aprobados</p>
-                                    </div>
-                                </div>
-
-                                ${historyHTML}
+                            <div class="bg-slate-50 p-4 rounded-2xl text-center border border-slate-100">
+                                <span class="text-3xl font-black text-emerald-600">${avgScore}/10</span>
+                                <p class="text-[10px] text-slate-400 font-bold uppercase mt-1">Nota Media</p>
                             </div>
+                            <div class="bg-slate-50 p-4 rounded-2xl text-center border border-slate-100">
+                                <span class="text-3xl font-black text-indigo-600">${passRate}%</span>
+                                <p class="text-[10px] text-slate-400 font-bold uppercase mt-1">Tasa de Aprobados</p>
+                            </div>
+                        </div>
+
+                        <!-- Historial Detallado -->
+                        <div class="space-y-3">
+                            <h4 class="text-xs font-bold text-slate-500 uppercase">Últimos Exámenes Completados</h4>
+                            ${history.length === 0 ? `
+                                <div class="text-center py-8 text-slate-400 text-sm">
+                                    <i data-lucide="history" class="w-12 h-12 mx-auto mb-2 opacity-30"></i>
+                                    No tienes intentos guardados todavía. Tus resultados aparecerán aquí.
+                                </div>
+                            ` : `
+                                <div class="overflow-x-auto rounded-xl border border-slate-100">
+                                    <table class="w-full text-sm text-left text-slate-500">
+                                        <thead class="text-xs text-slate-700 uppercase bg-slate-50">
+                                            <tr>
+                                                <th class="px-4 py-3">Asignatura</th>
+                                                <th class="px-4 py-3">Fecha</th>
+                                                <th class="px-4 py-3 text-center">Modo</th>
+                                                <th class="px-4 py-3 text-center">Aciertos/Fallos</th>
+                                                <th class="px-4 py-3 text-right">Nota Final</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-slate-100 bg-white">
+                                            ${history.map(h => {
+                                                const scoreTen = ((h.score / h.total) * 10).toFixed(1);
+                                                const passed = (h.score / h.total) >= 0.5;
+                                                return `
+                                                <tr class="hover:bg-slate-50/50">
+                                                    <td class="px-4 py-3 font-semibold text-slate-700 truncate max-w-[220px]">${h.subject}</td>
+                                                    <td class="px-4 py-3 text-xs">${new Date(h.date).toLocaleDateString()} ${new Date(h.date).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</td>
+                                                    <td class="px-4 py-3 text-center">
+                                                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${h.mode === 'sim' ? 'bg-green-100 text-green-800' : 'bg-indigo-100 text-indigo-800'}">
+                                                            ${h.mode === 'sim' ? 'Repaso' : 'Examen'}
+                                                        </span>
+                                                    </td>
+                                                    <td class="px-4 py-3 text-center text-xs">
+                                                        <span class="text-emerald-600 font-bold">${h.correct} A</span> - 
+                                                        <span class="text-rose-500 font-bold">${h.incorrect} F</span>
+                                                        ${h.blank > 0 ? ` - <span class="text-slate-400">${h.blank} B</span>` : ''}
+                                                    </td>
+                                                    <td class="px-4 py-3 text-right font-black ${passed ? 'text-emerald-600' : 'text-rose-600'}">
+                                                        ${scoreTen} <span class="text-[10px] text-slate-400 font-normal">/ 10</span>
+                                                    </td>
+                                                </tr>`;
+                                            }).join('')}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            `}
                         </div>
                     </div>
                 </div>
@@ -389,7 +517,7 @@
             `;
         }
 
-        // 2. Menú de configuración del Test
+        // Menú de configuración del Test
         function renderMenu() {
             const availableQuestions = ALL_QUESTIONS.length;
             const buttons = [30, 75, 150, 300].filter(n => n <= availableQuestions || n === 30);
@@ -406,14 +534,14 @@
                         <div class="bg-slate-900 p-10 text-white text-center relative overflow-hidden">
                             <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
                             <button onclick="appMethods.backToSelector()" class="absolute top-4 left-4 text-xs font-bold text-white/50 hover:text-white flex items-center gap-1">
-                                <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Cambiar Asignatura
+                                <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Volver al Catálogo
                             </button>
                             <div class="relative z-10 mt-2">
                                 <div class="inline-flex items-center justify-center p-3 bg-white/10 rounded-2xl mb-4 backdrop-blur-sm">
                                     <i data-lucide="layers" class="w-10 h-10 text-indigo-300"></i>
                                 </div>
                                 <h2 class="text-xs font-bold tracking-[0.3em] text-indigo-200 mb-2">SAIMAP EVAL</h2>
-                                <h1 class="text-3xl font-black mb-2 tracking-tight text-white">${subjectName}</h1>
+                                <h1 class="text-3xl font-black mb-2 tracking-tight text-white leading-tight">${subjectName}</h1>
                                 <p class="opacity-60 text-xs">Banco cargado: ${availableQuestions} preguntas disponibles</p>
                             </div>
                         </div>
@@ -450,7 +578,7 @@
             `;
         }
 
-        // 3. Ejecución del Examen
+        // Ejecución del Examen
         function renderPlaying() {
             const currentQ = state.activeQuestions[state.currentIndex];
             const progress = ((state.currentIndex + 1) / state.activeQuestions.length) * 100;
@@ -554,7 +682,7 @@
             `;
         }
 
-        // 4. Resultados del Examen
+        // Resultados del Examen
         function renderFinished() {
             const { correct, incorrect, blank, score } = calculateScore();
             const max = state.activeQuestions.length;
