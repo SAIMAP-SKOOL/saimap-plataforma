@@ -1,0 +1,2431 @@
+{
+  "quiz": [
+    {
+      "q": "En las sinapsis eléctricas, la comunicación entre las células se produce mediante la liberación de neurotransmisores en las uniones de hendidura.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Revisa la definición de 'uniones en hendidura' y qué fluye por ellas.",
+      "explanation": "Falso. En las sinapsis eléctricas la corriente fluye directamente a través de uniones en hendidura. La liberación de neurotransmisores es característica de las sinapsis químicas."
+    },
+    {
+      "q": "Las sinapsis axoaxónicas no contribuyen directamente a la transmisión de información, sino que modulan la liberación de neurotransmisor presináptico.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Piensa en la función de 'facilitación' o 'inhibición' presináptica.",
+      "explanation": "Verdadero. Las sinapsis axoaxónicas juegan un papel en la integración neural modulando (facilitando o inhibiendo) el axón presináptico, no transmitiendo el mensaje principal."
+    },
+    {
+      "q": "Los receptores ionotrópicos activan cascadas de segundos mensajeros que eventualmente abren canales iónicos en la membrana postsináptica.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Distingue entre apertura directa e indirecta de canales.",
+      "explanation": "Falso. Esa es la definición de receptores metabotrópicos. Los ionotrópicos abren los canales directamente al unirse el ligando."
+    },
+    {
+      "q": "La apertura de canales de potasio (K+) en la membrana postsináptica generalmente resulta en un Potencial Excitatorio Postsináptico (PEP).",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Considera el gradiente de concentración del potasio y su carga.",
+      "explanation": "Falso. La salida de K+ hiperpolariza la membrana, alejándola del umbral de disparo, lo que produce un Potencial Inhibitorio Postsináptico (PIP)."
+    },
+    {
+      "q": "La enzima Acetilcolinesterasa (AChE) es la encargada de sintetizar la acetilcolina a partir de Colina y Acetil-CoA en el botón terminal.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "No confundas síntesis con degradación.",
+      "explanation": "Falso. La enzima de síntesis es la Colina Acetiltransferasa (ChAT). La Acetilcolinesterasa degrada la ACh en el espacio sináptico."
+    },
+    {
+      "q": "El Locus Cerúleo es el principal núcleo de origen de las vías noradrenérgicas que se proyectan ampliamente por el encéfalo.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Ubica el origen anatómico de la noradrenalina.",
+      "explanation": "Verdadero. Las vías noradrenérgicas se originan principalmente en el locus cerúleo y se proyectan al córtex, tálamo, hipotálamo, etc."
+    },
+    {
+      "q": "La Dopamina se convierte en Noradrenalina gracias a la acción de la enzima Dopamina-beta-hidroxilasa dentro de las vesículas sinápticas.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Revisa la cadena de biosíntesis de las catecolaminas.",
+      "explanation": "Verdadero. La secuencia es Tirosina -> Dopa -> Dopamina -> Noradrenalina -> Adrenalina. La conversión a NA ocurre dentro de la vesícula."
+    },
+    {
+      "q": "El receptor GABA-B es un receptor ionotrópico que permite el paso rápido de iones Cloro al interior de la célula postsináptica.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "GABA tiene tres tipos de receptores, uno es diferente funcionalmente.",
+      "explanation": "Falso. El receptor GABA-B es metabotrópico y media respuestas más lentas. Los receptores GABA-A y GABA-C son los ionotrópicos."
+    },
+    {
+      "q": "Los péptidos opioides endógenos como las endorfinas actúan principalmente sobre los receptores muscarínicos para producir analgesia.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Asocia el tipo de ligando con su familia de receptores específica.",
+      "explanation": "Falso. Los opioides actúan sobre receptores opioides específicos (mu, delta, kappa), no sobre receptores muscarínicos (que son de Acetilcolina)."
+    },
+    {
+      "q": "La sumación espacial ocurre cuando varios potenciales postsinápticos se generan rápidamente uno tras otro en la misma sinapsis.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre sumar en el 'espacio' y sumar en el 'tiempo'.",
+      "explanation": "Falso. Eso describe la sumación temporal. La sumación espacial implica señales simultáneas en diferentes puntos de la membrana."
+    },
+    {
+      "q": "La feniletanolamina-N-metiltransferasa (PNMT) se encuentra exclusivamente en neuronas que secretan adrenalina.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Es la enzima final de la cadena de catecolaminas.",
+      "explanation": "Verdadero. Esta enzima convierte la noradrenalina en adrenalina, por lo que solo está presente en neuronas adrenérgicas."
+    },
+    {
+      "q": "El glutamato es el principal neurotransmisor inhibitorio del Sistema Nervioso Central y precursor del GABA.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "El glutamato tiene el rol opuesto al GABA en términos de excitación/inhibición.",
+      "explanation": "Falso. El glutamato es el principal neurotransmisor excitatorio, aunque sí es cierto que es el precursor metabólico del GABA."
+    },
+    {
+      "q": "La toxina botulínica (Bótox) actúa como un agonista colinérgico aumentando la contracción muscular en la zona de inyección.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Recuerda para qué se usa estéticamente el bótox (relajar vs contraer).",
+      "explanation": "Falso. El bótox impide la liberación de ACh, actuando como antagonista indirecto o bloqueador, lo que inhibe la contracción muscular."
+    },
+    {
+      "q": "Los neurotransmisores de bajo peso molecular se sintetizan en el soma y se transportan en vesículas a lo largo del axón.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Distingue entre síntesis de péptidos y moléculas pequeñas.",
+      "explanation": "Falso. Los de bajo peso molecular se sintetizan en el botón terminal. Son los neuropéptidos los que se sintetizan en el soma."
+    },
+    {
+      "q": "La vía dopaminérgica nigroestriatal se origina en la sustancia negra y su degeneración se asocia con la enfermedad de Parkinson.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Conecta anatomía (Sustancia Negra) con patología motora.",
+      "explanation": "Verdadero. Es la vía principal del control motor y su deterioro causa la rigidez y temblores del Parkinson."
+    },
+    {
+      "q": "La entrada de iones Cloro (Cl-) en la neurona postsináptica contribuye a la generación de Potenciales Excitatorios Postsinápticos (PEP).",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "El cloro es un anión (carga negativa). ¿Qué hace a la membrana?",
+      "explanation": "Falso. La entrada de Cl- (carga negativa) hiperpolariza la célula o neutraliza la despolarización, contribuyendo a los PIP (inhibitorios)."
+    },
+    {
+      "q": "Los receptores NMDA y AMPA son tipos de receptores metabotrópicos sensibles al glutamato.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Estos receptores median transmisión rápida excitatoria.",
+      "explanation": "Falso. NMDA, AMPA y Cainato son receptores ionotrópicos del glutamato. Los metabotrópicos son los mGluR."
+    },
+    {
+      "q": "Una deficiencia de vitamina B6 en la dieta puede disminuir la síntesis de GABA y aumentar el riesgo de convulsiones.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "La enzima GAD requiere un cofactor vitamínico.",
+      "explanation": "Verdadero. La enzima GAD requiere fosfato de piridoxal (derivado de B6) para convertir glutamato en GABA."
+    },
+    {
+      "q": "La serotonina se sintetiza a partir del aminoácido Tirosina mediante una serie de pasos enzimáticos.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Tirosina es para catecolaminas. ¿Cuál es para indolaminas?",
+      "explanation": "Falso. La serotonina (5-HT) se sintetiza a partir del aminoácido Triptófano."
+    },
+    {
+      "q": "La 'recaptación' es un mecanismo de inactivación donde enzimas específicas descomponen el neurotransmisor en el espacio sináptico.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre 'romper' (enzimática) y 'recoger' (transporte).",
+      "explanation": "Falso. Eso describe la degradación enzimática. La recaptación implica el retorno del neurotransmisor entero al botón terminal."
+    },
+    {
+      "q": "Los neuromoduladores suelen liberarse en grandes cantidades y difunden a distancias mayores que los neurotransmisores clásicos.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Contrasta 'transmisión punto a punto' con 'modulación de volumen'.",
+      "explanation": "Verdadero. Actúan de manera dispersa (transmisión de volumen) y no se limitan a la hendidura sináptica inmediata."
+    },
+    {
+      "q": "La vía mesolímbica dopaminérgica conecta el área tegmental ventral con la corteza prefrontal y regula funciones ejecutivas.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Mesolímbica va al 'limbo' (emoción/refuerzo), Mesocortical va al 'córtex'.",
+      "explanation": "Falso. La vía mesolímbica va al Núcleo Accumbens/Amígdala (refuerzo). La que va a la corteza prefrontal es la vía mesocortical."
+    },
+    {
+      "q": "El espacio sináptico en una sinapsis química tiene una anchura aproximada de 200 ángstroms.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Es un dato numérico específico citado en el texto.",
+      "explanation": "Verdadero. El texto especifica esta distancia para la hendidura sináptica."
+    },
+    {
+      "q": "Todos los órganos sensoriales transmiten información al cerebro mediante axones que liberan GABA como neurotransmisor.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "El GABA es inhibitorio. ¿Los sentidos suelen inhibir o excitar?",
+      "explanation": "Falso. La mayoría (salvo dolor) usan glutamato (excitatorio). El GABA es el principal inhibidor del encéfalo, no el transmisor sensorial primario."
+    },
+    {
+      "q": "La sustancia P es un péptido implicado específicamente en la percepción y gestión del dolor.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Relaciona péptidos con nocicepción.",
+      "explanation": "Verdadero. El texto menciona la sustancia P y los opioides como claves en la modulación de emociones y dolor."
+    },
+    {
+      "q": "En el proceso de liberación del neurotransmisor, ¿qué ion es crítico para permitir la fusión de las vesículas con la membrana?",
+      "options": [
+        "El Sodio (Na+), que despolariza el botón.",
+        "El Calcio (Ca2+), que entra al botón.",
+        "El Potasio (K+), que repolariza el botón."
+      ],
+      "correct": 1,
+      "hint": "La despolarización abre canales voltaje-dependientes de este ion específico.",
+      "explanation": "Aunque el Na+ causa la despolarización inicial, es la entrada de Ca2+ lo que activa la maquinaria molecular para la exocitosis de vesículas."
+    },
+    {
+      "q": "¿Qué característica distingue principalmente a los receptores metabotrópicos de los ionotrópicos?",
+      "options": [
+        "Abren canales iónicos de forma directa e inmediata.",
+        "Utilizan proteínas G y segundos mensajeros.",
+        "Solo responden a cambios de voltaje, no a ligandos."
+      ],
+      "correct": 1,
+      "hint": "Piensa en 'metabolismo' o procesos internos celulares vs 'iones' directos.",
+      "explanation": "Los metabotrópicos no abren el canal directamente; inician una cascada química (proteína G, 2º mensajero) que consume energía."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre la síntesis de acetilcolina (ACh) es correcta?",
+      "options": [
+        "Se sintetiza a partir de triptófano y acetil-CoA.",
+        "Requiere la enzima colina acetiltransferasa.",
+        "Ocurre exclusivamente en el soma neuronal."
+      ],
+      "correct": 1,
+      "hint": "Combina un sustrato de la dieta/hígado con un cofactor energético.",
+      "explanation": "La ACh se sintetiza en el terminal a partir de Colina + Acetil-CoA mediante la enzima Colina Acetiltransferasa (ChAT)."
+    },
+    {
+      "q": "¿Qué vía dopaminérgica está principalmente involucrada en la regulación de la secreción de prolactina por la hipófisis?",
+      "options": [
+        "La vía tuberoinfundibular.",
+        "La vía mesocortical.",
+        "La vía nigroestriatal."
+      ],
+      "correct": 0,
+      "hint": "Busca la vía con nombres anatómicos relacionados con el hipotálamo/hipófisis.",
+      "explanation": "La vía tuberoinfundibular conecta el hipotálamo con la hipófisis anterior para regular hormonas."
+    },
+    {
+      "q": "¿Cuál es el precursor metabólico inmediato de la Noradrenalina en la cadena de síntesis de las catecolaminas?",
+      "options": [
+        "La L-Dopa.",
+        "La Dopamina.",
+        "La Adrenalina."
+      ],
+      "correct": 1,
+      "hint": "El orden es: Tirosina -> ... -> ... -> NA -> Adrenalina.",
+      "explanation": "La Dopamina es hidroxilada por la dopamina-beta-hidroxilasa para formar Noradrenalina."
+    },
+    {
+      "q": "Según el texto, ¿qué porcentaje aproximado de las sinapsis en el sistema nervioso son axosomáticas o axodendríticas?",
+      "options": [
+        "Aproximadamente el 50%.",
+        "Aproximadamente el 80%.",
+        "Aproximadamente el 95%."
+      ],
+      "correct": 1,
+      "hint": "Es la gran mayoría de las sinapsis funcionales descritas.",
+      "explanation": "El texto estima que el 80% son axosomáticas o axodendríticas."
+    },
+    {
+      "q": "¿Qué efecto tiene la apertura de canales de Cloro (Cl-) regulados por ligando en una neurona en reposo?",
+      "options": [
+        "Despolariza la célula facilitando un potencial de acción.",
+        "Neutraliza los PEPs y produce potenciales inhibitorios.",
+        "Provoca la liberación masiva de neurotransmisores."
+      ],
+      "correct": 1,
+      "hint": "El cloro 'apaga' o 'frena' la actividad eléctrica.",
+      "explanation": "El Cl- entra (o estabiliza el potencial), contrarrestando la despolarización y produciendo un PIP."
+    },
+    {
+      "q": "¿Dónde se localizan principalmente los cuerpos celulares de las neuronas que liberan serotonina (5-HT)?",
+      "options": [
+        "En la sustancia negra del mesencéfalo.",
+        "En los núcleos del rafe del tronco cerebral.",
+        "En el locus cerúleo de la protuberancia."
+      ],
+      "correct": 1,
+      "hint": "Es una estructura medial del tronco del encéfalo.",
+      "explanation": "Los núcleos del rafe (mesencéfalo, protuberancia, bulbo) son el origen de las proyecciones serotoninérgicas."
+    },
+    {
+      "q": "¿Qué tipo de receptores de Acetilcolina predominan en la unión neuromuscular esquelética?",
+      "options": [
+        "Receptores muscarínicos.",
+        "Receptores nicotínicos.",
+        "Receptores adrenérgicos."
+      ],
+      "correct": 1,
+      "hint": "Son los que responden rápido para la contracción muscular.",
+      "explanation": "Los receptores nicotínicos son ionotrópicos y median la contracción muscular rápida. Los muscarínicos predominan en el cerebro."
+    },
+    {
+      "q": "¿Cuál de los siguientes es un criterio formal para identificar una sustancia como neurotransmisor?",
+      "options": [
+        "Debe ser liberada en respuesta a una hiperpolarización.",
+        "Debe tener receptores específicos en la célula postsináptica.",
+        "Debe ser un péptido sintetizado exclusivamente en el núcleo."
+      ],
+      "correct": 1,
+      "hint": "Si no hay quién escuche el mensaje, no es un mensajero.",
+      "explanation": "Los criterios son: presencia presináptica, liberación dependiente de Ca2+ (despolarización) y presencia de receptores específicos."
+    },
+    {
+      "q": "¿Qué función principal se atribuye a las sinapsis dendrodendríticas descritas en neuronas pequeñas?",
+      "options": [
+        "Generar potenciales de acción de largo alcance.",
+        "Regular la actividad de grupos amplios de neuronas.",
+        "Sintetizar hormonas para el torrente sanguíneo."
+      ],
+      "correct": 1,
+      "hint": "No transmiten a larga distancia, organizan localmente.",
+      "explanation": "Se cree que tienen una función reguladora y organizativa en grupos locales de neuronas."
+    },
+    {
+      "q": "¿Qué enzima es responsable de la degradación de la Serotonina y las Catecolaminas dentro de la neurona?",
+      "options": [
+        "La Catecol-O-metiltransferasa (COMT).",
+        "La Monoamino-oxidasa (MAO).",
+        "La Glutamato descarboxilasa (GAD)."
+      ],
+      "correct": 1,
+      "hint": "Es el objetivo de muchos antidepresivos clásicos.",
+      "explanation": "La MAO degrada monoaminas (serotonina y catecolaminas). La COMT degrada catecolaminas pero extracelularmente/postsinápticamente."
+    },
+    {
+      "q": "¿Cuál es la función principal de la vía dopaminérgica mesolímbica?",
+      "options": [
+        "Control fino del movimiento voluntario.",
+        "Regulación hormonal de la hipófisis.",
+        "Sistema de refuerzo, motivación y emociones."
+      ],
+      "correct": 2,
+      "hint": "Está implicada en las adicciones.",
+      "explanation": "Conecta con el núcleo accumbens y amígdala, siendo clave para el placer y el refuerzo."
+    },
+    {
+      "q": "¿Qué neurotransmisor actúa como el principal inhibidor en la médula espinal y porciones caudales del encéfalo?",
+      "options": [
+        "GABA.",
+        "Glicina.",
+        "Glutamato."
+      ],
+      "correct": 1,
+      "hint": "Comparte función con GABA pero su zona es más 'baja' anatómicamente.",
+      "explanation": "La glicina media el 50% de las sinapsis inhibidoras en la médula espinal. GABA domina en el encéfalo rostral."
+    },
+    {
+      "q": "En el contexto de la integración neural, ¿qué es la sumación temporal?",
+      "options": [
+        "Suma de señales simultáneas en distintos lugares de la dendrita.",
+        "Suma de potenciales generados rápidamente uno tras otro en la misma sinapsis.",
+        "Suma de neurotransmisores liberados por varias neuronas diferentes a la vez."
+      ],
+      "correct": 1,
+      "hint": "Temporal se refiere al tiempo, a la frecuencia.",
+      "explanation": "Ocurre cuando una sola sinapsis dispara repetidamente antes de que el potencial anterior se extinga."
+    },
+    {
+      "q": "¿Qué receptor de Glutamato es conocido por ser ionotrópico y mediar respuestas excitatorias rápidas?",
+      "options": [
+        "Receptor NMDA.",
+        "Receptor GABA-A.",
+        "Receptor mGluR."
+      ],
+      "correct": 0,
+      "hint": "Sus siglas vienen de N-metil-D-aspartato.",
+      "explanation": "NMDA, AMPA y Cainato son los tres tipos de receptores ionotrópicos de glutamato."
+    },
+    {
+      "q": "¿Qué patología se relaciona con la pérdida de inervación colinérgica en áreas límbicas y neocorticales?",
+      "options": [
+        "La enfermedad de Parkinson.",
+        "La enfermedad de Alzheimer.",
+        "La corea de Huntington."
+      ],
+      "correct": 1,
+      "hint": "Afecta la memoria y las funciones cognitivas superiores.",
+      "explanation": "La hipótesis colinérgica del Alzheimer asocia el deterioro cognitivo con la falta de ACh en el prosencéfalo basal."
+    },
+    {
+      "q": "¿Qué estructura de la sinapsis contiene los neurotransmisores listos para ser liberados?",
+      "options": [
+        "Los receptores postsinápticos.",
+        "Las uniones en hendidura.",
+        "Las vesículas sinápticas."
+      ],
+      "correct": 2,
+      "hint": "Son esferas membranosas dentro del botón terminal.",
+      "explanation": "Las vesículas almacenan y protegen el NT hasta que el Ca2+ provoca su fusión con la membrana."
+    },
+    {
+      "q": "¿Qué diferencia funcional existe entre la liberación de Noradrenalina y la de otros neurotransmisores clásicos?",
+      "options": [
+        "Se libera solo en el soma neuronal.",
+        "Se libera a través de varicosidades axonales.",
+        "No requiere calcio para su liberación."
+      ],
+      "correct": 1,
+      "hint": "No es solo en la punta del axón, sino 'por el camino'.",
+      "explanation": "La liberación por varicosidades ('cuentas de collar') permite una difusión más amplia y difusa del neurotransmisor."
+    },
+    {
+      "q": "¿Qué efecto tienen los agonistas del receptor GABA, como las benzodiazepinas?",
+      "options": [
+        "Producen convulsiones y ansiedad.",
+        "Tienen efectos sedantes y ansiolíticos.",
+        "Bloquean la entrada de cloro en la neurona."
+      ],
+      "correct": 1,
+      "hint": "Si GABA inhibe, potenciarlo (agonista) aumentará la 'calma'.",
+      "explanation": "Potencian la acción inhibitoria de GABA, reduciendo la excitabilidad neuronal (ansiolíticos, sedantes)."
+    },
+    {
+      "q": "¿Cuál de las siguientes es una característica de las sinapsis eléctricas?",
+      "options": [
+        "Utilizan vesículas sinápticas.",
+        "Tienen un retardo sináptico significativo.",
+        "Permiten el flujo bidireccional de iones."
+      ],
+      "correct": 2,
+      "hint": "Son canales físicos directos entre células.",
+      "explanation": "Las uniones gap permiten el paso de corriente iónica directamente, a menudo en ambas direcciones y sin el retardo químico."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre la síntesis de neurotransmisores es INCORRECTA?",
+      "options": [
+        "Los neuropéptidos se sintetizan en el cuerpo celular (soma).",
+        "Los NT de bajo peso molecular se sintetizan en el botón terminal.",
+        "Todos los neurotransmisores se sintetizan a partir de la glucosa en el axón."
+      ],
+      "correct": 2,
+      "hint": "Hay precursores específicos como aminoácidos (tirosina, triptófano).",
+      "explanation": "Falso. Muchos provienen de aminoácidos de la dieta (Triptófano, Tirosina), no solo glucosa, y el lugar de síntesis varía por tamaño."
+    },
+    {
+      "q": "Señala la afirmación INCORRECTA respecto a los receptores postsinápticos:",
+      "options": [
+        "Un mismo neurotransmisor puede activar diferentes tipos de receptores.",
+        "Los receptores metabotrópicos actúan más rápido que los ionotrópicos.",
+        "La unión es específica, como una llave y una cerradura."
+      ],
+      "correct": 1,
+      "hint": "Compara la velocidad de un canal directo vs una cascada bioquímica.",
+      "explanation": "Incorrecta. Los metabotrópicos son más lentos porque requieren pasos intermedios metabólicos (proteínas G), a diferencia de la apertura inmediata de los ionotrópicos."
+    },
+    {
+      "q": "Identifica la asociación INCORRECTA entre neurotransmisor y aminoácido precursor:",
+      "options": [
+        "Serotonina - Triptófano.",
+        "Dopamina - Tirosina.",
+        "GABA - Fenilalanina."
+      ],
+      "correct": 2,
+      "hint": "El GABA viene del Glutamato.",
+      "explanation": "GABA se sintetiza a partir del Glutamato. La Fenilalanina es precursora de la Tirosina (y por ende de las catecolaminas)."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre la eliminación del neurotransmisor es INCORRECTA?",
+      "options": [
+        "La degradación enzimática rompe el NT en el espacio sináptico.",
+        "La recaptación transporta el NT de vuelta a la neurona postsináptica.",
+        "La recaptación permite la reutilización del neurotransmisor."
+      ],
+      "correct": 1,
+      "hint": "¿Quién recoge el NT, el que lo lanzó o el que lo recibió?",
+      "explanation": "Incorrecta. La recaptación la realiza el botón terminal de la neurona PREsináptica (o la glía), no la postsináptica."
+    },
+    {
+      "q": "Respecto a los potenciales postsinápticos, señala la opción INCORRECTA:",
+      "options": [
+        "Un PEP acerca el potencial de membrana al umbral de disparo.",
+        "Un PIP suele estar causado por la entrada de iones Sodio (Na+).",
+        "Son respuestas graduadas, no de 'todo o nada'."
+      ],
+      "correct": 1,
+      "hint": "El sodio tiene carga positiva y entra masivamente.",
+      "explanation": "Incorrecta. La entrada de Na+ despolariza, causando un PEP (excitatorio). Los PIPs son causados por salida de K+ o entrada de Cl-."
+    },
+    {
+      "q": "¿Cuál de las siguientes NO es una catecolamina?",
+      "options": [
+        "Dopamina.",
+        "Serotonina.",
+        "Noradrenalina."
+      ],
+      "correct": 1,
+      "hint": "La serotonina pertenece al grupo de las indolaminas.",
+      "explanation": "La Serotonina es una indolamina. Las catecolaminas son DA, NA y Adrenalina."
+    },
+    {
+      "q": "Señala la afirmación INCORRECTA sobre la Acetilcolina (ACh):",
+      "options": [
+        "Es el principal neurotransmisor de la unión neuromuscular.",
+        "Sus receptores muscarínicos son siempre ionotrópicos.",
+        "Se degrada por la acetilcolinesterasa en la hendidura."
+      ],
+      "correct": 1,
+      "hint": "Recuerda la división: Nicotínico (ion) vs Muscarínico (metabolismo).",
+      "explanation": "Incorrecta. Los receptores muscarínicos son metabotrópicos (acoplados a proteínas G)."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre las vías dopaminérgicas es INCORRECTA?",
+      "options": [
+        "La vía mesocortical termina en el córtex prefrontal.",
+        "La vía nigroestriatal se origina en el Área Tegmental Ventral.",
+        "La vía tuberoinfundibular regula hormonas hipofisarias."
+      ],
+      "correct": 1,
+      "hint": "El nombre 'nigro' te dice de dónde viene.",
+      "explanation": "Incorrecta. La vía nigroestriatal se origina en la Sustancia Negra. La que sale del Área Tegmental Ventral es la mesolímbica/mesocortical."
+    },
+    {
+      "q": "Respecto a los receptores de Glutamato, ¿cuál es INCORRECTO?",
+      "options": [
+        "El receptor NMDA es ionotrópico.",
+        "El receptor AMPA media transmisión lenta inhibitoria.",
+        "Existen receptores metabotrópicos de glutamato (mGluR)."
+      ],
+      "correct": 1,
+      "hint": "AMPA y NMDA suelen trabajar juntos en la excitación rápida.",
+      "explanation": "Incorrecta. AMPA es ionotrópico y media excitación rápida, no inhibición lenta."
+    },
+    {
+      "q": "¿Cuál de los siguientes eventos NO ocurre durante la liberación del neurotransmisor?",
+      "options": [
+        "El potencial de acción llega al botón terminal.",
+        "Se abren canales de Calcio voltaje-dependientes.",
+        "Las vesículas entran en la célula postsináptica por endocitosis."
+      ],
+      "correct": 2,
+      "hint": "El NT cruza, pero la vesícula se queda.",
+      "explanation": "Incorrecta. Las vesículas se fusionan con la membrana presináptica (exocitosis) y liberan su contenido, no entran en la otra célula."
+    },
+    {
+      "q": "Señala la afirmación INCORRECTA sobre el GABA:",
+      "options": [
+        "Es el principal excitador del encéfalo adulto.",
+        "Se sintetiza a partir del glutamato mediante la enzima GAD.",
+        "Sus receptores GABA-A son sitio de acción de ansiolíticos."
+      ],
+      "correct": 0,
+      "hint": "GABA es el 'freno' del cerebro.",
+      "explanation": "Incorrecta. GABA es el principal neurotransmisor INHIBIDOR. El excitador es el glutamato."
+    },
+    {
+      "q": "Sobre la integración neural, elige la opción INCORRECTA:",
+      "options": [
+        "Determina si la neurona alcanzará el umbral de disparo.",
+        "La sumación espacial suma inputs de diferentes lugares al mismo tiempo.",
+        "La inhibición postsináptica siempre impide el potencial de acción."
+      ],
+      "correct": 2,
+      "hint": "Es una 'suma' algebraica, no un veto absoluto.",
+      "explanation": "Incorrecta. La inhibición resta voltaje, pero si la excitación simultánea es suficientemente fuerte, el PA puede dispararse igual. Es un balance."
+    },
+    {
+      "q": "¿Cuál de los siguientes NO es un tipo de molécula mensajera química descrita en el texto?",
+      "options": [
+        "Neuromoduladores.",
+        "Neurotransmisores.",
+        "Neuroelectrones."
+      ],
+      "correct": 2,
+      "hint": "El tercero suena a física, no a biología.",
+      "explanation": "Neuroelectrones no existe. Los tipos son neurotransmisores, neuromoduladores y hormonas."
+    },
+    {
+      "q": "Respecto a la síntesis de catecolaminas, identifica el paso que NO corresponde:",
+      "options": [
+        "La Tirosina se convierte en L-Dopa.",
+        "La Dopamina se convierte en Serotonina.",
+        "La Noradrenalina se convierte en Adrenalina."
+      ],
+      "correct": 1,
+      "hint": "Son familias químicas diferentes.",
+      "explanation": "Incorrecta. Dopamina no se convierte en Serotonina. Son vías paralelas (Tirosina vs Triptófano)."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre los neuropéptidos es INCORRECTA?",
+      "options": [
+        "Se almacenan en vesículas pequeñas y claras.",
+        "Suelen actuar como neuromoduladores.",
+        "Incluyen a las endorfinas y la sustancia P."
+      ],
+      "correct": 0,
+      "hint": "Por su tamaño y lugar de síntesis, sus vesículas son diferentes.",
+      "explanation": "Incorrecta. Se almacenan en vesículas grandes de centro denso, a diferencia de los NT pequeños."
+    },
+    {
+      "q": "Señala la característica INCORRECTA de la enfermedad de Parkinson:",
+      "options": [
+        "Implica degeneración de la sustancia negra.",
+        "Se caracteriza por un exceso de dopamina estriatal.",
+        "Sus síntomas incluyen temblores y rigidez."
+      ],
+      "correct": 1,
+      "hint": "Si las neuronas mueren, ¿qué pasa con el nivel de NT?",
+      "explanation": "Incorrecta. Se caracteriza por un DÉFICIT de dopamina, no un exceso."
+    },
+    {
+      "q": "Respecto a la glicina, ¿cuál es la afirmación INCORRECTA?",
+      "options": [
+        "Es un neurotransmisor principalmente excitatorio.",
+        "Actúa sobre receptores ionotrópicos que abren canales de Cl-.",
+        "Es abundante en la médula espinal."
+      ],
+      "correct": 0,
+      "hint": "Si abre canales de cloro (Cl-), ¿qué hace?",
+      "explanation": "Incorrecta. Al igual que el GABA, la glicina es inhibitoria porque abre canales de cloro."
+    },
+    {
+      "q": "Sobre las sinapsis químicas, elige la opción INCORRECTA:",
+      "options": [
+        "Son bidireccionales por naturaleza.",
+        "Tienen un retardo sináptico debido a la liberación química.",
+        "Permiten amplificar la señal mediante segundos mensajeros."
+      ],
+      "correct": 0,
+      "hint": "Las vesículas están solo en un lado.",
+      "explanation": "Incorrecta. Son unidireccionales: la presináptica libera y la postsináptica recibe. Las eléctricas pueden ser bidireccionales."
+    },
+    {
+      "q": "¿Qué afirmación sobre las hormonas es INCORRECTA según el texto?",
+      "options": [
+        "Se liberan al torrente sanguíneo.",
+        "Solo afectan a células diana con receptores específicos.",
+        "Actúan exclusivamente en el espacio sináptico inmediato."
+      ],
+      "correct": 2,
+      "hint": "La sangre las lleva lejos.",
+      "explanation": "Incorrecta. Las hormonas viajan largas distancias por la sangre hasta órganos distantes, no se limitan a la sinapsis."
+    },
+    {
+      "q": "Respecto a la estructura de la sinapsis, ¿qué es INCORRECTO?",
+      "options": [
+        "La membrana postsináptica tiene alta densidad de receptores.",
+        "Las vesículas sinápticas se encuentran en la dendrita receptora.",
+        "Existe una hendidura física entre las dos neuronas."
+      ],
+      "correct": 1,
+      "hint": "La vesícula es el 'paquete' de envío.",
+      "explanation": "Incorrecta. Las vesículas están en el botón terminal (presináptico), no en la dendrita (postsináptica)."
+    },
+    {
+      "q": "¿Cuál de las siguientes NO es una función típica regulada por la Serotonina?",
+      "options": [
+        "Estado de ánimo.",
+        "Contracción muscular rápida esquelética.",
+        "Ingesta de alimentos y sueño."
+      ],
+      "correct": 1,
+      "hint": "La contracción rápida es cosa de la Acetilcolina.",
+      "explanation": "La contracción muscular rápida es función de la Acetilcolina (nicotínicos). La serotonina modula estados internos lentos."
+    },
+    {
+      "q": "Sobre los mecanismos de finalización de la señal, ¿cuál es INCORRECTO?",
+      "options": [
+        "La acetilcolina es recaptada entera por el botón terminal.",
+        "Las monoaminas pueden ser recaptadas por transportadores.",
+        "La MAO degrada neurotransmisores en el citoplasma."
+      ],
+      "correct": 0,
+      "hint": "La ACh tiene una enzima destructora en la hendidura.",
+      "explanation": "Incorrecta. La ACh es degradada en colina y acetato en la hendidura; solo la colina es recaptada, no la molécula entera."
+    },
+    {
+      "q": "¿Qué afirmación sobre los receptores presinápticos (autorreceptores) es INCORRECTA?",
+      "options": [
+        "Se sitúan en la membrana de la neurona que libera el NT.",
+        "Generalmente facilitan una mayor liberación de neurotransmisor.",
+        "Sirven como mecanismo de retroalimentación (feedback)."
+      ],
+      "correct": 1,
+      "hint": "Suelen ser un mecanismo de seguridad para no 'pasarse'.",
+      "explanation": "Incorrecta. Los autorreceptores suelen ser inhibidores; detectan que hay mucho NT y frenan su liberación (feedback negativo)."
+    },
+    {
+      "q": "Elige la opción INCORRECTA sobre la despolarización y el Calcio:",
+      "options": [
+        "La llegada del PA abre canales de Ca2+.",
+        "El Ca2+ es más concentrado dentro de la célula que fuera.",
+        "La entrada de Ca2+ es esencial para la exocitosis."
+      ],
+      "correct": 1,
+      "hint": "El calcio, como el sodio, quiere entrar.",
+      "explanation": "Incorrecta. El Ca2+ está mucho más concentrado fuera, por eso entra rápidamente cuando se abren los canales."
+    },
+    {
+      "q": "Sobre las proteínas G, ¿cuál es la afirmación INCORRECTA?",
+      "options": [
+        "Están asociadas a receptores metabotrópicos.",
+        "Pueden activar enzimas que generan segundos mensajeros.",
+        "Forman el poro del canal iónico por donde pasan los iones."
+      ],
+      "correct": 2,
+      "hint": "Son intermediarios, no el túnel.",
+      "explanation": "Incorrecta. La proteína G es una subunidad móvil que viaja por la membrana, no es el canal iónico en sí misma."
+    },
+    {
+      "q": "En las sinapsis eléctricas, la corriente iónica fluye directamente entre las neuronas a través de ____, que son canales especializados que conectan el citoplasma de dos células adyacentes.",
+      "options": [
+        "los conexones de las uniones en hendidura",
+        "los receptores ionotrópicos de membrana",
+        "las vesículas de la hendidura sináptica"
+      ],
+      "correct": 0,
+      "hint": "Son estructuras que permiten la continuidad citoplasmática en sinapsis sin retardo.",
+      "explanation": "Las uniones en hendidura (gap junctions) están formadas por conexones que permiten el paso directo de iones. Los receptores ionotrópicos y vesículas son propios de la sinapsis química."
+    },
+    {
+      "q": "La síntesis de los neurotransmisores ____ tiene lugar en el cuerpo celular (soma) debido a su gran tamaño molecular, para luego ser transportados a los botones terminales.",
+      "options": [
+        "de bajo peso molecular como las aminas",
+        "peptídicos o neuropéptidos",
+        "gaseosos como el óxido nítrico"
+      ],
+      "correct": 1,
+      "hint": "Son moléculas grandes que requieren la maquinaria biosintética del soma, a diferencia de las moléculas pequeñas.",
+      "explanation": "Los neuropéptidos se sintetizan en el soma. Los de bajo peso molecular se sintetizan en el terminal axónico y los gaseosos no se almacenan en vesículas."
+    },
+    {
+      "q": "La liberación del neurotransmisor depende críticamente de la apertura de canales de ____ activados por voltaje ante la llegada del potencial de acción al botón terminal.",
+      "options": [
+        "sodio (Na+)",
+        "calcio (Ca2+)",
+        "potasio (K+)"
+      ],
+      "correct": 1,
+      "hint": "Este ion es el responsable de la fusión de las vesículas con la membrana presináptica.",
+      "explanation": "La entrada de Ca2+ es el desencadenante necesario para la exocitosis. El Na+ y K+ participan en la propagación del potencial de acción, no en la fusión vesicular directa."
+    },
+    {
+      "q": "Los receptores ____ inician una cascada de señalización intracelular mediante proteínas G o segundos mensajeros, produciendo efectos más lentos pero duraderos.",
+      "options": [
+        "ionotrópicos",
+        "metabotrópicos",
+        "nicotinicos"
+      ],
+      "correct": 1,
+      "hint": "Su nombre sugiere que afectan al metabolismo celular interno y no son simples canales.",
+      "explanation": "Los receptores metabotrópicos activan proteínas G. Los ionotrópicos son canales directos y los nicotínicos son un subtipo específico de ionotrópico para ACh."
+    },
+    {
+      "q": "La apertura de canales de potasio (K+) en la membrana postsináptica provoca la salida de cargas positivas, lo que resulta en una ____ de la membrana.",
+      "options": [
+        "despolarización (PEP)",
+        "repolarización activa",
+        "hiperpolarización (PIP)"
+      ],
+      "correct": 2,
+      "hint": "Al perder cargas positivas, el interior celular se vuelve más negativo respecto al exterior.",
+      "explanation": "La salida de K+ hace el potencial de membrana más negativo (hiperpolarización), generando un Potencial Inhibitorio Postsináptico (PIP). La despolarización se asocia a la entrada de Na+."
+    },
+    {
+      "q": "La ____ es el mecanismo por el cual los neurotransmisores son reintroducidos en el botón presináptico mediante proteínas transportadoras específicas para su reutilización.",
+      "options": [
+        "degradación enzimática",
+        "recaptación",
+        "difusión pasiva"
+      ],
+      "correct": 1,
+      "hint": "Es un proceso de 'reciclaje' que limpia la hendidura sináptica y ahorra síntesis de nuevo transmisor.",
+      "explanation": "La recaptación transporta el NT de vuelta a la presináptica. La degradación lo destruye y la difusión lo dispersa lejos de la sinapsis."
+    },
+    {
+      "q": "En la integración neural, la ____ ocurre cuando se suman potenciales postsinápticos generados simultáneamente en diferentes puntos de la membrana receptora.",
+      "options": [
+        "sumación temporal",
+        "sumación espacial",
+        "inhibición presináptica"
+      ],
+      "correct": 1,
+      "hint": "Se refiere a la combinación de señales que llegan al mismo tiempo pero en lugares distintos.",
+      "explanation": "La sumación espacial integra inputs simultáneos de distintos lugares. La temporal integra inputs sucesivos en el mismo lugar."
+    },
+    {
+      "q": "A diferencia de los neurotransmisores, los ____ se liberan en grandes cantidades, difunden a distancias mayores y modulan la actividad de grupos neuronales completos.",
+      "options": [
+        "neuromoduladores",
+        "segundos mensajeros",
+        "ligandos ionotrópicos"
+      ],
+      "correct": 0,
+      "hint": "Su acción no se limita a la hendidura sináptica inmediata y suelen ser péptidos.",
+      "explanation": "Los neuromoduladores actúan de manera dispersa y a mayor distancia. Los segundos mensajeros son intracelulares y los ligandos ionotrópicos actúan localmente."
+    },
+    {
+      "q": "La enzima ____ es la responsable de sintetizar acetilcolina a partir de colina y acetilcoenzima A en el terminal axónico.",
+      "options": [
+        "acetilcolinesterasa (AChE)",
+        "colina acetiltransferasa (CAT)",
+        "monoaminooxidasa (MAO)"
+      ],
+      "correct": 1,
+      "hint": "Su nombre indica que 'transfiere' un grupo acetilo a la colina.",
+      "explanation": "La CAT sintetiza ACh. La AChE la degrada en el espacio sináptico. La MAO degrada monoaminas, no acetilcolina."
+    },
+    {
+      "q": "Los receptores colinérgicos de tipo ____ son ionotrópicos y su activación produce efectos excitatorios rápidos, predominando en la unión neuromuscular.",
+      "options": [
+        "muscarínicos",
+        "nicotínicos",
+        "adrenérgicos"
+      ],
+      "correct": 1,
+      "hint": "Son activados por una sustancia presente en el tabaco.",
+      "explanation": "Los receptores nicotínicos son ionotrópicos rápidos. Los muscarínicos son metabotrópicos y más lentos. Los adrenérgicos responden a noradrenalina."
+    },
+    {
+      "q": "La hipótesis colinérgica del Alzheimer asocia los déficits cognitivos con la degeneración de vías que proyectan desde el ____ hacia la corteza y el hipocampo.",
+      "options": [
+        "locus cerúleo",
+        "prosencéfalo basal",
+        "sustancia negra"
+      ],
+      "correct": 1,
+      "hint": "Es una región basal del cerebro anterior rica en somas colinérgicos.",
+      "explanation": "El prosencéfalo basal (núcleo basal de Meynert) es la fuente principal de ACh cortical. El locus cerúleo es noradrenérgico y la sustancia negra dopaminérgica."
+    },
+    {
+      "q": "En la biosíntesis de las catecolaminas, la enzima limitante convierte la tirosina en ____, que es el precursor inmediato de la dopamina.",
+      "options": [
+        "L-DOPA (Levodopa)",
+        "Noradrenalina",
+        "Triptófano"
+      ],
+      "correct": 0,
+      "hint": "Es el fármaco principal utilizado en el tratamiento del Parkinson.",
+      "explanation": "La secuencia es Tirosina -> L-DOPA -> Dopamina. La noradrenalina deriva de la dopamina. El triptófano es precursor de la serotonina."
+    },
+    {
+      "q": "La vía dopaminérgica ____ conecta el área tegmental ventral con el núcleo accumbens y es fundamental en los mecanismos de refuerzo y adicción.",
+      "options": [
+        "nigroestriatal",
+        "mesolímbica",
+        "tuberoinfundibular"
+      ],
+      "correct": 1,
+      "hint": "Va desde el mesencéfalo hacia estructuras del sistema límbico.",
+      "explanation": "La vía mesolímbica media el placer y refuerzo. La nigroestriatal controla el movimiento y la tuberoinfundibular la secreción hormonal."
+    },
+    {
+      "q": "La degeneración de las neuronas de la sustancia negra que proyectan al estriado es la causa fisiopatológica principal de la enfermedad de ____.",
+      "options": [
+        "Alzheimer",
+        "Parkinson",
+        "Huntington"
+      ],
+      "correct": 1,
+      "hint": "Se caracteriza por temblor en reposo, rigidez y bradicinesia.",
+      "explanation": "El Parkinson se debe a la pérdida de DA en la vía nigroestriatal. El Huntington afecta al estriado pero implica GABA. El Alzheimer es cortical/hipocampal."
+    },
+    {
+      "q": "La noradrenalina se libera en el SNC principalmente desde varicosidades axonales de neuronas cuyos somas se encuentran en el ____.",
+      "options": [
+        "núcleo del rafe",
+        "locus cerúleo",
+        "área postrema"
+      ],
+      "correct": 1,
+      "hint": "Su nombre en latín significa 'lugar azul', situado en la protuberancia.",
+      "explanation": "El locus cerúleo es el principal núcleo noradrenérgico. El rafe es serotoninérgico. El área postrema está relacionada con el vómito."
+    },
+    {
+      "q": "La serotonina (5-HT) se sintetiza a partir del aminoácido esencial ____, que debe ser ingerido en la dieta.",
+      "options": [
+        "tirosina",
+        "triptófano",
+        "fenilalanina"
+      ],
+      "correct": 1,
+      "hint": "Aminoácido famoso por encontrarse en el pavo y la leche, asociado al sueño.",
+      "explanation": "El triptófano es precursor de 5-HT. Tirosina y fenilalanina son precursores de las catecolaminas."
+    },
+    {
+      "q": "Los receptores NMDA y AMPA son subtipos de receptores ionotrópicos para el neurotransmisor excitatorio ____.",
+      "options": [
+        "GABA",
+        "glutamato",
+        "glicina"
+      ],
+      "correct": 1,
+      "hint": "Es el principal neurotransmisor excitador del sistema nervioso central.",
+      "explanation": "Glutamato activa NMDA/AMPA. GABA y glicina son inhibitorios y tienen sus propios receptores."
+    },
+    {
+      "q": "El neurotransmisor ____ se sintetiza a partir del glutamato mediante la acción de la enzima descarboxilasa del ácido glutámico (GAD).",
+      "options": [
+        "GABA",
+        "Aspartato",
+        "Acetilcolina"
+      ],
+      "correct": 0,
+      "hint": "Es el principal inhibidor del encéfalo; su síntesis es una 'descarboxilación' del excitador.",
+      "explanation": "El GABA deriva del glutamato por acción de la GAD. El aspartato es otro excitador. La ACh tiene otra vía de síntesis."
+    },
+    {
+      "q": "Los receptores ____ del GABA son metabotrópicos y median respuestas inhibidoras lentas mediante proteínas G.",
+      "options": [
+        "GABA-A",
+        "GABA-B",
+        "GABA-C"
+      ],
+      "correct": 1,
+      "hint": "A diferencia de sus 'hermanos' A y C, este no es un canal iónico directo.",
+      "explanation": "GABA-B es metabotrópico. GABA-A y GABA-C son ionotrópicos (canales de Cl-)."
+    },
+    {
+      "q": "La ____ actúa como principal neurotransmisor inhibidor en la médula espinal y el tronco del encéfalo, controlando canales de cloro.",
+      "options": [
+        "taurina",
+        "glicina",
+        "histamina"
+      ],
+      "correct": 1,
+      "hint": "Es el aminoácido más simple y domina la inhibición caudal (médula).",
+      "explanation": "La glicina inhibe en la médula. La taurina tiene funciones moduladoras y la histamina es principalmente excitadora en el SNC."
+    },
+    {
+      "q": "Las endorfinas y encefalinas son péptidos opioides endógenos que actúan sobre receptores específicos para producir ____.",
+      "options": [
+        "hiperalgesia",
+        "analgesia",
+        "alodinia"
+      ],
+      "correct": 1,
+      "hint": "Su efecto principal es la supresión o alivio de la sensación dolorosa.",
+      "explanation": "Producen analgesia (alivio del dolor). Hiperalgesia y alodinia son aumentos de la sensibilidad al dolor."
+    },
+    {
+      "q": "La toxina botulínica (bótox) ejerce su efecto 'antiarrugas' actuando como un antagonista que impide la liberación de ____ en la unión neuromuscular.",
+      "options": [
+        "acetilcolina",
+        "dopamina",
+        "glutamato"
+      ],
+      "correct": 0,
+      "hint": "Bloquea la señal que ordena al músculo contraerse.",
+      "explanation": "El bótox impide la liberación de acetilcolina, causando parálisis flácida muscular. No afecta directamente a DA o glutamato en la placa motora."
+    },
+    {
+      "q": "La inactivación de las catecolaminas puede ocurrir por recaptación o por degradación mediante las enzimas MAO y ____.",
+      "options": [
+        "COMT",
+        "GAD",
+        "ChAT"
+      ],
+      "correct": 0,
+      "hint": "Enzima que añade un grupo metilo a la catecolamina.",
+      "explanation": "La Catecol-O-Metiltransferasa (COMT) degrada catecolaminas. GAD sintetiza GABA y ChAT sintetiza ACh."
+    },
+    {
+      "q": "Los receptores adrenérgicos se clasifican en familias alfa y beta; los receptores ____ suelen localizarse presinápticamente actuando como autorreceptores inhibidores.",
+      "options": [
+        "alfa-1",
+        "alfa-2",
+        "beta-1"
+      ],
+      "correct": 1,
+      "hint": "Son el mecanismo de 'freno' o feedback negativo en la liberación de noradrenalina.",
+      "explanation": "Los alfa-2 son autorreceptores presinápticos típicos. Alfa-1 y los beta suelen ser postsinápticos."
+    },
+    {
+      "q": "El ____ es el metabolito principal de la dopamina que se mide en el líquido cefalorraquídeo para estimar la actividad dopaminérgica cerebral.",
+      "options": [
+        "ácido 5-hidroxiindolacético",
+        "ácido homovanílico",
+        "ácido vanilmandélico"
+      ],
+      "correct": 1,
+      "hint": "Su nombre deriva del grupo vainillina, producto final de la degradación de DA.",
+      "explanation": "El ácido homovanílico (HVA) proviene de la DA. El 5-HIAA viene de la serotonina y el vanilmandélico de la noradrenalina/adrenalina."
+    },
+    {
+      "q": "La vía dopaminérgica ____ proyecta al córtex prefrontal y está implicada en funciones ejecutivas, memoria de trabajo y regulación emocional.",
+      "options": [
+        "mesocortical",
+        "mesolímbica",
+        "nigroestriatal"
+      ],
+      "correct": 0,
+      "hint": "Su nombre indica conexión entre el mesencéfalo y la corteza.",
+      "explanation": "La vía mesocortical inerva la corteza prefrontal. La mesolímbica va al accumbens y la nigroestriatal a los ganglios basales."
+    },
+    {
+      "q": "Las sinapsis ____ se establecen sobre el axón de otra neurona y son cruciales para la inhibición o facilitación presináptica.",
+      "options": [
+        "axodendríticas",
+        "axosomáticas",
+        "axoaxónicas"
+      ],
+      "correct": 2,
+      "hint": "Contacto axón con axón, modula cuánto NT libera la segunda neurona.",
+      "explanation": "Las axoaxónicas controlan el terminal presináptico. Axodendríticas y axosomáticas son las clásicas excitatorias/inhibitorias postsinápticas."
+    },
+    {
+      "q": "Los receptores ionotrópicos de glutamato tipo ____ requieren tanto la unión del ligando como una despolarización parcial para desbloquear el canal de magnesio.",
+      "options": [
+        "AMPA",
+        "Kainato",
+        "NMDA"
+      ],
+      "correct": 2,
+      "hint": "Son coincidentes moleculares cruciales para la plasticidad y memoria.",
+      "explanation": "El receptor NMDA tiene un bloqueo por Mg2+ voltaje-dependiente. AMPA y Kainato no tienen este bloqueo fisiológico."
+    },
+    {
+      "q": "El precursor inmediato en la síntesis de serotonina es el ____, molécula intermedia entre el triptófano y el neurotransmisor final.",
+      "options": [
+        "5-hidroxitriptófano (5-HTP)",
+        "Dihidroxifenilalanina",
+        "Triptamina"
+      ],
+      "correct": 0,
+      "hint": "Es el triptófano con un grupo hidroxilo añadido en posición 5.",
+      "explanation": "El 5-HTP es el paso intermedio. La Dihidroxifenilalanina (L-DOPA) es de la vía de la dopamina."
+    },
+    {
+      "q": "Las benzodiacepinas ejercen su efecto ansiolítico actuando como agonistas alostéricos que potencian la acción del GABA sobre el receptor ____.",
+      "options": [
+        "GABA-A",
+        "GABA-B",
+        "GABA-C"
+      ],
+      "correct": 0,
+      "hint": "Es el receptor ionotrópico de GABA más abundante y diana de sedantes.",
+      "explanation": "Benzodiacepinas modulan el receptor GABA-A (canal de Cl-). No actúan sobre GABA-B (metabotrópico) ni GABA-C."
+    },
+    {
+      "q": "La adrenalina en el encéfalo se sintetiza por la acción de la enzima ____, presente solo en neuronas que liberan esta catecolamina.",
+      "options": [
+        "tirosina hidroxilasa",
+        "dopamina beta-hidroxilasa",
+        "feniletanolamina N-metiltransferasa"
+      ],
+      "correct": 2,
+      "hint": "Enzima que transfiere un grupo metilo a la noradrenalina (PNMT).",
+      "explanation": "La PNMT convierte Noradrenalina en Adrenalina. La tirosina hidroxilasa inicia la vía y la dopamina beta-hidroxilasa crea Noradrenalina."
+    },
+    {
+      "q": "Los receptores de opioides del tipo ____ son los principales mediadores de la analgesia espinal y supraespinal y de la depresión respiratoria.",
+      "options": [
+        "mu (µ)",
+        "kappa (κ)",
+        "delta (δ)"
+      ],
+      "correct": 0,
+      "hint": "Es el receptor primario al que se une la morfina.",
+      "explanation": "El receptor mu es el principal para analgesia y efectos secundarios graves. Kappa y delta tienen funciones distintas en la analgesia y disforia."
+    },
+    {
+      "q": "El fenómeno de ____ ocurre cuando múltiples potenciales de acción llegan en rápida sucesión a la misma sinapsis, sumándose sus efectos.",
+      "options": [
+        "sumación espacial",
+        "sumación temporal",
+        "facilitación heterosináptica"
+      ],
+      "correct": 1,
+      "hint": "Es una integración basada en el tiempo (frecuencia de disparo).",
+      "explanation": "La sumación temporal acumula efectos sucesivos en el tiempo. La espacial suma efectos de distintos lugares."
+    },
+    {
+      "q": "La mayoría de los neurotransmisores de molécula pequeña se almacenan en ____ para protegerlos de la degradación enzimática intracelular.",
+      "options": [
+        "el retículo endoplasmático",
+        "vesículas sinápticas",
+        "lisosomas"
+      ],
+      "correct": 1,
+      "hint": "Pequeñas esferas membranosas en el botón terminal.",
+      "explanation": "Las vesículas almacenan y protegen el NT. Los lisosomas degradan desechos y el retículo sintetiza proteínas/lípidos."
+    },
+    {
+      "q": "El potencial postsináptico inhibitorio (PIP) suele estar causado por la apertura de canales de ____ o de potasio.",
+      "options": [
+        "sodio",
+        "calcio",
+        "cloro"
+      ],
+      "correct": 2,
+      "hint": "Ion negativo que entra en la célula para hiperpolarizarla.",
+      "explanation": "La entrada de Cl- (negativo) hiperpolariza (inhibe). Na+ y Ca2+ despolarizan (excitan)."
+    },
+    {
+      "q": "La región cerebral conocida como ____ es la principal fuente de proyecciones serotoninérgicas hacia el resto del encéfalo y la médula.",
+      "options": [
+        "núcleos del rafe",
+        "locus cerúleo",
+        "núcleo basal"
+      ],
+      "correct": 0,
+      "hint": "Grupo de núcleos situados en la línea media del tronco encefálico.",
+      "explanation": "El rafe contiene los somas serotoninérgicos. Locus cerúleo es NA, núcleo basal es ACh."
+    },
+    {
+      "q": "El receptor nicotínico de la acetilcolina permite el paso de iones de ____, generando una despolarización rápida.",
+      "options": [
+        "Cloro exclusivamente",
+        "Potasio exclusivamente",
+        "Sodio (y potasio)"
+      ],
+      "correct": 2,
+      "hint": "Es un canal catiónico inespecífico, pero la fuerza motriz favorece la entrada de este ion despolarizante.",
+      "explanation": "Permite paso de cationes, principalmente entrada de Na+ (y salida de K+), resultando en despolarización neta (PEP). No deja pasar aniones como Cl-."
+    },
+    {
+      "q": "Los ____ son ligandos exógenos (fármacos o drogas) que se unen a un receptor y mimetizan o potencian la acción del neurotransmisor natural.",
+      "options": [
+        "antagonistas",
+        "agonistas",
+        "bloqueadores"
+      ],
+      "correct": 1,
+      "hint": "Sustancia que 'actúa' o activa el receptor.",
+      "explanation": "Agonistas activan el receptor. Antagonistas o bloqueadores impiden la acción del NT."
+    },
+    {
+      "q": "La sustancia P es un neuropéptido implicado fundamentalmente en la transmisión de la información relacionada con ____.",
+      "options": [
+        "el placer y recompensa",
+        "la propiocepción",
+        "la percepción del dolor"
+      ],
+      "correct": 2,
+      "hint": "La 'P' históricamente se asocia a 'Pain' (dolor).",
+      "explanation": "La sustancia P modula el dolor. Placer es dopamina/opioides, propiocepción es somatosensorial mecánico."
+    },
+    {
+      "q": "En la sinapsis química, el espacio o hendidura sináptica tiene una dimensión aproximada de ____ ángstroms, separando las membranas pre y postsináptica.",
+      "options": [
+        "20",
+        "200",
+        "2000"
+      ],
+      "correct": 1,
+      "hint": "Es una distancia muy pequeña, visible solo al microscopio electrónico (20-30 nm).",
+      "explanation": "El texto especifica 200 ángstroms. 20 sería una unión gap (casi contacto), 2000 es demasiado lejos para difusión rápida."
+    },
+    {
+      "q": "¿Qué afirmación es CORRECTA sobre los receptores metabotrópicos?",
+      "options": [
+        "No abren canales directamente, usan proteínas G",
+        "Requieren energía metabólica para su activación",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Implican metabolismo celular y pasos intermedios indirectos.",
+      "explanation": "Son indirectos (vía proteínas G) y consumen energía (metabolismo) para las cascadas de señalización."
+    },
+    {
+      "q": "¿Cuál de los siguientes iones contribuye a la generación de un Potencial Excitatorio Postsináptico (PEP)?",
+      "options": [
+        "Entrada de Sodio (Na+)",
+        "Entrada de Calcio (Ca2+)",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Cualquier catión que entre a la célula despolarizará la membrana.",
+      "explanation": "Tanto Na+ como Ca2+ son cationes extracelulares cuya entrada despolariza (excita) la neurona."
+    },
+    {
+      "q": "Respecto a la acetilcolina (ACh), ¿qué es cierto?",
+      "options": [
+        "Fue el primer neurotransmisor descubierto por Otto Loewi",
+        "Se degrada en el espacio sináptico por la acetilcolinesterasa",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Loewi la llamó 'Vagusstoff' y su limpieza sináptica es enzimática.",
+      "explanation": "Loewi la descubrió en el corazón de rana y la AChE es su enzima degradadora principal."
+    },
+    {
+      "q": "¿Qué características definen a un neurotransmisor clásico?",
+      "options": [
+        "Liberación dependiente de calcio ante despolarización",
+        "Presencia de receptores específicos en la postsinapsis",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Deben cumplir criterios de presencia, liberación fisiológica e identidad de acción.",
+      "explanation": "Son criterios fundamentales: síntesis neuronal, liberación Ca2+-dependiente y acción en receptores específicos."
+    },
+    {
+      "q": "¿Cuáles son categorías principales de monoaminas?",
+      "options": [
+        "Catecolaminas (Dopamina, NA, Adrenalina)",
+        "Indolaminas (Serotonina)",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Las monoaminas incluyen a las derivadas de tirosina y triptófano.",
+      "explanation": "Catecolaminas e indolaminas son las dos grandes familias de monoaminas biógenas."
+    },
+    {
+      "q": "¿Qué funciones se asocian a la dopamina?",
+      "options": [
+        "Control del movimiento voluntario (vía nigroestriatal)",
+        "Mecanismos de recompensa y refuerzo (vía mesolímbica)",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es central tanto para moverse como para sentir placer.",
+      "explanation": "La DA regula motor (Parkinson si falta) y motivación/placer (adicciones)."
+    },
+    {
+      "q": "¿Qué es cierto sobre la síntesis de GABA?",
+      "options": [
+        "Su precursor inmediato es el glutamato",
+        "Requiere fosfato de piridoxal (Vitamina B6) como cofactor",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es una descarboxilación del glutamato dependiente de vitaminas.",
+      "explanation": "La enzima GAD transforma Glutamato en GABA usando Vitamina B6."
+    },
+    {
+      "q": "¿Qué tipos de sinapsis existen según su lugar de contacto?",
+      "options": [
+        "Axodendríticas y Axosomáticas",
+        "Axoaxónicas y Dendrodendríticas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Las neuronas pueden conectar casi cualquier parte de su estructura con otra.",
+      "explanation": "El texto menciona las 4 variedades: a dendritas, soma, axón u otras dendritas."
+    },
+    {
+      "q": "¿Qué ocurre durante la terminación de la señal sináptica?",
+      "options": [
+        "Recaptación por bombas transportadoras",
+        "Degradación enzimática en la hendidura",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "El NT debe desaparecer de la hendidura para que la señal pare.",
+      "explanation": "Son los dos mecanismos principales de limpieza sináptica descritos."
+    },
+    {
+      "q": "¿Qué es cierto sobre los péptidos opioides endógenos?",
+      "options": [
+        "Incluyen beta-endorfinas, encefalinas y dinorfinas",
+        "Actúan sobre receptores mu, delta y kappa",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son la 'morfina interna' del cuerpo con sus propios receptores.",
+      "explanation": "El texto lista estos tres péptidos y sus correspondientes receptores griegos."
+    },
+    {
+      "q": "Respecto a la noradrenalina, ¿qué afirmaciones son válidas?",
+      "options": [
+        "Influye en la vigilia y el estado de alerta (arousal)",
+        "Se libera a través de varicosidades axonales",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es el NT de la 'alarma' y tiene una liberación difusa.",
+      "explanation": "Regula la atención/vigilia y su liberación en varicosidades permite una acción paracrina más amplia."
+    },
+    {
+      "q": "¿Qué elementos forman parte de la estructura de una sinapsis química?",
+      "options": [
+        "Membrana presináptica con vesículas",
+        "Hendidura sináptica y membrana postsináptica con receptores",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Requiere un emisor, un espacio y un receptor.",
+      "explanation": "La figura 16 y el texto describen estos tres componentes esenciales."
+    },
+    {
+      "q": "¿Qué se requiere para considerar una sustancia como neurotransmisor?",
+      "options": [
+        "Estar presente en la neurona presináptica",
+        "Liberarse ante la despolarización presináptica",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son los criterios de localización y liberación fisiológica.",
+      "explanation": "Además de tener receptores (criterio 3), debe estar y liberarse desde la presináptica."
+    },
+    {
+      "q": "Sobre el glutamato, ¿qué es cierto?",
+      "options": [
+        "Es el principal neurotransmisor excitador del SNC",
+        "Tiene receptores ionotrópicos (NMDA, AMPA) y metabotrópicos",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es el 'acelerador' universal del cerebro con múltiples tipos de receptores.",
+      "explanation": "Casi todas las neuronas excitadoras lo usan y posee una familia compleja de receptores."
+    },
+    {
+      "q": "¿Qué funciones cumple la serotonina (5-HT)?",
+      "options": [
+        "Regulación del estado de ánimo y dolor",
+        "Control de la ingesta y el sueño",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es un NT 'estabilizador' que afecta a múltiples sistemas básicos.",
+      "explanation": "El texto menciona ánimo, dolor, sueño, ingesta y activación como sus dominios."
+    },
+    {
+      "q": "¿Qué es cierto sobre la integración neural?",
+      "options": [
+        "Combina señales excitatorias e inhibitorias",
+        "Determina si se alcanza el umbral para el potencial de acción",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es la 'decisión' matemática que toma la neurona.",
+      "explanation": "La neurona suma algebraicamente inputs (PEPs y PIPs) para decidir si dispara."
+    },
+    {
+      "q": "¿Qué receptores adrenérgicos existen?",
+      "options": [
+        "Alfa (1 y 2)",
+        "Beta (1 y 2)",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se dividen con letras griegas y números.",
+      "explanation": "El texto cita alfa y beta, con subtipos pre y postsinápticos."
+    },
+    {
+      "q": "¿Qué afirmación es CORRECTA sobre las sinapsis axoaxónicas?",
+      "options": [
+        "Juegan un papel en la modulación presináptica",
+        "Pueden facilitar o inhibir la liberación del terminal",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Controlan al controlador (el axón) antes de que hable.",
+      "explanation": "Su función es modular cuánto NT libera el terminal sobre el que hacen sinapsis."
+    },
+    {
+      "q": "¿Qué enunciado es FALSO respecto a las sinapsis eléctricas?",
+      "options": [
+        "Utilizan neurotransmisores químicos en vesículas",
+        "La corriente fluye por uniones en hendidura",
+        "Son canales que conectan dos células directamente",
+        "Ninguna es correcta (Todas las opciones A, B y C son verdaderas)"
+      ],
+      "correct": 0,
+      "hint": "Busca la característica que pertenece exclusivamente a la sinapsis química.",
+      "explanation": "Las sinapsis eléctricas NO usan neurotransmisores ni vesículas; eso es exclusivo de las químicas. La corriente pasa directamente."
+    },
+    {
+      "q": "Respecto a los receptores, ¿cuál NO es una característica de los ionotrópicos?",
+      "options": [
+        "Inician cascadas metabólicas lentas vía proteínas G",
+        "Abren canales iónicos directamente al unirse el ligando",
+        "Producen efectos rápidos en el potencial de membrana",
+        "Ninguna es correcta (Todas son verdaderas)"
+      ],
+      "correct": 0,
+      "hint": "Los ionotrópicos son rápidos y directos. ¿Qué opción describe a los metabotrópicos?",
+      "explanation": "La activación de proteínas G y cascadas lentas define a los metabotrópicos, no a los ionotrópicos."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre la síntesis de neurotransmisores es FALSA?",
+      "options": [
+        "Los neuropéptidos se sintetizan en el botón terminal",
+        "Las moléculas pequeñas se sintetizan en el terminal",
+        "Los péptidos se sintetizan en el cuerpo celular (soma)",
+        "Ninguna es correcta (Todas son verdaderas)"
+      ],
+      "correct": 0,
+      "hint": "Los péptidos son proteínas grandes. ¿Dónde se fabrican las proteínas?",
+      "explanation": "Los neuropéptidos se sintetizan en el soma y viajan por el axón. Solo los de molécula pequeña se hacen en el terminal."
+    },
+    {
+      "q": "Sobre los potenciales postsinápticos, ¿qué asociación es INCORRECTA?",
+      "options": [
+        "Apertura de canales de Na+ -> Hiperpolarización (PIP)",
+        "Apertura de canales de K+ -> Hiperpolarización (PIP)",
+        "Apertura de canales de Cl- -> Hiperpolarización (PIP)",
+        "Ninguna es correcta (Todas las asociaciones son verdaderas)"
+      ],
+      "correct": 0,
+      "hint": "El sodio es positivo y entra. ¿Qué efecto eléctrico tiene ganar cargas positivas?",
+      "explanation": "La entrada de Na+ causa despolarización (PEP), no hiperpolarización. K+ y Cl- sí causan PIP."
+    },
+    {
+      "q": "¿Qué afirmación sobre la acetilcolina es FALSA?",
+      "options": [
+        "Se sintetiza a partir de triptófano y tirosina",
+        "Es degradada por la acetilcolinesterasa",
+        "Actúa en la unión neuromuscular esquelética",
+        "Ninguna es correcta (Todas son verdaderas)"
+      ],
+      "correct": 0,
+      "hint": "Triptófano y tirosina son aminoácidos para monoaminas. La ACh viene de la colina.",
+      "explanation": "ACh se sintetiza de Colina + Acetil-CoA. Triptófano/Tirosina son precursores de monoaminas."
+    },
+    {
+      "q": "Respecto a las vías dopaminérgicas, ¿qué relación vía-función es INCORRECTA?",
+      "options": [
+        "Nigroestriatal -> Regulación hormonal hipofisaria",
+        "Mesolímbica -> Refuerzo y adicción",
+        "Mesocortical -> Cognición y función ejecutiva",
+        "Ninguna es correcta (Todas las relaciones son verdaderas)"
+      ],
+      "correct": 0,
+      "hint": "La vía nigroestriatal se daña en el Parkinson. ¿Qué función se pierde en el Parkinson?",
+      "explanation": "La vía nigroestriatal controla el movimiento. La regulación hormonal es función de la tuberoinfundibular."
+    },
+    {
+      "q": "¿Cuál de los siguientes NO es un criterio para identificar un neurotransmisor?",
+      "options": [
+        "Debe ser capaz de difundir a través de la membrana glial",
+        "Debe estar presente en la neurona presináptica",
+        "Debe liberarse dependiente de calcio",
+        "Ninguna es correcta (Todos son criterios válidos)"
+      ],
+      "correct": 0,
+      "hint": "Los criterios se centran en la neurona pre y postsináptica, no en la glía.",
+      "explanation": "La difusión por glía no es un criterio formal. Los criterios son presencia, liberación fisiológica y receptores específicos."
+    },
+    {
+      "q": "Sobre el GABA, ¿qué afirmación es FALSA?",
+      "options": [
+        "Es el principal neurotransmisor excitador del encéfalo",
+        "Se sintetiza a partir del glutamato",
+        "Sus receptores A y C son ionotrópicos",
+        "Ninguna es correcta (Todas son verdaderas)"
+      ],
+      "correct": 0,
+      "hint": "El GABA hace lo opuesto al glutamato.",
+      "explanation": "El GABA es el principal INHIBIDOR. El excitador es el glutamato."
+    },
+    {
+      "q": "Respecto a los receptores de glutamato, ¿cuál es FALSA?",
+      "options": [
+        "Los receptores NMDA son metabotrópicos lentos",
+        "Los receptores AMPA son ionotrópicos",
+        "Los receptores mGluR son metabotrópicos",
+        "Ninguna es correcta (Todas son verdaderas)"
+      ],
+      "correct": 0,
+      "hint": "NMDA, AMPA y Kainato forman el trío de receptores directos (canales).",
+      "explanation": "El receptor NMDA es IONOTRÓPICO. Los metabotrópicos son los mGluR."
+    },
+    {
+      "q": "¿Qué afirmación sobre la glicina es INCORRECTA?",
+      "options": [
+        "Es el principal excitador en la corteza cerebral",
+        "Controla un canal de cloro inhibitorio",
+        "Predomina en la médula espinal",
+        "Ninguna es correcta (Todas son verdaderas)"
+      ],
+      "correct": 0,
+      "hint": "La glicina es inhibitoria y 'caudal' (médula/tronco).",
+      "explanation": "La glicina es INHIBIDORA y predomina en médula, no corteza. El excitador cortical es glutamato."
+    },
+    {
+      "q": "Sobre la secuencia de síntesis de catecolaminas, ¿qué paso es FALSO o inexistente?",
+      "options": [
+        "Dopamina se convierte en Tirosina",
+        "Tirosina se convierte en L-DOPA",
+        "Dopamina se convierte en Noradrenalina",
+        "Ninguna es correcta (Todos los pasos son verdaderos)"
+      ],
+      "correct": 0,
+      "hint": "El orden es Tirosina -> ... -> Dopamina. ¿Puede ir al revés?",
+      "explanation": "La síntesis va hacia adelante: Tirosina -> L-DOPA -> DA. La DA no se convierte 'atrás' en Tirosina."
+    },
+    {
+      "q": "¿Cuál NO es un mecanismo de eliminación del neurotransmisor?",
+      "options": [
+        "Exocitosis reversa hacia la vesícula",
+        "Recaptación por transportadores",
+        "Degradación enzimática",
+        "Ninguna es correcta (Son mecanismos válidos)"
+      ],
+      "correct": 0,
+      "hint": "La exocitosis es para liberar, no para limpiar la hendidura.",
+      "explanation": "La exocitosis reversa no existe como mecanismo de limpieza. Se usa recaptación o degradación."
+    },
+    {
+      "q": "Sobre los péptidos opioides, ¿qué afirmación es FALSA?",
+      "options": [
+        "Sus efectos son mediados por canales de sodio nicotínicos",
+        "Incluyen a las endorfinas y encefalinas",
+        "Regulan la analgesia y el placer",
+        "Ninguna es correcta (Todas son verdaderas)"
+      ],
+      "correct": 0,
+      "hint": "Los receptores de opioides son mu, delta, kappa (metabotrópicos), no nicotínicos.",
+      "explanation": "Actúan sobre receptores opioides (GPCRs), no sobre canales nicotínicos (que son de ACh)."
+    },
+    {
+      "q": "¿Qué afirmación sobre la integración neural es INCORRECTA?",
+      "options": [
+        "La sumación espacial ocurre con señales sucesivas en el mismo punto",
+        "La sumación temporal ocurre con señales rápidas en la misma sinapsis",
+        "Integra señales excitatorias e inhibitorias",
+        "Ninguna es correcta (Todas son verdaderas)"
+      ],
+      "correct": 0,
+      "hint": "Espacial implica 'espacio' (diferentes lugares).",
+      "explanation": "La sumación espacial es de señales simultáneas en DIFERENTES puntos. La definición dada corresponde a la temporal (o ninguna si se dice 'mismo punto' pero 'sucesivas' es temporal). La opción A describe incorrectamente la espacial."
+    },
+    {
+      "q": "Respecto a las vesículas sinápticas, ¿qué es FALSO?",
+      "options": [
+        "Se sintetizan exclusivamente en el núcleo celular",
+        "Protegen al neurotransmisor de la degradación",
+        "Se fusionan con la membrana ante la entrada de calcio",
+        "Ninguna es correcta (Todas son verdaderas)"
+      ],
+      "correct": 0,
+      "hint": "Las vesículas son orgánulos membranosos, pueden reciclarse localmente.",
+      "explanation": "Las vesículas pueden reciclarse en el terminal (endosoma) y no se crean en el núcleo (síntesis proteica en soma, pero vesícula es membrana). La afirmación es demasiado restrictiva y falsa en contexto de reciclaje."
+    },
+    {
+      "q": "¿Qué afirmación sobre la serotonina es FALSA?",
+      "options": [
+        "Se sintetiza a partir de la Fenilalanina",
+        "Sus núcleos de origen son los del Rafe",
+        "Regula el sueño y el estado de ánimo",
+        "Ninguna es correcta (Todas son verdaderas)"
+      ],
+      "correct": 0,
+      "hint": "Fenilalanina es para catecolaminas. Serotonina viene del Triptófano.",
+      "explanation": "Viene del Triptófano. La Fenilalanina es precursora de Tirosina y catecolaminas."
+    },
+    {
+      "q": "¿Cuál NO es una característica de los neuromoduladores?",
+      "options": [
+        "Actúan exclusivamente en la hendidura sináptica inmediata (punto a punto)",
+        "Suelen ser péptidos",
+        "Tienen efectos más difusos y a mayor distancia que los NT",
+        "Ninguna es correcta (Todas son verdaderas)"
+      ],
+      "correct": 0,
+      "hint": "La diferencia clave entre NT y neuromodulador es la precisión vs difusión.",
+      "explanation": "Los neuromoduladores actúan de forma dispersa, NO punto a punto restringido a la hendidura."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "Compare los mecanismos de transmisión de información entre las sinapsis eléctricas y las sinapsis químicas.",
+      "model": "En las sinapsis eléctricas, la corriente fluye directamente entre células a través de uniones en hendidura (canales de membrana especializados), permitiendo una transmisión casi instantánea. En las sinapsis químicas, no hay continuidad física; la comunicación ocurre mediante la liberación de neurotransmisores desde la neurona presináptica, los cuales cruzan la hendidura sináptica y activan receptores específicos en la postsináptica para generar flujos de corriente.",
+      "keywords": [
+        "uniones en hendidura",
+        "neurotransmisores",
+        "continuidad física",
+        "receptores específicos"
+      ]
+    },
+    {
+      "q": "Explique la importancia funcional de las sinapsis axoaxónicas en comparación con las axodendríticas y axosomáticas.",
+      "model": "Mientras que las sinapsis axodendríticas y axosomáticas transmiten información directa a la neurona postsináptica, las sinapsis axoaxónicas juegan un papel indirecto en la integración neural mediante la modulación presináptica. Estas sinapsis pueden facilitar o inhibir la cantidad de neurotransmisor liberado por el axón terminal sobre el que hacen contacto, regulando así la eficacia de la transmisión sináptica.",
+      "keywords": [
+        "modulación presináptica",
+        "integración neural",
+        "facilitación",
+        "inhibición"
+      ]
+    },
+    {
+      "q": "Describa el proceso de exocitosis del neurotransmisor desencadenado por la llegada del potencial de acción al botón terminal.",
+      "model": "Cuando el potencial de acción llega al botón terminal, la despolarización provoca la apertura de los canales de calcio dependientes de voltaje (Ca2+). La entrada rápida de iones de calcio en la terminal presináptica induce la fusión de las vesículas sinápticas con la membrana presináptica, permitiendo la liberación de su contenido (neurotransmisores) al espacio sináptico.",
+      "keywords": [
+        "canales de calcio",
+        "despolarización",
+        "fusión de vesículas",
+        "exocitosis"
+      ]
+    },
+    {
+      "q": "Diferencie el mecanismo de acción y la velocidad de respuesta entre los receptores ionotrópicos y los receptores metabotrópicos.",
+      "model": "Los receptores ionotrópicos abren canales iónicos de manera directa e inmediata cuando el ligando se une, produciendo efectos rápidos. Los receptores metabotrópicos inician una cascada de señalización intracelular que requiere energía metabólica y a menudo involucra proteínas G y segundos mensajeros para abrir canales iónicos, resultando en respuestas más lentas pero potencialmente más duraderas y amplificadas.",
+      "keywords": [
+        "directo",
+        "proteínas G",
+        "segundos mensajeros",
+        "cascada de señalización"
+      ]
+    },
+    {
+      "q": "Analice cómo la apertura de distintos canales iónicos determina si un potencial postsináptico será excitatorio (PEP) o inhibitorio (PIP).",
+      "model": "La apertura de canales de sodio (Na+) o calcio (Ca2+) permite la entrada de cationes, despolarizando la membrana y generando un PEP (excitatorio). Por el contrario, la apertura de canales de potasio (K+) permite la salida de cargas positivas, y la apertura de canales de cloro (Cl-) permite la entrada de cargas negativas (o neutraliza PEPs), lo que hiperpolariza la membrana generando un PIP (inhibitorio).",
+      "keywords": [
+        "despolarización",
+        "hiperpolarización",
+        "sodio",
+        "potasio",
+        "cloro"
+      ]
+    },
+    {
+      "q": "Explique los dos mecanismos principales mediante los cuales finaliza la acción de los neurotransmisores en el espacio sináptico.",
+      "model": "La acción termina mediante: 1) Degradación enzimática, donde enzimas específicas descomponen el neurotransmisor en el espacio sináptico inactivándolo. 2) Recaptación, donde el neurotransmisor es transportado de vuelta al interior del botón terminal presináptico mediante bombas específicas para su reciclaje y reutilización.",
+      "keywords": [
+        "degradación enzimática",
+        "recaptación",
+        "inactivación",
+        "bombas transportadoras"
+      ]
+    },
+    {
+      "q": "Defina el concepto de integración neural y distinga entre sumación espacial y sumación temporal.",
+      "model": "La integración neural es el proceso de combinar múltiples señales excitatorias e inhibitorias en la neurona postsináptica para determinar si se dispara un potencial de acción. La sumación espacial ocurre cuando se suman señales simultáneas de diferentes sinapsis en distintas partes de la membrana. La sumación temporal ocurre cuando se suman potenciales generados en rápida sucesión en la misma sinapsis.",
+      "keywords": [
+        "combinación de señales",
+        "simultánea",
+        "sucesión rápida",
+        "umbral de disparo"
+      ]
+    },
+    {
+      "q": "Establezca las diferencias funcionales y de alcance entre un neurotransmisor, un neuromodulador y una hormona.",
+      "model": "Los neurotransmisores actúan localmente en la sinapsis y recorren distancias muy cortas. Los neuromoduladores se liberan en mayores cantidades, difunden distancias más largas y actúan de manera dispersa fuera del espacio sináptico estricto. Las hormonas son liberadas al torrente sanguíneo por glándulas endocrinas y actúan sobre células diana en órganos distantes.",
+      "keywords": [
+        "alcance local",
+        "difusión",
+        "torrente sanguíneo",
+        "distancia de acción"
+      ]
+    },
+    {
+      "q": "Enumere los tres criterios formales que debe cumplir una sustancia para ser considerada un neurotransmisor.",
+      "model": "1) La sustancia debe estar presente en el interior de la neurona presináptica. 2) Debe ser liberada en respuesta a la despolarización presináptica de forma dependiente de calcio. 3) La célula postsináptica debe presentar receptores específicos para dicha sustancia.",
+      "keywords": [
+        "presencia presináptica",
+        "liberación dependiente de calcio",
+        "receptores específicos"
+      ]
+    },
+    {
+      "q": "Describa la síntesis de la Acetilcolina (ACh) y clasifique sus tipos de receptores.",
+      "model": "La ACh se sintetiza a partir de colina y acetilcoenzima A (derivada de la glucosa) mediante la enzima colina acetiltransferasa. Sus receptores se clasifican en: Nicotínicos (ionotrópicos, estimulados por nicotina, predominantes en músculo) y Muscarínicos (metabotrópicos, estimulados por muscarina, predominantes en el SNC).",
+      "keywords": [
+        "colina acetiltransferasa",
+        "nicotínicos",
+        "muscarínicos",
+        "ionotrópicos/metabotrópicos"
+      ]
+    },
+    {
+      "q": "Explique la 'hipótesis colinérgica' de la enfermedad de Alzheimer y sus implicaciones cognitivas.",
+      "model": "Esta hipótesis propone que la degeneración de neuronas colinérgicas en el prosencéfalo basal provoca una denervación colinérgica en áreas límbicas y neocorticales. Esta pérdida de inervación y disminución de acetilcolina se asocia directamente con los déficits cognitivos característicos de la enfermedad, como el deterioro de la memoria, problemas de aprendizaje y reducción de la atención.",
+      "keywords": [
+        "prosencéfalo basal",
+        "denervación",
+        "déficits cognitivos",
+        "memoria y atención"
+      ]
+    },
+    {
+      "q": "Detalle la ruta de biosíntesis de las catecolaminas partiendo de la fenilalanina.",
+      "model": "La ruta comienza con la Fenilalanina (de la dieta), que se convierte en Tirosina. La Tirosina se transforma en Levodopa (L-DOPA). La Levodopa se descarboxila para formar Dopamina. La Dopamina puede convertirse en Noradrenalina, y finalmente, esta puede metilarse para formar Adrenalina.",
+      "keywords": [
+        "Tirosina",
+        "Levodopa",
+        "Dopamina",
+        "Noradrenalina",
+        "Adrenalina"
+      ]
+    },
+    {
+      "q": "Compare la biosíntesis de la serotonina con la de las catecolaminas en términos de precursores.",
+      "model": "Mientras que las catecolaminas (dopamina, noradrenalina, adrenalina) se sintetizan a partir del aminoácido tirosina (derivado de fenilalanina), la serotonina (una indolamina) se sintetiza a partir de un precursor diferente, el aminoácido triptófano, que pasa a 5-hidroxitriptófano antes de convertirse en serotonina (5-HT).",
+      "keywords": [
+        "precursor",
+        "tirosina",
+        "triptófano",
+        "indolamina"
+      ]
+    },
+    {
+      "q": "Explique el papel de las enzimas MAO y COMT en la regulación de la dopamina y su relevancia clínica.",
+      "model": "La MAO (monoamino-oxidasa) y la COMT (catecol-O-metiltransferasa) son las enzimas principales encargadas del catabolismo (degradación) de la dopamina. Su relevancia clínica radica en que los fármacos inhibidores de estas enzimas se utilizan como antidepresivos y tratamientos neurológicos al aumentar la disponibilidad de dopamina en el espacio sináptico al impedir su degradación.",
+      "keywords": [
+        "catabolismo",
+        "inhibidores",
+        "antidepresivos",
+        "disponibilidad sináptica"
+      ]
+    },
+    {
+      "q": "Describa la vía dopaminérgica nigroestriatal indicando su origen, destino, función principal y patología asociada.",
+      "model": "La vía nigroestriatal se origina en la sustancia negra y se proyecta al cuerpo estriado (núcleo caudado y putamen). Su función principal es el control del movimiento. La degeneración de las neuronas dopaminérgicas en esta vía es la causa de la enfermedad de Parkinson, caracterizada por temblores, rigidez y bradicinesia.",
+      "keywords": [
+        "sustancia negra",
+        "cuerpo estriado",
+        "control motor",
+        "Parkinson"
+      ]
+    },
+    {
+      "q": "Analice la función de la vía mesolímbica y su relación con los trastornos adictivos.",
+      "model": "La vía mesolímbica conecta el área tegmental ventral con el sistema límbico (núcleo accumbens, amígdala, hipocampo). Es fundamental para el sistema de refuerzo cerebral, la motivación y las emociones. Su disfunción o hiperactivación está estrechamente vinculada con los mecanismos de recompensa que subyacen a las adicciones.",
+      "keywords": [
+        "área tegmental ventral",
+        "núcleo accumbens",
+        "refuerzo cerebral",
+        "adicciones"
+      ]
+    },
+    {
+      "q": "Distinga las funciones de la vía mesocortical de las de la vía tuberoinfundibular.",
+      "model": "La vía mesocortical (del área tegmental ventral a la corteza prefrontal) está implicada en funciones cognitivas superiores, ejecutivas y regulación emocional. La vía tuberoinfundibular (del hipotálamo a la hipófisis anterior) tiene una función puramente de regulación hormonal, controlando la secreción de hormonas pituitarias como la prolactina.",
+      "keywords": [
+        "cognición/función ejecutiva",
+        "regulación hormonal",
+        "corteza prefrontal",
+        "hipófisis"
+      ]
+    },
+    {
+      "q": "Explique la peculiaridad en el mecanismo de liberación de la noradrenalina y sus implicaciones funcionales.",
+      "model": "La liberación de noradrenalina no ocurre solo en el botón terminal, sino a lo largo del axón mediante varicosidades axonales (ensanchamientos). Esto permite una liberación difusa y volumétrica del neurotransmisor, afectando a un mayor número de neuronas simultáneamente, lo cual es congruente con su función de regular estados globales como la vigilia, la atención y el 'arousal'.",
+      "keywords": [
+        "varicosidades axonales",
+        "liberación difusa",
+        "arousal",
+        "vigilia"
+      ]
+    },
+    {
+      "q": "Identifique la enzima clave que limita la síntesis de adrenalina a ciertas neuronas específicas del SNC.",
+      "model": "La enzima feniletanolamina-N-metiltransferasa (PNMT) es la responsable de convertir la noradrenalina en adrenalina. Esta enzima está presente exclusivamente en las neuronas que secretan adrenalina (localizadas en el sistema tegmental lateral y bulbo raquídeo), lo que restringe la síntesis de este neurotransmisor a dichas células específicas.",
+      "keywords": [
+        "PNMT",
+        "especificidad enzimática",
+        "conversión noradrenalina-adrenalina"
+      ]
+    },
+    {
+      "q": "Resuma las funciones principales reguladas por la serotonina (5-HT) y mencione la enzima responsable de su degradación.",
+      "model": "La serotonina regula funciones vitales como el estado de ánimo, la percepción del dolor, el sueño, la ingesta de alimentos y la activación cerebral general. La enzima responsable de su degradación tanto en el sistema nervioso central como en el periférico es la monoamino-oxidasa (MAO).",
+      "keywords": [
+        "estado de ánimo",
+        "sueño/ingesta",
+        "dolor",
+        "MAO"
+      ]
+    },
+    {
+      "q": "Clasifique los receptores del glutamato y explique brevemente la diferencia funcional entre sus tipos ionotrópicos.",
+      "model": "Los receptores de glutamato se dividen en ionotrópicos (NMDA, AMPA, cainato) y metabotrópicos (mGluR). Entre los ionotrópicos, los receptores AMPA y cainato medían respuestas excitatorias rápidas clásicas, mientras que el receptor NMDA es único porque es dependiente de voltaje y permeable al calcio, jugando un papel crucial en la plasticidad sináptica y mecanismos de memoria.",
+      "keywords": [
+        "NMDA",
+        "AMPA",
+        "plasticidad sináptica",
+        "excitatoriedad"
+      ]
+    },
+    {
+      "q": "Describa la relación metabólica entre el glutamato y el GABA y la función de la enzima GAD.",
+      "model": "El GABA se sintetiza directamente a partir del glutamato (que es el principal excitador). Esta conversión es catalizada por la enzima descarboxilasa de ácido glutámico (GAD), que elimina un grupo carboxilo del glutamato para convertirlo en el principal inhibidor del encéfalo. La actividad de la GAD depende de la vitamina B6.",
+      "keywords": [
+        "precursor glutamato",
+        "enzima GAD",
+        "vitamina B6",
+        "conversión excitación-inhibición"
+      ]
+    },
+    {
+      "q": "Diferencie los receptores GABA-A y GABA-C del receptor GABA-B en términos de estructura y efecto.",
+      "model": "Los receptores GABA-A y GABA-C son ionotrópicos; al activarse abren canales de cloro produciendo una inhibición neuronal rápida. El receptor GABA-B es metabotrópico; actúa a través de segundos mensajeros, produciendo respuestas inhibidoras más lentas y prolongadas, a menudo mediante la apertura de canales de potasio.",
+      "keywords": [
+        "ionotrópico vs metabotrópico",
+        "canales de cloro",
+        "rapidez de acción",
+        "segundos mensajeros"
+      ]
+    },
+    {
+      "q": "Explique por qué las benzodiacepinas y los barbitúricos son eficaces en el tratamiento de la ansiedad y la epilepsia basándose en su mecanismo de acción.",
+      "model": "Ambos fármacos actúan como agonistas (o moduladores alostéricos positivos) de los receptores de GABA, potenciando la acción inhibitoria natural del GABA. Al aumentar la inhibición neuronal en el SNC, reducen la excitabilidad excesiva, lo que produce efectos ansiolíticos (reducción de ansiedad), sedantes y anticonvulsivantes (control de epilepsia).",
+      "keywords": [
+        "agonistas GABA",
+        "potenciación inhibitoria",
+        "excitabilidad neuronal",
+        "anticonvulsivante"
+      ]
+    },
+    {
+      "q": "Discuta la implicación del GABA en la corea de Huntington.",
+      "model": "La corea de Huntington se asocia con anormalidades y degeneración de neuronas gabaérgicas (inhibitorias), especialmente en los ganglios basales. La pérdida de esta inhibición gabaérgica provoca un desequilibrio motor que se manifiesta en movimientos incontrolados (tics, corea) característicos de la enfermedad.",
+      "keywords": [
+        "degeneración gabaérgica",
+        "pérdida de inhibición",
+        "movimientos incontrolados",
+        "ganglios basales"
+      ]
+    },
+    {
+      "q": "Compare la localización y función de la Glicina con respecto al GABA.",
+      "model": "Mientras que el GABA está ampliamente distribuido por todo el encéfalo y médula, la Glicina tiene una distribución más localizada, actuando como el principal neurotransmisor inhibidor en la médula espinal y el tronco encefálico (porciones caudales). Ambos producen potenciales inhibitorios (PIP) mediante la apertura de canales de cloro.",
+      "keywords": [
+        "médula espinal",
+        "tronco encefálico",
+        "inhibición caudal",
+        "canal de cloro"
+      ]
+    },
+    {
+      "q": "Explique el papel dual de los péptidos como neurotransmisores y neuromoduladores, dando ejemplos de sus funciones.",
+      "model": "Aunque pueden actuar como neurotransmisores, los péptidos funcionan principalmente como neuromoduladores, regulando respuestas complejas y estados emocionales. Por ejemplo, la sustancia P y los opioides modulan la percepción del dolor y el placer; las hormonas peptídicas como la adrenocorticotrofina regulan la respuesta al estrés.",
+      "keywords": [
+        "neuromodulación",
+        "sustancia P",
+        "opioides",
+        "dolor y estrés"
+      ]
+    },
+    {
+      "q": "Analice la función de los opioides endógenos (endorfinas, encefalinas) y sobre qué receptores actúan.",
+      "model": "Los opioides endógenos actúan sobre los receptores μ (mi), δ (delta) y κ (kappa). Su función principal es la analgesia (alivio del dolor), la supresión de comportamientos de huida y la activación de sistemas de placer/recompensa, actuando como mecanismos internos de regulación del sufrimiento y bienestar.",
+      "keywords": [
+        "receptores μ/δ/κ",
+        "analgesia",
+        "sistema de recompensa",
+        "bienestar"
+      ]
+    },
+    {
+      "q": "Explique el riesgo asociado al uso de opiáceos exógenos (morfina, heroína) en comparación con los opioides endógenos.",
+      "model": "Los opiáceos exógenos estimulan los mismos receptores que los endógenos pero de manera mucho más potente e intensa. Esta sobreactivación provoca efectos analgésicos y placenteros extremos que conllevan un alto riesgo de refuerzo positivo desadaptativo y adicción, además de la posible desregulación de la producción natural de opioides.",
+      "keywords": [
+        "potencia",
+        "sobreactivación",
+        "adicción",
+        "refuerzo"
+      ]
+    },
+    {
+      "q": "Relacione la deficiencia dietética de vitamina B6 con la función sináptica inhibitoria.",
+      "model": "La enzima GAD, necesaria para sintetizar GABA a partir de glutamato, requiere fosfato de piridoxal (derivado de vitamina B6) como cofactor. Una dieta deficiente en vitamina B6 reduce la actividad de la GAD, disminuyendo la síntesis de GABA. Esto debilita la inhibición sináptica general, pudiendo llevar a estados de hiperexcitabilidad neuronal y convulsiones.",
+      "keywords": [
+        "cofactor enzimático",
+        "síntesis de GABA",
+        "hiperexcitabilidad",
+        "dieta"
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "4.1 Estructura de la sinapsis",
+      "q": "¿Cuál es la función principal de las sinapsis en el sistema nervioso?",
+      "a": "Las sinapsis son los contactos funcionales entre neuronas que permiten la comunicación eficiente entre los miles de millones de células del encéfalo, transmitiendo señales desde una neurona presináptica a una postsináptica."
+    },
+    {
+      "cat": "4.1 Estructura de la sinapsis",
+      "q": "¿Qué diferencia fundamental existe entre las sinapsis eléctricas y las químicas según su mecanismo de transmisión?",
+      "a": "En las sinapsis eléctricas la corriente fluye directamente a través de uniones en hendidura, mientras que en las químicas la comunicación se realiza mediante la liberación de neurotransmisores que activan receptores específicos."
+    },
+    {
+      "cat": "4.1 Estructura de la sinapsis",
+      "q": "¿Qué tipos de sinapsis existen según el lugar de contacto en la neurona postsináptica?",
+      "a": "Las principales son axosomáticas (sobre el soma) y axodendríticas (sobre las dendritas), que constituyen el 80%. También existen axoaxónicas (sobre el axón) y dendrodendríticas."
+    },
+    {
+      "cat": "4.1 Estructura de la sinapsis",
+      "q": "¿Cuál es la función específica de las sinapsis axoaxónicas en la integración neural?",
+      "a": "Juegan un papel en la modulación presináptica, facilitando o inhibiendo la actividad del axón con el que hacen sinapsis, influyendo así indirectamente en la transmisión."
+    },
+    {
+      "cat": "4.1 Estructura de la sinapsis",
+      "q": "¿Qué función se atribuye a las sinapsis dendrodendríticas?",
+      "a": "Se cree que tienen una función reguladora y contribuyen a organizar la actividad de grupos amplios de neuronas, encontrándose a menudo en neuronas pequeñas."
+    },
+    {
+      "cat": "4.1 Estructura de la sinapsis",
+      "q": "¿Qué características estructurales definen el espacio o hendidura sináptica en una sinapsis química?",
+      "a": "Es una separación muy delgada, de aproximadamente 200 ángstroms, situada entre la membrana presináptica del botón terminal y la membrana postsináptica."
+    },
+    {
+      "cat": "4.1 Estructura de la sinapsis",
+      "q": "¿Dónde se almacenan los neurotransmisores dentro de la terminación presináptica antes de su liberación?",
+      "a": "Se almacenan en orgánulos esféricos limitados por membranas llamados vesículas sinápticas, que los protegen de la degradación enzimática."
+    },
+    {
+      "cat": "4.1 Secuencia de transmisión",
+      "q": "¿En qué lugares de la neurona se sintetizan los diferentes tipos de neurotransmisores?",
+      "a": "Los neurotransmisores de bajo peso molecular se sintetizan en las terminales del axón, mientras que los péptidos (moléculas más grandes) se sintetizan en el cuerpo celular."
+    },
+    {
+      "cat": "4.1 Secuencia de transmisión",
+      "q": "¿Qué evento iónico desencadena la liberación de neurotransmisores cuando el potencial de acción llega al botón terminal?",
+      "a": "La despolarización abre los canales de calcio (Ca2+), permitiendo su entrada rápida, lo que provoca la fusión de las vesículas con la membrana y la exocitosis del neurotransmisor."
+    },
+    {
+      "cat": "4.1 Receptores",
+      "q": "¿Qué es un ligando en el contexto de la transmisión sináptica?",
+      "a": "Es una sustancia (como un neurotransmisor, fármaco o veneno) que se une a un lugar específico de unión en una molécula receptora."
+    },
+    {
+      "cat": "4.1 Receptores",
+      "q": "¿Cómo funcionan los receptores ionotrópicos tras la unión del neurotransmisor?",
+      "a": "Abren los canales iónicos de manera directa e inmediata cuando la molécula de neurotransmisor se fija al lugar de unión."
+    },
+    {
+      "cat": "4.1 Receptores",
+      "q": "¿Cuál es el mecanismo de acción de los receptores metabotrópicos?",
+      "a": "No abren canales directamente, sino que inician una cadena de eventos químicos que requieren energía metabólica, utilizando proteínas G o segundos mensajeros para abrir los canales."
+    },
+    {
+      "cat": "4.1 Potenciales postsinápticos",
+      "q": "¿Qué efecto produce la apertura de canales de sodio (Na+) en la membrana postsináptica?",
+      "a": "Genera potenciales excitatorios postsinápticos (PEP), despolarizando la membrana."
+    },
+    {
+      "cat": "4.1 Potenciales postsinápticos",
+      "q": "¿Qué efecto tiene la apertura de canales de potasio (K+) en la neurona postsináptica?",
+      "a": "Permite la salida de K+, lo que hiperpolariza la membrana y produce potenciales inhibitorios postsinápticos (PIP)."
+    },
+    {
+      "cat": "4.1 Potenciales postsinápticos",
+      "q": "¿Cómo contribuyen los canales de cloro (Cl-) a la inhibición postsináptica?",
+      "a": "Su apertura neutraliza los potenciales excitatorios (PEP), contribuyendo a la generación de potenciales inhibitorios (PIP)."
+    },
+    {
+      "cat": "4.1 Terminación de la señal",
+      "q": "¿En qué consiste el proceso de degradación enzimática para terminar la acción del neurotransmisor?",
+      "a": "Consiste en la inactivación de los neurotransmisores mediante enzimas específicas que los descomponen y eliminan del espacio sináptico."
+    },
+    {
+      "cat": "4.1 Terminación de la señal",
+      "q": "¿Qué mecanismo permite la reutilización de neurotransmisores tras su liberación?",
+      "a": "La recaptación, mediante la cual bombas específicas en el botón terminal recogen el neurotransmisor del espacio sináptico para devolverlo a la neurona presináptica."
+    },
+    {
+      "cat": "4.1 Integración neural",
+      "q": "¿Qué diferencia hay entre la sumación espacial y la sumación temporal en la integración neural?",
+      "a": "La sumación espacial combina señales simultáneas de distintas partes de la membrana, mientras que la sumación temporal combina señales que ocurren rápidamente una tras otra en la misma sinapsis."
+    },
+    {
+      "cat": "4.2 Sistema de neurotransmisión",
+      "q": "¿Cómo se diferencian los neuromoduladores de los neurotransmisores clásicos en cuanto a su acción?",
+      "a": "Los neuromoduladores actúan de manera dispersa, viajando distancias más largas y no limitándose al espacio sináptico inmediato, a diferencia de los neurotransmisores que actúan a muy corta distancia."
+    },
+    {
+      "cat": "4.2 Sistema de neurotransmisión",
+      "q": "¿Qué criterios formales debe cumplir una sustancia para ser considerada un neurotransmisor?",
+      "a": "Debe estar presente en la neurona presináptica, ser liberada en respuesta a una despolarización calcio-dependiente y tener receptores específicos en la célula postsináptica."
+    },
+    {
+      "cat": "Acetilcolina",
+      "q": "¿Quién descubrió la acetilcolina y mediante qué experimento?",
+      "a": "Fue descubierta por Otto Loewi en 1926, demostrando que la estimulación del nervio vago liberaba una sustancia química que reducía la frecuencia cardíaca en corazones de rana."
+    },
+    {
+      "cat": "Acetilcolina",
+      "q": "¿A partir de qué precursores y con qué enzima se sintetiza la acetilcolina (ACh)?",
+      "a": "Se sintetiza a partir de acetilcoenzima A y colina, mediante la acción de la enzima colina acetiltransferasa."
+    },
+    {
+      "cat": "Acetilcolina",
+      "q": "¿Cuáles son los dos tipos principales de receptores colinérgicos y dónde predominan?",
+      "a": "Los receptores nicotínicos (predominantes en fibras musculares) y los receptores muscarínicos (predominantes en el Sistema Nervioso Central)."
+    },
+    {
+      "cat": "Acetilcolina",
+      "q": "¿Qué hipótesis relaciona la acetilcolina con la enfermedad de Alzheimer?",
+      "a": "La hipótesis colinérgica sugiere que la pérdida de inervación colinérgica en áreas límbicas y neocorticales causa los déficits cognitivos y de memoria característicos de la enfermedad."
+    },
+    {
+      "cat": "Acetilcolina",
+      "q": "¿Cómo actúa el bótox en el sistema periférico en relación con la acetilcolina?",
+      "a": "Actúa como antagonista de la ACh, inhibiendo la contracción muscular en la zona de inyección."
+    },
+    {
+      "cat": "Monoaminas",
+      "q": "¿Qué subcategorías componen las aminas biógenas o monoaminas?",
+      "a": "Se dividen en catecolaminas (dopamina, noradrenalina, adrenalina) e indolaminas (como la serotonina)."
+    },
+    {
+      "cat": "Monoaminas",
+      "q": "¿Cuál es la secuencia de síntesis de las catecolaminas a partir de la dieta?",
+      "a": "Fenilalanina -> Tirosina -> Levodopa -> Dopamina -> Noradrenalina -> Adrenalina."
+    },
+    {
+      "cat": "Monoaminas",
+      "q": "¿Qué enzima es fundamental para la síntesis de serotonina a partir del triptófano?",
+      "a": "El proceso implica la conversión de Triptófano a 5-hidroxitriptófano y posteriormente a Serotonina."
+    },
+    {
+      "cat": "Dopamina",
+      "q": "¿Qué enzimas son responsables de la degradación (catabolismo) de la dopamina?",
+      "a": "La monoamino-oxidasa (MAO) y la catecol-O-metiltransferasa (COMT)."
+    },
+    {
+      "cat": "Dopamina",
+      "q": "¿Qué tipo de receptores utiliza la dopamina y cómo se clasifican?",
+      "a": "Utiliza receptores metabotrópicos, identificados como D1 (postsinápticos) y D2 (pre y postsinápticos), entre otros."
+    },
+    {
+      "cat": "Dopamina",
+      "q": "¿Cuál es el origen, destino y función de la vía nigroestriatal?",
+      "a": "Se origina en la sustancia negra y va al cuerpo estriado; su función es el control del movimiento y su degeneración causa Parkinson."
+    },
+    {
+      "cat": "Dopamina",
+      "q": "¿Qué vía dopaminérgica está involucrada en el sistema de refuerzo y las adicciones?",
+      "a": "La vía mesolímbica, que conecta el área tegmental ventral con el núcleo accumbens y la amígdala."
+    },
+    {
+      "cat": "Dopamina",
+      "q": "¿Qué funciones regula la vía dopaminérgica mesocortical?",
+      "a": "Está implicada en la cognición, la función ejecutiva y la regulación emocional, proyectándose a la corteza prefrontal."
+    },
+    {
+      "cat": "Dopamina",
+      "q": "¿Qué efecto tiene la vía tuberoinfundibular y dónde se origina?",
+      "a": "Se origina en el hipotálamo y regula la secreción hormonal en la hipófisis anterior."
+    },
+    {
+      "cat": "Noradrenalina",
+      "q": "¿Dónde se originan principalmente las vías noradrenérgicas en el encéfalo?",
+      "a": "Se originan en el locus cerúleo, proyectándose ampliamente hacia el córtex, tálamo, hipotálamo y otras estructuras."
+    },
+    {
+      "cat": "Noradrenalina",
+      "q": "¿Qué característica particular tiene la liberación de noradrenalina en el axón?",
+      "a": "Se libera a través de varicosidades axonales (no solo en botones terminales), lo que permite una liberación difusa que afecta a muchas neuronas."
+    },
+    {
+      "cat": "Noradrenalina",
+      "q": "¿Cuáles son los principales efectos funcionales de la noradrenalina en el comportamiento?",
+      "a": "Influye en el sueño, la vigilia, el estado de alerta (arousal), la atención y el aprendizaje."
+    },
+    {
+      "cat": "Adrenalina",
+      "q": "¿Qué enzima es exclusiva de las neuronas que sintetizan adrenalina?",
+      "a": "La feniletanolamina-N-metiltransferasa (PNMT)."
+    },
+    {
+      "cat": "Serotonina",
+      "q": "¿Dónde se localizan la mayoría de los cuerpos celulares de las neuronas serotoninérgicas?",
+      "a": "En los núcleos del rafe del mesencéfalo, la protuberancia y el bulbo raquídeo."
+    },
+    {
+      "cat": "Serotonina",
+      "q": "¿Qué funciones fisiológicas regula principalmente la serotonina (5-HT)?",
+      "a": "Regula el estado de ánimo, la percepción del dolor, el sueño, la ingesta de alimentos y la activación cerebral."
+    },
+    {
+      "cat": "Glutamato",
+      "q": "¿Cuál es el principal efecto del glutamato en el sistema nervioso central?",
+      "a": "Es el principal neurotransmisor excitador, generando potenciales excitatorios y reduciendo el umbral de excitación neuronal."
+    },
+    {
+      "cat": "Glutamato",
+      "q": "¿Cuáles son los tres receptores ionotrópicos principales del glutamato?",
+      "a": "NMDA, AMPA y cainato."
+    },
+    {
+      "cat": "Glutamato",
+      "q": "¿De dónde se deriva biosintéticamente el glutamato?",
+      "a": "Se deriva de la glutamina y a su vez actúa como precursor del GABA."
+    },
+    {
+      "cat": "GABA",
+      "q": "¿Qué enzima cataliza la conversión de glutamato a GABA y qué vitamina requiere?",
+      "a": "La enzima descarboxilasa de ácido glutámico (GAD), que requiere vitamina B6 (fosfato de piridoxal)."
+    },
+    {
+      "cat": "GABA",
+      "q": "¿Cuál es la principal diferencia funcional entre los receptores GABAA y GABAB?",
+      "a": "Los receptores GABAA son ionotrópicos (inhibición rápida), mientras que los GABAB son metabotrópicos (inhibición prolongada)."
+    },
+    {
+      "cat": "GABA",
+      "q": "¿Qué relación tienen las benzodiazepinas con el sistema GABA?",
+      "a": "Actúan como agonistas de los receptores GABA, potenciando su efecto inhibidor, y se usan como ansiolíticos, sedantes y anticonvulsivantes."
+    },
+    {
+      "cat": "Glicina",
+      "q": "¿Dónde actúa principalmente la glicina como neurotransmisor inhibidor?",
+      "a": "En la médula espinal y las porciones caudales del encéfalo."
+    },
+    {
+      "cat": "Péptidos",
+      "q": "¿Qué función principal cumplen los péptidos en el sistema nervioso en contraste con los neurotransmisores clásicos?",
+      "a": "Actúan principalmente como neuromoduladores."
+    },
+    {
+      "cat": "Péptidos",
+      "q": "¿Qué papel juegan los péptidos opioides endógenos como las endorfinas?",
+      "a": "Son cruciales para la analgesia (alivio del dolor), la supresión de conductas de huida y la activación de sistemas de placer."
+    },
+    {
+      "cat": "Péptidos",
+      "q": "¿Por qué los opiáceos exógenos (morfina, heroína) tienen un alto riesgo de adicción?",
+      "a": "Porque estimulan los receptores opioides de manera mucho más potente que los endógenos, causando efectos intensos y un fuerte refuerzo."
+    },
+    {
+      "cat": "4.1 Estructura de la sinapsis",
+      "q": "¿Qué papel juegan los canales iónicos de la membrana presináptica en la liberación del neurotransmisor?",
+      "a": "Específicamente, los canales de calcio dependientes de voltaje permiten la entrada de Ca2+, señal necesaria para la fusión vesicular."
+    },
+    {
+      "cat": "4.1 Integración neural",
+      "q": "¿Qué determina si una neurona postsináptica disparará un potencial de acción tras recibir múltiples señales?",
+      "a": "Si la suma neta de las señales excitatorias e inhibitorias (integración neural) alcanza el umbral de excitación en el cono axónico."
+    },
+    {
+      "cat": "Acetilcolina",
+      "q": "¿En qué tipo de uniones del sistema nervioso periférico es esencial la acetilcolina?",
+      "a": "En las uniones neuromusculares esqueléticas y en las sinapsis del sistema nervioso autónomo (ganglios viscerales y sistema parasimpático)."
+    },
+    {
+      "cat": "4.1 Receptores",
+      "q": "¿Qué tipo de receptor permite respuestas postsinápticas más lentas y duraderas?",
+      "a": "Los receptores metabotrópicos, debido a la cascada de segundos mensajeros que activan."
+    },
+    {
+      "cat": "Dopamina",
+      "q": "¿Qué trastorno neurodegenerativo se asocia con la pérdida de neuronas en la vía nigroestriatal?",
+      "a": "La enfermedad de Parkinson, caracterizada por temblores, rigidez y bradicinesia."
+    },
+    {
+      "cat": "Serotonina",
+      "q": "¿Qué enzima regula la actividad de la serotonina mediante su degradación?",
+      "a": "La monoamino-oxidasa (MAO)."
+    },
+    {
+      "cat": "4.1 Terminación de la señal",
+      "q": "¿Qué ocurre con los metabolitos resultantes de la degradación enzimática de la dopamina?",
+      "a": "Como el ácido homovanílico, pueden medirse en el líquido cefalorraquídeo para estimar los niveles de dopamina cerebral."
+    },
+    {
+      "cat": "GABA",
+      "q": "¿Qué patologías se asocian con anormalidades en los sistemas de GABA?",
+      "a": "La corea de Huntington y la epilepsia, provocando descontrol motor o convulsiones por falta de inhibición."
+    },
+    {
+      "cat": "Péptidos",
+      "q": "¿Qué es la sustancia P y cuál es su función?",
+      "a": "Es un péptido transmisor implicado específicamente en la modulación de emociones y la percepción del dolor."
+    },
+    {
+      "cat": "Péptidos",
+      "q": "¿Sobre qué receptores específicos actúan las endorfinas, encefalinas y dinorfinas respectivamente?",
+      "a": "Actúan sobre los receptores mu (μ), delta (δ) y kappa (κ)."
+    },
+    {
+      "cat": "Noradrenalina",
+      "q": "¿Cuáles son los receptores presinápticos típicos de la noradrenalina?",
+      "a": "Los receptores alfa-2 (a2) noradrenérgicos."
+    },
+    {
+      "cat": "4.1 Estructura de la sinapsis",
+      "q": "¿Qué engrosamiento caracteriza a la membrana postsináptica?",
+      "a": "Presenta una densidad postsináptica debido a la alta concentración de receptores en su superficie."
+    },
+    {
+      "cat": "4.1 Potenciales postsinápticos",
+      "q": "¿Pueden los potenciales postsinápticos propagarse como un potencial de acción?",
+      "a": "No, son potenciales locales graduados que se atenúan con la distancia, a diferencia del potencial de acción que es 'todo o nada'."
+    },
+    {
+      "cat": "4.2 Sistema de neurotransmisión",
+      "q": "¿Cómo actúan las hormonas en comparación con los neurotransmisores?",
+      "a": "Son liberadas al torrente sanguíneo por glándulas endocrinas y actúan sobre células diana distantes que poseen receptores específicos."
+    },
+    {
+      "cat": "Monoaminas",
+      "q": "¿Cuál es el precursor dietético inicial para la síntesis de todas las catecolaminas?",
+      "a": "La fenilalanina."
+    },
+    {
+      "cat": "Monoaminas",
+      "q": "¿Qué paso intermedio existe entre la Tirosina y la Dopamina en la síntesis de catecolaminas?",
+      "a": "La Levodopa (L-Dopa)."
+    },
+    {
+      "cat": "Dopamina",
+      "q": "¿Qué áreas componen el cuerpo estriado, destino de la vía nigroestriatal?",
+      "a": "El núcleo caudado y el putamen."
+    },
+    {
+      "cat": "Dopamina",
+      "q": "¿Qué estructuras del sistema límbico son destino de la vía mesolímbica?",
+      "a": "Principalmente el núcleo accumbens, la amígdala y el hipocampo."
+    },
+    {
+      "cat": "Glutamato",
+      "q": "¿Qué particularidad funcional tienen los receptores metabotrópicos de glutamato (mGluR)?",
+      "a": "Pueden producir respuestas tanto excitatorias como inhibitorias, a diferencia de los ionotrópicos que son excitadores."
+    },
+    {
+      "cat": "GABA",
+      "q": "¿Qué ión regula el receptor ionotrópico GABAA?",
+      "a": "Regula la entrada de cloro (Cl-), produciendo hiperpolarización (inhibición)."
+    },
+    {
+      "cat": "Glicina",
+      "q": "¿A través de qué mecanismo iónico produce la glicina potenciales inhibitorios?",
+      "a": "Mediante el control de un canal de cloro a través de un receptor ionotrópico."
+    },
+    {
+      "cat": "4.1 Estructura de la sinapsis",
+      "q": "¿Cuántas neuronas se estima que contiene el encéfalo humano?",
+      "a": "Al menos 100.000 millones de neuronas."
+    },
+    {
+      "cat": "Acetilcolina",
+      "q": "¿En qué áreas del SNC se encuentran las concentraciones más altas de Acetilcolina?",
+      "a": "En el tálamo, sistema límbico, cuerpo estriado y neocórtex."
+    },
+    {
+      "cat": "Noradrenalina",
+      "q": "¿Qué receptor noradrenérgico se asocia típicamente con la glía?",
+      "a": "El receptor beta-2 (β2) noradrenérgico."
+    },
+    {
+      "cat": "Adrenalina",
+      "q": "¿En qué estructuras del tronco encefálico se localizan las neuronas adrenérgicas?",
+      "a": "En el sistema tegmental lateral y el bulbo raquídeo."
+    },
+    {
+      "cat": "Serotonina",
+      "q": "¿Qué receptores de serotonina son relevantes en la regulación del dolor?",
+      "a": "Los receptores 5-HT1B y 5-HT1D."
+    },
+    {
+      "cat": "Glutamato",
+      "q": "¿Qué tipo de información transmiten los axones glutamatérgicos desde los órganos sensoriales?",
+      "a": "Transmiten información de todos los órganos sensoriales, excepto los relacionados con el dolor."
+    },
+    {
+      "cat": "Péptidos",
+      "q": "¿Qué hormonas peptídicas son fundamentales en la respuesta al estrés?",
+      "a": "Las melanocitoestimulantes, la adrenocorticotrofina y las betaendorfinas."
+    },
+    {
+      "cat": "4.1 Receptores",
+      "q": "¿Qué son las proteínas G en el contexto de la señalización sináptica?",
+      "a": "Son proteínas intermediarias utilizadas por los receptores metabotrópicos para activar segundos mensajeros o abrir canales iónicos indirectamente."
+    },
+    {
+      "cat": "4.2 Sistema de neurotransmisión",
+      "q": "¿Cómo se clasifican los ligandos según su origen?",
+      "a": "En endógenos (producidos por el cuerpo, como neurotransmisores) y exógenos (externos, como fármacos o drogas)."
+    },
+    {
+      "cat": "Acetilcolina",
+      "q": "¿Qué efecto tiene la acetilcolina en el músculo cardíaco?",
+      "a": "Tiene un efecto inhibidor, disminuyendo la frecuencia cardíaca (efecto demostrado en el nervio vago)."
+    },
+    {
+      "cat": "Dopamina",
+      "q": "¿En qué funciones cognitivas influye la dopamina además del movimiento?",
+      "a": "Influye en el aprendizaje, la atención y los mecanismos de autorrecompensa."
+    },
+    {
+      "cat": "GABA",
+      "q": "¿Qué tipo de canal controla el receptor GABAA?",
+      "a": "Un canal de cloro (Cl-)."
+    },
+    {
+      "cat": "GABA",
+      "q": "¿Qué receptor de GABA es metabotrópico?",
+      "a": "El receptor GABAB."
+    },
+    {
+      "cat": "Péptidos",
+      "q": "¿Qué efecto comportamental produce la secreción de endorfinas además de la analgesia?",
+      "a": "La supresión de comportamientos de huida y la activación de sistemas de placer."
+    },
+    {
+      "cat": "4.1 Receptores",
+      "q": "¿Qué determina si un neurotransmisor produce un efecto excitatorio o inhibitorio?",
+      "a": "Depende del tipo de receptor y del canal iónico específico que este abra en la membrana postsináptica (no del neurotransmisor en sí)."
+    },
+    {
+      "cat": "4.1 Potenciales postsinápticos",
+      "q": "¿Qué ion entra en la célula para producir un potencial excitatorio postsináptico (PEP) típico?",
+      "a": "El sodio (Na+), y en algunos casos el calcio (Ca2+)."
+    },
+    {
+      "cat": "4.1 Estructura de la sinapsis",
+      "q": "¿Qué es la exocitosis en la transmisión sináptica?",
+      "a": "Es el proceso por el cual las vesículas sinápticas se fusionan con la membrana presináptica para liberar su contenido al espacio sináptico."
+    },
+    {
+      "cat": "Monoaminas",
+      "q": "¿Qué dos grandes grupos forman las aminas biógenas?",
+      "a": "Catecolaminas e Indolaminas."
+    },
+    {
+      "cat": "Dopamina",
+      "q": "¿La dopamina puede atravesar la barrera hematoencefálica?",
+      "a": "No directamente; por eso en tratamientos (como para el Parkinson) se usa L-Dopa, que sí puede cruzarla y transformarse luego en dopamina."
+    },
+    {
+      "cat": "Acetilcolina",
+      "q": "¿Qué receptor colinérgico es activado por la nicotina?",
+      "a": "El receptor nicotínico (ionotrópico)."
+    },
+    {
+      "cat": "Acetilcolina",
+      "q": "¿Qué receptor colinérgico es activado por la muscarina?",
+      "a": "El receptor muscarínico (metabotrópico)."
+    },
+    {
+      "cat": "GABA",
+      "q": "¿Qué vitamina es esencial para la síntesis de GABA?",
+      "a": "La vitamina B6, precursora del fosfato de piridoxal necesario para la enzima GAD."
+    },
+    {
+      "cat": "4.1 Secuencia de transmisión",
+      "q": "¿Qué función cumplen las bombas de recaptación en el botón terminal?",
+      "a": "Recuperan el neurotransmisor del espacio sináptico para frenar su acción y permitir su reutilización."
+    },
+    {
+      "cat": "4.1 Integración neural",
+      "q": "¿Dónde ocurre la integración de los potenciales excitatorios e inhibitorios en la neurona?",
+      "a": "En el cono axónico (o segmento inicial del axón), donde se decide la generación del potencial de acción."
+    },
+    {
+      "cat": "4.2 Sistema de neurotransmisión",
+      "q": "¿Aproximadamente cuántos neurotransmisores se estima que existen?",
+      "a": "Se estima que superan los 100 tipos diferentes."
+    },
+    {
+      "cat": "Dopamina",
+      "q": "¿Qué vía dopaminérgica conecta el hipotálamo con la hipófisis?",
+      "a": "La vía tuberoinfundibular."
+    },
+    {
+      "cat": "Dopamina",
+      "q": "¿Qué consecuencias tiene la alteración de la vía tuberoinfundibular?",
+      "a": "Problemas hormonales, debido a su control sobre la hipófisis."
+    },
+    {
+      "cat": "Noradrenalina",
+      "q": "¿Qué diferencia funcional hay entre la noradrenalina en el encéfalo y en el SNP?",
+      "a": "En el encéfalo suele generar potenciales inhibitorios, mientras que en el SNP (simpático) genera tanto excitatorios como inhibitorios."
+    },
+    {
+      "cat": "Serotonina",
+      "q": "¿Cuántos tipos de receptores de serotonina se han identificado al menos?",
+      "a": "Al menos nueve tipos (familias 5-HT1, 5-HT2, 5-HT3, etc.)."
+    }
+  ]
+}

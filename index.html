@@ -66,6 +66,7 @@
             { id: "psicologia-de-la-atencion-y-percepcion", name: "Psicología de la Atención y Percepción", year: "1º" },
             { id: "psicologia-de-la-motivacion-y-emocion", name: "Psicología de la Motivación y Emoción", year: "1º" },
             { id: "psicologia-del-aprendizaje", name: "Psicología del Aprendizaje", year: "1º" },
+            { id: "bases-biologicas-del-comportamiento", name: "Bases Biológicas del Comportamiento", year: "1º" },
             { id: "psicologia-clinica", name: "Psicología Clínica", year: "3º" },
             { id: "psicologia-del-trabajo", name: "Psicología del Trabajo", year: "3º" }
         ];
@@ -202,6 +203,7 @@
             if (tema) {
                 let shortId = id;
                 if (id === 'psicologia-del-aprendizaje') shortId = 'aprendizaje';
+                else if (id === 'bases-biologicas-del-comportamiento') shortId = 'psicobiologia';
                 else if (id.startsWith('psicologia-de-la-')) shortId = id.replace('psicologia-de-la-', '');
                 else if (id.startsWith('psicologia-del-')) shortId = id.replace('psicologia-del-', '');
                 else if (id.startsWith('psicologia-')) shortId = id.replace('psicologia-', '');
