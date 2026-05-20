@@ -13,6 +13,45 @@
         .wrong-bg { background-color: #fee2e2; border-color: #ef4444; color: #991b1b; }
         .fade-in { animation: fadeIn 0.3s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        /* Flashcard Styles */
+        .flashcard-container {
+            perspective: 1000px;
+        }
+        .flashcard {
+            width: 100%;
+            height: 340px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .flashcard.flipped {
+            transform: rotateY(180deg);
+        }
+        .flashcard-front, .flashcard-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            border: 1px solid #e2e8f0;
+        }
+        .flashcard-front {
+            background-color: #ffffff;
+            color: #1e293b;
+        }
+        .flashcard-back {
+            background-color: #f8fafc;
+            color: #1e293b;
+            transform: rotateY(180deg);
+            overflow-y: auto;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen">
@@ -49,7 +88,15 @@
             playInterval: null,
             filterYear: 'Todos',      // 'Todos', '1º', '3º'
             showUploader: false,      // Mostrar/ocultar zona de carga manual
-            currentTema: null
+            currentTema: null,
+            studyMode: 'test',        // 'test', 'trainer', 'flashcards'
+            trainerQuestions: [],
+            flashcardQuestions: [],
+            hasTrainer: false,
+            hasFlashcards: false,
+            flashcardsProgress: { known: [], review: [], current: 0 },
+            trainerAnswers: {},
+            trainerChecked: {}
         };
 
         // --- SISTEMA DE DESBLOQUEOS (localStorage) ---
@@ -132,7 +179,8 @@
             // URL del archivo JSON: intenta cargar archivo específico del tema, si no, carga el global
             let fetchUrl = `json/${id}.json`;
             if (tema) {
-                fetchUrl = `json/${id}-tema-${tema}.json`;
+                const temaFilePart = String(tema).replace(/\./g, '-');
+                fetchUrl = `json/${id}-tema-${temaFilePart}.json`;
             }
 
             fetch(fetchUrl)
@@ -176,7 +224,64 @@
         }
 
         function initQuestions(data) {
-            ALL_QUESTIONS = data.map((q, idx) => ({ id: idx + 1, ...q }));
+            state.trainerQuestions = [];
+            state.flashcardQuestions = [];
+            state.hasTrainer = false;
+            state.hasFlashcards = false;
+            state.studyMode = 'test'; 
+
+            let questions = [];
+
+            if (data && typeof data === 'object' && !Array.isArray(data)) {
+                if (Array.isArray(data.quiz)) {
+                    questions = data.quiz;
+                }
+                if (Array.isArray(data.trainer)) {
+                    state.trainerQuestions = data.trainer;
+                    state.hasTrainer = true;
+                }
+                if (Array.isArray(data.flashcards)) {
+                    state.flashcardQuestions = data.flashcards;
+                    state.hasFlashcards = true;
+                }
+            } else if (Array.isArray(data)) {
+                if (data.length > 0) {
+                    if (Array.isArray(data[0])) {
+                        questions = data.map(q => {
+                            let questionText = q[0];
+                            let correctIndex = -1;
+                            let options = q.slice(1).map((optText, optIdx) => {
+                                if (optText.includes('(correcta)')) {
+                                    correctIndex = optIdx;
+                                    return optText.replace(/\s*\(correcta\)/i, '').trim();
+                                }
+                                return optText;
+                            });
+                            if (correctIndex === -1) {
+                                correctIndex = 0; 
+                            }
+                            return {
+                                q: questionText,
+                                options: options,
+                                correct: correctIndex
+                            };
+                        });
+                    } else {
+                        questions = data;
+                    }
+                }
+            }
+
+            ALL_QUESTIONS = questions.map((item, idx) => {
+                const normQ = item.q || item.question || '';
+                const normCorrect = item.correct !== undefined ? item.correct : (item.correctIndex !== undefined ? item.correctIndex : 0);
+                return {
+                    ...item,
+                    id: idx + 1,
+                    q: normQ,
+                    correct: normCorrect
+                };
+            });
             state.gameState = 'menu';
             state.questionCount = Math.min(30, ALL_QUESTIONS.length);
             render();
@@ -296,10 +401,14 @@
                 render();
             },
             restart: () => {
+                if (state.timerInterval) clearInterval(state.timerInterval);
+                if (state.playInterval) clearInterval(state.playInterval);
                 state.gameState = 'menu';
                 render();
             },
             backToSelector: () => {
+                if (state.timerInterval) clearInterval(state.timerInterval);
+                if (state.playInterval) clearInterval(state.playInterval);
                 state.gameState = 'select';
                 ALL_QUESTIONS = [];
                 state.currentTema = null;
@@ -313,6 +422,90 @@
             toggleUploader: () => {
                 state.showUploader = !state.showUploader;
                 render();
+            },
+            setStudyMode: (mode) => {
+                state.studyMode = mode;
+                if (mode === 'trainer') {
+                    state.questionCount = Math.min(15, state.trainerQuestions.length);
+                } else if (mode === 'test') {
+                    state.questionCount = Math.min(30, ALL_QUESTIONS.length);
+                }
+                render();
+            },
+            startTrainer: () => {
+                let count = Math.min(state.questionCount, state.trainerQuestions.length);
+                state.activeQuestions = shuffleArray(state.trainerQuestions).slice(0, count).map((q, idx) => ({ id: idx + 1, ...q }));
+                state.gameState = 'playing';
+                state.currentIndex = 0;
+                state.trainerAnswers = {};
+                state.trainerChecked = {};
+                state.timeSpentSeconds = 0;
+                if (state.playInterval) clearInterval(state.playInterval);
+                state.playInterval = setInterval(() => {
+                    state.timeSpentSeconds++;
+                }, 1000);
+                render();
+            },
+            handleTrainerInput: (val) => {
+                state.trainerAnswers[state.currentIndex] = val;
+            },
+            checkTrainerAnswer: () => {
+                state.trainerChecked[state.currentIndex] = true;
+                render();
+            },
+            nextTrainerQuestion: () => {
+                if (state.currentIndex < state.activeQuestions.length - 1) {
+                    state.currentIndex++;
+                    render();
+                } else {
+                    appMethods.finishTrainer();
+                }
+            },
+            finishTrainer: () => {
+                if (state.playInterval) clearInterval(state.playInterval);
+                state.gameState = 'finished';
+                render();
+            },
+            startFlashcards: () => {
+                state.activeQuestions = shuffleArray(state.flashcardQuestions);
+                state.gameState = 'playing';
+                state.flashcardsProgress = {
+                    known: [],
+                    review: [],
+                    current: 0
+                };
+                render();
+            },
+            flipCard: () => {
+                const card = document.getElementById('active-flashcard');
+                if (card) card.classList.toggle('flipped');
+            },
+            markCardKnown: (idx) => {
+                const q = state.activeQuestions[idx];
+                if (!state.flashcardsProgress.known.includes(q.q)) state.flashcardsProgress.known.push(q.q);
+                state.flashcardsProgress.review = state.flashcardsProgress.review.filter(x => x !== q.q);
+                appMethods.nextFlashcard();
+            },
+            markCardReview: (idx) => {
+                const q = state.activeQuestions[idx];
+                if (!state.flashcardsProgress.review.includes(q.q)) state.flashcardsProgress.review.push(q.q);
+                state.flashcardsProgress.known = state.flashcardsProgress.known.filter(x => x !== q.q);
+                appMethods.nextFlashcard();
+            },
+            nextFlashcard: () => {
+                if (state.flashcardsProgress.current < state.activeQuestions.length - 1) {
+                    state.flashcardsProgress.current++;
+                    render();
+                } else {
+                    alert('¡Has completado todas las fichas de esta sesión!');
+                    appMethods.backToSelector();
+                }
+            },
+            prevFlashcard: () => {
+                if (state.flashcardsProgress.current > 0) {
+                    state.flashcardsProgress.current--;
+                    render();
+                }
             }
         };
 
@@ -605,6 +798,100 @@
                     ${n}
                 </button>`).join('');
 
+            let modeTabsHTML = '';
+            if (state.hasTrainer || state.hasFlashcards) {
+                modeTabsHTML = `
+                    <div class="flex border border-slate-150 mb-6 bg-slate-50 p-1 rounded-xl">
+                        <button onclick="appMethods.setStudyMode('test')" 
+                            class="flex-grow py-2.5 px-4 rounded-lg font-bold text-xs transition-all flex items-center justify-center gap-2 ${state.studyMode === 'test' ? 'bg-white text-indigo-600 shadow-sm border border-slate-200/50' : 'text-slate-400 hover:text-slate-600'}">
+                            <i data-lucide="list-checks" class="w-4 h-4"></i> Test de Examen
+                        </button>
+                        ${state.hasTrainer ? `
+                        <button onclick="appMethods.setStudyMode('trainer')" 
+                            class="flex-grow py-2.5 px-4 rounded-lg font-bold text-xs transition-all flex items-center justify-center gap-2 ${state.studyMode === 'trainer' ? 'bg-white text-indigo-600 shadow-sm border border-slate-200/50' : 'text-slate-400 hover:text-slate-600'}">
+                            <i data-lucide="graduation-cap" class="w-4 h-4"></i> Entrenador
+                        </button>
+                        ` : ''}
+                        ${state.hasFlashcards ? `
+                        <button onclick="appMethods.setStudyMode('flashcards')" 
+                            class="flex-grow py-2.5 px-4 rounded-lg font-bold text-xs transition-all flex items-center justify-center gap-2 ${state.studyMode === 'flashcards' ? 'bg-white text-indigo-600 shadow-sm border border-slate-200/50' : 'text-slate-400 hover:text-slate-600'}">
+                            <i data-lucide="copy" class="w-4 h-4"></i> Fichas
+                        </button>
+                        ` : ''}
+                    </div>
+                `;
+            }
+
+            let menuContentHTML = '';
+            if (state.studyMode === 'test') {
+                menuContentHTML = `
+                    <div class="space-y-6">
+                        <div class="space-y-4">
+                            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Número de Preguntas</h3>
+                            <div class="grid grid-cols-4 gap-3">
+                                ${countButtonsHTML}
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-4 pt-2">
+                            <button onclick="appMethods.startExam('sim')" class="flex flex-col p-5 border-2 border-slate-100 rounded-2xl hover:border-green-500 hover:bg-green-50/30 transition-all text-left group">
+                                <div class="flex items-center gap-2 mb-2 text-green-600 font-bold">
+                                    <div class="p-2 bg-green-100 rounded-lg"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
+                                    <span>Modo Repaso</span>
+                                </div>
+                                <p class="text-xs text-slate-500 pl-11">Corrección instantánea con explicaciones al momento. Ideal para estudiar.</p>
+                            </button>
+                            
+                            <button onclick="appMethods.startExam('exam')" class="flex flex-col p-5 border-2 border-slate-100 rounded-2xl hover:border-indigo-500 hover:bg-indigo-50/30 transition-all text-left group">
+                                <div class="flex items-center gap-2 mb-2 text-indigo-600 font-bold">
+                                    <div class="p-2 bg-indigo-100 rounded-lg"><i data-lucide="timer" class="w-5 h-5"></i></div>
+                                    <span>Modo Examen (1H)</span>
+                                </div>
+                                <p class="text-xs text-slate-500 pl-11">Sin ayudas. Temporizador de 1 hora. Corrección y explicaciones al final de la prueba.</p>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            } else if (state.studyMode === 'trainer') {
+                const availableTrainer = state.trainerQuestions.length;
+                const trainerButtons = [15, 30, availableTrainer].filter((n, idx, self) => n <= availableTrainer && self.indexOf(n) === idx);
+                const trainerCountButtonsHTML = trainerButtons.map(n => `
+                    <button onclick="appMethods.setQuestionCount(${n})" 
+                        class="py-3 rounded-xl font-bold transition-all border-2 ${state.questionCount === n ? 'bg-indigo-50 border-indigo-600 text-indigo-700' : 'bg-slate-50 border-slate-100 text-slate-400 hover:bg-slate-100'}">
+                        ${n === availableTrainer ? 'Todas' : n}
+                    </button>`).join('');
+
+                menuContentHTML = `
+                    <div class="space-y-6">
+                        <div class="space-y-4">
+                            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Número de Preguntas a Entrenar</h3>
+                            <div class="grid grid-cols-3 gap-3">
+                                ${trainerCountButtonsHTML}
+                            </div>
+                        </div>
+                        
+                        <button onclick="appMethods.startTrainer()" class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold shadow-lg shadow-indigo-100 transition-all flex items-center justify-center gap-2">
+                            <i data-lucide="play" class="w-5 h-5"></i> Empezar Entrenamiento de Memoria
+                        </button>
+                    </div>
+                `;
+            } else if (state.studyMode === 'flashcards') {
+                const totalCards = state.flashcardQuestions.length;
+                menuContentHTML = `
+                    <div class="space-y-6">
+                        <div class="bg-indigo-50/40 p-6 rounded-2xl border border-indigo-100/50 text-center space-y-3">
+                            <i data-lucide="copy" class="w-12 h-12 text-indigo-500 mx-auto"></i>
+                            <h3 class="font-bold text-slate-700">Fichas de Aprendizaje</h3>
+                            <p class="text-xs text-slate-500 max-w-sm mx-auto font-medium">Practica la memorización activa con ${totalCards} fichas de preguntas y respuestas de doble cara. Rotación interactiva y clasificación del aprendizaje.</p>
+                        </div>
+                        
+                        <button onclick="appMethods.startFlashcards()" class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold shadow-lg shadow-indigo-100 transition-all flex items-center justify-center gap-2">
+                            <i data-lucide="play" class="w-5 h-5"></i> Empezar Sesión de Fichas
+                        </button>
+                    </div>
+                `;
+            }
+
             return `
                 <div class="flex items-center justify-center p-4 flex-grow fade-in">
                     <div class="max-w-2xl w-full bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
@@ -623,31 +910,9 @@
                             </div>
                         </div>
 
-                        <div class="p-8 space-y-8">
-                            <div class="space-y-4">
-                                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Número de Preguntas</h3>
-                                <div class="grid grid-cols-4 gap-3">
-                                    ${countButtonsHTML}
-                                </div>
-                            </div>
-                            
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <button onclick="appMethods.startExam('sim')" class="flex flex-col p-5 border-2 border-slate-100 rounded-2xl hover:border-green-500 hover:bg-green-50/30 transition-all text-left group">
-                                    <div class="flex items-center gap-2 mb-2 text-green-600 font-bold">
-                                        <div class="p-2 bg-green-100 rounded-lg"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
-                                        <span>Modo Repaso</span>
-                                    </div>
-                                    <p class="text-xs text-slate-500 pl-11">Corrección instantánea con explicaciones al momento. Ideal para estudiar.</p>
-                                </button>
-                                
-                                <button onclick="appMethods.startExam('exam')" class="flex flex-col p-5 border-2 border-slate-100 rounded-2xl hover:border-indigo-500 hover:bg-indigo-50/30 transition-all text-left group">
-                                    <div class="flex items-center gap-2 mb-2 text-indigo-600 font-bold">
-                                        <div class="p-2 bg-indigo-100 rounded-lg"><i data-lucide="timer" class="w-5 h-5"></i></div>
-                                        <span>Modo Examen (1H)</span>
-                                    </div>
-                                    <p class="text-xs text-slate-500 pl-11">Sin ayudas. Temporizador de 1 hora. Corrección y explicaciones al final de la prueba.</p>
-                                </button>
-                            </div>
+                        <div class="p-8">
+                            ${modeTabsHTML}
+                            ${menuContentHTML}
                         </div>
                     </div>
                 </div>
@@ -839,12 +1104,288 @@
             `;
         }
 
+        function cleanText(str) {
+            if (!str) return '';
+            return str
+                .toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()¡?¿]/g,"")
+                .replace(/\s+/g, ' ')
+                .trim();
+        }
+
+        function checkKeywordPresent(userAns, keyword) {
+            if (!userAns) return false;
+            const userClean = cleanText(userAns);
+            const keywordClean = cleanText(keyword);
+            return userClean.includes(keywordClean);
+        }
+
+        function renderTrainerPlaying() {
+            const currentQ = state.activeQuestions[state.currentIndex];
+            const progress = ((state.currentIndex + 1) / state.activeQuestions.length) * 100;
+            const isChecked = state.trainerChecked[state.currentIndex] || false;
+            const userAns = state.trainerAnswers[state.currentIndex] || '';
+
+            let explanationHTML = '';
+            if (isChecked) {
+                const keywordsHTML = currentQ.keywords.map(kw => {
+                    const present = checkKeywordPresent(userAns, kw);
+                    return `
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-bold text-xs border transition-all ${present ? 'bg-green-50 border-green-200 text-green-700' : 'bg-slate-50 border-slate-200 text-slate-400'}">
+                            <i data-lucide="${present ? 'check-circle' : 'circle'}" class="w-3.5 h-3.5"></i>
+                            ${kw}
+                        </span>
+                    `;
+                }).join('');
+
+                explanationHTML = `
+                    <div class="mt-8 pt-6 border-t border-slate-100 space-y-6 fade-in">
+                        <div class="space-y-2">
+                            <span class="text-[10px] font-bold text-indigo-500 uppercase tracking-widest block">Respuesta Modelo</span>
+                            <div class="p-5 bg-indigo-50/50 border border-indigo-100 rounded-2xl text-slate-700 text-sm leading-relaxed font-medium">
+                                ${currentQ.model}
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block">Conceptos clave a recordar</span>
+                            <div class="flex flex-wrap gap-2">
+                                ${keywordsHTML}
+                            </div>
+                        </div>
+
+                        ${currentQ.page ? `
+                        <div class="text-xs text-slate-400 font-bold flex items-center gap-1">
+                            <i data-lucide="book-open" class="w-3.5 h-3.5"></i> Manual: Página ${currentQ.page}
+                        </div>
+                        ` : ''}
+                    </div>
+                `;
+            }
+
+            return `
+                <div class="flex flex-col items-center p-4 w-full flex-grow fade-in">
+                    <div class="w-full max-w-3xl mb-6 flex justify-between items-center text-slate-400">
+                        <div class="flex flex-col">
+                            <span class="text-[10px] font-black tracking-widest uppercase text-slate-300">${subjectName}</span>
+                            <span class="text-sm font-bold text-slate-700">Entrenamiento ${state.currentIndex + 1} <span class="text-slate-300 font-normal">/ ${state.activeQuestions.length}</span></span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center gap-2 px-3 py-1 bg-slate-100 rounded-full text-slate-600 font-mono text-xs font-bold">
+                                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                                <span>${formatTime(state.timeSpentSeconds)}</span>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-[10px] font-black tracking-wider border bg-amber-50 border-amber-200 text-amber-700">
+                                MEMORIA ACTIVA
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="w-full max-w-3xl h-1.5 bg-slate-100 rounded-full mb-8 overflow-hidden">
+                        <div class="h-full bg-slate-800 transition-all duration-500 ease-out" style="width: ${progress}%"></div>
+                    </div>
+
+                    <div class="w-full max-w-3xl bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-10 mb-6 relative">
+                        <h2 class="text-lg md:text-xl font-bold text-slate-800 mb-6 leading-relaxed">${currentQ.q}</h2>
+                        
+                        <div class="space-y-3">
+                            <label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block">Redacta tu respuesta:</label>
+                            <textarea id="trainer-textarea" 
+                                oninput="appMethods.handleTrainerInput(this.value)" 
+                                ${isChecked ? 'disabled' : ''} 
+                                placeholder="Escribe aquí tu respuesta. Intenta incluir los conceptos más importantes..." 
+                                class="w-full h-32 p-4 border border-slate-200 rounded-2xl text-slate-700 text-sm focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none resize-none transition-all ${isChecked ? 'bg-slate-50 text-slate-500 border-slate-150' : 'bg-white'}"
+                            >${userAns}</textarea>
+                        </div>
+
+                        ${explanationHTML}
+                    </div>
+
+                    <div class="w-full max-w-3xl flex justify-between items-center gap-4">
+                        <button onclick="appMethods.backToSelector()" 
+                            class="flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-all text-sm">
+                            <i data-lucide="log-out" class="w-4 h-4"></i> Salir
+                        </button>
+                        
+                        ${!isChecked ? `
+                            <button onclick="appMethods.checkTrainerAnswer()" 
+                                class="flex items-center gap-2 px-8 py-3 bg-indigo-600 text-white rounded-xl font-bold shadow-lg shadow-indigo-100 hover:bg-indigo-700 transition-all text-sm">
+                                <i data-lucide="eye" class="w-4 h-4"></i> Revelar y Comparar
+                            </button>
+                        ` : `
+                            <button onclick="appMethods.nextTrainerQuestion()" 
+                                class="flex items-center gap-2 px-8 py-3 bg-slate-900 text-white rounded-xl font-bold shadow-lg shadow-slate-200 hover:bg-slate-800 transition-all text-sm">
+                                ${state.currentIndex === state.activeQuestions.length - 1 ? 'Finalizar' : 'Siguiente'} 
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                        `}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderTrainerFinished() {
+            const max = state.activeQuestions.length;
+            let totalKeywords = 0;
+            let foundKeywords = 0;
+
+            state.activeQuestions.forEach((q, idx) => {
+                const ans = state.trainerAnswers[idx] || '';
+                q.keywords.forEach(kw => {
+                    totalKeywords++;
+                    if (checkKeywordPresent(ans, kw)) {
+                        foundKeywords++;
+                    }
+                });
+            });
+
+            const percent = totalKeywords > 0 ? Math.round((foundKeywords / totalKeywords) * 100) : 0;
+            const passed = percent >= 50;
+
+            return `
+                <div class="p-6 flex-grow flex items-center justify-center fade-in">
+                    <div class="max-w-2xl w-full bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 relative">
+                        <div class="${passed ? 'bg-emerald-500' : 'bg-slate-800'} p-10 text-white text-center relative overflow-hidden">
+                            <div class="relative z-10">
+                                <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
+                                    <i data-lucide="${passed ? 'trophy' : 'activity'}" class="w-10 h-10 text-white"></i>
+                                </div>
+                                <h2 class="text-3xl font-black mb-1">${passed ? '¡Excelente!' : 'Entrenamiento Finalizado'}</h2>
+                                <p class="text-white/80 font-medium text-sm">${subjectName}</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 divide-x divide-slate-100 border-b border-slate-100">
+                            <div class="p-6 text-center">
+                                <div class="text-2xl font-black text-slate-800 mb-1">${formatTime(state.timeSpentSeconds)}</div>
+                                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Tiempo Transcurrido</div>
+                            </div>
+                            <div class="p-6 text-center">
+                                <div class="text-2xl font-black text-indigo-600 mb-1">${foundKeywords} <span class="text-xs text-slate-400 font-normal">/ ${totalKeywords}</span></div>
+                                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Conceptos Clave Recordados</div>
+                            </div>
+                        </div>
+
+                        <div class="p-8 text-center bg-slate-50">
+                            <div class="text-xs text-slate-400 font-bold uppercase tracking-widest mb-2">Retención de Conceptos</div>
+                            <div class="text-5xl font-black text-slate-800 tracking-tight">${percent}%</div>
+                        </div>
+
+                        <div class="p-6 flex gap-3">
+                            <button onclick="appMethods.restart()" class="flex-grow py-4 bg-slate-900 text-white rounded-xl font-bold shadow-lg shadow-slate-200 hover:bg-slate-800 transition-all flex items-center justify-center gap-2">
+                                <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Volver a Configurar
+                            </button>
+                            <button onclick="appMethods.backToSelector()" class="py-4 px-6 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
+                                <i data-lucide="log-out" class="w-4 h-4"></i> Salir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderFlashcardsPlaying() {
+            const currentIdx = state.flashcardsProgress.current;
+            const currentQ = state.activeQuestions[currentIdx];
+            const progress = ((currentIdx + 1) / state.activeQuestions.length) * 100;
+
+            const total = state.activeQuestions.length;
+            const knownCount = state.flashcardsProgress.known.length;
+            const reviewCount = state.flashcardsProgress.review.length;
+
+            return `
+                <div class="flex flex-col items-center p-4 w-full flex-grow fade-in">
+                    <div class="w-full max-w-2xl mb-6 flex justify-between items-center text-slate-400">
+                        <div class="flex flex-col">
+                            <span class="text-[10px] font-black tracking-widest uppercase text-slate-300">${subjectName}</span>
+                            <span class="text-sm font-bold text-slate-700">Ficha ${currentIdx + 1} <span class="text-slate-300 font-normal">/ ${total}</span></span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="px-2.5 py-1 bg-green-50 border border-green-200 rounded-lg text-[10px] font-bold text-green-700 flex items-center gap-1">
+                                <i data-lucide="check-circle" class="w-3 h-3"></i> Sé: ${knownCount}
+                            </span>
+                            <span class="px-2.5 py-1 bg-amber-50 border border-amber-200 rounded-lg text-[10px] font-bold text-amber-700 flex items-center gap-1">
+                                <i data-lucide="help-circle" class="w-3 h-3"></i> Repasar: ${reviewCount}
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="w-full max-w-2xl h-1.5 bg-slate-100 rounded-full mb-8 overflow-hidden">
+                        <div class="h-full bg-slate-800 transition-all duration-500 ease-out" style="width: ${progress}%"></div>
+                    </div>
+
+                    <!-- Flashcard 3D Wrapper -->
+                    <div class="w-full max-w-2xl flashcard-container mb-8">
+                        <div id="active-flashcard" onclick="appMethods.flipCard()" class="flashcard">
+                            <!-- Front Side -->
+                            <div class="flashcard-front">
+                                ${currentQ.cat ? `
+                                <span class="absolute top-4 left-6 text-[10px] font-bold uppercase tracking-widest text-indigo-500 bg-indigo-50/50 px-2 py-1 rounded-md border border-indigo-100/50">
+                                    ${currentQ.cat}
+                                </span>
+                                ` : ''}
+                                <span class="text-slate-300 text-xs font-bold uppercase tracking-widest mb-4">Pregunta</span>
+                                <h2 class="text-lg md:text-xl font-bold text-center text-slate-800 leading-relaxed">${currentQ.q}</h2>
+                                <span class="absolute bottom-4 text-[10px] font-bold text-slate-400 flex items-center gap-1">
+                                    <i data-lucide="rotate-cw" class="w-3 h-3"></i> Haz clic para girar
+                                </span>
+                            </div>
+                            <!-- Back Side -->
+                            <div class="flashcard-back">
+                                <span class="text-slate-300 text-xs font-bold uppercase tracking-widest mb-4">Respuesta</span>
+                                <p class="text-sm font-medium text-center text-slate-700 leading-relaxed max-w-md">${currentQ.a}</p>
+                                <span class="absolute bottom-4 text-[10px] font-bold text-slate-400 flex items-center gap-1">
+                                    <i data-lucide="rotate-cw" class="w-3 h-3"></i> Haz clic para girar
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flashcard Actions -->
+                    <div class="w-full max-w-2xl flex justify-between items-center gap-4">
+                        <button onclick="appMethods.prevFlashcard()" ${(currentIdx === 0) ? 'disabled' : ''} 
+                            class="flex items-center gap-2 px-5 py-3 rounded-xl font-bold transition-all text-sm ${(currentIdx === 0) ? 'opacity-0' : 'text-slate-400 hover:text-slate-600 hover:bg-slate-100'}">
+                            <i data-lucide="arrow-left" class="w-4 h-4"></i> Anterior
+                        </button>
+                        
+                        <div class="flex gap-2.5">
+                            <button onclick="appMethods.markCardReview(${currentIdx})" 
+                                class="flex items-center gap-1.5 px-5 py-3 bg-amber-50 border border-amber-200 text-amber-700 rounded-xl font-bold hover:bg-amber-100 transition-all text-xs">
+                                <i data-lucide="help-circle" class="w-4 h-4"></i> Necesito Repasar
+                            </button>
+                            <button onclick="appMethods.markCardKnown(${currentIdx})" 
+                                class="flex items-center gap-1.5 px-6 py-3 bg-emerald-600 text-white rounded-xl font-bold shadow-lg shadow-emerald-100 hover:bg-emerald-700 transition-all text-xs">
+                                <i data-lucide="check-circle" class="w-4 h-4"></i> Me la sé
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
         function render() {
             const app = document.getElementById('app');
-            if (state.gameState === 'select') app.innerHTML = renderSelector();
-            else if (state.gameState === 'menu') app.innerHTML = renderMenu();
-            else if (state.gameState === 'playing') app.innerHTML = renderPlaying();
-            else if (state.gameState === 'finished') app.innerHTML = renderFinished();
+            if (state.gameState === 'select') {
+                app.innerHTML = renderSelector();
+            } else if (state.gameState === 'menu') {
+                app.innerHTML = renderMenu();
+            } else if (state.gameState === 'playing') {
+                if (state.studyMode === 'trainer') {
+                    app.innerHTML = renderTrainerPlaying();
+                } else if (state.studyMode === 'flashcards') {
+                    app.innerHTML = renderFlashcardsPlaying();
+                } else {
+                    app.innerHTML = renderPlaying();
+                }
+            } else if (state.gameState === 'finished') {
+                if (state.studyMode === 'trainer') {
+                    app.innerHTML = renderTrainerFinished();
+                } else {
+                    app.innerHTML = renderFinished();
+                }
+            }
             lucide.createIcons();
             window.scrollTo(0, 0);
         }
