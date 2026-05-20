@@ -268,10 +268,21 @@
                     </div>
                 </div>
             </div>
-            <div class="flex gap-4 w-full max-w-xl">
-                <button onclick="app.fcPrev()" class="flex-1 glass-card py-4 rounded-2xl font-bold hover:bg-slate-50 transition">Anterior</button>
+            <!-- Controles normales (cuando no está girada) -->
+            <div id="fc-normal-controls" class="flex gap-4 w-full max-w-xl">
+                <button onclick="app.fcPrev()" class="flex-1 glass-card py-4 rounded-2xl font-bold hover:bg-slate-50 transition text-sm">Anterior</button>
                 <button onclick="app.fcShuffle()" class="px-6 glass-card rounded-2xl transition active:scale-90"><i class="ph-bold ph-shuffle"></i></button>
-                <button onclick="app.fcNext()" class="flex-1 btn-primary py-4 rounded-2xl font-bold">Siguiente</button>
+                <button onclick="app.fcNext()" class="flex-1 btn-primary py-4 rounded-2xl font-bold text-sm">Siguiente</button>
+            </div>
+
+            <!-- Controles girados (cuando muestra la respuesta) -->
+            <div id="fc-flipped-controls" class="hidden flex gap-4 w-full max-w-xl">
+                <button onclick="app.fcMark(false)" class="flex-1 bg-red-500 hover:bg-red-600 text-white py-4 rounded-2xl font-bold transition text-sm flex items-center justify-center gap-2 shadow-lg shadow-red-100">
+                    <i class="ph-bold ph-x-circle text-lg"></i> No lo sabía
+                </button>
+                <button onclick="app.fcMark(true)" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-2xl font-bold transition text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-100">
+                    <i class="ph-bold ph-check-circle text-lg"></i> Me lo sabía
+                </button>
             </div>
         </section>
 
@@ -287,6 +298,9 @@
                 <div class="flex flex-col gap-3">
                     <button id="btn-retry-errors" onclick="app.quizRetryErrors()" class="hidden bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-2xl transition flex items-center justify-center gap-2">
                         <i class="ph-bold ph-warning-circle"></i> Repasar solo Fallos (<span id="fail-count">0</span>)
+                    </button>
+                    <button id="btn-retry-flashcards" onclick="app.fcRetryErrors()" class="hidden bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-2xl transition flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-warning-circle"></i> Repasar no sabidas (<span id="fc-fail-count">0</span>)
                     </button>
                     <button onclick="app.showView('home')" class="btn-primary w-full py-4 rounded-2xl uppercase tracking-widest text-sm">Menú Principal</button>
                 </div>
@@ -2782,6 +2796,7 @@
                 isFlipped: false,
                 activeData: [],
                 failedQuestions: [],
+                failedFlashcards: [],
                 score: 0
             },
 
@@ -2802,7 +2817,10 @@
                 this.state.currentTool = tool;
                 this.state.index = 0;
                 this.state.score = 0;
-                this.state.failedQuestions = [];
+                if (!customData) {
+                    this.state.failedQuestions = [];
+                    this.state.failedFlashcards = [];
+                }
                 this.state.activeData = dataToUse;
 
                 if (!customData) this.shuffleArray(this.state.activeData);
@@ -2924,9 +2942,39 @@
                     failBtn.classList.remove('hidden');
                     document.getElementById('fail-count').innerText = this.state.failedQuestions.length;
                 } else failBtn.classList.add('hidden');
+
+                // Ocultar botón de reintento de flashcards
+                const fcFailBtn = document.getElementById('btn-retry-flashcards');
+                if (fcFailBtn) fcFailBtn.classList.add('hidden');
             },
 
             quizRetryErrors: function () { this.startTool('quiz', this.state.failedQuestions); },
+
+            showFlashcardResults: function () {
+                this.showView('results');
+                const resultText = document.getElementById('result-text');
+                resultText.innerHTML = `Has completado las tarjetas de memoria. No sabías <strong>${this.state.failedFlashcards.length}</strong> de <strong>${this.state.activeData.length}</strong>.`;
+                
+                // Ocultar botón de reintento del Quiz
+                const failBtn = document.getElementById('btn-retry-errors');
+                if (failBtn) failBtn.classList.add('hidden');
+
+                // Mostrar/ocultar botón de reintento de Flashcards
+                const fcFailBtn = document.getElementById('btn-retry-flashcards');
+                if (fcFailBtn) {
+                    if (this.state.failedFlashcards.length > 0) {
+                        fcFailBtn.classList.remove('hidden');
+                        const fcFailCount = document.getElementById('fc-fail-count');
+                        if (fcFailCount) fcFailCount.innerText = this.state.failedFlashcards.length;
+                    } else {
+                        fcFailBtn.classList.add('hidden');
+                    }
+                }
+            },
+
+            fcRetryErrors: function () {
+                this.startTool('flashcards', this.state.failedFlashcards);
+            },
 
             // --- LÓGICA TRAINER ---
             renderTrainer: function () {
@@ -2975,6 +3023,11 @@
                 if (!data) return;
                 this.state.isFlipped = false;
                 document.getElementById('fc-card').classList.remove('flipped');
+                
+                // Asegurar controles normales visibles
+                document.getElementById('fc-normal-controls').classList.remove('hidden');
+                document.getElementById('fc-flipped-controls').classList.add('hidden');
+
                 setTimeout(() => {
                     document.getElementById('fc-cat').innerText = data.cat;
                     document.getElementById('fc-question').innerText = data.q;
@@ -2985,6 +3038,17 @@
             fcFlip: function () {
                 this.state.isFlipped = !this.state.isFlipped;
                 document.getElementById('fc-card').classList.toggle('flipped', this.state.isFlipped);
+                
+                // Intercambiar botones de control basados en el giro de la carta
+                const normalCtrls = document.getElementById('fc-normal-controls');
+                const flippedCtrls = document.getElementById('fc-flipped-controls');
+                if (this.state.isFlipped) {
+                    normalCtrls.classList.add('hidden');
+                    flippedCtrls.classList.remove('hidden');
+                } else {
+                    normalCtrls.classList.remove('hidden');
+                    flippedCtrls.classList.add('hidden');
+                }
             },
 
             fcNext: function () {
@@ -2992,7 +3056,7 @@
                     this.state.index++;
                     this.renderFlashcard();
                     this.updateCounter();
-                } else this.showView('results');
+                } else this.showFlashcardResults();
             },
 
             fcPrev: function () {
@@ -3008,6 +3072,22 @@
                 this.state.index = 0;
                 this.renderFlashcard();
                 this.updateCounter();
+            },
+
+            fcMark: function (knewIt) {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+
+                if (!knewIt) {
+                    if (!this.state.failedFlashcards.includes(data)) {
+                        this.state.failedFlashcards.push(data);
+                    }
+                } else {
+                    this.state.failedFlashcards = this.state.failedFlashcards.filter(item => item !== data);
+                }
+
+                // Avanzar automáticamente a la siguiente tarjeta tras marcar
+                this.fcNext();
             }
         };
 
