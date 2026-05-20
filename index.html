@@ -161,6 +161,20 @@
         }
 
         function loadSubject(id, tema = null, updateHistoryState = true) {
+            // Si es un tema independiente, redirigir a su archivo de aprendizaje específico
+            if (tema) {
+                let shortId = id;
+                if (id === 'psicologia-del-aprendizaje') shortId = 'aprendizaje';
+                else if (id.startsWith('psicologia-de-la-')) shortId = id.replace('psicologia-de-la-', '');
+                else if (id.startsWith('psicologia-del-')) shortId = id.replace('psicologia-del-', '');
+                else if (id.startsWith('psicologia-')) shortId = id.replace('psicologia-', '');
+                
+                const temaFilePart = String(tema).replace(/\./g, '-');
+                const targetUrl = `${shortId}-tema-${temaFilePart}.html`;
+                window.location.href = targetUrl;
+                return;
+            }
+
             const subject = AVAILABLE_SUBJECTS.find(s => s.id === id);
             let title = subject ? subject.name : id.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
             
