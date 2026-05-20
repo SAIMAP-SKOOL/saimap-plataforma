@@ -132,15 +132,22 @@
                 </div>
             </div>
 
-            <nav id="nav-controls" class="hidden flex items-center gap-4">
-                <button onclick="app.showView('home')" class="text-slate-500 hover:text-sky-600 font-bold text-xs uppercase tracking-widest flex items-center gap-1 transition">
-                    <i class="ph-bold ph-house"></i> Menú
-                </button>
-                <div class="h-4 w-[1px] bg-slate-200"></div>
-                <div class="flex items-center gap-2 bg-white/60 px-3 py-1.5 rounded-full border border-white">
-                    <span id="global-counter" class="text-sky-700 font-bold font-mono text-sm">0/0</span>
-                </div>
-            </nav>
+            <div class="flex items-center gap-4">
+                <!-- Botón Volver al Portal (Directorio) -->
+                <a href="index.html" class="flex items-center gap-1.5 px-3.5 py-2 border border-slate-200 hover:border-emerald-600 rounded-xl font-bold text-xs text-slate-600 hover:text-emerald-600 transition-all bg-white shadow-sm cursor-pointer">
+                    <i class="ph-bold ph-arrow-left"></i> Volver al Portal
+                </a>
+
+                <nav id="nav-controls" class="hidden flex items-center gap-4">
+                    <button onclick="app.showView('home')" class="text-slate-500 hover:text-sky-600 font-bold text-xs uppercase tracking-widest flex items-center gap-1 transition">
+                        <i class="ph-bold ph-house"></i> Menú
+                    </button>
+                    <div class="h-4 w-[1px] bg-slate-200"></div>
+                    <div class="flex items-center gap-2 bg-white/60 px-3 py-1.5 rounded-full border border-white">
+                        <span id="global-counter" class="text-sky-700 font-bold font-mono text-sm">0/0</span>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -2815,6 +2822,8 @@
                         }
             ]
 },
+
+            // --- ESTADO DE LA APLICACIÓN ---,
 
             // --- ESTADO DE LA APLICACIÓN ---
             state: {
