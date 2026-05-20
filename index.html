@@ -688,7 +688,7 @@
                         </h4>
                         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                             ${filteredLocked.map(s => `
-                            <div onclick="alert('Esta asignatura está bloqueada. Accede a ella desde tu plataforma Skool para activarla.')" class="p-5 bg-slate-100/50 border border-slate-200/60 rounded-2xl text-left transition-all grayscale opacity-60 cursor-pointer hover:bg-slate-200/30 group">
+                            <div onclick="alert('Esta asignatura está bloqueada. Accede a ella desde tu plataforma Skool para activarla.'); window.location.href = 'https://www.skool.com/saimap-ia-learning-4493/about';" class="p-5 bg-slate-100/50 border border-slate-200/60 rounded-2xl text-left transition-all grayscale opacity-60 cursor-pointer hover:bg-slate-200/30 group">
                                 <div class="flex justify-between items-start mb-3">
                                     <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-slate-200 text-slate-500 flex items-center gap-1">
                                         <i data-lucide="lock" class="w-2.5 h-2.5"></i> Bloqueada
@@ -916,7 +916,7 @@
                 `;
             } else {
                 examenHTML = `
-                    <div onclick="alert('El Examen Final de esta asignatura está bloqueado. Accede a él desde tu plataforma Skool para desbloquearlo.')" class="p-6 bg-slate-50 border border-slate-200 rounded-3xl text-center text-slate-400 flex flex-col items-center justify-center h-full min-h-[220px] opacity-60 grayscale cursor-pointer hover:bg-slate-100/50 group">
+                    <div onclick="alert('El Examen Final de esta asignatura está bloqueado. Accede a él desde tu plataforma Skool para desbloquearlo.'); window.location.href = 'https://www.skool.com/saimap-ia-learning-4493/about';" class="p-6 bg-slate-50 border border-slate-200 rounded-3xl text-center text-slate-400 flex flex-col items-center justify-center h-full min-h-[220px] opacity-60 grayscale cursor-pointer hover:bg-slate-100/50 group">
                         <i data-lucide="lock" class="w-8 h-8 text-slate-400 mb-2"></i>
                         <h4 class="font-bold text-slate-700 text-sm">Examen Final Bloqueado</h4>
                         <p class="text-[10px] text-slate-400 mt-1 max-w-xs mx-auto">Completa los temas o accede al examen desde tu plataforma para desbloquear la evaluación final.</p>
