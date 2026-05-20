@@ -3004,8 +3004,32 @@
             }
         };
 
-        // Iniciar en Home
-        window.onload = () => app.showView('home');
+        // Iniciar en Home y registrar el tema desbloqueado en el directorio (index.html)
+        window.onload = () => {
+            app.showView('home');
+            try {
+                const subjectId = "psicologia-del-aprendizaje";
+                const temaKey = "1.1";
+                
+                let unlocked = JSON.parse(localStorage.getItem('saimap_unlocked')) || {};
+                if (!unlocked[subjectId]) {
+                    unlocked[subjectId] = {
+                        name: "Psicología del Aprendizaje",
+                        year: "1º",
+                        unlockedTemas: []
+                    };
+                }
+                
+                const key = `Tema ${temaKey}`;
+                if (!unlocked[subjectId].unlockedTemas.includes(key)) {
+                    unlocked[subjectId].unlockedTemas.push(key);
+                }
+                
+                localStorage.setItem('saimap_unlocked', JSON.stringify(unlocked));
+            } catch (e) {
+                console.error("Error al desbloquear el tema:", e);
+            }
+        };
     </script>
 </body>
 </html>
