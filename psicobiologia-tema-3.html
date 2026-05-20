@@ -82,7 +82,7 @@
         }
 
         .card-back {
-            background: #4f46e5;
+            background: #059669;
             color: white;
             transform: rotateY(180deg);
         }
@@ -185,8 +185,28 @@
 
         <!-- VIEW: QUIZ -->
         <section id="view-quiz" class="hidden w-full fade-in space-y-6">
-            <div class="glass-card rounded-3xl p-8 relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-full h-1 bg-sky-500"></div>
+            <!-- Pantalla de Selección Inicial (si hay fallos guardados) -->
+            <div id="quiz-setup" class="hidden glass-card rounded-3xl p-8 relative overflow-hidden text-center border-2 border-white shadow-xl">
+                <div class="absolute top-0 left-0 w-full h-1 bg-emerald-500"></div>
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="ph-bold ph-list-checks text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-800 mb-2">Configuración del Test</h3>
+                <p class="text-sm text-slate-500 mb-8 max-w-sm mx-auto">Selecciona si prefieres realizar el test completo o repasar únicamente las preguntas que fallaste anteriormente.</p>
+                <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto w-full">
+                    <button onclick="app.launchQuizSession(false)" class="flex-1 btn-primary py-4 rounded-2xl font-bold text-sm flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-play"></i> Test Completo (<span id="setup-quiz-total-count">0</span>)
+                    </button>
+                    <button onclick="app.launchQuizSession(true)" class="flex-1 bg-red-50 border border-red-200 text-red-700 py-4 rounded-2xl font-bold text-sm hover:bg-red-100 transition flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-warning-circle"></i> Repasar Falladas (<span id="setup-quiz-fail-count">0</span>)
+                    </button>
+                </div>
+                <button onclick="app.showView('home')" class="mt-6 text-xs text-slate-400 hover:text-slate-600 font-bold uppercase tracking-wider transition">Volver al Menú</button>
+            </div>
+
+            <!-- Área de Test Activo -->
+            <div id="quiz-play-area" class="glass-card rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-emerald-500"></div>
 
                 <div class="flex justify-between items-center mb-6">
                     <div class="flex items-center gap-3">
@@ -200,7 +220,7 @@
                     </button>
                 </div>
 
-                <h2 id="quiz-question" class="text-2xl font-bold text-slate-800 mb-8">Pregunta de ejemplo</h2>
+                <h2 id="quiz-question" class="text-2xl font-bold text-slate-800 mb-8 leading-snug">Pregunta de ejemplo</h2>
 
                 <div id="quiz-hint-box" class="hidden mb-6 p-4 bg-amber-50 border-l-4 border-amber-400 text-amber-900 text-sm italic rounded-r-xl"></div>
 
@@ -249,48 +269,100 @@
 
         <!-- VIEW: FLASHCARDS -->
         <section id="view-flashcards" class="hidden w-full fade-in flex flex-col items-center">
-            <div class="w-full max-w-xl perspective-1000 h-80 mb-8">
-                <div id="fc-card" class="card-inner" onclick="app.fcFlip()">
-                    <div class="card-face card-front">
-                        <span id="fc-cat" class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs font-bold mb-4">CATEGORÍA</span>
-                        <p id="fc-question" class="text-xl font-bold text-slate-800"></p>
-                        <p class="absolute bottom-4 text-[10px] text-slate-400 uppercase font-bold">Toca para girar</p>
-                    </div>
-                    <div class="card-face card-back">
-                        <p id="fc-answer" class="text-lg font-medium px-4"></p>
+            <!-- Pantalla de Selección Inicial (si hay fallos guardados) -->
+            <div id="fc-setup" class="hidden glass-card rounded-3xl p-8 relative overflow-hidden text-center border-2 border-white shadow-xl w-full max-w-xl mb-8">
+                <div class="absolute top-0 left-0 w-full h-1 bg-emerald-500"></div>
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="ph-bold ph-cards text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-800 mb-2">Configuración de Flashcards</h3>
+                <p class="text-sm text-slate-500 mb-8 max-w-sm mx-auto">Selecciona si deseas estudiar el mazo completo o repasar únicamente las tarjetas que no te sabías.</p>
+                <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto w-full">
+                    <button onclick="app.launchFlashcardSession(false)" class="flex-1 btn-primary py-4 rounded-2xl font-bold text-sm flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-play"></i> Mazo Completo (<span id="setup-fc-total-count">0</span>)
+                    </button>
+                    <button onclick="app.launchFlashcardSession(true)" class="flex-1 bg-red-50 border border-red-200 text-red-700 py-4 rounded-2xl font-bold text-sm hover:bg-red-100 transition flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-warning-circle"></i> Repasar No Sabidas (<span id="setup-fc-fail-count">0</span>)
+                    </button>
+                </div>
+                <button onclick="app.showView('home')" class="mt-6 text-xs text-slate-400 hover:text-slate-600 font-bold uppercase tracking-wider transition">Volver al Menú</button>
+            </div>
+
+            <!-- Área de Flashcards Activas -->
+            <div id="fc-play-area" class="w-full flex flex-col items-center">
+                <div class="flex justify-between items-center w-full max-w-xl mb-4">
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Modo Flashcards</span>
+                    <button onclick="app.finishFlashcards()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">
+                        Finalizar Sesión
+                    </button>
+                </div>
+
+                <div class="w-full max-w-xl perspective-1000 h-80 mb-8">
+                    <div id="fc-card" class="card-inner" onclick="app.fcFlip()">
+                        <div class="card-face card-front">
+                            <span id="fc-cat" class="bg-emerald-100 text-emerald-600 px-3 py-1 rounded-full text-xs font-bold mb-4">CATEGORÍA</span>
+                            <p id="fc-question" class="text-xl font-bold text-slate-800"></p>
+                            <p class="absolute bottom-4 text-[10px] text-slate-400 uppercase font-bold">Toca para girar</p>
+                        </div>
+                        <div class="card-face card-back bg-emerald-600">
+                            <p id="fc-answer" class="text-lg font-medium px-4"></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="flex gap-4 w-full max-w-xl">
-                <button onclick="app.fcPrev()" class="flex-1 glass-card py-4 rounded-2xl font-bold hover:bg-slate-50 transition">Anterior</button>
-                <button onclick="app.fcShuffle()" class="px-6 glass-card rounded-2xl transition active:scale-90"><i class="ph-bold ph-shuffle"></i></button>
-                <button onclick="app.fcNext()" class="flex-1 btn-primary py-4 rounded-2xl font-bold">Siguiente</button>
+
+                <!-- Controles normales (cuando no está girada) -->
+                <div id="fc-normal-controls" class="flex gap-4 w-full max-w-xl">
+                    <button onclick="app.fcPrev()" class="flex-1 glass-card py-4 rounded-2xl font-bold hover:bg-slate-50 transition text-sm">Anterior</button>
+                    <button onclick="app.fcShuffle()" class="px-6 glass-card rounded-2xl transition active:scale-90"><i class="ph-bold ph-shuffle"></i></button>
+                    <button onclick="app.fcNext()" class="flex-1 btn-primary py-4 rounded-2xl font-bold text-sm">Siguiente</button>
+                </div>
+
+                <!-- Controles girados (cuando muestra la respuesta) -->
+                <div id="fc-flipped-controls" class="hidden flex gap-4 w-full max-w-xl">
+                    <button onclick="app.fcMark(false)" class="flex-1 bg-red-500 hover:bg-red-600 text-white py-4 rounded-2xl font-bold transition text-sm flex items-center justify-center gap-2 shadow-lg shadow-red-100">
+                        <i class="ph-bold ph-x-circle text-lg"></i> No lo sabía
+                    </button>
+                    <button onclick="app.fcMark(true)" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-2xl font-bold transition text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-100">
+                        <i class="ph-bold ph-check-circle text-lg"></i> Me lo sabía
+                    </button>
+                </div>
             </div>
         </section>
 
         <!-- VIEW: RESULTS -->
-        <section id="view-results" class="hidden w-full fade-in text-center py-12">
-            <div class="glass-card p-12 rounded-[3rem] inline-block max-w-md w-full border-2 border-white shadow-2xl">
-                <div class="w-24 h-24 bg-yellow-400 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl shadow-yellow-200">
-                    <i class="ph-fill ph-trophy text-5xl"></i>
-                </div>
-                <h2 class="text-3xl font-extrabold text-slate-800 mb-2">¡Sesión Finalizada!</h2>
-                <p id="result-text" class="text-slate-500 mb-8">Has completado todas las preguntas.</p>
+        <section id="view-results" class="hidden w-full fade-in flex flex-col items-center">
+            <div class="glass-card rounded-3xl p-12 text-center max-w-xl w-full border-2 border-white shadow-xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-emerald-500"></div>
 
-                <div class="flex flex-col gap-3">
-                    <button id="btn-retry-errors" onclick="app.quizRetryErrors()" class="hidden bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-2xl transition flex items-center justify-center gap-2">
-                        <i class="ph-bold ph-warning-circle"></i> Repasar solo Fallos (<span id="fail-count">0</span>)
+                <div class="w-24 h-24 bg-emerald-50 text-emerald-500 rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-inner">
+                    <i class="ph-bold ph-trophy text-5xl"></i>
+                </div>
+
+                <h2 class="text-3xl font-extrabold text-slate-800 mb-2">¡Sesión Completada!</h2>
+                <p id="result-text" class="text-slate-600 mb-8 text-lg font-medium">Has acertado todas las preguntas.</p>
+
+                <div class="flex flex-col gap-3 w-full">
+                    <!-- Botón para repetir errores del test -->
+                    <button id="btn-retry-errors" onclick="app.quizRetryErrors()" class="hidden w-full py-4 bg-red-500 hover:bg-red-600 text-white rounded-2xl font-bold transition flex items-center justify-center gap-2 shadow-lg shadow-red-100">
+                        <i class="ph-bold ph-warning-circle text-lg"></i> Repasar Preguntas Falladas (<span id="fail-count">0</span>)
                     </button>
-                    <button onclick="app.showView('home')" class="btn-primary w-full py-4 rounded-2xl uppercase tracking-widest text-sm">Menú Principal</button>
+                    <!-- Botón para repetir errores de flashcards -->
+                    <button id="btn-retry-flashcards" onclick="app.fcRetryErrors()" class="hidden w-full py-4 bg-red-500 hover:bg-red-600 text-white rounded-2xl font-bold transition flex items-center justify-center gap-2 shadow-lg shadow-red-100">
+                        <i class="ph-bold ph-warning-circle text-lg"></i> Repasar No Sabidas (<span id="fc-fail-count">0</span>)
+                    </button>
+                    <button onclick="app.showView('home')" class="w-full py-4 glass-card hover:bg-slate-50 text-slate-700 rounded-2xl font-bold transition">
+                        Volver al Menú Principal
+                    </button>
                 </div>
             </div>
         </section>
 
     </main>
 
+    <!-- JavaScript del Juego -->
     <script>
         const app = {
-            // --- BASE DE DATOS MUESTRA ---
+            // --- BASE DE DATOS DEL TEMA ---
             DB: {
             "quiz": [
                         {
@@ -2970,30 +3042,140 @@
             ]
 },
 
+            // --- ESTADO DE LA APLICACIÓN ---
             state: {
                 currentTool: null,
                 index: 0,
                 isFlipped: false,
                 activeData: [],
                 failedQuestions: [],
+                failedFlashcards: [],
+                persistedFailedQuestions: [],
+                persistedFailedFlashcards: [],
                 score: 0
             },
 
-            showView: function (view) {
-                document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
-                const target = document.getElementById(`view-${view}`);
-                if (target) target.classList.remove('hidden');
+            // --- MÉTODOS DE LA APLICACIÓN ---
+            showView: function (viewId) {
+                const views = ['home', 'quiz', 'trainer', 'flashcards', 'results'];
+                views.forEach(v => {
+                    const el = document.getElementById('view-' + v);
+                    if (el) el.classList.add('hidden');
+                });
+                const targetEl = document.getElementById('view-' + viewId);
+                if (targetEl) targetEl.classList.remove('hidden');
 
                 const nav = document.getElementById('nav-controls');
-                if (view === 'home') nav.classList.add('hidden');
-                else nav.classList.remove('hidden');
+                if (viewId === 'home') {
+                    nav.classList.add('hidden');
+                } else {
+                    nav.classList.remove('hidden');
+                }
             },
 
+            shuffleArray: function (array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+            },
+
+            updateCounter: function () {
+                const el = document.getElementById('global-counter');
+                if (el) {
+                    el.innerText = `${this.state.index + 1}/${this.state.activeData.length}`;
+                }
+            },
+
+            // --- MANEJO DE ERRORES Y PERSISTENCIA ---
+            saveFailures: function () {
+                try {
+                    const qTexts = this.state.persistedFailedQuestions.map(item => item.q);
+                    const fcTexts = this.state.persistedFailedFlashcards.map(item => item.q);
+                    localStorage.setItem('saimap_failed_questions_bases-biologicas-del-comportamiento_3', JSON.stringify(qTexts));
+                    localStorage.setItem('saimap_failed_flashcards_bases-biologicas-del-comportamiento_3', JSON.stringify(fcTexts));
+                } catch (e) {
+                    console.error("Error al guardar fallos:", e);
+                }
+            },
+
+            loadSavedFailures: function () {
+                try {
+                    const savedQs = JSON.parse(localStorage.getItem('saimap_failed_questions_bases-biologicas-del-comportamiento_3')) || [];
+                    const savedFcs = JSON.parse(localStorage.getItem('saimap_failed_flashcards_bases-biologicas-del-comportamiento_3')) || [];
+                    
+                    this.state.persistedFailedQuestions = (this.DB.quiz || []).filter(item => savedQs.includes(item.q));
+                    this.state.persistedFailedFlashcards = (this.DB.flashcards || []).filter(item => savedFcs.includes(item.q));
+                } catch (e) {
+                    this.state.persistedFailedQuestions = [];
+                    this.state.persistedFailedFlashcards = [];
+                }
+            },
+
+            // --- INICIO DE HERRAMIENTAS ---
             startTool: function (tool, customData = null) {
-                const dataToUse = customData ? [...customData] : (this.DB[tool] || []);
+                if (tool === 'quiz') {
+                    if (customData) {
+                        this.launchQuizSession(true, customData);
+                    } else if (this.state.persistedFailedQuestions && this.state.persistedFailedQuestions.length > 0) {
+                        this.showView('quiz');
+                        document.getElementById('quiz-setup').classList.remove('hidden');
+                        document.getElementById('quiz-play-area').classList.add('hidden');
+                        document.getElementById('setup-quiz-total-count').innerText = (this.DB.quiz || []).length;
+                        document.getElementById('setup-quiz-fail-count').innerText = this.state.persistedFailedQuestions.length;
+                        
+                        const counter = document.getElementById('global-counter');
+                        if (counter) counter.innerText = "0/0";
+                    } else {
+                        this.launchQuizSession(false);
+                    }
+                } else if (tool === 'flashcards') {
+                    if (customData) {
+                        this.launchFlashcardSession(true, customData);
+                    } else if (this.state.persistedFailedFlashcards && this.state.persistedFailedFlashcards.length > 0) {
+                        this.showView('flashcards');
+                        document.getElementById('fc-setup').classList.remove('hidden');
+                        document.getElementById('fc-play-area').classList.add('hidden');
+                        document.getElementById('setup-fc-total-count').innerText = (this.DB.flashcards || []).length;
+                        document.getElementById('setup-fc-fail-count').innerText = this.state.persistedFailedFlashcards.length;
+                        
+                        const counter = document.getElementById('global-counter');
+                        if (counter) counter.innerText = "0/0";
+                    } else {
+                        this.launchFlashcardSession(false);
+                    }
+                } else {
+                    const dataToUse = customData ? [...customData] : (this.DB[tool] || []);
+                    if (dataToUse.length === 0) return;
+
+                    this.state.currentTool = tool;
+                    this.state.index = 0;
+                    this.state.score = 0;
+                    this.state.activeData = dataToUse;
+
+                    if (!customData) this.shuffleArray(this.state.activeData);
+
+                    this.updateCounter();
+                    this.showView(tool);
+
+                    if (tool === 'trainer') this.renderTrainer();
+                }
+            },
+
+            // --- LÓGICA QUIZ ---
+            launchQuizSession: function (onlyFailed, customData = null) {
+                let dataToUse = [];
+                if (customData) {
+                    dataToUse = [...customData];
+                } else if (onlyFailed) {
+                    dataToUse = [...this.state.persistedFailedQuestions];
+                } else {
+                    dataToUse = [...(this.DB.quiz || [])];
+                }
+
                 if (dataToUse.length === 0) return;
 
-                this.state.currentTool = tool;
+                this.state.currentTool = 'quiz';
                 this.state.index = 0;
                 this.state.score = 0;
                 this.state.failedQuestions = [];
@@ -3001,29 +3183,14 @@
 
                 if (!customData) this.shuffleArray(this.state.activeData);
 
+                document.getElementById('quiz-setup').classList.add('hidden');
+                document.getElementById('quiz-play-area').classList.remove('hidden');
+
                 this.updateCounter();
-                this.showView(tool);
-
-                if (tool === 'quiz') this.renderQuiz();
-                if (tool === 'trainer') this.renderTrainer();
-                if (tool === 'flashcards') this.renderFlashcard();
+                this.showView('quiz');
+                this.renderQuiz();
             },
 
-            updateCounter: function () {
-                const counter = document.getElementById('global-counter');
-                if (counter && this.state.activeData.length > 0) {
-                    counter.innerText = `${this.state.index + 1}/${this.state.activeData.length}`;
-                }
-            },
-
-            shuffleArray: function (arr) {
-                for (let i = arr.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [arr[i], arr[j]] = [arr[j], arr[i]];
-                }
-            },
-
-            // --- LÓGICA QUIZ ---
             renderQuiz: function () {
                 const data = this.state.activeData[this.state.index];
                 if (!data) return;
@@ -3035,41 +3202,26 @@
                 const container = document.getElementById('quiz-options');
                 container.innerHTML = '';
 
-                // 1. Vinculamos cada texto con si era la respuesta correcta original
                 let shuffledOptions = data.options.map((opt, i) => ({ 
                     text: opt, 
                     isCorrect: i === data.correct 
                 }));
                 
-                // 2. Mezclamos aleatoriamente las opciones
                 for (let i = shuffledOptions.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
                     [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
                 }
 
-                // 3. Pintamos los botones
                 shuffledOptions.forEach((optObj, renderIndex) => {
                     const btn = document.createElement('button');
                     btn.className = "option-btn w-full text-left p-4 rounded-xl bg-white flex items-center gap-4 font-semibold text-slate-700 shadow-sm";
                     btn.innerHTML = `<span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-xs text-slate-400">${String.fromCharCode(65 + renderIndex)}</span> ${optObj.text}`;
-                    
-                    // Pasamos si es correcta o no directamente
                     btn.onclick = () => this.quizCheck(optObj.isCorrect, btn);
                     
-                    // Marca oculta para saber cuál era la correcta si el usuario falla
                     if (optObj.isCorrect) btn.dataset.isCorrect = "true";
                     
                     container.appendChild(btn);
                 });
-            },
-
-            quizToggleHint: function () {
-                const box = document.getElementById('quiz-hint-box');
-                const data = this.state.activeData[this.state.index];
-                if (data && data.hint) {
-                    box.innerText = data.hint;
-                    box.classList.toggle('hidden');
-                }
             },
 
             quizCheck: function (isCorrect, clickedBtn) {
@@ -3085,14 +3237,22 @@
                     clickedBtn.classList.add('bg-emerald-50', 'border-emerald-500', 'text-emerald-700');
                     document.getElementById('quiz-feedback-title').innerText = "¡Correcto!";
                     document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                    
+                    this.state.persistedFailedQuestions = (this.state.persistedFailedQuestions || []).filter(item => item.q !== data.q);
+                    this.saveFailures();
                 } else {
                     this.state.failedQuestions.push(data);
+                    
+                    if (!(this.state.persistedFailedQuestions || []).some(item => item.q === data.q)) {
+                        this.state.persistedFailedQuestions.push(data);
+                    }
+                    this.saveFailures();
+
                     clickedBtn.classList.add('bg-red-50', 'border-red-500', 'text-red-700');
                     
-                    // Iluminar la correcta real
                     const correctBtn = Array.from(btns).find(b => b.dataset.isCorrect === "true");
                     if (correctBtn) correctBtn.classList.add('bg-emerald-50', 'border-emerald-500');
-                    
+
                     document.getElementById('quiz-feedback-title').innerText = "Incorrecto";
                     document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
                 }
@@ -3107,6 +3267,15 @@
                 } else this.showQuizResults();
             },
 
+            quizToggleHint: function () {
+                const box = document.getElementById('quiz-hint-box');
+                const data = this.state.activeData[this.state.index];
+                if (data && data.hint) {
+                    box.innerText = data.hint;
+                    box.classList.toggle('hidden');
+                }
+            },
+
             finishQuiz: function () { this.showQuizResults(); },
 
             showQuizResults: function () {
@@ -3118,6 +3287,9 @@
                     failBtn.classList.remove('hidden');
                     document.getElementById('fail-count').innerText = this.state.failedQuestions.length;
                 } else failBtn.classList.add('hidden');
+
+                const fcFailBtn = document.getElementById('btn-retry-flashcards');
+                if (fcFailBtn) fcFailBtn.classList.add('hidden');
             },
 
             quizRetryErrors: function () { this.startTool('quiz', this.state.failedQuestions); },
@@ -3164,11 +3336,43 @@
             },
 
             // --- LÓGICA FLASHCARDS ---
+            launchFlashcardSession: function (onlyFailed, customData = null) {
+                let dataToUse = [];
+                if (customData) {
+                    dataToUse = [...customData];
+                } else if (onlyFailed) {
+                    dataToUse = [...this.state.persistedFailedFlashcards];
+                } else {
+                    dataToUse = [...(this.DB.flashcards || [])];
+                }
+
+                if (dataToUse.length === 0) return;
+
+                this.state.currentTool = 'flashcards';
+                this.state.index = 0;
+                this.state.score = 0;
+                this.state.failedFlashcards = [];
+                this.state.activeData = dataToUse;
+
+                if (!customData) this.shuffleArray(this.state.activeData);
+
+                document.getElementById('fc-setup').classList.add('hidden');
+                document.getElementById('fc-play-area').classList.remove('hidden');
+
+                this.updateCounter();
+                this.showView('flashcards');
+                this.renderFlashcard();
+            },
+
             renderFlashcard: function () {
                 const data = this.state.activeData[this.state.index];
                 if (!data) return;
                 this.state.isFlipped = false;
                 document.getElementById('fc-card').classList.remove('flipped');
+
+                document.getElementById('fc-normal-controls').classList.remove('hidden');
+                document.getElementById('fc-flipped-controls').classList.add('hidden');
+
                 setTimeout(() => {
                     document.getElementById('fc-cat').innerText = data.cat;
                     document.getElementById('fc-question').innerText = data.q;
@@ -3179,6 +3383,16 @@
             fcFlip: function () {
                 this.state.isFlipped = !this.state.isFlipped;
                 document.getElementById('fc-card').classList.toggle('flipped', this.state.isFlipped);
+
+                const normalCtrls = document.getElementById('fc-normal-controls');
+                const flippedCtrls = document.getElementById('fc-flipped-controls');
+                if (this.state.isFlipped) {
+                    normalCtrls.classList.add('hidden');
+                    flippedCtrls.classList.remove('hidden');
+                } else {
+                    normalCtrls.classList.remove('hidden');
+                    flippedCtrls.classList.add('hidden');
+                }
             },
 
             fcNext: function () {
@@ -3186,7 +3400,7 @@
                     this.state.index++;
                     this.renderFlashcard();
                     this.updateCounter();
-                } else this.showView('results');
+                } else this.showFlashcardResults();
             },
 
             fcPrev: function () {
@@ -3202,16 +3416,64 @@
                 this.state.index = 0;
                 this.renderFlashcard();
                 this.updateCounter();
+            },
+
+            fcMark: function (knewIt) {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+
+                if (!knewIt) {
+                    if (!this.state.failedFlashcards.includes(data)) {
+                        this.state.failedFlashcards.push(data);
+                    }
+                    if (!this.state.persistedFailedFlashcards.some(item => item.q === data.q)) {
+                        this.state.persistedFailedFlashcards.push(data);
+                    }
+                } else {
+                    this.state.failedFlashcards = this.state.failedFlashcards.filter(item => item !== data);
+                    this.state.persistedFailedFlashcards = this.state.persistedFailedFlashcards.filter(item => item.q !== data.q);
+                }
+                this.saveFailures();
+
+                this.fcNext();
+            },
+
+            finishFlashcards: function () {
+                this.showFlashcardResults();
+            },
+
+            showFlashcardResults: function () {
+                this.showView('results');
+                const resultText = document.getElementById('result-text');
+                resultText.innerHTML = `Has completado las tarjetas de memoria. No sabías <strong>${this.state.failedFlashcards.length}</strong> de <strong>${this.state.activeData.length}</strong>.`;
+
+                const failBtn = document.getElementById('btn-retry-errors');
+                if (failBtn) failBtn.classList.add('hidden');
+
+                const fcFailBtn = document.getElementById('btn-retry-flashcards');
+                if (fcFailBtn) {
+                    if (this.state.failedFlashcards.length > 0) {
+                        fcFailBtn.classList.remove('hidden');
+                        const fcFailCount = document.getElementById('fc-fail-count');
+                        if (fcFailCount) fcFailCount.innerText = this.state.failedFlashcards.length;
+                    } else {
+                        fcFailBtn.classList.add('hidden');
+                    }
+                }
+            },
+
+            fcRetryErrors: function () {
+                this.startTool('flashcards', this.state.failedFlashcards);
             }
         };
 
-        // Iniciar en Home y registrar el tema desbloqueado en el directorio (index.html)
         window.onload = () => {
+            app.loadSavedFailures();
             app.showView('home');
             try {
                 const subjectId = "bases-biologicas-del-comportamiento";
                 const temaKey = "3";
-                
+
                 let unlocked = JSON.parse(localStorage.getItem('saimap_unlocked')) || {};
                 if (!unlocked[subjectId]) {
                     unlocked[subjectId] = {
@@ -3220,12 +3482,12 @@
                         unlockedTemas: []
                     };
                 }
-                
+
                 const key = `Tema ${temaKey}`;
                 if (!unlocked[subjectId].unlockedTemas.includes(key)) {
                     unlocked[subjectId].unlockedTemas.push(key);
                 }
-                
+
                 localStorage.setItem('saimap_unlocked', JSON.stringify(unlocked));
             } catch (e) {
                 console.error("Error al desbloquear el tema:", e);
