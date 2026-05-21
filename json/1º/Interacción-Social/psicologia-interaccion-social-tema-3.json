@@ -1,0 +1,2458 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es la presencia física del receptor un requisito indispensable para que se produzca el intercambio de roles entre emisor y receptor?",
+      "options": [
+        "Sí, la bidireccionalidad requiere interacción presencial.",
+        "No, el intercambio puede ocurrir de forma asíncrona o remota.",
+        "No sabe, el texto no define la presencialidad en este proceso."
+      ],
+      "correct": 1,
+      "hint": "Piensa en medios de comunicación como el correo electrónico o el chat.",
+      "explanation": "El texto aclara que no es necesaria la presencia física (teléfono, chat) ni la inmediatez (correo electrónico) para el intercambio de roles."
+    },
+    {
+      "q": "¿Diferencia el autor conceptualmente el 'ruido' de los 'filtros' basándose en la naturaleza externa o interna de la alteración?",
+      "options": [
+        "Verdadero, el ruido es ambiental y los filtros son mentales.",
+        "Falso, ambos términos se consideran sinónimos en el manual.",
+        "No sabe, la distinción no se basa en el origen de la barrera."
+      ],
+      "correct": 0,
+      "hint": "El tráfico es un ejemplo de uno, mientras que los prejuicios son del otro.",
+      "explanation": "El ruido se define como alteración en la transmisión (externo), mientras que los filtros son barreras mentales (internas) como valores o esquemas."
+    },
+    {
+      "q": "¿Comienza el proceso de comunicación necesariamente con la codificación del mensaje por parte del emisor?",
+      "options": [
+        "Verdadero, la codificación es el paso inicial de la secuencia.",
+        "Falso, se inicia con la necesidad de transmitir y fijar objetivos.",
+        "No sabe, el orden de las fases es dinámico y no jerárquico."
+      ],
+      "correct": 1,
+      "hint": "Antes de traducir la idea a un código, debe existir un motivo para comunicar.",
+      "explanation": "El proceso comienza con la necesidad del emisor de transmitir una idea y el establecimiento de los objetivos de la comunicación."
+    },
+    {
+      "q": "¿Se produce el 'sesgo de conocimiento' cuando el receptor percibe una intención deliberada de engaño por parte del emisor?",
+      "options": [
+        "Verdadero, el sesgo implica desconfianza en la honestidad.",
+        "Falso, el sesgo se refiere a déficits de formación o veracidad.",
+        "No sabe, el concepto depende de la interpretación del mensaje."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre 'falta de preparación' e 'intención de mentir'.",
+      "explanation": "El sesgo de conocimiento se relaciona con falta de formación o actualización, sin ánimo de engaño; el ánimo de engaño es un error de transmisión."
+    },
+    {
+      "q": "¿Poseen los elementos verbales un peso superior al 50% en la configuración de la impresión sobre la intención del mensaje?",
+      "options": [
+        "Verdadero, el contenido lógico domina la interpretación final.",
+        "Falso, su peso se sitúa únicamente entre el 10% y el 20%.",
+        "No sabe, el manual no cuantifica el peso de los componentes."
+      ],
+      "correct": 1,
+      "hint": "Recuerda que lo importante no es tanto qué se dice, sino cómo se dice.",
+      "explanation": "El peso de los elementos verbales es bajo (10-20%), mientras que no verbales y paraverbales oscilan entre el 40-50% cada uno."
+    },
+    {
+      "q": "¿Clasifica van-der Hofstadt (2005) las barreras de comunicación en tres grupos: entorno, emisor y mensaje?",
+      "options": [
+        "Verdadero, esta tríada es la base de su taxonomía de barreras.",
+        "Falso, los grupos son el entorno, el emisor y el receptor.",
+        "No sabe, la clasificación incluye también el código y el canal."
+      ],
+      "correct": 1,
+      "hint": "Mira a los actores principales del proceso comunicativo.",
+      "explanation": "La clasificación de van-der Hofstadt divide las barreras en debidas al entorno, al emisor o al receptor."
+    },
+    {
+      "q": "¿Se define el estilo inhibido por la capacidad de defender derechos propios respetando los deseos ajenos?",
+      "options": [
+        "Verdadero, es la base del equilibrio en la comunicación social.",
+        "Falso, se define por anteponer los deseos de otros a los suyos.",
+        "No sabe, el estilo inhibido no aborda el concepto de derechos."
+      ],
+      "correct": 1,
+      "hint": "Piensa en personas que evitan conflictos y no saben decir 'no'.",
+      "explanation": "Las personas inhibidas anteponen deseos ajenos, son incapaces de defender sus derechos y evitan los conflictos interpersonales."
+    },
+    {
+      "q": "¿Sostiene el modelo de respuesta cognitiva que la persuasión es un proceso automático sin elaboración consciente?",
+      "options": [
+        "Verdadero, se basa en impulsos emocionales ante el mensaje.",
+        "Falso, implica un procesamiento sistemático y deliberado.",
+        "No sabe, el modelo se centra solo en la fuente y no el proceso."
+      ],
+      "correct": 1,
+      "hint": "Considera el papel activo que toma el receptor al comparar información.",
+      "explanation": "El modelo de Greenwald (1968) propone que el receptor adopta un rol activo de elaboración cognitiva consciente y sistemática."
+    },
+    {
+      "q": "¿Es el modelo heurístico el que predomina cuando el receptor carece de tiempo o conocimientos para analizar el mensaje?",
+      "options": [
+        "Verdadero, se activan atajos de decisión de forma automática.",
+        "Falso, en esos casos se opta siempre por ignorar la información.",
+        "No sabe, la falta de capacidad anula cualquier tipo de proceso."
+      ],
+      "correct": 0,
+      "hint": "Piensa en comprar algo solo porque lo anuncia alguien famoso.",
+      "explanation": "El procesamiento heurístico ocurre cuando no hay interés, tiempo o capacidad, utilizando atajos en lugar de un análisis profundo."
+    },
+    {
+      "q": "¿Depende el uso de la ruta central en el modelo ELM de la combinación entre motivación y capacidad del receptor?",
+      "options": [
+        "Verdadero, ambos factores determinan la probabilidad de análisis.",
+        "Falso, la motivación es el único determinante de la ruta central.",
+        "No sabe, el ELM no distingue entre motivación y capacidad real."
+      ],
+      "correct": 0,
+      "hint": "Para pensar profundamente, uno debe querer y también poder hacerlo.",
+      "explanation": "Petty y Cacioppo establecen que el uso de una ruta u otra depende de la motivación para el esfuerzo mental y de la capacidad necesaria."
+    },
+    {
+      "q": "¿Resulta el cambio de actitud mediante la ruta periférica más duradero y resistente que el logrado por la ruta central?",
+      "options": [
+        "Verdadero, al ser automático se graba mejor en la memoria.",
+        "Falso, el cambio por la ruta central es más fuerte y duradero.",
+        "No sabe, la durabilidad no depende de la ruta de procesamiento."
+      ],
+      "correct": 1,
+      "hint": "Un análisis crítico y profundo suele dejar huellas más permanentes.",
+      "explanation": "El texto especifica que el cambio realizado desde la ruta central es más fuerte y duradero que el de la ruta periférica."
+    },
+    {
+      "q": "¿Influye el 'atractivo' del emisor en la persuasión de la misma manera que el 'poder' o capacidad de castigo?",
+      "options": [
+        "Verdadero, ambos son variables de la fuente con igual efecto.",
+        "Falso, son dimensiones distintas dentro de las variables del emisor.",
+        "No sabe, el texto solo analiza la credibilidad como variable."
+      ],
+      "correct": 1,
+      "hint": "Observa la Tabla 2 sobre variables que inciden en la persuasión.",
+      "explanation": "Aunque ambos influyen, son categorías diferentes: el atractivo se basa en físico/similitud y el poder en premios/castigos."
+    },
+    {
+      "q": "¿Es la 'escucha activa' una actividad exclusivamente mental que no requiere de manifestaciones físicas o externas?",
+      "options": [
+        "Verdadero, es un proceso de decodificación interna del sujeto.",
+        "Falso, exige un esfuerzo físico y mental para ser efectiva.",
+        "No sabe, el esfuerzo físico es opcional según el tipo de canal."
+      ],
+      "correct": 1,
+      "hint": "Recuerda que el receptor debe indicar que está entendiendo.",
+      "explanation": "La escucha activa se define como el esfuerzo físico y mental de querer escuchar, requiriendo retroalimentación (asentir, mirar)."
+    },
+    {
+      "q": "¿Incluye la fase de 'comprensión' dentro de la escucha activa la observación de señales paraverbales y no verbales?",
+      "options": [
+        "Verdadero, la interpretación debe ser global para ser correcta.",
+        "Falso, la comprensión se limita estrictamente al código verbal.",
+        "No sabe, las señales no verbales pertenecen a la fase de recepción."
+      ],
+      "correct": 0,
+      "hint": "Escuchar no es solo oír palabras.",
+      "explanation": "Comprender el mensaje implica identificar intenciones observando señales verbales, no verbales y paraverbales."
+    },
+    {
+      "q": "¿Se considera la 'ansiedad' una barrera del entorno que impide la correcta aplicación de la escucha activa?",
+      "options": [
+        "Verdadero, es un ruido externo que altera la atención.",
+        "Falso, se trata de una alteración emocional de carácter interno.",
+        "No sabe, la ansiedad no se menciona como obstáculo de escucha."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre el calor de la sala y los nervios del receptor.",
+      "explanation": "La ansiedad se describe como una alteración o excitación emocional que interfiere, diferenciada de las barreras del entorno (ruido, calor)."
+    },
+    {
+      "q": "¿Es la comunicación vertical descendente la característica principal de un modelo de funcionamiento participativo?",
+      "options": [
+        "Verdadero, el líder coordina la información hacia los niveles bajos.",
+        "Falso, es propia de modelos autoritarios con jerarquía marcada.",
+        "No sabe, la dirección de la comunicación no define el modelo."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el flujo de órdenes del jefe a los subordinados.",
+      "explanation": "La comunicación vertical descendente se asocia a modelos autoritarios centralizados donde el jefe controla el proceso."
+    },
+    {
+      "q": "¿Favorece el modelo participativo la descentralización del poder y la innovación dentro de los grupos de trabajo?",
+      "options": [
+        "Verdadero, permite interacciones horizontales a todos los niveles.",
+        "Falso, la descentralización genera caos y reduce el rendimiento.",
+        "No sabe, el modelo participativo solo afecta a la motivación."
+      ],
+      "correct": 0,
+      "hint": "En este modelo, la comunicación se produce en todas las direcciones.",
+      "explanation": "El modelo participativo se caracteriza por la descentralización, favoreciendo la apertura, innovación e implicación."
+    },
+    {
+      "q": "¿Requiere la habilidad para formular una crítica asertiva la descripción clara de la situación incómoda como segundo paso?",
+      "options": [
+        "Verdadero, es vital tras haber determinado el objetivo inicial.",
+        "Falso, el primer paso debe ser siempre expresar los sentimientos.",
+        "No sabe, la crítica no debe ser descriptiva para no ofender."
+      ],
+      "correct": 0,
+      "hint": "Repasa la secuencia de cuatro pasos para formular una crítica.",
+      "explanation": "El primer paso es tener claro el interés/objetivo y el segundo paso es describir con claridad la situación incómoda."
+    },
+    {
+      "q": "¿Implica la habilidad de resumir la reducción de la información a lo esencial para confirmar la comprensión?",
+      "options": [
+        "Verdadero, es una técnica fundamental de la escucha activa.",
+        "Falso, resumir es una técnica de persuasión, no de escucha.",
+        "No sabe, el resumen debe incluir todos los detalles del emisor."
+      ],
+      "correct": 0,
+      "hint": "Frases como 'Si no he entendido mal...' son típicas de esta habilidad.",
+      "explanation": "Resumir consiste en reducir a pocas palabras lo esencial de la información para confirmar que se ha entendido correctamente."
+    },
+    {
+      "q": "¿Se produce la persuasión automática a través de la ruta central si el mensaje es suficientemente sencillo?",
+      "options": [
+        "Verdadero, la sencillez garantiza el éxito de la ruta central.",
+        "Falso, la persuasión automática es propia de la ruta periférica.",
+        "No sabe, la ruta central no tiene relación con la persuasión."
+      ],
+      "correct": 1,
+      "hint": "La ruta central es crítica, profunda y requiere esfuerzo mental.",
+      "explanation": "La ruta periférica es la que se asocia a un procesamiento rápido, superficial y automático."
+    },
+    {
+      "q": "¿Es el 'timbre' de voz un componente verbal de las habilidades sociales según la clasificación del manual?",
+      "options": [
+        "Verdadero, al emitirse mediante palabras es de tipo verbal.",
+        "Falso, es un componente paraverbal centrado en el 'cómo'.",
+        "No sabe, el timbre se clasifica como un componente no verbal."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre el contenido léxico y las cualidades físicas de la voz.",
+      "explanation": "El timbre, junto al volumen y el tono, son componentes paraverbales; no alteran el mensaje verbal pero influyen en él."
+    },
+    {
+      "q": "¿Debe el emisor codificar el mensaje adaptándolo a un código compartido para que la comunicación sea efectiva?",
+      "options": [
+        "Verdadero, el código común es un pilar de la efectividad.",
+        "Falso, la decodificación es responsabilidad única del receptor.",
+        "No sabe, el código puede ser diferente si hay intención clara."
+      ],
+      "correct": 0,
+      "hint": "Piensa en el ejemplo del idioma compartido.",
+      "explanation": "Para que la comunicación sea efectiva, el emisor debe adaptar el pensamiento a un código compartido por el receptor."
+    },
+    {
+      "q": "¿Asegura el estilo agresivo la resolución eficaz de conflictos interpersonales a largo plazo?",
+      "options": [
+        "Verdadero, imponer la voluntad propia evita futuras discusiones.",
+        "Falso, suele generar conflictos y consecuencias negativas sociales.",
+        "No sabe, la eficacia depende de la jerarquía de los implicados."
+      ],
+      "correct": 1,
+      "hint": "Recuerda que el estilo agresivo desprecia los derechos ajenos.",
+      "explanation": "El estilo agresivo genera conflictos y consecuencias negativas debido a la actitud de dominio sobre los demás."
+    },
+    {
+      "q": "¿Son los estereotipos un tipo de barrera debida al emisor que dificulta la escucha activa?",
+      "options": [
+        "Verdadero, constituyen filtros que provocan valoraciones previas.",
+        "Falso, los estereotipos solo afectan al receptor del mensaje.",
+        "No sabe, los estereotipos se clasifican como barreras de entorno."
+      ],
+      "correct": 0,
+      "hint": "Pueden ser barreras tanto para el que habla como para el que escucha.",
+      "explanation": "Los estereotipos y esquemas mentales actúan como filtros (barreras) tanto para el emisor como para el receptor."
+    },
+    {
+      "q": "¿Es el feedback un elemento prescindible en el proceso de comunicación si el emisor tiene objetivos claros?",
+      "options": [
+        "Verdadero, la intención del emisor basta para el acto comunicativo.",
+        "Falso, es necesario para confirmar la interpretación del mensaje.",
+        "No sabe, el feedback es exclusivo de la comunicación asertiva."
+      ],
+      "correct": 1,
+      "hint": "Sin devolución de información, no hay garantía de comprensión.",
+      "explanation": "La retroalimentación o feedback implica la devolución de información vital para la interpretación del contenido."
+    },
+    {
+      "q": "En el contexto de los errores de comunicación, ¿cuál de las siguientes opciones define correctamente el 'error de transmisión'?",
+      "options": [
+        "La creencia del receptor de que el emisor tiene una formación técnica insuficiente.",
+        "La percepción de que el emisor distorsiona la realidad con intención de engañar.",
+        "La incapacidad del emisor para adaptar el mensaje a un código lingüístico común."
+      ],
+      "correct": 1,
+      "hint": "Fíjate en si el error se centra en 'qué se dice' o en 'cómo se dice' y la intención.",
+      "explanation": "El error de transmisión se enfoca en el 'cómo', implica ánimo de engañar y daña directamente la credibilidad del emisor."
+    },
+    {
+      "q": "Según la importancia de los componentes conductuales, ¿qué porcentaje de influencia se atribuye a los elementos no verbales?",
+      "options": [
+        "Un peso minoritario situado entre el diez por ciento y el veinte por ciento.",
+        "Un peso significativo situado entre el cuarenta por ciento y el cincuenta por ciento.",
+        "Un peso dominante situado entre el setenta por ciento y el ochenta por ciento."
+      ],
+      "correct": 1,
+      "hint": "Recuerda que los no verbales y paraverbales tienen pesos muy similares.",
+      "explanation": "El texto indica que los elementos no verbales y paraverbales tienen un peso de entre un 40% y 50% cada uno."
+    },
+    {
+      "q": "Al analizar las barreras debidas al emisor, ¿cuál se relaciona directamente con la ambigüedad en el proceso?",
+      "options": [
+        "La utilización de filtros basados en estereotipos o experiencias previas negativas.",
+        "El uso de un código que resulta poco claro o que no es compartido por el receptor.",
+        "La falta de escucha activa que impide procesar la retroalimentación del mensaje."
+      ],
+      "correct": 1,
+      "hint": "La ambigüedad suele nacer del instrumento usado para cifrar el mensaje.",
+      "explanation": "Las barreras del emisor incluyen el uso de códigos ambiguos, poco claros o no compartidos con el receptor."
+    },
+    {
+      "q": "¿Cuál es la característica nuclear que define al estilo de comunicación asertivo frente a los demás?",
+      "options": [
+        "La capacidad de satisfacer las necesidades ajenas antes que las propias opiniones.",
+        "La capacidad de expresar ideas propias respetando los derechos de los interlocutores.",
+        "La capacidad de imponer los derechos individuales mediante el dominio del diálogo."
+      ],
+      "correct": 1,
+      "hint": "Busca el equilibrio entre la autoexpresión y el respeto al otro.",
+      "explanation": "La asertividad se basa en expresar lo que uno necesita o piensa respetando siempre a la persona con la que se interactúa."
+    },
+    {
+      "q": "En el modelo ELM de Petty y Cacioppo, ¿qué factor es determinante para procesar la información por la ruta periférica?",
+      "options": [
+        "Una alta motivación para realizar un esfuerzo mental exhaustivo sobre el mensaje.",
+        "La carencia de la capacidad necesaria o de la oportunidad para analizar los datos.",
+        "La evaluación crítica y consciente de los pros y contras de las alternativas dadas."
+      ],
+      "correct": 1,
+      "hint": "La ruta periférica es la opción por defecto cuando hay 'economía' de recursos cognitivos.",
+      "explanation": "Se sigue la ruta periférica cuando la motivación o la capacidad para procesar el mensaje son bajas."
+    },
+    {
+      "q": "Respecto a las variables del receptor en la persuasión, ¿cómo influye una alta autoestima en el cambio de actitudes?",
+      "options": [
+        "Facilita la persuasión porque el sujeto confía plenamente en la fuente emisora.",
+        "Dificulta la persuasión porque el sujeto confía más en sus propios juicios internos.",
+        "No tiene influencia relevante ya que la persuasión solo depende de la inteligencia."
+      ],
+      "correct": 1,
+      "hint": "Considera la relación entre la seguridad personal y la resistencia a la influencia externa.",
+      "explanation": "Las personas con alta autoestima confían más en sí mismas, por lo que es más difícil que sean persuadidas que las de baja autoestima."
+    },
+    {
+      "q": "Dentro de las fases de la escucha activa, ¿qué acción debe realizar el receptor inmediatamente después de comprender?",
+      "options": [
+        "Generar una respuesta crítica que rebata los argumentos principales del emisor.",
+        "Realizar un resumen interno del mensaje para su posterior confirmación verbal.",
+        "Finalizar la interacción para evitar la sobrecarga de información irrelevante."
+      ],
+      "correct": 1,
+      "hint": "Es un paso preparatorio antes de la retroalimentación final.",
+      "explanation": "Tras concentrarse y comprender, el tercer paso de la escucha activa es resumir internamente el mensaje."
+    },
+    {
+      "q": "¿Qué obstáculo de la escucha activa se describe como 'hacer creer al otro que se escucha sin prestar atención real'?",
+      "options": [
+        "La atención selectiva centrada solo en los datos que concuerdan con los gustos.",
+        "La realización de un esfuerzo meramente físico sin implicación del esfuerzo mental.",
+        "La interrupción constante que impide al emisor finalizar su turno de palabra."
+      ],
+      "correct": 1,
+      "hint": "Es una conducta de 'apariencia' de escucha.",
+      "explanation": "El esfuerzo físico sin mental implica destinar señales verbales/no verbales de escucha sin estar procesando realmente el mensaje."
+    },
+    {
+      "q": "En un grupo con modelo autoritario, ¿cómo se define la comunicación cuando fluye del líder hacia los subordinados?",
+      "options": [
+        "Como una comunicación de tipo horizontal basada en la equidad de rangos internos.",
+        "Como una comunicación de tipo vertical descendente orientada al control jerárquico.",
+        "Como una comunicación de tipo vertical ascendente para la toma de decisiones."
+      ],
+      "correct": 1,
+      "hint": "El flujo va de la cúspide de la pirámide hacia la base.",
+      "explanation": "La comunicación vertical descendente parte del líder hacia los subordinados en modelos centralizados y autoritarios."
+    },
+    {
+      "q": "¿Cuál es el tercer paso procedimental para formular una crítica de manera asertiva según el manual?",
+      "options": [
+        "Agradecer la atención prestada y valorar las alternativas que el otro proponga.",
+        "Expresar los sentimientos suscitados y sugerir cambios o alternativas de conducta.",
+        "Describir con total claridad la situación que resulta incómoda para el sujeto."
+      ],
+      "correct": 1,
+      "hint": "Es la fase emocional y propositiva de la crítica.",
+      "explanation": "Tras el objetivo y la descripción de la situación, el tercer paso es expresar sentimientos y sugerir cambios."
+    },
+    {
+      "q": "Según el modelo heurístico, ¿cuál es el factor principal que logra el cambio de actitud en el receptor?",
+      "options": [
+        "La validez de los argumentos lógicos presentados en el contenido del mensaje.",
+        "La presencia de alguna característica aparente de la fuente o del propio mensaje.",
+        "La comparación activa del mensaje con los conocimientos previos del individuo."
+      ],
+      "correct": 1,
+      "hint": "No importa el 'qué', sino detalles superficiales como el atractivo.",
+      "explanation": "En el modelo heurístico, la persuasión se da por características aparentes (como el atractivo de la fuente) sin análisis profundo."
+    },
+    {
+      "q": "¿Qué ventaja principal ofrece el canal audiovisual frente al impreso en la comunicación persuasiva?",
+      "options": [
+        "Garantiza una comprensión mucho más profunda de los argumentos complejos.",
+        "Favorece el entendimiento al recibirse a través de los sentidos de la vista y el oído.",
+        "Permite que el receptor analice el mensaje a su propio ritmo sin interferencias."
+      ],
+      "correct": 1,
+      "hint": "Se relaciona con el alcance y la estimulación sensorial dual.",
+      "explanation": "Los medios audiovisuales alcanzan poblaciones dispares y favorecen el entendimiento mediante el uso de dos sentidos."
+    },
+    {
+      "q": "Al tratar de expresar una opinión distinta en un grupo, ¿qué estrategia asertiva recomienda el autor?",
+      "options": [
+        "Ignorar la opinión del otro y exponer la propia de forma contundente e inmediata.",
+        "Expresar primero que el otro tiene parte de razón para luego dar la opinión propia.",
+        "Esperar a que el líder del grupo valide la opinión antes de manifestar desacuerdo."
+      ],
+      "correct": 1,
+      "hint": "Busca validar parcialmente al otro para facilitar la escucha de tu discrepancia.",
+      "explanation": "La técnica asertiva consiste en conceder parte de razón al otro antes de exponer la visión propia."
+    },
+    {
+      "q": "¿Qué elemento del proceso comunicativo se define como el 'conjunto de claves, imágenes y normas' para transmitir ideas?",
+      "options": [
+        "El canal, que actúa como soporte físico para el intercambio de la información.",
+        "El código, que debe ser compartido o traducido para asegurar el entendimiento.",
+        "El contexto, que determina la situación concreta donde se produce el intercambio."
+      ],
+      "correct": 1,
+      "hint": "Es el 'lenguaje' o sistema de signos utilizado.",
+      "explanation": "El código es el conjunto de claves, lenguaje y normas necesarias para transmitir las ideas del mensaje."
+    },
+    {
+      "q": "¿Cómo afecta la inteligencia del receptor a su resistencia frente a los mensajes persuasivos?",
+      "options": [
+        "Aumenta la resistencia porque el sujeto es más crítico con la aceptación de ideas.",
+        "Disminuye la resistencia debido a que comprenden el mensaje con mayor rapidez.",
+        "No tiene efecto alguno ya que la persuasión es un proceso puramente emocional."
+      ],
+      "correct": 0,
+      "hint": "Comprender no es lo mismo que aceptar.",
+      "explanation": "Una persona inteligente comprende mejor el mensaje, pero suele ser más crítica y, por tanto, se resiste más a la persuasión."
+    },
+    {
+      "q": "En la comunicación de grupo, ¿qué riesgo principal presenta el sistema centralizado de información?",
+      "options": [
+        "La pérdida de control del líder sobre los objetivos inmediatos de la organización.",
+        "La posible pérdida de información y la generación de procesos de influencia críticos.",
+        "El aumento excesivo de la innovación que desvirtúa la jerarquía establecida."
+      ],
+      "correct": 1,
+      "hint": "Todo pasa por el líder, lo que crea un 'embudo' informativo.",
+      "explanation": "En los sistemas centralizados, toda la información pasa por el líder, lo que puede causar pérdida de información e influencias negativas."
+    },
+    {
+      "q": "¿Cuál es la función principal de la 'retroalimentación' en la interacción interpersonal?",
+      "options": [
+        "Establecer una jerarquía clara donde el receptor confirma su rol de subordinado.",
+        "Informar al emisor sobre la recepción e interpretación que se ha hecho del mensaje.",
+        "Eliminar definitivamente los ruidos ambientales mediante el uso de un código nuevo."
+      ],
+      "correct": 1,
+      "hint": "Es la 'devolución' de información.",
+      "explanation": "La retroalimentación implica la devolución de información del receptor al emisor sobre el contenido y su interpretación."
+    },
+    {
+      "q": "¿Qué caracteriza a los componentes 'paraverbales' de la comunicación según el texto?",
+      "options": [
+        "Se centran exclusivamente en el contenido de lo que se quiere transmitir al otro.",
+        "Se relacionan con el 'cómo' se dicen las cosas sin alterar el contenido verbal.",
+        "Hacen referencia a las expresiones corporales y el contacto físico con el receptor."
+      ],
+      "correct": 1,
+      "hint": "Volumen, tono y fluidez son sus elementos clave.",
+      "explanation": "Los componentes paraverbales se refieren a cómo se dicen las cosas (volumen, tono, fluidez) sin cambiar el mensaje verbal."
+    },
+    {
+      "q": "Dentro de las barreras debidas al receptor, ¿qué concepto se vincula con la 'falta de escucha activa'?",
+      "options": [
+        "Prejuzgar un mensaje o no prestarle la atención debida durante el intercambio.",
+        "La incapacidad física de recibir el código debido a ruidos externos del entorno.",
+        "El uso de filtros basados en la experiencia que solo posee el emisor del mensaje."
+      ],
+      "correct": 0,
+      "hint": "Tiene que ver con la actitud y el procesamiento previo del mensaje.",
+      "explanation": "La falta de escucha activa en el receptor implica prejuzgar, no atender o interpretar incorrectamente el mensaje."
+    },
+    {
+      "q": "Según Petty y Cacioppo, ¿cuál es la principal consecuencia de que predomine la ruta periférica en la mayoría de ocasiones?",
+      "options": [
+        "Que los cambios de actitud logrados en la población sean extremadamente estables.",
+        "Que la probabilidad de elaboración del mensaje por parte del receptor sea muy baja.",
+        "Que los receptores analicen críticamente todos los argumentos de los mensajes."
+      ],
+      "correct": 1,
+      "hint": "La ruta periférica es un atajo que evita 'pensar' en los argumentos.",
+      "explanation": "La ruta periférica requiere menos esfuerzo, lo que hace que la probabilidad de elaboración (pensar en los argumentos) sea baja."
+    },
+    {
+      "q": "En la técnica de pedir confirmación asertiva, ¿qué tipo de preguntas se sugiere utilizar?",
+      "options": [
+        "Preguntas abiertas que permitan al otro divagar sobre sus sentimientos profundos.",
+        "Preguntas cuya respuesta implique decantarse por una alternativa de posicionamiento.",
+        "Preguntas retóricas que no requieran respuesta para no incomodar al interlocutor."
+      ],
+      "correct": 1,
+      "hint": "Buscas que el otro se posicione sobre un argumento concreto.",
+      "explanation": "Se deben usar preguntas que obliguen a la persona a expresar su acuerdo o desacuerdo (posicionarse)."
+    },
+    {
+      "q": "¿Qué variable del mensaje aumenta su capacidad persuasiva según la Tabla 2?",
+      "options": [
+        "El uso de una estructura con un número elevado de argumentos técnicos complejos.",
+        "La apelación a las emociones del interlocutor y la facilidad de entendimiento.",
+        "La presentación de la información una sola vez para evitar la fatiga del receptor."
+      ],
+      "correct": 1,
+      "hint": "Menos argumentos y más emoción suelen convencer más.",
+      "explanation": "El mensaje es más persuasivo si es fácil de entender, tiene pocos argumentos y apela a las emociones."
+    },
+    {
+      "q": "¿Cuál es el fin último de la 'comunicación persuasiva' como proceso de influencia social?",
+      "options": [
+        "Lograr un intercambio de información puramente objetivo y libre de valoraciones.",
+        "Lograr un cambio de creencias, actitudes y/o conductas en la persona que recibe la información.",
+        "Garantizar que el emisor mantenga siempre su estatus de poder frente al grupo receptor."
+      ],
+      "correct": 1,
+      "hint": "La persuasión busca una transformación en el receptor.",
+      "explanation": "La comunicación persuasiva tiene como objetivo deliberado provocar un cambio en actitudes, creencias o conductas."
+    },
+    {
+      "q": "Respecto a las barreras del entorno en la escucha activa, ¿cuál de estas opciones es un ejemplo correcto?",
+      "options": [
+        "El cansancio mental acumulado por el receptor durante una jornada de trabajo.",
+        "Una iluminación inadecuada o el calor excesivo en el lugar de la comunicación.",
+        "La ansiedad que interfiere en la capacidad de concentración del interlocutor."
+      ],
+      "correct": 1,
+      "hint": "Busca factores físicos externos a la persona.",
+      "explanation": "El ruido, el calor o la iluminación inadecuada son barreras físicas del entorno."
+    },
+    {
+      "q": "¿Qué implica la fase de 'decodificación' en el proceso de comunicación interpersonal?",
+      "options": [
+        "La traducción de pensamientos a un código compartido para iniciar la transmisión.",
+        "La interpretación de la intención del mensaje a través de filtros y esquemas mentales.",
+        "El envío de señales no verbales para confirmar que el canal está libre de ruidos."
+      ],
+      "correct": 1,
+      "hint": "Es el proceso interno del receptor al recibir los datos.",
+      "explanation": "La decodificación es un proceso interno del receptor donde intervienen filtros y se interpreta la intención."
+    },
+    {
+      "q": "Al analizar las variables del emisor en la comunicación persuasiva, ¿qué opción es incorrecta?",
+      "options": [
+        "La credibilidad del emisor aumenta proporcionalmente a la competencia que se le atribuye.",
+        "El atractivo del emisor se basa exclusivamente en su capacidad de establecer recompensas.",
+        "La similitud percibida entre emisor y receptor actúa como una dimensión del atractivo."
+      ],
+      "correct": 1,
+      "hint": "Cuidado con confundir atractivo (físico/similitud) con poder (recompensas/castigos).",
+      "explanation": "Es incorrecta porque el atractivo se basa en el físico o similitud; la capacidad de dar recompensas define al 'poder'."
+    },
+    {
+      "q": "Sobre el proceso de escucha activa, ¿cuál de las siguientes afirmaciones es incorrecta?",
+      "options": [
+        "Requiere concentrarse en la otra persona eliminando cualquier tipo de distracción.",
+        "Es un proceso automático que no demanda esfuerzo físico ni mental del receptor.",
+        "Debe finalizar con la confirmación de que el mensaje entendido es el correcto."
+      ],
+      "correct": 1,
+      "hint": "La escucha activa es un acto deliberado y costoso.",
+      "explanation": "Es incorrecta porque la escucha activa se define precisamente como un esfuerzo físico y mental, no es automática."
+    },
+    {
+      "q": "En relación con los estilos de comunicación, ¿qué opción describe incorrectamente al estilo agresivo?",
+      "options": [
+        "Muestra desprecio hacia los derechos ajenos en favor de los intereses propios.",
+        "Considera que las opiniones personales son más importantes que las de los demás.",
+        "Facilita la resolución de problemas mediante la expresión directa de necesidades."
+      ],
+      "correct": 2,
+      "hint": "La resolución eficaz de problemas es propia de otro estilo.",
+      "explanation": "Es incorrecta porque el estilo agresivo genera conflictos; facilitar la resolución de problemas es propio del estilo asertivo."
+    },
+    {
+      "q": "Respecto a las barreras debidas al emisor, ¿qué afirmación resulta incorrecta según el texto?",
+      "options": [
+        "La falta de habilidades de comunicación constituye una barrera crítica del emisor.",
+        "El uso de filtros basados en la experiencia es exclusivo de las barreras del receptor.",
+        "Tener actitudes negativas hacia el proceso de comunicación actúa como una barrera."
+      ],
+      "correct": 1,
+      "hint": "Los filtros actúan en ambos extremos de la cadena comunicativa.",
+      "explanation": "Es incorrecta porque los filtros basados en la experiencia afectan tanto al emisor como al receptor."
+    },
+    {
+      "q": "Sobre el modelo de la probabilidad de elaboración (ELM), ¿qué afirmación es incorrecta?",
+      "options": [
+        "La ruta central implica un procesamiento controlado, crítico y consciente del mensaje.",
+        "La ruta periférica se centra en elementos secundarios más que en el mensaje mismo.",
+        "Ambas rutas son categorías aisladas que no forman parte de un continuo cognitivo."
+      ],
+      "correct": 2,
+      "hint": "Las rutas son los extremos de una misma línea de probabilidad.",
+      "explanation": "Es incorrecta porque el texto afirma que ambas rutas son los extremos de un continuo respecto a la probabilidad de elaboración."
+    },
+    {
+      "q": "En cuanto a los componentes de las habilidades sociales, ¿qué opción es incorrecta?",
+      "options": [
+        "Los componentes no verbales incluyen las miradas, sonrisas y la apariencia personal.",
+        "Los componentes verbales se relacionan con el contenido léxico y las preguntas.",
+        "El volumen y el tono de voz se clasifican dentro de los componentes no verbales."
+      ],
+      "correct": 2,
+      "hint": "Los elementos de la voz tienen su propia categoría técnica.",
+      "explanation": "Es incorrecta porque el volumen y el tono son componentes 'paraverbales', no 'no verbales'."
+    },
+    {
+      "q": "Acerca de la comunicación en grupos de trabajo, ¿qué afirmación es incorrecta?",
+      "options": [
+        "En modelos autoritarios, la información converge necesariamente en la figura del líder.",
+        "La comunicación horizontal se produce entre miembros con distinto rango jerárquico.",
+        "El modelo participativo favorece la apertura y la innovación en todas las direcciones."
+      ],
+      "correct": 1,
+      "hint": "La horizontalidad implica igualdad de nivel.",
+      "explanation": "Es incorrecta porque la comunicación horizontal es la que se produce entre miembros con un mismo rango dentro del grupo."
+    },
+    {
+      "q": "Sobre el modelo de respuesta cognitiva de Greenwald (1968), ¿qué es incorrecto?",
+      "options": [
+        "La persuasión es efectiva si los pensamientos generados concuerdan con el mensaje.",
+        "El receptor adopta un rol pasivo limitándose a almacenar la información recibida.",
+        "Implica una comparación sistemática entre el mensaje y los conocimientos previos."
+      ],
+      "correct": 1,
+      "hint": "Este modelo otorga mucha importancia a la actividad mental del receptor.",
+      "explanation": "Es incorrecta porque el modelo de respuesta cognitiva otorga al receptor un rol 'activo' en la recepción."
+    },
+    {
+      "q": "En la técnica asertiva de formular críticas, ¿qué paso es incorrecto en su descripción?",
+      "options": [
+        "Se debe agradecer la atención tras proponer alternativas de comportamiento.",
+        "Es necesario expresar los sentimientos que el problema suscita en el emisor.",
+        "Se debe ocultar el objetivo real de la crítica para no poner a la defensiva al otro."
+      ],
+      "correct": 2,
+      "hint": "La transparencia es fundamental en la asertividad.",
+      "explanation": "Es incorrecta porque el primer paso es precisamente tener claro y determinar el objetivo de comunicar la crítica."
+    },
+    {
+      "q": "Respecto a los elementos de la comunicación, ¿cuál de estas definiciones es incorrecta?",
+      "options": [
+        "El canal es el medio físico, pudiendo ser oral-auditivo o gráfico-visual.",
+        "El emisor es quien inicia el acto comunicativo y nunca intercambia su rol.",
+        "El contexto es la situación que determina cómo ocurre el intercambio de información."
+      ],
+      "correct": 1,
+      "hint": "La comunicación interpersonal suele ser dinámica.",
+      "explanation": "Es incorrecta porque el emisor y el receptor intercambian sus roles en un número indefinido de ocasiones."
+    },
+    {
+      "q": "Sobre los obstáculos a la escucha activa, ¿qué afirmación es incorrecta?",
+      "options": [
+        "La atención selectiva nos hace ignorar información que no concuerda con gustos.",
+        "Respetar los tiempos de interlocución se considera un obstáculo para la fluidez.",
+        "Los estereotipos facilitan una valoración precipitada que daña la escucha activa."
+      ],
+      "correct": 1,
+      "hint": "No dejar expresarse es el obstáculo; respetarlos es la solución.",
+      "explanation": "Es incorrecta porque respetar los tiempos es una buena práctica; el obstáculo es 'no permitir expresarse'."
+    },
+    {
+      "q": "En el modelo heurístico de persuasión, ¿qué opción es incorrecta?",
+      "options": [
+        "Se utilizan atajos de decisión para dar una respuesta rápida ante el mensaje.",
+        "Requiere un análisis profundo de todos los pros y contras de las alternativas.",
+        "Suele ocurrir cuando el receptor tiene una sobrecarga de información externa."
+      ],
+      "correct": 1,
+      "hint": "El análisis profundo es lo opuesto a un heurístico.",
+      "explanation": "Es incorrecta porque el modelo heurístico se caracteriza precisamente por la ausencia de un análisis profundo."
+    },
+    {
+      "q": "Sobre la comunicación persuasiva según Petty y Cacioppo, ¿qué es incorrecto?",
+      "options": [
+        "La persuasión implica un cambio intencionado en las actitudes de las personas.",
+        "La ruta central requiere mayor esfuerzo y capacidad que la ruta periférica.",
+        "El canal audiovisual es el único que permite el uso de la ruta central con éxito."
+      ],
+      "correct": 2,
+      "hint": "Cualquier canal puede activar la ruta central si hay motivación y capacidad.",
+      "explanation": "Es incorrecta porque el uso de las rutas depende de la motivación/capacidad del receptor, no exclusivamente del canal."
+    },
+    {
+      "q": "Respecto a las variables del emisor en persuasión, ¿cuál es incorrecta?",
+      "options": [
+        "El poder es la capacidad de la fuente para establecer premios o castigos.",
+        "La credibilidad no influye en el cambio de actitud si el mensaje es emotivo.",
+        "El atractivo físico del emisor es una variable que incide en la persuasión."
+      ],
+      "correct": 1,
+      "hint": "La credibilidad es un factor fundamental.",
+      "explanation": "Es incorrecta porque a mayor competencia (credibilidad) atribuida, mayor es la capacidad de cambio de actitud."
+    },
+    {
+      "q": "Acerca del estilo de comunicación inhibido, ¿qué descripción es incorrecta?",
+      "options": [
+        "Son personas que satisfacen las necesidades ajenas ignorando las propias.",
+        "Este estilo facilita la resolución de problemas mediante el uso de la asertividad.",
+        "Se caracteriza por la incapacidad de decir 'no' a las demandas de los demás."
+      ],
+      "correct": 1,
+      "hint": "El estilo inhibido evita problemas pero no los resuelve eficazmente.",
+      "explanation": "Es incorrecta porque el estilo inhibido es 'no asertivo' y evita conflictos en lugar de resolverlos."
+    },
+    {
+      "q": "Sobre las variables del receptor en la persuasión, ¿qué es incorrecto?",
+      "options": [
+        "La inteligencia facilita la comprensión pero puede aumentar la resistencia.",
+        "La baja autoestima hace que las personas sean más difíciles de persuadir.",
+        "Las personas con alta autoestima reciben mejor los mensajes persuasivos."
+      ],
+      "correct": 1,
+      "hint": "La confianza en uno mismo es clave en la resistencia.",
+      "explanation": "Es incorrecta porque las personas con baja autoestima son más fáciles de persuadir al confiar menos en sus criterios."
+    },
+    {
+      "q": "Respecto a la definición de escucha activa, ¿cuál es incorrecta?",
+      "options": [
+        "Implica un esfuerzo por que el proceso de comunicación ocurra sin barreras.",
+        "Se limita a oír el contenido verbal sin necesidad de interpretar lo no verbal.",
+        "Trata de interpretar el significado correcto a través de la retroalimentación."
+      ],
+      "correct": 1,
+      "hint": "La escucha activa es holística.",
+      "explanation": "Es incorrecta porque la escucha activa requiere interpretar el significado a través de lo verbal, no verbal y paraverbal."
+    },
+    {
+      "q": "Sobre las habilidades de comunicación asertiva, ¿qué afirmación es incorrecta?",
+      "options": [
+        "Pedir confirmación implica usar preguntas para que el otro se posicione.",
+        "Escuchar activamente es un componente fundamental del estilo asertivo.",
+        "Resumir la información del otro se considera una falta de respeto al emisor."
+      ],
+      "correct": 2,
+      "hint": "Resumir demuestra que has estado atento.",
+      "explanation": "Es incorrecta porque resumir es una habilidad asertiva que favorece la escucha activa y confirma la comprensión."
+    },
+    {
+      "q": "Acerca de la comunicación organizacional, ¿qué es incorrecto según el manual?",
+      "options": [
+        "La comunicación ascendente fluye de los subordinados hacia el jefe o líder.",
+        "El modelo autoritario garantiza una comunicación bidireccional perfecta.",
+        "La comunicación horizontal ocurre entre miembros del mismo rango jerárquico."
+      ],
+      "correct": 1,
+      "hint": "La jerarquía rígida suele limitar la fluidez bidireccional.",
+      "explanation": "Es incorrecta porque el modelo autoritario es centralizado y puede hacer que se pierda información."
+    },
+    {
+      "q": "Sobre las barreras debidas al entorno, ¿cuál de estas opciones es incorrecta?",
+      "options": [
+        "Las interrupciones de una llamada telefónica son barreras ambientales.",
+        "Los estereotipos del receptor se consideran una barrera del entorno físico.",
+        "El ruido del tráfico es un ejemplo clásico de barrera debida al entorno."
+      ],
+      "correct": 1,
+      "hint": "Los estereotipos están en la mente, no en la sala.",
+      "explanation": "Es incorrecta porque los estereotipos son barreras mentales (filtros), no barreras del entorno."
+    },
+    {
+      "q": "En relación con los componentes no verbales, ¿qué opción es incorrecta?",
+      "options": [
+        "Incluyen las expresiones faciales, las miradas y la distancia física.",
+        "Son aquellos en los que no interviene la palabra para transmitir datos.",
+        "La fluidez verbal y el tiempo de habla son elementos puramente no verbales."
+      ],
+      "correct": 2,
+      "hint": "Hay una categoría específica para los matices de la voz.",
+      "explanation": "Es incorrecta porque la fluidez y el tiempo de habla son componentes 'paraverbales'."
+    },
+    {
+      "q": "Sobre la persuasión y las variables del canal, ¿qué es incorrecto?",
+      "options": [
+        "Los medios impresos suelen mejorar la comprensión de los mensajes dados.",
+        "Los audiovisuales son peores para el entendimiento que los medios escritos.",
+        "El canal es el elemento que permite el intercambio de información física."
+      ],
+      "correct": 1,
+      "hint": "Revisa las ventajas de los sentidos duales.",
+      "explanation": "Es incorrecta porque los medios audiovisuales favorecen el entendimiento al usar vista y oído."
+    },
+    {
+      "q": "Acerca del sesgo o error de conocimiento, ¿qué afirmación es incorrecta?",
+      "options": [
+        "Se relaciona con una falta de formación o actualización del emisor.",
+        "El receptor duda de la veracidad de la realidad que el emisor transmite.",
+        "Es un error más grave que el de transmisión por el ánimo de engañar."
+      ],
+      "correct": 2,
+      "hint": "Compara la gravedad de la ignorancia frente a la de la mentira.",
+      "explanation": "Es incorrecta porque el error de transmisión es más grave debido a la intención de engaño y pérdida de credibilidad."
+    },
+    {
+      "q": "Respecto a la fase de confirmación en la escucha activa, ¿qué es incorrecto?",
+      "options": [
+        "Es el paso final para asegurar que el mensaje recibido es el emitido.",
+        "Debe realizarse antes de resumir internamente el mensaje del emisor.",
+        "Consiste en verificar con el interlocutor la interpretación del mensaje."
+      ],
+      "correct": 1,
+      "hint": "No puedes confirmar algo que aún no has procesado o resumido.",
+      "explanation": "Es incorrecta porque la confirmación es el cuarto paso, posterior al resumen interno (tercer paso)."
+    },
+    {
+      "q": "Sobre la comunicación interpersonal general, ¿qué premisa es incorrecta?",
+      "options": [
+        "Comunicarse es una necesidad básica y característica del ser humano.",
+        "Es imposible no comunicarse, pues incluso el silencio manda mensajes.",
+        "La comunicación efectiva depende únicamente de la voluntad del emisor."
+      ],
+      "correct": 2,
+      "hint": "La comunicación es un proceso complejo con muchos elementos influyentes.",
+      "explanation": "Es incorrecta porque la efectividad depende de todos los elementos (emisor, receptor, canal, ruido, filtros, etc.)."
+    },
+    {
+      "q": "El ____ es el proceso mediante el cual el receptor interpreta la intención del mensaje y genera una impresión sobre el emisor.",
+      "options": [
+        "mecanismo de feedback reactivo",
+        "proceso de decodificación",
+        "sistema de codificación inversa"
+      ],
+      "correct": 1,
+      "hint": "Ocurre después de la recepción física del mensaje.",
+      "explanation": "La decodificación es el proceso interno donde intervienen filtros y esquemas para interpretar la intención del mensaje."
+    },
+    {
+      "q": "Los ____ son barreras mentales producto de valores, experiencias y prejuicios que intervienen en la interpretación del mensaje.",
+      "options": [
+        "filtros cognitivos",
+        "ruidos semánticos",
+        "canales perceptivos"
+      ],
+      "correct": 0,
+      "hint": "Son subjetivos y dependen de la historia personal.",
+      "explanation": "Los filtros son barreras mentales que condicionan cómo el emisor y el receptor procesan la información."
+    },
+    {
+      "q": "El sesgo o error de conocimiento se caracteriza por centrarse fundamentalmente en ____ del mensaje transmitido.",
+      "options": [
+        "el componente paraverbal",
+        "la intención de engaño",
+        "lo que se dice"
+      ],
+      "correct": 2,
+      "hint": "Se relaciona con déficits de formación o actualización.",
+      "explanation": "Este error se centra en el contenido ('lo que se dice') y no implica ánimo de engaño, sino falta de formación."
+    },
+    {
+      "q": "En el proceso comunicativo, el error de transmisión se enfoca principalmente en ____ la información por parte del emisor.",
+      "options": [
+        "cómo se presenta",
+        "la veracidad de",
+        "la codificación de"
+      ],
+      "correct": 0,
+      "hint": "Afecta directamente a la credibilidad y genera categorización negativa.",
+      "explanation": "El error de transmisión se centra en el 'cómo se dice', sugiriendo una versión inexacta con ánimo de engaño."
+    },
+    {
+      "q": "Los elementos ____ de las habilidades sociales, como la mirada o la distancia física, tienen un peso de entre el 40% y 50% en la comunicación.",
+      "options": [
+        "paraverbales",
+        "no verbales",
+        "contextuales"
+      ],
+      "correct": 1,
+      "hint": "Son aquellos en los que no interviene la palabra en absoluto.",
+      "explanation": "Los componentes no verbales (gestos, miradas, etc.) tienen un impacto de casi la mitad del peso comunicativo."
+    },
+    {
+      "q": "El volumen de la voz, el timbre y la fluidez verbal son considerados componentes ____ de la interacción social.",
+      "options": [
+        "paraverbales",
+        "no lingüísticos",
+        "metacomunicativos"
+      ],
+      "correct": 0,
+      "hint": "Hacen uso del aparato fonador sin alterar el contenido verbal.",
+      "explanation": "Los componentes paraverbales se refieren a 'cómo' se emite el sonido sin cambiar el mensaje literal."
+    },
+    {
+      "q": "Las barreras debidas al ____ incluyen el uso de códigos ambiguos, falta de habilidades de comunicación y actitudes negativas.",
+      "options": [
+        "receptor",
+        "entorno",
+        "emisor"
+      ],
+      "correct": 2,
+      "hint": "Se producen en la fase de generación y envío del mensaje.",
+      "explanation": "El texto identifica la falta de claridad en el código y los prejuicios como barreras propias del emisor."
+    },
+    {
+      "q": "Una persona con estilo de comunicación ____ antepone sistemáticamente los deseos y opiniones ajenas a los propios.",
+      "options": [
+        "inhibido",
+        "empático",
+        "pasivo-agresivo"
+      ],
+      "correct": 0,
+      "hint": "También se denomina estilo 'no asertivo'.",
+      "explanation": "El estilo inhibido se define por la incapacidad de defender derechos propios y la evitación del conflicto."
+    },
+    {
+      "q": "El estilo de comunicación ____ busca expresar ideas directamente respetando siempre a la persona con la que se interactúa.",
+      "options": [
+        "prosocial",
+        "asertivo",
+        "colaborativo"
+      ],
+      "correct": 1,
+      "hint": "Es el estilo que facilita la resolución de problemas.",
+      "explanation": "La asertividad es la capacidad de defender los derechos propios respetando los de los demás."
+    },
+    {
+      "q": "Según el modelo de respuesta cognitiva de Greenwald, la persuasión es efectiva si los pensamientos generados ____.",
+      "options": [
+        "refutan la fuente",
+        "evitan el heurístico",
+        "concuerdan con el mensaje"
+      ],
+      "correct": 2,
+      "hint": "Requiere un procesamiento sistemático y consciente.",
+      "explanation": "Si la elaboración cognitiva del receptor coincide con la propuesta del emisor, se produce el cambio de actitud."
+    },
+    {
+      "q": "El procesamiento ____ de la información se utiliza cuando el receptor no tiene capacidad o motivación para un análisis profundo.",
+      "options": [
+        "periférico-lineal",
+        "heurístico",
+        "automático-reflexivo"
+      ],
+      "correct": 1,
+      "hint": "Utiliza atajos de decisión basados en experiencias previas.",
+      "explanation": "El modelo heurístico explica que la persuasión se da por señales externas o atajos cuando no hay análisis sistemático."
+    },
+    {
+      "q": "En el modelo de la probabilidad de elaboración, la ruta ____ implica un análisis crítico, profundo y controlado del mensaje.",
+      "options": [
+        "central",
+        "secundaria",
+        "racional"
+      ],
+      "correct": 0,
+      "hint": "Es la ruta que genera cambios de actitud más duraderos.",
+      "explanation": "La ruta central requiere esfuerzo y capacidad para evaluar pros y contras de forma consciente."
+    },
+    {
+      "q": "La probabilidad de elaboración de un mensaje depende de dos variables fundamentales: la motivación y la ____.",
+      "options": [
+        "autoestima",
+        "capacidad",
+        "credibilidad"
+      ],
+      "correct": 1,
+      "hint": "Se refiere a disponer de los recursos cognitivos y oportunidad para procesar.",
+      "explanation": "Petty y Cacioppo establecen que sin motivación y capacidad no se activa la ruta central."
+    },
+    {
+      "q": "Respecto a la fuente, la ____ se refiere a la competencia o habilidad atribuida al emisor por el receptor.",
+      "options": [
+        "atracción",
+        "credibilidad",
+        "persuabilidad"
+      ],
+      "correct": 1,
+      "hint": "A mayor grado de este factor, mayor capacidad de cambio de actitud.",
+      "explanation": "La credibilidad del emisor es una variable clave que facilita la persuasión."
+    },
+    {
+      "q": "El mensaje tiene mayor capacidad persuasiva cuanto más apele a ____ del interlocutor.",
+      "options": [
+        "los esquemas",
+        "las emociones",
+        "los prejuicios"
+      ],
+      "correct": 1,
+      "hint": "Es un elemento del contenido que facilita la aceptación.",
+      "explanation": "Los mensajes emocionales suelen ser más efectivos para el cambio de actitudes según el texto."
+    },
+    {
+      "q": "Las personas con ____ suelen recibir mejor los mensajes pero son más difíciles de persuadir por su autoconfianza.",
+      "options": [
+        "alta inteligencia",
+        "baja autoestima",
+        "alta autoestima"
+      ],
+      "correct": 2,
+      "hint": "Confían más en sus propios criterios que en los ajenos.",
+      "explanation": "La alta autoestima actúa como protector contra la persuasión externa excesiva."
+    },
+    {
+      "q": "La escucha activa implica un esfuerzo ____ de querer escuchar con atención la totalidad del mensaje.",
+      "options": [
+        "físico y mental",
+        "auditivo y verbal",
+        "cognitivo y motor"
+      ],
+      "correct": 0,
+      "hint": "Requiere concentración y uso de componentes no verbales.",
+      "explanation": "La escucha activa no es solo oír, requiere disposición corporal y procesamiento intelectual."
+    },
+    {
+      "q": "Uno de los pasos de la escucha activa es el ____ del mensaje para después confirmarlo con el interlocutor.",
+      "options": [
+        "análisis crítico",
+        "resumen interno",
+        "filtrado selectivo"
+      ],
+      "correct": 1,
+      "hint": "Precede a la fase de confirmación externa.",
+      "explanation": "Antes de confirmar, el receptor debe organizar mentalmente lo comprendido."
+    },
+    {
+      "q": "El obstáculo de la escucha activa denominado ____ consiste en hacer creer al otro que se escucha sin prestar atención real.",
+      "options": [
+        "esfuerzo físico",
+        "pseudoescucha",
+        "filtro de interés"
+      ],
+      "correct": 0,
+      "hint": "Solo se destina información no verbal de asentimiento.",
+      "explanation": "Realizar solo esfuerzo físico es una barrera donde se finge la atención sin procesamiento mental."
+    },
+    {
+      "q": "En los grupos formales, la comunicación ____ se produce cuando la información fluye del líder hacia los subordinados.",
+      "options": [
+        "vertical ascendente",
+        "horizontal directa",
+        "vertical descendente"
+      ],
+      "correct": 2,
+      "hint": "Es típica de modelos de funcionamiento autoritario.",
+      "explanation": "La comunicación vertical descendente parte del líder hacia los niveles inferiores."
+    },
+    {
+      "q": "El modelo ____ de comunicación grupal favorece la apertura, la innovación y las interacciones horizontales.",
+      "options": [
+        "participativo",
+        "democrático",
+        "descentralizado"
+      ],
+      "correct": 0,
+      "hint": "Se caracteriza por la descentralización del poder.",
+      "explanation": "El modelo participativo permite que la comunicación fluya en todas las direcciones y niveles."
+    },
+    {
+      "q": "Para realizar una crítica asertiva, el segundo paso consiste en ____ de forma clara.",
+      "options": [
+        "pedir disculpas",
+        "describir la situación",
+        "atacar la conducta"
+      ],
+      "correct": 1,
+      "hint": "Debe centrarse en el hecho que resulta incómodo.",
+      "explanation": "La descripción clara de la situación es fundamental para que el otro entienda el motivo de la crítica."
+    },
+    {
+      "q": "Al expresar una opinión distinta, una técnica asertiva es reconocer que la otra persona tiene ____ antes de dar la propia.",
+      "options": [
+        "parte de razón",
+        "toda la culpa",
+        "poca formación"
+      ],
+      "correct": 0,
+      "hint": "Valida la postura ajena para reducir la defensividad.",
+      "explanation": "Reconocer parte de razón facilita que el otro escuche nuestra discrepancia sin conflicto."
+    },
+    {
+      "q": "La habilidad para ____ consiste en reducir a pocas palabras lo esencial de la información proporcionada por el emisor.",
+      "options": [
+        "resumir",
+        "parafrasear",
+        "codificar"
+      ],
+      "correct": 0,
+      "hint": "Suele introducirse con frases como 'Si no he entendido mal...'.",
+      "explanation": "Resumir es una técnica de escucha activa que demuestra comprensión y ayuda a clarificar."
+    },
+    {
+      "q": "La comunicación interpersonal implica un intercambio de mensajes con ____ entre dos o más personas.",
+      "options": [
+        "objetivos vagos",
+        "códigos similares",
+        "canales opuestos"
+      ],
+      "correct": 1,
+      "hint": "Es necesario para que emisor y receptor se entiendan.",
+      "explanation": "Sin códigos compartidos (como el idioma), el proceso comunicativo resulta ineficaz."
+    },
+    {
+      "q": "En el proceso de comunicación, el ____ es la situación que determina cómo tiene lugar el intercambio de información.",
+      "options": [
+        "marco social",
+        "entorno físico",
+        "contexto"
+      ],
+      "correct": 2,
+      "hint": "No es lo mismo una calle que una conferencia académica.",
+      "explanation": "El contexto es el escenario total que define las normas y formas de la interacción."
+    },
+    {
+      "q": "El ____ es cualquier alteración que se produce durante la transmisión del mensaje, como el ruido del tráfico.",
+      "options": [
+        "ruido",
+        "filtro",
+        "sesgo"
+      ],
+      "correct": 0,
+      "hint": "Es un elemento externo que interfiere físicamente.",
+      "explanation": "El ruido se define como cualquier interferencia técnica o ambiental en el canal."
+    },
+    {
+      "q": "La ____ implica la devolución de información del receptor al emisor respecto al contenido e interpretación.",
+      "options": [
+        "retroalimentación",
+        "transmisión",
+        "decodificación"
+      ],
+      "correct": 0,
+      "hint": "Permite ajustar el mensaje y asegurar la comprensión.",
+      "explanation": "La retroalimentación (feedback) es el cierre del ciclo comunicativo que permite la bidireccionalidad."
+    },
+    {
+      "q": "El proceso de comunicación comienza necesariamente con ____ de transmitir una información o idea.",
+      "options": [
+        "la decodificación",
+        "la necesidad del emisor",
+        "la respuesta del receptor"
+      ],
+      "correct": 1,
+      "hint": "Es el punto de origen de cualquier acto comunicativo.",
+      "explanation": "Todo acto comunicativo parte de una motivación u objetivo interno del emisor."
+    },
+    {
+      "q": "Los errores de comunicación se producen cuando el emisor no es capaz de alcanzar los ____ propuestos.",
+      "options": [
+        "niveles de ruido",
+        "objetivos",
+        "canales de envío"
+      ],
+      "correct": 1,
+      "hint": "Se relaciona con la eficacia de la transmisión.",
+      "explanation": "Si el objetivo no se cumple, se considera que ha existido un error en alguna fase del proceso."
+    },
+    {
+      "q": "La impresión que causamos en los demás depende de la combinación de componentes verbales, ____ y no verbales.",
+      "options": [
+        "paraverbales",
+        "subliminales",
+        "emocionales"
+      ],
+      "correct": 0,
+      "hint": "Se refiere al tono, volumen y ritmo de la voz.",
+      "explanation": "Los componentes paraverbales son una de las tres patas de la conducta social efectiva."
+    },
+    {
+      "q": "A la hora de comunicar, el texto afirma que no parece tan importante lo que se dice, sino ____.",
+      "options": [
+        "a quién se dice",
+        "dónde se dice",
+        "cómo se dice"
+      ],
+      "correct": 2,
+      "hint": "Refuerza la importancia de los elementos no verbales.",
+      "explanation": "El 'cómo' (no verbal y paraverbal) suma hasta el 90% del impacto comunicativo."
+    },
+    {
+      "q": "Las barreras debidas al ____ incluyen ruidos, características físicas del lugar e interrupciones externas.",
+      "options": [
+        "entorno",
+        "contexto",
+        "proceso"
+      ],
+      "correct": 0,
+      "hint": "Son elementos ajenos a los sujetos que se comunican.",
+      "explanation": "El entorno agrupa las interferencias físicas y ambientales que dificultan la escucha."
+    },
+    {
+      "q": "La falta de habilidades de comunicación en el receptor puede llevar a una interpretación incorrecta por falta de ____.",
+      "options": [
+        "atención dividida",
+        "escucha activa",
+        "capacidad visual"
+      ],
+      "correct": 1,
+      "hint": "Es el elemento central para evitar barreras en el receptor.",
+      "explanation": "La escucha activa es la herramienta principal del receptor para asegurar una correcta interpretación."
+    },
+    {
+      "q": "En el estilo ____, la persona defiende sus derechos despreciando los derechos y opiniones de los demás.",
+      "options": [
+        "asertivo",
+        "agresivo",
+        "dominante"
+      ],
+      "correct": 1,
+      "hint": "Genera conflictos y suele tener consecuencias negativas.",
+      "explanation": "El estilo agresivo prioriza el 'yo' anulando la validez del interlocutor."
+    },
+    {
+      "q": "Para Petty y Cacioppo, la ____ es cualquier cambio intencionado en las actitudes tras un mensaje persuasivo.",
+      "options": [
+        "persuasión",
+        "influencia",
+        "comunicación"
+      ],
+      "correct": 0,
+      "hint": "Busca modificar creencias, actitudes o conductas.",
+      "explanation": "La persuasión se define técnicamente como el cambio actitudinal derivado de un mensaje intencional."
+    },
+    {
+      "q": "Los ____ permiten dar una respuesta rápida ante situaciones semejantes sin análisis profundo.",
+      "options": [
+        "esquemas mentales",
+        "heurísticos",
+        "procesos centrales"
+      ],
+      "correct": 1,
+      "hint": "Son atajos cognitivos que ahorran esfuerzo mental.",
+      "explanation": "Los heurísticos son reglas simples que usamos para decidir sin procesar toda la información."
+    },
+    {
+      "q": "En la comunicación grupal, el sistema ____ hace que toda la información pase necesariamente por el líder.",
+      "options": [
+        "centralizado",
+        "autoritario",
+        "vertical"
+      ],
+      "correct": 0,
+      "hint": "El jefe controla todo el flujo informativo del equipo.",
+      "explanation": "En sistemas centralizados, el líder actúa como nodo obligatorio de toda comunicación."
+    },
+    {
+      "q": "La habilidad para pedir confirmación se puede ejercitar con preguntas como '¿____ al pensar que...?'.",
+      "options": [
+        "Me equivoco",
+        "Estoy seguro",
+        "Tengo razón"
+      ],
+      "correct": 0,
+      "hint": "Busca que el otro se posicione sobre un argumento.",
+      "explanation": "Esta fórmula asertiva invita al otro a validar o corregir nuestra percepción."
+    },
+    {
+      "q": "La ansiedad es una barrera para la escucha activa porque cualquier ____ interfiere en la atención.",
+      "options": [
+        "excitación emocional",
+        "ruido externo",
+        "fallo cognitivo"
+      ],
+      "correct": 0,
+      "hint": "Requiere la práctica de técnicas de autocontrol.",
+      "explanation": "El estado emocional alterado bloquea la capacidad de procesar el mensaje del otro."
+    },
+    {
+      "q": "Según los elementos descritos en el proceso comunicativo de la Figura 3, ¿cuáles de los siguientes componentes son correctos?",
+      "options": [
+        "El mensaje se transmite a través de un canal utilizando un código.",
+        "El emisor tiene objetivos y el receptor tiene una intención concreta.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Analice tanto los elementos estructurales como los motivacionales de la figura.",
+      "explanation": "La figura 3 detalla que el mensaje requiere código y canal, y asocia objetivos al emisor e intención al receptor."
+    },
+    {
+      "q": "Respecto a los componentes conductuales de la habilidad social, se puede afirmar que:",
+      "options": [
+        "Los no verbales incluyen expresiones faciales, miradas y apariencia personal.",
+        "Los paraverbales abarcan el volumen, el tono, el timbre y la claridad de voz.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Recuerde la clasificación de elementos que no usan la palabra o que usan el aparato fonador.",
+      "explanation": "Tanto los gestos (no verbales) como las cualidades de la voz (paraverbales) están correctamente descritos."
+    },
+    {
+      "q": "Sobre las barreras de la comunicación debidas al receptor, el texto menciona que:",
+      "options": [
+        "La falta de feedback impide que el emisor aclare partes no comprendidas.",
+        "Prejuzgar un mensaje por falta de escucha activa constituye una barrera.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Considere las acciones u omisiones que dependen exclusivamente de quien recibe el mensaje.",
+      "explanation": "El receptor genera barreras tanto por no pedir aclaraciones como por emitir juicios precipitados."
+    },
+    {
+      "q": "En relación con los estilos de comunicación, es cierto que:",
+      "options": [
+        "El estilo agresivo suele generar conflictos al despreciar los derechos ajenos.",
+        "El estilo asertivo facilita la resolución de problemas y evita conflictos.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Compare las consecuencias sociales de imponerse frente a las de respetar.",
+      "explanation": "El texto contrapone las consecuencias negativas de la agresión con la eficacia de la asertividad."
+    },
+    {
+      "q": "Acerca de la variabilidad de los estilos de comunicación en una misma persona:",
+      "options": [
+        "Cada individuo puede poseer elementos definitorios de distintos estilos.",
+        "El estilo empleado puede depender de la situación o el contexto específico.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Considere si el estilo es una etiqueta fija o una conducta flexible según el texto.",
+      "explanation": "El manual aclara que no somos estilos puros y que el contexto modula nuestra forma de comunicarnos."
+    },
+    {
+      "q": "Sobre el procesamiento heurístico de la información persuasiva, se identifica que:",
+      "options": [
+        "Se utiliza frecuentemente ante una sobrecarga de información relevante.",
+        "Puede basarse en características como el atractivo de la persona que emite.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Piense en las condiciones que fuerzan el uso de atajos mentales rápidos.",
+      "explanation": "El modelo heurístico se activa por falta de tiempo, capacidad o por señales externas como el atractivo."
+    },
+    {
+      "q": "En el modelo de la probabilidad de elaboración de Petty y Cacioppo:",
+      "options": [
+        "La ruta central genera un cambio de actitud mucho más fuerte y duradero.",
+        "La ruta periférica se centra en elementos superficiales ajenos al mensaje.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Considere la profundidad del análisis en cada una de las dos vías propuestas.",
+      "explanation": "El modelo describe la persistencia de la ruta central frente a la superficialidad de la periférica."
+    },
+    {
+      "q": "En cuanto a las variables del emisor que inciden en la persuasión, el texto destaca:",
+      "options": [
+        "El poder se define como la capacidad de establecer castigos o recompensas.",
+        "El atractivo físico o la similitud percibida aumentan la capacidad persuasiva.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Repase la Tabla 2 sobre las características de la fuente del mensaje.",
+      "explanation": "Tanto el poder coercitivo/remunerativo como el atractivo son variables clave de la fuente."
+    },
+    {
+      "q": "Sobre la estructura y el estilo del mensaje en la comunicación persuasiva:",
+      "options": [
+        "La repetición y el momento de presentación de los datos son fundamentales.",
+        "La fluidez en el habla influye directamente en la eficacia de la persuasión.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Busque elementos organizativos y conductuales dentro del mensaje mismo.",
+      "explanation": "La Tabla 2 confirma que la organización y la forma del habla son determinantes en el mensaje."
+    },
+    {
+      "q": "Las fases necesarias para que exista una verdadera escucha activa incluyen:",
+      "options": [
+        "Comprender el mensaje identificando señales verbales y paraverbales.",
+        "Concentrarse en la otra persona eliminando cualquier tipo de distracción.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Recuerde los pasos internos y externos que debe dar el receptor atento.",
+      "explanation": "La concentración y la interpretación multicanal son requisitos sine qua non de la escucha activa."
+    },
+    {
+      "q": "Entre los obstáculos que dificultan la escucha activa se encuentran:",
+      "options": [
+        "No permitir que el interlocutor termine de expresarse interrumpiéndole.",
+        "Prestar atención únicamente a la información que concuerda con gustos.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Identifique conductas que limitan la recepción íntegra del mensaje ajeno.",
+      "explanation": "La atención selectiva y la interrupción son barreras comunes descritas en el capítulo."
+    },
+    {
+      "q": "Acerca de la comunicación en grupos autoritarios o centralizados:",
+      "options": [
+        "La información suele ser vertical descendente, del líder a subordinados.",
+        "El líder controla el proceso y la información que se transmite al grupo.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Piense en cómo fluye el poder y el dato en una estructura jerárquica rígida.",
+      "explanation": "En modelos autoritarios, el flujo es descendente y el control del mensaje es total por el líder."
+    },
+    {
+      "q": "Respecto a las bondades del trabajo en grupo mencionadas en el texto:",
+      "options": [
+        "Permite proponer diferentes alternativas creativas para resolver problemas.",
+        "Favorece la coordinación entre miembros para conseguir un objetivo común.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Considere los efectos positivos de la interacción de varias personas hacia una meta.",
+      "explanation": "El grupo potencia la creatividad y la sinergia operativa según el apartado 3.6."
+    },
+    {
+      "q": "Los pasos para formular una crítica de manera asertiva incluyen:",
+      "options": [
+        "Expresar los sentimientos que suscita el problema de forma específica.",
+        "Agradecer la atención prestada tras proponer alternativas de cambio.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Repase el protocolo de cuatro pasos para comunicar una molestia con éxito.",
+      "explanation": "La expresión de sentimientos y el agradecimiento final son hitos del proceso de crítica asertiva."
+    },
+    {
+      "q": "Para expresar una opinión distinta de forma asertiva se recomienda:",
+      "options": [
+        "Utilizar frases como 'Es verdad lo que dices, pero, aun así...'.",
+        "Practicar la escucha activa para referenciar lo dicho por la otra persona.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Piense en fórmulas que validen al otro antes de introducir la discrepancia.",
+      "explanation": "La validación parcial y la referencia al discurso ajeno son tácticas de asertividad eficaces."
+    },
+    {
+      "q": "Sobre el canal en la comunicación persuasiva, el texto indica que:",
+      "options": [
+        "Los medios audiovisuales favorecen el entendimiento por ser bicanal.",
+        "Los medios impresos suelen mejorar la comprensión profunda del mensaje.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Diferencie el impacto de la lectura frente al impacto de ver y oír a la vez.",
+      "explanation": "La Tabla 2 distingue las ventajas de comprensión del papel frente al alcance del audiovisual."
+    },
+    {
+      "q": "En el proceso de comunicación, la codificación realizada por el emisor implica:",
+      "options": [
+        "Adaptar las ideas a un código concreto y compartido por el receptor.",
+        "Tener claros los objetivos que se pretenden alcanzar con la información.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Piense en las tareas previas que debe realizar el emisor antes de hablar.",
+      "explanation": "La codificación requiere claridad de metas y ajuste al lenguaje que el otro comprende."
+    },
+    {
+      "q": "Las barreras del entorno para la escucha activa pueden ser:",
+      "options": [
+        "Factores físicos como el cansancio mental o físico del propio receptor.",
+        "Interferencias ambientales como el calor excesivo o mala iluminación.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Considere tanto el espacio físico como el estado biológico del sujeto.",
+      "explanation": "El apartado 3.5 incluye tanto el ruido ambiental como el cansancio personal en este grupo."
+    },
+    {
+      "q": "En el contexto de la comunicación interpersonal, el silencio del interlocutor:",
+      "options": [
+        "Es un indicador absoluto de la ausencia total de comunicación efectiva.",
+        "Carece de carga informativa al no existir intercambio de códigos verbales.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Recuerde el axioma de que 'es imposible no comunicarse'.",
+      "explanation": "El silencio también comunica y manda un mensaje, por lo que las opciones anteriores son falsas."
+    },
+    {
+      "q": "Durante el proceso comunicativo, los roles de emisor y receptor son:",
+      "options": [
+        "Estáticos e inamovibles durante toda la duración de la interacción social.",
+        "Independientes del contexto y no requieren presencia física obligatoria.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Piense en la naturaleza dinámica y el intercambio constante de papeles.",
+      "explanation": "Los roles se intercambian dinámicamente; no son estáticos ni independientes del flujo conversacional."
+    },
+    {
+      "q": "El sesgo de conocimiento se produce fundamentalmente porque el emisor:",
+      "options": [
+        "Tiene la intención deliberada de manipular la realidad para el receptor.",
+        "Utiliza componentes no verbales incongruentes con su discurso verbal.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se relaciona con la veracidad percibida y la formación, no con la voluntad.",
+      "explanation": "El sesgo de conocimiento es falta de formación sin ánimo de engaño, invalidando las opciones de manipulación."
+    },
+    {
+      "q": "En el error de transmisión, el receptor categoriza negativamente al emisor debido a:",
+      "options": [
+        "Su evidente falta de actualización en los contenidos técnicos del mensaje.",
+        "La dificultad para decodificar un código excesivamente complejo y técnico.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Busque el factor 'ánimo de engaño' y exactitud de la versión.",
+      "explanation": "Se produce por la creencia de engaño voluntario, no por falta de actualización o complejidad técnica."
+    },
+    {
+      "q": "Las barreras debidas al emisor en la comunicación se relacionan con:",
+      "options": [
+        "La falta de atención activa y la interpretación incorrecta del receptor.",
+        "La presencia de ruidos ambientales como el tráfico o llamadas telefónicas.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Identifique las barreras que se originan exclusivamente en la fuente.",
+      "explanation": "Las opciones describen barreras del receptor o del entorno, no del emisor."
+    },
+    {
+      "q": "El estilo de comunicación inhibido se caracteriza principalmente por:",
+      "options": [
+        "El desprecio hacia los derechos ajenos para imponer la opinión propia.",
+        "La capacidad de decir 'no' de forma asertiva ante demandas del grupo.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Piense en la sumisión frente a las necesidades de los demás.",
+      "explanation": "Se caracteriza por anteponer deseos ajenos y no saber decir no, lo opuesto a las opciones dadas."
+    },
+    {
+      "q": "El modelo heurístico de persuasión estipula que el cambio de actitud ocurre:",
+      "options": [
+        "Tras un análisis exhaustivo de los pros y contras de cada alternativa.",
+        "Mediante una elaboración cognitiva consciente, deliberada y sistemática.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Este modelo se basa en procesos automáticos y superficiales.",
+      "explanation": "Las opciones describen el modelo de respuesta cognitiva o ruta central, no el heurístico."
+    },
+    {
+      "q": "Respecto a la ruta periférica en el modelo de probabilidad de elaboración:",
+      "options": [
+        "Requiere una alta motivación y gran capacidad por parte del receptor.",
+        "Produce cambios de actitud que son extremadamente fuertes y duraderos.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Esta ruta es la vía rápida y superficial de procesamiento.",
+      "explanation": "La ruta periférica requiere poca capacidad y genera cambios débiles, invalidando las opciones."
+    },
+    {
+      "q": "En la Tabla 2, se indica que una persona con baja inteligencia suele ser:",
+      "options": [
+        "Más crítica con la aceptación del mensaje y difícil de persuadir.",
+        "Capaz de comprender fácilmente mensajes con estructuras muy complejas.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "La inteligencia alta es la que permite ser crítico, según el texto.",
+      "explanation": "Es la alta inteligencia la que otorga mayor resistencia crítica, no la baja."
+    },
+    {
+      "q": "La fase de 'confirmación' dentro de la escucha activa consiste en:",
+      "options": [
+        "Ignorar las señales no verbales para centrarse solo en el contenido.",
+        "Resumir internamente el mensaje sin emitir respuesta hacia el emisor.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Busque la interacción final que asegura que el mensaje fue bien recibido.",
+      "explanation": "Consiste en verificar con el emisor que lo entendido es correcto, no en ignorar o callar."
+    },
+    {
+      "q": "El obstáculo de la escucha activa 'no permitir expresarse' se produce cuando:",
+      "options": [
+        "El receptor respeta estrictamente los tiempos de interlocución ajenos.",
+        "El receptor utiliza técnicas de autocontrol para reducir su nivel de ansiedad.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Identifique la conducta de interrumpir o adivinar el final de la frase.",
+      "explanation": "Se produce por interrupciones o adivinación de pensamientos, conductas no descritas en las opciones."
+    },
+    {
+      "q": "En el modelo de funcionamiento autoritario de un grupo, la comunicación es:",
+      "options": [
+        "Principalmente horizontal entre todos los miembros de igual rango.",
+        "Descentralizada, permitiendo que la información fluya sin pasar por el jefe.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Piense en la centralización y la jerarquía vertical típica del modelo.",
+      "explanation": "Es vertical y centralizada; las opciones describen modelos participativos u horizontales."
+    },
+    {
+      "q": "Para pedir que otra persona confirme su desacuerdo asertivamente, se debe:",
+      "options": [
+        "Imponer el argumento propio como la única verdad válida y aceptable.",
+        "Utilizar preguntas cerradas que obliguen al otro a pedir disculpas.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se deben usar preguntas de alternativa para que el otro se posicione.",
+      "explanation": "Se usan preguntas abiertas de posicionamiento respetuoso, no imposiciones ni coacciones."
+    },
+    {
+      "q": "El tercer paso para formular una crítica de manera asertiva implica:",
+      "options": [
+        "Ocultar los sentimientos personales para no mostrar debilidad al otro.",
+        "Atacar directamente la personalidad del emisor para lograr el cambio.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Recuerde la expresión de sentimientos y la propuesta de alternativas.",
+      "explanation": "Implica expresar sentimientos y sugerir cambios, no ocultar ni atacar la personalidad."
+    },
+    {
+      "q": "Un sistema de comunicación descentralizado en una organización favorece:",
+      "options": [
+        "El control estricto de toda la información por parte de un único líder.",
+        "La pérdida masiva de información debido a la ausencia de jerarquías.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Este sistema se asocia al modelo participativo y la innovación.",
+      "explanation": "Favorece la apertura e implicación, no el control del líder ni necesariamente la pérdida de datos."
+    },
+    {
+      "q": "La escucha activa como habilidad profesional se define principalmente por:",
+      "options": [
+        "La capacidad de realizar únicamente esfuerzo físico durante la charla.",
+        "La evitación sistemática de la retroalimentación para no interrumpir.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Implica esfuerzo físico y mental junto con retroalimentación constante.",
+      "explanation": "Requiere ambos esfuerzos (físico/mental) y feedback, lo opuesto a las opciones."
+    },
+    {
+      "q": "En la comunicación persuasiva, el componente verbal tiene un peso de:",
+      "options": [
+        "Entre el 40% y el 50% del impacto total de la intención comunicativa.",
+        "Casi el 90% de la importancia absoluta en el cambio de actitudes reales.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "El peso del componente verbal es el menor de los tres grupos.",
+      "explanation": "El peso verbal es de solo 10-20%; las opciones sobreestiman enormemente su impacto."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "Explique la complejidad de la comunicación interpersonal partiendo de la premisa de que es una necesidad básica e intrínseca al ser humano.",
+      "model": "La comunicación se define como una necesidad básica para la supervivencia y una característica intrínseca humana. Es un proceso complejo de intercambio de mensajes entre dos o más personas que utilizan códigos similares para comprenderse e influirse. Destaca que la comunicación ocurre incluso en ausencia de palabras (silencio) y requiere un canal concreto para el intercambio de información, involucrando elementos dinámicos que garantizan su efectividad.",
+      "keywords": [
+        "necesidad básica",
+        "intercambio de mensajes",
+        "influencia",
+        "supervivencia"
+      ]
+    },
+    {
+      "q": "Analice la dinámica de intercambio de roles entre emisor y receptor y cómo la presencialidad afecta este proceso.",
+      "model": "El emisor inicia el acto y el receptor lo recibe, pero en una comunicación efectiva los roles se intercambian indefinidamente (bidireccionalidad). No es necesaria la presencia física (ej. chat o teléfono) ni la inmediatez (ej. correo electrónico). El proceso es dinámico y la efectividad depende de que ambos actores asuman activamente su rol en cada fase del intercambio.",
+      "keywords": [
+        "intercambio de roles",
+        "bidireccionalidad",
+        "presencialidad",
+        "sincronía"
+      ]
+    },
+    {
+      "q": "Describa la importancia del 'código' y el 'canal' en la efectividad del mensaje comunicativo.",
+      "model": "El código es el conjunto de claves, imágenes, lenguaje y normas usados para transmitir ideas; para que haya efectividad, ambos actores deben compartirlo o tener un traductor. El canal es el medio físico (oral-auditivo o gráfico-visual) que transporta el mensaje. La elección de ambos depende críticamente del contexto o situación en la que se produzca la interacción.",
+      "keywords": [
+        "código compartido",
+        "canal",
+        "oral-auditivo",
+        "gráfico-visual"
+      ]
+    },
+    {
+      "q": "Diferencie conceptualmente entre 'ruido' y 'filtros' como elementos que interfieren en la comunicación.",
+      "model": "El ruido se refiere a alteraciones físicas externas durante la transmisión (ej. tráfico) que impiden la recepción correcta. Los filtros son barreras mentales internas (prejuicios, valores, experiencias, expectativas) tanto del emisor como del receptor que intervienen en la interpretación del mensaje. Mientras el ruido es ambiental, los filtros son psicológicos.",
+      "keywords": [
+        "ruido",
+        "filtros",
+        "barreras mentales",
+        "alteración externa"
+      ]
+    },
+    {
+      "q": "Sintetice las etapas del proceso de comunicación desde la codificación hasta la retroalimentación.",
+      "model": "El proceso comienza con el emisor identificando objetivos y codificando la idea. Sigue la transmisión del mensaje por un canal. El receptor recibe y decodifica la información usando sus filtros mentales para interpretar la intención. Finalmente, se produce la retroalimentación (feedback) donde el receptor devuelve información, permitiendo el intercambio de roles.",
+      "keywords": [
+        "codificación",
+        "transmisión",
+        "decodificación",
+        "retroalimentación"
+      ]
+    },
+    {
+      "q": "Compare el 'sesgo de conocimiento' con el 'error de transmisión' en cuanto a su origen y percepción por el receptor.",
+      "model": "El sesgo de conocimiento ocurre cuando el receptor cree que el emisor no tiene información verídica por falta de formación o actualización; se centra en 'qué se dice' y no implica intención de engaño. El error de transmisión es más grave: el receptor cree que el emisor deforma la realidad con ánimo de engañar; se centra en 'cómo se dice' y daña la credibilidad e imagen del emisor.",
+      "keywords": [
+        "sesgo de conocimiento",
+        "error de transmisión",
+        "ánimo de engaño",
+        "credibilidad"
+      ]
+    },
+    {
+      "q": "Explique el peso relativo de los componentes conductuales (verbal, no verbal y paraverbal) en la generación de impresiones.",
+      "model": "La eficacia comunicativa y la intención percibida dependen de tres componentes: verbal (contenido, 10-20% de peso), no verbal (gestos, mirada, apariencia, 40-50%) y paraverbal (tono, volumen, fluidez, 40-50%). Esto demuestra que en la comunicación social es más relevante 'cómo se dice' que 'qué se dice' para causar una impresión determinada.",
+      "keywords": [
+        "componentes conductuales",
+        "no verbal",
+        "paraverbal",
+        "peso porcentual"
+      ]
+    },
+    {
+      "q": "Identifique las barreras de comunicación debidas al receptor y cómo estas afectan la escucha activa.",
+      "model": "Incluyen la falta de habilidad para elaborar el mensaje, el uso de filtros personales, la ausencia de feedback (no pedir aclaraciones) y, especialmente, prejuiciar el mensaje o no prestar atención, lo que deriva en una falta de escucha activa. Estas barreras impiden que el receptor interprete correctamente la intención original del emisor.",
+      "keywords": [
+        "barreras del receptor",
+        "falta de feedback",
+        "prejuicios",
+        "escucha activa"
+      ]
+    },
+    {
+      "q": "Analice las características del estilo de comunicación inhibido y sus consecuencias en la resolución de conflictos.",
+      "model": "El estilo inhibido se caracteriza por anteponer deseos y opiniones ajenas a las propias, incapacidad para decir 'no' o defender derechos y una tendencia marcada a evitar conflictos. El sujeto busca satisfacer a los demás por encima de sus necesidades, lo que impide una resolución efectiva y honesta de las diferencias interpersonales.",
+      "keywords": [
+        "estilo inhibido",
+        "evitación",
+        "sumisión",
+        "derechos propios"
+      ]
+    },
+    {
+      "q": "Contraste el estilo agresivo con el asertivo en términos de respeto a los derechos y efectividad relacional.",
+      "model": "El estilo agresivo defiende los derechos propios despreciando los ajenos, buscando dominio y generando conflictos negativos. El estilo asertivo implica expresar ideas y necesidades directamente pero respetando siempre al interlocutor. Mientras el agresivo destruye relaciones, el asertivo facilita la resolución de problemas y evita que surjan conflictos innecesarios.",
+      "keywords": [
+        "estilo agresivo",
+        "estilo asertivo",
+        "respeto",
+        "dominio"
+      ]
+    },
+    {
+      "q": "Argumente por qué los estilos de comunicación no son categorías estancas o puras en un individuo.",
+      "model": "Aunque existen definiciones claras, las personas suelen incorporar elementos de los tres estilos (inhibido, agresivo, asertivo) dependiendo de la situación o el contexto. Existe un estilo predominante o habitual, pero la flexibilidad conductual permite que un individuo varíe su forma de interactuar según con quién y en qué circunstancias se encuentre.",
+      "keywords": [
+        "flexibilidad",
+        "contexto",
+        "estilo predominante",
+        "interacción"
+      ]
+    },
+    {
+      "q": "Defina la comunicación persuasiva y el concepto de cambio de actitud según Petty y Cacioppo.",
+      "model": "La comunicación persuasiva es un proceso de influencia social cuyo fin es lograr un cambio en las creencias, actitudes o conductas del receptor. Para Petty y Cacioppo, la persuasión es cualquier cambio intencionado en las actitudes de las personas tras ser expuestas a un mensaje diseñado para tal fin.",
+      "keywords": [
+        "persuasión",
+        "influencia social",
+        "cambio de actitud",
+        "intencionalidad"
+      ]
+    },
+    {
+      "q": "Explique el funcionamiento del Modelo de Respuesta Cognitiva de Greenwald en el proceso de persuasión.",
+      "model": "Este modelo propone que el cambio de actitud resulta de un procesamiento sistemático y consciente. El receptor tiene un rol activo: compara el mensaje con sus conocimientos, sentimientos y actitudes previas. Si los pensamientos generados internamente por el receptor concuerdan con el mensaje recibido, la persuasión es efectiva y se produce el cambio de actitud.",
+      "keywords": [
+        "procesamiento sistemático",
+        "elaboración cognitiva",
+        "rol activo",
+        "concordancia"
+      ]
+    },
+    {
+      "q": "Describa el Modelo Heurístico de persuasión y en qué condiciones es más probable que se utilice.",
+      "model": "Ocurre cuando el receptor no tiene interés, tiempo o capacidad (conocimientos) para analizar profundamente el mensaje. Se basa en un procesamiento automático mediante 'atajos de decisión' o heurísticos (ej. comprar algo porque el vendedor es atractivo). Aquí el contenido es secundario frente a características superficiales de la fuente o el mensaje.",
+      "keywords": [
+        "heurísticos",
+        "procesamiento automático",
+        "atajos",
+        "baja capacidad"
+      ]
+    },
+    {
+      "q": "Compare las rutas 'central' y 'periférica' del Modelo de la Probabilidad de Elaboración (ELM).",
+      "model": "La ruta central implica una elaboración activa, crítica y consciente de los argumentos, generando cambios fuertes y duraderos. La ruta periférica implica un procesamiento rápido y superficial basado en elementos externos al mensaje, generando cambios más débiles. La elección depende de la motivación (esfuerzo mental) y la capacidad (oportunidad) del receptor.",
+      "keywords": [
+        "ruta central",
+        "ruta periférica",
+        "motivación",
+        "durabilidad"
+      ]
+    },
+    {
+      "q": "Analice cómo la credibilidad, el atractivo y el poder del emisor influyen en la capacidad persuasiva.",
+      "model": "La credibilidad (competencia percibida) aumenta la aceptación del mensaje. El atractivo (físico o similitud) facilita que el receptor se identifique y ceda. El poder es la capacidad percibida del emisor para administrar premios o castigos. Estos tres factores actúan como variables de la fuente que pueden determinar el éxito del cambio de actitud.",
+      "keywords": [
+        "credibilidad",
+        "atractivo",
+        "poder",
+        "fuente"
+      ]
+    },
+    {
+      "q": "Relacione la inteligencia y la autoestima del receptor con su resistencia a la persuasión.",
+      "model": "Las personas más inteligentes comprenden mejor el mensaje pero son más críticas, resistiéndose más a ser convencidas. Las personas con alta autoestima reciben bien el mensaje pero, al confiar en sus propios criterios, son más difíciles de persuadir que aquellas con baja autoestima, quienes se dejan llevar más fácilmente por los demás.",
+      "keywords": [
+        "inteligencia",
+        "autoestima",
+        "resistencia",
+        "crítica"
+      ]
+    },
+    {
+      "q": "Evalúe las ventajas del canal impreso frente al audiovisual en la comunicación persuasiva.",
+      "model": "Los medios impresos favorecen la comprensión profunda de los mensajes debido a que permiten un ritmo de lectura controlado. Los audiovisuales alcanzan a poblaciones más amplias y diversas, y facilitan el entendimiento al utilizar simultáneamente dos sentidos (vista y oído), lo que refuerza el impacto emocional y la claridad.",
+      "keywords": [
+        "canal impreso",
+        "audiovisual",
+        "comprensión",
+        "impacto"
+      ]
+    },
+    {
+      "q": "Defina la escucha activa y explique por qué requiere un esfuerzo tanto físico como mental.",
+      "model": "Es el esfuerzo de prestar atención a la totalidad del mensaje (verbal, no verbal y paraverbal), interpretando su significado correcto y dando feedback. El esfuerzo físico implica mostrar señales de atención (mirada, postura). El esfuerzo mental requiere concentración absoluta, comprensión de la intención, síntesis interna y validación con el interlocutor.",
+      "keywords": [
+        "escucha activa",
+        "esfuerzo mental",
+        "feedback",
+        "atención total"
+      ]
+    },
+    {
+      "q": "Detalle las cuatro fases necesarias para que se produzca el esfuerzo mental en la escucha activa.",
+      "model": "1) Concentración en la otra persona sin distracciones. 2) Comprensión del mensaje identificando intenciones mediante señales multimodales. 3) Resumen interno de la información recibida. 4) Confirmación con el emisor de que lo entendido coincide con lo que él quería transmitir realmente.",
+      "keywords": [
+        "concentración",
+        "comprensión",
+        "resumen",
+        "confirmación"
+      ]
+    },
+    {
+      "q": "Analice los obstáculos de la escucha activa relacionados con la atención selectiva y el esfuerzo físico ficticio.",
+      "model": "La atención selectiva ocurre cuando nos centramos solo en lo que nos interesa por economía de tiempo, ignorando datos clave. El esfuerzo físico ficticio consiste en simular escucha (usando señales verbales/gestuales) sin que haya un procesamiento real del mensaje ni atención mental, lo que engaña al interlocutor y rompe la comunicación.",
+      "keywords": [
+        "atención selectiva",
+        "esfuerzo ficticio",
+        "simulación",
+        "procesamiento"
+      ]
+    },
+    {
+      "q": "Explique cómo la ansiedad y las barreras del entorno interfieren en la capacidad de escucha.",
+      "model": "La ansiedad genera una excitación emocional que distrae al receptor de la tarea de escuchar, requiriendo técnicas de autocontrol. Las barreras del entorno (calor, ruido, luz) o del propio receptor (cansancio físico o mental) agotan los recursos necesarios para mantener la concentración exigida por la escucha activa.",
+      "keywords": [
+        "ansiedad",
+        "entorno",
+        "cansancio",
+        "autocontrol"
+      ]
+    },
+    {
+      "q": "Compare la comunicación vertical (ascendente y descendente) con la horizontal en grupos formales.",
+      "model": "La vertical descendente va del líder a subordinados (instrucciones); la ascendente va de subordinados al líder (informes, quejas). Ambas suelen darse en modelos autoritarios y centralizados. La horizontal ocurre entre miembros del mismo rango, facilitando la coordinación y el apoyo socioemocional sin la rigidez de la jerarquía.",
+      "keywords": [
+        "comunicación vertical",
+        "comunicación horizontal",
+        "jerarquía",
+        "coordinación"
+      ]
+    },
+    {
+      "q": "Discuta las ventajas y desventajas del modelo de comunicación centralizado frente al participativo en un grupo.",
+      "model": "El modelo centralizado es eficaz para objetivos inmediatos y claros, pero pierde información y el líder controla todo. El modelo participativo es descentralizado, fomenta la innovación, apertura e implicación de los miembros en los objetivos, aunque puede presentar dificultades si los objetivos de diferentes subgrupos entran en contradicción.",
+      "keywords": [
+        "centralizado",
+        "participativo",
+        "innovación",
+        "eficacia"
+      ]
+    },
+    {
+      "q": "Enumere y explique los cuatro pasos del protocolo asertivo para formular una crítica.",
+      "model": "1) Clarificar el objetivo de la crítica. 2) Describir la situación incómoda con claridad y el cambio deseado. 3) Expresar los sentimientos que suscita el problema y sugerir alternativas de conducta. 4) Agradecer la atención y la disposición del otro para valorar las propuestas de cambio.",
+      "keywords": [
+        "crítica asertiva",
+        "objetivo",
+        "sentimientos",
+        "agradecimiento"
+      ]
+    },
+    {
+      "q": "Describa la técnica asertiva para expresar una opinión distinta dentro de un grupo sin generar conflicto.",
+      "model": "Consiste en iniciar la intervención validando parte de la razón del otro (escucha activa) y luego exponer la propia opinión. Se usan frases como 'Es verdad lo que dices, pero aun así me gustaría...' o 'Es cierto que... pero sigo opinando...'. Esto demuestra que se ha escuchado y respetado al otro antes de discrepar.",
+      "keywords": [
+        "opinión distinta",
+        "validación",
+        "discrepancia asertiva",
+        "respeto"
+      ]
+    },
+    {
+      "q": "Explique la utilidad de la habilidad para pedir confirmación o desacuerdo en una interacción grupal.",
+      "model": "Se utiliza para forzar a la otra persona a posicionarse sobre un argumento concreto mediante preguntas dicotómicas (¿Estoy en lo cierto al decir que...?). Ayuda a clarificar posturas, evitar malentendidos y asegurar que todos los miembros del grupo están en la misma página respecto a una decisión o información.",
+      "keywords": [
+        "confirmación",
+        "desacuerdo",
+        "posicionamiento",
+        "clarificación"
+      ]
+    },
+    {
+      "q": "Justifique por qué la habilidad de resumir es un componente fundamental de la escucha activa.",
+      "model": "Resumir permite reducir la información esencial a pocas palabras, demostrando al emisor que el receptor ha procesado el mensaje. Utiliza frases como 'Si no he entendido mal...' para validar la interpretación. Sirve para cerrar etapas de la comunicación y asegurar que no haya sesgos en la decodificación antes de proseguir.",
+      "keywords": [
+        "resumir",
+        "validación",
+        "esencial",
+        "comprensión"
+      ]
+    },
+    {
+      "q": "Analice la relación entre el manejo de habilidades sociales y el rendimiento de un grupo de trabajo.",
+      "model": "El rendimiento del grupo depende de la interacción interpersonal mediada por estilos de comunicación. El estilo asertivo es el más eficaz para resolver conflictos y problemas. Un buen manejo de habilidades (escucha, crítica constructiva, empatía) mejora la coordinación y reduce las interferencias en los objetivos comunes del grupo.",
+      "keywords": [
+        "habilidades sociales",
+        "rendimiento",
+        "estilo asertivo",
+        "coordinación"
+      ]
+    },
+    {
+      "q": "Sintetice el concepto de 'escucha activa' como un esfuerzo de colaboración con el emisor.",
+      "model": "Escuchar activamente significa adoptar una conducta de colaboración total con el emisor en su afán por comunicar. Implica dirigir todos los esfuerzos (físicos, mentales y sociales) para que el proceso comunicativo se complete sin interferencias ni barreras, asumiendo la responsabilidad compartida del entendimiento mutuo.",
+      "keywords": [
+        "colaboración",
+        "proceso completo",
+        "responsabilidad",
+        "entendimiento"
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Conceptos básicos",
+      "q": "¿Cómo se define la comunicación en el contexto de la interacción social según el texto?",
+      "a": "Es una necesidad básica para la supervivencia e intrínseca al ser humano que implica el intercambio de mensajes con códigos similares para comprenderse e influirse."
+    },
+    {
+      "cat": "Conceptos básicos",
+      "q": "¿Qué indica el texto sobre la intencionalidad en la comunicación interpersonal?",
+      "a": "Indica que todos nos comunicamos intencionalmente o no, incluso el silencio puede mandar un mensaje al interlocutor."
+    },
+    {
+      "cat": "Elementos de la comunicación",
+      "q": "¿Cuál es la función principal del emisor en el acto comunicativo?",
+      "a": "Es la persona que inicia el acto de comunicar transmitiendo una información o idea."
+    },
+    {
+      "cat": "Elementos de la comunicación",
+      "q": "¿Cómo se produce el intercambio de roles entre emisor y receptor?",
+      "a": "Se produce de forma dinámica durante el proceso, donde el emisor se convierte en receptor y viceversa en múltiples ocasiones."
+    },
+    {
+      "cat": "Elementos de la comunicación",
+      "q": "¿Es necesaria la presencia física del receptor para que exista comunicación?",
+      "a": "No, la comunicación puede darse a través de teléfono, chat o correo electrónico sin presencia física inmediata."
+    },
+    {
+      "cat": "Elementos de la comunicación",
+      "q": "¿Qué define al 'mensaje' dentro del proceso comunicativo?",
+      "a": "Es la información concreta que se transmite mediante códigos o claves para ser interpretada por el receptor."
+    },
+    {
+      "cat": "Elementos de la comunicación",
+      "q": "¿Qué requisito es indispensable respecto al 'código' para que la comunicación sea efectiva?",
+      "a": "Emisor y receptor deben compartir el mismo código (como el idioma) o utilizar una forma de traducirlo."
+    },
+    {
+      "cat": "Elementos de la comunicación",
+      "q": "¿Cuáles son los tipos de canales mencionados según el medio de transmisión?",
+      "a": "Puede ser oral-auditivo o gráfico-visual, dependiendo del contexto o la situación del intercambio."
+    },
+    {
+      "cat": "Elementos de la comunicación",
+      "q": "¿Cómo influye el 'contexto' en el acto comunicativo?",
+      "a": "Determina cómo tiene lugar el intercambio, diferenciando situaciones como una conferencia académica de un encuentro casual."
+    },
+    {
+      "cat": "Elementos de la comunicación",
+      "q": "¿A qué se refiere el término 'ruido' en la transmisión de un mensaje?",
+      "a": "A cualquier alteración física o ambiental que ocurre durante la transmisión y dificulta la recepción correcta."
+    },
+    {
+      "cat": "Elementos de la comunicación",
+      "q": "¿Qué son los 'filtros' y qué factores los originan?",
+      "a": "Son barreras mentales producto de valores, experiencias, esquemas mentales, prejuicios y expectativas de los actores."
+    },
+    {
+      "cat": "Elementos de la comunicación",
+      "q": "¿Qué función cumple la 'retroalimentación' o feedback?",
+      "a": "Implica la devolución de información del receptor al emisor sobre el contenido y la interpretación del mensaje."
+    },
+    {
+      "cat": "Proceso comunicativo",
+      "q": "¿Cuál es el primer paso en el proceso de comunicación antes de la codificación?",
+      "a": "La necesidad del emisor de transmitir una idea y tener claros los objetivos de la comunicación."
+    },
+    {
+      "cat": "Proceso comunicativo",
+      "q": "¿En qué consiste la etapa de 'codificación' realizada por el emisor?",
+      "a": "Consiste en adaptar las ideas o pensamientos a un código concreto y compartido para que el receptor pueda entenderlo."
+    },
+    {
+      "cat": "Proceso comunicativo",
+      "q": "¿Qué proceso interno realiza el receptor al recibir el mensaje?",
+      "a": "La decodificación de la información, donde intervienen sus esquemas mentales y filtros personales."
+    },
+    {
+      "cat": "Proceso comunicativo",
+      "q": "¿Qué genera el receptor tras el proceso de decodificación?",
+      "a": "Interpreta la intención del mensaje y genera una determinada impresión sobre él."
+    },
+    {
+      "cat": "Errores de la comunicación",
+      "q": "¿Qué caracteriza al 'sesgo o error de conocimiento'?",
+      "a": "El receptor cree que el conocimiento del emisor no es verídico debido a falta de formación o actualización, sin ánimo de engaño."
+    },
+    {
+      "cat": "Errores de la comunicación",
+      "q": "¿En qué se centra el error de conocimiento respecto al mensaje?",
+      "a": "Se centra específicamente en 'lo que se dice' (el contenido técnico o factual)."
+    },
+    {
+      "cat": "Errores de la comunicación",
+      "q": "¿Qué diferencia al 'error de transmisión' del error de conocimiento?",
+      "a": "En el de transmisión, el receptor cree que el emisor da una versión inexacta de la realidad con ánimo de engañar."
+    },
+    {
+      "cat": "Errores de la comunicación",
+      "q": "¿Por qué se considera más grave el error de transmisión?",
+      "a": "Porque favorece una categorización negativa del emisor y le hace perder su credibilidad ante el receptor."
+    },
+    {
+      "cat": "Errores de la comunicación",
+      "q": "¿En qué se enfoca el error de transmisión respecto a la información?",
+      "a": "Se centra en el 'cómo se dice', afectando la impresión e intención atribuida al emisor."
+    },
+    {
+      "cat": "Componentes conductuales",
+      "q": "¿Cuáles son los tres componentes conductuales que conforman la habilidad social?",
+      "a": "Componentes no verbales, paraverbales y verbales."
+    },
+    {
+      "cat": "Componentes conductuales",
+      "q": "¿Qué elementos se incluyen dentro de los componentes no verbales?",
+      "a": "Expresiones faciales, miradas, sonrisas, distancia física, apariencia personal y gestos."
+    },
+    {
+      "cat": "Componentes conductuales",
+      "q": "¿A qué se refieren los componentes paraverbales?",
+      "a": "A cómo se dicen las cosas (volumen, tono, timbre, fluidez, pausas) sin alterar el contenido verbal."
+    },
+    {
+      "cat": "Componentes conductuales",
+      "q": "¿Qué abarcan los componentes verbales?",
+      "a": "El uso de la palabra para transmitir el contenido del mensaje, las preguntas y la atención personal."
+    },
+    {
+      "cat": "Componentes conductuales",
+      "q": "¿Cuál es el peso porcentual de los elementos verbales en la comunicación según el texto?",
+      "a": "Tienen un peso bajo, situado entre el 10% y el 20%."
+    },
+    {
+      "cat": "Componentes conductuales",
+      "q": "¿Qué peso tienen los componentes no verbales y paraverbales combinados?",
+      "a": "Tienen un peso predominante, representando entre el 40% y el 50% cada uno del impacto total."
+    },
+    {
+      "cat": "Barreras de la comunicación",
+      "q": "¿Qué tipos de barreras debidas al entorno menciona van-der Hofstadt?",
+      "a": "Ruido externo (tráfico), características físicas inadecuadas del lugar e interrupciones (llamadas)."
+    },
+    {
+      "cat": "Barreras de la comunicación",
+      "q": "¿Cuándo se produce una barrera debida al emisor relacionada con el código?",
+      "a": "Cuando el código utilizado no es compartido, es ambiguo o resulta poco claro para el receptor."
+    },
+    {
+      "cat": "Barreras de la comunicación",
+      "q": "¿Qué barreras del emisor se relacionan con sus actitudes?",
+      "a": "Actitudes negativas hacia los elementos del proceso y el uso de filtros basados en estereotipos."
+    },
+    {
+      "cat": "Barreras de la comunicación",
+      "q": "¿Qué barrera específica del receptor se relaciona con la retroalimentación?",
+      "a": "La falta de feedback o no solicitar aclaraciones cuando partes del mensaje no se han comprendido."
+    },
+    {
+      "cat": "Barreras de la comunicación",
+      "q": "¿Con qué se asocia la interpretación incorrecta o falta de atención por parte del receptor?",
+      "a": "Se asocia directamente con la falta de una escucha activa."
+    },
+    {
+      "cat": "Estilos de comunicación",
+      "q": "¿Qué define el 'estilo de comunicación' de una persona?",
+      "a": "La forma particular en que cada individuo utiliza los componentes de sus habilidades sociales para relacionarse."
+    },
+    {
+      "cat": "Estilos de comunicación",
+      "q": "¿Cómo se comporta una persona con estilo inhibido o 'no asertivo'?",
+      "a": "Antepone los deseos de los demás a los propios, le cuesta decir 'no' y evita los conflictos."
+    },
+    {
+      "cat": "Estilos de comunicación",
+      "q": "¿Cuáles son las características del estilo de comunicación agresivo?",
+      "a": "Defensa de derechos propios despreciando los ajenos, actitud de dominio y generación frecuente de conflictos."
+    },
+    {
+      "cat": "Estilos de comunicación",
+      "q": "¿En qué consiste el estilo de comunicación asertivo?",
+      "a": "Capacidad de expresar ideas y necesidades directamente respetando siempre los derechos y opiniones de los demás."
+    },
+    {
+      "cat": "Estilos de comunicación",
+      "q": "¿Cuáles son las ventajas del estilo asertivo en las relaciones interpersonales?",
+      "a": "Evita conflictos innecesarios y facilita la resolución efectiva de problemas."
+    },
+    {
+      "cat": "Estilos de comunicación",
+      "q": "¿Son los estilos de comunicación categorías puras e inamovibles?",
+      "a": "No, las personas suelen tener un estilo predominante pero pueden incorporar elementos de otros según el contexto."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Cuál es el fin principal de la comunicación persuasiva?",
+      "a": "Lograr un cambio intencionado en las creencias, actitudes o conductas del receptor tras la exposición al mensaje."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Cómo explica el 'Modelo de respuesta cognitiva' el cambio de actitud?",
+      "a": "Como resultado de un procesamiento sistemático y deliberado donde el receptor compara el mensaje con sus conocimientos previos."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Bajo qué condiciones es más efectivo el Modelo de respuesta cognitiva?",
+      "a": "Cuando los pensamientos autogenerados por el receptor concuerdan con el mensaje recibido."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Cuándo es más probable que se produzca un 'procesamiento heurístico'?",
+      "a": "Cuando el receptor no tiene interés, capacidad o tiempo para analizar sistemáticamente la información."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Qué caracteriza al procesamiento en el modelo heurístico?",
+      "a": "Es automático, utiliza atajos de decisión y se basa en características aparentes de la fuente o el mensaje."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Quiénes propusieron el 'Modelo de la probabilidad de elaboración' (ELM)?",
+      "a": "Petty y Cacioppo en el año 1986."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Qué dos rutas propone el ELM para el cambio de actitudes?",
+      "a": "La ruta central y la ruta periférica."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Qué implica que un individuo siga la 'ruta central'?",
+      "a": "Un análisis crítico, profundo y consciente de los argumentos, evaluando pros y contras."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Cómo es el cambio de actitud logrado a través de la 'ruta periférica'?",
+      "a": "Es un cambio rápido y superficial, centrado en elementos externos y suele ser menos duradero."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿De qué dos variables principales depende el uso de la ruta central frente a la periférica?",
+      "a": "De la motivación del receptor por analizar el mensaje y de su capacidad u oportunidad para hacerlo."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Por qué existe una preponderancia de la ruta periférica en la vida cotidiana?",
+      "a": "Porque la ruta central requiere un mayor esfuerzo mental y capacidad cognitiva que no siempre se está dispuesto a dar."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Cómo influye la 'credibilidad' del emisor en la persuasión?",
+      "a": "A mayor competencia o habilidad atribuida al emisor, mayor es su capacidad para lograr un cambio de actitud."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Qué aspectos del emisor se consideran dentro de la variable 'atractivo'?",
+      "a": "Tanto el atractivo físico como la similitud percibida entre el emisor y el receptor."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Qué se entiende por 'poder' del emisor en el contexto persuasivo?",
+      "a": "La capacidad percibida del emisor para administrar castigos o recompensas al receptor."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Qué tipo de contenido del mensaje suele tener mayor capacidad persuasiva?",
+      "a": "Mensajes fáciles de entender, con pocos argumentos y que apelen a las emociones del interlocutor."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Qué aspectos de la 'estructura' del mensaje afectan a la persuasión?",
+      "a": "El momento en que se presenta la información y la repetición de los argumentos."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Cómo afecta la inteligencia del receptor a su susceptibilidad a la persuasión?",
+      "a": "Una persona muy inteligente comprende mejor el mensaje pero suele ser más crítica y resistente a su aceptación."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Cuál es la relación entre autoestima y persuasión?",
+      "a": "Las personas con alta autoestima reciben mejor el mensaje pero confían más en su criterio, resistiendo más que las de baja autoestima."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Qué ventaja ofrecen los medios audiovisuales como canal persuasivo?",
+      "a": "Favorecen el entendimiento al recibirse por dos sentidos (vista y oído) y alcanzan poblaciones más diversas."
+    },
+    {
+      "cat": "Escucha activa",
+      "q": "¿Cómo define van-der Hofstadt la 'escucha activa'?",
+      "a": "Como el esfuerzo físico y mental de querer escuchar con atención la totalidad del mensaje, interpretando su significado verbal y no verbal."
+    },
+    {
+      "cat": "Escucha activa",
+      "q": "¿Qué papel juega la retroalimentación en la escucha activa?",
+      "a": "Es esencial para indicarle al emisor lo que creemos que estamos entendiendo y confirmar la interpretación."
+    },
+    {
+      "cat": "Escucha activa",
+      "q": "¿Qué componentes deben combinarse para demostrar escucha activa al interlocutor?",
+      "a": "Componentes verbales (frases de apoyo), no verbales (mirada) y paraverbales."
+    },
+    {
+      "cat": "Escucha activa",
+      "q": "¿Cuáles son las cuatro fases necesarias para hablar de escucha activa según el receptor?",
+      "a": "1) Concentración, 2) Comprensión de intenciones, 3) Resumen interno y 4) Confirmación con el interlocutor."
+    },
+    {
+      "cat": "Escucha activa",
+      "q": "¿En qué consiste el obstáculo de 'prestar atención solo a lo que nos interesa'?",
+      "a": "En centrarse por economía de tiempo solo en información que concuerda con gustos, ignorando el resto del mensaje."
+    },
+    {
+      "cat": "Escucha activa",
+      "q": "¿Qué es el 'esfuerzo físico sin escucha activa'?",
+      "a": "Hacer creer al interlocutor que se escucha mediante señales externas (asentir) sin que exista un procesamiento mental del contenido."
+    },
+    {
+      "cat": "Escucha activa",
+      "q": "¿Cómo afectan los esquemas mentales a la escucha activa?",
+      "a": "Funcionan como filtros que facilitan valoraciones precipitadas del mensaje, dificultando la comprensión real."
+    },
+    {
+      "cat": "Escucha activa",
+      "q": "¿Por qué es un error 'no permitir expresarse' al emisor?",
+      "a": "Porque interrumpir o adivinar lo que dirá da a entender que no se está atendiendo y se pierde información crucial."
+    },
+    {
+      "cat": "Escucha activa",
+      "q": "¿Cómo influye la ansiedad en el proceso de escucha?",
+      "a": "Cualquier alteración emocional interfiere en la capacidad de procesar el mensaje, requiriendo técnicas de autocontrol."
+    },
+    {
+      "cat": "Escucha activa",
+      "q": "¿Qué barreras del receptor se mencionan específicamente en relación a la escucha?",
+      "a": "El cansancio físico o mental que impide mantener la concentración necesaria."
+    },
+    {
+      "cat": "Comunicación grupal",
+      "q": "¿Qué se entiende por 'comunicación en un grupo'?",
+      "a": "La forma en que las personas que interactúan para influirse mutuamente intercambian mensajes entre sí o con otros grupos."
+    },
+    {
+      "cat": "Comunicación grupal",
+      "q": "¿Qué caracteriza a la 'comunicación vertical descendente'?",
+      "a": "Es la información que parte del líder o jefe del grupo hacia los subordinados."
+    },
+    {
+      "cat": "Comunicación grupal",
+      "q": "¿Cuándo se habla de 'comunicación vertical ascendente'?",
+      "a": "Cuando el sentido de la información va de los subordinados hacia el jefe o líder."
+    },
+    {
+      "cat": "Comunicación grupal",
+      "q": "¿Con qué modelo de funcionamiento se asocia la comunicación centralizada?",
+      "a": "Con el modelo autoritario, donde el jefe controla toda la información y el proceso comunicativo."
+    },
+    {
+      "cat": "Comunicación grupal",
+      "q": "¿Cuál es el riesgo de un sistema de comunicación centralizado?",
+      "a": "Se tiende a perder información y puede dar lugar a procesos de influencia sesgados."
+    },
+    {
+      "cat": "Comunicación grupal",
+      "q": "¿Qué es la 'comunicación horizontal' en un grupo?",
+      "a": "Aquella que se produce entre miembros que tienen el mismo rango o nivel jerárquico."
+    },
+    {
+      "cat": "Comunicación grupal",
+      "q": "¿Qué define al 'modelo participativo' de comunicación?",
+      "a": "La descentralización del poder, favoreciendo interacciones en todas las direcciones y niveles."
+    },
+    {
+      "cat": "Comunicación grupal",
+      "q": "¿Qué beneficios aporta el modelo participativo a la organización?",
+      "a": "Favorece la apertura, la innovación y una mayor implicación de los miembros en los objetivos."
+    },
+    {
+      "cat": "Habilidades asertivas",
+      "q": "¿Qué estilo de comunicación es el más eficaz para la resolución de conflictos grupales?",
+      "a": "El estilo asertivo, debido a que utiliza habilidades sociales para mediar y expresar necesidades con respeto."
+    },
+    {
+      "cat": "Habilidades asertivas",
+      "q": "¿Cuál es el primer paso recomendado para formular una crítica de forma asertiva?",
+      "a": "Tener claro el interés y el objetivo concreto que se persigue al comunicar la crítica."
+    },
+    {
+      "cat": "Habilidades asertivas",
+      "q": "¿Qué debe hacerse tras describir la situación incómoda al hacer una crítica?",
+      "a": "Expresar los sentimientos que suscita el problema y sugerir posibles cambios de comportamiento."
+    },
+    {
+      "cat": "Habilidades asertivas",
+      "q": "¿Cómo debe finalizar una interacción de crítica asertiva?",
+      "a": "Agradeciendo la atención prestada y valorando las alternativas propuestas por la otra persona."
+    },
+    {
+      "cat": "Habilidades asertivas",
+      "q": "¿Cómo se puede expresar una opinión distinta de modo asertivo?",
+      "a": "Iniciando la interacción validando que la otra persona tiene parte de razón y luego exponiendo la opinión propia."
+    },
+    {
+      "cat": "Habilidades asertivas",
+      "q": "¿Qué importancia tiene la escucha activa al expresar desacuerdo?",
+      "a": "Permite hacer referencia exacta a lo dicho por el otro, demostrando que se ha atendido antes de disentir."
+    },
+    {
+      "cat": "Habilidades asertivas",
+      "q": "¿Qué técnica se utiliza para pedir a alguien que confirme su desacuerdo?",
+      "a": "Realizar preguntas cerradas sobre un argumento específico para que la persona se posicione claramente."
+    },
+    {
+      "cat": "Habilidades asertivas",
+      "q": "¿En qué consiste la 'habilidad para resumir'?",
+      "a": "En reducir a pocas palabras lo esencial de la información recibida para verificar la comprensión."
+    },
+    {
+      "cat": "Habilidades asertivas",
+      "q": "¿Qué frases introductorias se recomiendan para resumir asertivamente?",
+      "a": "Frases como 'Si no he entendido mal...' o 'Lo que me quieres decir es que...'."
+    },
+    {
+      "cat": "Habilidades asertivas",
+      "q": "¿Por qué se considera la escucha activa un componente fundamental de la asertividad?",
+      "a": "Porque es la mejor forma de superar las barreras del receptor y mostrar una conducta de colaboración real."
+    },
+    {
+      "cat": "Habilidades asertivas",
+      "q": "¿Qué implica 'escuchar activamente' como conducta profesional?",
+      "a": "Dirigir todos los esfuerzos a entender al otro, sin interferencias y mostrando interés genuino por la información."
+    },
+    {
+      "cat": "Conceptos básicos",
+      "q": "¿Por qué se dice que la comunicación es una característica intrínseca al ser humano?",
+      "a": "Porque es esencial para la supervivencia de la especie y ocurre en toda situación de interacción social."
+    },
+    {
+      "cat": "Elementos de la comunicación",
+      "q": "¿Cómo influye el 'objetivo' del emisor en el inicio del proceso?",
+      "a": "Es la guía que determina qué información se transmite y cómo se codifica el mensaje para ser efectivo."
+    },
+    {
+      "cat": "Elementos de la comunicación",
+      "q": "¿Qué papel juega la 'intención' del receptor al decodificar?",
+      "a": "Es la interpretación subjetiva que el receptor hace sobre el propósito real que tenía el emisor al hablar."
+    },
+    {
+      "cat": "Proceso comunicativo",
+      "q": "¿Qué sucede si el código no es compartido entre emisor y receptor?",
+      "a": "La comunicación fracasa ya que el receptor no podrá decodificar correctamente el mensaje del emisor."
+    },
+    {
+      "cat": "Componentes conductuales",
+      "q": "¿Qué relación existe entre los componentes conductuales y la impresión generada?",
+      "a": "La combinación de elementos verbales, no verbales y paraverbales determina la imagen que los demás se forman de nosotros."
+    },
+    {
+      "cat": "Estilos de comunicación",
+      "q": "¿Qué consecuencia social tiene habitualmente el estilo agresivo?",
+      "a": "Consecuencias negativas, ya que el desprecio por los derechos ajenos acaba generando conflictos interpersonales."
+    },
+    {
+      "cat": "Estilos de comunicación",
+      "q": "¿Cómo maneja los conflictos una persona con estilo inhibido?",
+      "a": "Su tendencia principal es la de evitarlos, sacrificando sus propios deseos para mantener la armonía externa."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Qué define a la persuasión como un proceso de 'influencia social'?",
+      "a": "Su objetivo de modificar de forma voluntaria e intencionada el estado mental o conductual de otra persona."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Qué es un 'heurístico' en el contexto de la persuasión?",
+      "a": "Un atajo mental que permite dar una respuesta rápida basándose en experiencias previas o señales superficiales."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Cuál es la principal diferencia entre la respuesta cognitiva y el modelo heurístico?",
+      "a": "La primera implica un esfuerzo consciente y sistemático; la segunda es automática y requiere mínimos recursos cognitivos."
+    },
+    {
+      "cat": "Comunicación persuasiva",
+      "q": "¿Qué determina que un cambio de actitud sea 'fuerte y duradero' según el ELM?",
+      "a": "Que el procesamiento se haya realizado a través de la ruta central con una alta elaboración del mensaje."
+    },
+    {
+      "cat": "Escucha activa",
+      "q": "¿Por qué la escucha activa se considera un 'esfuerzo físico'?",
+      "a": "Porque requiere una disposición corporal adecuada (mirada, postura) para captar todas las señales del emisor."
+    },
+    {
+      "cat": "Escucha activa",
+      "q": "¿Qué significa realizar un 'resumen interno' durante la escucha?",
+      "a": "Sintetizar mentalmente los puntos clave del emisor antes de responder para asegurar que se captó la esencia."
+    },
+    {
+      "cat": "Comunicación grupal",
+      "q": "¿Cómo afecta la jerarquía marcada a los flujos de información en un grupo?",
+      "a": "Suele centralizar la información en la figura del líder, limitando la comunicación horizontal y la participación."
+    }
+  ]
+}
