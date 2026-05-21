@@ -1,0 +1,2577 @@
+{
+  "quiz": [
+    {
+      "q": "Científicamente, es posible demostrar que una información almacenada ha desaparecido por completo de la memoria a largo plazo.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Considera la distinción entre accesibilidad y disponibilidad según el texto.",
+      "explanation": "El texto aclara que es imposible demostrar científicamente la desaparición total; el olvido se entiende como un fallo en el proceso de recuperación."
+    },
+    {
+      "q": "El olvido incidental se diferencia del motivado principalmente por la ausencia de intención consciente en el proceso de pérdida.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Piensa en el ejemplo de las llaves del coche frente al cambio de número de teléfono.",
+      "explanation": "El olvido incidental ocurre sin intención, mientras que el motivado implica un proceso voluntario para eliminar interferencias o recuerdos no deseados."
+    },
+    {
+      "q": "La teoría del decaimiento sostiene que el olvido es un proceso activo mediado por la actividad mental del sujeto durante el tiempo.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Revisa si el paso del tiempo se considera una variable activa o pasiva en esta teoría.",
+      "explanation": "La teoría del decaimiento asume que el olvido es un proceso pasivo producido exclusivamente por el paso del tiempo."
+    },
+    {
+      "q": "En la interferencia como degradación, la similitud entre la información nueva y la antigua es el factor determinante del olvido.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre problemas de almacenamiento y problemas de recuperación por claves.",
+      "explanation": "En la teoría de la degradación, el problema es de almacenamiento y la semejanza no es relevante; es en la sobrecarga de claves donde sí importa."
+    },
+    {
+      "q": "La interferencia retroactiva se manifiesta cuando el aprendizaje de una lista A-C empeora el recuerdo de una lista previa A-B.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Analiza la dirección de la interferencia: de lo nuevo hacia lo viejo.",
+      "explanation": "La interferencia retroactiva ocurre cuando las nuevas memorias interfieren con la recuperación de la información antigua similar."
+    },
+    {
+      "q": "La interferencia proactiva es más pronunciada cuando el intervalo de retención entre el aprendizaje y la prueba es muy corto.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Compara los efectos del intervalo de retención en la interferencia proactiva frente a la retroactiva.",
+      "explanation": "La interferencia proactiva se hace más pronunciada conforme aumenta el intervalo de retención, a diferencia de la retroactiva."
+    },
+    {
+      "q": "El efecto abanico de Anderson indica que el tiempo de reconocimiento disminuye a medida que asociamos más datos a un concepto.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Recuerda el experimento del bombero y las localizaciones asociadas.",
+      "explanation": "El efecto abanico demuestra que el tiempo de respuesta aumenta significativamente conforme aumenta la cantidad de información asociada a una clave."
+    },
+    {
+      "q": "Según Anderson (2007), la inhibición es un mecanismo externo que modifica el estado de excitación de la huella de forma irreversible.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Evalúa las cuatro características básicas del mecanismo inhibitorio citadas en el texto.",
+      "explanation": "Una de las características fundamentales de la inhibición es que los cambios producidos en la huella de memoria son reversibles."
+    },
+    {
+      "q": "La inhibición por utilizar parte del conjunto como claves demuestra que proporcionar algunas respuestas ayuda a recordar el resto.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Analiza los resultados del experimento de Slamecka con las hojas de palabras.",
+      "explanation": "El fenómeno de Slamecka muestra que presentar parte de las claves inhibe el recuerdo del resto del conjunto por competición."
+    },
+    {
+      "q": "El olvido inducido por la recuperación sugiere que el acto de recordar una información provoca activamente el olvido de competidores.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Considera el papel de la inhibición selectiva durante la búsqueda de información.",
+      "explanation": "La recuperación de una huella implica la inhibición de huellas no deseadas para reducir la interferencia, provocando su olvido."
+    },
+    {
+      "q": "En el paradigma pensar/no pensar, las instrucciones de suprimir un recuerdo no afectan a su recuperación posterior en una prueba con clave.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Revisa la Fase 3 del experimento de Anderson y Green (2001).",
+      "explanation": "Los resultados mostraron que el recuerdo de las palabras inhibidas voluntariamente fue significativamente inferior al grupo control."
+    },
+    {
+      "q": "Bartlett propuso que la memoria es una copia literal de los acontecimientos, rechazando la idea de reconstrucción activa del sujeto.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Relaciona a Bartlett con el concepto de 'esquemas' y construcción de memorias.",
+      "explanation": "Bartlett defendía que la memoria no es literal, sino que construimos los recuerdos, lo que da pie a la aparición de errores y falsas memorias."
+    },
+    {
+      "q": "El experimento de Loftus (1974) demostró que el uso de verbos como 'estrellar' induce estimaciones de velocidad más altas en testigos.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "explanation": "La forma en que se pregunta (sugestión) altera la recuperación de la información, incrementando la velocidad estimada según el verbo usado.",
+      "correct": 0,
+      "hint": "Piensa en el efecto del lenguaje sobre la reconstrucción del recuerdo de un accidente."
+    },
+    {
+      "q": "Las falsas memorias son un fenómeno exclusivo de poblaciones con patologías neurológicas o daños en la zona prefrontal del cerebro.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Observa si el texto califica este fenómeno como normal o patológico.",
+      "explanation": "El texto subraya que las falsas memorias son una característica del recuerdo de la población normal y no necesariamente patológica."
+    },
+    {
+      "q": "Los informes falsos espontáneos se deben a mecanismos endógenos propios del funcionamiento estándar del sistema de memoria.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Diferencia entre el origen interno y el origen externo (desinformación) de las falsas memorias.",
+      "explanation": "Los informes espontáneos nacen del funcionamiento interno, mientras que los implantados requieren desinformación exógena engañosa."
+    },
+    {
+      "q": "A nivel neurobiológico, las memorias verdaderas activan exclusivamente el hipocampo, mientras que las falsas activan solo la zona prefrontal.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Analiza el estudio de Schacter et al. (1996) sobre activación cerebral comparada.",
+      "explanation": "Ambas activan el hipocampo; la diferencia radica en que las verdaderas activan la zona parietal temporal izquierda y las falsas la zona prefrontal."
+    },
+    {
+      "q": "La amnesia infantil se define como la incapacidad de recordar eventos autobiográficos ocurridos antes de los tres años de vida.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Busca el rango de edad específico mencionado para la pérdida de recuerdos episódicos tempranos.",
+      "explanation": "Se denomina amnesia infantil a la imposibilidad de recuperar hechos autobiográficos de los primeros tres años de vida durante la adultez."
+    },
+    {
+      "q": "La inmadurez del hipocampo y la corteza prefrontal es una de las explicaciones biológicas propuestas para la amnesia infantil.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Considera el desarrollo de las estructuras clave en la codificación y recuperación.",
+      "explanation": "Al estar inmaduras estas estructuras durante los primeros años, el cerebro podría no estar preparado para fijar esos conocimientos."
+    },
+    {
+      "q": "El desarrollo de la conciencia del yo, que ocurre hacia los 24 meses, se considera irrelevante para la formación de memorias autobiográficas.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Busca la relación entre el hito cognitivo del 'yo' y la memoria de eventos personales.",
+      "explanation": "Se postula que la adquisición de la conciencia del yo es un hito necesario para poder organizar memorias de carácter autobiográfico."
+    },
+    {
+      "q": "Loftus y Kaufman sugieren que el olvido infantil se debe a una incompatibilidad de formatos entre la codificación temprana y la adulta.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Recuerda el símil del archivo de ordenador y las versiones del sistema operativo.",
+      "explanation": "Plantean que el formato no lingüístico de la infancia no es compatible con el sistema de recuperación basado en el lenguaje del adulto."
+    },
+    {
+      "q": "La amnesia anterógrada consiste en la incapacidad de recordar eventos que sucedieron antes de una lesión o accidente cerebral.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Diferencia claramente los términos 'antes' y 'después' en relación a la amnesia.",
+      "explanation": "La amnesia anterógrada es la incapacidad para aprender o fijar nueva información tras la lesión; el olvido de lo anterior es la retrógrada."
+    },
+    {
+      "q": "En la amnesia funcional, el paciente sufre amnesia retrógrada a pesar de no presentar una lesión orgánica que la justifique.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Identifica qué tipo de amnesia carece de base lesional evidente en las amnesias funcionales.",
+      "explanation": "La amnesia funcional se caracteriza por un inicio brusco y pérdida de identidad personal sin daños cerebrales orgánicos demostrables."
+    },
+    {
+      "q": "La amnesia postraumática suele implicar una pérdida de conciencia y puede presentar componentes tanto de amnesia retrógrada como anterógrada.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Considera los efectos de un golpe fuerte en la cabeza y el estado de confusión posterior.",
+      "explanation": "Tras un traumatismo, el paciente suele presentar confusión y lagunas que abarcan momentos previos y posteriores al accidente."
+    },
+    {
+      "q": "La hipermnesia afectiva es un síntoma de la amnesia disociativa donde los recuerdos traumáticos aparecen de forma fragmentada e incompleta.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Distingue entre el recuerdo persistente (hipermnesia) y el olvido del trauma (amnesia disociativa).",
+      "explanation": "La hipermnesia afectiva se refiere a recuerdos persistentes e intensos; la amnesia disociativa es la que presenta lagunas o recuerdos incompletos."
+    },
+    {
+      "q": "Los recuerdos traumáticos se procesan preferentemente en la amígdala en lugar de en el hipocampo, lo que cronifica el miedo y el estrés.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Relaciona la estructura cerebral con la carga emocional y la persistencia del trauma.",
+      "explanation": "Kihlstrom señala que los mecanismos propios del trauma dependen más de la amígdala, diferenciándose así de los recuerdos comunes."
+    },
+    {
+      "q": "Elija la opción CORRECTA respecto a la definición de olvido que adopta el capítulo:",
+      "options": [
+        "Se define como la desaparición definitiva de la huella de memoria en el sistema.",
+        "Se entiende como la incapacidad de acceder a la información en el momento necesario.",
+        "Se considera un proceso exclusivo de la fase de codificación de la nueva información."
+      ],
+      "correct": 1,
+      "hint": "Busca la definición centrada en el proceso de recuperación.",
+      "explanation": "El olvido se define como fallos en el proceso de recuperación, ya que la desaparición total de la huella no se puede demostrar."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre la teoría de la interferencia por sobrecarga de claves:",
+      "options": [
+        "Sostiene que el olvido se debe a la degradación física de la huella de memoria primaria.",
+        "Postula que la similitud entre memorias no afecta al éxito de la recuperación posterior.",
+        "Propone que una misma clave se asocia a distintas memorias dificultando el acceso."
+      ],
+      "correct": 2,
+      "hint": "Relaciona la clave con la cantidad de información asociada.",
+      "explanation": "Esta teoría indica que la interferencia ocurre cuando una clave debe servir para recuperar múltiples recuerdos, provocando fallos."
+    },
+    {
+      "q": "Elija la opción CORRECTA en relación con la técnica de aprendizaje de pares asociados:",
+      "options": [
+        "Requiere que el sujeto aprenda una serie de palabras sin ninguna relación lógica entre sí.",
+        "Utiliza la primera palabra como clave de recuperación para evocar la segunda palabra.",
+        "Evalúa exclusivamente la memoria de reconocimiento mediante la presentación de listas."
+      ],
+      "correct": 1,
+      "hint": "Identifica los roles de la palabra estímulo y la palabra respuesta.",
+      "explanation": "En esta tarea, el par contiene una palabra estímulo y una respuesta; en la prueba, el estímulo actúa como clave para el recuerdo."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre el estudio de la interferencia retroactiva:",
+      "options": [
+        "Se observa cuando el aprendizaje de la lista A-B interfiere en el recuerdo de la lista A-C.",
+        "Es más intensa cuando el intervalo de retención tras el aprendizaje A-C es muy prolongado.",
+        "Es más pronunciada cuando el intervalo de retención tras el aprendizaje A-C es muy corto."
+      ],
+      "correct": 2,
+      "hint": "Considera la variable temporal en el efecto del nuevo aprendizaje sobre el viejo.",
+      "explanation": "La interferencia retroactiva (A-C sobre A-B) es especialmente marcada cuando la prueba de memoria se realiza poco después de aprender A-C."
+    },
+    {
+      "q": "Elija la opción CORRECTA respecto a la interferencia proactiva:",
+      "options": [
+        "Se produce cuando la información nueva similar degrada la huella de las memorias viejas.",
+        "Ocurre cuando el conocimiento previo interfiere en la recuperación de la información nueva.",
+        "Requiere necesariamente que las listas presentadas no compartan ningún estímulo común."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el ejemplo del antiguo número de teléfono que viene a la mente.",
+      "explanation": "La interferencia proactiva es el efecto de los viejos recuerdos entorpeciendo el acceso a nuevos conocimientos similares."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre el efecto abanico descubierto por Anderson:",
+      "options": [
+        "El tiempo de respuesta es menor cuanta más información se asocia a una misma persona.",
+        "El número de errores cometidos disminuye proporcionalmente al tamaño del abanico.",
+        "La velocidad de respuesta se ralentiza al aumentar los hechos vinculados a un concepto."
+      ],
+      "correct": 2,
+      "hint": "Analiza cómo afecta la cantidad de localizaciones asociadas al reconocimiento.",
+      "explanation": "El experimento demostró que el tiempo de reacción se incrementa conforme aumenta la información asociada a una misma clave (persona)."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre la función de la inhibición en la memoria:",
+      "options": [
+        "Actúa sobre las huellas de memoria para hacerlas más accesibles durante la recuperación.",
+        "Permite reducir la actividad de huellas competidoras para facilitar el recuerdo deseado.",
+        "Es un proceso pasivo que degrada la fuerza de la huella a través del paso del tiempo."
+      ],
+      "correct": 1,
+      "hint": "Considera la necesidad de controlar la interferencia entre recuerdos similares.",
+      "explanation": "La inhibición reduce la activación de huellas competidoras asociadas a la misma clave para que no interfieran con el material objetivo."
+    },
+    {
+      "q": "Elija la opción CORRECTA respecto a las características de la inhibición (Anderson, 2007):",
+      "options": [
+        "Es un mecanismo interno de la huella que produce cambios químicos irreversibles en ella.",
+        "Es un proceso de control ejecutivo que permite resolver la interferencia entre memorias.",
+        "Actúa exclusivamente sobre huellas de memoria que han sido codificadas incorrectamente."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el papel del control ejecutivo en la resolución de conflictos de memoria.",
+      "explanation": "Anderson propone que contamos con mecanismos de control ejecutivo para resolver la interferencia mediante la inhibición de huellas."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre el olvido inducido por la recuperación:",
+      "options": [
+        "Es el proceso por el cual el sujeto olvida información debido a una falta de claves externas.",
+        "Consiste en la inhibición de huellas no deseadas durante el propio acto de recordar algo.",
+        "Ocurre únicamente cuando el sujeto intenta olvidar de forma consciente un evento traumático."
+      ],
+      "correct": 1,
+      "hint": "Reflexiona sobre el efecto secundario de seleccionar un recuerdo específico.",
+      "explanation": "El propio acto de recuperar una información requiere inhibir competidores, lo que reduce su accesibilidad posterior (olvido)."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre el paradigma pensar/no pensar de Anderson y Green:",
+      "options": [
+        "Demuestra que no es posible evitar que un recuerdo acceda a la conciencia voluntariamente.",
+        "Prueba que el control inhibitorio voluntario puede dificultar el recuerdo posterior del material.",
+        "Indica que el esfuerzo por no pensar en algo mejora significativamente su recuerdo posterior."
+      ],
+      "correct": 1,
+      "hint": "Recuerda el efecto de las instrucciones de supresión en la Fase 2.",
+      "explanation": "Este paradigma demostró que ejercer control para evitar que una palabra acceda a la memoria reduce significativamente su recuerdo futuro."
+    },
+    {
+      "q": "Elija la opción CORRECTA respecto a las falsas memorias:",
+      "options": [
+        "Representan distorsiones que solo afectan a detalles periféricos de las historias vividas.",
+        "Confirman que la memoria funciona como una reproducción fiel de los eventos pasados.",
+        "Pueden consistir tanto en variaciones leves como en modificaciones totales del significado."
+      ],
+      "correct": 2,
+      "hint": "Evalúa el alcance de las distorsiones de memoria mencionadas en el texto.",
+      "explanation": "Las falsas memorias pueden ser pequeñas variaciones o cambios estructurales que alteran por completo el sentido de lo vivido."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre la desinformación en el estudio de Loftus:",
+      "options": [
+        "La información ofrecida durante la recuperación puede alterar el recuerdo del suceso.",
+        "Los testigos son inmunes a las sugerencias externas si el evento fue muy impactante.",
+        "El uso de verbos neutros provoca distorsiones mayores que el uso de verbos intensos."
+      ],
+      "correct": 0,
+      "hint": "Recuerda cómo influyeron las preguntas de los investigadores en los estudiantes.",
+      "explanation": "El experimento demostró que la información sugerida en el momento de la recuperación puede modificar la huella de memoria original."
+    },
+    {
+      "q": "Elija la opción CORRECTA respecto a la confusión en el seguimiento de la fuente:",
+      "options": [
+        "Es el mecanismo que permite al hipocampo distinguir memorias verdaderas de las falsas.",
+        "Ocurre cuando el sujeto no sabe si un dato proviene de la realidad o de una sugerencia.",
+        "Consiste en la pérdida total de la identidad personal característica de la amnesia funcional."
+      ],
+      "correct": 1,
+      "hint": "Relaciona este concepto con el experimento de Zaragoza y Lane.",
+      "explanation": "Este fenómeno explica el reconocimiento falso al no poder discriminar si la información proviene del evento original o de una sugerencia posterior."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre las bases neurológicas de las memorias falsas:",
+      "options": [
+        "Se caracterizan por la activación predominante del hipocampo y la zona prefrontal del cerebro.",
+        "Involucran exclusivamente a la amígdala debido a la alta carga emocional de los errores.",
+        "No presentan ninguna diferencia registrable respecto a las memorias verdaderas en fMRI."
+      ],
+      "correct": 0,
+      "hint": "Identifica la zona que se encarga de evaluar la veracidad según Schacter.",
+      "explanation": "El estudio de Schacter et al. mostró que las memorias falsas activan el hipocampo y la zona prefrontal (encargada de evaluar veracidad)."
+    },
+    {
+      "q": "Elija la opción CORRECTA respecto a la zona prefrontal del cerebro en la memoria:",
+      "options": [
+        "Su función exclusiva es el almacenamiento a largo plazo de los hechos autobiográficos.",
+        "Se encarga de los procesos de evaluación de la veracidad de los recuerdos recuperados.",
+        "Es la estructura que menos influye en la aparición de falsas memorias en sujetos sanos."
+      ],
+      "correct": 1,
+      "hint": "Considera el papel de esta área en el monitoreo de la realidad.",
+      "explanation": "Estudios con pacientes con daño en esta zona confirman que la zona prefrontal es crucial para evaluar si un recuerdo es verdadero o falso."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre la amnesia infantil:",
+      "options": [
+        "Es un trastorno patológico que requiere intervención terapéutica desde la infancia temprana.",
+        "Se produce por el desuso de las huellas de memoria episódica durante la etapa escolar.",
+        "Se considera una parte normal de la vida y no un déficit de memoria de tipo traumático."
+      ],
+      "correct": 2,
+      "hint": "Busca la calificación de este tipo de amnesia dentro del ciclo vital.",
+      "explanation": "A diferencia de otras amnesias, la infantil es un proceso normativo que experimentan todas las personas durante su desarrollo."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre la hipótesis del yo en la amnesia infantil:",
+      "options": [
+        "Sugiere que el sentido de identidad no es necesario para codificar memorias personales.",
+        "Plantea que la conciencia del yo es un requisito para organizar recuerdos autobiográficos.",
+        "Indica que el yo se adquiere biológicamente al nacer y se pierde durante los tres años."
+      ],
+      "correct": 1,
+      "hint": "Relaciona el hito de los 24 meses con la memoria autobiográfica.",
+      "explanation": "La teoría de Howe y Courage propone que sin conciencia del yo no se pueden estructurar memorias que tengan al sujeto como protagonista."
+    },
+    {
+      "q": "Elija la opción CORRECTA respecto a la amnesia retrógrada:",
+      "options": [
+        "Implica la imposibilidad de adquirir nuevos aprendizajes a partir de una lesión cerebral.",
+        "Se define como el déficit selectivo para recordar sucesos ocurridos antes de un accidente.",
+        "Afecta exclusivamente a la memoria procedimental, respetando siempre la identidad personal."
+      ],
+      "correct": 1,
+      "hint": "Analiza el prefijo 'retro' en el contexto temporal del olvido.",
+      "explanation": "La amnesia retrógrada supone la pérdida de información que ya estaba almacenada antes del evento traumático o lesión."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre la amnesia funcional:",
+      "options": [
+        "Es una amnesia de tipo anterógrado causada por lesiones detectables en el hipocampo.",
+        "Suele presentar una pérdida de la identidad personal con un inicio de tipo brusco.",
+        "Impide al paciente retener cualquier información nueva que ocurra tras el inicio del déficit."
+      ],
+      "correct": 1,
+      "hint": "Identifica el rasgo distintivo de esta amnesia sin causa orgánica evidente.",
+      "explanation": "La amnesia funcional destaca por la pérdida súbita de la identidad personal y es de tipo retrógrado, sin lesión cerebral aparente."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre la amnesia postraumática:",
+      "options": [
+        "Suele conllevar una pérdida de conciencia cuya duración es un indicador de la gravedad.",
+        "Es un olvido motivado donde el sujeto decide ignorar el accidente de forma voluntaria.",
+        "Provoca un déficit permanente que nunca mejora con el paso del tiempo o la terapia."
+      ],
+      "correct": 0,
+      "hint": "Considera las consecuencias inmediatas de un fuerte golpe en la cabeza.",
+      "explanation": "Este trastorno implica pérdida de conciencia y confusión, y el periodo de amnesia suele mejorar con el paso del tiempo."
+    },
+    {
+      "q": "Elija la opción CORRECTA respecto al procesamiento de recuerdos traumáticos:",
+      "options": [
+        "Utilizan exactamente los mismos mecanismos neurofisiológicos que los recuerdos comunes.",
+        "La carga emocional intensa suele favorecer una consolidación más fuerte en la memoria.",
+        "El sujeto puede elegir libremente qué partes del trauma desea conservar y cuáles olvidar."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el efecto de la emoción sobre la huella de memoria.",
+      "explanation": "Generalmente, los eventos con carga emocional intensa se consolidan mejor, aunque el trauma puede generar efectos atípicos."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre la amnesia disociativa en traumas:",
+      "options": [
+        "Se caracteriza por la aparición de recuerdos intrusivos y persistentes del evento negativo.",
+        "Es un mecanismo adaptativo que permite el acceso total y claro a la información dolorosa.",
+        "Supone la existencia de lagunas o recuerdos incompletos sobre el acontecimiento vivido."
+      ],
+      "correct": 2,
+      "hint": "Diferencia entre recordar en exceso y no poder recordar el trauma.",
+      "explanation": "La amnesia disociativa se manifiesta como la imposibilidad de recuperar partes del evento traumático, dejando lagunas en la memoria."
+    },
+    {
+      "q": "Elija la opción CORRECTA respecto a la hipermnesia afectiva:",
+      "options": [
+        "Consiste en el olvido selectivo de las personas implicadas en un suceso de tipo violento.",
+        "Hace referencia a la persistencia involuntaria de recuerdos asociados a un trauma fuerte.",
+        "Es una distorsión de la memoria episódica que ocurre habitualmente durante la infancia."
+      ],
+      "correct": 1,
+      "hint": "Recuerda que 'hiper' implica exceso o aumento.",
+      "explanation": "En algunos casos de trauma, la persona experimenta recuerdos persistentes y vívidos del suceso que no puede evitar (hipermnesia)."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre la amígdala en el contexto de la memoria traumática:",
+      "options": [
+        "Es la estructura responsable de la evaluación racional y la veracidad de los hechos pasados.",
+        "Participa en mecanismos que cronifican el dolor y aumentan la sensación de miedo y estrés.",
+        "Su función es asegurar que el trauma se codifique en un formato compatible con el lenguaje."
+      ],
+      "correct": 1,
+      "hint": "Considera el papel de la amígdala en el sistema límbico y las emociones.",
+      "explanation": "Kihlstrom señala que la memoria traumática depende más de la amígdala, lo que explica la persistencia de las respuestas de estrés."
+    },
+    {
+      "q": "Elija la opción CORRECTA respecto a la visión actual sobre la amnesia infantil:",
+      "options": [
+        "Se cree que un solo factor biológico explica la totalidad del fenómeno en todos los adultos.",
+        "Es probable que sea el resultado de la influencia combinada de múltiples factores descritos.",
+        "Se ha descartado el papel de las estructuras cerebrales en favor de factores solo sociales."
+      ],
+      "correct": 1,
+      "hint": "Considera la conclusión del texto sobre las diversas teorías presentadas.",
+      "explanation": "El punto de vista actual es integrador, considerando que factores biológicos, cognitivos y lingüísticos contribuyen al fenómeno."
+    },
+    {
+      "q": "Elija la opción INCORRECTA respecto a la definición de olvido:",
+      "options": [
+        "Puede entenderse como un fallo en el acceso a la información en un momento concreto.",
+        "Se ha demostrado científicamente que implica la eliminación total de la huella de memoria.",
+        "Requiere asegurar que la información fue recuperada con éxito en un momento previo."
+      ],
+      "correct": 1,
+      "hint": "Busca la afirmación que sostiene algo imposible de probar científicamente.",
+      "explanation": "Es incorrecto afirmar que se ha demostrado la eliminación total de la huella; solo podemos hablar de fallos en la recuperación."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la teoría de la interferencia:",
+      "options": [
+        "Fue ganando fuerza a medida que la teoría del decaimiento perdía apoyo experimental.",
+        "Propone que olvidamos porque la huella de memoria se ve interferida por otras huellas.",
+        "Sostiene que el paso del tiempo en ausencia de actividad es la única causa del olvido."
+      ],
+      "correct": 2,
+      "hint": "Identifica qué teoría se basa exclusivamente en el tiempo.",
+      "explanation": "Es incorrecto atribuir la exclusividad del tiempo a la interferencia; esa es la base de la teoría del decaimiento."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la interferencia como degradación:",
+      "options": [
+        "Considera que el problema del olvido reside principalmente en la fase de almacenamiento.",
+        "Sostiene que la semejanza entre memorias nuevas y viejas es un factor crítico del olvido.",
+        "Entiende que la nueva información produce un efecto degradante sobre la ya almacenada."
+      ],
+      "correct": 1,
+      "hint": "Diferencia esta teoría de la sobrecarga de claves.",
+      "explanation": "En la teoría de la degradación, la semejanza no es relevante; es una opción incorrecta ya que el texto dice que 'no es relevante'."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre los experimentos de listas de pares asociados:",
+      "options": [
+        "Se utilizan dos grupos de participantes: un grupo de control y un grupo experimental.",
+        "La lista A-B contiene pares de palabras que deben memorizarse como estímulo y respuesta.",
+        "En la prueba de recuerdo de la lista A-B, el grupo control siempre obtiene peores resultados."
+      ],
+      "correct": 2,
+      "hint": "Analiza quién sufre la interferencia en estos experimentos.",
+      "explanation": "Es incorrecto; el grupo control siempre recuerda mejor que el experimental, ya que este último sufre interferencia por aprender la lista A-C."
+    },
+    {
+      "q": "Elija la opción INCORRECTA respecto a la interferencia retroactiva:",
+      "options": [
+        "Ocurre cuando el nuevo conocimiento interfiere con las viejas memorias ya almacenadas.",
+        "Se observa experimentalmente cuando el aprendizaje de la lista A-C perjudica a la lista A-B.",
+        "Se manifiesta de forma idéntica aunque las listas de palabras no compartan ningún estímulo."
+      ],
+      "correct": 2,
+      "hint": "Recuerda la condición necesaria para que se dé la interferencia según el texto.",
+      "explanation": "Es incorrecto; el texto aclara que cuando se presentan listas diferentes (sin estímulos comunes), el efecto de interferencia no ocurre."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la interferencia proactiva:",
+      "options": [
+        "Se estudia comparando el recuerdo de la lista A-C en un grupo que aprendió antes la lista A-B.",
+        "Los resultados muestran que el grupo experimental tiene un mejor recuerdo de la lista A-C.",
+        "Es un tipo de olvido donde la información antigua dificulta los nuevos aprendizajes similares."
+      ],
+      "correct": 1,
+      "hint": "Evalúa el desempeño del grupo experimental en las tareas de interferencia.",
+      "explanation": "Es incorrecto; los estudios muestran que el grupo experimental tiene un PEOR recuerdo de la lista A-C debido a la interferencia de A-B."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el efecto abanico de Anderson (1974):",
+      "options": [
+        "El material del experimento original consistía en frases sobre personas y localizaciones.",
+        "El reconocimiento es más rápido cuando una persona está asociada a tres lugares distintos.",
+        "El tiempo de respuesta se incrementa conforme aumenta la información asociada a la clave."
+      ],
+      "correct": 1,
+      "hint": "Relaciona el tamaño del abanico con la latencia de respuesta.",
+      "explanation": "Es incorrecto; a mayor abanico (más lugares), el reconocimiento es significativamente más lento, no más rápido."
+    },
+    {
+      "q": "Elija la opción INCORRECTA respecto a la inhibición en la memoria:",
+      "options": [
+        "Es un mecanismo necesario para el buen funcionamiento del sistema de recuperación.",
+        "Su objetivo es hacer que las huellas de memoria sean más accesibles en cualquier momento.",
+        "Ayuda a evitar que información antigua (p. ej. aparcamiento de ayer) interfiera con la actual."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el propósito de 'bloquear' o 'reducir' la activación de ciertas huellas.",
+      "explanation": "Es incorrecto; la inhibición busca hacer las huellas MENOS accesibles para resolver la competición durante la recuperación."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el experimento de Slamecka (1968):",
+      "options": [
+        "Los participantes debían recordar una lista de 30 palabras organizadas por categorías.",
+        "El grupo que recibió algunas palabras como pistas recordó más términos que el grupo control.",
+        "Este fenómeno se conoce como inhibición por utilizar parte del conjunto como claves."
+      ],
+      "correct": 1,
+      "hint": "Evalúa si las pistas realmente ayudaron a los sujetos del grupo experimental.",
+      "explanation": "Es incorrecto; los resultados mostraron lo contrario a lo esperado: las pistas inhibieron el recuerdo del resto de palabras."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la inhibición por claves del conjunto:",
+      "options": [
+        "El fenómeno se explica por la competición que generan las claves durante la recuperación.",
+        "Se ha observado que cuantas más claves se presentan, menor es el recuerdo del resto.",
+        "Este efecto inhibitorio se observa con la misma intensidad en las pruebas de reconocimiento."
+      ],
+      "correct": 2,
+      "hint": "Busca el tipo de prueba de memoria donde este efecto desaparece.",
+      "explanation": "Es incorrecto; el texto especifica que este fenómeno NO se observa en pruebas de reconocimiento."
+    },
+    {
+      "q": "Elija la opción INCORRECTA respecto al olvido inducido por la recuperación:",
+      "options": [
+        "Surge de la necesidad de seleccionar información específica y detener otros procesos.",
+        "Aumenta la activación de las huellas no deseadas para que el sujeto las identifique y descarte.",
+        "Reduce la interferencia generada por competidores mediante un control inhibitorio activo."
+      ],
+      "correct": 1,
+      "hint": "Analiza cómo actúa la inhibición sobre las huellas competidoras.",
+      "explanation": "Es incorrecto; el proceso REDUCE la activación de las huellas no deseadas para evitar su interferencia."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el paradigma pensar/no pensar:",
+      "options": [
+        "Fue desarrollado por Anderson y Green para estudiar la supresión voluntaria de recuerdos.",
+        "En la Fase 2, se pide a un grupo que evite activamente que la palabra acceda a su memoria.",
+        "La medida directa en la Fase 2 confirma inmediatamente si el sujeto ha inhibido el recuerdo."
+      ],
+      "correct": 2,
+      "hint": "Busca si existe una medida fisiológica o directa en esa fase específica.",
+      "explanation": "Es incorrecto; el texto dice que 'no existe una medida directa de si los participantes inhibían esos recuerdos o no' en esa fase."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la función adaptativa de la inhibición:",
+      "options": [
+        "Permite que olvidemos dónde dejamos el coche ayer para recordar dónde está hoy.",
+        "Su única función es dificultar el aprendizaje de nueva información en sujetos sanos.",
+        "Puede ayudar a impedir que información traumática acceda a la conciencia de forma dolorosa."
+      ],
+      "correct": 1,
+      "hint": "Evalúa si la inhibición se describe como un error o como una ventaja adaptativa.",
+      "explanation": "Es incorrecto; el texto afirma que la inhibición es adaptativa y facilitadora del buen funcionamiento de la memoria."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre las falsas memorias y Bartlett:",
+      "options": [
+        "Bartlett sostenía que la memoria no es una copia literal de los acontecimientos pasados.",
+        "Las falsas memorias confirman que el sujeto reconstruye activamente sus recuerdos.",
+        "Bartlett fue el primero en demostrar que las falsas memorias tienen una base puramente biológica."
+      ],
+      "correct": 2,
+      "hint": "Considera el enfoque teórico de Bartlett mencionado en el capítulo 1 y 5.",
+      "explanation": "Es incorrecto; Bartlett se centró en la naturaleza constructiva y los errores, no en demostrar bases neurobiológicas específicas."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el experimento de Loftus (1974):",
+      "options": [
+        "Los participantes vieron vídeos de accidentes y luego estimaron la velocidad de los coches.",
+        "Los verbos 'chocar' y 'hacer contacto' indujeron estimaciones de velocidad muy elevadas.",
+        "El estudio demostró que la información sugerida en la pregunta puede alterar el recuerdo."
+      ],
+      "correct": 1,
+      "hint": "Compara la intensidad de los verbos 'chocar' frente a 'estrellar' en el experimento.",
+      "explanation": "Es incorrecto; 'chocar' y 'hacer contacto' dieron velocidades menores; fueron 'estrellar' o 'colisionar' los que dieron velocidades altas."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre los tipos de informes falsos:",
+      "options": [
+        "Los informes falsos implantados se deben a la presentación de desinformación exógena.",
+        "Los informes falsos espontáneos nacen de procesos internos del funcionamiento de la memoria.",
+        "Los informes implantados son más fáciles de detectar por el sujeto que los espontáneos."
+      ],
+      "correct": 2,
+      "hint": "Considera la dificultad de diferenciar memorias verdaderas de falsas según la investigación reciente.",
+      "explanation": "Es incorrecto; el texto afirma que las falsas memorias no difieren de las verdaderas y es casi imposible diferenciarlas."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre las bases neurológicas de la memoria (Schacter et al., 1996):",
+      "options": [
+        "Las memorias verdaderas activan el hipocampo y la zona parietal temporal izquierda.",
+        "Las memorias falsas activan el hipocampo y la zona prefrontal del cerebro del sujeto.",
+        "El hipocampo solo se activa durante la recuperación de recuerdos que son 100% veraces."
+      ],
+      "correct": 2,
+      "hint": "Verifica si el hipocampo discrimina por sí solo entre verdad y falsedad.",
+      "explanation": "Es incorrecto; el hipocampo se activa tanto en memorias verdaderas como en falsas según el estudio citado."
+    },
+    {
+      "q": "Elija la opción INCORRECTA respecto a la amnesia infantil:",
+      "options": [
+        "Se caracteriza por la imposibilidad de recordar los primeros tres años de vida en la adultez.",
+        "A partir de los cinco años es cuando los niños empiezan a generar recuerdos episódicos estables.",
+        "Es un trastorno de la memoria que desaparece si el sujeto se somete a terapia de recuperación."
+      ],
+      "correct": 2,
+      "hint": "Analiza si se considera una patología reversible o un proceso vital normal.",
+      "explanation": "Es incorrecto; el texto la define como una 'parte normal de la vida', no como un trastorno tratable o reversible."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la inmadurez cerebral en niños:",
+      "options": [
+        "El hipocampo y la corteza prefrontal son estructuras inmaduras en los primeros años.",
+        "Estas zonas cerebrales son fundamentales para los procesos de codificación y recuperación.",
+        "La maduración total de estas áreas ocurre antes de los 12 meses, permitiendo el recuerdo."
+      ],
+      "correct": 2,
+      "hint": "Considera el cronograma de desarrollo cerebral mencionado para justificar la amnesia.",
+      "explanation": "Es incorrecto; el texto sugiere que la inmadurez persiste durante los primeros años, impidiendo la adquisición biológica de recuerdos."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la hipótesis del lenguaje en la amnesia infantil:",
+      "options": [
+        "Propone que los recuerdos tempranos se codifican en un formato que no es compatible con el adulto.",
+        "Fue planteada por Loftus y Kaufman (1992) usando el símil de versiones de software.",
+        "Sostiene que los niños de 12 meses ya poseen un lenguaje complejo que facilita el recuerdo."
+      ],
+      "correct": 2,
+      "hint": "Evalúa el estado del lenguaje en los bebés según la teoría de la incompatibilidad.",
+      "explanation": "Es incorrecto; la teoría se basa precisamente en que en los primeros años el lenguaje NO se ha desarrollado, creando un formato incompatible."
+    },
+    {
+      "q": "Elija la opción INCORRECTA respecto a los tipos de amnesia orgánica:",
+      "options": [
+        "La amnesia retrógrada implica olvidar lo sucedido antes de que ocurra una lesión cerebral.",
+        "La amnesia anterógrada se define como la incapacidad de aprender tras un momento concreto.",
+        "Ambas amnesias se consideran de tipo funcional porque nunca hay una lesión cerebral real."
+      ],
+      "correct": 2,
+      "hint": "Diferencia entre amnesias orgánicas y amnesias funcionales.",
+      "explanation": "Es incorrecto; las amnesias orgánicas están causadas precisamente por lesiones cerebrales; las funcionales son las que no tienen lesión."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la amnesia funcional:",
+      "options": [
+        "El paciente suele perder primero su identidad personal tras el inicio del trastorno.",
+        "La capacidad para retener hechos posteriores al comienzo de la amnesia suele ser buena.",
+        "Este tipo de amnesia es siempre anterógrada y está causada por tumores en el hipocampo."
+      ],
+      "correct": 2,
+      "hint": "Analiza la dirección del olvido y la causa en la amnesia funcional.",
+      "explanation": "Es incorrecto; la amnesia funcional es de tipo retrógrado y ocurre SIN lesión cerebral que lo justifique (no por tumores)."
+    },
+    {
+      "q": "Elija la opción INCORRECTA respecto a la amnesia postraumática:",
+      "options": [
+        "Puede durar desde unos pocos segundos hasta varias semanas tras el fuerte impacto.",
+        "Al recuperar la conciencia, el paciente suele mostrar un estado de confusión y lucidez extrema.",
+        "La pérdida de memoria puede ser tanto anterógrada como retrógrada en una ventana temporal."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el estado mental del paciente inmediatamente después de despertar.",
+      "explanation": "Es incorrecto; el texto dice que el paciente presenta 'cierta confusión', lo que contradice la idea de 'lucidez extrema'."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la memoria traumática:",
+      "options": [
+        "Todos los individuos procesan los eventos violentos o traumáticos de la misma manera exacta.",
+        "El trauma puede inmovilizar a la persona y convertirse en un evento difícil de afrontar.",
+        "Existen mecanismos propios del trauma que cronifican el dolor y afectan al cerebro."
+      ],
+      "correct": 0,
+      "hint": "Busca la afirmación sobre la uniformidad del procesamiento en humanos.",
+      "explanation": "Es incorrecto; el texto afirma explícitamente que 'no todas las personas procesamos de igual modo determinados eventos'."
+    },
+    {
+      "q": "Elija la opción INCORRECTA respecto a la amígdala y el hipocampo en traumas:",
+      "options": [
+        "Los recuerdos traumáticos parecen estar más vinculados a la amígdala que al hipocampo.",
+        "El hipocampo es la estructura principal que se encarga de cronificar el miedo tras un robo.",
+        "La amígdala utiliza mecanismos propios para incrementar la sensación de estrés en el sujeto."
+      ],
+      "correct": 1,
+      "hint": "Identifica qué estructura se asocia al miedo cronificado en el texto.",
+      "explanation": "Es incorrecto; el texto señala a la amígdala como la estructura relacionada con cronificar el dolor y el miedo, no al hipocampo."
+    },
+    {
+      "q": "La concepción científica actual define el olvido principalmente como ____ en el proceso de recuperación de la información.",
+      "options": [
+        "una eliminación de la huella",
+        "un fallo de accesibilidad puntual",
+        "un error de codificación previo"
+      ],
+      "correct": 1,
+      "hint": "Científicamente no se puede demostrar la desaparición total de la huella.",
+      "explanation": "El texto indica que el olvido se entiende como la imposibilidad de acceder a información que sí está almacenada."
+    },
+    {
+      "q": "Para poder hablar técnicamente de olvido, es requisito indispensable que la información ____ en un momento previo.",
+      "options": [
+        "se haya codificado con éxito",
+        "se haya recuperado previamente",
+        "se haya inhibido conscientemente"
+      ],
+      "correct": 1,
+      "hint": "Es la forma de asegurar que la información estaba realmente almacenada.",
+      "explanation": "El capítulo especifica que debemos asegurarnos de que la información estaba en la memoria mediante una recuperación previa."
+    },
+    {
+      "q": "El olvido ____ ocurre cuando perdemos información sin tener la intención de hacerlo, como olvidar la ubicación de las llaves.",
+      "options": [
+        "de tipo incidental fortuito",
+        "por decaimiento progresivo",
+        "de naturaleza incidental pura"
+      ],
+      "correct": 2,
+      "hint": "Se diferencia del olvido motivado por la ausencia de voluntad.",
+      "explanation": "El texto define el olvido incidental como aquel que ocurre sin intención por parte del sujeto."
+    },
+    {
+      "q": "La teoría del ____ asume que el olvido es un proceso pasivo causado exclusivamente por el transcurso del tiempo.",
+      "options": [
+        "desuso de la huella mnésica",
+        "decaimiento de la información",
+        "debilitamiento por interferencia"
+      ],
+      "correct": 1,
+      "hint": "Se relaciona con las curvas de olvido de Ebbinghaus.",
+      "explanation": "La teoría del decaimiento propone que el paso del tiempo erosiona la huella de memoria de forma pasiva."
+    },
+    {
+      "q": "La teoría de la ____ sostiene que olvidamos porque la huella de memoria se ve alterada o dificultada por otras memorias.",
+      "options": [
+        "interferencia de la información",
+        "inhibición por sobrecarga clave",
+        "degradación por nuevas memorias"
+      ],
+      "correct": 0,
+      "hint": "Es la concepción predominante en la psicología experimental actual.",
+      "explanation": "La teoría de la interferencia indica que las huellas compiten o se interfieren entre sí dificultando el recuerdo."
+    },
+    {
+      "q": "En la fase inicial de su estudio, se entendía la interferencia como una ____ de la información ya almacenada.",
+      "options": [
+        "sobrecarga de claves de acceso",
+        "degradación física de la huella",
+        "inhibición de la memoria antigua"
+      ],
+      "correct": 1,
+      "hint": "En esta etapa inicial no se consideraba relevante la semejanza.",
+      "explanation": "Originalmente se pensaba que la nueva información degradaba directamente el almacenamiento de la antigua."
+    },
+    {
+      "q": "La interferencia por ____ propone que el fallo ocurre cuando una misma clave se asocia a múltiples memorias distintas.",
+      "options": [
+        "degradación del almacenamiento",
+        "sobrecarga de las claves dadas",
+        "inhibición del control ejecutivo"
+      ],
+      "correct": 1,
+      "hint": "Aquí la similitud entre memorias sí resulta un factor determinante.",
+      "explanation": "Esta teoría sitúa el problema en la recuperación cuando una clave debe discriminar entre varios objetivos."
+    },
+    {
+      "q": "En el método de pares asociados, la primera palabra presentada se denomina ____ y la segunda palabra respuesta.",
+      "options": [
+        "estímulo clave de recuperación",
+        "palabra objetivo del recuerdo",
+        "asociación débil de la memoria"
+      ],
+      "correct": 0,
+      "hint": "Es la que se utiliza para disparar el proceso de búsqueda.",
+      "explanation": "En las tareas A-B, A es la palabra estímulo que actúa como clave para recuperar la respuesta B."
+    },
+    {
+      "q": "La interferencia ____ se produce cuando el aprendizaje nuevo dificulta la recuperación de memorias antiguas similares.",
+      "options": [
+        "de carácter proactivo directo",
+        "de carácter retroactivo puro",
+        "de carácter inhibitorio mixto"
+      ],
+      "correct": 1,
+      "hint": "El efecto viaja hacia atrás en el tiempo afectando lo previo.",
+      "explanation": "La interferencia retroactiva ocurre cuando lo nuevo (A-C) interfiere con lo viejo (A-B)."
+    },
+    {
+      "q": "El olvido de cómo manejar nuestro propio ordenador tras usar unos días el de otra persona es un ejemplo de ____.",
+      "options": [
+        "interferencia retroactiva real",
+        "interferencia proactiva común",
+        "inhibición por clave de parte"
+      ],
+      "correct": 0,
+      "hint": "El aprendizaje más reciente está bloqueando el conocimiento anterior.",
+      "explanation": "Al aprender comandos nuevos, estos interfieren con los antiguos al intentar volver al sistema original."
+    },
+    {
+      "q": "La interferencia ____ ocurre cuando los conocimientos previos dificultan la adquisición o recuperación de información nueva.",
+      "options": [
+        "retroactiva por persistencia",
+        "proactiva por sobrecarga clave",
+        "inhibitoria por control previo"
+      ],
+      "correct": 1,
+      "hint": "Lo viejo impide que lo nuevo se asiente o se recupere bien.",
+      "explanation": "La interferencia proactiva describe cómo el pasado afecta negativamente al aprendizaje presente."
+    },
+    {
+      "q": "Intentar recordar el número de teléfono nuevo y que nos venga a la mente el antiguo es un caso de ____.",
+      "options": [
+        "interferencia de tipo proactiva",
+        "interferencia de tipo retroactiva",
+        "inhibición inducida por claves"
+      ],
+      "correct": 0,
+      "hint": "La memoria antigua está compitiendo con la nueva que queremos usar.",
+      "explanation": "Es un ejemplo clásico donde la huella previa (teléfono viejo) interfiere con la nueva (teléfono actual)."
+    },
+    {
+      "q": "El efecto ____ demuestra que el tiempo de reconocimiento aumenta según la cantidad de información asociada a una clave.",
+      "options": [
+        "de abanico descrito por Anderson",
+        "de bloqueo por claves parciales",
+        "de inhibición del control central"
+      ],
+      "correct": 0,
+      "hint": "Se utilizó el ejemplo de personas en diferentes localizaciones.",
+      "explanation": "El efecto abanico muestra que a más hechos asociados a un concepto, más lento es el acceso a uno de ellos."
+    },
+    {
+      "q": "Según Anderson, la ____ es el mecanismo que actúa sobre las huellas de memoria para hacerlas menos accesibles.",
+      "options": [
+        "interferencia proactiva activa",
+        "inhibición de la huella mnésica",
+        "degradación por desuso temporal"
+      ],
+      "correct": 1,
+      "hint": "Es un proceso activo y reversible para resolver la competición.",
+      "explanation": "La inhibición reduce la actividad de huellas competidoras para facilitar la recuperación del objetivo."
+    },
+    {
+      "q": "Una característica básica de la inhibición es que se trata de un mecanismo ____ que actúa sobre la huella.",
+      "options": [
+        "interno de la propia neurona",
+        "externo que modifica la huella",
+        "pasivo que depende del tiempo"
+      ],
+      "correct": 1,
+      "hint": "No es una propiedad intrínseca de la huella, sino algo que opera sobre ella.",
+      "explanation": "Anderson define la inhibición como un mecanismo externo que modula el estado de excitación de la huella."
+    },
+    {
+      "q": "La inhibición es un proceso ____, lo que significa que la accesibilidad de la huella puede recuperarse posteriormente.",
+      "options": [
+        "de naturaleza cuasi-permanente",
+        "totalmente de carácter reversible",
+        "de degradación parcial definitiva"
+      ],
+      "correct": 1,
+      "hint": "A diferencia del olvido por decaimiento físico, la huella no desaparece.",
+      "explanation": "La cuarta característica de la inhibición según Anderson es que sus cambios son reversibles."
+    },
+    {
+      "q": "El fenómeno de ____ ocurre cuando proporcionar algunas claves del conjunto empeora el recuerdo del resto.",
+      "options": [
+        "inhibición por claves parciales",
+        "olvido inducido por recuperación",
+        "interferencia por abanico clave"
+      ],
+      "correct": 0,
+      "hint": "Fue descubierto por Slamecka en 1968.",
+      "explanation": "La inhibición por utilizar parte del conjunto como claves demuestra que las claves dadas inhiben los otros elementos."
+    },
+    {
+      "q": "La inhibición por claves parciales se explica porque las claves presentadas ____ el proceso de búsqueda del sujeto.",
+      "options": [
+        "facilitan demasiado y saturan",
+        "compiten y provocan el abandono",
+        "degradan las huellas no dadas"
+      ],
+      "correct": 1,
+      "hint": "El sujeto deja de buscar ante la interferencia de las claves ya presentes.",
+      "explanation": "Las claves dadas se asocian a otras respuestas que compiten, haciendo que el sujeto abandone la búsqueda."
+    },
+    {
+      "q": "El ____ se refiere a la inhibición de huellas no deseadas durante el propio acto de recordar información relacionada.",
+      "options": [
+        "olvido por claves competitivas",
+        "olvido inducido por recuperación",
+        "bloqueo por control de respuesta"
+      ],
+      "correct": 1,
+      "hint": "Recordar algo específico produce el olvido de lo que compite con ello.",
+      "explanation": "Al recuperar un ítem, inhibimos a sus competidores, lo que genera olvido de estos últimos."
+    },
+    {
+      "q": "El paradigma ____ se utiliza para demostrar cómo podemos detener voluntariamente el acceso de un recuerdo a la conciencia.",
+      "options": [
+        "de recordar / olvidar de modo",
+        "de pensar / no pensar de Anderson",
+        "de supresión de la huella mnésica"
+      ],
+      "correct": 1,
+      "hint": "Involucra instrucciones directas para evitar que la palabra acceda a la memoria.",
+      "explanation": "Anderson y Green usaron este paradigma para mostrar el control voluntario sobre la recuperación."
+    },
+    {
+      "q": "En el experimento de Loftus sobre accidentes, el uso de la palabra 'estrellar' frente a 'contactar' provocaba ____.",
+      "options": [
+        "estimaciones de velocidad mayor",
+        "un olvido del color del coche",
+        "una mejora en el recuerdo veraz"
+      ],
+      "correct": 0,
+      "hint": "La formulación de la pregunta altera la construcción del recuerdo.",
+      "explanation": "Las palabras con mayor carga de impacto (estrellar) sesgaron las respuestas hacia velocidades más altas."
+    },
+    {
+      "q": "Las falsas memorias confirman la teoría de ____ sobre el carácter constructivo y no literal de la memoria.",
+      "options": [
+        "Ebbinghaus y su curva del olvido",
+        "Bartlett y sus errores de copia",
+        "Anderson y su control ejecutivo"
+      ],
+      "correct": 1,
+      "hint": "Este autor ya hablaba de esquemas y reconstrucción en el Capítulo 1.",
+      "explanation": "Bartlett propuso que recordamos reconstruyendo, lo que permite la entrada de distorsiones y falsedades."
+    },
+    {
+      "q": "El fenómeno del ____ ocurre cuando no distinguimos si una información fue vivida o sugerida posteriormente.",
+      "options": [
+        "fallo en seguimiento de la fuente",
+        "error de monitorización del hipo",
+        "bloqueo de la realidad episódica"
+      ],
+      "correct": 0,
+      "hint": "Es la base de muchas confusiones en los testimonios oculares.",
+      "explanation": "La confusión en la fuente implica atribuir erróneamente el origen de una información (ej. confundir foto con realidad)."
+    },
+    {
+      "q": "Los informes falsos ____ se deben a mecanismos internos propios del funcionamiento normal de nuestra memoria.",
+      "options": [
+        "de tipo espontáneo involuntario",
+        "de tipo implantado externamente",
+        "de tipo inducido por sugestión"
+      ],
+      "correct": 0,
+      "hint": "No requieren de una desinformación externa para producirse.",
+      "explanation": "Los informes espontáneos surgen por procesos endógenos de reconstrucción de la memoria."
+    },
+    {
+      "q": "Las memorias verdaderas activan el hipocampo y la zona ____, a diferencia de las falsas.",
+      "options": [
+        "parietal temporal de la izquierda",
+        "prefrontal de la zona derecha",
+        "amigdalina del sistema límbico"
+      ],
+      "correct": 0,
+      "hint": "Es una diferencia neuroanatómica clave hallada por Schacter.",
+      "explanation": "Schacter et al. observaron activación parietal temporal izquierda solo en recuerdos veraces."
+    },
+    {
+      "q": "La zona ____ del cerebro se encarga, según estudios con lesiones, de evaluar la veracidad de los recuerdos.",
+      "options": [
+        "hipocámpica de la región medial",
+        "prefrontal del lóbulo anterior",
+        "parietal del hemisferio derecho"
+      ],
+      "correct": 1,
+      "hint": "Su activación es característica en el procesamiento de memorias falsas.",
+      "explanation": "La corteza prefrontal supervisa y evalúa la coherencia y veracidad de lo recuperado."
+    },
+    {
+      "q": "La ____ es la incapacidad de los adultos para recordar sucesos personales de sus primeros tres años de vida.",
+      "options": [
+        "amnesia de tipo retrógrada total",
+        "amnesia de tipo infantil normal",
+        "amnesia de tipo funcional previa"
+      ],
+      "correct": 1,
+      "hint": "Se considera un proceso normativo y no una patología.",
+      "explanation": "La amnesia infantil es el vacío de memoria episódica que todos tenemos de nuestra temprana infancia."
+    },
+    {
+      "q": "Una explicación de la amnesia infantil es que los niños no adquieren la ____ hasta los 24 meses.",
+      "options": [
+        "capacidad de lenguaje narrativo",
+        "conciencia del yo o self propio",
+        "madurez total del hipocampo medial"
+      ],
+      "correct": 1,
+      "hint": "Este hito cognitivo es necesario para organizar memorias autobiográficas.",
+      "explanation": "Sin la conciencia de uno mismo como entidad, es difícil anclar recuerdos episódicos personales."
+    },
+    {
+      "q": "Loftus y Kaufman sugieren que la amnesia infantil se debe a una ____ entre el formato de codificación niño y adulto.",
+      "options": [
+        "incompatibilidad de tipo total",
+        "degradación por el paso temporal",
+        "interferencia proactiva masiva"
+      ],
+      "correct": 0,
+      "hint": "Utilizan el símil de un sistema operativo antiguo que no abre archivos nuevos.",
+      "explanation": "La falta de lenguaje en la codificación inicial hace que esos recuerdos sean ilegibles para el sistema adulto."
+    },
+    {
+      "q": "La amnesia ____ implica la incapacidad de aprender y retener nueva información tras un evento traumático.",
+      "options": [
+        "anterógrada de tipo selectiva",
+        "retrógrada de tipo progresiva",
+        "funcional de tipo disociativa"
+      ],
+      "correct": 0,
+      "hint": "El déficit mira hacia el futuro desde el momento de la lesión.",
+      "explanation": "La amnesia anterógrada impide la consolidación de nuevos recuerdos post-lesión."
+    },
+    {
+      "q": "La amnesia ____ es la pérdida de memoria de los sucesos ocurridos antes de una lesión o accidente.",
+      "options": [
+        "anterógrada de tipo episódica",
+        "retrógrada de tipo específica",
+        "postraumática de tipo global"
+      ],
+      "correct": 1,
+      "hint": "El sujeto olvida su pasado previo al impacto o trauma.",
+      "explanation": "La amnesia retrógrada afecta a la información ya almacenada antes del daño cerebral."
+    },
+    {
+      "q": "En la amnesia ____, no existe una lesión cerebral orgánica que justifique la pérdida de memoria retrógrada.",
+      "options": [
+        "funcional de carácter psíquico",
+        "orgánica de carácter sistémico",
+        "anterógrada de carácter grave"
+      ],
+      "correct": 0,
+      "hint": "Suele tener un origen psicológico y un comienzo brusco.",
+      "explanation": "La amnesia funcional es psicógena; el cerebro está intacto pero el acceso a la identidad se pierde."
+    },
+    {
+      "q": "La amnesia ____ suele estar causada por un golpe fuerte y conlleva una pérdida de conciencia temporal.",
+      "options": [
+        "funcional de inicio repentino",
+        "postraumática por traumatismo",
+        "infantil por falta de madurez"
+      ],
+      "correct": 1,
+      "hint": "Puede durar desde segundos hasta semanas tras el accidente.",
+      "explanation": "La amnesia postraumática sigue a un traumatismo craneoencefálico y genera confusión inicial."
+    },
+    {
+      "q": "La ____ ocurre cuando los recuerdos traumáticos persisten de forma intensa e intrusiva contra la voluntad.",
+      "options": [
+        "hipermnesia de tipo afectiva",
+        "amnesia de tipo disociativa",
+        "inhibición de tipo ejecutiva"
+      ],
+      "correct": 0,
+      "hint": "Es el fenómeno opuesto al olvido en situaciones de estrés.",
+      "explanation": "La hipermnesia afectiva es la persistencia vívida de recuerdos con alta carga emocional."
+    },
+    {
+      "q": "La amnesia ____ se caracteriza por recuerdos incompletos o lagunas sobre un evento traumático vivido.",
+      "options": [
+        "funcional de tipo retrógrada",
+        "disociativa de tipo selectiva",
+        "infantil de tipo permanente"
+      ],
+      "correct": 1,
+      "hint": "Es un mecanismo de defensa ante experiencias inasumibles.",
+      "explanation": "La amnesia disociativa fragmenta el recuerdo del trauma para proteger la integridad psicológica."
+    },
+    {
+      "q": "Kihlstrom señala que los recuerdos traumáticos se relacionan más con el procesamiento en la ____ que en el hipocampo.",
+      "options": [
+        "corteza prefrontal dorsolateral",
+        "amígdala del sistema emocional",
+        "zona parietal del lóbulo lateral"
+      ],
+      "correct": 1,
+      "hint": "Esto explica su fuerte carga de miedo y estrés crónico.",
+      "explanation": "El procesamiento amigdalino prioriza la emoción sobre la narrativa contextual del hipocampo."
+    },
+    {
+      "q": "El mecanismo de ____ es necesario para olvidar dónde aparcamos ayer y recordar dónde lo hicimos anoche.",
+      "options": [
+        "interferencia retroactiva pura",
+        "inhibición de huellas previas",
+        "decaimiento de la huella vieja"
+      ],
+      "correct": 1,
+      "hint": "Permite seleccionar la información relevante eliminando la competencia.",
+      "explanation": "Debemos inhibir los sitios de aparcado anteriores para que no interfieran con el actual."
+    },
+    {
+      "q": "La ____ es una característica de la memoria de la población normal y no exclusivamente de patologías.",
+      "options": [
+        "falsa memoria reconstruida",
+        "amnesia retrógrada total",
+        "amnesia anterógrada focal"
+      ],
+      "correct": 0,
+      "hint": "Cualquier persona sana puede sufrir este tipo de distorsiones.",
+      "explanation": "El texto subraya que las falsas memorias son un fenómeno común en sujetos sanos."
+    },
+    {
+      "q": "En el paradigma pensar/no pensar, el grupo que debía evitar el recuerdo mostró un ____ posterior de esas palabras.",
+      "options": [
+        "recuerdo superior por esfuerzo",
+        "recuerdo inferior por inhibición",
+        "recuerdo igual al grupo control"
+      ],
+      "correct": 1,
+      "hint": "La instrucción de no pensar tuvo un efecto real en la accesibilidad.",
+      "explanation": "La inhibición voluntaria redujo significativamente la capacidad de recuperar esos ítems más tarde."
+    },
+    {
+      "q": "El olvido se considera un mecanismo ____ cuando nos permite eliminar información antigua para aprender una nueva.",
+      "options": [
+        "deficitario de la inteligencia",
+        "adaptativo para el sistema",
+        "patológico del almacenamiento"
+      ],
+      "correct": 1,
+      "hint": "Sin él, nuestra memoria estaría saturada de información irrelevante.",
+      "explanation": "El olvido permite la actualización de la memoria y evita la interferencia constante de datos obsoletos."
+    },
+    {
+      "q": "¿Qué factores influyen en la aparición de la interferencia retroactiva en tareas de pares asociados?",
+      "options": [
+        "El intervalo de retención corto",
+        "La similitud de estímulos dados",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Considere tanto el tiempo como la naturaleza de las listas.",
+      "explanation": "El texto afirma que es más pronunciada con intervalos cortos y requiere estímulos comunes."
+    },
+    {
+      "q": "Sobre la definición de olvido, ¿cuáles de las siguientes afirmaciones son precisas según el capítulo?",
+      "options": [
+        "Es un fallo de la recuperación",
+        "Requiere una codificación previa",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Repase los requisitos para que el término sea aplicado científicamente.",
+      "explanation": "Se define como fallo de acceso y exige que la información estuviera almacenada correctamente."
+    },
+    {
+      "q": "¿Qué características definen el mecanismo inhibitorio propuesto por el autor Anderson?",
+      "options": [
+        "Modifica el estado de excitación",
+        "Es un mecanismo de tipo externo",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se mencionaron cuatro características fundamentales en el texto.",
+      "explanation": "La inhibición es externa, modifica la excitación, reduce la actividad y es reversible."
+    },
+    {
+      "q": "La inhibición por utilizar parte del conjunto como claves presenta las siguientes propiedades:",
+      "options": [
+        "No se observa en reconocimiento",
+        "Aumenta si se dan muchas claves",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Recuerde los hallazgos de Slamecka y estudios posteriores.",
+      "explanation": "El efecto es proporcional al número de claves y desaparece en pruebas de reconocimiento."
+    },
+    {
+      "q": "Sobre el fenómeno de las falsas memorias, el texto destaca los siguientes puntos relevantes:",
+      "options": [
+        "Pueden ser informes espontáneos",
+        "Ocurren en la población normal",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Piense en la naturaleza y el origen de estas distorsiones.",
+      "explanation": "Existen formas endógenas (espontáneas) y es un rasgo del funcionamiento normal de la memoria."
+    },
+    {
+      "q": "La amnesia infantil se ha intentado explicar a través de los siguientes factores biológicos o cognitivos:",
+      "options": [
+        "La inmadurez de la zona frontal",
+        "La ausencia de la conciencia yo",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "El texto sugiere una combinación de múltiples causas posibles.",
+      "explanation": "Se citan la inmadurez cerebral, la falta de autoconciencia y el desarrollo del lenguaje."
+    },
+    {
+      "q": "¿En qué situaciones se ha demostrado la existencia de un control inhibitorio sobre la memoria?",
+      "options": [
+        "Al seleccionar qué recuperar hoy",
+        "Al detener un proceso de búsqueda",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Piense en la flexibilidad necesaria para el funcionamiento diario.",
+      "explanation": "La inhibición actúa tanto en la selección competitiva como en la detención voluntaria (pensar/no pensar)."
+    },
+    {
+      "q": "Los sucesos traumáticos pueden generar respuestas mnésicas divergentes en las personas, tales como:",
+      "options": [
+        "La aparición de lagunas de tipo",
+        "Recuerdos de carácter persistente",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Un mismo evento puede causar hipermnesia o amnesia según el sujeto.",
+      "explanation": "El trauma puede derivar en hipermnesia afectiva o en amnesia disociativa según el procesamiento."
+    },
+    {
+      "q": "La interferencia proactiva se caracteriza por las siguientes condiciones experimentales:",
+      "options": [
+        "El aprendizaje previo es dañino",
+        "Intervalo de retención más largo",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Revise cómo afecta el paso del tiempo a este tipo específico de interferencia.",
+      "explanation": "Ocurre cuando lo viejo daña lo nuevo y su efecto crece con intervalos de retención mayores."
+    },
+    {
+      "q": "Sobre el olvido motivado, el texto menciona que puede ser necesario para funciones como:",
+      "options": [
+        "Actualizar el número de móvil",
+        "Evitar recuerdos de tipo trauma",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Piense en el valor adaptativo de eliminar lo que nos hace daño o confunde.",
+      "explanation": "El olvido motivado sirve para evitar interferencias de datos viejos o proteger la psique de traumas."
+    },
+    {
+      "q": "¿Cuáles de estos elementos son comunes en el estudio de la interferencia mediante pares asociados?",
+      "options": [
+        "Uso de una palabra de tipo clave",
+        "Listas con estímulo de tipo A-B",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es el procedimiento estándar descrito en la sección 5.2.",
+      "explanation": "Se emplean palabras estímulo-respuesta y estructuras de listas como A-B y A-C."
+    },
+    {
+      "q": "La recuperación exitosa de información suele pasar desapercibida para nosotros debido a:",
+      "options": [
+        "Que ocurre de forma continuada",
+        "Que es el estado más normalizado",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Solo notamos la memoria cuando falla.",
+      "explanation": "Al ser un proceso constante y mayoritariamente eficaz, no le prestamos atención hasta que hay un fallo."
+    },
+    {
+      "q": "¿Qué implicaciones tienen las falsas memorias en el ámbito judicial según el texto?",
+      "options": [
+        "Pueden provocar fallos de testigo",
+        "La confusión por fotos mostradas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Considere cómo la desinformación externa afecta a un testimonio.",
+      "explanation": "Pueden llevar a testificar contra inocentes debido a confusiones de fuente o sugestión."
+    },
+    {
+      "q": "Respecto a la amnesia postraumática, se pueden observar los siguientes síntomas tras el golpe:",
+      "options": [
+        "Confusión al recobrar conciencia",
+        "Presencia de amnesia anterógrada",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es un cuadro clínico complejo tras un traumatismo craneal.",
+      "explanation": "El paciente suele presentar confusión y déficits tanto retrógrados como anterógrados temporales."
+    },
+    {
+      "q": "La teoría de la interferencia por sobrecarga de claves implica necesariamente:",
+      "options": [
+        "Competición entre varios ítems",
+        "Similitud entre las dos memorias",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Piense en qué hace que una clave falle al intentar recuperar algo.",
+      "explanation": "La clave se asocia a varios objetivos similares que compiten entre sí en la recuperación."
+    },
+    {
+      "q": "¿Qué procesos cerebrales diferencian a las memorias verdaderas de las falsas en neuroimagen?",
+      "options": [
+        "La activación de la zona parietal",
+        "El papel de la corteza prefrontal",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Schacter identificó áreas específicas para cada tipo de recuerdo.",
+      "explanation": "Las verdaderas activan la zona parietal izquierda; las falsas dependen más de la evaluación prefrontal."
+    },
+    {
+      "q": "Sobre el procesamiento de recuerdos traumáticos, se afirma en el texto lo siguiente:",
+      "options": [
+        "Cronifican el dolor y el estrés",
+        "Afectan al cerebro de forma real",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Revise las consecuencias de usar la amígdala como centro de procesamiento.",
+      "explanation": "Estos recuerdos tienen propiedades únicas que incrementan el miedo y alteran la función cerebral normal."
+    },
+    {
+      "q": "El olvido incidental se diferencia del motivado en los siguientes aspectos clave:",
+      "options": [
+        "En la ausencia de una intención",
+        "En los tipos de fallos cometidos",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "La voluntad es el eje divisor entre ambos conceptos.",
+      "explanation": "El incidental ocurre por azar o procesos pasivos, mientras que el motivado es una acción deliberada."
+    },
+    {
+      "q": "La teoría del decaimiento se considera científicamente débil hoy en día porque:",
+      "options": [
+        "No se puede aislar la actividad",
+        "Hay más pruebas de interferencia",
+        "Ninguna es correcta"
+      ],
+      "correct": 0,
+      "hint": "Es casi imposible demostrar el olvido puro sin ninguna interferencia mental.",
+      "explanation": "Es imposible demostrar que el olvido se debe solo al tiempo sin que ocurra ninguna otra actividad mental."
+    },
+    {
+      "q": "En el experimento original del efecto abanico de Anderson, los participantes estudiaban:",
+      "options": [
+        "Listas de palabras sin relación",
+        "Pares de palabras de tipo débil",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se trataba de frases sobre personas y localizaciones.",
+      "explanation": "Estudiaban frases como 'El bombero está en el parque', no listas de palabras sueltas."
+    },
+    {
+      "q": "Según el texto, la eliminación completa de una información de la memoria es:",
+      "options": [
+        "La definición de olvido común",
+        "Un hecho de fácil demostración",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Piense en la viabilidad científica de probar una ausencia total.",
+      "explanation": "El texto indica que es científicamente imposible demostrar que una información ha desaparecido por completo."
+    },
+    {
+      "q": "La inhibición por claves parciales (Slamecka) se caracteriza por mostrar que:",
+      "options": [
+        "Las claves ayudan al recuerdo",
+        "A más claves mejor es el éxito",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Los resultados de este estudio fueron contraintuitivos.",
+      "explanation": "El estudio mostró que las claves inhiben el recuerdo en lugar de facilitarlo."
+    },
+    {
+      "q": "En la amnesia funcional, el paciente se caracteriza principalmente por:",
+      "options": [
+        "Presentar una lesión en el hipo",
+        "Olvidar solo hechos de tipo nuevo",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Su síntoma inicial es muy específico de la identidad.",
+      "explanation": "Su rasgo principal es el comienzo brusco y la pérdida de la identidad personal sin lesión orgánica."
+    },
+    {
+      "q": "Respecto a la amnesia infantil, se afirma que a partir de los 5 años:",
+      "options": [
+        "Olvidamos todo lo de tipo previo",
+        "La zona frontal deja de crecer ya",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "A esa edad la memoria episódica empieza a ser estable.",
+      "explanation": "A partir de los 5 años ya podemos recordar eventos episódicos que perdurarán toda la vida."
+    },
+    {
+      "q": "El paradigma pensar/no pensar de Anderson y Green demostró en su fase final que:",
+      "options": [
+        "La inhibición no afecta al test",
+        "No se puede medir la inhibición",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Hubo un cambio significativo en el rendimiento del grupo experimental.",
+      "explanation": "Demostró que las palabras inhibidas se recordaban significativamente menos en la prueba posterior."
+    },
+    {
+      "q": "La interferencia retroactiva se estudia comparando un grupo experimental con un grupo control que:",
+      "options": [
+        "Aprende una lista de tipo C-D",
+        "Aprende la lista A-C al inicio",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "El grupo control no debe realizar ninguna tarea de aprendizaje relevante en medio.",
+      "explanation": "El grupo control realiza una tarea de relleno no relevante durante el tiempo que el experimental aprende A-C."
+    },
+    {
+      "q": "Según Schacter, en el reconocimiento de memorias falsas, el cerebro activa:",
+      "options": [
+        "Solo la zona parietal izquierda",
+        "La amígdala de forma selectiva",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se activan áreas relacionadas con la monitorización ejecutiva.",
+      "explanation": "Activan el hipocampo y la zona prefrontal, pero no la parietal temporal izquierda."
+    },
+    {
+      "q": "La memoria traumática se diferencia de la común en que los recuerdos traumáticos:",
+      "options": [
+        "Son copias literales del evento",
+        "Se procesan solo en el hipocampo",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Piense en la implicación de la amígdala y la veracidad constructiva.",
+      "explanation": "No son copias literales y se procesan más en la amígdala que en el hipocampo."
+    },
+    {
+      "q": "En el fenómeno de inhibición de Anderson, se establece que los cambios producidos son:",
+      "options": [
+        "Definitivos sobre la huella ya",
+        "Internos de la estructura nodal",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es una de las cuatro características básicas del mecanismo.",
+      "explanation": "Los cambios son externos y reversibles, no definitivos ni puramente internos."
+    },
+    {
+      "q": "La interferencia proactiva es especialmente pronunciada cuando el intervalo de retención es:",
+      "options": [
+        "De una duración de tipo mínima",
+        "Exactamente igual a la previa",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "El efecto de lo viejo sobre lo nuevo necesita tiempo para manifestarse con fuerza.",
+      "explanation": "Es más pronunciada cuando el intervalo de retención es mayor, no mínimo."
+    },
+    {
+      "q": "Sobre la amnesia postraumática, el texto indica que los problemas de memoria suelen:",
+      "options": [
+        "Empeorar con el paso del tiempo",
+        "Afectar a toda la vida del sujeto",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "La evolución de este tipo de amnesia suele ser positiva.",
+      "explanation": "Los problemas suelen mejorar con el tiempo y se limitan a una ventana temporal concreta."
+    },
+    {
+      "q": "El término 'olvido motivado' se asocia en el texto con la intención de:",
+      "options": [
+        "Recordar dónde están las llaves",
+        "Mejorar la capacidad de tipo A-B",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Implica una voluntad de suprimir una información específica.",
+      "explanation": "Se asocia con la intención de olvidar (ej. un número antiguo o un trauma), no con buscar llaves."
+    },
+    {
+      "q": "En el experimento de Loftus (1974), los participantes eran estudiantes que veían:",
+      "options": [
+        "Fotos de sospechosos de crimen",
+        "Listas de palabras categorizadas",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "El material consistía en grabaciones dinámicas.",
+      "explanation": "Veían grabaciones de accidentes de coches, no fotos de sospechosos ni listas de palabras."
+    },
+    {
+      "q": "La amnesia disociativa se produce habitualmente ante sucesos que ponen en peligro:",
+      "options": [
+        "La capacidad de tipo episódica",
+        "El desarrollo del lenguaje oral",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se relaciona con la integridad global del individuo.",
+      "explanation": "Se produce ante peligros para la integridad física y psicológica, no solo por la memoria episódica."
+    },
+    {
+      "q": "La inhibición por claves parciales se explica porque el sujeto abandona la búsqueda cuando:",
+      "options": [
+        "Las huellas nuevas no aparecen",
+        "Las claves dadas son de tipo A-C",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "La presencia de claves erróneas o competidoras causa frustración en el proceso.",
+      "explanation": "El sujeto abandona porque las claves activan respuestas que compiten e interfieren en la recuperación."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "¿Por qué la psicología experimental actual prefiere definir el olvido como un fallo en la recuperación en lugar de la eliminación de la información?",
+      "model": "Científicamente es imposible demostrar que una huella de memoria ha desaparecido por completo del almacén. Por ello, se define como la imposibilidad de acceder a la información en el momento necesario. Para hablar de olvido técnico, es imprescindible que la información haya sido codificada y recuperada previamente con éxito, asegurando su existencia en la memoria.",
+      "keywords": [
+        "fallo en recuperación",
+        "huella de memoria",
+        "codificación previa"
+      ],
+      "page": 57
+    },
+    {
+      "q": "Diferencie entre olvido incidental y olvido motivado, aportando ejemplos de su función adaptativa.",
+      "model": "El olvido incidental ocurre sin intención (ej. perder las llaves), mientras que el motivado es intencional para evitar interferencias o malestar (ej. olvidar un número antiguo). Ambos son adaptativos porque limpian el sistema de información obsoleta o traumática, permitiendo una recuperación más eficiente de lo relevante.",
+      "keywords": [
+        "incidental",
+        "motivado",
+        "función adaptativa"
+      ],
+      "page": 57
+    },
+    {
+      "q": "Compare la teoría del decaimiento con la teoría de la interferencia en la explicación del olvido.",
+      "model": "El decaimiento propone un proceso pasivo donde el paso del tiempo debilita la huella. La interferencia sostiene que el olvido ocurre porque otras huellas dificultan el acceso. La interferencia goza de más respaldo científico ya que el decaimiento es difícil de probar en ausencia de actividad mental.",
+      "keywords": [
+        "decaimiento",
+        "interferencia",
+        "paso del tiempo"
+      ],
+      "page": 57
+    },
+    {
+      "q": "Explique la evolución del concepto de interferencia: de la degradación a la sobrecarga de claves.",
+      "model": "Inicialmente se veía como una degradación física del almacenamiento por nueva información, sin importar la similitud. Posteriormente, la teoría de sobrecarga de claves propuso que el fallo es de recuperación: una misma clave se asocia a demasiadas memorias similares, dificultando el acceso a la correcta.",
+      "keywords": [
+        "degradación",
+        "sobrecarga de claves",
+        "similitud"
+      ],
+      "page": 57
+    },
+    {
+      "q": "Analice el procedimiento experimental para demostrar la interferencia retroactiva mediante listas de pares asociados.",
+      "model": "Se utilizan dos grupos. Ambos aprenden la lista A-B. El experimental aprende luego A-C, mientras el control descansa. Al pedir el recuerdo de A-B, el grupo experimental rinde menos porque el nuevo aprendizaje (A-C) interfiere con el anterior (A-B). El efecto es mayor con intervalos de retención cortos.",
+      "keywords": [
+        "A-B",
+        "A-C",
+        "aprendizaje nuevo",
+        "retroactiva"
+      ],
+      "page": 58
+    },
+    {
+      "q": "Describa el fenómeno de la interferencia proactiva y el papel del intervalo de retención en su intensidad.",
+      "model": "Ocurre cuando memorias viejas dificultan el nuevo aprendizaje (ej. recordar el número de teléfono antiguo en lugar del nuevo). Experimentalmente, el aprendizaje previo de A-B perjudica el recuerdo posterior de A-C. A diferencia de la retroactiva, la interferencia proactiva se vuelve más pronunciada conforme aumenta el intervalo de retención.",
+      "keywords": [
+        "proactiva",
+        "conocimiento viejo",
+        "intervalo de retención"
+      ],
+      "page": 58
+    },
+    {
+      "q": "Explique en qué consiste el 'efecto abanico' de Anderson y qué revela sobre la estructura de la memoria.",
+      "model": "El efecto abanico demuestra que el tiempo de reconocimiento aumenta proporcionalmente a la cantidad de información (hechos) asociados a un mismo concepto o persona. Revela que las claves de recuperación tienen una capacidad limitada y que la competencia entre huellas ralentiza el proceso de búsqueda.",
+      "keywords": [
+        "efecto abanico",
+        "Anderson",
+        "tiempo de respuesta",
+        "competencia"
+      ],
+      "page": 59
+    },
+    {
+      "q": "Defina el mecanismo de inhibición según Anderson (2007) y enumere sus cuatro características básicas.",
+      "model": "Es un mecanismo de control ejecutivo que reduce la accesibilidad de huellas competidoras. Sus características son: 1) Es un mecanismo externo a la huella, 2) Modifica el estado de excitación de la misma, 3) Reduce su actividad para hacerla menos accesible, y 4) Los cambios producidos son reversibles.",
+      "keywords": [
+        "inhibición",
+        "control ejecutivo",
+        "excitación",
+        "reversible"
+      ],
+      "page": 60
+    },
+    {
+      "q": "Analice el fenómeno de 'inhibición por utilizar parte del conjunto como claves' (Slamecka, 1968).",
+      "model": "Paradójicamente, presentar algunos elementos de una lista como 'ayuda' para recordar el resto empeora el rendimiento. Esto ocurre porque las claves proporcionadas se asocian a sus propias respuestas y fortalecen su posición, haciendo que el sujeto abandone la búsqueda del resto de elementos ante la competencia generada.",
+      "keywords": [
+        "Slamecka",
+        "claves de recuperación",
+        "competencia",
+        "bloqueo"
+      ],
+      "page": 60
+    },
+    {
+      "q": "Explique el concepto de 'olvido inducido por la recuperación' y su valor adaptativo.",
+      "model": "El acto de recordar información específica provoca el olvido de información relacionada no deseada. El sistema inhibe activamente las huellas competidoras para facilitar el acceso a la meta actual. Es adaptativo porque reduce la interferencia futura y optimiza la recuperación selectiva.",
+      "keywords": [
+        "recuperación selectiva",
+        "inhibición",
+        "huellas competidoras"
+      ],
+      "page": 60
+    },
+    {
+      "q": "Describa el paradigma 'pensar/no pensar' de Anderson y Green (2001) y sus conclusiones sobre el control voluntario del olvido.",
+      "model": "Los sujetos aprenden pares de palabras. En la fase crítica, ante una clave, se les ordena activamente 'no pensar' en la respuesta. En la prueba final, el recuerdo de las palabras inhibidas es significativamente inferior. Concluye que existe un mecanismo de control que puede impedir que recuerdos accedan a la consciencia, alterando su activación posterior.",
+      "keywords": [
+        "pensar/no pensar",
+        "control voluntario",
+        "supresión"
+      ],
+      "page": 61
+    },
+    {
+      "q": "Relacione las teorías de Bartlett sobre la reconstrucción de la memoria con el estudio de las falsas memorias.",
+      "model": "Bartlett propuso que la memoria no es una copia literal, sino una construcción activa basada en esquemas. Las falsas memorias confirman esto: el sujeto rellena lagunas o modifica significados basándose en expectativas o información post-evento, creando un recuerdo veraz para el individuo pero ficticio en la realidad.",
+      "keywords": [
+        "Bartlett",
+        "construcción",
+        "esquemas",
+        "copia literal"
+      ],
+      "page": 61
+    },
+    {
+      "q": "Explique cómo el experimento de Loftus (1974) demuestra la maleabilidad de la memoria mediante el lenguaje.",
+      "model": "Loftus mostró vídeos de accidentes y varió el verbo en la pregunta sobre la velocidad (ej. 'estrellarse' vs. 'contactar'). Los verbos más intensos provocaron estimaciones de velocidad más altas. Demuestra que la información sugerida durante la recuperación puede alterar retroactivamente el recuerdo original del evento.",
+      "keywords": [
+        "Loftus",
+        "sugestión",
+        "maleabilidad",
+        "información post-evento"
+      ],
+      "page": 61
+    },
+    {
+      "q": "Defina 'confusión en el seguimiento de la fuente' y su papel en la creación de informes falsos implantados.",
+      "model": "Es un fallo meta-cognitivo donde el sujeto no distingue si el origen de un recuerdo es la experiencia original o una sugestión posterior (desinformación exógena). Al no poder identificar la fuente, la información engañosa se integra en el recuerdo principal como si fuera real.",
+      "keywords": [
+        "seguimiento de la fuente",
+        "desinformación",
+        "sugestión"
+      ],
+      "page": 62
+    },
+    {
+      "q": "Compare las bases neurobiológicas de las memorias verdaderas frente a las falsas según Schacter et al. (1996).",
+      "model": "Ambas activan el hipocampo. Sin embargo, las memorias verdaderas muestran actividad adicional en la zona parietal temporal izquierda (procesamiento sensorial), mientras que las falsas activan la zona prefrontal, relacionada con procesos de evaluación, monitorización y búsqueda de veracidad.",
+      "keywords": [
+        "hipocampo",
+        "parietal temporal",
+        "prefrontal",
+        "neuroimagen"
+      ],
+      "page": 62
+    },
+    {
+      "q": "Analice la hipótesis de la inmadurez biológica como explicación de la amnesia infantil.",
+      "model": "Sugiere que la incapacidad de recordar los primeros 3 años se debe a que estructuras críticas como el hipocampo y la corteza prefrontal no están plenamente desarrolladas. El cerebro aún no está biológicamente preparado para realizar procesos complejos de codificación y recuperación de larga duración.",
+      "keywords": [
+        "amnesia infantil",
+        "hipocampo",
+        "inmadurez",
+        "desarrollo"
+      ],
+      "page": 62
+    },
+    {
+      "q": "Explique la relación entre la 'conciencia del yo' y la aparición de la memoria autobiográfica.",
+      "model": "Investigaciones sugieren que hasta que el niño no adquiere el concepto de 'yo' (hacia los 24 meses), no puede organizar los eventos como experiencias personales. Este hito cognitivo actúa como el anclaje necesario para formar y almacenar memorias episódicas duraderas sobre la propia vida.",
+      "keywords": [
+        "conciencia del yo",
+        "memoria autobiográfica",
+        "hito cognitivo"
+      ],
+      "page": 62
+    },
+    {
+      "q": "Describa el símil del sistema operativo de Loftus y Kaufman (1992) para explicar la amnesia infantil.",
+      "model": "Comparan la memoria con un documento creado en un sistema operativo antiguo. El lenguaje adulto (sistema nuevo) es incompatible con el formato de codificación pre-verbal o infantil (sistema viejo). La información podría estar ahí, pero es ilegible porque el formato de recuperación ha cambiado drásticamente.",
+      "keywords": [
+        "lenguaje",
+        "formato de codificación",
+        "incompatibilidad"
+      ],
+      "page": 62
+    },
+    {
+      "q": "Diferencie entre amnesia retrógrada y anterógrada, mencionando su manifestación en casos orgánicos frente a funcionales.",
+      "model": "La retrógrada es la pérdida de recuerdos previos al trauma; la anterógrada es la incapacidad de formar nuevos recuerdos. En las orgánicas (lesiones), suelen aparecer ambas. En la funcional (psicógena), ocurre una amnesia retrógrada brusca, a menudo con pérdida de identidad personal, pero manteniendo la capacidad anterógrada intacta.",
+      "keywords": [
+        "retrógrada",
+        "anterógrada",
+        "orgánica",
+        "funcional"
+      ],
+      "page": 63
+    },
+    {
+      "q": "Analice las características de la amnesia postraumática tras un fuerte golpe en la cabeza.",
+      "model": "Supone una pérdida de conciencia y posterior estado de confusión. Puede presentar una ventana de amnesia (tanto retrógrada como anterógrada) limitada a los minutos u horas cercanos al accidente. Fuera de ese periodo la memoria funciona normal y suele haber una recuperación progresiva con el tiempo.",
+      "keywords": [
+        "confusión",
+        "ventana temporal",
+        "pérdida de conciencia"
+      ],
+      "page": 63
+    },
+    {
+      "q": "Explique la paradoja de la memoria traumática: hipermnesia afectiva vs. amnesia disociativa.",
+      "model": "La carga emocional intensa suele consolidar mejor los recuerdos (hipermnesia). Sin embargo, en traumas graves, algunas personas experimentan lo opuesto: amnesia disociativa con lagunas o recuerdos incompletos. Esto depende de cómo cada individuo procesa el evento y de la respuesta de estrés del organismo.",
+      "keywords": [
+        "hipermnesia",
+        "disociativa",
+        "carga emocional",
+        "trauma"
+      ],
+      "page": 63
+    },
+    {
+      "q": "Detalle el papel de la amígdala frente al hipocampo en el procesamiento de recuerdos de eventos traumáticos.",
+      "model": "Los recuerdos traumáticos parecen estar más ligados a la amígdala que al hipocampo. Esto implica un procesamiento emocional/sensorial crónico que prioriza la sensación de miedo y estrés sobre la contextualización narrativa del hipocampo, lo que contribuye a que el dolor se cronifique y el recuerdo sea intrusivo.",
+      "keywords": [
+        "amígdala",
+        "hipocampo",
+        "miedo",
+        "estrés"
+      ],
+      "page": 63
+    },
+    {
+      "q": "Justifique por qué el olvido puede considerarse un mecanismo adaptativo y no solo un fallo del sistema.",
+      "model": "El olvido permite eliminar información irrelevante o desactualizada (como un sitio de aparcamiento antiguo) para evitar interferencias. Además, la inhibición selectiva de recuerdos dolorosos o traumáticos protege la integridad psicológica y facilita el enfoque en metas presentes y funcionales.",
+      "keywords": [
+        "adaptativo",
+        "interferencia",
+        "integridad psicológica"
+      ],
+      "page": 59
+    },
+    {
+      "q": "Explique por qué las falsas memorias son especialmente peligrosas en el ámbito judicial y qué factores las potencian.",
+      "model": "Ocurren en población no patológica y son subjetivamente indistinguibles de las reales. Se potencian por la presentación de fotografías de sospechosos (sugestión), preguntas capciosas o la presión social, lo que puede llevar a testigos a declarar con total seguridad sobre eventos que nunca ocurrieron.",
+      "keywords": [
+        "testigos",
+        "judicial",
+        "sugestión",
+        "población normal"
+      ],
+      "page": 62
+    },
+    {
+      "q": "Describa el perfil típico de un paciente con amnesia funcional respecto a su identidad y memoria anterógrada.",
+      "model": "El inicio es brusco y lo primero que se pierde es la identidad personal (nombre, pasado). Paradójicamente, a pesar de esta masiva amnesia retrógrada, su capacidad para retener nueva información después del inicio del trastorno (memoria anterógrada) suele mantenerse buena y funcional.",
+      "keywords": [
+        "identidad personal",
+        "inicio brusco",
+        "anterógrada intacta"
+      ],
+      "page": 63
+    },
+    {
+      "q": "¿Qué papel juega la zona prefrontal en la discriminación entre recuerdos reales y falsos?",
+      "model": "La zona prefrontal se encarga de los procesos de monitorización y evaluación de la veracidad. Estudios con pacientes con daño en esta área muestran una incapacidad para distinguir fantasía de realidad, confirmando que esta región actúa como un filtro crítico para la autenticidad de lo recordado.",
+      "keywords": [
+        "zona prefrontal",
+        "monitorización",
+        "veracidad",
+        "filtro"
+      ],
+      "page": 62
+    },
+    {
+      "q": "Explique la importancia de los procesos de codificación y almacenamiento en la definición técnica de olvido.",
+      "model": "Para diagnosticar olvido, debemos asegurar que el fallo es de recuperación. Si la codificación fue defectuosa o el almacenamiento nunca ocurrió (por falta de atención, por ejemplo), no se puede hablar de olvido, ya que la huella de memoria nunca llegó a existir en el sistema.",
+      "keywords": [
+        "codificación",
+        "almacenamiento",
+        "huella inexistente"
+      ],
+      "page": 57
+    },
+    {
+      "q": "Analice el impacto de la similitud entre estímulos en la teoría de la interferencia por sobrecarga de claves.",
+      "model": "La similitud es crítica: cuando dos memorias comparten la misma clave de recuperación o características muy parecidas, compiten entre sí. Cuanto más similares sean los elementos (como en las listas A-B y A-C), más probable es que la clave se sobrecargue y el sistema recupere la huella errónea o bloquee el acceso.",
+      "keywords": [
+        "similitud",
+        "competencia",
+        "sobrecarga"
+      ],
+      "page": 57
+    },
+    {
+      "q": "¿Cómo influye la instrucción de 'no pensar' en la accesibilidad posterior del recuerdo según el paradigma de Anderson?",
+      "model": "La instrucción activa procesos inhibitorios que reducen el nivel de excitación de la huella. Al intentar suprimir voluntariamente el acceso al recuerdo, este se vuelve menos accesible incluso cuando más tarde se intenta recuperar de forma intencionada, demostrando un efecto duradero de la inhibición.",
+      "keywords": [
+        "supresión",
+        "excitación",
+        "accesibilidad"
+      ],
+      "page": 61
+    },
+    {
+      "q": "Relacione el fenómeno de la amnesia postraumática con la ventana de tiempo del accidente.",
+      "model": "La pérdida de memoria suele ser selectiva para los momentos inmediatamente anteriores y posteriores al impacto. Fuera de esta ventana específica, el paciente recuerda su vida pasada y puede aprender cosas nuevas una vez pasado el estado confusional inicial, lo que sugiere una interrupción temporal de la consolidación.",
+      "keywords": [
+        "ventana temporal",
+        "consolidación",
+        "impacto"
+      ],
+      "page": 63
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Conceptos Básicos",
+      "q": "¿Por qué solemos dar más importancia al olvido que al recuerdo en la vida cotidiana?",
+      "a": "Porque el olvido llama nuestra atención cuando falla la memoria, a pesar de que la mayoría de los procesos de recuperación se realizan de forma exitosa y constante.",
+      "page": 56
+    },
+    {
+      "cat": "Conceptos Básicos",
+      "q": "¿Cuáles son las dos interpretaciones principales del término 'olvido' en el ámbito investigador?",
+      "a": "Puede entenderse como la eliminación completa de una información determinada o simplemente como un fallo en el proceso de recuperación.",
+      "page": 57
+    },
+    {
+      "cat": "Conceptos Básicos",
+      "q": "¿Cuál es la definición de olvido más aceptada científicamente?",
+      "a": "La imposibilidad de acceder y recuperar información en un momento determinado, entendiéndolo como un fallo de recuperación más que como una desaparición total de la huella.",
+      "page": 57
+    },
+    {
+      "cat": "Conceptos Básicos",
+      "q": "¿Qué condición previa es necesaria para que podamos hablar técnicamente de 'olvido'?",
+      "a": "Es necesario que la información haya sido codificada, almacenada y recuperada con éxito en algún momento previo para asegurar que realmente existía en la memoria.",
+      "page": 57
+    },
+    {
+      "cat": "Conceptos Básicos",
+      "q": "¿En qué situaciones el olvido se considera una necesidad adaptativa?",
+      "a": "Cuando necesitamos eliminar información obsoleta (como un número de teléfono antiguo) para recordar información nueva sin que se produzcan interferencias.",
+      "page": 57
+    },
+    {
+      "cat": "Conceptos Básicos",
+      "q": "¿Qué diferencia al olvido incidental del olvido motivado?",
+      "a": "El incidental ocurre sin intención (ej. olvidar las llaves), mientras que el motivado se produce por el deseo consciente de eliminar un recuerdo (ej. un dato antiguo).",
+      "page": 57
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Qué sostiene la teoría del decaimiento sobre el olvido?",
+      "a": "Asume que el olvido es un proceso pasivo causado simplemente por el paso del tiempo, similar a la curva del olvido de Ebbinghaus.",
+      "page": 57
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Por qué la teoría del decaimiento perdió fuerza frente a la de la interferencia?",
+      "a": "Debido a la imposibilidad de demostrar científicamente el olvido en ausencia de cualquier otra actividad mental y por la solidez de los resultados experimentales sobre interferencia.",
+      "page": 57
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Cuál es la premisa principal de la teoría de la interferencia?",
+      "a": "Indica que olvidamos porque la huella de memoria se ve obstaculizada o alterada por otras memorias similares o nuevas.",
+      "page": 57
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Cómo explica la interferencia la teoría de la 'degradación de la memoria'?",
+      "a": "Postula que la nueva información produce un efecto degradante sobre la antigua independientemente de su semejanza, siendo un problema puramente de almacenamiento.",
+      "page": 57
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Qué propone la teoría de la interferencia por 'sobrecarga de claves'?",
+      "a": "Propone que una misma clave de recuperación se asocia a demasiadas memorias, lo que provoca que la clave falle al intentar recuperar una información específica.",
+      "page": 57
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Por qué es importante la similitud en la teoría de sobrecarga de claves?",
+      "a": "Porque los elementos similares tienden a asociarse a la misma clave de recuperación, compitiendo entre sí durante el proceso de acceso a la información.",
+      "page": 57
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿En qué consiste el método de 'aprendizaje de pares asociados'?",
+      "a": "En estudiar listas de pares de palabras donde la primera actúa como estímulo (clave) y la segunda como respuesta que debe ser recordada.",
+      "page": 57
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Qué es la interferencia retroactiva?",
+      "a": "Es el fenómeno donde el aprendizaje nuevo de material similar interfiere y perjudica el recuerdo de memorias antiguas.",
+      "page": 58
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Cómo se demuestra la interferencia retroactiva en el laboratorio?",
+      "a": "Mediante dos grupos: el experimental aprende la lista A-B y luego A-C; al pedirle que recuerde la A-B, rinde peor que el grupo control que solo hizo una tarea de relleno.",
+      "page": 58
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Cuándo es más pronunciada la interferencia retroactiva?",
+      "a": "Cuando el intervalo de retención (tiempo entre el aprendizaje de la segunda lista y la prueba) es corto.",
+      "page": 58
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Qué requisito de diseño es esencial para que ocurra interferencia retroactiva según los estudios?",
+      "a": "Que las listas de aprendizaje compartan los estímulos (claves); si las listas son totalmente diferentes, el efecto no suele ocurrir.",
+      "page": 58
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Qué es la interferencia proactiva?",
+      "a": "Es cuando los recuerdos viejos o aprendizajes previos dificultan o interfieren en la recuperación de nuevos conocimientos similares.",
+      "page": 58
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿En qué momento se hace más pronunciada la interferencia proactiva?",
+      "a": "A diferencia de la retroactiva, la proactiva se vuelve más pronunciada conforme el intervalo de retención es mayor.",
+      "page": 59
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Qué ejemplo cotidiano ilustra la interferencia proactiva?",
+      "a": "Intentar recordar un nuevo número de teléfono y que, involuntariamente, nos venga a la mente el número antiguo que usamos durante años.",
+      "page": 59
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Qué es el 'efecto abanico' descubierto por Anderson?",
+      "a": "Es el incremento en el tiempo de respuesta o errores durante el reconocimiento conforme aumenta la cantidad de información asociada a un mismo concepto.",
+      "page": 59
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Cómo se midió el efecto abanico en el experimento original de 1974?",
+      "a": "Variando la cantidad de localizaciones asociadas a una misma persona en frases memorizadas (ej. 1, 2 o 3 lugares para 'el bombero').",
+      "page": 59
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Por qué es necesario un mecanismo inhibitorio para el buen funcionamiento de la memoria?",
+      "a": "Para evitar que información competitiva asociada a una misma clave interfiera con el material que deseamos recuperar en un momento específico.",
+      "page": 59
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Cómo define Anderson (2007) el mecanismo de inhibición?",
+      "a": "Como un mecanismo externo que actúa sobre una huella de memoria modificando su estado de excitación para hacerla menos accesible de forma reversible.",
+      "page": 59
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Cuáles son las cuatro características básicas de la inhibición según Anderson?",
+      "a": "Es externa a la huella, modifica su excitación, reduce su actividad (accesibilidad) y los cambios son reversibles.",
+      "page": 60
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Qué función cumple el 'control ejecutivo' en la recuperación de la memoria?",
+      "a": "Permite resolver la interferencia seleccionando la huella deseada e inhibiendo las competidoras.",
+      "page": 60
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Qué ocurre cuando intentamos recordar un nombre y nos ofrecen múltiples sugerencias incorrectas?",
+      "a": "Se produce un bloqueo o inhibición que empeora el recuerdo, ya que las claves adicionales activan huellas competidoras que desbordan el sistema.",
+      "page": 60
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Qué es la 'inhibición por utilizar parte del conjunto como claves'?",
+      "a": "Es el fenómeno donde proporcionar algunos elementos de una lista como ayuda para recordar el resto, paradójicamente, empeora el rendimiento en comparación con no dar claves.",
+      "page": 60
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿En qué tipo de pruebas NO se observa la inhibición por parte del conjunto?",
+      "a": "En las pruebas de reconocimiento, ya que el problema reside en el proceso de búsqueda y recuperación, no en el almacenamiento.",
+      "page": 60
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Por qué las claves parciales pueden llevar al sujeto a abandonar la búsqueda?",
+      "a": "Porque las claves se asocian a las respuestas ya presentadas, que compiten con las que faltan por recordar, saturando el proceso de recuperación.",
+      "page": 60
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Qué se entiende por 'olvido inducido por la recuperación'?",
+      "a": "Es la inhibición de huellas de memoria no deseadas que ocurre como consecuencia directa del acto de recordar otra información relacionada.",
+      "page": 60
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Cuál es la utilidad adaptativa del olvido inducido por la recuperación?",
+      "a": "Reduce la activación de huellas irrelevantes, disminuyendo así la interferencia futura y facilitando el acceso a lo que es útil en el momento.",
+      "page": 60
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿En qué consiste el 'paradigma pensar/no pensar' de Anderson y Green?",
+      "a": "En un procedimiento donde se instruye a los sujetos para evitar conscientemente que una palabra respuesta acceda a su memoria ante la presencia de una clave.",
+      "page": 61
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Qué fases componen el estudio del paradigma pensar/no pensar?",
+      "a": "Fase 1: estudio de pares débiles; Fase 2: instrucciones de responder o de 'no pensar'; Fase 3: prueba de recuerdo con clave.",
+      "page": 61
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Cuáles fueron los resultados del paradigma pensar/no pensar?",
+      "a": "El recuerdo de las palabras que habían sido activamente inhibidas fue significativamente inferior al de las palabras que no fueron inhibidas.",
+      "page": 61
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Cómo apoya la neuroimagen la teoría de la inhibición en el olvido?",
+      "a": "Confirmando que existen procesos activos en el cerebro que reducen la activación de huellas de memoria específicas durante tareas de control.",
+      "page": 61
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Por qué se dice que el olvido es a menudo un 'mecanismo adaptativo'?",
+      "a": "Porque nos permite focalizar la atención en lo relevante (ej. sitio de aparcamiento de hoy) y proteger la consciencia de información traumática.",
+      "page": 61
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Qué define a una 'falsa memoria'?",
+      "a": "Es el recuerdo veraz subjetivo de un evento que en la realidad no ocurrió o que fue modificado parcial o totalmente.",
+      "page": 61
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Cómo se relaciona el estudio de las falsas memorias con las teorías de Bartlett?",
+      "a": "Confirma que la memoria es un proceso constructivo y no una copia literal, lo que permite la introducción de errores y distorsiones durante la reconstrucción.",
+      "page": 61
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Qué demostró Loftus (1974) con su experimento de los accidentes de coche?",
+      "a": "Que el uso de palabras específicas en las preguntas (ej. 'estrellar' vs 'chocar') altera la estimación de velocidad y el recuerdo posterior de los participantes.",
+      "page": 61
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Qué es la 'confusión en el seguimiento de la fuente'?",
+      "a": "Es un error donde la persona no identifica correctamente el origen de una información, mezclando lo sugerido externamente con lo vivido realmente.",
+      "page": 62
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Qué diferencia hay entre informes falsos 'espontáneos' e 'implantados'?",
+      "a": "Los espontáneos surgen de mecanismos internos normales de la memoria; los implantados se deben a desinformación externa o sugerencias engañosas.",
+      "page": 62
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Por qué las falsas memorias son críticas en el ámbito judicial?",
+      "a": "Porque un testigo puede declarar con total seguridad contra alguien basándose en recuerdos que han sido contaminados o creados erróneamente.",
+      "page": 62
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Las falsas memorias son exclusivas de personas con patologías?",
+      "a": "No, son una característica intrínseca del funcionamiento de la memoria en la población normal.",
+      "page": 62
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Podemos distinguir subjetivamente una memoria verdadera de una falsa?",
+      "a": "No, subjetivamente la similitud es tan grande que resultan indistinguibles para la persona que las experimenta.",
+      "page": 62
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Qué diferencias neurobiológicas encontró Schacter et al. (1996) entre memorias verdaderas y falsas?",
+      "a": "Las verdaderas activan el hipocampo y la zona parietal temporal izquierda; las falsas activan el hipocampo y la zona prefrontal.",
+      "page": 62
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿De qué se encarga la zona prefrontal en relación con los recuerdos?",
+      "a": "Se encarga de la evaluación de la veracidad y el monitoreo de los recuerdos recuperados.",
+      "page": 62
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué es la amnesia infantil?",
+      "a": "Es la incapacidad normal de los adultos para recordar sucesos autobiográficos ocurridos durante los primeros tres años de vida.",
+      "page": 62
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿A qué edad empezamos a generar recuerdos episódicos duraderos?",
+      "a": "Generalmente a partir de los cinco años de edad.",
+      "page": 62
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Cómo explica la inmadurez cerebral la amnesia infantil?",
+      "a": "Sugiere que el hipocampo y la corteza prefrontal no están biológicamente listos para codificar y recuperar información episódica en los primeros años.",
+      "page": 62
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué hito cognitivo se cree necesario para adquirir memorias autobiográficas?",
+      "a": "La adquisición de la 'conciencia del yo', que ocurre aproximadamente a los 24 meses de edad.",
+      "page": 62
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Cuál es el símil del 'sistema operativo' propuesto por Loftus y Kaufman?",
+      "a": "Sugieren que las memorias tempranas se codifican en un lenguaje no verbal que es incompatible con el 'formato' de recuperación del lenguaje adulto.",
+      "page": 62
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué distingue a las amnesias funcionales de las orgánicas?",
+      "a": "Las orgánicas son causadas por lesiones físicas cerebrales, mientras que las funcionales carecen de una lesión cerebral que las justifique.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué es la amnesia retrógrada?",
+      "a": "Es la incapacidad selectiva para recordar sucesos o información que ocurrieron antes de un accidente o evento desencadenante.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué es la amnesia anterógrada?",
+      "a": "Es la incapacidad para aprender o almacenar nueva información a partir del momento en que se produce el déficit.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Cuál es la característica principal del inicio de una amnesia funcional?",
+      "a": "Suele tener un comienzo brusco y lo primero que se pierde es la identidad personal del individuo.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Cómo suele ser la capacidad de retención posterior en pacientes con amnesia funcional?",
+      "a": "Generalmente es buena para los hechos ocurridos después del comienzo de la amnesia.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué provoca típicamente la amnesia postraumática?",
+      "a": "Un golpe fuerte en la cabeza (caída, accidente) que conlleva una pérdida de consciencia.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Cuál es el pronóstico habitual de los problemas de memoria en la amnesia postraumática?",
+      "a": "Suelen mejorar con el paso del tiempo, ya que la memoria fuera de la ventana temporal del accidente suele funcionar con normalidad.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué son los sucesos traumáticos?",
+      "a": "Adversidades no cotidianas que ponen en grave peligro la integridad física y psicológica de una persona.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Cómo suele afectar la carga emocional a la consolidación de recuerdos?",
+      "a": "Normalmente, una carga emocional intensa favorece que los recuerdos se consoliden mejor en la memoria.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué es la hipermnesia afectiva?",
+      "a": "Es cuando un trauma da lugar a recuerdos persistentes e intrusivos que se repiten en contra de la voluntad de la persona.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué es la amnesia disociativa?",
+      "a": "Es un olvido de lo ocurrido durante un evento traumático, manifestándose como recuerdos incompletos o lagunas temporales.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Por qué no todas las personas procesan igual los eventos traumáticos?",
+      "a": "Porque la vivencia de un asalto o robo depende de la vulnerabilidad individual y de cómo el hecho inmoviliza a la persona hasta cronificarse.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Con qué estructura cerebral se relacionan más los recuerdos traumáticos según Kihlstrom?",
+      "a": "Parecen estar más relacionados con el procesamiento en la amígdala que en el hipocampo.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué consecuencias tiene el procesamiento amigdalino en la memoria traumática?",
+      "a": "Cronifica el dolor, incrementa la sensación de miedo y estrés, y afecta el funcionamiento normal del cerebro.",
+      "page": 63
+    },
+    {
+      "cat": "Conceptos Básicos",
+      "q": "¿Cómo se entiende el olvido como un fallo en el proceso de recuperación?",
+      "a": "Como la incapacidad de encontrar la ruta de acceso a una huella que sigue estando almacenada pero no es accesible.",
+      "page": 57
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Qué importancia tiene la 'palabra estímulo' en las tareas de pares asociados?",
+      "a": "Actúa como la clave de recuperación única que debe disparar el recuerdo de la palabra respuesta asociada.",
+      "page": 58
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Qué sucede en el grupo control de un experimento de interferencia retroactiva?",
+      "a": "Realiza una tarea de relleno para asegurar que el paso del tiempo es el mismo que en el experimental, pero sin aprender material interferente.",
+      "page": 58
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Por qué el ordenador de una hermana puede causar olvido en el propio según el ejemplo?",
+      "a": "Porque el aprendizaje de nuevos comandos (A-C) interfiere retroactivamente con los comandos del ordenador propio (A-B).",
+      "page": 58
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Qué inferimos cuando el grupo experimental rinde peor en la lista A-C tras aprender A-B?",
+      "a": "Que se ha producido interferencia proactiva, donde la información vieja obstaculiza la adquisición o recuperación de la nueva.",
+      "page": 59
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Qué función tiene el olvido de los lugares de aparcamiento previos según el ejemplo?",
+      "a": "Es un proceso de inhibición necesario para que los recuerdos de días anteriores no compitan con el lugar donde se dejó el coche anoche.",
+      "page": 59
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Qué significa que los cambios de la inhibición sean 'reversibles'?",
+      "a": "Que la huella de memoria no se destruye, sino que su accesibilidad se reduce temporalmente y puede volver a activarse en otro contexto.",
+      "page": 60
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Cómo afecta el número de claves presentadas en la inhibición por parte del conjunto?",
+      "a": "Cuantas más claves se presentan del conjunto, menor es el número de palabras recordadas del resto de la lista.",
+      "page": 60
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Qué proceso pone en marcha el cerebro cuando una clave activa una huella no deseada?",
+      "a": "Mecanismos de inhibición para reducir la activación de esa huella y permitir un control selectivo sobre la búsqueda.",
+      "page": 60
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Qué sucede si un participante responde en la fase de 'no pensar' del paradigma de Anderson?",
+      "a": "Es avisado de su error, reforzando la instrucción de supresión activa del pensamiento.",
+      "page": 61
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Qué variaciones pueden presentar las falsas memorias?",
+      "a": "Desde pequeñas variaciones en los detalles de una historia hasta modificaciones profundas del significado de lo vivido.",
+      "page": 61
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Cómo influyen las palabras 'colisionar' o 'estrellar' en el recuerdo de un accidente?",
+      "a": "Hacen que el sujeto recupere una velocidad mayor y, a veces, detalles de daños inexistentes debido al sesgo de la pregunta.",
+      "page": 61
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Qué papel juega la desinformación exógena en los informes falsos implantados?",
+      "a": "Actúa mediante sugerencias engañosas presentadas antes de la prueba, que el sujeto termina integrando como propias.",
+      "page": 62
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Por qué mostrar la foto de un sospechoso puede generar un error de identificación?",
+      "a": "Porque la memoria del testigo puede confundirse con la fotografía (fuente sugerida) y sustituir la imagen real del criminal.",
+      "page": 62
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Es la amnesia infantil un fenómeno patológico?",
+      "a": "No, se considera una parte normal y universal del desarrollo humano.",
+      "page": 62
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Cómo influye el desarrollo del lenguaje en el fin de la amnesia infantil?",
+      "a": "Permite codificar las memorias en un formato verbal que facilita su organización y recuperación en la etapa adulta.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué sucede con la identidad personal en la amnesia orgánica frente a la funcional?",
+      "a": "En la funcional la pérdida de identidad es primaria y brusca; en la orgánica suele conservarse mientras se pierden otros datos episódicos.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Cuánto tiempo puede durar la pérdida de consciencia en una amnesia postraumática?",
+      "a": "Puede oscilar desde unos pocos segundos hasta varias semanas, dependiendo de la gravedad del impacto.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué implica que los recuerdos traumáticos tengan 'propiedades propias'?",
+      "a": "Que se rigen por mecanismos distintos a los comunes, siendo más resistentes al olvido o, por el contrario, sufriendo bloqueos selectivos.",
+      "page": 63
+    },
+    {
+      "cat": "Conceptos Básicos",
+      "q": "¿Por qué es imposible demostrar científicamente que una información ha desaparecido de la memoria?",
+      "a": "Porque siempre cabe la posibilidad de que la huella exista pero no dispongamos de las claves adecuadas para acceder a ella.",
+      "page": 57
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Cuál es la diferencia fundamental entre interferencia y decaimiento?",
+      "a": "El decaimiento es un proceso pasivo por tiempo; la interferencia es un proceso activo causado por la competencia entre memorias.",
+      "page": 57
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Qué sucede con la velocidad de respuesta en el efecto abanico cuando asociamos 3 lugares a una persona?",
+      "a": "La velocidad disminuye significativamente (el tiempo de reacción aumenta) en comparación con asociar solo 1 lugar.",
+      "page": 59
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Qué descubrió Slamecka (1968) sobre el uso de claves en el recuerdo?",
+      "a": "Descubrió que las claves proporcionadas inhibían el recuerdo del resto del conjunto en lugar de facilitarlo.",
+      "page": 60
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Cómo se relaciona el 'olvido inducido por recuperación' con la supervivencia?",
+      "a": "Es adaptativo porque permite al sistema limpiar la interferencia de opciones que ya no son correctas o útiles.",
+      "page": 60
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Qué región cerebral se activa específicamente para evaluar la veracidad de un recuerdo?",
+      "a": "La zona prefrontal.",
+      "page": 62
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué es la 'hipermnesia afectiva' en el contexto del trauma?",
+      "a": "La persistencia obsesiva e involuntaria de recuerdos con alta carga emocional vinculados a un evento traumático.",
+      "page": 63
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué caracteriza a los primeros recuerdos que se recuperan tras una amnesia postraumática?",
+      "a": "Suelen ser los más antiguos, mientras que los eventos cercanos al accidente son los últimos en recuperarse o pueden perderse para siempre.",
+      "page": 63
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Qué sucede si aprendemos la lista A-B y luego la lista C-D?",
+      "a": "No debería producirse interferencia significativa, ya que no comparten los estímulos (claves) que causan la competencia.",
+      "page": 58
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿A qué se refiere Anderson con 'mecanismo de control ejecutivo' en la memoria?",
+      "a": "A un sistema superior que gestiona los recursos atencionales para inhibir distracciones y facilitar la recuperación selectiva.",
+      "page": 60
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Por qué el hipocampo inmaduro afecta a la memoria episódica en niños?",
+      "a": "Porque es la estructura clave para 'pegar' los diferentes elementos de un evento en una huella de memoria única y localizable.",
+      "page": 62
+    },
+    {
+      "cat": "Conceptos Básicos",
+      "q": "¿Qué sugiere el autor sobre quejarse de la memoria?",
+      "a": "Que es común quejarse ante fallos esporádicos sin valorar la inmensa cantidad de información que recuperamos con éxito cada día.",
+      "page": 56
+    },
+    {
+      "cat": "Teoría de la Interferencia",
+      "q": "¿Cuál es la principal diferencia en el impacto del intervalo de retención entre interferencia retroactiva y proactiva?",
+      "a": "La retroactiva afecta más a corto plazo tras el nuevo aprendizaje; la proactiva se agrava conforme pasa más tiempo desde el aprendizaje nuevo.",
+      "page": 58
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Qué tipo de confusión de fuente explicaría creer que vivimos algo que en realidad vimos en una película?",
+      "a": "Se debe a que los detalles del evento (qué pasó) se desligan del origen (dónde pasó), integrándose erróneamente en la memoria episódica propia.",
+      "page": 62
+    },
+    {
+      "cat": "Distorsiones y Amnesias",
+      "q": "¿Qué significa que la amnesia disociativa presente 'lagunas'?",
+      "a": "Que el individuo tiene periodos de tiempo en su historia personal que no puede recordar en absoluto, generalmente ligados al trauma.",
+      "page": 63
+    },
+    {
+      "cat": "Mecanismos de Inhibición",
+      "q": "¿Cómo afecta la inhibición a la accesibilidad de una huella de memoria?",
+      "a": "Reduce su nivel de activación por debajo del umbral de recuperación, haciéndola 'invisible' temporalmente para los procesos de búsqueda.",
+      "page": 60
+    }
+  ]
+}

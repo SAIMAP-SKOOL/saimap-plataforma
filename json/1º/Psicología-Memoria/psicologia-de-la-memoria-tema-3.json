@@ -1,0 +1,2595 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es correcto afirmar que el almacenamiento de la información es un proceso cognitivo independiente de la adquisición y la consolidación?",
+      "options": [
+        "Verdadero: el almacenamiento constituye la segunda fase del sistema de memoria tras la codificación.",
+        "Falso: se considera el resultado de las fases de adquisición y consolidación, no un proceso en sí.",
+        "No se puede determinar: el texto no define el almacenamiento como un estado sino como una acción."
+      ],
+      "correct": 1,
+      "hint": "Revisa la distinción entre procesos y resultados en la página 37 del documento.",
+      "explanation": "Melton y el texto aclaran que el almacenamiento es el resultado de los procesos previos de codificación (adquisición y consolidación), cambiando el estado de la información."
+    },
+    {
+      "q": "¿Los principios de codificación para estímulos como olores y voces difieren sustancialmente de los códigos alfanuméricos?",
+      "options": [
+        "Verdadero: los códigos sensoriales no lingüísticos siguen leyes de procesamiento emocional específicas.",
+        "Falso: investigaciones recientes indican que obedecen a los mismos principios que los códigos verbales.",
+        "No se puede determinar: el autor sugiere que aún no hay evidencia suficiente para equiparar ambos códigos."
+      ],
+      "correct": 1,
+      "hint": "Busca la referencia a Read y Craik (1995) en el apartado de procesos de memoria.",
+      "explanation": "Aunque tradicionalmente se estudiaron códigos alfanuméricos, autores como Herz y Engen indican que olores y voces siguen los mismos principios de codificación."
+    },
+    {
+      "q": "¿Es el repaso de mantenimiento la estrategia más efectiva para garantizar la transferencia de información a la MLP a largo plazo?",
+      "options": [
+        "Verdadero: la repetición continuada es la base necesaria para la formación de una huella de memoria.",
+        "Falso: contribuye de forma muy reducida a la codificación y la información se pierde al cesar el repaso.",
+        "No se puede determinar: el efecto depende exclusivamente de la intención de aprender del sujeto evaluado."
+      ],
+      "correct": 1,
+      "hint": "Compara las funciones del repaso de mantenimiento frente al repaso elaborativo.",
+      "explanation": "El repaso de mantenimiento solo mantiene la información temporalmente; el repaso elaborativo es el que permite la organización y almacenamiento duradero."
+    },
+    {
+      "q": "¿La profundidad del procesamiento según Craik y Lockhart depende únicamente del tiempo total dedicado a repasar el material?",
+      "options": [
+        "Verdadero: el tiempo de procesamiento es la medida directa y universal de la profundidad alcanzada.",
+        "Falso: el tiempo por sí mismo no predice el grado de profundidad ni garantiza un mejor recuerdo.",
+        "No se puede determinar: el tiempo influye en tareas semánticas pero no en las de tipo estructural."
+      ],
+      "correct": 1,
+      "hint": "Recuerda el experimento de las respuestas afirmativas y negativas en el análisis de niveles.",
+      "explanation": "Se observó que palabras con respuestas afirmativas se recordaban mejor que las negativas aun con el mismo tiempo de procesamiento, invalidando el tiempo como único predictor."
+    },
+    {
+      "q": "¿La distinción entre modelos de ejemplares y prototipos reside en la naturaleza de la representación mental utilizada?",
+      "options": [
+        "Verdadero: el primero usa representaciones específicas y el segundo una abstracción genérica ideal.",
+        "Falso: ambos modelos utilizan representaciones genéricas variando solo en la velocidad de comparación.",
+        "No se puede determinar: los modelos son complementarios y no presentan diferencias en su naturaleza."
+      ],
+      "correct": 0,
+      "hint": "Analiza cómo se define la 'representación' en cada modelo de categorización.",
+      "explanation": "En el modelo de ejemplares comparamos con casos reales guardados; en el de prototipos, con una media abstracta o ejemplar ideal que representa el concepto."
+    },
+    {
+      "q": "¿El efecto Von Restorff describe la superioridad del recuerdo de elementos que comparten rasgos con su contexto inmediato?",
+      "options": [
+        "Verdadero: la similitud intra-lista favorece la recuperación de categorías mediante claves de acceso.",
+        "Falso: se refiere a que los elementos no similares o incongruentes se recuerdan mejor que los comunes.",
+        "No se puede determinar: el efecto solo se aplica a listas de nombres propios y no a categorías generales."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el ejemplo del apellido García en una lista de apellidos ingleses.",
+      "explanation": "La distintividad (ser diferente al resto) crea una huella de memoria más fuerte, lo que facilita su posterior identificación y recuperación."
+    },
+    {
+      "q": "¿Es la organización subjetiva un proceso que el sujeto aplica incluso ante materiales que carecen de una estructura lógica objetiva?",
+      "options": [
+        "Verdadero: los sujetos tienden a imponer un orden propio que mantienen de forma constante en los ensayos.",
+        "Falso: la organización solo es posible si el experimentador presenta el material categorizado previamente.",
+        "No se puede determinar: el uso de estrategias subjetivas depende de si el sujeto posee conocimientos previos."
+      ],
+      "correct": 0,
+      "hint": "Consulta el estudio de Tulving (1962) sobre listas de palabras no relacionadas.",
+      "explanation": "Tulving demostró que los participantes crean sus propias categorías (organización subjetiva) para facilitar el recuerdo, repitiendo el mismo orden en sucesivas pruebas."
+    },
+    {
+      "q": "¿El efecto de generación implica que la lectura pasiva produce huellas de memoria más estables que la creación activa?",
+      "options": [
+        "Verdadero: la lectura consume menos recursos permitiendo una atención más focalizada en el estímulo.",
+        "Falso: la información generada por el sujeto se recuerda mejor que la información simplemente leída.",
+        "No se puede determinar: la ventaja de generar solo se observa en tareas de rima pero no en semánticas."
+      ],
+      "correct": 1,
+      "hint": "Analiza los resultados del experimento de Slamecka y Graf (1978).",
+      "explanation": "El efecto de generación demuestra que el rol activo del sujeto durante la codificación mejora significativamente la consolidación y el recuerdo posterior."
+    },
+    {
+      "q": "¿En las redes semánticas de Collins y Quillian, los conceptos se representan mediante unidades denominadas nodos?",
+      "options": [
+        "Verdadero: los nodos son los conceptos y los enlaces representan las relaciones jerárquicas entre ellos.",
+        "Falso: los nodos representan las preposiciones y los enlaces son los símbolos abstractos del lenguaje.",
+        "No se puede determinar: el modelo no utiliza el término nodo para referirse a la organización léxica."
+      ],
+      "correct": 0,
+      "hint": "Visualiza la estructura de la red jerárquica semántica del capítulo.",
+      "explanation": "La estructura básica de estas redes consiste en nodos (conceptos) interconectados por enlaces que definen propiedades (es un, tiene, etc.)."
+    },
+    {
+      "q": "¿La teoría de la propagación de la activación de Rips sugiere que la distancia semántica es irrelevante para el acceso al léxico?",
+      "options": [
+        "Verdadero: la activación es instantánea para todos los nodos de la red independientemente de su cercanía.",
+        "Falso: a menor distancia semántica entre nodos, mayor es la probabilidad de que se activen conjuntamente.",
+        "No se puede determinar: la distancia solo influye en el conocimiento procedimental y no en el declarativo."
+      ],
+      "correct": 1,
+      "hint": "Revisa cómo influye la cercanía de conceptos como 'pan' y 'horno' en la memoria.",
+      "explanation": "La activación de un concepto se extiende a los relacionados; cuanto más cerca estén en la red semántica (menor distancia), más rápida y probable es su activación."
+    },
+    {
+      "q": "¿Los guiones (scripts) son estructuras de conocimiento que carecen de un orden secuencial o temporal definido?",
+      "options": [
+        "Verdadero: se basan en asociaciones libres de conceptos sin una jerarquía de acciones establecida.",
+        "Falso: representan acontecimientos o acciones habituales que siguen un orden secuencial determinado.",
+        "No se puede determinar: el orden secuencial solo es característico de los marcos y no de los guiones."
+      ],
+      "correct": 1,
+      "hint": "Recuerda el ejemplo de las fases que se siguen al ir a comer a un restaurante.",
+      "explanation": "Schank y Abelson definieron los guiones como secuencias de acciones esperadas en contextos específicos, como sentarse, pedir la carta y pagar."
+    },
+    {
+      "q": "¿El conocimiento no declarativo se representa habitualmente mediante redes semánticas y esquemas mentales?",
+      "options": [
+        "Verdadero: ambos sistemas comparten la misma estructura proposicional en la memoria semántica.",
+        "Falso: se representa a través de reglas de producción condicionales tipo 'si - entonces'.",
+        "No se puede determinar: el texto indica que no existe una teoría clara sobre la representación procedimental."
+      ],
+      "correct": 1,
+      "hint": "Busca la diferencia entre el conocimiento de 'qué' y el conocimiento de 'cómo'.",
+      "explanation": "Mientras el declarativo es semántico y episódico (redes/esquemas), el procedimental se basa en acciones condicionadas a objetivos."
+    },
+    {
+      "q": "¿Es la fase de consolidación la encargada de registrar la información proveniente de los almacenes sensoriales?",
+      "options": [
+        "Verdadero: transforma los inputs externos en representaciones compatibles con el sistema nervioso.",
+        "Falso: esa es la función de la fase de adquisición; la consolidación transforma el input en huella mental.",
+        "No se puede determinar: adquisición y consolidación son términos sinónimos en la fase de codificación."
+      ],
+      "correct": 1,
+      "hint": "Distingue entre las dos subfases de la codificación mencionadas al inicio del capítulo.",
+      "explanation": "La adquisición registra la información sensorial y realiza análisis iniciales; la consolidación asienta esa información en el sistema nervioso."
+    },
+    {
+      "q": "¿La intención de aprender es, por sí misma, el factor determinante para el éxito de la codificación de la información?",
+      "options": [
+        "Verdadero: sin una motivación intrínseca, los procesos de elaboración no pueden iniciarse.",
+        "Falso: se ha demostrado que la simple intención no basta si no ocurren los procesos adecuados.",
+        "No se puede determinar: la intención solo es relevante en el aprendizaje incidental, no en el intencional."
+      ],
+      "correct": 1,
+      "hint": "Revisa el apartado 3.2 sobre los factores que influyen en la codificación.",
+      "explanation": "El texto aclara que lo relevante no es querer aprender, sino los procesos (repaso, elaboración, organización) que se llevan a cabo durante la tarea."
+    },
+    {
+      "q": "¿El grado de elaboración de la información depende de la cantidad y calidad de conocimientos previos del sujeto?",
+      "options": [
+        "Verdadero: cuanta más información relacionada tengamos, mayor capacidad de elaborar el nuevo estímulo.",
+        "Falso: la elaboración es un proceso automático independiente del bagaje cultural o experiencial.",
+        "No se puede determinar: la elaboración solo depende del tiempo de exposición y no del conocimiento previo."
+      ],
+      "correct": 0,
+      "hint": "Analiza la relación entre la MLP y el procesamiento de la nueva información.",
+      "explanation": "La elaboración consiste en conectar lo nuevo con lo que ya sabemos; por tanto, un mayor conocimiento facilita una codificación más rica y profunda."
+    },
+    {
+      "q": "¿La congruencia semántica permite combinar los contextos de codificación de la palabra y la oración para mejorar el recuerdo?",
+      "options": [
+        "Verdadero: las palabras que encajan en oraciones (respuestas Sí) se benefician de una integración mayor.",
+        "Falso: la congruencia dificulta la distintividad de la huella al mezclar significados similares.",
+        "No se puede determinar: el efecto de congruencia solo se observa en el procesamiento estructural."
+      ],
+      "correct": 0,
+      "hint": "Recuerda por qué las respuestas afirmativas en el estudio de Craik y Tulving daban mejores resultados.",
+      "explanation": "Cuando una palabra encaja en una frase, se crea una representación unificada que es más fácil de recuperar que elementos aislados o incongruentes."
+    },
+    {
+      "q": "¿La distintividad de un estímulo es una propiedad intrínseca que no depende del contexto en el que se procesa?",
+      "options": [
+        "Verdadero: ciertos estímulos son universalmente más distintivos debido a su carga emocional.",
+        "Falso: depende de si el estímulo comparte o no pocas características con el resto de elementos del contexto.",
+        "No se puede determinar: la distintividad es un proceso puramente sensorial que no depende del procesamiento."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el ejemplo de los apellidos españoles en una lista de apellidos extranjeros.",
+      "explanation": "Un estímulo es distintivo si destaca sobre el fondo; si todos los elementos son similares, ninguno es distintivo."
+    },
+    {
+      "q": "¿El agrupamiento (chunking) consiste en categorizar elementos según su significado semántico profundo?",
+      "options": [
+        "Verdadero: es la técnica principal para organizar la memoria a largo plazo en categorías lógicas.",
+        "Falso: se refiere a combinar elementos simples en unidades más amplias, como los dígitos de un teléfono.",
+        "No se puede determinar: el agrupamiento es una estrategia objetiva que no admite variaciones subjetivas."
+      ],
+      "correct": 1,
+      "hint": "Revisa el ejemplo del número de DNI o teléfono en las estrategias de organización.",
+      "explanation": "El agrupamiento es una técnica de organización (generalmente subjetiva) que permite manejar más información uniendo unidades pequeñas en bloques."
+    },
+    {
+      "q": "¿El proceso de categorización se inicia únicamente cuando alcanzamos la etapa adulta y el pensamiento formal?",
+      "options": [
+        "Verdadero: requiere una capacidad de abstracción que no está presente en la infancia temprana.",
+        "Falso: las categorías se van estableciendo y ampliando desde los primeros años de nuestra vida.",
+        "No se puede determinar: la categorización es un proceso innato que no requiere experiencia previa."
+      ],
+      "correct": 1,
+      "hint": "Observa lo que dice el texto sobre el desarrollo de las categorías y la experiencia.",
+      "explanation": "Categorizamos desde niños y vamos actualizando estas estructuras mentales con cada nueva experiencia a lo largo de la vida."
+    },
+    {
+      "q": "¿En el modelo de prototipos, la clasificación se realiza mediante la comparación con un ejemplar específico almacenado?",
+      "options": [
+        "Verdadero: el prototipo es el primer ejemplar de la categoría que el sujeto aprendió en su infancia.",
+        "Falso: se hace comparando con una representación ideal, genérica y abstracta del concepto.",
+        "No se puede determinar: el modelo de prototipos no utiliza el proceso de comparación para clasificar."
+      ],
+      "correct": 1,
+      "hint": "Compara la naturaleza de la 'representación' entre el modelo de ejemplares y el de prototipos.",
+      "explanation": "A diferencia del modelo de ejemplares (casos reales), el prototipo es una construcción mental 'promedio' o ideal que reúne los rasgos más típicos."
+    },
+    {
+      "q": "¿Los miembros de una categoría con menor grado de tipicidad son más accesibles y se categorizan más rápido?",
+      "options": [
+        "Verdadero: su carácter inusual los hace más distintivos y fáciles de recuperar de la red semántica.",
+        "Falso: son menos accesibles, aparecen menos en el vocabulario y se tarda más tiempo en procesarlos.",
+        "No se puede determinar: la tipicidad influye en la producción verbal pero no en el tiempo de reacción."
+      ],
+      "correct": 1,
+      "hint": "Piensa en si es más rápido identificar un 'gorrión' o un 'pingüino' como ave.",
+      "explanation": "Los elementos típicos (los que más se parecen al prototipo) se procesan con mayor fluidez que los atípicos."
+    },
+    {
+      "q": "¿Un esquema mental es una estructura que contiene información específica de cada situación vivida?",
+      "options": [
+        "Verdadero: los esquemas son grabaciones literales de los eventos que garantizan la fidelidad del recuerdo.",
+        "Falso: es una estructura genérica que contiene información general sobre situaciones o fenómenos.",
+        "No se puede determinar: el esquema es una representación episódica que no admite información genérica."
+      ],
+      "correct": 1,
+      "hint": "Analiza la definición de esquema y su función en la realización de inferencias.",
+      "explanation": "Los esquemas son marcos abstractos; cuando vivimos algo concreto, rellenamos los 'huecos' del esquema con los datos de ese momento."
+    },
+    {
+      "q": "¿La activación de los esquemas se produce de forma voluntaria y consciente ante cada estímulo ambiental?",
+      "options": [
+        "Verdadero: el sujeto debe decidir activamente qué esquema aplicar para interpretar la realidad.",
+        "Falso: se activan de forma automática al identificar una situación, ayudándonos a interpretar el significado.",
+        "No se puede determinar: la activación depende de si el esquema se adquirió por aprendizaje intencional."
+      ],
+      "correct": 1,
+      "hint": "Busca la palabra 'automática' en la descripción de la activación de esquemas.",
+      "explanation": "No elegimos activar un esquema; ante una señal del entorno (ej. entrar en una librería), el esquema se dispara solo para guiarnos."
+    },
+    {
+      "q": "¿Es posible que un sujeto no pueda interpretar un evento por la falta del esquema cognitivo correspondiente?",
+      "options": [
+        "Verdadero: si no hay experiencia previa que haya formado el esquema, no hay base para la interpretación.",
+        "Falso: el sistema nervioso posee esquemas universales innatos para todas las situaciones sociales.",
+        "No se puede determinar: la interpretación de eventos depende de la atención y no de los esquemas previos."
+      ],
+      "correct": 0,
+      "hint": "Considera el papel de la experiencia en la formación de estructuras de conocimiento.",
+      "explanation": "Los esquemas se adquieren por experiencia; si algo es totalmente nuevo y ajeno a nosotros, no sabremos cómo actuar o qué significa."
+    },
+    {
+      "q": "¿La codificación constructiva sugiere que un rol pasivo en la creación de información mejora el recuerdo final?",
+      "options": [
+        "Verdadero: la pasividad permite ahorrar recursos cognitivos que se usarán en la fase de recuperación.",
+        "Falso: el rol activo genera un mejor recuerdo que la recepción pasiva de la información.",
+        "No se puede determinar: el efecto constructivo solo es válido para la organización objetiva del material."
+      ],
+      "correct": 1,
+      "hint": "Relaciona el término 'constructivo' con el 'efecto de generación'.",
+      "explanation": "Ser partícipe en la creación de la huella de memoria (generar frente a leer) es una de las claves de la codificación efectiva."
+    },
+    {
+      "q": "Seleccione la opción CORRECTA respecto a las fases propuestas por Melton (1963) para la capacidad de memoria:",
+      "options": [
+        "Las tres fases son codificación, almacenamiento y recuperación, siendo la codificación obligatoria para las posteriores.",
+        "El almacenamiento es un proceso dinámico independiente que ocurre antes de la codificación y la consolidación.",
+        "La recuperación es la primera fase del proceso y permite registrar la información que proviene de los sentidos."
+      ],
+      "correct": 0,
+      "hint": "Consulta el esquema secuencial de Melton en el apartado 3.1.",
+      "explanation": "El modelo de Melton establece un orden lógico donde la codificación es el paso previo necesario para guardar y luego recuperar información."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones describe CORRECTAMENTE el proceso de consolidación?",
+      "options": [
+        "Es el registro inicial de los inputs sensoriales en los almacenes de memoria de muy corta duración.",
+        "Es la transformación de los inputs recibidos en representaciones compatibles con nuestro sistema nervioso.",
+        "Es la estrategia de repetir mentalmente un número de teléfono hasta encontrar dónde anotarlo."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre el análisis inicial (adquisición) y la estabilización de la huella.",
+      "explanation": "La consolidación es el proceso neurocognitivo que permite que la información se convierta en una huella de memoria estable."
+    },
+    {
+      "q": "Identifique la definición CORRECTA de repaso elaborativo según la propuesta de Craik y Lockhart:",
+      "options": [
+        "Es la repetición silenciosa de una información para mantenerla activa hasta su uso inmediato.",
+        "Es el trabajo mental de procesar profundamente la información relacionándola con la ya almacenada en la MLP.",
+        "Es un proceso automático que no requiere esfuerzo cognitivo y que garantiza la codificación sensorial."
+      ],
+      "correct": 1,
+      "hint": "Busca la diferencia entre 'mantener' y 'conectar' la información.",
+      "explanation": "El repaso elaborativo va más allá de la repetición mecánica, buscando significado y vínculos con conocimientos previos."
+    },
+    {
+      "q": "Sobre el grado de elaboración, ¿qué conclusión es CORRECTA basándose en los estudios de Craik y Tulving?",
+      "options": [
+        "La elaboración depende únicamente de la profundidad del análisis estructural de las letras de una palabra.",
+        "A mayor complejidad de la oración en la que se integra una palabra, mayor es la elaboración y mejor el recuerdo.",
+        "La elaboración es mayor cuando el sujeto responde 'No' a las preguntas sobre la pertinencia de una palabra."
+      ],
+      "correct": 1,
+      "hint": "Analiza el ejemplo de la frase simple frente a la frase compleja con el conejo.",
+      "explanation": "Oraciones más complejas exigen un procesamiento semántico más rico, lo que genera una huella de memoria más robusta."
+    },
+    {
+      "q": "En relación a la distintividad, ¿cuál de las siguientes opciones es la CORRECTA?",
+      "options": [
+        "Implica añadir más información a la huella de memoria para que esta sea más larga y pesada.",
+        "Consiste en operaciones mentales que descubren qué hace a un estímulo diferente de otros en un contexto.",
+        "Es una estrategia de organización objetiva que clasifica los elementos por su orden alfabético."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre 'añadir' (elaboración) y 'diferenciar' (distintividad).",
+      "explanation": "La distintividad no busca cantidad de datos, sino calidad diferencial para que el estímulo destaque sobre los demás."
+    },
+    {
+      "q": "¿Qué se entiende CORRECTAMENTE por organización objetiva en el contexto de la codificación?",
+      "options": [
+        "Es la agrupación de elementos basándose exclusivamente en el orden en que el sujeto decide recordarlos.",
+        "Es el sistema de organización formal o criterios externos utilizados para presentar la información de forma ordenada.",
+        "Es el proceso de ignorar las categorías existentes para crear una red de asociaciones puramente visuales."
+      ],
+      "correct": 1,
+      "hint": "Compara la biblioteca pública con la biblioteca de casa.",
+      "explanation": "La organización objetiva viene impuesta por el material o el ambiente (ej. categorías lógicas dadas por el experimentador)."
+    },
+    {
+      "q": "Sobre el estudio de Tulving (1962) sobre organización subjetiva, ¿cuál es la opción CORRECTA?",
+      "options": [
+        "Los participantes recordaban las palabras en un orden totalmente aleatorio en cada uno de los ensayos.",
+        "Los participantes tendían a repetir las palabras en el mismo orden, demostrando una organización propia.",
+        "Se demostró que la organización subjetiva es ineficaz si las palabras no tienen relación semántica previa."
+      ],
+      "correct": 1,
+      "hint": "Analiza por qué los participantes mantenían un orden constante a pesar de la presentación al azar.",
+      "explanation": "Aun con materiales inconexos, el cerebro crea vínculos (organización subjetiva) que se reflejan en la constancia del orden de recuerdo."
+    },
+    {
+      "q": "Respecto a las estrategias de organización, identifique la definición CORRECTA de categorización:",
+      "options": [
+        "Consiste en ordenar la información jerárquicamente, por ejemplo de mayor a menor importancia.",
+        "Consiste en integrar la información en diferentes grupos basados en conceptos comunes (ej. animales).",
+        "Consiste en la combinación de elementos simples en unidades amplias de dos en dos dígitos."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre agrupar por número (agrupamiento) y agrupar por significado (categorización).",
+      "explanation": "La categorización utiliza el significado para agrupar elementos bajo una etiqueta común, facilitando su recuperación."
+    },
+    {
+      "q": "En el marco del efecto de generación, ¿qué explicación CORRECTA propone la hipótesis multiproceso?",
+      "options": [
+        "Generar información es más fácil que leerla y por eso se recuerda con menor esfuerzo atencional.",
+        "Implica una mayor variedad de procesos que leer, lo que añade riqueza y fuerza a la huella de memoria.",
+        "El éxito se debe a que el sujeto solo se centra en el sonido de las palabras y no en su significado profundo."
+      ],
+      "correct": 1,
+      "hint": "Busca la relación entre la variedad de tareas mentales y la calidad de la huella.",
+      "explanation": "Al generar, activamos procesos de búsqueda, comparación y selección que no se activan en la simple lectura pasiva."
+    },
+    {
+      "q": "¿Cómo define el texto CORRECTAMENTE el término 'concepto'?",
+      "options": [
+        "Es una unidad de pensamiento que representa mentalmente algo con todas sus características.",
+        "Es la representación de los diferentes tipos de elementos que hay dentro de una categoría específica.",
+        "Es el conjunto de reglas de producción que permiten realizar una tarea motora compleja."
+      ],
+      "correct": 0,
+      "hint": "Revisa las definiciones del apartado 3.3.",
+      "explanation": "El concepto es la unidad básica; la categoría es la estructura que agrupa diversos conceptos relacionados."
+    },
+    {
+      "q": "Sobre el proceso de categorización, ¿qué afirmación es CORRECTA según el texto?",
+      "options": [
+        "Se basa exclusivamente en ignorar las diferencias entre estímulos para tratarlos como idénticos.",
+        "Requiere establecer similitudes y diferencias entre la información percibida y la almacenada.",
+        "Es un proceso que solo ocurre ante estímulos visuales y nunca ante conceptos abstractos o acciones."
+      ],
+      "correct": 1,
+      "hint": "Analiza el requisito básico para asignar un objeto a una clase determinada.",
+      "explanation": "Para categorizar, debemos comparar el estímulo con lo que ya conocemos y decidir si 'encaja' por sus rasgos comunes."
+    },
+    {
+      "q": "Identifique la característica CORRECTA del modelo de ejemplares en la categorización:",
+      "options": [
+        "Almacenamos una representación genérica y abstracta que resume todos los casos posibles.",
+        "Aprendemos y retenemos casos específicos que sirven como representantes para futuras comparaciones.",
+        "Las categorías tienen límites precisos y todos los miembros son siempre igual de representativos."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el ejemplo del gato del vecino y el gato propio.",
+      "explanation": "Este modelo sostiene que guardamos recuerdos de objetos reales ('ejemplares') y comparamos lo nuevo con ellos."
+    },
+    {
+      "q": "Respecto al 'prototipo', ¿cuál de estas afirmaciones es CORRECTA?",
+      "options": [
+        "Es el ejemplar que comparte un mayor número de características y es el más representativo de la categoría.",
+        "Es siempre el primer objeto que vimos de una categoría durante nuestra infancia temprana.",
+        "Es un elemento atípico que sirve para marcar los límites exteriores de una categoría semántica."
+      ],
+      "correct": 0,
+      "hint": "Relaciona el prototipo con la idea de 'el mejor ejemplo' de algo.",
+      "explanation": "El prototipo encarna la esencia de la categoría; por ejemplo, el 'coche' suele ser el prototipo de vehículo para mucha gente."
+    },
+    {
+      "q": "¿Qué es una 'proposición' según los modelos de representación del conocimiento?",
+      "options": [
+        "Es una imagen mental exacta y fotográfica del objeto que percibimos en el mundo real.",
+        "Es una unidad abstracta formada por símbolos que representan entidades y siguen reglas de organización.",
+        "Es el conjunto de fibras nerviosas que conectan los nodos de una red semántica jerárquica."
+      ],
+      "correct": 1,
+      "hint": "Busca la relación entre proposiciones, símbolos y lenguaje en el apartado 3.4.1.",
+      "explanation": "Las proposiciones son la forma en que el cerebro traduce el significado en un código simbólico tratable (ej. GATO, SOFÁ)."
+    },
+    {
+      "q": "En el modelo de Collins y Quillian, ¿qué representan los 'enlaces' en la red semántica?",
+      "options": [
+        "Los conceptos individuales que están almacenados de forma independiente en la memoria episódica.",
+        "Las conexiones que definen el tipo de relación entre nodos, como 'es un' o 'tiene'.",
+        "El tiempo que tarda la activación en viajar de un punto a otro de la estructura jerárquica."
+      ],
+      "correct": 1,
+      "hint": "Observa las flechas y etiquetas en el ejemplo de la trucha y el pez.",
+      "explanation": "Los enlaces son el pegamento semántico que explica cómo se relacionan los conceptos (ej. 'el canario ES UN pájaro')."
+    },
+    {
+      "q": "¿Cuál es la función CORRECTA de los esquemas mentales según el texto?",
+      "options": [
+        "Permiten realizar inferencias e interpretar el significado de situaciones o hechos concretos.",
+        "Sirven para borrar información antigua y dejar espacio a los nuevos aprendizajes sensoriales.",
+        "Son reglas de producción que solo se activan cuando el sujeto no sabe cómo realizar una tarea."
+      ],
+      "correct": 0,
+      "hint": "Piensa en cómo interpretamos que alguien está robando en una librería.",
+      "explanation": "Los esquemas nos dan el contexto para entender lo que pasa a nuestro alrededor sin tener que analizar cada detalle desde cero."
+    },
+    {
+      "q": "Identifique la definición CORRECTA de 'marcos' (frames) en la teoría de los esquemas:",
+      "options": [
+        "Son secuencias de acciones que siguen un orden temporal estricto como ir a un restaurante.",
+        "Son representaciones mentales genéricas de lugares o situaciones como una biblioteca o supermercado.",
+        "Son las reglas condicionales si-entonces que rigen el comportamiento motor del sujeto."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre un 'lugar/situación' y una 'secuencia de acciones'.",
+      "explanation": "Los marcos son esquemas de escenarios estáticos o situaciones globales; los guiones son secuencias dinámicas."
+    },
+    {
+      "q": "¿Qué papel juegan los 'huecos' en un esquema mental según el ejemplo del coche?",
+      "options": [
+        "Son fallos de memoria que el sujeto debe intentar reparar mediante el repaso de mantenimiento.",
+        "Son espacios que completamos con datos específicos de la situación actual para interpretarla.",
+        "Son las conexiones débiles entre nodos que desaparecen debido a la distancia semántica."
+      ],
+      "correct": 1,
+      "hint": "Considera qué información añadimos cuando un amigo dice 'me he comprado un coche'.",
+      "explanation": "El esquema general tiene variables (precio, lugar, vendedor) que rellenamos con la información específica que recibimos."
+    },
+    {
+      "q": "Sobre el conocimiento procedimental, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+      "options": [
+        "Se basa en el recuerdo de hechos y conceptos organizados en redes de preposiciones abstractas.",
+        "Se representa mediante reglas de producción que establecen condiciones (si) para ejecutar acciones (entonces).",
+        "Es un tipo de conocimiento declarativo que se adquiere exclusivamente a través del repaso elaborativo."
+      ],
+      "correct": 1,
+      "hint": "Piensa en la lógica necesaria para decidir si coger un paraguas.",
+      "explanation": "El conocimiento de 'cómo hacer' se estructura en condiciones que disparan acciones cuando se cumplen."
+    },
+    {
+      "q": "Identifique la opción que describe CORRECTAMENTE la relación entre tipicidad y categorización:",
+      "options": [
+        "La tipicidad no influye en la velocidad de categorización, solo en la calidad del recuerdo posterior.",
+        "A mayor grado de tipicidad, menor es el tiempo que tardamos en clasificar un objeto en su categoría.",
+        "Los elementos con baja tipicidad son los primeros que aparecen cuando se pide una lista de ejemplos."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el tiempo de reacción al decir si una manzana es una fruta.",
+      "explanation": "La cercanía al prototipo (alta tipicidad) facilita un reconocimiento casi instantáneo por parte del sistema cognitivo."
+    },
+    {
+      "q": "¿Cuál es la función CORRECTA de la propia categoría en la organización de la información (Halpern, 1986)?",
+      "options": [
+        "Dificulta el recuerdo al mezclar elementos de distintas listas en una sola representación mental.",
+        "Actúa como una clave de recuperación que facilita el acceso a los elementos que pertenecen a ella.",
+        "Sirve únicamente para reducir el esfuerzo cognitivo durante la fase de adquisición sensorial."
+      ],
+      "correct": 1,
+      "hint": "Analiza por qué recordar 'frutas' ayuda a recordar 'fresa' y 'manzana'.",
+      "explanation": "Las categorías organizan el material de forma que un solo concepto (la etiqueta) abre la puerta a muchos otros recuerdos asociados."
+    },
+    {
+      "q": "Sobre el concepto de 'distancia semántica', ¿cuál es la afirmación CORRECTA?",
+      "options": [
+        "Es el espacio físico que separa dos libros en una biblioteca organizada de forma objetiva.",
+        "Refleja el grado de relación entre dos conceptos; a menor distancia, mayor asociación mental.",
+        "Es una medida que solo se aplica en el repaso de mantenimiento para evitar el olvido rápido."
+      ],
+      "correct": 1,
+      "hint": "Relaciona la distancia con la velocidad de la propagación de la activación.",
+      "explanation": "Conceptos muy relacionados están 'cerca' en nuestra mente, por lo que activar uno dispara el otro rápidamente."
+    },
+    {
+      "q": "En el contexto de la codificación, ¿qué se entiende CORRECTAMENTE por 'jerarquización'?",
+      "options": [
+        "Combinar dígitos de dos en dos para recordar un número de teléfono de forma más sencilla.",
+        "Ordenar la información de forma niveles, por ejemplo de lo más general a lo más importante o específico.",
+        "Establecer una frase creativa que una palabras inconexas para facilitar su recuerdo en orden."
+      ],
+      "correct": 1,
+      "hint": "Diferencia jerarquía de agrupamiento o método de la frase.",
+      "explanation": "La jerarquización crea una pirámide de importancia o inclusión que ayuda a estructurar el conocimiento de forma lógica."
+    },
+    {
+      "q": "¿Qué conclusión CORRECTA se extrae de la investigación sobre códigos sensoriales (olores/voces)?",
+      "options": [
+        "No dejan huella de memoria en el sistema nervioso al ser estímulos puramente biológicos.",
+        "Siguen principios de codificación similares a los de las palabras y números.",
+        "Solo se pueden almacenar si se traducen previamente a un código alfanumérico escrito."
+      ],
+      "correct": 1,
+      "hint": "Busca la referencia a Herz y Engen (1996).",
+      "explanation": "La memoria no solo es verbal; los sentidos también codifican información siguiendo reglas organizativas similares."
+    },
+    {
+      "q": "Identifique la opción que describe CORRECTAMENTE la integración en el proceso de codificación:",
+      "options": [
+        "Es la fase donde la información se aísla de su contexto para evitar interferencias en el almacenamiento.",
+        "Se produce una integración de la representación generada con su contexto durante la fase de codificación.",
+        "Consiste en separar la adquisición de la consolidación para asegurar que la huella sea pura."
+      ],
+      "correct": 1,
+      "hint": "Revisa el párrafo sobre los responsables de la formación de la huella de memoria (apartado 3.1).",
+      "explanation": "Codificar no es solo registrar un dato, sino ubicarlo en un espacio y tiempo (contexto) que le da significado."
+    },
+    {
+      "q": "Seleccione la opción INCORRECTA sobre el repaso de mantenimiento:",
+      "options": [
+        "Es una repetición mecánica que puede ser tanto oral como silenciosa.",
+        "Garantiza que la información se almacene de forma permanente en la memoria a largo plazo.",
+        "Es útil para retener un dato de forma momentánea, como un número de teléfono."
+      ],
+      "correct": 1,
+      "hint": "Recuerda qué ocurre con la información cuando dejamos de repetir el número de teléfono.",
+      "explanation": "El repaso de mantenimiento no asegura el paso a la MLP; es una estrategia de retención temporal en la memoria de trabajo."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre los niveles de procesamiento es INCORRECTA?",
+      "options": [
+        "El procesamiento profundo siempre requiere más tiempo cronológico que el procesamiento superficial.",
+        "Las tareas semánticas suelen producir un mejor recuerdo que las tareas de análisis estructural.",
+        "El tiempo empleado no es el único factor que predice la profundidad de la codificación realizada."
+      ],
+      "correct": 0,
+      "hint": "Recuerda la crítica de Craik y Tulving sobre el tiempo como medida de profundidad.",
+      "explanation": "Aunque inicialmente se creyó que profundidad = tiempo, experimentos posteriores demostraron que esto no siempre se cumple."
+    },
+    {
+      "q": "Sobre la elaboración de la información, señale la opción INCORRECTA:",
+      "options": [
+        "Implica trabajar mentalmente el material para integrarlo con los conocimientos previos.",
+        "El grado de elaboración no tiene ninguna influencia en la calidad de la huella de memoria generada.",
+        "Añadir información relacionada ayuda a generar una huella de memoria que resulta más distintiva."
+      ],
+      "correct": 1,
+      "hint": "Busca la relación entre elaboración y éxito en el recuerdo posterior.",
+      "explanation": "La elaboración es fundamental: a mayor grado de elaboración, mejor es la codificación y el recuerdo final."
+    },
+    {
+      "q": "Respecto a la distintividad, identifique la opción INCORRECTA:",
+      "options": [
+        "Un estímulo es más distintivo si comparte muchas características con el resto de elementos.",
+        "La distintividad facilita la identificación de la huella en el momento de la recuperación.",
+        "El efecto Von Restorff es un fenómeno directamente relacionado con el concepto de distintividad."
+      ],
+      "correct": 0,
+      "hint": "Piensa en qué hace que algo destaque: ¿parecerse a los demás o ser diferente?",
+      "explanation": "La distintividad ocurre precisamente cuando el estímulo comparte pocas características con su entorno."
+    },
+    {
+      "q": "Sobre la organización de la memoria, señale la opción INCORRECTA:",
+      "options": [
+        "La información se almacena exactamente igual a como la percibimos, sin ninguna transformación.",
+        "Organizar la información en categorías facilita tanto su almacenamiento como su recuperación.",
+        "Podemos distinguir entre organización objetiva (externa) y organización subjetiva (estrategia propia)."
+      ],
+      "correct": 0,
+      "hint": "Analiza si el cerebro es un espejo pasivo o un procesador activo de la información.",
+      "explanation": "El cerebro selecciona, dota de significado e integra; nunca guarda una copia literal idéntica a la percepción."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre las estrategias de organización es INCORRECTA?",
+      "options": [
+        "El agrupamiento es la combinación de elementos simples en unidades más amplias.",
+        "La categorización consiste en ordenar los elementos según su longitud o número de letras.",
+        "La jerarquización implica establecer un orden de importancia de mayor a menor nivel."
+      ],
+      "correct": 1,
+      "hint": "Recuerda en qué se basa la categorización (animales, electrodomésticos...).",
+      "explanation": "La categorización se basa en el significado o concepto común, no en rasgos físicos superficiales como la longitud de la palabra."
+    },
+    {
+      "q": "Sobre el efecto de generación, identifique la afirmación INCORRECTA:",
+      "options": [
+        "Es la ventaja en la memoria de las informaciones generadas por el sujeto frente a las leídas.",
+        "Solo se produce cuando el sujeto genera antónimos, pero falla en el caso de las rimas.",
+        "Requiere un procesamiento mayor durante la codificación por parte del sujeto evaluado."
+      ],
+      "correct": 1,
+      "hint": "Revisa los resultados de las cinco reglas de generación en el experimento de Slamecka y Graf.",
+      "explanation": "El efecto de generación se observó en todas las condiciones, incluyendo rima, antónimos, sinónimos, etc."
+    },
+    {
+      "q": "En cuanto a los modelos de categorización, señale la opción INCORRECTA:",
+      "options": [
+        "Los primeros modelos defendían que los límites de las categorías eran vagos e imprecisos.",
+        "El modelo de ejemplares propone que comparamos estímulos con casos concretos retenidos.",
+        "El modelo de prototipos se basa en la semejanza de lo percibido con una representación ideal."
+      ],
+      "correct": 0,
+      "hint": "Analiza la evolución de los modelos desde el 'todo o nada' hacia los límites difusos.",
+      "explanation": "Los primeros modelos ('todo o nada') defendían límites muy precisos y claros; fueron los modelos posteriores los que introdujeron la vaguedad."
+    },
+    {
+      "q": "Respecto a los prototipos, identifique la opción INCORRECTA:",
+      "options": [
+        "Es el ejemplar que mejor representa el concepto por compartir más rasgos de la categoría.",
+        "El prototipo de una categoría es el mismo para todas las personas independientemente de su cultura.",
+        "La manzana suele ser el prototipo de fruta frente a elementos menos típicos como el higo."
+      ],
+      "correct": 1,
+      "hint": "Considera el ejemplo del niño que viaja en autobús frente al que viaja en coche.",
+      "explanation": "El prototipo puede variar según la experiencia personal y el contexto cultural del individuo."
+    },
+    {
+      "q": "Sobre las redes semánticas de Collins y Quillian, señale la afirmación INCORRECTA:",
+      "options": [
+        "Están formadas por nodos (conceptos) y enlaces (relaciones entre conceptos).",
+        "Los conceptos están organizados jerárquicamente de categorías superiores a inferiores.",
+        "Este modelo explica perfectamente por qué tardamos lo mismo en acceder a cualquier nodo."
+      ],
+      "correct": 2,
+      "hint": "Recuerda las críticas al modelo original sobre la facilidad de acceso a ciertos nodos.",
+      "explanation": "El modelo original fallaba al explicar por qué unos nodos son más accesibles; esto llevó a introducir la 'distancia semántica'."
+    },
+    {
+      "q": "Sobre la teoría de los esquemas, identifique la opción INCORRECTA:",
+      "options": [
+        "Los esquemas se adquieren a través de la experiencia y actividades de aprendizaje.",
+        "Cada nueva experiencia vivida modifica los esquemas cognitivos previos que ya poseemos.",
+        "Un esquema mental es una fotografía exacta y detallada de un evento único e irrepetible."
+      ],
+      "correct": 2,
+      "hint": "Diferencia entre una representación 'genérica' y una 'específica'.",
+      "explanation": "Los esquemas son estructuras genéricas y abstractas, no recuerdos detallados de eventos singulares."
+    },
+    {
+      "q": "Respecto a los guiones (scripts), señale la opción INCORRECTA:",
+      "options": [
+        "Son un tipo específico de esquema que describe acciones habituales ordenadas.",
+        "Fueron desarrollados por Schank y Abelson para explicar el conocimiento de eventos.",
+        "Solo contienen información sobre el precio de los objetos, ignorando las funciones de las personas."
+      ],
+      "correct": 2,
+      "hint": "Piensa en el guion del restaurante: ¿solo importa el dinero o también el camarero?",
+      "explanation": "Los guiones incluyen funciones típicas (roles de camarero/cliente) y secuencias completas de acciones."
+    },
+    {
+      "q": "Sobre el conocimiento procedimental, identifique la opción INCORRECTA:",
+      "options": [
+        "Se refiere a la información sobre cómo realizar una tarea motora o cognitiva.",
+        "Se representa en la mente mediante el mismo sistema de redes jerárquicas que el declarativo.",
+        "Utiliza reglas de producción condicionales basadas en la estructura 'si - entonces'."
+      ],
+      "correct": 1,
+      "hint": "Compara la representación del 'saber qué' frente al 'saber cómo'.",
+      "explanation": "El texto explicita que la representación del conocimiento procedimental es diferente a la del declarativo."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre la codificación es INCORRECTA?",
+      "options": [
+        "Es el proceso de transformar la información percibida en información compatible con el cerebro.",
+        "La fase de codificación es opcional si el almacenamiento se realiza de forma automática.",
+        "Durante la codificación se produce la integración de la representación con su contexto."
+      ],
+      "correct": 1,
+      "hint": "Analiza la importancia de la codificación para el resto de fases de la memoria.",
+      "explanation": "La codificación es obligatoria; si falla, no hay nada que almacenar ni recuperar posteriormente."
+    },
+    {
+      "q": "Sobre el estudio de Craik y Tulving (1975), señale la opción INCORRECTA:",
+      "options": [
+        "Las preguntas sobre si una palabra está en mayúsculas inducen un procesamiento estructural.",
+        "Las preguntas sobre si una palabra encaja en una frase inducen un procesamiento semántico.",
+        "El procesamiento estructural (mayúsculas) produce siempre un mejor recuerdo que el semántico."
+      ],
+      "correct": 2,
+      "hint": "Recuerda qué nivel de análisis (visual o significado) da mejores resultados de memoria.",
+      "explanation": "Es el procesamiento semántico (significado) el que produce huellas mucho más duraderas que el análisis superficial físico."
+    },
+    {
+      "q": "Respecto a la organización subjetiva, señale la afirmación INCORRECTA:",
+      "options": [
+        "Permite que el sujeto cree sus propios criterios de orden ante listas aleatorias.",
+        "Nuestros conocimientos previos y expectativas nos ayudan a organizar la información.",
+        "Es una estrategia que solo se puede usar si el experimentador nos da las claves previas."
+      ],
+      "correct": 2,
+      "hint": "Revisa si la organización 'subjetiva' depende del experimentador o del sujeto.",
+      "explanation": "La organización subjetiva es interna y propia del individuo; no necesita que el entorno le dé claves externas."
+    },
+    {
+      "q": "Sobre la categorización, identifique la opción INCORRECTA:",
+      "options": [
+        "Es el proceso de asignar varios conceptos a una misma categoría por ser equivalentes.",
+        "Una vez creada una categoría, esta permanece estática y no se puede ampliar con la experiencia.",
+        "Ayuda a que la enorme cantidad de información no sature nuestro sistema nervioso."
+      ],
+      "correct": 1,
+      "hint": "Considera el ejemplo de añadir 'melocotón' a la categoría 'fruta' años después.",
+      "explanation": "Las categorías son dinámicas; se amplían y actualizan constantemente con los nuevos aprendizajes y experiencias."
+    },
+    {
+      "q": "¿Cuál de estas afirmaciones sobre el modelo de ejemplares es INCORRECTA?",
+      "options": [
+        "No tenemos una representación genérica del concepto, sino ejemplares muy concretos.",
+        "La categorización se hace a partir de la semejanza con los ejemplares almacenados.",
+        "Es el modelo que mejor explica la existencia de una 'representación ideal' o promedio."
+      ],
+      "correct": 2,
+      "hint": "Diferencia qué modelo usa 'casos reales' y cuál usa 'ideales'.",
+      "explanation": "La 'representación ideal' es propia del modelo de prototipos, no del de ejemplares (que usa casos reales)."
+    },
+    {
+      "q": "Sobre la tipicidad en la categorización, señale la opción INCORRECTA:",
+      "options": [
+        "Los elementos más típicos son los que comparten más rasgos con el prototipo.",
+        "Los miembros con menos tipicidad aparecen con más frecuencia en nuestro vocabulario.",
+        "Se tarda más tiempo en categorizar un elemento atípico (ej. aguacate como fruta)."
+      ],
+      "correct": 1,
+      "hint": "Piensa en qué palabras nos vienen antes a la cabeza al pensar en una categoría.",
+      "explanation": "Son los elementos con alta tipicidad los que más usamos y los que primero recordamos como ejemplos."
+    },
+    {
+      "q": "Respecto a la propagación de la activación, identifique la afirmación INCORRECTA:",
+      "options": [
+        "Al percibir un estímulo, se activa su nodo y los nodos relacionados con él.",
+        "La activación de los nodos relacionados no depende en absoluto de la distancia semántica.",
+        "A partir del concepto 'pan', es probable que se activen conceptos como 'harina' u 'horno'."
+      ],
+      "correct": 1,
+      "hint": "Recuerda la relación entre la 'fuerza de asociación' y la distancia en la red.",
+      "explanation": "La distancia semántica es fundamental: los nodos más cercanos reciben la activación antes y con más fuerza."
+    },
+    {
+      "q": "Sobre los esquemas y las inferencias, señale la opción INCORRECTA:",
+      "options": [
+        "Los esquemas nos permiten 'leer entre líneas' y deducir información no explícita.",
+        "Si alguien dice 'he comprado un libro', el esquema de compra nos permite inferir que ha pagado.",
+        "Las inferencias son errores de memoria que debemos evitar para tener un recuerdo objetivo."
+      ],
+      "correct": 2,
+      "hint": "Analiza si las inferencias nos ayudan o nos perjudican en la vida diaria.",
+      "explanation": "Las inferencias son procesos útiles y necesarios para comprender el mundo de forma eficiente, no fallos del sistema."
+    },
+    {
+      "q": "Acerca de los marcos (frames), identifique la afirmación INCORRECTA:",
+      "options": [
+        "Son representaciones mentales genéricas de situaciones como un partido de fútbol.",
+        "Se manifiestan como esquemas mentales de lugares como una biblioteca o un hospital.",
+        "Son secuencias de pasos numerados que el sujeto debe recitar para aprender una tarea."
+      ],
+      "correct": 2,
+      "hint": "Diferencia el concepto de 'marco' frente a una 'lista de instrucciones'.",
+      "explanation": "Los marcos son estructuras de conocimiento sobre escenarios, no listas de pasos secuenciales para ejecutar."
+    },
+    {
+      "q": "Sobre las reglas de producción (si-entonces), señale la opción INCORRECTA:",
+      "options": [
+        "Son fundamentales para representar el conocimiento de tipo procedimental.",
+        "Solo pueden tener una única condición (si) para ejecutar una acción determinada.",
+        "Establecen un objetivo y, en función de este, se ejecutan acciones condicionales."
+      ],
+      "correct": 1,
+      "hint": "Revisa el ejemplo de 'llueve' y 'voy andando al trabajo'.",
+      "explanation": "Una regla de producción puede tener múltiples condiciones (ej. 'si llueve' Y 'voy andando') para disparar una acción."
+    },
+    {
+      "q": "¿Cuál de estas afirmaciones sobre el proceso de memoria es INCORRECTA?",
+      "options": [
+        "La fase de recuperación permite activar información almacenada para hacer uso de ella.",
+        "El almacenamiento es el resultado de la adquisición y la consolidación de la información.",
+        "La codificación es la última fase del proceso y ocurre después de recuperar el recuerdo."
+      ],
+      "correct": 2,
+      "hint": "Ordena cronológicamente: percibir, guardar, recordar.",
+      "explanation": "La codificación es la primera fase, no la última. Sin codificación inicial no puede haber almacenamiento ni recuperación."
+    },
+    {
+      "q": "Sobre la distintividad y elaboración, señale la afirmación INCORRECTA:",
+      "options": [
+        "La elaboración añade información; la distintividad permite diferenciar la huella del resto.",
+        "Jacoby y Craik demostraron que el beneficio de la elaboración es debido a una huella más distintiva.",
+        "Ambos conceptos son términos sinónimos que se refieren exactamente al mismo proceso mental."
+      ],
+      "correct": 2,
+      "hint": "Analiza las definiciones específicas de cada término en el apartado 3.2.3.",
+      "explanation": "Son procesos distintos: uno suma conexiones (elaboración) y el otro destaca rasgos diferenciales (distintividad)."
+    },
+    {
+      "q": "La subfase de la codificación denominada ____ es la encargada de registrar la información que proviene directamente de los almacenes sensoriales.",
+      "options": [
+        "La consolidación mnésica",
+        "La adquisición de inputs",
+        "La recuperación de huella"
+      ],
+      "correct": 1,
+      "hint": "Se encarga del registro inicial tras el análisis de procesos.",
+      "explanation": "Según el texto, la codificación incluye dos fases: adquisición, que registra la información de los almacenes sensoriales, y consolidación."
+    },
+    {
+      "q": "En el modelo de Melton (1963), el ____ se define no como un proceso en sí mismo, sino como el resultado de la adquisición y la consolidación.",
+      "options": [
+        "Análisis de información",
+        "Recuerdo de contenidos",
+        "Almacenamiento estable"
+      ],
+      "correct": 2,
+      "hint": "Es el estado resultante donde la información cambia.",
+      "explanation": "El almacenamiento no es un proceso en sí mismo, sino el resultado de los procesos de adquisición y consolidación a través del tiempo."
+    },
+    {
+      "q": "El ____ de mantenimiento se caracteriza por una simple repetición que contribuye de forma muy reducida a la mejora de la codificación a largo plazo.",
+      "options": [
+        "Proceso de elaboración",
+        "Esquema de repetición",
+        "Repaso de información"
+      ],
+      "correct": 2,
+      "hint": "Es el tipo de repaso que se pierde rápidamente tras cesar la actividad.",
+      "explanation": "El repaso de mantenimiento es la simple repetición oral o silenciosa que no garantiza mejoras en la codificación profunda."
+    },
+    {
+      "q": "Craik y Tulving (1975) sugieren que la codificación depende del ____ de la información más que de la profundidad del procesamiento original.",
+      "options": [
+        "Grado de elaboración",
+        "Nivel de persistencia",
+        "Índice de repetición"
+      ],
+      "correct": 0,
+      "hint": "Depende de la cantidad y calidad del conocimiento previo sobre el tema.",
+      "explanation": "La codificación depende del grado de elaboración de la información; cuanto más elaborada sea, mejor será su codificación."
+    },
+    {
+      "q": "En los experimentos de niveles de procesamiento, se observó que la ____ semántica permitía una mejor integración entre la palabra y la oración.",
+      "options": [
+        "Similitud contextual",
+        "Congruencia de rasgos",
+        "Asociación por rima"
+      ],
+      "correct": 1,
+      "hint": "Se refiere a las respuestas afirmativas donde la palabra encaja en la oración.",
+      "explanation": "Las palabras con respuesta afirmativa se recordaban mejor por su congruencia semántica, combinando contextos de codificación."
+    },
+    {
+      "q": "El efecto ____ establece que los elementos no similares o incongruentes de un conjunto se recuerdan mejor que los elementos similares.",
+      "options": [
+        "De Collins y Quillian",
+        "De Von Restorff real",
+        "De Slamecka y Graf"
+      ],
+      "correct": 1,
+      "hint": "Relacionado con la distintividad de la huella de memoria.",
+      "explanation": "El efecto Von Restorff indica que elementos distintivos en un contexto de similitud se codifican y recuperan mejor."
+    },
+    {
+      "q": "La ____ subjetiva se refiere a las estrategias propias que el sujeto pone en marcha para organizar la información durante la codificación.",
+      "options": [
+        "Categorización lógica",
+        "Estructuración formal",
+        "Organización interna"
+      ],
+      "correct": 2,
+      "hint": "Tulving (1962) la estudió con listas de palabras no relacionadas.",
+      "explanation": "La organización subjetiva son las estrategias que ponemos en marcha para darle un orden propio a la información que percibimos."
+    },
+    {
+      "q": "La estrategia de ____ consiste en la combinación de elementos simples en unidades de información más amplias o complejas.",
+      "options": [
+        "La jerarquización",
+        "El agrupamiento",
+        "La codificación"
+      ],
+      "correct": 1,
+      "hint": "Ejemplo: recordar el DNI agrupando los dígitos de dos en dos.",
+      "explanation": "El agrupamiento combina elementos simples en unidades más amplias, como los números de teléfono."
+    },
+    {
+      "q": "El efecto de ____ es la ventaja en la memoria de las informaciones creadas por el propio sujeto frente a las simplemente leídas.",
+      "options": [
+        "La representación",
+        "La estructuración",
+        "La generación"
+      ],
+      "correct": 2,
+      "hint": "Slamecka y Graf (1978) lo demostraron con reglas como sinónimos o rimas.",
+      "explanation": "El efecto de generación demuestra que el sujeto recuerda mejor si tiene un rol activo en la creación de la información."
+    },
+    {
+      "q": "En el conocimiento procedimental, las ____ son esenciales para establecer la relación condicional entre un objetivo y una acción.",
+      "options": [
+        "Reglas de producción",
+        "Redes de asociación",
+        "Pautas de ejecución"
+      ],
+      "correct": 0,
+      "hint": "Siguen el formato lógico 'Si - Entonces'.",
+      "explanation": "El conocimiento no declarativo se representa mediante reglas de producción basadas en condiciones necesarias para ejecutar una acción."
+    },
+    {
+      "q": "Un ____ es una unidad de pensamiento que representa mentalmente algo con todas sus características definitorias.",
+      "options": [
+        "Esquema mental",
+        "Concepto básico",
+        "Marco genérico"
+      ],
+      "correct": 1,
+      "hint": "Por ejemplo, el significado de 'mesa'.",
+      "explanation": "Un concepto es una unidad de pensamiento, una representación mental sobre algo."
+    },
+    {
+      "q": "Los modelos de ____ suponen que las categorías contienen casos concretos que sirven de base para comparaciones futuras.",
+      "options": [
+        "Los prototipos",
+        "Los ejemplares",
+        "Las redes"
+      ],
+      "correct": 1,
+      "hint": "No usamos una representación genérica, sino casos específicos almacenados.",
+      "explanation": "Según el modelo de ejemplares, retenemos ejemplares concretos y categorizamos nuevos estímulos por semejanza con ellos."
+    },
+    {
+      "q": "El ____ es el ejemplar más representativo de una categoría, aquel que comparte el mayor número de rasgos con el resto.",
+      "options": [
+        "Prototipo ideal",
+        "Símbolo central",
+        "Nodo principal"
+      ],
+      "correct": 0,
+      "hint": "Es una representación más genérica y abstracta que un ejemplar específico.",
+      "explanation": "El prototipo es el mejor ejemplo del concepto, el más representativo de la categoría."
+    },
+    {
+      "q": "La ____ entre los nodos de una red semántica es fundamental para determinar la probabilidad de activar conceptos relacionados.",
+      "options": [
+        "Conexión lógica",
+        "Distancia real",
+        "Distancia semántica"
+      ],
+      "correct": 2,
+      "hint": "A menor separación, más probabilidad de propagación de la activación.",
+      "explanation": "Rips, Shoben y Smith propusieron que la activación se extiende según la distancia semántica entre los nodos."
+    },
+    {
+      "q": "Los ____ son estructuras mentales genéricas que contienen información sobre situaciones, hechos o fenómenos complejos aprendidos.",
+      "options": [
+        "Esquemas cognitivos",
+        "Procesos básicos",
+        "Sistemas activos"
+      ],
+      "correct": 0,
+      "hint": "Permiten hacer inferencias e interpretar la realidad.",
+      "explanation": "Un esquema es una estructura mental genérica sobre situaciones o hechos concretos basada en la experiencia."
+    },
+    {
+      "q": "La modalidad de esquemas que representan escenas genéricas como una biblioteca o un supermercado se denomina ____.",
+      "options": [
+        "Proposiciones",
+        "Marcos mentales",
+        "Guiones de red"
+      ],
+      "correct": 1,
+      "hint": "Minsky fue uno de sus precursores (aunque el texto solo los define como marcos).",
+      "explanation": "Los marcos son representaciones genéricas de escenas o estructuras como una biblioteca o un supermercado."
+    },
+    {
+      "q": "Los ____ describen secuencias de acciones habituales que siguen un orden cronológico determinado, como ir a un restaurante.",
+      "options": [
+        "Planes de acción",
+        "Guiones sociales",
+        "Esquemas dinámicos"
+      ],
+      "correct": 1,
+      "hint": "Desarrollados por Schank y Abelson (1977).",
+      "explanation": "Los guiones son tipos específicos de esquemas que definen acontecimientos o acciones habituales en orden secuencial."
+    },
+    {
+      "q": "La información en la memoria semántica se organiza de forma eficiente mediante ____, donde los conceptos son nodos unidos por enlaces.",
+      "options": [
+        "Redes semánticas",
+        "Mapas mentales",
+        "Listas lógicas"
+      ],
+      "correct": 0,
+      "hint": "Collins y Quillian (1969) propusieron su organización jerárquica.",
+      "explanation": "Las redes semánticas representan conceptos como unidades (nodos) relacionadas entre sí a través de preposiciones (enlaces)."
+    },
+    {
+      "q": "El proceso de ____ transforma los inputs recibidos en representaciones compatibles con el sistema nervioso central.",
+      "options": [
+        "La consolidación",
+        "La adquisición",
+        "El registro"
+      ],
+      "correct": 0,
+      "hint": "Es la segunda subfase de la codificación mencionada en el texto.",
+      "explanation": "La consolidación es el proceso mediante el cual los inputs se transforman en representaciones compatibles con nuestro sistema nervioso."
+    },
+    {
+      "q": "Según el texto, la simple ____ de aprender no garantiza por sí sola un beneficio significativo en la fase de codificación.",
+      "options": [
+        "Acción física",
+        "Intención real",
+        "Práctica vocal"
+      ],
+      "correct": 1,
+      "hint": "Lo relevante son los procesos que ocurren durante la fase, no el deseo.",
+      "explanation": "Se ha demostrado que la simple intención de aprender no es suficiente; importan los procesos durante la fase."
+    },
+    {
+      "q": "El repaso ____ implica trabajar mentalmente la información para relacionarla con conocimientos ya existentes en la MLP.",
+      "options": [
+        "De mantenimiento",
+        "De repetición",
+        "Elaborativo"
+      ],
+      "correct": 2,
+      "hint": "Permite que la información se organice y adapte al material existente.",
+      "explanation": "El repaso elaborativo procesa la información profundamente y la relaciona con información ya almacenada en la MLP."
+    },
+    {
+      "q": "Jacoby y Craik demostraron que la elaboración es positiva porque genera una huella de memoria mucho más ____.",
+      "options": [
+        "Duradera en tiempo",
+        "Distintiva de otras",
+        "Fácil de recuperar"
+      ],
+      "correct": 1,
+      "hint": "Al añadir información relacionada, se diferencia mejor del resto.",
+      "explanation": "El efecto positivo del grado de elaboración se debe a que genera una huella más distintiva."
+    },
+    {
+      "q": "En la organización objetiva, presentar los nombres agrupados por ____ facilita enormemente su posterior recuperación.",
+      "options": [
+        "Orden de llegada",
+        "Categorías reales",
+        "Longitud de texto"
+      ],
+      "correct": 1,
+      "hint": "La propia categoría actúa como clave de recuperación.",
+      "explanation": "Presentar información organizada por categorías (frutas, vehículos) facilita la codificación y recuperación."
+    },
+    {
+      "q": "La ____ consiste en ordenar la información de forma piramidal, por ejemplo, de lo más general a lo más específico.",
+      "options": [
+        "Categorización",
+        "Jerarquización",
+        "Agrupación"
+      ],
+      "correct": 1,
+      "hint": "Es una de las tres estrategias de organización subjetiva mencionadas.",
+      "explanation": "La jerarquización consiste en ordenar la información jerárquicamente, por ejemplo de mayor a menor importancia."
+    },
+    {
+      "q": "La teoría ____ del procesamiento sugiere que generar el conocimiento implica una mayor variedad de operaciones que leer.",
+      "options": [
+        "Multiproceso",
+        "De esfuerzo",
+        "De redes"
+      ],
+      "correct": 0,
+      "hint": "Una de las explicaciones para el efecto de generación.",
+      "explanation": "La explicación multiproceso sugiere que generar implica más procesos (procesamiento del estímulo, búsqueda de claves) que leer."
+    },
+    {
+      "q": "El ____ semántico permite organizar el conocimiento mediante la asignación de conceptos equivalentes a grupos comunes.",
+      "options": [
+        "Proceso de categorización",
+        "Sistema de almacenamiento",
+        "Esquema de recuperación"
+      ],
+      "correct": 0,
+      "hint": "Ocurre cuando asignamos varios conceptos a una misma estructura como 'peces'.",
+      "explanation": "La categorización ocurre cuando asignamos conceptos a una misma categoría asumiendo que son equivalentes."
+    },
+    {
+      "q": "Los modelos clásicos de categorización tenían un aspecto de ____, donde los límites entre grupos eran muy precisos.",
+      "options": [
+        "Poco o mucho",
+        "Todo o nada",
+        "Más o menos"
+      ],
+      "correct": 1,
+      "hint": "Idea criticada por no admitir grados de representatividad.",
+      "explanation": "Los primeros modelos le asignaban un aspecto de todo o nada a la pertenencia de un concepto a una categoría."
+    },
+    {
+      "q": "El grado de ____ describe cuánto se parece un miembro de una categoría a su prototipo ideal.",
+      "options": [
+        "Abstracción",
+        "Tipicidad",
+        "Frecuencia"
+      ],
+      "correct": 1,
+      "hint": "Elementos con bajo nivel en esto son menos accesibles en la memoria.",
+      "explanation": "El grado de tipicidad se refiere a qué tan representativo es un miembro; los menos típicos se categorizan más lento."
+    },
+    {
+      "q": "Una ____ es una unidad abstracta formada por símbolos que representan entidades y sus relaciones lógicas.",
+      "options": [
+        "Proposición",
+        "Imagen mental",
+        "Regla activa"
+      ],
+      "correct": 0,
+      "hint": "Se representa a menudo como (Sujeto, Objeto).",
+      "explanation": "Una proposición es algo más abstracto que las palabras y está formada por símbolos que representan entidades concretas."
+    },
+    {
+      "q": "En el modelo de Collins y Quillian, la red está formada por ____, que representan los conceptos individuales.",
+      "options": [
+        "Enlaces",
+        "Nodos",
+        "Vías"
+      ],
+      "correct": 1,
+      "hint": "Son los puntos de conexión en la estructura jerárquica.",
+      "explanation": "La red semántica está formada por nodos, que son los conceptos, y enlaces, que son las conexiones."
+    },
+    {
+      "q": "La ____ de la activación explica cómo al pensar en un concepto se activan automáticamente otros relacionados.",
+      "options": [
+        "Propagación",
+        "Asociación",
+        "Linealidad"
+      ],
+      "correct": 0,
+      "hint": "Depende directamente de la distancia semántica.",
+      "explanation": "El procesamiento se realiza por la propagación de la activación, donde un nodo activado excita a sus vecinos."
+    },
+    {
+      "q": "Los esquemas tienen ____ que el sujeto debe completar con la información específica de cada situación concreta.",
+      "options": [
+        "Enlaces",
+        "Huecos",
+        "Nodos"
+      ],
+      "correct": 1,
+      "hint": "Permiten inferir datos no presentes explícitamente.",
+      "explanation": "El esquema genérico tiene huecos que completamos con datos específicos de la situación que vivimos."
+    },
+    {
+      "q": "El conocimiento ____ se representa mediante redes semánticas, mientras que el procedimental usa reglas condicionales.",
+      "options": [
+        "Declarativo",
+        "Explícito",
+        "Semántico"
+      ],
+      "correct": 0,
+      "hint": "Incluye tanto la memoria episódica como la semántica.",
+      "explanation": "El conocimiento declarativo se representa a través de redes semánticas y esquemas mentales."
+    },
+    {
+      "q": "El experimento de Tulving (1962) demostró que los sujetos tienden a recordar palabras en un orden ____ constante.",
+      "options": [
+        "Subjetivo",
+        "Alfabético",
+        "Aleatorio"
+      ],
+      "correct": 0,
+      "hint": "Incluso si las palabras se presentan de forma desordenada en cada ensayo.",
+      "explanation": "Tulving observó que los participantes elaboraban su propia organización subjetiva y la mantenían entre ensayos."
+    },
+    {
+      "q": "La ____ es una fase obligatoria para que se produzca el almacenamiento y el recuerdo posterior de la información.",
+      "options": [
+        "Consolidación",
+        "Codificación",
+        "Recuperación"
+      ],
+      "correct": 1,
+      "hint": "Si esta fase falla, no es posible continuar con el resto de procesos.",
+      "explanation": "La fase de codificación es obligatoria; si falla, no hay almacenamiento ni recuerdo posible."
+    },
+    {
+      "q": "Investigaciones recientes indican que la codificación de ____ obedece a los mismos principios que la de códigos alfanuméricos.",
+      "options": [
+        "Los olores",
+        "Las voces",
+        "Las imágenes"
+      ],
+      "correct": 0,
+      "hint": "Herz y Engen (1996) estudiaron este tipo de estímulo sensorial.",
+      "explanation": "Nuevas investigaciones sobre olores e indican que estos obedecen a los mismos principios que los códigos alfanuméricos."
+    },
+    {
+      "q": "El ____ cognitivo es una de las explicaciones propuestas para el éxito del efecto de generación en la memoria.",
+      "options": [
+        "Esfuerzo",
+        "Repaso",
+        "Análisis"
+      ],
+      "correct": 0,
+      "hint": "A mayor trabajo mental en la creación, mejor retención.",
+      "explanation": "Una explicación es el esfuerzo cognitivo: las tareas donde el sujeto genera requieren más esfuerzo y se retienen mejor."
+    },
+    {
+      "q": "En el esquema de compra, el ____ y el vendedor son elementos obligatorios para que la estructura sea válida.",
+      "options": [
+        "Comprador",
+        "Producto",
+        "Contrato"
+      ],
+      "correct": 0,
+      "hint": "Son los roles humanos necesarios en dicha transacción genérica.",
+      "explanation": "En el esquema de compra, obligatoriamente ha de haber un vendedor y un comprador."
+    },
+    {
+      "q": "La ____ es la representación de los diferentes tipos de elementos que caen dentro de un concepto determinado.",
+      "options": [
+        "Categoría",
+        "Proposición",
+        "Estructura"
+      ],
+      "correct": 0,
+      "hint": "Por ejemplo, 'mueble' incluye 'silla' y 'mesa'.",
+      "explanation": "La categoría es la representación de los diferentes tipos de elementos dentro de un concepto."
+    },
+    {
+      "q": "La capacidad para recordar depende directamente de la calidad con la que se realizó la ____ de la información.",
+      "options": [
+        "Adquisición",
+        "Codificación",
+        "Recuperación"
+      ],
+      "correct": 1,
+      "hint": "Es el proceso inicial que transforma el input externo.",
+      "explanation": "Nuestra capacidad para recordar va a depender de lo bien o mal que lo hicimos cuando codificamos."
+    },
+    {
+      "q": "¿Qué subfases integran el proceso de codificación según el modelo estándar?",
+      "options": [
+        "La adquisición y la consolidación de huella.",
+        "El registro sensorial y el análisis de rasgos.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "El texto menciona adquisición y consolidación como partes del proceso interpretativo.",
+      "explanation": "El proceso de codificación incluye adquisición (registro sensorial y análisis) y consolidación (transformación neural)."
+    },
+    {
+      "q": "¿Cuáles son las fases cruciales de la memoria propuestas por Melton (1963)?",
+      "options": [
+        "La fase de codificación de la información.",
+        "La fase de almacenamiento y la recuperación.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Son las tres fases clásicas interconectadas.",
+      "explanation": "Melton sugirió que en la memoria se dan tres fases: codificación, almacenamiento y recuperación."
+    },
+    {
+      "q": "¿Qué características definen al repaso de mantenimiento?",
+      "options": [
+        "Es una repetición vocal o subvocal simple.",
+        "Su beneficio para la codificación es reducido.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Se usa para mantener información brevemente (ej. un teléfono).",
+      "explanation": "El repaso de mantenimiento es la repetición simple, tiene poca influencia en la codificación permanente y se pierde rápido."
+    },
+    {
+      "q": "¿De qué factores depende el grado de elaboración de la información?",
+      "options": [
+        "De la cantidad de conocimiento previo del tema.",
+        "De la calidad del conocimiento que ya se posee.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Relacionado con la riqueza de la red semántica del sujeto.",
+      "explanation": "El grado de elaboración depende de la cantidad y calidad del conocimiento que tengamos acerca de un tema concreto."
+    },
+    {
+      "q": "¿Qué conclusiones se extrajeron de los estudios de Craik y Tulving (1975)?",
+      "options": [
+        "El tiempo de procesamiento no predice profundidad.",
+        "La congruencia semántica favorece el recuerdo.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Revisaron su hipótesis inicial sobre el tiempo y la profundidad.",
+      "explanation": "Observaron que el tiempo por sí solo no predice profundidad y que la congruencia semántica (respuestas SÍ) ayuda al recuerdo."
+    },
+    {
+      "q": "¿Qué operaciones mentales favorecen una codificación distintiva?",
+      "options": [
+        "Detectar rasgos que diferencian los estímulos.",
+        "Identificar propiedades únicas de cada elemento.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Se trata de descubrir qué hace a un estímulo diferente de otros.",
+      "explanation": "La distintividad implica operaciones mentales para descubrir características concretas, rasgos o funciones diferenciales."
+    },
+    {
+      "q": "¿Qué tipos de organización se pueden dar durante la codificación?",
+      "options": [
+        "Organización objetiva basada en el material.",
+        "Organización subjetiva basada en el sujeto.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Pueden ser criterios externos o estrategias internas.",
+      "explanation": "Podemos hacer referencia tanto a la organización de la información (objetiva) como a las estrategias propias (subjetiva)."
+    },
+    {
+      "q": "¿Qué estrategias forman parte de la organización subjetiva?",
+      "options": [
+        "El agrupamiento de elementos en unidades.",
+        "La categorización y la jerarquización de datos.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Son métodos para dotar de orden personal al material.",
+      "explanation": "Entre las estrategias de organización subjetiva se distinguen el agrupamiento, la categorización y la jerarquización."
+    },
+    {
+      "q": "¿Qué reglas de generación se utilizaron en el estudio de Slamecka y Graf?",
+      "options": [
+        "Generar el antónimo o un asociado del par.",
+        "Generar un sinónimo o una rima de la palabra.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Se usaron cinco reglas en total para probar el efecto.",
+      "explanation": "Se utilizaron reglas como antónimos, asociados, categoría semántica, sinónimos y rimas."
+    },
+    {
+      "q": "¿Por qué el efecto de generación mejora el recuerdo según las teorías?",
+      "options": [
+        "Porque implica un mayor esfuerzo cognitivo.",
+        "Porque activa una mayor variedad de procesos.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Existen varias explicaciones no excluyentes entre sí.",
+      "explanation": "Las explicaciones incluyen el esfuerzo cognitivo (mayor retención) y el multiproceso (riqueza de la huella)."
+    },
+    {
+      "q": "¿Qué limitaciones presentaban los modelos clásicos de categorización?",
+      "options": [
+        "Era imposible especificar propiedades variadas.",
+        "Unos conceptos eran más típicos que otros.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Eran modelos de 'todo o nada' con límites rígidos.",
+      "explanation": "Los modelos clásicos no explicaban la tipicidad ni la variabilidad de propiedades entre miembros de una categoría."
+    },
+    {
+      "q": "¿En qué se basa la clasificación en el modelo de prototipos?",
+      "options": [
+        "En la semejanza con una representación ideal.",
+        "En el uso de abstracciones genéricas del objeto.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "A diferencia de los ejemplares, el prototipo es una síntesis abstracta.",
+      "explanation": "En los prototipos, comparamos con una representación ideal, genérica y abstracta que es la más representativa."
+    },
+    {
+      "q": "¿Qué caracteriza a los miembros de una categoría con baja tipicidad?",
+      "options": [
+        "Son menos accesibles en la memoria semántica.",
+        "Se tarda más tiempo en realizar su categorización.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Como el aguacate en la categoría de frutas.",
+      "explanation": "Los miembros menos típicos son menos accesibles, aparecen menos en el vocabulario y se categorizan más lento."
+    },
+    {
+      "q": "¿Qué componentes forman la estructura de una red semántica?",
+      "options": [
+        "Nodos que representan conceptos independientes.",
+        "Enlaces que indican relaciones preposicionales.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Es la base del modelo de Collins y Quillian.",
+      "explanation": "La red semántica está formada por nodos (conceptos) y enlaces (conexiones tipo 'es un' o 'tiene')."
+    },
+    {
+      "q": "¿Cómo se adquieren y desarrollan los esquemas mentales?",
+      "options": [
+        "A través de la experiencia directa y cotidiana.",
+        "Mediante el aprendizaje intencional sistemático.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Comienzan en la infancia y se actualizan constantemente.",
+      "explanation": "Los esquemas se forman en la infancia por experiencia propia y actividades de aprendizaje intencional."
+    },
+    {
+      "q": "¿Qué funciones cumplen los esquemas en el procesamiento humano?",
+      "options": [
+        "Permiten realizar inferencias sobre la realidad.",
+        "Ayudan a interpretar el significado de situaciones.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Actúan de forma automática al identificar una situación.",
+      "explanation": "Los esquemas permiten hacer inferencias, interpretar situaciones y determinar nuestro comportamiento."
+    },
+    {
+      "q": "¿Qué elementos componen el guion de ir a un restaurante?",
+      "options": [
+        "Condiciones iniciales como tener mucha hambre.",
+        "Secuencia de acciones como pedir la cuenta.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Schank y Abelson definieron estas estructuras secuenciales.",
+      "explanation": "Un guion incluye temática, condiciones iniciales, funciones típicas y una secuencia de acciones ordenadas."
+    },
+    {
+      "q": "¿Cómo se representa el conocimiento no declarativo según el texto?",
+      "options": [
+        "Mediante el uso de reglas de producción si-entonces.",
+        "A través de condiciones para ejecutar una acción.",
+        "Todas las opciones anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Se basa en el conocimiento procedimental de tareas.",
+      "explanation": "El conocimiento no declarativo se basa en reglas de producción y relaciones condicionales para ejecutar acciones."
+    },
+    {
+      "q": "¿Cuál es la función principal de la consolidación en la memoria?",
+      "options": [
+        "Extraer rasgos físicos del estímulo sensorial.",
+        "Localizar huellas de memoria en redes locales.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Su función es transformar inputs en representaciones neurales compatibles.",
+      "explanation": "La consolidación transforma los inputs en representaciones mentales compatibles con el sistema nervioso."
+    },
+    {
+      "q": "¿Qué describe el repaso de mantenimiento según Craik y Lockhart?",
+      "options": [
+        "Un análisis semántico profundo del material nuevo.",
+        "La integración de datos en la memoria a largo plazo.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Es una repetición superficial que no garantiza aprendizaje.",
+      "explanation": "El repaso de mantenimiento es la simple repetición que contribuye poco a la codificación duradera."
+    },
+    {
+      "q": "En el estudio de elaboración de oraciones, ¿qué se concluyó?",
+      "options": [
+        "Las frases negativas se recordaban mejor que las SÍ.",
+        "La simplicidad de la frase favorece la codificación.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "La complejidad y la congruencia afirmativa fueron los factores clave.",
+      "explanation": "Se concluyó que las oraciones complejas con respuesta SÍ se recordaban mejor por el grado de elaboración."
+    },
+    {
+      "q": "¿Cómo define el texto el concepto de distintividad mnésica?",
+      "options": [
+        "Añadir información redundante a la huella actual.",
+        "Repetir el estímulo en contextos de mucha similitud.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Se trata de diferenciar la huella del resto por sus rasgos únicos.",
+      "explanation": "La distintividad consiste en descubrir características que diferencien un estímulo de otros en un contexto."
+    },
+    {
+      "q": "¿Qué caracteriza a la organización objetiva de la información?",
+      "options": [
+        "El uso de reglas mnemotécnicas creadas por el sujeto.",
+        "La repetición constante de términos sin orden lógico.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Se basa en el orden formal o natural del propio material presentado.",
+      "explanation": "La organización objetiva se refiere a la organización inherente a la información que llega (ej. categorías)."
+    },
+    {
+      "q": "Según Tulving (1962), ¿qué ocurre con palabras no relacionadas?",
+      "options": [
+        "Los sujetos las recuerdan en un orden siempre azaroso.",
+        "La organización del sujeto cambia en cada nuevo ensayo.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Los sujetos crean un orden subjetivo estable.",
+      "explanation": "Tulving observó que los sujetos establecen una organización subjetiva que mantienen en los ensayos de recuerdo."
+    },
+    {
+      "q": "¿En qué consiste la técnica de agrupamiento o 'chunking'?",
+      "options": [
+        "Dividir unidades complejas en elementos aislados.",
+        "Ordenar los datos por su importancia de mayor a menor.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Es unir elementos simples en unidades más grandes.",
+      "explanation": "El agrupamiento combina elementos simples en unidades amplias (ej. dígitos de 2 en 2 en un teléfono)."
+    },
+    {
+      "q": "¿Cuál fue el resultado del grupo control en Slamecka y Graf?",
+      "options": [
+        "Obtuvieron un mejor recuerdo que el grupo experimental.",
+        "Generaron palabras más distintivas que el grupo activo.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "El grupo control simplemente leía, por lo que recordaba menos.",
+      "explanation": "El grupo que generaba las palabras (experimental) tuvo mejor recuerdo que el que solo las leía (control)."
+    },
+    {
+      "q": "¿Qué es un concepto según la psicología de la memoria semántica?",
+      "options": [
+        "La agrupación de elementos con rasgos muy variados.",
+        "La secuencia de acciones ordenadas temporalmente.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Es una unidad de pensamiento o representación mental.",
+      "explanation": "Un concepto es una unidad de pensamiento, una representación mental sobre algo y sus características."
+    },
+    {
+      "q": "¿Cómo funciona la categorización en los modelos de ejemplares?",
+      "options": [
+        "Se compara el estímulo con una media abstracta ideal.",
+        "Se ignora la semejanza física con casos previamente vistos.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Se basa en la semejanza con casos específicos retenidos.",
+      "explanation": "En el modelo de ejemplares se compara el estímulo percibido con ejemplares concretos almacenados."
+    },
+    {
+      "q": "¿Qué define a un prototipo en los modelos de categorización?",
+      "options": [
+        "Es el miembro de la categoría con menor tipicidad real.",
+        "Es un caso específico y único que no admite variaciones.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Es el ejemplar más representativo, una síntesis abstracta.",
+      "explanation": "El prototipo es el ejemplar más representativo, el que comparte más características de la categoría."
+    },
+    {
+      "q": "¿Qué propone la teoría de la distancia semántica de Rips y col.?",
+      "options": [
+        "La activación es constante sin importar la relación lógica.",
+        "Los nodos más lejanos se activan antes que los cercanos.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "La cercanía semántica facilita la activación propagada.",
+      "explanation": "A menor distancia semántica entre nodos, mayor probabilidad de que se activen por propagación."
+    },
+    {
+      "q": "¿Qué es una proposición en el contexto del conocimiento?",
+      "options": [
+        "Una imagen mental exacta de un objeto físico real.",
+        "Una lista de palabras sin conexión gramatical alguna.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Es una representación abstracta formada por símbolos y reglas.",
+      "explanation": "Una proposición es una representación abstracta formada por símbolos que representan entidades y sus relaciones."
+    },
+    {
+      "q": "En el modelo de Collins y Quillian, ¿qué representan los enlaces?",
+      "options": [
+        "Los conceptos individuales almacenados en la red.",
+        "La fuerza del esfuerzo cognitivo realizado por el sujeto.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Representan las conexiones o relaciones entre los conceptos.",
+      "explanation": "Los enlaces son las conexiones entre nodos, indicando relaciones como 'es un' o 'tiene'."
+    },
+    {
+      "q": "¿Qué sucede cuando no poseemos un esquema para una situación?",
+      "options": [
+        "Interpretamos la situación con absoluta precisión lógica.",
+        "El comportamiento se vuelve automático e inconsciente.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "La falta de experiencia impide interpretar el acontecimiento.",
+      "explanation": "Si no tenemos el esquema correspondiente por falta de experiencia, no podremos interpretar el acontecimiento."
+    },
+    {
+      "q": "¿Qué estructura caracteriza al conocimiento procedimental?",
+      "options": [
+        "Una red jerárquica de conceptos supraordenados.",
+        "Un conjunto de esquemas genéricos sobre escenas físicas.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Se basa en reglas de producción condicionales (Si-Entonces).",
+      "explanation": "El conocimiento procedimental se representa mediante reglas de producción basadas en relaciones condicionales."
+    },
+    {
+      "q": "¿Cómo influye el conocimiento previo en la organización?",
+      "options": [
+        "Dificulta la categorización de nuevos términos leídos.",
+        "Impide que el sujeto establezca órdenes subjetivos.",
+        "Ninguna de las opciones anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Facilita la organización y el recuerdo de nombres asociados.",
+      "explanation": "Cuanto más conocimiento previo se tenga, más fácil será organizar y recordar la información asociada."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "Explique detalladamente las dos subfases que componen el proceso de codificación según el texto.",
+      "model": "La codificación se divide en: 1) Adquisición, que registra la información de los almacenes sensoriales mediante procesos de análisis; y 2) Consolidación, mediante la cual los inputs se transforman en representaciones mentales compatibles con el sistema nervioso. Ambas son necesarias para que la información se almacene y perdure en el tiempo.",
+      "keywords": [
+        "adquisición",
+        "consolidación",
+        "representación mental",
+        "sistema nervioso"
+      ],
+      "page": 36
+    },
+    {
+      "q": "Analice la relación de interdependencia entre las fases de codificación, almacenamiento y recuperación.",
+      "model": "Las tres fases están conectadas y son cruciales para el funcionamiento de la memoria. La codificación es obligatoria; si falla, no hay almacenamiento ni recuperación posterior. El almacenamiento no es un proceso aislado, sino el resultado de una correcta adquisición y consolidación. Finalmente, la recuperación activa la información ya almacenada para su uso.",
+      "keywords": [
+        "fases conectadas",
+        "interdependencia",
+        "falla de codificación",
+        "activación"
+      ],
+      "page": 37
+    },
+    {
+      "q": "Compare el repaso de mantenimiento con el repaso elaborativo en términos de eficacia para la memoria a largo plazo.",
+      "model": "El repaso de mantenimiento consiste en la simple repetición mecánica de información para mantenerla temporalmente (como un número de teléfono), perdiéndose al cesar la repetición. El repaso elaborativo implica un trabajo mental profundo, relacionando el nuevo material con conocimientos ya existentes en la MLP, lo que organiza la información y garantiza una codificación efectiva.",
+      "keywords": [
+        "repaso de mantenimiento",
+        "repaso elaborativo",
+        "MLP",
+        "trabajo mental"
+      ],
+      "page": 37
+    },
+    {
+      "q": "Describa la evolución del pensamiento de Craik y Tulving (1975) respecto a la profundidad del procesamiento y el tiempo empleado.",
+      "model": "Inicialmente sugirieron que la profundidad dependía del tiempo de procesamiento. Sin embargo, observaron que palabras con respuesta afirmativa (congruentes) se recordaban mejor que las negativas con el mismo tiempo de análisis. Concluyeron que el tiempo por sí mismo no predice la profundidad, sino que la codificación depende del grado de elaboración y la congruencia semántica.",
+      "keywords": [
+        "profundidad",
+        "tiempo de procesamiento",
+        "congruencia",
+        "elaboración"
+      ],
+      "page": 38
+    },
+    {
+      "q": "¿Cómo influye la complejidad de una oración en la formación de la huella de memoria según los estudios de elaboración?",
+      "model": "A mayor complejidad de la oración (p. ej., oraciones con más detalles descriptivos), se requiere un procesamiento significativo y una mayor elaboración. Los resultados indican que las palabras integradas en oraciones complejas se recuerdan mejor que en las simples, siempre que haya congruencia semántica, ya que se genera una huella de memoria más rica.",
+      "keywords": [
+        "complejidad",
+        "procesamiento significativo",
+        "huella de memoria",
+        "congruencia"
+      ],
+      "page": 39
+    },
+    {
+      "q": "Argumente la importancia de la congruencia semántica en los beneficios de la codificación.",
+      "model": "La congruencia semántica ocurre cuando la información nueva encaja lógicamente con el contexto (respuesta afirmativa). Esto permite combinar los contextos de codificación de la palabra y la oración, facilitando la integración. Se ha demostrado que solo las palabras congruentes muestran beneficios significativos en la codificación al generar huellas más distintivas.",
+      "keywords": [
+        "congruencia semántica",
+        "respuesta afirmativa",
+        "contextos de codificación",
+        "integración"
+      ],
+      "page": 39
+    },
+    {
+      "q": "Diferencie los conceptos de elaboración y distintividad en el proceso de creación de huellas de memoria.",
+      "model": "La elaboración implica añadir más información relacionada con el estímulo para enriquecer la huella. La distintividad se refiere a las operaciones mentales que descubren características diferenciales del estímulo dentro de un contexto; se trata de lo que hace a esa información única o diferente del resto para facilitar su identificación posterior.",
+      "keywords": [
+        "añadir información",
+        "características diferenciales",
+        "única",
+        "identificación"
+      ],
+      "page": 40
+    },
+    {
+      "q": "Explique el efecto Von Restorff y su relación con la codificación de estímulos.",
+      "model": "El efecto Von Restorff establece que los elementos no similares o incongruentes dentro de un conjunto (estímulos aislados por alguna característica) se recuerdan mejor que los elementos similares. Esto sucede porque el estímulo es más distintivo al compartir pocas características con el resto del contexto, creando una huella más fácil de recuperar.",
+      "keywords": [
+        "incongruencia",
+        "elementos no similares",
+        "distintividad",
+        "recuerdo"
+      ],
+      "page": 40
+    },
+    {
+      "q": "Distinga entre organización objetiva y organización subjetiva del material a memorizar.",
+      "model": "La organización objetiva es el sistema formal y externo utilizado para clasificar información (ej. categorías taxonómicas). La organización subjetiva son las estrategias y categorías propias que el sujeto crea basándose en su conocimiento previo, expectativas y valores para dar orden a material que originalmente no lo tiene.",
+      "keywords": [
+        "organización formal",
+        "categorías propias",
+        "estrategias",
+        "conocimiento previo"
+      ],
+      "page": 40
+    },
+    {
+      "q": "Analice el estudio de Tulving (1962) sobre el orden de recuerdo en listas de palabras no relacionadas.",
+      "model": "Tulving observó que, ante listas de palabras al azar, los participantes tendían a repetir las palabras en el mismo orden en ensayos sucesivos. Esto demuestra que los sujetos imponen una organización subjetiva al material, agrupando palabras mediante estrategias propias que se mantienen estables, facilitando así la codificación.",
+      "keywords": [
+        "orden de recuerdo",
+        "ensayos sucesivos",
+        "organización subjetiva",
+        "estrategias estables"
+      ],
+      "page": 41
+    },
+    {
+      "q": "Describa las tres estrategias principales de organización subjetiva: agrupamiento, categorización y jerarquización.",
+      "model": "1) Agrupamiento: Combinar elementos simples en unidades amplias (ej. números de teléfono de 2 en 2). 2) Categorización: Integrar información en clases con significado (ej. animales, muebles). 3) Jerarquización: Ordenar la información de forma piramidal, de lo más general a lo más específico o por importancia.",
+      "keywords": [
+        "unidades amplias",
+        "clases con significado",
+        "orden piramidal",
+        "estrategias"
+      ],
+      "page": 41
+    },
+    {
+      "q": "Explique en qué consiste el 'efecto de generación' y qué implicaciones tiene para el aprendizaje.",
+      "model": "Es la ventaja en la memoria que tienen las informaciones generadas activamente por el sujeto frente a las que son simplemente leídas o recibidas de forma pasiva. Implica que adoptar un rol activo (ej. crear un sinónimo o antónimo) durante la codificación produce un procesamiento mayor y una huella de memoria más consolidada.",
+      "keywords": [
+        "rol activo",
+        "información generada",
+        "procesamiento mayor",
+        "consolidación"
+      ],
+      "page": 42
+    },
+    {
+      "q": "Detalle las reglas de generación utilizadas en el experimento de Slamecka y Graf (1978).",
+      "model": "Utilizaron cinco reglas para que los sujetos generaran la segunda palabra de un par: 1) Antónimo (frío-calor), 2) Asociado (lámpara-luz), 3) Misma categoría semántica (silla-taburete), 4) Sinónimo (error-fallo) y 5) Rima (fresa-mesa). Todas las condiciones de generación superaron a la simple lectura.",
+      "keywords": [
+        "antónimo",
+        "asociado",
+        "categoría semántica",
+        "sinónimo",
+        "rima"
+      ],
+      "page": 42
+    },
+    {
+      "q": "Exponga las dos teorías que explican por qué las tareas de generación mejoran el recuerdo.",
+      "model": "1) Esfuerzo cognitivo: Generar información requiere más recursos mentales, lo que ayuda a la retención. 2) Multiproceso: Generar implica una mayor variedad de procesos (analizar el estímulo, usarlo como clave, etc.) que se asocian con fuerza, añadiendo riqueza y complejidad a la huella de memoria.",
+      "keywords": [
+        "esfuerzo cognitivo",
+        "multiproceso",
+        "recursos mentales",
+        "riqueza de la huella"
+      ],
+      "page": 43
+    },
+    {
+      "q": "Diferencie conceptualmente entre 'concepto' y 'categoría' en el marco de la memoria semántica.",
+      "model": "Un concepto es la unidad de pensamiento o representación mental sobre algo (el significado y sus características, ej. 'mesa'). La categoría es la agrupación que incluye los diferentes tipos de elementos que pertenecen a ese concepto (ej. la categoría 'mueble' incluye conceptos como silla o mesa), permitiendo organizar el conocimiento.",
+      "keywords": [
+        "unidad de pensamiento",
+        "agrupación",
+        "representación mental",
+        "organización"
+      ],
+      "page": 43
+    },
+    {
+      "q": "Analice las críticas a los modelos clásicos de categorización de 'todo o nada'.",
+      "model": "Las críticas son tres: 1) Es imposible especificar propiedades únicas para todos los miembros (ej. manzana vs plátano). 2) Algunos conceptos son más representativos que otros (tipicidad), lo cual no se explica si todos son iguales. 3) Los límites de las categorías son vagos, existiendo dudas sobre si ciertos conceptos pertenecen o no a una categoría.",
+      "keywords": [
+        "propiedades únicas",
+        "tipicidad",
+        "límites vagos",
+        "representatividad"
+      ],
+      "page": 44
+    },
+    {
+      "q": "Explique el funcionamiento del modelo de ejemplares en el proceso de categorización.",
+      "model": "Este modelo propone que las categorías se forman por ejemplares concretos retenidos en la memoria, no por una representación genérica. Al percibir un estímulo nuevo, se activa el ejemplar más semejante disponible en la mente; si la similitud es suficiente, el estímulo es clasificado dentro de esa categoría.",
+      "keywords": [
+        "ejemplares concretos",
+        "semejanza",
+        "activación",
+        "representación específica"
+      ],
+      "page": 44
+    },
+    {
+      "q": "Describa el modelo de prototipos y defina qué es un prototipo.",
+      "model": "El modelo de prototipos propone que categorizamos comparando el estímulo con una representación ideal, genérica y abstracta del concepto. El prototipo es el ejemplar más representativo, que comparte el mayor número de características de la categoría (ej. 'coche' como prototipo de vehículo). Los objetos se incluyen en la categoría según su similitud con este ideal.",
+      "keywords": [
+        "representación ideal",
+        "abstracta",
+        "más representativo",
+        "comparación"
+      ],
+      "page": 45
+    },
+    {
+      "q": "Explique el concepto de tipicidad y cómo afecta al acceso a la información semántica.",
+      "model": "La tipicidad es el grado en que un miembro es representativo de su categoría. Elementos con alta tipicidad (naranja en frutas) son más accesibles, aparecen con más frecuencia en el vocabulario y se categorizan más rápido. Elementos con baja tipicidad (higo en frutas) son menos accesibles y requieren más tiempo de procesamiento.",
+      "keywords": [
+        "representatividad",
+        "accesibilidad",
+        "frecuencia",
+        "tiempo de categorización"
+      ],
+      "page": 45
+    },
+    {
+      "q": "Defina qué es una proposición en el contexto de la representación del conocimiento.",
+      "model": "Una proposición es la unidad de significado más pequeña que puede ser juzgada como verdadera o falsa. Es una representación abstracta formada por símbolos que representan entidades y reglas que los organizan, similar al lenguaje pero más profundo (ej. GATO, SOFÁ para representar 'El gato está en el sofá').",
+      "keywords": [
+        "unidad de significado",
+        "abstracta",
+        "símbolos",
+        "reglas de organización"
+      ],
+      "page": 45
+    },
+    {
+      "q": "Describa la estructura del modelo de redes semánticas de Collins y Quillian (1969).",
+      "model": "Es una organización jerárquica formada por nodos (conceptos) y enlaces (conexiones). Los conceptos están organizados por niveles (supraordenados y subordinados). Los enlaces pueden ser de tipo 'es un' (categoría) o 'tiene' (propiedad). Las propiedades se almacenan en el nivel más alto posible para ahorrar espacio mental.",
+      "keywords": [
+        "jerarquía",
+        "nodos",
+        "enlaces",
+        "organización en red"
+      ],
+      "page": 46
+    },
+    {
+      "q": "Explique el principio de 'propagación de la activación' y el papel de la distancia semántica.",
+      "model": "Al percibir un estímulo, se activa un nodo en la red semántica. Esta activación se extiende a los nodos vecinos. La probabilidad y rapidez de activación dependen de la distancia semántica: a menor distancia (conceptos más relacionados), más fácil y rápida es la activación de los nodos asociados.",
+      "keywords": [
+        "activación",
+        "extensión",
+        "distancia semántica",
+        "probabilidad"
+      ],
+      "page": 47
+    },
+    {
+      "q": "Defina 'esquema' y explique su función en la interpretación de situaciones nuevas.",
+      "model": "Un esquema es una estructura mental genérica que contiene conocimiento organizado sobre situaciones, hechos o fenómenos complejos adquiridos por la experiencia. Su función es permitirnos hacer inferencias, interpretar lo que percibimos y completar 'huecos' informativos de forma automática ante situaciones nuevas.",
+      "keywords": [
+        "estructura mental",
+        "inferencias",
+        "interpretar",
+        "conocimiento genérico"
+      ],
+      "page": 47
+    },
+    {
+      "q": "Distinga entre los conceptos de 'marcos' y 'guiones' dentro de la teoría de los esquemas.",
+      "model": "Los marcos son representaciones mentales genéricas de objetos o lugares (ej. esquema de biblioteca o supermercado). Los guiones (scripts) son tipos específicos de esquemas que representan secuencias de acciones o acontecimientos habituales que siguen un orden temporal (ej. ir a un restaurante o al médico).",
+      "keywords": [
+        "marcos",
+        "guiones",
+        "secuencia de acciones",
+        "orden temporal"
+      ],
+      "page": 47
+    },
+    {
+      "q": "Describa los componentes de un 'guion' según Schank y Abelson (1977) usando el ejemplo del restaurante.",
+      "model": "Un guion incluye: 1) Temática (comer fuera), 2) Condiciones iniciales (tener hambre), 3) Funciones típicas (cliente, camarero), 4) Secuencia de acciones (entrar, pedir, comer, pagar) y 5) Resultados (saciedad, menos dinero). El conocimiento permite actuar sin pensar cada paso.",
+      "keywords": [
+        "temática",
+        "funciones típicas",
+        "secuencia de acciones",
+        "guion"
+      ],
+      "page": 48
+    },
+    {
+      "q": "¿Cómo funcionan los 'huecos' (slots) en un esquema mental durante una interacción real?",
+      "model": "Los esquemas son genéricos y tienen 'huecos' que el sujeto debe completar con los datos específicos de la situación que está viviendo. Por ejemplo, en el esquema de 'compra', los huecos son el vendedor, el comprador, el objeto y el precio. Al entrar en una librería, rellenamos esos huecos con la información presente para saber cómo actuar.",
+      "keywords": [
+        "huecos",
+        "completar información",
+        "datos específicos",
+        "interacción"
+      ],
+      "page": 48
+    },
+    {
+      "q": "Explique el papel de la experiencia en la formación y modificación de los esquemas cognitivos.",
+      "model": "Los esquemas comienzan a formarse en la infancia y se desarrollan mediante la experiencia y el aprendizaje intencional. Cada nueva experiencia no solo activa el esquema previo, sino que lo modifica y actualiza, haciéndolo más complejo y preciso para futuras interpretaciones.",
+      "keywords": [
+        "infancia",
+        "aprendizaje intencional",
+        "modificación",
+        "actualización"
+      ],
+      "page": 47
+    },
+    {
+      "q": "¿En qué consiste la representación del conocimiento procedimental mediante 'reglas de producción'?",
+      "model": "El conocimiento procedimental (saber cómo) se representa mediante reglas condicionales 'si - entonces'. El 'si' representa las condiciones necesarias (objetivos o contexto) y el 'entonces' representa la acción a ejecutar. Puede haber múltiples condiciones para una sola acción.",
+      "keywords": [
+        "si - entonces",
+        "reglas condicionales",
+        "acción",
+        "objetivo"
+      ],
+      "page": 49
+    },
+    {
+      "q": "Compare la representación mental del conocimiento declarativo frente al no declarativo.",
+      "model": "El conocimiento declarativo (saber qué) se representa mediante redes semánticas (conceptos y relaciones) y esquemas mentales (estructuras de situaciones). El conocimiento no declarativo o procedimental (saber cómo) se representa mediante relaciones condicionales o reglas de producción vinculadas a la ejecución de acciones.",
+      "keywords": [
+        "redes semánticas",
+        "esquemas",
+        "reglas de producción",
+        "condicionales"
+      ],
+      "page": 49
+    },
+    {
+      "q": "Analice cómo influye el conocimiento previo en el proceso de organización y categorización de la información.",
+      "model": "El conocimiento previo determina la calidad y cantidad de la elaboración de la información. Cuanto más se sabe sobre una categoría, más fácil es organizar los nombres asociados a ella y establecer categorías subjetivas efectivas. Además, el conocimiento previo define los prototipos y esquemas que usamos para filtrar la realidad.",
+      "keywords": [
+        "conocimiento previo",
+        "calidad de elaboración",
+        "categorías subjetivas",
+        "filtrado"
+      ],
+      "page": 41
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Procesos de Memoria",
+      "q": "¿Cuáles son las tres fases de la memoria propuestas por Melton (1963)?",
+      "a": "Codificación, almacenamiento y recuperación.",
+      "page": 36
+    },
+    {
+      "cat": "Fase de Codificación",
+      "q": "¿En qué consiste la subfase de adquisición dentro de la codificación?",
+      "a": "En el registro de la información proveniente de los almacenes sensoriales mediante procesos de análisis.",
+      "page": 36
+    },
+    {
+      "cat": "Fase de Codificación",
+      "q": "¿Cómo se define el proceso de consolidación en la memoria?",
+      "a": "Es la transformación de los inputs recibidos en representaciones mentales compatibles con el sistema nervioso.",
+      "page": 36
+    },
+    {
+      "cat": "Almacenamiento",
+      "q": "¿Por qué se dice que el almacenamiento no es un proceso en sí mismo?",
+      "a": "Porque es el resultado de los procesos previos de adquisición y consolidación que mantienen la información en el tiempo.",
+      "page": 37
+    },
+    {
+      "cat": "Recuperación",
+      "q": "¿Cuál es la función principal del proceso de recuperación?",
+      "a": "Permitir la activación de información almacenada para hacer uso de ella en un momento determinado.",
+      "page": 37
+    },
+    {
+      "cat": "Codificación",
+      "q": "¿Qué sucede si falla la fase de codificación según el texto?",
+      "a": "No será posible realizar el almacenamiento ni el recuerdo posterior, ya que es una fase obligatoria.",
+      "page": 37
+    },
+    {
+      "cat": "Códigos de Memoria",
+      "q": "¿Qué tipos de códigos sensoriales se mencionan además de los alfanuméricos?",
+      "a": "Códigos auditivos, visuales, de imágenes, de voz y de olores.",
+      "page": 37
+    },
+    {
+      "cat": "Factores de Codificación",
+      "q": "¿Es suficiente la intención de aprender para garantizar una buena codificación?",
+      "a": "No, lo relevante son los procesos que tienen lugar durante la fase de codificación, no la simple intención.",
+      "page": 37
+    },
+    {
+      "cat": "Repaso de Mantenimiento",
+      "q": "¿Qué caracteriza al repaso de mantenimiento?",
+      "a": "Es la simple repetición (oral o silenciosa) de información que contribuye poco a la codificación a largo plazo.",
+      "page": 37
+    },
+    {
+      "cat": "Repaso Elaborativo",
+      "q": "¿Cómo funciona el repaso elaborativo para mejorar la memoria?",
+      "a": "Trabaja mentalmente la información procesándola profundamente y relacionándola con conocimientos previos de la MLP.",
+      "page": 37
+    },
+    {
+      "cat": "Elaboración",
+      "q": "¿De qué depende el grado de elaboración según Craik y Tulving (1975)?",
+      "a": "De la cantidad y calidad del conocimiento previo que se tenga sobre el tema concreto.",
+      "page": 38
+    },
+    {
+      "cat": "Niveles de Procesamiento",
+      "q": "¿Qué relación encontraron Craik y Tulving entre el tiempo de procesamiento y el recuerdo?",
+      "a": "Inicialmente creyeron que más tiempo implicaba más profundidad, pero luego vieron que el tiempo por sí solo no predice la profundidad.",
+      "page": 39
+    },
+    {
+      "cat": "Niveles de Procesamiento",
+      "q": "¿Por qué las palabras con respuesta afirmativa se recordaban mejor que las negativas en los estudios de Craik y Tulving?",
+      "a": "Debido a la congruencia semántica, que permite combinar los contextos de codificación de la palabra y la oración.",
+      "page": 39
+    },
+    {
+      "cat": "Elaboración",
+      "q": "¿Qué efecto tiene la complejidad de una oración en el recuerdo de una palabra?",
+      "a": "Las oraciones más complejas requieren mayor elaboración, lo que facilita un mejor recuerdo de la palabra asociada.",
+      "page": 39
+    },
+    {
+      "cat": "Distintividad",
+      "q": "¿Qué es la distintividad en el contexto de la codificación?",
+      "a": "Es el procesamiento de características diferenciales que permiten distinguir una huella de memoria del resto en un contexto.",
+      "page": 40
+    },
+    {
+      "cat": "Efecto Von Restorff",
+      "q": "¿En qué consiste el efecto Von Restorff?",
+      "a": "En que los elementos incongruentes o no similares dentro de un conjunto se recuerdan mejor que los elementos comunes.",
+      "page": 40
+    },
+    {
+      "cat": "Organización",
+      "q": "¿Qué diferencia hay entre la organización objetiva y la subjetiva?",
+      "a": "La objetiva se basa en criterios externos (categorías reales), mientras que la subjetiva son estrategias propias del sujeto.",
+      "page": 40
+    },
+    {
+      "cat": "Organización",
+      "q": "¿Cómo actúa una categoría como clave de recuperación según Halpern (1986)?",
+      "a": "Recordar un solo elemento de la categoría facilita el acceso al resto de elementos que pertenecen a ella.",
+      "page": 41
+    },
+    {
+      "cat": "Organización Subjetiva",
+      "q": "¿Qué demostró el estudio de Tulving (1962) sobre palabras no relacionadas?",
+      "a": "Que los sujetos crean un orden propio (organización subjetiva) que mantienen de forma constante en varios ensayos.",
+      "page": 41
+    },
+    {
+      "cat": "Estrategias de Organización",
+      "q": "¿En qué consiste la estrategia de agrupamiento (chunking)?",
+      "a": "En combinar elementos simples en unidades más amplias y significativas (ej. agrupar números de teléfono de dos en dos).",
+      "page": 41
+    },
+    {
+      "cat": "Estrategias de Organización",
+      "q": "¿Qué es la jerarquización como estrategia de codificación?",
+      "a": "Consiste en ordenar la información de forma piramidal, de lo más general o importante a lo más específico.",
+      "page": 42
+    },
+    {
+      "cat": "Efecto de Generación",
+      "q": "¿Qué es el efecto de generación descubierto por Slamecka y Graf (1978)?",
+      "a": "Es la ventaja en el recuerdo que tienen las informaciones creadas activamente por el sujeto frente a las simplemente leídas.",
+      "page": 42
+    },
+    {
+      "cat": "Efecto de Generación",
+      "q": "¿Menciona tres reglas de generación utilizadas en los experimentos de Slamecka y Graf?",
+      "a": "Generar antónimos, asociados, sinónimos, rimas o palabras de la misma categoría semántica.",
+      "page": 42
+    },
+    {
+      "cat": "Efecto de Generación",
+      "q": "¿Cómo explica la hipótesis del esfuerzo cognitivo el efecto de generación?",
+      "a": "Sostiene que generar la información requiere más recursos mentales, lo que facilita que la huella se retenga mejor.",
+      "page": 43
+    },
+    {
+      "cat": "Efecto de Generación",
+      "q": "¿En qué se basa la explicación multiproceso del efecto de generación?",
+      "a": "En que generar implica una mayor variedad de procesos (percepción, búsqueda, asociación) que añaden riqueza a la huella.",
+      "page": 43
+    },
+    {
+      "cat": "Memoria Semántica",
+      "q": "¿Qué diferencia hay entre un concepto y una categoría?",
+      "a": "El concepto es la unidad de pensamiento o significado mental, mientras que la categoría es la agrupación de conceptos equivalentes.",
+      "page": 43
+    },
+    {
+      "cat": "Categorización",
+      "q": "¿Cuál es el requisito básico para que ocurra el proceso de categorización?",
+      "a": "El establecimiento de similitudes y diferencias entre la información nueva y la ya almacenada.",
+      "page": 43
+    },
+    {
+      "cat": "Modelos de Categorización",
+      "q": "¿Qué critican los modelos modernos a los modelos clásicos de 'todo o nada'?",
+      "a": "Que los límites de las categorías no son precisos y que hay miembros más representativos que otros.",
+      "page": 44
+    },
+    {
+      "cat": "Modelo de Ejemplares",
+      "q": "¿Cómo se decide la pertenencia a una categoría según el modelo de ejemplares?",
+      "a": "Comparando el nuevo estímulo con ejemplos específicos y concretos que ya tenemos almacenados.",
+      "page": 44
+    },
+    {
+      "cat": "Modelo de Prototipos",
+      "q": "¿Qué es un prototipo dentro de la categorización?",
+      "a": "Es un ejemplar ideal, genérico y abstracto que posee el mayor número de características representativas de la categoría.",
+      "page": 45
+    },
+    {
+      "cat": "Modelo de Prototipos",
+      "q": "¿Qué determina el grado de tipicidad de un objeto?",
+      "a": "Su cercanía o similitud con el prototipo; a mayor tipicidad, más rápido se categoriza y más fácil se recuerda.",
+      "page": 45
+    },
+    {
+      "cat": "Proposiciones",
+      "q": "¿Qué es una representación proposicional del conocimiento?",
+      "a": "Es una estructura abstracta formada por símbolos que representan entidades y sus relaciones (ej. GATO, SOFÁ).",
+      "page": 45
+    },
+    {
+      "cat": "Redes Semánticas",
+      "q": "¿Qué representan los 'nodos' y los 'enlaces' en el modelo de Collins y Quillian?",
+      "a": "Los nodos representan los conceptos y los enlaces las conexiones o relaciones entre ellos.",
+      "page": 46
+    },
+    {
+      "cat": "Redes Semánticas",
+      "q": "¿Cómo se organiza la información en el modelo de Collins y Quillian (1969)?",
+      "a": "De forma jerárquica, donde los conceptos subordinados heredan propiedades de los supraordenados.",
+      "page": 46
+    },
+    {
+      "cat": "Propagación de la Activación",
+      "q": "¿En qué consiste la propagación de la activación según Rips, Shoben y Smith?",
+      "a": "Al activar un nodo, la energía se extiende a nodos cercanos; la probabilidad de activación depende de la distancia semántica.",
+      "page": 47
+    },
+    {
+      "cat": "Teoría de los Esquemas",
+      "q": "¿Qué es un esquema mental según la teoría de los esquemas?",
+      "a": "Una estructura mental genérica que contiene información sobre situaciones o hechos complejos basada en la experiencia.",
+      "page": 47
+    },
+    {
+      "cat": "Teoría de los Esquemas",
+      "q": "¿Cómo influyen los esquemas en la interpretación de situaciones nuevas?",
+      "a": "Se activan automáticamente y nos permiten hacer inferencias para rellenar 'huecos' de información no explícita.",
+      "page": 47
+    },
+    {
+      "cat": "Marcos (Frames)",
+      "q": "¿Qué son los 'marcos' en la teoría de los esquemas?",
+      "a": "Representaciones mentales de estructuras genéricas como bibliotecas, supermercados o una operación matemática.",
+      "page": 47
+    },
+    {
+      "cat": "Guiones (Scripts)",
+      "q": "¿Qué define a un 'guion' según Schank y Abelson (1977)?",
+      "a": "Un tipo de esquema que describe una secuencia ordenada de acciones habituales (ej. ir a un restaurante).",
+      "page": 47
+    },
+    {
+      "cat": "Conocimiento Procedimental",
+      "q": "¿Cómo se representa el conocimiento no declarativo o procedimental?",
+      "a": "A través de reglas de producción condicionales del tipo 'si (condición) - entonces (acción)'.",
+      "page": 49
+    },
+    {
+      "cat": "Consolidación",
+      "q": "¿Cuál es la diferencia fundamental entre adquisición y consolidación?",
+      "a": "La adquisición registra y analiza la entrada sensorial; la consolidación estabiliza esa información en el sistema nervioso.",
+      "page": 36
+    },
+    {
+      "cat": "Codificación de Olores",
+      "q": "¿Qué indican Herz y Engen (1996) sobre la codificación de olores?",
+      "a": "Que obedece a los mismos principios de codificación que los códigos alfanuméricos.",
+      "page": 37
+    },
+    {
+      "cat": "Repaso Elaborativo",
+      "q": "¿Por qué el repaso elaborativo es superior al de mantenimiento para el aprendizaje?",
+      "a": "Porque organiza la información para adaptarla al material ya existente en la memoria a largo plazo.",
+      "page": 38
+    },
+    {
+      "cat": "Niveles de Procesamiento",
+      "q": "¿Qué nivel de procesamiento es más superficial: el físico (mayúsculas) o el semántico (oraciones)?",
+      "a": "El físico o estructural es el más superficial y produce peor recuerdo que el semántico.",
+      "page": 38
+    },
+    {
+      "cat": "Niveles de Procesamiento",
+      "q": "¿Cómo se induce a un participante a procesar en un nivel profundo según el estudio de Craik y Tulving?",
+      "a": "Haciéndole preguntas que requieran analizar si una palabra encaja lógicamente en una oración compleja.",
+      "page": 38
+    },
+    {
+      "cat": "Distintividad",
+      "q": "¿Qué papel juegan las operaciones mentales en la distintividad?",
+      "a": "Son las encargadas de descubrir qué hace diferente a un estímulo de otros, incluso si parecen similares al inicio.",
+      "page": 40
+    },
+    {
+      "cat": "Elaboración vs Distintividad",
+      "q": "¿En qué se diferencia el objetivo de la elaboración del de la distintividad?",
+      "a": "La elaboración añade información a la huella; la distintividad usa esa información para diferenciarla del resto.",
+      "page": 40
+    },
+    {
+      "cat": "Organización",
+      "q": "¿Cómo se define la organización en el proceso de codificación?",
+      "a": "Como la agrupación mental de elementos individuales en categorías más extensas y significativas.",
+      "page": 40
+    },
+    {
+      "cat": "Organización",
+      "q": "¿Qué factor facilita el recuerdo de nombres asociados a categorías específicas?",
+      "a": "El conocimiento previo que se tenga sobre dicha categoría.",
+      "page": 41
+    },
+    {
+      "cat": "Organización Subjetiva",
+      "q": "¿Cómo se puede identificar si un sujeto ha organizado subjetivamente dos palabras presentadas por separado?",
+      "a": "Si el sujeto las recuerda y repite juntas en ensayos sucesivos a pesar de su separación original.",
+      "page": 41
+    },
+    {
+      "cat": "Estrategias de Organización",
+      "q": "¿Qué ventaja ofrece la elaboración de frases para retener listas de palabras inconexas?",
+      "a": "Proporciona una estructura narrativa que actúa como organización subjetiva facilitando el recuerdo.",
+      "page": 41
+    },
+    {
+      "cat": "Estrategias de Organización",
+      "q": "¿Qué es la categorización como estrategia subjetiva?",
+      "a": "Integrar información dispersa en grupos basados en conceptos comunes (ej. animales, herramientas).",
+      "page": 42
+    },
+    {
+      "cat": "Proceso Constructivo",
+      "q": "¿Qué rol debe adoptar el sujeto en la codificación para consolidar mejor la información?",
+      "a": "Un rol activo, generando asociaciones en lugar de solo recibir información pasivamente.",
+      "page": 42
+    },
+    {
+      "cat": "Generación vs Lectura",
+      "q": "¿Cuál fue el resultado principal del experimento de Slamecka y Graf comparando leer vs generar?",
+      "a": "Generar las palabras bajo instrucciones provocó un mejor recuerdo que simplemente leerlas en voz alta.",
+      "page": 42
+    },
+    {
+      "cat": "Memoria Semántica",
+      "q": "¿Para qué sirve que los conceptos estén perfectamente organizados en la memoria semántica?",
+      "a": "Para ser eficientes y rápidos a la hora de recuperar información específica del mundo.",
+      "page": 43
+    },
+    {
+      "cat": "Categorización",
+      "q": "¿Cuándo se empiezan a establecer las categorías en el ser humano?",
+      "a": "Durante los primeros años de vida, y se amplían o actualizan con la experiencia posterior.",
+      "page": 43
+    },
+    {
+      "cat": "Categorización",
+      "q": "¿Qué significa asignar propiedades a un estímulo al categorizarlo?",
+      "a": "Darle un significado y comprensión basándose en el conocimiento previo almacenado.",
+      "page": 44
+    },
+    {
+      "cat": "Modelo de Ejemplares",
+      "q": "¿Cómo explicamos que reconozcamos a un perro desconocido según el modelo de ejemplares?",
+      "a": "Por su semejanza con los 'ejemplares' específicos de perros que ya conocemos y tenemos en mente.",
+      "page": 44
+    },
+    {
+      "cat": "Modelos de Categorización",
+      "q": "¿En qué se diferencia la representación en el modelo de ejemplar frente al de prototipo?",
+      "a": "En el de ejemplar es un caso específico; en el de prototipo es una representación ideal y abstracta.",
+      "page": 45
+    },
+    {
+      "cat": "Tipicidad",
+      "q": "¿Por qué tardamos más tiempo en categorizar un 'higo' como fruta que una 'manzana'?",
+      "a": "Porque el higo tiene un menor grado de tipicidad y es menos accesible en nuestra memoria semántica.",
+      "page": 45
+    },
+    {
+      "cat": "Léxico Mental",
+      "q": "¿Qué información suele contener cada palabra en nuestro diccionario mental?",
+      "a": "Información sobre su pronunciación, significado, escritura y relaciones con otras palabras.",
+      "page": 45
+    },
+    {
+      "cat": "Redes Semánticas",
+      "q": "¿Qué tipo de relación básica se establece en una red semántica?",
+      "a": "La relación 'A es B' (ej. una trucha es un pez).",
+      "page": 46
+    },
+    {
+      "cat": "Jerarquía en Redes",
+      "q": "¿Qué niveles jerárquicos se muestran en el ejemplo de la trucha?",
+      "a": "Concepto específico (trucha), categoría supraordenada (pez) y categoría superior (animal).",
+      "page": 46
+    },
+    {
+      "cat": "Distancia Semántica",
+      "q": "¿Qué factor determina la probabilidad de que un concepto active a otro en la mente?",
+      "a": "La distancia semántica entre los nodos; a menor distancia, mayor probabilidad de activación.",
+      "page": 47
+    },
+    {
+      "cat": "Esquemas",
+      "q": "¿Qué permite que los esquemas se modifiquen a lo largo del tiempo?",
+      "a": "La propia experiencia y las actividades de aprendizaje intencional.",
+      "page": 47
+    },
+    {
+      "cat": "Esquemas",
+      "q": "¿Cómo ayuda un esquema de 'robo' ante una situación sospechosa en una tienda?",
+      "a": "Permite interpretar la escena de forma global y rápida para decidir cómo actuar (ej. llamar a la policía).",
+      "page": 47
+    },
+    {
+      "cat": "Guiones (Scripts)",
+      "q": "¿Qué componentes tiene el guion de 'ir a un restaurante'?",
+      "a": "Una temática, condiciones iniciales (hambre), funciones de los actores y una secuencia de acciones.",
+      "page": 48
+    },
+    {
+      "cat": "Esquemas",
+      "q": "¿Qué sucede cuando nos enfrentamos a una situación para la que no tenemos un esquema previo?",
+      "a": "No podemos interpretar el acontecimiento de forma adecuada por falta de experiencia previa.",
+      "page": 48
+    },
+    {
+      "cat": "Esquema de Compra",
+      "q": "¿Qué elementos obligatorios debe tener el esquema de compra según el texto?",
+      "a": "Un vendedor, un comprador, un objeto de compraventa y un precio estipulado.",
+      "page": 48
+    },
+    {
+      "cat": "Conocimiento Declarativo vs Procedimental",
+      "q": "¿Cuál es la diferencia principal en la representación de ambos tipos de conocimiento?",
+      "a": "El declarativo usa redes y esquemas; el procedimental usa reglas condicionales 'si-entonces'.",
+      "page": 49
+    },
+    {
+      "cat": "Reglas de Producción",
+      "q": "¿Qué representa la parte 'entonces' en una regla de producción?",
+      "a": "Representa la ejecución de la acción que se dispara cuando se cumplen las condiciones.",
+      "page": 49
+    },
+    {
+      "cat": "Memoria y Contexto",
+      "q": "¿Qué ocurre con la integración durante la codificación?",
+      "a": "Se produce una integración de la representación generada con su contexto.",
+      "page": 37
+    },
+    {
+      "cat": "Repaso",
+      "q": "¿Qué sucede con la información en el repaso de mantenimiento cuando dejamos de repetirla?",
+      "a": "La información se pierde rápidamente.",
+      "page": 37
+    },
+    {
+      "cat": "Niveles de Procesamiento",
+      "q": "¿Cómo reformularon Craik y Tulving su hipótesis inicial tras observar sus resultados?",
+      "a": "Indicaron que una vez alcanzado un nivel, el grado de elaboración es lo que mejora la codificación.",
+      "page": 39
+    },
+    {
+      "cat": "Distintividad",
+      "q": "¿Por qué una representación distintiva es más fácil de recuperar?",
+      "a": "Porque es más fácil identificarla entre otros estímulos al compartir pocas características con ellos.",
+      "page": 40
+    },
+    {
+      "cat": "Organización",
+      "q": "¿Qué metáfora se utiliza para explicar la importancia de la organización en la memoria?",
+      "a": "La de una biblioteca, donde el orden facilita la búsqueda posterior de un libro concreto.",
+      "page": 40
+    },
+    {
+      "cat": "Categorización Subjetiva",
+      "q": "¿Qué factores personales ayudan a organizar la información diariamente?",
+      "a": "El conocimiento previo, las expectativas y los valores del sujeto.",
+      "page": 41
+    },
+    {
+      "cat": "Organización No Semántica",
+      "q": "¿Menciona dos formas de organizar material que no sean semánticas?",
+      "a": "Orden alfabético u orden visual.",
+      "page": 41
+    },
+    {
+      "cat": "Estrategias de Organización",
+      "q": "¿Cómo se aplica la categorización en una lista mixta como 'ratón, microondas, mano'?",
+      "a": "Agrupándolos en 'animales', 'electrodomésticos' y 'partes del cuerpo'.",
+      "page": 42
+    },
+    {
+      "cat": "Consolidación",
+      "q": "¿Qué garantiza que la información quede almacenada tras la adquisición?",
+      "a": "El paso exitoso por la subfase de consolidación.",
+      "page": 37
+    },
+    {
+      "cat": "Propagación de la Activación",
+      "q": "¿Qué nodos se activan a partir del concepto 'pan' según el modelo de propagación?",
+      "a": "Nodos relacionados como 'harina', 'horno' o 'panadería'.",
+      "page": 47
+    },
+    {
+      "cat": "Esquemas",
+      "q": "¿A qué se refiere que un esquema tiene 'huecos'?",
+      "a": "A espacios que debemos rellenar con la información específica de cada situación concreta vivida.",
+      "page": 48
+    },
+    {
+      "cat": "Marcos (Frames)",
+      "q": "¿Qué ejemplo de marco se da para la comprensión del lenguaje (ej. 'me compré un coche')?",
+      "a": "Inferir que hubo un concesionario, un pago, un contrato y una entrega de llaves.",
+      "page": 48
+    },
+    {
+      "cat": "Conducta y Esquemas",
+      "q": "¿Por qué son vitales los esquemas para el comportamiento social?",
+      "a": "Porque nos ayudan a saber cómo tenemos que comportarnos en una situación determinada.",
+      "page": 48
+    },
+    {
+      "cat": "Procesamiento Semántico",
+      "q": "¿Qué nivel de complejidad oracional facilita más el recuerdo de la palabra 'conejo'?",
+      "a": "El nivel complejo (ej. 'El gran pájaro se lanzó en picado y capturó al...').",
+      "page": 39
+    },
+    {
+      "cat": "Congruencia",
+      "q": "¿Cómo definen Jacoby y Craik el beneficio de la elaboración en la codificación?",
+      "a": "Afirman que añadir información relacionada genera una huella de memoria más distintiva.",
+      "page": 39
+    },
+    {
+      "cat": "Atención y Memoria",
+      "q": "¿Por qué el apellido 'García' se recuerda mejor en una lista de apellidos ingleses?",
+      "a": "Por su alta distintividad en ese contexto específico (Efecto Von Restorff).",
+      "page": 40
+    },
+    {
+      "cat": "Organización",
+      "q": "¿Cuál es la diferencia entre organización subjetiva y objetiva en una biblioteca doméstica?",
+      "a": "La objetiva usaría el sistema formal de bibliotecas; la subjetiva usaría criterios personales del dueño.",
+      "page": 40
+    },
+    {
+      "cat": "Aprendizaje Activo",
+      "q": "¿Qué sucede con la consolidación si el sujeto genera sus propias asociaciones?",
+      "a": "La información queda mejor consolidada y se tiene un mejor recuerdo de ella.",
+      "page": 43
+    },
+    {
+      "cat": "Categorización",
+      "q": "¿Por qué realizamos operaciones de organización y clasificación en la memoria semántica?",
+      "a": "Para evitar que la enorme cantidad de información sature nuestro sistema nervioso.",
+      "page": 43
+    },
+    {
+      "cat": "Modelos de Categorización",
+      "q": "¿Qué problema tienen los modelos clásicos con las características de una manzana y un plátano?",
+      "a": "Hacen imposible especificar propiedades porque tratan a todos los miembros como idénticos.",
+      "page": 44
+    },
+    {
+      "cat": "Modelos de Categorización",
+      "q": "¿Por qué es difícil definir los límites de la categoría 'fruta' para un aguacate?",
+      "a": "Porque los límites de las categorías suelen ser menos precisos de lo que proponen los modelos clásicos.",
+      "page": 44
+    },
+    {
+      "cat": "Modelos de Ejemplares",
+      "q": "¿Cómo aprendemos una categoría según el modelo de ejemplares?",
+      "a": "Aprendiendo primero varios ejemplos concretos que sirven como representantes de la categoría.",
+      "page": 44
+    },
+    {
+      "cat": "Redes Semánticas",
+      "q": "¿Por qué el modelo de Collins y Quillian no podía explicar todas las facetas de la memoria?",
+      "a": "Porque no explicaba por qué era más fácil o rápido acceder a unos nodos que a otros.",
+      "page": 47
+    },
+    {
+      "cat": "Esquemas",
+      "q": "¿Cuándo empiezan a formarse los esquemas cognitivos?",
+      "a": "Desde muy pronto en la infancia.",
+      "page": 47
+    },
+    {
+      "cat": "Guiones (Scripts)",
+      "q": "¿Qué es la 'temática' en el guion del restaurante?",
+      "a": "Es el objetivo central: comer en un restaurante.",
+      "page": 48
+    },
+    {
+      "cat": "Conocimiento Procedimental",
+      "q": "¿Qué ocurre si en una regla de producción hay más de una condición?",
+      "a": "Se deben cumplir todas (condición 1 y condición 2) para que se ejecute la acción (entonces).",
+      "page": 49
+    },
+    {
+      "cat": "Consolidación",
+      "q": "¿Qué proceso es responsable de la formación de una huella de memoria?",
+      "a": "Los procesos de codificación.",
+      "page": 37
+    },
+    {
+      "cat": "Repaso Elaborativo",
+      "q": "¿Qué ejemplo de la vida diaria se usa para el repaso elaborativo con números?",
+      "a": "Relacionar un número de teléfono con fechas importantes o números familiares.",
+      "page": 38
+    },
+    {
+      "cat": "Niveles de Procesamiento",
+      "q": "¿Qué tipo de procesamiento requiere decidir si una palabra está en mayúsculas?",
+      "a": "Un procesamiento físico o superficial.",
+      "page": 38
+    },
+    {
+      "cat": "Redes Semánticas",
+      "q": "¿Cómo se representan los conceptos en la mente según el modelo de léxico mental?",
+      "a": "Como unidades independientes relacionadas entre sí a través de proposiciones.",
+      "page": 46
+    }
+  ]
+}
