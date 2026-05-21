@@ -199,6 +199,13 @@
                 let data = JSON.parse(localStorage.getItem('saimap_unlocked')) || {};
                 let modified = false;
 
+                // Migrar clave legacy 'psicologia-del-desarrollo' a 'psicologia-desarrollo-infancia-adolescencia'
+                if (data['psicologia-del-desarrollo']) {
+                    data['psicologia-desarrollo-infancia-adolescencia'] = data['psicologia-del-desarrollo'];
+                    delete data['psicologia-del-desarrollo'];
+                    modified = true;
+                }
+
                 // Normalización de claves legacy (ej: "psicologia-del-aprendizaje-tema-1-1")
                 for (const key of Object.keys(data)) {
                     if (key.includes('-tema-')) {
