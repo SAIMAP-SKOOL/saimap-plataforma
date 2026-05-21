@@ -2,6 +2,49 @@
 // SAIMAP - LOADER DE TEMAS UNIVERSAL Y MODULAR
 // ====================================================================
 
+// Subtítulos de los temas por asignatura
+const THEME_SUBTITLES = {
+    'psicologia-del-aprendizaje': {
+        '1.1': 'Concepto y Definición',
+        '1.2': 'Historia y Método',
+        '2.1': 'Aprendizaje Asociativo',
+        '2.2': 'Condicionamiento Clásico',
+        '3.1': 'Inicios del Condicionamiento Instrumental',
+        '3.2': 'Condicionamiento Operante',
+        '4.1': 'Psicología Cognitiva',
+        '4.2': 'Modelos Computacionales y Constructivismo',
+        '4.3': 'Gestalt, Piaget y Vygotski',
+        '5': 'Aprendizaje Social y Vicario',
+        '6': 'Aprendizaje de Habilidades Motoras'
+    },
+    'historia-de-la-psicologia': {
+        '1': 'Los Orígenes de la Psicología Científica',
+        '2.1': 'El Funcionalismo y el Conductismo',
+        '2.2': 'La Gestalt y el Psicoanálisis',
+        '3.1': 'El Neoconductismo',
+        '3.2': 'La Psicología Humanista y Cognitiva',
+        '4.1': 'La Psicología Científica Contemporánea',
+        '4.2': 'Psicología Aplicada y Profesional',
+        '5': 'La Psicología en España',
+        '6': 'Tendencias Actuales en Psicología'
+    },
+    'bases-biologicas-del-comportamiento': {
+        '1': 'Concepto, Disciplinas y Métodos',
+        '2': 'Desarrollo y Anatomía del SN',
+        '3': 'Células del Sistema Nervioso',
+        '4': 'Sinapsis y Neurotransmisión',
+        '5': 'Genética de la Conducta'
+    },
+    'psicologia-social': {
+        '1': 'Introducción, Historia y Método',
+        '2': 'Cognición Social',
+        '3': 'Atribución Social',
+        '4': 'Autoconcepto e Identidad',
+        '5': 'Actitudes',
+        '6': 'Estereotipos, Prejuicio y Discriminación'
+    }
+};
+
 // Configuración de temas visuales por asignatura
 const THEME_CONFIG = {
     'psicologia-social': {
@@ -446,6 +489,9 @@ const COMMON_CSS = `
         background-attachment: fixed;
         min-height: 100vh;
     }
+    .hidden {
+        display: none !important;
+    }
     .glass-card {
         background: rgba(255, 255, 255, 0.75);
         backdrop-filter: blur(20px);
@@ -545,14 +591,23 @@ document.addEventListener("DOMContentLoaded", () => {
     applyTheme(theme);
 
     // 5. Cargar base de datos de preguntas de forma asíncrona (JSON externo)
-    const pathParts = decodeURIComponent(window.location.pathname).replace(/\\/g, '/').split('/');
-    const temasIndex = pathParts.indexOf('temas');
-    if (temasIndex !== -1 && pathParts.length > temasIndex + 2) {
-        COURSE_ID = pathParts[temasIndex + 1];
-        FOLDER_ID = pathParts[temasIndex + 2];
+    const pathPartsRaw = window.location.pathname.replace(/\\/g, '/').split('/');
+    const temasIndexRaw = pathPartsRaw.indexOf('temas');
+    let rawCourse = COURSE_ID;
+    let rawFolder = FOLDER_ID;
+    if (temasIndexRaw !== -1 && pathPartsRaw.length > temasIndexRaw + 2) {
+        rawCourse = pathPartsRaw[temasIndexRaw + 1];
+        rawFolder = pathPartsRaw[temasIndexRaw + 2];
+    }
+
+    const pathPartsDecoded = decodeURIComponent(window.location.pathname).replace(/\\/g, '/').split('/');
+    const temasIndexDecoded = pathPartsDecoded.indexOf('temas');
+    if (temasIndexDecoded !== -1 && pathPartsDecoded.length > temasIndexDecoded + 2) {
+        COURSE_ID = pathPartsDecoded[temasIndexDecoded + 1];
+        FOLDER_ID = pathPartsDecoded[temasIndexDecoded + 2];
     }
     const temaFilePart = String(TEMA_KEY).replace(/\./g, '-');
-    const fetchUrl = `../../../json/${COURSE_ID}/${FOLDER_ID}/${SUBJECT_ID}-tema-${temaFilePart}.json`;
+    const fetchUrl = `../../../json/${rawCourse}/${rawFolder}/${SUBJECT_ID}-tema-${temaFilePart}.json`;
 
     fetch(fetchUrl)
         .then(res => {
@@ -629,10 +684,11 @@ function applyTheme(t) {
     document.body.style.backgroundImage = t.gradients;
 
     // Title
-    const temaLabel = `Tema ${TEMA_KEY}`;
-    const cleanLabel = temaLabel.replace(/-/g, '.');
-    document.title = `${cleanLabel} - ${t.name} - SAIMAP`;
-    document.getElementById('header-title').textContent = cleanLabel;
+    const cleanKey = String(TEMA_KEY).replace(/-/g, '.');
+    const temaLabel = `Tema ${cleanKey}`;
+    const subtitle = THEME_SUBTITLES[SUBJECT_ID]?.[cleanKey] || "";
+    document.title = `${temaLabel}${subtitle ? ': ' + subtitle : ''} - ${t.name} - SAIMAP`;
+    document.getElementById('header-title').textContent = subtitle ? `${temaLabel}: ${subtitle}` : temaLabel;
     document.getElementById('header-subtitle').textContent = t.name;
     document.getElementById('header-subtitle').style.color = t.textAccent;
     document.getElementById('header-icon-bg').style.backgroundColor = t.primary;

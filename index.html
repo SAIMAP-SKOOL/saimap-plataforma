@@ -71,6 +71,49 @@
             { id: "psicologia-del-trabajo", name: "Psicología del Trabajo", year: "3º", folder: "Psicología-Trabajo" }
         ];
 
+        // Subtítulos de los temas por asignatura
+        const THEME_SUBTITLES = {
+            'psicologia-del-aprendizaje': {
+                '1.1': 'Concepto y Definición',
+                '1.2': 'Historia y Método',
+                '2.1': 'Aprendizaje Asociativo',
+                '2.2': 'Condicionamiento Clásico',
+                '3.1': 'Inicios del Condicionamiento Instrumental',
+                '3.2': 'Condicionamiento Operante',
+                '4.1': 'Psicología Cognitiva',
+                '4.2': 'Modelos Computacionales y Constructivismo',
+                '4.3': 'Gestalt, Piaget y Vygotski',
+                '5': 'Aprendizaje Social y Vicario',
+                '6': 'Aprendizaje de Habilidades Motoras'
+            },
+            'historia-de-la-psicologia': {
+                '1': 'Los Orígenes de la Psicología Científica',
+                '2.1': 'El Funcionalismo y el Conductismo',
+                '2.2': 'La Gestalt y el Psicoanálisis',
+                '3.1': 'El Neoconductismo',
+                '3.2': 'La Psicología Humanista y Cognitiva',
+                '4.1': 'La Psicología Científica Contemporánea',
+                '4.2': 'Psicología Aplicada y Profesional',
+                '5': 'La Psicología en España',
+                '6': 'Tendencias Actuales en Psicología'
+            },
+            'bases-biologicas-del-comportamiento': {
+                '1': 'Concepto, Disciplinas y Métodos',
+                '2': 'Desarrollo y Anatomía del SN',
+                '3': 'Células del Sistema Nervioso',
+                '4': 'Sinapsis y Neurotransmisión',
+                '5': 'Genética de la Conducta'
+            },
+            'psicologia-social': {
+                '1': 'Introducción, Historia y Método',
+                '2': 'Cognición Social',
+                '3': 'Atribución Social',
+                '4': 'Autoconcepto e Identidad',
+                '5': 'Actitudes',
+                '6': 'Estereotipos, Prejuicio y Discriminación'
+            }
+        };
+
         let ALL_QUESTIONS = [];
         let subjectName = "Examen Autocargado";
 
@@ -877,6 +920,9 @@
                     <div class="grid gap-3">
                         ${temas.map(t => {
                             const temaNum = t.replace('Tema ', '');
+                            const cleanTemaNum = String(temaNum).replace(/-/g, '.');
+                            const subtitle = THEME_SUBTITLES[subjectId]?.[cleanTemaNum] || "";
+                            const displayTitle = subtitle ? `${t}: ${subtitle}` : t;
                             return `
                             <div onclick="loadSubject('${subjectId}', '${temaNum}')" class="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-indigo-500 hover:shadow-md transition-all flex items-center justify-between cursor-pointer group">
                                 <div class="flex items-center gap-3">
@@ -884,7 +930,7 @@
                                         <i data-lucide="book-open" class="w-5 h-5"></i>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold text-slate-800 text-sm group-hover:text-indigo-600 transition-colors">${t}</h4>
+                                        <h4 class="font-bold text-slate-800 text-sm group-hover:text-indigo-600 transition-colors">${displayTitle}</h4>
                                         <p class="text-[10px] text-slate-400">Modo de Aprendizaje: Test, Flashcards y Abiertas</p>
                                     </div>
                                 </div>
