@@ -148,32 +148,83 @@ async function main() {
         process.exit(1);
     }
 
+    // --- ACCIÓN PARA UN ÚNICO CORREO (Argumento en consola) ---
+    const args = process.argv.slice(2);
+    if (args.length > 0) {
+        const potentialEmail = args[0].trim().toLowerCase();
+        const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
+        if (!emailRegex.test(potentialEmail)) {
+            console.error(`ERROR: '${potentialEmail}' no parece ser un correo electrónico válido.`);
+            process.exit(1);
+        }
+
+        const display = maskEmail(potentialEmail);
+        console.log(`Procesando un único correo: ${potentialEmail}`);
+        console.log('Obteniendo token de acceso de Google Firebase...');
+        let token;
+        try {
+            token = await getAccessToken(serviceAccount);
+            console.log('✓ Autenticado correctamente con Firebase.');
+        } catch (e) {
+            console.error('ERROR al autenticar:', e.message);
+            process.exit(1);
+        }
+
+        const hash = crypto.createHash('sha256').update(potentialEmail).digest('hex');
+        try {
+            await uploadHash(projectId, token, hash, display);
+            console.log(`\n✓ ${display} -> ¡Subido con éxito a la whitelist de Firebase!`);
+            
+            // Guardarlo en emails.txt para el registro local si no existía ya
+            const emailsPath = path.join(__dirname, EMAILS_FILE);
+            let currentEmails = [];
+            if (fs.existsSync(emailsPath)) {
+                currentEmails = fs.readFileSync(emailsPath, 'utf8')
+                    .split(/\r?\n/)
+                    .map(e => e.trim().toLowerCase())
+                    .filter(e => e.length > 0);
+            }
+            if (!currentEmails.includes(potentialEmail)) {
+                const appendContent = fs.existsSync(emailsPath) ? `\n${potentialEmail}` : potentialEmail;
+                fs.appendFileSync(emailsPath, appendContent, 'utf8');
+                console.log(`(Correo guardado en '${EMAILS_FILE}' para futuras importaciones masivas)`);
+            }
+            process.exit(0);
+        } catch (e) {
+            console.error(`ERROR al subir el correo a Firestore:`, e.message);
+            process.exit(1);
+        }
+    }
+
     // Buscar archivos de correo
-    let emails = [];
+    let emailsSet = new Set();
     const emailsPath = path.join(__dirname, EMAILS_FILE);
     const csvPath = path.join(__dirname, CSV_FILE);
+    const regex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
 
     if (fs.existsSync(csvPath)) {
         console.log(`Leyendo correos desde '${CSV_FILE}'...`);
         const content = fs.readFileSync(csvPath, 'utf8');
-        // Extraer correos usando expresión regular
-        const regex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
         const matches = content.match(regex) || [];
-        // Filtrar duplicados
-        emails = [...new Set(matches)];
-        console.log(`Se encontraron ${emails.length} correos únicos en el CSV.`);
-    } else if (fs.existsSync(emailsPath)) {
+        matches.forEach(e => emailsSet.add(e.trim().toLowerCase()));
+        console.log(`Se encontraron correos en el CSV.`);
+    }
+
+    if (fs.existsSync(emailsPath)) {
         console.log(`Leyendo correos desde '${EMAILS_FILE}'...`);
         const content = fs.readFileSync(emailsPath, 'utf8');
-        const regex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
         const matches = content.match(regex) || [];
-        emails = [...new Set(matches)];
-        console.log(`Se encontraron ${emails.length} correos únicos en el archivo de texto.`);
-    } else {
-        console.error(`ERROR: No se encuentra '${EMAILS_FILE}' ni '${CSV_FILE}'.`);
+        matches.forEach(e => emailsSet.add(e.trim().toLowerCase()));
+        console.log(`Se encontraron correos en '${EMAILS_FILE}'.`);
+    }
+
+    let emails = [...emailsSet];
+
+    if (emails.length === 0) {
+        console.error(`ERROR: No se encuentra '${EMAILS_FILE}' ni '${CSV_FILE}', o están vacíos.`);
         console.log('\nPor favor, haz una de las siguientes opciones:');
         console.log(`- Coloca el archivo '${CSV_FILE}' exportado de Skool en esta misma carpeta.`);
-        console.log(`- O crea un archivo '${EMAILS_FILE}' con un correo por línea.`);
+        console.log(`- O crea un archivo '${EMAILS_FILE}' con tu correo (u otros adicionales).`);
         process.exit(1);
     }
 
