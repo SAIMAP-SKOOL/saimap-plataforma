@@ -3,7 +3,7 @@
 // ====================================================================
 
 // --- CONFIGURACIÓN DE AUTENTICACIÓN ---
-const REQUIRE_AUTH = false; // Cambiar a true para activar la protección de Skool
+const REQUIRE_AUTH = true; // Cambiar a true para activar la protección de Skool
 
 // Subtítulos de los temas por asignatura
 const THEME_SUBTITLES = {
