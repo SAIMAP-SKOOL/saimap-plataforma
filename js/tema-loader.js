@@ -42,6 +42,19 @@ const THEME_SUBTITLES = {
         '4': 'Autoconcepto e Identidad',
         '5': 'Actitudes',
         '6': 'Estereotipos, Prejuicio y Discriminación'
+    },
+    'psicologia-de-la-atencion-y-percepcion': {
+        '1': 'Introducción y Conceptos Básicos',
+        '2.1': 'Historia y Enfoque Psicofísico',
+        '2.2': 'Teorías de la Percepción',
+        '3.1': 'Percepción Visual',
+        '3.2': 'Percepción del Color',
+        '4.1': 'Percepción Táctil y Somestesia',
+        '4.2': 'Percepción Química: Gusto y Olfato',
+        '5': 'Introducción a la Atención',
+        '6': 'Modelos de Atención Selectiva',
+        '7': 'Tipos de Atención',
+        '8': 'Sesgos e Ilusiones Perceptivas'
     }
 };
 
@@ -607,7 +620,7 @@ document.addEventListener("DOMContentLoaded", () => {
         FOLDER_ID = pathPartsDecoded[temasIndexDecoded + 2];
     }
     const temaFilePart = String(TEMA_KEY).replace(/\./g, '-');
-    const fetchUrl = `../../../json/${rawCourse}/${rawFolder}/${SUBJECT_ID}-tema-${temaFilePart}.json`;
+    const fetchUrl = `../../../json/${encodeURIComponent(COURSE_ID)}/${encodeURIComponent(FOLDER_ID)}/${SUBJECT_ID}-tema-${temaFilePart}.json`;
 
     fetch(fetchUrl)
         .then(res => {

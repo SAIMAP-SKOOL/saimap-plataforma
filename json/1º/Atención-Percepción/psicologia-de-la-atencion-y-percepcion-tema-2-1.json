@@ -1,0 +1,2582 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es correcto afirmar que el enfoque psicofísico de Fechner se centra en cuantificar la relación entre los estímulos físicos y la actividad neuronal fisiológica?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Revisa si la psicofísica trata sobre la 'psique' o sobre la 'fisiología' celular.",
+      "explanation": "La psicofísica de Fechner mide la relación entre los estímulos (física) y la percepción (psique), no directamente la actividad fisiológica."
+    },
+    {
+      "q": "¿El método fenomenológico se define como el estudio de los fenómenos tal como se presentan a la conciencia del sujeto experimental?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Este método se vincula con la estrategia de descripción.",
+      "explanation": "El método fenomenológico es el primer paso en el estudio de la percepción y consiste en describir lo que percibimos tal cual aparece."
+    },
+    {
+      "q": "¿La estrategia de reconocimiento implica necesariamente que el participante nombre el estímulo y cite algunas de sus características específicas?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Diferéncialo de la simple descripción o detección.",
+      "explanation": "El reconocimiento requiere categorizar el estímulo, lo que implica nombrarlo e identificar sus propiedades básicas."
+    },
+    {
+      "q": "¿El umbral absoluto se define técnicamente como la cantidad máxima de energía que un sentido puede tolerar antes de sufrir daño tisular?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el término 'mínimo' versus 'máximo'.",
+      "explanation": "El umbral absoluto es la cantidad mínima de energía necesaria para que un estímulo sea detectado, no el máximo tolerable."
+    },
+    {
+      "q": "¿En el método de los límites, el experimentador utiliza exclusivamente series de intensidad decreciente para evitar errores de habituación?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Recuerda cómo se alternan las series en este procedimiento clásico.",
+      "explanation": "El método de los límites utiliza tanto series ascendentes como descendentes de forma alternada."
+    },
+    {
+      "q": "¿El umbral en el método de los límites se calcula mediante el promedio de todos los puntos de cruce o cambio de respuesta del sujeto?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Es una medida de tendencia central de los límites detectados.",
+      "explanation": "Se toman los valores donde el sujeto cambia de 'sí' a 'no' (o viceversa) y se promedian para hallar el umbral."
+    },
+    {
+      "q": "¿La principal diferencia del método de ajuste respecto al de límites es que el observador controla continuamente la intensidad del estímulo?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Piensa en quién tiene el mando del aparato experimental.",
+      "explanation": "En el método de ajuste, es el propio sujeto quien manipula el estímulo hasta que le resulta apenas audible o visible."
+    },
+    {
+      "q": "¿El método de estímulos constantes se caracteriza por presentar las distintas intensidades en un orden estrictamente creciente o decreciente?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Esta característica es vital para evitar expectativas en el observador.",
+      "explanation": "En el método de estímulos constantes, los estímulos se presentan en orden aleatorio para minimizar sesgos."
+    },
+    {
+      "q": "¿Se considera que el método de estímulos constantes es el más rápido de los métodos psicofísicos clásicos debido a su aleatoriedad?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Compara el tiempo de ejecución con el método de ajuste.",
+      "explanation": "Es el más preciso pero también el más lento, ya que requiere muchas presentaciones aleatorias de cada intensidad."
+    },
+    {
+      "q": "¿El umbral en el método de estímulos constantes se define convencionalmente como la intensidad detectada en el 50% de los ensayos realizados?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Es el punto medio de la función psicométrica resultante.",
+      "explanation": "Dado que no hay un salto abrupto, se adopta estadísticamente el punto donde la probabilidad de detección es de 0.5."
+    },
+    {
+      "q": "¿El concepto de 'zona de incertidumbre' implica que existe un rango de intensidades donde la detección no es constante ni abrupta?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Se opone a la idea de un 'umbral escalón'.",
+      "explanation": "La detección aumenta gradualmente en una franja estrecha, por lo que no hay un paso inmediato del 0% al 100%."
+    },
+    {
+      "q": "¿Ernst Weber es el autor que introdujo y midió sistemáticamente el concepto de umbral diferencial mediante pesos de comparación?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Su nombre va ligado a la ley que relaciona el incremento de intensidad.",
+      "explanation": "Weber investigó la diferencia mínima detectable (UD) entre dos estímulos, como los pesos de 100g y 102g."
+    },
+    {
+      "q": "¿El umbral diferencial se define como la diferencia más grande en intensidad que una persona puede ignorar sin percatarse del cambio?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Es una medida de discriminación mínima.",
+      "explanation": "Es la diferencia más pequeña (no más grande) detectable entre dos estímulos."
+    },
+    {
+      "q": "¿La técnica de estimación de magnitudes de S.S. Stevens se utiliza para medir la percepción de estímulos que están por debajo del umbral?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Considera si se trabaja con intensidades detectables o indetectables.",
+      "explanation": "La estimación de magnitudes mide la percepción supraumbral, es decir, de estímulos claramente perceptibles."
+    },
+    {
+      "q": "¿El fenómeno de compresión de respuesta indica que duplicar la intensidad física de la luz duplica exactamente el brillo percibido?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Revisa la relación entre el aumento físico y el aumento sensorial en la luz.",
+      "explanation": "En la compresión de respuesta, el brillo percibido aumenta más lentamente que la intensidad física del estímulo."
+    },
+    {
+      "q": "¿La expansión de respuesta es un fenómeno típicamente asociado con estímulos de naturaleza aversiva, como las descargas eléctricas?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Analiza cómo reacciona la percepción ante el dolor.",
+      "explanation": "En la expansión de respuesta, pequeños incrementos físicos generan grandes incrementos en la sensación percibida (dolor)."
+    },
+    {
+      "q": "¿La Teoría de Detección de Señales (TDS) asume que el ruido sensorial está ausente en condiciones de laboratorio controladas?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Considera la actividad espontánea de las células sensoriales.",
+      "explanation": "La TDS sostiene que siempre hay ruido, incluso interno, debido a la actividad espontánea del sistema nervioso."
+    },
+    {
+      "q": "¿En la terminología de la TDS, un 'acierto' ocurre cuando el sujeto dice 'sí' y el estímulo estaba efectivamente presente?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Es uno de los cuatro resultados posibles de la matriz de decisión.",
+      "explanation": "El acierto es la respuesta correcta ante la presencia de la señal."
+    },
+    {
+      "q": "¿Una 'falsa alarma' se produce cuando el observador responde 'no' a pesar de que la señal fue presentada por el experimentador?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre decir 'sí' sin señal o 'no' con señal.",
+      "explanation": "Decir 'no' cuando hay señal es una omisión. La falsa alarma es decir 'sí' cuando solo hay ruido."
+    },
+    {
+      "q": "¿El sesgo o criterio de respuesta permite explicar por qué dos personas con la misma sensibilidad pueden dar resultados distintos?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Es un factor psicológico independiente de la capacidad sensorial.",
+      "explanation": "El criterio (liberal o conservador) influye en la respuesta final al margen de la agudeza sensorial real."
+    },
+    {
+      "q": "¿Un observador con criterio 'liberal' en TDS tendrá una alta tasa de aciertos acompañada necesariamente de una baja tasa de falsas alarmas?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Piensa en las consecuencias de decir 'sí' ante cualquier indicio.",
+      "explanation": "El observador liberal tiene muchos aciertos, pero también muchas falsas alarmas al arriesgarse más."
+    },
+    {
+      "q": "¿La curva COR (Curva de Operación del Receptor) es la representación gráfica que permite separar la sensibilidad del sesgo?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Es la herramienta analítica fundamental de la TDS.",
+      "explanation": "La COR plasma la relación entre aciertos y falsas alarmas, permitiendo identificar la sensibilidad del sujeto."
+    },
+    {
+      "q": "¿Los métodos psicofísicos clásicos de Fechner contemplan la posibilidad de medir las 'falsas alarmas' de manera sistemática?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Compara la estructura de los ensayos de Fechner frente a la TDS.",
+      "explanation": "Los métodos clásicos no suelen incluir ensayos sin estímulo, por lo que no detectan las falsas alarmas."
+    },
+    {
+      "q": "¿La estrategia de búsqueda se considera vinculada al proceso de atención sostenida debido a la carga cognitiva que implica?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Relaciona la velocidad de respuesta y el esfuerzo intencional.",
+      "explanation": "La búsqueda requiere recursos cognitivos para localizar un estímulo, ligándose estrechamente a la atención."
+    },
+    {
+      "q": "¿Es posible que una persona categorice un estímulo sin haber pasado previamente por la etapa de detección del mismo?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el orden lógico del proceso perceptivo descrito.",
+      "explanation": "Lógicamente, para reconocer o categorizar algo, primero debe haberse detectado su presencia física."
+    },
+    {
+      "q": "Seleccione la opción correcta respecto al objetivo primordial de la investigación en percepción:",
+      "options": [
+        "Describir la actividad química de los neurotransmisores sensoriales.",
+        "Entender los pasos que conducen a la percepción, reconocimiento y acción.",
+        "Cuantificar únicamente el tiempo de reacción ante estímulos visuales."
+      ],
+      "correct": 1,
+      "hint": "Busca la definición más integradora del proceso perceptivo.",
+      "explanation": "La investigación busca comprender la cadena completa: desde el estímulo hasta la respuesta conductual final."
+    },
+    {
+      "q": "¿Cuál de estas afirmaciones define correctamente el método fenomenológico?",
+      "options": [
+        "Estudio cuantitativo del tiempo de reacción ante estímulos débiles.",
+        "Estudio de los fenómenos tal como se presentan de forma inmediata a la conciencia.",
+        "Procedimiento de ajuste de la intensidad del estímulo por el experimentador."
+      ],
+      "correct": 1,
+      "hint": "Se centra en la descripción subjetiva de la experiencia.",
+      "explanation": "Es un paso cualitativo que describe la percepción antes de intentar cuantificarla mediante otros métodos."
+    },
+    {
+      "q": "Elija la descripción que corresponde exactamente al concepto de umbral absoluto:",
+      "options": [
+        "Intensidad mínima de energía del estímulo requerida para ser detectado.",
+        "Diferencia mínima necesaria entre dos estímulos para notar un cambio.",
+        "Cantidad de ruido ambiental que interfiere en la detección de una señal."
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la detección de presencia o ausencia.",
+      "explanation": "El umbral absoluto marca el límite inferior de la sensibilidad para detectar un estímulo."
+    },
+    {
+      "q": "Sobre el método de los límites, ¿qué procedimiento es el habitual para determinar el umbral?",
+      "options": [
+        "Realizar una sola serie descendente y anotar el punto donde el sujeto dice 'no'.",
+        "Promediar los puntos de cruce de múltiples series tanto ascendentes como descendentes.",
+        "Permitir que el sujeto ajuste el mando de intensidad hasta que el estímulo desaparezca."
+      ],
+      "correct": 1,
+      "hint": "Busca el rigor estadístico de los cambios de respuesta.",
+      "explanation": "Se alternan series para evitar errores de habituación y se promedian los cambios de 'sí' a 'no'."
+    },
+    {
+      "q": "¿Qué caracteriza fundamentalmente al método de estímulos constantes?",
+      "options": [
+        "La presentación de estímulos en orden aleatorio para evitar expectativas.",
+        "El control directo del observador sobre la intensidad de la señal física.",
+        "La utilización de un único estímulo cuya intensidad varía de forma continua."
+      ],
+      "correct": 0,
+      "hint": "Es su principal ventaja metodológica frente al de los límites.",
+      "explanation": "Al no saber qué intensidad vendrá después, el sujeto no puede predecir la respuesta, aumentando la precisión."
+    },
+    {
+      "q": "Identifique la definición correcta de umbral diferencial (UD) según el texto:",
+      "options": [
+        "Diferencia máxima que el sistema sensorial puede procesar sin saturarse.",
+        "Diferencia más pequeña en intensidad entre dos estímulos que se puede detectar.",
+        "Punto en el que el sujeto confunde la señal con el ruido de fondo interno."
+      ],
+      "correct": 1,
+      "hint": "Weber es el autor clave en este concepto.",
+      "explanation": "Mide la capacidad de discriminación entre dos estímulos, no la detección de uno solo."
+    },
+    {
+      "q": "En el contexto de Stevens, ¿qué es la estimación de magnitudes?",
+      "options": [
+        "Técnica para medir la relación entre intensidad física y magnitud percibida.",
+        "Método para calcular el punto medio de la zona de incertidumbre sensorial.",
+        "Procedimiento para encontrar el umbral absoluto de estímulos dolorosos."
+      ],
+      "correct": 0,
+      "hint": "Busca la correspondencia entre valores numéricos y sensaciones.",
+      "explanation": "Permite asignar números a las sensaciones para ver cómo crecen respecto al mundo físico."
+    },
+    {
+      "q": "¿Qué ocurre durante el fenómeno de compresión de respuesta?",
+      "options": [
+        "La intensidad percibida aumenta más rápido que la intensidad física.",
+        "La intensidad percibida aumenta más lentamente que la intensidad física.",
+        "La intensidad percibida permanece constante independientemente del estímulo."
+      ],
+      "correct": 1,
+      "hint": "Piense en el ejemplo del brillo de la luz.",
+      "explanation": "Aunque dupliquemos la luz físicamente, el brillo que sentimos no llega a duplicarse sensorialmente."
+    },
+    {
+      "q": "¿Cuál es la principal contribución de la Teoría de Detección de Señales (TDS)?",
+      "options": [
+        "Demostrar que el umbral absoluto es una constante física inamovible.",
+        "Permitir distinguir entre la sensibilidad sensorial y el sesgo de respuesta.",
+        "Eliminar por completo el ruido sensorial en los experimentos de laboratorio."
+      ],
+      "correct": 1,
+      "hint": "Supera las limitaciones de los métodos clásicos de Fechner.",
+      "explanation": "La TDS reconoce que la respuesta depende tanto de la agudeza del sentido como de la tendencia del sujeto a decir 'sí'."
+    },
+    {
+      "q": "En la TDS, ¿cómo se define el resultado de 'omisión'?",
+      "options": [
+        "Decir que 'no' cuando el estímulo (señal) sí estaba presente.",
+        "Decir que 'sí' cuando el estímulo (señal) no estaba presente.",
+        "Decir que 'no' cuando el estímulo (señal) no estaba presente."
+      ],
+      "correct": 0,
+      "hint": "Es un error de detección por defecto.",
+      "explanation": "La omisión es fallar al detectar una señal que realmente se presentó."
+    },
+    {
+      "q": "¿Qué implica que un observador tenga un criterio de respuesta 'conservador'?",
+      "options": [
+        "Tenderá a decir 'sí' ante cualquier mínimo indicio de señal.",
+        "Tenderá a decir 'no' a menos que esté totalmente seguro de la señal.",
+        "Tenderá a alternar sus respuestas de forma aleatoria para no equivocarse."
+      ],
+      "correct": 1,
+      "hint": "Es lo opuesto al criterio liberal.",
+      "explanation": "El conservador minimiza las falsas alarmas, pero a costa de cometer más omisiones."
+    },
+    {
+      "q": "¿Cuál de los siguientes es un ejemplo de investigación psicofísica?",
+      "options": [
+        "Registrar los potenciales de acción de la retina ante un destello de luz.",
+        "Pedir a un sujeto que indique si ve una luz de intensidad débil.",
+        "Analizar la composición química de los fotorreceptores tras la percepción."
+      ],
+      "correct": 1,
+      "hint": "Busca la relación entre estímulo y respuesta conductual.",
+      "explanation": "La psicofísica utiliza métodos conductuales para medir la relación estímulo-percepción."
+    },
+    {
+      "q": "Sobre la 'zona de incertidumbre', seleccione la opción correcta:",
+      "options": [
+        "Es un rango donde la intensidad siempre se detecta en el 100% de casos.",
+        "Es una franja de intensidades donde la detección aumenta de forma gradual.",
+        "Es el área del cerebro donde se procesa la información sensorial ambigua."
+      ],
+      "correct": 1,
+      "hint": "Recuerde por qué el umbral es un 'compromiso estadístico'.",
+      "explanation": "No hay un corte limpio; hay intensidades que se detectan unas veces sí y otras no."
+    },
+    {
+      "q": "¿Cuál de estos métodos es el más exacto pero requiere más tiempo experimental?",
+      "options": [
+        "Método de ajuste.",
+        "Método de los límites.",
+        "Método de estímulos constantes."
+      ],
+      "correct": 2,
+      "hint": "La precisión suele requerir más ensayos y aleatoriedad.",
+      "explanation": "Al usar muchas repeticiones aleatorias, evita sesgos pero prolonga la sesión de estudio."
+    },
+    {
+      "q": "En el ejemplo de los pesos de Weber, si el UD es 2g para 100g, ¿qué significa?",
+      "options": [
+        "Que cualquier peso menor de 2g es indetectable por el sistema táctil.",
+        "Que 2g es la diferencia mínima para distinguir 100g de otro peso mayor.",
+        "Que el sujeto siempre comete un error de 2g al estimar el peso real."
+      ],
+      "correct": 1,
+      "hint": "Se trata de capacidad de discriminación.",
+      "explanation": "Indica que el sujeto nota la diferencia entre 100g y 102g, pero no entre 100g y 101g."
+    },
+    {
+      "q": "La expansión de respuesta se caracteriza por:",
+      "options": [
+        "Un aumento de la sensación percibida mayor que el aumento físico.",
+        "Un aumento de la sensación percibida menor que el aumento físico.",
+        "Una disminución de la sensibilidad a medida que el estímulo crece."
+      ],
+      "correct": 0,
+      "hint": "Piense en la descarga eléctrica.",
+      "explanation": "Pequeños cambios físicos en estímulos aversivos provocan grandes saltos en el dolor sentido."
+    },
+    {
+      "q": "¿Qué representa la línea de puntos en la gráfica del método de los límites?",
+      "options": [
+        "El momento exacto en que la intensidad del estímulo se vuelve dañina.",
+        "El punto de cruce donde el sujeto cambia de respuesta 'sí' a 'no'.",
+        "El nivel de ruido blanco que se utiliza para enmascarar la señal pura."
+      ],
+      "correct": 1,
+      "hint": "Es la marca que define el límite de cada serie.",
+      "explanation": "Es el umbral estimado para esa serie específica antes de promediar con las demás."
+    },
+    {
+      "q": "Un experimento de TDS se diferencia de uno clásico en que:",
+      "options": [
+        "Solo se utiliza una única intensidad de estímulo muy débil.",
+        "Se incluyen ensayos donde no se presenta ningún estímulo (ruido).",
+        "Ambas opciones anteriores son características diferenciales de la TDS."
+      ],
+      "correct": 2,
+      "hint": "Busca las dos novedades procedimentales de este enfoque.",
+      "explanation": "La TDS usa una intensidad constante y ensayos de control (ruido) para medir el sesgo."
+    },
+    {
+      "q": "El término 'rechazo correcto' en TDS se refiere a:",
+      "options": [
+        "Decir que 'no' cuando efectivamente no se presentó ninguna señal.",
+        "Decir que 'sí' cuando el estímulo era demasiado fuerte para el sujeto.",
+        "Decir que 'no' cuando el estímulo sí estaba pero era muy débil."
+      ],
+      "correct": 0,
+      "hint": "Es una respuesta acertada en ensayos de ruido.",
+      "explanation": "Es el acierto consistente en identificar la ausencia de señal."
+    },
+    {
+      "q": "¿Qué es la sensibilidad según la Teoría de Detección de Señales?",
+      "options": [
+        "La tendencia del sujeto a ser liberal o conservador en sus respuestas.",
+        "La capacidad real del observador para distinguir la señal del ruido.",
+        "El valor numérico que el sujeto asigna al brillo de un estímulo estándar."
+      ],
+      "correct": 1,
+      "hint": "Es el parámetro biológico/sensorial puro.",
+      "explanation": "Diferencia la agudeza del sistema sensorial del factor psicológico del criterio."
+    },
+    {
+      "q": "En el método de ajuste, el umbral se define como:",
+      "options": [
+        "El valor máximo alcanzado en la serie ascendente antes de saturar.",
+        "El ajuste promedio de todas las intensidades apenas audibles.",
+        "La intensidad que el experimentador fija al inicio de cada ensayo."
+      ],
+      "correct": 1,
+      "hint": "Recuerda que se repite varias veces.",
+      "explanation": "Al igual que otros métodos, requiere promediar varios intentos para ganar fiabilidad."
+    },
+    {
+      "q": "La estrategia de 'búsqueda' está estrechamente vinculada a:",
+      "options": [
+        "La percepción supraumbral y la expansión de respuesta táctil.",
+        "La velocidad de respuesta y el proceso de atención sostenida.",
+        "La descripción fenomenológica de las cualidades del gusto."
+      ],
+      "correct": 1,
+      "hint": "Se usa cuando hay que encontrar un estímulo entre distractores.",
+      "explanation": "Requiere esfuerzo cognitivo y rapidez, factores propios de la atención."
+    },
+    {
+      "q": "El libro 'Elementos de psicofísica' (1860) fue escrito por:",
+      "options": [
+        "Ernst Weber.",
+        "Gustav Fechner.",
+        "S.S. Stevens."
+      ],
+      "correct": 1,
+      "hint": "Se le considera el padre fundador de la psicofísica.",
+      "explanation": "Fechner acuñó el término y sentó las bases de la medición cuantitativa mental."
+    },
+    {
+      "q": "Si en un experimento de TDS Manuel tiene un 40% de falsas alarmas, significa que:",
+      "options": [
+        "Detectó correctamente el 40% de las señales presentadas.",
+        "Dijo 'sí' en el 40% de los ensayos donde no había señal.",
+        "Falló al detectar el 40% de las señales de baja intensidad."
+      ],
+      "correct": 1,
+      "hint": "Analiza la definición de error por exceso.",
+      "explanation": "Es la tasa de veces que el sujeto cree percibir algo que no está ahí."
+    },
+    {
+      "q": "La Curva COR representa gráficamente:",
+      "options": [
+        "La relación entre la tasa de aciertos y la tasa de falsas alarmas.",
+        "El incremento del umbral diferencial según la ley de Ernst Weber.",
+        "La compresión de respuesta en función de la intensidad lumínica."
+      ],
+      "correct": 0,
+      "hint": "Es el espacio donde se mapea el desempeño del receptor.",
+      "explanation": "Permite ver de un vistazo tanto la sensibilidad como el sesgo del observador."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre el enfoque psicofísico:",
+      "options": [
+        "Mide la relación entre estímulos físicos y percepción sensorial.",
+        "Fue presentado originalmente por el físico Gustav Fechner.",
+        "Se centra únicamente en medir la actividad química de las neuronas."
+      ],
+      "correct": 2,
+      "hint": "Diferencia psicofísica de fisiología.",
+      "explanation": "La psicofísica no mide neuronas, sino respuestas perceptivas a estímulos físicos."
+    },
+    {
+      "q": "Sobre el método fenomenológico, es incorrecto afirmar que:",
+      "options": [
+        "Es un primer paso que describe lo que percibimos conscientemente.",
+        "Permite asegurar la percepción al margen de expectativas ajenas.",
+        "Utiliza métodos cuantitativos precisos para medir el umbral absoluto."
+      ],
+      "correct": 2,
+      "hint": "El término clave es 'cuantitativo'.",
+      "explanation": "El método fenomenológico es cualitativo y descriptivo, no cuantitativo de umbrales."
+    },
+    {
+      "q": "En cuanto al reconocimiento, señale la afirmación que es falsa:",
+      "options": [
+        "Es el proceso por el cual categorizamos y nombramos un estímulo.",
+        "Es una estrategia totalmente independiente de la descripción sensorial.",
+        "Requiere que el observador identifique características del objeto."
+      ],
+      "correct": 1,
+      "hint": "Están estrechamente vinculadas entre sí.",
+      "explanation": "Descripción y reconocimiento suelen ir de la mano en las tareas experimentales."
+    },
+    {
+      "q": "Sobre el umbral absoluto, es incorrecto sostener que:",
+      "options": [
+        "Representa la intensidad mínima para que un estímulo sea detectado.",
+        "Es un valor fijo y exacto que no varía entre distintos observadores.",
+        "Se relaciona directamente con la sensibilidad del sistema sensorial."
+      ],
+      "correct": 1,
+      "hint": "Recuerde las diferencias individuales mencionadas.",
+      "explanation": "Existen grandes diferencias individuales en la sensibilidad y el procesamiento."
+    },
+    {
+      "q": "Es falso que en el método de los límites:",
+      "options": [
+        "Se presentan estímulos discretos uno a uno en series de intensidad.",
+        "El umbral se define como el valor máximo de la serie ascendente.",
+        "Se utilizan series ascendentes y descendentes de forma alternada."
+      ],
+      "correct": 1,
+      "hint": "Recuerde cómo se llega al valor final del umbral.",
+      "explanation": "No es el máximo de una serie, sino el promedio de los cruces de todas las series."
+    },
+    {
+      "q": "Sobre el método de ajuste, identifique la opción que no es correcta:",
+      "options": [
+        "El observador ajusta continuamente la intensidad del estímulo físico.",
+        "Es el método más lento debido al control manual del participante.",
+        "El umbral se determina mediante el ajuste promedio del observador."
+      ],
+      "correct": 1,
+      "hint": "Compare su velocidad con el método de estímulos constantes.",
+      "explanation": "El método de ajuste es el más rápido de los tres clásicos."
+    },
+    {
+      "q": "Respecto al método de estímulos constantes, es falso que:",
+      "options": [
+        "Se presentan de cinco a nueve estímulos con intensidades fijas.",
+        "El orden de presentación es aleatorio para cada ensayo del sujeto.",
+        "Es el método menos exacto de todos los propuestos por Fechner."
+      ],
+      "correct": 2,
+      "hint": "Piense en la fiabilidad estadística del azar.",
+      "explanation": "Es precisamente el método más exacto, aunque requiera más tiempo."
+    },
+    {
+      "q": "Sobre las premisas de los métodos clásicos, señale la incorrecta:",
+      "options": [
+        "La intensidad del umbral absoluto es un compromiso estadístico.",
+        "El umbral absoluto supone un cambio abrupto del 0% al 100%.",
+        "Existe una zona de incertidumbre en la detección de los estímulos."
+      ],
+      "correct": 1,
+      "hint": "El texto menciona la ausencia de un 'escalón'.",
+      "explanation": "El cambio no es abrupto, sino gradual a través de una franja de intensidades."
+    },
+    {
+      "q": "Sobre el umbral diferencial, es falso afirmar que:",
+      "options": [
+        "Ernst Weber fue el autor principal que midió este tipo de umbral.",
+        "Se puede medir utilizando los mismos métodos psicofísicos clásicos.",
+        "Mide la cantidad mínima de energía para detectar un solo estímulo."
+      ],
+      "correct": 2,
+      "hint": "Diferencie detección de discriminación.",
+      "explanation": "Mide la diferencia entre dos estímulos, no la detección de la presencia de uno."
+    },
+    {
+      "q": "En la estimación de magnitudes de Stevens, es incorrecto que:",
+      "options": [
+        "Se presenta un estímulo estándar con un valor numérico asignado.",
+        "El observador asigna valores proporcionales a la magnitud sentida.",
+        "Se busca determinar únicamente el umbral absoluto de la visión."
+      ],
+      "correct": 2,
+      "hint": "Es una técnica para percepción por encima del umbral.",
+      "explanation": "Sirve para medir la intensidad percibida supraumbral, no el umbral absoluto."
+    },
+    {
+      "q": "Sobre la compresión de respuesta, señale la opción falsa:",
+      "options": [
+        "Ocurre cuando la intensidad física aumenta más que la percibida.",
+        "Es un fenómeno típico de la percepción del brillo de una luz.",
+        "Indica que duplicar la intensidad física siempre duplica la sensación."
+      ],
+      "correct": 2,
+      "hint": "Piense en la rapidez del crecimiento sensorial.",
+      "explanation": "Precisamente indica que duplicar la intensidad física NO duplica la sensación."
+    },
+    {
+      "q": "Respecto a la expansión de respuesta, es falso que:",
+      "options": [
+        "La curva de intensidad se gira hacia arriba en forma exponencial.",
+        "Ocurre con estímulos que el sujeto percibe como agradables.",
+        "Pequeños aumentos físicos causan grandes aumentos de sensación."
+      ],
+      "correct": 1,
+      "hint": "Relacionelo con estímulos de tipo aversivo.",
+      "explanation": "Se asocia a estímulos aversivos como el dolor, no a estímulos agradables."
+    },
+    {
+      "q": "Sobre la Teoría de Detección de Señales, es falso afirmar que:",
+      "options": [
+        "Acepta que el observador responda ante intensidades infraumbrales.",
+        "Considera que el ruido sensorial es inexistente en reposo absoluto.",
+        "Señala diferencias individuales en el criterio de respuesta usado."
+      ],
+      "correct": 1,
+      "hint": "Recuerde la actividad espontánea de las neuronas sensoriales.",
+      "explanation": "La TDS sostiene que el ruido siempre está presente debido a la actividad celular."
+    },
+    {
+      "q": "En la matriz de resultados de la TDS, señale la definición falsa:",
+      "options": [
+        "Acierto: decir 'sí' cuando el estímulo (señal) está presente.",
+        "Falsa alarma: decir 'no' cuando el estímulo (señal) no está.",
+        "Omisión: decir 'no' cuando el estímulo (señal) sí está presente."
+      ],
+      "correct": 1,
+      "hint": "Diferencie los dos tipos de errores posibles.",
+      "explanation": "Decir 'no' cuando no hay señal es un rechazo correcto. Falsa alarma es decir 'sí' sin señal."
+    },
+    {
+      "q": "Sobre el sesgo de respuesta en TDS, es incorrecto afirmar que:",
+      "options": [
+        "Provoca diferencias en resultados con idéntica sensibilidad sensorial.",
+        "Un criterio liberal minimiza drásticamente las falsas alarmas.",
+        "El criterio conservador hace que el sujeto tienda a responder 'no'."
+      ],
+      "correct": 1,
+      "hint": "Piense en el riesgo que asume el observador liberal.",
+      "explanation": "El criterio liberal aumenta los aciertos pero también aumenta las falsas alarmas."
+    },
+    {
+      "q": "Es falso que los experimentos de TDS se diferencien de los clásicos en:",
+      "options": [
+        "Utilizar múltiples intensidades de estímulo en una misma sesión.",
+        "Incluir ensayos donde solo se presenta ruido sin ninguna señal.",
+        "Permitir distinguir gráficamente entre la sensibilidad y el sesgo."
+      ],
+      "correct": 0,
+      "hint": "Recuerde cuántas intensidades se usan en un test de TDS.",
+      "explanation": "En TDS se suele usar una única intensidad baja, a diferencia de los métodos clásicos."
+    },
+    {
+      "q": "Sobre la Curva COR, identifique la afirmación falsa:",
+      "options": [
+        "Es la representación gráfica de la operación del receptor sensorial.",
+        "Permite ver cómo varía la respuesta según el criterio adoptado.",
+        "Representa la relación entre el umbral absoluto y el diferencial."
+      ],
+      "correct": 2,
+      "hint": "La COR trata sobre aciertos y falsas alarmas.",
+      "explanation": "La COR no relaciona umbrales, sino la capacidad de detección frente al sesgo."
+    },
+    {
+      "q": "Señale la opción falsa respecto a la estrategia de búsqueda:",
+      "options": [
+        "Supone la activación intencional de recursos cognitivos del sujeto.",
+        "Se pone en marcha cuando prima la precisión sobre la velocidad.",
+        "Está vinculada directamente al proceso de atención sostenida."
+      ],
+      "correct": 1,
+      "hint": "Analice qué variable es prioritaria en esta estrategia.",
+      "explanation": "La búsqueda se usa precisamente cuando prima la velocidad de respuesta."
+    },
+    {
+      "q": "Sobre la investigación en percepción, es falso afirmar que:",
+      "options": [
+        "El enfoque fisiológico es el único válido en la actualidad científica.",
+        "Se utilizan dos enfoques principales: el psicofísico y el fisiológico.",
+        "La psicofísica sigue empleando métodos cuantitativos del siglo XIX."
+      ],
+      "correct": 0,
+      "hint": "El texto menciona la convivencia de ambos enfoques.",
+      "explanation": "Ambos enfoques (psicofísico y fisiológico) son válidos y necesarios."
+    },
+    {
+      "q": "Respecto a Fechner y Weber, señale la afirmación que no es correcta:",
+      "options": [
+        "Fechner acuñó el término 'psicofísica' en su obra de 1860.",
+        "Weber midió el UD pidiendo juzgar si dos pesos eran iguales.",
+        "Ambos autores rechazaron el uso de datos numéricos en psicología."
+      ],
+      "correct": 2,
+      "hint": "Considere su aportación al carácter científico de la disciplina.",
+      "explanation": "Fueron pioneros precisamente en defender el uso de datos numéricos para la mente."
+    },
+    {
+      "q": "Sobre la zona de incertidumbre, es incorrecto decir que:",
+      "options": [
+        "Se sitúa en una franja estrecha de intensidades físicas del estímulo.",
+        "En ella la detección va aumentando primero lenta y luego rápido.",
+        "Es el área donde el sujeto siempre tiene absoluta seguridad de ver."
+      ],
+      "correct": 2,
+      "hint": "Incertidumbre significa falta de seguridad.",
+      "explanation": "Es la zona donde el sujeto duda y no siempre está seguro de la presencia del estímulo."
+    },
+    {
+      "q": "Identifique la opción falsa sobre el método de los límites aplicado al sonido:",
+      "options": [
+        "Una serie descendente termina cuando el sujeto responde 'no'.",
+        "Una serie ascendente termina en el primer ensayo donde se dice 'sí'.",
+        "El umbral se define como la intensidad más baja de la serie de 'sí'."
+      ],
+      "correct": 2,
+      "hint": "El umbral es una media, no un valor puntual de una serie.",
+      "explanation": "El umbral es el punto medio (promedio) de los cambios, no un valor de 'sí' aislado."
+    },
+    {
+      "q": "Sobre la percepción supraumbral, es incorrecto afirmar que:",
+      "options": [
+        "No existen métodos científicos para evaluarla en el laboratorio.",
+        "La estimación de magnitudes es el método más sofisticado para ello.",
+        "Se refiere a las percepciones que ocurren por encima del umbral."
+      ],
+      "correct": 0,
+      "hint": "Recuerde el trabajo de Stevens.",
+      "explanation": "La estimación de magnitudes de Stevens es precisamente el método para medirla."
+    },
+    {
+      "q": "Sobre el 'ruido' en la TDS, señale la afirmación falsa:",
+      "options": [
+        "Incluye todos los estímulos del entorno que no son la señal.",
+        "Es generado exclusivamente por fuentes externas al observador.",
+        "Dificulta la detección de intensidades muy débiles de la señal."
+      ],
+      "correct": 1,
+      "hint": "Considere la actividad interna del organismo.",
+      "explanation": "El ruido también es interno, debido a la actividad espontánea de las células sensoriales."
+    },
+    {
+      "q": "Respecto a la metodología de investigación, es falso que:",
+      "options": [
+        "La elección del método depende de los objetivos del estudio.",
+        "El método de estímulos constantes es el que requiere menos tiempo.",
+        "El método de ajuste permite determinar el umbral en pocos ensayos."
+      ],
+      "correct": 1,
+      "hint": "Compare el número de ensayos necesarios en cada caso.",
+      "explanation": "El método de estímulos constantes es el que requiere MÁS tiempo, no menos."
+    },
+    {
+      "q": "El enfoque ____ de la percepción fue presentado por Gustav Fechner en su obra de 1860 para medir la relación entre estímulo y psique.",
+      "options": [
+        "Enfoque psicofísico",
+        "Enfoque fisiológico",
+        "Enfoque cognitivo"
+      ],
+      "correct": 0,
+      "hint": "Fechner acuñó este término para el estudio cuantitativo de la relación física y mental.",
+      "explanation": "El enfoque psicofísico utiliza métodos cuantitativos para medir las relaciones entre los estímulos físicos y la percepción psíquica."
+    },
+    {
+      "q": "El método ____ se describe como aquel que estudia los fenómenos tal como se presentan a la conciencia sin expectativas previas.",
+      "options": [
+        "Método experimental",
+        "Método estructural",
+        "Método fenomenológico"
+      ],
+      "correct": 2,
+      "hint": "Es el primer paso en el estudio de la percepción vinculado a la estrategia de descripción.",
+      "explanation": "La descripción se vincula al método fenomenológico, que asegura lo que una persona percibe al margen de hipótesis externas."
+    },
+    {
+      "q": "La estrategia de ____ implica que el participante se percate de un aspecto apenas detectable o sutil de un estímulo físico.",
+      "options": [
+        "Estrategia detección",
+        "Estrategia búsqueda",
+        "Estrategia de ajuste"
+      ],
+      "correct": 0,
+      "hint": "Es la protagonista en los métodos psicofísicos clásicos propuestos por Gustav Fechner.",
+      "explanation": "La detección supone captar un aspecto apenas perceptible, siendo la base para determinar los umbrales absolutos."
+    },
+    {
+      "q": "En la estrategia de ____, el observador toma conciencia de la intensidad del estímulo comparándolo con otros estímulos presentes.",
+      "options": [
+        "Búsqueda visual",
+        "Escalamiento mental",
+        "Estimación magnitudes"
+      ],
+      "correct": 2,
+      "hint": "Fue desarrollada con precisión por S. S. Stevens en 1957 mediante la técnica de escalamiento.",
+      "explanation": "La estimación de magnitudes permite medir la relación entre la intensidad física y la magnitud percibida mediante comparaciones."
+    },
+    {
+      "q": "La estrategia de búsqueda está estrechamente vinculada con el proceso cognitivo básico denominado ____ por su demanda de velocidad.",
+      "options": [
+        "Memoria operativa",
+        "Atención sostenida",
+        "Sensibilidad pura"
+      ],
+      "correct": 1,
+      "hint": "Se activa intencionalmente para encontrar un estímulo concreto entre distractores en el campo visual.",
+      "explanation": "La búsqueda requiere recursos cognitivos destinados a encontrar un estímulo, asociándose directamente a la atención sostenida."
+    },
+    {
+      "q": "El ____ es la cantidad mínima de energía del estímulo que se requiere para que este sea detectado por un observador.",
+      "options": [
+        "Umbral diferencial",
+        "Umbral absoluto",
+        "Umbral de ajuste"
+      ],
+      "correct": 1,
+      "hint": "Se relaciona con la intensidad mínima necesaria para activar la sensibilidad del sistema sensorial.",
+      "explanation": "El umbral absoluto define el límite inferior de detección de energía necesaria para producir una percepción."
+    },
+    {
+      "q": "En el método de los ____, el experimentador presenta estímulos discretos en series ascendentes o descendentes de intensidad.",
+      "options": [
+        "Método de límites",
+        "Método constantes",
+        "Método de ajustes"
+      ],
+      "correct": 0,
+      "hint": "El umbral se calcula promediando los puntos de cruce donde el sujeto cambia su respuesta de sí a no.",
+      "explanation": "El método de los límites utiliza series ordenadas para encontrar el punto de transición o límite de la percepción."
+    },
+    {
+      "q": "El método de ____ es el más rápido porque permite al propio observador manipular la intensidad hasta detectar el estímulo.",
+      "options": [
+        "Método de límites",
+        "Método de ajuste",
+        "Método constante"
+      ],
+      "correct": 1,
+      "hint": "El observador gira un mando de forma continua hasta que el estímulo resulta apenas audible o visible.",
+      "explanation": "A diferencia de los otros métodos, en el de ajuste el sujeto tiene el control continuo sobre la variación de intensidad."
+    },
+    {
+      "q": "En el método de ____, el experimentador presenta de cinco a nueve estímulos con diferentes intensidades en orden aleatorio.",
+      "options": [
+        "Estímulos constantes",
+        "Estímulos discretos",
+        "Estímulos variables"
+      ],
+      "correct": 0,
+      "hint": "Es el método más exacto pero requiere mucho más tiempo por sesión experimental debido a las repeticiones.",
+      "explanation": "El método de estímulos constantes presenta intensidades al azar para evitar que el sujeto cree expectativas o hipótesis."
+    },
+    {
+      "q": "En psicofísica clásica, el umbral absoluto se define generalmente como la intensidad correspondiente a la detección en el ____.",
+      "options": [
+        "75% de los ensayos",
+        "50% de los ensayos",
+        "25% de los ensayos"
+      ],
+      "correct": 1,
+      "hint": "Es un compromiso estadístico puesto que los observadores no son detectores perfectos y constantes.",
+      "explanation": "Debido a la zona de incertidumbre, se conviene que el umbral es el punto donde se detecta el estímulo la mitad de las veces."
+    },
+    {
+      "q": "El ____ es la diferencia más pequeña en intensidad entre dos estímulos que una persona puede detectar de forma efectiva.",
+      "options": [
+        "Umbral absoluto",
+        "Umbral de cruce",
+        "Umbral diferencial"
+      ],
+      "correct": 2,
+      "hint": "Fue propuesto originalmente por Ernst Weber y se mide comparando un estímulo estándar con uno variable.",
+      "explanation": "El umbral diferencial o diferencia apenas perceptible (DAP) mide la sensibilidad a los cambios de intensidad."
+    },
+    {
+      "q": "El fenómeno de ____ implica que duplicar la intensidad física de una luz no produce necesariamente el doble de brillo percibido.",
+      "options": [
+        "Expansión respuesta",
+        "Compresión respuesta",
+        "Inversión respuesta"
+      ],
+      "correct": 1,
+      "hint": "Conforme aumenta la intensidad física, la intensidad percibida crece pero con menor rapidez que la primera.",
+      "explanation": "La compresión de respuesta es típica en el brillo, donde grandes aumentos físicos generan incrementos perceptivos menores."
+    },
+    {
+      "q": "La percepción de una descarga eléctrica muestra una ____, donde pequeños aumentos físicos disparan la sensación dolorosa.",
+      "options": [
+        "Expansión respuesta",
+        "Compresión respuesta",
+        "Atenuación respuesta"
+      ],
+      "correct": 0,
+      "hint": "Se relaciona con estímulos de naturaleza aversiva donde la curva se vuelve exponencial hacia arriba.",
+      "explanation": "La expansión de respuesta indica que la magnitud percibida crece más rápido que la intensidad física del estímulo aversivo."
+    },
+    {
+      "q": "La ____ acepta que los observadores respondan que detectan un estímulo incluso cuando este no supera el umbral teórico.",
+      "options": [
+        "Teoría psicofísica",
+        "Teoría fenomenológica",
+        "Teoría detección de señales"
+      ],
+      "correct": 2,
+      "hint": "Introduce los conceptos de ruido sensorial y actividad espontánea de las células para explicar los sesgos.",
+      "explanation": "La TDS asume que siempre hay ruido y que la respuesta depende tanto de la sensibilidad como del criterio del sujeto."
+    },
+    {
+      "q": "En la TDS, el ____ se refiere a todos los demás estímulos en el entorno o la actividad espontánea que no son la señal.",
+      "options": [
+        "Ruido sensorial",
+        "Fondo constante",
+        "Sesgo de respuesta"
+      ],
+      "correct": 0,
+      "hint": "Es casi imposible aislar los sentidos totalmente de esta interferencia biológica o ambiental.",
+      "explanation": "El ruido es el fondo de actividad contra el cual se debe detectar la señal débil en un experimento de TDS."
+    },
+    {
+      "q": "Un observador ____ requiere tener la absoluta seguridad de que el estímulo se presentó para dar una respuesta afirmativa.",
+      "options": [
+        "Observador liberal",
+        "Observador estricto",
+        "Observador neutro"
+      ],
+      "correct": 1,
+      "hint": "Este tipo de observador suele tener una baja tasa de falsas alarmas pero también menos aciertos.",
+      "explanation": "El criterio conservador o estricto minimiza los errores de falsa alarma a costa de perder algunas señales reales (omisiones)."
+    },
+    {
+      "q": "En la terminología de la TDS, un ____ ocurre cuando el sujeto dice 'sí' ante la presencia real de un tono o señal.",
+      "options": [
+        "Acierto",
+        "Falsa alarma",
+        "Rechazo correcto"
+      ],
+      "correct": 0,
+      "hint": "Es la respuesta correcta ante un ensayo donde el experimentador efectivamente presentó el estímulo.",
+      "explanation": "El acierto es la detección exitosa de la señal cuando esta ha sido presentada."
+    },
+    {
+      "q": "Si Manuel dice 'sí' en un ensayo de TDS donde no se presentó ningún tono, su respuesta se categoriza como ____.",
+      "options": [
+        "Acierto",
+        "Omisión",
+        "Falsa alarma"
+      ],
+      "correct": 2,
+      "hint": "Es un tipo de error donde el sujeto confunde el ruido sensorial con la señal esperada.",
+      "explanation": "La falsa alarma es la respuesta afirmativa errónea ante la ausencia de estímulo físico."
+    },
+    {
+      "q": "La mayor aportación de la TDS es que permite distinguir estadísticamente entre la ____ y el sesgo del observador.",
+      "options": [
+        "Intensidad física",
+        "Sensibilidad",
+        "Actividad mental"
+      ],
+      "correct": 1,
+      "hint": "Los métodos clásicos no contemplan el criterio de respuesta y confunden ambos aspectos en los resultados.",
+      "explanation": "La TDS separa la capacidad sensorial (sensibilidad) de la tendencia psicológica a responder (sesgo o criterio)."
+    },
+    {
+      "q": "La ____ es la representación gráfica que plasma la sensibilidad y el sesgo de la respuesta del observador en TDS.",
+      "options": [
+        "Curva de Weber",
+        "Curva de Stevens",
+        "Curva COR"
+      ],
+      "correct": 2,
+      "hint": "Sus siglas significan Operación del Receptor y muestran la relación entre aciertos y falsas alarmas.",
+      "explanation": "La curva COR (o ROC) permite visualizar el rendimiento del observador independientemente de su criterio."
+    },
+    {
+      "q": "El libro 'Elementos de psicofísica' publicado en ____ marcó el inicio del uso de métodos cuantitativos en percepción.",
+      "options": [
+        "Año 1860",
+        "Año 1878",
+        "Año 1957"
+      ],
+      "correct": 0,
+      "hint": "Fue escrito por Gustav Fechner antes de los desarrollos de Stevens sobre el escalamiento.",
+      "explanation": "En 1860, Fechner sentó las bases de la psicofísica como disciplina científica cuantitativa."
+    },
+    {
+      "q": "El proceso por el cual categorizamos un estímulo y lo nombramos citando sus características se denomina ____.",
+      "options": [
+        "Descripción",
+        "Reconocimiento",
+        "Detección"
+      ],
+      "correct": 1,
+      "hint": "Implica una identificación activa del objeto, no solo notar su presencia física básica.",
+      "explanation": "El reconocimiento va un paso más allá de la descripción al requerir la categorización e identificación del objeto."
+    },
+    {
+      "q": "En el experimento del teatro, notar una mancha pequeña en la alfombra roja sería un ejemplo de la estrategia de ____.",
+      "options": [
+        "Detección",
+        "Reconocimiento",
+        "Descripción"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a percatarse de un detalle apenas visible o una cualidad mínima del estímulo.",
+      "explanation": "La detección se centra en la capacidad de notar la presencia de un estímulo o cualidad de muy baja intensidad."
+    },
+    {
+      "q": "Los métodos psicofísicos de límites, ajuste y estímulos constantes se enfocan principalmente en la estrategia de ____.",
+      "options": [
+        "Búsqueda",
+        "Detección",
+        "Reconocimiento"
+      ],
+      "correct": 1,
+      "hint": "Buscan determinar los límites mínimos de la energía necesarios para producir una sensación consciente.",
+      "explanation": "Los métodos clásicos de Fechner están diseñados para cuantificar el umbral de detección del estímulo."
+    },
+    {
+      "q": "Un ____ es el punto en el método de límites donde el sujeto cambia su respuesta de 'sí escucho' a 'no escucho'.",
+      "options": [
+        "Punto de ajuste",
+        "Punto de cruce",
+        "Punto constante"
+      ],
+      "correct": 1,
+      "hint": "También se denomina límite y se usa para calcular el valor promedio que definirá el umbral absoluto.",
+      "explanation": "El punto de cruce indica la transición perceptual en las series ascendentes o descendentes del método de límites."
+    },
+    {
+      "q": "El umbral absoluto nunca es un cambio ____ desde la no detección hasta la detección total en los ensayos.",
+      "options": [
+        "Cambio abrupto",
+        "Cambio gradual",
+        "Cambio lineal"
+      ],
+      "correct": 0,
+      "hint": "Existe una franja estrecha de intensidades donde la detección aumenta de forma progresiva.",
+      "explanation": "Debido a la variabilidad biológica, no hay un 'escalón' perfecto, sino una curva de probabilidad de detección."
+    },
+    {
+      "q": "La ____ es la franja estrecha de intensidades en la que la detección va aumentando paulatinamente en el observador.",
+      "options": [
+        "Zona de sesgo",
+        "Zona de ruido",
+        "Zona incertidumbre"
+      ],
+      "correct": 2,
+      "hint": "En esta región el sujeto no siempre está seguro de haber percibido el estímulo presentado.",
+      "explanation": "La zona de incertidumbre es donde la respuesta del sujeto fluctúa entre el sí y el no para intensidades cercanas al umbral."
+    },
+    {
+      "q": "En el experimento del peso de Weber, si el observador no nota diferencia entre 100g y 101g, el ____ aún no se ha alcanzado.",
+      "options": [
+        "Umbral absoluto",
+        "Umbral diferencial",
+        "Umbral de Stevens"
+      ],
+      "correct": 1,
+      "hint": "Se requiere que el sujeto diga 'diferente' por primera vez para determinar este valor.",
+      "explanation": "El umbral diferencial (UD) se alcanza cuando el sujeto detecta la diferencia mínima entre dos estímulos."
+    },
+    {
+      "q": "En el método de ____, se presenta un estímulo estándar y el sujeto asigna valores proporcionales a los nuevos estímulos.",
+      "options": [
+        "Límites",
+        "Ajuste",
+        "Estimación de magnitudes"
+      ],
+      "correct": 2,
+      "hint": "Permite evaluar la percepción en condiciones supraumbral asignando números a las sensaciones.",
+      "explanation": "La estimación de magnitudes evalúa cómo escala el sujeto su percepción ante intensidades por encima del umbral."
+    },
+    {
+      "q": "La línea ____ en la gráfica de respuestas representa una relación de 1 a 1 entre intensidad física y percibida.",
+      "options": [
+        "Línea diagonal",
+        "Línea exponencial",
+        "Línea logarítmica"
+      ],
+      "correct": 0,
+      "hint": "Es la referencia ideal contra la que se comparan la compresión y la expansión de respuesta.",
+      "explanation": "Una línea diagonal (r=1.0) indicaría que la magnitud percibida crece exactamente igual que la intensidad física."
+    },
+    {
+      "q": "En la TDS, si Virginia tiene una tasa de aciertos del 70% y falsas alarmas del 20%, su criterio es más ____ que el de Manuel.",
+      "options": [
+        "Criterio liberal",
+        "Criterio neutral",
+        "Criterio estricto"
+      ],
+      "correct": 2,
+      "hint": "Tiende a no decir 'sí' a menos que esté muy segura, reduciendo tanto aciertos como errores.",
+      "explanation": "Un criterio estricto o conservador prioriza evitar falsas alarmas, aunque se pierdan algunos aciertos."
+    },
+    {
+      "q": "La respuesta correcta de decir 'no' cuando efectivamente no se ha presentado ningún estímulo se llama ____.",
+      "options": [
+        "Omisión",
+        "Falsa alarma",
+        "Rechazo correcto"
+      ],
+      "correct": 2,
+      "hint": "Es la contraparte exitosa de la falsa alarma en la matriz de respuestas de la TDS.",
+      "explanation": "El rechazo correcto ocurre cuando el sujeto identifica acertadamente la ausencia de señal."
+    },
+    {
+      "q": "La respuesta incorrecta de decir 'no' cuando se ha presentado un estímulo real se denomina ____ en la TDS.",
+      "options": [
+        "Omisión",
+        "Acierto",
+        "Falsa alarma"
+      ],
+      "correct": 0,
+      "hint": "Representa una pérdida de la señal por falta de sensibilidad o por un criterio demasiado elevado.",
+      "explanation": "La omisión es el fallo en detectar un estímulo presente, el opuesto al acierto."
+    },
+    {
+      "q": "El umbral absoluto se considera un ____ porque los observadores no son detectores perfectos e invariables.",
+      "options": [
+        "Valor absoluto",
+        "Compromiso estadístico",
+        "Límite biológico"
+      ],
+      "correct": 1,
+      "hint": "Se basa en promedios y convenciones para definir un punto en la zona de incertidumbre.",
+      "explanation": "Al no ser una respuesta de 'todo o nada', el umbral se define por la probabilidad del 50% de detección."
+    },
+    {
+      "q": "En el método de ajuste, lo que se toma finalmente como intensidad de umbral es el ____ de todas las repeticiones.",
+      "options": [
+        "Valor máximo",
+        "Ajuste promedio",
+        "Punto de corte"
+      ],
+      "correct": 1,
+      "hint": "Dado que el procedimiento se repite varias veces, se busca la tendencia central de las detecciones.",
+      "explanation": "El ajuste promedio compensa la variabilidad de cada ensayo individual realizado por el observador."
+    },
+    {
+      "q": "Los investigadores han concluido que la percepción no siempre se relaciona con la ____ real sino con la sensación.",
+      "options": [
+        "Energía física",
+        "Magnitud real",
+        "Fuerza motriz"
+      ],
+      "correct": 1,
+      "hint": "Fenómenos como la compresión de respuesta demuestran esta distorsión subjetiva del mundo físico.",
+      "explanation": "La psicofísica demuestra que la experiencia subjetiva (sensación) no es un reflejo lineal de la magnitud física."
+    },
+    {
+      "q": "La técnica de ____ mide con precisión la relación entre intensidad física y magnitud percibida desde 1957.",
+      "options": [
+        "Detección",
+        "Escalamiento",
+        "Reconocimiento"
+      ],
+      "correct": 1,
+      "hint": "Fue desarrollada por Stevens y es la base de la estimación de magnitudes moderna.",
+      "explanation": "El escalamiento permite cuantificar sensaciones supraumbral mediante la asignación de valores numéricos."
+    },
+    {
+      "q": "El método fenomenológico es un primer paso importante porque permite asegurar lo que una persona está ____.",
+      "options": [
+        "Sintiendo",
+        "Percibiendo",
+        "Imaginando"
+      ],
+      "correct": 1,
+      "hint": "Busca la descripción pura del fenómeno tal como aparece en la conciencia del observador.",
+      "explanation": "La fenomenología en percepción garantiza que el estudio parta de la experiencia real del sujeto."
+    },
+    {
+      "q": "En el método de estímulos constantes, los datos indican que intensidades bajas nunca se detectan y las ____ siempre.",
+      "options": [
+        "Intensidades medias",
+        "Intensidades altas",
+        "Intensidades fijas"
+      ],
+      "correct": 1,
+      "hint": "Las intensidades intermedias son las que definen la curva sigmoidea de detección en la gráfica.",
+      "explanation": "En este método, los extremos son claros (0% y 100% de detección), mientras que el umbral está en el centro."
+    },
+    {
+      "q": "El ____ del observador es lo que hace que unos sean mucho más liberales y otros mucho más conservadores.",
+      "options": [
+        "Umbral absoluto",
+        "Criterio respuesta",
+        "Sensibilidad pura"
+      ],
+      "correct": 1,
+      "hint": "Es un sesgo psicológico que influye en la decisión de decir 'sí' ante la incertidumbre del estímulo.",
+      "explanation": "El criterio de respuesta es la disposición interna del sujeto para reportar la presencia de un estímulo."
+    },
+    {
+      "q": "Son características de la investigación psicofísica según Fechner y los desarrollos posteriores:",
+      "options": [
+        "El uso de métodos cuantitativos",
+        "La medida de relaciones físico-psique",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Busca la cuantificación exacta de la experiencia subjetiva mediante el control del estímulo físico.",
+      "explanation": "La psicofísica se define por ser cuantitativa y por estudiar la interacción entre lo físico y lo mental."
+    },
+    {
+      "q": "En el método de límites, para determinar el umbral absoluto final el experimentador debe:",
+      "options": [
+        "Realizar series ascendentes",
+        "Realizar series descendentes",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se busca promediar ambos tipos de series para eliminar sesgos de habituación o expectativa.",
+      "explanation": "El cálculo del umbral en el método de límites requiere el promedio de los puntos de cruce de ambas series."
+    },
+    {
+      "q": "Los métodos psicofísicos clásicos propuestos por Fechner en su obra fundamental incluyen:",
+      "options": [
+        "El método de los límites",
+        "El método de estímulos constantes",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son tres métodos básicos que todavía se utilizan con muy pocas modificaciones en laboratorios.",
+      "explanation": "Fechner propuso los métodos de límites, ajuste y estímulos constantes como pilares de la psicofísica."
+    },
+    {
+      "q": "Sobre el umbral absoluto en la investigación de percepción, se puede afirmar que:",
+      "options": [
+        "Es un valor de compromiso estadístico",
+        "Depende de la sensibilidad del sujeto",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "No es un valor fijo biológico inmutable, sino una medida probabilística de detección mínima.",
+      "explanation": "El umbral absoluto combina la capacidad sensorial con la metodología estadística de detección al 50%."
+    },
+    {
+      "q": "La estrategia de descripción en el estudio fenomenológico de la percepción permite:",
+      "options": [
+        "Estudiar fenómenos de la conciencia",
+        "Asegurar lo que el sujeto percibe",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es un método cualitativo inicial que precede a la cuantificación experimental rigurosa.",
+      "explanation": "La descripción fenomenológica identifica las cualidades percibidas y valida la experiencia del observador."
+    },
+    {
+      "q": "En la estimación de magnitudes para evaluar la percepción supraumbral, el procedimiento implica:",
+      "options": [
+        "Presentar un estímulo estándar",
+        "Asignar valores proporcionales",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "El sujeto debe comparar numéricamente la intensidad de nuevos estímulos con una referencia fija.",
+      "explanation": "El método requiere una unidad de medida subjetiva (estándar) para escalar el resto de las sensaciones."
+    },
+    {
+      "q": "Respecto a la compresión de respuesta en la percepción de la intensidad luminosa, es cierto que:",
+      "options": [
+        "La intensidad física aumenta rápido",
+        "La percibida aumenta con lentitud",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "A medida que la luz se vuelve muy intensa, nuestro sistema sensorial se satura y percibe menos cambios.",
+      "explanation": "La compresión indica que incrementos físicos masivos producen incrementos perceptivos cada vez menores."
+    },
+    {
+      "q": "Los estímulos de naturaleza aversiva, como una descarga eléctrica, se caracterizan por:",
+      "options": [
+        "Producir expansión de respuesta",
+        "Tener una curva de tipo exponencial",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son señales de peligro donde el sistema sensorial amplifica la señal para forzar una reacción rápida.",
+      "explanation": "La expansión de respuesta en estímulos aversivos asegura que el dolor crezca rápidamente ante el daño físico."
+    },
+    {
+      "q": "La Teoría de Detección de Señales (TDS) se diferencia de los métodos clásicos porque:",
+      "options": [
+        "Usa una sola intensidad de estímulo",
+        "Incluye ensayos sin ningún estímulo",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Estas dos innovaciones permiten separar la sensibilidad del sesgo psicológico del observador.",
+      "explanation": "La TDS introduce el ruido y la ausencia de señal para medir la precisión y el criterio de decisión."
+    },
+    {
+      "q": "Los tipos de respuesta que un observador puede dar en un experimento de TDS incluyen:",
+      "options": [
+        "Falsas alarmas y aciertos",
+        "Omisiones y rechazos correctos",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "La matriz de decisión de 2x2 cubre todas las posibilidades lógicas de presencia/ausencia de señal.",
+      "explanation": "En TDS se cuantifican los dos tipos de éxitos (acierto, rechazo) y los dos tipos de errores (FA, omisión)."
+    },
+    {
+      "q": "La zona de incertidumbre en los experimentos de umbral absoluto se caracteriza por:",
+      "options": [
+        "Una detección que aumenta lentamente",
+        "Dudas constantes en el observador",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es el área de la curva psicofísica donde la probabilidad de detección está entre 0.05 y 0.95.",
+      "explanation": "La incertidumbre refleja la naturaleza probabilística de la detección cerca del límite sensorial."
+    },
+    {
+      "q": "Un observador con un criterio liberal en un experimento de detección de señales tendrá:",
+      "options": [
+        "Una alta tasa de aciertos totales",
+        "Una alta tasa de falsas alarmas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Tiende a decir 'sí' ante cualquier indicio mínimo, arriesgándose a cometer muchos errores de exceso.",
+      "explanation": "El criterio liberal maximiza los aciertos pero no filtra el ruido, generando muchos falsos positivos."
+    },
+    {
+      "q": "El umbral diferencial medido por Weber mediante los métodos psicofísicos clásicos sirve para:",
+      "options": [
+        "Notar diferencias entre estímulos",
+        "Detectar la DAP (Diferencia Apenas)",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se pregunta al sujeto si dos estímulos son iguales o diferentes variando levemente uno de ellos.",
+      "explanation": "El UD cuantifica la capacidad de discriminación del sistema sensorial entre dos magnitudes físicas."
+    },
+    {
+      "q": "La Curva de Operación del Receptor (COR) en la investigación perceptiva permite visualizar:",
+      "options": [
+        "La sensibilidad del observador",
+        "El sesgo o criterio de respuesta",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es una herramienta estadística que resume todo el rendimiento del sujeto en una sola gráfica.",
+      "explanation": "La curva COR relaciona aciertos y falsas alarmas para definir el perfil perceptivo del individuo."
+    },
+    {
+      "q": "La estrategia de búsqueda en los experimentos de percepción se asocia directamente con:",
+      "options": [
+        "La activación de recursos cognitivos",
+        "La velocidad de respuesta medida",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es el paradigma usado para encontrar un 'target' específico entre un conjunto de distractores.",
+      "explanation": "La búsqueda requiere un esfuerzo atencional activo y se cuantifica mediante el tiempo de reacción."
+    },
+    {
+      "q": "La psicofísica moderna utiliza el término en un sentido amplio para referirse a:",
+      "options": [
+        "Cualquier medida estímulo-percepción",
+        "Uso de métodos no cuantitativos",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Aunque nació como puramente cuantitativa, hoy engloba diversas formas de medir la relación psicofísica.",
+      "explanation": "La psicofísica actual integra métodos clásicos y nuevas estrategias de exploración perceptiva."
+    },
+    {
+      "q": "Los métodos psicofísicos clásicos son fundamentales en la historia de la psicología porque:",
+      "options": [
+        "Supusieron un gran avance científico",
+        "Permitieron el estudio cuantitativo",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Demostraron que la actividad mental podía medirse con números, algo impensable en el siglo XIX.",
+      "explanation": "Fechner validó la psicología como ciencia al introducir la medición objetiva de lo subjetivo."
+    },
+    {
+      "q": "El concepto de 'ruido' en la Teoría de Detección de Señales puede provenir de:",
+      "options": [
+        "Actividad espontánea celular",
+        "Otros estímulos del entorno real",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Cualquier interferencia que dificulte la distinción de la señal pura se considera ruido sensorial.",
+      "explanation": "El ruido es la suma de la variabilidad biológica interna y la estimulación ambiental no deseada."
+    },
+    {
+      "q": "En el método de los límites, una serie descendente se caracteriza por:",
+      "options": [
+        "Comenzar por debajo del umbral",
+        "Aumentar la intensidad cada vez",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se parte de un estímulo claramente audible o visible y se reduce hasta que el sujeto deja de percibirlo.",
+      "explanation": "Las series descendentes comienzan por encima del umbral y disminuyen la intensidad del estímulo."
+    },
+    {
+      "q": "Un 'acierto' en la Teoría de Detección de Señales se define técnicamente como:",
+      "options": [
+        "Decir sí cuando no hay señal",
+        "Decir no cuando hay una señal",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es la detección positiva de un evento que realmente ha ocurrido en el entorno físico.",
+      "explanation": "El acierto es decir 'sí' cuando la señal está presente; las opciones dadas son FA y Omisión."
+    },
+    {
+      "q": "El método fenomenológico de descripción de estímulos se caracteriza por:",
+      "options": [
+        "Ignorar la conciencia del sujeto",
+        "Basarse en hipótesis de terceros",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Busca captar la esencia de la percepción tal como se presenta, sin juicios previos ni teorías.",
+      "explanation": "Es un método que prioriza la experiencia consciente subjetiva por encima de las expectativas externas."
+    },
+    {
+      "q": "En la expansión de respuesta, si duplicamos la intensidad física de una descarga eléctrica:",
+      "options": [
+        "El dolor percibido se mantiene",
+        "El dolor percibido se reduce",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "La sensación crece mucho más rápido que la intensidad física debido a la naturaleza del estímulo.",
+      "explanation": "En la expansión, duplicar el estímulo físico aumenta más del doble la magnitud de la sensación percibida."
+    },
+    {
+      "q": "El umbral absoluto determinado por el método de ajuste se obtiene a través de:",
+      "options": [
+        "Un solo ensayo de intensidad",
+        "La suma de intensidades máximas",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se requiere el promedio de varios ajustes realizados por el propio sujeto experimental.",
+      "explanation": "El umbral de ajuste es el promedio de las posiciones donde el sujeto indica que empieza o deja de percibir."
+    },
+    {
+      "q": "Un observador con un criterio extremadamente conservador o estricto suele mostrar:",
+      "options": [
+        "Muchos aciertos y muchas FA",
+        "Pocas omisiones y muchos aciertos",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Su perfil se define por evitar el error de decir 'sí' cuando no hay nada, perdiendo señales reales.",
+      "explanation": "Un observador estricto tiene pocos aciertos y pocas falsas alarmas (muchas omisiones y rechazos correctos)."
+    },
+    {
+      "q": "Respecto al método de estímulos constantes, es falso que:",
+      "options": [
+        "Sea el método de mayor rapidez",
+        "Use orden creciente de intensidad",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Recuerda que este método es el más lento de todos y utiliza un orden aleatorio de presentación.",
+      "explanation": "Ambas opciones A y B son falsas, por lo que ninguna afirmación de contenido positivo es correcta."
+    },
+    {
+      "q": "La diferencia apenas perceptible (DAP) es un término que se refiere al:",
+      "options": [
+        "Umbral absoluto de la energía",
+        "Punto de ajuste del observador",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es el nombre alternativo que recibe el umbral diferencial propuesto por Ernst Weber.",
+      "explanation": "La DAP es sinónimo de Umbral Diferencial, que mide la discriminación entre dos estímulos similares."
+    },
+    {
+      "q": "En la gráfica de Stevens, una curva que se gira hacia abajo (con r < 1.0) representa:",
+      "options": [
+        "Una expansión de la respuesta",
+        "Una relación lineal perfecta",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Este tipo de curvatura es característica de la percepción de brillo o intensidad sonora moderada.",
+      "explanation": "Esa forma gráfica representa la compresión de respuesta, donde la sensación crece más lento que el estímulo."
+    },
+    {
+      "q": "La actividad espontánea de las células sensoriales en ausencia de estímulos externos se llama:",
+      "options": [
+        "Señal de fondo constante",
+        "Umbral de activación basal",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es el componente biológico del 'ruido' que la TDS intenta separar de la señal experimental.",
+      "explanation": "Se denomina 'ruido sensorial' o actividad espontánea, un fondo de interferencia constante del sistema."
+    },
+    {
+      "q": "El método de los límites es preferible al de ajuste cuando el experimentador busca:",
+      "options": [
+        "Rapidez sobre la precisión",
+        "Control total del observador",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "En los límites el experimentador tiene el control de las series y los pasos discretos de intensidad.",
+      "explanation": "El método de límites es más lento que el de ajuste y el control recae en el experimentador, no en el sujeto."
+    },
+    {
+      "q": "En un experimento de TDS, si un sujeto dice 'no' y realmente no había señal, ha cometido:",
+      "options": [
+        "Una omisión de la respuesta",
+        "Una falsa alarma del sistema",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Esta respuesta es un éxito estadístico, no un error de procesamiento del observador.",
+      "explanation": "Decir 'no' ante la ausencia de señal es un 'rechazo correcto', una de las dos formas de acertar."
+    },
+    {
+      "q": "La estrategia de reconocimiento se diferencia de la de descripción porque requiere:",
+      "options": [
+        "Solo notar presencia física",
+        "Evitar nombrar el estímulo",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "El reconocimiento implica categorizar el objeto y asignarle una etiqueta semántica o nombre.",
+      "explanation": "El reconocimiento exige nombrar el estímulo e identificar sus rasgos definitorios dentro de una categoría."
+    },
+    {
+      "q": "La psicofísica de Fechner se centraba en estímulos discretos, mientras que Stevens introdujo:",
+      "options": [
+        "Métodos cualitativos puros",
+        "Detección de señales débiles",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Stevens es famoso por sus métodos de escalamiento y estimación de magnitudes supraumbral.",
+      "explanation": "Stevens introdujo el escalamiento para medir la magnitud percibida de estímulos claramente detectables."
+    },
+    {
+      "q": "Si en una curva COR (ROC) los puntos se sitúan sobre la diagonal principal, significa que:",
+      "options": [
+        "La sensibilidad es muy alta",
+        "El sujeto es un experto total",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "La diagonal representa el azar, donde los aciertos son iguales a las falsas alarmas.",
+      "explanation": "Estar en la diagonal indica sensibilidad nula (d'=0), el sujeto responde al azar sin detectar la señal."
+    },
+    {
+      "q": "El fenómeno de la zona de incertidumbre en los métodos psicofísicos se debe a:",
+      "options": [
+        "Detectores biológicos perfectos",
+        "Ausencia de ruido sensorial",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "La variabilidad de los sistemas vivos impide que haya un corte seco entre percibir y no percibir.",
+      "explanation": "Se debe a la variabilidad intrínseca del sistema nervioso y a la presencia de ruido de fondo constante."
+    },
+    {
+      "q": "En el ejemplo del teatro, buscar a un hombre con sombrero específicamente es una tarea de:",
+      "options": [
+        "Detección de umbral absoluto",
+        "Estimación de magnitud brillo",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Requiere escanear el escenario usando recursos de atención sostenida para un objetivo concreto.",
+      "explanation": "Es una tarea de 'búsqueda', que implica procesos cognitivos de atención y velocidad de procesamiento."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "Analiza la transición histórica que supuso la obra de Gustav Fechner para la psicología de la percepción y explica el concepto original de psicofísica.",
+      "model": "Gustav Fechner, en su obra 'Elementos de psicofísica' (1860), marcó un hito al introducir métodos cuantitativos para medir la relación entre el estímulo físico (física) y la percepción (psique). Este enfoque permitió el estudio científico y numérico de la actividad mental, algo que en el siglo XIX se consideraba imposible. La psicofísica se define como el estudio de las relaciones entre la energía del estímulo y la experiencia sensorial del observador.",
+      "keywords": [
+        "Fechner",
+        "psicofísica",
+        "cuantitativo",
+        "estimulo-percepción"
+      ],
+      "page": 14
+    },
+    {
+      "q": "Distingue entre las estrategias de 'Descripción' y 'Reconocimiento' en la investigación psicofísica, aportando ejemplos de cada una.",
+      "model": "La descripción se vincula al método fenomenológico y consiste en que el participante relate las características del estímulo tal como se presentan a su conciencia (ej. 'el escenario es alto'). El reconocimiento implica categorizar el estímulo, nombrarlo e identificar sus propiedades específicas (ej. identificar y nombrar 'la alfombra roja' entre otros objetos). La descripción asegura lo percibido al margen de expectativas, mientras que el reconocimiento mide la capacidad de categorización.",
+      "keywords": [
+        "fenomenológico",
+        "categorización",
+        "descripción",
+        "reconocimiento"
+      ],
+      "page": 14
+    },
+    {
+      "q": "Explica la relevancia del método fenomenológico como primer paso en el estudio de la percepción.",
+      "model": "El método fenomenológico estudia los fenómenos tal como aparecen en la conciencia del sujeto. Es un paso crítico inicial porque permite validar qué es lo que una persona está percibiendo realmente, independientemente de las hipótesis o expectativas externas. Define cualidades perceptuales básicas como colores, distancias o sabores antes de proceder a mediciones más complejas.",
+      "keywords": [
+        "conciencia",
+        "cualidades perceptuales",
+        "expectativas",
+        "validación"
+      ],
+      "page": 14
+    },
+    {
+      "q": "Relaciona la estrategia de 'Búsqueda' con los recursos cognitivos y la atención sostenida.",
+      "model": "La búsqueda implica la activación intencional de recursos cognitivos para localizar un estímulo específico entre distractores. En experimentos de percepción, esta estrategia prima la velocidad de respuesta. Está intrínsecamente ligada a la atención sostenida, ya que el sujeto debe mantener el foco y el esfuerzo cognitivo durante el tiempo necesario para completar la tarea de localización.",
+      "keywords": [
+        "atención sostenida",
+        "velocidad de respuesta",
+        "recursos cognitivos",
+        "distractores"
+      ],
+      "page": 15
+    },
+    {
+      "q": "Define el concepto de 'Umbral Absoluto' y justifica por qué se considera una medida de sensibilidad.",
+      "model": "El umbral absoluto es la cantidad mínima de energía de un estímulo (como luz o sonido) necesaria para que sea detectado por un observador. Se considera una medida de sensibilidad porque cuanto menor sea la intensidad requerida para la detección, mayor es la sensibilidad del sistema sensorial del individuo para esa modalidad específica.",
+      "keywords": [
+        "energía mínima",
+        "detección",
+        "sensibilidad",
+        "intensidad"
+      ],
+      "page": 15
+    },
+    {
+      "q": "Describe el procedimiento del 'Método de los Límites' para determinar el umbral absoluto.",
+      "model": "El experimentador presenta estímulos discretos en series ascendentes (intensidad creciente) o descendentes (intensidad decreciente). El observador responde si percibe o no el estímulo. El punto donde la respuesta cambia (de 'sí' a 'no' o viceversa) se denomina punto de cruce. El umbral absoluto final se obtiene calculando el promedio de todos los puntos de cruce obtenidos en múltiples series.",
+      "keywords": [
+        "series ascendentes",
+        "series descendentes",
+        "punto de cruce",
+        "promedio"
+      ],
+      "page": 16
+    },
+    {
+      "q": "Compara el 'Método de Ajuste' con el 'Método de los Límites' en términos de procedimiento y eficiencia.",
+      "model": "A diferencia del método de los límites, donde los estímulos son discretos y el experimentador los controla, en el método de ajuste el observador manipula continuamente la intensidad del estímulo (ej. girando un mando) hasta que apenas lo detecta o deja de percibirlo. El ajuste es el método más rápido para determinar el umbral, mientras que los límites requieren más ensayos individuales y control externo.",
+      "keywords": [
+        "ajuste continuo",
+        "manipulación del observador",
+        "rapidez",
+        "control"
+      ],
+      "page": 17
+    },
+    {
+      "q": "Analiza por qué el 'Método de los Estímulos Constantes' se considera el más preciso entre los métodos clásicos.",
+      "model": "Se considera el más exacto porque presenta una cantidad fija de estímulos (5-9 intensidades) en orden aleatorio múltiples veces. Al no seguir un orden previsible de intensidad, se minimiza el efecto de las expectativas o hipótesis del observador sobre el siguiente estímulo. El umbral se define estadísticamente como la intensidad detectada en el 50% de los ensayos.",
+      "keywords": [
+        "aleatorización",
+        "expectativas",
+        "precisión",
+        "50% de ensayos"
+      ],
+      "page": 17
+    },
+    {
+      "q": "Argumenta la premisa de que el umbral absoluto es un 'compromiso estadístico' y no un valor físico fijo.",
+      "model": "El umbral no es un punto de cambio abrupto donde la detección pasa de 0% a 100% instantáneamente. Los seres humanos no somos detectores perfectos; existe una 'zona de incertidumbre' donde la probabilidad de detección aumenta gradualmente (curva sigmoide). Por ello, el umbral es una convención estadística que representa el valor donde la detección es probable en la mitad de los casos.",
+      "keywords": [
+        "compromiso estadístico",
+        "zona de incertidumbre",
+        "curva sigmoide",
+        "probabilidad"
+      ],
+      "page": 18
+    },
+    {
+      "q": "Explica el concepto de 'Umbral Diferencial' (UD) y cómo se relaciona con la labor de Ernst Weber.",
+      "model": "El umbral diferencial es la diferencia mínima de intensidad entre dos estímulos que un observador puede detectar. Ernst Weber fue pionero en su medición usando pesos. Descubrió que la capacidad de distinguir cambios depende de la magnitud del estímulo estándar; el UD es la diferencia necesaria para que el sujeto responda 'diferente' por primera vez.",
+      "keywords": [
+        "Weber",
+        "diferencia mínima",
+        "estímulo estándar",
+        "comparación"
+      ],
+      "page": 18
+    },
+    {
+      "q": "Desarrolla el procedimiento del método de 'Estimación de Magnitudes' para el estudio de la percepción supraumbral.",
+      "model": "En este método, se presenta un estímulo 'estándar' con un valor numérico asignado (ej. 10). Luego, se presentan estímulos de intensidades variadas y el sujeto debe asignarles valores proporcionales a su magnitud percibida en comparación con el estándar. Si una luz brilla el doble que la estándar, el sujeto le asignará un 20. Permite cuantificar la relación percepción-estímulo por encima del umbral.",
+      "keywords": [
+        "supraumbral",
+        "estándar",
+        "proporcionalidad",
+        "valor numérico"
+      ],
+      "page": 19
+    },
+    {
+      "q": "Explica el fenómeno de 'Compresión de Respuesta' en la percepción del brillo.",
+      "model": "La compresión de respuesta ocurre cuando el aumento de la intensidad física del estímulo no produce un aumento equivalente en la magnitud percibida. En el brillo, duplicar la intensidad física (de 3 a 6 unidades) genera una valoración percibida que aumenta, pero con menor rapidez que la física (no llega a duplicarse). La curva resultante es cóncava hacia abajo.",
+      "keywords": [
+        "brillo",
+        "intensidad física",
+        "crecimiento lento",
+        "magnitud percibida"
+      ],
+      "page": 19
+    },
+    {
+      "q": "Analiza la 'Expansión de Respuesta' y su vinculación con estímulos de naturaleza aversiva.",
+      "model": "La expansión de respuesta se observa en estímulos como las descargas eléctricas. Aquí, pequeños incrementos en la intensidad física provocan aumentos exponenciales en la magnitud percibida (dolor). Por ejemplo, duplicar la descarga física puede triplicar o cuadruplicar la sensación dolorosa. Es un mecanismo de protección ante estímulos potencialmente dañinos.",
+      "keywords": [
+        "expansión",
+        "descarga eléctrica",
+        "exponencial",
+        "aversivo"
+      ],
+      "page": 19
+    },
+    {
+      "q": "Contrasta los fenómenos de compresión y expansión de respuesta en función de la rapidez del cambio perceptual.",
+      "model": "En la compresión (ej. brillo), la percepción aumenta más lentamente que la intensidad física. En la expansión (ej. choque eléctrico), la percepción aumenta mucho más rápido que la intensidad física. Ambos demuestran que la mente no refleja la realidad física de forma lineal, sino que la transforma según la naturaleza del sentido y la importancia del estímulo.",
+      "keywords": [
+        "linealidad",
+        "transformación",
+        "rapidez",
+        "naturaleza sensorial"
+      ],
+      "page": 19
+    },
+    {
+      "q": "Justifica la necesidad de la 'Teoría de Detección de Señales' (TDS) frente a las limitaciones de los métodos psicofísicos clásicos.",
+      "model": "Los métodos clásicos no explican por qué los observadores cometen errores de omisión o interferencia, ni cómo influyen los sesgos personales. La TDS surge para dar respuesta a la detección en condiciones de incertidumbre y ruido, aceptando que el sujeto puede responder 'sí' ante estímulos muy débiles debido a la actividad espontánea del sistema sensorial (ruido) y su criterio personal.",
+      "keywords": [
+        "incertidumbre",
+        "ruido sensorial",
+        "limitaciones clásicas",
+        "sesgo"
+      ],
+      "page": 20
+    },
+    {
+      "q": "Explica el papel del 'Ruido' dentro del marco de la Teoría de Detección de Señales.",
+      "model": "En la TDS, el 'ruido' comprende todos los estímulos del entorno que no son la señal objetivo, incluyendo la actividad espontánea de las propias células sensoriales. Dado que es imposible aislar completamente los sentidos, el observador siempre debe intentar distinguir la 'señal' (estímulo débil) sobre un fondo constante de ruido.",
+      "keywords": [
+        "actividad espontánea",
+        "fondo",
+        "distinción",
+        "señal vs ruido"
+      ],
+      "page": 20
+    },
+    {
+      "q": "Define 'Criterio de Respuesta' y explica cómo diferencia a un observador liberal de uno conservador.",
+      "model": "El criterio de respuesta es la tendencia o sesgo del observador a decidir si un estímulo está presente o no. Un observador 'liberal' tiende a decir 'sí' ante el menor indicio (maximizando aciertos pero también falsas alarmas). Un observador 'conservador' solo dice 'sí' cuando tiene absoluta seguridad (minimizando falsas alarmas pero arriesgando más omisiones).",
+      "keywords": [
+        "liberal",
+        "conservador",
+        "sesgo",
+        "toma de decisiones"
+      ],
+      "page": 21
+    },
+    {
+      "q": "Distingue entre 'Sensibilidad' y 'Sesgo' según las aportaciones de la TDS.",
+      "model": "La sensibilidad se refiere a la capacidad real del sistema sensorial para detectar la señal sobre el ruido. El sesgo (o criterio) es la inclinación psicológica a responder de una forma determinada. La TDS es revolucionaria porque permite separar matemáticamente ambos componentes, demostrando que dos personas con la misma sensibilidad física pueden dar resultados distintos debido a sus diferentes criterios.",
+      "keywords": [
+        "separación",
+        "capacidad sensorial",
+        "inclinación psicológica",
+        "TDS"
+      ],
+      "page": 21
+    },
+    {
+      "q": "Describe las cuatro posibles respuestas en un experimento de TDS (Acierto, Omisión, Falsa Alarma, Rechazo Correcto).",
+      "model": "1) Acierto: decir 'sí' cuando la señal está presente. 2) Omisión: decir 'no' cuando la señal está presente. 3) Falsa Alarma: decir 'sí' cuando la señal está ausente (solo hay ruido). 4) Rechazo Correcto: decir 'no' cuando la señal está ausente. Estas categorías permiten un análisis completo del rendimiento y el sesgo del sujeto.",
+      "keywords": [
+        "matriz de confusión",
+        "acierto",
+        "falsa alarma",
+        "rendimiento"
+      ],
+      "page": 21
+    },
+    {
+      "q": "Explica el funcionamiento de un experimento típico de TDS y en qué se diferencia de los métodos clásicos.",
+      "model": "En un experimento de TDS se utiliza una única intensidad de estímulo muy baja (difícil de detectar). En la mitad de los ensayos se presenta la señal y en la otra mitad no (solo ruido), en orden aleatorio. A diferencia de los métodos clásicos, la TDS analiza tanto las respuestas cuando hay señal como cuando no la hay, permitiendo medir las falsas alarmas.",
+      "keywords": [
+        "ensayos sin señal",
+        "intensidad única",
+        "análisis de errores",
+        "ruido"
+      ],
+      "page": 21
+    },
+    {
+      "q": "Analiza las consecuencias de tener un criterio de respuesta muy liberal en términos de la matriz de resultados de la TDS.",
+      "model": "Un criterio liberal implica una baja barrera para responder 'sí'. Esto resulta en una tasa muy alta de Aciertos (el sujeto detecta casi todas las señales presentadas), pero a costa de una tasa también muy alta de Falsas Alarmas (el sujeto confunde frecuentemente el ruido con la señal).",
+      "keywords": [
+        "baja barrera",
+        "tasa de aciertos",
+        "error tipo I",
+        "liberalismo"
+      ],
+      "page": 21
+    },
+    {
+      "q": "Analiza las consecuencias de un criterio conservador en la detección de señales débiles.",
+      "model": "El observador conservador requiere una gran evidencia para confirmar la presencia del estímulo. Esto garantiza una tasa muy baja de Falsas Alarmas (pocos errores de 'falsa detección'), pero provoca una menor tasa de Aciertos y un aumento de las Omisiones (no detectar señales que realmente estaban presentes).",
+      "keywords": [
+        "evidencia",
+        "omisión",
+        "seguridad",
+        "conservadurismo"
+      ],
+      "page": 21
+    },
+    {
+      "q": "Explica la importancia de la Curva de Operación del Receptor (COR/ROC) en la investigación perceptual.",
+      "model": "La curva COR es una representación gráfica que plasma la relación entre la tasa de aciertos y la tasa de falsas alarmas. Es fundamental porque permite visualizar de forma conjunta la sensibilidad del observador y su sesgo de respuesta, permitiendo comparar el rendimiento de diferentes sujetos o condiciones experimentales de manera estandarizada.",
+      "keywords": [
+        "gráfico",
+        "aciertos vs falsas alarmas",
+        "estandarización",
+        "COR"
+      ],
+      "page": 21
+    },
+    {
+      "q": "Sintetiza la relación entre intensidad física y magnitud percibida basándote en las ecuaciones generales mencionadas en el texto.",
+      "model": "Existe una relación matemática (como la ley de Stevens) donde la magnitud percibida es una función de la intensidad física elevada a una potencia. Si la potencia es <1, hay compresión (brillo); si es >1, hay expansión (dolor); si es =1, la relación es lineal. Esto demuestra que cada sentido tiene una 'firma' matemática propia en su respuesta al mundo físico.",
+      "keywords": [
+        " Stevens",
+        "potencia",
+        "función matemática",
+        "firma sensorial"
+      ],
+      "page": 20
+    },
+    {
+      "q": "Explica por qué la investigación en percepción requiere un plan que englobe objetivos, metodología y resultados.",
+      "model": "La percepción es un campo complejo donde los experimentos científicos sirven para establecer teorías sobre el funcionamiento humano. Solo a partir de un enfoque teórico sólido (psicofísico o fisiológico) se pueden establecer hipótesis y premisas válidas que guíen el plan de investigación, asegurando que las conclusiones sean científicamente robustas y replicables.",
+      "keywords": [
+        "hipótesis",
+        "teoría",
+        "método científico",
+        "robustez"
+      ],
+      "page": 13
+    },
+    {
+      "q": "Relaciona el concepto de 'Sensibilidad' con el de 'Umbral Absoluto' mediante un ejemplo práctico del texto.",
+      "model": "La sensibilidad es inversamente proporcional al umbral: a menor umbral, mayor sensibilidad. Por ejemplo, en la audición, si una persona detecta un tono de 95 unidades y otra necesita 105 para escucharlo, la primera tiene un umbral absoluto más bajo y, por tanto, una mayor sensibilidad auditiva para ese tono específico.",
+      "keywords": [
+        "inversamente proporcional",
+        "umbral bajo",
+        "rendimiento",
+        "audición"
+      ],
+      "page": 15
+    },
+    {
+      "q": "Discute las ventajas y desventajas del 'Método de Ajuste' en un entorno de laboratorio.",
+      "model": "La principal ventaja es la eficiencia y rapidez, ya que el observador determina su propio umbral en pocos ensayos. Sin embargo, su principal desventaja es la menor precisión y el mayor riesgo de sesgo subjetivo, ya que el participante controla el estímulo y no hay una aleatorización estricta que prevenga la formación de expectativas.",
+      "keywords": [
+        "subjetividad",
+        "eficiencia",
+        "control del participante",
+        "sesgo"
+      ],
+      "page": 18
+    },
+    {
+      "q": "Explica el concepto de 'Zona de Incertidumbre' en la medición psicofísica clásica.",
+      "model": "Es una franja estrecha de intensidades en la que el observador no siempre está seguro de si ha detectado el estímulo. En esta zona, el porcentaje de detección va aumentando progresivamente (primero lento, luego rápido) en lugar de ser un cambio de 'todo o nada'. Representa la limitación biológica y estadística de los sistemas sensoriales.",
+      "keywords": [
+        "progresivo",
+        "incertidumbre",
+        "todo o nada",
+        "limitación biológica"
+      ],
+      "page": 18
+    },
+    {
+      "q": "Analiza cómo influyen las 'expectativas' del observador en los métodos psicofísicos y qué método las controla mejor.",
+      "model": "Las expectativas pueden contaminar el umbral real si el sujeto predice cuándo aparecerá el estímulo (ej. en series ascendentes previsibles). El método de estímulos constantes es el que mejor controla este factor gracias a la presentación aleatoria de las intensidades, lo que impide que el sujeto establezca una estrategia de respuesta basada en la previsión.",
+      "keywords": [
+        "contaminación",
+        "aleatoriedad",
+        "predicción",
+        "estímulos constantes"
+      ],
+      "page": 18
+    },
+    {
+      "q": "Reflexiona sobre la utilidad de la 'Descripción Fenomenológica' para distinguir percepciones individuales ante un mismo estímulo.",
+      "model": "Ante un estímulo físico idéntico (ej. un escenario), las personas pueden tener experiencias perceptuales distintas debido a diferencias individuales en el procesamiento. La descripción fenomenológica permite capturar esa singularidad, proporcionando una base cualitativa que explica por qué no siempre hay un consenso unificado sobre lo que se está percibiendo.",
+      "keywords": [
+        "individualidad",
+        "procesamiento",
+        "cualitativo",
+        "singularidad"
+      ],
+      "page": 14
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Introducción",
+      "q": "¿Cuál es el objetivo primordial de la investigación en el campo de la percepción?",
+      "a": "Entender los pasos del proceso que llevan a la percepción, el reconocimiento y la posterior acción del individuo.",
+      "page": 13
+    },
+    {
+      "cat": "Introducción",
+      "q": "¿Qué dos enfoques principales se utilizan para estudiar la percepción humana?",
+      "a": "El enfoque psicofísico y el enfoque fisiológico.",
+      "page": 13
+    },
+    {
+      "cat": "Enfoque Psicofísico",
+      "q": "¿Quién es considerado el fundador de la psicofísica y en qué obra acuñó el término?",
+      "a": "Gustav Fechner, en su libro 'Elementos de psicofísica' publicado en 1860.",
+      "page": 14
+    },
+    {
+      "cat": "Enfoque Psicofísico",
+      "q": "¿Cómo define la psicofísica la relación entre el mundo físico y el mental?",
+      "a": "Como el uso de métodos cuantitativos para medir las relaciones entre los estímulos físicos y la percepción (psique).",
+      "page": 14
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿En qué consiste el método fenomenológico dentro de la estrategia de descripción?",
+      "a": "Es el estudio de los fenómenos tal como se presentan a la conciencia, describiendo lo que percibimos de forma directa.",
+      "page": 14
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿Cuál es la utilidad del método fenomenológico al inicio de un estudio perceptivo?",
+      "a": "Permite asegurar lo que una persona percibe al margen de las expectativas o hipótesis de otros observadores.",
+      "page": 14
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿Qué proceso cognitivo define la capacidad de categorizar y nombrar un estímulo específico?",
+      "a": "El reconocimiento.",
+      "page": 14
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿Qué diferencia técnica hay entre la estrategia de descripción y la de reconocimiento?",
+      "a": "La descripción detalla características (color, forma), mientras que el reconocimiento identifica y nombra el objeto.",
+      "page": 14
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿Qué implica la estrategia de 'detección' en un experimento psicofísico?",
+      "a": "Que el participante se percate de un aspecto apenas detectable o mínimo de un estímulo físico.",
+      "page": 15
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿Cómo se define la estrategia de 'estimación de magnitudes'?",
+      "a": "Como la toma de conciencia del tamaño o intensidad de un estímulo mediante la comparación con otros estímulos.",
+      "page": 15
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿Qué investigador desarrolló la técnica de 'escalamiento' en 1957 para medir magnitudes?",
+      "a": "S. S. Stevens.",
+      "page": 15
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿Qué caracteriza a la estrategia de 'búsqueda' en la investigación perceptiva?",
+      "a": "La activación intencional de recursos cognitivos para encontrar un estímulo concreto entre otros distractores.",
+      "page": 15
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿Con qué otro proceso cognitivo está estrechamente vinculada la estrategia de búsqueda?",
+      "a": "Con la atención sostenida, debido a la importancia de la velocidad de respuesta.",
+      "page": 15
+    },
+    {
+      "cat": "Umbral Absoluto",
+      "q": "¿Qué representa técnicamente el concepto de 'umbral absoluto'?",
+      "a": "La cantidad mínima de energía de un estímulo necesaria para que este sea detectado por un observador.",
+      "page": 15
+    },
+    {
+      "cat": "Umbral Absoluto",
+      "q": "¿Cómo se relaciona la sensibilidad de un observador con el umbral absoluto?",
+      "a": "A menor intensidad mínima requerida para la detección (umbral bajo), mayor es la sensibilidad del observador.",
+      "page": 15
+    },
+    {
+      "cat": "Métodos Psicofísicos Clásicos",
+      "q": "¿Cuáles son los tres métodos propuestos por Fechner para determinar el umbral absoluto?",
+      "a": "Método de los límites, método de ajuste y método de estímulos constantes.",
+      "page": 16
+    },
+    {
+      "cat": "Método de los Límites",
+      "q": "¿Cómo se presentan los estímulos en una 'serie descendente' del método de los límites?",
+      "a": "Se presentan estímulos discretos empezando por una intensidad claramente audible/visible que va disminuyendo paso a paso.",
+      "page": 16
+    },
+    {
+      "cat": "Método de los Límites",
+      "q": "¿Qué es el 'punto de cruce' o límite en este método de investigación?",
+      "a": "Es el punto donde la respuesta del observador cambia (por ejemplo, de decir 'sí' a decir 'no').",
+      "page": 16
+    },
+    {
+      "cat": "Método de los Límites",
+      "q": "¿Cómo se calcula el umbral final tras realizar varias series ascendentes y descendentes?",
+      "a": "Calculando el promedio de todos los puntos de cruce obtenidos en las distintas series.",
+      "page": 17
+    },
+    {
+      "cat": "Método de Ajuste",
+      "q": "¿Cuál es la principal diferencia operativa entre el método de ajuste y el de los límites?",
+      "a": "En el de ajuste, el observador controla continuamente la intensidad del estímulo en lugar de responder a ensayos discretos.",
+      "page": 17
+    },
+    {
+      "cat": "Método de Ajuste",
+      "q": "¿Qué valor se toma como umbral absoluto en el método de ajuste?",
+      "a": "El ajuste promedio realizado por el observador tras repetir el procedimiento varias veces.",
+      "page": 17
+    },
+    {
+      "cat": "Método de Ajuste",
+      "q": "¿Por qué se considera al método de ajuste como el más rápido de los tres clásicos?",
+      "a": "Porque permite al observador alcanzar su propio umbral en muy pocos ensayos manipulando él mismo el estímulo.",
+      "page": 18
+    },
+    {
+      "cat": "Método de Estímulos Constantes",
+      "q": "¿Cómo se organiza la presentación de intensidades en el método de estímulos constantes?",
+      "a": "Se eligen entre 5 y 9 intensidades que se presentan en orden aleatorio múltiples veces cada una.",
+      "page": 17
+    },
+    {
+      "cat": "Método de Estímulos Constantes",
+      "q": "¿Cuál es el criterio estándar para definir el umbral en el método de estímulos constantes?",
+      "a": "La intensidad que es detectada en exactamente el 50% de los ensayos presentados.",
+      "page": 17
+    },
+    {
+      "cat": "Método de Estímulos Constantes",
+      "q": "¿Por qué el método de estímulos constantes minimiza las expectativas del observador?",
+      "a": "Debido a que el orden aleatorio impide que el sujeto prediga si el siguiente estímulo será más o menos intenso.",
+      "page": 18
+    },
+    {
+      "cat": "Métodos Psicofísicos Clásicos",
+      "q": "¿Por qué se dice que el umbral absoluto es una 'convención' o 'compromiso estadístico'?",
+      "a": "Porque los humanos no son detectores perfectos y sus respuestas varían ante intensidades cercanas al límite.",
+      "page": 18
+    },
+    {
+      "cat": "Métodos Psicofísicos Clásicos",
+      "q": "¿Qué es la 'zona de incertidumbre' descrita por Sánchez-Márquez?",
+      "a": "Una franja estrecha de intensidades donde la detección no es constante (0% o 100%), sino que aumenta progresivamente.",
+      "page": 18
+    },
+    {
+      "cat": "Umbral Diferencial",
+      "q": "¿Qué define al umbral diferencial (UD) según Ernst Weber?",
+      "a": "La diferencia más pequeña en intensidad entre dos estímulos que una persona es capaz de detectar.",
+      "page": 18
+    },
+    {
+      "cat": "Umbral Diferencial",
+      "q": "¿Cómo se realiza un experimento para hallar el UD?",
+      "a": "Se presenta un estímulo estándar y uno de comparación, preguntando al sujeto si percibe alguna diferencia entre ellos.",
+      "page": 18
+    },
+    {
+      "cat": "Umbral Diferencial",
+      "q": "Si una persona detecta la diferencia entre 100g y 102g, pero no entre 100g y 101g, ¿cuál es su UD?",
+      "a": "El umbral diferencial es de 2 gramos.",
+      "page": 19
+    },
+    {
+      "cat": "Umbral Diferencial",
+      "q": "¿Qué importancia histórica tuvo la propuesta de Fechner sobre los métodos psicofísicos?",
+      "a": "Supuso un avance científico al permitir el estudio cuantitativo de la actividad mental, antes considerada inmedible.",
+      "page": 19
+    },
+    {
+      "cat": "Percepción Supraumbral",
+      "q": "¿Qué estudia la percepción en condiciones 'supraumbral'?",
+      "a": "Las percepciones que ocurren con intensidades de estímulo que están claramente por encima del umbral absoluto.",
+      "page": 19
+    },
+    {
+      "cat": "Percepción Supraumbral",
+      "q": "¿En qué consiste el procedimiento de 'estimación de magnitudes' de Stevens?",
+      "a": "Se asigna un valor numérico a un estímulo estándar y el sujeto puntúa los siguientes proporcionalmente a su magnitud percibida.",
+      "page": 19
+    },
+    {
+      "cat": "Percepción Supraumbral",
+      "q": "¿Qué fenómeno describe la 'compresión de respuesta'?",
+      "a": "Cuando el aumento de la intensidad física no produce un aumento igual de rápido en la intensidad percibida (ej: el brillo).",
+      "page": 19
+    },
+    {
+      "cat": "Percepción Supraumbral",
+      "q": "Si duplicamos la intensidad de la luz y el brillo percibido aumenta menos del doble, ¿qué efecto ocurre?",
+      "a": "Se produce el fenómeno de compresión de respuesta.",
+      "page": 19
+    },
+    {
+      "cat": "Percepción Supraumbral",
+      "q": "¿Qué es la 'expansión de respuesta' y con qué tipo de estímulos suele ocurrir?",
+      "a": "Es cuando pequeños aumentos físicos disparan grandes aumentos en la sensación; ocurre con estímulos aversivos como descargas eléctricas.",
+      "page": 19
+    },
+    {
+      "cat": "Percepción Supraumbral",
+      "q": "¿Qué indica una curva que se gira hacia arriba (exponencial) en la gráfica de respuestas?",
+      "a": "Indica una expansión de respuesta, donde la percepción aumenta más rápido que la intensidad física.",
+      "page": 19
+    },
+    {
+      "cat": "Percepción Supraumbral",
+      "q": "¿Cuál es la conclusión principal de los experimentos de estimación de magnitudes sobre la percepción?",
+      "a": "Que la percepción no siempre se correlaciona linealmente con la magnitud real, sino con la sensación interna del sujeto.",
+      "page": 20
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Por qué surge la Teoría de Detección de Señales (TDS) como alternativa a los métodos clásicos?",
+      "a": "Para explicar situaciones donde los observadores reportan estímulos que no han superado el umbral físico o hay interferencias.",
+      "page": 20
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Cómo define la TDS el concepto de 'ruido'?",
+      "a": "Como todos los estímulos del entorno (e incluso la actividad celular espontánea) que no son la señal que se desea detectar.",
+      "page": 20
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Qué es la 'señal' en el contexto de un experimento de TDS?",
+      "a": "Es el estímulo específico (generalmente débil) que el experimentador presenta para ser detectado.",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Qué factores individuales influyen en la respuesta según la TDS, además de la sensibilidad?",
+      "a": "El criterio de respuesta o sesgo del observador.",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Qué diferencia a un observador 'liberal' de uno 'conservador'?",
+      "a": "El liberal dice 'sí' ante el menor indicio; el conservador solo dice 'sí' cuando tiene absoluta seguridad.",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Cuáles son las dos diferencias metodológicas clave entre un experimento de TDS y uno clásico?",
+      "a": "1) Solo se usa una intensidad de estímulo. 2) Se incluyen ensayos donde no se presenta ningún estímulo.",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Qué es un 'acierto' en la terminología de la TDS?",
+      "a": "Responder 'sí' cuando la señal está presente.",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Cómo se define una 'omisión' en TDS?",
+      "a": "Responder 'no' cuando el estímulo o señal sí se ha presentado.",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Qué es una 'falsa alarma'?",
+      "a": "Responder 'sí' cuando no se ha presentado ningún estímulo (solo había ruido).",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Qué es un 'rechazo correcto'?",
+      "a": "Responder 'no' cuando, efectivamente, no se ha presentado ninguna señal.",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "Si un sujeto tiene 90% de aciertos pero 40% de falsas alarmas, ¿qué tipo de criterio tiene?",
+      "a": "Tiene un criterio liberal o sesgado hacia la detección fácil.",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Cuál es la aportación más relevante de la TDS a la investigación perceptiva?",
+      "a": "Permite distinguir matemáticamente entre la sensibilidad del sujeto y su sesgo (criterio de respuesta).",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Qué representa la curva de operación del receptor (COR)?",
+      "a": "Es la representación gráfica de las características de la respuesta (sensibilidad y sesgo) del observador.",
+      "page": 21
+    },
+    {
+      "cat": "Enfoque Psicofísico",
+      "q": "¿Por qué es necesario un enfoque teórico previo a cualquier experimento científico de percepción?",
+      "a": "Para establecer hipótesis, premisas y un plan de investigación con objetivos y metodología claros.",
+      "page": 13
+    },
+    {
+      "cat": "Enfoque Psicofísico",
+      "q": "¿Qué autor actualizó el concepto de psicofísica para incluir métodos no cuantitativos?",
+      "a": "Leek (2001).",
+      "page": 14
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "En el ejemplo del teatro, ¿qué respondería un sujeto bajo la estrategia de descripción?",
+      "a": "Detalles físicos como 'el escenario es alto y tiene una alfombra roja en el centro'.",
+      "page": 14
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "En el ejemplo del teatro, ¿cuál sería una tarea de reconocimiento?",
+      "a": "Identificar y nombrar específicamente 'la alfombra roja' entre los elementos del escenario.",
+      "page": 14
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "En el ejemplo del teatro, ¿qué implicaría la detección?",
+      "a": "Notar un detalle minúsculo, como una mancha pequeña en la alfombra.",
+      "page": 15
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿Qué ejemplo de magnitud se da comparando la alfombra con el escenario?",
+      "a": "Juzgar que la alfombra es 'pequeña' en relación con el tamaño total del escenario.",
+      "page": 15
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿Cómo se aplicaría la búsqueda en el ejemplo del teatro?",
+      "a": "Tratando de localizar visualmente a una persona específica (el hombre con sombrero) en el palco.",
+      "page": 15
+    },
+    {
+      "cat": "Umbral Absoluto",
+      "q": "En detección de luz, ¿qué sería el umbral absoluto?",
+      "a": "La cantidad mínima de luz que permite detectar apenas un destello.",
+      "page": 15
+    },
+    {
+      "cat": "Método de los Límites",
+      "q": "¿Por qué se llama 'discreto' a los estímulos en el método de los límites?",
+      "a": "Porque se presentan de uno en uno, no de forma continua.",
+      "page": 16
+    },
+    {
+      "cat": "Método de los Límites",
+      "q": "¿Cómo se inicia una serie ascendente en el método de los límites?",
+      "a": "Con una intensidad por debajo del umbral del observador, donde este responde 'no'.",
+      "page": 16
+    },
+    {
+      "cat": "Método de los Límites",
+      "q": "¿Cuál es la unidad de medida usada en el ejemplo del tono de la Figura 4?",
+      "a": "Unidades arbitrarias.",
+      "page": 16
+    },
+    {
+      "cat": "Método de Ajuste",
+      "q": "¿Qué herramienta física podría usar un observador en el método de ajuste?",
+      "a": "Un mando o dial para girar y variar la intensidad del sonido o luz.",
+      "page": 17
+    },
+    {
+      "cat": "Método de Ajuste",
+      "q": "¿Qué se busca obtener al repetir varias veces el método de ajuste?",
+      "a": "La intensidad 'apenas audible' o visible basada en el promedio de los ajustes.",
+      "page": 17
+    },
+    {
+      "cat": "Método de Estímulos Constantes",
+      "q": "¿Qué porcentaje de detección define el umbral en la gráfica de la Figura 5?",
+      "a": "El punto donde la curva alcanza el 50% en el eje vertical.",
+      "page": 17
+    },
+    {
+      "cat": "Método de Estímulos Constantes",
+      "q": "¿Cuántas veces se suele presentar cada intensidad en este método?",
+      "a": "Muchas veces (en el ejemplo, 10 veces cada una) para obtener una probabilidad estadística estable.",
+      "page": 17
+    },
+    {
+      "cat": "Métodos Psicofísicos Clásicos",
+      "q": "¿Qué inconveniente principal tiene el método de estímulos constantes?",
+      "a": "Requiere mucho tiempo por sesión experimental debido al alto número de ensayos.",
+      "page": 18
+    },
+    {
+      "cat": "Umbral Diferencial",
+      "q": "¿Cómo se llama también al umbral diferencial en algunos textos técnicos?",
+      "a": "Diferencia Apenas Perceptible (DAP) o Just Noticeable Difference (JND).",
+      "page": 18
+    },
+    {
+      "cat": "Umbral Diferencial",
+      "q": "En el experimento de pesos (Figura 6), ¿qué sentidos puede usar el observador?",
+      "a": "Únicamente el sentido del tacto/cinestésico (no puede ver los pesos).",
+      "page": 18
+    },
+    {
+      "cat": "Umbral Diferencial",
+      "q": "¿Qué se hace con el peso de comparación en cada ensayo del UD?",
+      "a": "Se aumenta o disminuye ligeramente hasta que el sujeto percibe que es distinto al estándar.",
+      "page": 18
+    },
+    {
+      "cat": "Umbral Diferencial",
+      "q": "¿Por qué se varía el lado donde se pone el peso de comparación?",
+      "a": "Para evitar sesgos espaciales o de lateralidad en la respuesta del sujeto.",
+      "page": 18
+    },
+    {
+      "cat": "Percepción Supraumbral",
+      "q": "Si asignamos 10 puntos a una luz y otra nos parece el doble de brillante, ¿qué valor le damos?",
+      "a": "Le otorgamos un valor de 20 unidades.",
+      "page": 19
+    },
+    {
+      "cat": "Percepción Supraumbral",
+      "q": "¿A qué se refiere el término 'brillo' en psicofísica?",
+      "a": "A la magnitud percibida de la intensidad de la luz.",
+      "page": 19
+    },
+    {
+      "cat": "Percepción Supraumbral",
+      "q": "¿Qué sucede con la intensidad percibida cuando la intensidad física de la luz es 6 en el ejemplo?",
+      "a": "La respuesta es menor de 30 (menos de lo esperado linealmente), indicando compresión.",
+      "page": 19
+    },
+    {
+      "cat": "Percepción Supraumbral",
+      "q": "¿Qué forma geométrica tiene la curva de expansión de respuesta?",
+      "a": "Forma exponencial, girándose hacia arriba.",
+      "page": 19
+    },
+    {
+      "cat": "Percepción Supraumbral",
+      "q": "¿Qué ocurre al duplicar la intensidad de una descarga eléctrica de 2 a 4?",
+      "a": "La sensación de dolor aumenta drásticamente (de 5 a más de 15), más del doble.",
+      "page": 19
+    },
+    {
+      "cat": "Percepción Supraumbral",
+      "q": "¿Cuál es la utilidad de conocer las funciones matemáticas de cada sentido?",
+      "a": "Describir con precisión cómo reacciona cada sistema sensorial ante el aumento de energía física.",
+      "page": 20
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Por qué es difícil aislar los sentidos de todo estímulo excepto la señal?",
+      "a": "Porque las propias células sensoriales tienen actividad espontánea que genera ruido interno.",
+      "page": 20
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Cómo explica la TDS que alguien diga 'sí' cuando el estímulo es muy débil?",
+      "a": "Se debe a que el sujeto puede estar confundiendo el ruido (interno o externo) con una señal real.",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Qué sucede en el 50% de los ensayos de un experimento de TDS?",
+      "a": "No se presenta ninguna señal (solo hay ruido).",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "En el caso de Manuel, ¿qué porcentaje de aciertos obtuvo?",
+      "a": "Un 90% (90 de 100 ensayos con tono).",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Cuántas falsas alarmas cometió Manuel en el ejemplo?",
+      "a": "40 falsas alarmas (dijo 'sí' en 40 de los 100 ensayos sin tono).",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Qué indica que Virginia tenga solo un 20% de falsas alarmas comparada con Manuel?",
+      "a": "Que Virginia tiene un criterio de respuesta más estricto o conservador.",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Pueden dos personas tener la misma sensibilidad pero resultados distintos en aciertos?",
+      "a": "Sí, si sus criterios de respuesta (liberal vs conservador) son diferentes.",
+      "page": 21
+    },
+    {
+      "cat": "Teoría de Detección de Señales",
+      "q": "¿Qué limitación de los métodos clásicos resuelve la TDS?",
+      "a": "La incapacidad de explicar por qué los sujetos dicen ver algo que no está presente (falsas alarmas).",
+      "page": 21
+    },
+    {
+      "cat": "Resumen General",
+      "q": "¿Cuál es la relación entre física y psique en el método psicofísico?",
+      "a": "La física aporta el estímulo controlado y la psique aporta la percepción o respuesta subjetiva.",
+      "page": 14
+    },
+    {
+      "cat": "Resumen General",
+      "q": "¿Qué papel juega la conciencia en el método fenomenológico?",
+      "a": "Es el lugar donde se presentan los fenómenos que el observador debe describir directamente.",
+      "page": 14
+    },
+    {
+      "cat": "Resumen General",
+      "q": "¿Cuál es la principal diferencia entre umbral absoluto y umbral diferencial?",
+      "a": "El absoluto detecta presencia vs ausencia; el diferencial detecta cambio o diferencia entre dos estímulos.",
+      "page": 18
+    },
+    {
+      "cat": "Resumen General",
+      "q": "¿Qué método elegirías si buscas máxima exactitud sin importar el tiempo?",
+      "a": "El método de estímulos constantes.",
+      "page": 18
+    },
+    {
+      "cat": "Resumen General",
+      "q": "¿Qué método elegirías para una prueba clínica rápida de audición?",
+      "a": "El método de ajuste.",
+      "page": 18
+    },
+    {
+      "cat": "Resumen General",
+      "q": "¿En qué se basa el juicio del observador en un experimento de UD de pesos?",
+      "a": "Únicamente en la sensación de peso al sostener los objetos, juzgando si son 'iguales' o 'distintos'.",
+      "page": 18
+    },
+    {
+      "cat": "Resumen General",
+      "q": "¿Qué significa que una respuesta de detección sea un 'compromiso estadístico'?",
+      "a": "Que el valor del umbral se elige en base a una probabilidad (normalmente 50%) y no a una medida exacta infalible.",
+      "page": 18
+    },
+    {
+      "cat": "Resumen General",
+      "q": "¿Cuál es el estímulo 'estándar' en una prueba de Stevens?",
+      "a": "Es un estímulo de intensidad moderada que sirve como referencia fija para comparar los demás.",
+      "page": 19
+    },
+    {
+      "cat": "Resumen General",
+      "q": "¿Cómo se define matemáticamente la compresión de respuesta?",
+      "a": "Como un aumento sublineal de la magnitud percibida respecto a la intensidad física.",
+      "page": 19
+    },
+    {
+      "cat": "Resumen General",
+      "q": "¿Por qué el dolor tiene una expansión de respuesta?",
+      "a": "Como mecanismo de supervivencia, para que el organismo reaccione intensamente ante aumentos peligrosos de un estímulo aversivo.",
+      "page": 19
+    },
+    {
+      "cat": "Resumen General",
+      "q": "¿Qué es el 'sesgo' en la TDS?",
+      "a": "La tendencia psicológica del sujeto a responder de una forma determinada (decir mucho 'sí' o mucho 'no').",
+      "page": 21
+    },
+    {
+      "cat": "Resumen General",
+      "q": "¿Qué sucede con los aciertos si el observador se vuelve más conservador?",
+      "a": "La tasa de aciertos disminuye, pero también disminuye la tasa de falsas alarmas.",
+      "page": 21
+    },
+    {
+      "cat": "Resumen General",
+      "q": "¿Qué se necesita para crear una curva COR?",
+      "a": "Varios pares de datos de (Aciertos, Falsas Alarmas) obtenidos bajo diferentes criterios o condiciones.",
+      "page": 21
+    },
+    {
+      "cat": "Resumen General",
+      "q": "¿Siguen siendo válidos los métodos de Fechner hoy en día?",
+      "a": "Sí, se siguen utilizando en la mayoría de laboratorios con muy pocas modificaciones desde el siglo XIX.",
+      "page": 19
+    }
+  ]
+}

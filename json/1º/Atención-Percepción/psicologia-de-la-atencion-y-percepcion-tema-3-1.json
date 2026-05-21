@@ -1,0 +1,2216 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es correcto afirmar que la córnea es la estructura ocular responsable de aproximadamente el 80% del poder de resolución del ojo humano?",
+      "options": [
+        "Es una afirmación verdadera según la descripción fisiológica del sistema visual.",
+        "Es una afirmación falsa pues esa capacidad corresponde exclusivamente al cristalino.",
+        "No se puede determinar la veracidad con los datos anatómicos proporcionados."
+      ],
+      "correct": 0,
+      "hint": "Revisa el porcentaje de capacidad de enfoque atribuido a la cubierta transparente frontal.",
+      "explanation": "La córnea se encarga del 80% del poder de resolución, aunque no puede ajustar su enfoque, mientras que el cristalino aporta el 20% restante y es ajustable."
+    },
+    {
+      "q": "¿Es cierto que las células ganglionares conforman la capa más interna de la retina, situándose tras los fotorreceptores?",
+      "options": [
+        "Es una afirmación verdadera en cuanto a la jerarquía de capas de procesamiento.",
+        "Es una afirmación falsa dado que constituyen la capa más externa de la retina.",
+        "No se puede determinar la veracidad debido a la ambigüedad de la organización."
+      ],
+      "correct": 1,
+      "hint": "Identifica la ubicación de las células que envían las señales al nervio óptico.",
+      "explanation": "Según el texto, la capa de células ganglionares es la capa más externa de la retina, encargada de enviar las señales al cerebro."
+    },
+    {
+      "q": "¿La transducción visual se define como el proceso de transformar la energía lumínica del estímulo en un impulso nervioso?",
+      "options": [
+        "Es una afirmación verdadera que describe el hito fundamental de la percepción.",
+        "Es una afirmación falsa porque la transducción ocurre solo en la corteza estriada.",
+        "No se puede determinar la veracidad basándose solo en los procesos químicos."
+      ],
+      "correct": 0,
+      "hint": "Busca la definición de la transformación energética en los fotorreceptores.",
+      "explanation": "La transducción visual es precisamente la transformación de la energía lumínica en impulsos eléctricos en la retina."
+    },
+    {
+      "q": "¿Es correcto indicar que los bastones son los fotorreceptores responsables de la percepción del color y la visión diurna?",
+      "options": [
+        "Es una afirmación verdadera dado que poseen pigmentos sensibles al espectro visible.",
+        "Es una afirmación falsa pues esa función recae específicamente en los conos.",
+        "No se puede determinar la veracidad sin especificar las condiciones de iluminación."
+      ],
+      "correct": 1,
+      "hint": "Diferencia las funciones especializadas de los dos tipos de fotorreceptores.",
+      "explanation": "Los conos son responsables del color y la visión diurna, mientras que los bastones lo son de la visión en penumbra."
+    },
+    {
+      "q": "¿El quiasma óptico permite que las señales del campo visual izquierdo sean procesadas por el hemisferio cerebral derecho?",
+      "options": [
+        "Es una afirmación verdadera debido al cruce de las fibras de la mitad nasal.",
+        "Es una afirmación falsa ya que el procesamiento visual es ipsilateral en su totalidad.",
+        "No se puede determinar la veracidad sin conocer la estructura del tracto óptico."
+      ],
+      "correct": 0,
+      "hint": "Analiza qué sucede con las fibras nerviosas provenientes de la mitad nasal de cada ojo.",
+      "explanation": "En el quiasma, las fibras nasales cruzan al lado opuesto, permitiendo el procesamiento contralateral de los campos visuales."
+    },
+    {
+      "q": "¿La fóvea es una región de la retina que contiene una mezcla equitativa de conos y bastones para optimizar la agudeza?",
+      "options": [
+        "Es una afirmación verdadera pues la convergencia requiere de ambos receptores.",
+        "Es una afirmación falsa ya que la fóvea es una zona que solo contiene conos.",
+        "No se puede determinar la veracidad dado que el punto ciego altera la mezcla."
+      ],
+      "correct": 1,
+      "hint": "Recuerda la distribución de fotorreceptores en el centro de la retina.",
+      "explanation": "La fóvea es la pequeña zona central que solo contiene conos, lo que permite la máxima agudeza visual."
+    },
+    {
+      "q": "¿Es cierto que el punto ciego es una zona de la retina donde la concentración de bastones es máxima?",
+      "options": [
+        "Es una afirmación verdadera debido a su ubicación en la retina periférica.",
+        "Es una afirmación falsa porque es un área totalmente libre de fotorreceptores.",
+        "No se puede determinar la veracidad sin considerar el papel del nervio óptico."
+      ],
+      "correct": 1,
+      "hint": "Identifica por qué se denomina 'ciego' a ese punto específico de la retina.",
+      "explanation": "El punto ciego es el área donde el nervio óptico abandona el ojo y carece de cualquier tipo de receptor visual."
+    },
+    {
+      "q": "¿La isomerización del pigmento fotosensible implica un cambio de forma de la molécula tras la interacción con un fotón?",
+      "options": [
+        "Es una afirmación verdadera que describe el inicio de la respuesta eléctrica.",
+        "Es una afirmación falsa porque la isomerización es un proceso puramente mecánico.",
+        "No se puede determinar la veracidad sin analizar la permeabilidad de la membrana."
+      ],
+      "correct": 0,
+      "hint": "Busca el efecto estructural de la luz sobre el pigmento visual.",
+      "explanation": "La isomerización es el cambio de forma del pigmento que altera la permeabilidad de la membrana del fotorreceptor."
+    },
+    {
+      "q": "¿Es correcto afirmar que la visión por bastones presenta una menor sensibilidad a la luz que la visión por conos?",
+      "options": [
+        "Es una afirmación verdadera debido a la mayor rapidez de regeneración de pigmentos.",
+        "Es una afirmación falsa ya que los bastones son mucho más sensibles que los conos.",
+        "No se puede determinar la veracidad sin medir el umbral de detección absoluto."
+      ],
+      "correct": 1,
+      "hint": "Compara los umbrales de activación de ambos sistemas en la oscuridad.",
+      "explanation": "La visión por bastones es más sensible (requiere menos intensidad de luz) debido a su alta convergencia neuronal."
+    },
+    {
+      "q": "¿El fenómeno de inhibición lateral es el mecanismo base para la percepción de contornos y bordes visuales?",
+      "options": [
+        "Es una afirmación verdadera según el estudio de las relaciones neuronales.",
+        "Es una afirmación falsa pues los bordes se procesan exclusivamente en el área V5.",
+        "No se puede determinar la veracidad sin evaluar el efecto de la parrilla de Hermann."
+      ],
+      "correct": 0,
+      "hint": "Identifica el proceso neuronal que facilita la detección de transiciones luz-sombra.",
+      "explanation": "La inhibición lateral permite resaltar los contrastes, siendo fundamental para percibir bordes y contornos."
+    },
+    {
+      "q": "¿Es cierto que los seres humanos poseemos aproximadamente 120 millones de conos en toda la extensión de la retina?",
+      "options": [
+        "Es una afirmación verdadera que justifica la importancia de la visión del color.",
+        "Es una afirmación falsa porque ese número corresponde al total de bastones.",
+        "No se puede determinar la veracidad sin diferenciar la retina periférica de la fóvea."
+      ],
+      "correct": 1,
+      "hint": "Verifica las cifras de población de fotorreceptores mencionadas en el texto.",
+      "explanation": "En la retina hay unos 120 millones de bastones y solo unos 6 millones de conos."
+    },
+    {
+      "q": "¿El área visual V4 está especializada principalmente en el procesamiento de la información relativa al color?",
+      "options": [
+        "Es una afirmación verdadera dentro de la especialización de la corteza visual.",
+        "Es una afirmación falsa pues V4 se encarga únicamente de la detección de bordes.",
+        "No se puede determinar la veracidad sin considerar la integración del área V3."
+      ],
+      "correct": 0,
+      "hint": "Localiza el área cortical secundaria asociada a la percepción cromática.",
+      "explanation": "El texto especifica que tras V1, la información se distribuye a áreas como V4, que es el área del color."
+    },
+    {
+      "q": "¿Es correcto que la adaptación a la oscuridad de los conos es un proceso más lento que el de los bastones?",
+      "options": [
+        "Es una afirmación verdadera dada la complejidad de sus pigmentos visuales.",
+        "Es una afirmación falsa porque el pigmento de los conos se regenera más rápido.",
+        "No se puede determinar la veracidad sin observar la curva escotópica completa."
+      ],
+      "correct": 1,
+      "hint": "Analiza las tasas de regeneración de la retinal y la opsina en cada receptor.",
+      "explanation": "La adaptación de los conos es más rápida (3-5 min) que la de los bastones (unos 30 min) por su regeneración acelerada."
+    },
+    {
+      "q": "¿Las células horizontales actúan como interneuronas moduladoras entre los fotorreceptores y las células bipolares?",
+      "options": [
+        "Es una afirmación verdadera que describe su función en el procesamiento inicial.",
+        "Es una afirmación falsa pues su conexión es directa con las células ganglionares.",
+        "No se puede determinar la veracidad sin estudiar las conexiones sinápticas internas."
+      ],
+      "correct": 0,
+      "hint": "Ubica la posición y función de las células horizontales en las capas de la retina.",
+      "explanation": "Las células horizontales modulan las señales en la región entre conos y células bipolares."
+    },
+    {
+      "q": "¿El núcleo geniculado lateral del tálamo es la estructura que recibe las señales visuales antes de la corteza V1?",
+      "options": [
+        "Es una afirmación verdadera que identifica la vía visual desde el tracto óptico.",
+        "Es una afirmación falsa ya que el tálamo solo procesa información auditiva.",
+        "No se puede determinar la veracidad sin analizar primero el quiasma óptico."
+      ],
+      "correct": 0,
+      "hint": "Traza el recorrido del impulso nervioso desde el tracto óptico hacia el cerebro.",
+      "explanation": "Las señales pasan por el núcleo geniculado lateral del tálamo antes de llegar a la corteza visual primaria."
+    },
+    {
+      "q": "¿Es cierto que la luz visible comprende longitudes de onda situadas entre los 100 y los 1000 nanómetros?",
+      "options": [
+        "Es una afirmación verdadera que abarca todo el espectro electromagnético útil.",
+        "Es una afirmación falsa porque el rango real va de 380 a 750 nanómetros.",
+        "No se puede determinar la veracidad dado que el ojo humano varía por edad."
+      ],
+      "correct": 1,
+      "hint": "Busca los límites numéricos específicos del espectro perceptible por el ojo.",
+      "explanation": "La luz visible es la porción del espectro que va aproximadamente desde los 380 a los 750 nm."
+    },
+    {
+      "q": "¿La convergencia neuronal es mayor en el sistema de conos de la fóvea que en el sistema de bastones periféricos?",
+      "options": [
+        "Es una afirmación verdadera que explica la alta sensibilidad de la fóvea.",
+        "Es una afirmación falsa ya que los conos foveales tienen 'líneas privadas'.",
+        "No se puede determinar la veracidad sin comparar el número de células bipolares."
+      ],
+      "correct": 1,
+      "hint": "Compara cuántos receptores envían información a una sola célula ganglionar en cada zona.",
+      "explanation": "Los conos de la fóvea tienen mínima convergencia ('líneas privadas'), mientras que los bastones tienen una alta convergencia."
+    },
+    {
+      "q": "¿El punto de ruptura conos-bastones ocurre generalmente entre los 7 y 10 minutos de adaptación a la oscuridad?",
+      "options": [
+        "Es una afirmación verdadera que marca el cambio de control de la visión.",
+        "Es una afirmación falsa porque ese punto ocurre a los 30 minutos exactos.",
+        "No se puede determinar la veracidad sin conocer la iluminación previa al test."
+      ],
+      "correct": 0,
+      "hint": "Identifica el momento en la curva de adaptación donde los bastones superan a los conos.",
+      "explanation": "A los 7-10 minutos, los bastones se vuelven más sensibles que los conos, marcando el punto de ruptura."
+    },
+    {
+      "q": "¿Es correcto afirmar que la regeneración del pigmento visual solo ocurre en condiciones de total oscuridad?",
+      "options": [
+        "Es una afirmación verdadera pues la luz impide la unión de la retinal y la opsina.",
+        "Es una afirmación falsa ya que el proceso ocurre simultáneamente incluso con luz.",
+        "No se puede determinar la veracidad debido al proceso de decoloración constante."
+      ],
+      "correct": 1,
+      "hint": "Analiza si el ojo puede mantener pigmento intacto mientras recibe luz.",
+      "explanation": "La regeneración ocurre incluso en la luz; mientras unas moléculas se decoloran, otras se regeneran."
+    },
+    {
+      "q": "¿La corteza visual primaria (área V1) también es denominada técnicamente como corteza o área estriada?",
+      "options": [
+        "Es una afirmación verdadera basada en la nomenclatura anatómica funcional.",
+        "Es una afirmación falsa pues el área estriada corresponde exclusivamente a V2.",
+        "No se puede determinar la veracidad sin diferenciar el lóbulo occipital del temporal."
+      ],
+      "correct": 0,
+      "hint": "Busca el sinónimo técnico utilizado para la primera área de procesamiento cortical.",
+      "explanation": "V1 está ubicada en el lóbulo occipital y se conoce comúnmente como área estriada."
+    },
+    {
+      "q": "¿Es cierto que las células amacrinas participan en la detección de características como el contraste y el movimiento?",
+      "options": [
+        "Es una afirmación verdadera sobre su función en la modulación de señales.",
+        "Es una afirmación falsa ya que solo transmiten señales hacia el nervio óptico.",
+        "No se puede determinar la veracidad sin estudiar su relación con las bipolares."
+      ],
+      "correct": 0,
+      "hint": "Identifica el papel de las interneuronas situadas entre bipolares y ganglionares.",
+      "explanation": "Las células amacrinas contribuyen a modular señales e intervienen en la detección de contraste y movimiento."
+    },
+    {
+      "q": "¿El potencial receptor (RMP) se genera inmediatamente después de la isomerización del pigmento fotorreceptor?",
+      "options": [
+        "Es una afirmación verdadera que describe la secuencia de la transducción.",
+        "Es una afirmación falsa porque el RMP precede a la captura de fotones.",
+        "No se puede determinar la veracidad sin analizar el papel de las mitocondrias."
+      ],
+      "correct": 0,
+      "hint": "Ordena los pasos cronológicos del proceso de transducción visual.",
+      "explanation": "La isomerización activa eventos bioquímicos que resultan en la generación del potencial receptor."
+    },
+    {
+      "q": "¿Es correcto decir que el cristalino pierde su capacidad de enfoque al proyectar imágenes sobre el punto ciego?",
+      "options": [
+        "Es una afirmación verdadera ya que el enfoque requiere receptores activos.",
+        "Es una afirmación falsa pues el cristalino enfoca con independencia de la retina.",
+        "No se puede determinar la veracidad sin evaluar la acomodación foveal."
+      ],
+      "correct": 1,
+      "hint": "Distingue entre la capacidad mecánica de la lente y la sensibilidad de la superficie receptora.",
+      "explanation": "El cristalino ajusta el enfoque mecánicamente; el hecho de que la imagen caiga en el punto ciego es un fallo de recepción, no de enfoque."
+    },
+    {
+      "q": "¿La visión periférica es controlada predominantemente por el sistema de bastones debido a su distribución retiniana?",
+      "options": [
+        "Es una afirmación verdadera que explica la sensibilidad al movimiento lateral.",
+        "Es una afirmación falsa ya que la periferia carece totalmente de bastones.",
+        "No se puede determinar la veracidad sin considerar los 6 millones de conos totales."
+      ],
+      "correct": 0,
+      "hint": "Relaciona la densidad de fotorreceptores fuera de la fóvea con la función visual.",
+      "explanation": "Aunque hay conos en la periferia, los bastones predominan numéricamente y son cruciales para la visión periférica."
+    },
+    {
+      "q": "¿Es cierto que el cerebro rellena el punto ciego utilizando exclusivamente información del ojo contralateral?",
+      "options": [
+        "Es una afirmación verdadera que justifica la visión binocular constante.",
+        "Es una afirmación falsa pues rellena el área con el patrón visual circundante.",
+        "No se puede determinar la veracidad debido a la supresión de la fóvea periférica."
+      ],
+      "correct": 1,
+      "hint": "Busca el mecanismo cerebral de 'relleno' mencionado en el texto para un solo ojo.",
+      "explanation": "El cerebro crea una percepción igual al patrón circundante para completar la imagen que falta en el punto ciego."
+    },
+    {
+      "q": "Seleccione la opción correcta respecto a la organización de las capas celulares en la retina humana:",
+      "options": [
+        "Las células bipolares se sitúan entre las fotorreceptoras y las ganglionares.",
+        "Las células horizontales se localizan entre las bipolares y las ganglionares.",
+        "Las células fotorreceptoras constituyen la capa más externa en contacto con el humor vítreo."
+      ],
+      "correct": 0,
+      "hint": "Analiza el orden jerárquico de transmisión desde la luz hasta el nervio óptico.",
+      "explanation": "La secuencia es fotorreceptores -> células bipolares -> células ganglionares, con interneuronas modulando los niveles."
+    },
+    {
+      "q": "Sobre el proceso de acomodación ocular, indique la respuesta técnicamente precisa:",
+      "options": [
+        "La córnea modifica su curvatura en un 20% para lograr la nitidez necesaria.",
+        "El cristalino cambia su forma para ajustar el enfoque a distintas distancias.",
+        "La fóvea se desplaza físicamente hacia adelante para captar estímulos lejanos."
+      ],
+      "correct": 1,
+      "hint": "Identifica qué estructura ocular posee la capacidad de ajuste dinámico del enfoque.",
+      "explanation": "El cristalino es el responsable del 20% del enfoque ajustable mediante el cambio de su forma."
+    },
+    {
+      "q": "Identifique la afirmación correcta sobre la distribución de fotorreceptores en la superficie retiniana:",
+      "options": [
+        "Los bastones se concentran exclusivamente en la fóvea para maximizar la visión nocturna.",
+        "La retina periférica contiene una cantidad significativamente mayor de bastones que de conos.",
+        "Los conos están ausentes en la retina periférica, concentrándose el 100% de ellos en la fóvea."
+      ],
+      "correct": 1,
+      "hint": "Recuerda el reparto porcentual de los 6 millones de conos y 120 millones de bastones.",
+      "explanation": "La fóvea solo tiene conos, pero la mayoría de los conos (99%) están en la periferia, aunque allí predominan los bastones."
+    },
+    {
+      "q": "Respecto a la curva de adaptación a la oscuridad, ¿cuál de los siguientes enunciados es exacto?",
+      "options": [
+        "La sensibilidad adaptada a la oscuridad es unas 100 veces mayor que a la luz.",
+        "La primera fase de la curva está controlada por el rápido aumento de sensibilidad de los conos.",
+        "Los bastones alcanzan su máxima sensibilidad a los 5 minutos de apagar la iluminación."
+      ],
+      "correct": 1,
+      "hint": "Diferencia las dos etapas de la curva y qué receptores lideran cada fase inicial.",
+      "explanation": "La curva tiene dos fases; la primera (3-4 min) es el aumento de sensibilidad de los conos, que son más rápidos."
+    },
+    {
+      "q": "Indique la opción correcta sobre la ruta de los impulsos nerviosos tras abandonar el globo ocular:",
+      "options": [
+        "Las fibras de la mitad temporal de cada retina cruzan al hemisferio opuesto en el quiasma.",
+        "El tracto óptico transporta las señales cruzadas hacia el núcleo geniculado lateral.",
+        "La información visual llega primero al área V5 para la detección de bordes y texturas."
+      ],
+      "correct": 1,
+      "hint": "Verifica qué fibras cruzan en el quiasma y cuál es la estación de relevo talámica.",
+      "explanation": "Tras el quiasma (donde cruzan las nasales), el tracto óptico lleva la información al núcleo geniculado lateral."
+    },
+    {
+      "q": "¿Qué afirmación describe correctamente la relación entre convergencia neuronal y agudeza visual?",
+      "options": [
+        "A mayor convergencia sobre una célula ganglionar, mayor es la agudeza del detalle percibido.",
+        "La baja convergencia de los conos foveales permite una mayor resolución de los detalles.",
+        "La alta convergencia de los bastones optimiza la detección de bordes y formas complejas."
+      ],
+      "correct": 1,
+      "hint": "Relaciona la cantidad de receptores por neurona de salida con la nitidez de la imagen.",
+      "explanation": "La baja convergencia (1 cono a 1 ganglionar) evita la pérdida de información espacial, aumentando la agudeza."
+    },
+    {
+      "q": "Sobre la decoloración y regeneración del pigmento visual, señale la respuesta correcta:",
+      "options": [
+        "La decoloración ocurre cuando la retinal y la opsina se unen por efecto de la luz.",
+        "La regeneración consiste en la unión de la retinal y la opsina tras su separación inicial.",
+        "El proceso de decoloración oscurece el pigmento visual al recibir fotones de alta energía."
+      ],
+      "correct": 1,
+      "hint": "Identifica los términos asociados a la separación y unión de las moléculas del pigmento.",
+      "explanation": "La decoloración es la separación de los componentes por luz; la regeneración es su posterior unión."
+    },
+    {
+      "q": "En relación con el espectro electromagnético, ¿cuál de las siguientes opciones es correcta?",
+      "options": [
+        "Las ondas de radio poseen una longitud de onda menor que la de los rayos gamma.",
+        "La luz visible es solo una pequeña fracción del espectro electromagnético completo.",
+        "El ojo humano percibe los rayos ultravioleta gracias a la activación de los bastones."
+      ],
+      "correct": 1,
+      "hint": "Observa la escala de energías y la capacidad perceptiva natural descrita.",
+      "explanation": "El texto aclara que la luz visible es una pequeña parte comparada con rayos X, gamma, radio, etc."
+    },
+    {
+      "q": "Señale la opción correcta sobre el funcionamiento de las áreas visuales secundarias:",
+      "options": [
+        "V1 integra características complejas como la profundidad y el reconocimiento facial.",
+        "V5 es el área cortical especializada principalmente en el procesamiento del movimiento.",
+        "V2 se encarga exclusivamente de la percepción del color y la saturación lumínica."
+      ],
+      "correct": 1,
+      "hint": "Asocia cada área visual (V1-V5) con su función específica descrita en el texto.",
+      "explanation": "V5 es el área de movimiento, mientras que V1 es de procesamiento inicial y V4 de color."
+    },
+    {
+      "q": "Respecto a la anatomía de los fotorreceptores, indique la afirmación correcta:",
+      "options": [
+        "Tanto conos como bastones poseen regiones comunes como mitocondrias y núcleo.",
+        "Los bastones carecen de sinapsis, transmitiendo señales por contacto eléctrico directo.",
+        "Los conos presentan un segmento externo cilíndrico idéntico al de los bastones."
+      ],
+      "correct": 0,
+      "hint": "Observa las características estructurales compartidas mostradas en las figuras.",
+      "explanation": "La Figura 15 muestra que ambos tienen mitocondrias, núcleo y sinapsis, aunque difieren en su forma externa."
+    },
+    {
+      "q": "Sobre la percepción del contraste y la ilusión de la parrilla de Hermann, es correcto que:",
+      "options": [
+        "Los puntos fantasma aparecen porque las intersecciones reciben menos inhibición lateral.",
+        "La superficie parece más oscura cuanto mayor es la inhibición lateral que recibe.",
+        "La inhibición lateral solo ocurre en condiciones de baja iluminación escotópica."
+      ],
+      "correct": 1,
+      "hint": "Analiza la explicación dada sobre por qué se ven puntos oscuros en los cruces blancos.",
+      "explanation": "A mayor inhibición recibida de las células vecinas, mayor es la oscuridad percibida de la superficie."
+    },
+    {
+      "q": "¿Cuál es la función correcta atribuida a las células bipolares en el texto?",
+      "options": [
+        "Transformar directamente la energía lumínica en potenciales de acción rápidos.",
+        "Actuar como intermediarias transmitiendo señales modificadas entre receptores y ganglionares.",
+        "Enviar señales fuera de la retina a través de sus axones largos hacia el tálamo."
+      ],
+      "correct": 1,
+      "hint": "Identifica el papel conector de estas células en el esquema de capas.",
+      "explanation": "Las células bipolares median entre los fotorreceptores y las células ganglionares en la retina."
+    },
+    {
+      "q": "Indique la opción correcta sobre la sensibilidad de los fotorreceptores según la intensidad lumínica:",
+      "options": [
+        "Los bastones controlan la visión en condiciones de alta iluminación o fotópicas.",
+        "Los conos son los únicos receptores capaces de funcionar en oscuridad absoluta.",
+        "Los conos requieren niveles de iluminación elevados para funcionar de manera óptima."
+      ],
+      "correct": 2,
+      "hint": "Determina qué tipo de receptor es sensible a la luz brillante y los detalles finos.",
+      "explanation": "Los conos son fotorreceptores sensibles a la luz brillante, esenciales para la visión diurna."
+    },
+    {
+      "q": "Respecto a la agudeza visual, ¿cuál de las siguientes explicaciones es correcta?",
+      "options": [
+        "Es mayor en la retina periférica debido a la alta densidad de fotorreceptores totales.",
+        "Es máxima en la fóvea porque la imagen recae sobre receptores con baja convergencia.",
+        "Depende del relleno cerebral que ocurre en el punto ciego durante la fijación."
+      ],
+      "correct": 1,
+      "hint": "Relaciona la zona de enfoque directo con el tipo de receptor y su conexión neuronal.",
+      "explanation": "Al mirar directamente, la imagen cae en la fóvea, donde la baja convergencia de los conos da máxima agudeza."
+    },
+    {
+      "q": "Señale la afirmación correcta sobre la composición de los pigmentos visuales:",
+      "options": [
+        "Están formados por dos partes separables denominadas retinal y opsina.",
+        "Consisten en proteínas estables que nunca cambian su estructura molecular.",
+        "Se localizan exclusivamente en el núcleo de las células ganglionares externas."
+      ],
+      "correct": 0,
+      "hint": "Busca los componentes químicos que se separan durante la isomerización.",
+      "explanation": "El pigmento visual consta de una parte retinal sensible a la luz y una proteína llamada opsina."
+    },
+    {
+      "q": "El rango del espectro electromagnético perceptible por el ojo humano, conocido como luz visible, oscila aproximadamente entre los ____ nanómetros.",
+      "options": [
+        "380 y 750 nanómetros ",
+        "400 y 800 nanómetros ",
+        "350 y 950 nanómetros "
+      ],
+      "correct": 0,
+      "hint": "Se sitúa entre el ultravioleta y el infrarrojo cercano.",
+      "explanation": "La luz visible es la porción del espectro que activa los conos, situada entre los 380 y 750 nm según el texto."
+    },
+    {
+      "q": "La ____ es la estructura ocular responsable de aproximadamente el 80% del poder de resolución del ojo, aunque carece de capacidad de ajuste.",
+      "options": [
+        "Capa de la coroides  ",
+        "Superficie de la córnea",
+        "Lente del cristalino  "
+      ],
+      "correct": 1,
+      "hint": "Es la cubierta transparente frontal que no realiza la acomodación.",
+      "explanation": "La córnea aporta el 80% del poder de enfoque, mientras que el cristalino aporta el 20% restante mediante la acomodación."
+    },
+    {
+      "q": "El proceso mediante el cual el cristalino cambia su forma para enfocar objetos a diferentes distancias se denomina ____.",
+      "options": [
+        "Refracción periférica",
+        "Acomodación visual   ",
+        "Transducción retinal "
+      ],
+      "correct": 1,
+      "hint": "Permite ajustar el 20% de la capacidad de enfoque restante.",
+      "explanation": "La acomodación es el ajuste dinámico del cristalino para captar con nitidez estímulos a diversas distancias."
+    },
+    {
+      "q": "En la retina, las células ____ actúan como intermediarias transmitiendo señales modificadas entre los fotorreceptores y las células ganglionares.",
+      "options": [
+        "Células horizontales ",
+        "Células bipolares    ",
+        "Células amacrinas    "
+      ],
+      "correct": 1,
+      "hint": "Se encuentran en la capa inmediatamente inferior a las ganglionares.",
+      "explanation": "Las células bipolares conectan los fotorreceptores (conos y bastones) con la capa de salida de la retina."
+    },
+    {
+      "q": "La transformación de la energía lumínica en impulsos nerviosos, que ocurre en los fotorreceptores, se define técnicamente como ____.",
+      "options": [
+        "Isomerización química",
+        "Transducción visual  ",
+        "Potencial de receptor "
+      ],
+      "correct": 1,
+      "hint": "Es el cambio de modalidad de energía física a señal biológica.",
+      "explanation": "La transducción visual es el proceso de convertir la energía del estímulo en un impulso nervioso interpretable por el cerebro."
+    },
+    {
+      "q": "Cuando un fotón es absorbido por el pigmento fotosensible, este experimenta un cambio de forma denominado ____.",
+      "options": [
+        "Decoloración retinal ",
+        "Isomerización        ",
+        "Regeneración opsínica"
+      ],
+      "correct": 1,
+      "hint": "Este cambio altera la permeabilidad de la membrana del fotorreceptor.",
+      "explanation": "La isomerización es el cambio estructural del pigmento visual desencadenado por la interacción con la luz."
+    },
+    {
+      "q": "El potencial receptor generado durante la transducción visual también es conocido en el ámbito electrofisiológico como ____.",
+      "options": [
+        "Potencial de acción  ",
+        "Potencial post-sinaps",
+        "Potencial RMP        "
+      ],
+      "correct": 2,
+      "hint": "Se corresponde con la respuesta eléctrica inicial al estímulo luminoso.",
+      "explanation": "El potencial receptor se denomina específicamente Potencial Postsináptico Receptor (RMP)."
+    },
+    {
+      "q": "Las fibras nerviosas de la mitad ____ de la retina de cada ojo cruzan hacia el hemisferio opuesto en el quiasma óptico.",
+      "options": [
+        "Mitad temporal      ",
+        "Mitad foveal        ",
+        "Mitad nasal         "
+      ],
+      "correct": 2,
+      "hint": "Este cruce permite el procesamiento contralateral de los campos visuales.",
+      "explanation": "Las fibras de la retina nasal decusan en el quiasma, mientras que las temporales permanecen ipsilaterales."
+    },
+    {
+      "q": "El ____ del tálamo es la estructura donde los tractos ópticos realizan sinapsis antes de proyectar a la corteza visual primaria.",
+      "options": [
+        "Núcleo geniculado lat",
+        "Cuerpo estriado med  ",
+        "Colículo superior    "
+      ],
+      "correct": 0,
+      "hint": "Es el relevo sensorial talámico especializado en la visión.",
+      "explanation": "Las señales visuales pasan por el Núcleo Geniculado Lateral (NGL) del tálamo antes de llegar a V1."
+    },
+    {
+      "q": "La corteza visual primaria, situada en el lóbulo occipital, recibe también el nombre de ____.",
+      "options": [
+        "Área preestriada V2  ",
+        "Área estriada o V1   ",
+        "Área de asociación V4"
+      ],
+      "correct": 1,
+      "hint": "Es la primera área cortical de procesamiento visual.",
+      "explanation": "El área V1 se conoce comúnmente como corteza estriada debido a su apariencia histológica característica."
+    },
+    {
+      "q": "El área cortical ____ está especializada predominantemente en el procesamiento de la información relativa al color.",
+      "options": [
+        "Área secundaria V2  ",
+        "Área de integración V3",
+        "Área del color V4    "
+      ],
+      "correct": 2,
+      "hint": "Es una de las áreas de procesamiento visual secundario especializadas.",
+      "explanation": "Aunque el procesamiento es complejo, el área V4 se asocia tradicionalmente con la percepción del color."
+    },
+    {
+      "q": "Los fotorreceptores denominados ____ son responsables de la visión en condiciones de baja iluminación o penumbra.",
+      "options": [
+        "Conos pigmentarios   ",
+        "Bastones escotópicos ",
+        "Células amacrinas    "
+      ],
+      "correct": 1,
+      "hint": "Son muy sensibles a la luz pero no detectan colores con precisión.",
+      "explanation": "Los bastones son los fotorreceptores encargados de la visión en condiciones de baja luminosidad."
+    },
+    {
+      "q": "La ____ es una pequeña zona central de la retina que se caracteriza por contener exclusivamente conos.",
+      "options": [
+        "Retina periférica    ",
+        "Fóvea central        ",
+        "Mancha del punto cieg"
+      ],
+      "correct": 1,
+      "hint": "Es el lugar donde proyectamos la imagen cuando miramos directamente un objeto.",
+      "explanation": "La fóvea carece de bastones y es el punto de máxima agudeza visual, conteniendo unos 50.000 conos."
+    },
+    {
+      "q": "El fenómeno por el cual el cerebro crea una percepción igual al patrón circundante en la zona sin receptores se conoce como ____.",
+      "options": [
+        "Acomodación foveal   ",
+        "Efecto de rellenado  ",
+        "Inhibición lateral   "
+      ],
+      "correct": 1,
+      "hint": "Evita que seamos conscientes de la falta de información en el disco óptico.",
+      "explanation": "El mecanismo de 'relleno' cerebral compensa la ausencia de receptores en el punto ciego."
+    },
+    {
+      "q": "La representación gráfica de cómo cambia la sensibilidad visual en la oscuridad se denomina ____.",
+      "options": [
+        "Curva de adaptación  ",
+        "Umbral de refracción ",
+        "Mapa de convergencia "
+      ],
+      "correct": 0,
+      "hint": "Muestra un aumento de sensibilidad en dos etapas diferenciadas.",
+      "explanation": "La curva de adaptación a la oscuridad (o escotópica) describe la evolución temporal de la sensibilidad visual."
+    },
+    {
+      "q": "El momento en el que los bastones superan la sensibilidad de los conos durante la adaptación se llama ____.",
+      "options": [
+        "Punto de isomerización",
+        "Punto ruptura cono-ba",
+        "Umbral de saturación "
+      ],
+      "correct": 1,
+      "hint": "Ocurre aproximadamente entre los 7 y 10 minutos de oscuridad.",
+      "explanation": "El punto de ruptura cono-bastón marca la transición donde los bastones toman el control de la visión."
+    },
+    {
+      "q": "La rápida adaptación de los conos en comparación con los bastones se debe a que su ____ se regenera más velozmente.",
+      "options": [
+        "Pigmento visual      ",
+        "Potencial receptor   ",
+        "Célula ganglionar    "
+      ],
+      "correct": 0,
+      "hint": "Depende de la unión química entre el retinal y la opsina.",
+      "explanation": "La velocidad de adaptación está ligada a la tasa de regeneración del pigmento visual tras su decoloración."
+    },
+    {
+      "q": "El proceso químico en el que la retinal y la opsina se separan tras la absorción de luz se llama ____.",
+      "options": [
+        "Isomerización final  ",
+        "Decoloración pigmento",
+        "Convergencia neuronal"
+      ],
+      "correct": 1,
+      "hint": "Hace que el tejido retinal adquiera una tonalidad más clara.",
+      "explanation": "La decoloración (bleaching) es la separación de las partes de la molécula de pigmento visual por la luz."
+    },
+    {
+      "q": "La ____ ocurre cuando una sola neurona recibe impulsos de múltiples neuronas previas en el circuito.",
+      "options": [
+        "Inhibición lateral   ",
+        "Convergencia neuronal",
+        "Sumación foveal      "
+      ],
+      "correct": 1,
+      "hint": "Es clave para entender la diferencia de sensibilidad entre bastones y conos.",
+      "explanation": "La convergencia es el fenómeno donde múltiples receptores envían señal a una sola célula ganglionar."
+    },
+    {
+      "q": "Los bastones presentan una ____ convergencia comparada con los conos de la retina periférica.",
+      "options": [
+        "Mucho mayor          ",
+        "Prácticamente nula   ",
+        "Ligeramente menor    "
+      ],
+      "correct": 0,
+      "hint": "Hay 120 millones de bastones para solo un millón de células ganglionares.",
+      "explanation": "La alta convergencia de los bastones (120:1 de media) explica su mayor sensibilidad a la luz débil."
+    },
+    {
+      "q": "En la fóvea, muchos conos poseen ____, lo que significa que envían señales a una sola célula ganglionar sin convergencia.",
+      "options": [
+        "Vías de inhibición   ",
+        "Líneas privadas      ",
+        "Circuitos de sumación"
+      ],
+      "correct": 1,
+      "hint": "Este diseño anatómico prioriza la agudeza visual sobre la sensibilidad.",
+      "explanation": "Las 'líneas privadas' en la fóvea permiten que cada cono mantenga su identidad espacial para ver detalles."
+    },
+    {
+      "q": "La visión por bastones tiene mayor ____ pero menor agudeza visual que la visión por conos.",
+      "options": [
+        "Resolución espacial  ",
+        "Sensibilidad lumínica",
+        "Distinción cromática "
+      ],
+      "correct": 1,
+      "hint": "Requiere menos intensidad de luz para generar una respuesta en la ganglionar.",
+      "explanation": "Debido a la convergencia, los bastones son más sensibles a la luz pero menos precisos en los detalles."
+    },
+    {
+      "q": "El fenómeno de la ____ es la base fisiológica para la percepción de contornos y bordes en una imagen.",
+      "options": [
+        "Convergencia foveal  ",
+        "Inhibición lateral   ",
+        "Transducción bípola  "
+      ],
+      "correct": 1,
+      "hint": "Implica que las neuronas vecinas reducen la actividad de una célula.",
+      "explanation": "La inhibición lateral acentúa los contrastes al reducir la respuesta de células en áreas de transición."
+    },
+    {
+      "q": "En la ilusión de la parrilla de Hermann, las intersecciones se perciben más oscuras debido a que reciben ____.",
+      "options": [
+        "Menor inhibición lat ",
+        "Mayor inhibición lat ",
+        "Sumación convergente "
+      ],
+      "correct": 1,
+      "hint": "Las células en los cruces tienen más vecinas activas 'frenándolas'.",
+      "explanation": "Los puntos en las intersecciones están rodeados por más luz, lo que genera mayor inhibición lateral."
+    },
+    {
+      "q": "La retina contiene aproximadamente ____ de células sensibles a la luz en su totalidad.",
+      "options": [
+        "130 millones         ",
+        "6 millones           ",
+        "120 millones         "
+      ],
+      "correct": 0,
+      "hint": "Incluye tanto a los fotorreceptores de color como a los de baja luz.",
+      "explanation": "El texto cita unos 130 millones de células (120m bastones + 6m conos aproximadamente)."
+    },
+    {
+      "q": "El área visual ____ se encarga principalmente de la integración de características complejas de la imagen.",
+      "options": [
+        "Área V1 inicial      ",
+        "Área V3 integrada    ",
+        "Área V5 de movimiento"
+      ],
+      "correct": 1,
+      "hint": "Se sitúa jerárquicamente tras V1 y V2.",
+      "explanation": "V3 está asociada con la integración de diversas características visuales procesadas previamente."
+    },
+    {
+      "q": "Las células ____ se sitúan entre las bipolares y las ganglionares, modulando señales de contraste y movimiento.",
+      "options": [
+        "Células horizontales ",
+        "Células amacrinas    ",
+        "Células foveales     "
+      ],
+      "correct": 1,
+      "hint": "Son interneuronas de las capas internas de la retina.",
+      "explanation": "Las células amacrinas intervienen en la modulación del contraste y la detección de movimiento."
+    },
+    {
+      "q": "Durante la transducción, la isomerización altera la ____ de la membrana del fotorreceptor.",
+      "options": [
+        "Transparencia        ",
+        "Permeabilidad        ",
+        "Longitud de onda     "
+      ],
+      "correct": 1,
+      "hint": "Es el paso necesario para cambiar el potencial eléctrico de la célula.",
+      "explanation": "El cambio químico del pigmento altera la permeabilidad iónica, generando el potencial receptor."
+    },
+    {
+      "q": "Las fibras de la retina ____ no cruzan en el quiasma óptico y permanecen en el mismo lado del cerebro.",
+      "options": [
+        "Retina temporal      ",
+        "Retina nasal         ",
+        "Retina periférica    "
+      ],
+      "correct": 0,
+      "hint": "Llevan la información del campo visual contralateral sin decusar.",
+      "explanation": "Las fibras temporales mantienen su trayectoria ipsilateral hacia el tálamo."
+    },
+    {
+      "q": "El área V5 de la corteza cerebral está altamente especializada en la percepción del ____.",
+      "options": [
+        "Color cromático      ",
+        "Movimiento visual    ",
+        "Borde de contraste   "
+      ],
+      "correct": 1,
+      "hint": "Es crucial para seguir objetos que se desplazan por el campo visual.",
+      "explanation": "V5 (o MT) es el centro cortical especializado en el procesamiento del movimiento."
+    },
+    {
+      "q": "La agudeza visual es significativamente ____ en la fóvea que en la retina periférica.",
+      "options": [
+        "Mayor en la fóvea    ",
+        "Igual en ambas zonas ",
+        "Menor en la fóvea    "
+      ],
+      "correct": 0,
+      "hint": "Es la razón por la que movemos los ojos para leer.",
+      "explanation": "La baja convergencia y densidad de conos en la fóvea permiten una resolución de detalles muy superior."
+    },
+    {
+      "q": "Un grado de convergencia ____ favorece la sensibilidad lumínica pero perjudica la agudeza visual.",
+      "options": [
+        "Mínimo o nulo        ",
+        "Elevado o alto       ",
+        "Intermedio o neutro  "
+      ],
+      "correct": 1,
+      "hint": "Es el caso típico de los bastones en la periferia.",
+      "explanation": "La alta convergencia suma señales débiles (sensibilidad) pero mezcla información espacial (baja agudeza)."
+    },
+    {
+      "q": "La ____ es la capa más externa de la retina, encargada de enviar las señales al cerebro vía nervio óptico.",
+      "options": [
+        "Capa ganglionar      ",
+        "Capa fotorreceptora  ",
+        "Capa de la coroides  "
+      ],
+      "correct": 0,
+      "hint": "Sus axones forman el cable de salida del ojo.",
+      "explanation": "La capa de células ganglionares es la última etapa de procesamiento retinal antes del cerebro."
+    },
+    {
+      "q": "Los ____ son los fotorreceptores que permiten la percepción de detalles finos en condiciones fotópicas.",
+      "options": [
+        "Bastones periféricos ",
+        "Conos foveales       ",
+        "Células bipolares    "
+      ],
+      "correct": 1,
+      "hint": "Requieren niveles de luz más altos para funcionar correctamente.",
+      "explanation": "Los conos son los encargados de la visión cromática y de alta resolución en ambientes iluminados."
+    },
+    {
+      "q": "La denominada ____ del pigmento ocurre cuando la retinal y la opsina vuelven a unirse tras haberse separado.",
+      "options": [
+        "Isomerización inversa",
+        "Regeneración         ",
+        "Decoloración rápida  "
+      ],
+      "correct": 1,
+      "hint": "Es esencial para que el ojo pueda seguir detectando luz continuamente.",
+      "explanation": "La regeneración es el proceso de recomposición del pigmento visual tras la exposición a la luz."
+    },
+    {
+      "q": "El punto ciego u ____ es la zona donde el nervio óptico abandona el globo ocular y carece de receptores.",
+      "options": [
+        "Disco óptico         ",
+        "Fóvea centralis      ",
+        "Ora serrata          "
+      ],
+      "correct": 0,
+      "hint": "También se le llama 'papila óptica'.",
+      "explanation": "El punto ciego (óptico disc) es donde se agrupan los axones ganglionares para salir del ojo."
+    },
+    {
+      "q": "La mayor sensibilidad de los bastones se explica por su capacidad de ____ señales excitatorias en la ganglionar.",
+      "options": [
+        "Inhibir las          ",
+        "Sumar las            ",
+        "Refractar las        "
+      ],
+      "correct": 1,
+      "hint": "Múltiples receptores activan una misma célula de salida.",
+      "explanation": "La convergencia permite sumar pequeñas cantidades de neurotransmisor para alcanzar el umbral de disparo."
+    },
+    {
+      "q": "El área cortical ____ se encarga del procesamiento inicial de bordes, texturas, contornos y movimiento.",
+      "options": [
+        "Área V1 estriada     ",
+        "Área V2 secundaria   ",
+        "Área V4 del color    "
+      ],
+      "correct": 1,
+      "hint": "Procesa aspectos ligeramente más complejos que V1 pero básicos.",
+      "explanation": "El texto asocia a V2 con bordes, texturas, contornos y movimiento en un nivel secundario."
+    },
+    {
+      "q": "La visión ____ se refiere a la visión en condiciones de buena iluminación mediada por los conos.",
+      "options": [
+        "Visión fotópica      ",
+        "Visión escotópica    ",
+        "Visión mesópica      "
+      ],
+      "correct": 0,
+      "hint": "Es la visión diurna normal.",
+      "explanation": "La visión fotópica es la que depende de los conos y ocurre con niveles altos de luminancia."
+    },
+    {
+      "q": "Las células ____ se encuentran entre los conos y las células bipolares, modulando la señal inicial.",
+      "options": [
+        "Células amacrinas    ",
+        "Células horizontales ",
+        "Células ganglionares "
+      ],
+      "correct": 1,
+      "hint": "Intervienen en la primera etapa de modulación lateral.",
+      "explanation": "Las células horizontales realizan el procesamiento lateral temprano en la capa de fotorreceptores."
+    },
+    {
+      "q": "Sobre la organización estructural del sistema visual, es correcto afirmar que:",
+      "options": [
+        "La córnea carece de enfoque dinámico. ",
+        "El cristalino ajusta la nitidez final. ",
+        "Todas las anteriores son correctas.    "
+      ],
+      "correct": 2,
+      "hint": "Analiza las funciones de resolución fija y variable.",
+      "explanation": "La córnea tiene poder de resolución fijo (80%) y el cristalino es el que realiza el enfoque variable (20%)."
+    },
+    {
+      "q": "Respecto a la adaptación a la oscuridad, se puede concluir que:",
+      "options": [
+        "Los conos se adaptan en 3 a 5 minutos.  ",
+        "La sensibilidad aumenta cien mil veces. ",
+        "Todas las anteriores son correctas.      "
+      ],
+      "correct": 2,
+      "hint": "Considera tiempos y magnitudes logarítmicas finales.",
+      "explanation": "Los conos terminan su adaptación rápido y la sensibilidad final es 100.000 veces mayor que la inicial."
+    },
+    {
+      "q": "En cuanto a los fotorreceptores de la retina periférica, es cierto que:",
+      "options": [
+        "Contiene tanto bastones como conos.      ",
+        "Los bastones superan en número a conos. ",
+        "Todas las anteriores son correctas.      "
+      ],
+      "correct": 2,
+      "hint": "La periferia no es exclusiva de un solo tipo celular.",
+      "explanation": "La retina periférica tiene ambos tipos, aunque con predominancia numérica de los bastones."
+    },
+    {
+      "q": "Sobre el proceso de transducción visual, se observa que:",
+      "options": [
+        "Se inicia con la captación de fotones.  ",
+        "Genera un potencial receptor (RMP).      ",
+        "Todas las anteriores son correctas.      "
+      ],
+      "correct": 2,
+      "hint": "Sigue una secuencia de pasos químicos y eléctricos.",
+      "explanation": "La transducción implica captación, isomerización, generación de potencial y transmisión de señal."
+    },
+    {
+      "q": "En relación con el punto de ruptura cono-bastón, es verdad que:",
+      "options": [
+        "Ocurre a los 7-10 minutos de oscuridad. ",
+        "Los bastones se vuelven más sensibles.  ",
+        "Todas las anteriores son correctas.      "
+      ],
+      "correct": 2,
+      "hint": "Es el cambio de guardia entre sistemas de fotorrecepción.",
+      "explanation": "En este punto temporal, los bastones superan la sensibilidad máxima de los conos y controlan la visión."
+    },
+    {
+      "q": "Acerca de la convergencia neuronal en la retina, se confirma que:",
+      "options": [
+        "Los bastones convergen más que los conos. ",
+        "Afecta directamente a la sensibilidad.    ",
+        "Todas las anteriores son correctas.        "
+      ],
+      "correct": 2,
+      "hint": "La anatomía de las conexiones determina la función sensorial.",
+      "explanation": "Los bastones tienen alta convergencia (120:1) lo que les otorga mayor sensibilidad lumínica."
+    },
+    {
+      "q": "Respecto a la visión foveal de los seres humanos, es correcto decir:",
+      "options": [
+        "Posee la mayor agudeza visual del ojo.  ",
+        "No presenta apenas convergencia neural. ",
+        "Todas las anteriores son correctas.      "
+      ],
+      "correct": 2,
+      "hint": "Relaciona la densidad de conos con la nitidez de la imagen.",
+      "explanation": "La fóvea permite ver detalles gracias a la falta de convergencia y la especialización de sus conos."
+    },
+    {
+      "q": "Sobre la regeneración del pigmento visual, se puede afirmar que:",
+      "options": [
+        "Ocurre incluso bajo condiciones de luz. ",
+        "Implica la reunión de retinal y opsina.  ",
+        "Todas las anteriores son correctas.      "
+      ],
+      "correct": 2,
+      "hint": "Es el proceso inverso a la decoloración fotosensible.",
+      "explanation": "La regeneración es continua y permite mantener moléculas intactas para la percepción constante."
+    },
+    {
+      "q": "En cuanto a la inhibición lateral y la percepción, es cierto que:",
+      "options": [
+        "Acentúa los contrastes en los bordes.    ",
+        "Explica el efecto de la rejilla Hermann. ",
+        "Todas las anteriores son correctas.      "
+      ],
+      "correct": 2,
+      "hint": "Es un mecanismo de interacción entre neuronas vecinas.",
+      "explanation": "La inhibición lateral es fundamental para detectar contornos y genera ilusiones de contraste."
+    },
+    {
+      "q": "Sobre las áreas de procesamiento visual cortical, es verdad que:",
+      "options": [
+        "V1 realiza la detección inicial de bordes. ",
+        "V4 se especializa en la visión del color. ",
+        "Todas las anteriores son correctas.        "
+      ],
+      "correct": 2,
+      "hint": "Cada área tiene un rol funcional especializado.",
+      "explanation": "La información fluye de V1 a áreas secundarias especializadas como V4 para el color."
+    },
+    {
+      "q": "Respecto al nervio óptico y el quiasma, es correcto afirmar que:",
+      "options": [
+        "Lo forman los axones de las ganglionares. ",
+        "Permite el cruce de las fibras nasales.    ",
+        "Todas las anteriores son correctas.        "
+      ],
+      "correct": 2,
+      "hint": "Describe el inicio de la vía visual hacia el cerebro.",
+      "explanation": "El nervio óptico transporta la señal y el quiasma organiza el procesamiento hemisférico cruzado."
+    },
+    {
+      "q": "Sobre la sensibilidad de los fotorreceptores, se puede decir que:",
+      "options": [
+        "Los bastones captan luz muy tenue.       ",
+        "Los conos requieren luz más brillante.    ",
+        "Todas las anteriores son correctas.        "
+      ],
+      "correct": 2,
+      "hint": "Compara las condiciones de activación de ambos receptores.",
+      "explanation": "Los bastones son para visión nocturna/escotópica y los conos para diurna/fotópica."
+    },
+    {
+      "q": "En relación con el pigmento visual, se observa que:",
+      "options": [
+        "Sufre isomerización por acción de luz.  ",
+        "Su decoloración aclara el tejido retinal. ",
+        "Todas las anteriores son correctas.        "
+      ],
+      "correct": 2,
+      "hint": "Es la molécula clave en la transducción sensorial.",
+      "explanation": "La interacción luz-pigmento causa cambios químicos y de apariencia física en la retina."
+    },
+    {
+      "q": "Sobre las interneuronas de la retina, es correcto afirmar:",
+      "options": [
+        "Las bipolares transmiten a ganglionares. ",
+        "Las horizontales modulan a fotorreceptores. ",
+        "Todas las anteriores son correctas.         "
+      ],
+      "correct": 2,
+      "hint": "Existen diversas capas de comunicación interna.",
+      "explanation": "Bipolares, horizontales y amacrinas orquestan el procesamiento complejo antes del nervio óptico."
+    },
+    {
+      "q": "Respecto al fenómeno del punto ciego, se confirma que:",
+      "options": [
+        "Se localiza a un lado del campo visual.  ",
+        "El cerebro rellena el área con patrones. ",
+        "Todas las anteriores son correctas.        "
+      ],
+      "correct": 2,
+      "hint": "Explica por qué no vemos un hueco en nuestra visión.",
+      "explanation": "La falta de receptores se compensa cerebralmente con la información del entorno visual."
+    },
+    {
+      "q": "Sobre la convergencia en la fóvea, se puede asegurar que:",
+      "options": [
+        "Predominan las llamadas líneas privadas. ",
+        "Permite una discriminación espacial alta. ",
+        "Todas las anteriores son correctas.        "
+      ],
+      "correct": 2,
+      "hint": "Considera la relación uno a uno entre células.",
+      "explanation": "La escasa convergencia en la fóvea es lo que garantiza la visión de los detalles finos."
+    },
+    {
+      "q": "En relación con el procesamiento en el tálamo, es cierto que:",
+      "options": [
+        "Ocurre en el núcleo geniculado lateral.  ",
+        "Es previo a la llegada a la corteza V1.    ",
+        "Todas las anteriores son correctas.        "
+      ],
+      "correct": 2,
+      "hint": "Es la principal estación de relevo sensorial visual.",
+      "explanation": "La vía visual clásica pasa por el NGL antes de proyectarse al lóbulo occipital."
+    },
+    {
+      "q": "Sobre la visión escotópica y fotópica, es correcto afirmar:",
+      "options": [
+        "La escotópica depende de los bastones.    ",
+        "La fotópica permite ver en color.         ",
+        "Todas las anteriores son correctas.        "
+      ],
+      "correct": 2,
+      "hint": "Diferencia los dos sistemas funcionales del ojo.",
+      "explanation": "Los bastones median la visión nocturna y los conos la diurna y cromática."
+    },
+    {
+      "q": "Respecto a la anatomía del globo ocular, se puede afirmar erróneamente que:",
+      "options": [
+        "El iris es el tejido sensible a la luz.  ",
+        "La retina es la cubierta externa frontal. ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Evalúa si las definiciones de iris y retina son exactas.",
+      "explanation": "La retina es interna y sensible, no externa; el iris regula la luz, no es el fotorreceptor principal."
+    },
+    {
+      "q": "Sobre las longitudes de onda de la luz visible, es falso que:",
+      "options": [
+        "Se extiendan desde 10 a 100 nanómetros.  ",
+        "Activen directamente a las amacrinas.    ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Comprueba los límites del espectro y el receptor primario.",
+      "explanation": "El rango es 380-750 nm y activan fotorreceptores, no amacrinas directamente. Ambas opciones son falsas."
+    },
+    {
+      "q": "En cuanto al cristalino y la córnea, es incorrecto asegurar que:",
+      "options": [
+        "La córnea realiza la mayor acomodación. ",
+        "El cristalino aporta el 80% del enfoque. ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Revisa los porcentajes de poder refractivo de cada uno.",
+      "explanation": "Es al revés: córnea 80% (fijo) y cristalino 20% (acomodación). Ambas premisas son erróneas."
+    },
+    {
+      "q": "Sobre la vía visual central, es una afirmación falsa que:",
+      "options": [
+        "Las fibras nasales no cruzan el quiasma. ",
+        "V1 se localiza en el lóbulo frontal.      ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Ubica la decusación y la corteza visual primaria.",
+      "explanation": "Las nasales sí cruzan y V1 está en el occipital. Ambas afirmaciones son falsas."
+    },
+    {
+      "q": "Respecto a los fotorreceptores, no es cierto que:",
+      "options": [
+        "Los conos sean más sensibles que bastones.",
+        "Hayan más conos que bastones en periferia.",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Compara sensibilidad y distribución poblacional.",
+      "explanation": "Bastones son más sensibles y mucho más numerosos en la periferia que los conos."
+    },
+    {
+      "q": "Acerca de la fóvea central, se puede decir falsamente que:",
+      "options": [
+        "Está compuesta mayormente por bastones.  ",
+        "Carece totalmente de células de color.    ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Recuerda qué tipo de fotorreceptor es exclusivo de la fóvea.",
+      "explanation": "La fóvea solo tiene conos; no tiene bastones. Ambas opciones mienten sobre su composición."
+    },
+    {
+      "q": "Sobre la adaptación a la oscuridad, es incorrecto afirmar que:",
+      "options": [
+        "Los bastones se adaptan en 3 minutos.    ",
+        "Los conos tardan 30 minutos en total.    ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Verifica los tiempos de adaptación de cada receptor.",
+      "explanation": "Es al revés: conos 3-5 min y bastones unos 30 min. Ambas son incorrectas."
+    },
+    {
+      "q": "En relación con la isomerización del pigmento, es falso que:",
+      "options": [
+        "Ocurra exclusivamente en las bipolares.  ",
+        "Se produzca por la ausencia de fotones.  ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Determina dónde y por qué ocurre este cambio químico.",
+      "explanation": "Ocurre en fotorreceptores y por presencia de luz, no en bipolares ni por oscuridad."
+    },
+    {
+      "q": "Sobre la convergencia neuronal, no podemos afirmar que:",
+      "options": [
+        "Disminuya la sensibilidad lumínica.      ",
+        "Aumente la agudeza visual de los bastos. ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Analiza cómo afecta la convergencia a la nitidez y detección.",
+      "explanation": "La convergencia aumenta sensibilidad y disminuye agudeza. Ambas opciones dicen lo opuesto."
+    },
+    {
+      "q": "Respecto a la inhibición lateral, es una premisa falsa que:",
+      "options": [
+        "Sea mayor en zonas de sombra total.      ",
+        "Reduzca el contraste entre superficies.  ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Considera el efecto sobre el contraste y los bordes.",
+      "explanation": "Aumenta el contraste y es mayor donde hay más luz excitando vecinas. Ambas son falsas."
+    },
+    {
+      "q": "Acerca de la regeneración del pigmento, es incorrecto decir:",
+      "options": [
+        "Que solo ocurra en la oscuridad total.    ",
+        "Que sea un proceso de isomerización.      ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Revisa cuándo ocurre y qué tipo de proceso es.",
+      "explanation": "Ocurre también con luz y es una unión química, no isomerización. Ambas son falsas."
+    },
+    {
+      "q": "Sobre el punto ciego de la retina, se afirma falsamente que:",
+      "options": [
+        "Contenga una alta densidad de bastones.  ",
+        "Se sitúe exactamente sobre la fóvea.      ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Recuerda si hay algún receptor en el disco óptico.",
+      "explanation": "No tiene receptores y está a un lado de la fóvea. Ambas afirmaciones son erróneas."
+    },
+    {
+      "q": "Respecto a las capas de la retina, no es verdad que:",
+      "options": [
+        "La capa ganglionar sea la más interna.    ",
+        "Los fotorreceptores reciban luz primero. ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Recuerda el orden de las capas desde el vítreo al epitelio.",
+      "explanation": "La ganglionar es la más externa al ojo (primera en recibir luz) y fotorreceptores los últimos."
+    },
+    {
+      "q": "Sobre el área cortical V5, se puede asegurar erróneamente que:",
+      "options": [
+        "Procese únicamente texturas estáticas.  ",
+        "Carezca de relación con el movimiento.    ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Identifica la especialización funcional de V5.",
+      "explanation": "V5 es el área del movimiento por excelencia. Ambas opciones niegan su función real."
+    },
+    {
+      "q": "En cuanto a los tipos de conos, es una afirmación falsa que:",
+      "options": [
+        "Solo existan dos tipos en humanos.        ",
+        "Sean insensibles a la luz brillante.      ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Verifica cuántos tipos hay y su rango de operación.",
+      "explanation": "Hay tres tipos y funcionan con luz brillante. Ambas afirmaciones son mentira."
+    },
+    {
+      "q": "Sobre la transducción visual, no es correcto afirmar que:",
+      "options": [
+        "Implique la captura de electrones libres. ",
+        "Termine en la capa de células bípolares. ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Define qué se captura y dónde acaba el proceso retinal.",
+      "explanation": "Captura fotones y la señal sigue hasta las ganglionares y el cerebro. Ambas son falsas."
+    },
+    {
+      "q": "Respecto a la agudeza visual periférica, es falso decir que:",
+      "options": [
+        "Sea superior a la agudeza foveal.         ",
+        "Se deba a la falta de bastones allí.      ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Compara la nitidez en el centro frente a los lados.",
+      "explanation": "Es muy inferior a la foveal y hay muchísimos bastones allí. Ambas premisas son falsas."
+    },
+    {
+      "q": "Sobre el procesamiento de bordes y contornos, no es cierto que:",
+      "options": [
+        "Sea independiente de la inhibición.       ",
+        "Ocurra solo en el núcleo geniculado.      ",
+        "Ninguna es correcta.                      "
+      ],
+      "correct": 2,
+      "hint": "Revisa el mecanismo base y las áreas implicadas.",
+      "explanation": "Depende de la inhibición y ocurre desde la retina hasta V1/V2. Ambas son falsas."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "¿Cómo se justifica la relevancia predominante de los sistemas visual y auditivo en el ser humano del siglo XXI según el texto?",
+      "model": "El ser humano actual es especialmente visual y auditivo debido a que la mayoría de las categorías profesionales y la integración de información proveniente de las nuevas tecnologías requieren de estos sentidos. La revolución digital ha exaltado su importancia, convirtiéndolos en herramientas indispensables para el desempeño diario y el procesamiento de la información en el entorno tecnológico actual.",
+      "keywords": [
+        "revolución digital",
+        "categorías profesionales",
+        "tecnología",
+        "procesamiento superior"
+      ],
+      "page": 33
+    },
+    {
+      "q": "Explique la diferencia funcional entre la córnea y el cristalino en el proceso de enfoque visual.",
+      "model": "La córnea es una cubierta transparente que aporta el 80% del poder de resolución del ojo, pero su enfoque es fijo y no se puede ajustar. El cristalino aporta el 20% restante y tiene la capacidad de cambiar su forma (acomodación) para ajustar el enfoque según la distancia del estímulo, permitiendo captar imágenes nítidas tanto de objetos lejanos como cercanos.",
+      "keywords": [
+        "córnea",
+        "cristalino",
+        "acomodación",
+        "poder de resolución"
+      ],
+      "page": 34
+    },
+    {
+      "q": "Describa la organización celular de la retina desde la capa más externa a la más interna y la función general de cada una.",
+      "model": "La retina se organiza en: 1) Capa de células ganglionares (envían señales al cerebro vía nervio óptico y detectan movimiento); 2) Capa de células bipolares (intermediarias entre fotorreceptores y ganglionares); 3) Capa de fotorreceptores (conos para color/detalle y bastones para baja luz); 4) Células horizontales (modulan señales entre fotorreceptores y bipolares); 5) Células amacrinas (modulan señales entre bipolares y ganglionares, detectan contraste).",
+      "keywords": [
+        "ganglionares",
+        "bipolares",
+        "fotorreceptores",
+        "horizontales",
+        "amacrinas"
+      ],
+      "page": 35
+    },
+    {
+      "q": "Defina el concepto de transducción visual y detalle las etapas que ocurren en los fotorreceptores.",
+      "model": "La transducción es la transformación de energía lumínica en impulsos nerviosos. Sus etapas son: 1) Captación de fotones por pigmentos fotosensibles; 2) Isomerización del pigmento (cambio de forma y permeabilidad de la membrana); 3) Generación de un potencial receptor (cambio eléctrico postsináptico); 4) Transmisión de señales a través de sinapsis a células bipolares y ganglionares.",
+      "keywords": [
+        "transducción",
+        "isomerización",
+        "potencial receptor",
+        "fotones"
+      ],
+      "page": 36
+    },
+    {
+      "q": "Analice el recorrido del impulso nervioso desde que abandona la retina hasta llegar a la corteza visual primaria, mencionando el papel del quiasma óptico.",
+      "model": "Los axones de las células ganglionares forman el nervio óptico. En el quiasma óptico, las fibras de la mitad nasal de cada retina cruzan al hemisferio opuesto, mientras las temporales no cruzan, permitiendo que cada hemisferio procese el campo visual contralateral. La señal pasa por el tracto óptico hacia el núcleo geniculado lateral del tálamo y finalmente llega al área V1 (corteza estriada) en el lóbulo occipital.",
+      "keywords": [
+        "quiasma óptico",
+        "nervio óptico",
+        "tálamo",
+        "área V1",
+        "hemisferio cerebral"
+      ],
+      "page": 36
+    },
+    {
+      "q": "Relacione las áreas de procesamiento visual secundario (V2 a V5) con las características específicas del estímulo que procesan.",
+      "model": "A partir de V1, la información se distribuye: el área V2 procesa bordes, texturas y contornos; V3 se encarga de la integración de características; V4 es el área especializada en la percepción del color; y V5 se especializa en la detección y procesamiento del movimiento.",
+      "keywords": [
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "especialización cortical"
+      ],
+      "page": 37
+    },
+    {
+      "q": "Compare las funciones y sensibilidades de los conos y los bastones como fotorreceptores.",
+      "model": "Los conos son sensibles a la luz brillante (condiciones fotópicas), permiten la percepción del color (existen tres tipos: rojo, verde y azul) y los detalles finos. Los bastones son mucho más sensibles y operan en luz tenue (condiciones escotópicas), son cruciales para la visión periférica y el movimiento, pero no detectan colores con precisión.",
+      "keywords": [
+        "conos",
+        "bastones",
+        "visión fotópica",
+        "visión escotópica",
+        "color"
+      ],
+      "page": 37
+    },
+    {
+      "q": "Explique la distribución anatómica de los fotorreceptores en la retina, destacando la composición de la fóvea.",
+      "model": "La distribución no es uniforme: la fóvea es la zona central y solo contiene conos (aprox. 50,000, el 1% del total). La retina periférica contiene tanto bastones como conos, aunque predominan los bastones (120 millones frente a 6 millones de conos totales). Existe también un punto ciego donde no hay receptores debido a la salida del nervio óptico.",
+      "keywords": [
+        "fóvea",
+        "retina periférica",
+        "distribución",
+        "punto ciego"
+      ],
+      "page": 38
+    },
+    {
+      "q": "¿Por qué el ser humano no suele ser consciente de la existencia del punto ciego en su visión cotidiana?",
+      "model": "Se debe principalmente a dos razones: primero, el punto ciego se localiza en un lateral del campo visual donde los objetos no se enfocan con nitidez. Segundo, el cerebro utiliza un mecanismo de 'relleno' donde crea una percepción coherente basada en el patrón circundante de la imagen, en lugar de mostrar un vacío.",
+      "keywords": [
+        "punto ciego",
+        "mecanismo de relleno",
+        "percepción circundante"
+      ],
+      "page": 38
+    },
+    {
+      "q": "Explique el fenómeno de la adaptación a la oscuridad y el uso histórico/hipotético del parche por los piratas.",
+      "model": "La adaptación a la oscuridad es el aumento de la sensibilidad visual al pasar de un ambiente iluminado a uno oscuro. La hipótesis del parche sugiere que los piratas lo usaban para mantener un ojo adaptado a la oscuridad permanentemente; así, al bajar a las bodegas oscuras del barco, solo tenían que cambiar el parche de ojo para ver instantáneamente con alta sensibilidad.",
+      "keywords": [
+        "adaptación a la oscuridad",
+        "sensibilidad",
+        "parche pirata",
+        "visión nocturna"
+      ],
+      "page": 39
+    },
+    {
+      "q": "Analice las dos fases de la curva de adaptación a la oscuridad y qué sistema de receptores domina cada una.",
+      "model": "La curva muestra dos etapas: 1) Fase inicial (primeros 3-5 minutos) de rápido aumento de sensibilidad dominada por los conos, que alcanzan su máximo pronto. 2) Fase posterior (de 7 a 30 minutos) donde los bastones, tras regenerar su pigmento, superan la sensibilidad de los conos y pasan a controlar la visión. Este cambio se representa en una escala logarítmica indicando un aumento de hasta 100,000 veces en la sensibilidad.",
+      "keywords": [
+        "curva de adaptación",
+        "fase inicial",
+        "fase posterior",
+        "escala logarítmica"
+      ],
+      "page": 39
+    },
+    {
+      "q": "Defina el 'punto de ruptura conos-bastones' y explique por qué ocurre en un momento determinado del tiempo.",
+      "model": "Es el momento (aprox. a los 7-10 minutos de oscuridad) en que la sensibilidad de los bastones supera a la máxima sensibilidad de los conos, pasando los bastones a determinar la visión. Ocurre en ese punto porque el pigmento de los conos se regenera más rápido (3-5 min), mientras que los bastones requieren mucho más tiempo (casi 30 min) para alcanzar su sensibilidad máxima.",
+      "keywords": [
+        "punto de ruptura",
+        "regeneración de pigmento",
+        "umbral"
+      ],
+      "page": 40
+    },
+    {
+      "q": "Describa los procesos de decoloración y regeneración del pigmento visual.",
+      "model": "La decoloración ocurre cuando la luz isomeriza el pigmento y separa sus partes (retinal y opsina), aclarando su tonalidad. La regeneración es el proceso inverso donde la retinal y la opsina vuelven a unirse para que el receptor pueda volver a realizar la transducción. Sin regeneración, la percepción visual cesaría al agotarse las moléculas intactas.",
+      "keywords": [
+        "decoloración",
+        "regeneración",
+        "retinal",
+        "opsina",
+        "isomerización"
+      ],
+      "page": 40
+    },
+    {
+      "q": "Explique el concepto de convergencia neuronal en la retina y compare las cifras entre receptores y células ganglionares.",
+      "model": "La convergencia ocurre cuando una neurona recibe impulsos de muchas otras. En la retina hay una gran convergencia: 126 millones de receptores convergen en solo 1 millón de células ganglionares. Esto implica que, en promedio, una ganglionar recibe información de 126 receptores, aunque la proporción varía drásticamente entre bastones y conos.",
+      "keywords": [
+        "convergencia neuronal",
+        "proporción",
+        "ganglionares",
+        "receptores"
+      ],
+      "page": 41
+    },
+    {
+      "q": "¿Cómo influye la diferencia de convergencia entre bastones y conos en la sensibilidad a la luz?",
+      "model": "Los bastones tienen una mayor convergencia (aprox. 120 bastones por cada célula ganglionar) que los conos (aprox. 6 por ganglionar). Esta alta convergencia permite que los impulsos excitatorios se sumen sobre una misma célula ganglionar, alcanzando más fácilmente el umbral de activación necesario para percibir la luz, lo que resulta en una mayor sensibilidad en condiciones de baja iluminación.",
+      "keywords": [
+        "sumación",
+        "sensibilidad",
+        "umbral",
+        "convergencia bastones"
+      ],
+      "page": 41
+    },
+    {
+      "q": "Justifique por qué la visión por conos es superior para la percepción de detalles (agudeza visual) comparada con la de bastones.",
+      "model": "La baja convergencia de los conos, especialmente en la fóvea donde existen 'líneas privadas' (un cono conectado a una sola célula ganglionar), permite que el cerebro identifique exactamente qué punto de la retina fue estimulado. En los bastones, al converger muchos en una sola célula, se pierde la información sobre la localización precisa del estímulo, sacrificando el detalle por la sensibilidad.",
+      "keywords": [
+        "agudeza visual",
+        "líneas privadas",
+        "detalle",
+        "localización"
+      ],
+      "page": 42
+    },
+    {
+      "q": "Explique el funcionamiento de un circuito de convergencia utilizando el modelo de unidades de excitación y umbral de activación.",
+      "model": "Si una unidad de intensidad produce 1 unidad de excitación y el umbral de la célula ganglionar es 10: en un circuito de alta convergencia (bastones), 10 receptores recibiendo 1 unidad de luz cada uno sumarían 10 unidades y activarían la ganglionar. En un circuito sin convergencia (conos), un receptor necesitaría recibir 10 unidades de intensidad él solo para activar su ganglionar, demostrando por qué los bastones ven con menos luz.",
+      "keywords": [
+        "umbral",
+        "unidades de excitación",
+        "intensidad lumínica",
+        "activación"
+      ],
+      "page": 42
+    },
+    {
+      "q": "Defina la inhibición lateral y explique su relevancia en la percepción de bordes y contornos.",
+      "model": "La inhibición lateral es un fenómeno donde la activación de una neurona reduce la actividad de sus vecinas. Es la base fisiológica para percibir contornos y bordes (transiciones de luz a sombra), ya que realza los contrastes. A mayor inhibición recibida de las células vecinas, mayor es la oscuridad que percibimos en una superficie específica.",
+      "keywords": [
+        "inhibición lateral",
+        "bordes",
+        "contornos",
+        "contraste"
+      ],
+      "page": 43
+    },
+    {
+      "q": "Analice la ilusión de la 'Parrilla de Hermann' basándose en el mecanismo de inhibición lateral.",
+      "model": "En la intersección de los pasillos blancos, las células reciben inhibición lateral de cuatro lados (vecinos de arriba, abajo, izquierda y derecha). En los pasillos (fuera de las intersecciones), reciben menos inhibición. Al recibir más inhibición en el cruce, la respuesta neuronal es menor, lo que el cerebro interpreta como una zona más oscura, creando los 'puntos fantasmas'.",
+      "keywords": [
+        "Parrilla de Hermann",
+        "intersecciones",
+        "puntos fantasma",
+        "inhibición lateral"
+      ],
+      "page": 43
+    },
+    {
+      "q": "Relacione el comportamiento del sistema visual con el entorno ambiental según la iluminación (conclusión del tema).",
+      "model": "Lo que vemos depende de la interacción entre el entorno y nuestra fisiología: con mucha iluminación, los conos y su baja convergencia nos dan detalle y color. Con poca luz, los bastones y su alta convergencia nos permiten distinguir formas y movimiento para sobrevivir, aunque perdamos la capacidad de apreciar detalles finos.",
+      "keywords": [
+        "fisiología",
+        "entorno",
+        "dualidad visual",
+        "adaptación"
+      ],
+      "page": 43
+    },
+    {
+      "q": "¿Qué papel juegan las células horizontales y amacrinas en el procesamiento retiniano?",
+      "model": "Son interneuronas encargadas del procesamiento lateral. Las células horizontales modulan las señales en la sinapsis entre fotorreceptores y bipolares, mientras que las amacrinas lo hacen entre bipolares y ganglionares. Ambas son responsables de funciones complejas como la detección de contraste, movimiento y la propia inhibición lateral.",
+      "keywords": [
+        "interneuronas",
+        "procesamiento lateral",
+        "modulación"
+      ],
+      "page": 35
+    },
+    {
+      "q": "Explique por qué la fóvea es el área de máxima agudeza visual centrándose en su composición y conexión.",
+      "model": "La fóvea es el área de máxima agudeza porque: 1) Contiene exclusivamente conos; 2) La densidad de fotorreceptores es muy alta; 3) Prácticamente no hay convergencia neuronal, poseyendo muchos conos 'líneas privadas' con las células ganglionares, lo que preserva la información espacial detallada.",
+      "keywords": [
+        "máxima agudeza",
+        "fóvea",
+        "densidad",
+        "ausencia de convergencia"
+      ],
+      "page": 38
+    },
+    {
+      "q": "Describa la importancia de la luz visible dentro del espectro electromagnético.",
+      "model": "La luz visible es solo una pequeña porción de la radiación electromagnética (380 a 750 nm). Es la única parte capaz de activar los conos en la retina humana. Otras radiaciones (rayos X, gamma, ondas de radio) existen en el entorno pero son invisibles para nosotros sin tecnología, lo que limita nuestra percepción biológica a este rango específico.",
+      "keywords": [
+        "espectro electromagnético",
+        "nanómetros",
+        "radiación",
+        "percepción biológica"
+      ],
+      "page": 34
+    },
+    {
+      "q": "¿En qué consiste el proceso de acomodación y qué estructura es la responsable?",
+      "model": "La acomodación es el proceso mediante el cual el cristalino cambia su curvatura y forma para ajustar la capacidad de enfoque del ojo. Esto permite que la imagen de objetos situados a diferentes distancias se proyecte con nitidez sobre la fóvea para ser transformada en impulsos nerviosos.",
+      "keywords": [
+        "acomodación",
+        "cristalino",
+        "enfoque",
+        "nitidez"
+      ],
+      "page": 34
+    },
+    {
+      "q": "Analice la relación entre el número de receptores (130 millones) y la calidad del detalle en la recreación de escenas.",
+      "model": "Al tener unos 130 millones de células sensibles, cada receptor responde a una pequeñísima parte de la imagen (brillo, color, intensidad). Esta gran cantidad de 'sensores' permite recrear las escenas con un grado considerable de detalle, ya que la imagen final es un mosaico compuesto por la respuesta individual de millones de puntos de datos.",
+      "keywords": [
+        "detalle",
+        "130 millones",
+        "receptores",
+        "escenas visuales"
+      ],
+      "page": 35
+    },
+    {
+      "q": "¿Qué ocurre con la permeabilidad de la membrana del fotorreceptor durante la isomerización?",
+      "model": "Durante la isomerización, el cambio de forma del pigmento fotosensible altera la permeabilidad de la membrana del fotorreceptor. Esto provoca un cambio en el flujo de iones, lo que resulta en una alteración del potencial de membrana (generación del potencial receptor), iniciando la cadena de señales eléctricas hacia el cerebro.",
+      "keywords": [
+        "permeabilidad",
+        "membrana",
+        "iones",
+        "potencial de membrana"
+      ],
+      "page": 36
+    },
+    {
+      "q": "Diferencie el procesamiento que ocurre en las áreas V4 y V5.",
+      "model": "El área V4 está especializada exclusivamente en el procesamiento de la información del color. Por el contrario, el área V5 (también conocida como MT) se dedica al procesamiento y percepción del movimiento. Son ejemplos de la especialización funcional de la corteza visual extraestriada.",
+      "keywords": [
+        "V4",
+        "V5",
+        "color",
+        "movimiento",
+        "especialización"
+      ],
+      "page": 37
+    },
+    {
+      "q": "Explique por qué se utiliza una escala logarítmica para representar la sensibilidad en la adaptación a la oscuridad.",
+      "model": "Se utiliza porque el aumento de sensibilidad es masivo: al final del proceso de adaptación a la oscuridad, el ojo es aproximadamente 100,000 veces más sensible que al inicio. Una escala lineal no permitiría representar visualmente de forma clara cambios de tal magnitud en un solo gráfico.",
+      "keywords": [
+        "escala logarítmica",
+        "magnitud",
+        "sensibilidad",
+        "100,000 veces"
+      ],
+      "page": 40
+    },
+    {
+      "q": "¿Qué sucede con la percepción visual si se impide el proceso de regeneración del pigmento?",
+      "model": "Si se impide la regeneración (donde retinal y opsina se vuelven a unir), las moléculas de pigmento permanecerían 'decoloradas' tras ser activadas por la luz. Puesto que la transducción requiere moléculas de pigmento intactas para absorber luz, la percepción visual se detendría por completo al no haber más pigmento disponible para ser activado.",
+      "keywords": [
+        "cese de percepción",
+        "pigmento intacto",
+        "decoloración permanente"
+      ],
+      "page": 40
+    },
+    {
+      "q": "Sintetice cómo la convergencia neuronal explica la 'visión por bastones' en condiciones de penumbra.",
+      "model": "En penumbra hay pocos fotones. Gracias a que 120 bastones convergen en una sola célula ganglionar, sus débiles señales se suman (sumación espacial). Esta suma de impulsos permite alcanzar el umbral de disparo de la neurona ganglionar que una sola célula (o un grupo pequeño como en los conos) no podría lograr, permitiendo la visión en condiciones donde hay muy poca luz.",
+      "keywords": [
+        "sumación espacial",
+        "penumbra",
+        "umbral de disparo",
+        "convergencia"
+      ],
+      "page": 41
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Introducción",
+      "q": "¿Qué dos sistemas perceptivos se consideran especialmente indispensables en la sociedad digital del siglo XXI?",
+      "a": "La visión y la audición, debido a su papel crítico en la integración de información de las nuevas tecnologías.",
+      "page": 33
+    },
+    {
+      "cat": "Naturaleza de la Luz",
+      "q": "¿Cómo se define la luz visible desde una perspectiva física?",
+      "a": "Es una forma de radiación electromagnética perceptible por el ojo humano.",
+      "page": 34
+    },
+    {
+      "cat": "Naturaleza de la Luz",
+      "q": "¿Cuál es el rango aproximado de longitudes de onda que componen el espectro visible?",
+      "a": "Se encuentra entre los 380 y los 750 nanómetros (nm).",
+      "page": 34
+    },
+    {
+      "cat": "Naturaleza de la Luz",
+      "q": "¿Qué tipo de células sensoriales se activan específicamente por las longitudes de onda del espectro visible?",
+      "a": "Los conos, que permiten la percepción del color y el detalle.",
+      "page": 34
+    },
+    {
+      "cat": "Naturaleza de la Luz",
+      "q": "¿Qué otras formas de radiación componen el espectro electromagnético además de la luz visible?",
+      "a": "Microondas, ondas de radio, rayos X, rayos gamma e infrarrojos.",
+      "page": 34
+    },
+    {
+      "cat": "Anatomía Ocular",
+      "q": "¿Qué estructura ocular es responsable del 80% del poder de resolución del ojo?",
+      "a": "La córnea, que es la cubierta transparente frontal.",
+      "page": 34
+    },
+    {
+      "cat": "Anatomía Ocular",
+      "q": "¿Cuál es la función principal del cristalino en el proceso visual?",
+      "a": "Proporcionar el 20% del enfoque restante y ajustarse para captar estímulos a diferentes distancias.",
+      "page": 34
+    },
+    {
+      "cat": "Anatomía Ocular",
+      "q": "¿En qué consiste el proceso de acomodación ocular?",
+      "a": "Es el cambio de forma del cristalino para ajustar el enfoque según la distancia del objeto.",
+      "page": 34
+    },
+    {
+      "cat": "Anatomía Ocular",
+      "q": "¿Hacia qué zona específica se proyecta la imagen tras el proceso de acomodación para su transformación?",
+      "a": "Hacia la fóvea.",
+      "page": 34
+    },
+    {
+      "cat": "La Retina",
+      "q": "¿Qué función general cumple la retina en el sistema visual?",
+      "a": "Capta la luz y transforma la información en señales eléctricas interpretables por el cerebro.",
+      "page": 35
+    },
+    {
+      "cat": "La Retina",
+      "q": "¿Aproximadamente cuántas células sensibles a la luz contiene la retina humana?",
+      "a": "Unos 130 millones de fotorreceptores.",
+      "page": 35
+    },
+    {
+      "cat": "La Retina",
+      "q": "¿Cuál es la capa más externa de la retina y qué función tiene?",
+      "a": "La capa de células ganglionares, que envía las señales al cerebro a través del nervio óptico.",
+      "page": 35
+    },
+    {
+      "cat": "La Retina",
+      "q": "¿Qué papel desempeñan las células bipolares en la organización retiniana?",
+      "a": "Actúan como intermediarias transmitiendo señales modificadas entre fotorreceptores y células ganglionares.",
+      "page": 35
+    },
+    {
+      "cat": "La Retina",
+      "q": "¿Qué tipos de células componen la capa de fotorreceptores?",
+      "a": "Los conos y los bastones.",
+      "page": 35
+    },
+    {
+      "cat": "La Retina",
+      "q": "¿Cuál es la función específica de las células horizontales?",
+      "a": "Modulan y procesan las señales visuales en la región entre conos y células bipolares.",
+      "page": 35
+    },
+    {
+      "cat": "La Retina",
+      "q": "¿Qué función tienen las células amacrinas en el procesamiento visual?",
+      "a": "Contribuyen a la modulación de señales y detectan características como el contraste y el movimiento.",
+      "page": 35
+    },
+    {
+      "cat": "Transducción Visual",
+      "q": "¿Qué es la transducción visual?",
+      "a": "Es la transformación de la energía lumínica del estímulo en impulsos nerviosos eléctricos.",
+      "page": 36
+    },
+    {
+      "cat": "Transducción Visual",
+      "q": "¿En qué lugar de los fotorreceptores se encuentran los pigmentos fotosensibles?",
+      "a": "En el segmento externo de conos y bastones.",
+      "page": 36
+    },
+    {
+      "cat": "Transducción Visual",
+      "q": "¿Qué sucede durante la isomerización del pigmento?",
+      "a": "El pigmento cambia de forma al interactuar con un fotón, alterando la permeabilidad de la membrana.",
+      "page": 36
+    },
+    {
+      "cat": "Transducción Visual",
+      "q": "¿Qué es el potencial receptor o RMP?",
+      "a": "Es la respuesta eléctrica generada por los eventos bioquímicos tras la isomerización del pigmento.",
+      "page": 36
+    },
+    {
+      "cat": "Vía Visual",
+      "q": "¿Cómo se forma el nervio óptico?",
+      "a": "Mediante la agrupación de los axones de las células ganglionares.",
+      "page": 36
+    },
+    {
+      "cat": "Vía Visual",
+      "q": "¿Qué ocurre con las fibras de la mitad nasal de la retina en el quiasma óptico?",
+      "a": "Cruzan hacia el lado opuesto del cerebro.",
+      "page": 36
+    },
+    {
+      "cat": "Vía Visual",
+      "q": "¿Qué trayectoria siguen las fibras de la mitad temporal de la retina en el quiasma?",
+      "a": "Continúan su camino por el mismo lado (ipsilateral).",
+      "page": 36
+    },
+    {
+      "cat": "Vía Visual",
+      "q": "¿Cuál es la consecuencia funcional del cruce de fibras en el quiasma óptico?",
+      "a": "Permite que las señales del campo visual izquierdo sean procesadas por el hemisferio derecho y viceversa.",
+      "page": 36
+    },
+    {
+      "cat": "Vía Visual",
+      "q": "¿A qué estructura del tálamo llegan las señales visuales tras pasar por el tracto óptico?",
+      "a": "Al núcleo geniculado lateral.",
+      "page": 36
+    },
+    {
+      "cat": "Vía Visual",
+      "q": "¿Dónde se localiza la corteza visual primaria (área V1)?",
+      "a": "En la parte posterior del lóbulo occipital.",
+      "page": 36
+    },
+    {
+      "cat": "Vía Visual",
+      "q": "¿De qué funciones iniciales es responsable el área V1?",
+      "a": "Detección de bordes, orientación y movimiento básico.",
+      "page": 36
+    },
+    {
+      "cat": "Corteza Visual",
+      "q": "¿De qué se encarga específicamente el área visual V4?",
+      "a": "Del procesamiento y percepción del color.",
+      "page": 37
+    },
+    {
+      "cat": "Corteza Visual",
+      "q": "¿Qué aspectos visuales se procesan en el área V5?",
+      "a": "El movimiento complejo.",
+      "page": 37
+    },
+    {
+      "cat": "Corteza Visual",
+      "q": "¿Qué funciones se atribuyen al área V2?",
+      "a": "Procesamiento de bordes, texturas, contornos y movimiento.",
+      "page": 37
+    },
+    {
+      "cat": "Fotorreceptores",
+      "q": "¿Cuáles son las principales características de los conos?",
+      "a": "Sensibles a luz brillante, responsables del color y de la visión de detalles finos.",
+      "page": 37
+    },
+    {
+      "cat": "Fotorreceptores",
+      "q": "¿Cuáles son las funciones principales de los bastones?",
+      "a": "Sensibilidad a luz tenue (visión nocturna), visión periférica y detección de movimiento.",
+      "page": 37
+    },
+    {
+      "cat": "Fotorreceptores",
+      "q": "¿Por qué los conos nos permiten ver una amplia gama de colores?",
+      "a": "Porque existen tres tipos, cada uno sensible a longitudes de onda distintas (rojo, verde y azul).",
+      "page": 37
+    },
+    {
+      "cat": "Distribución Retiniana",
+      "q": "¿Qué tipo de fotorreceptores se encuentran exclusivamente en la fóvea?",
+      "a": "Únicamente conos.",
+      "page": 38
+    },
+    {
+      "cat": "Distribución Retiniana",
+      "q": "¿Qué compone la denominada retina periférica?",
+      "a": "Toda la retina a excepción de la fóvea; contiene tanto bastones como conos.",
+      "page": 38
+    },
+    {
+      "cat": "Distribución Retiniana",
+      "q": "¿Qué porcentaje de los conos totales del ojo se encuentran en la fóvea?",
+      "a": "Aproximadamente el 1% (unos 50.000 de los 6 millones totales).",
+      "page": 38
+    },
+    {
+      "cat": "Distribución Retiniana",
+      "q": "¿Cuántos bastones y cuántos conos hay aproximadamente en la retina humana?",
+      "a": "Cerca de 120 millones de bastones y 6 millones de conos.",
+      "page": 38
+    },
+    {
+      "cat": "Punto Ciego",
+      "q": "¿Qué es el punto ciego y por qué existe?",
+      "a": "Es una zona de la retina sin fotorreceptores donde el nervio óptico abandona el ojo.",
+      "page": 38
+    },
+    {
+      "cat": "Punto Ciego",
+      "q": "¿Por qué no solemos percibir el punto ciego en nuestra vida diaria?",
+      "a": "Porque el cerebro 'rellena' el área con el patrón circundante y se localiza fuera del enfoque nítido.",
+      "page": 38
+    },
+    {
+      "cat": "Adaptación a la Oscuridad",
+      "q": "¿Qué es el proceso de adaptación a la oscuridad?",
+      "a": "Es el aumento de la sensibilidad del ojo al pasar de un ambiente iluminado a uno oscuro.",
+      "page": 39
+    },
+    {
+      "cat": "Adaptación a la Oscuridad",
+      "q": "¿Cómo se describe la curva de adaptación a la oscuridad?",
+      "a": "Es un diagrama que muestra el cambio de sensibilidad visual en función del tiempo en oscuridad.",
+      "page": 39
+    },
+    {
+      "cat": "Adaptación a la Oscuridad",
+      "q": "¿Cuántas etapas presenta el proceso de aumento de sensibilidad en la oscuridad?",
+      "a": "Dos etapas: una inicial rápida y una posterior más lenta.",
+      "page": 39
+    },
+    {
+      "cat": "Adaptación a la Oscuridad",
+      "q": "¿Qué indica el descenso de la curva en el diagrama de adaptación a la oscuridad?",
+      "a": "Indica un aumento de la sensibilidad (disminución del umbral de detección).",
+      "page": 40
+    },
+    {
+      "cat": "Adaptación a la Oscuridad",
+      "q": "¿Cuánto tiempo tardan los conos en alcanzar su máxima sensibilidad en la oscuridad?",
+      "a": "Entre 3 y 5 minutos.",
+      "page": 40
+    },
+    {
+      "cat": "Adaptación a la Oscuridad",
+      "q": "¿A partir de qué minuto suelen los bastones superar la sensibilidad de los conos en la oscuridad?",
+      "a": "A los 7-10 minutos aproximadamente.",
+      "page": 40
+    },
+    {
+      "cat": "Adaptación a la Oscuridad",
+      "q": "¿Qué es el 'punto de ruptura conos-bastones'?",
+      "a": "Es el momento en que los bastones se vuelven más sensibles que los conos y pasan a controlar la visión.",
+      "page": 40
+    },
+    {
+      "cat": "Adaptación a la Oscuridad",
+      "q": "¿Cuánto tiempo tardan los bastones en alcanzar su sensibilidad máxima final?",
+      "a": "Aproximadamente 30 minutos.",
+      "page": 40
+    },
+    {
+      "cat": "Adaptación a la Oscuridad",
+      "q": "¿Cuál es la magnitud del aumento de sensibilidad al final del proceso de adaptación?",
+      "a": "Unas 100.000 veces mayor que la sensibilidad inicial adaptada a la luz.",
+      "page": 40
+    },
+    {
+      "cat": "Fisiología del Pigmento",
+      "q": "¿Por qué la adaptación de los conos es más rápida que la de los bastones?",
+      "a": "Porque el pigmento visual de los conos se regenera más rápido que el de los bastones.",
+      "page": 40
+    },
+    {
+      "cat": "Fisiología del Pigmento",
+      "q": "¿En qué consiste la 'decoloración del pigmento visual'?",
+      "a": "Es el proceso donde el retinal y la opsina se separan tras la absorción de luz, aclarando el pigmento.",
+      "page": 40
+    },
+    {
+      "cat": "Fisiología del Pigmento",
+      "q": "¿Qué es la regeneración del pigmento visual?",
+      "a": "Es el proceso bioquímico en el que la retinal y la opsina vuelven a unirse para permitir la transducción.",
+      "page": 40
+    },
+    {
+      "cat": "Convergencia Neuronal",
+      "q": "¿Qué es la convergencia neuronal en la retina?",
+      "a": "Ocurre cuando una sola neurona (como una ganglionar) recibe impulsos de muchos fotorreceptores.",
+      "page": 41
+    },
+    {
+      "cat": "Convergencia Neuronal",
+      "q": "¿Cuál es la proporción promedio de receptores por cada célula ganglionar?",
+      "a": "Aproximadamente 126 receptores por cada célula ganglionar.",
+      "page": 41
+    },
+    {
+      "cat": "Convergencia Neuronal",
+      "q": "¿Cómo difiere la convergencia entre bastones y conos?",
+      "a": "Los bastones tienen una convergencia mucho mayor (120:1) que los conos (6:1).",
+      "page": 41
+    },
+    {
+      "cat": "Convergencia Neuronal",
+      "q": "¿Qué significa que los conos de la fóvea tengan 'líneas privadas'?",
+      "a": "Significa que no hay convergencia; cada célula ganglionar recibe información de un solo cono.",
+      "page": 41
+    },
+    {
+      "cat": "Convergencia Neuronal",
+      "q": "¿Cuál es la principal ventaja perceptiva de la alta convergencia de los bastones?",
+      "a": "Proporciona una mayor sensibilidad a la luz, permitiendo ver en condiciones de baja iluminación.",
+      "page": 41
+    },
+    {
+      "cat": "Convergencia Neuronal",
+      "q": "¿Cómo afecta la convergencia a la probabilidad de activación de una neurona?",
+      "a": "A mayor convergencia, más neurotransmisores excitatorios se suman, facilitando que se alcance el umbral.",
+      "page": 41
+    },
+    {
+      "cat": "Agudeza Visual",
+      "q": "¿Por qué la visión por conos tiene una mayor agudeza visual que la de bastones?",
+      "a": "Debido a su baja convergencia neuronal, lo que permite distinguir detalles finos sin mezclar señales.",
+      "page": 42
+    },
+    {
+      "cat": "Agudeza Visual",
+      "q": "¿Qué sistema de receptores utilizamos predominantemente para leer o buscar objetos ocultos?",
+      "a": "Los conos, enfocando la imagen directamente en la fóvea.",
+      "page": 43
+    },
+    {
+      "cat": "Inhibición Lateral",
+      "q": "¿Qué es la inhibición lateral?",
+      "a": "Es un mecanismo de relaciones neuronales inhibitorias que ayuda a percibir contornos y bordes.",
+      "page": 43
+    },
+    {
+      "cat": "Inhibición Lateral",
+      "q": "¿Qué ilusión óptica se utiliza para explicar la inhibición lateral en el texto?",
+      "a": "La parrilla de Hermann.",
+      "page": 43
+    },
+    {
+      "cat": "Inhibición Lateral",
+      "q": "¿Por qué aparecen 'puntos fantasma' oscuros en las intersecciones de la parrilla de Hermann?",
+      "a": "Porque esas áreas reciben más inhibición de sus células vecinas que los pasillos rectos.",
+      "page": 43
+    },
+    {
+      "cat": "Inhibición Lateral",
+      "q": "¿Cuál es la regla general sobre la relación entre inhibición y brillo percibido?",
+      "a": "A mayor inhibición recibida por una neurona, mayor es la oscuridad percibida en esa superficie.",
+      "page": 43
+    },
+    {
+      "cat": "Fisiología",
+      "q": "¿Qué porcentaje del enfoque total del ojo recae en el cristalino?",
+      "a": "El 20%.",
+      "page": 34
+    },
+    {
+      "cat": "Procesos",
+      "q": "¿Qué ocurre con la permeabilidad de la membrana del fotorreceptor tras la isomerización?",
+      "a": "Sufre un cambio que altera el potencial de membrana de la célula.",
+      "page": 36
+    },
+    {
+      "cat": "Vía Visual",
+      "q": "¿Qué estructura sigue al quiasma óptico en la vía hacia el cerebro?",
+      "a": "El tracto óptico.",
+      "page": 36
+    },
+    {
+      "cat": "Corteza Visual",
+      "q": "¿Qué área se encarga de la integración de características visuales?",
+      "a": "El área V3.",
+      "page": 37
+    },
+    {
+      "cat": "Fotorreceptores",
+      "q": "¿A qué longitudes de onda son sensibles los tres tipos de conos?",
+      "a": "Larga (rojo), media (verde) y corta (azul).",
+      "page": 37
+    },
+    {
+      "cat": "Anatomía",
+      "q": "¿Cuál es el tamaño aproximado de la fóvea humana?",
+      "a": "Aproximadamente el tamaño de la letra 'o' impresa.",
+      "page": 38
+    },
+    {
+      "cat": "Procesos",
+      "q": "¿Qué sucede con la retina (molécula) cuando se decolora el pigmento?",
+      "a": "Adquiere una tonalidad más clara al separarse de la opsina.",
+      "page": 40
+    },
+    {
+      "cat": "Circuitos",
+      "q": "¿Por qué es necesaria la activación de la célula ganglionar para la percepción?",
+      "a": "Porque es la única forma de que la señal salga de la retina hacia los centros superiores del cerebro.",
+      "page": 42
+    },
+    {
+      "cat": "Psicología",
+      "q": "¿Cómo influye el entorno frente a la fisiología en la percepción según el texto?",
+      "a": "Lo que vemos depende de ambos factores: las propiedades del entorno y el funcionamiento de nuestro sistema visual.",
+      "page": 43
+    },
+    {
+      "cat": "Introducción",
+      "q": "¿Por qué se dice que el ser humano del siglo XXI es 'especialmente visual'?",
+      "a": "Debido a que la mayoría de categorías profesionales y nuevas tecnologías dependen de la visión.",
+      "page": 33
+    },
+    {
+      "cat": "Espectro",
+      "q": "¿Por qué no podemos ver los rayos X o las ondas de radio de forma natural?",
+      "a": "Porque sus longitudes de onda no activan las células sensoriales (conos) de nuestra retina.",
+      "page": 34
+    },
+    {
+      "cat": "Anatomía",
+      "q": "¿Qué parte del ojo es descrita como una 'cubierta transparente'?",
+      "a": "La córnea.",
+      "page": 34
+    },
+    {
+      "cat": "Vía Visual",
+      "q": "¿Cómo se conoce también al área V1 por su apariencia?",
+      "a": "Área estriada.",
+      "page": 36
+    },
+    {
+      "cat": "Fotorreceptores",
+      "q": "¿Qué región anatómica común comparten conos y bastones?",
+      "a": "Núcleo, mitocondrias, cilio de conexión y sinapsis.",
+      "page": 37
+    },
+    {
+      "cat": "Adaptación",
+      "q": "¿Qué término técnico se usa para referirse a las condiciones de buena iluminación?",
+      "a": "Condiciones fotópicas.",
+      "page": 40
+    },
+    {
+      "cat": "Adaptación",
+      "q": "¿Qué término se usa para referirse a condiciones de baja iluminación?",
+      "a": "Condiciones escotópicas.",
+      "page": 40
+    },
+    {
+      "cat": "Circuitos",
+      "q": "¿Qué tipo de sinapsis favorece la sensibilidad en los bastones?",
+      "a": "La suma de neurotransmisores excitatorios de múltiples receptores sobre una ganglionar.",
+      "page": 41
+    },
+    {
+      "cat": "Ilusiones",
+      "q": "¿Qué elemento se considera el más primitivo de un patrón visual?",
+      "a": "El borde o contorno.",
+      "page": 43
+    },
+    {
+      "cat": "Vía Visual",
+      "q": "¿A qué lóbulo cerebral llega finalmente la información visual principal?",
+      "a": "Al lóbulo occipital.",
+      "page": 36
+    },
+    {
+      "cat": "Retina",
+      "q": "¿Qué células de la retina actúan específicamente como interneuronas?",
+      "a": "Las células horizontales y las células amacrinas.",
+      "page": 35
+    },
+    {
+      "cat": "Adaptación",
+      "q": "¿Por qué la curva de adaptación se suele representar en escala logarítmica?",
+      "a": "Debido al enorme rango de cambio en la sensibilidad (hasta 100.000 veces).",
+      "page": 40
+    },
+    {
+      "cat": "Anatomía Ocular",
+      "q": "¿Cuál es la función del iris y la pupila según el diagrama de la Figura 16?",
+      "a": "Regulan la entrada de luz al interior del globo ocular.",
+      "page": 38
+    },
+    {
+      "cat": "Transducción",
+      "q": "¿Qué componente de la molécula de pigmento es el que absorbe la luz directamente?",
+      "a": "El retinal.",
+      "page": 40
+    },
+    {
+      "cat": "Distribución",
+      "q": "¿En qué zona de la retina la agudeza visual es prácticamente nula en condiciones normales?",
+      "a": "En el punto ciego (disco óptico).",
+      "page": 38
+    },
+    {
+      "cat": "Fisiología",
+      "q": "¿Cuál es la causa biológica de que necesitemos luz para ver?",
+      "a": "La necesidad de fotones para isomerizar el pigmento visual y generar señales eléctricas.",
+      "page": 40
+    },
+    {
+      "cat": "Circuitos",
+      "q": "¿Cuántos conos se estima que hay en total en la retina humana?",
+      "a": "Aproximadamente 6 millones.",
+      "page": 38
+    },
+    {
+      "cat": "Circuitos",
+      "q": "¿Cuántos bastones se estima que hay en total en la retina humana?",
+      "a": "Aproximadamente 120 millones.",
+      "page": 38
+    },
+    {
+      "cat": "Espectro",
+      "q": "¿Qué color percibimos típicamente a los 400 nm de longitud de onda?",
+      "a": "El azul.",
+      "page": 34
+    },
+    {
+      "cat": "Espectro",
+      "q": "¿Qué color se asocia a las longitudes de onda cercanas a los 700 nm?",
+      "a": "El rojo.",
+      "page": 34
+    },
+    {
+      "cat": "Anatomía",
+      "q": "¿Qué estructura sostiene al cristalino permitiendo su cambio de forma?",
+      "a": "El ligamento suspensorio y el cuerpo ciliar.",
+      "page": 38
+    },
+    {
+      "cat": "Vía Visual",
+      "q": "¿Cómo se denominan las fibras que no cruzan en el quiasma óptico?",
+      "a": "Fibras temporales.",
+      "page": 36
+    },
+    {
+      "cat": "Vía Visual",
+      "q": "¿Cómo se denominan las fibras que sí cruzan en el quiasma?",
+      "a": "Fibras nasales.",
+      "page": 36
+    },
+    {
+      "cat": "Retina",
+      "q": "¿Cuál es la dirección del flujo de información visual dentro de la retina?",
+      "a": "De fotorreceptores a células bipolares, y de estas a las ganglionares.",
+      "page": 35
+    },
+    {
+      "cat": "Adaptación",
+      "q": "¿Qué sistema domina la visión durante los primeros 5 minutos de oscuridad?",
+      "a": "El sistema de conos.",
+      "page": 40
+    },
+    {
+      "cat": "Adaptación",
+      "q": "¿Qué sistema domina la visión tras 20 minutos en total oscuridad?",
+      "a": "El sistema de bastones.",
+      "page": 40
+    },
+    {
+      "cat": "Agudeza",
+      "q": "¿Por qué vemos borroso en la periferia en comparación con el centro?",
+      "a": "Debido a la alta convergencia neuronal de los receptores periféricos hacia las ganglionares.",
+      "page": 43
+    },
+    {
+      "cat": "Resumen",
+      "q": "¿A qué se refiere el texto con 'visión por bastones' vs 'visión por conos'?",
+      "a": "A los dos sistemas funcionales distintos que operan según la intensidad de la luz y la necesidad de detalle.",
+      "page": 41
+    }
+  ]
+}
