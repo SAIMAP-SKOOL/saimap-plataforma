@@ -11,29 +11,55 @@ const SUBJECT_MAP = {
     'psicobiologia': 'bases-biologicas-del-comportamiento'
 };
 
-function extractDB(htmlContent) {
+function extractDB(htmlContent, filename, jsonPath) {
+    // 1. Intentar extraer de la etiqueta script id="tema-db"
+    const startTag = '<script id="tema-db" type="application/json">';
+    const startIdx = htmlContent.indexOf(startTag);
+    if (startIdx !== -1) {
+        const endTag = '</script>';
+        const endIdx = htmlContent.indexOf(endTag, startIdx + startTag.length);
+        if (endIdx !== -1) {
+            const jsonStr = htmlContent.substring(startIdx + startTag.length, endIdx).trim();
+            try {
+                return JSON.parse(jsonStr);
+            } catch(e) {
+                console.error(`Error parseando JSON de tema-db en ${filename}:`, e);
+            }
+        }
+    }
+    
+    // 2. Intentar leer de la versión antigua "DB: {"
     const dbStartKey = "DB: {";
-    const startIdx = htmlContent.indexOf(dbStartKey);
-    if (startIdx === -1) return null;
-    
-    const objStartIdx = startIdx + dbStartKey.length - 1; 
-    let braceCount = 1;
-    let i = objStartIdx + 1;
-    
-    while (braceCount > 0 && i < htmlContent.length) {
-        if (htmlContent[i] === '{') braceCount++;
-        else if (htmlContent[i] === '}') braceCount--;
-        i++;
+    const oldStartIdx = htmlContent.indexOf(dbStartKey);
+    if (oldStartIdx !== -1) {
+        const objStartIdx = oldStartIdx + dbStartKey.length - 1; 
+        let braceCount = 1;
+        let i = objStartIdx + 1;
+        while (braceCount > 0 && i < htmlContent.length) {
+            if (htmlContent[i] === '{') braceCount++;
+            else if (htmlContent[i] === '}') braceCount--;
+            i++;
+        }
+        const dbStr = htmlContent.substring(objStartIdx, i);
+        try {
+            const evalFn = new Function(`return ${dbStr}`);
+            return evalFn();
+        } catch(e) {
+            console.error("Error al evaluar DB antigua:", e);
+        }
+    }
+
+    // 3. Fallback: Intentar leer el archivo JSON que ya está guardado en json/
+    if (fs.existsSync(jsonPath)) {
+        try {
+            console.log(`  └─ Usando archivo JSON existente como fuente para ${filename}`);
+            return JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+        } catch (e) {
+            console.error(`Error leyendo JSON existente de ${jsonPath}:`, e);
+        }
     }
     
-    const dbStr = htmlContent.substring(objStartIdx, i);
-    try {
-        const evalFn = new Function(`return ${dbStr}`);
-        return evalFn();
-    } catch(e) {
-        console.error("Error al evaluar DB:", e);
-        return null;
-    }
+    return null;
 }
 
 function processFiles() {
@@ -65,9 +91,11 @@ function processFiles() {
         
         // Convertir "2-1" a "2.1" para visualización de tema
         const temaKey = temaFilePart.replace(/-/g, '.');
+        const jsonFilename = `${asignaturaId}-tema-${temaFilePart}.json`;
+        const jsonPath = path.join(JSON_DIR, jsonFilename);
         
         // 2. Extraer base de datos del archivo original
-        const db = extractDB(content);
+        const db = extractDB(content, filename, jsonPath);
         if (!db) {
             console.error(`No se pudo extraer la base de datos de ${filename}`);
             return;
@@ -95,11 +123,6 @@ function processFiles() {
             "temaKey": "${temaKey}"
         }
     </script>
-    
-    <!-- Base de datos de preguntas -->
-    <script id="tema-db" type="application/json">
-        ${JSON.stringify(db, null, 2)}
-    </script>
 </body>
 </html>`;
         
@@ -108,8 +131,6 @@ function processFiles() {
         console.log(`✓ Modularizado con éxito: ${filename} (Reducido de ~250KB a ~${Math.round(modularHtml.length / 1024)}KB)`);
         
         // 6. Guardar también una copia limpia en json/ si no existe o para consistencia
-        const jsonFilename = `${asignaturaId}-tema-${temaFilePart}.json`;
-        const jsonPath = path.join(JSON_DIR, jsonFilename);
         fs.writeFileSync(jsonPath, JSON.stringify(db, null, 2), 'utf8');
         console.log(`  └─ Copia JSON actualizada en: json/${jsonFilename}`);
     });

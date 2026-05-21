@@ -513,9 +513,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 2. Leer configuración embebida en el HTML
     const configEl = document.getElementById('tema-config');
-    const dbEl = document.getElementById('tema-db');
     
-    if (!configEl || !dbEl) {
+    if (!configEl) {
         // Fallback: Si no hay elementos embebidos, intentar leer parámetros de la URL
         const params = new URLSearchParams(window.location.search);
         SUBJECT_ID = params.get('asignatura') || '';
@@ -539,35 +538,50 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.className = "flex flex-col min-h-screen";
     document.body.innerHTML = LAYOUT_HTML;
 
-    // 4. Leer base de datos de preguntas
-    try {
-        let rawDB = {};
-        if (dbEl) {
-            rawDB = JSON.parse(dbEl.textContent);
-        }
-        app.DB = {
-            quiz: rawDB.quiz || [],
-            trainer: rawDB.trainer || [],
-            flashcards: rawDB.flashcards || []
-        };
-    } catch(e) {
-        renderErrorScreen('Error al cargar la base de datos de preguntas: ' + e.message);
-        return;
-    }
-
-    // 5. Aplicar tema visual e inicializar
+    // 4. Aplicar tema visual e inicializar
     const theme = THEME_CONFIG[SUBJECT_ID] || THEME_CONFIG['_default'];
     applyTheme(theme);
 
-    // 6. Cargar fallos guardados
-    app.loadSavedFailures();
+    // 5. Cargar base de datos de preguntas de forma asíncrona (JSON externo)
+    const temaFilePart = String(TEMA_KEY).replace(/\./g, '-');
+    const fetchUrl = `json/${SUBJECT_ID}-tema-${temaFilePart}.json`;
 
-    // 7. Ocultar pantalla de carga e iniciar
-    document.getElementById('view-loading').classList.add('hidden');
-    app.showView('home');
+    fetch(fetchUrl)
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(`Servidor respondió con código ${res.status}`);
+            }
+            return res.json();
+        })
+        .then(data => {
+            app.DB = {
+                quiz: data.quiz || [],
+                trainer: data.trainer || [],
+                flashcards: data.flashcards || []
+            };
 
-    // 8. Desbloquear tema en localStorage para el portal index.html
-    unlockTemaInPortal(theme.name);
+            // 6. Cargar fallos guardados
+            app.loadSavedFailures();
+
+            // 7. Ocultar pantalla de carga e iniciar
+            document.getElementById('view-loading').classList.add('hidden');
+            app.showView('home');
+
+            // 8. Desbloquear tema en localStorage para el portal index.html
+            unlockTemaInPortal(theme.name);
+        })
+        .catch(err => {
+            console.error("Error al cargar JSON:", err);
+            let userMsg = `No se pudo cargar el archivo de preguntas (Ruta: <code>${fetchUrl}</code>).<br><br>`;
+            if (window.location.protocol === 'file:') {
+                userMsg += `<strong>Causa probable:</strong> Estás abriendo el HTML localmente haciendo doble clic desde el Explorador de Archivos.<br>`;
+                userMsg += `Las normas de seguridad de los navegadores modernos (CORS) bloquean la carga de archivos locales externos.<br><br>`;
+                userMsg += `<strong>Solución:</strong> Sube la plataforma a GitHub Pages, o ejecuta un servidor web local (como Live Server de VS Code o <code>python -m http.server</code>).`;
+            } else {
+                userMsg += `<strong>Detalles del error:</strong> ${err.message}`;
+            }
+            renderErrorScreen(userMsg);
+        });
 });
 
 function loadDependencies() {
