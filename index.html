@@ -201,8 +201,16 @@
         function loadSubject(id, tema = null, updateHistoryState = true) {
             // Si es un tema independiente, redirigir a su archivo de aprendizaje específico
             if (tema) {
+                let shortId = id;
+                if (id === 'psicologia-del-aprendizaje') shortId = 'aprendizaje';
+                else if (id === 'bases-biologicas-del-comportamiento') shortId = 'psicobiologia';
+                else if (id === 'historia-de-la-psicologia') shortId = 'historia';
+                else if (id.startsWith('psicologia-de-la-')) shortId = id.replace('psicologia-de-la-', '');
+                else if (id.startsWith('psicologia-del-')) shortId = id.replace('psicologia-del-', '');
+                else if (id.startsWith('psicologia-')) shortId = id.replace('psicologia-', '');
+                
                 const temaFilePart = String(tema).replace(/\./g, '-');
-                const targetUrl = `tema.html?asignatura=${id}&tema=${temaFilePart}`;
+                const targetUrl = `${shortId}-tema-${temaFilePart}.html`;
                 window.location.href = targetUrl;
                 return;
             }

@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tema 2.2 - Psicología del Aprendizaje</title>
-    <!-- Importamos el cargador dinámico común de temas -->
-    <script src="js/tema-loader.js" defer></script>
-</head>
-<body>
-    <!-- Configuración del tema -->
-    <script id="tema-config" type="application/json">
-        {
-            "asignaturaId": "psicologia-del-aprendizaje",
-            "temaKey": "2.2"
-        }
-    </script>
-    
-    <!-- Base de datos de preguntas -->
-    <script id="tema-db" type="application/json">
-        {
+{
   "quiz": [
     {
       "q": "Según la teoría de los procesos duales, ¿dónde ocurren los procesos neurales de sensibilización?",
@@ -2702,6 +2682,3 @@
     }
   ]
 }
-    </script>
-</body>
-</html>

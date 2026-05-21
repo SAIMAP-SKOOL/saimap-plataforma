@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tema 4.1 - Psicología del Aprendizaje</title>
-    <!-- Importamos el cargador dinámico común de temas -->
-    <script src="js/tema-loader.js" defer></script>
-</head>
-<body>
-    <!-- Configuración del tema -->
-    <script id="tema-config" type="application/json">
-        {
-            "asignaturaId": "psicologia-del-aprendizaje",
-            "temaKey": "4.1"
-        }
-    </script>
-    
-    <!-- Base de datos de preguntas -->
-    <script id="tema-db" type="application/json">
-        {
+{
   "quiz": [
     {
       "q": "Indique si la siguiente afirmación es Verdadera o Falsa: La crisis del conductismo fue detonada exclusivamente por anomalías empíricas en la experimentación animal, sin influencias de corrientes filosóficas o tecnológicas externas.",
@@ -2705,6 +2685,3 @@
     }
   ]
 }
-    </script>
-</body>
-</html>
