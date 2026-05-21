@@ -220,7 +220,7 @@ const LAYOUT_HTML = `
             </div>
 
             <div class="flex items-center gap-4">
-                <a href="index.html" id="back-btn" class="flex items-center gap-1.5 px-3.5 py-2 border border-slate-200 rounded-xl font-bold text-xs text-slate-600 transition-all bg-white shadow-sm cursor-pointer">
+                <a href="../../../index.html" id="back-btn" class="flex items-center gap-1.5 px-3.5 py-2 border border-slate-200 rounded-xl font-bold text-xs text-slate-600 transition-all bg-white shadow-sm cursor-pointer">
                     <i class="ph-bold ph-arrow-left"></i> Volver al Portal
                 </a>
                 <nav id="nav-controls" class="hidden flex items-center gap-4">
@@ -251,7 +251,7 @@ const LAYOUT_HTML = `
                 <i class="ph-bold ph-warning-circle text-5xl text-red-400 mb-4"></i>
                 <h2 class="text-2xl font-bold text-slate-800 mb-2">Error al cargar</h2>
                 <p id="error-message" class="text-slate-500 mb-6">No se pudieron cargar las preguntas.</p>
-                <a href="index.html" class="btn-primary py-3 px-8 rounded-xl inline-block">Volver al Portal</a>
+                <a href="../../../index.html" class="btn-primary py-3 px-8 rounded-xl inline-block">Volver al Portal</a>
             </div>
         </section>
 
@@ -503,6 +503,8 @@ const COMMON_CSS = `
 // Variables globales que contendrán la asignatura y el tema actual
 let SUBJECT_ID = '';
 let TEMA_KEY = '';
+let COURSE_ID = '1º';
+let FOLDER_ID = 'Otros';
 
 // ====================================================================
 // INICIALIZACIÓN DE LA MÁQUINA DE TEMAS
@@ -543,8 +545,14 @@ document.addEventListener("DOMContentLoaded", () => {
     applyTheme(theme);
 
     // 5. Cargar base de datos de preguntas de forma asíncrona (JSON externo)
+    const pathParts = decodeURIComponent(window.location.pathname).replace(/\\/g, '/').split('/');
+    const temasIndex = pathParts.indexOf('temas');
+    if (temasIndex !== -1 && pathParts.length > temasIndex + 2) {
+        COURSE_ID = pathParts[temasIndex + 1];
+        FOLDER_ID = pathParts[temasIndex + 2];
+    }
     const temaFilePart = String(TEMA_KEY).replace(/\./g, '-');
-    const fetchUrl = `json/${SUBJECT_ID}-tema-${temaFilePart}.json`;
+    const fetchUrl = `../../../json/${COURSE_ID}/${FOLDER_ID}/${SUBJECT_ID}-tema-${temaFilePart}.json`;
 
     fetch(fetchUrl)
         .then(res => {
@@ -610,7 +618,7 @@ function renderErrorScreen(msg) {
             <i class="ph-bold ph-warning-circle text-5xl text-red-500 mb-4 inline-block"></i>
             <h2 class="text-2xl font-bold text-slate-800 mb-2">Error de Configuración</h2>
             <p class="text-slate-500 mb-6 text-sm">${msg}</p>
-            <a href="index.html" class="inline-block bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 px-8 rounded-xl transition text-sm">Volver al Portal</a>
+            <a href="../../../index.html" class="inline-block bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 px-8 rounded-xl transition text-sm">Volver al Portal</a>
         </div>
     `;
 }
@@ -705,7 +713,7 @@ function unlockTemaInPortal(subjectName) {
         if (!unlocked[SUBJECT_ID]) {
             unlocked[SUBJECT_ID] = {
                 name: subjectName,
-                year: '1º', // Fallback
+                year: COURSE_ID,
                 unlockedTemas: []
             };
         }
