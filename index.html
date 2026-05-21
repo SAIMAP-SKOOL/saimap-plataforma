@@ -13,6 +13,8 @@
         .wrong-bg { background-color: #fee2e2; border-color: #ef4444; color: #991b1b; }
         .fade-in { animation: fadeIn 0.3s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .scale-in { animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        @keyframes scaleIn { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
         
         /* Flashcard Styles */
         .flashcard-container {
@@ -190,7 +192,9 @@
             hasFlashcards: false,
             flashcardsProgress: { known: [], review: [], current: 0 },
             trainerAnswers: {},
-            trainerChecked: {}
+            trainerChecked: {},
+            showPromoModal: false,
+            showLoginModal: false
         };
 
         // --- SISTEMA DE ACCESO Y AUTENTICACIÓN (WHITELIST) ---
@@ -250,6 +254,7 @@
                     authState.email = email;
                     authState.isAuthenticated = true;
                     authState.error = '';
+                    state.showLoginModal = false;
                     
                     // Comprobar si hay redirección pendiente
                     const params = new URLSearchParams(window.location.search);
@@ -282,6 +287,11 @@
 
         // Verificar la sesión al cargar la página
         async function checkAuthOnLoad() {
+            const params = new URLSearchParams(window.location.search);
+            if (params.get('lock') === 'true') {
+                state.showPromoModal = true;
+            }
+
             if (!REQUIRE_AUTH) {
                 authState.isAuthenticated = true;
                 render();
@@ -322,91 +332,23 @@
 
         // --- SISTEMA DE DESBLOQUEOS (localStorage) ---
         function getUnlockedData() {
-            try {
-                let data = JSON.parse(localStorage.getItem('saimap_unlocked')) || {};
-                let modified = false;
+            const data = {};
+            AVAILABLE_SUBJECTS.forEach(sub => {
+                const themeKeys = Object.keys(THEME_SUBTITLES[sub.id] || {});
+                const unlockedTemas = themeKeys.map(k => `Tema ${k}`);
+                unlockedTemas.push('Examen Final');
 
-                // Migrar clave legacy 'psicologia-del-desarrollo' a 'psicologia-desarrollo-infancia-adolescencia'
-                if (data['psicologia-del-desarrollo']) {
-                    data['psicologia-desarrollo-infancia-adolescencia'] = data['psicologia-del-desarrollo'];
-                    delete data['psicologia-del-desarrollo'];
-                    modified = true;
-                }
-
-                // Normalización de claves legacy (ej: "psicologia-del-aprendizaje-tema-1-1")
-                for (const key of Object.keys(data)) {
-                    if (key.includes('-tema-')) {
-                        const parts = key.split('-tema-');
-                        const realSubjectId = parts[0];
-                        const temaPart = parts[1].replace(/-/g, '.'); // "1-1" -> "1.1"
-                        
-                        const subjectMeta = AVAILABLE_SUBJECTS.find(s => s.id === realSubjectId);
-                        const realName = subjectMeta ? subjectMeta.name : realSubjectId.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-                        const realYear = subjectMeta ? subjectMeta.year : '1º';
-
-                        if (!data[realSubjectId]) {
-                            data[realSubjectId] = {
-                                name: realName,
-                                year: realYear,
-                                unlockedTemas: []
-                            };
-                        }
-
-                        const temaLabel = `Tema ${temaPart}`;
-                        if (!data[realSubjectId].unlockedTemas.includes(temaLabel)) {
-                            data[realSubjectId].unlockedTemas.push(temaLabel);
-                        }
-
-                        delete data[key];
-                        modified = true;
-                    }
-                }
-
-                // Normalizar nombres que quedaron como "Asignatura" o actualizar si el nombre en AVAILABLE_SUBJECTS cambió
-                for (const key of Object.keys(data)) {
-                    if (data[key] && typeof data[key] === 'object') {
-                        const subjectMeta = AVAILABLE_SUBJECTS.find(s => s.id === key);
-                        if (subjectMeta) {
-                            if (data[key].name !== subjectMeta.name) {
-                                data[key].name = subjectMeta.name;
-                                modified = true;
-                            }
-                            if (data[key].year !== subjectMeta.year) {
-                                data[key].year = subjectMeta.year;
-                                modified = true;
-                            }
-                        }
-                    }
-                }
-
-                if (modified) {
-                    localStorage.setItem('saimap_unlocked', JSON.stringify(data));
-                }
-
-                return data;
-            } catch(e) {
-                return {};
-            }
+                data[sub.id] = {
+                    name: sub.name,
+                    year: sub.year,
+                    unlockedTemas: unlockedTemas
+                };
+            });
+            return data;
         }
 
         function unlockSubjectAndTema(id, tema) {
-            const unlocked = getUnlockedData();
-            const subjectMeta = AVAILABLE_SUBJECTS.find(s => s.id === id);
-            
-            if (!unlocked[id]) {
-                unlocked[id] = {
-                    name: subjectMeta ? subjectMeta.name : id.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
-                    year: subjectMeta ? subjectMeta.year : '1º',
-                    unlockedTemas: []
-                };
-            }
-
-            const key = tema ? `Tema ${tema}` : 'Examen Final';
-            if (!unlocked[id].unlockedTemas.includes(key)) {
-                unlocked[id].unlockedTemas.push(key);
-            }
-
-            localStorage.setItem('saimap_unlocked', JSON.stringify(unlocked));
+            // No requiere persistencia manual bajo el modelo freemium
         }
 
         // --- MANEJO DE HISTORIAL (localStorage) ---
@@ -901,9 +843,15 @@
                             <div onclick="appMethods.enterSubjectFolder('${id}')" class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm hover:border-indigo-400 hover:shadow-md transition-all flex flex-col justify-between cursor-pointer group">
                                 <div>
                                     <div class="flex justify-between items-start mb-3">
-                                        <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-50 text-emerald-700 flex items-center gap-1">
-                                            <i data-lucide="unlock" class="w-2.5 h-2.5"></i> Desbloqueada
-                                        </span>
+                                        ${authState.isAuthenticated ? `
+                                            <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-50 text-emerald-700 flex items-center gap-1">
+                                                <i data-lucide="unlock" class="w-2.5 h-2.5"></i> Acceso Completo
+                                            </span>
+                                        ` : `
+                                            <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-amber-50 text-amber-700 flex items-center gap-1">
+                                                <i data-lucide="sparkles" class="w-2.5 h-2.5"></i> Tema 1 Gratis
+                                            </span>
+                                        `}
                                         <span class="text-[10px] font-bold text-slate-400">${year} Curso</span>
                                     </div>
                                     <h3 class="font-bold text-slate-800 text-base leading-snug mb-4 group-hover:text-indigo-600 transition-colors">${sub.name}</h3>
@@ -922,36 +870,7 @@
                 `;
             }
 
-            // Catálogo Completo (Por desbloquear / Bloqueadas)
-            const lockedSubjects = AVAILABLE_SUBJECTS.filter(s => !unlockedIds.includes(s.id));
-            const filteredLocked = lockedSubjects.filter(s => 
-                state.filterYear === 'Todos' || s.year === state.filterYear
-            );
-
             let lockedSectionHTML = '';
-            if (filteredLocked.length > 0) {
-                lockedSectionHTML = `
-                    <div class="space-y-4 pt-4">
-                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
-                            <i data-lucide="lock" class="w-4 h-4"></i> Por Desbloquear (${filteredLocked.length})
-                        </h4>
-                        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-                            ${filteredLocked.map(s => `
-                            <div onclick="alert('Esta asignatura está bloqueada. Accede a ella desde tu plataforma Skool para activarla.'); window.location.href = 'https://www.skool.com/saimap-ia-learning-4493/about';" class="p-5 bg-slate-100/50 border border-slate-200/60 rounded-2xl text-left transition-all grayscale opacity-60 cursor-pointer hover:bg-slate-200/30 group">
-                                <div class="flex justify-between items-start mb-3">
-                                    <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-slate-200 text-slate-500 flex items-center gap-1">
-                                        <i data-lucide="lock" class="w-2.5 h-2.5"></i> Bloqueada
-                                    </span>
-                                    <span class="text-[10px] font-bold text-slate-400">${s.year} Curso</span>
-                                </div>
-                                <h3 class="font-bold text-slate-800 text-base leading-snug mb-3">${s.name}</h3>
-                                <div class="text-xs text-slate-400 italic">Haz clic en su link de Skool para desbloquear</div>
-                            </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                `;
-            }
 
             return `
                 <div class="max-w-5xl w-full mx-auto px-4 py-8 space-y-8 flex-grow fade-in">
@@ -961,18 +880,23 @@
                         <div class="space-y-2 max-w-xl">
                             <span class="text-xs font-bold tracking-[0.3em] text-indigo-300 uppercase block">Portal SAIMAP</span>
                             <h1 class="text-3xl md:text-4xl font-black tracking-tight">Academia de Psicología</h1>
-                            <p class="text-slate-400 text-sm">Tu espacio de estudio interactivo. Desbloquea contenidos a medida que avanzas en tu curso de Skool.</p>
+                            <p class="text-slate-400 text-sm">Tu espacio de estudio interactivo. Únete a la academia para acceder de forma ilimitada a todos los contenidos.</p>
                         </div>
                         <div class="flex flex-wrap items-center gap-3">
-                            ${(REQUIRE_AUTH && authState.email) ? `
+                            ${(REQUIRE_AUTH && authState.isAuthenticated && authState.email) ? `
                                 <div class="flex items-center gap-2.5 bg-white/10 border border-white/10 px-4 py-2.5 rounded-xl text-xs">
-                                    <div class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
                                     <span class="text-slate-200 font-medium">${authState.email}</span>
                                     <button onclick="handleLogout()" class="ml-1.5 text-slate-400 hover:text-rose-400 font-bold transition-colors" title="Cerrar sesión">
                                         <i data-lucide="log-out" class="w-4.5 h-4.5"></i>
                                     </button>
                                 </div>
-                            ` : ''}
+                            ` : `
+                                <button onclick="state.showLoginModal = true; render();" class="px-5 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+                                    <i data-lucide="log-in" class="w-4 h-4"></i>
+                                    Acceso Alumnos
+                                </button>
+                            `}
                             <button onclick="appMethods.toggleUploader()" class="px-5 py-3 rounded-xl border border-white/20 hover:bg-white/10 text-white font-bold text-sm transition-all flex items-center gap-2">
                                 <i data-lucide="${state.showUploader ? 'x-circle' : 'upload-cloud'}" class="w-4 h-4"></i>
                                 ${state.showUploader ? 'Cerrar Carga' : 'Cargar JSON local'}
@@ -996,7 +920,7 @@
                     <div class="space-y-6">
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-3">
                             <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
-                                <i data-lucide="folder-heart" class="w-4 h-4 text-indigo-500"></i> Mis Asignaturas Desbloqueadas
+                                <i data-lucide="book-open" class="w-4 h-4 text-indigo-500"></i> Plan de Estudios
                             </h3>
                             <!-- Filtros de Curso -->
                             <div class="flex bg-slate-200/60 p-1 rounded-xl text-xs font-bold text-slate-500 self-start">
@@ -1118,10 +1042,10 @@
             let temasListHTML = '';
             if (temas.length === 0) {
                 temasListHTML = `
-                    <div class="bg-white border border-slate-200 border-dashed rounded-3xl p-8 text-center text-slate-500">
-                        <i data-lucide="book" class="w-8 h-8 mx-auto text-indigo-500 mb-3 opacity-60"></i>
-                        <h4 class="font-bold text-slate-700 text-sm mb-1">No hay temas desbloqueados</h4>
-                        <p class="text-xs text-slate-400 max-w-xs mx-auto">Accede a ellos desde tu plataforma de Skool para activarlos.</p>
+                    <div class="bg-white border border-slate-200 rounded-3xl p-8 text-center text-slate-500 shadow-sm">
+                        <i data-lucide="award" class="w-10 h-10 mx-auto text-indigo-500 mb-3 opacity-85"></i>
+                        <h4 class="font-bold text-slate-800 text-sm mb-1">Asignatura con Examen Global</h4>
+                        <p class="text-xs text-slate-500 max-w-sm mx-auto">Esta asignatura consta de una evaluación única. Accede al Examen Final de la derecha para realizar la prueba global.</p>
                     </div>
                 `;
             } else {
@@ -1132,20 +1056,48 @@
                             const cleanTemaNum = String(temaNum).replace(/-/g, '.');
                             const subtitle = THEME_SUBTITLES[subjectId]?.[cleanTemaNum] || "";
                             const displayTitle = subtitle ? `${t}: ${subtitle}` : t;
-                            return `
-                            <div onclick="loadSubject('${subjectId}', '${temaNum}')" class="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-indigo-500 hover:shadow-md transition-all flex items-center justify-between cursor-pointer group">
-                                <div class="flex items-center gap-3">
-                                    <div class="p-2.5 bg-indigo-50 rounded-xl text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-                                        <i data-lucide="book-open" class="w-5 h-5"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold text-slate-800 text-sm group-hover:text-indigo-600 transition-colors">${displayTitle}</h4>
-                                        <p class="text-[10px] text-slate-400">Modo de Aprendizaje: Test, Flashcards y Abiertas</p>
-                                    </div>
-                                </div>
+                            
+                            const isTheme1 = /^1(\.|$)/.test(cleanTemaNum);
+                            const isGuest = !authState.isAuthenticated;
+                            const isLocked = isGuest && !isTheme1;
+                            
+                            let onClickAction = `loadSubject('${subjectId}', '${temaNum}')`;
+                            let badgeHTML = `
                                 <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-[10px] font-bold rounded-lg group-hover:bg-indigo-600 group-hover:text-white transition-all flex items-center gap-1">
                                     Estudiar <i data-lucide="chevron-right" class="w-3 h-3"></i>
                                 </span>
+                            `;
+                            
+                            if (isLocked) {
+                                onClickAction = `state.showPromoModal = true; render();`;
+                                badgeHTML = `
+                                    <span class="px-3 py-1 bg-slate-100 text-slate-400 text-[10px] font-bold rounded-lg group-hover:bg-slate-200 group-hover:text-slate-500 transition-all flex items-center gap-1">
+                                        Bloqueado <i data-lucide="lock" class="w-3 h-3 text-slate-400"></i>
+                                    </span>
+                                `;
+                            } else if (isGuest && isTheme1) {
+                                badgeHTML = `
+                                    <span class="px-3 py-1 bg-amber-50 text-amber-700 text-[10px] font-bold rounded-lg group-hover:bg-amber-600 group-hover:text-white transition-all flex items-center gap-1">
+                                        Probar Gratis <i data-lucide="sparkles" class="w-3 h-3"></i>
+                                    </span>
+                                `;
+                            }
+                            
+                            return `
+                            <div onclick="${onClickAction}" class="p-4 bg-white border ${isLocked ? 'border-slate-200/60 opacity-80' : 'border-slate-200 hover:border-indigo-500 hover:shadow-md'} rounded-2xl shadow-sm transition-all flex items-center justify-between cursor-pointer group">
+                                <div class="flex items-center gap-3">
+                                    <div class="p-2.5 ${isLocked ? 'bg-slate-100 text-slate-400' : 'bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white'} rounded-xl transition-colors">
+                                        <i data-lucide="${isLocked ? 'lock' : 'book-open'}" class="w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <h4 class="font-bold text-slate-800 text-sm ${isLocked ? '' : 'group-hover:text-indigo-600'} transition-colors">${displayTitle}</h4>
+                                            ${(isGuest && isTheme1) ? `<span class="px-1.5 py-0.5 text-[8px] font-extrabold bg-amber-100 text-amber-800 rounded uppercase tracking-wider">Gratis</span>` : ''}
+                                        </div>
+                                        <p class="text-[10px] text-slate-400">Modo de Aprendizaje: Test, Flashcards y Abiertas</p>
+                                    </div>
+                                </div>
+                                ${badgeHTML}
                             </div>
                             `;
                         }).join('')}
@@ -1154,33 +1106,62 @@
             }
 
             let examenHTML = '';
+            const isGuest = !authState.isAuthenticated;
+
             if (hasExamen) {
-                examenHTML = `
-                    <div onclick="loadSubject('${subjectId}', null)" class="p-6 bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-3xl shadow-md border border-slate-800 hover:shadow-xl hover:border-indigo-500 transition-all flex flex-col justify-between cursor-pointer group h-full min-h-[220px] relative overflow-hidden">
-                        <div class="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
-                            <i data-lucide="award" class="w-32 h-32 transform translate-x-8 -translate-y-8"></i>
-                        </div>
-                        <div class="space-y-4">
-                            <span class="px-2.5 py-1 bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-lg text-[9px] font-bold tracking-wider uppercase inline-flex items-center gap-1">
-                                <i data-lucide="shield" class="w-2.5 h-2.5"></i> Evaluación Oficial
-                            </span>
-                            <div>
-                                <h4 class="font-black text-lg tracking-tight text-white group-hover:text-indigo-300 transition-colors">Examen Final</h4>
-                                <p class="text-xs text-slate-400 leading-relaxed mt-1">Simulacro oficial de la asignatura. Incluye límite de tiempo y visualización del historial de intentos.</p>
+                if (isGuest) {
+                    examenHTML = `
+                        <div onclick="state.showPromoModal = true; render();" class="p-6 bg-slate-900/90 text-white/90 rounded-3xl shadow-md border border-slate-800 hover:shadow-xl transition-all flex flex-col justify-between cursor-pointer group h-full min-h-[220px] relative overflow-hidden">
+                            <div class="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] transition-all group-hover:backdrop-blur-none pointer-events-none"></div>
+                            <div class="absolute top-0 right-0 p-8 opacity-10 pointer-events-none z-10">
+                                <i data-lucide="lock" class="w-32 h-32 transform translate-x-8 -translate-y-8"></i>
+                            </div>
+                            <div class="space-y-4 z-10">
+                                <div class="flex items-center justify-between">
+                                    <span class="px-2.5 py-1 bg-slate-800 text-slate-400 border border-slate-700 rounded-lg text-[9px] font-bold tracking-wider uppercase inline-flex items-center gap-1">
+                                        <i data-lucide="lock" class="w-2.5 h-2.5"></i> Bloqueado
+                                    </span>
+                                    <span class="px-2 py-0.5 text-[8px] font-extrabold bg-amber-500 text-slate-950 rounded uppercase tracking-wider">Premium</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-black text-lg tracking-tight text-white/60 group-hover:text-white transition-colors">Examen Final</h4>
+                                    <p class="text-xs text-slate-500 leading-relaxed mt-1">Simulacro oficial de la asignatura. Incluye límite de tiempo y visualización del historial de intentos.</p>
+                                </div>
+                            </div>
+                            <div class="mt-8 pt-4 border-t border-white/5 flex items-center justify-between text-xs font-bold text-slate-500 group-hover:text-white transition-colors z-10">
+                                <span class="flex items-center gap-1"><i data-lucide="lock" class="w-3.5 h-3.5"></i> Desbloquear con Academia</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
                             </div>
                         </div>
-                        <div class="mt-8 pt-4 border-t border-white/10 flex items-center justify-between text-xs font-bold text-indigo-400 group-hover:text-white transition-colors">
-                            <span>Comenzar Examen (Examen / Repaso)</span>
-                            <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                    `;
+                } else {
+                    examenHTML = `
+                        <div onclick="loadSubject('${subjectId}', null)" class="p-6 bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-3xl shadow-md border border-slate-800 hover:shadow-xl hover:border-indigo-500 transition-all flex flex-col justify-between cursor-pointer group h-full min-h-[220px] relative overflow-hidden">
+                            <div class="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
+                                <i data-lucide="award" class="w-32 h-32 transform translate-x-8 -translate-y-8"></i>
+                            </div>
+                            <div class="space-y-4">
+                                <span class="px-2.5 py-1 bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-lg text-[9px] font-bold tracking-wider uppercase inline-flex items-center gap-1">
+                                    <i data-lucide="shield" class="w-2.5 h-2.5"></i> Evaluación Oficial
+                                </span>
+                                <div>
+                                    <h4 class="font-black text-lg tracking-tight text-white group-hover:text-indigo-300 transition-colors">Examen Final</h4>
+                                    <p class="text-xs text-slate-400 leading-relaxed mt-1">Simulacro oficial de la asignatura. Incluye límite de tiempo y visualización del historial de intentos.</p>
+                                </div>
+                            </div>
+                            <div class="mt-8 pt-4 border-t border-white/10 flex items-center justify-between text-xs font-bold text-indigo-400 group-hover:text-white transition-colors">
+                                <span>Comenzar Examen (Examen / Repaso)</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                            </div>
                         </div>
-                    </div>
-                `;
+                    `;
+                }
             } else {
                 examenHTML = `
-                    <div onclick="alert('El Examen Final de esta asignatura está bloqueado. Accede a él desde tu plataforma Skool para desbloquearlo.'); window.location.href = 'https://www.skool.com/saimap-ia-learning-4493/about';" class="p-6 bg-slate-50 border border-slate-200 rounded-3xl text-center text-slate-400 flex flex-col items-center justify-center h-full min-h-[220px] opacity-60 grayscale cursor-pointer hover:bg-slate-100/50 group">
+                    <div onclick="state.showPromoModal = true; render();" class="p-6 bg-slate-50 border border-slate-200 rounded-3xl text-center text-slate-400 flex flex-col items-center justify-center h-full min-h-[220px] opacity-60 grayscale cursor-pointer hover:bg-slate-100/50 group">
                         <i data-lucide="lock" class="w-8 h-8 text-slate-400 mb-2"></i>
                         <h4 class="font-bold text-slate-700 text-sm">Examen Final Bloqueado</h4>
-                        <p class="text-[10px] text-slate-400 mt-1 max-w-xs mx-auto">Completa los temas o accede al examen desde tu plataforma para desbloquear la evaluación final.</p>
+                        <p class="text-[10px] text-slate-400 mt-1 max-w-xs mx-auto">Únete a la academia para desbloquear la evaluación final.</p>
                     </div>
                 `;
             }
@@ -1204,8 +1185,10 @@
                                 <h1 class="text-2xl md:text-3xl font-black text-slate-800 tracking-tight leading-none">${sub.name}</h1>
                             </div>
                             <div class="flex items-center gap-2 bg-indigo-50/50 border border-indigo-100/80 px-4 py-2.5 rounded-2xl">
-                                <i data-lucide="folder-open" class="w-5 h-5 text-indigo-600"></i>
-                                <span class="text-xs font-bold text-indigo-900">${temas.length} tema(s) desbloqueado(s)</span>
+                                <i data-lucide="${authState.isAuthenticated ? 'unlock' : 'sparkles'}" class="w-5 h-5 ${authState.isAuthenticated ? 'text-emerald-600' : 'text-amber-600'}"></i>
+                                <span class="text-xs font-bold ${authState.isAuthenticated ? 'text-emerald-900' : 'text-amber-900'}">
+                                    ${authState.isAuthenticated ? 'Acceso Completo' : 'Tema 1 Gratis'}
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -1887,17 +1870,170 @@
             `;
         }
 
+        function renderPromoModalHTML() {
+            return `
+                <div onclick="if(event.target === this) { state.showPromoModal = false; render(); }" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-md flex items-center justify-center p-4">
+                    <div class="w-full max-w-lg bg-white/90 backdrop-blur-xl border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.15)] rounded-[32px] p-8 relative scale-in">
+                        
+                        <!-- Close Button -->
+                        <button onclick="state.showPromoModal = false; render();" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition-colors">
+                            <i data-lucide="x" class="w-6 h-6"></i>
+                        </button>
+                        
+                        <!-- Header -->
+                        <div class="text-center mb-8">
+                            <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-500 to-orange-500 text-white shadow-xl shadow-amber-100 mb-5 animate-pulse">
+                                <i data-lucide="sparkles" class="w-8 h-8"></i>
+                            </div>
+                            <h2 class="text-2xl font-black text-slate-900 tracking-tight">Desbloquea la Academia SAIMAP</h2>
+                            <p class="mt-2.5 text-sm text-slate-500 leading-relaxed">
+                                Únete a nuestra academia en Skool para desbloquear todo el contenido y potenciar tu aprendizaje con herramientas avanzadas de inteligencia artificial.
+                            </p>
+                        </div>
+                        
+                        <!-- Features Grid -->
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100/50">
+                                <div class="p-2 bg-indigo-100 text-indigo-600 rounded-xl">
+                                    <i data-lucide="book-open" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-800 text-sm">Más de 40 Asignaturas</h4>
+                                    <p class="text-xs text-slate-500 mt-0.5">Organizadas en sus respectivos temas e interactivas.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100/50">
+                                <div class="p-2 bg-indigo-100 text-indigo-600 rounded-xl">
+                                    <i data-lucide="database" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-800 text-sm">Base de Datos Masiva</h4>
+                                    <p class="text-xs text-slate-500 mt-0.5">Media de 1.000 preguntas tipo test y 600-700 flashcards por asignatura.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100/50">
+                                <div class="p-2 bg-indigo-100 text-indigo-600 rounded-xl">
+                                    <i data-lucide="layers" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-800 text-sm">5 Recursos Clave por Tema</h4>
+                                    <p class="text-xs text-slate-500 mt-0.5">Vídeo explicativo, resumen, PowerPoint, podcast y mapa mental/esquema.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100/50">
+                                <div class="p-2 bg-indigo-100 text-indigo-600 rounded-xl">
+                                    <i data-lucide="award" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-800 text-sm">Contenido Extra Premium</h4>
+                                    <p class="text-xs text-slate-500 mt-0.5">Inglés hasta nivel B1, cursos de especialización y preparación PIR completa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Actions -->
+                        <div class="space-y-4">
+                            <a href="https://www.skool.com/saimap-ia-learning-4493/about" target="_blank"
+                                class="w-full py-4 px-6 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white font-bold rounded-2xl shadow-lg shadow-indigo-200 hover:shadow-indigo-300 transition-all text-center flex items-center justify-center gap-2.5 text-sm">
+                                <span>Unirse a la Academia en Skool</span>
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                            
+                            <div class="text-center pt-2">
+                                <button onclick="state.showPromoModal = false; state.showLoginModal = true; render();"
+                                    class="text-indigo-600 hover:text-indigo-800 font-extrabold text-sm transition-colors hover:underline">
+                                    Ya soy alumno (Iniciar Sesión)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderLoginModalHTML() {
+            const errorBanner = authState.error ? `
+                <div class="mb-5 p-4 bg-rose-50 border border-rose-200 text-rose-800 rounded-2xl flex items-start gap-3 text-sm">
+                    <i data-lucide="alert-circle" class="w-5 h-5 shrink-0 mt-0.5 text-rose-600"></i>
+                    <div>
+                        <span class="font-semibold">Acceso denegado</span>
+                        <p class="mt-0.5 text-rose-700/90 leading-relaxed">${authState.error}</p>
+                    </div>
+                </div>
+            ` : '';
+
+            const loadingSpinner = authState.loading ? `
+                <div class="absolute inset-0 bg-white/70 backdrop-blur-sm flex flex-col justify-center items-center rounded-3xl z-10">
+                    <div class="w-12 h-12 border-4 border-indigo-600/30 border-t-indigo-600 rounded-full animate-spin"></div>
+                    <p class="mt-4 text-sm font-semibold text-slate-700">Verificando credenciales...</p>
+                </div>
+            ` : '';
+
+            return `
+                <div onclick="if(event.target === this) { state.showLoginModal = false; render(); }" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-md flex items-center justify-center p-4">
+                    <div class="w-full max-w-md bg-white/90 backdrop-blur-xl border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.15)] rounded-[32px] p-8 md:p-10 relative scale-in">
+                        ${loadingSpinner}
+                        
+                        <!-- Close Button -->
+                        <button onclick="state.showLoginModal = false; render();" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition-colors">
+                            <i data-lucide="x" class="w-6 h-6"></i>
+                        </button>
+                        
+                        <!-- Logo / Header -->
+                        <div class="text-center mb-8">
+                            <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-tr from-indigo-600 to-violet-600 text-white shadow-xl shadow-indigo-100 mb-5">
+                                <i data-lucide="shield-check" class="w-8 h-8"></i>
+                            </div>
+                            <h1 class="text-2xl font-extrabold text-slate-900 tracking-tight">Acceso Alumnos</h1>
+                            <p class="mt-2.5 text-sm text-slate-500 leading-relaxed">
+                                Introduce el correo registrado en nuestra academia de Skool para desbloquear el acceso completo.
+                            </p>
+                        </div>
+
+                        ${errorBanner}
+
+                        <!-- Formulario -->
+                        <form onsubmit="handleLoginSubmit(event)" class="space-y-5">
+                            <div>
+                                <label for="login-email" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Correo Electrónico</label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-400">
+                                        <i data-lucide="mail" class="w-5 h-5"></i>
+                                    </span>
+                                    <input type="email" id="login-email" required placeholder="tu-correo@ejemplo.com"
+                                        value="${authState.email}"
+                                        class="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-600/20 focus:border-indigo-600 rounded-2xl text-slate-900 placeholder-slate-400 font-medium transition-all text-sm">
+                                </div>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full py-4 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-2xl shadow-lg shadow-indigo-200 hover:shadow-indigo-300 active:scale-[0.98] transition-all flex items-center justify-center gap-2.5 text-sm">
+                                <span>Verificar y Entrar</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                        </form>
+
+                        <!-- Footer Privacidad -->
+                        <div class="mt-8 pt-6 border-t border-slate-100 text-center">
+                            <div class="flex items-center justify-center gap-2 text-slate-400 text-xs">
+                                <i data-lucide="lock" class="w-3.5 h-3.5"></i>
+                                <span>Privacidad Garantizada</span>
+                            </div>
+                            <p class="mt-2 text-[10px] text-slate-400 leading-relaxed max-w-[280px] mx-auto">
+                                Tu correo se cifra localmente (SHA-256) antes de enviarse. Nunca almacenamos tu correo en texto plano en nuestros servidores.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
         function render() {
             const app = document.getElementById('app');
             
-            // Interceptar para la validación por whitelist
-            if (REQUIRE_AUTH && !authState.isAuthenticated) {
-                app.innerHTML = renderLoginModal();
-                lucide.createIcons();
-                window.scrollTo(0, 0);
-                return;
-            }
-
             if (state.gameState === 'select') {
                 app.innerHTML = renderSelector();
             } else if (state.gameState === 'subject_folder') {
@@ -1919,6 +2055,14 @@
                     app.innerHTML = renderFinished();
                 }
             }
+
+            if (state.showPromoModal) {
+                app.insertAdjacentHTML('beforeend', renderPromoModalHTML());
+            }
+            if (state.showLoginModal) {
+                app.insertAdjacentHTML('beforeend', renderLoginModalHTML());
+            }
+
             lucide.createIcons();
             window.scrollTo(0, 0);
         }

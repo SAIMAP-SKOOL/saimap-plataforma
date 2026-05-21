@@ -545,6 +545,14 @@ const LAYOUT_HTML = `
                     </button>
                     <button onclick="app.showView('home')" class="w-full py-4 glass-card hover:bg-slate-50 text-slate-700 rounded-2xl font-bold transition">Volver al Menú Principal</button>
                 </div>
+                <div id="guest-results-cta" class="hidden mt-8 p-6 rounded-2xl bg-gradient-to-br from-indigo-50/50 to-purple-50/50 border border-indigo-100/50 text-center space-y-4">
+                    <h3 class="font-bold text-slate-800 text-base flex items-center justify-center gap-1.5"><i class="ph-bold ph-sparkles text-amber-500"></i> ¿Te ha gustado este primer tema?</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed max-w-sm mx-auto">Únete a la academia para desbloquear el temario completo, miles de preguntas tipo test, flashcards interactivas y recursos de estudio premium.</p>
+                    <a href="https://www.skool.com/saimap-ia-learning-4493/about" target="_blank" class="w-full py-3.5 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white text-xs font-bold rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                        <span>Desbloquear Todo en Skool</span>
+                        <i class="ph-bold ph-arrow-square-out text-sm"></i>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -625,20 +633,7 @@ let FOLDER_ID = 'Otros';
 // INICIALIZACIÓN DE LA MÁQUINA DE TEMAS
 // ====================================================================
 document.addEventListener("DOMContentLoaded", () => {
-    // Verificación de autenticación si está activada
-    if (REQUIRE_AUTH) {
-        const userEmail = localStorage.getItem('saimap_user_email');
-        if (!userEmail) {
-            // Redirigir al dashboard para iniciar sesión, conservando la URL original para volver
-            window.location.href = "../../../index.html?redirect=" + encodeURIComponent(window.location.href);
-            return;
-        }
-    }
-
-    // 1. Cargar dependencias en el <head> de manera dinámica
-    loadDependencies();
-
-    // 2. Leer configuración embebida en el HTML
+    // 1. Leer configuración embebida en el HTML
     const configEl = document.getElementById('tema-config');
     
     if (!configEl) {
@@ -661,9 +656,49 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    // 3. Inyectar HTML en el body
+    // 2. Verificación de autenticación si está activada
+    window.isGuest = false;
+    if (REQUIRE_AUTH) {
+        const userEmail = localStorage.getItem('saimap_user_email');
+        if (!userEmail) {
+            // Verificar si es el Tema 1 (gratis para invitados)
+            const cleanTemaKey = String(TEMA_KEY).replace(/-/g, '.');
+            const isTheme1 = /^1(\.|$)/.test(cleanTemaKey);
+            if (isTheme1) {
+                window.isGuest = true;
+            } else {
+                // Redirigir al dashboard para iniciar sesión, conservando la URL original para volver
+                window.location.href = "../../../index.html?lock=true&redirect=" + encodeURIComponent(window.location.href);
+                return;
+            }
+        }
+    }
+
+    // 3. Cargar dependencias en el <head> de manera dinámica
+    loadDependencies();
+
+    // 4. Inyectar HTML en el body
     document.body.className = "flex flex-col min-h-screen";
     document.body.innerHTML = LAYOUT_HTML;
+
+    // 5. Si es invitado, añadir banner superior y ajustar la posición del header sticky
+    if (window.isGuest) {
+        const bannerHTML = `
+            <div id="guest-sticky-banner" class="sticky top-0 z-[60] w-full bg-white/90 backdrop-blur-md border-b border-indigo-100 py-3 px-4 text-center text-slate-700 text-xs md:text-sm font-bold shadow-sm flex items-center justify-center gap-2">
+                <span>✨ Estás en el Tema 1 (Prueba Gratuita).</span>
+                <a href="https://www.skool.com/saimap-ia-learning-4493/about" target="_blank" class="text-indigo-600 hover:text-indigo-800 underline inline-flex items-center gap-1">
+                    Únete a la academia para desbloquear más de 40 asignaturas y miles de preguntas de examen
+                </a>
+            </div>
+        `;
+        document.body.insertAdjacentHTML('afterbegin', bannerHTML);
+        
+        // Ajustar top de header sticky para que se vea justo debajo del banner
+        const headerEl = document.querySelector('header');
+        if (headerEl) {
+            headerEl.style.top = '45px';
+        }
+    }
 
     // 4. Aplicar tema visual e inicializar
     const theme = THEME_CONFIG[SUBJECT_ID] || THEME_CONFIG['_default'];
@@ -894,6 +929,17 @@ const app = {
         const nav = document.getElementById('nav-controls');
         if (nav) {
             nav.classList.toggle('hidden', viewId === 'home' || viewId === 'loading' || viewId === 'error');
+        }
+
+        if (viewId === 'results') {
+            const guestCta = document.getElementById('guest-results-cta');
+            if (guestCta) {
+                if (window.isGuest) {
+                    guestCta.classList.remove('hidden');
+                } else {
+                    guestCta.classList.add('hidden');
+                }
+            }
         }
     },
 
