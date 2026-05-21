@@ -2,6 +2,9 @@
 // SAIMAP - LOADER DE TEMAS UNIVERSAL Y MODULAR
 // ====================================================================
 
+// --- CONFIGURACIÓN DE AUTENTICACIÓN ---
+const REQUIRE_AUTH = false; // Cambiar a true para activar la protección de Skool
+
 // Subtítulos de los temas por asignatura
 const THEME_SUBTITLES = {
     'psicologia-del-aprendizaje': {
@@ -622,6 +625,16 @@ let FOLDER_ID = 'Otros';
 // INICIALIZACIÓN DE LA MÁQUINA DE TEMAS
 // ====================================================================
 document.addEventListener("DOMContentLoaded", () => {
+    // Verificación de autenticación si está activada
+    if (REQUIRE_AUTH) {
+        const userEmail = localStorage.getItem('saimap_user_email');
+        if (!userEmail) {
+            // Redirigir al dashboard para iniciar sesión, conservando la URL original para volver
+            window.location.href = "../../../index.html?redirect=" + encodeURIComponent(window.location.href);
+            return;
+        }
+    }
+
     // 1. Cargar dependencias en el <head> de manera dinámica
     loadDependencies();
 
