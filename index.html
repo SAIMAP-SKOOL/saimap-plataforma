@@ -60,13 +60,14 @@
         // --- CONSTANTES Y ESTADO ---
         const AVAILABLE_SUBJECTS = [
             { id: "psicologia-de-la-memoria", name: "Psicología de la Memoria", year: "1º", folder: "Psicología-Memoria" },
-            { id: "psicologia-del-desarrollo", name: "Psicología del Desarrollo", year: "1º", folder: "Infancia-Adolescencia" },
+            { id: "psicologia-desarrollo-infancia-adolescencia", name: "Psicología del Desarrollo (Infancia y Adolescencia)", year: "1º", folder: "Psicología-Desarrollo-Infancia-Adolescencia" },
             { id: "historia-de-la-psicologia", name: "Historia de la Psicología", year: "1º", folder: "Historia-Psicología" },
             { id: "psicologia-social", name: "Psicología Social", year: "1º", folder: "Psicología-Social" },
             { id: "psicologia-de-la-atencion-y-percepcion", name: "Psicología de la Atención y Percepción", year: "1º", folder: "Atención-Percepción" },
             { id: "psicologia-de-la-motivacion-y-emocion", name: "Psicología de la Motivación y Emoción", year: "1º", folder: "Motivación-Emoción" },
             { id: "psicologia-del-aprendizaje", name: "Psicología del Aprendizaje", year: "1º", folder: "Psicología-Aprendizaje" },
             { id: "bases-biologicas-del-comportamiento", name: "Bases Biológicas del Comportamiento", year: "1º", folder: "Bases-Biológicas" },
+            { id: "psicologia-interaccion-social", name: "Psicología de la Interacción Social", year: "1º", folder: "Psicología-Interacción-Social" },
             { id: "psicologia-clinica", name: "Psicología Clínica", year: "3º", folder: "Psicología-Clínica" },
             { id: "psicologia-del-trabajo", name: "Psicología del Trabajo", year: "3º", folder: "Psicología-Trabajo" }
         ];
@@ -124,6 +125,41 @@
                 '6': 'Modelos de Atención Selectiva',
                 '7': 'Tipos de Atención',
                 '8': 'Sesgos e Ilusiones Perceptivas'
+            },
+            'psicologia-de-la-memoria': {
+                '1': 'Concepto y Estudio Científico de la Memoria',
+                '2': 'Memoria Sensorial, Corto Plazo y de Trabajo',
+                '3': 'Codificación y Almacenamiento en la Memoria a Largo Plazo',
+                '4': 'Procesos de Recuperación y Memoria Operativa',
+                '5': 'Olvido, Interferencia y Distorsiones de la Memoria'
+            },
+            'psicologia-desarrollo-infancia-adolescencia': {
+                '1': 'Introducción, Historia y Enfoques en Psicología del Desarrollo',
+                '2': 'Teorías del Desarrollo: Psicoanálisis, Conductismo y Cognitivismo',
+                '3': 'Metodología y Fundamentos Científicos de la Investigación',
+                '4': 'Desarrollo Físico, Motor y del Cerebro en la Infancia',
+                '5': 'Desarrollo Sensorial y Perceptivo en los Bebés',
+                '6': 'Desarrollo Cognitivo: Teorías de Piaget y Vygotsky',
+                '7': 'Adquisición y Desarrollo del Lenguaje y la Comunicación',
+                '8': 'Desarrollo Social, Afectivo y de la Personalidad'
+            },
+            'psicologia-interaccion-social': {
+                '1': 'Introducción y Concepto de Grupo Social',
+                '2': 'Estructura Grupal, Roles y Normas Sociales',
+                '3': 'Procesos de Cohesión e Integración Grupal',
+                '4': 'Modelos de Desarrollo y Evolución de los Grupos',
+                '5': 'Conflictos Interpersonales e Intergrupales',
+                '6': 'Conducta Prosocial, Ayuda y Altruismo',
+                '7': 'Procesos de Influencia Social y Conformidad',
+                '8': 'Rendimiento Grupal, Polarización y Pensamiento Grupal'
+            },
+            'psicologia-de-la-motivacion-y-emocion': {
+                '1': 'Concepto y Procesos Básicos de la Motivación',
+                '2': 'Antecedentes Filosóficos y Teorías del Instinto',
+                '3': 'Motivos Primarios, Biológicos y Secundarios',
+                '4': 'Enfoques Conductistas, Cognitivos y de Valoración de la Emoción',
+                '5': 'Emociones de Urgencia, Bienestar e Interacción Social',
+                '6': 'Inteligencia Emocional y Motivación Extrínseca'
             }
         };
 
@@ -189,6 +225,23 @@
 
                         delete data[key];
                         modified = true;
+                    }
+                }
+
+                // Normalizar nombres que quedaron como "Asignatura" o actualizar si el nombre en AVAILABLE_SUBJECTS cambió
+                for (const key of Object.keys(data)) {
+                    if (data[key] && typeof data[key] === 'object') {
+                        const subjectMeta = AVAILABLE_SUBJECTS.find(s => s.id === key);
+                        if (subjectMeta) {
+                            if (data[key].name !== subjectMeta.name) {
+                                data[key].name = subjectMeta.name;
+                                modified = true;
+                            }
+                            if (data[key].year !== subjectMeta.year) {
+                                data[key].year = subjectMeta.year;
+                                modified = true;
+                            }
+                        }
                     }
                 }
 

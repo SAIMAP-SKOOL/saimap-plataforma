@@ -55,6 +55,41 @@ const THEME_SUBTITLES = {
         '6': 'Modelos de Atención Selectiva',
         '7': 'Tipos de Atención',
         '8': 'Sesgos e Ilusiones Perceptivas'
+    },
+    'psicologia-de-la-memoria': {
+        '1': 'Concepto y Estudio Científico de la Memoria',
+        '2': 'Memoria Sensorial, Corto Plazo y de Trabajo',
+        '3': 'Codificación y Almacenamiento en la Memoria a Largo Plazo',
+        '4': 'Procesos de Recuperación y Memoria Operativa',
+        '5': 'Olvido, Interferencia y Distorsiones de la Memoria'
+    },
+    'psicologia-desarrollo-infancia-adolescencia': {
+        '1': 'Introducción, Historia y Enfoques en Psicología del Desarrollo',
+        '2': 'Teorías del Desarrollo: Psicoanálisis, Conductismo y Cognitivismo',
+        '3': 'Metodología y Fundamentos Científicos de la Investigación',
+        '4': 'Desarrollo Físico, Motor y del Cerebro en la Infancia',
+        '5': 'Desarrollo Sensorial y Perceptivo en los Bebés',
+        '6': 'Desarrollo Cognitivo: Teorías de Piaget y Vygotsky',
+        '7': 'Adquisición y Desarrollo del Lenguaje y la Comunicación',
+        '8': 'Desarrollo Social, Afectivo y de la Personalidad'
+    },
+    'psicologia-interaccion-social': {
+        '1': 'Introducción y Concepto de Grupo Social',
+        '2': 'Estructura Grupal, Roles y Normas Sociales',
+        '3': 'Procesos de Cohesión e Integración Grupal',
+        '4': 'Modelos de Desarrollo y Evolución de los Grupos',
+        '5': 'Conflictos Interpersonales e Intergrupales',
+        '6': 'Conducta Prosocial, Ayuda y Altruismo',
+        '7': 'Procesos de Influencia Social y Conformidad',
+        '8': 'Rendimiento Grupal, Polarización y Pensamiento Grupal'
+    },
+    'psicologia-de-la-motivacion-y-emocion': {
+        '1': 'Concepto y Procesos Básicos de la Motivación',
+        '2': 'Antecedentes Filosóficos y Teorías del Instinto',
+        '3': 'Motivos Primarios, Biológicos y Secundarios',
+        '4': 'Enfoques Conductistas, Cognitivos y de Valoración de la Emoción',
+        '5': 'Emociones de Urgencia, Bienestar e Interacción Social',
+        '6': 'Inteligencia Emocional y Motivación Extrínseca'
     }
 };
 
@@ -132,8 +167,8 @@ const THEME_CONFIG = {
         borderCard: 'border-b-indigo-500',
         borderCardAlt: 'border-b-blue-500',
     },
-    'psicologia-del-desarrollo': {
-        name: 'Psicología del Desarrollo',
+    'psicologia-desarrollo-infancia-adolescencia': {
+        name: 'Psicología del Desarrollo (Infancia y Adolescencia)',
         icon: 'ph-plant',
         bg: '#f0fdfa', // Teal
         gradients: 'radial-gradient(at 0% 0%, hsla(170,70%,94%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(180,70%,94%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(160,70%,94%,1) 0,transparent 50%)',
@@ -149,6 +184,24 @@ const THEME_CONFIG = {
         titleGradient: 'from-teal-500 to-cyan-500',
         borderCard: 'border-b-teal-500',
         borderCardAlt: 'border-b-cyan-500',
+    },
+    'psicologia-interaccion-social': {
+        name: 'Psicología de la Interacción Social',
+        icon: 'ph-users',
+        bg: '#f8fafc', // Slate 50
+        gradients: 'radial-gradient(at 0% 0%, hsla(210,100%,96%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(220,100%,96%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(200,100%,96%,1) 0,transparent 50%)',
+        primary: '#2563eb', // Blue 600
+        primaryGrad: 'linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%)',
+        primaryShadow: 'rgba(37, 99, 235, 0.4)',
+        accent: '#3b82f6', // Blue 500
+        accentBg: '#eff6ff', // Blue 50
+        accentLight: '#dbeafe', // Blue 100
+        textAccent: '#2563eb',
+        optionHoverBorder: '#3b82f6',
+        optionHoverBg: '#eff6ff',
+        titleGradient: 'from-blue-600 to-indigo-500',
+        borderCard: 'border-b-blue-500',
+        borderCardAlt: 'border-b-indigo-500',
     },
     'psicologia-de-la-atencion-y-percepcion': {
         name: 'Psicología de la Atención y Percepción',
