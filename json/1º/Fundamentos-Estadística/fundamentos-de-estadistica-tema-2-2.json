@@ -1,1722 +1,1706 @@
 {
-  "quiz": [
+  "jsonTestA": [
     {
       "q": "¿Es la media aritmética un índice robusto ante la presencia de valores atípicos extremos?",
-      "opciones": [
+      "options": [
         "Verdadero",
         "Falso",
         "No lo sé"
       ],
-      "correcta": 1,
-      "explicacion": "La media es poco robusta porque utiliza todos los datos de la muestra, por lo que una sola observación extrema desplaza el centro de gravedad significativamente.",
-      "pista": "Considere el efecto de un valor de 120 en una muestra de valores pequeños."
+      "correct": 1,
+      "hint": "Considere el efecto de un valor de 120 en una muestra de valores pequeños.",
+      "explanation": "La media es poco robusta porque utiliza todos los datos de la muestra, por lo que una sola observación extrema desplaza el centro de gravedad significativamente."
     },
     {
       "q": "¿Los percentiles son índices estadísticos basados en la ordenación de los sujetos?",
-      "opciones": [
+      "options": [
         "Verdadero",
         "Falso",
         "No lo sé"
       ],
-      "correcta": 0,
-      "explicacion": "Los cuantiles, incluidos los percentiles, requieren que los sujetos hayan sido ordenados de menor a mayor valor en la variable considerada.",
-      "pista": "Revise la sección 2.2.2 sobre cuantiles."
+      "correct": 0,
+      "hint": "Revise la sección 2.2.2 sobre cuantiles.",
+      "explanation": "Los cuantiles, incluidos los percentiles, requieren que los sujetos hayan sido ordenados de menor a mayor valor en la variable considerada."
     },
     {
       "q": "¿La varianza insesgada utiliza el tamaño muestral $$n$$ como denominador en su fórmula?",
-      "opciones": [
+      "options": [
         "Verdadero",
         "Falso",
         "No lo sé"
       ],
-      "correcta": 1,
-      "explicacion": "La varianza insesgada utiliza como denominador $$n-1$$, lo cual es preferible para efectuar inferencias estadísticas posteriores.",
-      "pista": "Diferencie entre varianza sesgada e insesgada."
+      "correct": 1,
+      "hint": "Diferencie entre varianza sesgada e insesgada.",
+      "explanation": "La varianza insesgada utiliza como denominador $$n-1$$, lo cual es preferible para efectuar inferencias estadísticas posteriores."
     },
     {
       "q": "¿El coeficiente de variación permite comparar la dispersión de variables con distintas métricas?",
-      "opciones": [
+      "options": [
         "Verdadero",
         "Falso",
         "No lo sé"
       ],
-      "correcta": 0,
-      "explicacion": "El $$CV_X$$ se expresa en porcentaje, lo que elimina la unidad de medida original y permite comparar distribuciones muy diversas.",
-      "pista": "Es un estadístico de dispersión relativa."
+      "correct": 0,
+      "hint": "Es un estadístico de dispersión relativa.",
+      "explanation": "El $$CV_X$$ se expresa en porcentaje, lo que elimina la unidad de medida original y permite comparar distribuciones muy diversas."
     },
     {
       "q": "¿En distribuciones perfectamente simétricas, la media y la mediana siempre coinciden?",
-      "opciones": [
+      "options": [
         "Verdadero",
         "Falso",
         "No lo sé"
       ],
-      "correcta": 0,
-      "explicacion": "En distribuciones simétricas, la media, la mediana y la moda coinciden en el mismo punto central de la distribución.",
-      "pista": "Piense en la posición del centro en una curva normal."
+      "correct": 0,
+      "hint": "Piense en la posición del centro en una curva normal.",
+      "explanation": "En distribuciones simétricas, la media, la mediana y la moda coinciden en el mismo punto central de la distribución."
     },
     {
       "q": "¿La amplitud intercuartil es sensible a los valores extremos de una distribución?",
-      "opciones": [
+      "options": [
         "Verdadero",
         "Falso",
         "No lo sé"
       ],
-      "correcta": 1,
-      "explicacion": "La amplitud intercuartil ($$Q_3 - Q_1$$) es robusta porque ignora el 25% de los datos en cada extremo, centrándose solo en el 50% central.",
-      "pista": "Compare con la amplitud total."
+      "correct": 1,
+      "hint": "Compare con la amplitud total.",
+      "explanation": "La amplitud intercuartil ($$Q_3 - Q_1$$) es robusta porque ignora el 25% de los datos en cada extremo, centrándose solo en el 50% central."
     },
     {
       "q": "¿La desviación típica se expresa en las mismas unidades que la variable original?",
-      "opciones": [
+      "options": [
         "Verdadero",
         "Falso",
         "No lo sé"
       ],
-      "correcta": 0,
-      "explicacion": "Al aplicar la raíz cuadrada a la varianza, la desviación típica recupera la métrica original de la variable (por ejemplo, años en vez de años al cuadrado).",
-      "pista": "Considere el efecto de la raíz cuadrada."
+      "correct": 0,
+      "hint": "Considere el efecto de la raíz cuadrada.",
+      "explanation": "Al aplicar la raíz cuadrada a la varianza, la desviación típica recupera la métrica original de la variable (por ejemplo, años en vez de años al cuadrado)."
     },
     {
       "q": "¿La mediana es el estadístico de tendencia central recomendado para distribuciones asimétricas?",
-      "opciones": [
+      "options": [
         "Verdadero",
         "Falso",
         "No lo sé"
       ],
-      "correcta": 0,
-      "explicacion": "La mediana es más resistente que la media ante la asimetría porque no es representativa de la magnitud de todos los valores, solo de su posición.",
-      "pista": "Piense en la resistencia de los índices."
+      "correct": 0,
+      "hint": "Piense en la resistencia de los índices.",
+      "explanation": "La mediana es más resistente que la media ante la asimetría porque no es representativa de la magnitud de todos los valores, solo de su posición."
     },
     {
       "q": "¿El sumatorio de las puntuaciones diferenciales de una muestra es siempre igual a cero?",
-      "opciones": [
+      "options": [
         "Verdadero",
         "Falso",
         "No lo sé"
       ],
-      "correcta": 0,
-      "explicacion": "Debido a que la media es el centro de gravedad, las desviaciones positivas y negativas se anulan entre sí, sumando exactamente cero.",
-      "pista": "Es la propiedad fundamental de la media."
+      "correct": 0,
+      "hint": "Es la propiedad fundamental de la media.",
+      "explanation": "Debido a que la media es el centro de gravedad, las desviaciones positivas y negativas se anulan entre sí, sumando exactamente cero."
     },
     {
       "q": "¿Un percentil 50 ($$P_{50}$$) identifica siempre el valor máximo del primer cuartil ($$Q_1$$)?",
-      "opciones": [
+      "options": [
         "Verdadero",
         "Falso",
         "No lo sé"
       ],
-      "correcta": 1,
-      "explicacion": "El $$P_{50}$$equivale a la mediana o al segundo cuartil ($$Q_2$$). El$$Q_1$$ equivale específicamente al percentil 25 ($$P_{25}$$).",
-      "pista": "Relacione cuantiles con cuartiles."
+      "correct": 1,
+      "hint": "Relacione cuantiles con cuartiles.",
+      "explanation": "El $$P_{50}$$equivale a la mediana o al segundo cuartil ($$Q_2$$). El$$Q_1$$ equivale específicamente al percentil 25 ($$P_{25}$$)."
     },
     {
       "q": "Señale la afirmación correcta sobre la interpretación de las tablas de frecuencias:",
-      "opciones": [
+      "options": [
         "Las frecuencias acumuladas son útiles para variables nominales sin orden.",
         "Las variables cuantitativas suelen requerir tablas por la alta repetición.",
         "En variables ordinales, las frecuencias acumuladas aportan mayor información."
       ],
-      "correcta": 2,
-      "explicacion": "En variables ordinales, las columnas de datos acumulados permiten conocer qué proporción de sujetos está por debajo de cierto nivel jerárquico.",
-      "pista": "Considere la naturaleza de las categorías ordenadas."
+      "correct": 2,
+      "hint": "Considere la naturaleza de las categorías ordenadas.",
+      "explanation": "En variables ordinales, las columnas de datos acumulados permiten conocer qué proporción de sujetos está por debajo de cierto nivel jerárquico."
     },
     {
       "q": "Señale la afirmación correcta respecto al cálculo de la posición de un percentil:",
-      "opciones": [
+      "options": [
         "El resultado de la fórmula $$\\frac{k(n+1)}{100}$$ es el valor real del percentil buscado.",
         "El resultado de la fórmula $$\\frac{k(n+1)}{100}$$ indica la posición del valor en la serie.",
         "El resultado de la fórmula $$\\frac{k(n+1)}{100}$$solo es válido si el tamaño$$n$$ es par."
       ],
-      "correcta": 1,
-      "explicacion": "Es un error común confundir la posición con el valor. La fórmula indica en qué lugar de la serie ordenada se encuentra el dato.",
-      "pista": "Diferencie entre el índice de posición y el valor de la variable."
+      "correct": 1,
+      "hint": "Diferencie entre el índice de posición y el valor de la variable.",
+      "explanation": "Es un error común confundir la posición con el valor. La fórmula indica en qué lugar de la serie ordenada se encuentra el dato."
     },
     {
       "q": "Señale la afirmación correcta sobre el concepto de varianza ($$S_x^2$$):",
-      "opciones": [
+      "options": [
         "Es un promedio de las desviaciones de la media elevadas al cuadrado.",
         "Se interpreta directamente como una distancia lineal respecto a la media.",
         "Su valor puede ser negativo si los datos originales son negativos."
       ],
-      "correcta": 0,
-      "explicacion": "La varianza es la media de los cuadrados de las diferencias entre cada valor y la media aritmética de la distribución de datos.",
-      "pista": "Analice los términos de la fórmula matemática."
+      "correct": 0,
+      "hint": "Analice los términos de la fórmula matemática.",
+      "explanation": "La varianza es la media de los cuadrados de las diferencias entre cada valor y la media aritmética de la distribución de datos."
     },
     {
       "q": "Señale la afirmación correcta sobre la resistencia de los estadísticos:",
-      "opciones": [
+      "options": [
         "La media aritmética es un índice muy resistente a los valores atípicos.",
         "La mediana resiste mejor los valores extremos que la media aritmética.",
         "La amplitud total es más resistente que la amplitud intercuartil."
       ],
-      "correcta": 1,
-      "explicacion": "La mediana solo depende de la posición central; si el valor más alto cambia de 100 a 1000, la mediana permanece inalterada.",
-      "pista": "Evalúe el impacto de modificar una sola puntuación extrema."
+      "correct": 1,
+      "hint": "Evalúe el impacto de modificar una sola puntuación extrema.",
+      "explanation": "La mediana solo depende de la posición central; si el valor más alto cambia de 100 a 1000, la mediana permanece inalterada."
     },
     {
       "q": "Señale la afirmación correcta sobre la relación entre cuantiles:",
-      "opciones": [
+      "options": [
         "El segundo cuartil ($$Q_2$$) coincide exactamente con la mediana ($$Mdn$$).",
         "El tercer cuartil ($$Q_3$$) deja por debajo de sí al 25% de los casos totales.",
         "Los percentiles dividen la distribución en diez partes de igual tamaño."
       ],
-      "correcta": 0,
-      "explicacion": "Tanto la mediana como el $$Q_2$$y el$$P_{50}$$ dividen la distribución en dos partes iguales con el 50% de los casos en cada una.",
-      "pista": "Recuerde las definiciones de los cortes en la distribución."
+      "correct": 0,
+      "hint": "Recuerde las definiciones de los cortes en la distribución.",
+      "explanation": "Tanto la mediana como el $$Q_2$$y el$$P_{50}$$ dividen la distribución en dos partes iguales con el 50% de los casos en cada una."
     },
     {
       "q": "Señale la afirmación correcta sobre el Coeficiente de Variación ($$CV$$):",
-      "opciones": [
+      "options": [
         "Es la división entre la media aritmética y la desviación típica por cien.",
         "Es un índice de dispersión absoluta útil para muestras muy pequeñas.",
         "Permite evaluar la dispersión relativa independientemente de la métrica."
       ],
-      "correcta": 2,
-      "explicacion": "Al ser una medida relativa (porcentaje), permite comparar la variabilidad de grupos medidos en escalas totalmente distintas.",
-      "pista": "Considere su utilidad en la comparación intergrupal."
+      "correct": 2,
+      "hint": "Considere su utilidad en la comparación intergrupal.",
+      "explanation": "Al ser una medida relativa (porcentaje), permite comparar la variabilidad de grupos medidos en escalas totalmente distintas."
     },
     {
       "q": "Señale la afirmación correcta sobre la media aritmética como centro físico:",
-      "opciones": [
+      "options": [
         "Si la balanza de datos está equilibrada, el centro físico es la mediana.",
         "Actúa como centro de gravedad que se desplaza ante valores extremos.",
         "Es el valor que más veces se repite en cualquier tipo de distribución."
       ],
-      "correcta": 1,
-      "explicacion": "La media se comporta como un punto de apoyo que debe moverse para equilibrar el 'peso' de las observaciones más alejadas.",
-      "pista": "Visualice la analogía de la balanza de Hays (1973)."
+      "correct": 1,
+      "hint": "Visualice la analogía de la balanza de Hays (1973).",
+      "explanation": "La media se comporta como un punto de apoyo que debe moverse para equilibrar el 'peso' de las observaciones más alejadas."
     },
     {
       "q": "Señale la afirmación correcta sobre la amplitud total ($$A_T$$):",
-      "opciones": [
+      "options": [
         "Se calcula mediante la suma del valor máximo y el valor mínimo absoluto.",
         "Es la diferencia entre el valor máximo y el mínimo de la distribución.",
         "Es el índice de dispersión más preciso para distribuciones asimétricas."
       ],
-      "correcta": 1,
-      "explicacion": "La amplitud total o rango se obtiene simplemente restando el valor menor al valor mayor de la muestra analizada.",
-      "pista": "Es la medida de dispersión más básica."
+      "correct": 1,
+      "hint": "Es la medida de dispersión más básica.",
+      "explanation": "La amplitud total o rango se obtiene simplemente restando el valor menor al valor mayor de la muestra analizada."
     },
     {
       "q": "Señale la afirmación correcta sobre la interpolación en percentiles:",
-      "opciones": [
+      "options": [
         "Se aplica la fórmula $$P_k = (1-d)Y_i + (d)Y_{i+1}$$ si la posición es decimal.",
         "Se aplica solo cuando el tamaño de la muestra es inferior a diez sujetos.",
         "Sirve para redondear la posición al número entero más cercano siempre."
       ],
-      "correcta": 0,
-      "explicacion": "Cuando la posición no es exacta, se estima el valor entre las dos posiciones adyacentes usando la parte decimal ($$d$$).",
-      "pista": "Mire el procedimiento para resultados no enteros."
+      "correct": 0,
+      "hint": "Mire el procedimiento para resultados no enteros.",
+      "explanation": "Cuando la posición no es exacta, se estima el valor entre las dos posiciones adyacentes usando la parte decimal ($$d$$)."
     },
     {
       "q": "Señale la afirmación correcta sobre la moda en variables categóricas:",
-      "opciones": [
+      "options": [
         "Es el único índice de tendencia central aplicable a escalas nominales.",
         "Requiere que los datos sean previamente transformados a escala de razón.",
         "Solo puede existir una única moda para que la distribución sea válida."
       ],
-      "correcta": 0,
-      "explicacion": "En escalas nominales no se pueden sumar ni ordenar valores, por lo que solo podemos identificar cuál es la categoría más frecuente.",
-      "pista": "Piense en qué cálculos se pueden hacer con nombres o categorías."
+      "correct": 0,
+      "hint": "Piense en qué cálculos se pueden hacer con nombres o categorías.",
+      "explanation": "En escalas nominales no se pueden sumar ni ordenar valores, por lo que solo podemos identificar cuál es la categoría más frecuente."
     },
     {
       "q": "Señale la afirmación correcta sobre las puntuaciones diferenciales ($$x$$):",
-      "opciones": [
+      "options": [
         "Representan la distancia absoluta entre cada sujeto y el valor modal.",
         "Se calculan restando la media aritmética a la puntuación individual.",
         "Tienen siempre signo positivo para evitar que se anulen en la suma."
       ],
-      "correcta": 1,
-      "explicacion": "Las puntuaciones diferenciales indican cuánto se desvía cada observación respecto al promedio del grupo.",
-      "pista": "Fórmula: $$x = X_i - \\bar{X}$$."
+      "correct": 1,
+      "hint": "Fórmula: $$x = X_i - \\bar{X}$$.",
+      "explanation": "Las puntuaciones diferenciales indican cuánto se desvía cada observación respecto al promedio del grupo."
     },
     {
       "q": "Señale la afirmación correcta sobre la representatividad de la media:",
-      "opciones": [
+      "options": [
         "Su precisión aumenta a medida que la dispersión de los datos crece.",
         "Es un valor suficiente porque tiene en cuenta todos los datos de la muestra.",
         "No se ve afectada por la forma de la distribución ni por la asimetría."
       ],
-      "correcta": 1,
-      "explicacion": "La media es un índice 'suficiente' porque su cálculo integra la información de cada una de las puntuaciones de la muestra.",
-      "pista": "Revise las propiedades de los estadísticos en el texto."
+      "correct": 1,
+      "hint": "Revise las propiedades de los estadísticos en el texto.",
+      "explanation": "La media es un índice 'suficiente' porque su cálculo integra la información de cada una de las puntuaciones de la muestra."
     },
     {
       "q": "Señale la afirmación correcta sobre la amplitud intercuartil ($$A_{IQ}$$):",
-      "opciones": [
+      "options": [
         "Representa la dispersión del 100% de los casos centrales de la muestra.",
         "Se define como la diferencia entre el percentil 75 y el percentil 25.",
         "Es aplicable únicamente a variables cualitativas de nivel nominal."
       ],
-      "correcta": 1,
-      "explicacion": "La $$A_{IQ}$$mide el rango del 50% central de los datos, eliminando la influencia de los extremos mediante la resta$$Q_3 - Q_1$$.",
-      "pista": "Relaciónela con los cuartiles $$Q_3$$y$$Q_1$$."
+      "correct": 1,
+      "hint": "Relaciónela con los cuartiles $$Q_3$$y$$Q_1$$.",
+      "explanation": "La $$A_{IQ}$$mide el rango del 50% central de los datos, eliminando la influencia de los extremos mediante la resta$$Q_3 - Q_1$$."
     },
     {
       "q": "Señale la afirmación correcta sobre la desviación estándar ($$S_x$$):",
-      "opciones": [
+      "options": [
         "Es la raíz cuadrada de la varianza y mide la concentración de los datos.",
         "Indica que el grupo es más homogéneo cuanto mayor sea su valor final.",
         "Se calcula dividiendo el sumatorio de cuadrados por el tamaño $$n$$ exacto."
       ],
-      "correcta": 0,
-      "explicacion": "La desviación estándar es la raíz de la varianza; valores bajos indican que los datos están muy agrupados cerca de la media.",
-      "pista": "Piense en la relación entre variabilidad y homogeneidad."
+      "correct": 0,
+      "hint": "Piense en la relación entre variabilidad y homogeneidad.",
+      "explanation": "La desviación estándar es la raíz de la varianza; valores bajos indican que los datos están muy agrupados cerca de la media."
     },
     {
       "q": "Señale la afirmación correcta sobre la elección de estadísticos según Pardo et al. (2015):",
-      "opciones": [
+      "options": [
         "Se debe elegir un solo índice de tendencia central sin medir dispersión.",
         "Es recomendable informar de la amplitud y del grado de desviación.",
         "La varianza es preferible a la desviación típica por su métrica directa."
       ],
-      "correcta": 1,
-      "explicacion": "Se sugiere combinar una medida de amplitud (como el rango) con una de desviación (como la DT) para una descripción completa.",
-      "pista": "Busque la recomendación final del capítulo."
+      "correct": 1,
+      "hint": "Busque la recomendación final del capítulo.",
+      "explanation": "Se sugiere combinar una medida de amplitud (como el rango) con una de desviación (como la DT) para una descripción completa."
     },
     {
       "q": "Señale la afirmación incorrecta sobre los gráficos circulares:",
-      "opciones": [
+      "options": [
         "Son idóneos para representar variables con un elevado número de categorías.",
         "Su utilidad disminuye cuando la claridad visual se complica por el exceso de datos.",
         "En variables con muchas categorías, es preferible usar histogramas o barras."
       ],
-      "correcta": 0,
-      "explicacion": "El manual indica explícitamente que si el número de categorías es elevado, la interpretación visual se complica y el gráfico pierde utilidad.",
-      "pista": "Revise la primera página del manual proporcionado."
+      "correct": 0,
+      "hint": "Revise la primera página del manual proporcionado.",
+      "explanation": "El manual indica explícitamente que si el número de categorías es elevado, la interpretación visual se complica y el gráfico pierde utilidad."
     },
     {
       "q": "Señale la afirmación incorrecta sobre las frecuencias acumuladas:",
-      "opciones": [
+      "options": [
         "Recogen el porcentaje asociado a una categoría y a todas las anteriores.",
         "La frecuencia relativa acumulada ($$P_a$$) alcanza siempre el valor final de 1,00.",
         "Pueden calcularse perfectamente para variables cualitativas nominales puras."
       ],
-      "correcta": 2,
-      "explicacion": "Las frecuencias acumuladas requieren un orden lógico (escala ordinal o superior). En variables nominales no hay 'categorías anteriores' definidas.",
-      "pista": "Piense si tiene sentido 'acumular' nombres sin orden."
+      "correct": 2,
+      "hint": "Piense si tiene sentido 'acumular' nombres sin orden.",
+      "explanation": "Las frecuencias acumuladas requieren un orden lógico (escala ordinal o superior). En variables nominales no hay 'categorías anteriores' definidas."
     },
     {
       "q": "Señale la afirmación incorrecta sobre los cuantiles:",
-      "opciones": [
+      "options": [
         "La mediana divide la distribución exactamente en dos mitades iguales.",
         "Los percentiles son porcentajes que indican el éxito de un sujeto evaluado.",
         "Existen noventa y nueve percentiles que dividen los datos en cien partes."
       ],
-      "correcta": 1,
-      "explicacion": "Los percentiles no son porcentajes, sino valores de la variable que acumulan un determinado porcentaje de casos por debajo de sí.",
-      "pista": "Diferencie entre 'valor que acumula' y 'porcentaje'."
+      "correct": 1,
+      "hint": "Diferencie entre 'valor que acumula' y 'porcentaje'.",
+      "explanation": "Los percentiles no son porcentajes, sino valores de la variable que acumulan un determinado porcentaje de casos por debajo de sí."
     },
     {
       "q": "Señale la afirmación incorrecta respecto a la media aritmética ($$\\bar{X}$$):",
-      "opciones": [
+      "options": [
         "Es el valor en torno al cual es más probable encontrar el resto de datos.",
         "Es un índice muy robusto que no se ve afectado por observaciones extremas.",
         "Se obtiene dividiendo el sumatorio de todas las puntuaciones entre $$n$$."
       ],
-      "correcta": 1,
-      "explicacion": "La media es precisamente 'poco robusta' porque cualquier cambio en un dato afecta al sumatorio total y, por ende, al promedio.",
-      "pista": "Revise la propiedad de robustez en el texto."
+      "correct": 1,
+      "hint": "Revise la propiedad de robustez en el texto.",
+      "explanation": "La media es precisamente 'poco robusta' porque cualquier cambio en un dato afecta al sumatorio total y, por ende, al promedio."
     },
     {
       "q": "Señale la afirmación incorrecta sobre la mediana ($$Mdn$$):",
-      "opciones": [
+      "options": [
         "Su valor coincide con el percentil 50 ($$P_{50}$$) de la distribución analizada.",
         "Es un mejor estimador que la media en distribuciones muy asimétricas.",
         "Para su cálculo, no es estrictamente necesario ordenar los datos previamente."
       ],
-      "correcta": 2,
-      "explicacion": "La ordenación ascendente de los datos es un requisito indispensable para localizar el valor central o cualquier cuantil.",
-      "pista": "Considere el primer paso de cualquier índice de ordenación."
+      "correct": 2,
+      "hint": "Considere el primer paso de cualquier índice de ordenación.",
+      "explanation": "La ordenación ascendente de los datos es un requisito indispensable para localizar el valor central o cualquier cuantil."
     },
     {
       "q": "Señale la afirmación incorrecta sobre la varianza ($$S_x^2$$):",
-      "opciones": [
+      "options": [
         "Su interpretación es intuitiva porque usa las mismas unidades que la variable.",
         "Es un paso intermedio necesario para el cálculo de la desviación típica.",
         "Se basa en elevar al cuadrado las puntuaciones diferenciales de la muestra."
       ],
-      "correcta": 0,
-      "explicacion": "La varianza es difícil de interpretar directamente porque sus unidades están al cuadrado. Por eso se prefiere la desviación típica.",
-      "pista": "Piense en las unidades de medida (ej: años al cuadrado)."
+      "correct": 0,
+      "hint": "Piense en las unidades de medida (ej: años al cuadrado).",
+      "explanation": "La varianza es difícil de interpretar directamente porque sus unidades están al cuadrado. Por eso se prefiere la desviación típica."
     },
     {
       "q": "Señale la afirmación incorrecta sobre la desviación típica ($$S_x$$):",
-      "opciones": [
+      "options": [
         "A mayor valor de $$S_x$$, mayor es la heterogeneidad de los datos de la muestra.",
         "A menor valor de $$S_x$$, mayor es la concentración de datos cerca de la media.",
         "Es un índice de dispersión relativa que se expresa siempre en porcentajes."
       ],
-      "correcta": 2,
-      "explicacion": "La desviación típica es una medida de dispersión absoluta. El índice que se expresa en porcentajes es el Coeficiente de Variación.",
-      "pista": "Diferencie entre dispersión absoluta y relativa."
+      "correct": 2,
+      "hint": "Diferencie entre dispersión absoluta y relativa.",
+      "explanation": "La desviación típica es una medida de dispersión absoluta. El índice que se expresa en porcentajes es el Coeficiente de Variación."
     },
     {
       "q": "Señale la afirmación incorrecta sobre el rango intercuartílico ($$A_{IQ}$$):",
-      "opciones": [
+      "options": [
         "Se utiliza para evitar la influencia de valores extremos en la dispersión.",
         "Es la diferencia entre el primer cuartil ($$Q_1$$) y el tercer cuartil ($$Q_3$$).",
         "Su cálculo se apoya en los percentiles 25 y 75 de la distribución de datos."
       ],
-      "correcta": 1,
-      "explicacion": "La fórmula es $$Q_3 - Q_1$$. Aunque el valor absoluto sea el mismo, conceptualmente se resta el menor al mayor.",
-      "pista": "Revise el orden de la resta en la fórmula."
+      "correct": 1,
+      "hint": "Revise el orden de la resta en la fórmula.",
+      "explanation": "La fórmula es $$Q_3 - Q_1$$. Aunque el valor absoluto sea el mismo, conceptualmente se resta el menor al mayor."
     },
     {
       "q": "Señale la afirmación incorrecta sobre las distribuciones de moda:",
-      "opciones": [
+      "options": [
         "Una distribución amodal es aquella en la que ningún valor se repite más.",
         "Las distribuciones bimodales presentan dos valores con la máxima frecuencia.",
         "La moda solo puede calcularse para variables de intervalo o de razón."
       ],
-      "correcta": 2,
-      "explicacion": "La moda es el único índice de tendencia central que puede usarse también en variables categóricas (nominales).",
-      "pista": "Piense en el índice más básico para categorías."
+      "correct": 2,
+      "hint": "Piense en el índice más básico para categorías.",
+      "explanation": "La moda es el único índice de tendencia central que puede usarse también en variables categóricas (nominales)."
     },
     {
       "q": "Señale la afirmación incorrecta sobre el Coeficiente de Variación ($$CV$$):",
-      "opciones": [
+      "options": [
         "Es especialmente útil para comparar grupos con distintas medias aritméticas.",
         "Multiplica el cociente entre desviación típica y media por cien.",
         "Es una medida de dispersión absoluta expresada en la unidad de la variable."
       ],
-      "correcta": 2,
-      "explicacion": "El $$CV$$ es una medida de dispersión *relativa*. Las medidas absolutas mantienen la unidad de medida original.",
-      "pista": "Recuerde la definición de 'relativa' vs 'absoluta'."
+      "correct": 2,
+      "hint": "Recuerde la definición de 'relativa' vs 'absoluta'.",
+      "explanation": "El $$CV$$ es una medida de dispersión *relativa*. Las medidas absolutas mantienen la unidad de medida original."
     },
     {
       "q": "Señale la afirmación incorrecta sobre la asimetría de las distribuciones:",
-      "opciones": [
+      "options": [
         "En distribuciones simétricas, la media, mediana y moda tienden a coincidir.",
         "En distribuciones asimétricas, la media aritmética es el índice más robusto.",
         "La asimetría aumenta la distancia entre los diferentes índices centrales."
       ],
-      "correcta": 1,
-      "explicacion": "En distribuciones asimétricas la media es la menos robusta; se recomienda usar la mediana en esos casos.",
-      "pista": "Piense en qué índice se deja 'arrastrar' por la cola de la distribución."
+      "correct": 1,
+      "hint": "Piense en qué índice se deja 'arrastrar' por la cola de la distribución.",
+      "explanation": "En distribuciones asimétricas la media es la menos robusta; se recomienda usar la mediana en esos casos."
     },
     {
       "q": "Señale la afirmación incorrecta sobre las tablas de frecuencias cuantitativas:",
-      "opciones": [
+      "options": [
         "Son siempre la mejor opción para describir variables con muchos valores.",
         "Suelen ser poco útiles cuando hay una escasa repetición de los casos.",
         "Para estas variables, es más intuitivo organizar a los sujetos por cuantiles."
       ],
-      "correcta": 0,
-      "explicacion": "El manual indica que las tablas de frecuencias pueden *no ser apropiadas* para variables cuantitativas por el número inmanejable de valores únicos.",
-      "pista": "Busque la limitación mencionada en la página 42."
+      "correct": 0,
+      "hint": "Busque la limitación mencionada en la página 42.",
+      "explanation": "El manual indica que las tablas de frecuencias pueden *no ser apropiadas* para variables cuantitativas por el número inmanejable de valores únicos."
     },
     {
       "q": "Señale la afirmación incorrecta sobre el cálculo del percentil con decimales:",
-      "opciones": [
+      "options": [
         "El valor $$d$$ representa la parte entera del resultado de la posición original.",
         "Se requiere conocer el valor en la posición anterior ($$Y_i$$) y siguiente ($$Y_{i+1}$$).",
         "La fórmula busca estimar un valor intermedio proporcional a la distancia decimal."
       ],
-      "correcta": 0,
-      "explicacion": "$$d$$ es específicamente la parte *decimal* del resultado de la posición, no la parte entera.",
-      "pista": "Defina qué es 'd' en la fórmula $$P_k = (1-d)Y_i + (d)Y_{i+1}$$."
+      "correct": 0,
+      "hint": "Defina qué es 'd' en la fórmula $$P_k = (1-d)Y_i + (d)Y_{i+1}$$.",
+      "explanation": "$$d$$ es específicamente la parte *decimal* del resultado de la posición, no la parte entera."
     },
     {
       "q": "Señale la afirmación incorrecta sobre la desviación media:",
-      "opciones": [
+      "options": [
         "Se obtiene sumando las puntuaciones diferenciales directas sin transformar.",
         "Una opción para su cálculo es tomar el valor absoluto de las desviaciones.",
         "Es un índice de dispersión que indica la distancia promedio a la media."
       ],
-      "correcta": 0,
-      "explicacion": "Si se suman las puntuaciones diferenciales directas, el resultado es siempre cero. Hay que usar valores absolutos o cuadrados.",
-      "pista": "Recuerde qué sucede al sumar $$x = X_i - \\bar{X}$$."
+      "correct": 0,
+      "hint": "Recuerde qué sucede al sumar $$x = X_i - \\bar{X}$$.",
+      "explanation": "Si se suman las puntuaciones diferenciales directas, el resultado es siempre cero. Hay que usar valores absolutos o cuadrados."
     },
     {
       "q": "Señale la afirmación incorrecta sobre la estandarización de variables:",
-      "opciones": [
+      "options": [
         "Es la única forma de comparar variables medidas en diferentes escalas.",
         "Consiste en transformar las puntuaciones a una escala de medida común.",
         "Los cuantiles no sirven para comparar posiciones relativas entre grupos."
       ],
-      "correcta": 2,
-      "explicacion": "Los cuantiles (y percentiles) son precisamente una de las herramientas más útiles para comparar posiciones relativas entre variables con métricas distintas.",
-      "pista": "Vea el ejemplo de ansiedad e inteligencia emocional."
-    },
+      "correct": 2,
+      "hint": "Vea el ejemplo de ansiedad e inteligencia emocional.",
+      "explanation": "Los cuantiles (y percentiles) son precisamente una de las herramientas más útiles para comparar posiciones relativas entre variables con métricas distintas."
+    }
+  ],
+  "jsonTestB": [
     {
       "q": "En una muestra de $n=9$ con valores ordenados $\\{17, 22, 25, 32, 36, 41, 54, 68, 76\\}$, el percentil 33 ($P_{33}$) calculado mediante interpolación lineal es ____.",
-      "opciones": [
+      "options": [
         "$25.00$",
         "$27.10$",
         "$32.00$"
       ],
-      "correcta": 1,
-      "explicacion": "La posición es $i = 33(9+1)/100 = 3.3$. El valor es $P_{33} = (1-0.3)Y_3 + (0.3)Y_4 = 0.7(25) + 0.3(32) = 17.5 + 9.6 = 27.1$.",
-      "pista": "Recuerda que la posición se calcula como $k(n+1)/100$ y requiere interpolar entre los valores de las posiciones adyacentes."
+      "correct": 1,
+      "hint": "Recuerda que la posición se calcula como $k(n+1)/100$ y requiere interpolar entre los valores de las posiciones adyacentes.",
+      "explanation": "La posición es $i = 33(9+1)/100 = 3.3$. El valor es $P_{33} = (1-0.3)Y_3 + (0.3)Y_4 = 0.7(25) + 0.3(32) = 17.5 + 9.6 = 27.1$."
     },
     {
       "q": "Si disponemos de las puntuaciones diferenciales $x_i = X_i - \\bar{X}$ de 10 sujetos cuya suma de cuadrados es $\\sum x_i^2 = 12.1$, la varianza insesgada ($S_x^2$) es ____.",
-      "opciones": [
+      "options": [
         "$1.100$",
         "$1.210$",
         "$1.344$"
       ],
-      "correcta": 2,
-      "explicacion": "La fórmula de la varianza insesgada es $S_x^2 = \\frac{\\sum (X_i - \\bar{X})^2}{n-1}$. Sustituyendo: $S_x^2 = \\frac{12.1}{10-1} = \\frac{12.1}{9} \\approx 1.344$.",
-      "pista": "La varianza insesgada utiliza $n-1$ en el denominador para corregir el sesgo en la estimación poblacional."
+      "correct": 2,
+      "hint": "La varianza insesgada utiliza $n-1$ en el denominador para corregir el sesgo en la estimación poblacional.",
+      "explanation": "La fórmula de la varianza insesgada es $S_x^2 = \\frac{\\sum (X_i - \\bar{X})^2}{n-1}$. Sustituyendo: $S_x^2 = \\frac{12.1}{10-1} = \\frac{12.1}{9} \\approx 1.344$."
     },
     {
       "q": "Dada la serie ordenada $\\{3, 5, 6, 7, 7, 8, 9, 9, 10, 10\\}$, el valor correspondiente al primer cuartil ($Q_1$) tras aplicar el cálculo de percentiles es ____.",
-      "opciones": [
+      "options": [
         "$5.50$",
         "$5.75$",
         "$6.00$"
       ],
-      "correcta": 1,
-      "explicacion": "Posición: $25(10+1)/100 = 2.75$. Interpolación: $P_{25} = (1-0.75)Y_2 + (0.75)Y_3 = 0.25(5) + 0.75(6) = 1.25 + 4.5 = 5.75$.",
-      "pista": "El primer cuartil equivale al $P_{25}$. Calcula su posición exacta en una muestra de $n=10$."
+      "correct": 1,
+      "hint": "El primer cuartil equivale al $P_{25}$. Calcula su posición exacta en una muestra de $n=10$.",
+      "explanation": "Posición: $25(10+1)/100 = 2.75$. Interpolación: $P_{25} = (1-0.75)Y_2 + (0.75)Y_3 = 0.25(5) + 0.75(6) = 1.25 + 4.5 = 5.75$."
     },
     {
       "q": "Si una distribución de sintomatología presenta una media $\\bar{x} = 13.3$ y una desviación típica $S_x = 37.51$, el coeficiente de variación ($CV$) expresado en porcentaje es ____.",
-      "opciones": [
+      "options": [
         "$271.1\\%$",
         "$282.0\\%$",
         "$295.4\\%$"
       ],
-      "correcta": 1,
-      "explicacion": "Cálculo: $CV = \\frac{S_x}{\\bar{X}} \\times 100 = \\frac{37.51}{13.3} \\times 100 \\approx 282.03\\%$. Indica una altísima heterogeneidad.",
-      "pista": "El $CV$ es un índice de dispersión relativa que relaciona la desviación típica con la media aritmética."
+      "correct": 1,
+      "hint": "El $CV$ es un índice de dispersión relativa que relaciona la desviación típica con la media aritmética.",
+      "explanation": "Cálculo: $CV = \\frac{S_x}{\\bar{X}} \\times 100 = \\frac{37.51}{13.3} \\times 100 \\approx 282.03\\%$. Indica una altísima heterogeneidad."
     },
     {
       "q": "En una tabla de frecuencias para variables ordinales, si la frecuencia relativa acumulada de la categoría 'Secundario' es $P_a = 0.69$, el porcentaje acumulado ($\\%_a$) es ____.",
-      "opciones": [
+      "options": [
         "$6.90\\%$",
         "$60.9\\%$",
         "$69.0\\%$"
       ],
-      "correcta": 2,
-      "explicacion": "Por definición, $\\%_a = P_a \\times 100$. Por lo tanto, $0.69 \\times 100 = 69\\%$. Representa la proporción de casos en esa categoría o inferiores.",
-      "pista": "El porcentaje acumulado es simplemente la frecuencia relativa acumulada multiplicada por cien."
+      "correct": 2,
+      "hint": "El porcentaje acumulado es simplemente la frecuencia relativa acumulada multiplicada por cien.",
+      "explanation": "Por definición, $\\%_a = P_a \\times 100$. Por lo tanto, $0.69 \\times 100 = 69\\%$. Representa la proporción de casos en esa categoría o inferiores."
     },
     {
       "q": "Al calcular la mediana de la muestra $\\{0, 1, 1, 0, 2, 3, 1, 2, 3, 120\\}$, el valor resultante tras ordenar los datos es ____.",
-      "opciones": [
+      "options": [
         "$1.00$",
         "$1.50$",
         "$13.3$"
       ],
-      "correcta": 0,
-      "explicacion": "Datos ordenados: $\\{0, 0, 1, 1, 1, 2, 2, 3, 3, 120\\}$. Posición $P_{50} = 5.5$. Como $Y_5=1$ y $Y_6=1$, la mediana es $1$.",
-      "pista": "La mediana es el percentil 50. Observa si el valor extremo de 120 afecta a este índice de posición."
+      "correct": 0,
+      "hint": "La mediana es el percentil 50. Observa si el valor extremo de 120 afecta a este índice de posición.",
+      "explanation": "Datos ordenados: $\\{0, 0, 1, 1, 1, 2, 2, 3, 3, 120\\}$. Posición $P_{50} = 5.5$. Como $Y_5=1$ y $Y_6=1$, la mediana es $1$."
     },
     {
       "q": "La amplitud intercuartil ($A_{IQ}$) de una distribución donde $Q_3 = 9.25$ y $Q_1 = 5.75$ se sitúa exactamente en ____.",
-      "opciones": [
+      "options": [
         "$3.25$",
         "$3.50$",
         "$4.00$"
       ],
-      "correcta": 1,
-      "explicacion": "$A_{IQ} = Q_3 - Q_1 = 9.25 - 5.75 = 3.5$. Es un índice de dispersión más robusto que el rango total.",
-      "pista": "La amplitud intercuartil mide el rango donde se concentra el $50\\%$ central de la distribución."
+      "correct": 1,
+      "hint": "La amplitud intercuartil mide el rango donde se concentra el $50\\%$ central de la distribución.",
+      "explanation": "$A_{IQ} = Q_3 - Q_1 = 9.25 - 5.75 = 3.5$. Es un índice de dispersión más robusto que el rango total."
     },
     {
       "q": "Si transformamos el último valor de la serie $\\{0, 1, 1, 0, 2, 3, 1, 2, 3, 0\\}$ por un $120$, la nueva media aritmética ($\\bar{x}$) pasa de $1.3$ a ____.",
-      "opciones": [
+      "options": [
         "$12.0$",
         "$13.3$",
         "$14.5$"
       ],
-      "correcta": 1,
-      "explicacion": "Suma original = $13$. Nueva suma = $13 - 0 + 120 = 133$. Nueva media = $133 / 10 = 13.3$.",
-      "pista": "La media es muy sensible a valores extremos. Suma el nuevo total y divide por el número de sujetos."
+      "correct": 1,
+      "hint": "La media es muy sensible a valores extremos. Suma el nuevo total y divide por el número de sujetos.",
+      "explanation": "Suma original = $13$. Nueva suma = $13 - 0 + 120 = 133$. Nueva media = $133 / 10 = 13.3$."
     },
     {
       "q": "El tercer cuartil ($Q_3$) de la serie $\\{3, 5, 6, 7, 7, 8, 9, 9, 10, 10\\}$ se corresponde con el valor ____.",
-      "opciones": [
+      "options": [
         "$9.00$",
         "$9.25$",
         "$9.50$"
       ],
-      "correcta": 1,
-      "explicacion": "Posición $8.25$ entre $Y_8=9$ y $Y_9=10$. Interpolación: $P_{75} = (1-0.25)9 + (0.25)10 = 6.75 + 2.5 = 9.25$.",
-      "pista": "Calcula el percentil 75. La posición para $n=10$ es $75(11)/100 = 8.25$."
+      "correct": 1,
+      "hint": "Calcula el percentil 75. La posición para $n=10$ es $75(11)/100 = 8.25$.",
+      "explanation": "Posición $8.25$ entre $Y_8=9$ y $Y_9=10$. Interpolación: $P_{75} = (1-0.25)9 + (0.25)10 = 6.75 + 2.5 = 9.25$."
     },
     {
       "q": "Si una variable edad tiene una varianza $S_x^2 = 1.344$ años al cuadrado, su desviación típica ($S_x$) redondeada a dos decimales es ____.",
-      "opciones": [
+      "options": [
         "$1.10$",
         "$1.16$",
         "$1.21$"
       ],
-      "correcta": 1,
-      "explicacion": "$S_x = \\sqrt{S_x^2} = \\sqrt{1.344} \\approx 1.159$. Redondeado a dos decimales obtenemos $1.16$.",
-      "pista": "La desviación típica es la raíz cuadrada de la varianza y devuelve la medida a la escala original."
+      "correct": 1,
+      "hint": "La desviación típica es la raíz cuadrada de la varianza y devuelve la medida a la escala original.",
+      "explanation": "$S_x = \\sqrt{S_x^2} = \\sqrt{1.344} \\approx 1.159$. Redondeado a dos decimales obtenemos $1.16$."
     },
     {
       "q": "En el cálculo de percentiles con resultados decimales, si la posición es $3.3$, el valor de $d$ en la fórmula de transformación es ____.",
-      "opciones": [
+      "options": [
         "$0.30$",
         "$3.00$",
         "$3.30$"
       ],
-      "correcta": 0,
-      "explicacion": "Si la posición es $3.3$, la parte entera es $3$ y la parte decimal $d$ es $0.3$. Se usa para ponderar entre $Y_3$ y $Y_4$.",
-      "pista": "El valor $d$ representa exclusivamente la parte decimal del índice de posición obtenido."
+      "correct": 0,
+      "hint": "El valor $d$ representa exclusivamente la parte decimal del índice de posición obtenido.",
+      "explanation": "Si la posición es $3.3$, la parte entera es $3$ y la parte decimal $d$ es $0.3$. Se usa para ponderar entre $Y_3$ y $Y_4$."
     },
     {
       "q": "Para una distribución de 55 sujetos, la posición teórica del percentil 50 ($P_{50}$) necesaria para iniciar el cálculo es ____.",
-      "opciones": [
+      "options": [
         "$27.5$",
         "$28.0$",
         "$28.5$"
       ],
-      "correcta": 1,
-      "explicacion": "Posición = $50(55+1)/100 = 50(56)/100 = 2800/100 = 28$. Al ser entero, indica la posición exacta.",
-      "pista": "Usa la fórmula estándar $P_k = k(n+1)/100$ para determinar el lugar que ocupa el valor central."
+      "correct": 1,
+      "hint": "Usa la fórmula estándar $P_k = k(n+1)/100$ para determinar el lugar que ocupa el valor central.",
+      "explanation": "Posición = $50(55+1)/100 = 50(56)/100 = 2800/100 = 28$. Al ser entero, indica la posición exacta."
     },
     {
       "q": "En una tabla de frecuencias ordinal, si la frecuencia absoluta acumulada ($n_a$) de la tercera categoría es $45$ y la anterior era $38$, la frecuencia absoluta ($n_i$) de dicha categoría es ____.",
-      "opciones": [
+      "options": [
         "$0.07$",
         "$7.00$",
         "$13.0$"
       ],
-      "correcta": 1,
-      "explicacion": "Si $n_{a(i)} = n_{a(i-1)} + n_i$, entonces $n_i = 45 - 38 = 7$. Hay $7$ individuos en esa categoría específica.",
-      "pista": "La frecuencia acumulada es el sumatorio de las frecuencias absolutas hasta ese nivel."
+      "correct": 1,
+      "hint": "La frecuencia acumulada es el sumatorio de las frecuencias absolutas hasta ese nivel.",
+      "explanation": "Si $n_{a(i)} = n_{a(i-1)} + n_i$, entonces $n_i = 45 - 38 = 7$. Hay $7$ individuos en esa categoría específica."
     },
     {
       "q": "Si el rango total ($A_T$) de una variable de valoración subjetiva ($0$ a $10$) es $7$ y el valor máximo detectado es $10$, el valor mínimo es ____.",
-      "opciones": [
+      "options": [
         "$1.00$",
         "$3.00$",
         "$7.00$"
       ],
-      "correcta": 1,
-      "explicacion": "$A_T = X_{max} - X_{min} \\rightarrow 7 = 10 - X_{min} \\rightarrow X_{min} = 10 - 7 = 3$.",
-      "pista": "La amplitud total se define como la diferencia simple entre la observación máxima y la mínima."
+      "correct": 1,
+      "hint": "La amplitud total se define como la diferencia simple entre la observación máxima y la mínima.",
+      "explanation": "$A_T = X_{max} - X_{min} \\rightarrow 7 = 10 - X_{min} \\rightarrow X_{min} = 10 - 7 = 3$."
     },
     {
       "q": "El índice de tendencia central que representa el valor con mayor repetición en cualquier tipo de variable es ____.",
-      "opciones": [
+      "options": [
         "Media",
         "Moda",
         "Mdn"
       ],
-      "correcta": 1,
-      "explicacion": "La moda es el valor de la variable que presenta la mayor frecuencia absoluta en la distribución de datos.",
-      "pista": "Es el único estadístico de tendencia central aplicable incluso a variables puramente nominales."
+      "correct": 1,
+      "hint": "Es el único estadístico de tendencia central aplicable incluso a variables puramente nominales.",
+      "explanation": "La moda es el valor de la variable que presenta la mayor frecuencia absoluta en la distribución de datos."
     },
     {
       "q": "Si en un test psicométrico $P_{10} = 70$, esto significa que el $10\\%$ de los sujetos puntúan ____.",
-      "opciones": [
+      "options": [
         "$70$ o menos",
         "$70$ o más",
         "Exacto $70$"
       ],
-      "correcta": 0,
-      "explicacion": "Por definición, un percentil $P_k$ es el valor que deja por debajo de sí al $k\\%$ de la muestra examinada.",
-      "pista": "Los percentiles son índices de posición que acumulan un porcentaje determinado de casos desde el inicio."
+      "correct": 0,
+      "hint": "Los percentiles son índices de posición que acumulan un porcentaje determinado de casos desde el inicio.",
+      "explanation": "Por definición, un percentil $P_k$ es el valor que deja por debajo de sí al $k\\%$ de la muestra examinada."
     },
     {
       "q": "Dada una muestra donde todos los valores son idénticos e iguales a $5$, la varianza calculada será ____.",
-      "opciones": [
+      "options": [
         "$0.00$",
         "$1.00$",
         "$5.00$"
       ],
-      "correcta": 0,
-      "explicacion": "Si todos los valores son iguales, la media es igual a ese valor y todas las puntuaciones diferenciales son cero.",
-      "pista": "La varianza mide la dispersión. Piensa en cuánto se desvían los datos si todos coinciden con la media."
+      "correct": 0,
+      "hint": "La varianza mide la dispersión. Piensa en cuánto se desvían los datos si todos coinciden con la media.",
+      "explanation": "Si todos los valores son iguales, la media es igual a ese valor y todas las puntuaciones diferenciales son cero."
     },
     {
       "q": "En una distribución bimodal de frecuencias, el número de modas identificadas es ____.",
-      "opciones": [
+      "options": [
         "$1.00$",
         "$2.00$",
         "$3.00$"
       ],
-      "correcta": 1,
-      "explicacion": "Una distribución bimodal es aquella que presenta dos valores (o categorías) con la misma frecuencia máxima.",
-      "pista": "El prefijo del término estadístico indica directamente la cantidad de picos de frecuencia máxima."
+      "correct": 1,
+      "hint": "El prefijo del término estadístico indica directamente la cantidad de picos de frecuencia máxima.",
+      "explanation": "Una distribución bimodal es aquella que presenta dos valores (o categorías) con la misma frecuencia máxima."
     },
     {
       "q": "Si el sumatorio de desviaciones cuadráticas $\\sum(X_i - \\bar{X})^2$ es cero, la desviación típica resultante es ____.",
-      "opciones": [
+      "options": [
         "$0.00$",
         "$1.00$",
         "$10.0$"
       ],
-      "correcta": 0,
-      "explicacion": "Si la suma de cuadrados es $0$, la varianza es $0$ y la raíz cuadrada de $0$ es $0$. Indica ausencia de dispersión.",
-      "pista": "La desviación típica es la raíz del promedio de esas desviaciones cuadráticas. Aplica la lógica matemática."
+      "correct": 0,
+      "hint": "La desviación típica es la raíz del promedio de esas desviaciones cuadráticas. Aplica la lógica matemática.",
+      "explanation": "Si la suma de cuadrados es $0$, la varianza es $0$ y la raíz cuadrada de $0$ es $0$. Indica ausencia de dispersión."
     },
     {
       "q": "El percentil que divide la distribución en dos mitades exactamente iguales dejando el $50\\%$ a cada lado es ____.",
-      "opciones": [
+      "options": [
         "Media",
         "$P_{50}$",
         "Moda"
       ],
-      "correcta": 1,
-      "explicacion": "El $P_{50}$ corresponde a la mediana ($Mdn$), el valor central que divide la muestra ordenada en dos partes iguales.",
-      "pista": "Aunque tiene varios nombres, en el contexto de percentiles se identifica con este valor específico."
+      "correct": 1,
+      "hint": "Aunque tiene varios nombres, en el contexto de percentiles se identifica con este valor específico.",
+      "explanation": "El $P_{50}$ corresponde a la mediana ($Mdn$), el valor central que divide la muestra ordenada en dos partes iguales."
     },
     {
       "q": "Respecto a la media aritmética, ¿cuál de las siguientes afirmaciones describe correctamente sus limitaciones y propiedades?",
-      "opciones": [
+      "options": [
         "Es el centro de gravedad de la distribución física.",
         "Se ve alterada significativamente por valores extremos.",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "La media es el promedio que equilibra las desviaciones y, al usar todos los datos, es muy sensible a outliers.",
-      "pista": "Analiza tanto la definición física (centro de gravedad) como su sensibilidad estadística (robusta vs sensible)."
+      "correct": 2,
+      "hint": "Analiza tanto la definición física (centro de gravedad) como su sensibilidad estadística (robusta vs sensible).",
+      "explanation": "La media es el promedio que equilibra las desviaciones y, al usar todos los datos, es muy sensible a outliers."
     },
     {
       "q": "Sobre la mediana ($Mdn$), ¿qué características definen su comportamiento en comparación con otros índices de tendencia central?",
-      "opciones": [
+      "options": [
         "Es equivalente al percentil 50 de la distribución.",
         "Es un índice robusto frente a observaciones atípicas.",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "La mediana divide la muestra al $50\\%$ y su valor no depende de la magnitud de los extremos, solo de su posición.",
-      "pista": "Considera su definición en términos de cuantiles y su resistencia al sesgo provocado por casos extremos."
+      "correct": 2,
+      "hint": "Considera su definición en términos de cuantiles y su resistencia al sesgo provocado por casos extremos.",
+      "explanation": "La mediana divide la muestra al $50\\%$ y su valor no depende de la magnitud de los extremos, solo de su posición."
     },
     {
       "q": "En el análisis de la dispersión, la varianza insesgada presenta las siguientes particularidades técnicas:",
-      "opciones": [
+      "options": [
         "Su denominador es $n-1$ para evitar sesgos muestrales.",
         "Proporciona resultados en unidades de medida al cuadrado.",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "La varianza insesgada corrige la infraestimación poblacional y su métrica cuadrática dificulta la interpretación directa.",
-      "pista": "Recuerda la diferencia entre varianza sesgada/insesgada y cómo afecta el exponente a la interpretación de la escala."
+      "correct": 2,
+      "hint": "Recuerda la diferencia entre varianza sesgada/insesgada y cómo afecta el exponente a la interpretación de la escala.",
+      "explanation": "La varianza insesgada corrige la infraestimación poblacional y su métrica cuadrática dificulta la interpretación directa."
     },
     {
       "q": "El coeficiente de variación ($CV$) es un estadístico de gran utilidad en la investigación porque:",
-      "opciones": [
+      "options": [
         "Permite comparar dispersiones de distintas variables.",
         "Es una medida de dispersión relativa adimensional.",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "El $CV$ elimina el efecto de la escala y de la magnitud de la media, permitiendo comparaciones entre distribuciones.",
-      "pista": "Piensa en las situaciones donde la desviación típica no es suficiente para comparar grupos con distintas medias."
+      "correct": 2,
+      "hint": "Piensa en las situaciones donde la desviación típica no es suficiente para comparar grupos con distintas medias.",
+      "explanation": "El $CV$ elimina el efecto de la escala y de la magnitud de la media, permitiendo comparaciones entre distribuciones."
     },
     {
       "q": "Sobre los gráficos circulares, el manual de la VIU recomienda tener en cuenta las siguientes limitaciones:",
-      "opciones": [
+      "options": [
         "Pierden claridad si hay un número elevado de categorías.",
         "Es preferible usar histogramas si la variable es compleja.",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "Los sectores circulares son difíciles de comparar visualmente cuando las categorías son numerosas y similares.",
-      "pista": "Busca la sección introductoria del tema donde se discute la idoneidad de la representación gráfica."
+      "correct": 2,
+      "hint": "Busca la sección introductoria del tema donde se discute la idoneidad de la representación gráfica.",
+      "explanation": "Los sectores circulares son difíciles de comparar visualmente cuando las categorías son numerosas y similares."
     },
     {
       "q": "Las tablas de frecuencias para variables ordinales incluyen columnas adicionales de datos acumulados para:",
-      "opciones": [
+      "options": [
         "Saber cuántos sujetos hay en una categoría o inferiores.",
         "Facilitar el cálculo posterior de cuantiles y percentiles.",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "Las columnas acumuladas estructuran la información de orden y son la base para calcular la mediana y percentiles.",
-      "pista": "Las frecuencias acumuladas no tendrían sentido sin un orden previo; analiza su utilidad práctica."
+      "correct": 2,
+      "hint": "Las frecuencias acumuladas no tendrían sentido sin un orden previo; analiza su utilidad práctica.",
+      "explanation": "Las columnas acumuladas estructuran la información de orden y son la base para calcular la mediana y percentiles."
     },
     {
       "q": "La desviación típica ($S_x$) se prefiere habitualmente sobre la varianza ($S_x^2$) debido a que:",
-      "opciones": [
+      "options": [
         "Se expresa en la misma métrica original que la variable.",
         "Su interpretación es más intuitiva para el investigador.",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "Al ser la raíz de la varianza, la desviación típica recupera la unidad de medida original de los datos analizados.",
-      "pista": "Considera qué sucede con las unidades de medida (ej: años vs años al cuadrado) al aplicar la raíz cuadrada."
+      "correct": 2,
+      "hint": "Considera qué sucede con las unidades de medida (ej: años vs años al cuadrado) al aplicar la raíz cuadrada.",
+      "explanation": "Al ser la raíz de la varianza, la desviación típica recupera la unidad de medida original de los datos analizados."
     },
     {
       "q": "Respecto a los cuantiles (cuartiles, deciles, percentiles), se puede afirmar con rigor estadístico que:",
-      "opciones": [
+      "options": [
         "Requieren que los datos estén previamente ordenados.",
         "Son índices de posición que dividen en partes iguales.",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "Los cuantiles se basan en el orden; sin ordenar los datos de menor a mayor, su cálculo carece de sentido.",
-      "pista": "Revisa los requisitos fundamentales para poder hablar de 'posición relativa' dentro de un grupo."
+      "correct": 2,
+      "hint": "Revisa los requisitos fundamentales para poder hablar de 'posición relativa' dentro de un grupo.",
+      "explanation": "Los cuantiles se basan en el orden; sin ordenar los datos de menor a mayor, su cálculo carece de sentido."
     },
     {
       "q": "La elección del mejor estadístico de tendencia central debe fundamentarse siempre en criterios como:",
-      "opciones": [
+      "options": [
         "La simetría o asimetría que presente la distribución.",
         "El objetivo y el ámbito específico de la investigación.",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "La media es ideal para distribuciones simétricas, mientras que la mediana es preferible en casos de asimetría.",
-      "pista": "No hay un índice 'mejor' absoluto; depende de si los datos son normales, asimétricos o tienen outliers."
+      "correct": 2,
+      "hint": "No hay un índice 'mejor' absoluto; depende de si los datos son normales, asimétricos o tienen outliers.",
+      "explanation": "La media es ideal para distribuciones simétricas, mientras que la mediana es preferible en casos de asimetría."
     },
     {
       "q": "La amplitud intercuartil ($A_{IQ}$) se considera superior al rango total ($A_T$) en distribuciones asimétricas porque:",
-      "opciones": [
+      "options": [
         "Elimina el efecto distorsionador de los casos extremos.",
         "Se centra exclusivamente en el $50\\%$ central de los datos.",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "Al ignorar el $25\\%$ superior e inferior, el $A_{IQ}$ no se ve afectado por valores atípicos en los extremos.",
-      "pista": "Piensa en cómo afecta un valor erróneo muy alto al rango total frente a cómo afecta a los cuartiles centrales."
+      "correct": 2,
+      "hint": "Piensa en cómo afecta un valor erróneo muy alto al rango total frente a cómo afecta a los cuartiles centrales.",
+      "explanation": "Al ignorar el $25\\%$ superior e inferior, el $A_{IQ}$ no se ve afectado por valores atípicos en los extremos."
     },
     {
       "q": "¿Cuál es el resultado de la suma de las puntuaciones diferenciales ($x_i = X_i - \\bar{X}$) en una muestra de $n=100$?",
-      "opciones": [
+      "options": [
         "Siempre es igual a $n$ ($100$)",
         "Siempre es igual a $1$ ($100\\%$)",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "La suma de las puntuaciones diferenciales siempre es exactamente $0$. Las opciones propuestas son incorrectas.",
-      "pista": "Esta es una propiedad fundamental de la media aritmética. Recuerda qué sucede al sumar desviaciones positivas y negativas."
+      "correct": 2,
+      "hint": "Esta es una propiedad fundamental de la media aritmética. Recuerda qué sucede al sumar desviaciones positivas y negativas.",
+      "explanation": "La suma de las puntuaciones diferenciales siempre es exactamente $0$. Las opciones propuestas son incorrectas."
     },
     {
       "q": "En una distribución perfectamente simétrica, ¿qué relación jerárquica se establece entre los índices centrales?",
-      "opciones": [
+      "options": [
         "Media $>$ Mediana $>$ Moda",
         "Moda $>$ Mediana $>$ Media",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "En una distribución simétrica, la media, la mediana y la moda coinciden en el mismo valor exacto. No hay jerarquía.",
-      "pista": "Dibuja mentalmente una campana de Gauss simétrica y ubica sus tres promedios principales."
+      "correct": 2,
+      "hint": "Dibuja mentalmente una campana de Gauss simétrica y ubica sus tres promedios principales.",
+      "explanation": "En una distribución simétrica, la media, la mediana y la moda coinciden en el mismo valor exacto. No hay jerarquía."
     },
     {
       "q": "Si calculamos la varianza de una variable medida en 'kilogramos', ¿en qué unidades se expresará el resultado final?",
-      "opciones": [
+      "options": [
         "Se expresa en kilogramos",
         "No tiene unidad de medida",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "La varianza se expresa en unidades al cuadrado (kilogramos al cuadrado). Ninguna de las opciones indica esto.",
-      "pista": "La fórmula de la varianza eleva las diferencias al cuadrado. Analiza qué le ocurre a la unidad física."
+      "correct": 2,
+      "hint": "La fórmula de la varianza eleva las diferencias al cuadrado. Analiza qué le ocurre a la unidad física.",
+      "explanation": "La varianza se expresa en unidades al cuadrado (kilogramos al cuadrado). Ninguna de las opciones indica esto."
     },
     {
       "q": "Para una variable nominal como 'Lugar de nacimiento', ¿cuál de estos estadísticos de dispersión es el más adecuado?",
-      "opciones": [
+      "options": [
         "Varianza insesgada ($S_x^2$)",
         "Amplitud intercuartil ($A_{IQ}$)",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "En variables nominales no se pueden realizar cálculos aritméticos de dispersión. Ambas opciones son imposibles de aplicar.",
-      "pista": "Considera si es posible restar o calcular percentiles en categorías que no tienen un orden lógico o numérico."
+      "correct": 2,
+      "hint": "Considera si es posible restar o calcular percentiles en categorías que no tienen un orden lógico o numérico.",
+      "explanation": "En variables nominales no se pueden realizar cálculos aritméticos de dispersión. Ambas opciones son imposibles de aplicar."
     },
     {
       "q": "Al calcular el percentil 95 ($P_{95}$) en una muestra de 9 personas, ¿cuál es la posición ($i$) resultante?",
-      "opciones": [
+      "options": [
         "La posición resultante es $8.55$",
         "La posición resultante es $9.00$",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "Posición $i = 95(9+1)/100 = 95(10)/100 = 9.5$. Las opciones $8.55$ y $9.00$ son errores comunes de cálculo.",
-      "pista": "Aplica la fórmula $P_k = k(n+1)/100$ con $n=9$ y $k=95$ con cuidado extremo."
+      "correct": 2,
+      "hint": "Aplica la fórmula $P_k = k(n+1)/100$ con $n=9$ y $k=95$ con cuidado extremo.",
+      "explanation": "Posición $i = 95(9+1)/100 = 95(10)/100 = 9.5$. Las opciones $8.55$ y $9.00$ son errores comunes de cálculo."
     },
     {
       "q": "Si un participante obtiene un $P_{30}$ en Inteligencia Emocional, ¿cuál es la interpretación técnica correcta de su estatus?",
-      "opciones": [
+      "options": [
         "Supera al $70\\%$ de los demás",
         "Está en el $30\\%$ superior",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "$P_{30}$ significa que solo supera al $30\\%$ y tiene al $70\\%$ por encima. Las opciones afirman lo contrario.",
-      "pista": "Un percentil bajo indica que la mayoría de la gente ha puntuado por encima de ese sujeto."
+      "correct": 2,
+      "hint": "Un percentil bajo indica que la mayoría de la gente ha puntuado por encima de ese sujeto.",
+      "explanation": "$P_{30}$ significa que solo supera al $30\\%$ y tiene al $70\\%$ por encima. Las opciones afirman lo contrario."
     },
     {
       "q": "¿Qué ocurre con la desviación típica si sumamos una constante $C=10$ a todos los valores de la muestra original?",
-      "opciones": [
+      "options": [
         "Aumenta en $10$ unidades",
         "Se multiplica por $10$",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "La desviación típica no varía si sumamos una constante (propiedad de invarianza). Las opciones sugieren cambios erróneos.",
-      "pista": "La dispersión mide la distancia entre los datos. Si todos se mueven igual, ¿cambia la distancia entre ellos?"
+      "correct": 2,
+      "hint": "La dispersión mide la distancia entre los datos. Si todos se mueven igual, ¿cambia la distancia entre ellos?",
+      "explanation": "La desviación típica no varía si sumamos una constante (propiedad de invarianza). Las opciones sugieren cambios erróneos."
     },
     {
       "q": "Sobre el cálculo de la varianza, ¿cuál de estas afirmaciones sobre el denominador es verdadera según el manual?",
-      "opciones": [
+      "options": [
         "Siempre debe utilizarse $n+1$",
         "Se usa $n-1$ para el sesgado",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "El denominador $n-1$ es para la insesgada y $n$ para la sesgada. Las opciones invierten o inventan fórmulas.",
-      "pista": "Distingue entre varianza sesgada (poblacional/muestral descriptiva) e insesgada (inferencial)."
+      "correct": 2,
+      "hint": "Distingue entre varianza sesgada (poblacional/muestral descriptiva) e insesgada (inferencial).",
+      "explanation": "El denominador $n-1$ es para la insesgada y $n$ para la sesgada. Las opciones invierten o inventan fórmulas."
     },
     {
       "q": "En una distribución amodal, ¿cuál es el valor que representa la tendencia central según el criterio de repetición?",
-      "opciones": [
+      "options": [
         "El valor que sea igual a cero",
         "El promedio de todos los datos",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "En una distribución amodal ningún valor se repite más que otro, por lo que no existe moda. Ninguna opción es válida.",
-      "pista": "Revisa la definición de 'amodal' en la sección de la moda del manual de estadística."
+      "correct": 2,
+      "hint": "Revisa la definición de 'amodal' en la sección de la moda del manual de estadística.",
+      "explanation": "En una distribución amodal ningún valor se repite más que otro, por lo que no existe moda. Ninguna opción es válida."
     },
     {
       "q": "Si el coeficiente de variación ($CV$) de una muestra es del $0\\%$, ¿qué podemos inferir sobre la media aritmética?",
-      "opciones": [
+      "options": [
         "La media es igual a infinito",
         "La media es siempre igual a $0$",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "Si $CV=0$, todos los datos son iguales a la media. Esto no obliga a que la media sea $0$ o infinito.",
-      "pista": "Si el $CV$ es $0$, significa que la desviación típica es $0$. ¿Qué implica esto para los datos y la media?"
+      "correct": 2,
+      "hint": "Si el $CV$ es $0$, significa que la desviación típica es $0$. ¿Qué implica esto para los datos y la media?",
+      "explanation": "Si $CV=0$, todos los datos son iguales a la media. Esto no obliga a que la media sea $0$ o infinito."
     }
   ],
-  "laboratorio": [
+  "jsonLaboratorio": [
     {
       "id": 1,
-      "titulo": "Análisis de Frecuencias en Nivel Educativo",
-      "escenario": "Se analiza una muestra de $n=55$ individuos según su nivel de estudios: Primario (26), Secundario (12), Universitario (7) y Postuniversitario (10). Fórmulas: $P_i = n_i / n$ y $\\%_i = P_i \\times 100$.",
-      "preguntas": [
+      "title": "Análisis de Frecuencias en Nivel Educativo",
+      "context": "Se analiza una muestra de $n=55$ individuos según su nivel de estudios: Primario (26), Secundario (12), Universitario (7) y Postuniversitario (10). Fórmulas: $P_i = n_i / n$ y $\\%_i = P_i \\times 100$.",
+      "parts": [
         {
           "id": "p1a",
           "label": "a)",
-          "enunciado": "¿Cuál es la frecuencia relativa ($P_i$) de los individuos con estudios Primarios? (Redondea a dos decimales)",
-          "respuesta": 0.47,
-          "tolerancia": 0.01,
-          "pista": "$$P_i = \\frac{n_i}{n} = \\frac{26}{55} \\approx 0,47$$"
+          "question": "¿Cuál es la frecuencia relativa ($P_i$) de los individuos con estudios Primarios? (Redondea a dos decimales)",
+          "correctValue": 0.47,
+          "tolerance": 0.01,
+          "explanation": "$$P_i = \\frac{n_i}{n} = \\frac{26}{55} \\approx 0,47$$"
         },
         {
           "id": "p1b",
           "label": "b)",
-          "enunciado": "¿Qué porcentaje acumulado ($\\%_a$) representan los sujetos con estudios Secundarios o menos?",
-          "respuesta": 69,
-          "tolerancia": 0.1,
-          "pista": "$$\\%_a = \\frac{26 + 12}{55} \\times 100 = 69,09\\% \\approx 69\\%$$"
+          "question": "¿Qué porcentaje acumulado ($\\%_a$) representan los sujetos con estudios Secundarios o menos?",
+          "correctValue": 69,
+          "tolerance": 0.1,
+          "explanation": "$$\\%_a = \\frac{26 + 12}{55} \\times 100 = 69,09\\% \\approx 69\\%$$"
         },
         {
           "id": "p1c",
           "label": "c)",
-          "enunciado": "Si sumamos las frecuencias absolutas de Universitario y Postuniversitario, ¿cuántos sujetos tenemos?",
-          "respuesta": 17,
-          "tolerancia": 0,
-          "pista": "$$n_{univ} + n_{post} = 7 + 10 = 17$$"
+          "question": "Si sumamos las frecuencias absolutas de Universitario y Postuniversitario, ¿cuántos sujetos tenemos?",
+          "correctValue": 17,
+          "tolerance": 0,
+          "explanation": "$$n_{univ} + n_{post} = 7 + 10 = 17$$"
         },
         {
           "id": "p1d",
           "label": "d)",
-          "enunciado": "¿Cuál es la frecuencia relativa acumulada ($p_a$) total al llegar a la última categoría?",
-          "respuesta": 1,
-          "tolerancia": 0,
-          "pista": "$$p_a = \\sum P_i = 1,00$$"
+          "question": "¿Cuál es la frecuencia relativa acumulada ($p_a$) total al llegar a la última categoría?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$p_a = \\sum P_i = 1,00$$"
         }
       ]
     },
     {
       "id": 2,
-      "titulo": "Cálculo de Percentiles con Interpolación Lineal",
-      "escenario": "Dada la muestra de edades ordenada: $\\{17, 22, 25, 32, 36, 41, 54, 68, 76\\}$ con $n=9$. Fórmulas: Posición $P_{pos} = \\frac{k(n+1)}{100}$ e Interpolación $P_k = (1-d)Y_i + (d)Y_{i+1}$.",
-      "preguntas": [
+      "title": "Cálculo de Percentiles con Interpolación Lineal",
+      "context": "Dada la muestra de edades ordenada: $\\{17, 22, 25, 32, 36, 41, 54, 68, 76\\}$ con $n=9$. Fórmulas: Posición $P_{pos} = \\frac{k(n+1)}{100}$ e Interpolación $P_k = (1-d)Y_i + (d)Y_{i+1}$.",
+      "parts": [
         {
           "id": "p2a",
           "label": "a)",
-          "enunciado": "Calcula la posición exacta para el percentil 33 ($P_{33}$).",
-          "respuesta": 3.3,
-          "tolerancia": 0,
-          "pista": "$$Posición = \\frac{33(9+1)}{100} = 3,3$$"
+          "question": "Calcula la posición exacta para el percentil 33 ($P_{33}$).",
+          "correctValue": 3.3,
+          "tolerance": 0,
+          "explanation": "$$Posición = \\frac{33(9+1)}{100} = 3,3$$"
         },
         {
           "id": "p2b",
           "label": "b)",
-          "enunciado": "Usando la posición anterior, ¿cuál es el valor del percentil 33? ($Y_3=25, Y_4=32$)",
-          "respuesta": 27.1,
-          "tolerancia": 0.1,
-          "pista": "$$P_{33} = (1-0,3)25 + (0,3)32 = 17,5 + 9,6 = 27,1$$"
+          "question": "Usando la posición anterior, ¿cuál es el valor del percentil 33? ($Y_3=25, Y_4=32$)",
+          "correctValue": 27.1,
+          "tolerance": 0.1,
+          "explanation": "$$P_{33} = (1-0,3)25 + (0,3)32 = 17,5 + 9,6 = 27,1$$"
         },
         {
           "id": "p2c",
           "label": "c)",
-          "enunciado": "¿En qué posición se encuentra la Mediana ($P_{50}$)?",
-          "respuesta": 5,
-          "tolerancia": 0,
-          "pista": "$$Posición = \\frac{50(9+1)}{100} = 5$$"
+          "question": "¿En qué posición se encuentra la Mediana ($P_{50}$)?",
+          "correctValue": 5,
+          "tolerance": 0,
+          "explanation": "$$Posición = \\frac{50(9+1)}{100} = 5$$"
         },
         {
           "id": "p2d",
           "label": "d)",
-          "enunciado": "¿Cuál es el valor de la edad en la posición 5 (la mediana)?",
-          "respuesta": 36,
-          "tolerancia": 0,
-          "pista": "$$Y_5 = 36$$"
+          "question": "¿Cuál es el valor de la edad en la posición 5 (la mediana)?",
+          "correctValue": 36,
+          "tolerance": 0,
+          "explanation": "$$Y_5 = 36$$"
         }
       ]
     },
     {
       "id": 3,
-      "titulo": "Sensibilidad de la Media ante Casos Extremos",
-      "escenario": "Muestra inicial de síntomas: $\\{0, 1, 1, 0, 2, 3, 1, 2, 3, 0\\}$ ($n=10$). Se sustituye el último 0 por un valor extremo de 120. Fórmula: $\\bar{x} = \\frac{\\sum x_i}{n}$.",
-      "preguntas": [
+      "title": "Sensibilidad de la Media ante Casos Extremos",
+      "context": "Muestra inicial de síntomas: $\\{0, 1, 1, 0, 2, 3, 1, 2, 3, 0\\}$ ($n=10$). Se sustituye el último 0 por un valor extremo de 120. Fórmula: $\\bar{x} = \\frac{\\sum x_i}{n}$.",
+      "parts": [
         {
           "id": "p3a",
           "label": "a)",
-          "enunciado": "Calcula la media aritmética de la muestra inicial.",
-          "respuesta": 1.3,
-          "tolerancia": 0.1,
-          "pista": "$$\\bar{x} = \\frac{0+1+1+0+2+3+1+2+3+0}{10} = 1,3$$"
+          "question": "Calcula la media aritmética de la muestra inicial.",
+          "correctValue": 1.3,
+          "tolerance": 0.1,
+          "explanation": "$$\\bar{x} = \\frac{0+1+1+0+2+3+1+2+3+0}{10} = 1,3$$"
         },
         {
           "id": "p3b",
           "label": "b)",
-          "enunciado": "Calcula la media aritmética tras introducir el valor atípico (120).",
-          "respuesta": 13.3,
-          "tolerancia": 0.1,
-          "pista": "$$\\bar{x} = \\frac{0+1+1+0+2+3+1+2+3+120}{10} = 13,3$$"
+          "question": "Calcula la media aritmética tras introducir el valor atípico (120).",
+          "correctValue": 13.3,
+          "tolerance": 0.1,
+          "explanation": "$$\\bar{x} = \\frac{0+1+1+0+2+3+1+2+3+120}{10} = 13,3$$"
         },
         {
           "id": "p3c",
           "label": "c)",
-          "enunciado": "¿Cuál es la posición de la mediana para $n=10$?",
-          "respuesta": 5.5,
-          "tolerancia": 0,
-          "pista": "$$Pos = \\frac{50(10+1)}{100} = 5,5$$"
+          "question": "¿Cuál es la posición de la mediana para $n=10$?",
+          "correctValue": 5.5,
+          "tolerance": 0,
+          "explanation": "$$Pos = \\frac{50(10+1)}{100} = 5,5$$"
         },
         {
           "id": "p3d",
           "label": "d)",
-          "enunciado": "Si los valores ordenados son $\\{0, 0, 0, 1, 1, 1, 2, 2, 3, 120\\}$, ¿cuál es la mediana?",
-          "respuesta": 1,
-          "tolerancia": 0,
-          "pista": "$$Mdn = \\frac{1+1}{2} = 1$$"
+          "question": "Si los valores ordenados son $\\{0, 0, 0, 1, 1, 1, 2, 2, 3, 120\\}$, ¿cuál es la mediana?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$Mdn = \\frac{1+1}{2} = 1$$"
         }
       ]
     },
     {
       "id": 4,
-      "titulo": "Análisis de Dispersión: Amplitudes",
-      "escenario": "Muestra de intensidad de ansiedad: $\\{3, 5, 6, 7, 7, 8, 9, 9, 10, 10\\}$ ($n=10$). Fórmulas: $A_T = X_{max} - X_{min}$ y $A_{IQ} = Q_3 - Q_1$.",
-      "preguntas": [
+      "title": "Análisis de Dispersión: Amplitudes",
+      "context": "Muestra de intensidad de ansiedad: $\\{3, 5, 6, 7, 7, 8, 9, 9, 10, 10\\}$ ($n=10$). Fórmulas: $A_T = X_{max} - X_{min}$ y $A_{IQ} = Q_3 - Q_1$.",
+      "parts": [
         {
           "id": "p4a",
           "label": "a)",
-          "enunciado": "Calcula la Amplitud Total ($A_T$) de la muestra.",
-          "respuesta": 7,
-          "tolerancia": 0,
-          "pista": "$$A_T = 10 - 3 = 7$$"
+          "question": "Calcula la Amplitud Total ($A_T$) de la muestra.",
+          "correctValue": 7,
+          "tolerance": 0,
+          "explanation": "$$A_T = 10 - 3 = 7$$"
         },
         {
           "id": "p4b",
           "label": "b)",
-          "enunciado": "Calcula el valor del primer cuartil ($Q_1$) mediante interpolación (Posición 2,75).",
-          "respuesta": 5.75,
-          "tolerancia": 0.05,
-          "pista": "$$Q_1 = (1-0,75)5 + (0,75)6 = 5,75$$"
+          "question": "Calcula el valor del primer cuartil ($Q_1$) mediante interpolación (Posición 2,75).",
+          "correctValue": 5.75,
+          "tolerance": 0.05,
+          "explanation": "$$Q_1 = (1-0,75)5 + (0,75)6 = 5,75$$"
         },
         {
           "id": "p4c",
           "label": "c)",
-          "enunciado": "Calcula el valor del tercer cuartil ($Q_3$) mediante interpolación (Posición 8,25).",
-          "respuesta": 9.25,
-          "tolerancia": 0.05,
-          "pista": "$$Q_3 = (1-0,25)9 + (0,25)10 = 9,25$$"
+          "question": "Calcula el valor del tercer cuartil ($Q_3$) mediante interpolación (Posición 8,25).",
+          "correctValue": 9.25,
+          "tolerance": 0.05,
+          "explanation": "$$Q_3 = (1-0,25)9 + (0,25)10 = 9,25$$"
         },
         {
           "id": "p4d",
           "label": "d)",
-          "enunciado": "Calcula la Amplitud Intercuartil ($A_{IQ}$).",
-          "respuesta": 3.5,
-          "tolerancia": 0.1,
-          "pista": "$$A_{IQ} = 9,25 - 5,75 = 3,5$$"
+          "question": "Calcula la Amplitud Intercuartil ($A_{IQ}$).",
+          "correctValue": 3.5,
+          "tolerance": 0.1,
+          "explanation": "$$A_{IQ} = 9,25 - 5,75 = 3,5$$"
         }
       ]
     },
     {
       "id": 5,
-      "titulo": "Cálculo de la Varianza Insesgada",
-      "escenario": "Puntuaciones de sintomatología ($n=10$): $\\bar{x} = 1,3$. Sumatorio de desviaciones al cuadrado $\\sum (X_i - \\bar{X})^2 = 12,1$. Fórmula: $S_x^2 = \\frac{\\sum(X_i - \\bar{X})^2}{n-1}$.",
-      "preguntas": [
+      "title": "Cálculo de la Varianza Insesgada",
+      "context": "Puntuaciones de sintomatología ($n=10$): $\\bar{x} = 1,3$. Sumatorio de desviaciones al cuadrado $\\sum (X_i - \\bar{X})^2 = 12,1$. Fórmula: $S_x^2 = \\frac{\\sum(X_i - \\bar{X})^2}{n-1}$.",
+      "parts": [
         {
           "id": "p5a",
           "label": "a)",
-          "enunciado": "¿Cuál es el denominador ($n-1$) para el cálculo de la varianza insesgada?",
-          "respuesta": 9,
-          "tolerancia": 0,
-          "pista": "$$n - 1 = 10 - 1 = 9$$"
+          "question": "¿Cuál es el denominador ($n-1$) para el cálculo de la varianza insesgada?",
+          "correctValue": 9,
+          "tolerance": 0,
+          "explanation": "$$n - 1 = 10 - 1 = 9$$"
         },
         {
           "id": "p5b",
           "label": "b)",
-          "enunciado": "Calcula la varianza insesgada ($S_x^2$). (Redondea a tres decimales)",
-          "respuesta": 1.344,
-          "tolerancia": 0.001,
-          "pista": "$$S_x^2 = \\frac{12,1}{9} \\approx 1,344$$"
+          "question": "Calcula la varianza insesgada ($S_x^2$). (Redondea a tres decimales)",
+          "correctValue": 1.344,
+          "tolerance": 0.001,
+          "explanation": "$$S_x^2 = \\frac{12,1}{9} \\approx 1,344$$"
         },
         {
           "id": "p5c",
           "label": "c)",
-          "enunciado": "Calcula la desviación típica ($S_x$) a partir de la varianza.",
-          "respuesta": 1.16,
-          "tolerancia": 0.01,
-          "pista": "$$S_x = \\sqrt{1,344} \\approx 1,16$$"
+          "question": "Calcula la desviación típica ($S_x$) a partir de la varianza.",
+          "correctValue": 1.16,
+          "tolerance": 0.01,
+          "explanation": "$$S_x = \\sqrt{1,344} \\approx 1,16$$"
         },
         {
           "id": "p5d",
           "label": "d)",
-          "enunciado": "Si la varianza fuera 4, ¿cuál sería la desviación típica?",
-          "respuesta": 2,
-          "tolerancia": 0,
-          "pista": "$$S_x = \\sqrt{4} = 2$$"
+          "question": "Si la varianza fuera 4, ¿cuál sería la desviación típica?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$S_x = \\sqrt{4} = 2$$"
         }
       ]
     },
     {
       "id": 6,
-      "titulo": "Coeficiente de Variación (CV)",
-      "escenario": "Grupo A: $\\bar{x} = 20, S_x = 5$. Grupo B: $\\bar{x} = 100, S_x = 10$. Fórmula: $CV = (S_x / \\bar{x}) \\times 100$.",
-      "preguntas": [
+      "title": "Coeficiente de Variación (CV)",
+      "context": "Grupo A: $\\bar{x} = 20, S_x = 5$. Grupo B: $\\bar{x} = 100, S_x = 10$. Fórmula: $CV = (S_x / \\bar{x}) \\times 100$.",
+      "parts": [
         {
           "id": "p6a",
           "label": "a)",
-          "enunciado": "Calcula el Coeficiente de Variación (%) para el Grupo A.",
-          "respuesta": 25,
-          "tolerancia": 0,
-          "pista": "$$CV_A = \\frac{5}{20} \\times 100 = 25\\%$$"
+          "question": "Calcula el Coeficiente de Variación (%) para el Grupo A.",
+          "correctValue": 25,
+          "tolerance": 0,
+          "explanation": "$$CV_A = \\frac{5}{20} \\times 100 = 25\\%$$"
         },
         {
           "id": "p6b",
           "label": "b)",
-          "enunciado": "Calcula el Coeficiente de Variación (%) para el Grupo B.",
-          "respuesta": 10,
-          "tolerancia": 0,
-          "pista": "$$CV_B = \\frac{10}{100} \\times 100 = 10\\%$$"
+          "question": "Calcula el Coeficiente de Variación (%) para el Grupo B.",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$CV_B = \\frac{10}{100} \\times 100 = 10\\%$$"
         },
         {
           "id": "p6c",
           "label": "c)",
-          "enunciado": "¿Qué grupo es más homogéneo (menor CV)? (A=1, B=2)",
-          "respuesta": 2,
-          "tolerancia": 0,
-          "pista": "El Grupo B tiene un CV menor (10% vs 25%), por lo que es más homogéneo."
+          "question": "¿Qué grupo es más homogéneo (menor CV)? (A=1, B=2)",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "El Grupo B tiene un CV menor (10% vs 25%), por lo que es más homogéneo."
         },
         {
           "id": "p6d",
           "label": "d)",
-          "enunciado": "Si el Grupo C tiene $\\bar{x} = 50$ y $CV = 20\\%$, ¿cuál es su desviación típica?",
-          "respuesta": 10,
-          "tolerancia": 0,
-          "pista": "$$S_x = \\frac{CV \\times \\bar{x}}{100} = \\frac{20 \\times 50}{100} = 10$$"
+          "question": "Si el Grupo C tiene $\\bar{x} = 50$ y $CV = 20\\%$, ¿cuál es su desviación típica?",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$S_x = \\frac{CV \\times \\bar{x}}{100} = \\frac{20 \\times 50}{100} = 10$$"
         }
       ]
     },
     {
       "id": 7,
-      "titulo": "Puntuaciones Diferenciales",
-      "escenario": "Sujeto con puntuación $X_i = 3$ en un test con $\\bar{x} = 1,3$. Fórmula: $x = X_i - \\bar{X}$.",
-      "preguntas": [
+      "title": "Puntuaciones Diferenciales",
+      "context": "Sujeto con puntuación $X_i = 3$ en un test con $\\bar{x} = 1,3$. Fórmula: $x = X_i - \\bar{X}$.",
+      "parts": [
         {
           "id": "p7a",
           "label": "a)",
-          "enunciado": "Calcula la puntuación diferencial ($x$) para este sujeto.",
-          "respuesta": 1.7,
-          "tolerancia": 0.1,
-          "pista": "$$x = 3 - 1,3 = 1,7$$"
+          "question": "Calcula la puntuación diferencial ($x$) para este sujeto.",
+          "correctValue": 1.7,
+          "tolerance": 0.1,
+          "explanation": "$$x = 3 - 1,3 = 1,7$$"
         },
         {
           "id": "p7b",
           "label": "b)",
-          "enunciado": "Si un sujeto tiene $x = -1,3$, ¿cuál es su puntuación original $X_i$?",
-          "respuesta": 0,
-          "tolerancia": 0,
-          "pista": "$$X_i = x + \\bar{X} = -1,3 + 1,3 = 0$$"
+          "question": "Si un sujeto tiene $x = -1,3$, ¿cuál es su puntuación original $X_i$?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "$$X_i = x + \\bar{X} = -1,3 + 1,3 = 0$$"
         },
         {
           "id": "p7c",
           "label": "c)",
-          "enunciado": "En una muestra de 10 sujetos, ¿cuánto debe sumar siempre el total de las puntuaciones diferenciales ($\\sum x$)?",
-          "respuesta": 0,
-          "tolerancia": 0,
-          "pista": "La suma de las desviaciones respecto a la media siempre es cero."
+          "question": "En una muestra de 10 sujetos, ¿cuánto debe sumar siempre el total de las puntuaciones diferenciales ($\\sum x$)?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "La suma de las desviaciones respecto a la media siempre es cero."
         },
         {
           "id": "p7d",
           "label": "d)",
-          "enunciado": "Si elevamos al cuadrado una puntuación diferencial de -1,3, ¿qué valor obtenemos?",
-          "respuesta": 1.69,
-          "tolerancia": 0,
-          "pista": "$$(-1,3)^2 = 1,69$$"
+          "question": "Si elevamos al cuadrado una puntuación diferencial de -1,3, ¿qué valor obtenemos?",
+          "correctValue": 1.69,
+          "tolerance": 0,
+          "explanation": "$$(-1,3)^2 = 1,69$$"
         }
       ]
     },
     {
       "id": 8,
-      "titulo": "Posición Relativa y Percentiles",
-      "escenario": "Un participante obtiene 33 puntos en Ansiedad ($P_{95}$) e Inteligencia Emocional ($P_{30}$).",
-      "preguntas": [
+      "title": "Posición Relativa y Percentiles",
+      "context": "Un participante obtiene 33 puntos en Ansiedad ($P_{95}$) e Inteligencia Emocional ($P_{30}$).",
+      "parts": [
         {
           "id": "p8a",
           "label": "a)",
-          "enunciado": "¿A qué porcentaje de la población supera el participante en Ansiedad?",
-          "respuesta": 95,
-          "tolerancia": 0,
-          "pista": "El percentil 95 indica que supera al 95% de los casos."
+          "question": "¿A qué porcentaje de la población supera el participante en Ansiedad?",
+          "correctValue": 95,
+          "tolerance": 0,
+          "explanation": "El percentil 95 indica que supera al 95% de los casos."
         },
         {
           "id": "p8b",
           "label": "b)",
-          "enunciado": "¿Qué porcentaje de personas está por encima de él en Inteligencia Emocional?",
-          "respuesta": 70,
-          "tolerancia": 0,
-          "pista": "$$100\\% - 30\\% = 70\\%$$"
+          "question": "¿Qué porcentaje de personas está por encima de él en Inteligencia Emocional?",
+          "correctValue": 70,
+          "tolerance": 0,
+          "explanation": "$$100\\% - 30\\% = 70\\%$$"
         },
         {
           "id": "p8c",
           "label": "c)",
-          "enunciado": "Si el $P_{10} = 70$, ¿qué porcentaje de sujetos tiene 70 puntos o menos?",
-          "respuesta": 10,
-          "tolerancia": 0,
-          "pista": "Por definición de percentil."
+          "question": "Si el $P_{10} = 70$, ¿qué porcentaje de sujetos tiene 70 puntos o menos?",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "Por definición de percentil."
         },
         {
           "id": "p8d",
           "label": "d)",
-          "enunciado": "Si $P_{50} = 100$, ¿cuánto vale la Mediana?",
-          "respuesta": 100,
-          "tolerancia": 0,
-          "pista": "La Mediana es equivalente al Percentil 50."
+          "question": "Si $P_{50} = 100$, ¿cuánto vale la Mediana?",
+          "correctValue": 100,
+          "tolerance": 0,
+          "explanation": "La Mediana es equivalente al Percentil 50."
         }
       ]
     },
     {
       "id": 9,
-      "titulo": "Comparación de Escalas: Ansiedad e IE",
-      "escenario": "Ansiedad (0-40 puntos), IE (20-50 puntos). Un sujeto tiene 33 en Ansiedad y 31 en IE.",
-      "preguntas": [
+      "title": "Comparación de Escalas: Ansiedad e IE",
+      "context": "Ansiedad (0-40 puntos), IE (20-50 puntos). Un sujeto tiene 33 en Ansiedad y 31 en IE.",
+      "parts": [
         {
           "id": "p9a",
           "label": "a)",
-          "enunciado": "Si el rango de Ansiedad es 40, ¿qué porcentaje del rango total representa una puntuación de 33?",
-          "respuesta": 82.5,
-          "tolerancia": 0.1,
-          "pista": "$$\\frac{33}{40} \\times 100 = 82,5\\%$$"
+          "question": "Si el rango de Ansiedad es 40, ¿qué porcentaje del rango total representa una puntuación de 33?",
+          "correctValue": 82.5,
+          "tolerance": 0.1,
+          "explanation": "$$\\frac{33}{40} \\times 100 = 82,5\\%$$"
         },
         {
           "id": "p9b",
           "label": "b)",
-          "enunciado": "¿Cuál es el rango total de la escala de IE (50 - 20)?",
-          "respuesta": 30,
-          "tolerancia": 0,
-          "pista": "$$50 - 20 = 30$$"
+          "question": "¿Cuál es el rango total de la escala de IE (50 - 20)?",
+          "correctValue": 30,
+          "tolerance": 0,
+          "explanation": "$$50 - 20 = 30$$"
         },
         {
           "id": "p9c",
           "label": "c)",
-          "enunciado": "Si el sujeto está en el $P_{95}$ de Ansiedad, ¿qué porcentaje de personas tienen puntuaciones superiores a 33?",
-          "respuesta": 5,
-          "tolerancia": 0,
-          "pista": "$$100 - 95 = 5\\%$$"
+          "question": "Si el sujeto está en el $P_{95}$ de Ansiedad, ¿qué porcentaje de personas tienen puntuaciones superiores a 33?",
+          "correctValue": 5,
+          "tolerance": 0,
+          "explanation": "$$100 - 95 = 5\\%$$"
         },
         {
           "id": "p9d",
           "label": "d)",
-          "enunciado": "Si en IE está en el $P_{30}$, ¿a cuántas personas de una muestra de 200 supera?",
-          "respuesta": 60,
-          "tolerancia": 0,
-          "pista": "$$200 \\times 0,30 = 60$$"
+          "question": "Si en IE está en el $P_{30}$, ¿a cuántas personas de una muestra de 200 supera?",
+          "correctValue": 60,
+          "tolerance": 0,
+          "explanation": "$$200 \\times 0,30 = 60$$"
         }
       ]
     },
     {
       "id": 10,
-      "titulo": "Propiedades de la Desviación Típica",
-      "escenario": "Se tiene una varianza $S_x^2 = 37,51$ para una muestra con valor atípico.",
-      "preguntas": [
+      "title": "Propiedades de la Desviación Típica",
+      "context": "Se tiene una varianza $S_x^2 = 37,51$ para una muestra con valor atípico.",
+      "parts": [
         {
           "id": "p10a",
           "label": "a)",
-          "enunciado": "Calcula la desviación típica ($S_x$). (Redondea a dos decimales)",
-          "respuesta": 6.12,
-          "tolerancia": 0.05,
-          "pista": "$$S_x = \\sqrt{37,51} \\approx 6,12$$"
+          "question": "Calcula la desviación típica ($S_x$). (Redondea a dos decimales)",
+          "correctValue": 6.12,
+          "tolerance": 0.05,
+          "explanation": "$$S_x = \\sqrt{37,51} \\approx 6,12$$"
         },
         {
           "id": "p10b",
           "label": "b)",
-          "enunciado": "Si multiplicamos todos los datos por 2, ¿por cuánto se multiplica la desviación típica?",
-          "respuesta": 2,
-          "tolerancia": 0,
-          "pista": "Propiedad de la desviación típica ante constantes multiplicativas."
+          "question": "Si multiplicamos todos los datos por 2, ¿por cuánto se multiplica la desviación típica?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "Propiedad de la desviación típica ante constantes multiplicativas."
         },
         {
           "id": "p10c",
           "label": "c)",
-          "enunciado": "¿Y por cuánto se multiplicaría la varianza en ese caso?",
-          "respuesta": 4,
-          "tolerancia": 0,
-          "pista": "$$2^2 = 4$$"
+          "question": "¿Y por cuánto se multiplicaría la varianza en ese caso?",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$2^2 = 4$$"
         },
         {
           "id": "p10d",
           "label": "d)",
-          "enunciado": "Si sumamos 10 puntos a todos los sujetos, ¿cuánto cambia la desviación típica?",
-          "respuesta": 0,
-          "tolerancia": 0,
-          "pista": "Sumar una constante no altera las medidas de dispersión."
+          "question": "Si sumamos 10 puntos a todos los sujetos, ¿cuánto cambia la desviación típica?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "Sumar una constante no altera las medidas de dispersión."
         }
       ]
     },
     {
       "id": 11,
-      "titulo": "Frecuencias en Variables Ordinales",
-      "escenario": "Categorías: Primario (26), Secundario (12), Universitario (7), Post (10). Total $n=55$.",
-      "preguntas": [
+      "title": "Frecuencias en Variables Ordinales",
+      "context": "Categorías: Primario (26), Secundario (12), Universitario (7), Post (10). Total $n=55$.",
+      "parts": [
         {
           "id": "p11a",
           "label": "a)",
-          "enunciado": "¿Cuál es la frecuencia absoluta acumulada ($n_a$) de la categoría Secundaria?",
-          "respuesta": 38,
-          "tolerancia": 0,
-          "pista": "$$26 + 12 = 38$$"
+          "question": "¿Cuál es la frecuencia absoluta acumulada ($n_a$) de la categoría Secundaria?",
+          "correctValue": 38,
+          "tolerance": 0,
+          "explanation": "$$26 + 12 = 38$$"
         },
         {
           "id": "p11b",
           "label": "b)",
-          "enunciado": "¿Y la de Universitario?",
-          "respuesta": 45,
-          "tolerancia": 0,
-          "pista": "$$38 + 7 = 45$$"
+          "question": "¿Y la de Universitario?",
+          "correctValue": 45,
+          "tolerance": 0,
+          "explanation": "$$38 + 7 = 45$$"
         },
         {
           "id": "p11c",
           "label": "c)",
-          "enunciado": "¿Cuál es el porcentaje (%) de la categoría Postuniversitario?",
-          "respuesta": 18.18,
-          "tolerancia": 0.1,
-          "pista": "$$\\frac{10}{55} \\times 100 = 18,18\\%$$"
+          "question": "¿Cuál es el porcentaje (%) de la categoría Postuniversitario?",
+          "correctValue": 18.18,
+          "tolerance": 0.1,
+          "explanation": "$$\\frac{10}{55} \\times 100 = 18,18\\%$$"
         },
         {
           "id": "p11d",
           "label": "d)",
-          "enunciado": "¿Qué porcentaje de personas tiene estudios universitarios o superiores?",
-          "respuesta": 30.9,
-          "tolerancia": 0.1,
-          "pista": "$$\\frac{7+10}{55} \\times 100 = 30,90\\%$$"
+          "question": "¿Qué porcentaje de personas tiene estudios universitarios o superiores?",
+          "correctValue": 30.9,
+          "tolerance": 0.1,
+          "explanation": "$$\\frac{7+10}{55} \\times 100 = 30,90\\%$$"
         }
       ]
     },
     {
       "id": 12,
-      "titulo": "Estimación de la Moda",
-      "escenario": "Muestra: $\\{0, 1, 1, 0, 2, 3, 1, 2, 3, 0, 120\\}$.",
-      "preguntas": [
+      "title": "Estimación de la Moda",
+      "context": "Muestra: $\\{0, 1, 1, 0, 2, 3, 1, 2, 3, 0, 120\\}$.",
+      "parts": [
         {
           "id": "p12a",
           "label": "a)",
-          "enunciado": "¿Cuántas veces se repite el valor 0?",
-          "respuesta": 3,
-          "tolerancia": 0,
-          "pista": "Aparece 3 veces."
+          "question": "¿Cuántas veces se repite el valor 0?",
+          "correctValue": 3,
+          "tolerance": 0,
+          "explanation": "Aparece 3 veces."
         },
         {
           "id": "p12b",
           "label": "b)",
-          "enunciado": "¿Cuántas veces se repite el valor 1?",
-          "respuesta": 3,
-          "tolerancia": 0,
-          "pista": "Aparece 3 veces."
+          "question": "¿Cuántas veces se repite el valor 1?",
+          "correctValue": 3,
+          "tolerance": 0,
+          "explanation": "Aparece 3 veces."
         },
         {
           "id": "p12c",
           "label": "c)",
-          "enunciado": "¿Es esta distribución unimodal o bimodal? (1=Unimodal, 2=Bimodal)",
-          "respuesta": 2,
-          "tolerancia": 0,
-          "pista": "Hay dos valores con la frecuencia máxima (0 y 1)."
+          "question": "¿Es esta distribución unimodal o bimodal? (1=Unimodal, 2=Bimodal)",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "Hay dos valores con la frecuencia máxima (0 y 1)."
         },
         {
           "id": "p12d",
           "label": "d)",
-          "enunciado": "Si añadimos otro '1', ¿cuál sería la nueva moda?",
-          "respuesta": 1,
-          "tolerancia": 0,
-          "pista": "El 1 pasaría a ser el único valor más repetido."
+          "question": "Si añadimos otro '1', ¿cuál sería la nueva moda?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "El 1 pasaría a ser el único valor más repetido."
         }
       ]
     },
     {
       "id": 13,
-      "titulo": "Deciles y Cuartiles",
-      "escenario": "Relación entre cuantiles. $n=99$.",
-      "preguntas": [
+      "title": "Deciles y Cuartiles",
+      "context": "Relación entre cuantiles. $n=99$.",
+      "parts": [
         {
           "id": "p13a",
           "label": "a)",
-          "enunciado": "¿A qué percentil equivale el primer cuartil ($Q_1$)?",
-          "respuesta": 25,
-          "tolerancia": 0,
-          "pista": "$$Q_1 = P_{25}$$"
+          "question": "¿A qué percentil equivale el primer cuartil ($Q_1$)?",
+          "correctValue": 25,
+          "tolerance": 0,
+          "explanation": "$$Q_1 = P_{25}$$"
         },
         {
           "id": "p13b",
           "label": "b)",
-          "enunciado": "¿A qué percentil equivale el quinto decil ($D_5$)?",
-          "respuesta": 50,
-          "tolerancia": 0,
-          "pista": "$$D_5 = P_{50}$$"
+          "question": "¿A qué percentil equivale el quinto decil ($D_5$)?",
+          "correctValue": 50,
+          "tolerance": 0,
+          "explanation": "$$D_5 = P_{50}$$"
         },
         {
           "id": "p13c",
           "label": "c)",
-          "enunciado": "¿A qué percentil equivale el tercer cuartil ($Q_3$)?",
-          "respuesta": 75,
-          "tolerancia": 0,
-          "pista": "$$Q_3 = P_{75}$$"
+          "question": "¿A qué percentil equivale el tercer cuartil ($Q_3$)?",
+          "correctValue": 75,
+          "tolerance": 0,
+          "explanation": "$$Q_3 = P_{75}$$"
         },
         {
           "id": "p13d",
           "label": "d)",
-          "enunciado": "¿A qué percentil equivale el noveno decil ($D_9$)?",
-          "respuesta": 90,
-          "tolerancia": 0,
-          "pista": "$$D_9 = P_{90}$$"
+          "question": "¿A qué percentil equivale el noveno decil ($D_9$)?",
+          "correctValue": 90,
+          "tolerance": 0,
+          "explanation": "$$D_9 = P_{90}$$"
         }
       ]
     },
     {
       "id": 14,
-      "titulo": "Varianza con Datos Agrupados (Introducción)",
-      "escenario": "Si tenemos $\\sum X_i^2 = 500$, $\\bar{x} = 5$ y $n=10$. Fórmula alternativa: $S^2 = [(\\sum X_i^2 / n) - \\bar{x}^2] \\times (n/(n-1))$.",
-      "preguntas": [
+      "title": "Varianza con Datos Agrupados (Introducción)",
+      "context": "Si tenemos $\\sum X_i^2 = 500$, $\\bar{x} = 5$ y $n=10$. Fórmula alternativa: $S^2 = [(\\sum X_i^2 / n) - \\bar{x}^2] \\times (n/(n-1))$.",
+      "parts": [
         {
           "id": "p14a",
           "label": "a)",
-          "enunciado": "Calcula $\\bar{x}^2$.",
-          "respuesta": 25,
-          "tolerancia": 0,
-          "pista": "$$5^2 = 25$$"
+          "question": "Calcula $\\bar{x}^2$.",
+          "correctValue": 25,
+          "tolerance": 0,
+          "explanation": "$$5^2 = 25$$"
         },
         {
           "id": "p14b",
           "label": "b)",
-          "enunciado": "Calcula el promedio de los cuadrados ($\\sum X_i^2 / n$).",
-          "respuesta": 50,
-          "tolerancia": 0,
-          "pista": "$$500 / 10 = 50$$"
+          "question": "Calcula el promedio de los cuadrados ($\\sum X_i^2 / n$).",
+          "correctValue": 50,
+          "tolerance": 0,
+          "explanation": "$$500 / 10 = 50$$"
         },
         {
           "id": "p14c",
           "label": "c)",
-          "enunciado": "Calcula la varianza sesgada ($S_n^2 = 50 - 25$).",
-          "respuesta": 25,
-          "tolerancia": 0,
-          "pista": "$$50 - 25 = 25$$"
+          "question": "Calcula la varianza sesgada ($S_n^2 = 50 - 25$).",
+          "correctValue": 25,
+          "tolerance": 0,
+          "explanation": "$$50 - 25 = 25$$"
         },
         {
           "id": "p14d",
           "label": "d)",
-          "enunciado": "Calcula la varianza insesgada ($S_{n-1}^2 = 25 \\times (10/9)$).",
-          "respuesta": 27.77,
-          "tolerancia": 0.1,
-          "pista": "$$25 \\times 1,111 = 27,77$$"
+          "question": "Calcula la varianza insesgada ($S_{n-1}^2 = 25 \\times (10/9)$).",
+          "correctValue": 27.77,
+          "tolerance": 0.1,
+          "explanation": "$$25 \\times 1,111 = 27,77$$"
         }
       ]
     },
     {
       "id": 15,
-      "titulo": "Amplitud Intercuartil en Muestras Pequeñas",
-      "escenario": "Datos: $\\{10, 20, 30, 40, 50, 60\\}$ ($n=6$).",
-      "preguntas": [
+      "title": "Amplitud Intercuartil en Muestras Pequeñas",
+      "context": "Datos: $\\{10, 20, 30, 40, 50, 60\\}$ ($n=6$).",
+      "parts": [
         {
           "id": "p15a",
           "label": "a)",
-          "enunciado": "Posición de $Q_1$ ($k=25, n=6$).",
-          "respuesta": 1.75,
-          "tolerancia": 0,
-          "pista": "$$\\frac{25(6+1)}{100} = 1,75$$"
+          "question": "Posición de $Q_1$ ($k=25, n=6$).",
+          "correctValue": 1.75,
+          "tolerance": 0,
+          "explanation": "$$\\frac{25(6+1)}{100} = 1,75$$"
         },
         {
           "id": "p15b",
           "label": "b)",
-          "enunciado": "Valor de $Q_1$ mediante interpolación ($Y_1=10, Y_2=20$).",
-          "respuesta": 17.5,
-          "tolerancia": 0,
-          "pista": "$$(1-0,75)10 + (0,75)20 = 17,5$$"
+          "question": "Valor de $Q_1$ mediante interpolación ($Y_1=10, Y_2=20$).",
+          "correctValue": 17.5,
+          "tolerance": 0,
+          "explanation": "$$(1-0,75)10 + (0,75)20 = 17,5$$"
         },
         {
           "id": "p15c",
           "label": "c)",
-          "enunciado": "Posición de $Q_3$ ($k=75$).",
-          "respuesta": 5.25,
-          "tolerancia": 0,
-          "pista": "$$\\frac{75(7)}{100} = 5,25$$"
+          "question": "Posición de $Q_3$ ($k=75$).",
+          "correctValue": 5.25,
+          "tolerance": 0,
+          "explanation": "$$\\frac{75(7)}{100} = 5,25$$"
         },
         {
           "id": "p15d",
           "label": "d)",
-          "enunciado": "Valor de $Q_3$ ($Y_5=50, Y_6=60$).",
-          "respuesta": 52.5,
-          "tolerancia": 0,
-          "pista": "$$(1-0,25)50 + (0,25)60 = 52,5$$"
+          "question": "Valor de $Q_3$ ($Y_5=50, Y_6=60$).",
+          "correctValue": 52.5,
+          "tolerance": 0,
+          "explanation": "$$(1-0,25)50 + (0,25)60 = 52,5$$"
         }
       ]
     },
     {
       "id": 16,
-      "titulo": "Análisis de Frecuencia de Género",
-      "escenario": "Gráfico circular: Mujeres (0,57) y Varones (0,43). Muestra total $n=200$.",
-      "preguntas": [
+      "title": "Análisis de Frecuencia de Género",
+      "context": "Gráfico circular: Mujeres (0,57) y Varones (0,43). Muestra total $n=200$.",
+      "parts": [
         {
           "id": "p16a",
           "label": "a)",
-          "enunciado": "¿Cuántas mujeres hay en la muestra?",
-          "respuesta": 114,
-          "tolerancia": 0,
-          "pista": "$$200 \\times 0,57 = 114$$"
+          "question": "¿Cuántas mujeres hay en la muestra?",
+          "correctValue": 114,
+          "tolerance": 0,
+          "explanation": "$$200 \\times 0,57 = 114$$"
         },
         {
           "id": "p16b",
           "label": "b)",
-          "enunciado": "¿Cuántos varones hay?",
-          "respuesta": 86,
-          "tolerancia": 0,
-          "pista": "$$200 \\times 0,43 = 86$$"
+          "question": "¿Cuántos varones hay?",
+          "correctValue": 86,
+          "tolerance": 0,
+          "explanation": "$$200 \\times 0,43 = 86$$"
         },
         {
           "id": "p16c",
           "label": "c)",
-          "enunciado": "¿Cuál es el porcentaje de varones?",
-          "respuesta": 43,
-          "tolerancia": 0,
-          "pista": "$$0,43 \\times 100 = 43\\%$$"
+          "question": "¿Cuál es el porcentaje de varones?",
+          "correctValue": 43,
+          "tolerance": 0,
+          "explanation": "$$0,43 \\times 100 = 43\\%$$"
         },
         {
           "id": "p16d",
           "label": "d)",
-          "enunciado": "Si sumamos las frecuencias relativas, ¿qué valor obtenemos?",
-          "respuesta": 1,
-          "tolerancia": 0,
-          "pista": "$$0,57 + 0,43 = 1,00$$"
+          "question": "Si sumamos las frecuencias relativas, ¿qué valor obtenemos?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$0,57 + 0,43 = 1,00$$"
         }
       ]
     },
     {
       "id": 17,
-      "titulo": "Mediana en Datos Discretos",
-      "escenario": "Hijos por familia: $\\{0, 0, 1, 1, 1, 2, 2, 3, 4\\}$ ($n=9$).",
-      "preguntas": [
+      "title": "Mediana en Datos Discretos",
+      "context": "Hijos por familia: $\\{0, 0, 1, 1, 1, 2, 2, 3, 4\\}$ ($n=9$).",
+      "parts": [
         {
           "id": "p17a",
           "label": "a)",
-          "enunciado": "¿Cuál es la posición de la mediana?",
-          "respuesta": 5,
-          "tolerancia": 0,
-          "pista": "$$\\frac{50(9+1)}{100} = 5$$"
+          "question": "¿Cuál es la posición de la mediana?",
+          "correctValue": 5,
+          "tolerance": 0,
+          "explanation": "$$\\frac{50(9+1)}{100} = 5$$"
         },
         {
           "id": "p17b",
           "label": "b)",
-          "enunciado": "¿Cuál es el valor de la mediana?",
-          "respuesta": 1,
-          "tolerancia": 0,
-          "pista": "El quinto valor es 1."
+          "question": "¿Cuál es el valor de la mediana?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "El quinto valor es 1."
         },
         {
           "id": "p17c",
           "label": "c)",
-          "enunciado": "¿Cuál es la media aritmética?",
-          "respuesta": 1.55,
-          "tolerancia": 0.1,
-          "pista": "$$\\frac{0+0+1+1+1+2+2+3+4}{9} = 1,55$$"
+          "question": "¿Cuál es la media aritmética?",
+          "correctValue": 1.55,
+          "tolerance": 0.1,
+          "explanation": "$$\\frac{0+0+1+1+1+2+2+3+4}{9} = 1,55$$"
         },
         {
           "id": "p17d",
           "label": "d)",
-          "enunciado": "Si añadimos una familia con 10 hijos, ¿cuál es la nueva mediana?",
-          "respuesta": 1.5,
-          "tolerancia": 0,
-          "pista": "Nueva muestra: $\\{0,0,1,1,1,2,2,3,4,10\\}$. Pos 5,5 $\\rightarrow (1+2)/2 = 1,5$."
+          "question": "Si añadimos una familia con 10 hijos, ¿cuál es la nueva mediana?",
+          "correctValue": 1.5,
+          "tolerance": 0,
+          "explanation": "Nueva muestra: $\\{0,0,1,1,1,2,2,3,4,10\\}$. Pos 5,5 $\\rightarrow (1+2)/2 = 1,5$."
         }
       ]
     },
     {
       "id": 18,
-      "titulo": "Rango de Percentiles",
-      "escenario": "En un test, $P_{20} = 45$ y $P_{80} = 85$.",
-      "preguntas": [
+      "title": "Rango de Percentiles",
+      "context": "En un test, $P_{20} = 45$ y $P_{80} = 85$.",
+      "parts": [
         {
           "id": "p18a",
           "label": "a)",
-          "enunciado": "¿Cuál es el rango de puntuaciones que abarca el 60% central (80-20)?",
-          "respuesta": 40,
-          "tolerancia": 0,
-          "pista": "$$85 - 45 = 40$$"
+          "question": "¿Cuál es el rango de puntuaciones que abarca el 60% central (80-20)?",
+          "correctValue": 40,
+          "tolerance": 0,
+          "explanation": "$$85 - 45 = 40$$"
         },
         {
           "id": "p18b",
           "label": "b)",
-          "enunciado": "¿Qué porcentaje de sujetos puntúa menos de 45?",
-          "respuesta": 20,
-          "tolerancia": 0,
-          "pista": "Definición de $P_{20}$."
+          "question": "¿Qué porcentaje de sujetos puntúa menos de 45?",
+          "correctValue": 20,
+          "tolerance": 0,
+          "explanation": "Definición de $P_{20}$."
         },
         {
           "id": "p18c",
           "label": "c)",
-          "enunciado": "¿Qué porcentaje puntúa más de 85?",
-          "respuesta": 20,
-          "tolerancia": 0,
-          "pista": "$$100 - 80 = 20\\%$$"
+          "question": "¿Qué porcentaje puntúa más de 85?",
+          "correctValue": 20,
+          "tolerance": 0,
+          "explanation": "$$100 - 80 = 20\\%$$"
         },
         {
           "id": "p18d",
           "label": "d)",
-          "enunciado": "Si el $P_{50} = 65$, ¿qué valor separa a la mitad de la muestra?",
-          "respuesta": 65,
-          "tolerancia": 0,
-          "pista": "La mediana es 65."
+          "question": "Si el $P_{50} = 65$, ¿qué valor separa a la mitad de la muestra?",
+          "correctValue": 65,
+          "tolerance": 0,
+          "explanation": "La mediana es 65."
         }
       ]
     },
     {
       "id": 19,
-      "titulo": "Desviación Media en Valor Absoluto",
-      "escenario": "Datos: $\\{2, 4, 6\\}$. $\\bar{x} = 4$. Fórmula: $DM = \\sum |X_i - \\bar{x}| / n$.",
-      "preguntas": [
+      "title": "Desviación Media en Valor Absoluto",
+      "context": "Datos: $\\{2, 4, 6\\}$. $\\bar{x} = 4$. Fórmula: $DM = \\sum |X_i - \\bar{x}| / n$.",
+      "parts": [
         {
           "id": "p19a",
           "label": "a)",
-          "enunciado": "Calcula el valor absoluto de la desviación para $X=2$.",
-          "respuesta": 2,
-          "tolerancia": 0,
-          "pista": "$$|2 - 4| = 2$$"
+          "question": "Calcula el valor absoluto de la desviación para $X=2$.",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$|2 - 4| = 2$$"
         },
         {
           "id": "p19b",
           "label": "b)",
-          "enunciado": "Calcula el valor absoluto de la desviación para $X=6$.",
-          "respuesta": 2,
-          "tolerancia": 0,
-          "pista": "$$|6 - 4| = 2$$"
+          "question": "Calcula el valor absoluto de la desviación para $X=6$.",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$|6 - 4| = 2$$"
         },
         {
           "id": "p19c",
           "label": "c)",
-          "enunciado": "Calcula el sumatorio de las desviaciones absolutas.",
-          "respuesta": 4,
-          "tolerancia": 0,
-          "pista": "$$2 + 0 + 2 = 4$$"
+          "question": "Calcula el sumatorio de las desviaciones absolutas.",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$2 + 0 + 2 = 4$$"
         },
         {
           "id": "p19d",
           "label": "d)",
-          "enunciado": "Calcula la Desviación Media (DM).",
-          "respuesta": 1.33,
-          "tolerancia": 0.1,
-          "pista": "$$4 / 3 \\approx 1,33$$"
+          "question": "Calcula la Desviación Media (DM).",
+          "correctValue": 1.33,
+          "tolerance": 0.1,
+          "explanation": "$$4 / 3 \\approx 1,33$$"
         }
       ]
     },
     {
       "id": 20,
-      "titulo": "Simetría y Tendencia Central",
-      "escenario": "En una distribución perfectamente simétrica, la media es 50.",
-      "preguntas": [
+      "title": "Simetría y Tendencia Central",
+      "context": "En una distribución perfectamente simétrica, la media es 50.",
+      "parts": [
         {
           "id": "p20a",
           "label": "a)",
-          "enunciado": "¿Cuál es el valor de la Mediana?",
-          "respuesta": 50,
-          "tolerancia": 0,
-          "pista": "En distribuciones simétricas, media = mediana."
+          "question": "¿Cuál es el valor de la Mediana?",
+          "correctValue": 50,
+          "tolerance": 0,
+          "explanation": "En distribuciones simétricas, media = mediana."
         },
         {
           "id": "p20b",
           "label": "b)",
-          "enunciado": "¿Cuál es el valor de la Moda?",
-          "respuesta": 50,
-          "tolerancia": 0,
-          "pista": "En distribuciones simétricas unimodales, coinciden los tres índices."
+          "question": "¿Cuál es el valor de la Moda?",
+          "correctValue": 50,
+          "tolerance": 0,
+          "explanation": "En distribuciones simétricas unimodales, coinciden los tres índices."
         },
         {
           "id": "p20c",
           "label": "c)",
-          "enunciado": "Si la distribución se vuelve asimétrica positiva, ¿cuál será mayor? (1=Media, 2=Mediana)",
-          "respuesta": 1,
-          "tolerancia": 0,
-          "pista": "La media se desplaza más hacia la cola larga (derecha)."
+          "question": "Si la distribución se vuelve asimétrica positiva, ¿cuál será mayor? (1=Media, 2=Mediana)",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "La media se desplaza más hacia la cola larga (derecha)."
         },
         {
           "id": "p20d",
           "label": "d)",
-          "enunciado": "Si la desviación típica es 0, ¿cuál es el valor de todos los datos?",
-          "respuesta": 50,
-          "tolerancia": 0,
-          "pista": "Si no hay dispersión, todos los datos son iguales a la media."
+          "question": "Si la desviación típica es 0, ¿cuál es el valor de todos los datos?",
+          "correctValue": 50,
+          "tolerance": 0,
+          "explanation": "Si no hay dispersión, todos los datos son iguales a la media."
         }
       ]
     }
   ],
-  "formulas": [
+  "jsonFormulas": [
     {
-      "nombre": "Posición del percentil",
-      "latex": "$$P_{k} = \\frac{k(n + 1)}{100}$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Posición del percentil",
+      "tex": "$$P_{k} = \\frac{k(n + 1)}{100}$$"
     },
     {
-      "nombre": "Valor del percentil (interpolación decimal)",
-      "latex": "$$P_{k} = (1 - d)Y_{i} + (d)Y_{i+1}$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Valor del percentil (interpolación decimal)",
+      "tex": "$$P_{k} = (1 - d)Y_{i} + (d)Y_{i+1}$$"
     },
     {
-      "nombre": "Media aritmética",
-      "latex": "$$\\overline{x} = \\frac{\\sum x_{i}}{n}$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Media aritmética",
+      "tex": "$$\\overline{x} = \\frac{\\sum x_{i}}{n}$$"
     },
     {
-      "nombre": "Amplitud total (Rango)",
-      "latex": "$$A_{T} = X_{max} - X_{min}$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Amplitud total (Rango)",
+      "tex": "$$A_{T} = X_{max} - X_{min}$$"
     },
     {
-      "nombre": "Amplitud intercuartil (Rango intercuartílico)",
-      "latex": "$$A_{IQ} = Q_{3} - Q_{1}$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Amplitud intercuartil (Rango intercuartílico)",
+      "tex": "$$A_{IQ} = Q_{3} - Q_{1}$$"
     },
     {
-      "nombre": "Puntuación diferencial (Desviación)",
-      "latex": "$$x = X_{i} - \\overline{X}$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Puntuación diferencial (Desviación)",
+      "tex": "$$x = X_{i} - \\overline{X}$$"
     },
     {
-      "nombre": "Varianza insesgada",
-      "latex": "$$S_{x}^{2} = \\frac{\\sum(X_{i} - \\overline{X})^{2}}{n - 1}$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Varianza insesgada",
+      "tex": "$$S_{x}^{2} = \\frac{\\sum(X_{i} - \\overline{X})^{2}}{n - 1}$$"
     },
     {
-      "nombre": "Desviación típica (Estándar)",
-      "latex": "$$S_{x} = \\sqrt{\\frac{\\sum(X_{i} - \\overline{X})^{2}}{n - 1}}$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Desviación típica (Estándar)",
+      "tex": "$$S_{x} = \\sqrt{\\frac{\\sum(X_{i} - \\overline{X})^{2}}{n - 1}}$$"
     },
     {
-      "nombre": "Coeficiente de variación",
-      "latex": "$$CV = \\frac{S_{x}}{\\overline{x}} \\cdot 100$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Coeficiente de variación",
+      "tex": "$$CV = \\frac{S_{x}}{\\overline{x}} \\cdot 100$$"
     }
   ]
 }

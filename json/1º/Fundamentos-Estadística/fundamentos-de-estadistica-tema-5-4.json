@@ -1,0 +1,1695 @@
+{
+  "jsonTestA": [
+    {
+      "q": "En un contraste de hipótesis, si el investigador decide reducir el nivel de significación de $\\alpha = 0,05$ a $\\alpha = 0,01$ sin variar el tamaño muestral, la probabilidad de cometer un Error de Tipo II necesariamente aumentará.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "Incierto"
+      ],
+      "correct": 0,
+      "hint": "Piense en el equilibrio entre las zonas de rechazo y aceptación en las distribuciones.",
+      "explanation": "Al ser más restrictivos para rechazar $H_0$ (menor $\\alpha$), aumentamos la zona de aceptación de la misma, lo que incrementa la probabilidad $\\beta$ de mantenerla siendo falsa."
+    },
+    {
+      "q": "La potencia de un contraste ($1 - \\beta$) se define matemáticamente como la probabilidad de rechazar la hipótesis nula dado que la hipótesis alternativa es la que representa la realidad poblacional.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "Incierto"
+      ],
+      "correct": 0,
+      "hint": "Considere la relación entre la decisión correcta sobre una $H_0$ falsa.",
+      "explanation": "La potencia es la sensibilidad del test para detectar un efecto real, es decir, $P(\\text{Rechazar } H_0 | H_0 \\text{ es falsa}) = 1 - \\beta$."
+    },
+    {
+      "q": "Si el valor del parámetro poblacional bajo la hipótesis nula se encuentra contenido dentro del intervalo de confianza calculado para la media, la decisión estadística debe ser el rechazo de $H_0$.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "Incierto"
+      ],
+      "correct": 1,
+      "hint": "Relacione la ubicación del parámetro con la zona de aceptación.",
+      "explanation": "Si el parámetro está dentro del intervalo de confianza, no hay evidencia suficiente para rechazar $H_0$; el rechazo ocurre cuando el parámetro queda fuera."
+    },
+    {
+      "q": "El Error de Tipo I consiste en afirmar la existencia de un efecto o diferencia en la población cuando, en realidad, dicho efecto no existe y las diferencias son debidas al azar.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "Incierto"
+      ],
+      "correct": 0,
+      "hint": "Es el error conocido como 'falso positivo'.",
+      "explanation": "El Error de Tipo I ocurre al rechazar una $H_0$ verdadera, asumiendo un efecto ($H_1$) que no es real."
+    },
+    {
+      "q": "Un aumento en el tamaño de la muestra ($N$) permite reducir simultáneamente la probabilidad de cometer Error de Tipo I y la probabilidad de cometer Error de Tipo II.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "Incierto"
+      ],
+      "correct": 0,
+      "hint": "Efecto de la precisión en la distribución muestral.",
+      "explanation": "Un mayor $N$ aumenta la precisión (reduce el error estándar), permitiendo que ambas zonas de error disminuyan y la potencia aumente."
+    },
+    {
+      "q": "En la salida de SPSS para una muestra, el límite inferior del intervalo de confianza para la media se obtiene sumando el 'Valor de prueba' al límite inferior de la diferencia.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "Incierto"
+      ],
+      "correct": 0,
+      "hint": "Observe cómo se reconstruye el intervalo a partir de las diferencias en el output.",
+      "explanation": "SPSS calcula intervalos para la diferencia $(\\bar{x} - \\mu_0)$. Para obtener los límites de $\\mu$, sumamos $\\mu_0$ a los límites de la diferencia."
+    },
+    {
+      "q": "La suma de las probabilidades de cometer Error de Tipo I ($\\alpha$) y Error de Tipo II ($\\beta$) es siempre igual a la unidad ($1,00$) en cualquier contraste de hipótesis.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "Incierto"
+      ],
+      "correct": 1,
+      "hint": "Son probabilidades sobre estados de la naturaleza distintos.",
+      "explanation": "$\\alpha$ y $\\beta$ no son complementarios. Los complementarios son $1-\\alpha$ (nivel de confianza) y $1-\\beta$ (potencia) respectivamente."
+    },
+    {
+      "q": "El nivel de confianza ($1 - \\alpha$) representa la probabilidad de mantener la hipótesis nula cuando esta es verdadera en la población.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "Incierto"
+      ],
+      "correct": 0,
+      "hint": "Es la probabilidad de una decisión correcta sobre una $H_0$ cierta.",
+      "explanation": "Es la probabilidad de acierto cuando no existe efecto real, situándonos en la zona de aceptación de la distribución de $H_0$."
+    },
+    {
+      "q": "El Error de Tipo II es especialmente crítico en contextos clínicos donde no detectar la efectividad de un tratamiento (siendo este útil) podría privar a los pacientes de una mejora.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "Incierto"
+      ],
+      "correct": 0,
+      "hint": "Piense en las consecuencias de un 'falso negativo'.",
+      "explanation": "El Error de Tipo II niega un efecto existente. En salud, esto implica descartar tratamientos que realmente funcionan."
+    },
+    {
+      "q": "El Teorema Central del Límite es irrelevante para el contraste de hipótesis sobre una media si la población original no sigue una distribución normal.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "Incierto"
+      ],
+      "correct": 1,
+      "hint": "Función del TCL con muestras grandes.",
+      "explanation": "El TCL garantiza que la distribución muestral de la media sea normal para $N$ grande, independientemente de la forma de la población."
+    },
+    {
+      "q": "Elija la afirmación correcta respecto a la relación entre $\\alpha$ y el Error de Tipo I.",
+      "options": [
+        "El valor de $\\alpha$ es el riesgo máximo que el investigador asume de rechazar $H_0$ siendo cierta.",
+        "El valor de $\\alpha$ es la probabilidad de aceptar la hipótesis alternativa cuando esta es falsa.",
+        "El valor de $\\alpha$ se calcula a posteriori tras observar los resultados obtenidos en el SPSS."
+      ],
+      "correct": 0,
+      "hint": "Definición técnica del nivel de significación.",
+      "explanation": "$\\alpha$ se fija a priori para controlar la tasa de falsos positivos en la investigación científica."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la interpretación de los intervalos de confianza en el contraste de hipótesis.",
+      "options": [
+        "Si el intervalo de confianza de la diferencia incluye el cero, no se debe rechazar la hipótesis nula.",
+        "Si el intervalo de confianza de la diferencia no incluye el cero, se debe mantener la hipótesis nula.",
+        "Si el límite superior del intervalo es positivo, se rechaza siempre la hipótesis nula sin más."
+      ],
+      "correct": 0,
+      "hint": "El valor cero representa la ausencia de diferencia entre media muestral y valor de prueba.",
+      "explanation": "Que la diferencia incluya el cero implica que la diferencia observada no es estadísticamente significativa al nivel $\\alpha$ dado."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre los factores que aumentan la potencia estadística ($1 - \\beta$).",
+      "options": [
+        "Un mayor tamaño del efecto real en la población incrementa la probabilidad de detectar dicho efecto.",
+        "Una reducción del tamaño muestral permite una mayor precisión al focalizarse en pocos sujetos clave.",
+        "El uso de niveles de significación extremadamente bajos (p. ej. $0,0001$) maximiza la potencia."
+      ],
+      "correct": 0,
+      "hint": "Efecto de la magnitud de la diferencia sobre la separabilidad de las curvas.",
+      "explanation": "Cuanto mayor es el efecto real, menos solapamiento hay entre las distribuciones de $H_0$ y $H_1$, facilitando su detección."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el Error de Tipo II en la investigación aplicada.",
+      "options": [
+        "Ocurre al mantener una hipótesis nula falsa, no detectando un efecto que realmente existe.",
+        "Representa la probabilidad de rechazar una hipótesis alternativa que resulta ser verdadera.",
+        "Es un error que no depende de la variabilidad de la muestra ni del diseño de la investigación."
+      ],
+      "correct": 0,
+      "hint": "Definición basada en la naturaleza de la realidad frente a la decisión.",
+      "explanation": "El error tipo II o $\\beta$ es el fallo en rechazar una $H_0$ que debería haber sido rechazada por ser falsa."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la probabilidad de acierto cuando la hipótesis nula es falsa.",
+      "options": [
+        "Dicha probabilidad es equivalente a la potencia del contraste y se representa como $1 - \\beta$.",
+        "Dicha probabilidad es equivalente al nivel de confianza y se representa mediante el valor $1 - \\alpha$.",
+        "Dicha probabilidad es equivalente al p-valor o significación asintótica obtenida en el software."
+      ],
+      "correct": 0,
+      "hint": "Considere qué sucede cuando $H_1$ es cierta y decidimos rechazar $H_0$.",
+      "explanation": "Acertar cuando hay un efecto implica rechazar $H_0$. Esta probabilidad es, por definición, la potencia estadística."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el p-valor (significación) mostrado en un análisis de SPSS.",
+      "options": [
+        "Si el p-valor es inferior al nivel $\\alpha$ preestablecido, se dispone de evidencia para rechazar $H_0$.",
+        "Si el p-valor es superior al nivel $\\alpha$ preestablecido, se concluye que la hipótesis nula es cierta.",
+        "El p-valor representa la probabilidad exacta de que la hipótesis alternativa sea falsa o incorrecta."
+      ],
+      "correct": 0,
+      "hint": "Comparación estándar entre significación observada y nivel crítico.",
+      "explanation": "Un p-valor pequeño indica que los datos observados son poco probables bajo el supuesto de que $H_0$ sea verdadera."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el diseño de investigación y el control de errores.",
+      "options": [
+        "El muestreo aleatorio y el control de variables extrañas son esenciales para reducir riesgos.",
+        "El error de tipo I puede eliminarse totalmente si el investigador posee mucha pericia técnica.",
+        "La potencia estadística es independiente del tipo de prueba (paramétrica o no) que se utilice."
+      ],
+      "correct": 0,
+      "hint": "Recomendaciones del texto para asegurar la sensibilidad del estudio.",
+      "explanation": "El rigor metodológico reduce la varianza no deseada y mejora la capacidad de la prueba para detectar efectos reales."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el equilibrio entre los errores $\\alpha$ y $\\beta$.",
+      "options": [
+        "Existe un 'trade-off' donde disminuir uno suele aumentar el otro, salvo que aumente el $N$.",
+        "Ambos errores son independientes y el investigador puede fijarlos libremente en $0,00$ a la vez.",
+        "El error de tipo II es siempre más grave que el de tipo I en cualquier contexto de investigación."
+      ],
+      "explanation": "Al mover el punto de corte para disminuir $\\alpha$, inevitablemente invadimos más zona de la distribución de $H_1$, aumentando $\\beta$.",
+      "hint": "Visualice el movimiento de la línea vertical que separa las zonas de decisión.",
+      "correct": 0
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la representación gráfica de la decisión en el contraste.",
+      "options": [
+        "La zona de rechazo se sitúa en las colas de la distribución de $H_0$ según el nivel de $\\alpha$.",
+        "La zona de aceptación de $H_0$ se define exclusivamente por la distribución de la hipótesis $H_1$.",
+        "Los límites del intervalo de confianza coinciden siempre con los valores de la media poblacional."
+      ],
+      "correct": 0,
+      "hint": "Ubicación de los valores críticos en la curva de la hipótesis nula.",
+      "explanation": "Los valores extremos bajo $H_0$ definen la región donde es tan poco probable observar esos datos que optamos por rechazarla."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el cálculo de los límites en el ejemplo de SPSS del manual.",
+      "options": [
+        "El intervalo de confianza se construye aplicando los límites de la diferencia al valor de prueba $\\mu$.",
+        "El intervalo de confianza se construye restando la desviación estándar a la media de error.",
+        "El intervalo de confianza se construye multiplicando la media muestral por el estadístico t."
+      ],
+      "correct": 0,
+      "hint": "Cálculo realizado en la página 170 del documento.",
+      "explanation": "Como se muestra en el texto: $L_i = \\mu + \\text{Límite Inferior de Diferencia}$, siendo $\\mu$ el valor de prueba comparado."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la 'sensibilidad' de las pruebas estadísticas mencionada.",
+      "options": [
+        "Las pruebas sensibles son aquellas con mayor capacidad para detectar efectos reales existentes.",
+        "La sensibilidad se refiere únicamente a la capacidad de la prueba para no cometer error de tipo I.",
+        "Una prueba es sensible si su resultado no varía al modificar el tamaño de la muestra utilizada."
+      ],
+      "correct": 0,
+      "hint": "Relación con la potencia del estudio.",
+      "explanation": "Una metodología sensible minimiza el error tipo II, permitiendo que efectos pequeños pero reales sean detectados."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el nivel de confianza y su relación con el riesgo.",
+      "options": [
+        "Un nivel de confianza del $99\\%$ implica un riesgo $\\alpha = 0,01$ de cometer un falso positivo.",
+        "Un nivel de confianza del $95\\%$ garantiza que el error de tipo II será inferior al $5\\%$ siempre.",
+        "El nivel de confianza es la probabilidad de que la hipótesis alternativa sea verdadera en salud."
+      ],
+      "correct": 0,
+      "hint": "Complementariedad entre confianza y significación.",
+      "explanation": "Si confiamos al $99\\%$, aceptamos un margen de error del $1\\%$ para rechazar incorrectamente la nula."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la naturaleza de la hipótesis nula ($H_0$).",
+      "options": [
+        "Se asume como verdadera inicialmente para evaluar si los datos permiten descartar este supuesto.",
+        "Es la hipótesis que el investigador desea probar como cierta en la mayoría de sus estudios.",
+        "Representa la existencia de diferencias significativas causadas por el tratamiento aplicado."
+      ],
+      "correct": 0,
+      "hint": "Punto de partida del contraste de hipótesis.",
+      "explanation": "El procedimiento estadístico consiste en verificar si la evidencia muestral es incompatible con el mantenimiento de $H_0$."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la interpretación de la Figura 93 del documento.",
+      "options": [
+        "El área $\\beta$ reside bajo la curva de $H_1$ pero a la izquierda del valor crítico de decisión.",
+        "El área $\\alpha$ representa la totalidad del solapamiento entre las curvas de $H_0$ y $H_1$.",
+        "El área $1 - \\alpha$ representa la probabilidad de aceptar la hipótesis $H_1$ cuando esta es falsa."
+      ],
+      "correct": 0,
+      "hint": "Ubicación de $\\beta$ respecto a la zona de aceptación de $H_0$.",
+      "explanation": "$\\beta$ es la parte de la distribución de $H_1$ que cae en la zona de aceptación de $H_0$, provocando el error."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la conclusión de un contraste con p < 0,05.",
+      "options": [
+        "Se rechaza $H_0$ con un riesgo de error tipo I menor al $5\\%$.",
+        "Se acepta $H_0$ confirmando que no existen diferencias en la población.",
+        "Se concluye que la probabilidad de que $H_1$ sea falsa es de exactamente un $5\\%$.",
+        "Se demuestra que el efecto observado es de gran importancia clínica y social."
+      ],
+      "correct": 0,
+      "hint": "Significado de la significación estadística.",
+      "explanation": "Un p-valor bajo indica que el resultado es estadísticamente significativo, permitiendo rechazar $H_0$ bajo el umbral $\\alpha$."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre el Error de Tipo I.",
+      "options": [
+        "Se conoce técnicamente como un 'Falso Negativo' en el ámbito de las ciencias de la salud.",
+        "Representa la probabilidad $\\alpha$ de rechazar la hipótesis nula cuando esta es verdadera.",
+        "Su control depende de la decisión previa del investigador al fijar el nivel de significación."
+      ],
+      "correct": 0,
+      "hint": "Consulte la analogía del embarazo en la Figura 94.",
+      "explanation": "El Error de Tipo I es un 'Falso Positivo' (afirmar algo que no es). El falso negativo es el Tipo II."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre el Error de Tipo II.",
+      "options": [
+        "Aumentar el nivel de significación $\\alpha$ conlleva un aumento paralelo del riesgo $\\beta$.",
+        "Se produce al no detectar un efecto real, manteniendo una hipótesis nula que es falsa.",
+        "Está representado por la letra griega $\\beta$ y su complementario es la potencia ($1 - \\beta$)."
+      ],
+      "correct": 0,
+      "hint": "Relación inversa entre los dos tipos de errores.",
+      "explanation": "Al aumentar $\\alpha$ (ser menos estrictos), disminuimos $\\beta$ (es más fácil detectar el efecto). La afirmación de que ambos aumentan es falsa."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre los resultados de SPSS presentados.",
+      "options": [
+        "El valor 'Media de error estándar' se utiliza directamente como el p-valor del contraste.",
+        "El 'Valor de prueba' es el parámetro poblacional bajo la hipótesis nula que deseamos contrastar.",
+        "Los límites inferior y superior de la diferencia definen el intervalo de confianza de dicha resta."
+      ],
+      "correct": 0,
+      "hint": "Diferencie entre error estándar y significación (Sig.).",
+      "explanation": "La media de error estándar es la desviación de la distribución muestral, no la probabilidad de significación ($p$)."
+    },
+    {
+      "q": "Elija la afirmación incorrecta respecto al efecto del tamaño muestral.",
+      "options": [
+        "A medida que el tamaño de la muestra disminuye, la potencia del estudio tiende a aumentar.",
+        "Muestras más grandes proporcionan una mayor precisión en la estimación de los parámetros.",
+        "Un $N$ elevado permite reducir el riesgo de cometer Error de Tipo II si se mantiene $\\alpha$ fijo."
+      ],
+      "correct": 0,
+      "hint": "Relación entre $N$ y la capacidad de detección de efectos.",
+      "explanation": "Muestras pequeñas tienen menos potencia ($1 - \\beta$); por tanto, la potencia disminuye, no aumenta."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la toma de decisiones estadísticas.",
+      "options": [
+        "Mantener la hipótesis nula cuando es falsa se considera una decisión correcta tipo $1 - \\alpha$.",
+        "Rechazar la hipótesis nula cuando es falsa es una decisión acertada llamada potencia.",
+        "Mantener la hipótesis nula cuando es verdadera es un acierto basado en el nivel de confianza."
+      ],
+      "correct": 0,
+      "hint": "Revise la Tabla 38 de aciertos y errores.",
+      "explanation": "Mantener una $H_0$ falsa es un error (Tipo II), no una decisión correcta."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre el nivel de significación $\\alpha$.",
+      "options": [
+        "El valor de $\\alpha$ representa la probabilidad de aceptar la hipótesis alternativa siendo falsa.",
+        "$\\alpha$ suele fijarse habitualmente en valores de $0,05$, $0,01$ o incluso $0,001$.",
+        "Un $\\alpha$ de $0,05$ significa que aceptamos equivocarnos un $5\\%$ de las veces al rechazar $H_0$."
+      ],
+      "correct": 0,
+      "hint": "Reflexione sobre la definición de $\\alpha$ y su relación con $H_1$.",
+      "explanation": "$\\alpha$ es la probabilidad de rechazar $H_0$ siendo verdadera. Aceptar $H_1$ siendo falsa es el mismo concepto, pero formulado sobre $H_0$ es más preciso."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre las consecuencias de los errores en salud.",
+      "options": [
+        "El error tipo I implica negar la existencia de un tratamiento que realmente es efectivo.",
+        "El error tipo II puede suponer el estancamiento del conocimiento al no detectar avances.",
+        "Ser demasiado restrictivo con $\\alpha$ puede aumentar indirectamente los errores de tipo II."
+      ],
+      "correct": 0,
+      "hint": "Considere qué error dice que 'hay algo' cuando 'no hay nada'.",
+      "explanation": "Negar un tratamiento efectivo es un falso negativo (Tipo II). El Tipo I es decir que funciona cuando no lo hace."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la Figura 91 del manual.",
+      "options": [
+        "Muestra que si $\\mu = 57$, el valor está fuera del intervalo y por tanto se debe aceptar $H_0$.",
+        "Representa gráficamente los límites $L_1 = 54,26$ y $L_s = 57,74$ de un intervalo de confianza.",
+        "Indica que con un $95\\%$ de probabilidad la media poblacional se situará entre los límites indicados."
+      ],
+      "correct": 0,
+      "hint": "Relación entre pertenencia al intervalo y decisión.",
+      "explanation": "Si el valor está dentro del intervalo, se mantiene $H_0$; si está fuera, se rechaza. La afirmación mezcla conceptos contradictorios."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la distribución muestral de la media.",
+      "options": [
+        "Su desviación típica es siempre mayor que la desviación típica de la población original.",
+        "Tiende a la normalidad según el Teorema Central del Límite al aumentar el tamaño muestral.",
+        "Es la base fundamental para entender el alcance de las decisiones al rechazar una $H_0$."
+      ],
+      "correct": 0,
+      "hint": "Relación entre error estándar y desviación poblacional.",
+      "explanation": "El error estándar ($\\sigma / \\sqrt{n}$) es siempre menor o igual que la desviación poblacional ($\\sigma$)."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre el simulador mencionado en el enlace de interés.",
+      "options": [
+        "Permite visualizar cómo el error tipo I es independiente de la potencia del contraste.",
+        "Sirve para comprender interactivamente las dos decisiones correctas sobre $H_0$ y $H_1$.",
+        "Facilita la observación de los dos tipos de errores estadísticos en un entorno dinámico."
+      ],
+      "correct": 0,
+      "hint": "Dependencia mutua de los parámetros en el contraste.",
+      "explanation": "El simulador muestra precisamente cómo al alterar un parámetro (como $\\alpha$) se ve afectada la potencia ($1 - \\beta$)."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la interpretación de 'P de dos factores' en SPSS.",
+      "options": [
+        "Representa el p-valor para un contraste donde solo nos interesa si la media es mayor.",
+        "Se utiliza para contrastes bilaterales donde la diferencia puede ser por exceso o por defecto.",
+        "Debe compararse con el nivel $\\alpha$ para decidir sobre el mantenimiento o rechazo de $H_0$."
+      ],
+      "correct": 0,
+      "hint": "Diferencia entre contrastes unilaterales y bilaterales.",
+      "explanation": "La 'P de dos factores' es para contrastes bilaterales (distinto de). Si solo interesa si es mayor, es de un factor (unilateral)."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la relación entre el intervalo de confianza y el p-valor.",
+      "options": [
+        "Si el p-valor es $0,05$, el intervalo de confianza al $95\\%$ incluirá siempre al parámetro $\\mu_0$.",
+        "Ambos procedimientos llevan a la misma decisión estadística sobre la hipótesis nula.",
+        "El intervalo aporta información sobre la magnitud y precisión del efecto, no solo significación."
+      ],
+      "correct": 0,
+      "hint": "Condición de frontera en el rechazo de hipótesis.",
+      "explanation": "Si $p = 0,05$, el valor $\\mu_0$ está justo en el límite del intervalo de confianza del $95\\%$, no necesariamente 'dentro'."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre el 'P de un factor' en la Figura 92.",
+      "options": [
+        "Es siempre el doble del valor obtenido en la significación de dos factores.",
+        "Se utiliza cuando el investigador tiene una hipótesis direccional previa.",
+        "En el ejemplo mostrado, tiene un valor inferior a $0,001$ indicando alta significación."
+      ],
+      "correct": 0,
+      "hint": "Relación matemática entre p-valores uni y bilaterales.",
+      "explanation": "El p-valor de un factor es la mitad del de dos factores, no el doble."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la 'Diferencia de medias' en el output de SPSS.",
+      "options": [
+        "Representa la desviación estándar de la población de la cual se extrajo la muestra.",
+        "Es el resultado de restar el 'Valor de prueba' a la media obtenida en la muestra.",
+        "Indica cuántas unidades se desvía nuestra muestra respecto a lo esperado bajo $H_0$."
+      ],
+      "correct": 0,
+      "hint": "Definición del estadístico de diferencia.",
+      "explanation": "La diferencia de medias es un estadístico descriptivo de la muestra comparada, no la desviación poblacional."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la pericia investigadora mencionada en el texto.",
+      "options": [
+        "La pericia consiste en elegir siempre el nivel de significación más bajo posible ($0,0001$).",
+        "Requiere encontrar el punto de equilibrio entre los riesgos de error tipo I y tipo II.",
+        "Implica seleccionar pruebas estadísticas rigurosas que reúnan propiedades deseables."
+      ],
+      "correct": 0,
+      "hint": "Concepto de equilibrio y análisis sopesado en el diseño.",
+      "explanation": "La pericia no es ser extremista con $\\alpha$, sino equilibrar riesgos según las consecuencias del estudio."
+    }
+  ],
+  "jsonTestB": [
+    {
+      "q": "En el output de SPSS (Figura 92), si el valor de prueba es $\\mu = 11$ y el límite inferior del intervalo de confianza para la diferencia es $-2,9684$, el límite inferior del intervalo para la estimación es $L_i = \\dots$",
+      "options": [
+        "Es de 8,0316",
+        "Es de 8,1316",
+        "Es de 13,968"
+      ],
+      "correct": 0,
+      "hint": "Recuerda que el límite inferior se obtiene restando el valor absoluto del estadístico de diferencia al parámetro poblacional.",
+      "explanation": "Utilizando la fórmula del manual: $$L_i = \\mu - 2,9684 = 11 - 2,9684 = 8,0316$$. Los distractores simulan errores de acarreo y suma."
+    },
+    {
+      "q": "Al contrastar una $H_0$ con un nivel de confianza del 99%, la probabilidad de cometer un Error de Tipo I ($\\alpha$) es exactamente de ____.",
+      "options": [
+        "Un valor 0,01",
+        "Un valor 0,05",
+        "Un valor 0,10"
+      ],
+      "correct": 0,
+      "hint": "El nivel de significación es el complementario del nivel de confianza.",
+      "explanation": "Si el nivel de confianza es $1 - \\alpha = 0,99$, entonces $$\\alpha = 1 - 0,99 = 0,01$$."
+    },
+    {
+      "q": "Si obtenemos un intervalo de confianza para la media $[54,26, 57,74]$ y el parámetro poblacional es $\\mu = 57$, la decisión estadística correcta es .",
+      "options": [
+        "Mantener $H_0$",
+        "Rechazar $H_0$",
+        "Aceptar la $H_1$"
+      ],
+      "correct": 0,
+      "hint": "Verifica si el valor del parámetro se encuentra contenido dentro de los límites calculados.",
+      "explanation": "Como $$54,26 < 57 < 57,74$$, el valor es compatible con la hipótesis nula, por lo que se mantiene."
+    },
+    {
+      "q": "La potencia de un contraste estadístico, que representa la probabilidad de rechazar una $H_0$ falsa, se denota algebraicamente como ____.",
+      "options": [
+        "Valor $1-\\beta$",
+        "Valor $1-\\alpha$",
+        "Valor de $\\beta$"
+      ],
+      "correct": 0,
+      "hint": "Es la probabilidad de acierto cuando la hipótesis alternativa es la verdadera.",
+      "explanation": "La potencia se define como $$P(\\text{Rechazar } H_0 | H_1 \\text{ es cierta}) = 1 - \\beta$$."
+    },
+    {
+      "q": "En la Figura 92, el valor de $t$ observado para la variable MEMORIA con $n=25$ y $\\mu=11$ es de ____.",
+      "options": [
+        "Es de -5,773",
+        "Es de -5,873",
+        "Es de -5,673"
+      ],
+      "correct": 0,
+      "hint": "Observa la columna 't' en la tabla 'Prueba para una muestra'.",
+      "explanation": "El valor exacto reportado por SPSS es $$-5,773$$. Los distractores presentan variaciones decimales mínimas."
+    },
+    {
+      "q": "Para reducir la probabilidad de cometer un Error de Tipo II ($\\beta$) sin modificar $\\alpha$, el investigador debe ____ el tamaño muestral.",
+      "options": [
+        "Incrementar $N$",
+        "Disminuir el $N$",
+        "Mantener la $N$"
+      ],
+      "correct": 0,
+      "hint": "Un mayor número de sujetos aumenta la precisión y la potencia del estudio.",
+      "explanation": "Al aumentar $$N$$, disminuye el error estándar, lo que reduce la zona de solapamiento de las distribuciones y minimiza $$\\beta$$."
+    },
+    {
+      "q": "El Error de Tipo I consiste en rechazar la hipótesis nula cuando en realidad esta es ____.",
+      "options": [
+        "Siendo de cierta",
+        "Siendo de falsa.",
+        "Siendo de nula.."
+      ],
+      "correct": 0,
+      "hint": "Se le conoce también como 'falso positivo'.",
+      "explanation": "El error Tipo I ($$\\alpha$$) ocurre al rechazar una $$H_0$$ que es verdadera en la población."
+    },
+    {
+      "q": "Si en un contraste de hipótesis el p-valor (Sig.) es $< 0,001$ y fijamos $\\alpha = 0,05$, el resultado se considera ___.",
+      "options": [
+        "Muy significativo",
+        "Poco significativo",
+        "Nada significativo"
+      ],
+      "correct": 0,
+      "hint": "Compara el p-valor con el nivel de riesgo asumido.",
+      "explanation": "Cualquier $$p < \\alpha$$ implica significación; al ser extremadamente bajo, la evidencia contra $$H_0$$ es muy fuerte."
+    },
+    {
+      "q": "La zona de la distribución que representa la probabilidad de mantener una $H_0$ que es falsa se identifica con la letra ____.",
+      "options": [
+        "Letra griega $\\beta$",
+        "Letra griega $\\alpha$",
+        "Letra latina $P$"
+      ],
+      "correct": 0,
+      "hint": "Es el área bajo la curva de la hipótesis alternativa que cae en la zona de aceptación.",
+      "explanation": "El área denominada $$\\beta$$ corresponde al Error de Tipo II o falso negativo."
+    },
+    {
+      "q": "Un investigador que decide ser muy restrictivo con $\\alpha$ (ej: $0,001$) está aumentando colateralmente el riesgo de ____.",
+      "options": [
+        "Error de Tipo II",
+        "Error de Tipo I.",
+        "Acierto de tipo"
+      ],
+      "correct": 0,
+      "hint": "Existe una relación inversa entre el control de un error y la aparición del otro.",
+      "explanation": "Al reducir $$\\alpha$$, la zona de rechazo se encoge, lo que facilita que valores provenientes de $$H_1$$ caigan en la zona de aceptación ($$\\beta$$)."
+    },
+    {
+      "q": "En una distribución normal, el área total bajo la curva representa una probabilidad de ____.",
+      "options": [
+        "Exactamente 1,00",
+        "Exactamente 0,95",
+        "Exactamente 0,99"
+      ],
+      "correct": 0,
+      "hint": "Es el espacio muestral completo de la variable aleatoria.",
+      "explanation": "Toda función de densidad de probabilidad integrada sobre su dominio debe ser igual a $$1$$."
+    },
+    {
+      "q": "El valor del límite superior para el caso de la Figura 92, calculado como $L_s = 11 + (-1,0308)$, es ____.",
+      "options": [
+        "Igual a 09,9692",
+        "Igual a 12,0308",
+        "Igual a 10,0308"
+      ],
+      "correct": 0,
+      "hint": "Realiza la operación aritmética respetando el signo negativo de la diferencia.",
+      "explanation": "Cálculo: $$11 - 1,0308 = 9,9692$$. El distractor 2 asume un error de signo al sumar."
+    },
+    {
+      "q": "Si el estadístico de contraste cae fuera del intervalo de confianza, concluimos que la diferencia es ____.",
+      "options": [
+        "Estadísticamente",
+        "Probabilística.",
+        "Descriptivamente"
+      ],
+      "correct": 0,
+      "hint": "Se relaciona con la capacidad de generalizar el efecto a la población.",
+      "explanation": "Decimos que la diferencia es estadísticamente significativa si permite rechazar $$H_0$$."
+    },
+    {
+      "q": "En el contexto de la inferencia, la media muestral $\\bar{x}$ se utiliza como un ____ de la media poblacional $\\mu$.",
+      "options": [
+        "Estimador puntual",
+        "Parámetro exacto",
+        "Error de medida."
+      ],
+      "correct": 0,
+      "hint": "Es el valor obtenido de la muestra para inferir el de la población.",
+      "explanation": "La media de la muestra es el estadístico que sirve como estimador de $$\\mu$$."
+    },
+    {
+      "q": "Los grados de libertad para una prueba T de una muestra con $N=25$ se calculan como $gl = ____$.",
+      "options": [
+        "N - 1, o sea 24",
+        "N + 1, o sea 26",
+        "N - 2, o sea 23"
+      ],
+      "correct": 0,
+      "hint": "Es el tamaño de la muestra menos las restricciones de los parámetros estimados.",
+      "explanation": "En la prueba T para una muestra: $$gl = n - 1 = 25 - 1 = 24$$."
+    },
+    {
+      "q": "El término $1-\\alpha$ se denomina estadísticamente como nivel de ____.",
+      "options": [
+        "Confianza plena",
+        "Significación..",
+        "Potencia de test"
+      ],
+      "correct": 0,
+      "hint": "Indica la probabilidad de mantener la hipótesis nula cuando es verdadera.",
+      "explanation": "$$1 - \\alpha$$ es el nivel de confianza (probabilidad de acierto al no rechazar $$H_0$$ siendo cierta)."
+    },
+    {
+      "q": "La desviación estándar de la distribución muestral de la media se conoce como ____.",
+      "options": [
+        "Error de estándar",
+        "Varianza poblac.",
+        "Sesgo de medida."
+      ],
+      "correct": 0,
+      "hint": "Aparece en el output de SPSS como 'Media de error estándar'.",
+      "explanation": "El error estándar es la desviación típica de la distribución de las medias muestrales."
+    },
+    {
+      "q": "Si el valor de prueba $\\mu=11$ no está en el intervalo $[8,03, 9,97]$, la decisión es _.",
+      "options": [
+        "Rechazar la $H_0$",
+        "Mantener la $H_0$",
+        "Aceptar la $H_0$."
+      ],
+      "correct": 0,
+      "hint": "El intervalo representa los valores probables bajo el supuesto de que la nula es cierta.",
+      "explanation": "Al no contener el valor parametrizado, se rechaza la hipótesis de igualdad ($$H_0$$)."
+    },
+    {
+      "q": "El Error de Tipo II se asocia visualmente con el concepto de ____.",
+      "options": [
+        "Falso de negativo",
+        "Falso de positivo",
+        "Verdadero negati."
+      ],
+      "correct": 0,
+      "hint": "Ocurre cuando no detectamos un efecto que realmente existe.",
+      "explanation": "Se denomina falso negativo porque el test 'falla' al no identificar la presencia del efecto ($$H_1$$)."
+    },
+    {
+      "q": "La probabilidad de no cometer un error cuando la hipótesis nula es falsa se denomina ____.",
+      "options": [
+        "Potencia de test",
+        "Nivel de confian",
+        "Significación.."
+      ],
+      "correct": 0,
+      "hint": "Es la capacidad de la prueba para detectar efectos reales.",
+      "explanation": "Se refiere a $$1 - \\beta$$, la probabilidad de rechazar correctamente una $$H_0$$ falsa."
+    },
+    {
+      "q": "¿Qué factores determinan la precisión de un intervalo de confianza para la media?",
+      "options": [
+        "El tamaño de la N",
+        "Nivel de confian.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "La anchura del intervalo depende tanto del riesgo asumido como del error estándar.",
+      "explanation": "La amplitud del intervalo de confianza está determinada por $$Z_{\\alpha/2}$$, la desviación típica y el tamaño de la muestra ($$\\sigma/\\sqrt{n}$$)."
+    },
+    {
+      "q": "¿Cuáles son requisitos para minimizar la probabilidad de cometer Error de Tipo II?",
+      "options": [
+        "Muestreo aleatori",
+        "Gran tamaño de N",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se requiere rigor metodológico y potencia estadística.",
+      "explanation": "Para aumentar la potencia ($$1-\\beta$$) se necesita representatividad, tamaño muestral suficiente y precisión en la medida."
+    },
+    {
+      "q": "¿Qué elementos se incluyen en la interpretación de un contraste de hipótesis sobre una media?",
+      "options": [
+        "El p-valor (Sig.)",
+        "Valor de estadist",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Un análisis completo requiere tanto la probabilidad como la magnitud del estadístico.",
+      "explanation": "La interpretación correcta requiere contrastar el estadístico $$t$$, los grados de libertad y la significación bilateral."
+    },
+    {
+      "q": "¿Qué conceptos subyacen a la toma de decisiones en inferencia estadística?",
+      "options": [
+        "Teorema de límite",
+        "Normalidad de dis",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son los pilares matemáticos que permiten pasar de la muestra a la población.",
+      "explanation": "La inferencia se apoya en el Teorema Central del Límite, la distribución muestral y la distribución normal."
+    },
+    {
+      "q": "¿Cuáles son las consecuencias de rechazar una hipótesis nula verdadera?",
+      "options": [
+        "Se comete error I",
+        "Es falso positivo",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es el riesgo que controlamos mediante el nivel de significación.",
+      "explanation": "Rechazar una $$H_0$$ cierta define el Error Tipo I, representado por $$\\alpha$$ o falso positivo."
+    },
+    {
+      "q": "¿Qué información proporciona el output 'Prueba T' de SPSS para una muestra?",
+      "options": [
+        "Error de estándar",
+        "Significación de",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Observa todos los estadísticos descriptivos e inferenciales de la Figura 92.",
+      "explanation": "El output incluye estadísticos para la muestra (Media, Desv. típica, Error estándar) y los resultados de la prueba T."
+    },
+    {
+      "q": "En la representación gráfica del contraste (Figura 93), ¿qué áreas suman la unidad en la curva de $H_0$?",
+      "options": [
+        "Nivel de confian.",
+        "Nivel de signific",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Considera el espacio total bajo la primera campana de Gauss.",
+      "explanation": "Bajo la distribución de $$H_0$$, la suma de la zona de aceptación ($$1-\\alpha$$) y la de rechazo ($$\\alpha$$) es igual a $$1$$."
+    },
+    {
+      "q": "¿Qué aspectos del diseño de investigación influyen en el control de errores estadísticos?",
+      "options": [
+        "Muestreo aleatori",
+        "Control de confu.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "El rigor metodológico es fundamental para la validez de la inferencia.",
+      "explanation": "Tanto el método de muestreo como el control de variables extrañas aseguran que los errores no se deban a sesgos del diseño."
+    },
+    {
+      "q": "¿Qué implica que un intervalo de confianza no contenga el valor de la hipótesis nula?",
+      "options": [
+        "Existe de efecto.",
+        "Se rechaza la H0.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Relaciona la posición del parámetro con la zona de verosimilitud.",
+      "explanation": "Si el valor hipotético queda fuera del intervalo, se concluye que hay un efecto significativo y se rechaza $$H_0$$."
+    },
+    {
+      "q": "¿Qué riesgos asume un investigador al realizar inferencia estadística?",
+      "options": [
+        "Riesgo de Tipo I.",
+        "Riesgo de Tipo II",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "La estadística trabaja con márgenes de probabilidad, nunca con certezas absolutas.",
+      "explanation": "Siempre existe la posibilidad de equivocarse, ya sea detectando efectos inexistentes ($$\\alpha$$) o ignorando reales ($$\\beta$$)."
+    },
+    {
+      "q": "Si un investigador aumenta el nivel de confianza del 95% al 99%, ¿qué sucede con la anchura del intervalo?",
+      "options": [
+        "El se de estrecha",
+        "No se de modifica",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Para tener más seguridad de capturar el parámetro, el rango debe ser mayor.",
+      "explanation": "Al aumentar el nivel de confianza, el valor crítico $$Z$$ aumenta, lo que ensancha el intervalo (lo correcto sería 'Se ensancha')."
+    },
+    {
+      "q": "Si el p-valor obtenido es de 0,450 y $\\alpha = 0,05$, ¿cuál es la decisión correcta?",
+      "options": [
+        "Rechazar la de H0",
+        "Aceptar la de H1.",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Compara si el valor obtenido es menor o mayor que el riesgo fijado.",
+      "explanation": "Como $$0,450 > 0,05$$, no hay evidencia suficiente para rechazar $$H_0$$, por lo que se debe 'Mantener' (opción no listada)."
+    },
+    {
+      "q": "¿Es posible reducir simultáneamente $\\alpha$ y $\\beta$ manteniendo constante el tamaño de la muestra?",
+      "options": [
+        "Sí, de es posible",
+        "Solo de con SPSS.",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Recuerda el compromiso o 'trade-off' entre ambos tipos de error.",
+      "explanation": "Con $$n$$ constante, si uno disminuye el otro necesariamente aumenta; solo incrementando $$n$$ pueden reducirse ambos."
+    },
+    {
+      "q": "En un contraste de una sola muestra, si la media muestral es exactamente igual al valor de prueba $\\mu$, el valor de $t$ será:",
+      "options": [
+        "Igual de valor 1",
+        "Igual de valor -1",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Revisa la fórmula de la t de Student: $t = (\\bar{x} - \\mu) / se$.",
+      "explanation": "Si $$\\bar{x} = \\mu$$, el numerador es cero, por lo que el valor de $$t$$ debe ser $$0$$."
+    },
+    {
+      "q": "El Error de Tipo I es más grave que el de Tipo II en ciencias de la salud cuando:",
+      "options": [
+        "No de hay riesgo.",
+        "Se de omite cura.",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Piensa en el ejemplo del hombre 'embarazado' de la Figura 94.",
+      "explanation": "La gravedad depende del contexto; un falso positivo puede causar tratamientos innecesarios y peligrosos, mientras un falso negativo priva de tratamiento."
+    },
+    {
+      "q": "Si el intervalo de confianza es $[54,26, 57,74]$, ¿cuál es el valor de la media muestral?",
+      "options": [
+        "Es de 55,000000",
+        "Es de 57,000000",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "La media muestral es el punto central del intervalo de confianza simétrico.",
+      "explanation": "La media es $$(54,26 + 57,74) / 2 = 56$$. Las opciones dadas son incorrectas."
+    },
+    {
+      "q": "En el output de SPSS, ¿qué significa una significación (Sig.) de .000?",
+      "options": [
+        "Error de es cero",
+        "Probab. de es 1.",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Los programas estadísticos truncan los decimales muy pequeños.",
+      "explanation": "Significa que la probabilidad es $$< 0,0005$$, no que sea exactamente cero, ya que en una normal las colas son asintóticas."
+    },
+    {
+      "q": "¿Qué ocurre con el error estándar si el tamaño de la muestra se cuadriplica?",
+      "options": [
+        "Se de de duplica",
+        "Se de de cuadrip.",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "El error estándar es inversamente proporcional a la raíz cuadrada de N.",
+      "explanation": "Si $$n$$ se multiplica por 4, la raíz es 2, por lo que el error estándar se reduce a la mitad ($$1/2$$)."
+    },
+    {
+      "q": "Si mantenemos una hipótesis nula que es falsa en la realidad, estamos ante:",
+      "options": [
+        "Acierto de tipo.",
+        "Error de Tipo I.",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es un error de omisión: no detectar el efecto existente.",
+      "explanation": "Se trata del Error de Tipo II ($$\\beta$$). La opción correcta no se encuentra entre las dos primeras."
+    },
+    {
+      "q": "La decisión de rechazar $H_0$ basándose en un nivel de confianza del 95% implica que:",
+      "options": [
+        "Certeza de 100%.",
+        "Error de de 0.0% ",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "La inferencia estadística siempre conlleva un riesgo de error.",
+      "explanation": "Implica que aceptamos un riesgo del 5% de estar equivocados ($$\\alpha = 0,05$$). No hay certeza total."
+    }
+  ],
+  "jsonLaboratorio": [
+    {
+      "id": 1,
+      "title": "Estimación de Intervalos de Confianza",
+      "context": "Se estudia una muestra de $N=25$ sujetos con una media muestral $\\bar{X}=57$ y una desviación estándar $s=4.4$. La fórmula del error estándar es $SE = \\frac{s}{\\sqrt{N}}$.",
+      "parts": [
+        {
+          "id": "p1a",
+          "label": "a)",
+          "question": "Calcula el error estándar de la media ($SE$).",
+          "correctValue": 0.88,
+          "tolerance": 0.01,
+          "explanation": "$$SE = \\frac{4.4}{\\sqrt{25}} = \\frac{4.4}{5} = 0.88$$"
+        },
+        {
+          "id": "p1b",
+          "label": "b)",
+          "question": "Para un nivel de confianza del 95% ($Z=1.96$), calcula el margen de error ($E = Z \\cdot SE$).",
+          "correctValue": 1.7248,
+          "tolerance": 0.01,
+          "explanation": "$$E = 1.96 \\cdot 0.88 = 1.7248$$"
+        },
+        {
+          "id": "p1c",
+          "label": "c)",
+          "question": "Determina el límite inferior ($L_i$) del intervalo de confianza.",
+          "correctValue": 55.2752,
+          "tolerance": 0.01,
+          "explanation": "$$L_i = \\bar{X} - E = 57 - 1.7248 = 55.2752$$"
+        },
+        {
+          "id": "p1d",
+          "label": "d)",
+          "question": "Determina el límite superior ($L_s$) del intervalo de confianza.",
+          "correctValue": 58.7248,
+          "tolerance": 0.01,
+          "explanation": "$$L_s = \\bar{X} + E = 57 + 1.7248 = 58.7248$$"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Interpretación de Resultados SPSS",
+      "context": "Basado en la Figura 92, una prueba t para una muestra con valor de prueba $\\mu=11$ arrojó una media muestral de $9.0004$ y una diferencia de medias de $-1.9996$.",
+      "parts": [
+        {
+          "id": "p2a",
+          "label": "a)",
+          "question": "Si el límite inferior de la diferencia al 99% es $-2.9684$, calcula el límite inferior ($L_i$) para la media poblacional sumando este valor al valor de prueba.",
+          "correctValue": 8.0316,
+          "tolerance": 0.001,
+          "explanation": "$$L_i = 11 + (-2.9684) = 8.0316$$"
+        },
+        {
+          "id": "p2b",
+          "label": "b)",
+          "question": "Si el límite superior de la diferencia es $-1.0308$, calcula el límite superior ($L_s$) para la media poblacional.",
+          "correctValue": 9.9692,
+          "tolerance": 0.001,
+          "explanation": "$$L_s = 11 + (-1.0308) = 9.9692$$"
+        },
+        {
+          "id": "p2c",
+          "label": "c)",
+          "question": "¿Cuál es la amplitud total del intervalo de confianza ($L_s - L_i$)?",
+          "correctValue": 1.9376,
+          "tolerance": 0.001,
+          "explanation": "$$1.9376 = 9.9692 - 8.0316$$"
+        },
+        {
+          "id": "p2d",
+          "label": "d)",
+          "question": "Si el valor de prueba es $\\mu=11$, ¿cuántas unidades de distancia hay entre el valor de prueba y el límite superior del intervalo?",
+          "correctValue": 1.0308,
+          "tolerance": 0.001,
+          "explanation": "$$11 - 9.9692 = 1.0308$$ (esto coincide con el valor absoluto del límite superior de la diferencia)."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Probabilidades y Tipos de Error",
+      "context": "En un contraste de hipótesis, definimos la probabilidad de error Tipo I como $\\alpha$ y la de error Tipo II como $\\beta$. El nivel de confianza es $1-\\alpha$.",
+      "parts": [
+        {
+          "id": "p3a",
+          "label": "a)",
+          "question": "Si fijamos un nivel de significación $\\alpha = 0.01$, ¿cuál es la probabilidad de tomar una decisión correcta manteniendo la $H_0$ siendo verdadera?",
+          "correctValue": 0.99,
+          "tolerance": 0,
+          "explanation": "$$P = 1 - \\alpha = 1 - 0.01 = 0.99$$"
+        },
+        {
+          "id": "p3b",
+          "label": "b)",
+          "question": "Si la probabilidad de error Tipo II es $\\beta = 0.20$, ¿cuál es la potencia del contraste ($1-\\beta$)?",
+          "correctValue": 0.8,
+          "tolerance": 0,
+          "explanation": "$$Potencia = 1 - 0.20 = 0.80$$"
+        },
+        {
+          "id": "p3c",
+          "label": "c)",
+          "question": "Si aumentamos el tamaño de la muestra y esto reduce $\\beta$ a la mitad ($0.10$), ¿cuál es la nueva potencia?",
+          "correctValue": 0.9,
+          "tolerance": 0,
+          "explanation": "$$1 - 0.10 = 0.90$$"
+        },
+        {
+          "id": "p3d",
+          "label": "d)",
+          "question": "Con $\\alpha = 0.01$ y la nueva $\\beta = 0.10$, ¿cuál es la suma total de las probabilidades de cometer algún error ($Error I + Error II$)?",
+          "correctValue": 0.11,
+          "tolerance": 0,
+          "explanation": "$$0.01 + 0.10 = 0.11$$"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Impacto del Tamaño Muestral",
+      "context": "Un investigador analiza cómo varía el Error Estándar ($SE$) con $N$. Datos: $s=10$.",
+      "parts": [
+        {
+          "id": "p4a",
+          "label": "a)",
+          "question": "Calcula el $SE$ para $N=25$.",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$SE = 10 / \\sqrt{25} = 2$$"
+        },
+        {
+          "id": "p4b",
+          "label": "b)",
+          "question": "Calcula el $SE$ si triplicamos la muestra original ($N=75$).",
+          "correctValue": 1.1547,
+          "tolerance": 0.001,
+          "explanation": "$$SE = 10 / \\sqrt{75} \\approx 1.1547$$"
+        },
+        {
+          "id": "p4c",
+          "label": "c)",
+          "question": "¿Qué valor de $N$ se necesita para reducir el $SE$ a exactamente $1$?",
+          "correctValue": 100,
+          "tolerance": 0,
+          "explanation": "$$1 = 10 / \\sqrt{N} \\implies \\sqrt{N} = 10 \\implies N = 100$$"
+        },
+        {
+          "id": "p4d",
+          "label": "d)",
+          "question": "Si $N=100$ y el nivel de confianza es 95% ($Z=1.96$), ¿cuál es la amplitud total del intervalo de confianza ($2 \\cdot Z \\cdot SE$)?",
+          "correctValue": 3.92,
+          "tolerance": 0,
+          "explanation": "$$Amplitud = 2 \\cdot 1.96 \\cdot 1 = 3.92$$"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Contraste de Hipótesis: Estadístico T",
+      "context": "Se desea contrastar si la media de memoria es distinta de $\\mu_0=11$. Datos: $\\bar{X}=9$, $s=1.73194$, $N=25$.",
+      "parts": [
+        {
+          "id": "p5a",
+          "label": "a)",
+          "question": "Calcula los grados de libertad ($gl = N - 1$).",
+          "correctValue": 24,
+          "tolerance": 0,
+          "explanation": "$$24 = 25 - 1$$"
+        },
+        {
+          "id": "p5b",
+          "label": "b)",
+          "question": "Calcula el error estándar de la media ($SE$).",
+          "correctValue": 0.3464,
+          "tolerance": 0.001,
+          "explanation": "$$1.73194 / \\sqrt{25} = 0.346388$$"
+        },
+        {
+          "id": "p5c",
+          "label": "c)",
+          "question": "Calcula el valor del estadístico t ($t = \\frac{\\bar{X} - \\mu_0}{SE}$).",
+          "correctValue": -5.7738,
+          "tolerance": 0.01,
+          "explanation": "$$(9 - 11) / 0.346388 = -5.7738$$"
+        },
+        {
+          "id": "p5d",
+          "label": "d)",
+          "question": "Si el valor crítico de t para 24 gl al 99% es $2.797$, ¿cuál es el valor absoluto de la diferencia entre el t obtenido y el t crítico?",
+          "correctValue": 2.9768,
+          "tolerance": 0.01,
+          "explanation": "$$|-5.7738| - 2.797 = 2.9768$$"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Precisión y Nivel de Confianza",
+      "context": "Un intervalo de confianza se define como $\\bar{X} \\pm Z_{\\alpha/2} \\cdot \\frac{s}{\\sqrt{n}}$. Datos: $\\bar{X}=100$, $s=15$, $n=100$.",
+      "parts": [
+        {
+          "id": "p6a",
+          "label": "a)",
+          "question": "Calcula el $SE$.",
+          "correctValue": 1.5,
+          "tolerance": 0,
+          "explanation": "$$15 / \\sqrt{100} = 1.5$$"
+        },
+        {
+          "id": "p6b",
+          "label": "b)",
+          "question": "Calcula el límite superior para un nivel de confianza del 90% ($Z=1.645$).",
+          "correctValue": 102.4675,
+          "tolerance": 0.01,
+          "explanation": "$$100 + (1.645 \\cdot 1.5) = 102.4675$$"
+        },
+        {
+          "id": "p6c",
+          "label": "c)",
+          "question": "Calcula el límite superior para un nivel de confianza del 99% ($Z=2.576$).",
+          "correctValue": 103.864,
+          "tolerance": 0.01,
+          "explanation": "$$100 + (2.576 \\cdot 1.5) = 103.864$$"
+        },
+        {
+          "id": "p6d",
+          "label": "d)",
+          "question": "¿En cuántas unidades es más ancho el intervalo del 99% respecto al del 90%? (Calcula $Amplitud_{99} - Amplitud_{90}$)",
+          "correctValue": 2.793,
+          "tolerance": 0.01,
+          "explanation": "$$2 \\cdot 1.5 \\cdot (2.576 - 1.645) = 3 \\cdot 0.931 = 2.793$$"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "La Curva de Potencia",
+      "context": "La potencia de una prueba es $1-\\beta$. Se sabe que $\\alpha$ influye en $\\beta$.",
+      "parts": [
+        {
+          "id": "p7a",
+          "label": "a)",
+          "question": "Si en un diseño experimental se reduce $\\alpha$ de $0.05$ a $0.01$, y esto provoca que $\\beta$ suba de $0.15$ a $0.25$, ¿cuál era la potencia inicial?",
+          "correctValue": 0.85,
+          "tolerance": 0,
+          "explanation": "$$1 - 0.15 = 0.85$$"
+        },
+        {
+          "id": "p7b",
+          "label": "b)",
+          "question": "¿Cuál es la potencia final tras el ajuste de $\\alpha$?",
+          "correctValue": 0.75,
+          "tolerance": 0,
+          "explanation": "$$1 - 0.25 = 0.75$$"
+        },
+        {
+          "id": "p7c",
+          "label": "c)",
+          "question": "¿Qué porcentaje de potencia se ha perdido?",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$85 - 75 = 10\\%$$"
+        },
+        {
+          "id": "p7d",
+          "label": "d)",
+          "question": "Si queremos recuperar la potencia original ($0.85$) manteniendo $\\alpha=0.01$, y para ello debemos reducir $\\beta$ a $0.15$, ¿cuál debe ser la nueva probabilidad de acierto manteniendo la $H_0$ falsa?",
+          "correctValue": 0.85,
+          "tolerance": 0,
+          "explanation": "La probabilidad de acierto cuando $H_0$ es falsa es la potencia ($1-\\beta$)."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Zonas de Decisión en la Normal",
+      "context": "En una distribución normal, el valor crítico delimita la zona de aceptación y rechazo. Sea $\\mu = 57$ y $SE = 0.8878$.",
+      "parts": [
+        {
+          "id": "p8a",
+          "label": "a)",
+          "question": "Si el límite inferior crítico es $54.26$, ¿a cuántos errores estándar de la media se encuentra respecto a $\\mu$? ($Z = \\frac{L_i - \\mu}{SE}$)",
+          "correctValue": -3.0862,
+          "tolerance": 0.01,
+          "explanation": "$$(54.26 - 57) / 0.8878 = -3.0862$$"
+        },
+        {
+          "id": "p8b",
+          "label": "b)",
+          "question": "Si el límite superior es $57.74$, ¿cuál es la distancia absoluta en unidades de la variable respecto a la media?",
+          "correctValue": 0.74,
+          "tolerance": 0.001,
+          "explanation": "$$57.74 - 57 = 0.74$$"
+        },
+        {
+          "id": "p8c",
+          "label": "c)",
+          "question": "Si el valor observado es $54.10$, ¿en cuántas unidades queda fuera del límite inferior $54.26$?",
+          "correctValue": 0.16,
+          "tolerance": 0,
+          "explanation": "$$54.26 - 54.10 = 0.16$$"
+        },
+        {
+          "id": "p8d",
+          "label": "d)",
+          "question": "Con un valor de $54.10$, ¿qué decisión se toma sobre la $H_0$ (1 para rechazar, 0 para mantener)?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Puesto que está fuera del intervalo crítico ($54.10 < 54.26$), se rechaza."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Error Estándar y Varianza",
+      "context": "La desviación estándar es la raíz de la varianza ($s^2$). Datos: $s^2 = 9$, $N=36$.",
+      "parts": [
+        {
+          "id": "p9a",
+          "label": "a)",
+          "question": "Calcula la desviación estándar $s$.",
+          "correctValue": 3,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{9} = 3$$"
+        },
+        {
+          "id": "p9b",
+          "label": "b)",
+          "question": "Calcula el $SE$.",
+          "correctValue": 0.5,
+          "tolerance": 0,
+          "explanation": "$$3 / \\sqrt{36} = 0.5$$"
+        },
+        {
+          "id": "p9c",
+          "label": "c)",
+          "question": "Si la varianza se cuadruplica ($s^2=36$), manteniendo $N=36$, ¿cuál es el nuevo $SE$?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{36} / \\sqrt{36} = 6/6 = 1$$"
+        },
+        {
+          "id": "p9d",
+          "label": "d)",
+          "question": "¿Qué $N$ necesitaríamos con la nueva varianza ($s^2=36$) para volver al $SE$ original de $0.5$?",
+          "correctValue": 144,
+          "tolerance": 0,
+          "explanation": "$$0.5 = 6 / \\sqrt{N} \\implies \\sqrt{N} = 12 \\implies N = 144$$"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Intervalo de Diferencia de Medias",
+      "context": "En el output de SPSS (Fig 92), la diferencia de medias es $-1.99960$ con un intervalo de confianza (99%) entre $-2.9684$ y $-1.0308$.",
+      "parts": [
+        {
+          "id": "p10a",
+          "label": "a)",
+          "question": "¿Cuál es el valor medio del intervalo de la diferencia?",
+          "correctValue": -1.9996,
+          "tolerance": 0.001,
+          "explanation": "Es el valor de la diferencia de medias reportado."
+        },
+        {
+          "id": "p10b",
+          "label": "b)",
+          "question": "Calcula el margen de error de la diferencia ($L_s - Media Diferencia$).",
+          "correctValue": 0.9688,
+          "tolerance": 0.001,
+          "explanation": "$$-1.0308 - (-1.9996) = 0.9688$$"
+        },
+        {
+          "id": "p10c",
+          "label": "c)",
+          "question": "Si el valor de prueba fuera $\\mu=9.5$, ¿estaría el 0 contenido en el intervalo de la diferencia? (1=Sí, 0=No). Considere que el intervalo de la diferencia se calcula como $\\bar{X} - \\mu_{prueba}$.",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "El intervalo de la diferencia no contiene al cero, lo que indica rechazo."
+        },
+        {
+          "id": "p10d",
+          "label": "d)",
+          "question": "Si multiplicamos el tamaño de la muestra por 4, ¿por cuánto se dividiría el margen de error (asumiendo misma varianza)?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "El error disminuye con $\\sqrt{N}$, $\\sqrt{4} = 2$."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Decisión Clínica y Riesgos",
+      "context": "Un fármaco nuevo se prueba con $\\alpha=0.05$. Si se comete error Tipo I, se aprueba un fármaco ineficaz. Si se comete error Tipo II, se descarta uno eficaz.",
+      "parts": [
+        {
+          "id": "p11a",
+          "label": "a)",
+          "question": "Si realizamos 200 estudios independientes bajo una $H_0$ verdadera, ¿cuántos falsos positivos (Error I) esperamos tener?",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$200 \\cdot 0.05 = 10$$"
+        },
+        {
+          "id": "p11b",
+          "label": "b)",
+          "question": "Si bajamos $\\alpha$ a $0.001$ para ser más rigurosos, ¿cuántos falsos positivos esperaríamos en esos 200 estudios?",
+          "correctValue": 0.2,
+          "tolerance": 0,
+          "explanation": "$$200 \\cdot 0.001 = 0.2$$"
+        },
+        {
+          "id": "p11c",
+          "label": "c)",
+          "question": "Si con $\\alpha=0.001$ la potencia cae al $60\\%$, ¿cuál es el valor de $\\beta$?",
+          "correctValue": 0.4,
+          "tolerance": 0,
+          "explanation": "$$1 - 0.60 = 0.40$$"
+        },
+        {
+          "id": "p11d",
+          "label": "d)",
+          "question": "Si en una muestra de 1000 pacientes enfermos, el fármaco realmente funciona ($H_0$ falsa) y $\\beta=0.4$, ¿a cuántos pacientes no se les detectaría el efecto?",
+          "correctValue": 400,
+          "tolerance": 0,
+          "explanation": "$$1000 \\cdot 0.4 = 400$$"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Cálculo de la Diferencia Crítica",
+      "context": "La diferencia crítica es $D = Z \\cdot SE$. Datos: $s=12$, $N=64$, Confianza=95% ($Z=1.96$).",
+      "parts": [
+        {
+          "id": "p12a",
+          "label": "a)",
+          "question": "Calcula el $SE$.",
+          "correctValue": 1.5,
+          "tolerance": 0,
+          "explanation": "$$12 / \\sqrt{64} = 12 / 8 = 1.5$$"
+        },
+        {
+          "id": "p12b",
+          "label": "b)",
+          "question": "Calcula la diferencia crítica $D$.",
+          "correctValue": 2.94,
+          "tolerance": 0.001,
+          "explanation": "$$1.96 \\cdot 1.5 = 2.94$$"
+        },
+        {
+          "id": "p12c",
+          "label": "c)",
+          "question": "Si la media muestral es $\\bar{X}=50$ y el valor de prueba es $\\mu_0=52.5$, ¿cuál es la diferencia absoluta observada?",
+          "correctValue": 2.5,
+          "tolerance": 0,
+          "explanation": "$$|50 - 52.5| = 2.5$$"
+        },
+        {
+          "id": "p12d",
+          "label": "d)",
+          "question": "Dado que $2.5 < 2.94$, ¿se rechaza la $H_0$? (1=Sí, 0=No).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "No se rechaza porque la diferencia observada es menor que la crítica."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Sensibilidad y Potencia",
+      "context": "Un test es sensible si detecta diferencias pequeñas. La potencia depende del tamaño del efecto ($d = \\frac{\\bar{X} - \\mu_0}{s}$).",
+      "parts": [
+        {
+          "id": "p13a",
+          "label": "a)",
+          "question": "Si $\\bar{X}=105$, $\\mu_0=100$ y $s=10$, calcula el tamaño del efecto $d$.",
+          "correctValue": 0.5,
+          "tolerance": 0,
+          "explanation": "$$(105-100)/10 = 0.5$$"
+        },
+        {
+          "id": "p13b",
+          "label": "b)",
+          "question": "Si duplicamos la desviación estándar ($s=20$), ¿cuál es el nuevo valor de $d$?",
+          "correctValue": 0.25,
+          "tolerance": 0,
+          "explanation": "$$5 / 20 = 0.25$$"
+        },
+        {
+          "id": "p13c",
+          "label": "c)",
+          "question": "Para $N=100$, calcula el valor de $t$ con $d=0.5$. ($t = d \\cdot \\sqrt{N}$)",
+          "correctValue": 5,
+          "tolerance": 0,
+          "explanation": "$$0.5 \\cdot 10 = 5$$"
+        },
+        {
+          "id": "p13d",
+          "label": "d)",
+          "question": "Para $N=100$, calcula el valor de $t$ con $d=0.25$.",
+          "correctValue": 2.5,
+          "tolerance": 0,
+          "explanation": "$$0.25 \\cdot 10 = 2.5$$"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "SPSS y la Significación",
+      "context": "En la Figura 92, la significación (p-valor) es $<.001$.",
+      "parts": [
+        {
+          "id": "p14a",
+          "label": "a)",
+          "question": "Si el nivel $\\alpha$ es $0.05$, ¿se rechaza $H_0$ con un p-valor de $0.0005$? (1=Sí, 0=No).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$0.0005 < 0.05$$, se rechaza."
+        },
+        {
+          "id": "p14b",
+          "label": "b)",
+          "question": "Si el contraste fuera unilateral y el p-valor bilateral es $0.0005$, ¿cuál sería el p-valor de una cola?",
+          "correctValue": 0.00025,
+          "tolerance": 0.0001,
+          "explanation": "$$0.0005 / 2 = 0.00025$$"
+        },
+        {
+          "id": "p14c",
+          "label": "c)",
+          "question": "Si el estadístico t es $-5.773$ y los grados de libertad son 24, ¿cuál es el valor absoluto de t?",
+          "correctValue": 5.773,
+          "tolerance": 0,
+          "explanation": "Valor absoluto de $-5.773$."
+        },
+        {
+          "id": "p14d",
+          "label": "d)",
+          "question": "Si el error estándar reportado es $0.34639$, ¿cuál es la varianza de la media ($SE^2$)?",
+          "correctValue": 0.1199,
+          "tolerance": 0.001,
+          "explanation": "$$0.34639^2 \\approx 0.11998$$"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Ajuste de Límites por Decimales",
+      "context": "En la página 170, se menciona una discrepancia por precisión decimal. Datos del ejemplo: $\\mu=11$, diferencia inferior $=-2.9684$, diferencia superior $=-1.0308$.",
+      "parts": [
+        {
+          "id": "p15a",
+          "label": "a)",
+          "question": "Suma el valor de prueba a la diferencia inferior.",
+          "correctValue": 8.0316,
+          "tolerance": 0,
+          "explanation": "$$11 - 2.9684 = 8.0316$$"
+        },
+        {
+          "id": "p15b",
+          "label": "b)",
+          "question": "Si redondeamos a dos decimales la diferencia inferior ($-2.97$), ¿cuál sería el nuevo $L_i$?",
+          "correctValue": 8.03,
+          "tolerance": 0,
+          "explanation": "$$11 - 2.97 = 8.03$$"
+        },
+        {
+          "id": "p15c",
+          "label": "c)",
+          "question": "¿Cuál es la diferencia absoluta entre el $L_i$ original ($8.0316$) y el redondeado ($8.03$)?",
+          "correctValue": 0.0016,
+          "tolerance": 0,
+          "explanation": "$$8.0316 - 8.03 = 0.0016$$"
+        },
+        {
+          "id": "p15d",
+          "label": "d)",
+          "question": "Si el parámetro poblacional real fuera $8.031$, ¿se rechazaría con el límite original? (1=Sí, 0=No). Considere que el intervalo es $[8.0316, 9.9692]$.",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Sí, porque $8.031$ es menor que $8.0316$."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Simulación de Errores",
+      "context": "Asumimos que un investigador repite un experimento 1000 veces. La $H_0$ es falsa el 50% de las veces.",
+      "parts": [
+        {
+          "id": "p16a",
+          "label": "a)",
+          "question": "¿En cuántos experimentos la $H_0$ es verdadera?",
+          "correctValue": 500,
+          "tolerance": 0,
+          "explanation": "50% de 1000."
+        },
+        {
+          "id": "p16b",
+          "label": "b)",
+          "question": "Si $\\alpha=0.05$, ¿cuántas veces rechazará erróneamente la $H_0$ verdadera?",
+          "correctValue": 25,
+          "tolerance": 0,
+          "explanation": "$$500 \\cdot 0.05 = 25$$"
+        },
+        {
+          "id": "p16c",
+          "label": "c)",
+          "question": "Si la potencia es 0.80, ¿cuántas veces rechazará correctamente la $H_0$ falsa?",
+          "correctValue": 400,
+          "tolerance": 0,
+          "explanation": "$$500 \\cdot 0.80 = 400$$"
+        },
+        {
+          "id": "p16d",
+          "label": "d)",
+          "question": "¿Cuál es el número total de rechazos ($Falsos Positivos + Verdaderos Positivos$)?",
+          "correctValue": 425,
+          "tolerance": 0,
+          "explanation": "$$25 + 400 = 425$$"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Relación entre Alfa y Potencia",
+      "context": "La Figura 93 muestra cómo $\\alpha$ y $\\beta$ se solapan. Al mover la línea de decisión a la izquierda, $\\alpha$ disminuye.",
+      "parts": [
+        {
+          "id": "p17a",
+          "label": "a)",
+          "question": "Si la probabilidad de decisión correcta bajo $H_0$ es 0.95, ¿cuánto vale $\\alpha$?",
+          "correctValue": 0.05,
+          "tolerance": 0,
+          "explanation": "$$1 - 0.95 = 0.05$$"
+        },
+        {
+          "id": "p17b",
+          "label": "b)",
+          "question": "Si en ese punto $\\beta$ es 0.12, ¿cuál es la probabilidad de decisión correcta bajo $H_1$?",
+          "correctValue": 0.88,
+          "tolerance": 0,
+          "explanation": "$$1 - 0.12 = 0.88$$"
+        },
+        {
+          "id": "p17c",
+          "label": "c)",
+          "question": "Si movemos la línea para que $\\alpha$ sea 0.01, y $\\beta$ sube a 0.30, ¿cuál es la nueva suma de los errores?",
+          "correctValue": 0.31,
+          "tolerance": 0,
+          "explanation": "$$0.01 + 0.30 = 0.31$$"
+        },
+        {
+          "id": "p17d",
+          "label": "d)",
+          "question": "¿Cuál es la diferencia de potencia entre ambos casos?",
+          "correctValue": 0.18,
+          "tolerance": 0,
+          "explanation": "$$0.88 - 0.70 = 0.18$$"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Estimación del Valor P",
+      "context": "Un valor de t muy alto indica un p-valor pequeño. Para $gl=24$, el t crítico para $\\alpha=0.001$ es $3.745$.",
+      "parts": [
+        {
+          "id": "p18a",
+          "label": "a)",
+          "question": "Si nuestro t es $5.773$, ¿es el p-valor mayor o menor que $0.001$? (1 para menor, 0 para mayor).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Como $|t| > 3.745$, el p-valor es menor."
+        },
+        {
+          "id": "p18b",
+          "label": "b)",
+          "question": "¿Cuántas unidades de t por encima del valor crítico de 0.001 se encuentra nuestro resultado?",
+          "correctValue": 2.028,
+          "tolerance": 0.001,
+          "explanation": "$$5.773 - 3.745 = 2.028$$"
+        },
+        {
+          "id": "p18c",
+          "label": "c)",
+          "question": "Si $SE=0.346$, ¿qué diferencia de medias ($D$) produciría un t de exactamente 2?",
+          "correctValue": 0.692,
+          "tolerance": 0.001,
+          "explanation": "$$t = D/SE \\implies D = 2 \\cdot 0.346 = 0.692$$"
+        },
+        {
+          "id": "p18d",
+          "label": "d)",
+          "question": "Si la diferencia de medias observada fuera $0.692$, ¿rechazaríamos al 95% ($t_{crit}=2.064$)? (1=Sí, 0=No).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "No, porque $2 < 2.064$."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Recalcular el Intervalo al 95%",
+      "context": "El output original (Fig 92) es al 99%. Recalculemos al 95% ($Z=1.96$). Datos: Media=$9.0004$, $SE=0.34639$.",
+      "parts": [
+        {
+          "id": "p19a",
+          "label": "a)",
+          "question": "Calcula el margen de error para el 95%.",
+          "correctValue": 0.6789,
+          "tolerance": 0.001,
+          "explanation": "$$1.96 \\cdot 0.34639 = 0.6789244$$"
+        },
+        {
+          "id": "p19b",
+          "label": "b)",
+          "question": "Calcula el nuevo $L_i$.",
+          "correctValue": 8.3215,
+          "tolerance": 0.001,
+          "explanation": "$$9.0004 - 0.6789 = 8.3215$$"
+        },
+        {
+          "id": "p19c",
+          "label": "c)",
+          "question": "Calcula el nuevo $L_s$.",
+          "correctValue": 9.6793,
+          "tolerance": 0.001,
+          "explanation": "$$9.0004 + 0.6789 = 9.6793$$"
+        },
+        {
+          "id": "p19d",
+          "label": "d)",
+          "question": "¿En cuánto se ha reducido la amplitud total del intervalo respecto al del 99% ($Amplitud_{99}=1.9376$)?",
+          "correctValue": 0.5798,
+          "tolerance": 0.001,
+          "explanation": "$$1.9376 - (9.6793 - 8.3215) = 1.9376 - 1.3578 = 0.5798$$"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Efecto de la Desviación Típica",
+      "context": "Analizamos la sensibilidad de la prueba variando $s$. Datos: $\\bar{X}=57$, $\\mu_0=55$, $N=25$.",
+      "parts": [
+        {
+          "id": "p20a",
+          "label": "a)",
+          "question": "Si $s=5$, calcula t.",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$SE = 5/5 = 1$$; $$t = (57-55)/1 = 2$$"
+        },
+        {
+          "id": "p20b",
+          "label": "b)",
+          "question": "Si $s$ aumenta a $10$, calcula el nuevo t.",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$SE = 10/5 = 2$$; $$t = 2/2 = 1$$"
+        },
+        {
+          "id": "p20c",
+          "label": "c)",
+          "question": "Si con $s=10$ queremos recuperar un t de 2, ¿a cuánto debe subir $N$?",
+          "correctValue": 100,
+          "tolerance": 0,
+          "explanation": "$$2 = \\frac{2}{10/\\sqrt{N}} \\implies 1 = \\frac{\\sqrt{N}}{10} \\implies \\sqrt{N}=10 \\implies N=100$$"
+        },
+        {
+          "id": "p20d",
+          "label": "d)",
+          "question": "Si $N=100$ y $s=10$, ¿cuál es el nuevo error estándar de la media?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$10 / \\sqrt{100} = 10 / 10 = 1$$"
+        }
+      ]
+    }
+  ],
+  "jsonFormulas": [
+    {
+      "name": "Nivel de confianza (Probabilidad de decisión correcta al mantener H0)",
+      "tex": "$$p = 1 - \\alpha$$"
+    },
+    {
+      "name": "Probabilidad de Error Tipo I (Nivel de significación)",
+      "tex": "$$P = \\alpha$$"
+    },
+    {
+      "name": "Probabilidad de Error Tipo II",
+      "tex": "$$P = \\beta$$"
+    },
+    {
+      "name": "Potencia del contraste (Probabilidad de decisión correcta al rechazar H0)",
+      "tex": "$$P = 1 - \\beta$$"
+    },
+    {
+      "name": "Cálculo del límite inferior del intervalo de confianza (basado en valor de prueba)",
+      "tex": "$$L_{i} = \\mu - |\\text{Límite inferior de la diferencia}|$$"
+    },
+    {
+      "name": "Cálculo del límite superior del intervalo de confianza (basado en valor de prueba)",
+      "tex": "$$L_{s} = \\mu + \\text{Límite superior de la diferencia}$$"
+    }
+  ]
+}

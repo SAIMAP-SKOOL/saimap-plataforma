@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIMAP - Tema 2.3: La Forma de los Datos</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Configuración de MathJax para renderizar LaTeX -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            startup: {
+                typeset: false // Lo llamaremos manualmente después de cargar las vistas
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f0f9ff;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(192, 90%, 90%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(170, 70%, 90%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(210, 80%, 90%, 1) 0, transparent 50%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 40px -10px rgba(14, 165, 233, 0.15);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 50%, #2dd4bf 100%);
+            background-size: 200% 200%;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            color: white;
+            font-weight: 700;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
+            background-position: 100% 50%;
+        }
+
+        /* Estilos Flashcards */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .card-inner.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 1.5rem;
+        }
+
+        .card-front {
+            background: white;
+            border: 2px solid #e2e8f0;
+        }
+
+        .card-back {
+            background: #4f46e5;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .option-btn {
+            transition: all 0.2s;
+            border: 2px solid #e2e8f0;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: #0ea5e9;
+            background-color: #f0f9ff;
+            transform: translateX(5px);
+        }
+
+        /* MathJax adjustments to prevent overflow */
+        mjx-container {
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Global -->
+    <header class="glass-card sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="app.showView('home')">
+                <div class="bg-sky-600 text-white p-2 rounded-lg shadow-lg">
+                    <i class="ph-bold ph-chart-line-up text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-xl tracking-tight text-slate-800" id="header-title">Tema 2.3 - La Forma de los Datos</h1>
+                    <p class="text-[9px] uppercase tracking-widest font-bold text-slate-500">ANÁLISIS DE DATOS Y MATEMÁTICAS</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 sm:gap-4">
+                <!-- Botón Portal Principal -->
+                <a href="../../../index.html" class="bg-slate-700 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-arrow-left text-lg"></i> <span class="hidden sm:inline">Portal Principal</span>
+                </a>
+
+                <!-- Botón Calculadora Externa -->
+                <a href="https://web2.0calc.es/" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-calculator text-lg"></i> <span class="hidden sm:inline">Calculadora</span>
+                </a>
+
+                <!-- Botón Menú Global -->
+                <button id="btn-global-menu" onclick="app.showView('home')" class="hidden bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-xl items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-house text-lg"></i> <span class="hidden sm:inline">Menú</span>
+                </button>
+
+                <!-- Contador Global -->
+                <div id="nav-counter" class="hidden items-center gap-2 bg-white/60 px-3 py-1.5 rounded-full border border-white">
+                    <span id="global-counter" class="text-sky-700 font-bold font-mono text-sm">0/0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-5xl w-full mx-auto p-6 flex flex-col items-center justify-center">
+
+        <!-- VIEW: HOME (MENU) -->
+        <section id="view-home" class="fade-in w-full">
+            <div class="text-center mb-12">
+                <h1 class="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400 mb-8 tracking-tighter opacity-80 select-none">
+                    SAIMAP</h1>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-4">¿Cómo quieres practicar hoy?</h2>
+                <h3 class="text-xl font-bold text-slate-600 mb-4">Tema 2.3 - La Forma de los Datos</h3>
+                <p class="text-slate-500">Selecciona la herramienta que mejor se adapte a tu objetivo de estudio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                <!-- QUIZ -->
+                <div onclick="app.startTool('quiz')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-sky-500">
+                    <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-numbers text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Test Teórico</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Preguntas de opción múltiple sobre conceptos y propiedades estadísticas.</p>
+                </div>
+
+                <!-- LABORATORIO (Reemplaza Trainer) -->
+                <div onclick="app.startTool('laboratorio')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-emerald-500">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-calculator text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Laboratorio</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Ejercicios de cálculo numérico con escenarios guiados paso a paso.</p>
+                </div>
+
+                <!-- FÓRMULAS (Reemplaza Flashcards) -->
+                <div onclick="app.startTool('formulas')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-indigo-500">
+                    <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-dashes text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fórmulas</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Glosario completo de fórmulas matemáticas para consultar rápidamente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: QUIZ -->
+        <section id="view-quiz" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-sky-500"></div>
+
+                <div class="flex justify-between items-center mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Modo Test</span>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">
+                            Finalizar Sesión
+                        </button>
+                    </div>
+                    <button id="quiz-hint-btn" onclick="app.quizToggleHint()" class="text-amber-600 font-bold text-xs flex items-center gap-1 hover:bg-amber-50 px-3 py-1.5 rounded-lg transition">
+                        <i class="ph-bold ph-lightbulb"></i> Ver Pista
+                    </button>
+                </div>
+
+                <h2 id="quiz-question" class="text-2xl font-bold text-slate-800 mb-8 math-content"></h2>
+
+                <div id="quiz-hint-box" class="hidden mb-6 p-4 bg-amber-50 border-l-4 border-amber-400 text-amber-900 text-sm italic rounded-r-xl math-content"></div>
+
+                <div id="quiz-options" class="space-y-3"></div>
+
+                <!-- Feedback Quiz -->
+                <div id="quiz-feedback" class="hidden mt-8 p-6 rounded-2xl border transition-all">
+                    <div class="flex items-start gap-4">
+                        <div id="quiz-feedback-icon" class="text-3xl"></div>
+                        <div class="w-full">
+                            <h4 id="quiz-feedback-title" class="font-bold text-lg"></h4>
+                            <div id="quiz-explanation" class="text-sm text-slate-600 mt-2 p-3 bg-slate-50 rounded-lg math-content"></div>
+                        </div>
+                    </div>
+                    <button onclick="app.quizNext()" class="mt-6 btn-primary py-4 px-8 rounded-xl w-full flex items-center justify-center gap-2">
+                        Continuar <i class="ph ph-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: LABORATORIO -->
+        <section id="view-laboratorio" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl overflow-hidden border-t-4 border-emerald-500">
+                <!-- Cabecera y Contexto -->
+                <div class="p-6 md:p-8 bg-emerald-50/50 border-b border-slate-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center font-bold" id="lab-problem-number">1</div>
+                            <h2 id="lab-main-title" class="text-xl font-bold text-slate-800"></h2>
+                        </div>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">Finalizar</button>
+                    </div>
+                    <div id="lab-context-box" class="bg-white/80 p-5 rounded-xl text-slate-700 math-content text-base border border-slate-200 shadow-inner"></div>
+                </div>
+
+                <!-- Contenedor de Apartados -->
+                <div id="lab-parts-container" class="flex flex-col bg-white">
+                    <!-- Los apartados se inyectan aquí automáticamente -->
+                </div>
+            </div>
+
+            <!-- Botón de siguiente problema -->
+            <button onclick="app.labNext()" class="mt-6 w-full bg-slate-800 hover:bg-slate-900 text-white py-4 rounded-xl font-bold shadow-lg transform active:scale-95 transition flex justify-center items-center gap-2">
+                Siguiente Problema <i class="ph-bold ph-arrow-right"></i>
+            </button>
+        </section>
+
+        <!-- VIEW: FÓRMULAS -->
+        <section id="view-formulas" class="hidden w-full fade-in space-y-6">
+            <div class="mb-6 px-2">
+                <h2 class="text-3xl font-black text-slate-800">Glosario de Fórmulas</h2>
+                <p class="text-slate-500 mt-1">Lista completa de recursos matemáticos</p>
+            </div>
+            
+            <!-- Grid Scrollable para las fórmulas -->
+            <div id="formulas-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-12">
+                <!-- Las fórmulas se inyectarán aquí -->
+            </div>
+        </section>
+
+        <!-- VIEW: RESULTS -->
+        <section id="view-results" class="hidden w-full fade-in text-center py-12">
+            <div class="glass-card p-12 rounded-[3rem] inline-block max-w-md w-full border-2 border-white shadow-2xl">
+                <div class="w-24 h-24 bg-yellow-400 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl shadow-yellow-200">
+                    <i class="ph-fill ph-trophy text-5xl"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold text-slate-800 mb-2">¡Sesión Finalizada!</h2>
+                <p id="result-text" class="text-slate-500 mb-8">Has completado todos los ejercicios.</p>
+
+                <div class="flex flex-col gap-3">
+                    <button id="btn-retry-errors" onclick="app.retryErrors()" class="hidden bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-2xl transition flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-warning-circle"></i> Repasar solo Fallos (<span id="fail-count">0</span>)
+                    </button>
+                    <button onclick="app.showView('home')" class="btn-primary w-full py-4 rounded-2xl uppercase tracking-widest text-sm shadow-md">Menú Principal</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // --- DATOS JSON VACÍOS (Inyectados dinámicamente) ---
+        const jsonTestA = [{"q": "¿Es correcto afirmar que en una distribución con asimetría perfecta, los valores de la media, la mediana y la moda coinciden necesariamente?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 0, "hint": "Considere la definición de simetría perfecta en el eje horizontal.", "explanation": "Según el manual, en casos de simetría perfecta, la media, la mediana y la moda coinciden en el mismo valor central de la distribución."}, {"q": "¿La mediana es un índice estadístico representativo de todos los casos de la variable al igual que la media aritmética?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 1, "hint": "Piense en qué valores utiliza cada índice para su cálculo.", "explanation": "La mediana se centra únicamente en el centro de la distribución y no es representativa de todos los casos, a diferencia de la media aritmética."}, {"q": "¿Un valor elevado de desviación típica ($S_x$) indica una mayor homogeneidad en la concentración de los datos analizados?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 1, "hint": "Relacione el concepto de dispersión con el de heterogeneidad.", "explanation": "Cuanto mayor es el valor de $S_x$, mayor es la dispersión y la heterogeneidad; la homogeneidad implica un valor de $S_x$ menor."}, {"q": "¿El diagrama de tallo y hojas conserva los valores originales de la variable sin agruparlos en intervalos de clase?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 0, "hint": "Considere la función de las 'hojas' en este tipo de representación gráfica.", "explanation": "Una de las ventajas citadas por Losilla (2012) es que conserva los valores originales, permitiendo un análisis más detallado y preciso."}, {"q": "¿En el diagrama de caja y bigotes, el 'bigote' superior representa siempre el valor máximo absoluto de la muestra estudiada?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 1, "hint": "Observe qué sucede cuando existen valores atípicos o extremos en la distribución.", "explanation": "El bigote superior representa el valor máximo 'no atípico'. Los valores atípicos o extremos se representan fuera de los bigotes."}, {"q": "¿Es la curtosis un índice estadístico que describe la forma de la distribución en el eje horizontal de la misma?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 1, "hint": "Diferencie entre el grado de apuntamiento y el grado de simetría de los datos.", "explanation": "La asimetría describe el eje horizontal, mientras que la curtosis describe el grado de apuntamiento en el eje vertical."}, {"q": "¿Para muestras de más de 300 sujetos, se considera que existe un problema de asimetría si la puntuación $Z$ supera $\\pm 3,29$?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 0, "hint": "Los umbrales de significación varían según el tamaño de la muestra ($N$).", "explanation": "Siguiendo a Kim (2013), el umbral de las puntuaciones $Z$ para muestras grandes ($N > 300$) se establece en un valor crítico de $\\pm 3,29$."}, {"q": "¿El coeficiente de variación permite interpretar el resultado en términos de porcentaje de dispersión de los datos observados?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 0, "hint": "Recuerde la utilidad de los índices de dispersión relativa en estadística.", "explanation": "La interpretación del resultado de la variabilidad se hace frecuentemente en términos de porcentaje de dispersión de los datos."}, {"q": "¿La amplitud intercuartil se ve severamente afectada por la presencia de valores extremos en distribuciones muy asimétricas?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 1, "hint": "Analice qué parte de la distribución utiliza el rango intercuartílico ($Q_3 - Q_1$).", "explanation": "La amplitud intercuartílica es un índice robusto que no se ve afectado por los extremos de la distribución de la misma manera que la varianza."}, {"q": "¿Las puntuaciones $Z$ obtenidas para la curtosis que sean inferiores a $-1,96$ indican una distribución de tipo leptocúrtica?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 1, "hint": "Diferencie entre el signo del valor $Z$ y el tipo de aplanamiento resultante.", "explanation": "Valores de $Z \\le -1,96$ indican una distribución platicúrtica (aplanada). La leptocúrtica requiere valores de $Z \\ge 1,96$."}, {"q": "Elegir la afirmación correcta sobre la elección del mejor estadístico de tendencia central según la forma de la distribución:", "options": ["La media es recomendable en asimetría por su alta representatividad poblacional.", "La mediana es preferible en asimetría por ser un estadístico altamente resistente.", "La moda es el índice más preciso para variables cuantitativas con mesocurtosis."], "correct": 1, "hint": "Piense en qué índice se ve menos afectado por valores atípicos.", "explanation": "En distribuciones asimétricas se deben emplear estadísticos más robustos como la mediana, que no se ve afectada por valores atípicos."}, {"q": "Elegir la afirmación correcta respecto a la asimetría negativa en una distribución de datos cuantitativos:", "options": ["La mayor concentración de datos se localiza en las puntuaciones bajas del eje.", "Los casos más distantes del centro se encuentran en la cola baja de la variable.", "La media aritmética tiende a ser superior a la mediana en este tipo de forma."], "correct": 1, "hint": "Visualice hacia qué lado se extiende la 'cola' de la distribución.", "explanation": "En la asimetría negativa, los casos extremos están en la cola baja (izquierda), mientras la concentración está en la parte alta."}, {"q": "Elegir la afirmación correcta sobre la interpretación de la curtosis en términos de apuntamiento vertical:", "options": ["Una distribución platicúrtica presenta colas más delgadas que la curva normal.", "Una distribución mesocúrtica es la que carece de colas y tiene apuntamiento nulo.", "Una distribución leptocúrtica muestra una elevada concentración de datos central."], "correct": 2, "hint": "Relacione el término 'lepto' con la estrechez y altura de la curva.", "explanation": "La distribución leptocúrtica tiene una alta concentración en el centro, lo que resulta en un mayor apuntamiento y colas delgadas."}, {"q": "Elegir la afirmación correcta sobre el uso de representaciones gráficas para variables cualitativas y cuantitativas:", "options": ["El histograma es la transformación del gráfico de barras para datos continuos.", "El gráfico circular es el más recomendado para analizar la asimetría y curtosis.", "El diagrama de tallos y hojas se limita exclusivamente a variables nominales."], "correct": 0, "hint": "Considere la continuidad de las barras en los diferentes tipos de gráficos.", "explanation": "Para variables cuantitativas de datos continuos, el gráfico de barras se transforma en histograma con barras contiguas."}, {"q": "Elegir la afirmación correcta sobre el cálculo de las puntuaciones típicas ($Z$) para los índices de forma:", "options": ["Se obtiene multiplicando el valor del índice por el error estándar de la medida.", "Se obtiene dividiendo el valor de la asimetría o curtosis por su error estándar.", "Se obtiene restando el error estándar al valor observado de la asimetría total."], "correct": 1, "hint": "Revise la fórmula aplicada en el ejemplo de la variable 'edad' del manual.", "explanation": "Las puntuaciones $Z$ se calculan mediante el cociente (división) entre el valor del índice y su respectivo error estándar."}, {"q": "Elegir la afirmación correcta sobre los componentes de la 'caja' en un diagrama de caja y bigotes (boxplot):", "options": ["La línea superior de la caja indica el valor del percentil 90 de la distribución.", "La distancia entre la base y el tope de la caja representa el rango intercuartil.", "La línea central de la caja representa siempre la media aritmética del grupo."], "correct": 1, "hint": "Identifique qué cuartiles delimitan la estructura central del gráfico.", "explanation": "La caja está delimitada por $Q_1$ y $Q_3$; por tanto, su longitud es la amplitud o rango intercuartílico ($Q_3 - Q_1$)."}, {"q": "Elegir la afirmación correcta sobre las recomendaciones generales para describir variables cuantitativas:", "options": ["Informar sobre la asimetría es innecesario si se proporciona la desviación típica.", "Se recomienda informar siempre de un índice de tendencia y uno de dispersión.", "La amplitud total es preferible a la intercuartil en distribuciones asimétricas."], "correct": 1, "hint": "Considere qué información mínima se requiere para una descripción completa.", "explanation": "Como recomendación general, es esencial informar sobre la tendencia central (media/mediana) y la dispersión (desviación/amplitud)."}, {"q": "Elegir la afirmación correcta sobre la identificación de valores atípicos en un diagrama de caja y bigotes:", "options": ["Un valor se considera atípico si está a más de 3 amplitudes intercuartiles del $P_{75}$.", "Un valor se considera extremo si se representa mediante un círculo en el gráfico.", "Un valor es atípico si se sitúa a más de 1,5 amplitudes intercuartiles del $P_{75}$ o $P_{25}$."], "correct": 2, "hint": "Diferencie entre la marca del círculo y la marca del asterisco en el gráfico.", "explanation": "Los casos atípicos se sitúan a más de 1,5 veces el rango intercuartil; los extremos a más de 3 veces dicho rango."}, {"q": "Elegir la afirmación correcta sobre la utilidad del diagrama de tallo y hojas (stem and leaf):", "options": ["Facilita la identificación de lagunas o discontinuidades en los datos reales.", "Sustituye al histograma cuando la muestra es superior a mil sujetos válidos.", "Es el único gráfico capaz de calcular automáticamente la varianza poblacional."], "correct": 0, "hint": "Piense en la ventaja de ver cada caso individual en la distribución.", "explanation": "Al no agrupar datos en intervalos rígidos, permite confirmar visualmente la existencia de saltos o 'gaps' en la distribución."}, {"q": "Elegir la afirmación correcta sobre la robustez de los estadísticos en presencia de casos extremos:", "options": ["La varianza y la desviación típica son índices muy resistentes a la asimetría.", "La media de las desviaciones es más resistente que la desviación típica estándar.", "La amplitud total es el índice de dispersión más robusto ante valores atípicos."], "correct": 1, "hint": "Considere qué índices se basan en la media y cuáles son alternativas para asimetría.", "explanation": "Para distribuciones asimétricas existen índices más resistentes como la media de las desviaciones o la mediana de las desviaciones."}, {"q": "Elegir la afirmación correcta sobre el comportamiento de los estadísticos en una asimetría positiva:", "options": ["El orden de los valores de menor a mayor suele ser: Media < Mediana < Moda.", "El orden de los valores de menor a mayor suele ser: Moda < Mediana < Media.", "El orden de los valores de menor a mayor suele ser: Mediana < Media < Moda."], "correct": 1, "hint": "Observe la posición de los índices respecto a la cola larga de la distribución.", "explanation": "En asimetría positiva, la media es desplazada hacia la derecha (valores altos) por los extremos, siendo superior a la mediana y moda."}, {"q": "Elegir la afirmación correcta sobre la escala de medida y los índices de tendencia central permitidos:", "options": ["En variables cualitativas, la moda es el único índice de tendencia utilizable.", "En variables cuasicuantitativas, la media es el índice de elección preferente.", "En escalas cuantitativas, la moda carece de valor informativo para el analista."], "correct": 0, "hint": "Considere las restricciones matemáticas de las categorías no numéricas.", "explanation": "La moda es el único índice que puede usarse en variables cualitativas, ya que no requiere cálculos aritméticos con los datos."}, {"q": "Elegir la afirmación correcta sobre las pruebas paramétricas y el supuesto de normalidad:", "options": ["La normalidad se cumple exclusivamente cuando la asimetría es exactamente cero.", "El cumplimiento de la normalidad facilita el uso de análisis estadísticos potentes.", "Las pruebas paramétricas son recomendables cuando la curtosis es muy elevada."], "correct": 1, "hint": "Relacione la forma de la distribución con la potencia de los análisis posteriores.", "explanation": "La normalidad facilita la precisión y permite aplicar métodos más potentes conocidos como pruebas paramétricas."}, {"q": "Elegir la afirmación correcta sobre la representatividad de la media aritmética según el manual:", "options": ["Es representativa porque considera todos los datos pero es sensible a extremos.", "Es poco representativa porque solo utiliza los valores centrales de la muestra.", "Es un índice resistente que garantiza fiabilidad en distribuciones asimétricas."], "correct": 0, "hint": "Analice la dualidad entre usar toda la información y la vulnerabilidad a outliers.", "explanation": "La media considera todos los datos, lo que le da representatividad, pero la hace demasiado sensible a casos extremos."}, {"q": "Elegir la afirmación correcta sobre la visualización de la curtosis en comparación con la curva normal:", "options": ["La distribución platicúrtica se caracteriza por tener colas moderadamente gruesas.", "La distribución leptocúrtica presenta colas más delgadas que la normal estándar.", "La distribución mesocúrtica muestra un aplanamiento mayor que la platicúrtica."], "correct": 1, "hint": "Piense en la forma que adquieren las colas cuando el centro está muy apuntado.", "explanation": "La leptocúrtica tiene una alta concentración central, lo que deriva en un mayor apuntamiento y colas más delgadas."}, {"q": "Elegir la afirmación incorrecta sobre la desviación típica ($S_x$) como índice de dispersión:", "options": ["Mide cuánto se desvían los datos de la variable respecto al promedio o media.", "Un valor mayor de $S_x$ indica que los datos son más homogéneos entre sí.", "Un valor menor de $S_x$ señala una mayor concentración de datos en el centro."], "correct": 1, "hint": "Recuerde qué significa una mayor desviación respecto a la media.", "explanation": "Es incorrecto; un valor mayor de $S_x$ indica mayor dispersión y, por ende, mayor heterogeneidad (menos homogeneidad)."}, {"q": "Elegir la afirmación incorrecta sobre los índices de tendencia central en distribuciones asimétricas:", "options": ["La media aritmética pierde precisión como medida de tendencia central válida.", "La mediana se ve severamente afectada por la dirección de la asimetría final.", "La diferencia entre media, mediana y moda aumenta al aumentar la asimetría."], "correct": 1, "hint": "Considere la propiedad de resistencia de los estadísticos de orden.", "explanation": "Es incorrecto; la mediana es un índice robusto que NO se ve afectado por la asimetría o por los valores atípicos."}, {"q": "Elegir la afirmación incorrecta sobre la amplitud total (rango) como medida de dispersión:", "options": ["Se recomienda su elección principalmente en distribuciones de tipo simétrico.", "Proporciona información sobre el grado de desviación de los datos individuales.", "Es sensible a la presencia de casos extremos en variables con alta asimetría."], "correct": 1, "hint": "Diferencie entre amplitud (distancia máxima) y desviación (promedio de distancias).", "explanation": "Es incorrecto; la amplitud informa sobre la extensión total de la distribución, no sobre el grado de desviación de los datos."}, {"q": "Elegir la afirmación incorrecta respecto al uso de la mediana según los objetivos del estudio:", "options": ["Es la opción más común cuando se busca un índice resistente a valores atípicos.", "Se recomienda su uso en variables cualitativas puras como el sexo o la ciudad.", "Es el índice de tendencia central que divide a la distribución en dos partes iguales."], "correct": 1, "hint": "Revise los niveles de medida requeridos para calcular la mediana.", "explanation": "Es incorrecto; la mediana requiere al menos un orden (escala ordinal/cuasicuantitativa) y no se usa en variables cualitativas nominales."}, {"q": "Elegir la afirmación incorrecta sobre la interpretación de puntuaciones $Z$ para la asimetría:", "options": ["Valores de $Z$ comprendidos dentro del intervalo $\\pm 1,96$ sugieren simetría.", "Valores de $Z$ superiores a $1,96$ señalan una clara asimetría de tipo negativa.", "Valores de $Z$ inferiores a $-1,96$ indican que los datos tienen asimetría negativa."], "correct": 1, "hint": "Relacione el signo del valor $Z$ con la dirección de la asimetría.", "explanation": "Es incorrecto; valores $Z \\ge 1,96$ indican asimetría POSITIVA, no negativa."}, {"q": "Elegir la afirmación incorrecta sobre el diagrama de caja y bigotes (boxplot) y sus elementos:", "options": ["El primer cuartil ($Q_1$) señala el valor por debajo del cual está el 25% de datos.", "La mediana ($P_{50}$) se representa con una línea más delgada que los cuartiles.", "Los valores extremos se representan con asteriscos fuera del rango de bigotes."], "correct": 1, "hint": "Observe el grosor de las líneas en las representaciones gráficas del manual.", "explanation": "Es incorrecto; la mediana se señala con una línea MÁS GRUESA dentro de la caja para destacar su importancia."}, {"q": "Elegir la afirmación incorrecta sobre el diagrama de tallo y hojas (stem and leaf):", "options": ["El tallo representa el dígito inicial de los valores y marca el inicio del intervalo.", "La hoja representa un caso individual situado después del punto separador.", "Cada hoja representa siempre un conjunto de diez sujetos con el mismo valor."], "correct": 2, "hint": "Recuerde qué representa cada unidad individual en la sección de 'hojas'.", "explanation": "Es incorrecto; cada hoja representa un caso individual (un solo sujeto), no un conjunto de diez sujetos."}, {"q": "Elegir la afirmación incorrecta sobre la simetría y su evaluación visual y objetiva:", "options": ["La asimetría es un índice que informa sobre la distribución por encima del centro.", "La evaluación visual es siempre suficiente para concluir sobre la normalidad.", "Los índices de asimetría obtenidos por software aportan datos mucho más objetivos."], "correct": 1, "hint": "Piense en si el ojo humano puede detectar desviaciones leves de la curva normal.", "explanation": "Es incorrecto; el manual indica que la asimetría puede no ser evidente a simple vista y requiere análisis objetivos."}, {"q": "Elegir la afirmación incorrecta sobre la relación entre histograma y diagrama de tallo y hojas:", "options": ["Ambos gráficos permiten estudiar la forma general de la distribución de datos.", "El histograma aporta un mayor nivel de detalle sobre los valores individuales.", "El histograma utiliza barras para mostrar el agrupamiento de los casos válidos."], "correct": 1, "hint": "Compare cuál de los dos permite ver el valor exacto de cada sujeto.", "explanation": "Es incorrecto; el histograma NO aporta información individual, nivel de detalle que sí posee el diagrama de tallo y hojas."}, {"q": "Elegir la afirmación incorrecta sobre la curtosis y su clasificación técnica:", "options": ["Una distribución platicúrtica es más aplanada que una distribución normal.", "Una distribución mesocúrtica presenta colas extremadamente gruesas y largas.", "Una distribución leptocúrtica presenta colas más delgadas que la curva normal."], "correct": 1, "hint": "Recuerde que la mesocúrtica es la referencia de la distribución normal.", "explanation": "Es incorrecto; la mesocúrtica tiene colas MODERADAMENTE gruesas, no extremadamente gruesas ni largas."}, {"q": "Elegir la afirmación incorrecta sobre la varianza como índice de dispersión:", "options": ["Aporta resultados en una métrica distinta a la de la variable original medida.", "Es un índice muy recomendable para distribuciones con alta asimetría positiva.", "Sufre mucho ante la presencia de casos extremos al apoyarse en el cálculo de la media."], "correct": 1, "hint": "Piense en la sensibilidad de los índices basados en la media aritmética.", "explanation": "Es incorrecto; la varianza NO es recomendable en distribuciones asimétricas por su sensibilidad a valores extremos."}, {"q": "Elegir la afirmación incorrecta sobre la interpretación de una puntuación $Z$ de asimetría de $27,44$:", "options": ["Indica que la distribución de los datos es significativamente asimétrica.", "Señala que la mayoría de los datos se concentran en las puntuaciones altas.", "Muestra una asimetría positiva notoria al superar el límite superior de $1,96$."], "correct": 1, "hint": "Relacione la asimetría positiva con la zona de concentración de la mayoría de sujetos.", "explanation": "Es incorrecto; una asimetría positiva indica que la mayoría de datos están en las puntuaciones BAJAS (izquierda)."}, {"q": "Elegir la afirmación incorrecta sobre los gráficos recomendados según el tipo de variable (Tabla 16):", "options": ["Para variables cualitativas se recomiendan gráficos circulares y de barras.", "Para variables cuantitativas normales se recomienda el diagrama de densidad.", "Para variables cuasicuantitativas se recomienda el diagrama de tallo y hojas."], "correct": 1, "hint": "Revise qué gráficos se asocian a distribuciones no normales en el manual.", "explanation": "Es incorrecto; el diagrama de densidad y de caja se recomiendan para variables NO distribuidas normalmente."}, {"q": "Elegir la afirmación incorrecta sobre la descripción completa de una distribución:", "options": ["Requiere prestar atención a la tendencia central, la dispersión y la forma.", "La forma de la distribución es irrelevante para elegir los análisis inferenciales.", "Incluye evaluar el grado de simetría y el agrupamiento en los extremos (curtosis)."], "correct": 1, "hint": "Piense en la importancia de la normalidad para las pruebas estadísticas posteriores.", "explanation": "Es incorrecto; comprender la forma es crucial para determinar qué estadísticos y análisis (paramétricos/no paramétricos) son apropiados."}, {"q": "Elegir la afirmación incorrecta sobre la mediana de las desviaciones como índice estadístico:", "options": ["Es un índice más resistente que la desviación típica en distribuciones asimétricas.", "Se recomienda su uso cuando se detecta la presencia de valores atípicos severos.", "Es el índice de elección obligatorio para variables cuantitativas con normalidad."], "correct": 2, "hint": "Considere qué índice es el estándar cuando se cumple el supuesto de normalidad.", "explanation": "Es incorrecto; si hay normalidad, el índice de elección suele ser la desviación típica, no la mediana de las desviaciones."}];
+        const jsonTestB = [{"q": "En distribuciones con fuerte asimetría, el índice de tendencia central que se considera más ____ por su resistencia a valores atípicos es la mediana.", "options": ["Estadísticamente robusto", "Estadísticamente sesgado", "Estadísticamente volátil"], "correct": 0, "hint": "Busca el término que define la invulnerabilidad de un estadístico ante casos extremos.", "explanation": "La mediana es un índice robusto porque su cálculo no depende de la magnitud de los valores extremos, a diferencia de la $$\\bar{x}$$."}, {"q": "La desviación típica ($S_{x}$) indica una mayor heterogeneidad de los datos cuando su valor es ____.", "options": ["Significativamente alto", "Significativamente bajo", "Cercano al valor cero"], "correct": 0, "hint": "Relaciona la dispersión con la distancia promedio a la media.", "explanation": "Un valor elevado de $S_{x}$ implica que los datos están muy dispersos respecto a la media, aumentando la heterogeneidad."}, {"q": "Al calcular el valor $Z$ para la asimetría con un valor de $0,878$ y un error estándar de $0,032$, el resultado obtenido es ____.", "options": ["$Z_{asimetría} = 27,44$", "$Z_{asimetría} = 0,028$", "$Z_{asimetría} = 2,744$"], "correct": 0, "hint": "Aplica el cociente directo entre el estadístico y su error estándar.", "explanation": "El cálculo correcto es $$\\frac{0,878}{0,032} = 27,4375$$, que redondeado a dos decimales resulta en $27,44$."}, {"q": "En un diagrama de cajas y bigotes, el 'bigote inferior' representa el ____ siempre que no existan valores atípicos inferiores.", "options": ["Valor mínimo observado", "Primer cuartil ($Q_{1}$)", "Valor de la media ($X$)"], "correct": 0, "hint": "Identifica el límite físico inferior de la representación gráfica lineal.", "explanation": "El bigote inferior se extiende hasta el valor mínimo no atípico de la distribución de datos."}, {"q": "Para una muestra de $N=250$ sujetos, el umbral crítico de la puntuación $Z$ para detectar asimetría significativa es ____.", "options": ["$\\pm 2,58$ unidades Z", "$\\pm 1,96$ unidades Z", "$\\pm 3,29$ unidades Z"], "correct": 0, "hint": "Considera el rango de muestra intermedio (50-300 sujetos) según Kim (2013).", "explanation": "Para muestras entre 50 y 300 sujetos, los valores críticos de $Z$ se sitúan en $\\pm 2,58$."}, {"q": "Una distribución se clasifica como ____ si presenta un elevado apuntamiento y colas más delgadas que la curva normal.", "options": ["De tipo leptocúrtica", "De tipo platicúrtica", "De tipo mesocúrtica"], "correct": 0, "hint": "Asocia el prefijo 'lepto-' con la concentración central de datos.", "explanation": "Las distribuciones leptocúrticas tienen una alta concentración en el centro, superando la elevación de la normal."}, {"q": "El estadístico que se obtiene dividiendo la curtosis ($-0,320$) por su error estándar ($0,065$) indica una distribución ____.", "options": ["Claramente platicúrtica", "Claramente leptocúrtica", "Claramente mesocúrtica"], "correct": 0, "hint": "Realiza la división y observa el signo del resultado final.", "explanation": "El cálculo es $-0,320 / 0,065 = -4,92$. Al ser menor que $-1,96$, la distribución es platicúrtica."}, {"q": "En el diagrama de tallo y hojas, cada 'hoja' representa ____ dentro del intervalo definido por el tallo.", "options": ["Un caso individualizado", "Una frecuencia agrupada", "Un promedio del grupo"], "correct": 0, "hint": "Recuerda que este gráfico no pierde la identidad de los datos originales.", "explanation": "A diferencia del histograma, cada hoja en este diagrama representa un valor específico u observación única."}, {"q": "Cuando una distribución presenta asimetría negativa, la relación correcta entre sus estadísticos es ____.", "options": ["$Mo > Mdn > \\bar{X}$", "$\\bar{X} > Mdn > Mo$", "$\\bar{X} = Mdn = Mo$"], "correct": 0, "hint": "Visualiza hacia dónde se extiende la 'cola' más larga de la distribución.", "explanation": "En asimetría negativa, la media es desplazada hacia la izquierda por los valores bajos, quedando por debajo de la mediana."}, {"q": "La amplitud intercuartil ($Atc$) se calcula mediante la fórmula ____ y es útil en distribuciones asimétricas.", "options": ["$Atc = Q_{3} - Q_{1}$", "$Atc = Q_{1} - Q_{3}$", "$Atc = Q_{3} + Q_{1}$"], "correct": 0, "hint": "Es la diferencia que define el 'cuerpo' central del 50% de los datos.", "explanation": "El rango intercuartílico es la resta del tercer cuartil menos el primero: $Q_{3} - Q_{1}$."}, {"q": "Un valor atípico en un diagrama de caja se define como aquel situado a más de ____ amplitudes intercuartiles del $Q_{1}$ o $Q_{3}$.", "options": ["$1,5$ veces la amplitud", "$3,0$ veces la amplitud", "$2,5$ veces la amplitud"], "correct": 0, "hint": "Es el criterio estándar para los 'outliers' moderados representados por círculos.", "explanation": "Se considera atípico (círculo) si está a más de $1,5 \\times IQR$, y extremo (asterisco) si supera las $3 \\times IQR$."}, {"q": "Si en un estudio buscamos la máxima representatividad de todos los datos y la distribución es simétrica, utilizaremos ____.", "options": ["La media aritmética", "La mediana robusta", "La moda unimodal"], "correct": 0, "hint": "Es el estadístico que utiliza la totalidad de la información numérica de la variable.", "explanation": "En simetría, la media es el índice más eficiente y representativo al considerar cada valor de la serie."}, {"q": "El componente del diagrama de tallo y hojas que representa las decenas (en valores de dos dígitos) se denomina ____.", "options": ["Tallo (o stem)", "Hoja (o leaf)", "Rango (o width)"], "correct": 0, "hint": "Es la parte que se sitúa a la izquierda del separador visual.", "explanation": "El tallo (stem) agrupa los dígitos iniciales que definen los intervalos de la distribución."}, {"q": "Para variables cuantitativas con valores continuos y gran número de casos, se recomienda el uso de ____.", "options": ["Gráficas de densidad", "Gráficos circulares", "Gráficos de sectores"], "correct": 0, "hint": "Es una versión suavizada del histograma para variables continuas.", "explanation": "Las gráficas de densidad permiten visualizar la distribución de variables continuas de forma fluida y precisa."}, {"q": "En SPSS, el procedimiento que permite obtener todos los índices descriptivos y gráficos en una sola ejecución es ____.", "options": ["La función Explorar", "La función Frecuencia", "La función Correlación"], "correct": 0, "hint": "Es una herramienta integral del menú Estadísticos Descriptivos.", "explanation": "La función 'Explorar' genera tablas de tendencia central, dispersión, forma y gráficos como el de caja simultáneamente."}, {"q": "La curtosis mesocúrtica se caracteriza por una puntuación $Z$ que se sitúa ____.", "options": ["Dentro de $\\pm 1,96$", "Por encima de $+1,96$", "Por debajo de $-1,96$"], "correct": 0, "hint": "Es el estado de 'normalidad' vertical de la curva.", "explanation": "Si el valor $Z$ está en el intervalo $[-1,96, 1,96]$, no se rechaza la hipótesis de mesocurtosis."}, {"q": "Si la mediana es $26,00$ y la media es $29,69$, la distribución presenta una ____.", "options": ["Asimetría positiva", "Asimetría negativa", "Simetría perfecta"], "correct": 0, "hint": "Compara si la media es mayor o menor que el punto central (mediana).", "explanation": "Al ser $\\bar{X} > Mdn$, existe un sesgo hacia la derecha provocado por valores altos (asimetría positiva)."}, {"q": "La varianza tiene el inconveniente de que sus resultados se expresan en ____ de la variable original.", "options": ["Unidades al cuadrado", "Unidades logarítmicas", "Unidades porcentuales"], "correct": 0, "hint": "Recuerda que la desviación típica es su raíz cuadrada para volver a la métrica original.", "explanation": "La varianza eleva las desviaciones al cuadrado, lo que dificulta la interpretación directa frente a la desviación típica."}, {"q": "Un valor $Z$ de asimetría igual a $-27,44$ indica una concentración de datos en las puntuaciones ____.", "options": ["Altas de la escala", "Bajas de la escala", "Medias de la escala"], "correct": 0, "hint": "En asimetría negativa, la 'montaña' de datos está en el lado opuesto a la cola.", "explanation": "La asimetría negativa implica que la mayor parte de los casos se agrupan en los valores altos (derecha)."}, {"q": "En el diagrama de tallo y hojas, si el ancho del tallo es $10,00$ y el tallo es $2$, una hoja con valor $3$ representa el número ____.", "options": ["Valor de veintitrés", "Valor de treinta y dos", "Valor de cinco"], "correct": 0, "hint": "Combina el dígito del tallo con el de la hoja respetando su posición decimal.", "explanation": "La unión del tallo (2 decenas) y la hoja (3 unidades) resulta en la puntuación individual de 23."}, {"q": "Para garantizar resultados fiables en una investigación, es aconsejable informar simultáneamente sobre ____.", "options": ["Media, DT y asimetría", "Mediana, amplitud e IQR", "Todas son correctas"], "correct": 2, "hint": "La descripción completa requiere tendencia central, dispersión y forma.", "explanation": "El manual recomienda informar de un índice de cada categoría para una comprensión exhaustiva de la distribución."}, {"q": "El cumplimiento del supuesto de normalidad es un requisito fundamental para ____.", "options": ["Pruebas paramétricas", "Precisión de la media", "Todas son correctas"], "correct": 2, "hint": "La normalidad afecta tanto a la validez de los estadísticos como a la elección del test inferencial.", "explanation": "La normalidad permite usar la media como centro fiable y habilita el uso de potentes análisis paramétricos."}, {"q": "Los índices de forma (asimetría y curtosis) son relevantes porque permiten ____.", "options": ["Elegir el mejor centro", "Detectar casos extremos", "Todas son correctas"], "correct": 2, "hint": "La forma condiciona la representatividad de la media y la visibilidad de los outliers.", "explanation": "Conocer la asimetría y curtosis ayuda a decidir entre media o mediana y a identificar sesgos por outliers."}, {"q": "Un histograma se diferencia de un gráfico de barras tradicional en que ____.", "options": ["Indica continuidad real", "Las barras son contiguas", "Todas son correctas"], "correct": 2, "hint": "Piensa en la naturaleza de las variables cuantitativas frente a las cualitativas.", "explanation": "El histograma une las barras para reflejar que los datos pertenecen a una escala cuantitativa continua."}, {"q": "El diagrama de cajas y bigotes proporciona información visual inmediata sobre ____.", "options": ["La tendencia central", "El rango intercuartil", "Todas son correctas"], "correct": 2, "hint": "Este gráfico resume los cinco números estadísticos clave.", "explanation": "Muestra la mediana (línea interna), la dispersión (caja y bigotes) y la forma de la distribución."}, {"q": "La elección de la mediana como estadístico de tendencia central es preferible cuando ____.", "options": ["Hay asimetría marcada", "Hay valores muy extremos", "Todas son correctas"], "correct": 2, "hint": "Se busca un índice que no se vea arrastrado por valores atípicos.", "explanation": "La mediana es robusta y no se ve afectada por la magnitud de casos aislados o colas alargadas."}, {"q": "Entre las ventajas del diagrama de tallo y hojas destaca que ____.", "options": ["Conserva valores reales", "Identifica discontinuidad", "Todas son correctas"], "correct": 2, "hint": "Es un híbrido entre una tabla de frecuencias y un gráfico.", "explanation": "Permite ver cada dato original y detectar 'lagunas' o saltos en la distribución de la muestra."}, {"q": "Una distribución perfectamente simétrica cumple necesariamente que ____.", "options": ["$Z_{asimetría}$ es igual a 0", "$\\bar{X} = Mdn = Mo$", "Todas son correctas"], "correct": 2, "hint": "Es el caso ideal donde la distribución es un espejo respecto al centro.", "explanation": "En simetría perfecta, los tres índices coinciden y los cálculos de asimetría resultan nulos."}, {"q": "Para analizar la dispersión en variables que no siguen una distribución normal, se recomienda usar ____.", "options": ["La amplitud intercuartil", "Mediana de desviaciones", "Todas son correctas"], "correct": 2, "hint": "Se requieren índices no basados en la media aritmética.", "explanation": "Tanto el IQR como la mediana de desviaciones son medidas de dispersión robustas ante la falta de normalidad."}, {"q": "El error estándar en los índices de forma es crucial porque ____.", "options": ["Permite calcular la $Z$", "Indica la precisión del índice", "Todas son correctas"], "correct": 2, "hint": "Sin este denominador no podríamos estandarizar el valor de asimetría o curtosis.", "explanation": "El error estándar mide la variabilidad del índice y es la base para las puntuaciones típicas $Z$."}, {"q": "Si una variable es cualitativa nominal, el estadístico de tendencia central que debemos utilizar es ____.", "options": ["La media aritmética", "La mediana robusta", "Ninguna es correcta"], "correct": 2, "hint": "Recuerda qué estadístico es el único válido para categorías sin orden.", "explanation": "Para variables nominales, el único índice de tendencia central aplicable es la moda; media y mediana requieren orden."}, {"q": "En una distribución leptocúrtica con $Z = 5,0$, la representación gráfica mostrará ____.", "options": ["Un gran aplanamiento", "Colas muy gruesas", "Ninguna es correcta"], "correct": 2, "hint": "El prefijo 'lepto-' significa delgado o estrecho, no plano.", "explanation": "Las leptocúrticas son apuntadas y tienen colas delgadas; las opciones describen lo contrario (platicurtosis)."}, {"q": "Al calcular $Z$ para una curtosis de $0,50$ con un error de $0,10$, la distribución es ____.", "options": ["De tipo mesocúrtica", "De tipo platicúrtica", "Ninguna es correcta"], "correct": 2, "hint": "Calcula el valor $Z$ y compáralo con el límite de $1,96$.", "explanation": "$Z = 0,5 / 0,1 = 5,0$. Al ser $> 1,96$, es leptocúrtica. Ninguna de las opciones ofrecidas es válida."}, {"q": "El rango total de una distribución se define como ____.", "options": ["La suma de todos los datos", "El promedio de los extremos", "Ninguna es correcta"], "correct": 2, "hint": "Es la distancia entre el valor máximo y el mínimo.", "explanation": "El rango o amplitud total es la diferencia (resta) entre el valor máximo y el mínimo observados."}, {"q": "Si el primer cuartil es $40$ y el tercero es $60$, un valor de $100$ se considera ____.", "options": ["Un valor no atípico", "Un valor atípico leve", "Ninguna es correcta"], "correct": 2, "hint": "Calcula el $IQR$ y luego el límite para valores extremos ($3 \\times IQR$).", "explanation": "$IQR=20$. Límite extremo: $60 + (3 \\times 20) = 120$. Límite atípico: $60 + (1,5 \\times 20) = 90$. Es un atípico leve."}, {"q": "En una distribución con asimetría positiva de $2,0$, la mediana siempre será ____.", "options": ["Superior a la media", "Igual a la moda", "Ninguna es correcta"], "correct": 2, "hint": "Revisa la jerarquía de los índices en distribuciones sesgadas a la derecha.", "explanation": "En asimetría positiva, la jerarquía suele ser $Mo < Mdn < \\bar{X}$. Por tanto, la mediana es inferior a la media."}, {"q": "Un diagrama de sectores (o circular) es el gráfico recomendado para representar ____.", "options": ["Variables cuantitativas", "Variables de intervalo", "Ninguna es correcta"], "correct": 2, "hint": "Estos gráficos se usan para frecuencias de categorías sin métrica numérica.", "explanation": "Se recomiendan para variables cualitativas; las opciones mencionan escalas cuantitativas donde se usan histogramas."}, {"q": "La desviación típica se calcula como ____.", "options": ["El cuadrado de la varianza", "La suma de los datos / N", "Ninguna es correcta"], "correct": 2, "hint": "Es la operación inversa a elevar al cuadrado.", "explanation": "La desviación típica es la raíz cuadrada de la varianza, no su cuadrado ni el promedio simple."}, {"q": "Para una muestra de $N=10$, se considera asimetría significativa si $|Z|$ supera ____.", "options": ["El valor de $2,58$", "El valor de $3,29$", "Ninguna es correcta"], "correct": 2, "hint": "Busca el umbral para muestras pequeñas (menos de 50 sujetos).", "explanation": "Para $N < 50$, el umbral crítico es $\\pm 1,96$. Ninguna opción coincide con este valor estándar."}, {"q": "El percentil 75 ($P_{75}$) es equivalente al estadístico ____.", "options": ["Primer cuartil ($Q_{1}$)", "Segundo cuartil ($Q_{2}$)", "Ninguna es correcta"], "correct": 2, "hint": "Divide la distribución en cuatro partes iguales.", "explanation": "El $P_{75}$ equivale al tercer cuartil ($Q_{3}$), mientras que $Q_{1}$ es $P_{25}$ y $Q_{2}$ es la mediana."}];
+        const jsonLaboratorio = [{"id": 1, "title": "Evaluación de Asimetría en Muestras Pequeñas", "context": "Un investigador analiza el tiempo de reacción de $N = 40$ sujetos. El software estadístico reporta un valor de asimetría de $0,85$ con un error estándar de $0,32$. Se aplica la fórmula: $$Z_{asimetría} = \\frac{asimetría}{error\\,estándar}$$", "parts": [{"id": "p1a", "label": "a)", "question": "Calcule el valor de la puntuación típica $Z$ para la asimetría.", "correctValue": 2.65, "tolerance": 0.01, "explanation": "$$Z = \\frac{0,85}{0,32} = 2,65625$$"}, {"id": "p1b", "label": "b)", "question": "Según Field (2024), para $N < 50$, ¿cuál es el valor absoluto crítico que indica problemas de asimetría?", "correctValue": 1.96, "tolerance": 0, "explanation": "$$|Z| > 1,96$$ es el umbral para muestras menores de 50 sujetos."}, {"id": "p1c", "label": "c)", "question": "Determine el tipo de asimetría. Responda con 1 si es Positiva, -1 si es Negativa o 0 si es Simétrica.", "correctValue": 1, "tolerance": 0, "explanation": "Como $2,65 > 1,96$, la asimetría es significativa y positiva."}, {"id": "p1d", "label": "d)", "question": "Si la media es $12$ y la mediana es $10$, ¿cuál es el valor de la diferencia (Media - Mediana)?", "correctValue": 2, "tolerance": 0.1, "explanation": "$$12 - 10 = 2$$"}]}, {"id": 2, "title": "Análisis de Curtosis y Apuntamiento", "context": "En un estudio de $N = 150$ estudiantes, se mide la extraversión. Los resultados muestran una curtosis de $-1,20$ con un error estándar de $0,40$. Para $50 < N < 300$, el umbral crítico es $\\pm 2,58$. $$Z_{curtosis} = \\frac{curtosis}{error\\,estándar}$$", "parts": [{"id": "p2a", "label": "a)", "question": "Calcule el valor de $Z$ para la curtosis.", "correctValue": -3, "tolerance": 0, "explanation": "$$Z = \\frac{-1,20}{0,40} = -3,0$$"}, {"id": "p2b", "label": "b)", "question": "Determine el tipo de distribución según su verticalidad. Responda con 1 para Leptocúrtica, 2 para Mesocúrtica o 3 para Platicúrtica.", "correctValue": 3, "tolerance": 0, "explanation": "Como $Z = -3,0$ (menor a $-2,58$), la distribución es platicúrtica."}, {"id": "p2c", "label": "c)", "question": "Si el rango intercuartil es de $15$ unidades, ¿cuál es la distancia entre el primer y tercer cuartil?", "correctValue": 15, "tolerance": 0, "explanation": "La amplitud intercuartil es precisamente la diferencia $Q_3 - Q_1$."}, {"id": "p2d", "label": "d)", "question": "Si el umbral crítico fuera $1,96$, ¿cuántas unidades de desviación estándar ($Z$) se aleja nuestro resultado de dicho límite?", "correctValue": 1.04, "tolerance": 0.01, "explanation": "$$| -3 | - 1,96 = 1,04$$"}]}, {"id": 3, "title": "Detección de Casos Atípicos (Outliers)", "context": "Se presenta un diagrama de caja de inteligencia emocional. El primer cuartil ($Q_1$) es $25$, el tercer cuartil ($Q_3$) es $39$. Se definen atípicos si superan $1,5$ veces el rango intercuartil ($RIC$) desde los cuartiles. $$RIC = Q_3 - Q_1$$", "parts": [{"id": "p3a", "label": "a)", "question": "Calcule la amplitud intercuartil ($RIC$).", "correctValue": 14, "tolerance": 0, "explanation": "$$39 - 25 = 14$$"}, {"id": "p3b", "label": "b)", "question": "Calcule el valor límite superior para considerar un caso como atípico ($Q_3 + 1,5 \\times RIC$).", "correctValue": 60, "tolerance": 0, "explanation": "$$39 + (1,5 \\times 14) = 39 + 21 = 60$$"}, {"id": "p3c", "label": "c)", "question": "Calcule el valor límite inferior para casos atípicos ($Q_1 - 1,5 \\times RIC$).", "correctValue": 4, "tolerance": 0, "explanation": "$$25 - 21 = 4$$"}, {"id": "p3d", "label": "d)", "question": "Si un sujeto tiene una puntuación de $73$, ¿cuántas veces el $RIC$ se aleja de $Q_3$? (Calcule $(73 - Q_3) / RIC$)", "correctValue": 2.43, "tolerance": 0.01, "explanation": "$$(73 - 39) / 14 = 34 / 14 = 2,428...$$"}]}, {"id": 4, "title": "Interpretación de Diagramas de Tallo y Hojas", "context": "Un diagrama de tallo y hojas muestra los siguientes datos en una fila: 'Tallo 2 . Hojas 012223344444'. El ancho del tallo es $10$ y cada hoja representa $1$ caso.", "parts": [{"id": "p4a", "label": "a)", "question": "¿Cuál es la frecuencia de sujetos en este tallo?", "correctValue": 12, "tolerance": 0, "explanation": "Contando las hojas: 0, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4 suman 12 casos."}, {"id": "p4b", "label": "b)", "question": "¿Cuál es el valor individual más alto representado en esta fila específica?", "correctValue": 24, "tolerance": 0, "explanation": "Tallo 2 y hoja 4 forman el valor 24."}, {"id": "p4c", "label": "c)", "question": "¿Cuántos sujetos tienen exactamente el valor 22?", "correctValue": 3, "tolerance": 0, "explanation": "Hay tres hojas con el dígito '2' en el tallo '2'."}, {"id": "p4d", "label": "d)", "question": "Si sumamos todos los valores de esta fila, ¿cuál es el resultado?", "correctValue": 271, "tolerance": 0, "explanation": "$$20+21+(3 \\times 22)+(2 \\times 23)+(5 \\times 24) = 20+21+66+46+120 = 271$$"}]}, {"id": 5, "title": "Estadísticos de Forma en Grandes Muestras", "context": "Para una muestra de $N = 5687$ sujetos (Figura 17), los valores son: Asimetría = $0,878$, Error Estándar Asimetría = $0,032$, Curtosis = $-0,320$, Error Estándar Curtosis = $0,065$. Para $N > 300$, el umbral crítico es $\\pm 3,29$.", "parts": [{"id": "p5a", "label": "a)", "question": "Calcule el $Z$ de asimetría.", "correctValue": 27.44, "tolerance": 0.01, "explanation": "$$Z = 0,878 / 0,032 = 27,4375$$"}, {"id": "p5b", "label": "b)", "question": "Calcule el $Z$ de curtosis.", "correctValue": -4.92, "tolerance": 0.01, "explanation": "$$Z = -0,320 / 0,065 = -4,923...$$"}, {"id": "p5c", "label": "c)", "question": "¿La distribución cumple el supuesto de normalidad? Responda 1 para SÍ, 0 para NO.", "correctValue": 0, "tolerance": 0, "explanation": "Ambos valores $Z$ superan el umbral de $3,29$, por lo que no es normal."}, {"id": "p5d", "label": "d)", "question": "Si la media es $29,69$ y el error típico es $0,2$, ¿cuál es el coeficiente de variación en % si la desviación típica fuera $15$? ($CV = (S / \\bar{x}) \\times 100$)", "correctValue": 50.52, "tolerance": 0.1, "explanation": "$$(15 / 29,69) \\times 100 = 50,522...$$"}]}, {"id": 6, "title": "Selección del Mejor Estadístico de Tendencia", "context": "Una variable presenta asimetría positiva extrema. Media = $55$, Mediana = $42$, Moda = $30$. El manual recomienda usar el estadístico más robusto ante asimetría.", "parts": [{"id": "p6a", "label": "a)", "question": "¿Cuál es el valor del estadístico recomendado según la Tabla 16?", "correctValue": 42, "tolerance": 0, "explanation": "En distribuciones no normales/asimétricas se recomienda la mediana."}, {"id": "p6b", "label": "b)", "question": "¿Cuál es el valor de la amplitud total si el máximo es $100$ y el mínimo es $10$?", "correctValue": 90, "tolerance": 0, "explanation": "$$100 - 10 = 90$$"}, {"id": "p6c", "label": "c)", "question": "¿Cuál es la diferencia entre la media y la moda?", "correctValue": 25, "tolerance": 0, "explanation": "$$55 - 30 = 25$$"}, {"id": "p6d", "label": "d)", "question": "En una distribución simétrica perfecta, si la media es $55$, ¿cuál sería el valor de la mediana?", "correctValue": 55, "tolerance": 0, "explanation": "En simetría, media = mediana = moda."}]}, {"id": 7, "title": "Análisis de Dispersión: Desviación Típica", "context": "La desviación típica ($S_x$) mide cuánto se desvían los datos respecto al promedio. Se analizan dos grupos: Grupo A ($S_x = 4,2$) y Grupo B ($S_x = 8,9$).", "parts": [{"id": "p7a", "label": "a)", "question": "¿Cuál es la varianza del Grupo A? ($Varianza = S_x^2$)", "correctValue": 17.64, "tolerance": 0.01, "explanation": "$$4,2^2 = 17,64$$"}, {"id": "p7b", "label": "b)", "question": "¿Cuántas veces es más disperso el Grupo B respecto al A en términos de desviación típica? ($8,9 / 4,2$)", "correctValue": 2.12, "tolerance": 0.1, "explanation": "$$8,9 / 4,2 = 2,119...$$"}, {"id": "p7c", "label": "c)", "question": "Si al Grupo A le sumamos una constante de $+5$ a cada dato, ¿cuál será su nueva desviación típica?", "correctValue": 4.2, "tolerance": 0, "explanation": "Sumar una constante no altera la dispersión."}, {"id": "p7d", "label": "d)", "question": "Si el Grupo B tiene una media de $20$, calcule el límite superior de una puntuación que esté a $2$ desviaciones típicas de la media.", "correctValue": 37.8, "tolerance": 0.1, "explanation": "$$20 + (2 \\times 8,9) = 20 + 17,8 = 37,8$$"}]}, {"id": 8, "title": "Percentiles y Cuartiles en Box-Plot", "context": "En la Figura 26 (pág 68), se analiza la inteligencia emocional. $Q_1 = 25$, Mediana = $29$, $Q_3 = 39$.", "parts": [{"id": "p8a", "label": "a)", "question": "¿Qué porcentaje de la muestra tiene una puntuación superior a $39$?", "correctValue": 25, "tolerance": 0, "explanation": "El $Q_3$ deja el $25\\%$ superior."}, {"id": "p8b", "label": "b)", "question": "¿Qué porcentaje de la muestra se encuentra entre el valor $25$ y el $39$?", "correctValue": 50, "tolerance": 0, "explanation": "Es el rango intercuartil ($75\\% - 25\\% = 50\\%$)."}, {"id": "p8c", "label": "c)", "question": "Si hay $N = 52$ sujetos, ¿cuántos sujetos aproximados están por debajo de la mediana?", "correctValue": 26, "tolerance": 0, "explanation": "$$52 \\times 0,50 = 26$$"}, {"id": "p8d", "label": "d)", "question": "Calcule la distancia entre la mediana y el primer cuartil.", "correctValue": 4, "tolerance": 0, "explanation": "$$29 - 25 = 4$$"}]}, {"id": 9, "title": "Casos Extremos y Atípicos", "context": "Se identifican dos sujetos especiales: Sujeto 52 con valor $73$ (marcado con círculo) y Sujeto 53 con valor $90$ (marcado con asterisco). $Q_3 = 39$ y $RIC = 14$.", "parts": [{"id": "p9a", "label": "a)", "question": "Calcule el valor límite para 'Caso Extremo' ($Q_3 + 3 \\times RIC$).", "correctValue": 81, "tolerance": 0, "explanation": "$$39 + (3 \\times 14) = 39 + 42 = 81$$"}, {"id": "p9b", "label": "b)", "question": "¿El sujeto 53 es un caso extremo? Responda 1 para SÍ, 0 para NO.", "correctValue": 1, "tolerance": 0, "explanation": "Como $90 > 81$, es un caso extremo (asterisco)."}, {"id": "p9c", "label": "c)", "question": "¿El sujeto 52 es un caso extremo o solo atípico? Responda 1 para Atípico, 2 para Extremo.", "correctValue": 1, "tolerance": 0, "explanation": "$$60 < 73 < 81$$, por lo que es atípico pero no extremo."}, {"id": "p9d", "label": "d)", "question": "¿Cuál es la diferencia de puntuación entre el caso extremo y el atípico?", "correctValue": 17, "tolerance": 0, "explanation": "$$90 - 73 = 17$$"}]}, {"id": 10, "title": "Simetría y Coincidencia de Índices", "context": "En una distribución de puntuaciones en un test de memoria, se observa que la Media = Mediana = Moda = $100$. La desviación típica es $15$.", "parts": [{"id": "p10a", "label": "a)", "question": "¿Cuál es el valor del índice de asimetría esperado?", "correctValue": 0, "tolerance": 0, "explanation": "En una distribución perfectamente simétrica, la asimetría es 0."}, {"id": "p10b", "label": "b)", "question": "Si la distribución es Mesocúrtica, ¿cuál es el valor aproximado de la curtosis (no el Z)?", "correctValue": 0, "tolerance": 0, "explanation": "La curtosis de una normal es 0 (usando el exceso)."}, {"id": "p10c", "label": "c)", "question": "¿Cuál es el valor del percentil 50 ($P_{50}$)?", "correctValue": 100, "tolerance": 0, "explanation": "El $P_{50}$ es la mediana."}, {"id": "p10d", "label": "d)", "question": "¿Cuál es el rango si el valor máximo es $145$?", "correctValue": 90, "tolerance": 0, "explanation": "En simetría, el mínimo sería $100-45=55$. Rango: $145-55=90$."}]}, {"id": 11, "title": "Cálculo de Amplitudes Recomendadas", "context": "Un conjunto de datos tiene los siguientes estadísticos: $P_{10} = 5$, $Q_1 = 12$, Mediana = $20$, $Q_3 = 35$, $P_{90} = 50$. Mínimo = $2$, Máximo = $60$.", "parts": [{"id": "p11a", "label": "a)", "question": "Calcule la Amplitud Total.", "correctValue": 58, "tolerance": 0, "explanation": "$$60 - 2 = 58$$"}, {"id": "p11b", "label": "b)", "question": "Calcule la Amplitud Intercuartil.", "correctValue": 23, "tolerance": 0, "explanation": "$$35 - 12 = 23$$"}, {"id": "p11c", "label": "c)", "question": "Si la distribución es asimétrica, ¿qué amplitud recomienda Pardo et al. (2015)? Responda 1 para Total, 2 para Intercuartil.", "correctValue": 2, "tolerance": 0, "explanation": "Se recomienda el RIC para distribuciones asimétricas."}, {"id": "p11d", "label": "d)", "question": "Calcule la distancia entre el $P_{90}$ y el $P_{10}$.", "correctValue": 45, "tolerance": 0, "explanation": "$$50 - 5 = 45$$"}]}, {"id": 12, "title": "Comparación de Medias Robustas", "context": "Existen medias menos sensibles a valores extremos como la media recortada o la mediana. Datos: $10, 12, 14, 15, 100$.", "parts": [{"id": "p12a", "label": "a)", "question": "Calcule la media aritmética.", "correctValue": 30.2, "tolerance": 0.1, "explanation": "$$(10+12+14+15+100) / 5 = 151 / 5 = 30,2$$"}, {"id": "p12b", "label": "b)", "question": "Calcule la mediana.", "correctValue": 14, "tolerance": 0, "explanation": "El valor central es 14."}, {"id": "p12c", "label": "c)", "question": "¿Cuál es la diferencia absoluta entre la media y la mediana provocada por el valor atípico?", "correctValue": 16.2, "tolerance": 0.1, "explanation": "$$30,2 - 14 = 16,2$$"}, {"id": "p12d", "label": "d)", "question": "Si eliminamos el valor 100 (media recortada), ¿cuál es la nueva media?", "correctValue": 12.75, "tolerance": 0.1, "explanation": "$$(10+12+14+15) / 4 = 51 / 4 = 12,75$$"}]}, {"id": 13, "title": "Asimetría en el Eje Horizontal", "context": "En un histograma, observamos que la 'cola' de la distribución se alarga hacia la izquierda (puntuaciones bajas).", "parts": [{"id": "p13a", "label": "a)", "question": "¿Cómo se denomina este tipo de asimetría? Responda 1 para Positiva, -1 para Negativa.", "correctValue": -1, "tolerance": 0, "explanation": "Cola a la izquierda = Asimetría negativa."}, {"id": "p13b", "label": "b)", "question": "En este caso, ¿cuál de los tres índices suele ser menor? Responda 1 para Media, 2 para Mediana, 3 para Moda.", "correctValue": 1, "tolerance": 0, "explanation": "En asimetría negativa: Media < Mediana < Moda."}, {"id": "p13c", "label": "c)", "question": "Si la Mediana es $50$ y la Moda es $60$, proponga un valor posible para la Media que mantenga la asimetría negativa.", "correctValue": 40, "tolerance": 10, "explanation": "Cualquier valor menor a 50 es válido."}, {"id": "p13d", "label": "d)", "question": "Si el $Z$ de asimetría diera $-2,50$ en una muestra de $N=30$, ¿es significativa? (1: SÍ, 0: NO)", "correctValue": 1, "tolerance": 0, "explanation": "$$| -2,50 | > 1,96$$. Sí lo es."}]}, {"id": 14, "title": "Curtosis en el Eje Vertical", "context": "Una distribución tiene una concentración muy elevada en el centro y colas muy delgadas.", "parts": [{"id": "p14a", "label": "a)", "question": "¿Qué nombre recibe esta forma? Responda 1 para Leptocúrtica, 2 para Mesocúrtica, 3 para Platicúrtica.", "correctValue": 1, "tolerance": 0, "explanation": "Elevado apuntamiento = Leptocúrtica."}, {"id": "p14b", "label": "b)", "question": "¿El valor de la curtosis estadística será positivo o negativo?", "correctValue": 1, "tolerance": 0, "explanation": "Leptocúrtica implica curtosis positiva (> 0)."}, {"id": "p14c", "label": "c)", "question": "Si el error estándar es $0,5$, ¿qué valor mínimo de curtosis se requiere para ser significativa en $N<50$?", "correctValue": 0.98, "tolerance": 0, "explanation": "$$Z = Curtosis / 0,5 = 1,96 \\implies Curtosis = 0,98$$"}, {"id": "p14d", "label": "d)", "question": "Si una distribución es Platicúrtica, responda con el signo del valor $Z$ esperado (1 para +, -1 para -).", "correctValue": -1, "tolerance": 0, "explanation": "Platicúrtica = Curtosis negativa."}]}, {"id": 15, "title": "Reconstrucción de Datos desde Tallo y Hojas", "context": "Un diagrama indica: Ancho del tallo = $10$. Fila 1: '1 . 888899'. Fila 2: 'Extremos (>=73)'.", "parts": [{"id": "p15a", "label": "a)", "question": "¿Cuál es la mediana de la primera fila (los 6 casos)?", "correctValue": 18, "tolerance": 0, "explanation": "Valores: 18, 18, 18, 18, 19, 19. Mediana entre el 3º y 4º es 18."}, {"id": "p15b", "label": "b)", "question": "¿Cuál es la moda de la primera fila?", "correctValue": 18, "tolerance": 0, "explanation": "El 18 se repite 4 veces."}, {"id": "p15c", "label": "c)", "question": "Si el valor extremo es exactamente $73$, ¿cuál es el rango de todo el conjunto si solo existen estos 7 datos?", "correctValue": 55, "tolerance": 0, "explanation": "$$73 - 18 = 55$$"}, {"id": "p15d", "label": "d)", "question": "¿Cuál es el valor del tallo para el dato 73 si el ancho del tallo es 10?", "correctValue": 7, "tolerance": 0, "explanation": "$$73 = 7 \\times 10 + 3$$"}]}, {"id": 16, "title": "Gráficos según Tipo de Variable", "context": "Basándose en la Tabla 16, un investigador debe elegir el gráfico adecuado para diferentes variables.", "parts": [{"id": "p16a", "label": "a)", "question": "Para una variable cualitativa (ej. Género), ¿cuántos de estos se recomiendan: Circular, Barras, Histograma, Caja? (Responda la cantidad)", "correctValue": 2, "tolerance": 0, "explanation": "Se recomiendan circular y barras."}, {"id": "p16b", "label": "b)", "question": "Para una variable cuantitativa normal, ¿se recomienda el histograma? (1: SÍ, 0: NO)", "correctValue": 1, "tolerance": 0, "explanation": "El histograma es básico para variables cuantitativas."}, {"id": "p16c", "label": "c)", "question": "¿Es el diagrama de caja recomendado para variables cualitativas? (1: SÍ, 0: NO)", "correctValue": 0, "tolerance": 0, "explanation": "No, requiere escala métrica (cuartiles)."}, {"id": "p16d", "label": "d)", "question": "Si una variable es cuasicuantitativa, ¿se puede usar la moda? (1: SÍ, 0: NO)", "correctValue": 1, "tolerance": 0, "explanation": "La moda se puede usar en todos los niveles."}]}, {"id": 17, "title": "Relación entre Varianza y Desviación", "context": "Un conjunto de datos tiene una varianza de $144$.", "parts": [{"id": "p17a", "label": "a)", "question": "Calcule la desviación típica.", "correctValue": 12, "tolerance": 0, "explanation": "$$\\sqrt{144} = 12$$"}, {"id": "p17b", "label": "b)", "question": "Si multiplicamos todos los datos por $2$, ¿cuál será la nueva desviación típica?", "correctValue": 24, "tolerance": 0, "explanation": "$$12 \\times 2 = 24$$"}, {"id": "p17c", "label": "c)", "question": "¿Cuál será la nueva varianza tras multiplicar por $2$? ($24^2$)", "correctValue": 576, "tolerance": 0, "explanation": "La varianza aumenta por el cuadrado del factor ($144 \\times 4 = 576$)."}, {"id": "p17d", "label": "d)", "question": "Si la media original era $50$, ¿cuál es el nuevo coeficiente de variación ($CV$) tras multiplicar por $2$? (En %)", "correctValue": 24, "tolerance": 0.1, "explanation": "$$(24 / 100) \\times 100 = 24\\%$$. El CV no varía si se multiplica por una constante positiva."}]}, {"id": 18, "title": "Análisis de Frecuencias en Histograma", "context": "Un histograma (Figura 20) muestra grupos de edad. Eje X: 18-25, 26-35, 36-45. Frecuencias: $2000$, $1600$, $1100$.", "parts": [{"id": "p18a", "label": "a)", "question": "¿Cuál es la frecuencia acumulada hasta los 35 años?", "correctValue": 3600, "tolerance": 0, "explanation": "$$2000 + 1600 = 3600$$"}, {"id": "p18b", "label": "b)", "question": "Si el total de sujetos es $5000$, ¿qué porcentaje representan los mayores de 35 años (hasta el grupo 36-45)?", "correctValue": 22, "tolerance": 0, "explanation": "$$(1100 / 5000) \\times 100 = 22\\%$$"}, {"id": "p18c", "label": "c)", "question": "¿Cuál es la moda (el grupo con mayor frecuencia)? Responda con el límite inferior del grupo (18).", "correctValue": 18, "tolerance": 0, "explanation": "El grupo 18-25 tiene 2000 casos."}, {"id": "p18d", "label": "d)", "question": "¿Cuántos sujetos hay en total en los tres primeros grupos?", "correctValue": 4700, "tolerance": 0, "explanation": "$$2000 + 1600 + 1100 = 4700$$"}]}, {"id": 19, "title": "Robustez y Casos Extremos", "context": "Se comparan dos variables: A (Simétrica) y B (Asimétrica con outliers).", "parts": [{"id": "p19a", "label": "a)", "question": "¿Qué medida de tendencia central es más representativa para la Variable A?", "correctValue": 1, "explanation": "La media (asignamos código 1 para media, 2 para mediana).", "tolerance": 0}, {"id": "p19b", "label": "b)", "question": "¿Qué medida es más resistente para la Variable B?", "correctValue": 2, "explanation": "La mediana (asignamos código 2).", "tolerance": 0}, {"id": "p19c", "label": "c)", "question": "Si en la Variable B, la Media = $100$ y la Mediana = $80$, ¿hacia qué lado están los outliers? (1: Derecha/Altos, -1: Izquierda/Bajos)", "correctValue": 1, "tolerance": 0, "explanation": "Media > Mediana indica asimetría positiva (cola a la derecha)."}, {"id": "p19d", "label": "d)", "question": "Si el error estándar de asimetría se duplica, ¿qué ocurre con el valor $Z$? (1: Se duplica, 2: Se reduce a la mitad)", "correctValue": 2, "tolerance": 0, "explanation": "$$Z = As / EE$$. Al dividir por el doble, el resultado es la mitad."}]}, {"id": 20, "title": "Umbrales de Kim (2013) para Normalidad", "context": "Kim (2013) establece diferentes umbrales de $Z$ según el tamaño muestral: $\\pm 1,96$ ($N<50$), $\\pm 2,58$ ($50<N<300$), $\\pm 3,29$ ($N>300$).", "parts": [{"id": "p20a", "label": "a)", "question": "Si $N=200$ y $Z_{asimetría} = 2,40$, ¿es la distribución simétrica? (1: SÍ, 0: NO)", "correctValue": 1, "tolerance": 0, "explanation": "Para $N=200$, el límite es $2,58$. Como $2,40 < 2,58$, se considera simétrica."}, {"id": "p20b", "label": "b)", "question": "Si $N=400$ y $Z_{curtosis} = -3,10$, ¿es mesocúrtica? (1: SÍ, 0: NO)", "correctValue": 1, "tolerance": 0, "explanation": "Para $N>300$, el límite es $3,29$. Como $|-3,10| < 3,29$, es mesocúrtica."}, {"id": "p20c", "label": "c)", "question": "¿Cuál es la diferencia absoluta entre el umbral de muestra pequeña y el de muestra grande?", "correctValue": 1.33, "tolerance": 0.01, "explanation": "$$3,29 - 1,96 = 1,33$$"}, {"id": "p20d", "label": "d)", "question": "Si una muestra de $N=10$ tiene un $Z=2,0$, ¿se rechaza la normalidad? (1: SÍ, 0: NO)", "correctValue": 1, "tolerance": 0, "explanation": "Para $N<50$, el límite es $1,96$. $2,0 > 1,96$, se rechaza."}]}];
+        const jsonFormulas = [{"name": "Puntuación Z de Asimetría", "tex": "$$Z_{asimetria} = \\frac{\\text{asimetría}}{\\text{error estándar de asimetría}}$$"}, {"name": "Puntuación Z de Curtosis", "tex": "$$Z_{curtosis} = \\frac{\\text{curtosis}}{\\text{error estándar de curtosis}}$$"}, {"name": "Amplitud Intercuartílica (AIC)", "tex": "$$AIC = Q_{3} - Q_{1}$$"}, {"name": "Relación de Tendencia Central en Simetría Perfecta", "tex": "$$\\bar{X} = Mdn = Mo$$"}, {"name": "Identificación de Caso Atípico en Diagrama de Caja", "tex": "$$\\text{Valor} > P_{75} + 1,5 \\cdot (Q_{3} - Q_{1})$$"}, {"name": "Identificación de Caso Extremo en Diagrama de Caja", "tex": "$$\\text{Valor} > P_{75} + 3 \\cdot (Q_{3} - Q_{1})$$"}];
+
+        // --- TRANSFORMACIÓN DE DATOS PARA LA APP ---
+        const appDB = {
+            quiz: [...jsonTestA, ...jsonTestB],
+            laboratorio: [...jsonLaboratorio],
+            formulas: jsonFormulas.map(f => ({
+                cat: "Fórmula",
+                q: f.name,
+                a: f.tex
+            }))
+        };
+
+        // --- LÓGICA DE LA APLICACIÓN ---
+        const app = {
+            DB: appDB,
+            state: {
+                currentTool: null,
+                index: 0,
+                isFlipped: false,
+                activeData: [],
+                failedQuestions: [],
+                score: 0,
+                totalQuestions: 0
+            },
+
+            // Renderiza MathJax si está disponible
+            renderMath: function() {
+                if (window.MathJax && window.MathJax.typesetPromise) {
+                    MathJax.typesetPromise();
+                }
+            },
+
+            showView: function (view) {
+                document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+                const target = document.getElementById(`view-${view}`);
+                if (target) target.classList.remove('hidden');
+
+                const menuBtn = document.getElementById('btn-global-menu');
+                const counterBox = document.getElementById('nav-counter');
+                
+                if (view === 'home') {
+                    menuBtn.classList.remove('flex');
+                    menuBtn.classList.add('hidden');
+                    counterBox.classList.remove('flex');
+                    counterBox.classList.add('hidden');
+                } else {
+                    menuBtn.classList.remove('hidden');
+                    menuBtn.classList.add('flex');
+                    
+                    if (view === 'formulas') {
+                        counterBox.classList.remove('flex');
+                        counterBox.classList.add('hidden');
+                    } else {
+                        counterBox.classList.remove('hidden');
+                        counterBox.classList.add('flex');
+                    }
+                }
+            },
+
+            startTool: function (tool, customData = null) {
+                const baseData = this.DB[tool] || [];
+                const dataToUse = customData ? [...customData] : JSON.parse(JSON.stringify(baseData));
+
+                if (dataToUse.length === 0) return;
+
+                this.state.currentTool = tool;
+                this.state.index = 0;
+                this.state.score = 0;
+                this.state.failedQuestions = [];
+                this.state.activeData = dataToUse;
+
+                if (tool === 'laboratorio') {
+                    this.state.totalQuestions = dataToUse.reduce((acc, curr) => acc + curr.parts.length, 0);
+                } else {
+                    this.state.totalQuestions = dataToUse.length;
+                }
+
+                if (!customData && tool !== 'formulas') {
+                    this.shuffleArray(this.state.activeData);
+                }
+
+                this.updateCounter();
+                this.showView(tool);
+
+                if (tool === 'quiz') this.renderQuiz();
+                if (tool === 'laboratorio') this.renderLaboratorio();
+                if (tool === 'formulas') this.renderFormulas();
+            },
+
+            updateCounter: function () {
+                const counter = document.getElementById('global-counter');
+                if (counter && this.state.activeData.length > 0) {
+                    counter.innerText = `${this.state.index + 1}/${this.state.activeData.length}`;
+                }
+            },
+
+            shuffleArray: function (arr) {
+                for (let i = arr.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                }
+            },
+
+            finishSession: function() {
+                this.showResults();
+            },
+
+            // --- LÓGICA QUIZ ---
+            renderQuiz: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('quiz-question').innerHTML = data.q;
+                document.getElementById('quiz-feedback').classList.add('hidden');
+                document.getElementById('quiz-hint-box').classList.add('hidden');
+                
+                const container = document.getElementById('quiz-options');
+                container.innerHTML = '';
+                
+                data.options.forEach((opt, i) => {
+                    const btn = document.createElement('button');
+                    btn.className = "option-btn w-full text-left p-4 rounded-xl bg-white flex items-center gap-4 font-semibold text-slate-700 shadow-sm";
+                    btn.innerHTML = `<span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-xs text-slate-400 font-bold shrink-0">${String.fromCharCode(65 + i)}</span> <div class="math-content">${opt}</div>`;
+                    btn.onclick = () => this.quizCheck(i, btn);
+                    container.appendChild(btn);
+                });
+
+                this.renderMath();
+            },
+
+            quizToggleHint: function () {
+                const box = document.getElementById('quiz-hint-box');
+                const data = this.state.activeData[this.state.index];
+                if (data && data.hint) {
+                    box.innerHTML = `<span class="font-bold">Pista:</span> ${data.hint}`;
+                    box.classList.toggle('hidden');
+                    this.renderMath();
+                }
+            },
+
+            quizCheck: function (idx, clickedBtn) {
+                const data = this.state.activeData[this.state.index];
+                const btns = document.getElementById('quiz-options').querySelectorAll('button');
+                btns.forEach(b => b.disabled = true);
+                
+                const feedback = document.getElementById('quiz-feedback');
+                feedback.classList.remove('hidden');
+                
+                if (idx === data.correct) {
+                    this.state.score++;
+                    clickedBtn.classList.add('bg-emerald-50', 'border-emerald-500', 'text-emerald-700');
+                    document.getElementById('quiz-feedback-title').innerText = "¡Correcto!";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-emerald-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    this.state.failedQuestions.push(data);
+                    clickedBtn.classList.add('bg-red-50', 'border-red-500', 'text-red-700');
+                    btns[data.correct].classList.add('bg-emerald-50', 'border-emerald-500', 'ring-2', 'ring-emerald-200');
+                    document.getElementById('quiz-feedback-title').innerText = "Incorrecto";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-red-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+                
+                document.getElementById('quiz-explanation').innerHTML = data.explanation;
+                this.renderMath();
+            },
+
+            quizNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderQuiz();
+                    this.updateCounter();
+                } else this.showResults();
+            },
+
+            // --- LÓGICA LABORATORIO ---
+            renderLaboratorio: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('lab-problem-number').innerText = this.state.index + 1;
+                document.getElementById('lab-main-title').innerText = data.title;
+                document.getElementById('lab-context-box').innerHTML = data.context;
+                
+                const container = document.getElementById('lab-parts-container');
+                container.innerHTML = '';
+                
+                data.parts.forEach((part, i) => {
+                    const partId = `lab-part-${this.state.index}-${i}`;
+                    const letter = part.label.replace(')', '').toLowerCase();
+                    
+                    const html = `
+                        <div class="p-6 md:p-8 border-b border-slate-100 last:border-0">
+                            <div class="flex gap-4 items-start mb-6">
+                                <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex justify-center items-center font-bold shrink-0 mt-1">${letter}</div>
+                                <div class="text-slate-800 font-semibold text-lg math-content pt-1">${part.question}</div>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-4 items-center pl-0 md:pl-12">
+                                <input type="text" id="input-${partId}" class="w-full md:w-64 p-3 rounded-xl border-2 border-slate-200 outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-50 transition text-lg font-mono shadow-sm" placeholder="Respuesta...">
+                                <button id="btn-${partId}" onclick="app.labCheckPart(${this.state.index}, ${i})" class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-xl font-bold uppercase tracking-wider text-sm transition shadow-md w-full md:w-auto">Verificar</button>
+                            </div>
+                            
+                            <div id="feedback-${partId}" class="hidden pl-0 md:pl-12 mt-4 animate-fadeIn">
+                                <div id="feedback-box-${partId}" class="flex items-start gap-3 p-4 rounded-xl">
+                                    <div id="icon-${partId}" class="text-2xl shrink-0 mt-1"></div>
+                                    <div class="w-full">
+                                        <h4 id="title-${partId}" class="font-bold mb-2"></h4>
+                                        <div class="text-sm font-mono bg-slate-800 text-slate-200 p-4 rounded-lg overflow-x-auto math-content shadow-inner border border-slate-700">
+                                            <span class="text-slate-400 text-[10px] uppercase font-sans font-bold tracking-widest block mb-2">Desarrollo Matemático</span>
+                                            ${part.explanation}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.insertAdjacentHTML('beforeend', html);
+                });
+                
+                this.renderMath();
+            },
+
+            labCheckPart: function (problemIdx, partIdx) {
+                const problem = this.state.activeData[problemIdx];
+                const part = problem.parts[partIdx];
+                const partId = `lab-part-${problemIdx}-${partIdx}`;
+
+                const input = document.getElementById(`input-${partId}`);
+                const btn = document.getElementById(`btn-${partId}`);
+                const feedback = document.getElementById(`feedback-${partId}`);
+                const feedbackBox = document.getElementById(`feedback-box-${partId}`);
+                const icon = document.getElementById(`icon-${partId}`);
+                const title = document.getElementById(`title-${partId}`);
+
+                const rawVal = input.value.trim().replace(',', '.');
+                const userVal = parseFloat(rawVal);
+                
+                if (rawVal === "" || isNaN(userVal)) {
+                    input.classList.add('ring-2', 'ring-red-400');
+                    setTimeout(() => input.classList.remove('ring-2', 'ring-red-400'), 500);
+                    return; 
+                }
+
+                input.disabled = true;
+                btn.disabled = true;
+                btn.classList.remove('hover:bg-indigo-700', 'bg-indigo-600');
+                btn.classList.add('bg-slate-300', 'text-slate-500', 'cursor-not-allowed', 'shadow-none');
+                
+                feedback.classList.remove('hidden');
+
+                const diff = Math.abs(userVal - part.correctValue);
+                const isCorrect = diff <= part.tolerance;
+
+                if (isCorrect) {
+                    this.state.score++;
+                    input.classList.add('border-emerald-400', 'bg-emerald-50', 'text-emerald-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-emerald-50 border border-emerald-200";
+                    title.innerText = "¡Cálculo Exacto!";
+                    title.className = "font-black text-emerald-600";
+                    icon.innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    input.classList.add('border-red-400', 'bg-red-50', 'text-red-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-red-50 border border-red-200";
+                    title.innerText = `Cálculo Incorrecto. Respuesta esperada: ${part.correctValue} (±${part.tolerance})`;
+                    title.className = "font-black text-red-600";
+                    icon.innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+
+                this.renderMath();
+            },
+
+            labNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderLaboratorio();
+                    this.updateCounter();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else this.showResults();
+            },
+
+            // --- LÓGICA FÓRMULAS ---
+            renderFormulas: function () {
+                const grid = document.getElementById('formulas-grid');
+                grid.innerHTML = '';
+                
+                this.state.activeData.forEach(data => {
+                    const card = document.createElement('div');
+                    card.className = "glass-card p-6 rounded-2xl border-t-4 border-indigo-500 hover:shadow-lg transition-shadow bg-white flex flex-col justify-between items-center text-center h-full";
+                    card.innerHTML = `
+                        <span class="text-xs font-bold text-indigo-500 uppercase tracking-widest mb-4 w-full border-b border-slate-100 pb-2">${data.q}</span>
+                        <div class="text-2xl font-medium text-slate-800 math-content w-full overflow-x-auto py-4 flex-grow flex items-center justify-center">${data.a}</div>
+                    `;
+                    grid.appendChild(card);
+                });
+
+                this.renderMath();
+            },
+
+            // --- RESULTADOS GLOBALES ---
+            showResults: function () {
+                this.showView('results');
+                const resultText = document.getElementById('result-text');
+                
+                if (this.state.currentTool === 'flashcards' || this.state.currentTool === 'formulas') {
+                    resultText.innerHTML = `Has repasado <strong>${this.state.activeData.length}</strong> fórmulas.`;
+                } else {
+                    resultText.innerHTML = `Has acertado <strong>${this.state.score}</strong> de <strong>${this.state.totalQuestions}</strong>.`;
+                }
+
+                const failBtn = document.getElementById('btn-retry-errors');
+                if (this.state.failedQuestions.length > 0 && this.state.currentTool !== 'formulas') {
+                    failBtn.classList.remove('hidden');
+                    document.getElementById('fail-count').innerText = this.state.failedQuestions.length;
+                } else {
+                    failBtn.classList.add('hidden');
+                }
+            },
+
+            retryErrors: function () { 
+                this.startTool(this.state.currentTool, this.state.failedQuestions); 
+            }
+        };
+
+        // Iniciar en Home al cargar
+        window.onload = () => app.showView('home');
+    </script>
+</body>
+</html>

@@ -1,1729 +1,1711 @@
 {
-  "quiz": [
+  "jsonTestA": [
     {
       "q": "¿Es la siguiente afirmación verdadera o falsa? El valor del parámetro $$\\mu$$ varía de forma estocástica dependiendo de la muestra extraída por el investigador.",
-      "opciones": [
+      "options": [
         "Es una afirmación verdadera",
         "Es una afirmación falsa",
         "No se puede determinar",
         "No se puede determinar"
       ],
-      "correcta": 1,
-      "explicacion": "Los parámetros como $$\\mu$$son valores constantes y desconocidos de la población; son los estadísticos como$$\\overline{X}$$ los que varían entre muestras.",
-      "pista": "Distinga entre la naturaleza de un parámetro poblacional y un estadístico muestral."
+      "correct": 1,
+      "hint": "Distinga entre la naturaleza de un parámetro poblacional y un estadístico muestral.",
+      "explanation": "Los parámetros como $$\\mu$$son valores constantes y desconocidos de la población; son los estadísticos como$$\\overline{X}$$ los que varían entre muestras."
     },
     {
       "q": "¿Es la siguiente afirmación verdadera o falsa? La estimación por intervalos es inherentemente menos precisa que la estimación puntual al no ofrecer un único valor escalar.",
-      "opciones": [
+      "options": [
         "Es una afirmación verdadera",
         "Es una afirmación falsa",
         "No se puede determinar"
       ],
-      "correcta": 1,
-      "explicacion": "La estimación por intervalos es más robusta en inferencia pues incorpora el margen de error y la probabilidad asociada, superando la limitación de la estimación puntual.",
-      "pista": "Considere la relación entre precisión puntual y seguridad probabilística en la inferencia."
+      "correct": 1,
+      "hint": "Considere la relación entre precisión puntual y seguridad probabilística en la inferencia.",
+      "explanation": "La estimación por intervalos es más robusta en inferencia pues incorpora el margen de error y la probabilidad asociada, superando la limitación de la estimación puntual."
     },
     {
       "q": "¿Es la siguiente afirmación verdadera o falsa? Una distribución muestral se define como una distribución de probabilidad de carácter teórico sobre un estadístico.",
-      "opciones": [
+      "options": [
         "Es una afirmación verdadera",
         "Es una afirmación falsa",
         "No se puede determinar"
       ],
-      "correcta": 0,
-      "explicacion": "La distribución muestral es una construcción teórica que asigna probabilidades a todos los posibles valores de un estadístico para un tamaño $$n$$ dado.",
-      "pista": "Piense en si la distribución muestral se construye con datos reales de una sola muestra o de todas las posibles."
+      "correct": 0,
+      "hint": "Piense en si la distribución muestral se construye con datos reales de una sola muestra o de todas las posibles.",
+      "explanation": "La distribución muestral es una construcción teórica que asigna probabilidades a todos los posibles valores de un estadístico para un tamaño $$n$$ dado."
     },
     {
       "q": "¿Es la siguiente afirmación verdadera o falsa? El Teorema Central del Límite garantiza que cualquier muestra de tamaño $$n > 30$$ será estructuralmente representativa.",
-      "opciones": [
+      "options": [
         "Es una afirmación verdadera",
         "Es una afirmación falsa",
         "No se puede determinar"
       ],
-      "correcta": 1,
-      "explicacion": "El TCL se refiere a la convergencia a la normalidad de la distribución muestral, no garantiza la representatividad de una muestra si el muestreo fue sesgado.",
-      "pista": "Diferencie entre la forma de la distribución de las medias y la calidad del muestreo realizado."
+      "correct": 1,
+      "hint": "Diferencie entre la forma de la distribución de las medias y la calidad del muestreo realizado.",
+      "explanation": "El TCL se refiere a la convergencia a la normalidad de la distribución muestral, no garantiza la representatividad de una muestra si el muestreo fue sesgado."
     },
     {
       "q": "¿Es la siguiente afirmación verdadera o falsa? En una distribución perfectamente normal, la media, la mediana y la moda coinciden en el mismo valor central.",
-      "opciones": [
+      "options": [
         "Es una afirmación verdadera",
         "Es una afirmación falsa",
         "No se puede determinar"
       ],
-      "correcta": 0,
-      "explicacion": "Debido a la simetría perfecta de la distribución normal, los tres estadísticos de tendencia central se sitúan exactamente en el punto máximo de la curva.",
-      "pista": "Recuerde las propiedades de simetría y tendencia central de la campana de Gauss."
+      "correct": 0,
+      "hint": "Recuerde las propiedades de simetría y tendencia central de la campana de Gauss.",
+      "explanation": "Debido a la simetría perfecta de la distribución normal, los tres estadísticos de tendencia central se sitúan exactamente en el punto máximo de la curva."
     },
     {
       "q": "¿Es la siguiente afirmación verdadera o falsa? La puntuación $$Z$$ permite transformar cualquier distribución no normal en una distribución $N(0, 1)$ perfectamente simétrica.",
-      "opciones": [
+      "options": [
         "Es una afirmación verdadera",
         "Es una afirmación falsa",
         "No se puede determinar"
       ],
-      "correcta": 1,
-      "explicacion": "La puntuación $$Z$$ es una transformación lineal que cambia la escala (media y desviación típica), pero mantiene la forma (asimetría, curtosis) de la distribución original.",
-      "pista": "Analice si la tipificación afecta a la forma de la distribución original o solo a su escala."
+      "correct": 1,
+      "hint": "Analice si la tipificación afecta a la forma de la distribución original o solo a su escala.",
+      "explanation": "La puntuación $$Z$$ es una transformación lineal que cambia la escala (media y desviación típica), pero mantiene la forma (asimetría, curtosis) de la distribución original."
     },
     {
       "q": "¿Es la siguiente afirmación verdadera o falsa? El valor esperado de la media muestral, $$E(\\overline{X})$$, es igual al parámetro $$\\mu$$ solo si la población original es normal.",
-      "opciones": [
+      "options": [
         "Es una afirmación verdadera",
         "Es una afirmación falsa",
         "No se puede determinar"
       ],
-      "correcta": 1,
-      "explicacion": "Independientemente de la forma de la población, el valor esperado de la media muestral siempre coincide con la media poblacional, lo que la hace un estimador insesgado.",
-      "pista": "Considere las propiedades del valor esperado para estimadores insesgados en cualquier distribución."
+      "correct": 1,
+      "hint": "Considere las propiedades del valor esperado para estimadores insesgados en cualquier distribución.",
+      "explanation": "Independientemente de la forma de la población, el valor esperado de la media muestral siempre coincide con la media poblacional, lo que la hace un estimador insesgado."
     },
     {
       "q": "¿Es la siguiente afirmación verdadera o falsa? Las pruebas paramétricas exigen obligatoriamente que el tamaño de la muestra sea superior a 30 sujetos para ser aplicadas.",
-      "opciones": [
+      "options": [
         "Es una afirmación verdadera",
         "Es una afirmación falsa",
         "No se puede determinar"
       ],
-      "correcta": 1,
-      "explicacion": "Si se sabe que la población es normal, se pueden usar pruebas paramétricas con muestras pequeñas. El criterio de $$n > 30$$ es una alternativa del TCL.",
-      "pista": "Piense en las condiciones alternativas cuando se conoce la distribución de partida de la población."
+      "correct": 1,
+      "hint": "Piense en las condiciones alternativas cuando se conoce la distribución de partida de la población.",
+      "explanation": "Si se sabe que la población es normal, se pueden usar pruebas paramétricas con muestras pequeñas. El criterio de $$n > 30$$ es una alternativa del TCL."
     },
     {
       "q": "¿Es la siguiente afirmación verdadera o falsa? La curva normal es asintótica, lo que implica que sus colas nunca llegan a tocar el eje de las abscisas en el gráfico.",
-      "opciones": [
+      "options": [
         "Es una afirmación verdadera",
         "Es una afirmación falsa",
         "No se puede determinar"
       ],
-      "correcta": 0,
-      "explicacion": "La función de densidad de la normal se extiende desde $$-\\infty$$hasta$$+\\infty$$ sin tocar jamás el eje horizontal, aunque la probabilidad sea infinitesimal.",
-      "pista": "Recuerde la definición matemática de una asíntota y el rango de valores de la distribución normal."
+      "correct": 0,
+      "hint": "Recuerde la definición matemática de una asíntota y el rango de valores de la distribución normal.",
+      "explanation": "La función de densidad de la normal se extiende desde $$-\\infty$$hasta$$+\\infty$$ sin tocar jamás el eje horizontal, aunque la probabilidad sea infinitesimal."
     },
     {
       "q": "¿Es la siguiente afirmación verdadera o falsa? En un muestreo con reposición de una población $$N$$, el número total de muestras posibles de tamaño $$n$$es$$N^n$$.",
-      "opciones": [
+      "options": [
         "Es una afirmación verdadera",
         "Es una afirmación falsa",
         "No se puede determinar"
       ],
-      "correcta": 0,
-      "explicacion": "Al reponer los elementos, cada una de las $$n$$extracciones tiene$$N$$opciones disponibles, resultando en un espacio muestral de tamaño$$N^n$$.",
-      "pista": "Revise el ejemplo de las rocas y el cálculo de combinaciones posibles bajo condiciones de reposición."
+      "correct": 0,
+      "hint": "Revise el ejemplo de las rocas y el cálculo de combinaciones posibles bajo condiciones de reposición.",
+      "explanation": "Al reponer los elementos, cada una de las $$n$$extracciones tiene$$N$$opciones disponibles, resultando en un espacio muestral de tamaño$$N^n$$."
     },
     {
       "q": "Elija la afirmación correcta sobre la representatividad de la muestra en el proceso de inferencia estadística.",
-      "opciones": [
+      "options": [
         "Una muestra es representativa solo si su tamaño es equivalente al 10% de la población total analizada.",
         "La representatividad depende de que la muestra mantenga cualidades estructurales coherentes con la población.",
         "Cualquier muestra seleccionada mediante muestreo no probabilístico garantiza una inferencia sin sesgos."
       ],
-      "correcta": 1,
-      "explicacion": "Como indica el manual, se pretende que la muestra se asemeje estructuralmente a la población para que los hallazgos sean extrapolables.",
-      "pista": "La representatividad no es solo una cuestión de cantidad, sino de similitud cualitativa y estructural."
+      "correct": 1,
+      "hint": "La representatividad no es solo una cuestión de cantidad, sino de similitud cualitativa y estructural.",
+      "explanation": "Como indica el manual, se pretende que la muestra se asemeje estructuralmente a la población para que los hallazgos sean extrapolables."
     },
     {
       "q": "Elija la afirmación correcta sobre el Teorema Central del Límite y su aplicación práctica en investigación.",
-      "opciones": [
+      "options": [
         "El teorema solo es aplicable si la distribución de partida de la variable aleatoria es de tipo uniforme.",
         "La distribución muestral de las medias tiende a la normalidad conforme aumenta el número de elementos muestrales.",
         "El teorema garantiza que la media de una sola muestra será idéntica al parámetro poblacional si $$n > 30$$."
       ],
-      "correcta": 1,
-      "explicacion": "El TCL describe que, independientemente de la forma de partida, la distribución de las medias muestrales se normaliza al aumentar el tamaño muestral.",
-      "pista": "Considere qué sucede con la forma de la distribución de las medias cuando el tamaño de la muestra crece."
+      "correct": 1,
+      "hint": "Considere qué sucede con la forma de la distribución de las medias cuando el tamaño de la muestra crece.",
+      "explanation": "El TCL describe que, independientemente de la forma de partida, la distribución de las medias muestrales se normaliza al aumentar el tamaño muestral."
     },
     {
       "q": "Elija la afirmación correcta respecto a las propiedades matemáticas de la distribución normal estándar.",
-      "opciones": [
+      "options": [
         "Se representa como $N(\\mu, \\sigma)$ y tiene una forma asimétrica positiva con una curtosis muy elevada.",
         "Aproximadamente el 95,44% de los casos se sitúan dentro del intervalo definido por $$\\mu \\pm 2\\sigma$$.",
         "La probabilidad acumulada por debajo de una puntuación $$Z = 0,00$$ es siempre superior al 68,26%."
       ],
-      "correcta": 1,
-      "explicacion": "En la distribución normal, el área comprendida entre dos desviaciones típicas respecto a la media corresponde al 95,44% de la probabilidad total.",
-      "pista": "Recuerde los porcentajes teóricos asociados a las desviaciones típicas en la campana de Gauss."
+      "correct": 1,
+      "hint": "Recuerde los porcentajes teóricos asociados a las desviaciones típicas en la campana de Gauss.",
+      "explanation": "En la distribución normal, el área comprendida entre dos desviaciones típicas respecto a la media corresponde al 95,44% de la probabilidad total."
     },
     {
       "q": "Elija la afirmación correcta sobre la relación entre el estadístico y el parámetro en la inferencia.",
-      "opciones": [
+      "options": [
         "El estadístico es una constante fija de la población mientras que el parámetro es una variable aleatoria.",
         "Los estadísticos funcionan como estimadores de los parámetros poblacionales que son generalmente desconocidos.",
         "La inferencia estadística renuncia a la descripción de datos para centrarse exclusivamente en la probabilidad."
       ],
-      "correcta": 1,
-      "explicacion": "Utilizamos los datos calculados en la muestra (estadísticos) para inferir o estimar los valores reales de la población (parámetros).",
-      "pista": "Identifique cuál de los dos valores es el que calculamos a partir de los sujetos de nuestro estudio."
+      "correct": 1,
+      "hint": "Identifique cuál de los dos valores es el que calculamos a partir de los sujetos de nuestro estudio.",
+      "explanation": "Utilizamos los datos calculados en la muestra (estadísticos) para inferir o estimar los valores reales de la población (parámetros)."
     },
     {
       "q": "Elija la afirmación correcta sobre la tipificación de puntuaciones mediante el uso de puntuaciones $$Z$$.",
-      "opciones": [
+      "options": [
         "La puntuación $$Z$$ se calcula dividiendo la puntuación directa por la media y restando la desviación típica.",
         "Permite transformar cualquier escala original en una escala común con media igual a 0 y desviación de 1.",
         "Una puntuación $$Z = 1,00$$ indica que el sujeto se encuentra exactamente en la media de su grupo de edad."
       ],
-      "correcta": 1,
-      "explicacion": "La tipificación $$Z$$genera una escala estandarizada$$N(0, 1)$$ que facilita la comparación de puntuaciones de distintas variables.",
-      "pista": "Piense en el objetivo principal de estandarizar medidas con diferentes unidades métricas."
+      "correct": 1,
+      "hint": "Piense en el objetivo principal de estandarizar medidas con diferentes unidades métricas.",
+      "explanation": "La tipificación $$Z$$genera una escala estandarizada$$N(0, 1)$$ que facilita la comparación de puntuaciones de distintas variables."
     },
     {
       "q": "Elija la afirmación correcta sobre la distribución muestral de la media y su comportamiento esperado.",
-      "opciones": [
+      "options": [
         "La media de todas las medias muestrales posibles de un mismo tamaño es igual a la media poblacional.",
         "La variabilidad de la distribución muestral de la media aumenta de forma lineal al incrementar el tamaño $$n$$.",
         "La distribución muestral solo puede calcularse si el investigador extrae físicamente todas las muestras posibles."
       ],
-      "correcta": 0,
-      "explicacion": "El manual establece que $$E(\\overline{X}) = \\mu$$, lo que significa que el promedio de la distribución teórica de las medias es el parámetro.",
-      "pista": "Revise el concepto de valor esperado del estadístico media y su relación con el parámetro."
+      "correct": 0,
+      "hint": "Revise el concepto de valor esperado del estadístico media y su relación con el parámetro.",
+      "explanation": "El manual establece que $$E(\\overline{X}) = \\mu$$, lo que significa que el promedio de la distribución teórica de las medias es el parámetro."
     },
     {
       "q": "Elija la afirmación correcta sobre el concepto de curtosis en el contexto de la distribución normal.",
-      "opciones": [
+      "options": [
         "La distribución normal es de tipo platicúrtica, lo que implica que es muy aplanada en su región central.",
         "La distribución normal es de tipo mesocúrtica, presentando un apuntamiento moderado y una forma simétrica.",
         "La curtosis de la normal varía entre muestras, siendo leptocúrtica para tamaños pequeños y plana para grandes."
       ],
-      "correcta": 1,
-      "explicacion": "La distribución normal se define como mesocúrtica por tener un apuntamiento equilibrado, ni muy elevado ni muy plano.",
-      "pista": "Identifique el término técnico que describe el grado de apuntamiento de la campana de Gauss."
+      "correct": 1,
+      "hint": "Identifique el término técnico que describe el grado de apuntamiento de la campana de Gauss.",
+      "explanation": "La distribución normal se define como mesocúrtica por tener un apuntamiento equilibrado, ni muy elevado ni muy plano."
     },
     {
       "q": "Elija la afirmación correcta sobre la probabilidad acumulada en los extremos de la distribución normal.",
-      "opciones": [
+      "options": [
         "El porcentaje de casos que superan las tres desviaciones típicas ($$Z > 3,00$$) es de aproximadamente un 5,00%.",
         "El área bajo la curva a la derecha de la media es idéntica al área a la izquierda, sumando ambas 1,00.",
         "La probabilidad de obtener una puntuación mayor que la media es del 84,13% en cualquier distribución normal."
       ],
-      "correcta": 1,
-      "explicacion": "Dado que es simétrica, la media divide la distribución en dos mitades exactas de 0,50 de probabilidad cada una (50%).",
-      "pista": "Considere la propiedad de simetría de la campana de Gauss respecto a su eje central."
+      "correct": 1,
+      "hint": "Considere la propiedad de simetría de la campana de Gauss respecto a su eje central.",
+      "explanation": "Dado que es simétrica, la media divide la distribución en dos mitades exactas de 0,50 de probabilidad cada una (50%)."
     },
     {
       "q": "Elija la afirmación correcta sobre la función de la prueba de hipótesis en inferencia estadística.",
-      "opciones": [
+      "options": [
         "Su objetivo es calcular el valor exacto del parámetro poblacional a través de un único estadístico puntual.",
         "Es un proceso para evaluar afirmaciones sobre la población basándose en la información de una muestra.",
         "Garantiza que la hipótesis nula sea aceptada siempre que el nivel de confianza sea superior al 95,00%."
       ],
-      "correcta": 1,
-      "explicacion": "La prueba de hipótesis busca evidencia suficiente para mantener o rechazar afirmaciones sobre la población bajo criterios probabilísticos.",
-      "pista": "Diferencie entre el proceso de estimar un valor y el proceso de tomar una decisión sobre una afirmación."
+      "correct": 1,
+      "hint": "Diferencie entre el proceso de estimar un valor y el proceso de tomar una decisión sobre una afirmación.",
+      "explanation": "La prueba de hipótesis busca evidencia suficiente para mantener o rechazar afirmaciones sobre la población bajo criterios probabilísticos."
     },
     {
       "q": "Elija la afirmación correcta sobre la probabilidad asociada a una desviación típica sobre la media.",
-      "opciones": [
+      "options": [
         "Una puntuación $$Z = 1,00$$ deja por debajo de sí aproximadamente al 84,13% de la población de referencia.",
         "Una puntuación $$Z = 1,00$$ deja por encima de sí aproximadamente al 34,13% de la población de referencia.",
         "Una puntuación $$Z = 1,00$$ es el valor que delimita el 50% central de los casos en toda distribución normal."
       ],
-      "correcta": 0,
-      "explicacion": "La probabilidad acumulada hasta $$Z = 1,00$$ es el 50% de la mitad inferior más el 34,13% del primer segmento, resultando en 84,13%.",
-      "pista": "Sume la probabilidad de la mitad izquierda (50%) al área entre la media y una desviación (34,13%)."
+      "correct": 0,
+      "hint": "Sume la probabilidad de la mitad izquierda (50%) al área entre la media y una desviación (34,13%).",
+      "explanation": "La probabilidad acumulada hasta $$Z = 1,00$$ es el 50% de la mitad inferior más el 34,13% del primer segmento, resultando en 84,13%."
     },
     {
       "q": "Elija la afirmación correcta sobre el uso de la aleatorización en la formación de muestras.",
-      "opciones": [
+      "options": [
         "La aleatorización es un proceso opcional que no influye en la capacidad de generalización de los resultados.",
         "Sustenta el proceso de selección para que los estadísticos representen adecuadamente a los parámetros.",
         "Garantiza que la media muestral sea siempre mayor que la media poblacional para evitar errores tipo II."
       ],
-      "correcta": 1,
-      "explicacion": "La aleatorización permite que la muestra sea representativa, lo cual es fundamental para que la inferencia sea válida y no sesgada.",
-      "pista": "Piense en por qué es importante que todos los sujetos tengan la misma probabilidad de ser elegidos."
+      "correct": 1,
+      "hint": "Piense en por qué es importante que todos los sujetos tengan la misma probabilidad de ser elegidos.",
+      "explanation": "La aleatorización permite que la muestra sea representativa, lo cual es fundamental para que la inferencia sea válida y no sesgada."
     },
     {
       "q": "Elija la afirmación correcta sobre el rango psicométrico de 'normalidad' en inteligencia según el manual.",
-      "opciones": [
+      "options": [
         "Las puntuaciones normales se sitúan entre las cuatro desviaciones típicas respecto a la media (40 a 160).",
         "El rango de normalidad abarca las dos desviaciones típicas respecto a la media poblacional (70 a 130).",
         "Se considera normal a cualquier sujeto que obtenga una puntuación mayor que 145 en el test evaluado."
       ],
-      "correcta": 1,
-      "explicacion": "Psicométricamente, el rango entre $$\\mu \\pm 2\\sigma$$ (70-130) es el que define la normalidad estadística en este constructo.",
-      "pista": "Busque el intervalo que concentra al 95,44% de la población en el ejemplo de la inteligencia."
+      "correct": 1,
+      "hint": "Busque el intervalo que concentra al 95,44% de la población en el ejemplo de la inteligencia.",
+      "explanation": "Psicométricamente, el rango entre $$\\mu \\pm 2\\sigma$$ (70-130) es el que define la normalidad estadística en este constructo."
     },
     {
       "q": "Elija la afirmación correcta sobre el efecto del aumento del número de muestras en el promedio de las medias.",
-      "opciones": [
+      "options": [
         "A mayor número de muestras extraídas, más diverge el promedio de sus medias del parámetro poblacional.",
         "Al aumentar las muestras de igual tamaño, el promedio de sus medias se asemeja más al valor del parámetro.",
         "El número de muestras no influye en la precisión del promedio si el tamaño $$n$$ de cada una es menor a 10."
       ],
-      "correcta": 1,
-      "explicacion": "Como muestra el manual, con 500 muestras el promedio de medias (72,34) estuvo mucho más cerca del parámetro (72,27) que con solo 5.",
-      "pista": "Recuerde el ejemplo de la investigadora que pasó de 5 muestras a 500 muestras de tamaño 10."
+      "correct": 1,
+      "hint": "Recuerde el ejemplo de la investigadora que pasó de 5 muestras a 500 muestras de tamaño 10.",
+      "explanation": "Como muestra el manual, con 500 muestras el promedio de medias (72,34) estuvo mucho más cerca del parámetro (72,27) que con solo 5."
     },
     {
       "q": "Elija la afirmación correcta sobre la asimetría de la distribución normal conforme a su definición teórica.",
-      "opciones": [
+      "options": [
         "La distribución normal posee una asimetría negativa marcada debido a la extensión de su cola izquierda.",
         "La distribución normal es simétrica, lo que implica que su coeficiente de asimetría es igual a cero.",
         "La simetría de la normal solo se alcanza cuando el tamaño de la población $$N$$ es estrictamente infinito."
       ],
-      "correcta": 1,
-      "explicacion": "La normalidad implica simetría perfecta, por lo que no hay sesgo hacia ningún lado y el índice de asimetría es nulo.",
-      "pista": "Considere la forma visual de la campana y la igualdad de áreas a ambos lados de la media."
+      "correct": 1,
+      "hint": "Considere la forma visual de la campana y la igualdad de áreas a ambos lados de la media.",
+      "explanation": "La normalidad implica simetría perfecta, por lo que no hay sesgo hacia ningún lado y el índice de asimetría es nulo."
     },
     {
       "q": "Elija la afirmación correcta sobre la relación entre pruebas paramétricas y potencia estadística.",
-      "opciones": [
+      "options": [
         "Las pruebas no paramétricas son siempre preferibles por ser más conservadoras y evitar errores tipo I.",
         "Las versiones paramétricas tienen mayor poder estadístico y superior precisión estimadora que las otras.",
         "El poder estadístico es una constante que no depende de si la distribución de partida es normal o asimétrica."
       ],
-      "correcta": 1,
-      "explicacion": "El manual indica que cuando se cumplen los supuestos (normalidad, etc.), las pruebas paramétricas son de elección por su mayor precisión.",
-      "pista": "Identifique por qué los investigadores prefieren usar pruebas paramétricas cuando se cumplen los supuestos."
+      "correct": 1,
+      "hint": "Identifique por qué los investigadores prefieren usar pruebas paramétricas cuando se cumplen los supuestos.",
+      "explanation": "El manual indica que cuando se cumplen los supuestos (normalidad, etc.), las pruebas paramétricas son de elección por su mayor precisión."
     },
     {
       "q": "Elija la afirmación incorrecta sobre la notación y conceptos básicos de la inferencia estadística.",
-      "opciones": [
+      "options": [
         "El símbolo $$\\mu$$representa la media de la población mientras que$$\\overline{X}$$ representa la media muestral.",
         "Los estadísticos son valores conocidos calculados en la muestra que sirven para estimar parámetros.",
         "El valor del estadístico se mantiene constante para todas las muestras posibles de una misma población."
       ],
-      "correcta": 2,
-      "explicacion": "Esta es la afirmación incorrecta: los estadísticos varían entre muestras debido al error de muestreo y la variabilidad individual.",
-      "pista": "Piense en si diferentes muestras de la misma población darán siempre exactamente el mismo promedio."
+      "correct": 2,
+      "hint": "Piense en si diferentes muestras de la misma población darán siempre exactamente el mismo promedio.",
+      "explanation": "Esta es la afirmación incorrecta: los estadísticos varían entre muestras debido al error de muestreo y la variabilidad individual."
     },
     {
       "q": "Elija la afirmación incorrecta sobre la distribución normal y sus parámetros fundamentales.",
-      "opciones": [
+      "options": [
         "La curva normal queda totalmente delimitada por los parámetros de la media y la desviación típica.",
         "La línea que traza la curva normal contacta con el eje de abscisas en los valores críticos de $$\\pm 3\\sigma$$.",
         "La distribución normal se representa frecuentemente mediante la notación abreviada $N(\\mu, \\sigma)$."
       ],
-      "correcta": 1,
-      "explicacion": "Es incorrecto: la curva es asintótica y nunca toca el eje, aunque a partir de $$3\\sigma$$ la probabilidad sea muy baja.",
-      "pista": "Recuerde la propiedad de la curva que describe su relación con el eje horizontal en los extremos."
+      "correct": 1,
+      "hint": "Recuerde la propiedad de la curva que describe su relación con el eje horizontal en los extremos.",
+      "explanation": "Es incorrecto: la curva es asintótica y nunca toca el eje, aunque a partir de $$3\\sigma$$ la probabilidad sea muy baja."
     },
     {
       "q": "Elija la afirmación incorrecta respecto a las probabilidades acumuladas en una curva normal estándar.",
-      "opciones": [
+      "options": [
         "Entre la media y una desviación típica positiva ($$\\mu$$a$$+1\\sigma$$) se concentra el 34,13% de los casos.",
         "La probabilidad de encontrar un valor entre $$\\pm 1\\sigma$$es exactamente la misma que entre$$\\pm 2\\sigma$$.",
         "El área total bajo la curva normal es igual a 1,00, representando la totalidad del espacio muestral."
       ],
-      "correcta": 1,
-      "explicacion": "Es incorrecto: el área entre $$\\pm 1\\sigma$$(68,26%) es mucho menor que entre$$\\pm 2\\sigma$$ (95,44%), pues el intervalo es más amplio.",
-      "pista": "Considere si el área se distribuye de forma lineal o si se concentra más cerca del centro de la campana."
+      "correct": 1,
+      "hint": "Considere si el área se distribuye de forma lineal o si se concentra más cerca del centro de la campana.",
+      "explanation": "Es incorrecto: el área entre $$\\pm 1\\sigma$$(68,26%) es mucho menor que entre$$\\pm 2\\sigma$$ (95,44%), pues el intervalo es más amplio."
     },
     {
       "q": "Elija la afirmación incorrecta sobre el Teorema Central del Límite con muestras de tamaño pequeño.",
-      "opciones": [
+      "options": [
         "Incluso con distribuciones de partida asimétricas, al aumentar $$n$$ la distribución de medias se normaliza.",
         "Si la población de origen es normal, la distribución de las medias será normal para cualquier tamaño $$n$$.",
         "El teorema solo es válido para variables de tipo continuo, siendo inaplicable a variables aleatorias discretas."
       ],
-      "correcta": 2,
-      "explicacion": "Es incorrecto: el TCL se aplica tanto a variables continuas como discretas, como demuestra el ejemplo de los dados en el manual.",
-      "pista": "Recuerde el ejemplo del lanzamiento de dados (variable discreta) para ilustrar el teorema."
+      "correct": 2,
+      "hint": "Recuerde el ejemplo del lanzamiento de dados (variable discreta) para ilustrar el teorema.",
+      "explanation": "Es incorrecto: el TCL se aplica tanto a variables continuas como discretas, como demuestra el ejemplo de los dados en el manual."
     },
     {
       "q": "Elija la afirmación incorrecta sobre la utilidad de las puntuaciones $$Z$$ en la evaluación psicológica.",
-      "opciones": [
+      "options": [
         "Permiten conocer la posición relativa de un sujeto respecto a su grupo de comparación estandarizado.",
         "Indican cuántas desviaciones típicas se aleja la puntuación de un individuo respecto a la media del grupo.",
         "Una puntuación $$Z$$ negativa indica que el sujeto tiene una variabilidad mayor que el promedio del grupo."
       ],
-      "correcta": 2,
-      "explicacion": "Es incorrecto: el signo negativo indica que la puntuación está por debajo de la media, no tiene relación con la variabilidad del sujeto.",
-      "pista": "Analice qué significa el signo de una puntuación $$Z$$ en términos de posición, no de dispersión."
+      "correct": 2,
+      "hint": "Analice qué significa el signo de una puntuación $$Z$$ en términos de posición, no de dispersión.",
+      "explanation": "Es incorrecto: el signo negativo indica que la puntuación está por debajo de la media, no tiene relación con la variabilidad del sujeto."
     },
     {
       "q": "Elija la afirmación incorrecta sobre la estimación de parámetros mediante métodos estadísticos.",
-      "opciones": [
+      "options": [
         "La estimación puntual ofrece un valor único como la mejor aproximación al parámetro desconocido.",
         "La estimación por intervalos requiere que la probabilidad de éxito sea siempre igual a la unidad (1,00).",
         "La inferencia estadística busca extraer conclusiones sobre la población a partir de datos de una muestra."
       ],
-      "correcta": 1,
-      "explicacion": "Es incorrecto: la estimación por intervalos siempre trabaja con niveles de probabilidad (como 95% o 99%), nunca con certeza absoluta.",
-      "pista": "Piense en si un intervalo de confianza puede garantizar el éxito total o si siempre hay un margen de riesgo."
+      "correct": 1,
+      "hint": "Piense en si un intervalo de confianza puede garantizar el éxito total o si siempre hay un margen de riesgo.",
+      "explanation": "Es incorrecto: la estimación por intervalos siempre trabaja con niveles de probabilidad (como 95% o 99%), nunca con certeza absoluta."
     },
     {
       "q": "Elija la afirmación incorrecta respecto a la distribución normal en variables de la vida real.",
-      "opciones": [
+      "options": [
         "Fenómenos como la estatura o la inteligencia suelen distribuirse siguiendo la campana de Gauss.",
         "En una distribución normal, los valores extremos son tan frecuentes como los valores cercanos a la media.",
         "La normalidad estadística está desprovista de connotaciones morales o valorativas sobre los sujetos."
       ],
-      "correcta": 1,
-      "explicacion": "Es incorrecto: por definición, en una distribución normal los valores extremos son 'anormalmente infrecuentes' comparados con la media.",
-      "pista": "Observe la altura de la curva en el centro comparada con la altura en las colas o extremos."
+      "correct": 1,
+      "hint": "Observe la altura de la curva en el centro comparada con la altura en las colas o extremos.",
+      "explanation": "Es incorrecto: por definición, en una distribución normal los valores extremos son 'anormalmente infrecuentes' comparados con la media."
     },
     {
       "q": "Elija la afirmación incorrecta sobre el concepto de error de muestreo mencionado en el manual.",
-      "opciones": [
+      "options": [
         "Se refiere a la variabilidad inherente que ocurre al seleccionar diferentes participantes al azar.",
         "Es la discrepancia natural entre el valor del estadístico muestral y el valor del parámetro poblacional.",
         "El error de muestreo puede eliminarse por completo si se utiliza una muestra de tamaño superior a 30."
       ],
-      "correcta": 2,
-      "explicacion": "Es incorrecto: el error de muestreo es inherente a trabajar con muestras; solo se elimina si se estudia a toda la población (censo).",
-      "pista": "Considere si existe alguna forma de que una muestra parcial sea siempre perfecta respecto a la población."
+      "correct": 2,
+      "hint": "Considere si existe alguna forma de que una muestra parcial sea siempre perfecta respecto a la población.",
+      "explanation": "Es incorrecto: el error de muestreo es inherente a trabajar con muestras; solo se elimina si se estudia a toda la población (censo)."
     },
     {
       "q": "Elija la afirmación incorrecta sobre la simetría de la distribución de medias en el TCL.",
-      "opciones": [
+      "options": [
         "A medida que $$n$$ crece, la distribución de las medias se vuelve más simétrica que la población original.",
         "Para poblaciones muy asimétricas, se requiere un tamaño muestral mayor para alcanzar la normalidad.",
         "La distribución de las medias siempre tendrá una desviación típica mayor que la de la población original."
       ],
-      "correcta": 2,
-      "explicacion": "Es incorrecto: el error típico (desviación de la media) es menor que la desviación poblacional, pues los promedios varían menos que los individuos.",
-      "pista": "Recuerde qué ocurre con la dispersión de los promedios comparada con la dispersión de los datos individuales."
+      "correct": 2,
+      "hint": "Recuerde qué ocurre con la dispersión de los promedios comparada con la dispersión de los datos individuales.",
+      "explanation": "Es incorrecto: el error típico (desviación de la media) es menor que la desviación poblacional, pues los promedios varían menos que los individuos."
     },
     {
       "q": "Elija la afirmación incorrecta sobre la representación gráfica de la distribución normal.",
-      "opciones": [
+      "options": [
         "Tiene forma de campana, por lo cual también se la denomina popularmente como Campana de Gauss.",
         "El punto más alto de la curva corresponde exactamente al valor de la desviación típica del grupo.",
         "Es unimodal, lo que significa que solo presenta un pico de frecuencia máxima en su centro."
       ],
-      "correcta": 1,
-      "explicacion": "Es incorrecto: el punto más alto corresponde a la media (moda y mediana), no al valor de la desviación típica.",
-      "pista": "Identifique qué medida de tendencia central define la ubicación del pico de la montaña en el gráfico."
+      "correct": 1,
+      "hint": "Identifique qué medida de tendencia central define la ubicación del pico de la montaña en el gráfico.",
+      "explanation": "Es incorrecto: el punto más alto corresponde a la media (moda y mediana), no al valor de la desviación típica."
     },
     {
       "q": "Elija la afirmación incorrecta sobre la probabilidad acumulada por encima de puntuaciones $$Z$$.",
-      "opciones": [
+      "options": [
         "Si una puntuación $$Z = -1,00$$ deja por debajo el 15,87%, por encima dejará el 84,13% de los casos.",
         "La suma del porcentaje por debajo y por encima de cualquier punto $$Z$$ debe ser siempre 100,00%.",
         "Por encima de una puntuación $$Z = 2,00$$ se encuentra el 50,00% de la población total analizada."
       ],
-      "correcta": 2,
-      "explicacion": "Es incorrecto: por encima de $$Z = 2,00$$ solo queda un pequeño porcentaje de casos extremos (aprox. 2,28%), no la mitad.",
-      "pista": "Recuerde que el 50,00% solo se encuentra por encima de la media ($$Z = 0,00$$)."
+      "correct": 2,
+      "hint": "Recuerde que el 50,00% solo se encuentra por encima de la media ($$Z = 0,00$$).",
+      "explanation": "Es incorrecto: por encima de $$Z = 2,00$$ solo queda un pequeño porcentaje de casos extremos (aprox. 2,28%), no la mitad."
     },
     {
       "q": "Elija la afirmación incorrecta sobre el ejemplo del dado trucado presentado en el tema.",
-      "opciones": [
+      "options": [
         "En el dado trucado, la probabilidad de obtener un 3 era de 0,000 al haber sido sustituido por un 4.",
         "La distribución de partida del dado trucado era uniforme, al igual que la de un dado convencional.",
         "Al lanzar diez dados trucados, la distribución resultante mostraba una clara tendencia a la normalidad."
       ],
-      "correcta": 1,
-      "explicacion": "Es incorrecto: la distribución del dado trucado era errática y no uniforme, ya que las caras no tenían la misma probabilidad.",
-      "pista": "Compare las probabilidades de las caras en el dado trucado (algunas 0, otras 0,33) para ver si eran iguales."
+      "correct": 1,
+      "hint": "Compare las probabilidades de las caras en el dado trucado (algunas 0, otras 0,33) para ver si eran iguales.",
+      "explanation": "Es incorrecto: la distribución del dado trucado era errática y no uniforme, ya que las caras no tenían la misma probabilidad."
     },
     {
       "q": "Elija la afirmación incorrecta sobre la relación entre el área bajo la curva y la probabilidad.",
-      "opciones": [
+      "options": [
         "Las proporciones de área bajo la curva normal pueden transformarse en valores de probabilidad de 0 a 1.",
         "Un valor de probabilidad de 0,9544 indica que el suceso es extremadamente infrecuente en la población.",
         "El área comprendida entre $$\\mu \\pm 1\\sigma$$ representa aproximadamente el 68,26% de la probabilidad total."
       ],
-      "correcta": 1,
-      "explicacion": "Es incorrecto: una probabilidad de 0,9544 es muy alta, lo que indica que el suceso o rango es muy común, no infrecuente.",
-      "pista": "Diferencie entre una probabilidad alta (suceso común) y una probabilidad baja (suceso infrecuente)."
+      "correct": 1,
+      "hint": "Diferencie entre una probabilidad alta (suceso común) y una probabilidad baja (suceso infrecuente).",
+      "explanation": "Es incorrecto: una probabilidad de 0,9544 es muy alta, lo que indica que el suceso o rango es muy común, no infrecuente."
     },
     {
       "q": "Elija la afirmación incorrecta sobre el concepto de inferencia estadística según el capítulo 5.",
-      "opciones": [
+      "options": [
         "La inferencia estadística es una continuación natural y directa de la estadística descriptiva.",
         "Se limita exclusivamente a describir los datos de la muestra sin intentar generalizar a la población.",
         "Permite acercarse al valor del parámetro poblacional a partir del valor del estadístico muestral."
       ],
-      "correcta": 1,
-      "explicacion": "Es incorrecto: la esencia de la inferencia es precisamente ir más allá de la descripción para generalizar conclusiones a la población.",
-      "pista": "Revise el primer párrafo de la sección 5.1 sobre el fin que pretende la inferencia."
+      "correct": 1,
+      "hint": "Revise el primer párrafo de la sección 5.1 sobre el fin que pretende la inferencia.",
+      "explanation": "Es incorrecto: la esencia de la inferencia es precisamente ir más allá de la descripción para generalizar conclusiones a la población."
     },
     {
       "q": "Elija la afirmación incorrecta respecto al cálculo de la media de la inteligencia tipificada.",
-      "opciones": [
+      "options": [
         "Al ser una distribución normal, la inteligencia media poblacional se sitúa en el valor central de 100.",
         "La probabilidad de encontrar a alguien con una inteligencia entre 85 y 115 es del 99,72%.",
         "Las personas con una inteligencia superior a 145 puntos son consideradas estadísticamente escasísimas."
       ],
-      "correcta": 1,
-      "explicacion": "Es incorrecto: el rango 85-115 corresponde a $$\\mu \\pm 1\\sigma$$, cuya probabilidad es 68,26%, no 99,72%.",
-      "pista": "Verifique el porcentaje asociado al intervalo de una desviación típica ($$100 \\pm 15$$)."
-    },
+      "correct": 1,
+      "hint": "Verifique el porcentaje asociado al intervalo de una desviación típica ($$100 \\pm 15$$).",
+      "explanation": "Es incorrecto: el rango 85-115 corresponde a $$\\mu \\pm 1\\sigma$$, cuya probabilidad es 68,26%, no 99,72%."
+    }
+  ],
+  "jsonTestB": [
     {
       "q": "Si extraemos todas las muestras posibles de tamaño $n$ con reposición de una población $N$, el valor esperado de la media muestral $E(\\bar{X})$ es ____.",
-      "opciones": [
+      "options": [
         "El valor del parámetro $\\mu$",
         "El valor del estadístico $\\bar{x}$",
         "El error típico de la media $\\sigma$"
       ],
-      "correcta": 0,
-      "explicacion": "$$\\text{Según el manual, } E(\\bar{X}) = \\mu\\text{, lo que indica que la media de la distribución muestral coincide con el parámetro poblacional.}$$",
-      "pista": "Recuerde la propiedad de los estimadores insesgados en la distribución teórica."
+      "correct": 0,
+      "hint": "Recuerde la propiedad de los estimadores insesgados en la distribución teórica.",
+      "explanation": "$$\\text{Según el manual, } E(\\bar{X}) = \\mu\\text{, lo que indica que la media de la distribución muestral coincide con el parámetro poblacional.}$$"
     },
     {
       "q": "En una población de $N = 5$ elementos, el número total de muestras posibles de tamaño $n = 2$ que se pueden extraer mediante muestreo con reposición es ____.",
-      "opciones": [
+      "options": [
         "Un total de $10$ combinaciones",
         "Un total de $25$ combinaciones",
         "Un total de $32$ combinaciones"
       ],
-      "correcta": 1,
-      "explicacion": "$$\\text{El número de muestras posibles con reposición se calcula como } N^n = 5^2 = 25\\text{.}$$",
-      "pista": "La fórmula para el número de muestras con reposición es exponencial."
+      "correct": 1,
+      "hint": "La fórmula para el número de muestras con reposición es exponencial.",
+      "explanation": "$$\\text{El número de muestras posibles con reposición se calcula como } N^n = 5^2 = 25\\text{.}$$"
     },
     {
       "q": "Dada una distribución de inteligencia con $\\mu = 100$ y $\\sigma = 15$, la puntuación típica $Z$ correspondiente a un sujeto con un CI de $130$ es ____.",
-      "opciones": [
+      "options": [
         "Un valor exacto de $Z = 1,50$",
         "Un valor exacto de $Z = 2,00$",
         "Un valor exacto de $Z = 3,00$"
       ],
-      "correcta": 1,
-      "explicacion": "$$Z = \\frac{X_i - \\mu}{\\sigma} = \\frac{130 - 100}{15} = \\frac{30}{15} = 2,00$$",
-      "pista": "Aplique la fórmula de tipificación estándar restando la media y dividiendo por la desviación."
+      "correct": 1,
+      "hint": "Aplique la fórmula de tipificación estándar restando la media y dividiendo por la desviación.",
+      "explanation": "$$Z = \\frac{X_i - \\mu}{\\sigma} = \\frac{130 - 100}{15} = \\frac{30}{15} = 2,00$$"
     },
     {
       "q": "En la curva normal, el porcentaje de casos que se encuentran en el intervalo comprendido entre $\\mu \\pm 1\\sigma$ es exactamente del ____.",
-      "opciones": [
+      "options": [
         "Un porcentaje de $68,26\\%$",
         "Un porcentaje de $95,44\\%$",
         "Un porcentaje de $99,72\\%$"
       ],
-      "correcta": 0,
-      "explicacion": "$$\\text{La propiedad de la distribución normal establece que } P(\\mu \\pm 1\\sigma) = 0,6826\\text{, es decir, el } 68,26\\%\\text{.}$$",
-      "pista": "Es la probabilidad asociada a la primera desviación típica en una distribución mesocúrtica."
+      "correct": 0,
+      "hint": "Es la probabilidad asociada a la primera desviación típica en una distribución mesocúrtica.",
+      "explanation": "$$\\text{La propiedad de la distribución normal establece que } P(\\mu \\pm 1\\sigma) = 0,6826\\text{, es decir, el } 68,26\\%\\text{.}$$"
     },
     {
       "q": "Si un sujeto obtiene una puntuación típica $Z = -1,00$, el porcentaje de la población que queda por debajo de su puntuación es del ____.",
-      "opciones": [
+      "options": [
         "Un total del $13,59\\%$",
         "Un total del $15,87\\%$",
         "Un total del $34,13\\%$"
       ],
-      "correcta": 1,
-      "explicacion": "$$P(Z < -1) = 0,5000 - 0,3413 = 0,1587\\text{, lo que equivale al } 15,87\\%\\text{.}$$",
-      "pista": "Reste la probabilidad de la media ($50\\%$) el área entre la media y $-1\\sigma$."
+      "correct": 1,
+      "hint": "Reste la probabilidad de la media ($50\\%$) el área entre la media y $-1\\sigma$.",
+      "explanation": "$$P(Z < -1) = 0,5000 - 0,3413 = 0,1587\\text{, lo que equivale al } 15,87\\%\\text{.}$$"
     },
     {
       "q": "El Teorema Central del Límite postula que la distribución muestral de la media tiende a la normalidad siempre que el tamaño de la muestra sea ____.",
-      "opciones": [
+      "options": [
         "Superior a $n = 30$ sujetos",
         "Inferior a $n = 30$ sujetos",
         "Igual a la población total $N$"
       ],
-      "correcta": 0,
-      "explicacion": "$$\\text{El teorema indica que con } n > 30\\text{ la distribución de medias tiende a la normalidad independientemente de la forma original.}$$",
-      "pista": "Considere el criterio estándar para aplicar pruebas paramétricas basado en el tamaño muestral."
+      "correct": 0,
+      "hint": "Considere el criterio estándar para aplicar pruebas paramétricas basado en el tamaño muestral.",
+      "explanation": "$$\\text{El teorema indica que con } n > 30\\text{ la distribución de medias tiende a la normalidad independientemente de la forma original.}$$"
     },
     {
       "q": "La probabilidad de obtener una suma de $7$ puntos al lanzar dos dados de seis caras perfectamente equilibrados es de ____.",
-      "opciones": [
+      "options": [
         "Un valor de $p = 0,139$",
         "Un valor de $p = 0,167$",
         "Un valor de $p = 0,194$"
       ],
-      "correcta": 1,
-      "explicacion": "$$P(7) = \\frac{6}{36} = 0,1666... \\approx 0,167$$",
-      "pista": "Divida el número de combinaciones favorables ($6$) entre el espacio muestral total ($36$)."
+      "correct": 1,
+      "hint": "Divida el número de combinaciones favorables ($6$) entre el espacio muestral total ($36$).",
+      "explanation": "$$P(7) = \\frac{6}{36} = 0,1666... \\approx 0,167$$"
     },
     {
       "q": "En una distribución normal, la distancia entre $\\mu \\pm 4\\sigma$ abarca una probabilidad acumulada del ____.",
-      "opciones": [
+      "options": [
         "Un total de $99,72\\%$",
         "Un total de $99,86\\%$",
         "Un total de $99,92\\%$"
       ],
-      "correcta": 2,
-      "explicacion": "$$\\text{Según la Figura 70, } P(\\mu \\pm 4\\sigma) = 99,92\\%\\text{, dejando solo un } 0,04\\%\\text{ en cada extremo.}$$",
-      "pista": "Se trata del nivel de confianza más alto mencionado en el manual para desviaciones extremas."
+      "correct": 2,
+      "hint": "Se trata del nivel de confianza más alto mencionado en el manual para desviaciones extremas.",
+      "explanation": "$$\\text{Según la Figura 70, } P(\\mu \\pm 4\\sigma) = 99,92\\%\\text{, dejando solo un } 0,04\\%\\text{ en cada extremo.}$$"
     },
     {
       "q": "Para un CI de $70$ en una escala con $\\mu = 100$ y $\\sigma = 15$, la puntuación típica $Z$ resultante es ____.",
-      "opciones": [
+      "options": [
         "Un valor de $Z = -2,00$",
         "Un valor de $Z = -1,50$",
         "Un valor de $Z = -3,00$"
       ],
-      "correcta": 0,
-      "explicacion": "$$Z = \\frac{70 - 100}{15} = \\frac{-30}{15} = -2,00$$",
-      "pista": "El valor se encuentra dos desviaciones típicas por debajo de la media."
+      "correct": 0,
+      "hint": "El valor se encuentra dos desviaciones típicas por debajo de la media.",
+      "explanation": "$$Z = \\frac{70 - 100}{15} = \\frac{-30}{15} = -2,00$$"
     },
     {
       "q": "La distribución normal tipificada se caracteriza por tener siempre una media y desviación típica de ____.",
-      "opciones": [
+      "options": [
         "Valores de $\\mu=1$ y $\\sigma=0$",
         "Valores de $\\mu=0$ y $\\sigma=1$",
         "Valores de $\\mu=1$ y $\\sigma=1$"
       ],
-      "correcta": 1,
-      "explicacion": "$$\\text{La tipificación transforma cualquier variable en una escala con } \\mu = 0 \\text{ y } \\sigma = 1\\text{.}$$",
-      "pista": "Piense en los parámetros de la distribución $N(0, 1)$."
+      "correct": 1,
+      "hint": "Piense en los parámetros de la distribución $N(0, 1)$.",
+      "explanation": "$$\\text{La tipificación transforma cualquier variable en una escala con } \\mu = 0 \\text{ y } \\sigma = 1\\text{.}$$"
     },
     {
       "q": "Si una persona tiene un CI de $85$, supera al ____ de la población en capacidad intelectual.",
-      "opciones": [
+      "options": [
         "Porcentaje del $15,87\\%$",
         "Porcentaje del $34,13\\%$",
         "Porcentaje del $50,00\\%$"
       ],
-      "correcta": 0,
-      "explicacion": "$$\\text{Como } P(Z < -1) = 0,1587\\text{, el sujeto supera al } 15,87\\% \\text{ de su grupo de referencia.}$$",
-      "pista": "Un CI de $85$ equivale a una puntuación $Z = -1,00$."
+      "correct": 0,
+      "hint": "Un CI de $85$ equivale a una puntuación $Z = -1,00$.",
+      "explanation": "$$\\text{Como } P(Z < -1) = 0,1587\\text{, el sujeto supera al } 15,87\\% \\text{ de su grupo de referencia.}$$"
     },
     {
       "q": "En el experimento de las rocas con pesos $2, 4, 6, 8, 10$ kg, la media de la población $\\mu$ es ____.",
-      "opciones": [
+      "options": [
         "Un peso de $5,00$ kg",
         "Un peso de $6,00$ kg",
         "Un peso de $8,00$ kg"
       ],
-      "correcta": 1,
-      "explicacion": "$$\\mu = \\frac{2+4+6+8+10}{5} = \\frac{30}{5} = 6$$",
-      "pista": "Sume los cinco valores y divida por $N=5$."
+      "correct": 1,
+      "hint": "Sume los cinco valores y divida por $N=5$.",
+      "explanation": "$$\\mu = \\frac{2+4+6+8+10}{5} = \\frac{30}{5} = 6$$"
     },
     {
       "q": "El proceso de extraer conclusiones sobre los parámetros de una población a partir de estadísticos muestrales se denomina ____.",
-      "opciones": [
+      "options": [
         "Análisis descriptivo",
         "Inferencia estadística",
         "Muestreo aleatorio"
       ],
-      "correcta": 1,
-      "explicacion": "$$\\text{La inferencia estadística pretende extraer conclusiones sobre la población a partir de una muestra representativa.}$$",
-      "pista": "Es el título principal del Capítulo 5."
+      "correct": 1,
+      "hint": "Es el título principal del Capítulo 5.",
+      "explanation": "$$\\text{La inferencia estadística pretende extraer conclusiones sobre la población a partir de una muestra representativa.}$$"
     },
     {
       "q": "La función de la inferencia que consiste en formular afirmaciones sobre la población para mantenerlas o rechazarlas es la ____.",
-      "opciones": [
+      "options": [
         "Estimación puntual",
         "Prueba de hipótesis",
         "Estimación de intervalo"
       ],
-      "correcta": 1,
-      "explicacion": "$$\\text{La prueba de hipótesis evalúa información de la muestra para decidir sobre afirmaciones poblacionales.}$$",
-      "pista": "Implica tomar una decisión probabilística sobre una proposición."
+      "correct": 1,
+      "hint": "Implica tomar una decisión probabilística sobre una proposición.",
+      "explanation": "$$\\text{La prueba de hipótesis evalúa información de la muestra para decidir sobre afirmaciones poblacionales.}$$"
     },
     {
       "q": "Si lanzamos diez dados de seis caras, el valor esperado de la suma de sus puntuaciones es de ____.",
-      "opciones": [
+      "options": [
         "Un valor de $35,00$",
         "Un valor de $36,00$",
         "Un valor de $42,00$"
       ],
-      "correcta": 0,
-      "explicacion": "$$E(\\sum X) = n \\cdot E(X) = 10 \\cdot 3,5 = 35,0$$",
-      "pista": "Multiplique la media de un dado ($3,5$) por el número de dados ($10$)."
+      "correct": 0,
+      "hint": "Multiplique la media de un dado ($3,5$) por el número de dados ($10$).",
+      "explanation": "$$E(\\sum X) = n \\cdot E(X) = 10 \\cdot 3,5 = 35,0$$"
     },
     {
       "q": "Una curva normal se define como mesocúrtica porque su apuntamiento es ____.",
-      "opciones": [
+      "options": [
         "Extremadamente alto",
         "Solo moderadamente",
         "Totalmente plano"
       ],
-      "correcta": 1,
-      "explicacion": "$$\\text{La distribución normal es simétrica y apuntada solo moderadamente, lo que se denomina mesocúrtica.}$$",
-      "pista": "Es un término que describe la forma de la campana de Gauss."
+      "correct": 1,
+      "hint": "Es un término que describe la forma de la campana de Gauss.",
+      "explanation": "$$\\text{La distribución normal es simétrica y apuntada solo moderadamente, lo que se denomina mesocúrtica.}$$"
     },
     {
       "q": "En una distribución normal, el valor de la media coincide necesariamente con los valores de ____.",
-      "opciones": [
+      "options": [
         "La moda y mediana",
         "La varianza y moda",
         "La mediana y el $Q_1$"
       ],
-      "correcta": 0,
-      "explicacion": "$$\\text{En distribuciones perfectamente normales, media, moda y mediana se ubican en el centro y coinciden.}$$",
-      "pista": "Es una propiedad fundamental de la simetría perfecta."
+      "correct": 0,
+      "hint": "Es una propiedad fundamental de la simetría perfecta.",
+      "explanation": "$$\\text{En distribuciones perfectamente normales, media, moda y mediana se ubican en el centro y coinciden.}$$"
     },
     {
       "q": "La probabilidad de que una media muestral se aleje más de $3\\sigma$ del parámetro $\\mu$ es de ____.",
-      "opciones": [
+      "options": [
         "Un total del $0,28\\%$",
         "Un total del $4,56\\%$",
         "Un total del $5,00\\%$"
       ],
-      "correcta": 0,
-      "explicacion": "$$100\\% - 99,72\\% = 0,28\\% \\text{ (repartido en dos colas de } 0,14\\%\\text{ cada una).}$$",
-      "pista": "Es el área restante fuera del intervalo del $99,72\\%$."
+      "correct": 0,
+      "hint": "Es el área restante fuera del intervalo del $99,72\\%$.",
+      "explanation": "$$100\\% - 99,72\\% = 0,28\\% \\text{ (repartido en dos colas de } 0,14\\%\\text{ cada una).}$$"
     },
     {
       "q": "Si un dado está trucado y la cara del $3$ se sustituye por otro $4$, la media del lanzamiento $\\mu$ pasa a ser ____.",
-      "opciones": [
+      "options": [
         "Un valor de $3,50$",
         "Un valor de $3,67$",
         "Un valor de $4,00$"
       ],
-      "correcta": 1,
-      "explicacion": "$$\\mu = \\frac{22}{6} = 3,666... \\approx 3,67$$",
-      "pista": "Calcule la nueva suma $(1+2+4+4+5+6)$ y divida por $6$."
+      "correct": 1,
+      "hint": "Calcule la nueva suma $(1+2+4+4+5+6)$ y divida por $6$.",
+      "explanation": "$$\\mu = \\frac{22}{6} = 3,666... \\approx 3,67$$"
     },
     {
       "q": "La distribución muestral de un estadístico es una distribución ____ que asigna probabilidades a cada valor potencial del mismo.",
-      "opciones": [
+      "options": [
         "Distribución teórica",
         "Distribución empírica",
         "Distribución sesgada"
       ],
-      "correcta": 0,
-      "explicacion": "$$\\text{La distribución muestral es teórica pues considera la totalidad de muestras posibles de un mismo tamaño.}$$",
-      "pista": "No se basa en una sola muestra, sino en todas las posibles."
+      "correct": 0,
+      "hint": "No se basa en una sola muestra, sino en todas las posibles.",
+      "explanation": "$$\\text{La distribución muestral es teórica pues considera la totalidad de muestras posibles de un mismo tamaño.}$$"
     },
     {
       "q": "¿Qué propiedades caracterizan formalmente a una distribución normal de datos?",
-      "opciones": [
+      "options": [
         "Es simétrica y mesocúrtica",
         "Su línea es asintótica al eje",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "$$\\text{La normal es simétrica, mesocúrtica y asintótica, extendiéndose al infinito sin tocar el eje X.}$$",
-      "pista": "Repase la sección 5.2.3 sobre las propiedades de la forma."
+      "correct": 2,
+      "hint": "Repase la sección 5.2.3 sobre las propiedades de la forma.",
+      "explanation": "$$\\text{La normal es simétrica, mesocúrtica y asintótica, extendiéndose al infinito sin tocar el eje X.}$$"
     },
     {
       "q": "¿Cuáles son los parámetros básicos que delimitan unívocamente una curva normal?",
-      "opciones": [
+      "options": [
         "La media poblacional $\\mu$",
         "La desviación típica $\\sigma$",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "$$\\text{Toda distribución normal queda definida por su centro (media) y su dispersión (desviación típica).}$$",
-      "pista": "Se representa habitualmente como $N(\\mu, \\sigma)$."
+      "correct": 2,
+      "hint": "Se representa habitualmente como $N(\\mu, \\sigma)$.",
+      "explanation": "$$\\text{Toda distribución normal queda definida por su centro (media) y su dispersión (desviación típica).}$$"
     },
     {
       "q": "¿Qué implicaciones tiene el Teorema Central del Límite para la investigación en psicología?",
-      "opciones": [
+      "options": [
         "Permite el uso de pruebas paramétricas",
         "Garantiza tendencia a la normalidad",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "$$\\text{El TCL justifica el uso de pruebas paramétricas al asumir normalidad en muestras grandes (} n \\ge 30\\text{).}$$",
-      "pista": "Piense en la justificación estadística de los análisis comparativos."
+      "correct": 2,
+      "hint": "Piense en la justificación estadística de los análisis comparativos.",
+      "explanation": "$$\\text{El TCL justifica el uso de pruebas paramétricas al asumir normalidad en muestras grandes (} n \\ge 30\\text{).}$$"
     },
     {
       "q": "En el contexto de la inferencia, ¿qué requisitos debe cumplir una muestra para ser útil?",
-      "opciones": [
+      "options": [
         "Debe ser representativa de la población",
         "Debe permitir la extrapolación de datos",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "$$\\text{La representatividad y la capacidad de generalización son el corazón de la inferencia estadística.}$$",
-      "pista": "Sin estas condiciones, la inferencia sería sesgada."
+      "correct": 2,
+      "hint": "Sin estas condiciones, la inferencia sería sesgada.",
+      "explanation": "$$\\text{La representatividad y la capacidad de generalización son el corazón de la inferencia estadística.}$$"
     },
     {
       "q": "Sobre las puntuaciones típicas $Z$, es correcto afirmar que:",
-      "opciones": [
+      "options": [
         "Permiten comparar métricas diferentes",
         "Tienen una media de cero y $\\sigma$ de uno",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "$$\\text{Las puntuaciones Z estandarizan datos en una escala } N(0, 1)\\text{ facilitando comparaciones directas.}$$",
-      "pista": "Es la escala común utilizada para estandarizar variables."
+      "correct": 2,
+      "hint": "Es la escala común utilizada para estandarizar variables.",
+      "explanation": "$$\\text{Las puntuaciones Z estandarizan datos en una escala } N(0, 1)\\text{ facilitando comparaciones directas.}$$"
     },
     {
       "q": "¿Qué fenómenos psicológicos suelen aproximarse a una distribución normal?",
-      "opciones": [
+      "options": [
         "La inteligencia y aptitudes cognitivas",
         "Los rasgos de personalidad estables",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "$$\\text{Dimensiones como inteligencia, personalidad y ansiedad tienden a distribuirse normalmente en la población.}$$",
-      "pista": "Revise el apartado de 'Relevancia' en las propiedades de la normal."
+      "correct": 2,
+      "hint": "Revise el apartado de 'Relevancia' en las propiedades de la normal.",
+      "explanation": "$$\\text{Dimensiones como inteligencia, personalidad y ansiedad tienden a distribuirse normalmente en la población.}$$"
     },
     {
       "q": "Al calcular la probabilidad de una distribución normal, podemos decir que:",
-      "opciones": [
+      "options": [
         "El área total bajo la curva suma $1,00$",
         "Es simétrica respecto a su media $\\mu$",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "$$\\text{La simetría y el área unitaria son propiedades fundamentales de cualquier densidad de probabilidad normal.}$$",
-      "pista": "Son axiomas básicos de la probabilidad y geometría de la curva."
+      "correct": 2,
+      "hint": "Son axiomas básicos de la probabilidad y geometría de la curva.",
+      "explanation": "$$\\text{La simetría y el área unitaria son propiedades fundamentales de cualquier densidad de probabilidad normal.}$$"
     },
     {
       "q": "Respecto al error en la estimación, el manual indica que:",
-      "opciones": [
+      "options": [
         "La variabilidad es inherente al azar",
         "Muestras pequeñas tienen más error",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "$$\\text{El error muestral disminuye al aumentar el tamaño y número de muestras, acercándose al parámetro.}$$",
-      "pista": "Considere la comparación entre $5$ muestras y $500$ muestras del ejemplo."
+      "correct": 2,
+      "hint": "Considere la comparación entre $5$ muestras y $500$ muestras del ejemplo.",
+      "explanation": "$$\\text{El error muestral disminuye al aumentar el tamaño y número de muestras, acercándose al parámetro.}$$"
     },
     {
       "q": "¿Qué se requiere para realizar una inferencia estadística correcta?",
-      "opciones": [
+      "options": [
         "Uso de leyes de la probabilidad",
         "Selección aleatoria de participantes",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "$$\\text{La aleatorización y la probabilidad sustentan la validez de las conclusiones inferenciales.}$$",
-      "pista": "Considere los elementos del proceso de muestreo probabilístico."
+      "correct": 2,
+      "hint": "Considere los elementos del proceso de muestreo probabilístico.",
+      "explanation": "$$\\text{La aleatorización y la probabilidad sustentan la validez de las conclusiones inferenciales.}$$"
     },
     {
       "q": "En una distribución $N(100, 15)$, ¿cuáles son los límites del $95,44\\%$ central?",
-      "opciones": [
+      "options": [
         "Se encuentra entre $70$ y $130$ puntos",
         "Abarca exactamente $\\mu \\pm 2\\sigma$ unidades",
         "Todas las anteriores son correctas"
       ],
-      "correcta": 2,
-      "explicacion": "$$\\mu \\pm 2\\sigma = 100 \\pm 30 = [70, 130]\\text{, que corresponde al } 95,44\\%\\text{ de los casos.}$$",
-      "pista": "Calcule $100 - (2 \\cdot 15)$ y $100 + (2 \\cdot 15)$."
+      "correct": 2,
+      "hint": "Calcule $100 - (2 \\cdot 15)$ y $100 + (2 \\cdot 15)$.",
+      "explanation": "$$\\mu \\pm 2\\sigma = 100 \\pm 30 = [70, 130]\\text{, que corresponde al } 95,44\\%\\text{ de los casos.}$$"
     },
     {
       "q": "Calcule la puntuación $Z$ para un valor $X = 115$ en una población con $\\mu = 70$ y $\\sigma = 10$.",
-      "opciones": [
+      "options": [
         "Un valor de $Z = 4,00$",
         "Un valor de $Z = 4,50$",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "$$Z = \\frac{115 - 70}{10} = \\frac{45}{10} = 4,50\\text{. (Nota: El distractor visual es similar, pero el cálculo debe ser preciso).}$$",
-      "pista": "Realice el cálculo: $(115 - 70) / 10$."
+      "correct": 2,
+      "hint": "Realice el cálculo: $(115 - 70) / 10$.",
+      "explanation": "$$Z = \\frac{115 - 70}{10} = \\frac{45}{10} = 4,50\\text{. (Nota: El distractor visual es similar, pero el cálculo debe ser preciso).}$$"
     },
     {
       "q": "Determine la probabilidad de que una puntuación de inteligencia sea exactamente mayor a $145$.",
-      "opciones": [
+      "options": [
         "Probabilidad de $0,0228$",
         "Probabilidad de $0,0028$",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "$$P(X > 145) = P(Z > 3) = \\frac{1 - 0,9972}{2} = \\frac{0,0028}{2} = 0,0014\\text{.}$$",
-      "pista": "Considere que $145$ es $+3\\sigma$. El área por encima es la mitad de $(1 - 0,9972)$."
+      "correct": 2,
+      "hint": "Considere que $145$ es $+3\\sigma$. El área por encima es la mitad de $(1 - 0,9972)$.",
+      "explanation": "$$P(X > 145) = P(Z > 3) = \\frac{1 - 0,9972}{2} = \\frac{0,0028}{2} = 0,0014\\text{.}$$"
     },
     {
       "q": "Si en un saco de $N=5$ rocas ($2,4,6,8,10$ kg) extraemos muestras de $n=3$, ¿cuántas muestras habría?",
-      "opciones": [
+      "options": [
         "Un total de $15$ muestras",
         "Un total de $25$ muestras",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "$$N^n = 5^3 = 125\\text{. Las opciones de } 15 \\text{ y } 25 \\text{ son errores de multiplicación o potencias incorrectas.}$$",
-      "pista": "La fórmula es $N^n$ para muestreo con reposición."
+      "correct": 2,
+      "hint": "La fórmula es $N^n$ para muestreo con reposición.",
+      "explanation": "$$N^n = 5^3 = 125\\text{. Las opciones de } 15 \\text{ y } 25 \\text{ son errores de multiplicación o potencias incorrectas.}$$"
     },
     {
       "q": "¿Cuál es la puntuación directa $X$ que deja por debajo al $50\\%$ en una $N(100, 15)$?",
-      "opciones": [
+      "options": [
         "Una puntuación de $85$",
         "Una puntuación de $115$",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "$$\\text{El valor que deja por debajo al } 50\\% \\text{ es la mediana/media, que es } 100\\text{.}$$",
-      "pista": "En la normal, el $50\\%$ coincide con la media."
+      "correct": 2,
+      "hint": "En la normal, el $50\\%$ coincide con la media.",
+      "explanation": "$$\\text{El valor que deja por debajo al } 50\\% \\text{ es la mediana/media, que es } 100\\text{.}$$"
     },
     {
       "q": "Calcule la desviación típica $S_x$ de un solo dado perfecto según el ejemplo del manual.",
-      "opciones": [
+      "options": [
         "Un valor de $1,71$",
         "Un valor de $3,50$",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "$$S_x = \\sqrt{3,50} = 1,87\\text{. El valor } 3,50 \\text{ es la varianza, no la desviación típica.}$$",
-      "pista": "El manual indica que $S_x^2 = 3,50$, por lo que debe extraer la raíz."
+      "correct": 2,
+      "hint": "El manual indica que $S_x^2 = 3,50$, por lo que debe extraer la raíz.",
+      "explanation": "$$S_x = \\sqrt{3,50} = 1,87\\text{. El valor } 3,50 \\text{ es la varianza, no la desviación típica.}$$"
     },
     {
       "q": "En el dado trucado (cara $3$ por cara $4$), ¿cuál es la probabilidad de obtener un $4$?",
-      "opciones": [
+      "options": [
         "Probabilidad de $0,167$",
         "Probabilidad de $0,500$",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "$$P(4) = \\frac{2}{6} = 0,333\\text{. El valor } 0,167 \\text{ es para dados normales.}$$",
-      "pista": "Hay dos caras con el número $4$ de un total de seis."
+      "correct": 2,
+      "hint": "Hay dos caras con el número $4$ de un total de seis.",
+      "explanation": "$$P(4) = \\frac{2}{6} = 0,333\\text{. El valor } 0,167 \\text{ es para dados normales.}$$"
     },
     {
       "q": "Si $P(\\mu \\pm 2\\sigma) = 95,44\\%$, ¿qué porcentaje queda en el intervalo $(\\mu + 1\\sigma)$ a $(\\mu + 2\\sigma)$?",
-      "opciones": [
+      "options": [
         "Un total del $15,87\\%$",
         "Un total del $27,18\\%$",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "$$P(1 < Z < 2) = 0,4772 - 0,3413 = 0,1359 \\text{ (o } 13,59\\%\\text{).}$$",
-      "pista": "Reste el área de $1\\sigma$ ($34,13\\%$) al área de $2\\sigma$ ($47,72\\%$)."
+      "correct": 2,
+      "hint": "Reste el área de $1\\sigma$ ($34,13\\%$) al área de $2\\sigma$ ($47,72\\%$).",
+      "explanation": "$$P(1 < Z < 2) = 0,4772 - 0,3413 = 0,1359 \\text{ (o } 13,59\\%\\text{).}$$"
     },
     {
       "q": "En una distribución normal, si $Z = 4,00$, ¿cuánta probabilidad queda por encima?",
-      "opciones": [
+      "options": [
         "Probabilidad de $0,0008$",
         "Probabilidad de $0,0040$",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "$$\\text{El área en la cola superior es } (1 - 0,9992) / 2 = 0,0008 / 2 = 0,0004\\text{.}$$",
-      "pista": "Considere que el área central para $4\\sigma$ es $99,92\\%$."
+      "correct": 2,
+      "hint": "Considere que el área central para $4\\sigma$ es $99,92\\%$.",
+      "explanation": "$$\\text{El área en la cola superior es } (1 - 0,9992) / 2 = 0,0008 / 2 = 0,0004\\text{.}$$"
     },
     {
       "q": "Si un investigador toma $n=10$ muestras de una población $N=100$, el promedio de sus medias será:",
-      "opciones": [
+      "options": [
         "Exactamente igual a $\\mu$",
         "Exactamente igual a $\\bar{x}$",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "$$\\text{Con solo } 10 \\text{ muestras hay error. Solo el valor esperado } E(\\bar{X}) \\text{ (teórico) es } \\mu\\text{.}$$",
-      "pista": "El manual dice que tiende a serlo 'a medida que aumentamos el número de muestras'."
+      "correct": 2,
+      "hint": "El manual dice que tiende a serlo 'a medida que aumentamos el número de muestras'.",
+      "explanation": "$$\\text{Con solo } 10 \\text{ muestras hay error. Solo el valor esperado } E(\\bar{X}) \\text{ (teórico) es } \\mu\\text{.}$$"
     },
     {
       "q": "¿Cuál es la puntuación $Z$ para un CI de $160$ si $\\mu=100$ y $\\sigma=15$?",
-      "opciones": [
+      "options": [
         "Un valor de $Z = 3,50$",
         "Un valor de $Z = 4,50$",
         "Ninguna de las anteriores es correcta"
       ],
-      "correcta": 2,
-      "explicacion": "$$Z = \\frac{60}{15} = 4,00\\text{. Las opciones dadas son errores de división.}$$",
-      "pista": "Reste $160 - 100$ y divida por $15$."
+      "correct": 2,
+      "hint": "Reste $160 - 100$ y divida por $15$.",
+      "explanation": "$$Z = \\frac{60}{15} = 4,00\\text{. Las opciones dadas son errores de división.}$$"
     }
   ],
-  "laboratorio": [
+  "jsonLaboratorio": [
     {
       "id": 1,
-      "titulo": "Análisis de Inteligencia Estándar",
-      "escenario": "En el estudio de la inteligencia, se utiliza una distribución normal con media $\\mu = 100$ y desviación típica $\\sigma = 15$. La fórmula de tipificación es $Z = \\frac{X - \\mu}{\\sigma}$.",
-      "preguntas": [
+      "title": "Análisis de Inteligencia Estándar",
+      "context": "En el estudio de la inteligencia, se utiliza una distribución normal con media $\\mu = 100$ y desviación típica $\\sigma = 15$. La fórmula de tipificación es $Z = \\frac{X - \\mu}{\\sigma}$.",
+      "parts": [
         {
           "id": "p1a",
           "label": "a)",
-          "enunciado": "Calcula la puntuación Z para un sujeto con un CI de 130.",
-          "respuesta": 2,
-          "tolerancia": 0,
-          "pista": "$$Z = \\frac{130 - 100}{15} = \\frac{30}{15} = 2.0$$"
+          "question": "Calcula la puntuación Z para un sujeto con un CI de 130.",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$Z = \\frac{130 - 100}{15} = \\frac{30}{15} = 2.0$$"
         },
         {
           "id": "p1b",
           "label": "b)",
-          "enunciado": "Según el manual, ¿qué porcentaje de la población queda por debajo de $Z = 2$? (Usa el valor exacto del PDF: 95.44% central + cola izquierda).",
-          "respuesta": 97.72,
-          "tolerancia": 0.01,
-          "pista": "$$P(Z < 2) = 50\\% + (95.44\\% / 2) = 50\\% + 47.72\\% = 97.72\\%$$"
+          "question": "Según el manual, ¿qué porcentaje de la población queda por debajo de $Z = 2$? (Usa el valor exacto del PDF: 95.44% central + cola izquierda).",
+          "correctValue": 97.72,
+          "tolerance": 0.01,
+          "explanation": "$$P(Z < 2) = 50\\% + (95.44\\% / 2) = 50\\% + 47.72\\% = 97.72\\%$$"
         },
         {
           "id": "p1c",
           "label": "c)",
-          "enunciado": "Si evaluamos a 1000 personas, ¿cuántas se espera que tengan un CI superior a 130?",
-          "respuesta": 22.8,
-          "tolerancia": 0.1,
-          "pista": "$$100\\% - 97.72\\% = 2.28\\% \\text{ de } 1000 = 22.8$$"
+          "question": "Si evaluamos a 1000 personas, ¿cuántas se espera que tengan un CI superior a 130?",
+          "correctValue": 22.8,
+          "tolerance": 0.1,
+          "explanation": "$$100\\% - 97.72\\% = 2.28\\% \\text{ de } 1000 = 22.8$$"
         },
         {
           "id": "p1d",
           "label": "d)",
-          "enunciado": "Calcula el valor de CI que dejaría por debajo exactamente al 15.87% de la población ($Z = -1$).",
-          "respuesta": 85,
-          "tolerancia": 0,
-          "pista": "$$X = \\mu + (Z \\cdot \\sigma) = 100 + (-1 \\cdot 15) = 85$$"
+          "question": "Calcula el valor de CI que dejaría por debajo exactamente al 15.87% de la población ($Z = -1$).",
+          "correctValue": 85,
+          "tolerance": 0,
+          "explanation": "$$X = \\mu + (Z \\cdot \\sigma) = 100 + (-1 \\cdot 15) = 85$$"
         }
       ]
     },
     {
       "id": 2,
-      "titulo": "Distribución Muestral de Pesos",
-      "escenario": "Se tiene una población $N=5$ rocas con pesos {2, 4, 6, 8, 10} kg. La media poblacional es $\\mu = 6$. Se extraen muestras de $n=2$ con reposición ($5^2 = 25$ muestras).",
-      "preguntas": [
+      "title": "Distribución Muestral de Pesos",
+      "context": "Se tiene una población $N=5$ rocas con pesos {2, 4, 6, 8, 10} kg. La media poblacional es $\\mu = 6$. Se extraen muestras de $n=2$ con reposición ($5^2 = 25$ muestras).",
+      "parts": [
         {
           "id": "p2a",
           "label": "a)",
-          "enunciado": "Calcula la probabilidad de obtener una media muestral exactamente igual a 6.",
-          "respuesta": 0.2,
-          "tolerancia": 0.01,
-          "pista": "$$f(6) = 5/25 = 0.20$$"
+          "question": "Calcula la probabilidad de obtener una media muestral exactamente igual a 6.",
+          "correctValue": 0.2,
+          "tolerance": 0.01,
+          "explanation": "$$f(6) = 5/25 = 0.20$$"
         },
         {
           "id": "p2b",
           "label": "b)",
-          "enunciado": "¿Cuál es la probabilidad de obtener una media muestral de 10?",
-          "respuesta": 0.04,
-          "tolerancia": 0.01,
-          "pista": "$$f(10) = 1/25 = 0.04$$"
+          "question": "¿Cuál es la probabilidad de obtener una media muestral de 10?",
+          "correctValue": 0.04,
+          "tolerance": 0.01,
+          "explanation": "$$f(10) = 1/25 = 0.04$$"
         },
         {
           "id": "p2c",
           "label": "c)",
-          "enunciado": "¿Qué porcentaje de las medias muestrales son iguales o superiores a 8?",
-          "respuesta": 24,
-          "tolerancia": 0,
-          "pista": "$$P(\\bar{x} \\ge 8) = f(8) + f(9) + f(10) = \\frac{3+2+1}{25} = \\frac{6}{25} = 24\\%$$"
+          "question": "¿Qué porcentaje de las medias muestrales son iguales o superiores a 8?",
+          "correctValue": 24,
+          "tolerance": 0,
+          "explanation": "$$P(\\bar{x} \\ge 8) = f(8) + f(9) + f(10) = \\frac{3+2+1}{25} = \\frac{6}{25} = 24\\%$$"
         },
         {
           "id": "p2d",
           "label": "d)",
-          "enunciado": "Calcula el error de estimación si una muestra arroja una media de 4.",
-          "respuesta": 2,
-          "tolerancia": 0,
-          "pista": "$$|\\bar{x} - \\mu| = |4 - 6| = 2$$"
+          "question": "Calcula el error de estimación si una muestra arroja una media de 4.",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$|\\bar{x} - \\mu| = |4 - 6| = 2$$"
         }
       ]
     },
     {
       "id": 3,
-      "titulo": "Teorema Central del Límite - Dados",
-      "escenario": "Un dado de 6 caras tiene $\\mu = 3.5$ y $\\sigma = 1.71$ (población). Al lanzar 2 dados ($n=2$), la media de la suma es 7.",
-      "preguntas": [
+      "title": "Teorema Central del Límite - Dados",
+      "context": "Un dado de 6 caras tiene $\\mu = 3.5$ y $\\sigma = 1.71$ (población). Al lanzar 2 dados ($n=2$), la media de la suma es 7.",
+      "parts": [
         {
           "id": "p3a",
           "label": "a)",
-          "enunciado": "¿Cuál es la probabilidad de obtener una suma de 7? (Casos totales = 36).",
-          "respuesta": 0.167,
-          "tolerancia": 0.001,
-          "pista": "$$\\text{Casos: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1)} = 6/36 = 0.1666...$$"
+          "question": "¿Cuál es la probabilidad de obtener una suma de 7? (Casos totales = 36).",
+          "correctValue": 0.167,
+          "tolerance": 0.001,
+          "explanation": "$$\\text{Casos: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1)} = 6/36 = 0.1666...$$"
         },
         {
           "id": "p3b",
           "label": "b)",
-          "enunciado": "¿Cuál es la probabilidad de obtener la suma mínima (2)?",
-          "respuesta": 0.028,
-          "tolerancia": 0.001,
-          "pista": "$$1/36 = 0.0277... \\approx 0.028$$"
+          "question": "¿Cuál es la probabilidad de obtener la suma mínima (2)?",
+          "correctValue": 0.028,
+          "tolerance": 0.001,
+          "explanation": "$$1/36 = 0.0277... \\approx 0.028$$"
         },
         {
           "id": "p3c",
           "label": "c)",
-          "enunciado": "Si lanzamos 10 dados, ¿cuál será el valor esperado $E(X_1 + ... + X_{10})$?",
-          "respuesta": 35,
-          "tolerancia": 0,
-          "pista": "$$E(\\sum X) = n \\cdot \\mu = 10 \\cdot 3.5 = 35$$"
+          "question": "Si lanzamos 10 dados, ¿cuál será el valor esperado $E(X_1 + ... + X_{10})$?",
+          "correctValue": 35,
+          "tolerance": 0,
+          "explanation": "$$E(\\sum X) = n \\cdot \\mu = 10 \\cdot 3.5 = 35$$"
         },
         {
           "id": "p3d",
           "label": "d)",
-          "enunciado": "Según el TCL, ¿a partir de qué tamaño de muestra $n$ se asume normalidad independientemente de la forma original?",
-          "respuesta": 30,
-          "tolerancia": 0,
-          "pista": "$$n > 30 \\text{ es el criterio estándar mencionado en el manual.}$$"
+          "question": "Según el TCL, ¿a partir de qué tamaño de muestra $n$ se asume normalidad independientemente de la forma original?",
+          "correctValue": 30,
+          "tolerance": 0,
+          "explanation": "$$n > 30 \\text{ es el criterio estándar mencionado en el manual.}$$"
         }
       ]
     },
     {
       "id": 4,
-      "titulo": "Dado Trucado y Desviación",
-      "escenario": "Un dado trucado sustituye el 3 por otro 4. Valores: {1, 2, 4, 4, 5, 6}. N=6.",
-      "preguntas": [
+      "title": "Dado Trucado y Desviación",
+      "context": "Un dado trucado sustituye el 3 por otro 4. Valores: {1, 2, 4, 4, 5, 6}. N=6.",
+      "parts": [
         {
           "id": "p4a",
           "label": "a)",
-          "enunciado": "Calcula la media poblacional $\\mu$ del dado trucado.",
-          "respuesta": 3.67,
-          "tolerancia": 0.01,
-          "pista": "$$\\mu = \\frac{1+2+4+4+5+6}{6} = \\frac{22}{6} = 3.666...$$"
+          "question": "Calcula la media poblacional $\\mu$ del dado trucado.",
+          "correctValue": 3.67,
+          "tolerance": 0.01,
+          "explanation": "$$\\mu = \\frac{1+2+4+4+5+6}{6} = \\frac{22}{6} = 3.666...$$"
         },
         {
           "id": "p4b",
           "label": "b)",
-          "enunciado": "Calcula la varianza poblacional $\\sigma^2$ (usando N=6).",
-          "respuesta": 2.89,
-          "tolerancia": 0.01,
-          "pista": "$$\\sigma^2 = \\frac{\\sum (X_i - \\mu)^2}{N} \\approx 2.888...$$"
+          "question": "Calcula la varianza poblacional $\\sigma^2$ (usando N=6).",
+          "correctValue": 2.89,
+          "tolerance": 0.01,
+          "explanation": "$$\\sigma^2 = \\frac{\\sum (X_i - \\mu)^2}{N} \\approx 2.888...$$"
         },
         {
           "id": "p4c",
           "label": "c)",
-          "enunciado": "Si lanzamos 2 dados trucados, ¿cuál es el valor esperado de la suma?",
-          "respuesta": 7.33,
-          "tolerancia": 0.01,
-          "pista": "$$E(X_1 + X_2) = 3.666... + 3.666... = 7.333...$$"
+          "question": "Si lanzamos 2 dados trucados, ¿cuál es el valor esperado de la suma?",
+          "correctValue": 7.33,
+          "tolerance": 0.01,
+          "explanation": "$$E(X_1 + X_2) = 3.666... + 3.666... = 7.333...$$"
         },
         {
           "id": "p4d",
           "label": "d)",
-          "enunciado": "¿Cuál es la probabilidad de obtener un 3 en un lanzamiento?",
-          "respuesta": 0,
-          "tolerancia": 0,
-          "pista": "$$\\text{El 3 fue sustituido, por tanto } P(3) = 0.$$"
+          "question": "¿Cuál es la probabilidad de obtener un 3 en un lanzamiento?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "$$\\text{El 3 fue sustituido, por tanto } P(3) = 0.$$"
         }
       ]
     },
     {
       "id": 5,
-      "titulo": "Propiedades de la Curva Normal",
-      "escenario": "En una distribución $N(\\mu, \\sigma)$, las áreas bajo la curva están tipificadas.",
-      "preguntas": [
+      "title": "Propiedades de la Curva Normal",
+      "context": "En una distribución $N(\\mu, \\sigma)$, las áreas bajo la curva están tipificadas.",
+      "parts": [
         {
           "id": "p5a",
           "label": "a)",
-          "enunciado": "¿Qué porcentaje de casos se encuentran entre $\\mu - 1\\sigma$ y $\\mu + 1\\sigma$?",
-          "respuesta": 68.26,
-          "tolerancia": 0,
-          "pista": "$$\\text{Propiedad de la normal: } 68.26\\%.$$"
+          "question": "¿Qué porcentaje de casos se encuentran entre $\\mu - 1\\sigma$ y $\\mu + 1\\sigma$?",
+          "correctValue": 68.26,
+          "tolerance": 0,
+          "explanation": "$$\\text{Propiedad de la normal: } 68.26\\%.$$"
         },
         {
           "id": "p5b",
           "label": "b)",
-          "enunciado": "¿Qué porcentaje de casos quedan por encima de $+2\\sigma$?",
-          "respuesta": 2.28,
-          "tolerancia": 0.01,
-          "pista": "$$P(Z > 2) = (100\\% - 95.44\\%)/2 = 2.28\\%.$$"
+          "question": "¿Qué porcentaje de casos quedan por encima de $+2\\sigma$?",
+          "correctValue": 2.28,
+          "tolerance": 0.01,
+          "explanation": "$$P(Z > 2) = (100\\% - 95.44\\%)/2 = 2.28\\%.$$"
         },
         {
           "id": "p5c",
           "label": "c)",
-          "enunciado": "¿Qué porcentaje de casos hay entre $+1\\sigma$ y $+2\\sigma$?",
-          "respuesta": 13.59,
-          "tolerancia": 0.01,
-          "pista": "$$P(1 < Z < 2) = P(Z < 2) - P(Z < 1) = 97.72\\% - 84.13\\% = 13.59\\%.$$"
+          "question": "¿Qué porcentaje de casos hay entre $+1\\sigma$ y $+2\\sigma$?",
+          "correctValue": 13.59,
+          "tolerance": 0.01,
+          "explanation": "$$P(1 < Z < 2) = P(Z < 2) - P(Z < 1) = 97.72\\% - 84.13\\% = 13.59\\%.$$"
         },
         {
           "id": "p5d",
           "label": "d)",
-          "enunciado": "En una curva normal, si la media es 100, ¿cuál es el valor de la mediana?",
-          "respuesta": 100,
-          "tolerancia": 0,
-          "pista": "$$\\text{En distribuciones simétricas perfectas: Media = Mediana = Moda.}$$"
+          "question": "En una curva normal, si la media es 100, ¿cuál es el valor de la mediana?",
+          "correctValue": 100,
+          "tolerance": 0,
+          "explanation": "$$\\text{En distribuciones simétricas perfectas: Media = Mediana = Moda.}$$"
         }
       ]
     },
     {
       "id": 6,
-      "titulo": "Estimación de Edad en Patología Rara",
-      "escenario": "Una población tiene $\\mu = 72.27$. Se extraen 5 muestras de $n=10$ con medias: {70.45, 74.49, 65.68, 80.07, 96.20}.",
-      "preguntas": [
+      "title": "Estimación de Edad en Patología Rara",
+      "context": "Una población tiene $\\mu = 72.27$. Se extraen 5 muestras de $n=10$ con medias: {70.45, 74.49, 65.68, 80.07, 96.20}.",
+      "parts": [
         {
           "id": "p6a",
           "label": "a)",
-          "enunciado": "Calcula la media de estas 5 medias muestrales.",
-          "respuesta": 77.38,
-          "tolerancia": 0.01,
-          "pista": "$$\\bar{\\bar{x}} = \\frac{70.45 + 74.49 + 65.68 + 80.07 + 96.20}{5} = 77.378$$"
+          "question": "Calcula la media de estas 5 medias muestrales.",
+          "correctValue": 77.38,
+          "tolerance": 0.01,
+          "explanation": "$$\\bar{\\bar{x}} = \\frac{70.45 + 74.49 + 65.68 + 80.07 + 96.20}{5} = 77.378$$"
         },
         {
           "id": "p6b",
           "label": "b)",
-          "enunciado": "Calcula el error cometido por la media de las 5 muestras respecto al parámetro real.",
-          "respuesta": 5.11,
-          "tolerancia": 0.1,
-          "pista": "$$|77.38 - 72.27| = 5.11$$"
+          "question": "Calcula el error cometido por la media de las 5 muestras respecto al parámetro real.",
+          "correctValue": 5.11,
+          "tolerance": 0.1,
+          "explanation": "$$|77.38 - 72.27| = 5.11$$"
         },
         {
           "id": "p6c",
           "label": "c)",
-          "enunciado": "Si la media de 500 muestras es 72.34, ¿cuál es el nuevo error?",
-          "respuesta": 0.07,
-          "tolerancia": 0.01,
-          "pista": "$$|72.34 - 72.27| = 0.07$$"
+          "question": "Si la media de 500 muestras es 72.34, ¿cuál es el nuevo error?",
+          "correctValue": 0.07,
+          "tolerance": 0.01,
+          "explanation": "$$|72.34 - 72.27| = 0.07$$"
         },
         {
           "id": "p6d",
           "label": "d)",
-          "enunciado": "¿Cómo se llama el valor esperado de la media muestral cuando $n \\to \\infty$?",
-          "respuesta": 72.27,
-          "tolerancia": 0.01,
-          "pista": "$$E(\\bar{x}) = \\mu = 72.27$$"
+          "question": "¿Cómo se llama el valor esperado de la media muestral cuando $n \\to \\infty$?",
+          "correctValue": 72.27,
+          "tolerance": 0.01,
+          "explanation": "$$E(\\bar{x}) = \\mu = 72.27$$"
         }
       ]
     },
     {
       "id": 7,
-      "titulo": "Z-Scores en Ansiedad",
-      "escenario": "Una escala de ansiedad tiene $\\mu = 50$ y $\\sigma = 10$. Un paciente obtiene una puntuación directa de 75.",
-      "preguntas": [
+      "title": "Z-Scores en Ansiedad",
+      "context": "Una escala de ansiedad tiene $\\mu = 50$ y $\\sigma = 10$. Un paciente obtiene una puntuación directa de 75.",
+      "parts": [
         {
           "id": "p7a",
           "label": "a)",
-          "enunciado": "Calcula su puntuación Z.",
-          "respuesta": 2.5,
-          "tolerancia": 0,
-          "pista": "$$Z = (75-50)/10 = 2.5$$"
+          "question": "Calcula su puntuación Z.",
+          "correctValue": 2.5,
+          "tolerance": 0,
+          "explanation": "$$Z = (75-50)/10 = 2.5$$"
         },
         {
           "id": "p7b",
           "label": "b)",
-          "enunciado": "¿A cuántas desviaciones típicas por encima de la media se encuentra?",
-          "respuesta": 2.5,
-          "tolerancia": 0,
-          "pista": "$$\\text{El valor Z indica precisamente eso: 2.5 } \\sigma.$$"
+          "question": "¿A cuántas desviaciones típicas por encima de la media se encuentra?",
+          "correctValue": 2.5,
+          "tolerance": 0,
+          "explanation": "$$\\text{El valor Z indica precisamente eso: 2.5 } \\sigma.$$"
         },
         {
           "id": "p7c",
           "label": "c)",
-          "enunciado": "Si el paciente mejorara y su Z bajara a 1.0, ¿cuál sería su puntuación directa?",
-          "respuesta": 60,
-          "tolerancia": 0,
-          "pista": "$$X = 50 + (1.0 \\cdot 10) = 60$$"
+          "question": "Si el paciente mejorara y su Z bajara a 1.0, ¿cuál sería su puntuación directa?",
+          "correctValue": 60,
+          "tolerance": 0,
+          "explanation": "$$X = 50 + (1.0 \\cdot 10) = 60$$"
         },
         {
           "id": "p7d",
           "label": "d)",
-          "enunciado": "¿Qué porcentaje de la población tiene más ansiedad que el paciente original (Z=2.5)? (Usa P(Z<2)=97.72% y P(Z<3)=99.86% para estimar).",
-          "respuesta": 0.62,
-          "tolerancia": 0.1,
-          "pista": "$$\\text{Valor tabulado aproximado para } Z=2.5 \\text{ es } 99.38\\%. \\text{ Por encima: } 0.62\\%.$$"
+          "question": "¿Qué porcentaje de la población tiene más ansiedad que el paciente original (Z=2.5)? (Usa P(Z<2)=97.72% y P(Z<3)=99.86% para estimar).",
+          "correctValue": 0.62,
+          "tolerance": 0.1,
+          "explanation": "$$\\text{Valor tabulado aproximado para } Z=2.5 \\text{ es } 99.38\\%. \\text{ Por encima: } 0.62\\%.$$"
         }
       ]
     },
     {
       "id": 8,
-      "titulo": "Muestreo con Reposición",
-      "escenario": "En un saco hay 4 bolas con valores {1, 3, 5, 7}. Se extraen muestras de $n=2$ con reposición.",
-      "preguntas": [
+      "title": "Muestreo con Reposición",
+      "context": "En un saco hay 4 bolas con valores {1, 3, 5, 7}. Se extraen muestras de $n=2$ con reposición.",
+      "parts": [
         {
           "id": "p8a",
           "label": "a)",
-          "enunciado": "¿Cuántas muestras totales componen la distribución muestral?",
-          "respuesta": 16,
-          "tolerancia": 0,
-          "pista": "$$N^n = 4^2 = 16$$"
+          "question": "¿Cuántas muestras totales componen la distribución muestral?",
+          "correctValue": 16,
+          "tolerance": 0,
+          "explanation": "$$N^n = 4^2 = 16$$"
         },
         {
           "id": "p8b",
           "label": "b)",
-          "enunciado": "Calcula la media poblacional $\\mu$.",
-          "respuesta": 4,
-          "tolerancia": 0,
-          "pista": "$$(1+3+5+7)/4 = 16/4 = 4$$"
+          "question": "Calcula la media poblacional $\\mu$.",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$(1+3+5+7)/4 = 16/4 = 4$$"
         },
         {
           "id": "p8c",
           "label": "c)",
-          "enunciado": "¿Cuál es la media máxima posible en una muestra?",
-          "respuesta": 7,
-          "tolerancia": 0,
-          "pista": "$$\\text{Muestra (7,7) } \\to \\text{ media } 7.$$"
+          "question": "¿Cuál es la media máxima posible en una muestra?",
+          "correctValue": 7,
+          "tolerance": 0,
+          "explanation": "$$\\text{Muestra (7,7) } \\to \\text{ media } 7.$$"
         },
         {
           "id": "p8d",
           "label": "d)",
-          "enunciado": "¿Cuántas muestras arrojarán una media exactamente de 4?",
-          "respuesta": 4,
-          "tolerancia": 0,
-          "pista": "$$\\text{Combinaciones: (1,7), (7,1), (3,5), (5,3). Total = 4.}$$"
+          "question": "¿Cuántas muestras arrojarán una media exactamente de 4?",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$\\text{Combinaciones: (1,7), (7,1), (3,5), (5,3). Total = 4.}$$"
         }
       ]
     },
     {
       "id": 9,
-      "titulo": "Identificación de Outliers",
-      "escenario": "Se considera 'anormalmente infrecuente' aquello que está fuera de $\\pm 3\\sigma$. En CI ($\\mu=100, \\sigma=15$).",
-      "preguntas": [
+      "title": "Identificación de Outliers",
+      "context": "Se considera 'anormalmente infrecuente' aquello que está fuera de $\\pm 3\\sigma$. En CI ($\\mu=100, \\sigma=15$).",
+      "parts": [
         {
           "id": "p9a",
           "label": "a)",
-          "enunciado": "¿Cuál es el límite inferior de CI para esta clasificación?",
-          "respuesta": 55,
-          "tolerancia": 0,
-          "pista": "$$100 - 3(15) = 55$$"
+          "question": "¿Cuál es el límite inferior de CI para esta clasificación?",
+          "correctValue": 55,
+          "tolerance": 0,
+          "explanation": "$$100 - 3(15) = 55$$"
         },
         {
           "id": "p9b",
           "label": "b)",
-          "enunciado": "¿Cuál es el límite superior?",
-          "respuesta": 145,
-          "tolerancia": 0,
-          "pista": "$$100 + 3(15) = 145$$"
+          "question": "¿Cuál es el límite superior?",
+          "correctValue": 145,
+          "tolerance": 0,
+          "explanation": "$$100 + 3(15) = 145$$"
         },
         {
           "id": "p9c",
           "label": "c)",
-          "enunciado": "¿Qué porcentaje total de la población cae en estas zonas extremas combinadas?",
-          "respuesta": 0.28,
-          "tolerancia": 0.01,
-          "pista": "$$100\\% - 99.72\\% = 0.28\\%.$$"
+          "question": "¿Qué porcentaje total de la población cae en estas zonas extremas combinadas?",
+          "correctValue": 0.28,
+          "tolerance": 0.01,
+          "explanation": "$$100\\% - 99.72\\% = 0.28\\%.$$"
         },
         {
           "id": "p9d",
           "label": "d)",
-          "enunciado": "Si una persona tiene CI=40, ¿a cuántas $\\sigma$ está de la media?",
-          "respuesta": -4,
-          "tolerancia": 0,
-          "pista": "$$Z = (40-100)/15 = -60/15 = -4.$$"
+          "question": "Si una persona tiene CI=40, ¿a cuántas $\\sigma$ está de la media?",
+          "correctValue": -4,
+          "tolerance": 0,
+          "explanation": "$$Z = (40-100)/15 = -60/15 = -4.$$"
         }
       ]
     },
     {
       "id": 10,
-      "titulo": "Probabilidad Acumulada Inversa",
-      "escenario": "Dada una $N(0, 1)$, se sabe que $P(Z < z) = 0.8413$.",
-      "preguntas": [
+      "title": "Probabilidad Acumulada Inversa",
+      "context": "Dada una $N(0, 1)$, se sabe que $P(Z < z) = 0.8413$.",
+      "parts": [
         {
           "id": "p10a",
           "label": "a)",
-          "enunciado": "¿Cuál es el valor de $z$?",
-          "respuesta": 1,
-          "tolerancia": 0,
-          "pista": "$$\\text{Corresponde a } +1\\sigma.$$"
+          "question": "¿Cuál es el valor de $z$?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$\\text{Corresponde a } +1\\sigma.$$"
         },
         {
           "id": "p10b",
           "label": "b)",
-          "enunciado": "¿Qué porcentaje de casos quedan por encima de este $z$?",
-          "respuesta": 15.87,
-          "tolerancia": 0.01,
-          "pista": "$$100 - 84.13 = 15.87\\%.$$"
+          "question": "¿Qué porcentaje de casos quedan por encima de este $z$?",
+          "correctValue": 15.87,
+          "tolerance": 0.01,
+          "explanation": "$$100 - 84.13 = 15.87\\%.$$"
         },
         {
           "id": "p10c",
           "label": "c)",
-          "enunciado": "Si $\\mu=500$ y $\\sigma=100$, ¿qué valor de X corresponde a este $z$?",
-          "respuesta": 600,
-          "tolerancia": 0,
-          "pista": "$$X = 500 + 1(100) = 600.$$"
+          "question": "Si $\\mu=500$ y $\\sigma=100$, ¿qué valor de X corresponde a este $z$?",
+          "correctValue": 600,
+          "tolerance": 0,
+          "explanation": "$$X = 500 + 1(100) = 600.$$"
         },
         {
           "id": "p10d",
           "label": "d)",
-          "enunciado": "Si cambiamos a $P(Z > z) = 0.9772$, ¿cuál es el nuevo valor de $z$?",
-          "respuesta": -2,
-          "tolerancia": 0,
-          "pista": "$$\\text{Si el 97.72\\% está por encima, el 2.28\\% está por debajo, lo que implica } Z = -2.$$"
+          "question": "Si cambiamos a $P(Z > z) = 0.9772$, ¿cuál es el nuevo valor de $z$?",
+          "correctValue": -2,
+          "tolerance": 0,
+          "explanation": "$$\\text{Si el 97.72\\% está por encima, el 2.28\\% está por debajo, lo que implica } Z = -2.$$"
         }
       ]
     },
     {
       "id": 11,
-      "titulo": "Error Estándar de la Media",
-      "escenario": "El error estándar se define como $\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{n}}$. Población con $\\sigma=20$ y muestras de $n=100$.",
-      "preguntas": [
+      "title": "Error Estándar de la Media",
+      "context": "El error estándar se define como $\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{n}}$. Población con $\\sigma=20$ y muestras de $n=100$.",
+      "parts": [
         {
           "id": "p11a",
           "label": "a)",
-          "enunciado": "Calcula el error estándar de la media.",
-          "respuesta": 2,
-          "tolerancia": 0,
-          "pista": "$$20 / \\sqrt{100} = 20/10 = 2.0$$"
+          "question": "Calcula el error estándar de la media.",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$20 / \\sqrt{100} = 20/10 = 2.0$$"
         },
         {
           "id": "p11b",
           "label": "b)",
-          "enunciado": "Si el tamaño de la muestra sube a $n=400$, ¿cuál es el nuevo error estándar?",
-          "respuesta": 1,
-          "tolerancia": 0,
-          "pista": "$$20 / \\sqrt{400} = 20/20 = 1.0$$"
+          "question": "Si el tamaño de la muestra sube a $n=400$, ¿cuál es el nuevo error estándar?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$20 / \\sqrt{400} = 20/20 = 1.0$$"
         },
         {
           "id": "p11c",
           "label": "c)",
-          "enunciado": "Para reducir el error original a la mitad, ¿por cuánto hay que multiplicar $n$?",
-          "respuesta": 4,
-          "tolerancia": 0,
-          "pista": "$$\\text{Como es raíz cuadrada, para reducir a la mitad el error, } n \\text{ debe ser } 2^2 = 4 \\text{ veces mayor.}$$"
+          "question": "Para reducir el error original a la mitad, ¿por cuánto hay que multiplicar $n$?",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$\\text{Como es raíz cuadrada, para reducir a la mitad el error, } n \\text{ debe ser } 2^2 = 4 \\text{ veces mayor.}$$"
         },
         {
           "id": "p11d",
           "label": "d)",
-          "enunciado": "Si el error estándar es 0.5, ¿cuál es el valor de $n$?",
-          "respuesta": 1600,
-          "tolerancia": 0,
-          "pista": "$$0.5 = 20 / \\sqrt{n} \\to \\sqrt{n} = 40 \\to n = 1600$$"
+          "question": "Si el error estándar es 0.5, ¿cuál es el valor de $n$?",
+          "correctValue": 1600,
+          "tolerance": 0,
+          "explanation": "$$0.5 = 20 / \\sqrt{n} \\to \\sqrt{n} = 40 \\to n = 1600$$"
         }
       ]
     },
     {
       "id": 12,
-      "titulo": "Inferencia de Salud en Población",
-      "escenario": "Se estudia una población de 10,000 personas. Se sabe que el 20% padece una condición. Se toma una muestra representativa de $n=100$.",
-      "preguntas": [
+      "title": "Inferencia de Salud en Población",
+      "context": "Se estudia una población de 10,000 personas. Se sabe que el 20% padece una condición. Se toma una muestra representativa de $n=100$.",
+      "parts": [
         {
           "id": "p12a",
           "label": "a)",
-          "enunciado": "¿Cuál es el parámetro poblacional (proporción)?",
-          "respuesta": 0.2,
-          "tolerancia": 0,
-          "pista": "$$\\text{El dato dado de la población: 20\\% = 0.20.}$$"
+          "question": "¿Cuál es el parámetro poblacional (proporción)?",
+          "correctValue": 0.2,
+          "tolerance": 0,
+          "explanation": "$$\\text{El dato dado de la población: 20\\% = 0.20.}$$"
         },
         {
           "id": "p12b",
           "label": "b)",
-          "enunciado": "Si la muestra arroja 25 personas enfermas, ¿cuál es el estadístico?",
-          "respuesta": 0.25,
-          "tolerancia": 0,
-          "pista": "$$25/100 = 0.25$$"
+          "question": "Si la muestra arroja 25 personas enfermas, ¿cuál es el estadístico?",
+          "correctValue": 0.25,
+          "tolerance": 0,
+          "explanation": "$$25/100 = 0.25$$"
         },
         {
           "id": "p12c",
           "label": "c)",
-          "enunciado": "¿Cuál es el sesgo o error puntual de esta estimación?",
-          "respuesta": 0.05,
-          "tolerancia": 0,
-          "pista": "$$|0.25 - 0.20| = 0.05$$"
+          "question": "¿Cuál es el sesgo o error puntual de esta estimación?",
+          "correctValue": 0.05,
+          "tolerance": 0,
+          "explanation": "$$|0.25 - 0.20| = 0.05$$"
         },
         {
           "id": "p12d",
           "label": "d)",
-          "enunciado": "Según el PDF, si la muestra es 'sesgada', ¿la inferencia es?",
-          "respuesta": 0,
-          "tolerancia": 0,
-          "pista": "$$\\text{Incorrecta (usamos 0 para representar valor nulo de validez en este contexto).}$$"
+          "question": "Según el PDF, si la muestra es 'sesgada', ¿la inferencia es?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "$$\\text{Incorrecta (usamos 0 para representar valor nulo de validez en este contexto).}$$"
         }
       ]
     },
     {
       "id": 13,
-      "titulo": "Simetría de la Normal",
-      "escenario": "En una $N(100, 15)$, analizamos rangos simétricos.",
-      "preguntas": [
+      "title": "Simetría de la Normal",
+      "context": "En una $N(100, 15)$, analizamos rangos simétricos.",
+      "parts": [
         {
           "id": "p13a",
           "label": "a)",
-          "enunciado": "¿Qué valor de CI deja el 50% por encima?",
-          "respuesta": 100,
-          "tolerancia": 0,
-          "pista": "$$\\text{La media en una normal es igual a la mediana.}$$"
+          "question": "¿Qué valor de CI deja el 50% por encima?",
+          "correctValue": 100,
+          "tolerance": 0,
+          "explanation": "$$\\text{La media en una normal es igual a la mediana.}$$"
         },
         {
           "id": "p13b",
           "label": "b)",
-          "enunciado": "Si el rango [85, 115] contiene al 68.26%, ¿qué porcentaje hay en [100, 115]?",
-          "respuesta": 34.13,
-          "tolerancia": 0.01,
-          "pista": "$$68.26 / 2 = 34.13\\%.$$"
+          "question": "Si el rango [85, 115] contiene al 68.26%, ¿qué porcentaje hay en [100, 115]?",
+          "correctValue": 34.13,
+          "tolerance": 0.01,
+          "explanation": "$$68.26 / 2 = 34.13\\%.$$"
         },
         {
           "id": "p13c",
           "label": "c)",
-          "enunciado": "¿Qué valor es el percentil 2.28?",
-          "respuesta": 70,
-          "tolerancia": 0,
-          "pista": "$$\\text{Corresponde a } \\mu - 2\\sigma = 100 - 30 = 70.$$"
+          "question": "¿Qué valor es el percentil 2.28?",
+          "correctValue": 70,
+          "tolerance": 0,
+          "explanation": "$$\\text{Corresponde a } \\mu - 2\\sigma = 100 - 30 = 70.$$"
         },
         {
           "id": "p13d",
           "label": "d)",
-          "enunciado": "¿Cuál es el percentil 97.72?",
-          "respuesta": 130,
-          "tolerancia": 0,
-          "pista": "$$\\mu + 2\\sigma = 100 + 30 = 130.$$"
+          "question": "¿Cuál es el percentil 97.72?",
+          "correctValue": 130,
+          "tolerance": 0,
+          "explanation": "$$\\mu + 2\\sigma = 100 + 30 = 130.$$"
         }
       ]
     },
     {
       "id": 14,
-      "titulo": "Convergencia del TCL",
-      "escenario": "Una distribución asimétrica tiene $\\mu=10$ y $\\sigma=2$. Se generan medias muestrales.",
-      "preguntas": [
+      "title": "Convergencia del TCL",
+      "context": "Una distribución asimétrica tiene $\\mu=10$ y $\\sigma=2$. Se generan medias muestrales.",
+      "parts": [
         {
           "id": "p14a",
           "label": "a)",
-          "enunciado": "Si $n=1$, ¿qué forma tiene la distribución de las medias?",
-          "respuesta": 0,
-          "tolerancia": 0,
-          "pista": "$$\\text{Igual a la original (asimétrica). Usamos 0 para indicar no-normalidad.}$$"
+          "question": "Si $n=1$, ¿qué forma tiene la distribución de las medias?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "$$\\text{Igual a la original (asimétrica). Usamos 0 para indicar no-normalidad.}$$"
         },
         {
           "id": "p14b",
           "label": "b)",
-          "enunciado": "Si $n=100$, ¿qué forma tiene aproximadamente?",
-          "respuesta": 1,
-          "tolerancia": 0,
-          "pista": "$$\\text{Normal (Usamos 1 para indicar normalidad por TCL).}$$"
+          "question": "Si $n=100$, ¿qué forma tiene aproximadamente?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$\\text{Normal (Usamos 1 para indicar normalidad por TCL).}$$"
         },
         {
           "id": "p14c",
           "label": "c)",
-          "enunciado": "¿Cuál será la media de la distribución muestral con $n=100$?",
-          "respuesta": 10,
-          "tolerancia": 0,
-          "pista": "$$E(\\bar{x}) = \\mu = 10.$$"
+          "question": "¿Cuál será la media de la distribución muestral con $n=100$?",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$E(\\bar{x}) = \\mu = 10.$$"
         },
         {
           "id": "p14d",
           "label": "d)",
-          "enunciado": "¿Cuál será la desviación típica de esa distribución (error estándar)?",
-          "respuesta": 0.2,
-          "tolerancia": 0.01,
-          "pista": "$$2 / \\sqrt{100} = 2/10 = 0.2.$$"
+          "question": "¿Cuál será la desviación típica de esa distribución (error estándar)?",
+          "correctValue": 0.2,
+          "tolerance": 0.01,
+          "explanation": "$$2 / \\sqrt{100} = 2/10 = 0.2.$$"
         }
       ]
     },
     {
       "id": 15,
-      "titulo": "Comparación de Puntuaciones Z",
-      "escenario": "Alumno A (Matemáticas): X=80, $\\mu=70, \\sigma=5$. Alumno B (Lengua): X=85, $\\mu=75, \\sigma=10$.",
-      "preguntas": [
+      "title": "Comparación de Puntuaciones Z",
+      "context": "Alumno A (Matemáticas): X=80, $\\mu=70, \\sigma=5$. Alumno B (Lengua): X=85, $\\mu=75, \\sigma=10$.",
+      "parts": [
         {
           "id": "p15a",
           "label": "a)",
-          "enunciado": "Calcula la Z del alumno A.",
-          "respuesta": 2,
-          "tolerancia": 0,
-          "pista": "$$(80-70)/5 = 2.0$$"
+          "question": "Calcula la Z del alumno A.",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$(80-70)/5 = 2.0$$"
         },
         {
           "id": "p15b",
           "label": "b)",
-          "enunciado": "Calcula la Z del alumno B.",
-          "respuesta": 1,
-          "tolerancia": 0,
-          "pista": "$$(85-75)/10 = 1.0$$"
+          "question": "Calcula la Z del alumno B.",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$(85-75)/10 = 1.0$$"
         },
         {
           "id": "p15c",
           "label": "c)",
-          "enunciado": "¿Quién tiene mejor posición relativa en su clase? (1 para A, 2 para B).",
-          "respuesta": 1,
-          "tolerancia": 0,
-          "pista": "$$Z_A = 2 > Z_B = 1.$$"
+          "question": "¿Quién tiene mejor posición relativa en su clase? (1 para A, 2 para B).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$Z_A = 2 > Z_B = 1.$$"
         },
         {
           "id": "p15d",
           "label": "d)",
-          "enunciado": "¿Qué puntuación debería sacar B para igualar la posición relativa de A?",
-          "respuesta": 95,
-          "tolerancia": 0,
-          "pista": "$$X = 75 + (2 \\cdot 10) = 95.$$"
+          "question": "¿Qué puntuación debería sacar B para igualar la posición relativa de A?",
+          "correctValue": 95,
+          "tolerance": 0,
+          "explanation": "$$X = 75 + (2 \\cdot 10) = 95.$$"
         }
       ]
     },
     {
       "id": 16,
-      "titulo": "Probabilidades en Rangos de Z",
-      "escenario": "En una $N(0, 1)$, queremos hallar $P(-1 < Z < 1)$.",
-      "preguntas": [
+      "title": "Probabilidades en Rangos de Z",
+      "context": "En una $N(0, 1)$, queremos hallar $P(-1 < Z < 1)$.",
+      "parts": [
         {
           "id": "p16a",
           "label": "a)",
-          "enunciado": "¿Cuál es la probabilidad acumulada hasta $Z=1$?",
-          "respuesta": 0.8413,
-          "tolerancia": 0.0001,
-          "pista": "$$0.5 + 0.3413 = 0.8413$$"
+          "question": "¿Cuál es la probabilidad acumulada hasta $Z=1$?",
+          "correctValue": 0.8413,
+          "tolerance": 0.0001,
+          "explanation": "$$0.5 + 0.3413 = 0.8413$$"
         },
         {
           "id": "p16b",
           "label": "b)",
-          "enunciado": "¿Cuál es la probabilidad acumulada hasta $Z=-1$?",
-          "respuesta": 0.1587,
-          "tolerancia": 0.0001,
-          "pista": "$$1 - 0.8413 = 0.1587$$"
+          "question": "¿Cuál es la probabilidad acumulada hasta $Z=-1$?",
+          "correctValue": 0.1587,
+          "tolerance": 0.0001,
+          "explanation": "$$1 - 0.8413 = 0.1587$$"
         },
         {
           "id": "p16c",
           "label": "c)",
-          "enunciado": "Resta ambos valores para hallar la probabilidad del intervalo central.",
-          "respuesta": 0.6826,
-          "tolerancia": 0.0001,
-          "pista": "$$0.8413 - 0.1587 = 0.6826$$"
+          "question": "Resta ambos valores para hallar la probabilidad del intervalo central.",
+          "correctValue": 0.6826,
+          "tolerance": 0.0001,
+          "explanation": "$$0.8413 - 0.1587 = 0.6826$$"
         },
         {
           "id": "p16d",
           "label": "d)",
-          "enunciado": "¿Cuál es la probabilidad de estar fuera de ese intervalo (colas)?",
-          "respuesta": 0.3174,
-          "tolerancia": 0.0001,
-          "pista": "$$1 - 0.6826 = 0.3174$$"
+          "question": "¿Cuál es la probabilidad de estar fuera de ese intervalo (colas)?",
+          "correctValue": 0.3174,
+          "tolerance": 0.0001,
+          "explanation": "$$1 - 0.6826 = 0.3174$$"
         }
       ]
     },
     {
       "id": 17,
-      "titulo": "Muestras de Dados y Error",
-      "escenario": "Experimento de lanzar 2 dados ($\\mu=3.5$). Media de la muestra = 5.",
-      "preguntas": [
+      "title": "Muestras de Dados y Error",
+      "context": "Experimento de lanzar 2 dados ($\\mu=3.5$). Media de la muestra = 5.",
+      "parts": [
         {
           "id": "p17a",
           "label": "a)",
-          "enunciado": "Calcula el valor esperado de la suma de 2 dados.",
-          "respuesta": 7,
-          "tolerancia": 0,
-          "pista": "$$3.5 + 3.5 = 7$$"
+          "question": "Calcula el valor esperado de la suma de 2 dados.",
+          "correctValue": 7,
+          "tolerance": 0,
+          "explanation": "$$3.5 + 3.5 = 7$$"
         },
         {
           "id": "p17b",
           "label": "b)",
-          "enunciado": "Calcula el error muestral de la media si sacamos un 4 y un 6.",
-          "respuesta": 1.5,
-          "tolerancia": 0,
-          "pista": "$$\\bar{x} = 5; |5 - 3.5| = 1.5$$"
+          "question": "Calcula el error muestral de la media si sacamos un 4 y un 6.",
+          "correctValue": 1.5,
+          "tolerance": 0,
+          "explanation": "$$\\bar{x} = 5; |5 - 3.5| = 1.5$$"
         },
         {
           "id": "p17c",
           "label": "c)",
-          "enunciado": "¿Cuántas de las 36 combinaciones dan media 5 (suma 10)?",
-          "respuesta": 3,
-          "tolerancia": 0,
-          "pista": "$$(4,6), (6,4), (5,5). Total = 3.$$"
+          "question": "¿Cuántas de las 36 combinaciones dan media 5 (suma 10)?",
+          "correctValue": 3,
+          "tolerance": 0,
+          "explanation": "$$(4,6), (6,4), (5,5). Total = 3.$$"
         },
         {
           "id": "p17d",
           "label": "d)",
-          "enunciado": "¿Cuál es la probabilidad de ese error específico (media=5)?",
-          "respuesta": 0.083,
-          "tolerancia": 0.001,
-          "pista": "$$3/36 = 1/12 \\approx 0.0833.$$"
+          "question": "¿Cuál es la probabilidad de ese error específico (media=5)?",
+          "correctValue": 0.083,
+          "tolerance": 0.001,
+          "explanation": "$$3/36 = 1/12 \\approx 0.0833.$$"
         }
       ]
     },
     {
       "id": 18,
-      "titulo": "Estandarización Inversa",
-      "escenario": "Sabemos que el 97.72% de los sujetos tienen un CI inferior a X. ($\\mu=100, \\sigma=15$).",
-      "preguntas": [
+      "title": "Estandarización Inversa",
+      "context": "Sabemos que el 97.72% de los sujetos tienen un CI inferior a X. ($\\mu=100, \\sigma=15$).",
+      "parts": [
         {
           "id": "p18a",
           "label": "a)",
-          "enunciado": "¿Qué valor Z corresponde a esa probabilidad?",
-          "respuesta": 2,
-          "tolerancia": 0,
-          "pista": "$$\\text{Propiedad de la normal: } \\mu+2\\sigma.$$"
+          "question": "¿Qué valor Z corresponde a esa probabilidad?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$\\text{Propiedad de la normal: } \\mu+2\\sigma.$$"
         },
         {
           "id": "p18b",
           "label": "b)",
-          "enunciado": "Calcula el valor X.",
-          "respuesta": 130,
-          "tolerancia": 0,
-          "pista": "$$100 + 2(15) = 130$$"
+          "question": "Calcula el valor X.",
+          "correctValue": 130,
+          "tolerance": 0,
+          "explanation": "$$100 + 2(15) = 130$$"
         },
         {
           "id": "p18c",
           "label": "c)",
-          "enunciado": "Si el 2.28% tiene un CI inferior a Y, ¿cuál es el valor Z de Y?",
-          "respuesta": -2,
-          "tolerancia": 0,
-          "pista": "$$\\text{Simetría: } -2\\sigma.$$"
+          "question": "Si el 2.28% tiene un CI inferior a Y, ¿cuál es el valor Z de Y?",
+          "correctValue": -2,
+          "tolerance": 0,
+          "explanation": "$$\\text{Simetría: } -2\\sigma.$$"
         },
         {
           "id": "p18d",
           "label": "d)",
-          "enunciado": "Calcula el valor Y.",
-          "respuesta": 70,
-          "tolerancia": 0,
-          "pista": "$$100 - 30 = 70$$"
+          "question": "Calcula el valor Y.",
+          "correctValue": 70,
+          "tolerance": 0,
+          "explanation": "$$100 - 30 = 70$$"
         }
       ]
     },
     {
       "id": 19,
-      "titulo": "Ley de los Grandes Números (Simulación)",
-      "escenario": "Una moneda sale cara (1) o cruz (0) con $p=0.5$. $\\mu=0.5, \\sigma=0.5$.",
-      "preguntas": [
+      "title": "Ley de los Grandes Números (Simulación)",
+      "context": "Una moneda sale cara (1) o cruz (0) con $p=0.5$. $\\mu=0.5, \\sigma=0.5$.",
+      "parts": [
         {
           "id": "p19a",
           "label": "a)",
-          "enunciado": "En 4 lanzamientos, ¿cuál es el error estándar de la proporción de caras?",
-          "respuesta": 0.25,
-          "tolerancia": 0.01,
-          "pista": "$$0.5 / \\sqrt{4} = 0.5/2 = 0.25.$$"
+          "question": "En 4 lanzamientos, ¿cuál es el error estándar de la proporción de caras?",
+          "correctValue": 0.25,
+          "tolerance": 0.01,
+          "explanation": "$$0.5 / \\sqrt{4} = 0.5/2 = 0.25.$$"
         },
         {
           "id": "p19b",
           "label": "b)",
-          "enunciado": "En 100 lanzamientos, ¿cuál es el error estándar?",
-          "respuesta": 0.05,
-          "tolerancia": 0.01,
-          "pista": "$$0.5 / 10 = 0.05.$$"
+          "question": "En 100 lanzamientos, ¿cuál es el error estándar?",
+          "correctValue": 0.05,
+          "tolerance": 0.01,
+          "explanation": "$$0.5 / 10 = 0.05.$$"
         },
         {
           "id": "p19c",
           "label": "c)",
-          "enunciado": "Si en 100 lanzamientos obtenemos 60 caras, calcula la Z de este resultado.",
-          "respuesta": 2,
-          "tolerancia": 0.1,
-          "pista": "$$(0.60 - 0.50) / 0.05 = 0.10 / 0.05 = 2.0.$$"
+          "question": "Si en 100 lanzamientos obtenemos 60 caras, calcula la Z de este resultado.",
+          "correctValue": 2,
+          "tolerance": 0.1,
+          "explanation": "$$(0.60 - 0.50) / 0.05 = 0.10 / 0.05 = 2.0.$$"
         },
         {
           "id": "p19d",
           "label": "d)",
-          "enunciado": "¿Es este resultado (60 caras de 100) probable? (1 para Sí -p>0.05-, 0 para No -p<0.05-).",
-          "respuesta": 0,
-          "tolerancia": 0,
-          "pista": "$$P(Z > 2) = 2.28\\% < 5\\%. \\text{ Se considera un evento raro/improbable.}$$"
+          "question": "¿Es este resultado (60 caras de 100) probable? (1 para Sí -p>0.05-, 0 para No -p<0.05-).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "$$P(Z > 2) = 2.28\\% < 5\\%. \\text{ Se considera un evento raro/improbable.}$$"
         }
       ]
     },
     {
       "id": 20,
-      "titulo": "Resumen de Inferencia",
-      "escenario": "Relación entre población ($N$) y muestra ($n$). Parámetros vs Estadísticos.",
-      "preguntas": [
+      "title": "Resumen de Inferencia",
+      "context": "Relación entre población ($N$) y muestra ($n$). Parámetros vs Estadísticos.",
+      "parts": [
         {
           "id": "p20a",
           "label": "a)",
-          "enunciado": "Si $\\mu=100$, ¿cuál es el valor esperado de la media de 1000 muestras aleatorias?",
-          "respuesta": 100,
-          "tolerancia": 0,
-          "pista": "$$E(\\bar{x}) = \\mu.$$"
+          "question": "Si $\\mu=100$, ¿cuál es el valor esperado de la media de 1000 muestras aleatorias?",
+          "correctValue": 100,
+          "tolerance": 0,
+          "explanation": "$$E(\\bar{x}) = \\mu.$$"
         },
         {
           "id": "p20b",
           "label": "b)",
-          "enunciado": "Si una muestra de $n=100$ tiene media 105 y $\\sigma=15$, calcula su Z respecto a la población.",
-          "respuesta": 3.33,
-          "tolerancia": 0.05,
-          "pista": "$$(105 - 100) / (15/\\sqrt{100}) = 5 / 1.5 = 3.33.$$"
+          "question": "Si una muestra de $n=100$ tiene media 105 y $\\sigma=15$, calcula su Z respecto a la población.",
+          "correctValue": 3.33,
+          "tolerance": 0.05,
+          "explanation": "$$(105 - 100) / (15/\\sqrt{100}) = 5 / 1.5 = 3.33.$$"
         },
         {
           "id": "p20c",
           "label": "c)",
-          "enunciado": "Según el PDF, ¿el 99.92% de los casos se encuentra a cuántas $\\sigma$ de la media?",
-          "respuesta": 4,
-          "tolerancia": 0,
-          "pista": "$$\\text{Dato del manual: } \\pm 4\\sigma.$$"
+          "question": "Según el PDF, ¿el 99.92% de los casos se encuentra a cuántas $\\sigma$ de la media?",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$\\text{Dato del manual: } \\pm 4\\sigma.$$"
         },
         {
           "id": "p20d",
           "label": "d)",
-          "enunciado": "¿Cuál es la probabilidad de encontrar a alguien a más de $4\\sigma$ en un solo lado?",
-          "respuesta": 0.04,
-          "tolerancia": 0.01,
-          "pista": "$$(100\\% - 99.92\\%) / 2 = 0.08\\% / 2 = 0.04\\%.$$"
+          "question": "¿Cuál es la probabilidad de encontrar a alguien a más de $4\\sigma$ en un solo lado?",
+          "correctValue": 0.04,
+          "tolerance": 0.01,
+          "explanation": "$$(100\\% - 99.92\\%) / 2 = 0.08\\% / 2 = 0.04\\%.$$"
         }
       ]
     }
   ],
-  "formulas": [
+  "jsonFormulas": [
     {
-      "nombre": "Valor esperado de la media muestral (Distribución Muestral)",
-      "latex": "$$E(\\overline{X}) = \\mu$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Valor esperado de la media muestral (Distribución Muestral)",
+      "tex": "$$E(\\overline{X}) = \\mu$$"
     },
     {
-      "nombre": "Media poblacional (Parámetro)",
-      "latex": "$$\\mu = \\frac{\\sum X_i}{N}$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Media poblacional (Parámetro)",
+      "tex": "$$\\mu = \\frac{\\sum X_i}{N}$$"
     },
     {
-      "nombre": "Media muestral (Estadístico)",
-      "latex": "$$\\overline{x} = \\frac{\\sum X_i}{n}$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Media muestral (Estadístico)",
+      "tex": "$$\\overline{x} = \\frac{\\sum X_i}{n}$$"
     },
     {
-      "nombre": "Número de muestras posibles (Muestreo con reposición)",
-      "latex": "$$N^n$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Número de muestras posibles (Muestreo con reposición)",
+      "tex": "$$N^n$$"
     },
     {
-      "nombre": "Desviación típica muestral",
-      "latex": "$$S_x = \\sqrt{\\frac{\\sum (X_i - \\overline{x})^2}{n - 1}}$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Desviación típica muestral",
+      "tex": "$$S_x = \\sqrt{\\frac{\\sum (X_i - \\overline{x})^2}{n - 1}}$$"
     },
     {
-      "nombre": "Puntuación Z (Tipificación)",
-      "latex": "$$Z_i = \\frac{X_i - \\mu}{\\sigma}$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Puntuación Z (Tipificación)",
+      "tex": "$$Z_i = \\frac{X_i - \\mu}{\\sigma}$$"
     },
     {
-      "nombre": "Propiedades de probabilidad en la curva normal (±1σ)",
-      "latex": "$$P(\\mu \\pm 1\\sigma) = 68,26\\%$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Propiedades de probabilidad en la curva normal (±1σ)",
+      "tex": "$$P(\\mu \\pm 1\\sigma) = 68,26\\%$$"
     },
     {
-      "nombre": "Propiedades de probabilidad en la curva normal (±2σ)",
-      "latex": "$$P(\\mu \\pm 2\\sigma) = 95,44\\%$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Propiedades de probabilidad en la curva normal (±2σ)",
+      "tex": "$$P(\\mu \\pm 2\\sigma) = 95,44\\%$$"
     },
     {
-      "nombre": "Propiedades de probabilidad en la curva normal (±3σ)",
-      "latex": "$$P(\\mu \\pm 3\\sigma) = 99,72\\%$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Propiedades de probabilidad en la curva normal (±3σ)",
+      "tex": "$$P(\\mu \\pm 3\\sigma) = 99,72\\%$$"
     },
     {
-      "nombre": "Propiedades de probabilidad en la curva normal (±4σ)",
-      "latex": "$$P(\\mu \\pm 4\\sigma) = 99,92\\%$$",
-      "descripcion": "",
-      "categoria": "Fórmula"
+      "name": "Propiedades de probabilidad en la curva normal (±4σ)",
+      "tex": "$$P(\\mu \\pm 4\\sigma) = 99,92\\%$$"
     }
   ]
 }

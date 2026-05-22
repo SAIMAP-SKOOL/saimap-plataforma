@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIMAP - Tema 5.3: Contraste de Hipótesis</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Configuración de MathJax para renderizar LaTeX -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            startup: {
+                typeset: false // Lo llamaremos manualmente después de cargar las vistas
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f0f9ff;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(192, 90%, 90%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(170, 70%, 90%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(210, 80%, 90%, 1) 0, transparent 50%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 40px -10px rgba(14, 165, 233, 0.15);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 50%, #2dd4bf 100%);
+            background-size: 200% 200%;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            color: white;
+            font-weight: 700;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
+            background-position: 100% 50%;
+        }
+
+        /* Estilos Flashcards */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .card-inner.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 1.5rem;
+        }
+
+        .card-front {
+            background: white;
+            border: 2px solid #e2e8f0;
+        }
+
+        .card-back {
+            background: #4f46e5;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .option-btn {
+            transition: all 0.2s;
+            border: 2px solid #e2e8f0;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: #0ea5e9;
+            background-color: #f0f9ff;
+            transform: translateX(5px);
+        }
+
+        /* MathJax adjustments to prevent overflow */
+        mjx-container {
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Global -->
+    <header class="glass-card sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="app.showView('home')">
+                <div class="bg-sky-600 text-white p-2 rounded-lg shadow-lg">
+                    <i class="ph-bold ph-chart-line-up text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-xl tracking-tight text-slate-800" id="header-title">Tema 5.3 - Contraste de Hipótesis</h1>
+                    <p class="text-[9px] uppercase tracking-widest font-bold text-slate-500">ANÁLISIS DE DATOS Y MATEMÁTICAS</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 sm:gap-4">
+                <!-- Botón Portal Principal -->
+                <a href="../../../index.html" class="bg-slate-700 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-arrow-left text-lg"></i> <span class="hidden sm:inline">Portal Principal</span>
+                </a>
+
+                <!-- Botón Calculadora Externa -->
+                <a href="https://web2.0calc.es/" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-calculator text-lg"></i> <span class="hidden sm:inline">Calculadora</span>
+                </a>
+
+                <!-- Botón Menú Global -->
+                <button id="btn-global-menu" onclick="app.showView('home')" class="hidden bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-xl items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-house text-lg"></i> <span class="hidden sm:inline">Menú</span>
+                </button>
+
+                <!-- Contador Global -->
+                <div id="nav-counter" class="hidden items-center gap-2 bg-white/60 px-3 py-1.5 rounded-full border border-white">
+                    <span id="global-counter" class="text-sky-700 font-bold font-mono text-sm">0/0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-5xl w-full mx-auto p-6 flex flex-col items-center justify-center">
+
+        <!-- VIEW: HOME (MENU) -->
+        <section id="view-home" class="fade-in w-full">
+            <div class="text-center mb-12">
+                <h1 class="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400 mb-8 tracking-tighter opacity-80 select-none">
+                    SAIMAP</h1>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-4">¿Cómo quieres practicar hoy?</h2>
+                <h3 class="text-xl font-bold text-slate-600 mb-4">Tema 5.3 - Contraste de Hipótesis</h3>
+                <p class="text-slate-500">Selecciona la herramienta que mejor se adapte a tu objetivo de estudio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                <!-- QUIZ -->
+                <div onclick="app.startTool('quiz')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-sky-500">
+                    <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-numbers text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Test Teórico</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Preguntas de opción múltiple sobre conceptos y propiedades estadísticas.</p>
+                </div>
+
+                <!-- LABORATORIO (Reemplaza Trainer) -->
+                <div onclick="app.startTool('laboratorio')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-emerald-500">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-calculator text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Laboratorio</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Ejercicios de cálculo numérico con escenarios guiados paso a paso.</p>
+                </div>
+
+                <!-- FÓRMULAS (Reemplaza Flashcards) -->
+                <div onclick="app.startTool('formulas')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-indigo-500">
+                    <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-dashes text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fórmulas</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Glosario completo de fórmulas matemáticas para consultar rápidamente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: QUIZ -->
+        <section id="view-quiz" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-sky-500"></div>
+
+                <div class="flex justify-between items-center mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Modo Test</span>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">
+                            Finalizar Sesión
+                        </button>
+                    </div>
+                    <button id="quiz-hint-btn" onclick="app.quizToggleHint()" class="text-amber-600 font-bold text-xs flex items-center gap-1 hover:bg-amber-50 px-3 py-1.5 rounded-lg transition">
+                        <i class="ph-bold ph-lightbulb"></i> Ver Pista
+                    </button>
+                </div>
+
+                <h2 id="quiz-question" class="text-2xl font-bold text-slate-800 mb-8 math-content"></h2>
+
+                <div id="quiz-hint-box" class="hidden mb-6 p-4 bg-amber-50 border-l-4 border-amber-400 text-amber-900 text-sm italic rounded-r-xl math-content"></div>
+
+                <div id="quiz-options" class="space-y-3"></div>
+
+                <!-- Feedback Quiz -->
+                <div id="quiz-feedback" class="hidden mt-8 p-6 rounded-2xl border transition-all">
+                    <div class="flex items-start gap-4">
+                        <div id="quiz-feedback-icon" class="text-3xl"></div>
+                        <div class="w-full">
+                            <h4 id="quiz-feedback-title" class="font-bold text-lg"></h4>
+                            <div id="quiz-explanation" class="text-sm text-slate-600 mt-2 p-3 bg-slate-50 rounded-lg math-content"></div>
+                        </div>
+                    </div>
+                    <button onclick="app.quizNext()" class="mt-6 btn-primary py-4 px-8 rounded-xl w-full flex items-center justify-center gap-2">
+                        Continuar <i class="ph ph-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: LABORATORIO -->
+        <section id="view-laboratorio" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl overflow-hidden border-t-4 border-emerald-500">
+                <!-- Cabecera y Contexto -->
+                <div class="p-6 md:p-8 bg-emerald-50/50 border-b border-slate-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center font-bold" id="lab-problem-number">1</div>
+                            <h2 id="lab-main-title" class="text-xl font-bold text-slate-800"></h2>
+                        </div>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">Finalizar</button>
+                    </div>
+                    <div id="lab-context-box" class="bg-white/80 p-5 rounded-xl text-slate-700 math-content text-base border border-slate-200 shadow-inner"></div>
+                </div>
+
+                <!-- Contenedor de Apartados -->
+                <div id="lab-parts-container" class="flex flex-col bg-white">
+                    <!-- Los apartados se inyectan aquí automáticamente -->
+                </div>
+            </div>
+
+            <!-- Botón de siguiente problema -->
+            <button onclick="app.labNext()" class="mt-6 w-full bg-slate-800 hover:bg-slate-900 text-white py-4 rounded-xl font-bold shadow-lg transform active:scale-95 transition flex justify-center items-center gap-2">
+                Siguiente Problema <i class="ph-bold ph-arrow-right"></i>
+            </button>
+        </section>
+
+        <!-- VIEW: FÓRMULAS -->
+        <section id="view-formulas" class="hidden w-full fade-in space-y-6">
+            <div class="mb-6 px-2">
+                <h2 class="text-3xl font-black text-slate-800">Glosario de Fórmulas</h2>
+                <p class="text-slate-500 mt-1">Lista completa de recursos matemáticos</p>
+            </div>
+            
+            <!-- Grid Scrollable para las fórmulas -->
+            <div id="formulas-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-12">
+                <!-- Las fórmulas se inyectarán aquí -->
+            </div>
+        </section>
+
+        <!-- VIEW: RESULTS -->
+        <section id="view-results" class="hidden w-full fade-in text-center py-12">
+            <div class="glass-card p-12 rounded-[3rem] inline-block max-w-md w-full border-2 border-white shadow-2xl">
+                <div class="w-24 h-24 bg-yellow-400 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl shadow-yellow-200">
+                    <i class="ph-fill ph-trophy text-5xl"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold text-slate-800 mb-2">¡Sesión Finalizada!</h2>
+                <p id="result-text" class="text-slate-500 mb-8">Has completado todos los ejercicios.</p>
+
+                <div class="flex flex-col gap-3">
+                    <button id="btn-retry-errors" onclick="app.retryErrors()" class="hidden bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-2xl transition flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-warning-circle"></i> Repasar solo Fallos (<span id="fail-count">0</span>)
+                    </button>
+                    <button onclick="app.showView('home')" class="btn-primary w-full py-4 rounded-2xl uppercase tracking-widest text-sm shadow-md">Menú Principal</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // --- DATOS JSON VACÍOS (Inyectados dinámicamente) ---
+        const jsonTestA = [{"q": "¿Es cierto que las hipótesis estadística $H_{0}$ y $H_{1}$ deben ser exhaustivas y mutuamente excluyentes entre sí?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 0, "hint": "Revisa la definición de exhaustividad en el manual.", "explanation": "Según el texto, las hipótesis estadística son mutuamente excluyentes y exhaustivas, lo que implica que no pueden rechazarse simultáneamente y cubren todas las alternativas posibles."}, {"q": "¿Es cierto que la decisión estadística final se toma directamente sobre la hipótesis alternativa $H_{1}$?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 1, "hint": "Piensa sobre qué hipótesis recae el peso de la prueba.", "explanation": "El procedimiento de contraste se aplica exclusivamente a la hipótesis nula ($H_{0}$), siendo esta la que se mantiene o se rechaza en función de la evidencia."}, {"q": "¿Es cierto que en un contraste bilateral el valor de $\\alpha$ se mantiene íntegro en un solo extremo de la curva?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 1, "hint": "Recuerda el reparto de la zona de rechazo en pruebas bidireccionales.", "explanation": "En las hipótesis bilaterales, la zona de rechazo se sitúa en ambos extremos de la distribución, por lo que el valor de $\\alpha$ debe dividirse entre dos ($\\alpha/2$)."}, {"q": "¿Es cierto que la distribución $t$ de Student se aproxima a la distribución $Z$ a medida que aumentan los grados de libertad?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 0, "hint": "Considera el efecto del tamaño muestral en la forma de la curva.", "explanation": "Cuanto mayor es el tamaño de la muestra ($n$), más grados de libertad tiene la distribución $t$, asemejándose progresivamente a la normal estándar $Z$."}, {"q": "¿Es cierto que el error de tipo I consiste en mantener la hipótesis nula $H_{0}$ siendo esta en realidad falsa?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 1, "hint": "Distingue entre rechazar lo verdadero y aceptar lo falso.", "explanation": "El error de tipo I es rechazar la $H_{0}$ cuando es verdadera. Mantenerla siendo falsa se denomina error de tipo II."}, {"q": "¿Es cierto que el nivel de confianza ($1-\\alpha$) y el nivel de significación ($\\alpha$) siempre suman el $100\\%$?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 0, "hint": "Revisa la relación probabilística entre confianza y error.", "explanation": "La suma de $\\alpha$ y el nivel de confianza ($1-\\alpha$) recoge la probabilidad total del espacio muestral, equivalente al $100\\%$."}, {"q": "¿Es cierto que se debe usar la distribución $Z$ cuando la varianza poblacional $\\sigma^2$ es desconocida y $n$ es pequeño?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 1, "hint": "Identifica qué distribución requiere el conocimiento del parámetro $\\sigma$.", "explanation": "Si se desconoce la varianza poblacional, se debe emplear la distribución $t$ de Student, utilizando la varianza muestral como estimador."}, {"q": "¿Es cierto que un intervalo de confianza más estrecho implica una mayor precisión en la estimación del parámetro?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 0, "hint": "Relaciona la amplitud del intervalo con el error típico.", "explanation": "A medida que aumenta el tamaño de la muestra, el error estándar disminuye, estrechando el intervalo y aumentando la precisión de la estimación."}, {"q": "¿Es cierto que en un contraste unilateral derecho se rechaza $H_{0}$ si el estadístico observado es significativamente menor al postulado?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 1, "hint": "Visualiza la dirección de la zona de rechazo en el lado derecho.", "explanation": "En un contraste unilateral derecho, la zona de rechazo está en el extremo superior. Se rechaza $H_{0}$ si el valor observado es significativamente mayor."}, {"q": "¿Es cierto que el contraste de hipótesis mediante intervalos de confianza asume siempre una naturaleza bilateral?", "options": ["Es una afirmación verdadera.", "Es una afirmación falsa.", "No se puede determinar."], "correct": 0, "hint": "Considera cómo se construyen los límites inferior y superior.", "explanation": "Los intervalos de confianza se basan en dos límites ($L_{i}$ y $L_{s}$), lo que equivale operativamente a un contraste bilateral de la hipótesis nula."}, {"q": "Seleccione la afirmación correcta sobre la formulación de hipótesis estadísticas:", "options": ["La hipótesis nula postula generalmente la existencia de un efecto real.", "La hipótesis alternativa es la que se somete directamente a contraste.", "La hipótesis alternativa postula la existencia de diferencias o efectos."], "correct": 2, "hint": "Recuerda cuál de las dos representa la 'novedad' o el efecto buscado.", "explanation": "La $H_{1}$ postula la existencia de un efecto o diferencia real, mientras que la $H_{0}$ suele apuntar a que no hay efecto o que los valores son iguales."}, {"q": "Seleccione la afirmación correcta sobre la distribución $t$ de Student:", "options": ["Requiere el conocimiento previo de la varianza poblacional $\\sigma^2$.", "Su forma exacta depende de los grados de libertad calculados como $n-1$.", "Es una distribución asimétrica que no depende del tamaño de la muestra."], "correct": 1, "hint": "Revisa cómo influye $n$ en esta distribución específica.", "explanation": "La distribución $t$ de Student es simétrica y su forma varía según los grados de libertad ($n-1$), aproximándose a la normal cuando $n$ crece."}, {"q": "Seleccione la afirmación correcta respecto al nivel de significación $\\alpha$:", "options": ["Representa el riesgo de error de tipo I que el investigador asume.", "Se calcula después de realizar el experimento y obtener los datos.", "Un valor de $\\alpha=0.05$ garantiza que el resultado es $100\\%$ real."], "correct": 0, "hint": "Piensa en el significado del riesgo en la toma de decisiones.", "explanation": "$\\alpha$ es la probabilidad de rechazar la $H_{0}$ siendo verdadera (Error Tipo I). Es un riesgo fijado a priori por el investigador."}, {"q": "Seleccione la afirmación correcta sobre los contrastes unilaterales:", "options": ["Dividen el nivel de riesgo $\\alpha$ entre los dos extremos de la curva.", "Sitúan la zona crítica en un único extremo según la predicción teórica.", "Se utilizan exclusivamente cuando se conoce la varianza poblacional."], "correct": 1, "hint": "Analiza el término 'unilateral' frente a 'bilateral'.", "explanation": "En los contrastes unilaterales, el investigador predice una dirección, por lo que toda la zona de rechazo ($\\alpha$) se sitúa en un solo extremo."}, {"q": "Seleccione la afirmación correcta sobre el procedimiento de contraste general:", "options": ["El primer paso consiste siempre en la realización del experimento.", "La interpretación de resultados es independiente de la hipótesis nula.", "El enunciado de la hipótesis debe preceder a la toma de datos empíricos."], "correct": 2, "hint": "Revisa la secuencia lógica del método hipotético-deductivo.", "explanation": "El procedimiento general comienza con enunciar la hipótesis (paso 1), seguido de realizar el experimento (paso 2) para obtener los datos."}, {"q": "Seleccione la afirmación correcta sobre el uso de puntuaciones $Z$ en contrastes:", "options": ["Se aplican cuando la varianza de la población es un dato conocido.", "Son el estadístico de elección cuando la muestra es menor a 30 sujetos.", "Requieren siempre el cálculo previo de los grados de libertad ($n-1$)."], "correct": 0, "hint": "Recuerda la condición fundamental para usar la normal estándar.", "explanation": "La distribución $Z$ se utiliza cuando se conoce la desviación típica o varianza poblacional ($\\sigma$), permitiendo la tipificación directa."}, {"q": "Seleccione la afirmación correcta sobre la zona de aceptación en una prueba $t$:", "options": ["Se define por los valores de $t$ que superan el valor crítico unilateral.", "Es el rango de valores del estadístico donde se mantiene la hipótesis $H_{0}$.", "Es equivalente al área de la distribución definida por el valor de $\\alpha$."], "correct": 1, "hint": "Distingue entre la región de mantenimiento y la región de rechazo.", "explanation": "La zona de aceptación es el área de la distribución donde, si cae el estadístico, no hay evidencia suficiente para rechazar la hipótesis nula."}, {"q": "Seleccione la afirmación correcta sobre los intervalos de confianza:", "options": ["Si el parámetro poblacional $\\mu$ está en el intervalo, se rechaza $H_{0}$.", "Un intervalo de confianza del $95\\%$ implica un nivel de riesgo $\\alpha=0.05$.", "La amplitud del intervalo es independiente de la desviación estándar."], "correct": 1, "hint": "Relaciona el nivel de confianza con el error de significación.", "explanation": "El nivel de confianza ($1-\\alpha$) y el nivel de riesgo ($\\alpha$) son complementarios; un $95\\%$ de confianza deja un $5\\%$ de riesgo."}, {"q": "Seleccione la afirmación correcta sobre la interpretación de resultados:", "options": ["Rechazar $H_{0}$ implica demostrar que la hipótesis científica es falsa.", "Mantener $H_{0}$ significa que no se han hallado diferencias significativas.", "Aceptar $H_{1}$ garantiza que el efecto hallado es absoluto y sin error."], "correct": 1, "hint": "Considera qué significa estadísticamente 'no haber encontrado efecto'.", "explanation": "Mantener la $H_{0}$ indica que los datos no aportan evidencia suficiente para afirmar un efecto real, atribuyendo las diferencias al azar."}, {"q": "Seleccione la afirmación correcta sobre el estadístico de contraste $T$:", "options": ["Su fórmula utiliza la desviación típica muestral $S_{x}$ en el denominador.", "Es idéntico al estadístico $Z$ independientemente del tamaño muestral.", "No puede ser utilizado en hipótesis de tipo unilateral o direccional."], "correct": 0, "hint": "Analiza los componentes de la fórmula de la prueba $t$.", "explanation": "Cuando se desconoce $\\sigma$, se usa $S_{x}$ (desviación típica de la muestra) para calcular el error estándar en la fórmula de $T$."}, {"q": "Seleccione la afirmación correcta sobre la exhaustividad de las hipótesis:", "options": ["Permite que existan resultados no cubiertos por ninguna de las dos.", "Obliga a que entre $H_{0}$ y $H_{1}$ se cubran todas las opciones posibles.", "Solo es necesaria en investigaciones de naturaleza no experimental."], "correct": 1, "hint": "Recuerda el principio lógico de no dejar 'huecos' en la decisión.", "explanation": "La exhaustividad garantiza que cualquier resultado posible del experimento pueda ser clasificado dentro de $H_{0}$ o de $H_{1}$."}, {"q": "Seleccione la afirmación correcta sobre el Error de Tipo II:", "options": ["Su probabilidad de ocurrencia disminuye al aumentar el tamaño de $n$.", "Es el error cometido al rechazar una hipótesis nula que es verdadera.", "Consiste en aceptar la hipótesis alternativa cuando esta es falsa."], "correct": 0, "hint": "Considera cómo afecta la potencia de la prueba al tamaño de la muestra.", "explanation": "Aunque no se detalla extensamente en el texto, aumentar $n$ mejora la precisión y reduce ambos tipos de error, aumentando la potencia."}, {"q": "Seleccione la afirmación correcta sobre el límite superior ($L_{s}$) en $Z$:", "options": ["Se calcula restando el error estándar a la media de la muestra.", "Se calcula sumando el producto de $Z_{\\alpha/2}$ y el error estándar a $\\overline{x}$.", "Solo depende del valor de la media poblacional postulada en la $H_{0}$."], "correct": 1, "hint": "Identifica la estructura de la fórmula del intervalo de confianza.", "explanation": "El límite superior se obtiene sumando a la media muestral el margen de error, que es el valor crítico por el error estándar: $\\overline{x} + Z_{\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}}$."}, {"q": "Seleccione la afirmación correcta sobre la varianza poblacional conocida:", "options": ["Obliga al uso de la distribución $t$ con $n-1$ grados de libertad.", "Permite una estimación más precisa utilizando la distribución normal.", "Es la situación más frecuente en la práctica de la investigación real."], "correct": 1, "hint": "Relaciona el conocimiento del parámetro con la elección de la curva.", "explanation": "Conocer $\\sigma^2$ permite usar la distribución $Z$, que es el 'máximo exponente de la distribución normal' y proporciona mayor precisión."}, {"q": "Seleccione la afirmación correcta sobre la zona crítica bilateral:", "options": ["Sus límites en $Z$ para $\\alpha=0.05$ son aproximadamente $\\pm 1.96$.", "Solo existe en un lado de la distribución si la hipótesis es de igualdad.", "Es independiente del valor de $\\alpha$ elegido para realizar el contraste."], "correct": 0, "hint": "Recuerda los valores críticos estándar de la tabla normal.", "explanation": "Para un contraste bilateral con $\\alpha=0.05$, los valores críticos de $Z$ que dejan $0.025$ en cada cola son $-1.96$ y $+1.96$."}, {"q": "Seleccione la afirmación incorrecta sobre la hipótesis nula $H_{0}$:", "options": ["Es la hipótesis que se asume como verdadera a priori.", "Siempre postula que existe una diferencia significativa entre grupos.", "Cualquier diferencia observada en ella se atribuye al simple azar."], "correct": 1, "hint": "Busca la afirmación que contradice la esencia de la 'neutralidad' de $H_0$.", "explanation": "La $H_{0}$ suele postular la ausencia de efecto o igualdad; es la $H_{1}$ la que postula la diferencia significativa."}, {"q": "Seleccione la afirmación incorrecta sobre el procedimiento de contraste:", "options": ["La elección del estadístico depende de si se conoce o no $\\sigma$.", "Las tablas de probabilidad son necesarias para fijar valores críticos.", "La decisión final sobre $H_{0}$ es absoluta y nunca conlleva riesgo de error."], "correct": 2, "hint": "Recuerda la naturaleza probabilística de la ciencia psicológica.", "explanation": "Toda decisión estadística conlleva un riesgo de error ($\\alpha$ o $\\beta$). Nunca se puede afirmar con un $100\\%$ de certeza absoluta."}, {"q": "Seleccione la afirmación incorrecta sobre la distribución $Z$:", "options": ["Es una distribución simétrica con media $0$ y desviación típica $1$.", "Se utiliza para tipificar puntuaciones directas individuales.", "Requiere calcular grados de libertad para ajustar su forma a la muestra."], "correct": 2, "hint": "Distingue qué distribución depende de los grados de libertad.", "explanation": "La distribución $Z$ es fija (normal estándar). Es la distribución $t$ de Student la que requiere el cálculo de grados de libertad ($n-1$)."}, {"q": "Seleccione la afirmación incorrecta sobre los contrastes unilaterales:", "options": ["La zona de rechazo se sitúa íntegramente en un solo extremo.", "El valor de $\\alpha$ debe dividirse entre dos para localizar el valor crítico.", "Se utilizan cuando hay una predicción teórica sobre la dirección del efecto."], "correct": 1, "hint": "Recuerda cómo se trata $\\alpha$ en pruebas de una sola dirección.", "explanation": "En las pruebas unilaterales, $\\alpha$ se mantiene íntegro en un extremo. Dividirlo es propio de los contrastes bilaterales."}, {"q": "Seleccione la afirmación incorrecta sobre el intervalo de confianza:", "options": ["Es un procedimiento basado en la estimación por intervalos.", "Si el valor postulado en $H_{0}$ cae dentro, se debe rechazar $H_{0}$.", "Su amplitud depende tanto del nivel de confianza como del error típico."], "correct": 1, "hint": "Piensa en qué significa que el valor esperado esté dentro del rango hallado.", "explanation": "Si el valor de la $H_{0}$ cae dentro del intervalo, significa que es un valor plausible y, por tanto, se debe mantener la $H_{0}$."}, {"q": "Seleccione la afirmación incorrecta sobre el estadístico $T$ de Student:", "options": ["Se emplea cuando la varianza poblacional es desconocida.", "A medida que $n$ aumenta, sus colas se vuelven más gruesas que en $Z$.", "Se basa en el uso de la desviación típica muestral como estimador."], "correct": 1, "hint": "Considera qué ocurre con la forma de la distribución $t$ al crecer $n$.", "explanation": "A medida que $n$ aumenta, la distribución $t$ se vuelve más delgada en las colas y se aproxima a la $Z$. Es con $n$ pequeño cuando tiene colas más gruesas."}, {"q": "Seleccione la afirmación incorrecta sobre la hipótesis científica:", "options": ["Es una explicación tentativa plausible para un fenómeno observado.", "Debe ser redactada siempre en términos de parámetros matemáticos.", "Suele formularse como una afirmación que será contrastada empíricamente."], "correct": 1, "hint": "Distingue entre hipótesis científica e hipótesis estadística.", "explanation": "La hipótesis científica se redacta en lenguaje natural sobre la realidad. Es la hipótesis estadística la que se formula con parámetros matemáticos."}, {"q": "Seleccione la afirmación incorrecta sobre el valor crítico en una prueba:", "options": ["Separa la zona de aceptación de la zona de rechazo de $H_{0}$.", "Depende exclusivamente del tamaño de la muestra y de nada más.", "Se localiza en las tablas de probabilidad según el nivel de $\\alpha$."], "correct": 1, "hint": "Piensa en todos los factores que determinan el punto de corte.", "explanation": "El valor crítico depende de $\\alpha$, de la distribución (Z o t) y, en el caso de la $t$, también del tamaño muestral ($df$)."}, {"q": "Seleccione la afirmación incorrecta sobre el error de tipo I:", "options": ["Es la probabilidad de rechazar una hipótesis nula verdadera.", "Su probabilidad máxima está controlada por el investigador mediante $\\alpha$.", "Ocurre cuando el investigador no logra detectar un efecto que sí existe."], "correct": 2, "hint": "Distingue entre 'falsa alarma' y 'omisión de efecto'.", "explanation": "No detectar un efecto real es Error de Tipo II. El Error de Tipo I es detectar un efecto (rechazar $H_{0}$) cuando en realidad no existe."}, {"q": "Seleccione la afirmación incorrecta sobre el contraste bilateral:", "options": ["Se utiliza cuando el investigador no predice una dirección clara.", "La hipótesis alternativa se formula utilizando el signo de desigualdad ($\\neq$).", "Permite rechazar $H_{0}$ solo si el valor observado es mayor al postulado."], "correct": 2, "hint": "Analiza las posibilidades de rechazo en una prueba bidireccional.", "explanation": "En un contraste bilateral, se puede rechazar la $H_{0}$ tanto si el valor observado es significativamente mayor como si es significativamente menor."}, {"q": "Seleccione la afirmación incorrecta sobre los grados de libertad ($df$):", "options": ["Se calculan como $n-1$ para la distribución $t$ de una muestra.", "Determinan la forma exacta de la distribución normal estándar $Z$.", "Influyen en la localización del valor crítico en la tabla de la $t$."], "correct": 1, "hint": "Recuerda qué distribución es fija y cuál es flexible.", "explanation": "La distribución $Z$ es única y no tiene grados de libertad. Son las distribuciones como la $t$ las que dependen de los $df$."}, {"q": "Seleccione la afirmación incorrecta sobre la regla de decisión en intervalos:", "options": ["Si el intervalo incluye el valor de $\\mu$ de $H_{0}$, se acepta $H_{0}$.", "Si el intervalo excluye el valor de $\\mu$ de $H_{0}$, se acepta $H_{1}$.", "El intervalo de confianza siempre es más ancho que la zona de rechazo."], "correct": 2, "hint": "Reflexiona sobre la relación espacial entre el intervalo y las zonas críticas.", "explanation": "El intervalo de confianza *es* la zona de aceptación. No tiene sentido compararlos en términos de 'ancho' como entidades distintas en este contexto."}, {"q": "Seleccione la afirmación incorrecta sobre el tamaño muestral ($n$):", "options": ["Un aumento de $n$ reduce el error estándar de la media.", "Si $n$ es muy grande, la distribución $t$ y la $Z$ son indistinguibles.", "Un tamaño de muestra pequeño aumenta la probabilidad de rechazar $H_{0}$."], "correct": 2, "hint": "Considera cómo afecta $n$ a la facilidad para encontrar significación.", "explanation": "Muestras pequeñas suelen dar intervalos más anchos y errores mayores, lo que dificulta rechazar la $H_{0}$ (menor potencia)."}, {"q": "Seleccione la afirmación incorrecta sobre la mutua exclusividad:", "options": ["Implica que si se acepta $H_{0}$, se debe rechazar automáticamente $H_{1}$.", "Permite que ambas hipótesis sean verdaderas al mismo tiempo.", "Garantiza que la decisión sobre una afecte inequívocamente a la otra."], "correct": 1, "hint": "Define el concepto lógico de 'exclusión'.", "explanation": "La mutua exclusividad significa precisamente que no pueden ser verdaderas simultáneamente; si una es cierta, la otra debe ser falsa."}, {"q": "Seleccione la afirmación incorrecta sobre la estandarización en pruebas:", "options": ["Permite conocer la probabilidad asociada a una estimación.", "Consiste en calcular la diferencia entre media muestral y poblacional.", "Requiere obligatoriamente que la población original sea no normal."], "correct": 2, "hint": "Considera el requisito de normalidad para usar $Z$ o $t$.", "explanation": "La estandarización asume normalidad (ya sea original o por el Teorema Central del Límite). No requiere que la población sea 'no normal'."}];
+        const jsonTestB = [{"q": "En el procedimiento de contraste, la hipótesis que se asume como verdadera a priori es la ____.", "options": ["Hipótesis nula $H_{0}$ ", "Hipótesis teórica $H_{t}$ ", "Hipótesis alterna $H_{1}$ "], "correct": 0, "hint": "Es la base del razonamiento estadístico que se mantiene hasta que haya evidencia contraria.", "explanation": "Según el manual, la $$\\text{Hipótesis nula } (H_{0})$$ es aquello que consideramos verdadero a priori, a no ser que contemos con evidencias suficientes en su contra."}, {"q": "Si un investigador postula que un grupo obtendrá medias diferentes sin especificar dirección, usa una ____.", "options": ["Hipótesis unilateral izq.", "Hipótesis de tipo bilateral", "Hipótesis unilateral dcha."], "correct": 1, "hint": "La palabra clave es 'diferentes' sin indicar si es mayor o menor.", "explanation": "Las $$\\text{Hipótesis bilaterales}$$ formulan el resultado de manera indiferenciada, señalando que los valores son distintos ($$H_{1}: \\mu \\neq \\mu_{0}$$)."}, {"q": "Para la distribución $t$ de Student, los grados de libertad se calculan mediante la expresión ____.", "options": ["$$gl = n - 1$$            ", "$$gl = n + 1$$            ", "$$gl = (n - 1) / 2$$      "], "correct": 0, "hint": "Es la resta de una unidad al tamaño total de la muestra.", "explanation": "Los grados de libertad adaptan la distribución en función del tamaño muestral y se calculan como $$n - 1$$."}, {"q": "El denominador de la prueba de significación $Z = (\\overline{X} - \\mu) / (____)$ corresponde al error típico.", "options": ["$$\\sigma^{2} / n$$       ", "$$\\sigma / \\sqrt{n}$$     ", "$$\\sigma \\cdot \\sqrt{n}$$"], "correct": 1, "hint": "Requiere la desviación típica poblacional y la raíz del tamaño muestral.", "explanation": "El error típico de la media se calcula dividiendo la desviación típica entre la raíz de $n$: $$\\frac{\\sigma}{\\sqrt{n}}$$."}, {"q": "Afirmar que existe un efecto real cuando en realidad no existe se conoce como ____.", "options": ["Error de tipo II         ", "Sesgo de confirmación    ", "Error de tipo I          "], "correct": 2, "hint": "Se relaciona directamente con el nivel de significación $\\alpha$.", "explanation": "El $$\\text{Error de tipo I}$$ consiste en rechazar la hipótesis nula siendo esta verdadera (afirmar un efecto inexistente)."}, {"q": "Si $\\alpha = 0,05$ en un contraste bilateral, la zona de rechazo se divide en dos áreas de ____.", "options": ["$$0,025$$                ", "$$0,050$$                ", "$$0,010$$                "], "correct": 0, "hint": "Divida el nivel de riesgo total entre los dos extremos de la campana.", "explanation": "En un contraste bilateral, el valor de $$\\alpha$$ debe dividirse entre dos ($$\\alpha/2 = 0,05/2 = 0,025$$) para cada cola."}, {"q": "Al aumentar el tamaño muestral $n$, el intervalo de confianza tiende a ser más ____.", "options": ["Ancho y disperso         ", "Estrecho y preciso       ", "Inestable y aleatorio    "], "correct": 1, "hint": "Observe cómo afecta $n$ al denominador del error típico.", "explanation": "A medida que aumenta $n$, el error típico disminuye, lo que resulta en un $$L_{s} - L_{i}$$ menor, aumentando la precisión."}, {"q": "La distribución $t$ de Student se utiliza cuando la varianza poblacional es ____.", "options": ["Conocida y estable       ", "Infinita o nula          ", "Desconocida              "], "correct": 2, "hint": "Es la alternativa cuando solo disponemos de la desviación típica de la muestra $S$.", "explanation": "Se emplea la distribución $$t$$ cuando se desconoce $$\\sigma$$ y se debe usar la desviación típica muestral $$S_{x}$$ como estimación."}, {"q": "En una hipótesis unilateral derecha, rechazaremos $H_{0}$ si el estadístico es ____ que el valor crítico.", "options": ["Significativamente mayor ", "Significativamente menor ", "Exactamente igual        "], "correct": 0, "hint": "La zona crítica se sitúa en el extremo positivo de la distribución.", "explanation": "En el contraste unilateral derecho, la zona de rechazo está a la derecha: se rechaza si $$Z \\ge Z_{1-\\alpha}$$."}, {"q": "El paso número 4 del procedimiento general de contraste consiste en ____.", "options": ["Enunciar la hipótesis    ", "Interpretar resultados   ", "Tomar una decisión       "], "correct": 2, "hint": "Es el momento previo a la interpretación, donde se decide sobre $H_{0}$.", "explanation": "Según la Figura 81, el paso 4 es: $$\\text{Tomar una decisión sobre la hipótesis nula}$$."}, {"q": "Las hipótesis $H_{0}$ y $H_{1}$ son ____, lo que significa que cubren todas las posibilidades.", "options": ["Inconsistentes           ", "Exhaustivas              ", "Independientes           "], "correct": 1, "hint": "No pueden rechazarse simultáneamente y no dejan opciones fuera.", "explanation": "Las hipótesis estadísticas son mutuamente excluyentes y $$\\text{exhaustivas}$$ (incluyen todas las alternativas de resultado)."}, {"q": "Para un $\\alpha = 0,05$ bilateral, el valor crítico de $Z$ en las tablas es ____.", "options": ["$$\\pm 1,64$$             ", "$$\\pm 1,96$$             ", "$$\\pm 2,58$$             "], "correct": 1, "hint": "Es el valor de $Z$ que deja un 0,975 de área a su izquierda.", "explanation": "Para $$\\alpha/2 = 0,025$$, el valor de $Z$ correspondiente en la tabla de probabilidad es de $$1,96$$ en valor absoluto."}, {"q": "La media de la distribución normal unitaria o tipificada $Z$ es siempre ____.", "options": ["$$1$$                    ", "$$\\mu$$                  ", "$$0$$                    "], "correct": 2, "hint": "Es el centro de la distribución $N(0,1)$.", "explanation": "La distribución $Z$ es una distribución simétrica cuya media es igual a $$0$$ y su desviación típica es $$1$$."}, {"q": "Un contraste de hipótesis basado en rangos de valores se denomina contraste mediante ____.", "options": ["Pruebas de significación ", "Intervalos de confianza  ", "Estimación puntual       "], "correct": 1, "hint": "Se calculan un límite inferior ($L_{i}$) y uno superior ($L_{s}$).", "explanation": "Con el $$\\text{intervalo de confianza}$$ alcanzamos un rango de valores entre los que podría o no encontrarse el parámetro."}, {"q": "Si el valor observado cae en la zona de aceptación, debemos ____.", "options": ["Mantener la $H_{0}$      ", "Rechazar la $H_{0}$      ", "Aceptar la $H_{1}$       "], "correct": 0, "hint": "No hay evidencia suficiente para descartar la hipótesis de igualdad.", "explanation": "Si el estadístico de prueba cae dentro de la zona de aceptación, se toma la decisión de $$\\text{mantener la hipótesis nula } (H_{0})$$."}, {"q": "La probabilidad de no cometer un error de tipo I se denomina nivel de ____ y es $1 - \\alpha$.", "options": ["Significación            ", "Confianza                ", "Potencia                 "], "correct": 1, "hint": "Es el porcentaje de veces que acertaremos al mantener $H_{0}$ cuando es cierta.", "explanation": "La suma de $$\\alpha$$ y del nivel de confianza $$(1-\\alpha)$$ siempre será del 100%."}, {"q": "Si deseamos contrastar si $\\mu < 25$, estamos ante un contraste ____.", "options": ["Bilateral                ", "Unilateral derecho       ", "Unilateral izquierdo     "], "correct": 2, "hint": "La dirección del efecto apunta hacia valores menores que el postulado.", "explanation": "La hipótesis unilateral izquierda postula que el valor del parámetro será inferior al postulado ($$H_{1}: \\mu < 25$$)."}, {"q": "En el cálculo de $T$, si $n = 30$ y $\\overline{X} = 15, \\mu = 14, S_{x} = 4$, el valor de $T$ es ____.", "options": ["$$1,37$$                 ", "$$2,46$$                 ", "$$0,73$$                 "], "correct": 0, "hint": "Utilice la fórmula $T = (15 - 14) / (4 / \\sqrt{30})$.", "explanation": "Calculando: $$T = 1 / (4 / 5,48) = 1 / 0,73 = 1,37$$. Coincide con el ejemplo del manual."}, {"q": "La hipótesis científica se formula habitualmente como una ____ que debe contrastarse.", "options": ["Pregunta abierta         ", "Afirmación               ", "Negación absoluta        "], "correct": 1, "hint": "Es una explicación tentativa plausible para un fenómeno observado.", "explanation": "La hipótesis científica suele redactarse como una $$\\text{afirmación}$$ que deberá contrastarse mediante la experimentación."}, {"q": "Para $\\alpha = 0,01$ unilateral derecha con $df = 29$, el valor crítico de $t$ es ____.", "options": ["$$1,311$$                ", "$$2,462$$                ", "$$2,756$$                "], "correct": 1, "hint": "Busque en la tabla de $t$ la intersección de 29 grados de libertad y 0,99 de probabilidad.", "explanation": "Según el ejemplo del manual, el valor de $$t$$ para $$0,99$$ con $$29$$ grados de libertad es $$2,462$$."}, {"q": "¿Cuál de las siguientes afirmaciones sobre la hipótesis nula $H_{0}$ es correcta?", "options": ["Se considera verdadera a priori hasta que haya evidencia. ", "Postula generalmente la ausencia de efecto o igualdad.   ", "Todas las anteriores son correctas                        "], "correct": 2, "hint": "Repase la definición de $H_{0}$ en la página 153.", "explanation": "Ambas afirmaciones son propiedades básicas de la $$\\text{hipótesis nula}$$ definidas en el texto."}, {"q": "¿Qué elementos son necesarios para elegir un procedimiento de contraste adecuado?", "options": ["Tamaño muestral y conocimiento de varianza poblacional.  ", "Nivel de significación asumido y medias obtenidas.      ", "Todas las anteriores son correctas                        "], "correct": 2, "hint": "Consulte los requisitos mencionados al final del paso 2.", "explanation": "Para elegir el contraste se requiere: $$n, \\overline{X}, \\mu, \\sigma, \\alpha$$, etc. Todo es necesario."}, {"q": "La distribución $t$ de Student se caracteriza por:", "options": ["Depender de los grados de libertad ($$n - 1$$).           ", "Aproximarse a la distribución $Z$ al aumentar $n$.       ", "Todas las anteriores son correctas                        "], "correct": 2, "hint": "Revise las características de la distribución $t$ en la página 156.", "explanation": "La forma de la $$\\text{distribución t}$$ depende de los grados de libertad y converge a la normal $$Z$$ con muestras grandes."}, {"q": "El rechazo de la hipótesis nula $H_{0}$ implica:", "options": ["La aceptación automática de la hipótesis alternativa.    ", "La existencia de evidencias de un efecto significativo.  ", "Todas las anteriores son correctas                        "], "correct": 2, "hint": "Recuerde que son mutuamente excluyentes y exhaustivas.", "explanation": "Al rechazar $$H_{0}$$, se acepta $$H_{1}$$ debido a que se han encontrado evidencias suficientes en contra de la nula."}, {"q": "En el contraste mediante intervalos de confianza, se debe:", "options": ["Dividir siempre el nivel $\\alpha$ entre dos.             ", "Calcular tanto un límite inferior como uno superior.    ", "Todas las anteriores son correctas                        "], "correct": 2, "hint": "Piense en la simetría del intervalo respecto a la media muestral.", "explanation": "Como el intervalo tiene dos límites y se extiende en ambas direcciones, se usa $$\\alpha/2$$ y se calculan $$L_{i}$$ y $$L_{s}$$."}, {"q": "La precisión de una estimación por intervalos aumenta si:", "options": ["El tamaño de la muestra ($n$) es mayor.                  ", "El nivel de confianza ($1 - \\alpha$) es menor.          ", "Todas las anteriores son correctas                        "], "correct": 2, "hint": "Recuerde cómo afectan $n$ y $Z$ a la amplitud del intervalo.", "explanation": "Un $$n$$ mayor reduce el error típico y un nivel de confianza menor reduce el valor crítico de $$Z$$, estrechando el intervalo."}, {"q": "¿Cuáles son valores de $\\alpha$ comúnmente utilizados en psicología?", "options": ["$$0,05$$ (5%) y $$0,01$$ (1%).                           ", "$$0,001$$ (0,1%).                                        ", "Todas las anteriores son correctas                        "], "correct": 2, "hint": "Consulte la página 156 sobre los grados de exigencia.", "explanation": "El manual cita explícitamente los niveles de significación de $$5\\%, 1\\%$$ y $$0,1\\%$$."}, {"q": "El procedimiento general de contraste de hipótesis requiere:", "options": ["Un diseño experimental o método apropiado.              ", "Una muestra representativa y de tamaño suficiente.      ", "Todas las anteriores son correctas                        "], "correct": 2, "hint": "Revise el paso 2: Realizar el experimento.", "explanation": "Para la inferencia estadística es crucial que la muestra sea representativa y el método de recogida de datos sea el adecuado."}, {"q": "Las hipótesis estadísticas bilaterales se formulan como:", "options": ["$$H_{0}: \\mu = \\text{valor}$$                             ", "$$H_{1}: \\mu \\neq \\text{valor}$$                          ", "Todas las anteriores son correctas                        "], "correct": 2, "hint": "Revise la Tabla 36 del manual.", "explanation": "El planteamiento bilateral usa la igualdad en la nula y la desigualdad (distinto) en la alternativa."}, {"q": "Sobre el error típico de la media, es cierto que:", "options": ["Es la desviación típica de la distribución muestral.    ", "Se usa para calcular tanto $Z$ como intervalos.         ", "Todas las anteriores son correctas                        "], "correct": 2, "hint": "Es el divisor en la fórmula de $Z$ y el multiplicando en el margen de error.", "explanation": "El error típico ($$SE$$) es fundamental en inferencia para cuantificar la variabilidad de las medias muestrales."}, {"q": "Si en un contraste $Z$ bilateral con $\\alpha=0,05$ obtenemos $Z=1,45$, entonces:", "options": ["Rechazamos la hipótesis nula con seguridad.             ", "Aceptamos la hipótesis alternativa $H_{1}$.             ", "Ninguna de las anteriores es correcta                    "], "correct": 2, "hint": "Compare 1,45 con el valor crítico 1,96.", "explanation": "Como $$1,45 < 1,96$$, el valor cae en la zona de aceptación. Debemos mantener $$H_{0}$$, no rechazarla ni aceptar $$H_{1}$$."}, {"q": "La hipótesis alternativa unilateral izquierda se define como:", "options": ["$$H_{1}: \\mu > \\text{valor}$$                             ", "$$H_{1}: \\mu \\ge \\text{valor}$$                            ", "Ninguna de las anteriores es correcta                    "], "correct": 2, "hint": "Revise el símbolo de desigualdad para 'menor que'.", "explanation": "La hipótesis unilateral izquierda se define como $$H_{1}: \\mu < \\text{valor}$$. Las opciones muestran mayor o mayor/igual."}, {"q": "El valor de los grados de libertad para una muestra de $n=15$ es:", "options": ["$$gl = 15$$                                              ", "$$gl = 16$$                                              ", "Ninguna de las anteriores es correcta                    "], "correct": 2, "hint": "Recuerde que es $n - 1$.", "explanation": "Para $$n=15$$, los grados de libertad son $$15 - 1 = 14$$. Ninguna opción muestra 14."}, {"q": "En el ejemplo de calidad de vida, si $Z=3,85$ y $Z_{crit}=1,96$, la decisión es:", "options": ["Mantener la hipótesis nula por ser un valor alto.       ", "Rechazar la hipótesis alternativa.                      ", "Ninguna de las anteriores es correcta                    "], "correct": 2, "hint": "3,85 es mucho mayor que 1,96.", "explanation": "La decisión correcta es rechazar $$H_{0}$$ y aceptar $$H_{1}$$. Las opciones proponen lo contrario."}, {"q": "Para calcular el límite superior $L_{s}$ con varianza conocida, usamos:", "options": ["$$L_{s} = \\mu + Z_{\\alpha/2} \\cdot (\\sigma/\\sqrt{n})$$    ", "$$L_{s} = \\overline{X} - Z_{\\alpha/2} \\cdot (\\sigma/\\sqrt{n})$$", "Ninguna de las anteriores es correcta                    "], "correct": 2, "hint": "Recuerde que el intervalo se construye sobre el estadístico muestral.", "explanation": "La fórmula correcta es $$L_{s} = \\overline{X} + Z_{\\alpha/2} \\cdot (\\sigma/\\sqrt{n})$$. La opción A usa $$\\mu$$ y la B usa resta."}, {"q": "Un error de tipo II ocurre cuando:", "options": ["Rechazamos $H_{0}$ siendo esta verdadera.               ", "Aceptamos $H_{1}$ habiendo un efecto real.              ", "Ninguna de las anteriores es correcta                    "], "correct": 2, "hint": "Es el error de no detectar un efecto que sí existe.", "explanation": "El error de tipo II ocurre cuando se mantiene la $$H_{0}$$ siendo falsa (no detectar el efecto). Las opciones no describen esto."}, {"q": "La zona de aceptación en un contraste bilateral de $Z$ con $\\alpha=0,05$ es:", "options": ["Valores de $Z$ mayores que $$1,96$$.                    ", "Valores de $Z$ menores que $$-1,96$$.                   ", "Ninguna de las anteriores es correcta                    "], "correct": 2, "hint": "La zona de aceptación es el área central, no los extremos.", "explanation": "La zona de aceptación está entre $$-1,96$$ y $$1,96$$. Las opciones describen las zonas de rechazo."}, {"q": "Si en un estudio de $n=100$ sujetos se obtiene una desviación típica $S=10$, el error típico es:", "options": ["$$10$$                                                   ", "$$100$$                                                  ", "Ninguna de las anteriores es correcta                    "], "correct": 2, "hint": "Divida 10 entre la raíz de 100.", "explanation": "El error típico es $$10 / \\sqrt{100} = 10 / 10 = 1$$. Las opciones muestran 10 y 100."}, {"q": "El primer paso del contraste de hipótesis según el manual es:", "options": ["Realizar el experimento.                                ", "Elegir el procedimiento de contraste.                   ", "Ninguna de las anteriores es correcta                    "], "correct": 2, "hint": "Antes de experimentar, hay que definir qué se busca.", "explanation": "El primer paso es $$\\text{Enunciar la hipótesis}$$. Las opciones listan los pasos 2 y 3."}, {"q": "Si mantenemos la $H_{0}$ con un nivel de confianza del 95%, podemos afirmar que:", "options": ["Hemos demostrado al 100% que la media es igual al valor.", "La probabilidad de que $H_{1}$ sea cierta es de 0,05.    ", "Ninguna de las anteriores es correcta                    "], "correct": 2, "hint": "La estadística trabaja con probabilidades, nunca con certezas absolutas.", "explanation": "Solo podemos decir que no hay evidencias suficientes para rechazar $$H_{0}$$ con ese margen de riesgo. No hay certezas del 100%."}];
+        const jsonLaboratorio = [{"id": 1, "title": "Impacto de la Terapia Cognitiva en Depresión", "context": "Un equipo de psicólogos evalúa una nueva terapia. Saben que la media poblacional en una escala de depresión es $\\mu = 20$ con $\\sigma = 5$. Tras tratar a una muestra de $n = 36$ pacientes, obtienen una media de $\\overline{x} = 17.5$. Se utiliza la fórmula del estadístico $Z = \\frac{\\overline{x} - \\mu}{\\sigma / \\sqrt{n}}$.", "parts": [{"id": "p1a", "label": "a)", "question": "Calcula el Error Estándar (EE) de la media.", "correctValue": 0.83, "tolerance": 0.01, "explanation": "$$EE = \\frac{\\sigma}{\\sqrt{n}} = \\frac{5}{\\sqrt{36}} = \\frac{5}{6} \\approx 0.8333$$"}, {"id": "p1b", "label": "b)", "question": "Calcula el valor del estadístico de contraste Z observado.", "correctValue": -3, "tolerance": 0.1, "explanation": "$$Z = \\frac{17.5 - 20}{0.8333} = \\frac{-2.5}{0.8333} = -3.0$$"}, {"id": "p1c", "label": "c)", "question": "Para un contraste bilateral con $\\alpha = 0.05$, ¿cuál es el valor crítico absoluto de $Z_{\\alpha/2}$?", "correctValue": 1.96, "tolerance": 0, "explanation": "$$Z_{0.025} = 1.96$$"}, {"id": "p1d", "label": "d)", "question": "¿Se rechaza la hipótesis nula $H_0: \\mu = 20$? (Responde 1 para Sí, 0 para No).", "correctValue": 1, "tolerance": 0, "explanation": "Como $|-3.0| > 1.96$, el estadístico cae en la zona de rechazo."}]}, {"id": 2, "title": "Niveles de Ansiedad en Estudiantes (Varianza Desconocida)", "context": "Se estudia la ansiedad con una escala donde la media teórica es $\\mu = 50$. Una muestra de $n = 25$ estudiantes arroja $\\overline{x} = 54$ y una desviación típica muestral $S_x = 10$. Al desconocer $\\sigma$, usamos $T = \\frac{\\overline{x} - \\mu}{S_x / \\sqrt{n}}$.", "parts": [{"id": "p2a", "label": "a)", "question": "¿Cuántos grados de libertad (gl) corresponden a esta prueba?", "correctValue": 24, "tolerance": 0, "explanation": "$$gl = n - 1 = 25 - 1 = 24$$"}, {"id": "p2b", "label": "b)", "question": "Calcula el error estándar estimado mediante la muestra.", "correctValue": 2, "tolerance": 0, "explanation": "$$\\frac{S_x}{\\sqrt{n}} = \\frac{10}{\\sqrt{25}} = \\frac{10}{5} = 2.0$$"}, {"id": "p2c", "label": "c)", "question": "Calcula el valor del estadístico T observado.", "correctValue": 2, "tolerance": 0, "explanation": "$$T = \\frac{54 - 50}{2} = \\frac{4}{2} = 2.0$$"}, {"id": "p2d", "label": "d)", "question": "Si el valor crítico para $\\alpha = 0.05$ (bilateral, 24 gl) es $2.064$, ¿se mantiene la $H_0$? (1 para Sí, 0 para No).", "correctValue": 1, "tolerance": 0, "explanation": "Como $2.0 < 2.064$, el valor cae en la zona de aceptación/mantenimiento."}]}, {"id": 3, "title": "Intervalo de Confianza para Calidad de Vida", "context": "Una psicóloga desea estimar la media de calidad de vida. En una muestra de $n = 100$ sujetos, obtiene $\\overline{x} = 80$. Se sabe que la desviación típica poblacional es $\\sigma = 12$. Fórmula: $L = \\overline{x} \\pm Z_{\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}}$.", "parts": [{"id": "p3a", "label": "a)", "question": "Calcula el Error Estándar de la media.", "correctValue": 1.2, "tolerance": 0, "explanation": "$$EE = \\frac{12}{\\sqrt{100}} = \\frac{12}{10} = 1.2$$"}, {"id": "p3b", "label": "b)", "question": "Para un nivel de confianza del 99% ($\\alpha = 0.01$), ¿cuál es el valor de $Z_{\\alpha/2}$?", "correctValue": 2.58, "tolerance": 0.01, "explanation": "$$Z_{0.005} \\approx 2.575 \\text{ o } 2.58$$"}, {"id": "p3c", "label": "c)", "question": "Calcula el Límite Inferior ($L_i$) del intervalo de confianza al 99%.", "correctValue": 76.9, "tolerance": 0.1, "explanation": "$$L_i = 80 - (2.58 \\cdot 1.2) = 80 - 3.096 = 76.904$$"}, {"id": "p3d", "label": "d)", "question": "Calcula el Límite Superior ($L_s$) del intervalo de confianza al 99%.", "correctValue": 83.1, "tolerance": 0.1, "explanation": "$$L_s = 80 + (2.58 \\cdot 1.2) = 80 + 3.096 = 83.096$$"}]}, {"id": 4, "title": "Prueba Unilateral Derecha: Memoria de Trabajo", "context": "Un investigador postula que un entrenamiento aumenta la media de memoria más allá de $\\mu = 10$. Tras el experimento con $n = 16$ sujetos, obtiene $\\overline{x} = 12$ y $S_x = 3.2$. Hipótesis: $H_1: \\mu > 10$.", "parts": [{"id": "p4a", "label": "a)", "question": "Calcula el denominador de la prueba T (Error Estándar estimado).", "correctValue": 0.8, "tolerance": 0, "explanation": "$$\\frac{3.2}{\\sqrt{16}} = \\frac{3.2}{4} = 0.8$$"}, {"id": "p4b", "label": "b)", "question": "Calcula el valor T observado.", "correctValue": 2.5, "tolerance": 0, "explanation": "$$T = \\frac{12 - 10}{0.8} = \\frac{2}{0.8} = 2.5$$"}, {"id": "p4c", "label": "c)", "question": "Si el valor crítico de T para $\\alpha = 0.05$ (unilateral, 15 gl) es $1.753$, ¿es el resultado estadísticamente significativo? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "Como $2.5 > 1.753$, se rechaza $H_0$ y el resultado es significativo."}, {"id": "p4d", "label": "d)", "question": "¿Cuál es la probabilidad de cometer Error Tipo I en este contraste si fijamos $\\alpha = 0.05$?", "correctValue": 0.05, "tolerance": 0, "explanation": "El nivel de significación $\\alpha$ define la probabilidad de cometer Error Tipo I."}]}, {"id": 5, "title": "Intervalo de Confianza con Muestras Pequeñas", "context": "Se analiza el tiempo de reacción en $n = 9$ pilotos. La media es $\\overline{x} = 250$ ms y $S_x = 30$ ms. Se desconoce la varianza poblacional.", "parts": [{"id": "p5a", "label": "a)", "question": "Calcula el Error Estándar estimado.", "correctValue": 10, "tolerance": 0, "explanation": "$$\\frac{30}{\\sqrt{9}} = \\frac{30}{3} = 10$$"}, {"id": "p5b", "label": "b)", "question": "Si para un intervalo al 95% con 8 gl, el valor crítico $t_{0.025; 8} = 2.306$, calcula el margen de error.", "correctValue": 23.06, "tolerance": 0.01, "explanation": "$$ME = t \\cdot EE = 2.306 \\cdot 10 = 23.06$$"}, {"id": "p5c", "label": "c)", "question": "Calcula el Límite Inferior del intervalo.", "correctValue": 226.94, "tolerance": 0.01, "explanation": "$$250 - 23.06 = 226.94$$"}, {"id": "p5d", "label": "d)", "question": "¿Qué ocurre con la amplitud del intervalo si el tamaño de la muestra aumenta a $n=100$? (1=Se estrecha, 2=Se ensancha, 3=Igual).", "correctValue": 1, "tolerance": 0, "explanation": "Al aumentar $n$, el Error Estándar disminuye, haciendo el intervalo más preciso y estrecho."}]}, {"id": 6, "title": "Contraste de Hipótesis: Autoestima", "context": "Un psicólogo clínico afirma que la media de autoestima en su población es $\\mu = 30$ con $\\sigma^2 = 64$. Evalúa a $n = 16$ individuos y obtiene $\\overline{x} = 26$.", "parts": [{"id": "p6a", "label": "a)", "question": "Calcula la desviación típica poblacional $\\sigma$.", "correctValue": 8, "tolerance": 0, "explanation": "$$\\sigma = \\sqrt{64} = 8$$"}, {"id": "p6b", "label": "b)", "question": "Calcula el estadístico de contraste Z observado.", "correctValue": -2, "tolerance": 0, "explanation": "$$Z = \\frac{26 - 30}{8 / \\sqrt{16}} = \\frac{-4}{2} = -2.0$$"}, {"id": "p6c", "label": "c)", "question": "Para $\\alpha = 0.05$ bilateral, el valor crítico es $\\pm 1.96$. ¿Se rechaza la hipótesis de que la media es 30? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "Como $|-2.0| > 1.96$, se rechaza $H_0$."}, {"id": "p6d", "label": "d)", "question": "Si se hubiera planteado una hipótesis unilateral izquierda ($H_1: \\mu < 30$) con $\\alpha = 0.05$ (crítico -1.645), ¿se rechazaría $H_0$? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "Como $-2.0 < -1.645$, se rechaza $H_0$."}]}, {"id": 7, "title": "Frecuencia Cardíaca y Estrés", "context": "Se conoce que la media de pulsaciones en reposo es $\\mu = 72$ lpm. Un grupo de $n = 64$ personas bajo estrés muestra $\\overline{x} = 75$ y $S_x = 8$.", "parts": [{"id": "p7a", "label": "a)", "question": "Calcula el valor del Error Estándar de la media.", "correctValue": 1, "tolerance": 0, "explanation": "$$\\frac{8}{\\sqrt{64}} = \\frac{8}{8} = 1.0$$"}, {"id": "p7b", "label": "b)", "question": "Calcula el valor del estadístico T.", "correctValue": 3, "tolerance": 0, "explanation": "$$T = \\frac{75 - 72}{1} = 3.0$$"}, {"id": "p7c", "label": "c)", "question": "Con $\\alpha = 0.01$ bilateral y $gl = 63$ (crítico $\\approx 2.66$), ¿es la diferencia significativa? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "3.0 > 2.66, por tanto es significativo."}, {"id": "p7d", "label": "d)", "question": "¿Cuál es la probabilidad máxima de haber rechazado $H_0$ siendo verdadera en este estudio?", "correctValue": 0.01, "tolerance": 0, "explanation": "Es el valor $\\alpha$ elegido."}]}, {"id": 8, "title": "Estimación de Inteligencia en un Subgrupo", "context": "En un test de CI ($\\mu = 100, \\sigma = 15$), una muestra de $n = 25$ estudiantes de arte obtiene $\\overline{x} = 106$.", "parts": [{"id": "p8a", "label": "a)", "question": "Calcula el error estándar de la media.", "correctValue": 3, "tolerance": 0, "explanation": "$$15 / \\sqrt{25} = 3.0$$"}, {"id": "p8b", "label": "b)", "question": "Calcula el estadístico Z.", "correctValue": 2, "tolerance": 0, "explanation": "$$(106 - 100) / 3 = 2.0$$"}, {"id": "p8c", "label": "c)", "question": "Calcula el límite inferior del IC al 95% para esta muestra.", "correctValue": 100.12, "tolerance": 0.1, "explanation": "$$106 - (1.96 \\cdot 3) = 106 - 5.88 = 100.12$$"}, {"id": "p8d", "label": "d)", "question": "Calcula el límite superior del IC al 95%.", "correctValue": 111.88, "tolerance": 0.1, "explanation": "$$106 + 5.88 = 111.88$$"}]}, {"id": 9, "title": "Efecto de un Psicofármaco en el Sueño", "context": "Un investigador cree que un fármaco reduce el tiempo para dormir. $\\mu = 45$ min. Una muestra de $n = 49$ usuarios promedia $\\overline{x} = 40$ min con $S_x = 14$.", "parts": [{"id": "p9a", "label": "a)", "question": "Calcula el Error Estándar estimado.", "correctValue": 2, "tolerance": 0, "explanation": "$$14 / \\sqrt{49} = 14 / 7 = 2.0$$"}, {"id": "p9b", "label": "b)", "question": "Calcula el estadístico T observado.", "correctValue": -2.5, "tolerance": 0, "explanation": "$$(40 - 45) / 2 = -2.5$$"}, {"id": "p9c", "label": "c)", "question": "Para un contraste unilateral izquierdo con $\\alpha = 0.05$ ($t_{crítico} \\approx -1.677$), ¿se rechaza $H_0$? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "$-2.5 < -1.677$, cae en zona de rechazo."}, {"id": "p9d", "label": "d)", "question": "Si el investigador hubiera usado $\\alpha = 0.001$ ($t_{crítico} \\approx -3.27$), ¿se rechazaría $H_0$? (1=Sí, 0=No).", "correctValue": 0, "tolerance": 0, "explanation": "$-2.5$ no es menor que $-3.27$, por lo que se mantiene $H_0$."}]}, {"id": 10, "title": "Comprensión Lectora en Primaria", "context": "La media nacional es $\\mu = 50$. Un colegio aplica un programa a $n = 100$ niños y obtiene $\\overline{x} = 53$ con $\\sigma = 10$.", "parts": [{"id": "p10a", "label": "a)", "question": "Calcula el Z observado.", "correctValue": 3, "tolerance": 0, "explanation": "$$EE = 10 / \\sqrt{100} = 1; Z = (53-50)/1 = 3.0$$"}, {"id": "p10b", "label": "b)", "question": "Calcula el límite inferior del IC al 95%.", "correctValue": 51.04, "tolerance": 0.01, "explanation": "$$53 - (1.96 \\cdot 1) = 51.04$$"}, {"id": "p10c", "label": "c)", "question": "¿Contiene este intervalo el valor poblacional 50? (1=Sí, 0=No).", "correctValue": 0, "tolerance": 0, "explanation": "El intervalo es [51.04, 54.96]. El 50 está fuera."}, {"id": "p10d", "label": "d)", "question": "¿Es coherente no incluir el 50 en el IC con rechazar $H_0: \\mu = 50$? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "Ambos procedimientos (Z-test e IC) llevan a la misma conclusión estadística."}]}, {"id": 11, "title": "Niveles de Cortisol y Estrés Laboral", "context": "Se asume $\\mu = 15$ unidades de cortisol. En $n = 16$ empleados con alto estrés se obtiene $\\overline{x} = 18$ y $S_x = 4$.", "parts": [{"id": "p11a", "label": "a)", "question": "Calcula los grados de libertad.", "correctValue": 15, "tolerance": 0, "explanation": "$$16 - 1 = 15$$"}, {"id": "p11b", "label": "b)", "question": "Calcula el estadístico T observado.", "correctValue": 3, "tolerance": 0, "explanation": "$$EE = 4 / \\sqrt{16} = 1; T = (18 - 15) / 1 = 3.0$$"}, {"id": "p11c", "label": "c)", "question": "Si el valor crítico para $\\alpha = 0.01$ bilateral con 15 gl es $2.947$, ¿se rechaza $H_0$? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "$$3.0 > 2.947$$"}, {"id": "p11d", "label": "d)", "question": "Si el investigador decide usar $\\alpha = 0.05$ bilateral (crítico $2.131$), ¿cambia la decisión de rechazar? (1=Sí, 0=No).", "correctValue": 0, "tolerance": 0, "explanation": "No, porque si se rechaza al 1%, también se rechaza al 5%."}]}, {"id": 12, "title": "Precisión en una Tarea Motora", "context": "Un grupo de deportistas realiza una tarea. La población general tiene $\\mu = 100$ puntos con $\\sigma = 20$. Los deportistas ($n=25$) obtienen $\\overline{x} = 110$.", "parts": [{"id": "p12a", "label": "a)", "question": "Calcula el Error Estándar.", "correctValue": 4, "tolerance": 0, "explanation": "$$20 / \\sqrt{25} = 4$$"}, {"id": "p12b", "label": "b)", "question": "Calcula el estadístico Z.", "correctValue": 2.5, "tolerance": 0, "explanation": "$$(110 - 100) / 4 = 2.5$$"}, {"id": "p12c", "label": "c)", "question": "Calcula el límite superior del IC al 95%.", "correctValue": 117.84, "tolerance": 0.1, "explanation": "$$110 + (1.96 \\cdot 4) = 117.84$$"}, {"id": "p12d", "label": "d)", "question": "¿Qué probabilidad de error tipo I aceptaríamos si rechazamos $H_0$ con $\\alpha=0.01$ (Z crítico 2.58)? (0.01, 0.05 o 0.1).", "correctValue": 0.01, "tolerance": 0, "explanation": "El nivel de significación."}]}, {"id": 13, "title": "Habilidades Sociales en Adolescentes", "context": "Media poblacional $\\mu = 60$. Muestra $n = 36$, $\\overline{x} = 64$, $S_x = 12$.", "parts": [{"id": "p13a", "label": "a)", "question": "Calcula el Error Estándar estimado.", "correctValue": 2, "tolerance": 0, "explanation": "$$12 / \\sqrt{36} = 2$$"}, {"id": "p13b", "label": "b)", "question": "Calcula el estadístico T.", "correctValue": 2, "tolerance": 0, "explanation": "$$(64 - 60) / 2 = 2.0$$"}, {"id": "p13c", "label": "c)", "question": "Si el valor crítico para $\\alpha = 0.05$ bilateral es $2.03$ (aprox), ¿rechazamos la nula? (1=Sí, 0=No).", "correctValue": 0, "tolerance": 0, "explanation": "$$2.0 < 2.03$$"}, {"id": "p13d", "label": "d)", "question": "¿Pertenece el valor 60 al intervalo de confianza del 95% para esta muestra? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "Como no rechazamos $H_0$, el parámetro 60 debe estar dentro del intervalo."}]}, {"id": 14, "title": "Efecto de la Cafeína en Atención", "context": "Se sabe que $\\mu = 70$. Muestra de $n = 100$ bajo cafeína tiene $\\overline{x} = 74$ y $\\sigma = 15$.", "parts": [{"id": "p14a", "label": "a)", "question": "Calcula Z observado.", "correctValue": 2.67, "tolerance": 0.01, "explanation": "$$EE = 15 / 10 = 1.5; Z = 4 / 1.5 \\approx 2.6667$$"}, {"id": "p14b", "label": "b)", "question": "Calcula el Límite Inferior del IC al 95%.", "correctValue": 71.06, "tolerance": 0.1, "explanation": "$$74 - (1.96 \\cdot 1.5) = 71.06$$"}, {"id": "p14c", "label": "c)", "question": "Calcula el Límite Superior del IC al 95%.", "correctValue": 76.94, "tolerance": 0.1, "explanation": "$$74 + 2.94 = 76.94$$"}, {"id": "p14d", "label": "d)", "question": "Con $\\alpha = 0.01$ bilateral (crítico 2.58), ¿es el efecto significativo? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "$$2.67 > 2.58$$"}]}, {"id": 15, "title": "Satisfacción Laboral", "context": "Media histórica $\\mu = 5$. Muestra actual $n = 49$, $\\overline{x} = 4.5$, $S_x = 1.4$.", "parts": [{"id": "p15a", "label": "a)", "question": "Calcula el error estándar.", "correctValue": 0.2, "tolerance": 0, "explanation": "$$1.4 / \\sqrt{49} = 0.2$$"}, {"id": "p15b", "label": "b)", "question": "Calcula el estadístico T.", "correctValue": -2.5, "tolerance": 0, "explanation": "$$(4.5 - 5) / 0.2 = -2.5$$"}, {"id": "p15c", "label": "c)", "question": "Si el crítico para $\\alpha = 0.01$ es $2.68$, ¿se mantiene la nula? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "$$|-2.5| < 2.68$$"}, {"id": "p15d", "label": "d)", "question": "¿Cuál es el valor del nivel de confianza $(1-\\alpha)$ si $\\alpha=0.01$?", "correctValue": 0.99, "tolerance": 0, "explanation": "$$1 - 0.01 = 0.99$$"}]}, {"id": 16, "title": "Tiempo de Respuesta en Web", "context": "La media estándar es $\\mu = 200$ ms. Un nuevo diseño se prueba en $n = 100$ usuarios, $\\overline{x} = 195$ ms, $\\sigma = 20$ ms.", "parts": [{"id": "p16a", "label": "a)", "question": "Calcula Z.", "correctValue": -2.5, "tolerance": 0, "explanation": "$$EE = 20/10 = 2; Z = -5/2 = -2.5$$"}, {"id": "p16b", "label": "b)", "question": "Calcula el límite inferior del IC al 95%.", "correctValue": 191.08, "tolerance": 0.01, "explanation": "$$195 - (1.96 \\cdot 2) = 191.08$$"}, {"id": "p16c", "label": "c)", "question": "Calcula el límite superior del IC al 95%.", "correctValue": 198.92, "tolerance": 0.01, "explanation": "$$195 + 3.92 = 198.92$$"}, {"id": "p16d", "label": "d)", "question": "¿Es el nuevo diseño significativamente más rápido que el estándar al 5%? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "Sí, el 200 no está en el intervalo de confianza."}]}, {"id": 17, "title": "Puntuaciones en un Test de Personalidad", "context": "Se espera $\\mu = 50$. Muestra $n = 25$, $\\overline{x} = 55$, $S_x = 10$.", "parts": [{"id": "p17a", "label": "a)", "question": "Calcula T observado.", "correctValue": 2.5, "tolerance": 0, "explanation": "$$EE = 10/5 = 2; T = 5/2 = 2.5$$"}, {"id": "p17b", "label": "b)", "question": "Para $\\alpha = 0.05$ bilateral (crítico $2.064$), ¿se rechaza la nula? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "$$2.5 > 2.064$$"}, {"id": "p17c", "label": "c)", "question": "Calcula el Límite Inferior del IC al 95% ($t=2.064$).", "correctValue": 50.87, "tolerance": 0.1, "explanation": "$$55 - (2.064 \\cdot 2) = 55 - 4.128 = 50.872$$"}, {"id": "p17d", "label": "d)", "question": "Si el tamaño de la muestra fuera $n=100$, ¿qué distribución se aproximaría más a la T? (1=Normal/Z, 2=Binomial, 3=F).", "correctValue": 1, "tolerance": 0, "explanation": "Por el Teorema Central del Límite, T converge a Z."}]}, {"id": 18, "title": "Consumo de Alcohol en Universitarios", "context": "Media nacional $\\mu = 4$ litros/mes. Muestra $n = 64$, $\\overline{x} = 4.8$, $S_x = 2.4$.", "parts": [{"id": "p18a", "label": "a)", "question": "Calcula el EE estimado.", "correctValue": 0.3, "tolerance": 0, "explanation": "$$2.4 / 8 = 0.3$$"}, {"id": "p18b", "label": "b)", "question": "Calcula T observado.", "correctValue": 2.67, "tolerance": 0.01, "explanation": "$$0.8 / 0.3 = 2.666...$$"}, {"id": "p18c", "label": "c)", "question": "Con $\\alpha = 0.01$ unilateral derecha (crítico $\\approx 2.39$), ¿es el consumo mayor que la media? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "$$2.67 > 2.39$$"}, {"id": "p18d", "label": "d)", "question": "¿Cómo se llama el error de no rechazar $H_0$ cuando es falsa? (1=Tipo I, 2=Tipo II).", "correctValue": 2, "tolerance": 0, "explanation": "Es el error Beta o Tipo II."}]}, {"id": 19, "title": "Rendimiento Académico y Sueño", "context": "Se sabe que la media de sueño es $\\mu = 7$ horas. Una muestra de estudiantes excelentes ($n=49$) duerme $\\overline{x} = 7.5$ horas con $S_x = 1.4$.", "parts": [{"id": "p19a", "label": "a)", "question": "Calcula el estadístico de contraste.", "correctValue": 2.5, "tolerance": 0, "explanation": "$$EE = 1.4 / 7 = 0.2; T = 0.5 / 0.2 = 2.5$$"}, {"id": "p19b", "label": "b)", "question": "Calcula el margen de error para un IC al 95% ($t \\approx 2.0$).", "correctValue": 0.4, "tolerance": 0.1, "explanation": "$$2 \\cdot 0.2 = 0.4$$"}, {"id": "p19c", "label": "c)", "question": "Calcula el Límite Inferior del IC al 95%.", "correctValue": 7.1, "tolerance": 0.1, "explanation": "$$7.5 - 0.4 = 7.1$$"}, {"id": "p19d", "label": "d)", "question": "¿Podemos decir con un 95% de confianza que estos estudiantes duermen más de 7 horas? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "Sí, el límite inferior 7.1 es mayor que 7."}]}, {"id": 20, "title": "Eficacia de un Programa de Entrenamiento", "context": "Media inicial $\\mu = 100$. Post-entrenamiento ($n=100$): $\\overline{x} = 104$, $\\sigma = 10$.", "parts": [{"id": "p20a", "label": "a)", "question": "Calcula el valor Z.", "correctValue": 4, "tolerance": 0, "explanation": "$$EE = 10/10 = 1; Z = (104-100)/1 = 4.0$$"}, {"id": "p20b", "label": "b)", "question": "Si el p-valor asociado a Z=4 es casi 0, ¿qué decidimos sobre $H_0$ al 1%? (1=Rechazar, 0=Mantener).", "correctValue": 1, "tolerance": 0, "explanation": "p < 0.01 implica rechazo."}, {"id": "p20c", "label": "c)", "question": "Calcula el límite inferior del IC al 99% ($Z=2.58$).", "correctValue": 101.42, "tolerance": 0.1, "explanation": "$$104 - (2.58 \\cdot 1) = 101.42$$"}, {"id": "p20d", "label": "d)", "question": "Calcula la amplitud del intervalo (Ls - Li).", "correctValue": 5.16, "tolerance": 0.1, "explanation": "$$2 \\cdot 2.58 = 5.16$$"}]}];
+        const jsonFormulas = [{"name": "Estadístico de contraste Z (Varianza poblacional conocida)", "tex": "$$Z = \\frac{\\bar{x} - \\mu}{\\sigma / \\sqrt{n}}$$"}, {"name": "Estadístico de contraste T (Varianza poblacional desconocida)", "tex": "$$T = \\frac{\\bar{x} - \\mu}{S_x / \\sqrt{n}}$$"}, {"name": "Intervalo de confianza para la media (Varianza conocida)", "tex": "$$\\bar{x} \\pm Z_{\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}}$$"}, {"name": "Intervalo de confianza para la media (Varianza desconocida)", "tex": "$$\\bar{X} \\pm {_{\\alpha/2}t_{n-1}} \\cdot \\frac{S_n}{\\sqrt{n}}$$"}, {"name": "Límite Inferior de Confianza (L_i)", "tex": "$$L_i = \\bar{X} - |Z_{\\alpha/2}| \\cdot \\frac{\\sigma}{\\sqrt{n}}$$"}, {"name": "Límite Superior de Confianza (L_s)", "tex": "$$L_s = \\bar{X} + |Z_{\\alpha/2}| \\cdot \\frac{\\sigma}{\\sqrt{n}}$$"}, {"name": "Grados de libertad para la distribución t", "tex": "$$gl = n - 1$$"}];
+
+        // --- TRANSFORMACIÓN DE DATOS PARA LA APP ---
+        const appDB = {
+            quiz: [...jsonTestA, ...jsonTestB],
+            laboratorio: [...jsonLaboratorio],
+            formulas: jsonFormulas.map(f => ({
+                cat: "Fórmula",
+                q: f.name,
+                a: f.tex
+            }))
+        };
+
+        // --- LÓGICA DE LA APLICACIÓN ---
+        const app = {
+            DB: appDB,
+            state: {
+                currentTool: null,
+                index: 0,
+                isFlipped: false,
+                activeData: [],
+                failedQuestions: [],
+                score: 0,
+                totalQuestions: 0
+            },
+
+            // Renderiza MathJax si está disponible
+            renderMath: function() {
+                if (window.MathJax && window.MathJax.typesetPromise) {
+                    MathJax.typesetPromise();
+                }
+            },
+
+            showView: function (view) {
+                document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+                const target = document.getElementById(`view-${view}`);
+                if (target) target.classList.remove('hidden');
+
+                const menuBtn = document.getElementById('btn-global-menu');
+                const counterBox = document.getElementById('nav-counter');
+                
+                if (view === 'home') {
+                    menuBtn.classList.remove('flex');
+                    menuBtn.classList.add('hidden');
+                    counterBox.classList.remove('flex');
+                    counterBox.classList.add('hidden');
+                } else {
+                    menuBtn.classList.remove('hidden');
+                    menuBtn.classList.add('flex');
+                    
+                    if (view === 'formulas') {
+                        counterBox.classList.remove('flex');
+                        counterBox.classList.add('hidden');
+                    } else {
+                        counterBox.classList.remove('hidden');
+                        counterBox.classList.add('flex');
+                    }
+                }
+            },
+
+            startTool: function (tool, customData = null) {
+                const baseData = this.DB[tool] || [];
+                const dataToUse = customData ? [...customData] : JSON.parse(JSON.stringify(baseData));
+
+                if (dataToUse.length === 0) return;
+
+                this.state.currentTool = tool;
+                this.state.index = 0;
+                this.state.score = 0;
+                this.state.failedQuestions = [];
+                this.state.activeData = dataToUse;
+
+                if (tool === 'laboratorio') {
+                    this.state.totalQuestions = dataToUse.reduce((acc, curr) => acc + curr.parts.length, 0);
+                } else {
+                    this.state.totalQuestions = dataToUse.length;
+                }
+
+                if (!customData && tool !== 'formulas') {
+                    this.shuffleArray(this.state.activeData);
+                }
+
+                this.updateCounter();
+                this.showView(tool);
+
+                if (tool === 'quiz') this.renderQuiz();
+                if (tool === 'laboratorio') this.renderLaboratorio();
+                if (tool === 'formulas') this.renderFormulas();
+            },
+
+            updateCounter: function () {
+                const counter = document.getElementById('global-counter');
+                if (counter && this.state.activeData.length > 0) {
+                    counter.innerText = `${this.state.index + 1}/${this.state.activeData.length}`;
+                }
+            },
+
+            shuffleArray: function (arr) {
+                for (let i = arr.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                }
+            },
+
+            finishSession: function() {
+                this.showResults();
+            },
+
+            // --- LÓGICA QUIZ ---
+            renderQuiz: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('quiz-question').innerHTML = data.q;
+                document.getElementById('quiz-feedback').classList.add('hidden');
+                document.getElementById('quiz-hint-box').classList.add('hidden');
+                
+                const container = document.getElementById('quiz-options');
+                container.innerHTML = '';
+                
+                data.options.forEach((opt, i) => {
+                    const btn = document.createElement('button');
+                    btn.className = "option-btn w-full text-left p-4 rounded-xl bg-white flex items-center gap-4 font-semibold text-slate-700 shadow-sm";
+                    btn.innerHTML = `<span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-xs text-slate-400 font-bold shrink-0">${String.fromCharCode(65 + i)}</span> <div class="math-content">${opt}</div>`;
+                    btn.onclick = () => this.quizCheck(i, btn);
+                    container.appendChild(btn);
+                });
+
+                this.renderMath();
+            },
+
+            quizToggleHint: function () {
+                const box = document.getElementById('quiz-hint-box');
+                const data = this.state.activeData[this.state.index];
+                if (data && data.hint) {
+                    box.innerHTML = `<span class="font-bold">Pista:</span> ${data.hint}`;
+                    box.classList.toggle('hidden');
+                    this.renderMath();
+                }
+            },
+
+            quizCheck: function (idx, clickedBtn) {
+                const data = this.state.activeData[this.state.index];
+                const btns = document.getElementById('quiz-options').querySelectorAll('button');
+                btns.forEach(b => b.disabled = true);
+                
+                const feedback = document.getElementById('quiz-feedback');
+                feedback.classList.remove('hidden');
+                
+                if (idx === data.correct) {
+                    this.state.score++;
+                    clickedBtn.classList.add('bg-emerald-50', 'border-emerald-500', 'text-emerald-700');
+                    document.getElementById('quiz-feedback-title').innerText = "¡Correcto!";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-emerald-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    this.state.failedQuestions.push(data);
+                    clickedBtn.classList.add('bg-red-50', 'border-red-500', 'text-red-700');
+                    btns[data.correct].classList.add('bg-emerald-50', 'border-emerald-500', 'ring-2', 'ring-emerald-200');
+                    document.getElementById('quiz-feedback-title').innerText = "Incorrecto";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-red-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+                
+                document.getElementById('quiz-explanation').innerHTML = data.explanation;
+                this.renderMath();
+            },
+
+            quizNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderQuiz();
+                    this.updateCounter();
+                } else this.showResults();
+            },
+
+            // --- LÓGICA LABORATORIO ---
+            renderLaboratorio: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('lab-problem-number').innerText = this.state.index + 1;
+                document.getElementById('lab-main-title').innerText = data.title;
+                document.getElementById('lab-context-box').innerHTML = data.context;
+                
+                const container = document.getElementById('lab-parts-container');
+                container.innerHTML = '';
+                
+                data.parts.forEach((part, i) => {
+                    const partId = `lab-part-${this.state.index}-${i}`;
+                    const letter = part.label.replace(')', '').toLowerCase();
+                    
+                    const html = `
+                        <div class="p-6 md:p-8 border-b border-slate-100 last:border-0">
+                            <div class="flex gap-4 items-start mb-6">
+                                <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex justify-center items-center font-bold shrink-0 mt-1">${letter}</div>
+                                <div class="text-slate-800 font-semibold text-lg math-content pt-1">${part.question}</div>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-4 items-center pl-0 md:pl-12">
+                                <input type="text" id="input-${partId}" class="w-full md:w-64 p-3 rounded-xl border-2 border-slate-200 outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-50 transition text-lg font-mono shadow-sm" placeholder="Respuesta...">
+                                <button id="btn-${partId}" onclick="app.labCheckPart(${this.state.index}, ${i})" class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-xl font-bold uppercase tracking-wider text-sm transition shadow-md w-full md:w-auto">Verificar</button>
+                            </div>
+                            
+                            <div id="feedback-${partId}" class="hidden pl-0 md:pl-12 mt-4 animate-fadeIn">
+                                <div id="feedback-box-${partId}" class="flex items-start gap-3 p-4 rounded-xl">
+                                    <div id="icon-${partId}" class="text-2xl shrink-0 mt-1"></div>
+                                    <div class="w-full">
+                                        <h4 id="title-${partId}" class="font-bold mb-2"></h4>
+                                        <div class="text-sm font-mono bg-slate-800 text-slate-200 p-4 rounded-lg overflow-x-auto math-content shadow-inner border border-slate-700">
+                                            <span class="text-slate-400 text-[10px] uppercase font-sans font-bold tracking-widest block mb-2">Desarrollo Matemático</span>
+                                            ${part.explanation}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.insertAdjacentHTML('beforeend', html);
+                });
+                
+                this.renderMath();
+            },
+
+            labCheckPart: function (problemIdx, partIdx) {
+                const problem = this.state.activeData[problemIdx];
+                const part = problem.parts[partIdx];
+                const partId = `lab-part-${problemIdx}-${partIdx}`;
+
+                const input = document.getElementById(`input-${partId}`);
+                const btn = document.getElementById(`btn-${partId}`);
+                const feedback = document.getElementById(`feedback-${partId}`);
+                const feedbackBox = document.getElementById(`feedback-box-${partId}`);
+                const icon = document.getElementById(`icon-${partId}`);
+                const title = document.getElementById(`title-${partId}`);
+
+                const rawVal = input.value.trim().replace(',', '.');
+                const userVal = parseFloat(rawVal);
+                
+                if (rawVal === "" || isNaN(userVal)) {
+                    input.classList.add('ring-2', 'ring-red-400');
+                    setTimeout(() => input.classList.remove('ring-2', 'ring-red-400'), 500);
+                    return; 
+                }
+
+                input.disabled = true;
+                btn.disabled = true;
+                btn.classList.remove('hover:bg-indigo-700', 'bg-indigo-600');
+                btn.classList.add('bg-slate-300', 'text-slate-500', 'cursor-not-allowed', 'shadow-none');
+                
+                feedback.classList.remove('hidden');
+
+                const diff = Math.abs(userVal - part.correctValue);
+                const isCorrect = diff <= part.tolerance;
+
+                if (isCorrect) {
+                    this.state.score++;
+                    input.classList.add('border-emerald-400', 'bg-emerald-50', 'text-emerald-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-emerald-50 border border-emerald-200";
+                    title.innerText = "¡Cálculo Exacto!";
+                    title.className = "font-black text-emerald-600";
+                    icon.innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    input.classList.add('border-red-400', 'bg-red-50', 'text-red-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-red-50 border border-red-200";
+                    title.innerText = `Cálculo Incorrecto. Respuesta esperada: ${part.correctValue} (±${part.tolerance})`;
+                    title.className = "font-black text-red-600";
+                    icon.innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+
+                this.renderMath();
+            },
+
+            labNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderLaboratorio();
+                    this.updateCounter();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else this.showResults();
+            },
+
+            // --- LÓGICA FÓRMULAS ---
+            renderFormulas: function () {
+                const grid = document.getElementById('formulas-grid');
+                grid.innerHTML = '';
+                
+                this.state.activeData.forEach(data => {
+                    const card = document.createElement('div');
+                    card.className = "glass-card p-6 rounded-2xl border-t-4 border-indigo-500 hover:shadow-lg transition-shadow bg-white flex flex-col justify-between items-center text-center h-full";
+                    card.innerHTML = `
+                        <span class="text-xs font-bold text-indigo-500 uppercase tracking-widest mb-4 w-full border-b border-slate-100 pb-2">${data.q}</span>
+                        <div class="text-2xl font-medium text-slate-800 math-content w-full overflow-x-auto py-4 flex-grow flex items-center justify-center">${data.a}</div>
+                    `;
+                    grid.appendChild(card);
+                });
+
+                this.renderMath();
+            },
+
+            // --- RESULTADOS GLOBALES ---
+            showResults: function () {
+                this.showView('results');
+                const resultText = document.getElementById('result-text');
+                
+                if (this.state.currentTool === 'flashcards' || this.state.currentTool === 'formulas') {
+                    resultText.innerHTML = `Has repasado <strong>${this.state.activeData.length}</strong> fórmulas.`;
+                } else {
+                    resultText.innerHTML = `Has acertado <strong>${this.state.score}</strong> de <strong>${this.state.totalQuestions}</strong>.`;
+                }
+
+                const failBtn = document.getElementById('btn-retry-errors');
+                if (this.state.failedQuestions.length > 0 && this.state.currentTool !== 'formulas') {
+                    failBtn.classList.remove('hidden');
+                    document.getElementById('fail-count').innerText = this.state.failedQuestions.length;
+                } else {
+                    failBtn.classList.add('hidden');
+                }
+            },
+
+            retryErrors: function () { 
+                this.startTool(this.state.currentTool, this.state.failedQuestions); 
+            }
+        };
+
+        // Iniciar en Home al cargar
+        window.onload = () => app.showView('home');
+    </script>
+</body>
+</html>
