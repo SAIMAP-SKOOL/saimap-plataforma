@@ -1,0 +1,1716 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es correcto afirmar que un estimador es insesgado si y solo si su valor esperado coincide exactamente con el parámetro poblacional independientemente del tamaño muestral?",
+      "opciones": [
+        "Verdadero, pues la insesgadez implica que $E(\\hat{\\theta}) = \\theta$ para cualquier $n$.",
+        "Falso, ya que la insesgadez es una propiedad asintótica que requiere que $n \\to \\infty$.",
+        "No se puede determinar sin conocer previamente la varianza mínima del estimador."
+      ],
+      "correcta": 0,
+      "explicacion": "La insesgadez es una propiedad de los estimadores que indica que la esperanza matemática del estadístico es igual al parámetro poblacional, denotado como $$\\text{E}(\\overline{X}) = \\mu$$, sin depender del tamaño de la muestra.",
+      "pista": "Revisa la definición formal de sesgo en el manual."
+    },
+    {
+      "q": "¿Es verdadero que al disminuir el nivel de riesgo $\\alpha$ de $0,05$ a $0,01$ el intervalo de confianza se estrecha aumentando así la precisión de la estimación?",
+      "opciones": [
+        "Verdadero, un menor riesgo implica siempre una mayor precisión en el cálculo del error.",
+        "Falso, al disminuir $\\alpha$ aumenta el nivel de confianza y el intervalo se hace más ancho.",
+        "No se puede determinar, ya que el ancho del intervalo depende únicamente de la varianza."
+      ],
+      "correcta": 1,
+      "explicacion": "Al disminuir $$\\alpha$$, aumentamos el nivel de confianza ($$1-\\alpha$$). Esto requiere cubrir un área mayor de la distribución, lo que aumenta el valor crítico y, por ende, ensancha el intervalo, reduciendo la precisión.",
+      "pista": "Piensa en la relación entre el área de confianza y los valores críticos $Z$ o $t$."
+    },
+    {
+      "q": "¿Es correcto afirmar que la población accesible es siempre un subconjunto de la población objetivo en el marco de la inferencia estadística?",
+      "opciones": [
+        "Verdadero, se define como el grupo que cumple los criterios y está disponible para el estudio.",
+        "Falso, la población accesible incluye a todos los sujetos de la población general por defecto.",
+        "No se puede determinar, pues depende de si el muestreo aplicado es probabilístico o no."
+      ],
+      "correcta": 0,
+      "explicacion": "La estructura jerárquica es: Población General $\\supset$ Población Objetivo $\\supset$ Población Accesible. Esta última es el grupo real del que se extrae la muestra final.",
+      "pista": "Repasa la jerarquía de poblaciones mencionada en el capítulo 5.3."
+    },
+    {
+      "q": "¿Es verdadero que el uso de la distribución $t$ de Student es imperativo siempre que la muestra sea pequeña ($n < 30$), incluso si se conoce la varianza poblacional?",
+      "opciones": [
+        "Verdadero, la distribución normal solo es aplicable en muestras grandes por el TCL.",
+        "Falso, si se conoce la varianza poblacional $\\sigma^2$ se debe utilizar la distribución $Z$.",
+        "No se puede determinar, pues depende de si la población original sigue una distribución normal."
+      ],
+      "correcta": 1,
+      "explicacion": "Si $$\\sigma^2$$ es conocida, se usa la distribución $Z$ independientemente del tamaño muestral (asumiendo normalidad). La $t$ de Student se reserva para cuando $$\\sigma^2$$ es desconocida y debe estimarse mediante $S$.",
+      "pista": "La clave está en el conocimiento o desconocimiento de la varianza poblacional."
+    },
+    {
+      "q": "¿Es correcto afirmar que un estimador suficiente es aquel que utiliza solo una parte de la información muestral para simplificar los cálculos estadísticos?",
+      "opciones": [
+        "Verdadero, la suficiencia busca optimizar el tiempo de procesamiento de datos masivos.",
+        "Falso, un estimador es suficiente si utiliza toda la información relevante de la muestra.",
+        "No se puede determinar sin evaluar primero si el estimador es también consistente."
+      ],
+      "correcta": 1,
+      "explicacion": "La suficiencia implica que el estadístico resume toda la información contenida en la muestra respecto al parámetro. No se puede obtener información adicional sobre el parámetro estudiando la muestra por separado.",
+      "pista": "Busca la definición de 'Suficiencia' en las propiedades deseables."
+    },
+    {
+      "q": "¿Es verdadero que el Error Estándar (EE) de la media es siempre menor o igual a la desviación típica de la muestra original?",
+      "opciones": [
+        "Verdadero, ya que $EE = \\frac{\\sigma}{\\sqrt{n}}$ y $\\sqrt{n} \\ge 1$ para cualquier muestra válida.",
+        "Falso, el EE puede ser mayor si la muestra es pequeña y la variabilidad es extrema.",
+        "No se puede determinar, porque el EE depende del nivel de confianza seleccionado."
+      ],
+      "correcta": 0,
+      "explicacion": "Dado que el error estándar se calcula como $$\\sigma_{\\overline{X}} = \\frac{\\sigma}{\\sqrt{n}}$$, al dividir por la raíz de $n$ ($$n \\ge 1$$), el valor resultante siempre será menor o igual a la desviación típica poblacional.",
+      "pista": "Observa la fórmula del EE y el efecto del denominador."
+    },
+    {
+      "q": "¿Es correcto afirmar que un estimador consistente se aproxima al parámetro poblacional a medida que el tamaño de la muestra tiende a infinito?",
+      "opciones": [
+        "Verdadero, es la propiedad que vincula la precisión del estadístico con el aumento de $n$.",
+        "Falso, la consistencia se refiere a la varianza mínima, no al valor esperado del estadístico.",
+        "No se puede determinar, ya que la consistencia solo aplica a la proporción, no a la media."
+      ],
+      "correcta": 0,
+      "explicacion": "La consistencia asegura que, al aumentar el tamaño de la muestra, la probabilidad de que el estimador difiera del parámetro en una cantidad significativa tiende a cero.",
+      "pista": "Recuerda la relación con el Teorema Central del Límite."
+    },
+    {
+      "q": "¿Es verdadero que el intervalo de confianza permite afirmar con total certeza que el parámetro poblacional se encuentra entre los límites calculados?",
+      "opciones": [
+        "Verdadero, para eso se establece un nivel de confianza del 95% o del 99% en el estudio.",
+        "Falso, el intervalo solo ofrece una probabilidad de contener el parámetro, no una certeza absoluta.",
+        "No se puede determinar, ya que la certeza depende de si el muestreo fue aleatorio simple."
+      ],
+      "correcta": 1,
+      "explicacion": "El nivel de confianza ($$1-\\alpha$$) indica la proporción de intervalos que contendrían al parámetro si repitiéramos el muestreo infinitas veces. Siempre existe un riesgo $$\\alpha$$ de error.",
+      "pista": "Analiza la definición de 'Nivel de confianza'."
+    },
+    {
+      "q": "¿Es correcto afirmar que la eficiencia de un estimador está directamente relacionada con la magnitud de su varianza en la distribución muestral?",
+      "opciones": [
+        "Verdadero, un estimador es más eficiente cuanto menor sea su varianza entre muestras.",
+        "Falso, la eficiencia depende únicamente de si el estimador es insesgado o sesgado.",
+        "No se puede determinar, porque la eficiencia es una cualidad cualitativa del muestreo."
+      ],
+      "correcta": 0,
+      "explicacion": "La eficiencia se refiere a la precisión. Un estimador eficiente tiene la mínima varianza posible, lo que significa que sus valores están muy concentrados alrededor de la media muestral.",
+      "pista": "Visualiza la diana de la Figura 72 del manual."
+    },
+    {
+      "q": "¿Es verdadero que en una distribución $t$ de Student, al aumentar los grados de libertad, la forma de la curva tiende a asemejarse a la de una normal estándar?",
+      "opciones": [
+        "Verdadero, al aumentar $n$, la distribución $t$ converge hacia la distribución $Z$.",
+        "Falso, son distribuciones de familias distintas que nunca llegan a converger visualmente.",
+        "No se puede determinar sin conocer el valor del parámetro $\\mu$ en la población."
+      ],
+      "correcta": 0,
+      "explicacion": "A medida que los grados de libertad ($$n-1$$) aumentan, la incertidumbre sobre la estimación de la varianza disminuye y la distribución $t$ se vuelve indistinguible de la normal estándar ($$Z$$).",
+      "pista": "Relaciónalo con el Teorema Central del Límite."
+    },
+    {
+      "q": "Seleccione la afirmación correcta respecto a la relación entre el error tipo I y el nivel de confianza en la estimación por intervalos:",
+      "opciones": [
+        "El nivel de confianza se define como $1-\\alpha$, donde $\\alpha$ representa la probabilidad de cometer un error tipo I.",
+        "Un aumento del nivel de confianza reduce simultáneamente la probabilidad de cometer errores tipo I y tipo II.",
+        "La probabilidad de error tipo I es independiente de los límites del intervalo si la muestra es probabilística."
+      ],
+      "correcta": 0,
+      "explicacion": "El nivel de confianza es $$\\text{1}-\\alpha$$. El valor $$\\alpha$$ es el nivel de significación o riesgo, que equivale a la probabilidad de rechazar una hipótesis nula verdadera (Error Tipo I).",
+      "pista": "Revisa los elementos generales del intervalo de confianza en la Figura 76."
+    },
+    {
+      "q": "Sobre las propiedades de los estimadores, ¿cuál de las siguientes afirmaciones describe correctamente la insesgadez?",
+      "opciones": [
+        "Un estimador es insesgado cuando su varianza es la mínima posible entre todos los estadísticos.",
+        "Un estimador es insesgado cuando el promedio de sus estimaciones coincide con el parámetro poblacional.",
+        "Un estimador es insesgado cuando su valor es constante independientemente de la muestra seleccionada."
+      ],
+      "correcta": 1,
+      "explicacion": "La insesgadez garantiza que, en promedio, el estimador no sobreestima ni subestima el parámetro poblacional. Matemáticamente se expresa como $$\\text{E}(\\overline{X}) = \\mu$$.",
+      "pista": "Definición matemática: $E(\\hat{\\theta}) = \\theta$."
+    },
+    {
+      "q": "Identifique la afirmación correcta sobre el impacto del tamaño muestral ($n$) en el intervalo de confianza de la media:",
+      "opciones": [
+        "Si cuadruplicamos el tamaño de la muestra ($n$), el error máximo (EE) se reduce exactamente a la mitad.",
+        "El tamaño de la muestra no influye en la amplitud del intervalo si la desviación típica es conocida.",
+        "Aumentar el tamaño de la muestra incrementa el error estándar debido a la mayor acumulación de datos."
+      ],
+      "correcta": 0,
+      "explicacion": "Como $$\\text{EE} = \\sigma / \\sqrt{n}$$, si sustituimos $$n$$ por $$4n$$, el nuevo error es $$\\sigma / \\sqrt{4n} = \\sigma / (2\\sqrt{n})$$, lo cual es la mitad del error original.",
+      "pista": "Observa la raíz cuadrada en el denominador de la fórmula del EE."
+    },
+    {
+      "q": "Respecto a la estimación por intervalos cuando la varianza poblacional es desconocida, ¿qué afirmación es correcta?",
+      "opciones": [
+        "Se debe emplear la desviación típica muestral ($S$) y los valores críticos de la distribución $t$ de Student.",
+        "Es obligatorio utilizar la distribución $Z$ si el tamaño de la muestra es superior a 10 sujetos evaluados.",
+        "El intervalo resultante será siempre más estrecho que si se conociera la verdadera varianza poblacional."
+      ],
+      "correcta": 0,
+      "explicacion": "Cuando $$\\sigma^2$$ es desconocida, introducimos una fuente de error adicional al estimarla con $$S$$, por lo que usamos la distribución $$t$$ con $$n-1$$ grados de libertad.",
+      "pista": "Consulta la Tabla 33 sobre varianza poblacional desconocida."
+    },
+    {
+      "q": "En el contexto de la inferencia, ¿cuál de estas afirmaciones sobre la 'Población Objetivo' es matemáticamente correcta?",
+      "opciones": [
+        "Representa el segmento de la población general que presenta la circunstancia de interés para el estudio.",
+        "Es equivalente a la muestra representativa una vez aplicado el proceso de muestreo aleatorio simple.",
+        "Se define como el subconjunto de personas que finalmente participan y completan la fase de evaluación."
+      ],
+      "correcta": 0,
+      "explicacion": "La población objetivo es el grupo específico al que queremos generalizar los resultados (ej. personas con diagnóstico de depresión) dentro de una población más amplia.",
+      "pista": "Revisa las tres maneras de entender la población en la página 136."
+    },
+    {
+      "q": "Determine la afirmación correcta sobre el valor tipificado $Z$ en la construcción de intervalos de confianza:",
+      "opciones": [
+        "Para un nivel de confianza del 95% ($\\alpha=0,05$), el valor de $Z_{\\alpha/2}$ que se utiliza es aproximadamente $1,96$.",
+        "El valor de $Z$ se calcula restando la media muestral a la poblacional y multiplicando por la raíz de $n$.",
+        "El valor de $Z_{\\alpha/2}$ es siempre idéntico al valor de $t_{\\alpha/2}$ cuando los grados de libertad son menores a 10."
+      ],
+      "correcta": 0,
+      "explicacion": "Para un $$\\alpha = 0,05$$, buscamos $$\\alpha/2 = 0,025$$ en las colas. En la tabla de la normal estándar, esto corresponde a un valor crítico de $$1,96$$.",
+      "pista": "Busca el ejemplo de la página 145 y la Tabla 34."
+    },
+    {
+      "q": "Sobre el concepto de 'Error Máximo' o 'Error Estándar' (EE), elija la afirmación que sea correcta:",
+      "opciones": [
+        "El EE representa la diferencia máxima esperada entre el parámetro y el estadístico con una probabilidad dada.",
+        "El EE es un valor fijo para cada población que no se ve alterado por las decisiones del investigador clínico.",
+        "El EE aumenta proporcionalmente al nivel de confianza, haciendo que el intervalo sea mucho más preciso."
+      ],
+      "correcta": 0,
+      "explicacion": "El error máximo (o de estimación) define la amplitud del intervalo desde la media. Es la distancia máxima que admitimos entre estimador y parámetro bajo el nivel de confianza elegido.",
+      "pista": "Definición de EE en la página 140."
+    },
+    {
+      "q": "Respecto a la Figura 72 del manual (dianas de sesgo y eficiencia), ¿cuál es la interpretación correcta?",
+      "opciones": [
+        "Un estadístico sesgado y eficiente muestra puntos muy agrupados pero desplazados del centro de la diana.",
+        "Un estadístico insesgado e ineficiente muestra puntos agrupados exactamente en el centro con nula dispersión.",
+        "La eficiencia se representa por la distancia del promedio de los puntos al centro exacto de la diana."
+      ],
+      "correcta": 0,
+      "explicacion": "El sesgo aleja el grupo del centro, mientras que la eficiencia (poca varianza) agrupa los puntos. Si es sesgado y eficiente, los puntos están juntos pero lejos del objetivo real ($$\\mu$$).",
+      "pista": "Observa la tercera diana de la Figura 72 en la página 138."
+    },
+    {
+      "q": "¿Qué afirmación es correcta sobre los grados de libertad ($gl$) en la distribución $t$ de Student?",
+      "opciones": [
+        "Se calculan como $n-1$, reflejando que se ha perdido un grado de libertad al estimar la media muestral.",
+        "Representan el número total de sujetos en la población general que podrían haber sido seleccionados.",
+        "Son independientes del tamaño de la muestra y dependen solo del valor de $\\alpha$ elegido por el autor."
+      ],
+      "correcta": 0,
+      "explicacion": "En la estimación de la media con varianza desconocida, los grados de libertad son $$n-1$$. Esto es necesario para que el estimador de la varianza sea insesgado.",
+      "pista": "Fórmula de grados de libertad en la página 144."
+    },
+    {
+      "q": "Sobre el 'Método de los Momentos' mencionado en el texto, elija la afirmación que sea correcta:",
+      "opciones": [
+        "Consiste en asignar a un valor muestral concreto la capacidad de estimar con precisión el parámetro poblacional.",
+        "Es un procedimiento complejo que requiere conocer la moda y la mediana para calcular el intervalo de confianza.",
+        "Determina que la varianza de la muestra es el único estimador válido para cualquier tipo de distribución normal."
+      ],
+      "correcta": 0,
+      "explicacion": "El método de los momentos iguala los momentos de la muestra a los de la población. En su forma más simple, utiliza la media muestral para estimar la media poblacional.",
+      "pista": "Revisa el inicio del apartado 5.3.1 sobre estimación puntual."
+    },
+    {
+      "q": "En relación a la probabilidad y la inferencia, ¿cuál de las siguientes afirmaciones es teóricamente correcta?",
+      "opciones": [
+        "El nivel de riesgo $\\alpha$ se divide entre dos en intervalos de confianza porque el error puede ser por exceso o defecto.",
+        "La zona de rechazo en un intervalo de confianza se sitúa siempre en el centro de la distribución normal estándar.",
+        "La probabilidad de que el parámetro esté fuera del intervalo es exactamente igual al nivel de confianza $1-\\alpha$."
+      ],
+      "correcta": 0,
+      "explicacion": "Los intervalos de confianza son bilaterales; el error de estimación puede ocurrir tanto en el límite superior como en el inferior, repartiendo el riesgo $$\\alpha$$ en las dos colas.",
+      "pista": "Fíjate en por qué usamos $\\alpha/2$ en las fórmulas."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre la 'Suficiencia' como propiedad de un buen estimador:",
+      "opciones": [
+        "Un estadístico es suficiente si contiene toda la información de la muestra necesaria para estimar el parámetro.",
+        "La suficiencia garantiza que el estimador tendrá siempre la menor varianza posible entre todos los estadísticos.",
+        "Un estimador es suficiente solo si el tamaño de la muestra es superior a 100 casos para evitar el sesgo."
+      ],
+      "correcta": 0,
+      "explicacion": "La suficiencia es la propiedad por la cual un estadístico 'resume' perfectamente la información de la muestra. Ningún otro estadístico basado en la misma muestra puede dar más información.",
+      "pista": "Propiedades deseables de un estadístico, página 138."
+    },
+    {
+      "q": "Respecto a la estimación puntual, ¿cuál de las siguientes afirmaciones es correcta según el manual?",
+      "opciones": [
+        "Su principal limitación es que difícilmente el valor muestral coincidirá con exactitud con el parámetro poblacional.",
+        "Es el método preferido en investigación científica porque elimina por completo el error de muestreo sistemático.",
+        "Requiere obligatoriamente el uso de la media winsorizada para garantizar que el estimador sea consistente."
+      ],
+      "correcta": 0,
+      "explicacion": "Debido a la variabilidad muestral, es casi imposible que una sola estimación puntual coincida con el parámetro real. Por eso se prefieren los intervalos de confianza.",
+      "pista": "Limitaciones de la estimación puntual, página 139."
+    },
+    {
+      "q": "Sobre la distribución muestral de la media, ¿qué afirmación es correcta?",
+      "opciones": [
+        "La varianza de la media muestral disminuye conforme aumenta el tamaño de la muestra utilizada.",
+        "La media de todas las medias muestrales posibles es siempre mayor que la media de la población general.",
+        "La distribución muestral de la media siempre sigue una distribución $t$ de Student si $n$ es mayor a 50."
+      ],
+      "correcta": 0,
+      "explicacion": "Según la fórmula $$\\sigma_{\\overline{X}}^2 = \\sigma^2 / n$$, a medida que $$n$$ crece, la varianza de la distribución de las medias se hace más pequeña, aumentando la precisión.",
+      "pista": "Impacto del tamaño muestral, página 143."
+    },
+    {
+      "q": "Identifique la afirmación correcta sobre la elección entre estimación puntual e intervalos de confianza:",
+      "opciones": [
+        "Los intervalos de confianza ofrecen un rango de valores con una probabilidad conocida, siendo más informativos.",
+        "La estimación puntual es siempre superior porque ofrece un dato exacto que no depende del nivel de riesgo $\\alpha$.",
+        "Ambos procedimientos son mutuamente excluyentes y no pueden presentarse juntos en un mismo estudio estadístico."
+      ],
+      "correcta": 0,
+      "explicacion": "La estimación por intervalos subsana la rigidez de la puntual al ofrecer un rango donde es probable encontrar el parámetro, cuantificando la incertidumbre mediante el nivel de confianza.",
+      "pista": "Conclusión del apartado 5.3.2 en la página 140."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre las propiedades deseables de un estadístico estimador:",
+      "opciones": [
+        "La eficiencia implica que el estadístico tiene la máxima varianza posible entre todas las muestras extraídas.",
+        "La consistencia asegura que el valor del estadístico se acerque al parámetro al aumentar el tamaño muestral.",
+        "Un estimador insesgado es aquel cuyo valor esperado es equivalente al valor real del parámetro poblacional."
+      ],
+      "correcta": 0,
+      "explicacion": "Es incorrecta porque la eficiencia requiere la **mínima** varianza, no la máxima. Una varianza mínima significa mayor precisión y menor incertidumbre en la estimación.",
+      "pista": "Busca la definición de 'Eficiente' en la página 138."
+    },
+    {
+      "q": "Indique cuál de las siguientes afirmaciones sobre la estimación por intervalos es incorrecta:",
+      "opciones": [
+        "El intervalo de confianza se construye sumando y restando el error estándar directamente al parámetro $\\mu$.",
+        "Los límites de confianza ($L_i$ y $L_s$) dependen del estadístico muestral, del valor crítico y del error estándar.",
+        "El nivel de riesgo $\\alpha$ representa la probabilidad de que el intervalo calculado no contenga al parámetro."
+      ],
+      "correcta": 0,
+      "explicacion": "Es incorrecta porque el error estándar se suma y resta al **estadístico** ($$\\overline{X}$$), no al parámetro poblacional ($$\\mu$$), ya que este último es desconocido.",
+      "pista": "Fórmulas de $L_i$ y $L_s$ en la página 140."
+    },
+    {
+      "q": "Señale la afirmación incorrecta respecto al Error Tipo II en el contexto de la inferencia estadística:",
+      "opciones": [
+        "Ocurre cuando el investigador rechaza la hipótesis nula a pesar de que esta es realmente verdadera.",
+        "Se relaciona con la probabilidad de no detectar un efecto o hallazgo relevante cuando este sí existe.",
+        "Su probabilidad suele aumentar si el investigador decide adoptar niveles de $\\alpha$ extremadamente estrictos."
+      ],
+      "correcta": 0,
+      "explicacion": "Es incorrecta porque describe el Error Tipo I. El Error Tipo II consiste en **no rechazar** la hipótesis nula cuando en realidad es falsa (perderse un efecto real).",
+      "pista": "Diferencia entre Error Tipo I y Tipo II en la página 143."
+    },
+    {
+      "q": "Sobre el uso de la tabla de la distribución $t$ de Student, identifique la afirmación incorrecta:",
+      "opciones": [
+        "Para localizar un valor, se debe buscar en la columna de $\\alpha$ directamente sin realizar ninguna transformación.",
+        "Es necesario conocer los grados de libertad, que se calculan restando uno al tamaño de la muestra evaluada.",
+        "La tabla suele proporcionar los valores en términos del nivel de confianza ($1-\\alpha$) o área acumulada."
+      ],
+      "correcta": 0,
+      "explicacion": "Es incorrecta porque, como explica el manual, las tablas de $$t$$ suelen usar el nivel de confianza ($$1-\\alpha$$). Además, para intervalos se usa $$\\alpha/2$$, por lo que hay que transformar el dato.",
+      "pista": "Ejemplo de consulta de tabla de $t$ en la página 147."
+    },
+    {
+      "q": "Identifique la afirmación incorrecta sobre los factores que determinan la amplitud de un intervalo de confianza:",
+      "opciones": [
+        "A medida que la variabilidad de la población (desviación típica) disminuye, el intervalo se vuelve más ancho.",
+        "Un aumento en el tamaño de la muestra ($n$) produce una disminución en la longitud total del intervalo.",
+        "Si pasamos de un nivel de confianza del 95% a uno del 99%, la amplitud del intervalo de confianza aumentará."
+      ],
+      "correcta": 0,
+      "explicacion": "Es incorrecta porque si la variabilidad ($$\\sigma$$) disminuye, el error estándar ($$\\sigma/\\sqrt{n}$$) también disminuye, lo que resulta en un intervalo más **estrecho**, no más ancho.",
+      "pista": "Relación entre variabilidad y error estándar."
+    },
+    {
+      "q": "Sobre el proceso de muestreo descrito en el manual, señale la afirmación incorrecta:",
+      "opciones": [
+        "Garantizar la representatividad implica que la muestra debe ser estructuralmente distinta a la población.",
+        "El muestreo debe promover la precisión de las medidas reclutando un número suficiente de sujetos.",
+        "Un proceso de muestreo eficiente es aquel que reduce el esfuerzo de acceso a la población en su conjunto."
+      ],
+      "correcta": 0,
+      "explicacion": "Es incorrecta porque la representatividad exige que la muestra sea estructuralmente **semejante** a la población de origen, no distinta, para poder generalizar los resultados.",
+      "pista": "Condiciones del muestreo en la página 138."
+    },
+    {
+      "q": "Respecto a la fórmula de la puntuación $Z$ ($z = \\frac{x-\\mu}{\\sigma}$), identifique la afirmación incorrecta:",
+      "opciones": [
+        "El valor $Z$ indica cuántas varianzas poblacionales se desvía un sujeto respecto a la mediana del grupo.",
+        "Una puntuación $Z = 0,667$ significa que el sujeto está a esa distancia (en DT) por encima de la media.",
+        "Esta fórmula permite tipificar puntuaciones directas para compararlas con una distribución normal estándar."
+      ],
+      "correcta": 0,
+      "explicacion": "Es incorrecta por dos matices: el valor $$Z$$ indica cuántas **desviaciones típicas** (no varianzas) se desvía el sujeto, y lo hace respecto a la **media** (no la mediana).",
+      "pista": "Definición de puntuación $Z$ en la página 135."
+    },
+    {
+      "q": "Señale la afirmación incorrecta sobre la estimación puntual de la media poblacional:",
+      "opciones": [
+        "Es el mejor método para capturar la fluctuación aleatoria de las muestras en estudios de poblaciones raras.",
+        "Se basa en el 'método de los momentos', asignando el valor de $\\overline{X}$ como estimador directo de $\\mu$.",
+        "Existe consenso científico en que la media muestral es el estadístico con mejores propiedades para este fin."
+      ],
+      "correcta": 0,
+      "explicacion": "Es incorrecta porque la estimación puntual **no** captura la fluctuación aleatoria; al contrario, la ignora al dar un solo valor. Los intervalos de confianza son los que gestionan esa fluctuación.",
+      "pista": "Revisa las limitaciones en la página 139."
+    },
+    {
+      "q": "Sobre la relación entre el nivel de confianza y el riesgo $\\alpha$, elija la afirmación incorrecta:",
+      "opciones": [
+        "Un nivel de confianza del 95% implica que existe un riesgo del 5% de que el parámetro esté dentro del intervalo.",
+        "Si el nivel de confianza es $0,99$, el valor de $\\alpha$ correspondiente es $0,01$, repartido en dos colas de $0,005$.",
+        "La suma del nivel de confianza ($1-\\alpha$) y el nivel de riesgo ($\\alpha$) debe ser siempre igual a la unidad ($1$)."
+      ],
+      "correcta": 0,
+      "explicacion": "Es incorrecta porque si hay un riesgo del 5% ($$\\alpha=0,05$$), ese es el riesgo de que el parámetro esté **fuera** del intervalo, no dentro.",
+      "pista": "Definición de riesgo $\\alpha$ en la página 142."
+    },
+    {
+      "q": "Identifique la afirmación incorrecta sobre la distribución muestral de un estadístico:",
+      "opciones": [
+        "La distribución de todas las medias muestrales posibles siempre tendrá una forma asimétrica positiva.",
+        "El Teorema Central del Límite postula que la distribución de medias tiende a la normalidad si $n$ es grande.",
+        "La variabilidad de esta distribución se cuantifica mediante el error estándar de la media poblacional."
+      ],
+      "correcta": 0,
+      "explicacion": "Es incorrecta porque, según el Teorema Central del Límite, la distribución muestral de la media tiende a ser **normal** (simétrica), no asimétrica positiva, a medida que aumenta $$n$$.",
+      "pista": "Repasa el Teorema Central del Límite."
+    },
+    {
+      "q": "Respecto a la varianza de la media muestral ($\\sigma_{\\overline{x}}^2$), señale la afirmación incorrecta:",
+      "opciones": [
+        "Es un valor equivalente a la desviación típica de la población multiplicada por el tamaño de la muestra.",
+        "Se calcula dividiendo la varianza poblacional ($\\sigma^2$) entre el número de sujetos de la muestra ($n$).",
+        "Su raíz cuadrada es lo que conocemos como Error Estándar de la media, fundamental para los intervalos."
+      ],
+      "correcta": 0,
+      "explicacion": "Es incorrecta porque la varianza de la media es la varianza poblacional **dividida** por $$n$$, no la desviación típica multiplicada por $$n$$. El error conceptual es doble.",
+      "pista": "Fórmula de la varianza de la media en la página 143."
+    },
+    {
+      "q": "Sobre las tablas de probabilidad presentadas en el manual, elija la afirmación incorrecta:",
+      "opciones": [
+        "En la tabla de $Z$, el valor absoluto de $-1,96$ se obtiene uniendo la fila $-1,9$ con la columna de $0,06$.",
+        "La tabla de $t$ de Student muestra en sus filas los grados de libertad y en sus columnas el valor de $\\alpha$ puro.",
+        "Para usar la tabla de $t$, primero debemos decidir si conocemos o no la varianza de la población original."
+      ],
+      "correcta": 1,
+      "explicacion": "Es incorrecta porque la Tabla 35 muestra en sus columnas el nivel de confianza ($$1-\\alpha$$), como $$0,95$$ o $$0,975$$, y no el valor de $$\\alpha$$ puro directamente.",
+      "pista": "Fíjate en lo que dicen las columnas de la Tabla 35."
+    },
+    {
+      "q": "Indique cuál de estas afirmaciones sobre el intervalo de confianza es incorrecta:",
+      "opciones": [
+        "Si el intervalo de confianza del 95% no incluye el valor $\\mu = 0$, podemos decir que el resultado no es relevante.",
+        "Un intervalo de confianza es básicamente un conjunto de hipótesis que se consideran plausibles para el parámetro.",
+        "Los límites del intervalo ($L_i, L_s$) son variables aleatorias que cambian con cada muestra que extraemos."
+      ],
+      "correcta": 0,
+      "explicacion": "Es incorrecta porque si un intervalo **no** incluye un valor nulo (como 0), suele interpretarse como que el resultado **sí** es estadísticamente significativo o relevante.",
+      "pista": "Concepto de intervalo de confianza en la página 140."
+    },
+    {
+      "q": "Sobre la 'Población Accesible', elija la afirmación incorrecta según el texto:",
+      "opciones": [
+        "Es el conjunto amplio de sujetos que comparten una característica territorial como la nacionalidad española.",
+        "Se define atendiendo a criterios de cercanía geográfica o disponibilidad para ser incluidos en la muestra.",
+        "Representa el subconjunto de la población objetivo del cual se extraen finalmente los datos del estudio."
+      ],
+      "correcta": 0,
+      "explicacion": "Es incorrecta porque esa descripción corresponde a la **Población General**. La accesible es mucho más restringida (ej. pacientes de un centro específico).",
+      "pista": "Definiciones de población en la página 136."
+    },
+    {
+      "q": "Respecto a la Figura 79 (cien intervalos de confianza), identifique la afirmación incorrecta:",
+      "opciones": [
+        "Las líneas rojas representan muestras donde el error tipo II ha impedido la detección del parámetro central.",
+        "El hecho de que haya 5 líneas rojas confirma que se ha utilizado un nivel de confianza del 95% ($1-\\alpha=0,95$).",
+        "La línea de puntos central etiquetada como $\\mu$ representa el verdadero valor del parámetro poblacional."
+      ],
+      "correcta": 0,
+      "explicacion": "Es incorrecta porque las líneas rojas representan intervalos que **no contienen** el parámetro (Error Tipo I en términos de confianza), no tienen relación directa con el Error Tipo II en este esquema.",
+      "pista": "Interpretación de la Figura 79 en la página 149."
+    },
+    {
+      "q": "Si un paciente obtiene $x=110$ en inteligencia, con $\\mu=100$ y $\\sigma=15$, su puntuación $Z$ exacta es ____.",
+      "opciones": [
+        "0,667",
+        "0,150",
+        "1,500"
+      ],
+      "correcta": 0,
+      "explicacion": "$$Z = \\frac{x - \\mu}{\\sigma} = \\frac{110 - 100}{15} = \\frac{10}{15} = 0,667$$",
+      "pista": "Recuerde restar la media a la puntuación directa antes de dividir por la desviación típica."
+    },
+    {
+      "q": "La propiedad que indica que el valor esperado del estadístico coincide con el parámetro se denomina ____.",
+      "opciones": [
+        "Consistencia",
+        "Insensatez",
+        "Insesgadez"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{Un estimador es insesgado cuando } E(\\bar{X}) = \\mu, \\text{ es decir, no sobreestima ni subestima el parámetro.}$$",
+      "pista": "Se refiere a la ausencia de error sistemático o sesgo en el promedio de las estimaciones."
+    },
+    {
+      "q": "En una muestra de $N=50$ con $\\sigma=6,00$, el Error Estándar (EE) calculado según el manual es ____.",
+      "opciones": [
+        "0,89",
+        "0,12",
+        "8,33"
+      ],
+      "correcta": 0,
+      "explicacion": "$$EE(\\bar{x}) = \\frac{\\sigma}{\\sqrt{n}} = \\frac{6,00}{\\sqrt{50}} = \\frac{6,00}{7,07} = 0,89$$",
+      "pista": "Aplique la fórmula del error típico de la media utilizando la raíz cuadrada del tamaño muestral."
+    },
+    {
+      "q": "Para un nivel de confianza del 95% ($\\alpha=0,05$), el valor crítico $|Z_{\\alpha/2}|$ a utilizar es ____.",
+      "opciones": [
+        "1,64",
+        "1,96",
+        "2,58"
+      ],
+      "correcta": 1,
+      "explicacion": "$$\\text{Para } \\alpha=0,05, \\text{ el área de la cola es } 0,025. \\text{ En la tabla } Z, \\text{ esto corresponde a } 1,96.$$",
+      "pista": "Debe buscar en la tabla de la normal el valor de Z que deja una probabilidad de 0,025 en la cola."
+    },
+    {
+      "q": "Si disponemos de $N=40, \\bar{X}=36$ y $\\sigma^2=9$, el límite inferior ($L_i$) del IC al 95% es ____.",
+      "opciones": [
+        "35,08",
+        "34,12",
+        "36,92"
+      ],
+      "correcta": 0,
+      "explicacion": "$$L_i = 36 - 1,96 \\cdot \\frac{\\sqrt{9}}{\\sqrt{40}} = 36 - 1,96 \\cdot 0,47 = 35,08$$",
+      "pista": "Utilice la varianza para obtener la desviación típica y reste el producto de Z por el EE a la media."
+    },
+    {
+      "q": "El subconjunto de la población objetivo que por disponibilidad puede ser incluido en el estudio es la ____.",
+      "opciones": [
+        "Población general",
+        "Población diana",
+        "Población accesible"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{La población accesible es el subconjunto de la objetivo disponible para la muestra.}$$",
+      "pista": "Es la parte de la población a la que el investigador realmente tiene acceso físico o geográfico."
+    },
+    {
+      "q": "Cuando la varianza poblacional es desconocida, para el cálculo del IC se debe emplear la distribución ____.",
+      "opciones": [
+        "Normal (Z)",
+        "t de Student",
+        "Ji-cuadrado"
+      ],
+      "correcta": 1,
+      "explicacion": "$$\\text{Si } \\sigma^2 \\text{ es desconocida, se usa } t_{n-1} \\text{ con la desviación típica muestral } S.$$",
+      "pista": "Esta distribución se utiliza con muestras pequeñas o varianza poblacional ignorada."
+    },
+    {
+      "q": "En un estudio con $N=30$ y $\\alpha=0,01$ sin conocer $\\sigma$, los grados de libertad ($gl$) son ____.",
+      "opciones": [
+        "30",
+        "29",
+        "31"
+      ],
+      "correcta": 1,
+      "explicacion": "$$gl = n - 1 = 30 - 1 = 29$$",
+      "pista": "Los grados de libertad en esta prueba se obtienen restando la unidad al tamaño de la muestra."
+    },
+    {
+      "q": "Si aumentamos el tamaño de la muestra ($N$), el Error Máximo (EE) de la estimación ____.",
+      "opciones": [
+        "Disminuye",
+        "Aumenta",
+        "No varía"
+      ],
+      "correcta": 0,
+      "explicacion": "$$\\text{Al aumentar } n, \\text{ la raíz de } n \\text{ crece, reduciendo el valor total de } \\frac{\\sigma}{\\sqrt{n}}.$$",
+      "pista": "Observe que $N$ se encuentra en el denominador de la fórmula del error estándar."
+    },
+    {
+      "q": "Un estimador es ____ cuando al aumentar $N$ su valor tiende a aproximarse al parámetro poblacional.",
+      "opciones": [
+        "Consistente",
+        "Eficiente",
+        "Suficiente"
+      ],
+      "correcta": 0,
+      "explicacion": "$$\\text{La consistencia alude a que } \\bar{X} \\rightarrow \\mu \\text{ conforme } N \\rightarrow \\infty.$$",
+      "pista": "Se refiere a la estabilidad del estimador ante el incremento del volumen de datos."
+    },
+    {
+      "q": "La probabilidad de que el intervalo de confianza NO contenga al parámetro se denomina ____.",
+      "opciones": [
+        "Nivel de confianza",
+        "Nivel de riesgo",
+        "Nivel de acierto"
+      ],
+      "correcta": 1,
+      "explicacion": "$$\\text{El nivel de riesgo } \\alpha \\text{ es la probabilidad de error en la estimación por intervalo.}$$",
+      "pista": "Es el valor $\\alpha$ que representa la zona de rechazo en la distribución."
+    },
+    {
+      "q": "Para una muestra de $N=30, \\bar{X}=75$ y $S^2=16$ con $\\alpha=0,01$, el valor de $t_{0,005}$ con $29$ $gl$ es ____.",
+      "opciones": [
+        "2,576",
+        "2,756",
+        "3,012"
+      ],
+      "correcta": 1,
+      "explicacion": "$$\\text{En la tabla } t, \\text{ para } gl=29 \\text{ y confianza } 0,995, \\text{ el valor es } 2,756.$$",
+      "pista": "Busque en la tabla de la t la intersección entre 29 grados de libertad y $1-\\alpha/2 = 0,995$."
+    },
+    {
+      "q": "Si en un IC al 99% el $EE \\cdot t = 2,01$ y la media es $75$, el límite superior ($L_s$) es ____.",
+      "opciones": [
+        "77,01",
+        "72,99",
+        "73,01"
+      ],
+      "correcta": 0,
+      "explicacion": "$$L_s = \\bar{X} + EE_{max} = 75 + 2,01 = 77,01$$",
+      "pista": "El límite superior se obtiene sumando el error máximo a la media muestral."
+    },
+    {
+      "q": "La propiedad de ____ implica que el estimador utiliza toda la información disponible en la muestra.",
+      "opciones": [
+        "Eficiencia",
+        "Suficiencia",
+        "Insesgadez"
+      ],
+      "correcta": 1,
+      "explicacion": "$$\\text{Un estimador es suficiente si resume toda la información del parámetro contenida en la muestra.}$$",
+      "pista": "Asegura que no se desperdician datos relevantes para la inferencia del parámetro."
+    },
+    {
+      "q": "Un estimador es más ____ que otro si tiene una varianza menor entre todas las muestras posibles.",
+      "opciones": [
+        "Eficiente",
+        "Consistente",
+        "Insesgado"
+      ],
+      "correcta": 0,
+      "explicacion": "$$\\text{La eficiencia se define por la mínima varianza del estimador entre muestras extratables.}$$",
+      "pista": "Se relaciona con la precisión y la concentración de los valores alrededor del parámetro."
+    },
+    {
+      "q": "En la estimación puntual de la media poblacional ($\\mu$), el mejor estadístico es ____.",
+      "opciones": [
+        "La mediana",
+        "La moda",
+        "La media"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{La media muestral } \\bar{X} \\text{ es el mejor estimador para el parámetro } \\mu.$$",
+      "pista": "Es el estimador insesgado y eficiente por excelencia para el centro de la población."
+    },
+    {
+      "q": "El error que cometemos al rechazar la hipótesis nula cuando en realidad es cierta se llama ____.",
+      "opciones": [
+        "Error Tipo I",
+        "Error Tipo II",
+        "Error de S.I."
+      ],
+      "correcta": 0,
+      "explicacion": "$$\\text{El Error Tipo I es rechazar } H_0 \\text{ siendo verdadera (falso positivo estadístico).}$$",
+      "pista": "Se asocia directamente con el nivel de significación $\\alpha$ elegido."
+    },
+    {
+      "q": "Si el nivel de confianza es 0,95, el área que queda en cada una de las dos colas es ____.",
+      "opciones": [
+        "0,050",
+        "0,025",
+        "0,950"
+      ],
+      "correcta": 1,
+      "explicacion": "$$\\text{Área cola} = \\frac{\\alpha}{2} = \\frac{1 - 0,95}{2} = \\frac{0,05}{2} = 0,025$$",
+      "pista": "Divida el nivel de riesgo total entre los dos extremos del intervalo."
+    },
+    {
+      "q": "La varianza de la media muestral ($\\sigma_{\\bar{x}}^2$) se calcula como ____.",
+      "opciones": [
+        "$\\sigma / n$",
+        "$\\sigma^2 / n$",
+        "$\\sigma / \\sqrt{n}$"
+      ],
+      "correcta": 1,
+      "explicacion": "$$\\sigma_{\\bar{X}}^2 = \\frac{\\sigma^2}{n} \\text{ (la desviación típica es la raíz de este valor).}$$",
+      "pista": "Es el cociente entre la varianza poblacional y el tamaño de la muestra."
+    },
+    {
+      "q": "Al optar por un $\\alpha$ de 0,01 en lugar de 0,05, el intervalo de confianza se vuelve ____.",
+      "opciones": [
+        "Más ancho",
+        "Más corto",
+        "Más exacto"
+      ],
+      "correcta": 0,
+      "explicacion": "$$\\text{A menor } \\alpha, \\text{ mayor } Z_{\\alpha/2}, \\text{ por lo que el margen de error aumenta.}$",
+      "pista": "Aumentar la confianza requiere cubrir un rango mayor de valores para asegurar el parámetro."
+    },
+    {
+      "q": "¿Cuáles son características de una buena estimación de parámetros según el manual?",
+      "opciones": [
+        "Representatividad",
+        "Precisión medida",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{Tanto la representatividad como la precisión y la eficiencia son requisitos ineludibles.}$$",
+      "pista": "El muestreo debe garantizar que la muestra se parezca a la población y minimice el error."
+    },
+    {
+      "q": "¿Qué elementos definen la amplitud de un intervalo de confianza?",
+      "opciones": [
+        "Nivel de riesgo",
+        "Tamaño muestral",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{La amplitud depende de } \\alpha, \\sigma \\text{ y } n, \\text{ componentes del error estándar y valor crítico.}$$",
+      "pista": "Factores externos (decisión del investigador) e internos (datos) influyen en el EE."
+    },
+    {
+      "q": "¿Qué tipos de población se diferencian en la inferencia estadística?",
+      "opciones": [
+        "Población diana",
+        "Población general",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{Se distinguen la población general, la objetivo (o diana) y la accesible.}$$",
+      "pista": "El manual divide el concepto en tres categorías según su alcance y disponibilidad."
+    },
+    {
+      "q": "¿Cuáles son las propiedades deseables de un estadístico estimador?",
+      "opciones": [
+        "Insesgadez y uso",
+        "Consistencia real",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{Insesgadez, eficiencia, consistencia y suficiencia son las propiedades clave.}$$",
+      "pista": "Busque las cuatro propiedades técnicas mencionadas en la sección 5.3.1."
+    },
+    {
+      "q": "¿Qué pasos son necesarios para una estimación puntual rigurosa?",
+      "opciones": [
+        "Extraer muestra",
+        "Calcular media",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{Se debe extraer la muestra, calcular el estadístico y asumir su representatividad.}$$",
+      "pista": "Siga el procedimiento de tres puntos detallado en el apartado de estimación puntual."
+    },
+    {
+      "q": "¿Qué factores incrementan la probabilidad de cometer un Error Tipo II?",
+      "opciones": [
+        "Muestras pequeñas",
+        "Alfas muy bajos",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{Un } \\alpha \\text{ estricto y un } N \\text{ bajo reducen la potencia y aumentan el Error Tipo II.}$$",
+      "pista": "Ser muy conservador con el error tipo I suele aumentar el riesgo de no detectar efectos reales."
+    },
+    {
+      "q": "¿Qué componentes integran la fórmula del Intervalo de Confianza?",
+      "opciones": [
+        "Punto de partida",
+        "Valor tipificado",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{Se requiere la media (partida), Z o t (valor tipificado) y el EE (error máximo).}$$",
+      "pista": "Revise los tres datos distintos que se requieren para construir la fórmula."
+    },
+    {
+      "q": "¿Cuál es el propósito común de la estimación puntual y por intervalos?",
+      "opciones": [
+        "Inferir parámetros",
+        "Escrutar valores",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{Ambos métodos son herramientas de la inferencia para aproximarse a los parámetros.}$$",
+      "pista": "Ambos métodos buscan desentrañar la naturaleza desconocida de la población."
+    },
+    {
+      "q": "¿Qué indica un gráfico de diana con puntos muy juntos pero lejos del centro?",
+      "opciones": [
+        "Estimador sesgado",
+        "Estimador eficiente",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{La concentración indica eficiencia (poca varianza), pero la lejanía indica sesgo.}$$",
+      "pista": "Analice la Figura 72: precisión sin exactitud implica sesgo y baja varianza."
+    },
+    {
+      "q": "¿Qué sucede al aumentar el nivel de confianza del 95% al 99%?",
+      "opciones": [
+        "Crece zona verde",
+        "Baja zona violeta",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{Aumenta la probabilidad de inclusión (zona verde) y disminuye el riesgo (zona violeta).}$$",
+      "pista": "El nivel de confianza ($1-\\alpha$) expande la región de aceptación del intervalo."
+    },
+    {
+      "q": "Si $N=100, \\bar{X}=50$ y $\\sigma=10$, ¿cuál es el límite superior ($L_s$) al 95% exacto?",
+      "opciones": [
+        "50,98",
+        "51,64",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "$$L_s = 50 + 1,96 \\cdot \\frac{10}{\\sqrt{100}} = 50 + 1,96 \\cdot 1 = 51,96$$",
+      "pista": "Calcule $50 + 1,96 \\cdot (10/10)$ y compare el resultado decimal con las opciones."
+    },
+    {
+      "q": "¿Cuál es el estadístico recomendado para estimar la proporción poblacional $\\pi$?",
+      "opciones": [
+        "Media $\\bar{X}$",
+        "Desviación $S$",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{Para el parámetro } \\pi, \\text{ el mejor estadístico es } P \\text{ (proporción muestral).}$$",
+      "pista": "Consulte la Tabla 32 sobre los mejores estimadores para cada parámetro poblacional."
+    },
+    {
+      "q": "Si el EE es 0,5 y la media es 10, ¿cuál es el IC al 95% ($Z=1,96$)?",
+      "opciones": [
+        "9,50 a 10,50",
+        "9,12 a 10,88",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "$$IC = 10 \\pm (1,96 \\cdot 0,5) = 10 \\pm 0,98 = [9,02; 10,98]$$",
+      "pista": "No multiplique el EE por Z otra vez si ya le dan el 'EE' como error máximo; verifique el contexto."
+    },
+    {
+      "q": "¿Qué valor de $Z$ corresponde exactamente a una probabilidad de cola de 0,05?",
+      "opciones": [
+        "1,960",
+        "2,576",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{Para una cola de } 0,05, \\text{ el valor } Z \\text{ es } 1,645. \\text{ Las opciones dadas son incorrectas.}$$",
+      "pista": "El valor 1,96 es para 0,025. Busque el valor crítico para un contraste unilateral o $\\alpha=0,10$."
+    },
+    {
+      "q": "En el ejemplo del psicólogo ($N=30, \\bar{X}=75, S^2=16$), ¿cuál es el Error Máximo?",
+      "opciones": [
+        "0,73",
+        "2,75",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "$$EE_{max} = t \\cdot \\frac{S}{\\sqrt{n}} = 2,756 \\cdot 0,73 = 2,01$$",
+      "pista": "El error máximo es el producto del valor t por el error estándar ($2,756 \\cdot 0,73$)."
+    },
+    {
+      "q": "¿Cómo se define un estadístico 'Suficiente' en el texto?",
+      "opciones": [
+        "Que es bastante",
+        "Que no falla nunca",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{Suficiente significa que utiliza toda la información disponible en la muestra para estimar.}$$",
+      "pista": "La suficiencia tiene una definición técnica ligada a la totalidad de la información muestral."
+    },
+    {
+      "q": "Si se conoce $\\sigma^2$, ¿cuál es la fórmula correcta del límite superior?",
+      "opciones": [
+        "$\\bar{x} - Z \\cdot (\\sigma/\\sqrt{n})$",
+        "$\\bar{x} + t \\cdot (S/\\sqrt{n})$",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "$$L_s = \\bar{x} + |Z_{\\alpha/2}| \\cdot \\frac{\\sigma}{\\sqrt{n}}. \\text{ Las opciones restan o usan t.}$$",
+      "pista": "El límite superior siempre suma y, si se conoce la varianza poblacional, usa Z y $\\sigma$."
+    },
+    {
+      "q": "Para un $gl=14$ y confianza de 0,995, el valor de $t$ en la Tabla 35 es ____.",
+      "opciones": [
+        "2,624",
+        "2,145",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{El valor exacto en la tabla es } 2,977. \\text{ Las opciones muestran valores de otras columnas.}$$",
+      "pista": "Revise la fila 14 y la columna 0,995 de la tabla de probabilidades de t."
+    },
+    {
+      "q": "Un estimador sesgado y eficiente se representa en la diana como ____.",
+      "opciones": [
+        "Puntos dispersos",
+        "Puntos centrados",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{Se vería como puntos muy agrupados (eficiente) pero desplazados del centro (sesgado).}$$",
+      "pista": "Eficiente significa poca dispersión; sesgado significa lejos del centro."
+    },
+    {
+      "q": "¿Qué porcentaje de ICs fallarían en contener a $\\mu$ con un nivel de confianza del 90%?",
+      "opciones": [
+        "5%",
+        "1%",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "$$\\text{Si la confianza es 90%, el riesgo } \\alpha \\text{ es 10%. Fallarían 10 de cada 100 estimaciones.}$$",
+      "pista": "El porcentaje de fallo es igual al nivel de riesgo $\\alpha$ multiplicado por 100."
+    }
+  ],
+  "laboratorio": [
+    {
+      "id": 1,
+      "titulo": "Tipificación y Puntuaciones Z",
+      "escenario": "Un psicólogo evalúa a un paciente en una escala de ansiedad donde la media poblacional es $\\mu = 50$ y la desviación típica es $\\sigma = 10$. Se utiliza la fórmula de tipificación: $$z = \\frac{x - \\mu}{\\sigma}$$",
+      "preguntas": [
+        {
+          "id": "p1a",
+          "label": "a)",
+          "enunciado": "Si el paciente obtiene una puntuación directa de 65, ¿cuál es su puntuación Z?",
+          "respuesta": 1.5,
+          "tolerancia": 0.01,
+          "pista": "$$z = \\frac{65 - 50}{10} = \\frac{15}{10} = 1,5$$"
+        },
+        {
+          "id": "p1b",
+          "label": "b)",
+          "enunciado": "Si otro paciente tiene una $Z = -0,8$, ¿cuál es su puntuación directa $X$?",
+          "respuesta": 42,
+          "tolerancia": 0.1,
+          "pista": "$$X = \\mu + (z \\cdot \\sigma) = 50 + (-0,8 \\cdot 10) = 50 - 8 = 42$$"
+        },
+        {
+          "id": "p1c",
+          "label": "c)",
+          "enunciado": "Un paciente está a 2,5 desviaciones típicas por encima de la media. ¿Qué puntuación directa obtuvo?",
+          "respuesta": 75,
+          "tolerancia": 0,
+          "pista": "$$X = 50 + (2,5 \\cdot 10) = 75$$"
+        },
+        {
+          "id": "p1d",
+          "label": "d)",
+          "enunciado": "¿Cuál es la puntuación Z de un paciente que obtiene exactamente la media poblacional?",
+          "respuesta": 0,
+          "tolerancia": 0,
+          "pista": "$$z = \\frac{50 - 50}{10} = 0$$"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Error Estándar y Tamaño Muestral",
+      "escenario": "El error estándar de la media (EE) determina la precisión de la estimación. La fórmula base es: $$EE = \\frac{\\sigma}{\\sqrt{n}}$$. Considera una población con $\\sigma = 15$.",
+      "preguntas": [
+        {
+          "id": "p2a",
+          "label": "a)",
+          "enunciado": "Calcula el EE para una muestra de $n = 25$ sujetos.",
+          "respuesta": 3,
+          "tolerancia": 0,
+          "pista": "$$EE = \\frac{15}{\\sqrt{25}} = \\frac{15}{5} = 3$$"
+        },
+        {
+          "id": "p2b",
+          "label": "b)",
+          "enunciado": "Calcula el EE si aumentamos el tamaño de la muestra a $n = 100$.",
+          "respuesta": 1.5,
+          "tolerancia": 0,
+          "pista": "$$EE = \\frac{15}{\\sqrt{100}} = \\frac{15}{10} = 1,5$$"
+        },
+        {
+          "id": "p2c",
+          "label": "c)",
+          "enunciado": "¿Cuál es la varianza de la media muestral ($\\sigma_{\\overline{x}}^2$) para $n = 100$?",
+          "respuesta": 2.25,
+          "tolerancia": 0.01,
+          "pista": "$$\\sigma_{\\overline{x}}^2 = EE^2 = 1,5^2 = 2,25$$"
+        },
+        {
+          "id": "p2d",
+          "label": "d)",
+          "enunciado": "¿Qué tamaño de muestra $n$ se necesitaría para reducir el EE a exactamente 1?",
+          "respuesta": 225,
+          "tolerancia": 0,
+          "pista": "$$1 = \\frac{15}{\\sqrt{n}} \\implies \\sqrt{n} = 15 \\implies n = 225$$"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Intervalo de Confianza con Varianza Conocida",
+      "escenario": "Se desea estimar la media de tiempo de reacción con $n = 64$ sujetos, $\\overline{X} = 400$ ms y $\\sigma = 40$ ms. El nivel de confianza es 95% ($\\alpha = 0,05$), lo que implica $Z_{\\alpha/2} = 1,96$. Fórmula: $$IC = \\overline{X} \\pm Z_{\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}}$$",
+      "preguntas": [
+        {
+          "id": "p3a",
+          "label": "a)",
+          "enunciado": "Calcula el Error Estándar (EE) de esta muestra.",
+          "respuesta": 5,
+          "tolerancia": 0.1,
+          "pista": "$$EE = \\frac{40}{\\sqrt{64}} = \\frac{40}{8} = 5$$"
+        },
+        {
+          "id": "p3b",
+          "label": "b)",
+          "enunciado": "Calcula el Error Máximo de la estimación ($Z_{\\alpha/2} \\cdot EE$).",
+          "respuesta": 9.8,
+          "tolerancia": 0.1,
+          "pista": "$$9,8 = 1,96 \\cdot 5$$"
+        },
+        {
+          "id": "p3c",
+          "label": "c)",
+          "enunciado": "¿Cuál es el Límite Inferior ($L_i$) del intervalo de confianza?",
+          "respuesta": 390.2,
+          "tolerancia": 0.1,
+          "pista": "$$L_i = 400 - 9,8 = 390,2$$"
+        },
+        {
+          "id": "p3d",
+          "label": "d)",
+          "enunciado": "¿Cuál es el Límite Superior ($L_s$) del intervalo de confianza?",
+          "respuesta": 409.8,
+          "tolerancia": 0.1,
+          "pista": "$$L_s = 400 + 9,8 = 409,8$$"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Intervalo de Confianza con Varianza Desconocida (t-Student)",
+      "escenario": "En un estudio con $n = 16$ adolescentes sobre horas de uso de móvil, se obtiene $\\overline{X} = 6$ horas y una desviación típica muestral $S = 2$. No conocemos la varianza poblacional. Se usa $\\alpha = 0,05$.",
+      "preguntas": [
+        {
+          "id": "p4a",
+          "label": "a)",
+          "enunciado": "¿Cuántos grados de libertad ($gl$) tiene esta distribución?",
+          "respuesta": 15,
+          "tolerancia": 0,
+          "pista": "$$gl = n - 1 = 16 - 1 = 15$$"
+        },
+        {
+          "id": "p4b",
+          "label": "b)",
+          "enunciado": "Si para $gl=15$ y $\\alpha/2=0,025$, el valor de $t = 2,131$, calcula el Error Estándar ($S/\\sqrt{n}$).",
+          "respuesta": 0.5,
+          "tolerancia": 0,
+          "pista": "$$EE = \\frac{2}{\\sqrt{16}} = \\frac{2}{4} = 0,5$$"
+        },
+        {
+          "id": "p4c",
+          "label": "c)",
+          "enunciado": "Calcula el error máximo ($t \\cdot EE$).",
+          "respuesta": 1.0655,
+          "tolerancia": 0.001,
+          "pista": "$$2,131 \\cdot 0,5 = 1,0655$$"
+        },
+        {
+          "id": "p4d",
+          "label": "d)",
+          "enunciado": "¿Cuál es el límite superior ($L_s$) del intervalo de confianza al 95%?",
+          "respuesta": 7.0655,
+          "tolerancia": 0.01,
+          "pista": "$$L_s = 6 + 1,0655 = 7,0655$$"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Impacto del Nivel de Confianza",
+      "escenario": "Un investigador analiza el CI de 100 personas ($\\overline{X}=105, \\sigma=15$). Compara el intervalo al 95% ($Z=1,96$) frente al 99% ($Z=2,576$).",
+      "preguntas": [
+        {
+          "id": "p5a",
+          "label": "a)",
+          "enunciado": "Calcula el error máximo para el nivel de confianza del 95%.",
+          "respuesta": 2.94,
+          "tolerancia": 0.01,
+          "pista": "$$1,96 \\cdot \\frac{15}{\\sqrt{100}} = 1,96 \\cdot 1,5 = 2,94$$"
+        },
+        {
+          "id": "p5b",
+          "label": "b)",
+          "enunciado": "Calcula el error máximo para el nivel de confianza del 99%.",
+          "respuesta": 3.864,
+          "tolerancia": 0.01,
+          "pista": "$$2,576 \\cdot 1,5 = 3,864$$"
+        },
+        {
+          "id": "p5c",
+          "label": "c)",
+          "enunciado": "¿Cuál es la amplitud total (ancho) del intervalo al 95%?",
+          "respuesta": 5.88,
+          "tolerancia": 0.01,
+          "pista": "$$2,94 \\cdot 2 = 5,88$$"
+        },
+        {
+          "id": "p5d",
+          "label": "d)",
+          "enunciado": "¿Cuál es la amplitud total (ancho) del intervalo al 99%?",
+          "respuesta": 7.728,
+          "tolerancia": 0.01,
+          "pista": "$$3,864 \\cdot 2 = 7,728$$"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Estimación de Proporciones",
+      "escenario": "En una muestra de $n = 400$ pacientes, el 20% (p = 0,20) presenta mejoría. Se estima la proporción poblacional $\\pi$ mediante: $$EE(p) = \\sqrt{\\frac{p(1-p)}{n}}$$",
+      "preguntas": [
+        {
+          "id": "p6a",
+          "label": "a)",
+          "enunciado": "Calcula el Error Estándar de la proporción.",
+          "respuesta": 0.02,
+          "tolerancia": 0.001,
+          "pista": "$$\\sqrt{\\frac{0,2 \\cdot 0,8}{400}} = \\sqrt{\\frac{0,16}{400}} = \\sqrt{0,0004} = 0,02$$"
+        },
+        {
+          "id": "p6b",
+          "label": "b)",
+          "enunciado": "Para un nivel de confianza del 95% ($Z=1,96$), calcula el error máximo de la proporción.",
+          "respuesta": 0.0392,
+          "tolerancia": 0.0001,
+          "pista": "$$1,96 \\cdot 0,02 = 0,0392$$"
+        },
+        {
+          "id": "p6c",
+          "label": "c)",
+          "enunciado": "¿Cuál es el límite inferior ($L_i$) de la proporción al 95%?",
+          "respuesta": 0.1608,
+          "tolerancia": 0.0001,
+          "pista": "$$0,20 - 0,0392 = 0,1608$$"
+        },
+        {
+          "id": "p6d",
+          "label": "d)",
+          "enunciado": "Si queremos que el error máximo sea de solo 0,01 con $Z=1,96$, ¿qué $n$ necesitamos? (Usa $p=0,2$).",
+          "respuesta": 6146.56,
+          "tolerancia": 1,
+          "pista": "$$0,01 = 1,96 \\cdot \\sqrt{\\frac{0,16}{n}} \\implies 0,0001 = 3,8416 \\cdot (0,16/n) \\implies n = \\frac{0,614656}{0,0001} = 6146,56$$"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Caso de Estudio: Enfermedad Rara",
+      "escenario": "Datos del manual: $\\mu = 72,27$, $\\sigma = 6,12$. Una muestra de $n = 36$ pacientes arroja una media $\\overline{X} = 74,49$.",
+      "preguntas": [
+        {
+          "id": "p7a",
+          "label": "a)",
+          "enunciado": "Calcula el EE para esta muestra.",
+          "respuesta": 1.02,
+          "tolerancia": 0.01,
+          "pista": "$$6,12 / \\sqrt{36} = 6,12 / 6 = 1,02$$"
+        },
+        {
+          "id": "p7b",
+          "label": "b)",
+          "enunciado": "Calcula la puntuación Z de la media muestral respecto a la distribución muestral de medias.",
+          "respuesta": 2.176,
+          "tolerancia": 0.01,
+          "pista": "$$z = \\frac{74,49 - 72,27}{1,02} = 2,1764...$$"
+        },
+        {
+          "id": "p7c",
+          "label": "c)",
+          "enunciado": "Calcula el límite superior del IC al 95% ($Z=1,96$) para esta media muestral.",
+          "respuesta": 76.4892,
+          "tolerancia": 0.1,
+          "pista": "$$74,49 + (1,96 \\cdot 1,02) = 74,49 + 1,9992 = 76,4892$$"
+        },
+        {
+          "id": "p7d",
+          "label": "d)",
+          "enunciado": "¿Contiene este intervalo la media poblacional $\\mu = 72,27$?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "Sí la contiene (L_i = 72,49). En este sistema 1=Sí, 0=No. El cálculo es $74,49 - 1,9992 = 72,49$. Como $\\mu = 72,27$ es menor que $L_i$, NO la contiene. Respuesta correcta: 0."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titulo": "Propiedades de los Estimadores",
+      "escenario": "Un estadístico es insesgado si $E(\\overline{X}) = \\mu$. Considere dos estimadores A y B para $\\mu = 100$. Estimador A tiene varianza $\\sigma_A^2 = 4$. Estimador B tiene varianza $\\sigma_B^2 = 9$. Ambas son insesgadas.",
+      "preguntas": [
+        {
+          "id": "p8a",
+          "label": "a)",
+          "enunciado": "¿Cuál es la desviación típica (error estándar) del estimador A?",
+          "respuesta": 2,
+          "tolerancia": 0,
+          "pista": "$$\\sqrt{4} = 2$$"
+        },
+        {
+          "id": "p8b",
+          "label": "b)",
+          "enunciado": "¿Cuál es la desviación típica (error estándar) del estimador B?",
+          "respuesta": 3,
+          "tolerancia": 0,
+          "pista": "$$\\sqrt{9} = 3$$"
+        },
+        {
+          "id": "p8c",
+          "label": "c)",
+          "enunciado": "¿Cuál de los dos estimadores es más eficiente? (Indique 1 para A, 2 para B).",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "El más eficiente es el de menor varianza (A)."
+        },
+        {
+          "id": "p8d",
+          "label": "d)",
+          "enunciado": "Si el estimador A se calcula con $n=50$, ¿cuál sería su varianza si triplicamos el tamaño de la muestra?",
+          "respuesta": 1.33,
+          "tolerancia": 0.1,
+          "pista": "La varianza de la media es $\\sigma^2/n$. Si $n$ se triplica, la varianza se divide por 3. $4/3 = 1,333...$"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "titulo": "Cálculo de Probabilidad con Z",
+      "escenario": "Utilizando la Tabla 34 del manual. Queremos saber la probabilidad acumulada para diferentes valores de Z.",
+      "preguntas": [
+        {
+          "id": "p9a",
+          "label": "a)",
+          "enunciado": "Según la tabla, ¿qué probabilidad corresponde a $Z = -1,96$?",
+          "respuesta": 0.025,
+          "tolerancia": 0,
+          "pista": "En la tabla, fila -1,9 y columna 0,06 da 0,0250."
+        },
+        {
+          "id": "p9b",
+          "label": "b)",
+          "enunciado": "¿Qué probabilidad corresponde a $Z = -2,58$?",
+          "respuesta": 0.0049,
+          "tolerancia": 0.0001,
+          "pista": "Fila -2,5 y columna 0,08."
+        },
+        {
+          "id": "p9c",
+          "label": "c)",
+          "enunciado": "¿Cuál es la probabilidad entre $Z = -1,96$ y $Z = 1,96$?",
+          "respuesta": 0.95,
+          "tolerancia": 0.01,
+          "pista": "$$1 - (0,025 + 0,025) = 0,95$$"
+        },
+        {
+          "id": "p9d",
+          "label": "d)",
+          "enunciado": "¿Qué valor de Z (positivo) deja un 5% en la cola derecha? (use 2 decimales).",
+          "respuesta": 1.64,
+          "tolerancia": 0.01,
+          "pista": "Buscamos 0,05 en la tabla o 0,95 acumulado. Es aprox 1,64."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "titulo": "Análisis de Datos: Varianza Poblacional Conocida",
+      "escenario": "Una psicóloga estudia la media de una muestra de $n=40$ con $\\overline{X}=36$. Se sabe que $\\sigma^2=9$ y $\\alpha=0,05$.",
+      "preguntas": [
+        {
+          "id": "p10a",
+          "label": "a)",
+          "enunciado": "Calcula el valor de la desviación típica poblacional.",
+          "respuesta": 3,
+          "tolerancia": 0,
+          "pista": "$$\\sqrt{9} = 3$$"
+        },
+        {
+          "id": "p10b",
+          "label": "b)",
+          "enunciado": "Calcula el Error Estándar (EE).",
+          "respuesta": 0.474,
+          "tolerancia": 0.01,
+          "pista": "$$3 / \\sqrt{40} = 0,4743...$$"
+        },
+        {
+          "id": "p10c",
+          "label": "c)",
+          "enunciado": "Calcula el error máximo ($1,96 \\cdot EE$).",
+          "respuesta": 0.929,
+          "tolerancia": 0.01,
+          "pista": "$$1,96 \\cdot 0,4743 = 0,9296...$$"
+        },
+        {
+          "id": "p10d",
+          "label": "d)",
+          "enunciado": "Calcula el límite inferior del intervalo.",
+          "respuesta": 35.07,
+          "tolerancia": 0.1,
+          "pista": "$$36 - 0,9296 = 35,0704...$$"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "titulo": "Distribución t de Student: Búsqueda en Tabla",
+      "escenario": "Usando la Tabla 35. Se tiene una muestra de $n=11$ y se desea un nivel de confianza del 90% ($\\alpha=0,10$).",
+      "preguntas": [
+        {
+          "id": "p11a",
+          "label": "a)",
+          "enunciado": "¿Cuántos grados de libertad se deben usar?",
+          "respuesta": 10,
+          "tolerancia": 0,
+          "pista": "$$11 - 1 = 10$$"
+        },
+        {
+          "id": "p11b",
+          "label": "b)",
+          "enunciado": "¿Qué valor de $\\alpha/2$ corresponde?",
+          "respuesta": 0.05,
+          "tolerancia": 0,
+          "pista": "$$0,10 / 2 = 0,05$$"
+        },
+        {
+          "id": "p11c",
+          "label": "c)",
+          "enunciado": "¿Qué valor de $1 - \\alpha/2$ se debe buscar en las columnas de la tabla?",
+          "respuesta": 0.95,
+          "tolerancia": 0,
+          "pista": "$$1 - 0,05 = 0,95$$"
+        },
+        {
+          "id": "p11d",
+          "label": "d)",
+          "enunciado": "Identifica el valor de $t$ en la tabla para los datos anteriores.",
+          "respuesta": 1.812,
+          "tolerancia": 0,
+          "pista": "Intersección gl=10 y columna 0,95."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "titulo": "Inferencia de Medias con Varianza Desconocida",
+      "escenario": "Muestra $n=30$, $\\overline{X}=75$, varianza de la muestra $S^2=16$, $\\alpha=0,01$.",
+      "preguntas": [
+        {
+          "id": "p12a",
+          "label": "a)",
+          "enunciado": "Calcula la desviación típica muestral $S$.",
+          "respuesta": 4,
+          "tolerancia": 0,
+          "pista": "$$\\sqrt{16} = 4$$"
+        },
+        {
+          "id": "p12b",
+          "label": "b)",
+          "enunciado": "Calcula el Error Estándar ($S/\\sqrt{n}$).",
+          "respuesta": 0.73,
+          "tolerancia": 0.01,
+          "pista": "$$4 / \\sqrt{30} = 4 / 5,477 = 0,7303...$$"
+        },
+        {
+          "id": "p12c",
+          "label": "c)",
+          "enunciado": "Si el valor de $t$ para $gl=29$ y $1-\\alpha/2=0,995$ es 2,756, calcula el error máximo.",
+          "respuesta": 2.01,
+          "tolerancia": 0.01,
+          "pista": "$$2,756 \\cdot 0,7303 = 2,012...$$"
+        },
+        {
+          "id": "p12d",
+          "label": "d)",
+          "enunciado": "Calcula el límite superior del intervalo de confianza.",
+          "respuesta": 77.01,
+          "tolerancia": 0.1,
+          "pista": "$$75 + 2,012 = 77,012$$"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "titulo": "Relación entre EE, Varianza y N",
+      "escenario": "Queremos entender cómo cambia el EE al variar los componentes de la fórmula $$EE = \\frac{\\sigma}{\\sqrt{n}}$$.",
+      "preguntas": [
+        {
+          "id": "p13a",
+          "label": "a)",
+          "enunciado": "Si $\\sigma=10$ y $n=100$, ¿cuánto vale el EE?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "$$10 / 10 = 1$$"
+        },
+        {
+          "id": "p13b",
+          "label": "b)",
+          "enunciado": "Si mantenemos $\\sigma=10$ pero reducimos $n$ a 25, ¿cuánto vale el EE?",
+          "respuesta": 2,
+          "tolerancia": 0,
+          "pista": "$$10 / 5 = 2$$"
+        },
+        {
+          "id": "p13c",
+          "label": "c)",
+          "enunciado": "Si mantenemos $n=100$ pero la población es más heterogénea ($\\sigma=20$), ¿cuánto vale el EE?",
+          "respuesta": 2,
+          "tolerancia": 0,
+          "pista": "$$20 / 10 = 2$$"
+        },
+        {
+          "id": "p13d",
+          "label": "d)",
+          "enunciado": "¿Qué $n$ se requiere para que con $\\sigma=20$ el EE sea igual a 0,5?",
+          "respuesta": 1600,
+          "tolerancia": 0,
+          "pista": "$$0,5 = 20 / \\sqrt{n} \\implies \\sqrt{n} = 40 \\implies n = 1600$$"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "titulo": "Interpretación de Intervalos al 95%",
+      "escenario": "Se realizan 100 estimaciones de la media poblacional mediante intervalos de confianza al 95%.",
+      "preguntas": [
+        {
+          "id": "p14a",
+          "label": "a)",
+          "enunciado": "Estadísticamente, ¿en cuántos de esos 100 intervalos se espera que NO esté la media poblacional?",
+          "respuesta": 5,
+          "tolerancia": 0,
+          "pista": "$$100 \\cdot 0,05 = 5$$"
+        },
+        {
+          "id": "p14b",
+          "label": "b)",
+          "enunciado": "¿Cómo se denomina la probabilidad $\\alpha$ de que el parámetro no esté en el intervalo?",
+          "respuesta": 0.05,
+          "tolerancia": 0,
+          "pista": "Nivel de riesgo o significación."
+        },
+        {
+          "id": "p14c",
+          "label": "c)",
+          "enunciado": "Si el intervalo es [45, 55], ¿cuál fue la media muestral $\\overline{X}$ obtenida?",
+          "respuesta": 50,
+          "tolerancia": 0,
+          "pista": "Es el punto medio: $$(45+55)/2 = 50$$"
+        },
+        {
+          "id": "p14d",
+          "label": "d)",
+          "enunciado": "Con los datos anteriores, ¿cuál es el error máximo (EE puntual) de esa estimación?",
+          "respuesta": 5,
+          "tolerancia": 0,
+          "pista": "$$55 - 50 = 5$$"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "titulo": "Muestreo y Representatividad",
+      "escenario": "Una investigadora estudia a 10.000 personas de una población de 3.000.000.",
+      "preguntas": [
+        {
+          "id": "p15a",
+          "label": "a)",
+          "enunciado": "¿Cuál es el tamaño de la población objetivo en este estudio?",
+          "respuesta": 3000000,
+          "tolerancia": 0,
+          "pista": "Dato del texto (población mayor de 65 años)."
+        },
+        {
+          "id": "p15b",
+          "label": "b)",
+          "enunciado": "¿Cuál es el tamaño de la muestra ($n$)?",
+          "respuesta": 10000,
+          "tolerancia": 0,
+          "pista": "Dato del texto."
+        },
+        {
+          "id": "p15c",
+          "label": "c)",
+          "enunciado": "Si se elige un nivel de confianza del 99,7% ($Z=3$), y $\\sigma=10$, ¿cuánto vale el error máximo?",
+          "respuesta": 0.3,
+          "tolerancia": 0.01,
+          "pista": "$$3 \\cdot \\frac{10}{\\sqrt{10000}} = 3 \\cdot \\frac{10}{100} = 0,3$$"
+        },
+        {
+          "id": "p15d",
+          "label": "d)",
+          "enunciado": "Si la media muestral es 70, ¿cuál es el límite inferior al 99,7%?",
+          "respuesta": 69.7,
+          "tolerancia": 0.1,
+          "pista": "$$70 - 0,3 = 69,7$$"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "titulo": "Consistencia del Estimador",
+      "escenario": "La consistencia implica que al aumentar $N$, el estadístico se aproxima al parámetro.",
+      "preguntas": [
+        {
+          "id": "p16a",
+          "label": "a)",
+          "enunciado": "Si $EE = 2$ para $n=100$, ¿cuánto vale $\\sigma$?",
+          "respuesta": 20,
+          "tolerancia": 0,
+          "pista": "$$2 = \\sigma / 10 \\implies \\sigma = 20$$"
+        },
+        {
+          "id": "p16b",
+          "label": "b)",
+          "enunciado": "Con $\\sigma=20$, ¿qué valor tiene el EE para $n=10.000$?",
+          "respuesta": 0.2,
+          "tolerancia": 0.01,
+          "pista": "$$20 / 100 = 0,2$$"
+        },
+        {
+          "id": "p16c",
+          "label": "c)",
+          "enunciado": "¿Y para $n=1.000 .000$?",
+          "respuesta": 0.02,
+          "tolerancia": 0.001,
+          "pista": "$$20 / 1000 = 0,02$$"
+        },
+        {
+          "id": "p16d",
+          "label": "d)",
+          "enunciado": "¿A qué valor tiende el EE cuando $n$ tiende a infinito?",
+          "respuesta": 0,
+          "tolerancia": 0,
+          "pista": "El error tiende a cero a medida que la muestra iguala a la población."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "titulo": "Cálculo de la Varianza de la Media",
+      "escenario": "Fórmula: $$\\sigma_{\\overline{x}}^2 = \\frac{\\sigma^2}{n}$$. Tenemos una población con varianza $\\sigma^2 = 144$.",
+      "preguntas": [
+        {
+          "id": "p17a",
+          "label": "a)",
+          "enunciado": "Calcula la varianza de la media muestral para $n=16$.",
+          "respuesta": 9,
+          "tolerancia": 0,
+          "pista": "$$144 / 16 = 9$$"
+        },
+        {
+          "id": "p17b",
+          "label": "b)",
+          "enunciado": "¿Cuál es el error estándar (EE) para $n=16$?",
+          "respuesta": 3,
+          "tolerancia": 0,
+          "pista": "$$\\sqrt{9} = 3$$"
+        },
+        {
+          "id": "p17c",
+          "label": "c)",
+          "enunciado": "Calcula la varianza de la media para $n=144$.",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "$$144 / 144 = 1$$"
+        },
+        {
+          "id": "p17d",
+          "label": "d)",
+          "enunciado": "¿Cuál es el EE para $n=144$?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "$$\\sqrt{1} = 1$$"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "titulo": "Precisión y Nivel de Confianza (Z)",
+      "escenario": "Un psicólogo usa una muestra de $n=100$ y $\\sigma=10$ para estimar la media de estrés.",
+      "preguntas": [
+        {
+          "id": "p18a",
+          "label": "a)",
+          "enunciado": "¿Cuánto vale el EE?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "$$10 / 10 = 1$$"
+        },
+        {
+          "id": "p18b",
+          "label": "b)",
+          "enunciado": "Para un nivel de confianza del 68% ($Z=1$), ¿cuál es el error máximo?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "$$1 \\cdot 1 = 1$$"
+        },
+        {
+          "id": "p18c",
+          "label": "c)",
+          "enunciado": "Para un nivel del 95,44% ($Z=2$), ¿cuál es el error máximo?",
+          "respuesta": 2,
+          "tolerancia": 0,
+          "pista": "$$2 \\cdot 1 = 2$$"
+        },
+        {
+          "id": "p18d",
+          "label": "d)",
+          "enunciado": "Si queremos un error máximo de 0,5 con $Z=2$, ¿qué $n$ necesitamos?",
+          "respuesta": 1600,
+          "tolerancia": 0,
+          "pista": "$$0,5 = 2 \\cdot (10/\\sqrt{n}) \\implies \\sqrt{n} = 40 \\implies n = 1600$$"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "titulo": "Comparación t vs Z",
+      "escenario": "Para una misma muestra y $\\alpha=0,05$. En Z usamos $1,96$. En t depende de $gl$.",
+      "preguntas": [
+        {
+          "id": "p19a",
+          "label": "a)",
+          "enunciado": "Si $n=5$, ¿cuál es el valor de $t$ para $1-\\alpha/2=0,975$? (Tabla 35).",
+          "respuesta": 2.776,
+          "tolerancia": 0,
+          "pista": "Fila gl=4, columna 0,975."
+        },
+        {
+          "id": "p19b",
+          "label": "b)",
+          "enunciado": "Si $n=16$, ¿cuál es el valor de $t$ para $1-\\alpha/2=0,975$?",
+          "respuesta": 2.131,
+          "tolerancia": 0,
+          "pista": "Fila gl=15, columna 0,975."
+        },
+        {
+          "id": "p19c",
+          "label": "c)",
+          "enunciado": "¿Cuál es la diferencia entre el valor t ($n=5$) y el valor Z ($1,96$)?",
+          "respuesta": 0.816,
+          "tolerancia": 0.001,
+          "pista": "$$2,776 - 1,96 = 0,816$$"
+        },
+        {
+          "id": "p19d",
+          "label": "d)",
+          "enunciado": "¿Hacia qué valor tiende t cuando $n$ tiende a infinito?",
+          "respuesta": 1.96,
+          "tolerancia": 0.01,
+          "pista": "La distribución t converge a la normal Z."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "titulo": "Estimación Puntual vs Intervalos",
+      "escenario": "Un estudio sobre depresión obtiene $\\overline{X}=12$ en una muestra de $n=100$. Se sabe $\\sigma=5$.",
+      "preguntas": [
+        {
+          "id": "p20a",
+          "label": "a)",
+          "enunciado": "¿Cuál es el mejor estimador puntual para la media poblacional?",
+          "respuesta": 12,
+          "tolerancia": 0,
+          "pista": "La media muestral es el mejor estimador de $\\mu$."
+        },
+        {
+          "id": "p20b",
+          "label": "b)",
+          "enunciado": "Calcula el EE de la estimación.",
+          "respuesta": 0.5,
+          "tolerancia": 0,
+          "pista": "$$5 / 10 = 0,5$$"
+        },
+        {
+          "id": "p20c",
+          "label": "c)",
+          "enunciado": "Calcula el límite superior del IC al 95% ($Z=1,96$).",
+          "respuesta": 12.98,
+          "tolerancia": 0.01,
+          "pista": "$$12 + (1,96 \\cdot 0,5) = 12 + 0,98 = 12,98$$"
+        },
+        {
+          "id": "p20d",
+          "label": "d)",
+          "enunciado": "Si el parámetro real $\\mu$ fuera 13, ¿estaría contenido en este intervalo?",
+          "respuesta": 0,
+          "tolerancia": 0,
+          "pista": "El límite superior es 12,98. Como 13 > 12,98, la respuesta es NO (0)."
+        }
+      ]
+    }
+  ],
+  "formulas": [
+    {
+      "nombre": "Puntuación Z (Tipificación)",
+      "latex": "$$z = \\frac{x - \\mu}{\\sigma}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Propiedad de Insesgadez (Valor Esperado)",
+      "latex": "$$E(\\overline{X}) = \\mu$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Error Estándar de la Media (EE)",
+      "latex": "$$EE(\\overline{X}) = \\sigma_{\\overline{X}} = \\frac{\\sigma}{\\sqrt{n}}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Intervalo de Confianza (Varianza Poblacional Conocida)",
+      "latex": "$$IC = \\overline{X} \\pm |Z_{\\alpha/2}| \\cdot \\frac{\\sigma}{\\sqrt{n}}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Intervalo de Confianza (Varianza Poblacional Desconocida)",
+      "latex": "$$IC = \\overline{X} \\pm |_{\\alpha/2}t_{n-1}| \\cdot \\frac{S_n}{\\sqrt{n}}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Grados de Libertad (t de Student)",
+      "latex": "$$gl = n - 1$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Límite Inferior de Confianza (Li)",
+      "latex": "$$L_i = \\text{estadístico} - EE$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Límite Superior de Confianza (Ls)",
+      "latex": "$$L_s = \\text{estadístico} + EE$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    }
+  ]
+}

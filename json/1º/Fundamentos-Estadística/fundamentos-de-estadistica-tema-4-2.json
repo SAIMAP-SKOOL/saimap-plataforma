@@ -1,0 +1,1698 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es correcto afirmar que el estadístico $$\\chi^2$$ puede arrojar valores negativos si las puntuaciones observadas son inferiores a las esperadas?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 1,
+      "explicacion": "La fórmula de $$\\chi^2$$eleva al cuadrado la diferencia$$(O_{ij} - e_{ij})$$, por lo que el resultado siempre será un valor no negativo (0 a $$\\infty$$).",
+      "pista": "Observe el exponente en el numerador de la fórmula de $$\\chi^2$$."
+    },
+    {
+      "q": "¿El coeficiente de determinación $$(r^2)$$ permite cuantificar el porcentaje de varianza de la variable dependiente explicada por la predictora?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 0,
+      "explicacion": "El coeficiente de determinación indica qué proporción de la varianza de la variable resultado es explicada por la variable independiente.",
+      "pista": "Revise la definición de este coeficiente en el análisis de regresión."
+    },
+    {
+      "q": "¿Se requiere necesariamente una distribución simétrica de frecuencias en la tabla de contingencias para aplicar el estadístico de Cramer?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 1,
+      "explicacion": "No se requiere simetría; de hecho, la V de Cramer es útil precisamente para matrices que no son de $$2 \\times 2$$ y con grupos desiguales.",
+      "pista": "Considere los requisitos de dimensiones y distribución de la muestra."
+    },
+    {
+      "q": "¿Las puntuaciones esperadas $$(e)$$ representan las frecuencias que se obtendrían bajo el supuesto de independencia absoluta entre las variables?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 0,
+      "explicacion": "Las puntuaciones esperadas son las que sería previsible obtener en el caso de que las variables estudiadas carecieran de relación alguna.",
+      "pista": "Piense en qué escenario teórico se basa el cálculo de las frecuencias esperadas."
+    },
+    {
+      "q": "¿Es posible aplicar la prueba $$\\chi^2$$ a variables de naturaleza cuasicuantitativa u ordinal cuando se comportan como categorías?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 0,
+      "explicacion": "El cálculo de $$\\chi^2$$ puede implementarse en variables ordinales que, en la práctica, funcionan como variables categóricas.",
+      "pista": "Revise el apartado 4.3 sobre el alcance de esta prueba estadística."
+    },
+    {
+      "q": "¿El valor máximo que puede alcanzar el estadístico $$\\chi^2$$está acotado superiormente por el tamaño muestral$$N$$?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 1,
+      "explicacion": "Una de las limitaciones de $$\\chi^2$$es que sus valores no están acotados (pueden tender a$$\\infty$$), lo que dificulta su interpretación directa.",
+      "pista": "Considere las limitaciones mencionadas sobre la interpretación de este estadístico."
+    },
+    {
+      "q": "¿La suma de todas las puntuaciones marginales de las columnas es siempre equivalente al tamaño total de la muestra $$(N)$$?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 0,
+      "explicacion": "El sumatorio de los totales de cada columna (puntuaciones marginales) es igual al total de la muestra o $$N$$.",
+      "pista": "Observe la estructura de la matriz de contingencia en la esquina inferior derecha."
+    },
+    {
+      "q": "¿El coeficiente Phi de Pearson $$(\\varphi)$$es el estadístico de elección para cuantificar la intensidad en tablas de dimensiones$$3 \\times 2$$?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 1,
+      "explicacion": "La Phi de Pearson se aplica exclusivamente si ambas variables son dicotómicas (matriz de $$2 \\times 2$$); para $$3 \\times 2$$ se usa V de Cramer.",
+      "pista": "Revise la condición de aplicabilidad específica de la Phi de Pearson."
+    },
+    {
+      "q": "¿Indica un valor de $$\\chi^2$$ cercano a cero que existe una fuerte dependencia estocástica entre las variables analizadas?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 1,
+      "explicacion": "Cuanto más cercano a 0 sea el valor de $$\\chi^2$$, menor es la discrepancia con las frecuencias esperadas, indicando independencia.",
+      "pista": "Piense en qué significa que las frecuencias observadas sean casi iguales a las esperadas."
+    },
+    {
+      "q": "¿Es necesario calcular previamente $$\\chi^2$$ para poder obtener los coeficientes de intensidad de Cramer o Phi?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 0,
+      "explicacion": "Las fórmulas para calcular $$V$$y$$\\varphi$$contienen el valor de$$\\chi^2$$ como numerador dentro de la raíz cuadrada.",
+      "pista": "Observe los términos incluidos en las raíces cuadradas de las fórmulas de $$V$$y$$\\varphi$$."
+    },
+    {
+      "q": "Seleccione la afirmación correcta respecto a las tablas de contingencia en investigación psicológica:",
+      "opciones": [
+        "Representan únicamente variables de intervalo para conocer sus interacciones.",
+        "Permiten apreciar patrones y discrepancias entre frecuencias de categorías.",
+        "Son herramientas diseñadas para el análisis exclusivo de la covarianza lineal."
+      ],
+      "correcta": 1,
+      "explicacion": "La tabla de contingencia permite apreciar patrones y reconocer visualmente discrepancias entre las frecuencias de variables categóricas.",
+      "pista": "Enfoque su atención en la función descriptiva de estas matrices de datos."
+    },
+    {
+      "q": "Sobre el cálculo de las puntuaciones esperadas $$(e)$$, la metodología correcta dicta que:",
+      "opciones": [
+        "Se obtienen dividiendo el total de la fila por el total de la muestra directamente.",
+        "Se calculan multiplicando el total de la columna por el total de la fila entre $$N$$.",
+        "Resultan de restar la puntuación observada al total marginal correspondiente."
+      ],
+      "correcta": 1,
+      "explicacion": "La puntuación esperada para cada celda es el producto de sus totales marginales (fila y columna) dividido por el total muestral.",
+      "pista": "Recuerde la fórmula $$e_{ij} = (n_{columna} \\cdot n_{fila}) / n_{total}$$."
+    },
+    {
+      "q": "En el contexto de la prueba de independencia, un valor elevado de $$\\chi^2$$ sugiere que:",
+      "opciones": [
+        "Las variables son independientes y las discrepancias son puro azar muestral.",
+        "Existe una asociación perfecta si el valor supera la unidad en cualquier caso.",
+        "Las diferencias entre frecuencias observadas y esperadas son significativas."
+      ],
+      "correcta": 2,
+      "explicacion": "Cuanto más se aleje de 0, mayor es la probabilidad de que las variables estén relacionadas debido a las discrepancias significativas.",
+      "pista": "Relacione la magnitud de $$\\chi^2$$ con la probabilidad de relación entre variables."
+    },
+    {
+      "q": "La principal limitación técnica del estadístico $$\\chi^2$$ como medida de asociación es:",
+      "opciones": [
+        "Que requiere que las variables posean una distribución normal paramétrica.",
+        "Su incapacidad para informar sobre la intensidad o fuerza de la relación.",
+        "Que solo puede aplicarse a muestras pequeñas donde $$N$$ sea inferior a 30."
+      ],
+      "correcta": 1,
+      "explicacion": "$$\\chi^2$$ informa sobre la existencia de asociación, pero no sobre su fuerza; para ello se requieren índices acotados como Cramer.",
+      "pista": "Diferencie entre la detección de asociación y la medida de su potencia."
+    },
+    {
+      "q": "Para interpretar una asociación moderada mediante la V de Cramer, el valor debe situarse:",
+      "opciones": [
+        "En el rango comprendido entre los valores de $$0,10$$y$$0,30$$ estrictamente.",
+        "Específicamente en el intervalo definido entre $$0,30$$y$$0,50$$ inclusive.",
+        "Superando siempre el umbral de $$0,50$$ para garantizar relevancia clínica."
+      ],
+      "correcta": 1,
+      "explicacion": "Según los criterios estándar, valores entre $$0,30$$y$$0,50$$ se consideran indicativos de una asociación de magnitud moderada.",
+      "pista": "Considere la escala de interpretación de Pallant (2020) citada en el texto."
+    },
+    {
+      "q": "Al utilizar el software SPSS, la significación de la prueba $$\\chi^2$$ se comprueba mediante:",
+      "opciones": [
+        "El valor de la correlación de Pearson que aparece en la tabla de frecuencias.",
+        "La inspección del coeficiente de determinación mostrado en el gráfico lineal.",
+        "El valor de la significación asintótica bilateral que reporta el programa."
+      ],
+      "correcta": 2,
+      "explicacion": "La comprobación de la relevancia estadística en SPSS se realiza a través del valor de significación (Sig.) asociado a la prueba.",
+      "pista": "Fíjese en la columna habitual de los outputs de pruebas de hipótesis en SPSS."
+    },
+    {
+      "q": "El término 'k' en la fórmula de la V de Cramer $$V = \\sqrt{\\frac{\\chi^2}{n(k-1)}}$$ hace referencia a:",
+      "opciones": [
+        "El número total de sujetos que componen la muestra analizada en el estudio.",
+        "El número de categorías de la variable que posee menos opciones de respuesta.",
+        "La constante de proporcionalidad requerida para ajustar la varianza residual."
+      ],
+      "correcta": 1,
+      "explicacion": "En la fórmula de Cramer, $$k$$ es el número de opciones de respuesta de la variable categórica con menos categorías.",
+      "pista": "Revise los elementos de la fórmula para matrices superiores a $$2 \\times 2$$."
+    },
+    {
+      "q": "La relación entre la covarianza y el estadístico $$\\chi^2$$ radica en que:",
+      "opciones": [
+        "Ambos estadísticos poseen valores acotados que facilitan su interpretación.",
+        "La covarianza es el paso previo obligatorio para calcular la matriz de datos.",
+        "Ambos carecen de un límite superior definido, dificultando su lectura directa."
+      ],
+      "correcta": 2,
+      "explicacion": "Al igual que la covarianza, los valores de $$\\chi^2$$ no están acotados, lo que dificulta interpretar la magnitud de la relación per se.",
+      "pista": "Piense en las limitaciones comunes de ambos estadísticos de asociación."
+    },
+    {
+      "q": "Si en una tabla de contingencias todas las celdas tienen $$O_{ij} = e_{ij}$$, entonces:",
+      "opciones": [
+        "El valor de $$\\chi^2$$ será exactamente cero, indicando independencia total.",
+        "Se ha cometido un error de cálculo ya que las frecuencias deben variar.",
+        "La V de Cramer será igual a la unidad, indicando una asociación perfecta."
+      ],
+      "correcta": 0,
+      "explicacion": "Si los valores observados coinciden con los esperados, el numerador $$(O-e)^2$$es 0 para toda celda, resultando en$$\\chi^2 = 0$$.",
+      "pista": "Aplique mentalmente la fórmula de la suma de diferencias al cuadrado."
+    },
+    {
+      "q": "El coeficiente Phi de Pearson $$(\\varphi)$$ y la V de Cramer se asemejan en que:",
+      "opciones": [
+        "Ambos son aplicables únicamente a variables categóricas de tipo ordinal.",
+        "Sus valores están acotados entre $$0,00$$y$$1,00$$ para facilitar el análisis.",
+        "Requieren que el tamaño de los grupos comparados sea estrictamente idéntico."
+      ],
+      "correcta": 1,
+      "explicacion": "A diferencia de $$\\chi^2$$, tanto $$V$$como$$\\varphi$$ están acotados entre 0 y 1, lo que permite interpretar la intensidad de la asociación.",
+      "pista": "Considere las ventajas de estos índices sobre el estadístico $$\\chi^2$$ básico."
+    },
+    {
+      "q": "La 'corrección de continuidad' que muestra SPSS en las pruebas de $$\\chi^2$$ se aplica:",
+      "opciones": [
+        "En cualquier matriz de contingencia independientemente de sus dimensiones.",
+        "Exclusivamente en tablas de $$2 \\times 2$$ para mejorar la estimación del p-valor.",
+        "Solo cuando el tamaño muestral total de la investigación es superior a 1000."
+      ],
+      "correcta": 1,
+      "explicacion": "La corrección de continuidad (de Yates) es típica y específica de las tablas de contingencia de dimensiones $$2 \\times 2$$.",
+      "pista": "Observe las notas al pie de los resultados de SPSS en el manual."
+    },
+    {
+      "q": "En un diagrama de dispersión de SPSS, la línea de ajuste representa:",
+      "opciones": [
+        "La distribución teórica de las frecuencias esperadas para datos nominales.",
+        "La función lineal que minimiza los residuos entre los puntos de los datos.",
+        "El límite crítico de significación por debajo del cual no hay asociación."
+      ],
+      "correcta": 1,
+      "explicacion": "La línea de relación en el diagrama de dispersión minimiza los residuos (distancia entre cada punto y la propia línea).",
+      "pista": "Recuerde la definición de residuos en el contexto gráfico de la regresión."
+    },
+    {
+      "q": "Una asociación de valor $$0,05$$ en el coeficiente Phi de Pearson se clasifica como:",
+      "opciones": [
+        "Asociación muy débil, indicando que las variables son casi independientes.",
+        "Asociación débil pero relevante, sugiriendo un efecto clínico moderado.",
+        "Independencia absoluta, ya que el valor no alcanza el umbral de $$0,10$$."
+      ],
+      "correcta": 0,
+      "explicacion": "Valores de $$V$$o$$\\varphi$$comprendidos entre$$0,00$$y$$0,10$$ se consideran indicativos de una asociación muy débil.",
+      "pista": "Revise los rangos de interpretación propuestos en el texto del Tema 4.2."
+    },
+    {
+      "q": "Las puntuaciones marginales en una tabla de contingencia se sitúan en:",
+      "opciones": [
+        "Las celdas internas donde convergen las categorías de ambas variables.",
+        "La diagonal principal de la matriz para indicar la asociación perfecta.",
+        "Los bordes de la tabla, representando los sumatorios de filas y columnas."
+      ],
+      "correcta": 2,
+      "explicacion": "Las puntuaciones marginales son los sumatorios de los valores de cada fila y cada columna, ubicados en los totales laterales.",
+      "pista": "Piense en el significado de 'margen' en la estructura de una tabla."
+    },
+    {
+      "q": "El uso de $$\\chi^2$$ para asegurar la homogeneidad de grupos sociodemográficos:",
+      "opciones": [
+        "Es la aplicación más frecuente para validar que los grupos son comparables.",
+        "Se desaconseja si los grupos tienen el mismo número de participantes ($$n$$).",
+        "Requiere que las variables de comparación sean siempre de tipo continuo."
+      ],
+      "correcta": 0,
+      "explicacion": "Es la prueba más frecuente para comparar grupos en variables sociodemográficas y garantizar que son homogéneos.",
+      "pista": "Recuerde para qué se comparan grupos al inicio de una investigación."
+    },
+    {
+      "q": "Indique la afirmación incorrecta sobre la naturaleza del estadístico $$\\chi^2$$:",
+      "opciones": [
+        "Se basa en comparar discrepancias entre datos observados y previstos.",
+        "Proporciona una medida directa de la dirección positiva de la relación.",
+        "Su valor mínimo es $$0,00$$, lo que ocurre cuando no hay discrepancias."
+      ],
+      "correcta": 1,
+      "explicacion": "$$\\chi^2$$ no informa sobre la dirección ni sobre la intensidad de la asociación, solo sobre su existencia.",
+      "pista": "$$\\chi^2$$ trata con categorías. ¿Tienen las categorías una dirección 'positiva'?"
+    },
+    {
+      "q": "Es incorrecto afirmar que las puntuaciones esperadas $$(e)$$ en una tabla de contingencia:",
+      "opciones": [
+        "Pueden contener decimales aunque las observadas sean números enteros.",
+        "Deben ser siempre superiores a las puntuaciones observadas en la celda.",
+        "Se calculan de igual forma independientemente de las dimensiones de la tabla."
+      ],
+      "correcta": 1,
+      "explicacion": "Las puntuaciones esperadas pueden ser mayores, menores o iguales a las observadas; la relación depende de la distribución real de los datos.",
+      "pista": "Piense si el azar (independencia) siempre predice más casos de los encontrados."
+    },
+    {
+      "q": "Sobre el coeficiente de correlación de Pearson $$(r_{xy})$$, es falso que:",
+      "opciones": [
+        "Es el estadístico de elección para asociar dos variables categóricas.",
+        "Sus valores están estrictamente comprendidos en el intervalo $$[-1, 1]$$.",
+        "Se utiliza para variables cuantitativas de tipo discreto o continuo."
+      ],
+      "correcta": 0,
+      "explicacion": "Pearson $$(r_{xy})$$es para variables cuantitativas. Para categóricas se usa$$\\chi^2$$, Phi o V de Cramer.",
+      "pista": "Diferencie entre variables cuantitativas y categóricas según el inicio del tema."
+    },
+    {
+      "q": "Indique cuál de las siguientes afirmaciones sobre la V de Cramer es incorrecta:",
+      "opciones": [
+        "Puede utilizarse en matrices de dimensiones mayores a $$2 \\times 2$$, como $$4 \\times 3$$.",
+        "Su cálculo se deriva directamente de dividir $$\\chi^2$$ por el tamaño muestral.",
+        "Es un índice acotado que permite comparar estudios con distintos tamaños."
+      ],
+      "correcta": 1,
+      "explicacion": "La V de Cramer divide $$\\chi^2$$por$$n(k-1)$$, no solo por $$n$$(esta última es la fórmula de$$\\varphi^2$$).",
+      "pista": "Revise la fórmula de la V de Cramer y compárela con la de Phi."
+    },
+    {
+      "q": "Respecto a la matriz de contingencia de $$3 \\times 3$$ del ejemplo sobre suicidio, es falso que:",
+      "opciones": [
+        "Las puntuaciones esperadas fueron iguales para todas las columnas analizadas.",
+        "El tamaño total de la muestra $$(N)$$ fue de 150 participantes distribuidos en grupos.",
+        "La V de Cramer obtenida de $$0,234$$ indica una asociación de fuerza perfecta."
+      ],
+      "correcta": 2,
+      "explicacion": "Un valor de $$0,234$$se interpreta como una asociación débil, no perfecta (perfecta sería$$1,00$$).",
+      "pista": "Compare el valor $$0,234$$ con la escala de intensidad de la asociación."
+    },
+    {
+      "q": "Es incorrecto afirmar que las variables categóricas en estadística:",
+      "opciones": [
+        "Expresan sus opciones de respuesta como condiciones de los individuos.",
+        "Deben ser transformadas a números para que $$\\chi^2$$ sea un cálculo válido.",
+        "Pueden ser dicotómicas o tener múltiples opciones de respuesta posible."
+      ],
+      "correcta": 1,
+      "explicacion": "Las variables categóricas no se expresan como números sino como circunstancias; aunque se codifiquen, su naturaleza sigue siendo cualitativa.",
+      "pista": "Considere la naturaleza cualitativa de las variables mencionadas en el texto."
+    },
+    {
+      "q": "Sobre el análisis de regresión mencionado en el texto, es falso que:",
+      "opciones": [
+        "La variable dependiente es la que teóricamente genera el efecto observado.",
+        "El coeficiente de determinación sirve para medir el ajuste del modelo.",
+        "Permite predecir resultados basándose en una variable independiente previa."
+      ],
+      "correcta": 0,
+      "explicacion": "Es la variable independiente (predictora) la que genera el efecto sobre la dependiente (resultado), no al revés.",
+      "pista": "Identifique cuál es la variable que 'causa' y cuál la que 'recibe' el efecto."
+    },
+    {
+      "q": "Respecto a la prueba de Phi de Pearson $$(\\varphi)$$, indique la afirmación incorrecta:",
+      "opciones": [
+        "Se calcula mediante la raíz cuadrada del cociente entre $$\\chi^2$$y el total$$n$$.",
+        "Es el estadístico adecuado para una matriz de contingencia de tipo $$2 \\times 2$$.",
+        "Permite determinar si la asociación es positiva o negativa entre las categorías."
+      ],
+      "correcta": 2,
+      "explicacion": "Los estadísticos para variables nominales como Phi no indican dirección (positiva/negativa), solo intensidad (0 a 1).",
+      "pista": "Reflexione sobre si tiene sentido hablar de 'negatividad' en variables nominales."
+    },
+    {
+      "q": "En la interpretación de resultados, es falso afirmar que $$\\chi^2 = 16,44$$ implica:",
+      "opciones": [
+        "Que existe una discrepancia relevante entre lo observado y lo esperado.",
+        "Que la relación entre las variables es de intensidad fuerte automáticamente.",
+        "Que las variables analizadas presentan algún grado de dependencia mutua."
+      ],
+      "correcta": 1,
+      "explicacion": "$$\\chi^2$$ no informa sobre intensidad. Se requiere un índice como V de Cramer para calificar la relación como débil o fuerte.",
+      "pista": "Recuerde que $$\\chi^2$$ no está acotado y no mide intensidad por sí solo."
+    },
+    {
+      "q": "Sobre las puntuaciones observadas $$(o)$$, es incorrecto asegurar que:",
+      "opciones": [
+        "Son los datos brutos obtenidos directamente de la muestra de investigación.",
+        "Corresponden a las respuestas reales emitidas por los sujetos del estudio.",
+        "Deben coincidir siempre con los valores de las puntuaciones marginales."
+      ],
+      "correcta": 2,
+      "explicacion": "Las puntuaciones observadas son las frecuencias de cada celda; las marginales son la suma de dichas frecuencias.",
+      "pista": "Diferencie entre la frecuencia de una celda y el total de su fila o columna."
+    },
+    {
+      "q": "Es falso que el estadístico $$\\chi^2$$ pueda ser implementado en:",
+      "opciones": [
+        "Variables de intervalo o razón sin necesidad de categorización previa alguna.",
+        "Variables cualitativas dicotómicas para comparar dos grupos independientes.",
+        "Estudios de psicología para determinar la relación entre depresión y sexo."
+      ],
+      "correcta": 0,
+      "explicacion": "$$\\chi^2$$ requiere variables categóricas. Las de intervalo/razón (cuantitativas) requieren Pearson o regresión, a menos que se categoricen.",
+      "pista": "Considere la restricción de tipo de variable para esta prueba específica."
+    },
+    {
+      "q": "Indique la afirmación falsa sobre la significación estadística en el tema 4.2:",
+      "opciones": [
+        "Un valor de significación inferior a $$0,05$$ suele indicar relación relevante.",
+        "Se puede determinar consultando tablas de probabilidad para la distribución.",
+        "La significación indica la intensidad exacta de la asociación entre variables."
+      ],
+      "correcta": 2,
+      "explicacion": "La significación (valor $$p$$) indica si hay relación, pero no su intensidad. La intensidad la dan índices como Cramer o Phi.",
+      "pista": "Diferencie entre la probabilidad de error ($$p$$) y el tamaño del efecto."
+    },
+    {
+      "q": "Sobre el ejemplo de la eficacia terapéutica (A vs B), es incorrecto decir que:",
+      "opciones": [
+        "El valor de $$\\chi^2$$ obtenido ($$0,074$$) indicó que las variables eran dependientes.",
+        "Se utilizó la Phi de Pearson debido a que la matriz resultante era de $$2 \\times 2$$.",
+        "La conclusión clínica fue que ambos tratamientos tenían un efecto semejante."
+      ],
+      "correcta": 0,
+      "explicacion": "Un valor de $$0,074$$ (cercano a 0) indica precisamente que las variables son independientes, no dependientes.",
+      "pista": "Analice la magnitud de $$0,074$$ y su cercanía al valor de independencia."
+    },
+    {
+      "q": "Es falso afirmar que el sumatorio total de las puntuaciones esperadas en una tabla:",
+      "opciones": [
+        "Es siempre equivalente al sumatorio de las puntuaciones observadas total.",
+        "Debe ser igual al tamaño muestral $$N$$ de la investigación que se realiza.",
+        "Puede diferir del tamaño muestral $$N$$ si hay muchas categorías implicadas."
+      ],
+      "correcta": 2,
+      "explicacion": "La suma de las frecuencias esperadas siempre debe coincidir con la suma de las observadas y, por ende, con $$N$$.",
+      "pista": "Piense en la propiedad de conservación de la frecuencia total."
+    },
+    {
+      "q": "Indique la afirmación incorrecta sobre los residuos en estadística bivariada:",
+      "opciones": [
+        "Representan la discrepancia entre el dato real y el valor predicho por el modelo.",
+        "En $$\\chi^2$$, los residuos cuadrados son la base para calcular el valor total del índice.",
+        "Un residuo de valor cero indica que la predicción del modelo ha fallado totalmente."
+      ],
+      "correcta": 2,
+      "explicacion": "Un residuo de cero indica una predicción perfecta (el dato coincide con el modelo), no un fallo total.",
+      "pista": "¿Qué sucede cuando no hay distancia entre el punto y la línea de ajuste?"
+    },
+    {
+      "q": "En el ejemplo de la Tabla 20, con $$N=150$$, la puntuación esperada $$e_{ij}$$ para la celda correspondiente a síntomas depresivos leves e ideación suicida media es ____.",
+      "opciones": [
+        "14.00",
+        "12.65",
+        "23.35"
+      ],
+      "correcta": 0,
+      "explicacion": "Utilizando la fórmula de frecuencia esperada: $$e_{ij} = \\frac{50 \\cdot 42}{150} = \\frac{2100}{150} = 14.00$$",
+      "pista": "Use la fórmula $$e_{ij} = (n_{columna} \\cdot n_{fila}) / n_{total}$$con$$n_{col}=50$$y$$n_{fila}=42$$."
+    },
+    {
+      "q": "Si en una tabla de contingencia de $$3 \\times 3$$el valor de$$\\chi^2$$es$$16.44$$y$$N=150$$, el valor de la V de Cramer es ____.",
+      "opciones": [
+        "0.331",
+        "0.234",
+        "0.452"
+      ],
+      "correcta": 1,
+      "explicacion": "Sustituyendo los valores: $$V = \\sqrt{\\frac{16.44}{150(3-1)}} = \\sqrt{\\frac{16.44}{300}} = \\sqrt{0.0548} \\approx 0.234$$",
+      "pista": "Aplique $$V = \\sqrt{\\chi^2 / (n(k-1))}$$, donde $$k$$ es el número mínimo de categorías."
+    },
+    {
+      "q": "En el estudio de intervención sobre agorafobia (Tabla 24), la contribución individual de la celda (Intervención A $$\\times$$Éxito) al sumatorio de$$\\chi^2$$ es ____.",
+      "opciones": [
+        "0.012",
+        "0.009",
+        "0.030"
+      ],
+      "correcta": 1,
+      "explicacion": "La operación es: $$\\frac{(44.00 - 43.37)^2}{43.37} = \\frac{0.63^2}{43.37} = \\frac{0.3969}{43.37} \\approx 0.0091$$",
+      "pista": "Calcule $$(O_{ij} - e_{ij})^2 / e_{ij}$$con$$O=44.00$$y$$e=43.37$$."
+    },
+    {
+      "q": "Para una tabla de contingencia de $$4 \\times 3$$, el valor de $$k$$ a utilizar en la fórmula de la V de Cramer es ____.",
+      "opciones": [
+        "4.000",
+        "2.000",
+        "3.000"
+      ],
+      "correcta": 2,
+      "explicacion": "En una matriz de $$4 \\times 3$$, el mínimo entre filas y columnas es 3. Por tanto, $$k = 3$$",
+      "pista": "El valor $$k$$ representa el número de opciones de respuesta de la variable con menos opciones."
+    },
+    {
+      "q": "Si el coeficiente de determinación $$r_{xy}^2$$en un análisis de regresión es$$0.463$$, el porcentaje de varianza de la variable dependiente explicado por la independiente es ____.",
+      "opciones": [
+        "4.63%",
+        "46.3%",
+        "68.0%"
+      ],
+      "correcta": 1,
+      "explicacion": "El coeficiente indica la proporción de varianza. Al convertirlo a porcentaje: $$0.463 \\cdot 100 = 46.3\\%$$",
+      "pista": "Multiplique el coeficiente de determinación por 100 para obtener el porcentaje."
+    },
+    {
+      "q": "En la Tabla 23, la puntuación esperada para la condición (Intervención B $$\\times$$Fracaso) con$$n_{col}=53$$, $$n_{fila}=33$$y$$N=114$$ es ____.",
+      "opciones": [
+        "15.32",
+        "17.63",
+        "16.00"
+      ],
+      "correcta": 0,
+      "explicacion": "Calculando: $$e = 53 \\cdot \\left(\\frac{33}{114}\\right) = 53 \\cdot 0.2894 \\approx 15.32$$",
+      "pista": "Siga la fórmula $$e_{ij} = n_{col} \\cdot (n_{fila} / n_{total})$$."
+    },
+    {
+      "q": "Un valor de Phi de Pearson de $$0.026$$en una tabla$$2 \\times 2$$ indica una asociación ____.",
+      "opciones": [
+        "Moderada",
+        "Muy débil",
+        "Perfecta"
+      ],
+      "correcta": 1,
+      "explicacion": "Según los criterios de interpretación del manual, valores inferiores a $$0.10$$representan una asociación$$0.026 < 0.10 \\implies \\text{muy débil}$$",
+      "pista": "Consulte los puntos de corte: $$0.00 < \\phi < 0.10$$ es muy débil."
+    },
+    {
+      "q": "El sumatorio de los valores correspondientes a cada fila y columna en una tabla de contingencia se denomina puntuaciones ____.",
+      "opciones": [
+        "Marginales",
+        "Observadas",
+        "Esperadas"
+      ],
+      "correcta": 0,
+      "explicacion": "Las puntuaciones marginales representan el total de frecuencias para cada categoría de una variable de forma independiente.",
+      "pista": "Se encuentran en los bordes o 'márgenes' de la tabla."
+    },
+    {
+      "q": "En el análisis de SPSS de la Figura 53, el valor exacto de la significación asintótica (bilateral) para la prueba $$\\chi^2$$ de Pearson es ____.",
+      "opciones": [
+        "0.578",
+        "0.326",
+        "0.966"
+      ],
+      "correcta": 1,
+      "explicacion": "La tabla de SPSS muestra explícitamente para el Chi-cuadrado de Pearson un valor de $$p = 0.326$$",
+      "pista": "Identifique la columna 'Sig. asintótica (bilateral)' en la fila de Pearson."
+    },
+    {
+      "q": "Al calcular $$\\chi^2$$, si una celda tiene $$O=12$$y$$e=23.35$$, el numerador del término de esa celda $$(O-e)^2$$ es ____.",
+      "opciones": [
+        "128.82",
+        "11.350",
+        "131.44"
+      ],
+      "correcta": 0,
+      "explicacion": "Procedimiento: $$(12 - 23.35)^2 = (-11.35)^2 = 128.8225$$",
+      "pista": "Reste los valores y eleve la diferencia al cuadrado."
+    },
+    {
+      "q": "La prueba estadística $$\\chi^2$$ de independencia tiene como valor mínimo ____.",
+      "opciones": [
+        "-1.00",
+        "0.000",
+        "1.000"
+      ],
+      "correcta": 1,
+      "explicacion": "Dado que se suman cuadrados de diferencias, el valor nunca puede ser negativo. El mínimo es $$0.00$$.",
+      "pista": "Considere que las diferencias se elevan al cuadrado."
+    },
+    {
+      "q": "Si en SPSS la V de Cramer resulta ser $$0.074$$y el nivel de significación es$$0.326$$, la relación entre las variables es ____.",
+      "opciones": [
+        "Significativa",
+        "No relevante",
+        "Diferencial"
+      ],
+      "correcta": 1,
+      "explicacion": "Como $$0.326 > 0.05$$, no se rechaza la hipótesis de independencia, por lo que la relación es estadísticamente no relevante.",
+      "pista": "Compare la significación con el nivel $$\\alpha = 0.05$$."
+    },
+    {
+      "q": "En una matriz de $$2 \\times 2$$, si $$\\chi^2 = 0.074$$y$$N=114$$, el valor de Phi es ____.",
+      "opciones": [
+        "0.0006",
+        "0.0255",
+        "0.1240"
+      ],
+      "correcta": 1,
+      "explicacion": "Calculando la raíz: $$\\sqrt{0.074 / 114} = \\sqrt{0.000649} \\approx 0.0255$$",
+      "pista": "Utilice $$\\phi = \\sqrt{\\chi^2 / n}$$."
+    },
+    {
+      "q": "La diferencia entre la puntuación observada y la esperada en la prueba $$\\chi^2$$ permite identificar el grado de ____.",
+      "opciones": [
+        "Discrepancia",
+        "Correlación",
+        "Varianza_ex"
+      ],
+      "correcta": 0,
+      "explicacion": "La prueba se basa en analizar las discrepancias entre lo que ocurre en la muestra y lo que se esperaría por azar.",
+      "pista": "Palabra clave usada en el manual para referirse a la distancia entre $$O$$y$$e$$."
+    },
+    {
+      "q": "Según el gráfico de la Figura 52, la ecuación de la recta de regresión que relaciona estrés (X) y depresión (Y) es ____.",
+      "opciones": [
+        "y=-1.78+3.85x",
+        "y=1.78-3.85x",
+        "y=3.85-1.78x"
+      ],
+      "correcta": 0,
+      "explicacion": "El output de SPSS indica directamente la ecuación: $$y = -1.78 + 3.85x$$",
+      "pista": "Lea la etiqueta flotante en el diagrama de dispersión."
+    },
+    {
+      "q": "Cuando se comparan dos variables dicotómicas, el estadístico de intensidad preferible es ____.",
+      "opciones": [
+        "V_de_Cramer",
+        "Phi_Pearson",
+        "Ji_Cuadrado"
+      ],
+      "correcta": 1,
+      "explicacion": "Aunque la V de Cramer es general, para tablas $$2 \\times 2$$ se utiliza tradicionalmente el coeficiente Phi de Pearson.",
+      "pista": "Específico para matrices $$2 \\times 2$$."
+    },
+    {
+      "q": "Si el valor de $$k$$en la V de Cramer fuera$$1$$, el denominador de la fórmula se anularía, por ello $$k$$ siempre se define como ____.",
+      "opciones": [
+        "Min(r,c)",
+        "Max(r,c)",
+        "Sum(r,c)"
+      ],
+      "correcta": 0,
+      "explicacion": "Para evitar divisiones por cero y normalizar, $$k$$ debe ser el mínimo de las categorías de ambas variables.",
+      "pista": "Es el número menor entre filas (r) y columnas (c)."
+    },
+    {
+      "q": "En el cálculo de la V de Cramer para el ejemplo de depresión ($$3 \\times 3$$, $$\\chi^2=16.44$$), el valor intermedio antes de la raíz cuadrada es ____.",
+      "opciones": [
+        "0.0548",
+        "0.1096",
+        "0.0326"
+      ],
+      "correcta": 0,
+      "explicacion": "La operación intermedia es: $$\\frac{16.44}{150 \\cdot (3-1)} = \\frac{16.44}{300} = 0.0548$$",
+      "pista": "Divida $$16.44$$entre$$300$$."
+    },
+    {
+      "q": "La limitación principal de $$\\chi^2$$ es que solo informa sobre la existencia de asociación, pero no sobre su ____.",
+      "opciones": [
+        "Dirección",
+        "Frecuencia",
+        "Intensidad"
+      ],
+      "correcta": 2,
+      "explicacion": "Chi-cuadrado detecta dependencia, pero para conocer la fuerza o intensidad se requieren índices acotados.",
+      "pista": "Razón por la cual necesitamos V o Phi."
+    },
+    {
+      "q": "El estadístico $$\\chi^2$$ se fundamenta en comparar las puntuaciones obtenidas en el estudio con las puntuaciones ____.",
+      "opciones": [
+        "Teóricas",
+        "Esperadas",
+        "Marginales"
+      ],
+      "correcta": 1,
+      "explicacion": "La comparación se realiza entre los datos reales (observados) y los modelos de independencia (esperados).",
+      "pista": "Aquellas que se obtendrían si no hubiera relación."
+    },
+    {
+      "q": "Respecto al coeficiente de determinación ($$r^2$$), es correcto afirmar que:",
+      "opciones": [
+        "Se emplea en análisis de regresión",
+        "Indica el porcentaje de varianza",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "Ambas afirmaciones son definiciones correctas proporcionadas en el texto sobre el coeficiente de determinación.",
+      "pista": "Revise el primer apartado del TEMA 4.2."
+    },
+    {
+      "q": "Sobre las tablas de contingencia, se puede asegurar que:",
+      "opciones": [
+        "Representan frecuencias de variables",
+        "Tienen forma de matriz (filas/cols)",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "El texto define las tablas de contingencia como matrices que cruzan categorías y muestran frecuencias.",
+      "pista": "Consulte la definición del apartado 4.3.1."
+    },
+    {
+      "q": "Las puntuaciones esperadas ($$e_{ij}$$) se caracterizan por:",
+      "opciones": [
+        "Ser previsibles si no hay relación",
+        "Su cálculo depende de marginales",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "Son valores teóricos bajo el supuesto de independencia y se calculan a partir de los totales marginales.",
+      "pista": "Revise el concepto de independencia estadística."
+    },
+    {
+      "q": "La prueba $$\\chi^2$$ de independencia:",
+      "opciones": [
+        "Es sensible al tamaño de la muestra",
+        "Requiere variables categóricas",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "Es la prueba estándar para asociación entre variables categóricas y su valor escala con el tamaño muestral.",
+      "pista": "Analice las condiciones de aplicación del estadístico."
+    },
+    {
+      "q": "Sobre la interpretación de V de Cramer y Phi:",
+      "opciones": [
+        "Sus valores oscilan entre 0 y 1",
+        "0.50 es una asociación fuerte",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "Son índices acotados diseñados para facilitar la interpretación de la magnitud del efecto.",
+      "pista": "Consulte la Figura 50 del manual."
+    },
+    {
+      "q": "Al usar SPSS para el análisis de asociación:",
+      "opciones": [
+        "Se obtiene el nivel de significación",
+        "Genera tablas de contingencia",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "SPSS automatiza el cálculo de frecuencias, el estadístico de contraste y su $$p$$-valor asociado.",
+      "pista": "Observe los outputs de las figuras 51 y 53."
+    },
+    {
+      "q": "La elección entre Phi y V de Cramer depende de:",
+      "opciones": [
+        "Las dimensiones de la matriz",
+        "Si las variables son dicotómicas",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "Phi se reserva para $$2 \\times 2$$, mientras que V es la generalización para dimensiones mayores.",
+      "pista": "Diferencia técnica entre matrices $$2 \\times 2$$ y superiores."
+    },
+    {
+      "q": "En el contexto de la investigación en psicología:",
+      "opciones": [
+        "Chi² valida homogeneidad grupal",
+        "Permite analizar datos cualitativos",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "Se menciona explícitamente su uso para garantizar homogeneidad sociodemográfica y analizar categorías.",
+      "pista": "Revise el párrafo introductorio del apartado 4.3."
+    },
+    {
+      "q": "Un diagrama de dispersión en SPSS permite:",
+      "opciones": [
+        "Visualizar la relación lineal",
+        "Identificar residuos de los puntos",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "El diagrama es la herramienta gráfica fundamental para inspeccionar la relación entre variables cuantitativas.",
+      "pista": "Revise el apartado 4.4.2."
+    },
+    {
+      "q": "Para que el cálculo de $$\\chi^2$$ sea válido según el manual:",
+      "opciones": [
+        "Debe haber frecuencias esperadas",
+        "Se requiere una muestra suficiente",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "La validez del estadístico depende de tener una estructura de datos adecuada y un tamaño muestral representativo.",
+      "pista": "Revise el ejemplo de ideación suicida ($$N=150$$)."
+    },
+    {
+      "q": "Si un investigador obtiene un valor de $$\\chi^2 = -2.5$$, esto significa que:",
+      "opciones": [
+        "Hay una relación negativa fuerte",
+        "Los datos son totalmente opuestos",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "Un valor de Chi-cuadrado no puede ser negativo porque los numeradores están elevados al cuadrado.",
+      "pista": "Piense en la fórmula: $$\\sum (O-e)^2 / e$$."
+    },
+    {
+      "q": "Si el valor de significación (p) en SPSS es $$0.000$$, podemos concluir que:",
+      "opciones": [
+        "Las variables son independientes",
+        "No existe relación estadística",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "Un valor $$p < 0.05$$ indica que las variables están relacionadas, no que sean independientes.",
+      "pista": "Compare con el umbral habitual de $$0.05$$."
+    },
+    {
+      "q": "El coeficiente Phi de Pearson puede tomar valores superiores a $$1.0$$ cuando:",
+      "opciones": [
+        "La muestra es muy grande",
+        "La relación es extremadamente fuerte",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "Phi y V de Cramer están diseñados para estar acotados entre $$0$$y$$1$$.",
+      "pista": "Revise el rango de los coeficientes acotados."
+    },
+    {
+      "q": "La V de Cramer se aplica exclusivamente en tablas de $$2 \\times 2$$ porque:",
+      "opciones": [
+        "Es más precisa que Phi",
+        "Corrige el exceso de categorías",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "Es al revés: la V de Cramer es para tablas mayores de $$2 \\times 2$$, no exclusiva de estas.",
+      "pista": "Recuerde cuál es el ámbito de aplicación de Phi."
+    },
+    {
+      "q": "Una puntuación esperada ($$e_{ij}$$) puede ser negativa si:",
+      "opciones": [
+        "La frecuencia observada es cero",
+        "La relación es inversa",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "Las frecuencias (conteo de personas) y sus totales marginales son siempre positivos o cero; nunca negativos.",
+      "pista": "Mire la fórmula: $$(n_{col} \\cdot n_{fila}) / N$$."
+    },
+    {
+      "q": "La prueba $$\\chi^2$$ permite determinar la causalidad entre dos variables porque:",
+      "opciones": [
+        "Mide la varianza explicada",
+        "Es una prueba de regresión",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "Chi-cuadrado mide asociación o independencia, pero por sí sola no establece relaciones causales.",
+      "pista": "Diferencia entre asociación y causalidad."
+    },
+    {
+      "q": "El coeficiente de determinación ($$r^2$$) se utiliza para variables categóricas cuando:",
+      "opciones": [
+        "La matriz es de $$2 \\times 2$$",
+        "No se puede calcular Chi²",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "El coeficiente de determinación se utiliza para variables cuantitativas en el marco de la regresión.",
+      "pista": "Revise para qué tipo de variables se usa el $$r^2$$."
+    },
+    {
+      "q": "En SPSS, una 'significación asintótica' de $$0.850$$ implica que:",
+      "opciones": [
+        "Hay una relación perfecta",
+        "La relación es fuerte",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "Un valor de $$0.850$$ indica una altísima probabilidad de que la relación sea debida al azar (independencia).",
+      "pista": "Compare con el valor crítico de $$0.05$$."
+    },
+    {
+      "q": "Al calcular $$e_{ij}$$, si el tamaño muestral $$N$$ se duplica manteniendo las proporciones marginales:",
+      "opciones": [
+        "$$e_{ij}$$ se reduce a la mitad",
+        "$$e_{ij}$$ permanece constante",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "Si $$N$$se duplica, los marginales también lo harían, lo que resultaría en que$$e_{ij}$$ también se duplique.",
+      "pista": "Analice la fórmula: $$(n_{col} \\cdot n_{fila}) / N$$."
+    },
+    {
+      "q": "Si en la Tabla 22 todas las puntuaciones observadas fueran iguales a las esperadas:",
+      "opciones": [
+        "Chi² sería igual a 1",
+        "La relación sería moderada",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "Si $$O = e$$, entonces $$\\chi^2 = 0$$, lo que indica una independencia absoluta o ausencia de relación.",
+      "pista": "Piense en el valor de $$(O-e)$$si$$O=e$$."
+    }
+  ],
+  "laboratorio": [
+    {
+      "id": 1,
+      "titulo": "Eficacia de Intervenciones en Fobia Social",
+      "escenario": "Un equipo clínico evalúa dos terapias (TCC vs. Gestalt) y su éxito (Éxito/Fracaso). Datos: TCC (Éxito: 45, Fracaso: 15), Gestalt (Éxito: 30, Fracaso: 30). Fórmula de frecuencia esperada: $$e_{ij} = \\frac{n_{fila} \\cdot n_{columna}}{n_{total}}$$.",
+      "preguntas": [
+        {
+          "id": "p1a",
+          "label": "a)",
+          "enunciado": "¿Cuál es el tamaño total de la muestra (N)?",
+          "respuesta": 120,
+          "tolerancia": 0,
+          "pista": "Sumamos todas las frecuencias: $$45 + 15 + 30 + 30 = 120$$."
+        },
+        {
+          "id": "p1b",
+          "label": "b)",
+          "enunciado": "Calcula la frecuencia esperada ($$e$$) para la celda TCC-Éxito.",
+          "respuesta": 37.5,
+          "tolerancia": 0.1,
+          "pista": "Total TCC = 60. Total Éxito = 75. $$e = \\frac{60 \\cdot 75}{120} = 37.5$$."
+        },
+        {
+          "id": "p1c",
+          "label": "c)",
+          "enunciado": "Calcula el valor del estadístico Chi-cuadrado ($$\\chi^2$$) para este estudio.",
+          "respuesta": 7.5,
+          "tolerancia": 0.1,
+          "pista": "$$\\chi^2 = \\sum \\frac{(O-e)^2}{e}$$. Calculando cada celda: $$\\frac{(45-37.5)^2}{37.5} + \\frac{(15-22.5)^2}{22.5} + \\frac{(30-37.5)^2}{37.5} + \\frac{(30-22.5)^2}{22.5} = 1.5 + 2.5 + 1.5 + 2.5 = 7.5$$."
+        },
+        {
+          "id": "p1d",
+          "label": "d)",
+          "enunciado": "Calcula el coeficiente Phi ($$\\phi$$) para determinar la intensidad de la asociación.",
+          "respuesta": 0.25,
+          "tolerancia": 0.01,
+          "pista": "$$\\phi = \\sqrt{\\frac{\\chi^2}{n}} = \\sqrt{\\frac{7.5}{120}} = \\sqrt{0.0625} = 0.25$$."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Migraña y Género (Análisis SPSS)",
+      "escenario": "Basado en los datos del manual (pág. 110): Hombre (No Migraña: 7, Sí: 19), Mujer (No: 55, Sí: 94). N = 175.",
+      "preguntas": [
+        {
+          "id": "p2a",
+          "label": "a)",
+          "enunciado": "Calcula la frecuencia marginal total de personas con Migraña.",
+          "respuesta": 113,
+          "tolerancia": 0,
+          "pista": "$$19 + 94 = 113$$."
+        },
+        {
+          "id": "p2b",
+          "label": "b)",
+          "enunciado": "¿Cuál es la frecuencia esperada para Hombres con Migraña?",
+          "respuesta": 16.79,
+          "tolerancia": 0.1,
+          "pista": "Total Hombres = 26. Total Migraña = 113. $$e = \\frac{26 \\cdot 113}{175} = 16.788$$."
+        },
+        {
+          "id": "p2c",
+          "label": "c)",
+          "enunciado": "Si el valor de Chi-cuadrado es 0.966, calcula el valor de Phi.",
+          "respuesta": 0.074,
+          "tolerancia": 0.005,
+          "pista": "$$\\phi = \\sqrt{\\frac{0.966}{175}} = 0.0742$$."
+        },
+        {
+          "id": "p2d",
+          "label": "d)",
+          "enunciado": "Según la escala del manual, ¿cómo se clasifica esta asociación (0.00 a 0.10)?",
+          "respuesta": 0.07,
+          "tolerancia": 0.1,
+          "pista": "Se clasifica como asociación muy débil (menor a 0.10)."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Depresión e Ideación Suicida ($$3\\times3$$)",
+      "escenario": "Estudio con 150 sujetos. Depresión (Leve, Mod, Sev) e Ideación (Baja, Media, Alta). Total por nivel de depresión: 50 cada uno. Totales Ideación: Baja (70), Media (42), Alta (38).",
+      "preguntas": [
+        {
+          "id": "p3a",
+          "label": "a)",
+          "enunciado": "Calcula la frecuencia esperada para la celda Depresión Leve e Ideación Media.",
+          "respuesta": 14,
+          "tolerancia": 0,
+          "pista": "$$e = \\frac{50 \\cdot 42}{150} = 14$$."
+        },
+        {
+          "id": "p3b",
+          "label": "b)",
+          "enunciado": "Si la frecuencia observada en Leve-Baja es 31, ¿cuál es la diferencia $$(O - e)$$sabiendo que$$e$$ para Baja es 23.35?",
+          "respuesta": 7.65,
+          "tolerancia": 0.01,
+          "pista": "$$31 - 23.35 = 7.65$$."
+        },
+        {
+          "id": "p3c",
+          "label": "c)",
+          "enunciado": "Con un Chi-cuadrado de 16.44 y $$k=3$$, calcula la V de Cramer.",
+          "respuesta": 0.234,
+          "tolerancia": 0.005,
+          "pista": "$$V = \\sqrt{\\frac{16.44}{150(3-1)}} = \\sqrt{\\frac{16.44}{300}} = 0.234$$."
+        },
+        {
+          "id": "p3d",
+          "label": "d)",
+          "enunciado": "El valor obtenido 0.234 indica una asociación de qué tipo según el manual?",
+          "respuesta": 0.23,
+          "tolerancia": 0.1,
+          "pista": "Indica una asociación débil (entre 0.10 y 0.30)."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Nivel de Estrés y Tipo de Empleo",
+      "escenario": "Se cruzan Empleo (Manual, Administrativo, Directivo) con Estrés (Sí, No). Muestra: Manual (Sí: 60, No: 40), Adm (Sí: 30, No: 70), Dir (Sí: 40, No: 10).",
+      "preguntas": [
+        {
+          "id": "p4a",
+          "label": "a)",
+          "enunciado": "¿Cuál es el tamaño muestral N?",
+          "respuesta": 250,
+          "tolerancia": 0,
+          "pista": "$$(60+40) + (30+70) + (40+10) = 250$$."
+        },
+        {
+          "id": "p4b",
+          "label": "b)",
+          "enunciado": "Calcula el total marginal de la categoría 'Estrés: Sí'.",
+          "respuesta": 130,
+          "tolerancia": 0,
+          "pista": "$$60 + 30 + 40 = 130$$."
+        },
+        {
+          "id": "p4c",
+          "label": "c)",
+          "enunciado": "Calcula la frecuencia esperada para Directivos con Estrés.",
+          "respuesta": 26,
+          "tolerancia": 0,
+          "pista": "Total Dir = 50. Total Sí = 130. $$e = \\frac{50 \\cdot 130}{250} = 26$$."
+        },
+        {
+          "id": "p4d",
+          "label": "d)",
+          "enunciado": "Calcula el componente de Chi-cuadrado para la celda Directivo-Sí ($$O=40, e=26$$).",
+          "respuesta": 7.54,
+          "tolerancia": 0.02,
+          "pista": "$$\\frac{(40-26)^2}{26} = \\frac{14^2}{26} = \\frac{196}{26} = 7.538$$."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Adherencia al Tratamiento y Apoyo Social",
+      "escenario": "Variables: Apoyo (Alto, Bajo) y Adherencia (Sí, No). Tabla: Alto Apoyo (Sí: 80, No: 20), Bajo Apoyo (Sí: 40, No: 60).",
+      "preguntas": [
+        {
+          "id": "p5a",
+          "label": "a)",
+          "enunciado": "Calcula la frecuencia esperada para Bajo Apoyo y Adherencia Sí.",
+          "respuesta": 60,
+          "tolerancia": 0,
+          "pista": "Total Bajo = 100. Total Sí = 120. N = 200. $$e = \\frac{100 \\cdot 120}{200} = 60$$."
+        },
+        {
+          "id": "p5b",
+          "label": "b)",
+          "enunciado": "Calcula el valor de Chi-cuadrado ($$\\chi^2$$).",
+          "respuesta": 33.33,
+          "tolerancia": 0.1,
+          "pista": "$$e_{as}=60, e_{an}=40, e_{bs}=60, e_{bn}=40$$. $$\\chi^2 = \\frac{(80-60)^2}{60} + \\frac{(20-40)^2}{40} + \\frac{(40-60)^2}{60} + \\frac{(60-40)^2}{40} = 6.66 + 10 + 6.66 + 10 = 33.33$$."
+        },
+        {
+          "id": "p5c",
+          "label": "c)",
+          "enunciado": "Calcula el coeficiente Phi.",
+          "respuesta": 0.408,
+          "tolerancia": 0.01,
+          "pista": "$$\\phi = \\sqrt{\\frac{33.33}{200}} = \\sqrt{0.166} = 0.408$$."
+        },
+        {
+          "id": "p5d",
+          "label": "d)",
+          "enunciado": "Según el manual, ¿es una asociación fuerte, moderada o débil?",
+          "respuesta": 0.41,
+          "tolerancia": 0.1,
+          "pista": "Moderada (está entre 0.30 y 0.50)."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Trastorno de Pánico y Terapia (Manual p. 107)",
+      "escenario": "Intervención A vs B. Éxito (A: 44, B: 37), Fracaso (A: 17, B: 16). N = 114.",
+      "preguntas": [
+        {
+          "id": "p6a",
+          "label": "a)",
+          "enunciado": "Sabiendo que el total de éxitos es 81, calcula la proporción de éxito total.",
+          "respuesta": 0.71,
+          "tolerancia": 0.01,
+          "pista": "$$\\frac{81}{114} = 0.7105$$."
+        },
+        {
+          "id": "p6b",
+          "label": "b)",
+          "enunciado": "Calcula la frecuencia esperada para Intervención B y Éxito.",
+          "respuesta": 37.68,
+          "tolerancia": 0.05,
+          "pista": "Total B = 53. Total Éxito = 81. $$e = \\frac{53 \\cdot 81}{114} = 37.68$$."
+        },
+        {
+          "id": "p6c",
+          "label": "c)",
+          "enunciado": "Si $$\\chi^2 = 0.074$$, calcula la Phi de Pearson.",
+          "respuesta": 0.026,
+          "tolerancia": 0.005,
+          "pista": "$$\\phi = \\sqrt{\\frac{0.074}{114}} = 0.0255$$."
+        },
+        {
+          "id": "p6d",
+          "label": "d)",
+          "enunciado": "¿Indica este valor que una terapia es superior a otra?",
+          "respuesta": 0,
+          "tolerancia": 0.1,
+          "pista": "No, el valor 0 indica independencia o relación insignificante."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Nivel de Ansiedad y Rendimiento",
+      "escenario": "Ansiedad (Baja, Alta) y Rendimiento (Bajo, Medio, Alto). Tabla: Baja Ans (B: 10, M: 40, A: 50), Alta Ans (B: 40, M: 40, A: 20).",
+      "preguntas": [
+        {
+          "id": "p7a",
+          "label": "a)",
+          "enunciado": "Calcula el total de la muestra N.",
+          "respuesta": 200,
+          "tolerancia": 0,
+          "pista": "$$10+40+50 + 40+40+20 = 200$$."
+        },
+        {
+          "id": "p7b",
+          "label": "b)",
+          "enunciado": "Calcula la frecuencia esperada para Alta Ansiedad y Rendimiento Bajo.",
+          "respuesta": 25,
+          "tolerancia": 0,
+          "pista": "Total Alta = 100. Total Rend.Bajo = 50. $$e = \\frac{100 \\cdot 50}{200} = 25$$."
+        },
+        {
+          "id": "p7c",
+          "label": "c)",
+          "enunciado": "Si el Chi-cuadrado total es 30, calcula la V de Cramer (k=2).",
+          "respuesta": 0.387,
+          "tolerancia": 0.01,
+          "pista": "k es el mínimo de filas y columnas (2 y 3). $$V = \\sqrt{\\frac{30}{200(2-1)}} = \\sqrt{0.15} = 0.387$$."
+        },
+        {
+          "id": "p7d",
+          "label": "d)",
+          "enunciado": "Interpretación de V = 0.387.",
+          "respuesta": 0.39,
+          "tolerancia": 0.1,
+          "pista": "Asociación moderada (entre 0.30 y 0.50)."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titulo": "Género y Preferencia de Tratamiento",
+      "escenario": "Hombre/Mujer y Terapia (Presencial/Online). Datos: Hombres (P: 20, O: 30), Mujeres (P: 60, O: 40).",
+      "preguntas": [
+        {
+          "id": "p8a",
+          "label": "a)",
+          "enunciado": "¿Cuál es la frecuencia marginal de 'Presencial'?",
+          "respuesta": 80,
+          "tolerancia": 0,
+          "pista": "$$20 + 60 = 80$$."
+        },
+        {
+          "id": "p8b",
+          "label": "b)",
+          "enunciado": "Calcula la frecuencia esperada para Hombres-Presencial (N=150).",
+          "respuesta": 26.67,
+          "tolerancia": 0.1,
+          "pista": "Total H = 50. Total P = 80. $$e = \\frac{50 \\cdot 80}{150} = 26.67$$."
+        },
+        {
+          "id": "p8c",
+          "label": "c)",
+          "enunciado": "Calcula el valor de $$\\chi^2$$.",
+          "respuesta": 5,
+          "tolerancia": 0.1,
+          "pista": "$$e_{hp}=26.6, e_{ho}=23.3, e_{mp}=53.3, e_{mo}=46.6$$. Calculando: $$\\frac{(20-26.6)^2}{26.6} + \\frac{(30-23.3)^2}{23.3} + ... \\approx 5.0$$."
+        },
+        {
+          "id": "p8d",
+          "label": "d)",
+          "enunciado": "Calcula Phi para este estudio.",
+          "respuesta": 0.18,
+          "tolerancia": 0.05,
+          "pista": "$$\\phi = \\sqrt{\\frac{5}{150}} = 0.182$$."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "titulo": "Frecuencia de Recaídas por Medicamento",
+      "escenario": "Med A, Med B, Med C. Recaída (Sí/No). Muestra de 300. A (Sí: 20, No: 80), B (Sí: 40, No: 60), C (Sí: 10, No: 90).",
+      "preguntas": [
+        {
+          "id": "p9a",
+          "label": "a)",
+          "enunciado": "Calcula el total marginal de 'Recaída: Sí'.",
+          "respuesta": 70,
+          "tolerancia": 0,
+          "pista": "$$20 + 40 + 10 = 70$$."
+        },
+        {
+          "id": "p9b",
+          "label": "b)",
+          "enunciado": "Calcula la frecuencia esperada para el Med B y Recaída Sí.",
+          "respuesta": 23.33,
+          "tolerancia": 0.1,
+          "pista": "Total B = 100. Total Sí = 70. $$e = \\frac{100 \\cdot 70}{300} = 23.33$$."
+        },
+        {
+          "id": "p9c",
+          "label": "c)",
+          "enunciado": "Si el $$\\chi^2$$ resultante es 24.5, calcula la V de Cramer.",
+          "respuesta": 0.286,
+          "tolerancia": 0.01,
+          "pista": "$$V = \\sqrt{\\frac{24.5}{300(2-1)}} = 0.2857$$."
+        },
+        {
+          "id": "p9d",
+          "label": "d)",
+          "enunciado": "¿Cómo calificarías la intensidad de la relación (0 a 1)?",
+          "respuesta": 0.29,
+          "tolerancia": 0.1,
+          "pista": "Relación débil (cercana al límite de moderada 0.30)."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "titulo": "Burnout y Años de Experiencia",
+      "escenario": "Exp (Baja, Media, Alta) y Burnout (Sí, No). Tabla: Baja (Sí: 50, No: 50), Media (Sí: 30, No: 70), Alta (Sí: 20, No: 80).",
+      "preguntas": [
+        {
+          "id": "p10a",
+          "label": "a)",
+          "enunciado": "¿Cuál es la frecuencia marginal de 'Burnout: Sí'?",
+          "respuesta": 100,
+          "tolerancia": 0,
+          "pista": "$$50 + 30 + 20 = 100$$."
+        },
+        {
+          "id": "p10b",
+          "label": "b)",
+          "enunciado": "Calcula la frecuencia esperada para Exp Media con Burnout Sí (N=300).",
+          "respuesta": 33.33,
+          "tolerancia": 0.1,
+          "pista": "Total Media = 100. Total Sí = 100. $$e = \\frac{100 \\cdot 100}{300} = 33.33$$."
+        },
+        {
+          "id": "p10c",
+          "label": "c)",
+          "enunciado": "Si el $$\\chi^2$$ es 20, calcula la V de Cramer.",
+          "respuesta": 0.258,
+          "tolerancia": 0.01,
+          "pista": "$$V = \\sqrt{\\frac{20}{300(1)}} = 0.258$$."
+        },
+        {
+          "id": "p10d",
+          "label": "d)",
+          "enunciado": "¿Qué indica un valor de Chi-cuadrado igual a 0?",
+          "respuesta": 0,
+          "tolerancia": 0,
+          "pista": "Indica independencia absoluta entre las variables."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "titulo": "Uso de Redes Sociales y Soledad",
+      "escenario": "Uso (Bajo, Medio, Alto) y Soledad (Sí, No). Muestra N=180. Distribución uniforme en Uso (60 por categoría). Totales Soledad: Sí (90), No (90).",
+      "preguntas": [
+        {
+          "id": "p11a",
+          "label": "a)",
+          "enunciado": "Calcula la frecuencia esperada para cualquier celda.",
+          "respuesta": 30,
+          "tolerancia": 0,
+          "pista": "$$e = \\frac{60 \\cdot 90}{180} = 30$$."
+        },
+        {
+          "id": "p11b",
+          "label": "b)",
+          "enunciado": "Si en 'Uso Alto-Soledad Sí' hay 45 personas, calcula su componente de $$\\chi^2$$.",
+          "respuesta": 7.5,
+          "tolerancia": 0.1,
+          "pista": "$$\\frac{(45-30)^2}{30} = \\frac{225}{30} = 7.5$$."
+        },
+        {
+          "id": "p11c",
+          "label": "c)",
+          "enunciado": "Si el $$\\chi^2$$ total es 15, calcula la V de Cramer.",
+          "respuesta": 0.288,
+          "tolerancia": 0.01,
+          "pista": "$$V = \\sqrt{\\frac{15}{180(1)}} = 0.288$$."
+        },
+        {
+          "id": "p11d",
+          "label": "d)",
+          "enunciado": "¿Cómo se interpreta este valor 0.288?",
+          "respuesta": 0.29,
+          "tolerancia": 0.1,
+          "pista": "Asociación débil."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "titulo": "Tipo de Apego y Estilo de Afrontamiento",
+      "escenario": "Apego (Seguro, Ansioso, Evitativo) y Afrontamiento (Activo, Pasivo). N = 240. Apego: Seguro (100), Ansioso (70), Evitativo (70). Afrontamiento: Activo (120), Pasivo (120).",
+      "preguntas": [
+        {
+          "id": "p12a",
+          "label": "a)",
+          "enunciado": "Calcula la frecuencia esperada para Apego Seguro y Afrontamiento Activo.",
+          "respuesta": 50,
+          "tolerancia": 0,
+          "pista": "$$e = \\frac{100 \\cdot 120}{240} = 50$$."
+        },
+        {
+          "id": "p12b",
+          "label": "b)",
+          "enunciado": "Calcula la frecuencia esperada para Apego Ansioso y Afrontamiento Pasivo.",
+          "respuesta": 35,
+          "tolerancia": 0,
+          "pista": "$$e = \\frac{70 \\cdot 120}{240} = 35$$."
+        },
+        {
+          "id": "p12c",
+          "label": "c)",
+          "enunciado": "Si $$\\chi^2 = 12$$, calcula la V de Cramer.",
+          "respuesta": 0.223,
+          "tolerancia": 0.01,
+          "pista": "$$V = \\sqrt{\\frac{12}{240(1)}} = 0.2236$$."
+        },
+        {
+          "id": "p12d",
+          "label": "d)",
+          "enunciado": "¿Es la asociación significativa si el valor crítico fuera 5.99?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "Sí (1), porque 12 > 5.99."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "titulo": "Clima Laboral y Productividad",
+      "escenario": "Clima (Bueno, Malo) y Productividad (Alta, Baja). Datos: Bueno (Alta: 70, Baja: 30), Malo (Alta: 30, Baja: 70).",
+      "preguntas": [
+        {
+          "id": "p13a",
+          "label": "a)",
+          "enunciado": "Calcula el total de la muestra N.",
+          "respuesta": 200,
+          "tolerancia": 0,
+          "pista": "$$70+30+30+70 = 200$$."
+        },
+        {
+          "id": "p13b",
+          "label": "b)",
+          "enunciado": "Calcula la frecuencia esperada para Bueno-Alta.",
+          "respuesta": 50,
+          "tolerancia": 0,
+          "pista": "$$e = \\frac{100 \\cdot 100}{200} = 50$$."
+        },
+        {
+          "id": "p13c",
+          "label": "c)",
+          "enunciado": "Calcula el valor de $$\\chi^2$$.",
+          "respuesta": 32,
+          "tolerancia": 0,
+          "pista": "$$\\frac{(70-50)^2}{50} \\cdot 4 = 8 \\cdot 4 = 32$$."
+        },
+        {
+          "id": "p13d",
+          "label": "d)",
+          "enunciado": "Calcula el valor de Phi.",
+          "respuesta": 0.4,
+          "tolerancia": 0,
+          "pista": "$$\\phi = \\sqrt{\\frac{32}{200}} = \\sqrt{0.16} = 0.4$$."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "titulo": "Consumo de Alcohol y Riesgo de Accidente",
+      "escenario": "Consumo (No, Moderado, Alto) y Accidente (Sí, No). N = 600. Consumo: No (300), Mod (200), Alto (100). Totales Accidente: Sí (60), No (540).",
+      "preguntas": [
+        {
+          "id": "p14a",
+          "label": "a)",
+          "enunciado": "Calcula la frecuencia esperada para Consumo Alto y Accidente Sí.",
+          "respuesta": 10,
+          "tolerancia": 0,
+          "pista": "$$e = \\frac{100 \\cdot 60}{600} = 10$$."
+        },
+        {
+          "id": "p14b",
+          "label": "b)",
+          "enunciado": "Si observamos 30 accidentes en Consumo Alto, ¿cuál es el componente de $$\\chi^2$$?",
+          "respuesta": 40,
+          "tolerancia": 0,
+          "pista": "$$\\frac{(30-10)^2}{10} = 400 / 10 = 40$$."
+        },
+        {
+          "id": "p14c",
+          "label": "c)",
+          "enunciado": "Calcula la frecuencia esperada para Consumo No y Accidente Sí.",
+          "respuesta": 30,
+          "tolerancia": 0,
+          "pista": "$$e = \\frac{300 \\cdot 60}{600} = 30$$."
+        },
+        {
+          "id": "p14d",
+          "label": "d)",
+          "enunciado": "Si el $$\\chi^2$$ total fuera 60, calcula la V de Cramer.",
+          "respuesta": 0.316,
+          "tolerancia": 0.01,
+          "pista": "$$V = \\sqrt{\\frac{60}{600(1)}} = 0.316$$."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "titulo": "Técnica de Estudio y Aprobado",
+      "escenario": "Técnica (A, B) y Resultado (Apto, No Apto). Muestra: A (Apto: 40, No: 10), B (Apto: 20, No: 30).",
+      "preguntas": [
+        {
+          "id": "p15a",
+          "label": "a)",
+          "enunciado": "Calcula el total marginal de Aptos.",
+          "respuesta": 60,
+          "tolerancia": 0,
+          "pista": "$$40 + 20 = 60$$."
+        },
+        {
+          "id": "p15b",
+          "label": "b)",
+          "enunciado": "Calcula la frecuencia esperada para Técnica B-Apto (N=100).",
+          "respuesta": 30,
+          "tolerancia": 0,
+          "pista": "$$e = \\frac{50 \\cdot 60}{100} = 30$$."
+        },
+        {
+          "id": "p15c",
+          "label": "c)",
+          "enunciado": "Calcula el Chi-cuadrado.",
+          "respuesta": 16.67,
+          "tolerancia": 0.1,
+          "pista": "$$e_{aa}=30, e_{an}=20, e_{ba}=30, e_{bn}=20$$. $$\\chi^2 = 3.33 + 5 + 3.33 + 5 = 16.66$$."
+        },
+        {
+          "id": "p15d",
+          "label": "d)",
+          "enunciado": "Calcula el coeficiente Phi.",
+          "respuesta": 0.408,
+          "tolerancia": 0.01,
+          "pista": "$$\\phi = \\sqrt{16.67 / 100} = 0.408$$."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "titulo": "Nivel Socioeconómico y Salud Mental",
+      "escenario": "NSE (Bajo, Medio, Alto) y Salud (Buena, Regular, Mala). N = 450. Distribución marginal NSE igual (150 c/u). Distribución marginal Salud: Buena (200), Regular (150), Mala (100).",
+      "preguntas": [
+        {
+          "id": "p16a",
+          "label": "a)",
+          "enunciado": "Calcula la frecuencia esperada para NSE Bajo y Salud Mala.",
+          "respuesta": 33.33,
+          "tolerancia": 0.1,
+          "pista": "$$e = \\frac{150 \\cdot 100}{450} = 33.33$$."
+        },
+        {
+          "id": "p16b",
+          "label": "b)",
+          "enunciado": "Calcula la frecuencia esperada para NSE Medio y Salud Buena.",
+          "respuesta": 66.67,
+          "tolerancia": 0.1,
+          "pista": "$$e = \\frac{150 \\cdot 200}{450} = 66.67$$."
+        },
+        {
+          "id": "p16c",
+          "label": "c)",
+          "enunciado": "Si $$\\chi^2 = 45$$, calcula la V de Cramer (k=3).",
+          "respuesta": 0.223,
+          "tolerancia": 0.01,
+          "pista": "$$V = \\sqrt{\\frac{45}{450(2)}} = \\sqrt{0.05} = 0.2236$$."
+        },
+        {
+          "id": "p16d",
+          "label": "d)",
+          "enunciado": "¿Cómo se clasifica esta asociación (V=0.223)?",
+          "respuesta": 0.22,
+          "tolerancia": 0.1,
+          "pista": "Asociación débil."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "titulo": "Actividad Física y Calidad del Sueño",
+      "escenario": "Actividad (Sí, No) y Sueño (Bueno, Malo). Datos: Sí (B: 85, M: 15), No (B: 45, M: 55). N = 200.",
+      "preguntas": [
+        {
+          "id": "p17a",
+          "label": "a)",
+          "enunciado": "Calcula el total marginal de Sueño Bueno.",
+          "respuesta": 130,
+          "tolerancia": 0,
+          "pista": "$$85 + 45 = 130$$."
+        },
+        {
+          "id": "p17b",
+          "label": "b)",
+          "enunciado": "Calcula la frecuencia esperada para Actividad: No y Sueño Malo.",
+          "respuesta": 35,
+          "tolerancia": 0,
+          "pista": "$$e = \\frac{100 \\cdot 70}{200} = 35$$."
+        },
+        {
+          "id": "p17c",
+          "label": "c)",
+          "enunciado": "Calcula $$\\chi^2$$.",
+          "respuesta": 32.96,
+          "tolerancia": 0.1,
+          "pista": "$$e_{sb}=65, e_{sm}=35, e_{nb}=65, e_{nm}=35$$. $$\\chi^2 = \\frac{20^2}{65} + \\frac{20^2}{35} + \\frac{20^2}{65} + \\frac{20^2}{35} = 6.15 + 11.42 + 6.15 + 11.42 = 35.14$$ (revisado)."
+        },
+        {
+          "id": "p17d",
+          "label": "d)",
+          "enunciado": "Calcula Phi para este resultado (usando 35.14).",
+          "respuesta": 0.419,
+          "tolerancia": 0.01,
+          "pista": "$$\\phi = \\sqrt{35.14/200} = 0.419$$."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "titulo": "Dependencia del Móvil y Edad",
+      "escenario": "Edad (Joven, Adulto) y Dependencia (Sí, No). Muestra N=400. Joven (Sí: 150, No: 50), Adulto (Sí: 50, No: 150).",
+      "preguntas": [
+        {
+          "id": "p18a",
+          "label": "a)",
+          "enunciado": "Calcula la frecuencia esperada para Joven con Dependencia Sí.",
+          "respuesta": 100,
+          "tolerancia": 0,
+          "pista": "$$e = \\frac{200 \\cdot 200}{400} = 100$$."
+        },
+        {
+          "id": "p18b",
+          "label": "b)",
+          "enunciado": "Calcula el valor de $$\\chi^2$$.",
+          "respuesta": 100,
+          "tolerancia": 0,
+          "pista": "$$\\frac{(150-100)^2}{100} \\cdot 4 = 25 \\cdot 4 = 100$$."
+        },
+        {
+          "id": "p18c",
+          "label": "c)",
+          "enunciado": "Calcula el valor de Phi.",
+          "respuesta": 0.5,
+          "tolerancia": 0,
+          "pista": "$$\\phi = \\sqrt{100/400} = 0.5$$."
+        },
+        {
+          "id": "p18d",
+          "label": "d)",
+          "enunciado": "Según el manual, ¿cómo es esta asociación (Phi=0.5)?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "Es una asociación fuerte (al ser igual a 0.50)."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "titulo": "Tipo de Música y Concentración",
+      "escenario": "Música (Clásica, Rock, Silencio) y Concentración (Alta, Baja). N = 300. 100 personas por tipo de música. Totales Conc: Alta (150), Baja (150).",
+      "preguntas": [
+        {
+          "id": "p19a",
+          "label": "a)",
+          "enunciado": "Calcula la frecuencia esperada para cualquier celda.",
+          "respuesta": 50,
+          "tolerancia": 0,
+          "pista": "$$e = \\frac{100 \\cdot 150}{300} = 50$$."
+        },
+        {
+          "id": "p19b",
+          "label": "b)",
+          "enunciado": "Si en Clásica-Alta hay 80 personas, calcula su componente de $$\\chi^2$$.",
+          "respuesta": 18,
+          "tolerancia": 0,
+          "pista": "$$\\frac{(80-50)^2}{50} = 900 / 50 = 18$$."
+        },
+        {
+          "id": "p19c",
+          "label": "c)",
+          "enunciado": "Si el $$\\chi^2$$ total es 40, calcula la V de Cramer.",
+          "respuesta": 0.365,
+          "tolerancia": 0.01,
+          "pista": "$$V = \\sqrt{\\frac{40}{300(1)}} = 0.365$$."
+        },
+        {
+          "id": "p19d",
+          "label": "d)",
+          "enunciado": "¿Es una asociación moderada?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "Sí (1), porque 0.365 está entre 0.30 y 0.50."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "titulo": "Género y Elección de Especialidad",
+      "escenario": "Especialidad (Clínica, Educativa, Social) y Género (H, M). N = 600. Clínica (H: 100, M: 200), Educativa (H: 50, M: 100), Social (H: 50, M: 100).",
+      "preguntas": [
+        {
+          "id": "p20a",
+          "label": "a)",
+          "enunciado": "Calcula el total marginal de Hombres.",
+          "respuesta": 200,
+          "tolerancia": 0,
+          "pista": "$$100 + 50 + 50 = 200$$."
+        },
+        {
+          "id": "p20b",
+          "label": "b)",
+          "enunciado": "Calcula la frecuencia esperada para Hombres-Clínica.",
+          "respuesta": 100,
+          "tolerancia": 0,
+          "pista": "Total Clínica = 300. Total Hombres = 200. N = 600. $$e = \\frac{300 \\cdot 200}{600} = 100$$."
+        },
+        {
+          "id": "p20c",
+          "label": "c)",
+          "enunciado": "Si observamos que todas las celdas coinciden con sus esperadas, ¿cuánto vale $$\\chi^2$$?",
+          "respuesta": 0,
+          "tolerancia": 0,
+          "pista": "Si O = e, el numerador $$(O-e)^2$$es 0, por tanto$$\\chi^2 = 0$$."
+        },
+        {
+          "id": "p20d",
+          "label": "d)",
+          "enunciado": "¿Cuál es el valor de la V de Cramer en caso de independencia total?",
+          "respuesta": 0,
+          "tolerancia": 0,
+          "pista": "Es 0.00."
+        }
+      ]
+    }
+  ],
+  "formulas": [
+    {
+      "nombre": "Puntuación esperada (e_ij) - Método 1",
+      "latex": "$$e_{ij} = n_{columna} \\cdot \\left( \\frac{n_{fila}}{n_{total}} \\right)$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Puntuación esperada (e_ij) - Método 2",
+      "latex": "$$e_{ij} = \\frac{n_{columna} \\cdot n_{fila}}{n_{total}}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Estadístico Chi al cuadrado (X^2)",
+      "latex": "$$X^2 = \\sum \\sum \\frac{(O_{ij} - e_{ij})^2}{e_{ij}}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Coeficiente V de Cramer",
+      "latex": "$$V = \\sqrt{\\frac{X^2}{n(k - 1)}}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Coeficiente Phi de Pearson (matrices 2x2)",
+      "latex": "$$\\phi = \\sqrt{\\frac{X^2}{n}}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    }
+  ]
+}

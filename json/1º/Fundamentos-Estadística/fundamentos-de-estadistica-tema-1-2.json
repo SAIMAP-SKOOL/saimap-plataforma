@@ -1,0 +1,1728 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es correcto afirmar que una característica constante en una muestra puede ser considerada una variable en la población de origen?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se sabe"
+      ],
+      "correcta": 0,
+      "explicacion": "Una característica es constante si no varía en el conjunto de datos actual, pero si al ampliar la observación a la población esta cambia, recupera su naturaleza de variable.",
+      "pista": "Piense en si la variabilidad es una propiedad intrínseca del sujeto o del conjunto de datos observados."
+    },
+    {
+      "q": "En la notación $X_i = 27$, ¿el subíndice $i$ representa el valor de la magnitud escalar obtenida por el quinto sujeto?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se sabe"
+      ],
+      "correcta": 1,
+      "explicacion": "El subíndice $i$ indica la posición del dato en la secuencia o distribución, no el valor numérico de la medición en sí misma.",
+      "pista": "Diferencie entre el valor de la variable y la posición del sujeto en la distribución de datos."
+    },
+    {
+      "q": "¿Las categorías de una escala nominal deben ser simultáneamente exhaustivas y exclusivas para garantizar una medición válida?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se sabe"
+      ],
+      "correcta": 0,
+      "explicacion": "La medición nominal exige que todo sujeto sea clasificable (exhaustividad) y que lo sea en una única categoría (exclusividad).",
+      "pista": "Considere qué pasaría si un sujeto pudiera pertenecer a dos categorías o a ninguna en una investigación."
+    },
+    {
+      "q": "¿Es la escala ordinal capaz de determinar la magnitud exacta de las diferencias entre las categorías que la componen?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se sabe"
+      ],
+      "correcta": 1,
+      "explicacion": "La escala ordinal solo permite establecer relaciones de mayor o menor, pero carece de una unidad de medida para cuantificar distancias.",
+      "pista": "Recuerde que el orden no implica necesariamente una distancia métrica constante entre los rangos definidos."
+    },
+    {
+      "q": "¿El valor $0^{\\circ}C$ en la escala Celsius representa la ausencia total de la característica física denominada temperatura?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se sabe"
+      ],
+      "correcta": 1,
+      "explicacion": "En las escalas de intervalo, el cero es arbitrario; el frío absoluto se sitúa en una escala de razón como la Kelvin ($0 K$).",
+      "pista": "Analice si el cero es un punto de inicio absoluto o simplemente un valor arbitrario en esa escala específica."
+    },
+    {
+      "q": "¿Es posible realizar operaciones de multiplicación y división con sentido matemático en variables medidas en escala de intervalo?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se sabe"
+      ],
+      "correcta": 1,
+      "explicacion": "Al no tener un cero absoluto, no podemos decir que un valor es 'el doble' que otro en escalas de intervalo (ej. CI o temperatura).",
+      "pista": "Reflexione sobre si la falta de un cero absoluto impide establecer razones de proporcionalidad entre medidas."
+    },
+    {
+      "q": "¿Las variables cuasicuantitativas son aquellas que, siendo nominales, admiten un análisis matemático basado en distancias?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se sabe"
+      ],
+      "correcta": 1,
+      "explicacion": "Las variables cuasicuantitativas corresponden a la escala ordinal, no a la nominal, pues implican un orden jerárquico inherente.",
+      "pista": "Revise la clasificación de Amón respecto a las escalas que se sitúan entre lo cualitativo y lo métrico."
+    },
+    {
+      "q": "¿En los diseños no experimentales es técnicamente más preciso hablar de variable predictora que de variable independiente?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se sabe"
+      ],
+      "correcta": 0,
+      "explicacion": "El término 'Variable Independiente' implica manipulación y causalidad, características ausentes en la metodología no experimental o relacional.",
+      "pista": "Considere la relación entre la manipulación directa de variables y la terminología que implica causalidad."
+    },
+    {
+      "q": "¿Un parámetro poblacional posee un único valor constante e invariable mientras la población de estudio no se modifique?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se sabe"
+      ],
+      "correcta": 0,
+      "explicacion": "A diferencia de los estadísticos, que varían según la muestra, el parámetro (ej. $\\mu$) es un valor fijo y generalmente desconocido.",
+      "pista": "Diferencie entre la naturaleza fija del valor poblacional y la variabilidad de las estimaciones muestrales."
+    },
+    {
+      "q": "¿El muestreo por 'bola de nieve' es un procedimiento probabilístico que garantiza la representatividad de la muestra final?",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se sabe"
+      ],
+      "correcta": 1,
+      "explicacion": "El muestreo de bola de nieve es no probabilístico; se basa en redes de contactos y no garantiza que la muestra represente a la población.",
+      "pista": "Evalúe si la selección de sujetos mediante contactos personales permite calcular la probabilidad de inclusión."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre las propiedades de la escala de razón:",
+      "opciones": [
+        "Permite establecer comparaciones de proporcionalidad gracias a la existencia de un cero absoluto real.",
+        "Se limita a cuantificar las diferencias de magnitud sin permitir operaciones de división entre valores.",
+        "Utiliza el valor cero como un punto arbitrario que no indica necesariamente la nulidad de la variable."
+      ],
+      "correcta": 0,
+      "explicacion": "La escala de razón posee cero absoluto, lo que habilita todas las operaciones aritméticas, incluyendo razones de proporcionalidad.",
+      "pista": "Piense en qué tipo de escala permite afirmar que un sujeto pesa exactamente el doble que otro sujeto."
+    },
+    {
+      "q": "Elija la afirmación correcta respecto a las variables continuas y discretas:",
+      "opciones": [
+        "Las variables discretas admiten infinitos valores intermedios entre dos puntuaciones teóricas consecutivas.",
+        "Las variables continuas permiten hallar siempre valores intermedios, independientemente de la limitación del equipo.",
+        "Ambas variables se clasifican siempre como categóricas debido a que sus datos se organizan en etiquetas."
+      ],
+      "correcta": 1,
+      "explicacion": "Teóricamente, una variable continua tiene infinitos valores; nuestras herramientas solo limitan la precisión del registro, no la variable.",
+      "pista": "Diferencie entre la naturaleza teórica de la variable y la precisión práctica de las herramientas de medición."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el papel de las variables extrañas (VE):",
+      "opciones": [
+        "Deben ser ignoradas por el investigador para centrarse exclusivamente en la relación entre la VI y la VD.",
+        "Actúan como variables contaminadoras si influyen en la variable criterio sin ser objeto de estudio directo.",
+        "Son siempre manipuladas de forma explícita por el experimentador para observar su efecto en el resultado."
+      ],
+      "correcta": 1,
+      "explicacion": "Las VE pueden sesgar los resultados si afectan a la VD; el control busca minimizar su impacto para asegurar la validez interna.",
+      "pista": "Reflexione sobre cómo las variables no controladas pueden oscurecer o falsear el efecto real de la causa estudiada."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la validez interna en una investigación:",
+      "opciones": [
+        "Se centra en la capacidad de generalizar los hallazgos a contextos naturales fuera del laboratorio controlado.",
+        "Hace referencia exclusivamente a la seguridad con la que podemos afirmar que la VI es la causa de la VD.",
+        "Aumenta de forma proporcional a la representatividad poblacional de los sujetos que componen la muestra."
+      ],
+      "correcta": 1,
+      "explicacion": "La validez interna es el grado de confianza en el nexo causal entre las variables, garantizado por el control de variables extrañas.",
+      "pista": "Piense en la pregunta fundamental: ¿cómo de seguros estamos de que el cambio observado se debe al tratamiento?"
+    },
+    {
+      "q": "Elija la afirmación correcta sobre los estadísticos muestrales:",
+      "opciones": [
+        "Se representan mediante letras griegas minúsculas como $\\mu$ para la media y $\\sigma^2$ para la varianza.",
+        "Son valores conocidos y accesibles que actúan como réplicas de los parámetros desconocidos del grupo.",
+        "Poseen un valor único y constante que no se ve alterado por el tamaño ni el método de selección muestral."
+      ],
+      "correcta": 1,
+      "explicacion": "Los estadísticos (letras latinas) son calculables a partir de la muestra y se usan para estimar los parámetros poblacionales.",
+      "pista": "Considere la diferencia de accesibilidad entre los datos de una pequeña muestra y los de una población infinita."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el muestreo probabilístico:",
+      "opciones": [
+        "Permite calcular la probabilidad de obtener cada una de las muestras posibles de la población de referencia.",
+        "Se basa en la selección intencionada de sujetos disponibles para asegurar que cumplan con el perfil deseado.",
+        "No requiere un marco poblacional definido ya que la representatividad se asume por el tamaño de la muestra."
+      ],
+      "correcta": 0,
+      "explicacion": "El muestreo probabilístico permite conocer la probabilidad de selección, lo cual es la base para realizar inferencias estadísticas válidas.",
+      "pista": "Recuerde la condición necesaria para que un proceso de selección sea considerado puramente aleatorio y científico."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la validez ecológica:",
+      "opciones": [
+        "Determina el grado en que los resultados obtenidos son aplicables a otros momentos de la historia humana.",
+        "Refiere la precisión con la que los datos de la muestra pueden ser generalizados a la población de origen.",
+        "Indica el grado en que los resultados de un estudio pueden generalizarse a ambientes naturales no controlados."
+      ],
+      "correcta": 2,
+      "explicacion": "La validez ecológica es un tipo de validez externa que evalúa la generalización de resultados a entornos reales y cotidianos.",
+      "pista": "Piense en la tensión existente entre el control artificial del laboratorio y la complejidad del mundo exterior real."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la clasificación de Amón (1993):",
+      "opciones": [
+        "Divide las variables en dos únicos grupos denominados variables métricas y variables no métricas o cualitativas.",
+        "Propone tres grupos diferenciados: variables categóricas, variables cuasicuantitativas y variables cuantitativas.",
+        "Considera que las escalas nominales y ordinales son indistinguibles a efectos de la precisión matemática total."
+      ],
+      "correcta": 1,
+      "explicacion": "Amón distingue las escalas ordinales como 'cuasicuantitativas', reconociendo su naturaleza intermedia entre categorías y números.",
+      "pista": "Identifique el autor que introduce un término intermedio para las escalas que poseen orden pero no distancia."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la representatividad muestral:",
+      "opciones": [
+        "Se alcanza automáticamente siempre que el tamaño de la muestra supere el $10\\%$ del tamaño de la población.",
+        "Depende fundamentalmente del procedimiento de muestreo empleado y no solo del número de sujetos elegidos.",
+        "Es una propiedad intrínseca de los parámetros poblacionales que se traslada a cualquier subconjunto extraído."
+      ],
+      "correcta": 1,
+      "explicacion": "La representatividad se logra mediante técnicas de muestreo (preferiblemente aleatorias) que aseguren la heterogeneidad de la población.",
+      "pista": "Reflexione sobre si una muestra muy grande pero sesgada puede reflejar fielmente la realidad de una población."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el diseño experimental puro:",
+      "opciones": [
+        "Su objetivo primordial es describir asociaciones relacionales sin pretender establecer nexos de causalidad.",
+        "Exige la manipulación activa de la VI y el control de VE para garantizar la validez de las conclusiones.",
+        "Renuncia al uso de grupos de control aleatorizados para priorizar la observación en entornos naturales vivos."
+      ],
+      "correcta": 1,
+      "explicacion": "El experimento se define por la manipulación de la variable predictora (VI) y el control riguroso del entorno para probar causas.",
+      "pista": "Identifique el elemento clave que diferencia un experimento real de una simple observación de campo o correlación."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la validez poblacional:",
+      "opciones": [
+        "Es la seguridad de que el efecto observado se debe a la manipulación directa de las variables predictoras.",
+        "Refiere el grado en que los resultados de una muestra se pueden extrapolar al conjunto total de la población.",
+        "Analiza la estabilidad de los hallazgos científicos a través de diferentes periodos o épocas del calendario."
+      ],
+      "correcta": 1,
+      "explicacion": "La validez poblacional asegura que las conclusiones obtenidas de los participantes son aplicables a toda la población diana.",
+      "pista": "Piense en la relación entre el grupo pequeño estudiado y el grupo grande al que se pretende aplicar la teoría."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre las escalas nominales politómicas:",
+      "opciones": [
+        "Son aquellas que solo admiten dos categorías posibles para clasificar a los sujetos de la muestra estudiada.",
+        "Permiten la clasificación de los datos en múltiples categorías sin que exista una jerarquía u orden entre ellas.",
+        "Se utilizan para variables métricas donde el orden de los valores indica una mayor o menor cantidad de rasgo."
+      ],
+      "correcta": 1,
+      "explicacion": "Las nominales politómicas (ej. profesión) tienen más de dos categorías, pero no permiten establecer relaciones de orden.",
+      "pista": "Diferencie entre variables como el sexo (dos opciones) y la nacionalidad o estado civil (múltiples opciones)."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la validez temporal:",
+      "opciones": [
+        "Evalúa si el contexto físico del experimento es lo suficientemente realista para los sujetos participantes.",
+        "Determina si los resultados de un estudio realizado en una época son válidos en otros momentos históricos.",
+        "Mide la velocidad de respuesta de los sujetos ante estímulos presentados de forma secuencial y ordenada."
+      ],
+      "correcta": 1,
+      "explicacion": "La validez temporal (o histórica) cuestiona si el paso del tiempo invalida o altera las generalizaciones de una investigación.",
+      "pista": "Piense en estudios sobre hábitos sociales de 1950 y si sus conclusiones serían idénticas en la sociedad actual."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la medición en psicología:",
+      "opciones": [
+        "La mayoría de constructos medidos por cuestionarios se consideran escalas de razón por su precisión numérica.",
+        "Un cero en un test de ansiedad no implica nulidad absoluta del rasgo, sino un límite de la herramienta usada.",
+        "Las escalas de intervalo son preferidas porque permiten afirmar que un sujeto es el doble de inteligente que otro."
+      ],
+      "correcta": 1,
+      "explicacion": "En psicología, los tests suelen ser escalas de intervalo donde el cero es funcional pero no indica carencia absoluta del constructo.",
+      "pista": "Analice la imposibilidad de medir la 'ausencia total' de un rasgo psicológico complejo como la depresión o la ansiedad."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el error de inferencia:",
+      "opciones": [
+        "Se minimiza mediante la selección de muestras representativas a través de técnicas de muestreo probabilístico.",
+        "Es un valor constante que se suma al estadístico para obtener automáticamente el valor exacto del parámetro.",
+        "Ocurre únicamente cuando el investigador manipula de forma incorrecta la variable dependiente del estudio."
+      ],
+      "correcta": 0,
+      "explicacion": "El muestreo aleatorio y la representatividad reducen el sesgo y permiten que la inferencia sea más precisa y confiable.",
+      "pista": "Piense en cómo podemos estar más seguros de que nuestra muestra no es un caso 'atípico' o extremo."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la escala nominal:",
+      "opciones": [
+        "Los números asignados a las categorías son etiquetas arbitrarias sin valor de magnitud matemática real.",
+        "Permite establecer una jerarquía donde los valores más altos indican mayor presencia de la característica.",
+        "Es considerada la escala de medida más débil por permitir únicamente relaciones de igualdad y desigualdad."
+      ],
+      "correcta": 1,
+      "explicacion": "La escala nominal no admite jerarquías; los números son solo nombres o códigos que no representan cantidad ni orden.",
+      "pista": "Recuerde si en el color de pelo (1=rubio, 2=moreno) el número 2 indica 'más color' que el número 1."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la escala de intervalo:",
+      "opciones": [
+        "Posee una unidad de medida que permite cuantificar la magnitud de las diferencias entre los sujetos.",
+        "Dispone de un cero absoluto que representa el punto de inicio real de la escala y la ausencia de rasgo.",
+        "Es la escala común en constructos psicológicos como el Cociente Intelectual o la Inteligencia Emocional."
+      ],
+      "correcta": 1,
+      "explicacion": "La escala de intervalo NO posee cero absoluto; el cero es un valor más y no significa 'nada de la característica'.",
+      "pista": "Busque el error relacionado con la naturaleza del valor cero en escalas como la temperatura Celsius o el CI."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre las variables cuantitativas:",
+      "opciones": [
+        "Se dividen necesariamente en discretas y continuas según la existencia de valores intermedios potenciales.",
+        "Aportan información descriptiva cualitativa que impide realizar cualquier tipo de operación aritmética compleja.",
+        "Engloban tanto a las escalas de intervalo como a las escalas de razón según la naturaleza de su origen cero."
+      ],
+      "correcta": 1,
+      "explicacion": "Las variables cuantitativas son métricas y permiten cuantificar magnitudes; la información cualitativa es propia de las categóricas.",
+      "pista": "Considere si los números en una escala de peso o altura sirven solo para 'describir' o para 'cuantificar'."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre los parámetros poblacionales:",
+      "opciones": [
+        "Son valores desconocidos debido a la inaccesibilidad práctica de la mayoría de las poblaciones de estudio.",
+        "Se representan sistemáticamente con letras latinas como $\\bar{X}$ para la media y $S^2$ para la varianza.",
+        "Se consideran valores constantes para una población específica en un momento determinado de la medición."
+      ],
+      "correcta": 1,
+      "explicacion": "Los parámetros se representan con letras GRIEGAS ($\\mu, \\sigma, \\pi$); las letras latinas se reservan para los estadísticos muestrales.",
+      "pista": "Observe cuidadosamente el tipo de alfabeto utilizado para representar valores como la media poblacional $\\mu$."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre el muestreo no probabilístico:",
+      "opciones": [
+        "Se utiliza frecuentemente cuando no es factible realizar un muestreo aleatorio simple por falta de censo.",
+        "Permite calcular con precisión matemática el margen de error y la representatividad de la muestra final.",
+        "Incluye técnicas como el muestreo por conveniencia basado en la disponibilidad inmediata de los sujetos."
+      ],
+      "correcta": 1,
+      "explicacion": "En el muestreo no probabilístico la probabilidad es desconocida, lo que impide calcular científicamente la representatividad.",
+      "pista": "Analice si es posible hacer cálculos de probabilidad si no conocemos la probabilidad inicial de elegir a cada sujeto."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la validez externa:",
+      "opciones": [
+        "Su objetivo es asegurar que los resultados sean generalizables a otros individuos, momentos y contextos.",
+        "Aumenta linealmente a medida que el investigador impone un control más riguroso en el laboratorio estéril.",
+        "Incluye dimensiones específicas como la validez ecológica, la validez poblacional y la validez histórica."
+      ],
+      "correcta": 1,
+      "explicacion": "Un exceso de control (alta validez interna) suele generar artificialidad, lo que reduce la capacidad de generalización (validez externa).",
+      "pista": "Reflexione sobre si un ambiente muy artificial ayuda o dificulta la aplicación de los datos al 'mundo real'."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la variable dependiente (VD):",
+      "opciones": [
+        "Es la variable criterio que el investigador mide para observar el efecto de la manipulación realizada.",
+        "Debe ser manipulada directamente por el experimentador para crear los diferentes grupos de estudio.",
+        "Representa el fenómeno conductual que se pretende explicar a través de las variables independientes."
+      ],
+      "correcta": 1,
+      "explicacion": "La VD NO se manipula; es la variable que se mide para ver los efectos de la VI (que sí es la manipulada).",
+      "pista": "Diferencie entre la variable que el investigador 'toca' (causa) y la que simplemente 'mira' (efecto)."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la relación entre población y muestra:",
+      "opciones": [
+        "La muestra debe ser un subconjunto representativo para que la inferencia estadística tenga validez real.",
+        "Una muestra de gran tamaño garantiza por sí sola la ausencia de sesgos en la estimación de los parámetros.",
+        "El proceso de generalización de datos muestrales a la población se realiza mediante la estadística inferencial."
+      ],
+      "correcta": 1,
+      "explicacion": "El tamaño no garantiza representatividad; una muestra enorme puede estar sesgada si el método de selección fue deficiente.",
+      "pista": "Piense en si 10.000 personas de un mismo barrio pueden representar a todo un país de forma fiable."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre las amenazas a la validez interna:",
+      "opciones": [
+        "Incluyen factores ambientales como el ruido, la temperatura o la iluminación inadecuada de la sala.",
+        "Se limitan exclusivamente a los errores cometidos por el investigador durante el análisis de datos final.",
+        "Pueden derivar de características de los sujetos como sus expectativas, motivación o fatiga acumulada."
+      ],
+      "correcta": 1,
+      "explicacion": "Las amenazas son múltiples y variadas (situacionales, personales, de diseño); no se limitan solo a errores de cálculo.",
+      "pista": "Considere que las amenazas pueden provenir del entorno, de los sujetos o del propio diseño del estudio."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la escala ordinal:",
+      "opciones": [
+        "Consiste en asignar números que determinan la posición relativa de los sujetos en una jerarquía dada.",
+        "Permite establecer con total precisión que la distancia entre los rangos 1 y 2 es idéntica a la de 2 y 3.",
+        "Es utilizada frecuentemente en escalas de tipo Likert para medir niveles de satisfacción o de acuerdo."
+      ],
+      "correcta": 1,
+      "explicacion": "La escala ordinal informa del orden pero no de la magnitud de la distancia; las distancias entre rangos son desconocidas.",
+      "pista": "Analice si entre 'Satisfacción Baja' y 'Media' hay exactamente los mismos 'puntos' que entre 'Media' y 'Alta'."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre las variables extrañas contaminadoras:",
+      "opciones": [
+        "Son variables que, al no ser controladas, pueden confundir la relación causa-efecto entre VI y VD.",
+        "Se consideran el objetivo principal de la investigación, ya que de ellas se extraen las conclusiones clave.",
+        "Su efecto debe ser minimizado para asegurar que las diferencias en la VD se deban únicamente a la VI."
+      ],
+      "correcta": 1,
+      "explicacion": "Las variables extrañas son 'ruido' que debe controlarse; el objetivo es la VI, no las variables contaminadoras.",
+      "pista": "Determine si el científico quiere estudiar las distracciones del entorno o el tratamiento específico aplicado."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre el diseño relacional o selectivo:",
+      "opciones": [
+        "Permite establecer asociaciones y capacidades predictivas entre las variables de estudio elegidas.",
+        "Habilita al investigador para afirmar con seguridad la existencia de una relación causal directa y unívoca.",
+        "Se caracteriza por la ausencia de manipulación directa de las variables predictoras por parte del autor."
+      ],
+      "correcta": 1,
+      "explicacion": "En diseños no experimentales no hay manipulación ni control suficiente para demostrar causalidad, solo asociación.",
+      "pista": "Recuerde la máxima: 'Correlación no implica causalidad'. ¿Qué le falta a este diseño para probar causas?"
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre el estadístico varianza ($S^2$):",
+      "opciones": [
+        "Es un valor que cambia de una muestra a otra debido al error aleatorio propio de la selección muestral.",
+        "Representa de forma exacta e invariable la dispersión de todos los individuos que componen la población.",
+        "Se utiliza como un estimador del parámetro poblacional correspondiente denominado varianza griega ($\\sigma^2$)."
+      ],
+      "correcta": 1,
+      "explicacion": "La varianza muestral ($S^2$) es una estimación sujeta a variación; la varianza poblacional ($\\sigma^2$) es la realidad fija.",
+      "pista": "Diferencie entre la 'foto' de un grupo pequeño y la 'realidad' total de una población inalcanzable."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre el proceso de medición Stevens:",
+      "opciones": [
+        "Clasifica los niveles de medida en cuatro categorías: nominal, ordinal, de intervalo y de razón.",
+        "Establece que cada nivel superior posee las propiedades del nivel anterior más una característica nueva.",
+        "Indica que el nivel nominal es el más avanzado por permitir la clasificación cualitativa de los individuos."
+      ],
+      "correcta": 2,
+      "explicacion": "La escala nominal es la más básica o 'débil'; la escala de razón es la más avanzada y completa matemáticamente.",
+      "pista": "Piense en la jerarquía de las escalas: ¿cuál es la que menos información da y cuál es la más potente?"
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la constante estadística:",
+      "opciones": [
+        "Se refiere a una característica que permanece fija para todos los sujetos de un conjunto de datos dado.",
+        "Es el término utilizado para describir variables cuantitativas continuas que poseen un cero absoluto real.",
+        "Si en un estudio todos los participantes son hombres, la variable 'sexo' se transforma en una constante."
+      ],
+      "correcta": 1,
+      "explicacion": "Una constante no es un tipo de escala, sino la ausencia de variación en una característica dentro de una muestra.",
+      "pista": "No confunda la falta de variación en los datos con el tipo de escala matemática utilizada para medir."
+    },
+    {
+      "q": "En una distribución de datos donde $n=25$, la expresión $X_{n}=18$ indica que el ____.",
+      "opciones": [
+        "Sujeto vigesimoquinto tiene una puntuación de dieciocho",
+        "Sujeto decimoctavo tiene una posición de veinticinco",
+        "Sujeto de la muestra tiene un sumatorio de dieciocho"
+      ],
+      "correcta": 0,
+      "explicacion": "En la notación estadistica, $X_{n}$ representa al último elemento de la serie; si $n=25$, se refiere al sujeto 25 con el valor 18.",
+      "pista": "Recuerde que el subíndice indica la posición ordinal en la serie."
+    },
+    {
+      "q": "La escala de medida que permite cuantificar la magnitud de la diferencia pero carece de cero absoluto es la de ____.",
+      "opciones": [
+        "Medición de intervalo",
+        "Medición de razones",
+        "Medición de ordinales"
+      ],
+      "correcta": 0,
+      "explicacion": "La escala de intervalo permite distancias iguales, pero el cero es arbitrario y no indica ausencia de la variable.",
+      "pista": "Piense en variables como la temperatura Celsius o el Cociente Intelectual."
+    },
+    {
+      "q": "Si en una investigación se estudia exclusivamente a un grupo de hombres, el sexo se considera una ____.",
+      "opciones": [
+        "Constante métrica",
+        "Variable binaria",
+        "Constante lógica"
+      ],
+      "correcta": 2,
+      "explicacion": "Al no presentar variación entre los sujetos del estudio, la característica deja de ser variable y se define como constante.",
+      "pista": "Una característica que no varía en el conjunto de datos no puede ser variable."
+    },
+    {
+      "q": "Las variables cuantitativas que no admiten valores intermedios entre dos puntuaciones consecutivas se denominan ____.",
+      "opciones": [
+        "Variables discretas",
+        "Variables continuas",
+        "Variables nominales"
+      ],
+      "correcta": 0,
+      "explicacion": "Las variables discretas solo toman valores enteros dentro de su rango, sin posibilidad de fraccionamiento real.",
+      "pista": "Ejemplo: número de hijos o número de accidentes."
+    },
+    {
+      "q": "El símbolo utilizado para representar la media en una muestra accesible de individuos es ____.",
+      "opciones": [
+        "$\\overline{X}$ latino",
+        "$\\mu$ griego",
+        "$\\pi$ griego"
+      ],
+      "correcta": 0,
+      "explicacion": "La media muestral es un estadístico y se denota con $\\overline{X}$ (letra latina).",
+      "pista": "Los estadísticos se representan con letras latinas, los parámetros con griegas."
+    },
+    {
+      "q": "La propiedad por la cual cada sujeto debe pertenecer a una y solo una categoría se denomina ____.",
+      "opciones": [
+        "Exclusividad mutua",
+        "Exhaustividad total",
+        "Exclusión aleatoria"
+      ],
+      "correcta": 0,
+      "explicacion": "La exclusividad garantiza que un dato no pueda ser clasificado en dos categorías simultáneamente.",
+      "pista": "Se refiere a que no puede haber solapamiento entre categorías."
+    },
+    {
+      "q": "En el diseño experimental, la variable que el investigador manipula para observar su efecto es la ____.",
+      "opciones": [
+        "Variable dependiente",
+        "Variable extraña",
+        "Variable predictora"
+      ],
+      "correcta": 2,
+      "explicacion": "La Variable Independiente (VI) es la predictora manipulada que actúa como supuesta causa del fenómeno.",
+      "pista": "Aunque se llame comúnmente Independiente, actúa como antecedente causal."
+    },
+    {
+      "q": "El proceso de asignar números a características para permitir el análisis estadístico se denomina ____.",
+      "opciones": [
+        "Proceso de medición",
+        "Proceso de muestreo",
+        "Proceso de varianza"
+      ],
+      "correcta": 0,
+      "explicacion": "La medición es la asignación de valores numéricos siguiendo reglas según la escala de Stevens.",
+      "pista": "Es la transformación de información en datos cuantificables."
+    },
+    {
+      "q": "Un parámetro poblacional, a diferencia de un estadístico muestral, se caracteriza por ser ____.",
+      "opciones": [
+        "Un valor constante",
+        "Un valor variable",
+        "Un valor conocido"
+      ],
+      "correcta": 0,
+      "explicacion": "Los parámetros son constantes únicas de la población, aunque sean desconocidos para el investigador.",
+      "pista": "Considere si la media de toda una población puede cambiar sin cambiar la población."
+    },
+    {
+      "q": "La validez que se refiere a la posibilidad de generalizar resultados a otros momentos de la historia es la ____.",
+      "opciones": [
+        "Validez histórica",
+        "Validez ecológica",
+        "Validez de diseño"
+      ],
+      "correcta": 0,
+      "explicacion": "La validez temporal o histórica evalúa si los hallazgos son generalizables a través del tiempo.",
+      "pista": "Considere el impacto del tiempo en la estabilidad de los resultados."
+    },
+    {
+      "q": "En un estudio sobre el tiempo de reacción, la escala utilizada es de ____.",
+      "opciones": [
+        "Escala de razón",
+        "Escala nominal",
+        "Escala ordinal"
+      ],
+      "correcta": 0,
+      "explicacion": "El tiempo tiene un cero absoluto (ausencia de tiempo), permitiendo comparaciones de proporcionalidad.",
+      "pista": "Considere si el valor cero indica ausencia total de tiempo."
+    },
+    {
+      "q": "A las variables de escala ordinal que se sitúan entre las cualitativas y cuantitativas se les llama ____.",
+      "opciones": [
+        "Cuasicuantitativas",
+        "Cuasiexperimental",
+        "Cuasicategóricas"
+      ],
+      "correcta": 0,
+      "explicacion": "Las variables ordinales se denominan cuasicuantitativas porque permiten el orden pero no la distancia métrica.",
+      "pista": "Término acuñado por Amón (1993) para escalas con orden pero sin magnitud exacta."
+    },
+    {
+      "q": "La técnica de selección donde se eligen sujetos disponibles por su facilidad de acceso es el ____.",
+      "opciones": [
+        "Muestreo aleatorio",
+        "Muestreo accidental",
+        "Muestreo de conveniencia"
+      ],
+      "correcta": 2,
+      "explicacion": "El muestreo por conveniencia selecciona a los individuos simplemente porque están disponibles para el investigador.",
+      "pista": "Es un tipo de muestreo no probabilístico muy común."
+    },
+    {
+      "q": "El término que define la precisión con la que se asegura que la VI es la causa de la VD es la ____.",
+      "opciones": [
+        "Validez interna",
+        "Validez externa",
+        "Validez medida"
+      ],
+      "correcta": 0,
+      "explicacion": "La validez interna garantiza que los cambios en la VD se deben exclusivamente a la manipulación de la VI.",
+      "pista": "Se relaciona directamente con el control de variables extrañas."
+    },
+    {
+      "q": "Las variables que no son de interés pero pueden contaminar la relación entre VI y VD son las ____.",
+      "opciones": [
+        "Variables extrañas",
+        "Variables criterio",
+        "Variables métricas"
+      ],
+      "correcta": 0,
+      "explicacion": "Las variables extrañas (VE) deben ser controladas para evitar explicaciones alternativas a los resultados.",
+      "pista": "También conocidas como variables de confusión o contaminadoras."
+    },
+    {
+      "q": "Si extraemos todas las muestras posibles de tamaño $n$ de una población $N$, el número total de muestras es ____.",
+      "opciones": [
+        "Valor de $N^{n}$ total",
+        "Valor de $n^{N}$ total",
+        "Valor de $N \\cdot n$ total"
+      ],
+      "correcta": 0,
+      "explicacion": "Matemáticamente, con reposición, el número de muestras posibles de tamaño $n$ extraídas de $N$ es $N^{n}$.",
+      "pista": "Es una potencia basada en el tamaño poblacional y el tamaño de la muestra."
+    },
+    {
+      "q": "La escala que solo permite establecer relaciones de igualdad o desigualdad entre categorías es la ____.",
+      "opciones": [
+        "Escala nominal",
+        "Escala ordinal",
+        "Escala de razón"
+      ],
+      "correcta": 0,
+      "explicacion": "La escala nominal solo etiqueta o clasifica, sin permitir orden ni operaciones aritméticas.",
+      "pista": "Es la escala más débil de Stevens."
+    },
+    {
+      "q": "El estadístico que representa la varianza en una muestra se denota con la letra ____.",
+      "opciones": [
+        "Letra latina $S^{2}$ ",
+        "Letra griega $\\sigma^{2}$",
+        "Letra latina $V^{2}$ "
+      ],
+      "correcta": 0,
+      "explicacion": "Los estadísticos (muestrales) usan letras latinas, siendo $S^{2}$ la varianza de la muestra.",
+      "pista": "Recuerde la distinción entre simbología para muestras y poblaciones."
+    },
+    {
+      "q": "El muestreo en el que todos los individuos tienen la misma probabilidad de ser elegidos es el ____.",
+      "opciones": [
+        "Aleatorio simple",
+        "Sistemático fijo",
+        "De bola de nieve"
+      ],
+      "correcta": 0,
+      "explicacion": "El muestreo aleatorio simple maximiza la representatividad al igualar las probabilidades de elección.",
+      "pista": "Es la estrategia probabilística básica recomendada."
+    },
+    {
+      "q": "La validez que se ve comprometida cuando un experimento de laboratorio es demasiado artificial es la ____.",
+      "opciones": [
+        "Validez ecológica",
+        "Validez histórica",
+        "Validez interna"
+      ],
+      "correcta": 0,
+      "explicacion": "La validez ecológica o ambiental disminuye cuando el entorno de estudio es excesivamente controlado y artificial.",
+      "pista": "Se refiere a la capacidad de generalizar a ambientes naturales."
+    },
+    {
+      "q": "¿Qué características definen correctamente a las escalas de medida nominales según Stevens?",
+      "opciones": [
+        "Categorías exhaustivas",
+        "Categorías exclusivas",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "Las escalas nominales requieren que las categorías sean tanto exhaustivas como mutuamente exclusivas.",
+      "pista": "Revise los requisitos fundamentales para la clasificación cualitativa."
+    },
+    {
+      "q": "¿Cuáles de los siguientes son ejemplos de variables medidas en una escala nominal politómica?",
+      "opciones": [
+        "Estado civil de sujetos",
+        "Nacionalidad de sujetos",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "Tanto el estado civil como la nacionalidad son variables cualitativas con múltiples categorías sin orden intrínseco.",
+      "pista": "Politómica significa que tiene más de dos categorías posibles."
+    },
+    {
+      "q": "Son amenazas potenciales a la validez interna de una investigación las variables relativas a:",
+      "opciones": [
+        "Situación ambiental",
+        "Propios participantes",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "La validez interna se ve amenazada por variables situacionales, del sujeto y del propio diseño experimental.",
+      "pista": "Cualquier factor no controlado que afecte a la VD es una amenaza."
+    },
+    {
+      "q": "¿Qué elementos se consideran fundamentales para que una muestra sea útil en la inferencia estadística?",
+      "opciones": [
+        "Ser representativa",
+        "Ser subconjunto de N",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "Una muestra debe pertenecer a la población y representarla fielmente para permitir la generalización.",
+      "pista": "La utilidad de la muestra depende de su relación con la población de origen."
+    },
+    {
+      "q": "Son características de los estadísticos calculados en una muestra de datos:",
+      "opciones": [
+        "Son valores conocidos",
+        "Son valores variables",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "Los estadísticos son conocidos porque los datos son accesibles, y variables porque cambian entre muestras.",
+      "pista": "Piense en la accesibilidad de los datos y la variabilidad entre distintas muestras."
+    },
+    {
+      "q": "Según el texto, ¿qué tipos de variables pueden considerarse dentro de la categoría cuantitativa?",
+      "opciones": [
+        "Variables discretas",
+        "Variables continuas",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "Las variables cuantitativas se dividen en discretas y continuas según la existencia de valores intermedios.",
+      "pista": "Ambas permiten medir magnitudes numéricas mediante escalas de intervalo o razón."
+    },
+    {
+      "q": "En el contexto de la validez externa, ¿qué dimensiones de generalización se mencionan habitualmente?",
+      "opciones": [
+        "Generalización ambiental",
+        "Generalización temporal",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "La validez externa incluye la generalización ecológica (ambiente), poblacional (sujetos) e histórica (tiempo).",
+      "pista": "La validez externa no solo se refiere a las personas."
+    },
+    {
+      "q": "¿Qué operaciones permite realizar una variable medida en una escala de razón?",
+      "opciones": [
+        "Igualdad y desigualdad",
+        "Multiplicar y dividir",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "Al poseer orden, magnitud y cero absoluto, la escala de razón permite todas las operaciones aritméticas.",
+      "pista": "Es la escala más completa de la jerarquía de Stevens."
+    },
+    {
+      "q": "En un diseño experimental riguroso, ¿qué funciones cumple la creación de un grupo control?",
+      "opciones": [
+        "Controlar variables VE",
+        "Asegurar homogeneidad",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "El grupo control ayuda a minimizar el efecto de variables extrañas y asegura que los grupos sean comparables.",
+      "pista": "El grupo control sirve como línea base para comparar el efecto de la VI."
+    },
+    {
+      "q": "¿Cuáles de las siguientes opciones representan simbología correcta para parámetros poblacionales?",
+      "opciones": [
+        "La media denotada $\\mu$",
+        "La proporción denotada $\\pi$",
+        "Todas las anteriores son correctas"
+      ],
+      "correcta": 2,
+      "explicacion": "Los parámetros poblacionales se representan universalmente con letras griegas como $\\mu$ y $\\pi$.",
+      "pista": "Identifique las letras griegas asignadas a las medidas de tendencia central y frecuencia."
+    },
+    {
+      "q": "Si en un estudio no experimental sobre el estrés se manipula el nivel de ruido, el diseño se define como:",
+      "opciones": [
+        "Diseño relacional",
+        "Diseño selectivo",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "Si hay manipulación directa, el diseño deja de ser 'no experimental' para convertirse en experimental.",
+      "pista": "Si hay manipulación directa de una variable independiente, el diseño cambia de nombre."
+    },
+    {
+      "q": "En una escala de intervalo, el valor cero representa la ausencia total de la característica medida, como ocurre en:",
+      "opciones": [
+        "Ingresos mensuales",
+        "Número de aciertos",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "En la escala de intervalo el cero es arbitrario; los ingresos y aciertos tienen cero absoluto (razón).",
+      "pista": "Los ejemplos dados pertenecen a la escala de razón, no de intervalo."
+    },
+    {
+      "q": "Un ejemplo de variable cualitativa binaria que permite el orden jerárquico es la variable denominada:",
+      "opciones": [
+        "Nivel de estudios",
+        "Color de ojos (1,2,3)",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "Las variables cualitativas nominales no permiten orden, y el nivel de estudios no es binario.",
+      "pista": "Las cualitativas nominales (como color de ojos) no tienen orden, y las ordinales no suelen ser binarias."
+    },
+    {
+      "q": "La validez interna de una investigación aumenta significativamente cuando el investigador decide:",
+      "opciones": [
+        "Reducir el muestreo",
+        "Ignorar variables VE",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "Reducir el muestreo o ignorar variables extrañas disminuye la validez, no la aumenta.",
+      "pista": "Piense en las acciones que realmente mejorarían el control causal."
+    },
+    {
+      "q": "Según la clasificación de Stevens, las variables que permiten conocer si una puntuación es el triple de otra son:",
+      "opciones": [
+        "Variables de intervalo",
+        "Variables de ordinal",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "La escala de intervalo no permite decir 'el triple' porque carece de un punto de inicio absoluto (cero).",
+      "pista": "Solo la escala de razón permite proporciones debido a su cero absoluto."
+    },
+    {
+      "q": "En un estudio donde se miden 'grados Celsius', el investigador puede afirmar correctamente que:",
+      "opciones": [
+        "40ºC es el doble de 20ºC",
+        "0ºC es ausencia de calor",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "En escala Celsius no se pueden calcular razones (doble) ni el cero es ausencia de temperatura.",
+      "pista": "La escala Celsius es de intervalo, no de razón."
+    },
+    {
+      "q": "El muestreo probabilístico de 'bola de nieve' se caracteriza principalmente por asegurar que:",
+      "opciones": [
+        "La muestra sea aleatoria",
+        "El sesgo sea inexistente",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "El muestreo de bola de nieve es no probabilístico, por lo que no garantiza aleatoriedad ni elimina el sesgo.",
+      "pista": "El muestreo de bola de nieve es no probabilístico por definición."
+    },
+    {
+      "q": "Para referirnos al dato del tercer sujeto en una distribución de 100 personas, la notación correcta es:",
+      "opciones": [
+        "Dato de $X_{100}=3$",
+        "Dato de $X_{3}=100$",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "La notación correcta sería $X_{3}$ para indicar la posición del tercer sujeto, no el valor 100 ni la posición 100.",
+      "pista": "El subíndice debe representar el orden (3) y la variable el valor."
+    },
+    {
+      "q": "En el diseño no experimental, a la variable que refleja los supuestos efectos se le denomina técnicamente:",
+      "opciones": [
+        "Variable independiente",
+        "Variable de control",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "En diseños no experimentales, se debe utilizar el término 'Variable criterio' o 'Variable resultado'.",
+      "pista": "El texto recomienda un término específico para diseños no causales."
+    },
+    {
+      "q": "Un ejemplo de variable continua medida en escala de intervalo en el ámbito psicológico es:",
+      "opciones": [
+        "Peso de un paciente",
+        "Número de hijos (n)",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correcta": 2,
+      "explicacion": "El peso tiene cero absoluto (razón) y el número de hijos no es continua (es discreta).",
+      "pista": "El peso es de razón y el número de hijos es discreta."
+    }
+  ],
+  "laboratorio": [
+    {
+      "id": 1,
+      "titulo": "El Universo de las Muestras",
+      "escenario": "En el manual se indica que de una población de tamaño $N$ se pueden extraer $N^n$ muestras diferentes de tamaño $n$ (con reposición). Si tenemos una población de $N = 6$ estudiantes de psicología.",
+      "preguntas": [
+        {
+          "id": "p1a",
+          "label": "a)",
+          "enunciado": "¿Cuántas muestras posibles de tamaño $n = 2$ se pueden extraer?",
+          "respuesta": 36,
+          "tolerancia": 0,
+          "pista": "$$N^n = 6^2 = 36$$"
+        },
+        {
+          "id": "p1b",
+          "label": "b)",
+          "enunciado": "Si decidimos aumentar el tamaño de la muestra a $n = 3$, ¿cuántas muestras posibles habría?",
+          "respuesta": 216,
+          "tolerancia": 0,
+          "pista": "$$N^n = 6^3 = 216$$"
+        },
+        {
+          "id": "p1c",
+          "label": "c)",
+          "enunciado": "Si la población fuera de $N = 1500$ y la muestra de $n = 25$, como en el ejemplo del texto ($2.525 \\times 10^{79}$), ¿cuál sería el exponente de la base 1500?",
+          "respuesta": 25,
+          "tolerancia": 0,
+          "pista": "$$N^n \\Rightarrow 1500^{25}$$"
+        },
+        {
+          "id": "p1d",
+          "label": "d)",
+          "enunciado": "Si tenemos 1296 muestras posibles y sabemos que $N = 6$, ¿cuál es el tamaño de la muestra $n$?",
+          "respuesta": 4,
+          "tolerancia": 0,
+          "pista": "$$6^n = 1296 \\Rightarrow n = \\log_6(1296) = 4$$"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Cuantificación de Escalas Nominales",
+      "escenario": "Un investigador codifica el color de pelo: 1=Rubio, 2=Castaño, 3=Moreno, 4=Pelirrojo. En una muestra de $n = 120$ sujetos, se observa que el 25% son Rubios, 40 son Castaños y el resto se divide equitativamente entre Morenos y Pelirrojos.",
+      "preguntas": [
+        {
+          "id": "p2a",
+          "label": "a)",
+          "enunciado": "¿Cuántos sujetos han sido asignados al código 1?",
+          "respuesta": 30,
+          "tolerancia": 0,
+          "pista": "$$120 \\times 0.25 = 30$$"
+        },
+        {
+          "id": "p2b",
+          "label": "b)",
+          "enunciado": "¿Cuántos sujetos corresponden a los códigos 3 y 4 en total?",
+          "respuesta": 50,
+          "tolerancia": 0,
+          "pista": "$$120 - (30 + 40) = 50$$"
+        },
+        {
+          "id": "p2c",
+          "label": "c)",
+          "enunciado": "¿Cuántos sujetos son Pelirrojos (código 4)?",
+          "respuesta": 25,
+          "tolerancia": 0,
+          "pista": "$$50 / 2 = 25$$"
+        },
+        {
+          "id": "p2d",
+          "label": "d)",
+          "enunciado": "Si sumamos los códigos numéricos de los primeros 10 sujetos rubios, ¿qué valor obtenemos? (Recuerde la naturaleza de la escala nominal).",
+          "respuesta": 10,
+          "tolerancia": 0,
+          "pista": "$$10 \\times 1 = 10$$"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Variables Discretas: El Recuento",
+      "escenario": "Se estudia el número de hijos en familias monoparentales. Se analiza una muestra de 50 familias donde la suma total de hijos es 85.",
+      "preguntas": [
+        {
+          "id": "p3a",
+          "label": "a)",
+          "enunciado": "¿Cuál es el valor del estadístico media ($\\bar{X}$)?",
+          "respuesta": 1.7,
+          "tolerancia": 0.1,
+          "pista": "$$\\bar{X} = \\frac{\\sum X_i}{n} = \\frac{85}{50} = 1.7$$"
+        },
+        {
+          "id": "p3b",
+          "label": "b)",
+          "enunciado": "Si el primer sujeto $X_1$ tiene 3 hijos y el último $X_{50}$ tiene 0, ¿cuál es el valor de $X_1 + X_{50}$?",
+          "respuesta": 3,
+          "tolerancia": 0,
+          "pista": "$$3 + 0 = 3$$"
+        },
+        {
+          "id": "p3c",
+          "label": "c)",
+          "enunciado": "En variables discretas, ¿cuántos valores intermedios existen entre 1 y 2 hijos?",
+          "respuesta": 0,
+          "tolerancia": 0,
+          "pista": "Las variables discretas no admiten valores intermedios."
+        },
+        {
+          "id": "p3d",
+          "label": "d)",
+          "enunciado": "Si 10 familias tienen 3 hijos cada una, ¿qué porcentaje de la muestra representan?",
+          "respuesta": 20,
+          "tolerancia": 0,
+          "pista": "$$\\frac{10}{50} \\times 100 = 20\\%$$"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Escala de Intervalo: El Cociente Intelectual",
+      "escenario": "El CI tiene una escala de intervalo. Una persona A tiene un CI de 120, una persona B de 100 y una persona C de 80.",
+      "preguntas": [
+        {
+          "id": "p4a",
+          "label": "a)",
+          "enunciado": "¿Cuántos puntos de diferencia hay entre el sujeto A y el B?",
+          "respuesta": 20,
+          "tolerancia": 0,
+          "pista": "$$120 - 100 = 20$$"
+        },
+        {
+          "id": "p4b",
+          "label": "b)",
+          "enunciado": "¿Cuántas veces más puntos tiene el sujeto A respecto al C?",
+          "respuesta": 1.5,
+          "tolerancia": 0,
+          "pista": "$$120 / 80 = 1.5$$"
+        },
+        {
+          "id": "p4c",
+          "label": "c)",
+          "enunciado": "Si sumamos las puntuaciones de los tres sujetos, ¿cuál es el total?",
+          "respuesta": 300,
+          "tolerancia": 0,
+          "pista": "$$120 + 100 + 80 = 300$$"
+        },
+        {
+          "id": "p4d",
+          "label": "d)",
+          "enunciado": "Según el manual, si un sujeto obtiene 0 en un test de CI, ¿cuánta inteligencia nula posee?",
+          "respuesta": 0,
+          "tolerancia": 0,
+          "pista": "El 0 es arbitrario, no indica ausencia de la característica."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Escala de Razón: Ingresos y Proporciones",
+      "escenario": "En una escala de razón, el 0 es absoluto. Sujeto A gana 40,000€, Sujeto B gana 20,000€ y Sujeto C gana 10,000€.",
+      "preguntas": [
+        {
+          "id": "p5a",
+          "label": "a)",
+          "enunciado": "¿Cuántas veces es mayor el sueldo de A respecto a B?",
+          "respuesta": 2,
+          "tolerancia": 0,
+          "pista": "$$40000 / 20000 = 2$$"
+        },
+        {
+          "id": "p5b",
+          "label": "b)",
+          "enunciado": "¿Qué fracción representa el sueldo de C respecto a A?",
+          "respuesta": 0.25,
+          "tolerancia": 0,
+          "pista": "$$10000 / 40000 = 0.25$$"
+        },
+        {
+          "id": "p5c",
+          "label": "c)",
+          "enunciado": "Si el sujeto B gasta el 50% de su sueldo, ¿cuánto dinero le queda?",
+          "respuesta": 10000,
+          "tolerancia": 0,
+          "pista": "$$20000 \\times 0.5 = 10000$$"
+        },
+        {
+          "id": "p5d",
+          "label": "d)",
+          "enunciado": "¿Cuál es la diferencia absoluta entre el sueldo de A y la suma de B y C?",
+          "respuesta": 10000,
+          "tolerancia": 0,
+          "pista": "$$40000 - (20000 + 10000) = 10000$$"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Probabilidad en el Muestreo Aleatorio Simple",
+      "escenario": "En una población de $N = 200$ individuos, se desea extraer una muestra mediante muestreo aleatorio simple (MAS) donde todos tienen la misma probabilidad $P$ de ser elegidos.",
+      "preguntas": [
+        {
+          "id": "p6a",
+          "label": "a)",
+          "enunciado": "¿Cuál es la probabilidad (en decimal) de que un individuo específico sea elegido en la primera extracción?",
+          "respuesta": 0.005,
+          "tolerancia": 0.0001,
+          "pista": "$$P = \\frac{1}{N} = \\frac{1}{200} = 0.005$$"
+        },
+        {
+          "id": "p6b",
+          "label": "b)",
+          "enunciado": "Si queremos una muestra del 10% de la población, ¿cuál es el valor de $n?",
+          "respuesta": 20,
+          "tolerancia": 0,
+          "pista": "$$200 \\times 0.10 = 20$$"
+        },
+        {
+          "id": "p6c",
+          "label": "c)",
+          "enunciado": "Si extraemos 50 personas, ¿qué porcentaje de la población hemos muestreado?",
+          "respuesta": 25,
+          "tolerancia": 0,
+          "pista": "$$\\frac{50}{200} \\times 100 = 25\\%$$"
+        },
+        {
+          "id": "p6d",
+          "label": "d)",
+          "enunciado": "Si la probabilidad de ser elegido fuera 0.02, ¿cuál sería el tamaño de la población $N$?",
+          "respuesta": 50,
+          "tolerancia": 0,
+          "pista": "$$\\frac{1}{N} = 0.02 \\Rightarrow N = \\frac{1}{0.02} = 50$$"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Identificación de Variables en Diseño Experimental",
+      "escenario": "Un experimento sobre gestión del estrés utiliza dos grupos: Experimental ($n_e = 30$) y Control ($n_c = 30$). Se mide el rendimiento académico en una escala de 0 a 10.",
+      "preguntas": [
+        {
+          "id": "p7a",
+          "label": "a)",
+          "enunciado": "¿Cuántos niveles tiene la Variable Independiente (VI)?",
+          "respuesta": 2,
+          "tolerancia": 0,
+          "pista": "Los niveles son: Grupo Experimental y Grupo Control."
+        },
+        {
+          "id": "p7b",
+          "label": "b)",
+          "enunciado": "¿Cuál es el tamaño total de la muestra ($n$)?",
+          "respuesta": 60,
+          "tolerancia": 0,
+          "pista": "$$30 + 30 = 60$$"
+        },
+        {
+          "id": "p7c",
+          "label": "c)",
+          "enunciado": "Si el grupo experimental obtiene una media de 8.5 y el control de 6.5, ¿cuál es la diferencia de medias?",
+          "respuesta": 2,
+          "tolerancia": 0.1,
+          "pista": "$$8.5 - 6.5 = 2$$"
+        },
+        {
+          "id": "p7d",
+          "label": "d)",
+          "enunciado": "Si se detecta una variable extraña que afecta al 10% de la muestra total, ¿a cuántos sujetos afecta?",
+          "respuesta": 6,
+          "tolerancia": 0,
+          "pista": "$$60 \\times 0.10 = 6$$"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titulo": "Parámetros vs Estadísticos: Notación",
+      "escenario": "En una población de universitarios, la nota media real (parámetro) es $\\mu = 7.3$. Se extrae una muestra donde la media (estadístico) es $\\bar{X} = 6.4$.",
+      "preguntas": [
+        {
+          "id": "p8a",
+          "label": "a)",
+          "enunciado": "¿Cuál es el valor del error de estimación ($|\\mu - \\bar{X}|$)?",
+          "respuesta": 0.9,
+          "tolerancia": 0.1,
+          "pista": "$$|7.3 - 6.4| = 0.9$$"
+        },
+        {
+          "id": "p8b",
+          "label": "b)",
+          "enunciado": "Si otra muestra da una $\\bar{X} = 7.9$, ¿cuál es la diferencia respecto a la primera muestra?",
+          "respuesta": 1.5,
+          "tolerancia": 0.1,
+          "pista": "$$7.9 - 6.4 = 1.5$$"
+        },
+        {
+          "id": "p8c",
+          "label": "c)",
+          "enunciado": "Si la varianza poblacional $\\sigma^2$ es 4, ¿cuál es la desviación típica $\\sigma$?",
+          "respuesta": 2,
+          "tolerancia": 0,
+          "pista": "$$\\sqrt{4} = 2$$"
+        },
+        {
+          "id": "p8d",
+          "label": "d)",
+          "enunciado": "Si el parámetro proporción $\\pi$ es 0.5 y el estadístico $p$ es 0.48, ¿cuál es el sesgo?",
+          "respuesta": 0.02,
+          "tolerancia": 0.01,
+          "pista": "$$0.50 - 0.48 = 0.02$$"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "titulo": "Escala Ordinal: El Nivel Educativo",
+      "escenario": "Codificación ordinal: 1=Primaria, 2=Secundaria, 3=Grado, 4=Posgrado. En un grupo de 80 personas: 15 tienen Primaria, 25 Secundaria, 30 Grado y el resto Posgrado.",
+      "preguntas": [
+        {
+          "id": "p9a",
+          "label": "a)",
+          "enunciado": "¿Cuántas personas tienen Posgrado (nivel 4)?",
+          "respuesta": 10,
+          "tolerancia": 0,
+          "pista": "$$80 - (15 + 25 + 30) = 10$$"
+        },
+        {
+          "id": "p9b",
+          "label": "b)",
+          "enunciado": "¿Qué porcentaje de la muestra tiene al menos estudios de Grado (nivel 3 o 4)?",
+          "respuesta": 50,
+          "tolerancia": 0,
+          "pista": "$$((30+10)/80) \\times 100 = 50\\%$$"
+        },
+        {
+          "id": "p9c",
+          "label": "c)",
+          "enunciado": "Si asignamos un peso de 'puntos' igual al código, ¿cuál es la suma total de puntos del grupo?",
+          "respuesta": 195,
+          "tolerancia": 0,
+          "pista": "$$(15 \\times 1) + (25 \\times 2) + (30 \\times 3) + (10 \\times 4) = 15+50+90+40 = 195$$"
+        },
+        {
+          "id": "p9d",
+          "label": "d)",
+          "enunciado": "¿Cuál es la media aritmética de estos 'códigos'?",
+          "respuesta": 2.4375,
+          "tolerancia": 0.01,
+          "pista": "$$195 / 80 = 2.4375$$"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "titulo": "Variables Continuas y Tiempo de Reacción",
+      "escenario": "El tiempo de reacción es una variable continua. Tres sujetos tardan: $S_1 = 20.125s$, $S_2 = 20.500s$, $S_3 = 21.125s$.",
+      "preguntas": [
+        {
+          "id": "p10a",
+          "label": "a)",
+          "enunciado": "¿Cuál es el tiempo medio de reacción de los tres sujetos?",
+          "respuesta": 20.5833,
+          "tolerancia": 0.01,
+          "pista": "$$(20.125 + 20.500 + 21.125) / 3 = 61.75 / 3 = 20.5833$$"
+        },
+        {
+          "id": "p10b",
+          "label": "b)",
+          "enunciado": "¿Cuántos segundos de diferencia hay entre el más lento y el más rápido?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "$$21.125 - 20.125 = 1.000$$"
+        },
+        {
+          "id": "p10c",
+          "label": "c)",
+          "enunciado": "Si el cronómetro tiene un error de +0.050s en cada medida, ¿cuál sería el tiempo real corregido de $S_2$?",
+          "respuesta": 20.45,
+          "tolerancia": 0.01,
+          "pista": "$$20.500 - 0.050 = 20.450$$"
+        },
+        {
+          "id": "p10d",
+          "label": "d)",
+          "enunciado": "En teoría, ¿cuántos valores posibles existen entre 20.125 y 20.126 segundos?",
+          "respuesta": 999999,
+          "tolerancia": 1000000,
+          "pista": "En una variable continua existen infinitos valores; se acepta cualquier valor representativo de infinito."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "titulo": "Análisis de Frecuencias en Salud Mental",
+      "escenario": "Se estudia la presencia de trastorno (Sí/No) en una población de 500 pacientes. Se sabe que el 12% padece el trastorno.",
+      "preguntas": [
+        {
+          "id": "p11a",
+          "label": "a)",
+          "enunciado": "¿Cuántos pacientes tienen el trastorno?",
+          "respuesta": 60,
+          "tolerancia": 0,
+          "pista": "$$500 \\times 0.12 = 60$$"
+        },
+        {
+          "id": "p11b",
+          "label": "b)",
+          "enunciado": "¿Cuántos pacientes no tienen el trastorno?",
+          "respuesta": 440,
+          "tolerancia": 0,
+          "pista": "$$500 - 60 = 440$$"
+        },
+        {
+          "id": "p11c",
+          "label": "c)",
+          "enunciado": "Si de los que tienen trastorno, el 50% son mujeres, ¿cuántas mujeres con trastorno hay?",
+          "respuesta": 30,
+          "tolerancia": 0,
+          "pista": "$$60 \\times 0.50 = 30$$"
+        },
+        {
+          "id": "p11d",
+          "label": "d)",
+          "enunciado": "¿Qué proporción total de la muestra representan las mujeres con trastorno?",
+          "respuesta": 0.06,
+          "tolerancia": 0.01,
+          "pista": "$$30 / 500 = 0.06$$"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "titulo": "Validez Interna y Control de Variables",
+      "escenario": "Un investigador identifica 5 variables extrañas ambientales y 3 personales en su experimento.",
+      "preguntas": [
+        {
+          "id": "p12a",
+          "label": "a)",
+          "enunciado": "¿Cuántas amenazas totales a la validez interna ha identificado?",
+          "respuesta": 8,
+          "tolerancia": 0,
+          "pista": "$$5 + 3 = 8$$"
+        },
+        {
+          "id": "p12b",
+          "label": "b)",
+          "enunciado": "Si logra controlar el 75% de estas variables, ¿cuántas quedan sin controlar?",
+          "respuesta": 2,
+          "tolerancia": 0,
+          "pista": "$$8 \\times 0.25 = 2$$"
+        },
+        {
+          "id": "p12c",
+          "label": "c)",
+          "enunciado": "Si cada variable no controlada introduce un error del 2% en la VD, ¿cuál es el error total acumulado?",
+          "respuesta": 4,
+          "tolerancia": 0,
+          "pista": "$$2 \\times 2\\% = 4\\%$$"
+        },
+        {
+          "id": "p12d",
+          "label": "d)",
+          "enunciado": "Para una validez interna perfecta, ¿cuántas variables extrañas deben ser controladas?",
+          "respuesta": 8,
+          "tolerancia": 0,
+          "pista": "Deben controlarse todas las identificadas."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "titulo": "Escala Likert como Cuasicuantitativa",
+      "escenario": "En una escala de satisfacción de 1 (nada) a 5 (mucho), 20 sujetos responden. Las frecuencias son: f(1)=2, f(2)=4, f(3)=8, f(4)=4, f(5)=2.",
+      "preguntas": [
+        {
+          "id": "p13a",
+          "label": "a)",
+          "enunciado": "¿Cuál es la moda de la distribución (el valor más frecuente)?",
+          "respuesta": 3,
+          "tolerancia": 0,
+          "pista": "El valor 3 tiene la mayor frecuencia (8)."
+        },
+        {
+          "id": "p13b",
+          "label": "b)",
+          "enunciado": "¿Cuántos sujetos puntuaron por encima del valor central (3)?",
+          "respuesta": 6,
+          "tolerancia": 0,
+          "pista": "$$f(4) + f(5) = 4 + 2 = 6$$"
+        },
+        {
+          "id": "p13c",
+          "label": "c)",
+          "enunciado": "Calcule la suma ponderada de todas las respuestas.",
+          "respuesta": 60,
+          "tolerancia": 0,
+          "pista": "$$(2\\times 1) + (4\\times 2) + (8\\times 3) + (4\\times 4) + (2\\times 5) = 2+8+24+16+10 = 60$$"
+        },
+        {
+          "id": "p13d",
+          "label": "d)",
+          "enunciado": "¿Cuál es la media de satisfacción?",
+          "respuesta": 3,
+          "tolerancia": 0.1,
+          "pista": "$$60 / 20 = 3$$"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "titulo": "Muestreo por Bola de Nieve",
+      "escenario": "Se desea estudiar una población rara. El investigador contacta con 2 sujetos iniciales. Cada uno refiere a otros 3 nuevos sujetos. En la siguiente fase, cada uno de esos nuevos sujetos refiere a otros 2.",
+      "preguntas": [
+        {
+          "id": "p14a",
+          "label": "a)",
+          "enunciado": "¿Cuántos sujetos se añaden en la primera fase de referidos?",
+          "respuesta": 6,
+          "tolerancia": 0,
+          "pista": "$$2 \\times 3 = 6$$"
+        },
+        {
+          "id": "p14b",
+          "label": "b)",
+          "enunciado": "¿Cuántos sujetos se añaden en la segunda fase de referidos?",
+          "respuesta": 12,
+          "tolerancia": 0,
+          "pista": "$$6 \\times 2 = 12$$"
+        },
+        {
+          "id": "p14c",
+          "label": "c)",
+          "enunciado": "¿Cuál es el tamaño total de la muestra al finalizar la segunda fase?",
+          "respuesta": 20,
+          "tolerancia": 0,
+          "pista": "$$2 + 6 + 12 = 20$$"
+        },
+        {
+          "id": "p14d",
+          "label": "d)",
+          "enunciado": "Si el coste por sujeto es de 15€, ¿cuál es el coste total del muestreo?",
+          "respuesta": 300,
+          "tolerancia": 0,
+          "pista": "$$20 \\times 15 = 300$$"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "titulo": "Variables Constantes vs Variables",
+      "escenario": "En un estudio sobre ansiedad, se seleccionan solo mujeres. Hay 100 participantes. Sus edades varían entre 20 y 30 años. Se mide su nivel de cortisol.",
+      "preguntas": [
+        {
+          "id": "p15a",
+          "label": "a)",
+          "enunciado": "¿Cuántas variables se mencionan que actúan como constantes en este conjunto de datos?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "Solo el sexo es constante."
+        },
+        {
+          "id": "p15b",
+          "label": "b)",
+          "enunciado": "¿Cuántas variables (que varían) se mencionan?",
+          "respuesta": 2,
+          "tolerancia": 0,
+          "pista": "Edad y Nivel de Cortisol."
+        },
+        {
+          "id": "p15c",
+          "label": "c)",
+          "enunciado": "Si el cortisol se mide en escala de razón y la media es 15 $\\mu g/dL$, ¿qué valor tendría alguien con el doble de la media?",
+          "respuesta": 30,
+          "tolerancia": 0,
+          "pista": "$$15 \\times 2 = 30$$"
+        },
+        {
+          "id": "p15d",
+          "label": "d)",
+          "enunciado": "Si de las 100 mujeres, todas tienen 25 años, ¿cuántas constantes habría ahora?",
+          "respuesta": 2,
+          "tolerancia": 0,
+          "pista": "Sexo y Edad."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "titulo": "Validez Externa y Generalización",
+      "escenario": "Un estudio sobre el COVID-19 se realizó con 1200 personas en 2021. Se quiere replicar en 2024.",
+      "preguntas": [
+        {
+          "id": "p16a",
+          "label": "a)",
+          "enunciado": "¿Cómo se llama la validez que se ve amenazada por el paso del tiempo según el texto?",
+          "respuesta": 0,
+          "tolerancia": 0,
+          "pista": "Validez temporal o histórica (Respuesta conceptual, ingresar 0)."
+        },
+        {
+          "id": "p16b",
+          "label": "b)",
+          "enunciado": "Si la muestra de 1200 representaba al 0.1% de la población, ¿cuál era el tamaño de la población $N$?",
+          "respuesta": 1200000,
+          "tolerancia": 0,
+          "pista": "$$1200 / 0.001 = 1200000$$"
+        },
+        {
+          "id": "p16c",
+          "label": "c)",
+          "enunciado": "Si en la réplica de 2024 solo participan 600 personas, ¿qué porcentaje de la muestra original representa?",
+          "respuesta": 50,
+          "tolerancia": 0,
+          "pista": "$$(600 / 1200) \\times 100 = 50\\%$$"
+        },
+        {
+          "id": "p16d",
+          "label": "d)",
+          "enunciado": "Si los resultados en 2021 fueron del 75% de eficacia y en 2024 del 60%, ¿cuál es la caída en puntos porcentuales?",
+          "respuesta": 15,
+          "tolerancia": 0,
+          "pista": "$$75 - 60 = 15$$"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "titulo": "Operaciones con la Distribución de Datos",
+      "escenario": "Dada la secuencia de datos de la variable $X$: $X_1=10, X_2=15, X_3=20, X_4=25, X_5=30$.",
+      "preguntas": [
+        {
+          "id": "p17a",
+          "label": "a)",
+          "enunciado": "¿Cuál es el valor de $n$ (número total de sujetos)?",
+          "respuesta": 5,
+          "tolerancia": 0,
+          "pista": "Hay 5 datos en la secuencia."
+        },
+        {
+          "id": "p17b",
+          "label": "b)",
+          "enunciado": "Calcule la suma de todos los valores de la variable ($\\sum X_i$).",
+          "respuesta": 100,
+          "tolerancia": 0,
+          "pista": "$$10+15+20+25+30 = 100$$"
+        },
+        {
+          "id": "p17c",
+          "label": "c)",
+          "enunciado": "¿Cuál es el valor medio?",
+          "respuesta": 20,
+          "tolerancia": 0,
+          "pista": "$$100 / 5 = 20$$"
+        },
+        {
+          "id": "p17d",
+          "label": "d)",
+          "enunciado": "Si multiplicamos cada valor por 2, ¿cuál será la nueva suma total?",
+          "respuesta": 200,
+          "tolerancia": 0,
+          "pista": "$$100 \\times 2 = 200$$"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "titulo": "Diferenciación de Variable Criterio y Predictora",
+      "escenario": "En un diseño no experimental, se estudia la relación entre estrés (Predictora) y rendimiento (Criterio). Nivel de estrés (0-100) y Nota (0-10).",
+      "preguntas": [
+        {
+          "id": "p18a",
+          "label": "a)",
+          "enunciado": "Si un sujeto tiene un estrés de 80 y su nota es la décima parte de su estrés, ¿cuál es su nota?",
+          "respuesta": 8,
+          "tolerancia": 0.1,
+          "pista": "$$80 / 10 = 8$$"
+        },
+        {
+          "id": "p18b",
+          "label": "b)",
+          "enunciado": "En una muestra de $n=40$, si la suma de todas las notas es 240, ¿cuál es la media de la variable criterio?",
+          "respuesta": 6,
+          "tolerancia": 0.1,
+          "pista": "$$240 / 40 = 6$$"
+        },
+        {
+          "id": "p18c",
+          "label": "c)",
+          "enunciado": "Si el estrés medio de la muestra es 50, ¿qué valor total suma la variable predictora?",
+          "respuesta": 2000,
+          "tolerancia": 0,
+          "pista": "$$50 \\times 40 = 2000$$"
+        },
+        {
+          "id": "p18d",
+          "label": "d)",
+          "enunciado": "Si se añade un sujeto con nota 10, ¿cuál es la nueva suma de la variable criterio?",
+          "respuesta": 250,
+          "tolerancia": 0,
+          "pista": "$$240 + 10 = 250$$"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "titulo": "Proporciones y Parámetros",
+      "escenario": "Se sabe que en la población de niños con TDAH, la proporción de niños con hiperactividad es $\\pi = 0.65$. Se toma una muestra de $n = 200$ niños.",
+      "preguntas": [
+        {
+          "id": "p19a",
+          "label": "a)",
+          "enunciado": "¿Cuántos niños se espera encontrar con hiperactividad en la muestra si el estadístico $p$ igualara al parámetro?",
+          "respuesta": 130,
+          "tolerancia": 0,
+          "pista": "$$200 \\times 0.65 = 130$$"
+        },
+        {
+          "id": "p19b",
+          "label": "b)",
+          "enunciado": "Si en la muestra solo hay 120 niños con hiperactividad, ¿cuál es el valor del estadístico $p$?",
+          "respuesta": 0.6,
+          "tolerancia": 0.01,
+          "pista": "$$120 / 200 = 0.6$$"
+        },
+        {
+          "id": "p19c",
+          "label": "c)",
+          "enunciado": "¿Cuál es la diferencia absoluta entre el parámetro y el estadístico?",
+          "respuesta": 0.05,
+          "tolerancia": 0.01,
+          "pista": "$$0.65 - 0.60 = 0.05$$"
+        },
+        {
+          "id": "p19d",
+          "label": "d)",
+          "enunciado": "Si la población total es $N=2000$, ¿cuántos niños con hiperactividad hay en toda la población?",
+          "respuesta": 1300,
+          "tolerancia": 0,
+          "pista": "$$2000 \\times 0.65 = 1300$$"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "titulo": "Escala de Temperatura y Arbitrariedad",
+      "escenario": "La temperatura en Celsius es de intervalo. Tenemos tres mediciones: $T_1 = 10^{\\circ}C, T_2 = 20^{\\circ}C, T_3 = -5^{\\circ}C$.",
+      "preguntas": [
+        {
+          "id": "p20a",
+          "label": "a)",
+          "enunciado": "¿Cuál es la diferencia de temperatura entre $T_1$ y $T_3$?",
+          "respuesta": 15,
+          "tolerancia": 0,
+          "pista": "$$10 - (-5) = 15$$"
+        },
+        {
+          "id": "p20b",
+          "label": "b)",
+          "enunciado": "¿Cuál es la temperatura media?",
+          "respuesta": 8.33,
+          "tolerancia": 0.1,
+          "pista": "$$(10 + 20 - 5) / 3 = 25 / 3 = 8.333...$$"
+        },
+        {
+          "id": "p20c",
+          "label": "c)",
+          "enunciado": "Si $T_2$ es $20^{\\circ}C$ y $T_1$ es $10^{\\circ}C$, ¿podemos decir que hace el doble de calor? (Responda 1 para Sí, 0 para No).",
+          "respuesta": 0,
+          "tolerancia": 0,
+          "pista": "No, porque la escala de intervalo no tiene cero absoluto."
+        },
+        {
+          "id": "p20d",
+          "label": "d)",
+          "enunciado": "Si sumamos 273 a cada valor para pasar a Kelvin (escala de razón), ¿cuál sería el valor de $T_3$?",
+          "respuesta": 268,
+          "tolerancia": 0,
+          "pista": "$$-5 + 273 = 268$$"
+        }
+      ]
+    }
+  ],
+  "formulas": [
+    {
+      "nombre": "Representación de dato individual",
+      "latex": "$$X_{i}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Secuencia o distribución de datos",
+      "latex": "$$X_{1}, X_{2}, ..., X_{n}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Media poblacional (Parámetro)",
+      "latex": "$$\\mu$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Varianza poblacional (Parámetro)",
+      "latex": "$$\\sigma^{2}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Proporción poblacional (Parámetro)",
+      "latex": "$$\\pi$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Media muestral (Estadístico)",
+      "latex": "$$\\overline{X}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Varianza muestral (Estadístico)",
+      "latex": "$$S^{2}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Proporción muestral (Estadístico)",
+      "latex": "$$p$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Posibilidades de muestreo con reposición",
+      "latex": "$$N^{n}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    },
+    {
+      "nombre": "Ejemplo de puntuación específica",
+      "latex": "$$x_{5}=27$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
+    }
+  ]
+}

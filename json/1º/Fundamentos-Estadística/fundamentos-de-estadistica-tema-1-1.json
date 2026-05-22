@@ -1,76 +1,1680 @@
 {
   "quiz": [
     {
-      "q": "¿Cuál es el objetivo principal de la estadística descriptiva?",
+      "q": "1. La ciencia en psicología puede estudiar procesos mentales no observables directamente mediante el uso de métodos indirectos.",
       "opciones": [
-        "Extraer conclusiones válidas para toda una población a partir de una muestra.",
-        "Organizar, resumir y presentar los datos de manera informativa.",
-        "Probar hipótesis científicas sobre parámetros desconocidos.",
-        "Establecer relaciones causales definitivas entre variables."
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
       ],
-      "correcta": 1,
-      "explicacion": "La estadística descriptiva se limita a describir y resumir los datos recopilados sin pretender generalizar a grupos más amplios."
+      "correcta": 0,
+      "explicacion": "Según el texto, aunque procesos mentales no sean directamente observables, la ciencia permite su estudio a través de herramientas como cuestionarios o entrevistas.",
+      "pista": "Revisa la sección sobre el objeto de estudio de la ciencia en el campo de la psicología."
     },
     {
-      "q": "Un parámetro es una medida numérica que describe una característica de:",
+      "q": "2. El principio de parsimonia sugiere que, ante dos explicaciones con igual capacidad, se debe preferir la más compleja y detallada.",
       "opciones": [
-        "Una muestra.",
-        "Una población.",
-        "Un experimento controlado.",
-        "Un estadístico muestral."
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
       ],
       "correcta": 1,
-      "explicacion": "Los parámetros describen características de toda la población (ej. la media poblacional μ), mientras que los estadísticos describen características de una muestra (ej. la media muestral x̄)."
+      "explicacion": "La parsimonia establece que, en igualdad de condiciones, son preferibles las explicaciones sencillas frente a las complejas.",
+      "pista": "Este principio también es conocido como la 'Navaja de Ockham'."
     },
     {
-      "q": "Si un investigador selecciona a cada vigésimo estudiante que entra a la biblioteca, ¿qué tipo de muestreo está realizando?",
+      "q": "3. El procedimiento deductivo es propio de las ciencias empíricas y conlleva un riesgo de generalización inductiva.",
       "opciones": [
-        "Muestreo aleatorio simple.",
-        "Muestreo sistemático.",
-        "Muestreo estratificado.",
-        "Muestreo por conglomerados."
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
       ],
       "correcta": 1,
-      "explicacion": "El muestreo sistemático selecciona elementos a intervalos regulares (cada k-ésimo elemento) a partir de un punto de inicio aleatorio."
+      "explicacion": "La deducción es propia de las ciencias formales y lleva a conclusiones inequívocas; es la inducción la que es propia de las empíricas y conlleva riesgo.",
+      "pista": "Diferencia entre ciencias formales y ciencias empíricas en relación con la lógica utilizada."
+    },
+    {
+      "q": "4. En la metodología selectiva, la falta de asignación aleatoria impide garantizar con certeza las causas de las relaciones halladas.",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 0,
+      "explicacion": "Como los grupos se forman naturalmente (sexo, edad), no hay control total sobre variables contaminadoras, limitando la inferencia causal.",
+      "pista": "Piensa en las limitaciones del control interno cuando los grupos se forman naturalmente."
+    },
+    {
+      "q": "5. La hipótesis nula ($H_{0}$) se formula para representar la suposición de que el efecto investigado es inexistente o irrelevante.",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 0,
+      "explicacion": "La $H_{0}$ postula que no hay diferencias o asociaciones, y es la que se comprueba en los análisis para ver si se mantiene o se rechaza.",
+      "pista": "Recuerda qué hipótesis es la que se somete directamente a contraste estadístico."
+    },
+    {
+      "q": "6. La validez externa de una investigación es máxima en situaciones de laboratorio con un control estricto de variables extrañas.",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 1,
+      "explicacion": "El control estricto aumenta la validez interna pero reduce la externa, ya que la situación se vuelve artificial y poco realista.",
+      "pista": "Asocia validez externa con realismo y capacidad de generalización a entornos naturales."
+    },
+    {
+      "q": "7. El determinismo científico postula que los fenómenos observados ocurren por azar y no por causas específicas identificables.",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 1,
+      "explicacion": "El determinismo sugiere que todos los eventos tienen causas específicas y no ocurren al azar, permitiendo descubrir conexiones causales.",
+      "pista": "Busca la premisa fundamental sobre la causalidad en el método científico."
+    },
+    {
+      "q": "8. Las hipótesis estadísticas $H_{0}$ y $H_{1}$ son exhaustivas porque entre ambas cubren todos los posibles resultados del experimento.",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 0,
+      "explicacion": "Son mutuamente excluyentes y exhaustivas porque no pueden ser ciertas a la vez y no hay una tercera posibilidad fuera de sus postulados.",
+      "pista": "Considera la relación lógica entre la igualdad y la desigualdad en los resultados posibles."
+    },
+    {
+      "q": "9. La variación sistemática secundaria o error se refiere a los efectos sobre la VD que no pueden ser explicados por el modelo de la VI.",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 0,
+      "explicacion": "El error o residuo es aquella variación que el modelo (la variable independiente) no logra capturar ni explicar.",
+      "pista": "Analiza qué parte de la variabilidad de los datos se atribuye a variables no controladas."
+    },
+    {
+      "q": "10. El nivel técnico-metodológico de la investigación es donde se interpretan los resultados a la luz de las teorías del marco teórico.",
+      "opciones": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correcta": 1,
+      "explicacion": "La interpretación de resultados pertenece al nivel teórico-conceptual; el nivel técnico-metodológico se centra en el 'cómo' investigar.",
+      "pista": "Diferencia entre el proceso de diseño y el proceso de interpretación conceptual."
+    },
+    {
+      "q": "11. Selecciona la afirmación correcta respecto a los objetivos de la ciencia:",
+      "opciones": [
+        "Describir es el paso final que ocurre tras explicar las conexiones causales de los fenómenos.",
+        "Explicar busca descubrir la conexión causal bajo la premisa de que los eventos tienen causas.",
+        "Controlar es imposible si no se conocen previamente las leyes que subyacen a la realidad física."
+      ],
+      "correcta": 1,
+      "explicacion": "La explicación causal es un objetivo central basado en el determinismo; la descripción es el primer paso, no el final.",
+      "pista": "Revisa el orden lógico de los objetivos científicos mencionados en el texto."
+    },
+    {
+      "q": "12. Selecciona la afirmación correcta sobre el procedimiento inductivo:",
+      "opciones": [
+        "Parte de leyes generales para explicar datos observados en situaciones particulares.",
+        "Se conoce como generalización inductiva y es el método propio de las ciencias formales.",
+        "Consiste en elaborar teorías y leyes generales a partir de la observación de eventos singulares."
+      ],
+      "correcta": 2,
+      "explicacion": "La inducción va de lo particular a lo general, generando nuevo conocimiento a partir de datos empíricos.",
+      "pista": "Identifica la dirección del flujo de conocimiento: de lo particular a lo general o viceversa."
+    },
+    {
+      "q": "13. Selecciona la afirmación correcta sobre la metodología experimental:",
+      "opciones": [
+        "Se caracteriza por la ausencia de manipulación de las posibles causas o variables independientes.",
+        "Permite identificar causas mediante la manipulación de la VI y el control de variables extrañas.",
+        "Su principal ventaja es que goza de una validez externa superior a la metodología observacional."
+      ],
+      "correcta": 1,
+      "explicacion": "La experimentación es la única que permite establecer causalidad gracias al control y la manipulación intencionada.",
+      "pista": "Enfócate en la relación entre el control del investigador y la capacidad explicativa."
+    },
+    {
+      "q": "14. Selecciona la afirmación correcta sobre las hipótesis estadísticas:",
+      "opciones": [
+        "La hipótesis alternativa ($H_{1}$) se representa matemáticamente siempre mediante signos de igualdad.",
+        "La hipótesis nula ($H_{0}$) y la alternativa ($H_{1}$) pueden ser aceptadas simultáneamente.",
+        "Se rechaza la $H_{0}$ cuando los análisis indican que existe un efecto o diferencia significativa."
+      ],
+      "correcta": 2,
+      "explicacion": "Si se encuentra evidencia de un efecto, se rechaza la suposición de efecto nulo ($H_{0}$) para apoyar la experimental ($H_{1}$).",
+      "pista": "Recuerda la relación de exclusión mutua entre las dos hipótesis estadísticas."
+    },
+    {
+      "q": "15. Selecciona la afirmación correcta sobre el nivel teórico-conceptual:",
+      "opciones": [
+        "Incluye la delimitación del problema, la formulación de hipótesis y la discusión de resultados.",
+        "Se centra exclusivamente en la selección de la muestra y el protocolo de actuación cronológico.",
+        "Es el nivel donde se realizan los ajustes de modelos estadísticos y la inferencia de la $H_{0}$."
+      ],
+      "correcta": 0,
+      "explicacion": "El nivel teórico-conceptual abarca desde la base teórica inicial hasta la interpretación final de lo hallado.",
+      "pista": "Este nivel responde al 'qué' y al 'por qué' de la investigación."
+    },
+    {
+      "q": "16. Selecciona la afirmación correcta sobre la estadística inferencial:",
+      "opciones": [
+        "Se limita a resumir y organizar los datos de la muestra para que resulten fáciles de comprender.",
+        "Utiliza la probabilidad para generalizar conclusiones de una muestra a la población completa.",
+        "Es totalmente exacta y no conlleva ningún margen de error al extrapolar los resultados."
+      ],
+      "correcta": 1,
+      "explicacion": "La inferencia estadística busca deducir propiedades de una población basándose en una muestra representativa.",
+      "pista": "Considera el propósito de ir más allá de los datos descriptivos observados."
+    },
+    {
+      "q": "17. Selecciona la afirmación correcta sobre el diseño de investigación:",
+      "opciones": [
+        "Un diseño excelente puede compensar y arreglar una investigación con bases teóricas pobres.",
+        "Es el procedimiento metodológico destinado a lograr los objetivos, integrándolos con el método.",
+        "Los diseños intrasujeto comparan grupos diferentes en un único momento temporal del estudio."
+      ],
+      "correcta": 1,
+      "explicacion": "El diseño estructura cómo se recolectarán y analizarán los datos para responder a las preguntas de investigación.",
+      "pista": "Busca la definición funcional del diseño dentro del nivel técnico-metodológico."
+    },
+    {
+      "q": "18. Selecciona la afirmación correcta sobre la validez interna:",
+      "opciones": [
+        "Es la seguridad de que los cambios en la VD son consecuencia directa de la manipulación de la VI.",
+        "Es máxima en la metodología selectiva debido a que utiliza muestras altamente representativas.",
+        "Se refiere a la capacidad de extrapolar los resultados a situaciones reales del mundo exterior."
+      ],
+      "correcta": 0,
+      "explicacion": "La validez interna mide el grado en que podemos confiar en la relación causal establecida en el estudio.",
+      "pista": "Relaciona este término con el control de variables contaminadoras y la causalidad."
+    },
+    {
+      "q": "19. Selecciona la afirmación correcta sobre las hipótesis empíricas:",
+      "opciones": [
+        "Son enunciados abstractos derivados de leyes que no pueden ser contrastados en la práctica.",
+        "Se plantean como conjeturas concretas que pueden ser comprobadas mediante experimentación.",
+        "Son idénticas a las hipótesis estadísticas y se expresan solo mediante fórmulas matemáticas."
+      ],
+      "correcta": 1,
+      "explicacion": "Las hipótesis empíricas traducen las ideas teóricas a situaciones observables y medibles para su contraste.",
+      "pista": "Diferencia entre el nivel de abstracción de las teorías y la concreción de los experimentos."
+    },
+    {
+      "q": "20. Selecciona la afirmación correcta sobre el muestreo en psicología:",
+      "opciones": [
+        "La muestra debe ser representativa de la población para permitir la inferencia estadística válida.",
+        "El tamaño de la muestra es el único factor que garantiza que los resultados sean generalizables.",
+        "Para estudiar una población, es obligatorio entrevistar a todos y cada uno de sus individuos."
+      ],
+      "correcta": 0,
+      "explicacion": "La representatividad asegura que las características de la muestra reflejan fielmente las de la población.",
+      "pista": "Considera qué hace que una parte sea un buen reflejo del todo."
+    },
+    {
+      "q": "21. Selecciona la afirmación correcta sobre la estructura de los instrumentos:",
+      "opciones": [
+        "No es necesario describir la fiabilidad de los test utilizados si son de uso común en la clínica.",
+        "La fiabilidad de los cuestionarios se especifica generalmente con el índice Alfa de Cronbach.",
+        "Los instrumentos como ordenadores personales deben ser detallados minuciosamente en el texto."
+      ],
+      "correcta": 1,
+      "explicacion": "El Alfa de Cronbach es la medida estándar de fiabilidad citada en el nivel técnico-metodológico.",
+      "pista": "Busca el estándar psicométrico mencionado para medir la consistencia de una herramienta."
+    },
+    {
+      "q": "22. Selecciona la afirmación correcta sobre la investigación cuasiexperimental:",
+      "opciones": [
+        "Es idéntica a la experimental pero se realiza en contextos naturales sin manipular ninguna VI.",
+        "No utiliza asignación aleatoria pero sí manipula la VI y controla variables contaminadoras.",
+        "Carece por completo de validez interna debido a que el investigador no interviene en absoluto."
+      ],
+      "correcta": 1,
+      "explicacion": "La cuasiexperimentación mantiene la manipulación pero pierde la aleatorización en la formación de grupos.",
+      "pista": "Identifica qué elemento de la experimentación pura falta en este diseño."
+    },
+    {
+      "q": "23. Selecciona la afirmación correcta sobre la lógica de la ciencia según Pardo et al.:",
+      "opciones": [
+        "La inducción y la deducción son procesos opuestos que no pueden integrarse en un mismo estudio.",
+        "La deducción permite verificar si el conocimiento establecido se sostiene frente a la evidencia.",
+        "Las ciencias empíricas se basan exclusivamente en la deducción para generar nuevas leyes."
+      ],
+      "correcta": 1,
+      "explicacion": "La deducción pone a prueba teorías generales en situaciones particulares para verificar su validez.",
+      "pista": "Analiza la función de la deducción en el esquema de comprobación de teorías."
+    },
+    {
+      "q": "24. Selecciona la afirmación correcta sobre la variación sistemática primaria:",
+      "opciones": [
+        "Es el grado en que los cambios en la variable dependiente se dueben al modelo de la VI.",
+        "Representa el error de medida que impide detectar el efecto real de la variable independiente.",
+        "Se maximiza cuando el control de las variables contaminadoras es inexistente o muy escaso."
+      ],
+      "correcta": 0,
+      "explicacion": "Es la variabilidad deseada, aquella que se puede atribuir directamente al factor que estamos estudiando.",
+      "pista": "Relaciona 'primaria' con el objetivo principal del experimento."
+    },
+    {
+      "q": "25. Selecciona la afirmación correcta sobre la hipótesis nula en términos matemáticos:",
+      "opciones": [
+        "Se representa como $H_{0}: \\overline{X}_{1} \\ne \\overline{X}_{2}$, indicando que los promedios son diferentes.",
+        "Siempre utiliza signos de desigualdad como $>$ o $<$ para predecir la dirección del efecto.",
+        "Se representa como $H_{0}: \\overline{X}_{1} = \\overline{X}_{2}$, indicando que no hay diferencias entre grupos."
+      ],
+      "correcta": 2,
+      "explicacion": "La $H_{0}$ postula igualdad o ausencia de efecto, por lo que utiliza el signo igual.",
+      "pista": "Recuerda qué símbolos matemáticos definen el concepto de 'nulo' o 'igual'."
+    },
+    {
+      "q": "26. Selecciona la afirmación INCORRECTA sobre el método científico:",
+      "opciones": [
+        "Garantiza que el conocimiento sea observable, accesible al público, preciso y replicable.",
+        "Solo estudia fenómenos susceptibles de ser observados y sometidos a contrastación empírica.",
+        "Permite considerar como científicos postulados que no pueden ser contrastados con la realidad."
+      ],
+      "correcta": 2,
+      "explicacion": "Cualquier propuesta que no pueda contrastarse con la realidad observable no es considerada ciencia.",
+      "pista": "La contrastación empírica es un requisito sine qua non de la ciencia."
+    },
+    {
+      "q": "27. Selecciona la afirmación INCORRECTA sobre los principios de Ramos et al.:",
+      "opciones": [
+        "La replicabilidad permite que otros científicos repitan el proceso para verificar hallazgos.",
+        "La objetividad es una característica prescindible si el investigador tiene mucha experiencia.",
+        "La comprobabilidad exige que cada causa de un fenómeno observado pueda ser medida."
+      ],
+      "correcta": 1,
+      "explicacion": "La objetividad es una característica imprescindible, no prescindible, para garantizar resultados libres de sesgos.",
+      "pista": "La objetividad es la base para evitar sesgos personales en los resultados."
+    },
+    {
+      "q": "28. Selecciona la afirmación INCORRECTA sobre el modelo hipotético-deductivo:",
+      "opciones": [
+        "Es un esquema mixto donde las observaciones llevan a hipótesis y estas se prueban empíricamente.",
+        "En este enfoque, la teoría y la observación trabajan por separado sin interacción alguna.",
+        "Permite el incremento constante del conocimiento mediante el ajuste de teorías según los datos."
+      ],
+      "correcta": 1,
+      "explicacion": "El enfoque mixto es fundamental porque permite que la teoría y la observación trabajen de la mano.",
+      "pista": "Este modelo es precisamente la unión de los dos enfoques lógicos."
+    },
+    {
+      "q": "29. Selecciona la afirmación INCORRECTA sobre la metodología observacional:",
+      "opciones": [
+        "Su objetivo principal es identificar relaciones de causa-efecto entre variables complejas.",
+        "Se caracteriza por la recopilación de datos sin interferir en los eventos o variables estudiados.",
+        "Es apropiada en situaciones donde no se puede experimentar por razones éticas o sociales."
+      ],
+      "correcta": 0,
+      "explicacion": "El objetivo de la metodología observacional es descriptivo, no explicativo o causal.",
+      "pista": "La causalidad requiere un nivel de control que este método no posee."
+    },
+    {
+      "q": "30. Selecciona la afirmación INCORRECTA sobre la metodología selectiva:",
+      "opciones": [
+        "Los participantes se seleccionan basándose en características que ya presentan naturalmente.",
+        "Permite descubrir asociaciones y previsiones que pueden generalizarse a la población.",
+        "Garantiza un control máximo sobre las variables contaminadoras mediante asignación aleatoria."
+      ],
+      "correcta": 2,
+      "explicacion": "En la metodología selectiva NO existe asignación aleatoria, lo que limita el control sobre variables extrañas.",
+      "pista": "Piensa en cómo se forman los grupos en una encuesta vs un experimento."
+    },
+    {
+      "q": "31. Selecciona la afirmación INCORRECTA sobre las fases de la investigación:",
+      "opciones": [
+        "La discusión de resultados se integra en el nivel teórico-conceptual al final del ciclo.",
+        "El procedimiento describe el protocolo de actuación cronológico para asegurar la replicabilidad.",
+        "Los objetivos de la investigación son idénticos a las hipótesis y se redactan igual."
+      ],
+      "correcta": 2,
+      "explicacion": "Confundir objetivos con hipótesis es un error; los objetivos son metas y las hipótesis son expectativas de resultados.",
+      "pista": "Diferencia entre 'meta a alcanzar' y 'resultado esperado'."
+    },
+    {
+      "q": "32. Selecciona la afirmación INCORRECTA sobre la estadística en psicología:",
+      "opciones": [
+        "Francis Galton fue pionero en el uso de datos para estudiar cualidades como la inteligencia.",
+        "La estadística descriptiva se utiliza para inferir relaciones en la población completa.",
+        "La estadística permite determinar si un fenómeno es anómalo analizando su prevalencia."
+      ],
+      "correcta": 1,
+      "explicacion": "La estadística descriptiva se limita a la muestra; es la inferencial la que generaliza a la población.",
+      "pista": "Distingue entre describir una muestra y hacer inferencias sobre un todo."
+    },
+    {
+      "q": "33. Selecciona la afirmación INCORRECTA sobre la validez de los estudios:",
+      "opciones": [
+        "La validez externa es la precisión a la hora de extrapolar resultados a la vida real.",
+        "La validez interna aumenta a medida que disminuye el control del investigador sobre el entorno.",
+        "Un experimento de laboratorio suele tener alta validez interna pero baja validez externa."
+      ],
+      "correcta": 1,
+      "explicacion": "La validez interna aumenta con el control; a menor control, menor seguridad de la relación causal.",
+      "pista": "El control es el mejor amigo de la validez interna."
+    },
+    {
+      "q": "34. Selecciona la afirmación INCORRECTA sobre las variables:",
+      "opciones": [
+        "La variable independiente (VI) es la que el investigador manipula intencionadamente.",
+        "La variable dependiente (VD) es el efecto o resultado que se mide tras la manipulación.",
+        "Las variables contaminadoras son aquellas que el investigador manipula para ver sus efectos."
+      ],
+      "correcta": 2,
+      "explicacion": "Las variables contaminadoras deben ser controladas o eliminadas, no manipuladas como causas.",
+      "pista": "Las variables contaminadoras son indeseadas en el modelo causal."
+    },
+    {
+      "q": "35. Selecciona la afirmación INCORRECTA sobre el contraste de hipótesis:",
+      "opciones": [
+        "La hipótesis alternativa ($H_{1}$) se conoce también como hipótesis experimental.",
+        "Si los datos muestran que no hay efecto, se debe rechazar obligatoriamente la $H_{0}$.",
+        "La $H_{0}$ y la $H_{1}$ son excluyentes: si una es verdadera, la otra debe ser falsa."
+      ],
+      "correcta": 1,
+      "explicacion": "Si no hay efecto, se mantiene (no se rechaza) la hipótesis nula ($H_{0}$).",
+      "pista": "Piensa en qué sucede cuando no encontramos evidencia suficiente para el cambio."
+    },
+    {
+      "q": "36. Selecciona la afirmación INCORRECTA sobre la parsimonia:",
+      "opciones": [
+        "Indica que la explicación más simple es preferible si explica igual de bien el fenómeno.",
+        "Es un principio que busca evitar complicaciones innecesarias en las teorías científicas.",
+        "Obliga a rechazar cualquier teoría compleja aunque sea la única que explique los datos."
+      ],
+      "correcta": 2,
+      "explicacion": "La parsimonia solo aplica 'en igualdad de condiciones'; si una teoría compleja es la única válida, se acepta.",
+      "pista": "La parsimonia es un criterio de elección entre explicaciones equivalentes, no un veto absoluto."
+    },
+    {
+      "q": "37. Selecciona la afirmación INCORRECTA sobre la ética en la investigación:",
+      "opciones": [
+        "La experimentación es apropiada siempre que se cumplan todas las garantías éticas y sociales.",
+        "Se puede experimentar con humanos sin restricciones si el fin científico es muy importante.",
+        "Los métodos observacionales son útiles cuando la experimentación no es ética."
+      ],
+      "correcta": 1,
+      "explicacion": "La experimentación siempre debe respetar las garantías éticas; no hay fin que justifique saltarse la ética.",
+      "pista": "La ciencia está supeditada a normas de respeto a los participantes."
+    },
+    {
+      "q": "38. Selecciona la afirmación INCORRECTA sobre la generalización inductiva:",
+      "opciones": [
+        "Conlleva un riesgo porque se asume que lo observado en unos casos aplica a todos.",
+        "Es el proceso mediante el cual se construyen teorías a partir de situaciones particulares.",
+        "Es un proceso infalible que garantiza conclusiones inequívocas en todos los casos."
+      ],
+      "correcta": 2,
+      "explicacion": "La inducción conlleva riesgo; no es infalible, como demuestra el hecho de que un solo caso puede refutarla.",
+      "pista": "Recuerda el ejemplo de los cisnes blancos del manual."
+    },
+    {
+      "q": "39. Selecciona la afirmación INCORRECTA sobre la discusión en una investigación:",
+      "opciones": [
+        "Consiste en brindar una respuesta al problema de estudio planteado inicialmente.",
+        "Se limita a mostrar las tablas de frecuencias y gráficos sin interpretarlos teóricamente.",
+        "Ajusta los nuevos hallazgos a las teorías revisadas al principio del estudio."
+      ],
+      "correcta": 1,
+      "explicacion": "La discusión interpreta los datos a la luz de la teoría; la mera presentación de tablas es el análisis.",
+      "pista": "La discusión es el puente entre los datos fríos y la teoría conceptual."
+    },
+    {
+      "q": "40. Selecciona la afirmación INCORRECTA sobre la potencia estadística:",
+      "opciones": [
+        "Es la capacidad de una investigación para detectar un efecto de la VI cuando realmente existe.",
+        "Aumenta cuando disponemos de una cantidad suficiente de datos de alta calidad.",
+        "Disminuye drásticamente cuando se logra un control total de las variables contaminadoras."
+      ],
+      "correcta": 2,
+      "explicacion": "Al contrario, el control de variables contaminadoras reduce el error y aumenta la potencia estadística.",
+      "pista": "Piensa en el ruido (error) y cómo afecta a la detección de la señal (efecto)."
+    },
+    {
+      "q": "La premisa que sugiere que los fenómenos observables no ocurren al azar, sino vinculados a causas identificables, es el/la ____.",
+      "opciones": [
+        "Principio de determinismo científico",
+        "Principio de parsimonia sistemática",
+        "Principio de replicabilidad empírica"
+      ],
+      "correcta": 0,
+      "explicacion": "El determinismo postula que los eventos tienen causas específicas, permitiendo a la ciencia buscar la conexión causal mediante el método científico según el texto.",
+      "pista": "Se basa en la conexión causal de los eventos."
+    },
+    {
+      "q": "El proceso de elaboración de teorías y leyes a partir de la observación de eventos singulares se conoce específicamente como ____.",
+      "opciones": [
+        "Generalización de tipo inductiva",
+        "Generalización de tipo deductiva",
+        "Generalización de tipo hipotética"
+      ],
+      "correcta": 0,
+      "explicacion": "La inducción consiste en extraer conclusiones generales a partir de situaciones particulares, asumiendo un riesgo inherente de error.",
+      "pista": "Va de lo particular a lo general."
+    },
+    {
+      "q": "En el marco de la investigación experimental, la manipulación intencionada de una variable para ver su efecto se aplica sobre la ____.",
+      "opciones": [
+        "Variable de carácter dependiente",
+        "Variable de carácter antecedente",
+        "Variable de carácter extraña-VI"
+      ],
+      "correcta": 1,
+      "explicacion": "En el texto se indica que la manipulación de las causas corresponde a las variables independientes ($\\text{VI}$), también llamadas antecedentes.",
+      "pista": "Es la causa (VI) que el investigador controla."
+    },
+    {
+      "q": "La estadística inferencial utiliza la probabilidad para deducir relaciones en la población a partir de datos de una ___.",
+      "opciones": [
+        "Muestra de tipo representativa",
+        "Muestra de tipo probabilística",
+        "Muestra de tipo estratificada"
+      ],
+      "correcta": 0,
+      "explicacion": "Para extrapolar conclusiones a la población ($\\text{N}$), la estadística requiere que la muestra ($\\text{n}$) sea representativa.",
+      "pista": "Debe reflejar con precisión las características de la población."
+    },
+    {
+      "q": "Si planteamos que no hay diferencias entre dos grupos tras un tratamiento, estamos formulando matemáticamente la .",
+      "opciones": [
+        "Hipótesis estadística de tipo $H_{1}$",
+        "Hipótesis estadística de tipo $H_{0}$",
+        "Hipótesis estadística de tipo $H_{e}$"
+      ],
+      "correcta": 1,
+      "explicacion": "La hipótesis nula ($H_{0}$) asume que las diferencias son inexistentes o irrelevantes: $H_{0}: \\mu_{1} - \\mu_{2} = 0$.",
+      "pista": "Es la hipótesis que se pone a prueba y supone efecto nulo."
+    },
+    {
+      "q": "El nivel técnico-metodológico del proceso de investigación en psicología responde fundamentalmente a la pregunta ____.",
+      "opciones": [
+        "¿Qué es lo que se va a investigar?",
+        "¿Cómo se va a investigar el tema?",
+        "¿Por qué se va a investigar esto?"
+      ],
+      "correcta": 1,
+      "explicacion": "Mientras el nivel teórico responde al 'qué' y 'por qué', el nivel técnico-metodológico se centra en el 'cómo' (procedimiento).",
+      "pista": "Se refiere a las estrategias, diseño y procedimientos."
+    },
+    {
+      "q": "El índice de fiabilidad más común para describir la consistencia interna de un instrumento validado es el ____.",
+      "opciones": [
+        "Coeficiente de tipo Alfa Cronbach",
+        "Coeficiente de tipo Beta Spearman",
+        "Coeficiente de tipo Gamma Pearson"
+      ],
+      "correcta": 0,
+      "explicacion": "El texto especifica que la fiabilidad de los cuestionarios se indica generalmente con el índice Alfa de Cronbach ($\\alpha$).",
+      "pista": "Mencionado en la descripción de instrumentos del nivel técnico."
+    },
+    {
+      "q": "Un diseño en el que se mide a un único grupo en varias ocasiones temporales se denomina diseño de tipo ____.",
+      "opciones": [
+        "Comparación de tipo intersujeto",
+        "Comparación de tipo intrasujeto",
+        "Comparación de tipo mixto-factorial"
+      ],
+      "correcta": 1,
+      "explicacion": "Los diseños intrasujeto implican medir al mismo grupo en diferentes condiciones o momentos: $t_{1}, t_{2}, ..., t_{k}$.",
+      "pista": "Las medidas se toman dentro del mismo grupo."
+    },
+    {
+      "q": "La metodología que busca descubrir asociaciones y previsiones entre variables sin establecer causalidad es la ____.",
+      "opciones": [
+        "Metodología de tipo selectiva",
+        "Metodología de tipo predictiva",
+        "Metodología de tipo causalidad"
+      ],
+      "correcta": 0,
+      "explicacion": "La metodología selectiva (o de encuesta) busca relaciones o asociaciones, pero 'asociación no implica causalidad'.",
+      "pista": "Se asocia con encuestas y objetivos correlacionales."
+    },
+    {
+      "q": "El conjunto de efectos sobre la VD que el modelo de la VI no puede explicar se denomina ____.",
+      "opciones": [
+        "Variación sistemática secundaria",
+        "Variación sistemática principal",
+        "Variación sistemática primaria"
+      ],
+      "correcta": 0,
+      "explicacion": "La variación sistemática secundaria o error ($\\epsilon$) es la influencia de variables contaminadoras no controladas por el modelo.",
+      "pista": "También se conoce como error o residuo."
+    },
+    {
+      "q": "Para afirmar que la $H_{1}$ es cierta, en términos de decisión estadística, es obligatorio haber .",
+      "opciones": [
+        "Aceptado la hipótesis nula $H_{0}$",
+        "Rechazado la hipótesis nula $H_{0}$",
+        "Mantenido la hipótesis nula $H_{0}$"
+      ],
+      "correcta": 1,
+      "explicacion": "Solo se acepta la existencia de un efecto ($H_{1}$) si la evidencia permite rechazar la suposición de efecto nulo ($H_{0}$).",
+      "pista": "Son hipótesis mutuamente excluyentes y exhaustivas."
+    },
+    {
+      "q": "La característica del método científico que permite que cualquier otro miembro de la comunidad repita el estudio es la ____.",
+      "opciones": [
+        "Capacidad de parsimonia teórica",
+        "Capacidad de replicabilidad real",
+        "Capacidad de objetividad externa"
+      ],
+      "correcta": 1,
+      "explicacion": "La replicabilidad garantiza que el procedimiento sea público y reproducible por otros investigadores para confirmar hallazgos.",
+      "pista": "Esencial para verificar o falsar el conocimiento."
+    },
+    {
+      "q": "Cuando se utilizan teorías generales para explicar datos u observaciones particulares, aplicamos la lógica de tipo ____.",
+      "opciones": [
+        "Procedimiento de tipo inductivo",
+        "Procedimiento de tipo deductivo",
+        "Procedimiento de tipo ecléctico"
+      ],
+      "correcta": 1,
+      "explicacion": "La deducción parte de leyes generales para explicar hechos particulares: $\\text{Teoría} \\rightarrow \\text{Datos}$.",
+      "pista": "Propio de las ciencias formales y lleva a conclusiones inequívocas."
+    },
+    {
+      "q": "En el contraste de hipótesis para medias, la expresión matemática $\\overline{X}_{1} \\neq \\overline{X}_{2}$ representa la ____.",
+      "opciones": [
+        "Hipótesis nula de la investigación",
+        "Hipótesis alterna de investigación",
+        "Hipótesis media de la investigación"
+      ],
+      "correcta": 1,
+      "explicacion": "La hipótesis alternativa ($H_{1}$) se representa con signos de desigualdad ($\\neq, >, <$) indicando que existe un efecto o diferencia.",
+      "pista": "Utiliza signos de desigualdad para indicar un efecto."
+    },
+    {
+      "q": "La rama de la estadística que se limita a resumir y organizar los datos de una muestra para facilitar su comprensión es la ____.",
+      "opciones": [
+        "Estadística de tipo descriptiva",
+        "Estadística de tipo inferencial",
+        "Estadística de tipo diferencial"
+      ],
+      "correcta": 0,
+      "explicacion": "La estadística descriptiva organiza datos mediante tablas, gráficos o índices sin pretender generalizar a la población.",
+      "pista": "Dice 'cómo son las cosas' en la muestra analizada."
+    },
+    {
+      "q": "La metodología que ofrece el grado máximo de naturalidad pero carece de control interno es la ____.",
+      "opciones": [
+        "Metodología de tipo experimental",
+        "Metodología de tipo selectiva",
+        "Metodología de tipo observacional"
+      ],
+      "correcta": 2,
+      "explicacion": "La observación naturalista prioriza la validez externa sobre el control de variables contaminadoras (validez interna mínima).",
+      "pista": "Se realiza en contextos de campo o naturales."
+    },
+    {
+      "q": "Los enunciados que predicen resultados concretos tras una revisión bibliográfica se denominan ____.",
+      "opciones": [
+        "Hipótesis de carácter empírico",
+        "Hipótesis de carácter teórico",
+        "Hipótesis de carácter nulo-final"
+      ],
+      "correcta": 0,
+      "explicacion": "A diferencia de las teóricas, las hipótesis empíricas son contrastables directamente mediante la observación o experimentación.",
+      "pista": "Son conjeturas que pueden ser comprobadas en la práctica."
+    },
+    {
+      "q": "Un estudio que utiliza asignación aleatoria para crear grupos equivalentes y manipula la VI busca un objetivo ____.",
+      "opciones": [
+        "Objetivo de carácter descriptivo",
+        "Objetivo de carácter relacional",
+        "Objetivo de carácter explicativo"
+      ],
+      "correcta": 2,
+      "explicacion": "La metodología experimental tiene como fin explicar las causas de los fenómenos mediante el control y la manipulación.",
+      "pista": "Busca entender por qué sucede un fenómeno (causa-efecto)."
+    },
+    {
+      "q": "La validez que se refiere a la precisión a la hora de extrapolar los resultados a situaciones reales es la ____.",
+      "opciones": [
+        "Validez de tipo interna-control",
+        "Validez de tipo externa-realismo",
+        "Validez de tipo teórica-conceptual"
+      ],
+      "correcta": 1,
+      "explicacion": "La validez externa mide qué tan generalizables son los resultados a contextos naturales fuera del laboratorio controlado.",
+      "pista": "Relacionada con el realismo de la situación de estudio."
+    },
+    {
+      "q": "El término alemán 'Statistik', acuñado por Gottfried Achenwall, se asociaba originalmente al estudio de la ____.",
+      "opciones": [
+        "Ciencia de las leyes naturales",
+        "Ciencia del Estado y censos",
+        "Ciencia de la mente humana"
+      ],
+      "correcta": 1,
+      "explicacion": "Etimológicamente, la estadística nació ligada al recuento de datos de interés para el Estado (censos, recursos, etc.).",
+      "pista": "Se refiere al origen etimológico de la estadística."
+    },
+    {
+      "q": "Sobre los objetivos de la ciencia según el texto, indique la opción correcta:",
+      "opciones": [
+        "Explicar, describir, predecir y controlar.",
+        "Observar, medir, cuantificar y publicar.",
+        "Intervenir, intuir, sesgar y manipular."
+      ],
+      "correcta": 0,
+      "explicacion": "Los objetivos son explicar (causalidad), describir (qué sucede), predecir (probabilidad futura) y controlar (ocurrencia).",
+      "pista": "Consulte la lista de objetivos en la página 6 y 7."
+    },
+    {
+      "q": "Las características fundamentales del conocimiento científico incluyen que este sea:",
+      "opciones": [
+        "Subjetivo, privado e irrefutable.",
+        "Observable, accesible al público, objetivo, preciso y replicable.",
+        "Aleatorio, desestructurado y dependiente del investigador."
+      ],
+      "correcta": 1,
+      "explicacion": "El conocimiento debe ser observable, accesible al público, objetivo, preciso, fiable y replicable según el consenso internacional.",
+      "pista": "Se mencionan en la introducción del Capítulo 1."
+    },
+    {
+      "q": "Respecto a la metodología experimental, se caracteriza fundamentalmente por:",
+      "opciones": [
+        "La ausencia de control sobre variables extrañas.",
+        "El registro pasivo de variables en contextos naturales.",
+        "Manipulación de VI, medición de VD y control de variables contaminadoras."
+      ],
+      "correcta": 2,
+      "explicacion": "Implica manipulación de variables independientes, medición de variables dependientes y control de variables contaminadoras.",
+      "pista": "Revise las tres acciones principales en la página 10."
+    },
+    {
+      "q": "El nivel teórico-conceptual de la investigación en psicología comprende:",
+      "opciones": [
+        "Marco teórico, formulación de hipótesis y discusión de resultados.",
+        "Selección de la muestra y recogida empírica de datos.",
+        "Análisis estadístico descriptivo e inferencial."
+      ],
+      "correcta": 0,
+      "explicacion": "Incluye el marco teórico (introducción), la formulación de hipótesis (teóricas y empíricas) y la discusión/interpretación de resultados.",
+      "pista": "Abarca las fases iniciales y finales del pensamiento teórico."
+    },
+    {
+      "q": "Para que un diseño experimental sea válido y potente, el investigador debe:",
+      "opciones": [
+        "Basarse en muestras formadas naturalmente sin manipulación.",
+        "Tener alto control, estrategia manipulativa y asignación aleatoria.",
+        "Evitar el uso de grupos de control."
+      ],
+      "correcta": 1,
+      "explicacion": "Se requiere alto control, estrategia manipulativa y, preferiblemente, asignación aleatoria para garantizar grupos equivalentes.",
+      "pista": "Consulte la página 11 sobre el control del experimento."
+    },
+    {
+      "q": "La estadística es una herramienta esencial en psicología porque permite:",
+      "opciones": [
+        "Eliminar la necesidad de formular hipótesis teóricas.",
+        "Garantizar que no haya sesgos en la fase de recogida de datos.",
+        "Ordenar información, obtener conclusiones generales y contrastar tratamientos."
+      ],
+      "correcta": 2,
+      "explicacion": "Permite ordenar información, obtener conclusiones generales, contrastar eficacia de tratamientos y determinar normalidad/anomalía.",
+      "pista": "Lea la utilidad de la estadística en la página 21."
+    },
+    {
+      "q": "La metodología selectiva o de encuesta tiene las siguientes limitaciones:",
+      "opciones": [
+        "No hay asignación aleatoria, lo que limita inferir causalidad.",
+        "Tiene una validez interna superior al método experimental.",
+        "No utiliza muestras grandes de población."
+      ],
+      "correcta": 0,
+      "explicacion": "No hay asignación aleatoria, los grupos se forman naturalmente y existen posibles variables contaminadoras que limitan el control.",
+      "pista": "Página 10: por qué no puede establecer causalidad."
+    },
+    {
+      "q": "El proceso de revisión bibliográfica en el nivel teórico-conceptual sirve para:",
+      "opciones": [
+        "Realizar los cálculos matemáticos de la varianza.",
+        "Delimitar el problema, concretar conocimientos previos y fundamentar hipótesis.",
+        "Sustituir el trabajo empírico por teorías."
+      ],
+      "correcta": 1,
+      "explicacion": "Sirve para delimitar el problema, concretar conocimientos previos y fundamentar la formulación de hipótesis futuras.",
+      "pista": "Funciones de la bibliografía en la página 14."
+    },
+    {
+      "q": "Sobre las hipótesis estadísticas $H_{0}$ y $H_{1}$, se puede afirmar que:",
+      "opciones": [
+        "Pueden ser verdaderas simultáneamente.",
+        "Solo aplican en metodologías cualitativas.",
+        "Son mutuamente excluyentes y exhaustivas."
+      ],
+      "correcta": 2,
+      "explicacion": "Son mutuamente excluyentes, exhaustivas (cubren todo el espacio muestral) y una se acepta solo al rechazar la otra.",
+      "pista": "Propiedades de las hipótesis en la página 18."
+    },
+    {
+      "q": "Los principios generales del método científico según Ramos et al. incluyen:",
+      "opciones": [
+        "Determinismo, comprobabilidad, objetividad, empirismo, replicabilidad.",
+        "Subjetividad, dogmatismo, especulación y ocultación.",
+        "Exclusividad, intuición, deducción formal pura."
+      ],
+      "correcta": 0,
+      "explicacion": "Incluyen determinismo, comprobabilidad, objetividad, empirismo, replicabilidad, parsimonia y diseminación de resultados.",
+      "pista": "Enumérelos a partir de la lista en la página 7."
+    },
+    {
+      "q": "Indique cuál de las siguientes definiciones de 'Inducción' es correcta según el manual:",
+      "opciones": [
+        "Parte de leyes universales para explicar casos individuales.",
+        "Va de lo particular a lo general y no garantiza conclusiones inequívocas.",
+        "Es el procedimiento que elimina totalmente el error de medición."
+      ],
+      "correcta": 1,
+      "explicacion": "La inducción va de lo particular a lo general; sin embargo, no es infalible ni garantiza conclusiones absolutamente inequívocas por su riesgo de error.",
+      "pista": "La inducción no garantiza conclusiones inequívocas."
+    },
+    {
+      "q": "Sobre la relación entre 'Asociación' y 'Causalidad', el texto afirma que:",
+      "opciones": [
+        "Una fuerte asociación siempre garantiza una relación causal.",
+        "Ambos conceptos son estadísticamente idénticos.",
+        "La asociación NO implica causalidad; se requiere experimentación para probar causas."
+      ],
+      "correcta": 2,
+      "explicacion": "El texto aclara que la asociación NO implica causalidad; solo el experimento manipulativo permite inferir causas seguras.",
+      "pista": "Vea la metodología selectiva en la página 10."
+    },
+    {
+      "q": "En el nivel estadístico-analítico, la hipótesis nula se representa siempre con:",
+      "opciones": [
+        "Signos de igualdad ($=, \\le, \\ge$).",
+        "Signos de desigualdad estricta ($\\neq$).",
+        "Letras griegas exclusivamente sin signos relacionales."
+      ],
+      "correcta": 0,
+      "explicacion": "La $H_{0}$ siempre incluye signos de igualdad ($=, \\le, \\ge$); la alternativa es la que plantea diferencias.",
+      "pista": "Signos matemáticos de la $H_{0}$ en la página 18."
+    },
+    {
+      "q": "Un instrumento de medida en psicología, como un test, no necesita ser descrito si:",
+      "opciones": [
+        "Es un test psicológico recién diseñado.",
+        "Es de uso común (ej. un ordenador) y no requiere descripción psicométrica detallada.",
+        "Se utiliza en metodología observacional."
+      ],
+      "correcta": 1,
+      "explicacion": "Todos los test deben ser validados y referenciados. Solo instrumentos de uso común (como un ordenador o cronómetro) no requieren descripción detallada.",
+      "pista": "Consulte el apartado de 'Instrumentos' en la página 17."
+    },
+    {
+      "q": "La metodología cuasiexperimental se diferencia de la experimental pura porque:",
+      "opciones": [
+        "Carece por completo de validez externa.",
+        "No mide ninguna variable dependiente.",
+        "No hay asignación aleatoria de los participantes a los grupos."
+      ],
+      "correcta": 2,
+      "explicacion": "La diferencia clave es que en la cuasiexperimental no hay asignación aleatoria de los participantes a los grupos.",
+      "pista": "Página 11: qué elemento falta en el cuasiexperimento."
+    },
+    {
+      "q": "Sobre la 'Parsimonia', el método científico sugiere que en igualdad de condiciones:",
+      "opciones": [
+        "Se prefieren explicaciones sencillas frente a complejas.",
+        "Siempre debe optarse por el modelo matemático más avanzado.",
+        "Deben ignorarse las variables contaminadoras."
+      ],
+      "correcta": 0,
+      "explicacion": "Se prefieren explicaciones sencillas frente a complejas. Opciones que sugieren complicar las cosas son contrarias a la parsimonia.",
+      "pista": "Consulte la definición del principio en la página 7."
+    },
+    {
+      "q": "La estadística descriptiva permite generalizar resultados a la población mediante:",
+      "opciones": [
+        "El uso de la curva normal estándar.",
+        "Es falso, la descriptiva NO permite generalizar; esa es la inferencial.",
+        "El principio de replicabilidad estricta."
+      ],
+      "correcta": 1,
+      "explicacion": "La estadística descriptiva NO permite generalizar; esa es la función exclusiva de la estadística inferencial.",
+      "pista": "Página 21: diferencia entre descriptiva e inferencial."
+    },
+    {
+      "q": "La validez interna en la metodología observacional se caracteriza por ser:",
+      "opciones": [
+        "Garantizada por la manipulación aleatoria.",
+        "Equivalente a la del método experimental.",
+        "Muy poca o inexistente debido a la falta de control del investigador."
+      ],
+      "correcta": 2,
+      "explicacion": "En la metodología observacional la validez interna es 'muy poca' o inexistente debido a la falta de control del investigador.",
+      "pista": "Tabla 2 en la página 13 sobre validez interna."
+    },
+    {
+      "q": "El riesgo de sesgos de interpretación en la investigación es mayor cuando:",
+      "opciones": [
+        "Es mayor en la metodología observacional por su alta subjetividad.",
+        "Es exclusivo de la investigación de laboratorio.",
+        "Aumenta cuando se utilizan pruebas estandarizadas."
+      ],
+      "correcta": 0,
+      "explicacion": "Es mayor en la metodología observacional por su alta subjetividad. En la experimental, los datos son más objetivos y precisos.",
+      "pista": "Tabla 2: Objetividad/Subjetividad."
+    },
+    {
+      "q": "La discusión de resultados se sitúa en el nivel estadístico-analítico porque:",
+      "opciones": [
+        "Solo requiere el uso de software estadístico avanzado.",
+        "Es falso. Pertenece al nivel teórico-conceptual ya que interpreta los datos.",
+        "Ahí se formulan las hipótesis iniciales."
+      ],
+      "correcta": 1,
+      "explicacion": "Es falso. La discusión pertenece al nivel teórico-conceptual ya que interpreta los datos a la luz de la teoría revisada.",
+      "pista": "Relación entre discusión y marco teórico en la página 16."
     }
   ],
-
   "laboratorio": [
     {
-      "id": "lab-1-1-01",
-      "titulo": "Identificación de Conceptos Básicos",
-      "escenario": "Se realiza un estudio sobre la altura (en cm) de los estudiantes de la VIU. Para ello, se selecciona a un grupo de 10 estudiantes de Psicología de primer curso y se obtienen los siguientes valores: 165, 172, 180, 168, 175, 160, 182, 170, 169, 174.",
+      "id": 1,
+      "titulo": "El Algoritmo del Contraste de Hipótesis",
+      "escenario": "En un estudio sobre la eficacia de un programa de gestión del estrés, se postula que la media poblacional de ansiedad es $\\mu = 50$. Tras la intervención, una muestra de $n=25$ sujetos obtiene una media $\\bar{X} = 45$ con una desviación estándar $\\sigma = 10$. Fórmula del error estándar: $SE = \\frac{\\sigma}{\\sqrt{n}}$ y estadístico $Z = \\frac{\\bar{X} - \\mu}{SE}$.",
       "preguntas": [
         {
-          "enunciado": "¿Cuál es el valor medio de la altura de este grupo de estudiantes seleccionados? (Escribe la media aritmética con un decimal)",
-          "respuesta": 171.5,
+          "id": "p1a",
+          "label": "a)",
+          "enunciado": "Calcule el error estándar de la media ($SE$).",
+          "respuesta": 2,
           "tolerancia": 0.1,
-          "pista": "Suma los 10 valores de altura y divide el resultado entre 10.",
-          "unidad": "cm"
+          "pista": "$$SE = \\frac{10}{\\sqrt{25}} = \\frac{10}{5} = 2.0$$"
         },
         {
-          "enunciado": "¿Cuántos estudiantes de la muestra miden 170 cm o más?",
-          "respuesta": 6.0,
-          "tolerancia": 0.0,
-          "pista": "Cuenta cuántos valores en la lista son mayores o iguales a 170.",
-          "unidad": "estudiantes"
+          "id": "p1b",
+          "label": "b)",
+          "enunciado": "Determine el valor del estadístico $Z$ para la muestra observada.",
+          "respuesta": -2.5,
+          "tolerancia": 0.1,
+          "pista": "$$Z = \\frac{45 - 50}{2.0} = \\frac{-5}{2} = -2.5$$"
+        },
+        {
+          "id": "p1c",
+          "label": "c)",
+          "enunciado": "Si el valor crítico de $Z$ para $\\alpha=0.05$ (bilateral) es $\\pm 1.96$, ¿se debe rechazar la hipótesis nula $H_0$ (1 para sí, 0 para no)?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "$$|Z_{obs}| = 2.5 > Z_{crit} = 1.96 \\implies \\text{Rechazo } H_0$$"
+        },
+        {
+          "id": "p1d",
+          "label": "d)",
+          "enunciado": "Calcule la probabilidad de error tipo I si se acepta un nivel de significación de $\\alpha = 0.01$. Introduzca el valor decimal.",
+          "respuesta": 0.01,
+          "tolerancia": 0,
+          "pista": "$$\\text{El error tipo I es por definición el nivel } \\alpha = 0.01$$"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Consistencia Interna: Alfa de Cronbach",
+      "escenario": "Se valida un test de depresión de $k=10$ ítems. La suma de las varianzas de los ítems es $\\sum S_i^2 = 6.4$ y la varianza total del test es $S_t^2 = 25$. La fórmula es $\\alpha = \\frac{k}{k-1} \\left( 1 - \\frac{\\sum S_i^2}{S_t^2} \\right)$.",
+      "preguntas": [
+        {
+          "id": "p2a",
+          "label": "a)",
+          "enunciado": "Calcule el cociente de varianzas $\\frac{\\sum S_i^2}{S_t^2}$.",
+          "respuesta": 0.256,
+          "tolerancia": 0.01,
+          "pista": "$$\\frac{6.4}{25} = 0.256$$"
+        },
+        {
+          "id": "p2b",
+          "label": "b)",
+          "enunciado": "Calcule el factor de corrección por número de ítems $\\frac{k}{k-1}$.",
+          "respuesta": 1.111,
+          "tolerancia": 0.001,
+          "pista": "$$\\frac{10}{9} \\approx 1.111$$"
+        },
+        {
+          "id": "p2c",
+          "label": "c)",
+          "enunciado": "Determine el valor final del coeficiente Alfa de Cronbach.",
+          "respuesta": 0.827,
+          "tolerancia": 0.01,
+          "pista": "$$\\alpha = 1.111 \\cdot (1 - 0.256) = 1.111 \\cdot 0.744 = 0.8265... \\approx 0.827$$"
+        },
+        {
+          "id": "p2d",
+          "label": "d)",
+          "enunciado": "Si se eliminan 2 ítems problemáticos y la varianza total sube a 30 manteniendo la suma de varianzas en 5, calcule el nuevo $\\alpha$.",
+          "respuesta": 0.952,
+          "tolerancia": 0.01,
+          "pista": "$$\\alpha = \\frac{8}{7} \\cdot (1 - \\frac{5}{30}) = 1.1428 \\cdot 0.8333 = 0.952$$"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Variación Sistemática y Error",
+      "escenario": "En un experimento, la variabilidad total observada en la variable dependiente (VD) es de 120 unidades. Se determina que la Variación Sistemática Primaria (debida a la VI) es de 75 unidades y la Variación Sistemática Secundaria es de 30 unidades.",
+      "preguntas": [
+        {
+          "id": "p3a",
+          "label": "a)",
+          "enunciado": "Calcule la variación residual o error (variación no explicada).",
+          "respuesta": 15,
+          "tolerancia": 0,
+          "pista": "$$V_{total} - V_{primaria} - V_{secundaria} = 120 - 75 - 30 = 15$$"
+        },
+        {
+          "id": "p3b",
+          "label": "b)",
+          "enunciado": "Calcule el porcentaje de varianza explicado por la variable independiente.",
+          "respuesta": 62.5,
+          "tolerancia": 0.1,
+          "pista": "$$\\frac{75}{120} \\cdot 100 = 62.5\\%$$"
+        },
+        {
+          "id": "p3c",
+          "label": "c)",
+          "enunciado": "Determine la razón señal/ruido considerando el ruido como la suma de la variación secundaria y el error.",
+          "respuesta": 1.667,
+          "tolerancia": 0.01,
+          "pista": "$$\\text{Ruido} = 30 + 15 = 45. \\text{ Razón} = \\frac{75}{45} = 1.666...$$"
+        },
+        {
+          "id": "p3d",
+          "label": "d)",
+          "enunciado": "Si mediante un mejor control experimental se reduce la variación secundaria a la mitad, ¿cuál sería la nueva varianza total (asumiendo que las otras se mantienen)?",
+          "respuesta": 105,
+          "tolerancia": 0,
+          "pista": "$$75 + 15 + 15 = 105$$"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Muestreo y Representatividad",
+      "escenario": "Un investigador desea estudiar la prevalencia de la depresión en una población de $N = 47,000,000$. Se asume una varianza poblacional de $P \\cdot Q = 0.25$. La fórmula del tamaño muestral para un nivel de confianza del 95\\% ($Z=1.96$) y un error $e$ es: $n = \\frac{Z^2 \\cdot P \\cdot Q}{e^2}$.",
+      "preguntas": [
+        {
+          "id": "p4a",
+          "label": "a)",
+          "enunciado": "Si el error máximo admitido es del 2\\% ($e=0.02$), calcule el tamaño muestral necesario $n$.",
+          "respuesta": 2401,
+          "tolerancia": 1,
+          "pista": "$$n = \\frac{1.96^2 \\cdot 0.25}{0.02^2} = \\frac{3.8416 \\cdot 0.25}{0.0004} = 2401$$"
+        },
+        {
+          "id": "p4b",
+          "label": "b)",
+          "enunciado": "Si el investigador solo puede encuestar a $n=1000$ personas, calcule el nuevo error $e$ en formato decimal.",
+          "respuesta": 0.031,
+          "tolerancia": 0.001,
+          "pista": "$$e = \\sqrt{\\frac{1.96^2 \\cdot 0.25}{1000}} = \\sqrt{0.0009604} \\approx 0.03099$$"
+        },
+        {
+          "id": "p4c",
+          "label": "c)",
+          "enunciado": "Determine el factor de representatividad (proporción de la muestra sobre la población) para $n=1000$ multiplicado por $10^5$.",
+          "respuesta": 2.127,
+          "tolerancia": 0.01,
+          "pista": "$$\\frac{1000}{47000000} \\cdot 10^5 = 0.00002127 \\cdot 100000 = 2.127$$"
+        },
+        {
+          "id": "p4d",
+          "label": "d)",
+          "enunciado": "Calcule cuántas personas adicionales se necesitan si se desea reducir el error del 3.1\\% al 1.5\\%.",
+          "respuesta": 3268,
+          "tolerancia": 5,
+          "pista": "$$n_{nuevo} = \\frac{3.8416 \\cdot 0.25}{0.015^2} \\approx 4268. 4268 - 1000 = 3268$$"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Potencia Estadística ($1-\\beta$)",
+      "escenario": "En una investigación experimental, se define la potencia como la capacidad de detectar un efecto real. Si la probabilidad de cometer un error Tipo II es $\\beta = 0.15$ y el nivel de significación es $\\alpha = 0.05$.",
+      "preguntas": [
+        {
+          "id": "p5a",
+          "label": "a)",
+          "enunciado": "Calcule la potencia estadística del diseño.",
+          "respuesta": 0.85,
+          "tolerancia": 0,
+          "pista": "$$1 - \\beta = 1 - 0.15 = 0.85$$"
+        },
+        {
+          "id": "p5b",
+          "label": "b)",
+          "enunciado": "Si el investigador aumenta el tamaño muestral y esto reduce $\\beta$ a la mitad, ¿cuál es la nueva potencia?",
+          "respuesta": 0.925,
+          "tolerancia": 0,
+          "pista": "$$\\beta_{nueva} = 0.075. \\text{ Potencia} = 1 - 0.075 = 0.925$$"
+        },
+        {
+          "id": "p5c",
+          "label": "c)",
+          "enunciado": "Calcule la suma de las probabilidades de los dos tipos de errores en el segundo escenario.",
+          "respuesta": 0.125,
+          "tolerancia": 0,
+          "pista": "$$\\alpha + \\beta = 0.05 + 0.075 = 0.125$$"
+        },
+        {
+          "id": "p5d",
+          "label": "d)",
+          "enunciado": "Si se decide ser más estricto y bajar $\\alpha$ a 0.01, lo que provoca que $\\beta$ suba a 0.20, ¿cuál es la pérdida neta de potencia respecto al primer escenario?",
+          "respuesta": 0.05,
+          "tolerancia": 0,
+          "pista": "$$\\text{Potencia inicial } 0.85. \\text{ Potencia nueva } 1 - 0.20 = 0.80. \\text{ Diferencia } = 0.05$$"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Lógica Inductiva y Deductiva",
+      "escenario": "Un investigador observa 250 casos de pacientes con fobia social y en todos ellos (100\\%) detecta niveles altos de cortisol cortical.",
+      "preguntas": [
+        {
+          "id": "p6a",
+          "label": "a)",
+          "enunciado": "Si concluye que 'todos los fóbicos sociales tienen cortisol alto', ¿qué tipo de lógica usa (1: Inductiva, 2: Deductiva)?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "La inducción parte de casos particulares hacia la generalización teórica."
+        },
+        {
+          "id": "p6b",
+          "label": "b)",
+          "enunciado": "Si un nuevo paciente (caso 251) presenta cortisol normal, ¿cuál es el nuevo valor de verdad de la teoría general (0: Falso, 1: Verdadero)?",
+          "respuesta": 0,
+          "tolerancia": 0,
+          "pista": "Un solo contraejemplo refuta una generalización inductiva."
+        },
+        {
+          "id": "p6c",
+          "label": "c)",
+          "enunciado": "Un silogismo dice: P1: Todos los fóbicos sufren ansiedad. P2: Juan es fóbico. Conclusión: Juan sufre ansiedad. ¿Qué lógica es (1: Inductiva, 2: Deductiva)?",
+          "respuesta": 2,
+          "tolerancia": 0,
+          "pista": "La deducción parte de leyes generales para explicar casos singulares."
+        },
+        {
+          "id": "p6d",
+          "label": "d)",
+          "enunciado": "Calcule el riesgo de generalización (en escala 0-100) si solo se observaran 2 casos en lugar de 250.",
+          "respuesta": 99,
+          "tolerancia": 1,
+          "pista": "A menor base empírica, mayor es el riesgo de la generalización inductiva."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Z-Scores y Normalización",
+      "escenario": "En un test de inteligencia, la media es $\\mu = 100$ y $\\sigma = 15$. Un estudiante obtiene 130 puntos.",
+      "preguntas": [
+        {
+          "id": "p7a",
+          "label": "a)",
+          "enunciado": "Calcule la puntuación típica $Z$ del estudiante.",
+          "respuesta": 2,
+          "tolerancia": 0,
+          "pista": "$$Z = \\frac{130 - 100}{15} = 2.0$$"
+        },
+        {
+          "id": "p7b",
+          "label": "b)",
+          "enunciado": "Si se desea transformar esta escala a una con $\\mu = 50$ y $\\sigma = 10$, ¿qué puntuación obtendría?",
+          "respuesta": 70,
+          "tolerancia": 0,
+          "pista": "$$X_{nueva} = 50 + (Z \\cdot 10) = 50 + 20 = 70$$"
+        },
+        {
+          "id": "p7c",
+          "label": "c)",
+          "enunciado": "Determine cuántas desviaciones estándar por encima de la media se encuentra el sujeto.",
+          "respuesta": 2,
+          "tolerancia": 0,
+          "pista": "El valor $Z$ indica precisamente el número de desviaciones estándar."
+        },
+        {
+          "id": "p7d",
+          "label": "d)",
+          "enunciado": "Si otro estudiante está en el percentil 50, ¿cuál es su puntuación en la escala original?",
+          "respuesta": 100,
+          "tolerancia": 0,
+          "pista": "El percentil 50 corresponde a la media en una distribución normal."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titulo": "Validez Interna y Variables Contaminadoras",
+      "escenario": "En un diseño experimental con 4 grupos, se desea asegurar que los grupos sean iguales mediante asignación aleatoria. Se miden 3 variables contaminadoras (VC).",
+      "preguntas": [
+        {
+          "id": "p8a",
+          "label": "a)",
+          "enunciado": "Si hay 80 participantes en total, ¿cuántos hay por grupo si la asignación es balanceada?",
+          "respuesta": 20,
+          "tolerancia": 0,
+          "pista": "$$80 / 4 = 20$$"
+        },
+        {
+          "id": "p8b",
+          "label": "b)",
+          "enunciado": "Si el investigador controla 2 VC mediante eliminación y 1 mediante bloqueo, ¿cuántas VC totales han sido neutralizadas?",
+          "respuesta": 3,
+          "tolerancia": 0,
+          "pista": "Se suman todas las variables controladas independientemente de la técnica."
+        },
+        {
+          "id": "p8c",
+          "label": "c)",
+          "enunciado": "Si la validez interna es del 90\\%, pero la artificialidad del laboratorio reduce la validez externa al 40\\%, calcule la media de validez del estudio.",
+          "respuesta": 65,
+          "tolerancia": 0,
+          "pista": "$$(90 + 40) / 2 = 65$$"
+        },
+        {
+          "id": "p8d",
+          "label": "d)",
+          "enunciado": "Determine el número de comparaciones posibles entre los 4 grupos.",
+          "respuesta": 6,
+          "tolerancia": 0,
+          "pista": "Combinaciones de 4 elementos tomados de 2 en 2: $4! / (2! \\cdot 2!) = 6$."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "titulo": "Error Estándar y Tamaño de Efecto",
+      "escenario": "Se compara un grupo control y uno experimental. La diferencia de medias es $D = 4$. El error estándar de la diferencia es $SE_D = 1.6$.",
+      "preguntas": [
+        {
+          "id": "p9a",
+          "label": "a)",
+          "enunciado": "Calcule el valor del estadístico $t$.",
+          "respuesta": 2.5,
+          "tolerancia": 0.1,
+          "pista": "$$t = \\frac{4}{1.6} = 2.5$$"
+        },
+        {
+          "id": "p9b",
+          "label": "b)",
+          "enunciado": "Si el tamaño de efecto (d de Cohen) se estima como $d = t / \\sqrt{n}$ y $n=25$, calcule $d$.",
+          "respuesta": 0.5,
+          "tolerancia": 0.1,
+          "pista": "$$2.5 / \\sqrt{25} = 2.5 / 5 = 0.5$$"
+        },
+        {
+          "id": "p9c",
+          "label": "c)",
+          "enunciado": "Según Cohen, $d=0.5$ es un efecto medio. Si $d$ sube a 0.8, ¿cuántas unidades de desviación estándar de diferencia hay?",
+          "respuesta": 0.8,
+          "tolerancia": 0,
+          "pista": "El índice $d$ representa directamente la diferencia en unidades de desviación estándar."
+        },
+        {
+          "id": "p9d",
+          "label": "d)",
+          "enunciado": "Si el error estándar se reduce a 0.8, calcule el nuevo valor de $t$.",
+          "respuesta": 5,
+          "tolerancia": 0,
+          "pista": "$$4 / 0.8 = 5.0$$"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "titulo": "Hipótesis Estadísticas y Signos",
+      "escenario": "Se plantea un estudio para ver si los videojuegos aumentan los reflejos. Sea $\\mu_1$ el grupo jugador y $\\mu_2$ el no jugador.",
+      "preguntas": [
+        {
+          "id": "p10a",
+          "label": "a)",
+          "enunciado": "La hipótesis nula postula igualdad. Si $\\mu_1 = 15$, ¿qué valor debe tener $\\mu_2$ bajo $H_0$?",
+          "respuesta": 15,
+          "tolerancia": 0,
+          "pista": "$$H_0: \\mu_1 = \\mu_2 \\implies 15 = 15$$"
+        },
+        {
+          "id": "p10b",
+          "label": "b)",
+          "enunciado": "La hipótesis alternativa es unilateral derecha (jugadores > no jugadores). Si $\\mu_2 = 10$, indique el valor mínimo entero de $\\mu_1$ para cumplir la dirección.",
+          "respuesta": 11,
+          "tolerancia": 0,
+          "pista": "Cualquier valor mayor que 10 cumple $H_1$, el primer entero es 11."
+        },
+        {
+          "id": "p10c",
+          "label": "c)",
+          "enunciado": "Si el análisis da un $p$-valor de 0.03, y $\\alpha = 0.05$, ¿cuál es la decisión (1: Rechazar $H_0$, 0: Mantener $H_0$)?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "$$0.03 < 0.05 \\implies \\text{Rechazo } H_0$$"
+        },
+        {
+          "id": "p10d",
+          "label": "d)",
+          "enunciado": "Si el experimento se repite 100 veces, ¿en cuántas ocasiones esperaríamos obtener este resultado por puro azar si $H_0$ fuera cierta?",
+          "respuesta": 3,
+          "tolerancia": 0,
+          "pista": "El $p$-valor indica la probabilidad de los datos bajo $H_0$. $0.03 \\cdot 100 = 3$."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "titulo": "Probabilidad y Eventos Mutuamente Excluyentes",
+      "escenario": "En una muestra, el 30\\% tiene depresión, el 20\\% ansiedad y el 10\\% ambos trastornos (comorbilidad).",
+      "preguntas": [
+        {
+          "id": "p11a",
+          "label": "a)",
+          "enunciado": "Calcule la probabilidad de que una persona tenga al menos uno de los dos trastornos.",
+          "respuesta": 0.4,
+          "tolerancia": 0.01,
+          "pista": "$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B) = 0.3 + 0.2 - 0.1 = 0.4$$"
+        },
+        {
+          "id": "p11b",
+          "label": "b)",
+          "enunciado": "Calcule la probabilidad de tener depresión pero NO ansiedad.",
+          "respuesta": 0.2,
+          "tolerancia": 0.01,
+          "pista": "$$P(A) - P(A \\cap B) = 0.3 - 0.1 = 0.2$$"
+        },
+        {
+          "id": "p11c",
+          "label": "c)",
+          "enunciado": "Si los eventos fueran mutuamente excluyentes (comorbilidad = 0), ¿cuál sería la probabilidad de tener alguno?",
+          "respuesta": 0.5,
+          "tolerancia": 0.01,
+          "pista": "$$0.3 + 0.2 = 0.5$$"
+        },
+        {
+          "id": "p11d",
+          "label": "d)",
+          "enunciado": "Calcule el porcentaje de personas sanas (sin ninguno de los dos) en la muestra original.",
+          "respuesta": 60,
+          "tolerancia": 0,
+          "pista": "$$100\\% - 40\\% = 60\\%$$"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "titulo": "La Escala de Medición",
+      "escenario": "Un psicólogo mide el tiempo de reacción en milisegundos (Razón), el orden de llegada (Ordinal) y el sexo (Nominal).",
+      "preguntas": [
+        {
+          "id": "p12a",
+          "label": "a)",
+          "enunciado": "Si el sujeto A tarda 200ms y el B 400ms, ¿cuántas veces más rápido es A que B?",
+          "respuesta": 2,
+          "tolerancia": 0,
+          "pista": "En escalas de razón, los cocientes tienen sentido físico."
+        },
+        {
+          "id": "p12b",
+          "label": "b)",
+          "enunciado": "Si el orden de llegada es 1º, 2º y 3º, ¿podemos decir que la distancia entre 1º y 2º es la misma que entre 2º y 3º (1: Sí, 0: No)?",
+          "respuesta": 0,
+          "tolerancia": 0,
+          "pista": "La escala ordinal solo indica orden, no magnitud de la diferencia."
+        },
+        {
+          "id": "p12c",
+          "label": "c)",
+          "enunciado": "Si codificamos Hombre=1 y Mujer=2, ¿cuál es el resultado de la media aritmética de estos códigos si hay 5 de cada?",
+          "respuesta": 1.5,
+          "tolerancia": 0,
+          "pista": "$$(5 \\cdot 1 + 5 \\cdot 2) / 10 = 1.5$$"
+        },
+        {
+          "id": "p12d",
+          "label": "d)",
+          "enunciado": "¿Tiene sentido clínico interpretar el 1.5 anterior (1: Sí, 0: No)?",
+          "respuesta": 0,
+          "tolerancia": 0,
+          "pista": "En escalas nominales, los números son etiquetas, no magnitudes promediables."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "titulo": "Varianza y Dispersión",
+      "escenario": "Un conjunto de datos de estrés es: {4, 6, 8}. La media es $\\bar{X} = 6$. Fórmula de la varianza: $S^2 = \\frac{\\sum (X_i - \\bar{X})^2}{n}$.",
+      "preguntas": [
+        {
+          "id": "p13a",
+          "label": "a)",
+          "enunciado": "Calcule el sumatorio de las desviaciones al cuadrado.",
+          "respuesta": 8,
+          "tolerancia": 0,
+          "pista": "$$(4-6)^2 + (6-6)^2 + (8-6)^2 = 4 + 0 + 4 = 8$$"
+        },
+        {
+          "id": "p13b",
+          "label": "b)",
+          "enunciado": "Calcule la varianza muestral ($n=3$).",
+          "respuesta": 2.667,
+          "tolerancia": 0.01,
+          "pista": "$$8 / 3 = 2.6666...$$"
+        },
+        {
+          "id": "p13c",
+          "label": "c)",
+          "enunciado": "Calcule la desviación estándar.",
+          "respuesta": 1.633,
+          "tolerancia": 0.01,
+          "pista": "$$\\sqrt{2.667} \\approx 1.633$$"
+        },
+        {
+          "id": "p13d",
+          "label": "d)",
+          "enunciado": "Si a todos los datos les sumamos 10 puntos, ¿cuál es la nueva varianza?",
+          "respuesta": 2.667,
+          "tolerancia": 0.01,
+          "pista": "Sumar una constante no altera la varianza (medida de dispersión relativa)."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "titulo": "Fiabilidad y Error de Medida",
+      "escenario": "Un test tiene un coeficiente de fiabilidad $r_{xx} = 0.81$. La desviación estándar del test es $S_x = 10$. El error típico de medida es $SEM = S_x \\sqrt{1 - r_{xx}}$.",
+      "preguntas": [
+        {
+          "id": "p14a",
+          "label": "a)",
+          "enunciado": "Calcule el valor de la raíz cuadrada de $(1 - r_{xx})$.",
+          "respuesta": 0.436,
+          "tolerancia": 0.01,
+          "pista": "$$\\sqrt{1 - 0.81} = \\sqrt{0.19} \\approx 0.4358$$"
+        },
+        {
+          "id": "p14b",
+          "label": "b)",
+          "enunciado": "Calcule el error típico de medida ($SEM$).",
+          "respuesta": 4.359,
+          "tolerancia": 0.01,
+          "pista": "$$10 \\cdot 0.4358 = 4.358$$"
+        },
+        {
+          "id": "p14c",
+          "label": "c)",
+          "enunciado": "Si un sujeto saca 100 puntos, calcule el límite superior del intervalo de confianza al 68\\% (1 SEM).",
+          "respuesta": 104.359,
+          "tolerancia": 0.01,
+          "pista": "$$100 + 4.359 = 104.359$$"
+        },
+        {
+          "id": "p14d",
+          "label": "d)",
+          "enunciado": "Si la fiabilidad sube a 1.0, ¿cuál es el valor del SEM?",
+          "respuesta": 0,
+          "tolerancia": 0,
+          "pista": "Si la fiabilidad es perfecta, no hay error de medida."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "titulo": "Principios del Método Científico",
+      "escenario": "Se analizan los 7 principios de Ramos et al. (2014): Determinismo, Comprobabilidad, Objetividad, Empirismo, Replicabilidad, Parsimonia y Diseminación.",
+      "preguntas": [
+        {
+          "id": "p15a",
+          "label": "a)",
+          "enunciado": "Si una teoría A explica el fenómeno con 3 variables y la B con 7, ¿cuál prefiere el principio de parsimonia (1: A, 2: B)?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "La parsimonia prefiere la explicación más sencilla."
+        },
+        {
+          "id": "p15b",
+          "label": "b)",
+          "enunciado": "Si un estudio no puede ser repetido por otros investigadores, ¿qué principio está fallando?",
+          "respuesta": 5,
+          "tolerancia": 0,
+          "pista": "Corresponde al 5º principio mencionado: Replicabilidad."
+        },
+        {
+          "id": "p15c",
+          "label": "c)",
+          "enunciado": "El postulado de que los eventos tienen causas específicas se llama...",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "Corresponde al 1er principio: Determinismo."
+        },
+        {
+          "id": "p15d",
+          "label": "d)",
+          "enunciado": "Si un descubrimiento se mantiene oculto, ¿qué principio se viola?",
+          "respuesta": 7,
+          "tolerancia": 0,
+          "pista": "Corresponde al 7º principio: Diseminación."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "titulo": "Análisis de Frecuencias",
+      "escenario": "En un aula de 50 alumnos, 15 han aprobado Estadística, 25 Psicobiología y 10 ambas.",
+      "preguntas": [
+        {
+          "id": "p16a",
+          "label": "a)",
+          "enunciado": "Calcule la frecuencia relativa de alumnos que aprobaron solo Estadística.",
+          "respuesta": 0.1,
+          "tolerancia": 0.01,
+          "pista": "$$(15 - 10) / 50 = 5 / 50 = 0.1$$"
+        },
+        {
+          "id": "p16b",
+          "label": "b)",
+          "enunciado": "Calcule el porcentaje de alumnos que aprobaron al menos una.",
+          "respuesta": 60,
+          "tolerancia": 0,
+          "pista": "$$15 + 25 - 10 = 30 \\text{ alumnos}. (30/50) \\cdot 100 = 60\\%$$"
+        },
+        {
+          "id": "p16c",
+          "label": "c)",
+          "enunciado": "Calcule la probabilidad de que un alumno elegido al azar haya suspendido ambas.",
+          "respuesta": 0.4,
+          "tolerancia": 0.01,
+          "pista": "$$1 - 0.6 = 0.4$$"
+        },
+        {
+          "id": "p16d",
+          "label": "d)",
+          "enunciado": "Si el total de alumnos sube a 200 manteniendo las proporciones, ¿cuántos aprobarían ambas?",
+          "respuesta": 40,
+          "tolerancia": 0,
+          "pista": "$$200 \\cdot (10/50) = 200 \\cdot 0.2 = 40$$"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "titulo": "Sensibilidad y Especificidad",
+      "escenario": "Un test de screening para demencia tiene una Sensibilidad (S) de 0.90 y una Especificidad (E) de 0.80.",
+      "preguntas": [
+        {
+          "id": "p17a",
+          "label": "a)",
+          "enunciado": "Calcule la tasa de falsos negativos ($1 - S$).",
+          "respuesta": 0.1,
+          "tolerancia": 0.01,
+          "pista": "$$1 - 0.9 = 0.1$$"
+        },
+        {
+          "id": "p17b",
+          "label": "b)",
+          "enunciado": "Calcule la tasa de falsos positivos ($1 - E$).",
+          "respuesta": 0.2,
+          "tolerancia": 0.01,
+          "pista": "$$1 - 0.8 = 0.2$$"
+        },
+        {
+          "id": "p17c",
+          "label": "c)",
+          "enunciado": "Si hay 100 enfermos, ¿cuántos detectará el test correctamente?",
+          "respuesta": 90,
+          "tolerancia": 0,
+          "pista": "$$100 \\cdot 0.9 = 90$$"
+        },
+        {
+          "id": "p17d",
+          "label": "d)",
+          "enunciado": "Si hay 200 sanos, ¿a cuántos dirá erróneamente que están enfermos?",
+          "respuesta": 40,
+          "tolerancia": 0,
+          "pista": "$$200 \\cdot 0.2 = 40$$"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "titulo": "Estimación por Intervalos",
+      "escenario": "Se estima la media de bienestar emocional en una muestra. $\\bar{X} = 7$, $SE = 0.5$. El intervalo al 95\\% usa $Z = 1.96$. $IC = \\bar{X} \\pm Z \\cdot SE$.",
+      "preguntas": [
+        {
+          "id": "p18a",
+          "label": "a)",
+          "enunciado": "Calcule el margen de error ($Z \\cdot SE$).",
+          "respuesta": 0.98,
+          "tolerancia": 0.01,
+          "pista": "$$1.96 \\cdot 0.5 = 0.98$$"
+        },
+        {
+          "id": "p18b",
+          "label": "b)",
+          "enunciado": "Calcule el límite inferior del intervalo.",
+          "respuesta": 6.02,
+          "tolerancia": 0.01,
+          "pista": "$$7 - 0.98 = 6.02$$"
+        },
+        {
+          "id": "p18c",
+          "label": "c)",
+          "enunciado": "Calcule el límite superior del intervalo.",
+          "respuesta": 7.98,
+          "tolerancia": 0.01,
+          "pista": "$$7 + 0.98 = 7.98$$"
+        },
+        {
+          "id": "p18d",
+          "label": "d)",
+          "enunciado": "Si aumentamos la confianza al 99\\% ($Z=2.58$), ¿el intervalo se hace más ancho (1) o más estrecho (0)?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "A mayor nivel de confianza, mayor es el valor crítico y por tanto el intervalo."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "titulo": "La Regla de Decisión Estadística",
+      "escenario": "Un investigador comete un error Tipo I cuando rechaza $H_0$ siendo esta verdadera. La probabilidad es $\\alpha$.",
+      "preguntas": [
+        {
+          "id": "p19a",
+          "label": "a)",
+          "enunciado": "Si $\\alpha = 0.05$, ¿cuál es la probabilidad de acertar manteniendo $H_0$ cuando es verdadera?",
+          "respuesta": 0.95,
+          "tolerancia": 0,
+          "pista": "$$1 - \\alpha = 1 - 0.05 = 0.95$$"
+        },
+        {
+          "id": "p19b",
+          "label": "b)",
+          "enunciado": "Si el investigador decide ser más conservador y fija $\\alpha = 0.01$, ¿disminuye el riesgo de error Tipo I (1: Sí, 0: No)?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "Al reducir el umbral de significación, se reduce la probabilidad de rechazo erróneo."
+        },
+        {
+          "id": "p19c",
+          "label": "c)",
+          "enunciado": "En el caso b), ¿qué ocurre con el riesgo de error Tipo II ($\\beta$) (1: Aumenta, 0: Disminuye)?",
+          "respuesta": 1,
+          "tolerancia": 0,
+          "pista": "Existe una relación inversa entre $\\alpha$ y $\\beta$."
+        },
+        {
+          "id": "p19d",
+          "label": "d)",
+          "enunciado": "Si $\\alpha$ y $\\beta$ suman 0.30, ¿cuál es el valor de la potencia?",
+          "respuesta": 0.75,
+          "tolerancia": 0.05,
+          "pista": "Si $\\alpha=0.05$ (estándar), $\\beta=0.25$. Potencia $= 1 - 0.25 = 0.75$."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "titulo": "Sistematicidad y Azar",
+      "escenario": "Un modelo estadístico explica la VD mediante la fórmula $VD = \\text{Modelo} + \\text{Error}$.",
+      "preguntas": [
+        {
+          "id": "p20a",
+          "label": "a)",
+          "enunciado": "Si la puntuación de un sujeto es 80 y el modelo predice 75, calcule el error de predicción.",
+          "respuesta": 5,
+          "tolerancia": 0,
+          "pista": "$$80 - 75 = 5$$"
+        },
+        {
+          "id": "p20b",
+          "label": "b)",
+          "enunciado": "Si el error promedio es 0, pero la varianza del error es 100, calcule la desviación típica del error.",
+          "respuesta": 10,
+          "tolerancia": 0,
+          "pista": "$$\\sqrt{100} = 10$$"
+        },
+        {
+          "id": "p20c",
+          "label": "c)",
+          "enunciado": "Si la varianza del modelo es 400 y la del error 100, calcule el coeficiente de determinación ($R^2 = V_{mod} / V_{total}$).",
+          "respuesta": 0.8,
+          "tolerancia": 0.01,
+          "pista": "$$400 / (400 + 100) = 400 / 500 = 0.8$$"
+        },
+        {
+          "id": "p20d",
+          "label": "d)",
+          "enunciado": "Determine el porcentaje de varianza que NO explica el modelo.",
+          "respuesta": 20,
+          "tolerancia": 0,
+          "pista": "$$(1 - 0.8) \\cdot 100 = 20\\%$$"
         }
       ]
     }
   ],
-
   "formulas": [
     {
-      "nombre": "Media Muestral",
-      "latex": "\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}",
-      "descripcion": "Es el valor obtenido al sumar todos los datos y dividir el resultado entre el número total de datos de la muestra.",
-      "categoria": "Conceptos Básicos"
+      "nombre": "Hipótesis Nula (Igualdad de Medias)",
+      "latex": "$$H_{0}: \\overline{X}_{experimental} = \\overline{X}_{control}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
     },
     {
-      "nombre": "Rango Muestral",
-      "latex": "R = x_{max} - x_{min}",
-      "descripcion": "Diferencia entre el valor máximo y el valor mínimo de un conjunto de datos.",
-      "categoria": "Conceptos Básicos"
+      "nombre": "Hipótesis Alternativa (Diferencia de Medias)",
+      "latex": "$$H_{1}: \\overline{X}_{experimental} \\neq \\overline{X}_{control}$$",
+      "descripcion": "",
+      "categoria": "Fórmula"
     }
   ]
 }

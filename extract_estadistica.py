@@ -17,22 +17,22 @@ TEMAS_DIR = os.path.join(BASE_DIR, "temas", "1º", "Fundamentos-Estadística")
 os.makedirs(JSON_DIR, exist_ok=True)
 os.makedirs(TEMAS_DIR, exist_ok=True)
 
-SUBJECT_ID = "fundamentos-estadistica"
-SHORT_ID = "fundamentos-estadistica"
+SUBJECT_ID = "fundamentos-de-estadistica"
+SHORT_ID = "fundamentos-de-estadistica"
 
 URLS = [
-    ("1", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-1-1"),
-    ("2", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-1-2"),
-    ("3", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-2-1"),
-    ("4", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-2-2"),
-    ("5", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-2-3"),
-    ("6", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-3"),
-    ("7", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-4-1"),
-    ("8", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-4-2"),
-    ("9", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-5-1"),
-    ("10", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-5-2"),
-    ("11", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-5-3"),
-    ("12", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-5-4"),
+    ("1.1", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-1-1"),
+    ("1.2", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-1-2"),
+    ("2.1", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-2-1"),
+    ("2.2", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-2-2"),
+    ("3.1", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-2-3"),
+    ("3.2", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-3"),
+    ("4.1", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-4-1"),
+    ("4.2", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-4-2"),
+    ("5.1", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-5-1"),
+    ("5.2", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-5-2"),
+    ("6.1", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-5-3"),
+    ("6.2", "https://soloaimaproject.es/fundamentos-de-estadistica-tema-5-4"),
 ]
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -43,14 +43,14 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tema {tema_key} - Fundamentos de Estadística</title>
-    <!-- Importamos el cargador dinámico común de temas -->
-    <script src="../../../js/tema-loader.js" defer></script>
+    <!-- Importamos el cargador dinámico común de temas de estadística -->
+    <script src="../../../js/estadistica-loader.js" defer></script>
 </head>
 <body>
     <!-- Configuración del tema -->
     <script id="tema-config" type="application/json">
         {{
-            "asignaturaId": "fundamentos-estadistica",
+            "asignaturaId": "fundamentos-de-estadistica",
             "temaKey": "{tema_key}"
         }}
     </script>
@@ -98,7 +98,6 @@ def extract_app_js_block(embedded_html):
     From the embedded HTML string (which may be a full page), find the script tag
     containing the app definition and return the entire script block.
     """
-    # Intenta encontrar la etiqueta script que contenga la definición de app o appDB
     script_pattern = r'<script[^>]*?>([\s\S]*?)</script>'
     scripts = re.findall(script_pattern, embedded_html, re.IGNORECASE)
     
@@ -106,7 +105,6 @@ def extract_app_js_block(embedded_html):
         if 'const app =' in script_code or 'const appDB =' in script_code:
             return script_code
 
-    # Si por algún motivo no hay etiquetas <script> válidas, usamos el buscador original
     start_idx = embedded_html.find('const app = {')
     if start_idx == -1:
         start_idx = embedded_html.find('const appDB =')
@@ -191,8 +189,61 @@ try {{
         raise RuntimeError(result.stderr[:600])
     return json.loads(result.stdout)
 
+def transform_db_for_estadistica(db):
+    """
+    Transforms the database keys and structure from soloaimaproject.es format
+    to the format expected by our local estadistica-loader.js.
+    """
+    transformed = {
+        "quiz": [],
+        "laboratorio": [],
+        "formulas": []
+    }
+    
+    # 1. Map Quiz Questions
+    for q_item in db.get("quiz", []):
+        new_q = {
+            "q": q_item.get("q", ""),
+            "opciones": q_item.get("options", []),
+            "correcta": q_item.get("correct", 0),
+            "explicacion": q_item.get("explanation", ""),
+            "pista": q_item.get("hint", "")
+        }
+        transformed["quiz"].append(new_q)
+        
+    # 2. Map Laboratorio Problems
+    for lab_item in db.get("laboratorio", []):
+        new_lab = {
+            "id": lab_item.get("id"),
+            "titulo": lab_item.get("title", ""),
+            "escenario": lab_item.get("context", ""),
+            "preguntas": []
+        }
+        for part in lab_item.get("parts", []):
+            new_part = {
+                "id": part.get("id"),
+                "label": part.get("label", ""),
+                "enunciado": part.get("question", ""),
+                "respuesta": part.get("correctValue"),
+                "tolerancia": part.get("tolerance", 0.05),
+                "pista": part.get("explanation", "")  # Map explanation to pista (first fail hint & solution reveal)
+            }
+            new_lab["preguntas"].append(new_part)
+        transformed["laboratorio"].append(new_lab)
+        
+    # 3. Map Formulas
+    for form_item in db.get("formulas", []):
+        new_form = {
+            "nombre": form_item.get("q", ""),
+            "latex": form_item.get("a", ""),
+            "descripcion": "",
+            "categoria": form_item.get("cat", "")
+        }
+        transformed["formulas"].append(new_form)
+        
+    return transformed
+
 results = {}
-subtitles_found = {}
 
 for tema_key, url in URLS:
     tema_file = tema_key.replace('.', '-')
@@ -207,50 +258,37 @@ for tema_key, url in URLS:
         page_html = fetch_url(url)
         print(f"  -> HTML size: {len(page_html)} bytes")
         
-        # Extract JSON if not already present
-        if not os.path.exists(json_out):
-            print("  -> Buscando HTML embebido en props de Astro...")
-            embedded = find_embedded_html(page_html)
-            if not embedded:
-                raise RuntimeError("No se encontro HTML embebido con 'const app ='")
-            print(f"  -> HTML embebido encontrado ({len(embedded)} chars)")
-            
-            print("  -> Extrayendo bloque const app = {{ ... }} ...")
-            app_js = extract_app_js_block(embedded)
-            print(f"  -> Bloque JS extraido ({len(app_js)} chars)")
-            
-            print("  -> Ejecutando en Node.js VM...")
-            db = extract_db_via_node(app_js, tema_key)
-            
-            quiz_count = len(db.get('quiz', []))
-            # Ajuste para campos específicos de estadística
-            lab_count = len(db.get('laboratorio', []))
-            formulas_count = len(db.get('formulas', []))
-            # Si es el formato viejo de psicología
-            trainer_count = len(db.get('trainer', []))
-            fc_count = len(db.get('flashcards', []))
-            
-            print(f"  -> DB extraida: {quiz_count} quiz | {lab_count} lab | {formulas_count} formulas | {trainer_count} trainer | {fc_count} flashcards")
-            
-            with open(json_out, 'w', encoding='utf-8') as f:
-                json.dump(db, f, ensure_ascii=False, indent=2)
-            print(f"  -> JSON guardado: {os.path.basename(json_out)}")
-            json_status = f"OK ({quiz_count}q/{lab_count}l/{formulas_count}f/{trainer_count}t/{fc_count}fc)"
-        else:
-            print(f"  -> JSON ya existe, saltando")
-            json_status = "SKIPPED"
+        print("  -> Buscando HTML embebido en props de Astro...")
+        embedded = find_embedded_html(page_html)
+        if not embedded:
+            raise RuntimeError("No se encontro HTML embebido con 'const app =' o 'const appDB ='")
+        print(f"  -> HTML embebido encontrado ({len(embedded)} chars)")
+        
+        print("  -> Extrayendo bloque JS de la app...")
+        app_js = extract_app_js_block(embedded)
+        print(f"  -> Bloque JS extraido ({len(app_js)} chars)")
+        
+        print("  -> Ejecutando en Node.js VM...")
+        db_raw = extract_db_via_node(app_js, tema_key)
+        
+        print("  -> Transformando formato para estadistica-loader.js...")
+        db = transform_db_for_estadistica(db_raw)
+        
+        quiz_count = len(db.get('quiz', []))
+        lab_count = len(db.get('laboratorio', []))
+        formulas_count = len(db.get('formulas', []))
+        print(f"  -> DB extraida y transformada: {quiz_count} quiz | {lab_count} lab | {formulas_count} formulas")
+        
+        with open(json_out, 'w', encoding='utf-8') as f:
+            json.dump(db, f, ensure_ascii=False, indent=2)
+        print(f"  -> JSON guardado: {os.path.basename(json_out)}")
+        json_status = f"OK ({quiz_count}q/{lab_count}l/{formulas_count}f)"
         
         # Create HTML theme file
-        if not os.path.exists(html_out):
-            # Usar la asignación del cargador específico de estadística en la plantilla para esta asignatura
-            estadistica_template = HTML_TEMPLATE.replace('tema-loader.js', 'estadistica-loader.js')
-            with open(html_out, 'w', encoding='utf-8') as f:
-                f.write(estadistica_template.format(tema_key=tema_key))
-            print(f"  -> HTML creado: {os.path.basename(html_out)}")
-            html_status = "HTML creado"
-        else:
-            print(f"  -> HTML ya existe")
-            html_status = "HTML existe"
+        with open(html_out, 'w', encoding='utf-8') as f:
+            f.write(HTML_TEMPLATE.format(tema_key=tema_key))
+        print(f"  -> HTML creado: {os.path.basename(html_out)}")
+        html_status = "HTML creado"
         
         results[tema_key] = f"{json_status} | {html_status}"
         
