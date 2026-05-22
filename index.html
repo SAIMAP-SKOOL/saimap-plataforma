@@ -6,6 +6,19 @@
     <title>SAIMAP Plataforma de Exámenes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Configuración de MathJax para renderizar LaTeX -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            startup: {
+                typeset: false
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
         body { font-family: 'Inter', sans-serif; }
@@ -2079,6 +2092,10 @@
             }
 
             lucide.createIcons();
+            if (window.MathJax && window.MathJax.typesetPromise) {
+                MathJax.typesetClear([app]);
+                MathJax.typesetPromise([app]).catch(err => console.log('MathJax typeset error:', err));
+            }
             window.scrollTo(0, 0);
         }
 
