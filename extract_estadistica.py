@@ -5,6 +5,7 @@ import re
 import os
 import subprocess
 import sys
+import random
 
 # Force UTF-8 output on Windows
 if sys.stdout.encoding != 'utf-8':
@@ -701,6 +702,73 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
 </body>
 </html>"""
 
+def generate_mc_options(correct_val, question_text, tolerance):
+    val_str = str(correct_val)
+    
+    # Caso binario o booleano (0 o 1 con tolerancia 0)
+    if correct_val in (0, 1) and tolerance == 0:
+        options = ["0", "1"]
+        correct_idx = 0 if correct_val == 0 else 1
+        return options, correct_idx
+
+    # Determinar decimales
+    if '.' in val_str:
+        decimals = len(val_str.split('.')[1])
+    else:
+        decimals = 0
+
+    val = float(correct_val)
+    distractors = set()
+    
+    # Definir el paso de variación basado en la tolerancia
+    step = tolerance if tolerance > 0 else (0.1 if decimals > 0 else 1.0)
+    if step == 0:
+        step = 0.01
+
+    # Multiplicadores para generar las opciones incorrectas
+    multipliers = [1, -1, 2, -2, 3, -3, 1.5, -1.5, 2.5, -2.5, 0.5, -0.5]
+    random.shuffle(multipliers)
+    
+    for mult in multipliers:
+        # Generar distractor con cierta aleatoriedad y precisión correcta
+        d = round(val + mult * step * (1 + random.random() * 0.15), decimals)
+        if d != val and d not in distractors:
+            # Evitar números negativos si el valor correcto es estrictamente positivo
+            if val >= 0 and d < 0:
+                continue
+            distractors.add(d)
+        if len(distractors) == 3:
+            break
+
+    # Rellenar en caso de que no se hayan generado 3 distractores únicos
+    fallback_step = 1 if decimals == 0 else (10 ** -decimals)
+    while len(distractors) < 3:
+        for mult in [1, -1, 2, -2, 3, -3, 4, -4]:
+            d = round(val + mult * fallback_step, decimals)
+            if d != val and d not in distractors:
+                if val >= 0 and d < 0:
+                    continue
+                distractors.add(d)
+            if len(distractors) == 3:
+                break
+
+    options_list = list(distractors)
+    
+    # Formatear todos las opciones como cadenas de texto con la misma precisión
+    if decimals == 0:
+        correct_str = str(int(val))
+        options_strs = [str(int(x)) for x in options_list]
+    else:
+        fmt = f"{{:.{decimals}f}}"
+        correct_str = fmt.format(val)
+        options_strs = [fmt.format(x) for x in options_list]
+
+    all_options = [correct_str] + options_strs
+    random.shuffle(all_options)
+    
+    correct_idx = all_options.index(correct_str)
+    return all_options, correct_idx
+
 def fetch_url(url):
     req = urllib.request.Request(url, headers={
         'User-Agent': UA,
@@ -885,6 +953,34 @@ for tema_key, url in URLS:
         # Accumulate quiz questions for global exam (preserves options, correct, explanation, hint, q)
         all_global_quiz_questions.extend(raw_data.get("jsonTestA", []))
         all_global_quiz_questions.extend(raw_data.get("jsonTestB", []))
+        
+        # Accumulate laboratory questions as multiple choice in global exam
+        for problem in raw_data.get("jsonLaboratorio", []):
+            title = problem.get("title", "")
+            context = problem.get("context", "")
+            for part in problem.get("parts", []):
+                label = part.get("label", "")
+                question = part.get("question", "")
+                correct_val = part.get("correctValue")
+                tolerance = part.get("tolerance", 0.0)
+                explanation = part.get("explanation", "")
+                
+                # Consolidate text into HTML format
+                q_html = f"<b>[Caso Práctico: {title}]</b><br/>{context}<br/><br/><b>Apartado {label}</b> {question}"
+                
+                # Generate options and correct index
+                try:
+                    options, correct_idx = generate_mc_options(correct_val, question, tolerance)
+                    quiz_item = {
+                        "q": q_html,
+                        "options": options,
+                        "correct": correct_idx,
+                        "explanation": explanation,
+                        "hint": f"Valor exacto esperado originalmente: {correct_val} (tolerancia: ±{tolerance})"
+                    }
+                    all_global_quiz_questions.append(quiz_item)
+                except Exception as ex_mc:
+                    print(f"    -> Warning: No se pudo generar opciones tipo test para el apartado {label} de '{title}': {ex_mc}")
         
         # Generate self-contained HTML
         test_a_str = json.dumps(raw_data.get("jsonTestA", []), ensure_ascii=False)
