@@ -222,7 +222,13 @@
             trainerAnswers: {},
             trainerChecked: {},
             showPromoModal: false,
-            showLoginModal: false
+            showLoginModal: false,
+            // Planner state variables
+            plannerTasks: JSON.parse(localStorage.getItem('saimap_planner_tasks')) || [],
+            weeklyFocus: localStorage.getItem('saimap_weekly_focus') || '',
+            plannerView: 'weekly', // 'weekly' o 'monthly'
+            plannerDate: new Date(),
+            selectedPlannerDay: new Date().toISOString().split('T')[0]
         };
 
         // --- SISTEMA DE ACCESO Y AUTENTICACIÓN (WHITELIST) ---
@@ -781,6 +787,79 @@
                     state.flashcardsProgress.current--;
                     render();
                 }
+            },
+            // Planner methods
+            changePlannerDate: (offset) => {
+                const d = new Date(state.plannerDate);
+                if (state.plannerView === 'weekly') {
+                    d.setDate(d.getDate() + offset * 7);
+                } else {
+                    d.setMonth(d.getMonth() + offset);
+                }
+                state.plannerDate = d;
+                render();
+            },
+            setPlannerView: (view) => {
+                state.plannerView = view;
+                render();
+            },
+            addPlannerTask: (text, dateStr, scope, subjectId) => {
+                if (!text.trim()) {
+                    alert('Por favor, escribe el nombre de la tarea.');
+                    return;
+                }
+                if (!dateStr) {
+                    alert('Por favor, selecciona una fecha.');
+                    return;
+                }
+
+                // Check pending task limit (max 5 pending tasks per day)
+                const pendingForDay = state.plannerTasks.filter(t => t.date === dateStr && !t.completed);
+                if (pendingForDay.length >= 5) {
+                    alert('¡Límite alcanzado! No puedes tener más de 5 tareas pendientes para un mismo día. Intenta completar o aplazar alguna.');
+                    return;
+                }
+
+                const newTask = {
+                    id: Date.now().toString(),
+                    text: text.trim(),
+                    date: dateStr,
+                    scope: scope || 'diario',
+                    subjectId: subjectId || null,
+                    completed: false,
+                    createdAt: new Date().toISOString()
+                };
+
+                state.plannerTasks.push(newTask);
+                localStorage.setItem('saimap_planner_tasks', JSON.stringify(state.plannerTasks));
+                render();
+            },
+            togglePlannerTask: (taskId) => {
+                const task = state.plannerTasks.find(t => t.id === taskId);
+                if (task) {
+                    task.completed = !task.completed;
+                    localStorage.setItem('saimap_planner_tasks', JSON.stringify(state.plannerTasks));
+                    render();
+                }
+            },
+            deletePlannerTask: (taskId) => {
+                if (confirm('¿Estás seguro de que quieres eliminar esta tarea?')) {
+                    state.plannerTasks = state.plannerTasks.filter(t => t.id !== taskId);
+                    localStorage.setItem('saimap_planner_tasks', JSON.stringify(state.plannerTasks));
+                    render();
+                }
+            },
+            setWeeklyFocus: (focusText) => {
+                state.weeklyFocus = focusText.trim();
+                localStorage.setItem('saimap_weekly_focus', state.weeklyFocus);
+            },
+            goToday: () => {
+                state.plannerDate = new Date();
+                render();
+            },
+            setSelectedPlannerDay: (dayStr) => {
+                state.selectedPlannerDay = dayStr;
+                render();
             }
         };
 
@@ -824,6 +903,390 @@
                     timerEl.classList.add('text-red-500', 'animate-pulse');
                 }
             }
+        }
+
+        // --- HELPERS PARA EL PLANIFICADOR ---
+        function getMonday(d) {
+            const date = new Date(d);
+            const day = date.getDay();
+            const diff = date.getDate() - day + (day === 0 ? -6 : 1);
+            const monday = new Date(date.setDate(diff));
+            monday.setHours(0,0,0,0);
+            return monday;
+        }
+
+        function formatDateStr(date) {
+            const y = date.getFullYear();
+            const m = String(date.getMonth() + 1).padStart(2, '0');
+            const d = String(date.getDate()).padStart(2, '0');
+            return `${y}-${m}-${d}`;
+        }
+
+        function isDateInWeek(dateStr, monday) {
+            const d = new Date(dateStr + 'T00:00:00');
+            const m = new Date(monday);
+            const sunday = new Date(m);
+            sunday.setDate(sunday.getDate() + 6);
+            sunday.setHours(23,59,59,999);
+            return d >= m && d <= sunday;
+        }
+
+        function renderBannerHTML() {
+            return `
+                <div class="bg-slate-900 text-white rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
+                    <div class="space-y-2 max-w-xl">
+                        <span class="text-xs font-bold tracking-[0.3em] text-indigo-300 uppercase block">Portal SAIMAP</span>
+                        <h1 class="text-3xl md:text-4xl font-black tracking-tight">Academia de Psicología</h1>
+                        <p class="text-slate-400 text-sm">Tu espacio de estudio interactivo. Únete a la academia para acceder de forma ilimitada a todos los contenidos.</p>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-3">
+                        ${(REQUIRE_AUTH && authState.isAuthenticated && authState.email) ? `
+                            <div class="flex items-center gap-2.5 bg-white/10 border border-white/10 px-4 py-2.5 rounded-xl text-xs">
+                                <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
+                                <span class="text-slate-200 font-medium">${authState.email}</span>
+                                <button onclick="handleLogout()" class="ml-1.5 text-slate-400 hover:text-rose-400 font-bold transition-colors" title="Cerrar sesión">
+                                    <i data-lucide="log-out" class="w-4.5 h-4.5"></i>
+                                </button>
+                            </div>
+                        ` : `
+                            <button onclick="state.showLoginModal = true; render();" class="px-5 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+                                <i data-lucide="log-in" class="w-4 h-4"></i>
+                                Acceso Alumnos
+                            </button>
+                        `}
+                        <button onclick="appMethods.toggleUploader()" class="px-5 py-3 rounded-xl border border-white/20 hover:bg-white/10 text-white font-bold text-sm transition-all flex items-center gap-2">
+                            <i data-lucide="${state.showUploader ? 'x-circle' : 'upload-cloud'}" class="w-4 h-4"></i>
+                            ${state.showUploader ? 'Cerrar Carga' : 'Cargar JSON local'}
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderNavigationTabs(activeTab) {
+            return `
+                <div class="flex border-b border-slate-200 gap-6 text-sm font-bold text-slate-400">
+                    <button onclick="state.gameState = 'select'; render();" class="pb-3 border-b-2 transition-all ${activeTab === 'library' ? 'border-indigo-600 text-indigo-600' : 'border-transparent hover:text-slate-600'} flex items-center gap-2">
+                        <i data-lucide="book-open" class="w-4.5 h-4.5"></i> Biblioteca de Estudios
+                    </button>
+                    <button onclick="state.gameState = 'planner'; render();" class="pb-3 border-b-2 transition-all ${activeTab === 'planner' ? 'border-indigo-600 text-indigo-600' : 'border-transparent hover:text-slate-600'} flex items-center gap-2">
+                        <i data-lucide="calendar" class="w-4.5 h-4.5"></i> Mi Planificador
+                    </button>
+                </div>
+            `;
+        }
+
+        function renderPlanner() {
+            let currentPeriodTasks = [];
+            if (state.plannerView === 'weekly') {
+                const monday = getMonday(state.plannerDate);
+                currentPeriodTasks = state.plannerTasks.filter(t => isDateInWeek(t.date, monday));
+            } else {
+                const year = state.plannerDate.getFullYear();
+                const month = state.plannerDate.getMonth();
+                currentPeriodTasks = state.plannerTasks.filter(t => {
+                    const d = new Date(t.date + 'T00:00:00');
+                    return d.getFullYear() === year && d.getMonth() === month;
+                });
+            }
+            
+            const totalPeriod = currentPeriodTasks.length;
+            const completedPeriod = currentPeriodTasks.filter(t => t.completed).length;
+            const progressPeriod = totalPeriod > 0 ? Math.round((completedPeriod / totalPeriod) * 100) : 0;
+
+            let dateRangeStr = '';
+            if (state.plannerView === 'weekly') {
+                const mon = getMonday(state.plannerDate);
+                const sun = new Date(mon);
+                sun.setDate(sun.getDate() + 6);
+                const options = { month: 'short', day: 'numeric' };
+                dateRangeStr = `Semana: ${mon.toLocaleDateString('es-ES', options)} - ${sun.toLocaleDateString('es-ES', options)} (${mon.getFullYear()})`;
+            } else {
+                const monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+                dateRangeStr = `${monthNames[state.plannerDate.getMonth()]} ${state.plannerDate.getFullYear()}`;
+            }
+
+            let mainViewHTML = '';
+            if (state.plannerView === 'weekly') {
+                const mon = getMonday(state.plannerDate);
+                const dayNames = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+                const weekDays = [];
+                
+                for (let i = 0; i < 7; i++) {
+                    const dayDate = new Date(mon);
+                    dayDate.setDate(dayDate.getDate() + i);
+                    const dayStr = formatDateStr(dayDate);
+                    const dayTasks = state.plannerTasks.filter(t => t.date === dayStr);
+                    weekDays.push({
+                        name: dayNames[i],
+                        date: dayDate,
+                        dateStr: dayStr,
+                        tasks: dayTasks
+                    });
+                }
+
+                const todayStr = formatDateStr(new Date());
+
+                mainViewHTML = `
+                    <div class="grid md:grid-cols-7 gap-4">
+                        ${weekDays.map(day => {
+                            const isToday = day.dateStr === todayStr;
+                            const isSelected = day.dateStr === state.selectedPlannerDay;
+                            return `
+                                <div onclick="appMethods.setSelectedPlannerDay('${day.dateStr}')" class="bg-white border-2 ${isToday ? 'border-indigo-500 shadow-sm' : isSelected ? 'border-indigo-300' : 'border-slate-200'} rounded-2xl p-4 flex flex-col min-h-[180px] hover:shadow-md transition-all cursor-pointer">
+                                    <div class="flex justify-between items-center mb-3">
+                                        <span class="text-xs font-black uppercase ${isToday ? 'text-indigo-600' : 'text-slate-500'}">${day.name}</span>
+                                        <span class="text-xs font-bold text-slate-400">${day.date.getDate()}</span>
+                                    </div>
+                                    <div class="space-y-2 flex-grow overflow-y-auto max-h-[140px] pr-1">
+                                        ${day.tasks.length === 0 ? `
+                                            <div class="text-[10px] text-slate-400 italic text-center py-4">Sin tareas</div>
+                                        ` : day.tasks.map(task => {
+                                            const subObj = AVAILABLE_SUBJECTS.find(s => s.id === task.subjectId);
+                                            return `
+                                                <div onclick="event.stopPropagation();" class="p-2 bg-slate-50 border border-slate-100 rounded-lg flex flex-col gap-1.5 text-xs text-slate-700">
+                                                    <div class="flex items-start gap-1.5 justify-between font-semibold">
+                                                        <label class="flex items-start gap-1.5 cursor-pointer select-none">
+                                                            <input type="checkbox" ${task.completed ? 'checked' : ''} onclick="appMethods.togglePlannerTask('${task.id}')" class="mt-0.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
+                                                            <span class="${task.completed ? 'line-through text-slate-400 font-normal' : 'font-medium'}">${task.text}</span>
+                                                        </label>
+                                                        <button onclick="appMethods.deletePlannerTask('${task.id}')" class="text-slate-300 hover:text-rose-500 transition-colors self-start">
+                                                            <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+                                                        </button>
+                                                    </div>
+                                                    ${subObj ? `
+                                                        <div class="flex items-center justify-between gap-2 mt-0.5 pt-1.5 border-t border-slate-150">
+                                                            <span class="text-[9px] font-bold text-slate-400 truncate max-w-[80px]" title="${subObj.name}">${subObj.name}</span>
+                                                            <button onclick="appMethods.enterSubjectFolder('${task.subjectId}')" class="px-1.5 py-0.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-600 rounded text-[9px] font-extrabold transition-all flex items-center gap-0.5 shrink-0">
+                                                                Estudiar <i data-lucide="chevron-right" class="w-2 h-2"></i>
+                                                            </button>
+                                                        </div>
+                                                    ` : ''}
+                                                </div>
+                                            `;
+                                        }).join('')}
+                                    </div>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                `;
+            } else {
+                const firstDayOfMonth = new Date(state.plannerDate.getFullYear(), state.plannerDate.getMonth(), 1);
+                const lastDayOfMonth = new Date(state.plannerDate.getFullYear(), state.plannerDate.getMonth() + 1, 0);
+                
+                let startDay = firstDayOfMonth.getDay();
+                startDay = startDay === 0 ? 6 : startDay - 1;
+                
+                const totalDays = lastDayOfMonth.getDate();
+                const calendarDays = [];
+                
+                const prevMonthLast = new Date(state.plannerDate.getFullYear(), state.plannerDate.getMonth(), 0);
+                const prevMonthLastDate = prevMonthLast.getDate();
+                for (let i = startDay - 1; i >= 0; i--) {
+                    const d = new Date(state.plannerDate.getFullYear(), state.plannerDate.getMonth() - 1, prevMonthLastDate - i);
+                    calendarDays.push({ date: d, isCurrentMonth: false, dateStr: formatDateStr(d) });
+                }
+                
+                for (let i = 1; i <= totalDays; i++) {
+                    const d = new Date(state.plannerDate.getFullYear(), state.plannerDate.getMonth(), i);
+                    calendarDays.push({ date: d, isCurrentMonth: true, dateStr: formatDateStr(d) });
+                }
+                
+                const totalGridCells = Math.ceil(calendarDays.length / 7) * 7;
+                const nextDaysCount = totalGridCells - calendarDays.length;
+                for (let i = 1; i <= nextDaysCount; i++) {
+                    const d = new Date(state.plannerDate.getFullYear(), state.plannerDate.getMonth() + 1, i);
+                    calendarDays.push({ date: d, isCurrentMonth: false, dateStr: formatDateStr(d) });
+                }
+
+                const todayStr = formatDateStr(new Date());
+
+                const selDate = new Date(state.selectedPlannerDay + 'T00:00:00');
+                const formattedSelDate = selDate.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
+                const selTasks = state.plannerTasks.filter(t => t.date === state.selectedPlannerDay);
+
+                mainViewHTML = `
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-4">
+                            <div class="grid grid-cols-7 gap-1 text-center font-black text-[10px] text-slate-400 uppercase tracking-wider mb-2">
+                                <div>Lun</div><div>Mar</div><div>Mié</div><div>Jue</div><div>Vie</div><div>Sáb</div><div>Dom</div>
+                            </div>
+                            <div class="grid grid-cols-7 gap-1.5">
+                                ${calendarDays.map(day => {
+                                    const isToday = day.dateStr === todayStr;
+                                    const isSelected = day.dateStr === state.selectedPlannerDay;
+                                    const dayTasks = state.plannerTasks.filter(t => t.date === day.dateStr);
+                                    const completedCount = dayTasks.filter(t => t.completed).length;
+                                    const pendingCount = dayTasks.length - completedCount;
+
+                                    return `
+                                        <div onclick="appMethods.setSelectedPlannerDay('${day.dateStr}')" class="aspect-square bg-white border ${isToday ? 'border-indigo-500 ring-1 ring-indigo-500 shadow-sm' : isSelected ? 'border-indigo-300 bg-indigo-50/20' : 'border-slate-100'} ${day.isCurrentMonth ? 'text-slate-800' : 'text-slate-300 bg-slate-50/50'} rounded-xl p-1.5 flex flex-col justify-between hover:border-indigo-400 hover:shadow-sm cursor-pointer transition-all">
+                                            <div class="text-[10px] font-bold ${isToday ? 'text-indigo-600 font-extrabold' : ''}">${day.date.getDate()}</div>
+                                            
+                                            ${dayTasks.length > 0 ? `
+                                                <div class="flex gap-0.5 justify-center mt-1 flex-wrap">
+                                                    ${Array.from({ length: Math.min(3, pendingCount) }).map(() => `<span class="w-1 h-1 rounded-full bg-indigo-500"></span>`).join('')}
+                                                    ${Array.from({ length: Math.min(3, completedCount) }).map(() => `<span class="w-1 h-1 rounded-full bg-emerald-500"></span>`).join('')}
+                                                    ${dayTasks.length > 6 ? `<span class="text-[7px] text-slate-400 font-bold leading-none">+</span>` : ''}
+                                                </div>
+                                            ` : ''}
+                                        </div>
+                                    `;
+                                }).join('')}
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm flex flex-col justify-between min-h-[300px]">
+                            <div>
+                                <div class="border-b border-slate-100 pb-3 mb-4">
+                                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Tareas del día</span>
+                                    <h4 class="font-bold text-slate-800 text-sm capitalize">${formattedSelDate}</h4>
+                                </div>
+                                <div class="space-y-2.5 max-h-[220px] overflow-y-auto pr-1 mb-4">
+                                    ${selTasks.length === 0 ? `
+                                        <div class="text-xs text-slate-400 italic py-6 text-center">No hay tareas programadas.</div>
+                                    ` : selTasks.map(task => {
+                                        const subObj = AVAILABLE_SUBJECTS.find(s => s.id === task.subjectId);
+                                        return `
+                                            <div class="p-2.5 bg-slate-50 border border-slate-100 rounded-xl flex flex-col gap-1.5 text-xs text-slate-700">
+                                                <div class="flex items-start gap-2 justify-between">
+                                                    <label class="flex items-start gap-1.5 cursor-pointer select-none">
+                                                        <input type="checkbox" ${task.completed ? 'checked' : ''} onclick="appMethods.togglePlannerTask('${task.id}')" class="mt-0.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
+                                                        <span class="${task.completed ? 'line-through text-slate-400 font-normal' : 'font-medium'}">${task.text}</span>
+                                                    </label>
+                                                    <button onclick="appMethods.deletePlannerTask('${task.id}')" class="text-slate-300 hover:text-rose-500 transition-colors">
+                                                        <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+                                                    </button>
+                                                </div>
+                                                ${subObj ? `
+                                                    <div class="flex items-center justify-between gap-2 mt-0.5 pt-1.5 border-t border-slate-150">
+                                                        <span class="text-[9px] font-bold text-slate-400 truncate max-w-[100px]">${subObj.name}</span>
+                                                        <button onclick="appMethods.enterSubjectFolder('${task.subjectId}')" class="px-1.5 py-0.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-600 rounded text-[9px] font-extrabold transition-all flex items-center gap-0.5 shrink-0">
+                                                            Estudiar <i data-lucide="chevron-right" class="w-2 h-2"></i>
+                                                        </button>
+                                                    </div>
+                                                ` : ''}
+                                            </div>
+                                        `;
+                                    }).join('')}
+                                </div>
+                            </div>
+
+                            <form onsubmit="event.preventDefault(); const txt = this.taskText.value; appMethods.addPlannerTask(txt, '${state.selectedPlannerDay}', 'diario', this.taskSubject.value); this.reset();" class="space-y-2 pt-3 border-t border-slate-100">
+                                <input type="text" name="taskText" required placeholder="Añadir tarea para este día..." class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500">
+                                <select name="taskSubject" class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500">
+                                    <option value="">Asignatura vinculada (Opcional)</option>
+                                    ${AVAILABLE_SUBJECTS.map(s => `<option value="${s.id}">${s.name}</option>`).join('')}
+                                </select>
+                                <button type="submit" class="w-full py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-xs shadow-sm hover:shadow transition-all">
+                                    Programar Tarea
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                `;
+            }
+
+            return `
+                <div class="max-w-5xl w-full mx-auto px-4 py-8 space-y-8 flex-grow fade-in">
+                    ${renderBannerHTML()}
+
+                    ${renderNavigationTabs('planner')}
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="space-y-6">
+                            <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm space-y-4">
+                                <div class="flex items-center gap-2 text-indigo-600 font-bold text-sm">
+                                    <i data-lucide="target" class="w-5 h-5"></i>
+                                    <span>Objetivo de la Semana</span>
+                                </div>
+                                <textarea onblur="appMethods.setWeeklyFocus(this.value)" placeholder="Escribe aquí tu objetivo prioritario de esta semana..." class="w-full p-3 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500 resize-none h-20 outline-none transition-all">${state.weeklyFocus}</textarea>
+                            </div>
+
+                            <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm space-y-4">
+                                <div class="flex items-center gap-2 text-indigo-600 font-bold text-sm">
+                                    <i data-lucide="plus-circle" class="w-5 h-5"></i>
+                                    <span>Nueva Tarea de Estudio</span>
+                                </div>
+                                <form onsubmit="event.preventDefault(); const txt = this.taskText.value; const d = this.taskDate.value; const s = this.taskSubject.value; appMethods.addPlannerTask(txt, d, 'diario', s); this.reset();" class="space-y-3">
+                                    <div>
+                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">¿Qué vas a estudiar?</label>
+                                        <input type="text" name="taskText" required placeholder="Ej: Repasar tema 2 y hacer test" class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500">
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <div>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Fecha</label>
+                                            <input type="date" name="taskDate" required value="${formatDateStr(new Date())}" class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500">
+                                        </div>
+                                        <div>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Asignatura (Opcional)</label>
+                                            <select name="taskSubject" class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500">
+                                                <option value="">Ninguna</option>
+                                                ${AVAILABLE_SUBJECTS.map(s => `<option value="${s.id}">${s.name} (${s.year})</option>`).join('')}
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="w-full py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-xs shadow-md transition-all flex items-center justify-center gap-1.5">
+                                        <i data-lucide="plus" class="w-4 h-4"></i> Añadir Tarea
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div class="bg-gradient-to-br from-indigo-50 to-purple-50 border border-indigo-100 rounded-3xl p-6 shadow-sm space-y-3">
+                                <div class="flex items-center gap-2 text-indigo-800 font-bold text-sm">
+                                    <i data-lucide="sparkles" class="w-5 h-5 text-indigo-600"></i>
+                                    <span>Consejos de Enfoque</span>
+                                </div>
+                                <div class="text-xs text-indigo-950/80 space-y-2.5 leading-relaxed font-medium">
+                                    <p>🎯 <strong>La Regla de las 3 Tareas:</strong> Intenta definir no más de 3 objetivos clave diarios para evitar la fatiga cognitiva.</p>
+                                    <p>⚠️ <strong>Límite preventivo:</strong> Mantén tu agenda limpia. SAIMAP limita a 5 las tareas pendientes por día.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="md:col-span-2 space-y-6">
+                            <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm flex flex-col sm:flex-row justify-between items-center gap-4">
+                                <div class="flex items-center gap-3">
+                                    <button onclick="appMethods.changePlannerDate(-1)" class="p-2 border border-slate-200 rounded-xl hover:bg-slate-50 transition-colors">
+                                        <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                                    </button>
+                                    <h3 class="font-extrabold text-slate-800 text-sm sm:text-base">${dateRangeStr}</h3>
+                                    <button onclick="appMethods.changePlannerDate(1)" class="p-2 border border-slate-200 rounded-xl hover:bg-slate-50 transition-colors">
+                                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                                    </button>
+                                    <button onclick="appMethods.goToday()" class="px-3 py-2 border border-slate-200 rounded-xl text-xs font-bold hover:bg-slate-50 transition-colors">
+                                        Hoy
+                                    </button>
+                                </div>
+
+                                <div class="flex bg-slate-100 p-1 rounded-xl text-xs font-bold text-slate-500">
+                                    <button onclick="appMethods.setPlannerView('weekly')" class="px-4 py-1.5 rounded-lg transition-all ${state.plannerView === 'weekly' ? 'bg-white text-slate-800 shadow-sm' : 'hover:text-slate-700'}">
+                                        Semana
+                                    </button>
+                                    <button onclick="appMethods.setPlannerView('monthly')" class="px-4 py-1.5 rounded-lg transition-all ${state.plannerView === 'monthly' ? 'bg-white text-slate-800 shadow-sm' : 'hover:text-slate-700'}">
+                                        Mes
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm">
+                                <div class="flex items-center justify-between text-xs font-bold text-slate-500 mb-2">
+                                    <span>Progreso del periodo: ${completedPeriod}/${totalPeriod} tareas completadas</span>
+                                    <span>${progressPeriod}%</span>
+                                </div>
+                                <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 transition-all duration-500 ease-out" style="width: ${progressPeriod}%"></div>
+                                </div>
+                            </div>
+
+                            ${mainViewHTML}
+                        </div>
+                    </div>
+                </div>
+                ${renderBrandFooter()}
+            `;
         }
 
         // Dashboard principal con sistema de desbloqueos
@@ -902,35 +1365,9 @@
 
             return `
                 <div class="max-w-5xl w-full mx-auto px-4 py-8 space-y-8 flex-grow fade-in">
-                    <!-- Cabecera / Banner -->
-                    <div class="bg-slate-900 text-white rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden flex flex-col md:flex-row md:items-center justify-between gap-6">
-                        <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
-                        <div class="space-y-2 max-w-xl">
-                            <span class="text-xs font-bold tracking-[0.3em] text-indigo-300 uppercase block">Portal SAIMAP</span>
-                            <h1 class="text-3xl md:text-4xl font-black tracking-tight">Academia de Psicología</h1>
-                            <p class="text-slate-400 text-sm">Tu espacio de estudio interactivo. Únete a la academia para acceder de forma ilimitada a todos los contenidos.</p>
-                        </div>
-                        <div class="flex flex-wrap items-center gap-3">
-                            ${(REQUIRE_AUTH && authState.isAuthenticated && authState.email) ? `
-                                <div class="flex items-center gap-2.5 bg-white/10 border border-white/10 px-4 py-2.5 rounded-xl text-xs">
-                                    <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
-                                    <span class="text-slate-200 font-medium">${authState.email}</span>
-                                    <button onclick="handleLogout()" class="ml-1.5 text-slate-400 hover:text-rose-400 font-bold transition-colors" title="Cerrar sesión">
-                                        <i data-lucide="log-out" class="w-4.5 h-4.5"></i>
-                                    </button>
-                                </div>
-                            ` : `
-                                <button onclick="state.showLoginModal = true; render();" class="px-5 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all flex items-center gap-2">
-                                    <i data-lucide="log-in" class="w-4 h-4"></i>
-                                    Acceso Alumnos
-                                </button>
-                            `}
-                            <button onclick="appMethods.toggleUploader()" class="px-5 py-3 rounded-xl border border-white/20 hover:bg-white/10 text-white font-bold text-sm transition-all flex items-center gap-2">
-                                <i data-lucide="${state.showUploader ? 'x-circle' : 'upload-cloud'}" class="w-4 h-4"></i>
-                                ${state.showUploader ? 'Cerrar Carga' : 'Cargar JSON local'}
-                            </button>
-                        </div>
-                    </div>
+                    ${renderBannerHTML()}
+
+                    ${renderNavigationTabs('library')}
 
                     <!-- Dropzone manual oculto/mostrado -->
                     ${state.showUploader ? `
@@ -2082,6 +2519,8 @@
                 } else {
                     app.innerHTML = renderFinished();
                 }
+            } else if (state.gameState === 'planner') {
+                app.innerHTML = renderPlanner();
             }
 
             if (state.showPromoModal) {
