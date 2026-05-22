@@ -1,0 +1,1688 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es condición suficiente la existencia de una correlación lineal significativa entre dos variables para establecer una relación de causalidad?",
+      "options": [
+        "Sí, es suficiente",
+        "No, no lo es",
+        "No se sabe"
+      ],
+      "correct": 1,
+      "hint": "Revisa los requisitos de causalidad más allá de la covariación.",
+      "explanation": "La correlación indica que las variables covarían, pero la causalidad exige además precedencia temporal y ausencia de variables extrañas o relaciones espurias."
+    },
+    {
+      "q": "¿Puede el coeficiente de determinación $$r_{xy}^2$$ adoptar valores negativos en algún supuesto estadístico?",
+      "options": [
+        "Sí, en negativas",
+        "No, nunca puede",
+        "No se sabe"
+      ],
+      "correct": 1,
+      "hint": "Recuerda que el coeficiente se obtiene elevando la correlación de Pearson al cuadrado.",
+      "explanation": "Dado que $$r_{xy}^2 = (r_{xy})^2$$, cualquier valor real entre $$-1$$ y $$1$$ elevado al cuadrado resultará en un valor no negativo $$[0, 1]$$."
+    },
+    {
+      "q": "¿Es la covarianza $$S_{xy}$$ un estadístico acotado entre un rango mínimo y máximo predefinido?",
+      "options": [
+        "Sí, entre $$-1$$ y $$1$$",
+        "No, no está acotado",
+        "No se sabe"
+      ],
+      "correct": 1,
+      "hint": "Considera por qué se prefiere el uso de la correlación de Pearson en informes científicos.",
+      "explanation": "La covarianza carece de suelo y techo, lo que dificulta su interpretación directa sin conocer la métrica y dispersión de las variables originales."
+    },
+    {
+      "q": "¿Exige la causalidad determinista que el efecto se produzca siempre bajo condiciones análogas?",
+      "options": [
+        "Sí, lo exige",
+        "No, es probable",
+        "No se sabe"
+      ],
+      "correct": 0,
+      "hint": "Distingue entre leyes físicas clásicas y leyes probabilísticas de las ciencias sociales.",
+      "explanation": "En la causalidad determinista, a diferencia de la probabilística, se asume que dadas unas condiciones previas el resultado es idéntico e invariable."
+    },
+    {
+      "q": "¿Representa la diagonal principal de una matriz de varianzas y covarianzas los valores de $$S_{xy}$$?",
+      "options": [
+        "Sí, los representa",
+        "No, son varianzas",
+        "No se sabe"
+      ],
+      "correct": 1,
+      "hint": "Observa la intersección de una variable consigo misma en la matriz.",
+      "explanation": "La intersección de una variable consigo misma representa su varianza $$S^2$$. Las covarianzas $$S_{xy}$$ ocupan las celdas fuera de la diagonal."
+    },
+    {
+      "q": "¿Es necesario el cálculo de las desviaciones típicas para obtener el coeficiente de correlación de Pearson?",
+      "options": [
+        "Sí, es necesario",
+        "No, con $$S_{xy}$$ basta",
+        "No se sabe"
+      ],
+      "correct": 0,
+      "hint": "Analiza el denominador de la fórmula de $$r_{xy}$$.",
+      "explanation": "La fórmula de Pearson es $$r_{xy} = \\frac{S_{xy}}{S_x S_y}$$, por lo que se requieren obligatoriamente las desviaciones típicas de ambas variables."
+    },
+    {
+      "q": "¿Indica una correlación nula ($$r = 0$$) la ausencia total de cualquier tipo de relación entre variables?",
+      "options": [
+        "Sí, absoluta",
+        "No, solo lineal",
+        "No se sabe"
+      ],
+      "correct": 1,
+      "hint": "El texto especifica el tipo de relación que miden estos estadísticos.",
+      "explanation": "Pearson solo mide asociaciones lineales. Podría existir una relación cuadrática o logarítmica que Pearson no detecte, arrojando un valor cercano a cero."
+    },
+    {
+      "q": "¿Se consideran las relaciones espurias como asociaciones directas mediadas por la lógica temporal?",
+      "options": [
+        "Sí, son directas",
+        "No, son engañosas",
+        "No se sabe"
+      ],
+      "correct": 1,
+      "hint": "Piensa en el ejemplo del consumo de helados y los ahogamientos.",
+      "explanation": "Las relaciones espurias son aparentes; la correlación existe pero es fruto de una tercera variable que influye sobre ambas simultáneamente."
+    },
+    {
+      "q": "¿Es el muestreo aleatorio una técnica que aumenta las garantías para identificar relaciones causales?",
+      "options": [
+        "Sí, las aumenta",
+        "No, es irrelevante",
+        "No se sabe"
+      ],
+      "correct": 0,
+      "hint": "Relaciona el control de variables con la validez interna del diseño.",
+      "explanation": "Los diseños experimentales con muestreo aleatorio y control de variables extrañas permiten una mayor validez interna para inferir causalidad."
+    },
+    {
+      "q": "¿Se utiliza la correlación de Pearson para explorar la asociación entre dos variables categóricas?",
+      "options": [
+        "Sí, se utiliza",
+        "No, es para cuant.",
+        "No se sabe"
+      ],
+      "correct": 1,
+      "hint": "Distingue entre variables cuantitativas y escalas nominales u ordinales.",
+      "explanation": "Pearson es para variables cuantitativas. Para variables categóricas, el texto menciona la prueba $$\\chi^2$$ (chi-cuadrado)."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre la interpretación de la intensidad de la correlación según Cohen:",
+      "options": [
+        "$$r = 0,25$$ es relación pequeña",
+        "$$r = 0,35$$ es relación mediana",
+        "$$r = 0,45$$ es relación muy alta"
+      ],
+      "correct": 1,
+      "hint": "Recuerda los puntos de corte: 0,1, 0,3 y 0,5.",
+      "explanation": "Cohen (1988) establece que hasta $$\\pm 0,3$$ es mediana y a partir de $$\\pm 0,5$$ se considera una relación alta."
+    },
+    {
+      "q": "Sobre el diagrama de dispersión, es correcto afirmar que:",
+      "options": [
+        "El eje Y se reserva para la variable X",
+        "El eje X muestra la variable dependiente",
+        "El eje Y muestra la variable dependiente"
+      ],
+      "correct": 2,
+      "hint": "Identifica la posición estándar de las variables predictora y de respuesta.",
+      "explanation": "Convencionalmente, el eje horizontal (X) es para la variable independiente y el vertical (Y) para la dependiente."
+    },
+    {
+      "q": "En el cálculo de la covarianza $$S_{xy}$$, se cumple que:",
+      "options": [
+        "Se divide por la suma de cuadrados",
+        "Se divide por el tamaño muestral n",
+        "Se divide por los grados de libertad"
+      ],
+      "correct": 1,
+      "hint": "Observa la fórmula presentada en la página 89 del manual.",
+      "explanation": "La fórmula de la covarianza descrita en el texto es $$S_{xy} = \\frac{\\sum[(X_i - \\bar{X})(Y_i - \\bar{Y})]}{n}$$."
+    },
+    {
+      "q": "Sobre la relación entre el coeficiente de determinación y la varianza, es correcto que:",
+      "options": [
+        "Explica el porcentaje de error total",
+        "Indica la proporción de varianza única",
+        "Indica la proporción de varianza común"
+      ],
+      "correct": 2,
+      "hint": "Observa el gráfico de los círculos solapados.",
+      "explanation": "El coeficiente de determinación $$r^2$$ mide la varianza compartida o común entre las dos variables analizadas."
+    },
+    {
+      "q": "Para que exista causalidad entre dos variables, es requisito imprescindible que:",
+      "options": [
+        "La correlación sea exactamente 1,00",
+        "La causa preceda en el tiempo al efecto",
+        "Ambas variables sean de tipo categórico"
+      ],
+      "correct": 1,
+      "hint": "La lógica temporal es un principio básico de la ciencia.",
+      "explanation": "La precedencia temporal de la variable independiente sobre la dependiente es una condición necesaria (aunque no suficiente) para la causalidad."
+    },
+    {
+      "q": "Respecto a la matriz de varianzas y covarianzas, se afirma correctamente que:",
+      "options": [
+        "Contiene desviaciones típicas en diagonal",
+        "Las covarianzas se repiten simétricamente",
+        "Solo puede contener dos variables (X, Y)"
+      ],
+      "correct": 1,
+      "hint": "Observa la estructura de la Tabla 18 en el manual.",
+      "explanation": "Los datos de las covarianzas se repiten en el triángulo superior e inferior, haciendo que la matriz sea simétrica respecto a la diagonal."
+    },
+    {
+      "q": "Al transformar una varianza $$S^2$$ en desviación típica $$S$$, se debe:",
+      "options": [
+        "Elevar el valor obtenido al cuadrado",
+        "Dividir el valor obtenido por la media",
+        "Calcular la raíz cuadrada de la misma"
+      ],
+      "correct": 2,
+      "hint": "Es un paso previo necesario para aplicar la fórmula de Pearson desde una matriz.",
+      "explanation": "La desviación típica es la raíz cuadrada de la varianza: $$S = \\sqrt{S^2}$$, fundamental para el denominador de $$r_{xy}$$."
+    },
+    {
+      "q": "La correlación de Pearson se diferencia de la de Spearman en que:",
+      "options": [
+        "Se aplica sobre datos no paramétricos",
+        "Se utiliza solo para variables de intervalo",
+        "Se utiliza para relaciones de tipo lineal"
+      ],
+      "correct": 2,
+      "hint": "El texto especifica que el foco de la asignatura son las relaciones comunes.",
+      "explanation": "Pearson es el estadístico por excelencia para cuantificar el grado de asociación lineal entre dos variables cuantitativas."
+    },
+    {
+      "q": "Si obtenemos un valor de $$r_{xy} = -0,85$$, podemos afirmar correctamente que:",
+      "options": [
+        "La asociación es nula por ser negativa",
+        "La asociación es muy alta e inversa",
+        "Existe un error en el cálculo estadístico"
+      ],
+      "correct": 1,
+      "hint": "Evalúa el signo y la magnitud absoluta del coeficiente.",
+      "explanation": "Un valor de $$-0,85$$ está cerca de $$-1,00$$, indicando una relación negativa (inversa) muy fuerte según los criterios de Cohen."
+    },
+    {
+      "q": "El término 'covariación' en estadística hace referencia a:",
+      "options": [
+        "El grado en que dos variables cambian",
+        "La causa única de un fenómeno social",
+        "La diferencia de medias entre grupos"
+      ],
+      "correct": 0,
+      "hint": "Revisa la definición de asociación en el primer apartado del tema.",
+      "explanation": "La asociación o covariación se define como el grado en que dos variables cambian juntas en magnitud y dirección."
+    },
+    {
+      "q": "En una investigación con diseño experimental, es correcto que:",
+      "options": [
+        "Se eliminan todas las variables extrañas",
+        "Se manipula la variable independiente",
+        "Se asume una causalidad determinista"
+      ],
+      "correct": 1,
+      "hint": "Busca la ventaja de los experimentos sobre los estudios observacionales.",
+      "explanation": "La manipulación de la variable independiente permite establecer con mayor claridad la dirección de la influencia hacia la dependiente."
+    },
+    {
+      "q": "Sobre el cálculo de puntuaciones diferenciales $$(X_i - \\bar{X})$$, es cierto que:",
+      "options": [
+        "Siempre dan un resultado acumulado de 1",
+        "Se requieren para obtener la covarianza",
+        "Se obtienen sumando la media al dato"
+      ],
+      "correct": 1,
+      "hint": "Observa el numerador de la fórmula de la covarianza.",
+      "explanation": "La covarianza se basa en el sumatorio del producto de las puntuaciones diferenciales de ambas variables."
+    },
+    {
+      "q": "Si $$r_{xy}^2 = 0,64$$, la interpretación correcta del porcentaje es:",
+      "options": [
+        "El 6,4% de Y se explica por la variable X",
+        "El 64% de Y se explica por la variable X",
+        "El 80% de Y se explica por la variable X"
+      ],
+      "correct": 1,
+      "hint": "Multiplica el coeficiente de determinación por 100.",
+      "explanation": "El coeficiente de determinación multiplicado por 100 indica el porcentaje de varianza de la dependiente explicada por la independiente."
+    },
+    {
+      "q": "Acerca de la causalidad en Psicología, se afirma correctamente que:",
+      "options": [
+        "Es de naturaleza puramente determinista",
+        "Se basa principalmente en probabilidades",
+        "No requiere de una base teórica previa"
+      ],
+      "correct": 1,
+      "hint": "Considera la complejidad del comportamiento humano frente a la física.",
+      "explanation": "Debido a la diversidad de influencias, en psicología las relaciones causales se establecen bajo premisas probabilísticas."
+    },
+    {
+      "q": "En un diagrama de dispersión con una línea de ajuste plana, se deduce:",
+      "options": [
+        "Una correlación positiva muy intensa",
+        "Una correlación negativa muy intensa",
+        "La ausencia de asociación entre ellas"
+      ],
+      "correct": 2,
+      "hint": "La pendiente de la línea refleja la dirección y fuerza de la relación.",
+      "explanation": "Una línea horizontal (pendiente cero) indica que los cambios en X no se asocian con cambios sistemáticos en Y."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre la covarianza $$S_{xy}$$:",
+      "options": [
+        "Su valor oscila entre el rango $$-1$$ y $$1$$",
+        "Es necesaria para calcular la correlación",
+        "Indica si la relación es directa o inversa"
+      ],
+      "correct": 0,
+      "hint": "Compara las propiedades de la covarianza con las de la correlación de Pearson.",
+      "explanation": "La covarianza no está acotada entre $$-1$$ y $$1$$; es la correlación de Pearson la que posee esa propiedad de estandarización."
+    },
+    {
+      "q": "Es incorrecto afirmar sobre la correlación de Pearson $$r_{xy}$$ que:",
+      "options": [
+        "Permite comparar relaciones de variables",
+        "Depende de la métrica de las variables",
+        "Es un estadístico bivariado por naturaleza"
+      ],
+      "correct": 1,
+      "hint": "Piensa en por qué Pearson soluciona el problema de la covarianza.",
+      "explanation": "Pearson es independiente de la escala de medida original de las variables, lo que permite comparar correlaciones de distintas fuentes."
+    },
+    {
+      "q": "Sobre las relaciones espurias, es falso o incorrecto que:",
+      "options": [
+        "Se deben a la influencia de una variable Z",
+        "Indican una causalidad directa entre X e Y",
+        "Pueden controlarse mediante diseño previo"
+      ],
+      "correct": 1,
+      "hint": "Recuerda que estas relaciones generan un 'efecto engañoso'.",
+      "explanation": "Precisamente, las relaciones espurias se caracterizan por NO ser causales, sino meras coincidencias estadísticas mediadas por terceros."
+    },
+    {
+      "q": "Indique la afirmación incorrecta respecto al coeficiente $$r_{xy}^2$$:",
+      "options": [
+        "Su valor máximo posible es igual a $$1,00$$",
+        "Requiere elevar la covarianza al cuadrado",
+        "Es igual a 1 en correlaciones perfectas"
+      ],
+      "correct": 1,
+      "hint": "Revisa los pasos del cálculo en el ejemplo de la página 97.",
+      "explanation": "El coeficiente de determinación se obtiene elevando al cuadrado la correlación ($$r^2$$), no la covarianza ($$S_{xy}$$)."
+    },
+    {
+      "q": "En relación con la validez interna de un estudio, es incorrecto que:",
+      "options": [
+        "Aumenta al controlar variables extrañas",
+        "Es máxima en los diseños observacionales",
+        "Permite mayor seguridad al inferir causas"
+      ],
+      "correct": 1,
+      "hint": "Compara el laboratorio con los contextos naturales mencionados en el texto.",
+      "explanation": "Los diseños observacionales tienen menor validez interna que los experimentales debido al menor control sobre variables confundentes."
+    },
+    {
+      "q": "Sobre la interpretación de Cohen (1992), es incorrecto decir que:",
+      "options": [
+        "$$r = 0,10$$ sugiere una relación pequeña",
+        "$$r = 0,50$$ sugiere una relación alta",
+        "$$r = 0,30$$ sugiere una relación pequeña"
+      ],
+      "correct": 2,
+      "hint": "Identifica el nivel asignado al valor 0,30.",
+      "explanation": "Según Cohen, $$r = 0,30$$ se clasifica como una relación mediana, no pequeña."
+    },
+    {
+      "q": "Respecto a la varianza compartida, es incorrecto afirmar que:",
+      "options": [
+        "Se representa visualmente mediante círculos",
+        "Es el resto de varianza no explicada por X",
+        "Aumenta conforme la correlación crece"
+      ],
+      "correct": 1,
+      "hint": "Define qué parte del gráfico representa el coeficiente de determinación.",
+      "explanation": "La varianza compartida es precisamente la varianza explicada, no la 'no explicada' o error."
+    },
+    {
+      "q": "Es incorrecto afirmar que la correlación negativa implica que:",
+      "options": [
+        "Si una variable aumenta, la otra disminuye",
+        "Los puntos forman una tendencia ascendente",
+        "El valor del estadístico $$r_{xy}$$ es menor a 0"
+      ],
+      "correct": 1,
+      "hint": "Visualiza el diagrama de dispersión de una relación inversa.",
+      "explanation": "En las correlaciones negativas, la línea de ajuste tiene una trayectoria descendente, no ascendente."
+    },
+    {
+      "q": "Sobre el cálculo de la desviación típica $$S_x$$, es incorrecto que:",
+      "options": [
+        "Se calcula como la raíz de la varianza",
+        "Utiliza $$n-1$$ en el denominador del cálculo",
+        "Es independiente de la media de la variable"
+      ],
+      "correct": 2,
+      "hint": "Fíjate en los elementos dentro del paréntesis de la fórmula.",
+      "explanation": "La desviación típica depende directamente de la media, ya que utiliza puntuaciones diferenciales $$(X_i - \\bar{X})$$."
+    },
+    {
+      "q": "Acerca de la causalidad determinista, es incorrecto afirmar que:",
+      "options": [
+        "Es común en ciencias como la astronomía",
+        "Existe siempre una variabilidad aleatoria",
+        "El efecto es constante bajo iguales causas"
+      ],
+      "correct": 1,
+      "hint": "Busca la diferencia con las ciencias de la salud.",
+      "explanation": "La causalidad determinista asume una mínima o nula variabilidad aleatoria, a diferencia de la probabilística."
+    },
+    {
+      "q": "Sobre el uso del paquete estadístico SPSS, es incorrecto que:",
+      "options": [
+        "Calcula la correlación lineal de Pearson",
+        "Solo permite analizar variables categóricas",
+        "Puede trazar líneas de ajuste en gráficos"
+      ],
+      "correct": 1,
+      "hint": "El texto introduce el SPSS al principio del capítulo.",
+      "explanation": "SPSS permite calcular tanto Pearson (cuantitativas) como $$\\chi^2$$ (categóricas), entre muchos otros análisis."
+    },
+    {
+      "q": "Respecto a la fórmula de Pearson, es incorrecto afirmar que:",
+      "options": [
+        "$$r_{xy} = S_{xy} / (S_x \\cdot S_y)$$ es la expresión",
+        "Requiere conocer la varianza de cada una",
+        "El resultado puede ser superior a $$1,00$$"
+      ],
+      "correct": 2,
+      "hint": "Piensa en el límite matemático del coeficiente.",
+      "explanation": "El valor de $$r$$ está estrictamente acotado entre $$-1$$ y $$1$$. Un valor superior indicaría un error de cálculo."
+    },
+    {
+      "q": "Sobre el concepto de bidireccionalidad, es incorrecto que:",
+      "options": [
+        "Es una característica de la asociación",
+        "Se aplica a las relaciones de causalidad",
+        "Implica que ambas variables se influyen"
+      ],
+      "correct": 1,
+      "hint": "Distingue entre el flujo de una vía y el de dos vías.",
+      "explanation": "La causalidad es unidireccional (causa $$\\rightarrow$$ efecto). La bidireccionalidad es propia de la asociación o correlación."
+    },
+    {
+      "q": "Acerca de la matriz de varianzas y covarianzas, es incorrecto que:",
+      "options": [
+        "La varianza de X se ubica en la celda (X, X)",
+        "La covarianza $$S_{xz}$$ es distinta a la $$S_{zx}$$",
+        "Permite obtener todos los datos para $$r_{xy}$$"
+      ],
+      "correct": 1,
+      "hint": "Evalúa la propiedad conmutativa de la covarianza.",
+      "explanation": "La covarianza entre X y Z es idéntica a la de Z y X ($$S_{xz} = S_{zx}$$), por eso la matriz es simétrica."
+    },
+    {
+      "q": "Sobre el ejemplo de soledad y depresión, es incorrecto afirmar que:",
+      "options": [
+        "Es una correlación de tipo positivo",
+        "Demuestra que la soledad causa depresión",
+        "Muestra que ambas variables covarían"
+      ],
+      "correct": 1,
+      "hint": "Recuerda la advertencia inicial del capítulo 4.",
+      "explanation": "El estudio mencionado halla una asociación, pero el texto aclara que no se puede afirmar causalidad solo con esos datos."
+    },
+    {
+      "q": "En el cálculo de la covarianza bivariada, el valor de $S_{xy}$ es de ____ cuando $\\sum[(X_{i}-\\bar{X})(Y_{i}-\\bar{Y})] = 25,40$ y $n=10$.",
+      "options": [
+        "2,540",
+        "2,822",
+        "0,254"
+      ],
+      "correct": 0,
+      "hint": "Divida el sumatorio de productos por el tamaño muestral exacto.",
+      "explanation": "La fórmula de la covarianza es $$S_{xy} = \\frac{\\sum[(X_{i}-\\bar{X})(Y_{i}-\\bar{Y})]}{n}$$. Sustituyendo: $$25,40 / 10 = 2,54$$."
+    },
+    {
+      "q": "Si disponemos de una correlación de Pearson $r = 0,796$, el coeficiente de determinación resultante es de ____.",
+      "options": [
+        "0,633",
+        "0,398",
+        "0,892"
+      ],
+      "correct": 0,
+      "hint": "Eleve el coeficiente de correlación al cuadrado.",
+      "explanation": "El coeficiente de determinación se halla como $$r^2$$. Por tanto, $$0,796^{2} = 0,6336$$. Redondeado a tres decimales es 0,633."
+    },
+    {
+      "q": "En una matriz de varianzas-covarianzas, el valor de la varianza de la variable $X$ se encuentra en la intersección de ____.",
+      "options": [
+        "Fila X y Columna X",
+        "Fila X y Columna Y",
+        "Fila Y y Columna X"
+      ],
+      "correct": 0,
+      "hint": "La diagonal de la matriz contiene las varianzas.",
+      "explanation": "Las varianzas se sitúan en la diagonal principal donde una variable se cruza consigo misma: $$\\text{Var}(X) = S_{x}^{2}$$."
+    },
+    {
+      "q": "Si la covarianza $S_{xy} = 9$ y las varianzas son $S_{x}^{2}=16$ y $S_{y}^{2}=21$, el coeficiente $r_{xy}$ es de ____.",
+      "options": [
+        "0,491",
+        "0,026",
+        "0,234"
+      ],
+      "correct": 0,
+      "hint": "Recuerde usar las desviaciones típicas (raíz de la varianza) en el denominador.",
+      "explanation": "La fórmula es $$r_{xy} = \\frac{S_{xy}}{\\sqrt{S_{x}^{2}} \\cdot \\sqrt{S_{y}^{2}}}$$. Así: $$9 / (4 \\cdot 4,582) = 9 / 18,328 = 0,491$$."
+    },
+    {
+      "q": "Para que exista causalidad, además de correlación, la variable independiente debe presentar ____ respecto a la dependiente.",
+      "options": [
+        "Precedencia temporal",
+        "Simetría bidireccional",
+        "Invarianza escalar"
+      ],
+      "correct": 0,
+      "hint": "La causa debe ocurrir antes que el efecto.",
+      "explanation": "Un requisito ineludible de la causalidad es que la causa (VI) anteceda temporalmente al efecto (VD)."
+    },
+    {
+      "q": "Cuando el coeficiente de determinación es $r^{2} = 1$, se dice que la varianza compartida es del ____ por ciento.",
+      "options": [
+        "100,0",
+        "010,0",
+        "001,0"
+      ],
+      "correct": 0,
+      "hint": "Multiplique el coeficiente por cien.",
+      "explanation": "Un $$r^{2} = 1,00$$ implica que el $$100\\%$$ de la variabilidad de una variable se explica por la otra."
+    },
+    {
+      "q": "Una correlación de $r = -0,80$ indica una relación de magnitud ____ según los criterios de Cohen.",
+      "options": [
+        "Alta",
+        "Baja",
+        "Nula"
+      ],
+      "correct": 0,
+      "hint": "Consulte los umbrales de interpretación (0,1, 0,3, 0,5).",
+      "explanation": "Valores por encima de $$\\pm 0,5$$ se consideran relaciones altas según la clasificación de Cohen."
+    },
+    {
+      "q": "El diagrama de dispersión que muestra una línea de ajuste totalmente horizontal indica una correlación de ____.",
+      "options": [
+        "0,00",
+        "1,00",
+        "-1,0"
+      ],
+      "correct": 0,
+      "hint": "La horizontalidad implica que el cambio en X no afecta a Y.",
+      "explanation": "Una línea horizontal representa la ausencia de relación lineal, es decir, $$r = 0,00$$."
+    },
+    {
+      "q": "El estadístico que permite controlar el efecto de una tercera variable en una relación aparentemente causal es la ____.",
+      "options": [
+        "Correlación parcial",
+        "Correlación de Spearman",
+        "Correlación de Kendall"
+      ],
+      "correct": 0,
+      "hint": "Busque el método para limpiar relaciones espurias.",
+      "explanation": "La correlación parcial identifica y elimina el efecto engañoso de variables confundentes o terceras variables."
+    },
+    {
+      "q": "Si la covarianza entre X y Z es $S_{xz} = 17$ y las varianzas son $S_{x}^{2}=16$ y $S_{z}^{2}=19$, el valor de $r_{xz}$ es ____.",
+      "options": [
+        "0,974",
+        "0,113",
+        "0,056"
+      ],
+      "correct": 0,
+      "hint": "Aplique la raíz cuadrada a 16 y 19 antes de multiplicar.",
+      "explanation": "Cálculo: $$17 / (4 \\cdot 4,358) = 17 / 17,432 = 0,974$$."
+    },
+    {
+      "q": "En psicología y ciencias sociales, las relaciones causales suelen ser de naturaleza ____.",
+      "options": [
+        "Probabilística",
+        "Determinista",
+        "Inexistente"
+      ],
+      "correct": 0,
+      "hint": "Considere el margen de error y variables no controladas.",
+      "explanation": "Debido a la complejidad humana, las leyes no son exactas (deterministas) sino basadas en probabilidades."
+    },
+    {
+      "q": "Si el número de sujetos aumenta de $n=10$ a $n=100$ manteniendo el sumatorio constante, la covarianza ____.",
+      "options": [
+        "Disminuye",
+        "Aumenta",
+        "Iguala"
+      ],
+      "correct": 0,
+      "hint": "El tamaño muestral está en el denominador.",
+      "explanation": "Al dividir por un número mayor ($$n$$), el cociente resultante será menor."
+    },
+    {
+      "q": "Un coeficiente de determinación de $r^{2} = 0,35$ significa que el ____ de la varianza no es compartida.",
+      "options": [
+        "65,00%",
+        "35,00%",
+        "0,35%"
+      ],
+      "correct": 0,
+      "hint": "Reste el porcentaje de varianza compartida al total (100%).",
+      "explanation": "Si el $$35\\%$$ es varianza compartida, el resto es $$100 - 35 = 65\\%$$."
+    },
+    {
+      "q": "En un diagrama de dispersión, la variable independiente se sitúa habitualmente en el eje ____.",
+      "options": [
+        "Horizontal (X)",
+        "Vertical (Y)",
+        "Diagonal (Z)"
+      ],
+      "correct": 0,
+      "hint": "Es la convención estándar en cartesianas.",
+      "explanation": "El eje de abscisas (X) se reserva para la variable independiente o predictora."
+    },
+    {
+      "q": "La principal limitación de la covarianza frente a la correlación es que la primera ____.",
+      "options": [
+        "No está acotada",
+        "Siempre es nula",
+        "Es unidireccional"
+      ],
+      "correct": 0,
+      "hint": "Piense en el rango de valores posibles.",
+      "explanation": "La covarianza carece de mínimos y máximos (suelo y techo), dificultando su interpretación comparativa."
+    },
+    {
+      "q": "Al calcular la desviación típica de X para la correlación, usamos en el denominador el valor ____.",
+      "options": [
+        "n - 1",
+        "n + 1",
+        "n ^ 2"
+      ],
+      "correct": 0,
+      "hint": "Se trata de la fórmula de la desviación estándar muestral.",
+      "explanation": "La fórmula corregida utiliza $$n-1$$ para obtener un estimador insesgado: $$S_{x} = \\sqrt{\\frac{\\sum(X_{i}-\\bar{X})^{2}}{n-1}}$$."
+    },
+    {
+      "q": "Si $S_{xy} = 2,54$, $S_{x} = 1,89$ y $S_{y} = 1,69$, el producto de las desviaciones típicas es ____.",
+      "options": [
+        "3,194",
+        "3,540",
+        "2,540"
+      ],
+      "correct": 0,
+      "hint": "Simplemente multiplique $1,89 \\times 1,69$.",
+      "explanation": "El denominador de la correlación de Pearson es $$S_{x} \\cdot S_{y} = 1,89 \\cdot 1,69 = 3,1941$$."
+    },
+    {
+      "q": "Una relación donde el aumento de una variable implica la disminución de la otra se denomina ____.",
+      "options": [
+        "Negativa",
+        "Positiva",
+        "Simétrica"
+      ],
+      "correct": 0,
+      "hint": "Las variables se mueven en direcciones opuestas.",
+      "explanation": "Esto define la correlación negativa o inversa."
+    },
+    {
+      "q": "El término 'covariación' se refiere al grado en que dos variables ____.",
+      "options": [
+        "Cambian juntas",
+        "Son idénticas",
+        "Son constantes"
+      ],
+      "correct": 0,
+      "hint": "Etimológicamente: 'variar con'.",
+      "explanation": "La asociación implica que cuando una variable cambia, la otra lo hace en cierta magnitud y dirección."
+    },
+    {
+      "q": "El coeficiente de determinación de una correlación de $r = -0,5$ es de ____.",
+      "options": [
+        "0,25",
+        "0,50",
+        "-0,2"
+      ],
+      "correct": 0,
+      "hint": "Cualquier número real al cuadrado es positivo.",
+      "explanation": "Cálculo: $$(-0,5)^{2} = 0,25$$. El signo negativo desaparece al elevar al cuadrado."
+    },
+    {
+      "q": "Respecto a la correlación de Pearson ($r_{xy}$), ¿cuál de las siguientes afirmaciones es correcta?",
+      "options": [
+        "Es un valor acotado entre -1 y 1",
+        "Su signo indica la dirección de relación",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Repase todas las propiedades básicas del coeficiente.",
+      "explanation": "Efectivamente, $$r$$ está acotado, su signo indica dirección y su valor absoluto indica fuerza."
+    },
+    {
+      "q": "¿Qué requisitos son necesarios para establecer una relación de causalidad científica?",
+      "options": [
+        "Existencia de asociación previa",
+        "Precedencia temporal de la causa",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "La causalidad requiere más condiciones que la simple asociación.",
+      "explanation": "Se requiere correlación, orden temporal y ausencia de variables extrañas (validez interna)."
+    },
+    {
+      "q": "Sobre las relaciones espurias, es cierto que:",
+      "options": [
+        "Hay una tercera variable mediadora",
+        "La correlación inicial es engañosa",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Piense en el ejemplo de los helados y los ahogamientos.",
+      "explanation": "Las relaciones espurias son asociaciones estadísticas reales pero no causales, mediadas por factores externos."
+    },
+    {
+      "q": "En una matriz de varianzas y covarianzas de tres variables (X, Y, Z):",
+      "options": [
+        "Hay exactamente tres varianzas",
+        "Las covarianzas se repiten simétricamente",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Visualice la estructura de la Tabla 18 del manual.",
+      "explanation": "La matriz tiene las varianzas en la diagonal y las covarianzas en los triángulos superior e inferior."
+    },
+    {
+      "q": "El coeficiente de determinación ($r^2$):",
+      "options": [
+        "Representa el % de varianza compartida",
+        "Siempre adopta un signo positivo",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Recuerde que es el cuadrado de la correlación.",
+      "explanation": "Al ser un cuadrado, nunca es negativo y cuantifica la proporción de variabilidad explicada."
+    },
+    {
+      "q": "Para interpretar la intensidad de una correlación según Cohen:",
+      "options": [
+        "0,10 indica una relación pequeña",
+        "0,30 indica una relación mediana",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son los estándares convencionales en ciencias sociales.",
+      "explanation": "Cohen estableció los cortes 0,1 (pequeña), 0,3 (media) y 0,5 (alta) para el valor absoluto de $$r$$."
+    },
+    {
+      "q": "Los diagramas de dispersión permiten identificar visualmente:",
+      "options": [
+        "La presencia de valores atípicos",
+        "La tendencia (creciente/decreciente)",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es la representación gráfica de la nube de puntos.",
+      "explanation": "El gráfico muestra la forma, dirección y fuerza de la relación entre dos variables continuas."
+    },
+    {
+      "q": "La covarianza ($S_{xy}$) se utiliza para:",
+      "options": [
+        "Calcular la correlación de Pearson",
+        "Indicar la dirección de la relación",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es un estadístico intermedio fundamental.",
+      "explanation": "Aunque es difícil de interpretar sola, es el numerador de $$r$$ y su signo define la dirección."
+    },
+    {
+      "q": "En el contexto de la investigación experimental:",
+      "options": [
+        "Se manipula la variable independiente",
+        "Se controlan variables confundentes",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es el método con mayor validez interna.",
+      "explanation": "El diseño experimental permite aislar causas y efectos mediante control y aleatorización."
+    },
+    {
+      "q": "Sobre el coeficiente de determinación, si $r^2 = 0,6336$:",
+      "options": [
+        "El 63,36% de Y se explica por X",
+        "La correlación $r$ era de 0,796",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Revise el ejemplo de las notas de matemáticas.",
+      "explanation": "Ambas afirmaciones son equivalentes y describen los resultados del ejemplo práctico del manual."
+    },
+    {
+      "q": "Si $S_{xy} = 100$, $S_{x} = 2$ y $S_{y} = 2$, el valor de la correlación de Pearson es:",
+      "options": [
+        "25,00",
+        "0,250",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Calcule $r = 100 / (2 \\times 2)$.",
+      "explanation": "El cálculo da $$100 / 4 = 25$$. Pero $$r$$ no puede ser mayor que 1. Por tanto, los datos son imposibles o la respuesta es 'Ninguna'."
+    },
+    {
+      "q": "Un coeficiente de correlación de Pearson de $r = 1,25$ indica:",
+      "options": [
+        "Relación súper-positiva",
+        "Error de redondeo bajo",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Compruebe los límites de la escala de Pearson.",
+      "explanation": "La correlación de Pearson está acotada estrictamente entre $$-1$$ y $$1$$. Un valor de 1,25 es estadísticamente imposible."
+    },
+    {
+      "q": "Si la varianza compartida es del 49%, la correlación de Pearson debe ser:",
+      "options": [
+        "0,490",
+        "0,245",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "La raíz cuadrada de 0,49 es...",
+      "explanation": "Si $$r^{2} = 0,49$$, entonces $$r = \\sqrt{0,49} = 0,7$$. Ninguna opción muestra 0,7."
+    },
+    {
+      "q": "La covarianza de una variable consigo misma ($S_{xx}$) es igual a:",
+      "options": [
+        "La media de X",
+        "La correlación X",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Piense en la definición de varianza.",
+      "explanation": "La covarianza de una variable consigo misma es, por definición, su varianza ($$S_{x}^{2}$$)."
+    },
+    {
+      "q": "En el ejemplo del manual, la covarianza entre 'estatura' y 'síntomas depresivos' se considera:",
+      "options": [
+        "Positiva alta",
+        "Negativa alta",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Busque el ejemplo de correlación nula.",
+      "explanation": "El manual cita este caso como ejemplo de correlación nula o neutra (ausencia de relación)."
+    },
+    {
+      "q": "Si $r = -1,00$, el coeficiente de determinación es:",
+      "options": [
+        "-1,00",
+        "0,000",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Eleve -1 al cuadrado.",
+      "explanation": "$$(-1)^{2} = 1,00$$. Ninguna de las opciones propuestas (que son -1 y 0) es correcta."
+    },
+    {
+      "q": "La fórmula de la covarianza divide la suma de productos cruzados por:",
+      "options": [
+        "n - 1",
+        "n - 2",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Vea la fórmula en la página 89.",
+      "explanation": "La fórmula de la covarianza presentada en el manual divide por $$n$$ (tamaño muestral total)."
+    },
+    {
+      "q": "Un coeficiente de determinación de $r^2 = 0,09$ indica una correlación de:",
+      "options": [
+        "0,810",
+        "0,003",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Busque la raíz cuadrada de 0,09.",
+      "explanation": "$$\\sqrt{0,09} = 0,3$$. Ninguna opción ofrece 0,3."
+    },
+    {
+      "q": "En una matriz de varianzas y covarianzas, los valores fuera de la diagonal principal son:",
+      "options": [
+        "Las varianzas",
+        "Las medias X",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Repase la Tabla 18.",
+      "explanation": "Los valores fuera de la diagonal principal son las covarianzas ($$S_{xy}, S_{xz}, S_{yz}$$)."
+    },
+    {
+      "q": "Si al calcular $r_{xy}$ obtenemos un valor de $-0,05$, la relación es:",
+      "options": [
+        "Inexistente",
+        "Negativa alta",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Considere la magnitud absoluta del valor.",
+      "explanation": "Un valor de 0,05 (en valor absoluto) es menor que 0,10, por lo que es una relación prácticamente nula o despreciable, no 'alta'."
+    }
+  ],
+  "laboratorio": [
+    {
+      "id": 1,
+      "title": "Análisis de Covarianza en Rendimiento Académico",
+      "context": "Un investigador desea analizar la relación entre las horas de estudio semanales ($X$) y la calificación final ($Y$) en una muestra de 5 estudiantes. Los datos son: $X = [5, 10, 15, 20, 25]$ y $Y = [4, 6, 7, 9, 10]$. Fórmula de covarianza: $S_{xy} = \\frac{\\sum[(X_{i}-\\overline{X})(Y_{i}-\\overline{Y})]}{n}$.",
+      "parts": [
+        {
+          "id": "p1a",
+          "label": "a)",
+          "question": "Calcule la media aritmética de las horas de estudio ($\\overline{X}$).",
+          "correctValue": 15,
+          "tolerance": 0,
+          "explanation": "$$\\overline{X} = \\frac{5+10+15+20+25}{5} = \\frac{75}{5} = 15$$"
+        },
+        {
+          "id": "p1b",
+          "label": "b)",
+          "question": "Calcule la media aritmética de las calificaciones ($\\overline{Y}$).",
+          "correctValue": 7.2,
+          "tolerance": 0.1,
+          "explanation": "$$\\overline{Y} = \\frac{4+6+7+9+10}{5} = \\frac{36}{5} = 7.2$$"
+        },
+        {
+          "id": "p1c",
+          "label": "c)",
+          "question": "Calcule el sumatorio de los productos de las puntuaciones diferenciales: $\\sum[(X_{i}-\\overline{X})(Y_{i}-\\overline{Y})]$.",
+          "explanation": "$$(5-15)(4-7.2) + (10-15)(6-7.2) + (15-15)(7-7.2) + (20-15)(9-7.2) + (25-15)(10-7.2) = (-10)(-3.2) + (-5)(-1.2) + (0)(-0.2) + (5)(1.8) + (10)(2.8) = 32 + 6 + 0 + 9 + 28 = 75$$",
+          "correctValue": 75,
+          "tolerance": 0.1
+        },
+        {
+          "id": "p1d",
+          "label": "d)",
+          "question": "Calcule la covarianza $S_{xy}$ para esta muestra.",
+          "correctValue": 15,
+          "tolerance": 0.1,
+          "explanation": "$$S_{xy} = \\frac{75}{5} = 15$$"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Cálculo del Coeficiente de Pearson ($r_{xy}$)",
+      "context": "A partir de un estudio clínico, se obtiene una covarianza $S_{xy} = 2.54$, una desviación típica de $X$ ($S_x$) de 1.89 y una desviación típica de $Y$ ($S_y$) de 1.69. Utilice la fórmula: $r_{xy} = \\frac{S_{xy}}{S_{x}S_{y}}$.",
+      "parts": [
+        {
+          "id": "p2a",
+          "label": "a)",
+          "question": "Calcule el producto de las desviaciones típicas ($S_x \\cdot S_y$).",
+          "correctValue": 3.1941,
+          "tolerance": 0.01,
+          "explanation": "$$1.89 \\cdot 1.69 = 3.1941$$"
+        },
+        {
+          "id": "p2b",
+          "label": "b)",
+          "question": "Calcule el valor de la correlación de Pearson $r_{xy}$.",
+          "correctValue": 0.795,
+          "tolerance": 0.01,
+          "explanation": "$$r_{xy} = \\frac{2.54}{3.1941} \\approx 0.795$$"
+        },
+        {
+          "id": "p2c",
+          "label": "c)",
+          "question": "Si la correlación es 0.795, calcule el coeficiente de determinación $r^2$.",
+          "correctValue": 0.632,
+          "tolerance": 0.01,
+          "explanation": "$$r^2 = 0.795^2 = 0.632$$"
+        },
+        {
+          "id": "p2d",
+          "label": "d)",
+          "question": "Exprese el coeficiente de determinación como porcentaje de varianza compartida.",
+          "correctValue": 63.2,
+          "tolerance": 0.1,
+          "explanation": "$$0.632 \\cdot 100 = 63.2\\%$$"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Interpretación de Matrices de Varianza-Covarianza",
+      "context": "Se presenta la siguiente matriz para las variables $X$ e $Y$: Filas/Columnas: $X[16, 9]$, $Y[9, 21]$. Donde los valores en la diagonal son varianzas ($S^2$) y los fuera de ella son covarianzas ($S_{xy}$).",
+      "parts": [
+        {
+          "id": "p3a",
+          "label": "a)",
+          "question": "Identifique la varianza de la variable $X$ ($S_x^2$).",
+          "correctValue": 16,
+          "tolerance": 0,
+          "explanation": "En la matriz, la intersección de X con X es 16."
+        },
+        {
+          "id": "p3b",
+          "label": "b)",
+          "question": "Calcule la desviación típica de la variable $X$ ($S_x$).",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$S_x = \\sqrt{16} = 4$$"
+        },
+        {
+          "id": "p3c",
+          "label": "c)",
+          "question": "Calcule la desviación típica de la variable $Y$ ($S_y$) si su varianza es 21.",
+          "correctValue": 4.582,
+          "tolerance": 0.01,
+          "explanation": "$$S_y = \\sqrt{21} \\approx 4.582$$"
+        },
+        {
+          "id": "p3d",
+          "label": "d)",
+          "question": "Calcule la correlación de Pearson $r_{xy}$ usando la covarianza $S_{xy} = 9$.",
+          "correctValue": 0.491,
+          "tolerance": 0.01,
+          "explanation": "$$r_{xy} = \\frac{9}{4 \\cdot 4.582} = \\frac{9}{18.328} \\approx 0.491$$"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Relaciones Espurias y Terceras Variables",
+      "context": "En un estudio sobre consumo de helados ($X$) y ahogamientos ($Y$), se observa una correlación aparente de $r = 0.60$. Sin embargo, al controlar la temperatura ($Z$), la correlación parcial baja. Suponga que la varianza compartida total entre $X$ e $Y$ antes de controlar $Z$ es del 36%.",
+      "parts": [
+        {
+          "id": "p4a",
+          "label": "a)",
+          "question": "Calcule el coeficiente de determinación inicial $r^2$.",
+          "correctValue": 0.36,
+          "tolerance": 0,
+          "explanation": "$$r^2 = 0.60^2 = 0.36$$"
+        },
+        {
+          "id": "p4b",
+          "label": "b)",
+          "question": "Si una tercera variable explica el 20% de la varianza total de $Y$, ¿qué porcentaje de varianza queda sin explicar?",
+          "correctValue": 80,
+          "tolerance": 0,
+          "explanation": "$$100\\% - 20\\% = 80\\%$$"
+        },
+        {
+          "id": "p4c",
+          "label": "c)",
+          "question": "Si la correlación perfecta es 1.0, ¿cuál es el valor de $r$ para una relación nula?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "Una relación nula o neutra implica $r = 0$."
+        },
+        {
+          "id": "p4d",
+          "label": "d)",
+          "question": "Si el coeficiente de determinación es 0.49, ¿cuál es el valor absoluto de la correlación de Pearson?",
+          "correctValue": 0.7,
+          "tolerance": 0,
+          "explanation": "$$|r| = \\sqrt{0.49} = 0.7$$"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Estimación de Covarianza Inversa",
+      "context": "Usted conoce que la correlación entre soledad ($X$) y depresión ($Y$) es $r_{xy} = 0.85$. Las varianzas son $S_x^2 = 4$ y $S_y^2 = 9$. Despeje la covarianza de la fórmula de Pearson.",
+      "parts": [
+        {
+          "id": "p5a",
+          "label": "a)",
+          "question": "Calcule $S_x$.",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{4} = 2$$"
+        },
+        {
+          "id": "p5b",
+          "label": "b)",
+          "question": "Calcule $S_y$.",
+          "correctValue": 3,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{9} = 3$$"
+        },
+        {
+          "id": "p5c",
+          "label": "c)",
+          "question": "Calcule el producto $S_x \\cdot S_y$.",
+          "correctValue": 6,
+          "tolerance": 0,
+          "explanation": "$$2 \\cdot 3 = 6$$"
+        },
+        {
+          "id": "p5d",
+          "label": "d)",
+          "question": "Calcule la covarianza $S_{xy}$.",
+          "correctValue": 5.1,
+          "tolerance": 0.1,
+          "explanation": "$$S_{xy} = r_{xy} \\cdot (S_x S_y) = 0.85 \\cdot 6 = 5.1$$"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Análisis de Datos en Pequeñas Muestras",
+      "context": "Se miden tres sujetos en Memoria ($X$): $[2, 4, 6]$ y Bienestar ($Y$): $[10, 8, 6]$. Calcule la relación asociativa.",
+      "parts": [
+        {
+          "id": "p6a",
+          "label": "a)",
+          "question": "Calcule la media de $X$.",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$(2+4+6)/3 = 4$$"
+        },
+        {
+          "id": "p6b",
+          "label": "b)",
+          "question": "Calcule la media de $Y$.",
+          "correctValue": 8,
+          "tolerance": 0,
+          "explanation": "$$(10+8+6)/3 = 8$$"
+        },
+        {
+          "id": "p6c",
+          "label": "c)",
+          "question": "Calcule la covarianza $S_{xy}$ (use $n=3$).",
+          "correctValue": -2.666,
+          "tolerance": 0.01,
+          "explanation": "$$S_{xy} = [(2-4)(10-8) + (4-4)(8-8) + (6-4)(6-8)] / 3 = [(-2)(2) + 0 + (2)(-2)] / 3 = -8/3 \\approx -2.666$$"
+        },
+        {
+          "id": "p6d",
+          "label": "d)",
+          "question": "Si las desviaciones típicas son $S_x = 1.63$ y $S_y = 1.63$, calcule $r_{xy}$.",
+          "correctValue": -1,
+          "tolerance": 0.05,
+          "explanation": "$$r_{xy} = \\frac{-2.666}{1.63 \\cdot 1.63} = \\frac{-2.666}{2.6569} \\approx -1$$"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Magnitud de la Relación según Cohen",
+      "context": "Cohen (1988) establece puntos de corte para la interpretación de $r$. Un estudio sobre ansiedad ($X$) y rendimiento en exámenes ($Y$) arroja un coeficiente de determinación del 9% ($r^2 = 0.09$).",
+      "parts": [
+        {
+          "id": "p7a",
+          "label": "a)",
+          "question": "Calcule el valor absoluto de $r$.",
+          "correctValue": 0.3,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{0.09} = 0.3$$"
+        },
+        {
+          "id": "p7b",
+          "label": "b)",
+          "question": "Según el manual, ¿una relación de 0.3 se considera pequeña, mediana o alta? (Responda 1 para pequeña, 2 para mediana, 3 para alta).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "El manual indica que hasta 0.3 es relación mediana."
+        },
+        {
+          "id": "p7c",
+          "label": "c)",
+          "question": "Si la relación fuera de 0.5, ¿qué porcentaje de varianza se explicaría?",
+          "correctValue": 25,
+          "tolerance": 0,
+          "explanation": "$$0.5^2 \\cdot 100 = 25\\%$$"
+        },
+        {
+          "id": "p7d",
+          "label": "d)",
+          "question": "Si $r = -0.1$, ¿cuál es el porcentaje de varianza compartida?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$(-0.1)^2 \\cdot 100 = 1\\%$$"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Propiedades del Coeficiente de Determinación",
+      "context": "El coeficiente $r^2$ siempre es positivo. Analice un caso donde $r = -0.90$.",
+      "parts": [
+        {
+          "id": "p8a",
+          "label": "a)",
+          "question": "Calcule $r^2$.",
+          "correctValue": 0.81,
+          "tolerance": 0,
+          "explanation": "$$(-0.90)^2 = 0.81$$"
+        },
+        {
+          "id": "p8b",
+          "label": "b)",
+          "question": "Calcule el porcentaje de varianza NO compartida.",
+          "correctValue": 19,
+          "tolerance": 0,
+          "explanation": "$$100\\% - 81\\% = 19\\%$$"
+        },
+        {
+          "id": "p8c",
+          "label": "c)",
+          "question": "Si $r^2 = 1.00$, ¿cuál es la única conclusión posible sobre la dispersión de los puntos en el diagrama respecto a la línea de ajuste? (Responda 0 si hay dispersión, 1 si todos los puntos están sobre la línea).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Una correlación perfecta implica que todos los puntos caen sobre la línea de ajuste."
+        },
+        {
+          "id": "p8d",
+          "label": "d)",
+          "question": "Si $r = 0.00$, ¿cuál es el valor de $r^2$?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "$$0^2 = 0$$"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Cálculo de Desviación Típica a partir de Sumatorios",
+      "context": "Para calcular $r$, necesitamos $S_x$. Dados $n=10$ y $\\sum(X_i - \\overline{X})^2 = 32.19$. Fórmula: $S_x = \\sqrt{\\frac{\\sum(X_i - \\overline{X})^2}{n-1}}$.",
+      "parts": [
+        {
+          "id": "p9a",
+          "label": "a)",
+          "question": "Calcule el denominador de la fórmula ($n-1$).",
+          "correctValue": 9,
+          "tolerance": 0,
+          "explanation": "$$10 - 1 = 9$$"
+        },
+        {
+          "id": "p9b",
+          "label": "b)",
+          "question": "Calcule la varianza muestral ($S^2$) dividiendo el sumatorio por $n-1$.",
+          "correctValue": 3.576,
+          "tolerance": 0.01,
+          "explanation": "$$32.19 / 9 \\approx 3.576$$"
+        },
+        {
+          "id": "p9c",
+          "label": "c)",
+          "question": "Calcule la desviación típica $S_x$.",
+          "correctValue": 1.891,
+          "tolerance": 0.01,
+          "explanation": "$$\\sqrt{3.576} \\approx 1.891$$"
+        },
+        {
+          "id": "p9d",
+          "label": "d)",
+          "question": "Si la desviación típica de $Y$ es $S_y = 1.69$ y la covarianza es 2.54, calcule $r_{xy}$.",
+          "correctValue": 0.795,
+          "tolerance": 0.01,
+          "explanation": "$$2.54 / (1.891 \\cdot 1.69) \\approx 0.795$$"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Matriz de Tres Variables (X, Y, Z)",
+      "context": "Considere la matriz: $X[16, 9, 17]$, $Y[9, 21, 7]$, $Z[17, 7, 19]$. Calcule la relación entre $X$ y $Z$.",
+      "parts": [
+        {
+          "id": "p10a",
+          "label": "a)",
+          "question": "Identifique la covarianza entre $X$ y $Z$ ($S_{xz}$).",
+          "correctValue": 17,
+          "tolerance": 0,
+          "explanation": "Intersección de fila X con columna Z."
+        },
+        {
+          "id": "p10b",
+          "label": "b)",
+          "question": "Calcule la desviación típica de $X$ ($S_x$) si su varianza es 16.",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{16} = 4$$"
+        },
+        {
+          "id": "p10c",
+          "label": "c)",
+          "question": "Calcule la desviación típica de $Z$ ($S_z$) si su varianza es 19.",
+          "correctValue": 4.359,
+          "tolerance": 0.01,
+          "explanation": "$$\\sqrt{19} \\approx 4.359$$"
+        },
+        {
+          "id": "p10d",
+          "label": "d)",
+          "question": "Calcule la correlación $r_{xz}$.",
+          "correctValue": 0.975,
+          "tolerance": 0.01,
+          "explanation": "$$17 / (4 \\cdot 4.359) \\approx 0.975$$"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Varianza Compartida en Psicología",
+      "context": "Un test de inteligencia ($X$) y el rendimiento laboral ($Y$) tienen una correlación de $r = 0.40$.",
+      "parts": [
+        {
+          "id": "p11a",
+          "label": "a)",
+          "question": "Calcule el coeficiente de determinación.",
+          "correctValue": 0.16,
+          "tolerance": 0,
+          "explanation": "$$0.40^2 = 0.16$$"
+        },
+        {
+          "id": "p11b",
+          "label": "b)",
+          "question": "Calcule el porcentaje de varianza de $Y$ explicada por $X$.",
+          "correctValue": 16,
+          "tolerance": 0,
+          "explanation": "$$0.16 \\cdot 100 = 16\\%$$"
+        },
+        {
+          "id": "p11c",
+          "label": "c)",
+          "question": "Si la correlación subiera a $r = 0.80$, ¿en cuánto se multiplicaría el porcentaje de varianza explicada respecto al caso inicial?",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$0.80^2 = 0.64$$. $$0.64 / 0.16 = 4$$. Se cuadruplica."
+        },
+        {
+          "id": "p11d",
+          "label": "d)",
+          "question": "Si $r = 1.00$, ¿qué porcentaje de varianza NO es compartida?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "$$1 - 1.00^2 = 0$$"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Direccionalidad y Signo",
+      "context": "Se analiza la relación entre nivel de estrés ($X$) y calidad del sueño ($Y$). Se espera una correlación negativa.",
+      "parts": [
+        {
+          "id": "p12a",
+          "label": "a)",
+          "question": "Si $S_{xy} = -15$, $S_x = 5$ y $S_y = 6$, calcule $r_{xy}$.",
+          "correctValue": -0.5,
+          "tolerance": 0,
+          "explanation": "$$-15 / (5 \\cdot 6) = -15 / 30 = -0.5$$"
+        },
+        {
+          "id": "p12b",
+          "label": "b)",
+          "question": "Calcule $r^2$ para este caso.",
+          "correctValue": 0.25,
+          "tolerance": 0,
+          "explanation": "$$(-0.5)^2 = 0.25$$"
+        },
+        {
+          "id": "p12c",
+          "label": "c)",
+          "question": "Si el estrés aumenta en 1 desviación típica, ¿en cuántas desviaciones típicas disminuye el sueño basándose en $r$? (Use el valor absoluto de $r$).",
+          "correctValue": 0.5,
+          "tolerance": 0,
+          "explanation": "La correlación de Pearson indica el cambio en unidades típicas."
+        },
+        {
+          "id": "p12d",
+          "label": "d)",
+          "question": "Si $r = -0.5$, ¿es una relación alta según Cohen? (Responda 1 para Sí, 0 para No).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "El manual indica que hasta 0.5 es relación alta."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Relación entre Varianza y Covarianza",
+      "context": "En una matriz de varianzas-covarianzas, la suma de los elementos de la diagonal principal para dos variables es 50 ($S_x^2 + S_y^2 = 50$). Si $S_x^2 = 25$ y la correlación es $r = 0.60$.",
+      "parts": [
+        {
+          "id": "p13a",
+          "label": "a)",
+          "question": "Calcule $S_y^2$.",
+          "correctValue": 25,
+          "tolerance": 0,
+          "explanation": "$$50 - 25 = 25$$"
+        },
+        {
+          "id": "p13b",
+          "label": "b)",
+          "question": "Calcule el producto $S_x \\cdot S_y$.",
+          "correctValue": 25,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{25} \\cdot \\sqrt{25} = 5 \\cdot 5 = 25$$"
+        },
+        {
+          "id": "p13c",
+          "label": "c)",
+          "question": "Calcule la covarianza $S_{xy}$.",
+          "correctValue": 15,
+          "tolerance": 0,
+          "explanation": "$$0.60 \\cdot 25 = 15$$"
+        },
+        {
+          "id": "p13d",
+          "label": "d)",
+          "question": "Si la covarianza se duplica a 30 (manteniendo varianzas), ¿cuál sería el nuevo valor de $r$?",
+          "correctValue": 1.2,
+          "tolerance": 0,
+          "explanation": "$$30 / 25 = 1.2$$. Nota: Este valor es imposible en la práctica, indicando error de datos."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Efecto del Tamaño Muestral en la Covarianza",
+      "context": "La covarianza depende del sumatorio de productos cruzados dividido por $n$. Si $\\sum[(X_{i}-\\overline{X})(Y_{i}-\\overline{Y})] = 200$.",
+      "parts": [
+        {
+          "id": "p14a",
+          "label": "a)",
+          "question": "Calcule $S_{xy}$ si $n = 10$.",
+          "correctValue": 20,
+          "tolerance": 0,
+          "explanation": "$$200 / 10 = 20$$"
+        },
+        {
+          "id": "p14b",
+          "label": "b)",
+          "question": "Calcule $S_{xy}$ si $n = 50$.",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$200 / 50 = 4$$"
+        },
+        {
+          "id": "p14c",
+          "label": "c)",
+          "question": "Si $S_{xy} = 20$ y el producto $S_x S_y = 40$, ¿cuál es el valor de $r$?",
+          "correctValue": 0.5,
+          "tolerance": 0,
+          "explanation": "$$20 / 40 = 0.5$$"
+        },
+        {
+          "id": "p14d",
+          "label": "d)",
+          "question": "Calcule el porcentaje de varianza compartida para $r = 0.5$.",
+          "correctValue": 25,
+          "tolerance": 0,
+          "explanation": "$$0.5^2 \\cdot 100 = 25\\%$$"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Análisis del Diagrama de Dispersión",
+      "context": "Un diagrama de dispersión muestra una línea de ajuste ascendente con una pendiente muy pronunciada.",
+      "parts": [
+        {
+          "id": "p15a",
+          "label": "a)",
+          "question": "Si la correlación es positiva perfecta, ¿cuál es el valor de $r$?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "La correlación positiva perfecta es 1.0."
+        },
+        {
+          "id": "p15b",
+          "label": "b)",
+          "question": "Si la línea de ajuste fuera horizontal, ¿cuál sería el valor de $r$?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "Línea horizontal indica ausencia de relación."
+        },
+        {
+          "id": "p15c",
+          "label": "c)",
+          "question": "Si $r = 0.95$, ¿qué porcentaje de puntos están explicados por la relación lineal ($r^2$ en %)?",
+          "correctValue": 90.25,
+          "tolerance": 0.01,
+          "explanation": "$$0.95^2 \\cdot 100 = 90.25\\%$$"
+        },
+        {
+          "id": "p15d",
+          "label": "d)",
+          "question": "Si $r = -0.80$, ¿la línea de ajuste es ascendente (1) o descendente (2)?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "Correlaciones negativas tienen líneas descendentes."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Covarianza con Datos Escalares",
+      "context": "Sujeto A: $X=10, Y=20$. Sujeto B: $X=20, Y=10$. Media $X=15$, Media $Y=15$. $n=2$.",
+      "parts": [
+        {
+          "id": "p16a",
+          "label": "a)",
+          "question": "Calcule $(X_A - \\overline{X})(Y_A - \\overline{Y})$.",
+          "correctValue": -25,
+          "tolerance": 0,
+          "explanation": "$$(10-15)(20-15) = (-5)(5) = -25$$"
+        },
+        {
+          "id": "p16b",
+          "label": "b)",
+          "question": "Calcule $(X_B - \\overline{X})(Y_B - \\overline{Y})$.",
+          "correctValue": -25,
+          "tolerance": 0,
+          "explanation": "$$(20-15)(10-15) = (5)(-5) = -25$$"
+        },
+        {
+          "id": "p16c",
+          "label": "c)",
+          "question": "Calcule la covarianza $S_{xy}$.",
+          "correctValue": -25,
+          "tolerance": 0,
+          "explanation": "$$(-25 + -25) / 2 = -25$$"
+        },
+        {
+          "id": "p16d",
+          "label": "d)",
+          "question": "Si $S_x = 5$ y $S_y = 5$, calcule $r_{xy}$.",
+          "correctValue": -1,
+          "tolerance": 0,
+          "explanation": "$$-25 / (5 \\cdot 5) = -1$$"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Predicción y Varianza",
+      "context": "En un estudio de marketing, el gasto en publicidad ($X$) explica el 49% de las ventas ($Y$).",
+      "parts": [
+        {
+          "id": "p17a",
+          "label": "a)",
+          "question": "Calcule el coeficiente de determinación $r^2$.",
+          "correctValue": 0.49,
+          "tolerance": 0,
+          "explanation": "$$49 / 100 = 0.49$$"
+        },
+        {
+          "id": "p17b",
+          "label": "b)",
+          "question": "Determine la correlación de Pearson (asuma positiva).",
+          "correctValue": 0.7,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{0.49} = 0.7$$"
+        },
+        {
+          "id": "p17c",
+          "label": "c)",
+          "question": "Si el gasto se duplica y la correlación se mantiene, ¿qué porcentaje de varianza se explicaría?",
+          "correctValue": 49,
+          "tolerance": 0,
+          "explanation": "El porcentaje de varianza explicada depende de r, no de la magnitud de las variables."
+        },
+        {
+          "id": "p17d",
+          "label": "d)",
+          "question": "Calcule el porcentaje de error o varianza residual.",
+          "correctValue": 51,
+          "tolerance": 0,
+          "explanation": "$$100\\% - 49\\% = 51\\%$$"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Cálculo de r con Desviaciones Iguales",
+      "context": "Si en un estudio $S_x = S_y$.",
+      "parts": [
+        {
+          "id": "p18a",
+          "label": "a)",
+          "question": "Si $S_x = 10$, calcule el producto $S_x S_y$.",
+          "correctValue": 100,
+          "tolerance": 0,
+          "explanation": "$$10 \\cdot 10 = 100$$"
+        },
+        {
+          "id": "p18b",
+          "label": "b)",
+          "question": "Si la covarianza es 85, calcule $r$.",
+          "correctValue": 0.85,
+          "tolerance": 0,
+          "explanation": "$$85 / 100 = 0.85$$"
+        },
+        {
+          "id": "p18c",
+          "label": "c)",
+          "question": "Calcule $r^2$ para este caso.",
+          "correctValue": 0.7225,
+          "tolerance": 0.001,
+          "explanation": "$$0.85^2 = 0.7225$$"
+        },
+        {
+          "id": "p18d",
+          "label": "d)",
+          "question": "Si la covarianza fuera -100, ¿cuál sería el valor de $r$?",
+          "correctValue": -1,
+          "tolerance": 0,
+          "explanation": "$$-100 / 100 = -1$$"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Verificación de Límites Estadísticos",
+      "context": "Un estudiante calcula una covarianza de 50 para dos variables con desviaciones típicas de 5 y 8.",
+      "parts": [
+        {
+          "id": "p19a",
+          "label": "a)",
+          "question": "Calcule el producto $S_x S_y$.",
+          "correctValue": 40,
+          "tolerance": 0,
+          "explanation": "$$5 \\cdot 8 = 40$$"
+        },
+        {
+          "id": "p19b",
+          "label": "b)",
+          "question": "Calcule el valor de $r$ resultante.",
+          "correctValue": 1.25,
+          "tolerance": 0,
+          "explanation": "$$50 / 40 = 1.25$$"
+        },
+        {
+          "id": "p19c",
+          "label": "c)",
+          "question": "¿Es este resultado posible según el manual? (Responda 0 para No, 1 para Sí).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "Pearson $r$ debe estar entre -1 y 1."
+        },
+        {
+          "id": "p19d",
+          "label": "d)",
+          "question": "Si el valor máximo de $r$ es 1, ¿cuál es la covarianza máxima posible para estas variables?",
+          "correctValue": 40,
+          "tolerance": 0,
+          "explanation": "$$1 \\cdot 40 = 40$$"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Problema Integral de Final de Capítulo",
+      "context": "Relación entre nivel de ruido ($X$) y errores en una tarea ($Y$). $S_{xy} = 12$, $S_x^2 = 25$, $S_y^2 = 16$.",
+      "parts": [
+        {
+          "id": "p20a",
+          "label": "a)",
+          "question": "Calcule el producto de las desviaciones típicas.",
+          "correctValue": 20,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{25} \\cdot \\sqrt{16} = 5 \\cdot 4 = 20$$"
+        },
+        {
+          "id": "p20b",
+          "label": "b)",
+          "question": "Calcule la correlación de Pearson.",
+          "correctValue": 0.6,
+          "tolerance": 0,
+          "explanation": "$$12 / 20 = 0.6$$"
+        },
+        {
+          "id": "p20c",
+          "label": "c)",
+          "question": "Calcule el coeficiente de determinación.",
+          "correctValue": 0.36,
+          "tolerance": 0,
+          "explanation": "$$0.6^2 = 0.36$$"
+        },
+        {
+          "id": "p20d",
+          "label": "d)",
+          "question": "Si se desea explicar el 100% de la varianza, ¿qué valor debería alcanzar la covarianza?",
+          "correctValue": 20,
+          "tolerance": 0,
+          "explanation": "Para $r=1$, $S_{xy} = S_x S_y = 20$."
+        }
+      ]
+    }
+  ],
+  "formulas": [
+    {
+      "cat": "Fórmula",
+      "q": "Covarianza",
+      "a": "$$S_{xy} = \\frac{\\sum[(X_{i}-\\bar{X})(Y_{i}-\\bar{Y})]}{n}$$"
+    },
+    {
+      "cat": "Fórmula",
+      "q": "Correlación de Pearson",
+      "a": "$$r_{xy} = \\frac{S_{xy}}{S_{x}S_{y}}$$"
+    },
+    {
+      "cat": "Fórmula",
+      "q": "Desviación típica (Muestral)",
+      "a": "$$S_{x} = \\sqrt{\\frac{\\sum(X_{i}-\\bar{X})^{2}}{n-1}}$$"
+    },
+    {
+      "cat": "Fórmula",
+      "q": "Coeficiente de determinación",
+      "a": "$$r_{xy}^{2} = (r_{xy})^{2}$$"
+    }
+  ]
+}
