@@ -1117,42 +1117,40 @@
                 const todayStr = formatDateStr(new Date());
 
                 mainViewHTML = `
-                    <div class="grid md:grid-cols-7 gap-4">
+                    <div class="space-y-4">
                         ${weekDays.map(day => {
                             const isToday = day.dateStr === todayStr;
                             const isSelected = day.dateStr === state.selectedPlannerDay;
                             return `
-                                <div onclick="appMethods.setSelectedPlannerDay('${day.dateStr}')" class="bg-white border-2 ${isToday ? 'border-indigo-500 shadow-sm' : isSelected ? 'border-indigo-300' : 'border-slate-200'} rounded-2xl p-4 flex flex-col min-h-[180px] hover:shadow-md transition-all cursor-pointer">
-                                    <div class="flex flex-col mb-3">
-                                        <span class="text-[10px] font-bold tracking-wider uppercase ${isToday ? 'text-indigo-600' : 'text-slate-400'}">${day.name}</span>
-                                        <span class="text-lg font-black leading-none mt-0.5 ${isToday ? 'text-indigo-600' : 'text-slate-800'}">${day.date.getDate()}</span>
+                                <div onclick="appMethods.setSelectedPlannerDay('${day.dateStr}')" class="bg-white border-2 ${isToday ? 'border-indigo-500 shadow-md ring-1 ring-indigo-500/10' : isSelected ? 'border-indigo-300 bg-indigo-50/5' : 'border-slate-200'} rounded-3xl p-4 flex flex-col sm:flex-row sm:items-stretch gap-4 hover:shadow-md transition-all cursor-pointer">
+                                    <div class="flex sm:flex-col items-center justify-between sm:justify-center p-3 sm:p-4 bg-slate-50 border border-slate-100 rounded-2xl sm:w-24 shrink-0 text-center ${isToday ? 'bg-indigo-600 text-white border-indigo-600' : 'border-slate-200/60'}">
+                                        <span class="text-[11px] font-bold tracking-wider uppercase ${isToday ? 'text-indigo-100' : 'text-slate-400'}">${day.name}</span>
+                                        <span class="text-2xl font-black leading-none mt-1 ${isToday ? 'text-white' : 'text-slate-800'}">${day.date.getDate()}</span>
                                     </div>
-                                    <div class="space-y-2 flex-grow overflow-y-auto max-h-[140px] pr-1">
+                                    <div class="flex-grow flex flex-col justify-center space-y-2.5">
                                         ${day.tasks.length === 0 ? `
-                                            <div class="text-[10px] text-slate-400 italic text-center py-4">Sin tareas</div>
+                                            <div class="text-xs text-slate-400 italic py-2 pl-2">Sin tareas programadas para este día</div>
                                         ` : day.tasks.map(task => {
                                             const subObj = AVAILABLE_SUBJECTS.find(s => s.id === task.subjectId);
                                             return `
-                                                <div onclick="event.stopPropagation();" class="p-2 bg-slate-50 border border-slate-100 rounded-lg flex flex-col gap-1.5 text-xs text-slate-700">
-                                                    <div class="flex items-start gap-1.5 justify-between font-semibold">
-                                                        <label class="flex items-start gap-1.5 cursor-pointer select-none">
-                                                            <input type="checkbox" ${task.completed ? 'checked' : ''} onclick="${isGuest ? 'state.showLoginModal = true; render(); event.preventDefault();' : `appMethods.togglePlannerTask('${task.id}')`}" class="mt-0.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
-                                                            <span class="${task.completed ? 'line-through text-slate-400 font-normal' : 'font-medium'}">${task.text}</span>
-                                                        </label>
+                                                <div onclick="event.stopPropagation();" class="p-3 bg-slate-50/60 border border-slate-100 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-700 hover:bg-slate-100/80 transition-colors">
+                                                    <div class="flex items-start gap-3 flex-grow min-w-0">
+                                                        <input type="checkbox" ${task.completed ? 'checked' : ''} onclick="${isGuest ? 'state.showLoginModal = true; render(); event.preventDefault();' : `appMethods.togglePlannerTask('${task.id}')`}" class="mt-0.5 shrink-0 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500 w-4 h-4 cursor-pointer">
+                                                        <span class="min-w-0 break-words leading-relaxed ${task.completed ? 'line-through text-slate-400 font-normal' : 'font-semibold text-slate-700'}">${task.text}</span>
+                                                    </div>
+                                                    <div class="flex items-center gap-3 shrink-0 self-end sm:self-auto">
+                                                        ${subObj ? `
+                                                            <span class="px-2.5 py-1 bg-slate-200/80 text-slate-600 rounded-lg text-[10px] font-bold max-w-[150px] truncate" title="${subObj.name}">${subObj.name}</span>
+                                                            <button onclick="appMethods.enterSubjectFolder('${task.subjectId}')" class="px-2.5 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-600 rounded-lg text-[10px] font-extrabold transition-all flex items-center gap-0.5 shrink-0 shadow-sm">
+                                                                Estudiar <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                                                            </button>
+                                                        ` : ''}
                                                         ${isGuest ? '' : `
-                                                        <button onclick="appMethods.deletePlannerTask('${task.id}')" class="text-slate-300 hover:text-rose-500 transition-colors self-start">
-                                                            <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+                                                        <button onclick="appMethods.deletePlannerTask('${task.id}')" class="text-slate-300 hover:text-rose-500 transition-colors p-1 hover:bg-rose-50 rounded-lg shrink-0">
+                                                            <i data-lucide="trash-2" class="w-4 h-4"></i>
                                                         </button>
                                                         `}
                                                     </div>
-                                                    ${subObj ? `
-                                                        <div class="flex items-center justify-between gap-2 mt-0.5 pt-1.5 border-t border-slate-150">
-                                                            <span class="text-[9px] font-bold text-slate-400 truncate max-w-[80px]" title="${subObj.name}">${subObj.name}</span>
-                                                            <button onclick="appMethods.enterSubjectFolder('${task.subjectId}')" class="px-1.5 py-0.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-600 rounded text-[9px] font-extrabold transition-all flex items-center gap-0.5 shrink-0">
-                                                                Estudiar <i data-lucide="chevron-right" class="w-2 h-2"></i>
-                                                            </button>
-                                                        </div>
-                                                    ` : ''}
                                                 </div>
                                             `;
                                         }).join('')}
@@ -1282,7 +1280,7 @@
             }
 
             return `
-                <div class="max-w-5xl w-full mx-auto px-4 py-8 space-y-8 flex-grow fade-in">
+                <div class="max-w-7xl w-full mx-auto px-4 py-8 space-y-8 flex-grow fade-in">
                     ${renderBannerHTML()}
 
                     ${renderNavigationTabs('planner')}
