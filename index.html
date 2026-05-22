@@ -804,6 +804,11 @@
                 render();
             },
             addPlannerTask: (text, dateStr, scope, subjectId) => {
+                if (!authState.isAuthenticated) {
+                    state.showLoginModal = true;
+                    render();
+                    return;
+                }
                 if (!text.trim()) {
                     alert('Por favor, escribe el nombre de la tarea.');
                     return;
@@ -835,6 +840,11 @@
                 render();
             },
             togglePlannerTask: (taskId) => {
+                if (!authState.isAuthenticated) {
+                    state.showLoginModal = true;
+                    render();
+                    return;
+                }
                 const task = state.plannerTasks.find(t => t.id === taskId);
                 if (task) {
                     task.completed = !task.completed;
@@ -843,6 +853,11 @@
                 }
             },
             deletePlannerTask: (taskId) => {
+                if (!authState.isAuthenticated) {
+                    state.showLoginModal = true;
+                    render();
+                    return;
+                }
                 if (confirm('¿Estás seguro de que quieres eliminar esta tarea?')) {
                     state.plannerTasks = state.plannerTasks.filter(t => t.id !== taskId);
                     localStorage.setItem('saimap_planner_tasks', JSON.stringify(state.plannerTasks));
@@ -850,6 +865,7 @@
                 }
             },
             setWeeklyFocus: (focusText) => {
+                if (!authState.isAuthenticated) return;
                 state.weeklyFocus = focusText.trim();
                 localStorage.setItem('saimap_weekly_focus', state.weeklyFocus);
             },
@@ -978,14 +994,86 @@
         }
 
         function renderPlanner() {
+            const isGuest = !authState.isAuthenticated;
+            let displayTasks = state.plannerTasks;
+            
+            if (isGuest && displayTasks.length === 0) {
+                const today = new Date();
+                const getFormattedOffsetDate = (offsetDays) => {
+                    const d = new Date(today);
+                    d.setDate(d.getDate() + offsetDays);
+                    return formatDateStr(d);
+                };
+                displayTasks = [
+                    {
+                        id: 'mock-1',
+                        text: 'Repasar bases biológicas de la neurona',
+                        date: getFormattedOffsetDate(0),
+                        scope: 'diario',
+                        subjectId: 'bases-biologicas-del-comportamiento',
+                        completed: false,
+                        createdAt: new Date().toISOString()
+                    },
+                    {
+                        id: 'mock-2',
+                        text: 'Hacer test de autoevaluación Tema 1',
+                        date: getFormattedOffsetDate(0),
+                        scope: 'diario',
+                        subjectId: 'historia-de-la-psicologia',
+                        completed: true,
+                        createdAt: new Date().toISOString()
+                    },
+                    {
+                        id: 'mock-3',
+                        text: 'Lectura del artículo sobre memoria de trabajo',
+                        date: getFormattedOffsetDate(-1),
+                        scope: 'diario',
+                        subjectId: 'psicologia-de-la-memoria',
+                        completed: true,
+                        createdAt: new Date().toISOString()
+                    },
+                    {
+                        id: 'mock-4',
+                        text: 'Resumen del Tema 2: Desarrollo Psicomotor',
+                        date: getFormattedOffsetDate(1),
+                        scope: 'diario',
+                        subjectId: 'psicologia-desarrollo-infancia-adolescencia',
+                        completed: false,
+                        createdAt: new Date().toISOString()
+                    },
+                    {
+                        id: 'mock-5',
+                        text: 'Práctica 1: Percepción visual',
+                        date: getFormattedOffsetDate(2),
+                        scope: 'diario',
+                        subjectId: 'psicologia-de-la-atencion-y-percepcion',
+                        completed: false,
+                        createdAt: new Date().toISOString()
+                    },
+                    {
+                        id: 'mock-6',
+                        text: 'Repaso general de Psicología Social: Tema 1',
+                        date: getFormattedOffsetDate(-2),
+                        scope: 'diario',
+                        subjectId: 'psicologia-social',
+                        completed: true,
+                        createdAt: new Date().toISOString()
+                    }
+                ];
+            }
+
+            const displayFocus = (isGuest && !state.weeklyFocus) 
+                ? 'Completar los temas de Psicología de la Memoria y hacer test de autoevaluación de bases biológicas.' 
+                : state.weeklyFocus;
+
             let currentPeriodTasks = [];
             if (state.plannerView === 'weekly') {
                 const monday = getMonday(state.plannerDate);
-                currentPeriodTasks = state.plannerTasks.filter(t => isDateInWeek(t.date, monday));
+                currentPeriodTasks = displayTasks.filter(t => isDateInWeek(t.date, monday));
             } else {
                 const year = state.plannerDate.getFullYear();
                 const month = state.plannerDate.getMonth();
-                currentPeriodTasks = state.plannerTasks.filter(t => {
+                currentPeriodTasks = displayTasks.filter(t => {
                     const d = new Date(t.date + 'T00:00:00');
                     return d.getFullYear() === year && d.getMonth() === month;
                 });
@@ -1017,7 +1105,7 @@
                     const dayDate = new Date(mon);
                     dayDate.setDate(dayDate.getDate() + i);
                     const dayStr = formatDateStr(dayDate);
-                    const dayTasks = state.plannerTasks.filter(t => t.date === dayStr);
+                    const dayTasks = displayTasks.filter(t => t.date === dayStr);
                     weekDays.push({
                         name: dayNames[i],
                         date: dayDate,
@@ -1048,12 +1136,14 @@
                                                 <div onclick="event.stopPropagation();" class="p-2 bg-slate-50 border border-slate-100 rounded-lg flex flex-col gap-1.5 text-xs text-slate-700">
                                                     <div class="flex items-start gap-1.5 justify-between font-semibold">
                                                         <label class="flex items-start gap-1.5 cursor-pointer select-none">
-                                                            <input type="checkbox" ${task.completed ? 'checked' : ''} onclick="appMethods.togglePlannerTask('${task.id}')" class="mt-0.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
+                                                            <input type="checkbox" ${task.completed ? 'checked' : ''} onclick="${isGuest ? 'state.showLoginModal = true; render(); event.preventDefault();' : `appMethods.togglePlannerTask('${task.id}')`}" class="mt-0.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
                                                             <span class="${task.completed ? 'line-through text-slate-400 font-normal' : 'font-medium'}">${task.text}</span>
                                                         </label>
+                                                        ${isGuest ? '' : `
                                                         <button onclick="appMethods.deletePlannerTask('${task.id}')" class="text-slate-300 hover:text-rose-500 transition-colors self-start">
                                                             <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
                                                         </button>
+                                                        `}
                                                     </div>
                                                     ${subObj ? `
                                                         <div class="flex items-center justify-between gap-2 mt-0.5 pt-1.5 border-t border-slate-150">
@@ -1105,7 +1195,7 @@
 
                 const selDate = new Date(state.selectedPlannerDay + 'T00:00:00');
                 const formattedSelDate = selDate.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
-                const selTasks = state.plannerTasks.filter(t => t.date === state.selectedPlannerDay);
+                const selTasks = displayTasks.filter(t => t.date === state.selectedPlannerDay);
 
                 mainViewHTML = `
                     <div class="grid md:grid-cols-3 gap-6">
@@ -1117,7 +1207,7 @@
                                 ${calendarDays.map(day => {
                                     const isToday = day.dateStr === todayStr;
                                     const isSelected = day.dateStr === state.selectedPlannerDay;
-                                    const dayTasks = state.plannerTasks.filter(t => t.date === day.dateStr);
+                                    const dayTasks = displayTasks.filter(t => t.date === day.dateStr);
                                     const completedCount = dayTasks.filter(t => t.completed).length;
                                     const pendingCount = dayTasks.length - completedCount;
 
@@ -1153,12 +1243,14 @@
                                             <div class="p-2.5 bg-slate-50 border border-slate-100 rounded-xl flex flex-col gap-1.5 text-xs text-slate-700">
                                                 <div class="flex items-start gap-2 justify-between">
                                                     <label class="flex items-start gap-1.5 cursor-pointer select-none">
-                                                        <input type="checkbox" ${task.completed ? 'checked' : ''} onclick="appMethods.togglePlannerTask('${task.id}')" class="mt-0.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
+                                                        <input type="checkbox" ${task.completed ? 'checked' : ''} onclick="${isGuest ? 'state.showLoginModal = true; render(); event.preventDefault();' : `appMethods.togglePlannerTask('${task.id}')`}" class="mt-0.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
                                                         <span class="${task.completed ? 'line-through text-slate-400 font-normal' : 'font-medium'}">${task.text}</span>
                                                     </label>
+                                                    ${isGuest ? '' : `
                                                     <button onclick="appMethods.deletePlannerTask('${task.id}')" class="text-slate-300 hover:text-rose-500 transition-colors">
                                                         <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
                                                     </button>
+                                                    `}
                                                 </div>
                                                 ${subObj ? `
                                                     <div class="flex items-center justify-between gap-2 mt-0.5 pt-1.5 border-t border-slate-150">
@@ -1174,13 +1266,13 @@
                                 </div>
                             </div>
 
-                            <form onsubmit="event.preventDefault(); const txt = this.taskText.value; appMethods.addPlannerTask(txt, '${state.selectedPlannerDay}', 'diario', this.taskSubject.value); this.reset();" class="space-y-2 pt-3 border-t border-slate-100">
-                                <input type="text" name="taskText" required placeholder="Añadir tarea para este día..." class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500">
-                                <select name="taskSubject" class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500">
+                            <form onsubmit="event.preventDefault(); ${isGuest ? 'state.showLoginModal = true; render();' : `const txt = this.taskText.value; appMethods.addPlannerTask(txt, '${state.selectedPlannerDay}', 'diario', this.taskSubject.value); this.reset();`}" class="space-y-2 pt-3 border-t border-slate-100">
+                                <input type="text" name="taskText" required placeholder="Añadir tarea para este día..." ${isGuest ? 'readonly onclick="state.showLoginModal = true; render();"' : ''} class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500 ${isGuest ? 'cursor-pointer' : ''}">
+                                <select name="taskSubject" ${isGuest ? 'disabled' : ''} class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500 ${isGuest ? 'cursor-pointer' : ''}">
                                     <option value="">Asignatura vinculada (Opcional)</option>
                                     ${AVAILABLE_SUBJECTS.map(s => `<option value="${s.id}">${s.name}</option>`).join('')}
                                 </select>
-                                <button type="submit" class="w-full py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-xs shadow-sm hover:shadow transition-all">
+                                <button type="${isGuest ? 'button' : 'submit'}" ${isGuest ? 'onclick="state.showLoginModal = true; render();"' : ''} class="w-full py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-xs shadow-sm hover:shadow transition-all">
                                     Programar Tarea
                                 </button>
                             </form>
@@ -1195,6 +1287,24 @@
 
                     ${renderNavigationTabs('planner')}
 
+                    ${isGuest ? `
+                        <div class="bg-gradient-to-r from-amber-500/10 via-indigo-500/10 to-purple-500/10 border border-amber-200 rounded-3xl p-6 shadow-sm flex flex-col md:flex-row justify-between items-center gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center text-amber-600 shrink-0">
+                                    <i data-lucide="lock" class="w-5 h-5"></i>
+                                </div>
+                                <div class="space-y-1">
+                                    <h4 class="font-bold text-slate-800 text-sm">Modo Vista Previa (Solo Premium)</h4>
+                                    <p class="text-xs text-slate-500 leading-relaxed">Estás viendo una demostración del planificador de estudio de SAIMAP. Inicia sesión con tu cuenta autorizada para gestionar tus tareas, definir tu objetivo semanal y organizar tu calendario de exámenes.</p>
+                                </div>
+                            </div>
+                            <button onclick="state.showLoginModal = true; render();" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-xs shadow-md transition-all shrink-0 flex items-center gap-1.5 whitespace-nowrap">
+                                <i data-lucide="log-in" class="w-3.5 h-3.5"></i>
+                                Acceso Alumnos
+                            </button>
+                        </div>
+                    ` : ''}
+
                     <div class="grid md:grid-cols-3 gap-6">
                         <div class="space-y-6">
                             <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm space-y-4">
@@ -1202,7 +1312,7 @@
                                     <i data-lucide="target" class="w-5 h-5"></i>
                                     <span>Objetivo de la Semana</span>
                                 </div>
-                                <textarea onblur="appMethods.setWeeklyFocus(this.value)" placeholder="Escribe aquí tu objetivo prioritario de esta semana..." class="w-full p-3 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500 resize-none h-20 outline-none transition-all">${state.weeklyFocus}</textarea>
+                                <textarea ${isGuest ? 'readonly onclick="state.showLoginModal = true; render();"' : 'onblur="appMethods.setWeeklyFocus(this.value)"'} placeholder="Escribe aquí tu objetivo prioritario de esta semana..." class="w-full p-3 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500 resize-none h-20 outline-none transition-all ${isGuest ? 'cursor-pointer' : ''}">${displayFocus}</textarea>
                             </div>
 
                             <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm space-y-4">
@@ -1210,25 +1320,25 @@
                                     <i data-lucide="plus-circle" class="w-5 h-5"></i>
                                     <span>Nueva Tarea de Estudio</span>
                                 </div>
-                                <form onsubmit="event.preventDefault(); const txt = this.taskText.value; const d = this.taskDate.value; const s = this.taskSubject.value; appMethods.addPlannerTask(txt, d, 'diario', s); this.reset();" class="space-y-3">
+                                <form onsubmit="event.preventDefault(); ${isGuest ? 'state.showLoginModal = true; render();' : `const txt = this.taskText.value; const d = this.taskDate.value; const s = this.taskSubject.value; appMethods.addPlannerTask(txt, d, 'diario', s); this.reset();`}" class="space-y-3">
                                     <div>
                                         <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">¿Qué vas a estudiar?</label>
-                                        <input type="text" name="taskText" required placeholder="Ej: Repasar tema 2 y hacer test" class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500">
+                                        <input type="text" name="taskText" required placeholder="Ej: Repasar tema 2 y hacer test" ${isGuest ? 'readonly onclick="state.showLoginModal = true; render();"' : ''} class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500 ${isGuest ? 'cursor-pointer' : ''}">
                                     </div>
                                     <div class="grid grid-cols-2 gap-2">
                                         <div>
                                             <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Fecha</label>
-                                            <input type="date" name="taskDate" required value="${formatDateStr(new Date())}" class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500">
+                                            <input type="date" name="taskDate" required value="${formatDateStr(new Date())}" ${isGuest ? 'readonly onclick="state.showLoginModal = true; render();"' : ''} class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500 ${isGuest ? 'cursor-pointer' : ''}">
                                         </div>
                                         <div>
                                             <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Asignatura (Opcional)</label>
-                                            <select name="taskSubject" class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500">
+                                            <select name="taskSubject" ${isGuest ? 'disabled' : ''} class="w-full p-2.5 text-xs border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-indigo-500 ${isGuest ? 'cursor-pointer' : ''}">
                                                 <option value="">Ninguna</option>
                                                 ${AVAILABLE_SUBJECTS.map(s => `<option value="${s.id}">${s.name} (${s.year})</option>`).join('')}
                                             </select>
                                         </div>
                                     </div>
-                                    <button type="submit" class="w-full py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-xs shadow-md transition-all flex items-center justify-center gap-1.5">
+                                    <button type="${isGuest ? 'button' : 'submit'}" ${isGuest ? 'onclick="state.showLoginModal = true; render();"' : ''} class="w-full py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-xs shadow-md transition-all flex items-center justify-center gap-1.5">
                                         <i data-lucide="plus" class="w-4 h-4"></i> Añadir Tarea
                                     </button>
                                 </form>
