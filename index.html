@@ -1010,7 +1010,7 @@
             let mainViewHTML = '';
             if (state.plannerView === 'weekly') {
                 const mon = getMonday(state.plannerDate);
-                const dayNames = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+                const dayNames = ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"];
                 const weekDays = [];
                 
                 for (let i = 0; i < 7; i++) {
@@ -1035,9 +1035,9 @@
                             const isSelected = day.dateStr === state.selectedPlannerDay;
                             return `
                                 <div onclick="appMethods.setSelectedPlannerDay('${day.dateStr}')" class="bg-white border-2 ${isToday ? 'border-indigo-500 shadow-sm' : isSelected ? 'border-indigo-300' : 'border-slate-200'} rounded-2xl p-4 flex flex-col min-h-[180px] hover:shadow-md transition-all cursor-pointer">
-                                    <div class="flex justify-between items-center mb-3">
-                                        <span class="text-xs font-black uppercase ${isToday ? 'text-indigo-600' : 'text-slate-500'}">${day.name}</span>
-                                        <span class="text-xs font-bold text-slate-400">${day.date.getDate()}</span>
+                                    <div class="flex flex-col mb-3">
+                                        <span class="text-[10px] font-bold tracking-wider uppercase ${isToday ? 'text-indigo-600' : 'text-slate-400'}">${day.name}</span>
+                                        <span class="text-lg font-black leading-none mt-0.5 ${isToday ? 'text-indigo-600' : 'text-slate-800'}">${day.date.getDate()}</span>
                                     </div>
                                     <div class="space-y-2 flex-grow overflow-y-auto max-h-[140px] pr-1">
                                         ${day.tasks.length === 0 ? `
