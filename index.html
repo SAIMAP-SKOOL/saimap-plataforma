@@ -70,6 +70,7 @@
             { id: "psicologia-del-aprendizaje", name: "Psicología del Aprendizaje", year: "1º", folder: "Psicología-Aprendizaje" },
             { id: "bases-biologicas-del-comportamiento", name: "Bases Biológicas del Comportamiento", year: "1º", folder: "Bases-Biológicas" },
             { id: "psicologia-interaccion-social", name: "Psicología de la Interacción Social", year: "1º", folder: "Psicología-Interacción-Social" },
+            { id: "fundamentos-de-estadistica", name: "Fundamentos de Estadística", year: "1º", folder: "Fundamentos-Estadística" },
             { id: "psicologia-clinica", name: "Psicología Clínica", year: "3º", folder: "Psicología-Clínica" },
             { id: "psicologia-del-trabajo", name: "Psicología del Trabajo", year: "3º", folder: "Psicología-Trabajo" }
         ];
@@ -162,6 +163,20 @@
                 '4': 'Enfoques Conductistas, Cognitivos y de Valoración de la Emoción',
                 '5': 'Emociones de Urgencia, Bienestar e Interacción Social',
                 '6': 'Inteligencia Emocional y Motivación Extrínseca'
+            },
+            'fundamentos-de-estadistica': {
+                '1.1': 'Introducción a la Estadística',
+                '1.2': 'Tipos de Variables y Escalas de Medida',
+                '2.1': 'Distribuciones de Frecuencias',
+                '2.2': 'Representaciones Gráficas',
+                '3.1': 'Medidas de Centralización',
+                '3.2': 'Medidas de Dispersión',
+                '4.1': 'Distribución Normal',
+                '4.2': 'Tipificación y Distribuciones Muestrales',
+                '5.1': 'Correlación de Pearson',
+                '5.2': 'Regresión Lineal Simple',
+                '6.1': 'Contraste de Hipótesis',
+                '6.2': 'Pruebas t y ANOVA'
             }
         };
 
@@ -1094,7 +1109,7 @@
                                             <h4 class="font-bold text-slate-800 text-sm ${isLocked ? '' : 'group-hover:text-indigo-600'} transition-colors">${displayTitle}</h4>
                                             ${(isGuest && isTheme1) ? `<span class="px-1.5 py-0.5 text-[8px] font-extrabold bg-amber-100 text-amber-800 rounded uppercase tracking-wider">Gratis</span>` : ''}
                                         </div>
-                                        <p class="text-[10px] text-slate-400">Modo de Aprendizaje: Test, Flashcards y Abiertas</p>
+                                        <p class="text-[10px] text-slate-400">Modo de Aprendizaje: ${subjectId === 'fundamentos-de-estadistica' ? 'Test Teórico, Laboratorio y Fórmulas' : 'Test, Flashcards y Abiertas'}</p>
                                     </div>
                                 </div>
                                 ${badgeHTML}

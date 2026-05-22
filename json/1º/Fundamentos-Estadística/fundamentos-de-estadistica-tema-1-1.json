@@ -1,0 +1,76 @@
+{
+  "quiz": [
+    {
+      "q": "¿Cuál es el objetivo principal de la estadística descriptiva?",
+      "opciones": [
+        "Extraer conclusiones válidas para toda una población a partir de una muestra.",
+        "Organizar, resumir y presentar los datos de manera informativa.",
+        "Probar hipótesis científicas sobre parámetros desconocidos.",
+        "Establecer relaciones causales definitivas entre variables."
+      ],
+      "correcta": 1,
+      "explicacion": "La estadística descriptiva se limita a describir y resumir los datos recopilados sin pretender generalizar a grupos más amplios."
+    },
+    {
+      "q": "Un parámetro es una medida numérica que describe una característica de:",
+      "opciones": [
+        "Una muestra.",
+        "Una población.",
+        "Un experimento controlado.",
+        "Un estadístico muestral."
+      ],
+      "correcta": 1,
+      "explicacion": "Los parámetros describen características de toda la población (ej. la media poblacional μ), mientras que los estadísticos describen características de una muestra (ej. la media muestral x̄)."
+    },
+    {
+      "q": "Si un investigador selecciona a cada vigésimo estudiante que entra a la biblioteca, ¿qué tipo de muestreo está realizando?",
+      "opciones": [
+        "Muestreo aleatorio simple.",
+        "Muestreo sistemático.",
+        "Muestreo estratificado.",
+        "Muestreo por conglomerados."
+      ],
+      "correcta": 1,
+      "explicacion": "El muestreo sistemático selecciona elementos a intervalos regulares (cada k-ésimo elemento) a partir de un punto de inicio aleatorio."
+    }
+  ],
+
+  "laboratorio": [
+    {
+      "id": "lab-1-1-01",
+      "titulo": "Identificación de Conceptos Básicos",
+      "escenario": "Se realiza un estudio sobre la altura (en cm) de los estudiantes de la VIU. Para ello, se selecciona a un grupo de 10 estudiantes de Psicología de primer curso y se obtienen los siguientes valores: 165, 172, 180, 168, 175, 160, 182, 170, 169, 174.",
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el valor medio de la altura de este grupo de estudiantes seleccionados? (Escribe la media aritmética con un decimal)",
+          "respuesta": 171.5,
+          "tolerancia": 0.1,
+          "pista": "Suma los 10 valores de altura y divide el resultado entre 10.",
+          "unidad": "cm"
+        },
+        {
+          "enunciado": "¿Cuántos estudiantes de la muestra miden 170 cm o más?",
+          "respuesta": 6.0,
+          "tolerancia": 0.0,
+          "pista": "Cuenta cuántos valores en la lista son mayores o iguales a 170.",
+          "unidad": "estudiantes"
+        }
+      ]
+    }
+  ],
+
+  "formulas": [
+    {
+      "nombre": "Media Muestral",
+      "latex": "\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}",
+      "descripcion": "Es el valor obtenido al sumar todos los datos y dividir el resultado entre el número total de datos de la muestra.",
+      "categoria": "Conceptos Básicos"
+    },
+    {
+      "nombre": "Rango Muestral",
+      "latex": "R = x_{max} - x_{min}",
+      "descripcion": "Diferencia entre el valor máximo y el valor mínimo de un conjunto de datos.",
+      "categoria": "Conceptos Básicos"
+    }
+  ]
+}
