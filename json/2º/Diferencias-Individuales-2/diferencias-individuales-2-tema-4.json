@@ -1,0 +1,2243 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es la cognición humana un proceso acumulativo que se limita a almacenar información de manera pasiva?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Revisa si el texto define la cognición como algo activo o pasivo.",
+      "explanation": "La cognición humana no es acumulativa ni pasiva; se caracteriza por ser un conocimiento inferencial y activo."
+    },
+    {
+      "q": "¿Los heurísticos cognitivos conducen siempre a soluciones lógicamente perfectas y razonadas?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Piensa en la definición de heurístico como regla rápida.",
+      "explanation": "Los heurísticos son reglas sencillas y rápidas que no siempre conducen a soluciones lógicamente perfectas."
+    },
+    {
+      "q": "¿El conservadurismo cognitivo es uno de los tres tipos principales de sesgos según Greenwald (1980)?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Los tres tipos son egocentricidad, benevolencia y...",
+      "explanation": "Greenwald agrupó los sesgos en tres tipos: egocentricidad, benevolencia y conservadurismo cognitivo."
+    },
+    {
+      "q": "¿El locus de control se considera una expectativa generalizada que opera en distintas situaciones?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Diferencia entre expectativas específicas y generalizadas según Rotter.",
+      "explanation": "Rotter operacionaliza el locus de control como una expectativa generalizada, no específica."
+    },
+    {
+      "q": "¿Los sujetos con locus de control interno tienden a percibir situaciones de estrés como amenazas?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Observa la diferencia entre percibir un 'reto' o una 'amenaza'.",
+      "explanation": "Los sujetos internos manejan más una percepción de reto o desafío que de amenaza ante el estrés."
+    },
+    {
+      "q": "¿La autoeficacia percibida se refiere a los recursos objetivos de los que dispone realmente una persona?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Bandura distingue entre capacidad real y juicio de capacidad.",
+      "explanation": "La autoeficacia no se refiere a los recursos reales, sino a las valoraciones sobre la propia capacidad."
+    },
+    {
+      "q": "¿La experiencia vicaria es la fuente más potente para la inducción de expectativas de autoeficacia?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Compara la potencia de los éxitos propios frente a la observación de otros.",
+      "explanation": "Los logros de ejecución (éxitos pasados) son la fuente más potente, no la experiencia vicaria."
+    },
+    {
+      "q": "¿La persuasión verbal genera expectativas de autoeficacia muy sólidas y resistentes al cambio?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Evalúa el impacto del discurso externo en la creencia de capacidad.",
+      "explanation": "El poder de la persuasión verbal para generar expectativas de autoeficacia es considerado muy débil."
+    },
+    {
+      "q": "¿En el modelo de Heider, la capacidad y la dificultad de la tarea determinan la posibilidad de acción?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Heider divide los factores en personales y ambientales para la posibilidad.",
+      "explanation": "La posibilidad de emprender una acción viene determinada por la capacidad y la dificultad de la tarea."
+    },
+    {
+      "q": "¿La suerte se considera un factor ambiental estable dentro de la teoría de atribución de Heider?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Considera si el azar es algo constante o fluctuante en el ambiente.",
+      "explanation": "La suerte (azar) es inestable por estar sujeto a fluctuaciones incontrolables, a diferencia de la dificultad."
+    },
+    {
+      "q": "¿La dimensión de estabilidad de Weiner influye principalmente en las expectativas de éxito futuro?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Relaciona la invariancia de la causa con la previsión de resultados.",
+      "explanation": "La estabilidad está relacionada con reacciones cognitivas e influye en el cambio de expectativas de éxito."
+    },
+    {
+      "q": "¿La dimensión de controlabilidad en Weiner genera emociones sociales como la ira o la compasión?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Piensa en el impacto del control sobre la percepción que otros tienen.",
+      "explanation": "La controlabilidad se vincula a emociones sociales (ira si hay control, compasión si no lo hay)."
+    },
+    {
+      "q": "¿La reactancia psicológica impulsa al sujeto a abandonar la conducta que le ha sido prohibida?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "La reactancia es una activación motivacional para recuperar la libertad.",
+      "explanation": "La reactancia impulsa a adoptar la conducta limitada para tratar de restablecer la libertad perdida."
+    },
+    {
+      "q": "¿La amenaza vicaria ocurre cuando observamos a alguien cuya libertad está siendo amenazada?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Implicación social y similitud en la percepción de la amenaza.",
+      "explanation": "Se puede activar reactancia al observar a otro experimentar la amenaza por implicación social."
+    },
+    {
+      "q": "¿Los sujetos con locus de control externo experimentan mayores niveles de reactancia psicológica?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Recuerda quién espera que su conducta influya en los resultados.",
+      "explanation": "Los sujetos con locus de control interno experimentan más reactancia que los sujetos externos."
+    },
+    {
+      "q": "¿La indefensión aprendida se caracteriza por un aumento en el inicio de respuestas voluntarias?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Analiza los síntomas motivacionales del modelo de Seligman.",
+      "explanation": "La indefensión provoca un déficit motivacional: un retraso en el inicio de las respuestas voluntarias."
+    },
+    {
+      "q": "¿El estado afectivo de la indefensión puede desembocar finalmente en un cuadro de depresión?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Seligman propuso este modelo como explicación para un tipo de depresión.",
+      "explanation": "La percepción de incontrolabilidad genera ansiedad y, en última instancia, depresión reactiva."
+    },
+    {
+      "q": "¿La dimensión de globalidad fue añadida en la reformulación atribucional de Abramson y cols.?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Busca la dimensión que explica la generalización de los déficits.",
+      "explanation": "Abramson añadió la globalidad para explicar la cronicidad y generalidad de los síntomas de indefensión."
+    },
+    {
+      "q": "¿La indefensión universal implica que el sujeto cree que nadie puede controlar el resultado?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Diferencia entre la incapacidad propia y la incapacidad general del entorno.",
+      "explanation": "En la indefensión universal el resultado es independiente de cualquier respuesta, propia o ajena."
+    },
+    {
+      "q": "¿La teoría de la desesperanza postula que la causa proximal suficiente de la depresión es la ira?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Identifica la doble expectativa que define este modelo teórico.",
+      "explanation": "La causa proximal suficiente es la desesperanza (expectativa de incontrolabilidad y resultado negativo)."
+    },
+    {
+      "q": "¿El modelo de Wortman y Brehm propone un proceso monofásico donde solo existe la indefensión?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Este modelo intenta integrar reactancia e indefensión en el tiempo.",
+      "explanation": "Es un modelo bifásico: primero se experimenta reactancia y posteriormente indefensión."
+    },
+    {
+      "q": "¿El número de ensayos es la variable central en el modelo integrador de Wortman y Brehm?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Dependiendo de la cantidad de entrenamiento, surge un estado u otro.",
+      "explanation": "El número de ensayos determina si el sujeto siente amenaza a la libertad o aprende la incontrolabilidad."
+    },
+    {
+      "q": "¿Un estilo explicativo pesimista se asocia con atribuciones internas, estables y globales?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Analiza cómo explica una persona pesimista los eventos negativos.",
+      "explanation": "El estilo pesimista utiliza causas internas, estables y globales para explicar sucesos negativos."
+    },
+    {
+      "q": "¿Las ilusiones positivas de Taylor distorsionan la realidad de manera adaptativa para el sujeto?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Considera si el sesgo cognitivo puede tener beneficios para la salud.",
+      "explanation": "Las ilusiones positivas sesgan la información negativa para incrementar la motivación y la perseverancia."
+    },
+    {
+      "q": "¿El optimismo no realista se define como la creencia de que el mundo físico es totalmente controlable?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre la ilusión de control y la expectativa sobre el futuro.",
+      "explanation": "El optimismo no realista se refiere al futuro (nada malo sucederá), no a la controlabilidad del mundo."
+    },
+    {
+      "q": "¿Qué característica define primordialmente a la cognición humana según el planteamiento general?",
+      "options": [
+        "Es un conocimiento de tipo inferencial",
+        "Es un proceso de acumulación logocéntrica",
+        "Es una respuesta puramente fisiológica"
+      ],
+      "correct": 0,
+      "hint": "Busca el término que implica ir más allá de la información suministrada.",
+      "explanation": "La cognición humana se caracteriza por ser un conocimiento inferencial que completa lagunas e interpreta datos."
+    },
+    {
+      "q": "¿Bajo qué condiciones específicas suelen emplearse los heurísticos cognitivos en el razonamiento?",
+      "options": [
+        "Cuando el tiempo o la relevancia son insuficientes",
+        "Cuando la información disponible es excesivamente alta",
+        "Cuando el sujeto busca una perfección lógica absoluta"
+      ],
+      "correct": 0,
+      "hint": "Los heurísticos son estrategias de ahorro cognitivo.",
+      "explanation": "Se emplean cuando el tiempo, la información o la relevancia del tema son escasos o insuficientes."
+    },
+    {
+      "q": "¿Cómo se denomina la creencia de que la propia conducta influye directamente en el refuerzo?",
+      "options": [
+        "Locus de control de tipo interno",
+        "Locus de control de tipo externo",
+        "Expectativa de resultado indirecto"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la responsabilidad percibida por el propio sujeto.",
+      "explanation": "La internalidad o locus de control interno es la creencia de que los refuerzos dependen de las propias conductas."
+    },
+    {
+      "q": "¿Qué autor es el principal referente en el estudio sistemático del locus de control?",
+      "options": [
+        "Julian B. Rotter",
+        "Albert Bandura",
+        "Martin Seligman"
+      ],
+      "correct": 0,
+      "hint": "Propuso este constructo como una expectativa generalizada en 1966.",
+      "explanation": "J. B. Rotter propuso el término locus de control para las explicaciones causales de la conducta."
+    },
+    {
+      "q": "¿Cuál es la fuente más potente de inducción de expectativas de autoeficacia para Bandura?",
+      "options": [
+        "Los logros de ejecución",
+        "La experiencia vicaria",
+        "La activación emocional"
+      ],
+      "correct": 0,
+      "hint": "Se basa en los éxitos y fracasos experimentados personalmente en el pasado.",
+      "explanation": "Los logros de ejecución son la fuente más potente de inducción de expectativas de autoeficacia personal."
+    },
+    {
+      "q": "¿En qué consiste la experiencia vicaria como fuente de información de la autoeficacia?",
+      "options": [
+        "Observar éxitos ajenos en situaciones similares",
+        "Recibir instrucciones verbales de figuras de autoridad",
+        "Analizar el estado fisiológico ante una tarea crítica"
+      ],
+      "correct": 0,
+      "hint": "Tiene que ver con el aprendizaje por observación de modelos.",
+      "explanation": "La experiencia vicaria es la observación de los éxitos y fracasos experimentados por otras personas."
+    },
+    {
+      "q": "¿Qué factores personales identifica Heider como responsables directos del éxito o fracaso?",
+      "options": [
+        "La motivación y la capacidad",
+        "El azar y la dificultad de tarea",
+        "La intención y la suerte externa"
+      ],
+      "correct": 0,
+      "hint": "Diferencia las fuerzas internas del sujeto de las ambientales.",
+      "explanation": "Heider divide las causas en fuerzas personales (motivación y capacidad) y ambientales."
+    },
+    {
+      "q": "¿Qué dos componentes integran la motivación dentro del modelo de fuerzas de Heider?",
+      "options": [
+        "La intención y el esfuerzo",
+        "La capacidad y la persistencia",
+        "La habilidad y el azar ambiental"
+      ],
+      "correct": 0,
+      "hint": "Uno es direccional y el otro es puramente cuantitativo.",
+      "explanation": "La motivación incluye la intención (componente direccional) y el esfuerzo (componente cuantitativo)."
+    },
+    {
+      "q": "¿Cómo clasifica Weiner las causas de conducta según el grado de invariancia temporal?",
+      "options": [
+        "Dimensión de estabilidad",
+        "Dimensión de controlabilidad",
+        "Dimensión de internalidad"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a si la causa se percibe como duradera o variable.",
+      "explanation": "La estabilidad hace referencia al grado en que las causas se consideran invariantes o sujetas a fluctuaciones."
+    },
+    {
+      "q": "¿Qué emoción social surge cuando los demás perciben que la conducta escapa al control del sujeto?",
+      "options": [
+        "Sentimiento de compasión",
+        "Sentimiento de hostilidad",
+        "Sentimiento de culpabilidad"
+      ],
+      "correct": 0,
+      "hint": "Es la reacción ante lo que se percibe como incontrolable para el otro.",
+      "explanation": "La compasión surge cuando los demás perciben que la causa de la conducta ajena escapa a su control."
+    },
+    {
+      "q": "¿Cuál es el objetivo primordial de la reactancia psicológica según la teoría de Brehm?",
+      "options": [
+        "Restablecer la libertad amenazada",
+        "Aceptar la restricción de conducta",
+        "Evitar el castigo de la autoridad"
+      ],
+      "correct": 0,
+      "hint": "Es un estado motivacional que busca recuperar el control perdido.",
+      "explanation": "La función básica de la reactancia es impulsar a la persona a tratar de restablecer su libertad."
+    },
+    {
+      "q": "¿Qué ocurre subjetivamente con el atractivo de una conducta cuando esta es eliminada?",
+      "options": [
+        "Se incrementa su deseabilidad",
+        "Se reduce su valor de refuerzo",
+        "Se mantiene estable su atractivo"
+      ],
+      "correct": 0,
+      "hint": "Es una reacción emocional ante la pérdida de opciones disponibles.",
+      "explanation": "Una respuesta subjetiva a la reactancia es la reevaluación del resultado, incrementando su atractivo."
+    },
+    {
+      "q": "¿En qué consiste la restauración indirecta de la libertad dentro de la reactancia?",
+      "options": [
+        "Adoptar una conducta equivalente",
+        "Ejecutar la conducta prohibida",
+        "Ignorar la fuente de la amenaza"
+      ],
+      "correct": 0,
+      "hint": "Busca demostrar la capacidad de ejecución mediante alternativas.",
+      "explanation": "La restauración indirecta ocurre cuando se realiza una acción equivalente o que demuestre competencia."
+    },
+    {
+      "q": "¿Qué déficit caracteriza al componente cognitivo de la indefensión aprendida?",
+      "options": [
+        "Interferencia en aprendizajes nuevos",
+        "Retraso en las respuestas motoras",
+        "Aumento de la ansiedad fisiológica"
+      ],
+      "correct": 0,
+      "hint": "Afecta a la percepción de contingencias futuras.",
+      "explanation": "El déficit cognitivo implica un retraso o interferencia con aprendizajes posteriores de relaciones de contingencia."
+    },
+    {
+      "q": "¿Qué autor propuso la indefensión como modelo explicativo de la depresión reactiva?",
+      "options": [
+        "Martin E. P. Seligman",
+        "Jack Williams Brehm",
+        "Bernard Weiner"
+      ],
+      "correct": 0,
+      "hint": "Realizó experimentos con animales sobre incontrolabilidad.",
+      "explanation": "Seligman propuso la teoría de la indefensión aprendida como un modelo explicativo de la depresión."
+    },
+    {
+      "q": "¿A qué se refiere la dimensión de globalidad en la reformulación de la indefensión?",
+      "options": [
+        "A la generalización en distintas situaciones",
+        "A la persistencia de los síntomas en el tiempo",
+        "A la localización interna o externa de la causa"
+      ],
+      "correct": 0,
+      "hint": "Explica por qué los déficits se extienden a otros ámbitos de la vida.",
+      "explanation": "La globalidad (frente a especificidad) determina la generalización de los déficits de indefensión."
+    },
+    {
+      "q": "¿Cómo se define la desesperanza en el modelo de Abramson, Metalsky y Alloy?",
+      "options": [
+        "Incontrolabilidad y resultado negativo",
+        "Falta de esfuerzo y capacidad reducida",
+        "Baja autoestima e indefensión universal"
+      ],
+      "correct": 0,
+      "hint": "Es una doble expectativa que actúa como causa proximal de depresión.",
+      "explanation": "La desesperanza es la doble expectativa de incontrolabilidad y de que ocurrirán resultados negativos."
+    },
+    {
+      "q": "¿Qué determina que un sujeto pase de la fase de reactancia a la de indefensión?",
+      "options": [
+        "Un número elevado de ensayos fallidos",
+        "La importancia reducida del resultado",
+        "La presencia de un locus externo previo"
+      ],
+      "correct": 0,
+      "hint": "Es la variable central del modelo de Wortman y Brehm.",
+      "explanation": "Si el número de ensayos es alto, el sujeto deja de sentir reactancia y manifiesta síntomas de indefensión."
+    },
+    {
+      "q": "¿Qué estilo explicativo utiliza causas externas, inestables y específicas para lo negativo?",
+      "options": [
+        "El estilo explicativo optimista",
+        "El estilo explicativo pesimista",
+        "El estilo explicativo interno"
+      ],
+      "correct": 0,
+      "hint": "Busca proteger la autoestima limitando el impacto del evento adverso.",
+      "explanation": "El optimista explica eventos negativos mediante causas externas, inestables y específicas."
+    },
+    {
+      "q": "¿Qué tipo de ilusión positiva se relaciona con la visión de uno mismo?",
+      "options": [
+        "El sesgo de benevolencia personal",
+        "La ilusión de control ambiental",
+        "El optimismo de carácter realista"
+      ],
+      "correct": 0,
+      "hint": "Es la tendencia a mantener una imagen positiva de las propias capacidades.",
+      "explanation": "El sesgo de benevolencia o visión positiva de uno mismo es uno de los tres tipos de ilusiones de Taylor."
+    },
+    {
+      "q": "¿Qué nombre recibe la creencia de que nada malo le sucederá al sujeto en el futuro?",
+      "options": [
+        "Optimismo de tipo no realista",
+        "Ilusión de control voluntario",
+        "Sesgo de egocentricidad focal"
+      ],
+      "correct": 0,
+      "hint": "Es una distorsión cognitiva relacionada con las expectativas temporales.",
+      "explanation": "El optimismo no realista es la ilusión relacionada con la idea de que nada malo le sucederá al sujeto."
+    },
+    {
+      "q": "¿Cuál es la consecuencia motivacional de atribuir el fracaso a factores internos y estables?",
+      "options": [
+        "Efectos negativos muy importantes",
+        "Aumento de la persistencia activa",
+        "Reducción de la ansiedad situacional"
+      ],
+      "correct": 0,
+      "hint": "Considera el impacto de creer que la causa del fallo es propia y permanente.",
+      "explanation": "La atribución interna y estable del fracaso tiene importantes consecuencias negativas a nivel motivacional."
+    },
+    {
+      "q": "¿Qué tipo de amenaza a la libertad proviene de condiciones físicas del entorno?",
+      "options": [
+        "Fuentes de carácter impersonal",
+        "Fuentes de carácter autoimpuesto",
+        "Fuentes de carácter vicario"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a factores como el clima o la geografía que limitan la acción.",
+      "explanation": "Las fuentes impersonales son condiciones físicas (clima, orografía) que impiden o limitan la acción."
+    },
+    {
+      "q": "¿Qué rasgo de personalidad se asocia con una menor reactancia psicológica?",
+      "options": [
+        "Un alto nivel de cordialidad",
+        "Un bajo nivel de amabilidad",
+        "Un locus de control interno"
+      ],
+      "correct": 0,
+      "hint": "A mayor cordialidad, menor es la tendencia a reaccionar hostilmente ante amenazas.",
+      "explanation": "Los resultados sugieren que a menor cordialidad, mayor reactancia (y viceversa)."
+    },
+    {
+      "q": "¿Cómo influye el locus de control en la intensidad de la reactancia e indefensión?",
+      "options": [
+        "Los internos experimentan más ambas",
+        "Los externos experimentan más ambas",
+        "No existe una relación significativa"
+      ],
+      "correct": 0,
+      "hint": "Recuerda el estudio de Mikulincer (1988) sobre las expectativas de control.",
+      "explanation": "Los sujetos internos experimentan mayor reactancia e indefensión que los sujetos externos."
+    },
+    {
+      "q": "Señale la opción FALSA respecto a la naturaleza de la cognición humana en este modelo.",
+      "options": [
+        "Se limita a almacenar datos pasivamente",
+        "Personaliza la información que recibe",
+        "Va más allá de los datos suministrados"
+      ],
+      "correct": 0,
+      "hint": "Identifica si el texto apoya una visión de procesamiento activo o pasivo.",
+      "explanation": "Es falso que se limite a almacenar datos pasivamente; implica participación activa en la organización."
+    },
+    {
+      "q": "Señale la opción FALSA sobre los sesgos atribucionales mencionados en el capítulo.",
+      "options": [
+        "El falso consenso es un sesgo egocéntrico",
+        "La falsa peculiaridad es un sesgo central",
+        "La benevolencia es el único sesgo real"
+      ],
+      "correct": 2,
+      "hint": "Existen múltiples tipos de sesgos agrupados en diferentes categorías.",
+      "explanation": "Es falso que la benevolencia sea el único sesgo; se mencionan saliencia, falso consenso, falsa peculiaridad, etc."
+    },
+    {
+      "q": "Señale la opción FALSA respecto al modelo de expectativa-valor de la conducta de Feather.",
+      "options": [
+        "La expectativa es independiente del valor",
+        "El valor de refuerzo es único para el sujeto",
+        "La probabilidad percibida afecta la conducta"
+      ],
+      "correct": 0,
+      "hint": "Analiza si la probabilidad de conducta es una función combinada de ambos términos.",
+      "explanation": "Es falso que sean independientes; la conducta es una función del valor y de la probabilidad percibida (expectativa)."
+    },
+    {
+      "q": "Señale la opción FALSA sobre el locus de control según el planteamiento de Rotter.",
+      "options": [
+        "Es una expectativa ligada a una tarea",
+        "Se operacionaliza como dimensión bipolar",
+        "Opera a través de distintas situaciones"
+      ],
+      "correct": 0,
+      "hint": "Determina si el locus de control es algo situacional o una tendencia general.",
+      "explanation": "Es falso que esté ligado a una tarea; es una expectativa generalizada que opera en distintas situaciones."
+    },
+    {
+      "q": "Señale la opción FALSA sobre las personas con un locus de control de tipo interno.",
+      "options": [
+        "Tienden a sufrir mayores depresiones",
+        "Tienen más conductas de prevención",
+        "Manejan el estrés como un desafío"
+      ],
+      "correct": 0,
+      "hint": "Revisa la correlación entre internalidad y bienestar subjetivo o salud.",
+      "explanation": "Es falso que sufran más depresiones; se han encontrado relaciones negativas entre locus interno y depresión."
+    },
+    {
+      "q": "Señale la opción FALSA respecto al constructo de autoeficacia percibida de Bandura.",
+      "options": [
+        "Es idéntico a la expectativa de resultados",
+        "Influye sobre los patrones emocionales",
+        "Determina la persistencia ante la tarea"
+      ],
+      "correct": 0,
+      "hint": "Busca la distinción explícita que hace el autor entre capacidad y consecuencias.",
+      "explanation": "Es falso que sea idéntico; es importante distinguir entre autoeficacia y expectativa de resultados."
+    },
+    {
+      "q": "Señale la opción FALSA sobre las fuentes de formación de la autoeficacia personal.",
+      "options": [
+        "El logro de ejecución es la fuente débil",
+        "La persuasión verbal es muy vulnerable",
+        "La activación emocional aporta información"
+      ],
+      "correct": 0,
+      "hint": "Identifica cuál es el mediador más influyente en la creencia de capacidad.",
+      "explanation": "Es falso que sea la fuente débil; los logros de ejecución son la fuente más potente de inducción."
+    },
+    {
+      "q": "Señale la opción FALSA en relación con la teoría de atribución causal de Heider.",
+      "options": [
+        "La motivación es una fuerza ambiental",
+        "La capacidad es una fuerza personal",
+        "La suerte es una fuerza inestable"
+      ],
+      "correct": 0,
+      "hint": "Analiza si el impulso interno pertenece al sujeto o al entorno físico.",
+      "explanation": "Es falso que la motivación sea ambiental; Heider la clasifica claramente como una fuerza personal."
+    },
+    {
+      "q": "Señale la opción FALSA sobre la dimensión de controlabilidad añadida por Weiner.",
+      "options": [
+        "Es independiente de la voluntad del sujeto",
+        "Afecta a la cualidad de las emociones",
+        "Se relaciona con el esfuerzo inmediato"
+      ],
+      "correct": 0,
+      "hint": "Define si el control implica o no la intervención del deseo personal.",
+      "explanation": "Es falso que sea independiente; la controlabilidad se define por si el factor está bajo el control de la voluntad."
+    },
+    {
+      "q": "Señale la opción FALSA sobre las consecuencias de la dimensión de locus en Weiner.",
+      "options": [
+        "No afecta a la intensidad del afecto",
+        "Influye en reacciones ante el fracaso",
+        "Maximiza el afecto en éxitos internos"
+      ],
+      "correct": 0,
+      "hint": "Evalúa el impacto de la localización de la causa en la vivencia emocional.",
+      "explanation": "Es falso que no afecte; el locus de causalidad influye en la intensidad de las reacciones afectivas."
+    },
+    {
+      "q": "Señale la opción FALSA respecto a la teoría de la reactancia psicológica de Brehm.",
+      "options": [
+        "Es un estado de pasividad aprendida",
+        "Surge al limitarse la libertad de acción",
+        "Requiere que el sujeto se sienta capaz"
+      ],
+      "correct": 0,
+      "hint": "La reactancia es una activación, no una detención del comportamiento.",
+      "explanation": "Es falso que sea pasividad; la reactancia es una activación motivacional dirigida a recuperar la libertad."
+    },
+    {
+      "q": "Señale la opción FALSA sobre la magnitud de la reactancia que experimenta un sujeto.",
+      "options": [
+        "Depende de la debilidad de la amenaza",
+        "Depende de la importancia de la libertad",
+        "Depende de la expectativa de libertad"
+      ],
+      "correct": 0,
+      "hint": "Analiza qué condiciones aumentan o disminuyen la reacción motivacional.",
+      "explanation": "Es falso que dependa de la debilidad; depende de la fuerza y legitimidad de la amenaza (a mayor fuerza, mayor reactancia)."
+    },
+    {
+      "q": "Señale la opción FALSA sobre los efectos conductuales de la reactancia psicológica.",
+      "options": [
+        "Siempre implican una agresión física",
+        "Pueden ser de restauración directa",
+        "Pueden ser de restauración indirecta"
+      ],
+      "correct": 0,
+      "hint": "La hostilidad no siempre se traduce en una acción instrumental agresiva.",
+      "explanation": "Es falso que siempre impliquen agresión física; la restauración puede ser conductual o subjetiva sin violencia."
+    },
+    {
+      "q": "Señale la opción FALSA respecto a los síntomas de la indefensión aprendida.",
+      "options": [
+        "Aumento del miedo en todas las fases",
+        "Retraso de las respuestas voluntarias",
+        "Déficit afectivo que incluye ansiedad"
+      ],
+      "correct": 0,
+      "hint": "Considera la evolución del estado emocional desde el inicio hasta la depresión.",
+      "explanation": "El miedo suele aparecer al inicio, pero en última instancia puede derivar en depresión y pasividad afectiva."
+    },
+    {
+      "q": "Señale la opción FALSA sobre la formación de expectativas de no contingencia.",
+      "options": [
+        "Ocurre de forma automática y biológica",
+        "Requiere la percepción de incontrolabilidad",
+        "Es suficiente para producir los déficits"
+      ],
+      "correct": 0,
+      "hint": "Analiza el papel del mediador cognitivo en el proceso de aprendizaje.",
+      "explanation": "Es falso que sea automático; Seligman señala que es imprescindible que el individuo perciba la no contingencia."
+    },
+    {
+      "q": "Señale la opción FALSA sobre la reformulación atribucional de Abramson y cols.",
+      "options": [
+        "Utiliza solo la dimensión de globalidad",
+        "Recoge las dimensiones de Weiner",
+        "Explica la cronicidad de los déficits"
+      ],
+      "correct": 0,
+      "hint": "Identifica cuántas y cuáles dimensiones se integran en este modelo revisado.",
+      "explanation": "Es falso que use solo la globalidad; recoge internalidad y estabilidad de Weiner y añade la globalidad."
+    },
+    {
+      "q": "Señale la opción FALSA sobre los factores que modulan el componente emocional depresivo.",
+      "options": [
+        "La inestabilidad del resultado adverso",
+        "La deseabilidad del resultado perdido",
+        "La fuerza de la expectativa previa"
+      ],
+      "correct": 0,
+      "hint": "Analiza qué condiciones agravan el sentimiento de desesperanza.",
+      "explanation": "Es falso; los factores son valor (deseabilidad), expectativa (certeza) e internalidad (carácter personal)."
+    },
+    {
+      "q": "Señale la opción FALSA respecto a la teoría de la desesperanza (1989).",
+      "options": [
+        "Ignora los sucesos vitales negativos",
+        "Postula una causa proximal suficiente",
+        "Considera el componente de mediación"
+      ],
+      "correct": 0,
+      "hint": "Evalúa si el ambiente externo es relevante para activar los síntomas.",
+      "explanation": "Es falso; el modelo postula que después de un suceso vital negativo, las inferencias modulan la respuesta."
+    },
+    {
+      "q": "Señale la opción FALSA sobre el estilo explicativo negativo de la personalidad.",
+      "options": [
+        "Se vincula a causas de tipo específico",
+        "Es factor de vulnerabilidad a depresión",
+        "Usa atribuciones internas y estables"
+      ],
+      "correct": 0,
+      "hint": "Contrasta las dimensiones que definen el estilo pesimista frente al optimista.",
+      "explanation": "Es falso; el estilo explicativo negativo se vincula a causas globales, no específicas."
+    },
+    {
+      "q": "Señale la opción FALSA sobre el modelo integrador de Wortman y Brehm.",
+      "options": [
+        "El arousal aumenta en la indefensión",
+        "Propone la existencia de dos fases",
+        "La importancia del resultado modula"
+      ],
+      "correct": 0,
+      "hint": "Considera qué sucede con la activación motivacional cuando se asume la incontrolabilidad.",
+      "explanation": "Es falso; cuando surge el estado de indefensión, cesa el arousal asociado a la reactancia."
+    },
+    {
+      "q": "Señale la opción FALSA respecto al optimismo y la salud física de la persona.",
+      "options": [
+        "El pesimismo es un estado irrelevante",
+        "El estilo optimista mantiene la salud",
+        "Eventos incontrolables afectan la salud"
+      ],
+      "correct": 0,
+      "hint": "Busca la relación entre estados psicológicos y bienestar corporal.",
+      "explanation": "Es falso; la evidencia respalda la influencia de los estados psicológicos (como el pesimismo) en el bienestar físico."
+    },
+    {
+      "q": "Señale la opción FALSA sobre las limitaciones de la teoría de la indefensión según Taylor.",
+      "options": [
+        "Sobreestima las respuestas reales",
+        "Se basa en entornos muy limitados",
+        "Proviene de investigación de laboratorio"
+      ],
+      "correct": 0,
+      "hint": "Taylor critica que en el mundo real las personas luchan más de lo que muestran los experimentos.",
+      "explanation": "Es falso; Taylor critica que la teoría presenta limitaciones por basarse en ambientes limitados de laboratorio."
+    },
+    {
+      "q": "Señale la opción FALSA respecto a las ilusiones positivas propuestas por S. E. Taylor.",
+      "options": [
+        "Carecen de cualquier valor adaptativo",
+        "Incluyen la visión positiva de uno mismo",
+        "Favorecen la perseverancia en el sujeto"
+      ],
+      "correct": 0,
+      "hint": "Evalúa si estas distorsiones tienen una función útil para el individuo.",
+      "explanation": "Es falso; las ilusiones brindan un valor adaptativo y capacidad para incrementar la motivación."
+    },
+    {
+      "q": "Señale la opción FALSA sobre el mantenimiento de las ilusiones positivas del sujeto.",
+      "options": [
+        "El realismo estricto facilita su éxito",
+        "El sesgo hedonista permite mantenerlas",
+        "El sesgo de egocentricidad las apoya"
+      ],
+      "correct": 0,
+      "hint": "Piensa en qué procesos cognitivos permiten que las ilusiones no se desvanezcan.",
+      "explanation": "Es falso; son los sesgos inherentes (no el realismo) los que facilitan el mantenimiento de las ilusiones."
+    },
+    {
+      "q": "Señale la opción FALSA sobre la ilusión de control dentro del modelo de Taylor.",
+      "options": [
+        "Es ajena al sesgo de egocentricidad",
+        "Implica que el mundo es controlable",
+        "Se asocia a una mayor salud mental"
+      ],
+      "correct": 0,
+      "hint": "Busca la conexión entre la percepción de control propio y la centralidad del yo.",
+      "explanation": "Es falso; se señala explícitamente que la ilusión de control es una manifestación del sesgo de egocentricidad."
+    },
+    {
+      "q": "La cognición humana se define como ____ debido a que completa lagunas e interpreta datos activamente.",
+      "options": [
+        "conocimiento inferencial",
+        "pensamiento algorítmico",
+        "procesamiento de rasgos"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la capacidad de razonar deductivamente más allá de lo dado.",
+      "explanation": "El texto indica que la cognición humana es un conocimiento inferencial que va más allá de la información suministrada."
+    },
+    {
+      "q": "Los ____ cognitivos son reglas sencillas utilizadas cuando el tiempo o la relevancia del tema son escasos.",
+      "options": [
+        "heurísticos",
+        "esquemas",
+        "sesgos"
+      ],
+      "correct": 0,
+      "hint": "Son estrategias rápidas pero no siempre lógicamente perfectas.",
+      "explanation": "Los heurísticos se emplean como estrategias rápidas ante la falta de recursos cognitivos o tiempo."
+    },
+    {
+      "q": "Greenwald agrupa los sesgos cognitivos en tres tipos principales: egocentricidad, conservadurismo y ____.",
+      "options": [
+        "benevolencia",
+        "internalidad",
+        "estabilidad"
+      ],
+      "correct": 0,
+      "hint": "Relacionado con una visión positiva o amable de uno mismo.",
+      "explanation": "Según Greenwald (1980), los tres tipos son egocentricidad, benevolencia y conservadurismo cognitivo."
+    },
+    {
+      "q": "El ____ postula que la conducta depende del valor del refuerzo y de su probabilidad percibida.",
+      "options": [
+        "modelo expectativa-valor",
+        "determinismo recíproco",
+        "modelo de autoeficacia"
+      ],
+      "correct": 0,
+      "hint": "Formulado por Feather en 1982.",
+      "explanation": "El modelo de expectativa-valor asocia la conducta con el valor del refuerzo y la expectativa de ocurrencia."
+    },
+    {
+      "q": "Rotter define el ____ como la creencia de que la respuesta influirá o no en la obtención de un refuerzo.",
+      "options": [
+        "locus de control",
+        "falso consenso",
+        "auto-foco"
+      ],
+      "correct": 0,
+      "hint": "Es una expectativa generalizada sobre la causalidad de los refuerzos.",
+      "explanation": "El locus de control se refiere al grado en que el sujeto cree que controla los refuerzos de su vida."
+    },
+    {
+      "q": "Un sujeto con ____ percibe las situaciones de estrés más como un desafío que como una amenaza.",
+      "options": [
+        "locus de control interno",
+        "locus de control externo",
+        "indefensión aprendida"
+      ],
+      "correct": 0,
+      "hint": "Creen que los refuerzos dependen de sus propias conductas.",
+      "explanation": "Los internos manejan mejor el estrés al percibir mayor control y recursos personales."
+    },
+    {
+      "q": "La expectativa de ____ se refiere a los juicios sobre la capacidad para satisfacer exigencias concretas.",
+      "options": [
+        "autoeficacia",
+        "resultados",
+        "atribución"
+      ],
+      "correct": 0,
+      "hint": "Concepto central en la teoría de Albert Bandura.",
+      "explanation": "La autoeficacia es la capacidad percibida para hacer frente a situaciones específicas según Bandura."
+    },
+    {
+      "q": "La fuente más potente para inducir expectativas de autoeficacia son los ____.",
+      "options": [
+        "logros de ejecución",
+        "persuasión verbal",
+        "estados afectivos"
+      ],
+      "correct": 0,
+      "hint": "Son los éxitos o fracasos experimentados directamente en el pasado.",
+      "explanation": "Los logros de ejecución constituyen la información más fiable sobre las capacidades propias."
+    },
+    {
+      "q": "En el modelo de Heider, las fuerzas personales se dividen en capacidad y ____.",
+      "options": [
+        "motivación",
+        "dificultad",
+        "suerte"
+      ],
+      "correct": 0,
+      "hint": "Incluye tanto la intención como el esfuerzo del sujeto.",
+      "explanation": "Heider diferencia entre fuerzas personales (motivación y capacidad) y ambientales."
+    },
+    {
+      "q": "Según Weiner, la dimensión de ____ se refiere a si las causas son invariantes o variables en el tiempo.",
+      "options": [
+        "estabilidad",
+        "locus",
+        "control"
+      ],
+      "correct": 0,
+      "hint": "Diferencia entre factores como la habilidad frente al esfuerzo inmediato.",
+      "explanation": "La estabilidad determina si el sujeto cree que la causa permanecerá constante en el futuro."
+    },
+    {
+      "q": "La dimensión de ____ en Weiner está vinculada con emociones sociales como la ira o la compasión.",
+      "options": [
+        "controlabilidad",
+        "globalidad",
+        "estabilidad"
+      ],
+      "correct": 0,
+      "hint": "Relacionada con el grado de voluntad que se percibe sobre la causa.",
+      "explanation": "La controlabilidad influye en cómo juzgamos las acciones propias y ajenas emocionalmente."
+    },
+    {
+      "q": "La teoría de la ____ psicológica predice un incremento de la acción tras la pérdida de libertad.",
+      "options": [
+        "reactancia",
+        "indefensión",
+        "atribución"
+      ],
+      "correct": 0,
+      "hint": "Estado motivacional dirigido a restaurar una libertad amenazada.",
+      "explanation": "La reactancia surge cuando se elimina una libertad que el sujeto considera importante."
+    },
+    {
+      "q": "La reactancia es mayor en personas con un ____ bajo el modelo pentafactorial.",
+      "options": [
+        "nivel de cordialidad",
+        "nivel de apertura",
+        "nivel de neuroticismo"
+      ],
+      "correct": 0,
+      "hint": "Rasgo relacionado con la amabilidad y cooperación.",
+      "explanation": "La investigación sugiere que a menor cordialidad, mayor es la reactancia experimentada."
+    },
+    {
+      "q": "Seligman observó que la exposición a descargas incontrolables producía síntomas de ____.",
+      "options": [
+        "indefensión aprendida",
+        "reactancia vicaria",
+        "sesgo hedonista"
+      ],
+      "correct": 0,
+      "hint": "Estado de pasividad ante resultados no contingentes.",
+      "explanation": "La indefensión aprendida surge al percibir que no hay relación entre conducta y resultados."
+    },
+    {
+      "q": "En la reformulación de Abramson, las atribuciones ____ y globales favorecen la depresión.",
+      "options": [
+        "estables",
+        "externas",
+        "específicas"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a causas que se mantienen constantes en el tiempo.",
+      "explanation": "Atribuir fracasos a causas internas, estables y globales es un factor de riesgo depresivo."
+    },
+    {
+      "q": "La ____ es la causa proximal suficiente de los síntomas de depresión según Abramson (1989).",
+      "options": [
+        "desesperanza",
+        "indefensión",
+        "atribución"
+      ],
+      "correct": 0,
+      "hint": "Implica expectativa de incontrolabilidad y de resultado negativo.",
+      "explanation": "La teoría de la desesperanza añade la expectativa de resultado negativo a la incontrolabilidad."
+    },
+    {
+      "q": "El modelo de Wortman y Brehm propone un proceso ____ para integrar reactancia e indefensión.",
+      "options": [
+        "bifásico",
+        "lineal",
+        "cíclico"
+      ],
+      "correct": 0,
+      "hint": "Primero ocurre una fase y luego la otra dependiendo del entrenamiento.",
+      "explanation": "Postula una primera fase de reactancia y una posterior de indefensión tras muchos ensayos."
+    },
+    {
+      "q": "La variable central en el modelo integrador de Wortman y Brehm es el ____.",
+      "options": [
+        "número de ensayos",
+        "nivel de afecto",
+        "sesgo de foco"
+      ],
+      "correct": 0,
+      "hint": "Define el paso de la lucha por la libertad a la aceptación de la pérdida de control.",
+      "explanation": "A pocos ensayos hay reactancia; a muchos ensayos surge la indefensión."
+    },
+    {
+      "q": "El estilo explicativo ____ asocia eventos negativos con causas externas, inestables y específicas.",
+      "options": [
+        "optimista",
+        "pesimista",
+        "realista"
+      ],
+      "correct": 0,
+      "hint": "Protege la salud física y mental ante las adversidades.",
+      "explanation": "El estilo optimista circunscribe el fracaso a situaciones concretas y temporales."
+    },
+    {
+      "q": "Taylor identifica tres ilusiones positivas: benevolencia, ilusión de control y ____.",
+      "options": [
+        "optimismo no realista",
+        "conservadurismo",
+        "sesgo de saliencia"
+      ],
+      "correct": 0,
+      "hint": "Relacionada con la creencia de que nada malo sucederá en el futuro.",
+      "explanation": "El optimismo no realista es la tercera gran ilusión positiva que facilita la adaptación."
+    },
+    {
+      "q": "La ilusión de control es considerada una manifestación del sesgo de ____.",
+      "options": [
+        "egocentricidad",
+        "falsa peculiaridad",
+        "benevolencia"
+      ],
+      "correct": 0,
+      "hint": "Tendencia a percibirse a uno mismo como centro de los eventos.",
+      "explanation": "El texto vincula explícitamente la ilusión de control con el sesgo de egocentricidad."
+    },
+    {
+      "q": "La cognición humana se caracteriza por ser un ____ más que una acumulación pasiva.",
+      "options": [
+        "conocimiento activo",
+        "almacén de datos",
+        "reflejo objetivo"
+      ],
+      "correct": 0,
+      "hint": "Implica personalización y organización de la información.",
+      "explanation": "La cognición es un proceso dinámico de interpretación y personalización."
+    },
+    {
+      "q": "Los sesgos cognitivos no son anecdóticos, sino ____ al funcionamiento humano.",
+      "options": [
+        "consustanciales",
+        "accidentales",
+        "patológicos"
+      ],
+      "correct": 0,
+      "hint": "Forman parte de la naturaleza misma del sistema cognitivo.",
+      "explanation": "El texto aclara que los sesgos son inherentes a cómo procesamos la información."
+    },
+    {
+      "q": "El locus de control se operacionaliza como una dimensión ____ (interno frente a externo).",
+      "options": [
+        "bipolar",
+        "unitaria",
+        "jerárquica"
+      ],
+      "correct": 0,
+      "hint": "Presenta dos extremos opuestos en un continuo.",
+      "explanation": "Se mide en función de la responsabilidad percibida: interna o externa."
+    },
+    {
+      "q": "Los sujetos externos tienden a percibir el estrés como una ____ más que como un reto.",
+      "options": [
+        "amenaza",
+        "oportunidad",
+        "ilusión"
+      ],
+      "correct": 0,
+      "hint": "Sienten que no tienen recursos para influir en el resultado.",
+      "explanation": "La falta de control percibido convierte el estrés en una experiencia amenazante."
+    },
+    {
+      "q": "La experiencia ____ es la observación de éxitos y fracasos en otras personas.",
+      "options": [
+        "vicaria",
+        "directa",
+        "emocional"
+      ],
+      "correct": 0,
+      "hint": "Fuente de autoeficacia basada en el aprendizaje por observación.",
+      "explanation": "Es menos sólida que los logros personales pero influye en la autoeficacia."
+    },
+    {
+      "q": "La ____ es el componente direccional de la motivación en el modelo de Heider.",
+      "options": [
+        "intención",
+        "capacidad",
+        "dificultad"
+      ],
+      "correct": 0,
+      "hint": "Hacia dónde se encamina el esfuerzo del sujeto.",
+      "explanation": "La motivación se divide en intención (dirección) y esfuerzo (cantidad)."
+    },
+    {
+      "q": "En el modelo de Weiner, la suerte es una causa externa e ____.",
+      "options": [
+        "inestable",
+        "estable",
+        "controlable"
+      ],
+      "correct": 0,
+      "hint": "Sujeta a fluctuaciones incontrolables del ambiente.",
+      "explanation": "La suerte varía de una situación a otra, por lo que no es estable."
+    },
+    {
+      "q": "Atribuir el éxito a factores ____ genera esperanza de éxito futuro.",
+      "options": [
+        "estables",
+        "inestables",
+        "externos"
+      ],
+      "correct": 0,
+      "hint": "Factores que se cree que persistirán en el tiempo.",
+      "explanation": "Si la causa del éxito permanece, se espera que el éxito también se repita."
+    },
+    {
+      "q": "La reactancia surge ante amenazas personales, impersonales y ____.",
+      "options": [
+        "autoimpuestas",
+        "vicarias",
+        "hedonistas"
+      ],
+      "correct": 0,
+      "hint": "Cuando el propio sujeto restringe su propia libertad.",
+      "explanation": "Existen tres fuentes de amenaza identificadas por Brehm."
+    },
+    {
+      "q": "La restauración ____ implica recuperar la libertad mediante una acción equivalente.",
+      "options": [
+        "indirecta",
+        "directa",
+        "social"
+      ],
+      "correct": 0,
+      "hint": "No se ejecuta la acción prohibida exactamente, sino otra similar.",
+      "explanation": "El sujeto demuestra su capacidad de ejecución de forma alternativa."
+    },
+    {
+      "q": "Los déficits ____ de la indefensión incluyen el retraso en iniciar respuestas voluntarias.",
+      "options": [
+        "motivacionales",
+        "cognitivos",
+        "afectivos"
+      ],
+      "correct": 0,
+      "hint": "Afectan a la voluntad del sujeto para actuar.",
+      "explanation": "La pasividad es el síntoma central del déficit motivacional."
+    },
+    {
+      "q": "La indefensión ____ ocurre cuando el sujeto cree que nadie puede controlar el resultado.",
+      "options": [
+        "universal",
+        "personal",
+        "global"
+      ],
+      "correct": 0,
+      "hint": "Diferente de la creencia de que solo uno mismo es incapaz.",
+      "explanation": "Abramson distingue entre falta de control propia y falta de control generalizada."
+    },
+    {
+      "q": "El estilo explicativo ____ se asocia con una salud física deteriorada.",
+      "options": [
+        "pesimista",
+        "optimista",
+        "interno"
+      ],
+      "correct": 0,
+      "hint": "Tiende a globalizar y estabilizar los fracasos.",
+      "explanation": "El pesimismo ante eventos incontrolables afecta negativamente al organismo."
+    },
+    {
+      "q": "Las ilusiones positivas distorsionan la realidad en ____ del sujeto.",
+      "options": [
+        "beneficio propio",
+        "perjuicio ajeno",
+        "favor del grupo"
+      ],
+      "correct": 0,
+      "hint": "Mecanismo defensivo y adaptativo de la cognición.",
+      "explanation": "Sesgamos la información para mantener una visión positiva de nosotros mismos."
+    },
+    {
+      "q": "El sesgo ____ facilita el mantenimiento de una visión positiva de nosotros mismos.",
+      "options": [
+        "hedonista",
+        "de perspectiva",
+        "de saliencia"
+      ],
+      "correct": 0,
+      "hint": "También llamado sesgo autosirviente.",
+      "explanation": "Atribuirse éxitos y negar fracasos ayuda al autoconcepto."
+    },
+    {
+      "q": "La ____ verbal es la fuente más débil para generar expectativas de autoeficacia.",
+      "options": [
+        "persuasión",
+        "activación",
+        "experiencia"
+      ],
+      "correct": 0,
+      "hint": "Consiste en que otros nos digan que somos capaces.",
+      "explanation": "Sugerir verbalmente la capacidad tiene poco poder comparado con la práctica."
+    },
+    {
+      "q": "El error atributivo fundamental consiste en sobreestimar factores ____ en la conducta ajena.",
+      "options": [
+        "personales",
+        "ambientales",
+        "azarosos"
+      ],
+      "correct": 0,
+      "hint": "Sesgo habitual al observar a los demás.",
+      "explanation": "Tendemos a creer que los otros actúan por su personalidad, no por el contexto."
+    },
+    {
+      "q": "La reactancia máxima se produce cuando la libertad se ____.",
+      "options": [
+        "elimina totalmente",
+        "amenaza levemente",
+        "sugiere indirectamente"
+      ],
+      "correct": 0,
+      "hint": "A mayor fuerza de la amenaza, mayor respuesta motivacional.",
+      "explanation": "La supresión completa de la libertad genera la respuesta más intensa."
+    },
+    {
+      "q": "El sentimiento de control genera ____ acerca de las consecuencias futuras de los actos.",
+      "options": [
+        "seguridad",
+        "incertidumbre",
+        "pasividad"
+      ],
+      "correct": 0,
+      "hint": "Consecuencia adaptativa de creer que influimos en el entorno.",
+      "explanation": "Predecir el futuro a través del control reduce la ansiedad y el miedo."
+    },
+    {
+      "q": "Respecto al carácter psicológico de la cognición humana, ¿cuál de las siguientes es correcta?",
+      "options": [
+        "Personaliza la información recibida.",
+        "Globaliza conocimientos fragmentados.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Analice las funciones de organización y codificación activa.",
+      "explanation": "El texto afirma que la cognición completa lagunas, interpreta, globaliza y personaliza."
+    },
+    {
+      "q": "Sobre los sesgos cognitivos agrupados por Greenwald (1980), ¿qué dimensiones los componen?",
+      "options": [
+        "Conservadurismo cognitivo y sesgos.",
+        "Egocentricidad y sesgo benevolente.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Revise los tres tipos principales mencionados al inicio del capítulo.",
+      "explanation": "Greenwald identificó egocentricidad, benevolencia y conservadurismo cognitivo como pilares."
+    },
+    {
+      "q": "El locus de control interno se asocia empíricamente con los siguientes indicadores:",
+      "options": [
+        "Mayores niveles de felicidad subjetiva.",
+        "Indicadores altos de bienestar personal.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Piense en las relaciones positivas halladas en la investigación.",
+      "explanation": "El locus interno correlaciona positivamente con bienestar, felicidad y salud física."
+    },
+    {
+      "q": "Sobre las consecuencias de las expectativas de autoeficacia de Bandura, se sabe que determinan:",
+      "options": [
+        "La persistencia ante las dificultades.",
+        "La elección de las tareas a realizar.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Considere cómo influye el juicio de capacidad en la conducta futura.",
+      "explanation": "La autoeficacia influye en la selección, preparación, persistencia y emociones del sujeto."
+    },
+    {
+      "q": "En la teoría de Heider, ¿qué factores forman parte de las fuerzas ambientales?",
+      "options": [
+        "La dificultad inherente de la tarea.",
+        "El azar o la suerte en el entorno.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Diferencie entre lo que depende del sujeto y lo que es externo.",
+      "explanation": "Heider clasifica la dificultad (estable) y la suerte (inestable) como fuerzas ambientales."
+    },
+    {
+      "q": "Las fuerzas personales de Heider se componen de los siguientes elementos motivacionales:",
+      "options": [
+        "La intención como dirección de acción.",
+        "El esfuerzo como cantidad de energía.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Revise el desglose de la motivación según este autor.",
+      "explanation": "La motivación en Heider incluye un componente cualitativo (intención) y uno cuantitativo (esfuerzo)."
+    },
+    {
+      "q": "Según el modelo de Weiner, la dimensión de estabilidad explica las siguientes percepciones:",
+      "options": [
+        "La habilidad se percibe como estable.",
+        "El esfuerzo se percibe como inestable.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Piense en qué causas se consideran invariantes o variables.",
+      "explanation": "Habilidad y dificultad son estables, mientras que esfuerzo y suerte son inestables."
+    },
+    {
+      "q": "La dimensión de controlabilidad de Weiner implica que ciertos factores son:",
+      "options": [
+        "Dependientes de la voluntad (esfuerzo).",
+        "Independientes de la voluntad (suerte).",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Relacione la capacidad de control con el tipo de causa.",
+      "explanation": "El esfuerzo es controlable, mientras que la capacidad o la suerte se consideran incontrolables."
+    },
+    {
+      "q": "La magnitud de la reactancia psicológica depende directamente de los siguientes factores:",
+      "options": [
+        "Importancia de la libertad amenazada.",
+        "Expectativa previa de poseer libertad.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Recuerde los parámetros que modulan la intensidad de esta motivación.",
+      "explanation": "Depende de la importancia, expectativa, fuerza, legitimidad y número de libertades implicadas."
+    },
+    {
+      "q": "Las fuentes de amenaza a la libertad que pueden activar reactancia incluyen:",
+      "options": [
+        "Impedimentos causados por otra persona.",
+        "Condiciones físicas como el clima adverso.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Brehm clasifica las amenazas en tres categorías principales.",
+      "explanation": "Las fuentes pueden ser personales, impersonales o incluso autoimpuestas."
+    },
+    {
+      "q": "La reactancia puede manifestarse a través de las siguientes respuestas subjetivas:",
+      "options": [
+        "Hostilidad hacia el agente amenazador.",
+        "Atracción por el resultado eliminado.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "No todas las respuestas son conductuales; algunas son afectivas o cognitivas.",
+      "explanation": "Incluye la reevaluación del objeto (atracción) y sentimientos de hostilidad."
+    },
+    {
+      "q": "Sobre la indefensión aprendida de Seligman, ¿qué síntomas componen el cuadro?",
+      "options": [
+        "Déficits de tipo cognitivo e interferencia.",
+        "Déficits afectivos como miedo o ansiedad.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Es un síndrome que afecta múltiples áreas del funcionamiento.",
+      "explanation": "Presenta déficits motivacionales, cognitivos y afectivos (incluida la depresión)."
+    },
+    {
+      "q": "La reformulación de Abramson et al. (1978) añade dimensiones para predecir:",
+      "options": [
+        "La generalización de los síntomas.",
+        "La duración o cronicidad del déficit.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Las atribuciones permiten explicar por qué la indefensión persiste o se extiende.",
+      "explanation": "Estabilidad y globalidad explican la cronicidad y generalización respectivamente."
+    },
+    {
+      "q": "En la teoría de la desesperanza, los factores que modulan la emoción incluyen:",
+      "options": [
+        "La deseabilidad del resultado inalcanzado.",
+        "La certidumbre de la incontrolabilidad.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Se refiere al valor, expectativa e internalidad de la situación.",
+      "explanation": "El valor del resultado y la fuerza de la expectativa determinan la intensidad emocional."
+    },
+    {
+      "q": "El modelo integrador de Wortman y Brehm sostiene que la respuesta depende de:",
+      "options": [
+        "La importancia que tenga el resultado.",
+        "La cantidad de entrenamiento recibido.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Combine las variables de ambos modelos en un proceso temporal.",
+      "explanation": "El número de ensayos y la importancia del resultado determinan si hay reactancia o indefensión."
+    },
+    {
+      "q": "Respecto a los estilos explicativos de Peterson et al. (1993), el estilo pesimista es:",
+      "options": [
+        "Atribución interna de eventos negativos.",
+        "Atribución estable de eventos negativos.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Piense en la tríada que define la vulnerabilidad a la depresión.",
+      "explanation": "El estilo pesimista es interno, estable y global para los sucesos negativos."
+    },
+    {
+      "q": "Taylor identifica ilusiones positivas que favorecen la adaptación, entre ellas:",
+      "options": [
+        "Visión positiva de uno mismo o benevolencia.",
+        "Creencia de que el mundo es controlable.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Son distorsiones cognitivas con valor adaptativo.",
+      "explanation": "Incluye el sesgo de benevolencia, la ilusión de control y el optimismo no realista."
+    },
+    {
+      "q": "Los sesgos que facilitan el mantenimiento de una visión positiva de uno mismo son:",
+      "options": [
+        "El sesgo hedonista o de auto-favorecimiento.",
+        "El sesgo de falso consenso con los otros.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Diferentes sesgos atribucionales confluyen en esta ilusión.",
+      "explanation": "El sesgo hedonista, el falso consenso y la falsa peculiaridad apoyan la benevolencia."
+    },
+    {
+      "q": "¿Cuál de los siguientes no es un síntoma de la indefensión según Seligman?",
+      "options": [
+        "Un aumento del arousal motivacional.",
+        "Un retraso en el inicio de respuestas.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "La indefensión se caracteriza por el decremento, no el incremento de la acción.",
+      "explanation": "La reactancia aumenta el arousal, pero la indefensión lo disminuye; por tanto, la opción A es falsa."
+    },
+    {
+      "q": "Sobre el locus de control y la salud física, se puede afirmar erróneamente que:",
+      "options": [
+        "Los externos contraen menos enfermedades.",
+        "Los externos tienen más prevención activa.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Revise qué grupo tiene mejores hábitos de salud según el texto.",
+      "explanation": "Son los internos quienes tienen mejor salud y prevención; ambas opciones son falsas."
+    },
+    {
+      "q": "En relación con las fuentes de la autoeficacia, se puede decir falsamente que:",
+      "options": [
+        "La persuasión verbal es la fuente potente.",
+        "La experiencia vicaria es la más sólida.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Compare el poder relativo de las cuatro fuentes de Bandura.",
+      "explanation": "La persuasión es débil y la vicaria es vulnerable; los logros de ejecución son los más sólidos."
+    },
+    {
+      "q": "Sobre el modelo de Heider, es incorrecto afirmar que las fuerzas personales:",
+      "options": [
+        "Incluyen la dificultad de la tarea dada.",
+        "Están compuestas por el azar y la suerte.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Dificultad y suerte pertenecen a otro tipo de fuerzas en este modelo.",
+      "explanation": "La dificultad y la suerte son fuerzas ambientales, no personales."
+    },
+    {
+      "q": "Respecto a la dimensión de estabilidad de Weiner, es falso que factores como:",
+      "options": [
+        "El esfuerzo se considere causa estable.",
+        "La habilidad se considere inestable.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Piense en la naturaleza variable o fija de estas causas.",
+      "explanation": "Es al revés: el esfuerzo es inestable y la habilidad es estable."
+    },
+    {
+      "q": "Sobre las consecuencias motivacionales en Weiner, es incorrecto sugerir que:",
+      "options": [
+        "La atribución externa del fracaso es negativa.",
+        "La atribución inestable de éxito es positiva.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Piense en qué tipo de atribución genera esperanza o desesperanza.",
+      "explanation": "La atribución interna/estable de fracaso es la negativa; el éxito inestable no genera esperanza."
+    },
+    {
+      "q": "En la teoría de la reactancia, es falso que la intensidad dependa de:",
+      "options": [
+        "La baja importancia de la libertad dada.",
+        "La ilegitimidad total de la fuente de azar.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "La reactancia aumenta con la importancia y la legitimidad.",
+      "explanation": "La baja importancia disminuye la reactancia, no la aumenta."
+    },
+    {
+      "q": "Sobre la restauración indirecta de la libertad, es incorrecto afirmar que:",
+      "options": [
+        "Implica realizar la acción prohibida.",
+        "Es un ataque directo al agente externo.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Diferencie entre restauración directa e indirecta.",
+      "explanation": "La restauración indirecta usa conductas equivalentes, no la acción prohibida en sí."
+    },
+    {
+      "q": "Respecto a la indefensión universal de Abramson, es falso que el sujeto:",
+      "options": [
+        "Crea que él es el único que falla siempre.",
+        "Mantenga una autoestima alta en todo caso.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Compare con la indefensión personal y sus efectos en la autoestima.",
+      "explanation": "En la universal cree que nadie puede; en la personal se culpa a sí mismo (baja autoestima)."
+    },
+    {
+      "q": "Sobre la teoría de la desesperanza de 1989, es erróneo considerar que:",
+      "options": [
+        "La incontrolabilidad basta para deprimirse.",
+        "Las causas específicas generan cronicidad.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Revise los componentes necesarios para el síntoma de desesperanza.",
+      "explanation": "Se requiere incontrolabilidad Y resultado negativo; la cronicidad viene de causas globales."
+    },
+    {
+      "q": "En el modelo de Wortman y Brehm, es falso que ante pocos ensayos:",
+      "options": [
+        "El sujeto manifieste síntomas de apatía.",
+        "El sujeto disminuya su actividad general.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Determine qué estado motivacional prima al inicio del entrenamiento.",
+      "explanation": "Al inicio hay reactancia (incremento de actividad), no apatía ni disminución."
+    },
+    {
+      "q": "Sobre el estilo explicativo optimista de Peterson, es incorrecto decir que:",
+      "options": [
+        "Atribuye lo negativo a causas internas.",
+        "Atribuye lo negativo a causas globales.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Recuerde las tres dimensiones del optimismo explicativo.",
+      "explanation": "El optimista atribuye lo negativo a causas externas y específicas."
+    },
+    {
+      "q": "Respecto a las ilusiones positivas de Taylor, es falso afirmar que:",
+      "options": [
+        "Son síntoma de una patología mental grave.",
+        "Carecen de valor adaptativo en la realidad.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Piense en la función que cumplen estas distorsiones en la salud.",
+      "explanation": "Son normales y altamente adaptativas para la motivación y la salud."
+    },
+    {
+      "q": "Sobre el optimismo no realista, es erróneo considerar que se refiere a:",
+      "options": [
+        "El control que se tuvo sobre el pasado.",
+        "La visión benevolente del yo del presente.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Esta ilusión se proyecta hacia un marco temporal concreto.",
+      "explanation": "Se refiere exclusivamente al futuro y a la ausencia de sucesos negativos."
+    },
+    {
+      "q": "En cuanto a los heurísticos cognitivos, es incorrecto afirmar que son:",
+      "options": [
+        "Soluciones lógicamente perfectas siempre.",
+        "Reglas complejas de razonamiento formal.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Revise la definición de heurístico frente a algoritmo.",
+      "explanation": "Son reglas sencillas y rápidas que a menudo conducen a errores lógicos."
+    },
+    {
+      "q": "Sobre el sesgo de conservadurismo cognitivo, es falso sugerir que:",
+      "options": [
+        "Implica cambiar ideas ante cualquier dato.",
+        "Facilita la actualización rápida de datos.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Piense en qué significa conservar una estructura cognitiva.",
+      "explanation": "El conservadurismo implica resistencia al cambio de las creencias previas."
+    },
+    {
+      "q": "Respecto al sesgo de falso consenso, es incorrecto decir que el sujeto:",
+      "options": [
+        "Se percibe como alguien único y especial.",
+        "Cree que sus ideas son muy poco frecuentes.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Consenso implica acuerdo o similitud con la mayoría.",
+      "explanation": "En el falso consenso el sujeto cree que la mayoría piensa como él."
+    },
+    {
+      "q": "Sobre la relación entre locus de control y reactancia, es falso que:",
+      "options": [
+        "Los externos experimenten mucha reactancia.",
+        "Los internos acepten pasivamente la pérdida.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Relacione la expectativa de control con la lucha por la libertad.",
+      "explanation": "Los internos luchan más (reactancia) y los externos aceptan más fácilmente."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "Explique por qué se afirma que la cognición humana es 'psicológica' más que 'lógica' y qué papel desempeña el conocimiento inferencial en esta distinción.",
+      "model": "La cognición es psicológica porque no almacena información de forma pasiva, sino que la organiza, codifica y personaliza activamente. El conocimiento es inferencial porque utiliza el razonamiento deductivo para ir más allá de los datos suministrados, completando lagunas e interpretando la información. Además, se apoya en heurísticos (reglas sencillas) y presenta sesgos cognitivos consustanciales al funcionamiento mental.",
+      "keywords": [
+        "cognición psicológica",
+        "conocimiento inferencial",
+        "heurísticos",
+        "sesgos cognitivos"
+      ]
+    },
+    {
+      "q": "Analice los tres tipos principales de sesgos cognitivos propuestos por Greenwald (1980) desde la psicología de la personalidad.",
+      "model": "Los tres tipos son: 1) Egocentricidad: tendencia a percibir el propio yo como el centro de los eventos; 2) Benevolencia: tendencia a verse a uno mismo como eficiente y competente (sesgo de auto-ensalzamiento); 3) Conservadurismo cognitivo: tendencia a preservar las estructuras de conocimiento y creencias existentes frente a información nueva.",
+      "keywords": [
+        "Greenwald",
+        "egocentricidad",
+        "benevolencia",
+        "conservadurismo cognitivo"
+      ]
+    },
+    {
+      "q": "Describa el modelo de expectativa-valor de la conducta de Feather (1982) y su importancia en la psicología de la personalidad.",
+      "model": "Postula que la probabilidad de una conducta depende de dos factores: el valor del refuerzo (atractivo de la consecuencia) y la expectativa (probabilidad percibida de que la conducta lleve al refuerzo). Es crucial porque destaca que ambos valores son subjetivos y únicos para cada individuo y situación, fundamentando la necesidad de control personal.",
+      "keywords": [
+        "expectativa-valor",
+        "Feather",
+        "valor de refuerzo",
+        "expectativa"
+      ]
+    },
+    {
+      "q": "Compare las implicaciones del locus de control interno frente al externo en el ámbito de la salud y el manejo del estrés.",
+      "model": "Los sujetos internos perciben el estrés como un reto, creen poseer recursos para afrontarlo, usan estrategias activas, enferman menos y tienen mejores conductas preventivas. Los externos perciben amenaza, sienten que los resultados dependen de la suerte o el contexto, presentan mayor correlación con la depresión y tienen indicadores de bienestar subjetivo más bajos.",
+      "keywords": [
+        "locus de control",
+        "interno",
+        "externo",
+        "salud",
+        "estrés"
+      ]
+    },
+    {
+      "q": "Defina el concepto de autoeficacia percibida de Bandura y diferéncielo de la expectativa de resultados.",
+      "model": "La autoeficacia es la valoración que hace el sujeto sobre su capacidad para organizar y ejecutar acciones necesarias para satisfacer exigencias específicas. Se diferencia de la expectativa de resultados en que esta última es la creencia de que una conducta determinada conducirá a un resultado concreto, independientemente de si el sujeto se siente capaz de realizarla.",
+      "keywords": [
+        "Bandura",
+        "autoeficacia",
+        "expectativa de resultados",
+        "capacidad percibida"
+      ]
+    },
+    {
+      "q": "Explique detalladamente las cuatro fuentes de formación de las expectativas de autoeficacia propuestas por Bandura.",
+      "model": "1) Logros de ejecución: experiencias pasadas de éxito/fracaso (la fuente más potente); 2) Experiencia vicaria: observación de éxitos/fracasos de otros en situaciones similares; 3) Persuasión verbal: sugerencias de otros sobre nuestra capacidad (la fuente más débil); 4) Activación emocional: intensidad y calidad de la emoción sentida ante la tarea.",
+      "keywords": [
+        "fuentes autoeficacia",
+        "logros de ejecución",
+        "experiencia vicaria",
+        "persuasión verbal",
+        "activación emocional"
+      ]
+    },
+    {
+      "q": "Analice los determinantes de la acción según la teoría de Heider (1958).",
+      "model": "Heider divide las causas en: 1) Fuerzas personales: motivación (intención y esfuerzo) y capacidad (habilidad); 2) Fuerzas ambientales: estables (dificultad de la tarea) o inestables (azar/suerte). La posibilidad de actuar depende de la capacidad y dificultad; la finalización depende de la motivación. A mayor contribución del entorno, menor responsabilidad personal atribuida.",
+      "keywords": [
+        "Heider",
+        "fuerzas personales",
+        "fuerzas ambientales",
+        "responsabilidad"
+      ]
+    },
+    {
+      "q": "Explique la dimensión de 'estabilidad' en el modelo de Weiner y cómo afecta a las expectativas futuras del sujeto.",
+      "model": "La estabilidad se refiere al grado en que las causas se perciben como constantes (habilidad, dificultad) o variables (esfuerzo, suerte). Si un éxito se atribuye a factores estables, se genera esperanza de éxito futuro; si se atribuye a inestables, no se espera repetir el resultado. Influye directamente en el cambio de expectativas tras el desempeño.",
+      "keywords": [
+        "Weiner",
+        "estabilidad",
+        "cambio de expectativas",
+        "habilidad",
+        "suerte"
+      ]
+    },
+    {
+      "q": "Relacione las dimensiones de Weiner (locus de causalidad y controlabilidad) con las reacciones afectivas y emociones sociales.",
+      "model": "El locus de causalidad influye en la intensidad del afecto (máximo en causas internas). La controlabilidad se vincula con emociones sociales: si la causa es incontrolable por el sujeto, genera compasión en otros; si es controlable y falla, genera ira. En el propio sujeto, el control genera culpa o vergüenza.",
+      "keywords": [
+        "Weiner",
+        "controlabilidad",
+        "locus de causalidad",
+        "emociones sociales",
+        "afecto"
+      ]
+    },
+    {
+      "q": "Describa el concepto de reactancia psicológica de Brehm y las tres fuentes de amenaza a la libertad.",
+      "model": "Es un estado de activación motivacional que surge cuando se limita la libertad de acción de una persona capaz de ejecutarla, impulsándola a restaurar dicha libertad. Fuentes: 1) Personales (otra persona impide la acción); 2) Impersonales (condiciones físicas como el clima); 3) Autoimpuestas (el sujeto se restringe a sí mismo).",
+      "keywords": [
+        "reactancia",
+        "Brehm",
+        "amenaza a la libertad",
+        "restauración"
+      ]
+    },
+    {
+      "q": "Analice los factores que determinan la magnitud de la reactancia psicológica en un individuo.",
+      "model": "La magnitud depende de: 1) Expectativa de libertad; 2) Importancia de la libertad amenazada para el sujeto; 3) Fuerza y legitimidad de la amenaza (la eliminación total produce máxima reactancia); 4) Implicación de otras libertades (especialmente la repetición en el tiempo).",
+      "keywords": [
+        "magnitud reactancia",
+        "expectativa",
+        "importancia",
+        "legitimidad",
+        "implicación"
+      ]
+    },
+    {
+      "q": "Diferencie entre las respuestas de restauración directa e indirecta de la libertad ante la reactancia.",
+      "model": "La restauración directa consiste en realizar exactamente la acción amenazada o prohibida. La restauración indirecta implica realizar una acción equivalente a la amenazada o adoptar una conducta que demuestre que, por implicación, el sujeto sería capaz de ejecutar la acción original.",
+      "keywords": [
+        "restauración directa",
+        "restauración indirecta",
+        "reactancia conductual"
+      ]
+    },
+    {
+      "q": "Relacione la reactancia psicológica con el modelo de personalidad de los Cinco Grandes (Big Five).",
+      "model": "La investigación sugiere que la dimensión de Cordialidad desempeña un papel central: existe una relación inversa, donde a menor cordialidad, mayor es el nivel de reactancia experimentado por el sujeto ante las amenazas a su libertad.",
+      "keywords": [
+        "Big Five",
+        "Cordialidad",
+        "reactancia",
+        "rasgos"
+      ]
+    },
+    {
+      "q": "Explique el fenómeno de la indefensión aprendida basándose en los experimentos originales de Seligman y Maier (1967).",
+      "model": "Se observó que perros expuestos a descargas eléctricas incontrolables e inevitables desarrollaban un deterioro en el aprendizaje posterior. Cuando se les daba la oportunidad de escapar, aceptaban pasivamente la descarga sin intentarlo. Esto demostró que la percepción de incontrolabilidad (no contingencia respuesta-resultado) genera una expectativa de fracaso futuro.",
+      "keywords": [
+        "indefensión aprendida",
+        "Seligman",
+        "incontrolabilidad",
+        "no contingencia"
+      ]
+    },
+    {
+      "q": "Describa los tres déficits o síntomas característicos de la indefensión aprendida.",
+      "model": "1) Motivacional: retraso o falta de inicio de respuestas voluntarias; 2) Cognitivo: interferencia o dificultad para aprender nuevas relaciones de contingencia; 3) Afectivo: estado de emocionabilidad elevada (miedo, ansiedad) que puede desembocar en depresión reactiva.",
+      "keywords": [
+        "déficit motivacional",
+        "déficit cognitivo",
+        "déficit afectivo",
+        "indefensión"
+      ]
+    },
+    {
+      "q": "Analice la reformulación atribucional de la indefensión de Abramson et al. (1978) y la dimensión de globalidad.",
+      "model": "Introduce que la expectativa de incontrolabilidad depende de la atribución causal del sujeto. La dimensión de globalidad (global vs específica) explica la generalización de los déficits a otras situaciones. Junto a la estabilidad (cronicidad) y la internalidad (autoestima), permite predecir la intensidad y duración de la depresión por indefensión.",
+      "keywords": [
+        "Abramson",
+        "reformulación atribucional",
+        "globalidad",
+        "depresión"
+      ]
+    },
+    {
+      "q": "Diferencie entre la indefensión universal y la indefensión personal según Abramson.",
+      "model": "La indefensión universal ocurre cuando el sujeto cree que el resultado es independiente de cualquier respuesta (propia o ajena). La indefensión personal ocurre cuando el sujeto cree que el resultado es independiente de sus respuestas, pero cree que otros sí podrían controlarlo. Esta última se asocia con baja autoestima y autoculpa.",
+      "keywords": [
+        "indefensión universal",
+        "indefensión personal",
+        "autoestima",
+        "autoculpa"
+      ]
+    },
+    {
+      "q": "Exponga los postulados centrales de la Teoría de la Desesperanza de Abramson et al. (1989).",
+      "model": "Define la desesperanza como una causa proximal suficiente de la depresión, compuesta por la doble expectativa de incontrolabilidad y de resultado negativo. Utiliza un modelo diátesis-estrés donde el 'estilo explicativo negativo' (tendencia a atribuciones internas, estables y globales ante eventos negativos) actúa como factor de vulnerabilidad.",
+      "keywords": [
+        "Teoría de la Desesperanza",
+        "estilo explicativo negativo",
+        "diátesis-estrés",
+        "resultado negativo"
+      ]
+    },
+    {
+      "q": "Explique el modelo integrador bifásico de Wortman y Brehm (1975) sobre las reacciones a la pérdida de control.",
+      "model": "Propone un proceso en dos fases: 1) Fase inicial de reactancia, donde el sujeto (con pocos ensayos de incontrolabilidad) aumenta su esfuerzo y arousal para recuperar el control; 2) Fase de indefensión, donde tras muchos ensayos fallidos, el sujeto acepta la incontrolabilidad y disminuye su actividad. La transición depende del número de ensayos y la importancia del resultado.",
+      "keywords": [
+        "Wortman y Brehm",
+        "modelo bifásico",
+        "número de ensayos",
+        "importancia del resultado"
+      ]
+    },
+    {
+      "q": "Discuta el papel del Locus de Control como moderador en el modelo bifásico de Wortman y Brehm.",
+      "model": "Los sujetos con locus de control interno experimentan una mayor intensidad tanto en la fase de reactancia (luchan más al inicio) como en la de indefensión (el impacto de la pérdida de control es más profundo al romper sus expectativas de autoeficacia) en comparación con los sujetos externos.",
+      "keywords": [
+        "moderador",
+        "locus de control interno",
+        "intensidad",
+        "Wortman y Brehm"
+      ]
+    },
+    {
+      "q": "Defina el estilo explicativo optimista frente al pesimista y su relación con la salud física.",
+      "model": "El optimista explica eventos negativos mediante causas externas, inestables y específicas. El pesimista usa causas internas, estables y globales. Los estilos optimistas se asocian con mejor mantenimiento de la salud y recuperación, mientras que el estilo pesimista es un factor de riesgo para la depresión y el deterioro físico ante eventos estresantes.",
+      "keywords": [
+        "estilo explicativo",
+        "optimismo",
+        "pesimismo",
+        "salud física"
+      ]
+    },
+    {
+      "q": "Analice las críticas de S. E. Taylor (1983) a las teorías de laboratorio sobre la indefensión.",
+      "model": "Taylor argumenta que las investigaciones de laboratorio son limitadas porque en el mundo real las personas tienen un abanico de respuestas mucho más amplio. Propone que la mente humana no busca el realismo puro, sino que utiliza 'ilusiones positivas' para distorsionar la realidad en beneficio propio, lo cual es altamente adaptativo.",
+      "keywords": [
+        "Taylor",
+        "crítica laboratorio",
+        "ilusiones positivas",
+        "adaptación"
+      ]
+    },
+    {
+      "q": "Describa los tres grandes tipos de ilusiones positivas identificados por Taylor.",
+      "model": "1) Sesgo de benevolencia (visión positiva de uno mismo); 2) Ilusión de control (creencia de que el mundo es controlable y que podemos influir en eventos aleatorios); 3) Optimismo no realista (creencia de que el futuro será favorable y que no ocurrirán eventos negativos personales).",
+      "keywords": [
+        "ilusiones positivas",
+        "benevolencia",
+        "ilusión de control",
+        "optimismo no realista"
+      ]
+    },
+    {
+      "q": "Explique cómo los sesgos cognitivos de egocentricidad y hedonismo facilitan el mantenimiento de las ilusiones positivas.",
+      "model": "La ilusión de control es una manifestación del sesgo de egocentricidad (centrar el mundo en uno mismo). El sesgo hedonista (atribuirse éxitos y negar fracasos), junto al falso consenso y falsa peculiaridad, facilitan el mantenimiento de la benevolencia o visión positiva de uno mismo, protegiendo el bienestar emocional.",
+      "keywords": [
+        "sesgos",
+        "egocentricidad",
+        "hedonismo",
+        "mantenimiento ilusiones"
+      ]
+    },
+    {
+      "q": "Sintetice el concepto de 'conservadurismo cognitivo' y su función en la personalidad.",
+      "model": "Es la tendencia del sistema cognitivo a proteger las creencias y esquemas ya establecidos, filtrando o reinterpretando la información contradictoria. Su función es proporcionar estabilidad y coherencia a la identidad personal, evitando cambios bruscos en la estructura del yo ante evidencias externas.",
+      "keywords": [
+        "conservadurismo cognitivo",
+        "Greenwald",
+        "estabilidad",
+        "esquemas"
+      ]
+    },
+    {
+      "q": "Relacione el 'sesgo de perspectiva actor-observador' con la atribución causal.",
+      "model": "Es la tendencia de los actores a atribuir sus propias acciones a factores ambientales (situacionales), mientras que los observadores tienden a atribuir las mismas acciones a factores personales (disposicionales) del actor. Es uno de los sesgos atribucionales fundamentales en la interacción social.",
+      "keywords": [
+        "actor-observador",
+        "sesgo atribucional",
+        "situacional",
+        "disposicional"
+      ]
+    },
+    {
+      "q": "Explique el 'sesgo fundamental o error atributivo fundamental'.",
+      "model": "Consiste en la tendencia general a sobreestimar la importancia de los factores personales o rasgos de personalidad al explicar la conducta de los demás, minimizando la influencia de los factores situacionales o ambientales.",
+      "keywords": [
+        "error fundamental",
+        "atribución",
+        "factores personales",
+        "situación"
+      ]
+    },
+    {
+      "q": "Analice la importancia del 'sentimiento de control' para la adaptación humana según el texto.",
+      "model": "El sentimiento de control genera seguridad sobre las consecuencias futuras y refuerza la creencia de eficacia personal. Es una necesidad adaptativa que permite a la persona influir en su entorno, reducir la ansiedad ante lo incierto y promover un afrontamiento activo frente a las dificultades.",
+      "keywords": [
+        "sentimiento de control",
+        "adaptación",
+        "seguridad",
+        "influencia"
+      ]
+    },
+    {
+      "q": "Describa el impacto de la autoeficacia sobre los patrones de pensamiento y las emociones.",
+      "model": "La autoeficacia determina qué tareas seleccionamos (evitamos las que superan nuestra capacidad percibida), cuánto esfuerzo invertimos y cuánto persistimos ante obstáculos. Influye en los patrones de pensamiento (pensamientos de apoyo vs. de fracaso) y en el nivel de estrés y ansiedad experimentado ante las demandas ambientales.",
+      "keywords": [
+        "autoeficacia",
+        "persistencia",
+        "selección de tareas",
+        "pensamiento"
+      ]
+    },
+    {
+      "q": "Explique la relación entre la 'legitimidad de la fuente' y la magnitud de la reactancia.",
+      "model": "La legitimidad de la fuente que amenaza la libertad puede tener efectos contradictorios: puede aumentar la reacción motivacional (si se percibe como una interferencia injusta) o puede limitar los efectos de la reactancia si el sujeto reconoce la autoridad o la validez de la restricción, facilitando la obediencia.",
+      "keywords": [
+        "legitimidad",
+        "fuente de amenaza",
+        "reactancia",
+        "autoridad"
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Modelo Cognitivo General",
+      "q": "¿Por qué se afirma que la cognición humana es psicológica en lugar de meramente lógica?",
+      "a": "Porque el sujeto no almacena información de forma pasiva, sino que participa activamente organizando, codificando, completando lagunas y personalizando la información que recibe."
+    },
+    {
+      "cat": "Modelo Cognitivo General",
+      "q": "¿Qué caracteriza al conocimiento humano como un proceso 'inferencial'?",
+      "a": "Se caracteriza por ser una forma de razonamiento deductivo que permite al individuo ir continuamente más allá de la información explícita suministrada."
+    },
+    {
+      "cat": "Heurísticos Cognitivos",
+      "q": "¿En qué condiciones es más probable que el ser humano emplee heurísticos cognitivos?",
+      "a": "Se emplean cuando el tiempo es escaso, la información es insuficiente o la relevancia del tema para el sujeto es baja."
+    },
+    {
+      "cat": "Heurísticos Cognitivos",
+      "q": "¿Cuál es la principal ventaja y el principal inconveniente de usar heurísticos según el texto?",
+      "a": "La ventaja es que son reglas sencillas y rápidas para solucionar problemas; el inconveniente es que no siempre conducen a soluciones lógicamente perfectas."
+    },
+    {
+      "cat": "Sesgos Cognitivos",
+      "q": "¿Cuáles son los tres tipos principales de sesgos cognitivos propuestos por Greenwald (1980)?",
+      "a": "Los tres tipos principales son: egocentricidad, benevolencia y conservadurismo cognitivo."
+    },
+    {
+      "cat": "Sesgos Atribucionales",
+      "q": "¿En qué consiste el sesgo atribucional de 'falso consenso'?",
+      "a": "Es la tendencia a sobreestimar el grado en que los demás comparten nuestras propias opiniones, creencias o comportamientos."
+    },
+    {
+      "cat": "Sesgos Atribucionales",
+      "q": "¿Qué diferencia al sesgo fundamental o error atributivo fundamental de otros sesgos?",
+      "a": "Consiste en la tendencia a sobreestimar la importancia de los factores personales (disposicionales) frente a los ambientales al explicar la conducta ajena."
+    },
+    {
+      "cat": "Sesgos Atribucionales",
+      "q": "¿Cómo funciona el sesgo de perspectiva actor-observador?",
+      "a": "Es la tendencia a atribuir nuestras propias conductas a causas externas (situacionales) y las conductas de los demás a causas internas (disposicionales)."
+    },
+    {
+      "cat": "Sesgos Atribucionales",
+      "q": "¿Cuál es la función del sesgo hedonista o autosirviente?",
+      "a": "Atribuir los éxitos propios a causas internas y los fracasos a causas externas para proteger la autoestima."
+    },
+    {
+      "cat": "Control y Adaptación",
+      "q": "¿Qué importancia adaptativa tiene el sentimiento de control sobre la propia vida?",
+      "a": "Genera seguridad sobre las consecuencias futuras y refuerza la creencia de que la persona puede influir eficazmente en su entorno."
+    },
+    {
+      "cat": "Modelo de Expectativa-Valor",
+      "q": "¿Qué postula el modelo de expectativa-valor de Feather (1982) respecto a la conducta?",
+      "a": "Que la probabilidad de una conducta depende de la función entre el valor asociado a la consecuencia (refuerzo) y la probabilidad percibida de que ocurra (expectativa)."
+    },
+    {
+      "cat": "Expectativas de Control",
+      "q": "¿Qué dos constructos cognitivos han acaparado la mayor investigación sobre la necesidad de control?",
+      "a": "El locus de control (percepción de control) y la expectativa de autoeficacia."
+    },
+    {
+      "cat": "Locus de Control",
+      "q": "¿Cómo define J.B. Rotter (1966) el concepto de locus de control?",
+      "a": "Como la creencia de una persona sobre si su respuesta influirá o no en la consecución de un refuerzo determinado."
+    },
+    {
+      "cat": "Locus de Control",
+      "q": "¿Qué diferencia al locus de control interno del locus de control externo?",
+      "a": "El interno cree que los refuerzos dependen de sus propias conductas; el externo cree que dependen de factores ajenos como la suerte o el contexto."
+    },
+    {
+      "cat": "Locus de Control",
+      "q": "¿Qué relación existe entre el locus de control interno y el bienestar psicológico?",
+      "a": "Se asocia positivamente con indicadores de bienestar subjetivo y felicidad, y negativamente con la depresión."
+    },
+    {
+      "cat": "Locus de Control",
+      "q": "¿Cómo perciben las situaciones de estrés los sujetos con locus de control interno?",
+      "a": "Las perciben más como un reto o desafío que como una amenaza, sintiendo que poseen recursos suficientes para afrontarlas."
+    },
+    {
+      "cat": "Locus de Control y Salud",
+      "q": "¿Qué beneficios tiene el locus interno en el ámbito de la salud física?",
+      "a": "Los sujetos contraen menos enfermedades y muestran más conductas de prevención y recuperación activa."
+    },
+    {
+      "cat": "Autoeficacia Percibida",
+      "q": "¿Cómo define Bandura (1977) la expectativa de autoeficacia?",
+      "a": "Como la capacidad percibida por un sujeto de poder hacer frente a situaciones específicas satisfactoriamente."
+    },
+    {
+      "cat": "Autoeficacia Percibida",
+      "q": "¿Cuál es la diferencia crítica entre autoeficacia y expectativa de resultados?",
+      "a": "La autoeficacia es el juicio sobre la propia capacidad; la de resultados es el grado en que se cree que una conducta llevará a un fin deseado."
+    },
+    {
+      "cat": "Autoeficacia Percibida",
+      "q": "¿De qué manera influyen los juicios de autoeficacia en la conducta del individuo?",
+      "a": "Determinan qué conductas se adoptan, cuánto se persiste, cuánto esfuerzo se invierte y qué tareas se seleccionan o evitan."
+    },
+    {
+      "cat": "Fuentes de Autoeficacia",
+      "q": "¿Cuál es la fuente más potente para la formación de expectativas de autoeficacia personal?",
+      "a": "Los logros de ejecución (éxitos y fracasos experimentados personalmente en el pasado)."
+    },
+    {
+      "cat": "Fuentes de Autoeficacia",
+      "q": "¿En qué consiste la fuente de 'experiencia vicaria' según Bandura?",
+      "a": "En la observación de los éxitos y fracasos de otras personas en situaciones similares a la que enfrenta el sujeto."
+    },
+    {
+      "cat": "Fuentes de Autoeficacia",
+      "q": "¿Por qué la persuasión verbal se considera una fuente débil de autoeficacia?",
+      "a": "Porque se basa únicamente en la sugerencia externa de capacidad, lo que genera expectativas poco sólidas frente a la experiencia real."
+    },
+    {
+      "cat": "Fuentes de Autoeficacia",
+      "q": "¿Cómo afecta la activación emocional a la percepción de autoeficacia?",
+      "a": "La calidad e intensidad de la emoción sentida en una situación sirve como señal informativa para que el sujeto evalúe su propia competencia."
+    },
+    {
+      "cat": "Atribución Causal",
+      "q": "¿De qué se ocupa el estudio de la atribución en psicología de la personalidad?",
+      "a": "De las inferencias causales que las personas utilizan para explicar los resultados de sus conductas o las de los demás a posteriori."
+    },
+    {
+      "cat": "Teoría de Heider",
+      "q": "¿Cuáles son las dos clases generales de causas en la teoría de Heider (1958)?",
+      "a": "Fuerzas personales (motivación y capacidad) y fuerzas ambientales (dificultad de la tarea y suerte)."
+    },
+    {
+      "cat": "Teoría de Heider",
+      "q": "¿Qué componentes integran la 'motivación' según el modelo de Heider?",
+      "a": "La intención (componente direccional) y el esfuerzo (componente cuantitativo)."
+    },
+    {
+      "cat": "Teoría de Heider",
+      "q": "¿Qué factores determinan, según Heider, la posibilidad de emprender una acción?",
+      "a": "Viene determinada por la interacción entre la capacidad del sujeto y la dificultad de la tarea."
+    },
+    {
+      "cat": "Teoría de Heider",
+      "q": "¿De qué depende la finalización exitosa de una acción en el modelo de Heider?",
+      "a": "Depende fundamentalmente de la motivación del individuo (intención y esfuerzo)."
+    },
+    {
+      "cat": "Teoría de Heider",
+      "q": "¿Cómo se relaciona la contribución del entorno con la responsabilidad personal en Heider?",
+      "a": "Cuanto mayor sea la contribución percibida de las fuerzas ambientales, menor será la responsabilidad personal atribuida al resultado."
+    },
+    {
+      "cat": "Teoría de Weiner",
+      "q": "¿Qué dimensiones iniciales propuso Weiner (1972) para las atribuciones causales?",
+      "a": "Locus de causalidad (interno-externo) y Estabilidad (estable-inestable)."
+    },
+    {
+      "cat": "Teoría de Weiner",
+      "q": "¿A qué hace referencia la dimensión de 'estabilidad' en el modelo de Weiner?",
+      "a": "Al grado en que el sujeto considera que la causa de su conducta es invariante o duradera en el tiempo."
+    },
+    {
+      "cat": "Teoría de Weiner",
+      "q": "¿Qué elementos se clasifican como 'internos-estables' en el modelo de Weiner?",
+      "a": "La habilidad o capacidad de la persona."
+    },
+    {
+      "cat": "Teoría de Weiner",
+      "q": "¿Qué elementos se clasifican como 'externos-inestables' en el modelo de Weiner?",
+      "a": "El azar o la suerte."
+    },
+    {
+      "cat": "Teoría de Weiner",
+      "q": "¿Qué tercera dimensión añadió Weiner en 1974 a su modelo?",
+      "a": "La dimensión de intencionalidad o controlabilidad."
+    },
+    {
+      "cat": "Teoría de Weiner",
+      "q": "¿Cómo define Weiner el factor de 'controlabilidad'?",
+      "a": "Como el grado de control que una persona cree tener sobre la causa de un resultado (si depende de su voluntad o no)."
+    },
+    {
+      "cat": "Teoría de Weiner",
+      "q": "¿Qué factor causal es típicamente interno, inestable y controlable?",
+      "a": "El esfuerzo inmediato o puntual."
+    },
+    {
+      "cat": "Teoría de Weiner",
+      "q": "¿Qué factor causal es típicamente interno, estable e incontrolable?",
+      "a": "La capacidad o aptitud innata."
+    },
+    {
+      "cat": "Atribución y Emoción",
+      "q": "¿Cómo influye el 'locus de causalidad' en las reacciones afectivas según Weiner?",
+      "a": "Determina la intensidad del afecto: las reacciones son máximas cuando la causa es interna y mínimas si es externa."
+    },
+    {
+      "cat": "Atribución y Expectativas",
+      "q": "¿Cuál es el efecto de la 'estabilidad' causal sobre las expectativas de éxito futuro?",
+      "a": "Si el éxito se atribuye a factores estables, se genera una esperanza de éxito futuro; si es a inestables, no se espera repetir el resultado."
+    },
+    {
+      "cat": "Atribución y Emoción",
+      "q": "¿Con qué tipo de emociones se relaciona específicamente la dimensión de 'controlabilidad'?",
+      "a": "Se relaciona con emociones sociales como la ira, compasión, culpa y vergüenza."
+    },
+    {
+      "cat": "Atribución y Emoción",
+      "q": "¿Cuándo experimentan los demás 'ira' hacia un sujeto según la teoría de Weiner?",
+      "a": "Cuando perciben que el sujeto no cumplió con lo esperado debido a una causa que estaba bajo su control."
+    },
+    {
+      "cat": "Atribución y Emoción",
+      "q": "¿Qué diferencia la emoción de 'culpa' de la de 'vergüenza' en términos de control?",
+      "a": "La culpa surge ante una causa controlable (falta de esfuerzo), mientras que la vergüenza ante una incontrolable (falta de capacidad)."
+    },
+    {
+      "cat": "Reactancia Psicológica",
+      "q": "¿En qué consiste el estado motivacional de 'reactancia' propuesto por Brehm (1966)?",
+      "a": "Es una activación dirigida a recuperar la libertad de acción cuando esta se ve amenazada o limitada externamente."
+    },
+    {
+      "cat": "Reactancia Psicológica",
+      "q": "¿Cuáles son los tres tipos de fuentes de amenaza identificados en la reactancia?",
+      "a": "Personales, impersonales y autoimpuestas."
+    },
+    {
+      "cat": "Reactancia Psicológica",
+      "q": "¿De qué depende la magnitud de la reactancia experimentada por una persona?",
+      "a": "De la expectativa, importancia, fuerza, legitimidad de la amenaza y del número de libertades implicadas."
+    },
+    {
+      "cat": "Reactancia Psicológica",
+      "q": "¿Qué es la 'amenaza vicaria' en la teoría de la reactancia?",
+      "a": "Es la activación de reactancia al observar a otra persona sufrir una amenaza y sentir, por similitud, que la propia libertad peligra."
+    },
+    {
+      "cat": "Reactancia Psicológica",
+      "q": "¿Cuál es la respuesta subjetiva más común de 'reevaluación' ante una amenaza?",
+      "a": "Incrementar el atractivo o deseabilidad del resultado o conducta que ha sido prohibida o eliminada."
+    },
+    {
+      "cat": "Reactancia Psicológica",
+      "q": "¿Qué diferencia la restauración 'directa' de la 'indirecta' de la libertad?",
+      "a": "La directa implica realizar la acción prohibida; la indirecta implica realizar una acción equivalente o demostrar capacidad de ejecución."
+    },
+    {
+      "cat": "Reactancia y Personalidad",
+      "q": "¿Qué relación existe entre el locus de control y el nivel de reactancia?",
+      "a": "Los sujetos con locus de control interno experimentan mayor reactancia que los de locus externo."
+    },
+    {
+      "cat": "Reactancia y Personalidad",
+      "q": "¿Cómo se vincula la reactancia con la dimensión de 'cordialidad' del Big Five?",
+      "a": "Existe una relación inversa: a menor cordialidad, mayor tendencia a experimentar reactancia."
+    },
+    {
+      "cat": "Indefensión Aprendida",
+      "q": "¿Cuál es el origen experimental del concepto de indefensión aprendida?",
+      "a": "Las investigaciones de Seligman y Maier (1967) con perros expuestos a descargas eléctricas incontrolables."
+    },
+    {
+      "cat": "Indefensión Aprendida",
+      "q": "¿Qué expresa la hipótesis central de la indefensión aprendida de Seligman (1975)?",
+      "a": "Que los organismos que perciben incontrolabilidad desarrollan la expectativa de que sus acciones no influirán en los resultados futuros."
+    },
+    {
+      "cat": "Indefensión Aprendida",
+      "q": "¿Cuáles son los tres tipos de déficits característicos de la indefensión?",
+      "a": "Déficits motivacionales, cognitivos y afectivos."
+    }
+  ]
+}

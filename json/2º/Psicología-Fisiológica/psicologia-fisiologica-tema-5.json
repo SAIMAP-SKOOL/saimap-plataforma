@@ -1,0 +1,2453 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es correcto afirmar que la codificación es el único subproceso incluido estrictamente dentro del aprendizaje según el modelo de procesamiento de la información?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 0,
+      "hint": "Revisa la distinción entre subprocesos de aprendizaje y de memoria en el modelo de Carlson.",
+      "explanation": "Según Carlson (2018), la codificación pertenece al aprendizaje, mientras que consolidación, almacenamiento y recuperación pertenecen a la memoria."
+    },
+    {
+      "q": "¿Es la sensibilización un proceso que se acompaña de una disminución de la transmisión sináptica tras la exposición repetitiva a un estímulo amenazante?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 1,
+      "hint": "Distingue entre el aumento o disminución de la respuesta en el aprendizaje no asociativo.",
+      "explanation": "La sensibilización implica un aumento de la transmisión sináptica; es la habituación la que conlleva una disminución de la misma."
+    },
+    {
+      "q": "¿Es el fenómeno de la recodificación definido por Tulving como las operaciones que ocurren exclusivamente durante la fase de codificación sensorial?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 1,
+      "hint": "Fíjate en el momento temporal en el que Tulving sitúa este proceso u operaciones cognitivas.",
+      "explanation": "Tulving define la recodificación como procesos que ocurren después de la codificación original, provocando cambios en las huellas."
+    },
+    {
+      "q": "¿La memoria sensorial posee una capacidad limitada de procesamiento y una duración que oscila entre los 2 y los 5 segundos de persistencia?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 1,
+      "hint": "Consulta los parámetros temporales y de capacidad descritos en el modelo multialmacén para este registro.",
+      "explanation": "La memoria sensorial tiene capacidad ilimitada pero una duración muy breve, de apenas 200 a 500 milisegundos."
+    },
+    {
+      "q": "¿Es la potenciación a largo plazo considerada la manifestación biológica del principio de Hebb sobre la activation sináptica conjunta?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 0,
+      "hint": "Relaciona el postulado de 1949 de Donald Hebb con los hallazgos experimentales en el hipocampo.",
+      "explanation": "La PLP valida biológicamente el principio de Hebb: las sinapsis que se activan juntas refuerzan su conexión y responden juntas."
+    },
+    {
+      "q": "¿Los receptores NMDA permiten la entrada de iones calcio únicamente cuando la membrana postsináptica se encuentra en estado de reposo?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 1,
+      "hint": "Considera la condición necesaria para que el tapón de magnesio sea expulsado del canal del receptor.",
+      "explanation": "Para que entre calcio, la membrana debe estar despolarizada para expulsar el magnesio que bloquea el receptor NMDA."
+    },
+    {
+      "q": "¿La inserción de receptores AMPA en la membrana postsináptica es el mecanismo fundamental para que termine de instaurarse la PLP?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 0,
+      "hint": "Identifica qué tipo de receptor ionotrópico se traslada desde el interior de la célula a la espina dendrítica.",
+      "explanation": "La inserción de receptores AMPA fortalece la sinapsis al permitir mayores potenciales excitadores postsinápticos ante el glutamato."
+    },
+    {
+      "q": "¿El hipocampo es el lugar donde se almacenan permanentemente los recuerdos de la memoria declarativa a largo plazo?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 1,
+      "hint": "Distingue entre las estructuras que consolidan la información y aquellas que actúan como almacén final.",
+      "explanation": "El hipocampo interviene en la consolidación, pero el almacén fundamental de la memoria declarativa reside en la corteza cerebral."
+    },
+    {
+      "q": "¿La amígdala resulta esencial para el establecimiento de respuestas emocionales condicionadas a través del condicionamiento clásico?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 0,
+      "hint": "Analiza el papel de esta estructura en la evaluación de estímulos amenazantes y el aprendizaje de miedo.",
+      "explanation": "La amígdala procesa y modula las respuestas emocionales, siendo clave en la consolidación de memorias de miedo condicionado."
+    },
+    {
+      "q": "¿Los ganglios basales participan principalmente en la ejecución de respuestas motoras voluntarias y deliberadas de primera fase?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 1,
+      "hint": "Compara las conexiones transcorticales directas con las conexiones a través del cuerpo estriado.",
+      "explanation": "Los ganglios basales se encargan de respuestas automáticas y hábitos; las respuestas voluntarias dependen de conexiones transcorticales."
+    },
+    {
+      "q": "¿La vía dorsal de la corteza visual de asociación es la encargada de la identificación de objetos y se denomina 'vía del qué'?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 1,
+      "hint": "Diferencia las funciones de la zona temporal inferior frente a la zona parietal posterior en la percepción.",
+      "explanation": "La vía dorsal es la 'vía del dónde' (localización); la vía ventral es la 'vía del qué' (identificación)."
+    },
+    {
+      "q": "¿El área facial fusiforme se localiza en la vía ventral y su lesión puede provocar la incapacidad de reconocer rostros?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 0,
+      "hint": "Relaciona esta región específica de la corteza temporal con el trastorno denominado prosopagnosia.",
+      "explanation": "El área facial fusiforme es crítica para el reconocimiento facial y su daño es la causa neuroanatómica de la prosopagnosia."
+    },
+    {
+      "q": "¿Defiende Fuster que la memoria es una propiedad funcional de la corteza cerebral organizada en redes jerárquicas llamadas cognitos?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 0,
+      "hint": "Revisa los postulados del paradigma reticular frente a los modelos de almacenamiento localista.",
+      "explanation": "Fuster propone que la memoria surge de redes neuronales distribuidas y jerarquizadas en la corteza, no en áreas aisladas."
+    },
+    {
+      "q": "¿La jerarquía ejecutiva de Fuster incluye, de lo más concreto a lo más abstracto, los programas de acción y las acciones conceptuales?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 0,
+      "hint": "Observa el gradiente de complejidad en la corteza frontal descrito en el modelo reticular.",
+      "explanation": "En la corteza frontal, la jerarquía asciende desde actos simples motores hasta planes y acciones conceptuales abstractas."
+    },
+    {
+      "q": "¿La amnesia anterógrada implica una incapacidad para recuperar información almacenada antes de que se produjera el daño cerebral?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 1,
+      "hint": "Distingue entre la formación de nuevos recuerdos y la recuperación de recuerdos antiguos tras una lesión.",
+      "explanation": "La amnesia anterógrada es la incapacidad para crear nuevos recuerdos; la retrógrada es la incapacidad para evocar los antiguos."
+    },
+    {
+      "q": "¿La ley de Ribot establece que en la amnesia retrógrada se pierden primero y en mayor medida los recuerdos más antiguos?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 1,
+      "hint": "Recuerda el gradiente temporal de la pérdida de memoria en pacientes con daño cerebral orgánico.",
+      "explanation": "La ley de Ribot indica que se pierden antes los recuerdos más recientes, conservándose mejor los más antiguos."
+    },
+    {
+      "q": "¿El paciente HM mantenía intacta su capacidad para formar nuevas memorias declarativas tras la extirpación bilateral del hipocampo?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 1,
+      "hint": "Analiza las consecuencias clínicas de la cirugía realizada a Henry Molaison para tratar su epilepsia.",
+      "explanation": "HM sufrió una amnesia anterógrada profunda, perdiendo la capacidad de formar nuevas memorias declarativas (episódicas)."
+    },
+    {
+      "q": "¿Es la memoria de trabajo o memoria operativa una función procesada principalmente en la corteza prefrontal dorsolateral?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 0,
+      "hint": "Identifica la región cortical encargada de la manipulación activa de la información a corto plazo.",
+      "explanation": "La corteza prefrontal dorsolateral es clave para la manipulación y mantenimiento temporal de datos en la memoria de trabajo."
+    },
+    {
+      "q": "¿La estimulación de baja frecuencia en la vía perforante es capaz de inducir una potenciación a largo plazo estable?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 1,
+      "hint": "Considera la necesidad de sumación de potenciales para superar el umbral de activación del receptor NMDA.",
+      "explanation": "La PLP requiere estimulación de alta frecuencia para que los potenciales se sumen y despolaricen la membrana postsináptica."
+    },
+    {
+      "q": "¿La memoria emocional y la procedimental forman parte de la categoría cualitativa denominada memoria no declarativa?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 0,
+      "hint": "Clasifica los tipos de memoria según si su adquisición y recuperación requieren o no consciencia.",
+      "explanation": "La memoria no declarativa o implícita abarca habilidades motoras (procedimental), condicionamiento emocional y perceptivo."
+    },
+    {
+      "q": "¿El aprendizaje relacional es considerado la forma más simple de aprendizaje asociativo en los modelos de Carlson?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 1,
+      "hint": "Compara la complejidad del aprendizaje relacional con el perceptivo o el estímulo-respuesta.",
+      "explanation": "El aprendizaje relacional es el más complejo de los asociativos, pues requiere integrar relaciones entre múltiples estímulos."
+    },
+    {
+      "q": "¿Las células de lugar y las células de cuadrícula son neuronas hipocampales que contribuyen a la formación de mapas cognitivos?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 0,
+      "hint": "Revisa los tipos celulares descubiertos en el hipocampo relacionados con la navegación espacial.",
+      "explanation": "Estas células responden a ubicaciones específicas, permitiendo al cerebro crear una representación interna del espacio físico."
+    },
+    {
+      "q": "¿La memoria semántica se refiere al conocimiento de hechos generales y conceptos, sin vinculación con el contexto biográfico?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 0,
+      "hint": "Distingue entre el 'saber qué' conceptual y el recuerdo de experiencias personales situadas en el tiempo.",
+      "explanation": "La memoria semántica codifica conocimiento de hechos, mientras que la episódica se encarga de los sucesos biográficos."
+    },
+    {
+      "q": "¿Es la corteza entorrinal el punto de origen de los axones que conforman la vía perforante hacia el giro dentado?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 0,
+      "hint": "Identifica la estructura cortical que envía la información sensorial procesada hacia la formación hipocámpica.",
+      "explanation": "Lømo demostró que la estimulación de los axones que vienen de la corteza entorrinal induce PLP en las células del giro dentado."
+    },
+    {
+      "q": "¿Los cambios estructurales tras la PLP incluyen la transformación de espinas dendríticas delgadas en espinas gruesas con forma de hongo?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación errónea.",
+        "No se sabe con certeza."
+      ],
+      "correct": 0,
+      "hint": "Considera las modificaciones morfológicas permanentes que ocurren en la neurona postsináptica.",
+      "explanation": "La PLP induce cambios físicos como el engrosamiento de espinas dendríticas y el crecimiento de nuevas conexiones sinápticas."
+    },
+    {
+      "q": "Selecciona la opción correcta respecto al subproceso de consolidación en el sistema de memoria:",
+      "options": [
+        "Transforma la información sensorial en representaciones mentales asimilables.",
+        "Refuerza los cambios iniciales mediante la transferencia a la memoria a corto plazo.",
+        "Organiza la información en esquemas complejos dentro de la memoria a largo plazo."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre el registro inicial del estímulo y el proceso que estabiliza la huella de memoria inmediata.",
+      "explanation": "La consolidación sigue a la codificación y permite que los cambios se refuercen para su posterior almacenamiento permanente."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre el aprendizaje motor según las descripciones técnicas del texto:",
+      "options": [
+        "Es un tipo de aprendizaje no asociativo basado en la exposición repetida a estímulos.",
+        "Consiste en una forma especial de aprendizaje relacional que no requiere guía sensorial.",
+        "Implica la coordinación de movimientos a través de la práctica y requiere guía sensorial."
+      ],
+      "correct": 2,
+      "hint": "Analiza los componentes necesarios para la adquisición de habilidades físicas complejas.",
+      "explanation": "El aprendizaje motor es un tipo de estímulo-respuesta que necesita la interacción con el entorno y la retroalimentación sensorial."
+    },
+    {
+      "q": "Selecciona la opción correcta en relación con las características de la memoria a largo plazo:",
+      "options": [
+        "Tiene una duración limitada de minutos y una capacidad restringida de almacenamiento.",
+        "Es siempre consciente y su contenido se limita exclusivamente a la información episódica.",
+        "Posee capacidad ilimitada y puede ser tanto de naturaleza consciente como no consciente."
+      ],
+      "correct": 2,
+      "hint": "Evalúa los parámetros de almacenamiento y los tipos de contenido (declarativo/no declarativo) que alberga.",
+      "explanation": "La memoria a largo plazo no tiene límites conocidos de capacidad y engloba tanto el saber declarativo como el procedimental."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la función del receptor NMDA en la potenciación a largo plazo:",
+      "options": [
+        "Se activa por el neurotransmisor GABA y permite la salida masiva de iones potasio.",
+        "Es un canal iónico dependiente de voltaje y neurotransmisor que controla la entrada de calcio.",
+        "Permite la entrada de magnesio a la célula para estabilizar el potencial de membrana postsináptico."
+      ],
+      "correct": 1,
+      "hint": "Recuerda las dos condiciones sine qua non (química y eléctrica) para la apertura de este canal específico.",
+      "explanation": "El receptor NMDA es único porque requiere glutamato y despolarización simultánea para expulsar el magnesio y dejar pasar el calcio."
+    },
+    {
+      "q": "Selecciona la opción correcta respecto al papel del núcleo lateral de la amígdala:",
+      "options": [
+        "Es el responsable de evocar la respuesta motora de huida conectando con el hipotálamo.",
+        "Es el lugar donde convergen las informaciones sensoriales para fortalecer sinapsis débiles.",
+        "Actúa como filtro sensorial primario antes de que la información llegue a la corteza auditiva."
+      ],
+      "correct": 1,
+      "hint": "Considera dónde ocurre el fenómeno de la PLP durante el condicionamiento clásico de miedo.",
+      "explanation": "En el núcleo lateral convergen el estímulo condicionado e incondicionado, produciéndose la potenciación que crea la asociación."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre el ciclo percepción-acción del modelo de Fuster:",
+      "options": [
+        "Establece que la percepción y la acción son procesos aislados que nunca se influyen.",
+        "Postula que la información perceptual guía la acción y esta a su vez genera nueva percepción.",
+        "Indica que el ciclo solo se activa ante estímulos innatos procesados en la corteza primaria."
+      ],
+      "correct": 1,
+      "hint": "Analiza la naturaleza recíproca de las conexiones entre las cortezas posterior y frontal.",
+      "explanation": "El ciclo percepción-acción integra ambos procesos de forma continua, donde cada uno retroalimenta y ajusta al otro."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la memoria semántica en el contexto de la patología:",
+      "options": [
+        "Su pérdida se asocia específicamente con lesiones graves en la corteza motora primaria.",
+        "Se almacena fundamentalmente en la región anterolateral del lóbulo temporal neocortical.",
+        "Se mantiene intacta en casos de demencia semántica a pesar del deterioro del lenguaje."
+      ],
+      "correct": 1,
+      "hint": "Identifica la zona de la neocorteza que, al dañarse, provoca la pérdida del significado de las palabras y conceptos.",
+      "explanation": "La región anterolateral del lóbulo temporal es esencial para el conocimiento semántico, como demuestra la clínica de su demencia."
+    },
+    {
+      "q": "Selecciona la opción correcta respecto a los hallazgos en el laberinto acuático de Morris:",
+      "options": [
+        "El hipotálamo es la estructura crítica para que el animal encuentre la plataforma.",
+        "El aprendizaje relacional (partir de distintos puntos) requiere de un hipocampo íntegro.",
+        "El aprendizaje estímulo-respuesta depende exclusivamente de la neurogénesis hipocámpica."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre saber realizar una ruta fija y poseer un mapa cognitivo flexible del entorno.",
+      "explanation": "Si el animal parte de localizaciones variables, debe usar claves espaciales relacionales, tarea que depende del hipocampo."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la fase de automatización del aprendizaje motor:",
+      "options": [
+        "Los ganglios basales dejan de intervenir y el control pasa a ser puramente prefrontal.",
+        "La conducta se realiza de forma lenta y pausada requiriendo una toma de decisiones constante.",
+        "Los ganglios basales asumen el control y la ejecución se vuelve rápida, precisa y fluida."
+      ],
+      "correct": 2,
+      "hint": "Observa el cambio de rol entre la corteza prefrontal y el cuerpo estriado al consolidarse un hábito.",
+      "explanation": "Al automatizarse una conducta, la corteza prefrontal cede el control a los ganglios basales, permitiendo una ejecución experta."
+    },
+    {
+      "q": "Selecciona la opción correcta respecto a la jerarquía perceptual de la memoria según Fuster:",
+      "options": [
+        "Va desde los actos simples innatos en la corteza frontal hasta los planes de acción.",
+        "Se localiza en la corteza posterior e incluye desde sensaciones simples hasta conceptos.",
+        "Se sitúa en el sistema límbico y procesa únicamente información emocional y visceral."
+      ],
+      "correct": 1,
+      "hint": "Fíjate en la ubicación anatómica y los niveles de abstracción de los recuerdos adquiridos por los sentidos.",
+      "explanation": "La jerarquía perceptual reside en la corteza posterior y asciende desde lo concreto (sensorial) a lo abstracto (semántico/conceptual)."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la estructura del hipocampo implicada en la PLP:",
+      "options": [
+        "La vía perforante conecta la corteza motora con las células piramidales del área CA3.",
+        "La estimulación de alta intensidad ocurre en los axones que van al giro dentado.",
+        "Los potenciales excitadores postsinápticos se registran únicamente en el subículo."
+      ],
+      "correct": 1,
+      "hint": "Identifica los elementos del circuito clásico descrito por Lømo en sus experimentos originales.",
+      "explanation": "La vía perforante nace en la corteza entorrinal y proyecta al giro dentado, donde se induce y registra la potenciación."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre los cambios presinápticos en la potenciación a largo plazo:",
+      "options": [
+        "Se produce una reducción en la síntesis de vesículas para evitar la excitotoxicidad.",
+        "Ocurre un aumento significativo en la cantidad de glutamato liberado por el terminal.",
+        "El terminal presináptico se retrae para permitir el crecimiento de la espina dendrítica."
+      ],
+      "correct": 1,
+      "hint": "Considera cómo la neurona emisora contribuye a fortalecer la eficacia de la transmisión sináptica.",
+      "explanation": "Además de los cambios postsinápticos, la PLP conlleva un aumento del neurotransmisor liberado (glutamato) desde el terminal presináptico."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la memoria declarativa según los criterios cualitativos:",
+      "options": [
+        "Es una forma de memoria implícita que se adquiere lentamente mediante ensayos reiterados.",
+        "Codifica información sobre acontecimientos biográficos y conocimientos de hechos.",
+        "Su adquisición y evocación ocurren siempre de manera inconsciente y automática."
+      ],
+      "correct": 1,
+      "hint": "Relaciona esta memoria con la capacidad de verbalizar o 'declarar' su contenido de forma consciente.",
+      "explanation": "La memoria declarativa es explícita e incluye la episódica (biográfica) y la semántica (hechos)."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la función de la corteza prefrontal en la memoria a corto plazo:",
+      "options": [
+        "Actúa como el almacén final donde se guardan permanentemente los píxeles de la imagen visual.",
+        "Se encarga de la gestión, organización y formulación de estrategias para recuperar información.",
+        "Su única función es filtrar el ruido auditivo para que no interfiera en la percepción visual."
+      ],
+      "correct": 1,
+      "hint": "Analiza el papel de supervisión y control ejecutivo que ejerce esta área sobre los registros sensoriales.",
+      "explanation": "La corteza prefrontal gestiona y organiza la información relevante mantenida en la memoria a corto plazo y supervisa su recuperación."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la amnesia retrógrada y la recuperación de recuerdos:",
+      "options": [
+        "Los recuerdos más próximos a la lesión son los que se recuperan con mayor facilidad y rapidez.",
+        "Existe una incapacidad total para recuperar cualquier dato anterior al daño, sin excepciones.",
+        "Los recuerdos más antiguos suelen recuperarse antes y en mayor proporción que los recientes."
+      ],
+      "correct": 2,
+      "hint": "Aplica la lógica inversa de la ley de Ribot al proceso de recuperación tras un daño cerebral.",
+      "explanation": "En la amnesia retrógrada orgánica, los recuerdos remotos son más resistentes y se recuperan antes que los inmediatamente previos a la lesión."
+    },
+    {
+      "q": "Selecciona la opción correcta respecto a la memoria operativa según el modelo de Carlson:",
+      "options": [
+        "Es una función inconsciente que actúa como filtro inicial para los estímulos del exterior.",
+        "Sirve como guía de la conducta para conseguir un objetivo específico a corto plazo.",
+        "Tiene una capacidad ilimitada para procesar información de múltiples modalidades sensoriales."
+      ],
+      "correct": 1,
+      "hint": "Considera la utilidad práctica de mantener información activa para realizar una tarea compleja.",
+      "explanation": "La memoria operativa es consciente, de capacidad limitada y orienta la conducta hacia metas inmediatas."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre las conexiones entre la amígdala y otras estructuras:",
+      "options": [
+        "El núcleo lateral evoca directamente la respuesta de miedo a través del cerebelo.",
+        "El núcleo central es el responsable de enviar señales al hipotálamo y tronco encefálico.",
+        "La amígdala solo se conecta con la corteza visual primaria para procesar imágenes de miedo."
+      ],
+      "correct": 1,
+      "hint": "Distingue entre el núcleo que recibe la asociación (lateral) y el que ejecuta la respuesta (central).",
+      "explanation": "El núcleo central es la vía de salida de la amígdala para coordinar las respuestas autonómicas y motoras de la emoción."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre el papel de la corteza prefrontal dorsolateral:",
+      "options": [
+        "Es fundamental para la memoria de trabajo y la manipulación activa de la información.",
+        "Se especializa en el reconocimiento de patrones táctiles y sensaciones de temperatura.",
+        "Controla los movimientos reflejos básicos de la médula espinal ante estímulos de dolor."
+      ],
+      "correct": 0,
+      "hint": "Identifica la zona frontal implicada en procesos cognitivos superiores como la planificación.",
+      "explanation": "La región dorsolateral es el sustrato principal de la memoria de trabajo y la manipulación de datos relevantes para la tarea."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la 'vía del dónde' en la percepción visual:",
+      "options": [
+        "Se dirige hacia la corteza temporal inferior para reconocer la forma de los objetos.",
+        "Se proyecta hacia la corteza parietal posterior para localizar objetos en el espacio.",
+        "Termina en el área facial fusiforme para analizar la posición de los ojos en un rostro."
+      ],
+      "correct": 1,
+      "hint": "Localiza el destino dorsal de la información visual que sale de la corteza extraestriada.",
+      "explanation": "La vía dorsal (parietal) se encarga de la localización espacial, mientras que la ventral (temporal) se encarga del reconocimiento."
+    },
+    {
+      "q": "Selecciona la opción correcta respecto al condicionamiento operante o instrumental:",
+      "options": [
+        "Fue desarrollado por Iván Pávlov basándose en la asociación de dos estímulos sucesivos.",
+        "Permite modificar la probabilidad de una respuesta mediante refuerzos o castigos.",
+        "Consiste en la disminución de la respuesta ante un estímulo que se percibe como benigno."
+      ],
+      "correct": 1,
+      "hint": "Relaciona este tipo de aprendizaje asociativo con las consecuencias de la conducta propia del sujeto.",
+      "explanation": "El condicionamiento operante (Skinner) asocia la conducta con su consecuencia para aumentar o disminuir su frecuencia."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la neurogénesis en el hipocampo adulto:",
+      "options": [
+        "Ocurre únicamente ante situaciones de estrés extremo que destruyen las redes previas.",
+        "Se ve favorecida por entornos enriquecidos y mejora el rendimiento en tareas relacionales.",
+        "Es un proceso mitótico que solo sucede durante la fase embrionaria del sistema nervioso."
+      ],
+      "correct": 1,
+      "hint": "Considera cómo la experiencia y el entorno influyen en la creación de nuevas neuronas en el giro dentado.",
+      "explanation": "La investigación muestra que la exposición a entornos complejos aumenta la neurogénesis hipocámpica y mejora la memoria espacial."
+    },
+    {
+      "q": "Selecciona la opción correcta respecto a la memoria sensorial auditiva (ecoica):",
+      "options": [
+        "Permite mantener la información literal del estímulo durante unos milisegundos.",
+        "Requiere de una atención focalizada y consciente para que la información se registre.",
+        "Se almacena permanentemente en la corteza prefrontal para ser evocada voluntariamente."
+      ],
+      "correct": 0,
+      "hint": "Analiza las características de duración y consciencia de los almacenes sensoriales iniciales.",
+      "explanation": "La memoria sensorial es pre-atencional, no consciente y mantiene una representación literal muy breve del estímulo."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la relación entre el hipocampo y la memoria declarativa:",
+      "options": [
+        "Es el almacén donde se guardan los cognitos de naturaleza semántica más abstractos.",
+        "Actúa como un 'director de orquesta' que organiza la información para su consolidación.",
+        "Su lesión impide recordar hechos lejanos de la infancia pero permite formar nuevos recuerdos."
+      ],
+      "correct": 1,
+      "hint": "Define la metáfora funcional utilizada en el texto para describir la relación hipocampo-corteza.",
+      "explanation": "El hipocampo no guarda la información permanentemente, sino que dirige la red de conexiones para consolidarla y recuperarla."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre el aprendizaje perceptivo:",
+      "options": [
+        "Se basa exclusivamente en cambios en el sistema motor para automatizar rutinas.",
+        "Dota de capacidad para identificar y catalogar objetos percibidos previamente.",
+        "No requiere ningún tipo de representación mental previa de los estímulos sensoriales."
+      ],
+      "correct": 1,
+      "hint": "Identifica la función principal de reconocer patrones sensoriales conocidos.",
+      "explanation": "El aprendizaje perceptivo permite reconocer estímulos ya vistos o sentidos, facilitando su catalogación y la toma de decisiones."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la técnica de estimulación magnética transcraneal (TMS):",
+      "options": [
+        "Es una técnica invasiva que requiere la implantación de electrodos en el hipocampo.",
+        "Se utiliza para optimizar tratamientos y mejorar la memoria en trastornos neuropsiquiátricos.",
+        "Sirve para registrar la actividad eléctrica de las células de lugar durante la navegación."
+      ],
+      "correct": 1,
+      "hint": "Considera el uso clínico de la neuromodulación no invasiva en la investigación actual de la memoria.",
+      "explanation": "La TMS y la DBS son herramientas terapéuticas en investigación para potenciar la memoria en pacientes con daño o trastornos."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA respecto a los subprocesos de la memoria según Baddeley:",
+      "options": [
+        "Plantea la codificación como un proceso básico esencial para el registro de información.",
+        "Incluye la consolidación como el cuarto proceso fundamental en su modelo de tres etapas.",
+        "Propone la recuperación como el acceso al uso de la información almacenada previamente."
+      ],
+      "correct": 1,
+      "hint": "Verifica cuántos y cuáles son los procesos básicos que Baddeley (1997) postula originalmente.",
+      "explanation": "Baddeley plantea tres procesos básicos (codificación, almacenamiento y recuperación), no incluyendo la consolidación de forma independiente."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre los factores que influyen en la codificación:",
+      "options": [
+        "La atención del sujeto es un elemento imprescindible para un resultado óptimo.",
+        "La motivación intrínseca o extrínseca juega un papel determinante en el proceso.",
+        "El estado de los receptores NMDA es el único factor biológico que permite la codificación."
+      ],
+      "correct": 2,
+      "hint": "Evalúa si existen otros factores cognitivos o si el proceso depende de un único mecanismo molecular.",
+      "explanation": "Aunque los NMDA son importantes para la plasticidad, la codificación depende de múltiples factores como atención y motivación."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre el aprendizaje asociativo relacional:",
+      "options": [
+        "Es el tipo de aprendizaje asociativo más simple y se basa en respuestas automáticas.",
+        "Requiere la activación de redes neuronales mucho más amplias que los tipos más básicos.",
+        "Permite comprender relaciones de causa-efecto y la identificación de patrones complejos."
+      ],
+      "correct": 0,
+      "hint": "Compara la jerarquía de complejidad entre los distintos tipos de aprendizaje asociativo.",
+      "explanation": "El aprendizaje relacional es el más complejo, no el más simple; los más simples son el perceptivo o el motor."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA respecto a la memoria a corto plazo (MCP):",
+      "options": [
+        "Es de naturaleza consciente y su duración se extiende entre segundos y minutos.",
+        "Posee una capacidad ilimitada para registrar información sensorial en formato literal.",
+        "Incluye la memoria operativa necesaria para guiar la conducta hacia objetivos."
+      ],
+      "correct": 1,
+      "hint": "Revisa los límites de procesamiento y almacenamiento que caracterizan a este almacén temporal.",
+      "explanation": "La MCP tiene capacidad limitada (el famoso número mágico 7±2); es la memoria sensorial la que tiene capacidad 'ilimitada' inicial."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre la potenciación a largo plazo (PLP):",
+      "options": [
+        "Requiere obligatoriamente la activación de sinapsis y despolarización postsináptica.",
+        "Se produce por una liberación constante de neurotransmisor a muy baja frecuencia.",
+        "Conlleva un fortalecimiento de la transmisión sináptica que puede durar días o meses."
+      ],
+      "correct": 1,
+      "hint": "Considera qué tipo de ritmo de descarga es necesario para que se produzca la sumación de potenciales.",
+      "explanation": "La PLP requiere alta frecuencia; la baja frecuencia no permite la sumación necesaria para activar los mecanismos de potenciación."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA respecto a los receptores AMPA en la plasticidad sináptica:",
+      "options": [
+        "Son activados por el glutamato y producen potenciales postsinápticos excitatorios.",
+        "Su inserción en la membrana postsináptica debilita la conexión entre las neuronas.",
+        "A mayor cantidad de estos receptores, mayor es la respuesta ante la liberación de glutamato."
+      ],
+      "correct": 1,
+      "hint": "Analiza si la adición de receptores facilita o dificulta la comunicación entre neuronas.",
+      "explanation": "La inserción de receptores AMPA fortalece la sinapsis, no la debilita, aumentando la sensibilidad al neurotransmisor."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre las funciones del hipocampo:",
+      "options": [
+        "Participa en la consolidación de la memoria declarativa, especialmente la episódica.",
+        "Crea mapas cognitivos que contribuyen a la navegación espacial mediante células de lugar.",
+        "Almacena permanentemente las destrezas motoras automatizadas como montar en bici."
+      ],
+      "correct": 2,
+      "hint": "Identifica qué estructura se encarga realmente de las memorias procedimentales y los hábitos.",
+      "explanation": "Las destrezas motoras y hábitos dependen de los ganglios basales; el hipocampo se centra en la memoria declarativa y relacional."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre la amígdala y el condicionamiento de miedo:",
+      "options": [
+        "El núcleo lateral recibe información de las cortezas auditiva y somatosensorial.",
+        "La PLP en el núcleo lateral es necesaria para establecer la respuesta condicionada.",
+        "El bloqueo de receptores AMPA en la amígdala potencia el aprendizaje emocional."
+      ],
+      "correct": 2,
+      "hint": "Analiza el efecto que tendría impedir la plasticidad sináptica sobre la formación de un recuerdo.",
+      "explanation": "El bloqueo de receptores AMPA anula o entorpece el establecimiento del condicionamiento, no lo potencia."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre el papel de los ganglios basales:",
+      "options": [
+        "Contribuyen al aprendizaje motor estímulo-respuesta y consolidan hábitos.",
+        "Participan en la ejecución de respuestas automáticas a través del cuerpo estriado.",
+        "Son la sede principal del procesamiento consciente de la memoria episódica biográfica."
+      ],
+      "correct": 2,
+      "hint": "Recuerda la especialización funcional de los núcleos de la base frente al sistema límbico.",
+      "explanation": "Los ganglios basales gestionan memoria no declarativa (procedimental); la episódica depende del hipocampo y la corteza."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA respecto a las fases de adquisición de un hábito:",
+      "options": [
+        "En la fase cognitiva inicial, la ejecución es laboriosa y depende de la corteza prefrontal.",
+        "En la fase asociativa, el cuerpo estriado y el globo pálido aumentan su implicación.",
+        "En la fase de automatización, la corteza prefrontal asume el control total de los detalles."
+      ],
+      "correct": 2,
+      "hint": "Observa cómo evoluciona el control cortical hacia el control subcortical durante la práctica.",
+      "explanation": "En la automatización, la corteza prefrontal deja de tener control directo, delegando casi todo el proceso a los ganglios basales."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre el paradigma reticular de Fuster:",
+      "options": [
+        "La memoria está representada en redes neuronales o cognitos distribuidos corticalmente.",
+        "Una neurona solo puede formar parte de una única red de memoria específica y aislada.",
+        "Las redes se organizan jerárquicamente desde lo elemental hasta lo más abstracto."
+      ],
+      "correct": 1,
+      "hint": "Analiza la flexibilidad de las neuronas en el modelo de redes superpuestas y entrecruzadas.",
+      "explanation": "Fuster sostiene que una sola neurona puede formar parte de múltiples redes diferentes, lo que permite la interconectividad."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre la jerarquía ejecutiva frontal de Fuster:",
+      "options": [
+        "El nivel más concreto son los actos simples situados en la corteza motora primaria.",
+        "El nivel intermedio incluye los programas y planes de acción motora compleja.",
+        "El nivel más abstracto es la memoria sensorial localizada en el lóbulo occipital."
+      ],
+      "correct": 2,
+      "hint": "Distingue entre la jerarquía ejecutiva (frontal) y la jerarquía perceptual (posterior).",
+      "explanation": "La memoria sensorial forma parte de la jerarquía perceptual (posterior), no de la ejecutiva (frontal)."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA respecto a la amnesia anterógrada:",
+      "options": [
+        "Es la incapacidad de formar nuevos aprendizajes tras el momento del daño cerebral.",
+        "Afecta fundamentalmente a la memoria de tipo declarativo-episódico.",
+        "Impide recordar el nombre de la madre o eventos de la infancia previa a la lesión."
+      ],
+      "correct": 2,
+      "hint": "Considera la dirección temporal (hacia adelante o hacia atrás) del déficit de memoria.",
+      "explanation": "La incapacidad para recordar el pasado es amnesia retrógrada; la anterógrada permite recordar el pasado pero no crear nuevos recuerdos."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre el caso del paciente HM:",
+      "options": [
+        "Se le practicó una lobotomía bilateral para tratar una epilepsia incontrolable.",
+        "Perdió su capacidad de mantener una conversación fluida debido a la falta de MCP.",
+        "Conservó intacta su memoria no declarativa y pudo aprender nuevas destrezas motoras."
+      ],
+      "correct": 1,
+      "hint": "Revisa las conclusiones sobre qué sistemas de memoria NO dependen del hipocampo según este caso.",
+      "explanation": "HM conservaba la memoria a corto plazo y podía conversar; lo que no podía era transferir esa información a la memoria a largo plazo."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre el almacenamiento de la memoria declarativa:",
+      "options": [
+        "Las huellas de memoria residen fundamentalmente en áreas de la corteza cerebral.",
+        "El hipocampo es el lugar físico donde se guardan los datos históricos permanentemente.",
+        "La corteza límbica del lóbulo temporal medial es un almacén fundamental de recuerdos."
+      ],
+      "correct": 1,
+      "hint": "Recuerda la distinción entre 'consolidación' (proceso) y 'almacenamiento' (lugar final).",
+      "explanation": "El hipocampo consolida pero no almacena de forma permanente; los recuerdos se distribuyen por la corteza cerebral."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre las técnicas de neuroimagen en el estudio de la memoria:",
+      "options": [
+        "La fMRI y la PET son fundamentales para la evaluación clínica de trastornos neurológicos.",
+        "Permiten observar qué regiones corticales se activan durante la recuperación de datos.",
+        "Se utilizan para extirpar quirúrgicamente las redes de memoria que causan traumas."
+      ],
+      "correct": 2,
+      "hint": "Identifica si el uso principal de estas herramientas es diagnóstico/observacional o quirúrgico/invasivo.",
+      "explanation": "La neuroimagen es diagnóstica e investigativa, no se usa para extirpar redes de memoria de forma selectiva."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre la rehabilitación cognitiva de la memoria:",
+      "options": [
+        "Incluye el uso de realidad virtual y simuladores para mejorar el rendimiento funcional.",
+        "Se aplica en pacientes que han sufrido accidentes cerebrovasculares o lesiones traumáticas.",
+        "Consiste exclusivamente en la administración de fármacos que bloquean los receptores AMPA."
+      ],
+      "correct": 2,
+      "hint": "Diferencia entre intervenciones conductuales/tecnológicas y tratamientos puramente farmacológicos.",
+      "explanation": "La rehabilitación cognitiva utiliza técnicas de entrenamiento y tecnología; bloquear receptores AMPA empeoraría la memoria."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre el aprendizaje perceptivo visual:",
+      "options": [
+        "Implica a la corteza visual primaria y a las áreas de asociación extraestriadas.",
+        "La 'vía del qué' identifica objetos a través de la zona ventral de la corteza temporal.",
+        "Ocurre de forma aislada en el tálamo sin intervención de ninguna área de la corteza cerebral."
+      ],
+      "correct": 2,
+      "hint": "Recuerda el papel jerárquico de la corteza en el procesamiento de estímulos sensoriales complejos.",
+      "explanation": "El aprendizaje perceptivo es una función cortical superior que requiere de las áreas de asociación visual."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre la memoria no declarativa:",
+      "options": [
+        "Se conoce también como memoria implícita, incidental o procedimental.",
+        "Requiere de una evocación consciente e intencionada por parte del sujeto.",
+        "Se establece de forma progresiva a través de ensayos y práctica acumulada."
+      ],
+      "correct": 1,
+      "hint": "Identifica si la ejecución de un hábito motor requiere pensar conscientemente en cada paso.",
+      "explanation": "La memoria no declarativa es implícita; su característica definitoria es que no requiere consciencia para su recuperación."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre los receptores NMDA y el magnesio:",
+      "options": [
+        "Los iones magnesio bloquean el canal impidiendo la entrada de calcio en reposo.",
+        "El magnesio es expulsado del canal si la membrana postsináptica se despolariza.",
+        "El magnesio actúa como un neurotransmisor excitador que abre los canales de sodio."
+      ],
+      "correct": 2,
+      "hint": "Distingue entre el papel de un ion bloqueador y el de un ligando neurotransmisor.",
+      "explanation": "El magnesio es un bloqueador físico del canal NMDA, no es un neurotransmisor ni abre canales de sodio."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre la corteza premotora y motora suplementaria:",
+      "options": [
+        "La motora suplementaria interviene en series de conducta automáticas aprendidas.",
+        "La corteza premotora participa en la memoria guiada por la información sensorial.",
+        "Ambas áreas son responsables directas de la formación de la memoria episódica."
+      ],
+      "correct": 2,
+      "hint": "Analiza si estas áreas se dedican al control del movimiento o al recuerdo de sucesos vitales.",
+      "explanation": "Estas áreas son motoras y se encargan del aprendizaje estímulo-respuesta motor; la episódica depende del sistema límbico."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre la relación entre el hipotálamo y la amígdala:",
+      "options": [
+        "El núcleo central de la amígdala envía proyecciones al hipotálamo para la respuesta.",
+        "Esta conexión permite la activación de respuestas autonómicas ante el miedo.",
+        "El hipotálamo es donde se almacenan los receptores AMPA para el condicionamiento."
+      ],
+      "correct": 2,
+      "hint": "Localiza el lugar exacto donde se producen los cambios plásticos sinápticos en el miedo condicionado.",
+      "explanation": "Los cambios sinápticos (receptores AMPA) ocurren en la amígdala; el hipotálamo solo ejecuta la orden de respuesta."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre la memoria a corto plazo en el modelo animal:",
+      "options": [
+        "La corteza prefrontal es esencial para mantener información relevante para la tarea.",
+        "El hipocampo es el único lugar donde se mantiene la información durante la tarea.",
+        "La neurogénesis hipocámpica puede mejorar la ejecución en pruebas de laberinto."
+      ],
+      "correct": 1,
+      "hint": "Considera la colaboración entre la corteza prefrontal y otras áreas en el mantenimiento de datos.",
+      "explanation": "Aunque el hipocampo ayuda en tareas espaciales, la memoria a corto plazo/trabajo depende críticamente de la corteza prefrontal."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA sobre el futuro de la investigación en memoria:",
+      "options": [
+        "Se investiga en dispositivos de asistencia para personas con deterioro de memoria.",
+        "Se busca desarrollar terapias farmacológicas basadas en las bases neuroquímicas.",
+        "El objetivo final es sustituir completamente el hipocampo por chips de silicio en 2025."
+      ],
+      "correct": 2,
+      "hint": "Distingue entre las direcciones científicas reales y las especulaciones tecnológicas infundadas.",
+      "explanation": "Aunque se investiga en tecnología adaptativa, no existe un objetivo científico de sustitución total del hipocampo a corto plazo."
+    },
+    {
+      "q": "Selecciona la opción INCORRECTA respecto a la definición psicobiológica del aprendizaje:",
+      "options": [
+        "Se define como la capacidad de generar cambios en la estructura del sistema nervioso.",
+        "Consiste en la modificación de la efectividad de la transmisión sináptica entre neuronas.",
+        "Es un proceso etéreo que no deja ninguna huella física o funcional en el cerebro humano."
+      ],
+      "correct": 2,
+      "hint": "Analiza si la experiencia vivida altera o no la biología de nuestros circuitos neuronales.",
+      "explanation": "La psicobiología sostiene que el aprendizaje altera física y funcionalmente el sistema nervioso a través de la plasticidad."
+    },
+    {
+      "q": "El proceso de ____ se define psicobiológicamente como la capacidad de generar cambios en la estructura y funcionamiento del sistema nervioso mediante la modificación de la eficacia sináptica.",
+      "options": [
+        "el aprendizaje funcional",
+        "el aprendizaje sináptico",
+        "el aprendizaje cognitivo"
+      ],
+      "correct": 1,
+      "hint": "Se refiere a la definición desde la perspectiva de la psicobiología mencionada en la introducción.",
+      "explanation": "El texto especifica que desde el punto de vista psicobiológico, el aprendizaje tiene la capacidad de generar cambios observables alterando la efectividad de la transmisión sináptica."
+    },
+    {
+      "q": "En el modelo de procesamiento de la información, el subproceso de ____ es el único que se considera estrictamente integrado dentro del proceso de aprendizaje y no de la memoria.",
+      "options": [
+        "la codificación sensorial",
+        "la consolidación sináptica",
+        "el almacenamiento radical"
+      ],
+      "correct": 0,
+      "hint": "Es el primer paso donde la información sensorial se transforma en representación mental.",
+      "explanation": "Según Carlson (2018), la codificación es el único subproceso incluido en el aprendizaje, mientras que los demás pertenecen a la memoria."
+    },
+    {
+      "q": "La transferencia de la información desde la memoria a corto plazo hacia la memoria a largo plazo para permitir cambios persistentes se denomina ____.",
+      "options": [
+        "proceso de codificación",
+        "proceso de integración",
+        "proceso de almacenamiento"
+      ],
+      "correct": 2,
+      "hint": "Es el segundo subproceso de la memoria que ocurre tras la consolidación.",
+      "explanation": "El almacenamiento hace posible que la información consolidada pase a la memoria a largo plazo, permitiendo el cambio más persistente en el SN."
+    },
+    {
+      "q": "La ____ es una forma de aprendizaje no asociativo que conlleva un aumento de la tasa de respuesta ante un estímulo nuevo o amenazante por exposición repetitiva.",
+      "options": [
+        "habituación sensorial",
+        "sensibilización neural",
+        "habituación cognitiva"
+      ],
+      "correct": 1,
+      "hint": "Se asocia con un incremento de la transmisión sináptica de las neuronas sensoriales.",
+      "explanation": "La sensibilización consiste en el aumento de la respuesta y de la transmisión sináptica ante estímulos repetitivos amenazantes."
+    },
+    {
+      "q": "El aprendizaje ____ es el más complejo de los asociativos y requiere comprender las conexiones existentes entre estímulos individuales y sus contextos.",
+      "options": [
+        "de tipo relacional",
+        "de tipo perceptivo",
+        "de tipo emocional"
+      ],
+      "correct": 0,
+      "hint": "Es el tipo de aprendizaje que permite, por ejemplo, familiarizarse con una habitación.",
+      "explanation": "El aprendizaje relacional es el más complejo e implica la activación de redes neuronales más amplias para establecer conexiones entre conceptos."
+    },
+    {
+      "q": "Para que se induzca la potenciación a largo plazo (PLP), es necesario que las descargas de estimulación eléctrica en la vía perforante tengan una ____.",
+      "options": [
+        "frecuencia muy baja",
+        "frecuencia muy alta",
+        "frecuencia moderada"
+      ],
+      "correct": 1,
+      "hint": "Un ritmo rápido permite que los potenciales postsinápticos excitatorios se sumen.",
+      "explanation": "Una frecuencia alta en una sola ráfaga produce PLP, mientras que una baja no, debido a la necesidad de suma de potenciales."
+    },
+    {
+      "q": "Los receptores NMDA están bloqueados habitualmente por ____, los cuales impiden la entrada de calcio incluso en presencia de glutamato.",
+      "options": [
+        "iones de magnesio",
+        "iones de potasio",
+        "iones de cloruro"
+      ],
+      "correct": 0,
+      "hint": "Estos iones son expulsados solo si la membrana postsináptica está despolarizada.",
+      "explanation": "El bloqueo por magnesio es la característica clave del receptor NMDA que lo convierte en un detector de coincidencias."
+    },
+    {
+      "q": "La inserción de receptores ____ en la membrana postsináptica de las espinas dendríticas es el paso fundamental para que termine de instaurarse la PLP.",
+      "options": [
+        "de tipo NMDA",
+        "de tipo AMPA",
+        "de tipo GABA"
+      ],
+      "correct": 1,
+      "hint": "A mayor cantidad de estos receptores, mayor es el potencial excitador postsináptico ante el glutamato.",
+      "explanation": "La inserción de receptores AMPA desde el interior de la neurona fortalece la sinapsis al responder al glutamato con mayores PEPS."
+    },
+    {
+      "q": "En el condicionamiento de miedo, la información del tono y de la descarga convergen específicamente en el ____ de la amígdala.",
+      "options": [
+        "núcleo central",
+        "núcleo lateral",
+        "núcleo basal"
+      ],
+      "correct": 1,
+      "hint": "Es donde las sinapsis débiles se fortalecen mediante el fenómeno de la PLP.",
+      "explanation": "El núcleo lateral de la amígdala es el sitio de convergencia y potenciación; el núcleo central es el encargado de la ejecución de la respuesta."
+    },
+    {
+      "q": "La fase de ____ en el aprendizaje motor se caracteriza por la implicación directa del cuerpo estriado y el globo pálido.",
+      "options": [
+        "automatización",
+        "fase asociativa",
+        "fase cognitiva"
+      ],
+      "correct": 1,
+      "hint": "Es la segunda fase, que ocurre tras repetir la conducta, antes de que sea totalmente automática.",
+      "explanation": "En la fase asociativa hay una mayor implicación de los ganglios basales (caudado, putamen y pálido) a través de conexiones corticoestriatocorticales."
+    },
+    {
+      "q": "La vía visual ____ o vía del 'dónde' se encarga de localizar los objetos a través de la zona dorsal de la corteza parietal posterior.",
+      "options": [
+        "vía extraestriada",
+        "vía visual dorsal",
+        "vía visual ventral"
+      ],
+      "correct": 1,
+      "hint": "Se diferencia de la vía que identifica qué son los objetos.",
+      "explanation": "La vía dorsal localiza objetos en el espacio, mientras que la vía ventral (temporal inferior) los identifica."
+    },
+    {
+      "q": "Según el paradigma reticular de Fuster, la memoria está representada por redes neuronales denominadas ____ distribuidas por la corteza.",
+      "options": [
+        "redes sinápticas",
+        "cognitos corticales",
+        "módulos de memoria"
+      ],
+      "correct": 1,
+      "hint": "Es el término específico que usa Fuster para referirse a estas redes jerárquicas.",
+      "explanation": "Fuster llama 'cognitos' a las redes neuronales distribuidas que representan la memoria en la corteza cerebral."
+    },
+    {
+      "q": "La jerarquía ____ en el modelo de Fuster incluye, desde lo más concreto a lo abstracto, la memoria sensorial, episódica y semántica.",
+      "options": [
+        "memoria ejecutiva",
+        "memoria cognitiva",
+        "memoria perceptual"
+      ],
+      "correct": 2,
+      "hint": "Tiene su base sensorial en la corteza posterior del cerebro.",
+      "explanation": "La jerarquía perceptual se localiza en la corteza posterior y abarca desde sensaciones primarias hasta conceptos abstractos."
+    },
+    {
+      "q": "La amnesia ____ se define como la incapacidad para recuperar información almacenada antes de que se produjera el daño cerebral.",
+      "options": [
+        "amnesia retrógada",
+        "amnesia anterógada",
+        "amnesia de trabajo"
+      ],
+      "correct": 0,
+      "hint": "Sigue la ley de Ribot, afectando más a los recuerdos recientes.",
+      "explanation": "La amnesia retrógada afecta a la evocación de información previa a la lesión, respetando a menudo los recuerdos más antiguos."
+    },
+    {
+      "q": "La ____ es una alteración de la memoria retrógrada en la que los recuerdos más recientes se pierden antes y en mayor grado que los antiguos.",
+      "options": [
+        "ley de Hebb",
+        "ley de Ribot",
+        "ley de Lømo"
+      ],
+      "correct": 1,
+      "hint": "Es un patrón temporal clásico observado en pacientes amnésicos.",
+      "explanation": "La ley de Ribot establece que existe un gradiente temporal en la pérdida de memoria retrógrada."
+    },
+    {
+      "q": "El paciente HM, tras su cirugía bilateral, conservó intacta su ____, lo que le permitía mantener conversaciones fluidas.",
+      "options": [
+        "memoria episódica",
+        "memoria inmediata",
+        "memoria semántica"
+      ],
+      "correct": 1,
+      "hint": "Es un tipo de memoria a corto plazo que no requiere de la formación hipocámpica para su mantenimiento.",
+      "explanation": "HM preservaba la memoria inmediata (corto plazo), demostrando que el hipocampo no es el almacén de este sistema."
+    },
+    {
+      "q": "La ____ en el hipocampo, estimulada por entornos enriquecidos, mejora la ejecución en tareas como el laberinto acuático de Morris.",
+      "options": [
+        "plasticidad sináptica",
+        "neurogénesis adulta",
+        "potenciación mímica"
+      ],
+      "correct": 1,
+      "hint": "Se refiere a la creación de nuevas neuronas en esta estructura.",
+      "explanation": "Estudios como el de Gould (1999) asocian la neurogénesis en el hipocampo con la mejora del aprendizaje relacional."
+    },
+    {
+      "q": "El subproceso de ____ consiste en el reforzamiento de cambios asociados a la codificación mediante la transferencia a la memoria a corto plazo.",
+      "options": [
+        "la consolidación",
+        "el almacenamiento",
+        "la recuperación"
+      ],
+      "correct": 0,
+      "hint": "Es el primer subproceso de la memoria propiamente dicha según el modelo de Carlson.",
+      "explanation": "La consolidación sigue a la codificación y permite un cambio más permanente en el sistema nervioso tras la transferencia inicial."
+    },
+    {
+      "q": "Las células ____ del hipocampo responden a ubicaciones espaciales concretas, permitiendo crear mapas cognitivos del entorno.",
+      "options": [
+        "células de lugar",
+        "células de borde",
+        "células de rejilla"
+      ],
+      "correct": 0,
+      "hint": "Existen varios tipos de células espaciales, pero estas son las más citadas para localizaciones específicas.",
+      "explanation": "Las células de lugar (junto a las de cuadrícula, borde y dirección) son fundamentales para la representación interna del espacio."
+    },
+    {
+      "q": "La corteza ____ es imprescindible en la primera fase cognitiva del aprendizaje motor, ya que requiere planificación y toma de decisiones.",
+      "options": [
+        "corteza motora",
+        "corteza prefrontal",
+        "corteza premotora"
+      ],
+      "correct": 1,
+      "hint": "Es el área encargada de los procesos ejecutivos superiores antes de que el hábito se automatice.",
+      "explanation": "La corteza prefrontal lidera la fase cognitiva; luego transfiere el control a los ganglios basales para la automatización."
+    },
+    {
+      "q": "En el aprendizaje relacional, el hipocampo permite que los recuerdos dejen de ser ____ para formar episodios con contexto.",
+      "options": [
+        "datos semánticos",
+        "hechos aislados",
+        "datos implícitos"
+      ],
+      "explanation": "Sin el hipocampo, los recuerdos serían individuales y sin relación, impidiendo el recuerdo de contextos y episodios.",
+      "correct": 1,
+      "hint": "Se refiere a la naturaleza fragmentada que tendrían los recuerdos sin esta estructura."
+    },
+    {
+      "q": "La ____ es una técnica de neuroimagen fundamental para evaluar trastornos que afectan la memoria como el Alzheimer.",
+      "options": [
+        "la técnica fMRI",
+        "la técnica de DBS",
+        "la técnica de TMS"
+      ],
+      "explanation": "La fMRI (resonancia magnética funcional) y la PET son claves en la evaluación clínica mencionada en la Tabla 12.",
+      "correct": 0,
+      "hint": "Se basa en la detección de cambios en el flujo sanguíneo cerebral."
+    },
+    {
+      "q": "Los ____ son unidades estructuradas de conocimiento que reúnen conceptos y relaciones en redes neuronales interconectadas.",
+      "options": [
+        "esquemas mentales",
+        "nodos sinápticos",
+        "engramas totales"
+      ],
+      "explanation": "La información en el almacenamiento se organiza mediante esquemas, que son conjuntos estructurados de conocimientos.",
+      "correct": 0,
+      "hint": "Término usado en la descripción del proceso de almacenamiento."
+    },
+    {
+      "q": "La memoria ____ es no consciente, tiene una duración brevísima y actúa como un filtro inicial de la información externa.",
+      "options": [
+        "memoria sensorial",
+        "memoria operativa",
+        "memoria episódica"
+      ],
+      "explanation": "La memoria sensorial tiene una duración de 200 a 500 ms y capacidad ilimitada literal.",
+      "correct": 0,
+      "hint": "Es la primera etapa según el modelo de Atkinson y Shiffrin."
+    },
+    {
+      "q": "El fenómeno de la ____ se define como los procesos que ocurren tras la codificación original y que alteran las huellas de memoria.",
+      "options": [
+        "la recodificación",
+        "la consolidación",
+        "la recuperación"
+      ],
+      "explanation": "Según Tulving (1983), la recodificación provoca cambios en las huellas de memoria tras la codificación inicial.",
+      "correct": 0,
+      "hint": "Es un término específico de Tulving mencionado en el apartado de almacenamiento."
+    },
+    {
+      "q": "La memoria ____ incluye el conocimiento sobre hechos y acontecimientos biográficos, requiriendo consciencia para su evocación.",
+      "options": [
+        "memoria implícita",
+        "memoria declarativa",
+        "memoria emocional"
+      ],
+      "explanation": "La memoria declarativa (explícita) incluye la episódica y semántica y requiere consciencia.",
+      "correct": 1,
+      "hint": "También se la conoce como la memoria del 'saber qué'."
+    },
+    {
+      "q": "El principio de ____ establece que las sinapsis que se activan juntas, responden juntas, siendo la base biológica de la PLP.",
+      "options": [
+        "el principio Hebb",
+        "el principio Lømo",
+        "el principio Ribot"
+      ],
+      "explanation": "Donald Hebb formuló en 1949 que la activación conjunta fortalece la conexión sináptica.",
+      "correct": 0,
+      "hint": "Lleva el nombre del psicólogo que lo formuló en 1949."
+    },
+    {
+      "q": "El receptor AMPA es activado por el neurotransmisor ____, produciendo potenciales postsinápticos excitatorios.",
+      "options": [
+        "el neurotrans GABA",
+        "el neurotrans GLU",
+        "el neurotrans ACh"
+      ],
+      "explanation": "El glutamato es el neurotransmisor principal que activa tanto receptores NMDA como AMPA en la PLP.",
+      "correct": 1,
+      "hint": "Es el principal neurotransmisor excitador del sistema nervioso central."
+    },
+    {
+      "q": "La estimulación de la ____ conduce información desde la corteza entorrinal hasta las neuronas del giro dentado.",
+      "options": [
+        "la vía comisural",
+        "la vía perforante",
+        "la vía fimbriada"
+      ],
+      "explanation": "Lømo descubrió la PLP estimulando la vía perforante, que conecta la corteza entorrinal con el hipocampo.",
+      "correct": 1,
+      "hint": "Es la vía clásica estudiada por Lømo en 1966."
+    },
+    {
+      "q": "En la amnesia anterógrada, el déficit más grave se observa habitualmente en la memoria de tipo ____.",
+      "options": [
+        "tipo procedimental",
+        "tipo declarativo",
+        "tipo inmediata"
+      ],
+      "explanation": "La amnesia anterógrada impide adquirir nuevos aprendizajes, afectando principalmente a la memoria declarativa-episódica.",
+      "correct": 1,
+      "hint": "Afecta a la capacidad de relatar hechos nuevos tras la lesión."
+    },
+    {
+      "q": "La corteza ____ tiene un papel esencial en la gestión de la información visual que debe recordarse a corto plazo.",
+      "options": [
+        "corteza temporal",
+        "corteza prefrontal",
+        "corteza occipital"
+      ],
+      "explanation": "La corteza prefrontal colabora con la de asociación visual para organizar y supervisar la información en la MCP.",
+      "correct": 1,
+      "hint": "Es el área implicada en las funciones ejecutivas y supervisión."
+    },
+    {
+      "q": "El núcleo ____ de la amígdala es el responsable final de evocar la respuesta emocional de miedo tras recibir la señal procesada.",
+      "options": [
+        "el núcleo lateral",
+        "el núcleo central",
+        "el núcleo medial"
+      ],
+      "explanation": "El núcleo lateral recibe la información, pero el central es el efector que conecta con el hipotálamo y tronco cerebral.",
+      "correct": 1,
+      "hint": "Es el núcleo de salida (output) del sistema de miedo amigdalino."
+    },
+    {
+      "q": "Las conexiones ____ se encargan de la ejecución de respuestas motoras voluntarias y deliberadas, a diferencia de los ganglios basales.",
+      "options": [
+        "conexión directa",
+        "conexión talámica",
+        "conexión cerebelosa"
+      ],
+      "explanation": "Las conexiones transcorticales directas gestionan conductas voluntarias; las de ganglios basales, las automáticas.",
+      "correct": 0,
+      "hint": "Son rutas que comunican áreas corticales sin pasar por estructuras subcorticales profundas."
+    },
+    {
+      "q": "El área ____, ubicada en la vía ventral, es crítica para el reconocimiento de rostros y su lesión causa prosopagnosia.",
+      "options": [
+        "el área visual V1",
+        "el área fusiforme",
+        "el área parietal"
+      ],
+      "explanation": "El área facial fusiforme es específica para rostros; su daño impide reconocer caras familiares.",
+      "correct": 1,
+      "hint": "Se encuentra en la corteza temporal inferior."
+    },
+    {
+      "q": "La jerarquía ____ de Fuster incluye los actos simples, programas, planes de acción y acciones conceptuales.",
+      "options": [
+        "jerarquía motora",
+        "jerarquía ejecutiva",
+        "jerarquía frontal"
+      ],
+      "explanation": "La jerarquía ejecutiva se localiza en la corteza frontal y organiza la acción desde lo motor a lo conceptual.",
+      "correct": 1,
+      "hint": "Es la contraparte de la jerarquía perceptual en el ciclo percepción-acción."
+    },
+    {
+      "q": "La memoria ____ permite la manipulación activa de la información y depende de la corteza prefrontal dorsolateral.",
+      "options": [
+        "memoria sensorial",
+        "memoria de trabajo",
+        "memoria episódica"
+      ],
+      "explanation": "La memoria de trabajo u operativa implica manipulación activa, función propia de la CPF dorsolateral.",
+      "correct": 1,
+      "hint": "Es un sistema de capacidad limitada para tareas cognitivas complejas."
+    },
+    {
+      "q": "En el laberinto de Morris, el hipocampo solo es necesario si el animal debe partir de ____ en cada ensayo.",
+      "options": [
+        "el mismo lugar",
+        "lugares variados",
+        "lugares oscuros"
+      ],
+      "explanation": "El aprendizaje relacional (partir de diferentes puntos) requiere hipocampo; el S-R (mismo punto) no.",
+      "correct": 1,
+      "hint": "Diferencia entre aprendizaje de 'ruta fija' vs aprendizaje de 'mapa espacial'."
+    },
+    {
+      "q": "La demencia ____ se asocia específicamente con la degeneración de la región anterolateral del lóbulo temporal.",
+      "options": [
+        "demencia frontal",
+        "demencia semántica",
+        "demencia motora"
+      ],
+      "explanation": "Esta región neocortical es esencial para el almacenamiento de hechos y conceptos generales (memoria semántica).",
+      "correct": 1,
+      "hint": "Afecta al conocimiento del mundo más que a los recuerdos biográficos."
+    },
+    {
+      "q": "Tras la PLP, las espinas dendríticas cambian su morfología de ser delgadas a gruesas con forma de ____.",
+      "options": [
+        "forma de botón",
+        "forma de hongo",
+        "forma de rama"
+      ],
+      "explanation": "Los cambios postsinápticos incluyen el engrosamiento de espinas hacia una forma de hongo y el crecimiento de nuevas.",
+      "correct": 1,
+      "hint": "Es una analogía visual usada en el texto para describir el cambio estructural."
+    },
+    {
+      "q": "El ____ es considerado el 'director de orquesta' que organiza la información pero no es su almacén definitivo.",
+      "options": [
+        "el hipocampo",
+        "el cerebelo",
+        "el tálamo"
+      ],
+      "explanation": "El hipocampo organiza y consolida la memoria declarativa, pero esta reside finalmente en la corteza cerebral.",
+      "correct": 0,
+      "hint": "Es la conclusión extraída del estudio de pacientes como HM sobre el almacenamiento."
+    },
+    {
+      "q": "¿Qué factores son determinantes para el éxito del subproceso de codificación en el aprendizaje?",
+      "options": [
+        "La motivación del individuo",
+        "La atención prestada al estímulo",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "El texto menciona explícitamente que la atención y la motivación son dos de los factores más importantes en la codificación.",
+      "correct": 2,
+      "hint": "Son procesos psicológicos básicos que filtran la entrada de información sensorial."
+    },
+    {
+      "q": "¿Qué características definen al proceso de memoria sensorial según los modelos multialmacén?",
+      "options": [
+        "Capacidad de tipo ilimitado",
+        "Duración entre 200 y 500 ms",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "La Tabla 10 define la memoria sensorial como ilimitada en capacidad pero con una duración brevísima y no consciente.",
+      "correct": 2,
+      "hint": "Es un almacén muy fiel a la realidad física pero extremadamente volátil."
+    },
+    {
+      "q": "¿Cuál es la función primordial del hipocampo según las investigaciones en psicología fisiológica?",
+      "options": [
+        "Consolidar la memoria declarativa",
+        "Codificar el aprendizaje relacional",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "El hipocampo participa activamente tanto en la codificación de huellas relacionales como en la consolidación de la declarativa.",
+      "correct": 2,
+      "hint": "Actúa sobre memorias explícitas y la organización de contextos espaciales."
+    },
+    {
+      "q": "¿Qué eventos son imprescindibles para que el receptor NMDA permita el paso de iones de calcio?",
+      "options": [
+        "Presencia de glutamato sináptico",
+        "Despolarización de la membrana",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "El NMDA requiere glutamato para abrir el canal y despolarización para expulsar el ión magnesio que lo bloquea.",
+      "correct": 2,
+      "hint": "Es un receptor dependiente tanto de ligando como de voltaje."
+    },
+    {
+      "q": "¿Qué cambios estructurales ocurren a nivel postsináptico como resultado de la potenciación a largo plazo?",
+      "options": [
+        "Crecimiento de nuevas espinas",
+        "Cambio a forma de hongo en espinas",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "El texto señala cambios en forma (a hongo), tamaño y la creación de nuevas espinas dendríticas postsinápticas.",
+      "correct": 2,
+      "hint": "La sinapsis se modifica físicamente para aumentar su superficie de contacto."
+    },
+    {
+      "q": "¿Qué funciones se atribuyen a la amígdala en relación con los procesos de memoria y aprendizaje?",
+      "options": [
+        "Respuesta condicionada de miedo",
+        "Consolidación de memoria emocional",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "La amígdala es esencial para evaluar amenazas, el condicionamiento clásico de miedo y memorias emocionales.",
+      "correct": 2,
+      "hint": "Es el centro neurálgico del procesamiento afectivo y su almacenamiento asociado."
+    },
+    {
+      "q": "¿Qué estructuras forman parte del sistema de ganglios basales implicado en el aprendizaje motor?",
+      "options": [
+        "El núcleo caudado y el putamen",
+        "La estructura del globo pálido",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "El cuerpo estriado (caudado y putamen) y el globo pálido son los componentes citados en la fase asociativa.",
+      "correct": 2,
+      "hint": "Son núcleos subcorticales que forman circuitos con la corteza para automatizar hábitos."
+    },
+    {
+      "q": "¿Qué principios fundamentan el paradigma reticular de la memoria propuesto por Joaquín Fuster?",
+      "options": [
+        "Organización de redes jerárquicas",
+        "Representación mediante cognitos",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "Fuster propone que la memoria son redes neuronales (cognitos) jerárquicas y distribuidas en la corteza.",
+      "correct": 2,
+      "hint": "Se opone a la idea de que los recuerdos se guardan en áreas aisladas y específicas."
+    },
+    {
+      "q": "¿Cuáles son las fases identificadas en la conversión de una conducta motora compleja en un hábito?",
+      "options": [
+        "Una primera fase de tipo cognitiva",
+        "Una segunda fase de tipo asociativa",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "El proceso consta de tres fases: cognitiva (planificación), asociativa (implicación de ganglios) y automatización.",
+      "correct": 2,
+      "hint": "Es un proceso gradual que va desde el control cortical al subcortical."
+    },
+    {
+      "q": "¿Qué características definen a la memoria no declarativa según los criterios cualitativos?",
+      "options": [
+        "Adquisición lenta por repetición",
+        "No requiere consciencia para uso",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "La memoria no declarativa (implícita) es gradual, procedimental y no consciente en su adquisición o evocación.",
+      "correct": 2,
+      "hint": "También se conoce como la memoria del 'saber cómo'."
+    },
+    {
+      "q": "¿Qué tipos de células hipocampales contribuyen a la representación cerebral interna del espacio?",
+      "options": [
+        "Las células de lugar y dirección",
+        "Las células de borde y cuadrícula",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "El texto enumera células de lugar, cuadrícula (rejilla), borde y dirección de la cabeza como base del mapa espacial.",
+      "correct": 2,
+      "hint": "Son neuronas especializadas en diferentes parámetros de la navegación."
+    },
+    {
+      "q": "¿Qué déficits permanecen invariables en la mayoría de los síndromes amnésicos clínicos?",
+      "options": [
+        "Memoria episódica anterógrada",
+        "Incapacidad para nuevos datos",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "La alteración invariable en amnesias (Korsakoff, hipoxia, etc.) es el déficit grave en memoria episódica anterógrada.",
+      "correct": 2,
+      "hint": "Es la incapacidad común de crear nuevos recuerdos tras el incidente."
+    },
+    {
+      "q": "¿Qué funciones cognitivas suelen preservarse incluso en pacientes con amnesia global profunda?",
+      "options": [
+        "La capacidad de lenguaje fluido",
+        "La memoria de tipo no declarativa",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "Pacientes como HM preservan el lenguaje, la memoria inmediata y la memoria no declarativa (procedimental).",
+      "correct": 2,
+      "hint": "Se mantienen las capacidades que no dependen de la consolidación hipocámpica."
+    },
+    {
+      "q": "¿Qué direcciones futuras se plantean para la investigación en rehabilitación de la memoria?",
+      "options": [
+        "El uso de técnicas de realidad virtual",
+        "El uso de simuladores específicos",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "La Tabla 12 menciona la realidad virtual y simuladores dentro de programas de rehabilitación cognitiva.",
+      "correct": 2,
+      "hint": "Son tecnologías emergentes aplicadas al daño cerebral traumático."
+    },
+    {
+      "q": "¿Qué componentes intervienen en el ciclo de percepción-acción según el modelo reticular?",
+      "options": [
+        "Jerarquía de tipo perceptual",
+        "Jerarquía de tipo ejecutiva",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "El ciclo integra la información perceptual (corteza posterior) y ejecutiva (corteza frontal) de forma continua.",
+      "correct": 2,
+      "hint": "Es una interacción cíclica donde la percepción guía la acción y viceversa."
+    },
+    {
+      "q": "¿Qué áreas de la neocorteza temporal están implicadas en el procesamiento del conocimiento semántico?",
+      "options": [
+        "Región anterolateral temporal",
+        "Corteza límbica del medial",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "Aunque la límbica almacena declarativa en general, la anterolateral es crítica para el contenido semántico.",
+      "correct": 2,
+      "hint": "Es el área cuya lesión provoca la pérdida del significado de las cosas."
+    },
+    {
+      "q": "¿Qué objetivos persigue el estudio psicobiológico de las bases del aprendizaje y la memoria?",
+      "options": [
+        "Entender la adaptación cerebral",
+        "Ver cambios en la red neuronal",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "Busca comprender cómo el cerebro se adapta y cómo las experiencias alteran física y funcionalmente el sistema.",
+      "correct": 2,
+      "hint": "Analiza la interacción entre neuronas, estructuras y neurotransmisores."
+    },
+    {
+      "q": "¿Qué evidencias apoyan el papel del hipocampo en la formación de la memoria espacial?",
+      "options": [
+        "Estudios de lesión en animales",
+        "Observación de la neurogénesis",
+        "Todas las anteriores son correctas"
+      ],
+      "explanation": "Las evidencias provienen de lesiones, neurogénesis y exposición a entornos enriquecidos.",
+      "correct": 2,
+      "hint": "Se ha comprobado tanto por déficit funcional como por cambio estructural."
+    },
+    {
+      "q": "Respecto a la memoria sensorial, señale la afirmación que sea correcta según el texto:",
+      "options": [
+        "Requiere consciencia plena",
+        "Dura más de diez minutos",
+        "Ninguna es correcta"
+      ],
+      "explanation": "La memoria sensorial es no consciente y dura milisegundos (200-500 ms).",
+      "correct": 2,
+      "hint": "Revise los parámetros temporales y de consciencia de este almacén."
+    },
+    {
+      "q": "Sobre el paciente HM, señale la conclusión que sea correcta respecto a su sistema cognitivo:",
+      "options": [
+        "Perdió la memoria a corto plazo",
+        "Perdió los recuerdos de su infancia",
+        "Ninguna es correcta"
+      ],
+      "explanation": "HM conservaba la MCP y los recuerdos antiguos; lo que no podía era consolidar nuevos recuerdos a largo plazo.",
+      "correct": 2,
+      "hint": "Su déficit era selectivo para la consolidación anterógrada declarativa."
+    },
+    {
+      "q": "En relación con los receptores NMDA durante la inducción de la PLP, es cierto que:",
+      "options": [
+        "Se abren con bajas frecuencias",
+        "El calcio sale hacia el exterior",
+        "Ninguna es correcta"
+      ],
+      "explanation": "Requieren altas frecuencias para sumar potenciales y el calcio entra en la célula, no sale.",
+      "correct": 2,
+      "hint": "Recuerde el papel del ión calcio y el requisito de la ráfaga de alta intensidad."
+    },
+    {
+      "q": "Sobre la habituación como forma de aprendizaje no asociativo, se puede afirmar que:",
+      "options": [
+        "Aumenta la tasa de respuesta",
+        "Aumenta la fuerza sináptica",
+        "Ninguna es correcta"
+      ],
+      "explanation": "La habituación debilita la tasa de respuesta y disminuye la transmisión sináptica.",
+      "correct": 2,
+      "hint": "Es lo opuesto a la sensibilización neural."
+    },
+    {
+      "q": "En el condicionamiento operante de Skinner, el proceso se define principalmente por:",
+      "options": [
+        "Asociar dos estímulos neutros",
+        "Ignorar las consecuencias finales",
+        "Ninguna es correcta"
+      ],
+      "explanation": "Asocia una conducta con su consecuencia (refuerzo o castigo) para modificar su probabilidad.",
+      "correct": 2,
+      "hint": "Se diferencia del condicionamiento clásico por el papel de la respuesta voluntaria."
+    },
+    {
+      "q": "Respecto a la fase de automatización del aprendizaje motor, es correcto afirmar que:",
+      "options": [
+        "La CPF ejerce el control total",
+        "La conducta es muy lenta y torpe",
+        "Ninguna es correcta"
+      ],
+      "explanation": "En esta fase, la CPF deja de controlar directamente, la ejecución es rápida, fluida y precisa.",
+      "correct": 2,
+      "hint": "Es la etapa final donde los ganglios basales actúan como 'expertos'."
+    },
+    {
+      "q": "Sobre la amnesia retrógrada y la ley de Ribot, se establece en el texto que:",
+      "options": [
+        "Los nuevos recuerdos no se pierden",
+        "Los viejos se olvidan primero",
+        "Ninguna es correcta"
+      ],
+      "explanation": "Los recuerdos más recientes se pierden antes y más; los antiguos son más resistentes.",
+      "correct": 2,
+      "hint": "Existe una relación inversa entre la antigüedad del recuerdo y su vulnerabilidad."
+    },
+    {
+      "q": "En la vía visual ventral del aprendizaje perceptivo, su función principal es:",
+      "options": [
+        "Localizar la posición del objeto",
+        "Guiar el movimiento hacia el objeto",
+        "Ninguna es correcta"
+      ],
+      "explanation": "La vía ventral identifica 'qué' es el objeto; la dorsal es la que localiza 'dónde'.",
+      "correct": 2,
+      "hint": "Se conoce habitualmente como la vía del 'qué'."
+    },
+    {
+      "q": "Sobre el almacenamiento de la memoria según el paradigma de Fuster, es cierto que:",
+      "options": [
+        "Es una zona aislada del cerebro",
+        "Es una propiedad del hipocampo",
+        "Ninguna es correcta"
+      ],
+      "explanation": "Es una propiedad funcional de la corteza cerebral, no una zona aislada ni exclusiva del hipocampo.",
+      "correct": 2,
+      "hint": "Se basa en la organización de redes neuronales corticales."
+    },
+    {
+      "q": "Los receptores AMPA intervienen en la PLP facilitando principalmente:",
+      "options": [
+        "La expulsión del ión magnesio",
+        "La entrada de iones de cloruro",
+        "Ninguna es correcta"
+      ],
+      "explanation": "Los AMPA facilitan los PEPS al activarse por glutamato, no expulsan magnesio (función NMDA) ni meten cloro.",
+      "correct": 2,
+      "hint": "Su papel es aumentar la excitabilidad postsináptica neta."
+    },
+    {
+      "q": "En el aprendizaje motor, se especifica que para realizar 'punto' se requiere:",
+      "options": [
+        "Movimientos de tipo muy grueso",
+        "Ausencia de guía de tipo sensorial",
+        "Ninguna es correcta"
+      ],
+      "explanation": "Requiere movimientos finos y siempre necesita guía sensorial del entorno.",
+      "correct": 2,
+      "hint": "Es el ejemplo usado para ilustrar la motricidad fina."
+    },
+    {
+      "q": "La amnesia global transitoria se caracteriza fisiológicamente por afectar a:",
+      "options": [
+        "La memoria de tipo procedimental",
+        "Los ganglios basales directamente",
+        "Ninguna es correcta"
+      ],
+      "explanation": "Afecta gravemente a la memoria episódica anterógrada y suele implicar a la formación hipocámpica.",
+      "correct": 2,
+      "hint": "Es un síndrome amnésico que preserva las destrezas motoras."
+    },
+    {
+      "q": "Respecto a la neurogénesis en el hipocampo adulto, el texto afirma que:",
+      "options": [
+        "Disminuye con juguetes nuevos",
+        "Empeora el laberinto de Morris",
+        "Ninguna es correcta"
+      ],
+      "explanation": "Aumenta con la exploración de objetos (jaula enriquecida) y mejora la ejecución en el laberinto.",
+      "correct": 2,
+      "hint": "La estimulación ambiental tiene un efecto positivo en la plasticidad."
+    },
+    {
+      "q": "Sobre la potenciación a largo plazo presináptica, los estudios han observado:",
+      "options": [
+        "Menor liberación de glutamato",
+        "Reducción del tamaño del botón",
+        "Ninguna es correcta"
+      ],
+      "explanation": "Se observa un aumento de la cantidad de glutamato liberado por los terminales nerviosos.",
+      "correct": 2,
+      "hint": "La eficiencia aumenta también desde el lado emisor de la señal."
+    },
+    {
+      "q": "La jerarquía ejecutiva de Fuster sitúa en su nivel más concreto o elemental a:",
+      "options": [
+        "Los planes de acción complejos",
+        "Las acciones de tipo conceptual",
+        "Ninguna es correcta"
+      ],
+      "explanation": "El nivel más concreto son los actos simples (corteza motora primaria).",
+      "correct": 2,
+      "hint": "Corresponde a los movimientos básicos antes de ser integrados en planes."
+    },
+    {
+      "q": "En el condicionamiento de miedo, el núcleo central de la amígdala conecta con:",
+      "options": [
+        "La corteza visual únicamente",
+        "Los ganglios basales superiores",
+        "Ninguna es correcta"
+      ],
+      "explanation": "Conecta con el hipotálamo, mesencéfalo, protuberancia y bulbo raquídeo.",
+      "correct": 2,
+      "hint": "Sus proyecciones van hacia centros de control autonómico y motor del tronco."
+    },
+    {
+      "q": "Según Tulving (1983), la recodificación es un proceso que ocurre:",
+      "options": [
+        "Antes de la codificación original",
+        "Durante la fase de sensibilización",
+        "Ninguna es correcta"
+      ],
+      "explanation": "Ocurre después de la codificación de un suceso original.",
+      "correct": 2,
+      "hint": "Es una operación post-adquisición que modifica la huella."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "¿Cómo se diferencian el aprendizaje y la memoria desde una perspectiva psicobiológica frente a una perspectiva conductual según el texto?",
+      "model": "Desde el punto de vista conductual, el aprendizaje se define como el proceso de codificación de nuevas habilidades o conocimientos mediante la experiencia. Sin embargo, la perspectiva psicobiológica va más allá, definiéndolos como procesos capaces de generar cambios estructurales y funcionales observables en el sistema nervioso. La clave reside en la modificación de la eficacia de la transmisión sináptica; la experiencia no se guarda como un dato estático, sino que altera físicamente las redes neuronales y los sistemas de neurotransmisión.",
+      "keywords": [
+        "transmisión sináptica",
+        "cambios estructurales",
+        "codificación",
+        "representación mental"
+      ]
+    },
+    {
+      "q": "Explique la importancia de la atención y la motivación en el subproceso de codificación.",
+      "model": "La codificación es el único subproceso incluido estrictamente en el aprendizaje. Consiste en transformar los estímulos sensoriales en representaciones mentales significativas. El texto destaca que la atención y la motivación son factores determinantes en este resultado; sin una atención selectiva y un estado motivacional adecuado, la información no logra integrarse en las estructuras cognitivas previas, impidiendo que los procesos posteriores de consolidación y almacenamiento generen un recuerdo duradero.",
+      "keywords": [
+        "codificación",
+        "atención",
+        "motivación",
+        "representación mental"
+      ]
+    },
+    {
+      "q": "Analice el papel de la consolidación como nexo entre el aprendizaje y la memoria a largo plazo.",
+      "model": "La consolidación es el primer subproceso de la memoria (post-aprendizaje). Actúa reforzando los cambios asociados a la información inicial codificada mediante su transferencia a la memoria a corto plazo. Es fundamental porque constituye la base biológica para un cambio permanente en el sistema nervioso, permitiendo que la huella de memoria sea lo suficientemente estable como para pasar posteriormente a la fase de almacenamiento a largo plazo.",
+      "keywords": [
+        "consolidación",
+        "memoria a corto plazo",
+        "refuerzo",
+        "estabilidad"
+      ]
+    },
+    {
+      "q": "Describa el concepto de 'recodificación' propuesto por Tulving y su relevancia en el almacenamiento.",
+      "model": "Tulving define la recodificación como los procesos u operaciones que ocurren después de la codificación de un suceso original y que provocan cambios en las huellas de memoria. En el almacenamiento, la información no es estática; se organiza mediante esquemas (unidades estructuradas de conocimiento) en redes neuronales interconectadas. La recodificación permite que la información almacenada se reorganize y transforme continuamente.",
+      "keywords": [
+        "recodificación",
+        "Tulving",
+        "huellas de memoria",
+        "esquemas"
+      ]
+    },
+    {
+      "q": "Compare los mecanismos y efectos de la sensibilización y la habituación en el aprendizaje no asociativo.",
+      "model": "Ambas son formas simples de aprendizaje ante estímulos repetidos. La sensibilización implica un aumento en la tasa de respuesta ante un estímulo amenazante o nuevo, mediado por un incremento de la transmisión sináptica. Por el contrario, la habituación supone un debilitamiento de la respuesta ante estímulos benignos, acompañado de una disminución de la transmisión sináptica. Mientras la primera prepara al organismo para la acción, la segunda permite ahorrar recursos ante estímulos irrelevantes.",
+      "keywords": [
+        "sensibilización",
+        "habituación",
+        "transmisión sináptica",
+        "estímulo benigno"
+      ]
+    },
+    {
+      "q": "¿En qué se diferencia el aprendizaje relacional de los tipos de aprendizaje asociativo más simples (perceptivo, E-R, motor)?",
+      "model": "A diferencia del aprendizaje perceptivo (reconocimiento), el motor (habilidades) o el estímulo-respuesta (asociaciones directas), el aprendizaje relacional es el más complejo. Implica comprender y establecer conexiones entre diferentes elementos de información, como patrones complejos, relaciones causa-efecto o aprendizaje espacial. Requiere la activación de redes neuronales mucho más amplias y es esencial para la construcción de conocimiento abstracto y contextualizado.",
+      "keywords": [
+        "aprendizaje relacional",
+        "complejidad",
+        "redes neuronales",
+        "causa-efecto"
+      ]
+    },
+    {
+      "q": "Explique el funcionamiento de la memoria sensorial como filtro inicial de la información según el modelo multialmacén.",
+      "model": "La memoria sensorial es un sistema no consciente con una duración brevísima (200-500 ms) pero con capacidad ilimitada para registrar información sensorial literal (multisensorial). Su función técnica es actuar como un filtro inicial: permite percibir y organizar la información entrante del exterior para decidir qué elementos pasarán a la memoria operativa para un procesamiento consciente.",
+      "keywords": [
+        "memoria sensorial",
+        "filtro",
+        "no consciente",
+        "capacidad ilimitada"
+      ]
+    },
+    {
+      "q": "Argumente por qué la memoria operativa es crucial para la guía de la conducta dirigida a metas.",
+      "model": "La memoria operativa (o a corto plazo) es consciente y limitada en capacidad. Su relevancia radica en que mantiene la información activa durante segundos o minutos, funcionando como una guía para la conducta actual. Permite manipular datos en tiempo real para resolver problemas o alcanzar objetivos inmediatos, sirviendo de puente hacia el almacenamiento permanente si la información es consolidada.",
+      "keywords": [
+        "memoria operativa",
+        "consciente",
+        "objetivo",
+        "guía de la conducta"
+      ]
+    },
+    {
+      "q": "Contraste las características de la memoria declarativa frente a la no declarativa en cuanto a su adquisición y consciencia.",
+      "model": "La memoria declarativa ('saber qué') es explícita, requiere consciencia tanto para su adquisición como para su evocación, y puede formarse tras una sola experiencia. Incluye hechos (semántica) y eventos (episódica). La memoria no declarativa ('saber cómo') es implícita e incidental; su establecimiento suele ser lento, progresivo y automático (hábitos, destrezas), y no requiere de la consciencia para manifestarse.",
+      "keywords": [
+        "explícita",
+        "implícita",
+        "consciencia",
+        "progresivo"
+      ]
+    },
+    {
+      "q": "Explique la Potenciación a Largo Plazo (PLP) como manifestación biológica del principio de Hebb.",
+      "model": "El principio de Hebb postula que 'las sinapsis que se activan juntas, responden juntas'. La PLP es la manifestación biológica de esto: consiste en un aumento duradero de la fuerza de las conexiones sinápticas tras una estimulación de alta frecuencia. En la formación hipocámpica, se observa que cuando una neurona presináptica estimula repetidamente a una postsináptica, la eficacia de esa conexión aumenta, lo que constituye la base física del aprendizaje.",
+      "keywords": [
+        "PLP",
+        "Hebb",
+        "fuerza sináptica",
+        "hipocampo"
+      ]
+    },
+    {
+      "q": "Describa el papel crítico del magnesio ($Mg^{2+}$) en el bloqueo de los receptores NMDA.",
+      "model": "En condiciones de reposo, el canal del receptor NMDA está bloqueado por iones de magnesio, lo que impide la entrada de calcio incluso si hay glutamato presente. Para que el magnesio sea expulsado, la membrana postsináptica debe estar despolarizada (por la activación previa de receptores AMPA). Este mecanismo convierte al receptor NMDA en un detector de coincidencias: solo se activa cuando hay glutamato y despolarización simultánea.",
+      "keywords": [
+        "NMDA",
+        "magnesio",
+        "calcio",
+        "despolarización"
+      ]
+    },
+    {
+      "q": "Explique cómo la inserción de receptores AMPA fortalece la sinapsis durante la PLP.",
+      "model": "La instauración final de la PLP requiere la migración e inserción de nuevos receptores AMPA desde el interior de la célula hacia la membrana de las espinas dendríticas. Como los receptores AMPA responden al glutamato generando potenciales excitatorios (PEPS), una mayor cantidad de estos receptores permite que la neurona postsináptica responda con más fuerza ante la misma cantidad de neurotransmisor, incrementando así la eficacia sináptica.",
+      "keywords": [
+        "AMPA",
+        "glutamato",
+        "fortalecimiento",
+        "PEPS"
+      ]
+    },
+    {
+      "q": "Detalle los cambios estructurales postsinápticos que resultan de la potenciación a largo plazo.",
+      "model": "Más allá de los cambios moleculares, la PLP provoca alteraciones morfológicas. Las espinas dendríticas cambian su forma y tamaño, pasando de ser delgadas a gruesas (en forma de hongo). Además, se produce el crecimiento de nuevas espinas dendríticas que establecen contactos sinápticos adicionales con los terminales nerviosos presinápticos, aumentando físicamente la conectividad.",
+      "keywords": [
+        "espinas dendríticas",
+        "forma de hongo",
+        "neuroplasticidad",
+        "morfología"
+      ]
+    },
+    {
+      "q": "¿Por qué el hipocampo es fundamental para la memoria episódica pero no para el almacenamiento a largo plazo?",
+      "model": "El hipocampo es esencial para la codificación de relaciones y la consolidación de la memoria declarativa (especialmente episódica y espacial). Sin él, los recuerdos serían datos aislados sin contexto. Sin embargo, no es el almacén definitivo; tras la consolidación, las huellas de memoria se transfieren a la corteza cerebral. El hipocampo actúa como un 'director de orquesta' que organiza y enlaza la información distribuida en la corteza.",
+      "keywords": [
+        "hipocampo",
+        "consolidación",
+        "memoria episódica",
+        "director de orquesta"
+      ]
+    },
+    {
+      "q": "Explique la relación entre el hipocampo y el aprendizaje espacial basándose en el modelo del laberinto de Morris.",
+      "model": "En el laberinto de Morris, si el animal parte siempre del mismo sitio (aprendizaje E-R), no requiere el hipocampo. Pero si parte de distintas localizaciones (aprendizaje relacional), el hipocampo es imprescindible para crear mapas cognitivos. Esto se apoya en la existencia de células especializadas (de lugar, cuadrícula, borde y dirección) que generan una representación interna del espacio.",
+      "keywords": [
+        "laberinto de Morris",
+        "aprendizaje relacional",
+        "mapas cognitivos",
+        "células de lugar"
+      ]
+    },
+    {
+      "q": "Analice el circuito cerebral implicado en el establecimiento de una respuesta emocional condicionada de miedo en la amígdala.",
+      "model": "La información del estímulo condicionado (tono) y el incondicionado (descarga) converge en el núcleo lateral de la amígdala. Esta convergencia fortalece las sinapsis mediante PLP (inserción de receptores AMPA). Posteriormente, el núcleo lateral envía la señal al núcleo central, que activa el hipotálamo y el tronco del encéfalo para evocar la respuesta fisiológica y conductual de miedo.",
+      "keywords": [
+        "núcleo lateral",
+        "núcleo central",
+        "miedo",
+        "convergencia"
+      ]
+    },
+    {
+      "q": "Describa las tres fases de la conversión de una conducta motora compleja en un hábito en los ganglios basales.",
+      "model": "1) Fase cognitiva: Adquisición lenta y pausada donde los ganglios basales son observadores pasivos. 2) Fase asociativa: Mayor implicación del cuerpo estriado (caudado y putamen) y globo pálido a través de conexiones corticoestriatales. 3) Fase de automatización: Los ganglios basales se vuelven expertos, asumiendo el control de los detalles y logrando una ejecución rápida y precisa (hábito).",
+      "keywords": [
+        "ganglios basales",
+        "cuerpo estriado",
+        "automatización",
+        "hábito"
+      ]
+    },
+    {
+      "q": "Compare las funciones de la corteza motora suplementaria y la corteza premotora en el aprendizaje motor.",
+      "model": "La corteza motora suplementaria interviene específicamente en la realización de series de conductas automáticas que ya han sido aprendidas previamente. Por otro lado, la corteza premotora tiene un papel más centrado en la memoria guiada por la información sensorial externa, es decir, cuando la acción debe ajustarse a lo que se percibe en el entorno en ese momento.",
+      "keywords": [
+        "corteza motora suplementaria",
+        "corteza premotora",
+        "automatismo",
+        "guía sensorial"
+      ]
+    },
+    {
+      "q": "Explique el papel de la corteza prefrontal dorsolateral en la memoria de trabajo.",
+      "model": "Esta región es crítica para la manipulación activa de la información y el mantenimiento temporal de datos relevantes para la tarea actual. Interviene en procesos cognitivos superiores como la planificación, la toma de decisiones, la organización de la información que debe ser recordada y la regulación de la atención para supervisar el proceso de recuperación.",
+      "keywords": [
+        "corteza prefrontal dorsolateral",
+        "memoria de trabajo",
+        "planificación",
+        "atención"
+      ]
+    },
+    {
+      "q": "Describa las dos vías de la corteza visual de asociación (ventral y dorsal) y su implicación en la memoria perceptiva.",
+      "model": "La vía ventral (o vía del 'qué') se dirige hacia la corteza temporal inferior y es responsable de identificar y reconocer objetos. La vía dorsal (o vía del 'dónde') se dirige hacia la corteza parietal posterior y localiza los objetos en el espacio. El área facial fusiforme en la vía ventral es un ejemplo de especialización para el reconocimiento de rostros.",
+      "keywords": [
+        "vía ventral",
+        "vía dorsal",
+        "temporal",
+        "parietal"
+      ]
+    },
+    {
+      "q": "¿Qué es la prosopagnosia y con qué lesión cerebral se relaciona?",
+      "model": "La prosopagnosia es la incapacidad para reconocer rostros. Se produce por una lesión en una región muy concreta de la vía ventral de la corteza visual de asociación, denominada área facial fusiforme. Este trastorno demuestra la especificidad modular de la corteza en el procesamiento y memoria perceptiva de categorías visuales complejas.",
+      "keywords": [
+        "prosopagnosia",
+        "área facial fusiforme",
+        "vía ventral",
+        "reconocimiento"
+      ]
+    },
+    {
+      "q": "Explique los principios fundamentales del paradigma reticular de la memoria propuesto por Fuster.",
+      "model": "Fuster defiende que la memoria es una propiedad funcional de la corteza, representada en redes neuronales o 'cognitos' distribuidos y superpuestos. No hay un almacén único; la información se organiza jerárquicamente desde lo elemental a lo abstracto. Además, integra la percepción y la acción en un ciclo continuo, donde la corteza posterior (perceptiva) y la frontal (ejecutiva) están estrechamente interconectadas.",
+      "keywords": [
+        "paradigma reticular",
+        "Fuster",
+        "cognitos",
+        "jerarquía"
+      ]
+    },
+    {
+      "q": "Diferencie entre la jerarquía perceptual y la jerarquía ejecutiva en el modelo de Fuster.",
+      "model": "La jerarquía perceptual (corteza posterior) va desde la memoria sensorial y sensaciones simples hasta la memoria episódica, semántica y conceptos abstractos. La jerarquía ejecutiva (corteza frontal) va desde los actos simples e innatos hasta programas, planes de acción y acciones conceptuales abstractas. Ambas jerarquías se comunican para cerrar el ciclo percepción-acción.",
+      "keywords": [
+        "jerarquía perceptual",
+        "jerarquía ejecutiva",
+        "corteza posterior",
+        "corteza frontal"
+      ]
+    },
+    {
+      "q": "Analice el ciclo percepción-acción mediante el ejemplo de aprender a tocar un instrumento.",
+      "model": "Al tocar el piano, primero hay una percepción sensorial (teclas, sonido). Esta información guía la acción motora (mover dedos). El resultado de la acción genera retroalimentación sensorial (¿suena bien?), que el cerebro procesa para ajustar y mejorar la siguiente acción. Este proceso cíclico y continuo permite el perfeccionamiento de la conducta a través de la integración constante de nueva información.",
+      "keywords": [
+        "percepción-acción",
+        "retroalimentación",
+        "ajuste",
+        "perfeccionamiento"
+      ]
+    },
+    {
+      "q": "Compare la amnesia anterógrada y la retrógrada en términos de temporalidad y tipo de información afectada.",
+      "model": "La amnesia anterógrada es la incapacidad de formar nuevos recuerdos (especialmente declarativos-episódicos) tras la lesión. La amnesia retrógrada es la incapacidad de recuperar información almacenada antes de la lesión. La pérdida en la retrógrada suele seguir la ley de Ribot, afectando más a los recuerdos recientes que a los antiguos, mientras que en la anterógrada el sujeto vive en un 'eterno presente'.",
+      "keywords": [
+        "anterógrada",
+        "retrógrada",
+        "Ley de Ribot",
+        "lesión cerebral"
+      ]
+    },
+    {
+      "q": "Analice la Ley de Ribot en el contexto de la amnesia retrógrada.",
+      "model": "La ley de Ribot establece que los recuerdos se pierden en función de su antigüedad: los más recientes son los más vulnerables y se pierden primero, mientras que los más antiguos son los más resistentes y se recuperan antes. Esto sugiere que el proceso de consolidación a largo plazo lleva años y que los recuerdos antiguos están más ampliamente distribuidos o mejor anclados en la corteza.",
+      "keywords": [
+        "Ley de Ribot",
+        "recuerdos recientes",
+        "consolidación",
+        "resistencia"
+      ]
+    },
+    {
+      "q": "¿Qué funciones de memoria permanecieron intactas en el paciente HM y qué nos enseñó esto sobre el hipocampo?",
+      "model": "HM conservó la memoria a corto plazo (podía mantener conversaciones) y la memoria retrógrada remota (recordaba su infancia). También conservó la capacidad de aprendizaje no declarativo (procedimental). Esto demostró que el hipocampo no es el almacén de la memoria a corto ni a largo plazo, sino que su función específica es la consolidación: convertir la memoria a corto plazo en memoria declarativa a largo plazo.",
+      "keywords": [
+        "Paciente HM",
+        "consolidación",
+        "memoria intacta",
+        "lóbulo temporal medial"
+      ]
+    },
+    {
+      "q": "Explique la utilidad de las técnicas de neuroimagen (fMRI, PET) en la evaluación de trastornos de la memoria.",
+      "model": "Las técnicas de neuroimagen son fundamentales para el diagnóstico clínico, ya que permiten observar la actividad y estructura cerebral en vivo. Se utilizan para identificar patrones de atrofia o hipometabolismo en enfermedades como el Alzheimer, la esquizofrenia o el autismo, facilitando la identificación de marcadores biológicos de riesgo y la evaluación de la eficacia de los tratamientos.",
+      "keywords": [
+        "fMRI",
+        "PET",
+        "diagnóstico",
+        "Alzheimer"
+      ]
+    },
+    {
+      "q": "Describa el papel de la realidad virtual y los simuladores en la rehabilitación cognitiva de la memoria.",
+      "model": "Estas tecnologías se emplean en programas de rehabilitación para pacientes con daño cerebral o accidentes cerebrovasculares. Permiten crear entornos controlados y seguros donde los pacientes pueden practicar tareas de la vida diaria, mejorando la memoria operativa y episódica mediante la repetición y el feedback constante, facilitando la independencia funcional del sujeto.",
+      "keywords": [
+        "realidad virtual",
+        "rehabilitación cognitiva",
+        "daño cerebral",
+        "independencia"
+      ]
+    },
+    {
+      "q": "¿Cómo contribuyen los estudios genéticos y epigenéticos a la prevención del deterioro cognitivo?",
+      "model": "Permiten la identificación de marcadores de riesgo genético antes de que aparezcan los síntomas clínicos. Este conocimiento facilita el desarrollo de estrategias preventivas personalizadas y de intervención temprana, permitiendo actuar sobre los factores que aceleran el deterioro de la memoria y optimizar el envejecimiento saludable.",
+      "keywords": [
+        "genética",
+        "epigenética",
+        "prevención",
+        "deterioro cognitivo"
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Introducción y Definiciones",
+      "q": "¿Cómo define el aprendizaje el enfoque conductual según el texto?",
+      "a": "Es el proceso por el cual las experiencias vividas permiten la codificación de nuevas habilidades, conocimientos o comportamientos."
+    },
+    {
+      "cat": "Introducción y Definiciones",
+      "q": "¿Cuál es la definición psicobiológica de los procesos de aprendizaje y memoria?",
+      "a": "Es la capacidad de generar cambios observables en la estructura y funcionamiento del sistema nervioso mediante la modificación de la transmisión sináptica."
+    },
+    {
+      "cat": "Introducción y Definiciones",
+      "q": "¿Qué relación existe entre el aprendizaje y la memoria en el continuo de subprocesos?",
+      "a": "Son procesos diferenciados que forman un continuo donde el aprendizaje adquiere la información y la memoria forma los recuerdos persistentes."
+    },
+    {
+      "cat": "Introducción y Definiciones",
+      "q": "¿Qué sostiene el estudio de las bases psicobiológicas sobre el almacenamiento de experiencias?",
+      "a": "Que las experiencias no se guardan tal cual, sino que alteran física y funcionalmente el sistema nervioso mediante interacciones neuronales y neuroquímicas."
+    },
+    {
+      "cat": "Subprocesos de Memoria",
+      "q": "¿Qué tres procesos básicos de memoria planteó Baddeley (1997)?",
+      "a": "Codificación, almacenamiento y recuperación."
+    },
+    {
+      "cat": "Subprocesos de Memoria",
+      "q": "¿Qué subprocesos distingue Carlson (2018) dentro del modelo de procesamiento de la información?",
+      "a": "Diferencia la codificación (dentro del aprendizaje) de la consolidación, el almacenamiento y la recuperación (dentro de la memoria)."
+    },
+    {
+      "cat": "Subprocesos de Memoria",
+      "q": "¿En qué consiste el subproceso de codificación?",
+      "a": "Es la transformación de estímulos sensoriales en una representación mental significativa y asimilable por estructuras previas."
+    },
+    {
+      "cat": "Subprocesos de Memoria",
+      "q": "¿Qué dos factores psicológicos son cruciales para el éxito de la codificación?",
+      "a": "La atención y la motivación del sujeto."
+    },
+    {
+      "cat": "Subprocesos de Memoria",
+      "q": "¿Cuál es la función principal de la consolidación?",
+      "a": "Reforzar los cambios de la información codificada mediante su transferencia a la memoria a corto plazo para un cambio permanente."
+    },
+    {
+      "cat": "Subprocesos de Memoria",
+      "q": "¿Cómo se define el almacenamiento en términos de transferencia de información?",
+      "a": "Es el paso de la información consolidada desde la memoria a corto plazo hacia la memoria a largo plazo."
+    },
+    {
+      "cat": "Subprocesos de Memoria",
+      "q": "¿Qué son los 'esquemas' dentro del subproceso de almacenamiento?",
+      "a": "Unidades estructuradas de conocimiento que reúnen conceptos, categorías y relaciones en redes neuronales interconectadas."
+    },
+    {
+      "cat": "Subprocesos de Memoria",
+      "q": "¿Qué es la recodificación según Tulving (1983)?",
+      "a": "Operaciones que ocurren tras la codificación original y que provocan cambios en las huellas de memoria."
+    },
+    {
+      "cat": "Subprocesos de Memoria",
+      "q": "¿Qué permite el subproceso de recuperación?",
+      "a": "El acceso y uso de la información almacenada activando patrones neuronales previamente establecidos."
+    },
+    {
+      "cat": "Subprocesos de Memoria",
+      "q": "¿Qué diferencia hay entre la recuperación espontánea y la voluntaria?",
+      "a": "La espontánea surge de forma casual, mientras que la voluntaria requiere predisposición y estímulos o pistas específicas."
+    },
+    {
+      "cat": "Aprendizaje No Asociativo",
+      "q": "¿Qué caracteriza al aprendizaje no asociativo?",
+      "a": "Es la forma más simple de aprendizaje y ocurre ante la presentación repetida de un mismo estímulo o dos estímulos sin relación espacial/temporal."
+    },
+    {
+      "cat": "Aprendizaje No Asociativo",
+      "q": "¿Qué ocurre a nivel sináptico durante la sensibilización?",
+      "a": "Se produce un incremento de la transmisión sináptica de las neuronas sensoriales ante estímulos nuevos o amenazantes."
+    },
+    {
+      "cat": "Aprendizaje No Asociativo",
+      "q": "¿En qué consiste la habituación?",
+      "a": "Es el debilitamiento de la respuesta ante un estímulo benigno repetitivo, acompañado de una disminución de la transmisión sináptica."
+    },
+    {
+      "cat": "Aprendizaje No Asociativo",
+      "q": "¿Podrías dar un ejemplo de habituación mencionado en el texto?",
+      "a": "Dejar de reaccionar con alerta a una alarma de simulacro tras escucharla repetidamente sin que existan consecuencias peligrosas."
+    },
+    {
+      "cat": "Aprendizaje Asociativo",
+      "q": "¿Cuál es la definición general de aprendizaje asociativo?",
+      "a": "El establecimiento de conexiones entre estímulos o entre estímulos y respuestas que poseen relación espacial o temporal."
+    },
+    {
+      "cat": "Aprendizaje Asociativo",
+      "q": "¿Qué cuatro formas de aprendizaje asociativo distingue Carlson (2018)?",
+      "a": "Perceptivo, estímulo-respuesta, motor y relacional."
+    },
+    {
+      "cat": "Aprendizaje Asociativo",
+      "q": "¿En qué se centra el aprendizaje perceptivo?",
+      "a": "En reconocer estímulos sensoriales percibidos previamente para identificar y catalogar objetos y situaciones."
+    },
+    {
+      "cat": "Aprendizaje Asociativo",
+      "q": "¿Cuál es la utilidad del aprendizaje perceptivo en la toma de decisiones?",
+      "a": "Facilita la formación de representaciones mentales precisas del entorno que nos indican cómo debemos actuar."
+    },
+    {
+      "cat": "Aprendizaje Asociativo",
+      "q": "¿Qué conexiones establece el aprendizaje estímulo-respuesta?",
+      "a": "Conecta los circuitos que participan en la percepción con los circuitos que participan en el movimiento."
+    },
+    {
+      "cat": "Aprendizaje Asociativo",
+      "q": "¿Cómo funciona el condicionamiento clásico de Pávlov?",
+      "a": "Un estímulo neutro se asocia repetidamente con uno incondicionado hasta convertirse en condicionado y evocar una respuesta."
+    },
+    {
+      "cat": "Aprendizaje Asociativo",
+      "q": "¿Qué propone el condicionamiento operante de Skinner?",
+      "a": "La probabilidad de una conducta se modifica mediante las consecuencias (refuerzos o castigos) que siguen a dicha respuesta."
+    },
+    {
+      "cat": "Aprendizaje Asociativo",
+      "q": "¿Qué define al aprendizaje motor?",
+      "a": "Es un tipo de aprendizaje estímulo-respuesta que implica adquirir habilidades y coordinación mediante la práctica y guía sensorial."
+    },
+    {
+      "cat": "Aprendizaje Asociativo",
+      "q": "¿Qué diferencia el aprendizaje motor fino del grueso?",
+      "a": "El fino requiere precisión (ej. hacer punto) y el grueso involucra grandes grupos musculares (ej. jugar al tenis)."
+    },
+    {
+      "cat": "Aprendizaje Asociativo",
+      "q": "¿Por qué el aprendizaje relacional se considera el más complejo?",
+      "a": "Porque requiere comprender conexiones entre múltiples elementos y activar redes neuronales mucho más amplias."
+    },
+    {
+      "cat": "Aprendizaje Asociativo",
+      "q": "¿Qué es el aprendizaje espacial dentro del relacional?",
+      "a": "Es el proceso de familiarizarse con la ubicación y relación de los objetos en un entorno, como una habitación."
+    },
+    {
+      "cat": "Criterios Temporales de Memoria",
+      "q": "¿En qué se basan los modelos multialmacén de la memoria?",
+      "a": "En la idea de que la información se procesa a través de distintos almacenes especializados con funciones y características particulares."
+    },
+    {
+      "cat": "Criterios Temporales de Memoria",
+      "q": "¿Qué tres tipos de memoria distingue el modelo de Atkinson y Shiffrin (1968)?",
+      "a": "Memoria sensorial, memoria a corto plazo y memoria a largo plazo."
+    },
+    {
+      "cat": "Criterios Temporales de Memoria",
+      "q": "¿Cuáles son las características de la memoria sensorial?",
+      "a": "No es consciente, dura entre 200-500 milisegundos, tiene capacidad ilimitada y actúa como filtro inicial."
+    },
+    {
+      "cat": "Criterios Temporales de Memoria",
+      "q": "¿Qué caracteriza a la memoria a corto plazo?",
+      "a": "Es consciente, dura segundos o minutos, tiene capacidad limitada e incluye la memoria operativa para guiar la conducta."
+    },
+    {
+      "cat": "Criterios Temporales de Memoria",
+      "q": "¿Qué distingue a la memoria a largo plazo de las demás?",
+      "a": "Su duración es de días a años, su capacidad es ilimitada y puede ser consciente o no consciente."
+    },
+    {
+      "cat": "Criterios Cualitativos de Memoria",
+      "q": "¿Cuál es la diferencia fundamental entre memoria declarativa y no declarativa?",
+      "a": "La declarativa es el 'saber qué' (consciente/explícita), mientras que la no declarativa es el 'saber cómo' (implícita/procedimental)."
+    },
+    {
+      "cat": "Criterios Cualitativos de Memoria",
+      "q": "¿Qué incluye la memoria declarativa según el contenido?",
+      "a": "La memoria episódica (hechos biográficos) y la memoria semántica (conocimiento general)."
+    },
+    {
+      "cat": "Criterios Cualitativos de Memoria",
+      "q": "¿Cómo se adquiere típicamente la memoria no declarativa?",
+      "a": "De forma progresiva y lenta mediante ensayos reiterados y automatización, sin requerir consciencia."
+    },
+    {
+      "cat": "Criterios Cualitativos de Memoria",
+      "q": "¿Qué tipos de memoria forman parte de la no declarativa?",
+      "a": "Memoria procedimental, emocional y perceptiva."
+    },
+    {
+      "cat": "Potenciación a Largo Plazo (PLP)",
+      "q": "¿Qué es la Potenciación a Largo Plazo (PLP)?",
+      "a": "Un tipo de plasticidad sináptica consistente en el aumento duradero de la fuerza de las conexiones entre neuronas."
+    },
+    {
+      "cat": "Potenciación a Largo Plazo (PLP)",
+      "q": "¿Qué establece el principio de Hebb (1949)?",
+      "a": "Que las sinapsis que se activan juntas, responden juntas (fortalecimiento por activación simultánea)."
+    },
+    {
+      "cat": "Potenciación a Largo Plazo (PLP)",
+      "q": "¿Qué descubrió Lømo (1966) en relación con la vía perforante?",
+      "a": "Que la estimulación eléctrica de alta intensidad de la corteza entorrinal al giro dentado aumentaba los potenciales postsinápticos excitadores."
+    },
+    {
+      "cat": "Potenciación a Largo Plazo (PLP)",
+      "q": "¿Qué áreas componen la formación hipocámpica según la Figura 16?",
+      "a": "Corteza entorrinal, giro dentado, CA1, CA2, CA3 y subículo."
+    },
+    {
+      "cat": "Potenciación a Largo Plazo (PLP)",
+      "q": "¿Por qué una frecuencia alta produce PLP y una baja no?",
+      "a": "Porque el ritmo rápido permite que los potenciales postsinápticos excitatorios se sumen entre sí temporalmente."
+    },
+    {
+      "cat": "Potenciación a Largo Plazo (PLP)",
+      "q": "¿Qué dos sucesos iniciales son necesarios para instaurar la PLP?",
+      "a": "La activación de la sinapsis y la despolarización de la neurona postsináptica."
+    },
+    {
+      "cat": "Potenciación a Largo Plazo (PLP)",
+      "q": "¿Cuál es la función del Magnesio en los receptores NMDA?",
+      "a": "Bloquea el canal del receptor impidiendo la entrada de calcio, incluso si hay glutamato presente."
+    },
+    {
+      "cat": "Potenciación a Largo Plazo (PLP)",
+      "q": "¿Cómo se libera el canal del receptor NMDA?",
+      "a": "Mediante la despolarización de la membrana postsináptica, que expulsa los iones magnesio."
+    },
+    {
+      "cat": "Potenciación a Largo Plazo (PLP)",
+      "q": "¿Qué ion entra en la célula tras activarse el receptor NMDA y por qué es importante?",
+      "a": "El Calcio, el cual es el responsable de iniciar los cambios bioquímicos para la potenciación."
+    },
+    {
+      "cat": "Potenciación a Largo Plazo (PLP)",
+      "q": "¿Qué ocurre con los receptores AMPA durante la instauración de la PLP?",
+      "a": "Se insertan nuevos receptores AMPA desde el interior de la neurona hacia la membrana de las espinas dendríticas."
+    },
+    {
+      "cat": "Potenciación a Largo Plazo (PLP)",
+      "q": "¿Cómo afectan los receptores AMPA a la fuerza sináptica?",
+      "a": "Al aumentar su cantidad, la neurona responde con potenciales excitadores mayores ante la liberación de glutamato."
+    },
+    {
+      "cat": "Potenciación a Largo Plazo (PLP)",
+      "q": "¿Qué cambios presinápticos se asocian a la PLP?",
+      "a": "Un aumento en la cantidad de glutamato liberado por los terminales nerviosos."
+    },
+    {
+      "cat": "Potenciación a Largo Plazo (PLP)",
+      "q": "¿Qué cambios estructurales ocurren en las espinas dendríticas tras la PLP?",
+      "a": "Pasan de ser delgadas a gruesas (forma de hongo) y crecen nuevas espinas que conectan con terminales presinápticos."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Cuál es el rol del hipocampo en la memoria declarativa?",
+      "a": "Participa activamente en la codificación de huellas de aprendizaje relacional y en la consolidación de la memoria episódica."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Qué sucede con los recuerdos si el hipocampo está ausente?",
+      "a": "Los recuerdos serían aislados e individuales, impidiendo recordar contextos y episodios completos."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Qué demostró el laberinto acuático de Morris sobre el hipocampo?",
+      "a": "Que el hipocampo solo se implica cuando el animal debe partir de diferentes localizaciones (aprendizaje relacional)."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Qué efecto tiene un entorno enriquecido en el hipocampo de roedores?",
+      "a": "Aumenta el número de neuronas generadas (neurogénesis) y mejora la ejecución en tareas espaciales."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Qué tipos de células hipocampales contribuyen a la navegación espacial?",
+      "a": "Células de lugar, de cuadrícula, del borde y de dirección de la cabeza."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿A qué procesos contribuye la amígdala?",
+      "a": "Al aprendizaje emocional estímulo-respuesta, a la respuesta de miedo y a la consolidación de memorias emocionales."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Cómo se fortalece la respuesta de miedo en el núcleo lateral de la amígdala?",
+      "a": "Mediante PLP que fortalece las sinapsis cuando convergen la información del tono (auditiva) y la descarga (somatosensorial)."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Qué ocurre si se bloquea la inserción de receptores AMPA en la amígdala?",
+      "a": "Se anula el establecimiento del condicionamiento emocional de miedo."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Cuál es la función del núcleo central de la amígdala?",
+      "a": "Es el responsable de evocar la respuesta emocional de miedo conectando con el hipotálamo y el tronco cerebral."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Qué función cumplen los ganglios basales en el aprendizaje?",
+      "a": "Son esenciales para el aprendizaje motor estímulo-respuesta y la consolidación de memorias procedimentales (hábitos)."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Qué diferencia hay entre conexiones transcorticales y conexiones por ganglios basales?",
+      "a": "Las transcorticales son para respuestas voluntarias/deliberadas; los ganglios basales para automáticas/rutinarias."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Cómo actúan los ganglios basales en la fase cognitiva de un hábito?",
+      "a": "Actúan como meros observadores pasivos mientras la conducta se realiza de forma lenta y pausada."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Qué estructuras forman el cuerpo estriado?",
+      "a": "El núcleo caudado y el putamen."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Qué ocurre en la fase de automatización de una conducta motora?",
+      "a": "Los ganglios basales se vuelven expertos, asumiendo el control de los detalles y permitiendo una ejecución rápida y precisa."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Cuál es el papel de la corteza motora suplementaria?",
+      "a": "Interviene en la ejecución de series de conductas automáticas aprendidas previamente."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Por qué es imprescindible la corteza prefrontal en la fase cognitiva del aprendizaje motor?",
+      "a": "Porque se encarga de la planificación y toma de decisiones necesarias para adquirir conductas laboriosas y lentas."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Cómo se relaciona la corteza prefrontal con los ganglios basales en la fase asociativa?",
+      "a": "Inicia la transferencia de la conducta hacia los ganglios basales a través de conexiones corticoestriatocorticales."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Qué circuito sigue la información visual en el aprendizaje perceptivo?",
+      "a": "Núcleo geniculado lateral -> Corteza visual primaria -> Corteza extraestriada (vía ventral y dorsal)."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Qué diferencia la vía ventral de la vía dorsal en la visión?",
+      "a": "La vía ventral identifica 'qué' es el objeto; la vía dorsal localiza 'dónde' está."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Qué patología se produce por lesión en el área facial fusiforme?",
+      "a": "La prosopagnosia (incapacidad para reconocer rostros)."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Cómo colabora la corteza prefrontal con la asociación visual en la memoria a corto plazo?",
+      "a": "Gestiona y organiza la información, formula estrategias de recuperación y supervisa el proceso."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Dónde reside el almacén fundamental de la memoria declarativa?",
+      "a": "En la corteza límbica del lóbulo temporal medial."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Qué área es esencial para la memoria semántica y qué ocurre en su demencia?",
+      "a": "La región anterolateral del lóbulo temporal; su deterioro causa demencia semántica."
+    },
+    {
+      "cat": "Bases Neuroanatómicas",
+      "q": "¿Por qué la corteza prefrontal dorsolateral es clave para la memoria de trabajo?",
+      "a": "Se encarga de la manipulación activa y mantenimiento temporal de los datos relevantes para la tarea actual."
+    },
+    {
+      "cat": "Paradigma Reticular de Fuster",
+      "q": "¿Qué defiende el paradigma reticular de Fuster (2003)?",
+      "a": "Que la memoria es una propiedad funcional de la corteza, resultado de redes neuronales (cognitos) jerárquicas moduladas por la experiencia."
+    },
+    {
+      "cat": "Paradigma Reticular de Fuster",
+      "q": "¿Puede una sola neurona formar parte de diferentes redes según Fuster?",
+      "a": "Sí, las redes neuronales están superpuestas y entrecruzadas, compartiendo neuronas comunes."
+    },
+    {
+      "cat": "Paradigma Reticular de Fuster",
+      "q": "¿Qué dos grandes tipos de memoria jerárquica distingue Fuster?",
+      "a": "La memoria perceptual (corteza posterior) y la memoria ejecutiva (corteza frontal)."
+    },
+    {
+      "cat": "Paradigma Reticular de Fuster",
+      "q": "¿Qué niveles componen la jerarquía perceptual de Fuster?",
+      "a": "Desde lo más concreto a lo abstracto: memoria sensorial, episódica, semántica y conceptos perceptuales."
+    },
+    {
+      "cat": "Paradigma Reticular de Fuster",
+      "q": "¿Qué niveles componen la jerarquía ejecutiva de Fuster?",
+      "a": "Desde lo concreto a lo abstracto: actos simples, programas/planes de acción y acciones conceptuales."
+    },
+    {
+      "cat": "Paradigma Reticular de Fuster",
+      "q": "¿En qué consiste el ciclo de percepción-acción?",
+      "a": "Es la integración donde la percepción guía la acción y la acción genera nueva información perceptual en un proceso continuo."
+    },
+    {
+      "cat": "Paradigma Reticular de Fuster",
+      "q": "¿Qué representan las flechas verdes en el esquema de Fuster?",
+      "a": "Las conexiones entre jerarquías perceptivas y ejecutivas críticas para el ciclo percepción-acción."
+    },
+    {
+      "cat": "Paradigma Reticular de Fuster",
+      "q": "¿Cómo se ajustan los movimientos en el ejemplo del piano según Fuster?",
+      "a": "A través de la retroalimentación inmediata (percepción del sonido/tacto) que permite al cerebro ajustar la coordinación motora."
+    },
+    {
+      "cat": "Alteraciones de la Memoria",
+      "q": "¿Cómo se define la amnesia anterógrada?",
+      "a": "Como la incapacidad para adquirir nuevos aprendizajes y retener material nuevo a partir del daño cerebral."
+    },
+    {
+      "cat": "Alteraciones de la Memoria",
+      "q": "¿Qué es la amnesia retrógrada?",
+      "a": "La incapacidad para recuperar información que ya estaba almacenada antes de que ocurriera el daño cerebral."
+    },
+    {
+      "cat": "Alteraciones de la Memoria",
+      "q": "¿Qué establece la ley de Ribot?",
+      "a": "Que en la amnesia retrógrada se pierden antes y en mayor proporción los recuerdos más recientes."
+    },
+    {
+      "cat": "Alteraciones de la Memoria",
+      "q": "¿Qué tipo de memoria suele preservarse en los síndromes amnésicos hipocámpicos?",
+      "a": "La memoria inmediata (corto plazo), la no declarativa y el lenguaje."
+    },
+    {
+      "cat": "Alteraciones de la Memoria",
+      "q": "¿Qué intervención quirúrgica se le realizó al paciente HM?",
+      "a": "Una lobotomía bilateral del lóbulo temporal medial, extirpando hipocampos y amígdalas."
+    },
+    {
+      "cat": "Alteraciones de la Memoria",
+      "q": "¿Cuál fue la principal secuela cognitiva de HM?",
+      "a": "Una pérdida severa de la capacidad para formar nuevas memorias declarativas (amnesia anterógrada masiva)."
+    },
+    {
+      "cat": "Alteraciones de la Memoria",
+      "q": "¿Qué demostró HM sobre el hipocampo y la memoria a corto plazo?",
+      "a": "Demostró que el hipocampo NO es el almacén de la memoria a corto plazo, ya que podía mantener conversaciones."
+    },
+    {
+      "cat": "Alteraciones de la Memoria",
+      "q": "¿Qué demostró HM sobre el hipocampo y la memoria a largo plazo?",
+      "a": "Demostró que el hipocampo NO es el almacén de la memoria a largo plazo, pues recordaba su infancia."
+    },
+    {
+      "cat": "Alteraciones de la Memoria",
+      "q": "¿Cuál es la conclusión sobre la función del hipocampo según el caso HM?",
+      "a": "Interviene en la transformación de la memoria a corto plazo hacia la memoria a largo plazo (consolidación)."
+    },
+    {
+      "cat": "Alteraciones de la Memoria",
+      "q": "¿Dónde se localizan finalmente las huellas de memoria declarativa?",
+      "a": "En la corteza cerebral, aunque su consolidación dependa de la red con el hipocampo."
+    },
+    {
+      "cat": "Alteraciones de la Memoria",
+      "q": "¿Por qué se llama al hipocampo 'director de orquesta' de la memoria?",
+      "a": "Porque organiza la información de la memoria mediante una red de conexiones bidireccionales con la corteza."
+    },
+    {
+      "cat": "Investigación y Futuro",
+      "q": "¿Para qué sirve la fMRI y la PET en la evaluación de la memoria?",
+      "a": "Para evaluar trastornos como Alzheimer, autismo o esquizofrenia mediante la observación de la actividad cerebral."
+    },
+    {
+      "cat": "Investigación y Futuro",
+      "q": "¿Qué técnicas de estimulación se investigan para tratar trastornos neuropsiquiátricos?",
+      "a": "La estimulación magnética transcraneal (TMS) y la estimulación cerebral profunda (DBS)."
+    },
+    {
+      "cat": "Investigación y Futuro",
+      "q": "¿Cómo ayuda la realidad virtual en la rehabilitación cognitiva?",
+      "a": "Se incluye en programas para mejorar la memoria tras accidentes cerebrovasculares o lesiones traumáticas."
+    },
+    {
+      "cat": "Investigación y Futuro",
+      "q": "¿Qué papel juegan los estudios genéticos en la prevención del deterioro cognitivo?",
+      "a": "Permiten identificar marcadores de riesgo para desarrollar estrategias de intervención temprana."
+    },
+    {
+      "cat": "Investigación y Futuro",
+      "q": "¿Qué aplicaciones tienen las tecnologías adaptativas en personas con deterioro de memoria?",
+      "a": "Facilitan la vida diaria y la independencia mediante dispositivos de asistencia diseñados con neurociencia cognitiva."
+    }
+  ]
+}

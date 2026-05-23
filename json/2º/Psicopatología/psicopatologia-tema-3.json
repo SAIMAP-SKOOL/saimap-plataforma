@@ -1,0 +1,2463 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es correcto afirmar que la ansiedad se considera patológica incluso cuando existe una amenaza real si esta dificulta la adaptación?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Revisa la definición de ansiedad adaptativa frente a la patológica en la introducción del capítulo.",
+      "explanation": "La ansiedad es patológica si NO existe realmente una amenaza y dificulta la adaptación; si hay amenaza, es una señal de alerta adaptativa."
+    },
+    {
+      "q": "¿Es la fobia específica el trastorno de ansiedad con mayor duración mínima requerida para el diagnóstico según los criterios del DSM-5?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Compara los tiempos de persistencia de la fobia específica con los del trastorno de ansiedad generalizada.",
+      "explanation": "Tanto la fobia específica como el TAG y la agorafobia requieren típicamente seis meses; no es el trastorno con mayor duración requerida, sino igual a otros."
+    },
+    {
+      "q": "¿Se especifica en el manual que las fobias a los animales suelen tener su inicio habitual durante la etapa de la niñez?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Consulta el apartado de epidemiología y curso de las fobias específicas.",
+      "explanation": "El texto indica explícitamente que las fobias a animales suelen iniciarse en la niñez, a diferencia de otras que pueden surgir más tarde."
+    },
+    {
+      "q": "¿Es el tratamiento farmacológico un componente esencial recomendado para alcanzar resultados satisfactorios en las fobias específicas?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Revisa la revisión de Capafons (2001) sobre la eficacia de las intervenciones.",
+      "explanation": "Según Capafons, los tratamientos farmacológicos no parecen aportar efectos beneficiosos en la fobia específica, ni solos ni combinados."
+    },
+    {
+      "q": "¿Se caracteriza la respuesta motora del trastorno de ansiedad social principalmente por la presencia de constantes autoevaluaciones?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Distingue entre respuestas cognitivas, fisiológicas y motoras según la clasificación del texto.",
+      "explanation": "La autoevaluación es una respuesta cognitiva; la respuesta motora se caracteriza por conductas de seguridad como evitación y escape."
+    },
+    {
+      "q": "¿Es la timidez considerada por algunos investigadores como un factor de vulnerabilidad biológica para desarrollar fobia social?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Revisa los planteamientos de Salaberría y Echeburúa (1998) sobre la timidez.",
+      "explanation": "Salaberría y Echeburúa plantean que la timidez constituye un factor biológico de vulnerabilidad a la fobia social."
+    },
+    {
+      "q": "¿Presenta la fobia social un grado de heredabilidad significativo en comparación con el que presenta la timidez normal?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Observa la Tabla 8 sobre diferencias entre fobia social y timidez.",
+      "explanation": "Según la Tabla 8, la timidez tiene heredabilidad (Sí), mientras que para la fobia social se indica que No."
+    },
+    {
+      "q": "¿Requiere el diagnóstico de trastorno de pánico que los ataques se produzcan exclusivamente desde un estado previo de ansiedad?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Analiza la naturaleza de la aparición súbita de los ataques de pánico.",
+      "explanation": "El DSM-5 especifica que el ataque de pánico puede producirse desde un estado de calma o desde un estado de ansiedad."
+    },
+    {
+      "q": "¿Es necesario que transcurra un mes de preocupación tras un ataque de pánico para cumplir los criterios diagnósticos del trastorno?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Busca el criterio temporal específico para el seguimiento de los ataques de pánico.",
+      "explanation": "El criterio B exige al menos un mes de inquietud, preocupación por las consecuencias o cambios de mala adaptación."
+    },
+    {
+      "q": "¿Se considera que el trastorno de pánico es la alteración de ansiedad que genera menor frecuencia de uso de servicios médicos?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Evalúa el impacto del trastorno de pánico en el sistema sanitario según el texto.",
+      "explanation": "El texto afirma lo contrario: es el trastorno de ansiedad que genera más incapacidad y frecuentación de los servicios médicos."
+    },
+    {
+      "q": "¿Incluye el programa de Barlow para el pánico procedimientos de inducción de sensaciones temidas como eje principal?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Diferencia los componentes de los programas de Barlow y de Clark.",
+      "explanation": "La inducción de sensaciones es característica del programa de Clark; Barlow se centra en psicoeducación, exposición y reestructuración."
+    },
+    {
+      "q": "¿Es la agorafobia diagnosticable únicamente si el individuo presenta de forma concurrente un trastorno de pánico activo?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Revisa la nota diagnóstica al final de los criterios de agorafobia en el DSM-5.",
+      "explanation": "La agorafobia se diagnostica independientemente de la presencia de trastorno de pánico según el DSM-5."
+    },
+    {
+      "q": "¿Requiere el diagnóstico de agorafobia el miedo o ansiedad intensa ante al menos tres situaciones de las cinco posibles?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Cuenta el número de situaciones necesarias en el criterio A de la agorafobia.",
+      "explanation": "El criterio A de agorafobia requiere miedo o ansiedad ante dos o más de las cinco situaciones especificadas."
+    },
+    {
+      "q": "¿Agrupa el factor autonómico del Inventario de Agorafobia (IA) síntomas como la taquicardia y la sudoración excesiva?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Busca la descripción de los tres factores del instrumento de Echeburúa et al. (1992).",
+      "explanation": "El factor autonómico del IA engloba síntomas de taquicardia, sudoración y escalofríos o sofocos."
+    },
+    {
+      "q": "¿Tiende la terapia cognitivo-conductual a producir más abandonos que la exposición in vivo pura en casos de agorafobia?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Compara la adherencia y recaídas entre TCC y exposición in vivo.",
+      "explanation": "El texto indica que la TCC tiende a producir menos abandonos y menos recaídas que la exposición in vivo sola."
+    },
+    {
+      "q": "¿Es la tensión muscular uno de los síntomas físicos asociados necesarios para diagnosticar TAG en adultos según el DSM-5?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Verifica la lista de seis síntomas asociados al trastorno de ansiedad generalizada.",
+      "explanation": "La tensión muscular es el quinto síntoma de la lista de seis que acompañan a la preocupación en el TAG."
+    },
+    {
+      "q": "¿Se requiere la presencia de al menos tres síntomas asociados para diagnosticar TAG en la población infantil?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Lee la nota específica para niños en el criterio C del trastorno de ansiedad generalizada.",
+      "explanation": "En los niños con TAG, solamente se requiere un ítem de los seis síntomas asociados para el diagnóstico."
+    },
+    {
+      "q": "¿Se diferencian las rumiaciones de las preocupaciones del TAG principalmente por su orientación temporal hacia el pasado?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Analiza la distinción entre TAG y depresión mencionada por Montoro et al. (2011).",
+      "explanation": "Las preocupaciones se centran en el futuro, mientras que las rumiaciones casi siempre se refieren a eventos pasados."
+    },
+    {
+      "q": "¿Es el fenómeno de 'ansiedad doble' la comorbilidad existente entre el trastorno de pánico y la agorafobia?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Revisa el término específico usado para la relación entre TAG y trastorno de pánico.",
+      "explanation": "La 'ansiedad doble' se refiere a la comorbilidad frecuente entre el trastorno de ansiedad generalizada y el trastorno de pánico."
+    },
+    {
+      "q": "¿Suelen iniciarse las fobias a la sangre y a las inyecciones típicamente después de alcanzar la edad adulta?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Revisa los datos de Marks (1991) sobre el inicio de los distintos tipos de fobia.",
+      "explanation": "Marks indica que las fobias a la sangre, intervenciones dentales y tormentas suelen empezar antes de la adolescencia."
+    },
+    {
+      "q": "¿Es la hipervigilancia sobre las reacciones de los demás una característica de la respuesta cognitiva en la ansiedad social?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Busca la descripción de la respuesta cognitiva en el apartado 3.1.2.",
+      "explanation": "La respuesta cognitiva en la ansiedad social incluye autoevaluación constante e hipervigilancia ante las reacciones ajenas."
+    },
+    {
+      "q": "¿Define el DSM-5 el ataque de pánico como una aparición súbita que debe durar varias horas para ser diagnóstica?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Revisa el tiempo en el que alcanza su máxima expresión un ataque de pánico.",
+      "explanation": "Un ataque de pánico alcanza su máxima expresión en minutos, no en horas, según la definición del DSM-5."
+    },
+    {
+      "q": "¿Se considera que la exposición mediante realidad virtual es ineficaz para el tratamiento de las fobias específicas?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Revisa la revisión de Capafons sobre nuevas tecnologías en el tratamiento.",
+      "explanation": "Capafons señala que las terapias de exposición mediante realidad virtual alcanzan resultados satisfactorios en la fobia específica."
+    },
+    {
+      "q": "¿Es el factor respiratorio del Inventario de Agorafobia (IA) el que está más estrechamente ligado a la hiperventilación?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Analiza la relación de los factores del IA con los síntomas físicos.",
+      "explanation": "El factor respiratorio está muy relacionado con la hiperventilación, síntoma relevante en los trastornos de ansiedad."
+    },
+    {
+      "q": "¿Presenta el trastorno de ansiedad generalizada una mayor evidencia de eficacia terapéutica con el uso de mindfulness?",
+      "options": [
+        "La afirmación es verdadera",
+        "La afirmación es falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Identifica qué tratamiento tiene mayor evidencia según Delgado-Pastor y Amutio (2011).",
+      "explanation": "La mayor evidencia señala a la TCC; el mindfulness es un procedimiento novedoso que aún requiere investigaciones que lo validen."
+    },
+    {
+      "q": "Seleccione la opción correcta respecto a la codificación de la fobia específica basada en el estímulo fóbico:",
+      "options": [
+        "El código 300.29 (F40.218) se asigna a las fobias relacionadas con el entorno natural como las alturas.",
+        "El código 300.29 (F40.248) se utiliza para fobias situacionales como el uso de ascensores o aviones.",
+        "El código 300.29 (F40.228) corresponde a la fobia a los animales como arañas o perros domésticos."
+      ],
+      "correct": 1,
+      "hint": "Revisa los códigos específicos del DSM-5 listados para la fobia específica.",
+      "explanation": "El código F40.248 es para situaciones (avión, ascensor); F40.218 es para animales y F40.228 es para entorno natural."
+    },
+    {
+      "q": "Sobre el tratamiento de la fobia específica en niños, ¿cuál de las siguientes afirmaciones es la correcta?",
+      "options": [
+        "La exposición suele ser la técnica de elección preferida por los niños debido a su carácter lúdico.",
+        "La intervención resulta frecuentemente difícil por la naturaleza aversiva que conlleva la exposición.",
+        "Los tratamientos farmacológicos son especialmente recomendados en la infancia por su baja resistencia."
+      ],
+      "correct": 1,
+      "hint": "Consulta las notas finales del apartado 3.1.1 sobre el tratamiento infantil.",
+      "explanation": "El texto indica que en niños la exposición suele ser difícil porque muchos no soportan sus características aversivas."
+    },
+    {
+      "q": "Identifique la opción correcta sobre las situaciones sociales en el trastorno de ansiedad social según el DSM-5:",
+      "options": [
+        "La ansiedad debe limitarse exclusivamente a situaciones donde el sujeto tenga que actuar ante un público.",
+        "En la población infantil la ansiedad debe aparecer solo en interacciones con adultos para ser diagnóstica.",
+        "El miedo puede surgir al ser observado comiendo o bebiendo ante la posibilidad de examen por otros."
+      ],
+      "correct": 2,
+      "hint": "Analiza los ejemplos de situaciones sociales descritos en el criterio A del trastorno.",
+      "explanation": "El criterio A incluye ser observado (comiendo o bebiendo) como una situación que puede provocar ansiedad social."
+    },
+    {
+      "q": "¿Cuál es la característica correcta que define el inicio de la timidez en comparación con la fobia social?",
+      "options": [
+        "La timidez suele tener su inicio habitual entre el primer y segundo año de vida del individuo.",
+        "La timidez aparece típicamente durante la adolescencia coincidiendo con cambios hormonales.",
+        "La timidez se desarrolla de forma tardía tras experiencias sociales negativas en la edad adulta."
+      ],
+      "correct": 0,
+      "hint": "Consulta la Tabla 8 sobre la variable 'Inicio' en ambos constructos.",
+      "explanation": "Según la Tabla 8, la timidez inicia a los 1-2 años, mientras que la fobia social inicia en la adolescencia."
+    },
+    {
+      "q": "Señale la opción correcta en relación con los síntomas requeridos para definir un ataque de pánico:",
+      "options": [
+        "Deben presentarse al menos cinco de los trece síntomas físicos y cognitivos listados en el DSM-5.",
+        "Es necesaria la presencia de cuatro o más síntomas durante el periodo de máxima expresión del ataque.",
+        "Los síntomas de la cultura como los acúfenos computan como uno de los cuatro requeridos oficialmente."
+      ],
+      "correct": 1,
+      "hint": "Revisa el criterio A del trastorno de pánico y su nota específica.",
+      "explanation": "Se requieren al menos cuatro de los síntomas listados; los síntomas culturales no cuentan para este mínimo."
+    },
+    {
+      "q": "Elija la opción correcta sobre la relación entre el trastorno de pánico y el estrés psicosocial:",
+      "options": [
+        "El trastorno de pánico se asocia más a eventos vitales únicos que a la percepción de estrés crónico.",
+        "La percepción de estrés psicosocial tiene un peso mayor en el desarrollo del trastorno que los eventos.",
+        "No existe ninguna relación documentada entre el estrés ambiental y la aparición del trastorno de pánico."
+      ],
+      "correct": 1,
+      "hint": "Busca las conclusiones de Sandín et al. (2006) sobre la etiología del pánico.",
+      "explanation": "Sandín et al. asocian el desarrollo del pánico a la percepción de estrés psicosocial más que a la ocurrencia de eventos vitales."
+    },
+    {
+      "q": "Con respecto a la desrealización y despersonalización, ¿cuál es la afirmación correcta según el texto?",
+      "options": [
+        "Son síntomas cognitivos exclusivos del trastorno de pánico que no aparecen en otros cuadros.",
+        "La desrealización se define técnicamente como la sensación de separarse de uno mismo físicamente.",
+        "Ambos son síntomas que pueden formar parte de la sintomatología de un ataque de pánico DSM-5."
+      ],
+      "correct": 2,
+      "hint": "Verifica los ítems 11 de la lista de síntomas del ataque de pánico.",
+      "explanation": "El ítem 11 incluye desrealización (irrealidad) y despersonalización (separarse de uno mismo) como síntomas válidos."
+    },
+    {
+      "q": "Indique la opción correcta sobre los tratamientos bien establecidos para el trastorno de pánico:",
+      "options": [
+        "El programa de Clark se diferencia por incluir experimentos basados en la inducción de sensaciones.",
+        "El tratamiento del control del pánico de Barlow excluye sistemáticamente la reestructuración cognitiva.",
+        "Ambos programas consideran la farmacoterapia como el primer escalón terapéutico imprescindible."
+      ],
+      "correct": 0,
+      "hint": "Analiza las características de los enfoques de Barlow y Clark en el apartado 3.1.3.",
+      "explanation": "El programa de Clark incorpora experimentos de inducción de sensaciones como la hiperventilación."
+    },
+    {
+      "q": "Respecto a la agorafobia, señale la opción correcta sobre las situaciones que temen estos pacientes:",
+      "options": [
+        "El miedo debe estar presente en todas las situaciones de transporte público simultáneamente.",
+        "Hacer cola o estar en medio de una multitud son situaciones agorafóbicas reconocidas por el DSM-5.",
+        "Estar solo fuera de casa es la única situación necesaria para realizar un diagnóstico diferencial."
+      ],
+      "correct": 1,
+      "hint": "Repasa el listado del criterio A para el diagnóstico de agorafobia.",
+      "explanation": "El ítem 4 del criterio A menciona específicamente hacer cola o estar en medio de una multitud."
+    },
+    {
+      "q": "Sobre el Inventario de Agorafobia (IA) desarrollado en España, ¿qué afirmación es la correcta?",
+      "options": [
+        "Presenta una estructura factorial de dos dimensiones: respuestas fisiológicas y respuestas cognitivas.",
+        "El factor cognitivo del instrumento parece mantenerse de forma independiente de las variaciones culturales.",
+        "Mide únicamente la intensidad de las respuestas del paciente cuando se encuentra acompañado por otros."
+      ],
+      "correct": 1,
+      "hint": "Analiza las propiedades psicométricas y factores del IA de Echeburúa et al.",
+      "explanation": "El texto menciona que el factor cognitivo parece mantenerse independiente de la cultura."
+    },
+    {
+      "q": "¿Cuál es la opción correcta sobre la eficacia de la TCC en el tratamiento de la agorafobia?",
+      "options": [
+        "La TCC produce resultados superiores si se elimina totalmente el componente de exposición in vivo.",
+        "La TCC tiende a generar una tasa de recaídas significativamente menor que la exposición in vivo pura.",
+        "La TCC es considerada hoy en día una intervención de segunda línea tras el fracaso de la exposición."
+      ],
+      "correct": 1,
+      "hint": "Compara los efectos a largo plazo de la TCC frente a la autoexposición.",
+      "explanation": "La TCC tiende a producir menos abandonos y menos recaídas que la exposición in vivo pura según el texto."
+    },
+    {
+      "q": "Seleccione la opción correcta respecto a los síntomas del trastorno de ansiedad generalizada (TAG):",
+      "options": [
+        "La dificultad para concentrarse o quedarse con la mente en blanco es un síntoma diagnóstico válido.",
+        "La irritabilidad es un síntoma exclusivo de la depresión y no debe considerarse para el diagnóstico de TAG.",
+        "Los problemas de sueño en el TAG se limitan estrictamente a la dificultad inicial para conciliar el sueño."
+      ],
+      "correct": 0,
+      "hint": "Revisa el listado del criterio C para el diagnóstico de TAG.",
+      "explanation": "El ítem 3 del criterio C es la dificultad para concentrarse o quedarse con la mente en blanco."
+    },
+    {
+      "q": "Sobre la relación entre el TAG y la depresión, ¿cuál de las siguientes afirmaciones es la correcta?",
+      "options": [
+        "Son trastornos totalmente independientes que no comparten ningún síntoma físico o cognitivo.",
+        "Síntomas como la fatiga y los problemas de concentración se solapan habitualmente entre ambos.",
+        "La preocupación excesiva por eventos futuros es el síntoma patognomónico de los trastornos depresivos."
+      ],
+      "correct": 1,
+      "hint": "Busca el apartado de diagnóstico diferencial y solapamiento del TAG.",
+      "explanation": "El texto indica que existen síntomas que se solapan como fatiga, insomnio y problemas de concentración."
+    },
+    {
+      "q": "Identifique la opción correcta sobre el tratamiento del trastorno de ansiedad generalizada:",
+      "options": [
+        "La intervención con mayor respaldo empírico actual es el uso de técnicas de meditación mindfulness.",
+        "La terapia cognitivo-conductual se señala como la intervención más adecuada por la mayor evidencia.",
+        "El tratamiento de elección consiste en la reestructuración de eventos pasados mediante psicodinámica."
+      ],
+      "correct": 1,
+      "hint": "Consulta el apartado final sobre el tratamiento del TAG.",
+      "explanation": "La mayor evidencia señala como intervención más adecuada la terapia cognitivo-conductual (TCC)."
+    },
+    {
+      "q": "En el contexto de la agorafobia, ¿qué afirmación sobre el diagnóstico diferencial es correcta?",
+      "options": [
+        "Si un paciente cumple criterios de pánico y agorafobia, el DSM-5 prioriza el diagnóstico de pánico.",
+        "Se asignan ambos diagnósticos (pánico y agorafobia) si se cumplen los criterios para los dos trastornos.",
+        "La agorafobia se excluye si el miedo a los espacios abiertos está relacionado con defectos físicos."
+      ],
+      "correct": 1,
+      "hint": "Lee la nota diagnóstica al final de la Tabla 10.",
+      "explanation": "La nota especifica que si se cumplen criterios para ambos, se deben asignar ambos diagnósticos."
+    },
+    {
+      "q": "Señale la opción correcta sobre el miedo a morir en los trastornos de ansiedad:",
+      "options": [
+        "Es un síntoma característico y necesario para diagnosticar el trastorno de ansiedad social grave.",
+        "Representa uno de los síntomas cognitivos que pueden aparecer durante un ataque de pánico.",
+        "Es la preocupación central que define el contenido del trastorno de ansiedad generalizada (TAG)."
+      ],
+      "correct": 1,
+      "hint": "Busca el 'miedo a morir' en la lista de síntomas del ataque de pánico.",
+      "explanation": "El miedo a morir es el síntoma número 13 de la lista del criterio A para un ataque de pánico."
+    },
+    {
+      "q": "¿Cuál es la opción correcta sobre la duración típica de los síntomas en la fobia social?",
+      "options": [
+        "La sintomatología debe ser persistente y durar un periodo mínimo de doce meses consecutivos.",
+        "El miedo o la evitación deben durar típicamente seis o más meses para cumplir el criterio DSM-5.",
+        "No existe un criterio de duración mínima, basándose el diagnóstico solo en la intensidad del miedo."
+      ],
+      "correct": 1,
+      "hint": "Verifica el criterio F en la Tabla 7 sobre fobia social.",
+      "explanation": "El criterio F establece que el miedo, la ansiedad o la evitación dura típicamente seis o más meses."
+    },
+    {
+      "q": "Elija la opción correcta respecto a los factores que influyen en el curso de la fobia específica:",
+      "options": [
+        "Las fobias específicas tienden a remitir de forma espontánea sin necesidad de intervención tras un año.",
+        "La mayor parte de estas fobias son más habituales en hombres debido a factores de exposición laboral.",
+        "Muchas fobias específicas pueden permanecer durante muchos años si no se recibe tratamiento adecuado."
+      ],
+      "correct": 2,
+      "hint": "Revisa el párrafo sobre epidemiología de la fobia específica en el apartado 3.1.1.",
+      "explanation": "El texto indica que pueden permanecer durante muchos años y son más habituales en mujeres."
+    },
+    {
+      "q": "Sobre la respuesta fisiológica en la ansiedad social, ¿qué opción describe un síntoma correcto?",
+      "options": [
+        "La bradicardia es el signo autonómico más frecuente cuando el sujeto se expone al examen ajeno.",
+        "La boca seca y la taquicardia son respuestas fisiológicas elevadas que pueden estar presentes.",
+        "La hipotermia severa es la principal preocupación del sujeto al ser visible por las demás personas."
+      ],
+      "correct": 1,
+      "hint": "Consulta la descripción de la respuesta fisiológica en el apartado 3.1.2.",
+      "explanation": "El texto menciona explícitamente taquicardia, boca seca, dilatación pupilar e hipertermia."
+    },
+    {
+      "q": "¿Cuál es la afirmación correcta sobre el trastorno de la personalidad evitativa y la fobia social?",
+      "options": [
+        "Son trastornos cualitativamente distintos que nunca deben confundirse en la práctica clínica.",
+        "Se ha sugerido que forman un continuo donde la fobia social generalizada es una forma extrema.",
+        "El trastorno evitativo responde a la medicación mientras que la fobia social solo a la terapia."
+      ],
+      "correct": 1,
+      "hint": "Busca la relación planteada por Caballo et al. (2011) entre ambos trastornos.",
+      "explanation": "Se plantea que pueden ser parte de un continuo, con la fobia social en un extremo y el evitativo en otro."
+    },
+    {
+      "q": "En el trastorno de pánico, identifique la opción correcta sobre las consecuencias de los ataques:",
+      "options": [
+        "Los pacientes raramente muestran preocupación por el significado de las sensaciones físicas sufridas.",
+        "Es frecuente la creencia de que el ataque es indicio de una enfermedad grave no diagnosticada.",
+        "La evitación del ejercicio físico es un síntoma que excluye el diagnóstico de trastorno de pánico."
+      ],
+      "correct": 1,
+      "hint": "Analiza las creencias de los pacientes con pánico descritas en el apartado 3.1.3.",
+      "explanation": "El texto dice que a veces creen que el ataque es indicio de enfermedad grave pese a pruebas negativas."
+    },
+    {
+      "q": "Señale la opción correcta sobre los componentes del tratamiento del control de pánico de Barlow:",
+      "options": [
+        "Incluye entrenamiento en relajación o respiración además de la reestructuración cognitiva.",
+        "Se basa exclusivamente en la administración de benzodiacepinas para el control de los ataques.",
+        "Rechaza el uso de la exposición por considerarla peligrosa para la estabilidad emocional del sujeto."
+      ],
+      "correct": 0,
+      "hint": "Distingue los componentes del programa de Barlow resumidos en el texto.",
+      "explanation": "Barlow incorpora psicoeducación, exposición, reestructuración y entrenamiento en relajación/respiración."
+    },
+    {
+      "q": "¿Qué opción es correcta sobre el factor cognitivo en el Inventario de Agorafobia (IA)?",
+      "options": [
+        "Engloba el miedo a perder el control o a volverse loco, así como sensaciones de irrealidad.",
+        "Se centra únicamente en las preocupaciones sobre la salud física a largo plazo del paciente.",
+        "Es un factor que desaparece completamente cuando el paciente se encuentra en un entorno seguro."
+      ],
+      "correct": 0,
+      "hint": "Analiza la descripción de los factores del IA de Echeburúa et al.",
+      "explanation": "El factor cognitivo del IA engloba el miedo a perder el control, a volverse loco y sensaciones de irrealidad."
+    },
+    {
+      "q": "Sobre el tratamiento de la agorafobia, elija la opción correcta respecto a la exposición in vivo:",
+      "options": [
+        "Se considera un tratamiento bien establecido tanto para la ansiedad como para la evitación fóbica.",
+        "Es una técnica experimental que todavía no cuenta con apoyo empírico suficiente para su uso.",
+        "Su eficacia es máxima cuando se realiza de forma imaginaria evitando siempre el entorno real."
+      ],
+      "correct": 0,
+      "hint": "Consulta la sección de intervención en agorafobia según Bados (2003).",
+      "explanation": "La exposición o autoexposición in vivo se considera un tratamiento bien establecido para este trastorno."
+    },
+    {
+      "q": "Respecto a la definición de preocupación en el TAG, señale la opción correcta:",
+      "options": [
+        "Debe estar limitada a una única actividad específica para cumplir los criterios diagnósticos.",
+        "Se caracteriza por estar generalizada a un número amplio de actividades y acontecimientos futuros.",
+        "Es una respuesta adaptativa que permite resolver problemas reales y actuales de forma eficiente."
+      ],
+      "correct": 1,
+      "hint": "Busca la definición de preocupación en el apartado 3.1.5.",
+      "explanation": "La preocupación en el TAG está generalizada a un número amplio de actividades y situaciones futuras percibidas como inciertas."
+    },
+    {
+      "q": "Seleccione la opción incorrecta respecto a los criterios diagnósticos de la fobia específica:",
+      "options": [
+        "El miedo o la ansiedad deben ser desproporcionados al peligro real que plantea el objeto o situación.",
+        "La sintomatología fóbica debe causar un malestar clínicamente significativo en el área social o laboral.",
+        "El diagnóstico de fobia específica es compatible si los síntomas se explican mejor por el TOC."
+      ],
+      "correct": 2,
+      "hint": "Revisa el criterio G de la fobia específica sobre el diagnóstico diferencial.",
+      "explanation": "La opción es incorrecta porque el criterio G exige que la alteración NO se explique mejor por otro trastorno como el TOC."
+    },
+    {
+      "q": "Identifique la afirmación incorrecta sobre el trastorno de ansiedad social (fobia social):",
+      "options": [
+        "El individuo teme actuar de modo que sea valorado de forma negativa, humillado o avergonzado.",
+        "La evitación de situaciones sociales es una conducta motora frecuente en este tipo de trastorno.",
+        "El miedo a ser examinado por otros debe durar al menos un mes para establecer el diagnóstico."
+      ],
+      "correct": 2,
+      "hint": "Verifica el criterio de duración temporal para el trastorno de ansiedad social.",
+      "explanation": "La opción es incorrecta porque el criterio F exige que la duración sea típicamente de seis o más meses, no uno."
+    },
+    {
+      "q": "Señale la opción incorrecta en relación con las diferencias entre fobia social y timidez:",
+      "options": [
+        "La fobia social presenta un nivel de incapacidad alto mientras que en la timidez es moderado.",
+        "La interferencia en las actividades diarias es alta en la fobia social y baja en la timidez.",
+        "La timidez se inicia típicamente en la adolescencia mientras que la fobia social a los 1-2 años."
+      ],
+      "correct": 2,
+      "hint": "Compara la variable 'Inicio' en la Tabla 8 del texto.",
+      "explanation": "La opción es incorrecta porque es al revés: la timidez inicia a los 1-2 años y la fobia social en la adolescencia."
+    },
+    {
+      "q": "¿Cuál de los siguientes no es un síntoma válido para el diagnóstico de un ataque de pánico?",
+      "options": [
+        "Parestesias o sensación de entumecimiento y hormigueo en diversas partes del cuerpo.",
+        "Sensación de pérdida de memoria a corto plazo o amnesia disociativa durante el ataque.",
+        "Náuseas o malestar abdominal acompañados de una sensación súbita de malestar intenso."
+      ],
+      "correct": 1,
+      "hint": "Repasa la lista de trece síntomas del criterio A para el ataque de pánico.",
+      "explanation": "La amnesia no forma parte de los 13 síntomas listados; las parestesias y náuseas sí lo son."
+    },
+    {
+      "q": "Indique la opción incorrecta sobre el diagnóstico del trastorno de pánico según el DSM-5:",
+      "options": [
+        "Al menos uno de los ataques debe ir seguido de un mes de preocupación por futuros ataques.",
+        "La alteración debe poder atribuirse a los efectos fisiológicos de una sustancia como una droga.",
+        "Se deben descartar otras afecciones médicas como el hipertiroidismo antes del diagnóstico."
+      ],
+      "correct": 1,
+      "hint": "Lee el criterio C sobre la exclusión de sustancias y afecciones médicas.",
+      "explanation": "La opción es incorrecta porque el criterio C dice que la alteración NO se puede atribuir a sustancias."
+    },
+    {
+      "q": "Identifique la afirmación incorrecta respecto al curso y epidemiología del trastorno de pánico:",
+      "options": [
+        "Es uno de los trastornos más prevalentes en la sociedad después de las fobias específicas.",
+        "Tiene una marcada tendencia a cronificarse y presenta una gravedad relevante en psicopatología.",
+        "Suele diagnosticarse correctamente de forma rápida en la mayoría de servicios de atención primaria."
+      ],
+      "correct": 2,
+      "hint": "Consulta el análisis de Cano et al. (2011) sobre el diagnóstico en atención primaria.",
+      "explanation": "La opción es incorrecta porque el texto dice que en muchos casos no se diagnostica correctamente en atención primaria."
+    },
+    {
+      "q": "Sobre el tratamiento del pánico, señale la opción incorrecta respecto a los programas de Barlow y Clark:",
+      "options": [
+        "Ambos grupos han desarrollado programas específicos que siguen vigentes por sus buenos resultados.",
+        "El programa de Clark incluye componentes comportamentales como la inducción de sensaciones.",
+        "Barlow defiende que la psicoeducación es un componente innecesario que ralentiza la terapia."
+      ],
+      "correct": 2,
+      "hint": "Identifica si la psicoeducación es un componente común en ambos programas.",
+      "explanation": "La opción es incorrecta porque el programa de Barlow incluye explícitamente un componente psicoeducativo."
+    },
+    {
+      "q": "Señale la opción incorrecta sobre las situaciones agorafóbicas descritas en el DSM-5:",
+      "options": [
+        "Uso del transporte público como automóviles, autobuses, trenes, barcos o incluso aviones.",
+        "Estar en espacios abiertos como zonas de estacionamiento, mercados al aire libre o puentes.",
+        "Estar en casa acompañado por figuras de apego es una de las cinco situaciones diagnósticas."
+      ],
+      "correct": 2,
+      "hint": "Revisa los cinco ítems del criterio A para el diagnóstico de agorafobia.",
+      "explanation": "La opción es incorrecta porque la situación diagnóstica es 'estar fuera de casa solo', no estar dentro acompañado."
+    },
+    {
+      "q": "Respecto a la agorafobia, elija la opción incorrecta sobre sus características clínicas:",
+      "options": [
+        "El individuo evita las situaciones por la idea de que escapar podría resultar difícil.",
+        "El miedo o la ansiedad deben ser proporcionados al peligro real de la situación sociocultural.",
+        "Las situaciones agorafóbicas casi siempre provocan una respuesta de miedo o ansiedad."
+      ],
+      "correct": 1,
+      "hint": "Verifica el criterio D de agorafobia sobre la proporcionalidad del miedo.",
+      "explanation": "La opción es incorrecta porque el miedo debe ser desproporcionado, no proporcionado, al peligro real."
+    },
+    {
+      "q": "Identifique la afirmación incorrecta sobre el trastorno de ansiedad generalizada (TAG):",
+      "options": [
+        "La preocupación excesiva debe producirse durante más días de los que ha estado ausente.",
+        "El individuo suele tener un control total y sencillo sobre sus estados de preocupación constante.",
+        "La ansiedad se asocia frecuentemente a síntomas físicos como la facilidad para fatigarse."
+      ],
+      "correct": 1,
+      "hint": "Consulta el criterio B del trastorno de ansiedad generalizada.",
+      "explanation": "La opción es incorrecta porque el criterio B establece que al individuo le es DIFÍCIL controlar la preocupación."
+    },
+    {
+      "q": "Sobre la sintomatología del TAG, señale la opción incorrecta según el DSM-5:",
+      "options": [
+        "La inquietud o sensación de estar atrapado es uno de los síntomas físicos posibles.",
+        "Se requiere que todos los síntomas de la lista estén presentes simultáneamente seis meses.",
+        "Los problemas de sueño pueden incluir dificultad para dormirse o sueño insatisfactorio."
+      ],
+      "correct": 1,
+      "hint": "Verifica el número de síntomas necesarios en el criterio C del TAG.",
+      "explanation": "La opción es incorrecta porque solo se requieren tres (o más) de los seis síntomas, no todos ellos."
+    },
+    {
+      "q": "Indique la opción incorrecta sobre el diagnóstico diferencial del TAG:",
+      "options": [
+        "Debe distinguirse de la ansiedad por tener ataques de pánico propia del trastorno de pánico.",
+        "La preocupación debe ser independiente del aumento de peso típico de la anorexia nerviosa.",
+        "El TAG se diagnostica prioritariamente si los síntomas se deben al efecto de una droga."
+      ],
+      "correct": 2,
+      "hint": "Revisa el criterio E del TAG sobre la exclusión de sustancias.",
+      "explanation": "La opción es incorrecta porque el diagnóstico no se puede atribuir a los efectos de una sustancia."
+    },
+    {
+      "q": "Respecto a la timidez, señale la option incorrecta basada en la Tabla 8 del texto:",
+      "options": [
+        "La epidemiología de la timidez es mayor en la población que la de la fobia social.",
+        "Las situaciones temidas en la timidez están siempre limitadas a un solo contexto específico.",
+        "Las conductas de evitación en la timidez son poco frecuentes comparadas con la fobia social."
+      ],
+      "correct": 1,
+      "hint": "Observa la variable 'Situaciones temidas' para la timidez en la Tabla 8.",
+      "explanation": "La opción es incorrecta porque la tabla indica que las situaciones temidas en la timidez son 'No limitadas'."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre la agorafobia es incorrecta?",
+      "options": [
+        "Las personas mayores pueden temer las situaciones agorafóbicas por el miedo a caerse.",
+        "El miedo a la incontinencia es un síntoma embarazoso que puede motivar la evitación.",
+        "La agorafobia se diagnostica solo si el paciente no tiene ninguna otra afección médica."
+      ],
+      "correct": 2,
+      "hint": "Revisa el criterio H de la agorafobia sobre otras afecciones médicas.",
+      "explanation": "La opción es incorrecta porque se puede diagnosticar si hay otra afección, siempre que el miedo sea excesivo."
+    },
+    {
+      "q": "Sobre el tratamiento del TAG, señale la opción incorrecta:",
+      "options": [
+        "La terapia cognitivo-conductual es la que presenta actualmente una mayor evidencia clínica.",
+        "El mindfulness es una técnica ya validada por múltiples investigaciones como tratamiento de elección.",
+        "Existe una tendencia reciente a utilizar procedimientos más novedosos en la intervención del TAG."
+      ],
+      "correct": 1,
+      "hint": "Consulta la nota sobre mindfulness en el tratamiento del TAG.",
+      "explanation": "La opción es incorrecta porque el texto dice que el mindfulness todavía requiere investigaciones que lo validen."
+    },
+    {
+      "q": "Identifique la afirmación incorrecta sobre la fobia específica según el texto:",
+      "options": [
+        "El miedo debe ser persistente y durar típicamente un periodo de seis o más meses.",
+        "La fobia debe codificarse atendiendo siempre al estímulo fóbico específico que la provoca.",
+        "La fobia a las tormentas suele iniciarse típicamente después de finalizar la adolescencia."
+      ],
+      "correct": 2,
+      "hint": "Revisa el inicio de las fobias al entorno natural según Marks (1991).",
+      "explanation": "La opción es incorrecta porque las fobias a las tormentas suelen empezar antes de la adolescencia."
+    },
+    {
+      "q": "Señale la opción incorrecta sobre la respuesta fisiológica en la ansiedad social:",
+      "options": [
+        "A los pacientes les preocupan especialmente síntomas que puedan ser visibles por los demás.",
+        "El rubor, los temblores y el sudor son respuestas que generan gran preocupación al sujeto.",
+        "La dilatación pupilar es el único síntoma que los pacientes intentan mostrar para pedir ayuda."
+      ],
+      "correct": 2,
+      "hint": "Analiza las preocupaciones fisiológicas en el trastorno de ansiedad social.",
+      "explanation": "La opción es incorrecta porque los pacientes temen mostrar síntomas de ansiedad que se valoren negativamente."
+    },
+    {
+      "q": "Respecto al ataque de pánico, ¿cuál de las siguientes afirmaciones es la incorrecta?",
+      "options": [
+        "Se define como una aparición súbita de miedo o malestar intenso de carácter recurrente.",
+        "Durante el ataque deben aparecer síntomas como el dolor torácico o la sensación de ahogo.",
+        "El ataque de pánico solo puede ocurrir si el sujeto se encuentra en una situación de peligro."
+      ],
+      "correct": 2,
+      "hint": "Revisa la definición y el contexto de aparición de los ataques de pánico.",
+      "explanation": "La opción es incorrecta porque el ataque de pánico es imprevisto y no requiere una situación de peligro real."
+    },
+    {
+      "q": "Sobre el Inventario de Agorafobia (IA), identifique la opción incorrecta:",
+      "options": [
+        "Fue construido con el objetivo de evaluar síntomas de pánico y agorafobia en España.",
+        "Mide los tipos de respuestas alteradas del paciente tanto si está solo como acompañado.",
+        "El factor autonómico del IA está estrechamente vinculado a las sensaciones de irrealidad."
+      ],
+      "correct": 2,
+      "hint": "Relaciona los síntomas con los tres factores del IA descritos en el texto.",
+      "explanation": "La opción es incorrecta porque la irrealidad pertenece al factor cognitivo, no al autonómico."
+    },
+    {
+      "q": "En relación con el TAG y las rumiaciones, señale la opción incorrecta:",
+      "options": [
+        "Las rumiaciones son típicas de los trastornos depresivos y se centran en el pasado.",
+        "Las preocupaciones del TAG se refieren generalmente a situaciones futuras inciertas.",
+        "Ambos procesos cognitivos son idénticos y no sirven para diferenciar ansiedad y depresión."
+      ],
+      "correct": 2,
+      "hint": "Busca la diferencia cualitativa planteada por Montoro et al. (2011).",
+      "explanation": "La opción es incorrecta porque el texto establece una distinción clara basada en la orientación temporal."
+    },
+    {
+      "q": "Señale la opción incorrecta sobre la epidemiología de los trastornos de ansiedad:",
+      "options": [
+        "Después de las fobias, el trastorno de pánico es uno de los más prevalentes en la sociedad.",
+        "La mayor parte de las fobias específicas son diagnosticadas con mayor frecuencia en mujeres.",
+        "La fobia social es el trastorno con mayor tasa de prevalencia de toda la clasificación DSM-5."
+      ],
+      "correct": 2,
+      "hint": "Compara la prevalencia de los trastornos mencionados en el texto.",
+      "explanation": "La opción es incorrecta porque el texto sitúa a las fobias (específicas) como las más prevalentes."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre el programa de Clark para el pánico es incorrecta?",
+      "options": [
+        "Se centra primordialmente en la terapia cognitiva para modificar las creencias del paciente.",
+        "Incorpora un componente educativo sobre la naturaleza de la ansiedad y el trastorno.",
+        "Evita estrictamente el uso de cualquier procedimiento de tipo comportamental en la sesión."
+      ],
+      "correct": 2,
+      "hint": "Analiza la naturaleza de los experimentos de inducción de sensaciones en Clark.",
+      "explanation": "La opción es incorrecta porque el texto dice que sus experimentos son básicamente procedimientos comportamentales."
+    },
+    {
+      "q": "Respecto a la agorafobia y su tratamiento, señale la opción incorrecta:",
+      "options": [
+        "La exposición in vivo y la terapia cognitivo-conductual son intervenciones eficaces.",
+        "La TCC tiende a producir un mayor número de abandonos terapéuticos que la autoexposición.",
+        "Ambos se consideran hoy tratamientos bien establecidos para la evitación fóbica."
+      ],
+      "correct": 1,
+      "hint": "Compara las tasas de abandono mencionadas al final del apartado 3.1.4.",
+      "explanation": "La opción es incorrecta porque el texto afirma que la TCC tiende a producir MENOS abandonos."
+    },
+    {
+      "q": "Indique la opción incorrecta sobre la definición de ansiedad según el capítulo:",
+      "options": [
+        "Es una reacción adaptativa que permite preparar al organismo ante una amenaza externa.",
+        "Se convierte en patológica únicamente cuando la amenaza es conocida y muy específica.",
+        "Funciona como una señal de alerta que permite activar al organismo ante peligros desconocidos."
+      ],
+      "correct": 1,
+      "hint": "Revisa los párrafos introductorios sobre la naturaleza de la ansiedad.",
+      "explanation": "La opción es incorrecta porque la ansiedad es patológica si NO existe realmente una amenaza."
+    },
+    {
+      "q": "Sobre la fobia específica en niños, identifique la opción incorrecta:",
+      "options": [
+        "El miedo o la ansiedad pueden expresarse a través de llanto, rabietas o parálisis corporal.",
+        "Los niños suelen aceptar con facilidad el tratamiento de exposición por su eficacia rápida.",
+        "El aferramiento a figuras de cuidado es una forma común de expresar la ansiedad fóbica."
+      ],
+      "correct": 1,
+      "hint": "Busca la opinión del texto sobre la dificultad del tratamiento en niños.",
+      "explanation": "La opción es incorrecta porque el texto dice que el tratamiento de exposición suele ser difícil en niños."
+    },
+    {
+      "q": "La ansiedad se convierte en patológica si ____ y dificulta nuestra adaptación, provocando trastornos.",
+      "options": [
+        "no existe realmente una amenaza",
+        "el peligro es de origen biológico",
+        "la respuesta es puramente motora"
+      ],
+      "correct": 0,
+      "hint": "Diferencia entre reacción adaptativa y patología.",
+      "explanation": "El texto especifica que la ansiedad es patológica si no hay una amenaza real presente."
+    },
+    {
+      "q": "La fobia específica se caracteriza por una conducta de ____ ante el objeto o la situación específica.",
+      "options": [
+        "evitación o resistencia intensa",
+        "confrontación sistemática guiada",
+        "aceptación pasiva de la realidad"
+      ],
+      "correct": 0,
+      "hint": "Acción principal del sujeto ante el estímulo fóbico.",
+      "explanation": "El DSM-5 destaca que el objeto fóbico se evita o se soporta con ansiedad intensa."
+    },
+    {
+      "q": "La ansiedad en la fobia específica debe ser persistente y durar típicamente ____ para ser diagnosticada.",
+      "options": [
+        "tres o más meses consecutivos",
+        "seis o más meses de duración",
+        "doce meses de forma recurrente"
+      ],
+      "correct": 1,
+      "hint": "Criterio temporal estándar para la mayoría de fobias.",
+      "explanation": "Los criterios del DSM-5 establecen una duración típica de seis o más meses."
+    },
+    {
+      "q": "Las fobias a la sangre, inyecciones o heridas suelen iniciarse habitualmente ____ según Marks (1991).",
+      "options": [
+        "durante la etapa de la niñez",
+        "antes de llegar a la adolescencia",
+        "en la edad adulta más temprana"
+      ],
+      "correct": 1,
+      "hint": "Momento evolutivo específico para este tipo de fobia.",
+      "explanation": "Marks (1991) señala que estas fobias suelen empezar antes de la adolescencia."
+    },
+    {
+      "q": "El tratamiento de elección para la fobia específica es la ____ según la revisión de Capafons (2001).",
+      "options": [
+        "exposición al estímulo fóbico",
+        "reestructuración cognitiva pura",
+        "farmacoterapia con ansiolíticos"
+      ],
+      "correct": 0,
+      "hint": "Técnica conductual con mayor evidencia de éxito.",
+      "explanation": "Capafons concluyó que la terapia de elección es la exposición al estímulo fóbico."
+    },
+    {
+      "q": "En el trastorno de ansiedad social, el individuo teme ser ____ por parte de otras personas.",
+      "options": [
+        "ignorado por su círculo social",
+        "examinado de forma negativa",
+        "observado en su ámbito privado"
+      ],
+      "correct": 1,
+      "hint": "Preocupación central sobre el juicio de los demás.",
+      "explanation": "Se caracteriza por miedo al posible examen o valoración negativa de terceros."
+    },
+    {
+      "q": "La respuesta cognitiva en la ansiedad social incluye una ____ constante sobre la propia conducta.",
+      "options": [
+        "autoevaluación e hipervigilancia",
+        "reflexión profunda introspectiva",
+        "negación de los síntomas físicos"
+      ],
+      "correct": 0,
+      "hint": "Proceso interno de monitorización del sujeto.",
+      "explanation": "El sujeto está inmerso en una constante autoevaluación e hipervigilancia de sus reacciones."
+    },
+    {
+      "q": "El miedo al rubor, temblores o sudor pertenece a la respuesta ____ del trastorno de ansiedad social.",
+      "options": [
+        "fisiológica visible por otros",
+        "cognitiva de tipo anticipatorio",
+        "motora de escape de situaciones"
+      ],
+      "correct": 0,
+      "hint": "Tipo de síntomas corporales que preocupan al paciente.",
+      "explanation": "A los pacientes les preocupan las respuestas fisiológicas que pueden ser visibles."
+    },
+    {
+      "q": "Se postula que la timidez constituye un ____ a la fobia social según Salaberría y Echeburúa (1998).",
+      "options": [
+        "efecto secundario del trastorno",
+        "factor biológico de vulnerabilidad",
+        "mecanismo de defensa adaptativo"
+      ],
+      "correct": 1,
+      "hint": "Rol de la timidez en la génesis de la fobia.",
+      "explanation": "La timidez extrema se plantea como factor de vulnerabilidad biológica y psicológica."
+    },
+    {
+      "q": "Un ataque de pánico es la aparición ____ de miedo o malestar intenso que alcanza el pico en minutos.",
+      "options": [
+        "gradual y predecible por todos",
+        "súbita de miedo o de malestar",
+        "intermitente de síntomas leves"
+      ],
+      "correct": 1,
+      "hint": "Velocidad de aparición del episodio agudo.",
+      "explanation": "El texto define el ataque como una aparición súbita (repentina) de malestar."
+    },
+    {
+      "q": "Para diagnosticar trastorno de pánico, al menos un ataque debe ser seguido por ____ de inquietud.",
+      "options": [
+        "un mes o más de preocupación",
+        "quince días de evitación activa",
+        "un año de cambios conductuales"
+      ],
+      "correct": 0,
+      "hint": "Requisito temporal de preocupación post-ataque.",
+      "explanation": "El DSM-5 requiere un mes de inquietud o preocupación continua tras el ataque."
+    },
+    {
+      "q": "El desarrollo del trastorno de pánico se asocia más a la ____ según Sandín et al. (2006).",
+      "options": [
+        "presencia de factores genéticos",
+        "percepción de estrés psicosocial",
+        "ocurrencia de eventos traumáticos"
+      ],
+      "correct": 1,
+      "hint": "Factor ambiental mediador en la aparición del trastorno.",
+      "explanation": "Se asocia más a la percepción de estrés psicosocial que a eventos vitales aislados."
+    },
+    {
+      "q": "El tratamiento del control de pánico del grupo de Barlow incluye ____ y reestructuración cognitiva.",
+      "options": [
+        "exposición y psicoeducación",
+        "hipnosis y relajación guiada",
+        "biofeedback y medicación pautada"
+      ],
+      "correct": 0,
+      "hint": "Componentes del programa específico de Barlow.",
+      "explanation": "El programa de Barlow incluye psicoeducación, exposición y reestructuración cognitiva."
+    },
+    {
+      "q": "El programa de Clark para el pánico utiliza ____ de las sensaciones temidas como la hiperventilación.",
+      "options": [
+        "inducción o experimentos base",
+        "evitación conductual dirigida",
+        "supresión emocional consciente"
+      ],
+      "correct": 0,
+      "hint": "Método para confrontar sensaciones corporales catastróficas.",
+      "explanation": "Clark utiliza experimentos basados en la inducción de sensaciones temidas."
+    },
+    {
+      "q": "La agorafobia implica miedo en al menos ____ de las situaciones descritas por el DSM-5.",
+      "options": [
+        "una situación social crítica",
+        "dos de las cinco situaciones",
+        "tres espacios abiertos distintos"
+      ],
+      "correct": 1,
+      "hint": "Cantidad mínima de contextos temidos.",
+      "explanation": "El diagnóstico requiere miedo o ansiedad intensa en al menos dos de las cinco situaciones."
+    },
+    {
+      "q": "El inventario de agorafobia (IA) de Echeburúa et al. (1992) mide tres factores: ____.",
+      "options": [
+        "social, familiar y personal",
+        "respiratorio, autonómico y cognitivo",
+        "motor, verbal y emocional agudo"
+      ],
+      "correct": 1,
+      "hint": "Los tres pilares de respuesta evaluados por el IA.",
+      "explanation": "El IA presenta tres factores: respiratorio, autonómico y cognitivo."
+    },
+    {
+      "q": "En el trastorno de ansiedad generalizada, la ansiedad se asocia a un mínimo de ____ de seis síntomas.",
+      "options": [
+        "un síntoma físico recurrente",
+        "tres o más de los seis síntomas",
+        "cuatro síntomas de tipo motor"
+      ],
+      "correct": 1,
+      "hint": "Número de ítems requeridos para adultos.",
+      "explanation": "El DSM-5 exige al menos tres de los seis síntomas físicos asociados en adultos."
+    },
+    {
+      "q": "La característica definitoria del trastorno de ansiedad generalizada es la ____.",
+      "options": [
+        "conducta de evitación fóbica",
+        "preocupación excesiva persistente",
+        "crisis de angustia inesperada"
+      ],
+      "correct": 1,
+      "hint": "Componente cognitivo central del trastorno.",
+      "explanation": "La preocupación generalizada y excesiva es el componente específico de este trastorno."
+    },
+    {
+      "q": "En el TAG, las preocupaciones se centran en el ____, a diferencia de las rumiaciones depresivas.",
+      "options": [
+        "pasado y eventos perdidos",
+        "futuro y eventos inciertos",
+        "presente y problemas reales"
+      ],
+      "correct": 1,
+      "hint": "Orientación temporal del pensamiento patológico.",
+      "explanation": "Las preocupaciones del TAG miran al futuro, mientras las rumiaciones suelen ser del pasado."
+    },
+    {
+      "q": "La ____ in vivo es un tratamiento bien establecido para la agorafobia según Bados (2003).",
+      "options": [
+        "exposición o autoexposición",
+        "relajación progresiva muscular",
+        "desensibilización sistemática"
+      ],
+      "correct": 0,
+      "hint": "Intervención conductual fundamental en fobias.",
+      "explanation": "La exposición o autoexposición in vivo es una intervención eficaz y bien establecida."
+    },
+    {
+      "q": "El código 300.29 (F40.218) en el DSM-5 corresponde específicamente a la fobia a ____.",
+      "options": [
+        "los entornos de tipo natural",
+        "un animal (ej. arañas, perros)",
+        "la sangre, inyecciones o herida"
+      ],
+      "correct": 1,
+      "hint": "Primer subtipo de fobia específica codificado.",
+      "explanation": "El código 300.29 (F40.218) se utiliza para estímulos animales."
+    },
+    {
+      "q": "La sensación de ____ (separarse de uno mismo) es un síntoma posible en un ataque de pánico.",
+      "options": [
+        "despersonalización interna",
+        "hipermnesia de sucesos vitales",
+        "parestesia de miembros bajos"
+      ],
+      "correct": 0,
+      "hint": "Síntoma de disociación respecto a la propia identidad.",
+      "explanation": "La despersonalización es uno de los 13 síntomas listados para el ataque de pánico."
+    },
+    {
+      "q": "Las parestesias se definen como la sensación de ____ en el contexto de un ataque de pánico.",
+      "options": [
+        "calor o escalofrío súbito",
+        "entumecimiento o hormigueo",
+        "mareo e inestabilidad motora"
+      ],
+      "correct": 1,
+      "hint": "Descripción técnica de este síntoma sensorial.",
+      "explanation": "El DSM-5 define las parestesias como sensación de entumecimiento o de hormigueo."
+    },
+    {
+      "q": "El factor ____ del inventario de agorafobia engloba el miedo a perder el control o volverse loco.",
+      "options": [
+        "cognitivo y de pensamiento",
+        "autonómico y de activación",
+        "respiratorio y de disnea"
+      ],
+      "correct": 0,
+      "hint": "Dimensión relacionada con las creencias y miedos catastróficos.",
+      "explanation": "El factor cognitivo incluye el miedo a la pérdida de control y sensaciones de irrealidad."
+    },
+    {
+      "q": "En niños con TAG, el DSM-5 solamente requiere la presencia de ____ de los síntomas físicos.",
+      "options": [
+        "un ítem o síntoma asociado",
+        "dos síntomas de tipo motor",
+        "tres síntomas de sueño/fatiga"
+      ],
+      "correct": 0,
+      "hint": "Criterio simplificado para la población infantil.",
+      "explanation": "A diferencia de los adultos, en niños solo se requiere un ítem de la lista de seis."
+    },
+    {
+      "q": "La intervención con ____ se está observando como procedimiento novedoso en el TAG.",
+      "options": [
+        "realidad virtual inmersiva",
+        "mindfulness y conciencia plena",
+        "condicionamiento operante"
+      ],
+      "correct": 1,
+      "hint": "Técnica de meditación mencionada al final del texto.",
+      "explanation": "El texto menciona la tendencia al uso mindfulness en el tratamiento del TAG."
+    },
+    {
+      "q": "La comorbilidad entre TAG y trastorno de pánico se denomina comúnmente ____.",
+      "options": [
+        "ansiedad doble persistente",
+        "comorbilidad ansiosa pura",
+        "trastorno ansioso mixto"
+      ],
+      "correct": 0,
+      "hint": "Término específico usado por García-Portilla y Bobes.",
+      "explanation": "La coexistencia de TAG y pánico se denomina 'ansiedad doble'."
+    },
+    {
+      "q": "La fobia social se diferencia de la timidez en que esta última suele tener un inicio a los ____.",
+      "options": [
+        "1-2 años de edad temprana",
+        "12-14 años de adolescencia",
+        "5-6 años de edad escolar"
+      ],
+      "correct": 0,
+      "hint": "Edad de comienzo de la timidez normal según la Tabla 8.",
+      "explanation": "La timidez suele iniciarse a los 1-2 años, mientras la fobia social en la adolescencia."
+    },
+    {
+      "q": "El miedo a ____ es un ejemplo de estímulo que debe codificarse como 'entorno natural'.",
+      "options": [
+        "el uso de aviones o trenes",
+        "las tormentas o las alturas",
+        "los ruidos fuertes e intensos"
+      ],
+      "correct": 1,
+      "hint": "Categoría que incluye fenómenos de la naturaleza.",
+      "explanation": "El entorno natural incluye alturas, tormentas y agua."
+    },
+    {
+      "q": "En el diagnóstico de fobia social, hay que especificar si el miedo se limita a ____.",
+      "options": [
+        "situaciones de solo actuación",
+        "interacciones con extraños",
+        "ser observado mientras come"
+      ],
+      "correct": 0,
+      "hint": "Especificador opcional para presentaciones restringidas.",
+      "explanation": "Se debe especificar si es 'Solo actuación' (hablar o actuar en público)."
+    },
+    {
+      "q": "El factor respiratorio en la agorafobia está muy relacionado con la ____.",
+      "options": [
+        "taquicardia sinusal aguda",
+        "hiperventilación del sujeto",
+        "tensión muscular torácica"
+      ],
+      "correct": 1,
+      "hint": "Mecanismo fisiológico clave del factor respiratorio.",
+      "explanation": "El texto vincula el factor respiratorio directamente con la hiperventilación."
+    },
+    {
+      "q": "La desrealización se describe como una sensación de ____ durante el pánico.",
+      "options": [
+        "irrealidad del entorno",
+        "separación del propio cuerpo",
+        "pérdida de memoria reciente"
+      ],
+      "correct": 0,
+      "hint": "Alteración de la percepción del mundo exterior.",
+      "explanation": "El DSM-5 define la desrealización como sensación de irrealidad."
+    },
+    {
+      "q": "La TCC en agorafobia tiende a producir menos ____ que la exposición in vivo sola.",
+      "options": [
+        "abandonos y recaídas reales",
+        "mejorías en el área social",
+        "síntomas de tipo autonómico"
+      ],
+      "correct": 0,
+      "hint": "Ventaja de la TCC sobre la exposición pura.",
+      "explanation": "La TCC tiende a producir menos abandonos y menos recaídas que la exposición in vivo."
+    },
+    {
+      "q": "El miedo o ansiedad en el TAG debe ocurrir durante más días de los que ha estado ausente por ____.",
+      "options": [
+        "un mínimo de seis meses",
+        "un período de tres meses",
+        "al menos un año completo"
+      ],
+      "correct": 0,
+      "hint": "Criterio de frecuencia temporal para el TAG.",
+      "explanation": "El TAG requiere que la ansiedad ocurra más días de los que falta durante 6 meses."
+    },
+    {
+      "q": "La fobia social se considera un continuo donde en el otro extremo está el trastorno de la ____.",
+      "options": [
+        "personalidad evitativa",
+        "personalidad dependiente",
+        "personalidad antisocial"
+      ],
+      "correct": 0,
+      "hint": "Trastorno de personalidad que se solapa con la fobia social.",
+      "explanation": "Se plantea que la fobia social y el trastorno evitativo forman parte de un continuo."
+    },
+    {
+      "q": "Las conductas de seguridad en la ansiedad social se caracterizan por el ____.",
+      "options": [
+        "enfrentamiento y la lucha",
+        "evitación y el escape",
+        "desmayo y la parálisis"
+      ],
+      "correct": 1,
+      "hint": "Acciones motoras para reducir la ansiedad.",
+      "explanation": "La respuesta motora incluye conductas de seguridad como la evitación y el escape."
+    },
+    {
+      "q": "En la fobia específica, el miedo es ____ al peligro real que plantea el objeto.",
+      "options": [
+        "totalmente proporcional",
+        "desproporcionado al riesgo",
+        "ligeramente inferior"
+      ],
+      "correct": 1,
+      "hint": "Relación entre la intensidad del miedo y la amenaza objetiva.",
+      "explanation": "El criterio 'd' de fobia específica subraya que el miedo es desproporcionado al peligro real."
+    },
+    {
+      "q": "El diagnóstico de agorafobia se realiza ____ de la presencia de trastorno de pánico.",
+      "options": [
+        "siempre en dependencia",
+        "independientemente de ésta",
+        "solo si existe comorbilidad"
+      ],
+      "correct": 1,
+      "hint": "Relación diagnóstica entre agorafobia y pánico en el DSM-5.",
+      "explanation": "El DSM-5 diagnóstica agorafobia independientemente de si hay trastorno de pánico."
+    },
+    {
+      "q": "La fatiga fácil y la dificultad para concentrarse son síntomas comunes de ____.",
+      "options": [
+        "la fobia social aguda",
+        "la ansiedad generalizada",
+        "los ataques de pánico"
+      ],
+      "correct": 1,
+      "hint": "Síntomas compartidos con la depresión pero diagnósticos en este trastorno.",
+      "explanation": "Fatiga y dificultad de concentración son 2 de los 6 síntomas del TAG."
+    },
+    {
+      "q": "La sensación de ____ es un síntoma del pánico que debe diferenciarse de la disnea.",
+      "options": [
+        "ahogo o falta de aire",
+        "hipertermia controlada",
+        "aturdimiento y síncope"
+      ],
+      "correct": 0,
+      "hint": "Síntoma número 5 de la lista del DSM-5 para pánico.",
+      "explanation": "La sensación de ahogo es un síntoma distinto de la dificultad para respirar (asfixia)."
+    },
+    {
+      "q": "Son características de la respuesta fisiológica en el trastorno de ansiedad social:",
+      "options": [
+        "Presencia de taquicardia persistente",
+        "Aparición de dilatación pupilar",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Síntomas físicos de activación simpática mencionados.",
+      "explanation": "El texto cita taquicardia, boca seca, dilatación pupilar e hipertermia."
+    },
+    {
+      "q": "Indique las situaciones agorafóbicas recogidas explícitamente en los criterios del DSM-5:",
+      "options": [
+        "Estar en medio de una multitud",
+        "Estar fuera de casa solo",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Contextos que provocan miedo en el agorafóbico.",
+      "explanation": "Multitudes y estar solo fuera de casa son 2 de las 5 situaciones agorafóbicas."
+    },
+    {
+      "q": "Los síntomas físicos del trastorno de ansiedad generalizada (TAG) incluyen:",
+      "options": [
+        "Tensión muscular significativa",
+        "Problemas de sueño o insomnio",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Ítems de la lista de criterios para el TAG.",
+      "explanation": "Tensión muscular y problemas de sueño son síntomas diagnósticos del TAG."
+    },
+    {
+      "q": "El trastorno de pánico se asocia habitualmente con las siguientes consecuencias o hechos:",
+      "options": [
+        "Desmoralización del paciente",
+        "Abuso de alcohol o medicación",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Complicaciones secundarias al trastorno de pánico.",
+      "explanation": "Botella y Ballester (1997) señalan desmoralización y consumo de sustancias."
+    },
+    {
+      "q": "De acuerdo con el DSM-5, la fobia específica puede codificarse según el estímulo en:",
+      "options": [
+        "Situación (avión o ascensor)",
+        "Animal (arañas o insectos)",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Subtipos de estímulos fóbicos según la clasificación.",
+      "explanation": "El DSM-5 desglosa la fobia en animal, entorno, sangre/herida, situación u otros."
+    },
+    {
+      "q": "Son componentes del programa de tratamiento del control del pánico del grupo de Barlow:",
+      "options": [
+        "Entrenamiento en respiración",
+        "Reestructuración de creencias",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Técnicas integradas en el protocolo de Barlow.",
+      "explanation": "Incluye exposición, reestructuración, psicoeducación y respiración/relajación."
+    },
+    {
+      "q": "Identifique los síntomas cognitivos o perceptivos presentes en un ataque de pánico:",
+      "options": [
+        "Miedo a morir de forma inminente",
+        "Miedo a volverse loco o perder",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Miedos catastróficos típicos de la crisis de angustia.",
+      "explanation": "El DSM-5 incluye explícitamente el miedo a morir y el miedo a volverse loco."
+    },
+    {
+      "q": "El factor autonómico del Inventario de Agorafobia (IA) agrupa los síntomas de:",
+      "options": [
+        "Taquicardia y palpitaciones",
+        "Sudoración y escalofríos",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Manifestaciones de activación del sistema nervioso autónomo.",
+      "explanation": "El factor autonómico incluye taquicardia, sudoración, escalofríos o sofocos."
+    },
+    {
+      "q": "La timidez, comparada con la fobia social en la Tabla 8, presenta las siguientes variables:",
+      "options": [
+        "Nivel de incapacidad moderado",
+        "Interferencia en la vida baja",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Diferencias cuantitativas en la gravedad del cuadro.",
+      "explanation": "La timidez tiene menor incapacidad e interferencia que la fobia social."
+    },
+    {
+      "q": "Los trastornos de ansiedad destacados por el DSM-5 en este capítulo incluyen:",
+      "options": [
+        "Agorafobia y fobia social",
+        "Ansiedad generalizada y pánico",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Listado de trastornos de ansiedad principales del texto.",
+      "explanation": "El texto destaca fobia específica, social, pánico, agorafobia y TAG."
+    },
+    {
+      "q": "Señale síntomas que se solapan habitualmente entre el TAG y los trastornos depresivos:",
+      "options": [
+        "Dificultad para concentrarse",
+        "Fatiga e insomnio recurrente",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Manifestaciones clínicas comunes a ambos cuadros.",
+      "explanation": "El texto cita concentración, fatiga e insomnio como síntomas solapados."
+    },
+    {
+      "q": "El miedo en la agorafobia se basa en la idea de que ante una crisis:",
+      "options": [
+        "Escapar podría ser muy difícil",
+        "Podría no disponerse de ayuda",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Cogniciones subyacentes a la evitación agorafóbica.",
+      "explanation": "La agorafobia se basa en el miedo a la dificultad de escape o falta de ayuda."
+    },
+    {
+      "q": "En niños, la ansiedad social puede manifestarse a través de las siguientes conductas:",
+      "options": [
+        "Quedarse paralizado o llanto",
+        "Aferrarse o rabietas graves",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Expresión conductual de la ansiedad en la infancia.",
+      "explanation": "El DSM-5 indica que en niños se expresa con llanto, rabietas o parálisis."
+    },
+    {
+      "q": "Respecto a la epidemiología y curso de la fobia social según la Tabla 8:",
+      "options": [
+        "Tiene un curso de tipo crónico",
+        "Posee una menor prevalencia",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Datos comparativos frente a la timidez normal.",
+      "explanation": "La fobia social es crónica y menos frecuente que la timidez común."
+    },
+    {
+      "q": "Son ejemplos de situaciones sociales temidas en el trastorno de ansiedad social:",
+      "options": [
+        "Dar una charla ante el público",
+        "Mantener una conversación",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Tipos de interacciones que generan ansiedad social.",
+      "explanation": "Incluye interacciones (conversar), ser observado y actuar ante otros."
+    },
+    {
+      "q": "El diagnóstico diferencial del trastorno de pánico implica descartar que los síntomas se deban a:",
+      "options": [
+        "Efectos de una droga o fármaco",
+        "Afección como hipertiroidismo",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Causas orgánicas o sustancias que imitan el pánico.",
+      "explanation": "El criterio 'c' exige descartar sustancias y afecciones médicas generales."
+    },
+    {
+      "q": "La evitación en la agorafobia puede presentar las siguientes características:",
+      "options": [
+        "Requerir de un acompañante",
+        "Evitar activamente el sitio",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Modos en que el sujeto maneja las situaciones temidas.",
+      "explanation": "Se evitan activamente, se resisten con ansiedad o requieren acompañante."
+    },
+    {
+      "q": "Los tratamientos para la agorafobia considerados eficaces y bien establecidos son:",
+      "options": [
+        "La exposición in vivo directa",
+        "Terapia cognitivo-conductual",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Opciones terapéuticas con base empírica sólida.",
+      "explanation": "Bados (2003) señala la exposición in vivo y la TCC como eficaces."
+    },
+    {
+      "q": "Señale cuál de los siguientes fármacos es el tratamiento de elección para la fobia específica:",
+      "options": [
+        "Inhibidores de la MAO clásicos",
+        "Benzodiacepinas de acción corta",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Eficacia de la farmacoterapia en fobias simples.",
+      "explanation": "El texto afirma que los tratamientos farmacológicos no parecen aportar beneficios."
+    },
+    {
+      "q": "De acuerdo con Marks (1991), la fobia a los animales suele iniciarse típicamente en:",
+      "options": [
+        "La etapa de la senectud tardía",
+        "La adolescencia media o final",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Edad de inicio según el estudio de Marks.",
+      "explanation": "Marks indica que las fobias a animales suelen iniciarse en la niñez."
+    },
+    {
+      "q": "El trastorno de ansiedad social se caracteriza por un miedo intenso a situaciones donde:",
+      "options": [
+        "No exista ningún contacto visual",
+        "El sujeto esté totalmente solo",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Contexto fundamental de la fobia social.",
+      "explanation": "El miedo se da en situaciones sociales con posible examen por otros."
+    },
+    {
+      "q": "El inicio de la fobia social, según los datos diferenciales de la Tabla 8, ocurre en:",
+      "options": [
+        "La infancia temprana (1-2 años)",
+        "La edad adulta tardía (>65 años)",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Cronología típica del trastorno de ansiedad social.",
+      "explanation": "La fobia social inicia en la adolescencia; la timidez a los 1-2 años."
+    },
+    {
+      "q": "El síntoma de 'acúfenos' o 'dolor de cuello' en un ataque de pánico se considera:",
+      "options": [
+        "Un síntoma nuclear del DSM-5",
+        "Uno de los cuatro mínimos",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Estatus de los síntomas culturales en el diagnóstico.",
+      "explanation": "Son síntomas específicos de la cultura y no cuentan para los 4 requeridos."
+    },
+    {
+      "q": "La agorafobia sin historia de trastorno de pánico se define en el texto como:",
+      "options": [
+        "Un fenómeno clínico inexistente",
+        "Una patología de tipo orgánica",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Prevalencia de agorafobia pura.",
+      "explanation": "El texto indica que la agorafobia sin pánico es bastante frecuente."
+    },
+    {
+      "q": "El factor autonómico del Inventario de Agorafobia incluye síntomas como:",
+      "options": [
+        "Sensación de irrealidad aguda",
+        "Miedo a perder el control total",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Contenido del factor cognitivo vs autonómico.",
+      "explanation": "Irrealidad y miedo al control pertenecen al factor cognitivo, no al autonómico."
+    },
+    {
+      "q": "En el TAG, cuando el individuo se preocupa por problemas actuales y reales se denomina:",
+      "options": [
+        "Preocupación adaptativa sana",
+        "Ansiedad doble funcional",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Naturaleza de la preocupación en el TAG.",
+      "explanation": "En el TAG las personas 'no se preocupan por problemas actuales y reales'."
+    },
+    {
+      "q": "El tratamiento de elección para el TAG, según la mayor evidencia actual, es:",
+      "options": [
+        "Psicoanálisis breve dirigido",
+        "Terapia de exposición al vacío",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Intervención más adecuada citada en el texto.",
+      "explanation": "La intervención más adecuada señalada es la terapia cognitivo-conductual."
+    },
+    {
+      "q": "Según Capafons (2001), los resultados de la exposición por realidad virtual en fobias son:",
+      "options": [
+        "Totalmente insatisfactorios",
+        "Superiores a la exposición real",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Valoración de la realidad virtual en el texto.",
+      "explanation": "El texto dice que alcanzan 'resultados satisfactorios', no que sean insatisfactorios."
+    },
+    {
+      "q": "Indique cuál de estos síntomas NO pertenece a los 13 criterios del ataque de pánico:",
+      "options": [
+        "Palpitaciones o golpeteo",
+        "Sensación de calor o frío",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Verificación de la lista oficial del DSM-5.",
+      "explanation": "Ambos (palpitaciones y calor/frío) sí pertenecen a la lista de 13 síntomas."
+    },
+    {
+      "q": "El cambio de mala adaptación en el comportamiento tras un ataque de pánico debe durar:",
+      "options": [
+        "Al menos un año de duración",
+        "Seis meses ininterrumpidos",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Criterio 'b' del trastorno de pánico.",
+      "explanation": "El DSM-5 requiere un mes (o más) de cambio significativo de mala adaptación."
+    },
+    {
+      "q": "El trastorno de ansiedad inducida por sustancias se clasifica en el DSM-5 dentro de:",
+      "options": [
+        "Trastornos de la personalidad",
+        "Trastornos del estado de ánimo",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Ubicación en la Tabla 5 del capítulo.",
+      "explanation": "Se clasifica dentro de los 'Trastornos de ansiedad' según la Tabla 5."
+    },
+    {
+      "q": "Las rumiaciones, a diferencia de las preocupaciones del TAG, se refieren casi siempre a:",
+      "options": [
+        "Eventos futuros inciertos",
+        "Eventos del presente real",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Temporalidad de las rumiaciones depresivas.",
+      "explanation": "Las rumiaciones casi siempre se refieren a eventos pasados."
+    },
+    {
+      "q": "El código 300.29 (F40.23x) se aplica a la fobia específica de tipo:",
+      "options": [
+        "Situacional (ej. ascensores)",
+        "Animal (ej. perros o gatos)",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Identificación del código para sangre/inyecciones.",
+      "explanation": "Ese código corresponde a sangre, inyecciones o heridas."
+    },
+    {
+      "q": "La heredabilidad es una característica que diferencia la fobia social de la timidez porque:",
+      "options": [
+        "La fobia social es heredable",
+        "Ambas poseen alta carga genética",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Dato genético de la Tabla 8.",
+      "explanation": "La Tabla 8 indica que la timidez es heredable (Sí), pero la fobia social No."
+    },
+    {
+      "q": "En el tratamiento de la fobia específica en niños, la exposición se considera:",
+      "options": [
+        "La técnica de fácil aplicación",
+        "Un procedimiento no aversivo",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Dificultades del tratamiento en población infantil.",
+      "explanation": "El texto dice que es difícil porque muchos no soportan sus características aversivas."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "Explica la transición de la ansiedad de una respuesta adaptativa a una patológica según los criterios presentados en el texto.",
+      "model": "La ansiedad es inicialmente una señal de alerta adaptativa ante peligros desconocidos que prepara al organismo para la acción. Se torna patológica cuando no existe una amenaza real, persiste en el tiempo y dificulta la adaptación del individuo al medio, dando lugar a trastornos específicos si la respuesta es desproporcionada o incapacitante.",
+      "keywords": [
+        "adaptativa",
+        "amenaza real",
+        "funcionalidad",
+        "señal de alerta"
+      ]
+    },
+    {
+      "q": "Analiza la importancia de la conducta de evitación en el diagnóstico de la fobia específica.",
+      "model": "La conducta de evitación es central porque el sujeto intenta activamente no enfrentarse al estímulo fóbico o lo soporta con ansiedad intensa. Esta evitación debe ser persistente (mínimo 6 meses) y causar un malestar clínicamente significativo o deterioro funcional en áreas sociales o laborales.",
+      "keywords": [
+        "evitación activa",
+        "malestar clínico",
+        "persistencia",
+        "estímulo fóbico"
+      ]
+    },
+    {
+      "q": "Compara la eficacia de la terapia de exposición, la realidad virtual y los tratamientos farmacológicos en las fobias específicas.",
+      "model": "La exposición al estímulo fóbico es el tratamiento de elección. La realidad virtual y la TCC muestran resultados satisfactorios. Sin embargo, los tratamientos farmacológicos no aportan beneficios significativos, ni solos ni combinados con TCC, según la revisión de Capafons.",
+      "keywords": [
+        "tratamiento de elección",
+        "realidad virtual",
+        "farmacología",
+        "Capafons"
+      ]
+    },
+    {
+      "q": "Describe el sistema de respuesta triple (cognitivo, fisiológico y motor) en el trastorno de ansiedad social.",
+      "model": "A nivel cognitivo presenta autoevaluación negativa e hipervigilancia (miedo a tartamudear o quedar en blanco). A nivel fisiológico, hay activación elevada (taquicardia, rubor, sudor). A nivel motor, predominan las conductas de seguridad, específicamente el escape y la evitación de situaciones sociales.",
+      "keywords": [
+        "hipervigilancia",
+        "conductas de seguridad",
+        "rubor",
+        "autoevaluación"
+      ]
+    },
+    {
+      "q": "Argumente las diferencias epidemiológicas y de curso entre la fobia social y la timidez.",
+      "model": "La fobia social tiene una menor prevalencia epidemiológica, un inicio típico en la adolescencia, un curso crónico y provoca una alta incapacidad. La timidez tiene mayor prevalencia, se inicia en la infancia (1-2 años), suele ser transitoria y su interferencia en la vida diaria es baja.",
+      "keywords": [
+        "crónico",
+        "transitorio",
+        "incapacidad",
+        "prevalencia"
+      ]
+    },
+    {
+      "q": "Explique la propuesta de Caballo et al. sobre el continuo entre la fobia social y el trastorno de personalidad evitativa.",
+      "model": "Se sugiere que el subtipo de fobia social generalizada y el trastorno de personalidad evitativa comparten la misma fenomenología y responden a tratamientos similares, por lo que podrían considerarse extremos de un mismo continuo de gravedad clínica.",
+      "keywords": [
+        "continuo",
+        "fobia social generalizada",
+        "personalidad evitativa",
+        "fenomenología"
+      ]
+    },
+    {
+      "q": "Defina el 'ataque de pánico' y explique por qué no requiere necesariamente un estado de ansiedad previo.",
+      "model": "Es la aparición súbita de miedo o malestar intenso que llega al pico en minutos, con al menos 4 síntomas físicos o cognitivos. Puede surgir desde la calma o la ansiedad, lo que implica que es una reacción discreta y no necesariamente una escalada de una preocupación previa.",
+      "keywords": [
+        "aparición súbita",
+        "máxima expresión",
+        "estado de calma",
+        "síntomas discretos"
+      ]
+    },
+    {
+      "q": "Identifique los criterios temporales y de cambio conductual necesarios para diagnosticar el Trastorno de Pánico tras un ataque inicial.",
+      "model": "Se requiere que tras al menos un ataque haya transcurrido un mes o más de: 1) inquietud o preocupación continua por nuevos ataques o sus consecuencias, y/o 2) un cambio significativo de mala adaptación en el comportamiento (como evitar el ejercicio o lugares no familiares).",
+      "keywords": [
+        "un mes",
+        "preocupación continua",
+        "mala adaptación",
+        "consecuencias"
+      ]
+    },
+    {
+      "q": "Relacione el trastorno de pánico con la percepción de estrés psicosocial y eventos vitales según Sandín.",
+      "model": "El desarrollo del trastorno de pánico se asocia más fuertemente a la percepción subjetiva de estrés psicosocial que a la ocurrencia real de eventos vitales estresantes, con la excepción de traumas graves como abusos físicos o sexuales.",
+      "keywords": [
+        "estrés psicosocial",
+        "eventos vitales",
+        "traumas",
+        "Sandín"
+      ]
+    },
+    {
+      "q": "Describa el fenómeno de la desmoralización en pacientes con trastorno de pánico.",
+      "model": "Muchos pacientes atribuyen sus crisis a una supuesta falta de carácter, lo que genera desmoralización. Esto se suma a una alta preocupación por la salud y la creencia de que el ataque indica una enfermedad grave no detectada médicamente.",
+      "keywords": [
+        "falta de carácter",
+        "preocupación por salud",
+        "desmoralización",
+        "atribución"
+      ]
+    },
+    {
+      "q": "Compare los componentes clave de los programas de tratamiento de Barlow frente a los de Clark para el pánico.",
+      "model": "Barlow (Control del Pánico) incluye psicoeducación, exposición, reestructuración cognitiva y entrenamiento en relajación/respiración. Clark se centra en la terapia cognitiva e incluye experimentos de inducción de sensaciones temidas (hiperventilación) para demostrar que no son peligrosas.",
+      "keywords": [
+        "control de pánico",
+        "inducción de sensaciones",
+        "reestructuración",
+        "Barlow y Clark"
+      ]
+    },
+    {
+      "q": "Justifique por qué la agorafobia se diagnostica ahora independientemente del trastorno de pánico en el DSM-5.",
+      "model": "Aunque es habitual que coexistan, la prevalencia de agorafobia sin pánico es frecuente. El DSM-5 permite asignar ambos diagnósticos si se cumplen criterios, reconociendo que el miedo a situaciones donde escapar sea difícil es una entidad clínica diferenciable de las crisis de angustia.",
+      "keywords": [
+        "diagnóstico independiente",
+        "escapar",
+        "prevalencia",
+        "DSM-5"
+      ]
+    },
+    {
+      "q": "Analice los tres factores del Inventario de Agorafobia (IA) de Echeburúa et al.",
+      "model": "El IA mide: 1) Factor respiratorio (ligado a la hiperventilación), 2) Factor autonómico (taquicardia, sudor, escalofríos) y 3) Factor cognitivo (miedo a perder el control, volverse loco o irrealidad). Este último se mantiene independiente de la cultura.",
+      "keywords": [
+        "respiratorio",
+        "autonómico",
+        "cognitivo",
+        "Echeburúa"
+      ]
+    },
+    {
+      "q": "Contraste las ventajas y desventajas de la TCC frente a la exposición in vivo en el tratamiento de la agorafobia.",
+      "model": "La exposición in vivo es el tratamiento mejor establecido para la evitación fóbica. Sin embargo, la TCC tiende a producir menos abandonos y menores tasas de recaída, aunque su eficacia puede disminuir si se reduce drásticamente el tiempo de exposición real.",
+      "keywords": [
+        "exposición in vivo",
+        "TCC",
+        "abandonos",
+        "recaídas"
+      ]
+    },
+    {
+      "q": "Defina el concepto de 'preocupación' como núcleo del Trastorno de Ansiedad Generalizada (TAG).",
+      "model": "La preocupación en el TAG es excesiva, difícil de controlar y generalizada a múltiples actividades o sucesos futuros. No se centra en problemas actuales reales, sino en situaciones inciertas percibidas como potencialmente amenazantes.",
+      "keywords": [
+        "anticipación aprensiva",
+        "difícil control",
+        "generalizada",
+        "incertidumbre"
+      ]
+    },
+    {
+      "q": "Explique el fenómeno de la 'ansiedad doble' en el contexto del TAG.",
+      "model": "Se refiere a la frecuente comorbilidad y el solapamiento de límites entre el TAG y el trastorno de pánico. En estos casos, las diferencias suelen ser más cuantitativas que cualitativas, dificultando a veces la distinción diagnóstica clara.",
+      "keywords": [
+        "comorbilidad",
+        "límites imprecisos",
+        "ansiedad doble",
+        "cuantitativo"
+      ]
+    },
+    {
+      "q": "Diferencie técnicamente entre las rumiaciones depresivas y la preocupación del TAG.",
+      "model": "Aunque ambos procesos implican pensamiento repetitivo, las rumiaciones depresivas se refieren casi exclusivamente a eventos pasados y pérdidas, mientras que la preocupación en el TAG está orientada al futuro y a la anticipación de amenazas.",
+      "keywords": [
+        "pasado vs futuro",
+        "rumiación",
+        "amenaza",
+        "temporalidad"
+      ]
+    },
+    {
+      "q": "Mencione los síntomas físicos asociados al TAG según los criterios del DSM-5.",
+      "model": "Se requieren al menos 3 de los siguientes: inquietud/nervios de punta, fatiga fácil, dificultad para concentrarse (mente en blanco), irritabilidad, tensión muscular y alteraciones del sueño.",
+      "keywords": [
+        "tensión muscular",
+        "fatiga",
+        "concentración",
+        "irritabilidad"
+      ]
+    },
+    {
+      "q": "Valore el papel del mindfulness en el tratamiento del TAG comparado con la TCC.",
+      "model": "La TCC es la intervención con mayor evidencia científica actualmente. El mindfulness es un procedimiento novedoso que está ganando uso, pero todavía requiere de más investigaciones empíricas que validen su eficacia frente a la TCC tradicional.",
+      "keywords": [
+        "evidencia",
+        "TCC",
+        "mindfulness",
+        "validación"
+      ]
+    },
+    {
+      "q": "Describa las situaciones específicas que definen el diagnóstico de agorafobia.",
+      "model": "Miedo intenso en al menos dos de cinco situaciones: 1) Transporte público, 2) Espacios abiertos, 3) Sitios cerrados, 4) Hacer cola o multitudes, y 5) Estar fuera de casa solo.",
+      "keywords": [
+        "transporte público",
+        "espacios abiertos",
+        "multitud",
+        "solo"
+      ]
+    },
+    {
+      "q": "Explique por qué el miedo en la fobia específica debe ser 'desproporcionado'.",
+      "model": "El miedo debe exceder el peligro real que plantea el objeto o situación y no ser explicable por el contexto sociocultural del individuo. Esta desproporción es lo que distingue el miedo normativo o evolutivo de la patología.",
+      "keywords": [
+        "peligro real",
+        "contexto sociocultural",
+        "desproporción",
+        "patología"
+      ]
+    },
+    {
+      "q": "Analice el inicio de las fobias específicas según el tipo de estímulo.",
+      "model": "Suelen comenzar a cualquier edad, pero hay patrones: las fobias a animales suelen iniciarse en la niñez; las fobias a la sangre, intervenciones dentales y tormentas suelen aparecer antes de la adolescencia.",
+      "keywords": [
+        "niñez",
+        "adolescencia",
+        "patrones de inicio",
+        "Marks"
+      ]
+    },
+    {
+      "q": "Enumere las categorías que deben codificarse dentro de la fobia específica según el estímulo.",
+      "model": "Se debe especificar si el estímulo es: Animal, Entorno Natural (tormentas, agua), Sangre/Inyección/Herida, Situacional (aviones, ascensores) u Otros (ahogos, ruidos, disfraces).",
+      "keywords": [
+        "codificación",
+        "animal",
+        "situacional",
+        "sangre"
+      ]
+    },
+    {
+      "q": "Distinga entre el miedo al examen social en adultos vs. niños en el trastorno de ansiedad social.",
+      "model": "En adultos, el miedo se centra en la valoración negativa en interacciones o actuaciones. En niños, la ansiedad debe ocurrir en reuniones con iguales (compañeros) y no solo en la interacción con adultos para cumplir criterios diagnósticos.",
+      "keywords": [
+        "iguales",
+        "valoración negativa",
+        "niños vs adultos",
+        "interacción"
+      ]
+    },
+    {
+      "q": "Relacione la desrealización y la despersonalización con los ataques de pánico.",
+      "model": "Son síntomas cognitivos de carácter disociativo que forman parte de los 13 posibles síntomas de un ataque. La desrealización es la sensación de irrealidad del entorno y la despersonalización es la sensación de separarse de uno mismo.",
+      "keywords": [
+        "irrealidad",
+        "separación",
+        "síntoma disociativo",
+        "ataque de pánico"
+      ]
+    },
+    {
+      "q": "Identifique las consecuencias del infradiagnóstico del trastorno de pánico en atención primaria.",
+      "model": "El diagnóstico incorrecto o el tratamiento inadecuado conllevan una elevada tasa de abandonos, recaídas y una alta cronificación, siendo el trastorno de ansiedad que más incapacidad y uso de servicios médicos genera.",
+      "keywords": [
+        "atención primaria",
+        "infradiagnóstico",
+        "incapacidad",
+        "recaídas"
+      ]
+    },
+    {
+      "q": "Explique el miedo subyacente que motiva la evitación en la agorafobia.",
+      "model": "La persona evita situaciones no por el lugar en sí, sino por la idea de que escapar sería difícil o no habría ayuda disponible en caso de sufrir síntomas de pánico u otros síntomas incapacitantes o embarazosos.",
+      "keywords": [
+        "dificultad para escapar",
+        "falta de ayuda",
+        "embarazoso",
+        "síntomas incapacitantes"
+      ]
+    },
+    {
+      "q": "Sintetice las características comunes de los trastornos presentados en el Capítulo 3.",
+      "model": "Todos comparten características de una respuesta emocional anticipatoria ante amenazas (reales o percibidas) y alteraciones conductuales relacionadas, principalmente centradas en la evitación y el malestar significativo.",
+      "keywords": [
+        "respuesta anticipatoria",
+        "alteraciones conductuales",
+        "evitación",
+        "amenaza"
+      ]
+    },
+    {
+      "q": "Detalle los criterios de exclusión para el diagnóstico de TAG según el DSM-5.",
+      "model": "La alteración no debe atribuirse a sustancias o afecciones médicas, y no debe explicarse mejor por otros trastornos (pánico, ansiedad social, TOC, anorexia, trastorno dismórfico o creencias delirantes).",
+      "keywords": [
+        "exclusión",
+        "sustancias",
+        "afección médica",
+        "diagnóstico diferencial"
+      ]
+    },
+    {
+      "q": "Analice la relación entre la timidez extrema y la vulnerabilidad psicológica según Salaberría y Echeburúa.",
+      "model": "Plantean que la timidez es un factor biológico de vulnerabilidad, pero que en sus formas extremas constituye además una vulnerabilidad psicológica que predispone al desarrollo de una fobia social.",
+      "keywords": [
+        "vulnerabilidad biológica",
+        "vulnerabilidad psicológica",
+        "fobia social",
+        "timidez extrema"
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Introducción",
+      "q": "¿Cuál es la función adaptativa de la ansiedad según el texto y cuándo se considera que pasa a ser patológica?",
+      "a": "Es una señal de alerta ante un peligro desconocido que permite preparar al organismo; es patológica si no existe una amenaza real y dificulta la adaptación."
+    },
+    {
+      "cat": "Introducción",
+      "q": "¿Qué característica común comparten los trastornos de ansiedad, el TOC y los trastornos relacionados con traumas según el Capítulo 3?",
+      "a": "Comparten características de una respuesta emocional anticipatoria y alteraciones conductuales relacionadas."
+    },
+    {
+      "cat": "Clasificación DSM-5",
+      "q": "¿Cuáles son los cinco trastornos de ansiedad destacados que aparecen en la clasificación del DSM-5 mencionada en el texto?",
+      "a": "Fobia específica, trastorno de ansiedad social, trastorno de pánico, agorafobia y trastorno de ansiedad generalizada."
+    },
+    {
+      "cat": "Fobia Específica",
+      "q": "¿Qué conducta es central en la fobia específica respecto a la interacción del sujeto con el objeto o situación temida?",
+      "a": "La conducta de evitación activa o el hecho de soportar la situación con un nivel de ansiedad intenso."
+    },
+    {
+      "cat": "Fobia Específica",
+      "q": "¿Cómo debe ser el miedo o la ansiedad en la fobia específica en relación con el peligro real que plantea el objeto?",
+      "a": "Debe ser desproporcionado respecto al peligro real y al contexto sociocultural del individuo."
+    },
+    {
+      "cat": "Fobia Específica",
+      "q": "¿Cuál es la duración mínima típica requerida por el DSM-5 para diagnosticar una fobia específica?",
+      "a": "La ansiedad o evitación debe ser persistente y durar típicamente seis meses o más."
+    },
+    {
+      "cat": "Fobia Específica",
+      "q": "¿Qué categorías de estímulos fóbicos se deben especificar al codificar una fobia específica según el DSM-5?",
+      "a": "Animal, entorno natural, sangre/inyección/herida, situación (avión, ascensor) u otras categorías residuales."
+    },
+    {
+      "cat": "Fobia Específica",
+      "q": "¿Qué diferencia existe en el inicio de las fobias a los animales frente a las fobias a la sangre o intervenciones dentales?",
+      "a": "Las de animales suelen iniciarse en la niñez, mientras que las de sangre e intervenciones dentales empiezan antes de la adolescencia."
+    },
+    {
+      "cat": "Fobia Específica",
+      "q": "¿Cómo se manifiesta el miedo o la ansiedad por fobia específica específicamente en la población infantil?",
+      "a": "Puede expresarse con llanto, rabietas, quedarse paralizados o aferrarse a figuras de apego."
+    },
+    {
+      "cat": "Fobia Específica",
+      "q": "¿Qué criterio diagnóstico diferencia la fobia específica de la agorafobia en relación con el motivo del miedo?",
+      "a": "En la fobia específica el miedo es a un objeto/situación concreta, mientras que en la agorafobia el miedo se asocia a síntomas de pánico o incapacitantes."
+    },
+    {
+      "cat": "Fobia Específica",
+      "q": "Según la revisión de Capafons (2001), ¿cuál es el tratamiento de elección para la fobia específica?",
+      "a": "La terapia de exposición al estímulo fóbico es considerada la terapia de elección."
+    },
+    {
+      "cat": "Fobia Específica",
+      "q": "¿Qué papel juegan los tratamientos farmacológicos en la intervención de las fobias específicas según el texto?",
+      "a": "No parecen aportar efectos beneficiosos, ni solos ni en combinación con terapias cognitivo-conductuales."
+    },
+    {
+      "cat": "Fobia Específica",
+      "q": "¿Por qué el tratamiento de exposición puede resultar particularmente difícil en la población infantil?",
+      "a": "Porque muchos niños no soportan la naturaleza aversiva que caracteriza a la intervención por exposición."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Qué define fundamentalmente al trastorno de ansiedad social (antes fobia social)?",
+      "a": "Miedo o ansiedad intensa en situaciones sociales donde el individuo está expuesto al posible examen o juicio de otros."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿A qué temen exactamente las personas con trastorno de ansiedad social respecto a su propio comportamiento?",
+      "a": "Temen actuar de modo que se las valore negativamente, las humillen, avergüencen o que sus síntomas de ansiedad sean visibles."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿En qué consiste la respuesta cognitiva característica del individuo con ansiedad social?",
+      "a": "Constante autoevaluación e hipervigilancia sobre las reacciones de los demás, con pensamientos de fracaso o bloqueo."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Qué síntomas fisiológicos preocupan más a los sujetos con fobia social y por qué?",
+      "a": "Aquellos visibles por los demás (rubor, temblores, sudor), por miedo a que delaten su estado de ansiedad."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Qué tipos de conductas definen la respuesta motora en el trastorno de ansiedad social?",
+      "a": "Conductas de seguridad, principalmente la evitación de situaciones sociales y el escape de las mismas."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Cómo se manifiesta la fobia social en niños en situaciones de interacción social según el Criterio C?",
+      "a": "Llanto, rabietas, parálisis, aferrarse, encogerse o el fracaso total de hablar en situaciones sociales."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Qué especificado se debe añadir si el miedo social se limita exclusivamente a hablar o actuar en público?",
+      "a": "Se debe especificar como 'Solo actuación'."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Qué relación establecen Salaberría y Echeburúa (1998) entre la timidez y la fobia social?",
+      "a": "Plantean que la timidez es un factor biológico de vulnerabilidad y, en formas extremas, un factor de vulnerabilidad psicológica."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Cuál es la diferencia epidemiológica principal entre la fobia social y la timidez según el texto?",
+      "a": "La fobia social tiene una menor epidemiología (prevalencia) en comparación con la timidez, que es mayor."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "En cuanto al curso de la alteración, ¿qué diferencia a la fobia social de la timidez normal?",
+      "a": "La fobia social tiende a ser crónica, mientras que la timidez suele ser un fenómeno transitorio."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Qué diferencia existe en el grado de heredabilidad entre la fobia social y la timidez según la Tabla 8?",
+      "a": "La fobia social no muestra heredabilidad clara en la tabla, mientras que la timidez sí la presenta."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Qué similitud fenomenológica se ha planteado entre la fobia social generalizada y el trastorno de la personalidad evitativa?",
+      "a": "Se consideran parte de un continuo donde comparten fenomenología y responden a los mismos tratamientos."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Cómo se define técnicamente un ataque de pánico según el DSM-5?",
+      "a": "Aparición súbita de miedo o malestar intenso que alcanza su máxima expresión en minutos, con al menos cuatro síntomas específicos."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "Nombre cinco síntomas físicos que pueden presentarse durante un ataque de pánico según la lista del DSM-5.",
+      "a": "Palpitaciones, sudoración, temblor, sensación de asfixia y náuseas (entre otros)."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿A qué se refieren los términos 'desrealización' y 'despersonalización' en el contexto de un ataque de pánico?",
+      "a": "Desrealización es la sensación de irrealidad del entorno; despersonalización es sentirse separado de uno mismo."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Qué requisito de tiempo y preocupación debe cumplirse tras un ataque para diagnosticar el Trastorno de Pánico?",
+      "a": "Al menos un mes de inquietud continua por nuevos ataques o cambios de mala adaptación en el comportamiento."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Es necesario que el individuo esté ansioso antes del ataque de pánico para que este se produzca?",
+      "a": "No, el ataque puede aparecer tanto desde un estado de ansiedad como desde un estado de calma absoluta."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Qué factor parece estar más asociado al desarrollo del trastorno de pánico según Sandín et al. (2006)?",
+      "a": "Se asocia más a la percepción de estrés psicosocial que a la ocurrencia de eventos vitales cotidianos."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Qué creencia catastrófica suelen tener los pacientes con trastorno de pánico respecto a sus síntomas físicos?",
+      "a": "Creen que el ataque es indicio de una enfermedad grave (como un infarto), aun sin evidencia médica."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Por qué se dice que el trastorno de pánico es el que genera más frecuentación de servicios médicos?",
+      "a": "Debido a su gravedad, cronicidad y a que a menudo no se diagnostica correctamente en atención primaria."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Qué componentes integran el 'tratamiento del control de pánico' propuesto por el grupo de Barlow?",
+      "a": "Psicoeducación, terapia de exposición, reestructuración cognitiva y entrenamiento en relajación o respiración."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿En qué se diferencia el programa de Clark del de Barlow en el tratamiento del pánico?",
+      "a": "El de Clark se centra más en la terapia cognitiva e incluye experimentos de inducción de sensaciones temidas."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿De cuántas situaciones (mínimo) debe presentar miedo o ansiedad el individuo para ser diagnosticado de agorafobia?",
+      "a": "Debe presentar miedo o ansiedad intensa en al menos dos de las cinco situaciones agorafóbicas especificadas."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Cuáles son las cinco situaciones que contempla el DSM-5 para el diagnóstico de agorafobia?",
+      "a": "Transporte público, espacios abiertos, sitios cerrados, hacer cola/multitudes y estar fuera de casa solo."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Cuál es el pensamiento subyacente que lleva a una persona con agorafobia a evitar ciertas situaciones?",
+      "a": "La idea de que escapar podría ser difícil o que no dispondría de ayuda si aparecen síntomas incapacitantes o de pánico."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Cómo se codifica la agorafobia en relación con el trastorno de pánico en el DSM-5?",
+      "a": "Se diagnostica de forma independiente; si se cumplen criterios para ambos, se asignan los dos diagnósticos."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Qué instrumento español se destaca para evaluar síntomas de pánico y agorafobia y quiénes lo construyeron?",
+      "a": "El Inventario de Agorafobia (IA), construido por Echeburúa et al. (1992)."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Qué tres factores mide el Inventario de Agorafobia (IA)?",
+      "a": "El factor respiratorio, el factor autonómico y el factor cognitivo."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Con qué síntoma relevante se relaciona el factor respiratorio del Inventario de Agorafobia?",
+      "a": "Está muy relacionado con la hiperventilación."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Qué contenidos engloba el factor cognitivo del Inventario de Agorafobia?",
+      "a": "Miedo a perder el control, a volverse loco y sensaciones de irrealidad."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Qué dos tipos de intervenciones se consideran actualmente 'bien establecidas' para la agorafobia?",
+      "a": "La exposición (o autoexposición) in vivo y la terapia cognitivo-conductual (TCC)."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Qué ventaja presenta la TCC frente a la exposición in vivo pura en el tratamiento de la agorafobia?",
+      "a": "Tiende a producir menos abandonos del tratamiento y menos recaídas."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Qué define principalmente al Trastorno de Ansiedad Generalizada (TAG) según el DSM-5?",
+      "a": "Ansiedad y preocupación excesiva (anticipación aprensiva) sobre diversos sucesos durante al menos seis meses."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Cuántos síntomas de los seis listados por el DSM-5 se requieren para el diagnóstico de TAG en adultos?",
+      "a": "Se requiere la presencia de al menos tres de los seis síntomas físicos/cognitivos."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "Nombre los seis síntomas asociados a la ansiedad y preocupación en el TAG.",
+      "a": "Inquietud, fatiga fácil, dificultad para concentrarse, irritabilidad, tensión muscular y problemas de sueño."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Cuál es la diferencia en el requerimiento de síntomas para el diagnóstico de TAG en niños respecto a adultos?",
+      "a": "En los niños solamente se requiere la presencia de un ítem de la lista de síntomas."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿A qué se refiere el término 'ansiedad doble' en el contexto del TAG y el trastorno de pánico?",
+      "a": "A la frecuente comorbilidad entre ambos trastornos debido a que sus límites diagnósticos son a veces imprecisos."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Qué síntomas comparte el TAG con los trastornos depresivos según el texto?",
+      "a": "Problemas de concentración, fatiga e insomnio."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Cómo se distinguen las preocupaciones del TAG de las rumiaciones depresivas?",
+      "a": "Las preocupaciones se centran en el futuro, mientras que las rumiaciones casi siempre se refieren a eventos pasados."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Cuál es la intervención con mayor evidencia para el TAG?",
+      "a": "La terapia cognitivo-conductual es la que presenta mayor evidencia."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Qué técnica novedosa se está empezando a utilizar en el TAG aunque aún requiere más investigación?",
+      "a": "El mindfulness."
+    },
+    {
+      "cat": "Fobia Específica",
+      "q": "¿Qué implica que el miedo en la fobia específica sea 'inmediato'?",
+      "a": "Que la respuesta de ansiedad se presenta de forma casi instantánea al exponerse al objeto fóbico."
+    },
+    {
+      "cat": "Fobia Específica",
+      "q": "¿Qué subcategoría de fobia específica incluye el miedo a las tormentas o al agua?",
+      "a": "La subcategoría de 'entorno natural'."
+    },
+    {
+      "cat": "Fobia Específica",
+      "q": "Si un niño tiene miedo a personajes disfrazados, ¿en qué categoría diagnóstica se codificaría?",
+      "a": "En la categoría residual 'otra'."
+    },
+    {
+      "cat": "Tratamiento Ansiedad",
+      "q": "¿Qué alternativa tecnológica ha demostrado resultados satisfactorios en el tratamiento de fobias según el texto?",
+      "a": "La terapia de exposición mediante realidad virtual."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Cuál es el objetivo de la 'hipervigilancia' en el paciente con ansiedad social?",
+      "a": "Detectar cualquier señal de desaprobación o reacción negativa en los demás ante su propia conducta."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Por qué el paciente con fobia social realiza conductas de escape?",
+      "a": "Para reducir la ansiedad inmediata y evitar la posible humillación percibida en la situación social."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Qué papel juega el rechazo de otros en el miedo del fóbico social según el criterio B?",
+      "a": "Es la consecuencia temida tras actuar de una manera que se valore negativamente u ofenda a otros."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Cómo influyen las afecciones médicas (ej. Parkinson) en el diagnóstico de fobia social?",
+      "a": "Solo se diagnostica si el miedo social es claramente no relacionado con la afección o es excesivo."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Qué nivel de interferencia en las actividades diarias causa la timidez frente a la fobia social?",
+      "a": "La timidez causa una interferencia baja, mientras que en la fobia social la interferencia es alta."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿En qué etapa de la vida suele iniciarse la fobia social frente a la timidez?",
+      "a": "La fobia social inicia en la adolescencia, mientras que la timidez se manifiesta ya a los 1-2 años."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Qué síntoma de pánico se describe como 'sensación de entumecimiento o de hormigueo'?",
+      "a": "Las parestesias."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Cuál es el tiempo máximo en el que un ataque de pánico suele alcanzar su pico de intensidad?",
+      "a": "Alcanza su máxima expresión en cuestión de minutos."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "Mencione dos síntomas que el DSM-5 considera 'específicos de la cultura' y que no cuentan para el diagnóstico.",
+      "a": "Acúfenos, dolor de cuello, dolor de cabeza, o llanto incontrolable."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Qué cambio conductual se considera 'de mala adaptación' tras un ataque de pánico?",
+      "a": "Evitar hacer ejercicio o evitar lugares no familiares para intentar prevenir nuevos ataques."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Qué afecciones médicas deben descartarse antes de diagnosticar un trastorno de pánico?",
+      "a": "Hipertiroidismo o trastornos cardiopulmonares, entre otras afecciones fisiológicas."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "Según Botella y Ballester, ¿qué atribución suelen hacer los pacientes sobre su problema al sentirse desmoralizados?",
+      "a": "Suelen atribuir su problema a una supuesta falta de carácter."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Qué consumo de riesgo suele asociarse como comorbilidad al trastorno de pánico?",
+      "a": "El consumo de alcohol o el abuso de medicación."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "En personas de edad avanzada con agorafobia, ¿cuál suele ser el miedo incapacitante específico?",
+      "a": "El miedo a caerse."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Qué otra condición médica puede coexistir con la agorafobia haciendo que el miedo sea 'excesivo'?",
+      "a": "Enfermedad intestinal inflamatoria o enfermedad de Parkinson."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "Si un paciente teme los espacios abiertos por miedo a la incontinencia, ¿qué diagnóstico se debe considerar?",
+      "a": "Agorafobia (ya que el miedo es a síntomas embarazosos en situaciones donde escapar es difícil)."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Cómo se comporta el miedo agorafóbico ante la presencia de un acompañante?",
+      "a": "A menudo la situación solo se soporta o se resiste si el individuo está en compañía de alguien."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Qué diferencia al miedo agorafóbico de la preocupación del trastorno dismórfico corporal?",
+      "a": "En el TAG/Agorafobia el miedo no se limita a defectos percibidos en el aspecto físico."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Cómo se define la 'anticipación aprensiva' en el contexto del TAG?",
+      "a": "Es la preocupación excesiva que ocurre más días de los que está ausente durante al menos 6 meses."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Por qué el TAG se asocia a la 'incertidumbre' según Montoro et al.?",
+      "a": "Porque los desencadenantes suelen ser situaciones futuras cuya solución se valora como incierta."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Qué síntoma del TAG se describe como 'quedarse con la mente en blanco'?",
+      "a": "La dificultad para concentrarse."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Qué tipo de tensión es característica de los pacientes con TAG?",
+      "a": "La tensión muscular."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Cómo se diferencia el TAG de la anorexia nerviosa en cuanto al contenido de la preocupación?",
+      "a": "En la anorexia la preocupación se limita al aumento de peso, mientras que en el TAG es generalizada."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Qué diferencia el TAG de la esquizofrenia en cuanto al origen de la ansiedad?",
+      "a": "En la esquizofrenia la ansiedad deriva de creencias delirantes, no de preocupaciones sobre sucesos reales o cotidianos."
+    },
+    {
+      "cat": "Evaluación Ansiedad",
+      "q": "¿Qué cualidad psicométrica destaca Sandín et al. (2004) sobre el Inventario de Agorafobia (IA)?",
+      "a": "Presenta buenas cualidades psicométricas y factores que se mantienen independientes de la cultura."
+    },
+    {
+      "cat": "Tratamiento Ansiedad",
+      "q": "¿Qué papel juega la psicoeducación en los programas de Barlow y Clark para el pánico?",
+      "a": "Es fundamental para que el paciente comprenda la naturaleza del trastorno y de sus síntomas físicos."
+    },
+    {
+      "cat": "Fobia Específica",
+      "q": "¿Qué ocurre con la fobia específica si no se trata a lo largo de los años?",
+      "a": "Puede permanecer durante muchos años de forma crónica."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Qué se entiende por 'conductas de seguridad' en la ansiedad social?",
+      "a": "Acciones que el sujeto realiza para prevenir lo que percibe como una catástrofe social (ej. no mirar a los ojos)."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "¿Es la fobia social más frecuente en hombres o en mujeres?",
+      "a": "El texto no lo especifica directamente para la fobia social, pero indica que la mayoría de fobias específicas son más habituales en mujeres."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Qué síntoma de pánico implica sentir que el corazón golpea fuertemente?",
+      "a": "Palpitaciones o golpeteo del corazón."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Cómo afecta el trastorno de pánico a las relaciones interpersonales según Botella y Ballester?",
+      "a": "Causa problemas importantes en dichas relaciones."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Qué significa que la evitación en agorafobia sea 'activa'?",
+      "a": "Que el individuo modifica intencionadamente su comportamiento para no encontrarse en las situaciones temidas."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Por qué es importante el factor autonómico en la evaluación de la agorafobia?",
+      "a": "Porque agrupa síntomas físicos clave como taquicardia y sudoración que refuerzan el miedo del paciente."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Qué tipo de problemas de sueño son típicos del TAG?",
+      "a": "Dificultad para dormirse, para continuar durmiendo o tener un sueño inquieto e insatisfactorio."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "En el diagnóstico diferencial del TAG, ¿qué se debe descartar respecto al trastorno de ansiedad por enfermedad?",
+      "a": "Que la preocupación no se limite exclusivamente a tener una enfermedad grave."
+    },
+    {
+      "cat": "Clasificación DSM-5",
+      "q": "¿Qué otros dos trastornos de ansiedad, además de los cinco principales, se mencionan en la Tabla 5?",
+      "a": "Trastorno de ansiedad por separación y Mutismo selectivo."
+    },
+    {
+      "cat": "Tratamiento Ansiedad",
+      "q": "¿Por qué se recomienda la autoexposición in vivo en agorafobia?",
+      "a": "Porque permite al paciente enfrentarse a las situaciones de forma gradual y ganar autonomía."
+    },
+    {
+      "cat": "Ansiedad Social",
+      "q": "Según Caballo et al. (2011), ¿con qué aspectos de la timidez se correlaciona la ansiedad social?",
+      "a": "Se correlaciona de forma elevada con los aspectos conductuales de la timidez."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Qué se busca modificar con la 'reestructuración cognitiva' en el pánico?",
+      "a": "Las creencias erróneas sobre el peligro de las sensaciones físicas y la sobreestimación de la amenaza."
+    },
+    {
+      "cat": "Agorafobia",
+      "q": "¿Cómo influye el contexto sociocultural en la valoración de la agorafobia?",
+      "a": "El miedo debe ser desproporcionado no solo al peligro real, sino también a lo que es normativo en su cultura."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Qué síntoma del TAG se asocia a la 'irritabilidad'?",
+      "a": "Es uno de los síntomas psicológicos/conductuales que acompañan a la preocupación constante."
+    },
+    {
+      "cat": "Ansiedad Generalizada",
+      "q": "¿Por qué el TAG se considera un trastorno de 'anticipación'?",
+      "a": "Porque el sujeto vive en un estado de alerta constante esperando que algo negativo suceda en el futuro."
+    },
+    {
+      "cat": "Trastorno de Pánico",
+      "q": "¿Qué técnica de Clark busca demostrar al paciente que sus sensaciones son inofensivas?",
+      "a": "Los experimentos conductuales de inducción de sensaciones (ej. hiperventilación controlada)."
+    }
+  ]
+}

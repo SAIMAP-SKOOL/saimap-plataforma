@@ -1,0 +1,2455 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es cierto que el modelo sociocognitivo actual considera la cognición como el eje regulador de la conducta y los contextos sociales como marcos de fraguado?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Revisa la introducción del capítulo sobre los modelos generales de la psicología actual.",
+      "explanation": "El texto define el modelo sociocognitivo como uno de los más amplios, situando la cognición como reguladora y lo social como marco de contenidos."
+    },
+    {
+      "q": "¿Afirmó Watson que el pensamiento debe ser entendido exclusivamente como un lenguaje subvocal para mantener el rigor del estudio observable?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Busca la sistematización del conductismo y la supresión de aspectos mentales internos.",
+      "explanation": "Watson, para evitar el mentalismo, formuló el pensamiento en términos físicos y observables como lenguaje subvocal."
+    },
+    {
+      "q": "¿Propuso B. Skinner que los procesos mentales deben ser incluidos en el modelo explicativo como variables mediacionales del aprendizaje?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre el conductismo de Hull/Tolman y el conductismo radical de Skinner.",
+      "explanation": "Skinner propuso radicalmente la exclusión explicativa de los procesos mentales; fueron Hull y Tolman quienes introdujeron variables mediacionales."
+    },
+    {
+      "q": "¿Sostenía la escuela de la Gestalt que las propiedades de los procesos mentales complejos podían derivarse íntegramente de la suma de sus componentes?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Recuerda el principio básico de la Gestalt sobre la relación entre el todo y las partes.",
+      "explanation": "La Gestalt rechazaba el asociacionismo y mantenía que el todo tiene propiedades que no se derivan simplemente de sus componentes."
+    },
+    {
+      "q": "¿Defendió L. S. Vygotsky que la función simbólica del lenguaje es cronológicamente anterior a su función comunicativa en el desarrollo humano?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Consulta las conclusiones de su obra 'Pensamiento y lenguaje' (1934).",
+      "explanation": "Vygotsky expuso que la función comunicativa del lenguaje era anterior a la simbólica en el desarrollo cognitivo."
+    },
+    {
+      "q": "¿Es la hipótesis de que la inteligencia natural y la artificial funcionan bajo los mismos procesos un postulado aceptado por Newell, Shaw y Simon?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Busca la reacción de los autores ante la metáfora de la mente como ordenador en 1958.",
+      "explanation": "Aunque la idea inicial de la metáfora del ordenador era esa, la hipótesis fue rápidamente rechazada por Newell, Shaw y Simon en 1958."
+    },
+    {
+      "q": "¿Sostienen Miller, Gallanter y Pribram que la acción humana sería caótica sin la retroalimentación continua de la información sobre los resultados?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Analiza la propuesta de 'Planes y estructura de la conducta' (1960).",
+      "explanation": "Los autores proponen que la conducta exige retroalimentación; sin planes y feedback, la acción sería inefectiva y caótica."
+    },
+    {
+      "q": "¿Señala Piaget que el equilibrio de la cognición se mantiene específicamente entre los procesos de asimilación y adaptación?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Recuerda los conceptos de homeóstasis y génesis del conocimiento en su teoría.",
+      "explanation": "Piaget destaca que la cognición se mantiene en un equilibrio homeostático mediante la asimilación y la adaptación."
+    },
+    {
+      "q": "¿Define la RAE la inteligencia exclusivamente como la capacidad de adquirir conocimientos y memorizar datos complejos?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Comprueba las dos acepciones principales que ofrece el Diccionario de la lengua española.",
+      "explanation": "La RAE la define como la 'capacidad de entender o comprender' y como la 'capacidad de resolver problemas'."
+    },
+    {
+      "q": "¿Es el auriga del mito del carro alado de Platón una representación de la inteligencia como razón y conocimiento?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Relaciona la alegoría platónica con la dirección de los corceles hacia objetivos.",
+      "explanation": "Platón ejemplifica la inteligencia como el auriga (razón) que dirige el carro en busca de sus objetivos."
+    },
+    {
+      "q": "¿Consideraba Cicerón que la inteligencia era un concepto abstracto alejado de la capacidad práctica de saber vivir?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Observa la evolución del concepto desde Sócrates hasta los desarrollos estoicos.",
+      "explanation": "Cicerón y los estoicos aproximaban el concepto de inteligencia al 'saber vivir' y al manejo eficaz de la realidad."
+    },
+    {
+      "q": "¿Propusieron Herrstein y Murray que la inteligencia es el principal mecanismo de triunfo social en las sociedades posindustriales?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Busca la disputa de 1994 sobre el éxito social y los factores económicos.",
+      "explanation": "Ellos argumentaron que la inteligencia sustituiría al dinero como principal factor de éxito en el futuro."
+    },
+    {
+      "q": "¿Incluyen las culturas orientales, según Sternberg, la benevolencia y el hacer lo correcto como componentes de la inteligencia?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Revisa los estudios transculturales sobre visiones implícitas de la inteligencia.",
+      "explanation": "Sternberg halló que en culturas orientales se valoran aspectos como la benevolencia y la humanidad dentro del constructo."
+    },
+    {
+      "q": "¿Define Mariano Yela la inteligencia como una aptitud única e indivisible que no presenta covariación con otras capacidades?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Busca la cita de Yela sobre la estructura compleja y la jerarquía dinámica.",
+      "explanation": "Yela afirma que la inteligencia es una, pero no una aptitud, sino una estructura compleja de múltiples aptitudes covariantes."
+    },
+    {
+      "q": "¿Existe un consenso unánime entre los especialistas sobre la definición científica de la inteligencia desde el congreso de 1921?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Revisa los resultados de las encuestas realizadas por Sternberg y Detterman.",
+      "explanation": "No se logró consenso en 1921 ni existe unanimidad actual, aunque se identifiquen elementos comunes en encuestas posteriores."
+    },
+    {
+      "q": "¿Sostenía A. R. Jensen que las diferencias en la capacidad intelectual de ciertos grupos étnicos hacían inútiles los programas educativos?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Recuerda el enfoque de la inteligencia como disposición individual radical en los años 60.",
+      "explanation": "Jensen propuso que grupos de origen africano y latino carecían de la capacidad necesaria para asimilar ciertos conocimientos."
+    },
+    {
+      "q": "¿Considera el enfoque de la inteligencia como cultura que esta es una capacidad interna pura independiente de las pautas sociales?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre el enfoque disposicional y el enfoque sociocultural.",
+      "explanation": "El enfoque de la inteligencia como cultura la ve como resultado de un contexto que transmite pautas que el individuo asimila."
+    },
+    {
+      "q": "¿Se centró Francis Galton en las características innatas y la capacidad cognitiva general como base de la inteligencia?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Identifica al autor que inició la tradición de la inteligencia como disposición biológica.",
+      "explanation": "Galton es el referente de la tradición disposicional, centrada en capacidades innatas y generales."
+    },
+    {
+      "q": "¿Utiliza la tradición de la inteligencia como estructura el análisis factorial para identificar dimensiones latentes en pruebas mentales?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Relaciona los modelos de Spearman y Thurstone con esta tradición específica.",
+      "explanation": "Este enfoque analiza el desempeño en pruebas para hallar estructuras que expliquen los resultados mediante modelos factoriales."
+    },
+    {
+      "q": "¿Definió Alfred Binet la inteligencia como una capacidad global centrada en actividades mentales superiores como la deducción?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Busca los pioneros del enfoque de la inteligencia como medida y sus componentes.",
+      "explanation": "Binet incluyó la deducción, atención, memoria e imaginación como actividades mentales superiores que definen la inteligencia global."
+    },
+    {
+      "q": "¿Es el factor g de Spearman una 'energía mental general' que se manifiesta de forma ineficiente en contextos específicos?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Busca la definición de eficiencia del factor g en la obra de 1927.",
+      "explanation": "Según Spearman, el factor g representa una energía mental general aplicable a múltiples contextos y eficiente en todos ellos."
+    },
+    {
+      "q": "¿Sostiene el modelo de Thurstone que un desempeño destacado en una aptitud mental implica necesariamente un buen rendimiento en las demás?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Compara el modelo jerárquico de Spearman con el modelo de factores independientes.",
+      "explanation": "Thurstone propuso factores independientes: el desempeño en una habilidad no garantiza un rendimiento similar en otras."
+    },
+    {
+      "q": "¿Representó J. P. Guilford su modelo de la estructura de la inteligencia mediante un cubo con 120 factores teóricos?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Relaciona las variables de entrada, operaciones y salida con el modelo espacial.",
+      "explanation": "Guilford estructuró su modelo El en un cubo de 120 celdas resultantes de la combinación de contenidos, operaciones y productos."
+    },
+    {
+      "q": "¿Postula la teoría de la inversión de Cattell que la inteligencia fluida resulta de invertir la inteligencia cristalizada en el aprendizaje?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Identifica cuál es la capacidad base que se invierte según el modelo de 1971.",
+      "explanation": "La teoría de la inversión sostiene que la inteligencia cristalizada es la que resulta de invertir la inteligencia fluida en el aprendizaje."
+    },
+    {
+      "q": "¿Señalan Sánchez Cánovas y Sánchez López que la estructura factorial de la inteligencia es independiente de la etapa evolutiva del sujeto?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Revisa las conclusiones sobre la vinculación de la inteligencia con el contexto y la persona.",
+      "explanation": "Los autores indican que la estructura factorial está vinculada a la persona, al contexto y a su etapa evolutiva."
+    },
+    {
+      "q": "Seleccione la opción correcta respecto a las variables mediacionales en los modelos conductistas del aprendizaje:",
+      "options": [
+        "Hull y Tolman las introdujeron para explicar resultados del aprendizaje",
+        "Watson las utilizó para definir el pensamiento como un lenguaje subvocal",
+        "Skinner las consideró esenciales para el estudio observable del comportamiento"
+      ],
+      "correct": 0,
+      "hint": "Distingue entre conductismo metodológico y conductismo radical.",
+      "explanation": "Hull y Tolman fueron los autores conductistas que introdujeron variables mediacionales en sus modelos explicativos."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la escuela de la Gestalt y su cese de actividad en Alemania:",
+      "options": [
+        "Sus estudios se truncaron en 1930 debido a la emigración forzada de sus miembros",
+        "El movimiento se disolvió por el rechazo unánime a sus teorías asociacionistas",
+        "La escuela se integró en los modelos soviéticos tras la Segunda Guerra Mundial"
+      ],
+      "correct": 0,
+      "hint": "Observa el contexto histórico de los años 30 en Europa Central.",
+      "explanation": "Debido al origen judío de buena parte de sus miembros, tuvieron que emigrar de Alemania a partir de 1930."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre el desarrollo humano según la perspectiva de L. S. Vygotsky:",
+      "options": [
+        "Solo puede explicarse de forma suficiente a través de la interacción social",
+        "Es el resultado exclusivo de la maduración biológica del sistema nervioso",
+        "Depende de la eliminación de la función comunicativa en favor de la simbólica"
+      ],
+      "correct": 0,
+      "hint": "Recuerda el enfoque sociogenético de la escuela soviética.",
+      "explanation": "Vygotsky puso de manifiesto que el desarrollo y la inteligencia son resultados de la interiorización de la interacción social."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la obra 'Planes y estructura de la conducta' (1960):",
+      "options": [
+        "Propone que los planes constituyen el eje básico de la acción a corto y largo plazo",
+        "Afirma que la conducta humana es inherentemente caótica e inefectiva por naturaleza",
+        "Rechaza la importancia de la cognición como reguladora de la conducta observable"
+      ],
+      "correct": 0,
+      "hint": "Analiza el papel de los planes y la retroalimentación en el modelo cibernético.",
+      "explanation": "Miller, Gallanter y Pribram proponen que los planes regulan la acción y evitan que la conducta sea caótica."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre los procesos que fundamentan la génesis del conocimiento en Piaget:",
+      "options": [
+        "Destacan la maduración biológica y la conducta interactiva con la realidad",
+        "Se centran en la acumulación de datos verbales sin necesidad de equilibrio",
+        "Dependen únicamente de la instrucción pedagógica recibida en la escolaridad"
+      ],
+      "correct": 0,
+      "hint": "Relaciona la biología con la interacción en el desarrollo mental.",
+      "explanation": "Piaget destaca que la maduración biológica y la interacción con la realidad mantienen el equilibrio homeostático cognitivo."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la visión de Sócrates respecto a la inteligencia:",
+      "options": [
+        "La planteó como la capacidad fundamental para poder pensar la realidad",
+        "La ejemplificó como un auriga que dirige corceles en busca de objetivos",
+        "La aproximó al concepto estoico de saber vivir con prudencia y eficacia"
+      ],
+      "correct": 0,
+      "hint": "Diferencia entre los planteamientos de Platón y su maestro Sócrates.",
+      "explanation": "Sócrates planteó la inteligencia como la capacidad para pensar la realidad, concepto luego expandido por Platón."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la visión 'lega' o implícita de la inteligencia:",
+      "options": [
+        "Proviene de la observación y la experiencia cotidiana de demandas del medio",
+        "Es el resultado de la aplicación rigurosa de métodos psicométricos factoriales",
+        "Constituye una definición consensuada por los especialistas en los congresos"
+      ],
+      "correct": 0,
+      "hint": "Busca el origen de las ideas que tiene 'la persona de la calle' sobre el tema.",
+      "explanation": "La visión lega se basa en cómo percibimos el desempeño y las habilidades de los demás en el día a día."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre los hallazgos de Sternberg en la cultura de Zambia:",
+      "options": [
+        "Se valora la responsabilidad social y la cooperación como parte de la inteligencia",
+        "Se enfatiza exclusivamente la habilidad verbal y la resolución de problemas",
+        "Se ignora la competencia social en favor de las capacidades cognitivas puras"
+      ],
+      "correct": 0,
+      "hint": "Busca las diferencias entre los valores de EE.UU. y países africanos o asiáticos.",
+      "explanation": "En Zambia y Taiwán, los aspectos interpersonales y la responsabilidad social son centrales en el constructo inteligencia."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre el concepto de inteligencia según Mariano Yela:",
+      "options": [
+        "Es un indicador del control y la autonomía que posee cada especie animal",
+        "Se define como una aptitud aislada que no guarda relación con la jerarquía",
+        "Es una característica secundaria que solo afecta a la conducta automática"
+      ],
+      "correct": 0,
+      "hint": "Relaciona la inteligencia con el proceso evolutivo y la encefalización.",
+      "explanation": "Yela consideraba la inteligencia un indicador del control y autonomía logrado a través del desarrollo del sistema nervioso."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre los tres elementos definitorios de la inteligencia (Snyderman y Rothman):",
+      "options": [
+        "Razonamiento abstracto, solución de problemas y adquisición de conocimientos",
+        "Velocidad de procesamiento, memoria a corto plazo y habilidades motoras",
+        "Benevolencia social, ajuste emocional y capacidad de introspección mental"
+      ],
+      "correct": 0,
+      "hint": "Identifica los pilares del consenso mínimo alcanzado tras encuestar a especialistas.",
+      "explanation": "Estos tres elementos fueron los más citados por más de mil especialistas en la encuesta de 1988."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre el enfoque de la inteligencia como interacción:",
+      "options": [
+        "Estudia el desarrollo y el ciclo vital como resultado de influencias mixtas",
+        "Se centra exclusivamente en los determinantes biológicos innatos del sujeto",
+        "Considera que el contexto sociocultural es el único motor del aprendizaje"
+      ],
+      "correct": 0,
+      "hint": "Analiza cómo se combinan las disponibilidades individuales con las competencias del medio.",
+      "explanation": "Este enfoque ve la inteligencia como fruto de la interacción individuo-contexto a lo largo de la vida."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la tradición de la inteligencia como medida:",
+      "options": [
+        "Busca cuantificar la inteligencia para predecir resultados en diversos contextos",
+        "Se limita al estudio de los procesos psicofisiológicos y la genética cerebral",
+        "Identifica estructuras latentes mediante el uso exclusivo del análisis factorial"
+      ],
+      "correct": 0,
+      "hint": "Piensa en la finalidad práctica de los test de Binet o Wechsler.",
+      "explanation": "Este enfoque pone el énfasis en la validez y fiabilidad de las pruebas para asignar tareas y predecir el rendimiento."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la obra 'The abilities of man' (1927):",
+      "options": [
+        "Spearman expuso los principios de su modelo bifactorial de inteligencia",
+        "Thurstone presentó las siete aptitudes mentales primarias de su análisis",
+        "Guilford detalló las variables de entrada y salida de su sistema cúbico"
+      ],
+      "correct": 0,
+      "hint": "Identifica al autor que formalizó el factor g en esta obra clásica.",
+      "explanation": "Spearman publicó en 1927 su obra fundamental donde detalla su teoría jerárquica y el factor general."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre las aptitudes mentales primarias (PMA):",
+      "options": [
+        "Fueron identificadas por Thurstone tras estudiar 56 pruebas en universitarios",
+        "Constituyen una serie de factores subordinados a un factor g predominante",
+        "Representan procesos sensoriales básicos como la discriminación auditiva"
+      ],
+      "correct": 0,
+      "hint": "Recuerda el número de pruebas y el tipo de muestra utilizada por Thurstone en 1938.",
+      "explanation": "Thurstone identificó las 7 aptitudes tras analizar el rendimiento de 250 universitarios en 56 test."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la variable 'Fluidez verbal' (W) en el modelo PMA:",
+      "options": [
+        "Es la rapidez para asociar tipos de palabras y utilizar sinónimos",
+        "Es la facultad para comprender analogías y juegos de palabras complejos",
+        "Es la capacidad para recordar información presentada de forma visual"
+      ],
+      "correct": 0,
+      "hint": "Diferencia entre Comprensión verbal (V) y Fluidez verbal (W).",
+      "explanation": "La fluidez verbal se refiere al manejo, asociación y rapidez en el uso de palabras y sinónimos."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre el 'Factor espacial' (S) según Thurstone:",
+      "options": [
+        "Es la facilidad para visualizar y manipular mentalmente objetos diversos",
+        "Es la habilidad para operar con números y realizar cálculos muy sencillos",
+        "Es la capacidad para inferir reglas generales a partir de series lógicas"
+      ],
+      "correct": 0,
+      "hint": "Identifica la aptitud relacionada con la representación mental de formas.",
+      "explanation": "El factor S implica la capacidad de manipular mentalmente objetos en distintas formas y posiciones."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la taxonomía de la inteligencia de Guilford:",
+      "options": [
+        "Distingue entre contenidos mentales, operaciones mentales y productos mentales",
+        "Se basa en la distinción exclusiva entre inteligencia fluida y cristalizada",
+        "Propone siete aptitudes primarias que operan de forma totalmente independiente"
+      ],
+      "correct": 0,
+      "hint": "Identifica las tres dimensiones que componen su modelo de estructura.",
+      "explanation": "Guilford clasificó la inteligencia en tres tipos de procesos: contenidos, operaciones y productos."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre los 'Contenidos mentales' en el sistema de Guilford:",
+      "options": [
+        "Incluyen las modalidades figurativa, semántica, simbólica y conductual",
+        "Contemplan procesos como la cognición, la memoria y la evaluación crítica",
+        "Se refieren a los resultados finales de la operación como unidades o clases"
+      ],
+      "correct": 0,
+      "hint": "Busca el tipo de información sobre la que versan las operaciones intelectuales.",
+      "explanation": "Los contenidos son las variables de entrada: figurativo, semántico, simbólico y conductual."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la inteligencia fluida según Cattell:",
+      "options": [
+        "Es la capacidad de resolver problemas nuevos de manera lógica y abstracta",
+        "Se manifiesta en el vocabulario y la comprensión de conceptos aprendidos",
+        "Depende principalmente de la socialización y la escolarización del sujeto"
+      ],
+      "correct": 0,
+      "hint": "Diferencia entre potencial innato y conocimiento acumulado.",
+      "explanation": "La inteligencia fluida es independiente del conocimiento previo y se usa en situaciones novedosas."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la inteligencia cristalizada según Cattell:",
+      "options": [
+        "Se basa en el aprendizaje previo y el conocimiento adquirido por educación",
+        "Predomina en los primeros años de vida antes de iniciar la escolarización",
+        "Es un indicador de la agilidad mental en tareas que no requieren experiencia"
+      ],
+      "correct": 0,
+      "hint": "Relaciona este tipo de inteligencia con la acumulación de experiencias.",
+      "explanation": "La inteligencia cristalizada utiliza la información y habilidades aprendidas a lo largo de la vida."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la síntesis jerárquica de Cattell:",
+      "options": [
+        "En el nivel superior se sitúa el factor general de inteligencia de Spearman",
+        "Los factores primarios de Thurstone ocupan el segundo nivel del modelo",
+        "La inteligencia fluida y cristalizada se ubican en el nivel más bajo de todos"
+      ],
+      "correct": 0,
+      "hint": "Revisa los tres niveles propuestos para integrar las teorías previas.",
+      "explanation": "Cattell integra a Spearman en la cima (factor g), a sus propios factores en el medio y a Thurstone en la base."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la importancia de los factores primarios:",
+      "options": [
+        "Reflejan desempeños específicos de la inteligencia en áreas concretas",
+        "Carecen de relevancia práctica al estar en el nivel inferior de la jerarquía",
+        "Son independientes del factor g y no correlacionan entre ellos en absoluto"
+      ],
+      "correct": 0,
+      "hint": "Busca la conclusión sobre el valor de las aptitudes específicas.",
+      "explanation": "Aunque están en un nivel inferior, son cruciales porque muestran el desempeño real en tareas específicas."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la influencia del método en los resultados (Sánchez Cánovas):",
+      "options": [
+        "Tanto la recopilación como el análisis de datos determinan los hallazgos",
+        "El análisis factorial garantiza resultados coherentes independientemente del test",
+        "La estructura de la inteligencia puede entenderse de forma aislada al contexto"
+      ],
+      "correct": 0,
+      "hint": "Analiza las limitaciones metodológicas señaladas en el texto.",
+      "explanation": "El autor advierte que el método (test y estadística) limita e influye en lo que se descubre sobre la inteligencia."
+    },
+    {
+      "q": "Seleccione la opción correcta respecto a la 'Velocidad perceptual' (P) de Thurstone:",
+      "options": [
+        "Es la habilidad para discriminar figuras complejas y sus componentes",
+        "Es la rapidez para resolver cálculos matemáticos sencillos sin errores",
+        "Es la facilidad para asociar palabras sinónimas de manera espontánea"
+      ],
+      "correct": 0,
+      "hint": "Identifica la aptitud de discriminación visual rápida.",
+      "explanation": "El factor P se define como la capacidad de discriminar rápidamente figuras y diferenciar sus partes."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la 'Energía mental general' en el modelo de Spearman:",
+      "options": [
+        "Es un factor con fuerte base biológica que indica el potencial cognitivo",
+        "Es una capacidad secundaria que varía drásticamente según la tarea específica",
+        "Es un constructo que surge únicamente del aprendizaje social y la educación"
+      ],
+      "correct": 0,
+      "hint": "Busca la relación entre el factor g y la herencia según Spearman.",
+      "explanation": "Spearman, siguiendo a Galton, creía que el factor g tenía una base biológica y hereditaria fundamental."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre el comienzo disciplinar de la psicología científica:",
+      "options": [
+        "Se sitúa en el trabajo de W. Wundt con la fundación del Instituto de Leipzig",
+        "El estudio de la conciencia mediante la introspección fue uno de sus métodos",
+        "La psicología de Wundt ignoró los procesos superiores del pensamiento humano"
+      ],
+      "correct": 2,
+      "hint": "Recuerda el objetivo del Instituto Psicológico fundado por Wundt.",
+      "explanation": "Wundt se dedicó precisamente al estudio de la conciencia y de los procesos superiores del pensamiento."
+    },
+    {
+      "q": "Seleccione la opción incorrecta respecto al conductismo de J. B. Watson:",
+      "options": [
+        "Restó importancia al pensamiento para centrarse en el aprendizaje observable",
+        "Suprimió cualquier aspecto mental para sistematizar el estudio conductual",
+        "Consideró que el pensamiento es un proceso primario independiente del lenguaje"
+      ],
+      "correct": 2,
+      "hint": "Busca la definición física que Watson dio al proceso de pensar.",
+      "explanation": "Watson formuló el pensamiento como un lenguaje subvocal, es decir, como una conducta motora reducida."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre los modelos del procesamiento de la información:",
+      "options": [
+        "Surgieron a finales de la década de los cincuenta y principios de los sesenta",
+        "Utilizaron la metáfora de la mente como ordenador como referencia básica",
+        "Postularon que la inteligencia natural y artificial son idénticas en esencia"
+      ],
+      "correct": 2,
+      "hint": "Recuerda la postura de Newell, Shaw y Simon sobre la igualdad de procesos.",
+      "explanation": "Aunque usaron la metáfora, la hipótesis de que funcionaban siguiendo los mismos procesos fue rechazada rápidamente."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre el modelo sociocognitivo de J. S. Bruner:",
+      "options": [
+        "Aúna influencias de la cibernética, de Piaget y de la psicología soviética",
+        "Tiene un marcado enfoque multidisciplinar y transcultural en sus obras",
+        "Rechaza la importancia de los contextos sociales en el desarrollo cognitivo"
+      ],
+      "correct": 2,
+      "hint": "Relaciona a Bruner con el nombre del modelo al que pertenece.",
+      "explanation": "Bruner es un pilar del modelo sociocognitivo, que enfatiza precisamente la importancia de la cultura y lo social."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre la definición de inteligencia según la RAE:",
+      "options": [
+        "Incluye la capacidad de entender o comprender las cosas del entorno",
+        "Contempla la capacidad de resolver problemas de distinta naturaleza",
+        "Define la inteligencia como el éxito económico acumulado por un individuo"
+      ],
+      "correct": 2,
+      "hint": "Identifica la opción que mezcla conceptos de Herrstein y Murray con la RAE.",
+      "explanation": "La RAE se limita a comprender y resolver problemas; el éxito económico es una propuesta sociológica ajena al diccionario."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre el pensamiento de Platón y Sócrates:",
+      "options": [
+        "Consideraron la inteligencia como una cualidad altamente diferencial",
+        "Ambos filósofos aproximaron el concepto al 'saber vivir' de los estoicos",
+        "Plantearon que la inteligencia permite el manejo correcto de la realidad"
+      ],
+      "correct": 1,
+      "hint": "Diferencia las raíces clásicas de los desarrollos posteriores de Cicerón.",
+      "explanation": "Platón y Sócrates sentaron las bases; fueron los estoicos posteriores quienes la aproximaron al 'saber vivir'."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre la visión de inteligencia en los Estados Unidos:",
+      "options": [
+        "Se enfatiza la capacidad de resolución de problemas prácticos del día a día",
+        "Se valora la habilidad verbal y la competencia social del individuo evaluado",
+        "Se prioriza la benevolencia y la humanidad sobre el esfuerzo mental propio"
+      ],
+      "correct": 2,
+      "hint": "Identifica cuáles son los rasgos típicos de las culturas orientales en el texto.",
+      "explanation": "La benevolencia y la humanidad son rasgos valorados en culturas orientales, no en la estadounidense según Sternberg."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre el concepto de inteligencia para Mariano Yela:",
+      "options": [
+        "La conducta es más inteligente mientras más automática y repetitiva resulta",
+        "Es una característica general de la conducta que afecta a toda la vida",
+        "Se define como una unidad de múltiples aptitudes integradas jerárquicamente"
+      ],
+      "correct": 0,
+      "hint": "Busca la relación entre inteligencia, automatismo y flexibilidad en el texto.",
+      "explanation": "Yela afirmó que cuanto menos automática y repetitiva es una conducta, más inteligentes son sus efectos."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre el enfoque de la inteligencia como disposición:",
+      "options": [
+        "Considera que la inteligencia es una capacidad interna que debe estudiarse",
+        "Analiza los determinantes biológicos y psicológicos propios del individuo",
+        "Sostiene que la inteligencia es exclusivamente un resultado del contexto social"
+      ],
+      "correct": 2,
+      "hint": "Diferencia este enfoque del enfoque de 'la inteligencia como cultura'.",
+      "explanation": "El enfoque disposicional se centra en el interior del sujeto; el contexto es el foco del enfoque sociocultural."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre Francis Galton y su enfoque intelectual:",
+      "options": [
+        "Consideraba la inteligencia como una capacidad cognitiva general innata",
+        "Inició la tradición de entender la inteligencia como disposición biológica",
+        "Se centró en evaluar la inteligencia para predecir el éxito en la escuela"
+      ],
+      "correct": 2,
+      "hint": "Identifica quién fue el autor que se centró en el ámbito escolar.",
+      "explanation": "Fue Alfred Binet quien diseñó pruebas específicamente para evaluar el rendimiento escolar cotidiano."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre la teoría bifactorial de Spearman:",
+      "options": [
+        "Fue presentada en 1904 y marcó el inicio del análisis factorial en el área",
+        "Argumentaba que la inteligencia se basa en procesos básicos y sensoriales",
+        "Otorga mayor relevancia a las inteligencias específicas que al factor g"
+      ],
+      "correct": 2,
+      "hint": "Analiza el peso que Spearman da a los factores específicos (s).",
+      "explanation": "Spearman otorga mayor relevancia al factor g; las inteligencias específicas se consideran variaciones menores."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre el modelo de L. L. Thurstone:",
+      "options": [
+        "Postulaba un factor general predominante sobre todas las aptitudes",
+        "Propuso un modelo de factores independientes sin subordinación al factor g",
+        "Afirmó que un buen desempeño en una habilidad no garantiza éxito en otras"
+      ],
+      "correct": 0,
+      "hint": "Compara la estructura de Thurstone con la estructura de Spearman.",
+      "explanation": "Thurstone rechazó el predominio del factor general propuesto por Spearman en su modelo inicial."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre la aptitud 'Razonamiento' (R) de Thurstone:",
+      "options": [
+        "Es la capacidad para inferir reglas generales a partir de series lógicas",
+        "Se basa en observar la secuencia entre elementos para hallar la lógica",
+        "Es la facultad para comprender analogías expresadas mediante palabras"
+      ],
+      "correct": 2,
+      "hint": "Identifica cuál de las aptitudes PMA se encarga de las analogías verbales.",
+      "explanation": "Las analogías y juegos de palabras pertenecen a la Comprensión verbal (V), no al Razonamiento (R)."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre el trabajo de J. P. Guilford:",
+      "options": [
+        "Se caracterizó por un enfoque teórico orientado a identificar procesos",
+        "Tuvo acceso a recursos de las Fuerzas Aéreas para su investigación empírica",
+        "Logró replicar empíricamente todas las 120 capacidades que propuso"
+      ],
+      "correct": 2,
+      "hint": "Revisa la validez empírica actual de su taxonomía de 120 factores.",
+      "explanation": "El texto aclara que no se han replicado empíricamente todas las capacidades; es una taxonomía teóricamente posible."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre las 'Operaciones mentales' de Guilford:",
+      "options": [
+        "Incluyen procesos como la cognición, la memoria y la evaluación",
+        "Contemplan el pensamiento divergente y el pensamiento convergente",
+        "Hacen referencia al tipo de información (figurativa o semántica) tratada"
+      ],
+      "correct": 2,
+      "hint": "Diferencia entre la actividad mental y la información de entrada.",
+      "explanation": "La información (figurativa, semántica, etc.) corresponde a los 'Contenidos', no a las 'Operaciones'."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre los 'Productos mentales' de Guilford:",
+      "options": [
+        "Son el resultado de las operaciones realizadas sobre los contenidos",
+        "Incluyen categorías como unidades, clases, sistemas y transformaciones",
+        "Corresponden al tipo de actividad mental que conlleva una aptitud"
+      ],
+      "correct": 2,
+      "hint": "Identifica qué dimensión del modelo se ocupa del 'tipo de actividad'.",
+      "explanation": "El tipo de actividad mental se define como 'Operación'; los productos son las variables de salida."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre Raymond B. Cattell y su obra:",
+      "options": [
+        "Su principal aportación es la distinción entre inteligencia fluida y cristalizada",
+        "Consideraba que la inteligencia fluida depende más de la socialización cultural",
+        "Propuso la teoría de la inversión para explicar la inteligencia cristalizada"
+      ],
+      "correct": 1,
+      "hint": "Relaciona biología y cultura con los dos tipos de inteligencia de Cattell.",
+      "explanation": "Cattell sostenía que la herencia influye más en la fluida, mientras que la socialización afecta a la cristalizada."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre la inteligencia fluida ($Gf$):",
+      "options": [
+        "Permite identificar patrones y pensar críticamente en situaciones nuevas",
+        "Tiende a ser más evidente en tareas que requieren mucha agilidad mental",
+        "Es el conjunto de conocimientos y experiencias acumuladas por el sujeto"
+      ],
+      "correct": 2,
+      "hint": "Identifica cuál de las dos inteligencias de Cattell se basa en el aprendizaje.",
+      "explanation": "El conjunto de conocimientos y experiencias define la inteligencia cristalizada ($Gc$), no la fluida ($Gf$)."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre la inteligencia cristalizada ($Gc$):",
+      "options": [
+        "Se manifiesta en el razonamiento verbal, el vocabulario y los conceptos",
+        "Es independiente del conocimiento adquirido durante la vida del individuo",
+        "Se basa en la inversión de la inteligencia fluida en contextos de aprendizaje"
+      ],
+      "correct": 1,
+      "hint": "Piensa en la relación entre $Gc$ y la educación formal.",
+      "explanation": "La inteligencia cristalizada depende directamente de la información y el conocimiento aprendidos."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre la teoría de la inversión (Cattell, 1971):",
+      "options": [
+        "Propugna que la inteligencia cristalizada nace de invertir la fluida",
+        "La inteligencia fluida predomina durante la etapa de escolarización formal",
+        "La biología influye significativamente más en el desarrollo de la fluida"
+      ],
+      "correct": 1,
+      "hint": "Identifica en qué etapa de la vida predomina cada tipo de inteligencia.",
+      "explanation": "La fluida predomina en los primeros años; es la cristalizada la que adquiere importancia durante la escolarización."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre las conclusiones del estudio factorial:",
+      "options": [
+        "Existe un consenso general sobre la presencia de un factor general g",
+        "Las capacidades mentales se organizan de forma horizontal sin jerarquía",
+        "Los factores primarios reflejan desempeños en áreas muy específicas"
+      ],
+      "correct": 1,
+      "hint": "Recuerda la estructura del modelo jerárquico de las capacidades.",
+      "explanation": "Las capacidades se organizan jerárquicamente, no de forma puramente horizontal."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre las manifestaciones de la inteligencia:",
+      "options": [
+        "Están limitadas a lo que los test de inteligencia pueden medir hoy",
+        "No se ciñen exclusivamente a los resultados de las pruebas psicométricas",
+        "Están vinculadas a la persona, su contexto y su etapa evolutiva actual"
+      ],
+      "correct": 0,
+      "hint": "Reflexiona sobre la crítica que hace el texto a los resultados de los test.",
+      "explanation": "El texto afirma que la inteligencia NO se ciñe solo a lo que miden los test; estos son inherentemente restringidos."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre el análisis factorial en psicología:",
+      "options": [
+        "Permite determinar cómo se agrupan las habilidades cognitivas",
+        "Garantiza resultados idénticos y coherentes en todas las investigaciones",
+        "Es una técnica estadística que puede variar según el tratamiento de datos"
+      ],
+      "correct": 1,
+      "hint": "Busca la limitación mencionada sobre las técnicas estadísticas.",
+      "explanation": "El texto indica que las variaciones en las técnicas hacen que los resultados no siempre sean coherentes."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre la 'Memoria' (M) en el modelo de Thurstone:",
+      "options": [
+        "Es la capacidad para recordar información presentada anteriormente",
+        "Permite reconocer estímulos que ya han sido mostrados al individuo",
+        "Se define como la rapidez para discriminar figuras visuales complejas"
+      ],
+      "correct": 2,
+      "hint": "Identifica qué aptitud PMA se ocupa de la discriminación visual.",
+      "explanation": "La discriminación de figuras es la Velocidad perceptual (P); la Memoria (M) es recuerdo y reconocimiento."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre el factor numérico (N) de Thurstone:",
+      "options": [
+        "Es la habilidad para operar con números en tareas matemáticas",
+        "Implica rapidez para resolver cálculos sencillos de forma precisa",
+        "Incluye la capacidad de inferir reglas generales de series lógicas"
+      ],
+      "correct": 2,
+      "hint": "Diferencia entre cálculo aritmético y razonamiento lógico-inductivo.",
+      "explanation": "La inferencia de reglas generales corresponde al Razonamiento (R), no al factor numérico (N)."
+    },
+    {
+      "q": "El modelo sociocognitivo actual considera la cognición como el eje regulador de la conducta y los ____ como los marcos de contenido.",
+      "options": [
+        "contextos sociales imperantes",
+        "procesos biológicos internos",
+        "estadios del desarrollo mental"
+      ],
+      "correct": 0,
+      "hint": "Se enfoca en la influencia del entorno en la formación de la cognición.",
+      "explanation": "El modelo sociocognitivo establece que los contextos sociales son los marcos donde se fraguan los contenidos y formas de la cognición."
+    },
+    {
+      "q": "W. Wundt fundó en Leipzig el Instituto Psicológico dedicado primordialmente al estudio de la conciencia y los ____.",
+      "options": [
+        "procesos superiores del pensamiento",
+        "reflejos condicionados del sujeto",
+        "mecanismos de la conducta operante"
+      ],
+      "correct": 0,
+      "hint": "Busca aquello que trasciende la mera sensación sensorial básica.",
+      "explanation": "Wundt centró su investigación en la conciencia y los procesos superiores del pensamiento mediante la introspección."
+    },
+    {
+      "q": "Para J. B. Watson, el pensamiento era formulado conceptualmente como un ____ para evitar términos mentalistas.",
+      "options": [
+        "lenguaje de naturaleza subvocal",
+        "proceso de mediación simbólica",
+        "sistema de procesamiento binario"
+      ],
+      "correct": 0,
+      "hint": "Es una actividad física no observable a simple vista pero motora.",
+      "explanation": "Watson, desde el conductismo radical, definió el pensamiento como lenguaje subvocal para reducirlo a conducta observable."
+    },
+    {
+      "q": "Autores como C. Hull y E. Tolman introdujeron ____ como formas de explicar los resultados del aprendizaje conductual.",
+      "options": [
+        "las variables mediacionales",
+        "los esquemas de asimilación",
+        "las estructuras factoriales"
+      ],
+      "correct": 0,
+      "hint": "Elementos que se sitúan entre el estímulo y la respuesta.",
+      "explanation": "Hull y Tolman se distanciaron del conductismo radical al incluir variables mediacionales en sus modelos explicativos."
+    },
+    {
+      "q": "La escuela de la ____ rechazaba el asociacionismo, manteniendo que los procesos complejos tienen propiedades no derivables.",
+      "options": [
+        "Gestalt de origen germánico",
+        "psicología cultural rusa",
+        "escuela de procesamiento"
+      ],
+      "correct": 0,
+      "hint": "Su lema es que el todo es más que la suma de las partes.",
+      "explanation": "La Gestalt sostenía que los procesos mentales complejos poseían propiedades que no podían explicarse por sus componentes simples."
+    },
+    {
+      "q": "Según L. S. Vygotsky, el lenguaje y el pensamiento son el resultado directo de la ____ del individuo.",
+      "options": [
+        "interiorización social",
+        "maduración neurológica",
+        "adaptación biológica"
+      ],
+      "correct": 0,
+      "hint": "Proceso que va de lo interpsicológico a lo intrapsicológico.",
+      "explanation": "Vygotsky defendía que las funciones superiores se originan en la interacción social y luego se interiorizan."
+    },
+    {
+      "q": "En la obra 'Pensamiento y lenguaje' (1934), Vygotsky expuso que la función ____ era anterior a la simbólica.",
+      "options": [
+        "comunicativa del lenguaje",
+        "ejecutiva de la atención",
+        "asociativa del recuerdo"
+      ],
+      "correct": 0,
+      "hint": "Relacionada con la interacción externa inicial.",
+      "explanation": "Para Vygotsky, el lenguaje sirve primero para comunicarse con otros antes de servir como herramienta de pensamiento interno."
+    },
+    {
+      "q": "La aparición de los modelos del procesamiento de la información dio lugar a la ____ como concepto central.",
+      "options": [
+        "metáfora de mente-ordenador",
+        "teoría de la energía mental",
+        "noción de equilibrio biológico"
+      ],
+      "correct": 0,
+      "hint": "Compara la inteligencia natural con sistemas artificiales.",
+      "explanation": "A finales de los 50, la analogía entre la mente y los ordenadores se convirtió en la referencia básica del estudio cognitivo."
+    },
+    {
+      "q": "Miller, Gallanter y Pribram (1960) propusieron que los ____ son el eje básico de la acción humana regulada.",
+      "options": [
+        "planes de comportamiento",
+        "estadios de crecimiento",
+        "factores de la herencia"
+      ],
+      "correct": 0,
+      "hint": "Estructuras que guían la conducta hacia metas.",
+      "explanation": "En 'Planes y estructura de la conducta', se argumenta que la acción exige retroalimentación y planificación previa."
+    },
+    {
+      "q": "J. Piaget postula que la cognición se mantiene en un equilibrio constante entre la ____ y la adaptación.",
+      "options": [
+        "asimilación del entorno",
+        "percepción de la forma",
+        "motivación del sujeto"
+      ],
+      "correct": 0,
+      "hint": "Proceso de incorporar nueva información a esquemas previos.",
+      "explanation": "El equilibrio homeostático cognitivo según Piaget se logra mediante los procesos de asimilación y acomodación (adaptación)."
+    },
+    {
+      "q": "La RAE define la inteligencia como la capacidad de entender o comprender y como la capacidad de ____.",
+      "options": [
+        "resolución de problemas",
+        "adquirir nuevas lenguas",
+        "almacenar información"
+      ],
+      "correct": 0,
+      "hint": "Función práctica ante situaciones difíciles.",
+      "explanation": "La definición oficial incluye tanto la comprensión teórica como la capacidad ejecutiva para solventar conflictos."
+    },
+    {
+      "q": "En el mito del carro alado, Platón ejemplifica la inteligencia como ____, el auriga que dirige el carro.",
+      "options": [
+        "razón y conocimiento",
+        "pasión y sentimiento",
+        "voluntad y esfuerzo"
+      ],
+      "correct": 0,
+      "hint": "Componente directivo y racional del alma.",
+      "explanation": "Platón utilizaba la figura del auriga para representar la razón que gobierna los impulsos o corceles."
+    },
+    {
+      "q": "Herrstein y Murray propusieron que la inteligencia sería el principal mecanismo de ____ en sociedades posindustriales.",
+      "options": [
+        "triunfo a nivel social",
+        "adaptación biológica",
+        "cohesión comunitaria"
+      ],
+      "correct": 0,
+      "hint": "Factor de éxito comparable al dinero en el pasado.",
+      "explanation": "En 'The Bell Curve', sugirieron que la inteligencia determina el estatus y éxito en el mundo moderno."
+    },
+    {
+      "q": "La acepción de inteligencia asociada a la ____ se vincula directamente con la capacidad para aprender.",
+      "options": [
+        "adquisición de saber",
+        "gestión de emociones",
+        "reacción al estímulo"
+      ],
+      "correct": 0,
+      "hint": "Incorporación de datos y habilidades nuevas.",
+      "explanation": "Una de las dos grandes acepciones cotidianas es ver la inteligencia como la rapidez y profundidad del aprendizaje."
+    },
+    {
+      "q": "Las ideas de 'la calle' sobre la inteligencia se designan técnicamente como la visión ____ de la inteligencia.",
+      "options": [
+        "lega o implícita",
+        "teórica o explícita",
+        "biológica o innata"
+      ],
+      "correct": 0,
+      "hint": "Conocimiento no científico basado en la experiencia.",
+      "explanation": "Sánchez-Elvira y Amor-Andrés utilizan este término para las creencias populares sobre el constructo."
+    },
+    {
+      "q": "En las culturas orientales, Sternberg señala que la inteligencia incluye la ____ y hacer lo correcto.",
+      "options": [
+        "benevolencia personal",
+        "velocidad de respuesta",
+        "competencia lingüística"
+      ],
+      "correct": 0,
+      "hint": "Valor moral y ético ausente en tests occidentales.",
+      "explanation": "A diferencia de Occidente, Oriente integra aspectos morales y de autoconocimiento en su concepto de inteligencia."
+    },
+    {
+      "q": "Para Mariano Yela, la inteligencia es un indicador del ____ y la autonomía de cada especie animal.",
+      "options": [
+        "control del entorno",
+        "tamaño de la masa",
+        "ritmo de reproducción"
+      ],
+      "correct": 0,
+      "hint": "Capacidad de gestión independiente de la realidad.",
+      "explanation": "Yela vincula la inteligencia con la evolución neurológica y la capacidad de actuar con libertad frente al medio."
+    },
+    {
+      "q": "Yela define la inteligencia como una unidad de una estructura compleja de múltiples ____ covariantes.",
+      "options": [
+        "aptitudes integradas",
+        "neuronas conectadas",
+        "rasgos de carácter"
+      ],
+      "correct": 0,
+      "hint": "Conjunto de capacidades que varían conjuntamente.",
+      "explanation": "Su definición destaca que la inteligencia es una, pero compuesta por diversas aptitudes jerarquizadas."
+    },
+    {
+      "q": "Snyderman y Rothman (1988) concluyeron que el ____ es uno de los tres elementos clave que definen la inteligencia.",
+      "options": [
+        "razonamiento abstracto",
+        "autoconocimiento emocional",
+        "rendimiento psicomotor"
+      ],
+      "correct": 0,
+      "hint": "Capacidad de operar con conceptos no tangibles.",
+      "explanation": "Junto a la resolución de problemas y adquisición de conocimiento, el razonamiento abstracto es pilar del consenso."
+    },
+    {
+      "q": "El enfoque de la inteligencia como ____ la considera una capacidad interna supeditada a determinantes individuales.",
+      "options": [
+        "disposición y proceso",
+        "producto de la cultura",
+        "fruto de la interacción"
+      ],
+      "correct": 0,
+      "hint": "Se centra en el 'hardware' o potencial del sujeto.",
+      "explanation": "Este enfoque estudia la inteligencia desde la biología y psicología propia del individuo."
+    },
+    {
+      "q": "A. R. Jensen propuso que las diferencias en el rendimiento educativo se debían a la falta de ____ en ciertos grupos.",
+      "options": [
+        "capacidad disposicional",
+        "motivación académica",
+        "recursos económicos"
+      ],
+      "correct": 0,
+      "hint": "Enfoque centrado en la herencia biológica.",
+      "explanation": "Jensen argumentó polémicamente que la genética determinaba la incapacidad de asimilación en ciertos grupos étnicos."
+    },
+    {
+      "q": "El enfoque diferencial de la inteligencia ha dado lugar a tres tradiciones: disposición, ____ y medida.",
+      "options": [
+        "estructura factorial",
+        "dinámica de grupos",
+        "procesos sensoriales"
+      ],
+      "correct": 0,
+      "hint": "Relacionada con la organización interna de habilidades.",
+      "explanation": "Las tres tradiciones clásicas son: inteligencia como disposición, como estructura (análisis factorial) y como medida (tests)."
+    },
+    {
+      "q": "La tradición de la inteligencia como disposición biológica se remonta originalmente a los trabajos de ____.",
+      "options": [
+        "Francis Galton",
+        "Sigmund Freud",
+        "Burrhus Skinner"
+      ],
+      "correct": 0,
+      "hint": "Pionero interesado en la herencia de las capacidades.",
+      "explanation": "Galton fue el primero en proponer una capacidad cognitiva general de base biológica e innata."
+    },
+    {
+      "q": "La inteligencia como ____ busca identificar las estructuras latentes mediante el análisis de resultados en tests.",
+      "options": [
+        "estructura factorial",
+        "potencial genético",
+        "adaptación social"
+      ],
+      "correct": 0,
+      "hint": "Uso de la estadística para encontrar dimensiones comunes.",
+      "explanation": "Esta tradición utiliza el análisis factorial para ver cómo se agrupan las diferentes habilidades mentales."
+    },
+    {
+      "q": "Alfred Binet define la inteligencia como la capacidad global para resolver problemas mediante ____.",
+      "options": [
+        "actividades superiores",
+        "respuestas reflejas",
+        "ensayo y error"
+      ],
+      "correct": 0,
+      "hint": "Involucra atención, memoria e imaginación.",
+      "explanation": "Binet se alejó de lo sensorial para centrarse en procesos cognitivos complejos como la deducción o el juicio."
+    },
+    {
+      "q": "La teoría bifactorial de Spearman (1904) postula la existencia de un ____ común a todas las pruebas.",
+      "options": [
+        "factor g general",
+        "módulo específico",
+        "rasgo de carácter"
+      ],
+      "correct": 0,
+      "hint": "Energía mental aplicable a cualquier contexto.",
+      "explanation": "Spearman observó correlaciones positivas que sugerían una capacidad general subyacente llamada factor g."
+    },
+    {
+      "q": "Spearman denominó al factor g como una ____ aplicable y eficiente en múltiples contextos.",
+      "options": [
+        "energía mental general",
+        "habilidad lógica pura",
+        "fuerza de voluntad"
+      ],
+      "correct": 0,
+      "hint": "Concepto metafórico de potencia cognitiva.",
+      "explanation": "El factor g se concebía como una reserva energética mental que sustenta todas las operaciones cognitivas."
+    },
+    {
+      "q": "L. L. Thurstone propuso un modelo de ____, rechazando el predominio de un único factor general.",
+      "options": [
+        "factores independientes",
+        "estadios jerárquicos",
+        "redes asociativas"
+      ],
+      "correct": 0,
+      "hint": "Las aptitudes no se subordinan unas a otras.",
+      "explanation": "Thurstone defendió que la inteligencia se compone de aptitudes mentales primarias que operan autónomamente."
+    },
+    {
+      "q": "En el modelo de Thurstone, el factor ____ se refiere a la rapidez para resolver cálculos matemáticos sencillos.",
+      "options": [
+        "numérico o factor N",
+        "espacial o factor S",
+        "razonamiento o factor R"
+      ],
+      "correct": 0,
+      "hint": "Relacionado con la aritmética básica.",
+      "explanation": "El factor N es una de las 7 aptitudes primarias, centrada en la agilidad con los números."
+    },
+    {
+      "q": "El factor ____ de Thurstone es la facilidad para visualizar y manipular objetos mentalmente en el espacio.",
+      "options": [
+        "espacial o factor S",
+        "perceptual o factor P",
+        "verbal o factor V"
+      ],
+      "correct": 0,
+      "hint": "Capacidad de rotación y transformación visual.",
+      "explanation": "El factor S (Spatial) permite la representación y manejo interno de figuras tridimensionales."
+    },
+    {
+      "q": "J. P. Guilford distinguió tres tipos de procesos: contenidos, ____ y productos mentales.",
+      "options": [
+        "operaciones mentales",
+        "entradas sensoriales",
+        "filtros de atención"
+      ],
+      "correct": 0,
+      "hint": "Tipo de actividad que conlleva una aptitud.",
+      "explanation": "El modelo SOI de Guilford se organiza en Contenidos, Operaciones y Productos."
+    },
+    {
+      "q": "El modelo de Guilford representado por un cubo estructural contempla un total de ____ factores teóricos.",
+      "options": [
+        "ciento veinte celdas",
+        "sesenta capacidades",
+        "ocho aptitudes"
+      ],
+      "correct": 0,
+      "hint": "Producto de 5 x 4 x 6.",
+      "explanation": "Multiplicando las categorías de sus tres dimensiones, Guilford propuso 120 factores de inteligencia."
+    },
+    {
+      "q": "R. B. Cattell propuso la distinción fundamental entre la inteligencia ____ y la cristalizada.",
+      "options": [
+        "fluida o factor Gf",
+        "biológica o factor Gb",
+        "estática o factor Ge"
+      ],
+      "correct": 0,
+      "hint": "Capacidad de resolver problemas nuevos sin aprendizaje previo.",
+      "explanation": "Cattell dividió el factor g en dos: Gf (fluida) y Gc (cristalizada)."
+    },
+    {
+      "q": "La inteligencia ____ se manifiesta en el conjunto de conocimientos y experiencias acumuladas por la educación.",
+      "options": [
+        "cristalizada o Gc",
+        "fluida o factor Gf",
+        "social o factor Gs"
+      ],
+      "correct": 0,
+      "hint": "Depende fuertemente de la socialización y cultura.",
+      "explanation": "La inteligencia cristalizada es el saber acumulado que se aplica a situaciones conocidas."
+    },
+    {
+      "q": "Según la teoría de la ____ de Cattell, la inteligencia cristalizada surge de aplicar la fluida al aprendizaje.",
+      "options": [
+        "inversión cognitiva",
+        "regresión evolutiva",
+        "absorción cultural"
+      ],
+      "correct": 0,
+      "hint": "Gf se 'gasta' en adquirir Gc.",
+      "explanation": "Cattell sostenía que invertimos nuestro potencial fluido para consolidar conocimientos cristalizados."
+    },
+    {
+      "q": "En el modelo jerárquico de Cattell, el nivel más alto está ocupado por el ____ de Spearman.",
+      "options": [
+        "factor general G",
+        "factor secundario",
+        "factor primario"
+      ],
+      "correct": 0,
+      "hint": "Vértice de la pirámide de capacidades.",
+      "explanation": "Cattell integra a Spearman situando el factor G como el constructo de tercer orden más general."
+    },
+    {
+      "q": "Sánchez Cánovas señala que el ____ influye significativamente en los resultados de la estructura factorial.",
+      "options": [
+        "método de estudio",
+        "sexo del individuo",
+        "clima del entorno"
+      ],
+      "correct": 0,
+      "hint": "Herramientas de recogida y análisis de datos.",
+      "explanation": "Los resultados dependen de los tests usados y de las técnicas estadísticas aplicadas."
+    },
+    {
+      "q": "La inteligencia es una capacidad que diferencia a las personas en el manejo ____ de la realidad.",
+      "options": [
+        "correcto y eficaz",
+        "lento pero seguro",
+        "teórico y abstracto"
+      ],
+      "correct": 0,
+      "hint": "Relacionado con el éxito en la acción.",
+      "explanation": "Desde la filosofía clásica, se ve la inteligencia como la pericia para navegar eficazmente la existencia."
+    },
+    {
+      "q": "Para B. Skinner, la explicación de los procesos mentales debía ser ____ de los modelos psicológicos.",
+      "options": [
+        "excluida radicalmente",
+        "incluida plenamente",
+        "analizada mediante"
+      ],
+      "correct": 0,
+      "hint": "Postura del conductismo más extremo.",
+      "explanation": "Skinner rechazaba cualquier variable mentalista, centrándose solo en la relación conducta-consecuencia."
+    },
+    {
+      "q": "En el estudio de la inteligencia, el enfoque de la ____ analiza cómo el contexto transmite pautas de manejo.",
+      "options": [
+        "cultura asimilada",
+        "genética heredada",
+        "maduración lineal"
+      ],
+      "correct": 0,
+      "hint": "Se centra en lo externo socializado.",
+      "explanation": "Este enfoque ve la inteligencia como el bagaje de herramientas que una sociedad otorga a sus miembros."
+    },
+    {
+      "q": "¿Qué afirmaciones sobre los modelos históricos de la cognición son correctas según el texto?",
+      "options": [
+        "Wundt estudió la conciencia mediante introspección y Watson definió el pensamiento como lenguaje subvocal.",
+        "La escuela de la Gestalt rechazó el asociacionismo y Vygotsky priorizó la interacción social en el desarrollo.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Ambas opciones A y B contienen datos exactos del capítulo 1.",
+      "explanation": "El texto confirma el uso de la introspección por Wundt, el lenguaje subvocal en Watson, el rechazo asociacionista en la Gestalt y la interacción social en Vygotsky."
+    },
+    {
+      "q": "¿Qué aspectos definen la inteligencia desde la perspectiva de Mariano Yela?",
+      "options": [
+        "Es un indicador del control y autonomía de la especie, resultando en una conducta adaptativa y flexible.",
+        "Es una estructura compleja de múltiples aptitudes covariantes que están integradas en una jerarquía dinámica.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Yela define la inteligencia tanto por su función adaptativa como por su estructura jerárquica.",
+      "explanation": "Yela enfatiza la unidad de la inteligencia dentro de su complejidad y su papel crucial en la autonomía biológica."
+    },
+    {
+      "q": "¿Cuáles son los componentes del modelo de procesos subyacentes propuesto por J. P. Guilford?",
+      "options": [
+        "Las variables de entrada o contenidos y las operaciones mentales como tipo de actividad intelectual.",
+        "Las variables de salida denominadas productos y la representación del modelo mediante un cubo estructural.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Guilford utiliza una taxonomía tridimensional para clasificar la inteligencia.",
+      "explanation": "El modelo SOI (Structure of Intellect) de Guilford incluye contenidos, operaciones y productos en un formato cúbico."
+    },
+    {
+      "q": "¿Qué caracteriza a la inteligencia fluida (Gf) según el modelo de Raymond B. Cattell?",
+      "options": [
+        "Es la capacidad de resolver problemas nuevos y complejos de manera independiente del saber adquirido.",
+        "Se relaciona con el razonamiento lógico puro y tiene una base biológica y hereditaria mucho más marcada.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Gf representa el potencial cognitivo bruto no influido por la cultura.",
+      "explanation": "La inteligencia fluida se define por la agilidad mental ante lo novedoso y su fuerte componente genético."
+    },
+    {
+      "q": "¿Qué conclusiones se derivan del estudio factorial de la inteligencia según el texto?",
+      "options": [
+        "Existe un factor general g similar a la inteligencia general y las capacidades se organizan jerárquicamente.",
+        "Los factores primarios son fundamentales porque reflejan desempeños específicos en diversas áreas concretas.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "El consenso factorial acepta tanto la jerarquía como la importancia de los niveles específicos.",
+      "explanation": "El texto resume tres conclusiones: existencia de g, estructura jerárquica y relevancia de las aptitudes primarias."
+    },
+    {
+      "q": "¿Qué elementos son centrales en la obra de Piaget respecto a la cognición humana?",
+      "options": [
+        "La génesis del conocimiento fundamentada en la maduración biológica y la interacción con la realidad.",
+        "El mantenimiento de un equilibrio homeostático a través de los procesos de asimilación y de adaptación.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Piaget combina biología y acción para explicar el desarrollo intelectual.",
+      "explanation": "Para Piaget, el desarrollo es un proceso constructivo que busca el equilibrio entre el sujeto y el medio."
+    },
+    {
+      "q": "¿Qué afirmaciones sobre la perspectiva de B. Skinner y el conductismo son verdaderas?",
+      "options": [
+        "Skinner propuso radicalmente la exclusión explicativa de los procesos mentales en el estudio de la conducta.",
+        "El conductismo tendió a considerar los procesos cognitivos como secundarios o derivados del aprendizaje.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "El conductismo clásico priorizó lo observable sobre lo mental.",
+      "explanation": "Skinner es el máximo exponente del rechazo a lo mental, considerando la conducta como el único objeto de estudio válido."
+    },
+    {
+      "q": "¿Qué habilidades forman parte de las aptitudes mentales primarias (PMA) de L. L. Thurstone?",
+      "options": [
+        "La comprensión verbal (V), la fluidez verbal (W), el factor numérico (N) y la memoria de reconocimiento (M).",
+        "El factor espacial (S), la velocidad perceptual (P) y la capacidad de razonamiento lógico inductivo (R).",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Thurstone identificó un total de siete aptitudes básicas en sus estudios factoriales.",
+      "explanation": "V, W, N, M, S, P y R constituyen el núcleo del modelo de aptitudes independientes de Thurstone."
+    },
+    {
+      "q": "¿Qué influencias y aportaciones se destacan en la figura de J. S. Bruner?",
+      "options": [
+        "Aúna influencias de la cibernética, de Piaget y de los modelos posteriores de la psicología cultural.",
+        "Sus obras han abierto nuevas perspectivas al estudio de la cognición con enfoques transculturales.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Bruner es un autor integrador clave en el modelo sociocognitivo.",
+      "explanation": "Bruner destaca por su visión multidisciplinar que conecta diversas corrientes del pensamiento psicológico."
+    },
+    {
+      "q": "¿Qué sostienen Snyderman y Rothman sobre los elementos definitorios de la inteligencia?",
+      "options": [
+        "El razonamiento abstracto es uno de los pilares más aceptados por los especialistas encuestados.",
+        "La capacidad de solucionar problemas y adquirir conocimientos son rasgos esenciales del constructo.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Su encuesta a más de mil especialistas reveló un alto consenso en estos puntos.",
+      "explanation": "Razonamiento, resolución de problemas y aprendizaje son los tres componentes con mayor acuerdo científico."
+    },
+    {
+      "q": "¿Qué funciones cumplen los 'planes' según Miller, Gallanter y Pribram?",
+      "options": [
+        "Son el eje básico de la acción inmediata y evitan que la acción humana sobre la realidad sea caótica.",
+        "Exigen continuamente la retroalimentación de la información sobre los resultados de la conducta previa.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Los planes actúan como guías cibernéticas de la conducta humana.",
+      "explanation": "Sin planes y feedback, la conducta sería inefectiva; ellos regulan la acción a corto y largo plazo."
+    },
+    {
+      "q": "¿Qué puntos de vista clásicos sobre la inteligencia menciona el texto?",
+      "options": [
+        "Sócrates la planteó como la capacidad para pensar la realidad y Cicerón la aproximó al saber vivir.",
+        "Platón la ejemplificó mediante el mito del carro alado como la razón que dirige los objetivos humanos.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "La filosofía antigua sentó las bases de la inteligencia como capacidad diferencial.",
+      "explanation": "Desde Grecia y Roma, la inteligencia se ha vinculado con la razón, la realidad y la eficacia vital."
+    },
+    {
+      "q": "¿Cuáles son las dos grandes acepciones cotidianas del término inteligencia según Pueyo?",
+      "options": [
+        "La comprensión y entendimiento del contexto asociada a la resolución de problemas prácticos.",
+        "La adquisición de conocimientos asociada a la capacidad para aprender con rapidez y eficiencia.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Se refieren al uso del término por 'la gente de la calle'.",
+      "explanation": "Pueyo distingue entre entender la situación actual y la capacidad de acumular nuevo saber."
+    },
+    {
+      "q": "¿Qué caracteriza a la inteligencia cristalizada (Gc) en la teoría de Cattell?",
+      "options": [
+        "Se manifiesta en el razonamiento verbal, el vocabulario y la comprensión de conceptos aprendidos.",
+        "Aumenta su importancia durante la escolarización y depende de la socialización y la experiencia.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Gc es el resultado de la interacción entre potencial y cultura.",
+      "explanation": "La inteligencia cristalizada se nutre del aprendizaje formal e informal a lo largo del ciclo vital."
+    },
+    {
+      "q": "¿Qué define a la tradición de la 'inteligencia como medida' iniciada por Alfred Binet?",
+      "options": [
+        "Define la inteligencia como capacidad global basada en actividades mentales como la deducción.",
+        "Diseña pruebas para evaluar la memoria, imaginación y atención con el fin de predecir el éxito.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Se centra en la cuantificación del rendimiento para aplicaciones prácticas.",
+      "explanation": "Binet buscaba herramientas útiles para predecir el rendimiento escolar mediante procesos superiores."
+    },
+    {
+      "q": "¿Qué sostiene la teoría bifactorial de Spearman sobre la naturaleza de la inteligencia?",
+      "options": [
+        "Argumenta que se fundamenta en procesos psicológicos básicos, sensoriales y también perceptivos.",
+        "Distingue entre una inteligencia general dominante y variaciones específicas denominadas factores s.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Es un modelo que combina la unidad del factor g con la diversidad de los factores s.",
+      "explanation": "Spearman propone una base biológica común (g) y habilidades particulares para tareas concretas (s)."
+    },
+    {
+      "q": "¿Qué aspectos metodológicos limitan el estudio factorial de la inteligencia?",
+      "options": [
+        "Los resultados son restringidos porque las manifestaciones inteligentes exceden lo que miden los tests.",
+        "Las técnicas de análisis factorial pueden variar, haciendo que los hallazgos no siempre sean coherentes.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "La estadística y los tests no capturan la totalidad de la inteligencia humana.",
+      "explanation": "Autores como Sánchez Cánovas advierten que el método condiciona la estructura que se descubre."
+    },
+    {
+      "q": "¿Qué caracteriza el enfoque de la inteligencia como interacción según el texto?",
+      "options": [
+        "Considera la inteligencia como el resultado entre disponibilidades individuales y competencias sociales.",
+        "Ha dado lugar principalmente al estudio del desarrollo y al análisis del ciclo vital de la inteligencia.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Combina lo innato con lo adquirido en un proceso temporal continuo.",
+      "explanation": "Este enfoque integrador estudia cómo evoluciona la inteligencia al interactuar el sujeto con su medio."
+    },
+    {
+      "q": "Respecto a la escuela soviética de L. S. Vygotsky, ¿qué afirmación es correcta?",
+      "options": [
+        "Sostenía que la función simbólica del lenguaje precedía cronológicamente a su función comunicativa.",
+        "Defendía que el desarrollo humano puede explicarse sin necesidad de recurrir a la interacción social.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Vygotsky otorgaba máxima importancia a lo social y a la comunicación inicial.",
+      "explanation": "Ambas son falsas: Vygotsky decía que la comunicación es anterior a lo simbólico y que la interacción social es imprescindible."
+    },
+    {
+      "q": "Sobre la teoría de las aptitudes mentales primarias de Thurstone, ¿cuál de estas es falsa?",
+      "options": [
+        "Propuso un modelo jerárquico donde todas las aptitudes están subordinadas a un factor g central.",
+        "Sostenía que un desempeño destacado en una habilidad garantiza un rendimiento similar en las demás.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Thurstone se oponía al factor g único y defendía la independencia de aptitudes.",
+      "explanation": "Las dos opciones describen lo contrario a lo que Thurstone defendía (independencia y no subordinación)."
+    },
+    {
+      "q": "En relación con el modelo de J. P. Guilford, indique cuál de las siguientes afirmaciones es errónea:",
+      "options": [
+        "Su modelo teórico de la estructura de la inteligencia contempla un máximo de ocho factores básicos.",
+        "Ha logrado replicar empíricamente la totalidad de los 120 factores propuestos en su cubo teórico.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Guilford propuso muchísimos más factores y muchos permanecen solo a nivel teórico.",
+      "explanation": "Es falso que propusiera solo ocho (fueron 120) y es falso que se hayan replicado todos empíricamente."
+    },
+    {
+      "q": "Sobre la inteligencia fluida (Gf) en el modelo de Cattell, ¿qué premisa es incorrecta?",
+      "options": [
+        "Depende fundamentalmente del aprendizaje escolar y de los conocimientos culturales acumulados.",
+        "Alcanza su máximo esplendor en la vejez, siendo superior a la inteligencia de tipo cristalizada.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Gf es biológica, no cultural, y suele declinar con la edad a diferencia de Gc.",
+      "explanation": "Ambas opciones son falsas: Gf no depende de la escuela y no aumenta en la vejez."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre el conductismo de J. B. Watson es falsa?",
+      "options": [
+        " Watson centró la psicología en el estudio de los procesos mentales mediante la introspección guiada.",
+        "Formuló el pensamiento como un proceso de asimilación y acomodación biológica en el individuo.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Watson rechazaba la introspección y los términos mentalistas de Piaget.",
+      "explanation": "Watson odiaba la introspección (era de Wundt) y la asimilación/acomodación es terminología piagetiana."
+    },
+    {
+      "q": "En cuanto a la definición de inteligencia de Mariano Yela, ¿qué opción no se ajusta al texto?",
+      "options": [
+        "Considera que la conducta es más inteligente mientras más automática y repetitiva resulte ser.",
+        "Define la inteligencia como una aptitud única y simple que no admite ningún tipo de jerarquía.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Yela valoraba la flexibilidad no automática y la estructura jerárquica compleja.",
+      "explanation": "Yela decía que la inteligencia es NO automática y que es una estructura compleja, no una aptitud simple."
+    },
+    {
+      "q": "Respecto a la metáfora de la mente como ordenador de los años cincuenta, ¿qué es falso?",
+      "options": [
+        "La hipótesis de que inteligencia natural y artificial funcionan igual fue aceptada por Newell.",
+        "Newell, Shaw y Simon confirmaron rápidamente que los procesos de ambos sistemas eran idénticos.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Esos autores rechazaron la identidad total de procesos entre mente y ordenador.",
+      "explanation": "El texto aclara que la hipótesis fue rápidamente rechazada por Newell, Shaw y Simon."
+    },
+    {
+      "q": "Sobre las culturas orientales y la inteligencia según Sternberg, ¿qué afirmación es falsa?",
+      "options": [
+        "Excluyen por completo el conocimiento del yo y del entorno de su concepto de inteligencia.",
+        "Valoran la libertad de los convencionalismos como un signo de baja capacidad intelectual.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Oriente valora el autoconocimiento y la libertad frente a lo convencional.",
+      "explanation": "Ambas son falsas: los orientales sí incluyen el conocimiento del yo y valoran la libertad de convencionalismos."
+    },
+    {
+      "q": "En el enfoque de la 'inteligencia como disposición' de A. R. Jensen, ¿cuál es la falsedad?",
+      "options": [
+        "Defendía que los programas educativos eran muy exitosos en grupos de origen africano y latino.",
+        "Sostenía que el ambiente era el único factor determinante del CI por encima de la herencia genética.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Jensen era pesimista con la educación en minorías y priorizaba la genética.",
+      "explanation": "Jensen decía que los programas eran inútiles (no exitosos) y que la herencia era clave (no el ambiente)."
+    },
+    {
+      "q": "Sobre la obra de Miller, Gallanter y Pribram (1960), ¿qué opción es manifiestamente falsa?",
+      "options": [
+        "Propusieron que la conducta humana no exige ningún tipo de retroalimentación de información.",
+        "Argumentaron que los planes son elementos secundarios que vuelven caótica la acción del sujeto.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Defendían la importancia crítica del feedback y de los planes para el orden.",
+      "explanation": "Ambas son falsas: ellos decían que el feedback es continuo y los planes evitan el caos."
+    },
+    {
+      "q": "¿Qué afirmación sobre la inteligencia cristalizada (Gc) de Cattell no es verdadera?",
+      "options": [
+        "Es la capacidad de resolver acertijos y analizar relaciones espaciales sin información previa.",
+        "Predomina en los primeros años de vida antes de que comience el proceso de escolarización.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Esas características corresponden a la inteligencia fluida (Gf).",
+      "explanation": "Gc usa información previa y predomina tras la escolarización; lo descrito es Gf."
+    },
+    {
+      "q": "Acerca de la tradición de 'inteligencia como estructura', ¿qué postulado es erróneo?",
+      "options": [
+        "Busca cuantificar la inteligencia para asignar tareas basándose en el juicio de Binet.",
+        "Se centra exclusivamente en la herencia de Galton sin utilizar métodos de análisis estadístico.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Esa descripción mezcla la tradición de 'medida' con la de 'disposición'.",
+      "explanation": "La 'estructura' usa análisis factorial; Binet es de 'medida' y Galton es de 'disposición'."
+    },
+    {
+      "q": "Sobre el factor g de Spearman, ¿cuál de las siguientes opciones es incorrecta?",
+      "options": [
+        "Se identificó mediante pruebas de discriminación que no guardaban correlación entre sí.",
+        "Spearman le otorgó una relevancia menor frente a las variaciones específicas de los sujetos.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Spearman halló correlaciones positivas y dio máxima importancia al factor g.",
+      "explanation": "Es falso: sí había correlación y g era el factor predominante en su modelo."
+    },
+    {
+      "q": "¿Cuál de estas afirmaciones sobre la Gestalt y su estudio de la cognición es falsa?",
+      "options": [
+        "Sus estudios culminaron con gran éxito en Alemania tras la Segunda Guerra Mundial.",
+        "Mantenía que los procesos mentales complejos eran iguales a la suma de sus componentes.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "La guerra truncó sus estudios y rechazaban el asociacionismo (suma de partes).",
+      "explanation": "Se truncaron por la guerra (no culminaron) y el todo no es la suma de las partes."
+    },
+    {
+      "q": "En relación con los tests de Wechsler (WAIS y WISC), ¿qué afirmación no es correcta?",
+      "options": [
+        "Siguen el enfoque factorial puro de Thurstone rechazando la capacidad global de Binet.",
+        "Están diseñados para medir exclusivamente procesos sensoriales básicos y tiempos de reacción.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Wechsler sigue a Binet en la capacidad global y mide procesos mentales complejos.",
+      "explanation": "Wechsler sigue a Binet (no a Thurstone) y mide actividades mentales (no solo sensoriales)."
+    },
+    {
+      "q": "Respecto a la encefalización y la inteligencia según Yela, ¿cuál es la opción falsa?",
+      "options": [
+        "La inteligencia es un indicador de la falta de autonomía y del automatismo de las especies.",
+        "La encefalización creciente provoca que la conducta sea cada vez más automática y repetitiva.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "La inteligencia aumenta la autonomía y disminuye el automatismo.",
+      "explanation": "Ambas son falsas: la inteligencia da autonomía (no falta) y hace la conducta menos automática."
+    },
+    {
+      "q": "Sobre el consenso de Snyderman y Rothman (1988), ¿qué elemento es ajeno a sus conclusiones?",
+      "options": [
+        "La capacidad de autogestión emocional fue el rasgo más votado por los mil especialistas.",
+        "El instinto de supervivencia fue definido como el elemento central de la inteligencia humana.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Los elementos consensuados fueron razonamiento, problemas y adquisición de saber.",
+      "explanation": "Las opciones A y B no figuran en los tres elementos clave citados por el texto."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "Explica la evolución de la perspectiva conductista respecto al estudio de la cognición, desde Watson hasta Skinner.",
+      "model": "El conductismo inicialmente suprimió los aspectos mentales (Watson), definiendo el pensamiento solo como lenguaje subvocal. Posteriormente, Hull y Tolman introdujeron variables mediacionales para explicar el aprendizaje. Finalmente, Skinner propuso la exclusión radical de los procesos mentales como factores explicativos, considerando la cognición como un proceso secundario derivado.",
+      "keywords": [
+        "Watson",
+        "Skinner",
+        "lenguaje subvocal",
+        "variables mediacionales",
+        "conductismo"
+      ]
+    },
+    {
+      "q": "Analiza la aportación de la escuela soviética, específicamente de Vygotsky, al desarrollo de la inteligencia.",
+      "model": "Vygotsky postuló que el desarrollo humano y la inteligencia solo se explican desde la interacción social. Para él, el lenguaje y el pensamiento son el resultado de la interiorización de dicha interacción. Destacó que la función comunicativa del lenguaje es anterior a la simbólica y que la conciencia actúa como acción retroalimentada.",
+      "keywords": [
+        "Vygotsky",
+        "interacción social",
+        "interiorización",
+        "lenguaje y pensamiento"
+      ]
+    },
+    {
+      "q": "Describe la 'metáfora de la mente como ordenador' y cómo influyó la perspectiva cibernética en la psicología cognitiva.",
+      "model": "Surgida en los años 50, sugería que la inteligencia natural y artificial funcionan bajo los mismos procesos. La cibernética aportó el concepto de 'Planes y estructura de la conducta' (Miller, Gallanter y Pribram), argumentando que la conducta requiere retroalimentación constante de información; sin planes, la acción humana sería caótica e inefectiva.",
+      "keywords": [
+        "procesamiento de la información",
+        "cibernética",
+        "retroalimentación",
+        "planes"
+      ]
+    },
+    {
+      "q": "Explique el papel de la maduración biológica y la interacción con la realidad en la teoría de Jean Piaget.",
+      "model": "Piaget enfoca la cognición como la génesis del conocimiento fundamentada en la maduración biológica y la conducta interactiva. El organismo busca un equilibrio homeostático, mientras que la cognición busca el equilibrio entre los procesos de asimilación (incorporar información a esquemas previos) y adaptación (ajustar esquemas a la realidad).",
+      "keywords": [
+        "Piaget",
+        "equilibrio homeostático",
+        "asimilación",
+        "adaptación",
+        "maduración biológica"
+      ]
+    },
+    {
+      "q": "Compare las visiones 'lega' y 'científica' de la inteligencia según el texto.",
+      "model": "La visión lega o implícita proviene de la observación cotidiana de demandas del medio y resultados obtenidos (pericia). La científica busca consenso (aunque difícil) y se centra en tres pilares: razonamiento abstracto, solución de problemas y adquisición de conocimientos, según el consenso de Snyderman y Rothman.",
+      "keywords": [
+        "visión lega",
+        "Snyderman y Rothman",
+        "razonamiento abstracto",
+        "pericia"
+      ]
+    },
+    {
+      "q": "Analice las diferencias transculturales en la concepción de la inteligencia entre las culturas orientales y occidentales.",
+      "model": "Occidente enfatiza la resolución de problemas prácticos, habilidad verbal y competencia social (ej. EE.UU.). Las culturas orientales integran aspectos morales y personales como la benevolencia, hacer lo correcto, el conocimiento del yo, la armonía con el entorno y el esfuerzo mental, además de la responsabilidad social (Taiwán o Zambia).",
+      "keywords": [
+        "Sternberg",
+        "benevolencia",
+        "competencia social",
+        "diferencias transculturales"
+      ]
+    },
+    {
+      "q": "Desarrolle la conceptualización de inteligencia propuesta por Mariano Yela.",
+      "model": "Yela define la inteligencia como un resultado evolutivo ligado a la diferenciación e integración del sistema nervioso (encefalización). Es un indicador de control y autonomía. La considera una estructura compleja de múltiples aptitudes covariantes integradas en una jerarquía dinámica, siendo más inteligente la conducta cuanto más adaptativa y flexible resulta.",
+      "keywords": [
+        "Mariano Yela",
+        "encefalización",
+        "conducta adaptativa",
+        "jerarquía dinámica"
+      ]
+    },
+    {
+      "q": "Distinga los tres enfoques principales en el estudio de la inteligencia: disposición, cultura e interacción.",
+      "model": "El enfoque de disposición la ve como capacidad interna (psicológica/biológica); el de cultura la ve como resultado de un contexto que transmite pautas de manejo de la realidad; el de interacción postula que es el resultado de la relación entre disponibilidades individuales y competencias transmitidas por el contexto (ciclo vital).",
+      "keywords": [
+        "disposición",
+        "cultura",
+        "interacción",
+        "contexto sociocultural"
+      ]
+    },
+    {
+      "q": "Explique la postura de A. R. Jensen sobre la inteligencia y por qué resultó controvertida.",
+      "model": "Jensen representó el enfoque radical de la inteligencia como disposición individual hereditaria. Argumentó que los programas educativos en EE.UU. eran inútiles para ciertos grupos étnicos (africanos y latinos) porque, según su visión, carecían de la capacidad innata necesaria para asimilar esos conocimientos.",
+      "keywords": [
+        "Jensen",
+        "herencia",
+        "disposición individual",
+        "controversia"
+      ]
+    },
+    {
+      "q": "Compare las tres tradiciones del estudio diferencial de la inteligencia: disposición, estructura y medida.",
+      "model": "La disposición (Galton) se centra en capacidades cognitivas generales e innatas. La estructura (Spearman, Thurstone) usa el análisis factorial para identificar dimensiones latentes y su organización. La medida (Binet, Wechsler) se enfoca en cuantificar la inteligencia para predecir rendimiento mediante pruebas de validez y fiabilidad.",
+      "keywords": [
+        "Galton",
+        "análisis factorial",
+        "Binet",
+        "estudio diferencial"
+      ]
+    },
+    {
+      "q": "Explique la Teoría Bifactorial de Spearman y el concepto de 'Factor g'.",
+      "model": "Spearman postuló que cualquier tarea cognitiva depende de un factor general común (Factor g) y factores específicos (s). El Factor g representa una 'energía mental general' con base biológica y hereditaria, siendo el indicador principal del potencial cognitivo, mientras que los factores s son variaciones menores.",
+      "keywords": [
+        "Spearman",
+        "Factor g",
+        "energía mental",
+        "bifactorial"
+      ]
+    },
+    {
+      "q": "Contraste los modelos de inteligencia de Spearman y Thurstone.",
+      "model": "Spearman defendía un modelo jerárquico centrado en un factor general (g). Thurstone rechazó el predominio de un factor único y propuso un modelo de factores independientes (aptitudes mentales primarias), donde un buen desempeño en una habilidad no implica necesariamente lo mismo en otras.",
+      "keywords": [
+        "Spearman vs Thurstone",
+        "factor general",
+        "factores independientes"
+      ]
+    },
+    {
+      "q": "Nombre y describa brevemente las siete Aptitudes Mentales Primarias (PMA) de Thurstone.",
+      "model": "Comprensión verbal (V), Fluidez verbal (W), Factor numérico (N), Memoria (M), Factor espacial (S), Velocidad perceptual (P) y Razonamiento (R). Estas representan facultades que operan de forma independiente para resolver tareas específicas.",
+      "keywords": [
+        "PMA",
+        "comprensión verbal",
+        "razonamiento",
+        "fluidez verbal"
+      ]
+    },
+    {
+      "q": "Analice la estructura de la inteligencia según Guilford (Modelo SOI).",
+      "model": "Guilford propuso un modelo tridimensional (cubo) con 120 factores teóricos resultantes de cruzar Contenidos mentales (entrada), Operaciones mentales (actividad) y Productos mentales (salida). Su enfoque es taxonómico y busca integrar estadística con procesos básicos.",
+      "keywords": [
+        "Guilford",
+        "SOI",
+        "contenidos",
+        "operaciones",
+        "productos"
+      ]
+    },
+    {
+      "q": "Distinga entre Inteligencia Fluida ($Gf$) e Inteligencia Cristalizada ($Gc$) según Raymond Cattell.",
+      "model": "La Inteligencia Fluida es la capacidad de resolver problemas nuevos y razonar abstractamente con independencia del aprendizaje previo (base biológica). La Inteligencia Cristalizada es el conjunto de conocimientos y habilidades acumuladas por la educación y experiencia (base social/cultural).",
+      "keywords": [
+        "Cattell",
+        "Inteligencia Fluida",
+        "Inteligencia Cristalizada",
+        "Gf-Gc"
+      ]
+    },
+    {
+      "q": "Explique la 'Teoría de la Inversión' de Cattell.",
+      "model": "Propone que la Inteligencia Cristalizada ($Gc$) es el resultado de 'invertir' la Inteligencia Fluida ($Gf$) en experiencias de aprendizaje. La $Gf$ predomina en la infancia, mientras que la $Gc$ crece con la escolarización y la socialización.",
+      "keywords": [
+        "Teoría de la Inversión",
+        "Cattell",
+        "aprendizaje",
+        "escolarización"
+      ]
+    },
+    {
+      "q": "Describa el modelo jerárquico de tres niveles de las capacidades mentales de Cattell.",
+      "model": "En el nivel superior se sitúa el Factor g de Spearman; en el nivel intermedio los factores generales de Inteligencia Fluida y Cristalizada; y en el nivel base se encuentran los factores primarios similares a los de Thurstone.",
+      "keywords": [
+        "jerarquía",
+        "Cattell",
+        "niveles",
+        "síntesis"
+      ]
+    },
+    {
+      "q": "Sintetice las tres conclusiones generales alcanzadas por el estudio factorial de la inteligencia.",
+      "model": "1) Existe un factor general (g) asimilable a la inteligencia general. 2) Las capacidades se organizan jerárquicamente (g -> fluida/cristalizada -> primarias). 3) Los factores primarios son fundamentales para explicar el desempeño en áreas específicas.",
+      "keywords": [
+        "Factor g",
+        "jerarquía",
+        "factores primarios"
+      ]
+    },
+    {
+      "q": "Analice la crítica de Sánchez Cánovas y Sánchez López sobre la dependencia del método en los resultados factoriales.",
+      "model": "Señalan que los resultados están determinados por el método de recogida de datos (test) y la técnica estadística usada (análisis factorial). Esto limita los hallazgos, ya que la inteligencia real es más amplia de lo que los test miden y las variaciones estadísticas pueden arrojar resultados incoherentes.",
+      "keywords": [
+        "dependencia del método",
+        "limitación",
+        "análisis factorial",
+        "test"
+      ]
+    },
+    {
+      "q": "Explique por qué se afirma que la inteligencia es una 'unidad' pero también una 'estructura compleja', según Yela.",
+      "model": "La unidad de la inteligencia reside en la persona que piensa y actúa. Sin embargo, técnicamente es una estructura compleja porque se compone de múltiples aptitudes que varían juntas (covarian) y se organizan dinámicamente según el contexto y la etapa evolutiva del individuo.",
+      "keywords": [
+        "Yela",
+        "unidad",
+        "estructura compleja",
+        "covarianza"
+      ]
+    },
+    {
+      "q": "Relacione el concepto de 'Pensamiento Divergente' de Guilford con la resolución de problemas.",
+      "model": "Guilford incluye el pensamiento divergente dentro de las 'operaciones mentales'. A diferencia del convergente (una sola respuesta), el divergente permite generar múltiples soluciones creativas ante un problema, siendo clave para la flexibilidad cognitiva y la innovación.",
+      "keywords": [
+        "Guilford",
+        "pensamiento divergente",
+        "creatividad",
+        "operaciones mentales"
+      ]
+    },
+    {
+      "q": "Explique el impacto de la Segunda Guerra Mundial en el desarrollo de la psicología de la Gestalt.",
+      "model": "La Gestalt, centrada en la percepción y procesos mentales complejos no asociacionistas, vio truncado su desarrollo en Europa debido a que muchos de sus miembros, de origen judío, tuvieron que emigrar tras el ascenso del nazismo en 1930, dispersando su influencia.",
+      "keywords": [
+        "Gestalt",
+        "Segunda Guerra Mundial",
+        "emigración",
+        "asociacionismo"
+      ]
+    },
+    {
+      "q": "Defina la inteligencia desde la perspectiva de la Real Academia Española mencionada en el texto.",
+      "model": "La RAE ofrece dos acepciones principales: la capacidad de entender o comprender las cosas, y la capacidad específica de resolver problemas.",
+      "keywords": [
+        "RAE",
+        "comprender",
+        "resolver problemas"
+      ]
+    },
+    {
+      "q": "Analice el mito del 'carro alado' de Platón en relación con la inteligencia.",
+      "model": "Platón utiliza el auriga para representar la inteligencia como razón y conocimiento, encargada de dirigir los corceles (emociones/impulsos) para alcanzar objetivos. Esto establece la inteligencia como la capacidad que guía el manejo correcto de la realidad.",
+      "keywords": [
+        "Platón",
+        "razón",
+        "auriga",
+        "carro alado"
+      ]
+    },
+    {
+      "q": "Discuta la tesis de Herrstein y Murray (1994) sobre el éxito social.",
+      "model": "Propusieron que, en las sociedades posindustriales, la inteligencia sustituiría al dinero y al patrimonio como el principal mecanismo de triunfo y éxito social.",
+      "keywords": [
+        "Herrstein y Murray",
+        "éxito social",
+        "sociedad posindustrial"
+      ]
+    },
+    {
+      "q": "Explique la diferencia entre 'Comprensión del contexto' y 'Adquisición de conocimientos' como acepciones de la inteligencia.",
+      "model": "La primera se asocia a la resolución de problemas (actuar adecuadamente tras comprender una situación). La segunda se asocia a la capacidad de aprender (rapidez para aumentar conocimientos y aplicarlos).",
+      "keywords": [
+        "resolución de problemas",
+        "aprendizaje",
+        "entendimiento"
+      ]
+    },
+    {
+      "q": "Defina el Factor Espacial (S) y el Razonamiento (R) dentro de las aptitudes de Thurstone.",
+      "model": "El Factor Espacial (S) es la facilidad para visualizar y manipular objetos mentalmente. El Razonamiento (R) es la capacidad para inferir reglas generales a partir de series lógicas u observaciones de secuencias.",
+      "keywords": [
+        "Factor espacial",
+        "Razonamiento",
+        "Thurstone"
+      ]
+    },
+    {
+      "q": "Describa los 'Contenidos mentales' en el modelo de Guilford.",
+      "model": "Se refiere al tipo de información sobre la que se opera. Guilford distingue cuatro modalidades: Figurativo, Semántico, Simbólico y Conductual.",
+      "keywords": [
+        "Guilford",
+        "Contenidos",
+        "Simbólico",
+        "Conductual"
+      ]
+    },
+    {
+      "q": "Explique la relación entre herencia y ambiente en los factores $Gf$ y $Gc$ de Cattell.",
+      "model": "La inteligencia fluida ($Gf$) tiene una carga biológica y hereditaria predominante. La inteligencia cristalizada ($Gc$) es altamente dependiente de la socialización, la cultura y el sistema educativo ambiental.",
+      "keywords": [
+        "herencia",
+        "ambiente",
+        "Cattell",
+        "socialización"
+      ]
+    },
+    {
+      "q": "Concluya por qué el estudio de la inteligencia debe estar vinculado a la etapa evolutiva del individuo.",
+      "model": "La estructura factorial no es estática. Depende de la persona y su desarrollo (ej. predominio de $Gf$ en niños vs $Gc$ en adultos) y del contexto en el que actúa. La inteligencia es un proceso dinámico de adaptación continua.",
+      "keywords": [
+        "etapa evolutiva",
+        "contexto",
+        "dinamismo",
+        "Yela"
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Historia de la Psicología Cognitiva",
+      "q": "¿Qué hito histórico se considera el comienzo disciplinar de la psicología como ciencia y quién fue su autor?",
+      "a": "La fundación del Instituto Psicológico en Leipzig por W. Wundt (1832-1920), dedicado al estudio de la conciencia y los procesos superiores del pensamiento."
+    },
+    {
+      "cat": "Historia de la Psicología Cognitiva",
+      "q": "¿Qué método utilizaba W. Wundt primordialmente para el estudio de la conciencia en los inicios de la psicología?",
+      "a": "La introspección."
+    },
+    {
+      "cat": "Modelos Cognitivos Clásicos",
+      "q": "¿Cómo consideraba el conductismo de J. B. Watson los procesos mentales y el pensamiento?",
+      "a": "Watson suprimió cualquier aspecto mental de la psicología, formulando el pensamiento simplemente como un lenguaje subvocal."
+    },
+    {
+      "cat": "Modelos Cognitivos Clásicos",
+      "q": "¿Qué función cumplían las variables mediacionales en los modelos de aprendizaje de Hull y Tolman?",
+      "a": "Servían para explicar los resultados del aprendizaje introduciendo elementos que mediaban entre el estímulo y la respuesta, a diferencia del conductismo radical."
+    },
+    {
+      "cat": "Modelos Cognitivos Clásicos",
+      "q": "¿Cuál fue la postura radical de B. Skinner respecto a los procesos mentales en la explicación de la conducta?",
+      "a": "Propuso la exclusión explicativa total de los procesos mentales, centrándose exclusivamente en la conducta observable y sus refuerzos."
+    },
+    {
+      "cat": "Modelos Cognitivos Clásicos",
+      "q": "¿Cuál era el planteamiento básico de la escuela de la Gestalt respecto a la composición de los procesos mentales?",
+      "a": "Rechazaba el asociacionismo, manteniendo que los procesos mentales complejos tienen propiedades que no pueden derivarse de la simple suma de sus componentes."
+    },
+    {
+      "cat": "Modelos Cognitivos Clásicos",
+      "q": "¿Cómo explica L. S. Vygotsky el origen del lenguaje y el pensamiento en el desarrollo humano?",
+      "a": "Como el resultado de la interiorización de la interacción social; el desarrollo humano solo se explica suficientemente desde lo social."
+    },
+    {
+      "cat": "Modelos Cognitivos Clásicos",
+      "q": "Según Vygotsky en su obra 'Pensamiento y lenguaje', ¿qué función del lenguaje es cronológicamente anterior?",
+      "a": "La función comunicativa es anterior a la función simbólica."
+    },
+    {
+      "cat": "Psicología Cognitiva Contemporánea",
+      "q": "¿En qué consiste la 'metáfora de la mente como ordenador' surgida en los años cincuenta?",
+      "a": "En la idea de que la inteligencia natural y la artificial funcionan siguiendo los mismos procesos de procesamiento de información."
+    },
+    {
+      "cat": "Psicología Cognitiva Contemporánea",
+      "q": "¿Qué propusieron Miller, Gallanter y Pribram en 1960 respecto a la regulación de la conducta humana?",
+      "a": "Que la conducta exige una retroalimentación continua de información y se organiza mediante 'planes' que evitan una acción caótica e inefectiva."
+    },
+    {
+      "cat": "Psicología Cognitiva Contemporánea",
+      "q": "¿Qué autor es una figura clave del modelo sociocognitivo actual por aunar influencias de la cibernética, Piaget y la psicología soviética?",
+      "a": "J. S. Bruner."
+    },
+    {
+      "cat": "Modelos Cognitivos Clásicos",
+      "q": "¿Qué procesos fundamentales destaca J. Piaget como base de la génesis del conocimiento?",
+      "a": "La maduración biológica y la conducta interactiva con la realidad, buscando un equilibrio entre asimilación y adaptación."
+    },
+    {
+      "cat": "Definición de Inteligencia",
+      "q": "¿Cuáles son las dos acepciones principales de la inteligencia según el Diccionario de la RAE?",
+      "a": "La capacidad de entender o comprender y la capacidad de resolver problemas."
+    },
+    {
+      "cat": "Definición de Inteligencia",
+      "q": "¿Cómo ejemplifica Platón la inteligencia en el mito del carro alado?",
+      "a": "Como la razón y el conocimiento, representados por el auriga que dirige el carro y los corceles hacia sus objetivos."
+    },
+    {
+      "cat": "Definición de Inteligencia",
+      "q": "¿Cuál era la visión de Cicerón sobre la inteligencia en relación con la vida cotidiana?",
+      "a": "La aproximaba al concepto de 'saber vivir'."
+    },
+    {
+      "cat": "Perspectivas sobre la Inteligencia",
+      "q": "¿Qué tesis defendieron Herrstein y Murray (1994) sobre el éxito en las sociedades posindustriales?",
+      "a": "Que la inteligencia es el principal mecanismo de triunfo social, sustituyendo al dinero o al patrimonio como factores de éxito histórico."
+    },
+    {
+      "cat": "Perspectivas sobre la Inteligencia",
+      "q": "¿A qué se refiere el término 'visión lega o implícita' de la inteligencia?",
+      "a": "A las ideas que las personas comunes tienen sobre la inteligencia basadas en la observación cotidiana y el desempeño de funciones prácticas."
+    },
+    {
+      "cat": "Perspectivas Culturales",
+      "q": "¿Qué cualidades adicionales incluyen las culturas orientales en su concepto de inteligencia según Sternberg?",
+      "a": "Aspectos como la benevolencia, hacer lo correcto, el conocimiento del yo, la humanidad y el despertar de la conciencia."
+    },
+    {
+      "cat": "Perspectivas Culturales",
+      "q": "¿Qué diferencia existe entre los valores de inteligencia en EE.UU. frente a países como Taiwán o Zambia?",
+      "a": "EE.UU. enfatiza la resolución de problemas prácticos y habilidad verbal, mientras que Taiwán/Zambia valoran más la cooperación y responsabilidad social."
+    },
+    {
+      "cat": "Modelos de Inteligencia en España",
+      "q": "¿Cómo conceptualizaba Mariano Yela la inteligencia desde un punto de vista evolutivo?",
+      "a": "Como un proceso ligado al desarrollo del sistema nervioso, la integración de funciones y la encefalización, siendo un indicador de control y autonomía."
+    },
+    {
+      "cat": "Modelos de Inteligencia en España",
+      "q": "Según Mariano Yela, ¿cuándo se considera que una conducta es 'más inteligente'?",
+      "a": "Cuanto más adaptativa y flexible resulta al medio, y cuanto menos automática y repetitiva es."
+    },
+    {
+      "cat": "Modelos de Inteligencia en España",
+      "q": "¿Qué frase define la estructura de la inteligencia para Yela?",
+      "a": "Es una unidad compleja de múltiples aptitudes covariantes, integradas en una jerarquía dinámica."
+    },
+    {
+      "cat": "Definición de Inteligencia",
+      "q": "¿A qué conclusión llegaron Snyderman y Rothman (1988) sobre los tres elementos que definen la inteligencia?",
+      "a": "Capacidad de razonamiento abstracto, capacidad de solucionar problemas y capacidad de adquirir conocimientos."
+    },
+    {
+      "cat": "Enfoques de la Inteligencia",
+      "q": "¿En qué consiste el enfoque de la inteligencia como 'disposición y proceso'?",
+      "a": "Considera la inteligencia como una capacidad interna del sujeto determinada por factores psicológicos y biológicos individuales."
+    },
+    {
+      "cat": "Enfoques de la Inteligencia",
+      "q": "¿Cuál fue la polémica propuesta de A. R. Jensen respecto a la inteligencia y la educación?",
+      "a": "Afirmó que ciertos grupos étnicos carecían de la capacidad necesaria para asimilar conocimientos, haciendo inútiles los programas educativos."
+    },
+    {
+      "cat": "Enfoques de la Inteligencia",
+      "q": "¿Cómo define el enfoque de la 'inteligencia como cultura' este constructo?",
+      "a": "Como el resultado de un contexto sociocultural que transmite pautas de manejo de la realidad que el individuo asimila."
+    },
+    {
+      "cat": "Enfoques de la Inteligencia",
+      "q": "¿Qué estudia el enfoque de la 'inteligencia como interacción'?",
+      "a": "El resultado de la relación entre las disponibilidades individuales y las competencias que el contexto transmite, centrándose en el ciclo vital."
+    },
+    {
+      "cat": "Estudio Diferencial",
+      "q": "¿Qué busca entender el enfoque diferencial de la inteligencia?",
+      "a": "El modo en que factores como herencia, ambiente, cultura y educación influyen en las variaciones cognitivas entre individuos."
+    },
+    {
+      "cat": "Estudio Diferencial",
+      "q": "¿Quién fue el pionero en entender la inteligencia como una disposición biológica general?",
+      "a": "Francis Galton."
+    },
+    {
+      "cat": "Estudio Diferencial",
+      "q": "¿En qué se centra la tradición de la inteligencia concebida como 'estructura'?",
+      "a": "En identificar las estructuras latentes que explican el desempeño en pruebas mentales mediante análisis factorial."
+    },
+    {
+      "cat": "Estudio Diferencial",
+      "q": "¿Cuál es el objetivo primordial del enfoque de la 'inteligencia como medida'?",
+      "a": "Evaluar y cuantificar la inteligencia para predecir resultados y asignar tareas adecuadamente."
+    },
+    {
+      "cat": "Estudio Diferencial",
+      "q": "¿Cómo define Alfred Binet la inteligencia en el marco de sus pruebas?",
+      "a": "Como la capacidad global de resolver problemas cotidianos y escolares mediante actividades superiores (memoria, atención, deducción)."
+    },
+    {
+      "cat": "Estudio Diferencial",
+      "q": "¿Qué pruebas actuales siguen un enfoque similar al de Binet en la evaluación integral?",
+      "a": "Las escalas de Wechsler (WAIS y WISC)."
+    },
+    {
+      "cat": "Estudio Factorial",
+      "q": "¿Qué cambio de enfoque ocurrió en el estudio de la inteligencia entre la década de 1920 y la de 1980?",
+      "a": "Se pasó de verla como un factor cuantitativo de predicción a concebirla como una medición compleja de procesos y funciones cognitivas."
+    },
+    {
+      "cat": "Estudio Factorial",
+      "q": "¿Qué permite determinar el análisis factorial en el estudio de la inteligencia?",
+      "a": "Cómo se agrupan e interrelacionan las distintas habilidades cognitivas para formar dimensiones subyacentes."
+    },
+    {
+      "cat": "Teoría de Spearman",
+      "q": "¿Qué argumentaba Spearman sobre el fundamento de la inteligencia en su propuesta de 1904?",
+      "a": "Que se basa en procesos psicológicos básicos, específicamente sensoriales y perceptivos."
+    },
+    {
+      "cat": "Teoría de Spearman",
+      "q": "¿Qué es el 'Factor G' o factor general propuesto por Spearman?",
+      "a": "Un factor latente común a todas las pruebas que representa una 'energía mental general' aplicable a cualquier contexto."
+    },
+    {
+      "cat": "Teoría de Spearman",
+      "q": "¿Por qué el modelo de Spearman se denomina 'bifactorial'?",
+      "a": "Porque distingue entre la inteligencia general (Factor G) y las inteligencias o factores específicos (Factores S)."
+    },
+    {
+      "cat": "Teoría de Spearman",
+      "q": "¿Qué relación establece Spearman entre el Factor G y la biología?",
+      "a": "Sostiene que tiene una fuerte base biológica y hereditaria, funcionando como indicador del potencial cognitivo."
+    },
+    {
+      "cat": "Aptitudes de Thurstone",
+      "q": "¿En qué se diferencia el modelo de Thurstone del de Spearman?",
+      "a": "Thurstone propuso factores independientes sin subordinación a un factor general; un alto desempeño en una habilidad no implica éxito en otras."
+    },
+    {
+      "cat": "Aptitudes de Thurstone",
+      "q": "¿Qué significan las siglas PMA en el contexto de la teoría de Thurstone?",
+      "a": "Primary Mental Abilities (Aptitudes Mentales Primarias)."
+    },
+    {
+      "cat": "Aptitudes de Thurstone",
+      "q": "¿Cómo define Thurstone la aptitud de 'Comprensión verbal (V)'?",
+      "a": "Facultad para comprender conceptos expresados con palabras, analogías y juegos verbales."
+    },
+    {
+      "cat": "Aptitudes de Thurstone",
+      "q": "¿Qué evalúa el factor de 'Fluidez verbal (W)'?",
+      "a": "La rapidez para asociar palabras, utilizar sinónimos y expresarse verbalmente con agilidad."
+    },
+    {
+      "cat": "Aptitudes de Thurstone",
+      "q": "¿En qué consiste el 'Factor numérico (N)' de Thurstone?",
+      "a": "Habilidad para operar con números y rapidez en la resolución de cálculos sencillos."
+    },
+    {
+      "cat": "Aptitudes de Thurstone",
+      "q": "¿Qué mide la aptitud de 'Memoria (M)'?",
+      "a": "La capacidad para recordar y reconocer información presentada con anterioridad."
+    },
+    {
+      "cat": "Aptitudes de Thurstone",
+      "q": "¿Qué es el 'Factor espacial (S)'?",
+      "a": "La facilidad para visualizar objetos y manipularlos mentalmente en diferentes formas o posiciones."
+    },
+    {
+      "cat": "Aptitudes de Thurstone",
+      "q": "¿Qué capacidad define a la 'Velocidad perceptual (P)'?",
+      "a": "Habilidad para discriminar rápidamente figuras complejas y diferenciar sus componentes mínimos."
+    },
+    {
+      "cat": "Aptitudes de Thurstone",
+      "q": "¿Cómo se define el 'Razonamiento (R)' en el modelo PMA?",
+      "a": "Capacidad para inferir reglas generales a partir de series lógicas observando sus secuencias."
+    },
+    {
+      "cat": "Aptitudes de Thurstone",
+      "q": "¿Son compatibles los modelos de Spearman y Thurstone según estudios posteriores?",
+      "a": "Sí, porque de los datos de Thurstone se puede extraer un Factor G que explica el 38% de la varianza."
+    },
+    {
+      "cat": "Modelo de Guilford",
+      "q": "¿Qué tres tipos de procesos distingue Guilford en la inteligencia?",
+      "a": "Contenidos mentales (entrada), Operaciones mentales (actividad) y Productos mentales (salida/resultados)."
+    },
+    {
+      "cat": "Modelo de Guilford",
+      "q": "En el modelo de Guilford, ¿qué representan los 'Contenidos mentales'?",
+      "a": "El tipo de información sobre la que versan las operaciones (Figurativo, Semántico, Simbólico o Conductual)."
+    },
+    {
+      "cat": "Modelo de Guilford",
+      "q": "Menciona las 5 'Operaciones mentales' que propuso Guilford.",
+      "a": "Cognición, Memoria, Pensamiento divergente, Pensamiento convergente y Evaluación."
+    },
+    {
+      "cat": "Modelo de Guilford",
+      "q": "Menciona los 6 'Productos mentales' resultantes en el modelo de Guilford.",
+      "a": "Unidades, Clases, Sistemas, Relaciones, Transformaciones e Implicaciones."
+    },
+    {
+      "cat": "Modelo de Guilford",
+      "q": "¿Cuántos factores teóricos componen el cubo de la Estructura de la Inteligencia (EI) de Guilford?",
+      "a": "120 factores (resultado de 5 operaciones x 4 contenidos x 6 productos)."
+    },
+    {
+      "cat": "Modelo de Guilford",
+      "q": "¿Cuál es la principal crítica o limitación del modelo de Guilford?",
+      "a": "Que no se han replicado empíricamente todas las capacidades propuestas, funcionando más como una taxonomía teórica."
+    },
+    {
+      "cat": "Teoría de R. B. Cattell",
+      "q": "¿Cuáles son los dos tipos principales de inteligencia propuestos por Cattell?",
+      "a": "Inteligencia Fluida e Inteligencia Cristalizada."
+    },
+    {
+      "cat": "Teoría de R. B. Cattell",
+      "q": "¿Cómo se define la Inteligencia Fluida (Gf)?",
+      "a": "Capacidad de resolver problemas nuevos y complejos de forma independiente al conocimiento previo, usando razonamiento lógico y abstracto."
+    },
+    {
+      "cat": "Teoría de R. B. Cattell",
+      "q": "¿Qué caracteriza a la Inteligencia Cristalizada (Gc)?",
+      "a": "Conjunto de conocimientos y habilidades acumulados por la experiencia y educación, como el vocabulario y la comprensión de conceptos."
+    },
+    {
+      "cat": "Teoría de R. B. Cattell",
+      "q": "¿Qué sostiene la 'Teoría de la inversión' de Cattell?",
+      "a": "Que la inteligencia cristalizada es el resultado de 'invertir' la inteligencia fluida en el aprendizaje durante la escolarización."
+    },
+    {
+      "cat": "Teoría de R. B. Cattell",
+      "q": "¿Qué tipo de inteligencia predomina en los primeros años de vida según Cattell?",
+      "a": "La inteligencia fluida."
+    },
+    {
+      "cat": "Teoría de R. B. Cattell",
+      "q": "¿Cómo influyen la biología y la socialización en los tipos de inteligencia de Cattell?",
+      "a": "La biología afecta más a la inteligencia fluida; la socialización influye más en la cristalizada."
+    },
+    {
+      "cat": "Teoría de R. B. Cattell",
+      "q": "¿Cuáles son los tres niveles en la síntesis jerárquica de Cattell?",
+      "a": "Nivel 1: Factores primarios; Nivel 2: Inteligencia fluida y cristalizada; Nivel 3: Factor G de Spearman."
+    },
+    {
+      "cat": "Conclusiones Factoriales",
+      "q": "¿Cuál es la primera gran conclusión del estudio factorial de la inteligencia?",
+      "a": "La existencia de un Factor General G que se asemeja al concepto de inteligencia general."
+    },
+    {
+      "cat": "Conclusiones Factoriales",
+      "q": "¿Cómo se organizan jerárquicamente las capacidades mentales según el consenso factorial?",
+      "a": "G en la cima, seguido por Gf y Gc, y las aptitudes primarias en el nivel inferior."
+    },
+    {
+      "cat": "Conclusiones Factoriales",
+      "q": "¿Por qué son cruciales los factores primarios a pesar de estar en el nivel inferior?",
+      "a": "Porque reflejan desempeños específicos en áreas concretas de la vida."
+    },
+    {
+      "cat": "Metodología",
+      "q": "¿Cómo influye el método de recopilación (test) en los resultados según Sánchez Cánovas?",
+      "a": "Los resultados son inherentemente restringidos porque las manifestaciones de la inteligencia exceden lo que un test puede medir."
+    },
+    {
+      "cat": "Metodología",
+      "q": "¿Qué impacto tiene la elección de la técnica estadística en los hallazgos factoriales?",
+      "a": "Hace que los resultados no siempre sean coherentes, evidenciando que los hallazgos dependen del método de análisis utilizado."
+    },
+    {
+      "cat": "Metodología",
+      "q": "¿Por qué la inteligencia no puede entenderse de forma aislada?",
+      "a": "Porque está vinculada inseparablemente a la persona, su contexto y su etapa evolutiva."
+    },
+    {
+      "cat": "Modelos Cognitivos Clásicos",
+      "q": "¿Quién introdujo la idea del comportamiento como acción retroalimentada para el desarrollo de la conciencia?",
+      "a": "L. S. Vygotsky."
+    },
+    {
+      "cat": "Perspectivas sobre la Inteligencia",
+      "q": "¿Cómo definía Sócrates la inteligencia poco antes de Platón?",
+      "a": "Como la capacidad para pensar la realidad."
+    },
+    {
+      "cat": "Perspectivas sobre la Inteligencia",
+      "q": "Según Pueyo (1996), ¿qué significa ser inteligente en la acepción de 'adquisición de conocimientos'?",
+      "a": "Tener la capacidad para aprender rápidamente e incrementar los conocimientos para actuar en consecuencia."
+    },
+    {
+      "cat": "Aptitudes de Thurstone",
+      "q": "¿Cuál es el proceso mental que permite a una persona resolver un acertijo de analogías según Thurstone?",
+      "a": "La Comprensión verbal (V)."
+    },
+    {
+      "cat": "Modelo de Guilford",
+      "q": "En Guilford, ¿qué diferencia al contenido 'Simbólico' del 'Semántico'?",
+      "a": "El simbólico usa signos (letras, números) y el semántico usa significados e ideas."
+    },
+    {
+      "cat": "Modelo de Guilford",
+      "q": "¿Qué operación mental implica generar múltiples soluciones creativas ante un problema?",
+      "a": "El Pensamiento divergente."
+    },
+    {
+      "cat": "Teoría de Spearman",
+      "q": "¿Qué título tiene la obra fundamental de Spearman de 1927?",
+      "a": "The abilities of man."
+    },
+    {
+      "cat": "Historia de la Psicología Cognitiva",
+      "q": "¿Qué modelo actual considera la cognición como el eje regulador de la conducta y lo social como su marco?",
+      "a": "El modelo sociocognitivo."
+    },
+    {
+      "cat": "Modelos Cognitivos Clásicos",
+      "q": "¿Por qué se truncaron los estudios de la Gestalt a partir de 1930?",
+      "a": "Debido a que muchos de sus miembros, de origen judío, tuvieron que emigrar por las guerras europeas."
+    },
+    {
+      "cat": "Psicología Cognitiva Contemporánea",
+      "q": "¿Qué autores rechazaron la hipótesis de que inteligencia natural y artificial funcionaran igual?",
+      "a": "Newell, Shaw y Simon (1958)."
+    },
+    {
+      "cat": "Psicología Cognitiva Contemporánea",
+      "q": "Sin planes ni retroalimentación, ¿cómo sería la acción humana según Miller et al.?",
+      "a": "Caótica e inefectiva."
+    },
+    {
+      "cat": "Modelos Cognitivos Clásicos",
+      "q": "¿Qué término usa Piaget para referirse a la génesis del conocimiento?",
+      "a": "Epistemología genética (implícito en el enfoque sobre la génesis del conocimiento)."
+    },
+    {
+      "cat": "Definición de Inteligencia",
+      "q": "En el mito del carro alado, ¿qué representan los caballos en relación con la inteligencia?",
+      "a": "Las fuerzas o impulsos que deben ser dirigidos por la razón (el auriga)."
+    },
+    {
+      "cat": "Perspectivas Culturales",
+      "q": "¿Qué proceso mental valorado en Taiwán se asocia a la inteligencia además de lo cognitivo?",
+      "a": "La capacidad de cooperación."
+    },
+    {
+      "cat": "Definición de Inteligencia",
+      "q": "¿Qué porcentaje de especialistas coincidió en los elementos definitorios según Snyderman y Rothman?",
+      "a": "La encuesta fue a más de mil especialistas para buscar consenso en los tres elementos clave."
+    },
+    {
+      "cat": "Estudio Diferencial",
+      "q": "¿Qué enfoque diferencial dio lugar al estudio del desarrollo y ciclo vital?",
+      "a": "La inteligencia como interacción."
+    },
+    {
+      "cat": "Estudio Diferencial",
+      "q": "¿Qué áreas cerebrales interesan hoy al enfoque de la inteligencia como disposición?",
+      "a": "Estructuras cerebrales, procesos psicofisiológicos y genética."
+    },
+    {
+      "cat": "Teoría de Spearman",
+      "q": "¿A qué se refiere Spearman con 'energía mental general'?",
+      "a": "A una capacidad fundamental que subyace a todo esfuerzo intelectual y predice el potencial de desarrollo."
+    },
+    {
+      "cat": "Aptitudes de Thurstone",
+      "q": "Si una persona es muy rápida detectando errores en una lista de dibujos, ¿qué factor destaca?",
+      "a": "Velocidad perceptual (P)."
+    },
+    {
+      "cat": "Aptitudes de Thurstone",
+      "q": "Para resolver una serie como 2, 4, 8, 16... ¿qué aptitud de Thurstone se utiliza?",
+      "a": "Razonamiento (R)."
+    },
+    {
+      "cat": "Modelo de Guilford",
+      "q": "¿Qué es una 'Transformación' en el modelo de productos de Guilford?",
+      "a": "Un cambio o modificación en la información o en el conocimiento previo."
+    },
+    {
+      "cat": "Modelo de Guilford",
+      "q": "¿En qué contexto obtuvo Guilford recursos para su investigación?",
+      "a": "En las Fuerzas Aéreas de Estados Unidos durante la Segunda Guerra Mundial."
+    },
+    {
+      "cat": "Teoría de R. B. Cattell",
+      "q": "¿Qué ocurre con la Gf y la Gc a medida que envejecemos?",
+      "a": "La Gf tiende a disminuir mientras que la Gc puede seguir aumentando por la acumulación de experiencia."
+    },
+    {
+      "cat": "Conclusiones Factoriales",
+      "q": "¿Quién afirmó la frase 'es la persona quien piensa' para subrayar la limitación del análisis factorial?",
+      "a": "Mariano Yela (1991)."
+    },
+    {
+      "cat": "Perspectivas sobre la Inteligencia",
+      "q": "¿Qué significa que la inteligencia afecte a 'todos los aspectos de la vida' para Yela?",
+      "a": "Que es una característica general de la conducta, no algo limitado a tareas académicas."
+    },
+    {
+      "cat": "Modelos Cognitivos Clásicos",
+      "q": "¿Cómo define Watson el pensamiento para evitar términos mentalistas?",
+      "a": "Como habla subvocal o movimientos musculares de la laringe."
+    },
+    {
+      "cat": "Psicología Cognitiva Contemporánea",
+      "q": "¿Qué obra de 1960 marcó el inicio del estudio de la autorregulación en psicología?",
+      "a": "Planes y estructura de la conducta (Miller, Gallanter y Pribram)."
+    },
+    {
+      "cat": "Definición de Inteligencia",
+      "q": "¿Qué concepto aristotélico heredó la visión de la inteligencia de Platón?",
+      "a": "La inteligencia como capacidad de manejo correcto y eficaz de la realidad."
+    },
+    {
+      "cat": "Aptitudes de Thurstone",
+      "q": "Un traductor que encuentra rápidamente sinónimos exactos demuestra una alta...",
+      "a": "Fluidez verbal (W)."
+    },
+    {
+      "cat": "Modelo de Guilford",
+      "q": "¿Cuál es la operación que compara la información para tomar una decisión?",
+      "a": "Evaluación."
+    },
+    {
+      "cat": "Teoría de R. B. Cattell",
+      "q": "Analizar la relación entre dos conceptos abstractos nunca vistos antes requiere...",
+      "a": "Inteligencia Fluida (Gf)."
+    },
+    {
+      "cat": "Conclusiones Factoriales",
+      "q": "¿Qué implica que las capacidades estén organizadas en una 'jerarquía dinámica'?",
+      "a": "Que existe una interdependencia y niveles de importancia entre ellas, no son estáticas."
+    }
+  ]
+}

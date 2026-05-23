@@ -1,0 +1,2602 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es correcto afirmar que los datos Q propuestos por Cattell coinciden íntegramente con la categoría de datos S propuesta por Block?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Block renombró la categoría manteniendo la esencia del autoinforme.",
+      "explanation": "Block (1993) renombró los datos Q (Questionnaire) de Cattell como datos S (Self-report) dentro del sistema LOTS."
+    },
+    {
+      "q": "¿Los datos L de resultados de vida se limitan exclusivamente a registros históricos como expedientes académicos o penales?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Piense en las fuentes de información digitales mencionadas en el manual.",
+      "explanation": "El texto incluye fuentes modernas como patrones de navegación por internet o direcciones de e-mail como datos L."
+    },
+    {
+      "q": "¿La concordancia entre los datos de autoinforme (S) y los datos objetivos (T) suele ser alta en constructos como la ansiedad?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "La percepción subjetiva y la realidad biológica no siempre caminan de la mano.",
+      "explanation": "La concordancia disminuye al comparar autoinforme y datos objetivos; por ejemplo, la ansiedad percibida y la real no suelen coincidir."
+    },
+    {
+      "q": "¿El error de contraste ocurre cuando el calificador evalúa al sujeto en la dirección opuesta a su propia posición en ese rasgo?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Es un sesgo basado en la comparación con uno mismo.",
+      "explanation": "El error de contraste es la tendencia a calificar a otros de forma opuesta a la percepción que el calificador tiene de sí mismo."
+    },
+    {
+      "q": "¿La técnica proyectiva de Rorschach es clasificada metodológicamente como una fuente de datos de tipo S (autoinforme)?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Considere el nivel de estructuración y el conocimiento del objetivo por el sujeto.",
+      "explanation": "Las técnicas proyectivas se consideran datos T porque el sujeto desconoce el objetivo y proyecta su personalidad ante un estímulo ambiguo."
+    },
+    {
+      "q": "¿El coeficiente alpha de Cronbach es el índice más popular para calcular la estabilidad temporal en un diseño test-retest?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Diferencie entre la consistencia interna y la estabilidad a lo largo del tiempo.",
+      "explanation": "El alpha de Cronbach mide la consistencia interna, mientras que la estabilidad temporal se evalúa mediante la correlación test-retest."
+    },
+    {
+      "q": "¿La validez de constructo se considera una categoría superior que engloba a la validez convergente y la predictiva?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Reflexione sobre la integración de hallazgos para validar un concepto teórico.",
+      "explanation": "El texto indica que la validez de constructo puede considerarse que incluye a las demás y garantiza la evaluación del concepto teórico."
+    },
+    {
+      "q": "¿En la estrategia experimental, la asignación al azar busca equilibrar las diferencias iniciales entre los participantes?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Es la técnica fundamental para garantizar que los grupos sean comparables.",
+      "explanation": "La asignación al azar justifica que cualquier diferencia posterior se deba a la manipulación, asumiendo equilibrio previo en la VD."
+    },
+    {
+      "q": "¿La estrategia correlacional permite establecer relaciones de causa-efecto si el coeficiente de correlación es de +1 o -1?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "La magnitud de una asociación no define el origen de la influencia causal.",
+      "explanation": "La correlación no implica causalidad independientemente de su magnitud, debido a la posible existencia de terceras variables."
+    },
+    {
+      "q": "¿El análisis factorial es una técnica diseñada específicamente para analizar relaciones de causalidad entre variables independientes?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Piense en el objetivo primordial de simplificar grandes conjuntos de datos.",
+      "explanation": "El análisis factorial es una técnica de reducción de datos para detectar focos de covariación, no para determinar causalidad."
+    },
+    {
+      "q": "¿Un diseño experimental de personalidad es aquel que combina variables manipuladas con variables de personalidad seleccionadas?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Se trata de un enfoque mixto o cruzado muy común en la disciplina.",
+      "explanation": "Estos diseños incluyen al menos una VI de personalidad cuyos grupos se forman por selección, integrándose en un marco experimental."
+    },
+    {
+      "q": "¿Es necesario obtener el consentimiento informado únicamente en investigaciones que impliquen riesgos físicos para el sujeto?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "La ética abarca la protección de la intimidad y el bienestar general.",
+      "explanation": "El consentimiento informado es imprescindible en toda investigación para proteger el bienestar y el derecho a la intimidad."
+    },
+    {
+      "q": "¿El 'efecto de halo' se refiere a la tendencia a utilizar categorías intermedias para evitar realizar juicios extremos?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Diferencie entre la impresión general y el uso de la escala de respuesta.",
+      "explanation": "El uso de categorías intermedias es el error de tendencia central; el efecto halo es calificar según una impresión general previa."
+    },
+    {
+      "q": "¿Los datos obtenidos mediante registros de Facebook o Instagram pueden considerarse simultáneamente como datos O, T y S?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Depende de cómo el evaluador decida procesar la información digital.",
+      "explanation": "Según el manual, pueden ser O (observación), T (si hay condición experimental) o S (si hay autorregistro de pensamientos/acciones)."
+    },
+    {
+      "q": "¿La aquiescencia es la tendencia a responder sistemáticamente 'no' independientemente del contenido de la pregunta?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Se asocia con una disposición afirmativa hacia los ítems del test.",
+      "explanation": "La aquiescencia es la tendencia a responder afirmativamente ('sí') independientemente del contenido del ítem."
+    },
+    {
+      "q": "¿La estrategia clínica se centra en el estudio de leyes generales de conducta aplicables a toda la población humana?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Piense en el enfoque idiográfico versus el enfoque nomotético.",
+      "explanation": "La estrategia clínica se centra en el estudio en profundidad de casos concretos y la organización singular de la personalidad."
+    },
+    {
+      "q": "¿En un análisis de regresión, el coeficiente de determinación indica el porcentaje de varianza de la variable criterio explicada?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Es el resultado de elevar al cuadrado la correlación múltiple.",
+      "explanation": "El coeficiente de determinación ($R^2$) permite conocer qué porcentaje de la variable criterio se establece desde las predictoras."
+    },
+    {
+      "q": "¿El análisis factorial confirmatorio (AFC) se utiliza principalmente para explorar nuevas estructuras sin hipótesis previas?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "El nombre del análisis indica si busca 'confirmar' o 'descubrir'.",
+      "explanation": "El AFC se utiliza para probar si una estructura teórica previa encaja con los datos; el exploratorio (AFE) es para descubrirla."
+    },
+    {
+      "q": "¿Las escalas de sinceridad se basan en la coherencia de las respuestas ante ítems idénticos repetidos en el test?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Existen dos estrategias distintas para detectar la falta de honestidad.",
+      "explanation": "Las escalas de sinceridad (o mentiras) usan preguntas sobre funcionamiento psicosocial idealizado; la coherencia usa ítems repetidos."
+    },
+    {
+      "q": "¿La deseabilidad social se considera a veces como una parte válida de rasgos como la responsabilidad o la cordialidad?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "No siempre se ve exclusivamente como un error de medida externo.",
+      "explanation": "Aunque es un sesgo, algunos autores la consideran un componente sustantivo de rasgos vinculados a la adaptación social."
+    },
+    {
+      "q": "¿La validez concurrente evalúa si un test es capaz de predecir comportamientos que ocurrirán en el futuro del sujeto?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Diferencie entre la asociación actual y la asociación con eventos posteriores.",
+      "explanation": "La validez predictiva es la que se asocia con conductas futuras; la concurrente se asocia con otros test ya probados en el presente."
+    },
+    {
+      "q": "¿La estrategia experimental goza generalmente de una mayor validez externa que la estrategia correlacional natural?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Considere la artificialidad del laboratorio frente al entorno natural del sujeto.",
+      "explanation": "La estrategia experimental tiene alta validez interna pero baja validez externa por la dificultad de generalizar situaciones artificiales."
+    },
+    {
+      "q": "¿El análisis de mediación busca identificar el mecanismo a través del cual una VI influye sobre una VD específica?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Se trata de entender el 'cómo' o el 'porqué' de una relación causal.",
+      "explanation": "El análisis de mediación utiliza una variable mediadora para explicar el proceso por el cual la VI ejerce su efecto sobre la VD."
+    },
+    {
+      "q": "¿Los modelos de ecuaciones estructurales (SEM) permiten poner en relación múltiples variables simultáneamente?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Es una herramienta estadística avanzada para modelos complejos de mediación.",
+      "explanation": "El SEM permite probar hipótesis complejas con múltiples variables mediadoras y relaciones dinámicas de gran potencia estadística."
+    },
+    {
+      "q": "¿La fiabilidad interjueces es el criterio de bondad fundamental para validar los registros de observación directa?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Se basa en el consenso entre distintos evaluadores externos al sujeto.",
+      "explanation": "En los datos O, la bondad de la medida recae en la concordancia o consenso entre los observadores (fiabilidad interjueces)."
+    },
+    {
+      "q": "Al utilizar datos de observación (O), ¿qué factor garantiza principalmente la bondad de la medida según el texto?",
+      "options": [
+        "La validez predictiva de las puntuaciones",
+        "La fiabilidad interjueces o consenso mutuo",
+        "La ausencia total de sesgos del calificador"
+      ],
+      "correct": 1,
+      "hint": "Se refiere a la coincidencia entre distintos evaluadores externos.",
+      "explanation": "El manual establece que la bondad de los datos O recae en el consenso entre observadores, es decir, la fiabilidad interjueces."
+    },
+    {
+      "q": "En el contexto de los sesgos de respuesta, ¿en qué consiste exactamente el concepto técnico de 'error lógico'?",
+      "options": [
+        "Calificar alto en varias variables por una sola",
+        "Relacionar rasgos independientes por lógica propia",
+        "Utilizar solo categorías centrales en la escala"
+      ],
+      "correct": 1,
+      "hint": "Se vincula a la creencia de que ciertos rasgos deben ir siempre unidos.",
+      "explanation": "El error lógico es la tendencia a dar calificaciones similares a rasgos que parecen relacionados lógicamente aunque sean independientes."
+    },
+    {
+      "q": "¿Cuál es la característica definitoria de los datos T que los diferencia de la mera objetividad de puntuación?",
+      "options": [
+        "El uso obligatorio de aparatos psicofisiológicos",
+        "La falta de validez aparente de la situación",
+        "La participación activa del sujeto en el diseño"
+      ],
+      "correct": 1,
+      "hint": "El sujeto no debe saber qué se está evaluando realmente.",
+      "explanation": "Cattell señala que los datos T recurren a la objetividad de la situación porque el sujeto desconoce el objetivo del evaluador."
+    },
+    {
+      "q": "Dentro de la investigación en personalidad, ¿qué técnica estadística permite específicamente controlar la colinealidad?",
+      "options": [
+        "El análisis de varianza multifactorial",
+        "El análisis de regresión múltiple lineal",
+        "El análisis factorial de tipo confirmatorio"
+      ],
+      "correct": 1,
+      "hint": "Es una ventaja clave para manejar variables independientes que se solapan.",
+      "explanation": "El análisis de regresión permite estudiar relaciones entre variables independientes controlando su colinealidad o superposición."
+    },
+    {
+      "q": "¿Qué tipo de validez garantiza que un instrumento evalúa un concepto tal como se define teóricamente en la disciplina?",
+      "options": [
+        "Validez de tipo predictiva o de criterio",
+        "Validez de constructo o conceptual integral",
+        "Validez concurrente o de tipo convergente"
+      ],
+      "correct": 1,
+      "hint": "Es la forma más ambiciosa de validez que engloba a las demás.",
+      "explanation": "La validez de constructo asegura que el instrumento evalúa el constructo tal como es conceptualizado teóricamente por el autor."
+    },
+    {
+      "q": "En la estrategia experimental, ¿cuál es la función primordial de la manipulación de la variable independiente (VI)?",
+      "options": [
+        "Equilibrar los grupos antes del experimento",
+        "Crear al menos dos niveles para observar efectos",
+        "Eliminar la necesidad de usar una estadística t"
+      ],
+      "correct": 1,
+      "hint": "Tiene que ver con la introducción deliberada de un factor de interés.",
+      "explanation": "El investigador manipula la VI creando niveles para observar sus efectos causales directos sobre la variable dependiente (VD)."
+    },
+    {
+      "q": "¿Qué sesgo de respuesta se intenta neutralizar habitualmente mediante la técnica del 'contrabalanceado de los ítems'?",
+      "options": [
+        "La deseabilidad social del evaluado",
+        "La aquiescencia o tendencia al acuerdo",
+        "La falta de sinceridad en el cuestionario"
+      ],
+      "correct": 1,
+      "hint": "Busca evitar que la puntuación se infle por responder siempre 'sí'.",
+      "explanation": "El contrabalanceado ayuda a corregir la aquiescencia, ya que las personas tienden a responder 'sí' con más frecuencia que 'no'."
+    },
+    {
+      "q": "¿A qué se refiere el término 'dirección de la asociación' en el análisis de una correlación entre variables?",
+      "options": [
+        "Al grado de exactitud de la predicción final",
+        "Al carácter positivo o negativo del vínculo",
+        "A la fuerza absoluta de la relación obtenida"
+      ],
+      "correct": 1,
+      "hint": "Indica si las variables crecen juntas o en sentido opuesto.",
+      "explanation": "La dirección indica si la relación es positiva (crecen juntas) o negativa (una crece mientras la otra decrece)."
+    },
+    {
+      "q": "Según el modelo de Block, ¿cuál es la principal fuente de información en los denominados datos de tipo L?",
+      "options": [
+        "Juicios de valor emitidos por observadores",
+        "Registros públicos y documentos personales",
+        "Información directa proporcionada por el sujeto"
+      ],
+      "correct": 1,
+      "hint": "Piense en 'Life-Outcome' o resultados de vida tangibles.",
+      "explanation": "Los datos L provienen de biografías, documentos personales y sucesos disponibles para el escrutinio público del individuo."
+    },
+    {
+      "q": "En un diseño multifactorial mixto de personalidad, ¿cómo se forman habitualmente los niveles de la variable de personalidad?",
+      "options": [
+        "Mediante la asignación al azar de sujetos",
+        "Mediante una estrategia de selección previa",
+        "Mediante la manipulación directa del rasgo"
+      ],
+      "correct": 1,
+      "hint": "Los rasgos de personalidad no pueden ser 'asignados' por el experimentador.",
+      "explanation": "En estos diseños, las variables de personalidad se forman por selección (ej. altos/bajos), no por asignación aleatoria."
+    },
+    {
+      "q": "¿Qué limitación principal presenta la estrategia clínica según el manual de la asignatura estudiada?",
+      "options": [
+        "Su excesivo coste en laboratorios técnicos",
+        "La dificultad para generalizar sus hallazgos",
+        "La falta de validez interna en sus procesos"
+      ],
+      "correct": 1,
+      "hint": "Se deriva de centrarse exclusivamente en casos particulares o únicos.",
+      "explanation": "La aproximación clínica ofrece gran detalle pero tiene problemas para replicar y generalizar resultados a toda la población."
+    },
+    {
+      "q": "El 'efecto Rosenthal' o efecto del experimentador es un argumento utilizado para cuestionar qué aspecto metodológico?",
+      "options": [
+        "La validez externa de la estrategia clínica",
+        "La validez interna de la experimentación",
+        "La fiabilidad de los datos de autoinforme"
+      ],
+      "correct": 1,
+      "hint": "Se relaciona con la influencia del investigador sobre los resultados.",
+      "explanation": "Este efecto sugiere que la validez interna del experimento puede ser menor de lo asumido debido a la influencia del investigador."
+    },
+    {
+      "q": "Al calcular el porcentaje de varianza compartida entre dos variables, ¿qué operación matemática se debe realizar?",
+      "options": [
+        "Dividir la correlación por el número de casos",
+        "Elevar al cuadrado el valor de la correlación",
+        "Sumar las desviaciones típicas de las variables"
+      ],
+      "correct": 1,
+      "hint": "Es la forma de transformar el coeficiente $r$ en un porcentaje explicativo.",
+      "explanation": "Elevar al cuadrado la correlación ($r^2$) y multiplicar por 100 da el porcentaje de varianza compartido entre las dimensiones."
+    },
+    {
+      "q": "En la evaluación de la personalidad, ¿qué se entiende por 'consistencia interna' de un instrumento de medida?",
+      "options": [
+        "La estabilidad de las notas a través del tiempo",
+        "El grado en que los ítems miden lo mismo",
+        "El acuerdo entre dos calificadores diferentes"
+      ],
+      "correct": 1,
+      "hint": "Es una dimensión de la fiabilidad que mira hacia el interior del test.",
+      "explanation": "La consistencia interna es el grado en que las diferentes partes o ítems de un test miden el mismo constructo subyacente."
+    },
+    {
+      "q": "¿Cuál es la finalidad básica del uso de datos psicofisiológicos (datos T) en la investigación actual?",
+      "options": [
+        "Sustituir por completo a los cuestionarios S",
+        "Comprobar hipótesis sobre el funcionamiento",
+        "Eliminar los sesgos de la deseabilidad social"
+      ],
+      "correct": 1,
+      "hint": "Se ven como un apoyo para interpretar las diferencias individuales.",
+      "explanation": "Se emplean como complementos para la interpretación y comprobación de hipótesis sobre el funcionamiento de la personalidad."
+    },
+    {
+      "q": "¿Qué nombre recibe la tendencia a dar evaluaciones más favorables de las merecidas por parte de un observador?",
+      "options": [
+        "Error lógico de asociación de rasgos",
+        "Error de generosidad o benevolencia",
+        "Efecto de halo por impresión general"
+      ],
+      "correct": 1,
+      "hint": "Es uno de los errores constantes definidos en las escalas de calificación.",
+      "explanation": "El error de generosidad consiste en dar evaluaciones más favorables de lo que los datos objetivos o la conducta merecen."
+    },
+    {
+      "q": "Dentro del sistema LOTS, ¿qué diferencia fundamental existe entre los datos L y los datos O según Block?",
+      "options": [
+        "L es subjetivo y O es totalmente objetivo",
+        "L usa registros y O usa juicios ajenos",
+        "L es autoinforme y O es prueba de test"
+      ],
+      "correct": 1,
+      "hint": "Uno se basa en hechos públicos y el otro en la opinión de terceros.",
+      "explanation": "Los datos L se refieren a hechos y resultados vitales; los datos O proceden del juicio o calificación de observadores externos."
+    },
+    {
+      "q": "En el análisis de varianza (ANOVA), ¿qué permite detectar específicamente la combinación de varios factores?",
+      "options": [
+        "El coeficiente de determinación múltiple",
+        "Los efectos de interacción o modulación",
+        "La fiabilidad interjueces de la muestra"
+      ],
+      "correct": 1,
+      "hint": "Es clave para entender cómo una variable afecta a otra según una tercera.",
+      "explanation": "El ANOVA permite obtener efectos principales y efectos de interacción resultantes de la combinación de los factores independientes."
+    },
+    {
+      "q": "¿Qué técnica permite resumir conjuntos amplios de variables en factores sin perder el significado esencial de los datos?",
+      "options": [
+        "Análisis de regresión por pasos previos",
+        "Análisis factorial de reducción de datos",
+        "Prueba t de Student para muestras únicas"
+      ],
+      "correct": 1,
+      "hint": "Es fundamental para el desarrollo de propuestas estructurales.",
+      "explanation": "El análisis factorial es una técnica de reducción que permite resumir la información de muchas variables en pocos factores."
+    },
+    {
+      "q": "¿Qué requisito es indispensable para atribuir diferencias comportamentales a la manipulación experimental?",
+      "options": [
+        "Que los grupos sean iguales antes del inicio",
+        "Que el coeficiente de correlación sea perfecto",
+        "Que los sujetos desconozcan el objetivo real"
+      ],
+      "correct": 0,
+      "hint": "La igualdad inicial garantiza que el cambio se deba solo a la VI.",
+      "explanation": "La igualdad entre grupos (lograda por azar) permite atribuir cualquier diferencia posterior exclusivamente a la manipulación de la VI."
+    },
+    {
+      "q": "¿Qué estrategia utiliza el experimentador para mejorar la baja validez externa de sus estudios psicológicos?",
+      "options": [
+        "La manipulación de más variables dependientes",
+        "La repetición o replicación de experimentos",
+        "El uso de muestras clínicas de casos únicos"
+      ],
+      "correct": 1,
+      "hint": "Busca contrastar si los resultados se mantienen en otras condiciones.",
+      "explanation": "Para paliar la baja validez externa, se opta por la repetición del experimento con diferentes participantes o situaciones."
+    },
+    {
+      "q": "¿Qué fenómeno se describe como la tendencia a utilizar categorías extremas en un cuestionario de personalidad?",
+      "options": [
+        "Sesgo de aquiescencia por acuerdo total",
+        "Respuesta estereotipada por rigidez mental",
+        "Falta de sinceridad por omisión de datos"
+      ],
+      "correct": 1,
+      "hint": "Puede ser tanto la elección de extremos como de intervalos centrales.",
+      "explanation": "La elección sistemática de extremos o centros se denomina respuesta estereotipada e indica rigidez o falta de significación."
+    },
+    {
+      "q": "¿Cuál es el objetivo primordial del análisis factorial confirmatorio (AFC) frente al exploratorio (AFE)?",
+      "options": [
+        "Descubrir nuevas estructuras de datos",
+        "Probar si un modelo teórico previo encaja",
+        "Sustituir al análisis de regresión múltiple"
+      ],
+      "correct": 1,
+      "hint": "Se usa cuando ya tenemos una hipótesis sobre la estructura del test.",
+      "explanation": "El AFC se utiliza para validar propuestas teóricas previas, comprobando si los datos reales se ajustan al modelo postulado."
+    },
+    {
+      "q": "En el estudio de casos de la estrategia clínica, ¿qué valor fundamental se destaca para la disciplina?",
+      "options": [
+        "La obtención de leyes universales de conducta",
+        "La comprensión profunda de la organización singular",
+        "La alta validez interna del control de laboratorio"
+      ],
+      "correct": 1,
+      "hint": "Se centra en lo que hace única a la organización de la persona.",
+      "explanation": "La aproximación clínica permite comprender la conducta de una persona ayudando a establecer su organización singular de procesos."
+    },
+    {
+      "q": "¿Qué procedimiento se utiliza para estimar la sinceridad mediante el 'grado de coherencia de los ítems'?",
+      "options": [
+        "Preguntar sobre deseos socialmente inusuales",
+        "Incluir ítems idénticos repetidos en el test",
+        "Comparar los resultados con la observación O"
+      ],
+      "correct": 1,
+      "hint": "Si un sujeto responde distinto a lo mismo, se asume falta de sinceridad.",
+      "explanation": "Se trata de incluir ítems repetidos; si el sujeto ofrece respuestas distintas ante la misma cuestión, se considera poco sincero."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre las fuentes de datos de tipo T (test objetivos):",
+      "options": [
+        "Suelen presentar problemas de validez externa",
+        "Exigen siempre el uso de un laboratorio caro",
+        "El sujeto suele desconocer el objetivo real"
+      ],
+      "correct": 1,
+      "hint": "A veces pueden ser tareas sencillas sin gran equipamiento.",
+      "explanation": "Aunque a menudo son caros y exigen laboratorio, el manual dice que 'en ocasiones' es así, no es un requisito universal obligatorio."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la estrategia correlacional en personalidad:",
+      "options": [
+        "Permite el estudio simultáneo de muchas variables",
+        "Presenta una validez interna superior a la experimental",
+        "Se apoya en el análisis de covariación natural"
+      ],
+      "correct": 1,
+      "hint": "El control en el entorno natural es menor que en el laboratorio.",
+      "explanation": "La estrategia correlacional tiene mayor validez externa, pero su validez interna es menor debido a la falta de manipulación y control."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre los sesgos de respuesta en cuestionarios S:",
+      "options": [
+        "La aquiescencia infla la puntuación total real",
+        "La deseabilidad social es siempre un rasgo antisocial",
+        "La falta de sinceridad se estima con escalas de mentiras"
+      ],
+      "correct": 1,
+      "hint": "A veces se vincula con la adaptación y la cordialidad del sujeto.",
+      "explanation": "La deseabilidad social es más frecuente en comportamientos dependientes que antisociales, y a veces es parte de la cordialidad."
+    },
+    {
+      "q": "Elija la opción INCORRECTA respecto a la validez de un instrumento de medida:",
+      "options": [
+        "La validez predictiva usa conductas posteriores",
+        "La validez concurrente usa otros test probados",
+        "La validez de constructo mide el error aleatorio"
+      ],
+      "correct": 2,
+      "hint": "Medir el error es una cuestión de fiabilidad, no de validez.",
+      "explanation": "La validez de constructo mide si se evalúa el concepto teórico; el error sistemático o aleatorio es objeto de la fiabilidad."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre los problemas de las escalas de calificación (O):",
+      "options": [
+        "La ambigüedad de los ítems reduce la coincidencia",
+        "La familiaridad siempre mejora la objetividad total",
+        "Diferentes calificadores pueden usar distinto volumen"
+      ],
+      "correct": 1,
+      "hint": "Conocer mucho a alguien puede introducir sesgos afectivos.",
+      "explanation": "El texto aclara explícitamente que 'no está claro que la familiaridad sea necesariamente para mejorar la objetividad'."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la relación entre correlación y causalidad:",
+      "options": [
+        "Una correlación de +1 implica causalidad directa",
+        "La variable C puede ser la causa de A y de B",
+        "La correlación permite tener intuiciones de motivo"
+      ],
+      "correct": 0,
+      "hint": "La magnitud perfecta no elimina el problema de la tercera variable.",
+      "explanation": "La correlación nunca implica causalidad por sí sola, ni siquiera cuando es perfecta, pues no descarta influencias externas."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre los diseños experimentales de personalidad:",
+      "options": [
+        "Combinan una manipulación con una variable de selección",
+        "Son diseños de tipo mixto o cruzado frecuentemente usados",
+        "La variable de personalidad se asigna siempre al azar"
+      ],
+      "correct": 2,
+      "hint": "No se puede asignar al azar a alguien a ser 'introvertido'.",
+      "explanation": "Las variables de personalidad en estos diseños se forman por selección de niveles naturales de los sujetos, no por azar."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el análisis de regresión en investigación:",
+      "options": [
+        "Permite predecir una variable criterio desde una predictora",
+        "Es una técnica de reducción de datos como el factorial",
+        "Ayuda a controlar la superposición entre las variables"
+      ],
+      "correct": 1,
+      "hint": "Su función principal es la predicción y el control, no la reducción.",
+      "explanation": "La técnica de reducción de datos es el análisis factorial; la regresión es una técnica de predicción y control de relaciones."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la ética en la investigación de personalidad:",
+      "options": [
+        "El consentimiento informado puede ser verbal o escrito",
+        "Se debe informar de los procedimientos y riesgos posibles",
+        "La intimidad del sujeto es secundaria frente a la ciencia"
+      ],
+      "correct": 2,
+      "hint": "El bienestar del participante es la prioridad absoluta.",
+      "explanation": "La ética protege prioritariamente el bienestar y el derecho a la intimidad de los participantes sobre cualquier interés científico."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre las técnicas proyectivas como datos T:",
+      "options": [
+        "Se basan en presentar un estímulo estándar ambiguo",
+        "Son el método más fiable y válido según sus críticos",
+        "Buscan acceder a deseos y conflictos no conscientes"
+      ],
+      "correct": 1,
+      "hint": "Han recibido muchas críticas precisamente en esos dos parámetros.",
+      "explanation": "El manual menciona que las técnicas proyectivas han recibido críticas cuestionando precisamente su fiabilidad y validez."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la estrategia clínica de estudio:",
+      "options": [
+        "Consiste exclusivamente en el estudio de casos clínicos",
+        "Obtiene información detallada difícil de lograr en muestras",
+        "Sirve para comprobar el valor real de los modelos generales"
+      ],
+      "correct": 0,
+      "hint": "Abarca casos ejemplares de organización, no solo patológicos.",
+      "explanation": "El manual aclara que no consiste tanto en el estudio de 'casos clínicos' como en el 'estudio de casos' ejemplares o específicos."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el error de severidad en observación:",
+      "options": [
+        "Es la tendencia a dar evaluaciones muy desfavorables",
+        "Es un tipo de error constante cometido por calificadores",
+        "Se produce por calificar en dirección opuesta a uno mismo"
+      ],
+      "correct": 2,
+      "hint": "Esa última definición corresponde a otro sesgo de comparación.",
+      "explanation": "Calificar en dirección opuesta a uno mismo es el error de contraste; la severidad es simplemente una tendencia desfavorable constante."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre los datos obtenidos por internet (Block):",
+      "options": [
+        "Pueden considerarse datos de tipo O, T y S a la vez",
+        "Sustituyen legalmente al consentimiento informado ético",
+        "Su capacidad para revelar personalidad es aún una duda"
+      ],
+      "correct": 1,
+      "hint": "La fuente de datos no exime de las responsabilidades éticas.",
+      "explanation": "Cualquier investigación, incluída la digital, requiere consentimiento informado; no hay sustitución legal por el tipo de datos."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el análisis factorial en personalidad:",
+      "options": [
+        "Permite detectar focos de covariación entre variables",
+        "Resume conjuntos de datos en factores sin perder significado",
+        "Su única utilidad es el análisis de la validez predictiva"
+      ],
+      "correct": 2,
+      "hint": "Se usa mucho más para la validez de constructo y estructuras.",
+      "explanation": "Aunque puede usarse, su importancia fundamental reside en las propuestas estructurales y en la validez de constructo."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la magnitud de una correlación:",
+      "options": [
+        "Se expresa por un valor numérico entre -1 y +1",
+        "Indica el grado de exactitud con que se predice la otra",
+        "Una correlación de 0 permite una predicción muy exacta"
+      ],
+      "correct": 2,
+      "hint": "Cuanto más cerca de cero esté, menos predecible es la relación.",
+      "explanation": "Cuanto menor sea el valor (más próximo a cero), menos exactos seremos en nuestra predicción entre las variables analizadas."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la fiabilidad de un instrumento:",
+      "options": [
+        "Refleja la variación auténtica y sistemática del sujeto",
+        "Asegura que la medida esté libre de variaciones aleatorias",
+        "Es sinónimo exacto de la validez de constructo del test"
+      ],
+      "correct": 2,
+      "hint": "Fiabilidad y validez son conceptos complementarios pero distintos.",
+      "explanation": "La fiabilidad mide la precisión y ausencia de error; la validez mide si el test evalúa lo que realmente pretende evaluar."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la asignación al azar en experimentos:",
+      "options": [
+        "Busca equilibrar diferencias individuales entre grupos",
+        "Requiere un número suficiente de participantes totales",
+        "Se utiliza exclusivamente en los diseños correlacionales"
+      ],
+      "correct": 2,
+      "hint": "Es la técnica estrella de la estrategia opuesta a la correlacional.",
+      "explanation": "La asignación al azar es la característica definitoria de la estrategia experimental, no de la correlacional (donde se usa selección)."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la validez externa de la investigación:",
+      "options": [
+        "Se refiere a la dificultad para generalizar resultados",
+        "Es el 'talón de Aquiles' de la estrategia experimental",
+        "Es máxima en las situaciones de laboratorio artificiales"
+      ],
+      "correct": 2,
+      "hint": "La artificialidad suele ir en contra de la capacidad de generalizar.",
+      "explanation": "La validez externa es baja en experimentos de laboratorio debido a la artificialidad de las situaciones creadas por el investigador."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre los datos T (objetivos) actuales:",
+      "options": [
+        "Incluyen registros psicofisiológicos como la fMRI",
+        "Se usan para resaltar diferencias en lugar de interpretarlas",
+        "Buscan comprobar hipótesis sobre el funcionamiento interno"
+      ],
+      "correct": 1,
+      "hint": "El texto dice lo contrario sobre su finalidad respecto a diferencias.",
+      "explanation": "El texto afirma que se muestran como complementos para la interpretación más que como herramientas para resaltar diferencias individuales."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el análisis de varianza (ANOVA):",
+      "options": [
+        "Puede incluir uno, dos o más factores independientes",
+        "Permite obtener efectos moduladores de unas sobre otras",
+        "Es la única técnica válida para la estrategia clínica"
+      ],
+      "correct": 2,
+      "hint": "La clínica usa métodos cualitativos y observación profunda.",
+      "explanation": "El ANOVA es una técnica estadística cuantitativa propia de las estrategias correlacional y experimental, no de la clínica."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre los datos S (Self-Report):",
+      "options": [
+        "Son la fuente de información más obvia sobre la persona",
+        "Se obtienen exclusivamente mediante entrevistas orales",
+        "Son el tipo de dato más frecuente en la investigación"
+      ],
+      "correct": 1,
+      "hint": "Los cuestionarios e inventarios son mucho más frecuentes.",
+      "explanation": "Los datos S se obtienen por diversos medios, siendo los inventarios y cuestionarios los más utilizados en la práctica científica."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el concepto de 'equifuncionalidad':",
+      "options": [
+        "Se refiere a la equivalencia entre mundo interno y motor",
+        "Garantiza que la conducta observada siempre sea la fiable",
+        "Plantea dudas sobre si el sujeto finge en la observación"
+      ],
+      "correct": 1,
+      "hint": "El texto cuestiona que lo externo siempre refleje lo interno.",
+      "explanation": "La equifuncionalidad es un problema: no siempre la conducta observada (pública) es mejor ni más fiable que la inferida (interna)."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la concordancia entre fuentes de datos:",
+      "options": [
+        "Suele haber una concordancia exacta entre las cuatro",
+        "Es parcial, pero sin mostrar discrepancias muy amplias",
+        "Cuestionarios y observadores suelen concordar mucho"
+      ],
+      "correct": 0,
+      "hint": "Cada método tiene su propia varianza que impide la perfección.",
+      "explanation": "La concordancia suele ser parcial; no hay una coincidencia exacta debido a la varianza interna proveniente del método empleado."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre las pruebas t de Student en personalidad:",
+      "options": [
+        "Analizan diferencias de medias entre niveles de una VI",
+        "Solo pueden usarse en diseños de asignación aleatoria",
+        "Pueden potenciar efectos usando grupos de puntuación extrema"
+      ],
+      "correct": 1,
+      "hint": "En personalidad se usan mucho con grupos formados por selección.",
+      "explanation": "En este campo, las pruebas t se usan frecuentemente en estudios correlacionales donde los grupos se establecen por selección."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el modelo de ecuaciones estructurales (SEM):",
+      "options": [
+        "Permite probar hipótesis susceptibles de otros análisis",
+        "Requiere el uso de modelos estadísticos de mayor potencia",
+        "Se limita al estudio de una única variable independiente"
+      ],
+      "correct": 2,
+      "hint": "Su gran ventaja es precisamente manejar múltiples relaciones.",
+      "explanation": "El SEM destaca precisamente por permitir poner en relación múltiples variables y probar modelos estadísticos complejos y dinámicos."
+    },
+    {
+      "q": "En la clasificación de datos de personalidad propuesta por Cattell (1965), los denominados ____ provienen de la información que proporciona el propio sujeto a través de cuestionarios.",
+      "options": [
+        "Datos L (Life data)",
+        "Datos Q (Questionnaire)",
+        "Datos T (Test data)"
+      ],
+      "correct": 1,
+      "hint": "Cattell utilizó una letra que alude directamente al formato de autoinforme más común.",
+      "explanation": "Los datos Q (de 'Questionnaire') se refieren a la información proporcionada por el propio individuo, siendo los más habituales en la investigación."
+    },
+    {
+      "q": "Block (1993) realizó una modificación de la clasificación de Cattell, renombrando los datos Q como ____ y desdoblando los datos L originales en registros vitales y juicios de otros.",
+      "options": [
+        "Datos S (Self-report)",
+        "Datos O (Observation)",
+        "Datos T (Test-record)"
+      ],
+      "correct": 0,
+      "hint": "El nuevo término hace referencia al prefijo 'auto' o 'mismo'.",
+      "explanation": "Block propuso el acrónimo LOTS, donde la S sustituye a la Q de Cattell para referirse a los autoinformes."
+    },
+    {
+      "q": "Los ____ se refieren a información que puede recogerse de sucesos, actividades y resultados en la vida de una persona que están disponibles para el escrutinio público y registro.",
+      "options": [
+        "Datos L (Life-outcome)",
+        "Datos Q (Questionnaire)",
+        "Datos T (Test-objective)"
+      ],
+      "correct": 0,
+      "hint": "Son datos que reflejan el 'resultado' o trayectoria vital objetiva.",
+      "explanation": "Los datos L provienen de biografías, expedientes académicos o penales, y son accesibles públicamente."
+    },
+    {
+      "q": "Cuando la información sobre la personalidad proviene del juicio de un observador, como un familiar o un profesor, estamos ante lo que Block denomina ____ en su sistema LOTS.",
+      "options": [
+        "Datos L (Life-record)",
+        "Datos O (Observation)",
+        "Datos S (Self-report)"
+      ],
+      "correct": 1,
+      "hint": "Se basa en la visión de terceras personas sobre el evaluado.",
+      "explanation": "Los datos O provienen de observadores que pueden realizar registros directos o basarse en el conocimiento acumulado."
+    },
+    {
+      "q": "Los ____ provienen del rendimiento experimental del individuo o de indicadores biológicos en condiciones controladas donde el sujeto desconoce el objetivo de la evaluación técnica.",
+      "options": [
+        "Datos L (Life-outcome)",
+        "Datos Q (Questionnaire)",
+        "Datos T (Test-objective)"
+      ],
+      "correct": 2,
+      "hint": "Son datos objetivos que evitan que el sujeto oriente su respuesta.",
+      "explanation": "Los datos T son pruebas objetivas donde la situación de prueba garantiza la objetividad al ser el propósito opaco para el sujeto."
+    },
+    {
+      "q": "En el ámbito de la evaluación, la ____ se refiere a la concordancia o el consenso entre diferentes observadores al registrar el comportamiento de una misma persona evaluada.",
+      "options": [
+        "Validez de constructo",
+        "Consistencia interna",
+        "Fiabilidad interjueces"
+      ],
+      "correct": 2,
+      "hint": "Es un criterio de bondad que implica a más de un evaluador.",
+      "explanation": "La fiabilidad interjueces es fundamental en los datos de observación para asegurar que la medida no dependa del sesgo de un solo evaluador."
+    },
+    {
+      "q": "Un problema común en las escalas de calificación es el ____, que ocurre cuando se califica favorablemente a una persona en varias variables tras una evaluación positiva inicial.",
+      "options": [
+        "Error lógico-formal",
+        "Efecto de halo (Halo)",
+        "Error de generosidad"
+      ],
+      "correct": 1,
+      "hint": "Es una 'impresión general' que tiñe todas las respuestas.",
+      "explanation": "El efecto halo es un sesgo donde una característica positiva o negativa influye en la calificación del resto de rasgos."
+    },
+    {
+      "q": "El ____ consiste en la tendencia del calificador a dar puntuaciones similares a rasgos que parecen estar relacionados racionalmente, aunque sean dimensiones independientes entre sí.",
+      "options": [
+        "Error de contraste",
+        "Error lógico-causal",
+        "Efecto de halo"
+      ],
+      "correct": 1,
+      "hint": "Se basa en la creencia de que si alguien posee el rasgo A, debe poseer el B.",
+      "explanation": "El error lógico es la tendencia a calificar igual rasgos que el evaluador considera vinculados (ej. robar y mentir)."
+    },
+    {
+      "q": "Los denominados ____ se refieren a la tendencia del evaluador a dar puntuaciones más favorables (generosidad), desfavorables (severidad) o evitar juicios extremos (tendencia central).",
+      "options": [
+        "Errores constantes",
+        "Errores de medida",
+        "Errores de lógica"
+      ],
+      "correct": 0,
+      "hint": "Son sesgos persistentes en la forma de usar la escala de respuesta.",
+      "explanation": "Los errores constantes incluyen la generosidad, severidad y tendencia central como estilos de respuesta estables del calificador."
+    },
+    {
+      "q": "El ____ es la tendencia del observador a calificar a los demás en la dirección opuesta a la posición que él mismo percibe tener en ese rasgo específico de personalidad.",
+      "options": [
+        "Error de contraste",
+        "Error de severidad",
+        "Error de halo"
+      ],
+      "correct": 0,
+      "hint": "El calificador se usa a sí mismo como punto de comparación inverso.",
+      "explanation": "En el error de contraste, la propia percepción del calificador dicta una valoración opuesta para el evaluado."
+    },
+    {
+      "q": "Las ____ son consideradas también datos T puesto que presentan un estímulo estándar ambiguo para provocar una respuesta que proyecte la structure interna del sujeto.",
+      "options": [
+        "Escalas de estimación",
+        "Pruebas psicométricas",
+        "Técnicas proyectivas"
+      ],
+      "correct": 2,
+      "hint": "El test de Rorschach es el ejemplo más representativo de este grupo.",
+      "explanation": "Las técnicas proyectivas se clasifican como datos T por la objetividad de la situación y la opacidad del objetivo para el sujeto."
+    },
+    {
+      "q": "En los cuestionarios de personalidad, la ____ es el sesgo consistente en responder afirmativamente a los ítems independientemente de su contenido semántico particular.",
+      "options": [
+        "Deseabilidad social",
+        "Aquiescencia (Sí)",
+        "Tendencia central"
+      ],
+      "correct": 1,
+      "hint": "Es la tendencia a decir 'sí' de manera sistemática.",
+      "explanation": "La aquiescencia es la predisposición a aceptar los enunciados del test sin considerar su significado real."
+    },
+    {
+      "q": "La ____ se refiere a la tendencia de los sujetos a responder a los ítems de forma que den una buena impresión o aparezcan como personas bien adaptadas socialmente.",
+      "options": [
+        "Falta de sinceridad",
+        "Deseabilidad social",
+        "Aquiescencia (Sí)"
+      ],
+      "correct": 1,
+      "hint": "Busca la aprobación externa mediante la imagen proyectada.",
+      "explanation": "La deseabilidad social distorsiona el autoinforme para ajustarse a lo que el sujeto cree que es la norma social positiva."
+    },
+    {
+      "q": "Para controlar la ____, los cuestionarios suelen incluir escalas de sinceridad o ítems repetidos que permiten evaluar el grado de coherencia en las respuestas del sujeto.",
+      "options": [
+        "Aquiescencia (Sí)",
+        "Deseabilidad social",
+        "Falta de sinceridad"
+      ],
+      "correct": 2,
+      "hint": "Evalúa si el sujeto está siendo honesto o miente en sus respuestas.",
+      "explanation": "La falta de sinceridad se estima mediante escalas de mentiras o verificando la consistencia ante ítems idénticos."
+    },
+    {
+      "q": "La ____ de un instrumento de medida de la personalidad indica el grado en que las puntuaciones reflejan una variación auténtica y sistemática en lugar de error aleatorio.",
+      "options": [
+        "Validez predictiva",
+        "Fiabilidad (Reliab.)",
+        "Validez de criterio"
+      ],
+      "correct": 1,
+      "hint": "Se relaciona con la precisión y la ausencia de error en la medición.",
+      "explanation": "La fiabilidad asegura que el instrumento mide 'bien' y de forma estable lo que sea que esté midiendo."
+    },
+    {
+      "q": "El coeficiente ____ es uno de los índices más populares para calcular la consistencia interna de un test, entendida como el grado en que los ítems miden lo mismo.",
+      "options": [
+        "Alfa de Cronbach",
+        "Correlación de Pearson",
+        "Factor de determinación"
+      ],
+      "correct": 0,
+      "hint": "Utiliza la letra griega α para su representación estadística.",
+      "explanation": "El alfa de Cronbach es el estándar para evaluar la homogeneidad de los ítems dentro de una misma escala."
+    },
+    {
+      "q": "La ____ expresa el grado en que las puntuaciones derivadas de un test se asocian con medidas o conductas que se evaluarán o manifestarán en un momento posterior.",
+      "options": [
+        "Validez concurrente",
+        "Validez predictiva",
+        "Validez de constructo"
+      ],
+      "correct": 1,
+      "hint": "Su nombre indica la capacidad de anticipar eventos futuros.",
+      "explanation": "La validez predictiva es la capacidad del test para pronosticar criterios externos relevantes en el futuro."
+    },
+    {
+      "q": "La ____ garantiza que un determinado instrumento evalúa un concepto psicológico tal como es definido teóricamente, integrando otros tipos de validez en su análisis.",
+      "options": [
+        "Validez de constructo",
+        "Validez convergente",
+        "Validez de contenido"
+      ],
+      "correct": 0,
+      "hint": "Es el tipo de validez más global y vinculado a la teoría.",
+      "explanation": "La validez de constructo asegura la correspondencia entre la medida empírica y el concepto teórico subyacente."
+    },
+    {
+      "q": "La ____ consiste en el estudio global, sistemático y directo de la personalidad a través del análisis en profundidad de casos concretos, ejemplares y específicos.",
+      "options": [
+        "Estrategia clínica",
+        "Estrategia descriptiva",
+        "Estrategia experimental"
+      ],
+      "correct": 0,
+      "hint": "Históricamente asociada a Freud, se centra en el 'estudio de casos'.",
+      "explanation": "La estrategia clínica busca comprender la organización singular de la personalidad mediante el análisis exhaustivo de individuos."
+    },
+    {
+      "q": "Una limitación fundamental de la estrategia clínica es la dificultad para ____ los resultados y la falta de generalización a la población general debido a su especificidad.",
+      "options": [
+        "Categorizar datos",
+        "Replicar hallazgos",
+        "Analizar varianza"
+      ],
+      "correct": 1,
+      "hint": "Es difícil que la conducta situacional observada se repita exactamente.",
+      "explanation": "La subjetividad y la naturaleza única de los casos clínicos dificultan la replicabilidad, requisito del conocimiento científico."
+    },
+    {
+      "q": "La ____ analiza la relación entre variables sin introducir manipulación, determinando si dos dimensiones covarían en una dirección y magnitud predecibles.",
+      "options": [
+        "Estrategia clínica",
+        "Estrategia experimental",
+        "Estrategia correlacional"
+      ],
+      "correct": 2,
+      "hint": "Se basa en el uso de coeficientes de asociación estadística.",
+      "explanation": "La estrategia correlacional observa la asociación natural entre variables sin intervención directa del investigador."
+    },
+    {
+      "q": "En estadística, una ____ significa que el valor más alto en una variable se asocia con el valor más bajo en la otra de forma predecible y constante.",
+      "options": [
+        "Correlación positiva",
+        "Correlación negativa",
+        "Correlación parcial"
+      ],
+      "correct": 1,
+      "hint": "Las variables se mueven en sentidos opuestos.",
+      "explanation": "Una correlación negativa implica una relación inversa entre las puntuaciones de las dos variables analizadas."
+    },
+    {
+      "q": "Es fundamental recordar que la correlación no implica ____, ya que la relación observada puede deberse a una tercera variable (C) no contemplada en el análisis.",
+      "options": [
+        "Covariación real",
+        "Significación alta",
+        "Relación causal"
+      ],
+      "correct": 2,
+      "hint": "La asociación entre A y B no explica el 'porqué' del vínculo.",
+      "explanation": "La correlación solo indica que las variables van juntas, pero no permite establecer cuál causa a cuál."
+    },
+    {
+      "q": "A diferencia de otros métodos, la ____ permite determinar la relación causa-efecto mediante la manipulación de una variable independiente y el control de los sujetos.",
+      "options": [
+        "Estrategia clínica",
+        "Estrategia experimental",
+        "Estrategia correlacional"
+      ],
+      "correct": 1,
+      "hint": "El investigador introduce activamente el factor de interés.",
+      "explanation": "La experimentación es la única estrategia que garantiza el establecimiento de nexos causales directos."
+    },
+    {
+      "q": "La asignación al azar de los participantes en un experimento busca garantizar la ____ de los grupos antes de la manipulación de la variable independiente.",
+      "options": [
+        "Variabilidad alta",
+        "Equivalencia inicial",
+        "Representatividad"
+      ],
+      "correct": 1,
+      "hint": "Asegura que los grupos solo difieran en el tratamiento recibido.",
+      "explanation": "La aleatorización neutraliza las diferencias individuales previas, permitiendo atribuir los efectos a la VI."
+    },
+    {
+      "q": "El ____ (Rosenthal, 1966) es un sesgo que puede comprometer la validez interna de un experimento debido a la influencia involuntaria del investigador sobre los sujetos.",
+      "options": [
+        "Efecto del observador",
+        "Efecto experimentador",
+        "Efecto de regresión"
+      ],
+      "correct": 1,
+      "hint": "Se refiere a las expectativas de quien dirige el estudio.",
+      "explanation": "El efecto Rosenthal ocurre cuando los deseos o expectativas del experimentador alteran los resultados del estudio."
+    },
+    {
+      "q": "La mayor crítica a la estrategia experimental en psicología es su baja ____, dada la dificultad para generalizar resultados obtenidos en situaciones de laboratorio artificiales.",
+      "options": [
+        "Validez interna",
+        "Validez externa",
+        "Validez de criterio"
+      ],
+      "correct": 1,
+      "hint": "Afecta a la aplicabilidad de los hallazgos al mundo real.",
+      "explanation": "La artificialidad de los experimentos limita la validez externa o ecológica de sus conclusiones."
+    },
+    {
+      "q": "La ____ es una técnica de análisis multivariado que permite estudiar la relación entre una o más variables independientes (predictoras) y una variable dependiente (criterio).",
+      "options": [
+        "Regresión lineal",
+        "Análisis factorial",
+        "Análisis de varianza"
+      ],
+      "correct": 0,
+      "hint": "Proporciona un coeficiente de determinación para la predicción.",
+      "explanation": "La regresión se utiliza para predecir el valor de una variable criterio a partir de otras variables conocidas."
+    },
+    {
+      "q": "El ____ es una técnica de reducción de datos que permite resumir conjuntos amplios de variables en un número menor de factores basándose en su covariación.",
+      "options": [
+        "Análisis de regresión",
+        "Análisis factorial",
+        "Análisis de mediación"
+      ],
+      "correct": 1,
+      "hint": "Ha sido clave para desarrollar estructuras de personalidad e inteligencia.",
+      "explanation": "El análisis factorial detecta focos de varianza común para agrupar variables en dimensiones latentes llamadas factores."
+    },
+    {
+      "q": "Dentro del análisis factorial, el ____ se utiliza cuando el investigador tiene una hipótesis previa sobre la estructura de los datos que desea poner a prueba.",
+      "options": [
+        "Factorial exploratorio",
+        "Factorial confirmatorio",
+        "Factorial descriptivo"
+      ],
+      "correct": 1,
+      "hint": "Su nombre indica que busca verificar un modelo preestablecido.",
+      "explanation": "El AFC (análisis factorial confirmatorio) se emplea para contrastar si los datos se ajustan a un modelo teórico dado."
+    },
+    {
+      "q": "Las ____ permiten analizar si existen diferencias significativas en la variable dependiente entre los distintos niveles de una variable independiente de dos grupos.",
+      "options": [
+        "Correlaciones r",
+        "Pruebas t de Student",
+        "Regresiones múltiples"
+      ],
+      "correct": 1,
+      "hint": "Es el estadístico básico para comparar dos medias.",
+      "explanation": "Las pruebas t evalúan si la diferencia de promedios entre dos grupos es estadísticamente significativa."
+    },
+    {
+      "q": "El ____ permite obtener efectos principales de las variables independientes consideradas, así como efectos de interacción resultantes de su combinación dinámica.",
+      "options": [
+        "Análisis factorial",
+        "Análisis de varianza",
+        "Análisis de regresión"
+      ],
+      "correct": 1,
+      "hint": "Se conoce también por sus siglas en inglés: ANOVA.",
+      "explanation": "El ANOVA es fundamental para estudiar cómo múltiples factores influyen conjunta o separadamente en una VD."
+    },
+    {
+      "q": "Un ____ es aquel que incluye al menos una variable independiente de personalidad (formada por selección) y otra manipulada experimentalmente.",
+      "options": [
+        "Diseño multivariado",
+        "Diseño de personalidad",
+        "Diseño de mediación"
+      ],
+      "correct": 1,
+      "hint": "Es un tipo de diseño mixto o cruzado muy común en la disciplina.",
+      "explanation": "Este diseño combina la selección de rasgos con la manipulación experimental para estudiar interacciones."
+    },
+    {
+      "q": "Los ____ buscan identificar los mecanismos o procesos a través de los cuales una variable independiente influye o ejerce su efecto sobre una variable dependiente.",
+      "options": [
+        "Análisis de mediación",
+        "Análisis de regresión",
+        "Análisis de contraste"
+      ],
+      "correct": 0,
+      "hint": "La variable intermedia se denomina 'variable mediadora'.",
+      "explanation": "La mediación explica 'cómo' se produce la relación entre dos variables a través de una tercera vía."
+    },
+    {
+      "q": "El ____ (SEM) permite poner en relación múltiples variables y probar hipótesis complejas utilizando modelos estadísticos de mayor potencia y globalidad.",
+      "options": [
+        "Modelo factorial",
+        "Modelo estructural",
+        "Modelo de regresión"
+      ],
+      "correct": 1,
+      "hint": "Se utiliza cuando se plantean varias variables mediadoras a la vez.",
+      "explanation": "El Structural Equation Modeling (SEM) es una técnica avanzada para testar modelos teóricos multivariables."
+    },
+    {
+      "q": "En la investigación de la personalidad, es obligatorio obtener el ____ de los participantes para proteger su bienestar y su derecho a la intimidad y privacidad.",
+      "options": [
+        "Registro de datos",
+        "Consentimiento verbal",
+        "Consentimiento informado"
+      ],
+      "correct": 2,
+      "hint": "Es un requisito ético fundamental en cualquier estudio humano.",
+      "explanation": "El consentimiento informado garantiza que el sujeto conoce los riesgos y procedimientos antes de participar."
+    },
+    {
+      "q": "Los denominados ____ en personalidad suelen tener grados altos de concordancia según los estudios de McCrae y Costa (1987), validando ambas fuentes.",
+      "options": [
+        "Datos L y Datos T",
+        "Datos Q y Datos O",
+        "Datos T y Datos S"
+      ],
+      "correct": 1,
+      "hint": "Se refiere a lo que uno dice de sí mismo y lo que otros observan.",
+      "explanation": "Existe una alta convergencia entre los autoinformes y las calificaciones de observadores externos."
+    },
+    {
+      "q": "La concordancia entre las fuentes de datos tiende a disminuir drásticamente cuando se comparan los datos de autoinforme (S) con los ____, como los psicofisiológicos.",
+      "options": [
+        "Datos L (Life)",
+        "Datos O (Observation)",
+        "Datos T (Objective)"
+      ],
+      "correct": 2,
+      "hint": "La percepción subjetiva no siempre coincide con la realidad biológica.",
+      "explanation": "Los niveles de ansiedad autoinformados y las medidas fisiológicas reales suelen mostrar discrepancias notables."
+    },
+    {
+      "q": "La recurrencia a la ____ se asienta en el supuesto de que la acción externa representa el último criterio válido para contrastar cualquier teoría científica.",
+      "options": [
+        "Entrevista clínica",
+        "Observación directa",
+        "Técnica proyectiva"
+      ],
+      "correct": 1,
+      "hint": "Se basa en el registro de la conducta manifiesta y pública.",
+      "explanation": "La observación directa se considera a menudo el criterio de verdad frente a la introspección subjetiva."
+    },
+    {
+      "q": "Un problema de los datos O es la ____ entre el mundo interno consciente y el externo-motor, ya que la persona puede fingir deliberadamente su conducta externa.",
+      "options": [
+        "Equifuncionalidad",
+        "Equipotencialidad",
+        "Equidimensionalidad"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a si la conducta externa refleja fielmente el estado interno.",
+      "explanation": "La equifuncionalidad cuestiona si una acción motora es siempre representativa del proceso consciente subyacente."
+    },
+    {
+      "q": "¿Qué características definen correctamente a los datos T (pruebas objetivas) según el manual de Personalidad y Diferencias Individuales?",
+      "options": [
+        "Son procedimientos de bajo coste económico",
+        "El sujeto no conoce el objetivo del evaluador",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 1,
+      "hint": "Revise el apartado 3.1.2 sobre la opacidad de la prueba.",
+      "explanation": "Los datos T son caros y complejos, pero su esencia es que el sujeto no puede orientar su respuesta al desconocer el fin."
+    },
+    {
+      "q": "En relación con los sesgos de respuesta en cuestionarios de personalidad, ¿cuáles de las siguientes opciones representan distorsiones reales?",
+      "options": [
+        "La aquiescencia o tendencia al asentimiento",
+        "La deseabilidad social para dar buena imagen",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Piense en las formas en que un sujeto puede invalidar un test.",
+      "explanation": "Tanto la aquiescencia como la deseabilidad social son sesgos documentados que afectan a la validez de los autoinformes."
+    },
+    {
+      "q": "¿Qué formas de analizar la fiabilidad de un instrumento de medida se mencionan explícitamente en el texto del Capítulo 3?",
+      "options": [
+        "La estabilidad temporal mediante test-retest",
+        "La consistencia interna mediante el alfa",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "La fiabilidad puede medirse por estabilidad o por homogeneidad.",
+      "explanation": "El texto cita el test-retest, la consistencia interna y la fiabilidad interjueces como métodos válidos."
+    },
+    {
+      "q": "Sobre la estrategia correlacional de investigación, ¿cuáles de las siguientes afirmaciones son verdaderas según los contenidos del tema?",
+      "options": [
+        "Trata de comprender diferencias individuales",
+        "Muestra una validez externa generalmente alta",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Consulte las ventajas de la aproximación multivariada natural.",
+      "explanation": "La estrategia correlacional se enfoca en diferencias individuales en entornos naturales, lo que eleva su validez externa."
+    },
+    {
+      "q": "En el contexto de la estrategia experimental, ¿qué requisitos son indispensables para poder establecer conclusiones rigurosas de causalidad?",
+      "options": [
+        "La manipulación de la variable independiente",
+        "La asignación al azar de los participantes",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son las dos características definitorias del experimento.",
+      "explanation": "Sin manipulación de la VI y aleatorización de grupos, no se puede garantizar la relación causa-efecto."
+    },
+    {
+      "q": "¿Qué problemas pueden afectar a la validez interna de una investigación experimental en el campo de la psicología de la personalidad?",
+      "options": [
+        "El efecto Rosenthal o del experimentador",
+        "Las propias características de la demanda",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son sesgos que ocurren durante la interacción en el laboratorio.",
+      "explanation": "Tanto las expectativas del investigador como las pistas del entorno (demanda) pueden alterar el comportamiento del sujeto."
+    },
+    {
+      "q": "En cuanto a los aspectos metodológicos del análisis multivariado, ¿qué técnicas se describen como fundamentales para la disciplina?",
+      "options": [
+        "El análisis de regresión de tipo lineal",
+        "El análisis factorial de reducción de datos",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son las herramientas estadísticas más citadas en el tema.",
+      "explanation": "La regresión y el análisis factorial son los pilares del procesamiento de datos en personalidad."
+    },
+    {
+      "q": "Sobre el análisis factorial, ¿qué tipos de procedimientos se distinguen actualmente en la investigación científica de las diferencias individuales?",
+      "options": [
+        "Análisis factorial de tipo exploratorio",
+        "Análisis factorial de tipo confirmatorio",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se diferencian según si hay o no hipótesis previas.",
+      "explanation": "El AFE busca estructuras sin hipótesis, mientras que el AFC pone a prueba modelos teóricos predefinidos."
+    },
+    {
+      "q": "¿Qué tipos de datos L (Life-outcome) modernos se mencionan en el texto como posibles fuentes de información sobre la personalidad?",
+      "options": [
+        "La dirección de correo electrónico personal",
+        "Los patrones de navegación por internet",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son huellas digitales que dejamos en nuestra vida cotidiana.",
+      "explanation": "El texto cita tanto el e-mail como el historial de navegación como ejemplos actuales de datos de registro vital."
+    },
+    {
+      "q": "En el uso de recursos digitales para la evaluación, ¿qué tipos de datos se pueden obtener a través de la monitorización con smartphones?",
+      "options": [
+        "Datos O si el evaluador observa selfis",
+        "Datos S si el sujeto realiza autorregistros",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "La tecnología permite aplicar las categorías de Block de forma nueva.",
+      "explanation": "La monitorización digital puede servir para observación (O), autoinforme (S) o incluso experimentos (T)."
+    },
+    {
+      "q": "Respecto a la estrategia clínica, ¿qué fuentes de información suelen utilizar los investigadores para realizar el estudio de casos?",
+      "options": [
+        "La observación de conductas en el medio",
+        "El estudio de biografías y documentos",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es una aproximación global y cualitativa al individuo.",
+      "explanation": "La clínica utiliza entrevistas, diarios, biografías y observación natural para obtener una imagen completa."
+    },
+    {
+      "q": "¿Cuáles son los sesgos más frecuentes asociados a las escalas de calificación o estimación por parte de observadores externos?",
+      "options": [
+        "Los errores de contraste con uno mismo",
+        "Los errores constantes como generosidad",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Revise la Figura 11 sobre limitaciones de las escalas.",
+      "explanation": "Las escalas de observación sufren de contraste, generosidad, severidad, tendencia central y efecto halo."
+    },
+    {
+      "q": "En relación con los datos T, ¿qué tipos de pruebas se incluyen habitualmente bajo esta denominación en el ámbito de la personalidad?",
+      "options": [
+        "Los registros psicofisiológicos diversos",
+        "Las pruebas de ejecución y motoras",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Buscan la máxima objetividad mediante aparatos o tareas.",
+      "explanation": "Los datos T engloban desde medidas biológicas hasta tareas de laboratorio donde el sujeto no sabe qué se mide."
+    },
+    {
+      "q": "¿Qué estrategias se utilizan habitualmente para estimar el grado de sinceridad en un autoinforme de personalidad?",
+      "options": [
+        "El análisis del grado de coherencia",
+        "El uso de escalas de sinceridad/mentira",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Buscan detectar si el sujeto miente o es inconsistente.",
+      "explanation": "Tanto la repetición de ítems (coherencia) como las escalas de mentira son métodos estándar para validar el informe."
+    },
+    {
+      "q": "Sobre la validez de un instrumento, ¿qué enfoques específicos adquieren especial relieve en la investigación de la personalidad?",
+      "options": [
+        "La validez concurrente o convergente",
+        "La validez predictiva o de criterio",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se mencionan tres enfoques principales en el texto.",
+      "explanation": "El texto detalla la concurrente, la predictiva y la de constructo como las más relevantes."
+    },
+    {
+      "q": "En la estrategia correlacional, ¿qué técnicas estadísticas se mencionan como apoyos fundamentales para el análisis de datos?",
+      "options": [
+        "El uso de regresiones y correlaciones",
+        "El uso de modelos de ecuaciones (SEM)",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Incluye métodos desde simples asociaciones hasta modelos complejos.",
+      "explanation": "La estrategia correlacional se apoya en correlaciones, regresiones, análisis factorial y SEM."
+    },
+    {
+      "q": "¿Qué ventajas presenta el análisis de regresión frente a la correlación simple en la investigación de diferencias individuales?",
+      "options": [
+        "Permite controlar la colinealidad total",
+        "Establece relaciones entre varias VI",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es una técnica más potente para la predicción multivariada.",
+      "explanation": "La regresión permite manejar múltiples predictores simultáneamente y controlar su solapamiento (colinealidad)."
+    },
+    {
+      "q": "En el contexto de la ética en investigación, ¿qué aspectos deben comunicarse a los participantes antes de obtener su consentimiento?",
+      "options": [
+        "Los procedimientos que se van a seguir",
+        "Los posibles riesgos de la participación",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "El participante debe tomar una decisión libre y fundamentada.",
+      "explanation": "El consentimiento informado requiere explicar qué se hará y qué peligros conlleva para que sea éticamente válido."
+    },
+    {
+      "q": "Según el manual, los datos O procedentes del juicio de observadores presentan limitaciones importantes relacionadas con ____ del sujeto evaluado.",
+      "options": [
+        "La deseabilidad social intrínseca",
+        "La aquiescencia ante los estímulos",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "Los distractores son sesgos propios de los autoinformes (Datos S).",
+      "explanation": "La deseabilidad social y la aquiescencia son sesgos típicos de los autoinformes (S), no de la observación (O)."
+    },
+    {
+      "q": "En la clasificación LOTS de Block, los datos procedentes de los registros de navegación por internet se categorizan erróneamente como ____.",
+      "options": [
+        "Datos S (Self-report personal)",
+        "Datos T (Test de laboratorio)",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "Piense en qué categoría entran los registros públicos de vida.",
+      "explanation": "Los registros de internet son datos L (Life-outcome), no S ni T."
+    },
+    {
+      "q": "El sesgo denominado 'error lógico' en las escalas de calificación consiste en la tendencia a evaluar de forma ____ a todos los sujetos del grupo.",
+      "options": [
+        "Favorable (error de generosidad)",
+        "Intermedia (evitando los extremos)",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "El error lógico relaciona rasgos, no nivela a los sujetos evaluados.",
+      "explanation": "El error lógico relaciona rasgos lógicamente vinculados, mientras que las otras opciones describen errores constantes."
+    },
+    {
+      "q": "La principal ventaja de la estrategia experimental frente a la correlacional es que la primera permite establecer ____ entre las variables de estudio.",
+      "options": [
+        "Asociaciones de alta magnitud r",
+        "Covariaciones naturales directas",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "La palabra clave que define al experimento empieza por C.",
+      "explanation": "La ventaja real es la causalidad, no la magnitud de la asociación ni la covariación natural."
+    },
+    {
+      "q": "El coeficiente alfa de Cronbach se utiliza primordialmente para determinar la ____ de un test de personalidad mediante un diseño de test-retest.",
+      "options": [
+        "Validez predictiva de criterio",
+        "Estabilidad temporal del rasgo",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "El alfa mide consistencia interna, no estabilidad en el tiempo.",
+      "explanation": "El alfa de Cronbach mide consistencia interna; la estabilidad temporal se mide con el test-retest."
+    },
+    {
+      "q": "En la investigación de la personalidad, las pruebas t se utilizan exclusivamente en ____ para comparar las medias de los grupos asignados al azar.",
+      "options": [
+        "La estrategia clínica de casos",
+        "La estrategia de selección natural",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "El texto indica que también se usan en estudios correlacionales.",
+      "explanation": "Aunque típicas de experimentos, las pruebas t se usan frecuentemente en diseños correlacionales de selección."
+    },
+    {
+      "q": "La estrategia de investigación que se caracteriza por el estudio de leyes generales de conducta a través de la manipulación es la ____.",
+      "options": [
+        "Estrategia clínica individual",
+        "Estrategia de tipo correlacional",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se refiere a la estrategia experimental.",
+      "explanation": "La búsqueda de leyes generales mediante manipulación es propia de la estrategia experimental."
+    },
+    {
+      "q": "El término 'equifuncionalidad' en el contexto de la observación directa se refiere a la ____ entre el mundo interno y el comportamiento externo-motor.",
+      "options": [
+        "Total y absoluta coincidencia",
+        "Relación de tipo causa-efecto",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se refiere a la posibilidad de que la conducta no refleje lo interno.",
+      "explanation": "La equifuncionalidad sugiere que un comportamiento externo puede no corresponderse con el estado consciente."
+    },
+    {
+      "q": "La validez concurrente se define como el grado en que las puntuaciones de un test se asocian con conductas que se manifestarán en el ____.",
+      "options": [
+        "Pasado vital del propio sujeto",
+        "Futuro mediato de la población",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "La validez concurrente compara con otros test actuales, no futuros.",
+      "explanation": "La asociación con conductas futuras es validez predictiva, no concurrente."
+    },
+    {
+      "q": "En los autoinformes, la tendencia a elegir sistemáticamente el intervalo central de la escala de respuesta se denomina ____.",
+      "options": [
+        "Aquiescencia al asentimiento",
+        "Deseabilidad social adaptativa",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se refiere a un error de tendencia central o respuesta estereotipada.",
+      "explanation": "Esta tendencia se denomina respuesta estereotipada o error de tendencia central, no aquiescencia."
+    },
+    {
+      "q": "Un diseño experimental de personalidad se caracteriza por incluir únicamente variables independientes de tipo ____ manipuladas en el laboratorio.",
+      "options": [
+        "Situacional y circunstancial",
+        "Biológico y psicofisiológico",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "Debe incluir al menos una variable de personalidad (rasgo).",
+      "explanation": "El diseño experimental de personalidad es mixto: incluye variables manipuladas y variables de rasgo (selección)."
+    },
+    {
+      "q": "El análisis factorial confirmatorio (AFC) se diferencia del exploratorio (AFE) en que el primero no requiere de ninguna ____ sobre la estructura.",
+      "options": [
+        "Base de datos multivariada",
+        "Teoría psicológica de apoyo",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es precisamente el AFC el que sí requiere hipótesis previas.",
+      "explanation": "El AFC sí requiere hipótesis o teorías previas; es el AFE el que no las necesitanecesariamente."
+    },
+    {
+      "q": "La fiabilidad interjueces es una medida de bondad psicométrica que se aplica fundamentalmente a los datos de tipo ____.",
+      "options": [
+        "Datos S (Self-report o auto)",
+        "Datos L (Life-outcome o vida)",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se aplica a los datos O (Observación).",
+      "explanation": "La fiabilidad interjueces es crucial para los datos O (observadores), no para los S o L."
+    },
+    {
+      "q": "En el análisis de mediación, la variable independiente (VI) siempre debe ser una variable de ____ según los requisitos metodológicos.",
+      "options": [
+        "Tipo situacional manipulada",
+        "Tipo biológico o hereditario",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "Las variables de personalidad pueden ser VI, mediadoras o VD.",
+      "explanation": "En mediación, las variables de personalidad pueden ocupar cualquier rol funcional (VI, mediadora o VD)."
+    },
+    {
+      "q": "El efecto de halo es un sesgo de respuesta que afecta a los cuestionarios de personalidad cuando el sujeto intenta dar una ____ de sí mismo.",
+      "options": [
+        "Mala imagen (falsificación)",
+        "Imagen socialmente deseable",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "El efecto halo es propio de observadores externos (Datos O).",
+      "explanation": "El efecto halo es un sesgo de los calificadores (O), no del propio sujeto en cuestionarios (S)."
+    },
+    {
+      "q": "La estrategia clínica de investigación se fundamenta en el uso de muestras ____ para poder establecer leyes generales aplicables a la población.",
+      "options": [
+        "Altamente representativas",
+        "De tamaño grande y variado",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "La clínica usa casos individuales o muestras muy pequeñas.",
+      "explanation": "La estrategia clínica usa casos únicos o grupos reducidos, no muestras grandes representativas."
+    },
+    {
+      "q": "Los datos L (Life-outcome) son considerados los más subjetivos de la clasificación LOTS debido a que dependen del ____ del propio individuo.",
+      "options": [
+        "Juicio y valoración mental",
+        "Autorregistro de actividades",
+        "Ninguna de las opciones es correcta"
+      ],
+      "correct": 2,
+      "hint": "Los datos L son precisamente los más objetivos al ser registros públicos.",
+      "explanation": "Los datos L son objetivos y públicos (registros), no dependen del juicio subjetivo del sujeto."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "¿En qué se diferencia la clasificación original de datos de personalidad de Cattell (1965) de la propuesta posterior de Block (1993)?",
+      "model": "Cattell propuso inicialmente tres fuentes: datos L (registros de vida), datos Q (cuestionarios/autoinformes) y datos T (pruebas objetivas). Block (1993) renombró los datos Q como datos S (Self-report) y desdobló los datos L originales en dos: datos L (resultados de vida objetivos como expedientes) y datos O (datos de observación provenientes de terceros), conformando así el acrónimo LOTS.",
+      "keywords": [
+        "Cattell",
+        "Block",
+        "LOTS",
+        "Datos L",
+        "Datos O",
+        "Datos T",
+        "Datos S"
+      ],
+      "page": 32
+    },
+    {
+      "q": "Analice la concordancia entre las fuentes de datos LOTS y explique por qué no suele haber una coincidencia exacta entre autoinformes y medidas objetivas.",
+      "model": "La concordancia es parcial; no hay coincidencia exacta pero tampoco discrepancia total. Las fuentes de cuestionarios (S) y observadores (O) suelen tener alta concordancia. Sin embargo, disminuye al comparar autoinforme (S) y datos objetivos (T) debido a que la percepción subjetiva de los individuos (p.ej. niveles de ansiedad reportados) a menudo no coincide con los indicadores fisiológicos o conductuales reales debido a la varianza de método.",
+      "keywords": [
+        "Concordancia",
+        "Varianza de método",
+        "Autoinforme",
+        "Datos T",
+        "Subjetividad"
+      ],
+      "page": 32
+    },
+    {
+      "q": "Explique el concepto de datos L (Life-Outcome) y proporcione ejemplos contemporáneos de esta fuente de información.",
+      "model": "Los datos L se refieren a sucesos, actividades y resultados en la vida de una persona disponibles para el escrutinio público. Son objetivos pero de alcance limitado. Ejemplos tradicionales incluyen expedientes académicos o penales. Ejemplos modernos incluyen patrones de navegación por internet, dirección de e-mail o registros de uso de redes sociales.",
+      "keywords": [
+        "Datos L",
+        "Life-Outcome",
+        "Escrutinio público",
+        "Expedientes",
+        "Huella digital"
+      ],
+      "page": 32
+    },
+    {
+      "q": "Describa los problemas asociados a la observación directa como método de obtención de información de personalidad.",
+      "model": "Presenta inconvenientes como: 1) Elevado coste de recursos técnicos y personales. 2) Problemas de representatividad muestral (la conducta observada puede no ser habitual). 3) Falta de equivalencia entre el mundo interno y externo (el sujeto puede fingir deliberadamente). 4) Necesidad de alta fiabilidad interjueces para validar la medida.",
+      "keywords": [
+        "Datos O",
+        "Observación directa",
+        "Representatividad",
+        "Fiabilidad interjueces",
+        "Fingimiento"
+      ],
+      "page": 33
+    },
+    {
+      "q": "Diferencie entre el 'Efecto de halo' y el 'Error lógico' en las escalas de calificación por observadores.",
+      "model": "Ambos son sesgos de la 'impresión general'. El efecto de halo ocurre cuando una calificación favorable o desfavorable en una variable influye en la calificación de las demás. El error lógico es la tendencia a calificar de forma similar rasgos que el evaluador cree que están relacionados lógicamente (p.ej. asumir que alguien que miente también debe robar), aunque sean independientes.",
+      "keywords": [
+        "Efecto de halo",
+        "Error lógico",
+        "Sesgos de respuesta",
+        "Escalas de calificación"
+      ],
+      "page": 33
+    },
+    {
+      "q": "Explique en qué consisten los 'Errores constantes' (generosidad, severidad y tendencia central) en la evaluación por terceros.",
+      "model": "Son sesgos sistemáticos del calificador: 1) Error de generosidad: tendencia a dar evaluaciones más favorables de lo merecido. 2) Error de severidad: tendencia a evaluaciones más desfavorables. 3) Error de tendencia central: tendencia a evitar juicios extremos y utilizar sistemáticamente las categorías intermedias de la escala.",
+      "keywords": [
+        "Error de generosidad",
+        "Error de severidad",
+        "Tendencia central",
+        "Sesgos constantes"
+      ],
+      "page": 33
+    },
+    {
+      "q": "¿Qué características definen a los Datos T (test objetivos) y cuál es su principal ventaja metodológica según Cattell?",
+      "model": "Los datos T provienen de procedimientos estructurados en condiciones controladas (laboratorio o aparatos). Su característica definitoria es que el sujeto desconoce el objetivo de la prueba, lo que impide que oriente su respuesta. Su principal ventaja es la 'objetividad inherente' de la situación de prueba, careciendo de validez aparente para el sujeto, lo que minimiza el falseamiento.",
+      "keywords": [
+        "Datos T",
+        "Pruebas objetivas",
+        "Control",
+        "Validez aparente",
+        "Objetividad"
+      ],
+      "page": 34
+    },
+    {
+      "q": "Evalúe el uso de las técnicas proyectivas dentro de la categoría de Datos T.",
+      "model": "Se consideran datos T porque presentan un estímulo estándar ambiguo bajo instrucciones uniformes para provocar una respuesta que revele la personalidad (proyección). Aunque críticas cuestionan su fiabilidad y validez, sus defensores (como en el Rorschach) sostienen que permiten acceder a deseos y conflictos inconscientes no accesibles mediante cuestionarios.",
+      "keywords": [
+        "Técnicas proyectivas",
+        "Rorschach",
+        "Ambigüedad",
+        "Inconsciente",
+        "Datos T"
+      ],
+      "page": 34
+    },
+    {
+      "q": "Analice los sesgos de respuesta más comunes en los datos S (Self-Report) y proponga medidas para neutralizarlos.",
+      "model": "Los principales sesgos son: 1) Aquiescencia (responder 'sí' sistemáticamente), corregible con ítems contrabalanceados. 2) Deseabilidad social, controlada con ítems de contenido neutro o escalas específicas. 3) Falta de sinceridad, detectable mediante escalas de mentira o ítems repetidos para comprobar coherencia. 4) Respuestas estereotipadas (extremos o centro), que indican rigidez o falta de interés.",
+      "keywords": [
+        "Datos S",
+        "Aquiescencia",
+        "Deseabilidad social",
+        "Sinceridad",
+        "Contrabalanceo"
+      ],
+      "page": 35
+    },
+    {
+      "q": "Defina y compare la fiabilidad de consistencia interna frente a la fiabilidad test-retest.",
+      "model": "La consistencia interna mide el grado en que las diferentes partes o ítems de un test miden lo mismo (se suele calcular con el Alpha de Cronbach). La fiabilidad test-retest mide la estabilidad temporal de la medida, asumiendo que el rasgo de personalidad es estable, comparando las puntuaciones del mismo sujeto en dos momentos distintos mediante correlación.",
+      "keywords": [
+        "Fiabilidad",
+        "Consistencia interna",
+        "Alpha de Cronbach",
+        "Test-retest",
+        "Estabilidad temporal"
+      ],
+      "page": 36
+    },
+    {
+      "q": "Explique los tres enfoques de validez mencionados en el texto: convergente, predictiva y de constructo.",
+      "model": "1) Validez convergente: grado en que el test correlaciona con otros test ya probados que miden constructos similares. 2) Validez predictiva: grado en que las puntuaciones se asocian con conductas o criterios medidos posteriormente. 3) Validez de constructo: garantiza que el instrumento evalúa el concepto tal como se define teóricamente; es la más global e integra a las demás.",
+      "keywords": [
+        "Validez convergente",
+        "Validez predictiva",
+        "Validez de constructo",
+        "Psicometría"
+      ],
+      "page": 35,
+      "source": "35-36"
+    },
+    {
+      "q": "¿Cómo se pueden clasificar los datos obtenidos a través de smartphones y redes sociales según el sistema LOTS?",
+      "model": "Tienen una naturaleza híbrida: pueden ser Datos O si el evaluador observa publicaciones o selfis; Datos T si se introduce una condición experimental o se registran indicadores automáticos (tiempo de uso); y Datos S si se solicita al usuario un autorregistro de pensamientos o sentimientos en momentos determinados a través del dispositivo.",
+      "keywords": [
+        "Recursos digitales",
+        "Smartphones",
+        "LOTS",
+        "Autorregistro"
+      ],
+      "page": 36
+    },
+    {
+      "q": "Describa la estrategia clínica de investigación y argumente sus principales fortalezas.",
+      "model": "Consiste en el estudio global, sistemático y directo del individuo (estudio de casos) mediante entrevistas, biografías y observación. Sus fortalezas radican en la obtención de información muy detallada y profunda sobre la organización singular de la personalidad, permitiendo formular teorías generales a partir de casos específicos o comprobar la validez de modelos en situaciones reales.",
+      "keywords": [
+        "Estrategia clínica",
+        "Estudio de casos",
+        "Profundidad",
+        "Biografía"
+      ],
+      "page": 36,
+      "source": "36-37"
+    },
+    {
+      "q": "¿Cuáles son las limitaciones metodológicas de la aproximación clínica?",
+      "model": "Sus principales limitaciones son la dificultad para replicar los resultados (debido a la naturaleza situacional y única de la conducta estudiada) y la falta de generalización de los datos obtenidos a la población general, lo que compromete dos pilares del conocimiento científico.",
+      "keywords": [
+        "Replicabilidad",
+        "Generalización",
+        "Estrategia clínica",
+        "Limitaciones"
+      ],
+      "page": 37
+    },
+    {
+      "q": "Explique el funcionamiento de la estrategia correlacional y qué significan la magnitud y la dirección en una correlación.",
+      "model": "Analiza la relación entre variables sin manipulación. La magnitud (de 0 a 1 en valor absoluto) indica la fuerza de la asociación y la exactitud predictiva. La dirección indica si la relación es positiva (ambas variables aumentan/disminuyen juntas) o negativa (una aumenta mientras la otra disminuye). Magnitud y dirección son aspectos independientes.",
+      "keywords": [
+        "Estrategia correlacional",
+        "Magnitud",
+        "Dirección",
+        "Covariación",
+        "Significación"
+      ],
+      "page": 37
+    },
+    {
+      "q": "Argumente por qué la correlación no implica causalidad mencionando las tres posibilidades lógicas existentes.",
+      "model": "La correlación solo indica que las variables 'van juntas'. No permite establecer causa-efecto porque: 1) La variable A puede ser causa de B. 2) La variable B puede ser causa de A. 3) Una tercera variable C (no contemplada) puede ser la causa de la relación observada entre A y B.",
+      "keywords": [
+        "Causalidad",
+        "Variable C",
+        "Relación causa-efecto",
+        "Estrategia correlacional"
+      ],
+      "page": 37
+    },
+    {
+      "q": "Defina las dos características fundamentales que distinguen al método experimental.",
+      "model": "1) Manipulación: El investigador introduce y controla una Variable Independiente (VI) creando al menos dos niveles para observar sus efectos en una Variable Dependiente (VD). 2) Equivalencia de grupos: Los participantes se asignan al azar para asegurar que los grupos sean iguales inicialmente, permitiendo atribuir las diferencias finales exclusivamente a la manipulación.",
+      "keywords": [
+        "Experimento",
+        "Manipulación",
+        "Variable Independiente",
+        "Asignación al azar"
+      ],
+      "page": 38
+    },
+    {
+      "q": "Compare la validez interna y externa en las estrategias correlacional y experimental.",
+      "model": "La estrategia experimental goza de alta validez interna (control de variables y causalidad), pero baja validez externa (artificialidad del laboratorio). La estrategia correlacional tiene menor validez interna (falta de control), pero mayor validez externa al estudiar variables en su entorno natural y permitir generalizar resultados a situaciones cotidianas.",
+      "keywords": [
+        "Validez interna",
+        "Validez externa",
+        "Laboratorio",
+        "Entorno natural"
+      ],
+      "page": 38
+    },
+    {
+      "q": "Explique los riesgos para la validez interna del experimento conocidos como 'efecto Rosenthal' y 'características de la demanda'.",
+      "model": "El 'efecto Rosenthal' (o efecto del experimentador) ocurre cuando las expectativas del investigador influyen inconscientemente en los sujetos. Las 'características de la demanda' se refieren a las claves de la situación experimental que sugieren al participante cómo 'debería' comportarse, alterando su conducta natural.",
+      "keywords": [
+        "Efecto Rosenthal",
+        "Características de la demanda",
+        "Sesgo del experimentador",
+        "Validez interna"
+      ],
+      "page": 38
+    },
+    {
+      "q": "¿Qué ventajas específicas ofrece la estrategia correlacional en el ámbito de la personalidad frente a la experimental?",
+      "model": "Permite el estudio simultáneo de un gran número de variables, facilita el análisis de diferencias individuales y permite investigar fenómenos que no pueden ser manipulados por razones éticas o prácticas (p.ej. rasgos estables de personalidad que no pueden 'crearse' en laboratorio).",
+      "keywords": [
+        "Ventajas correlacionales",
+        "Ética",
+        "Diferencias individuales",
+        "Variables múltiples"
+      ],
+      "page": 39
+    },
+    {
+      "q": "Diferencie entre el análisis de regresión y el análisis factorial como técnicas multivariadas.",
+      "model": "La regresión estudia la relación entre una o más variables predictoras (VI) y una variable criterio (VD), permitiendo predecir porcentajes de varianza y controlar la colinealidad. El análisis factorial es una técnica de reducción de datos que identifica focos de covariación para resumir muchas variables en pocos factores subyacentes sin perder significado.",
+      "keywords": [
+        "Regresión",
+        "Análisis factorial",
+        "Predicción",
+        "Reducción de datos",
+        "Factores"
+      ],
+      "page": 39
+    },
+    {
+      "q": "¿Qué diferencia al análisis factorial exploratorio (AFE) del confirmatorio (AFC)?",
+      "model": "El AFE busca identificar la estructura subyacente de un conjunto de datos sin hipótesis previas sobre cuántos factores existen o qué ítems los cargan. El AFC se utiliza para probar si un modelo teórico específico (una estructura de factores ya definida) se ajusta correctamente a los datos recogidos.",
+      "keywords": [
+        "AFE",
+        "AFC",
+        "Estructura",
+        "Hipótesis teórica"
+      ],
+      "page": 39
+    },
+    {
+      "q": "Explique el uso de las pruebas 't' en estudios de personalidad de tipo correlacional mediante la estrategia de selección.",
+      "model": "Aunque típicas de experimentos, en personalidad se usan comparando grupos formados por selección (no azar). Se utilizan las puntuaciones de una variable (VI) para crear grupos extremos (p.ej. superior al percentil 75 e inferior al 25) o por mediana, comparando luego sus medias en una VD para potenciar el efecto visual de la variable de agrupación.",
+      "keywords": [
+        "Prueba t",
+        "Estrategia de selección",
+        "Grupos extremos",
+        "Comparación de medias"
+      ],
+      "page": 40
+    },
+    {
+      "q": "¿Qué aporta el análisis de varianza (ANOVA) al estudio de la personalidad más allá de los efectos principales?",
+      "model": "El ANOVA permite obtener efectos de interacción o efectos moduladores. Esto ocurre cuando el efecto de una variable sobre la conducta depende del nivel de otra variable (p.ej. cómo un rasgo de personalidad interactúa con una situación específica), lo cual es fundamental para entender la dinámica compleja de la personalidad.",
+      "keywords": [
+        "ANOVA",
+        "Interacción",
+        "Efecto modulador",
+        "Variables independientes"
+      ],
+      "page": 40
+    },
+    {
+      "q": "Defina el 'Diseño Experimental de Personalidad' y explique su naturaleza mixta.",
+      "model": "Es un diseño multifactorial mixto o cruzado que combina al menos una VI de manipulación experimental con al menos una VI de personalidad (donde los grupos se forman por selección). Permite explorar cómo los rasgos individuales interactúan con las condiciones ambientales controladas.",
+      "keywords": [
+        "Diseño experimental de personalidad",
+        "Diseño mixto",
+        "Multifactorial",
+        "Selección"
+      ],
+      "page": 40
+    },
+    {
+      "q": "Distinga entre variables mediadoras y el uso de modelos de ecuaciones estructurales (SEM).",
+      "model": "El análisis de mediación busca identificar el mecanismo (variable mediadora) por el cual una VI influye en una VD (p.ej. el afrontamiento mediando entre optimismo y salud). El SEM es una técnica más compleja y potente que permite poner en relación múltiples variables y mediadores simultáneamente bajo un modelo estadístico unificado.",
+      "keywords": [
+        "Mediación",
+        "SEM",
+        "Mecanismo",
+        "Ecuaciones estructurales"
+      ],
+      "page": 40
+    },
+    {
+      "q": "Describa los requisitos éticos fundamentales en la investigación de la personalidad.",
+      "model": "Es imprescindible obtener el consentimiento informado (verbal o escrito) de todos los participantes. Esto implica facilitarles información clara sobre los procedimientos y posibles riesgos. Su finalidad es proteger el bienestar de los sujetos y garantizar su derecho a la intimidad.",
+      "keywords": [
+        "Ética",
+        "Consentimiento informado",
+        "Intimidad",
+        "Bienestar"
+      ],
+      "page": 40
+    },
+    {
+      "q": "¿Por qué el análisis factorial ha sido fundamental para el desarrollo de las teorías de la inteligencia y la personalidad?",
+      "model": "Porque permite resumir conjuntos amplios de variables observadas en un número menor de dimensiones o factores latentes. Ha sido la herramienta clave para proponer estructuras teóricas (como los Cinco Grandes o modelos de inteligencia) y para validar los instrumentos de medida que evalúan dichas propuestas.",
+      "keywords": [
+        "Análisis factorial",
+        "Teorías estructurales",
+        "Inteligencia",
+        "Validación"
+      ],
+      "page": 39
+    },
+    {
+      "q": "Explique el concepto de 'Equifuncionalidad' y su relevancia en la observación de la conducta.",
+      "model": "Se refiere a que una misma conducta observable (mundo externo) puede responder a procesos internos o intenciones diferentes (mundo interno), o viceversa. Esto limita la validez de la observación directa, ya que no siempre hay una correspondencia fiable entre lo que se hace y lo que se siente o piensa (p.ej. fingimiento).",
+      "keywords": [
+        "Equifuncionalidad",
+        "Mundo interno",
+        "Mundo externo",
+        "Observación"
+      ],
+      "page": 33
+    },
+    {
+      "q": "Analice la importancia del porcentaje de varianza compartida en la estrategia correlacional.",
+      "model": "Se obtiene elevando al cuadrado el valor de la correlación ($r^2$) y multiplicando por 100. Este valor indica cuánto de la variabilidad de una variable puede explicarse por la otra, lo que determina la capacidad predictiva y la relevancia práctica de la asociación encontrada entre dos dimensiones de personalidad.",
+      "keywords": [
+        "Varianza compartida",
+        "Coeficiente de determinación",
+        "Predicción",
+        "Correlación"
+      ],
+      "page": 37
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Fuentes de Información",
+      "q": "¿Qué tres fuentes específicas de datos distinguió originalmente Cattell en 1965?",
+      "a": "Distinguió entre Datos L (registros de vida), Datos Q (cuestionarios/autoinforme) y Datos T (tests objetivos).",
+      "page": 32
+    },
+    {
+      "cat": "Fuentes de Información",
+      "q": "¿Cómo modificó Block (1993) la clasificación original de Cattell para crear el sistema LOTS?",
+      "a": "Renombró los datos Q como S (Self-report) y desdobló los datos L en L (Life-outcome) y O (Observer).",
+      "page": 32
+    },
+    {
+      "cat": "Fuentes de Información",
+      "q": "¿Qué representan los Datos L (Life-Outcome) según la clasificación de Block?",
+      "a": "Información sobre sucesos, actividades y resultados en la vida de una persona disponibles para el escrutinio público, como expedientes académicos o penales.",
+      "page": 32
+    },
+    {
+      "cat": "Fuentes de Información",
+      "q": "¿Cuál es la principal característica de los Datos O (Observer)?",
+      "a": "La información proviene del juicio de terceras personas (padres, profesores, amigos) que califican o registran el comportamiento del sujeto.",
+      "page": 33
+    },
+    {
+      "cat": "Fuentes de Información",
+      "q": "¿Qué son los Datos T (Objective Tests) en el contexto de la personalidad?",
+      "a": "Datos procedentes de procedimientos estructurados donde el sujeto realiza una tarea en condiciones controladas sin conocer el objetivo real de la prueba.",
+      "page": 34
+    },
+    {
+      "cat": "Fuentes de Información",
+      "q": "¿En qué se basan los Datos S (Self-Report) y cuál es su prevalencia en investigación?",
+      "a": "Se basan en la información que el propio individuo proporciona sobre sí mismo; son los más frecuentes e importantes en la investigación de la personalidad.",
+      "page": 34
+    },
+    {
+      "cat": "Metodología",
+      "q": "¿Por qué se considera que las cuatro categorías de datos (LOTS) son complementarias?",
+      "a": "Porque expresan contextos diferentes de la variabilidad individual y permiten triangular la información para obtener una imagen más certera.",
+      "page": 32
+    },
+    {
+      "cat": "Metodología",
+      "q": "¿Qué suele ocurrir con la concordancia entre los datos de autoinforme (S) y los objetivos (T)?",
+      "a": "La concordancia suele ser baja, ya que la percepción propia de los individuos y los datos fisiológicos o reales no suelen coincidir (ej. niveles de ansiedad).",
+      "page": 32
+    },
+    {
+      "cat": "Fuentes de Información",
+      "q": "¿Qué ejemplos modernos de Datos L menciona el texto ante el avance tecnológico?",
+      "a": "Menciona los patrones de navegación por internet y la dirección de correo electrónico como posibles reveladores de la personalidad.",
+      "page": 32
+    },
+    {
+      "cat": "Datos de Observación",
+      "q": "¿Cuál es el criterio de bondad fundamental en los Datos O para asegurar su validez?",
+      "a": "La fiabilidad interjueces, es decir, la concordancia o consenso entre diferentes observadores.",
+      "page": 33
+    },
+    {
+      "cat": "Datos de Observación",
+      "q": "¿Qué problema plantea la 'equifuncionalidad' en la observación directa del comportamiento?",
+      "a": "Plantea que el mundo externo motor puede no coincidir con el mundo interno consciente, permitiendo que la persona finja deliberadamente.",
+      "page": 33
+    },
+    {
+      "cat": "Sesgos de Evaluación",
+      "q": "¿En qué consiste el 'efecto de halo' en las escalas de calificación?",
+      "a": "Es la tendencia a calificar a una persona favorable o desfavorablemente en varias variables basándose en la impresión de una primera evaluación.",
+      "page": 33
+    },
+    {
+      "cat": "Sesgos de Evaluación",
+      "q": "¿Qué diferencia al 'error lógico' del 'efecto de halo'?",
+      "a": "El error lógico es la tendencia a dar calificaciones similares a rasgos que parecen lógicamente relacionados (ej. creer que si alguien roba, también miente), aunque sean independientes.",
+      "page": 33
+    },
+    {
+      "cat": "Sesgos de Evaluación",
+      "q": "¿Qué es el 'error de contraste' cometido por un calificador?",
+      "a": "La tendencia a calificar a otros en la dirección opuesta a la posición que el propio calificador percibe de sí mismo en ese rasgo.",
+      "page": 33
+    },
+    {
+      "cat": "Sesgos de Evaluación",
+      "q": "¿A qué se refiere el 'error de tendencia central'?",
+      "a": "A la tendencia de los evaluadores a utilizar categorías intermedias y evitar juicios extremos en las escalas.",
+      "page": 33
+    },
+    {
+      "cat": "Sesgos de Evaluación",
+      "q": "¿Qué diferencia hay entre el 'error de generosidad' y el 'error de severidad'?",
+      "a": "El de generosidad da evaluaciones más favorables de las merecidas, mientras que el de severidad las da más desfavorables.",
+      "page": 33
+    },
+    {
+      "cat": "Datos Objetivos",
+      "q": "¿Por qué los Datos T carecen de 'validez aparente' según Cattell?",
+      "a": "Porque el sujeto desconoce qué se está midiendo realmente, lo que garantiza la objetividad de la situación de prueba.",
+      "page": 34
+    },
+    {
+      "cat": "Datos Objetivos",
+      "q": "¿Cuáles son las principales limitaciones de los Datos T en la actualidad?",
+      "a": "Su elevado coste, la complejidad de aplicación y la baja validez externa debido a la artificialidad del laboratorio.",
+      "page": 34
+    },
+    {
+      "cat": "Datos Objetivos",
+      "q": "¿Qué papel juegan los registros psicofisiológicos dentro de los Datos T?",
+      "a": "Son los más frecuentes hoy en día y sirven para comprobar hipótesis sobre el funcionamiento biológico de la personalidad, como el estrés.",
+      "page": 34
+    },
+    {
+      "cat": "Datos Objetivos",
+      "q": "¿Por qué las técnicas proyectivas (ej. Rorschach) se clasifican como Datos T?",
+      "a": "Porque presentan un estímulo estándar ambiguo para provocar una respuesta que el sujeto no puede orientar conscientemente.",
+      "page": 34
+    },
+    {
+      "cat": "Autoinformes",
+      "q": "¿Cuál es la diferencia formal entre un cuestionario y un inventario?",
+      "a": "Los cuestionarios consisten en frases interrogativas, mientras que los inventarios utilizan frases enunciativas.",
+      "page": 34
+    },
+    {
+      "cat": "Sesgos de Autoinforme",
+      "q": "¿Qué es la 'aquiescencia' y cómo se intenta corregir en los cuestionarios?",
+      "a": "Es la tendencia a responder 'sí' independientemente del contenido; se corrige mediante el contrabalanceo de los ítems.",
+      "page": 35
+    },
+    {
+      "cat": "Sesgos de Autoinforme",
+      "q": "¿En qué consiste la 'deseabilidad social' y cuándo es más frecuente?",
+      "a": "Es la tendencia a dar una imagen adaptada socialmente; es más frecuente ante contenidos comprometidos con normas sociales o situaciones de presión.",
+      "page": 35
+    },
+    {
+      "cat": "Sesgos de Autoinforme",
+      "q": "¿Qué mecanismos se usan para estimar la falta de sinceridad en un autoinforme?",
+      "a": "Se utilizan escalas de sinceridad (o mentiras) y se verifica el grado de coherencia mediante ítems repetidos.",
+      "page": 35
+    },
+    {
+      "cat": "Sesgos de Autoinforme",
+      "q": "¿Qué indica una tendencia a dar respuestas estereotipadas?",
+      "a": "Puede indicar ausencia de significación del ítem para la persona o rigidez y estereotipia en la respuesta.",
+      "page": 35
+    },
+    {
+      "cat": "Propiedades Psicométricas",
+      "q": "¿Qué diferencia existe entre validez concurrente y validez predictiva?",
+      "a": "La concurrente compara el test con otros ya probados, mientras que la predictiva asocia las puntuaciones con conductas futuras.",
+      "page": 35
+    },
+    {
+      "cat": "Propiedades Psicométricas",
+      "q": "¿Qué garantiza la validez de constructo en un instrumento?",
+      "a": "Garantiza que el instrumento evalúa el concepto tal como ha sido definido teóricamente, integrando otros tipos de validez.",
+      "page": 36
+    },
+    {
+      "cat": "Propiedades Psicométricas",
+      "q": "¿Qué es la consistencia interna y cómo se suele calcular?",
+      "a": "Es el grado en que los ítems de un test miden lo mismo; se calcula habitualmente con el coeficiente alpha de Cronbach.",
+      "page": 36
+    },
+    {
+      "cat": "Propiedades Psicométricas",
+      "q": "¿Cómo se evalúa la estabilidad temporal de una medida de personalidad?",
+      "a": "Mediante un diseño test-retest, aplicando el mismo instrumento en dos momentos distintos y calculando su correlación.",
+      "page": 36
+    },
+    {
+      "cat": "Investigación Digital",
+      "q": "¿Cómo se clasifica el registro de publicaciones en Instagram según el sistema de Block?",
+      "a": "Se considera Datos O (observación de conducta), aunque también puede generar Datos T (si hay manipulación) o S (si hay autorregistro).",
+      "page": 36
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿En qué consiste la estrategia clínica para el estudio de la personalidad?",
+      "a": "Consiste en el estudio global, sistemático y directo del individuo (estudio de casos) para comprender su organización singular.",
+      "page": 36
+    },
+    {
+      "cat": "Estrategia Clínica",
+      "q": "¿Cuál es la principal ventaja de la aproximación clínica?",
+      "a": "Permite obtener información muy detallada y profunda sobre la personalidad que no se logra con muestras amplias.",
+      "page": 37
+    },
+    {
+      "cat": "Estrategia Clínica",
+      "q": "¿Cuáles son las dos grandes limitaciones de la estrategia clínica?",
+      "a": "La dificultad para replicar los resultados y la imposibilidad de generalizar los hallazgos a toda la población.",
+      "page": 37
+    },
+    {
+      "cat": "Estrategia Correlacional",
+      "q": "¿Cuál es el objetivo fundamental de la estrategia correlacional?",
+      "a": "Analizar la relación entre variables sin manipularlas, observando si covarían de modo predecible.",
+      "page": 37
+    },
+    {
+      "cat": "Estrategia Correlacional",
+      "q": "¿Qué indican la magnitud y la dirección en una correlación?",
+      "a": "La magnitud indica la fuerza de asociación (exactitud de predicción) y la dirección indica si la relación es positiva o negativa.",
+      "page": 37
+    },
+    {
+      "cat": "Estrategia Correlacional",
+      "q": "¿Por qué una correlación no implica necesariamente causalidad?",
+      "a": "Porque A puede causar B, B puede causar A, o una tercera variable C puede ser la causa de ambas.",
+      "page": 37
+    },
+    {
+      "cat": "Estrategia Experimental",
+      "q": "¿Qué dos características fundamentales definen al método experimental?",
+      "a": "La manipulación de la variable independiente (VI) y la asignación al azar de los participantes para garantizar la igualdad de los grupos.",
+      "page": 38
+    },
+    {
+      "cat": "Estrategia Experimental",
+      "q": "¿Qué permite determinar la estrategia experimental que la correlacional no puede?",
+      "a": "Permite determinar relaciones de causa-efecto entre variables.",
+      "page": 38
+    },
+    {
+      "cat": "Validez de Investigación",
+      "q": "¿Qué estrategia posee tradicionalmente mayor validez externa y por qué?",
+      "a": "La correlacional, porque ocurre en situaciones naturales facilitando la generalización de resultados.",
+      "page": 38
+    },
+    {
+      "cat": "Validez de Investigación",
+      "q": "¿Qué es el 'efecto Rosenthal' en la investigación experimental?",
+      "a": "Es el efecto del experimentador, donde sus expectativas pueden influir involuntariamente en los resultados del estudio.",
+      "page": 38
+    },
+    {
+      "cat": "Validez de Investigación",
+      "q": "¿A qué se refieren las 'características de la demanda'?",
+      "a": "A las claves o señales en el entorno experimental que sugieren al participante cómo se espera que responda.",
+      "page": 38
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿Cuál es el 'talón de Aquiles' de la experimentación en psicología?",
+      "a": "Su baja validez externa debido a la dificultad para replicar los resultados artificiales de laboratorio en la vida real.",
+      "page": 38
+    },
+    {
+      "cat": "Técnicas Estadísticas",
+      "q": "¿Qué ventaja principal ofrece el análisis de regresión sobre la correlación simple?",
+      "a": "Permite estudiar relaciones entre múltiples variables independientes y una dependiente, controlando la colinealidad o superposición entre ellas.",
+      "page": 39
+    },
+    {
+      "cat": "Técnicas Estadísticas",
+      "q": "¿Para qué sirve el coeficiente de determinación en una regresión?",
+      "a": "Para conocer el porcentaje de la variable criterio (VD) que puede ser explicado por las variables independientes.",
+      "page": 39
+    },
+    {
+      "cat": "Técnicas Estadísticas",
+      "q": "¿Cuál es la función principal del Análisis Factorial?",
+      "a": "Es una técnica de reducción de datos que resume conjuntos amplios de variables en un número menor de factores basados en la covariación.",
+      "page": 39
+    },
+    {
+      "cat": "Técnicas Estadísticas",
+      "q": "¿Qué diferencia hay entre un Análisis Factorial Exploratorio (AFE) y uno Confirmatorio (AFC)?",
+      "a": "El AFE busca estructuras sin hipótesis previa, mientras que el AFC pone a prueba si los datos se ajustan a una estructura teórica específica.",
+      "page": 39
+    },
+    {
+      "cat": "Análisis de Datos",
+      "q": "¿Cómo se usan las pruebas 't' en los estudios correlacionales de personalidad?",
+      "a": "Se usan para comparar grupos establecidos por selección (ej. altos vs bajos en un rasgo) en lugar de asignación al azar.",
+      "page": 40
+    },
+    {
+      "cat": "Análisis de Datos",
+      "q": "¿Qué información adicional proporciona el ANOVA frente a las pruebas t?",
+      "a": "Permite obtener efectos principales de varios factores y, lo más importante, efectos de interacción entre ellos.",
+      "page": 40
+    },
+    {
+      "cat": "Análisis de Datos",
+      "q": "¿Qué es un 'Diseño Experimental de Personalidad'?",
+      "a": "Es un diseño mixto que incluye al menos una variable manipulada experimentalmente y una variable de personalidad seleccionada.",
+      "page": 40
+    },
+    {
+      "cat": "Análisis de Datos",
+      "q": "¿Qué busca un análisis de mediación?",
+      "a": "Busca identificar los mecanismos o variables intermedias a través de las cuales una variable independiente influye en una dependiente.",
+      "page": 40
+    },
+    {
+      "cat": "Técnicas Estadísticas",
+      "q": "¿Cuándo es necesario recurrir al Modelo de Ecuaciones Estructurales (SEM)?",
+      "a": "Cuando se desea probar hipótesis complejas que involucran múltiples variables mediadoras y relaciones dinámicas con mayor potencia estadística.",
+      "page": 40
+    },
+    {
+      "cat": "Ética",
+      "q": "¿Qué documento es imprescindible obtener de los participantes antes de una investigación?",
+      "a": "El consentimiento informado, sea verbal o escrito, tras explicar procedimientos y riesgos.",
+      "page": 40
+    },
+    {
+      "cat": "Ética",
+      "q": "¿Cuál es el fin principal del consentimiento informado?",
+      "a": "Proteger el bienestar de los sujetos y garantizar su derecho a la intimidad.",
+      "page": 40
+    },
+    {
+      "cat": "Estrategia Correlacional",
+      "q": "¿Qué tipo de validez se ve favorecida por el estudio en entornos naturales?",
+      "a": "La validez externa, al facilitar la generalización de los hallazgos a situaciones de la vida cotidiana.",
+      "page": 39
+    },
+    {
+      "cat": "Estrategia Experimental",
+      "q": "¿Por qué el experimento garantiza una alta validez interna?",
+      "a": "Debido al control exhaustivo de la situación y la capacidad de aislar el efecto de la manipulación de la VI sobre la VD.",
+      "page": 38
+    },
+    {
+      "cat": "Fuentes de Información",
+      "q": "¿Qué supuesto justifica el uso de autoinformes (Datos S)?",
+      "a": "El supuesto de que la mejor manera de saber lo que una persona piensa, siente o hace es preguntándoselo directamente.",
+      "page": 34
+    },
+    {
+      "cat": "Fuentes de Información",
+      "q": "¿Qué es la 'varianza de método' mencionada en el texto?",
+      "a": "Es la variabilidad en los datos que proviene del propio procedimiento de medida utilizado, no del rasgo real del sujeto.",
+      "page": 32
+    },
+    {
+      "cat": "Sesgos de Evaluación",
+      "q": "¿Qué problema causa la ambigüedad de los ítems en los calificadores (Datos O)?",
+      "a": "Provoca una comprensión diferencial, disminuyendo la coincidencia entre las descripciones que diferentes personas hacen del sujeto.",
+      "page": 33
+    },
+    {
+      "cat": "Sesgos de Evaluación",
+      "q": "¿Cómo influye la familiaridad del calificador con el evaluado en las escalas?",
+      "a": "Incide en la cumplimentación, aunque no está claro que siempre mejore la objetividad de la evaluación.",
+      "page": 33
+    },
+    {
+      "cat": "Metodología",
+      "q": "¿Qué técnica permite reducir un número elevado de variables correlacionadas a pocos factores?",
+      "a": "El Análisis Factorial.",
+      "page": 39
+    },
+    {
+      "cat": "Metodología",
+      "q": "¿Qué técnica permite predecir el valor de una variable criterio a partir de variables predictoras?",
+      "a": "El Análisis de Regresión.",
+      "page": 39
+    },
+    {
+      "cat": "Propiedades Psicométricas",
+      "q": "¿Qué significa que un instrumento de personalidad sea fiable?",
+      "a": "Significa que la medida refleja una variación auténtica y sistemática en el sujeto, libre de error aleatorio o sesgo.",
+      "page": 36
+    },
+    {
+      "cat": "Propiedades Psicométricas",
+      "q": "¿Cuál es la función del índice 'alpha de Cronbach'?",
+      "a": "Cuantificar la consistencia interna o el grado en que los ítems de una escala están relacionados entre sí.",
+      "page": 36
+    },
+    {
+      "cat": "Estrategia Clínica",
+      "q": "¿Qué valor tiene la información detallada obtenida en un estudio de caso único?",
+      "a": "Sirve para formular teorías generales o comprobar si los modelos poblacionales son aplicables a la realidad individual cotidiana.",
+      "page": 37
+    },
+    {
+      "cat": "Fuentes de Información",
+      "q": "¿Qué limitación ética puede tener la manipulación experimental en personalidad?",
+      "a": "Muchos aspectos de la personalidad (ej. traumas) no pueden manipularse éticamente, por lo que se recurre a la estrategia correlacional.",
+      "page": 40
+    },
+    {
+      "cat": "Análisis de Datos",
+      "q": "¿En qué consiste el 'diseño multifactorial'?",
+      "a": "En abordar más de una variable independiente y explorar todas sus combinaciones posibles de niveles.",
+      "page": 40
+    },
+    {
+      "cat": "Análisis de Datos",
+      "q": "¿Qué son los 'efectos de interacción' en un análisis estadístico?",
+      "a": "Son resultados que surgen de la combinación de factores, donde el efecto de una variable depende del nivel de la otra.",
+      "page": 40
+    },
+    {
+      "cat": "Estrategia Correlacional",
+      "q": "¿Cómo se calcula el porcentaje de varianza compartida entre dos variables?",
+      "a": "Elevando al cuadrado el valor de la correlación ($r$) y multiplicándolo por 100.",
+      "page": 37
+    },
+    {
+      "cat": "Estrategia Correlacional",
+      "q": "¿Qué implica una correlación negativa perfecta (-1)?",
+      "a": "Que el valor más alto en una variable se asocia sistemáticamente con el valor más bajo en la otra.",
+      "page": 37
+    },
+    {
+      "cat": "Sesgos de Autoinforme",
+      "q": "¿Qué se busca al incluir ítems repetidos en un cuestionario largo?",
+      "a": "Estimar el grado de coherencia y, por ende, la sinceridad del sujeto en sus respuestas.",
+      "page": 35
+    },
+    {
+      "cat": "Datos Objetivos",
+      "q": "¿Cuál es la finalidad básica del uso de datos fisiológicos en personalidad?",
+      "a": "Comprobar hipótesis sobre el funcionamiento biológico de la personalidad más que resaltar diferencias individuales per se.",
+      "page": 34
+    },
+    {
+      "cat": "Estrategia Correlacional",
+      "q": "¿Qué permite el modelo de ecuaciones estructurales (SEM) en los últimos tiempos?",
+      "a": "Poner a prueba relaciones entre múltiples variables proponiendo algunas como VI y otras como VD simultáneamente.",
+      "page": 39
+    },
+    {
+      "cat": "Metodología",
+      "q": "¿Qué se entiende por 'equifuncionalidad' entre el mundo interno y externo?",
+      "a": "La idea de que una misma conducta externa puede responder a procesos internos muy diferentes, dificultando la interpretación de la observación.",
+      "page": 33
+    },
+    {
+      "cat": "Propiedades Psicométricas",
+      "q": "¿Qué diferencia la fiabilidad interjueces de la consistencia interna?",
+      "a": "La interjueces mide el acuerdo entre observadores; la consistencia interna mide la relación entre los ítems de un mismo test.",
+      "page": 36
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿Por qué la estrategia experimental busca 'encontrar leyes generales de conducta'?",
+      "a": "Porque al manipular variables bajo control estricto, intenta identificar procesos causales universales que afecten a todos por igual.",
+      "page": 39
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿Qué trata de comprender específicamente la estrategia correlacional?",
+      "a": "Las diferencias individuales, enfocándose en cómo varían las personas unas respecto a otras en muestras amplias.",
+      "page": 39
+    },
+    {
+      "cat": "Fuentes de Información",
+      "q": "¿Por qué los cuestionarios se consideran instrumentos 'psicométricos'?",
+      "a": "Porque deben cumplir criterios estandarizados de bondad como la fiabilidad y la validez para ser considerados científicos.",
+      "page": 35
+    },
+    {
+      "cat": "Sesgos de Evaluación",
+      "q": "¿Qué es una 'impresión general del calificador'?",
+      "a": "Es la base cognitiva de los sesgos de halo y error lógico, donde el juicio global influye en la evaluación de rasgos específicos.",
+      "page": 33
+    },
+    {
+      "cat": "Estrategia Clínica",
+      "q": "¿Quiénes fueron los pioneros en seguir la estrategia clínica en personalidad?",
+      "a": "Teóricos interesados en el análisis y tratamiento de casos individuales, como Sigmund Freud.",
+      "page": 36
+    },
+    {
+      "cat": "Datos de Observación",
+      "q": "¿Qué supone la observación directa del comportamiento sobre la validez científica?",
+      "a": "Supone que la acción observable es el último criterio válido para contrastar cualquier teoría científica.",
+      "page": 33
+    },
+    {
+      "cat": "Sesgos de Autoinforme",
+      "q": "¿Por qué la deseabilidad social se considera a veces parte válida de ciertos rasgos?",
+      "a": "Porque puede reflejar aspectos reales de la responsabilidad o cordialidad del individuo en lugar de un simple engaño.",
+      "page": 35
+    },
+    {
+      "cat": "Técnicas Estadísticas",
+      "q": "¿Qué permite controlar el análisis de regresión en relación con las variables predictoras?",
+      "a": "La colinealidad o el grado en que las variables independientes se solapan entre sí.",
+      "page": 39
+    },
+    {
+      "cat": "Fuentes de Información",
+      "q": "¿Qué diferencia fundamental hay entre datos L y datos O según Block?",
+      "a": "Los L son registros objetivos de resultados vitales; los O son juicios subjetivos de otras personas sobre el comportamiento.",
+      "page": 32
+    },
+    {
+      "cat": "Estrategia Experimental",
+      "q": "¿Cómo se compensan las diferencias iniciales de los sujetos en un experimento?",
+      "a": "Mediante la asignación al azar a los diferentes grupos experimentales.",
+      "page": 38
+    },
+    {
+      "cat": "Análisis de Datos",
+      "q": "¿Qué papel puede jugar la personalidad en un análisis de mediación?",
+      "a": "Puede ser la Variable Independiente, la Variable Mediadora o la Variable Dependiente según el modelo teórico.",
+      "page": 40
+    },
+    {
+      "cat": "Sesgos de Evaluación",
+      "q": "¿Qué es la 'precisión' del calificador en los Datos O?",
+      "a": "Es la capacidad individual del observador para percibir y registrar correctamente la conducta del evaluado sin errores sistemáticos.",
+      "page": 33
+    },
+    {
+      "cat": "Fuentes de Información",
+      "q": "¿Por qué se prefiere usar cuestionarios de autoinforme a pesar de sus sesgos?",
+      "a": "Por su eficiencia en tiempo y coste, y porque permiten acceder a estados internos que otros no pueden observar.",
+      "page": 34
+    },
+    {
+      "cat": "Estrategia Correlacional",
+      "q": "¿Qué significa que la magnitud y la dirección de una correlación sean independientes?",
+      "a": "Significa que una relación puede ser muy fuerte (magnitud alta) tanto en sentido positivo como negativo (dirección).",
+      "page": 37
+    },
+    {
+      "cat": "Estrategia Correlacional",
+      "q": "¿En qué consiste la técnica de 'análisis factorial exploratorio'?",
+      "a": "En detectar focos de covariación para agrupar variables sin tener una teoría previa sobre cuántos factores existen.",
+      "page": 39
+    },
+    {
+      "cat": "Estrategia Correlacional",
+      "q": "¿Qué ventaja tiene la estrategia correlacional respecto a la ética?",
+      "a": "Permite estudiar fenómenos que no podrían ser inducidos experimentalmente por razones morales o de salud.",
+      "page": 40
+    },
+    {
+      "cat": "Sesgos de Autoinforme",
+      "q": "¿Cómo se define la 'respuesta estereotipada' central?",
+      "a": "Es la tendencia a elegir sistemáticamente el intervalo medio de la escala para evitar comprometerse con una posición.",
+      "page": 35
+    },
+    {
+      "cat": "Investigación Digital",
+      "q": "¿Qué permite el autorregistro a través de smartphones?",
+      "a": "Obtener datos S en el momento preciso en que ocurren los pensamientos o conductas en el entorno natural.",
+      "page": 36
+    },
+    {
+      "cat": "Datos Objetivos",
+      "q": "¿Qué ventaja tiene el uso de fMRI en la investigación actual?",
+      "a": "Permite obtener imágenes funcionales del cerebro para asociar procesos biológicos con rasgos de personalidad.",
+      "page": 34
+    },
+    {
+      "cat": "Estrategia Clínica",
+      "q": "¿A qué se refiere el término 'estudio de casos' en personalidad?",
+      "a": "A la exposición completa del contexto de una persona y las variables que definen su conducta de forma holística.",
+      "page": 37
+    },
+    {
+      "cat": "Propiedades Psicométricas",
+      "q": "¿Cuál es la relación entre fiabilidad y validez?",
+      "a": "La fiabilidad es necesaria para la validez (medir bien), pero un test puede ser fiable sin ser válido (medir bien lo que no debe).",
+      "page": 35
+    },
+    {
+      "cat": "Análisis de Datos",
+      "q": "¿Qué estrategia de agrupación potencia el efecto de una variable en estudios correlacionales?",
+      "a": "La estrategia de selección por grupos extremos (ej. percentil superior 75 e inferior 25).",
+      "page": 40
+    },
+    {
+      "cat": "Propiedades Psicométricas",
+      "q": "¿Qué implica la 'validez predictiva' en el ámbito laboral?",
+      "a": "Que las puntuaciones en un test de personalidad hoy predigan el rendimiento laboral del sujeto meses después.",
+      "page": 35
+    },
+    {
+      "cat": "Ética",
+      "q": "¿Qué debe incluir la información facilitada a los participantes antes del consentimiento?",
+      "a": "Información clara sobre los procedimientos del estudio y los posibles riesgos físicos o psicológicos.",
+      "page": 40
+    },
+    {
+      "cat": "Estrategias de Investigación",
+      "q": "¿Qué limitación tiene la estrategia experimental respecto a la duración de los fenómenos?",
+      "a": "Suele abordar fenómenos de duración breve que pueden no reflejar la estabilidad a largo plazo de la personalidad.",
+      "page": 38
+    },
+    {
+      "cat": "Resumen",
+      "q": "¿Cuál es la conclusión general sobre el uso de métodos en personalidad?",
+      "a": "Es necesario integrar múltiples fuentes de datos y estrategias para superar las limitaciones individuales de cada método.",
+      "page": 31
+    }
+  ]
+}

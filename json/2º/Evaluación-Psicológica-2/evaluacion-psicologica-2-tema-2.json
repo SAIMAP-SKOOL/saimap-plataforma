@@ -1,0 +1,2458 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es correcto afirmar que las técnicas subjetivas se distinguen de los autoinformes tradicionales por el nivel de estructuración y cierre de sus estímulos?",
+      "options": [
+        "Verdadero, pues emplean estímulos relativamente abiertos y flexibles.",
+        "Falso, ya que ambas categorías utilizan únicamente ítems estandarizados.",
+        "No sabe, pues el texto no establece una comparación con los autoinformes."
+      ],
+      "correct": 0,
+      "hint": "Revisa el primer párrafo del apartado 1.2.",
+      "explanation": "El texto indica que, a diferencia de los autoinformes tradicionales, en las técnicas subjetivas el sujeto organiza y atribuye significado a partir de estímulos relativamente abiertos."
+    },
+    {
+      "q": "¿Las técnicas subjetivas son consideradas procedimientos de evaluación enmascarados y de respuesta involuntaria?",
+      "options": [
+        "Verdadero, el sujeto desconoce la finalidad y responde de forma automática.",
+        "Falso, se definen como técnicas no enmascaradas y de respuesta voluntaria.",
+        "No sabe, la voluntariedad de la respuesta no se menciona en este manual."
+      ],
+      "correct": 1,
+      "hint": "Observa las características de la materia evaluada en la página 17.",
+      "explanation": "La materia evaluada en las técnicas subjetivas es semiestructurada, no enmascarada y flexible, siendo la respuesta de carácter voluntario."
+    },
+    {
+      "q": "¿Es el POMS (Profile of Mood States) un ejemplo de técnica subjetiva que ofrece exclusivamente un análisis de tipo cualitativo?",
+      "options": [
+        "Verdadero, sus resultados solo permiten categorizaciones descriptivas.",
+        "Falso, permite una interpretación cuantitativa mediante puntuaciones T.",
+        "No sabe, el texto no especifica el tipo de análisis estadístico del POMS."
+      ],
+      "correct": 1,
+      "hint": "Consulta el apartado 1.2.1 sobre Listas de adjetivos.",
+      "explanation": "El POMS ofrece puntuaciones tipificadas (T scores), lo que permite realizar una interpretación cuantitativa de los estados afectivos."
+    },
+    {
+      "q": "¿El Diferencial Semántico de Osgood evalúa el significado subjetivo mediante tres dimensiones: Valoración, Potencia y Actividad?",
+      "options": [
+        "Verdadero, estas tres dimensiones agrupan los factores de evaluación.",
+        "Falso, las dimensiones reales son Estabilidad, Introversión y Energía.",
+        "No sabe, el manual menciona los adjetivos pero no define factores."
+      ],
+      "correct": 0,
+      "hint": "Busca los tres grandes factores mencionados al final de la página 18.",
+      "explanation": "Osgood propuso que las dimensiones evaluadas se agrupan en los factores: Valorativa (bueno-malo), Potencia (fuerte-débil) y Actividad (rápido-lento)."
+    },
+    {
+      "q": "¿La Técnica de la Rejilla de Kelly se basa exclusivamente en la comparación de elementos mediante escalas Likert cerradas?",
+      "options": [
+        "Verdadero, es un método puramente psicométrico de ítems fijos.",
+        "Falso, solicita al sujeto comparar roles por tríadas para hallar constructos.",
+        "No sabe, el texto no detalla el procedimiento de comparación por tríadas."
+      ],
+      "correct": 1,
+      "hint": "Revisa el apartado 1.2.3 sobre la Técnica de constructos personales.",
+      "explanation": "La técnica parte de roles significativos y solicita al sujeto compararlos por tríadas para identificar similitudes y diferencias (constructos)."
+    },
+    {
+      "q": "¿Las técnicas proyectivas se fundamentan en el mecanismo de defensa de la proyección para explorar aspectos inconscientes?",
+      "options": [
+        "Verdadero, el sujeto atribuye aspectos internos a estímulos externos.",
+        "Falso, el fundamento es el condicionamiento operante de la conducta.",
+        "No sabe, el concepto de proyección no se define en el marco dinámico."
+      ],
+      "correct": 0,
+      "hint": "Analiza la definición de técnicas proyectivas en la página 21.",
+      "explanation": "Se basan en la idea de proyección, donde el sujeto atribuye a estímulos externos aspectos internos (deseos, miedos) sin ser plenamente consciente."
+    },
+    {
+      "q": "¿El Test de Rorschach se clasifica como una técnica proyectiva de tipo estructural?",
+      "options": [
+        "Verdadero, pues presenta estímulos visuales escasamente estructurados.",
+        "Falso, pertenece a las técnicas expresivas basadas en el dibujo libre.",
+        "No sabe, la clasificación de técnicas proyectivas no incluye al Rorschach."
+      ],
+      "correct": 0,
+      "hint": "Consulta la Tabla 6 sobre tipos de técnicas proyectivas.",
+      "explanation": "El Test de Rorschach es el ejemplo principal de las técnicas estructurales, donde se interpretan estímulos visuales poco estructurados."
+    },
+    {
+      "q": "¿Todas las láminas del Test de Rorschach son multicolores para estimular la reactividad emocional intensa?",
+      "options": [
+        "Verdadero, las diez láminas contienen una amplia gama de colores.",
+        "Falso, cinco láminas son en blanco y negro y solo tres son multicolores.",
+        "No sabe, el color de las láminas no es un factor relevante en este test."
+      ],
+      "correct": 1,
+      "hint": "Revisa la descripción de las láminas en el apartado 1.3.1.",
+      "explanation": "El test tiene 5 láminas en blanco y negro (I, IV, V, VI, VII), 2 en negro y rojo (II, III) y solo 3 son multicolores (VIII, IX, X)."
+    },
+    {
+      "q": "¿En el Test de Rorschach, el código 'L' se refiere al determinante relacionado con la luminosidad de la mancha?",
+      "options": [
+        "Verdadero, mide la reacción del sujeto ante la intensidad de la luz.",
+        "Falso, el código 'L' hace referencia a la Localización de la respuesta.",
+        "No sabe, los indicadores de codificación no usan letras para categorías."
+      ],
+      "correct": 1,
+      "hint": "Observa los criterios de análisis en la página 22.",
+      "explanation": "El indicador 'Localización' se abrevia como (L) y se refiere a la parte específica de la mancha que captó la atención del sujeto."
+    },
+    {
+      "q": "¿El TAT de Murray utiliza la lámina número 16, la cual es completamente blanca, para fomentar la libre proyección?",
+      "options": [
+        "Verdadero, permite proyectar sin pautas visuales activando la imaginación.",
+        "Falso, la lámina 16 contiene una escena de un bosque con niebla densa.",
+        "No sabe, el TAT solo incluye láminas con escenas figurativas explícitas."
+      ],
+      "correct": 0,
+      "hint": "Busca la descripción de la lámina 16 en la página 23.",
+      "explanation": "La lámina 16 es completamente en blanco, lo que permite al sujeto proyectar sin pautas visuales su mundo imaginativo."
+    },
+    {
+      "q": "¿Es la sigla 'V' en la versión española del TAT utilizada para identificar a varones menores de 14 años?",
+      "options": [
+        "Verdadero, la 'V' mayúscula representa a los niños en etapa escolar.",
+        "Falso, la 'V' mayúscula es para varones mayores de 14 años.",
+        "No sabe, el manual no especifica el significado de las siglas de edad."
+      ],
+      "correct": 1,
+      "hint": "Revisa los códigos de aplicación del TAT en la página 24.",
+      "explanation": "En el TAT, la 'V' mayúscula es para varones mayores de 14 años, mientras que la 'v' minúscula es para menores de esa edad."
+    },
+    {
+      "q": "¿El Test del Árbol se considera una técnica proyectiva de tipo asociativo?",
+      "options": [
+        "Verdadero, se basa en la asociación libre de palabras tras el dibujo.",
+        "Falso, se clasifica como una técnica expresiva o gráfica.",
+        "No sabe, el test del árbol no pertenece a ninguna categoría de la Tabla 6."
+      ],
+      "correct": 1,
+      "hint": "Compara el Test del Árbol con las categorías de la Tabla 6.",
+      "explanation": "Según la Tabla 6, las técnicas expresivas implican dibujos, y el Test del Árbol es un ejemplo clásico de esta categoría."
+    },
+    {
+      "q": "¿En el Test del Árbol, las raíces representan la proyección hacia el futuro y el mundo de las relaciones?",
+      "options": [
+        "Verdadero, simbolizan el crecimiento y las metas a largo plazo.",
+        "Falso, representan el enraizamiento y la conexión con los orígenes.",
+        "No sabe, las raíces carecen de valor interpretativo en adultos."
+      ],
+      "correct": 1,
+      "hint": "Consulta la interpretación de elementos en la página 27.",
+      "explanation": "Las raíces indican el enraizamiento, la conexión con los orígenes y los vínculos familiares, no la proyección futura."
+    },
+    {
+      "q": "¿El tronco en el dibujo del árbol es el elemento que simboliza la estabilidad y el 'yo' del sujeto?",
+      "options": [
+        "Verdadero, representa la firmeza del autoconcepto y control emocional.",
+        "Falso, el tronco representa exclusivamente la capacidad intelectual.",
+        "No sabe, el 'yo' se representa mediante la copa y no mediante el tronco."
+      ],
+      "correct": 0,
+      "hint": "Busca el significado del tronco en la página 27.",
+      "explanation": "El tronco representa el 'yo' y la estabilidad; un tronco firme sugiere buen control emocional y fortaleza interna."
+    },
+    {
+      "q": "¿Se recomienda aplicar las técnicas proyectivas como única fuente de información para garantizar un diagnóstico objetivo?",
+      "options": [
+        "Verdadero, su profundidad cualitativa las hace autosuficientes.",
+        "Falso, deben complementarse con otras pruebas para una visión integral.",
+        "No sabe, el texto no ofrece recomendaciones sobre la integración de datos."
+      ],
+      "correct": 1,
+      "hint": "Lee las conclusiones sobre la aplicación en la página 25 y 27.",
+      "explanation": "El manual recomienda complementar las pruebas proyectivas con otras fuentes para evitar interpretaciones reduccionistas."
+    },
+    {
+      "q": "¿El procedimiento de la Rejilla de Kelly permite un análisis tanto cualitativo como cuantitativo de los constructos?",
+      "options": [
+        "Verdadero, incluye interpretación de significados y análisis factoriales.",
+        "Falso, por ser técnica subjetiva, solo admite análisis cualitativo.",
+        "No sabe, los análisis cuantitativos están prohibidos en este modelo."
+      ],
+      "correct": 0,
+      "hint": "Consulta la descripción de la Rejilla de Kelly en la página 19.",
+      "explanation": "La rejilla puede ser analizada cualitativamente (significados) y cuantitativamente (correlaciones, análisis factoriales)."
+    },
+    {
+      "q": "¿El Test de Rorschach incluye una fase denominada 'encuesta' donde se explora la localización y los determinantes?",
+      "options": [
+        "Verdadero, sirve para especificar en qué parte de la lámina se basó el sujeto.",
+        "Falso, la encuesta es una fase de aplicación colectiva posterior al test.",
+        "No sabe, el test solo consta de una fase de asociación libre de ideas."
+      ],
+      "correct": 0,
+      "hint": "Revisa las fases de administración del Rorschach en la página 22.",
+      "explanation": "En la fase de encuesta o interrogatorio, el evaluador explora dónde vio el sujeto la figura y qué características influyeron."
+    },
+    {
+      "q": "¿La técnica de Listas de Adjetivos permite evaluar exclusivamente rasgos de personalidad patológicos?",
+      "options": [
+        "Verdadero, su uso se limita a la detección de trastornos mentales graves.",
+        "Falso, evalúa también rasgos normales, estados afectivos y percepciones.",
+        "No sabe, el texto no menciona las aplicaciones de las listas de adjetivos."
+      ],
+      "correct": 1,
+      "hint": "Consulta las aplicaciones de las listas de adjetivos en la página 18.",
+      "explanation": "Permiten evaluar rasgos de personalidad, estados afectivos o percepciones sociales, siendo útiles en investigación sobre bienestar."
+    },
+    {
+      "q": "¿En el sistema de Loosli-Usteri, el símbolo 'v' indica que la lámina ha sido girada 180 grados (posición invertida)?",
+      "options": [
+        "Verdadero, representa la inversión completa de la lámina original.",
+        "Falso, indica que el sujeto ha rechazado la lámina sin dar respuesta.",
+        "No sabe, los símbolos de giro no están estandarizados en el Rorschach."
+      ],
+      "correct": 0,
+      "hint": "Observa los códigos de posición en la página 22.",
+      "explanation": "Según Loosli-Usteri, el símbolo 'v' corresponde a la posición invertida de la lámina durante la respuesta."
+    },
+    {
+      "q": "¿El CAT (Children's Apperception Test) es una adaptación del TAT para población en edad escolar?",
+      "options": [
+        "Verdadero, es la versión específica diseñada para la evaluación infantil.",
+        "Falso, el CAT es un test de inteligencia no verbal ajeno al TAT.",
+        "No sabe, el texto menciona el CAT pero no su relación con el TAT."
+      ],
+      "correct": 0,
+      "hint": "Busca la mención del CAT en el apartado del TAT (página 24).",
+      "explanation": "El texto cita al CAT como una adaptación para la infancia del Test de Apercepción Temática estándar."
+    },
+    {
+      "q": "¿En el análisis del TAT de Ávila, el concepto de 'Héroe' se refiere al personaje con el que el sujeto se identifica?",
+      "options": [
+        "Verdadero, se analizan sus emociones y similitudes con el evaluado.",
+        "Falso, el héroe es siempre la figura de autoridad externa en el relato.",
+        "No sabe, el análisis de Ávila se centra en el ambiente y no en personajes."
+      ],
+      "correct": 0,
+      "hint": "Consulta los componentes de análisis de Ávila en la página 25.",
+      "explanation": "El 'Héroe' es el personaje principal identificado con el sujeto, analizando su conducta y resolución de conflictos."
+    },
+    {
+      "q": "¿Las técnicas subjetivas pueden aplicarse mediante informantes cercanos como familiares o docentes?",
+      "options": [
+        "Verdadero, el formato permite que otros califiquen al sujeto evaluado.",
+        "Falso, solo el propio sujeto puede ser fuente de información subjetiva.",
+        "No sabe, el manual no contempla el uso de informantes en estas técnicas."
+      ],
+      "correct": 0,
+      "hint": "Revisa el segundo párrafo del apartado 1.2 en la página 17.",
+      "explanation": "El texto especifica que estas técnicas pueden aplicarse directamente al sujeto o mediante informantes cercanos (familiares, docentes)."
+    },
+    {
+      "q": "¿El Test de la Idea Imaginaria se clasifica como una técnica proyectiva de tipo constructivo?",
+      "options": [
+        "Verdadero, implica la organización de materiales simbólicos específicos.",
+        "Falso, es una técnica estructural basada en manchas de tinta abstractas.",
+        "No sabe, el ejemplo no figura en la clasificación de técnicas proyectivas."
+      ],
+      "correct": 0,
+      "hint": "Busca el ejemplo en la Tabla 6 de la página 21.",
+      "explanation": "El Test de la Idea Imaginaria aparece como ejemplo de técnica proyectiva de tipo constructiva."
+    },
+    {
+      "q": "¿En el Test del Árbol, las ramas caóticas o espinosas se asocian frecuentemente con la ansiedad y conflictos relacionales?",
+      "options": [
+        "Verdadero, reflejan dificultades para establecer límites e inestabilidad.",
+        "Falso, son indicadores de una alta creatividad y originalidad cognitiva.",
+        "No sabe, el diseño de las ramas carece de interpretación psicodinámica."
+      ],
+      "correct": 0,
+      "hint": "Consulta la interpretación de ramas y copa en la página 27.",
+      "explanation": "Ramas caóticas o espinosas pueden asociarse a ansiedad, dificultad para establecer límites o conflictos relacionales."
+    },
+    {
+      "q": "¿Se debe establecer un límite estricto de 3 minutos para la realización del dibujo en el Test del Árbol?",
+      "options": [
+        "Verdadero, la rapidez es el principal indicador de salud mental.",
+        "Falso, no se establece límite de tiempo, aunque suele durar 5-15 min.",
+        "No sabe, el tiempo de administración depende del criterio del sujeto."
+      ],
+      "correct": 1,
+      "hint": "Busca la sección de administración del Test del Árbol en la página 26.",
+      "explanation": "El manual indica explícitamente que 'no se establece límite de tiempo' para el dibujo del árbol."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la materia evaluada en las técnicas subjetivas:",
+      "options": [
+        "Es semiestructurada, no enmascarada, flexible y de respuesta voluntaria.",
+        "Es totalmente estructurada, enmascarada, rígida y de respuesta obligatoria.",
+        "Es desestructurada, enmascarada, variable y de respuesta inconsciente."
+      ],
+      "correct": 0,
+      "hint": "Revisa las propiedades generales en la página 17.",
+      "explanation": "El manual define la materia como semiestructurada, no enmascarada y flexible, con respuesta voluntaria."
+    },
+    {
+      "q": "Elija la afirmación correcta respecto a los factores que componen el POMS:",
+      "options": [
+        "Ansiedad, depresión, ira, fatiga, vigor y confusión.",
+        "Introextraversión, neuroticismo, psicoticismo y sinceridad.",
+        "Apertura, responsabilidad, cordialidad, energía y afecto."
+      ],
+      "correct": 0,
+      "hint": "Consulta el apartado 1.2.1 sobre el Perfil de Estados de Ánimo.",
+      "explanation": "Los 65 adjetivos del POMS se agrupan en: ansiedad, depresión, ira, fatiga, vigor y confusión."
+    },
+    {
+      "q": "Indique la opción correcta sobre el objetivo de la fase de encuesta en el Rorschach:",
+      "options": [
+        "Especificar la localización, los determinantes y el contenido de la respuesta.",
+        "Cronometrar el tiempo de latencia inicial ante cada una de las diez láminas.",
+        "Sugerir interpretaciones alternativas al sujeto para evaluar su sugeribilidad."
+      ],
+      "correct": 0,
+      "hint": "Revisa la fase 2 de administración en la página 22.",
+      "explanation": "La encuesta sirve para que el evaluador identifique en qué parte se basó el sujeto y qué características (forma, color, etc.) influyeron."
+    },
+    {
+      "q": "Señale la opción correcta sobre la consigna inicial del Test del Árbol:",
+      "options": [
+        "Dibuja un árbol cualquiera, que no sea de Navidad ni esté decorado.",
+        "Dibuja un árbol frutal que represente tus metas profesionales futuras.",
+        "Dibuja un árbol genealógico que incluya al menos tres generaciones."
+      ],
+      "correct": 0,
+      "hint": "Consulta el modo de aplicación en la página 26.",
+      "explanation": "La consigna exacta es: 'Dibuja un árbol, como tú quieras. No puede ser un árbol de Navidad, ni un árbol ya recortado o decorado'."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre el significado del tamaño excesivamente grande del árbol:",
+      "options": [
+        "Puede asociarse a mecanismos de compensación o fantasías de omnipotencia.",
+        "Indica siempre una alta autoestima y un ajuste psicológico excepcional.",
+        "Es un indicador inequívoco de la presencia de un trastorno orgánico cerebral."
+      ],
+      "correct": 0,
+      "hint": "Busca la interpretación del tamaño en la página 27.",
+      "explanation": "Árboles excesivamente grandes pueden relacionarse con compensación o fantasías de omnipotencia, según el manual."
+    },
+    {
+      "q": "Indique la opción correcta respecto a los 'Determinantes' en el análisis del Rorschach:",
+      "options": [
+        "Son características perceptuales como la forma, color, textura o movimiento.",
+        "Representan la categoría semántica (animal, objeto, humano) de lo percibido.",
+        "Miden exclusivamente el grado de originalidad estadística de la respuesta."
+      ],
+      "correct": 0,
+      "hint": "Revisa los criterios de análisis (D) en la página 22.",
+      "explanation": "Los determinantes (D) son las características perceptuales (forma, color, movimiento, etc.) que influyen en la respuesta."
+    },
+    {
+      "q": "Señale la opción correcta sobre la aplicación del TAT de Murray:",
+      "options": [
+        "Se solicita narrar una historia con pasado, presente, sentimientos y desenlace.",
+        "Se pide al sujeto que asocie una sola palabra a cada una de las láminas.",
+        "Se requiere que el evaluado ordene las láminas cronológicamente en silencio."
+      ],
+      "correct": 0,
+      "hint": "Consulta las instrucciones de narración en la página 24.",
+      "explanation": "El evaluador pide: qué ocurre, qué llevó a ello, qué piensan/sienten y cómo terminará la historia."
+    },
+    {
+      "q": "Elija la opción correcta sobre el fundamento teórico de las técnicas subjetivas:",
+      "options": [
+        "Se vincula a enfoques fenomenológicos, constructivistas, cognitivos o humanistas.",
+        "Se basa estrictamente en el conductismo radical y el análisis funcional.",
+        "Deriva exclusivamente de la neurología clásica y la frenología del siglo XIX."
+      ],
+      "correct": 0,
+      "hint": "Revisa el tercer párrafo de la página 17.",
+      "explanation": "Su fundamento teórico varía dependiendo del objetivo, abarcando marcos fenomenológicos, constructivistas o humanistas."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la interpretación de la ubicación del árbol en la hoja:",
+      "options": [
+        "Puede reflejar el grado de seguridad, pertenencia u orientación emocional.",
+        "Indica únicamente la dominancia hemisférica y la lateralidad del sujeto.",
+        "Determina de forma automática el coeficiente intelectual del evaluado."
+      ],
+      "correct": 0,
+      "hint": "Consulta 'Ubicación en la hoja' en la página 27.",
+      "explanation": "La posición del árbol (arriba, abajo, lados) se relaciona con la seguridad y orientación emocional del sujeto."
+    },
+    {
+      "q": "Indique la opción correcta sobre el análisis de distancias semánticas en Osgood:",
+      "options": [
+        "Permite realizar comparaciones entre sujetos, momentos o contextos sociales.",
+        "Es un método para medir la agudeza visual y la percepción de la profundidad.",
+        "Calcula el tiempo de reacción física entre la lectura de dos adjetivos."
+      ],
+      "correct": 0,
+      "hint": "Revisa las aplicaciones del Diferencial Semántico en la página 19.",
+      "explanation": "Mediante el análisis de distancias semánticas se pueden comparar valoraciones entre distintos sujetos o momentos temporales."
+    },
+    {
+      "q": "Señale la opción correcta sobre la lámina 16 del TAT de Murray:",
+      "options": [
+        "Es totalmente blanca y activa el mundo imaginativo de manera libre.",
+        "Muestra una escena de una mujer joven llorando en un dormitorio vacío.",
+        "Contiene una figura geométrica abstracta para evaluar el pensamiento lógico."
+      ],
+      "correct": 0,
+      "hint": "Busca la descripción de láminas en la página 23.",
+      "explanation": "La lámina 16 es blanca, diseñada para que el sujeto proyecte sin pauta visual alguna."
+    },
+    {
+      "q": "Elija la opción correcta sobre la clasificación de las técnicas proyectivas asociativas:",
+      "options": [
+        "Fábulas de Düss, asociación libre y frases incompletas son ejemplos típicos.",
+        "Test de Rorschach y Test de Zulliger representan esta categoría estructural.",
+        "Test del Árbol y de la Figura Humana son sus principales exponentes gráficos."
+      ],
+      "correct": 0,
+      "hint": "Consulta la Tabla 6 en la página 21.",
+      "explanation": "Las técnicas asociativas parten de consignas verbales abiertas como palabras o frases incompletas."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la fase de asociación libre en el Rorschach:",
+      "options": [
+        "El evaluador registra respuestas, tiempos, gestos y posiciones de lámina.",
+        "El examinador debe interrumpir al sujeto para corregir errores de percepción.",
+        "El evaluado debe escribir sus propias respuestas en un formulario oficial."
+      ],
+      "correct": 0,
+      "hint": "Revisa la fase 1 de administración en la página 22.",
+      "explanation": "En esta fase se registra todo lo que el sujeto dice y hace espontáneamente ante las láminas."
+    },
+    {
+      "q": "Indique la opción correcta sobre la interpretación del tronco inestable en el Test del Árbol:",
+      "options": [
+        "Puede vincularse a inseguridad, impulsividad o fragilidad del yo.",
+        "Refleja una gran capacidad de adaptación y flexibilidad ante el estrés.",
+        "Es señal de una estructura de personalidad rígida y obsesiva."
+      ],
+      "correct": 0,
+      "hint": "Consulta el apartado 'Tronco' en la página 27.",
+      "explanation": "Troncos inestables o fragmentados sugieren inseguridad o debilidad en la estructura del yo."
+    },
+    {
+      "q": "Señale la opción correcta sobre el Sistema Comprehensivo de Exner:",
+      "options": [
+        "Es un sistema de codificación complejo para sistematizar el Test de Rorschach.",
+        "Se trata de un manual para la interpretación de las Listas de Adjetivos.",
+        "Consiste en una guía ética para la aplicación de test de inteligencia infantil."
+      ],
+      "correct": 0,
+      "hint": "Busca la mención de Exner en la página 21 o 23.",
+      "explanation": "Exner desarrolló un sistema para estandarizar y codificar las respuestas al test de Rorschach."
+    },
+    {
+      "q": "Elija la opción correcta sobre la 'Frecuencia' como indicador en el Rorschach:",
+      "options": [
+        "Distingue entre respuestas populares (P) y respuestas originales (O).",
+        "Mide cuántas veces el sujeto gira la lámina antes de dar una respuesta.",
+        "Indica el número total de palabras utilizadas por el evaluado en el test."
+      ],
+      "correct": 0,
+      "hint": "Consulta los criterios de análisis (F) en la página 23.",
+      "explanation": "La frecuencia (F) evalúa si la respuesta es común (popular) o infrecuente (original)."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la utilidad del Test del Árbol en población infantil:",
+      "options": [
+        "Es especialmente útil en niños por ser una herramienta sencilla y gráfica.",
+        "Está contraindicado en menores de 12 años por su alta complejidad teórica.",
+        "Requiere que el niño tenga un nivel de lectura y escritura avanzado."
+      ],
+      "correct": 0,
+      "hint": "Revisa las aplicaciones del Test del Árbol en la página 27.",
+      "explanation": "El manual destaca que es muy útil en niños, adolescentes y personas con dificultades verbales."
+    },
+    {
+      "q": "Indique la opción correcta sobre la interpretación de las ramas armoniosas en el dibujo:",
+      "options": [
+        "Suelen reflejar flexibilidad y una adecuada apertura interpersonal.",
+        "Indican la presencia de deseos reprimidos de carácter agresivo.",
+        "Representan la falta de raíces y una desconexión total con la familia."
+      ],
+      "correct": 0,
+      "hint": "Consulta 'Ramas y copa' en la página 27.",
+      "explanation": "Ramas armoniosas y abiertas son indicadores de flexibilidad y buena disposición social."
+    },
+    {
+      "q": "Señale la opción correcta sobre el Test de Apercepción Temática de Murray:",
+      "options": [
+        "Explora la dinámica interna de la personalidad mediante relatos narrativos.",
+        "Evalúa la capacidad de atención sostenida mediante estímulos de manchas.",
+        "Mide la velocidad de procesamiento de información visual abstracta."
+      ],
+      "correct": 0,
+      "hint": "Revisa la finalidad del TAT en la página 23.",
+      "explanation": "El TAT explora deseos, conflictos y defensas a través de las historias que el sujeto construye."
+    },
+    {
+      "q": "Elija la opción correcta respecto al análisis cualitativo en la Rejilla de Kelly:",
+      "options": [
+        "Se centra en la interpretación de los significados personales atribuidos.",
+        "Requiere exclusivamente el uso de programas estadísticos multivariados.",
+        "Busca comparar los resultados con un baremo nacional de puntuaciones Z."
+      ],
+      "correct": 0,
+      "hint": "Busca el análisis cualitativo de la rejilla en la página 19.",
+      "explanation": "El análisis cualitativo se enfoca en comprender cómo la persona construye su mundo social y personal."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre los 'Presiones' o amenazas en el TAT:",
+      "options": [
+        "Son fuerzas motivacionales externas provenientes del entorno social.",
+        "Se refieren a los impulsos fisiológicos básicos del protagonista del relato.",
+        "Representan el nivel de fatiga física que siente el sujeto durante el test."
+      ],
+      "correct": 0,
+      "hint": "Consulta las fuerzas motivacionales de Ávila en la página 25.",
+      "explanation": "Ávila distingue entre fuerzas internas (héroe) y fuerzas externas (presiones del entorno)."
+    },
+    {
+      "q": "Indique la opción correcta sobre la administración colectiva del TAT:",
+      "options": [
+        "Es posible, aunque la administración individual es la más habitual y fiable.",
+        "Está estrictamente prohibida por los manuales originales de Murray.",
+        "Requiere que todos los sujetos narren una historia única en grupo."
+      ],
+      "correct": 0,
+      "hint": "Revisa el apartado de administración del TAT en la página 24.",
+      "explanation": "El TAT puede ser individual, colectivo o grupal, siendo la individual la preferida."
+    },
+    {
+      "q": "Señale la opción correcta sobre el significado de las raíces en el Test del Árbol:",
+      "options": [
+        "Indican la estabilidad emocional y el enraizamiento con los orígenes.",
+        "Representan la capacidad de comunicación y la proyección profesional.",
+        "Son indicadores de patología si aparecen dibujadas en sujetos adultos."
+      ],
+      "correct": 0,
+      "hint": "Consulta 'Raíces' en la página 27.",
+      "explanation": "Las raíces simbolizan la conexión con las bases internas y los vínculos familiares."
+    },
+    {
+      "q": "Elija la opción correcta sobre el Test del Pueblo y el Test de la Idea Imaginaria:",
+      "options": [
+        "Son ejemplos de técnicas proyectivas de tipo constructivas.",
+        "Se consideran test de personalidad de tipo objetivo y estandarizado.",
+        "Pertenecen a las técnicas proyectivas de tipo temático o narrativo."
+      ],
+      "correct": 0,
+      "hint": "Busca los ejemplos en la Tabla 6 de la página 21.",
+      "explanation": "Ambos tests se listan bajo la categoría 'Constructivas' en la tabla clasificatoria."
+    },
+    {
+      "q": "Seleccione la opción correcta sobre la aplicación del Rorschach en clínica:",
+      "options": [
+        "Requiere formación especializada tanto en aplicación como en codificación.",
+        "Puede ser aplicado por cualquier profesional sin entrenamiento previo.",
+        "Se basa en el uso de láminas fotográficas de paisajes naturales reales."
+      ],
+      "correct": 0,
+      "hint": "Revisa los requisitos de aplicación en la página 23.",
+      "explanation": "El manual advierte que la aplicación del Rorschach requiere formación especializada por su complejidad."
+    },
+    {
+      "q": "Señale la opción incorrecta sobre las características de las técnicas subjetivas:",
+      "options": [
+        "Suelen ser procedimientos de evaluación altamente enmascarados.",
+        "Permiten un acceso privilegiado al mundo experiencial de la persona.",
+        "El sujeto participa calificando personas, objetos o situaciones."
+      ],
+      "correct": 0,
+      "hint": "Revisa las características generales en la página 17.",
+      "explanation": "El manual indica explícitamente que son técnicas 'no enmascaradas'."
+    },
+    {
+      "q": "Seleccione la opción incorrecta sobre los factores evaluados por el POMS:",
+      "options": [
+        "Estabilidad emocional frente a introversión.",
+        "Niveles de ansiedad y depresión.",
+        "Factores de vigor, fatiga e ira."
+      ],
+      "correct": 0,
+      "hint": "Consulta los seis factores del POMS en la página 18.",
+      "explanation": "La 'estabilidad emocional' no es uno de los seis factores específicos del POMS citados."
+    },
+    {
+      "q": "Indique la opción incorrecta sobre el Diferencial Semántico de Osgood:",
+      "options": [
+        "Fue diseñado originalmente por George A. Kelly.",
+        "Utiliza pares de adjetivos bipolares en escalas numéricas.",
+        "Explora el significado subjetivo de conceptos como 'familia'."
+      ],
+      "correct": 0,
+      "hint": "Busca el autor en el apartado 1.2.2.",
+      "explanation": "Fue diseñado por Charles E. Osgood, no por George A. Kelly (quien creó la rejilla)."
+    },
+    {
+      "q": "Señale la opción incorrecta respecto a la Rejilla de Kelly:",
+      "options": [
+        "Es un instrumento puramente cuantitativo sin base cualitativa.",
+        "Permite identificar los constructos personales del individuo.",
+        "Utiliza una matriz para organizar elementos y significados."
+      ],
+      "correct": 0,
+      "hint": "Revisa la descripción de la rejilla en la página 19.",
+      "explanation": "La rejilla admite análisis tanto cualitativo como cuantitativo; no es 'puramente cuantitativo'."
+    },
+    {
+      "q": "Elija la opción incorrecta sobre los fundamentos de las técnicas proyectivas:",
+      "options": [
+        "Se basan en el análisis de respuestas correctas e incorrectas.",
+        "Exploran aspectos poco accesibles de la personalidad profunda.",
+        "Utilizan estímulos ambiguos para provocar la libre interpretación."
+      ],
+      "correct": 0,
+      "hint": "Busca la diferencia con test estructurados en la página 21.",
+      "explanation": "En las técnicas proyectivas 'no existen respuestas correctas o incorrectas'."
+    },
+    {
+      "q": "Indique la opción incorrecta sobre el material del Test de Rorschach:",
+      "options": [
+        "Está compuesto por quince láminas con figuras asimétricas.",
+        "Combina láminas acromáticas con láminas cromáticas.",
+        "Las figuras consisten en manchas de tinta simétricas."
+      ],
+      "correct": 0,
+      "hint": "Revisa la descripción del test en la página 22.",
+      "explanation": "El test tiene diez láminas (no quince) y las figuras son simétricas (no asimétricas)."
+    },
+    {
+      "q": "Señale la opción incorrecta sobre los criterios de codificación del Rorschach:",
+      "options": [
+        "El criterio 'P' indica que la respuesta es patológica o grave.",
+        "La localización se refiere a qué parte de la mancha se percibe.",
+        "Los determinantes incluyen aspectos como el color o movimiento."
+      ],
+      "correct": 0,
+      "hint": "Consulta la categoría 'Frecuencia' en la página 23.",
+      "explanation": "El código 'P' significa 'Popular', indicando que la respuesta es común, no patológica."
+    },
+    {
+      "q": "Elija la opción incorrecta sobre los códigos de posición de Loosli-Usteri:",
+      "options": [
+        "El símbolo '>' indica un giro hacia la izquierda de la lámina.",
+        "La letra 'd' representa un giro libre antes de responder.",
+        "El símbolo 'v' representa que la lámina está invertida."
+      ],
+      "correct": 0,
+      "hint": "Observa el listado de códigos de posición en la página 22.",
+      "explanation": "El símbolo '>' es para giro a la derecha, mientras que '<' es para giro a la izquierda."
+    },
+    {
+      "q": "Indique la opción incorrecta sobre la administración del TAT de Murray:",
+      "options": [
+        "Solo puede administrarse a personas de entre 20 y 40 años.",
+        "Puede realizarse en una o dos sesiones según el sujeto.",
+        "Se emplean diferentes siglas según el sexo y edad del evaluado."
+      ],
+      "correct": 0,
+      "hint": "Consulta el rango de edad en la página 24.",
+      "explanation": "Se administra de forma estándar entre los 10 y 65 años, no solo entre 20 y 40."
+    },
+    {
+      "q": "Señale la opción incorrecta sobre el análisis del TAT propuesto por Ávila:",
+      "options": [
+        "Se centra únicamente en contar el número de verbos utilizados.",
+        "Analiza el desenlace de la historia y su nivel de ajuste.",
+        "Evalúa las fuerzas motivacionales internas y externas."
+      ],
+      "correct": 0,
+      "hint": "Busca los componentes de análisis en la página 25.",
+      "explanation": "El análisis de Ávila incluye tema, héroe, ambiente, fuerzas y desenlace, no el conteo de verbos."
+    },
+    {
+      "q": "Elija la opción incorrecta sobre el Test del Árbol de Karl Koch:",
+      "options": [
+        "Es una técnica proyectiva que utiliza estímulos verbales cerrados.",
+        "Permite explorar la autoimagen y el sentido del yo profundo.",
+        "Se basa en el alto contenido simbólico de la figura del árbol."
+      ],
+      "correct": 0,
+      "hint": "Busca el tipo de test en el apartado 1.3.3.",
+      "explanation": "Es una técnica proyectiva gráfica, no utiliza estímulos verbales cerrados."
+    },
+    {
+      "q": "Indique la opción incorrecta sobre la interpretación del Test del Árbol:",
+      "options": [
+        "Un árbol muy pequeño siempre indica una inteligencia superior.",
+        "El tronco representa el yo y el control emocional del sujeto.",
+        "La copa indica el mundo relacional y proyección futura."
+      ],
+      "correct": 0,
+      "hint": "Consulta la interpretación del tamaño en la página 27.",
+      "explanation": "Árboles muy pequeños suelen asociarse a baja autoestima o retraimiento, no a inteligencia."
+    },
+    {
+      "q": "Señale la opción incorrecta sobre la consigna del Test del Árbol:",
+      "options": [
+        "Se debe pedir al sujeto que dibuje un árbol genealógico familiar.",
+        "Se especifica que no puede ser un árbol de Navidad decorado.",
+        "Se proporciona una hoja en blanco y se da libertad creativa."
+      ],
+      "correct": 0,
+      "hint": "Revisa la consigna exacta en la página 26.",
+      "explanation": "La consigna es dibujar un árbol 'cualquiera', no un árbol genealógico."
+    },
+    {
+      "q": "Elija la opción incorrecta sobre el Diferencial Semántico:",
+      "options": [
+        "Incluye adjetivos bipolares como 'agradable-desagradable'.",
+        "Evalúa exclusivamente la inteligencia lógica del sujeto.",
+        "Permite observar cambios de significado a lo largo del tiempo."
+      ],
+      "correct": 1,
+      "hint": "Busca la finalidad en la página 18.",
+      "explanation": "Explora significados subjetivos y actitudes, no la inteligencia lógica."
+    },
+    {
+      "q": "Indique la opción incorrecta sobre las técnicas proyectivas expresivas:",
+      "options": [
+        "Ejemplos comunes son el Rorschach y el Test de las Manchas.",
+        "Implican la producción espontánea de dibujos o gráficos.",
+        "Incluyen el Test del Árbol y el Test de la Familia."
+      ],
+      "correct": 0,
+      "hint": "Consulta la clasificación en la Tabla 6.",
+      "explanation": "El Rorschach es una técnica estructural; las expresivas son las basadas en dibujos."
+    },
+    {
+      "q": "Señale la opción incorrecta sobre la lámina blanca (16) del TAT:",
+      "options": [
+        "Obliga al sujeto a describir una fotografía real del evaluador.",
+        "Busca activar el mundo imaginativo sin pautas visuales.",
+        "Permite una proyección más libre de los contenidos internos."
+      ],
+      "correct": 0,
+      "hint": "Busca la función de la lámina 16 en la página 23.",
+      "explanation": "La lámina 16 es blanca para que el sujeto imagine la escena, no para describir una foto real."
+    },
+    {
+      "q": "Elija la opción incorrecta sobre la entrevista posterior en el Test del Árbol:",
+      "options": [
+        "Su objetivo es calcular el CI mediante preguntas de memoria.",
+        "Puede incluir preguntas sobre la edad que tendría el árbol.",
+        "Sirve para enriquecer la interpretación cualitativa inicial."
+      ],
+      "correct": 0,
+      "hint": "Consulta la sección de entrevista en la página 26.",
+      "explanation": "La entrevista posterior busca profundizar en el significado proyectivo, no medir el CI."
+    },
+    {
+      "q": "Indique la opción incorrecta sobre la interpretación del tronco del árbol:",
+      "options": [
+        "Es el elemente que representa los vínculos con el futuro lejano.",
+        "Representa la estabilidad y firmeza del yo del individuo.",
+        "Troncos fragmentados pueden sugerir fragilidad emocional."
+      ],
+      "correct": 0,
+      "hint": "Revisa 'Tronco' en la página 27.",
+      "explanation": "El tronco representa el yo y estabilidad presente, no los vínculos con el futuro (que es la copa)."
+    },
+    {
+      "q": "Señale la opción incorrecta sobre el SAT (Senior Apperception Technique):",
+      "options": [
+        "Es un test diseñado para evaluar exclusivamente a recién nacidos.",
+        "Se trata de una adaptación del TAT para personas mayores.",
+        "Forma parte de la familia de técnicas proyectivas temáticas."
+      ],
+      "correct": 0,
+      "hint": "Consulta la mención del SAT en la página 24.",
+      "explanation": "El SAT es para personas mayores (Seniors), no para recién nacidos."
+    },
+    {
+      "q": "Elija la opción incorrecta sobre la localización en el Rorschach:",
+      "options": [
+        "Evalúa si el sujeto utiliza solo el color negro en sus dibujos.",
+        "Se refiere a si el sujeto usa la mancha total o detalles.",
+        "Es uno de los indicadores clave del análisis estructural."
+      ],
+      "correct": 0,
+      "hint": "Busca 'Localización' en la página 22.",
+      "explanation": "La localización se refiere a la parte de la mancha observada, no al color de un dibujo."
+    },
+    {
+      "q": "Indique la opción incorrecta sobre el análisis de datos subjetivos:",
+      "options": [
+        "Nunca pueden ser analizados mediante métodos estadísticos.",
+        "Admiten categorizaciones cualitativas y mapas conceptuales.",
+        "Pueden incluir análisis cuantitativos como el factorial."
+      ],
+      "correct": 0,
+      "hint": "Revisa el tercer párrafo de la página 17.",
+      "explanation": "El texto dice que pueden analizarse cuantitativamente, incluyendo análisis factoriales."
+    },
+    {
+      "q": "Señale la opción incorrecta sobre la sigla 'm' en la versión española del TAT:",
+      "options": [
+        "Se utiliza para identificar a varones adultos de éxito profesional.",
+        "Se refiere a mujeres menores de 14 años de edad.",
+        "Es un código para facilitar la aplicación por sexo y edad."
+      ],
+      "correct": 0,
+      "hint": "Consulta los códigos en la página 24.",
+      "explanation": "La 'm' minúscula es para mujeres menores de 14 años, no varones adultos."
+    },
+    {
+      "q": "Elija la opción incorrecta sobre el Test del Árbol de Koch:",
+      "options": [
+        "Fue desarrollado originalmente en la década de 1820 por Freud.",
+        "Se utiliza frecuentemente en contextos escolares y forenses.",
+        "Busca explorar la personalidad a través del dibujo espontáneo."
+      ],
+      "correct": 0,
+      "hint": "Busca el autor y fecha en la página 26.",
+      "explanation": "Fue desarrollado por Karl Koch en la década de 1950, no por Freud en 1820."
+    },
+    {
+      "q": "Indique la opción incorrecta sobre el trazado y presión en el dibujo del árbol:",
+      "options": [
+        "Las líneas firmes son indicadores de una patología psicótica grave.",
+        "Trazos inseguros o temblorosos pueden indicar tensión interna.",
+        "La presión del trazo aporta pistas sobre la energía psíquica."
+      ],
+      "correct": 0,
+      "hint": "Consulta 'Trazado y presión' en la página 27.",
+      "explanation": "Las líneas firmes indican buen nivel de energía y control emocional, no patología."
+    },
+    {
+      "q": "Señale la opción incorrecta sobre el análisis temático del TAT:",
+      "options": [
+        "Consiste en medir la simetría exacta de los dibujos del sujeto.",
+        "Busca identificar patrones repetitivos y conflictos centrales.",
+        "Analiza el comportamiento y la resolución del 'Héroe'."
+      ],
+      "correct": 0,
+      "hint": "Revisa la interpretación del TAT en la página 25.",
+      "explanation": "El TAT no mide simetría de dibujos; es una técnica narrativa de historias."
+    },
+    {
+      "q": "En las técnicas subjetivas, el evaluado organiza y califica estímulos ____ que permiten un acceso al mundo experiencial del sujeto.",
+      "options": [
+        "semiestructurados y flexibles",
+        "estandarizados y restringidos",
+        "enmascarados y psicométricos"
+      ],
+      "correct": 0,
+      "hint": "Se aleja de los autoinformes tradicionales por su nivel de apertura.",
+      "explanation": "El texto define la materia evaluada como semiestructurada, no enmascarada y flexible, permitiendo organizar significados a partir de estímulos abiertos."
+    },
+    {
+      "q": "El fundamento teórico de las técnicas subjetivas suele vincularse a enfoques de carácter ____ dependiendo del marco interpretativo del evaluador.",
+      "options": [
+        "fenomenológico o constructivista",
+        "psicodinámico o psicoanalítico",
+        "conductual o experimentalista"
+      ],
+      "correct": 0,
+      "hint": "Buscan entender cómo el sujeto construye su propia realidad.",
+      "explanation": "Según el documento, su base teórica se vincula a enfoques fenomenológicos, constructivistas, cognitivos o humanistas."
+    },
+    {
+      "q": "Las listas de adjetivos permiten al sujeto indicar si una serie de descriptores le resultan aplicables mediante un formato ____ de respuesta.",
+      "options": [
+        "dicotómico o de escala Likert",
+        "de asociación libre o abierta",
+        "de ordenamiento por rangos IP"
+      ],
+      "correct": 0,
+      "hint": "Pueden ser respuestas de sí/no o valoraciones numéricas de 1 a 5.",
+      "explanation": "El formato de respuesta en estas listas suele ser dicotómico (si/no) o escalas de valoración tipo Likert."
+    },
+    {
+      "q": "El POMS (Profile of Mood States) es un ejemplo de lista de adjetivos que agrupa sus resultados en ____ factores emocionales específicos.",
+      "options": [
+        "seis factores diferenciados",
+        "tres dimensiones bipolares",
+        "diez categorías analíticas"
+      ],
+      "correct": 0,
+      "hint": "Incluye ansiedad, depresión, ira, fatiga, vigor y confusión.",
+      "explanation": "El POMS evalúa 65 adjetivos que se agrupan en seis factores: ansiedad, depresión, ira, fatiga, vigor y confusión."
+    },
+    {
+      "q": "____ permite explorar el significado subjetivo de conceptos mediante el uso de pares de adjetivos bipolares organizados en escalas.",
+      "options": [
+        "El diferencial semántico",
+        "La rejilla de constructos",
+        "El sistema comprehensivo"
+      ],
+      "correct": 0,
+      "hint": "Fue diseñado originalmente por Charles E. Osgood.",
+      "explanation": "El diferencial semántico utiliza conceptos clave y adjetivos opuestos (agradable-desagradable) para medir significados subjetivos."
+    },
+    {
+      "q": "Las dimensiones evaluadas en la técnica de Osgood suelen agruparse en los factores de ____, potencia y actividad.",
+      "options": [
+        "dimensión valorativa",
+        "determinante formal",
+        "fuerza motivacional"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a si algo es percibido como 'bueno' o 'malo'.",
+      "explanation": "Osgood identifica tres grandes factores: Valorativa (bueno-malo), Potencia (fuerte-débil) y Actividad (rápido-lento)."
+    },
+    {
+      "q": "La técnica de la rejilla de Kelly se fundamenta en la idea de que el ser humano actúa como un ____ que construye hipótesis sobre su entorno.",
+      "options": [
+        "científico intuitivo",
+        "receptor pasivo de",
+        "analista proyectivo"
+      ],
+      "correct": 0,
+      "hint": "Es una metáfora central de la Teoría de los Constructos Personales.",
+      "explanation": "Para Kelly, el ser humano actúa como un científico que construye hipótesis a partir de sus propios filtros cognitivos."
+    },
+    {
+      "q": "En la rejilla de Kelly, se solicita al sujeto comparar elementos significativos por ____ para identificar similitudes y diferencias.",
+      "options": [
+        "tríadas de elementos",
+        "pares de conceptos",
+        "grupos jerárquicos"
+      ],
+      "correct": 0,
+      "hint": "Es el procedimiento estándar para la emergencia de constructos.",
+      "explanation": "La técnica consiste en solicitar al sujeto que compare elementos (como personas significativas) por tríadas."
+    },
+    {
+      "q": "El análisis cuantitativo de la rejilla de Kelly puede incluir técnicas sofisticadas como el ____ o el análisis de distancias.",
+      "options": [
+        "análisis factorial",
+        "estudio de latencia",
+        "recuento de índices"
+      ],
+      "correct": 0,
+      "hint": "Busca reducir la matriz de datos a dimensiones subyacentes.",
+      "explanation": "El análisis cuantitativo permite realizar recuentos, correlaciones, distancias semánticas y análisis factoriales de la matriz."
+    },
+    {
+      "q": "Las técnicas proyectivas se basan en el mecanismo de ____, donde el sujeto atribuye aspectos internos a estímulos externos ambiguos.",
+      "options": [
+        "proyección psíquica",
+        "asociación dirigida",
+        "valoración escalar"
+      ],
+      "correct": 0,
+      "hint": "Concepto central nacido de la psicología dinámica y el psicoanálisis.",
+      "explanation": "La proyección es el mecanismo de defensa por el cual el sujeto atribuye a estímulos externos aspectos internos inconscientes."
+    },
+    {
+      "q": "A diferencia de las técnicas objetivas, en las proyectivas no existen ____, sino que se analiza la estructura de la respuesta.",
+      "options": [
+        "respuestas correctas",
+        "estímulos ambiguos",
+        "marcos interpretativos"
+      ],
+      "correct": 0,
+      "hint": "Se prioriza la interpretación creativa y asociativa del evaluado.",
+      "explanation": "En las técnicas proyectivas no hay respuestas correctas o incorrectas; se analiza el contenido y la organización de la producción."
+    },
+    {
+      "q": "Las técnicas proyectivas de tipo ____ presentan estímulos visuales escasamente estructurados que deben ser interpretados.",
+      "options": [
+        "estructurales",
+        "asociativas",
+        "constructivas"
+      ],
+      "correct": 0,
+      "hint": "El Rorschach es el ejemplo más emblemático de esta categoría.",
+      "explanation": "Las técnicas estructurales presentan estímulos visuales poco estructurados para su interpretación (ej. manchas)."
+    },
+    {
+      "q": "El Test de Rorschach consta de ____ láminas con figuras simétricas creadas mediante manchas de tinta.",
+      "options": [
+        "diez láminas totales",
+        "veinte láminas fijas",
+        "seis láminas mixtas"
+      ],
+      "correct": 0,
+      "hint": "Se dividen en acromáticas, negro/rojo y multicolores.",
+      "explanation": "El Test de Rorschach está compuesto por exactamente diez láminas con figuras simétricas."
+    },
+    {
+      "q": "En el Rorschach, las láminas ____ son exclusivamente en blanco y negro (acromáticas).",
+      "options": [
+        "I, IV, V, VI y VII",
+        "II, III, VIII y IX",
+        "I, II, III, IV y V"
+      ],
+      "correct": 0,
+      "hint": "Representan la mitad de la prueba y exploran la reacción al claroscuro.",
+      "explanation": "El texto especifica que las láminas I, IV, V, VI y VII son en blanco y negro."
+    },
+    {
+      "q": "La fase de ____ en el Rorschach consiste en pedir al sujeto que especifique en qué parte de la lámina basó su interpretación.",
+      "options": [
+        "encuesta o interrogatorio",
+        "asociación libre inicial",
+        "codificación estructural"
+      ],
+      "correct": 0,
+      "hint": "Ocurre después de que el sujeto ha visto todas las láminas una vez.",
+      "explanation": "En la fase de encuesta se explora en qué parte de la mancha se basó el sujeto y qué características (determinantes) influyeron."
+    },
+    {
+      "q": "El indicador de ____ en la codificación del Rorschach se refiere a las características perceptuales como el color o la textura.",
+      "options": [
+        "Determinantes (D)",
+        "Localización (L)",
+        "Contenido (C)"
+      ],
+      "correct": 0,
+      "hint": "Responde a la pregunta '¿Qué de la mancha le hizo ver eso?'.",
+      "explanation": "Los determinantes son las características perceptuales (forma, color, textura, movimiento) que han influido en la respuesta."
+    },
+    {
+      "q": "El Test de Apercepción Temática (TAT) fue desarrollado por ____ en la década de 1930.",
+      "options": [
+        "Murray y Morgan",
+        "George A. Kelly",
+        "Charles E. Osgood"
+      ],
+      "correct": 0,
+      "hint": "Se basa en la construcción de narrativas a partir de escenas.",
+      "explanation": "El TAT fue desarrollado por Henry A. Murray y Christiana D. Morgan."
+    },
+    {
+      "q": "El TAT utiliza la lámina ____ como un estímulo completamente en blanco para activar el mundo imaginativo libre del sujeto.",
+      "options": [
+        "número dieciséis",
+        "número treinta y uno",
+        "número diez inicial"
+      ],
+      "correct": 0,
+      "hint": "Es la única lámina sin dibujo de toda la serie.",
+      "explanation": "La lámina nº 16 es completamente en blanco y permite al sujeto proyectar sin ninguna pauta visual."
+    },
+    {
+      "q": "En la administración del TAT, se pide al sujeto que narre una historia que incluya lo que está ocurriendo, el pasado y el ____.",
+      "options": [
+        "desenlace o final",
+        "significado latente",
+        "conflicto reprimido"
+      ],
+      "correct": 0,
+      "hint": "Debe completar la secuencia temporal de la escena.",
+      "explanation": "Se solicita narrar qué ocurre, qué llevó a ello, qué sienten los personajes y cómo terminará la historia."
+    },
+    {
+      "q": "El concepto de ____ en el análisis del TAT se refiere al personaje principal con el que el sujeto tiende a identificarse.",
+      "options": [
+        "héroe de la historia",
+        "determinante formal",
+        "constructo central"
+      ],
+      "correct": 0,
+      "hint": "Se analizan sus motivaciones, sentimientos y resolución de conflictos.",
+      "explanation": "El héroe es el personaje principal identificado con el sujeto; se analiza su comportamiento y similitudes con el evaluado."
+    },
+    {
+      "q": "Las técnicas proyectivas de tipo ____, como los test de completar frases, facilitan la emergencia de material inconsciente.",
+      "options": [
+        "asociativas",
+        "expresivas",
+        "temáticas"
+      ],
+      "correct": 0,
+      "hint": "Parten de una consigna verbal abierta o palabra estímulo.",
+      "explanation": "Las técnicas asociativas (como frases incompletas o fábulas de Düss) parten de una consigna verbal para la emergencia proyectiva."
+    },
+    {
+      "q": "El Test del Árbol de Karl Koch es una técnica proyectiva ____ que utiliza la representación simbólica para explorar la personalidad.",
+      "options": [
+        "gráfica o expresiva",
+        "estructural cerrada",
+        "asociativa verbal"
+      ],
+      "correct": 0,
+      "hint": "Implica la producción espontánea de un dibujo.",
+      "explanation": "El Test del Árbol se clasifica como técnica proyectiva gráfica o expresiva (producción de dibujos a partir de consignas)."
+    },
+    {
+      "q": "En el Test del Árbol, ____ representa el 'yo', la estabilidad emocional y el control de los impulsos del sujeto.",
+      "options": [
+        "el tronco dibujado",
+        "la copa y ramas",
+        "la raíz del árbol"
+      ],
+      "correct": 0,
+      "hint": "Es la parte central que sostiene toda la estructura.",
+      "explanation": "Según el documento, el tronco representa el 'yo' y la estabilidad emocional de la persona evaluada."
+    },
+    {
+      "q": "La presencia o ausencia de ____ en el dibujo del árbol indica el grado de enraizamiento y la conexión con los orígenes.",
+      "options": [
+        "las raíces",
+        "las sombras",
+        "los frutos"
+      ],
+      "correct": 0,
+      "hint": "Suelen faltar en niños pequeños o personas con escasa conciencia interna.",
+      "explanation": "Las raíces simbolizan el enraizamiento, la conexión con los orígenes y la estabilidad de los vínculos familiares."
+    },
+    {
+      "q": "Las ramas y la copa en el Test del Árbol son indicadores del ____ y de la proyección del sujeto hacia el futuro.",
+      "options": [
+        "mundo relacional",
+        "control pulsional",
+        "esquema corporal"
+      ],
+      "correct": 0,
+      "hint": "Representan cómo la persona se abre o se cierra al entorno social.",
+      "explanation": "Las ramas y la copa indican el mundo relacional y la capacidad de apertura interpersonal del sujeto."
+    },
+    {
+      "q": "Un árbol dibujado con un tamaño ____ puede interpretarse como un indicador de baja autoestima o retraimiento social.",
+      "options": [
+        "muy pequeño",
+        "muy grande",
+        "muy centrado"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la proporción del dibujo respecto al espacio del papel.",
+      "explanation": "Los árboles muy pequeños pueden relacionarse con baja autoestima o retraimiento en la evaluación proyectiva."
+    },
+    {
+      "q": "La técnica de la rejilla permite identificar los constructos personales mediante una matriz de comparación entre ____.",
+      "options": [
+        "elementos y constructos",
+        "adjetivos y conceptos",
+        "factores y dimensiones"
+      ],
+      "correct": 0,
+      "hint": "Es la estructura de datos básica donde se cruzan las filas y columnas.",
+      "explanation": "La rejilla organiza en una matriz los elementos (personas/roles) y los constructos bipolares identificados."
+    },
+    {
+      "q": "En el diferencial semántico, si un sujeto puntúa el concepto 'familia' como 'muy agradable', está activando la dimensión ____.",
+      "options": [
+        "valorativa",
+        "de potencia",
+        "de actividad"
+      ],
+      "correct": 0,
+      "hint": "Es el factor más importante que define la actitud hacia un objeto.",
+      "explanation": "La dimensión Valorativa se mide con pares como bueno-malo o agradable-desagradable."
+    },
+    {
+      "q": "____ propuso un sistema de registro de las posiciones de las láminas del Rorschach (original, invertida, giros).",
+      "options": [
+        "Loosli-Usteri",
+        "Hermann Rorschach",
+        "John E. Exner"
+      ],
+      "correct": 0,
+      "hint": "Utiliza símbolos como 'v', '<' o '>' para indicar el sentido del giro.",
+      "explanation": "El sistema para registrar las posiciones y giros de las láminas fue propuesto por Loosli-Usteri en 1929."
+    },
+    {
+      "q": "Las láminas ____ del test de Rorschach son las que incorporan una gama multicolor de manchas de tinta.",
+      "options": [
+        "VIII, IX y X",
+        "II y III",
+        "I, IV y VI"
+      ],
+      "correct": 0,
+      "hint": "Son las últimas láminas de la prueba y evalúan la reactividad al color.",
+      "explanation": "El texto especifica que las láminas VIII, IX y X son multicolores."
+    },
+    {
+      "q": "En la evaluación mediante TAT, el método de registro más recomendable para no perder variables es ____ (con consentimiento).",
+      "options": [
+        "grabación de audio",
+        "anotación manual",
+        "autoadministración"
+      ],
+      "correct": 0,
+      "hint": "Permite recoger íntegramente el discurso y las pausas del sujeto.",
+      "explanation": "Se mencionan la anotación manual y la grabación, siendo esta última preferible para captar toda la riqueza de la respuesta."
+    },
+    {
+      "q": "El test de apercepción para personas mayores desarrollado a partir del TAT se denomina con las siglas ____.",
+      "options": [
+        "SAT",
+        "CAT",
+        "POMS"
+      ],
+      "correct": 0,
+      "hint": "Senior Apperception Technique.",
+      "explanation": "El SAT es la adaptación del TAT para personas mayores, mientras que el CAT es para la infancia."
+    },
+    {
+      "q": "Las técnicas proyectivas de tipo ____ solicitan al sujeto organizar o estructurar escenas con materiales específicos como juguetes.",
+      "options": [
+        "constructivas",
+        "expresivas",
+        "estructurales"
+      ],
+      "correct": 0,
+      "hint": "Ejemplos son el Test del Pueblo o el Test de la Idea Imaginaria.",
+      "explanation": "Las técnicas constructivas implican organizar materiales específicos para representar el mundo simbólico."
+    },
+    {
+      "q": "____ es el sistema de codificación más riguroso y extendido para sistematizar los resultados del Test de Rorschach.",
+      "options": [
+        "El Sistema Comprehensivo",
+        "El Análisis Temático",
+        "La Escala de Diferencial"
+      ],
+      "correct": 0,
+      "hint": "Fue desarrollado por John E. Exner.",
+      "explanation": "El Sistema Comprehensivo de Exner ha permitido sistematizar y tipificar la interpretación del Rorschach."
+    },
+    {
+      "q": "El factor de ____ en el diferencial semántico se evalúa mediante pares de adjetivos como 'rápido-lento'.",
+      "options": [
+        "Actividad",
+        "Potencia",
+        "Valoración"
+      ],
+      "correct": 0,
+      "hint": "Se refiere al movimiento o dinamismo atribuido al concepto.",
+      "explanation": "El factor de Actividad de Osgood se mide con dimensiones de rapidez o lentitud."
+    },
+    {
+      "q": "En el TAT, la interpretación del héroe incluye analizar sus ____ y cómo estos se relacionan con el ajuste psicológico del sujeto.",
+      "options": [
+        "mecanismos de defensa",
+        "determinantes formales",
+        "tiempos de reacción"
+      ],
+      "correct": 0,
+      "hint": "Son estrategias inconscientes para manejar el conflicto narrado.",
+      "explanation": "Se analizan los conflictos, motivaciones y mecanismos de defensa del héroe como reflejo del sujeto."
+    },
+    {
+      "q": "____ son elementos añadidos en el Test del Árbol que pueden indicar preocupaciones, fantasías o aspectos depresivos.",
+      "options": [
+        "Sombra, nubes o huecos",
+        "Raíces profundas y suelo",
+        "Ramas abiertas y firmes"
+      ],
+      "correct": 0,
+      "hint": "Son accesorios que no forman parte de la estructura esencial del árbol.",
+      "explanation": "Sombra, nubes o huecos son elementos complementarios que aportan pistas sobre preocupaciones o defensas."
+    },
+    {
+      "q": "La consigna del Test del Árbol prohíbe explícitamente dibujar ____ para evitar respuestas estereotipadas.",
+      "options": [
+        "árboles de Navidad",
+        "árboles frutales",
+        "árboles sin hojas"
+      ],
+      "correct": 0,
+      "hint": "El evaluador debe indicar que sea un 'árbol cualquiera'.",
+      "explanation": "La consigna especifica: 'No puede ser un árbol de Navidad, ni un árbol ya recortado o decorado'."
+    },
+    {
+      "q": "El trazado y la presión en el dibujo del árbol son indicadores de la energía psíquica; líneas ____ sugieren ansiedad.",
+      "options": [
+        "temblorosas o inseguras",
+        "firmes y continuas",
+        "gruesas y estables"
+      ],
+      "correct": 0,
+      "hint": "Se asocian a un control emocional frágil o tensión interna.",
+      "explanation": "Trazos inseguros, temblorosos o muy oscuros pueden ser indicadores de tensión interna o ansiedad."
+    },
+    {
+      "q": "La técnica de la rejilla de Kelly es especialmente útil en procesos de ____ y análisis de la identidad personal.",
+      "options": [
+        "orientación vocacional",
+        "selección de psicopatía",
+        "detección de daño real"
+      ],
+      "correct": 0,
+      "hint": "Ayuda a comprender cómo la persona construye su mundo laboral y social.",
+      "explanation": "El texto señala su utilidad en orientación vocacional, psicoterapia y análisis de identidad."
+    },
+    {
+      "q": "¿Cuáles son características definitorias de las técnicas subjetivas según el texto manual?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "El sujeto califica objetos o personas según su experiencia propia",
+        "La materia evaluada es semiestructurada, flexible y no enmascarada"
+      ],
+      "correct": 0,
+      "hint": "Implican una participación activa y consciente del evaluado.",
+      "explanation": "Las técnicas subjetivas implican calificar desde la experiencia, con material semiestructurado y no oculto."
+    },
+    {
+      "q": "¿Qué procesos se analizan en las respuestas del Test de Rorschach según los criterios clásicos?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "La localización de la mancha que ha captado la atención del sujeto",
+        "La frecuencia o grado de originalidad de la respuesta en la población"
+      ],
+      "correct": 0,
+      "hint": "Se codifican mediante siglas como L, D, C y F.",
+      "explanation": "El análisis incluye localización (L), determinantes (D), contenido (C) y frecuencia (F)."
+    },
+    {
+      "q": "¿Qué elementos deben incluirse obligatoriamente en la narración de historias del TAT de Murray?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Explicación de los sucesos previos que llevaron a la situación actual",
+        "Descripción de los sentimientos y pensamientos de los personajes"
+      ],
+      "correct": 0,
+      "hint": "La historia debe tener pasado, presente, sentimientos y futuro.",
+      "explanation": "Se solicita qué ocurre, qué llevó a ello, qué piensan/sienten y cómo terminará."
+    },
+    {
+      "q": "¿Qué dimensiones psicológicas permite explorar el dibujo de un árbol según Karl Koch?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "El sentido del yo, la autoimagen y la estabilidad del equilibrio emocional",
+        "La capacidad de afrontamiento y la calidad de los vínculos interpersonales"
+      ],
+      "correct": 0,
+      "hint": "Es una técnica cualitativa profunda que abarca diversas áreas del yo.",
+      "explanation": "El árbol representa el yo (tronco), vínculos (copa) y bases emocionales (raíces)."
+    },
+    {
+      "q": "¿Qué factores emocionales específicos son evaluados por el Profile of Mood States (POMS)?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Niveles de ansiedad, depresión, ira y estados de confusión mental",
+        "Grado de fatiga física y vigor o energía percibida por el sujeto"
+      ],
+      "correct": 0,
+      "hint": "Son seis factores que describen el estado afectivo actual.",
+      "explanation": "El POMS evalúa ansiedad, depresión, ira, fatiga, vigor y confusión."
+    },
+    {
+      "q": "¿Qué aspectos del dibujo del árbol se relacionan con la estabilidad del 'yo' del evaluado?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "La firmeza y delimitación del tronco como eje central de la figura",
+        "La proporción del árbol y su ubicación dentro de la hoja de papel"
+      ],
+      "correct": 0,
+      "hint": "El tronco es el símbolo del yo, pero el conjunto aporta datos del equilibrio.",
+      "explanation": "El tronco representa el yo; el tamaño y ubicación reflejan seguridad y orientación emocional."
+    },
+    {
+      "q": "¿Cuáles son las aplicaciones habituales de la Técnica de la Rejilla de Constructos Personales?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Exploración del sistema de significados y procesos de autoconocimiento",
+        "Contextos de psicoterapia y procesos de orientación académica o laboral"
+      ],
+      "correct": 0,
+      "hint": "Es una técnica muy versátil para entender la visión del mundo del sujeto.",
+      "explanation": "Se aplica en psicoterapia, orientación vocacional y exploración de significados personales."
+    },
+    {
+      "q": "¿Qué componentes cualitativos propone Ávila (1986) para el análisis de las láminas del TAT?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Análisis del desenlace de la historia y el simbolismo de sus elementos",
+        "Identificación de las fuerzas motivacionales internas y externas del héroe"
+      ],
+      "correct": 0,
+      "hint": "Propone una lista de siete componentes para una evaluación diagnóstica global.",
+      "explanation": "Ávila incluye fuerzas, tema, héroe, ambiente, desenlace, simbolismo e índice diagnóstico."
+    },
+    {
+      "q": "¿En qué se diferencian las técnicas subjetivas de los autoinformes tradicionales de evaluación?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "El sujeto organiza y atribuye significado de forma activa y personalizada",
+        "Utilizan estímulos más abiertos y flexibles que los ítems estandarizados"
+      ],
+      "correct": 0,
+      "hint": "La clave está en la estructura de la respuesta y la tarea del sujeto.",
+      "explanation": "A diferencia de autoinformes cerrados, aquí el sujeto organiza significados ante estímulos abiertos."
+    },
+    {
+      "q": "¿Qué tipo de análisis se puede realizar con la información recogida en técnicas subjetivas?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Análisis cualitativo mediante categorizaciones o mapas de significados",
+        "Análisis cuantitativo con escalas de valoración y distancias semánticas"
+      ],
+      "correct": 0,
+      "hint": "Admiten ambos enfoques dependiendo del objetivo y la tipificación.",
+      "explanation": "La información puede procesarse cualitativamente (mapas) o cuantitativamente (escalas, factores)."
+    },
+    {
+      "q": "¿Qué variables se registran durante la fase de asociación libre en el test de Rorschach?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Las respuestas verbales íntegras y el tiempo de reacción inicial",
+        "La expresión emocional y cualquier observación conductual relevante"
+      ],
+      "correct": 0,
+      "hint": "El evaluador debe ser un registrador pasivo pero muy minucioso.",
+      "explanation": "Se anota lo verbal, el tiempo, la emoción, movimientos oculares y otras observaciones."
+    },
+    {
+      "q": "¿Qué siglas se utilizan en la versión española del TAT para codificar las láminas por sexo y edad?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Siglas 'V' para varones adultos y 'v' para varones menores de 14 años",
+        "Siglas 'M' para mujeres adultas y 'm' para mujeres menores de 14 años"
+      ],
+      "correct": 0,
+      "hint": "Existen 4 categorías básicas basadas en el género y el umbral de los 14 años.",
+      "explanation": "Se emplean V/M para mayores de 14 años y v/m para menores de esa edad."
+    },
+    {
+      "q": "¿Qué funciones cumplen las ramas y la copa en la interpretación simbólica del Test del Árbol?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Representan la capacidad de apertura y flexibilidad hacia el entorno social",
+        "Indican el mundo relacional y las expectativas de proyección hacia el futuro"
+      ],
+      "correct": 0,
+      "hint": "Es la parte del árbol que 'conecta' con el exterior y el aire.",
+      "explanation": "Simbolizan el mundo relacional, la comunicación y la proyección futura."
+    },
+    {
+      "q": "¿Bajo qué premisas teóricas se fundamenta el Test de Apercepción Temática de Murray?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Las personas proyectan necesidades y conflictos inconscientes en sus relatos",
+        "Las historias revelan la dinámica interna y la forma de relación social"
+      ],
+      "correct": 0,
+      "hint": "Se basa en la proyección sobre estímulos visuales con cierto grado de ambigüedad.",
+      "explanation": "El TAT asume que el sujeto proyecta su vida psíquica y dinámicas relacionales en los relatos."
+    },
+    {
+      "q": "¿Qué tipo de estímulos se utilizan en las diferentes categorías de técnicas proyectivas?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Imágenes con escenas ambiguas para construir narrativas (temáticas)",
+        "Consignas verbales abiertas para completar frases o historias (asociativas)"
+      ],
+      "correct": 0,
+      "hint": "Varían desde manchas y escenas hasta dibujos o palabras.",
+      "explanation": "Las temáticas usan escenas (TAT) y las asociativas usan lenguaje (frases incompletas)."
+    },
+    {
+      "q": "¿Qué factores determinan el significado subjetivo en el Diferencial Semántico de Osgood?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "La potencia percibida del concepto evaluado (fuerte versus débil)",
+        "La actividad o dinamismo que el sujeto atribuye (rápido versus lento)"
+      ],
+      "correct": 0,
+      "hint": "Son tres dimensiones universales del significado afectivo.",
+      "explanation": "Osgood define Valoración, Potencia y Actividad como los ejes del significado."
+    },
+    {
+      "q": "¿Qué elementos de la matriz de la Rejilla de Kelly son objeto de análisis cuantitativo?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "El recuento total de constructos y el análisis de correlaciones entre ellos",
+        "La medición de la distancia semántica entre los elementos significativos"
+      ],
+      "correct": 0,
+      "hint": "La rejilla permite aplicar estadística multivariada a datos cualitativos.",
+      "explanation": "Se analizan correlaciones, distancias entre elementos y recuentos de constructos."
+    },
+    {
+      "q": "¿Qué requisitos son fundamentales para la aplicación correcta del Test de Rorschach?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Formación especializada en los sistemas de codificación e interpretación",
+        "Mantenimiento de la neutralidad estricta del evaluador durante la prueba"
+      ],
+      "correct": 0,
+      "hint": "Es una de las pruebas más complejas de administrar en psicología.",
+      "explanation": "Requiere formación experta, neutralidad y respeto a directrices éticas y normativas."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre la técnica de la rejilla de Kelly es correcta?",
+      "options": [
+        "Ninguna es correcta",
+        "Se basa en la presentación de manchas de tinta para identificar constructos",
+        "Fue diseñada por Osgood para medir la dimensión de potencia afectiva"
+      ],
+      "correct": 0,
+      "hint": "Busca la base teórica correcta: constructos personales y comparaciones.",
+      "explanation": "La rejilla es de Kelly (constructos), no de Osgood ni usa manchas (Rorschach)."
+    },
+    {
+      "q": "¿Cuál es una característica de las láminas II y III del Test de Rorschach según el texto?",
+      "options": [
+        "Ninguna es correcta",
+        "Son láminas exclusivamente acromáticas en blanco y negro absoluto",
+        "Son las láminas que incorporan una gama de colores amarillos y azules"
+      ],
+      "correct": 0,
+      "hint": "Recuerda qué colores acompañan al negro en estas láminas específicas.",
+      "explanation": "Las láminas II y III combinan negro y rojo, no son acromáticas ni azules/amarillas."
+    },
+    {
+      "q": "¿Qué describe correctamente la dimensión de Potencia en el Diferencial Semántico?",
+      "options": [
+        "Ninguna es correcta",
+        "Se evalúa mediante los pares de adjetivos 'agradable-desagradable'",
+        "Mide si el concepto es percibido como 'rápido' o 'lento' por el sujeto"
+      ],
+      "correct": 0,
+      "hint": "Se asocia a la fuerza o debilidad del concepto.",
+      "explanation": "Potencia es fuerte-débil; agradable-desagradable es Valorativa; rápido-lento es Actividad."
+    },
+    {
+      "q": "¿Cómo se define la técnica proyectiva de tipo 'Expresiva' en el manual?",
+      "options": [
+        "Ninguna es correcta",
+        "Consiste en completar frases inacabadas a partir de una consigna verbal",
+        "Requiere que el sujeto interprete manchas de tinta visualmente ambiguas"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la producción de dibujos (técnica gráfica).",
+      "explanation": "Las expresivas implican dibujos (Árbol, Familia); las frases son asociativas y las manchas estructurales."
+    },
+    {
+      "q": "¿Qué indica un tronco 'inestable, estrecho o fragmentado' en el Test del Árbol?",
+      "options": [
+        "Ninguna es correcta",
+        "Representa una gran apertura hacia el mundo relacional y futuro",
+        "Es indicador de una alta autoestima y omnipotencia del pensamiento"
+      ],
+      "correct": 0,
+      "hint": "El tronco es el yo; si está dañado, el yo está dañado.",
+      "explanation": "Indica inseguridad, impulsividad o fragilidad del yo, no apertura ni omnipotencia."
+    },
+    {
+      "q": "¿Cuál es la función de la lámina nº 16 en la administración del TAT de Murray?",
+      "options": [
+        "Ninguna es correcta",
+        "Es la lámina que presenta una escena familiar de alta estructuración",
+        "Sirve para evaluar exclusivamente la reacción ante el color rojo"
+      ],
+      "correct": 0,
+      "hint": "Es la única lámina vacía de la prueba.",
+      "explanation": "Es una lámina en blanco para proyección libre; no tiene escena ni color rojo."
+    },
+    {
+      "q": "¿Qué factor del POMS evalúa específicamente la percepción de energía o vitalidad?",
+      "options": [
+        "Ninguna es correcta",
+        "El factor de confusión mental o desorientación temporal",
+        "El factor de ansiedad o tensión emocional acumulada"
+      ],
+      "correct": 0,
+      "hint": "Es el único factor con una connotación 'positiva' de estado.",
+      "explanation": "El factor que mide energía es el 'vigor', no la confusión ni la ansiedad."
+    },
+    {
+      "q": "¿Qué representan las raíces en el dibujo del árbol si están dibujadas de forma firme?",
+      "options": [
+        "Ninguna es correcta",
+        "Simbolizan el mundo relacional y la proyección social externa",
+        "Representan los mecanismos de defensa ante la ansiedad ambiental"
+      ],
+      "correct": 0,
+      "hint": "Se asocian a los orígenes y la estabilidad de la base emocional.",
+      "explanation": "Representan el enraizamiento y vínculos familiares, no el mundo relacional (copa) ni defensas (sombras)."
+    },
+    {
+      "q": "¿Cómo se clasifican las Fábulas de Düss dentro de las técnicas proyectivas?",
+      "options": [
+        "Ninguna es correcta",
+        "Se consideran técnicas estructurales basadas en estímulos visuales",
+        "Se definen como técnicas constructivas de organización de escenas"
+      ],
+      "correct": 0,
+      "hint": "Implican terminar una historia que el evaluador comienza verbalmente.",
+      "explanation": "Son técnicas asociativas (consigna verbal abierta), no estructurales ni constructivas."
+    },
+    {
+      "q": "¿Qué autor propuso el Sistema Comprehensivo para sistematizar el test de Rorschach?",
+      "options": [
+        "Ninguna es correcta",
+        "Fue desarrollado por Henry Murray en la Universidad de Harvard",
+        "Fue una propuesta original de George Kelly dentro de su teoría"
+      ],
+      "correct": 0,
+      "hint": "Su apellido empieza por 'E'.",
+      "explanation": "El sistema es de Exner; Murray hizo el TAT y Kelly la rejilla."
+    },
+    {
+      "q": "¿Qué dimensión de análisis en el Rorschach se codifica con la sigla 'C'?",
+      "options": [
+        "Ninguna es correcta",
+        "Se refiere a la localización o parte de la mancha percibida",
+        "Indica los determinantes o características perceptuales del estímulo"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la clase de objeto que el sujeto dice ver.",
+      "explanation": "'C' es Contenido (humano, animal, objeto); 'L' es localización y 'D' son determinantes."
+    },
+    {
+      "q": "¿Qué característica define a las técnicas proyectivas 'Temáticas'?",
+      "options": [
+        "Ninguna es correcta",
+        "Se basan en la interpretación de manchas de tinta simétricas",
+        "Requieren la producción de dibujos libres a partir de consignas"
+      ],
+      "correct": 0,
+      "hint": "Usan escenas para que el sujeto cuente historias.",
+      "explanation": "Usan imágenes con ambigüedad para construir narrativas (TAT); las manchas son estructurales y los dibujos expresivas."
+    },
+    {
+      "q": "¿Cuál es el objetivo principal del Diferencial Semántico diseñado por Osgood?",
+      "options": [
+        "Ninguna es correcta",
+        "Evaluar la estructura de los constructos bipolares de personalidad",
+        "Explorar los conflictos inconscientes mediante historias narradas"
+      ],
+      "correct": 0,
+      "hint": "Se centra en el significado que la persona da a conceptos específicos.",
+      "explanation": "Su objetivo es explorar el significado subjetivo de conceptos; la rejilla es de constructos y el TAT de historias."
+    },
+    {
+      "q": "¿Qué indica una copa 'caótica, muy densa o espinosa' en el Test del Árbol?",
+      "options": [
+        "Ninguna es correcta",
+        "Es un indicador de buena salud mental y flexibilidad interpersonal",
+        "Representa la estabilidad del yo y la conexión con las raíces familiares"
+      ],
+      "correct": 0,
+      "hint": "Sugiere dificultades en el área de contacto social.",
+      "explanation": "Se asocia a ansiedad o conflictos relacionales; no es salud/flexibilidad ni representa raíces (yo/base)."
+    },
+    {
+      "q": "¿En qué consiste la fase de asociación libre del Test de Rorschach?",
+      "options": [
+        "Ninguna es correcta",
+        "En preguntar al sujeto por qué ha visto lo que dice en la mancha",
+        "En solicitar que el sujeto dibuje una figura humana en la lámina"
+      ],
+      "correct": 0,
+      "hint": "Es la primera exposición a las láminas sin intervención del evaluador.",
+      "explanation": "Consiste en decir qué ve sin intervención; preguntar el porqué es la encuesta; dibujar es otra técnica."
+    },
+    {
+      "q": "¿Qué factor del POMS mide la sensación de debilidad o cansancio?",
+      "options": [
+        "Ninguna es correcta",
+        "El factor de ira u hostilidad hacia el entorno social",
+        "El factor de vigor y energía psíquica del individuo"
+      ],
+      "correct": 0,
+      "hint": "Es el factor de 'fatiga'.",
+      "explanation": "Es el factor de fatiga; la ira y el vigor son dimensiones distintas."
+    },
+    {
+      "q": "¿Cómo se codifica la respuesta 'original' en el sistema de frecuencia del Rorschach?",
+      "options": [
+        "Ninguna es correcta",
+        "Se utiliza la sigla 'P' para indicar que es una respuesta popular",
+        "Se utiliza la sigla 'L' para indicar que es una respuesta localizada"
+      ],
+      "correct": 0,
+      "hint": "Es lo opuesto a una respuesta común.",
+      "explanation": "Se usa 'O' para original e infrecuente; 'P' es para popular y 'L' es localización."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "¿En qué se diferencian las técnicas subjetivas de los autoinformes tradicionales en cuanto al papel del evaluado?",
+      "model": "En las técnicas subjetivas, el sujeto es una fuente activa que no se limita a responder a ítems estandarizados, sino que organiza, clasifica y atribuye significado a partir de estímulos semiestructurados y abiertos. A diferencia de los autoinformes tradicionales, estas permiten acceder al mundo experiencial de la persona mediante su propia interpretación de la realidad.",
+      "keywords": [
+        "sujeto activo",
+        "estímulos abiertos",
+        "significado",
+        "experiencia subjetiva"
+      ]
+    },
+    {
+      "q": "Explique las posibilidades de análisis cualitativo y cuantitativo de la información recogida mediante técnicas subjetivas.",
+      "model": "El análisis cualitativo se realiza mediante categorizaciones, mapas o rejillas de significado. El cuantitativo es posible cuando la técnica está tipificada, utilizando escalas de valoración, distancias semánticas o análisis factoriales para procesar la información de manera estadística.",
+      "keywords": [
+        "análisis cualitativo",
+        "análisis cuantitativo",
+        "distancia semántica",
+        "tipificación"
+      ]
+    },
+    {
+      "q": "Describa los componentes y la utilidad clínica del Perfil de Estados de Ánimo (POMS).",
+      "model": "El POMS consta de 65 adjetivos que el sujeto valora en una escala de cinco puntos. Los resultados se agrupan en seis factores: ansiedad, depresión, ira, fatiga, vigor y confusión. Su utilidad radica en ofrecer puntuaciones tipificadas (T scores) para una interpretación cuantitativa de estados afectivos en contextos como el deporte o el bienestar.",
+      "keywords": [
+        "POMS",
+        "adjetivos",
+        "puntuaciones T",
+        "factores emocionales"
+      ]
+    },
+    {
+      "q": "Analice los tres grandes factores o dimensiones que evalúa el Diferencial Semántico de Osgood.",
+      "model": "Las dimensiones se agrupan en: 1) Valorativa (eje bueno-malo), que mide la actitud; 2) Potencia (eje fuerte-débil), que mide la intensidad o peso del concepto; y 3) Actividad (eje rápido-lento), que mide el dinamismo percibido en el objeto o concepto evaluado.",
+      "keywords": [
+        "Valoración",
+        "Potencia",
+        "Actividad",
+        "adjetivos bipolares"
+      ]
+    },
+    {
+      "q": "Justifique el fundamento teórico de la Rejilla de Kelly dentro de su Teoría de los Constructos Personales.",
+      "model": "Se basa en la premisa de que el ser humano actúa como un científico que construye hipótesis sobre su entorno. Cada persona interpreta la realidad a través de un sistema propio de constructos bipolares, formados por experiencias previas, que sirven como filtros cognitivos para anticipar eventos.",
+      "keywords": [
+        "Kelly",
+        "constructos bipolares",
+        "científico",
+        "filtros cognitivos"
+      ]
+    },
+    {
+      "q": "Explique el procedimiento de comparación por tríadas en la Técnica de la Rejilla.",
+      "model": "Consiste en seleccionar tres elementos significativos (roles) y solicitar al sujeto que identifique en qué se parecen dos de ellos y en qué se diferencian del tercero. Este proceso permite emerger los polos de los constructos personales (ej. afectuoso vs. distante) que el sujeto utiliza para organizar su realidad.",
+      "keywords": [
+        "tríadas",
+        "similitudes",
+        "diferencias",
+        "polos"
+      ]
+    },
+    {
+      "q": "Defina el concepto de 'proyección' en el contexto de las técnicas proyectivas.",
+      "model": "Es un mecanismo de defensa, de raíz psicoanalítica, mediante el cual el sujeto atribuye inconscientemente sus propios deseos, conflictos, miedos o fantasías a estímulos externos ambiguos. Al estructurar un estímulo poco claro, la persona revela sus esquemas mentales y afectivos internos.",
+      "keywords": [
+        "proyección",
+        "mecanismo de defensa",
+        "inconsciente",
+        "estímulos ambiguos"
+      ]
+    },
+    {
+      "q": "Compare las técnicas proyectivas estructurales y las temáticas según su descripción y ejemplos.",
+      "model": "Las estructurales presentan estímulos visuales escasamente organizados que el sujeto debe interpretar (ej. Rorschach). Las temáticas utilizan imágenes con cierto grado de ambigüedad sobre las que el sujeto debe construir una narrativa compleja, revelando motivaciones y vínculos (ej. TAT).",
+      "keywords": [
+        "estructurales",
+        "temáticas",
+        "Rorschach",
+        "TAT"
+      ]
+    },
+    {
+      "q": "Detalle la composición de las láminas del Test de Rorschach en cuanto a color y tonalidad.",
+      "model": "El test posee 10 láminas simétricas: las láminas I, IV, V, VI y VII son exclusivamente en blanco y negro (acromáticas); las láminas II y III combinan negro y rojo; y las láminas VIII, IX y X son multicolores (cromáticas).",
+      "keywords": [
+        "acromáticas",
+        "cromáticas",
+        "tonalidad",
+        "láminas"
+      ]
+    },
+    {
+      "q": "Explique las dos fases de administración del Test de Rorschach.",
+      "model": "1) Fase de asociación libre: el evaluador presenta las láminas y el sujeto dice qué ve sin interrupciones. 2) Fase de encuesta o interrogatorio: el evaluador vuelve sobre las respuestas para identificar en qué parte de la mancha se basó y qué características (forma, color, etc.) determinaron la respuesta.",
+      "keywords": [
+        "asociación libre",
+        "encuesta",
+        "interrogatorio",
+        "localización"
+      ]
+    },
+    {
+      "q": "Describa los cuatro criterios principales de codificación en el sistema de Rorschach.",
+      "model": "Se codifican: Localización (L) o parte de la mancha usada; Determinantes (D) o características perceptuales (forma, color, movimiento); Contenido (C) o categoría de lo percibido (humano, animal, objeto); y Frecuencia (F) o grado de originalidad (respuesta popular vs. original).",
+      "keywords": [
+        "Localización",
+        "Determinantes",
+        "Contenido",
+        "Frecuencia"
+      ]
+    },
+    {
+      "q": "Analice la finalidad y el fundamento del Test de Apercepción Temática (TAT) de Murray.",
+      "model": "Su finalidad es explorar la dinámica interna de la personalidad y las relaciones con el entorno. Se fundamenta en que el sujeto proyecta sus necesidades, temores y conflictos inconscientes en los relatos que construye ante escenas figurativas ambiguas.",
+      "keywords": [
+        "TAT",
+        "dinámica interna",
+        "narrativa",
+        "necesidades"
+      ]
+    },
+    {
+      "q": "Explique la significación especial de la lámina 16 en el Test de Apercepción Temática.",
+      "model": "La lámina 16 es completamente en blanco. Al carecer de pauta visual, obliga al sujeto a realizar un esfuerzo proyectivo máximo, activando su mundo imaginativo y afectivo de manera libre y sin restricciones externas.",
+      "keywords": [
+        "lámina en blanco",
+        "esfuerzo proyectivo",
+        "imaginación",
+        "libertad"
+      ]
+    },
+    {
+      "q": "Detalle los cuatro elementos que debe incluir el sujeto en la narración de cada historia del TAT.",
+      "model": "El sujeto debe explicar: 1) Qué está ocurriendo en la escena actual; 2) Qué antecedentes o situaciones llevaron a ese momento; 3) Qué piensan y sienten los personajes involucrados; y 4) Cómo cree que terminará la historia (desenlace).",
+      "keywords": [
+        "escena",
+        "antecedentes",
+        "sentimientos",
+        "desenlace"
+      ]
+    },
+    {
+      "q": "Defina y diferencie las fuerzas motivacionales internas y externas en el análisis del TAT.",
+      "model": "Las fuerzas internas se refieren a las emociones, deseos o conflictos que emanan del protagonista ('héroe'). Las fuerzas externas son las presiones, amenazas o demandas provenientes del entorno social, familiar o físico que afectan al personaje.",
+      "keywords": [
+        "fuerzas internas",
+        "presiones externas",
+        "héroe",
+        "entorno"
+      ]
+    },
+    {
+      "q": "Explique el papel del 'Héroe' en el análisis cualitativo del TAT según Ávila.",
+      "model": "El héroe es el personaje principal con el que el sujeto se identifica. Se analiza su comportamiento, su forma de resolver conflictos y las similitudes con el evaluado (edad, género, rol) para comprender la autopercepción y recursos del sujeto.",
+      "keywords": [
+        "héroe",
+        "identificación",
+        "resolución de conflictos",
+        "autopercepción"
+      ]
+    },
+    {
+      "q": "Relacione el desenlace de las historias del TAT con el ajuste psicológico del evaluado.",
+      "model": "El desenlace (feliz, trágico o indefinido) indica el nivel de esperanza, frustración o ajuste psicológico del sujeto. Un predominio de finales trágicos o imposibilidad de resolución puede sugerir dificultades adaptativas o pesimismo profundo.",
+      "keywords": [
+        "desenlace",
+        "ajuste psicológico",
+        "esperanza",
+        "frustración"
+      ]
+    },
+    {
+      "q": "Describa el simbolismo general del árbol y sus partes en el Test del Árbol de Koch.",
+      "model": "El árbol representa simbólicamente al sujeto: el tronco simboliza el 'yo' y la estabilidad; las raíces representan el enraizamiento y los vínculos familiares/orígenes; y la copa/ramas reflejan el mundo relacional y la proyección hacia el futuro.",
+      "keywords": [
+        "identidad",
+        "tronco-yo",
+        "raíces-vínculos",
+        "copa-relaciones"
+      ]
+    },
+    {
+      "q": "¿Qué consigna se debe dar al sujeto en el Test del Árbol y qué restricciones incluye?",
+      "model": "La consigna es: 'Dibuja un árbol, como tú quieras'. Las restricciones indican que no puede ser un árbol de Navidad, ni un árbol ya recortado o decorado (como un dibujo pre-hecho), para forzar una producción espontánea.",
+      "keywords": [
+        "consigna",
+        "árbol de Navidad",
+        "espontaneidad",
+        "restricciones"
+      ]
+    },
+    {
+      "q": "Analice qué puede indicar un tronco inestable o fragmentado en el dibujo de un árbol.",
+      "model": "Representa una fragilidad en el 'yo' del sujeto. Puede vincularse a sentimientos de inseguridad, impulsividad, falta de control emocional o una estructura de personalidad inestable ante las demandas del entorno.",
+      "keywords": [
+        "tronco",
+        "fragilidad del yo",
+        "inseguridad",
+        "control emocional"
+      ]
+    },
+    {
+      "q": "Explique el significado de las raíces según la etapa evolutiva del sujeto.",
+      "model": "Las raíces indican conexión con las bases internas y estabilidad. Suelen estar ausentes de forma normal en niños pequeños. En adultos, su ausencia puede interpretarse como escasa conciencia de las propias bases o falta de estabilidad emocional.",
+      "keywords": [
+        "raíces",
+        "estabilidad",
+        "etapa evolutiva",
+        "bases internas"
+      ]
+    },
+    {
+      "q": "Diferencie el significado de unas ramas armoniosas frente a unas ramas caóticas o espinosas.",
+      "model": "Las ramas armoniosas y abiertas reflejan flexibilidad y apertura interpersonal saludable. Las caóticas o espinosas se asocian a estados de ansiedad, dificultades para establecer límites o conflictos severos en las relaciones sociales.",
+      "keywords": [
+        "ramas",
+        "flexibilidad",
+        "ansiedad",
+        "límites"
+      ]
+    },
+    {
+      "q": "Relacione el tamaño y la ubicación del árbol en la hoja con la autoestima del sujeto.",
+      "model": "Árboles muy pequeños sugieren baja autoestima o retraimiento. Árboles excesivamente grandes pueden indicar compensación o fantasías de omnipotencia. La ubicación (arriba, abajo, centro) refleja la seguridad y orientación emocional del evaluado.",
+      "keywords": [
+        "tamaño",
+        "ubicación",
+        "autoestima",
+        "omnipotencia"
+      ]
+    },
+    {
+      "q": "¿Por qué es fundamental la formación especializada para la aplicación de técnicas proyectivas?",
+      "model": "Debido a su carácter altamente subjetivo y complejo, requieren formación para codificar correctamente los datos y realizar una interpretación integrada que evite conclusiones reduccionistas o descontextualizadas basadas en un solo indicador.",
+      "keywords": [
+        "formación especializada",
+        "codificación",
+        "interpretación integrada",
+        "ética"
+      ]
+    },
+    {
+      "q": "Sintetice las aplicaciones habituales de las técnicas subjetivas según la Tabla 5.",
+      "model": "Se aplican en la evaluación del estado emocional, rasgos de personalidad, autoconcepto, análisis de actitudes y valores, exploración del sistema de significados personales, autoconocimiento y orientación vocacional.",
+      "keywords": [
+        "personalidad",
+        "actitudes",
+        "significados",
+        "orientación"
+      ]
+    },
+    {
+      "q": "Explique el concepto de 'índice diagnóstico' en el análisis de una historia del TAT.",
+      "model": "Es una evaluación global que considera la adecuación a la consigna, coherencia interna, nivel de elaboración, lenguaje emocional y posibles indicadores de ajuste o desajuste psicológico que se desprenden de la narrativa completa.",
+      "keywords": [
+        "índice diagnóstico",
+        "coherencia",
+        "elaboración",
+        "ajuste"
+      ]
+    },
+    {
+      "q": "¿Qué información aportan los elementos añadidos como nubes o sombras en el Test del Árbol?",
+      "model": "Aportan pistas sobre mecanismos de defensa adicionales, preocupaciones latentes, fantasías o aspectos depresivos que el sujeto proyecta como interferencias en su representación personal.",
+      "keywords": [
+        "nubes",
+        "sombras",
+        "mecanismos de defensa",
+        "preocupaciones"
+      ]
+    },
+    {
+      "q": "Describa la utilidad de la entrevista posterior en el Test del Árbol.",
+      "model": "Permite profundizar en el significado subjetivo del dibujo mediante preguntas sobre la edad del árbol o qué parte le gusta más al sujeto, enriqueciendo la interpretación cualitativa especialmente en psicoterapia u orientación.",
+      "keywords": [
+        "entrevista",
+        "significado subjetivo",
+        "psicoterapia",
+        "indagación"
+      ]
+    },
+    {
+      "q": "Compare la administración del TAT en función de la edad (CAT, TAT, SAT).",
+      "model": "El TAT estándar se usa entre los 10 y 65 años. Para la infancia se utiliza el CAT (Children's Apperception Test) y para personas mayores el SAT (Senior Apperception Technique), adaptando los estímulos a sus realidades evolutivas.",
+      "keywords": [
+        "CAT",
+        "SAT",
+        "edad",
+        "adaptación"
+      ]
+    },
+    {
+      "q": "Resuma las categorías de técnicas proyectivas constructivas y asociativas.",
+      "model": "Las constructivas piden organizar o estructurar escenas con materiales (ej. Test del Pueblo). Las asociativas parten de una consigna verbal abierta (palabra o frase) que el sujeto debe completar libremente (ej. frases incompletas o asociación libre).",
+      "keywords": [
+        "constructivas",
+        "asociativas",
+        "materiales",
+        "consigna verbal"
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Técnicas Subjetivas",
+      "q": "¿Cuál es el papel del sujeto como fuente de información en las técnicas subjetivas?",
+      "a": "El sujeto actúa como una fuente activa que califica o interpreta personas, objetos, conceptos o situaciones basándose en su propia experiencia subjetiva."
+    },
+    {
+      "cat": "Técnicas Subjetivas",
+      "q": "¿En qué se diferencian las técnicas subjetivas de los autoinformes tradicionales?",
+      "a": "A diferencia de los autoinformes, el sujeto no solo responde a ítems estandarizados, sino que organiza, clasifica o atribuye significado a partir de estímulos abiertos."
+    },
+    {
+      "cat": "Técnicas Subjetivas",
+      "q": "¿Quiénes pueden ser los informantes en la aplicación de técnicas subjetivas además del propio sujeto?",
+      "a": "Pueden aplicarse mediante informantes cercanos como familiares, docentes o compañeros del evaluado."
+    },
+    {
+      "cat": "Técnicas Subjetivas",
+      "q": "¿Cómo se describe la estructura y directividad de la materia evaluada en las técnicas subjetivas?",
+      "a": "Se define como una materia semiestructurada, no enmascarada y flexible, adaptándose a los objetivos del evaluador."
+    },
+    {
+      "cat": "Técnicas Subjetivas",
+      "q": "¿Qué tipo de análisis se puede realizar con la información recogida en estas técnicas?",
+      "a": "Análisis cualitativo (categorizaciones, mapas o rejillas) o cuantitativo (escalas de valoración, distancias semánticas, análisis factoriales)."
+    },
+    {
+      "cat": "Técnicas Subjetivas",
+      "q": "¿Con qué marcos teóricos se vincula el fundamento de las técnicas subjetivas?",
+      "a": "Con enfoques fenomenológicos, constructivistas, cognitivos o humanistas."
+    },
+    {
+      "cat": "Listas de Adjetivos",
+      "q": "¿En qué consiste el procedimiento de las Listas de Adjetivos?",
+      "a": "Consiste en presentar un conjunto de adjetivos que el sujeto debe valorar según su aplicabilidad a sí mismo, a otros, objetos o situaciones."
+    },
+    {
+      "cat": "Listas de Adjetivos",
+      "q": "¿Qué formatos de respuesta suelen utilizarse en las listas de adjetivos?",
+      "a": "Formato dicotómico (sí/no) o escalas de valoración (tipo Likert, por ejemplo de 1 a 5 puntos)."
+    },
+    {
+      "cat": "POMS (Perfil de Estados de Ánimo)",
+      "q": "¿Qué evalúa específicamente el POMS y cuántos adjetivos contiene?",
+      "a": "Evalúa estados emocionales a través de 65 adjetivos relacionados con el estado de ánimo."
+    },
+    {
+      "cat": "POMS (Perfil de Estados de Ánimo)",
+      "q": "¿Cuáles son los seis factores en los que se agrupan los resultados del POMS?",
+      "a": "Ansiedad, depresión, ira, fatiga, vigor y confusión."
+    },
+    {
+      "cat": "POMS (Perfil de Estados de Ánimo)",
+      "q": "¿Qué tipo de puntuaciones ofrece el POMS para permitir una interpretación cuantitativa?",
+      "a": "Ofrece puntuaciones tipificadas o puntuaciones T (T scores)."
+    },
+    {
+      "cat": "Diferencial Semántico",
+      "q": "¿Cuál es el objetivo principal del Diferencial Semántico de Osgood?",
+      "a": "Explorar el significado subjetivo que una persona atribuye a distintos conceptos mediante pares de adjetivos bipolares."
+    },
+    {
+      "cat": "Diferencial Semántico",
+      "q": "¿Cómo se estructura la presentación de estímulos en el Diferencial Semántico?",
+      "a": "Se presentan conceptos clave (ej. 'familia', 'trabajo') acompañados de escalas con adjetivos opuestos (ej. 'agradable-desagradable')."
+    },
+    {
+      "cat": "Diferencial Semántico",
+      "q": "¿Cuáles son las tres grandes dimensiones o factores que suele evaluar el Diferencial Semántico?",
+      "a": "Dimensión Valorativa (bueno-malo), Potencia (fuerte-débil) y Actividad (rápido-lento)."
+    },
+    {
+      "cat": "Diferencial Semántico",
+      "q": "¿Qué utilidad clínica tiene el análisis de 'distancias semánticas'?",
+      "a": "Permite realizar comparaciones entre sujetos, momentos de evaluación o contextos sociales para observar cambios en el significado."
+    },
+    {
+      "cat": "Rejilla de Kelly",
+      "q": "¿En qué premisa teórica se basa la Técnica de Constructos Personales de Kelly?",
+      "a": "En que cada persona interpreta la realidad a través de un sistema propio de constructos bipolares formados por experiencias previas."
+    },
+    {
+      "cat": "Rejilla de Kelly",
+      "q": "¿A qué se refiere Kelly con la metáfora del 'hombre como científico'?",
+      "a": "A que el ser humano construye hipótesis sobre su entorno a partir de sus filtros cognitivos o constructos personales."
+    },
+    {
+      "cat": "Rejilla de Kelly",
+      "q": "¿Cuál es el procedimiento inicial para identificar constructos en la Técnica de la Rejilla?",
+      "a": "Se parte de elementos significativos (roles) y se solicita al sujeto compararlos por tríadas para identificar similitudes y diferencias."
+    },
+    {
+      "cat": "Rejilla de Kelly",
+      "q": "¿Qué conforma la matriz de una Rejilla de Kelly?",
+      "a": "La organización de los constructos (en filas) y los elementos o personas significativas (en columnas) para ser valorados."
+    },
+    {
+      "cat": "Rejilla de Kelly",
+      "q": "¿En qué áreas ha demostrado ser especialmente útil la Rejilla de Kelly?",
+      "a": "En procesos de orientación, psicoterapia y análisis de la identidad personal."
+    },
+    {
+      "cat": "Técnicas Proyectivas",
+      "q": "¿Cómo se define el mecanismo de 'proyección' en el contexto de estas técnicas?",
+      "a": "Es un mecanismo por el cual el sujeto atribuye a estímulos externos aspectos internos (deseos, miedos, conflictos) de forma inconsciente."
+    },
+    {
+      "cat": "Técnicas Proyectivas",
+      "q": "¿Cuál es la característica principal de los estímulos utilizados en las técnicas proyectivas?",
+      "a": "Son estímulos ambiguos o poco estructurados que exigen una respuesta interpretativa o creativa del evaluado."
+    },
+    {
+      "cat": "Técnicas Proyectivas",
+      "q": "¿Qué se analiza en la respuesta del sujeto ante una técnica proyectiva?",
+      "a": "Tanto el contenido manifiesto como el latente, el simbolismo, la organización y el nivel de integración de la producción."
+    },
+    {
+      "cat": "Técnicas Proyectivas",
+      "q": "¿Qué sistema permitió sistematizar y dar rigor al test de Rorschach?",
+      "a": "El Sistema Comprehensivo de Exner, mediante un sistema de codificación e interpretación complejo."
+    },
+    {
+      "cat": "Técnicas Proyectivas",
+      "q": "¿Qué caracteriza a las técnicas proyectivas de tipo 'Estructural'?",
+      "a": "Presentan estímulos visuales escasamente estructurados que deben ser interpretados (ej. Rorschach)."
+    },
+    {
+      "cat": "Técnicas Proyectivas",
+      "q": "¿En qué consisten las técnicas proyectivas 'Temáticas'?",
+      "a": "Utilizan imágenes ambiguas sobre las que el sujeto debe construir una narrativa o historia (ej. TAT)."
+    },
+    {
+      "cat": "Técnicas Proyectivas",
+      "q": "¿Qué implica la realización de una técnica proyectiva 'Expresiva'?",
+      "a": "La producción espontánea de dibujos a partir de una consigna (ej. Test del Árbol o de la Familia)."
+    },
+    {
+      "cat": "Técnicas Proyectivas",
+      "q": "¿Qué se le pide al sujeto en las técnicas 'Constructivas'?",
+      "a": "Organizar o estructurar escenas con materiales específicos, analizando su interacción con el entorno simbólico (ej. Test del Pueblo)."
+    },
+    {
+      "cat": "Técnicas Proyectivas",
+      "q": "¿Cómo funcionan las técnicas proyectivas 'Asociativas'?",
+      "a": "Parten de una consigna verbal abierta (palabra o frase incompleta) que el sujeto debe completar libremente."
+    },
+    {
+      "cat": "Test de Rorschach",
+      "q": "¿Cuál es la composición total de las láminas del Test de Rorschach?",
+      "a": "Diez láminas con figuras simétricas de manchas de tinta: 5 acromáticas, 2 negro/rojo y 3 multicolores."
+    },
+    {
+      "cat": "Test de Rorschach",
+      "q": "¿Qué colores tienen las láminas I, IV, V, VI y VII del Rorschach?",
+      "a": "Son láminas en blanco y negro (acromáticas)."
+    },
+    {
+      "cat": "Test de Rorschach",
+      "q": "¿En qué consiste la primera fase (asociación libre) de la administración del Rorschach?",
+      "a": "El evaluador presenta las láminas y pide al sujeto que diga qué ve en ellas sin intervenir ni juzgar."
+    },
+    {
+      "cat": "Test de Rorschach",
+      "q": "¿Cuál es el propósito de la fase de 'encuesta' o interrogatorio en el Rorschach?",
+      "a": "Especificar en qué parte de la lámina se basó el sujeto y qué características (forma, color, etc.) determinaron su respuesta."
+    },
+    {
+      "cat": "Test de Rorschach",
+      "q": "Según Loosli-Usteri, ¿qué significa el código '>' en el registro de la posición de la lámina?",
+      "a": "Significa que el sujeto ha realizado un giro de la lámina hacia la derecha."
+    },
+    {
+      "cat": "Test de Rorschach",
+      "q": "¿Qué evalúa el criterio de 'Localización (L)' en la codificación del Rorschach?",
+      "a": "La parte específica de la mancha que captó la atención: la totalidad, un detalle grande o un detalle pequeño."
+    },
+    {
+      "cat": "Test de Rorschach",
+      "q": "¿Qué se codifica bajo la categoría de 'Determinantes (D)'?",
+      "a": "Las características perceptuales que influyeron en la respuesta: forma, color, sombreado, movimiento o textura."
+    },
+    {
+      "cat": "Test de Rorschach",
+      "q": "¿A qué se refiere el 'Contenido (C)' en el análisis de las manchas?",
+      "a": "A la categoría de lo percibido: figuras humanas, animales, objetos, contenido anatómico, etc."
+    },
+    {
+      "cat": "Test de Rorschach",
+      "q": "¿Qué indica una respuesta 'Popular (P)' en el criterio de Frecuencia?",
+      "a": "Que es una respuesta común en la población general, indicando un pensamiento convencional o compartido."
+    },
+    {
+      "cat": "TAT (Test de Apercepción Temática)",
+      "q": "¿Cuál es la premisa fundamental del TAT según Murray?",
+      "a": "Que las personas proyectan sus necesidades, conflictos y defensas inconscientes en los relatos que construyen ante estímulos ambiguos."
+    },
+    {
+      "cat": "TAT (Test de Apercepción Temática)",
+      "q": "¿Cuántas láminas componen el TAT y qué tiene de especial la lámina 16?",
+      "a": "Son 31 láminas en total; la 16 está completamente en blanco para activar libremente el mundo imaginativo."
+    },
+    {
+      "cat": "TAT (Test de Apercepción Temática)",
+      "q": "¿Qué significan las siglas 'V' y 'm' en la codificación de las láminas del TAT?",
+      "a": "V: varones mayores de 14 años; m: mujeres menores de 14 años."
+    },
+    {
+      "cat": "TAT (Test de Apercepción Temática)",
+      "q": "¿Qué cuatro elementos debe incluir la historia narrada por el sujeto en el TAT?",
+      "a": "Qué ocurre, qué llevó a esa situación, qué piensan/sienten los personajes y cómo terminará la historia."
+    },
+    {
+      "cat": "TAT (Test de Apercepción Temática)",
+      "q": "¿Qué versiones adaptadas existen del TAT para niños y personas mayores?",
+      "a": "CAT (Children's Apperception Test) para niños y SAT (Senior Apperception Technique) para mayores."
+    },
+    {
+      "cat": "TAT (Test de Apercepción Temática)",
+      "q": "¿Qué se analiza bajo el concepto de 'Fuerzas motivacionales internas' en el TAT?",
+      "a": "Las emociones, tendencias, deseos o conflictos del protagonista o 'héroe' de la historia."
+    },
+    {
+      "cat": "TAT (Test de Apercepción Temática)",
+      "q": "¿Qué representa el 'Héroe' en el análisis cualitativo del TAT?",
+      "a": "Es el personaje principal con el que el sujeto se identifica; se analiza su conducta y similitudes con el evaluado."
+    },
+    {
+      "cat": "TAT (Test de Apercepción Temática)",
+      "q": "¿Qué información aporta el 'Ambiente' en los relatos del TAT?",
+      "a": "Ofrece información sobre el modelo relacional del sujeto y su percepción del entorno físico y social."
+    },
+    {
+      "cat": "TAT (Test de Apercepción Temática)",
+      "q": "¿Qué puede indicar un 'Desenlace' trágico o indefinido en el TAT?",
+      "a": "Puede indicar niveles de frustración, falta de esperanza o dificultades de ajuste psicológico."
+    },
+    {
+      "cat": "TAT (Test de Apercepción Temática)",
+      "q": "¿En qué contextos es especialmente útil la aplicación del TAT?",
+      "a": "Psicoterapia, orientación escolar, evaluación forense y selección de personal."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Cuál es el simbolismo universal asociado a la figura del árbol según Koch?",
+      "a": "Está asociado al crecimiento, la identidad, la estabilidad, las raíces familiares y la relación con el entorno."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Cuál es la consigna exacta que se debe dar al sujeto para el Test del Árbol?",
+      "a": "'Dibuja un árbol, como tú quieras. No puede ser un árbol de Navidad, ni ya recortado o decorado. Solo un árbol cualquiera'."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Qué representa el 'Tronco' en el dibujo del árbol?",
+      "a": "Representa el 'yo', la estabilidad y el control emocional del sujeto."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Qué indica la presencia o ausencia de 'Raíces' en el dibujo?",
+      "a": "Indica el grado de enraizamiento, conexión con los orígenes y estabilidad de los vínculos familiares."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Qué simbolizan las 'Ramas y la copa' en el análisis gráfico?",
+      "a": "El mundo relacional, la capacidad de apertura interpersonal y la proyección hacia el futuro."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Cómo se interpreta un árbol dibujado con un tamaño excesivamente grande?",
+      "a": "Puede asociarse a mecanismos de compensación o fantasías de omnipotencia."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Qué refleja la 'Ubicación' del árbol en la hoja (ej. muy arriba o muy abajo)?",
+      "a": "Refleja el grado de seguridad, el sentido de pertenencia o la orientación emocional del sujeto."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Qué significan los trazos inseguros o muy oscuros en la presión del dibujo?",
+      "a": "Pueden ser indicadores de tensión interna, ansiedad o conflicto emocional."
+    },
+    {
+      "cat": "Rorschach",
+      "q": "¿Qué indica la codificación de 'Sombreado' dentro de los determinantes?",
+      "a": "Refleja aspectos relacionados con la ansiedad, sensibilidad o necesidades afectivas del sujeto."
+    },
+    {
+      "cat": "Técnicas Subjetivas",
+      "q": "¿Por qué se dice que las técnicas subjetivas son susceptibles de ser falseadas?",
+      "a": "Porque la respuesta es voluntaria y no enmascarada, permitiendo al sujeto controlar la imagen que proyecta."
+    },
+    {
+      "cat": "Rejilla de Kelly",
+      "q": "¿Qué se analiza en el análisis 'cuantitativo' de la rejilla?",
+      "a": "Recuento de constructos, análisis de correlaciones, distancias entre elementos y análisis factoriales."
+    },
+    {
+      "cat": "Técnicas Proyectivas",
+      "q": "¿A qué corriente psicológica pertenecen originalmente las técnicas proyectivas?",
+      "a": "A la psicología dinámica y el psicoanálisis."
+    },
+    {
+      "cat": "Rorschach",
+      "q": "¿Quién desarrolló el Test de las manchas de tinta en 1921?",
+      "a": "Hermann Rorschach."
+    },
+    {
+      "cat": "TAT",
+      "q": "¿Qué autores desarrollaron el TAT en la década de 1930?",
+      "a": "Henry A. Murray y Christiana D. Morgan."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿En qué década y quién desarrolló el Test del Árbol?",
+      "a": "Karl Koch en la década de 1950."
+    },
+    {
+      "cat": "Técnicas Proyectivas",
+      "q": "¿Qué ejemplos pertenecen a las técnicas 'Expresivas'?",
+      "a": "Test del Árbol, Test de la Familia y Persona bajo la lluvia."
+    },
+    {
+      "cat": "Técnicas Proyectivas",
+      "q": "¿Qué ejemplos pertenecen a las técnicas 'Asociativas'?",
+      "a": "Fábulas de Düss, Asociación libre y Frases incompletas."
+    },
+    {
+      "cat": "Rorschach",
+      "q": "¿Qué colores se combinan en las láminas II y III?",
+      "a": "Combinan los colores negro y rojo."
+    },
+    {
+      "cat": "Rorschach",
+      "q": "¿Qué colores tienen las láminas VIII, IX y X?",
+      "a": "Son láminas multicolores."
+    },
+    {
+      "cat": "Rorschach",
+      "q": "¿Qué significa el código 'd' en el sistema de Loosli-Usteri?",
+      "a": "Giro libre de la lámina antes de emitir una respuesta."
+    },
+    {
+      "cat": "Rorschach",
+      "q": "¿Qué evalúa el determinante 'Movimiento'?",
+      "a": "La capacidad del sujeto para proyectar dinamismo o actividad en las manchas estáticas."
+    },
+    {
+      "cat": "Rorschach",
+      "q": "¿Qué profesional puede aplicar e interpretar el Rorschach?",
+      "a": "Un psicólogo con formación especializada en el sistema de codificación elegido."
+    },
+    {
+      "cat": "TAT",
+      "q": "¿Qué edad estándar se recomienda para la administración del TAT?",
+      "a": "Entre los 10 y 65 años."
+    },
+    {
+      "cat": "TAT",
+      "q": "¿Cómo se realiza una administración 'reducida' del TAT?",
+      "a": "Seleccionando láminas específicas según los objetivos de la evaluación en una sola sesión."
+    },
+    {
+      "cat": "TAT",
+      "q": "¿Qué se debe registrar durante la narración del TAT además de la historia?",
+      "a": "Pausas, tiempo de reacción, manifestaciones no verbales y emociones expresadas."
+    },
+    {
+      "cat": "TAT",
+      "q": "¿Cuál es el método de registro menos recomendable en el TAT?",
+      "a": "La autoadministración escrita, por la pérdida de control sobre variables conductuales."
+    },
+    {
+      "cat": "TAT",
+      "q": "¿Qué representan las 'Fuerzas motivacionales externas' o presiones?",
+      "a": "Amenazas o presiones del entorno social, familiar o físico sobre el héroe."
+    },
+    {
+      "cat": "TAT",
+      "q": "¿A qué se refiere el 'Simbolismo' en el análisis del TAT?",
+      "a": "Elementos con carga simbólica (colores, objetos, viajes) que revelan deseos o temores profundos."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Por qué es útil el Test del Árbol en personas con dificultades verbales?",
+      "a": "Porque permite la expresión de conflictos latentes a través de un medio no verbal (el dibujo)."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Qué indican las ramas caóticas o espinosas?",
+      "a": "Pueden asociarse a ansiedad, conflictos relacionales o dificultad para establecer límites."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Qué representan los 'huecos' o nubes añadidas al dibujo?",
+      "a": "Pistas sobre mecanismos defensivos, preocupaciones o aspectos depresivos."
+    },
+    {
+      "cat": "Técnicas Subjetivas",
+      "q": "¿Qué característica las hace 'semiestructuradas'?",
+      "a": "Que el evaluador puede construir escalas ad hoc pero el estímulo tiene cierta guía."
+    },
+    {
+      "cat": "Técnicas Subjetivas",
+      "q": "¿Qué es una 'distancia semántica'?",
+      "a": "Es la diferencia cuantitativa en la valoración de dos conceptos en el espacio semántico."
+    },
+    {
+      "cat": "Rejilla de Kelly",
+      "q": "¿A qué se refiere Kelly con 'constructos bipolares'?",
+      "a": "A dimensiones de significado que tienen dos polos opuestos (ej. triste-alegre)."
+    },
+    {
+      "cat": "Rorschach",
+      "q": "¿Qué indica el código 'v' en la posición de la lámina?",
+      "a": "La lámina ha sido invertida (puesta del revés)."
+    },
+    {
+      "cat": "Rorschach",
+      "q": "¿Qué es una respuesta 'Original (O)'?",
+      "a": "Una respuesta infrecuente en la población que muestra creatividad o idiosincrasia."
+    },
+    {
+      "cat": "Rorschach",
+      "q": "¿Qué explora el Test de Rorschach según el texto?",
+      "a": "El funcionamiento psíquico, estructura de pensamiento, afectividad y relaciones con la realidad."
+    },
+    {
+      "cat": "TAT",
+      "q": "¿Cuántas láminas se suelen usar en una aplicación completa?",
+      "a": "Hasta 20 láminas."
+    },
+    {
+      "cat": "TAT",
+      "q": "¿Qué es el 'Índice diagnóstico' en el análisis de Ávila?",
+      "a": "Evaluación global de la historia considerando coherencia, lenguaje emocional y ajuste psicológico."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Cuánto tiempo suele durar la ejecución del dibujo del árbol?",
+      "a": "De 5 a 15 minutos, aunque no suele haber límite estricto."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Qué indica un tronco inestable o fragmentado?",
+      "a": "Se vincula a inseguridad, impulsividad o fragilidad del 'yo'."
+    },
+    {
+      "cat": "Listas de Adjetivos",
+      "q": "¿Para qué son útiles en procesos de autorregulación?",
+      "a": "Para identificar cómo el sujeto percibe sus propios estados y capacidades de control."
+    },
+    {
+      "cat": "Diferencial Semántico",
+      "q": "¿Qué tipo de análisis permite comparar sujetos de diferentes culturas?",
+      "a": "El análisis de distancias semánticas en dimensiones universales."
+    },
+    {
+      "cat": "Rorschach",
+      "q": "¿Cuál es la función del evaluador durante la fase de asociación libre?",
+      "a": "Registrar respuestas verbales, tiempos, expresiones y movimientos oculares con neutralidad."
+    },
+    {
+      "cat": "Rorschach",
+      "q": "¿Qué evalúa la 'Frecuencia (F)'?",
+      "a": "El grado de originalidad de la respuesta comparada con la población general."
+    },
+    {
+      "cat": "TAT",
+      "q": "¿Qué permite la lámina en blanco al sujeto?",
+      "a": "Proyectar sin ninguna pauta visual, activando el mundo afectivo más libremente."
+    },
+    {
+      "cat": "TAT",
+      "q": "¿Qué se analiza en la 'resolución de conflictos' del héroe?",
+      "a": "La capacidad del sujeto para encontrar salidas adaptativas a situaciones problemáticas."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Por qué se prohíbe dibujar un árbol de Navidad?",
+      "a": "Para evitar respuestas estereotipadas o culturales que oculten la proyección personal."
+    },
+    {
+      "cat": "Test del Árbol",
+      "q": "¿Qué indica un árbol desplazado a un lado de la hoja?",
+      "a": "Refleja desequilibrios en la orientación emocional o falta de seguridad en el entorno."
+    },
+    {
+      "cat": "Técnicas Subjetivas",
+      "q": "¿Qué significa que el formato pueda ser 'ad hoc'?",
+      "a": "Que el evaluador puede diseñar la herramienta específicamente para el caso particular que evalúa."
+    },
+    {
+      "cat": "Técnicas Proyectivas",
+      "q": "¿Por qué se dice que no hay respuestas 'correctas'?",
+      "a": "Porque el objetivo es la expresión de la subjetividad individual, no el rendimiento normativo."
+    },
+    {
+      "cat": "Rorschach",
+      "q": "¿Qué papel juega la 'simetría' en las manchas de Rorschach?",
+      "a": "Facilita la organización de la percepción y permite respuestas integradas o fragmentadas."
+    }
+  ]
+}

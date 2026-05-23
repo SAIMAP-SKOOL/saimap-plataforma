@@ -1,0 +1,2458 @@
+{
+  "quiz": [
+    {
+      "q": "El Test de Matrices Progresivas de Raven fue diseñado originalmente para estimar de manera específica el factor g propuesto por Spearman.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Revisa el origen teórico del test mencionado en la página 1.",
+      "explanation": "El texto indica explícitamente que la prueba fue diseñada para estimar el factor g de Spearman y se ha convertido en un referente de la psicometría."
+    },
+    {
+      "q": "La versión CPM (Matrices Progresivas en Colores) consta de un total de 48 ejercicios organizados en tres series diferenciadas.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Compara el número de ítems de la versión infantil con la versión general.",
+      "explanation": "La versión CPM consta de 36 ejercicios, no 48; el número 48 corresponde habitualmente al Test de Dominós de Anstey."
+    },
+    {
+      "q": "En el Test de Raven, se considera que el rendimiento es consistente si la discrepancia no supera los ±2 puntos en ninguna serie.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Busca el apartado de verificación de la consistencia del puntaje total.",
+      "explanation": "La consistencia se verifica comparando los puntajes parciales obtenidos con los esperados; el margen de error permitido es de ±2 puntos."
+    },
+    {
+      "q": "Los errores 'burdos' (G) en el Test de Raven implican la omisión de un solo correlato fundamental en la respuesta incorrecta.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Repasa la clasificación de errores según la cantidad de correlatos omitidos.",
+      "explanation": "Los errores burdos (G) implican la omisión de los tres correlatos, mientras que la omisión de uno solo define a los errores finos (F)."
+    },
+    {
+      "q": "El Test de Dominós de Anstey es una prueba de velocidad donde el tiempo límite de 30 minutos es el factor determinante del éxito.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Distingue entre pruebas de poder y pruebas de velocidad en el texto.",
+      "explanation": "Es una prueba de poder, no de velocidad; el tiempo es un límite administrativo, pero el objetivo es medir la capacidad de razonamiento."
+    },
+    {
+      "q": "En la corrección del Test de Dominós, se otorga medio punto si el sujeto acierta uno de los dos valores de la ficha incompleta.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Revisa el criterio de calificación del Dominós: ¿es parcial o total?",
+      "explanation": "Se otorga un punto solo por la respuesta completamente acertada (ambos valores correctos); no se conceden puntuaciones parciales."
+    },
+    {
+      "q": "La Escala de Inteligencia Stanford-Binet utiliza el concepto de edad basal para determinar el punto de inicio con éxito del sujeto.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Observa el procedimiento de administración individual de la Stanford-Binet.",
+      "explanation": "La evaluación determina una edad basal (éxito total) y una edad tope (fracaso total) para realizar el cálculo de la edad mental."
+    },
+    {
+      "q": "El Índice de Razonamiento Perceptivo de la WAIS incluye la subprueba de Aritmética como uno de sus componentes principales.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Asocia cada subtest con su índice correspondiente en el diagrama de la WAIS.",
+      "explanation": "La subprueba de Aritmética pertenece al Índice de Memoria de Trabajo (IMT), no al de Razonamiento Perceptivo (IRP)."
+    },
+    {
+      "q": "El WISC-R amplió el rango de edad de aplicación respecto a la versión original, abarcando desde los 6 hasta los 16 años y 11 meses.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Identifica los cambios metodológicos introducidos en la revisión de 1974.",
+      "explanation": "El WISC-R ajustó y amplió el rango de edad para cubrir hasta casi los 17 años, mejorando la estandarización previa."
+    },
+    {
+      "q": "En la escala WPPSI, si solo se aplican cuatro subtests válidos en una subescala, la puntuación debe prorratearse por 5/4.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Busca la fórmula matemática específica para compensar la falta de un subtest.",
+      "explanation": "Para mantener la comparabilidad, el texto indica que se debe multiplicar la suma por cinco cuartos (5/4) en ese escenario específico."
+    },
+    {
+      "q": "El subtest 'Casa de los Animales' es una tarea verbal que evalúa el conocimiento general y la memoria a largo plazo en niños.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Determina si este subtest pertenece a la escala verbal o de ejecución del WPPSI.",
+      "explanation": "Es un subtest de ejecución que evalúa atención, memoria visual y asociación categorial mediante materiales manipulativos."
+    },
+    {
+      "q": "La aptitud se define como el poder actual para realizar una tarea, diferenciándose así de la habilidad o potencial futuro.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Revisa la distinción terminológica de Brown (1980) entre aptitud y habilidad.",
+      "explanation": "Según Brown, la habilidad es el poder actual, mientras que la aptitud es el potencial futuro o poder para aprender a realizarla."
+    },
+    {
+      "q": "El Test de Otis es una herramienta eficaz para medir la inteligencia general de forma colectiva mediante razonamiento verbal.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Consulta la descripción breve del apartado 2.3.8.",
+      "explanation": "El Otis se describe como una de las pruebas más utilizadas para medir razonamiento lógico verbal en aplicaciones colectivas amplias."
+    },
+    {
+      "q": "La validez estructural del Test de Raven ha confirmado una saturación del factor g con valores que oscilan entre .75 y .82.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Verifica los datos estadísticos de validez citados en la página 4.",
+      "explanation": "Los análisis factoriales confirman esta alta saturación, validando al Raven como una medida excelente de la inteligencia general."
+    },
+    {
+      "q": "El Test de Dominós (D48) de Pichot se distingue de la versión original de Anstey principalmente por la lógica de los reactivos.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Busca las diferencias específicas entre la versión francesa y la inglesa.",
+      "explanation": "La versión D48 se distingue fundamentalmente por la disposición de los reactivos, no por un cambio en la lógica subyacente."
+    },
+    {
+      "q": "Las puntuaciones de las escalas de Wechsler (WAIS, WISC) se expresan en un CI de desviación con media 100 y DE de 15.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Recuerda los parámetros estadísticos estándar de las escalas Wechsler.",
+      "explanation": "Tanto el WAIS como el WISC y el WPPSI utilizan una media de 100 y una desviación estándar de 15 para sus puntuaciones típicas."
+    },
+    {
+      "q": "En el WISC, el subtest de 'Laberintos' es considerado un test principal que debe aplicarse obligatoriamente en todos los casos.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre subtests principales y complementarios en la estructura del WISC.",
+      "explanation": "Laberintos es un subtest complementario de la subescala de Ejecución, utilizable si un test principal es invalidado."
+    },
+    {
+      "q": "La versión APM del Raven se recomienda para sujetos a partir de los 12 años con una presunta inteligencia por encima de la media.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Identifica el público objetivo de las Matrices Progresivas Avanzadas.",
+      "explanation": "El APM está diseñado específicamente para evaluar personas con nivel cognitivo superior o altas capacidades cognitivas."
+    },
+    {
+      "q": "El Test IG-2 es un recurso habitual para medir inteligencia general exclusivamente mediante ejercicios de tipo no verbal.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Revisa los tipos de ejercicios incluidos en el IG-2 según el apartado 2.3.7.",
+      "explanation": "El IG-2 incluye ejercicios verbales, numéricos y de razonamiento abstracto; no es una prueba exclusivamente no verbal."
+    },
+    {
+      "q": "La definición de aptitud de Warren (1934) implica que estas capacidades son innatas y no pueden desarrollarse mediante entrenamiento.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Analiza la relación entre herencia y ambiente en la definición de aptitud.",
+      "explanation": "La definición sugiere que las aptitudes resultan de la interacción herencia-ambiente y pueden desarrollarse con entrenamiento adecuado."
+    },
+    {
+      "q": "En el Test de Dominós, la familiaridad previa con el juego tradicional influye significativamente en el rendimiento del sujeto.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Busca la aclaración sobre la influencia cultural del material del test.",
+      "explanation": "El texto aclara que, aunque usa fichas similares al juego, la familiaridad con este no influye en el rendimiento de la prueba."
+    },
+    {
+      "q": "La escala WPPSI fue concebida desde su origen como una extensión idéntica del WISC para niños de menor edad.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Observa la evolución conceptual del WPPSI descrita en el apartado 2.3.6.",
+      "explanation": "Aunque nació con esa intención, tras la revisión se determinó que debía ser una escala autónoma con metodología propia."
+    },
+    {
+      "q": "En la WAIS, el índice de Velocidad de Procesamiento se obtiene mediante los subtests de Claves y Búsqueda de Símbolos.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Revisa el cuarto índice de la estructura del WAIS en el diagrama.",
+      "explanation": "Efectivamente, Claves y Búsqueda de Símbolos son los dos pilares que componen el índice de Velocidad de Procesamiento (IVP)."
+    },
+    {
+      "q": "El análisis de errores en el Raven permite calcular el Puntaje de Error (PE), útil para procesos de desempate en selección.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Considera las aplicaciones prácticas de la evaluación cualitativa en el Raven.",
+      "explanation": "El PE es un indicador útil en selección de personal y diagnóstico diferencial cuando existen percentiles equivalentes."
+    },
+    {
+      "q": "El Test de Dominós se basa en leyes lógicas como la simetría, la progresión circular y la adición para resolver las series.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Enumera los principios relacionales mencionados en la página 4 y 5.",
+      "explanation": "Estos son algunos de los principios lógicos (junto a la alternancia o sustracción) que regulan las secuencias de las fichas."
+    },
+    {
+      "q": "¿Qué autor establece que la habilidad es el 'poder para realizar' y la aptitud el 'poder para aprender'?",
+      "options": [
+        "Lewis Terman (1916)",
+        "Brown (1980)",
+        "Warren (1934)"
+      ],
+      "correct": 1,
+      "hint": "Consulta las distinciones conceptuales al final del documento.",
+      "explanation": "Brown (1980) es quien define esta diferencia clave entre el estado actual (habilidad) y el potencial (aptitud)."
+    },
+    {
+      "q": "¿Cuál es la puntuación asignada a un 'error fino' (F) en el análisis cualitativo del Test de Raven?",
+      "options": [
+        "0.5 puntos",
+        "1.0 puntos",
+        "1.5 puntos"
+      ],
+      "correct": 2,
+      "hint": "Busca la ponderación de errores en la sección de análisis de errores.",
+      "explanation": "En el sistema de calificación ponderada de errores del Raven, los errores finos (F) se valoran con 1.5 puntos."
+    },
+    {
+      "q": "¿Qué índice del WAIS evalúa la capacidad de retener y manipular información temporalmente mediante procesos secuenciales?",
+      "options": [
+        "Razonamiento Perceptivo",
+        "Memoria de Trabajo",
+        "Comprensión Verbal"
+      ],
+      "correct": 1,
+      "hint": "Identifica las funciones ejecutivas evaluadas por cada índice.",
+      "explanation": "La Memoria de Trabajo (IMT) mide la retención y manipulación temporal, clave para el funcionamiento ejecutivo."
+    },
+    {
+      "q": "¿Cuál es la edad máxima de aplicación estándar contemplada para la Escala de Inteligencia WISC-R?",
+      "options": [
+        "15 años y 11 meses",
+        "16 años y 11 meses",
+        "17 años y 11 meses"
+      ],
+      "correct": 1,
+      "hint": "Revisa los límites de edad ajustados en la revisión de 1974.",
+      "explanation": "El WISC-R amplió el rango original del WISC hasta los 16 años y 11 meses de edad."
+    },
+    {
+      "q": "¿Qué tipo de correlato en el Raven se refiere específicamente a la configuración geométrica de los elementos de la matriz?",
+      "options": [
+        "Correlato numérico",
+        "Correlato de forma",
+        "Correlato espacial"
+      ],
+      "correct": 1,
+      "hint": "Distingue entre cantidad, disposición y dibujo en los reactivos.",
+      "explanation": "El correlato de forma se asocia con la configuración geométrica, mientras que el espacial se refiere a la distribución."
+    },
+    {
+      "q": "¿En qué año se publicó la versión definitiva del Test de Matrices Progresivas bajo el nombre de Progressive Matrices?",
+      "options": [
+        "Año 1936",
+        "Año 1938",
+        "Año 1944"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre el desarrollo inicial y la publicación de la versión final.",
+      "explanation": "Aunque desarrollado en 1936, su versión definitiva con las cinco series (A-E) apareció en 1938."
+    },
+    {
+      "q": "¿Cuál es el tiempo de tolerancia adicional recomendado en el Test de Dominós si el sujeto no termina en 30 minutos?",
+      "options": [
+        "De 5 a 10 minutos",
+        "De 12 a 15 minutos",
+        "De 18 a 20 minutos"
+      ],
+      "correct": 1,
+      "hint": "Busca el margen de flexibilidad horaria mencionado en la administración.",
+      "explanation": "El texto establece un tiempo límite de 30 minutos con una tolerancia adicional de hasta 12 o 15 minutos."
+    },
+    {
+      "q": "¿Qué subtest del WPPSI se utiliza como sustituto complementario ante la invalidez de una tarea de la escala verbal?",
+      "options": [
+        "Casa de los Animales",
+        "Diseño con Prismas",
+        "Subtest de Frases"
+      ],
+      "correct": 2,
+      "hint": "Identifica el test verbal de reserva en la estructura del WPPSI.",
+      "explanation": "El subtest de Frases solo se aplica si otro subtest verbal ha sido invalidado previamente."
+    },
+    {
+      "q": "¿Cuál de las siguientes escalas de Wechsler introdujo el uso de formas informatizadas para agilizar la corrección?",
+      "options": [
+        "WAIS actual",
+        "WISC original",
+        "Stanford-Binet"
+      ],
+      "correct": 0,
+      "hint": "Identifica la escala que menciona explícitamente el uso de software oficial.",
+      "explanation": "La versión actual de la WAIS utiliza software oficial para automatizar cálculos y generar informes detallados."
+    },
+    {
+      "q": "¿Qué autor es responsable de la estandarización y elaboración de normas del Test de Dominós en Uruguay?",
+      "options": [
+        "Edgar Anstey",
+        "W. L. Risso",
+        "P. Pichot"
+      ],
+      "correct": 1,
+      "hint": "Busca al investigador sudamericano que adaptó la versión de acceso libre.",
+      "explanation": "Anstey confió la versión de 1955 a W. L. Risso para su estandarización y validación en Uruguay."
+    },
+    {
+      "q": "¿Qué característica define a las 'matrices lacunares' presentadas en el Test de Matrices Progresivas de Raven?",
+      "options": [
+        "Figuras con color",
+        "Falta de una sección",
+        "Series de números"
+      ],
+      "correct": 1,
+      "hint": "Relaciona el término técnico con la tarea visual requerida.",
+      "explanation": "Las matrices lacunares son aquellas que presentan figuras geométricas abstractas con una sección o pieza faltante."
+    },
+    {
+      "q": "¿Cuál es el rango de edad específico para el que fue diseñada la versión WPPSI original tras su revisión?",
+      "options": [
+        "3 a 7 años",
+        "4 a 6.5 años",
+        "5 a 15 años"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre la escala WPPSI original y la posterior versión WPPSI-R.",
+      "explanation": "La WPPSI original se diseñó para niños de 4 a 6 años y medio; la WPPSI-R amplió este rango de 3 a 7 años."
+    },
+    {
+      "q": "¿Qué índice del WAIS evalúa la rapidez y precisión en tareas simples que requieren coordinación motora y atención visual?",
+      "options": [
+        "Memoria de Trabajo",
+        "Velocidad de Procesamiento",
+        "Razonamiento Perceptivo"
+      ],
+      "correct": 1,
+      "hint": "Busca el índice relacionado con la eficiencia temporal de la respuesta.",
+      "explanation": "La Velocidad de Procesamiento (IVP) valora la rapidez en tareas de escaneo, discriminación y coordinación motora."
+    },
+    {
+      "q": "¿Cuál es el valor del coeficiente de consistencia interna (fiabilidad) reportado para el CI Total de la escala WAIS?",
+      "options": [
+        "Superior a .80",
+        "Superior a .90",
+        "Superior a .95"
+      ],
+      "correct": 2,
+      "hint": "Identifica el dato estadístico de fiabilidad en la página 7 u 8.",
+      "explanation": "El texto señala que el coeficiente de consistencia interna para el CI Total del WAIS suele superar el valor de .95."
+    },
+    {
+      "q": "¿Qué subtest del WISC de ejecución requiere que el niño ordene viñetas para construir una historia con lógica temporal?",
+      "options": [
+        "Figuras Incompletas",
+        "Ordenación de Dibujos",
+        "Composición de Objetos"
+      ],
+      "correct": 1,
+      "hint": "Relaciona el nombre del subtest con la tarea de secuenciación lógica.",
+      "explanation": "En Ordenación de Dibujos, el niño debe organizar viñetas para formar una historia con coherencia secuencial."
+    },
+    {
+      "q": "¿Qué término se usa para describir la capacidad global de adaptarse al entorno y resolver problemas abstractos nuevos?",
+      "options": [
+        "Concepto de Aptitud",
+        "Concepto de Habilidad",
+        "Concepto de Inteligencia"
+      ],
+      "correct": 2,
+      "hint": "Busca la distinción conceptual entre inteligencia y aptitud al final del tema.",
+      "explanation": "La inteligencia se concibe como una capacidad global y general, a diferencia de la aptitud, que es específica."
+    },
+    {
+      "q": "¿Cuál es el número total de ejercicios que componen la versión SPM (Estándar) del Test de Matrices de Raven?",
+      "options": [
+        "36 ejercicios",
+        "48 ejercicios",
+        "60 ejercicios"
+      ],
+      "correct": 2,
+      "hint": "Identifica la cantidad de ítems de la versión para adolescentes y adultos.",
+      "explanation": "La versión SPM (Standard Progressive Matrices) incluye 60 ejercicios organizados en cinco series (A a E)."
+    },
+    {
+      "q": "¿Qué componente del WPPSI evalúa la planificación visomotora y el control de impulsos mediante el trazado de rutas?",
+      "options": [
+        "Diseño con Prismas",
+        "Subtest de Laberintos",
+        "Diseños Geométricos"
+      ],
+      "correct": 1,
+      "hint": "Relaciona la función ejecutiva con el tipo de tarea gráfica.",
+      "explanation": "Los laberintos demandan planificación motora, orientación espacial y, crucialmente, el control de impulsos al trazar."
+    },
+    {
+      "q": "¿Cuál es la desviación estándar utilizada en la Escala de Inteligencia Stanford-Binet para el cálculo del CI?",
+      "options": [
+        "DE de 10 puntos",
+        "DE de 15 puntos",
+        "DE de 16 puntos"
+      ],
+      "correct": 2,
+      "hint": "Cuidado, es diferente a la de las escalas de Wechsler.",
+      "explanation": "A diferencia de Wechsler (DE 15), la Stanford-Binet utiliza una media de 100 con una desviación estándar de 16."
+    },
+    {
+      "q": "¿Qué subtest del WAIS evalúa la capacidad para establecer relaciones lógicas e identificar conceptos culturales comunes?",
+      "options": [
+        "Subtest Semejanzas",
+        "Subtest Vocabulario",
+        "Subtest Información"
+      ],
+      "correct": 0,
+      "hint": "Busca la tarea de abstracción verbal dentro del Índice de Comprensión Verbal.",
+      "explanation": "Semejanzas permite explorar la capacidad para establecer relaciones lógicas y definir conceptos mediante analogías."
+    },
+    {
+      "q": "¿Qué tipo de prueba es el Raven según su modalidad de administración para grupos numerosos en poco tiempo?",
+      "options": [
+        "Prueba individual",
+        "Prueba colectiva",
+        "Prueba proyectiva"
+      ],
+      "correct": 1,
+      "hint": "Consulta el título del apartado 2.3 del documento.",
+      "explanation": "El Raven se clasifica dentro de las principales pruebas de inteligencia de aplicación colectiva por su eficiencia."
+    },
+    {
+      "q": "¿Cuál es la saturación del factor g confirmada en los estudios de validez estructural del Test de Raven?",
+      "options": [
+        "Entre .65 y .72",
+        "Entre .75 y .82",
+        "Entre .85 y .92"
+      ],
+      "correct": 1,
+      "hint": "Verifica los rangos estadísticos de validez estructural en el texto.",
+      "explanation": "Los análisis factoriales confirman una alta saturación del factor g con valores entre .75 y .82."
+    },
+    {
+      "q": "¿Qué autor adaptó la escala Binet-Simon en EE.UU. introduciendo el uso sistemático del Cociente Intelectual (CI)?",
+      "options": [
+        "David Wechsler",
+        "Lewis Terman",
+        "Edgar Anstey"
+      ],
+      "correct": 1,
+      "hint": "Identifica al psicólogo de Stanford mencionado en la sección 2.3.3.",
+      "explanation": "Lewis Terman fue quien adaptó la escala en Estados Unidos, creando la famosa Stanford-Binet y el uso del CI."
+    },
+    {
+      "q": "¿En qué consiste la tarea del subtest 'Diseño con Cubos' presente en las escalas de Wechsler?",
+      "options": [
+        "Contar bloques",
+        "Reproducir patrones",
+        "Construir torres"
+      ],
+      "correct": 1,
+      "hint": "Busca la descripción del subtest en los diagramas de estructura.",
+      "explanation": "Evalúa la capacidad para analizar y reproducir patrones visuales utilizando bloques bicolores bajo límite de tiempo."
+    },
+    {
+      "q": "¿Qué porcentaje de saturación del factor g se ha reportado en estudios sobre el Test de Raven?",
+      "options": [
+        "Cerca del 50%",
+        "Cerca del 80%",
+        "Cerca del 95%"
+      ],
+      "correct": 1,
+      "hint": "Busca el dato numérico de validez estructural (.75-.82).",
+      "explanation": "Una saturación de .75 a .82 equivale aproximadamente a un 80% de explicación por el factor general."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre el Test de Matrices Progresivas de Raven:",
+      "options": [
+        "Fue publicado por primera vez en 1936",
+        "Su versión definitiva apareció en 1938",
+        "Mide aptitudes verbales muy específicas"
+      ],
+      "correct": 2,
+      "hint": "Identifica la naturaleza no verbal de la prueba de Raven.",
+      "explanation": "El Raven es una prueba no verbal; reduce al mínimo la influencia del lenguaje y la escolarización."
+    },
+    {
+      "q": "Señala la opción INCORRECTA respecto a las versiones del Test de Raven:",
+      "options": [
+        "CPM es para niños de 5 a 11 años",
+        "SPM es para adultos desde los 12 años",
+        "APM consta de 36 ejercicios coloreados"
+      ],
+      "correct": 2,
+      "hint": "Distingue entre la versión en colores (infantil) y la avanzada.",
+      "explanation": "La versión APM es para niveles cognitivos superiores; la versión de 36 ejercicios coloreados es la CPM."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la administración del Test de Raven:",
+      "options": [
+        "El tiempo de aplicación es ilimitado",
+        "Se requiere interacción directa constante",
+        "Puede ser autoadministrada en adultos"
+      ],
+      "correct": 1,
+      "hint": "Compara las pruebas colectivas frente a las individuales en la página 1.",
+      "explanation": "A diferencia de los test individuales, las pruebas colectivas como el Raven no exigen interacción directa constante."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la consistencia del puntaje en el Raven:",
+      "options": [
+        "Se comparan puntajes parciales y esperados",
+        "El margen de error permitido es de ±5 puntos",
+        "Indica si la ejecución ha sido sistemática"
+      ],
+      "correct": 1,
+      "hint": "Busca el valor numérico exacto de la discrepancia permitida.",
+      "explanation": "El rendimiento se considera consistente si la discrepancia no supera los ±2 puntos, no los ±5 puntos."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre los errores en el análisis del Raven:",
+      "options": [
+        "Los errores medios (M) omiten dos correlatos",
+        "Los errores finos (F) valen 1.5 puntos de error",
+        "Los errores burdos (G) valen 10 puntos de error"
+      ],
+      "correct": 2,
+      "hint": "Verifica el peso del Puntaje de Error (PE) para los errores tipo G.",
+      "explanation": "Los errores burdos (G) valen 12 puntos de error (PE) según el sistema de calificación ponderada."
+    },
+    {
+      "q": "Señala la opción INCORRECTA respecto al origen del Test de Dominós:",
+      "options": [
+        "Fue diseñado por Edgar Anstey en 1944",
+        "Se creó originalmente para la marina mercante",
+        "Surgió como alternativa paralela al Raven"
+      ],
+      "correct": 1,
+      "hint": "Busca la institución militar específica para la que se diseñó.",
+      "explanation": "Fue diseñado para ser utilizado por la armada británica (ejército), no por la marina mercante civil."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la versión 'open test' del Dominós:",
+      "options": [
+        "Fue desarrollada por Anstey en 1955",
+        "Consta de un total de 44 reactivos lógicos",
+        "Está organizada en un total de ocho páginas"
+      ],
+      "correct": 1,
+      "hint": "Cuidado con la cifra de ítems de la versión de 1944 vs 1955.",
+      "explanation": "La versión inicial tenía 44, pero la versión 'open test' de 1955 consta de 48 reactivos."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre los principios lógicos del Dominós:",
+      "options": [
+        "Incluye simetría y progresión circular",
+        "Utiliza la memorización de fichas previas",
+        "Incluye operaciones de adición y sustracción"
+      ],
+      "correct": 1,
+      "hint": "Analiza qué procesos cognitivos NO se evalúan en esta prueba factorial.",
+      "explanation": "El test se basa en la educción de leyes lógicas, no en la memorización de contenidos o fichas previas."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la calificación del Test de Dominós:",
+      "options": [
+        "Se otorga un punto por respuesta correcta",
+        "Ambos valores de la ficha deben ser exactos",
+        "Se aceptan respuestas con valores invertidos"
+      ],
+      "correct": 2,
+      "hint": "Busca las condiciones de error en la página 5 del documento.",
+      "explanation": "Se consideran erróneas aquellas respuestas en las que los valores numéricos están invertidos."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la Stanford-Binet actual:",
+      "options": [
+        "Es una escala de administración colectiva",
+        "Incluye tareas manipulativas para niños",
+        "Se interpreta con base en un CI de desviación"
+      ],
+      "correct": 0,
+      "hint": "Determina si el profesional evalúa a uno o a varios sujetos a la vez.",
+      "explanation": "La Stanford-Binet es una prueba de aplicación estrictamente individual por un profesional entrenado."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la estructura del WAIS:",
+      "options": [
+        "El Índice de Comprensión Verbal es opcional",
+        "Contiene cuatro índices cognitivos principales",
+        "El CI Total estima la inteligencia global"
+      ],
+      "correct": 0,
+      "hint": "Distingue entre índices principales y subtests opcionales.",
+      "explanation": "El Índice de Comprensión Verbal es uno de los cuatro pilares fundamentales, no es opcional en sí mismo."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre el índice de Memoria de Trabajo del WAIS:",
+      "options": [
+        "Incluye el subtest de Retención de Dígitos",
+        "Evalúa la atención sostenida y concentración",
+        "Mide la velocidad de coordinación motriz"
+      ],
+      "correct": 2,
+      "hint": "Asocia la coordinación motriz con el índice correcto.",
+      "explanation": "La coordinación motriz se asocia al Índice de Velocidad de Procesamiento, no a la Memoria de Trabajo."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre los subtests opcionales del WAIS:",
+      "options": [
+        "Comprensión es opcional en el índice verbal",
+        "Matrices es opcional en el índice perceptivo",
+        "Pesos figurativos es opcional en razonamiento"
+      ],
+      "correct": 1,
+      "hint": "Verifica qué subtests del diagrama 1 aparecen marcados como opcionales.",
+      "explanation": "Matrices es un subtest principal del Índice de Razonamiento Perceptivo, no opcional."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre el WISC-III:",
+      "options": [
+        "Integró materiales y reactivos actualizados",
+        "Eliminó el uso de la Subescala de Ejecución",
+        "Fue adaptado a contextos hispanohablantes"
+      ],
+      "correct": 1,
+      "hint": "Revisa si el WISC-III mantuvo la estructura dual clásica de Wechsler.",
+      "explanation": "El WISC-III mantuvo la estructura de dos subescalas principales (Verbal y de Ejecución)."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la subescala verbal del WISC:",
+      "options": [
+        "Contiene el subtest de Figuras Incompletas",
+        "Incluye el subtest de Vocabulario y Aritmética",
+        "Repetición de Dígitos es complementario"
+      ],
+      "correct": 0,
+      "hint": "Busca la subescala a la que pertenece 'Figuras Incompletas'.",
+      "explanation": "Figuras Incompletas pertenece a la Subescala de Ejecución, ya que es una tarea perceptivo-visual."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la administración del WISC:",
+      "options": [
+        "Se puede aplicar en una o dos sesiones",
+        "Se permite reducir el número de subtests",
+        "Suele requerir entre 50 y 75 minutos"
+      ],
+      "correct": 1,
+      "hint": "Verifica las restricciones de aplicación para mantener la validez.",
+      "explanation": "No está permitido reducir el número de subtests, ya que esto afectaría directamente la validez del CI."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la calificación del WISC:",
+      "options": [
+        "Las puntuaciones naturales se normalizan",
+        "Se ajustan por edad en rangos de 4 meses",
+        "El CI Total es la resta de las subescalas"
+      ],
+      "correct": 2,
+      "hint": "Determina cómo se obtiene el CI final a partir de los parciales.",
+      "explanation": "El CI Total se obtiene a partir de la suma de las puntuaciones normalizadas, no de su resta."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la versión WPPSI-R:",
+      "options": [
+        "Es adecuada para niños entre 3 y 7 años",
+        "Fue validada en México con nivel medio-alto",
+        "Solo incluye subtests de aplicación colectiva"
+      ],
+      "correct": 2,
+      "hint": "Recuerda la modalidad de administración de todas las escalas Wechsler.",
+      "explanation": "La WPPSI-R, como todas las escalas de Wechsler, se administra de forma exclusivamente individual."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre los subtests del WPPSI:",
+      "options": [
+        "Información es una tarea de la escala verbal",
+        "Casa de los Animales mide la planificación motora",
+        "Diseño con Prismas evalúa razonamiento visual"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre memoria/asociación y planificación motora en el WPPSI.",
+      "explanation": "Casa de los Animales mide atención y memoria visual; la planificación motora es propia de 'Laberintos'."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la fiabilidad del WPPSI:",
+      "options": [
+        "Se usó el método de ítems pares e impares",
+        "El test-retest se usó para Casa de los Animales",
+        "La escala total tiene una fiabilidad de .50"
+      ],
+      "correct": 2,
+      "hint": "Evalúa si un coeficiente de .50 es aceptable para un test de este tipo.",
+      "explanation": "La fiabilidad de la escala total es muy elevada (.96), no .50 (que sería inaceptable psicométricamente)."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre el Test de Inteligencia IG-2:",
+      "options": [
+        "Incluye analogías y series numéricas",
+        "Es útil para procesos de selección de personal",
+        "Mide exclusivamente el factor espacial puro"
+      ],
+      "correct": 2,
+      "hint": "Analiza la amplitud de contenidos del IG-2.",
+      "explanation": "El IG-2 mide inteligencia general mediante ejercicios verbales, numéricos y de razonamiento, no solo espacial."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la distinción de Brown (1980):",
+      "options": [
+        "Habilidad se vincula al potencial futuro",
+        "La aptitud tiene una dimensión predictiva",
+        "Indica la probabilidad de adquirir conductas"
+      ],
+      "correct": 0,
+      "hint": "Intercambia los términos habilidad y aptitud en tu mente.",
+      "explanation": "La habilidad se refiere al estado actual; es la aptitud la que se vincula al potencial futuro."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre el concepto de aptitud:",
+      "options": [
+        "Es una capacidad global e indiferenciada",
+        "Predice el éxito en tareas muy delimitadas",
+        "Puede desarrollarse mediante el entrenamiento"
+      ],
+      "correct": 0,
+      "hint": "Compara la definición de aptitud con la de inteligencia global.",
+      "explanation": "La aptitud se refiere a capacidades específicas; la inteligencia es la que se concibe como capacidad global."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la estandarización del Dominós:",
+      "options": [
+        "Cuenta con normas para seis niveles culturales",
+        "Risso elaboró normas para Uruguay y validación",
+        "Es inaplicable para sujetos menores de 18 años"
+      ],
+      "correct": 2,
+      "hint": "Busca la edad mínima de aplicación mencionada en la página 4.",
+      "explanation": "El test se puede administrar individualmente a partir de los 10 años y colectivamente desde los 12."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la validez convergente del WPPSI:",
+      "options": [
+        "Correlaciona .75 con el Stanford-Binet",
+        "Correlaciona .82 con el WISC-R a los 6 años",
+        "No presenta relación alguna con el WISC-R"
+      ],
+      "correct": 2,
+      "hint": "Busca la relación estadística entre las escalas WPPSI y WISC-R.",
+      "explanation": "Existe una fuerte relación (.82) entre ambas escalas, lo que demuestra validez convergente."
+    },
+    {
+      "q": "El Test de Matrices Progresivas de Raven fue diseñado originalmente para estimar el ____ propuesto por Spearman.",
+      "options": [
+        "factor g de inteligencia",
+        "factor s de habilidades",
+        "factor v de comprensión"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la capacidad intelectual general.",
+      "explanation": "El texto indica explícitamente que la prueba fue diseñada para estimar el factor g de Spearman."
+    },
+    {
+      "q": "La versión ____ de las Matrices de Raven consta de 36 ejercicios y se aplica a niños de 5 a 11 años.",
+      "options": [
+        "CPM (Matrices en Colores)",
+        "SPM (Matrices Estándar)",
+        "APM (Matrices Avanzadas)"
+      ],
+      "correct": 0,
+      "hint": "Es la versión diseñada para los más pequeños.",
+      "explanation": "Las CPM (Coloured Progressive Matrices) están destinadas a niños entre 5 y 11 años y tienen 36 ítems."
+    },
+    {
+      "q": "En el Test de Dominós, el principio de ____ se refiere a la distribución de puntos en patrones secuenciales.",
+      "options": [
+        "progresión circular",
+        "inducción espacial",
+        "deducción numérica"
+      ],
+      "correct": 0,
+      "hint": "Es uno de los ocho principios lógicos mencionados.",
+      "explanation": "La progresión circular es uno de los principios lógicos que regulan las secuencias de las fichas."
+    },
+    {
+      "q": "La escala ____ es la versión de Wechsler diseñada específicamente para niños de 4 a 6 años y medio.",
+      "options": [
+        "WPPSI (Preschool)",
+        "WISC (Children)",
+        "WAIS (Adults)"
+      ],
+      "correct": 0,
+      "hint": "Sus siglas indican 'Preschool and Primary'.",
+      "explanation": "El WPPSI se concibió como una escala autónoma para el rango de 4 a 6 años y medio."
+    },
+    {
+      "q": "El índice de ____ de la WAIS incluye los subtests de Búsqueda de Símbolos y Claves.",
+      "options": [
+        "Velocidad de Procesamiento",
+        "Razonamiento Perceptivo",
+        "Memoria de Trabajo"
+      ],
+      "correct": 0,
+      "hint": "Mide la rapidez y precisión en tareas simples.",
+      "explanation": "El IVP (Índice de Velocidad de Procesamiento) se compone de los subtests de Claves y Búsqueda de Símbolos."
+    },
+    {
+      "q": "En la corrección de Raven, un error tipo ____ implica la omisión de los tres correlatos fundamentales.",
+      "options": [
+        "burdo (G)",
+        "medio (M)",
+        "fino (F)"
+      ],
+      "correct": 0,
+      "hint": "Es el error que resta más puntos en el análisis cualitativo.",
+      "explanation": "Los errores burdos (G) representan la omisión de los tres correlatos (numérico, forma y disposición)."
+    },
+    {
+      "q": "El Test de Dominós fue diseñado originalmente en 1944 por el psicólogo inglés ____.",
+      "options": [
+        "Edgar Anstey",
+        "John C. Raven",
+        "Lewis Terman"
+      ],
+      "correct": 0,
+      "hint": "Fue creado para la armada británica.",
+      "explanation": "Edgar Anstey diseñó el Test de Dominós como alternativa no verbal al Raven."
+    },
+    {
+      "q": "La consistencia del puntaje en Raven se considera adecuada si la discrepancia no supera los ____ puntos.",
+      "options": [
+        "±2 puntos",
+        "±5 puntos",
+        "±1 punto"
+      ],
+      "correct": 0,
+      "hint": "Es un margen estrecho de error por serie.",
+      "explanation": "El rendimiento es consistente si la diferencia entre lo obtenido y lo esperado no supera los 2 puntos."
+    },
+    {
+      "q": "El subtest ____ es exclusivo de la escala WPPSI y valora la atención y memoria visual.",
+      "options": [
+        "Casa de los Animales",
+        "Diseño con Prismas",
+        "Figuras Incompletas"
+      ],
+      "correct": 0,
+      "hint": "Utiliza un tablero con cilindros de colores.",
+      "explanation": "Casa de los Animales es uno de los tres subtests desarrollados específicamente para el WPPSI."
+    },
+    {
+      "q": "En la WAIS, el subtest de ____ evalúa la capacidad de almacenar y manipular información numérica.",
+      "options": [
+        "Retención de Dígitos",
+        "Aritmética Mental",
+        "Semejanzas Verbales"
+      ],
+      "correct": 0,
+      "hint": "Forma parte del Índice de Memoria de Trabajo.",
+      "explanation": "Retención de Dígitos mide la memoria a corto plazo y la manipulación de información auditiva."
+    },
+    {
+      "q": "El Test de Otis se utiliza primordialmente para medir la capacidad de ____.",
+      "options": [
+        "comprensión verbal",
+        "destreza manual",
+        "memoria remota"
+      ],
+      "correct": 0,
+      "hint": "Explora el razonamiento lógico verbal.",
+      "explanation": "El Otis es una prueba de razonamiento lógico verbal muy común en selección y orientación."
+    },
+    {
+      "q": "Según Brown, la ____ se refiere al poder para aprender a realizar una tarea futura.",
+      "options": [
+        "aptitud cognitiva",
+        "habilidad técnica",
+        "inteligencia fluida"
+      ],
+      "correct": 0,
+      "hint": "Contiene una dimensión predictiva del rendimiento.",
+      "explanation": "Brown define la aptitud como el potencial de aprendizaje, a diferencia de la habilidad (estado actual)."
+    },
+    {
+      "q": "El Test de Dominós es una prueba de ____, lo que significa que mide capacidad sin límite estricto.",
+      "options": [
+        "poder cognitivo",
+        "velocidad pura",
+        "rendimiento motor"
+      ],
+      "correct": 0,
+      "hint": "El tiempo es generoso para permitir el razonamiento.",
+      "explanation": "Se define como prueba de poder porque busca medir el nivel máximo de razonamiento del sujeto."
+    },
+    {
+      "q": "En el WISC, el subtest de ____ consiste en ordenar viñetas para formar una historia lógica.",
+      "options": [
+        "Ordenación Dibujos",
+        "Historias Visuales",
+        "Secuencia Lógica"
+      ],
+      "correct": 0,
+      "hint": "Valora la comprensión secuencial y temporal.",
+      "explanation": "Ordenación de Dibujos requiere que el niño organice una serie de tarjetas con sentido lógico."
+    },
+    {
+      "q": "La versión ____ de la escala Stanford-Binet introdujo el uso del Cociente Intelectual (CI).",
+      "options": [
+        "adaptada por Terman",
+        "original de Binet",
+        "revisión de Wechsler"
+      ],
+      "correct": 0,
+      "hint": "Fue la adaptación estadounidense de la prueba francesa.",
+      "explanation": "Lewis Terman introdujo el CI y la estandarización a gran escala en su adaptación de Stanford."
+    },
+    {
+      "q": "En las Matrices de Raven, la capacidad de ____ se evalúa en las tres últimas series del SPM.",
+      "options": [
+        "educción correlatos",
+        "percepción formas",
+        "memoria de trabajo"
+      ],
+      "correct": 0,
+      "hint": "Implica procesos de razonamiento analógico complejo.",
+      "explanation": "El texto especifica que las tres últimas series demandan la educción de correlatos complejos."
+    },
+    {
+      "q": "El índice de ____ de la WAIS incluye subtests como Diseño con Cubos y Rompecabezas Visuales.",
+      "options": [
+        "Razonamiento Perceptivo",
+        "Comprensión Verbal",
+        "Velocidad de Respuesta"
+      ],
+      "correct": 0,
+      "hint": "Evalúa la resolución de problemas visoespaciales.",
+      "explanation": "El IRP (Índice de Razonamiento Perceptivo) agrupa las tareas de manipulación visual y espacial."
+    },
+    {
+      "q": "El test ____ es una prueba colectiva que incluye analogías, series y problemas aritméticos.",
+      "options": [
+        "IG-2 Inteligencia",
+        "D-48 Dominós",
+        "Terman-Merrill"
+      ],
+      "correct": 0,
+      "hint": "Es un recurso habitual en orientación escolar.",
+      "explanation": "El IG-2 es un instrumento de aplicación colectiva que cubre áreas verbales y numéricas."
+    },
+    {
+      "q": "En el WPPSI, el subtest de ____ es complementario y evalúa la construcción verbal.",
+      "options": [
+        "Frases y Oraciones",
+        "Vocabulario Infantil",
+        "Comprensión Social"
+      ],
+      "correct": 0,
+      "hint": "Solo se aplica si otro subtest verbal falla.",
+      "explanation": "Frases es el subtest complementario de la subescala verbal en el WPPSI."
+    },
+    {
+      "q": "El Test de Dominós tiene una versión francesa muy difundida denominada ____.",
+      "options": [
+        "D-48 de Pichot",
+        "Group Test 100",
+        "Matrices de Raven"
+      ],
+      "correct": 0,
+      "hint": "Publicada por el Centre de Psychologie Appliquée.",
+      "explanation": "La versión D-48 fue desarrollada por P. Pichot en Francia y alcanzó gran popularidad."
+    },
+    {
+      "q": "La edad ____ en la escala Stanford-Binet es el nivel donde el sujeto resuelve con éxito todas las tareas.",
+      "options": [
+        "basal de inicio",
+        "tope de finalización",
+        "mental de cálculo"
+      ],
+      "correct": 0,
+      "hint": "Es el punto de partida para el cálculo del CI.",
+      "explanation": "La edad basal se define como el nivel inferior donde el examinado comienza a resolver con éxito."
+    },
+    {
+      "q": "En el WISC, el subtest de ____ consiste en reproducir patrones con cubos bicolores.",
+      "options": [
+        "Diseño con Cubos",
+        "Bloques de Color",
+        "Matrices Visuales"
+      ],
+      "correct": 0,
+      "hint": "Mide la capacidad visoespacial y de análisis.",
+      "explanation": "Diseño con Cubos es un subtest clásico de ejecución que requiere análisis y síntesis visual."
+    },
+    {
+      "q": "El concepto de ____ se define como la condición sintomática de la capacidad para adquirir conocimientos.",
+      "options": [
+        "aptitud específica",
+        "habilidad motora",
+        "inteligencia fluida"
+      ],
+      "correct": 0,
+      "hint": "Citado por Warren en su diccionario de 1934.",
+      "explanation": "Warren define aptitud como el conjunto de características que indican la capacidad de aprendizaje mediante entrenamiento."
+    },
+    {
+      "q": "La corrección del WISC-R se basa en un ____ con media 100 y desviación estándar de 15.",
+      "options": [
+        "CI de desviación",
+        "CI de proporción",
+        "Rango percentilar"
+      ],
+      "correct": 0,
+      "hint": "Permite comparaciones entre personas de distintas edades.",
+      "explanation": "Wechsler utiliza el CI de desviación (Media 100, DT 15) para normalizar sus puntuaciones."
+    },
+    {
+      "q": "El Test de Dominós aplica el principio de ____ cuando las fichas se suman o restan.",
+      "options": [
+        "adición/sustracción",
+        "progresión compleja",
+        "asimetría de serie"
+      ],
+      "correct": 0,
+      "hint": "Son leyes matemáticas aplicadas a las fichas.",
+      "explanation": "La adición y la sustracción son dos de los ocho principios lógicos identificados en la prueba."
+    },
+    {
+      "q": "En el Raven, el correlato de ____ se refiere a la configuración geométrica de la figura.",
+      "options": [
+        "forma del objeto",
+        "espacio del ítem",
+        "número de piezas"
+      ],
+      "correct": 0,
+      "hint": "Es uno de los tres componentes del análisis de errores.",
+      "explanation": "El análisis de errores considera tres correlatos: numérico, de forma y disposición espacial."
+    },
+    {
+      "q": "La subescala de ____ del WISC incluye subtests como Claves y Laberintos.",
+      "options": [
+        "ejecución visual",
+        "comprensión oral",
+        "memoria auditiva"
+      ],
+      "correct": 0,
+      "hint": "Se opone a la subescala de contenido verbal.",
+      "explanation": "Claves y Laberintos forman parte de la subescala de ejecución (no verbal) del WISC."
+    },
+    {
+      "q": "En el WPPSI, el subtest ____ requiere copiar figuras abstractas midiendo coordinación visual.",
+      "options": [
+        "Diseños Geométricos",
+        "Dibujo de Figuras",
+        "Copia de Matrices"
+      ],
+      "correct": 0,
+      "hint": "Es parte de la subescala de ejecución infantil.",
+      "explanation": "Diseños Geométricos evalúa la percepción espacial y la coordinación visomotora fina."
+    },
+    {
+      "q": "El Raven ____ fue diseñado para personas con nivel cognitivo superior o inteligencia sobre la media.",
+      "options": [
+        "APM (Avanzadas)",
+        "SPM (Estándar)",
+        "CPM (Colores)"
+      ],
+      "correct": 0,
+      "hint": "Se recomienda aplicar a partir de los 12 años en estos casos.",
+      "explanation": "Las APM (Advanced Progressive Matrices) están diseñadas para evaluar altos niveles de capacidad intelectual."
+    },
+    {
+      "q": "El Test de Dominós se aplica normalmente a personas de entre ____ años de edad.",
+      "options": [
+        "12 y 39 años",
+        "6 y 16 años",
+        "18 y 65 años"
+      ],
+      "correct": 0,
+      "hint": "Tiene normas adaptadas a seis niveles culturales para este rango.",
+      "explanation": "Aunque puede administrarse desde los 10 años, sus normas principales cubren de los 12 a los 39."
+    },
+    {
+      "q": "En la WAIS, el subtest de ____ consiste en definir palabras para medir el conocimiento léxico.",
+      "options": [
+        "Vocabulario Verbal",
+        "Diccionario Oral",
+        "Lenguaje Expresivo"
+      ],
+      "correct": 0,
+      "hint": "Es el mejor predictor de la inteligencia cristalizada.",
+      "explanation": "Vocabulario mide la riqueza léxica y la formación de conceptos verbales."
+    },
+    {
+      "q": "La versión ____ del Raven fue publicada en 1956 reemplazando ítems de la versión original.",
+      "options": [
+        "revisión de escala",
+        "edición definitiva",
+        "escala abreviada"
+      ],
+      "correct": 0,
+      "hint": "Se reubicaron siete ítems de la serie original.",
+      "explanation": "En 1956 se revisó la escala general de Raven para mejorar sus propiedades psicométricas."
+    },
+    {
+      "q": "En el Dominós, se otorga ____ por cada respuesta donde ambos valores son correctos.",
+      "options": [
+        "un punto total",
+        "medio punto",
+        "dos puntos"
+      ],
+      "correct": 0,
+      "hint": "El criterio de calificación es exigente.",
+      "explanation": "Solo se puntúa con 1 punto si ambas mitades de la ficha están correctas y en posición."
+    },
+    {
+      "q": "El WPPSI utiliza el subtest ____ para evaluar el razonamiento visual mediante bloques tridimensionales.",
+      "options": [
+        "Diseño con Prismas",
+        "Cubo de Kohs",
+        "Bloques de Madera"
+      ],
+      "correct": 0,
+      "hint": "Es equivalente al Diseño con Cubos del WISC/WAIS.",
+      "explanation": "Diseño con Prismas utiliza bloques de colores para que el niño reproduzca modelos visuales."
+    },
+    {
+      "q": "Las pruebas ____ de inteligencia permiten evaluar grupos numerosos en un tiempo breve.",
+      "options": [
+        "colectivas grupales",
+        "individuales clínicas",
+        "proyectivas libres"
+      ],
+      "correct": 0,
+      "hint": "Son eficientes para contextos escolares y laborales.",
+      "explanation": "Las pruebas colectivas destacan por su eficiencia en la administración simultánea a grandes grupos."
+    },
+    {
+      "q": "En el WISC, el subtest de ____ requiere resolver problemas numéricos mentalmente sin papel.",
+      "options": [
+        "Aritmética Mental",
+        "Cálculo Escrito",
+        "Lógica Numérica"
+      ],
+      "correct": 0,
+      "hint": "Valora la atención y la memoria de trabajo.",
+      "explanation": "Aritmética evalúa la habilidad para realizar operaciones mentales bajo presión temporal."
+    },
+    {
+      "q": "La validez de ____ del Raven se confirmó mediante altas correlaciones con el test Terman-Merrill.",
+      "options": [
+        "criterio externo",
+        "contenido teórico",
+        "constructo interno"
+      ],
+      "correct": 0,
+      "hint": "Se comparó con otra prueba estandarizada reconocida.",
+      "explanation": "La validez de criterio se demuestra comparando los resultados con otras medidas de inteligencia."
+    },
+    {
+      "q": "El subtest de ____ en la WAIS evalúa la capacidad de establecer relaciones lógicas entre conceptos.",
+      "options": [
+        "Semejanzas Verbales",
+        "Información General",
+        "Matrices Visuales"
+      ],
+      "correct": 0,
+      "hint": "El sujeto debe decir en qué se parecen dos cosas.",
+      "explanation": "Semejanzas mide el pensamiento asociativo y la abstracción verbal."
+    },
+    {
+      "q": "En el WPPSI, el subtest de ____ evalúa la percepción visual buscando partes que faltan.",
+      "options": [
+        "Figuras Incompletas",
+        "Detalles Visuales",
+        "Búsqueda Errores"
+      ],
+      "correct": 0,
+      "hint": "El niño debe identificar qué elemento falta en un dibujo.",
+      "explanation": "Figuras Incompletas requiere atención a los detalles y reconocimiento de objetos comunes."
+    },
+    {
+      "q": "La fiabilidad del Raven mediante el método ____ oscila entre .83 y .93 según la edad.",
+      "options": [
+        "test-retest estable",
+        "consistencia interna",
+        "formas paralelas"
+      ],
+      "correct": 0,
+      "hint": "Mide la estabilidad temporal de la puntuación.",
+      "explanation": "El test-retest confirma que las puntuaciones se mantienen estables en el tiempo."
+    },
+    {
+      "q": "Respecto a las escalas Wechsler, identifique la opción que describe subtests verbales reales:",
+      "options": [
+        "Información y Semejanzas",
+        "Comprensión y Vocabulario",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son componentes clásicos de la subescala verbal.",
+      "explanation": "Tanto Información, Semejanzas, Vocabulario y Comprensión son subtests de la rama verbal de Wechsler."
+    },
+    {
+      "q": "Los principios que regulan las secuencias lógicas en el Test de Dominós incluyen:",
+      "options": [
+        "Simetría y Alternancia",
+        "Adición y Progresión",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "El texto menciona ocho principios fundamentales.",
+      "explanation": "Simetría, alternancia, adición y progresión son leyes lógicas que rigen los ítems de dominó."
+    },
+    {
+      "q": "Sobre el Test de Raven, se puede afirmar que las versiones existentes son:",
+      "options": [
+        "CPM para población infantil",
+        "APM para niveles superiores",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Existen tres versiones principales según la capacidad.",
+      "explanation": "El Raven se divide en Matrices en Colores (CPM), Estándar (SPM) y Avanzadas (APM)."
+    },
+    {
+      "q": "El Índice de Razonamiento Perceptivo de la WAIS-IV está integrado por:",
+      "options": [
+        "Diseño con Cubos y Matrices",
+        "Rompecabezas Visuales",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Evalúa procesamiento visoespacial complejo.",
+      "explanation": "Todos estos subtests forman parte del índice que mide razonamiento fluido no verbal."
+    },
+    {
+      "q": "Las características del Test de Dominós como instrumento de evaluación son:",
+      "options": [
+        "Independencia del lenguaje",
+        "Medición del factor g",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es una prueba no verbal basada en Spearman.",
+      "explanation": "El dominó es un test no verbal que busca saturar el factor g sin influencia cultural o lingüística."
+    },
+    {
+      "q": "En la evaluación con WPPSI, el examinador debe demostrar habilidades de:",
+      "options": [
+        "Simpatía y mucha firmeza",
+        "Paciencia y objetividad",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "El trabajo con preescolares requiere un manejo específico.",
+      "explanation": "El texto destaca que el evaluador debe ser firme pero paciente y objetivo con los niños pequeños."
+    },
+    {
+      "q": "El análisis de errores en el Raven permite identificar fallos en los correlatos de:",
+      "options": [
+        "Número y Forma geométrica",
+        "Disposición en el espacio",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son los tres pilares del análisis cualitativo.",
+      "explanation": "El Raven analiza errores basándose en el fallo de cantidad (numérico), forma o posición."
+    },
+    {
+      "q": "Los subtests considerados complementarios en la escala WISC original o revisada son:",
+      "options": [
+        "Repetición de Dígitos",
+        "Laberintos en ejecución",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se usan si los principales se invalidan.",
+      "explanation": "Dígitos y Laberintos son subtests de reserva para sustituir a otros en caso necesario."
+    },
+    {
+      "q": "Sobre la escala Stanford-Binet, su aplicación actual se caracteriza por:",
+      "options": [
+        "Formatos informatizados",
+        "Uso de maleta con objetos",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Combina materiales físicos con corrección digital.",
+      "explanation": "Aunque usa materiales manipulativos, su administración y corrección se han modernizado tecnológicamente."
+    },
+    {
+      "q": "El Índice de Comprensión Verbal de la WAIS mide procesos cognitivos relacionados con:",
+      "options": [
+        "Conocimiento del entorno",
+        "Razonamiento lógico verbal",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Explora la inteligencia cristalizada.",
+      "explanation": "Este índice abarca tanto la cultura general como la capacidad de abstracción mediante el lenguaje."
+    },
+    {
+      "q": "Las ventajas de las pruebas de inteligencia colectivas frente a las individuales son:",
+      "options": [
+        "Eficiencia en tiempo breve",
+        "Análisis estadístico fácil",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se usan mucho en empresas y escuelas.",
+      "explanation": "Las pruebas colectivas permiten evaluar a muchos sujetos a la vez bajo condiciones estandarizadas."
+    },
+    {
+      "q": "En el WPPSI, los subtests desarrollados específicamente para esta escala son:",
+      "options": [
+        "Casa de los Animales",
+        "Diseños Geométricos",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son tres los tests creados ex novo para niños.",
+      "explanation": "Casa de los Animales, Diseños Geométricos y Frases son las adiciones específicas al WPPSI."
+    },
+    {
+      "q": "La estandarización del WISC-R se realizó considerando variables demográficas como:",
+      "options": [
+        "Sexo y nivel socioeconómico",
+        "Región y tipo de residencia",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Buscaba una muestra representativa de la población.",
+      "explanation": "Wechsler estratificó su muestra de 2200 niños por edad, sexo, clase social y geografía."
+    },
+    {
+      "q": "El test de Matrices Progresivas de Raven se considera un instrumento que reduce la influencia de:",
+      "options": [
+        "El lenguaje y la cultura",
+        "El nivel de escolarización",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es una prueba de 'cultura libre' o justa.",
+      "explanation": "Al ser figuras abstractas, el Raven minimiza el impacto del contexto educativo o cultural del sujeto."
+    },
+    {
+      "q": "Sobre la WAIS, los índices que permiten estimar el CI Total del individuo son:",
+      "options": [
+        "Comprensión y Razonamiento",
+        "Memoria y Velocidad",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son los cuatro pilares de la estructura actual.",
+      "explanation": "El CIT se calcula a partir de los cuatro índices principales mencionados en el texto."
+    },
+    {
+      "q": "En el contexto de las aptitudes, los autores Brown y Warren coinciden en que:",
+      "options": [
+        "No son innatas de forma rígida",
+        "Pueden ser desarrollables",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Destacan la interacción herencia-ambiente.",
+      "explanation": "Ambos autores consideran que el entrenamiento y el ambiente influyen en el desarrollo de las aptitudes."
+    },
+    {
+      "q": "La validez de la escala WPPSI ha sido respaldada mediante estudios de:",
+      "options": [
+        "Intercorrelación interna",
+        "Validez convergente externa",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se comparó con el Stanford-Binet y el WISC.",
+      "explanation": "El WPPSI muestra solidez tanto en su estructura interna como en su relación con otros tests líderes."
+    },
+    {
+      "q": "Respecto a la corrección de los tests de inteligencia, se utilizan herramientas como:",
+      "options": [
+        "Claves matrices físicos",
+        "Software de informatización",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Depende de la antigüedad y tipo de la prueba.",
+      "explanation": "Desde las plantillas perforadas del Dominós hasta el software de la WAIS, se usan diversos métodos."
+    },
+    {
+      "q": "El Test de Raven SPM (Estándar) se caracteriza por tener una estructura de:",
+      "options": [
+        "36 ítems en tres series",
+        "48 ítems en ocho páginas",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Consulte los datos específicos de la versión SPM.",
+      "explanation": "El Raven SPM tiene 60 ejercicios organizados en cinco series (A, B, C, D, E). Las opciones dadas son falsas."
+    },
+    {
+      "q": "En el Test de Dominós, una respuesta se considera correcta si el evaluado:",
+      "options": [
+        "Acierta una de las dos mitades",
+        "Invierte los valores numéricos",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "La calificación es por acierto total del ítem.",
+      "explanation": "Para puntuar, el sujeto debe acertar ambos valores en la posición correcta. Las opciones A y B son errores."
+    },
+    {
+      "q": "El índice de Memoria de Trabajo en la WAIS incluye subtests como:",
+      "options": [
+        "Vocabulario y Comprensión",
+        "Matrices y Rompecabezas",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Busque tests de retención numérica o atención.",
+      "explanation": "Memoria de Trabajo incluye Dígitos y Aritmética. Las opciones dadas pertenecen a otros índices."
+    },
+    {
+      "q": "La versión WPPSI original fue diseñada para evaluar a niños en el rango de:",
+      "options": [
+        "12 a 16 años y 11 meses",
+        "3 a 7 años de edad exacta",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es la escala de preescolar y primaria temprana.",
+      "explanation": "El WPPSI original era para niños de 4 a 6 años y medio. Las opciones dadas son rangos incorrectos."
+    },
+    {
+      "q": "En el análisis de errores del Raven, un error tipo 'fino' (F) se define como:",
+      "options": [
+        "La omisión de los 3 correlatos",
+        "La omisión de 2 correlatos",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es el error más leve en la escala ponderada.",
+      "explanation": "El error fino (F) es la omisión de un solo correlato (1.5 puntos). Las opciones A y B describen errores burdos o medios."
+    },
+    {
+      "q": "El Test de Otis es reconocido en la psicometría por ser una prueba de:",
+      "options": [
+        "Aplicación individual obligatoria",
+        "Contenido puramente manual",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es una de las pruebas colectivas más famosas.",
+      "explanation": "El Otis es una prueba colectiva de razonamiento lógico verbal. Las opciones A y B son falsas."
+    },
+    {
+      "q": "Según el texto, el factor 'g' de Spearman se define conceptualmente como:",
+      "options": [
+        "Una aptitud mecánica específica",
+        "La destreza motora fina del sujeto",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es la base de la inteligencia general.",
+      "explanation": "El factor g es la inteligencia general global, no una aptitud específica o motora."
+    },
+    {
+      "q": "En el WISC, el subtest de 'Laberintos' se utiliza regularmente para evaluar:",
+      "options": [
+        "La riqueza del léxico infantil",
+        "El cálculo aritmético mental",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Mide planificación y orientación espacial.",
+      "explanation": "Laberintos evalúa planificación motora y control de impulsos. Las opciones A y B describen otros subtests."
+    },
+    {
+      "q": "El Test de Dominós fue estandarizado en Uruguay por el investigador:",
+      "options": [
+        "Edgar Anstey de Inglaterra",
+        "David Wechsler de EE.UU.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Fue un colaborador de la Universidad del Trabajo.",
+      "explanation": "Fue W. L. Risso quien estandarizó la versión 'open test' en Uruguay. Las opciones A y B son los autores originales."
+    },
+    {
+      "q": "En la WAIS, el Índice de Velocidad de Procesamiento mide habilidades como:",
+      "options": [
+        "El razonamiento abstracto verbal",
+        "La memoria de largo plazo cultural",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se centra en la rapidez visual y motora.",
+      "explanation": "Mide rapidez y precisión en tareas simples de atención visual. Las opciones A y B son de Comprensión Verbal."
+    },
+    {
+      "q": "La edad tope en la evaluación con la escala Stanford-Binet se alcanza cuando:",
+      "options": [
+        "El sujeto resuelve con éxito todo",
+        "Se inicia la primera subprueba",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es el punto donde el examinado ya no puede avanzar.",
+      "explanation": "La edad tope es donde cesa el éxito en las tareas propuestas. Las opciones A y B son opuestas a esto."
+    },
+    {
+      "q": "El subtest de 'Casa de los Animales' del WPPSI utiliza como material principal:",
+      "options": [
+        "Cubos rojos y blancos de madera",
+        "Tarjetas con historias lógicas",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Requiere asociar cilindros con animales.",
+      "explanation": "Usa un tablero con cilindros de colores. Los cubos (B) y tarjetas (A) pertenecen a otros subtests."
+    },
+    {
+      "q": "La consistencia de los resultados en el Raven se invalida si la discrepancia es de:",
+      "options": [
+        "Cero puntos en todas las series",
+        "Un punto de diferencia máximo",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Busque el valor que supera el margen permitido.",
+      "explanation": "Se considera consistente si no supera ±2 puntos. Las opciones A y B indican consistencia perfecta o alta."
+    },
+    {
+      "q": "El término 'habilidad' según Brown (1980) se diferencia de 'aptitud' en que:",
+      "options": [
+        "Es el poder para aprender a futuro",
+        "Es una medida predictiva del éxito",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se refiere al estado presente de ejecución.",
+      "explanation": "Habilidad es el poder actual para realizar una tarea. Las opciones A y B definen aptitud."
+    },
+    {
+      "q": "Las Matrices Progresivas en Colores (CPM) se recomiendan para personas de:",
+      "options": [
+        "12 a 65 años de edad media",
+        "Altas capacidades intelectuales",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es para niños o personas con limitaciones.",
+      "explanation": "El CPM es para niños de 5-11 años o personas con discapacidad. Las opciones A y B son para SPM/APM."
+    },
+    {
+      "q": "En el WISC, el subtest complementario de la subescala de ejecución es:",
+      "options": [
+        "Información de datos culturales",
+        "Vocabulario de términos léxicos",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es un test de planificación en papel.",
+      "explanation": "El subtest complementario es Laberintos. Información y Vocabulario son subtests verbales principales."
+    },
+    {
+      "q": "La corrección del Test de Dominós se realiza mediante una clave matriz que:",
+      "options": [
+        "Analiza los errores finos y burdos",
+        "Calcula el CI de desviación directo",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Permite ver las respuestas por ventanillas.",
+      "explanation": "La clave permite visualizar aciertos a través de ventanillas para obtener el puntaje bruto. A y B son falsas."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "Analice las ventajas y limitaciones de las pruebas colectivas de inteligencia en comparación con las individuales según el texto.",
+      "model": "Las pruebas colectivas destacan por su eficiencia al explorar grupos numerosos en poco tiempo y bajo condiciones estandarizadas, facilitando el análisis estadístico y la comparación de puntuaciones. Sin embargo, a diferencia de las individuales, carecen de la interacción directa examinador-examinado, lo que impide observar variables cualitativas del comportamiento durante la ejecución.",
+      "keywords": [
+        "eficiencia",
+        "estandarización",
+        "interacción directa",
+        "evaluación psicopedagógica"
+      ]
+    },
+    {
+      "q": "Explique el constructo teórico que sustenta el Test de Matrices Progresivas de Raven y cómo se refleja en su estructura.",
+      "model": "El test se basa en el factor g de Spearman y evalúa la capacidad de razonamiento analógico, percepción de relaciones y abstracción. Su estructura de matrices lacunares con figuras geométricas abstractas minimiza la influencia del lenguaje y la cultura, organizándose en series de dificultad progresiva para medir la educción de relaciones y correlatos.",
+      "keywords": [
+        "factor g",
+        "Spearman",
+        "razonamiento analógico",
+        "matrices lacunares"
+      ]
+    },
+    {
+      "q": "Diferencie las tres versiones principales del Test de Raven (CPM, SPM y APM) indicando su población objetivo.",
+      "model": "La CPM (Colores) se aplica a niños de 5 a 11 años o personas con limitaciones cognitivas (36 ejercicios). La SPM (Estándar) es para adolescentes y adultos desde los 12 años (60 ejercicios). La APM (Avanzada) evalúa a personas con nivel cognitivo superior o sospecha de alta capacidad a partir de los 12 años.",
+      "keywords": [
+        "CPM",
+        "SPM",
+        "APM",
+        "población objetivo"
+      ]
+    },
+    {
+      "q": "Describa el procedimiento de verificación de consistencia en la corrección del Test de Raven.",
+      "model": "Consiste en comparar los puntajes parciales obtenidos en cada serie con los puntajes esperados teóricamente según la puntuación total bruta. El rendimiento se considera consistente si la discrepancia entre lo observado y lo esperado no supera los ±2 puntos en ninguna de las series del test.",
+      "keywords": [
+        "consistencia",
+        "discrepancia",
+        "puntaje esperado",
+        "validez"
+      ]
+    },
+    {
+      "q": "Explique la tipología de errores en el Test de Raven y la utilidad del Puntaje de Error (PE).",
+      "model": "Los errores se clasifican según la omisión de correlatos (numérico, forma, disposición): Errores Finos (F, 1/2 punto), Medios (M, 1 punto) y Burdos (G, 12 puntos). La suma ponderada genera el PE, útil para el diagnóstico diferencial, selección de personal y procesos de desempate en percentiles equivalentes.",
+      "keywords": [
+        "correlatos",
+        "errores finos",
+        "Puntaje de Error",
+        "diagnóstico diferencial"
+      ]
+    },
+    {
+      "q": "Compare el origen y el propósito inicial del Test de Dominós frente al Test de Matrices Progresivas de Raven.",
+      "model": "El Test de Dominós fue creado por Edgar Anstey en 1944 para la armada británica como una alternativa paralela al Raven, buscando superar limitaciones específicas en ciertos contextos. Ambos comparten la base factorial de Spearman (factor g) y el carácter no verbal, pero el Dominós utiliza secuencias lógicas basadas en fichas de dominó.",
+      "keywords": [
+        "Anstey",
+        "armada británica",
+        "alternativa paralela",
+        "factor g"
+      ]
+    },
+    {
+      "q": "Enumere y explique al menos cuatro de los principios lógicos que regulan las secuencias en el Test de Dominós.",
+      "model": "El test se basa en leyes como: 1) Simetría; 2) Alternancia y progresión simple; 3) Progresión circular (ciclos de 0 a 6); y 4) Adición o sustracción de puntos. El examinado debe deducir estas leyes para completar la ficha faltante, independientemente de su familiaridad con el juego real.",
+      "keywords": [
+        "simetría",
+        "progresión circular",
+        "adición",
+        "sustracción"
+      ]
+    },
+    {
+      "q": "Detalle los criterios de corrección del Test de Dominós y qué se considera una respuesta errónea.",
+      "model": "Se otorga un punto por respuesta totalmente acertada (ambos valores numéricos correctos y en la posición adecuada). Es errónea si los valores están invertidos, si falta uno de ellos o si se omite el '0' dejando la casilla en blanco, ya que el 'blanco' debe registrarse como cero.",
+      "keywords": [
+        "posición correcta",
+        "cero",
+        "respuesta invertida",
+        "puntaje bruto"
+      ]
+    },
+    {
+      "q": "Analice la importancia de Lewis Terman en la evolución de la Escala de Inteligencia Stanford-Binet.",
+      "model": "Terman adaptó la escala original de Binet-Simon en EE.UU., introduciendo innovaciones críticas como el uso sistemático del Cociente Intelectual (CI) y la realización de estandarizaciones a gran escala, lo que otorgó a la prueba solidez técnica y una trayectoria referente en el ámbito clínico y educativo.",
+      "keywords": [
+        "Terman",
+        "Cociente Intelectual",
+        "estandarización",
+        "Binet-Simon"
+      ]
+    },
+    {
+      "q": "Explique los conceptos de 'edad basal' y 'edad tope' en la administración de la escala Stanford-Binet.",
+      "model": "Debido a que la progresión depende del desempeño, la evaluación comienza bajo el nivel esperado. La 'edad basal' es el nivel inferior donde el sujeto resuelve todos los ítems con éxito. La 'edad tope' es el nivel superior donde el sujeto ya no puede responder correctamente a ninguna tarea. Entre ambos se estima la edad mental.",
+      "keywords": [
+        "edad basal",
+        "edad tope",
+        "edad mental",
+        "administración individual"
+      ]
+    },
+    {
+      "q": "Describa los cuatro índices principales que componen la estructura actual de la WAIS.",
+      "model": "1) Comprensión Verbal (ICV): habilidades verbales y conocimiento cultural. 2) Razonamiento Perceptivo (IRP): resolución de problemas visoespaciales. 3) Memoria de Trabajo (IMT): retención y manipulación de información. 4) Velocidad de Procesamiento (IVP): rapidez y precisión en tareas visuales simples.",
+      "keywords": [
+        "ICV",
+        "IRP",
+        "IMT",
+        "IVP"
+      ]
+    },
+    {
+      "q": "Argumente por qué la WAIS se considera una medida de inteligencia multidimensional.",
+      "model": "Porque supera el modelo de factor g único al ofrecer un perfil detallado de fortalezas y debilidades a través de sus cuatro índices. Esto permite analizar el funcionamiento diferencial en diversas áreas cognitivas, detectando discrepancias significativas que son cruciales para diagnósticos neuropsicológicos o forenses.",
+      "keywords": [
+        "multidimensional",
+        "perfil cognitivo",
+        "discrepancias",
+        "fortalezas y debilidades"
+      ]
+    },
+    {
+      "q": "Explique la utilidad clínica y neuropsicológica del análisis de los índices de la WAIS.",
+      "model": "Permite identificar perfiles cognitivos atípicos, disarmonías intelectuales y señales de deterioro neuropsicológico. Es fundamental en el diagnóstico de trastornos del neurodesarrollo, daño cerebral adquirido y enfermedades neurodegenerativas, además de determinar la elegibilidad de apoyos educativos.",
+      "keywords": [
+        "deterioro neuropsicológico",
+        "daño cerebral",
+        "perfiles atípicos",
+        "diagnóstico"
+      ]
+    },
+    {
+      "q": "Resuma las principales mejoras metodológicas introducidas en la revisión WISC-R respecto a la original.",
+      "model": "El WISC-R eliminó ítems ambiguos u obsoletos, incorporó nuevos reactivos para mayor confiabilidad, amplió el rango de edad (6 a 16 años y 11 meses), mejoró la estandarización con muestras representativas y refinó los criterios de calificación y las instrucciones de aplicación.",
+      "keywords": [
+        "WISC-R",
+        "confiabilidad",
+        "rango de edad",
+        "estandarización"
+      ]
+    },
+    {
+      "q": "Diferencie las tareas de la Subescala Verbal y la Subescala de Ejecución en el WISC.",
+      "model": "La Verbal incluye tests de contenido lingüístico y lógico (Información, Semejanzas, Aritmética, Vocabulario, Comprensión y Dígitos). La de Ejecución se centra en habilidades visoespaciales y motrices (Figuras Incompletas, Cubos, Historietas, Rompecabezas, Claves y Laberintos).",
+      "keywords": [
+        "Subescala Verbal",
+        "Subescala de Ejecución",
+        "visoespacial",
+        "lingüístico"
+      ]
+    },
+    {
+      "q": "Explique el papel de los subtests complementarios en las escalas de Wechsler.",
+      "model": "Subtests como 'Repetición de Dígitos' o 'Laberintos' en el WISC se aplican cuando un subtest principal es invalidado o no puede completarse. Permiten mantener la validez de la evaluación sin reducir el número de pruebas necesarias para calcular el CI Total.",
+      "keywords": [
+        "complementarios",
+        "invalidez",
+        "CI Total",
+        "Dígitos"
+      ]
+    },
+    {
+      "q": "Describa el proceso de obtención de las puntuaciones finales (CI) en el WISC.",
+      "model": "Primero se calcula la puntuación natural de cada subtest, que se convierte en puntuación normalizada por edad. Se suman las normalizadas de cada subescala (Verbal y Ejecución) para obtener los CI parciales y, finalmente, la suma de ambas proporciona el CI Total, basado en una media de 100 y DE de 15.",
+      "keywords": [
+        "puntuación natural",
+        "puntuación normalizada",
+        "CI Total",
+        "DE 15"
+      ]
+    },
+    {
+      "q": "Justifique el origen del WPPSI como una escala autónoma y no solo una extensión del WISC.",
+      "model": "Aunque inicialmente se pensó como una extensión hacia abajo, la revisión teórica demostró que requería una metodología y contenidos específicos adaptados a las características cognitivas, emocionales y lúdicas de niños de 4 a 6 años y medio, lo que la convirtió en una escala independiente.",
+      "keywords": [
+        "WPPSI",
+        "autónoma",
+        "etapas tempranas",
+        "lúdico"
+      ]
+    },
+    {
+      "q": "Explique el funcionamiento y objetivo del subtest 'Casa de los Animales' en el WPPSI.",
+      "model": "Es un subtest de ejecución que utiliza un tablero con cilindros de colores. Valora la atención, la memoria visual y la capacidad de asociación categorial. Es una de las tareas diseñadas específicamente para esta etapa preescolar, equilibrando demandas perceptivo-motoras.",
+      "keywords": [
+        "Casa de los Animales",
+        "atención",
+        "memoria visual",
+        "asociación"
+      ]
+    },
+    {
+      "q": "Detalle las recomendaciones para la administración del WPPSI ante la fatiga del niño.",
+      "model": "Se recomienda una sola sesión de 50-75 minutos para asegurar la atención. Si hay fatiga o desmotivación, puede dividirse en dos sesiones, siempre que el intervalo no supere una semana. El examinador debe ser paciente, firme y evitar la sobreprotección para mantener la validez.",
+      "keywords": [
+        "fatiga",
+        "dos sesiones",
+        "atención sostenida",
+        "validez"
+      ]
+    },
+    {
+      "q": "Explique la regla del prorrateo en el cálculo de puntuaciones del WPPSI.",
+      "model": "Si en una subescala solo se pueden obtener cuatro subtests válidos (en lugar de los cinco requeridos), la puntuación de esa subescala debe prorratearse multiplicándola por cinco cuartos (5/4) para poder estimar los Cocientes Intelectuales correspondientes.",
+      "keywords": [
+        "prorrateo",
+        "cinco cuartos",
+        "subtests válidos",
+        "WPPSI"
+      ]
+    },
+    {
+      "q": "Sintetice las evidencias de fiabilidad y validez presentadas para el WPPSI.",
+      "model": "Presenta coeficientes elevados (.94 verbal, .93 ejecución, .96 total). La validez se apoya en intercorrelaciones internas (los subtests verbales correlacionan más con su propia escala) y validez convergente con pruebas como Stanford-Binet (r=.75) y WISC-R (r=.82).",
+      "keywords": [
+        "consistencia interna",
+        "validez convergente",
+        "Spearman-Brown",
+        "intercorrelación"
+      ]
+    },
+    {
+      "q": "Caracterice brevemente los tests IG-2 y Otis indicando su ámbito de aplicación común.",
+      "model": "El IG-2 mide inteligencia general (verbal, numérico, abstracto) mediante analogías y problemas. El Otis se centra en razonamiento lógico-verbal y deducción. Ambos son de aplicación colectiva y corrección sencilla, siendo muy comunes en orientación escolar y selección de personal.",
+      "keywords": [
+        "IG-2",
+        "Otis",
+        "colectiva",
+        "orientación escolar"
+      ]
+    },
+    {
+      "q": "Defina el concepto de 'aptitud' según Warren y Bennett, destacando su origen.",
+      "model": "Se define como un conjunto de características sintomáticas de la capacidad de un individuo para adquirir conocimientos o técnicas mediante entrenamiento. No es algo rígidamente innato, sino el resultado de la interacción entre la herencia genética y el ambiente.",
+      "keywords": [
+        "aptitud",
+        "entrenamiento",
+        "herencia",
+        "ambiente"
+      ]
+    },
+    {
+      "q": "Diferencie conceptualmente 'habilidad' de 'aptitud' según la perspectiva de Brown (1980).",
+      "model": "La habilidad es el 'poder para realizar una tarea' (estado actual/presente), mientras que la aptitud es el 'poder para aprender a realizar una tarea' (potencial futuro). La aptitud tiene, por tanto, una dimensión predictiva sobre el aprendizaje futuro.",
+      "keywords": [
+        "Brown",
+        "potencial futuro",
+        "estado actual",
+        "predicción"
+      ]
+    },
+    {
+      "q": "Establezca la distinción entre 'inteligencia' y 'aptitud' planteada en el texto.",
+      "model": "La inteligencia es una capacidad global y general de adaptación y resolución de problemas nuevos. La aptitud se refiere a capacidades específicas (mecánica, música, cálculo) que predicen el éxito en tareas delimitadas. Las aptitudes son expresiones diferenciadas y medibles de la inteligencia.",
+      "keywords": [
+        "capacidad global",
+        "capacidad específica",
+        "adaptación",
+        "éxito predictivo"
+      ]
+    },
+    {
+      "q": "Analice la relación entre el tiempo de aplicación y el constructo de 'prueba de poder' en el Test de Dominós.",
+      "model": "Aunque tiene un límite de 30-45 minutos, es una 'prueba de poder', no de velocidad. Esto significa que busca medir la capacidad máxima de razonamiento abstracto. Los ítems finales son tan complejos que resultan inaccesibles para sujetos con bajo razonamiento, incluso si tuvieran tiempo ilimitado.",
+      "keywords": [
+        "prueba de poder",
+        "razonamiento abstracto",
+        "límite de tiempo",
+        "capacidad"
+      ]
+    },
+    {
+      "q": "Explique qué factores visual-perceptivos se identificaron como secundarios en el Test de Raven.",
+      "model": "Investigaciones como la de Vernon (1947) confirmaron que, aunque el Raven satura principalmente en factor g (75-82%), también involucra factores secundarios visual-perceptivos y espaciales, además de residuos no explicados por la inteligencia general.",
+      "keywords": [
+        "Vernon",
+        "visual-perceptivo",
+        "espacial",
+        "saturación factorial"
+      ]
+    },
+    {
+      "q": "Describa la importancia de la informatización en las versiones recientes de la WAIS.",
+      "model": "La informatización automatiza el cálculo de puntuaciones (brutas, escaladas y compuestas) y genera informes con perfiles cognitivos gráficos. Esto aumenta la precisión, reduce errores humanos de corrección y facilita la toma de decisiones clínicas basadas en evidencia.",
+      "keywords": [
+        "informatización",
+        "precisión",
+        "perfil cognitivo",
+        "software oficial"
+      ]
+    },
+    {
+      "q": "Relacione el concepto de 'educción de relaciones' con la tarea del examinado en el Test de Dominós.",
+      "model": "El examinado debe observar patrones de puntos en fichas de dominó y 'educir' (extraer o deducir) la ley lógica subyacente (como la progresión circular o simetría) para aplicarla al completamiento de la serie, lo cual es la base de la medición del factor g.",
+      "keywords": [
+        "educción de relaciones",
+        "ley lógica",
+        "factor g",
+        "patrones"
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Pruebas Colectivas",
+      "q": "¿Cuál es la principal ventaja de las pruebas colectivas de inteligencia frente a las individuales en contextos organizacionales?",
+      "a": "Su eficiencia para explorar el nivel intelectual de grupos numerosos en un tiempo breve bajo condiciones estandarizadas."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Qué capacidad específica busca valorar el Test de Matrices Progresivas de Raven?",
+      "a": "La capacidad de razonamiento analógico, la percepción de relaciones y la inteligencia general (factor g)."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿En qué año se publicó la versión definitiva del Progressive Matrices con las series A, B, C, D y E?",
+      "a": "Fue publicada en 1938 por el psicólogo John C. Raven."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Para qué población específica se diseñó la versión CPM (Coloured Progressive Matrices)?",
+      "a": "Para niños de 5 a 11 años o personas con limitaciones cognitivas, constando de 36 ejercicios."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿A partir de qué edad se recomienda la aplicación de la versión SPM (Standard Progressive Matrices)?",
+      "a": "Se recomienda para adolescentes y adultos a partir de los 12 años de edad."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Qué diferencia fundamental tiene la escala APM respecto a la SPM en cuanto a su objetivo de evaluación?",
+      "a": "La APM está diseñada para personas con un nivel cognitivo superior o inteligencia presuntamente por encima de la media."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Qué demandan las tres últimas series del Test de Raven en comparación con las dos primeras?",
+      "a": "Demandan la educción de correlatos más complejos, mientras que las primeras se enfocan en la inferencia de relaciones."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Bajo qué condiciones se recomienda la aplicación individual del Test de Raven?",
+      "a": "En niños menores de 9 años o en personas adultas que presenten algún tipo de discapacidad."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Cuál es el tiempo promedio estimado para la resolución del Test de Raven aunque no tenga límite estricto?",
+      "a": "Generalmente se requiere entre 30 y 40 minutos para completar la prueba."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Cómo se define una ejecución 'consistente' al corregir el Test de Raven?",
+      "a": "Cuando la discrepancia entre los puntajes parciales obtenidos y los esperados no supera los ±2 puntos en ninguna serie."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Qué tres correlatos fundamentales debe identificar el sujeto en cada reactivo del Raven para evitar errores?",
+      "a": "Correlato numérico (cantidad), correlato de forma (configuración) y correlato de disposición espacial."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Qué caracteriza a un 'error burdo' (G) en el análisis de errores del Test de Raven?",
+      "a": "Es la omisión de los tres correlatos fundamentales en una respuesta incorrecta."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Qué utilidad clínica o profesional tiene el cálculo del Puntaje de Error (PE) en el Raven?",
+      "a": "Sirve como indicador en selección de personal, diagnóstico diferencial y para desempatar percentiles equivalentes."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Qué rango de fiabilidad test-retest presenta el Raven según los estudios citados de 1987?",
+      "a": "Los coeficientes de estabilidad varían entre .83 y .93 según el grupo etario evaluado."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Cuál es la saturación aproximada del factor g en el Test de Raven según los análisis factoriales?",
+      "a": "Presenta una alta saturación que oscila entre .75 y .82."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿Quién fue el creador original del Test de Dominós y en qué contexto institucional nació?",
+      "a": "Edgar Anstey lo diseñó en 1944 para ser utilizado por la armada británica."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿Qué diferencia existe entre el 'closed test' de 1944 y el 'open test' de 1955 de Anstey?",
+      "a": "El de 1944 era de uso oficial restringido (44 ítems), mientras que el de 1955 es de libre acceso y tiene 48 reactivos."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿Cuál es la población objetivo estándar para la aplicación del Test de Dominós?",
+      "a": "Personas entre 12 y 39 años, con normas adaptadas a seis niveles culturales."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿Por qué se desaconseja el uso del Test de Dominós en personas mayores de 65 años?",
+      "a": "Debido a la dificultad reportada en su aplicación y la posibilidad de deterioro cognitivo, prefiriéndose un análisis cualitativo."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿En qué consiste la tarea fundamental del examinado en el Test de Dominós?",
+      "a": "En la educción de leyes relacionales para completar series numéricas representadas gráficamente en fichas de dominó."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "Menciona tres principios lógicos que regulan las secuencias en el Test de Dominós.",
+      "a": "Simetría, alternancia, progresión simple, asimetría, adición o sustracción."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿Influye el conocimiento previo del juego de dominó en el rendimiento del sujeto en esta prueba?",
+      "a": "No, se ha demostrado que la familiaridad con el juego tradicional no influye en los resultados."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿Cuál es el tiempo límite establecido para el Test de Dominós y qué tolerancia adicional se permite?",
+      "a": "El tiempo límite es de 30 minutos, con una tolerancia de 12 a 15 minutos adicionales."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿Qué requisito debe cumplirse para que una respuesta sea calificada como correcta en el Dominós?",
+      "a": "Debe tener ambos valores numéricos correctos y en la posición exacta dentro de la ficha."
+    },
+    {
+      "cat": "Stanford-Binet",
+      "q": "¿Qué innovación significativa introdujo Lewis Terman al adaptar la escala de Binet-Simon?",
+      "a": "Introdujo el uso sistemático del Cociente Intelectual (CI) y la estandarización a gran escala."
+    },
+    {
+      "cat": "Stanford-Binet",
+      "q": "¿Cómo varía el contenido de la Stanford-Binet entre niños pequeños y adultos?",
+      "a": "En niños predominan tareas manipulativas y visuales; en adultos, contenido simbólico, verbal y razonamiento abstracto."
+    },
+    {
+      "cat": "Stanford-Binet",
+      "q": "¿Qué significan los conceptos de 'edad basal' y 'edad tope' en la administración de esta escala?",
+      "a": "La edad basal es el nivel donde el sujeto resuelve todo con éxito; la edad tope es donde cesa su éxito en las tareas."
+    },
+    {
+      "cat": "Stanford-Binet",
+      "q": "¿Cuál es la duración promedio de la aplicación de la Stanford-Binet?",
+      "a": "Varía entre 30 y 90 minutos según la edad y el rendimiento del examinado."
+    },
+    {
+      "cat": "Stanford-Binet",
+      "q": "¿Qué valores de media y desviación estándar utiliza el CI de desviación de la Stanford-Binet?",
+      "a": "Utiliza una media de 100 y una desviación estándar de 16."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Cuál es el propósito principal de la Escala de Inteligencia de Wechsler para Adultos (WAIS)?",
+      "a": "Ofrecer una medida del nivel intelectual global y un perfil detallado de fortalezas y debilidades cognitivas."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Cuáles son los cuatro índices principales que estructuran la versión actual de la WAIS?",
+      "a": "Comprensión Verbal, Razonamiento Perceptivo, Memoria de Trabajo y Velocidad de Procesamiento."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Qué habilidades específicas se evalúan en el índice de Comprensión Verbal (ICV)?",
+      "a": "Conocimiento general, razonamiento verbal, conocimiento léxico y comprensión de normas sociales."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Qué subtests componen el índice de Razonamiento Perceptivo (IRP) en la WAIS?",
+      "a": "Diseño con cubos, razonamiento con matrices y rompecabezas visuales."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Qué funciones cognitivas se ponen a prueba en el índice de Memoria de Trabajo (IMT)?",
+      "a": "La capacidad para retener y manipular información temporalmente, la atención sostenida y el procesamiento secuencial."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Qué evalúan los subtests de 'Claves' y 'Búsqueda de Símbolos'?",
+      "a": "La rapidez y precisión en tareas simples, coordinación motora y seguimiento de instrucciones (Velocidad de Procesamiento)."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Cuál es la duración típica de la administración individual de la WAIS?",
+      "a": "Suele durar entre 60 y 90 minutos."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Qué avance metodológico reciente facilita la interpretación del perfil cognitivo en la WAIS?",
+      "a": "La informatización de los procedimientos de corrección mediante software oficial."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Qué media y desviación estándar se aplican para interpretar el CI Total en la WAIS?",
+      "a": "Una media de 100 y una desviación estándar de 15."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Para qué tipo de diagnósticos clínicos resulta fundamental la aplicación de la WAIS?",
+      "a": "Trastornos del neurodesarrollo, daño cerebral, enfermedades neurodegenerativas y evaluaciones periciales."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Qué subtest opcional del IRP evalúa el razonamiento cuantitativo y el equilibrio visual?",
+      "a": "Pesos figurativos."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿En qué año se presentó la escala WISC original y de qué otra escala fue adaptación?",
+      "a": "Se presentó en 1949 como adaptación de la escala Wechsler-Bellevue."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿Qué rango de edad cubría la revisión WISC-R de 1974?",
+      "a": "Se amplió para cubrir desde los 6 años hasta los 16 años y 11 meses."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿Cuáles son las dos subescalas principales en las que se divide el WISC?",
+      "a": "Subescala Verbal y Subescala de Ejecución."
+    },
+    {
+      "cat": "WISC",
+      "q": "Menciona tres subtests pertenecientes a la Subescala Verbal del WISC.",
+      "a": "Información, Comprensión, Aritmética, Semejanzas o Vocabulario."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿Cuáles son los subtests considerados complementarios en la Subescala de Ejecución del WISC?",
+      "a": "Laberintos."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿Cuándo está permitido utilizar los subtests complementarios en el WISC?",
+      "a": "Cuando alguno de los subtests principales es invalidado o no puede ser completado."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿Qué materiales específicos requiere el subtest de 'Diseño con Cubos'?",
+      "a": "Libreta de ejercicios, cubos rojo-blancos y cronómetro."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿Se puede reducir el número de subtests aplicados para ahorrar tiempo?",
+      "a": "No, reducir el número de subtests afectaría gravemente la validez del CI obtenido."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿Qué diferencia hay en el orden de aplicación entre el WISC original y el WISC-R?",
+      "a": "En el original se aplican primero todos los verbales; en el WISC-R se alternan entre verbal y ejecución."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿Cómo se ajusta el punto de inicio de cada subtest en el WISC?",
+      "a": "Varía según la edad del niño, aunque en casos de sospecha de dificultades se recomienda iniciar desde el primer ítem."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿Qué pasos se siguen para obtener el CI Total a partir de las puntuaciones naturales?",
+      "a": "Conversión a puntuación normalizada por edad, suma por subescala y consulta de tablas de conversión de CI."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿Qué evalúa el subtest de 'Ordenación de Dibujos'?",
+      "a": "La capacidad para formar una historia lógica, valorando la comprensión secuencial y temporal."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿Qué mide el subtest de 'Composición de Objetos'?",
+      "a": "La organización perceptiva y la coordinación visomotriz mediante el ensamblaje de rompecabezas."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Para qué rango de edad específico se diseñó originalmente la escala WPPSI?",
+      "a": "Para niños de 4 a 6 años y medio."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Qué subtest complementario de la subescala verbal del WPPSI evalúa la construcción de oraciones?",
+      "a": "El subtest de Frases."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Qué habilidades evalúa el subtest 'Casa de los Animales'?",
+      "a": "Atención, memoria visual y capacidad de asociación categorial mediante cilindros de colores."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Cuál es el tiempo de aplicación estimado para el WPPSI completo?",
+      "a": "Entre 50 y 75 minutos."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Qué actitud debe mantener el examinador ante los intentos de manipulación del niño durante el WPPSI?",
+      "a": "Establecer límites de forma clara y amable, manteniendo firmeza y objetividad."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Cuál es el orden de aplicación recomendado para los subtests del WPPSI?",
+      "a": "Información, Casa de los Animales, Vocabulario, Figuras Incompletas, Aritmética, Laberintos, Diseños Geométricos, Semejanzas, Diseño con Prismas y Comprensión."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Cómo se procede si solo se pueden usar cuatro subtests válidos en una subescala del WPPSI?",
+      "a": "La puntuación debe prorratearse multiplicándola por cinco cuartos (5/4)."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Qué fiabilidad total (escala completa) presenta el WPPSI según los estudios de consistencia interna?",
+      "a": "Presenta una fiabilidad muy elevada de .96."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Qué validez convergente tiene el WPPSI con la prueba Stanford-Binet?",
+      "a": "Una correlación de r = .75."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Qué evalúa el subtest de 'Diseños Geométricos'?",
+      "a": "La coordinación visual y la percepción espacial mediante la copia de figuras abstractas."
+    },
+    {
+      "cat": "IG-2",
+      "q": "¿Qué áreas de contenido incluye el test de Inteligencia General IG-2?",
+      "a": "Ejercicios verbales, numéricos y de razonamiento abstracto (analogías, series, problemas)."
+    },
+    {
+      "cat": "Test de Otis",
+      "q": "¿Cuál es la característica principal de la aplicación del Test de Otis?",
+      "a": "Su sencillez de aplicación colectiva y corrección para estimar inteligencia general en grupos amplios."
+    },
+    {
+      "cat": "Aptitudes",
+      "q": "¿Cómo definía Warren (1934) el concepto de aptitud?",
+      "a": "Como la condición o características sintomáticas de la capacidad de adquirir mediante entrenamiento un conocimiento o técnica."
+    },
+    {
+      "cat": "Aptitudes",
+      "q": "¿Qué distinción clave establece Brown (1980) entre 'habilidad' y 'aptitud'?",
+      "a": "La habilidad es el poder actual para realizar una tarea; la aptitud es el poder potencial para aprender a realizarla."
+    },
+    {
+      "cat": "Aptitudes",
+      "q": "¿Cuál es la dimensión temporal implícita en el concepto de aptitud?",
+      "a": "Una dimensión predictiva, vinculada con el potencial futuro de aprendizaje."
+    },
+    {
+      "cat": "Aptitudes",
+      "q": "¿En qué se diferencia conceptualmente la inteligencia de la aptitud?",
+      "a": "La inteligencia es global y general para adaptarse; la aptitud es una capacidad específica para tareas delimitadas."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Qué es una matriz lacunaria?",
+      "a": "Una figura geométrica abstracta a la que le falta una sección que el sujeto debe completar."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Qué teoría psicométrica sustenta el diseño original del Test de Raven?",
+      "a": "La teoría del factor g de Spearman."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿Quién estandarizó la versión 'open test' del Dominós en Uruguay?",
+      "a": "W. L. Risso, investigador de la Universidad del Trabajo del Uruguay."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿Qué nombre recibe la adaptación francesa del Test de Dominós?",
+      "a": "D48, desarrollada por P. Pichot."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿En qué se diferencia la versión D48 de la original de Anstey?",
+      "a": "Principalmente por la disposición de los reactivos."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿Es el Test de Dominós una prueba de velocidad o de poder?",
+      "a": "Es una prueba de poder, diseñada para medir capacidad de razonamiento, no rapidez."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿Qué valor numérico máximo se puede asignar a cada mitad de la ficha de dominó en la hoja de respuestas?",
+      "a": "Un valor entre 0 y 6 puntos."
+    },
+    {
+      "cat": "Stanford-Binet",
+      "q": "¿Qué tipo de tareas se incluyen para evaluar el juicio práctico en adultos?",
+      "a": "Analogías o interpretación de proverbios."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Qué subtest del ICV mide específicamente el conocimiento léxico?",
+      "a": "Vocabulario."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Qué capacidad explora el subtest opcional de 'Cancelación'?",
+      "a": "La atención visual sostenida y la velocidad para identificar objetivos entre distractores."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Qué mide el subtest de 'Semejanzas'?",
+      "a": "La capacidad para identificar relaciones conceptuales entre dos elementos."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿A qué población se dirige específicamente el WISC?",
+      "a": "Población infantil y adolescente (entre 6 y 16 años y 11 meses en el WISC-R)."
+    },
+    {
+      "cat": "WISC",
+      "q": "Nombre de los subtests de la subescala de ejecución que tienen límite de tiempo.",
+      "a": "Diseño con Cubos y Claves."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿Qué evalúa el subtest de 'Aritmética'?",
+      "a": "La resolución de problemas matemáticos mentales, valorando atención y memoria de trabajo."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿Qué mide el subtest de 'Símbolos y Dígitos' (Claves)?",
+      "a": "La velocidad de procesamiento y atención sostenida al asociar símbolos con números."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Qué subtest del WPPSI se asemeja al de 'Diseño con Cubos' del WISC?",
+      "a": "Diseño con Prismas."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Qué margen de tiempo se considera razonable para que un niño inicie una respuesta en subtests no cronometrados del WPPSI?",
+      "a": "Un margen de 15 segundos."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Cómo se obtienen las muestras de estandarización del WPPSI según el texto?",
+      "a": "Estratificadas por edad, sexo, región, zona urbana/rural y ocupación del padre según el Censo de EE.UU."
+    },
+    {
+      "cat": "Aptitudes",
+      "q": "Menciona tres ejemplos de aptitudes específicas según el enfoque predictivo.",
+      "a": "Aptitud mecánica, musical, coordinación motriz o cálculo numérico."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Qué autor demostró la validez estructural del Raven confirmando la saturación del factor g?",
+      "a": "Spearman (mencionado como base del test) y Vernon (1947)."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Qué puntaje de ponderación tiene un 'error fino' (F)?",
+      "a": "1.5 puntos."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Qué puntaje de ponderación tiene un 'error medio' (M)?",
+      "a": "1 punto."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿A qué país pertenecía Edgar Anstey?",
+      "a": "Inglaterra (psicólogo inglés)."
+    },
+    {
+      "cat": "Test de Dominós",
+      "q": "¿Qué evalúa el principio de 'progresión circular'?",
+      "a": "Secuencias que vuelven a empezar tras llegar al valor máximo (6) o mínimo (0)."
+    },
+    {
+      "cat": "Stanford-Binet",
+      "q": "¿Por qué se dice que el Stanford-Binet requiere un profesional altamente entrenado?",
+      "a": "Por la complejidad de las instrucciones y la necesidad de calificar subtests inmediatamente para decidir la progresión."
+    },
+    {
+      "cat": "WAIS",
+      "q": "¿Qué media y desviación estándar tiene la puntuación escalar de los subtests del WAIS?",
+      "a": "Media 100 y DE 15 para los índices globales (el texto no especifica escalares pero sí el CI de desviación)."
+    },
+    {
+      "cat": "WISC",
+      "q": "¿En qué intervalos de edad se organizan las tablas de normalización del WISC?",
+      "a": "En rangos de 4 meses."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Qué estudio reportó una alta relación entre los CI del WPPSI y el WISC-R en niños de 6 años?",
+      "a": "Un estudio que arrojó coeficientes de .82."
+    },
+    {
+      "cat": "Test de Raven",
+      "q": "¿Quién reemplazó un ítem y reubicó otros siete en la revisión de 1956 del Raven?",
+      "a": "Raven mismo (referenciado como Raven, 1987)."
+    },
+    {
+      "cat": "WPPSI",
+      "q": "¿Para qué se puede volver a aplicar el subtest 'Casa de los Animales' al final de la sesión?",
+      "a": "Para valorar la capacidad de aprendizaje del niño."
+    },
+    {
+      "cat": "Aptitudes",
+      "q": "¿Son las aptitudes capacidades innatas rígidas según el texto?",
+      "a": "No, resultan de la interacción entre la herencia y el ambiente, pudiendo desarrollarse con entrenamiento."
+    }
+  ]
+}

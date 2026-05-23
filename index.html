@@ -84,6 +84,17 @@
             { id: "bases-biologicas-del-comportamiento", name: "Bases Biológicas del Comportamiento", year: "1º", folder: "Bases-Biológicas" },
             { id: "psicologia-interaccion-social", name: "Psicología de la Interacción Social", year: "1º", folder: "Psicología-Interacción-Social" },
             { id: "fundamentos-de-estadistica", name: "Fundamentos de Estadística", year: "1º", folder: "Fundamentos-Estadística" },
+            
+            // 2º Curso
+            { id: "diferencias-individuales-1", name: "Psicología de las Diferencias Individuales I", year: "2º", folder: "Diferencias-Individuales-1" },
+            { id: "diferencias-individuales-2", name: "Psicología de las Diferencias Individuales II", year: "2º", folder: "Diferencias-Individuales-2" },
+            { id: "edad adulta y vejez", name: "Psicología del Desarrollo: Edad Adulta y Vejez", year: "2º", folder: "Edad Adulta y Vejez" },
+            { id: "evaluacion-psicologica-1", name: "Evaluación Psicológica I", year: "2º", folder: "Evaluación-Psicológica-1" },
+            { id: "evaluacion-psicologica-2", name: "Evaluación Psicológica II", year: "2º", folder: "Evaluación-Psicológica-2" },
+            { id: "psicologia-educativa", name: "Psicología Educativa", year: "2º", folder: "Psicología-Educativa" },
+            { id: "psicologia-fisiologica", name: "Psicología Fisiológica", year: "2º", folder: "Psicología-Fisiológica" },
+            { id: "psicopatologia", name: "Psicopatología", year: "2º", folder: "Psicopatología" },
+
             { id: "psicologia-clinica", name: "Psicología Clínica", year: "3º", folder: "Psicología-Clínica" },
             { id: "psicologia-del-trabajo", name: "Psicología del Trabajo", year: "3º", folder: "Psicología-Trabajo" }
         ];
@@ -190,6 +201,42 @@
                 '5.2': 'Estimación de Parámetros',
                 '5.3': 'Contraste de Hipótesis',
                 '5.4': 'Errores Estadísticos'
+            },
+            'diferencias-individuales-1': {
+                '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': ''
+            },
+            'diferencias-individuales-2': {
+                '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': '', '8': ''
+            },
+            'edad adulta y vejez': {
+                '1': '', '2': '', '3': '', '4': '', '5': ''
+            },
+            'evaluacion-psicologica-1': {
+                '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': ''
+            },
+            'evaluacion-psicologica-2': {
+                '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': '', '8': '', '9': '', '10': ''
+            },
+            'psicologia-educativa': {
+                '1': 'Fundamentos, Historia y Enfoques',
+                '2': 'Aprendizaje y Desarrollo',
+                '3': 'La Educación del Siglo XXI',
+                '4': 'Motivación, Ansiedad y Autoestima',
+                '5': 'Gestión del Aula',
+                '6': 'Interacción en el Aula',
+                '7': 'El Psicólogo Educativo'
+            },
+            'psicologia-fisiologica': {
+                '1': 'La Atención',
+                '2': 'Asimetrías Cerebrales',
+                '3': 'Lenguaje y Funciones Ejecutivas',
+                '4': 'Emoción',
+                '5': 'Aprendizaje y Memoria',
+                '6': 'Ritmos Biológicos y Reproducción',
+                '7': 'Sed, Hambre y Circuito de Recompensa'
+            },
+            'psicopatologia': {
+                '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': '', '8': '', '9': '', '10': '', '11': ''
             }
         };
 
@@ -210,7 +257,7 @@
             timerInterval: null,
             timeSpentSeconds: 0,
             playInterval: null,
-            filterYear: 'Todos',      // 'Todos', '1º', '3º'
+            filterYear: 'Todos',      // 'Todos', '1º', '2º', '3º'
             showUploader: false,      // Mostrar/ocultar zona de carga manual
             currentTema: null,
             studyMode: 'test',        // 'test', 'trainer', 'flashcards'
@@ -428,6 +475,7 @@
                 if (id === 'psicologia-del-aprendizaje') shortId = 'aprendizaje';
                 else if (id === 'bases-biologicas-del-comportamiento') shortId = 'psicobiologia';
                 else if (id === 'historia-de-la-psicologia') shortId = 'historia';
+                else if (id === 'psicologia-educativa' || id === 'psicologia-fisiologica') shortId = id;
                 else if (id.startsWith('psicologia-de-la-')) shortId = id.replace('psicologia-de-la-', '');
                 else if (id.startsWith('psicologia-del-')) shortId = id.replace('psicologia-del-', '');
                 else if (id.startsWith('psicologia-')) shortId = id.replace('psicologia-', '');
@@ -1497,7 +1545,7 @@
                             </h3>
                             <!-- Filtros de Curso -->
                             <div class="flex bg-slate-200/60 p-1 rounded-xl text-xs font-bold text-slate-500 self-start">
-                                ${['Todos', '1º', '3º'].map(y => `
+                                ${['Todos', '1º', '2º', '3º'].map(y => `
                                 <button onclick="appMethods.setFilterYear('${y}')" class="px-4 py-1.5 rounded-lg transition-all ${state.filterYear === y ? 'bg-white text-slate-800 shadow-sm' : 'hover:text-slate-700'}">
                                     ${y === 'Todos' ? 'Todos' : y + ' Curso'}
                                 </button>

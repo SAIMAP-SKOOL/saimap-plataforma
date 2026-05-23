@@ -93,6 +93,56 @@ const THEME_SUBTITLES = {
         '4': 'Enfoques Conductistas, Cognitivos y de Valoración de la Emoción',
         '5': 'Emociones de Urgencia, Bienestar e Interacción Social',
         '6': 'Inteligencia Emocional y Motivación Extrínseca'
+    },
+    'fundamentos-de-estadistica': {
+        '1.1': 'Ciencia, Método y Estadística',
+        '1.2': 'Variables, Muestreo y Escalas de Medida',
+        '2.1': 'Estadística Descriptiva',
+        '2.2': 'Cuantiles, Tendencia Central y Posición',
+        '2.3': 'La Forma de los Datos',
+        '3': 'La Base de la Estadística',
+        '4.1': 'Asociación y Causalidad',
+        '4.2': 'Asociación entre Variables Cuantitativas',
+        '5.1': 'Del Muestreo a la Normal',
+        '5.2': 'Estimación de Parámetros',
+        '5.3': 'Contraste de Hipótesis',
+        '5.4': 'Errores Estadísticos'
+    },
+    'diferencias-individuales-1': {
+        '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': ''
+    },
+    'diferencias-individuales-2': {
+        '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': '', '8': ''
+    },
+    'edad adulta y vejez': {
+        '1': '', '2': '', '3': '', '4': '', '5': ''
+    },
+    'evaluacion-psicologica-1': {
+        '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': ''
+    },
+    'evaluacion-psicologica-2': {
+        '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': '', '8': '', '9': '', '10': ''
+    },
+    'psicologia-educativa': {
+        '1': 'Fundamentos, Historia y Enfoques',
+        '2': 'Aprendizaje y Desarrollo',
+        '3': 'La Educación del Siglo XXI',
+        '4': 'Motivación, Ansiedad y Autoestima',
+        '5': 'Gestión del Aula',
+        '6': 'Interacción en el Aula',
+        '7': 'El Psicólogo Educativo'
+    },
+    'psicologia-fisiologica': {
+        '1': 'La Atención',
+        '2': 'Asimetrías Cerebrales',
+        '3': 'Lenguaje y Funciones Ejecutivas',
+        '4': 'Emoción',
+        '5': 'Aprendizaje y Memoria',
+        '6': 'Ritmos Biológicos y Reproducción',
+        '7': 'Sed, Hambre y Circuito de Recompensa'
+    },
+    'psicopatologia': {
+        '1': '', '2': '', '3': '', '4': '', '5': '', '6': '', '7': '', '8': '', '9': '', '10': '', '11': ''
     }
 };
 
@@ -295,6 +345,150 @@ const THEME_CONFIG = {
         titleGradient: 'from-stone-500 to-neutral-500',
         borderCard: 'border-b-stone-500',
         borderCardAlt: 'border-b-neutral-500',
+    },
+    'diferencias-individuales-1': {
+        name: 'Diferencias Individuales I',
+        icon: 'ph-users-three',
+        bg: '#fdf4ff', // Fuchsia 50
+        gradients: 'radial-gradient(at 0% 0%, hsla(295,70%,94%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(305,70%,94%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(285,70%,94%,1) 0,transparent 50%)',
+        primary: '#c026d3', // Fuchsia 600
+        primaryGrad: 'linear-gradient(135deg, #c026d3 0%, #d946ef 50%, #f0abfc 100%)',
+        primaryShadow: 'rgba(192, 38, 211, 0.4)',
+        accent: '#d946ef', // Fuchsia 500
+        accentBg: '#fdf4ff',
+        accentLight: '#fae8ff',
+        textAccent: '#c026d3',
+        optionHoverBorder: '#d946ef',
+        optionHoverBg: '#fdf4ff',
+        titleGradient: 'from-fuchsia-500 to-pink-500',
+        borderCard: 'border-b-fuchsia-500',
+        borderCardAlt: 'border-b-pink-500',
+    },
+    'diferencias-individuales-2': {
+        name: 'Diferencias Individuales II',
+        icon: 'ph-users-three',
+        bg: '#fdf4ff', // Fuchsia 50
+        gradients: 'radial-gradient(at 0% 0%, hsla(295,70%,94%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(305,70%,94%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(285,70%,94%,1) 0,transparent 50%)',
+        primary: '#c026d3', // Fuchsia 600
+        primaryGrad: 'linear-gradient(135deg, #c026d3 0%, #d946ef 50%, #f0abfc 100%)',
+        primaryShadow: 'rgba(192, 38, 211, 0.4)',
+        accent: '#d946ef', // Fuchsia 500
+        accentBg: '#fdf4ff',
+        accentLight: '#fae8ff',
+        textAccent: '#c026d3',
+        optionHoverBorder: '#d946ef',
+        optionHoverBg: '#fdf4ff',
+        titleGradient: 'from-fuchsia-500 to-pink-500',
+        borderCard: 'border-b-fuchsia-500',
+        borderCardAlt: 'border-b-pink-500',
+    },
+    'edad adulta y vejez': {
+        name: 'Edad Adulta y Vejez',
+        icon: 'ph-calendar',
+        bg: '#fff7ed', // Orange 50
+        gradients: 'radial-gradient(at 0% 0%, hsla(25,100%,96%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(35,100%,96%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(15,100%,96%,1) 0,transparent 50%)',
+        primary: '#ea580c', // Orange 600
+        primaryGrad: 'linear-gradient(135deg, #ea580c 0%, #f97316 50%, #ffedd5 100%)',
+        primaryShadow: 'rgba(234, 88, 12, 0.4)',
+        accent: '#f97316',
+        accentBg: '#fff7ed',
+        accentLight: '#ffedd5',
+        textAccent: '#ea580c',
+        optionHoverBorder: '#f97316',
+        optionHoverBg: '#fff7ed',
+        titleGradient: 'from-orange-500 to-amber-500',
+        borderCard: 'border-b-orange-500',
+        borderCardAlt: 'border-b-amber-500',
+    },
+    'evaluacion-psicologica-1': {
+        name: 'Evaluación Psicológica I',
+        icon: 'ph-clipboard-text',
+        bg: '#f0fdf4', // Green 50
+        gradients: 'radial-gradient(at 0% 0%, hsla(140,70%,94%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(150,70%,94%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(130,70%,94%,1) 0,transparent 50%)',
+        primary: '#059669', // Emerald 600
+        primaryGrad: 'linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%)',
+        primaryShadow: 'rgba(5, 150, 105, 0.4)',
+        accent: '#10b981',
+        accentBg: '#f0fdf4',
+        accentLight: '#dcfce7',
+        textAccent: '#059669',
+        optionHoverBorder: '#10b981',
+        optionHoverBg: '#f0fdf4',
+        titleGradient: 'from-emerald-500 to-teal-500',
+        borderCard: 'border-b-emerald-500',
+        borderCardAlt: 'border-b-teal-500',
+    },
+    'evaluacion-psicologica-2': {
+        name: 'Evaluación Psicológica II',
+        icon: 'ph-clipboard-text',
+        bg: '#f0fdf4', // Green 50
+        gradients: 'radial-gradient(at 0% 0%, hsla(140,70%,94%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(150,70%,94%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(130,70%,94%,1) 0,transparent 50%)',
+        primary: '#059669', // Emerald 600
+        primaryGrad: 'linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%)',
+        primaryShadow: 'rgba(5, 150, 105, 0.4)',
+        accent: '#10b981',
+        accentBg: '#f0fdf4',
+        accentLight: '#dcfce7',
+        textAccent: '#059669',
+        optionHoverBorder: '#10b981',
+        optionHoverBg: '#f0fdf4',
+        titleGradient: 'from-emerald-500 to-teal-500',
+        borderCard: 'border-b-emerald-500',
+        borderCardAlt: 'border-b-teal-500',
+    },
+    'psicologia-educativa': {
+        name: 'Psicología Educativa',
+        icon: 'ph-graduation-cap',
+        bg: '#f5f3ff', // Violet 50
+        gradients: 'radial-gradient(at 0% 0%, hsla(265,70%,94%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(275,70%,94%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(255,70%,94%,1) 0,transparent 50%)',
+        primary: '#7c3aed', // Violet 600
+        primaryGrad: 'linear-gradient(135deg, #7c3aed 0%, #8b5cf6 50%, #a78bfa 100%)',
+        primaryShadow: 'rgba(124, 58, 237, 0.4)',
+        accent: '#8b5cf6',
+        accentBg: '#f5f3ff',
+        accentLight: '#ede9fe',
+        textAccent: '#7c3aed',
+        optionHoverBorder: '#8b5cf6',
+        optionHoverBg: '#f5f3ff',
+        titleGradient: 'from-violet-500 to-indigo-500',
+        borderCard: 'border-b-violet-500',
+        borderCardAlt: 'border-b-indigo-500',
+    },
+    'psicologia-fisiologica': {
+        name: 'Psicología Fisiológica',
+        icon: 'ph-activity',
+        bg: '#fff5f5', // Red 50
+        gradients: 'radial-gradient(at 0% 0%, hsla(355,70%,94%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(5,70%,94%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(345,70%,94%,1) 0,transparent 50%)',
+        primary: '#dc2626', // Red 600
+        primaryGrad: 'linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #fca5a5 100%)',
+        primaryShadow: 'rgba(220, 38, 38, 0.4)',
+        accent: '#ef4444',
+        accentBg: '#fff5f5',
+        accentLight: '#ffe4e6',
+        textAccent: '#dc2626',
+        optionHoverBorder: '#ef4444',
+        optionHoverBg: '#fff5f5',
+        titleGradient: 'from-red-500 to-rose-500',
+        borderCard: 'border-b-red-500',
+        borderCardAlt: 'border-b-rose-500',
+    },
+    'psicopatologia': {
+        name: 'Psicopatología',
+        icon: 'ph-shield-warning',
+        bg: '#f8fafc', // Slate 50
+        gradients: 'radial-gradient(at 0% 0%, hsla(215,20%,92%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(225,20%,90%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(205,20%,92%,1) 0,transparent 50%)',
+        primary: '#475569', // Slate 600
+        primaryGrad: 'linear-gradient(135deg, #475569 0%, #64748b 50%, #94a3b8 100%)',
+        primaryShadow: 'rgba(71, 85, 105, 0.4)',
+        accent: '#64748b',
+        accentBg: '#f8fafc',
+        accentLight: '#f1f5f9',
+        textAccent: '#475569',
+        optionHoverBorder: '#64748b',
+        optionHoverBg: '#f8fafc',
+        titleGradient: 'from-slate-600 to-zinc-500',
+        borderCard: 'border-b-slate-500',
+        borderCardAlt: 'border-b-zinc-500',
     },
     '_default': {
         name: 'Asignatura',

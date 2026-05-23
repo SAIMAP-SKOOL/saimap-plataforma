@@ -1,0 +1,2469 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es el informe psicológico un mero resumen de los resultados obtenidos?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Revisa la definición del informe como producto final integrador.",
+      "explanation": "El informe no es solo un resumen, sino un documento que debe integrar, analizar y sintetizar los datos para justificar decisiones."
+    },
+    {
+      "q": "¿Debe el informe psicológico reflejar obligatoriamente las competencias del profesional?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Considera la relación entre el rigor técnico y la imagen del evaluador.",
+      "explanation": "El texto indica explícitamente que el informe debe reflejar las competencias del profesional al fundamentar sus diagnósticos."
+    },
+    {
+      "q": "¿Es la contrastabilidad un estándar formal exigible para garantizar la validez del informe?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Piensa en los requisitos científicos del documento.",
+      "explanation": "La replicabilidad y contrastabilidad son fundamentales para garantizar la validez y aplicabilidad del documento científico."
+    },
+    {
+      "q": "¿El informe debe redactarse de forma técnica sin importar la comprensión del destinatario?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Valora la utilidad práctica del documento para quien lo recibe.",
+      "explanation": "El informe debe ser comprensible para el destinatario (sujeto, institución u organismo) para facilitar decisiones informadas."
+    },
+    {
+      "q": "¿Es opcional incluir el número de colegiado si el informe ya lleva la firma del profesional?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Repasa los estándares formales de identificación.",
+      "explanation": "La identificación clara debe incluir obligatoriamente tanto la firma como el número de colegiado del profesional emisor."
+    },
+    {
+      "q": "¿El equilibrio entre datos y abstracción implica evitar la sobrecarga de detalles irrelevantes?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Analiza los parámetros generales de Fernández-Ballesteros.",
+      "explanation": "Se debe proporcionar información suficiente y comprensible sin detalles que no aporten al objetivo planteado."
+    },
+    {
+      "q": "¿El 'efecto Barnum' se refiere al uso de evidencias científicas específicas del sujeto?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Relaciónalo con las descripciones generales típicas de los horóscopos.",
+      "explanation": "El efecto Barnum se refiere a descripciones vagas y generales que podrían aplicarse a cualquier persona, lo cual debe evitarse."
+    },
+    {
+      "q": "¿Las guías GAP son un marco de referencia ético mencionado para el proceso de evaluación?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Verifica las siglas de las guías internacionales citadas.",
+      "explanation": "El texto menciona las guías para el proceso de evaluación psicológica (GAP) como referentes éticos y deontológicos."
+    },
+    {
+      "q": "¿La entrevista de devolución debe ser preferentemente escrita en la práctica clínica diaria?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre el uso clínico habitual y las peticiones del paciente.",
+      "explanation": "La entrevista de devolución suele ser oral; solo se entrega por escrito si existe una petición expresa del paciente."
+    },
+    {
+      "q": "¿Se deben comunicar primero los aspectos menos adaptativos del sujeto en la devolución?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Busca el orden lógico de traslado de la información al paciente.",
+      "explanation": "Se deben trasladar primero los aspectos más adaptativos y positivos, seguidos de los menos adaptativos o patologías."
+    },
+    {
+      "q": "¿El estilo impersonal es una recomendación técnica para la redacción del informe escrito?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Observa las características formales de la redacción científica.",
+      "explanation": "En el informe escrito se utilizará un estilo impersonal, evitando tecnicismos que dificulten la claridad del mensaje."
+    },
+    {
+      "q": "¿Es aconsejable presentar los resultados numéricos exclusivamente en el cuerpo del texto?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Piensa en las herramientas visuales para ordenar datos complejos.",
+      "explanation": "Es recomendable presentar los resultados numéricos en tablas, figuras o esquemas para facilitar su interpretación."
+    },
+    {
+      "q": "¿Un informe técnico dirigido a otros profesionales debe ser comprensible para el sujeto?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Considera el marco teórico compartido entre especialistas.",
+      "explanation": "Los informes técnicos suelen usar jerga del ámbito y no están redactados para ser comprendidos por un interlocutor no técnico."
+    },
+    {
+      "q": "¿El informe de certificado se caracteriza por ser extenso y multivariado en su uso?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Analiza la definición de certificado como testimonio documental.",
+      "explanation": "El informe de certificado es breve, conciso y tiene un uso único claro y predeterminado ante una demanda específica."
+    },
+    {
+      "q": "¿La demanda del sujeto debe recogerse textualmente aunque no coincida con el diagnóstico?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Valora la importancia de la perspectiva del usuario en el proceso.",
+      "explanation": "Aunque el motivo de consulta no coincida con la problemática real, debe recogerse tal como el sujeto lo presenta."
+    },
+    {
+      "q": "¿Es innecesario describir las técnicas utilizadas si estas son ampliamente conocidas?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Revisa los apartados mínimos de la estructura del informe.",
+      "explanation": "El informe debe incluir las técnicas utilizadas y una breve justificación técnica de su elección para el caso concreto."
+    },
+    {
+      "q": "¿La conducta manifiesta del sujeto durante la evaluación es un dato irrelevante para el informe?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Observa si el comportamiento aporta información diagnóstica.",
+      "explanation": "Se deben hacer constar los datos más relevantes derivados de la observación de la conducta manifiesta y actitudes."
+    },
+    {
+      "q": "¿Se deben incluir objetivos de cambio aun cuando no se haya iniciado una intervención?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Piensa en la función orientadora del informe final.",
+      "explanation": "El informe incluye orientaciones y objetivos de cambio que el profesional considere positivos basándose en la evaluación."
+    },
+    {
+      "q": "¿La valoración de la intervención solo se incluye si esta se ha llevado a cabo previamente?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Identifica la condición para incluir el apartado 11 del modelo APA.",
+      "explanation": "Efectivamente, si se ha realizado una intervención, se incluyen resultados, metas alcanzadas y cuestiones pendientes."
+    },
+    {
+      "q": "¿El informe psicológico es considerado legalmente un documento de carácter científico?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Considera el rigor y la metodología que se le exige al profesional.",
+      "explanation": "El texto define al informe psicológico como un documento de carácter científico que cumple con estándares formales y metodológicos."
+    },
+    {
+      "q": "¿Debe el profesional justificar las decisiones tomadas a lo largo de todo el proceso?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Analiza la función argumentativa del informe.",
+      "explanation": "El informe no es solo un resumen, sino que debe justificar las decisiones tomadas durante el proceso evaluativo."
+    },
+    {
+      "q": "¿El Manual de publicaciones de la APA solo es aplicable para la redacción de artículos?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Revisa el marco de referencia global mencionado en el texto.",
+      "explanation": "La APA ofrece un marco de referencia tanto para textos científicos como para la redacción de informes psicológicos."
+    },
+    {
+      "q": "¿La flexibilidad en la estructura del informe anula la necesidad de secciones detalladas?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Compara la aceptabilidad de la estructura flexible con el rigor exigido.",
+      "explanation": "Aunque la flexibilidad es aceptable, las secciones detalladas garantizan que las recomendaciones estén fundamentadas."
+    },
+    {
+      "q": "¿Es la replicabilidad una característica ligada a la contrastabilidad científica del informe?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Piensa en los requisitos para que otro profesional valide el trabajo.",
+      "explanation": "Ambas son fundamentales para garantizar que la información contenida sea válida y pueda ser verificada por otros."
+    },
+    {
+      "q": "¿El diagnóstico diferencial es un objetivo que puede figurar en la demanda del informe?",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Revisa los ejemplos de objetivos de evaluación citados.",
+      "explanation": "El diagnóstico, el diagnóstico diferencial y la evaluación para intervención son objetivos comunes del proceso."
+    },
+    {
+      "q": "Según Fernández-Ballesteros (2011), ¿qué define el equilibrio entre datos y abstracción?",
+      "options": [
+        "La inclusión sistemática de toda la información bruta recolectada.",
+        "Proporcionar información suficiente y comprensible para el objetivo.",
+        "Priorizar la teoría psicológica sobre los datos empíricos del caso."
+      ],
+      "correct": 1,
+      "hint": "Evita los extremos de exceso de datos o exceso de teoría.",
+      "explanation": "El equilibrio consiste en dar la cantidad adecuada de información útil para el objetivo sin sobrecargar con detalles."
+    },
+    {
+      "q": "¿Cuál es la función principal del informe psicológico según la introducción del capítulo?",
+      "options": [
+        "Archivar cronológicamente todas las pruebas aplicadas al sujeto.",
+        "Integrar, analizar y sintetizar los datos de diversas técnicas.",
+        "Enumerar los rasgos de personalidad sin realizar interpretaciones."
+      ],
+      "correct": 1,
+      "hint": "Busca el propósito integrador del documento final.",
+      "explanation": "El informe tiene como fin integrar y analizar los datos para justificar las decisiones del proceso de evaluación."
+    },
+    {
+      "q": "¿Qué estándar formal debe incluirse para identificar al profesional emisor?",
+      "options": [
+        "Únicamente el nombre completo y la dirección de la clínica.",
+        "Firma manuscrita y el número de colegiado del profesional.",
+        "El sello de la institución y el cargo administrativo ocupado."
+      ],
+      "correct": 1,
+      "hint": "Es un requisito de responsabilidad profesional y legal.",
+      "explanation": "La identificación clara requiere la firma y el número de colegiado para validar la autoría y competencia."
+    },
+    {
+      "q": "¿Cómo debe realizarse el traslado de información al paciente en la devolución oral?",
+      "options": [
+        "Siguiendo un orden estrictamente cronológico de las sesiones.",
+        "Adaptándose al nivel de tolerancia y capacidad de quien recibe.",
+        "Utilizando el lenguaje técnico más preciso para evitar errores."
+      ],
+      "correct": 1,
+      "hint": "Considera el bienestar y la comprensión del paciente clínico.",
+      "explanation": "La devolución debe ajustarse a la capacidad del receptor para asegurar que la información sea procesada adecuadamente."
+    },
+    {
+      "q": "En el informe escrito, ¿cuál es la recomendación sobre el uso de tecnicismos?",
+      "options": [
+        "Emplearlos siempre para demostrar el rigor científico del evaluador.",
+        "Evitarlos para que el interlocutor entienda la información clara.",
+        "Sustituirlos por metáforas creativas que faciliten la empatía."
+      ],
+      "correct": 1,
+      "hint": "La claridad es prioritaria sobre la ostentación de vocabulario técnico.",
+      "explanation": "Se recomienda evitar tecnicismos y jerga para que el destinatario pueda comprender los resultados de forma directa."
+    },
+    {
+      "q": "¿Qué tipo de informe se utiliza normalmente en la entrevista de devolución?",
+      "options": [
+        "Informe técnico dirigido a equipos multidisciplinares.",
+        "Informe personal redactado de una manera más sencilla.",
+        "Informe de certificado para trámites ante instituciones."
+      ],
+      "correct": 1,
+      "hint": "Se dirige directamente al sujeto evaluado de forma accesible.",
+      "explanation": "El informe personal es el que se usa en la devolución por estar adaptado a la comprensión del sujeto."
+    },
+    {
+      "q": "¿Cuál es el propósito del informe de certificado según la clasificación funcional?",
+      "options": [
+        "Analizar profundamente la dinámica familiar del sujeto evaluado.",
+        "Servir como testimonio documental breve ante una demanda única.",
+        "Establecer un plan de intervención detallado a largo plazo."
+      ],
+      "correct": 1,
+      "hint": "Es un documento puntual para una necesidad administrativa o legal.",
+      "explanation": "El informe de certificado es breve y conciso, con un uso predeterminado como testimonio documental."
+    },
+    {
+      "q": "Dentro del formato propuesto por APA (2001), ¿qué incluye el apartado de 'Afiliación'?",
+      "options": [
+        "Las metas terapéuticas alcanzadas y las variables modificadas.",
+        "Datos de identificación como nombre, edad, sexo y ocupación.",
+        "La justificación técnica de los test psicométricos utilizados."
+      ],
+      "correct": 1,
+      "hint": "Son los datos demográficos y básicos del sujeto evaluado.",
+      "explanation": "Los datos de afiliación recogen la identificación básica del sujeto necesaria para contextualizar el caso."
+    },
+    {
+      "q": "¿Por qué es valioso recoger la demanda tal como la presenta el sujeto evaluado?",
+      "options": [
+        "Porque permite diagnosticar directamente sin usar más pruebas.",
+        "Porque aporta información valiosa aunque encubra el motivo real.",
+        "Porque exime al profesional de explorar otros datos biográficos."
+      ],
+      "correct": 1,
+      "hint": "Incluso las demandas inexactas revelan aspectos del paciente.",
+      "explanation": "Aunque la demanda inicial no sea la clave del diagnóstico, su formulación aporta datos relevantes para la evaluación."
+    },
+    {
+      "q": "¿Qué se debe observar específicamente en el apartado de 'Conducta durante la evaluación'?",
+      "options": [
+        "Únicamente los resultados numéricos de las escalas de ansiedad.",
+        "Conductas motoras, verbales y actitudes como la colaboración.",
+        "Los antecedentes médicos de la familia nuclear del evaluado."
+      ],
+      "correct": 1,
+      "hint": "Se centra en lo que el evaluador percibe durante la interacción.",
+      "explanation": "Este apartado recoge la conducta manifiesta, como el lenguaje no verbal y la disposición del sujeto ante la tarea."
+    },
+    {
+      "q": "¿Cuál es el objetivo principal del apartado 'Integración de resultados'?",
+      "options": [
+        "Listar cronológicamente todas las respuestas dadas a los test.",
+        "Reflejar resultados de entrevistas y pruebas de forma coherente.",
+        "Omitir las puntuaciones bajas para no estigmatizar al usuario."
+      ],
+      "correct": 1,
+      "hint": "Busca la síntesis de la información recolectada de diversas fuentes.",
+      "explanation": "La integración combina los datos de las técnicas utilizadas para ofrecer una visión global y comprensible del caso."
+    },
+    {
+      "q": "En las recomendaciones del informe, ¿qué característica es fundamental?",
+      "options": [
+        "Que sean lo más extensas posibles para cubrir cualquier opción.",
+        "Que constituyan la base lógica derivada de la evaluación previa.",
+        "Que sean independientes de los resultados de los test realizados."
+      ],
+      "correct": 1,
+      "hint": "Deben tener una conexión directa con las conclusiones alcanzadas.",
+      "explanation": "Las recomendaciones deben estar fundamentadas y ser una consecuencia coherente del proceso evaluativo."
+    },
+    {
+      "q": "¿Qué información debe contener el apartado de 'Valoración de intervención terapéutica'?",
+      "options": [
+        "La planificación de las sesiones futuras y el coste del tratamiento.",
+        "Metas alcanzadas, variables modificadas y cuestiones pendientes.",
+        "La bibliografía científica que sustenta el marco teórico elegido."
+      ],
+      "correct": 1,
+      "hint": "Es un balance de lo trabajado si ya hubo un proceso de cambio.",
+      "explanation": "Este apartado evalúa el progreso terapéutico, detallando qué objetivos se cumplieron y cuáles no."
+    },
+    {
+      "q": "¿Qué implica que un informe psicológico sea 'replicable'?",
+      "options": [
+        "Que cualquier persona sin formación pueda realizar el informe.",
+        "Que otro evaluador pueda llegar a conclusiones similares con los datos.",
+        "Que el informe se pueda copiar para diferentes sujetos evaluados."
+      ],
+      "correct": 1,
+      "hint": "Es un principio científico de verificación de procesos.",
+      "explanation": "La replicabilidad permite que el proceso sea contrastado y verificado por otros profesionales con rigor metodológico."
+    },
+    {
+      "q": "¿Cuál es el riesgo de incurrir en el 'efecto Barnum' al redactar un informe?",
+      "options": [
+        "Que el informe sea demasiado técnico para otros profesionales.",
+        "Que el sujeto se sienta identificado con frases vagas y comunes.",
+        "Que los resultados numéricos de los test sean mal interpretados."
+      ],
+      "correct": 1,
+      "hint": "Se asocia con descripciones genéricas que 'valen para todos'.",
+      "explanation": "El efecto Barnum resta rigor al informe al usar descripciones que no son específicas del sujeto evaluado."
+    },
+    {
+      "q": "¿Cómo deben presentarse los resultados numéricos según las recomendaciones del texto?",
+      "options": [
+        "Como una lista de números sin ninguna explicación cualitativa.",
+        "En tablas o figuras para facilitar el orden de las ideas principales.",
+        "Únicamente en un anexo separado que el paciente no debe leer."
+      ],
+      "correct": 1,
+      "hint": "Busca la claridad visual y estructural de los datos cuantitativos.",
+      "explanation": "El uso de tablas y figuras ayuda a que la información numérica sea más digerible y esté mejor organizada."
+    },
+    {
+      "q": "¿Qué debe asegurar el profesional respecto a los criterios éticos y legales?",
+      "options": [
+        "Garantizar la confidencialidad y la protección de los datos.",
+        "Publicar los resultados en revistas sin consentimiento previo.",
+        "Entregar el informe original a cualquier familiar que lo pida."
+      ],
+      "correct": 0,
+      "hint": "Relaciónalo con el deber de secreto profesional y legalidad vigente.",
+      "explanation": "Es un parámetro general asegurar el cumplimiento de la confidencialidad y la responsabilidad profesional."
+    },
+    {
+      "q": "¿Qué documento ofrece un marco de referencia para la redacción de informes según el texto?",
+      "options": [
+        "El Manual diagnóstico y estadístico de los trastornos mentales.",
+        "El Manual de publicaciones de la American Psychological Association.",
+        "La Ley Orgánica de Protección de Datos Personales del Estado."
+      ],
+      "correct": 1,
+      "hint": "Es un estándar internacional para textos científicos y profesionales.",
+      "explanation": "El manual de la APA contribuye a garantizar el rigor, claridad y utilidad del informe en cualquier contexto."
+    },
+    {
+      "q": "¿Qué caracteriza a un 'informe técnico' según su función?",
+      "options": [
+        "Su redacción es sencilla para que el sujeto lo entienda siempre.",
+        "Está dirigido a profesionales que comparten el mismo marco teórico.",
+        "Se limita a certificar la asistencia del sujeto a la evaluación."
+      ],
+      "correct": 1,
+      "hint": "No existe comunicación directa con la persona evaluada a través de él.",
+      "explanation": "El informe técnico usa un lenguaje especializado para la comunicación entre expertos del mismo ámbito."
+    },
+    {
+      "q": "¿Qué apartado del modelo APA incluye la orientación espaciotemporal del sujeto?",
+      "options": [
+        "Referencia y objetivos de la demanda inicial.",
+        "Datos biográficos relevantes y observación directa.",
+        "Técnicas y procedimientos del proceso evaluativo."
+      ],
+      "correct": 1,
+      "hint": "Son datos que el evaluador percibe durante la entrevista clínica.",
+      "explanation": "La fluidez verbal y la orientación se recogen bajo los datos biográficos y observaciones del profesional."
+    },
+    {
+      "q": "¿Qué se busca al establecer el 'Objetivo de la evaluación'?",
+      "options": [
+        "Justificar el cobro de honorarios por parte del profesional clínico.",
+        "Clarificar si se busca diagnóstico, intervención o seguimiento.",
+        "Sustituir la demanda del paciente por la opinión de la familia."
+      ],
+      "correct": 1,
+      "hint": "Define la meta técnica que guía el proceso evaluativo.",
+      "explanation": "Es necesario precisar si el fin es diagnóstico diferencial, planteamiento de intervención u otros propósitos."
+    },
+    {
+      "q": "Al redactar las conclusiones de un informe psicológico, ¿cómo deben ser?",
+      "options": [
+        "Extensas para detallar cada hipótesis descartada.",
+        "Breves y constituir la base para las recomendaciones.",
+        "Poéticas para mejorar la alianza terapéutica con el paciente."
+      ],
+      "correct": 1,
+      "hint": "La síntesis es clave para la utilidad del documento final.",
+      "explanation": "Las conclusiones deben expresar lo más relevante de forma concisa para sustentar las pautas a seguir."
+    },
+    {
+      "q": "¿Cuál es la recomendación sobre el lenguaje en la entrevista de devolución oral?",
+      "options": [
+        "Utilizar palabras complejas para elevar el estatus del clínico.",
+        "Emplear un lenguaje claro, racional y sin artificios innecesarios.",
+        "Delegar la explicación en un administrativo para ahorrar tiempo."
+      ],
+      "correct": 1,
+      "hint": "La comunicación efectiva es la base de la devolución clínica.",
+      "explanation": "El lenguaje debe ser sencillo y directo para facilitar que el destinatario integre la información."
+    },
+    {
+      "q": "¿Qué dato es obligatorio en la identificación del receptor en el formato del informe?",
+      "options": [
+        "El nombre de la persona que solicita el informe psicológico.",
+        "La lista de todos los familiares directos del sujeto evaluado.",
+        "El historial de navegación web del paciente durante el proceso."
+      ],
+      "correct": 0,
+      "hint": "Es parte de los datos de envío y presentación del documento.",
+      "explanation": "Se debe hacer constar quién solicita el informe y a quién va dirigido para mantener el control de la información."
+    },
+    {
+      "q": "¿Cuál es un beneficio de la claridad en la comunicación del informe según el capítulo?",
+      "options": [
+        "Aumentar la duración de la terapia para obtener más beneficios.",
+        "Generar confianza y asegurar que el destinatario entienda los retos.",
+        "Evitar que el paciente pueda cuestionar los diagnósticos emitidos."
+      ],
+      "correct": 1,
+      "hint": "Favorece la participación activa del sujeto en su proceso.",
+      "explanation": "La claridad mejora la calidad de la intervención y favorece una experiencia terapéutica más efectiva."
+    },
+    {
+      "q": "Señala la opción INCORRECTA respecto a la definición de informe psicológico.",
+      "options": [
+        "Es un documento que justifica las decisiones del proceso evaluativo.",
+        "Es un resumen estático que no requiere integración de datos técnicos.",
+        "Es el producto final que sintetiza toda la información obtenida."
+      ],
+      "correct": 1,
+      "hint": "Busca la afirmación que niega la naturaleza dinámica e integradora del informe.",
+      "explanation": "El informe no es un 'mero resumen', sino una síntesis analítica y justificada."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre los parámetros generales del informe.",
+      "options": [
+        "La redacción debe ser asertiva, respetuosa y técnicamente clara.",
+        "El contenido debe ser irrelevante para el sujeto pero útil para el juez.",
+        "Cada parte del informe debe ser discutida y justificada adecuadamente."
+      ],
+      "correct": 1,
+      "hint": "El interés y relevancia para el sujeto evaluado son parámetros clave.",
+      "explanation": "El informe debe ser relevante y útil precisamente para el sujeto o institución demandante."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre el 'efecto Barnum' en la redacción.",
+      "options": [
+        "Se basa en descripciones específicas que corresponden solo al sujeto.",
+        "Involucra descripciones vagas aplicables a casi cualquier persona.",
+        "Es un error que el profesional debe evitar basándose en evidencias."
+      ],
+      "correct": 0,
+      "hint": "El efecto Barnum es lo opuesto a la especificidad individual.",
+      "explanation": "El efecto Barnum NO se basa en descripciones específicas, sino en generalidades sin fundamento empírico."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la entrevista de devolución.",
+      "options": [
+        "Se deben compartir tanto aspectos positivos como patologías halladas.",
+        "El nivel de tecnicismos debe ser el más alto para asegurar rigor.",
+        "La información debe adaptarse al nivel de tolerancia del paciente."
+      ],
+      "correct": 1,
+      "hint": "Recuerda que la devolución busca la comprensión del paciente no experto.",
+      "explanation": "En la devolución se debe evitar el exceso de tecnicismos para facilitar la comprensión."
+    },
+    {
+      "q": "Señala la opción INCORRECTA respecto al estilo del informe escrito.",
+      "options": [
+        "Debe emplear oraciones breves y lenguaje claro para el lector.",
+        "Es preferible utilizar jerga profesional para evitar ambigüedades.",
+        "Se recomienda el uso de tablas para presentar resultados numéricos."
+      ],
+      "correct": 1,
+      "hint": "El uso de jerga suele oscurecer la comprensión del destinatario.",
+      "explanation": "El texto prohíbe explícitamente el empleo de jerga, palabrería y redundancia."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la clasificación por función del informe.",
+      "options": [
+        "El informe técnico se dirige a profesionales con igual marco teórico.",
+        "El informe personal es opcional y nunca puede ser entregado por escrito.",
+        "El informe de certificado es breve y conciso con un único uso claro."
+      ],
+      "correct": 1,
+      "hint": "Revisa las condiciones bajo las cuales se entrega el informe personal escrito.",
+      "explanation": "El informe personal sí se puede entregar por escrito si existe demanda explícita del paciente."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre los datos de identificación del sujeto.",
+      "options": [
+        "Se debe incluir la escolaridad, ocupación y estado civil del sujeto.",
+        "El número de teléfono y la dirección son datos que pueden omitirse.",
+        "Se debe hacer constar quién refiere al sujeto y la fuente de datos."
+      ],
+      "correct": 1,
+      "hint": "Revisa la lista completa de datos de afiliación del apartado 1 del modelo APA.",
+      "explanation": "El teléfono y la dirección son datos que deben constar según el listado de afiliación del APA."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la demanda y objetivos del informe.",
+      "options": [
+        "Se debe explorar de forma exhaustiva la información que aporte el sujeto.",
+        "La demanda solo debe recogerse si coincide plenamente con el diagnóstico.",
+        "El motivo de consulta aportado puede encubrir el motivo real del problema."
+      ],
+      "correct": 1,
+      "hint": "La demanda del sujeto siempre es valiosa aunque sea 'incorrecta' clínicamente.",
+      "explanation": "La demanda debe recogerse tal cual la presenta el sujeto, independientemente del diagnóstico final."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre las técnicas y procedimientos de evaluación.",
+      "options": [
+        "Debe incluirse una breve descripción técnica de cada instrumento usado.",
+        "Es necesario justificar la elección de las técnicas para el caso concreto.",
+        "Las técnicas solo se mencionan si el informe va dirigido a otro psicólogo."
+      ],
+      "correct": 2,
+      "hint": "Las fuentes de información son un contenido mínimo en cualquier informe.",
+      "explanation": "Las técnicas deben incluirse en todos los informes como parte de la transparencia metodológica."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la conducta durante la evaluación.",
+      "options": [
+        "Incluye la observación de la fluidez verbal y la orientación espacial.",
+        "Debe centrarse únicamente en la inteligencia medida por los test.",
+        "Recoge actitudes del sujeto como la colaboración o la intolerancia."
+      ],
+      "correct": 1,
+      "hint": "La conducta manifiesta va mucho más allá de la mera puntuación en un test.",
+      "explanation": "No se limita a la inteligencia; incluye aspectos motores, verbales y actitudinales detectados."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la integración de resultados del informe.",
+      "options": [
+        "Se transcriben las puntuaciones de los test de la manera más clara.",
+        "Si el informe es para otro profesional, puede ignorar la claridad.",
+        "Debe haber una redacción técnica pero comprensible para el usuario."
+      ],
+      "correct": 1,
+      "hint": "La corrección y comprensibilidad son obligatorias en todos los casos.",
+      "explanation": "Incluso en informes entre profesionales, se tenderá a que la redacción sea comprensible y correcta."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre las recomendaciones y conclusiones.",
+      "options": [
+        "Deben expresarse de manera breve lo más relevante de la evaluación.",
+        "Las recomendaciones pueden basarse en intuiciones fuera de los test.",
+        "Constituyen la base lógica para las pautas de actuación sugeridas."
+      ],
+      "correct": 1,
+      "hint": "Toda recomendación debe tener un anclaje empírico en la evaluación.",
+      "explanation": "Las recomendaciones no son intuiciones; deben derivarse directamente del proceso evaluativo realizado."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la orientación u objetivos de cambio.",
+      "options": [
+        "Incluyen todas las orientaciones positivas para la intervención.",
+        "Deben seguir un orden aleatorio para no cansar al lector del informe.",
+        "Buscan facilitar la comprensión de las pautas tanto al paciente como a otros."
+      ],
+      "correct": 1,
+      "hint": "El orden de la información es vital para la utilidad del documento.",
+      "explanation": "Deben seguir un orden adecuado que facilite la comprensión de las metas sugeridas."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre el formato del informe psicológico.",
+      "options": [
+        "Existe un formato rígido y protocolizado de carácter internacional.",
+        "No existe un formato rígido, pero sí contenidos mínimos sugeridos.",
+        "El modelo propuesto por la APA (2001) es ampliamente aceptado."
+      ],
+      "correct": 0,
+      "hint": "Diferencia entre guías sugeridas y protocolos inamovibles.",
+      "explanation": "El texto afirma explícitamente que 'no existe un formato rígido y protocolizado', sino sugerencias de contenido."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre los antecedentes en el informe.",
+      "options": [
+        "Se deben registrar antecedentes médicos y psicopatológicos previos.",
+        "Si no existen antecedentes, este apartado debe omitirse del informe.",
+        "Los antecedentes ayudan a contextualizar la situación actual del sujeto."
+      ],
+      "correct": 1,
+      "hint": "Repasa la estructura de apartados mínimos del modelo APA.",
+      "explanation": "Los antecedentes son un apartado estructural; si no los hay, se hace constar su ausencia (como en el ejemplo de Paciente X)."
+    },
+    {
+      "q": "Señala la opción INCORRECTA respecto a la ética y deontología.",
+      "options": [
+        "El Código Deontológico del Psicólogo (COP, 2015) es una guía clave.",
+        "La protección de datos solo es relevante si el informe es para un juicio.",
+        "El respeto a la confidencialidad es un pilar fundamental del informe."
+      ],
+      "correct": 1,
+      "hint": "La ética es transversal a cualquier contexto de evaluación psicológica.",
+      "explanation": "La protección de datos y confidencialidad son obligatorias en todos los informes, no solo en los judiciales."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la replicabilidad de la información.",
+      "options": [
+        "Es necesaria para que otros profesionales puedan contrastar el informe.",
+        "Garantiza que el informe no pueda ser discutido por terceras partes.",
+        "Es un pilar que asegura la validez científica del documento emitido."
+      ],
+      "correct": 1,
+      "hint": "La ciencia se basa precisamente en la capacidad de ser discutida y contrastada.",
+      "explanation": "La replicabilidad NO busca evitar la discusión, sino permitir la contrastabilidad y verificación profesional."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la redacción asertiva en el informe.",
+      "options": [
+        "Implica usar un lenguaje que sea respetuoso pero a la vez técnico.",
+        "Debe evitar términos estigmatizantes o negativos para el evaluado.",
+        "Permite al psicólogo emitir juicios de valor sobre la moral del sujeto."
+      ],
+      "correct": 2,
+      "hint": "El informe debe ser científico y profesional, no moralizante.",
+      "explanation": "El profesional debe evitar ambigüedades y juicios morales, centrándose en datos técnicos y empíricos."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre el destinatario del informe.",
+      "options": [
+        "Al finalizar la lectura, debe obtener una imagen clara de la situación.",
+        "El informe solo debe ser comprensible para el psicólogo que lo escribió.",
+        "El documento debe facilitar al receptor la toma de decisiones informadas."
+      ],
+      "correct": 1,
+      "hint": "Un informe que no se entiende no cumple su función comunicativa.",
+      "explanation": "El informe DEBE ser comprensible para el destinatario, sea este el sujeto, una institución o un organismo."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre el uso de ejemplos en el informe.",
+      "options": [
+        "Se incluyen para ayudar a interpretar datos de manera más precisa.",
+        "Están prohibidos por la APA por considerarse poco científicos.",
+        "Sirven como herramienta de clarificación para el destinatario final."
+      ],
+      "correct": 1,
+      "hint": "Revisa los parámetros generales de Fernández-Ballesteros (2011).",
+      "explanation": "La 'clarificación y ejemplificación' es un parámetro aceptado para mejorar la comprensión del informe."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la fuente de información en el informe.",
+      "options": [
+        "Debe indicarse quién refiere al paciente para el proceso evaluativo.",
+        "Se deben detallar todas las técnicas e instrumentos utilizados.",
+        "Es un dato confidencial que no debe figurar en el informe escrito."
+      ],
+      "correct": 2,
+      "hint": "La transparencia sobre las fuentes es un requisito formal del documento.",
+      "explanation": "Las fuentes de información son un apartado obligatorio en los contenidos mínimos del informe."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la 'Discusión detallada' del informe.",
+      "options": [
+        "Cada parte del informe debe ser justificada adecuadamente.",
+        "Permite explicar el porqué de las conclusiones alcanzadas.",
+        "Se limita únicamente a transcribir las puntuaciones brutas obtenidas."
+      ],
+      "correct": 2,
+      "hint": "Discutir implica elaborar e integrar, no solo copiar números.",
+      "explanation": "La discusión detallada va más allá de los datos brutos; justifica y conecta la información para el diagnóstico."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la valoración terapéutica final.",
+      "options": [
+        "Incluye conductas trabajadas y objetivos terapéuticos no alcanzados.",
+        "Es la sección donde el psicólogo puede expresar sus quejas personales.",
+        "Proporciona una valoración final de la relevancia de los resultados."
+      ],
+      "correct": 1,
+      "hint": "Mantén el enfoque en la objetividad y profesionalidad del documento.",
+      "explanation": "El informe no es un espacio para quejas personales, sino para la valoración técnica de la intervención."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la estructura lógica del informe.",
+      "options": [
+        "Debe incluir una secuencia lógica que facilite su comprensión global.",
+        "Permite omitir las conclusiones si los resultados son muy claros.",
+        "Debe alinear cada sección con el objetivo principal de la demanda."
+      ],
+      "correct": 1,
+      "hint": "Las conclusiones son un apartado esencial e irrenunciable.",
+      "explanation": "El informe debe incluir conclusiones como mínimo para ser considerado completo y útil."
+    },
+    {
+      "q": "Señala la opción INCORRECTA sobre la utilidad práctica del informe.",
+      "options": [
+        "Sirve como herramienta para planificar intervenciones futuras.",
+        "Es útil exclusivamente para el psicólogo que realiza la evaluación.",
+        "Refuerza la transparencia y eficacia de todo el proceso evaluativo."
+      ],
+      "correct": 1,
+      "hint": "El informe es un documento de comunicación externa por definición.",
+      "explanation": "La utilidad del informe es externa (paciente, otros profesionales, instituciones), no solo para el evaluador."
+    },
+    {
+      "q": "El informe psicológico se define como el ____ del proceso de evaluación, integrando y sintetizando los datos de diversas técnicas.",
+      "options": [
+        "componente procedimental",
+        "producto final técnico",
+        "resultado de diagnóstico"
+      ],
+      "correct": 1,
+      "hint": "Es el cierre documental de todo el trabajo previo.",
+      "explanation": "El texto define explícitamente el informe como el producto final que integra, analiza y sintetiza los datos obtenidos."
+    },
+    {
+      "q": "Para garantizar la validez del informe, es fundamental que la información contenida posea las características de ____ y contrastabilidad.",
+      "options": [
+        "replicabilidad técnica",
+        "fiabilidad interjueces",
+        "recurrencia objetiva"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la posibilidad de que otro profesional pueda seguir los mismos pasos.",
+      "explanation": "La replicabilidad y contrastabilidad son requisitos científicos mencionados para garantizar la validez del documento."
+    },
+    {
+      "q": "La redacción del informe debe ser redactada de manera que sea ____ para el destinatario, sea este el sujeto o una institución legal.",
+      "options": [
+        "fácilmente asimilable",
+        "técnicamente rigurosa",
+        "totalmente comprensible"
+      ],
+      "correct": 2,
+      "hint": "Apunta a la adecuación del lenguaje al receptor.",
+      "explanation": "El manual subraya que el informe debe ser redactado para ser comprensible por su destinatario específico."
+    },
+    {
+      "q": "Según Fernández-Ballesteros, debe existir un ____ entre los datos de carácter objetivo y el nivel de abstracción del informe.",
+      "options": [
+        "equilibrio metodológico",
+        "desglose proporcional",
+        "balance interpretativo"
+      ],
+      "correct": 0,
+      "hint": "Busca evitar el exceso de detalles o la excesiva generalización.",
+      "explanation": "Se menciona el equilibrio entre datos objetivos y abstracción como un parámetro general de calidad."
+    },
+    {
+      "q": "El fenómeno de incluir descripciones vagas que podrían aplicarse a cualquier individuo se denomina técnicamente como ____.",
+      "options": [
+        "sesgo de confirmación",
+        "efecto de generalidad",
+        "efecto de tipo Barnum"
+      ],
+      "correct": 2,
+      "hint": "Es un término común en psicología para criticar informes poco específicos.",
+      "explanation": "El efecto Barnum se refiere a descripciones generales que no se ajustan exclusivamente al sujeto evaluado."
+    },
+    {
+      "q": "El informe o entrevista de ____ es el tipo de comunicación que suele realizarse de forma oral en la práctica clínica habitual.",
+      "options": [
+        "restitución clínica",
+        "devolución técnica",
+        "devolución de datos"
+      ],
+      "correct": 1,
+      "hint": "Es el proceso de comunicar los resultados al evaluado.",
+      "explanation": "La entrevista de devolución es el término técnico para la comunicación oral de resultados y conclusiones."
+    },
+    {
+      "q": "El informe escrito debe utilizar un ____ para evitar implicaciones personales excesivas y mantener el rigor científico.",
+      "options": [
+        "estilo de tipo formal",
+        "estilo de impersonal",
+        "estilo técnico-legal"
+      ],
+      "correct": 1,
+      "hint": "Se refiere a la forma gramatical de la redacción.",
+      "explanation": "El texto especifica que en el informe escrito se utilizará un estilo impersonal."
+    },
+    {
+      "q": "Los informes dirigidos a otros profesionales de un marco teórico similar se clasifican bajo la categoría de ____.",
+      "options": [
+        "informe de carácter técnico",
+        "informe de transferencia",
+        "informe interprofesional"
+      ],
+      "correct": 0,
+      "hint": "Es un documento con lenguaje especializado para colegas.",
+      "explanation": "El informe técnico es aquel dirigido a otros profesionales que manejan un lenguaje y marco similar."
+    },
+    {
+      "q": "Un informe breve y conciso que sirve como testimonio documental ante una demanda se conoce como ____.",
+      "options": [
+        "informe de certificación",
+        "dictamen pericial corto",
+        "informe de certificado"
+      ],
+      "correct": 2,
+      "hint": "Suele ser solicitado para trámites específicos.",
+      "explanation": "El informe de certificado se define como breve, conciso y con un uso único predeterminado."
+    },
+    {
+      "q": "Dentro del formato APA, el apartado de ____ debe recoger la razón explícita por la que el sujeto acudió a la evaluación.",
+      "options": [
+        "motivo de la consulta",
+        "referencia y objetivos",
+        "demanda y derivación"
+      ],
+      "correct": 1,
+      "hint": "Incluye tanto la derivación como los objetivos del paciente.",
+      "explanation": "El apartado 'Referencia y objetivos de la demanda' recoge el motivo por el que se somete a evaluación."
+    },
+    {
+      "q": "La observación de conductas motoras y verbales durante la sesión se registra en el apartado de ____.",
+      "options": [
+        "conducta en evaluación",
+        "observación sistemática",
+        "clínica de la sesión"
+      ],
+      "correct": 0,
+      "hint": "Refleja la actitud y disposición del sujeto.",
+      "explanation": "En el apartado de 'Conducta durante la evaluación' se hacen constar datos de observación directa."
+    },
+    {
+      "q": "La integración de resultados debe presentar las puntuaciones de los test de la manera más ____ posible.",
+      "options": [
+        "técnicamente correcta",
+        "claramente inteligible",
+        "detallada y exhaustiva"
+      ],
+      "correct": 1,
+      "hint": "Prioriza la comprensión del usuario final.",
+      "explanation": "El manual indica que los resultados deben transcribirse de la manera más clara posible."
+    },
+    {
+      "q": "El ____ del informe debe reflejar la competencia del profesional al realizar diagnósticos coherentes.",
+      "options": [
+        "contenido científico",
+        "análisis cualitativo",
+        "estilo de redacción"
+      ],
+      "correct": 0,
+      "hint": "Se refiere al valor probatorio y técnico del escrito.",
+      "explanation": "El informe como documento científico debe reflejar las competencias del evaluador mediante su contenido."
+    },
+    {
+      "q": "La ____ de los datos es esencial para que otros profesionales puedan verificar el proceso seguido.",
+      "options": [
+        "contrastabilidad técnica",
+        "transparencia de datos",
+        "verificabilidad formal"
+      ],
+      "correct": 0,
+      "hint": "Es un término que aparece junto a la replicabilidad.",
+      "explanation": "La contrastabilidad es un estándar formal para garantizar la validez del informe."
+    },
+    {
+      "q": "Al redactar, es recomendable evitar el uso de ____ que dificulten la comprensión por parte del interlocutor.",
+      "options": [
+        "lenguajes ambiguos",
+        "tecnicismos complejos",
+        "jerga técnica propia"
+      ],
+      "correct": 2,
+      "hint": "El texto pide un lenguaje racional y sin artificios.",
+      "explanation": "Se indica específicamente evitar el empleo de jerga, palabrería o redundancias."
+    },
+    {
+      "q": "En el informe de devolución, se deben priorizar los aspectos más ____ encontrados en la evaluación.",
+      "options": [
+        "positivos y adaptativos",
+        "clínicamente relevantes",
+        "disfuncionales críticos"
+      ],
+      "correct": 0,
+      "hint": "Busca una comunicación constructiva con el paciente.",
+      "explanation": "La entrevista de devolución traslada primero los aspectos más adaptativos y positivos."
+    },
+    {
+      "q": "El modelo propuesto por la ____ en el año 2001 es el estándar admitido por las revistas científicas.",
+      "options": [
+        "asociación APA global",
+        "organización WHO-OMS",
+        "entidad clínica COP"
+      ],
+      "correct": 0,
+      "hint": "Es la organización de psicología más influyente a nivel mundial.",
+      "explanation": "El texto cita el modelo propuesto por la APA (American Psychological Association) de 2001."
+    },
+    {
+      "q": "Los datos biográficos relevantes incluyen la observación de variables como la ____ durante la entrevista.",
+      "options": [
+        "capacidad de memoria",
+        "fluidez de tipo verbal",
+        "actitud colaborativa"
+      ],
+      "correct": 1,
+      "hint": "Es una variable de observación directa sobre el lenguaje.",
+      "explanation": "En datos biográficos se incluyen observaciones como fluidez verbal u orientación espaciotemporal."
+    },
+    {
+      "q": "El informe psicológico debe ser una herramienta que facilite la ____ por parte del destinatario.",
+      "options": [
+        "toma de decisiones",
+        "comprensión del caso",
+        "intervención futura"
+      ],
+      "correct": 0,
+      "hint": "Es la utilidad final práctica del documento.",
+      "explanation": "Uno de los parámetros fundamentales es la facilitación de la toma de decisiones informadas."
+    },
+    {
+      "q": "Para evitar ambigüedades, se recomienda presentar los resultados numéricos mediante el uso de ____.",
+      "options": [
+        "gráficos de tendencia",
+        "tablas y figuras",
+        "escalas de baremos"
+      ],
+      "correct": 1,
+      "hint": "Es una forma visual de organizar datos estadísticos.",
+      "explanation": "El texto recomienda que los resultados numéricos se presenten en tablas o figuras."
+    },
+    {
+      "q": "El cumplimiento de los criterios ____ asegura la protección de datos y la confidencialidad.",
+      "options": [
+        "legales y éticos",
+        "normativos y civiles",
+        "deontológicos puros"
+      ],
+      "correct": 0,
+      "hint": "Abarca tanto la ley como la moral profesional.",
+      "explanation": "Se debe asegurar el cumplimiento de estándares éticos y legales en el informe."
+    },
+    {
+      "q": "Un informe de ____ suele redactarse de forma más sencilla para que el sujeto evaluado lo comprenda.",
+      "options": [
+        "carácter de personal",
+        "orientación clínica",
+        "perfil psicotécnico"
+      ],
+      "correct": 0,
+      "hint": "Es el que se entrega al paciente tras la devolución.",
+      "explanation": "El informe personal está redactado de forma correcta pero sencilla para el sujeto."
+    },
+    {
+      "q": "La demanda del sujeto puede ser ____ y no coincidir con el motivo real de la problemática clínica.",
+      "options": [
+        "sesgada por el medio",
+        "aparente o encubierta",
+        "errónea en su origen"
+      ],
+      "correct": 1,
+      "hint": "El paciente puede ocultar el motivo real conscientemente o no.",
+      "explanation": "El texto menciona que el motivo de consulta puede encubrir el motivo real."
+    },
+    {
+      "q": "En el apartado de conclusiones, se expresa de manera ____ lo más relevante de la evaluación realizada.",
+      "options": [
+        "técnica y detallada",
+        "breve y significativa",
+        "concisa y coherente"
+      ],
+      "correct": 1,
+      "hint": "No debe ser un resumen largo, sino los puntos clave.",
+      "explanation": "Se indica que en las conclusiones se expresará de manera breve lo más relevante."
+    },
+    {
+      "q": "La orientación u objetivos de ____ incluyen las pautas positivas para la futura intervención.",
+      "options": [
+        "cambio terapéutico",
+        "intervención directa",
+        "mejora conductual"
+      ],
+      "correct": 0,
+      "hint": "Busca transformar la situación actual del paciente.",
+      "explanation": "El apartado se denomina 'Orientación u objetivos de cambio'."
+    },
+    {
+      "q": "Si se ha realizado una terapia previa, el informe debe incluir la ____ de dicha intervención.",
+      "options": [
+        "valoración técnica",
+        "revisión de efectos",
+        "evolución del caso"
+      ],
+      "correct": 0,
+      "hint": "Mide si se alcanzaron las metas propuestas.",
+      "explanation": "El apartado 11 es la 'Valoración de intervención terapéutica'."
+    },
+    {
+      "q": "El informe psicológico justifica las ____ tomadas a lo largo de todo el proceso de evaluación.",
+      "options": [
+        "medidas aplicadas",
+        "decisiones clínicas",
+        "técnicas elegidas"
+      ],
+      "correct": 1,
+      "hint": "Es la base del razonamiento del profesional.",
+      "explanation": "El informe debe justificar las decisiones tomadas durante el proceso evaluativo."
+    },
+    {
+      "q": "La estructura del informe debe seguir una ____ que facilite su lectura e interpretación profesional.",
+      "options": [
+        "secuencia lógica",
+        "pauta de protocolo",
+        "orden cronológico"
+      ],
+      "correct": 0,
+      "hint": "Asegura la coherencia entre los apartados.",
+      "explanation": "Se requiere una estructura lógica y organizada para cumplir estándares formales."
+    },
+    {
+      "q": "El informe debe incluir la firma y el ____ del profesional que emite el documento.",
+      "options": [
+        "sello de la entidad",
+        "número de colegiado",
+        "registro sanitario"
+      ],
+      "correct": 1,
+      "hint": "Es el identificador legal del psicólogo.",
+      "explanation": "La identificación clara incluye firma y número de colegiado como estándar formal."
+    },
+    {
+      "q": "La replicabilidad permite que la información sea ____ por otros evaluadores en el futuro.",
+      "options": [
+        "confirmada técnicamente",
+        "contrastada objetivamente",
+        "validada externamente"
+      ],
+      "correct": 1,
+      "hint": "Tiene que ver con la capacidad de comparar datos.",
+      "explanation": "La replicabilidad y contrastabilidad garantizan la validez y aplicabilidad."
+    },
+    {
+      "q": "Un informe de devolución debe ajustarse al nivel de ____ del sujeto receptor de la información.",
+      "options": [
+        "tolerancia y capacidad",
+        "comprensión técnica",
+        "aceptación clínica"
+      ],
+      "correct": 0,
+      "hint": "Considera el impacto emocional y cognitivo en el paciente.",
+      "explanation": "La devolución debe realizarse adaptándose al nivel de tolerancia y capacidad de quien la recibe."
+    },
+    {
+      "q": "La ____ de los datos es un pilar ético que debe respetarse escrupulosamente en todo informe.",
+      "options": [
+        "confidencialidad total",
+        "privacidad de datos",
+        "protección de informe"
+      ],
+      "correct": 0,
+      "hint": "Evita que la información llegue a personas no autorizadas.",
+      "explanation": "El informe debe asegurar estándares de confidencialidad y protección de datos."
+    },
+    {
+      "q": "El Manual de publicaciones de la ____ ofrece el marco de referencia para la redacción científica.",
+      "options": [
+        "organización APA",
+        "institución de COP",
+        "asociación de GAP"
+      ],
+      "correct": 0,
+      "hint": "Es la normativa de estilo más usada en psicología.",
+      "explanation": "El Manual de la APA ofrece el marco para garantizar rigor y claridad."
+    },
+    {
+      "q": "En el caso del Paciente X, la evaluación buscaba realizar un ____ respecto al TDAH.",
+      "options": [
+        "diagnóstico de tipo diferencial",
+        "análisis de síntomas",
+        "descarte patológico"
+      ],
+      "correct": 0,
+      "hint": "Busca distinguir entre dos o más trastornos similares.",
+      "explanation": "El objetivo en el ejemplo era realizar un diagnóstico diferencial entre TDAH y ansiedad."
+    },
+    {
+      "q": "El test d2, utilizado en el ejemplo, sirve para evaluar la ____ del paciente evaluado.",
+      "options": [
+        "capacidad de memoria",
+        "atención sostenida",
+        "velocidad perceptiva"
+      ],
+      "correct": 1,
+      "hint": "Es una prueba de concentración muy conocida.",
+      "explanation": "El test d2 evalúa la capacidad de concentración y atención sostenida."
+    },
+    {
+      "q": "El inventario ____ se empleó para explorar los síntomas de ansiedad del Paciente X.",
+      "options": [
+        "de ansiedad de Beck",
+        "de ansiedad de State",
+        "de perfiles de Ansia"
+      ],
+      "correct": 0,
+      "hint": "Sus siglas son BAI.",
+      "explanation": "Se utilizó el Inventario de Ansiedad de Beck (BAI) según el ejemplo práctico."
+    },
+    {
+      "q": "La ____ es una técnica recomendada para mejorar la regulación emocional en situaciones de estrés.",
+      "options": [
+        "terapia de exposición",
+        "técnica de mindfulness",
+        "relajación profunda"
+      ],
+      "correct": 1,
+      "hint": "Se basa en la atención plena.",
+      "explanation": "El informe del ejemplo sugiere la introducción gradual de técnicas de mindfulness."
+    },
+    {
+      "q": "En la integración de resultados, el Paciente X mostró una baja puntuación en la ____.",
+      "options": [
+        "capacidad de memoria",
+        "comprensión verbal",
+        "velocidad de proceso"
+      ],
+      "correct": 2,
+      "hint": "Es una de las escalas del WAIS-IV.",
+      "explanation": "El paciente obtuvo una baja puntuación en la escala de velocidad de procesamiento."
+    },
+    {
+      "q": "El informe psicológico debe evitar oraciones largas y complejas, prefiriendo un lenguaje ____.",
+      "options": [
+        "claro y racional",
+        "directo y técnico",
+        "objetivo y formal"
+      ],
+      "correct": 0,
+      "hint": "Busca la máxima sencillez sin perder rigor.",
+      "explanation": "Se describe que el lenguaje será claro, racional, sin artificios y con oraciones breves."
+    },
+    {
+      "q": "La ____ de los contenidos permite que el informe sea útil para el planteamiento de una intervención.",
+      "options": [
+        "relevancia temática",
+        "estructura lógica",
+        "síntesis de datos"
+      ],
+      "correct": 1,
+      "hint": "Facilita la navegación por la información.",
+      "explanation": "Una estructura lógica garantiza que las recomendaciones sean aplicables y fundamentadas."
+    },
+    {
+      "q": "¿Qué requisitos formales debe cumplir un informe para ser considerado un documento científico?",
+      "options": [
+        "Firma y número de colegiado del autor",
+        "Estructura lógica con objetivos e hipótesis",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Revise los estándares mencionados en la introducción.",
+      "explanation": "El manual exige identificación clara del profesional, rigor metodológico y estructura organizada."
+    },
+    {
+      "q": "¿Cuáles son parámetros de calidad general propuestos para la elaboración del informe?",
+      "options": [
+        "Interés y relevancia de los contenidos",
+        "Facilitación de la toma de decisiones",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Piense en la utilidad práctica y el ajuste a la demanda.",
+      "explanation": "Ambos son parámetros generales de Fernández-Ballesteros citados en el texto."
+    },
+    {
+      "q": "¿Qué documentos normativos rigen la ética en la elaboración de informes psicológicos?",
+      "options": [
+        "Código Deontológico del Psicólogo (COP)",
+        "Guías para el Proceso de Evaluación (GAP)",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Existen guías nacionales e internacionales mencionadas.",
+      "explanation": "Tanto el código del COP como las guías GAP son marcos de referencia éticos citados."
+    },
+    {
+      "q": "¿Qué información debe constar en el apartado de 'Datos de afiliación' según la APA?",
+      "options": [
+        "Escolaridad, ocupación y estado civil",
+        "Quién refiere al sujeto y fecha de informe",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es el bloque de identificación inicial del paciente.",
+      "explanation": "El apartado 1 incluye datos personales, ocupacionales y de derivación."
+    },
+    {
+      "q": "¿Qué se evalúa mediante la observación directa durante el proceso de evaluación?",
+      "options": [
+        "Conductas motoras externas y verbales",
+        "Actitudes como colaboración o intolerancia",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Incluye todo lo observable en la interacción presencial.",
+      "explanation": "El texto menciona explícitamente conductas motoras, verbales y actitudes."
+    },
+    {
+      "q": "¿Qué elementos se deben integrar en la sección de 'Resultados' del informe?",
+      "options": [
+        "Datos derivados de la entrevista clínica",
+        "Puntuaciones de pruebas psicométricas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es el resumen de toda la información recogida.",
+      "explanation": "La integración de resultados refleja tanto la entrevista como los test realizados."
+    },
+    {
+      "q": "¿Cuál es el propósito del informe técnico dirigido a otros profesionales?",
+      "options": [
+        "Comunicación entre expertos del mismo ámbito",
+        "Uso de un marco teórico y lenguaje técnico",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Está diseñado para un interlocutor con formación similar.",
+      "explanation": "Se define como un informe para profesionales con lenguaje técnico no comprensible para legos."
+    },
+    {
+      "q": "¿Qué recomendaciones se suelen incluir al finalizar un informe clínico?",
+      "options": [
+        "Inicio de terapia cognitivo-conductual",
+        "Pautas para el manejo del tiempo y estudio",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Vea el ejemplo del Paciente X al final del texto.",
+      "explanation": "En el ejemplo se recomiendan psicoterapia y técnicas de manejo de tiempo."
+    },
+    {
+      "q": "¿Qué características debe tener el lenguaje empleado en un informe psicológico escrito?",
+      "options": [
+        "Debe ser racional y carecer de artificios",
+        "Debe evitar el uso de términos estigmatizantes",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Busca la neutralidad y el respeto por el paciente.",
+      "explanation": "Se prescribe un lenguaje claro, racional y sin términos negativos o estigmatizantes."
+    },
+    {
+      "q": "¿Qué funciones cumple la entrevista de devolución de resultados?",
+      "options": [
+        "Trasladar aspectos positivos y adaptativos",
+        "Compartir patologías y aspectos disfuncionales",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es el momento de informar equilibradamente al paciente.",
+      "explanation": "La devolución incluye tanto fortalezas como debilidades encontradas."
+    },
+    {
+      "q": "¿Qué subsecciones componen habitualmente el apartado de conclusiones?",
+      "options": [
+        "Resumen breve de la evaluación realizada",
+        "Base fundamentada para las recomendaciones",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es el núcleo que conecta los datos con la acción.",
+      "explanation": "Las conclusiones resumen lo relevante y sustentan las orientaciones futuras."
+    },
+    {
+      "q": "¿En qué contextos es de utilidad fundamental el informe psicológico?",
+      "options": [
+        "Ámbito clínico y educativo institucional",
+        "Ámbito laboral y sistema judicial legal",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "El informe trasciende la consulta privada.",
+      "explanation": "El texto cita aplicaciones en el ámbito clínico, educativo, laboral y judicial."
+    },
+    {
+      "q": "¿Qué variables de observación directa pueden incluirse en los datos biográficos?",
+      "options": [
+        "Orientación espaciotemporal del sujeto",
+        "Nivel percibido de inteligencia general",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son juicios clínicos inmediatos durante el contacto.",
+      "explanation": "Se citan fluidez verbal, orientación y nivel percibido de inteligencia."
+    },
+    {
+      "q": "¿Qué se debe documentar en la valoración de una intervención terapéutica?",
+      "options": [
+        "Metas alcanzadas y variables modificadas",
+        "Cuestiones pendientes u objetivos fallidos",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es un balance final del proceso de cambio.",
+      "explanation": "Se deben incluir resultados, metas, variables y objetivos no alcanzados."
+    },
+    {
+      "q": "¿Qué criterios aseguran la replicabilidad de un informe psicológico?",
+      "options": [
+        "Justificación de técnicas y procedimientos",
+        "Claridad en la exposición de las hipótesis",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Permite que otro profesional entienda el 'cómo' se llegó ahí.",
+      "explanation": "La descripción técnica y la estructura lógica favorecen la replicabilidad."
+    },
+    {
+      "q": "¿Qué aspectos del Paciente X justificaron la recomendación de terapia?",
+      "options": [
+        "Dificultades atencionales por ansiedad",
+        "Bajo rendimiento en el ámbito académico",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Combine el síntoma con la consecuencia funcional.",
+      "explanation": "El diagnóstico de ansiedad y el bajo rendimiento motivaron la psicoterapia."
+    },
+    {
+      "q": "¿Cómo se deben presentar las pruebas psicométricas en el informe?",
+      "options": [
+        "Con una justificación de su utilización",
+        "Con una breve descripción técnica de cada test",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "No basta con dar el nombre de la prueba.",
+      "explanation": "El apartado 5 exige nombrar las técnicas y justificar su uso con descripción técnica."
+    },
+    {
+      "q": "¿Qué implica que un informe sea una herramienta de comunicación?",
+      "options": [
+        "Adaptación al nivel cultural del receptor",
+        "Capacidad para responder dudas y preguntas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Va más allá de la entrega de un papel.",
+      "explanation": "Requiere adecuar el lenguaje y promover una interacción abierta para aclarar dudas."
+    },
+    {
+      "q": "El 'efecto Barnum' en un informe psicológico se evita mediante:",
+      "options": [
+        "El uso de categorías diagnósticas amplias",
+        "La inclusión de datos biográficos genéricos",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se evita siendo específico con el sujeto evaluado.",
+      "explanation": "Se evita basándose en evidencias científicas y descripciones específicas del sujeto, no en generalidades."
+    },
+    {
+      "q": "El informe de devolución se caracteriza principalmente por:",
+      "options": [
+        "Ser exclusivamente un documento escrito legal",
+        "Estar dirigido únicamente a otros psicólogos",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Suele ser oral y dirigido al paciente.",
+      "explanation": "El informe de devolución es preferentemente oral y se entrega al paciente, no solo a profesionales."
+    },
+    {
+      "q": "En el informe personal dirigido al paciente, el lenguaje debe ser:",
+      "options": [
+        "Altamente técnico y críptico para el sujeto",
+        "Basado exclusivamente en códigos numéricos",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Busca que el paciente entienda su propio proceso.",
+      "explanation": "Debe ser redactado de forma correcta pero sencilla para que el sujeto pueda entenderlo."
+    },
+    {
+      "q": "La contrastabilidad del informe psicológico se refiere a:",
+      "options": [
+        "La imposibilidad de discutir los resultados",
+        "La ocultación de las técnicas para ser original",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es la base de la transparencia científica.",
+      "explanation": "Se refiere a que los datos puedan ser verificados o contrastados por otros profesionales."
+    },
+    {
+      "q": "El apartado 'Referencia y objetivos de la demanda' debe omitir:",
+      "options": [
+        "El motivo de consulta expresado por el sujeto",
+        "La fuente de información de la que se parte",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Debe ser un apartado muy inclusivo sobre el porqué de la consulta.",
+      "explanation": "Debe recoger tanto el motivo presentado por el sujeto como la información exhaustiva necesaria."
+    },
+    {
+      "q": "Según el texto, el informe de certificado se caracteriza por:",
+      "options": [
+        "Su extensión detallada de más de veinte páginas",
+        "Ser un proceso de devolución oral obligatorio",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es un documento breve con un fin muy concreto.",
+      "explanation": "Es breve y conciso, con un uso único claro y predeterminado como testimonio documental."
+    },
+    {
+      "q": "La 'Integración de resultados' en un informe técnico permite:",
+      "options": [
+        "Evitar el diagnóstico para no estigmatizar",
+        "Ignorar las pruebas que contradigan la hipótesis",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Busca dar sentido de conjunto a toda la evaluación.",
+      "explanation": "Permite reflejar todos los resultados de forma coherente y base para el diagnóstico."
+    },
+    {
+      "q": "Un estándar formal del informe como documento científico es:",
+      "options": [
+        "La ausencia total de datos de identificación",
+        "La redacción en primera persona del singular",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Piense en la firma y el estilo de redacción.",
+      "explanation": "Requiere identificación clara del profesional y estilo impersonal, no ausencia de datos."
+    },
+    {
+      "q": "El diagnóstico diferencial del Paciente X concluyó que presentaba:",
+      "options": [
+        "TDAH de tipo combinado e hiperactividad",
+        "Un trastorno psicótico de inicio en la adultez",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "La conclusión descartó el trastorno por el que venía derivado.",
+      "explanation": "Concluyó que no presentaba TDAH, sino dificultades derivadas de la elevada ansiedad."
+    },
+    {
+      "q": "El estilo de redacción recomendado para un informe escrito es:",
+      "options": [
+        "Subjetivo y basado en impresiones personales",
+        "Lleno de redundancias para asegurar la lectura",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se pide brevedad, claridad y objetividad.",
+      "explanation": "Debe ser claro, racional, con oraciones breves y sin redundancias ni palabrería."
+    },
+    {
+      "q": "En el formato propuesto por la APA, el apartado 7 corresponde a:",
+      "options": [
+        "Los datos de afiliación y filiación del sujeto",
+        "La conducta manifiesta durante toda la sesión",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es el apartado de historia médica y mental.",
+      "explanation": "El apartado 7 corresponde a Antecedentes personales médicos y psicopatológicos."
+    },
+    {
+      "q": "La facilitación de la toma de decisiones es un parámetro que:",
+      "options": [
+        "Solo se aplica en los informes de tipo judicial",
+        "Impide al paciente participar en su tratamiento",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es un objetivo universal del informe psicológico.",
+      "explanation": "Es un parámetro general que permite a cualquier lector tomar decisiones informadas."
+    },
+    {
+      "q": "El apartado de 'Conducta durante la evaluación' debe centrarse en:",
+      "options": [
+        "La vida amorosa y relaciones del paciente",
+        "El historial de enfermedades físicas de la infancia",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Observación de lo que ocurre en el 'aquí y ahora' del test.",
+      "explanation": "Se centra en conductas motoras, verbales y actitudes mostradas durante la evaluación."
+    },
+    {
+      "q": "La redacción asertiva en un informe psicológico implica:",
+      "options": [
+        "Ser agresivo para imponer el diagnóstico clínico",
+        "Usar exclusivamente términos populares y vulgares",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es un equilibrio entre respeto y firmeza técnica.",
+      "explanation": "Implica un lenguaje respetuoso y técnico, accesible pero profesional y firme."
+    },
+    {
+      "q": "Los objetivos de la evaluación pueden incluir, según el texto:",
+      "options": [
+        "La selección de personal sin entrevista previa",
+        "La curación mágica e inmediata del trastorno",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se centran en el para qué de la evaluación.",
+      "explanation": "Incluyen diagnóstico, diagnóstico diferencial o evaluación para planear intervención."
+    },
+    {
+      "q": "La valoración final de una intervención terapéutica se realiza:",
+      "options": [
+        "Antes de haber empezado a conocer al paciente",
+        "Solo si el paciente ha abandonado el tratamiento",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es un cierre tras el proceso de cambio.",
+      "explanation": "Se incluye si se ha llevado a cabo una intervención para valorar metas y resultados."
+    },
+    {
+      "q": "La fluidez verbal y la orientación espaciotemporal se registran en:",
+      "options": [
+        "El apartado de recomendaciones y sugerencias",
+        "La sección de antecedentes médicos familiares",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Son observaciones biográficas de la conducta actual.",
+      "explanation": "Se registran en el apartado 4: Datos biográficos relevantes y observaciones generales."
+    },
+    {
+      "q": "Un informe de certificado difiere de uno técnico en que:",
+      "options": [
+        "El de certificado es mucho más largo y denso",
+        "El técnico es siempre oral y nunca se escribe",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Piense en la brevedad y el propósito del certificado.",
+      "explanation": "El de certificado es breve y con uso predeterminado, el técnico es para profesionales con marco similar."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "Explique por qué el informe psicológico se considera un documento de carácter científico y qué requisitos formales debe cumplir para garantizar esta condición.",
+      "model": "El informe es científico porque debe ser un documento contrastable y replicable. Para garantizar esta condición, debe cumplir estándares formales como la identificación clara del profesional (firma y número de colegiado), rigor metodológico en el análisis, y una estructura lógica que incluya datos personales, demanda, objetivos, hipótesis, resultados y conclusiones fundamentadas.",
+      "keywords": [
+        "carácter científico",
+        "replicabilidad",
+        "contrastabilidad",
+        "rigor metodológico"
+      ]
+    },
+    {
+      "q": "Analice la importancia de la 'replicabilidad' y 'contrastabilidad' en el contexto de la elaboración de un informe psicológico.",
+      "model": "La replicabilidad y contrastabilidad son fundamentales para garantizar la validez y aplicabilidad del informe. Permiten que otro profesional pueda seguir los pasos del proceso evaluativo, verificar cómo se llegó a ciertas conclusiones y contrastar los resultados obtenidos con las técnicas utilizadas, asegurando que las decisiones no sean arbitrarias sino basadas en el método científico.",
+      "keywords": [
+        "replicabilidad",
+        "contrastabilidad",
+        "validez",
+        "método científico"
+      ]
+    },
+    {
+      "q": "Describa el parámetro de 'equilibrio entre datos objetivos y abstracción' según Fernández-Ballesteros.",
+      "model": "Este parámetro exige que el informe proporcione la cantidad adecuada de información: debe ser comprensible y suficiente para alcanzar los objetivos planteados, evitando tanto la escasez de datos que impida la comprensión como la sobrecarga de detalles irrelevantes que dificulten la abstracción de las conclusiones principales.",
+      "keywords": [
+        "equilibrio",
+        "datos objetivos",
+        "abstracción",
+        "información relevante"
+      ]
+    },
+    {
+      "q": "Explique en qué consiste el 'efecto Barnum' y cómo debe actuar el psicólogo para evitarlo en sus informes.",
+      "model": "El efecto Barnum se refiere al uso de descripciones generales, vagas o ambiguas que podrían aplicarse a casi cualquier persona (como los horóscopos). Para evitarlo, el psicólogo debe basar su informe en evidencias científicas específicas y descripciones precisas que se correspondan exclusivamente con las características únicas del sujeto evaluado.",
+      "keywords": [
+        "efecto Barnum",
+        "especificidad",
+        "evidencia científica",
+        "descripciones vagas"
+      ]
+    },
+    {
+      "q": "Relacione la utilidad del informe psicológico con la facilitación de la toma de decisiones en diferentes ámbitos.",
+      "model": "El informe no es un fin en sí mismo, sino una herramienta para que el destinatario (paciente, institución, juez, etc.) tome decisiones informadas. En el ámbito clínico orienta la intervención; en el educativo, los apoyos; en el laboral, la idoneidad; y en el judicial, aporta pruebas periciales para dictámenes legales.",
+      "keywords": [
+        "toma de decisiones",
+        "herramienta",
+        "ámbito clínico",
+        "información útil"
+      ]
+    },
+    {
+      "q": "Compare las características y finalidades de la 'entrevista de devolución' frente al 'informe escrito'.",
+      "model": "La entrevista de devolución suele ser oral y se centra en trasladar al paciente los aspectos adaptativos, positivos y patológicos de forma adaptada a su nivel de tolerancia. El informe escrito es un documento formal que recoge técnica, resultados psicométricos y conclusiones con un estilo impersonal y técnico, destinado a la constancia documental o a la comunicación con otros profesionales.",
+      "keywords": [
+        "entrevista de devolución",
+        "informe escrito",
+        "comunicación oral",
+        "constancia documental"
+      ]
+    },
+    {
+      "q": "Defina y diferencie los tres tipos de informes según su función: técnico, personal y de certificado.",
+      "model": "1) Técnico: dirigido a profesionales con marco teórico similar, utiliza lenguaje técnico y no suele haber comunicación con el evaluado. 2) Personal: redactado de forma sencilla para ser entendido por el sujeto, común en devoluciones. 3) De certificado: breve, conciso, de uso único predeterminado y carácter testimonial ante demandas específicas.",
+      "keywords": [
+        "informe técnico",
+        "informe personal",
+        "certificado",
+        "destinatario"
+      ]
+    },
+    {
+      "q": "Argumente por qué es necesario evitar tecnicismos y jerga en un informe dirigido al paciente.",
+      "model": "Para garantizar la comprensión y la utilidad del informe, el lenguaje debe ser claro y accesible. El uso de jerga o redundancia dificulta que el paciente integre la información, lo que puede afectar negativamente su confianza en el proceso y su capacidad para participar activamente en la intervención terapéutica posterior.",
+      "keywords": [
+        "tecnicismos",
+        "jerga",
+        "comprensión",
+        "estilo de redacción"
+      ]
+    },
+    {
+      "q": "Según el texto, ¿qué recomendaciones se dan para la presentación de resultados numéricos y psicométricos en el informe?",
+      "model": "Se recomienda presentar los resultados numéricos de las pruebas psicométricas mediante tablas, figuras o esquemas. Esto ayuda a ordenar las ideas principales, facilitar el análisis funcional y evitar ambigüedades, términos negativos o estigmatizantes, haciendo la información más visual y comprensible.",
+      "keywords": [
+        "resultados numéricos",
+        "tablas",
+        "esquemas",
+        "psicometría"
+      ]
+    },
+    {
+      "q": "Sintetice el contenido mínimo que debe estar presente en cualquier informe psicológico independientemente de su formato.",
+      "model": "El contenido mínimo incluye: identificación del emisor (psicólogo); identificación del solicitante y destinatario; fuentes de información, técnicas y procedimientos utilizados; resumen e integración de resultados; y un apartado de conclusiones relevantes con recomendaciones apropiadas al caso.",
+      "keywords": [
+        "contenido mínimo",
+        "técnicas",
+        "integración de resultados",
+        "conclusiones"
+      ]
+    },
+    {
+      "q": "Explique la importancia de recoger el 'motivo de consulta' tal como el sujeto lo presenta, incluso si no coincide con la problemática real detectada.",
+      "model": "Es vital recoger la demanda del sujeto en sus propios términos porque, aunque pueda encubrir el motivo real o no coincida con el diagnóstico técnico, ofrece información valiosa sobre la percepción subjetiva del paciente, sus expectativas y sus posibles resistencias, lo cual es fundamental para el proceso de evaluación.",
+      "keywords": [
+        "motivo de consulta",
+        "demanda del sujeto",
+        "percepción subjetiva",
+        "información valiosa"
+      ]
+    },
+    {
+      "q": "Describa qué elementos deben observarse y registrarse en el apartado de 'Conducta durante la evaluación'.",
+      "model": "Se deben constatar conductas motoras externas, aspectos verbales (fluidez, tono), actitudes (colaboración, intolerancia, inquietud), orientación espaciotemporal y el nivel percibido de inteligencia. Estos datos derivados de la observación directa complementan los resultados de los test.",
+      "keywords": [
+        "conducta manifiesta",
+        "observación directa",
+        "actitudes",
+        "fluidez verbal"
+      ]
+    },
+    {
+      "q": "Analice el propósito del apartado 'Integración de resultados' en el informe psicológico.",
+      "model": "Su propósito es unificar los datos derivados de la entrevista con los resultados de las pruebas psicométricas. Debe ofrecer una visión global del sujeto, traduciendo las puntuaciones de los test a una redacción técnica pero comprensible que explique el funcionamiento psicológico del evaluado de manera coherente.",
+      "keywords": [
+        "integración",
+        "síntesis",
+        "pruebas psicométricas",
+        "coherencia"
+      ]
+    },
+    {
+      "q": "Diferencie entre 'Conclusiones y recomendaciones' y 'Orientación u objetivos de cambio' dentro de la estructura del informe.",
+      "model": "Las 'Conclusiones y recomendaciones' resumen lo más relevante de la evaluación y sugieren pasos generales. Los 'Objetivos de cambio' son orientaciones específicas y positivas para la intervención, siguiendo un orden que facilite al paciente o profesional entender qué aspectos concretos deben trabajarse.",
+      "keywords": [
+        "conclusiones",
+        "recomendaciones",
+        "objetivos de cambio",
+        "intervención"
+      ]
+    },
+    {
+      "q": "Explique qué información debe incluirse en la 'Valoración de la intervención terapéutica' si esta ya se ha realizado.",
+      "model": "Debe incluir los resultados obtenidos de la terapia, metas alcanzadas, variables modificadas, conductas trabajadas, objetivos no alcanzados o pendientes, y una valoración final del profesional sobre el estado actual del paciente tras el tratamiento.",
+      "keywords": [
+        "valoración terapéutica",
+        "metas alcanzadas",
+        "variables",
+        "objetivos pendientes"
+      ]
+    },
+    {
+      "q": "Utilizando el ejemplo del 'Paciente X', explique cómo se justifica la ausencia de TDAH a pesar del motivo de consulta inicial.",
+      "model": "Aunque el motivo era 'sospecha de déficit de atención', la integración de resultados mostró que las dificultades atencionales (baja velocidad de procesamiento y fluctuación en d2) estaban asociadas a un nivel moderado de ansiedad (BAI) y estrés académico, lo que permitió realizar un diagnóstico diferencial descartando el TDAH.",
+      "keywords": [
+        "diagnóstico diferencial",
+        "TDAH",
+        "ansiedad",
+        "Paciente X"
+      ]
+    },
+    {
+      "q": "Analice el papel de la ética y la deontología en la redacción del informe psicológico según el texto.",
+      "model": "La redacción debe ajustarse a normativas como el Código Deontológico del Psicólogo (COP) y estándares de la APA. Esto implica garantizar la confidencialidad, la protección de datos, la responsabilidad profesional y el uso de un lenguaje respetuoso que evite términos estigmatizantes.",
+      "keywords": [
+        "ética",
+        "deontología",
+        "confidencialidad",
+        "Código Deontológico"
+      ]
+    },
+    {
+      "q": "Explique la importancia de la 'Clarificación y ejemplificación' como parámetro de calidad del informe.",
+      "model": "Este parámetro sugiere que, para que los datos sean interpretados con precisión, el informe debe incluir ejemplos de conducta o explicaciones adicionales. Esto ayuda a que el destinatario comprenda mejor conceptos abstractos o resultados de test mediante situaciones concretas del sujeto.",
+      "keywords": [
+        "clarificación",
+        "ejemplificación",
+        "interpretación",
+        "precisión"
+      ]
+    },
+    {
+      "q": "Describa la estructura de los 'Datos de afiliación e identificación' y por qué son necesarios.",
+      "model": "Incluyen nombre, sexo, edad, escolaridad, ocupación, estado civil y datos de contacto, además de quién refiere y fecha de evaluación. Son necesarios para la identificación inequívoca del sujeto, contextualizar su etapa vital y cumplir con los requisitos legales de un documento sanitario.",
+      "keywords": [
+        "afiliación",
+        "identificación",
+        "contextualización",
+        "datos personales"
+      ]
+    },
+    {
+      "q": "Argumente por qué el informe debe ser 'útil y significativo' para el destinatario.",
+      "model": "El contenido debe estar alineado con las necesidades de quien demanda el informe (interés y relevancia). Si el informe no aporta información que ayude a resolver la demanda o a orientar el caso, pierde su valor práctico como herramienta de evaluación y profesionalismo.",
+      "keywords": [
+        "utilidad",
+        "significancia",
+        "relevancia",
+        "demanda"
+      ]
+    },
+    {
+      "q": "Explique cómo se debe adaptar la profundidad de la información en una 'entrevista de devolución'.",
+      "model": "La profundidad debe ajustarse al nivel de tolerancia y capacidad de comprensión de quien recibe la información. El profesional debe calibrar cuánta información puede integrar el paciente en ese momento para asegurar que sea una experiencia terapéutica efectiva y no abrumadora.",
+      "keywords": [
+        "profundidad",
+        "tolerancia",
+        "capacidad de comprensión",
+        "devolución"
+      ]
+    },
+    {
+      "q": "Relacione el uso de 'técnicas y procedimientos de evaluación' con la justificación de su elección en el informe.",
+      "model": "En el informe no solo se listan las técnicas, sino que se debe incluir una breve descripción técnica y la justificación de por qué se eligieron. Esto demuestra el rigor profesional y asegura que la metodología es coherente con los objetivos de la demanda.",
+      "keywords": [
+        "técnicas",
+        "procedimientos",
+        "justificación",
+        "metodología"
+      ]
+    },
+    {
+      "q": "Analice cómo la 'orientación espaciotemporal' y la 'fluidez verbal' se integran en los datos biográficos relevantes.",
+      "model": "Estos elementos se obtienen mediante la observación directa durante la entrevista inicial. Se integran para dar una imagen del estado mental general del sujeto y su capacidad de comunicación, lo cual es un indicador clínico previo a la aplicación de pruebas formales.",
+      "keywords": [
+        "orientación",
+        "fluidez verbal",
+        "observación directa",
+        "estado mental"
+      ]
+    },
+    {
+      "q": "Explique el concepto de 'estilo impersonal' en la redacción del informe escrito y su finalidad.",
+      "model": "El estilo impersonal busca dotar al informe de objetividad y distanciamiento profesional. Su finalidad es evitar sesgos personales del evaluador y centrar la atención en los datos y evidencias halladas, reforzando el carácter técnico y científico del documento.",
+      "keywords": [
+        "estilo impersonal",
+        "objetividad",
+        "carácter técnico",
+        "evidencia"
+      ]
+    },
+    {
+      "q": "Describa el papel del profesional ante las dudas del destinatario tras la entrega del informe.",
+      "model": "El profesional debe estar preparado para aclarar dudas y responder preguntas, promoviendo una interacción abierta. Esto facilita que el destinatario integre la información, lo cual mejora la calidad de la intervención y fomenta la participación activa del sujeto en su proceso.",
+      "keywords": [
+        "aclarar dudas",
+        "interacción abierta",
+        "integración",
+        "participación activa"
+      ]
+    },
+    {
+      "q": "Según el modelo APA (2001), ¿cuál es la importancia de la 'fuente de información' en los datos de identificación?",
+      "model": "La fuente de información específica de dónde provienen los datos (entrevista al sujeto, informes médicos previos, familiares, etc.). Es crucial para valorar la fiabilidad de los datos recogidos y entender el contexto desde el cual se ha construido la evaluación.",
+      "keywords": [
+        "fuente de información",
+        "APA",
+        "fiabilidad",
+        "contexto"
+      ]
+    },
+    {
+      "q": "Analice la importancia de la 'secuencia lógica' en la estructura del informe psicológico.",
+      "model": "Una secuencia lógica (desde la demanda hasta las recomendaciones) facilita la comprensión del hilo conductor del proceso evaluativo. Permite que cualquier lector entienda cómo de unos objetivos y unas técnicas se derivan unos resultados que fundamentan las conclusiones finales.",
+      "keywords": [
+        "secuencia lógica",
+        "hilo conductor",
+        "comprensión",
+        "estructura"
+      ]
+    },
+    {
+      "q": "Explique por qué se deben evitar términos 'estigmatizantes' o 'negativos' en la redacción.",
+      "model": "El uso de lenguaje estigmatizante vulnera principios éticos y puede causar daño psicológico al sujeto. La redacción debe ser respetuosa y asertiva, centrada en describir funcionamientos y necesidades en lugar de etiquetar de forma peyorativa.",
+      "keywords": [
+        "estigmatización",
+        "lenguaje respetuoso",
+        "ética",
+        "etiquetas"
+      ]
+    },
+    {
+      "q": "Relacione la 'flexibilidad en la estructura' con la necesidad de incluir 'secciones detalladas'.",
+      "model": "Aunque se permite flexibilidad para adaptar el informe al caso, las secciones detalladas (objetivos, técnicas, resultados integrados) son innegociables para garantizar la transparencia del proceso y que las recomendaciones estén debidamente fundamentadas y sean aplicables.",
+      "keywords": [
+        "flexibilidad",
+        "transparencia",
+        "secciones detalladas",
+        "fundamentación"
+      ]
+    },
+    {
+      "q": "Sintetice el objetivo principal de la evaluación en el caso práctico del 'Paciente X'.",
+      "model": "El objetivo principal fue realizar un diagnóstico diferencial para determinar si las dificultades atencionales y el bajo rendimiento académico se debían a un TDAH o a otros factores como la ansiedad o el estrés, con el fin de elaborar recomendaciones específicas de mejora.",
+      "keywords": [
+        "diagnóstico diferencial",
+        "rendimiento académico",
+        "ansiedad",
+        "objetivo de evaluación"
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Definición y Objetivos",
+      "q": "¿Qué representa el informe psicológico dentro del proceso de evaluación según el texto?",
+      "a": "Representa el producto final del proceso, cuyo objetivo es integrar, analizar y sintetizar los datos obtenidos mediante diversas técnicas e instrumentos."
+    },
+    {
+      "cat": "Definición y Objetivos",
+      "q": "¿Por qué el informe psicológico no debe considerarse simplemente un resumen de resultados?",
+      "a": "Porque es un documento que debe justificar las decisiones tomadas durante la evaluación y fundamentar recomendaciones o diagnósticos."
+    },
+    {
+      "cat": "Comprensibilidad",
+      "q": "¿Qué requisito de redacción es fundamental para que el destinatario tome decisiones informadas?",
+      "a": "El informe debe ser redactado de manera comprensible, ofreciendo una imagen clara, precisa y profesional del sujeto o situación evaluada."
+    },
+    {
+      "cat": "Estándares Formales",
+      "q": "¿Qué datos de identificación del profesional deben constar obligatoriamente en el informe para cumplir los estándares formales?",
+      "a": "La identificación clara del profesional que emite el informe, incluyendo su firma y su número de colegiado."
+    },
+    {
+      "cat": "Carácter Científico",
+      "q": "¿Qué dos principios fundamentales garantizan la validez y aplicabilidad de la información contenida en el informe?",
+      "a": "La replicabilidad y la contrastabilidad de la información."
+    },
+    {
+      "cat": "Estructura Mínima",
+      "q": "¿Cuáles son los componentes lógicos mínimos que debe incluir la organización de un informe psicológico?",
+      "a": "Datos personales, demanda, objetivos, hipótesis, resultados y conclusiones."
+    },
+    {
+      "cat": "Parámetros Generales",
+      "q": "¿En qué consiste el equilibrio entre datos objetivos y abstracción según Fernández-Ballesteros?",
+      "a": "En proporcionar información suficiente y comprensible para el objetivo planteado, evitando detalles irrelevantes que sobrecarguen el documento."
+    },
+    {
+      "cat": "Redacción",
+      "q": "¿Cómo debe ser el lenguaje utilizado en la redacción del informe para asegurar su asertividad?",
+      "a": "Debe ser respetuoso y técnico, pero a la vez accesible y adecuado al nivel de comprensión del destinatario."
+    },
+    {
+      "cat": "Interés y Relevancia",
+      "q": "¿Qué significa que el contenido del informe deba tener interés y relevancia?",
+      "a": "Que debe estar alineado con las necesidades específicas del sujeto o institución que realizó la demanda, siendo útil y significativo."
+    },
+    {
+      "cat": "Clarificación",
+      "q": "¿Qué recurso se recomienda utilizar para ayudar a interpretar los datos de manera más precisa si fuera necesario?",
+      "a": "La inclusión de ejemplos o explicaciones detalladas que clarifiquen la interpretación de la información."
+    },
+    {
+      "cat": "Toma de Decisiones",
+      "q": "¿En qué ámbitos debe el informe facilitar la toma de decisiones informadas?",
+      "a": "En el ámbito clínico, educativo, laboral o judicial."
+    },
+    {
+      "cat": "Ética y Legalidad",
+      "q": "¿Qué aspectos normativos debe asegurar el informe respecto al manejo de la información?",
+      "a": "El cumplimiento de los estándares de confidencialidad, protección de datos y responsabilidad profesional."
+    },
+    {
+      "cat": "Efecto Barnum",
+      "q": "¿A qué se refiere el 'efecto Barnum' en el contexto de la elaboración de informes?",
+      "a": "Al uso de descripciones generales o vagas que podrían aplicarse a cualquier persona (como los horóscopos) en lugar de basarse en evidencias específicas del sujeto."
+    },
+    {
+      "cat": "Efecto Barnum",
+      "q": "¿Cuál es la principal estrategia para evitar el efecto Barnum en un diagnóstico?",
+      "a": "Basar el informe en evidencias científicas y descripciones específicas que correspondan exclusivamente al sujeto evaluado."
+    },
+    {
+      "cat": "Marco Deontológico",
+      "q": "¿Qué documentos recogen las guías éticas que debe seguir un psicólogo en España?",
+      "a": "El Código Deontológico del Psicólogo (COP) y las Guías para el Proceso de Evaluación Psicológica (GAP)."
+    },
+    {
+      "cat": "Referencias de Redacción",
+      "q": "¿Qué manual se menciona como marco de referencia global para garantizar el rigor y la utilidad en la redacción de informes?",
+      "a": "El Manual de publicaciones de la APA."
+    },
+    {
+      "cat": "Tipos de Informe",
+      "q": "¿Cuál es la principal diferencia formal entre la entrevista de devolución y el informe escrito estándar?",
+      "a": "La entrevista de devolución suele ser oral y se centra en el paciente, mientras que el escrito recoge todos los aspectos formales y técnicos de manera permanente."
+    },
+    {
+      "cat": "Entrevista de Devolución",
+      "q": "¿Qué tipo de aspectos encontrados en la evaluación se trasladan prioritariamente en la entrevista de devolución?",
+      "a": "Se trasladan tanto los aspectos adaptativos y positivos como los menos adaptativos y las patologías identificadas."
+    },
+    {
+      "cat": "Entrevista de Devolución",
+      "q": "¿Cómo debe ajustarse la comunicación durante la devolución de resultados al paciente?",
+      "a": "Debe adaptarse al nivel de tolerancia y a la capacidad de comprensión de quien recibe la información."
+    },
+    {
+      "cat": "Informe Escrito",
+      "q": "¿Qué estilo de redacción se recomienda para el informe escrito?",
+      "a": "Un estilo impersonal, evitando tecnicismos innecesarios, jerga, redundancias o exceso de información."
+    },
+    {
+      "cat": "Presentación de Resultados",
+      "q": "¿Cuál es la recomendación del texto para presentar los resultados numéricos de las pruebas psicométricas?",
+      "a": "Se recomienda el uso de tablas, figuras o esquemas para ordenar las ideas y facilitar la comprensión."
+    },
+    {
+      "cat": "Clasificación por Función",
+      "q": "¿Qué caracteriza al 'Informe técnico dirigido a otros profesionales'?",
+      "a": "Utiliza un marco teórico similar al del receptor, emplea terminología técnica y no suele haber comunicación directa con la persona evaluada."
+    },
+    {
+      "cat": "Clasificación por Función",
+      "q": "¿En qué se diferencia el 'Informe personal' del técnico?",
+      "a": "Está redactado de forma correcta pero sencilla para ser entendido por el propio sujeto evaluado."
+    },
+    {
+      "cat": "Clasificación por Función",
+      "q": "¿Qué es un 'Informe de certificado' y cuál es su característica principal?",
+      "a": "Es un documento breve y conciso con un uso único y predeterminado que sirve como testimonio documental."
+    },
+    {
+      "cat": "Adaptación al Destinatario",
+      "q": "¿Por qué es crucial ajustar la profundidad de la información en la entrevista de devolución?",
+      "a": "Para asegurar que el destinatario integre y aproveche la información, favoreciendo una experiencia terapéutica efectiva."
+    },
+    {
+      "cat": "Contenido Mínimo",
+      "q": "¿Qué elementos básicos de identificación deben aparecer en cualquier formato de informe según el consenso de autores?",
+      "a": "Nombre del emisor, nombre del solicitante y nombre de la persona a la que se presentará el informe."
+    },
+    {
+      "cat": "Contenido Mínimo",
+      "q": "¿Qué información técnica mínima debe incluirse sobre el proceso evaluativo?",
+      "a": "Las fuentes de información, las técnicas aplicadas y los procedimientos utilizados."
+    },
+    {
+      "cat": "Modelo APA",
+      "q": "¿Qué importancia tiene el modelo propuesto por la APA (2001) en la actualidad?",
+      "a": "Ha sido admitido por todas las revistas científicas de psicología como estándar para integrar los apartados de un informe."
+    },
+    {
+      "cat": "Datos de Afiliación",
+      "q": "¿Qué datos específicos se agrupan en la sección de 'Datos de afiliación e identificación'?",
+      "a": "Nombre, sexo, edad, escolaridad, ocupación, estado civil, contacto, quién refiere y fechas de evaluación e informe."
+    },
+    {
+      "cat": "Motivo de Consulta",
+      "q": "¿Cómo debe recogerse la demanda del sujeto si el profesional sospecha que no coincide con el diagnóstico real?",
+      "a": "Debe recogerse tal como el sujeto la presenta, explorándola de forma exhaustiva, ya que aporta información valiosa para la evaluación."
+    },
+    {
+      "cat": "Objetivo de la Evaluación",
+      "q": "¿Qué ejemplos de objetivos de evaluación menciona el texto?",
+      "a": "Diagnóstico, diagnóstico diferencial o evaluación para el planteamiento de una intervención."
+    },
+    {
+      "cat": "Datos Biográficos",
+      "q": "¿Qué tipo de observaciones directas del profesional se incluyen en los datos biográficos relevantes?",
+      "a": "Fluidez verbal, orientación espaciotemporal y nivel percibido de inteligencia."
+    },
+    {
+      "cat": "Técnicas y Procedimientos",
+      "q": "¿Qué debe acompañar a la lista de técnicas utilizadas en el informe?",
+      "a": "Una justificación de su utilización y una breve descripción técnica de cada una."
+    },
+    {
+      "cat": "Conducta durante la Evaluación",
+      "q": "¿Qué aspectos de la conducta manifiesta se deben observar y registrar durante las sesiones?",
+      "a": "Conductas motoras externas, verbales y actitudes como la colaboración o la intolerancia."
+    },
+    {
+      "cat": "Antecedentes",
+      "q": "¿Qué categorías de antecedentes se deben hacer constar si existen?",
+      "a": "Antecedentes personales médicos y psicopatológicos."
+    },
+    {
+      "cat": "Integración de Resultados",
+      "q": "¿Cómo varía la redacción de la 'Integración de resultados' según el destinatario?",
+      "a": "Es técnica si va a otro profesional del mismo ámbito, pero debe ser comprensible y correcta si el usuario final es el sujeto evaluado."
+    },
+    {
+      "cat": "Conclusiones",
+      "q": "¿Qué función cumplen las conclusiones dentro de la estructura global del informe?",
+      "a": "Resumen lo más relevante de la evaluación y constituyen la base para las recomendaciones oportunas."
+    },
+    {
+      "cat": "Orientación de Cambio",
+      "q": "¿Cómo deben organizarse las orientaciones u objetivos de cambio en el documento?",
+      "a": "Siguiendo un orden adecuado que facilite la comprensión tanto al paciente como a otros profesionales."
+    },
+    {
+      "cat": "Intervención Terapéutica",
+      "q": "¿Qué información se añade en la sección de 'Valoración de intervención terapéutica' si esta ya se ha realizado?",
+      "a": "Metas alcanzadas, variables modificadas, conductas trabajadas y objetivos pendientes o no alcanzados."
+    },
+    {
+      "cat": "Caso Clínico: Motivo",
+      "q": "¿Cuál fue el motivo inicial de la evaluación del 'Paciente X' en el ejemplo?",
+      "a": "Dificultades atencionales y bajo rendimiento académico."
+    },
+    {
+      "cat": "Caso Clínico: Perfil",
+      "q": "¿Qué nivel de escolaridad y edad presenta el Paciente X en el ejemplo?",
+      "a": "25 años y estudiante de Grado en Ingeniería Informática."
+    },
+    {
+      "cat": "Caso Clínico: Derivación",
+      "q": "¿Quién refirió al Paciente X y bajo qué sospecha?",
+      "a": "Su médico general (Dr. X), por sospechas de déficit de atención."
+    },
+    {
+      "cat": "Caso Clínico: Demanda",
+      "q": "¿Qué síntomas subjetivos refiere el Paciente X respecto a su estudio?",
+      "a": "Distracción fácil, incapacidad para concentrarse en clase o casa, y ansiedad relacionada con su desempeño."
+    },
+    {
+      "cat": "Caso Clínico: Diagnóstico Diferencial",
+      "q": "¿Entre qué dos posibles causas debía diferenciar la evaluación del Paciente X?",
+      "a": "Entre un Trastorno por Déficit de Atención con Hiperactividad (TDAH) o factores como ansiedad y estrés académico."
+    },
+    {
+      "cat": "Caso Clínico: Historia",
+      "q": "¿Cuándo comenzaron las dificultades académicas del Paciente X según sus datos biográficos?",
+      "a": "Hace aproximadamente dos años, coincidiendo con el aumento de exigencia en sus estudios."
+    },
+    {
+      "cat": "Caso Clínico: Instrumentos",
+      "q": "¿Qué técnica se utilizó específicamente para evaluar la capacidad de concentración en el ejemplo?",
+      "a": "El Test de atención sostenida (d2)."
+    },
+    {
+      "cat": "Caso Clínico: Instrumentos",
+      "q": "¿Para qué se aplicó el WAIS-IV en el caso del Paciente X?",
+      "a": "Para medir sus habilidades cognitivas generales."
+    },
+    {
+      "cat": "Caso Clínico: Instrumentos",
+      "q": "¿Qué instrumento se usó para explorar los síntomas de ansiedad del paciente?",
+      "a": "El Inventario de ansiedad de Beck (BAI)."
+    },
+    {
+      "cat": "Caso Clínico: Observación",
+      "q": "¿Qué actitud mostró el Paciente X durante la sesión de evaluación?",
+      "a": "Se mostró colaborador y motivado, aunque con inquietud al hablar de sus problemas académicos."
+    },
+    {
+      "cat": "Caso Clínico: Antecedentes",
+      "q": "¿Presentaba el Paciente X antecedentes psiquiátricos o de consumo de sustancias?",
+      "a": "No, el paciente niega antecedentes médicos significativos, psiquiátricos o consumo de sustancias."
+    },
+    {
+      "cat": "Caso Clínico: Resultados d2",
+      "q": "¿Cuál fue el resultado específico del Paciente X en la prueba d2?",
+      "a": "Mostró un rendimiento por debajo del promedio en la escala de concentración."
+    },
+    {
+      "cat": "Caso Clínico: Resultados WAIS-IV",
+      "q": "¿En qué escala del WAIS-IV obtuvo el paciente una baja puntuación?",
+      "a": "En la escala de velocidad de procesamiento."
+    },
+    {
+      "cat": "Caso Clínico: Resultados BAI",
+      "q": "¿Qué nivel de ansiedad se identificó mediante el Inventario de Beck en el ejemplo?",
+      "a": "Un nivel moderado de ansiedad, relacionado con la percepción de fracaso académico."
+    },
+    {
+      "cat": "Caso Clínico: Conclusión Final",
+      "q": "¿Cuál fue el diagnóstico final para el Paciente X tras integrar los resultados?",
+      "a": "Se determinó que no presenta TDAH, sino dificultades atencionales derivadas de una elevada ansiedad académica."
+    },
+    {
+      "cat": "Caso Clínico: Recomendaciones",
+      "q": "¿Cuál es la primera recomendación de tratamiento para el Paciente X?",
+      "a": "Iniciar psicoterapia cognitivo-conductual centrada en la ansiedad y estrategias de afrontamiento."
+    },
+    {
+      "cat": "Caso Clínico: Recomendaciones",
+      "q": "¿Qué técnica específica se sugirió para mejorar la regulación emocional en momentos de estrés?",
+      "a": "La introducción gradual de técnicas de mindfulness."
+    },
+    {
+      "cat": "Caso Clínico: Seguimiento",
+      "q": "¿En qué plazo se recomendó realizar una evaluación de seguimiento para el Paciente X?",
+      "a": "En un periodo de tres meses."
+    },
+    {
+      "cat": "Importancia de la Estructura",
+      "q": "¿Por qué es importante que el informe siga una secuencia lógica y completa?",
+      "a": "Para facilitar su comprensión tanto al destinatario directo como a otros profesionales que lo consulten en el futuro."
+    },
+    {
+      "cat": "Finalidad del Informe",
+      "q": "¿Qué refuerza la eficacia del informe como herramienta clave?",
+      "a": "Que las recomendaciones y objetivos de intervención estén fundamentados en objetivos y técnicas detalladas."
+    },
+    {
+      "cat": "Finalidad del Informe",
+      "q": "¿Qué dos aspectos mejora la transparencia del proceso evaluativo en el informe final?",
+      "a": "La toma de decisiones informada y la planificación de intervenciones futuras efectivas."
+    },
+    {
+      "cat": "Carácter Científico",
+      "q": "¿Por qué se dice que el informe psicológico es un documento de carácter científico?",
+      "a": "Porque debe cumplir con rigor metodológico, ser replicable y estar basado en hallazgos contrastables."
+    },
+    {
+      "cat": "Responsabilidad Profesional",
+      "q": "¿Qué refleja el informe respecto a las competencias del psicólogo?",
+      "a": "Refleja la capacidad del profesional para emitir diagnósticos y recomendaciones fundamentadas y coherentes."
+    },
+    {
+      "cat": "Parámetros Generales",
+      "q": "¿Cuál es la importancia de la 'discusión detallada' según el texto?",
+      "a": "Asegura que cada parte del informe sea discutida y justified adecuadamente para validar las conclusiones."
+    },
+    {
+      "cat": "Estructura: Datos de Afiliación",
+      "q": "¿Por qué se incluye el dato de 'escolaridad' en el informe del Paciente X?",
+      "a": "Para contextualizar su rendimiento académico y determinar si sus dificultades son acordes a su nivel educativo."
+    },
+    {
+      "cat": "Técnicas: Entrevista",
+      "q": "¿Qué función cumplió la 'Entrevista clínica estructurada' en el caso del ejemplo?",
+      "a": "Recopilar antecedentes personales y obtener información detallada sobre las dificultades actuales del sujeto."
+    },
+    {
+      "cat": "Observación de Conducta",
+      "q": "¿Qué diferencia observó el evaluador en la atención del Paciente X entre la entrevista y las pruebas cognitivas?",
+      "a": "Su atención fluctuaba durante la entrevista y manifestó fatiga en tareas de alta concentración en las pruebas."
+    },
+    {
+      "cat": "Integración de Resultados",
+      "q": "¿Cómo se explica la baja puntuación en velocidad de procesamiento en el Paciente X?",
+      "a": "Se asocia a la ansiedad moderada que interfiere con su rendimiento en tareas cronometradas o de presión."
+    },
+    {
+      "cat": "Ética: Confidencialidad",
+      "q": "¿Cómo se manifiesta el principio de confidencialidad en el informe escrito según el texto?",
+      "a": "Asegurando que el informe cumple con las normativas legales de protección de datos y se entrega solo a quien corresponde."
+    },
+    {
+      "cat": "Tipos de Informe",
+      "q": "¿En qué caso se entregaría por escrito un informe que originalmente era de devolución oral?",
+      "a": "A petición explícita del paciente."
+    },
+    {
+      "cat": "Redacción Técnica",
+      "q": "¿Qué peligro conlleva el uso excesivo de jerga o palabrería en el informe?",
+      "a": "Dificulta la comprensión clara por parte del interlocutor y puede ocultar la falta de rigor en los resultados."
+    },
+    {
+      "cat": "Objetivos de Evaluación",
+      "q": "¿Qué significa realizar un 'diagnóstico diferencial'?",
+      "a": "Proceso de distinguir entre dos o más condiciones que comparten síntomas similares para determinar cuál padece el sujeto."
+    },
+    {
+      "cat": "Estilo APA",
+      "q": "¿Qué aporta el Manual de la APA específicamente a la utilidad del informe?",
+      "a": "Aporta un marco que garantiza claridad y rigor, permitiendo que el informe sea útil en cualquier contexto profesional."
+    },
+    {
+      "cat": "Informe Personal",
+      "q": "¿Por qué el 'Informe personal' se asocia habitualmente con la entrevista de devolución?",
+      "a": "Porque ambos buscan trasladar la información de forma comprensible y directa al sujeto evaluado."
+    },
+    {
+      "cat": "Recomendaciones Técnicas",
+      "q": "¿Cuál es la utilidad de incluir tablas o figuras para los resultados numéricos?",
+      "a": "Facilitan la visualización rápida de las puntuaciones y permiten comparar el rendimiento en distintas áreas de forma esquemática."
+    },
+    {
+      "cat": "Contenido APA: Conducta",
+      "q": "¿Por qué es relevante registrar la 'conducta motora externa' durante la evaluación?",
+      "a": "Porque puede proporcionar signos clínicos de ansiedad, hiperactividad o inhibición que no se verbalizan."
+    },
+    {
+      "cat": "Integración de Resultados",
+      "q": "¿Qué implica 'transcribir las puntuaciones' de manera clara?",
+      "a": "Presentar los datos de test y cuestionarios de forma que el lector entienda qué miden y qué significa el nivel obtenido."
+    },
+    {
+      "cat": "Orientación de Cambio",
+      "q": "¿Qué relación existe entre las recomendaciones y los objetivos de cambio?",
+      "a": "Las recomendaciones son las acciones sugeridas, mientras que los objetivos de cambio son las metas terapéuticas que se pretenden alcanzar."
+    },
+    {
+      "cat": "Estructura del Informe",
+      "q": "¿Qué papel juega el 'nombre de quien lo refiere' en la sección de identificación?",
+      "a": "Identifica el origen de la demanda y ayuda a entender el contexto inicial por el cual se solicitó la evaluación."
+    },
+    {
+      "cat": "Caso Clínico: Antecedentes",
+      "q": "¿Qué factor ambiental coincidió con el inicio de los síntomas del Paciente X?",
+      "a": "El aumento de la exigencia en sus estudios universitarios de ingeniería."
+    },
+    {
+      "cat": "Intervención Terapéutica",
+      "q": "¿Por qué se incluyen las 'cuestiones pendientes' en la valoración de la intervención?",
+      "a": "Para que otros profesionales o el propio psicólogo sepan qué áreas requieren atención continua en el futuro."
+    },
+    {
+      "cat": "Redacción: Claridad",
+      "q": "¿A qué se refiere el texto con evitar 'artificios' en el lenguaje del informe?",
+      "a": "A evitar una redacción innecesariamente compleja o adornada que no aporte valor a la información clínica."
+    },
+    {
+      "cat": "Evaluación: Conducta",
+      "q": "¿Cómo influyó la fatiga en el rendimiento del Paciente X durante las pruebas?",
+      "a": "La fatiga se manifestó en tareas de mayor concentración, lo que sugiere una baja resistencia al esfuerzo sostenido debido a la ansiedad."
+    },
+    {
+      "cat": "Propósito del Informe",
+      "q": "¿Cuál es el 'producto final' de la evaluación según la introducción del capítulo?",
+      "a": "El informe psicológico."
+    },
+    {
+      "cat": "Ética: COP",
+      "q": "¿En qué año se publicó la versión del Código Deontológico mencionada en el texto?",
+      "a": "En el año 2015 por el Consejo General de la Psicología de España."
+    },
+    {
+      "cat": "Tipos de Informe: Certificado",
+      "q": "¿Puede un familiar solicitar un informe de certificado sin autorización?",
+      "a": "No, se requiere la previa autorización del paciente para entregarlo a familiares o instituciones."
+    },
+    {
+      "cat": "Redacción: Asertividad",
+      "q": "¿Por qué se deben evitar términos 'estigmatizantes' en el informe escrito?",
+      "a": "Para mantener el respeto a la dignidad del sujeto y evitar etiquetas negativas que perjudiquen su imagen profesional o personal."
+    },
+    {
+      "cat": "Objetivos de Demanda",
+      "q": "¿Por qué el motivo de consulta suele no coincidir con el diagnóstico real?",
+      "a": "Porque el paciente puede no tener conciencia de la raíz del problema o manifestar solo el síntoma más disruptivo."
+    },
+    {
+      "cat": "APA: Datos Biográficos",
+      "q": "¿Qué se entiende por 'orientación espaciotemporal' en el examen mental del informe?",
+      "a": "La capacidad del sujeto para saber dónde está y en qué momento del tiempo se encuentra durante la evaluación."
+    },
+    {
+      "cat": "Estructura: Técnicas",
+      "q": "¿Qué implica la 'justificación de la utilización' de una técnica?",
+      "a": "Explicar por qué esa prueba específica es adecuada para responder a la demanda u objetivos planteados."
+    },
+    {
+      "cat": "Integración de Resultados",
+      "q": "¿Qué significa que la integración de resultados deba ser 'coherente'?",
+      "a": "Que los hallazgos de las distintas pruebas no se contradigan entre sí y expliquen globalmente el problema del sujeto."
+    },
+    {
+      "cat": "Recomendaciones: Hábitos",
+      "q": "¿Qué recomendación práctica recibió el Paciente X aparte de la terapia?",
+      "a": "Implementar técnicas de manejo del tiempo y hábitos de estudio estructurados."
+    },
+    {
+      "cat": "Seguimiento",
+      "q": "¿Cuál es el objetivo de la evaluación de seguimiento mencionada en el informe del paciente?",
+      "a": "Monitorizar el progreso de la ansiedad y la concentración tras la intervención."
+    },
+    {
+      "cat": "Transparencia",
+      "q": "¿Cómo beneficia la transparencia a la planificación de intervenciones futuras?",
+      "a": "Permite que cualquier profesional entienda los pasos seguidos y las bases científicas del plan de tratamiento propuesto."
+    },
+    {
+      "cat": "Competencias Profesionales",
+      "q": "¿Cómo demuestra un psicólogo su competencia a través del informe?",
+      "a": "Al realizar recomendaciones fundamentadas y mantener un rigor científico en todo el documento."
+    },
+    {
+      "cat": "Estructura: Datos de Afiliación",
+      "q": "¿Qué información sobre el estado civil se requiere en el modelo APA?",
+      "a": "El estado civil actual del sujeto evaluado (ej. soltero, casado)."
+    },
+    {
+      "cat": "Relevancia del Informe",
+      "q": "¿Para qué sirve un informe en el ámbito laboral?",
+      "a": "Para facilitar la toma de decisiones informadas sobre la aptitud o necesidades de apoyo de un trabajador."
+    },
+    {
+      "cat": "APA: Antecedentes Médicos",
+      "q": "¿Por qué se preguntan los antecedentes médicos en una evaluación psicológica?",
+      "a": "Para descartar causas fisiológicas o enfermedades que puedan estar influyendo en el comportamiento o estado mental."
+    },
+    {
+      "cat": "Estilo de Redacción",
+      "q": "¿Qué significa evitar 'ambigüedades' en los resultados?",
+      "a": "Asegurar que las afirmaciones sean claras y no permitan múltiples interpretaciones contradictorias."
+    },
+    {
+      "cat": "Valoración Final",
+      "q": "¿Qué se busca con la 'valoración final' en la sección de intervención terapéutica?",
+      "a": "Ofrecer un juicio clínico global sobre el éxito o fracaso del proceso terapéutico realizado hasta la fecha."
+    },
+    {
+      "cat": "Conclusiones del Capítulo",
+      "q": "¿Cuál es el mensaje final del texto sobre la flexibilidad de la estructura del informe?",
+      "a": "Aunque es aceptable cierta flexibilidad, incluir secciones detalladas garantiza que las recomendaciones estén fundamentadas y sean aplicables."
+    }
+  ]
+}
