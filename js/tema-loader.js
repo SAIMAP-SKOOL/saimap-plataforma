@@ -636,6 +636,9 @@ const LAYOUT_HTML = `
                     <p class="text-sm text-slate-500 leading-relaxed">Tarjetas de memoria para repaso rápido e intensivo.</p>
                 </div>
             </div>
+
+            <!-- Contenedor para botones de navegación de temas -->
+            <div id="theme-navigation-container" class="mt-12 flex justify-between items-center w-full max-w-xl mx-auto gap-4 pt-6 border-t border-slate-200/60"></div>
         </section>
 
         <!-- VIEW: QUIZ -->
@@ -1111,6 +1114,89 @@ function applyTheme(t) {
     const trophy = document.getElementById('results-trophy');
     trophy.style.backgroundColor = t.accentBg;
     trophy.style.color = t.accent;
+
+    // Cargar botones de navegación de temas
+    const themeNavigationContainer = document.getElementById('theme-navigation-container');
+    if (themeNavigationContainer) {
+        const keys = Object.keys(THEME_SUBTITLES[SUBJECT_ID] || {});
+        const sortedKeys = keys.map(k => {
+            const parts = k.split('.').map(Number);
+            return { key: k, parts: parts };
+        }).sort((a, b) => {
+            for (let i = 0; i < Math.max(a.parts.length, b.parts.length); i++) {
+                const pa = a.parts[i] !== undefined ? a.parts[i] : 0;
+                const pb = b.parts[i] !== undefined ? b.parts[i] : 0;
+                if (pa !== pb) return pa - pb;
+            }
+            return 0;
+        }).map(x => x.key);
+
+        const cleanKey = String(TEMA_KEY).replace(/-/g, '.');
+        const currentIdx = sortedKeys.indexOf(cleanKey);
+
+        if (currentIdx !== -1) {
+            const prevKey = sortedKeys[currentIdx - 1];
+            const nextKey = sortedKeys[currentIdx + 1];
+            const isLastTheme = currentIdx === sortedKeys.length - 1;
+
+            let prevButtonHTML = '';
+            if (prevKey) {
+                let shortId = SUBJECT_ID;
+                if (SUBJECT_ID === 'psicologia-del-aprendizaje') shortId = 'aprendizaje';
+                else if (SUBJECT_ID === 'bases-biologicas-del-comportamiento') shortId = 'psicobiologia';
+                else if (SUBJECT_ID === 'historia-de-la-psicologia') shortId = 'historia';
+                else if (SUBJECT_ID === 'psicologia-educativa' || SUBJECT_ID === 'psicologia-fisiologica') shortId = SUBJECT_ID;
+                else if (SUBJECT_ID.startsWith('psicologia-de-la-')) shortId = SUBJECT_ID.replace('psicologia-de-la-', '');
+                else if (SUBJECT_ID.startsWith('psicologia-del-')) shortId = SUBJECT_ID.replace('psicologia-del-', '');
+                else if (SUBJECT_ID.startsWith('psicologia-')) shortId = SUBJECT_ID.replace('psicologia-', '');
+
+                const temaFilePart = String(prevKey).replace(/\./g, '-');
+                const prevUrl = `../../../temas/${encodeURIComponent(COURSE_ID)}/${encodeURIComponent(FOLDER_ID)}/${shortId}-tema-${temaFilePart}.html`;
+
+                prevButtonHTML = `
+                    <a href="${prevUrl}" class="flex-1 py-4 border border-slate-200 text-slate-600 rounded-2xl font-bold hover:bg-slate-50 transition text-sm flex items-center justify-center gap-2 bg-white shadow-sm hover:border-slate-300">
+                        <i class="ph-bold ph-arrow-left"></i> Tema Anterior (${prevKey})
+                    </a>
+                `;
+            } else {
+                prevButtonHTML = `<div class="flex-1"></div>`;
+            }
+
+            let nextButtonHTML = '';
+            if (nextKey) {
+                let shortId = SUBJECT_ID;
+                if (SUBJECT_ID === 'psicologia-del-aprendizaje') shortId = 'aprendizaje';
+                else if (SUBJECT_ID === 'bases-biologicas-del-comportamiento') shortId = 'psicobiologia';
+                else if (SUBJECT_ID === 'historia-de-la-psicologia') shortId = 'historia';
+                else if (SUBJECT_ID === 'psicologia-educativa' || SUBJECT_ID === 'psicologia-fisiologica') shortId = SUBJECT_ID;
+                else if (SUBJECT_ID.startsWith('psicologia-de-la-')) shortId = SUBJECT_ID.replace('psicologia-de-la-', '');
+                else if (SUBJECT_ID.startsWith('psicologia-del-')) shortId = SUBJECT_ID.replace('psicologia-del-', '');
+                else if (SUBJECT_ID.startsWith('psicologia-')) shortId = SUBJECT_ID.replace('psicologia-', '');
+
+                const temaFilePart = String(nextKey).replace(/\./g, '-');
+                const nextUrl = `../../../temas/${encodeURIComponent(COURSE_ID)}/${encodeURIComponent(FOLDER_ID)}/${shortId}-tema-${temaFilePart}.html`;
+
+                nextButtonHTML = `
+                    <a href="${nextUrl}" class="flex-1 py-4 text-white rounded-2xl font-bold transition text-sm flex items-center justify-center gap-2 shadow-lg" style="background: ${t.primaryGrad}; box-shadow: 0 8px 25px ${t.primaryShadow};">
+                        Tema Siguiente (${nextKey}) <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                `;
+            } else if (isLastTheme) {
+                nextButtonHTML = `
+                    <a href="../../../index.html?asignatura=${SUBJECT_ID}" class="flex-1 py-4 text-white rounded-2xl font-bold transition text-sm flex items-center justify-center gap-2 shadow-lg" style="background: ${t.primaryGrad}; box-shadow: 0 8px 25px ${t.primaryShadow};">
+                        <i class="ph-bold ph-trophy"></i> Ir al Examen Final <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                `;
+            } else {
+                nextButtonHTML = `<div class="flex-1"></div>`;
+            }
+
+            themeNavigationContainer.innerHTML = `
+                ${prevButtonHTML}
+                ${nextButtonHTML}
+            `;
+        }
+    }
 }
 
 function unlockTemaInPortal(subjectName) {
