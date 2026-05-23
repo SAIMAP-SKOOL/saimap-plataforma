@@ -1986,7 +1986,7 @@
 
             return `
                 <div class="flex items-center justify-center p-4 flex-grow fade-in">
-                    <div class="max-w-2xl w-full bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+                    <div class="max-w-5xl w-full bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
                         <div class="bg-slate-900 p-10 text-white text-center relative overflow-hidden">
                             <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
                             <button onclick="appMethods.backToSelector()" class="absolute top-4 left-4 text-xs font-bold text-white/50 hover:text-white flex items-center gap-1">
@@ -2020,7 +2020,7 @@
 
             return `
                 <div class="flex flex-col items-center p-4 w-full flex-grow fade-in">
-                    <div class="w-full max-w-3xl mb-6 flex justify-between items-center text-slate-400">
+                    <div class="w-full max-w-5xl mb-6 flex justify-between items-center text-slate-400">
                         <div class="flex flex-col">
                             <span class="text-[10px] font-black tracking-widest uppercase text-slate-300">${subjectName}</span>
                             <span class="text-sm font-bold text-slate-700">Pregunta ${state.currentIndex + 1} <span class="text-slate-300 font-normal">/ ${state.activeQuestions.length}</span></span>
@@ -2041,11 +2041,11 @@
                         </div>
                     </div>
 
-                    <div class="w-full max-w-3xl h-1.5 bg-slate-100 rounded-full mb-8 overflow-hidden">
+                    <div class="w-full max-w-5xl h-1.5 bg-slate-100 rounded-full mb-8 overflow-hidden">
                         <div class="h-full bg-slate-800 transition-all duration-500 ease-out" style="width: ${progress}%"></div>
                     </div>
 
-                    <div class="w-full max-w-3xl bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-10 mb-6 relative">
+                    <div class="w-full max-w-5xl bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-10 mb-6 relative">
                         <h2 class="text-lg md:text-xl font-bold text-slate-800 mb-8 leading-relaxed">${currentQ.question || currentQ.q}</h2>
                         
                         <div class="space-y-3">
@@ -2092,7 +2092,7 @@
                         ` : ''}
                     </div>
 
-                    <div class="w-full max-w-3xl flex justify-between items-center gap-4">
+                    <div class="w-full max-w-5xl flex justify-between items-center gap-4">
                         <button onclick="appMethods.prevQuestion()" ${(state.currentIndex === 0) ? 'disabled' : ''} 
                             class="flex items-center gap-2 px-5 py-3 rounded-xl font-bold transition-all text-sm ${(state.currentIndex === 0) ? 'opacity-0' : 'text-slate-400 hover:text-slate-600 hover:bg-slate-100'}">
                             <i data-lucide="arrow-left" class="w-4 h-4"></i> Anterior
@@ -2150,7 +2150,7 @@
 
             return `
                 <div class="p-6 flex-grow flex items-center justify-center fade-in">
-                    <div class="max-w-2xl w-full bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 relative">
+                    <div class="max-w-5xl w-full bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 relative">
                         <div class="${passed ? 'bg-emerald-500' : 'bg-rose-500'} p-10 text-white text-center relative overflow-hidden">
                             <div class="relative z-10">
                                 <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
@@ -2259,7 +2259,7 @@
 
             return `
                 <div class="flex flex-col items-center p-4 w-full flex-grow fade-in">
-                    <div class="w-full max-w-3xl mb-6 flex justify-between items-center text-slate-400">
+                    <div class="w-full max-w-5xl mb-6 flex justify-between items-center text-slate-400">
                         <div class="flex flex-col">
                             <span class="text-[10px] font-black tracking-widest uppercase text-slate-300">${subjectName}</span>
                             <span class="text-sm font-bold text-slate-700">Entrenamiento ${state.currentIndex + 1} <span class="text-slate-300 font-normal">/ ${state.activeQuestions.length}</span></span>
@@ -2275,11 +2275,11 @@
                         </div>
                     </div>
 
-                    <div class="w-full max-w-3xl h-1.5 bg-slate-100 rounded-full mb-8 overflow-hidden">
+                    <div class="w-full max-w-5xl h-1.5 bg-slate-100 rounded-full mb-8 overflow-hidden">
                         <div class="h-full bg-slate-800 transition-all duration-500 ease-out" style="width: ${progress}%"></div>
                     </div>
 
-                    <div class="w-full max-w-3xl bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-10 mb-6 relative">
+                    <div class="w-full max-w-5xl bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-10 mb-6 relative">
                         <h2 class="text-lg md:text-xl font-bold text-slate-800 mb-6 leading-relaxed">${currentQ.q}</h2>
                         
                         <div class="space-y-3">
@@ -2295,7 +2295,7 @@
                         ${explanationHTML}
                     </div>
 
-                    <div class="w-full max-w-3xl flex justify-between items-center gap-4">
+                    <div class="w-full max-w-5xl flex justify-between items-center gap-4">
                         <button onclick="appMethods.backToSelector()" 
                             class="flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-all text-sm">
                             <i data-lucide="log-out" class="w-4 h-4"></i> Salir
@@ -2338,7 +2338,7 @@
 
             return `
                 <div class="p-6 flex-grow flex items-center justify-center fade-in">
-                    <div class="max-w-2xl w-full bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 relative">
+                    <div class="max-w-5xl w-full bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 relative">
                         <div class="${passed ? 'bg-emerald-500' : 'bg-slate-800'} p-10 text-white text-center relative overflow-hidden">
                             <div class="relative z-10">
                                 <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
@@ -2389,7 +2389,7 @@
 
             return `
                 <div class="flex flex-col items-center p-4 w-full flex-grow fade-in">
-                    <div class="w-full max-w-2xl mb-6 flex justify-between items-center text-slate-400">
+                    <div class="w-full max-w-5xl mb-6 flex justify-between items-center text-slate-400">
                         <div class="flex flex-col">
                             <span class="text-[10px] font-black tracking-widest uppercase text-slate-300">${subjectName}</span>
                             <span class="text-sm font-bold text-slate-700">Ficha ${currentIdx + 1} <span class="text-slate-300 font-normal">/ ${total}</span></span>
@@ -2404,12 +2404,12 @@
                         </div>
                     </div>
 
-                    <div class="w-full max-w-2xl h-1.5 bg-slate-100 rounded-full mb-8 overflow-hidden">
+                    <div class="w-full max-w-5xl h-1.5 bg-slate-100 rounded-full mb-8 overflow-hidden">
                         <div class="h-full bg-slate-800 transition-all duration-500 ease-out" style="width: ${progress}%"></div>
                     </div>
 
                     <!-- Flashcard 3D Wrapper -->
-                    <div class="w-full max-w-2xl flashcard-container mb-8">
+                    <div class="w-full max-w-5xl flashcard-container mb-8">
                         <div id="active-flashcard" onclick="appMethods.flipCard()" class="flashcard">
                             <!-- Front Side -->
                             <div class="flashcard-front">
@@ -2436,7 +2436,7 @@
                     </div>
 
                     <!-- Flashcard Actions -->
-                    <div class="w-full max-w-2xl flex justify-between items-center gap-4">
+                    <div class="w-full max-w-5xl flex justify-between items-center gap-4">
                         <button onclick="appMethods.prevFlashcard()" ${(currentIdx === 0) ? 'disabled' : ''} 
                             class="flex items-center gap-2 px-5 py-3 rounded-xl font-bold transition-all text-sm ${(currentIdx === 0) ? 'opacity-0' : 'text-slate-400 hover:text-slate-600 hover:bg-slate-100'}">
                             <i data-lucide="arrow-left" class="w-4 h-4"></i> Anterior
