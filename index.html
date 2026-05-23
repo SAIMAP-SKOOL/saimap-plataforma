@@ -696,6 +696,7 @@
         }
 
         function loadSubject(id, tema = null, updateHistoryState = true) {
+            state.selectedSubjectId = id;
             const subject = AVAILABLE_SUBJECTS.find(s => s.id === id);
             const folder = subject ? subject.folder : 'Otros';
             const year = subject ? subject.year : '1º';
@@ -950,16 +951,17 @@
                     appMethods.unlockAchievement('steady_student');
                 }
 
-                // Medallas por examen perfecto
+                // Medallas por examen perfecto (específicas por asignatura)
                 if (correct === total) {
+                    const subId = state.selectedSubjectId || 'otros';
                     if (total === 30) {
-                        appMethods.unlockAchievement('medal_bronze');
+                        appMethods.unlockAchievement(`medal_bronze_${subId}`);
                     } else if (total === 75) {
-                        appMethods.unlockAchievement('medal_silver');
+                        appMethods.unlockAchievement(`medal_silver_${subId}`);
                     } else if (total === 150) {
-                        appMethods.unlockAchievement('medal_gold');
+                        appMethods.unlockAchievement(`medal_gold_${subId}`);
                     } else if (total === 300) {
-                        appMethods.unlockAchievement('medal_platinum');
+                        appMethods.unlockAchievement(`medal_platinum_${subId}`);
                     }
                 }
 
@@ -1219,8 +1221,56 @@
             }
         };
 
+        function resolveAchievementDetails(id) {
+            if (id.startsWith('medal_')) {
+                let medalType = '';
+                let questionsCount = 0;
+                let baseId = '';
+                
+                if (id.startsWith('medal_bronze_')) {
+                    medalType = 'bronze';
+                    questionsCount = 30;
+                    baseId = 'medal_bronze';
+                } else if (id.startsWith('medal_silver_')) {
+                    medalType = 'silver';
+                    questionsCount = 75;
+                    baseId = 'medal_silver';
+                } else if (id.startsWith('medal_gold_')) {
+                    medalType = 'gold';
+                    questionsCount = 150;
+                    baseId = 'medal_gold';
+                } else if (id.startsWith('medal_platinum_')) {
+                    medalType = 'platinum';
+                    questionsCount = 300;
+                    baseId = 'medal_platinum';
+                }
+
+                if (baseId) {
+                    const subjectId = id.substring(baseId.length + 1);
+                    const subject = AVAILABLE_SUBJECTS.find(s => s.id === subjectId);
+                    const subjectName = subject ? subject.name : 'Asignatura';
+                    
+                    let medalName = '';
+                    if (medalType === 'bronze') medalName = 'Medalla de Bronce';
+                    else if (medalType === 'silver') medalName = 'Medalla de Plata';
+                    else if (medalType === 'gold') medalName = 'Medalla de Oro';
+                    else if (medalType === 'platinum') medalName = 'Medalla de Platino';
+
+                    return {
+                        id: id,
+                        name: `${medalName} - ${subjectName}`,
+                        description: `Nota de 10.0 (100% de aciertos) en el examen de ${questionsCount} preguntas de esta asignatura.`,
+                        icon: 'award',
+                        medalType: medalType
+                    };
+                }
+            }
+
+            return ACHIEVEMENTS_CONFIG.find(a => a.id === id) || null;
+        }
+
         function showAchievementNotification(id) {
-            const config = ACHIEVEMENTS_CONFIG.find(a => a.id === id);
+            const config = resolveAchievementDetails(id);
             if (!config) return;
 
             let container = document.getElementById('achievement-toast-container');
@@ -1792,64 +1842,98 @@
             const isGuest = !authState.isAuthenticated;
             const earnedSet = new Set(state.achievements || []);
             const earnedCount = isGuest ? 0 : earnedSet.size;
-            const totalCount = ACHIEVEMENTS_CONFIG.length;
+            const totalCount = 3 + (AVAILABLE_SUBJECTS.length * 4);
             const percent = Math.round((earnedCount / totalCount) * 100);
 
-            const achievementsGridHTML = ACHIEVEMENTS_CONFIG.map(config => {
-                const isEarned = !isGuest && earnedSet.has(config.id);
+            let achievementsGridHTML = '';
+
+            if (isGuest) {
+                // Si es invitado, pintamos logros mock difuminados de fondo para que quede estético
+                const mockAchievements = [
+                    { name: 'Primeros Pasos', description: 'Completa tu primer test en la plataforma.', icon: 'play', medalType: 'other' },
+                    { name: 'Medalla de Bronce - Bases Biológicas', description: 'Nota de 10.0 en el examen de 30 preguntas.', icon: 'award', medalType: 'bronze' },
+                    { name: 'Medalla de Plata - Psicología del Aprendizaje', description: 'Nota de 10.0 en el examen de 75 preguntas.', icon: 'award', medalType: 'silver' },
+                    { name: 'Medalla de Oro - Historia de la Psicología', description: 'Nota de 10.0 en el examen de 150 preguntas.', icon: 'award', medalType: 'gold' },
+                    { name: 'Maestro Entrenador', description: 'Completa una sesión del Entrenador de memoria.', icon: 'graduation-cap', medalType: 'other' },
+                    { name: 'Medalla de Platino - Atención y Percepción', description: 'Nota de 10.0 en el examen de 300 preguntas.', icon: 'award', medalType: 'platinum' }
+                ];
                 
-                let cardClass = '';
-                let iconClass = '';
-                let badgeHTML = '';
+                achievementsGridHTML = mockAchievements.map(config => {
+                    let medalColors = 'from-indigo-500/10 to-purple-600/5 border-indigo-200/60 text-indigo-600';
+                    if (config.medalType === 'bronze') medalColors = 'from-amber-600/10 to-amber-700/5 border-amber-200/60 text-amber-700';
+                    else if (config.medalType === 'silver') medalColors = 'from-slate-400/10 to-slate-500/5 border-slate-300/60 text-slate-500';
+                    else if (config.medalType === 'gold') medalColors = 'from-yellow-500/15 to-yellow-600/10 border-yellow-300/60 text-yellow-600';
+                    else if (config.medalType === 'platinum') medalColors = 'from-cyan-400/15 to-blue-500/10 border-cyan-300/60 text-cyan-600';
 
-                if (isEarned) {
-                    let medalColors = '';
-                    if (config.medalType === 'bronze') {
-                        medalColors = 'from-amber-600/10 to-amber-700/5 border-amber-200/60 shadow-amber-600/5 text-amber-700';
-                    } else if (config.medalType === 'silver') {
-                        medalColors = 'from-slate-400/10 to-slate-500/5 border-slate-300/60 shadow-slate-400/5 text-slate-500';
-                    } else if (config.medalType === 'gold') {
-                        medalColors = 'from-yellow-500/15 to-yellow-600/10 border-yellow-300/60 shadow-yellow-500/10 text-yellow-600';
-                    } else if (config.medalType === 'platinum') {
-                        medalColors = 'from-cyan-400/15 to-blue-500/10 border-cyan-300/60 shadow-cyan-500/10 text-cyan-600';
-                    } else {
-                        medalColors = 'from-indigo-500/10 to-purple-600/5 border-indigo-200/60 shadow-indigo-500/5 text-indigo-600';
-                    }
-
-                    cardClass = `bg-gradient-to-br ${medalColors} border shadow-lg hover:shadow-xl hover:-translate-y-0.5`;
-                    iconClass = `w-12 h-12 rounded-full flex items-center justify-center shrink-0 shadow-sm bg-white`;
-                    badgeHTML = `
-                        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-black bg-emerald-500 text-white shadow-sm shadow-emerald-500/20">
-                            <i data-lucide="check" class="w-3 h-3"></i> ¡Conseguido!
-                        </span>
+                    return `
+                        <div class="p-6 rounded-2xl bg-gradient-to-br ${medalColors} border shadow-lg opacity-40 flex flex-col justify-between h-full relative overflow-hidden">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 shadow-sm bg-white">
+                                    <i data-lucide="${config.icon}" class="w-6 h-6"></i>
+                                </div>
+                                <div class="space-y-1">
+                                    <div class="font-black text-slate-800 text-sm tracking-tight leading-tight">${config.name}</div>
+                                    <p class="text-xs text-slate-500 font-medium leading-relaxed">${config.description}</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-slate-100/50 flex justify-between items-center">
+                                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-black bg-emerald-500/60 text-white shadow-sm">
+                                    <i data-lucide="check" class="w-3 h-3"></i> ¡Conseguido!
+                                </span>
+                            </div>
+                        </div>
                     `;
-                } else {
-                    cardClass = 'bg-slate-50/50 border border-slate-100 opacity-60 grayscale hover:grayscale-[50%] hover:opacity-80';
-                    iconClass = 'w-12 h-12 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center shrink-0';
-                    badgeHTML = `
-                        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-slate-200 text-slate-500">
-                            <i data-lucide="lock" class="w-3 h-3"></i> Bloqueado
-                        </span>
-                    `;
-                }
+                }).join('');
+            } else {
+                // Si está autenticado, resolvemos los logros que efectivamente ha conseguido
+                const earnedAchievements = Array.from(earnedSet)
+                    .map(id => resolveAchievementDetails(id))
+                    .filter(Boolean);
 
-                return `
-                    <div class="p-6 rounded-2xl transition-all duration-300 flex flex-col justify-between h-full relative overflow-hidden group ${cardClass}">
-                        <div class="flex items-start gap-4">
-                            <div class="${iconClass}">
-                                <i data-lucide="${isEarned ? config.icon : 'lock'}" class="w-6 h-6"></i>
+                if (earnedAchievements.length === 0) {
+                    achievementsGridHTML = `
+                        <div class="col-span-full py-16 text-center bg-white border border-slate-100 rounded-3xl p-8 flex flex-col items-center justify-center gap-4 max-w-md mx-auto shadow-sm w-full fade-in">
+                            <div class="w-14 h-14 rounded-full bg-slate-50 border border-slate-150 text-slate-400 flex items-center justify-center">
+                                <i data-lucide="trophy" class="w-7 h-7"></i>
                             </div>
                             <div class="space-y-1">
-                                <div class="font-black text-slate-800 text-sm tracking-tight leading-tight group-hover:text-slate-900 transition-colors">${config.name}</div>
-                                <p class="text-xs text-slate-500 font-medium leading-relaxed">${config.description}</p>
+                                <h3 class="font-black text-slate-800 tracking-tight">Aún no tienes logros conseguidos</h3>
+                                <p class="text-xs text-slate-500 leading-relaxed font-medium">Completa exámenes con una puntuación perfecta (10/10) o entrena tu memoria para empezar a desbloquear tus medallas.</p>
                             </div>
+                            <button onclick="state.gameState = 'select'; render();" class="mt-2 px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-xs shadow-md transition-all flex items-center gap-1.5 cursor-pointer">
+                                <i data-lucide="book-open" class="w-4 h-4"></i> Ir a la Biblioteca de Estudios
+                            </button>
                         </div>
-                        <div class="mt-4 pt-4 border-t border-slate-100/50 flex justify-between items-center">
-                            ${badgeHTML}
-                        </div>
-                    </div>
-                `;
-            }).join('');
+                    `;
+                } else {
+                    achievementsGridHTML = earnedAchievements.map(config => {
+                        let medalColors = 'from-indigo-500/10 to-purple-600/5 border-indigo-200/60 shadow-indigo-500/5 text-indigo-600';
+                        if (config.medalType === 'bronze') medalColors = 'from-amber-600/10 to-amber-700/5 border-amber-200/60 shadow-amber-600/5 text-amber-700';
+                        else if (config.medalType === 'silver') medalColors = 'from-slate-400/10 to-slate-500/5 border-slate-300/60 shadow-slate-400/5 text-slate-500';
+                        else if (config.medalType === 'gold') medalColors = 'from-yellow-500/15 to-yellow-600/10 border-yellow-300/60 shadow-yellow-500/10 text-yellow-600';
+                        else if (config.medalType === 'platinum') medalColors = 'from-cyan-400/15 to-blue-500/10 border-cyan-300/60 shadow-cyan-500/10 text-cyan-600';
+
+                        return `
+                            <div class="p-6 rounded-2xl bg-gradient-to-br ${medalColors} border shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 flex flex-col justify-between h-full relative overflow-hidden group">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 shadow-sm bg-white">
+                                        <i data-lucide="${config.icon}" class="w-6 h-6"></i>
+                                    </div>
+                                    <div class="space-y-1">
+                                        <div class="font-black text-slate-800 text-sm tracking-tight leading-tight group-hover:text-slate-900 transition-colors">${config.name}</div>
+                                        <p class="text-xs text-slate-500 font-medium leading-relaxed">${config.description}</p>
+                                    </div>
+                                </div>
+                                <div class="mt-4 pt-4 border-t border-slate-100/50 flex justify-between items-center">
+                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-black bg-emerald-500 text-white shadow-sm shadow-emerald-500/20">
+                                        <i data-lucide="check" class="w-3 h-3"></i> ¡Conseguido!
+                                    </span>
+                                </div>
+                            </div>
+                        `;
+                    }).join('');
+                }
+            }
 
             return `
                 <div class="p-6 flex-grow flex flex-col max-w-7xl mx-auto w-full fade-in">
