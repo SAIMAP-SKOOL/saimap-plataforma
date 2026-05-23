@@ -481,6 +481,8 @@
                         const data = await response.json();
                         const fields = data.fields || {};
 
+                        let needsSave = false;
+
                         // 1. Favoritos (Array)
                         let remoteFavs = [];
                         if (fields.favorites && fields.favorites.arrayValue && fields.favorites.arrayValue.values) {
@@ -490,6 +492,9 @@
                         const mergedFavs = Array.from(new Set([...localFavs, ...remoteFavs]));
                         state.favorites = mergedFavs;
                         localStorage.setItem('saimap_favorites', JSON.stringify(mergedFavs));
+                        if (localFavs.some(f => !remoteFavs.includes(f))) {
+                            needsSave = true;
+                        }
 
                         // 2. Logros (Array)
                         let remoteAch = [];
@@ -500,6 +505,9 @@
                         const mergedAch = Array.from(new Set([...localAch, ...remoteAch]));
                         state.achievements = mergedAch;
                         localStorage.setItem('saimap_achievements', JSON.stringify(mergedAch));
+                        if (localAch.some(a => !remoteAch.includes(a))) {
+                            needsSave = true;
+                        }
 
                         // 3. Tareas del Planificador (JSON string)
                         let remoteTasks = [];
@@ -526,6 +534,16 @@
                         const mergedTasks = Array.from(tasksMap.values());
                         state.plannerTasks = mergedTasks;
                         localStorage.setItem('saimap_planner_tasks', JSON.stringify(mergedTasks));
+                        
+                        if (localTasks.some(t => !remoteTasks.some(rt => rt.id === t.id))) {
+                            needsSave = true;
+                        } else {
+                            const remoteCompletedIds = new Set(remoteTasks.filter(t => t.completed).map(t => t.id));
+                            const localCompletedButRemoteNot = localTasks.some(t => t.completed && !remoteCompletedIds.has(t.id));
+                            if (localCompletedButRemoteNot) {
+                                needsSave = true;
+                            }
+                        }
 
                         // 4. Foco semanal (String)
                         let remoteFocus = '';
@@ -536,8 +554,17 @@
                         const mergedFocus = localFocus || remoteFocus;
                         state.weeklyFocus = mergedFocus;
                         localStorage.setItem('saimap_weekly_focus', mergedFocus);
+                        if (localFocus && localFocus !== remoteFocus) {
+                            needsSave = true;
+                        }
 
                         render();
+
+                        // Si detectamos cambios locales que no estaban en la nube, sincronizamos de vuelta
+                        if (needsSave) {
+                            console.log('Local modifications merged, syncing back to Firestore...');
+                            await syncUserData('save');
+                        }
                     } else if (response.status === 404) {
                         console.log('No user data found in Firestore, creating document...');
                         await syncUserData('save');
