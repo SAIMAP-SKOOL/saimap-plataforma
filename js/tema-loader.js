@@ -872,6 +872,14 @@ let FOLDER_ID = 'Otros';
 // INICIALIZACIÓN DE LA MÁQUINA DE TEMAS
 // ====================================================================
 document.addEventListener("DOMContentLoaded", () => {
+    // 0. Extraer COURSE_ID y FOLDER_ID de la URL
+    const pathPartsDecoded = decodeURIComponent(window.location.pathname).replace(/\\/g, '/').split('/');
+    const temasIndexDecoded = pathPartsDecoded.indexOf('temas');
+    if (temasIndexDecoded !== -1 && pathPartsDecoded.length > temasIndexDecoded + 2) {
+        COURSE_ID = pathPartsDecoded[temasIndexDecoded + 1];
+        FOLDER_ID = pathPartsDecoded[temasIndexDecoded + 2];
+    }
+
     // 1. Leer configuración embebida en el HTML
     const configEl = document.getElementById('tema-config');
     
@@ -944,21 +952,6 @@ document.addEventListener("DOMContentLoaded", () => {
     applyTheme(theme);
 
     // 5. Cargar base de datos de preguntas de forma asíncrona (JSON externo)
-    const pathPartsRaw = window.location.pathname.replace(/\\/g, '/').split('/');
-    const temasIndexRaw = pathPartsRaw.indexOf('temas');
-    let rawCourse = COURSE_ID;
-    let rawFolder = FOLDER_ID;
-    if (temasIndexRaw !== -1 && pathPartsRaw.length > temasIndexRaw + 2) {
-        rawCourse = pathPartsRaw[temasIndexRaw + 1];
-        rawFolder = pathPartsRaw[temasIndexRaw + 2];
-    }
-
-    const pathPartsDecoded = decodeURIComponent(window.location.pathname).replace(/\\/g, '/').split('/');
-    const temasIndexDecoded = pathPartsDecoded.indexOf('temas');
-    if (temasIndexDecoded !== -1 && pathPartsDecoded.length > temasIndexDecoded + 2) {
-        COURSE_ID = pathPartsDecoded[temasIndexDecoded + 1];
-        FOLDER_ID = pathPartsDecoded[temasIndexDecoded + 2];
-    }
     const temaFilePart = String(TEMA_KEY).replace(/\./g, '-');
     const fetchUrl = `../../../json/${encodeURIComponent(COURSE_ID)}/${encodeURIComponent(FOLDER_ID)}/${SUBJECT_ID}-tema-${temaFilePart}.json`;
 
