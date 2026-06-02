@@ -1,0 +1,2618 @@
+{
+  "quiz": [
+    {
+      "q": "Las placas seniles o amiloides son depósitos extracelulares de proteína beta-amiloide localizados en la sustancia gris.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Revise la ubicación (intra o extracelular) y la proteína implicada en estas estructuras neuropatológicas.",
+      "explanation": "El texto describe las placas seniles como núcleos o depósitos de proteína beta-amiloide extracelulares en la sustancia gris."
+    },
+    {
+      "q": "Los ovillos neurofibrilares están formados por proteínas tau helicoidales y se localizan exclusivamente en el espacio extracelular.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Piense en si la proteína tau se acumula dentro o fuera de la neurona según el manual.",
+      "explanation": "Los ovillos neurofibrilares son proteínas tau que se enroscan dentro de las células, por lo que son estructuras intracelulares."
+    },
+    {
+      "q": "La hipótesis de la cascada amiloide propone que la escasa eliminación de beta-amiloide se debe a un mal funcionamiento de la apolipoproteína E.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "La APO-E tiene una función específica de limpieza en el cerebro.",
+      "explanation": "La APO-E se encarga de eliminar la proteína beta-amiloide; su mal funcionamiento contribuye a la acumulación anormal."
+    },
+    {
+      "q": "La hipótesis colinérgica sugiere que la degeneración de las neuronas del núcleo basal de Meynert es irrelevante para la pérdida de memoria en la EA.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Identifique el papel de este núcleo en las proyecciones hacia el hipocampo y el neocórtex.",
+      "explanation": "La hipótesis sostiene que la pérdida de memoria se debe a la degeneración de neuronas de este núcleo que proyectan a áreas clave."
+    },
+    {
+      "q": "La hipótesis excitotóxica postula que el exceso de glutamato provoca una entrada masiva de calcio en la célula, generando radicales libres.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Relacione el neurotransmisor glutamato con el ion calcio y el daño oxidativo celular.",
+      "explanation": "El exceso de neurotransmisión glutamatérgica provoca la entrada de calcio, aumentando radicales libres y degeneración neuronal."
+    },
+    {
+      "q": "La síntesis de acetilcolina requiere colina obtenida exclusivamente de fuentes intraneuronales.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Considere si existen fuentes exógenas como la alimentación para la obtención de precursores.",
+      "explanation": "La colina se obtiene tanto de la dieta como de fuentes intraneuronales para la síntesis de Ach."
+    },
+    {
+      "q": "El receptor colinérgico M1 postsináptico es el más destacado por mediar las funciones de memoria ligadas a la neurotransmisión.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Fíjese en el subtipo específico de receptor muscarínico mencionado en el texto.",
+      "explanation": "El texto identifica al receptor M1 postsináptico como el mediador principal en las funciones de memoria colinérgicas."
+    },
+    {
+      "q": "El Donepezilo se considera el tratamiento de primera línea para la enfermedad de Alzheimer por ser un inhibidor reversible y selectivo de la AchE.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Valore la clasificación y preferencia clínica de este fármaco específico.",
+      "explanation": "El Donepezilo es un inhibidor reversible selectivo de la AchE y se considera el tratamiento de primera elección."
+    },
+    {
+      "q": "La Tacrina es el fármaco de primera elección en la actualidad debido a su alta selectividad y nula toxicidad hepática.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Recuerde los efectos adversos que limitaron el uso del primer inhibidor de la AchE aprobado.",
+      "explanation": "La Tacrina es de segunda línea debido a su toxicidad hepática y falta de selectividad (actúa sobre butirilcolinesterasa)."
+    },
+    {
+      "q": "El Metrifonato es un inhibidor irreversible de larga duración de la acetilcolinesterasa que puede provocar debilidad muscular.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Revise el tipo de unión (reversible/irreversible) y los efectos secundarios motores de este compuesto.",
+      "explanation": "El Metrifonato se define como inhibidor irreversible de larga duración y asocia debilidad muscular como efecto secundario."
+    },
+    {
+      "q": "La Galantamina actúa únicamente como inhibidor de la AchE, careciendo de efectos sobre los receptores nicotínicos.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Existen fármacos con mecanismos de acción dual en el sistema colinérgico.",
+      "explanation": "La Galantamina es un inhibidor de la AchE y además actúa como agonista nicotínico."
+    },
+    {
+      "q": "La 'respuesta habitual' a los inhibidores de la colinesterasa se caracteriza por una mejora inicial que dura aproximadamente 6 meses.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Diferencie entre la mejor respuesta y la evolución temporal de la respuesta estándar.",
+      "explanation": "La respuesta habitual implica una mejora inicial detectable en pruebas que suele durar unos 6 meses antes de volver al inicio."
+    },
+    {
+      "q": "La Hidergina es un potenciador metabólico que actúa como agonista total de los receptores dopaminérgicos y serotoninérgicos.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Revise si la activación de los receptores por parte de este fármaco es total o parcial.",
+      "explanation": "La Hidergina es un agonista parcial de DA, 5HT y NA, no un agonista total."
+    },
+    {
+      "q": "El Piracetam estimula la conversión de ADP en ATP para mejorar el metabolismo neuronal.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Relacione este nootropo con la moneda energética de la célula.",
+      "explanation": "El Piracetam mejora el metabolismo estimulando la conversión de ADP en ATP y mejorando la captación de oxígeno."
+    },
+    {
+      "q": "La terapia de estrógenos se investiga como factor neurotrófico aplicable tanto a hombres como a mujeres en la demencia.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Considere las restricciones poblacionales mencionadas en el texto para este tratamiento hormonal.",
+      "explanation": "El texto especifica que los estrógenos se consideran factor neurotrófico solo en mujeres."
+    },
+    {
+      "q": "La enfermedad de Párkinson es el trastorno neurodegenerativo crónico más frecuente, superando incluso a la EA.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Compare la prevalencia de las dos principales enfermedades neurodegenerativas citadas.",
+      "explanation": "La EP es el segundo trastorno neurodegenerativo más frecuente, por detrás de la enfermedad de Alzheimer."
+    },
+    {
+      "q": "La bradicinesia en el Párkinson se refiere específicamente a la rigidez muscular excesiva de las extremidades.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Diferencie entre la lentitud de movimiento y la resistencia pasiva al movimiento muscular.",
+      "explanation": "La bradicinesia es la lentitud de movimientos, mientras que la rigidez muscular se denomina hipertonía."
+    },
+    {
+      "q": "La sialorrea es un síntoma motor del Párkinson que consiste en la producción excesiva de saliva.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Asocie el término técnico con la manifestación clínica correspondiente en la EP.",
+      "explanation": "La sialorrea se define en el texto como la producción excesiva de saliva dentro de las manifestaciones motoras."
+    },
+    {
+      "q": "La anosmia es un síntoma no motor de la enfermedad de Párkinson caracterizado por la pérdida de la capacidad olfativa.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Identifique los sentidos que pueden verse afectados antes o durante la progresión motora.",
+      "explanation": "La anosmia es la pérdida o disminución de la capacidad olfativa, clasificada como síntoma no motor."
+    },
+    {
+      "q": "En la EP se produce un agotamiento de dopamina en el sistema nigroestriatal por degeneración de neuronas de la sustancia negra.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Localice el origen y el destino de la vía dopaminérgica más afectada en esta patología.",
+      "explanation": "La EP implica el agotamiento de DA en neuronas que se originan en la sustancia negra y proyectan al neostriado."
+    },
+    {
+      "q": "La neurotoxina MPTP es capaz de destruir las neuronas dopaminérgicas de la sustancia negra.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Recuerde el compuesto químico accidental que provocó parkinsonismo en consumidores de drogas.",
+      "explanation": "El MPTP es una neurotoxina que destruye específicamente las neuronas dopaminérgicas de la sustancia negra."
+    },
+    {
+      "q": "La mutación del gen parkin impide el transporte de proteínas defectuosas a los proteosomas, causando toxicidad celular.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Relacione la genética con el sistema de limpieza de proteínas de la neurona.",
+      "explanation": "El gen parkin transporta proteínas defectuosas a los proteosomas; su mutación causa acumulación tóxica de proteínas."
+    },
+    {
+      "q": "La dopamina administrada directamente vía oral es el tratamiento más eficaz para la EP ya que atraviesa fácilmente la barrera hematoencefálica.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Analice la capacidad de la dopamina pura para entrar en el sistema nervioso central.",
+      "explanation": "La dopamina no puede pasar del torrente sanguíneo al cerebro; por eso se utiliza su precursor, la Levodopa."
+    },
+    {
+      "q": "El fenómeno 'wearing-off' consiste en la reaparición predecible de síntomas motores antes de la siguiente dosis de medicación.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Asocie el término con el agotamiento del efecto terapéutico del fármaco.",
+      "explanation": "El wearing-off es la reaparición de síntomas que precede a una dosis programada debido a la progresión de la enfermedad."
+    },
+    {
+      "q": "La selegilina es un inhibidor de la MAO-B que se utiliza como complemento a la levodopa para evitar la degradación de dopamina.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe / No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Identifique el enzima degradador de monoaminas que es bloqueado selectivamente por este fármaco.",
+      "explanation": "La selegilina inhibe la MAO-B, protegiendo a la DA de la degradación intraneuronal en el SNC."
+    },
+    {
+      "q": "Señale la afirmación CORRECTA respecto a la anatomía patológica de la enfermedad de Alzheimer:",
+      "options": [
+        "Las placas amiloides son depósitos intracelulares que alteran el funcionamiento del núcleo basal.",
+        "Los ovillos neurofibrilares son de carácter extracelular y afectan principalmente a neuronas GABAérgicas.",
+        "Las placas seniles se localizan en la sustancia gris y están compuestas por núcleos de proteína beta-amiloide."
+      ],
+      "correct": 2,
+      "hint": "Diferencie claramente entre la ubicación y el tipo de proteína de placas y ovillos.",
+      "explanation": "Las placas seniles son extracelulares, de beta-amiloide y se hallan en la sustancia gris, según el texto."
+    },
+    {
+      "q": "Indique cuál de las siguientes hipótesis sobre la etiología de la EA es CORRECTA según el texto:",
+      "options": [
+        "La hipótesis colinérgica propone que la acumulación de beta-amiloide protege al núcleo basal de Meynert.",
+        "La hipótesis excitotóxica vincula el exceso de glutamato con la entrada masiva de calcio y muerte neuronal.",
+        "La hipótesis de la cascada amiloide descarta cualquier anomalía en el ADN que codifica la proteína PPA."
+      ],
+      "correct": 1,
+      "hint": "Busque la relación entre neurotransmisión glutamatérgica, iones y daño celular.",
+      "explanation": "La hipótesis excitotóxica sostiene que el exceso de glutamato causa entrada masiva de calcio y radicales libres."
+    },
+    {
+      "q": "Sobre los inhibidores de la colinesterasa, señale la opción CORRECTA:",
+      "options": [
+        "La Rivastigmina es un inhibidor irreversible de acción ultracorta indicado para casos graves.",
+        "El Donepezilo es un inhibidor reversible selectivo considerado tratamiento de primera línea.",
+        "La Fisostigmina es un agonista nicotínico irreversible de acción prolongada sin efectos secundarios."
+      ],
+      "correct": 1,
+      "hint": "Recuerde las características farmacocinéticas y la jerarquía de uso de los inhibidores mencionados.",
+      "explanation": "El Donepezilo es un inhibidor reversible selectivo de la AchE y es el fármaco de primera línea para la EA."
+    },
+    {
+      "q": "Respecto a la síntesis y degradación de la acetilcolina, ¿cuál de estas afirmaciones es CORRECTA?",
+      "options": [
+        "La colina y la acetil coenzima interactúan con la colina acetiltransferasa (CAT) para producir Ach.",
+        "La Ach se degrada exclusivamente por la acción del transportador presináptico de colina en el espacio sináptico.",
+        "El enzima CAT es el encargado de transformar la Ach en productos inactivos tras su liberación."
+      ],
+      "correct": 0,
+      "hint": "Identifique el enzima de síntesis (CAT) y el de degradación (AchE).",
+      "explanation": "La síntesis de Ach ocurre por la interacción de colina y AcCoA con la enzima CAT."
+    },
+    {
+      "q": "Identifique la respuesta terapéutica CORRECTA tras la administración de inhibidores de la colinesterasa:",
+      "options": [
+        "La respuesta paliativa implica una mejora sustancial que se mantiene durante años sin retroceso.",
+        "La respuesta habitual muestra una mejora inicial perceptible para el cuidador que dura unos 6 meses.",
+        "Sin respuesta es el término aplicado cuando la enfermedad se enlentece sin mostrar mejoras cognitivas."
+      ],
+      "correct": 1,
+      "hint": "Revise las definiciones de 'habitual', 'mejor respuesta' y 'paliativa' en el texto.",
+      "explanation": "La respuesta habitual dura unos 6 meses, tras los cuales se vuelve al punto de inicio, y es perceptible para el cuidador."
+    },
+    {
+      "q": "En relación con los 'otros agentes' para las demencias, ¿cuál de las siguientes opciones es CORRECTA?",
+      "options": [
+        "La Hidergina es un inhibidor de la recaptación de dopamina que mejora exclusivamente la cognición.",
+        "El Piracetam es un nootropo que estimula la conversión de ADP en ATP para mejorar el metabolismo.",
+        "La terapia de quelación utiliza agentes agonistas de metales pesados como el aluminio para su absorción."
+      ],
+      "correct": 1,
+      "hint": "Busque el mecanismo energético asociado al piracetam mencionado en el apartado de nootropos.",
+      "explanation": "El Piracetam mejora el metabolismo neuronal estimulando la conversión de ADP en ATP."
+    },
+    {
+      "q": "Señale la opción CORRECTA sobre las estrategias de investigación en demencias mencionadas:",
+      "options": [
+        "El uso de antagonistas del glutamato busca potenciar el efecto de la excitotoxicidad neuronal.",
+        "Los agonistas Ach, especialmente para el receptor M1, se encuentran actualmente en investigación.",
+        "La alteración de la APO-E tiene como objetivo exclusivo potenciar la formación de placas amiloides."
+      ],
+      "correct": 1,
+      "hint": "Identifique las intervenciones en receptores específicos que todavía no están en uso clínico generalizado.",
+      "explanation": "La intervención en receptores específicos con agonistas Ach (M1) es una línea de investigación actual."
+    },
+    {
+      "q": "Sobre la clínica de la enfermedad de Párkinson, indique la afirmación CORRECTA:",
+      "options": [
+        "La EP es un trastorno neurodegenerativo agudo que afecta exclusivamente a la función motora gruesa.",
+        "Los síntomas motores cardinales incluyen hipertonía, bradicinesia, temblor en reposo e inestabilidad.",
+        "La ausencia de expresión facial y la micrografía se clasifican como síntomas no motores primarios."
+      ],
+      "correct": 1,
+      "hint": "Enumere los cuatro síntomas principales que definen el cuadro motor del Párkinson.",
+      "explanation": "Los síntomas principales son: hipertonía (rigidez), bradicinesia, temblor en reposo e inestabilidad postural."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre las bases biológicas de la EP es CORRECTA?",
+      "options": [
+        "Existe una degeneración de neuronas dopaminérgicas en la vía que conecta la sustancia negra con el caudado.",
+        "El número de neuronas en el cuerpo estriado disminuye drásticamente perdiendo receptividad a la DA.",
+        "Las neuronas nígricas residuales son incapaces de captar L-DOPA para transformarla en dopamina."
+      ],
+      "correct": 0,
+      "hint": "Localice el sistema nigroestriatal y el papel de las neuronas supervivientes.",
+      "explanation": "La EP implica la degeneración de neuronas dopaminérgicas del sistema nigroestriatal (sustancia negra al caudado/putamen)."
+    },
+    {
+      "q": "Respecto a la etiología de la EP, señale la opción CORRECTA según las investigaciones:",
+      "options": [
+        "El consumo de tabaco y café se ha identificado como el principal factor de riesgo ambiental para la EP.",
+        "La exposición a pesticidas y herbicidas parece incrementar la incidencia de desarrollar la enfermedad.",
+        "El parkinsonismo juvenil recesivo es la forma más común de la enfermedad y carece de base genética."
+      ],
+      "correct": 1,
+      "hint": "Considere los factores ambientales que aumentan o disminuyen el riesgo de padecer la enfermedad.",
+      "explanation": "El texto menciona que la exposición a pesticidas y herbicidas parece incrementar la incidencia de la EP."
+    },
+    {
+      "q": "Identifique el mecanismo de acción CORRECTO de la Levodopa en el tratamiento de la EP:",
+      "options": [
+        "Atraviesa la barrera hematoencefálica y es convertida en dopamina por neuronas supervivientes.",
+        "Actúa como un inhibidor irreversible de la MAO-B protegiendo a la dopamina de la degradación.",
+        "Es un precursor de la dopamina que carece de eficacia sobre el temblor y la hipocinesia."
+      ],
+      "correct": 0,
+      "hint": "Analice cómo llega el fármaco al cerebro y en qué se transforma una vez allí.",
+      "explanation": "La L-DOPA atraviesa la barrera hematoencefálica y las neuronas dopaminérgicas la convierten en dopamina."
+    },
+    {
+      "q": "Sobre los agonistas dopaminérgicos, señale la afirmación CORRECTA:",
+      "options": [
+        "Se clasifican en derivados ergóticos (como el ropinirol) y no ergóticos (como la cabergolina).",
+        "Son útiles en monoterapia en estadios tempranos, especialmente en pacientes menores de 60 años.",
+        "Su uso exclusivo se limita a estadios terminales debido al alto riesgo de fluctuaciones motoras."
+      ],
+      "correct": 1,
+      "hint": "Diferencie entre los tipos de agonistas y el perfil de paciente ideal para el inicio del tratamiento.",
+      "explanation": "Son útiles en monoterapia inicial y algunos autores los indican preferentemente en menores de 60 años."
+    },
+    {
+      "q": "Indique cuál de estos fármacos antiparkinsonianos tiene este mecanismo de acción CORRECTO:",
+      "options": [
+        "Amantadina: inhibe exclusivamente la síntesis de dopamina y aumenta el metabolismo del glutamato.",
+        "Selegilina: inhibe la MAO-B para proteger a la dopamina de la degradación intraneuronal.",
+        "Entacapone: es un precursor de la dopamina que inhibe directamente los receptores serotoninérgicos."
+      ],
+      "correct": 1,
+      "hint": "Relacione el IMAO-B con la protección de la dopamina en el terminal presináptico.",
+      "explanation": "La selegilina inhibe la MAO-B, consiguiendo proteger a la DA de la degradación intraneuronal."
+    },
+    {
+      "q": "En cuanto a los ICOM T (Inhibidores de la catecoloximetiltransferasa), señale la opción CORRECTA:",
+      "options": [
+        "Aumentan la vida media de la levodopa al reducir su metabolismo periférico o central.",
+        "Su uso está contraindicado en pacientes que presenten el fenómeno de wearing-off.",
+        "El Entacapone destaca por su alta toxicidad hepática en comparación con el Tolcapone."
+      ],
+      "correct": 0,
+      "hint": "Revise el efecto de estos fármacos sobre la levodopa y cuál de ellos requiere vigilancia hepática.",
+      "explanation": "Los ICOMT reducen el metabolismo de la levodopa, incrementando su vida media y efectos terapéuticos."
+    },
+    {
+      "q": "Sobre el tratamiento quirúrgico de la EP, ¿cuál de las siguientes afirmaciones es CORRECTA?",
+      "options": [
+        "La palidotomía consiste en estimular el globo pálido para inducir discinesias terapéuticas.",
+        "La estimulación cerebral profunda (ECP) utiliza un marcapasos para enviar impulsos al tálamo o subtálamo.",
+        "El trasplante de tejido embrionario se realiza mediante la implantación de células de la corteza motora fetal."
+      ],
+      "correct": 1,
+      "hint": "Identifique la técnica más utilizada que utiliza un dispositivo electrónico implantable.",
+      "explanation": "La ECP es el tratamiento quirúrgico más usado e implica implantar un marcapasos que envía impulsos al cerebro."
+    },
+    {
+      "q": "Identifique la característica CORRECTA de la estimulación transcraneal por corriente alterna (TACS):",
+      "options": [
+        "Consiste en lesionar de forma intencionada el núcleo subtalámico mediante calor extremo.",
+        "Aplica corriente para que coincida con la señal oscilante de los temblores y así cancelarlos.",
+        "Es un procedimiento altamente invasivo que requiere la implantación de electrodos profundos."
+      ],
+      "correct": 1,
+      "hint": "Piense en un método no invasivo que busca 'cancelar' la frecuencia del temblor.",
+      "explanation": "La TACS aplica corriente alterna para que coincida con la oscilación del temblor y lo suprima."
+    },
+    {
+      "q": "Señale la afirmación CORRECTA respecto a la intervención del logopeda en el Párkinson:",
+      "options": [
+        "Su labor es irrelevante para los síntomas no motores como la ansiedad o la depresión.",
+        "Trabaja aspectos como la hipofonía, la disfagia y las alteraciones del lenguaje del paciente.",
+        "Se centra exclusivamente en la rehabilitación de la marcha y el equilibrio postural."
+      ],
+      "correct": 1,
+      "hint": "Revise el apartado de tratamiento rehabilitador y las funciones específicas del logopeda.",
+      "explanation": "El logopeda trabaja la disfagia, hipofonía, micrografía y otros aspectos del lenguaje y la comunicación."
+    },
+    {
+      "q": "Respecto a la enfermedad de Alzheimer, señale la opción CORRECTA sobre los signos neurológicos finales:",
+      "options": [
+        "En las etapas finales suelen aparecer el deterioro del lenguaje y trastornos de la marcha.",
+        "La debilidad facial es el único signo que persiste desde el inicio hasta el fin de la enfermedad.",
+        "La agnosia y la acalculia desaparecen gradualmente cuando se inicia el deterioro del lenguaje."
+      ],
+      "correct": 0,
+      "hint": "Considere la evolución temporal de los síntomas desde lo cognitivo a lo motor-neurológico.",
+      "explanation": "Finalmente, se produce un deterioro del lenguaje y signos neurológicos como trastornos de la marcha."
+    },
+    {
+      "q": "¿Cuál de estas afirmaciones sobre los inhibidores de la colinesterasa en fase de prueba es CORRECTA?",
+      "options": [
+        "El Donepezilo y la Tacrina son los únicos fármacos que siguen actualmente en fase de ensayo.",
+        "El Metrifonato, la Fisostigmina y la Galantamina se encuentran mencionados como fase de prueba.",
+        "La Rivastigmina se considera en fase de prueba debido a su duración intermedia de acción."
+      ],
+      "correct": 1,
+      "hint": "Consulte la lista de fármacos al final del apartado 6.1.3.",
+      "explanation": "El texto indica que el metrifonato, la fisostigmina y la galantamina están en fase de prueba."
+    },
+    {
+      "q": "Señale la opción CORRECTA sobre el Galantamina:",
+      "options": [
+        "Es un inhibidor irreversible de la AchE con efectos secundarios exclusivamente hepáticos.",
+        "Es un inhibidor selectivo y reversible de la AchE que además actúa como agonista nicotínico.",
+        "Se considera el tratamiento de primera línea por encima del Donepezilo por su acción dual."
+      ],
+      "correct": 1,
+      "hint": "Piense en el doble mecanismo (enzimático y receptor) de este fármaco.",
+      "explanation": "La Galantamina es un inhibidor selectivo/reversible de AchE y un agonista nicotínico."
+    },
+    {
+      "q": "Sobre el tratamiento rehabilitador del Párkinson, señale la opción CORRECTA:",
+      "options": [
+        "Los ejercicios de manos son más importantes que la terapia del lenguaje para la funcionalidad.",
+        "Es fundamental el trabajo del logopeda para corregir problemas como la disfagia y la hipofonía.",
+        "La rehabilitación física debe evitarse para no aumentar la fatiga y el agotamiento de dopamina."
+      ],
+      "correct": 1,
+      "hint": "Valore la importancia relativa que el texto otorga a las distintas terapias de apoyo.",
+      "explanation": "El texto destaca que es muy importante que un logopeda trabaje con el paciente aspectos como la disfagia e hipofonía."
+    },
+    {
+      "q": "En la hipótesis de la cascada amiloide, ¿qué factor es CORRECTO para explicar el exceso de beta-amiloide?",
+      "options": [
+        "Una producción excesiva, una escasa eliminación por APO-E o anomalías en el ADN de la PPA.",
+        "Una degeneración selectiva de los receptores M1 que impide la degradación de la amiloide.",
+        "Un aumento masivo de la acetilcolinesterasa que acelera la cristalización de la proteína PPA."
+      ],
+      "correct": 0,
+      "hint": "Recuerde los tres mecanismos fisiopatológicos propuestos para la acumulación proteica.",
+      "explanation": "La acumulación se debe a producción excesiva, mala eliminación (APO-E) o anomalía en ADN de la PPA."
+    },
+    {
+      "q": "Identifique el síntoma motor del Párkinson que se describe CORRECTAMENTE:",
+      "options": [
+        "Hipofonía: estado en que la letra manuscrita se hace cada vez más pequeña e ilegible.",
+        "Micrografía: bajo volumen de la voz que dificulta la comunicación verbal efectiva.",
+        "Bradicinesia: lentitud de movimientos voluntarios e involuntarios, con dificultad de inicio."
+      ],
+      "correct": 2,
+      "hint": "Asegúrese de no confundir los nombres técnicos de los trastornos del habla y de la escritura.",
+      "explanation": "La bradicinesia es la lentitud de movimientos; la micrografía es la letra pequeña y la hipofonía es voz baja."
+    },
+    {
+      "q": "¿Qué relación es CORRECTA entre el gen parkin y la EP según el texto?",
+      "options": [
+        "La mutación de parkin es la causa de la mayoría de los casos idiopáticos de Párkinson tardío.",
+        "Parkin produce una proteína que transporta proteínas defectuosas a los proteosomas para su destrucción.",
+        "Parkin es un gen inactivo en la sustancia negra que se activa solo ante la presencia de MPTP."
+      ],
+      "correct": 1,
+      "hint": "Identifique la función normal de la proteína producida por este gen antes de su mutación.",
+      "explanation": "La proteína parkin transporta proteínas defectuosas a los proteosomas para ser destruidas."
+    },
+    {
+      "q": "Señale la opción CORRECTA sobre los vasodilatadores cerebrales en las demencias:",
+      "options": [
+        "Su uso se basa en la hipótesis de que la aterosclerosis causa la pérdida cognitiva.",
+        "Han demostrado ser la terapia más eficaz para revertir el daño neuronal en la EA avanzada.",
+        "Actúan aumentando exclusivamente los niveles de acetilcolina en el hipocampo y amígdala."
+      ],
+      "correct": 0,
+      "hint": "Relacione el flujo sanguíneo con la justificación teórica de este tipo de fármacos.",
+      "explanation": "Se administran bajo la hipótesis de que la aterosclerosis en vasos cerebrales causa pérdida cognitiva."
+    },
+    {
+      "q": "Señale la afirmación INCORRECTA respecto a la definición de demencia en la EA:",
+      "options": [
+        "Se caracteriza por la pérdida progresiva de funciones cognitivas debida a daños cerebrales.",
+        "Provoca una incapacidad total para realizar las actividades básicas de la vida diaria.",
+        "La enfermedad de Alzheimer representa aproximadamente el 30% de todas las demencias."
+      ],
+      "correct": 2,
+      "hint": "Revise el porcentaje de prevalencia de la EA dentro del grupo de las demencias.",
+      "explanation": "La EA supone el 70% de todas las demencias, no el 30%."
+    },
+    {
+      "q": "Indique cuál de estas opciones sobre los síntomas iniciales de la EA es INCORRECTA:",
+      "options": [
+        "Al inicio se producen alteraciones de la memoria, concentración y dificultades visoespaciales.",
+        "La disfunción del lóbulo parietal da lugar a síntomas como agnosia, dispraxia y acalculia.",
+        "La pérdida de control de esfínteres y la sordera central son los primeros signos detectables."
+      ],
+      "correct": 2,
+      "hint": "Identifique los dominios cognitivos que se afectan primero según el desarrollo gradual descrito.",
+      "explanation": "Los síntomas iniciales son memoria, concentración y visoespaciales; la sordera no se cita como signo inicial."
+    },
+    {
+      "q": "Sobre la hipótesis de la cascada amiloide, señale la afirmación INCORRECTA:",
+      "options": [
+        "Sostiene que la causa de la muerte neuronal es la acumulación excesiva de beta-amiloide.",
+        "Las placas amiloides pueden deberse a una anomalía en el ADN que codifica la proteína PPA.",
+        "La proteína APO-E es la encargada de producir el exceso de beta-amiloide en el cerebro."
+      ],
+      "correct": 2,
+      "hint": "Recuerde si la APO-E tiene una función de síntesis o de limpieza proteica.",
+      "explanation": "La APO-E se encarga de eliminar el beta-amiloide, no de producirlo."
+    },
+    {
+      "q": "En cuanto a los inhibidores de la colinesterasa, señale la opción INCORRECTA:",
+      "options": [
+        "Su administración tiene como objetivo principal disminuir los niveles sinápticos de Ach.",
+        "La inhibición de la AchE impide la destrucción de la acetilcolina liberada al espacio sináptico.",
+        "Aumentan la concentración y la duración de los efectos del neurotransmisor acetilcolina."
+      ],
+      "correct": 0,
+      "hint": "Piense en el objetivo terapéutico: ¿se busca más o menos acetilcolina para tratar la demencia?",
+      "explanation": "El objetivo es aumentar los niveles de Ach, no disminuirlos."
+    },
+    {
+      "q": "Señale la opción INCORRECTA sobre los fármacos para la EA mencionados en el texto:",
+      "options": [
+        "El Donepezilo es un inhibidor reversible selectivo con efectos secundarios gastrointestinales.",
+        "La Tacrina presenta una vida media muy larga y carece de interacciones farmacológicas.",
+        "La Rivastigmina es un inhibidor reversible selectivo que presenta una duración intermedia."
+      ],
+      "correct": 1,
+      "hint": "Revise las características de la Tacrina respecto a su vida media e interacciones.",
+      "explanation": "La Tacrina tiene una vida media corta y sí presenta interacciones farmacológicas."
+    },
+    {
+      "q": "Sobre los 'otros agentes' y terapias para la demencia, señale la opción INCORRECTA:",
+      "options": [
+        "Las primeras terapias colinérgicas utilizaban precursores de síntesis como la lecitina.",
+        "Los nootropos en humanos han demostrado una eficacia total y universal para curar la demencia.",
+        "La hidergina mejora más el estado de ánimo que la propia función cognitiva del paciente."
+      ],
+      "correct": 1,
+      "hint": "Valore la evidencia científica y los resultados en humanos de los nootropos citados.",
+      "explanation": "El texto indica que en humanos los resultados de los nootropos son limitados y su eficacia es controvertida."
+    },
+    {
+      "q": "Respecto a las estrategias de investigación en demencias, señale la opción INCORRECTA:",
+      "options": [
+        "El uso de antiinflamatorios se basa en que las placas producen una reacción inflamatoria.",
+        "Los neuropéptidos como la arginina vasopresina han demostrado mejorar la memoria en humanos.",
+        "La terapia de estrógenos se considera un factor neurotrófico potencial solo para mujeres."
+      ],
+      "correct": 1,
+      "hint": "Diferencie los resultados obtenidos en modelos animales frente a los resultados en humanos.",
+      "explanation": "La arginina vasopresina ha mostrado mejora de memoria solo en animales, no se confirma en humanos."
+    },
+    {
+      "q": "Sobre la epidemiología y clínica del Párkinson, señale la afirmación INCORRECTA:",
+      "options": [
+        "Es más frecuente en edades avanzadas a partir de los 60 años de edad.",
+        "Existe un tipo de EP precoz que puede manifestarse en personas menores de 40 años.",
+        "La EP afecta mayoritariamente a mujeres, siendo muy extraña su aparición en hombres."
+      ],
+      "correct": 2,
+      "hint": "Considere la distribución por sexo de la enfermedad según el texto.",
+      "explanation": "El texto afirma que la EP afecta a hombres y mujeres, no indica una exclusividad femenina."
+    },
+    {
+      "q": "Indique cuál de estos síntomas motores del Párkinson está definido de forma INCORRECTA:",
+      "options": [
+        "Hipertonía muscular: consiste en la rigidez muscular de las extremidades.",
+        "Bradicinesia: lentitud de movimientos voluntarios con facilidad para comenzarlos.",
+        "Inestabilidad de la postura: dificultad para mantener el equilibrio corporal."
+      ],
+      "correct": 1,
+      "hint": "Fíjese en la descripción de la bradicinesia respecto a la facilidad o dificultad de inicio del movimiento.",
+      "explanation": "La bradicinesia implica dificultad (no facilidad) para comenzar y terminar los movimientos."
+    },
+    {
+      "q": "Sobre los síntomas no motores de la EP, señale la opción INCORRECTA:",
+      "options": [
+        "Los pacientes pueden presentar depresión, ansiedad, apatía y trastornos del sueño.",
+        "Se observan trastornos de la función autonómica como la hipertensión arterial súbita.",
+        "Pueden aparecer alteraciones sensoriales, dolor y pérdida de la capacidad olfativa."
+      ],
+      "correct": 1,
+      "hint": "Revise el tipo de alteración tensional que sufren estos pacientes (ortostática).",
+      "explanation": "La alteración autonómica mencionada es la hipotensión ortostática, no la hipertensión súbita."
+    },
+    {
+      "q": "Respecto a las bases biológicas de la EP, señale la afirmación INCORRECTA:",
+      "options": [
+        "Hay agotamiento de DA en las neuronas del sistema nigroestriatal por degeneración celular.",
+        "El número de neuronas del cuerpo estriado disminuye significativamente en estadios iniciales.",
+        "Con el tiempo, las células de la sustancia negra son insuficientes para convertir L-DOPA en DA."
+      ],
+      "correct": 1,
+      "hint": "Identifique qué población neuronal se pierde (sustancia negra) y cuál se mantiene (estriado).",
+      "explanation": "El texto dice que el número de neuronas en el cuerpo estriado NO está disminuido."
+    },
+    {
+      "q": "Sobre la etiología de la EP, señale la opción que contiene una afirmación INCORRECTA:",
+      "options": [
+        "Se sugiere que toxinas ambientales o metabolismo defectuoso pueden causar la EP.",
+        "La exposición a pesticidas y herbicidas parece disminuir drásticamente el riesgo de EP.",
+        "El tabaco y el café parecen ejercer un débil efecto protector contra el desarrollo de la EP."
+      ],
+      "correct": 1,
+      "hint": "Determine si los pesticidas son factores de riesgo o factores protectores.",
+      "explanation": "La exposición a pesticidas incrementa la incidencia de EP, no la disminuye."
+    },
+    {
+      "q": "Respecto al tratamiento farmacológico de la EP, señale la afirmación INCORRECTA:",
+      "options": [
+        "El suministro directo de dopamina es eficaz porque atraviesa la barrera hematoencefálica.",
+        "La Levodopa es el fármaco más eficaz para controlar síntomas como hipocinesia y temblor.",
+        "Se recomienda usar la menor dosis de levodopa posible para minimizar efectos adversos."
+      ],
+      "correct": 0,
+      "hint": "Recuerde por qué se usa levodopa en lugar de dopamina pura.",
+      "explanation": "La dopamina NO puede pasar del torrente sanguíneo al cerebro; por eso se usa Levodopa."
+    },
+    {
+      "q": "Sobre el fenómeno 'wearing-off' en la EP, señale la opción INCORRECTA:",
+      "options": [
+        "Consiste en la reaparición predecible de síntomas antes de la siguiente dosis pautada.",
+        "Se manifiesta con temblor, bradicinesia, rigidez matutina y reducción del tono de voz.",
+        "Es un efecto secundario que aparece únicamente tras la primera dosis de levodopa."
+      ],
+      "correct": 2,
+      "hint": "Piense si este fenómeno es de aparición inmediata o está ligado a la progresión del tratamiento.",
+      "explanation": "Aparece a medida que progresa la enfermedad y se continúa con el tratamiento, no es de dosis única."
+    },
+    {
+      "q": "Señale la afirmación INCORRECTA sobre los agonistas dopaminérgicos:",
+      "options": [
+        "Los derivados ergóticos incluyen fármacos como la bromocriptina y la cabergolina.",
+        "Tienen mayor riesgo de desarrollar complicaciones motoras que la propia levodopa.",
+        "Pueden producir trastornos en el control de impulsos como ludopatía o compras compulsivas."
+      ],
+      "correct": 1,
+      "hint": "Compare el riesgo de complicaciones motoras entre agonistas y levodopa.",
+      "explanation": "Los agonistas tienen MENOS riesgo de desarrollo de complicaciones motoras que la levodopa."
+    },
+    {
+      "q": "Sobre los agentes anticolinérgicos en la EP, señale la opción INCORRECTA:",
+      "options": [
+        "Son útiles en pacientes menores de 70 años con temblor predominante.",
+        "Se recomiendan especialmente en pacientes que ya presentan deterioro cognitivo grave.",
+        "Se pueden utilizar cuando el temblor persiste tras el inicio de la levodopa."
+      ],
+      "correct": 1,
+      "hint": "Valore la presencia de deterioro cognitivo como indicación o contraindicación para estos fármacos.",
+      "explanation": "Se indican en pacientes SIN deterioro cognitivo, ya que estos fármacos pueden empeorarlo."
+    },
+    {
+      "q": "Respecto a la Amantadina, señale la afirmación INCORRECTA:",
+      "options": [
+        "Se descubrió de forma accidental que era beneficiosa para la enfermedad de Alzheimer.",
+        "Su mecanismo de acción propuesto incluye el incremento de la liberación de dopamina.",
+        "Es más eficaz que la levodopa y su acción se mantiene constante durante décadas."
+      ],
+      "correct": 2,
+      "hint": "Compare la potencia terapéutica y la duración del efecto de la amantadina frente a la levodopa.",
+      "explanation": "No es tan eficaz como la levodopa y su acción se ve disminuida con el transcurso del tiempo."
+    },
+    {
+      "q": "Sobre los ICOMT en el tratamiento de la EP, señale la opción INCORRECTA:",
+      "options": [
+        "Reducen el metabolismo de la levodopa incrementando su vida media terapéutica.",
+        "Se recomiendan en pacientes que sufren fluctuaciones motoras tipo 'wearing-off'.",
+        "El Tolcapone y el Entacapone carecen por completo de cualquier efecto hepatotóxico."
+      ],
+      "correct": 2,
+      "hint": "Identifique cuál de los dos fármacos mencionados requiere control de la función del hígado.",
+      "explanation": "El Tolcapone destaca precisamente por su efecto hepatotóxico potencial."
+    },
+    {
+      "q": "Señale la afirmación INCORRECTA sobre el tratamiento quirúrgico lesional:",
+      "options": [
+        "Consiste en lesionar intencionadamente una estructura para suprimir su hiperactividad.",
+        "Un ejemplo de este tratamiento es la palidotomía para controlar la discinesia.",
+        "Es el método menos invasivo y se prefiere siempre a la estimulación cerebral profunda."
+      ],
+      "correct": 2,
+      "hint": "Valore qué técnica quirúrgica se considera actualmente como la más utilizada y preferida.",
+      "explanation": "La ECP es el tratamiento quirúrgico más utilizado, no la técnica lesional."
+    },
+    {
+      "q": "En relación con la Estimulación Cerebral Profunda (ECP), señale la opción INCORRECTA:",
+      "options": [
+        "Consiste en la implantación de un marcapasos que envía impulsos eléctricos.",
+        "Las estructuras blanco de los impulsos suelen ser el tálamo y el globo pálido.",
+        "Requiere la destrucción total de la sustancia negra para garantizar su efectividad."
+      ],
+      "correct": 2,
+      "hint": "Analice si el objetivo de la ECP es destruir neuronas o modular su actividad.",
+      "explanation": "La ECP modula la actividad, no requiere la destrucción de la sustancia negra."
+    },
+    {
+      "q": "Sobre el trasplante de tejido embrionario en la EP, señale la opción INCORRECTA:",
+      "options": [
+        "El objetivo es restablecer la secreción de dopamina en el neoestriado del paciente.",
+        "Se implanta tejido de la sustancia negra de fetos humanos en el núcleo caudado.",
+        "Es una técnica de rutina en todos los hospitales por carecer de problemas éticos."
+      ],
+      "correct": 2,
+      "hint": "Considere la viabilidad práctica y ética de utilizar tejidos fetales en cirugía.",
+      "explanation": "El texto menciona que presenta problemas éticos y está en desarrollo teórico."
+    },
+    {
+      "q": "Indique la afirmación INCORRECTA sobre el tratamiento rehabilitador del Párkinson:",
+      "options": [
+        "El logopeda debe trabajar con el paciente el máximo tiempo posible para ser eficaz.",
+        "La micrografía y la hipofonía son aspectos del lenguaje que deben ser rehabilitados.",
+        "La rehabilitación es opcional y no influye en la funcionalidad del enfermo a largo plazo."
+      ],
+      "correct": 2,
+      "hint": "Valore la importancia de la rehabilitación para mantener la autonomía del paciente.",
+      "explanation": "El objetivo de la rehabilitación es precisamente mantener la funcionalidad el mayor tiempo posible."
+    },
+    {
+      "q": "Respecto a la degradación de la acetilcolina, señale la opción INCORRECTA:",
+      "options": [
+        "El enzima acetilcolinesterasa (AchE) transforma la Ach en productos inactivos.",
+        "Si se inhibe la AchE se producirá un menor nivel de acetilcolina en la hendidura.",
+        "Las acciones de la Ach pueden finalizar mediante el transportador presináptico de colina."
+      ],
+      "correct": 1,
+      "hint": "Piense en el resultado lógico de bloquear un enzima degradador.",
+      "explanation": "Si se inhibe la AchE, habrá un MAYOR nivel de Ach, no menor."
+    },
+    {
+      "q": "Sobre los receptores colinérgicos, señale la afirmación INCORRECTA:",
+      "options": [
+        "La principal subdivisión es entre receptores nicotínicos (N) y muscarínicos (M).",
+        "El receptor M1 postsináptico es fundamental para las funciones de memoria.",
+        "Existen únicamente dos subtipos de receptores muscarínicos en todo el cerebro humano."
+      ],
+      "correct": 2,
+      "hint": "Reflexione sobre la diversidad de los subtipos de receptores mencionados en el manual.",
+      "explanation": "El texto indica que existen numerosos subtipos de estos receptores (N y M)."
+    },
+    {
+      "q": "En cuanto a los tipos de respuesta a fármacos en la EA, señale la opción INCORRECTA:",
+      "options": [
+        "La 'mejor respuesta' es advertida tanto por el paciente como por el cuidador.",
+        "La 'respuesta paliativa' produce una mejora cognitiva superior a la 'mejor respuesta'.",
+        "En la opción 'sin respuesta' no se produce ninguna mejora ni enlentecimiento."
+      ],
+      "correct": 1,
+      "hint": "Compare la jerarquía de eficacia de las respuestas descritas en el apartado 6.1.3.",
+      "explanation": "La respuesta paliativa es inferior; solo enlentece la enfermedad sin producir mejora."
+    },
+    {
+      "q": "La demencia se caracteriza por la pérdida progresiva de funciones cognitivas que provoca incapacidad para realizar ____.",
+      "options": [
+        "tareas de esfuerzo físico",
+        "actividades de vida diaria",
+        "procesos de habla fluida"
+      ],
+      "correct": 1,
+      "hint": "Se refiere a la autonomía básica del paciente.",
+      "explanation": "La definición de demencia destaca la incapacidad para realizar las actividades de la vida diaria debido al daño cerebral."
+    },
+    {
+      "q": "En la enfermedad de Alzheimer, la disfunción del lóbulo parietal da lugar específicamente a agnosia, dispraxia y ____.",
+      "options": [
+        "acalculia neurológica",
+        "amnesia retrógrada",
+        "anomia semántica"
+      ],
+      "correct": 0,
+      "hint": "Trastorno relacionado con las capacidades aritméticas.",
+      "explanation": "El texto asocia la disfunción parietal con la tríada de agnosia, dispraxia y acalculia."
+    },
+    {
+      "q": "Las placas seniles son núcleos o depósitos de proteína beta-amiloide de localización ____.",
+      "options": [
+        "intracelular neuronal",
+        "extracelular cerebral",
+        "intravascular central"
+      ],
+      "correct": 1,
+      "hint": "Se encuentran en la sustancia gris, fuera de las células.",
+      "explanation": "Las placas amiloides son depósitos extracelulares, a diferencia de los ovillos que son intracelulares."
+    },
+    {
+      "q": "Los ovillos neurofibrilares están compuestos por proteínas ____ helicoidales que se enroscan formando manojos.",
+      "options": [
+        "beta-amiloides tóxicas",
+        "apolipoproteínas tipo E",
+        "tau intracitoplásmicas"
+      ],
+      "correct": 2,
+      "hint": "Es la proteína que estabiliza los microtúbulos.",
+      "explanation": "Los ovillos neurofibrilares son proteínas tau que interfieren en el funcionamiento celular, especialmente en neuronas colinérgicas."
+    },
+    {
+      "q": "Según la hipótesis de la cascada amiloide, la escasa eliminación del beta-amiloide se debe al mal funcionamiento de ____.",
+      "options": [
+        "la proteína precursora",
+        "la apolipoproteína E",
+        "la colina acetilasa"
+      ],
+      "correct": 1,
+      "hint": "Es la encargada de la limpieza de estos depósitos.",
+      "explanation": "La APO-E es la responsable de eliminar el beta-amiloide; su mal funcionamiento causa acumulación."
+    },
+    {
+      "q": "La hipótesis colinérgica sostiene que la pérdida de memoria se debe al deterioro de las neuronas del ____.",
+      "options": [
+        "núcleo basal de Meynert",
+        "lóbulo temporal medial",
+        "núcleo estriado dorsal"
+      ],
+      "correct": 0,
+      "hint": "Principal fuente colinérgica hacia el córtex e hipocampo.",
+      "explanation": "Las neuronas del núcleo basal de Meynert proyectan a hipocampo, amígdala y neocórtex."
+    },
+    {
+      "q": "La hipótesis excitotóxica propone que el exceso de neurotransmisión glutamatérgica provoca una entrada masiva de ____.",
+      "options": [
+        "sodio en la neurona",
+        "calcio en la célula",
+        "potasio extracelular"
+      ],
+      "correct": 1,
+      "hint": "Ion que activa enzimas degradativas.",
+      "explanation": "La entrada masiva de calcio produce radicales libres y la consecuente degeneración neuronal."
+    },
+    {
+      "q": "La enzima colina acetiltransferasa (CAT) es la encargada de la ____ de la acetilcolina.",
+      "options": [
+        "síntesis neuronal",
+        "degradación sináptica",
+        "recaptación activa"
+      ],
+      "correct": 0,
+      "hint": "Interactúa con colina y AcCoA.",
+      "explanation": "La CAT sintetiza Ach a partir de colina y acetil coenzima (AcCoA)."
+    },
+    {
+      "q": "El receptor colinérgico ____ postsináptico destaca por su papel mediador en las funciones de memoria.",
+      "options": [
+        "nicotínico tipo alfa",
+        "muscarínico M1",
+        "muscarínico M2"
+      ],
+      "correct": 1,
+      "hint": "Es el subtipo más implicado en procesos cognitivos.",
+      "explanation": "El receptor M1 es el mediador principal en las funciones de memoria ligadas a la neurotransmisión colinérgica."
+    },
+    {
+      "q": "El donepezilo se caracteriza por ser un inhibidor reversible ____ de la acetilcolina colinesterasa.",
+      "options": [
+        "no selectivo total",
+        "selectivo de la AchE",
+        "de acción intermedia"
+      ],
+      "correct": 1,
+      "hint": "Es el tratamiento de primera línea.",
+      "explanation": "El donepezilo es un inhibidor reversible selectivo de la AchE."
+    },
+    {
+      "q": "La tacrina se considera actualmente un tratamiento de segunda línea debido a su ____.",
+      "options": [
+        "toxicidad hepática",
+        "debilidad muscular",
+        "baja permeabilidad"
+      ],
+      "correct": 0,
+      "hint": "Afecta a un órgano vital no cerebral.",
+      "explanation": "La tacrina fue aprobada primero, pero su toxicidad hepática limitó su uso."
+    },
+    {
+      "q": "La rivastigmina es un inhibidor reversible selectivo de la AchE de duración ____.",
+      "options": [
+        "extremadamente corta",
+        "media o intermedia",
+        "prolongada o larga"
+      ],
+      "correct": 1,
+      "hint": "Se sitúa entre el donepezilo y el metrifonato.",
+      "explanation": "El texto define explícitamente a la rivastigmina como de duración intermedia."
+    },
+    {
+      "q": "El metrifonato es un inhibidor irreversible de larga duración que presenta como efecto secundario ____.",
+      "options": [
+        "náuseas y vómitos",
+        "debilidad muscular",
+        "trastornos del sueño"
+      ],
+      "correct": 1,
+      "hint": "Afecta al sistema motor periférico.",
+      "explanation": "La debilidad muscular es el efecto adverso característico del metrifonato."
+    },
+    {
+      "q": "La galantamina actúa como inhibidor selectivo y reversible de la AchE y como ____.",
+      "options": [
+        "antagonista muscarínico",
+        "agonista nicotínico",
+        "precursor de colina"
+      ],
+      "correct": 1,
+      "hint": "Tiene un doble mecanismo de acción colinérgico.",
+      "explanation": "La galantamina combina la inhibición de AchE con la agonía nicotínica."
+    },
+    {
+      "q": "En la respuesta ____ a los psicofármacos, no se produce mejora sino un enlentecimiento de la enfermedad.",
+      "options": [
+        "habitual moderada",
+        "paliativa progresiva",
+        "terapéutica óptima"
+      ],
+      "correct": 1,
+      "hint": "Solo frena la caída cognitiva.",
+      "explanation": "La respuesta paliativa se define como el enlentecimiento sin mejora real."
+    },
+    {
+      "q": "La hidergina es un potenciador metabólico que actúa como agonista parcial de DA, 5HT y ____.",
+      "options": [
+        "acetilcolina (Ach)",
+        "noradrenalina (NA)",
+        "glutamato (Glu)"
+      ],
+      "correct": 1,
+      "hint": "Actúa sobre tres sistemas monoaminérgicos.",
+      "explanation": "La hidergina es agonista parcial de DA, 5HT y NA."
+    },
+    {
+      "q": "La terapia de quelación se utiliza para la eliminación de metales pesados del cuerpo como el ____.",
+      "options": [
+        "hierro oxidado",
+        "aluminio tóxico",
+        "plomo inorgánico"
+      ],
+      "correct": 1,
+      "hint": "Metal asociado históricamente con el Alzheimer.",
+      "explanation": "Se administran agentes quelantes para eliminar aluminio."
+    },
+    {
+      "q": "El piracetam mejora el metabolismo neuronal estimulando la conversión de ____ en ATP.",
+      "options": [
+        "adenosina (ADO)",
+        "adenosín difosfato",
+        "guanosín trifosfato"
+      ],
+      "correct": 1,
+      "hint": "Paso previo a la formación de energía.",
+      "explanation": "El piracetam estimula la conversión de ADP en ATP."
+    },
+    {
+      "q": "Los nootropos parecen ser más útiles en casos de demencia ____.",
+      "options": [
+        "grave o profunda",
+        "leve o moderada",
+        "incipiente o nula"
+      ],
+      "correct": 1,
+      "hint": "Su eficacia es limitada en etapas avanzadas.",
+      "explanation": "La eficacia de los nootropos se restringe a estadios leves o moderados."
+    },
+    {
+      "q": "En la enfermedad de Alzheimer se produce una alteración en el factor liberador de ____.",
+      "options": [
+        "tirotropina (TRH)",
+        "corticotropina (CRF)",
+        "somatotropina (GH)"
+      ],
+      "correct": 1,
+      "hint": "Relacionado con el eje del estrés.",
+      "explanation": "Se han encontrado alteraciones en el factor liberador de corticotropina, neuropéptido Y y sustancia P."
+    },
+    {
+      "q": "La enfermedad de Párkinson se clasifica principalmente como un trastorno del ____.",
+      "options": [
+        "ánimo persistente",
+        "movimiento motor",
+        "lenguaje expresivo"
+      ],
+      "correct": 1,
+      "hint": "Afecta a la ejecución de acciones físicas.",
+      "explanation": "Aunque tiene otros síntomas, se clasifica esencialmente como trastorno del movimiento."
+    },
+    {
+      "q": "La bradicinesia en el Párkinson se define como la ____ voluntarios e involuntarios.",
+      "options": [
+        "ausencia de actos",
+        "lentitud de gestos",
+        "pérdida de fuerza"
+      ],
+      "correct": 1,
+      "hint": "Dificultad para comenzar y terminar movimientos.",
+      "explanation": "La bradicinesia es la lentitud de movimientos, especialmente al inicio y final."
+    },
+    {
+      "q": "La micrografía es un síntoma motor caracterizado por una letra manuscrita que se hace ____.",
+      "options": [
+        "grande y gruesa",
+        "pequeña o ilegible",
+        "angulosa y temblorosa"
+      ],
+      "correct": 1,
+      "hint": "Tendencia a la reducción del tamaño.",
+      "explanation": "La micrografía consiste en que la letra se vuelve cada vez más pequeña."
+    },
+    {
+      "q": "Los pacientes con EP presentan agotamiento de DA en las neuronas del sistema ____.",
+      "options": [
+        "mesolímbico ventral",
+        "nigroestriatal dorsal",
+        "tuberoinfundibular"
+      ],
+      "correct": 1,
+      "hint": "Conecta la sustancia negra con el neostriado.",
+      "explanation": "El sistema nigroestriatal (sustancia negra al caudado/putamen) es el afectado."
+    },
+    {
+      "q": "El neostriado está compuesto por los núcleos ____.",
+      "options": [
+        "acumbens y septal",
+        "caudado y putamen",
+        "rojo y subtalámico"
+      ],
+      "correct": 1,
+      "hint": "Son las dianas de la proyección dopaminérgica nigral.",
+      "explanation": "El neostriado incluye los núcleos caudado y putamen."
+    },
+    {
+      "q": "La mutación del gen ____ es la causante del Parkinsonismo juvenil recesivo autosómico.",
+      "options": [
+        "presenilina-1",
+        "gen llamado parkin",
+        "precursor amiloide"
+      ],
+      "correct": 1,
+      "hint": "Nombre similar a la enfermedad.",
+      "explanation": "El gen parkin produce una proteína que transporta proteínas defectuosas a los proteosomas."
+    },
+    {
+      "q": "La levodopa es un fármaco eficaz porque es el ____ de la dopamina.",
+      "options": [
+        "metabolito final",
+        "precursor directo",
+        "antagonista parcial"
+      ],
+      "correct": 1,
+      "hint": "Se convierte en DA dentro del cerebro.",
+      "explanation": "La levodopa (L-DOPA) es recogida por neuronas dopaminérgicas y convertida en DA."
+    },
+    {
+      "q": "El fenómeno 'wearing-off' consiste en la reaparición de síntomas que ____ a una dosis programada.",
+      "options": [
+        "sigue de forma",
+        "precede a una",
+        "coincide con la"
+      ],
+      "correct": 1,
+      "hint": "Ocurre cuando el efecto de la dosis anterior se agota.",
+      "explanation": "El wearing-off precede a la dosis programada debido a la pérdida de eficacia temporal."
+    },
+    {
+      "q": "Los agonistas dopaminérgicos derivados ____ incluyen la bromocriptina y la cabergolina.",
+      "options": [
+        "del ácido valproico",
+        "ergóticos de síntesis",
+        "no ergóticos puros"
+      ],
+      "correct": 1,
+      "hint": "Clasificación clásica de estos fármacos.",
+      "explanation": "Bromocriptina, cabergolina y lisuride son derivados ergóticos."
+    },
+    {
+      "q": "La selegilina actúa inhibiendo la enzima ____ para proteger a la DA de la degradación.",
+      "options": [
+        "monoaminoxidasa A",
+        "monoaminoxidasa B",
+        "catecol-O-metil-T"
+      ],
+      "correct": 1,
+      "hint": "Isoforma predominante en el SNC para la DA.",
+      "explanation": "La selegilina es un IMAO-B que actúa en el sistema nervioso central."
+    },
+    {
+      "q": "La amantadina fue descubierta de forma accidental debido a su efecto primario ____.",
+      "options": [
+        "antihipertensivo",
+        "antiviral potente",
+        "anticonvulsivante"
+      ],
+      "correct": 1,
+      "hint": "Se usaba para tratar infecciones.",
+      "explanation": "En 1969 se descubrió su beneficio en EP mientras se usaba como antiviral."
+    },
+    {
+      "q": "Los ICOMT como el entacapone reducen el ____ de la levodopa.",
+      "options": [
+        "efecto colateral",
+        "metabolismo periférico",
+        "paso por la BHE"
+      ],
+      "correct": 1,
+      "hint": "Ayudan a que la L-DOPA dure más en sangre.",
+      "explanation": "Los ICOMT incrementan la vida media de la levodopa al reducir su metabolismo."
+    },
+    {
+      "q": "La palidotomía consiste en lesionar de forma intencionada el ____.",
+      "options": [
+        "núcleo subtalámico",
+        "globo pálido interno",
+        "tálamo ventrolateral"
+      ],
+      "correct": 1,
+      "hint": "Cirugía para controlar la discinesia.",
+      "explanation": "Suprimir el globo pálido ayuda a controlar la hiperactividad estructural causante de discinesia."
+    },
+    {
+      "q": "La estimulación cerebral profunda (ECP) utiliza la implantación de un ____.",
+      "options": [
+        "catéter de drenaje",
+        "marcapasos cerebral",
+        "electrodo térmico"
+      ],
+      "correct": 1,
+      "hint": "Envía impulsos eléctricos constantes.",
+      "explanation": "La ECP consiste en implantar un dispositivo que envía impulsos a tálamo, pálido o núcleo subtalámico."
+    },
+    {
+      "q": "En el trasplante de tejido embrionario, el material se obtiene de la ____ de fetos humanos.",
+      "options": [
+        "sustancia blanca",
+        "sustancia negra",
+        "corteza motora"
+      ],
+      "correct": 1,
+      "hint": "Región rica en neuronas dopaminérgicas.",
+      "explanation": "Se busca restablecer la secreción de DA mediante tejido de la sustancia negra fetal."
+    },
+    {
+      "q": "La sialorrea en pacientes con Párkinson se define como la ____.",
+      "options": [
+        "sequedad de boca",
+        "producción excesiva",
+        "pérdida del gusto"
+      ],
+      "correct": 1,
+      "hint": "Relacionado con la saliva.",
+      "explanation": "La sialorrea es la production excesiva de saliva."
+    },
+    {
+      "q": "La agnosia es un síntoma de demencia que implica la alteración en el ____.",
+      "options": [
+        "habla articulada",
+        "reconocimiento de estímulos",
+        "control postural"
+      ],
+      "correct": 1,
+      "hint": "Fallo en la interpretación sensorial.",
+      "explanation": "La agnosia se define como la alteración en el reconocimiento de estímulos."
+    },
+    {
+      "q": "La proteína precursora de la amiloide se abrevia mediante las siglas ____.",
+      "options": [
+        "siglas tipo APP",
+        "siglas tipo PPA",
+        "siglas tipo BAP"
+      ],
+      "correct": 1,
+      "hint": "Sigue el orden de las palabras en español.",
+      "explanation": "En el texto se utiliza el término PPA para referirse a dicha proteína."
+    },
+    {
+      "q": "La fisostigmina es un inhibidor de la AchE caracterizado por ser de acción ____.",
+      "options": [
+        "prolongada estable",
+        "muy corta y efectiva",
+        "irreversible total"
+      ],
+      "correct": 1,
+      "hint": "Tiene una vida media reducida.",
+      "explanation": "La fisostigmina es de acción muy corta y produce efectos secundarios como náuseas."
+    },
+    {
+      "q": "La hipotensión ortostática en el Párkinson es una alteración de la función ____.",
+      "options": [
+        "motora piramidal",
+        "autonómica central",
+        "emocional límbica"
+      ],
+      "correct": 1,
+      "hint": "Regula funciones automáticas del organismo.",
+      "explanation": "La hipotensión forma parte de los trastornos de la función autonómica en la EP."
+    },
+    {
+      "q": "Son síntomas característicos de la fase inicial de la Enfermedad de Alzheimer:",
+      "options": [
+        "Dificultades visoespaciales",
+        "Alteraciones de memoria",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Son síntomas que aparecen gradualmente.",
+      "explanation": "Al inicio se producen alteraciones de memoria, concentración y dificultades visoespaciales."
+    },
+    {
+      "q": "Los mecanismos que explican la acumulación de beta-amiloide según la hipótesis de la cascada son:",
+      "options": [
+        "Producción excesiva",
+        "Escasa eliminación",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Incluye fallos en síntesis, limpieza y genética.",
+      "explanation": "La acumulación se debe a exceso de producción, falta de eliminación (APO-E) o anomalía en PPA (ADN)."
+    },
+    {
+      "q": "La degeneración neuronal por excitotoxicidad implica procesos como:",
+      "options": [
+        "Entrada masiva de calcio",
+        "Producción de radicales",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Es una cascada de eventos bioquímicos tóxicos.",
+      "explanation": "El exceso de glutamato permite la entrada de calcio, lo que aumenta los radicales libres."
+    },
+    {
+      "q": "Para la síntesis de acetilcolina (Ach) se requieren los siguientes elementos:",
+      "options": [
+        "Colina de la dieta",
+        "Acetil coenzima (AcCoA)",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Se necesitan dos precursores específicos.",
+      "explanation": "La Ach se sintetiza a partir de colina y AcCoA mediante la enzima CAT."
+    },
+    {
+      "q": "Son inhibidores de la colinesterasa actualmente en fase de prueba (según el texto):",
+      "options": [
+        "Fármaco fisostigmina",
+        "Fármaco galantamina",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Incluye también al metrifonato.",
+      "explanation": "El texto cita al metrifonato, fisostigmina y galantamina como fármacos en fase de prueba."
+    },
+    {
+      "q": "La respuesta habitual de los pacientes a los inhibidores de la colinesterasa se caracteriza por:",
+      "options": [
+        "Mejora inicial en test",
+        "Perceptible por cuidador",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Dura unos 6 meses antes de volver al inicio.",
+      "explanation": "La respuesta habitual es perceptible para el cuidador y en tests, pero no para el paciente."
+    },
+    {
+      "q": "Se consideran 'otros agentes' de eficacia limitada o no demostrada en demencias:",
+      "options": [
+        "Vasodilatadores cerebrales",
+        "Nootropos (piracetam)",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Incluye vitaminas y quelantes.",
+      "explanation": "Vasodilatadores, nootropos, vitaminas y quelación están en el grupo de eficacia limitada."
+    },
+    {
+      "q": "Son líneas actuales de investigación para el tratamiento de las demencias:",
+      "options": [
+        "Terapia de estrógenos",
+        "Agentes antiinflamatorios",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Se exploran múltiples vías biológicas.",
+      "explanation": "La investigación abarca estrógenos, antiinflamatorios, antagonistas de glutamato, etc."
+    },
+    {
+      "q": "La Enfermedad de Párkinson desencadena alteraciones en las siguientes funciones:",
+      "options": [
+        "Función de la cognición",
+        "Función de las emociones",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "No es exclusivamente un trastorno motor.",
+      "explanation": "La EP afecta al movimiento, cognición, emociones y sistema autónomo."
+    },
+    {
+      "q": "Los síntomas no motores que pueden presentar los pacientes con EP incluyen:",
+      "options": [
+        "Trastornos del sueño",
+        "Anosmia y dolores",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Afectan a la calidad de vida global.",
+      "explanation": "Incluye depresión, ansiedad, trastornos del sueño, anosmia y disfunción autonómica."
+    },
+    {
+      "q": "Factores que parecen incrementar el riesgo o estar implicados en la etiología de la EP:",
+      "options": [
+        "Toxina tipo MPTP",
+        "Uso de pesticidas",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Se mencionan factores ambientales y neurotoxinas.",
+      "explanation": "El MPTP, pesticidas y herbicidas incrementan la incidencia de la enfermedad."
+    },
+    {
+      "q": "Entre los agonistas dopaminérgicos no ergóticos se encuentran los siguientes:",
+      "options": [
+        "Fármaco pramipexol",
+        "Fármaco ropinirol",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Son fármacos de elección en menores de 60 años.",
+      "explanation": "Pramipexol, ropinirol, rotigotina y apomorfina son derivados no ergóticos."
+    },
+    {
+      "q": "Los efectos secundarios de los agonistas dopaminérgicos pueden incluir:",
+      "options": [
+        "Ludopatía compulsiva",
+        "Hipersexualidad",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Son trastornos del control de impulsos.",
+      "explanation": "Pueden aparecer comportamientos sexuales o de compra compulsivos y ludopatía."
+    },
+    {
+      "q": "La amantadina tiene los siguientes posibles mecanismos de acción propuestos:",
+      "options": [
+        "Inhibe al glutamato",
+        "Libera dopamina",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Actúa sobre varios sistemas de neurotransmisión.",
+      "explanation": "Incrementa la liberación de DA, inhibe recaptación de aminas y bloquea el glutamato."
+    },
+    {
+      "q": "El tratamiento quirúrgico del Párkinson mediante ECP puede dirigirse a:",
+      "options": [
+        "Núcleo subtalámico",
+        "Globo pálido",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Incluye también estructuras del tálamo.",
+      "explanation": "La ECP incluye como dianas el tálamo, el globo pálido y el núcleo subtalámico."
+    },
+    {
+      "q": "El tratamiento rehabilitador en la EP es fundamental para trabajar aspectos como:",
+      "options": [
+        "Disfagia y lenguaje",
+        "Ansiedad y caligrafía",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Requiere la intervención de un logopeda.",
+      "explanation": "Se trabaja disfagia, hipofonía, micrografía, ansiedad y manejo de objetos."
+    },
+    {
+      "q": "La mejor respuesta a los inhibidores de la colinesterasa se define por:",
+      "options": [
+        "Mejora de cuidadores",
+        "Aparición en semanas",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Es la respuesta más positiva posible.",
+      "explanation": "Es una mejora sustancial advertida por paciente/cuidador que aparece pronto y dura meses."
+    },
+    {
+      "q": "El sistema nigroestriatal está compuesto por proyecciones que van desde:",
+      "options": [
+        "La sustancia negra",
+        "Hacia el neostriado",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Es una vía anatómica específica.",
+      "explanation": "Se origina en la sustancia negra y proyecta al neostriado (caudado y putamen)."
+    },
+    {
+      "q": "¿Qué fármaco se define como inhibidor reversible de la AchE de acción muy corta?",
+      "options": [
+        "El fármaco tacrina",
+        "El fármaco metrifonato",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Debería ser la fisostigmina.",
+      "explanation": "La tacrina es de acción central (vida media corta pero no 'muy corta') y el metrifonato es irreversible."
+    },
+    {
+      "q": "¿Cuál es el precursor de la síntesis de acetilcolina que se obtiene de las mitocondrias?",
+      "options": [
+        "La colina dietética",
+        "La colina acetilasa",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se refiere a la Acetil coenzima (AcCoA).",
+      "explanation": "La AcCoA se forma en las mitocondrias a partir de la glucosa."
+    },
+    {
+      "q": "¿Qué tipo de receptores colinérgicos son los nicotínicos?",
+      "options": [
+        "Receptores metabotrópicos",
+        "Receptores tipo M1",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Los nicotínicos son ionotrópicos (no indicado en texto, pero M1 es muscarínico).",
+      "explanation": "El texto separa nicotínicos de muscarínicos (M1), sin dar el mecanismo exacto, pero las opciones son erróneas."
+    },
+    {
+      "q": "¿Qué sustancia protectora contra la EP tiene un efecto protector fuerte y demostrado?",
+      "options": [
+        "La ingesta de alcohol",
+        "La dieta hiperproteica",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "El tabaco y el café tienen un efecto débil.",
+      "explanation": "El texto menciona tabaco y café como protectores débiles; no hay mención a alcohol o dieta como protectores fuertes."
+    },
+    {
+      "q": "¿Cuál de los siguientes es un derivado ergótico usado en el Párkinson?",
+      "options": [
+        "El fármaco ropinirol",
+        "El fármaco apomorfina",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Esos dos son no ergóticos.",
+      "explanation": "Ropinirol y apomorfina son no ergóticos. Los ergóticos son bromocriptina, cabergolina, etc."
+    },
+    {
+      "q": "¿Qué técnica quirúrgica utiliza corriente alterna para cancelar la señal del temblor?",
+      "options": [
+        "La técnica de ECP",
+        "La técnica palidotomía",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se denomina TACS.",
+      "explanation": "Se trata de la estimulación transcraneal por corriente alterna (TACS)."
+    },
+    {
+      "q": "¿Qué fármaco para el Párkinson tiene un efecto hepatotóxico destacado?",
+      "options": [
+        "El fármaco entacapone",
+        "El fármaco amantadina",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se trata del tolcapone.",
+      "explanation": "Dentro de los ICOMT, el tolcapone es el que presenta efecto hepatotóxico."
+    },
+    {
+      "q": "¿Qué hipótesis explica el Parkinson como resultado de una mutación en el ADN de la PPA?",
+      "options": [
+        "Cascada amiloide",
+        "Hipótesis excitotóxica",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Esa hipótesis pertenece al Alzheimer.",
+      "explanation": "La anomalía en el ADN de la PPA es una de las causas propuestas para la EA, no para la EP."
+    },
+    {
+      "q": "¿Qué sustancia mejora el metabolismo neuronal mediante la captación de oxígeno?",
+      "options": [
+        "La vitamina tipo B12",
+        "La lecitina pura",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se refiere al piracetam.",
+      "explanation": "Es el piracetam (nootropo) el que mejora la captación de oxígeno."
+    },
+    {
+      "q": "¿Qué porcentaje de todas las demencias supone la enfermedad de Alzheimer?",
+      "options": [
+        "Supone el 50%",
+        "Supone el 90%",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "El texto menciona un 70%.",
+      "explanation": "La enfermedad de Alzheimer supone el 70% de todas las demencias."
+    },
+    {
+      "q": "¿Qué síntoma neurológico aparece en la fase final de la EA según el texto?",
+      "options": [
+        "Debilidad facial",
+        "Acalculia parietal",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se mencionan convulsiones y trastornos de la marcha.",
+      "explanation": "Debilidad facial es de fases previas; al final aparecen convulsiones y trastorno de la marcha."
+    },
+    {
+      "q": "¿Quiénes presentan riesgo más bajo de desarrollar EA según algunos estudios?",
+      "options": [
+        "Los no fumadores",
+        "Los bebedores de té",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se menciona a los fumadores.",
+      "explanation": "Algunos estudios han encontrado un riesgo más bajo en fumadores para el desarrollo de EA."
+    },
+    {
+      "q": "¿Qué neuropéptido mejora la memoria según datos encontrados en animales?",
+      "options": [
+        "Sustancia tipo P",
+        "Factor tipo CRF",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se refiere a la arginina vasopresina.",
+      "explanation": "La arginina vasopresina mostró mejora de memoria en animales."
+    },
+    {
+      "q": "¿En qué año se descubrió accidentalmente el beneficio de la amantadina?",
+      "options": [
+        "En el año 1975",
+        "En el año 1960",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Fue en el año 1969.",
+      "explanation": "El descubrimiento accidental de la amantadina ocurrió en 1969."
+    },
+    {
+      "q": "¿Qué fármaco se recomienda para pacientes menores de 70 años con temblor predominante?",
+      "options": [
+        "Agentes IMAO-B",
+        "Agentes ICOMT",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Son los agentes anticolinérgicos.",
+      "explanation": "Los anticolinérgicos están indicados en menores de 70 con temblor y sin deterioro cognitivo."
+    },
+    {
+      "q": "¿Cuál es la causa de la forma genética 'Parkinsonismo juvenil recesivo'?",
+      "options": [
+        "Acúmulo de PPA",
+        "Fallo de la APO-E",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es la mutación del gen parkin.",
+      "explanation": "La mutación del gen parkin es la responsable de esta forma genética."
+    },
+    {
+      "q": "¿Qué síntoma del Párkinson se define como el bajo volumen de la voz?",
+      "options": [
+        "La sialorrea oral",
+        "La bradicinesia",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se denomina hipofonía.",
+      "explanation": "La hipofonía es el término para el bajo volumen de la voz en la EP."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "Explique la distinción anatomopatológica entre las placas seniles y los ovillos neurofibrilares en la Enfermedad de Alzheimer (EA).",
+      "model": "Las placas seniles son depósitos extracelulares compuestos por núcleos de proteína beta-amiloide situados en la sustancia gris, cuya acumulación provoca la degeneración de estructuras neuronales. Por el contrario, los ovillos neurofibrilares son de carácter intracelular y consisten en proteínas tau helicoidales que se enroscan formando manojos dentro de la célula, interfiriendo inicialmente en el funcionamiento de las neuronas colinérgicas.",
+      "keywords": [
+        "Beta-amiloide",
+        "Proteína tau",
+        "Extracelular",
+        "Intracelular",
+        "Sustancia gris"
+      ],
+      "page": 90
+    },
+    {
+      "q": "Describa la hipótesis de la cascada amiloide y los tres factores que pueden originar la acumulación de la proteína causante.",
+      "model": "Sostiene que la causa primaria de la EA es la acumulación anormal y excesiva de proteína beta-amiloide, lo que deriva en muerte neuronal. Esta acumulación puede deberse a: 1) Producción excesiva de beta-amiloide; 2) Escasa eliminación por mal funcionamiento de la apolipoproteína E (APO-E); y 3) Anomalías en el ADN que codifica la proteína precursora de la amiloide (PPA).",
+      "keywords": [
+        "Beta-amiloide",
+        "Muerte neuronal",
+        "APO-E",
+        "PPA",
+        "Acumulación"
+      ],
+      "page": 90
+    },
+    {
+      "q": "Analice el mecanismo de la hipótesis excitotóxica en la neurodegeneración.",
+      "model": "Propone que una neurotransmisión excesiva en neuronas glutamatérgicas provoca la degeneración neuronal. El exceso de glutamato causa una entrada masiva de calcio en la célula, lo cual incrementa la producción de radicales libres. Este proceso de estrés oxidativo y toxicidad iónica resulta finalmente en la muerte de las neuronas, proceso común en la EA y el Párkinson.",
+      "keywords": [
+        "Glutamatérgicas",
+        "Calcio",
+        "Radicales libres",
+        "Excitotoxicidad",
+        "Neurodegeneración"
+      ],
+      "page": 90
+    },
+    {
+      "q": "Explique el proceso de síntesis y degradación de la acetilcolina (Ach) y cómo intervienen los fármacos inhibidores de la colinesterasa.",
+      "model": "La Ach se sintetiza a partir de colina y acetil coenzima (AcCoA) mediante la enzima colina acetiltransferasa (CAT). Su degradación ocurre por la acción de la enzima acetilcolinesterasa (AchE), que la fracciona en productos inactivos. Los inhibidores de la colinesterasa bloquean esta degradación, aumentando la concentración y duración del neurotransmisor en la hendidura sináptica para compensar el déficit colinérgico.",
+      "keywords": [
+        "Colina",
+        "AcCoA",
+        "CAT",
+        "AchE",
+        "Inhibición"
+      ],
+      "page": 91
+    },
+    {
+      "q": "Compare las características farmacológicas y el uso clínico del Donepezilo frente a la Tacrina.",
+      "model": "El Donepezilo es un inhibidor reversible selectivo de la AchE, considerado tratamiento de primera línea debido a su perfil de seguridad. La Tacrina fue el primer inhibidor aprobado, pero es de segunda línea por su toxicidad hepática, vida media corta y falta de selectividad, ya que actúa también sobre otras enzimas como la butirilcolinesterasa.",
+      "keywords": [
+        "Donepezilo",
+        "Tacrina",
+        "Selectividad",
+        "Hepatotoxicidad",
+        "Primera línea"
+      ],
+      "page": 91
+    },
+    {
+      "q": "Enumere y defina los cuatro tipos de respuesta que pueden presentar los pacientes ante los inhibidores de la colinesterasa.",
+      "model": "1) Mejor respuesta: Mejora sustancial advertida por paciente y cuidador que se mantiene meses. 2) Respuesta habitual: Mejora inicial detectable en pruebas y por el cuidador, dura unos 6 meses y luego vuelve al inicio. 3) Respuesta paliativa: No hay mejora pero sí un enlentecimiento de la progresión. 4) Sin respuesta: No se observa ningún efecto terapéutico.",
+      "keywords": [
+        "Mejor respuesta",
+        "Habitual",
+        "Paliativa",
+        "Enlentecimiento",
+        "Eficacia"
+      ],
+      "page": 92
+    },
+    {
+      "q": "Justifique el uso de vasodilatadores cerebrales y nootropos en el contexto de las demencias.",
+      "model": "Los vasodilatadores se basan en la hipótesis de que la aterosclerosis causa pérdida cognitiva, buscando mejorar el riego sanguíneo. Los nootropos (como el piracetam) actúan como activadores cognitivos aumentando la utilización de oxígeno y glucosa y estimulando la conversión de ADP en ATP. No obstante, en ambos casos la eficacia en humanos es limitada o controvertida.",
+      "keywords": [
+        "Aterosclerosis",
+        "Piracetam",
+        "Oxígeno",
+        "ATP",
+        "Riego sanguíneo"
+      ],
+      "page": 92
+    },
+    {
+      "q": "Analice la línea de investigación basada en la alteración de la proteína precursora del amiloide (PPA) y la APO-E.",
+      "model": "Esta línea busca evitar la formación de beta-amiloide interviniendo en su neurobiología molecular. El objetivo es alterar el depósito de la proteína mediante la modificación de la PPA o inhibiendo directamente la síntesis del beta-amiloide, además de actuar sobre la biosíntesis de la APO-E para mejorar la eliminación de depósitos tóxicos.",
+      "keywords": [
+        "PPA",
+        "APO-E",
+        "Beta-amiloide",
+        "Neurobiología molecular",
+        "Síntesis"
+      ],
+      "page": 93
+    },
+    {
+      "q": "Explique el fundamento del uso de agentes antiinflamatorios en la investigación sobre el Alzheimer.",
+      "model": "Su uso se fundamenta en la observación de que las placas amiloides no solo destruyen neuronas directamente, sino que también desencadenan una reacción inflamatoria local en el tejido cerebral. Esta inflamación contribuye significativamente al daño cerebral progresivo, por lo que los antiinflamatorios podrían mitigar este componente secundario de la patología.",
+      "keywords": [
+        "Placas amiloides",
+        "Inflamación",
+        "Daño cerebral",
+        "Investigación",
+        "Estrategia"
+      ],
+      "page": 93
+    },
+    {
+      "q": "Describa la tríada sintomática motora principal de la Enfermedad de Párkinson (EP).",
+      "model": "La sintomatología motora clásica incluye: 1) Hipertonía muscular o rigidez; 2) Bradicinesia, que es la lentitud en movimientos voluntarios e involuntarios y dificultad para iniciarlos/finalizarlos; y 3) Temblores en estado de reposo. A esto se suele añadir la inestabilidad postural.",
+      "keywords": [
+        "Hipertonía",
+        "Bradicinesia",
+        "Temblor en reposo",
+        "Inestabilidad",
+        "Rigidez"
+      ],
+      "page": 94
+    },
+    {
+      "q": "Detalle los síntomas no motores que pueden presentarse en la Enfermedad de Párkinson.",
+      "model": "Incluyen trastornos afectivos (depresión, ansiedad, apatía), alteraciones cognitivas y del sueño, dolor, anosmia (pérdida de olfato) y disfunciones autonómicas como hipotensión ortostática, estreñimiento, urgencia miccional y sudoración excesiva.",
+      "keywords": [
+        "Anosmia",
+        "Hipotensión",
+        "Depresión",
+        "Autonómica",
+        "Apatía"
+      ],
+      "page": 94
+    },
+    {
+      "q": "Explique la base biológica de la EP centrada en el sistema nigroestriatal.",
+      "model": "La EP se debe al agotamiento de dopamina (DA) en las neuronas dopaminérgicas del sistema nigroestriatal, que conecta la sustancia negra con el neostriado (caudado y putamen). La degeneración de estas neuronas impide la correcta transmisión de señales motoras, aunque las neuronas del estriado conservan inicialmente su receptividad a la DA externa.",
+      "keywords": [
+        "Sustancia negra",
+        "Neostriado",
+        "Dopamina",
+        "Nigroestriatal",
+        "Degeneración"
+      ],
+      "page": 94
+    },
+    {
+      "q": "Analice el papel del gen 'parkin' en la etiología de las formas genéticas de Párkinson.",
+      "model": "La mutación del gen 'parkin' causa el Parkinsonismo juvenil recesivo autosómico. Normalmente, este gen produce una proteína encargada de transportar proteínas defectuosas a los proteosomas para su destrucción. Su mal funcionamiento permite que se acumulen niveles tóxicos de proteínas en las neuronas dopaminérgicas de la sustancia negra, provocando su muerte.",
+      "keywords": [
+        "Parkin",
+        "Proteosomas",
+        "Proteínas defectuosas",
+        "Sustancia negra",
+        "Genética"
+      ],
+      "page": 95
+    },
+    {
+      "q": "Explique por qué se administra Levodopa (L-DOPA) en lugar de dopamina directamente.",
+      "model": "La dopamina no es eficaz sistémicamente porque no puede atravesar la barrera hematoencefálica (BHE) desde el torrente sanguíneo. La Levodopa es un precursor que sí atraviesa la BHE; una vez en el cerebro, las neuronas dopaminérgicas supervivientes la captan y la convierten en dopamina mediante síntesis enzimática, aliviando así los síntomas.",
+      "keywords": [
+        "L-DOPA",
+        "Barrera hematoencefálica",
+        "Precursor",
+        "Síntesis",
+        "BHE"
+      ],
+      "page": 95
+    },
+    {
+      "q": "Defina el fenómeno de 'wearing-off' asociado al tratamiento con levodopa.",
+      "model": "Es una fluctuación motora que consiste en la reaparición predecible de los síntomas (temblor, rigidez, bradicinesia) antes de la siguiente dosis programada. Indica que el efecto de la medicación está disminuyendo y suele mejorar tras la administración de la nueva dosis, siendo común a medida que la enfermedad progresa.",
+      "keywords": [
+        "Fluctuación motora",
+        "Levodopa",
+        "Bradicinesia",
+        "Efecto dosis",
+        "Progression"
+      ],
+      "page": 95
+    },
+    {
+      "q": "Compare el uso de agonistas dopaminérgicos frente a la levodopa en cuanto a población diana y efectos secundarios.",
+      "model": "Los agonistas dopaminérgicos (ergóticos y no ergóticos) suelen indicarse inicialmente en pacientes menores de 60 años para retrasar el uso de levodopa y reducir complicaciones motoras. Sus efectos secundarios específicos incluyen trastornos en el control de los impulsos (hipersexualidad, ludopatía, compras compulsivas), a diferencia de las fluctuaciones motoras típicas de la L-DOPA.",
+      "keywords": [
+        "Agonistas",
+        "Impulsos",
+        "Menores de 60 años",
+        "Ergóticos",
+        "Monoterapia"
+      ],
+      "page": 96
+    },
+    {
+      "q": "Explique la función y el objetivo terapéutico de los IMAO-B (Selegilina) en el Párkinson.",
+      "model": "La selegilina inhibe la enzima monoaminoxidasa B, encargada de degradar la dopamina en el SNC. Al bloquearla, se protege a la DA (tanto endógena como la proveniente de levodopa) de la degradación intraneuronal. Se utiliza como complemento a la levodopa y se investiga su posible papel neuroprotector para retrasar la progresión de la enfermedad.",
+      "keywords": [
+        "MAO-B",
+        "Selegilina",
+        "Degradación",
+        "Neuroprotector",
+        "Complemento"
+      ],
+      "page": 96
+    },
+    {
+      "q": "Describa los posibles mecanismos de acción de la Amantadina según las investigaciones.",
+      "model": "Aunque su descubrimiento fue accidental (antiviral), se proponen cuatro mecanismos: 1) Incremento de la liberación de DA; 2) Inhibición de la recaptación de aminas; 3) Acción directa sobre receptores de DA; y 4) Inhibición de la acción del glutamato, lo que evita la generación de radicales libres. Es menos eficaz que la levodopa y pierde efecto con el tiempo.",
+      "keywords": [
+        "Amantadina",
+        "Antiviral",
+        "Recaptación",
+        "Glutamato",
+        "Liberación DA"
+      ],
+      "page": 96
+    },
+    {
+      "q": "Explique cómo actúan los Inhibidores de la catecoloximetiltransferasa (ICOMT) y cuándo se recomienda su uso.",
+      "model": "Los ICOMT (como entacapone y tolcapone) reducen el metabolismo periférico de la levodopa, incrementando su vida media y disponibilidad en el cerebro. Su uso se recomienda específicamente en pacientes que presentan fluctuaciones motoras tipo 'wearing-off' para estabilizar los niveles de dopamina.",
+      "keywords": [
+        "ICOMT",
+        "Entacapone",
+        "Metabolismo",
+        "Vida media",
+        "Wearing-off"
+      ],
+      "page": 96
+    },
+    {
+      "q": "Compare la Estimulación Cerebral Profunda (ECP) con la Estimulación Transcraneal por Corriente Alterna (TACS).",
+      "model": "La ECP es quirúrgica e invasiva, consiste en implantar un marcapasos cerebral con electrodos en tálamo o núcleo subtalámico. La TACS es no invasiva, aplica corriente eléctrica mediante electrodos externos para que la señal eléctrica coincida y cancele la oscilación de los temblores físicos del paciente.",
+      "keywords": [
+        "ECP",
+        "TACS",
+        "Invasiva",
+        "Marcapasos",
+        "Temblor"
+      ],
+      "page": 97
+    },
+    {
+      "q": "Discuta los problemas y fundamentos del trasplante de tejido embrionario en la EP.",
+      "model": "El fundamento es restablecer la secreción de dopamina mediante el implante de neuronas sanas de la sustancia negra de fetos en el núcleo caudado y putamen. El principal problema es de carácter ético (uso de tejido fetal) y la complejidad técnica de la cirugía estereotáxica para garantizar la supervivencia del injerto.",
+      "keywords": [
+        "Tejido embrionario",
+        "Sustancia negra",
+        "Ética",
+        "Estereotáxica",
+        "Dopamina"
+      ],
+      "page": 97
+    },
+    {
+      "q": "Analice la importancia del tratamiento rehabilitador y el papel del logopeda en el Párkinson.",
+      "model": "Es crucial para mantener la funcionalidad. El logopeda trabaja específicamente aspectos que afectan profundamente la calidad de vida y la comunicación, como la disfagia (dificultad al tragar), la hipofonía (bajo volumen de voz), la micrografía y las alteraciones del lenguaje y la ansiedad asociada.",
+      "keywords": [
+        "Logopeda",
+        "Disfagia",
+        "Hipofonía",
+        "Rehabilitación",
+        "Funcionalidad"
+      ],
+      "page": 97
+    },
+    {
+      "q": "Relacione el receptor muscarínico M1 con la memoria en la EA.",
+      "model": "Dentro de los receptores colinérgicos, el subtipo M1 postsináptico es el más destacado en el estudio de la EA debido a su papel mediador fundamental en las funciones de memoria ligadas a la neurotransmisión colinérgica. Por ello, una línea de investigación actual busca agonistas específicos para este receptor.",
+      "keywords": [
+        "M1",
+        "Muscarínico",
+        "Memoria",
+        "Postsináptico",
+        "Agonistas"
+      ],
+      "page": 91
+    },
+    {
+      "q": "Explique el papel de la terapia de quelación como tratamiento alternativo en demencias.",
+      "model": "Se basa en la administración de agentes quelantes que actúan como antagonistas de metales pesados. Su objetivo es la eliminación del cuerpo de metales como el aluminio, bajo la hipótesis (no demostrada plenamente) de que la acumulación de ciertos metales podría contribuir al proceso neurodegenerativo de la EA.",
+      "keywords": [
+        "Quelación",
+        "Metales pesados",
+        "Aluminio",
+        "Antagonistas",
+        "Eliminación"
+      ],
+      "page": 92
+    },
+    {
+      "q": "Analice las implicaciones de los agonistas nicotínicos en la investigación de la EA basándose en datos epidemiológicos.",
+      "model": "La investigación se apoya en estudios que encontraron un riesgo menor de desarrollar EA en fumadores (debido a la nicotina). Se investigan agentes que actúen sobre receptores nicotínicos para mejorar la cognición, aunque hasta el momento estos fármacos no han sido autorizados oficialmente para el tratamiento de la enfermedad.",
+      "keywords": [
+        "Nicotínicos",
+        "Fumadores",
+        "Receptores",
+        "Prevención",
+        "Cognición"
+      ],
+      "page": 93
+    },
+    {
+      "q": "Describa la evolución de los síntomas neurológicos en la EA desde el inicio hasta las fases finales.",
+      "model": "Al inicio predominan fallos de memoria, concentración y dificultades visoespaciales. Sigue una disfunción parietal con agnosia, dispraxia y acalculia. Finalmente, aparecen el deterioro del lenguaje, trastornos de la marcha y signos neurológicos graves como las convulsiones.",
+      "keywords": [
+        "Memoria",
+        "Visoespacial",
+        "Agnosia",
+        "Marcha",
+        "Convulsiones"
+      ],
+      "page": 89
+    },
+    {
+      "q": "Justifique el uso de suplementos de vitaminas B12 y tiamina en pacientes con demencia.",
+      "model": "Se incluyen en el grupo de agentes de eficacia limitada o no demostrada para la demencia general, pero su administración se fundamenta en que los déficits de estas vitaminas pueden causar cuadros de confusión y deterioro cognitivo que agravan la sintomatología del paciente.",
+      "keywords": [
+        "B12",
+        "Tiamina",
+        "Vitaminas",
+        "Confusión",
+        "Metabolismo"
+      ],
+      "page": 92
+    },
+    {
+      "q": "Explique el concepto de hipersensibilidad de receptores en el Párkinson avanzado.",
+      "model": "Con el tiempo, las células de la sustancia negra son incapaces de convertir L-DOPA en DA. Como respuesta adaptativa a la falta de neurotransmisor, los receptores de las neuronas del cuerpo estriado se vuelven excesivamente sensibles (hipersensibilidad), lo que paradójicamente puede causar efectos secundarios como discinesias y distonías ante la medicación.",
+      "keywords": [
+        "Hipersensibilidad",
+        "Cuerpo estriado",
+        "Discinesias",
+        "Dopamina",
+        "Adaptación"
+      ],
+      "page": 94
+    },
+    {
+      "q": "Describa la influencia de factores ambientales y hábitos de consumo en el riesgo de padecer Párkinson.",
+      "model": "La exposición a pesticidas, herbicidas y toxinas como el MPTP (presente en drogas contaminadas) incrementa drásticamente el riesgo de degeneración dopaminérgica. Por el contrario, se ha observado que el consumo de tabaco y café parece ejercer un débil efecto protector contra la aparición de la enfermedad.",
+      "keywords": [
+        "MPTP",
+        "Pesticidas",
+        "Tabaco",
+        "Café",
+        "Neurotoxinas"
+      ],
+      "page": 95
+    },
+    {
+      "q": "Sintetice las tres hipótesis etiológicas de la EA y su punto de convergencia.",
+      "model": "1) Cascada amiloide (acumulación de beta-amiloide); 2) Colinérgica (pérdida de función de Ach); 3) Excitotóxica (exceso de glutamato y calcio). Convergen en que los tres procesos (placas, pérdida colinérgica y entrada masiva de calcio) resultan en la muerte neuronal y el deterioro cognitivo progresivo característico de la enfermedad.",
+      "keywords": [
+        "Amiloide",
+        "Colinérgica",
+        "Excitotóxica",
+        "Muerte neuronal",
+        "Convergencia"
+      ],
+      "page": 90
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Alzheimer - Generalidades",
+      "q": "¿Cómo se define la demencia en el contexto de las enfermedades neurodegenerativas?",
+      "a": "Es una pérdida progresiva de funciones cognitivas por daños cerebrales que causa incapacidad para realizar actividades de la vida diaria.",
+      "page": 89
+    },
+    {
+      "cat": "Alzheimer - Generalidades",
+      "q": "¿Qué funciones cognitivas se ven alteradas específicamente en la demencia?",
+      "a": "Memoria a corto/largo plazo (amnesia), reconocimiento (agnosia), pensamiento abstracto, razonamiento y función ejecutiva.",
+      "page": 89
+    },
+    {
+      "cat": "Alzheimer - Generalidades",
+      "q": "¿Qué porcentaje de todas las demencias representa la enfermedad de Alzheimer (EA)?",
+      "a": "Representa aproximadamente el 70% de todos los casos de demencia.",
+      "page": 89
+    },
+    {
+      "cat": "Alzheimer - Clínica",
+      "q": "¿Cómo se manifiesta inicialmente la enfermedad de Alzheimer a nivel cognitivo?",
+      "a": "Se manifiesta con pérdida de memoria, alteraciones de la concentración y dificultades visoespaciales.",
+      "page": 89
+    },
+    {
+      "cat": "Alzheimer - Clínica",
+      "q": "¿Qué síntomas resultan de la disfunción del lóbulo parietal en la EA?",
+      "a": "Agnosia, dispraxia, acalculia y signos neurológicos como debilidad facial.",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Clínica",
+      "q": "¿Cuáles son los signos neurológicos finales que aparecen tras el deterioro del lenguaje en la EA?",
+      "a": "Trastornos de la marcha y convulsiones.",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Neuropatología",
+      "q": "¿Qué son las placas seniles o amiloides y dónde se localizan?",
+      "a": "Son depósitos extracelulares de proteína beta-amiloide situados en la sustancia gris del cerebro.",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Neuropatología",
+      "q": "¿Qué efecto tienen las placas amiloides sobre las neuronas?",
+      "a": "Provocan la degeneración de las estructuras neuronales, causando el deterioro cognitivo.",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Neuropatología",
+      "q": "¿Qué son los ovillos neurofibrilares y cuál es su composición proteica?",
+      "a": "Son manojos intracelulares compuestos por proteínas tau helicoidales enroscadas.",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Neuropatología",
+      "q": "¿A qué tipo de neuronas afectan principalmente los ovillos neurofibrilares al inicio de la enfermedad?",
+      "a": "Interfieren sobre todo en el funcionamiento de las neuronas colinérgicas.",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Hipótesis",
+      "q": "¿Cuál es la premisa central de la hipótesis de la cascada amiloide?",
+      "a": "Sostiene que la causa de la muerte neuronal es la acumulación anormal y excesiva de proteína beta-amiloide.",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Hipótesis",
+      "q": "Según la hipótesis amiloide, ¿qué tres factores pueden causar la formación de placas?",
+      "a": "Producción excesiva, escasa eliminación (fallo en APO-E) o anomalía en el ADN que codifica la proteína precursora amiloide (PPA).",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Hipótesis",
+      "q": "¿Qué función cumple la apolipoproteína E (APO-E) respecto al beta-amiloide?",
+      "a": "Se encarga de la eliminación del beta-amiloide del cerebro.",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Hipótesis",
+      "q": "¿Qué postula la hipótesis colinérgica sobre la pérdida de memoria en la EA?",
+      "a": "Postula que se debe a la pérdida del funcionamiento colinérgico normal por degeneración neuronal.",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Hipótesis",
+      "q": "¿Qué núcleo cerebral es clave en la hipótesis colinérgica por sus proyecciones al hipocampo?",
+      "a": "El núcleo basal de Meynert.",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Hipótesis",
+      "q": "¿Cómo explica la hipótesis excitotóxica la degeneración neuronal?",
+      "a": "Una neurotransmisión excesiva de glutamato provoca entrada masiva de calcio, generando radicales libres y muerte celular.",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Psicofarmacología",
+      "q": "¿Cuál es el mecanismo de acción de los inhibidores de la colinesterasa?",
+      "a": "Impiden la destrucción de la acetilcolina al inhibir el enzima, aumentando su concentración y duración de efectos.",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Neurotransmisión",
+      "q": "¿A partir de qué dos precursores se sintetiza la acetilcolina (Ach)?",
+      "a": "A partir de colina (obtenida de la dieta) y acetil coenzima (AcCoA).",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Neurotransmisión",
+      "q": "¿Qué enzima es responsable de la síntesis de la acetilcolina?",
+      "a": "La colina acetiltransferasa (CAT).",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Neurotransmisión",
+      "q": "¿Cómo finaliza la acción de la acetilcolina en el espacio sináptico?",
+      "a": "Mediante la degradación por la acetilcolinesterasa (AchE) y la recaptación por el transportador presináptico de colina.",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Neurotransmisión",
+      "q": "¿Cuáles son los dos grandes tipos de receptores colinérgicos?",
+      "a": "Receptores nicotínicos (N) y muscarínicos (M).",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Neurotransmisión",
+      "q": "¿Qué subtipo de receptor muscarínico destaca por mediar las funciones de memoria?",
+      "a": "El receptor M1 postsináptico.",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Fármacos",
+      "q": "¿Qué fármaco se considera el tratamiento de primera línea para la EA?",
+      "a": "El Donepezilo.",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Fármacos",
+      "q": "¿Cuál es la característica principal del Donepezilo?",
+      "a": "Es un inhibidor reversible y selectivo de la acetilcolinesterasa (AchE).",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Fármacos",
+      "q": "¿Por qué la Tacrina se considera actualmente un tratamiento de segunda línea?",
+      "a": "Debido a su alta toxicidad hepática y su vida media corta.",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Fármacos",
+      "q": "¿Qué diferencia a la Tacrina del Donepezilo en cuanto a su selectividad?",
+      "a": "La Tacrina no es selectiva y actúa en otros enzimas como la butirilcolinesterasa.",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Fármacos",
+      "q": "¿Cómo se define la Rivastigmina farmacológicamente?",
+      "a": "Es un inhibidor reversible selectivo de la AchE de duración intermedia.",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Fármacos",
+      "q": "¿Qué efectos secundarios se asocian al Metrifonato?",
+      "a": "Debilidad muscular.",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Fármacos",
+      "q": "¿Cuál es el mecanismo de acción de la Galantamina?",
+      "a": "Inhibidor selectivo/reversible de la AchE y agonista nicotínico.",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Fármacos",
+      "q": "¿Qué característica distingue al Metrifonato respecto a su duración y reversibilidad?",
+      "a": "Es un inhibidor irreversible de larga duración.",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Fármacos",
+      "q": "¿Cuál es la duración de acción y efectividad de la Fisostigmina?",
+      "a": "Acción muy corta y alta efectividad, aunque produce náuseas y vómitos.",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Tratamiento",
+      "q": "¿Qué caracteriza a la 'mejor respuesta' al tratamiento farmacológico en la EA?",
+      "a": "Mejora sustancial advertida por paciente y cuidador que aparece en pocas semanas y se mantiene meses.",
+      "page": 92
+    },
+    {
+      "cat": "Alzheimer - Tratamiento",
+      "q": "¿Qué define a la 'respuesta habitual' al tratamiento?",
+      "a": "Mejora inicial detectable en pruebas y perceptible por el cuidador, dura 6 meses y luego vuelve al inicio.",
+      "page": 92
+    },
+    {
+      "cat": "Alzheimer - Tratamiento",
+      "q": "¿En qué consiste una respuesta paliativa ante los inhibidores de AchE?",
+      "a": "No hay mejora, solo un enlentecimiento del progreso de la enfermedad.",
+      "page": 92
+    },
+    {
+      "cat": "Alzheimer - Otros agentes",
+      "q": "¿Cuál es la hipótesis que justifica el uso de vasodilatadores cerebrales?",
+      "a": "La idea de que la pérdida cognitiva puede estar causada por aterosclerosis que reduce el riego sanguíneo.",
+      "page": 92
+    },
+    {
+      "cat": "Alzheimer - Otros agentes",
+      "q": "¿Qué efectos tiene la Hidergina como potenciador metabólico?",
+      "a": "Modifica niveles de AMPc y es agonista DA, 5HT y NA; mejora más el estado de ánimo que la cognición.",
+      "page": 92
+    },
+    {
+      "cat": "Alzheimer - Otros agentes",
+      "q": "¿En qué consiste la terapia de quelación en las demencias?",
+      "a": "Administración de agentes que eliminan metales pesados como el aluminio del cuerpo.",
+      "page": 92
+    },
+    {
+      "cat": "Alzheimer - Otros agentes",
+      "q": "¿Qué son los nootropos y cuál es su mecanismo propuesto?",
+      "a": "Activadores cognitivos que aumentan la utilización de oxígeno y glucosa en la neurona.",
+      "page": 92
+    },
+    {
+      "cat": "Alzheimer - Otros agentes",
+      "q": "¿Cómo actúa el Piracetam sobre el metabolismo neuronal?",
+      "a": "Mejora la captación de oxígeno y estimula la conversión de ADP en ATP.",
+      "page": 92
+    },
+    {
+      "cat": "Alzheimer - Otros agentes",
+      "q": "¿En qué tipo de demencia parece ser más útil el Piracetam?",
+      "a": "Parece más útil en demencia leve o moderada, no en grave.",
+      "page": 92
+    },
+    {
+      "cat": "Alzheimer - Investigación",
+      "q": "¿Por qué se investiga el uso de agentes antiinflamatorios para la EA?",
+      "a": "Porque las placas amiloides producen una reacción inflamatoria que daña el cerebro.",
+      "page": 93
+    },
+    {
+      "cat": "Alzheimer - Investigación",
+      "q": "¿Qué hallazgo epidemiológico apoya el estudio de los agonistas nicotínicos en la EA?",
+      "a": "Estudios que encontraron un riesgo más bajo de desarrollar EA en personas fumadoras.",
+      "page": 93
+    },
+    {
+      "cat": "Alzheimer - Investigación",
+      "q": "¿Qué objetivo tiene la alteración de la PPA en las nuevas estrategias terapéuticas?",
+      "a": "Evitar la destrucción neuronal alterando el depósito o inhibiendo la síntesis de beta-amiloide.",
+      "page": 93
+    },
+    {
+      "cat": "Alzheimer - Investigación",
+      "q": "¿Qué neuropéptidos se han visto alterados en pacientes con EA?",
+      "a": "Factor liberador de corticotropina, neuropéptido Y y sustancia P.",
+      "page": 93
+    },
+    {
+      "cat": "Alzheimer - Investigación",
+      "q": "¿Qué sustancia ha mejorado la memoria solo en modelos animales en la EA?",
+      "a": "La arginina vasopresina.",
+      "page": 93
+    },
+    {
+      "cat": "Parkinson - Clínica",
+      "q": "¿Cómo se define la enfermedad de Párkinson (EP)?",
+      "a": "Trastorno neurodegenerativo crónico que causa incapacidad progresiva y alteraciones motoras y cognitivas.",
+      "page": 94
+    },
+    {
+      "cat": "Parkinson - Clínica",
+      "q": "¿A qué edad es más frecuente la manifestación de la EP?",
+      "a": "Es más frecuente a partir de los 60 años, aunque existe un tipo precoz antes de los 40.",
+      "page": 94
+    },
+    {
+      "cat": "Parkinson - Clínica",
+      "q": "¿Cuáles son los cuatro síntomas motores principales de la EP?",
+      "a": "Hipertonía (rigidez), bradicinesia (lentitud), temblores en reposo e inestabilidad postural.",
+      "page": 94
+    },
+    {
+      "cat": "Parkinson - Clínica",
+      "q": "¿Qué es la bradicinesia y qué dificultades específicas implica?",
+      "a": "Es la lentitud de movimientos, especialmente la dificultad para comenzarlos y terminarlos.",
+      "page": 94
+    },
+    {
+      "cat": "Parkinson - Clínica",
+      "q": "¿Qué se entiende por micrografía en el contexto del Párkinson?",
+      "a": "Estado en que la letra manuscrita del paciente se vuelve cada vez más pequeña o ilegible.",
+      "page": 94
+    },
+    {
+      "cat": "Parkinson - Clínica",
+      "q": "¿Qué síntomas no motores afectivos y cognitivos son comunes en la EP?",
+      "a": "Depresión, ansiedad, apatía y alteraciones cognitivas.",
+      "page": 94
+    },
+    {
+      "cat": "Parkinson - Clínica",
+      "q": "¿Qué es la anosmia y cómo se relaciona con la EP?",
+      "a": "Es la pérdida del sentido del olfato y es una manifestación sensorial común en la enfermedad.",
+      "page": 94
+    },
+    {
+      "cat": "Parkinson - Clínica",
+      "q": "¿Qué trastornos de la función autónoma pueden presentar los pacientes con EP?",
+      "a": "Hipotensión ortostática, estreñimiento, urgencia miccional y sudoración excesiva.",
+      "page": 94
+    },
+    {
+      "cat": "Parkinson - Bases Biológicas",
+      "q": "¿Qué sistema dopaminérgico se ve principalmente afectado en la EP?",
+      "a": "El sistema nigroestriatal (de la sustancia negra al neoestriado).",
+      "page": 94
+    },
+    {
+      "cat": "Parkinson - Bases Biológicas",
+      "q": "¿Qué ocurre con las neuronas de la sustancia negra en la EP?",
+      "a": "Sufren una degeneración, lo que provoca el agotamiento de dopamina en el sistema.",
+      "page": 94
+    },
+    {
+      "cat": "Parkinson - Bases Biológicas",
+      "q": "¿Por qué las neuronas estriatales blanco pueden desarrollar discinesias con el tiempo?",
+      "a": "Debido a una hipersensibilidad causada por la falta prolongada de dopamina.",
+      "page": 94
+    },
+    {
+      "cat": "Parkinson - Causas",
+      "q": "¿Qué toxina se descubrió que causa síntomas de EP al destruir neuronas dopaminérgicas?",
+      "a": "La MPTP.",
+      "page": 95
+    },
+    {
+      "cat": "Parkinson - Causas",
+      "q": "¿Qué sustancias ambientales parecen incrementar la incidencia de la EP?",
+      "a": "La exposición a pesticidas y herbicidas.",
+      "page": 95
+    },
+    {
+      "cat": "Parkinson - Causas",
+      "q": "¿Qué sustancias de consumo diario parecen tener un débil efecto protector contra la EP?",
+      "a": "El tabaco y el café.",
+      "page": 95
+    },
+    {
+      "cat": "Parkinson - Causas",
+      "q": "¿Qué gen está mutado en el Parkinsonismo juvenil recesivo autosómico?",
+      "a": "El gen parkin.",
+      "page": 95
+    },
+    {
+      "cat": "Parkinson - Causas",
+      "q": "¿Cuál es la función normal de la proteína producida por el gen parkin?",
+      "a": "Transportar proteínas defectuosas a los proteosomas para su destrucción.",
+      "page": 95
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Por qué no es eficaz administrar dopamina directamente?",
+      "a": "Porque la dopamina no puede atravesar la barrera hematoencefálica.",
+      "page": 95
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Cuál es el fármaco más utilizado y eficaz para los síntomas motores de la EP?",
+      "a": "La Levodopa (L-DOPA).",
+      "page": 95
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Cómo actúa la Levodopa una vez que alcanza el cerebro?",
+      "a": "Es recogida por neuronas dopaminérgicas supervivientes y convertida en dopamina.",
+      "page": 95
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué síntomas alivia principalmente la Levodopa?",
+      "a": "La hipocinesia y el temblor.",
+      "page": 95
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué es el fenómeno 'wearing-off' en el tratamiento con Levodopa?",
+      "a": "Es la reaparición predecible de los síntomas antes de la siguiente dosis programada.",
+      "page": 95
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué síntomas cursan durante un episodio de 'wearing-off'?",
+      "a": "Temblor, bradicinesia, reducción del tono de voz, rigidez matutina y distonía.",
+      "page": 95
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Cómo se clasifican los agonistas dopaminérgicos?",
+      "a": "En derivados ergóticos (bromocriptina) y no ergóticos (pramipexol, ropinirol).",
+      "page": 96
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿En qué pacientes se recomienda el uso inicial de agonistas dopaminérgicos?",
+      "a": "En población menor de 60 años, para retrasar complicaciones motoras de la Levodopa.",
+      "page": 96
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué efectos secundarios psiquiátricos pueden causar los agonistas dopaminérgicos?",
+      "a": "Trastornos en el control de impulsos (hipersexualidad, ludopatía, compras compulsivas).",
+      "page": 96
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Cuál es la indicación para el uso de agentes anticolinérgicos en EP?",
+      "a": "Pacientes menores de 70 años con temblor predominante y sin deterioro cognitivo.",
+      "page": 96
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué fármaco es un inhibidor de la monoaminoxidasa B (IMAO-B) usado en EP?",
+      "a": "La Selegilina.",
+      "page": 96
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Cuál es la función terapéutica de la Selegilina?",
+      "a": "Proteger a la dopamina de la degradación intraneuronal; sirve de complemento a la Levodopa.",
+      "page": 96
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué fármaco actúa como liberador presináptico de dopamina?",
+      "a": "La Amantadina.",
+      "page": 96
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué mecanismos de acción se proponen para la Amantadina?",
+      "a": "Incrementa liberación de DA, inhibe recaptación e inhibe la acción del glutamato.",
+      "page": 96
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué ventaja y desventaja tiene la Amantadina comparada con la Levodopa?",
+      "a": "Es menos potente y su acción disminuye con el tiempo, pero tiene efectos secundarios menos graves.",
+      "page": 96
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué son los ICOMT y cuál es su utilidad?",
+      "a": "Inhibidores de la catecoloximetiltransferasa que incrementan la vida media de la Levodopa.",
+      "page": 96
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué fármacos destacan entre los ICOMT?",
+      "a": "Tolcapone (hepatotóxico) y Entacapone.",
+      "page": 96
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué es la palidotomía y para qué sirve?",
+      "a": "Es la lesión intencionada del globo pálido para controlar la discinesia.",
+      "page": 97
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿En qué consiste la estimulación cerebral profunda (ECP)?",
+      "a": "Implantación de un marcapasos que envía impulsos eléctricos al tálamo, globo pálido o núcleo subtalámico.",
+      "page": 97
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Cómo funciona la estimulación transcraneal por corriente alterna (TACS)?",
+      "a": "Aplica una corriente que cancela la señal oscilante de los temblores para suprimirlos.",
+      "page": 97
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Cómo se realiza el trasplante de tejido embrionario en la EP?",
+      "a": "Se obtiene tejido de la sustancia negra de fetos y se implanta en el caudado y putamen.",
+      "page": 97
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué áreas del lenguaje debe trabajar un logopeda con pacientes de EP?",
+      "a": "Disfagia, hipofonía y micrografía.",
+      "page": 97
+    },
+    {
+      "cat": "Alzheimer - Clínica",
+      "q": "¿A qué se debe la acalculia en pacientes con Alzheimer?",
+      "a": "A la disfunción del lóbulo parietal durante la progresión de la enfermedad.",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Hipótesis",
+      "q": "¿Qué ocurre si hay una anomalía en el ADN de la PPA según la hipótesis amiloide?",
+      "a": "Se produce una acumulación excesiva de placas que causa la muerte neuronal.",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Investigación",
+      "q": "¿Por qué se plantea el uso de estrógenos solo en mujeres?",
+      "a": "Porque se consideran un factor neurotrófico específico para el sexo femenino en investigación.",
+      "page": 93
+    },
+    {
+      "cat": "Parkinson - Clínica",
+      "q": "¿Qué es la sialorrea?",
+      "a": "Es la producción excesiva de saliva, síntoma motor común en la EP.",
+      "page": 94
+    },
+    {
+      "cat": "Alzheimer - Fármacos",
+      "q": "¿Cuál es la principal diferencia entre inhibidores reversibles e irreversibles de la AchE?",
+      "a": "La duración del efecto y la forma en que se unen al enzima (ej: Metrifonato es irreversible).",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Otros agentes",
+      "q": "¿Cómo influye la Hidergina en el estado de ánimo?",
+      "a": "Mejora el ánimo al ser un agonista parcial de DA, 5HT y NA.",
+      "page": 92
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué relación tiene el IMAO-B con la neuroprotección?",
+      "a": "Se cree que puede retrasar la progresión al evitar la degradación de DA, aunque no está demostrado.",
+      "page": 96
+    },
+    {
+      "cat": "Alzheimer - Neuropatología",
+      "q": "¿Cuál es la ubicación celular de los depósitos de beta-amiloide?",
+      "a": "Se ubican fuera de las células (extracelulares).",
+      "page": 90
+    },
+    {
+      "cat": "Alzheimer - Neurotransmisión",
+      "q": "¿Qué nutriente es esencial para obtener colina intraneuronal?",
+      "a": "La colina obtenida a través de la dieta.",
+      "page": 91
+    },
+    {
+      "cat": "Alzheimer - Otros agentes",
+      "q": "¿Qué vitaminas se mencionan como complementos limitados en la EA?",
+      "a": "Vitamina B12 y tiamina.",
+      "page": 92
+    },
+    {
+      "cat": "Parkinson - Clínica",
+      "q": "¿Cómo se define la hipertonía muscular en la EP?",
+      "a": "Es la rigidez muscular que dificulta la movilidad fluida.",
+      "page": 94
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué beneficio tiene el Entacapone sobre la Levodopa?",
+      "a": "Reduce su metabolismo periférico, permitiendo que llegue más L-DOPA al cerebro.",
+      "page": 96
+    },
+    {
+      "cat": "Parkinson - Bases Biológicas",
+      "q": "¿Qué estructuras forman el neostriado donde proyecta la sustancia negra?",
+      "a": "El núcleo caudado y el núcleo putamen.",
+      "page": 94
+    },
+    {
+      "cat": "Alzheimer - Investigación",
+      "q": "¿Qué problema ético presentan los trasplantes de tejido neuronal?",
+      "a": "El uso de tejido procedente de fetos humanos.",
+      "page": 93
+    },
+    {
+      "cat": "Alzheimer - Clínica",
+      "q": "¿Qué caracteriza el inicio de la disfunción visoespacial en la EA?",
+      "a": "Dificultad para orientarse y percibir correctamente los objetos en el espacio.",
+      "page": 89
+    },
+    {
+      "cat": "Parkinson - Tratamiento",
+      "q": "¿Qué es la distonía asociada al wearing-off?",
+      "a": "Contracciones musculares involuntarias que causan posturas anómalas al bajar niveles de medicación.",
+      "page": 95
+    },
+    {
+      "cat": "Alzheimer - Investigación",
+      "q": "¿Cómo actúan los antagonistas del glutamato en la investigación de la EA?",
+      "a": "Buscan contrarrestar el efecto de la excitotoxicidad para evitar la muerte neuronal.",
+      "page": 93
+    }
+  ]
+}

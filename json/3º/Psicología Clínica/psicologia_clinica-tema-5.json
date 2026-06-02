@@ -1,0 +1,2463 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es la esquizofrenia un trastorno de curso agudo cuya evolución suele ser favorable incluso sin el uso de fármacos antipsicóticos?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 1,
+      "hint": "Revisa la descripción inicial del curso del trastorno y la necesidad de fármacos.",
+      "explanation": "El texto define la esquizofrenia como un trastorno de curso crónico con una evolución deletérea y señala que el tratamiento farmacológico es necesario."
+    },
+    {
+      "q": "¿Se ha demostrado consistentemente que las personas con esquizofrenia poseen una tendencia natural e irremediable hacia la violencia?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 1,
+      "hint": "Busca la sección sobre el estigma y las evidencias metodológicas.",
+      "explanation": "El texto afirma que las evidencias sobre la violencia son escasas, frágiles y a menudo producto de metodologías cuestionables."
+    },
+    {
+      "q": "¿El fenómeno del autoestigma ocurre cuando el paciente asume rasgos genéricos negativos que perjudican su participación social?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 0,
+      "hint": "Concepto de apropiación del estigma social por parte del individuo.",
+      "explanation": "Muchos pacientes se apropian del estigma (autoestigma) y se asignan rasgos que afectan negativamente su vida social."
+    },
+    {
+      "q": "¿La esquizofrenia se considera un síndrome homogéneo donde todos los pacientes presentan un perfil idéntico de síntomas?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 1,
+      "hint": "Heterogeneidad clínica del trastorno.",
+      "explanation": "El texto indica explícitamente que la esquizofrenia es un síndrome heterogéneo y no todos presentan el mismo perfil."
+    },
+    {
+      "q": "¿Propuso Timothy Crow una tipología de síntomas positivos y negativos que está integrada formalmente en el manual DSM-5?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 1,
+      "hint": "Relación entre la propuesta de Crow y la clasificación oficial del DSM-5.",
+      "explanation": "Aunque es clarificadora, el texto menciona que la tipología de Crow no se contempla formalmente en el manual DSM-5."
+    },
+    {
+      "q": "¿Se consideran síntomas positivos aquellos que implican una ausencia o deterioro de cualidades que deberían estar presentes?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 1,
+      "hint": "Definición de síntomas positivos vs. negativos.",
+      "explanation": "Los síntomas positivos implican experiencias 'no normativas' (presencia), mientras que los negativos implican deterioro o ausencia."
+    },
+    {
+      "q": "¿Incluye la categoría de síntomas negativos elementos como la apatía, la abulia, la anhedonia y el aplanamiento afectivo?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 0,
+      "hint": "Ejemplos clásicos de síntomas deficitarios.",
+      "explanation": "Estos son ejemplos típicos de síntomas negativos según la clasificación mencionada en el texto."
+    },
+    {
+      "q": "¿Entienden muchos autores actuales los síntomas cognitivos como una categoría clínica independiente de los síntomas negativos?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 0,
+      "hint": "Evolución de la clasificación de los déficits cognitivos.",
+      "explanation": "Originalmente se clasificaron como negativos, pero actualmente se consideran a menudo como una categoría independiente."
+    },
+    {
+      "q": "¿Se asocia la etiología del déficit cognitivo principalmente a una alteración del funcionamiento serotoninérgico y GABAérgico?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 1,
+      "hint": "Neurotransmisores específicos citados en relación con la cognición.",
+      "explanation": "El texto vincula estos déficits con alteraciones en el funcionamiento dopaminérgico y acetilcolínico."
+    },
+    {
+      "q": "¿Representan las dificultades en el procesamiento de información emocional de los rostros un factor de mal pronóstico en la fase prodrómica?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 0,
+      "hint": "Importancia de la cognición social temprana.",
+      "explanation": "El texto señala que estos déficits en cognición social se han erigido como factor de mal pronóstico en la fase prodrómica."
+    },
+    {
+      "q": "¿Es la capacidad de mentalización (inferir intenciones ajenas) una posible explicación para el desarrollo de delirios de grandeza?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 1,
+      "hint": "Relación entre mentalización y tipos específicos de delirios.",
+      "explanation": "El texto indica que los déficits en mentalización son una posible explicación de los delirios de persecución, no de grandeza."
+    },
+    {
+      "q": "¿Se explica la alteración de la memoria episódica en pacientes con esquizofrenia por el compromiso de la corteza prefrontal dorsolateral?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 0,
+      "hint": "Sustrato neuroanatómico de la memoria episódica según el texto.",
+      "explanation": "El texto menciona que el compromiso de la corteza prefrontal dorsolateral podría explicar estas alteraciones de memoria."
+    },
+    {
+      "q": "¿Mantienen los pacientes sus delirios con gran convicción, resistiendo generalmente a la argumentación lógica o disuasión?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 0,
+      "hint": "Definición clínica del delirio.",
+      "explanation": "Los delirios son creencias equívocas mantenidas con gran convicción que resisten la argumentación lógica."
+    },
+    {
+      "q": "¿Ocurre el delirio de inserción del pensamiento cuando el paciente siente que el Gobierno le extrae información de su mente?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre inserción y sustracción del pensamiento.",
+      "explanation": "La extracción de información es propia del delirio de sustracción; la inserción es percibir contenidos como no propios introducidos por terceros."
+    },
+    {
+      "q": "¿Consiste el delirio de referencia en creer que mensajes neutros (como la televisión) contienen información velada para el sujeto?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 0,
+      "hint": "Interpretación personal de estímulos externos neutros.",
+      "explanation": "El delirio de referencia implica creer que fuentes neutras emiten mensajes dirigidos específicamente al paciente."
+    },
+    {
+      "q": "¿Se caracteriza el delirio somático por la creencia de que el paciente es el depositario de un mensaje divino trascendental?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 1,
+      "hint": "Definición de delirio somático vs. religioso.",
+      "explanation": "El delirio somático versa sobre el funcionamiento del organismo; la misión divina corresponde al delirio religioso."
+    },
+    {
+      "q": "¿Puede el delirio nihilista incluir la creencia de que ciertas partes del cuerpo, o incluso la realidad entera, han dejado de existir?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 0,
+      "hint": "Temática de la inexistencia o desvanecimiento.",
+      "explanation": "El delirio nihilista implica creencias sobre haber dejado de existir o que la realidad se ha desvanecido."
+    },
+    {
+      "q": "¿Se describe el delirio fantástico como un sistema de creencias que incluye narrativas complejas de ciencia ficción o mitología?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 0,
+      "hint": "Contenido del delirio fantástico.",
+      "explanation": "El delirio fantástico incluye tramas extravagantes con elementos de ciencia ficción, mitología o cultura pop."
+    },
+    {
+      "q": "¿Presentan las mujeres una mayor frecuencia de alucinaciones de carácter imperativo en comparación con los varones?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 1,
+      "hint": "Diferencias de sexo en la fenomenología de las alucinaciones.",
+      "explanation": "El carácter imperativo es significativamente más frecuente entre varones que entre mujeres."
+    },
+    {
+      "q": "¿Se definen las pseudoalucinaciones como experiencias percibidas fuera del campo visual normal, como ver objetos a gran distancia?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre pseudoalucinación y alucinación extracampina.",
+      "explanation": "Las pseudoalucinaciones se reconocen como producto de la mente; las extracampinas son las percibidas fuera del alcance físico."
+    },
+    {
+      "q": "¿Aparece la ecolalia cuando el paciente repite constantemente una frase propia a pesar de que el tema de conversación haya cambiado?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre ecolalia y perseveración.",
+      "explanation": "La repetición de frases propias inconexas es perseveración; la ecolalia es la repetición de lo que emitió el interlocutor."
+    },
+    {
+      "q": "¿Se manifiesta el síntoma de apatía como una pérdida de interés y entusiasmo por iniciar acciones dirigidas a metas específicas?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 0,
+      "hint": "Definición de apatía en el contexto de síntomas negativos.",
+      "explanation": "La apatía se asocia al menoscabo en el inicio y la persistencia de acciones propositivas."
+    },
+    {
+      "q": "¿Establece el DSM-5 que para el diagnóstico de esquizofrenia los síntomas deben persistir durante un mínimo de doce meses?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 1,
+      "hint": "Criterio temporal de duración total del trastorno.",
+      "explanation": "El Criterio C del DSM-5 exige un mínimo de seis meses de signos continuos del trastorno, no doce."
+    },
+    {
+      "q": "¿Aumenta significativamente el riesgo de padecer esquizofrenia nacer a finales del verano o inicios del otoño?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 1,
+      "hint": "Estacionalidad del nacimiento como factor de riesgo.",
+      "explanation": "El texto menciona que nacer a finales del invierno o inicios de la primavera es lo que sugerirían algunos estudios."
+    },
+    {
+      "q": "¿Es la N-acetilcisteína un suplemento alimentario que ha mostrado potencial como coadyuvante en el tratamiento de la esquizofrenia?",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No se menciona."
+      ],
+      "correct": 0,
+      "hint": "Intervenciones nutricionales mencionadas.",
+      "explanation": "El texto destaca el papel de la N-acetilcisteína como suplemento coadyuvante según estudios recientes."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones describe correctamente la prevalencia y riesgo por sexo en la esquizofrenia?",
+      "options": [
+        "Existe un riesgo aproximadamente un 40% superior en los varones que en las mujeres.",
+        "Las mujeres presentan un riesgo un 20% superior debido a factores hormonales cíclicos.",
+        "La prevalencia es idéntica en ambos sexos, variando únicamente la edad de debut clínico."
+      ],
+      "correct": 0,
+      "hint": "Busca el porcentaje de riesgo mencionado en el apartado de factores de riesgo.",
+      "explanation": "La evidencia actual apunta a un 40% más de riesgo en hombres que en mujeres, con un inicio más temprano en ellos."
+    },
+    {
+      "q": "Respecto a los síntomas de lenguaje desorganizado, ¿qué término define el uso de palabras comunes de forma incorrecta o la invención de términos propios?",
+      "options": [
+        "La circunstancialidad excesiva.",
+        "La parafasia y el neologismo.",
+        "La tangencialidad del discurso."
+      ],
+      "correct": 1,
+      "hint": "Término técnico para la sustitución de palabras o creación de nuevas.",
+      "explanation": "La parafasia es el uso incorrecto de palabras comunes y los neologismos son términos de invención propia."
+    },
+    {
+      "q": "¿Qué área cerebral se vincula específicamente con el comportamiento desorganizado y el deterioro ejecutivo en la esquizofrenia?",
+      "options": [
+        "La amígdala y el sistema límbico.",
+        "La corteza prefrontal y el cuerpo calloso.",
+        "El cerebelo y los ganglios basales."
+      ],
+      "correct": 1,
+      "hint": "Estructuras implicadas en la planificación y velocidad de procesamiento.",
+      "explanation": "El texto asocia el problema ejecutivo al comportamiento desorganizado con la actividad de la corteza prefrontal y el cuerpo calloso."
+    },
+    {
+      "q": "Sobre la cognición social en la esquizofrenia, es correcto afirmar que los pacientes presentan dificultades en:",
+      "options": [
+        "La detección de microexpresiones faciales de asco.",
+        "El reconocimiento del miedo en los rostros ajenos.",
+        "La percepción visual de objetos inanimados lejanos."
+      ],
+      "correct": 1,
+      "hint": "Emoción específica que les cuesta identificar en los demás.",
+      "explanation": "El texto señala que tienen grandes dificultades para reconocer emociones como el miedo en los rostros ajenos."
+    },
+    {
+      "q": "En el contexto de los síntomas negativos, ¿qué caracteriza principalmente a la alogia?",
+      "options": [
+        "La pérdida de interés por actividades placenteras.",
+        "El empobrecimiento generalizado de la producción del habla.",
+        "La incapacidad para tomar decisiones autónomas rápidas."
+      ],
+      "correct": 1,
+      "hint": "Definición técnica de alogia.",
+      "explanation": "La alogia se expresa como el empobrecimiento generalizado en la producción del lenguaje o 'pobreza del habla'."
+    },
+    {
+      "q": "¿Cuál es la edad de mayor riesgo para la aparición de síntomas psicóticos iniciales en los varones según el texto?",
+      "options": [
+        "Entre los 15 y los 19 años de edad.",
+        "Entre los 21 y los 25 años de edad.",
+        "Entre los 26 y los 30 años de edad."
+      ],
+      "correct": 1,
+      "hint": "Franja etaria específica para hombres.",
+      "explanation": "El texto especifica que la edad de riesgo para los varones está comprendida entre los 21 y los 25 años."
+    },
+    {
+      "q": "¿Qué hallazgo neurológico relacionado con la migración neuronal se ha descrito como una alteración sólida en la esquizofrenia?",
+      "options": [
+        "La atrofia severa del lóbulo occipital.",
+        "La heterotopia neuronal en la corteza entorrinal.",
+        "El aumento masivo de la densidad sináptica cortical."
+      ],
+      "correct": 1,
+      "hint": "Tipo de alteración en el desarrollo fetal mencionada.",
+      "explanation": "Se han descrito alteraciones en la migración de neuronas en la corteza entorrinal, denominadas heterotopia neuronal."
+    },
+    {
+      "q": "En relación con la genética de la esquizofrenia, ¿qué porcentaje de la heredabilidad puede explicarse actualmente?",
+      "options": [
+        "Aproximadamente el 10% del total.",
+        "Aproximadamente el 27% del total.",
+        "Aproximadamente el 55% del total."
+      ],
+      "correct": 1,
+      "hint": "Dato numérico sobre la capacidad explicativa de la genética actual.",
+      "explanation": "El texto afirma que a partir del conocimiento genético actual sería posible explicar el 27% de su heredabilidad."
+    },
+    {
+      "q": "¿Qué factor se describe como el mecanismo cerebral común que media la comorbilidad entre esquizofrenia y consumo de sustancias?",
+      "options": [
+        "La neuroinflamación sistémica.",
+        "La neurodegeneración talámica.",
+        "La hipersensibilidad periférica."
+      ],
+      "correct": 0,
+      "hint": "Proceso biológico compartido entre ambas condiciones.",
+      "explanation": "El texto menciona la neuroinflamación como un mecanismo cerebral común a la esquizofrenia y los trastornos por uso de sustancias."
+    },
+    {
+      "q": "Respecto a los factores de protección, ¿cuál de los siguientes elementos incide positivamente en el desempeño cognitivo del paciente?",
+      "options": [
+        "El vivir en regiones urbanas densas.",
+        "El nivel cultural de la propia familia.",
+        "El mantenimiento de una dieta hipercalórica."
+      ],
+      "correct": 1,
+      "hint": "Variables que protegen frente a los déficits cognitivos.",
+      "explanation": "Existe evidencia de que el nivel cultural de la familia y el del propio paciente inciden positivamente en su desempeño cognitivo."
+    },
+    {
+      "q": "Según el DSM-5, para diagnosticar esquizofrenia, ¿cuántos síntomas del Criterio A deben estar presentes durante al menos un mes?",
+      "options": [
+        "Al menos uno de los síntomas principales.",
+        "Al menos dos o más de los síntomas listados.",
+        "Al menos tres de los síntomas positivos típicos."
+      ],
+      "correct": 1,
+      "hint": "Número mínimo de síntomas para cumplir el criterio de fase activa.",
+      "explanation": "El Criterio A del DSM-5 requiere dos (o más) de los síntomas durante una parte significativa de un mes."
+    },
+    {
+      "q": "¿Qué dimensión de personalidad actúa como un factor de riesgo para el desarrollo de la esquizofrenia según la literatura citada?",
+      "options": [
+        "La alta tendencia a la cooperación.",
+        "La evitación del daño y la dependencia pasiva.",
+        "La capacidad de autonomía y autodirección."
+      ],
+      "correct": 1,
+      "hint": "Rasgos que minimizan vs. rasgos que aumentan la probabilidad.",
+      "explanation": "El texto señala que la evitación del daño y la dependencia pasiva actuarían como factores de riesgo."
+    },
+    {
+      "q": "En la clasificación de alucinaciones por fenomenología, ¿cómo se define la autoscopia?",
+      "options": [
+        "La percepción de voces que discuten entre sí.",
+        "La experiencia extracorpórea de verse a sí mismo.",
+        "La sensación de que las vísceras se desplazan."
+      ],
+      "correct": 1,
+      "hint": "Fenómeno de verse a uno mismo 'desde fuera'.",
+      "explanation": "La autoscopia se define como la experiencia fuera del cuerpo (extracorpórea) en la que la persona se ve a sí misma."
+    },
+    {
+      "q": "¿Cuál es la principal característica del síntoma negativo conocido como abulia?",
+      "options": [
+        "La reducción extrema del vocabulario disponible.",
+        "La alteración de la motivación y de la voluntad.",
+        "La percepción de una experiencia emocional atenuada."
+      ],
+      "correct": 1,
+      "hint": "Efecto sobre la toma de decisiones y la iniciativa.",
+      "explanation": "La abulia es una alteración profunda de la motivación y la voluntad, dificultando la toma de decisiones."
+    },
+    {
+      "q": "¿Qué porcentaje de pacientes con síntomas psicóticos inducidos por cannabis desarrollarán finalmente esquizofrenia?",
+      "options": [
+        "Alrededor del 25% de los casos totales.",
+        "Alrededor del 50% de los casos totales.",
+        "Alrededor del 75% de los casos totales."
+      ],
+      "correct": 1,
+      "hint": "Estadística sobre la transición de psicosis por cannabis a esquizofrenia.",
+      "explanation": "El texto indica que el 50% del total de pacientes con síntomas inducidos por cannabis desarrollarán esquizofrenia con el tiempo."
+    },
+    {
+      "q": "Dentro del lenguaje desorganizado, ¿qué caracteriza a la circunstancialidad?",
+      "options": [
+        "La interrupción abrupta y definitiva del discurso.",
+        "La introducción de excesivos detalles irrelevantes.",
+        "La repetición literal de las palabras del interlocutor."
+      ],
+      "correct": 1,
+      "hint": "Discurso 'barroco' que no pierde el punto principal pero es ineficiente.",
+      "explanation": "La circunstancialidad implica introducir una variedad de detalles irrelevantes tan elevada que el lenguaje se vuelve abigarrado."
+    },
+    {
+      "q": "El delirio de difusión o irradiación del pensamiento implica la creencia de que:",
+      "options": [
+        "El pensamiento es introducido por entes externos.",
+        "Los pensamientos son captados por el Gobierno central.",
+        "Los pensamientos propios son de dominio público."
+      ],
+      "correct": 2,
+      "hint": "Sensación de que la mente es 'transparente' para los demás.",
+      "explanation": "En el delirio de difusión, la persona cree que sus pensamientos son difundidos hacia el exterior y son de dominio público."
+    },
+    {
+      "q": "Las alucinaciones funcionales se definen clínicamente como aquellas que:",
+      "options": [
+        "Son percibidas como producto de la propia mente.",
+        "Ocurren simultáneamente a un estímulo real presente.",
+        "Se activan en una modalidad distinta a la del estímulo."
+      ],
+      "correct": 1,
+      "hint": "Requieren de un estímulo real 'disparador' en la misma modalidad.",
+      "explanation": "Las alucinaciones funcionales son simultáneas a estímulos que se encuentran realmente en el campo perceptivo."
+    },
+    {
+      "q": "¿Qué síntoma negativo se asocia a la percepción de situaciones neutras como más negativas de lo habitual?",
+      "options": [
+        "La anhedonia social persistente.",
+        "El aplanamiento afectivo severo.",
+        "El aislamiento social preventivo."
+      ],
+      "correct": 1,
+      "hint": "Atenuación de la experiencia emocional y sesgo negativo.",
+      "explanation": "El aplanamiento afectivo implica que las situaciones placenteras se ven menos positivas y las neutras de forma más negativa."
+    },
+    {
+      "q": "¿Cuál es un criterio de exclusión (D y E) para el diagnóstico de esquizofrenia según el DSM-5?",
+      "options": [
+        "La presencia de alucinaciones visuales persistentes.",
+        "La concurrencia de episodios maníacos significativos.",
+        "El inicio de los síntomas tras los 45 años de edad."
+      ],
+      "correct": 1,
+      "hint": "Diagnóstico diferencial con trastornos del estado de ánimo.",
+      "explanation": "El DSM-5 exige descartar trastornos esquizoafectivos, depresivos o bipolares con características psicóticas (Criterio D y E)."
+    },
+    {
+      "q": "¿Qué tipo de alucinación implica percibir sabores desagradables como metálicos o ácidos sin estímulo externo?",
+      "options": [
+        "Alucinación cenestésica.",
+        "Alucinación gustativa.",
+        "Alucinación háptica."
+      ],
+      "correct": 1,
+      "hint": "Modalidad sensorial relacionada con las papilas.",
+      "explanation": "Las alucinaciones gustativas incluyen sabores metálicos, dulces, ácidos, amargos, etc."
+    },
+    {
+      "q": "La teoría del 'doble vínculo' como factor de riesgo en la psicosis se caracteriza por:",
+      "options": [
+        "El consumo dual de cannabis y cocaína prenatal.",
+        "Los patrones de comunicación familiar contradictorios.",
+        "La presencia de dos genes mutados idénticos (DISC1)."
+      ],
+      "correct": 1,
+      "hint": "Modelo sistémico de comunicación familiar.",
+      "explanation": "La teoría del doble vínculo sugiere mensajes contradictorios e imposibles de satisfacer simultáneamente en la familia."
+    },
+    {
+      "q": "¿Qué hallazgo macroscópico es común en el cerebro de pacientes con esquizofrenia?",
+      "options": [
+        "Un aumento del volumen total del lóbulo parietal.",
+        "Un aumento del volumen de los ventrículos cerebrales.",
+        "Una hipertrofia de las neuronas de la zona hipocampal."
+      ],
+      "correct": 1,
+      "hint": "Cambios estructurales en los espacios de líquido cefalorraquídeo.",
+      "explanation": "Entre los hallazgos neurológicos destacan el volumen cerebral reducido y el aumento en el volumen de los ventrículos cerebrales."
+    },
+    {
+      "q": "En el tratamiento de la asocialidad, las personas con esquizofrenia suelen considerar que las barreras son:",
+      "options": [
+        "De origen externo por la maldad de los vecinos.",
+        "De origen interno asumiendo plena responsabilidad.",
+        "Inexistentes debido a su falta de interés social."
+      ],
+      "correct": 1,
+      "hint": "Percepción del paciente sobre su dificultad para relacionarse.",
+      "explanation": "El texto indica que consideran las barreras de origen interno y asumen la responsabilidad de sus limitaciones."
+    },
+    {
+      "q": "¿Cuál es un virus específicamente mencionado como patógeno estudiado en la etiología de la esquizofrenia?",
+      "options": [
+        "El virus de la inmunodeficiencia humana.",
+        "El virus de la patología de Borna.",
+        "El virus del papiloma humano tipo 16."
+      ],
+      "correct": 1,
+      "hint": "Revisa la lista de infecciones víricas al final de los factores de riesgo.",
+      "explanation": "El virus de la patología de Borna es uno de los patógenos estudiados mencionados expresamente en el texto."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre la delimitación conceptual de la esquizofrenia:",
+      "options": [
+        "Se manifiesta a menudo en una evolución deletérea para el sujeto.",
+        "Es un trastorno de curso agudo con remisión completa espontánea.",
+        "Incorpora un matiz cultural ineludible en la valoración de delirios."
+      ],
+      "correct": 1,
+      "hint": "Busca la descripción del curso temporal y la necesidad de tratamiento.",
+      "explanation": "La afirmación es incorrecta porque la esquizofrenia es de curso crónico y no suele remitir espontáneamente sin fármacos."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA respecto a los síntomas cognitivos en la esquizofrenia:",
+      "options": [
+        "Afectan a funciones como la memoria, atención y procesamiento social.",
+        "Son considerados por todos los autores como síntomas de tipo positivo.",
+        "Pueden mediar deterioros en la velocidad de procesamiento de información."
+      ],
+      "correct": 1,
+      "hint": "Clasificación histórica y actual de los síntomas cognitivos.",
+      "explanation": "Originalmente se clasificaron como negativos, no como positivos; actualmente se tienden a independizar."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre el delirio de inserción del pensamiento:",
+      "options": [
+        "El paciente cree que sus pensamientos son difundidos por radio.",
+        "El paciente percibe que los contenidos mentales no son de su autoría.",
+        "El paciente suele experimentar una vívida sensación de control externo."
+      ],
+      "correct": 0,
+      "hint": "Diferencia entre inserción y difusión/irradiación.",
+      "explanation": "Creer que los pensamientos se difunden por radio es propio del delirio de difusión, no del de inserción."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre las alucinaciones en la esquizofrenia:",
+      "options": [
+        "Las modalidades auditivas son las que aparecen con mayor frecuencia.",
+        "En la población general no ocurren vivencias de tipo alucinatorio.",
+        "Suelen ser percibidas por el paciente como profundamente vívidas."
+      ],
+      "correct": 1,
+      "hint": "Prevalencia de experiencias alucinatorias en personas sin trastorno.",
+      "explanation": "El texto menciona que en la población general ocurren vivencias alucinatorias con una frecuencia de alrededor del 6%."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre el síntoma de tangencialidad:",
+      "options": [
+        "El discurso del paciente se desvía progresivamente del tema central.",
+        "Las respuestas ofrecidas están relacionadas de una forma indirecta.",
+        "El paciente repite palabras del interlocutor justo tras escucharlas."
+      ],
+      "correct": 2,
+      "hint": "Definición de tangencialidad vs. ecolalia.",
+      "explanation": "La repetición de palabras del interlocutor es ecolalia; la tangencialidad es la desviación del tema."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre la apatía en la esquizofrenia:",
+      "options": [
+        "Se asocia a un menoscabo en el inicio de acciones dirigidas a metas.",
+        "Es un síntoma positivo que mejora drásticamente con ansiolíticos.",
+        "Se considera uno de los síntomas negativos más relevantes del cuadro."
+      ],
+      "correct": 1,
+      "hint": "Clasificación de la apatía y su respuesta general al tratamiento.",
+      "explanation": "La apatía es un síntoma negativo, no positivo, y su abordaje es complejo."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre los criterios diagnósticos del DSM-5:",
+      "options": [
+        "Al menos uno de los síntomas debe ser delirio, alucinación o lenguaje desorganizado.",
+        "El nivel de funcionamiento debe estar muy por debajo del previo al trastorno.",
+        "Basta con presentar síntomas de fase activa durante una semana para el diagnóstico."
+      ],
+      "correct": 2,
+      "hint": "Requisitos temporales para el Criterio A.",
+      "explanation": "El Criterio A requiere que los síntomas estén presentes durante un periodo de al menos un mes (o menos si hay éxito terapéutico)."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre los factores de riesgo obstétricos:",
+      "options": [
+        "El consumo de cannabis materno durante el embarazo es un factor de riesgo.",
+        "Las complicaciones durante la gestación cuentan con un consenso científico.",
+        "Nacer en pleno verano reduce el riesgo de esquizofrenia en un 80%."
+      ],
+      "correct": 2,
+      "hint": "Evidencia sobre la estacionalidad del nacimiento.",
+      "explanation": "No existe evidencia de que nacer en verano reduzca el riesgo en tal porcentaje; se discute el riesgo en invierno/primavera."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre el delirio de autodesprecio:",
+      "options": [
+        "La persona se culpa por sucesos adversos de personas lejanas.",
+        "Existe una lógica impecable en la relación entre los hechos y la culpa.",
+        "Puede vincularse a eventos históricos masivos como el 11 de septiembre."
+      ],
+      "correct": 1,
+      "hint": "Lógica interna de los delirios de culpa.",
+      "explanation": "Al analizar este razonamiento se distingue una 'absoluta ausencia de lógica' en la relación entre acontecimientos."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre el delirio nihilista:",
+      "options": [
+        "Afecta a veces solo a partes del cuerpo, como creer que un brazo no existe.",
+        "Se ha descrito una conexión frecuente con ideas sobre el propio morir.",
+        "Suele acompañarse de alucinaciones visuales de colores muy brillantes."
+      ],
+      "correct": 2,
+      "hint": "Modalidad sensorial frecuentemente asociada al delirio nihilista.",
+      "explanation": "El texto asocia el delirio nihilista a alucinaciones olfativas (podredumbre), no visuales brillantes."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre las alucinaciones por modalidad sensorial:",
+      "options": [
+        "Las cenestésicas implican sensaciones de desplazamiento de las vísceras.",
+        "Las cinestésicas se relacionan con la agitación o flotación de extremidades.",
+        "Las hápticas consisten en la percepción de olores químicos desagradables."
+      ],
+      "correct": 2,
+      "hint": "Diferencia entre alucinación háptica y olfativa.",
+      "explanation": "Las alucinaciones hápticas son táctiles (quemaduras, pinchazos); las de olores son olfativas."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre el bloqueo del pensamiento:",
+      "options": [
+        "Se produce una interrupción abrupta en el contenido del discurso.",
+        "Es frecuente que el paciente recupere la idea original tras el silencio.",
+        "Tras la elipsis silenciosa se rompe por completo el proceso comunicativo."
+      ],
+      "correct": 1,
+      "hint": "Posibilidad de recuperar el hilo conductor tras el bloqueo.",
+      "explanation": "El texto señala que tras el bloqueo 'no existe la posibilidad de recuperar la idea original'."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre la anhedonia en la psicosis:",
+      "options": [
+        "Representa dificultades moderadas o altas para experimentar placer.",
+        "Es un síntoma exclusivo de la esquizofrenia y no aparece en la depresión.",
+        "Podría estar a la base de la pobre participación en actividades agradables."
+      ],
+      "correct": 1,
+      "hint": "Transversalidad de la anhedonia en psicopatología.",
+      "explanation": "La anhedonia es también un síntoma frecuente en la depresión mayor, por lo que es un fenómeno transversal."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre el diagnóstico de esquizofrenia y el autismo:",
+      "options": [
+        "Son trastornos que nunca pueden diagnosticarse de forma comórbida.",
+        "Se requiere la presencia de delirios o alucinaciones notables un mes.",
+        "El diagnóstico adicional solo se hace si se cumplen criterios específicos."
+      ],
+      "correct": 0,
+      "hint": "Criterio F del DSM-5 sobre trastornos del neurodesarrollo previos.",
+      "explanation": "El Criterio F permite el diagnóstico adicional si hay delirios o alucinaciones notables durante al menos un mes."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre los factores de riesgo genéticos:",
+      "options": [
+        "Se trata de una patología de naturaleza monogénica (un solo gen).",
+        "Se han identificado unos diez genes candidatos principales como DISC1.",
+        "Pueden contribuir miles de variantes relacionadas con el neurodesarrollo."
+      ],
+      "correct": 0,
+      "hint": "Complejidad genética de la esquizofrenia.",
+      "explanation": "Es una patología poligénica, no monogénica; contribuyen cientos o miles de variantes."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre el estrés como factor de riesgo:",
+      "options": [
+        "La hipótesis diátesis-estrés combina vulnerabilidad y estresores.",
+        "Los estresores tempranos no influyen en la reacción ante los tardíos.",
+        "El trauma puede favorecer la transición a psicosis vía inflamación."
+      ],
+      "correct": 1,
+      "hint": "Fenómeno de sensibilización ante el estrés.",
+      "explanation": "Los periodos sensibles a menudo 'sensibilizan' a los individuos para experimentar con mayor intensidad estresores agudos posteriores."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre los factores de protección socioeconómicos:",
+      "options": [
+        "Vivir en entornos rurales se asocia a un decremento de la prevalencia.",
+        "El nivel cultural de la familia no tiene impacto en la evolución clínica.",
+        "La educación en salud promueve la adherencia al tratamiento médico."
+      ],
+      "correct": 1,
+      "hint": "Impacto del nivel cultural en el desempeño cognitivo.",
+      "explanation": "El texto afirma que el nivel cultural de la familia y el paciente inciden positivamente en el desempeño cognitivo."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre la inteligencia como factor protector:",
+      "options": [
+        "La baja inteligencia premórbida es un factor de riesgo importante.",
+        "La alta inteligencia puede compensar o mitigar la evolución tórpida.",
+        "La esquizofrenia no afecta nunca al potencial intelectual del paciente."
+      ],
+      "correct": 2,
+      "hint": "Interacción entre el trastorno y el potencial intelectual familiar.",
+      "explanation": "La patología interactúa con factores ambientales impidiendo alcanzar el potencial intelectual vinculado a la unidad familiar."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre la suplementación dietética:",
+      "options": [
+        "Las carencias de vitamina D en la gestación aumentan el riesgo.",
+        "Los ácidos omega-3 son irrelevantes para el neurodesarrollo fetal.",
+        "Los déficits en enzimas antioxidantes se han relacionado con el trastorno."
+      ],
+      "correct": 1,
+      "hint": "Nutrientes críticos mencionados en el periodo prenatal.",
+      "explanation": "Las carencias de omega-3 durante la gestación sí pueden incidir negativamente en el neurodesarrollo."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre las pseudoalucinaciones:",
+      "options": [
+        "Se caracterizan por una vivacidad inferior a la alucinación común.",
+        "El paciente las reconoce como un producto de su propia mente.",
+        "Son percibidas siempre como voces externas procedentes de la radio."
+      ],
+      "correct": 2,
+      "hint": "Origen percibido de la pseudoalucinación.",
+      "explanation": "Se reconocen como producto de la propia mente, por lo que no se atribuyen a una fuente externa física como la radio."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre el delirio somático:",
+      "options": [
+        "Puede basarse en interpretaciones erradas de sensaciones reales.",
+        "Es una creencia firme e inflexible sobre el funcionamiento orgánico.",
+        "Siempre tiene una base médica comprobable mediante radiografías."
+      ],
+      "correct": 2,
+      "hint": "Naturaleza de la creencia delirante somática.",
+      "explanation": "Son ideas inflexibles que 'carecen de fundamentos médicos' y resultan inverosímiles."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre la desorganización de la conducta:",
+      "options": [
+        "Impide forjar vínculos con los demás o vivir de forma autónoma.",
+        "Se asocia a un aumento masivo de la velocidad de procesamiento.",
+        "Relaciona conductas erráticas con fallos en la planificación de metas."
+      ],
+      "correct": 1,
+      "hint": "Relación entre desorganización y funciones ejecutivas.",
+      "explanation": "Se acompaña de una 'menor' velocidad en el procesamiento de la información, no mayor."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre el ambiente familiar positivo:",
+      "options": [
+        "Reduce el riesgo de experimentar estresores persistentes en la niñez.",
+        "El apoyo social no tiene ningún papel en los procesos de recuperación.",
+        "Estimular la parentalidad positiva tiene funciones protectoras claras."
+      ],
+      "correct": 1,
+      "hint": "Importancia del apoyo social afectivo y material.",
+      "explanation": "El apoyo social tiene un 'papel clave' en los procesos de recuperación tras periodos agudos."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre el delirio persecutorio:",
+      "options": [
+        "El paciente puede sentirse espiado a través de las redes sociales.",
+        "La creencia se basa en un entramado conspirativo donde él es protagonista.",
+        "Es un síntoma negativo que refleja la falta de voluntad para salir de casa."
+      ],
+      "correct": 2,
+      "hint": "Clasificación del delirio persecutorio.",
+      "explanation": "El delirio persecutorio es un síntoma positivo, no un síntoma negativo."
+    },
+    {
+      "q": "Identifica la afirmación INCORRECTA sobre la perseveración del habla:",
+      "options": [
+        "Implica la repetición constante de palabras de forma inconexa.",
+        "Sugiere dificultades en los procesos de flexibilidad cognitiva.",
+        "Ocurre solo cuando el interlocutor guarda silencio prolongado."
+      ],
+      "correct": 2,
+      "hint": "Contexto en el que aparece la perseveración.",
+      "explanation": "La perseveración ocurre aun cuando la comunicación ha variado ostensiblemente, no requiere silencio del otro."
+    },
+    {
+      "q": "La esquizofrenia se manifiesta frecuentemente a través de una evolución ____ que condiciona el pronóstico vital del paciente.",
+      "options": [
+        "altamente deletérea",
+        "meramente episódica",
+        "siempre regresiva"
+      ],
+      "correct": 0,
+      "hint": "El texto menciona un término específico para referirse a una evolución destructiva o venenosa.",
+      "explanation": "El texto describe la evolución como 'deletérea' (pág. 51), lo que implica un deterioro progresivo y grave."
+    },
+    {
+      "q": "Muchos pacientes con esquizofrenia se apropian del estigma social, fenómeno conocido como ____, afectando su participación.",
+      "options": [
+        "estigma internalizado",
+        "autoestigma clínico",
+        "disonancia cognitiva"
+      ],
+      "correct": 1,
+      "hint": "Revisar el apartado 5.1 sobre la apropiación de rasgos genéricos por el propio paciente.",
+      "explanation": "El término exacto utilizado en el texto es 'autoestigma' (pág. 51)."
+    },
+    {
+      "q": "La tipología de Timothy Crow clasifica los síntomas atendiendo a criterios de ____ o ausencia de ciertas experiencias.",
+      "options": [
+        "presencia funcional",
+        "evidencia empírica",
+        "niveles de cronicidad"
+      ],
+      "correct": 0,
+      "hint": "Crow divide entre síntomas positivos y negativos basándose en la adición o sustracción de conducta.",
+      "explanation": "Crow clasifica según la presencia (síntomas positivos) o ausencia (síntomas negativos) de experiencias (pág. 52)."
+    },
+    {
+      "q": "La capacidad de inferir o predecir las intenciones y expectativas de los demás se denomina técnicamente ____ en el texto.",
+      "options": [
+        "teoría de la mente",
+        "mentalización",
+        "empatía cognitiva"
+      ],
+      "correct": 1,
+      "hint": "Aparece entre paréntesis al hablar de la cognición social.",
+      "explanation": "El texto define la capacidad de inferir intenciones como 'mentalización' (pág. 52)."
+    },
+    {
+      "q": "El déficit en la memoria episódica de estos pacientes podría explicarse por el compromiso de la ____ en el cerebro.",
+      "options": [
+        "corteza prefrontal",
+        "corteza orbitofrontal",
+        "corteza cingulada"
+      ],
+      "correct": 0,
+      "hint": "Se especifica una región concreta asociada a la memoria de trabajo y episódica.",
+      "explanation": "El texto señala la implicación de la corteza prefrontal dorsolateral (pág. 52)."
+    },
+    {
+      "q": "El delirio en el que el paciente percibe que sus contenidos mentales no son de su autoría se denomina ____ del pensamiento.",
+      "options": [
+        "difusión pasiva",
+        "inserción ajena",
+        "sustracción real"
+      ],
+      "correct": 1,
+      "hint": "El paciente cree que un tercero ha 'introducido' el pensamiento.",
+      "explanation": "Se denomina delirio de inserción del pensamiento (pág. 53)."
+    },
+    {
+      "q": "En el delirio de ____, el sujeto cree que sus secretos íntimos son públicos como si fueran pronunciados en voz alta.",
+      "options": [
+        "irradiación",
+        "referencia",
+        "transmisión"
+      ],
+      "correct": 0,
+      "hint": "También se conoce como difusión del pensamiento.",
+      "explanation": "El texto utiliza 'difusión o irradiación del pensamiento' para esta creencia (pág. 53)."
+    },
+    {
+      "q": "El delirio ____ implica la creencia de que mensajes en medios neutros albergan información velada y trascendente para el sujeto.",
+      "options": [
+        "de persecución",
+        "de referencia",
+        "de grandeza"
+      ],
+      "correct": 1,
+      "hint": "El sujeto se siente el centro de mensajes televisivos o radiofónicos.",
+      "explanation": "Se define como delirio de referencia (pág. 53)."
+    },
+    {
+      "q": "Cuando un paciente cree que sus órganos se están pudriendo o tiene parásitos internos, sufre un delirio de tipo ____.",
+      "options": [
+        "somático",
+        "nihilista",
+        "fantástico"
+      ],
+      "correct": 0,
+      "hint": "Se refiere al funcionamiento o estado del propio organismo.",
+      "explanation": "Es el delirio somático, caracterizado por creencias inverosímiles sobre el organismo (pág. 53)."
+    },
+    {
+      "q": "El delirio ____ se caracteriza por la creencia de haber dejado de existir o que la propia realidad se ha desvanecido.",
+      "options": [
+        "megalomaníaco",
+        "nihilista",
+        "ontológico"
+      ],
+      "correct": 1,
+      "hint": "A menudo se asocia con el síndrome de Cotard, aunque el texto usa el término genérico.",
+      "explanation": "El delirio nihilista versa sobre el no existir o el desvanecimiento de la realidad (pág. 54)."
+    },
+    {
+      "q": "Las alucinaciones en la niñez o adolescencia se consideran un factor de riesgo para la transición a la esquizofrenia en la ____.",
+      "options": [
+        "adultez temprana",
+        "etapa involutiva",
+        "senectud precoz"
+      ],
+      "correct": 0,
+      "hint": "El riesgo se manifiesta al inicio de la madurez.",
+      "explanation": "Señala la transición a partir de los primeros años de la adultez temprana (pág. 54)."
+    },
+    {
+      "q": "Las alucinaciones de naturaleza ____ suelen ser simples y expresarse en una sola modalidad sensorial como zumbidos.",
+      "options": [
+        "elementales",
+        "funcionales",
+        "idiosincrásicas"
+      ],
+      "correct": 0,
+      "hint": "Se opone a las alucinaciones 'complejas'.",
+      "explanation": "Las elementales incluyen zumbidos, pitidos o destellos simples (pág. 55)."
+    },
+    {
+      "q": "La percepción de objetos o escenas que se encuentran fuera del alcance físico del paciente se denomina alucinación ____.",
+      "options": [
+        "extracampina",
+        "fenomenológica",
+        "extracorpórea"
+      ],
+      "correct": 0,
+      "hint": "Ocurre fuera del campo sensorial normal.",
+      "explanation": "Se define como alucinación extracampina (pág. 55)."
+    },
+    {
+      "q": "El síntoma de lenguaje desorganizado en el que el discurso se desvía progresivamente del tema central es la ____.",
+      "options": [
+        "tangencialidad",
+        "perseveración",
+        "circunstancialidad"
+      ],
+      "correct": 0,
+      "hint": "El paciente bordea el límite del asunto sin llegar a él.",
+      "explanation": "La tangencialidad consiste en respuestas relacionadas solo indirectamente que se desvían (pág. 56)."
+    },
+    {
+      "q": "La ____ es la repetición constante de palabras o frases inconexas respecto al contenido actual de la comunicación.",
+      "options": [
+        "ecolalia",
+        "perseveración",
+        "parafasia"
+      ],
+      "correct": 1,
+      "hint": "Sugiere dificultades en la flexibilidad cognitiva.",
+      "explanation": "La perseveración es la repetición de palabras cuando el tema ya ha variado (pág. 56)."
+    },
+    {
+      "q": "Se produce un ____ cuando hay una interrupción abrupta del discurso tras la cual no se recupera la idea original.",
+      "options": [
+        "bloqueo del pensamiento",
+        "aplanamiento afectivo",
+        "aislamiento semántico"
+      ],
+      "correct": 0,
+      "hint": "Es una elipsis silenciosa que rompe el proceso comunicativo.",
+      "explanation": "El bloqueo del pensamiento implica la ruptura permanente de la idea original (pág. 56)."
+    },
+    {
+      "q": "La ____ consiste en introducir detalles irrelevantes de forma tan elevada que el lenguaje se vuelve barroco y abigarrado.",
+      "options": [
+        "incongruencia",
+        "parafasia",
+        "circunstancialidad"
+      ],
+      "correct": 2,
+      "hint": "El paciente mantiene el punto principal pero con excesivos rodeos.",
+      "explanation": "La circunstancialidad sobrecarga el discurso con detalles superfluos (pág. 56)."
+    },
+    {
+      "q": "El uso incorrecto de palabras comunes o la invención de términos propios (neologismos) se clasifica como ____.",
+      "options": [
+        "parafasia",
+        "ecolalia",
+        "tangencialidad"
+      ],
+      "correct": 0,
+      "hint": "Puede haber una relación sutil o formal entre la palabra real y la usada.",
+      "explanation": "La parafasia incluye el uso incorrecto de palabras y la creación de neologismos (pág. 57)."
+    },
+    {
+      "q": "El comportamiento desorganizado se considera un problema ____ dependiente de la corteza prefrontal y el cuerpo calloso.",
+      "options": [
+        "ejecutivo",
+        "mnésico",
+        "perceptivo"
+      ],
+      "correct": 0,
+      "hint": "Afecta la planificación de actos coherentes con metas.",
+      "explanation": "El texto lo define como un problema ejecutivo (pág. 57)."
+    },
+    {
+      "q": "La ____ se manifiesta como una pérdida de interés por iniciar y persistir en acciones dirigidas a metas.",
+      "options": [
+        "apatía",
+        "abulia",
+        "alogia"
+      ],
+      "correct": 0,
+      "hint": "Es considerada a menudo como el síntoma negativo más relevante.",
+      "explanation": "La apatía es la falta de interés y entusiasmo por las actividades propositivas (pág. 57)."
+    },
+    {
+      "q": "La alteración profunda de la motivación y voluntad que requiere tutela de terceros se denomina técnicamente ____.",
+      "options": [
+        "asocialidad",
+        "abulia",
+        "anhedonia"
+      ],
+      "correct": 1,
+      "hint": "Se asocia a pasividad y mayor latencia en la respuesta motora.",
+      "explanation": "La abulia es la alteración de la motivación y la voluntad (pág. 57)."
+    },
+    {
+      "q": "El empobrecimiento generalizado de la producción del lenguaje se conoce en clínica como ____.",
+      "options": [
+        "alogia",
+        "anhedonia",
+        "asocialidad"
+      ],
+      "correct": 0,
+      "hint": "También se le llama 'pobreza del habla'.",
+      "explanation": "La alogia es el empobrecimiento en la producción del lenguaje (pág. 58)."
+    },
+    {
+      "q": "El fenómeno por el cual las situaciones neutras se juzgan más negativamente de lo normal es propio del ____.",
+      "options": [
+        "aislamiento social",
+        "aplanamiento afectivo",
+        "delirio persecutorio"
+      ],
+      "correct": 1,
+      "hint": "Relacionado con una experiencia emocional atenuada.",
+      "explanation": "El aplanamiento afectivo implica juzgar situaciones neutras de forma negativa (pág. 58)."
+    },
+    {
+      "q": "Para el diagnóstico de esquizofrenia según DSM-5, los signos continuos del trastorno deben persistir al menos ____.",
+      "options": [
+        "un mes",
+        "seis meses",
+        "un año"
+      ],
+      "correct": 1,
+      "hint": "Incluye fase activa, prodrómica y residual.",
+      "explanation": "El criterio C exige un mínimo de seis meses de signos continuos (pág. 58)."
+    },
+    {
+      "q": "En el criterio A del DSM-5, es obligatorio que aparezca al menos uno de estos: delirios, alucinaciones o ____.",
+      "options": [
+        "discurso desorganizado",
+        "síntomas negativos",
+        "catatonia grave"
+      ],
+      "correct": 0,
+      "hint": "Son los tres síntomas nucleares 'positivos'.",
+      "explanation": "Al menos uno ha de ser (1) delirios, (2) alucinaciones o (3) discurso desorganizado (pág. 58)."
+    },
+    {
+      "q": "El riesgo de esquizofrenia es aproximadamente un ____ superior en hombres que en mujeres.",
+      "options": [
+        "20%",
+        "40%",
+        "60%"
+      ],
+      "correct": 1,
+      "hint": "Dato estadístico sobre prevalencia por sexo mencionado en factores de riesgo.",
+      "explanation": "La evidencia actual apunta a un 40% más de riesgo en hombres (pág. 59)."
+    },
+    {
+      "q": "La edad de mayor riesgo para el debut de la esquizofrenia en varones se sitúa entre los ____ años.",
+      "options": [
+        "15 y 20",
+        "21 y 25",
+        "26 y 30"
+      ],
+      "correct": 1,
+      "hint": "Los varones suelen debutar antes que las mujeres.",
+      "explanation": "La edad de riesgo para varones es de 21 a 25 años (pág. 60)."
+    },
+    {
+      "q": "La teoría del ____ sugiere que mensajes familiares contradictorios e imposibles de satisfacer causan la psicosis.",
+      "options": [
+        "doble vínculo",
+        "apego inseguro",
+        "cisma familiar"
+      ],
+      "correct": 0,
+      "hint": "Modelo sistémico clásico que hoy apenas recibe atención investigadora.",
+      "explanation": "Se trata de la teoría del doble vínculo (pág. 60)."
+    },
+    {
+      "q": "La presencia de neuronas en la sustancia blanca subcortical por fallos en su desarrollo se denomina ____.",
+      "options": [
+        "hipoplasia neural",
+        "heterotopia neuronal",
+        "atrofia ventricular"
+      ],
+      "correct": 1,
+      "hint": "Relacionado con alteraciones en la migración neuronal.",
+      "explanation": "La heterotopia neuronal es una alteración de la migración en la corteza entorrinal (pág. 60)."
+    },
+    {
+      "q": "La genética actual permite explicar aproximadamente el ____ de la heredabilidad de la esquizofrenia.",
+      "options": [
+        "15%",
+        "27%",
+        "45%"
+      ],
+      "correct": 1,
+      "hint": "Dato específico sobre el alcance del conocimiento genético actual.",
+      "explanation": "El conocimiento actual explica el 27% de su heredabilidad (pág. 60)."
+    },
+    {
+      "q": "La hipótesis de ____ plantea que la esquizofrenia surge de la vulnerabilidad genética combinada con estresores vitales.",
+      "options": [
+        "diátesis-estrés",
+        "neuroinflamación",
+        "marcador biológico"
+      ],
+      "correct": 0,
+      "hint": "Modelo estándar que integra naturaleza y crianza.",
+      "explanation": "Es la hipótesis de diátesis-estrés (pág. 60)."
+    },
+    {
+      "q": "El ____ del total de pacientes con psicosis inducida por cannabis acabarán desarrollando esquizofrenia completa.",
+      "options": [
+        "25%",
+        "50%",
+        "75%"
+      ],
+      "correct": 1,
+      "hint": "Señala la gravedad del cannabis como factor de riesgo.",
+      "explanation": "El 50% de estos pacientes desarrollarán el cuadro completo (pág. 61)."
+    },
+    {
+      "q": "Los virus más estudiados en la etiología de la esquizofrenia incluyen el de la influenza y el del ____.",
+      "options": [
+        "herpes simple",
+        "papiloma humano",
+        "VIH/Sida"
+      ],
+      "correct": 0,
+      "hint": "Se mencionan varios virus, incluyendo HSV-1 y HSV-2.",
+      "explanation": "Se mencionan los virus del herpes 1 y 2 entre los patógenos estudiados (pág. 61)."
+    },
+    {
+      "q": "Se observa una mayor prevalencia de esquizofrenia en regiones ____ en comparación con las rurales.",
+      "options": [
+        "urbanas",
+        "costeras",
+        "insulares"
+      ],
+      "correct": 0,
+      "hint": "Factor de riesgo ambiental relacionado con el nivel socioeconómico.",
+      "explanation": "La prevalencia aumenta en regiones urbanas (pág. 61)."
+    },
+    {
+      "q": "La capacidad de ____ es un rasgo de personalidad que actúa como factor de protección frente al trastorno.",
+      "options": [
+        "dirigirse a uno mismo",
+        "aislarse socialmente",
+        "evitar el daño"
+      ],
+      "correct": 0,
+      "hint": "Sinónimo de autonomía mencionado en el apartado de personalidad.",
+      "explanation": "La autonomía o capacidad de dirigirse a uno mismo es protectora (pág. 62)."
+    },
+    {
+      "q": "La ____ es un factor protector que interactúa con el ambiente para mitigar el deterioro neurológico.",
+      "options": [
+        "baja emocionalidad",
+        "elevada inteligencia",
+        "rigidez cognitiva"
+      ],
+      "correct": 1,
+      "hint": "Se opone a la inteligencia premórbida baja como riesgo.",
+      "explanation": "La elevada inteligencia se considera un factor protector (pág. 62)."
+    },
+    {
+      "q": "La suplementación con ____ durante la gestación puede reducir el riesgo de neurodesarrollo aberrante.",
+      "options": [
+        "vitamina D",
+        "vitamina K",
+        "vitamina A"
+      ],
+      "correct": 0,
+      "hint": "Se citan los ácidos omega-3 y las vitaminas B y otra más.",
+      "explanation": "El texto cita específicamente omega-3, vitamina B y vitamina D (pág. 62)."
+    },
+    {
+      "q": "La ____ es una sustancia antioxidante estudiada como coadyuvante en el tratamiento de la esquizofrenia.",
+      "options": [
+        "N-acetilcisteína",
+        "benzodiazepina",
+        "clozapina"
+      ],
+      "correct": 0,
+      "hint": "Se menciona al final del capítulo como suplemento alimentario.",
+      "explanation": "Se destaca el papel de la N-acetilcisteína (pág. 62)."
+    },
+    {
+      "q": "El término coloquial para referirse a los episodios agudos de esquizofrenia es ____.",
+      "options": [
+        "crisis",
+        "brotes",
+        "fugas"
+      ],
+      "correct": 1,
+      "hint": "Se menciona en el cierre del capítulo sobre la evolución de síntomas.",
+      "explanation": "El texto usa 'episodios' o 'brotes' en términos coloquiales (pág. 62)."
+    },
+    {
+      "q": "La etapa ____ precede a la fase prodrómica y los primeros episodios en la cronología del trastorno.",
+      "options": [
+        "premórbida",
+        "residual",
+        "activa"
+      ],
+      "correct": 0,
+      "hint": "Se refiere al estado anterior a cualquier síntoma clínico evidente.",
+      "explanation": "El texto menciona la etapa premórbida como fase inicial cronológica (pág. 63)."
+    },
+    {
+      "q": "Atendiendo a la clasificación de Timothy Crow, ¿cuáles de los siguientes se consideran síntomas positivos?",
+      "options": [
+        "Alucinaciones auditivas",
+        "Delirios de grandeza",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Recuerde que los positivos implican exceso o presencia de conducta.",
+      "explanation": "Tanto alucinaciones como delirios son ejemplos clásicos de síntomas positivos según Crow (pág. 52)."
+    },
+    {
+      "q": "Son características comunes de las alucinaciones en pacientes con esquizofrenia:",
+      "options": [
+        "Procedencia externa",
+        "Carácter imperativo",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Las voces suelen ser vívidas y mandar órdenes.",
+      "explanation": "El texto indica que suelen tener procedencia externa y, frecuentemente, carácter imperativo (pág. 55)."
+    },
+    {
+      "q": "Atendiendo a la modalidad sensorial, las alucinaciones pueden ser:",
+      "options": [
+        "Hápticas o táctiles",
+        "Cenestésicas o viscerales",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Existen múltiples canales sensoriales afectados.",
+      "explanation": "Se enumeran modalidades como háptica, cenestésica, olfativa, etc. (pág. 55)."
+    },
+    {
+      "q": "Son formas de lenguaje desorganizado descritas en el texto:",
+      "options": [
+        "Circunstancialidad",
+        "Bloqueo del pensamiento",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Ambas afectan la fluidez y estructura del discurso.",
+      "explanation": "El texto detalla tangencialidad, circunstancialidad, bloqueo, etc. (pág. 56)."
+    },
+    {
+      "q": "La abulia en la esquizofrenia se caracteriza clínicamente por presentar:",
+      "options": [
+        "Pasividad conductual",
+        "Escasa espontaneidad",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Es una alteración profunda de la voluntad.",
+      "explanation": "La abulia conlleva pasividad, escasa espontaneidad y latencia motora (pág. 57)."
+    },
+    {
+      "q": "El aplanamiento afectivo en pacientes esquizofrénicos implica:",
+      "options": [
+        "Experiencia atenuada",
+        "Juicio negativo de lo neutro",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Afecta tanto a la percepción de lo positivo como de lo neutro.",
+      "explanation": "Refieren experiencia atenuada y valoran lo neutro como negativo (pág. 58)."
+    },
+    {
+      "q": "Según el DSM-5, para el diagnóstico de esquizofrenia el nivel de funcionamiento puede verse afectado en:",
+      "options": [
+        "Relaciones personales",
+        "Cuidado personal autónomo",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "El criterio B especifica varios ámbitos del funcionamiento.",
+      "explanation": "El criterio B incluye trabajo, relaciones interpersonales y cuidado personal (pág. 58)."
+    },
+    {
+      "q": "Los factores de riesgo obstétricos para la esquizofrenia incluyen con consenso científico:",
+      "options": [
+        "Consumo materno de cannabis",
+        "Complicaciones gestacionales",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Son variables prenatales mencionadas en el apartado 5.2.1.",
+      "explanation": "Se destacan el cannabis, complicaciones en gestación y desarrollo fetal (pág. 60)."
+    },
+    {
+      "q": "Hallazgos neurológicos comunes en el estudio de la esquizofrenia incluyen:",
+      "options": [
+        "Volumen cerebral reducido",
+        "Ventrículos aumentados",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Son alteraciones estructurales clásicas citadas en el texto.",
+      "explanation": "Se describen reducción de volumen cerebral y aumento ventricular (pág. 60)."
+    },
+    {
+      "q": "Genes que han recibido atención investigadora en la etiología de la esquizofrenia son:",
+      "options": [
+        "DISC1 y DISC2",
+        "COMT y NRG1",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "El texto enumera una lista de genes candidatos en la pág. 60.",
+      "explanation": "Tanto DISC como COMT y NRG1 forman parte de la lista de genes candidatos (pág. 60)."
+    },
+    {
+      "q": "En relación al estrés y trauma como factores de riesgo, se ha observado:",
+      "options": [
+        "Inflamación sistémica",
+        "Estrés oxidativo",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Procesos biológicos resultantes de vivencias traumáticas.",
+      "explanation": "La literatura sugiere que trauma favorece inflamación y estrés oxidativo (pág. 61)."
+    },
+    {
+      "q": "La asociación entre cannabis y psicosis depende de variables como:",
+      "options": [
+        "Concentración de THC",
+        "Edad de inicio de uso",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Factores que moderan el riesgo de desarrollar el trastorno.",
+      "explanation": "Depende de la edad, cantidad y concentración de THC (pág. 61)."
+    },
+    {
+      "q": "El nivel socioeconómico actúa como factor protector o de riesgo considerando:",
+      "options": [
+        "Nivel cultural familiar",
+        "Entorno urbano vs rural",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Factores ambientales que influyen en la prevalencia.",
+      "explanation": "El texto relaciona pobreza, urbanidad y nivel cultural (pág. 61)."
+    },
+    {
+      "q": "Rasgos de personalidad que actúan como factores de protección incluyen:",
+      "options": [
+        "Sentido de trascendencia",
+        "Tendencia a cooperación",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Cualidades adaptativas en la gestión del estrés.",
+      "explanation": "Se mencionan autonomía, cooperación, persistencia y trascendencia (pág. 62)."
+    },
+    {
+      "q": "Un ambiente familiar positivo ejerce funciones protectoras a través de:",
+      "options": [
+        "Apoyo social material",
+        "Parentalidad asertiva",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Dimensiones del apoyo familiar citadas en el texto.",
+      "explanation": "Incluye dimensiones afectivas, materiales y estilos de comunicación (pág. 62)."
+    },
+    {
+      "q": "La esquizofrenia como síndrome heterogéneo implica que:",
+      "options": [
+        "No todos tienen igual perfil",
+        "Hay matices culturales",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Características generales descritas en la delimitación conceptual.",
+      "explanation": "El texto subraya la heterogeneidad y el matiz cultural del diagnóstico (pág. 51)."
+    },
+    {
+      "q": "Los síntomas cognitivos, actualmente categoría independiente, afectan a:",
+      "options": [
+        "Procesamiento social",
+        "Memoria y atención",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Funciones alteradas que requieren pericia clínica.",
+      "explanation": "Afectan a memoria, atención y procesamiento de información social (pág. 52)."
+    },
+    {
+      "q": "El diagnóstico diferencial según DSM-5 (Criterio D) debe descartar:",
+      "options": [
+        "Trastorno esquizoafectivo",
+        "Depresivo con psicosis",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Patologías que cursan con síntomas psicóticos similares.",
+      "explanation": "El criterio D descarta esquizoafectivo y bipolares/depresivos psicóticos (pág. 59)."
+    },
+    {
+      "q": "El delirio de inserción del pensamiento se diferencia de la alucinación porque:",
+      "options": [
+        "Es una creencia errática",
+        "Implica voces externas",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "El texto dice que el delirio puede ser una 'explicación' para la alucinación.",
+      "explanation": "Ninguna opción define correctamente la distinción técnica del texto; el delirio es la creencia central (pág. 52)."
+    },
+    {
+      "q": "La pseudoalucinación se caracteriza fenomenológicamente por:",
+      "options": [
+        "Máxima vivacidad real",
+        "Procedencia del exterior",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Compárela con la alucinación convencional según el texto.",
+      "explanation": "La pseudoalucinación se reconoce como producto de la mente y tiene inferior vivacidad (pág. 55)."
+    },
+    {
+      "q": "En la ecolalia, el paciente se caracteriza por:",
+      "options": [
+        "Inventar palabras nuevas",
+        "Desviar el tema central",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "La ecolalia tiene que ver con la repetición de lo oído.",
+      "explanation": "La ecolalia es la repetición de palabras del interlocutor, no invención ni desvío (pág. 56)."
+    },
+    {
+      "q": "La anhedonia en la psicosis se define específicamente como:",
+      "options": [
+        "Pobreza del lenguaje",
+        "Falta de voluntad motora",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se relaciona con la experiencia del placer.",
+      "explanation": "La anhedonia es la dificultad para experimentar placer, no afecta al lenguaje o voluntad motora (pág. 57)."
+    },
+    {
+      "q": "El síntoma negativo de 'asocialidad' según el texto:",
+      "options": [
+        "Es falta de interés total",
+        "Se limita solo a la familia",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Los pacientes sí tienen interés por relacionarse pero enfrentan barreras.",
+      "explanation": "Tienen interés por relacionarse pero experimentan barreras y autoestigma (pág. 58)."
+    },
+    {
+      "q": "Respecto al sexo como factor de riesgo, el texto afirma que:",
+      "options": [
+        "Las mujeres debutan antes",
+        "Hay más riesgo en mujeres",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Repasar los porcentajes y edades de inicio por sexo.",
+      "explanation": "Los varones debutan antes y tienen un 40% más de riesgo (pág. 59-60)."
+    },
+    {
+      "q": "La relación entre el mes de nacimiento y el riesgo de esquizofrenia:",
+      "options": [
+        "Es un hecho ya demostrado",
+        "Ocurre en verano/otoño",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Estado actual de la evidencia sobre nacer en invierno/primavera.",
+      "explanation": "Los hallazgos son inconcluyentes y no hay información suficiente para corroborarlo (pág. 60)."
+    },
+    {
+      "q": "El delirio de sustracción del pensamiento implica que:",
+      "options": [
+        "El sujeto inserta ideas",
+        "Los pensamientos se radian",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Trata sobre una fuerza externa que 'quita' o accede a lo pensado.",
+      "explanation": "Implica que una fuerza externa accede o quita información de la mente (pág. 53)."
+    },
+    {
+      "q": "Las alucinaciones funcionales se definen como:",
+      "options": [
+        "Ausencia total de estímulo",
+        "Ver la propia figura fuera",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Ocurren simultáneamente a un estímulo real.",
+      "explanation": "Son simultáneas a estímulos reales presentes en el campo perceptivo (pág. 55)."
+    },
+    {
+      "q": "La parafasia se distingue de la alogia en que la primera:",
+      "options": [
+        "Reduce el habla a cero",
+        "Es una falta de motivación",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "La parafasia es un error en la elección de palabras, no falta de habla.",
+      "explanation": "La parafasia es el uso incorrecto de palabras, la alogia es la pobreza del habla (pág. 57-58)."
+    },
+    {
+      "q": "El criterio F del DSM-5 para esquizofrenia indica que:",
+      "options": [
+        "Se excluye el autismo",
+        "Solo cuenta si hay manía",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Trata sobre antecedentes de trastornos del espectro autista.",
+      "explanation": "Indica que si hay autismo, se requiere que delirios/alucinaciones duren un mes (pág. 59)."
+    },
+    {
+      "q": "La migración neuronal aberrante en la esquizofrenia afecta a:",
+      "options": [
+        "Corteza occipital visual",
+        "Cerebelo y tronco distal",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se mencionan la corteza entorrinal y la sustancia blanca.",
+      "explanation": "Afecta a la corteza entorrinal y sustancia blanca subcortical (pág. 60)."
+    },
+    {
+      "q": "Sobre el tratamiento de la dependencia en pacientes con esquizofrenia:",
+      "options": [
+        "Es mucho más efectivo",
+        "No requiere psicofármacos",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Efectividad del tratamiento en comorbilidad.",
+      "explanation": "El tratamiento resulta menos efectivo cuando hay diagnóstico de esquizofrenia (pág. 61)."
+    },
+    {
+      "q": "Las dimensiones de personalidad que actúan como riesgo según el texto son:",
+      "options": [
+        "Cooperación y autonomía",
+        "Sentido de trascendencia",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Esas son factores de protección, no de riesgo.",
+      "explanation": "Los riesgos son evitación del daño, dependencia pasiva y ciertos trastornos (pág. 62)."
+    },
+    {
+      "q": "El papel de las citoquinas en la esquizofrenia se relaciona con:",
+      "options": [
+        "Suplementación de Vit. C",
+        "Alta inteligencia precoz",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se asocia a la hipótesis de infecciones víricas.",
+      "explanation": "Se relaciona con procesos infecciosos que alteran la expresión génica (pág. 61)."
+    },
+    {
+      "q": "El delirio de autodesprecio se caracteriza por:",
+      "options": [
+        "Culpar a otros de todo",
+        "Sentirse un ser divino",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "El paciente se adjudica la culpa de sucesos incluso lejanos.",
+      "explanation": "El paciente se proyecta a sí mismo la culpa de sucesos adversos sin lógica (pág. 53)."
+    },
+    {
+      "q": "Las alucinaciones reflejas ocurren cuando:",
+      "options": [
+        "El paciente se ve a sí mismo",
+        "No hay estímulo sensorial",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Un estímulo en una modalidad provoca alucinación en otra.",
+      "explanation": "Un estímulo real en una modalidad provoca una alucinación en otra diferente (pág. 55)."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "Analice el impacto del estigma social y el autoestigma en el curso evolutivo y la participación social de los pacientes con esquizofrenia.",
+      "model": "El estigma social atribuye cualidades indeseables (violencia, imprevisibilidad) sin base sólida, relegando al paciente al ostracismo. El autoestigma ocurre cuando el paciente interioriza estos rasgos genéricos, afectando negativamente su participación social y funcionamiento. El texto señala que las evidencias de violencia son frágiles y a menudo explicables por variables tratables, por lo que el estigma es una barrera artificial que agrava el pronóstico.",
+      "keywords": [
+        "estigma",
+        "autoestigma",
+        "participación social",
+        "ostracismo"
+      ]
+    },
+    {
+      "q": "Compare los síntomas positivos y negativos según la tipología de Timothy Crow, detallando qué implica cada categoría para la funcionalidad del paciente.",
+      "model": "Los síntomas positivos (Crow, años 80) se definen por la presencia de experiencias no normativas como alucinaciones, delirios y lenguaje/conducta desorganizada. Los síntomas negativos se definen por la ausencia o menoscabo de atributos funcionales, incluyendo apatía, abulia, anhedonia, alogia, aplanamiento afectivo y aislamiento. Mientras los positivos son intrusiones, los negativos socavan directamente las bases de la funcionalidad diaria y tienen, generalmente, un peor pronóstico.",
+      "keywords": [
+        "Timothy Crow",
+        "síntomas positivos",
+        "síntomas negativos",
+        "funcionalidad"
+      ]
+    },
+    {
+      "q": "Explique la importancia de los déficits en cognición social y mentalización como factores de mal pronóstico en la fase prodrómica de la esquizofrenia.",
+      "model": "Los déficits en cognición social implican dificultades para procesar información emocional facial y para la mentalización (inferir intenciones ajenas). Estos déficits se erigen como factores de mal pronóstico en la fase prodrómica porque median el deterioro en la velocidad de procesamiento y atención sostenida, dificultando la adaptación a retos cotidianos y ofreciendo una posible explicación a los delirios de persecución por errores de inferencia.",
+      "keywords": [
+        "cognición social",
+        "mentalización",
+        "fase prodrómica",
+        "procesamiento emocional"
+      ]
+    },
+    {
+      "q": "Describa la relación entre las alteraciones en la memoria de trabajo y la capacidad de aprendizaje de secuencias según los hallazgos citados en el texto.",
+      "model": "Las alteraciones en la memoria de trabajo y episódica se vinculan al compromiso de la corteza prefrontal dorsolateral. Los estudios muestran que, aunque los pacientes pueden aprender secuencias de estímulos de forma oportuna, carecen de la capacidad ejecutiva para extender lo aprendido y realizar predicciones sobre elementos futuros, lo que limita su aprendizaje adaptativo.",
+      "keywords": [
+        "memoria de trabajo",
+        "corteza prefrontal dorsolateral",
+        "aprendizaje de secuencias",
+        "predicción"
+      ]
+    },
+    {
+      "q": "Diferencie conceptualmente los delirios de inserción, sustracción y difusión del pensamiento, aportando la vivencia subjetiva del paciente en cada caso.",
+      "model": "En la inserción, el paciente cree que pensamientos ajenos han sido introducidos en su mente por terceros o tecnologías. En la sustracción, siente que una fuerza externa le roba o accede a su privacidad mental, generando angustia por la pérdida de autoría de sus proyectos. En la difusión o irradiación, el paciente cree que sus pensamientos son de dominio público (como si fueran palabras dichas), lo que le lleva al recelo social por sentirse en desventaja.",
+      "keywords": [
+        "inserción",
+        "sustracción",
+        "difusión",
+        "privacidad mental"
+      ]
+    },
+    {
+      "q": "Argumente la complejidad del delirio de referencia y cómo este obliga al paciente a desarrollar mecanismos de 'desencriptación' de la realidad.",
+      "model": "El delirio de referencia consiste en creer que fuentes neutras (TV, radio, desconocidos) emiten mensajes cifrados dirigidos específicamente al sujeto. Esta creencia genera un estado de alerta constante e hipervigilancia, donde el paciente debe 'ingeniar métodos' para descodificar la supuesta información trascendente, distanciándose progresivamente del marco objetivo de la realidad.",
+      "keywords": [
+        "delirio de referencia",
+        "desencriptar",
+        "hipervigilancia",
+        "mensajes velados"
+      ]
+    },
+    {
+      "q": "Relacione el delirio nihilista con las alucinaciones olfativas y el componente ontológico mencionado en el texto.",
+      "model": "El delirio nihilista versa sobre la inexistencia de partes del cuerpo o de la realidad misma. Se vincula con ideas de muerte y puede acompañarse de alucinaciones olfativas de podredumbre o deterioro orgánico. El componente ontológico se manifiesta en razonamientos enrevesados sin conexión lógica sobre el ser y la existencia, como creer que todo es una alucinación colectiva a punto de desaparecer.",
+      "keywords": [
+        "delirio nihilista",
+        "inexistencia",
+        "podredumbre",
+        "ontológico"
+      ]
+    },
+    {
+      "q": "Analice las características diferenciales de las alucinaciones auditivas en la esquizofrenia respecto a su forma, procedencia y control.",
+      "model": "Las alucinaciones auditivas suelen ser voces en segunda persona o conversaciones entre ellas. Los pacientes las describen como profundamente vívidas, reales, de procedencia externa (no pensamientos propios) y fuera de su control. A menudo poseen un significado especial, pueden ser imperativas (especialmente en varones) y se integran en la narrativa del delirio, retroalimentándose mutuamente.",
+      "keywords": [
+        "alucinaciones auditivas",
+        "segunda persona",
+        "procedencia externa",
+        "falta de control"
+      ]
+    },
+    {
+      "q": "Clasifique las alucinaciones según su fenomenología, explicando brevemente conceptos como la autoscopia y las alucinaciones extracampinas.",
+      "model": "La clasificación fenomenológica incluye: pseudoalucinaciones (reconocidas como internas, menos vívidas), funcionales (activadas por un estímulo real), reflejas (estímulo en una modalidad provoca alucinación en otra), autoscopia (experiencia extracorpórea de verse a sí mismo) y extracampinas (percepción fuera del alcance sensorial objetivo, como ver algo tras una pared o a gran distancia).",
+      "keywords": [
+        "fenomenología",
+        "autoscopia",
+        "extracampinas",
+        "funcionales"
+      ]
+    },
+    {
+      "q": "Explique el fenómeno de la tangencialidad y cómo se diferencia de la circunstancialidad en el lenguaje desorganizado.",
+      "model": "La tangencialidad ocurre cuando el discurso se desvía del tema central hacia contenidos accesorios, ofreciendo respuestas relacionadas solo indirectamente hasta perder el foco. En cambio, en la circunstancialidad, la persona mantiene el punto principal pero introduce una cantidad excesiva de detalles irrelevantes y lenguaje barroco que entorpece la comunicación, aunque eventualmente llega a la meta informativa.",
+      "keywords": [
+        "tangencialidad",
+        "circunstancialidad",
+        "lenguaje desorganizado",
+        "detalles irrelevantes"
+      ]
+    },
+    {
+      "q": "Describa el bloqueo del pensamiento y sus consecuencias para el proceso comunicativo del paciente.",
+      "model": "El bloqueo del pensamiento es una interrupción abrupta y silenciosa (elipsis) en el ritmo y contenido del discurso. La consecuencia principal es la ruptura total del proceso comunicativo, ya que frecuentemente el paciente es incapaz de recuperar la idea original, la cual permanece inconclusa de manera permanente.",
+      "keywords": [
+        "bloqueo del pensamiento",
+        "elipsis",
+        "interrupción",
+        "comunicación"
+      ]
+    },
+    {
+      "q": "Analice la parafasia y la creación de neologismos como mecanismos de alteración del lenguaje.",
+      "model": "La parafasia es el uso incorrecto de palabras comunes que sustituyen a las adecuadas, a menudo guardando una relación semántica o formal sutil. Los neologismos son términos de invención propia que el paciente utiliza para comunicar sus ideas. Ambos fenómenos reflejan una desestructuración del código lingüístico compartido, dificultando la comprensión por parte del interlocutor.",
+      "keywords": [
+        "parafasia",
+        "neologismos",
+        "sustitución de palabras",
+        "lenguaje"
+      ]
+    },
+    {
+      "q": "Relacione el comportamiento desorganizado con el funcionamiento de la corteza prefrontal y el cuerpo calloso.",
+      "model": "El comportamiento desorganizado se manifiesta en conductas erráticas y dificultades para planificar actos coherentes con metas. La literatura lo describe como un problema ejecutivo que depende de la integridad y actividad tanto de la corteza prefrontal como del cuerpo calloso. Se asocia además con lentitud en el procesamiento de información y fallos en la memoria de trabajo.",
+      "keywords": [
+        "comportamiento desorganizado",
+        "corteza prefrontal",
+        "cuerpo calloso",
+        "funciones ejecutivas"
+      ]
+    },
+    {
+      "q": "Justifique por qué la apatía se considera el síntoma negativo más relevante y su relación con la abulia y la anhedonia.",
+      "model": "La apatía se considera el síntoma negativo central porque implica una pérdida de interés y entusiasmo que afecta el inicio y persistencia de acciones dirigidas a metas. Se vincula transversalmente a los demás síntomas negativos; por ello, su abordaje terapéutico suele generar beneficios en cascada, mejorando la motivación (abulia) y la capacidad de experimentar placer (anhedonia).",
+      "keywords": [
+        "apatía",
+        "síntomas negativos",
+        "abulia",
+        "anhedonia"
+      ]
+    },
+    {
+      "q": "Explique el impacto de la alogia en la vida sociolaboral del paciente con esquizofrenia.",
+      "model": "La alogia o 'pobreza del habla' se manifiesta en una producción de lenguaje empobrecida, con frases sintácticamente simples y vocabulario escaso. Esto supone retos críticos para el acceso al mercado laboral y proyectos académicos, ya que el paciente carece de las herramientas comunicativas necesarias para la interacción profesional y el intercambio de información complejo.",
+      "keywords": [
+        "alogia",
+        "pobreza del habla",
+        "inserción laboral",
+        "vocabulario"
+      ]
+    },
+    {
+      "q": "Analice el fenómeno del aplanamiento afectivo y su importancia como diana terapéutica temprana.",
+      "model": "El aplanamiento afectivo implica una experiencia emocional atenuada: las situaciones positivas se viven con menos intensidad y las neutras se juzgan negativamente. Al ser un fenómeno que puede identificarse incluso antes del primer episodio agudo (etapa prodrómica) y estar ligado a otros síntomas negativos, debe ser una diana terapéutica prioritaria para frenar el deterioro emocional progresivo.",
+      "keywords": [
+        "aplanamiento afectivo",
+        "experiencia emocional",
+        "diana terapéutica",
+        "pródromos"
+      ]
+    },
+    {
+      "q": "Sintetice el Criterio A del DSM-5 para el diagnóstico de esquizofrenia, especificando la jerarquía de los síntomas.",
+      "model": "El Criterio A requiere dos o más síntomas durante un mes (o menos con tratamiento). Estos incluyen: 1) Delirios, 2) Alucinaciones, 3) Discurso desorganizado, 4) Comportamiento desorganizado/catatónico y 5) Síntomas negativos. La jerarquía establece que al menos uno de los síntomas presentes debe ser obligatoriamente uno de los tres primeros (delirios, alucinaciones o discurso desorganizado).",
+      "keywords": [
+        "Criterio A",
+        "DSM-5",
+        "jerarquía",
+        "síntomas activos"
+      ]
+    },
+    {
+      "q": "Describa los requisitos de temporalidad y exclusión (Criterios C y D) según el DSM-5 para el diagnóstico de esquizofrenia.",
+      "model": "El Criterio C exige signos continuos del trastorno durante al menos seis meses, incluyendo un mes de fase activa. El periodo restante puede incluir síntomas prodrómicos o residuales (síntomas negativos o atenuados). El Criterio D exige descartar trastorno esquizoafectivo o del estado de ánimo con psicosis, asegurando que los episodios afectivos no hayan sido concurrentes con la fase activa o solo por una parte mínima del tiempo.",
+      "keywords": [
+        "temporalidad",
+        "seis meses",
+        "exclusión",
+        "fase activa"
+      ]
+    },
+    {
+      "q": "Analice el dimorfismo sexual en la prevalencia y debut de la esquizofrenia según los datos de investigación actuales.",
+      "model": "Se aprecia un 40% más de riesgo en hombres que en mujeres. El inicio es más temprano en varones (21-25 años) que en mujeres (25-30 años). No obstante, el texto advierte que esto podría estar sesgado porque los criterios diagnósticos tradicionales se basaron en la referencia masculina, y se necesita investigar más si las diferencias en la etiología o expresión explican esta discrepancia.",
+      "keywords": [
+        "sexo",
+        "dimorfismo sexual",
+        "prevalencia",
+        "edad de inicio"
+      ]
+    },
+    {
+      "q": "Evalúe el papel de los factores obstétricos y el mes de nacimiento como riesgos potenciales, señalando su nivel de consenso científico.",
+      "model": "Existe consenso en que el consumo materno de cannabis, complicaciones en la gestación y alteraciones en el desarrollo fetal son riesgos relevantes. Sobre el mes de nacimiento (final de invierno/inicio de primavera), aunque algunos estudios sugieren mayor riesgo, no existe información suficiente ni un modelo sólido que explique los mecanismos subyacentes, por lo que los hallazgos son todavía inconcluyentes.",
+      "keywords": [
+        "obstétricos",
+        "cannabis prenatal",
+        "mes de nacimiento",
+        "consenso científico"
+      ]
+    },
+    {
+      "q": "Explique la teoría del doble vínculo y su estatus actual en la comunidad científica.",
+      "model": "La teoría del doble vínculo postula que la psicosis surge de patrones de comunicación familiar contradictorios (incongruencia verbal/no verbal) donde es imposible satisfacer las demandas. Aunque fue relevante para intervenciones sistémicas históricas, actualmente carece de confirmación científica sólida y apenas recibe atención en la investigación contemporánea.",
+      "keywords": [
+        "doble vínculo",
+        "comunicación familiar",
+        "mensajes contradictorios",
+        "sistémica"
+      ]
+    },
+    {
+      "q": "Describa las alteraciones en la migración neuronal y los hallazgos neurológicos estructurales asociados a la esquizofrenia.",
+      "model": "Se han detectado alteraciones en la migración de neuronas en la corteza entorrinal y sustancia blanca (heterotopia neuronal). A nivel estructural, se observa un descenso de densidad de sustancia blanca superficial y aumento en la profunda, además de volumen cerebral reducido, ventrículos cerebrales aumentados y reducción de neuronas hipocampales.",
+      "keywords": [
+        "migración neuronal",
+        "heterotopia",
+        "ventrículos",
+        "sustancia blanca"
+      ]
+    },
+    {
+      "q": "Analice la carga genética de la esquizofrenia y mencione algunos de los genes candidatos más estudiados.",
+      "model": "La esquizofrenia es de naturaleza poligénica, implicando cientos de variantes. Los estudios con gemelos sugieren una alta heredabilidad, de la cual actualmente se puede explicar el 27%. Entre los genes candidatos destacan DISC1, DISC2, ERBB4, DRD3, DTNBP1, NRG1 y COMT, muchos de ellos relacionados con el neurodesarrollo.",
+      "keywords": [
+        "genética",
+        "poligénica",
+        "heredabilidad",
+        "genes candidatos"
+      ]
+    },
+    {
+      "q": "Explique la hipótesis de diátesis-estrés y cómo los traumas tempranos sensibilizan al individuo según el texto.",
+      "model": "La hipótesis plantea que la esquizofrenia resulta de la interacción entre vulnerabilidad genética (diátesis) y estresores vitales. Los traumas en periodos sensibles sensibilizan las redes neurales de recompensa y saliencia, haciendo que los individuos experimenten estresores posteriores con mayor intensidad. Además, procesos como la inflamación y estrés oxidativo derivados del trauma favorecen la transición a la psicosis.",
+      "keywords": [
+        "diátesis-estrés",
+        "vulnerabilidad",
+        "trauma temprano",
+        "sensibilización"
+      ]
+    },
+    {
+      "q": "Argumente la relación entre el consumo de cannabis y el desarrollo de esquizofrenia, mencionando el papel del THC.",
+      "model": "El cannabis es el factor de riesgo por drogas con evidencias más sólidas. El riesgo depende de la edad de inicio, cantidad y concentración de THC. Se estima que el 50% de los pacientes con psicosis inducida por cannabis desarrollarán esquizofrenia. El mecanismo común parece ser la neuroinflamación y la comorbilidad dificulta la efectividad de los tratamientos.",
+      "keywords": [
+        "cannabis",
+        "THC",
+        "psicosis inducida",
+        "neuroinflamación"
+      ]
+    },
+    {
+      "q": "Describa la hipótesis vírica en la etiología de la esquizofrenia y los patógenos más vinculados.",
+      "model": "La hipótesis sugiere que infecciones víricas alteran el sistema inmunológico y el desarrollo cerebral, elevando citoquinas o alterando genes críticos. Los patógenos más estudiados incluyen los virus de la influenza, herpes (HSV-1 y 2), citomegalovirus, Epstein-Barr, retrovirus y coronavirus. Se requiere más investigación para aclarar los mecanismos exactos.",
+      "keywords": [
+        "infecciones víricas",
+        "inmunología",
+        "citoquinas",
+        "patógenos"
+      ]
+    },
+    {
+      "q": "Analice los factores de protección socioeconómicos y culturales en la evolución del trastorno.",
+      "model": "El nivel cultural (familiar y del paciente) actúa como factor de protección para los déficits cognitivos. La educación en salud promueve la adherencia al tratamiento, mejorando la evolución. Por el contrario, vivir en zonas urbanas y la escasez de recursos económicos (pobreza como estresor) aumentan la prevalencia y el riesgo.",
+      "keywords": [
+        "nivel socioeconómico",
+        "nivel cultural",
+        "zonas urbanas",
+        "adherencia"
+      ]
+    },
+    {
+      "q": "Identifique las dimensiones de personalidad que actúan como factores de riesgo y protección en la esquizofrenia.",
+      "model": "Actúan como protección: autonomía (dirigirse a uno mismo), cooperación, persistencia y sentido de trascendencia. Actúan como riesgo: evitación del daño, dependencia pasiva y la presencia de trastornos de personalidad previos como el paranoide, esquizoide o esquizotípico.",
+      "keywords": [
+        "personalidad",
+        "autonomía",
+        "evitación del daño",
+        "cooperación"
+      ]
+    },
+    {
+      "q": "Explique cómo la alta inteligencia y el ambiente familiar positivo influyen en el pronóstico de la enfermedad.",
+      "model": "La alta inteligencia es un factor protector que ayuda a compensar el deterioro cognitivo; la baja inteligencia premórbida se asocia a una evolución tórpida. Un ambiente familiar positivo con apoyo social y comunicación asertiva (parentalidad positiva) reduce los estresores crónicos y la conflictividad, protegiendo a individuos con vulnerabilidad biológica.",
+      "keywords": [
+        "inteligencia",
+        "ambiente familiar",
+        "apoyo social",
+        "pronóstico"
+      ]
+    },
+    {
+      "q": "Evalúe la relevancia de la suplementación dietética prenatal como estrategia de prevención según la literatura citada.",
+      "model": "Carencias de omega-3, vitamina B, C, D y E durante la gestación se asocian a mayor riesgo de esquizofrenia por afectar el neurodesarrollo y el equilibrio antioxidante. Se investiga el uso de suplementos como la N-acetilcisteína como coadyuvantes terapéuticos para mitigar estos riesgos y mejorar la salud mental en la adultez temprana.",
+      "keywords": [
+        "suplementación dietética",
+        "omega-3",
+        "vitaminas",
+        "N-acetilcisteína"
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Delimitación Conceptual",
+      "q": "¿Qué característica define el curso de la esquizofrenia según el texto?",
+      "a": "Es un trastorno de curso crónico que frecuentemente se manifiesta en una evolución deletérea para el paciente."
+    },
+    {
+      "cat": "Delimitación Conceptual",
+      "q": "¿Qué papel juegan los efectos secundarios del tratamiento farmacológico en la esquizofrenia?",
+      "a": "Son muy relevantes y pueden condicionar significativamente la evolución del paciente en distintas áreas de su vida."
+    },
+    {
+      "cat": "Estigma",
+      "q": "¿Cuál es el impacto del estigma social en las personas con esquizofrenia?",
+      "a": "Les atribuye cualidades indeseables como violencia o imprevisibilidad, relegándolas al ostracismo social."
+    },
+    {
+      "cat": "Estigma",
+      "q": "¿En qué consiste el fenómeno del 'autoestigma' en pacientes con esquizofrenia?",
+      "a": "Es el proceso por el cual los pacientes se apropian de los prejuicios sociales y se asignan rasgos genéricos que afectan su participación social."
+    },
+    {
+      "cat": "Síntomas",
+      "q": "¿Por qué se considera a la esquizofrenia un 'síndrome heterogéneo'?",
+      "a": "Porque no todos los pacientes presentan un perfil idéntico de síntomas, variando en la combinación de creencias, delirios y alucinaciones."
+    },
+    {
+      "cat": "Tipología de Crow",
+      "q": "¿Qué criterio utilizó Timothy Crow en los años ochenta para clasificar los síntomas?",
+      "a": "El criterio de presencia (síntomas positivos) o ausencia (síntomas negativos) de ciertas experiencias."
+    },
+    {
+      "cat": "Tipología de Crow",
+      "q": "¿Qué se entiende por 'síntomas positivos' según la clasificación de Crow?",
+      "a": "Experiencias no normativas en la población general, como alucinaciones, delirios y conducta desorganizada."
+    },
+    {
+      "cat": "Tipología de Crow",
+      "q": "¿Cómo se definen los 'síntomas negativos' en el contexto de la esquizofrenia?",
+      "a": "Como un deterioro o menoscabo de atributos funcionales necesarios, tales como la apatía, abulia o el aplanamiento afectivo."
+    },
+    {
+      "cat": "Síntomas Cognitivos",
+      "q": "¿Qué funciones suelen verse alteradas en el conjunto de síntomas cognitivos?",
+      "a": "La memoria, la atención y el procesamiento de la información social."
+    },
+    {
+      "cat": "Síntomas Cognitivos",
+      "q": "¿Qué neurotransmisores se asocian fisiopatológicamente al déficit cognitivo en la esquizofrenia?",
+      "a": "La alteración del funcionamiento dopaminérgico y acetilcolínico."
+    },
+    {
+      "cat": "Cognición Social",
+      "q": "¿Qué dificultades específicas presentan los pacientes en el área de la cognición social?",
+      "a": "Dificultades en procesar información emocional de rostros y en la capacidad de mentalización (inferir intenciones ajenas)."
+    },
+    {
+      "cat": "Cognición Social",
+      "q": "¿Qué relevancia tiene el déficit de mentalización en la fase prodrómica?",
+      "a": "Se ha erigido como un factor de mal pronóstico y una posible explicación para los delirios de persecución."
+    },
+    {
+      "cat": "Memoria",
+      "q": "¿Qué estructura cerebral se asocia a la alteración de la memoria episódica y de trabajo en estos pacientes?",
+      "a": "El compromiso de la corteza prefrontal dorsolateral."
+    },
+    {
+      "cat": "Memoria",
+      "q": "¿Qué limitación encuentran los pacientes al aprender secuencias de estímulos según Williams (2023)?",
+      "a": "Pueden aprender la secuencia pero carecen de la capacidad de extender lo aprendido para predecir elementos futuros."
+    },
+    {
+      "cat": "Delirios",
+      "q": "¿Qué define conceptualmente a un delirio en la esquizofrenia?",
+      "a": "Son creencias equívocas sobre la realidad mantenidas con gran convicción y resistentes a la argumentación lógica."
+    },
+    {
+      "cat": "Delirios",
+      "q": "¿Qué relación existe a menudo entre los delirios y las alucinaciones?",
+      "a": "Los delirios suelen articularse para intentar dar una explicación a las experiencias perceptivas anómalas (alucinaciones)."
+    },
+    {
+      "cat": "Tipos de Delirio",
+      "q": "¿En qué consiste el delirio de inserción del pensamiento?",
+      "a": "El paciente cree que sus pensamientos no son propios y han sido introducidos por un tercero mediante mecanismos mágicos o tecnológicos."
+    },
+    {
+      "cat": "Tipos de Delirio",
+      "q": "¿Cómo se manifiesta el delirio de sustracción del pensamiento?",
+      "a": "El paciente cree que una fuerza externa tiene acceso a su mente y le quita o roba sus pensamientos y sentimientos."
+    },
+    {
+      "cat": "Tipos de Delirio",
+      "q": "¿Qué caracteriza al delirio de difusión o irradiación del pensamiento?",
+      "a": "La creencia de que los pensamientos son de dominio público, como si fueran pronunciados en voz alta hacia el exterior."
+    },
+    {
+      "cat": "Tipos de Delirio",
+      "q": "¿Qué es el delirio de referencia?",
+      "a": "Asegurar que mensajes neutros (TV, radio) contienen información velada o trascendente dirigida específicamente al sujeto."
+    },
+    {
+      "cat": "Tipos de Delirio",
+      "q": "¿Qué sostiene un paciente con delirio somático?",
+      "a": "Creencias inflexibles e inverosímiles sobre el funcionamiento de su organismo (ej: tener parásitos internos o podredumbre)."
+    },
+    {
+      "cat": "Tipos de Delirio",
+      "q": "¿Cuál es la creencia central en el delirio persecutorio?",
+      "a": "Que el paciente es objeto de una conspiración, siendo espiado o fiscalizado para hacerle daño."
+    },
+    {
+      "cat": "Tipos de Delirio",
+      "q": "¿Qué caracteriza al delirio de autodesprecio?",
+      "a": "La persona se atribuye sin lógica la culpa de sucesos adversos, incluso de eventos mundiales remotos."
+    },
+    {
+      "cat": "Tipos de Delirio",
+      "q": "¿Qué define al delirio nihilista?",
+      "a": "Creencias de haber dejado de existir, que la realidad se ha desvanecido o que partes del cuerpo no existen."
+    },
+    {
+      "cat": "Tipos de Delirio",
+      "q": "¿Qué es el delirio de grandeza o megalomaníaco?",
+      "a": "La consideración de poseer importancia, destrezas o habilidades extraordinarias por encima de los demás."
+    },
+    {
+      "cat": "Tipos de Delirio",
+      "q": "¿Cómo se expresa el delirio religioso?",
+      "a": "El sujeto se cree depositario de misiones divinas, portador de revelaciones o la reencarnación de un ser místico."
+    },
+    {
+      "cat": "Tipos de Delirio",
+      "q": "¿Qué describe el delirio fantástico?",
+      "a": "Un sistema de creencias sobre realidades distintas (ciencia ficción, mitología) ajenas a lo accesible por los sentidos."
+    },
+    {
+      "cat": "Tipos de Delirio",
+      "q": "¿En qué consiste el delirio sexual (erotomaníaco)?",
+      "a": "La percepción de ser objeto de un atractivo irresistible o del enamoramiento de otros, a menudo celebridades."
+    },
+    {
+      "cat": "Alucinaciones",
+      "q": "¿Cuál es la modalidad sensorial más común de las alucinaciones en la esquizofrenia?",
+      "a": "La modalidad auditiva (especialmente voces)."
+    },
+    {
+      "cat": "Alucinaciones",
+      "q": "¿Qué riesgo supone experimentar alucinaciones en la niñez o adolescencia?",
+      "a": "Es un factor de riesgo para la transición a la esquizofrenia en la adultez temprana."
+    },
+    {
+      "cat": "Alucinaciones",
+      "q": "¿Qué diferencias de género se observan en las alucinaciones auditivas?",
+      "a": "El carácter imperativo es más frecuente en varones; las mujeres les asignan mayor duración e interferencia."
+    },
+    {
+      "cat": "Alucinaciones",
+      "q": "¿Qué propiedades suelen tener las alucinaciones según el relato de los pacientes?",
+      "a": "Son vívidas, reales, de procedencia externa, sin control sobre su aparición y con significado especial."
+    },
+    {
+      "cat": "Clasificación Alucinaciones",
+      "q": "¿Cómo se distingue una alucinación elemental de una compleja?",
+      "a": "La elemental es simple y en una sola modalidad (zumbido); la compleja incorpora varias modalidades y formas realistas."
+    },
+    {
+      "cat": "Clasificación Alucinaciones",
+      "q": "¿Qué criterios se utilizan para clasificar las alucinaciones por su contenido?",
+      "a": "Se analiza si tienen conexión con la autobiografía del paciente o si guardan relación con el delirio que las sustenta."
+    },
+    {
+      "cat": "Modalidades Alucinatorias",
+      "q": "¿En qué consiste una alucinación cenestésica?",
+      "a": "Sensaciones en el interior del cuerpo, como desplazamiento de vísceras o presencias internas."
+    },
+    {
+      "cat": "Modalidades Alucinatorias",
+      "q": "¿Qué es una alucinación cinestésica?",
+      "a": "La percepción de movimientos corporales irreales, como flotación, vibración o cambios posturales."
+    },
+    {
+      "cat": "Fenomenología Alucinatoria",
+      "q": "¿Qué diferencia a una pseudoalucinación de una alucinación convencional?",
+      "a": "La pseudoalucinación es reconocida como producto de la propia mente y tiene menor vivacidad."
+    },
+    {
+      "cat": "Fenomenología Alucinatoria",
+      "q": "¿Qué es una alucinación funcional?",
+      "a": "Es aquella que se produce de forma simultánea a un estímulo real presente en el campo perceptivo."
+    },
+    {
+      "cat": "Fenomenología Alucinatoria",
+      "q": "¿Qué describe la autoscopia?",
+      "a": "Una experiencia extracorpórea en la que la persona se ve a sí misma desde fuera de su cuerpo."
+    },
+    {
+      "cat": "Fenomenología Alucinatoria",
+      "q": "¿Qué define a las alucinaciones extracampinas?",
+      "a": "La percepción de objetos o escenas que están físicamente fuera del alcance de los sentidos (por distancia o muros)."
+    },
+    {
+      "cat": "Lenguaje Desorganizado",
+      "q": "¿Qué efecto tiene el lenguaje desorganizado en la vida del paciente?",
+      "a": "Genera barreras críticas para la comunicación y dificulta la inferencia de intenciones sociales."
+    },
+    {
+      "cat": "Alteraciones del Lenguaje",
+      "q": "¿Qué es la tangencialidad?",
+      "a": "Elaborar un discurso que se desvía del tema central, ofreciendo respuestas relacionadas solo indirectamente."
+    },
+    {
+      "cat": "Alteraciones del Lenguaje",
+      "q": "¿En qué consiste la perseveración en el habla?",
+      "a": "En la repetición constante de palabras o frases inconexas, incluso cuando el tema de conversación ha cambiado."
+    },
+    {
+      "cat": "Alteraciones del Lenguaje",
+      "q": "¿Qué ocurre durante un bloqueo del pensamiento?",
+      "a": "Una interrupción abrupta del discurso tras la cual se rompe el proceso comunicativo y no se recupera la idea."
+    },
+    {
+      "cat": "Alteraciones del Lenguaje",
+      "q": "¿Qué es la ecolalia?",
+      "a": "La repetición automática de palabras o frases breves que acaba de emitir el interlocutor."
+    },
+    {
+      "cat": "Alteraciones del Lenguaje",
+      "q": "¿Cómo se define la circunstancialidad?",
+      "a": "Introducir una cantidad excesiva de detalles irrelevantes que dificultan llegar al punto principal del discurso."
+    },
+    {
+      "cat": "Alteraciones del Lenguaje",
+      "q": "¿Qué caracteriza a la incongruencia en el discurso?",
+      "a": "La unión de ideas sin lógica aparente o con distorsión total de las relaciones causa-efecto."
+    },
+    {
+      "cat": "Alteraciones del Lenguaje",
+      "q": "¿Qué es la parafasia?",
+      "a": "El uso incorrecto de palabras comunes sustituyéndolas por otras, a menudo incluyendo neologismos (palabras inventadas)."
+    },
+    {
+      "cat": "Comportamiento Desorganizado",
+      "q": "¿A qué se asocia el comportamiento desorganizado según la literatura?",
+      "a": "A conductas erráticas que impiden la autonomía y a un déficit en la planificación ejecutiva."
+    },
+    {
+      "cat": "Comportamiento Desorganizado",
+      "q": "¿Qué emoción facial les cuesta más reconocer a los pacientes con esquizofrenia?",
+      "a": "El miedo en los rostros ajenos, lo que suele provocar malentendidos sociales."
+    },
+    {
+      "cat": "Síntomas Negativos",
+      "q": "¿Qué pronóstico tienen los síntomas negativos comparados con los positivos?",
+      "a": "Tienen un peor pronóstico y mayor capacidad para enturbiar el desarrollo del trastorno."
+    },
+    {
+      "cat": "Síntomas Negativos",
+      "q": "¿Cómo se manifiesta la apatía en la esquizofrenia?",
+      "a": "Como pérdida de interés y entusiasmo, afectando el inicio y persistencia de acciones dirigidas a metas."
+    },
+    {
+      "cat": "Síntomas Negativos",
+      "q": "¿Qué define a la abulia?",
+      "a": "Una alteración profunda de la motivación y voluntad que requiere la tutela de terceros para tomar decisiones."
+    },
+    {
+      "cat": "Síntomas Negativos",
+      "q": "¿Qué es la anhedonia?",
+      "a": "La dificultad para experimentar placer, lo cual se asocia a la pobre participación en actividades agradables."
+    },
+    {
+      "cat": "Síntomas Negativos",
+      "q": "¿Cómo se describe la alogia?",
+      "a": "Como un empobrecimiento generalizado del lenguaje ('pobreza del habla') con frases sintácticamente simples."
+    },
+    {
+      "cat": "Síntomas Negativos",
+      "q": "¿Qué caracteriza al aplanamiento afectivo?",
+      "a": "Una experiencia emocional atenuada, donde lo placentero se siente menos positivo y lo neutro más negativo."
+    },
+    {
+      "cat": "Síntomas Negativos",
+      "q": "¿Qué factores contribuyen a la asocialidad en estos pacientes?",
+      "a": "El estigma, el autoestigma y las limitaciones autopercibidas para formar lazos de confianza."
+    },
+    {
+      "cat": "Criterios DSM-5",
+      "q": "¿Cuántos síntomas del Criterio A deben estar presentes para el diagnóstico según el DSM-5?",
+      "a": "Dos o más síntomas durante al menos un mes, siendo uno de ellos delirios, alucinaciones o discurso desorganizado."
+    },
+    {
+      "cat": "Criterios DSM-5",
+      "q": "¿Cuál es la duración mínima total requerida para los signos del trastorno en el DSM-5?",
+      "a": "Seis meses de signos continuos, que incluyan al menos un mes de fase activa."
+    },
+    {
+      "cat": "Criterios DSM-5",
+      "q": "¿Qué especifica el Criterio B del DSM-5?",
+      "a": "Que el nivel de funcionamiento en ámbitos principales (trabajo, relaciones, autocuidado) esté muy por debajo del nivel previo."
+    },
+    {
+      "cat": "Criterios DSM-5",
+      "q": "¿Qué trastornos deben descartarse según el Criterio D del DSM-5?",
+      "a": "El trastorno esquizoafectivo y el trastorno depresivo o bipolar con características psicóticas."
+    },
+    {
+      "cat": "Factores de Riesgo",
+      "q": "¿Por qué el sexo masculino se considera un factor de riesgo general?",
+      "a": "Presenta un 40% más de riesgo que las mujeres y suele tener un inicio de la enfermedad más temprano."
+    },
+    {
+      "cat": "Factores de Riesgo",
+      "q": "¿Cuál es la edad crítica de aparición de síntomas iniciales según el sexo?",
+      "a": "Entre 21-25 años para varones y entre 25-30 años para mujeres."
+    },
+    {
+      "cat": "Factores de Riesgo",
+      "q": "¿Qué factores obstétricos han mostrado cierto consenso en la investigación?",
+      "a": "El consumo de cannabis materno, complicaciones en la gestación y alteraciones en el desarrollo fetal."
+    },
+    {
+      "cat": "Teorías Históricas",
+      "q": "¿Qué postula la teoría del 'doble vínculo'?",
+      "a": "Que la psicosis surge de patrones de comunicación familiar con mensajes contradictorios imposibles de satisfacer."
+    },
+    {
+      "cat": "Neurología",
+      "q": "¿Qué alteraciones en la migración neuronal se han vinculado a la esquizofrenia?",
+      "a": "Heterotopia neuronal en la corteza entorrinal y la sustancia blanca subcortical."
+    },
+    {
+      "cat": "Neurología",
+      "q": "¿Qué hallazgos estructurales cerebrales son comunes en el trastorno?",
+      "a": "Volumen cerebral reducido, aumento de los ventrículos y reducción de las neuronas hipocampales."
+    },
+    {
+      "cat": "Genética",
+      "q": "¿Qué porcentaje de la heredabilidad de la esquizofrenia se explica con el conocimiento actual?",
+      "a": "Aproximadamente el 27%."
+    },
+    {
+      "cat": "Genética",
+      "q": "¿Menciona tres genes candidatos estudiados en la esquizofrenia?",
+      "a": "DISC1, COMT y NRG1 (entre otros como DRD3 o DTNBP1)."
+    },
+    {
+      "cat": "Estrés",
+      "q": "¿En qué consiste la hipótesis de diátesis-estrés?",
+      "a": "Plantea que el trastorno surge de la interacción entre la vulnerabilidad genética y los estresores vitales del individuo."
+    },
+    {
+      "cat": "Trauma",
+      "q": "¿Cómo puede el trauma favorecer la transición a síntomas psicóticos?",
+      "a": "A través de procesos biológicos como la inflamación y el estrés oxidativo resultantes de la experiencia traumática."
+    },
+    {
+      "cat": "Sustancias",
+      "q": "¿Qué droga presenta la evidencia más sólida como factor de riesgo?",
+      "a": "El cannabis, especialmente relacionado con la dosis, edad de inicio y concentración de THC."
+    },
+    {
+      "cat": "Sustancias",
+      "q": "¿Qué porcentaje de pacientes con psicosis inducida por cannabis desarrollarán esquizofrenia?",
+      "a": "Aproximadamente el 50%."
+    },
+    {
+      "cat": "Infecciones",
+      "q": "¿Qué hipótesis relaciona las infecciones víricas con la esquizofrenia?",
+      "a": "Sugiere que alteran mecanismos inmunológicos, expresión de genes críticos o niveles de citoquinas en el desarrollo cerebral."
+    },
+    {
+      "cat": "Infecciones",
+      "q": "¿Qué virus específicos han sido más estudiados en relación con el trastorno?",
+      "a": "Virus de la influenza, Herpes (HSV-1/2), Citomegalovirus y Epstein-Barr."
+    },
+    {
+      "cat": "Factores de Protección",
+      "q": "¿Qué papel juega el nivel socioeconómico como factor de protección?",
+      "a": "Las familias con recursos y acceso a educación en salud promueven una mejor adherencia y desempeño cognitivo."
+    },
+    {
+      "cat": "Personalidad",
+      "q": "¿Qué rasgos de personalidad actúan como factores de protección?",
+      "a": "La autonomía (dirigirse a uno mismo), la tendencia a la cooperación y la capacidad de persistir."
+    },
+    {
+      "cat": "Personalidad",
+      "q": "¿Qué trastornos de la personalidad se consideran factores de riesgo?",
+      "a": "Los trastornos paranoide, esquizoide y esquizotípico."
+    },
+    {
+      "cat": "Ambiente Familiar",
+      "q": "¿Qué importancia tiene la 'parentalidad positiva'?",
+      "a": "Reduce la conflictividad y el riesgo de estresores persistentes, actuando como protector en menores vulnerables."
+    },
+    {
+      "cat": "Inteligencia",
+      "q": "¿Cómo influye la alta inteligencia en la evolución del trastorno?",
+      "a": "Actúa como factor protector que puede mitigar el impacto del deterioro de las funciones cognitivas."
+    },
+    {
+      "cat": "Nutrición",
+      "q": "¿Qué carencias nutricionales prenatales aumentan el riesgo de esquizofrenia?",
+      "a": "Déficits de ácidos omega-3, vitamina B y vitamina D."
+    },
+    {
+      "cat": "Nutrición",
+      "q": "¿Qué suplemento alimentario se ha destacado como coadyuvante en el tratamiento?",
+      "a": "La N-acetilcisteína."
+    },
+    {
+      "cat": "Evolución",
+      "q": "¿Qué fases cronológicas se distinguen en la evolución de la esquizofrenia?",
+      "a": "Etapa premórbida, fase prodrómica, primer episodio psicótico y episodios agudos (brotes)."
+    },
+    {
+      "cat": "Delirios",
+      "q": "¿Cómo se define el 'componente ontológico' en el delirio nihilista?",
+      "a": "Como razonamientos enrevesados sin conexión lógica sobre la naturaleza del ser o la existencia."
+    },
+    {
+      "cat": "Alucinaciones",
+      "q": "¿Qué caracteriza a las alucinaciones reflejas?",
+      "a": "Un estímulo real en una modalidad sensorial provoca automáticamente una alucinación en otra modalidad diferente."
+    },
+    {
+      "cat": "Lenguaje",
+      "q": "¿Qué diferencia a la tangencialidad de la circunstancialidad?",
+      "a": "En la tangencialidad el sujeto nunca llega al tema; en la circunstancialidad llega pero con excesivos rodeos irrelevantes."
+    },
+    {
+      "cat": "Cognición Social",
+      "q": "¿Cómo afectan los déficits en atención sostenida al paciente?",
+      "a": "Inciden profundamente en la capacidad de adaptación a los retos cotidianos del día a día."
+    },
+    {
+      "cat": "DSM-5",
+      "q": "¿Qué síntoma del Criterio A es obligatorio junto a otro para diagnosticar esquizofrenia?",
+      "a": "Debe ser al menos uno de estos tres: delirios, alucinaciones o discurso desorganizado."
+    },
+    {
+      "cat": "Factores de Riesgo",
+      "q": "¿Qué relación tiene el mes de nacimiento con el riesgo de esquizofrenia?",
+      "a": "Algunes estudios sugieren que nacer a finales de invierno o inicios de primavera aumenta el riesgo, aunque no es concluyente."
+    },
+    {
+      "cat": "Síntomas Negativos",
+      "q": "¿Por qué la apatía se considera el síntoma negativo más relevante?",
+      "a": "Porque se vincula al resto de síntomas (abulia, anhedonia) y su mejora genera beneficios transversales."
+    },
+    {
+      "cat": "Estigma",
+      "q": "¿Cuál es la postura de Fusar-Poli et al. (2023) sobre la violencia en estos pacientes?",
+      "a": "Señala que las evidencias son escasas y frágiles, y los resultados podrían explicarse por variables tratables en lugar del diagnóstico."
+    },
+    {
+      "cat": "Neurología",
+      "q": "¿Qué cambio estructural ocurre en la sustancia blanca según Muraki y Tanigaki?",
+      "a": "Descenso de densidad en regiones superficiales y aumento en regiones profundas."
+    },
+    {
+      "cat": "Factores de Riesgo",
+      "q": "¿Cómo influyen los estresores tempranos en la respuesta al estrés adulto?",
+      "a": "Suelen sensibilizar al individuo para experimentar con mayor intensidad los estresores agudos posteriores."
+    },
+    {
+      "cat": "Lenguaje",
+      "q": "¿Qué sugiere la perseveración sobre las capacidades cognitivas del paciente?",
+      "a": "Dificultades en la flexibilidad cognitiva y en la adaptación a los cambios de la interacción."
+    },
+    {
+      "cat": "Delirios",
+      "q": "¿Qué caracteriza al delirio somático comparado con una hipocondría?",
+      "a": "En el delirio la creencia es inverosímil (ej: órganos podridos) y falta de fundamentación médica absoluta."
+    },
+    {
+      "cat": "Alucinaciones",
+      "q": "¿Por qué las alucinaciones visuales suelen ser menos comunes que las auditivas?",
+      "a": "La esquizofrenia tiene un perfil predominantemente auditivo-verbal, aunque pueden aparecer estímulos geométricos o figurativos."
+    },
+    {
+      "cat": "Protección",
+      "q": "¿De qué manera el nivel cultural familiar protege frente a los déficits cognitivos?",
+      "a": "Actúa como una reserva cognitiva que mejora el desempeño y la funcionalidad del paciente."
+    },
+    {
+      "cat": "Sustancias",
+      "q": "¿Qué mecanismo cerebral común comparten la esquizofrenia y la dependencia de sustancias?",
+      "a": "La neuroinflamación mediada por el sistema inmunológico."
+    },
+    {
+      "cat": "DSM-5",
+      "q": "¿Cómo se manifiesta la fase prodrómica o residual en el DSM-5?",
+      "a": "Por síntomas negativos o por síntomas del criterio A presentes de forma atenuada (ej: creencias extrañas)."
+    },
+    {
+      "cat": "Delimitación Conceptual",
+      "q": "¿Qué matiz ineludible incorpora el diagnóstico de esquizofrenia según el texto?",
+      "a": "Un matiz cultural, ya que las creencias se juzgan como extravagantes según el marco de referencia de su sociedad."
+    },
+    {
+      "cat": "Síntomas Cognitivos",
+      "q": "¿Por qué los síntomas cognitivos se consideran hoy una categoría independiente?",
+      "a": "Porque requieren una pericia clínica especial y no encajan totalmente en la definición clásica de síntomas negativos."
+    }
+  ]
+}

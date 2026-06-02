@@ -1,0 +1,2458 @@
+{
+  "quiz": [
+    {
+      "q": "El insomnio primario se caracteriza por presentar una fisiopatología del sueño subyacente que incluye los malos hábitos o el desajuste de los ritmos circadianos.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Revisa la distinción entre causas externas/médicas y factores intrínsecos del sueño.",
+      "explanation": "El texto define el insomnio primario como aquel con fisiopatología subyacente, citando explícitamente los malos hábitos y desajustes circadianos."
+    },
+    {
+      "q": "En la vía córtico-estriado-talámico-cortical, la potenciación de la neurotransmisión de GABA disminuye el filtrado de los estímulos sensoriales externos.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Asocia el GABA con la inhibición y su efecto en el 'embudo' sensorial.",
+      "explanation": "La potenciación de GABA incrementa el filtrado sensorial; es la dopamina la que lo disminuye según el texto."
+    },
+    {
+      "q": "El núcleo tuberomamilar (NTM) del hipotálamo actúa como el 'promotor del despertar' mediante la liberación de histamina.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Identifica la ubicación del interruptor de 'encendido' en el circuito hipotalámico.",
+      "explanation": "El NTM es efectivamente el promotor de la vigilia (encendido) y utiliza histamina como neurotransmisor."
+    },
+    {
+      "q": "El insomnio a corto plazo se define clínicamente cuando la sintomatología persiste por un periodo superior a los seis meses.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre las duraciones de insomnio transitorio, a corto plazo y a largo plazo.",
+      "explanation": "El insomnio a corto plazo dura de 2 a 3 semanas; el de más de 6 meses se clasifica como insomnio a largo plazo."
+    },
+    {
+      "q": "Las neuronas del hipotálamo lateral liberan orexina e hipocretina, las cuales ejercen una función estabilizadora del estado de vigilia.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Localiza el origen de los neuropéptidos reguladores de la estabilidad del interruptor.",
+      "explanation": "El hipotálamo lateral produce orexina/hipocretina para mantener el estado de alerta."
+    },
+    {
+      "q": "Los núcleos preópticos ventrolaterales (POVL) liberan GABA para inhibir el promotor de la vigilia en los núcleos tuberomamilares.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Analiza la interacción recíproca entre el POVL y el NTM.",
+      "explanation": "El POVL es el promotor del sueño (apagado) y utiliza GABA para frenar la actividad del NTM."
+    },
+    {
+      "q": "La hipersomnia y la narcolepsia se clasifican dentro de las parasomnias por interrumpir el desarrollo normal del sueño nocturno.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Distingue entre alteraciones del inicio/mantenimiento y fenómenos que ocurren durante el sueño.",
+      "explanation": "Hipersomnia y narcolepsia son disomnias; el sonambulismo o el bruxismo son parasomnias."
+    },
+    {
+      "q": "Un hipnótico de inicio rápido y duración breve es el tratamiento de elección para el insomnio caracterizado por despertares nocturnos frecuentes.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Relaciona la farmacocinética del fármaco con el patrón específico de interrupción del sueño.",
+      "explanation": "Para despertares nocturnos se requiere una duración intermedia; el inicio rápido/breve es solo para la inducción inicial."
+    },
+    {
+      "q": "Los fármacos denominados 'Z' actúan como moduladores alostéricos positivos del receptor GABA A con una vida media de entre 1 y 3 horas.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Verifica el mecanismo de acción y los tiempos de aclaramiento de los hipnóticos no benzodiacepínicos.",
+      "explanation": "Los hipnóticos no BZDs (Z-drugs) son moduladores alostéricos positivos de GABA A con acción breve."
+    },
+    {
+      "q": "El zolpidem es un sedante-hipnótico que actúa selectivamente sobre los receptores omega-1 y omega-2 para mejorar la cognición.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Busca la especificidad de los receptores omega en los fármacos de tipo 'Z'.",
+      "explanation": "El zolpidem es selectivo de omega-1 (sedación) y NO actúa sobre los omega-2 (cognición/motor)."
+    },
+    {
+      "q": "La trazodona actúa como hipnótico a dosis bajas mediante el antagonismo de los receptores 5HT2A, H1 y alfa-1.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Revisa el perfil farmacodinámico de la trazodona cuando se usa para el sueño.",
+      "explanation": "A dosis bajas, su efecto sedante se duebe al bloqueo de estos tres sistemas de receptores."
+    },
+    {
+      "q": "La agomelatina es un fármaco antidepresivo que actúa como agonista de la melatonina para regular los ritmos circadianos.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Comprueba la relación entre este antidepresivo y el reloj biológico.",
+      "explanation": "La agomelatina combina acción antidepresiva con agonismo melatoninérgico para el ajuste circadiano."
+    },
+    {
+      "q": "El uso de benzodiacepinas a largo plazo está indicado para prevenir el insomnio de rebote y la tolerancia farmacológica.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Evalúa los riesgos asociados al uso crónico de las BZDs.",
+      "explanation": "El uso a largo plazo produce precisamente tolerancia e insomnio de rebote; se recomiendan pautas cortas o intermitentes."
+    },
+    {
+      "q": "El síndrome de piernas inquietas es una causa de insomnio secundario relacionada con trastornos metabólicos o endocrinos.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Clasifica este síndrome dentro de los tipos de insomnio mencionados en el texto.",
+      "explanation": "El texto incluye el síndrome de piernas inquietas dentro del insomnio primario por fisiopatología subyacente."
+    },
+    {
+      "q": "El zaleplon alcanza su concentración máxima en una hora y tiene una vida media de aproximadamente una hora.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Memoriza los parámetros farmacocinéticos del fármaco 'Z' más rápido.",
+      "explanation": "El zaleplon es el más breve y rápido, ideal para problemas de inicio sin sedación residual."
+    },
+    {
+      "q": "Las parasomnias son fenómenos que interrumpen el desarrollo normal del sueño, como la enuresis nocturna y el bruxismo.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Identifica los ejemplos típicos de interrupciones episódicas del sueño.",
+      "explanation": "Enuresis y bruxismo son ejemplos clásicos de parasomnias citados en el documento."
+    },
+    {
+      "q": "La zopiclona presenta una vida media significativamente más larga que el zaleplon, oscilando entre las 3.5 y 6 horas.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Compara las duraciones de acción dentro de la familia de fármacos 'Z'.",
+      "explanation": "Mientras el zaleplon dura 1h, la zopiclona tiene una duración superior (hasta 6h)."
+    },
+    {
+      "q": "Los antagonistas H1 específicos pueden causar confusión y problemas de memoria en pacientes de edad avanzada debido a efectos anticolinérgicos.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Analiza los efectos secundarios de los antihistamínicos de primera generación en geriatría.",
+      "explanation": "Sus propiedades anticolinérgicas son especialmente problemáticas y poco eficaces en ancianos."
+    },
+    {
+      "q": "El insomnio terminal se define específicamente como la incapacidad de conciliar el sueño al inicio de la noche.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Relaciona los términos 'inicial', 'medio' y 'terminal' con el momento del despertar.",
+      "explanation": "El insomnio terminal es el despertar precoz por la mañana; la dificultad al inicio es insomnio inicial."
+    },
+    {
+      "q": "La mirtazapina es un antidepresivo del grupo NASSA que puede emplearse ocasionalmente por sus propiedades sedantes.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Clasifica el fármaco y su uso secundario en trastornos del sueño.",
+      "explanation": "Pertenece a los NASSA y su uso como hipnótico se debe a su perfil antihistamínico/sedante."
+    },
+    {
+      "q": "El tratamiento del insomnio transitorio requiere necesariamente intervención farmacológica para evitar que se cronifique.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Valora la necesidad terapéutica en situaciones de estrés puntual de 2-3 días.",
+      "explanation": "El texto indica que el insomnio transitorio no precisa tratamiento ya que desaparece al volver a la normalidad."
+    },
+    {
+      "q": "El interruptor sueño-vigilia se encuentra en un estado de 'apagado' cuando se libera GABA desde los núcleos preópticos ventrolaterales.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Asocia el neurotransmisor inhibidor con el estado del interruptor hipotalámico.",
+      "explanation": "La liberación de GABA desde el POVL inhibe la vigilia, poniendo el sistema en modo 'apagado'."
+    },
+    {
+      "q": "La vía circadiana del despertar aumenta su intensidad conforme avanza el día para compensar el impulso homeostático del sueño.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 1,
+      "hint": "Observa la dinámica de los dos impulsos reguladores a lo largo de la jornada.",
+      "explanation": "Conforme avanza el día, el impulso circadiano de vigilia disminuye y el impulso homeostático aumenta."
+    },
+    {
+      "q": "Un hipnótico ideal debe ser seguro en caso de sobredosis y no debe alterar la arquitectura normal del sueño del paciente.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Repasa los cinco criterios del compuesto hipnótico perfecto mencionados al final del punto 4.2.",
+      "explanation": "La seguridad en sobredosis y el respeto a la arquitectura del sueño son requisitos del hipnótico ideal."
+    },
+    {
+      "q": "El triazolam y el flurazepam son benzodiacepinas de vida media-corta empleadas comúnmente para tratar el insomnio.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No sabe"
+      ],
+      "correct": 0,
+      "hint": "Identifica los fármacos BZD mencionados como los más utilizados en este contexto.",
+      "explanation": "Ambos se listan como BZDs de vida media-corta muy utilizadas para el insomnio."
+    },
+    {
+      "q": "Elija la opción CORRECTA respecto a la clasificación del insomnio según su duración como síntoma:",
+      "options": [
+        "El insomnio a corto plazo dura de 2 a 3 semanas por situaciones de estrés.",
+        "El insomnio transitorio requiere medicación para evitar el jet-lag residual.",
+        "El insomnio a largo plazo es primario y dura menos de tres meses continuos."
+      ],
+      "correct": 0,
+      "hint": "Compara los umbrales temporales de cada categoría de insomnio.",
+      "explanation": "El insomnio a corto plazo (2-3 semanas) se asocia a estresores como divorcios o problemas legales."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre el mecanismo de acción de los fármacos hipnóticos no benzodiacepínicos:",
+      "options": [
+        "Actúan como antagonistas competitivos en el sitio de unión de las BZDs.",
+        "Son moduladores alostéricos positivos que se unen a un sitio distinto a las BZDs.",
+        "Incrementan la vigilia mediante la estabilización de los receptores de orexina."
+      ],
+      "correct": 1,
+      "hint": "Analiza cómo interactúan con el complejo receptor GABA A.",
+      "explanation": "Se unen a un lugar diferente al de las BZDs, lo que les confiere ventajas terapéuticas y menor tolerancia."
+    },
+    {
+      "q": "Elija la opción CORRECTA en relación a los circuitos hipotalámicos que regulan el sueño:",
+      "options": [
+        "El POVL descarga histamina para activar el promotor del despertar.",
+        "La orexina actúa en el hipotálamo lateral para estabilizar la vigilia.",
+        "El NTM libera GABA para inducir el estado de apagado del interruptor."
+      ],
+      "correct": 1,
+      "hint": "Busca la función específica de los núcleos laterales y sus neuropéptidos.",
+      "explanation": "Las neuronas del hipotálamo lateral liberan orexina para evitar transiciones no deseadas entre estados."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre las características farmacocinéticas del zolpidem:",
+      "options": [
+        "Su vida media es de 1 hora, siendo ideal para el trastorno por jet-lag.",
+        "Tiene una concentración máxima de 2 a 3 horas y vida media de 1.5 a 3 horas.",
+        "Requiere hasta 6 horas para alcanzar el pico máximo de concentración plasmática."
+      ],
+      "correct": 1,
+      "hint": "Distingue los tiempos de latencia y duración entre zolpidem y zaleplon.",
+      "explanation": "El zolpidem tiene una latencia algo superior al zaleplon (2-3h pico) y una duración algo mayor."
+    },
+    {
+      "q": "Elija la opción CORRECTA respecto al tratamiento farmacológico del insomnio persistente:",
+      "options": [
+        "Debe ser continuo y crónico para asegurar la eficacia del tratamiento.",
+        "Debe ser intermitente con evaluación continuada por riesgo de dependencia.",
+        "Se recomienda el uso exclusivo de BZDs de vida larga para evitar el rebote."
+      ],
+      "correct": 1,
+      "hint": "Considera las recomendaciones sobre seguridad y prevención de adicciones.",
+      "explanation": "La administración intermitente es clave para evitar el abuso y la dependencia de sedantes-hipnóticos."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre la vía córtico-estriado-talámico-cortical:",
+      "options": [
+        "Los agonistas de la dopamina aumentan el filtrado de estímulos sensoriales.",
+        "La potenciación de GABA incrementa el filtrado de estímulos sensoriales.",
+        "Esta vía regula los ritmos circadianos mediante la liberación de melatonina."
+      ],
+      "correct": 1,
+      "hint": "Relaciona los neurotransmisores con la apertura o cierre del 'filtro' sensorial.",
+      "explanation": "GABA actúa cerrando el filtro (potenciando el filtrado), mientras que la DA lo abre (disminuye filtrado)."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre el uso de antidepresivos como hipnóticos:",
+      "options": [
+        "La mirtazapina se usa por su potente acción anticolinérgica periférica.",
+        "La trazodona a dosis bajas restaura y aumenta el sueño de ondas lentas.",
+        "Los ATC están contraindicados si el paciente presenta depresión con insomnio."
+      ],
+      "correct": 1,
+      "hint": "Busca el beneficio específico de la trazodona en la arquitectura del sueño.",
+      "explanation": "La trazodona es eficaz induciendo el sueño de ondas lentas, siendo útil junto a los ISRS."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre el hipnótico ideal según el texto:",
+      "options": [
+        "Debe permitir estar despejado y sin efectos residuales al día siguiente.",
+        "Es aquel que altera la arquitectura del sueño para forzar el descanso profundo.",
+        "Su inicio de acción debe ser lento para asegurar una inducción natural."
+      ],
+      "correct": 0,
+      "hint": "Repasa los beneficios post-consumo que se esperan de un buen fármaco.",
+      "explanation": "La ausencia de efectos residuales ('resaca') es un pilar fundamental del hipnótico ideal."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre los receptores omega en el cerebro:",
+      "options": [
+        "Los receptores omega-1 regulan la memoria y el funcionamiento motor.",
+        "Los receptores omega-2 están implicados principalmente en la sedación.",
+        "Los receptores omega-1 son los responsables de mediar la acción sedante."
+      ],
+      "correct": 2,
+      "hint": "Asocia cada subtipo de receptor con su función fisiológica principal.",
+      "explanation": "Omega-1 se relaciona con sedación; Omega-2 con cognición, memoria y funciones motoras."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre las parasomnias:",
+      "options": [
+        "El bruxismo nocturno se considera una disomnia de mantenimiento.",
+        "El terror nocturno es un fenómeno que interrumpe el sueño normal.",
+        "La apnea del sueño es la parasomnia más frecuente en adultos jóvenes."
+      ],
+      "correct": 1,
+      "hint": "Clasifica el fenómeno según ocurra durante el sueño o afecte su inicio.",
+      "explanation": "El terror nocturno es una parasomnia típica que interrumpe la continuidad del sueño."
+    },
+    {
+      "q": "Elija la opción CORRECTA respecto a la pauta de sueño y el tipo de fármaco:",
+      "options": [
+        "Para dificultad de inicio se prefiere inicio rápido y duración breve.",
+        "Para despertares nocturnos se prefiere inicio rápido y duración breve.",
+        "Para insomnio mixto se prefiere inicio lento y duración intermedia."
+      ],
+      "correct": 0,
+      "hint": "Ajusta la vida media del fármaco al problema específico del paciente.",
+      "explanation": "Si el problema es solo conciliar el sueño, se busca un fármaco que actúe pronto y desaparezca rápido."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre los efectos secundarios de las BZDs a largo plazo:",
+      "options": [
+        "Provocan un aumento de la concentración y la capacidad de aprendizaje.",
+        "Pueden causar tolerancia, abstinencia e incluso insomnio de rebote.",
+        "Mejoran la formación de recuerdos a largo plazo tras su retirada brusca."
+      ],
+      "correct": 1,
+      "hint": "Identifica las complicaciones derivadas del uso prolongado de benzodiacepinas.",
+      "explanation": "La tolerancia y el insomnio de rebote son los problemas crónicos más significativos de las BZDs."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre el núcleo supraquiasmático:",
+      "options": [
+        "Es el reloj interno que responde a los ciclos de luz y oscuridad.",
+        "Libera histamina para activar el interruptor de encendido del sueño.",
+        "Se localiza en el hipotálamo lateral junto a las neuronas de orexina."
+      ],
+      "correct": 0,
+      "hint": "Define la función principal del NSQ en la regulación biológica.",
+      "explanation": "El NSQ es el marcapasos circadiano central sensible a la luz y a la melatonina."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre los moduladores del sueño sin prescripción:",
+      "options": [
+        "La valeriana es la opción más segura por su facilidad para ajustar dosis.",
+        "Los antihistamínicos H1 son ineficaces si presentan efectos anticolinérgicos.",
+        "La agomelatina solo es útil en sujetos que padecen depresión mayor."
+      ],
+      "correct": 1,
+      "hint": "Busca la limitación clínica de los antagonistas H1 en el insomnio.",
+      "explanation": "Si tienen fuertes efectos anticolinérgicos, sus efectos secundarios impiden su eficacia clínica en el sueño."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre la somnolencia diurna excesiva según la hipótesis del interruptor:",
+      "options": [
+        "Se explica por la activación del interruptor sueño-vigilia por la noche.",
+        "Se explica como una desconexión del interruptor sueño-vigilia durante el día.",
+        "Se debe a una liberación masiva de histamina desde los núcleos tuberomamilares."
+      ],
+      "correct": 1,
+      "hint": "Analiza el fallo del 'switch' hipotalámico en los trastornos de vigilia.",
+      "explanation": "La desconexión diurna del promotor de la vigilia causa la somnolencia excesiva."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre el zaleplon:",
+      "options": [
+        "Es ideal para el insomnio de mantenimiento por su larga vida media.",
+        "Su rapidez lo hace idóneo para el jet-lag y el inicio del sueño.",
+        "Actúa sobre los receptores omega-2 para mejorar el rendimiento motor."
+      ],
+      "correct": 1,
+      "hint": "Relaciona su brevedad de acción con situaciones clínicas puntuales.",
+      "explanation": "Su perfil ultrarrápido y breve es perfecto para la inducción sin efectos al despertar."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre los efectos secundarios a corto plazo de las BZDs:",
+      "options": [
+        "Generan una excesiva euforia y aumento de la actividad laboral.",
+        "Incluyen sedación diurna y dificultades en la formación de recuerdos.",
+        "Aumentan la agudeza mental necesaria para tareas de alta precisión."
+      ],
+      "correct": 1,
+      "hint": "Considera cómo afectan estos fármacos a la cognición inmediata.",
+      "explanation": "La sedación residual y los trastornos de memoria (amnesia anterógrada) son riesgos iniciales."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre el insomnio secundario:",
+      "options": [
+        "Es causado por trastornos médicos como dolor o problemas renales.",
+        "Su origen se debe exclusivamente a un mal ajuste de los ritmos circadianos.",
+        "Se asocia siempre a parasomnias como el sonambulismo o el bruxismo."
+      ],
+      "correct": 0,
+      "hint": "Identifica las causas externas o médicas que provocan la alteración del sueño.",
+      "explanation": "El insomnio secundario deriva de patologías orgánicas, psiquiátricas o consumo de sustancias."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre el mecanismo neuroquímico de 'apagado' del sueño:",
+      "options": [
+        "El GABA se libera en los núcleos tuberomamilares para inhibir la vigilia.",
+        "La histamina se libera en los núcleos preópticos para inducir el descanso.",
+        "La orexina inhibe los núcleos preópticos para forzar la entrada en sueño REM."
+      ],
+      "correct": 0,
+      "hint": "Determina hacia dónde viaja el GABA para silenciar el sistema de alerta.",
+      "explanation": "El GABA del POVL viaja al NTM para apagar la liberación de histamina y promover el sueño."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre las disomnias:",
+      "options": [
+        "Son exclusivamente fenómenos motores que ocurren durante la noche.",
+        "Son alteraciones que dificultan el inicio o mantenimiento del sueño.",
+        "Se definen como trastornos causados únicamente por el uso de sedantes."
+      ],
+      "correct": 1,
+      "hint": "Usa la definición general proporcionada al inicio del tema 4.",
+      "explanation": "Las disomnias abarcan tanto el insomnio como los trastornos por exceso de sueño (somnolencia)."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre el insomnio transitorio:",
+      "options": [
+        "Dura aproximadamente 2 o 3 meses y requiere terapia conductual.",
+        "Se produce por causas especiales como el jet-lag o estrés puntual.",
+        "Precisa tratamiento farmacológico intensivo desde el primer día."
+      ],
+      "correct": 1,
+      "hint": "Asocia la brevedad del síntoma con eventos vitales específicos.",
+      "explanation": "Su duración es de solo 2-3 días y se liga a cambios de cama o exámenes."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre el uso de antidepresivos tricíclicos (ATC):",
+      "options": [
+        "Su efecto sedante se considera una ventaja en deprimidos con insomnio.",
+        "Están indicados solo para pacientes que no presentan síntomas afectivos.",
+        "Son fármacos de primera línea por su nulo efecto en los receptores H1."
+      ],
+      "correct": 0,
+      "hint": "Valora cómo un efecto secundario puede volverse terapéutico.",
+      "explanation": "En pacientes con comorbilidad depresión-insomnio, la sedación de los ATC es un alivio clínico."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre los agonistas de la melatonina:",
+      "options": [
+        "Son fármacos indicados exclusivamente para tratar la apnea obstructiva.",
+        "Resultan ser buenos inductores para el inicio del sueño y el desfase horario.",
+        "Su uso prolongado genera la mayor tasa de dependencia entre los hipnóticos."
+      ],
+      "correct": 1,
+      "hint": "Evalúa la utilidad clínica de imitar a la hormona del sueño.",
+      "explanation": "Son eficaces para sincronizar ritmos y facilitar la entrada inicial al sueño."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre la perspectiva clásica del tratamiento del insomnio:",
+      "options": [
+        "Debe tratarse el insomnio antes que cualquier otra causa subyacente.",
+        "La causa subyacente debe ser tratada antes que el propio insomnio.",
+        "El uso de hipnóticos debe ser la única intervención recomendada siempre."
+      ],
+      "correct": 1,
+      "hint": "Identifica la prioridad terapéutica en medicina del sueño.",
+      "explanation": "Tratar la raíz (dolor, ansiedad, etc.) es prioritario frente al tratamiento sintomático."
+    },
+    {
+      "q": "Elija la opción CORRECTA sobre la arquitectura del sueño:",
+      "options": [
+        "Los hipnóticos de primera línea suelen mejorar la calidad de las ondas lentas.",
+        "El hipnótico ideal es aquel que no altera la estructura natural de las fases.",
+        "Las benzodiacepinas son los únicos fármacos que respetan el sueño REM."
+      ],
+      "correct": 1,
+      "hint": "Busca una de las características del compuesto hipnótico 'perfecto'.",
+      "explanation": "No alterar la arquitectura del sueño es un requisito para que el descanso sea reparador."
+    },
+    {
+      "q": "Elija la opción INCORRECTA respecto a los fármacos tipo 'Z':",
+      "options": [
+        "Incluyen al zaleplon, la zopiclona y el zolpidem en su clasificación.",
+        "No producen un alto grado de tolerancia o dependencia a largo plazo.",
+        "Actúan bloqueando los receptores omega-1 para impedir la sedación."
+      ],
+      "correct": 2,
+      "hint": "Revisa si estos fármacos son agonistas o antagonistas de sus receptores.",
+      "explanation": "Incorrecto: No bloquean, sino que actúan como agonistas (moduladores) para PRODUCIR sedación."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la neuroquímica del interruptor sueño-vigilia:",
+      "options": [
+        "El NTM se localiza en el hipotálamo y libera histamina en la vigilia.",
+        "El GABA liberado desde el POVL inhibe directamente al promotor de vigilia.",
+        "La melatonina es liberada por el POVL para activar el núcleo supraquiasmático."
+      ],
+      "correct": 2,
+      "hint": "Verifica el origen y destino de la melatonina en el texto.",
+      "explanation": "Incorrecto: El NSQ responde a la melatonina y la luz, no es el POVL quien la libera para activarlo."
+    },
+    {
+      "q": "Elija la opción INCORRECTA respecto a las benzodiacepinas hipnóticas:",
+      "options": [
+        "Son consideradas actualmente como fármacos de primera línea de elección.",
+        "El triazolam y el temazepam se encuentran entre las más utilizadas.",
+        "Su retirada brusca puede desencadenar un síndrome de abstinencia."
+      ],
+      "correct": 0,
+      "hint": "Comprueba cuál es la jerarquía de prescripción actual para el insomnio.",
+      "explanation": "Incorrecto: Las BZDs deben considerarse fármacos de segunda línea, siendo los 'Z' la primera línea."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el insomnio a largo plazo:",
+      "options": [
+        "Tiene una duración superior a los seis meses de sintomatología persistente.",
+        "Es un trastorno que suele ser primario y rara vez se asocia a otras patologías.",
+        "Se considera persistente e incapacitante para el funcionamiento normal."
+      ],
+      "correct": 1,
+      "hint": "Relaciona la cronicidad del insomnio con su naturaleza (primaria/secundaria).",
+      "explanation": "Incorrecto: El insomnio a largo plazo suele ser secundario a otros trastornos según el texto."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre los efectos secundarios de los antihistamínicos H1:",
+      "options": [
+        "Pueden producir sequedad de boca, visión borrosa y estreñimiento.",
+        "Generan confusión y problemas de memoria, especialmente en ancianos.",
+        "Aumentan la agudeza cognitiva mejorando el filtrado sensorial por dopamina."
+      ],
+      "correct": 2,
+      "hint": "Evalúa el impacto de los efectos anticolinérgicos en la mente.",
+      "explanation": "Incorrecto: No mejoran la agudeza cognitiva; al contrario, causan confusión y problemas de memoria."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la trazodona como hipnótico:",
+      "options": [
+        "Actúa mediante el antagonismo de los receptores 5HT2A, H1 y alfa-1.",
+        "Es una buena opción terapéutica cuando se están utilizando fármacos ISRS.",
+        "Su principal inconveniente es que altera gravemente el sueño de ondas lentas."
+      ],
+      "correct": 2,
+      "hint": "Considera el efecto de la trazodona sobre las fases profundas del sueño.",
+      "explanation": "Incorrecto: La trazodona precisamente induce y restaura el sueño de ondas lentas."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la vía córtico-estriado-talámico-cortical:",
+      "options": [
+        "Forma un bucle que realiza el filtrado de estímulos sensoriales externos.",
+        "Se puede regular con sistemas de neurotransmisión del tronco cerebral.",
+        "Los agonistas de GABA disminuyen el filtrado sensorial para despertar."
+      ],
+      "correct": 2,
+      "hint": "Revisa la dirección del efecto del GABA en el filtrado sensorial.",
+      "explanation": "Incorrecto: GABA incrementa el filtrado (lo hace más estricto); no lo disminuye."
+    },
+    {
+      "q": "Elija la opción INCORRECTA respecto a las parasomnias:",
+      "options": [
+        "El sonambulismo y el terror nocturno son ejemplos clásicos de ellas.",
+        "Dificultan siempre el inicio del sueño produciendo somnolencia diurna.",
+        "Son fenómenos episódicos que interrumpen el desarrollo normal del sueño."
+      ],
+      "correct": 1,
+      "hint": "Diferencia los síntomas nucleares de disomnias y parasomnias.",
+      "explanation": "Incorrecto: Esa es la definición de las disomnias. Las parasomnias ocurren durante el sueño."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el zaleplon:",
+      "options": [
+        "Actúa selectivamente en los receptores benzodiacepínicos omega-1.",
+        "Tiene una vida media de 1.5 a 3 horas, similar a la del zolpidem.",
+        "Es ideal cuando es necesario estar despejado al día siguiente."
+      ],
+      "correct": 1,
+      "hint": "Busca el valor exacto de la vida media del zaleplon.",
+      "explanation": "Incorrecto: El zaleplon tiene una vida media de 1 hora; el zolpidem es el que llega a las 3 horas."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el insomnio secundario:",
+      "options": [
+        "Puede ser provocado por el consumo de drogas, alcohol o estimulantes.",
+        "Se asocia a trastornos psiquiátricos como la depresión y la ansiedad.",
+        "Es causado exclusivamente por malos hábitos y desajuste circadiano."
+      ],
+      "correct": 2,
+      "hint": "Distingue entre insomnio primario y secundario según su origen.",
+      "explanation": "Incorrecto: Los malos hábitos y desajustes se clasifican como insomnio primario."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la higiene del sueño y tratamiento:",
+      "options": [
+        "Se recomienda el uso de la relajación o intervención cognitivo-conductual.",
+        "Los hipnóticos deben administrarse de forma continua y nunca intermitente.",
+        "El psicofármaco elegido debe adaptarse estrictamente a la pauta de sueño."
+      ],
+      "correct": 1,
+      "hint": "Valora la pauta temporal de administración de los hipnóticos.",
+      "explanation": "Incorrecto: El texto advierte que el uso de hipnóticos NO debería ser continuo sino intermitente."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre los impulsos reguladores del sueño:",
+      "options": [
+        "El impulso circadiano de vigilia tiende a disminuir conforme avanza el día.",
+        "El impulso del sueño homeostático aumenta a medida que pasan las horas.",
+        "Al final del día el impulso circadiano alcanza su pico máximo de intensidad."
+      ],
+      "correct": 2,
+      "hint": "Analiza qué sucede con la vigilia cuando se acerca la hora de dormir.",
+      "explanation": "Incorrecto: Al final del día la vía circadiana disminuye para permitir el disparo del POVL."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la zopiclona:",
+      "options": [
+        "Su nombre empieza por 'Z', por lo que es un hipnótico no benzodiacepínico.",
+        "Su concentración máxima se alcanza aproximadamente a los 90 minutos.",
+        "Tiene una vida media muy breve de 1 hora, siendo la más corta del grupo."
+      ],
+      "correct": 2,
+      "hint": "Compara la duración de la zopiclona con la del zaleplon.",
+      "explanation": "Incorrecto: La zopiclona dura de 3.5 a 6h; la más corta es el zaleplon (1h)."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el hipnótico ideal:",
+      "options": [
+        "No debe empeorar la apnea del sueño si el paciente la padece.",
+        "Debe ser capaz de alterar la arquitectura del sueño para ser más potente.",
+        "Debe poseer un inicio de acción rápido para facilitar el descanso."
+      ],
+      "correct": 1,
+      "hint": "Revisa los cinco puntos sobre el hipnótico perfecto.",
+      "explanation": "Incorrecto: El hipnótico ideal NO debe alterar la arquitectura del sueño."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el receptor GABA A:",
+      "options": [
+        "Es la diana terapéutica tanto de las BZDs como de los fármacos 'Z'.",
+        "Los fármacos 'Z' se unen al mismo sitio exacto que las benzodiacepinas.",
+        "Su modulación alostérica positiva incrementa la inhibición neuronal."
+      ],
+      "correct": 1,
+      "hint": "Busca la diferencia clave de unión entre BZDs y hipnóticos no BZDs.",
+      "explanation": "Incorrecto: El lugar de unión de los fármacos 'Z' es diferente al de las BZDs."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la histamina en el sueño:",
+      "options": [
+        "Es el neurotransmisor principal que controla el promotor de la vigilia.",
+        "Se descarga desde los núcleos tuberomamilares para activar el córtex.",
+        "Su liberación es estimulada por el GABA proveniente de los núcleos POVL."
+      ],
+      "correct": 2,
+      "hint": "Analiza si el GABA estimula o inhibe la liberación de histamina.",
+      "explanation": "Incorrecto: El GABA del POVL INHIBE al NTM, por lo tanto detiene la descarga de histamina."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre los trastornos del ritmo circadiano:",
+      "options": [
+        "Se clasifican dentro de las disomnias según el texto proporcionado.",
+        "Suelen requerir fármacos que actúen sobre los receptores de melatonina.",
+        "Se consideran parasomnias por ocurrir exclusivamente durante la fase REM."
+      ],
+      "correct": 2,
+      "hint": "Clasifica correctamente el desajuste del reloj biológico.",
+      "explanation": "Incorrecto: Son disomnias, no parasomnias, ya que afectan al inicio/mantenimiento del sueño."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el insomnio terminal:",
+      "options": [
+        "Se manifiesta como el despertar muy temprano antes de lo planeado.",
+        "Es una de las formas en las que puede presentarse la dificultad de sueño.",
+        "Su tratamiento requiere siempre fármacos de inicio rápido y vida media de 1h."
+      ],
+      "correct": 2,
+      "hint": "Relaciona la vida media del fármaco con el insomnio de última hora.",
+      "explanation": "Incorrecto: Un fármaco de 1h de vida media no cubriría el final de la noche; se necesitaría más duración."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la valeriana:",
+      "options": [
+        "Se considera una hierba medicinal útil para el insomnio transitorio.",
+        "Es muy sencillo ajustar su dosis exacta para un tratamiento prolongado.",
+        "Presenta dificultades en la estandarización de su administración clínica."
+      ],
+      "correct": 1,
+      "hint": "Busca el inconveniente de las hierbas medicinales citado en el texto.",
+      "explanation": "Incorrecto: El texto dice explícitamente que 'es muy difícil ajustar la dosis de administración'."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el flurazepam y quazepam:",
+      "options": [
+        "Son benzodiacepinas que pueden emplearse para el tratamiento del insomnio.",
+        "Pertenecen al grupo de fármacos de segunda línea en el tratamiento actual.",
+        "Carecen de efectos secundarios como la sedación diurna o la tolerancia."
+      ],
+      "correct": 2,
+      "hint": "Evalúa si alguna BZD está exenta de los riesgos clásicos del grupo.",
+      "explanation": "Incorrecto: Todas las BZDs listadas presentan riesgos de sedación, tolerancia y dependencia."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la agomelatina y la luz:",
+      "options": [
+        "Actúa regulando los ritmos circadianos mediante el sistema melatoninérgico.",
+        "Es útil exclusivamente en pacientes que no presentan ninguna depresión.",
+        "Puede ser eficaz para el tratamiento del trastorno por desfase horario."
+      ],
+      "correct": 1,
+      "hint": "Comprueba si la agomelatina tiene un solo uso o varios.",
+      "explanation": "Incorrecto: Es un antidepresivo, pero TAMBIÉN puede ser útil en personas sin depresión para el sueño."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el interruptor de encendido (vigilia):",
+      "options": [
+        "Se localiza en el interior de los núcleos tuberomamilares (NTM).",
+        "Se activa descargando histamina para proporcionar activación al córtex.",
+        "Es controlado principalmente por la liberación de melatonina del POVL."
+      ],
+      "correct": 2,
+      "hint": "Identifica qué neurotransmisor controla el apagado desde el POVL.",
+      "explanation": "Incorrecto: El POVL utiliza GABA para controlar el interruptor, no melatonina."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre la mirtazapina:",
+      "options": [
+        "Pertenece al grupo de antidepresivos NASSA con efectos sedantes.",
+        "Su uso como hipnótico es ocasional debido a sus propiedades farmacológicas.",
+        "Es el fármaco 'Z' de elección para pacientes con insomnio y depresión."
+      ],
+      "correct": 2,
+      "hint": "Clasifica la mirtazapina fuera o dentro del grupo de los fármacos 'Z'.",
+      "explanation": "Incorrecto: La mirtazapina es un antidepresivo NASSA, no un fármaco 'Z' (zaleplon, zolpidem, zopiclona)."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el insomnio y la concentración:",
+      "options": [
+        "La consecuencia más frecuente del insomnio es la somnolencia diurna.",
+        "El insomnio produce una mejora en la capacidad de sentirse activo de día.",
+        "Baja concentración e incapacidad son efectos directos de la falta de sueño."
+      ],
+      "correct": 1,
+      "hint": "Relaciona la falta de sueño con el rendimiento funcional diurno.",
+      "explanation": "Incorrecto: El insomnio produce precisamente una incapacidad para sentirse activo, no una mejora."
+    },
+    {
+      "q": "Elija la opción INCORRECTA sobre el tratamiento para despertar nocturno:",
+      "options": [
+        "Requiere de un fármaco con un inicio y una duración intermedia.",
+        "Es el perfil ideal para evitar que el paciente se desvele a mitad de noche.",
+        "Se debe tratar exclusivamente con dosis altas de estimulantes dopaminérgicos."
+      ],
+      "correct": 2,
+      "hint": "Valora si los estimulantes son coherentes para tratar el insomnio.",
+      "explanation": "Incorrecto: Los estimulantes dopaminérgicos empeorarían el insomnio al disminuir el filtrado sensorial."
+    },
+    {
+      "q": "En el insomnio ____, la dificultad se manifiesta principalmente como despertarse mucho antes de lo planeado por la mañana.",
+      "options": [
+        "Insomnio de tipo terminal",
+        "Insomnio de tipo inicial",
+        "Insomnio de tipo medial"
+      ],
+      "correct": 0,
+      "hint": "Se refiere al despertar precoz.",
+      "explanation": "El insomnio terminal se define como despertarse muy temprano por la mañana, antes de lo planeado, a diferencia del inicial (conciliación) o el mantenimiento."
+    },
+    {
+      "q": "Las ____ se definen como alteraciones que dificultan el inicio o mantenimiento del sueño o producen somnolencia excesiva diurna.",
+      "options": [
+        "Alteraciones de disomnias",
+        "Alteraciones parasomnias",
+        "Alteraciones hipnagógicas"
+      ],
+      "correct": 0,
+      "hint": "Engloba el insomnio y la narcolepsia.",
+      "explanation": "Las disomnias son trastornos caracterizados por problemas en la cantidad, calidad o el horario del sueño."
+    },
+    {
+      "q": "El insomnio secundario puede ser provocado por el uso de sustancias como ____, estimulantes, alcohol o ciertos medicamentos.",
+      "options": [
+        "Sustancias tipo sedantes",
+        "Sustancias tipo placebos",
+        "Sustancias tipo anabolos"
+      ],
+      "correct": 0,
+      "hint": "Incluye fármacos que afectan la arquitectura del sueño.",
+      "explanation": "El texto especifica que el insomnio secundario puede ser provocado por el uso de medicamentos, drogas, alcohol, sedantes o estimulantes."
+    },
+    {
+      "q": "Se considera insomnio a ____ cuando la duración de los síntomas persiste por un periodo superior a los seis meses.",
+      "options": [
+        "Insomnio de largo plazo",
+        "Insomnio de corto plazo",
+        "Insomnio de tipo crónico"
+      ],
+      "correct": 0,
+      "hint": "Es la clasificación temporal más extensa.",
+      "explanation": "El insomnio a largo plazo es aquel que dura más de 6 meses y suele ser persistente e incapacitante."
+    },
+    {
+      "q": "El fenómeno del ____ es una parasomnia común que ocurre interrumpiendo el desarrollo normal del ciclo del sueño profundo.",
+      "options": [
+        "Fenómeno sonambulismo",
+        "Fenómeno narcolepsia",
+        "Fenómeno de hipocretina"
+      ],
+      "correct": 0,
+      "hint": "Implica caminar dormido.",
+      "explanation": "El sonambulismo se clasifica dentro de las parasomnias, que son fenómenos que interrumpen el desarrollo normal del sueño."
+    },
+    {
+      "q": "En la vía córtico-estriado-talámico-cortical, la potenciación de la neurotransmisión de ____ incrementa el filtrado sensorial.",
+      "options": [
+        "Neurotransmisión de GABA",
+        "Neurotransmisión de Dopa",
+        "Neurotransmisión de Hista"
+      ],
+      "correct": 0,
+      "hint": "Se trata de un sistema inhibidor.",
+      "explanation": "El GABA en esta vía actúa potenciando el filtrado de estímulos sensoriales externos."
+    },
+    {
+      "q": "El 'promotor del despertar' se localiza neuroanatómicamente en el interior de los ____ situados en el hipotálamo.",
+      "options": [
+        "Núcleos tuberomamilares",
+        "Núcleos preópticos ven.",
+        "Núcleos supraquiasmáticos"
+      ],
+      "correct": 0,
+      "hint": "Abreviado como NTM.",
+      "explanation": "El promotor del despertar (interruptor ON) se localiza en los núcleos tuberomamilares (NTM)."
+    },
+    {
+      "q": "El 'promotor del sueño' es controlado principalmente por la liberación de ____ desde los núcleos preópticos ventrolaterales.",
+      "options": [
+        "Neurotransmisión de GABA",
+        "Neurotransmisión de Orex",
+        "Neurotransmisión de Hista"
+      ],
+      "correct": 0,
+      "hint": "Inhibe al promotor de la vigilia.",
+      "explanation": "El GABA liberado desde los POVL actúa como el neurotransmisor que apaga el interruptor de la vigilia."
+    },
+    {
+      "q": "Las neuronas del hipotálamo lateral que liberan ____ actúan fundamentalmente como estabilizadoras del estado de vigilia.",
+      "options": [
+        "Orexina e hipocretina",
+        "Histamina y melatonina",
+        "GABA y acetilcolina"
+      ],
+      "correct": 0,
+      "hint": "Su déficit se asocia a la narcolepsia.",
+      "explanation": "La orexina y la hipocretina son liberadas por el hipotálamo lateral para estabilizar el estado de vigilia."
+    },
+    {
+      "q": "El reloj interno del cuerpo, que responde a los ciclos de luz-oscuridad, se localiza en el ____ del hipotálamo.",
+      "options": [
+        "Núcleo supraquiasmático",
+        "Núcleo tuberomamilar",
+        "Núcleo ventrolateral"
+      ],
+      "correct": 0,
+      "hint": "Sensible a la melatonina.",
+      "explanation": "El núcleo supraquiasmático contiene las neuronas sensibles a la melatonina que regulan los ritmos circadianos."
+    },
+    {
+      "q": "Si la dificultad del paciente radica en ____, el fármaco a administrar debe ser de inicio rápido y duración breve.",
+      "options": [
+        "Poder quedarse dormido",
+        "Poder mantener sueño",
+        "Poder despertar tarde"
+      ],
+      "correct": 0,
+      "hint": "Tratamiento para insomnio inicial.",
+      "explanation": "Para el insomnio de conciliación se requieren fármacos de acción rápida para inducir el sueño sin dejar efectos residuales."
+    },
+    {
+      "q": "Los fármacos 'Z' se comportan farmacológicamente como ____ de los receptores GABA A del sistema nervioso central.",
+      "options": [
+        "Moduladores alostéricos",
+        "Antagonistas selectivos",
+        "Agonistas inversos par."
+      ],
+      "correct": 0,
+      "hint": "Potencian la acción del GABA sin ser ligandos directos.",
+      "explanation": "Los hipnóticos no benzodiacepínicos (Z) actúan como moduladores alostéricos positivos del receptor GABA A."
+    },
+    {
+      "q": "El ____ es un hipnótico con una vida media de aproximadamente una hora, ideal para el tratamiento del jet-lag.",
+      "options": [
+        "Fármaco tipo zaleplon",
+        "Fármaco tipo zolpidem",
+        "Fármaco tipo zoplicona"
+      ],
+      "correct": 0,
+      "hint": "Es el de vida más corta de los tres.",
+      "explanation": "El zaleplon tiene una vida media de 1 hora, lo que permite despertar despejado al día siguiente."
+    },
+    {
+      "q": "El zolpidem y el zaleplon actúan selectivamente en los receptores benzodiacepínicos ____ implicados en la sedación.",
+      "options": [
+        "Receptores de omega 1",
+        "Receptores de omega 2",
+        "Receptores de omega 3"
+      ],
+      "correct": 0,
+      "hint": "Su selectividad reduce efectos cognitivos secundarios.",
+      "explanation": "La selectividad por omega1 explica su efecto sedante puro con menos afectación motora o cognitiva (ligada a omega2)."
+    },
+    {
+      "q": "Las benzodiacepinas más utilizadas para el tratamiento del insomnio son aquellas que poseen una ____.",
+      "options": [
+        "Vida media-corta dura",
+        "Vida media-larga dura",
+        "Vida ultra-larga dura"
+      ],
+      "correct": 0,
+      "hint": "Para minimizar la sedación diurna residual.",
+      "explanation": "Se prefieren las BZDs de vida media-corta para evitar la acumulación y somnolencia al día siguiente."
+    },
+    {
+      "q": "El síndrome de abstinencia y el ____ son efectos secundarios comunes por la retirada brusca de benzodiacepinas.",
+      "options": [
+        "Insomnio tipo rebote",
+        "Aumento de fase REM",
+        "Efecto de hipersomnia"
+      ],
+      "correct": 0,
+      "hint": "Vuelve el síntoma original pero agravado.",
+      "explanation": "La retirada brusca de BZDs suele causar insomnio de rebote, además de posible síndrome de abstinencia."
+    },
+    {
+      "q": "La trazodona es un antidepresivo del grupo ASIR que resulta efectivo como hipnótico induciendo el ____.",
+      "options": [
+        "Sueño de ondas lentas",
+        "Sueño de fase tipo REM",
+        "Sueño de fase ligera 1"
+      ],
+      "correct": 0,
+      "hint": "Restaura la arquitectura profunda del sueño.",
+      "explanation": "La trazodona destaca por su capacidad de restaurar el sueño de ondas lentas, lo que mejora la calidad percibida."
+    },
+    {
+      "q": "La acción hipnótica de la trazodona está mediada por el ____ de los receptores 5HT2A, H1 y alfa1.",
+      "options": [
+        "Bloqueo o antagonismo",
+        "Efecto de agonismo",
+        "Efecto modulador pos."
+      ],
+      "correct": 0,
+      "hint": "Bloquea receptores que promueven la vigilia.",
+      "explanation": "El efecto sedante de la trazodona deriva de su antagonismo sobre receptores serotoninérgicos, histaminérgicos y adrenérgicos."
+    },
+    {
+      "q": "Los antagonistas específicos de los receptores H1 pueden causar ____, especialmente en pacientes de edad avanzada.",
+      "options": [
+        "Confusión y memoria",
+        "Agitación e insomnio",
+        "Hambre y polidipsia"
+      ],
+      "correct": 0,
+      "hint": "Debido a su actividad anticolinérgica periférica y central.",
+      "explanation": "Los antihistamínicos de primera generación suelen tener efectos anticolinérgicos que causan confusión y problemas de memoria."
+    },
+    {
+      "q": "La ____ es un antidepresivo agonista de la melatonina que regula los ritmos circadianos sin necesidad de depresión.",
+      "options": [
+        "Molécula agomelatina",
+        "Molécula mirtazapina",
+        "Molécula quetiapina"
+      ],
+      "correct": 0,
+      "hint": "Útil en trastornos por desfase horario.",
+      "explanation": "La agomelatina actúa sobre los receptores de melatonina MT1 y MT2 para resincronizar el reloj biológico."
+    },
+    {
+      "q": "El uso de la ____ como hierba medicinal puede ayudar en casos de insomnio transitorio aunque su dosis es difícil de ajustar.",
+      "options": [
+        "Planta de valeriana",
+        "Planta de hipérico",
+        "Planta de pasiflora"
+      ],
+      "correct": 0,
+      "hint": "Mencionada al final del texto.",
+      "explanation": "La valeriana se cita como una opción fitoterápica para el insomnio leve/transitorio, con el inconveniente de la dosificación."
+    },
+    {
+      "q": "En el tratamiento del insomnio por despertares nocturnos, se recomienda un fármaco de ____.",
+      "options": [
+        "Inicio y dur. interm.",
+        "Inicio rápido y dur.",
+        "Inicio lento y breve"
+      ],
+      "correct": 0,
+      "hint": "Requiere cubrir la mitad de la noche.",
+      "explanation": "El insomnio de mantenimiento requiere fármacos que duren lo suficiente para evitar los despertares a mitad de noche."
+    },
+    {
+      "q": "El interruptor de 'apagado' o promotor del sueño se localiza específicamente en los ____ del hipotálamo.",
+      "options": [
+        "Núcleos POVL hipota.",
+        "Núcleos NTM hipota.",
+        "Núcleos NSO hipota."
+      ],
+      "correct": 0,
+      "hint": "Siglas de Preópticos VentroLaterales.",
+      "explanation": "Los núcleos preópticos ventrolaterales (POVL) son los encargados de inhibir la vigilia para permitir el sueño."
+    },
+    {
+      "q": "El insomnio ____ dura entre 2 y 3 días y suele deberse a situaciones puntuales como el jet-lag.",
+      "options": [
+        "Insomnio transitorio",
+        "Insomnio intermitente",
+        "Insomnio de corto pl."
+      ],
+      "correct": 0,
+      "hint": "No suele precisar tratamiento médico.",
+      "explanation": "El insomnio transitorio es de muy breve duración y ligado a estresores específicos muy limitados en el tiempo."
+    },
+    {
+      "q": "Las parasomnias como el ____ interrumpen el desarrollo normal del sueño.",
+      "options": [
+        "Bruxismo nocturno",
+        "Apnea obstructiva",
+        "Síndrome piernas in."
+      ],
+      "correct": 0,
+      "hint": "Relacionado con apretar los dientes.",
+      "explanation": "El bruxismo se considera una parasomnia, mientras que la apnea y las piernas inquietas son disomnias."
+    },
+    {
+      "q": "La mirtazapina pertenece al grupo de antidepresivos ____ y tiene propiedades sedantes potentes.",
+      "options": [
+        "Grupo de los NASSA",
+        "Grupo de los ISRS",
+        "Grupo de los ASIR"
+      ],
+      "correct": 0,
+      "hint": "Antidepresivo Noradrenérgico y Serotoninérgico Específico.",
+      "explanation": "La mirtazapina (NASSA) es muy sedante a dosis bajas debido a su potente antagonismo H1."
+    },
+    {
+      "q": "Cuando el interruptor sueño-vigilia está activado (estado ON), se produce la descarga de ____ en los núcleos tuberomamilares.",
+      "options": [
+        "Descarga de histamina",
+        "Descarga de glutamato",
+        "Descarga de adenosina"
+      ],
+      "correct": 0,
+      "hint": "Es la amina del despertar.",
+      "explanation": "La vigilia depende de la actividad histaminérgica originada en los NTM."
+    },
+    {
+      "q": "Un hipnótico ideal no debe alterar la ____, permitiendo que el descanso sea reparador.",
+      "options": [
+        "Arquitectura de sueño",
+        "Fase de latencia REM",
+        "Presión homeostática"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la estructura de fases del sueño.",
+      "explanation": "Alterar la arquitectura del sueño (como reducir el sueño profundo) disminuye la calidad del descanso."
+    },
+    {
+      "q": "La potenciación de los agonistas de la neurotransmisión de ____ disminuye el filtrado sensorial en la vía cortical.",
+      "options": [
+        "Neurotransmisión de DA",
+        "Neurotransmisión GABA",
+        "Neurotransmisión 5HT"
+      ],
+      "correct": 0,
+      "hint": "Relacionado con la dopamina.",
+      "explanation": "La dopamina (DA) disminuye el filtrado sensorial, permitiendo que más estímulos lleguen al córtex."
+    },
+    {
+      "q": "El tratamiento farmacológico del insomnio persistente debe ser siempre ____ y evaluado de forma continua.",
+      "options": [
+        "Tratamiento intermit.",
+        "Tratamiento de crónico",
+        "Tratamiento de rescate"
+      ],
+      "correct": 0,
+      "hint": "Para evitar tolerancia y dependencia.",
+      "explanation": "Dada la potencial dependencia de los hipnóticos, su uso en casos persistentes debe ser intermitente."
+    },
+    {
+      "q": "El ____ fue el primer hipnótico selectivo de receptores omega1 que sustituyó a las benzodiacepinas.",
+      "options": [
+        "Compuesto de zolpidem",
+        "Compuesto de zoplicon",
+        "Compuesto de quetia."
+      ],
+      "correct": 0,
+      "hint": "Fármaco Z muy común.",
+      "explanation": "El zolpidem revolucionó el tratamiento del insomnio por su selectividad y perfil de seguridad superior a las BZDs."
+    },
+    {
+      "q": "Los antidepresivos ____ se usan para el insomnio debido a sus efectos anticolinérgicos y antihistamínicos.",
+      "options": [
+        "Antidepresivos tipo ATC",
+        "Antidepresivos tipo ISRS",
+        "Antidepresivos tipo IMAO"
+      ],
+      "correct": 0,
+      "hint": "Los clásicos tricíclicos.",
+      "explanation": "Los antidepresivos tricíclicos (ATC) son potentes sedantes por su bloqueo multirreceptor."
+    },
+    {
+      "q": "El insomnio secundario puede deberse a trastornos psiquiátricos como la ____ o la ansiedad.",
+      "options": [
+        "Trastorno de depresión",
+        "Trastorno de la pica",
+        "Trastorno de la somat."
+      ],
+      "correct": 0,
+      "hint": "Trastorno del estado de ánimo muy frecuente.",
+      "explanation": "La depresión es una causa mayor de insomnio secundario."
+    },
+    {
+      "q": "A medida que avanza el día, el impulso circadiano de vigilia disminuye y el impulso ____ aumenta.",
+      "options": [
+        "Impulso homeostático",
+        "Impulso de hipocretina",
+        "Impulso de dopamina"
+      ],
+      "correct": 0,
+      "hint": "Relacionado con la acumulación de necesidad de sueño.",
+      "explanation": "La presión homeostática de sueño aumenta proporcionalmente al tiempo que llevamos despiertos."
+    },
+    {
+      "q": "El zaleplon alcanza su concentración máxima en ____, siendo de inicio muy rápido.",
+      "options": [
+        "Tiempo de una hora",
+        "Tiempo de tres horas",
+        "Tiempo de seis horas"
+      ],
+      "correct": 0,
+      "hint": "Ideal para cuando hay poco tiempo para dormir.",
+      "explanation": "La farmacocinética del zaleplon destaca por su absorción y eliminación ultra-rápida."
+    },
+    {
+      "q": "Los fármacos que actúan sobre los receptores melatonérgicos son buenos ____ para el inicio del sueño.",
+      "options": [
+        "Inductores eficaces",
+        "Bloqueadores eficaces",
+        "Inhibidores eficaces"
+      ],
+      "correct": 0,
+      "hint": "Ayudan a 'entrar' en el sueño.",
+      "explanation": "Los agonistas de la melatonina facilitan la transición a la fase de sueño."
+    },
+    {
+      "q": "El insomnio de ____ se caracteriza por la dificultad para conciliar el sueño al meterse en la cama.",
+      "options": [
+        "Insomnio de tipo inicial",
+        "Insomnio de tipo medial",
+        "Insomnio de tipo tardío"
+      ],
+      "correct": 0,
+      "hint": "El problema está al principio.",
+      "explanation": "Es el tipo de insomnio más común vinculado a la ansiedad o malos hábitos de higiene del sueño."
+    },
+    {
+      "q": "La somnolencia diurna excesiva puede explicarse por una desconexión del ____ durante el día.",
+      "options": [
+        "Interruptor sueño-vig.",
+        "Córtex de prefrontal",
+        "Sistema de dopamina"
+      ],
+      "correct": 0,
+      "hint": "Modelo de interruptor hipotalámico.",
+      "explanation": "Si el interruptor se desconecta cuando debería estar en ON, aparece la hipersomnia o somnolencia excesiva."
+    },
+    {
+      "q": "Los receptores ____ están situados en áreas cerebrales que regulan la cognición, memoria y función motora.",
+      "options": [
+        "Receptores de omega 2",
+        "Receptores de omega 1",
+        "Receptores de hista H2"
+      ],
+      "correct": 0,
+      "hint": "Las BZDs clásicas los bloquean, los Z selectivos no.",
+      "explanation": "Los receptores omega2 median los efectos secundarios indeseados de los hipnóticos no selectivos."
+    },
+    {
+      "q": "El tratamiento farmacológico del insomnio a ____ se centra en solucionar síntomas para el funcionamiento normal.",
+      "options": [
+        "Insomnio a corto plazo",
+        "Insomnio a largo plazo",
+        "Insomnio de transitorio"
+      ],
+      "correct": 0,
+      "hint": "Dura entre 2 y 3 semanas.",
+      "explanation": "En el insomnio de corto plazo (2-3 semanas), se interviene para evitar que se cronifique o afecte la vida diaria."
+    },
+    {
+      "q": "¿Qué síntomas son característicos del insomnio?",
+      "options": [
+        "Baja concentración diurna",
+        "Somnolencia durante día",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Afecta tanto a la noche como al día.",
+      "explanation": "El insomnio produce tanto fatiga/somnolencia diurna como dificultades cognitivas por falta de descanso."
+    },
+    {
+      "q": "Son causas del insomnio primario de tipo fisiopatológico:",
+      "options": [
+        "Desajuste ritmo circad.",
+        "Malos hábitos de sueño",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "No hay una enfermedad médica base.",
+      "explanation": "El insomnio primario incluye causas conductuales y de desregulación biológica del propio ciclo del sueño."
+    },
+    {
+      "q": "El insomnio secundario puede tener origen en trastornos médicos de tipo:",
+      "options": [
+        "Trastornos endocrinos",
+        "Trastornos de tipo renal",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Condiciones orgánicas que impiden dormir.",
+      "explanation": "El dolor crónico, problemas renales y desajustes endocrinos son causas médicas frecuentes de insomnio."
+    },
+    {
+      "q": "¿Cuáles son ejemplos típicos de parasomnias?",
+      "options": [
+        "Terror nocturno y enur.",
+        "Bruxismo y sonambulismo",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Eventos extraños durante el sueño.",
+      "explanation": "Las parasomnias son conductas intrusivas durante el sueño como hablar, caminar, gritar o mojar la cama."
+    },
+    {
+      "q": "El interruptor sueño-vigilia se encuentra regulado por:",
+      "options": [
+        "GABA desde los POVL",
+        "Histamina desde los NTM",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Doble control químico.",
+      "explanation": "El balance entre GABA (inhibidor) e Histamina (activador) controla el estado de conciencia según el modelo hipotalámico."
+    },
+    {
+      "q": "¿Qué funciones cumplen la orexina y la hipocretina?",
+      "options": [
+        "Estabilizar la vigilia",
+        "Liberadas por hipot. lat.",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Cruciales para mantenerse despierto.",
+      "explanation": "Estas neuronas estabilizan el interruptor en posición de encendido para evitar ataques de sueño."
+    },
+    {
+      "q": "Un hipnótico considerado 'ideal' debería cumplir:",
+      "options": [
+        "Inicio de acción rápido",
+        "Seguridad ante sobredosis",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Criterios de seguridad y eficacia.",
+      "explanation": "El fármaco ideal debe ser rápido, seguro y no dejar resaca ni alterar las fases del sueño."
+    },
+    {
+      "q": "Ventajas de los fármacos 'Z' frente a las BZDs clásicas:",
+      "options": [
+        "Lugar de unión diferente",
+        "Menor grado de tolerancia",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Mejoran el perfil de efectos adversos.",
+      "explanation": "Los fármacos Z tienen un perfil más limpio al actuar selectivamente y tener menor potencial adictivo."
+    },
+    {
+      "q": "La zopiclona presenta las siguientes características farmacocinéticas:",
+      "options": [
+        "Vida media de 3.5 a 6 h",
+        "Pico máximo a los 90 min",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es la más duradera de los fármacos Z.",
+      "explanation": "La zopiclona tiene una duración intermedia dentro de su grupo, útil para mantener el sueño algo más que el zaleplon."
+    },
+    {
+      "q": "Efectos secundarios a largo plazo del uso de benzodiacepinas:",
+      "options": [
+        "Desarrollo de tolerancia",
+        "Síndrome de abstinencia",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Relacionados con la cronicidad.",
+      "explanation": "El uso crónico de BZDs conlleva riesgos significativos de adaptación fisiológica y dificultad para el abandono."
+    },
+    {
+      "q": "Los antidepresivos sedantes son útiles en el insomnio porque:",
+      "options": [
+        "Tienen acción antihistam.",
+        "Alivian la depresión base",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Doble beneficio clínico.",
+      "explanation": "Aprovechan efectos secundarios (sedación) y tratan la patología psiquiátrica subyacente si existe."
+    },
+    {
+      "q": "La trazodona actúa como hipnótico mediante:",
+      "options": [
+        "Antagonismo de H1",
+        "Antagonismo de 5HT2A",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Mecanismo multirreceptor.",
+      "explanation": "Su eficacia se basa en bloquear receptores que normalmente impiden el inicio del sueño profundo."
+    },
+    {
+      "q": "Los moduladores del sueño sin receta suelen actuar como:",
+      "options": [
+        "Compuesto anticolinérg.",
+        "Compuesto antihistamín.",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Fármacos de venta libre clásicos.",
+      "explanation": "La mayoría de hipnóticos OTC (Over The Counter) son antihistamínicos con propiedades anticolinérgicas."
+    },
+    {
+      "q": "Posibles efectos secundarios de los antihistamínicos H1:",
+      "options": [
+        "Estreñimiento y visión",
+        "Sequedad de boca y confu.",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Sintomatología anticolinérgica.",
+      "explanation": "Al ser poco selectivos, afectan al sistema muscarínico provocando los efectos descritos."
+    },
+    {
+      "q": "La agomelatina se caracteriza por ser:",
+      "options": [
+        "Fármaco antidepresivo",
+        "Agonista melatonérgico",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Doble mecanismo de acción.",
+      "explanation": "Es un fármaco único que combina el tratamiento del ánimo con la regulación directa de los ritmos circadianos."
+    },
+    {
+      "q": "¿Qué criterios se usan para clasificar el insomnio?",
+      "options": [
+        "Criterio de la causa",
+        "Criterio de la duración",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Formas de diagnosticar el problema.",
+      "explanation": "Se puede clasificar por qué ocurre (causa) y por cuánto tiempo dura (duración)."
+    },
+    {
+      "q": "Para evitar los efectos secundarios de las BZDs se recomienda:",
+      "options": [
+        "Retirada de tipo gradual",
+        "Uso de forma intermitente",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Protocolos de seguridad clínica.",
+      "explanation": "La administración prudente (intermitente) y el cese progresivo minimizan riesgos de rebote y abstinencia."
+    },
+    {
+      "q": "¿Qué disomnias se mencionan específicamente en el texto?",
+      "options": [
+        "Síndrome piernas inq.",
+        "Apnea y narcolepsia",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Incluye trastornos del ritmo circadiano.",
+      "explanation": "El texto cita el insomnio, hipersomnia, narcolepsia, apnea, piernas inquietas y trastornos circadianos."
+    },
+    {
+      "q": "En el tratamiento del insomnio transitorio:",
+      "options": [
+        "Se usa BZD de larga vida",
+        "Se precisa terapia electro.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Suele resolverse solo.",
+      "explanation": "El texto indica que el insomnio transitorio NO suele precisar tratamiento médico al desaparecer el factor estresante."
+    },
+    {
+      "q": "Sobre el 'promotor de la vigilia', es falso que:",
+      "options": [
+        "Se ubique en los POVL",
+        "Use GABA para activar",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Ambas afirmaciones son erróneas.",
+      "explanation": "El promotor de la vigilia está en los NTM (no POVL) y usa Histamina (no GABA)."
+    },
+    {
+      "q": "Los fármacos 'Z' se caracterizan por:",
+      "options": [
+        "Tener vidas medias largas",
+        "Ser agonistas inversos",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Son de vida corta y moduladores positivos.",
+      "explanation": "Los fármacos Z son de vida corta y actúan como moduladores alostéricos positivos de GABA A."
+    },
+    {
+      "q": "El zolpidem se diferencia del zaleplon en que:",
+      "options": [
+        "No actúa en receptores O1",
+        "Tiene vida media de 10 h",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Ambos son selectivos O1 y de vida corta.",
+      "explanation": "Ambos son selectivos Omega1 y tienen vidas medias cortas (Zolpidem 1.5-3h, Zaleplon 1h)."
+    },
+    {
+      "q": "Las benzodiacepinas hipnóticas:",
+      "options": [
+        "Son fármacos de 1ª línea",
+        "Mejoran apnea del sueño",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Son de 2ª línea y pueden empeorar la apnea.",
+      "explanation": "Se consideran segunda línea tras los Z y pueden agravar problemas respiratorios durante el sueño."
+    },
+    {
+      "q": "La mirtazapina se utiliza principalmente para:",
+      "options": [
+        "Causar vigilia extrema",
+        "Bloquear receptores GABA",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es un sedante-hipnótico ocasional.",
+      "explanation": "La mirtazapina es un antidepresivo NASSA con potentes efectos sedantes, no estimulantes."
+    },
+    {
+      "q": "Sobre la valeriana, el texto afirma que:",
+      "options": [
+        "Es fácil ajustar su dosis",
+        "Es de primera línea médica",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Dosis difícil y uso en casos leves.",
+      "explanation": "El texto advierte explícitamente que es difícil ajustar la dosis de valeriana."
+    },
+    {
+      "q": "Los receptores omega 1 de las benzodiacepinas:",
+      "options": [
+        "Regulan solo la memoria",
+        "Están en el riñón e hígado",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Están implicados en la sedación.",
+      "explanation": "Los receptores omega1 se localizan en el SNC y están específicamente implicados en la mediación de la sedación."
+    },
+    {
+      "q": "Un paciente con insomnio por despertares nocturnos debe recibir:",
+      "options": [
+        "Fármaco de acción ultra-r.",
+        "Fármaco de acción ultra-l.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Requiere acción intermedia.",
+      "explanation": "Para despertares nocturnos se indica un fármaco de inicio y duración intermedia."
+    },
+    {
+      "q": "En la vía córtico-estriado-talámico-cortical:",
+      "options": [
+        "El GABA disminuye filtrado",
+        "La DA incrementa filtrado",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es al revés.",
+      "explanation": "El GABA incrementa el filtrado (inhibe) y la DA lo disminuye (permite paso de estímulos)."
+    },
+    {
+      "q": "El insomnio de corto plazo se define por durar:",
+      "options": [
+        "Menos de un día entero",
+        "Más de un año completo",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Dura de 2 a 3 semanas.",
+      "explanation": "El insomnio a corto plazo tiene una ventana temporal de 2 a 3 semanas."
+    },
+    {
+      "q": "Los núcleos tuberomamilares del hipotálamo:",
+      "options": [
+        "Son el promotor del sueño",
+        "Liberan GABA en la noche",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Son promotores del despertar.",
+      "explanation": "Los NTM promueven la vigilia mediante la descarga de histamina."
+    },
+    {
+      "q": "El fármaco ideal para el sueño debe:",
+      "options": [
+        "Causar sedación diurna",
+        "Alterar fases tipo REM",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "No debe tener efectos residuales ni alterar arquitectura.",
+      "explanation": "El ideal no debe dejar resaca (sedación residual) ni distorsionar la arquitectura natural del sueño."
+    },
+    {
+      "q": "La trazodona a dosis bajas:",
+      "options": [
+        "Solo sirve para psicosis",
+        "Reduce el sueño profundo",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Restaura el sueño de ondas lentas.",
+      "explanation": "A dosis bajas, la trazodona es un excelente hipnótico que restaura las ondas lentas."
+    },
+    {
+      "q": "Los antagonistas H1 para el sueño:",
+      "options": [
+        "Mejoran la memoria siempre",
+        "Son eficaces en ancianos",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Pueden causar confusión en mayores.",
+      "explanation": "Suelen ser problemáticos en ancianos por sus efectos secundarios anticolinérgicos centrales."
+    },
+    {
+      "q": "El sonambulismo y el terror nocturno:",
+      "options": [
+        "Son tipos de disomnias",
+        "Impiden iniciar el sueño",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Son parasomnias.",
+      "explanation": "Se clasifican como parasomnias, no disomnias, y ocurren durante el sueño, no antes."
+    },
+    {
+      "q": "La agomelatina se utiliza para:",
+      "options": [
+        "Bloquear la melatonina",
+        "Aumentar histamina en NTM",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es un agonista de la melatonina.",
+      "explanation": "Su función es actuar como agonista de receptores MT1/MT2 para regular ciclos circadianos."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "¿Cómo se diferencian fisiopatológicamente el insomnio primario del secundario según el texto?",
+      "model": "El insomnio primario se asocia a una fisiopatología del sueño subyacente relacionada con malos hábitos, desajustes en los ritmos circadianos, parasomnias o síndrome de piernas inquietas. Por el contrario, el insomnio secundario es provocado por factores externos al sistema de sueño, como trastornos médicos (dolor, problemas renales), psiquiátricos (ansiedad, depresión) o el consumo de sustancias (medicamentos, alcohol, estimulantes).",
+      "keywords": [
+        "fisiopatología",
+        "primario",
+        "secundario",
+        "ritmos circadianos",
+        "causa médica"
+      ]
+    },
+    {
+      "q": "Explique el funcionamiento neuroquímico del 'interruptor' sueño-vigilia localizado en el hipotálamo.",
+      "model": "Funciona de manera discontinua mediante dos núcleos: los núcleos tuberomamilares (NTM), que actúan como promotores del despertar mediante la liberación de histamina, y los núcleos preópticos ventrolaterales (POVL), que actúan como promotores del sueño liberando GABA. Cuando el interruptor está activado, el NTM descarga histamina; al aumentar el impulso homeostático del sueño, el POVL se dispara liberando GABA sobre el NTM para inhibir la vigilia.",
+      "keywords": [
+        "NTM",
+        "POVL",
+        "histamina",
+        "GABA",
+        "interruptor"
+      ]
+    },
+    {
+      "q": "Analice el papel de la vía córtico-estriado-talámico-cortical en el procesamiento de estímulos durante el sueño.",
+      "model": "Esta vía forma un bucle encargado de filtrar los estímulos sensoriales externos. La potenciación de la neurotransmisión de GABA en esta vía incrementa el filtrado sensorial (protegiendo el sueño), mientras que los agonistas de la dopamina (DA) disminuyen dicho filtrado, facilitando el despertar o la respuesta a estímulos.",
+      "keywords": [
+        "GABA",
+        "dopamina",
+        "filtrado sensorial",
+        "bucle"
+      ]
+    },
+    {
+      "q": "Describa la clasificación del insomnio según su duración y las implicaciones de tratamiento para cada nivel.",
+      "model": "1. Transitorio (2-3 días): por estrés puntual o jet-lag, no suele precisar tratamiento. 2. A corto plazo (2-3 semanas): por situaciones de estrés prolongado; se centra en tratar síntomas para recuperar el funcionamiento. 3. A largo plazo (más de 6 meses): persistente e incapacitante, suele ser secundario a otros trastornos y requiere intervención profunda.",
+      "keywords": [
+        "transitorio",
+        "corto plazo",
+        "largo plazo",
+        "duración"
+      ]
+    },
+    {
+      "q": "Compare los mecanismos y funciones de la orexina/hipocretina frente a la melatonina en la regulación del sueño.",
+      "model": "Las neuronas del hipotálamo lateral liberan orexina e hipocretina, que actúan como estabilizadoras del estado de vigilia. Por otro lado, las neuronas del núcleo supraquiasmático responden a la melatonina y a los ciclos luz-oscuridad, funcionando como el reloj interno del cuerpo que regula los ritmos circadianos.",
+      "keywords": [
+        "orexina",
+        "hipocretina",
+        "melatonina",
+        "núcleo supraquiasmático",
+        "estabilidad"
+      ]
+    },
+    {
+      "q": "Argumente por qué el tratamiento del insomnio debe priorizar la causa subyacente según la perspectiva clásica.",
+      "model": "Se propone que el insomnio es a menudo un síntoma de otra afección. Tratar directamente el insomnio sin abordar la causa (dolor, depresión, apnea) puede ser ineficaz a largo plazo o enmascarar problemas graves. Además, el uso crónico de hipnóticos puede generar dependencia, por lo que deben usarse de forma intermitente y subordinada al tratamiento del trastorno origen.",
+      "keywords": [
+        "causa subyacente",
+        "síntoma",
+        "dependencia",
+        "tratamiento intermitente"
+      ]
+    },
+    {
+      "q": "Determine qué características debe reunir el fármaco hipnótico 'ideal' según el texto.",
+      "model": "El hipnótico ideal debe: (i) no alterar la arquitectura natural del sueño, (ii) no empeorar afecciones como la apnea, (iii) tener un inicio de acción rápido, (iv) carecer de efectos residuales al día siguiente (resaca o sedación diurna) y (v) ser seguro en caso de sobredosis.",
+      "keywords": [
+        "arquitectura del sueño",
+        "inicio rápido",
+        "efectos residuales",
+        "seguridad"
+      ]
+    },
+    {
+      "q": "Explique la relación entre la pauta del sueño del paciente (tipo de insomnio) y la elección de la vida media del fármaco.",
+      "model": "Si hay dificultad para conciliar el sueño (insomnio inicial), se requiere un fármaco de inicio rápido y duración breve. Si hay despertares nocturnos (insomnio de mantenimiento), se prefiere inicio y duración intermedia. Si coexisten ambos, el fármaco debe ser de inicio rápido y duración intermedia para cubrir toda la noche sin sedación diurna.",
+      "keywords": [
+        "vida media",
+        "insomnio inicial",
+        "despertares",
+        "duración breve"
+      ]
+    },
+    {
+      "q": "¿Por qué los fármacos 'Z' se consideran de primera línea frente a las Benzodiacepinas?",
+      "model": "Los fármacos 'Z' presentan ventajas significativas: se unen a lugares diferentes de los receptores GABA A (algunos como agonistas parciales), no producen altos niveles de tolerancia ni dependencia, y tienen menos efectos de discontinuación. Además, algunos son selectivos del receptor omega-1, reduciendo efectos secundarios motores y cognitivos.",
+      "keywords": [
+        "fármacos Z",
+        "tolerancia",
+        "dependencia",
+        "selectividad omega-1"
+      ]
+    },
+    {
+      "q": "Analice las diferencias clínicas entre Zaleplon, Zolpidem y Zopiclona en base a su farmacocinética.",
+      "model": "El Zaleplon tiene el inicio más rápido (1h) y vida media más breve (1h), ideal para iniciar el sueño y evitar efectos residuales. El Zolpidem tiene una vida media ligeramente superior (1.5-3h) y fue el primero en sustituir a las BZDs. La Zopiclona tiene la vida media más larga del grupo (3.5-6h), lo que permite una mayor cobertura para el mantenimiento del sueño.",
+      "keywords": [
+        "Zaleplon",
+        "Zolpidem",
+        "Zopiclona",
+        "vida media"
+      ]
+    },
+    {
+      "q": "Explique la base neurobiológica de la menor incidencia de efectos secundarios cognitivos en el Zaleplon y Zolpidem.",
+      "model": "Ambos actúan de forma selectiva sobre los receptores benzodiacepínicos omega-1, que están implicados principalmente en la sedación. Al no actuar sobre los receptores omega-2 (localizados en áreas que regulan la cognición, la memoria y el funcionamiento motor), se minimizan las interferencias con estas funciones en comparación con fármacos no selectivos.",
+      "keywords": [
+        "omega-1",
+        "omega-2",
+        "selectividad",
+        "cognición"
+      ]
+    },
+    {
+      "q": "Describa los efectos secundarios a corto y largo plazo del uso de Benzodiacepinas para el insomnio.",
+      "model": "A corto plazo producen sedación diurna, interferencia laboral y trastornos de memoria (amnesia anterógrada). A largo plazo, los riesgos principales son la tolerancia (necesidad de más dosis), el síndrome de abstinencia ante una retirada brusca y la aparición de insomnio de rebote.",
+      "keywords": [
+        "sedación diurna",
+        "memoria",
+        "tolerancia",
+        "insomnio de rebote"
+      ]
+    },
+    {
+      "q": "¿Bajo qué circunstancias clínicas se recomienda el uso de antidepresivos sedantes para tratar trastornos del sueño?",
+      "model": "Se recomiendan cuando el insomnio es síntoma de una depresión subyacente, aprovechando sus efectos secundarios (sedación) como beneficio terapéutico. También se usan cuando se busca evitar la dependencia de las BZDs o cuando el paciente ya está en tratamiento con ISRS que pueden interferir con el sueño (caso de la trazodona).",
+      "keywords": [
+        "antidepresivos",
+        "ISRS",
+        "depresión",
+        "trazodona"
+      ]
+    },
+    {
+      "q": "Explique el mecanismo de acción multireceptorial de la Trazodona como hipnótico.",
+      "model": "La trazodona (ASIR) actúa como hipnótico a dosis bajas induciendo y restaurando el sueño de ondas lentas. Su acción está mediada por el antagonismo de los receptores 5HT2A, H1 (histamina) y alfa-1 (adrenérgicos), lo que contribuye a su potente perfil sedante.",
+      "keywords": [
+        "Trazodona",
+        "5HT2A",
+        "H1",
+        "alfa-1",
+        "ondas lentas"
+      ]
+    },
+    {
+      "q": "Identifique las ventajas y riesgos del uso de antagonistas de los receptores H1 como inductores del sueño.",
+      "model": "La ventaja es que son sedantes efectivos y a menudo no requieren receta. Sin embargo, su principal riesgo son los efectos anticolinérgicos: sequedad de boca, visión borrosa, estreñimiento, confusión y problemas de memoria, siendo especialmente peligrosos en pacientes de edad avanzada.",
+      "keywords": [
+        "H1",
+        "anticolinérgicos",
+        "confusión",
+        "ancianos"
+      ]
+    },
+    {
+      "q": "¿Cómo actúa la Agomelatina y en qué perfil de paciente es especialmente útil?",
+      "model": "Es un antidepresivo agonista de los receptores de melatonina que actúa regulando los ritmos circadianos. Es especialmente útil en personas con trastornos del sueño provocados por desfase de horario (jet-lag o turnos de trabajo) o cuando el insomnio está ligado a una desregulación del ciclo luz-oscuridad, incluso sin depresión.",
+      "keywords": [
+        "Agomelatina",
+        "ritmos circadianos",
+        "desfase horario"
+      ]
+    },
+    {
+      "q": "Defina el concepto de 'Disomnia' y cite tres ejemplos mencionados en el texto.",
+      "model": "Las disomnias son alteraciones que dificultan el inicio o mantenimiento del sueño o que producen somnolencia excesiva. Ejemplos incluyen el insomnio, la narcolepsia, la apnea del sueño, el síndrome de piernas inquietas y la hipersomnia.",
+      "keywords": [
+        "Disomnia",
+        "insomnio",
+        "narcolepsia",
+        "apnea"
+      ]
+    },
+    {
+      "q": "Diferencie entre los conceptos de insomnio inicial, insomnio de mantenimiento e insomnio terminal.",
+      "model": "El insomnio inicial es la dificultad para conciliar el sueño al acostarse. El insomnio de mantenimiento consiste en despertarse frecuentemente durante la noche. El insomnio terminal es despertarse muy temprano por la mañana antes de lo planeado y no poder volver a dormir.",
+      "keywords": [
+        "inicial",
+        "mantenimiento",
+        "terminal",
+        "conciliación"
+      ]
+    },
+    {
+      "q": "¿Qué son las 'Parasomnias' y cuáles son los tipos más comunes descritos?",
+      "model": "Son fenómenos anormales que ocurren durante el sueño interrumpiendo su desarrollo normal. Los tipos más comunes son el sonambulismo, los terrores nocturnos, el bruxismo nocturno (rechinar de dientes) y la enuresis nocturna (mojar la cama).",
+      "keywords": [
+        "Parasomnias",
+        "sonambulismo",
+        "bruxismo",
+        "enuresis"
+      ]
+    },
+    {
+      "q": "Explique el papel de la luz y la oscuridad en la regulación neuroquímica del sueño a través del hipotálamo.",
+      "model": "La luz y la oscuridad son detectadas y procesadas por las neuronas sensibles a la melatonina en el núcleo supraquiasmático del hipotálamo. Este núcleo actúa como el reloj interno, coordinando la liberación de melatonina y ajustando el ciclo sueño-vigilia con el entorno ambiental.",
+      "keywords": [
+        "luz-oscuridad",
+        "núcleo supraquiasmático",
+        "reloj interno"
+      ]
+    },
+    {
+      "q": "¿Qué papel juega el GABA en los POVL durante el proceso de quedarse dormido?",
+      "model": "El GABA actúa como el principal neurotransmisor inhibidor del 'promotor del sueño'. Cuando el impulso homeostático es alto, el POVL libera GABA sobre los núcleos tuberomamilares (NTM) para inhibir la liberación de histamina, apagando así el sistema de vigilia y permitiendo el inicio del sueño.",
+      "keywords": [
+        "GABA",
+        "POVL",
+        "inhibición",
+        "NTM"
+      ]
+    },
+    {
+      "q": "Analice las consecuencias diurnas del insomnio crónico mencionadas en el tema.",
+      "model": "La consecuencia más frecuente es la somnolencia diurna excesiva. Otras incluyen la baja concentración, incapacidad para sentirse activo durante el día y el impacto negativo en el funcionamiento laboral y social de la persona.",
+      "keywords": [
+        "somnolencia diurna",
+        "concentración",
+        "funcionamiento"
+      ]
+    },
+    {
+      "q": "Relacione el concepto de 'impulso homeostático' con la activación del promotor del sueño.",
+      "model": "Conforme avanza el día, el impulso circadiano de vigilia disminuye y el impulso homeostático del sueño (la 'necesidad' acumulada de dormir) aumenta. Al alcanzar un punto extremo, este impulso dispara el promotor del sueño en los POVL, que libera GABA para apagar el sistema de vigilia.",
+      "keywords": [
+        "homeostático",
+        "POVL",
+        "acumulación",
+        "GABA"
+      ]
+    },
+    {
+      "q": "¿Por qué la Mirtazapina se clasifica como un NASSA y cómo ayuda en el sueño?",
+      "model": "La Mirtazapina es un antidepresivo noradrenérgico y serotoninérgico específico (NASSA). Posee potentes propiedades sedante-hipnóticas (debido a su acción antihistamínica) que se utilizan ocasionalmente para mejorar la arquitectura del sueño en pacientes deprimidos.",
+      "keywords": [
+        "NASSA",
+        "sedante",
+        "Mirtazapina",
+        "antihistamínico"
+      ]
+    },
+    {
+      "q": "Explique por qué se recomienda el tratamiento farmacológico intermitente en el insomnio persistente.",
+      "model": "Se recomienda para evitar el desarrollo de tolerancia y dependencia física o psicológica a los sedantes-hipnóticos. La evaluación continua permite verificar si la causa subyacente ha sido resuelta y previene el síndrome de abstinencia o el insomnio de rebote.",
+      "keywords": [
+        "intermitente",
+        "tolerancia",
+        "dependencia",
+        "evaluación"
+      ]
+    },
+    {
+      "q": "Compare el uso de la valeriana frente a los hipnóticos de síntesis según el texto.",
+      "model": "La valeriana es una hierba medicinal que puede ayudar en casos de insomnio transitorio leve. Sin embargo, a diferencia de los hipnóticos de síntesis (como los fármacos Z o BZDs), es muy difícil ajustar y estandarizar la dosis de administración de sus principios activos.",
+      "keywords": [
+        "valeriana",
+        "insomnio transitorio",
+        "dosis",
+        "ajuste"
+      ]
+    },
+    {
+      "q": "¿Cuál es la función de la neurotransmisión de Dopamina (DA) en el tronco cerebral respecto a la vigilia?",
+      "model": "La dopamina actúa como un regulador en los sistemas ascendentes que llegan del tronco cerebral. En la vía córtico-estriado-talámico-cortical, los agonistas de la DA disminuyen el filtrado sensorial, lo que aumenta la alerta y disminuye la profundidad del sueño.",
+      "keywords": [
+        "Dopamina",
+        "tronco cerebral",
+        "alerta",
+        "filtrado"
+      ]
+    },
+    {
+      "q": "Describa la importancia de que un hipnótico no altere la 'arquitectura del sueño'.",
+      "model": "La arquitectura del sueño se refiere a la alternancia de las distintas fases (REM, sueño profundo, etc.). Si un fármaco la altera, el sueño puede no ser reparador a pesar de durar las horas suficientes, lo que resulta en cansancio o déficit cognitivo al día siguiente.",
+      "keywords": [
+        "arquitectura del sueño",
+        "reparador",
+        "fases del sueño"
+      ]
+    },
+    {
+      "q": "Explique el concepto de 'insomnio de rebote' relacionado con la retirada de Benzodiacepinas.",
+      "model": "Es un efecto secundario a largo plazo que ocurre tras la retirada brusca del fármaco, donde los síntomas de insomnio reaparecen con una intensidad mayor a la original. Para evitarlo, se debe realizar una retirada gradual y utilizar el fármaco de forma intermitente.",
+      "keywords": [
+        "rebote",
+        "retirada gradual",
+        "intensidad",
+        "BZDs"
+      ]
+    },
+    {
+      "q": "¿Qué relación existe entre los receptores 5HT2A y la Trazodona en el sueño?",
+      "model": "El antagonismo de los receptores 5HT2A por parte de la trazodona es clave para su efecto hipnótico, ya que este bloqueo ayuda a inducir y restaurar el sueño de ondas lentas (fase profunda del sueño), mejorando la calidad del descanso.",
+      "keywords": [
+        "5HT2A",
+        "ondas lentas",
+        "calidad",
+        "Trazodona"
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Clasificación de Trastornos",
+      "q": "¿Qué caracteriza a las disomnias dentro de los trastornos del sueño?",
+      "a": "Son alteraciones que dificultan el inicio o mantenimiento del sueño, o que producen una somnolencia excesiva durante el día."
+    },
+    {
+      "cat": "Insomnio",
+      "q": "¿Cómo se define el insomnio inicial en el contexto de las dificultades del sueño?",
+      "a": "Se manifiesta específicamente como una marcada dificultad para conciliar el sueño al comienzo de la noche."
+    },
+    {
+      "cat": "Insomnio",
+      "q": "¿En qué consiste el insomnio terminal según la descripción del texto?",
+      "a": "Es el despertar muy temprano por la mañana, antes de lo planeado, sin poder volver a dormir."
+    },
+    {
+      "cat": "Insomnio",
+      "q": "¿Cuál es la consecuencia directa y más frecuente del padecimiento de insomnio?",
+      "a": "La somnolencia diurna, acompañada de baja concentración e incapacidad para mantenerse activo durante el día."
+    },
+    {
+      "cat": "Clasificación de Trastornos",
+      "q": "¿Qué diferencia al insomnio primario del insomnio secundario?",
+      "a": "El primario tiene una fisiopatología del sueño subyacente (hábitos, ritmos), mientras que el secundario es causado por otros trastornos médicos, psiquiátricos o sustancias."
+    },
+    {
+      "cat": "Insomnio",
+      "q": "¿Bajo qué condiciones se clasifica un insomnio como 'transitorio'?",
+      "a": "Cuando su duración es de solo 2 o 3 días y está motivado por circunstancias puntuales como el jet-lag o un estrés específico."
+    },
+    {
+      "cat": "Insomnio",
+      "q": "¿Cuál es el criterio temporal para diagnosticar un insomnio a corto plazo?",
+      "a": "Cuando la dificultad para dormir persiste durante un periodo de 2 a 3 semanas, generalmente ligado a situaciones de estrés vital."
+    },
+    {
+      "cat": "Insomnio",
+      "q": "¿Qué características definen al insomnio a largo plazo según la cronología del síntoma?",
+      "a": "Es un insomnio persistente e incapacitante que dura más de 6 meses y suele ser secundario a otros trastornos."
+    },
+    {
+      "cat": "Parasomnias",
+      "q": "¿Qué define a las parasomnias en comparación con las disomnias?",
+      "a": "Son fenómenos intrusivos que ocurren durante el sueño e interrumpen su desarrollo normal, en lugar de afectar solo al inicio o duración."
+    },
+    {
+      "cat": "Parasomnias",
+      "q": "Mencione tres ejemplos comunes de parasomnias citadas en el manual.",
+      "a": "El sonambulismo, los terrores nocturnos y el bruxismo nocturno (también la enuresis)."
+    },
+    {
+      "cat": "Neuroquímica",
+      "q": "¿Cuál es la función principal de la vía córtico-estriado-talámico-cortical en el sueño?",
+      "a": "Actúa como un bucle encargado del filtrado de los estímulos sensoriales externos que llegan al cerebro."
+    },
+    {
+      "cat": "Neuroquímica",
+      "q": "¿Cómo afecta la potenciación del GABA a la vía córtico-estriado-talámico-cortical?",
+      "a": "Incrementa el filtrado sensorial, facilitando el aislamiento del entorno necesario para el sueño."
+    },
+    {
+      "cat": "Neuroquímica",
+      "q": "¿Qué efecto tienen los agonistas de la dopamina (DA) en el filtrado sensorial de la vía talámica?",
+      "a": "Disminuyen el filtrado sensorial, lo que aumenta la sensibilidad a estímulos y favorece la vigilia."
+    },
+    {
+      "cat": "Circuitos Hipotalámicos",
+      "q": "¿Qué estructura hipotalámica se considera el 'promotor del despertar' o interruptor de encendido?",
+      "a": "Los núcleos tuberomamilares (NTM) del hipotálamo."
+    },
+    {
+      "cat": "Circuitos Hipotalámicos",
+      "q": "¿Qué estructura hipotalámica funciona como el 'promotor del sueño' o interruptor de apagado?",
+      "a": "Los núcleos preópticos ventrolaterales (POVL) del hipotálamo."
+    },
+    {
+      "cat": "Circuitos Hipotalámicos",
+      "q": "¿Qué neurotransmisores controlan respectivamente los NTM y los POVL?",
+      "a": "La histamina controla el promotor de la vigilia (NTM) y el GABA controla el promotor del sueño (POVL)."
+    },
+    {
+      "cat": "Circuitos Hipotalámicos",
+      "q": "¿Cómo se explica el insomnio según la hipótesis del interruptor sueño-vigilia?",
+      "a": "Como una activación inapropiada del interruptor del despertar durante la noche."
+    },
+    {
+      "cat": "Circuitos Hipotalámicos",
+      "q": "¿Qué papel juegan las neuronas del hipotálamo lateral que liberan orexina e hipocretina?",
+      "a": "Actúan como estabilizadoras del estado de vigilia, impidiendo transiciones no deseadas al sueño."
+    },
+    {
+      "cat": "Circuitos Hipotalámicos",
+      "q": "¿Dónde se localiza el 'reloj interno' que responde a los ciclos de luz-oscuridad?",
+      "a": "En el núcleo supraquiasmático del hipotálamo, que contiene neuronas sensibles a la melatonina."
+    },
+    {
+      "cat": "Tratamientos",
+      "q": "¿Por qué se recomienda tratar la causa subyacente antes que el propio insomnio?",
+      "a": "Porque el insomnio suele ser un síntoma de otro problema; si la causa persiste, el tratamiento del sueño será ineficaz a largo plazo."
+    },
+    {
+      "cat": "Tratamientos",
+      "q": "¿Cuál es la recomendación sobre la frecuencia de uso de fármacos hipnóticos?",
+      "a": "No debería ser continuo; en casos persistentes debe ser intermitente para evitar el abuso y la dependencia."
+    },
+    {
+      "cat": "Tratamientos",
+      "q": "¿Qué tipo de fármaco se debe elegir si el paciente solo tiene dificultad para quedarse dormido?",
+      "a": "Un fármaco de inicio rápido y duración breve, para evitar la sedación residual a la mañana siguiente."
+    },
+    {
+      "cat": "Tratamientos",
+      "q": "¿Qué perfil farmacológico se requiere para tratar el insomnio por despertares nocturnos?",
+      "a": "Un fármaco de inicio y duración intermedia."
+    },
+    {
+      "cat": "Tratamientos",
+      "q": "¿Cuáles son las características del hipnótico 'ideal'?",
+      "a": "Inicio rápido, sin efectos residuales, seguro en sobredosis, que no altere la arquitectura del sueño ni empeore la apnea."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿Cuál es el mecanismo de acción de los hipnóticos de acción breve no benzodiacepínicos?",
+      "a": "Actúan como moduladores alostéricos positivos del receptor GABA A."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿Por qué los fármacos 'Z' se consideran de primera línea frente a las BZDs?",
+      "a": "Porque producen menos tolerancia, menos dependencia y tienen menos efectos de discontinuación a largo plazo."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿Qué receptores específicos activan el zaleplon y el zolpidem?",
+      "a": "Son selectivos de los receptores benzodiacepínicos omega 1, implicados específicamente en la sedación."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿Qué ventaja tiene no actuar sobre los receptores omega 2?",
+      "a": "Se reducen los efectos secundarios sobre la cognición, la memoria y el funcionamiento motor."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿Por qué el zaleplon es ideal para el insomnio por jet-lag?",
+      "a": "Debido a su inicio muy rápido y su vida media corta (1 hora), permitiendo estar despejado poco tiempo después."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿Qué fármaco 'Z' fue el primero en sustituir a las BZDs como sedante selectivo?",
+      "a": "El zolpidem."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿Cuál es la vida media característica de la zopiclona?",
+      "a": "Tiene una vida media de entre 3.5 y 6 horas."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Qué lugar ocupan actualmente las BZDs en el tratamiento del insomnio?",
+      "a": "Se consideran fármacos de segunda línea."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "Mencione tres benzodiacepinas utilizadas habitualmente como hipnóticas.",
+      "a": "Triazolam, temazepam y flurazepam (también estazolam y quazepam)."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Qué efectos secundarios a corto plazo presentan las BZDs hipnóticas?",
+      "a": "Sedación diurna, interferencia laboral y trastornos de memoria (dificultad para formar recuerdos)."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Qué riesgos conlleva el uso a largo plazo de las BZDs?",
+      "a": "Tolerancia, síndrome de abstinencia ante retirada brusca e insomnio de rebote."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Cómo debe realizarse la retirada de las BZDs para minimizar riesgos?",
+      "a": "Debe ser una retirada gradual, nunca brusca."
+    },
+    {
+      "cat": "Antidepresivos",
+      "q": "¿Por qué ciertos antidepresivos son eficaces para el insomnio?",
+      "a": "Debido a sus propiedades sedantes derivadas de sus acciones anticolinérgicas y antihistamínicas."
+    },
+    {
+      "cat": "Antidepresivos",
+      "q": "¿Qué ventaja tiene el uso de un ATC en un paciente con depresión e insomnio?",
+      "a": "Convierte el efecto secundario de la sedación en un beneficio terapéutico para aliviar el insomnio."
+    },
+    {
+      "cat": "Antidepresivos",
+      "q": "¿Cómo actúa la trazodona sobre la arquitectura del sueño?",
+      "a": "Induce y restaura el sueño de ondas lentas, siendo útil para contrarrestar el insomnio provocado por los ISRS."
+    },
+    {
+      "cat": "Antidepresivos",
+      "q": "¿Qué receptores antagoniza la trazodona para ejercer su acción hipnótica?",
+      "a": "Los receptores 5HT2A, H1 y alfa 1."
+    },
+    {
+      "cat": "Antidepresivos",
+      "q": "¿A qué grupo pertenece la mirtazapina y por qué se usa en el sueño?",
+      "a": "Es un NASSA que se utiliza ocasionalmente por sus potentes propiedades sedantes e hipnóticas."
+    },
+    {
+      "cat": "Moduladores del sueño",
+      "q": "¿Qué riesgos presentan los antagonistas H1 (antihistamínicos) en ancianos?",
+      "a": "Efectos anticolinérgicos como confusión y problemas de memoria, que pueden agravar su estado general."
+    },
+    {
+      "cat": "Moduladores del sueño",
+      "q": "¿Cuál es el mecanismo de la agomelatina en los trastornos del sueño?",
+      "a": "Actúa como agonista de la melatonina regulando los ritmos circadianos."
+    },
+    {
+      "cat": "Moduladores del sueño",
+      "q": "¿Para qué tipo de pacientes es útil la agomelatina sin tener depresión?",
+      "a": "Para personas con trastornos del sueño por desfase horario (como trabajadores a turnos o jet-lag)."
+    },
+    {
+      "cat": "Moduladores del sueño",
+      "q": "¿Qué limitación principal tiene el uso de la valeriana?",
+      "a": "La gran dificultad para ajustar la dosis de administración de forma precisa."
+    },
+    {
+      "cat": "Neuroquímica",
+      "q": "¿Qué ocurre con el impulso circadiano de vigilia conforme avanza el día?",
+      "a": "Disminuye progresivamente, mientras que el impulso homeostático del sueño aumenta."
+    },
+    {
+      "cat": "Neuroquímica",
+      "q": "¿Qué neurotransmisor libera el POVL en los NTM para 'apagar' el cerebro?",
+      "a": "Libera GABA para inhibir los centros de la vigilia."
+    },
+    {
+      "cat": "Clasificación de Trastornos",
+      "q": "¿Qué es la hipersomnia dentro de las disomnias?",
+      "a": "Un trastorno que produce una somnolencia excesiva a pesar de haber dormido."
+    },
+    {
+      "cat": "Parasomnias",
+      "q": "¿Qué es el bruxismo nocturno?",
+      "a": "Una parasomnia que consiste en el rechinamiento de dientes durante el sueño."
+    },
+    {
+      "cat": "Tratamientos",
+      "q": "¿Qué intervención no farmacológica se recomienda junto al uso de hipnóticos?",
+      "a": "La relajación o la intervención cognitivo-conductual."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿Cuál es el tiempo de concentración máxima para los fármacos Z en general?",
+      "a": "Entre 1 y 3 horas después de la administración."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿Sirven los fármacos Z para mantener el sueño toda la noche?",
+      "a": "En general no, debido a su duración breve son mejores para inducir el sueño que para mantenerlo."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿Por qué el zaleplon no afecta a la memoria?",
+      "a": "Porque es selectivo para receptores omega 1 y no actúa sobre los receptores omega 2 relacionados con la cognición."
+    },
+    {
+      "cat": "Moduladores del sueño",
+      "q": "¿Qué efectos secundarios físicos producen los antihistamínicos con acción anticolinérgica?",
+      "a": "Sequedad de boca, visión borrosa y estreñimiento."
+    },
+    {
+      "cat": "Insomnio",
+      "q": "¿Cómo influye el alcohol en el insomnio?",
+      "a": "Se considera una causa de insomnio secundario, ya que altera la calidad del sueño a pesar de su efecto sedante inicial."
+    },
+    {
+      "cat": "Clasificación de Trastornos",
+      "q": "¿En qué consiste el síndrome de piernas inquietas?",
+      "a": "Es una disomnia caracterizada por la necesidad imperiosa de mover las piernas, lo que dificulta el inicio del sueño."
+    },
+    {
+      "cat": "Clasificación de Trastornos",
+      "q": "¿Qué caracteriza a la apnea del sueño?",
+      "a": "Interrupciones en la respiración durante el sueño que fragmentan el descanso y causan somnolencia diurna."
+    },
+    {
+      "cat": "Neuroquímica",
+      "q": "¿Qué papel juega el córtex en el mecanismo de los POVL?",
+      "a": "Los POVL inhiben el promotor de la vigilia que activa al córtex, permitiendo la pérdida de consciencia."
+    },
+    {
+      "cat": "Insomnio",
+      "q": "¿Qué ejemplos de estrés puntual pueden causar insomnio transitorio?",
+      "a": "Un examen próximo, dormir en una cama extraña o un viaje con jet-lag."
+    },
+    {
+      "cat": "Insomnio",
+      "q": "¿Necesita tratamiento el insomnio transitorio?",
+      "a": "No, ya que desaparece por sí solo una vez que la situación vuelve a la normalidad."
+    },
+    {
+      "cat": "Tratamientos",
+      "q": "¿Cuál es el riesgo de administrar fármacos de larga duración para el inicio del sueño?",
+      "a": "La sedación diurna o efectos residuales que impiden el funcionamiento normal al día siguiente."
+    },
+    {
+      "cat": "Neuroquímica",
+      "q": "¿Cómo se define el 'impulso homeostático del sueño'?",
+      "a": "Es la acumulación de la necesidad de dormir que aumenta cuanto más tiempo permanecemos despiertos."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿Qué diferencia al zolpidem de la zopiclona en términos de duración?",
+      "a": "El zolpidem tiene una vida media más corta (1.5-3h) que la zopiclona (3.5-6h)."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Cuáles son las BZDs preferidas para el insomnio?",
+      "a": "Las de vida media-corta."
+    },
+    {
+      "cat": "Antidepresivos",
+      "q": "¿Por qué se usa la trazodona junto a los ISRS?",
+      "a": "Para compensar el insomnio que los ISRS pueden provocar como efecto secundario."
+    },
+    {
+      "cat": "Moduladores del sueño",
+      "q": "¿Qué son los 'compuestos sin prescripción' mencionados en el texto?",
+      "a": "Sustancias que actúan como antihistamínicos o remedios herbales para aliviar el dolor y facilitar el sueño."
+    },
+    {
+      "cat": "Parasomnias",
+      "q": "¿A qué edad es más frecuente la enuresis nocturna?",
+      "a": "Es una parasomnia común en la infancia que interrumpe el desarrollo normal del sueño."
+    },
+    {
+      "cat": "Neuroquímica",
+      "q": "¿Cómo interactúan la histamina y el GABA en el hipotálamo?",
+      "a": "Funcionan de forma antagónica; cuando uno activa la vigilia, el otro debe ser inhibido para permitir el sueño."
+    },
+    {
+      "cat": "Insomnio",
+      "q": "¿Qué situaciones de estrés vital prolongado causan insomnio a corto plazo?",
+      "a": "Un divorcio o problemas judiciales."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿Qué significa que los fármacos Z sean 'moduladores alostéricos positivos'?",
+      "a": "Que se unen al receptor GABA A en un lugar distinto al GABA, potenciando su efecto inhibidor."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿A qué hora se alcanza la concentración máxima de zolpidem?",
+      "a": "A las 2 o 3 horas de su administración."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Qué es el 'insomnio de rebote'?",
+      "a": "Un empeoramiento del insomnio original tras suspender bruscamente el tratamiento con BZDs."
+    },
+    {
+      "cat": "Moduladores del sueño",
+      "q": "¿Cómo ayudan los agonistas de la melatonina al inicio del sueño?",
+      "a": "Mimetizan la señal natural de oscuridad del cuerpo, facilitando la transición al sueño."
+    },
+    {
+      "cat": "Neuroquímica",
+      "q": "¿Qué ocurre si el interruptor sueño-vigilia se desconecta durante el día?",
+      "a": "Se produce somnolencia diurna excesiva."
+    },
+    {
+      "cat": "Circuitos Hipotalámicos",
+      "q": "¿En qué núcleo se encuentran las neuronas sensibles a la melatonina?",
+      "a": "En el núcleo supraquiasmático."
+    },
+    {
+      "cat": "Tratamientos",
+      "q": "¿Qué fármaco se recomienda para un paciente con problemas tanto de inicio como de mantenimiento?",
+      "a": "Uno de inicio rápido y duración intermedia."
+    },
+    {
+      "cat": "Antidepresivos",
+      "q": "¿Cuál es la dosis de trazodona recomendada para actuar como hipnótico?",
+      "a": "Dosis bajas."
+    },
+    {
+      "cat": "Insomnio",
+      "q": "¿El insomnio secundario puede ser provocado por enfermedades endocrinas?",
+      "a": "Sí, el texto las menciona expresamente como causas de insomnio secundario."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿Qué fármaco Z tiene la vida media más corta?",
+      "a": "El zaleplon (1 hora)."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Cómo afectan las BZDs a la formación de recuerdos?",
+      "a": "Interfieren negativamente, provocando dificultades para consolidar nueva información (trastornos de memoria)."
+    },
+    {
+      "cat": "Antidepresivos",
+      "q": "¿Qué significa la sigla ASIR en relación a la trazodona?",
+      "a": "Antagonista de la Serotonina e Inhibidor de la Recaptación."
+    },
+    {
+      "cat": "Clasificación de Trastornos",
+      "q": "¿La narcolepsia se clasifica como disomnia o parasomnia?",
+      "a": "Se clasifica como una disomnia."
+    },
+    {
+      "cat": "Neuroquímica",
+      "q": "¿Qué sistema regula los circuitos de filtrado sensorial desde el tronco cerebral?",
+      "a": "Los sistemas de neurotransmisión ascendentes."
+    },
+    {
+      "cat": "Insomnio",
+      "q": "¿Qué es el 'desajuste de los ritmos circadianos' en el insomnio primario?",
+      "a": "Una falta de sincronía entre el reloj biológico interno y las demandas del entorno (horarios)."
+    },
+    {
+      "cat": "Tratamientos",
+      "q": "¿Por qué es importante la evaluación continuada de síntomas en el uso de sedantes?",
+      "a": "Para detectar precozmente signos de abuso o dependencia."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿A qué se debe el nombre 'fármacos Z'?",
+      "a": "A que los nombres de los tres fármacos principales empiezan por esa letra (Zaleplon, Zopiclona, Zolpidem)."
+    },
+    {
+      "cat": "Antidepresivos",
+      "q": "¿Qué significa NASSA en relación a la mirtazapina?",
+      "a": "Antidepresivo Noradrenérgico y Serotoninérgico Específico."
+    },
+    {
+      "cat": "Moduladores del sueño",
+      "q": "¿La agomelatina se considera un hipnótico puro?",
+      "a": "No, es un antidepresivo con propiedades reguladoras del ritmo circadiano."
+    },
+    {
+      "cat": "Insomnio",
+      "q": "¿El dolor puede ser causa de insomnio?",
+      "a": "Sí, se clasifica como una causa de insomnio secundario de origen médico."
+    },
+    {
+      "cat": "Parasomnias",
+      "q": "¿Qué ocurre durante un terror nocturno?",
+      "a": "Es una parasomnia donde el individuo experimenta una activación intensa de miedo y gritos durante el sueño profundo."
+    },
+    {
+      "cat": "Tratamientos",
+      "q": "¿Qué fármaco no alteraría la arquitectura del sueño según el ideal?",
+      "a": "Aquel que respeta las fases naturales del sueño sin suprimir el sueño REM o el profundo excesivamente."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿Qué fármaco Z alcanza su pico de acción en solo 60 minutos?",
+      "a": "El zaleplon."
+    },
+    {
+      "cat": "Antidepresivos",
+      "q": "¿Qué efecto secundario de los ATC se aprovecha en el insomnio?",
+      "a": "Su potente efecto sedante."
+    },
+    {
+      "cat": "Circuitos Hipotalámicos",
+      "q": "¿Qué dispara el promotor del sueño de los POVL al final del día?",
+      "a": "La acumulación de sueño homeostático y la disminución del impulso circadiano de vigilia."
+    },
+    {
+      "cat": "Insomnio",
+      "q": "¿Dormir en una cama extraña en qué tipo de insomnio se encuadra?",
+      "a": "Insomnio transitorio."
+    },
+    {
+      "cat": "Hipnóticos Z",
+      "q": "¿La tolerancia es alta en los fármacos Z?",
+      "a": "No, el texto indica que no producen un alto grado de tolerancia en comparación con las BZDs."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Qué BZD tiene una vida media que permite su uso como hipnótico frecuente?",
+      "a": "El triazolam o el temazepam."
+    },
+    {
+      "cat": "Neuroquímica",
+      "q": "¿Qué papel juega la luz en el núcleo supraquiasmático?",
+      "a": "Funciona como el principal sincronizador ambiental que inhibe o activa la señal de sueño."
+    },
+    {
+      "cat": "Clasificación de Trastornos",
+      "q": "¿El trastorno del ritmo circadiano es una disomnia o parasomnia?",
+      "a": "Es una disomnia."
+    },
+    {
+      "cat": "Tratamientos",
+      "q": "¿Por qué el hipnótico ideal debe ser seguro en caso de sobredosis?",
+      "a": "Para evitar la toxicidad grave o letal en pacientes vulnerables o por ingesta accidental."
+    }
+  ]
+}

@@ -1,0 +1,2458 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es correcto afirmar que los síntomas nucleares que definen todos los trastornos de ansiedad son el miedo y la preocupación excesiva?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Revisa la sección 3.1.1 sobre la caracterización de estos trastornos.",
+      "explanation": "Según el texto, el miedo y la preocupación excesiva son los dos síntomas nucleares, mientras que otros síntomas adicionales determinan el tipo específico de trastorno."
+    },
+    {
+      "q": "¿La respuesta motora de lucha o huida ante el miedo está regulada por las conexiones de la amígdala con el área gris periacueductal?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Consulta la neurobiología del miedo en el apartado 3.2.1.",
+      "explanation": "Las conexiones recíprocas entre la amígdala y la sustancia gris periacueductal (PAG) son las responsables de las respuestas motoras como lucha, huida o parálisis."
+    },
+    {
+      "q": "¿El aumento crónico de los niveles de cortisol derivado de la respuesta de miedo puede provocar atrofia cerebral y diabetes tipo II?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Mira las consecuencias de la activación del eje HHA en situaciones persistentes.",
+      "explanation": "El texto indica que ante situaciones crónicas, el aumento de cortisol puede derivar en enfermedad coronaria, diabetes tipo II, infarto y atrofia cerebral."
+    },
+    {
+      "q": "¿La regulación de la frecuencia respiratoria en la respuesta autonómica del miedo depende de la conexión amígdala-locus coeruleus?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Distingue entre el sistema cardiovascular y el sistema respiratorio en el texto.",
+      "explanation": "La frecuencia respiratoria está regulada por el núcleo parabraquial (PBN), mientras que el locus coeruleus (LC) regula la frecuencia cardíaca y tensión arterial."
+    },
+    {
+      "q": "¿El circuito de la preocupación está relacionado con el feedback córtico-estriado-talámico-cortical (CSTC) en el córtex prefrontal?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Busca la base biológica de la preocupación en el apartado 3.2.1.",
+      "explanation": "La preocupación excesiva se vincula biológicamente con los circuitos CSTC localizados en el córtex prefrontal."
+    },
+    {
+      "q": "¿El neurotransmisor GABA se sintetiza a partir del glutamato mediante la acción de la enzima glutamato descarboxilasa?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Revisa la síntesis de neurotransmisores inhibitorios.",
+      "explanation": "El GABA se produce por la descarboxilación del glutamato a través de la enzima glutamato descarboxilasa."
+    },
+    {
+      "q": "¿Los receptores GABA A son de tipo metabotrópico y están acoplados a una proteína G para controlar canales de calcio?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre receptores ionotrópicos y metabotrópicos de GABA.",
+      "explanation": "Los receptores GABA A son ionotrópicos (controlan canales de cloro), mientras que los GABA B son metabotrópicos."
+    },
+    {
+      "q": "¿Para que un receptor GABA A sea sensible a las benzodiacepinas debe poseer necesariamente una unidad gamma2 o gamma3?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Consulta la estructura molecular requerida para la sensibilidad a BZD.",
+      "explanation": "El texto especifica que se requieren dos unidades beta, una unidad gamma2 o gamma3, y dos unidades alfa (1, 2 o 3)."
+    },
+    {
+      "q": "¿Las benzodiacepinas actúan como agonistas inversos al unirse al complejo receptor GABA A para aumentar la conductancia de cloro?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Revisa el mecanismo de modulación alostérica de las BZD.",
+      "explanation": "Las benzodiacepinas actúan como moduladores alostéricos positivos (potenciadores), no como agonistas inversos (estos últimos reducirían la conductancia)."
+    },
+    {
+      "q": "¿La buspirona ejerce su acción terapéutica de forma inmediata tras la primera administración para compensar el exceso de serotonina?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Busca la latencia terapéutica de los agonistas parciales 5HT1A.",
+      "explanation": "La acción de la buspirona es retardada y ocurre tras la regulación a la baja de los receptores presinápticos, al igual que los antidepresivos."
+    },
+    {
+      "q": "¿El fármaco Flumacenilo es un antagonista útil para revertir los efectos de una sobredosis por benzodiacepinas?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Revisa los ligandos del receptor de benzodiacepinas.",
+      "explanation": "El flumacenilo es el antagonista específico que revierte los efectos de las BZD al ocupar su lugar de unión."
+    },
+    {
+      "q": "¿Los receptores GABA A con la subunidad alfa1 están principalmente relacionados con la regulación de la ansiedad?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Distingue entre los efectos sedantes y ansiolíticos de las subunidades alfa.",
+      "explanation": "Los receptores con alfa1 regulan el sueño (sedación), mientras que los que contienen alfa2 o alfa3 regulan la ansiedad."
+    },
+    {
+      "q": "¿El meprobamato es un compuesto que se sitúa en una posición intermedia entre los barbitúricos y las benzodiacepinas?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Revisa la evolución histórica de los ansiolíticos.",
+      "explanation": "Históricamente, el meprobamato (1954) se considera un paso intermedio entre la peligrosidad de los barbitúricos y la seguridad de las BZD."
+    },
+    {
+      "q": "¿La amnesia anterógrada es un posible efecto secundario del tratamiento con benzodiacepinas?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Consulta la sección de efectos secundarios de las BZD.",
+      "explanation": "El texto lista explícitamente la amnesia anterógrada como uno de los efectos secundarios de estos fármacos."
+    },
+    {
+      "q": "¿Los receptores benzodiacepínicos de tipo omega 3 tienen una distribución periférica y carecen de acción ansiolítica?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Diferencia los tres tipos de receptores omega mencionados.",
+      "explanation": "Los omega 3 se distribuyen periféricamente y no parecen tener acción sobre la ansiedad, a diferencia de los omega 1 y 2."
+    },
+    {
+      "q": "¿Es falso que el neurotransmisor noradrenalina ejerza un control regulador sobre la amígdala y sus áreas de proyección?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Analiza el papel de la NA en los trastornos de ansiedad.",
+      "explanation": "La afirmación 'es falso' es incorrecta porque la NA sí tiene un importante control regulador en la amígdala."
+    },
+    {
+      "q": "¿La clonidina es un agonista alfa2 que frena la liberación de noradrenalina estimulando sus autorreceptores?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Busca el mecanismo de acción de los fármacos noradrenérgicos.",
+      "explanation": "La clonidina actúa sobre los autorreceptores alfa2 para reducir la liberación excesiva de NA y aliviar síntomas de hiperactivación."
+    },
+    {
+      "q": "¿Se ha demostrado que los receptores GABA C son sensibles a la modulación alostérica de las benzodiacepinas?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Revisa las propiedades de los receptores GABA C.",
+      "explanation": "El texto indica que, aunque los GABA C forman canales de cloro, parece que no les afectan las benzodiacepinas."
+    },
+    {
+      "q": "¿El fármaco Alprazolam se clasifica dentro de las benzodiacepinas de semivida larga según su farmacocinética?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Consulta la clasificación de BZD por vida media.",
+      "explanation": "El Alprazolam pertenece al grupo de semivida corta, a diferencia del Diazepam o el Clonazepam."
+    },
+    {
+      "q": "¿Los receptores GABA A no sensibles a las BZD median una inhibición de tipo tónica fuera de la sinapsis?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Busca la diferencia entre inhibición fásica y tónica.",
+      "explanation": "Los receptores extrasinápticos (con alfa4, alfa6, etc.) median la inhibición tónica, regulada por niveles ambientales de GABA."
+    },
+    {
+      "q": "¿El factor de liberación de corticotropina (CRF) es un objetivo actual de investigación para futuros ansiolíticos?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Consulta el apartado 3.3.3 sobre el futuro del tratamiento.",
+      "explanation": "Los antagonistas del CRF están siendo estudiados por sus posibles propiedades ansiolíticas en modelos experimentales."
+    },
+    {
+      "q": "¿El tratamiento con benzodiacepinas produce un efecto orexígeno en los pacientes que las consumen?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Busca efectos fisiológicos adicionales de las BZD.",
+      "explanation": "Las benzodiacepinas presentan un efecto orexígeno, lo que significa que aumentan el apetito."
+    },
+    {
+      "q": "¿La activación del circuito del miedo se asocia exclusivamente con la liberación de serotonina y dopamina?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Busca otros mediadores químicos en el circuito del miedo.",
+      "explanation": "Además de otros neurotransmisores, la activación del circuito del miedo presenta específicamente la liberación de CRF."
+    },
+    {
+      "q": "¿Los betabloqueantes como la prazosina actúan bloqueando los receptores beta postsinápticos para reducir síntomas físicos?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Revisa el uso de betabloqueantes en la ansiedad.",
+      "explanation": "Se utilizan para bloquear la acción de la NA a nivel periférico y reducir síntomas como la taquicardia o el temblor."
+    },
+    {
+      "q": "¿Existe un gran solapamiento sintomático entre los trastornos de ansiedad y la depresión mayor?",
+      "options": [
+        "Es una afirmación verdadera.",
+        "Es una afirmación falsa.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Revisa el apartado 3.1.2 sobre comorbilidad.",
+      "explanation": "Síntomas como problemas de sueño, fatiga y falta de concentración son comunes a ambos trastornos."
+    },
+    {
+      "q": "Selecciona la opción correcta respecto a la neurobiología del miedo:",
+      "options": [
+        "El sentimiento de miedo está mediado por la hiperactividad del hipocampo exclusivamente.",
+        "La amígdala integra información sensitiva y cognitiva para determinar la respuesta de miedo.",
+        "El córtex prefrontal medial inhibe la amígdala mediante proyecciones directas de GABA."
+      ],
+      "correct": 1,
+      "hint": "Analiza las funciones de la amígdala descritas en el texto.",
+      "explanation": "La amígdala localiza información y, a través de sus conexiones, determina si habrá una respuesta de miedo regulada por el ACC y OFC."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre los circuitos de la preocupación:",
+      "options": [
+        "Están regulados por 5HT, GABA, DA, NA, Glutamato y canales iónicos de voltaje.",
+        "Se localizan exclusivamente en el sistema límbico sin participación de la corteza.",
+        "Dependen únicamente de la neurotransmisión noradrenérgica en el locus coeruleus."
+      ],
+      "correct": 0,
+      "hint": "Busca los reguladores de los circuitos CSTC.",
+      "explanation": "Los circuitos CSTC responsables de la preocupación están regulados por una amplia gama de neurotransmisores y canales iónicos."
+    },
+    {
+      "q": "Selecciona la opción correcta respecto a la degradación del GABA:",
+      "options": [
+        "Es metabolizado únicamente por la enzima MAO-B en el espacio intersináptico.",
+        "Se degrada mediante la acción de la enzima GABA transaminasa a una sustancia inactiva.",
+        "Su eliminación depende exclusivamente de la difusión pasiva fuera de la hendidura."
+      ],
+      "correct": 1,
+      "hint": "Busca el proceso de inactivación del GABA.",
+      "explanation": "El GABA puede ser recaptado o transformado en una sustancia inactiva por la enzima GABA transaminasa."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre las subunidades del receptor GABA A:",
+      "options": [
+        "La subunidad alfa4 es el objetivo principal de las benzodiacepinas ansiolíticas.",
+        "Las subunidades alfa2 y alfa3 se consideran mediadoras de los efectos ansiolíticos.",
+        "La presencia de la subunidad delta garantiza la unión de alta afinidad del diazepam."
+      ],
+      "correct": 1,
+      "hint": "Diferencia las funciones de las subunidades alfa.",
+      "explanation": "El texto indica que los receptores con alfa2 y/o alfa3 son los supuestos objetivos de las BZD ansiolíticas."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la farmacocinética de las benzodiacepinas:",
+      "options": [
+        "Son moléculas hidrosolubles que se eliminan rápidamente por la bilis.",
+        "Poseen una rápida absorción debido a su elevada liposolubilidad sistémica.",
+        "Carecen de metabolitos activos, lo que garantiza una semivida plasmática corta."
+      ],
+      "correct": 1,
+      "hint": "Analiza las propiedades físico-químicas de las BZD.",
+      "explanation": "Al ser muy liposolubles, se absorben rápido, se ligan a proteínas y muchas tienen metabolitos activos."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre el mecanismo de acción de las benzodiacepinas:",
+      "options": [
+        "Actúan abriendo el canal de cloro incluso en ausencia del neurotransmisor GABA.",
+        "Aumentan la afinidad del receptor por el glutamato induciendo una hiperpolarización.",
+        "Potencian la acción del GABA aumentando la conductancia de cloro alostéricamente."
+      ],
+      "correct": 2,
+      "hint": "Recuerda que son moduladores, no agonistas directos.",
+      "explanation": "Requieren la presencia de GABA para potenciar su efecto y aumentar la entrada de cloro en la neurona."
+    },
+    {
+      "q": "Selecciona la opción correcta respecto a la buspirona:",
+      "options": [
+        "Es un agonista completo de los receptores GABA A útil en crisis de pánico agudas.",
+        "Se utiliza en casos de ansiedad crónica y es segura en pacientes con historia de abuso.",
+        "Produce una fuerte interacción con el alcohol potenciando su efecto sedante."
+      ],
+      "correct": 1,
+      "hint": "Revisa las ventajas de la buspirona frente a las BZD.",
+      "explanation": "La buspirona no interactúa con alcohol, no crea dependencia y es útil en ansiedad crónica y pacientes ancianos."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre los receptores omega 1 (BZ1):",
+      "options": [
+        "Se localizan en el cerebelo y su activación es puramente relajante muscular.",
+        "Su activación mediante agonistas específicos como el zolpidem induce sedación.",
+        "Están vinculados exclusivamente con el aumento de la frecuencia respiratoria."
+      ],
+      "correct": 1,
+      "hint": "Relaciona los receptores omega con fármacos específicos.",
+      "explanation": "La activación de los receptores omega 1 (o BZ1) tiene efectos ansiolíticos y, notablemente, sedante-hipnóticos."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre el receptor GABA B:",
+      "options": [
+        "Es un receptor ionotrópico que controla un canal de cloro sensible a alcohol.",
+        "Es un receptor metabotrópico que puede estar asociado a canales de calcio o potasio.",
+        "Es el principal objetivo de las benzodiacepinas para el tratamiento del insomnio."
+      ],
+      "correct": 1,
+      "hint": "Revisa la naturaleza del receptor GABA B.",
+      "explanation": "GABA B es metabotrópico (acoplado a proteína G) y se une al baclofeno, no a las benzodiacepinas."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre el neurotransmisor Serotonina (5HT):",
+      "options": [
+        "En los trastornos de ansiedad se observa típicamente un déficit marcado de 5HT.",
+        "La 5HT inerva la amígdala y circuitos CSTC, regulando miedo y preocupación.",
+        "Su liberación excesiva en la médula espinal causa la parálisis motora del miedo."
+      ],
+      "correct": 1,
+      "hint": "Analiza la diferencia entre depresión y ansiedad respecto a la 5HT.",
+      "explanation": "A diferencia de la depresión (déficit), en la ansiedad se describe un aumento de 5HT que regula los circuitos relevantes."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la noradrenalina (NA) en la ansiedad:",
+      "options": [
+        "Un exceso de NA del locus coeruleus causa hiperactivación autonómica periférica.",
+        "La NA inhibe directamente los circuitos CSTC mejorando el procesamiento mental.",
+        "La administración de agonistas beta postsinápticos es el tratamiento de elección."
+      ],
+      "correct": 0,
+      "hint": "Relaciona el LC con los síntomas físicos de la ansiedad.",
+      "explanation": "La hiperactividad noradrenérgica produce taquicardia, sudoración y puede causar ataques de pánico."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la evolución de los tratamientos:",
+      "options": [
+        "Los barbitúricos fueron desplazados por las BZD debido a su mayor perfil de seguridad.",
+        "El Librium fue la primera benzodiacepina comercializada en la década de los años 30.",
+        "Los antihistamínicos han demostrado ser más eficaces que las BZD para la ansiedad."
+      ],
+      "correct": 0,
+      "hint": "Revisa la historia de la psicofarmacología en el tema.",
+      "explanation": "Las BZD desplazaron a los barbitúricos por su menor riesgo de sobredosis y dependencia."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre los receptores GABA A extrasinápticos:",
+      "options": [
+        "Contienen subunidades alfa1 y son responsables de la inhibición fásica rápida.",
+        "Contienen subunidades como la delta y median la inhibición de tipo tónica.",
+        "Son los receptores diana donde actúan los agonistas parciales serotoninérgicos."
+      ],
+      "correct": 1,
+      "hint": "Busca la localización y función de los receptores no sensibles a BZD.",
+      "explanation": "Los receptores extrasinápticos (no sensibles a BZD) captan el GABA difuso y establecen el tono global de la neurona."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre los efectos secundarios de las BZD:",
+      "options": [
+        "Provocan una marcada estimulación del centro respiratorio incluso en sobredosis.",
+        "Puedan causar desinhibición conductual y agresividad en algunos pacientes.",
+        "Mejoran significativamente la capacidad de concentración y el tiempo de reacción."
+      ],
+      "correct": 1,
+      "hint": "Revisa los efectos paradójicos o conductuales de las BZD.",
+      "explanation": "Entre los efectos secundarios se mencionan la desinhibición conductual y el aumento del tiempo de reacción."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre el tratamiento del TEPT:",
+      "options": [
+        "Los neurolépticos atípicos pueden ser útiles como tratamiento complementario.",
+        "Las benzodiacepinas de semivida larga son el único tratamiento eficaz demostrado.",
+        "Está contraindicado el uso de ISRS debido al riesgo de empeoramiento fóbico."
+      ],
+      "correct": 0,
+      "hint": "Busca opciones terapéuticas para el estrés postraumático.",
+      "explanation": "El texto menciona que los neurolépticos atípicos pueden ser útiles especialmente en el TEPT."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre los receptores omega 2 (BZ2):",
+      "options": [
+        "Se distribuyen ampliamente por el sistema límbico y el cerebelo.",
+        "Existen numerosos agonistas selectivos comercializados para este receptor.",
+        "Su activación produce exclusivamente efectos de relajación muscular espinal."
+      ],
+      "correct": 0,
+      "hint": "Localiza los receptores BZ2 en el texto.",
+      "explanation": "Se encuentran en el sistema límbico y cerebelo, y su acción es especialmente ansiolítica."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la tolerancia a las benzodiacepinas:",
+      "options": [
+        "Se desarrolla más rápidamente para el efecto ansiolítico que para el hipnótico.",
+        "Está mediada biológicamente por una regulación a la baja de sus sitios de acción.",
+        "Es un fenómeno inexistente que permite tratamientos indefinidos sin pérdida de eficacia."
+      ],
+      "correct": 1,
+      "hint": "Busca el mecanismo de la tolerancia en el apartado 3.3.1.",
+      "explanation": "La tolerancia se duebe a la regulación a la baja (down-regulation) de los receptores tras su activación continuada."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre los síntomas comunes de ansiedad y depresión:",
+      "options": [
+        "Ambos comparten la fatiga, alteraciones del sueño y problemas de concentración.",
+        "El síntoma nuclear de ambos es siempre la preocupación excesiva por el futuro.",
+        "La pérdida de interés o placer es un síntoma diagnóstico central en la ansiedad."
+      ],
+      "correct": 0,
+      "hint": "Revisa el solapamiento de sintomatología.",
+      "explanation": "Aunque los síntomas nucleares difieren, comparten síntomas físicos y cognitivos como el insomnio o la fatiga."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre la síntesis de GABA:",
+      "options": [
+        "Requiere la presencia de vitamina C como cofactor enzimático obligatorio.",
+        "Se produce en las neuronas presinápticas y se almacena en vesículas.",
+        "Es un proceso que ocurre exclusivamente en las células de la glía radial."
+      ],
+      "correct": 1,
+      "hint": "Revisa el proceso de síntesis y almacenamiento.",
+      "explanation": "Se sintetiza en la neurona presináptica a partir del glutamato y se almacena hasta su liberación."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre los canales iónicos del receptor GABA A:",
+      "options": [
+        "Son canales regulados por ligandos que permiten el flujo de aniones cloro.",
+        "Son canales regulados por voltaje que se abren tras la entrada de sodio.",
+        "Son canales de potasio que provocan una despolarización rápida de la membrana."
+      ],
+      "correct": 0,
+      "hint": "Recuerda la naturaleza del canal asociado al GABA A.",
+      "explanation": "El receptor GABA A es un receptor ionotrópico que, al abrirse, permite la entrada de Cl-, hiperpolarizando la neurona."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre los betabloqueantes en la ansiedad:",
+      "options": [
+        "Son eficaces para reducir la preocupación cognitiva y los pensamientos obsesivos.",
+        "Reducen manifestaciones físicas como la taquicardia y el temblor.",
+        "Se unen al lugar de las benzodiacepinas en el complejo receptor GABA A."
+      ],
+      "correct": 1,
+      "hint": "Analiza la utilidad clínica de la prazosina.",
+      "explanation": "Se usan para bloquear síntomas noradrenérgicos periféricos, pero no actúan sobre la preocupación central."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre el Lorazepam:",
+      "options": [
+        "Es una benzodiacepina de semivida larga similar al Diazepam.",
+        "Es una benzodiacepina de semivida corta según el texto.",
+        "Actúa como un agonista parcial serotoninérgico de tipo 5HT1A."
+      ],
+      "correct": 1,
+      "hint": "Busca el Lorazepam en la lista de semividas.",
+      "explanation": "El Lorazepam se clasifica explícitamente en el grupo de semivida corta."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre el mecanismo de la buspirona:",
+      "options": [
+        "Bloquea los receptores D2 de dopamina en el estriado.",
+        "Actúa sobre los receptores 5HT1A pre y postsinápticos.",
+        "Es un antagonista de los canales de calcio regulados por voltaje."
+      ],
+      "correct": 1,
+      "hint": "Busca la diana molecular de la buspirona.",
+      "explanation": "Es un agonista parcial de los receptores 5HT1A tanto pre como postsinápticos."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre el futuro del tratamiento de la ansiedad:",
+      "options": [
+        "Se investiga el uso de esteroides neuroactivos que interactúan con el receptor GABA.",
+        "Se han abandonado las investigaciones sobre agonistas parciales de BZD.",
+        "Los antagonistas de la colecistoquinina se usan ya de forma rutinaria en el TAG."
+      ],
+      "correct": 0,
+      "hint": "Consulta las líneas de investigación futuras.",
+      "explanation": "El texto menciona la investigación de esteroides neuroactivos y antagonistas de CCK y CRF."
+    },
+    {
+      "q": "Selecciona la opción correcta sobre el sentimiento de miedo y su respuesta motoras:",
+      "options": [
+        "La parálisis motora es una respuesta mediada por el eje hipotálamo-hipófiso-adrenal.",
+        "Dependiendo del temperamento, la respuesta puede ser lucha, huida o parálisis.",
+        "Las respuestas motoras son independientes de la hiperactivación de la amígdala."
+      ],
+      "correct": 1,
+      "hint": "Busca las variantes de la respuesta motora descritas.",
+      "explanation": "El texto explica que el individuo puede reaccionar de tres formas motoras principales ante el miedo."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre los trastornos de ansiedad:",
+      "options": [
+        "La ansiedad puede ser una emoción normal y adaptativa para la supervivencia.",
+        "El miedo y la preocupación excesiva son síntomas periféricos secundarios.",
+        "La fatiga y las alteraciones del sueño son síntomas comunes presentes."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre síntomas nucleares y síntomas adicionales.",
+      "explanation": "El miedo y la preocupación no son secundarios; son los síntomas nucleares de los trastornos de ansiedad."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre la neurobiología del miedo:",
+      "options": [
+        "La amígdala se localiza anatómicamente cerca del hipocampo.",
+        "La hiperactividad en los circuitos de la amígdala produce el sentimiento de miedo.",
+        "El miedo es regulado exclusivamente por el cerebelo y la médula espinal."
+      ],
+      "correct": 2,
+      "hint": "Identifica las áreas cerebrales de regulación mencionadas.",
+      "explanation": "El miedo es regulado por el ACC y el córtex orbitofrontal, no exclusivamente por el cerebelo o la médula."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre la respuesta endocrina del miedo:",
+      "options": [
+        "Supone un aumento de los niveles de cortisol por activación del eje HHA.",
+        "El cortisol alto es siempre perjudicial, incluso en amenazas de corta duración.",
+        "Situaciones crónicas de cortisol elevado pueden causar enfermedad coronaria."
+      ],
+      "correct": 1,
+      "hint": "Analiza el papel adaptativo inicial del cortisol.",
+      "explanation": "El texto afirma que el cortisol alto puede asegurar la supervivencia ante amenazas de corta duración; lo dañino es su persistencia crónica."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre la respuesta autonómica del miedo:",
+      "options": [
+        "El locus coeruleus regula el incremento de la frecuencia cardíaca.",
+        "El núcleo parabraquial regula el incremento de la frecuencia respiratoria.",
+        "La respuesta autónoma del miedo disminuye siempre la tensión arterial."
+      ],
+      "correct": 2,
+      "hint": "Revisa los efectos cardiovasculares del miedo.",
+      "explanation": "La respuesta de miedo aumenta la tensión arterial y la frecuencia cardíaca, no las disminuye."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre los circuitos CSTC:",
+      "options": [
+        "Se relacionan biológicamente con el síntoma de preocupación excesiva.",
+        "Están localizados anatómicamente en el córtex prefrontal del cerebro.",
+        "Están regulados de forma exclusiva y única por el neurotransmisor dopamina."
+      ],
+      "correct": 2,
+      "hint": "Revisa los neurotransmisores implicados en el CSTC.",
+      "explanation": "Están regulados por múltiples sistemas: 5HT, GABA, DA, NA, glutamato y canales iónicos."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre la neurotransmisión GABAérgica:",
+      "options": [
+        "El GABA es el principal neurotransmisor excitador del sistema nervioso central.",
+        "Su papel es regulador, reduciendo la actividad de muchas neuronas cerebrales.",
+        "Es clave en la acción de los fármacos ansiolíticos benzodiacepínicos."
+      ],
+      "correct": 0,
+      "hint": "Define el carácter funcional del GABA.",
+      "explanation": "El GABA es el principal neurotransmisor inhibidor, no excitador (ese papel corresponde al glutamato)."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre el complejo receptor GABA A:",
+      "options": [
+        "Está modulado alostéricamente por lugares de unión para barbitúricos.",
+        "Su estructura molecular está formada por la unión de tres subunidades beta.",
+        "Contiene un canal central que permite el paso de iones de carga negativa."
+      ],
+      "correct": 1,
+      "hint": "Busca el número de subunidades del receptor.",
+      "explanation": "El receptor está formado por 5 subunidades (pentámero), no por tres subunidades beta únicamente."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre las benzodiacepinas y sus efectos:",
+      "options": [
+        "Tienen propiedades anticonvulsivantes al impedir la difusión del foco.",
+        "Afectan a distintas fases de la memoria como la adquisición y consolidación.",
+        "Son fármacos cardiodepresores que afectan gravemente al ritmo cardíaco."
+      ],
+      "correct": 2,
+      "hint": "Revisa los efectos cardiovasculares en el apartado 3.3.1.",
+      "explanation": "El texto aclara que las BZD tienen efectos cardiovasculares pero NO son cardiodepresoras."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre los ligandos del receptor BZD:",
+      "options": [
+        "Un agonista completo aumenta la conductancia de cloro y baja la ansiedad.",
+        "Un agonista inverso disminuye la conductancia de cloro y sube la ansiedad.",
+        "Un antagonista aumenta la conductancia de cloro de forma independiente al GABA."
+      ],
+      "correct": 2,
+      "hint": "Define la función de un antagonista puro.",
+      "explanation": "Un antagonista por sí solo no altera la conductancia de cloro; simplemente bloquea el lugar de unión y revierte efectos de otros ligandos."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre la buspirona y sus ventajas:",
+      "options": [
+        "Presenta una ausencia total de dependencia y síndrome de abstinencia.",
+        "Es el tratamiento de elección para ataques de pánico agudos por su rapidez.",
+        "Se puede utilizar fácilmente en pacientes con historia de abuso de alcohol."
+      ],
+      "correct": 1,
+      "hint": "Recuerda la latencia de respuesta de la buspirona.",
+      "explanation": "La buspirona no es útil en ataques agudos porque su efecto es retardado (largo plazo)."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre la noradrenalina y la ansiedad:",
+      "options": [
+        "Una producción excesiva de NA puede causar pesadillas y flashbacks.",
+        "El exceso de NA mejora la eficiencia del procesamiento en el córtex prefrontal.",
+        "La clonidina estimula autorreceptores alfa2 para frenar la liberación de NA."
+      ],
+      "correct": 1,
+      "hint": "Analiza el impacto de la NA sobre la cognición en el texto.",
+      "explanation": "El exceso de NA reduce la eficiencia del procesamiento de información, no la mejora."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre los receptores GABA A no sensibles a BZD:",
+      "options": [
+        "Se localizan fuera de la sinapsis y median la inhibición de tipo tónica.",
+        "Son los receptores diana donde actúan principalmente los hipnóticos.",
+        "Contienen subunidades alfa1, alfa2 o alfa3 en su conformación estructural."
+      ],
+      "correct": 2,
+      "hint": "Revisa las subunidades de los receptores NO sensibles.",
+      "explanation": "Los no sensibles contienen alfa4, alfa6, gamma1 o delta. Las subunidades alfa1, 2 y 3 sí son sensibles a BZD."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre el tratamiento coadyuvante:",
+      "options": [
+        "Los agonistas alfa2 bloquean los síntomas autonómicos de la ansiedad.",
+        "Los antihistamínicos son más eficaces que las BZD y reducen la ansiedad.",
+        "Los antidepresivos ISRS están indicados en tratamientos de larga duración."
+      ],
+      "correct": 1,
+      "hint": "Busca la eficacia de los antihistamínicos en el texto.",
+      "explanation": "El texto dice que los antihistamínicos presentan más ansiedad y menos eficacia que otros tratamientos."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre los barbitúricos:",
+      "options": [
+        "Provocan grave dependencia y síndrome de abstinencia tras su retirada.",
+        "Su interacción con el alcohol es segura y no presenta riesgos añadidos.",
+        "Tienen poco perfil de seguridad con un alto riesgo de sobredosis letal."
+      ],
+      "correct": 1,
+      "hint": "Revisa la seguridad de los barbitúricos.",
+      "explanation": "La interacción de los barbitúricos con el alcohol es descrita como muy peligrosa."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre el receptor GABA C:",
+      "options": [
+        "Forma un canal de cloro similar al del receptor GABA A.",
+        "Su papel fisiológico está perfectamente aclarado en la clínica actual.",
+        "Se considera que las benzodiacepinas no afectan a su funcionamiento."
+      ],
+      "correct": 1,
+      "hint": "Revisa el conocimiento actual sobre el GABA C.",
+      "explanation": "El texto afirma que su papel fisiológico no está muy claro todavía."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre la serotonina en la depresión y ansiedad:",
+      "options": [
+        "En la depresión existe típicamente un déficit de serotonina.",
+        "En la ansiedad existe típicamente un aumento de serotonina.",
+        "La serotonina no tiene ninguna capacidad de regular el miedo o la preocupación."
+      ],
+      "correct": 2,
+      "hint": "Analiza la función de la 5HT descrita en el apartado 3.2.2.",
+      "explanation": "La 5HT sí regula el miedo y la preocupación al inervar la amígdala y los circuitos CSTC."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre las benzodiacepinas de semivida larga:",
+      "options": [
+        "El Diazepam (Valium) es un ejemplo representativo de este grupo.",
+        "El Triazolam se clasifica como una benzodiacepina de acción prolongada.",
+        "El Clonazepam pertenece a esta categoría farmacocinética."
+      ],
+      "correct": 1,
+      "hint": "Localiza el Triazolam en la clasificación de semividas.",
+      "explanation": "El Triazolam es de semivida corta, no larga."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre la modulación alostérica positiva:",
+      "options": [
+        "La benzodiacepina se une a un sitio distinto al del neurotransmisor GABA.",
+        "La BZD sola es capaz de abrir el canal de cloro sin necesidad de GABA.",
+        "La BZD potencia el efecto del GABA aumentando la conductancia iónica."
+      ],
+      "correct": 1,
+      "hint": "Recuerda la dependencia del neurotransmisor.",
+      "explanation": "Como moduladores alostéricos positivos, las BZD no tienen efecto por sí mismas; requieren la presencia de GABA."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre los síntomas nucleares de la depresión:",
+      "options": [
+        "El ánimo deprimido es un síntoma central de la depresión mayor.",
+        "La pérdida del interés o placer se conoce como síntoma nuclear depresivo.",
+        "El miedo y la preocupación excesiva son síntomas nucleares de la depresión."
+      ],
+      "correct": 2,
+      "hint": "Diferencia los núcleos de la depresión y la ansiedad.",
+      "explanation": "El miedo y la preocupación son núcleos de la ansiedad, no de la depresión mayor."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre las indicaciones de las BZD:",
+      "options": [
+        "Se utilizan para el tratamiento del síndrome de abstinencia alcohólica.",
+        "Son eficaces para tratar los espasmos musculares y la epilepsia.",
+        "Están indicadas únicamente para el tratamiento de la esquizofrenia pura."
+      ],
+      "correct": 2,
+      "hint": "Revisa el uso de BZD en la esquizofrenia.",
+      "explanation": "En la esquizofrenia se usan para potenciar neurolépticos, pero no son la indicación única ni principal."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre el efecto de las BZD en el apetito:",
+      "options": [
+        "Las benzodiacepinas tienen un efecto denominado orexígeno.",
+        "Este efecto se traduce en un aumento notable del apetito en el paciente.",
+        "Las benzodiacepinas provocan una anorexia severa en todos los casos."
+      ],
+      "correct": 2,
+      "hint": "Revisa los efectos fisiológicos de las BZD.",
+      "explanation": "Tienen efecto orexígeno (aumentan apetito), por lo que decir que causan anorexia es incorrecto."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre el receptor omega 1 (BZ1):",
+      "options": [
+        "Se localiza en la formación reticular, corteza e hipocampo.",
+        "Su activación produce exclusivamente parálisis motora espinal.",
+        "El quacepam es un agonista específico para este tipo de receptor."
+      ],
+      "correct": 1,
+      "hint": "Revisa la función de los receptores omega 1.",
+      "explanation": "Su activación tiene acción ansiolítica y sedante-hipnótica, no produce parálisis motora espinal."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre el tratamiento del trastorno de pánico:",
+      "options": [
+        "Los ATC e IMAOs han demostrado efectividad en este trastorno.",
+        "Los ISRS se utilizan habitualmente para el tratamiento del pánico.",
+        "El alcohol es la recomendación clínica actual para crisis de pánico."
+      ],
+      "correct": 2,
+      "hint": "Identifica los tratamientos válidos en el texto.",
+      "explanation": "Aunque se usaba popularmente, el alcohol no es un tratamiento clínico recomendado actualmente por su riesgo."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre la degradación de noradrenalina:",
+      "options": [
+        "El exceso de hiperactivación noradrenérgica puede causar pesadillas.",
+        "La prazosina es un agonista que aumenta la liberación de noradrenalina.",
+        "Los betabloqueantes ayudan a reducir la taquicardia por exceso de NA."
+      ],
+      "correct": 1,
+      "hint": "Revisa el papel de la prazosina.",
+      "explanation": "La prazosina es un betabloqueante (antagonista) que bloquea receptores beta, no un agonista que aumente la NA."
+    },
+    {
+      "q": "Selecciona la opción incorrecta sobre la amígdala:",
+      "options": [
+        "Tiene forma de almendra y se sitúa cerca del hipocampo.",
+        "Determina si habrá una respuesta de miedo tras integrar información.",
+        "Es la única responsable de los pensamientos obsesivos catastróficos."
+      ],
+      "correct": 2,
+      "hint": "Diferencia las funciones de la amígdala y el córtex prefrontal.",
+      "explanation": "La amígdala gestiona el miedo; la preocupación y pensamientos catastróficos se vinculan a los circuitos CSTC del córtex prefrontal."
+    },
+    {
+      "q": "La presencia de síntomas de miedo y preocupación excesiva constituye el núcleo de los trastornos de ansiedad, mientras que la fatiga o la activación se consideran síntomas ____.",
+      "options": [
+        "Determinantes",
+        "Secundarios",
+        "Patognómicos"
+      ],
+      "correct": 0,
+      "hint": "Revisa la sección 3.1.1 sobre la clasificación de síntomas.",
+      "explanation": "Según el texto, el miedo y la preocupación son nucleares, pero la presencia de 'estos otros síntomas' (fatiga, activación, etc.) es lo que determinará el tipo específico de trastorno."
+    },
+    {
+      "q": "En el diagnóstico diferencial, los síntomas de ____ son compartidos frecuentemente entre la depresión mayor y los trastornos de ansiedad.",
+      "options": [
+        "Miedo y humor",
+        "Sueño y fatiga",
+        "Pánico y apnea"
+      ],
+      "correct": 1,
+      "hint": "Consulta el solapamiento sintomático en 3.1.2.",
+      "explanation": "El texto cita específicamente problemas de sueño, concentración, fatiga, alteraciones psicomotoras y excitación como síntomas comunes a ambos cuadros."
+    },
+    {
+      "q": "El sentimiento de miedo está anatómicamente relacionado con la amígdala, la cual integra información sensitiva y cognitiva para regular la respuesta mediante el ____.",
+      "options": [
+        "Córtex estriado",
+        "Córtex parietal",
+        "Córtex orbital"
+      ],
+      "correct": 2,
+      "hint": "Busca las conexiones de la amígdala en 3.2.1.",
+      "explanation": "El miedo se regula a través de conexiones recíprocas entre la amígdala, el córtex cingulado anterior y el córtex orbitofrontal."
+    },
+    {
+      "q": "La respuesta motora de lucha, huida o parálisis ante el miedo está específicamente regulada por la conexión entre la amígdala y ____.",
+      "options": [
+        "El estriado",
+        "La gris PAG",
+        "El tálamo VL"
+      ],
+      "correct": 1,
+      "hint": "Figura 7 y niveles de respuesta al miedo.",
+      "explanation": "La sustancia gris periacueductal (PAG) del tronco cerebral es la responsable de mediar las respuestas motoras de supervivencia."
+    },
+    {
+      "q": "Un aumento persistente de cortisol por la activación crónica del eje HHA puede derivar en patologías graves como la ____.",
+      "options": [
+        "Atrofia cerebral",
+        "Distonía muscular",
+        "Afasia de Broca"
+      ],
+      "correct": 0,
+      "hint": "Consecuencias endocrinas crónicas en 3.2.1.",
+      "explanation": "El texto menciona enfermedad coronaria, diabetes tipo II, infarto cerebral y atrofia cerebral como consecuencias del cortisol crónico."
+    },
+    {
+      "q": "La hiperactivación de la conexión entre la amígdala y el locus coeruleus se manifiesta clínicamente mediante el incremento de ____.",
+      "options": [
+        "Ritmo digestivo",
+        "Tensión arterial",
+        "Índice de apnea"
+      ],
+      "correct": 1,
+      "hint": "Respuestas autónomas en la sección 3.2.1.",
+      "explanation": "El locus coeruleus regula la frecuencia cardíaca y la tensión arterial en la respuesta cardiovascular de miedo."
+    },
+    {
+      "q": "El síntoma de preocupación excesiva está vinculado neurobiológicamente a los circuitos de feedback ____ en el córtex prefrontal.",
+      "options": [
+        "Amígdalo-PBN-A",
+        "CSTC-estriatales",
+        "HHA-hipofisarios"
+      ],
+      "correct": 1,
+      "hint": "Circuitos de la preocupación y figura 11.",
+      "explanation": "La preocupación se relaciona con los circuitos córtico-estriado-talámico-corticales (CSTC) regulados por diversos neurotransmisores."
+    },
+    {
+      "q": "La activación del circuito del miedo se diferencia de la del circuito de la preocupación por la liberación adicional de ____.",
+      "options": [
+        "GABA y 5-HT",
+        "Factor de CRF",
+        "Dopamina mes."
+      ],
+      "correct": 1,
+      "hint": "Resumen de la sección 3.2.1.",
+      "explanation": "El texto especifica que el circuito del miedo presenta, además de la neurotransmisión común, la liberación de factor de liberación de corticotropina (CRF)."
+    },
+    {
+      "q": "El neurotransmisor GABA se sintetiza en las neuronas presinápticas a partir del glutamato mediante la enzima ____.",
+      "options": [
+        "GABA-T aminasa",
+        "Glutamato-des.",
+        "GABA-recaptasa"
+      ],
+      "correct": 1,
+      "hint": "Síntesis del GABA en 3.2.2.",
+      "explanation": "El GABA se sintetiza a partir del glutamato por la acción de la enzima glutamato descarboxilasa."
+    },
+    {
+      "q": "Los receptores GABA A son de tipo ____ y controlan un canal de cloro modulado alostéricamente.",
+      "options": [
+        "Metabotrópicos",
+        "Ionotrópicos",
+        "Adrenérgicos"
+      ],
+      "correct": 1,
+      "hint": "Tipos de receptores en 3.2.2.",
+      "explanation": "Los receptores GABA A y GABA C son ionotrópicos (canal de cloro), mientras que el GABA B es metabotrópico."
+    },
+    {
+      "q": "Para que un receptor GABA A sea sensible a las benzodiacepinas, debe contener obligatoriamente la subunidad ____.",
+      "options": [
+        "Alfa 4 o Alfa 6",
+        "Gamma 1 o Delta",
+        "Gamma 2 o Gamma 3"
+      ],
+      "correct": 2,
+      "hint": "Estructura del receptor sensible a BZD.",
+      "explanation": "La sensibilidad a BZD requiere dos unidades alfa (1, 2 o 3), dos beta y una unidad gamma 2 o 3."
+    },
+    {
+      "q": "La inhibición de tipo ____ es mediada por receptores GABA A localizados fuera de la sinapsis que no se unen a BZD.",
+      "options": [
+        "Inhibición fásica",
+        "Inhibición tónica",
+        "Inhibición clón."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre inhibición fásica y tónica.",
+      "explanation": "Los receptores no sensibles a BZD median la inhibición tónica y establecen el tono global de excitabilidad neuronal."
+    },
+    {
+      "q": "El receptor GABA B se diferencia de los otros subtipos por estar acoplado a una ____ y ligarse al baclofeno.",
+      "options": [
+        "Proteína G-met.",
+        "Bomba de Cloro",
+        "Subunidad alfa4"
+      ],
+      "correct": 0,
+      "hint": "Características del GABA B.",
+      "explanation": "Es un receptor metabotrópico asociado a canales de calcio y/o potasio, no modulado por BZD."
+    },
+    {
+      "q": "La administración de ____ actúa estimulando los autorreceptores presinápticos para frenar la liberación excesiva de NA.",
+      "options": [
+        "Antag. Alfa 2",
+        "Agonista Alfa 2",
+        "Beta-bloqueante"
+      ],
+      "correct": 1,
+      "hint": "Tratamientos noradrenérgicos en 3.2.2.",
+      "explanation": "La clonidina es un agonista alfa2 que estimula los autorreceptores para reducir la liberación de noradrenalina."
+    },
+    {
+      "q": "A diferencia de la depresión donde hay déficit, en la ansiedad se postula que existe un ____ de serotonina (5HT).",
+      "options": [
+        "Bloqueo total",
+        "Aumento fásico",
+        "Aumento de 5HT"
+      ],
+      "correct": 2,
+      "hint": "Sección de neurotransmisión serotoninérgica.",
+      "explanation": "El texto indica que en la ansiedad se da un aumento de 5HT, al contrario que en la depresión."
+    },
+    {
+      "q": "La buspirona ejerce su acción terapéutica de forma retardada debido a la necesidad de ____ de los receptores presinápticos.",
+      "options": [
+        "Regulación baja",
+        "Up-regulation",
+        "Bloqueo fásico"
+      ],
+      "correct": 0,
+      "hint": "Mecanismo de la buspirona.",
+      "explanation": "La acción ocurre a largo plazo cuando se produce la regulación a la baja (down-regulation) de los receptores 5HT1A presinápticos."
+    },
+    {
+      "q": "Los barbitúricos fueron desplazados por las BZD debido a su bajo perfil de seguridad y su capacidad de provocar ____.",
+      "options": [
+        "Grave amnesia",
+        "Grave depend.",
+        "Euforia fásica"
+      ],
+      "correct": 1,
+      "hint": "Evolución histórica de ansiolíticos.",
+      "explanation": "Los barbitúricos provocan grave dependencia, síndrome de abstinencia y tienen alto riesgo de sobredosis."
+    },
+    {
+      "q": "El meprobramato, desarrollado en 1954, actúa como un depresor medular inhibiendo los ____.",
+      "options": [
+        "Reflejos fásic.",
+        "Reflejos méd.",
+        "Canales de Na"
+      ],
+      "correct": 1,
+      "hint": "Características del meprobramato.",
+      "explanation": "Se describe como un miorrelajante y anticonvulsivo que inhibe los reflejos de la médula espinal."
+    },
+    {
+      "q": "Las benzodiacepinas actúan como moduladores ____ del complejo receptor GABA A.",
+      "options": [
+        "Inversos-neg.",
+        "Alostéricos P.",
+        "Antagónicos S."
+      ],
+      "correct": 1,
+      "hint": "Mecanismo de acción de las BZD.",
+      "explanation": "Actúan por modulación alostérica positiva, potenciando el efecto del GABA sobre la conductancia del cloro."
+    },
+    {
+      "q": "En caso de sobredosis por benzodiacepinas, el fármaco de elección para revertir sus efectos es el ____.",
+      "options": [
+        "Clordiacepóx.",
+        "Flumacenilo",
+        "Fenobarbital"
+      ],
+      "correct": 1,
+      "hint": "Antagonistas de BZD en 3.3.1.",
+      "explanation": "El flumacenilo es un antagonista que revierte los efectos de las BZD al competir por el mismo lugar de unión."
+    },
+    {
+      "q": "Los receptores benzodiacepínicos de tipo 1 (Omega 1) se localizan en la formación reticular y tienen acción ____.",
+      "options": [
+        "Orexígena pura",
+        "Miorrelajante",
+        "Sedante-hipn."
+      ],
+      "correct": 2,
+      "hint": "Subtipos de receptores BZD.",
+      "explanation": "Su activación en la formación reticular, corteza e hipocampo tiene efectos ansiolíticos y sedante-hipnóticos."
+    },
+    {
+      "q": "El diazepam y el clordiacepóxido son benzodiacepinas clasificadas como fármacos de ____.",
+      "options": [
+        "Semivida corta",
+        "Semivida media",
+        "Semivida larga"
+      ],
+      "correct": 2,
+      "hint": "Clasificación según vida media.",
+      "explanation": "Ambos pertenecen al grupo de semivida larga, junto con flurazepam y clonazepam."
+    },
+    {
+      "q": "La buspirona está especialmente indicada en pacientes ancianos para evitar la ____ que producen las BZD.",
+      "options": [
+        "Ataxia de Cl.",
+        "Confusión-des.",
+        "Muerte súbita"
+      ],
+      "correct": 1,
+      "hint": "Efectos secundarios en 3.3.1 y 3.3.2.",
+      "explanation": "En ancianos, las BZD pueden causar confusión y desorientación, por lo que la buspirona es una alternativa preferible."
+    },
+    {
+      "q": "La amnesia ____ es un efecto secundario común del tratamiento continuado con benzodiacepinas.",
+      "options": [
+        "Retrógrafa-M",
+        "Anterógrada",
+        "Global-fásica"
+      ],
+      "correct": 1,
+      "hint": "Efectos secundarios de las BZD.",
+      "explanation": "El texto lista explícitamente la amnesia anterógrada como uno de los efectos secundarios de las BZD."
+    },
+    {
+      "q": "Los ____ son útiles para bloquear manifestaciones periféricas como la taquicardia o el temblor en la ansiedad.",
+      "options": [
+        "Betabloqueant.",
+        "ATC e IMAOs",
+        "Antihistamín."
+      ],
+      "correct": 0,
+      "hint": "Tratamiento de síntomas periféricos.",
+      "explanation": "Los betabloqueantes (prazosina según texto) reducen síntomas noradrenérgicos como taquicardia y temblor."
+    },
+    {
+      "q": "El uso de benzodiacepinas a largo plazo está limitado por el desarrollo de ____ mediado por la regulación a la baja de receptores.",
+      "options": [
+        "Sensibilizac.",
+        "Tolerancia",
+        "Efecto techo"
+      ],
+      "correct": 1,
+      "hint": "Uso a corto vs largo plazo.",
+      "explanation": "La tolerancia a sus efectos farmacológicos obliga a que su uso principal sea en tratamientos de corta duración."
+    },
+    {
+      "q": "Los neurolépticos atípicos han mostrado utilidad clínica específicamente en el tratamiento del ____.",
+      "options": [
+        "TAG-crónico",
+        "Pánico fásico",
+        "Cuadro de TEPT"
+      ],
+      "correct": 2,
+      "hint": "Otros tratamientos en 3.3.2.",
+      "explanation": "El texto menciona que los neurolépticos atípicos pueden ser útiles especialmente en el Trastorno por Estrés Postraumático (TEPT)."
+    },
+    {
+      "q": "A diferencia de las BZD, la buspirona destaca por su falta de interacción con ____.",
+      "options": [
+        "La dieta rica",
+        "El alcohol",
+        "Los AD-ISRS"
+      ],
+      "correct": 1,
+      "hint": "Ventajas de la buspirona.",
+      "explanation": "Una de sus ventajas clave es la ausencia de interacción con alcohol e hipnóticos y la falta de dependencia."
+    },
+    {
+      "q": "En el futuro del tratamiento de la ansiedad, se investigan los antagonistas de la ____ para el trastorno de pánico.",
+      "options": [
+        "Corticotrop.",
+        "Colecistoquin.",
+        "GABA-trans."
+      ],
+      "correct": 1,
+      "hint": "Futuro del tratamiento en 3.3.3.",
+      "explanation": "La colecistoquinina (CCK) es una de las dianas bajo evaluación actual para el trastorno de pánico."
+    },
+    {
+      "q": "La estructura molecular del receptor GABA A está formada por la unión de ____ subunidades transmembrana.",
+      "options": [
+        "Tres-pentám.",
+        "Cinco-unid.",
+        "Siete-unid."
+      ],
+      "correct": 1,
+      "hint": "Estructura del receptor GABA A.",
+      "explanation": "El receptor GABA A es un pentámero formado por 5 subunidades que delimitan el canal de cloro central."
+    },
+    {
+      "q": "El lugar de unión para los ____ se localiza en el complejo receptor GABA A y modula alostéricamente el canal.",
+      "options": [
+        "Neurolépt.",
+        "Barbitúricos",
+        "ATC e IMAOs"
+      ],
+      "correct": 1,
+      "hint": "Moduladores del GABA A.",
+      "explanation": "El complejo incluye sitios de unión para BZD, barbitúricos, alcohol y convulsivantes."
+    },
+    {
+      "q": "La inhibición fásica ocurre en respuesta a concentraciones ____ de GABA liberado en la sinapsis.",
+      "options": [
+        "Basales-cont.",
+        "Pico-explos.",
+        "Tónicas-S."
+      ],
+      "correct": 1,
+      "hint": "Neurotransmisión inhibitoria fásica.",
+      "explanation": "La inhibición fásica se produce en explosiones o picos de concentración de GABA tras su liberación sináptica."
+    },
+    {
+      "q": "Los receptores GABA A que contienen la subunidad ____ se consideran objetivos específicos para regular el sueño.",
+      "options": [
+        "Alfa 1",
+        "Alfa 2",
+        "Alfa 3"
+      ],
+      "correct": 0,
+      "hint": "Subunidades y funciones específicas.",
+      "explanation": "La subunidad alfa 1 se asocia a la regulación del sueño y es diana de agentes sedantes hipnóticos."
+    },
+    {
+      "q": "Las benzodiacepinas de semivida ____ como el lorazepam y el alprazolam son de uso frecuente en clínica.",
+      "options": [
+        "Corta",
+        "Larga",
+        "Ultra-larga"
+      ],
+      "correct": 0,
+      "hint": "Clasificación de vida media en 3.3.1.",
+      "explanation": "Lorazepam y Alprazolam se clasifican explícitamente en el grupo de semivida corta."
+    },
+    {
+      "q": "El aumento excesivo de NA del locus coeruleus puede causar una reducción de la eficiencia en el procesamiento de información en ____.",
+      "options": [
+        "La amígdala B",
+        "El DLPFC",
+        "El PBN-resp"
+      ],
+      "correct": 1,
+      "hint": "Efectos cognitivos de la NA excesiva.",
+      "explanation": "La hiperactivación noradrenérgica reduce la eficiencia en el córtex prefrontal y circuitos CSTC, causando preocupación."
+    },
+    {
+      "q": "La ____ es una benzodiacepina que actúa como agonista específico de los receptores Omega 1.",
+      "options": [
+        "Zolpidem-Q",
+        "Quacepam",
+        "Buspirona"
+      ],
+      "correct": 1,
+      "hint": "Agonistas específicos de Omega 1.",
+      "explanation": "El texto menciona el quacepam y el zolpidem como agonistas específicos para el receptor Omega 1."
+    },
+    {
+      "q": "El efecto ____ de las BZD se refiere a su capacidad para aumentar el apetito en los pacientes.",
+      "options": [
+        "Orexígeno",
+        "Anabólico",
+        "Hiponort."
+      ],
+      "correct": 0,
+      "hint": "Efectos de las BZD en la sección 3.3.1.",
+      "explanation": "Orexígeno es el término técnico utilizado para describir el aumento del apetito."
+    },
+    {
+      "q": "Los receptores GABA A con subunidades alfa 2 y alfa 3 son los supuestos objetivos de las ____.",
+      "options": [
+        "BZD ansiolít.",
+        "BZD hipnót.",
+        "Anticonvuls."
+      ],
+      "correct": 0,
+      "hint": "Subunidades y efectos ansiolíticos.",
+      "explanation": "Estas subunidades son las mediadoras del efecto ansiolítico de las benzodiacepinas."
+    },
+    {
+      "q": "Un agonista ____ en el receptor GABA A disminuiría la conductancia del cloro y aumentaría la ansiedad.",
+      "options": [
+        "Completo",
+        "Parcial",
+        "Inverso"
+      ],
+      "correct": 2,
+      "hint": "Tipos de ligandos benzodiacepínicos.",
+      "explanation": "Los agonistas inversos tienen el efecto opuesto a las BZD habituales: cierran el canal y son ansiogénicos."
+    },
+    {
+      "q": "Los esteroides ____ son una línea de investigación futura que interactúa con el complejo GABA-BZD.",
+      "options": [
+        "Anabólicos",
+        "Neuroactivos",
+        "Cortico-S."
+      ],
+      "correct": 1,
+      "hint": "Futuro del tratamiento en 3.3.3.",
+      "explanation": "Se menciona explícitamente el estudio de esteroides neuroactivos en relación con el complejo receptor."
+    },
+    {
+      "q": "¿Qué características definen la respuesta endocrina del miedo regulada por la amígdala?",
+      "options": [
+        "Activación del eje HHA y aumento de cortisol fásico",
+        "Protección ante amenazas de muy corta duración vital",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Sección 3.2.1, punto 2.",
+      "explanation": "La amígdala conecta con el eje HHA para secretar cortisol, lo cual es adaptativo en amenazas breves."
+    },
+    {
+      "q": "¿Qué efectos indeseables se asocian al uso clínico de las benzodiacepinas?",
+      "options": [
+        "Incoordinación motora leve y sedación diurna",
+        "Disfunciones sexuales y desinhibición agresiva",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Efectos secundarios en 3.3.1.",
+      "explanation": "El texto enumera sedación, incoordinación, desinhibición conductual y disfunciones sexuales entre otros."
+    },
+    {
+      "q": "¿Cuáles son las propiedades farmacológicas deseables de las benzodiacepinas?",
+      "options": [
+        "Efectos ansiolíticos y sedantes hipnóticos",
+        "Acción miorrelajante y anticonvulsivante",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Propiedades en 3.3.1.",
+      "explanation": "Las BZD destacan por sus cuatro efectos principales: ansiolítico, hipnótico, anticonvulsivo y relajante muscular."
+    },
+    {
+      "q": "¿Qué mecanismos regulan las conexiones que fluyen desde y hacia la amígdala?",
+      "options": [
+        "Canales iónicos regulados por voltaje y GABA",
+        "Sistemas de 5HT, NA, Glutamato y factor CRF",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Sección 3.2.1 sobre conexiones de la amígdala.",
+      "explanation": "El texto menciona específicamente todos estos neurotransmisores y canales en la regulación amigdalar."
+    },
+    {
+      "q": "¿Qué componentes integran el sentimiento de preocupación excesiva?",
+      "options": [
+        "Pensamiento catastrófico y expectativas aprensivas",
+        "Presencia de obsesiones y cuadros de tristeza ansiosa",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Definición de preocupación en 3.2.1.",
+      "explanation": "La preocupación incluye tristeza ansiosa, expectativas aprensivas, catastrofismo y obsesiones."
+    },
+    {
+      "q": "¿Qué funciones se atribuyen a los receptores GABA A sensibles a BZD?",
+      "options": [
+        "Localización postsináptica y mediación de inhibición fásica",
+        "Presencia de dos unidades alfa y una unidad gamma 2/3",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Receptores sensibles a BZD en 3.2.2.",
+      "explanation": "Cumplen con los requisitos estructurales y funcionales para ser la diana de las benzodiacepinas."
+    },
+    {
+      "q": "¿Qué manifestaciones clínicas se asocian a una producción excesiva de NA?",
+      "options": [
+        "Pesadillas, estados de hiperalerta y ataques de pánico",
+        "Flashbacks y manifestaciones periféricas de hiperactivación",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Neurotransmisión noradrenérgica en 3.2.2.",
+      "explanation": "La hiperactividad del locus coeruleus produce todos estos síntomas de ansiedad y miedo."
+    },
+    {
+      "q": "¿Para qué trastornos está indicado el tratamiento con benzodiacepinas?",
+      "options": [
+        "Trastorno de pánico, TAG y trastorno obsesivo-compulsivo",
+        "Abstinencia alcohólica, espasmos musculares y epilepsia",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Indicaciones de las BZD en 3.3.1.",
+      "explanation": "Tienen un amplio espectro que incluye trastornos de ansiedad, neurología y psiquiatría general."
+    },
+    {
+      "q": "¿Qué caracteriza a los receptores benzodiacepínicos de tipo 2 (Omega 2)?",
+      "options": [
+        "Distribución amplia en el sistema límbico y el cerebelo",
+        "Acción farmacológica predominantemente ansiolítica",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Subtipos de receptores BZD.",
+      "explanation": "A diferencia de los Omega 1, su acción es puramente ansiolítica y se concentran en zonas límbicas."
+    },
+    {
+      "q": "¿Qué factores determinan la farmacocinética de las benzodiacepinas?",
+      "options": [
+        "Rápida absorción debido a su elevada liposolubilidad",
+        "Eliminación vía renal y presencia de metabolitos activos",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Farmacocinética en 3.3.1.",
+      "explanation": "Son muy liposolubles, se unen a proteínas y se eliminan por el riñón tras pasar por el hígado."
+    },
+    {
+      "q": "¿Qué se observa en el solapamiento sintomático entre ansiedad y depresión?",
+      "options": [
+        "Alta comorbilidad en un mismo paciente de ambos cuadros",
+        "Síntomas comunes como problemas de concentración y sueño",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Sección 3.1.2 sobre solapamiento.",
+      "explanation": "Ambos trastornos comparten síntomas secundarios y presentan una elevadísima comorbilidad clínica."
+    },
+    {
+      "q": "¿Qué neurotransmisores regulan los circuitos CSTC en el córtex prefrontal?",
+      "options": [
+        "Serotonina, GABA, Dopamina y Noradrenalina",
+        "Glutamato y canales iónicos sensibles a voltaje",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Circuitos de la preocupación en 3.2.1.",
+      "explanation": "El feedback de los circuitos de preocupación está mediado por todos estos sistemas químicos."
+    },
+    {
+      "q": "¿Qué caracteriza la degradación del neurotransmisor GABA?",
+      "options": [
+        "Recaptación para almacenamiento en células de la glía",
+        "Destrucción enzimática por la acción de la GABA-T",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Degradación del GABA en 3.2.2.",
+      "explanation": "El GABA se elimina por bombas de recaptación y se inactiva por la enzima GABA transaminasa."
+    },
+    {
+      "q": "¿Qué ventajas ofrece la buspirona frente a las benzodiacepinas?",
+      "options": [
+        "Falta de dependencia y ausencia de síndrome de abstinencia",
+        "Seguridad en pacientes con historia de abuso de drogas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Ventajas de la buspirona en 3.3.2.",
+      "explanation": "Su perfil de seguridad respecto a adicción y alcohol la hace ideal para ciertos perfiles de paciente."
+    },
+    {
+      "q": "¿Qué riesgos cardiovasculares conlleva la respuesta de miedo crónica?",
+      "options": [
+        "Aumento de riesgo de arteriosclerosis e hipertensión",
+        "Isquemia cardíaca, infarto de miocardio o muerte súbita",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Respuesta autónoma en 3.2.1.",
+      "explanation": "La activación repetitiva de LC y PBN por la amígdala daña severamente el sistema cardiovascular."
+    },
+    {
+      "q": "¿Qué líneas de investigación se plantean para el futuro de la ansiedad?",
+      "options": [
+        "Fármacos con perfil de agonista parcial de receptores BZD",
+        "Antagonistas del factor liberador de corticotropina (CRF)",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Sección 3.3.3.",
+      "explanation": "Se buscan perfiles que separen efectos ansiolíticos de los indeseables y nuevas dianas como el CRF."
+    },
+    {
+      "q": "¿En qué procesos de memoria intervienen las benzodiacepinas?",
+      "options": [
+        "Fase de adquisición de información y almacenamiento",
+        "Fase de consolidación y recuperación de los recuerdos",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Efectos sobre la memoria en 3.3.1.",
+      "explanation": "El texto especifica que las BZD afectan a todas las fases de la memoria."
+    },
+    {
+      "q": "¿Qué trastornos se asocian frecuentemente a la ansiedad?",
+      "options": [
+        "Dependencia a drogas y déficit de atención (TDAH)",
+        "Trastorno bipolar, esquizofrenia y depresión mayor",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Comorbilidad en 3.1.2.",
+      "explanation": "La ansiedad aparece frecuentemente asociada a casi todos los grandes grupos de trastornos psiquiátricos."
+    },
+    {
+      "q": "¿Cuál es la función del núcleo parabraquial en la respuesta de miedo?",
+      "options": [
+        "Aumentar el índice glucémico por cortisol",
+        "Reducir la frecuencia de descarga del estriado",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Figura 10 y respuestas autónomas.",
+      "explanation": "El núcleo parabraquial regula el incremento de la frecuencia respiratoria, no el glucémico ni el estriado."
+    },
+    {
+      "q": "¿Qué caracteriza a los receptores GABA A no sensibles a las BZD?",
+      "options": [
+        "Mediar una inhibición de tipo fásico presináptico",
+        "Contener subunidades de tipo alfa 1 o gamma 2 f.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "GABA A no sensibles en 3.2.2.",
+      "explanation": "Median inhibición tónica (no fásica) y contienen subunidades alfa 4, 6 o delta (no alfa 1 ni gamma 2)."
+    },
+    {
+      "q": "¿Cómo actúan los betabloqueantes según el texto analizado?",
+      "options": [
+        "Estimulando los receptores beta postsinápticos m.",
+        "Frenando la síntesis de NA en el locus coeruleus",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Noradrenalina en 3.2.2 y 3.3.2.",
+      "explanation": "Los betabloqueantes bloquean (no estimulan) los receptores beta postsinápticos; no frenan la síntesis, sino la acción."
+    },
+    {
+      "q": "¿Qué efecto provoca un antagonista en el complejo GABA-BZD?",
+      "options": [
+        "Potenciar la conductancia del cloro y la calma",
+        "Aumentar la ansiedad al cerrar el canal de sodio",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Mecanismo de acción de BZD en 3.3.1.",
+      "explanation": "Un antagonista (flumacenilo) revierte los efectos de las BZD, no potencia el cloro ni cierra canales de sodio."
+    },
+    {
+      "q": "¿Cuál es la localización principal de los receptores GABA B?",
+      "options": [
+        "Estructura pentamérica en la hendidura glial",
+        "Canales de cloro postsinápticos de tipo rápido",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Receptores GABA B en 3.2.2.",
+      "explanation": "Son principalmente presinápticos y no forman canales de cloro, sino que se acoplan a proteínas G."
+    },
+    {
+      "q": "¿Qué distingue al meprobramato de los barbitúricos?",
+      "options": [
+        "Su mecanismo de acción estimulando la GABA-T",
+        "La ausencia total de riesgo de dependencia grave",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Historia en 3.3 y 3.3.1.",
+      "explanation": "Su mecanismo es desconocido (depresor medular) y sí presenta riesgo intermedia de dependencia."
+    },
+    {
+      "q": "¿Qué efecto tienen las benzodiacepinas sobre el centro respiratorio?",
+      "options": [
+        "Aumentan la frecuencia respiratoria fásica s.",
+        "Provocan hipertensión pulmonar por canal Cl-",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Efectos secundarios de las BZD.",
+      "explanation": "Provocan depresión de los centros respiratorios y apnea, no aumento de frecuencia ni hipertensión."
+    },
+    {
+      "q": "¿Qué subunidad del GABA A es diana de las BZD ansiolíticas?",
+      "options": [
+        "Subunidad Alfa 1 localizada en el hipocampo S.",
+        "Subunidad Alfa 4 localizada fuera de la sinapsis",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Subunidades y funciones en 3.2.2.",
+      "explanation": "Las BZD ansiolíticas actúan sobre Alfa 2 y Alfa 3; Alfa 1 es sedante y Alfa 4 no es sensible a BZD."
+    },
+    {
+      "q": "¿Cómo se comporta la 5HT en el trastorno de ansiedad?",
+      "options": [
+        "Existe un déficit crónico similar a la depresión",
+        "Se reduce su inervación en el córtex prefrontal",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Neurotransmisión serotoninérgica en 3.2.2.",
+      "explanation": "En la ansiedad hay un aumento de 5HT (no déficit) y la inervación se mantiene en amígdala y CSTC."
+    },
+    {
+      "q": "¿Cuál es la acción principal de los receptores Omega 3?",
+      "options": [
+        "Mediación de la relajación muscular supraespinal",
+        "Control de la respuesta cardiovascular en el LC",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Subtipos de receptores BZD en 3.3.1.",
+      "explanation": "Se distribuyen de forma periférica y no parecen tener acción ansiolítica ni muscular supraespinal."
+    },
+    {
+      "q": "¿Qué efecto tiene la buspirona a nivel presináptico inicial?",
+      "options": [
+        "Agonismo completo que reduce la 5HT fásica T.",
+        "Antagonismo de autorreceptores para elevar NA",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Buspirona en 3.2.2.",
+      "explanation": "Es un agonista parcial de receptores 5HT1A, no un agonista completo ni antagonista de NA."
+    },
+    {
+      "q": "¿En qué año se comercializó por primera vez el Librium?",
+      "options": [
+        "En el año 1930 tras su síntesis por Sternbak",
+        "En el año 1958 tras los estudios controlados S.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Historia de las BZD en 3.3.",
+      "explanation": "Se comercializó en 1960; 1930 fue su síntesis y 1958 los estudios en humanos."
+    },
+    {
+      "q": "¿Qué caracteriza el margen terapéutico de las benzodiacepinas?",
+      "options": [
+        "Es muy estrecho exigiendo monitorización fecal",
+        "Es inexistente debido al riesgo de muerte súbita",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Farmacocinética en 3.3.1.",
+      "explanation": "Su margen terapéutico es muy amplio, lo que las hace seguras en comparación con barbitúricos."
+    },
+    {
+      "q": "¿Qué relación tiene el hipocampo con la ansiedad?",
+      "options": [
+        "Inhibe la amígdala mediante dopamina estriatal",
+        "Sintetiza GABA para los circuitos CSTC del TAG",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Sección 3.2.1, conexiones amigdala.",
+      "explanation": "El hipocampo almacena recuerdos traumáticos que activan la amígdala, no la inhibe ni sintetiza GABA CSTC."
+    },
+    {
+      "q": "¿Qué ocurre si se administra un agonista inverso de BZD?",
+      "options": [
+        "Se produce una relajación muscular profunda f.",
+        "Se potencia la entrada de cloro en la neurona",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Mecanismo de acción de BZD en 3.3.1.",
+      "explanation": "Disminuye la conductancia del cloro (no la potencia) y aumenta la ansiedad (no relaja)."
+    },
+    {
+      "q": "¿Qué ventaja tienen los antihistamínicos en la ansiedad?",
+      "options": [
+        "Son más eficaces que las BZD en el pánico fás.",
+        "Reducen la ansiedad sin provocar somnolencia S.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Otros tratamientos en 3.3.2.",
+      "explanation": "Presentan más ansiedad y menos eficacia para la ansiedad que otros tratamientos."
+    },
+    {
+      "q": "¿Qué enzima transforma el GABA en una sustancia inactiva?",
+      "options": [
+        "Glutamato descarboxilasa presináptica fásica",
+        "Bomba de recaptación de cloro alostérica med.",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Degradación del GABA en 3.2.2.",
+      "explanation": "La enzima es la GABA transaminasa (GABA-T); la GAD lo sintetiza y la bomba lo recaptura, no lo inactiva químicamente."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "Explique la transición de la ansiedad como emoción adaptativa a trastorno psiquiátrico, identificando sus síntomas nucleares según el texto.",
+      "model": "La ansiedad es una emoción normal y adaptativa vinculada a la supervivencia (lucha o huida). Se convierte en trastorno cuando supone una mala adaptación. Sus síntomas nucleares son el miedo (respuesta emocional a una amenaza próxima) y la preocupación excesiva (estado afectivo ante amenazas futuras). El diagnóstico específico depende de síntomas adicionales como fatiga, pánico, evitación fóbica, tensión muscular e irritabilidad.",
+      "keywords": [
+        "lucha o huida",
+        "mala adaptación",
+        "miedo",
+        "preocupación excesiva"
+      ]
+    },
+    {
+      "q": "Analice el solapamiento sintomático entre los trastornos de ansiedad y la depresión mayor.",
+      "model": "Aunque los síntomas nucleares difieren (ánimo deprimido/pérdida de interés en depresión vs. miedo/preocupación en ansiedad), comparten síntomas comunes como problemas de sueño, falta de concentración, fatiga, alteraciones psicomotoras y excitación. Existe una alta comorbilidad entre ambos, además de asociarse frecuentemente con dependencias, TDAH o trastornos psicóticos.",
+      "keywords": [
+        "solapamiento",
+        "comorbilidad",
+        "sueño",
+        "concentración",
+        "fatiga"
+      ]
+    },
+    {
+      "q": "Describa el papel de la amígdala en la neurobiología del miedo y cómo se regula su actividad.",
+      "model": "La amígdala integra información sensitiva y cognitiva para determinar la respuesta de miedo. Está regulada por conexiones recíprocas con el córtex cingulado anterior y el córtex orbitofrontal. Una hiperactividad en estos circuitos genera el sentimiento de miedo, mientras que sus conexiones con otras áreas ejecutan las respuestas motoras, endocrinas y autonómicas.",
+      "keywords": [
+        "amígdala",
+        "córtex cingulado anterior",
+        "córtex orbitofrontal",
+        "hiperactividad"
+      ]
+    },
+    {
+      "q": "Relacione la respuesta motora del miedo con las estructuras cerebrales implicadas.",
+      "model": "La respuesta motora (lucha, huida o parálisis) depende del temperamento del individuo y de las circunstancias. Está regulada por las conexiones recíprocas entre la amígdala y el área gris periacueductal (PAG) del tronco cerebral. La hiperactivación de este circuito desencadena la acción física defensiva.",
+      "keywords": [
+        "respuesta motora",
+        "área gris periacueductal",
+        "PAG",
+        "lucha/huida"
+      ]
+    },
+    {
+      "q": "Explique las implicaciones para la salud física de una activación crónica del eje HHA en contextos de ansiedad.",
+      "model": "Ante una amenaza, la amígdala activa el eje hipotálamo-hipófiso-adrenal (HHA), aumentando el cortisol. Si es crónico, el exceso de cortisol puede provocar enfermedad arterial coronaria, diabetes tipo II, infarto cerebral, atrofia cerebral y supresión del sistema inmune, pasando de ser un mecanismo de supervivencia a un riesgo patológico.",
+      "keywords": [
+        "eje HHA",
+        "cortisol",
+        "diabetes tipo II",
+        "enfermedad coronaria"
+      ]
+    },
+    {
+      "q": "Compare las vías neuroanatómicas de las respuestas autonómicas cardiovascular y respiratoria ante el miedo.",
+      "model": "Ambas nacen de la amígdala pero proyectan a sitios distintos: el incremento de frecuencia cardíaca y tensión arterial se regula vía Locus Coeruleus (LC), mientras que el aumento de la frecuencia respiratoria y dificultades como el asma se regulan a través del Núcleo Parabraquial (PBN).",
+      "keywords": [
+        "Locus Coeruleus",
+        "Núcleo Parabraquial",
+        "frecuencia cardíaca",
+        "respiración"
+      ]
+    },
+    {
+      "q": "Defina el circuito CSTC y su relación con el síntoma de la preocupación.",
+      "model": "La preocupación excesiva (tristeza ansiosa, obsesiones, pensamiento catastrófico) se vincula a los circuitos de feedback córtico-estriado-talámico-corticales (CSTC) localizados en el córtex prefrontal. Estos circuitos están regulados por neurotransmisores como 5HT, GABA, DA, NA y glutamato.",
+      "keywords": [
+        "CSTC",
+        "córtex prefrontal",
+        "preocupación",
+        "feedback"
+      ]
+    },
+    {
+      "q": "Justifique por qué el hipocampo es relevante en el Trastorno por Estrés Postraumático (TEPT).",
+      "model": "El hipocampo almacena recuerdos traumáticos. En el TEPT, la ansiedad se desencadena cuando estos recuerdos son activados debido a su conexión recíproca con la amígdala, integrando la memoria episódica con la respuesta emocional de miedo.",
+      "keywords": [
+        "hipocampo",
+        "recuerdos traumáticos",
+        "TEPT",
+        "amígdala"
+      ]
+    },
+    {
+      "q": "Mencione los tres sistemas de neurotransmisión principales implicados en la ansiedad y la evidencia clínica que lo respalda.",
+      "model": "1. GABAérgico (eficacia de BZD). 2. Noradrenérgico (eficacia de ATC e IMAO en pánico). 3. Serotoninérgico (eficacia de ISRS en TOC, TEPT y fobia social). La respuesta positiva a estos fármacos confirma la implicación de estos sistemas en la fisiopatología del trastorno.",
+      "keywords": [
+        "GABA",
+        "Noradrenalina",
+        "Serotonina",
+        "evidencia clínica"
+      ]
+    },
+    {
+      "q": "Describa el proceso de síntesis y degradación del neurotransmisor GABA.",
+      "model": "Se sintetiza a partir del glutamato mediante la enzima glutamato descarboxilasa. Se degrada por dos vías: recaptación (bomba de GABA hacia neuronas o glía) o transformación enzimática mediante la GABA transaminasa, que lo convierte en una sustancia inactiva.",
+      "keywords": [
+        "glutamato descarboxilasa",
+        "GABA transaminasa",
+        "recaptación",
+        "inhibidor"
+      ]
+    },
+    {
+      "q": "Explique la estructura y función del complejo receptor GABA A.",
+      "model": "Es un receptor ionotrópico que controla un canal de cloro. Está formado por 5 subunidades con regiones transmembrana. Posee lugares de unión para GABA y moduladores alostéricos (BZD, alcohol, barbitúricos). Su activación aumenta la entrada de cloro, produciendo hiperpolarización e inhibición neuronal.",
+      "keywords": [
+        "ionotrópico",
+        "canal de cloro",
+        "subunidades",
+        "modulación alostérica"
+      ]
+    },
+    {
+      "q": "Diferencie entre la inhibición fásica y tónica en los receptores GABA A.",
+      "model": "La inhibición fásica ocurre en receptores sinápticos sensibles a BZD ante picos de GABA liberado. La inhibición tónica ocurre en receptores extrasinápticos (no sensibles a BZD, con subunidades alfa4/6 o delta) que responden al GABA ambiental y neuroesteroides, estableciendo el tono de excitabilidad global de la neurona.",
+      "keywords": [
+        "fásica",
+        "tónica",
+        "extrasináptico",
+        "excitabilidad"
+      ]
+    },
+    {
+      "q": "Analice la importancia de las subunidades alfa en la selectividad de los efectos de las benzodiazepinas.",
+      "model": "Los receptores con subunidad alfa1 median efectos sedantes e hipnóticos. Aquellos con subunidades alfa2 o alfa3 son los responsables de regular la ansiedad (efecto ansiolítico). Esta distinción es clave para el desarrollo de fármacos más selectivos que eviten la sedación.",
+      "keywords": [
+        "alfa1",
+        "alfa2",
+        "alfa3",
+        "sedación",
+        "ansiolítico"
+      ]
+    },
+    {
+      "q": "Compare los receptores GABA B y GABA C.",
+      "model": "GABA B es metabotrópico (proteína G), presináptico, ligado al baclofeno y modula canales de calcio/potasio. GABA C es ionotrópico (canal de cloro), no es sensible a BZD y su papel fisiológico es menos claro. A diferencia del GABA A, el GABA B no tiene modulación alostérica por BZD.",
+      "keywords": [
+        "metabotrópico",
+        "baclofeno",
+        "GABA B",
+        "GABA C"
+      ]
+    },
+    {
+      "q": "Explique las consecuencias de la producción excesiva de noradrenalina desde el Locus Coeruleus.",
+      "model": "Provoca hiperactivación autonómica (pesadillas, hiperalerta, pánico) y reduce la eficiencia del procesamiento de información en el córtex prefrontal (CSTC), lo que genera preocupación excesiva. Se trata con agonistas alfa2 (frenan liberación) o betabloqueantes (bloquean receptores postsinápticos).",
+      "keywords": [
+        "Locus Coeruleus",
+        "hiperactivación",
+        "preocupación",
+        "alfa2"
+      ]
+    },
+    {
+      "q": "Argumente la diferencia de niveles de serotonina en depresión frente a ansiedad y el papel de la buspirona.",
+      "model": "En depresión suele haber un déficit de 5HT, mientras que en ansiedad hay un aumento. La buspirona es un agonista parcial 5HT1A que regula esta neurotransmisión. Actúa de forma retardada al provocar la regulación a la baja de los receptores presinápticos, compensando el exceso de serotonina.",
+      "keywords": [
+        "déficit vs aumento",
+        "buspirona",
+        "5HT1A",
+        "regulación a la baja"
+      ]
+    },
+    {
+      "q": "Describa la evolución histórica de los ansiolíticos antes de las benzodiazepinas y sus riesgos.",
+      "model": "Se usó alcohol, bromuros y luego barbitúricos (ej. fenobarbital). Los barbitúricos tienen bajo perfil de seguridad, alto riesgo de sobredosis, grave dependencia y síndrome de abstinencia. Posteriormente surgió el meprobamato (miorrelajante) antes del descubrimiento de las BZD en los años 30-50.",
+      "keywords": [
+        "barbitúricos",
+        "meprobamato",
+        "dependencia",
+        "sobredosis"
+      ]
+    },
+    {
+      "q": "Resuma los efectos fisiológicos principales de las benzodiazepinas.",
+      "model": "Presentan efectos ansiolíticos, sedantes/hipnóticos (con efecto rebote), orexígenos (aumentan apetito), miorrelajantes, anticonvulsivantes (frenan difusión del foco) y efectos sobre la memoria (adquisición, consolidación y recuperación).",
+      "keywords": [
+        "ansiolítico",
+        "orexígeno",
+        "miorrelajante",
+        "memoria"
+      ]
+    },
+    {
+      "q": "Diferencie los tres tipos de receptores benzodiacepínicos (Omega 1, 2 y 3).",
+      "model": "Omega 1: en corteza e hipocampo, acción ansiolítica y sedante-hipnótica (agonistas: zolpidem). Omega 2: en sistema límbico y cerebelo, acción puramente ansiolítica. Omega 3: distribución periférica, sin acción ansiolítica conocida.",
+      "keywords": [
+        "Omega 1",
+        "Omega 2",
+        "Omega 3",
+        "sistema límbico"
+      ]
+    },
+    {
+      "q": "Clasifique las benzodiazepinas según su semivida, aportando ejemplos.",
+      "model": "Semivida corta: Oxazepam, Lorazepam, Alprazolam. Semivida larga: Diazepam (Valium), Clordiacepóxido (Librium), Clonazepam. Las de vida larga suelen generar metabolitos activos y requieren precaución en ancianos.",
+      "keywords": [
+        "semivida corta",
+        "semivida larga",
+        "Diazepam",
+        "Alprazolam"
+      ]
+    },
+    {
+      "q": "Explique detalladamente el mecanismo de acción de la modulación alostérica positiva de las BZD.",
+      "model": "Las BZD se unen a un sitio específico del receptor GABA A. No tienen efecto por sí mismas; requieren la presencia de GABA. Cuando el GABA está presente, la BZD potencia su acción aumentando la conductancia al cloro. Si se usa un antagonista como flumacenilo, se revierte este efecto.",
+      "keywords": [
+        "modulación alostérica positiva",
+        "conductancia al cloro",
+        "GABA dependiente",
+        "flumacenilo"
+      ]
+    },
+    {
+      "q": "Compare los efectos de un agonista completo, un agonista inverso y un agonista parcial en el receptor BZD.",
+      "model": "Agonista completo: máximo aumento de cloro, baja ansiedad pero con efectos secundarios. Agonista inverso: disminuye cloro y aumenta la ansiedad. Agonista parcial: busca separar el efecto ansiolítico de los efectos indeseables (sedación).",
+      "keywords": [
+        "agonista inverso",
+        "agonista parcial",
+        "conductancia de cloro"
+      ]
+    },
+    {
+      "q": "Identifique las principales indicaciones clínicas de las benzodiazepinas mencionadas en el texto.",
+      "model": "Se indican para TAG, pánico, TOC, insomnio, síndrome de abstinencia (alcohol/barbitúricos), epilepsia, espasmos musculares y para potenciar neurolépticos en esquizofrenia o tratar la acatisia.",
+      "keywords": [
+        "TAG",
+        "abstinencia",
+        "epilepsia",
+        "acatisia"
+      ]
+    },
+    {
+      "q": "Analice los efectos secundarios de las BZD y por qué requieren precaución en ancianos.",
+      "model": "Provocan sedación, confusión, deterioro de funciones mentales (atención, reacción), amnesia anterógrada y desinhibición. En ancianos, la confusión y la desorientación son frecuentes; además, su metabolismo hepático más lento aumenta el riesgo de toxicidad.",
+      "keywords": [
+        "sedación",
+        "amnesia anterógrada",
+        "ancianos",
+        "confusión"
+      ]
+    },
+    {
+      "q": "Explique por qué las BZD son consideradas 'agentes sintomáticos' y cuál es la limitación de su uso a largo plazo.",
+      "model": "Son agentes sintomáticos porque alivian los síntomas pero no tratan la causa raíz. Su uso a largo plazo está limitado por el desarrollo de tolerancia (regulación a la baja de receptores) y dependencia física/psíquica.",
+      "keywords": [
+        "sintomáticos",
+        "tolerancia",
+        "dependencia",
+        "largo plazo"
+      ]
+    },
+    {
+      "q": "Mencione las ventajas de la buspirona frente a las benzodiazepinas.",
+      "model": "No interactúa con el alcohol ni hipnóticos, no genera dependencia ni síndrome de abstinencia, y es más segura en pacientes con historial de abuso de sustancias o en ancianos. Su principal inconveniente es el efecto terapéutico retardado.",
+      "keywords": [
+        "buspirona",
+        "sin dependencia",
+        "seguridad",
+        "abuso de drogas"
+      ]
+    },
+    {
+      "q": "Relacione el uso de agonistas alfa2 y betabloqueantes con los síntomas periféricos de la ansiedad.",
+      "model": "Se usan como tratamiento coadyuvante para bloquear manifestaciones noradrenérgicas como la taquicardia, el temblor y la dilatación de pupilas, mejorando el componente físico de la ansiedad.",
+      "keywords": [
+        "clonidina",
+        "prazosina",
+        "taquicardia",
+        "temblor"
+      ]
+    },
+    {
+      "q": "Indique en qué casos están recomendados los ATC, IMAO e ISRS dentro de los trastornos de ansiedad.",
+      "model": "Están indicados para tratamientos de larga duración y especialmente en pacientes que presentan comorbilidad de ansiedad y depresión, donde las BZD no serían suficientes como tratamiento único.",
+      "keywords": [
+        "ISRS",
+        "ATC",
+        "tratamiento largo",
+        "comorbilidad"
+      ]
+    },
+    {
+      "q": "Describa tres líneas de investigación futuras para el tratamiento de la ansiedad según el texto.",
+      "model": "1. Fármacos con perfil de agonista parcial BZD. 2. Antagonistas de la colecistoquinina (para el pánico). 3. Antagonistas del factor liberador de corticotropina (CRF) y esteroides neuroactivos que interactúen con el complejo GABA.",
+      "keywords": [
+        "colecistoquinina",
+        "CRF",
+        "esteroides neuroactivos"
+      ]
+    },
+    {
+      "q": "Analice la relación entre el sistema endocrino y el sistema nervioso en la producción del miedo según Stahl.",
+      "model": "La amígdala tiene conexiones recíprocas con el eje HHA e hipotálamo. El miedo activa esta vía provocando la liberación de cortisol. Mientras que el SN gestiona la respuesta inmediata (lucha/huida), el sistema endocrino prepara al organismo para la resistencia, aunque su sobrecarga crónica es patogénica.",
+      "keywords": [
+        "eje HHA",
+        "amígdala",
+        "cortisol",
+        "Stahl"
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Sintomatología",
+      "q": "¿Cómo se define la ansiedad desde una perspectiva evolutiva y cuándo pasa a considerarse un trastorno?",
+      "a": "Es una emoción normal de supervivencia (lucha/huida) ante amenazas; se vuelve trastorno cuando es desadaptativa y presenta miedo o preocupación excesiva."
+    },
+    {
+      "cat": "Sintomatología",
+      "q": "¿Cuáles son los dos síntomas nucleares que definen a los trastornos de ansiedad según el texto?",
+      "a": "El miedo y la preocupación excesiva."
+    },
+    {
+      "cat": "Sintomatología",
+      "q": "Además de los síntomas nucleares, ¿qué otras manifestaciones clínicas determinan el tipo específico de trastorno de ansiedad?",
+      "a": "Fatiga, activación, ataques de pánico, evitación fóbica, compulsiones, tensión muscular, irritabilidad, alteraciones del sueño y problemas de concentración."
+    },
+    {
+      "cat": "Sintomatología",
+      "q": "¿Qué síntomas comparten frecuentemente la depresión mayor y los trastornos de ansiedad?",
+      "a": "Problemas de sueño, problemas de concentración, fatiga, alteraciones psicomotoras y excitación."
+    },
+    {
+      "cat": "Sintomatología",
+      "q": "¿Cuál es la diferencia fundamental entre los síntomas nucleares de la depresión mayor y los de la ansiedad?",
+      "a": "En la depresión son el ánimo deprimido y la pérdida de interés/placer; en la ansiedad son el miedo y la preocupación excesiva."
+    },
+    {
+      "cat": "Sintomatología",
+      "q": "¿Con qué otros trastornos psiquiátricos suele presentar comorbilidad la ansiedad?",
+      "a": "Dependencia a drogas, déficit de atención, trastorno bipolar y esquizofrenia."
+    },
+    {
+      "cat": "Neurobiología del Miedo",
+      "q": "¿Qué estructura cerebral integra la información sensitiva y cognitiva para determinar la respuesta de miedo?",
+      "a": "La amígdala."
+    },
+    {
+      "cat": "Neurobiología del Miedo",
+      "q": "¿A través de qué conexiones corticales se regula el sentimiento de miedo en la amígdala?",
+      "a": "Mediante conexiones recíprocas con el córtex cingulado anterior y el córtex orbitofrontal."
+    },
+    {
+      "cat": "Neurobiología del Miedo",
+      "q": "¿Qué sucede a nivel neurobiológico cuando hay una hiperactividad en los circuitos de la amígdala?",
+      "a": "Se produce el sentimiento de miedo."
+    },
+    {
+      "cat": "Neurobiología del Miedo",
+      "q": "¿Qué estructura cerebral regula específicamente la respuesta motora de miedo (lucha, huida o parálisis)?",
+      "a": "El área gris periacueductal (PAG) del tronco cerebral en conexión con la amígdala."
+    },
+    {
+      "cat": "Neurobiología del Miedo",
+      "q": "¿Cómo se produce la respuesta endocrina del miedo a través del eje HHA?",
+      "a": "La amígdala activa el eje hipotálamo-hipófiso-adrenal, provocando un aumento en la secreción de cortisol."
+    },
+    {
+      "cat": "Neurobiología del Miedo",
+      "q": "¿Qué riesgos para la salud conlleva el aumento crónico y persistente de cortisol debido a la ansiedad?",
+      "a": "Enfermedad arterial coronaria, diabetes tipo II, infarto cerebral y atrofia cerebral."
+    },
+    {
+      "cat": "Neurobiología del Miedo",
+      "q": "¿Qué conexión cerebral regula el incremento de la frecuencia cardíaca y la tensión arterial en la ansiedad?",
+      "a": "Las conexiones recíprocas entre la amígdala y el locus coeruleus (LC)."
+    },
+    {
+      "cat": "Neurobiología del Miedo",
+      "q": "¿Qué estructura es responsable de regular el incremento de la frecuencia respiratoria durante el miedo?",
+      "a": "El núcleo parabraquial (PBN) a través de sus conexiones con la amígdala."
+    },
+    {
+      "cat": "Neurobiología del Miedo",
+      "q": "¿Qué consecuencias cardiovasculares pueden derivar de respuestas autonómicas de miedo crónicas o inapropiadas?",
+      "a": "Arteriosclerosis, isquemia cardíaca, hipertensión, infarto de miocardio o muerte súbita."
+    },
+    {
+      "cat": "Neurobiología del Miedo",
+      "q": "¿Cómo influye el hipocampo en el desencadenamiento de la ansiedad, especialmente en el TEPT?",
+      "a": "Almacena recuerdos traumáticos que, al activarse por su conexión con la amígdala, disparan la respuesta de ansiedad."
+    },
+    {
+      "cat": "Neurobiología del Miedo",
+      "q": "¿Qué neurotransmisores regulan las conexiones que entran y salen de la amígdala?",
+      "a": "5HT (serotonina), GABA, glutamato, factor de liberación de corticotropina (CRF), NA (noradrenalina) y canales iónicos."
+    },
+    {
+      "cat": "Neurobiología de la Preocupación",
+      "q": "¿Qué manifestaciones cognitivas incluye el síntoma nuclear de 'preocupación excesiva'?",
+      "a": "Tristeza ansiosa, expectativas aprensivas, pensamiento catastrófico y obsesiones."
+    },
+    {
+      "cat": "Neurobiología de la Preocupación",
+      "q": "¿Con qué circuitos cerebrales está relacionada la preocupación excesiva?",
+      "a": "Con los circuitos de feedback córtico-estriado-talámico-corticales (CSTC) en el córtex prefrontal."
+    },
+    {
+      "cat": "Neurobiología de la Preocupación",
+      "q": "¿Qué neurotransmisores regulan los circuitos CSTC responsables de la preocupación?",
+      "a": "5HT, GABA, DA (dopamina), NA, glutamato y canales iónicos sensibles a voltaje."
+    },
+    {
+      "cat": "Neurobiología",
+      "q": "¿Qué diferencia principal existe en la liberación de sustancias entre el circuito del miedo y el de la preocupación?",
+      "a": "El circuito del miedo presenta adicionalmente la liberación de CRF (factor de liberación de corticotropina)."
+    },
+    {
+      "cat": "Neurotransmisión",
+      "q": "¿Qué evidencias históricas sugieren la implicación del sistema GABAérgico en la ansiedad?",
+      "a": "La alta eficacia clínica de las benzodiacepinas en el tratamiento de estos trastornos."
+    },
+    {
+      "cat": "Neurotransmisión",
+      "q": "¿Por qué se asume que la noradrenalina (NA) interviene en el pánico y el TOC?",
+      "a": "Debido a que en 1970 se observó que los ATC y los IMAOs eran efectivos para tratarlos."
+    },
+    {
+      "cat": "Neurotransmisión",
+      "q": "¿Qué hallazgo en 1990 reforzó la teoría de la implicación serotoninérgica en la ansiedad?",
+      "a": "El uso exitoso de los ISRS para tratar el TOC, pánico, TEPT y fobia social."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿Cuál es la función principal del GABA en el cerebro en relación con la ansiedad?",
+      "a": "Es el principal inhibidor; reduce la actividad de las neuronas en los circuitos del miedo y la preocupación."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿A partir de qué sustancia y mediante qué enzima se sintetiza el GABA?",
+      "a": "Se sintetiza a partir del glutamato mediante la acción de la enzima glutamato descarboxilasa."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿Cuáles son las dos vías principales de degradación o eliminación del GABA de la sinapsis?",
+      "a": "La bomba de recaptación (hacia neuronas o glía) y la enzima GABA transaminasa (que lo inactiva)."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿Qué caracteriza a los receptores GABA A en cuanto a su mecanismo de acción?",
+      "a": "Son ionotrópicos, controlan un canal de cloro y tienen múltiples lugares de unión alostérica (BZD, alcohol, barbitúricos)."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿De qué efectos clínicos es responsable hipotéticamente el complejo receptor GABA A?",
+      "a": "Ataques convulsivos, efectos de anticonvulsivos, efectos del alcohol, ansiolisis, sedación y relajación muscular."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿Cuál es la estructura molecular básica de un receptor GABA A?",
+      "a": "Está formado por 5 subunidades que rodean un canal central de cloro."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿Qué subunidades específicas debe tener un receptor GABA A para ser sensible a las benzodiacepinas?",
+      "a": "Dos unidades beta, una unidad gamma (2 o 3) y dos unidades alfa (1, 2 o 3)."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿En qué se diferencia la inhibición fásica de la tónica en los receptores GABA A?",
+      "a": "La fásica ocurre en explosiones por GABA en la sinapsis (sensibles a BZD); la tónica es constante por niveles ambientales de GABA (no sensibles a BZD)."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿Qué función clínica se asocia predominantemente a los receptores GABA A con subunidad alfa-1?",
+      "a": "La regulación del sueño y los efectos sedantes-hipnóticos."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿Qué subunidades del receptor GABA A son el objetivo principal para regular la ansiedad sin sedación excesiva?",
+      "a": "Las subunidades alfa-2 y/o alfa-3."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿Qué subunidades caracterizan a los receptores GABA A que NO son sensibles a las benzodiacepinas?",
+      "a": "Alfa-4, alfa-6, gamma-1 o delta."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿Dónde se localizan los receptores GABA A no sensibles a BZD y qué sustancias los modulan?",
+      "a": "Fuera de la sinapsis; se unen a neuroesteroides endógenos, alcohol y anestésicos generales."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿Qué distingue al receptor GABA B del GABA A?",
+      "a": "El GABA B es metabotrópico (proteína G), no se modula por BZD y se ligue al baclofeno."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿En qué funciones del sistema nervioso central parece intervenir el receptor GABA B?",
+      "a": "Dolor, memoria y estado de ánimo; suelen ser presinápticos."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿Qué se sabe sobre el papel fisiológico del receptor GABA C?",
+      "a": "Es ionotrópico (canal de cloro), pero su papel no está claro y parece que no le afectan las BZD."
+    },
+    {
+      "cat": "Neurotransmisión Noradrenérgica",
+      "q": "¿Qué efectos produce el exceso de noradrenalina liberada desde el locus coeruleus?",
+      "a": "Pesadillas, estados de hiperalerta, flashbacks, ataques de pánico y manifestaciones periféricas autonómicas."
+    },
+    {
+      "cat": "Neurotransmisión Noradrenérgica",
+      "q": "¿Cómo afecta la hiperactividad noradrenérgica al procesamiento cognitivo?",
+      "a": "Reduce la eficiencia del procesamiento en el córtex prefrontal y circuitos CSTC, causando preocupación excesiva."
+    },
+    {
+      "cat": "Neurotransmisión Noradrenérgica",
+      "q": "¿Cuál es el mecanismo de acción de la clonidina para reducir la ansiedad?",
+      "a": "Es un agonista alfa-2 que estimula los autorreceptores para frenar la liberación de noradrenalina."
+    },
+    {
+      "cat": "Neurotransmisión Noradrenérgica",
+      "q": "¿Para qué se utilizan los betabloqueantes como la prazosina en los trastornos de ansiedad?",
+      "a": "Para bloquear los receptores beta postsinápticos y reducir síntomas físicos como taquicardia o temblor."
+    },
+    {
+      "cat": "Neurotransmisión Serotoninérgica",
+      "q": "¿Qué diferencia existe en los niveles de serotonina (5HT) entre la depresión y la ansiedad?",
+      "a": "En la depresión hay un déficit de 5HT, mientras que en la ansiedad se observa un aumento de 5HT."
+    },
+    {
+      "cat": "Neurotransmisión Serotoninérgica",
+      "q": "¿Qué áreas cerebrales inerva la serotonina para regular el miedo y la preocupación?",
+      "a": "La amígdala y los elementos de los circuitos CSTC (córtex prefrontal, estriado y tálamo)."
+    },
+    {
+      "cat": "Neurotransmisión Serotoninérgica",
+      "q": "¿Cuál es el mecanismo de acción farmacológico de la buspirona?",
+      "a": "Es un agonista parcial de los receptores 5HT1A tanto pre como postsinápticos."
+    },
+    {
+      "cat": "Neurotransmisión Serotoninérgica",
+      "q": "¿Por qué el efecto terapéutico de la buspirona es retardado?",
+      "a": "Porque requiere tiempo para producir la regulación a la baja de los receptores presinápticos 5HT1A."
+    },
+    {
+      "cat": "Historia de Ansiolíticos",
+      "q": "¿Qué riesgos principales presentaban los barbitúricos utilizados antiguamente para la ansiedad?",
+      "a": "Grave dependencia, síndrome de abstinencia, bajo perfil de seguridad (sobredosis) e interacción peligrosa con alcohol."
+    },
+    {
+      "cat": "Historia de Ansiolíticos",
+      "q": "¿Qué características definen al meprobamato desarrollado por Frank M. Berger en 1954?",
+      "a": "Es un miorrelajante y anticonvulsivo que actúa como depresor medular, situado entre barbitúricos y BZD."
+    },
+    {
+      "cat": "Historia de Ansiolíticos",
+      "q": "¿Cuál fue la primera benzodiacepina comercializada y en qué año?",
+      "a": "El clordiacepóxido, comercializado como Librium en 1960."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Cuáles son los cuatro efectos deseables principales de las benzodiacepinas?",
+      "a": "Ansiolítico, sedante-hipnótico, anticonvulsivo y relajante muscular."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Por qué las BZD desplazaron a los barbitúricos en la práctica clínica?",
+      "a": "Por su efectividad para aliviar síntomas y, sobre todo, por su mayor seguridad en la administración."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Qué diferencia hay en el desarrollo de tolerancia entre el efecto ansiolítico y el hipnótico de las BZD?",
+      "a": "La tolerancia al efecto ansiolítico se desarrolla de forma más lenta que la del efecto hipnótico."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Qué significa que las BZD tengan un efecto orexígeno?",
+      "a": "Significa que producen un aumento del apetito."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Cómo actúan las BZD como anticonvulsivantes si no eliminan la descarga anormal?",
+      "a": "Impiden la difusión del foco epiléptico a otras áreas del cerebro."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Qué procesos de la memoria se ven afectados por el uso de benzodiacepinas?",
+      "a": "Afectan a la adquisición, consolidación y recuperación de la información."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿A qué se debe que diferentes BZD presenten distintos perfiles de intensidad de efecto?",
+      "a": "A su diferente afinidad por los distintos tipos de lugares de unión en el complejo receptor GABA A."
+    },
+    {
+      "cat": "Receptores BZD",
+      "q": "¿Dónde se localizan los receptores BZD-1 (omega 1) y qué acciones median?",
+      "a": "En la formación reticular, corteza cerebral e hipocampo; median acción ansiolítica y sedante-hipnótica."
+    },
+    {
+      "cat": "Receptores BZD",
+      "q": "¿Qué fármacos actúan como agonistas específicos de los receptores omega 1?",
+      "a": "El quacepam y el zolpidem."
+    },
+    {
+      "cat": "Receptores BZD",
+      "q": "¿Cuál es la distribución y acción principal de los receptores BZD-2 (omega 2)?",
+      "a": "Se distribuyen en el sistema límbico y cerebelo; su acción es especialmente ansiolítica."
+    },
+    {
+      "cat": "Receptores BZD",
+      "q": "¿Qué se sabe sobre los receptores BZD-3 (omega 3)?",
+      "a": "Tienen distribución periférica y no parecen tener acción ansiolítica."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "Menciona tres ejemplos de benzodiacepinas de semivida corta.",
+      "a": "Oxazepam, Lorazepam y Alprazolam (también Temazepam y Triazolam)."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "Menciona tres ejemplos de benzodiacepinas de semivida larga.",
+      "a": "Diazepam (Valium), Clordiacepóxido (Librium) y Clonazepam (también Flurazepam, Flunitrazepam y Mitrazepam)."
+    },
+    {
+      "cat": "Farmacocinética",
+      "q": "¿Cómo es la absorción de las BZD y cómo se eliminan del organismo?",
+      "a": "Presentan una rápida absorción (por su alta liposolubilidad) y se eliminan por vía renal."
+    },
+    {
+      "cat": "Farmacocinética",
+      "q": "¿En qué grupos de población se debe administrar BZD con especial precaución según el texto?",
+      "a": "En ancianos y en pacientes con hepatopatías."
+    },
+    {
+      "cat": "Mecanismo de Acción",
+      "q": "¿Qué es la modulación alostérica positiva en el contexto de las BZD?",
+      "a": "Es la unión de la BZD a su sitio específico que potencia la acción del GABA, aumentando la conductancia del cloro."
+    },
+    {
+      "cat": "Mecanismo de Acción",
+      "q": "¿Es posible que las BZD ejerzan su efecto si el GABA no está presente en el receptor?",
+      "a": "No, es estrictamente necesario que el neurotransmisor GABA esté ocupando el receptor."
+    },
+    {
+      "cat": "Farmacología",
+      "q": "¿Para qué se utiliza el flumacenilo en relación con las benzodiacepinas?",
+      "a": "Se utiliza como antagonista para revertir sus efectos, especialmente en casos de sobredosis."
+    },
+    {
+      "cat": "Farmacología",
+      "q": "¿Qué efecto tiene un agonista inverso en el receptor GABA-BZD?",
+      "a": "Disminuye la conductancia del cloro y aumenta los niveles de ansiedad."
+    },
+    {
+      "cat": "Farmacología",
+      "q": "¿Cuál es la ventaja teórica de un agonista parcial de los receptores BZD?",
+      "a": "Su capacidad para separar los efectos ansiolíticos de los efectos indeseables (como la sedación)."
+    },
+    {
+      "cat": "Indicaciones Clínicas",
+      "q": "Además del TAG y el pánico, ¿para qué otros trastornos están indicadas las BZD?",
+      "a": "TOC, fobias, insomnio, síndrome de abstinencia alcohólica, epilepsia, espasmos musculares y catatonia."
+    },
+    {
+      "cat": "Indicaciones Clínicas",
+      "q": "¿Qué papel cumplen las BZD en el tratamiento de la esquizofrenia?",
+      "a": "Se utilizan para potenciar la acción de los fármacos neurolépticos."
+    },
+    {
+      "cat": "Efectos Secundarios",
+      "q": "¿Qué efectos secundarios mentales producen las BZD en cuanto al rendimiento cognitivo?",
+      "a": "Deterioro de funciones mentales, disminución de la atención y concentración, e incremento del tiempo de reacción."
+    },
+    {
+      "cat": "Efectos Secundarios",
+      "q": "¿Qué es la amnesia anterógrada asociada a las benzodiacepinas?",
+      "a": "Es la incapacidad de formar o recordar nuevos recuerdos después de la administración del fármaco."
+    },
+    {
+      "cat": "Efectos Secundarios",
+      "q": "¿Qué efectos secundarios conductuales paradójicos pueden aparecer con las BZD?",
+      "a": "Desinhibición conductual y agresividad."
+    },
+    {
+      "cat": "Efectos Secundarios",
+      "q": "¿Qué riesgos respiratorios conlleva el uso de benzodiacepinas?",
+      "a": "Depresión de los centros respiratorios y apnea."
+    },
+    {
+      "cat": "Efectos Secundarios",
+      "q": "¿A qué se debe el desarrollo de tolerancia en el uso de benzodiacepinas?",
+      "a": "A la regulación a la baja (down-regulation) de sus sitios de acción en el cerebro."
+    },
+    {
+      "cat": "Tratamiento",
+      "q": "¿Por qué se dice que las BZD son 'agentes sintomáticos'?",
+      "a": "Porque alivian los síntomas de la ansiedad pero no curan el trastorno, y solo son útiles a corto plazo."
+    },
+    {
+      "cat": "Otros Tratamientos",
+      "q": "¿Qué fármacos se usan para bloquear los síntomas físicos adrenérgicos (taquicardia, temblor) de la ansiedad?",
+      "a": "La clonidina (agonista alfa-2) y la prazosina (betabloqueante)."
+    },
+    {
+      "cat": "Otros Tratamientos",
+      "q": "¿Qué tres ventajas principales ofrece la buspirona frente a las benzodiacepinas?",
+      "a": "No interactúa con alcohol/hipnóticos, no causa dependencia ni abstinencia, y es segura en pacientes con historial de abuso de drogas."
+    },
+    {
+      "cat": "Otros Tratamientos",
+      "q": "¿En qué casos clínicos específicos se recomienda el uso de buspirona?",
+      "a": "En ansiedad crónica y persistente, en ancianos y en pacientes con antecedentes de abuso de sustancias."
+    },
+    {
+      "cat": "Otros Tratamientos",
+      "q": "¿Para qué trastorno de ansiedad específico pueden ser útiles los neurolépticos atípicos?",
+      "a": "Especialmente en el Trastorno por Estrés Postraumático (TEPT)."
+    },
+    {
+      "cat": "Otros Tratamientos",
+      "q": "¿Cuándo están indicados los antidepresivos (ATC, IMAOs e ISRS) en la ansiedad?",
+      "a": "En tratamientos de larga duración y cuando el paciente presenta comorbilidad con depresión."
+    },
+    {
+      "cat": "Otros Tratamientos",
+      "q": "¿Cuál es el inconveniente de usar antihistamínicos para la ansiedad según el texto?",
+      "a": "Tienen menos eficacia y, paradójicamente, pueden provocar más ansiedad."
+    },
+    {
+      "cat": "Futuro",
+      "q": "¿Qué tipo de fármacos se buscan actualmente para mejorar el perfil de seguridad de las BZD?",
+      "a": "Fármacos con perfil de agonista parcial de los receptores de benzodiacepinas."
+    },
+    {
+      "cat": "Futuro",
+      "q": "¿Qué compuesto está bajo evaluación específica para el tratamiento del trastorno de pánico?",
+      "a": "Los antagonistas de la colecistoquinina."
+    },
+    {
+      "cat": "Futuro",
+      "q": "¿Qué se está investigando en animales respecto al factor liberador de corticotropina (CRF)?",
+      "a": "El uso de antagonistas del CRF por sus posibles propiedades ansiolíticas."
+    },
+    {
+      "cat": "Futuro",
+      "q": "¿Qué otra línea de investigación menciona el texto que involucra al complejo GABA-BZD?",
+      "a": "El uso de esteroides neuroactivos que interactúan con dicho complejo receptor."
+    },
+    {
+      "cat": "Neurobiología del Miedo",
+      "q": "¿Qué sucede en el cuerpo cuando se activa la vía Amígdala -> PAG?",
+      "a": "Se genera una respuesta motora de lucha, huida o parálisis."
+    },
+    {
+      "cat": "Neurobiología del Miedo",
+      "q": "¿Qué efecto tiene la activación de la vía Amígdala -> Locus Coeruleus?",
+      "a": "Produce una respuesta cardiovascular con aumento de la frecuencia cardíaca y tensión arterial."
+    },
+    {
+      "cat": "Neurobiología del Miedo",
+      "q": "¿Cómo se manifiesta la activación de la vía Amígdala -> Núcleo Parabranquial?",
+      "a": "Mediante una respuesta respiratoria que incrementa el índice respiratorio y puede agravar el asma."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿Qué relación tiene el alcohol con el complejo receptor GABA A?",
+      "a": "El alcohol actúa como un modulador alostérico en el mismo complejo receptor donde se unen las BZD."
+    },
+    {
+      "cat": "Sistema GABA",
+      "q": "¿Por qué las BZD tienen efectos miorrelajantes según su mecanismo neuroanatómico?",
+      "a": "Porque deprimen los circuitos supraespinales."
+    },
+    {
+      "cat": "Benzodiacepinas",
+      "q": "¿Qué impacto tienen las BZD en el apetito y cómo se denomina este efecto?",
+      "a": "Aumentan el apetito, efecto denominado orexígeno."
+    },
+    {
+      "cat": "Sintomatología",
+      "q": "Si un paciente presenta ataques de pánico y evitación fóbica, ¿qué síntoma nuclear está predominando?",
+      "a": "El miedo."
+    },
+    {
+      "cat": "Neurobiología de la Preocupación",
+      "q": "Si un paciente sufre obsesiones y pensamiento catastrófico, ¿qué circuito cerebral está hiperactivado?",
+      "a": "El circuito CSTC (córtico-estriado-talámico-cortical) del córtex prefrontal."
+    },
+    {
+      "cat": "Neurotransmisión Noradrenérgica",
+      "q": "¿A qué se deben síntomas como el estado de hiperalerta y los flashbacks en la ansiedad?",
+      "a": "A una producción excesiva de noradrenalina (NA) desde el locus coeruleus."
+    },
+    {
+      "cat": "Farmacocinética",
+      "q": "¿Por qué la interacción entre BZD y alcohol es especialmente peligrosa?",
+      "a": "Porque ambos potencian la neurotransmisión inhibitoria del GABA en el mismo receptor, pudiendo causar depresión severa del SNC."
+    },
+    {
+      "cat": "Farmacología",
+      "q": "¿Cuál es la principal indicación para el uso de flumacenilo?",
+      "a": "La reversión de la sedación y el tratamiento de la sobredosis por benzodiacepinas."
+    },
+    {
+      "cat": "Farmacología",
+      "q": "¿Qué ocurre con la conductancia del cloro cuando una BZD y el GABA se unen simultáneamente al receptor?",
+      "a": "La conductancia del cloro aumenta más que si solo estuviera el GABA, potenciando la inhibición neuronal."
+    }
+  ]
+}

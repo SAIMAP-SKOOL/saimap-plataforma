@@ -197,6 +197,43 @@ const THEME_SUBTITLES = {
         '4.2': 'Asociación entre Variables Cuantitativas',
         '5': 'Contraste de Hipótesis',
         '6': 'Análisis de Varianza (ANOVA)'
+    },
+    'Psicofarmacología': {
+        '1': 'Introducción a la Psicofarmacología',
+        '2': 'Trastornos Afectivos',
+        '3': 'Antidepresivos y Estabilizadores del Ánimo',
+        '4': 'Trastornos de la Ansiedad',
+        '5': 'El Cerebro Ansioso',
+        '6': 'Trastornos del Sueño',
+        '7': 'La Esquizofrenia',
+        '8': 'Esquizofrenia: Causas Biológicas y Tratamiento',
+        '9': 'Alzheimer y el Parkinson'
+    },
+    'psicologia_clinica': {
+        '1': 'Psicología clínica: definición y recorrido histórico',
+        '2': 'Evaluación para el diagnóstico y para el tratamiento',
+        '3': 'Trastornos del estado de ánimo',
+        '4': 'Trastornos de ansiedad',
+        '5': 'Esquizofrenia',
+        '6': 'Trastornos por uso de sustancias'
+    },
+    'psicologia_salud': {
+        '1': 'Un Viaje al Modelo Biopsicosocial',
+        '2': 'Claves para una Vida Plena y Saludable',
+        '3': 'Estrés y Salud',
+        '4': 'La Enfermedad Crónica y Terminal'
+    },
+    'PTO': {
+        '1': 'Aproximación histórica, conceptual y metodológica de la PTO',
+        '2': 'Organización del trabajo y componentes organizativos',
+        '3': 'El significado y los valores del trabajo',
+        '4': 'Motivación y desempeño laboral',
+        '5': 'El liderazgo en las organizaciones',
+        '6': 'Estrés laboral y salud laboral',
+        '7': 'Burnout: concepto, evaluación e intervención',
+        '8': 'Work Engagement y Autoeficacia Laboral',
+        '9': 'Cultura y Clima en las Organizaciones',
+        '10': 'Cambio y Desarrollo Organizacional'
     }
 };
 
@@ -364,7 +401,7 @@ const THEME_CONFIG = {
         borderCard: 'border-b-cyan-500',
         borderCardAlt: 'border-b-teal-500',
     },
-    'psicologia-clinica': {
+    'psicologia_clinica': {
         name: 'Psicología Clínica',
         icon: 'ph-heart-beat',
         bg: '#f0f9ff', // Sky Blue
@@ -382,8 +419,26 @@ const THEME_CONFIG = {
         borderCard: 'border-b-sky-500',
         borderCardAlt: 'border-b-blue-500',
     },
-    'psicologia-del-trabajo': {
-        name: 'Psicología del Trabajo',
+    'psicologia_salud': {
+        name: 'Psicología de la Salud',
+        icon: 'ph-activity',
+        bg: '#f0fdf4', // Green/Emerald
+        gradients: 'radial-gradient(at 0% 0%, hsla(150,70%,94%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(160,70%,94%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(140,70%,94%,1) 0,transparent 50%)',
+        primary: '#16a34a',
+        primaryGrad: 'linear-gradient(135deg, #16a34a 0%, #22c55e 50%, #4ade80 100%)',
+        primaryShadow: 'rgba(22, 163, 74, 0.4)',
+        accent: '#22c55e',
+        accentBg: '#f0fdf4',
+        accentLight: '#dcfce7',
+        textAccent: '#16a34a',
+        optionHoverBorder: '#22c55e',
+        optionHoverBg: '#f0fdf4',
+        titleGradient: 'from-green-500 to-emerald-500',
+        borderCard: 'border-b-green-500',
+        borderCardAlt: 'border-b-emerald-500',
+    },
+    'PTO': {
+        name: 'Psicología del Trabajo y las Organizaciones',
         icon: 'ph-briefcase',
         bg: '#fafaf9', // Warm Gray / Stone
         gradients: 'radial-gradient(at 0% 0%, hsla(30,15%,94%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(20,10%,92%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(40,10%,94%,1) 0,transparent 50%)',
@@ -399,6 +454,24 @@ const THEME_CONFIG = {
         titleGradient: 'from-stone-500 to-neutral-500',
         borderCard: 'border-b-stone-500',
         borderCardAlt: 'border-b-neutral-500',
+    },
+    'Psicofarmacología': {
+        name: 'Psicofarmacología',
+        icon: 'ph-pill',
+        bg: '#faf5ff', // Purple
+        gradients: 'radial-gradient(at 0% 0%, hsla(270,70%,94%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(290,70%,94%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(250,70%,94%,1) 0,transparent 50%)',
+        primary: '#7c3aed',
+        primaryGrad: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #e879f9 100%)',
+        primaryShadow: 'rgba(124, 58, 237, 0.4)',
+        accent: '#a855f7',
+        accentBg: '#f5f3ff',
+        accentLight: '#ede9fe',
+        textAccent: '#7c3aed',
+        optionHoverBorder: '#a855f7',
+        optionHoverBg: '#faf5ff',
+        titleGradient: 'from-purple-500 to-fuchsia-500',
+        borderCard: 'border-b-purple-500',
+        borderCardAlt: 'border-b-indigo-500',
     },
     'diferencias-individuales-1': {
         name: 'Diferencias Individuales I',
