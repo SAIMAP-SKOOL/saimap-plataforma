@@ -265,6 +265,10 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
                     <p class="text-sm text-slate-500 leading-relaxed">Glosario completo de fórmulas matemáticas para consultar rápidamente.</p>
                 </div>
             </div>
+        
+
+            <!-- Contenedor para botones de navegación de temas -->
+            <div id="theme-navigation-container" class="mt-12 flex justify-between items-center w-full max-w-xl mx-auto gap-4 pt-6 border-t border-slate-200/60"></div>
         </section>
 
         <!-- VIEW: QUIZ -->
@@ -697,7 +701,76 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
         };
 
         // Iniciar en Home al cargar
-        window.onload = () => app.showView('home');
+                // --- NAVEGACIÓN ENTRE TEMAS ---
+        function setupThemeNavigation() {
+            const courseId = "__COURSE_ID__";
+            const folderId = "__FOLDER_ID__";
+            const subjectId = "__SUBJECT_ID__";
+            const shortId = "__SHORT_ID__";
+            const currentKey = "__TEMA_KEY__";
+            const themeNames = __THEME_NAMES_JSON__;
+            
+            const keys = Object.keys(themeNames);
+            const sortedKeys = keys.map(k => {
+                const parts = k.split('.').map(Number);
+                return { key: k, parts: parts };
+            }).sort((a, b) => {
+                for (let i = 0; i < Math.max(a.parts.length, b.parts.length); i++) {
+                    const pa = a.parts[i] !== undefined ? a.parts[i] : 0;
+                    const pb = b.parts[i] !== undefined ? b.parts[i] : 0;
+                    if (pa !== pb) return pa - pb;
+                }
+                return 0;
+            }).map(x => x.key);
+
+            const currentIdx = sortedKeys.indexOf(currentKey);
+            const container = document.getElementById('theme-navigation-container');
+            if (!container || currentIdx === -1) return;
+
+            const prevKey = sortedKeys[currentIdx - 1];
+            const nextKey = sortedKeys[currentIdx + 1];
+            const isLastTheme = currentIdx === sortedKeys.length - 1;
+
+            let prevButtonHTML = '';
+            if (prevKey) {
+                const temaFilePart = String(prevKey).replace(/\./g, '-');
+                const prevUrl = `../../../temas/${encodeURIComponent(courseId)}/${encodeURIComponent(folderId)}/${shortId}-tema-${temaFilePart}.html`;
+                prevButtonHTML = `
+                    <a href="${prevUrl}" class="flex-1 py-4 border border-slate-200 text-slate-600 rounded-2xl font-bold hover:bg-slate-50 transition text-sm flex items-center justify-center gap-2 bg-white shadow-sm hover:border-slate-300">
+                        <i class="ph-bold ph-arrow-left"></i> Tema Anterior (${prevKey})
+                    </a>
+                `;
+            } else {
+                prevButtonHTML = `<div class="flex-1"></div>`;
+            }
+
+            let nextButtonHTML = '';
+            if (nextKey) {
+                const temaFilePart = String(nextKey).replace(/\./g, '-');
+                const nextUrl = `../../../temas/${encodeURIComponent(courseId)}/${encodeURIComponent(folderId)}/${shortId}-tema-${temaFilePart}.html`;
+                nextButtonHTML = `
+                    <a href="${nextUrl}" class="flex-1 py-4 text-white rounded-2xl font-bold transition text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700" style="box-shadow: 0 8px 25px rgba(2, 132, 199, 0.3);">
+                        Tema Siguiente (${nextKey}) <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                `;
+            } else if (isLastTheme) {
+                nextButtonHTML = `
+                    <a href="../../../index.html?asignatura=${subjectId}" class="flex-1 py-4 text-white rounded-2xl font-bold transition text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700" style="box-shadow: 0 8px 25px rgba(2, 132, 199, 0.3);">
+                        <i class="ph-bold ph-trophy"></i> Ir al Examen Final <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                `;
+            } else {
+                nextButtonHTML = `<div class="flex-1"></div>`;
+            }
+
+            container.innerHTML = prevButtonHTML + nextButtonHTML;
+        }
+
+        // Iniciar en Home al cargar
+        window.onload = () => {
+            app.showView('home');
+            setupThemeNavigation();
+        };
     </script>
 </body>
 </html>"""
@@ -990,6 +1063,11 @@ for tema_key, url in URLS:
         
         final_html = HTML_TEMPLATE
         final_html = final_html.replace("__TEMA_KEY__", tema_key)
+        final_html = final_html.replace("__COURSE_ID__", "1º")
+        final_html = final_html.replace("__FOLDER_ID__", "Fundamentos-Estadística")
+        final_html = final_html.replace("__SUBJECT_ID__", "fundamentos-de-estadistica")
+        final_html = final_html.replace("__SHORT_ID__", "fundamentos-de-estadistica")
+        final_html = final_html.replace("__THEME_NAMES_JSON__", json.dumps(TEMA_NAMES, ensure_ascii=False))
         final_html = final_html.replace("__TEMA_NAME__", tema_name)
         final_html = final_html.replace("__JSON_TEST_A__", test_a_str)
         final_html = final_html.replace("__JSON_TEST_B__", test_b_str)
