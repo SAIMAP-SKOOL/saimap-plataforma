@@ -1,0 +1,1694 @@
+{
+  "jsonTestA": [
+    {
+      "q": "¿Es el supuesto de 'media cero' de los residuos una condición que debe verificarse empíricamente en la fase de diagnóstico del modelo lineal?",
+      "options": [
+        "Verdadero, requiere comprobación mediante pruebas de bondad de ajuste.",
+        "Falso, se garantiza prácticamente siempre por la construcción del modelo.",
+        "No se puede determinar sin conocer previamente el valor de la varianza."
+      ],
+      "correct": 1,
+      "hint": "Revisa las notas del capítulo sobre la construcción matemática del modelo de Field (2024).",
+      "explanation": "La condición de media cero se cumple casi automáticamente por la propia definición y construcción de los modelos lineales de regresión, por lo que no suele ser objeto de testeo activo como la homocedasticidad."
+    },
+    {
+      "q": "¿Se cumple el supuesto de homocedasticidad cuando la varianza de los residuos es constante en todos los niveles de la variable predictora?",
+      "options": [
+        "Verdadero, esto define precisamente la homogeneidad de las varianzas.",
+        "Falso, la varianza debe evaluarse sobre los datos brutos, no los residuos.",
+        "No se puede determinar si no se especifica antes el tamaño del efecto."
+      ],
+      "correct": 0,
+      "hint": "Recuerda sobre qué elemento se calculan las pruebas paramétricas según el texto.",
+      "explanation": "La homocedasticidad implica que la dispersión de los errores (residuos) no varía en función del nivel de la variable independiente (VI)."
+    },
+    {
+      "q": "¿Es indiferente el orden de los datos para el cumplimiento del supuesto de independencia de los residuos en un estudio?",
+      "options": [
+        "Verdadero, el orden temporal nunca influye en la autocorrelación residual.",
+        "Falso, secuencias u órdenes sistemáticos pueden generar autocorrelación.",
+        "No se puede determinar sin realizar previamente una prueba de Levene."
+      ],
+      "correct": 1,
+      "hint": "Considera qué sucede cuando factores externos afectan a los sujetos de forma secuencial.",
+      "explanation": "El supuesto de independencia exige que no haya patrones sistemáticos u ordenaciones que correlacionen los errores entre sí."
+    },
+    {
+      "q": "¿El test de Shapiro-Wilk muestra generalmente mayor potencia estadística que el test de Kolmogorov-Smirnov?",
+      "options": [
+        "Verdadero, se recomienda su uso incluso en grupos con $n > 50$.",
+        "Falso, el test K-S es siempre preferible cuando el tamaño de muestra es par.",
+        "No se puede determinar sin analizar la curtosis de la distribución."
+      ],
+      "correct": 0,
+      "hint": "Revisa la evidencia reciente mencionada en el ejemplo sobre depresión.",
+      "explanation": "La evidencia reciente sugiere que el test de Shapiro-Wilk es más potente en la mayoría de los casos para detectar desviaciones de la normalidad."
+    },
+    {
+      "q": "¿La hipótesis nula ($H_0$) de la prueba de Levene postula que las varianzas poblacionales son significativamente distintas?",
+      "options": [
+        "Verdadero, busca confirmar la heterocedasticidad de los datos analizados.",
+        "Falso, la $H_0$ establece que las varianzas entre grupos son iguales.",
+        "No se puede determinar sin conocer el nivel de significación prefijado."
+      ],
+      "correct": 1,
+      "hint": "Piensa en qué significa que $p > .05$ en este contexto.",
+      "explanation": "En la prueba de Levene, $H_0: \\sigma_1^2 = \\sigma_2^2$, lo que indica igualdad de varianzas."
+    },
+    {
+      "q": "¿Un valor de la prueba de Durbin-Watson cercano a $0$ indica independencia total de los residuos?",
+      "options": [
+        "Verdadero, representa la ausencia de correlación entre errores del modelo.",
+        "Falso, un valor cercano a $2$ es el que indica independencia de los residuos.",
+        "No se puede determinar sin evaluar la linealidad de la variable predictora."
+      ],
+      "correct": 1,
+      "hint": "Busca el valor teórico ideal para esta prueba en el texto.",
+      "explanation": "Valores significativamente alejados de $2$ (ya sean menores o mayores) sugieren que los residuos están correlacionados."
+    },
+    {
+      "q": "¿Es la transformación de la variable resultado un método exento de riesgos para corregir la falta de normalidad?",
+      "options": [
+        "Verdadero, garantiza la validez de las pruebas paramétricas en todo caso.",
+        "Falso, puede introducir problemas adicionales y se prefieren métodos robustos.",
+        "No se puede determinar si el tamaño de los grupos es estrictamente igual."
+      ],
+      "correct": 1,
+      "hint": "Revisa las advertencias de Field (2024) sobre transformar la VD.",
+      "explanation": "Transformar la variable resultado para cumplir supuestos es arriesgado y a menudo se recomiendan alternativas robustas."
+    },
+    {
+      "q": "¿El cumplimiento de la normalidad puede asumirse si las puntuaciones $z$ están en el rango $\\pm 1.96$?",
+      "options": [
+        "Verdadero, es un criterio aceptable para no rechazar la normalidad.",
+        "Falso, las puntuaciones típicas solo sirven para detectar valores atípicos.",
+        "No se puede determinar sin realizar una transformación logarítmica previa."
+      ],
+      "correct": 0,
+      "hint": "Recuerda el ejemplo sobre depresión y los gráficos Q-Q.",
+      "explanation": "Puntuaciones $z$ dentro de $\\pm 1.96$ refuerzan la conclusión de que la distribución no se aleja significativamente de la normalidad."
+    },
+    {
+      "q": "¿La heterocedasticidad invalida siempre los resultados aunque los tamaños de los grupos sean iguales?",
+      "options": [
+        "Verdadero, la varianza no constante sesga los estimadores linealmente.",
+        "Falso, si los tamaños de muestra son iguales, el efecto suele ser mínimo.",
+        "No se puede determinar sin observar el gráfico de dispersión simple."
+      ],
+      "correct": 1,
+      "hint": "Consulta la opinión de Field (2024) sobre el equilibrio del diseño.",
+      "explanation": "Si los tamaños de grupo son iguales o muy similares, la violación del supuesto de homocedasticidad tiene un efecto mínimo sobre la validez."
+    },
+    {
+      "q": "¿La eliminación de outliers debe realizarse siempre que un dato se aleje más de 3 desviaciones típicas?",
+      "options": [
+        "Verdadero, para asegurar que los datos cumplen los supuestos paramétricos.",
+        "Falso, solo si no representan a la población; si son reales deben mantenerse.",
+        "No se puede determinar sin aplicar la técnica de Windsorización primero."
+      ],
+      "correct": 1,
+      "hint": "Analiza el ejemplo de los adolescentes y el centro de menores.",
+      "explanation": "Casos extremos que forman parte de la población objetivo no deben eliminarse, ya que se sesgaría la realidad del estudio."
+    },
+    {
+      "q": "Respecto a la prueba de Levene en muestras de gran tamaño, elija la afirmación correcta:",
+      "options": [
+        "Tiende a volverse demasiado sensible detectando diferencias irrelevantes.",
+        "Pierde potencia estadística y no detecta violaciones graves del supuesto.",
+        "Mantiene una precisión constante independientemente del número de sujetos."
+      ],
+      "correct": 0,
+      "hint": "Considera qué ocurre con el valor $p$ cuando el denominador de la fracción aumenta.",
+      "explanation": "En muestras grandes, pequeñas diferencias triviales pueden resultar significativas ($p < .05$), llevando a rechazar erróneamente la homocedasticidad."
+    },
+    {
+      "q": "Sobre el uso de gráficos Q-Q para evaluar la normalidad, elija la afirmación correcta:",
+      "options": [
+        "Si los puntos se alinean con la diagonal, se cumple el supuesto analizado.",
+        "Solo son útiles si el test de Kolmogorov-Smirnov resulta significativo.",
+        "Requieren que los datos hayan sido transformados logarítmicamente antes."
+      ],
+      "correct": 0,
+      "hint": "Visualiza la disposición de los puntos en una distribución normal ideal.",
+      "explanation": "La alineación de los puntos con la línea diagonal en un gráfico Q-Q sugiere que los datos siguen una distribución normal."
+    },
+    {
+      "q": "En relación con el supuesto de independencia, elija la afirmación correcta:",
+      "options": [
+        "La violación del supuesto ocurre si los errores están correlacionados.",
+        "Se garantiza si el promedio de los residuos del modelo es igual a cero.",
+        "Solo es relevante si la variable predictora es de naturaleza categórica."
+      ],
+      "correct": 0,
+      "hint": "¿Qué implica que un factor externo afecte a varios sujetos simultáneamente?",
+      "explanation": "La falta de independencia implica que existe una fuente de variabilidad externa común que correlaciona los residuos de los sujetos."
+    },
+    {
+      "q": "Sobre la elección de la fila en el output de Levene en SPSS, elija la afirmación correcta:",
+      "options": [
+        "Se usa la media si los datos son normales y no presentan outliers críticos.",
+        "La mediana es obligatoria siempre que el tamaño de la muestra sea $n < 30$.",
+        "La media recortada solo se utiliza si la variable predictora es cuantitativa."
+      ],
+      "correct": 0,
+      "hint": "Consulta la nota al pie sobre los criterios de selección de la fila en SPSS.",
+      "explanation": "La opción 'Se basa en la media' es la opción por defecto cuando no hay asimetría fuerte ni valores extremos."
+    },
+    {
+      "q": "Respecto a las transformaciones matemáticas, elija la afirmación correcta:",
+      "options": [
+        "La transformación logarítmica es útil para corregir la asimetría positiva.",
+        "La raíz cuadrada debe aplicarse solo cuando la varianza es mayor a la media.",
+        "Cualquier transformación elimina la necesidad de usar métodos robustos."
+      ],
+      "correct": 0,
+      "hint": "Revisa el ejemplo de 'Nivel de disfunción familiar' y su histograma.",
+      "explanation": "La transformación logarítmica comprime los valores altos y expande los bajos, mejorando la simetría en distribuciones sesgadas positivamente."
+    },
+    {
+      "q": "Sobre la relación entre tamaño de grupo y varianza, elija la afirmación correcta:",
+      "options": [
+        "Tamaños desiguales potencian los problemas derivados de la varianza.",
+        "La homocedasticidad compensa siempre cualquier desequilibrio en el $n$.",
+        "El test de Levene es inmune a las diferencias en el tamaño de los grupos."
+      ],
+      "correct": 0,
+      "hint": "Considera la advertencia de Zimmerman (2004) citada en el texto.",
+      "explanation": "Diferencias pequeñas en varianzas pueden tener gran impacto si los tamaños de muestra son muy distintos."
+    },
+    {
+      "q": "Sobre los métodos robustos en estadística, elija la afirmación correcta:",
+      "options": [
+        "El Bootstrapping genera estimaciones mediante remuestreo repetido.",
+        "La Windsorización consiste en eliminar el $20\\%$ de los datos centrales.",
+        "Solo se pueden aplicar si el test de Durbin-Watson arroja un valor de $2$."
+      ],
+      "correct": 0,
+      "hint": "Busca la definición de las alternativas diseñadas para datos no paramétricos.",
+      "explanation": "El bootstrapping es una técnica de remuestreo aleatorio que permite obtener estimaciones fiables sin supuestos clásicos."
+    },
+    {
+      "q": "En el contexto de predictoras cuantitativas y homocedasticidad, elija la afirmación correcta:",
+      "options": [
+        "La comprobación visual se realiza mediante gráficos de dispersión.",
+        "El supuesto debe verificarse obligatoriamente sobre los datos originales.",
+        "No es posible utilizar el test de Levene si la variable predictora es continua."
+      ],
+      "correct": 0,
+      "hint": "Observa la Figura 25 y cómo se representan las bandas de varianza.",
+      "explanation": "En predictoras cuantitativas, los gráficos de dispersión muestran si la amplitud de los residuos es constante (bandas grises)."
+    },
+    {
+      "q": "Sobre la heterocedasticidad visual en gráficos, elija la afirmación correcta:",
+      "options": [
+        "Un patrón en forma de embudo indica que la varianza no es constante.",
+        "Las bandas de amplitud constante confirman la presencia de autocorrelación.",
+        "La línea de regresión debe ser vertical para cumplir la homocedasticidad."
+      ],
+      "correct": 0,
+      "hint": "Revisa la descripción de la parte derecha de la Figura 25.",
+      "explanation": "Cuando los residuos se amplían progresivamente (forma de abanico o embudo), se evidencia heterocedasticidad."
+    },
+    {
+      "q": "Respecto a la potencia de los test de normalidad, elija la afirmación correcta:",
+      "options": [
+        "En muestras pequeñas, los test pueden no detectar violaciones reales.",
+        "El test K-S es el más potente para cualquier tamaño de muestra según Field.",
+        "La significación $p < .05$ siempre implica una violación preocupante."
+      ],
+      "correct": 0,
+      "hint": "Considera las limitaciones de las pruebas estadísticas con poca información.",
+      "explanation": "Al igual que Levene, los test de normalidad pueden carecer de potencia en muestras pequeñas para detectar desviaciones críticas."
+    },
+    {
+      "q": "Sobre el supuesto de errores esféricos en general, elija la afirmación correcta:",
+      "options": [
+        "Engloba la media cero, la homocedasticidad y la independencia.",
+        "Se refiere exclusivamente a la distribución normal de la variable VD.",
+        "Solo debe comprobarse si el modelo de regresión es de carácter múltiple."
+      ],
+      "correct": 0,
+      "hint": "Revisa el apartado 2.2.3 del texto adjunto.",
+      "explanation": "Los errores esféricos definen tres condiciones fundamentales para los residuos: media cero, homocedasticidad e independencia."
+    },
+    {
+      "q": "Sobre la interpretación del valor $p$ en homocedasticidad, elija la afirmación correcta:",
+      "options": [
+        "Un valor $p > .05$ permite mantener la hipótesis de igualdad de varianzas.",
+        "Un valor $p < .05$ indica que el supuesto de independencia se ha cumplido.",
+        "La significación estadística es independiente de la hipótesis nula planteada."
+      ],
+      "correct": 0,
+      "hint": "Recuerda qué significa 'no significativo' en las pruebas de supuestos.",
+      "explanation": "Si $p > .05$, no hay evidencia suficiente para rechazar $H_0$, por lo que se asume homogeneidad de varianzas."
+    },
+    {
+      "q": "Sobre el procedimiento de análisis visual en SPSS, elija la afirmación correcta:",
+      "options": [
+        "Se utiliza el Generador de Gráficos para obtener diagramas de dispersión.",
+        "Los residuos deben calcularse manualmente antes de usar el generador.",
+        "El eje X siempre debe contener la variable resultado para el diagnóstico."
+      ],
+      "correct": 0,
+      "hint": "Revisa los pasos 1 a 3 detallados para predictoras categóricas.",
+      "explanation": "SPSS permite visualizar la dispersión a través de 'Gráficos > Generador de gráficos > Dispersión simple'."
+    },
+    {
+      "q": "Sobre la independencia de los residuos y el diseño, elija la afirmación correcta:",
+      "options": [
+        "La comprensión del diseño del estudio es un método de comprobación.",
+        "La autocorrelación solo puede ser detectada mediante métodos visuales.",
+        "El consumo de café es un factor que mejora la independencia de errores."
+      ],
+      "correct": 0,
+      "hint": "Fíjate en los tres métodos principales mencionados en el apartado de SPSS.",
+      "explanation": "Evaluar factores externos que rompan la aleatoriedad es el primer paso para verificar la independencia."
+    },
+    {
+      "q": "Sobre la decisión de eliminar casos en el análisis, elija la afirmación correcta:",
+      "options": [
+        "Deben eliminarse sujetos que no pertenecen a la población de estudio.",
+        "Se deben descartar todos los valores que alteren la media aritmética.",
+        "La eliminación de outliers es obligatoria antes de cualquier transformación."
+      ],
+      "correct": 0,
+      "hint": "Piensa en el ejemplo del profesor de 45 años en el estudio de adolescentes.",
+      "explanation": "Casos que no pertenecen a la población objetivo (como el adulto en el estudio juvenil) deben ser eliminados de la base de datos."
+    },
+    {
+      "q": "Respecto al supuesto de homocedasticidad, elija la afirmación incorrecta:",
+      "options": [
+        "Debe evaluarse sobre los datos brutos antes de considerar el modelo.",
+        "Implica que la dispersión de errores es constante en los niveles de la VI.",
+        "Su violación se denomina heterocedasticidad y compromete la validez."
+      ],
+      "correct": 0,
+      "hint": "Busca la precisión técnica sobre qué elemento se evalúa el supuesto.",
+      "explanation": "El supuesto de homocedasticidad debe evaluarse sobre los residuos del modelo, no directamente sobre los datos brutos (aunque en categóricas sea equivalente)."
+    },
+    {
+      "q": "Sobre las críticas a la prueba de Levene, elija la afirmación incorrecta:",
+      "options": [
+        "Es un método obsoleto que no debe usarse como primer indicador.",
+        "En muestras pequeñas y desiguales puede no detectar violaciones.",
+        "En muestras muy grandes detecta diferencias triviales como significativas."
+      ],
+      "correct": 0,
+      "hint": "Revisa el apartado de 'Pruebas estadísticas' y la opinión de Field (2024).",
+      "explanation": "A pesar de las críticas, Levene sigue siendo una herramienta muy utilizada y útil como indicador inicial."
+    },
+    {
+      "q": "Sobre las transformaciones de datos, elija la afirmación incorrecta:",
+      "options": [
+        "Son la única estrategia válida para tratar la falta de normalidad.",
+        "La transformación inversa es una de las opciones matemáticas comunes.",
+        "Pueden corregir desviaciones haciendo la distribución más simétrica."
+      ],
+      "correct": 0,
+      "hint": "Considera la existencia de métodos robustos y no paramétricos.",
+      "explanation": "Existen otras estrategias además de las transformaciones, como los métodos robustos o las pruebas no paramétricas."
+    },
+    {
+      "q": "Respecto a la independencia de los residuos, elija la afirmación incorrecta:",
+      "options": [
+        "Un patrón claro en el gráfico de residuos indica que se cumple el supuesto.",
+        "La correlación entre residuos debe ser nula para cumplir la hipótesis.",
+        "Factores externos comunes a varios sujetos violan esta condición."
+      ],
+      "correct": 0,
+      "hint": "¿Qué implica la aleatoriedad en un gráfico de dispersión de residuos?",
+      "explanation": "Si se observa un patrón claro en los residuos, esto indica una violación del supuesto de independencia, no su cumplimiento."
+    },
+    {
+      "q": "Sobre el test de Durbin-Watson, elija la afirmación incorrecta:",
+      "options": [
+        "Se utiliza principalmente para evaluar la homogeneidad de varianzas.",
+        "Mide la autocorrelación de los residuos en el modelo de regresión.",
+        "Valores significativamente alejados de $2$ sugieren correlación."
+      ],
+      "correct": 0,
+      "hint": "Relaciona la prueba con el supuesto de independencia.",
+      "explanation": "El test de Durbin-Watson mide la independencia (autocorrelación), no la homocedasticidad (varianza)."
+    },
+    {
+      "q": "Sobre la varianza en predictoras categóricas, elija la afirmación incorrecta:",
+      "options": [
+        "Es imposible analizar el supuesto si la VI tiene más de dos niveles.",
+        "Los residuos equivalen a la distancia de los datos respecto a la media.",
+        "Se puede analizar la homogeneidad sobre los datos en la práctica."
+      ],
+      "correct": 0,
+      "hint": "Revisa el procedimiento en SPSS para variables categóricas.",
+      "explanation": "La homogeneidad de varianzas se puede y debe analizar con variables categóricas de dos o más niveles (Capítulos 3 y 4)."
+    },
+    {
+      "q": "Sobre los métodos robustos citados, elija la afirmación incorrecta:",
+      "options": [
+        "Se basan estrictamente en el cumplimiento de supuestos paramétricos.",
+        "Recortar outliers consiste en eliminar un porcentaje de valores extremos.",
+        "Son alternativas para obtener resultados fiables sin depender de la normalidad."
+      ],
+      "correct": 0,
+      "hint": "Busca la definición de 'robustez' en el contexto estadístico.",
+      "explanation": "Los métodos robustos están diseñados precisamente para no depender estrictamente de los supuestos paramétricos clásicos."
+    },
+    {
+      "q": "Sobre la normalidad y el test K-S, elija la afirmación incorrecta:",
+      "options": [
+        "Debe aplicarse el test K-S obligatoriamente si el grupo tiene $n = 43$.",
+        "Tradicionalmente se aplica cuando el tamaño muestral supera los 50 sujetos.",
+        "Su significación $p < .05$ sugiere que los datos no son normales."
+      ],
+      "correct": 0,
+      "hint": "Revisa el ejemplo inicial y la regla para $n = 43$.",
+      "explanation": "Para $n = 43$, la regla tradicional sugiere el test de Shapiro-Wilk ($n \\le 50$), no el Kolmogorov-Smirnov."
+    },
+    {
+      "q": "Respecto a la formulación de hipótesis en Levene, elija la afirmación incorrecta:",
+      "options": [
+        "La hipótesis alternativa $H_1$ postula que $\\sigma_1^2 = \\sigma_2^2$.",
+        "La hipótesis nula $H_0$ indica que las varianzas son iguales entre grupos.",
+        "Rechazar $H_0$ implica concluir que existe heterocedasticidad."
+      ],
+      "correct": 0,
+      "hint": "Compara las fórmulas de $H_0$ y $H_1$ en las notas al pie 5 y 6.",
+      "explanation": "La hipótesis alternativa ($H_1$) es $\\sigma_1^2 \\neq \\sigma_2^2$, indicando que las varianzas son diferentes."
+    },
+    {
+      "q": "Sobre las pruebas no paramétricas, elija la afirmación incorrecta:",
+      "options": [
+        "Requieren el cumplimiento estricto de la normalidad de los residuos.",
+        "Son útiles cuando no es posible ajustar supuestos mediante transformaciones.",
+        "Siguen siendo válidas para estudios con muestras pequeñas o categóricas."
+      ],
+      "correct": 0,
+      "hint": "¿Cuál es la principal ventaja de las pruebas no paramétricas?",
+      "explanation": "Las pruebas no paramétricas se utilizan precisamente cuando NO se cumplen los supuestos de normalidad o varianza."
+    },
+    {
+      "q": "Sobre el output de SPSS para Levene, elija la afirmación incorrecta:",
+      "options": [
+        "El valor de significación se encuentra siempre en la columna etiquetada 'gl2'.",
+        "La columna 'Sig.' reporta el valor $p$ necesario para la decisión.",
+        "La tabla analiza la varianza de error de la variable dependiente."
+      ],
+      "correct": 0,
+      "hint": "Observa la Figura 29 y la descripción de sus columnas.",
+      "explanation": "El valor $p$ (significación) está en la columna 'Sig.', mientras que 'gl2' indica los grados de libertad del denominador."
+    },
+    {
+      "q": "Sobre la corrección de Welch, elija la afirmación incorrecta:",
+      "options": [
+        "Es un test que asume la igualdad de varianzas en muestras grandes.",
+        "Se recomienda cuando se sospecha firmemente de heterocedasticidad.",
+        "Se considera una prueba robusta frente a la violación de la homocedasticidad."
+      ],
+      "correct": 0,
+      "hint": "Busca la mención de Welch en las recomendaciones sobre Levene.",
+      "explanation": "La corrección de Welch es una alternativa robusta que NO asume igualdad de varianzas."
+    },
+    {
+      "q": "Sobre los gráficos de residuos vs. ajuste, elija la afirmación incorrecta:",
+      "options": [
+        "Deben mostrar una tendencia lineal ascendente para cumplir la independencia.",
+        "Se consideran un método visual para comprobar el supuesto de independencia.",
+        "La ausencia de patrones claros permite concluir que el supuesto se cumple."
+      ],
+      "correct": 0,
+      "hint": "¿Cómo debería verse el ruido aleatorio en un gráfico?",
+      "explanation": "Los residuos deben distribuirse de forma aleatoria; una tendencia ascendente indicaría un patrón sistemático y violación del supuesto."
+    },
+    {
+      "q": "Respecto a la transformación logarítmica de VI, elija la afirmación incorrecta:",
+      "options": [
+        "Se desaconseja totalmente por introducir sesgos en la variable predictora.",
+        "Puede ser de gran utilidad para cumplir con el supuesto de linealidad.",
+        "Es una estrategia habitual para abordar violaciones de supuestos previos."
+      ],
+      "correct": 0,
+      "hint": "Compara las opiniones de Field sobre transformar la VI frente a la VD.",
+      "explanation": "Transformar la variable predictora (VI) para lograr linealidad es considerado útil y beneficioso por autores como Field."
+    },
+    {
+      "q": "Sobre la asimetría y normalidad, elija la afirmación incorrecta:",
+      "options": [
+        "La asimetría positiva se caracteriza por una mayor acumulación de valores altos.",
+        "Las transformaciones pueden comprimir valores para mejorar la simetría.",
+        "Los gráficos Q-Q pueden respaldar los hallazgos de las pruebas K-S o S-W."
+      ],
+      "correct": 0,
+      "hint": "Recuerda la definición de asimetría positiva en el ejemplo de disfunción.",
+      "explanation": "La asimetría positiva implica muchos valores bajos y algunos muy altos (cola a la derecha), no una acumulación de valores altos."
+    }
+  ],
+  "jsonTestB": [
+    {
+      "q": "El primer requisito de los errores esféricos establece que el promedio de los residuos poblacionales debe ser igual a ____.",
+      "options": [
+        "$$\\bar{e} = \\sum e_{i} / n = 1.00$$",
+        "$$\\bar{e} = \\sum e_{i} / n = 0.00$$",
+        "$$\\bar{e} = \\sum e_{i} / n = \\sigma_{e}$$"
+      ],
+      "correct": 1,
+      "hint": "Es una condición que se cumple por construcción del modelo lineal.",
+      "explanation": "Por definición del modelo de regresión de mínimos cuadrados, la suma de los residuos es cero, por lo tanto, $$\\mu_{\\epsilon} = 0$$."
+    },
+    {
+      "q": "En el contexto de la independencia de errores, la hipótesis nula se formula matemáticamente como ____.",
+      "options": [
+        "$$H_{0}: \\rho_{\\epsilon_{i}, \\epsilon_{j}} = 0$$",
+        "$$H_{0}: \\rho_{\\epsilon_{i}, \\epsilon_{j}} \\neq 0$$",
+        "$$H_{0}: \\rho_{\\epsilon_{i}, \\epsilon_{j}} = 1$$"
+      ],
+      "correct": 0,
+      "hint": "La independencia implica ausencia total de correlación entre residuos.",
+      "explanation": "La independencia exige que no haya autocorrelación, lo que se traduce en un coeficiente de correlación $$\\rho$$ igual a cero."
+    },
+    {
+      "q": "Para una muestra de $n=100$ con asimetría positiva, la transformación más adecuada para aproximar la normalidad es ____.",
+      "options": [
+        "$$Y' = \\text{antilog}_{10}(Y)$$",
+        "$$Y' = \\text{logaritmo}(Y)$$",
+        "$$Y' = Y^{2} + \\sum Y_{i}$$"
+      ],
+      "correct": 1,
+      "hint": "Esta función comprime los valores altos y expande los bajos.",
+      "explanation": "La transformación logarítmica es la técnica estándar para corregir distribuciones con asimetría positiva (cola a la derecha)."
+    },
+    {
+      "q": "Un valor del estadístico de Durbin-Watson significativamente cercano a ____ indica ausencia de autocorrelación.",
+      "options": [
+        "$$d = \\text{valor de } 0.00$$",
+        "$$d = \\text{valor de } 4.00$$",
+        "$$d = \\text{valor de } 2.00$$"
+      ],
+      "correct": 2,
+      "hint": "El rango del estadístico es [0, 4].",
+      "explanation": "Un valor de 2 indica que no hay correlación serial. Valores cercanos a 0 indican correlación positiva y cercanos a 4 negativa."
+    },
+    {
+      "q": "Si el valor crítico de Z para la normalidad es $\\pm 1.96$, una puntuación típica de $z=2.58$ implica que ____.",
+      "options": [
+        "$$p > .05 \\text{ (Normal)}$$",
+        "$$p < .05 \\text{ (No Normal)}$$",
+        "$$p = .00 \\text{ (Constante)}$$"
+      ],
+      "correct": 1,
+      "hint": "Compare el valor absoluto obtenido con el umbral crítico.",
+      "explanation": "Al superar el valor crítico de 1.96 (nivel de confianza del 95%), se rechaza la hipótesis de normalidad."
+    },
+    {
+      "q": "La formulación de la hipótesis alternativa en la prueba de Levene se define como ____.",
+      "options": [
+        "$$H_{1}: \\sigma_{1}^{2} \\neq \\sigma_{2}^{2}$$",
+        "$$H_{1}: \\sigma_{1}^{2} = \\sigma_{2}^{2}$$",
+        "$$H_{1}: \\sigma_{1} = \\sigma_{2} + k$$"
+      ],
+      "correct": 0,
+      "hint": "Representa la heterocedasticidad o diferencia de varianzas.",
+      "explanation": "La hipótesis alternativa postula que las varianzas poblacionales de los grupos comparados son distintas."
+    },
+    {
+      "q": "En el gráfico de dispersión, la heterocedasticidad se visualiza cuando los residuos muestran una forma de ____.",
+      "options": [
+        "$$f(x) = \\text{Banda Recta}$$",
+        "$$f(x) = \\text{Embud / Abanico}$$",
+        "$$f(x) = \\text{Nube Aleatoria}$$"
+      ],
+      "correct": 1,
+      "hint": "La dispersión aumenta o disminuye sistemáticamente con la VI.",
+      "explanation": "El patrón de abanico indica que la varianza no es constante, violando el supuesto de homocedasticidad."
+    },
+    {
+      "q": "Cuando el tamaño de los grupos es idéntico, la violación de la homocedasticidad suele ser ____.",
+      "options": [
+        "$$\\text{Altamente crítica}$$",
+        "$$\\text{Estrictamente fatal}$$",
+        "$$\\text{Casi irrelevante}$$"
+      ],
+      "correct": 2,
+      "hint": "Field (2024) menciona que el equilibrio en 'n' protege el análisis.",
+      "explanation": "Si $n_{1} = n_{2}$, las pruebas paramétricas como el ANOVA son robustas ante la heterocedasticidad."
+    },
+    {
+      "q": "Al interpretar la tabla de Levene en SPSS, el valor $p$ se encuentra en la columna denominada ____.",
+      "options": [
+        "$$\\text{Estadístico Levene}$$",
+        "$$\\text{Significación (Sig.)}$$",
+        "$$\\text{Grados de libertad}$$"
+      ],
+      "correct": 1,
+      "hint": "Es el nivel de significación observado para contrastar la $H_{0}$.",
+      "explanation": "La columna 'Sig.' reporta el valor $p$, que comparamos con 0.05 para tomar la decisión estadística."
+    },
+    {
+      "q": "Si los datos presentan outliers extremos que no pertenecen a la población, la acción recomendada es ____.",
+      "options": [
+        "$$\\text{Eliminar dichos casos}$$",
+        "$$\\text{Transformar logaritmo}$$",
+        "$$\\text{Ignorar su existencia}$$"
+      ],
+      "correct": 0,
+      "hint": "Diferencie entre casos inusuales reales y errores de muestreo.",
+      "explanation": "Si el sujeto no pertenece a la población objetivo (ej. un adulto en un estudio de adolescentes), debe ser eliminado."
+    },
+    {
+      "q": "El método robusto que consiste en reemplazar valores extremos por el valor no atípico más cercano se denomina ____.",
+      "options": [
+        "$$\\text{Recorte (Trimming)}$$",
+        "$$\\text{Windsorización}$$",
+        "$$\\text{Bootstrapping}$$"
+      ],
+      "correct": 1,
+      "hint": "No elimina el dato, sino que lo 'modera'.",
+      "explanation": "La windsorización limita el impacto de los outliers sustituyéndolos por valores en los percentiles de corte."
+    },
+    {
+      "q": "En muestras muy grandes, la prueba de Levene tiende a ser ____.",
+      "options": [
+        "$$\\text{Poco sensible (Sesgo)}$$",
+        "$$\\text{Demasiado sensible}$$",
+        "$$\\text{Totalmente inútil}$$"
+      ],
+      "correct": 1,
+      "hint": "Pequeñas diferencias triviales pueden resultar significativas.",
+      "explanation": "Con grandes N, el error estándar disminuye y cualquier desviación mínima de la igualdad de varianzas genera un $p < .05$."
+    },
+    {
+      "q": "Para una variable con outliers donde se desea reducir su impacto sin eliminarlos, el estadístico de Levene debe basarse en ____.",
+      "options": [
+        "$$\\text{La Media Aritmética}$$",
+        "$$\\text{La Mediana Grupal}$$",
+        "$$\\text{La Moda de la Serie}$$"
+      ],
+      "correct": 1,
+      "hint": "La mediana es una medida de tendencia central robusta.",
+      "explanation": "Basar Levene en la mediana es menos sensible a los outliers y a la asimetría que basarlo en la media."
+    },
+    {
+      "q": "El supuesto de que las diferencias entre valores observados y predichos no están influidas por factores externos comunes es la ____.",
+      "options": [
+        "$$\\text{Linealidad del modelo}$$",
+        "$$\\text{Independencia}$$",
+        "$$\\text{Homocedasticidad}$$"
+      ],
+      "correct": 1,
+      "hint": "Evita que el error de un sujeto prediga el error de otro.",
+      "explanation": "La independencia garantiza que los residuos sean aleatorios y no sistemáticos por variables extrañas."
+    },
+    {
+      "q": "La técnica de generar múltiples muestras aleatorias con reposición a partir de la muestra original se llama ____.",
+      "options": [
+        "$$\\text{Análisis No Paramétrico}$$",
+        "$$\\text{Método Bootstrap}$$",
+        "$$\\text{Transformación Raíz}$$"
+      ],
+      "correct": 1,
+      "hint": "Es una técnica de remuestreo computacional robusta.",
+      "explanation": "El Bootstrapping permite estimar la distribución muestral de un estadístico sin asumir normalidad."
+    },
+    {
+      "q": "Si en SPSS la prueba de Levene da $p = .128$, concluimos que las varianzas son ____.",
+      "options": [
+        "$$\\text{Significativamente } \\neq$$",
+        "$$\\text{Estadísticamente } =$$",
+        "$$\\text{Nulas en la población}$$"
+      ],
+      "correct": 1,
+      "hint": "Si $p > .05$, no hay evidencia suficiente para rechazar $H_{0}$.",
+      "explanation": "Un valor $p$ superior a 0.05 indica que se mantiene la hipótesis nula de igualdad de varianzas (homocedasticidad)."
+    },
+    {
+      "q": "La transformación de la variable ____ es generalmente preferible a transformar la variable resultado para corregir la linealidad.",
+      "options": [
+        "$$\\text{Dependiente (VD)}$$",
+        "$$\\text{Predictora (VI)}$$",
+        "$$\\text{Extraña (VE)}$$"
+      ],
+      "correct": 1,
+      "hint": "Field (2024) advierte que transformar la VD puede introducir nuevos problemas.",
+      "explanation": "Transformar la VI es más seguro para ajustar la linealidad sin distorsionar la interpretación de la varianza del error."
+    },
+    {
+      "q": "Un diseño de investigación donde los sujetos toman café juntos antes de una prueba de ansiedad viola el supuesto de ____.",
+      "options": [
+        "$$\\text{Homocedasticidad}$$",
+        "$$\\text{Independencia}$$",
+        "$$\\text{Normalidad Univariada}$$"
+      ],
+      "correct": 1,
+      "hint": "Un factor externo afecta sistemáticamente a un subgrupo.",
+      "explanation": "El factor común (café) correlaciona los residuos de esos sujetos, rompiendo la independencia requerida."
+    },
+    {
+      "q": "Cuando los residuos de un modelo de regresión están correlacionados entre sí, decimos que existe ____.",
+      "options": [
+        "$$\\text{Heterocedasticidad}$$",
+        "$$\\text{Autocorrelación}$$",
+        "$$\\text{Colinealidad}$$"
+      ],
+      "correct": 1,
+      "hint": "Es el término técnico para la falta de independencia serial.",
+      "explanation": "La autocorrelación ocurre cuando el error en una observación está relacionado con el error en otra."
+    },
+    {
+      "q": "La prueba de Shapiro-Wilk es preferible a Kolmogorov-Smirnov en muestras pequeñas porque tiene ____.",
+      "options": [
+        "$$\\text{Menor nivel de error } \\alpha$$",
+        "$$\\text{Mayor potencia estadística}$$",
+        "$$\\text{Mayor facilidad de cálculo}$$"
+      ],
+      "correct": 1,
+      "hint": "Capacidad de detectar desviaciones de la normalidad cuando existen.",
+      "explanation": "La evidencia reciente sugiere que S-W es más potente que K-S para detectar falta de normalidad en la mayoría de escenarios."
+    },
+    {
+      "q": "Para asegurar la validez de un modelo paramétrico, ¿cuál de las siguientes condiciones de los residuos debe cumplirse?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "$$\\text{Media poblacional } = 0$$",
+        "$$\\text{Independencia entre sí}$$"
+      ],
+      "correct": 0,
+      "hint": "Revise las tres condiciones de los errores esféricos.",
+      "explanation": "Los errores esféricos requieren media cero, homocedasticidad e independencia. Todas son correctas."
+    },
+    {
+      "q": "¿Qué elementos visuales permiten confirmar el cumplimiento del supuesto de normalidad en los residuos?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "$$\\text{Alineación en la diagonal Q-Q}$$",
+        "$$\\text{Histograma con forma campana}$$"
+      ],
+      "correct": 0,
+      "hint": "La normalidad se evalúa mediante gráficos de distribución y de probabilidad.",
+      "explanation": "Tanto la forma del histograma como el ajuste a la diagonal en el gráfico Q-Q son indicadores visuales de normalidad."
+    },
+    {
+      "q": "En SPSS, el diagrama de dispersión para evaluar homocedasticidad cuando la VI es categórica muestra:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "$$\\text{La VD en el eje de ordenadas}$$",
+        "$$\\text{La VI en el eje de abscisas}$$"
+      ],
+      "correct": 0,
+      "hint": "Es la configuración estándar de Gráficos > Generador de cuadros.",
+      "explanation": "Se coloca la VI (Grupos) en el eje X y la VD (Ansiedad, etc.) en el eje Y para ver la dispersión vertical."
+    },
+    {
+      "q": "¿Qué problemas puede causar la presencia de outliers no tratados en un análisis de datos?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "$$\\text{Desviación de la media real}$$",
+        "$$\\text{Aumento del error tipo I / II}$$"
+      ],
+      "correct": 0,
+      "hint": "Los valores atípicos afectan tanto a la tendencia central como a la variabilidad.",
+      "explanation": "Los outliers sesgan la media y pueden inflar artificialmente la varianza, afectando el cumplimiento de supuestos."
+    },
+    {
+      "q": "La prueba de Levene es útil para detectar diferencias de varianza, pero sus resultados dependen de:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "$$\\text{El tamaño de la muestra (N)}$$",
+        "$$\\text{La simetría de los datos}$$"
+      ],
+      "correct": 0,
+      "hint": "Factores como N y la distribución influyen en la sensibilidad del test.",
+      "explanation": "La potencia de Levene se ve afectada por el tamaño muestral y la presencia de asimetría o valores extremos."
+    },
+    {
+      "q": "¿Cuál de estos métodos se considera una estrategia 'robusta' frente a la violación de supuestos?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "$$\\text{Remuestreo por Bootstrapping}$$",
+        "$$\\text{Uso de la media recortada}$$"
+      ],
+      "correct": 0,
+      "hint": "Son alternativas modernas que no dependen de la normalidad estricta.",
+      "explanation": "Tanto el recorte de colas como el bootstrapping son procedimientos estadísticos robustos."
+    },
+    {
+      "q": "El supuesto de independencia de los residuos puede verificarse mediante:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "$$\\text{Análisis del diseño del estudio}$$",
+        "$$\\text{Prueba de Durbin-Watson}$$"
+      ],
+      "correct": 0,
+      "hint": "Se requiere tanto evaluación lógica como contrastes estadísticos.",
+      "explanation": "La independencia se comprueba mediante el estadístico D-W, gráficos de residuos y revisión del procedimiento experimental."
+    },
+    {
+      "q": "Las transformaciones matemáticas (log, raíz, inversa) tienen como objetivo:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "$$\\text{Simetrizar la distribución}$$",
+        "$$\\text{Estabilizar la varianza}$$"
+      ],
+      "correct": 0,
+      "hint": "Buscan 'corregir' los datos para que se parezcan a la normal teórica.",
+      "explanation": "Las transformaciones actúan sobre la escala para reducir la asimetría y homogeneizar las varianzas."
+    },
+    {
+      "q": "En el contexto de la heterocedasticidad, el impacto de la violación es más grave si:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "$$\\text{Los tamaños muestrales son } \\neq$$",
+        "$$\\text{N es pequeño en un grupo}$$"
+      ],
+      "correct": 0,
+      "hint": "La combinación de varianzas desiguales y N desiguales es crítica.",
+      "explanation": "Zimmerman (2004) señala que la heterocedasticidad con grupos desequilibrados compromete seriamente la validez."
+    },
+    {
+      "q": "¿Cuál de las siguientes es una condición necesaria para aplicar pruebas paramétricas como el ANOVA?",
+      "options": [
+        "Todas las anteriores son correctas",
+        "$$\\sigma_{1}^{2} \\approx \\sigma_{2}^{2} \\approx \\sigma_{3}^{2}$$",
+        "$$\\epsilon_{i} \\sim N(0, \\sigma^{2})$$"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la homocedasticidad y la normalidad de errores.",
+      "explanation": "El ANOVA exige tanto homogeneidad de varianzas como que los errores sigan una distribución normal con media cero."
+    },
+    {
+      "q": "Si obtenemos un valor $p = .001$ en una prueba de normalidad, ¿cuál es la interpretación correcta?",
+      "options": [
+        "$$\\text{Se cumple la normalidad (H0)}$$",
+        "$$\\text{Ninguna de las anteriores es correcta}$$",
+        "$$\\text{La muestra es demasiado pequeña}$$"
+      ],
+      "correct": 1,
+      "hint": "Si $p < .05$, rechazamos la hipótesis nula.",
+      "explanation": "Un $p = .001$ significa que los datos **no** siguen una distribución normal, por lo que las opciones dadas son falsas."
+    },
+    {
+      "q": "Un estadístico de Durbin-Watson de $d = 0.5$ sugiere que existe:",
+      "options": [
+        "$$\\text{Independencia total de errores}$$",
+        "$$\\text{Ninguna de las anteriores es correcta}$$",
+        "$$\\text{Autocorrelación negativa fuerte}$$"
+      ],
+      "correct": 1,
+      "hint": "Valores cercanos a 0 indican un tipo específico de correlación.",
+      "explanation": "Un valor de 0.5 indica una fuerte autocorrelación **positiva**, no negativa ni independencia."
+    },
+    {
+      "q": "La homocedasticidad implica que la dispersión de los residuos es:",
+      "options": [
+        "$$\\text{Proporcional al valor de la VI}$$",
+        "$$\\text{Ninguna de las anteriores es correcta}$$",
+        "$$\\text{Cero en todos los niveles de X}$$"
+      ],
+      "correct": 1,
+      "hint": "La varianza debe ser constante, no cero ni proporcional.",
+      "explanation": "Homocedasticidad significa varianza constante ($$\\sigma^{2} = k$$), no que varíe con X o que sea nula."
+    },
+    {
+      "q": "Para una distribución con asimetría negativa (cola a la izquierda), ¿qué transformación es la recomendada?",
+      "options": [
+        "$$\\text{Transformación Logarítmica}$$",
+        "$$\\text{Ninguna de las anteriores es correcta}$$",
+        "$$\\text{Transformación Raíz Cuadrada}$$"
+      ],
+      "correct": 1,
+      "hint": "Log y raíz se usan para asimetría positiva.",
+      "explanation": "Para asimetría negativa se suelen usar transformaciones de reflexión o potencias (ej. $X^{2}$), no logaritmos."
+    },
+    {
+      "q": "Si en la tabla de SPSS 'Prueba de Levene' leemos 'Basado en la media' con $p = .049$, decidimos:",
+      "options": [
+        "$$\\text{Aceptar la homocedasticidad}$$",
+        "$$\\text{Ninguna de las anteriores es correcta}$$",
+        "$$\\text{Ignorar el resultado por ser bajo}$$"
+      ],
+      "correct": 1,
+      "hint": "Compare estrictamente con el nivel crítico de .05.",
+      "explanation": "Al ser $p < .05$, rechazamos $H_{0}$ y concluimos heterocedasticidad; 'Aceptar' es incorrecto."
+    },
+    {
+      "q": "El supuesto de media cero en los residuos se comprueba mediante:",
+      "options": [
+        "$$\\text{La prueba de Shapiro-Wilk}$$",
+        "$$\\text{Ninguna de las anteriores es correcta}$$",
+        "$$\\text{El estadístico de Levene (F)}$$"
+      ],
+      "correct": 1,
+      "hint": "Revise cómo se garantiza esta condición.",
+      "explanation": "La media cero se garantiza por la construcción matemática del modelo lineal de mínimos cuadrados, no por test estadísticos."
+    },
+    {
+      "q": "¿Cuál de estos gráficos es específico para detectar autocorrelación serial de residuos?",
+      "options": [
+        "$$\\text{Diagrama de Cajas (Boxplot)}$$",
+        "$$\\text{Ninguna de las anteriores es correcta}$$",
+        "$$\\text{Gráfico de probabilidad Q-Q}$$"
+      ],
+      "correct": 1,
+      "hint": "Se requiere observar los residuos en función del tiempo o el orden.",
+      "explanation": "Se usa el gráfico de residuos vs. orden o tiempo; ni el boxplot ni el Q-Q detectan autocorrelación serial."
+    },
+    {
+      "q": "Cuando eliminamos outliers 'reales' (que pertenecen a la población) para cumplir supuestos:",
+      "options": [
+        "$$\\text{Mejoramos la validez externa}$$",
+        "$$\\text{Ninguna de las anteriores es correcta}$$",
+        "$$\\text{Eliminamos el sesgo del modelo}$$"
+      ],
+      "correct": 1,
+      "hint": "Field advierte que esto puede 'maquillar' la realidad.",
+      "explanation": "Eliminar datos reales sesga la realidad de la población y reduce la validez externa, no la mejora."
+    },
+    {
+      "q": "El estadístico $W$ de Shapiro-Wilk cercano a $0.00$ indica que la distribución es:",
+      "options": [
+        "$$\\text{Perfectamente Normal}$$",
+        "$$\\text{Ninguna de las anteriores es correcta}$$",
+        "$$\\text{Homocedástica en los grupos}$$"
+      ],
+      "correct": 1,
+      "hint": "Valores de W cercanos a 1 indican normalidad.",
+      "explanation": "Un $W$ cercano a 0 indica máxima desviación de la normalidad. La opción 'Normal' es falsa."
+    },
+    {
+      "q": "La corrección de Welch es un procedimiento estadístico diseñado para situaciones de:",
+      "options": [
+        "$$\\text{Falta de independencia lineal}$$",
+        "$$\\text{Ninguna de las anteriores es correcta}$$",
+        "$$\\text{Autocorrelación de errores}$$"
+      ],
+      "correct": 1,
+      "hint": "Es una alternativa al ANOVA tradicional.",
+      "explanation": "La corrección de Welch se usa ante la violación de la homocedasticidad (varianzas desiguales), no para independencia."
+    }
+  ],
+  "jsonLaboratorio": [
+    {
+      "id": 1,
+      "title": "Evaluación de la Normalidad mediante Puntuaciones Z",
+      "context": "En un estudio sobre depresión, la media de las puntuaciones es $\\bar{x} = 15$ y la desviación típica es $s = 4$. Se utiliza la fórmula de tipificación $z = \\frac{x - \\bar{x}}{s}$ para detectar outliers y normalidad.",
+      "parts": [
+        {
+          "id": "p1a",
+          "label": "a)",
+          "question": "Calcula la puntuación típica $z$ para un sujeto que obtuvo 23 puntos en la escala.",
+          "correctValue": 2.0,
+          "tolerance": 0.01,
+          "explanation": "$$z = \\frac{23 - 15}{4} = \\frac{8}{4} = 2.0$$"
+        },
+        {
+          "id": "p1b",
+          "label": "b)",
+          "question": "¿Se encuentra este valor dentro del rango de normalidad aceptable de $\\pm 1.96$? (Responde 1 para Sí, 0 para No).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "Como $|2.0| > 1.96$, el valor está fuera del rango de normalidad estándar."
+        },
+        {
+          "id": "p1c",
+          "label": "c)",
+          "question": "Determina el valor bruto máximo $x$ que aún se consideraría dentro del rango normal ($z = 1.96$).",
+          "correctValue": 22.84,
+          "tolerance": 0.01,
+          "explanation": "$$x = \\bar{x} + (z \\cdot s) = 15 + (1.96 \\cdot 4) = 15 + 7.84 = 22.84$$"
+        },
+        {
+          "id": "p1d",
+          "label": "d)",
+          "question": "Si una muestra de $n = 200$ sujetos tiene 12 individuos fuera de este rango, ¿qué porcentaje de la muestra presenta valores atípicos?",
+          "correctValue": 6.0,
+          "tolerance": 0.1,
+          "explanation": "$$\\frac{12}{200} \\cdot 100 = 6\\%$$"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Análisis de Homocedasticidad y Prueba de Levene",
+      "context": "Se comparan dos grupos de terapia. El Grupo A tiene una varianza $s_A^2 = 16$ y el Grupo B tiene $s_B^2 = 25$. Se evalúa la razón de varianzas $F_{max} = \\frac{s_{max}^2}{s_{min}^2}$.",
+      "parts": [
+        {
+          "id": "p2a",
+          "label": "a)",
+          "question": "Calcula el ratio de varianzas $F_{max}$ para estos dos grupos.",
+          "correctValue": 1.56,
+          "tolerance": 0.01,
+          "explanation": "$$F_{max} = \\frac{25}{16} = 1.5625$$"
+        },
+        {
+          "id": "p2b",
+          "label": "b)",
+          "question": "Si el p-valor de la prueba de Levene es 0.08, ¿se cumple el supuesto de homocedasticidad? (1 para Sí, 0 para No).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Al ser $p > 0.05$, mantenemos $H_0$ (varianzas iguales)."
+        },
+        {
+          "id": "p2c",
+          "label": "c)",
+          "question": "Si $n_1 = 30$ y $n_2 = 30$, calcula los grados de libertad totales ($N - 2$).",
+          "correctValue": 58,
+          "tolerance": 0,
+          "explanation": "$$30 + 30 - 2 = 58$$"
+        },
+        {
+          "id": "p2d",
+          "label": "d)",
+          "question": "Si el tamaño del grupo B aumenta y su varianza sube a 64, ¿cuál sería el nuevo ratio $F_{max}$?",
+          "correctValue": 4.0,
+          "tolerance": 0,
+          "explanation": "$$F_{max} = \\frac{64}{16} = 4.0$$"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Transformación Logarítmica de Datos Asimétricos",
+      "context": "Un conjunto de datos presenta asimetría positiva. Aplicamos la transformación $y = \\log_{10}(x)$ para estabilizar la varianza.",
+      "parts": [
+        {
+          "id": "p3a",
+          "label": "a)",
+          "question": "Calcula el valor transformado $y$ para un dato original $x = 100$.",
+          "correctValue": 2.0,
+          "tolerance": 0,
+          "explanation": "$$y = \\log_{10}(100) = 2$$"
+        },
+        {
+          "id": "p3b",
+          "label": "b)",
+          "question": "Calcula el valor transformado para $x = 1000$.",
+          "correctValue": 3.0,
+          "tolerance": 0,
+          "explanation": "$$y = \\log_{10}(1000) = 3$$"
+        },
+        {
+          "id": "p3c",
+          "label": "c)",
+          "question": "Si el rango original era [10, 1000], ¿cuál es el rango de la variable transformada?",
+          "correctValue": 2.0,
+          "tolerance": 0,
+          "explanation": "$$\\text{Rango} = \\log_{10}(1000) - \\log_{10}(10) = 3 - 1 = 2$$"
+        },
+        {
+          "id": "p3d",
+          "label": "d)",
+          "question": "Tras la transformación, el test K-S da $p = 0.20$. ¿Es ahora la distribución normal? (1 para Sí, 0 para No).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Como $p > 0.05$, se asume normalidad."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Supuesto de Independencia: Durbin-Watson",
+      "context": "Se analiza la independencia de los residuos en un modelo de regresión. El estadístico $d$ de Durbin-Watson se calcula mediante $d = \\frac{\\sum (e_t - e_{t-1})^2}{\\sum e_t^2}$.",
+      "parts": [
+        {
+          "id": "p4a",
+          "label": "a)",
+          "question": "Si el valor de $d$ obtenido es 1.95, ¿a qué valor ideal de independencia absoluta está más cerca?",
+          "correctValue": 2.0,
+          "tolerance": 0.1,
+          "explanation": "Un valor de 2 indica independencia total de residuos."
+        },
+        {
+          "id": "p4b",
+          "label": "b)",
+          "question": "Un valor de $d = 0.5$ indicaría una correlación: (1 para Positiva, 2 para Negativa, 0 para Independencia).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Valores cercanos a 0 indican autocorrelación positiva."
+        },
+        {
+          "id": "p4c",
+          "label": "c)",
+          "question": "Si $d = 3.5$, ¿qué tipo de correlación predomina? (1 para Positiva, 2 para Negativa).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "Valores cercanos a 4 indican autocorrelación negativa."
+        },
+        {
+          "id": "p4d",
+          "label": "d)",
+          "question": "En una muestra de 100 residuos perfectamente independientes, ¿cuál es el valor teórico esperado de $d$?",
+          "correctValue": 2.0,
+          "tolerance": 0,
+          "explanation": "El valor nulo de autocorrelación es exactamente 2."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Potencia de los Tests de Normalidad",
+      "context": "Se debate el uso de Kolmogorov-Smirnov (K-S) vs Shapiro-Wilk (S-W) según el tamaño muestral $n$.",
+      "parts": [
+        {
+          "id": "p5a",
+          "label": "a)",
+          "question": "Si tenemos un grupo de $n = 43$, ¿qué test se recomienda según la regla tradicional?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "Se usa S-W para $n < 50$. (Asumimos 0 como S-W y 1 como K-S)."
+        },
+        {
+          "id": "p5b",
+          "label": "b)",
+          "question": "Si el grupo tiene $n = 58$, ¿qué test se aplica tradicionalmente?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Se usa K-S para $n \\ge 50$."
+        },
+        {
+          "id": "p5c",
+          "label": "c)",
+          "question": "Según la evidencia reciente (Field, 2024), ¿qué test muestra mayor potencia en la mayoría de los casos?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "Shapiro-Wilk suele ser más potente."
+        },
+        {
+          "id": "p5d",
+          "label": "d)",
+          "question": "Si el p-valor en S-W es 0.001, ¿se rechaza la normalidad? (1 para Sí, 0 para No).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Como $p < 0.05$, se rechaza la hipótesis nula de normalidad."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Tratamiento de Outliers y Medias Robustas",
+      "context": "Muestra de ansiedad: [5, 6, 6, 7, 8, 25]. El valor 25 es un outlier sospechoso.",
+      "parts": [
+        {
+          "id": "p6a",
+          "label": "a)",
+          "question": "Calcula la media aritmética original de la muestra.",
+          "correctValue": 9.5,
+          "tolerance": 0.1,
+          "explanation": "$$\\frac{5+6+6+7+8+25}{6} = 9.5$$"
+        },
+        {
+          "id": "p6b",
+          "label": "b)",
+          "question": "Calcula la media si eliminamos el outlier (valor 25).",
+          "correctValue": 6.4,
+          "tolerance": 0.1,
+          "explanation": "$$\\frac{5+6+6+7+8}{5} = 6.4$$"
+        },
+        {
+          "id": "p6c",
+          "label": "c)",
+          "question": "¿En cuántas unidades se reduce la media al eliminar el outlier?",
+          "correctValue": 3.1,
+          "tolerance": 0.1,
+          "explanation": "$$9.5 - 6.4 = 3.1$$"
+        },
+        {
+          "id": "p6d",
+          "label": "d)",
+          "question": "Si aplicamos una media recortada al 20% (eliminando el valor más alto y el más bajo de los 6 originales), ¿cuál es la media de los 4 restantes?",
+          "correctValue": 6.75,
+          "tolerance": 0.01,
+          "explanation": "Eliminamos 5 y 25. Media de [6, 6, 7, 8] = $$\\frac{27}{4} = 6.75$$"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Transformación de Raíz Cuadrada",
+      "context": "Para datos con distribución de Poisson (donde la varianza es igual a la media), se usa $y = \\sqrt{x}$.",
+      "parts": [
+        {
+          "id": "p7a",
+          "label": "a)",
+          "question": "Transforma el valor $x = 16$.",
+          "correctValue": 4.0,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{16} = 4$$"
+        },
+        {
+          "id": "p7b",
+          "label": "b)",
+          "question": "Transforma el valor $x = 1.44$.",
+          "correctValue": 1.2,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{1.44} = 1.2$$"
+        },
+        {
+          "id": "p7c",
+          "label": "c)",
+          "question": "Si aplicamos $y = \\sqrt{x + 0.5}$ (variante para valores pequeños), ¿cuál es el resultado para $x = 0$?",
+          "correctValue": 0.71,
+          "tolerance": 0.01,
+          "explanation": "$$\\sqrt{0.5} \\approx 0.707$$"
+        },
+        {
+          "id": "p7d",
+          "label": "d)",
+          "question": "Si la varianza original era 100, ¿cuál es el valor transformado de la desviación típica (raíz de 100)?",
+          "correctValue": 10.0,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{100} = 10$$"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Grados de Libertad en el Test de Levene",
+      "context": "En un ANOVA con 3 grupos (Nivel socioeconómico: Bajo, Medio, Alto) y un total de $N = 101$ participantes.",
+      "parts": [
+        {
+          "id": "p8a",
+          "label": "a)",
+          "question": "Calcula los grados de libertad entre grupos ($gl_1 = k - 1$).",
+          "correctValue": 2.0,
+          "tolerance": 0,
+          "explanation": "$$3 - 1 = 2$$"
+        },
+        {
+          "id": "p8b",
+          "label": "b)",
+          "question": "Calcula los grados de libertad del error ($gl_2 = N - k$).",
+          "correctValue": 98.0,
+          "tolerance": 0,
+          "explanation": "$$101 - 3 = 98$$"
+        },
+        {
+          "id": "p8c",
+          "label": "c)",
+          "question": "Si se pierden 5 sujetos por falta de respuesta, ¿cuál es el nuevo $gl_2$?",
+          "correctValue": 93.0,
+          "tolerance": 0,
+          "explanation": "$$96 - 3 = 93$$"
+        },
+        {
+          "id": "p8d",
+          "label": "d)",
+          "question": "Suma ambos grados de libertad originales ($gl_1 + gl_2$).",
+          "correctValue": 100.0,
+          "tolerance": 0,
+          "explanation": "$$2 + 98 = 100$$ (que es $N-1$)"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Winsorización de Datos Atípicos",
+      "context": "Muestra: [2, 10, 12, 14, 50]. Se aplica winsorización de un nivel sustituyendo los extremos por sus vecinos inmediatos.",
+      "parts": [
+        {
+          "id": "p9a",
+          "label": "a)",
+          "question": "¿Qué valor sustituirá al 2?",
+          "correctValue": 10.0,
+          "tolerance": 0,
+          "explanation": "El vecino más cercano al 2 es 10."
+        },
+        {
+          "id": "p9b",
+          "label": "b)",
+          "question": "¿Qué valor sustituirá al 50?",
+          "correctValue": 14.0,
+          "tolerance": 0,
+          "explanation": "El vecino más cercano al 50 es 14."
+        },
+        {
+          "id": "p9c",
+          "label": "c)",
+          "question": "Calcula la media de la muestra original.",
+          "correctValue": 17.6,
+          "tolerance": 0.1,
+          "explanation": "$$\\frac{2+10+12+14+50}{5} = \\frac{88}{5} = 17.6$$"
+        },
+        {
+          "id": "p9d",
+          "label": "d)",
+          "question": "Calcula la media de la muestra winsorizada [10, 10, 12, 14, 14].",
+          "correctValue": 12.0,
+          "tolerance": 0.1,
+          "explanation": "$$\\frac{10+10+12+14+14}{5} = \\frac{60}{5} = 12.0$$"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Error Estándar y Tamaño de Muestra",
+      "context": "El error estándar se define como $SE = \\frac{s}{\\sqrt{n}}$. Tenemos $s = 10$.",
+      "parts": [
+        {
+          "id": "p10a",
+          "label": "a)",
+          "question": "Calcula el $SE$ si $n = 100$.",
+          "correctValue": 1.0,
+          "tolerance": 0,
+          "explanation": "$$\\frac{10}{\\sqrt{100}} = \\frac{10}{10} = 1$$"
+        },
+        {
+          "id": "p10b",
+          "label": "b)",
+          "question": "Si queremos reducir el $SE$ a la mitad ($SE = 0.5$), ¿qué valor debe tener $\\sqrt{n}$?",
+          "correctValue": 20.0,
+          "tolerance": 0,
+          "explanation": "$$0.5 = \\frac{10}{x} \\Rightarrow x = 20$$"
+        },
+        {
+          "id": "p10c",
+          "label": "c)",
+          "question": "¿Qué tamaño de muestra $n$ se necesita para ese $SE = 0.5$?",
+          "correctValue": 400.0,
+          "tolerance": 0,
+          "explanation": "$$20^2 = 400$$"
+        },
+        {
+          "id": "p10d",
+          "label": "d)",
+          "question": "Si $n$ aumenta de 100 a 400, ¿por cuánto se divide el error estándar?",
+          "correctValue": 2.0,
+          "tolerance": 0,
+          "explanation": "$$\\frac{1.0}{0.5} = 2$$. La raíz de 4 es 2."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Asimetría (Skewness) y Normalidad",
+      "context": "Se analiza el Nivel de Disfunción Familiar. El índice de asimetría es 1.5 y su error estándar es 0.25. Se calcula el estadístico $Z_{skew} = \\frac{\\text{Asimetría}}{\\text{Error Estándar}}$.",
+      "parts": [
+        {
+          "id": "p11a",
+          "label": "a)",
+          "question": "Calcula el valor de $Z_{skew}$.",
+          "correctValue": 6.0,
+          "tolerance": 0.1,
+          "explanation": "$$\\frac{1.5}{0.25} = 6.0$$"
+        },
+        {
+          "id": "p11b",
+          "label": "b)",
+          "question": "Si el umbral es $\\pm 1.96$, ¿es la distribución asimétrica significativamente? (1 para Sí, 0 para No).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Como $6.0 > 1.96$, hay asimetría significativa."
+        },
+        {
+          "id": "p11c",
+          "label": "c)",
+          "question": "¿Hacia qué lado es la asimetría? (1 para Positiva/Derecha, 2 para Negativa/Izquierda).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Un valor positivo indica asimetría positiva."
+        },
+        {
+          "id": "p11d",
+          "label": "d)",
+          "question": "Si tras transformar los datos la asimetría baja a 0.2, ¿cuál es el nuevo $Z_{skew}$?",
+          "correctValue": 0.8,
+          "tolerance": 0.1,
+          "explanation": "$$\\frac{0.2}{0.25} = 0.8$$"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Curtosis y Forma de la Distribución",
+      "context": "Una variable tiene un índice de curtosis de -1.2.",
+      "parts": [
+        {
+          "id": "p12a",
+          "label": "a)",
+          "question": "¿Cómo se clasifica esta distribución? (1 para Leptocúrtica, 2 para Platicúrtica, 3 para Mesocúrtica).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "Valores negativos indican distribuciones platicúrticas (planas)."
+        },
+        {
+          "id": "p12b",
+          "label": "b)",
+          "question": "Si el error estándar de la curtosis es 0.4, calcula el estadístico $Z_{kurt}$.",
+          "correctValue": -3.0,
+          "tolerance": 0,
+          "explanation": "$$\\frac{-1.2}{0.4} = -3.0$$"
+        },
+        {
+          "id": "p12c",
+          "label": "c)",
+          "question": "¿Se aleja significativamente de la normalidad? (Usar umbral 1.96; 1 para Sí, 0 para No).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$|-3.0| > 1.96$$"
+        },
+        {
+          "id": "p12d",
+          "label": "d)",
+          "question": "Si la curtosis fuera 0, ¿cuál sería el valor de $Z_{kurt}$?",
+          "correctValue": 0.0,
+          "tolerance": 0,
+          "explanation": "$$\\frac{0}{0.4} = 0$$"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Análisis de Residuos en Regresión",
+      "context": "Supuesto de Media Cero. En un modelo simple, los valores observados $Y$ son [10, 12, 14] y los predichos $\\hat{Y}$ son [11, 12, 13]. El residuo es $e = Y - \\hat{Y}$.",
+      "parts": [
+        {
+          "id": "p13a",
+          "label": "a)",
+          "question": "Calcula el primer residuo $e_1$.",
+          "correctValue": -1.0,
+          "tolerance": 0,
+          "explanation": "$$10 - 11 = -1$$"
+        },
+        {
+          "id": "p13b",
+          "label": "b)",
+          "question": "Calcula el tercer residuo $e_3$.",
+          "correctValue": 1.0,
+          "tolerance": 0,
+          "explanation": "$$14 - 13 = 1$$"
+        },
+        {
+          "id": "p13c",
+          "label": "c)",
+          "question": "Calcula la suma de los tres residuos ($e_1 + e_2 + e_3$).",
+          "correctValue": 0.0,
+          "tolerance": 0,
+          "explanation": "$$-1 + 0 + 1 = 0$$"
+        },
+        {
+          "id": "p13d",
+          "label": "d)",
+          "question": "Calcula la media de los residuos.",
+          "correctValue": 0.0,
+          "tolerance": 0,
+          "explanation": "La media de una suma cero es siempre cero."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Ratio de Varianzas de Hartley (F-max)",
+      "context": "Se analizan 4 grupos con varianzas: $s_1^2=10, s_2^2=15, s_3^2=5, s_4^2=20$.",
+      "parts": [
+        {
+          "id": "p14a",
+          "label": "a)",
+          "question": "Identifica la varianza máxima.",
+          "correctValue": 20.0,
+          "tolerance": 0,
+          "explanation": "El valor más alto es 20."
+        },
+        {
+          "id": "p14b",
+          "label": "b)",
+          "question": "Identifica la varianza mínima.",
+          "correctValue": 5.0,
+          "tolerance": 0,
+          "explanation": "El valor más bajo es 5."
+        },
+        {
+          "id": "p14c",
+          "label": "c)",
+          "question": "Calcula el estadístico $F_{max}$.",
+          "correctValue": 4.0,
+          "tolerance": 0,
+          "explanation": "$$\\frac{20}{5} = 4.0$$"
+        },
+        {
+          "id": "p14d",
+          "label": "d)",
+          "question": "Si el valor crítico para $\\alpha=0.05$ es 3.5, ¿se cumple la homocedasticidad? (1 para Sí, 0 para No).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "Como $4.0 > 3.5$, se rechaza la homogeneidad."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Interpretación de Gráficos Q-Q",
+      "context": "En un gráfico Q-Q, se analiza la distancia de los puntos a la diagonal. La diagonal representa la normalidad perfecta.",
+      "parts": [
+        {
+          "id": "p15a",
+          "label": "a)",
+          "question": "Si el 95% de los puntos están sobre la línea pero los extremos se alejan, ¿cómo se llama esta forma? (1 para Pesada, 2 para Ligera).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Colas pesadas (outliers)."
+        },
+        {
+          "id": "p15b",
+          "label": "b)",
+          "question": "Si el test K-S da $p = 0.04$ pero el gráfico Q-Q es casi perfecto, ¿qué suele ser más fiable en muestras grandes? (1 para Visual, 0 para Test).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "En muestras grandes, los tests son demasiado sensibles a desviaciones triviales."
+        },
+        {
+          "id": "p15c",
+          "label": "c)",
+          "question": "Un valor p de 0.04 en un test de normalidad indica que la probabilidad de obtener esos datos si la distribución fuera normal es del: (en porcentaje).",
+          "correctValue": 4.0,
+          "tolerance": 0,
+          "explanation": "El p-valor es la probabilidad decimal, multiplicada por 100."
+        },
+        {
+          "id": "p15d",
+          "label": "d)",
+          "question": "¿Cuál es el nivel de confianza asociado a un $\\alpha = 0.05$? (en porcentaje).",
+          "correctValue": 95.0,
+          "tolerance": 0,
+          "explanation": "$$(1 - 0.05) \\cdot 100 = 95\\%$$"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Vallas de Tukey para Outliers",
+      "context": "En un diagrama de caja: $Q_1 = 10, Q_3 = 20$. Se define el Rango Intercuartílico como $IQR = Q_3 - Q_1$.",
+      "parts": [
+        {
+          "id": "p16a",
+          "label": "a)",
+          "question": "Calcula el $IQR$.",
+          "correctValue": 10.0,
+          "tolerance": 0,
+          "explanation": "$$20 - 10 = 10$$"
+        },
+        {
+          "id": "p16b",
+          "label": "b)",
+          "question": "Calcula el límite superior para outliers leves ($Q_3 + 1.5 \\cdot IQR$).",
+          "correctValue": 35.0,
+          "tolerance": 0,
+          "explanation": "$$20 + (1.5 \\cdot 10) = 35$$"
+        },
+        {
+          "id": "p16c",
+          "label": "c)",
+          "question": "Calcula el límite superior para outliers extremos ($Q_3 + 3 \\cdot IQR$).",
+          "correctValue": 50.0,
+          "tolerance": 0,
+          "explanation": "$$20 + (3 \\cdot 10) = 50$$"
+        },
+        {
+          "id": "p16d",
+          "label": "d)",
+          "question": "Si un valor es 55, ¿qué tipo de outlier es? (1 para Leve, 2 para Extremo).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "Como $55 > 50$, es un outlier extremo."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Estimación por Bootstrapping",
+      "context": "El bootstrapping genera muestras con reemplazo para estimar errores estándar robustos.",
+      "parts": [
+        {
+          "id": "p17a",
+          "label": "a)",
+          "question": "Si una muestra original tiene $n = 5$ elementos [A, B, C, D, E], ¿cuál es la probabilidad de elegir 'A' en la primera extracción?",
+          "correctValue": 0.2,
+          "tolerance": 0,
+          "explanation": "$$\\frac{1}{5} = 0.2$$"
+        },
+        {
+          "id": "p17b",
+          "label": "b)",
+          "question": "Si realizamos 1000 remuestreos y 50 dan una media superior a 20, ¿cuál es el p-valor empírico?",
+          "correctValue": 0.05,
+          "tolerance": 0,
+          "explanation": "$$\\frac{50}{1000} = 0.05$$"
+        },
+        {
+          "id": "p17c",
+          "label": "c)",
+          "question": "¿Es este resultado significativo al nivel 0.05? (1 para Sí, 0 para No).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Es igual al umbral, se considera límite significativo."
+        },
+        {
+          "id": "p17d",
+          "label": "d)",
+          "question": "Si duplicamos los remuestreos a 2000, ¿cuántos deberían superar 20 para mantener el mismo p-valor?",
+          "correctValue": 100.0,
+          "tolerance": 0,
+          "explanation": "$$2000 \\cdot 0.05 = 100$$"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Varianza Constante en VI Categórica",
+      "context": "Dos grupos (Hombres/Mujeres). Desviaciones típicas: $s_H = 4, s_M = 4.5$.",
+      "parts": [
+        {
+          "id": "p18a",
+          "label": "a)",
+          "question": "Calcula la varianza de los hombres ($s^2$).",
+          "correctValue": 16.0,
+          "tolerance": 0,
+          "explanation": "$$4^2 = 16$$"
+        },
+        {
+          "id": "p18b",
+          "label": "b)",
+          "question": "Calcula la varianza de las mujeres.",
+          "correctValue": 20.25,
+          "tolerance": 0,
+          "explanation": "$$4.5^2 = 20.25$$"
+        },
+        {
+          "id": "p18c",
+          "label": "c)",
+          "question": "¿Cuál es la diferencia absoluta entre ambas varianzas?",
+          "correctValue": 4.25,
+          "tolerance": 0,
+          "explanation": "$$20.25 - 16 = 4.25$$"
+        },
+        {
+          "id": "p18d",
+          "label": "d)",
+          "question": "Si el tamaño de muestra es idéntico ($n_1 = n_2$), ¿es preocupante una violación leve de la homocedasticidad? (1 para Sí, 0 para No).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "Field (2024) indica que con tamaños iguales, el efecto es mínimo."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Suma de Errores Esféricos",
+      "context": "Un modelo cumple: 1. Media cero, 2. Homocedasticidad, 3. Independencia.",
+      "parts": [
+        {
+          "id": "p19a",
+          "label": "a)",
+          "question": "¿Cuántas condiciones básicas forman los errores esféricos?",
+          "correctValue": 3.0,
+          "tolerance": 0,
+          "explanation": "Media cero, Homocedasticidad e Independencia."
+        },
+        {
+          "id": "p19b",
+          "label": "b)",
+          "question": "Si solo se cumple la media cero y la independencia, ¿cuántas fallan?",
+          "correctValue": 1.0,
+          "tolerance": 0,
+          "explanation": "Falla la homocedasticidad."
+        },
+        {
+          "id": "p19c",
+          "label": "c)",
+          "question": "¿Cuál suele cumplirse siempre por construcción del modelo? (1: Media cero, 2: Homocedasticidad, 3: Independencia).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "La media cero se cumple por diseño matemático."
+        },
+        {
+          "id": "p19d",
+          "label": "d)",
+          "question": "Si el supuesto 2 falla, ¿qué fenómeno ocurre? (1: Heterocedasticidad, 2: Autocorrelación).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "La no constancia de varianza es heterocedasticidad."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Decisión Final: Pruebas Robustas",
+      "context": "Se analiza una VD que no es normal ($p=0.02$) y tiene varianzas distintas ($p=0.01$). $n=15$ por grupo.",
+      "parts": [
+        {
+          "id": "p20a",
+          "label": "a)",
+          "question": "¿Es adecuado usar una prueba paramétrica estándar (t-test)? (1 para Sí, 0 para No).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "Se violan ambos supuestos críticos en muestra pequeña."
+        },
+        {
+          "id": "p20b",
+          "label": "b)",
+          "question": "Si aplicamos la corrección de Welch, ¿qué supuesto estamos corrigiendo principalmente? (1: Normalidad, 2: Homocedasticidad).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "Welch es un método robusto para varianzas desiguales."
+        },
+        {
+          "id": "p20c",
+          "label": "c)",
+          "question": "Si decidimos usar una prueba no paramétrica, ¿cuál sería la equivalente a la t de Student? (1: U de Mann-Whitney, 2: Wilcoxon, 3: Kruskal-Wallis).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Mann-Whitney para dos grupos independientes."
+        },
+        {
+          "id": "p20d",
+          "label": "d)",
+          "question": "Si transformamos los datos y ahora $p_{norm} = 0.08$ y $p_{homoc} = 0.12$, ¿podemos usar la prueba paramétrica? (1 para Sí, 0 para No).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Tras la transformación exitosa, los supuestos se cumplen ($p > 0.05$)."
+        }
+      ]
+    }
+  ],
+  "jsonFormulas": [
+    {
+      "name": "Hipótesis Nula de Homocedasticidad",
+      "tex": "$$H_{0}: \\sigma_{1}^{2} = \\sigma_{2}^{2}$$"
+    },
+    {
+      "name": "Hipótesis Alternativa de Homocedasticidad",
+      "tex": "$$H_{1}: \\sigma_{1}^{2} \\neq \\sigma_{2}^{2}$$"
+    },
+    {
+      "name": "Hipótesis Nula de Independencia de Residuos",
+      "tex": "$$H_{0}: \\rho_{\\epsilon} = 0$$"
+    },
+    {
+      "name": "Hipótesis Alternativa de Independencia de Residuos",
+      "tex": "$$H_{1}: \\rho_{\\epsilon} \\neq 0$$"
+    },
+    {
+      "name": "Rango Aceptable de Puntuaciones Típicas para Normalidad",
+      "tex": "$$z \\in [-1.96, 1.96]$$"
+    },
+    {
+      "name": "Valor de Referencia de Durbin-Watson para Independencia",
+      "tex": "$$d \\approx 2$$"
+    }
+  ]
+}

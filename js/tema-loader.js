@@ -185,6 +185,18 @@ const THEME_SUBTITLES = {
         '9': 'Trastornos Disociativos, de Síntomas Somáticos y Relacionados',
         '10': 'Trastornos del Control de Impulsos',
         '11': 'Trastornos Relacionados con Sustancias y Trastornos Adictivos'
+    },
+    'estadistica-aplicada': {
+        '1.1': 'Ciencia, Método y Estadística',
+        '1.2': 'Variables, Muestreo y Escalas de Medida',
+        '2.1': 'Estadística Descriptiva',
+        '2.2': 'La Forma de los Datos',
+        '3.1': 'Medidas de Centralización y Dispersión',
+        '3.2': 'La Base de la Estadística',
+        '4.1': 'Asociación y Causalidad',
+        '4.2': 'Asociación entre Variables Cuantitativas',
+        '5': 'Contraste de Hipótesis',
+        '6': 'Análisis de Varianza (ANOVA)'
     }
 };
 
@@ -531,6 +543,24 @@ const THEME_CONFIG = {
         titleGradient: 'from-slate-600 to-zinc-500',
         borderCard: 'border-b-slate-500',
         borderCardAlt: 'border-b-zinc-500',
+    },
+    'estadistica-aplicada': {
+        name: 'Estadística Aplicada',
+        icon: 'ph-chart-line-up',
+        bg: '#f0f9ff', // Sky Blue
+        gradients: 'radial-gradient(at 0% 0%, hsla(192, 90%, 90%, 1) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(170, 70%, 90%, 1) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(210, 80%, 90%, 1) 0, transparent 50%)',
+        primary: '#0284c7',
+        primaryGrad: 'linear-gradient(135deg, #0284c7 0%, #0ea5e9 50%, #2dd4bf 100%)',
+        primaryShadow: 'rgba(2, 132, 199, 0.4)',
+        accent: '#0ea5e9',
+        accentBg: '#f0f9ff',
+        accentLight: '#e0f2fe',
+        textAccent: '#0284c7',
+        optionHoverBorder: '#0ea5e9',
+        optionHoverBg: '#f0f9ff',
+        titleGradient: 'from-sky-500 to-blue-500',
+        borderCard: 'border-b-sky-500',
+        borderCardAlt: 'border-b-blue-500',
     },
     '_default': {
         name: 'Asignatura',

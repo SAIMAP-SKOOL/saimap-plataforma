@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIMAP - Tema 1.1: Ciencia, Método y Estadística</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Configuración de MathJax para renderizar LaTeX -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            startup: {
+                typeset: false // Lo llamaremos manualmente después de cargar las vistas
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f0f9ff;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(192, 90%, 90%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(170, 70%, 90%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(210, 80%, 90%, 1) 0, transparent 50%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 40px -10px rgba(14, 165, 233, 0.15);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 50%, #2dd4bf 100%);
+            background-size: 200% 200%;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            color: white;
+            font-weight: 700;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
+            background-position: 100% 50%;
+        }
+
+        /* Estilos Flashcards */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .card-inner.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 1.5rem;
+        }
+
+        .card-front {
+            background: white;
+            border: 2px solid #e2e8f0;
+        }
+
+        .card-back {
+            background: #4f46e5;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .option-btn {
+            transition: all 0.2s;
+            border: 2px solid #e2e8f0;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: #0ea5e9;
+            background-color: #f0f9ff;
+            transform: translateX(5px);
+        }
+
+        /* MathJax adjustments to prevent overflow */
+        mjx-container {
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Global -->
+    <header class="glass-card sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="app.showView('home')">
+                <div class="bg-sky-600 text-white p-2 rounded-lg shadow-lg">
+                    <i class="ph-bold ph-chart-line-up text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-xl tracking-tight text-slate-800" id="header-title">Tema 1.1 - Ciencia, Método y Estadística</h1>
+                    <p class="text-[9px] uppercase tracking-widest font-bold text-slate-500">ANÁLISIS DE DATOS Y MATEMÁTICAS</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 sm:gap-4">
+                <!-- Botón Portal Principal -->
+                <a href="../../../index.html" class="bg-slate-700 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-arrow-left text-lg"></i> <span class="hidden sm:inline">Portal Principal</span>
+                </a>
+
+                <!-- Botón Calculadora Externa -->
+                <a href="https://web2.0calc.es/" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-calculator text-lg"></i> <span class="hidden sm:inline">Calculadora</span>
+                </a>
+
+                <!-- Botón Menú Global -->
+                <button id="btn-global-menu" onclick="app.showView('home')" class="hidden bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-xl items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-house text-lg"></i> <span class="hidden sm:inline">Menú</span>
+                </button>
+
+                <!-- Contador Global -->
+                <div id="nav-counter" class="hidden items-center gap-2 bg-white/60 px-3 py-1.5 rounded-full border border-white">
+                    <span id="global-counter" class="text-sky-700 font-bold font-mono text-sm">0/0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-5xl w-full mx-auto p-6 flex flex-col items-center justify-center">
+
+        <!-- VIEW: HOME (MENU) -->
+        <section id="view-home" class="fade-in w-full">
+            <div class="text-center mb-12">
+                <h1 class="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400 mb-8 tracking-tighter opacity-80 select-none">
+                    SAIMAP</h1>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-4">¿Cómo quieres practicar hoy?</h2>
+                <h3 class="text-xl font-bold text-slate-600 mb-4">Tema 1.1 - Ciencia, Método y Estadística</h3>
+                <p class="text-slate-500">Selecciona la herramienta que mejor se adapte a tu objetivo de estudio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                <!-- QUIZ -->
+                <div onclick="app.startTool('quiz')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-sky-500">
+                    <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-numbers text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Test Teórico</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Preguntas de opción múltiple sobre conceptos y propiedades estadísticas.</p>
+                </div>
+
+                <!-- LABORATORIO (Reemplaza Trainer) -->
+                <div onclick="app.startTool('laboratorio')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-emerald-500">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-calculator text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Laboratorio</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Ejercicios de cálculo numérico con escenarios guiados paso a paso.</p>
+                </div>
+
+                <!-- FÓRMULAS (Reemplaza Flashcards) -->
+                <div onclick="app.startTool('formulas')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-indigo-500">
+                    <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-dashes text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fórmulas</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Glosario completo de fórmulas matemáticas para consultar rápidamente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: QUIZ -->
+        <section id="view-quiz" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-sky-500"></div>
+
+                <div class="flex justify-between items-center mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Modo Test</span>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">
+                            Finalizar Sesión
+                        </button>
+                    </div>
+                    <button id="quiz-hint-btn" onclick="app.quizToggleHint()" class="text-amber-600 font-bold text-xs flex items-center gap-1 hover:bg-amber-50 px-3 py-1.5 rounded-lg transition">
+                        <i class="ph-bold ph-lightbulb"></i> Ver Pista
+                    </button>
+                </div>
+
+                <h2 id="quiz-question" class="text-2xl font-bold text-slate-800 mb-8 math-content"></h2>
+
+                <div id="quiz-hint-box" class="hidden mb-6 p-4 bg-amber-50 border-l-4 border-amber-400 text-amber-900 text-sm italic rounded-r-xl math-content"></div>
+
+                <div id="quiz-options" class="space-y-3"></div>
+
+                <!-- Feedback Quiz -->
+                <div id="quiz-feedback" class="hidden mt-8 p-6 rounded-2xl border transition-all">
+                    <div class="flex items-start gap-4">
+                        <div id="quiz-feedback-icon" class="text-3xl"></div>
+                        <div class="w-full">
+                            <h4 id="quiz-feedback-title" class="font-bold text-lg"></h4>
+                            <div id="quiz-explanation" class="text-sm text-slate-600 mt-2 p-3 bg-slate-50 rounded-lg math-content"></div>
+                        </div>
+                    </div>
+                    <button onclick="app.quizNext()" class="mt-6 btn-primary py-4 px-8 rounded-xl w-full flex items-center justify-center gap-2">
+                        Continuar <i class="ph ph-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: LABORATORIO -->
+        <section id="view-laboratorio" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl overflow-hidden border-t-4 border-emerald-500">
+                <!-- Cabecera y Contexto -->
+                <div class="p-6 md:p-8 bg-emerald-50/50 border-b border-slate-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center font-bold" id="lab-problem-number">1</div>
+                            <h2 id="lab-main-title" class="text-xl font-bold text-slate-800"></h2>
+                        </div>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">Finalizar</button>
+                    </div>
+                    <div id="lab-context-box" class="bg-white/80 p-5 rounded-xl text-slate-700 math-content text-base border border-slate-200 shadow-inner"></div>
+                </div>
+
+                <!-- Contenedor de Apartados -->
+                <div id="lab-parts-container" class="flex flex-col bg-white">
+                    <!-- Los apartados se inyectan aquí automáticamente -->
+                </div>
+            </div>
+
+            <!-- Botón de siguiente problema -->
+            <button onclick="app.labNext()" class="mt-6 w-full bg-slate-800 hover:bg-slate-900 text-white py-4 rounded-xl font-bold shadow-lg transform active:scale-95 transition flex justify-center items-center gap-2">
+                Siguiente Problema <i class="ph-bold ph-arrow-right"></i>
+            </button>
+        </section>
+
+        <!-- VIEW: FÓRMULAS -->
+        <section id="view-formulas" class="hidden w-full fade-in space-y-6">
+            <div class="mb-6 px-2">
+                <h2 class="text-3xl font-black text-slate-800">Glosario de Fórmulas</h2>
+                <p class="text-slate-500 mt-1">Lista completa de recursos matemáticos</p>
+            </div>
+            
+            <!-- Grid Scrollable para las fórmulas -->
+            <div id="formulas-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-12">
+                <!-- Las fórmulas se inyectarán aquí -->
+            </div>
+        </section>
+
+        <!-- VIEW: RESULTS -->
+        <section id="view-results" class="hidden w-full fade-in text-center py-12">
+            <div class="glass-card p-12 rounded-[3rem] inline-block max-w-md w-full border-2 border-white shadow-2xl">
+                <div class="w-24 h-24 bg-yellow-400 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl shadow-yellow-200">
+                    <i class="ph-fill ph-trophy text-5xl"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold text-slate-800 mb-2">¡Sesión Finalizada!</h2>
+                <p id="result-text" class="text-slate-500 mb-8">Has completado todos los ejercicios.</p>
+
+                <div class="flex flex-col gap-3">
+                    <button id="btn-retry-errors" onclick="app.retryErrors()" class="hidden bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-2xl transition flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-warning-circle"></i> Repasar solo Fallos (<span id="fail-count">0</span>)
+                    </button>
+                    <button onclick="app.showView('home')" class="btn-primary w-full py-4 rounded-2xl uppercase tracking-widest text-sm shadow-md">Menú Principal</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // --- DATOS JSON VACÍOS (Inyectados dinámicamente) ---
+        const jsonTestA = [{"q": "¿Es correcto afirmar que la estadística inferencial permite sintetizar y organizar los datos de la muestra antes de generalizar a la población?", "options": ["Verdadero: Es la fase inicial de organización de datos.", "Falso: Esa es la función de la estadística descriptiva.", "No se: Depende del diseño experimental seleccionado."], "correct": 1, "hint": "Distingue entre el proceso de resumen de datos y el proceso de generalización.", "explanation": "$$\\text{La estadística descriptiva se encarga de organizar y sintetizar los datos, mientras que la inferencial permite obtener conclusiones poblacionales.}$$"}, {"q": "¿Es la reflexividad del investigador un componente exclusivo de los artículos de carácter cuantitativo según la normativa APA 2020?", "options": ["Verdadero: Permite ajustar sesgos matemáticos exactos.", "Falso: Es una característica propia de los cualitativos.", "No se: Depende de si el estudio utiliza metaanálisis."], "correct": 1, "hint": "Relaciona el término con la introspección sobre las perspectivas propias en el análisis.", "explanation": "$$\\text{La reflexividad implica que los investigadores cualitativos evalúen cómo sus propias creencias influyen en el proceso de investigación.}$$"}, {"q": "¿El metaanálisis utiliza datos individuales de los participantes de cada estudio para extraer su síntesis general de resultados?", "options": ["Verdadero: Es la base para calcular el tamaño del efecto.", "Falso: Analiza conjuntos de estudios, no datos individuales.", "No se: Solo si se trata de un metaanálisis cualitativo."], "correct": 1, "hint": "Piensa en la unidad de análisis: ¿es el individuo o es el artículo científico?", "explanation": "$$\\text{En los metaanálisis no se utilizan datos individuales; en su lugar, se analizan y sintetizan conjuntos de estudios previos.}$$"}, {"q": "¿El diseño de encuesta en psicología cuantitativa tiene como objetivo primordial establecer relaciones de causalidad entre variables?", "options": ["Verdadero: A través de modelos de regresión avanzados.", "Falso: Se limita a identificar asociaciones y tendencias.", "No se: Depende de si se incluye un grupo de control."], "correct": 1, "hint": "Compara la capacidad de los experimentos frente a las encuestas para determinar causas.", "explanation": "$$\\text{A diferencia de los experimentos, las encuestas no buscan establecer relaciones causales, sino identificar asociaciones en la población.}$$"}, {"q": "¿Deben las palabras clave (keywords) en un informe APA incluirse con el fin de facilitar la indexación en bases de datos digitales?", "options": ["Verdadero: Facilitan que otros lectores localicen la obra.", "Falso: Su función es solo resumir el abstract del artículo.", "No se: Solo son obligatorias en metaanálisis sistemáticos."], "correct": 0, "hint": "Considera la utilidad de los términos cortos en los motores de búsqueda académicos.", "explanation": "$$\\text{Las palabras clave se utilizan para la indexación, permitiendo que el trabajo sea encontrado mediante términos o siglas relevantes.}$$"}, {"q": "¿Es la asignación aleatoria de los participantes una condición sine qua non para que un diseño sea considerado como experimental?", "options": ["Verdadero: Es vital para el control de variables extrañas.", "Falso: Se puede considerar experimental sin aleatorización.", "No se: Solo es necesario en diseños de encuesta simple."], "correct": 0, "hint": "Recuerda los elementos que diferencian un experimento puro de otros diseños.", "explanation": "$$\\text{Un diseño experimental sólido incluye manipulación de variables independientes y asignación aleatoria para garantizar validez interna.}$$"}, {"q": "¿La Declaración PRISMA proporciona guías protocolizadas tanto para metaanálisis como para revisiones de literatura narrativas?", "options": ["Verdadero: Estandariza todo tipo de revisiones literarias.", "Falso: Se enfoca específicamente en revisiones sistemáticas.", "No se: Solo aplica si el estudio es de corte cualitativo."], "correct": 1, "hint": "Diferencia entre una revisión que usa un protocolo estricto y una que es solo un resumen narrativo.", "explanation": "$$\\text{Las guías PRISMA se establecen para revisiones sistemáticas, las cuales siguen un sistema protocolizado ausente en las narrativas.}$$"}, {"q": "¿El formato de citación APA requiere que la lista de referencias se organice cronológicamente según la fecha de publicación?", "options": ["Verdadero: Facilita ver la evolución histórica del tema.", "Falso: Las entradas deben seguir un estricto orden alfabético.", "No se: Se puede elegir el orden según el tipo de revista."], "correct": 1, "hint": "Piensa en cómo se buscan los autores en la lista final del documento.", "explanation": "$$\\text{La normativa APA exige que la lista de referencias se encuentre en orden alfabético al final del texto y antes de los anexos.}$$"}, {"q": "¿En un artículo cualitativo, el proceso de análisis de datos se define como un procedimiento iterativo y autocorrectivo?", "options": ["Verdadero: Los hallazgos se refinan continuamente en el tiempo.", "Falso: El análisis es lineal y se define antes de recolectar.", "No se: Depende de si se utilizan observaciones u entrevistas."], "correct": 0, "hint": "Recuerda si el investigador cualitativo puede volver atrás para ajustar sus categorías.", "explanation": "$$\\text{La investigación cualitativa es iterativa, lo que permite producir conocimientos originales mediante el refinamiento constante del análisis.}$$"}, {"q": "¿La sección de 'Resultados' de un informe cuantitativo es el lugar adecuado para discutir las limitaciones e implicaciones teóricas?", "options": ["Verdadero: Proporciona el contexto necesario para los datos.", "Falso: Esa información pertenece a la sección de Discusión.", "No se: Solo si los resultados son estadísticamente nulos."], "correct": 1, "hint": "Distingue entre la presentación pura de hallazgos y su interpretación subjetiva.", "explanation": "$$\\text{La sección de Resultados se limita a presentar el análisis de datos, mientras que la Discusión interpreta y menciona limitaciones.}$$"}, {"q": "Seleccione la afirmación correcta respecto a la lógica de la experimentación en las ciencias de la conducta:", "options": ["Permite establecer relaciones causales mediante el control de variables extrañas.", "Se basa exclusivamente en la observación naturalista sin intervención del autor.", "Prioriza la validez externa sobre la replicabilidad de los hallazgos numéricos."], "correct": 0, "hint": "Enfócate en el objetivo principal de manipular una Variable Independiente.", "explanation": "$$\\text{La experimentación busca aislar efectos de la VI sobre la VD para establecer causalidad, apoyándose en el control experimental.}$$"}, {"q": "Seleccione la afirmación correcta sobre la estructura del Abstract o Resumen según la normativa APA:", "options": ["Debe extenderse hasta las 500 palabras para detallar toda la metodología.", "Puede presentarse en formato de párrafo simple o con estructura por secciones.", "Es obligatorio incluir todas las tablas y figuras de los resultados principales."], "correct": 1, "hint": "Busca la opción que mencione la flexibilidad de formato permitida por APA.", "explanation": "$$\\text{El resumen debe ser breve (máximo 250 palabras) y puede adoptar un formato de párrafo único o uno estructurado con sub-apartados.}$$"}, {"q": "Seleccione la afirmación correcta sobre los artículos de revisión de literatura (narrativos):", "options": ["Requieren el uso obligatorio de la Declaración PRISMA para su publicación oficial.", "Identifican contradicciones y vacíos en el estado actual de una temática dada.", "Utilizan técnicas de modelado estadístico para sintetizar el tamaño del efecto."], "correct": 1, "hint": "Considera qué aporta una revisión que no sea necesariamente un cálculo estadístico.", "explanation": "$$\\text{Las revisiones de literatura definen problemas, resumen investigaciones previas e identifican inconsistencias en el cuerpo de conocimiento.}$$"}, {"q": "Seleccione la afirmación correcta sobre los datos en la investigación de corte cualitativo:", "options": ["Se recogen exclusivamente mediante cuestionarios cerrados con escala Likert.", "Se basan en lenguaje natural, observaciones y expresiones de los sujetos.", "Deben ser transformados a valores binarios para poder ser analizados en APA."], "correct": 1, "hint": "Identifica la naturaleza no numérica de la información en este enfoque.", "explanation": "$$\\text{La investigación cualitativa utiliza palabras, observaciones y expresiones como fuente primaria de datos para comprender experiencias.}$$"}, {"q": "Seleccione la afirmación correcta respecto a la sección de 'Método' en un informe científico:", "options": ["Es el apartado donde se explica el 'qué' se ha investigado y sus teorías.", "Describe detalladamente el 'cómo' se llevó a cabo la puesta en práctica.", "Presenta únicamente el 'cuánto' mediante tablas de frecuencias y modas."], "correct": 1, "hint": "Asocia la sección con la replicabilidad del estudio por parte de otros autores.", "explanation": "$$\\text{El Método incluye el diseño, participantes, instrumentos y procedimientos, permitiendo que otros investigadores repliquen el estudio.}$$"}, {"q": "Seleccione la afirmación correcta sobre el uso de Anexos en un informe según la normativa APA:", "options": ["Deben incluirse solo si ayudan a entender, evaluar o replicar la investigación.", "Son el lugar obligatorio para colocar las tablas de resultados más relevantes.", "Se deben etiquetar mediante números romanos siguiendo el orden de aparición."], "correct": 0, "hint": "Recuerda que el contenido adicional no debe distraer en el cuerpo principal.", "explanation": "$$\\text{Los anexos contienen material complementario (como escalas o instrucciones) que sería inapropiado en el cuerpo del artículo.}$$"}, {"q": "Seleccione la afirmación correcta sobre la estadística aplicada en el ámbito de la psicología:", "options": ["Es una herramienta secundaria que carece de relevancia en la práctica clínica.", "Permite validar qué técnicas psicoterapéuticas resultan ser las más efectivas.", "Se utiliza únicamente en el departamento de Recursos Humanos para selección."], "correct": 1, "hint": "Considera cómo la psicología se respalda científicamente hoy en día.", "explanation": "$$\\text{El análisis de datos permite diagnosticar, evaluar y validar científicamente la efectividad de las intervenciones terapéuticas.}$$"}, {"q": "Seleccione la afirmación correcta sobre la tipografía y formato del texto en la normativa APA:", "options": ["El texto debe estar alineado a la izquierda sin utilizar la opción de justificado.", "Es necesario usar un interlineado sencillo para ahorrar espacio en las páginas.", "La sangría debe aplicarse en todas las líneas de cada párrafo del manuscrito."], "correct": 0, "hint": "Busca el estándar de alineación que evita espacios desiguales entre palabras.", "explanation": "$$\\text{APA especifica que el texto debe estar alineado a la izquierda, con espaciado doble y sangría solo en la primera línea de cada párrafo.}$$"}, {"q": "Seleccione la afirmación correcta sobre los metaanálisis cualitativos:", "options": ["Calculan el promedio ponderado de los tamaños del efecto de los estudios primarios.", "Analizan investigaciones fenomenológicas, etnográficas o estudios de caso.", "Requieren el uso de software de modelado de ecuaciones estructurales $(\\text{SEM})$."], "correct": 1, "hint": "Identifica qué tipo de material se sintetiza en un metaanálisis no cuantitativo.", "explanation": "$$\\text{Los metaanálisis cualitativos sintetizan estudios de corte cualitativo, como los fenomenológicos o narrativos, manteniendo su enfoque.}$$"}, {"q": "Seleccione la afirmación correcta sobre el contraste de hipótesis en estadística aplicada:", "options": ["Es el proceso que verifica si lo observado en la muestra ocurre en la población.", "Se utiliza exclusivamente para organizar los datos descriptivos de un solo sujeto.", "Garantiza con total certeza $(\\text{p}=1.0)$ que los resultados son leyes universales."], "correct": 0, "hint": "Relaciona la muestra con la población a través de la probabilidad.", "explanation": "$$\\text{El contraste de hipótesis permite verificar la probabilidad de que los hallazgos muestrales sean generalizables a toda la población.}$$"}, {"q": "Seleccione la afirmación correcta sobre la importancia de la normativa APA en la profesión:", "options": ["Establece protocolos que garantizan la calidad y difusión efectiva de estudios.", "Es un manual estático que no ha sufrido modificaciones desde su creación inicial.", "Se limita a reglas ortográficas sin influir en el diseño de las investigaciones."], "correct": 0, "hint": "Piensa en el propósito de estandarizar la comunicación científica global.", "explanation": "$$\\text{La normativa APA define criterios de formato y estructura para que los hallazgos científicos se comuniquen de forma profesional.}$$"}, {"q": "Seleccione la afirmación correcta sobre la sección de 'Discusión' en estudios cuantitativos:", "options": ["Presenta por primera vez los datos numéricos brutos sin ningún tipo de filtro.", "Conecta los resultados del estudio con la teoría previa revisada en el inicio.", "Debe evitar mencionar las limitaciones para no restar credibilidad al autor."], "correct": 1, "hint": "Busca la sección que responde al 'por qué' de los resultados hallados.", "explanation": "$$\\text{La discusión interpreta los hallazgos a la luz de la literatura previa, abordando implicaciones y limitaciones del estudio.}$$"}, {"q": "Seleccione la afirmación correcta sobre los artículos científicos cuantitativos según APA:", "options": ["Los resultados de estas investigaciones se representan siempre numéricamente.", "Evitan el uso de métodos estadísticos para priorizar la intuición del psicólogo.", "Se centran únicamente en el análisis cronológico de la experiencia humana."], "correct": 0, "hint": "Asocia el término 'cuantitativo' con la naturaleza de sus hallazgos.", "explanation": "$$\\text{En los artículos cuantitativos, los resultados se representan mediante números y se analizan con técnicas estadísticas.}$$"}, {"q": "Seleccione la afirmación correcta sobre la relación entre muestra y población:", "options": ["Una muestra no requiere ser representativa si el análisis es inferencial puro.", "La estadística descriptiva es el paso previo necesario para la inferencia posterior.", "La población es el subconjunto extraído para poder realizar el experimento real."], "correct": 1, "hint": "Considera el orden lógico del proceso de investigación científica.", "explanation": "$$\\text{Primero se organiza y sintetiza la muestra (descriptiva) y luego se generaliza a la población (inferencial).}$$"}, {"q": "Seleccione la afirmación correcta sobre las referencias bibliográficas en formato APA:", "options": ["Deben incluirse en la lista final aunque no hayan sido citadas en el texto.", "Permiten que los lectores localicen las obras originales citadas en el estudio.", "Se colocan al principio del artículo para que el lector vea las fuentes primero."], "correct": 1, "hint": "Reflexiona sobre la utilidad de la bibliografía para la comunidad científica.", "explanation": "$$\\text{La lista de referencias documenta y respalda las afirmaciones hechas, facilitando la localización de las fuentes originales.}$$"}, {"q": "Seleccione la afirmación incorrecta sobre los artículos de corte cualitativo:", "options": ["Buscan establecer leyes universales del comportamiento que no cambian en el tiempo.", "El investigador debe reflexionar sobre cómo sus perspectivas influyen en el estudio.", "Los hallazgos suelen considerarse situados en un contexto geográfico o social único."], "correct": 0, "hint": "Piensa en si lo cualitativo busca verdades absolutas o significados situados.", "explanation": "$$\\text{La investigación cualitativa no busca leyes universales, sino comprender experiencias situadas en contextos específicos y cambiantes.}$$"}, {"q": "Seleccione la afirmación incorrecta sobre el diseño de experimentación en psicología:", "options": ["Requiere la manipulación sistemática de una o más variables independientes.", "Permite identificar tendencias mediante cuestionarios sin asignar grupos control.", "Goza generalmente de una elevada validez interna y facilidad de replicación."], "correct": 1, "hint": "Identifica qué tipo de diseño se basa solo en cuestionarios sin control.", "explanation": "$$\\text{Identificar tendencias mediante cuestionarios sin control es propio de diseños de encuesta, no de la experimentación pura.}$$"}, {"q": "Seleccione la afirmación incorrecta sobre el resumen (abstract) de un artículo científico:", "options": ["Debe ser una síntesis completa pero breve de todo el contenido del manuscrito.", "Es aceptable incluir abreviaturas no estandarizadas para ahorrar espacio vital.", "Su extensión máxima recomendada suele estar limitada a unas 250 palabras."], "correct": 1, "hint": "Recuerda las restricciones sobre el lenguaje claro en la indexación.", "explanation": "$$\\text{Se deben evitar abreviaturas innecesarias en el título y resumen para no complicar la indexación y comprensión del trabajo.}$$"}, {"q": "Seleccione la afirmación incorrecta sobre los metaanálisis según la normativa APA:", "options": ["Utilizan los hallazgos de un grupo de estudios para extraer una síntesis general.", "Su estructura suele omitir la sección de Método por no usar sujetos humanos.", "Los cuantitativos suelen reportar estimaciones precisas del tamaño del efecto."], "correct": 1, "hint": "Piensa si un metaanálisis debe explicar cómo seleccionó los estudios.", "explanation": "$$\\text{Los metaanálisis sí incluyen sección de Método, donde se describe cómo se seleccionaron y analizaron los estudios incluidos.}$$"}, {"q": "Seleccione la afirmación incorrecta respecto al cuerpo de un artículo cuantitativo:", "options": ["La Introducción debe contextualizar el problema y exponer objetivos claros.", "La sección de Resultados debe interpretar el 'por qué' de cada dato hallado.", "El Método detalla los instrumentos, materiales y procedimientos de intervención."], "correct": 1, "hint": "Busca la sección que confunde 'presentar datos' con 'explicar causas'.", "explanation": "$$\\text{Los Resultados presentan el 'cuánto' (datos), mientras que la Discusión es la que aborda el 'por qué' (interpretación).}$$"}, {"q": "Seleccione la afirmación incorrecta sobre la estadística descriptiva e inferencial:", "options": ["La descriptiva se usa para organizar los datos recolectados en la muestra.", "La inferencial garantiza que los resultados de la muestra son $100\\%$ exactos.", "El contraste de hipótesis es una herramienta central de la estadística inferencial."], "correct": 1, "hint": "Recuerda que la estadística siempre trabaja con márgenes de probabilidad y error.", "explanation": "$$\\text{La estadística inferencial trabaja con probabilidades (ej. p < 0.05), nunca garantiza una certeza del 100\\% en la población.}$$"}, {"q": "Seleccione la afirmación incorrecta sobre el formato de las referencias bibliográficas:", "options": ["La lista de referencias debe presentarse utilizando siempre sangría francesa.", "Las entradas deben organizarse por el orden en que aparecen citadas en el texto.", "Se debe utilizar un espaciado doble entre las diferentes entradas de la lista."], "correct": 1, "hint": "Recuerda la regla sobre el abecedario en la organización de la bibliografía.", "explanation": "$$\\text{En APA, las referencias se ordenan alfabéticamente por el apellido del autor, no por orden de aparición en el manuscrito.}$$"}, {"q": "Seleccione la afirmación incorrecta sobre la investigación cualitativa en psicología:", "options": ["Los números pueden utilizarse de manera secundaria para describir hallazgos.", "El análisis es un proceso lineal que termina antes de que el autor reflexione.", "Se centra a menudo en comprender la experiencia humana y procesos sociales."], "correct": 1, "hint": "Considera si el análisis cualitativo es estático o si requiere volver sobre los datos.", "explanation": "$$\\text{El análisis cualitativo es un proceso iterativo y no lineal, donde se refinan continuamente los hallazgos durante el estudio.}$$"}, {"q": "Seleccione la afirmación incorrecta sobre las revisiones sistemáticas $(\\text{RS})$:", "options": ["Tienen como fin alcanzar la mayor calidad y rigor académico en la síntesis.", "Se recomienda seguir los protocolos establecidos en la Declaración PRISMA.", "Son idénticas a las revisiones narrativas por carecer de un sistema protocolizado."], "correct": 2, "hint": "Identifica la diferencia clave entre una revisión 'sistemática' y una 'narrativa'.", "explanation": "$$\\text{A diferencia de las narrativas, las revisiones sistemáticas siguen un protocolo estricto para obtener conclusiones generales.}$$"}, {"q": "Seleccione la afirmación incorrecta sobre el título de un informe científico APA:", "options": ["Debe ser lo más largo posible para incluir todos los detalles del procedimiento.", "Es importante que sea conciso y refleje claramente el tema principal investigado.", "Debe evitar el uso de palabras innecesarias o abreviaturas que dificulten el uso."], "correct": 0, "hint": "Busca la recomendación sobre la longitud y claridad del título.", "explanation": "$$\\text{APA recomienda que el título sea conciso, evitando palabras innecesarias para facilitar la búsqueda e indexación.}$$"}, {"q": "Seleccione la afirmación incorrecta sobre la aplicación de tests en psicología:", "options": ["Son instrumentos esenciales para la selección de personal en las empresas.", "Su aplicación carece de valor científico si no se realiza un análisis de datos.", "Permiten estudiar el comportamiento humano solo si se ignoran las estadísticas."], "correct": 2, "hint": "Considera si se puede hacer ciencia en psicología sin el respaldo de los datos.", "explanation": "$$\\text{El análisis de datos es el instrumento esencial que fundamenta la psicología como una ciencia basada en evidencia sólida.}$$"}, {"q": "Seleccione la afirmación incorrecta sobre los estudios de caso cualitativos:", "options": ["Se centran en el análisis de observaciones obtenidas de grupos muy pequeños.", "Buscan proponer soluciones profundas a problemas detectados en la práctica.", "Su objetivo principal es calcular la media poblacional de una variable discreta."], "correct": 2, "hint": "Relaciona el 'estudio de caso' con la profundidad frente a la amplitud numérica.", "explanation": "$$\\text{Los estudios de caso buscan profundidad cualitativa y análisis de procesos, no el cálculo de parámetros estadísticos poblacionales.}$$"}, {"q": "Seleccione la afirmación incorrecta sobre el diseño observacional cualitativo:", "options": ["Permite recopilar datos sobre el comportamiento en su entorno natural real.", "Requiere siempre la intervención directa del investigador para manipular sujetos.", "Se realiza sin que el investigador modifique las condiciones del ambiente social."], "correct": 1, "hint": "Piensa en el significado de 'observar' sin 'intervenir'.", "explanation": "$$\\text{La observación cualitativa se caracteriza precisamente por no intervenir directamente en el entorno natural de los sujetos.}$$"}, {"q": "Seleccione la afirmación incorrecta sobre las palabras clave en un artículo:", "options": ["Generalmente se deben incluir entre tres y cinco términos o frases cortas.", "Deben ser términos que faciliten que los lectores encuentren el trabajo final.", "Su función principal es sustituir la lectura de la sección de Resultados."], "correct": 2, "hint": "Evalúa si unas pocas palabras pueden reemplazar todo el análisis de un estudio.", "explanation": "$$\\text{Las palabras clave sirven para indexación y búsqueda, no para sustituir el contenido de los resultados del artículo.}$$"}, {"q": "Seleccione la afirmación incorrecta sobre la normativa APA 7.ª edición:", "options": ["Establece que las referencias deben aparecer después del texto principal.", "Indica que el texto del manuscrito debe estar justificado en ambos márgenes.", "Menciona que los anexos deben ser etiquetados mediante el uso de letras."], "correct": 1, "hint": "Busca el error en la regla de alineación del texto en el papel.", "explanation": "$$\\text{La normativa APA prohíbe el texto justificado; el manuscrito debe estar alineado a la izquierda para evitar espacios raros.}$$"}];
+        const jsonTestB = [{"q": "El proceso mediante el cual se generalizan las conclusiones obtenidas en una muestra representativa a toda la población se denomina ____.", "options": ["Estadística inferencial", "Estadística descriptiva", "Análisis multivariado"], "correct": 0, "hint": "Se refiere al 'salto final' mencionado en el texto para ir de lo particular a lo general.", "explanation": "La $$\\text{estadística inferencial}$$ permite obtener conclusiones poblacionales a partir de una muestra mediante el contraste de hipótesis."}, {"q": "En la lógica de la experimentación, el investigador manipula deliberadamente la ____ para observar sus efectos.", "options": ["Variable Independiente", "Variable Dependiente", "Variable de Confusión"], "correct": 0, "hint": "Es la variable que actúa como 'causa' en el modelo experimental.", "explanation": "El aislamiento de efectos requiere la manipulación de la $$\\text{Variable Independiente (VI)}$$ sobre la dependiente."}, {"q": "La normativa APA (2020) corresponde específicamente a la ____ edición del manual de publicaciones.", "options": ["Séptima (7.ª) edición", "Sexta (6.ª) edición", "Octava (8.ª) edición"], "correct": 0, "hint": "Es la versión más reciente citada en el documento para estándares científicos.", "explanation": "El texto explicita que las normas actuales siguen la $$\\text{APA 7.^{a} ed.}$$."}, {"q": "El diseño que busca identificar asociaciones y tendencias sin establecer relaciones causales mediante cuestionarios se conoce como ____.", "options": ["Diseño de encuesta", "Diseño experimental", "Estudio de caso único"], "correct": 0, "hint": "Utiliza escalas de medición para analizar opiniones o comportamientos en muestras amplias.", "explanation": "Los $$\\text{diseños de encuesta}$$ recopilan datos numéricos para identificar tendencias pero carecen de control experimental causal."}, {"q": "Un artículo cuantitativo original presenta hallazgos donde los resultados se representan de manera ____.", "options": ["Numérica y estadística", "Narrativa y semántica", "Fenomenológica pura"], "correct": 0, "hint": "Es la característica principal que lo diferencia de los estudios cualitativos.", "explanation": "En los estudios cuantitativos, los datos se analizan mediante $$\\text{métodos estadísticos}$$ y modelos numéricos."}, {"q": "El análisis de datos en investigación cualitativa se define como un ____, permitiendo refinar hallazgos constantemente.", "options": ["Proceso iterativo", "Proceso lineal fijo", "Proceso estocástico"], "correct": 0, "hint": "Implica que el investigador revisa y vuelve sobre los datos a medida que avanza.", "explanation": "La naturaleza $$\\text{iterativa}$$ y autocorrectiva es fundamental para la producción de conocimiento cualitativo."}, {"q": "Para garantizar la validez interna en un experimento, es imperativo el control de las ____.", "options": ["Variables extrañas", "Variables nominales", "Variables ordinales"], "correct": 0, "hint": "Son factores ajenos a la VI que podrían contaminar los resultados observados en la VD.", "explanation": "El control de $$\\text{variables extrañas}$$, generalmente vía grupo control, asegura que el efecto sea debido a la VI."}, {"q": "En un metaanálisis cuantitativo, el reporte central suele enfocarse en las estimaciones del ____.", "options": ["Tamaño del efecto", "Nivel de significación", "Error tipo $II$ ($B$)"], "correct": 0, "hint": "Es la métrica que sintetiza la magnitud de la relación encontrada en diversos estudios.", "explanation": "Los metaanálisis cuantitativos sintetizan la evidencia reportando el $$\\text{tamaño del efecto}$$ promedio."}, {"q": "Las revisiones sistemáticas de alta calidad deben seguir los estándares protocolizados de la ____.", "options": ["Declaración PRISMA", "Normativa de Helsinki", "Escala de Likert (7)"], "correct": 0, "hint": "Es un acrónimo para un conjunto de guías actualizadas en 2020 por Page et al.", "explanation": "La $$\\text{Declaración PRISMA}$$ establece el sistema protocolizado para revisiones sistemáticas."}, {"q": "Según APA, el resumen o abstract de un artículo científico debe tener un límite máximo de ____.", "options": ["Doscientas cincuenta", "Trescientas cincuenta", "Ciento cincuenta s."], "correct": 0, "hint": "Es un valor entero que restringe la síntesis breve del contenido.", "explanation": "La normativa establece un límite de $$\\text{250 palabras}$$ para el abstract."}, {"q": "La sección del informe que describe el 'cómo' se realizó la investigación (participantes, diseño, materiales) es el ____.", "options": ["Método de estudio", "Marco introductorio", "Bloque de resultados"], "correct": 0, "hint": "Incluye todo lo relativo a la puesta en práctica y replicabilidad del estudio.", "explanation": "El $$\\text{Método}$$ detalla el diseño, participantes, instrumentos y procedimientos."}, {"q": "En el formato de citación APA, la lista de referencias bibliográficas debe organizarse en ____.", "options": ["Orden alfabético", "Orden de aparición", "Orden de relevancia"], "correct": 0, "hint": "Se basa en el apellido del primer autor de cada entrada bibliográfica.", "explanation": "Las entradas deben seguir un $$\\text{orden alfabético}$$ riguroso al final del texto."}, {"q": "Un aspecto crítico de la investigación cualitativa es la ____, donde el autor evalúa su propia influencia en el estudio.", "options": ["Reflexividad del", "Objetividad total", "Inferencia de datos"], "correct": 0, "hint": "Implica una autoevaluación constante de las creencias y sesgos del investigador.", "explanation": "La $$\\text{reflexividad}$$ permite ajustar métodos según la perspectiva del investigador."}, {"q": "Para facilitar la indexación en bases de datos, se deben incluir generalmente entre ____ palabras clave.", "options": ["Tres a cinco (3-5)", "Dos a cuatro (2-4)", "Seis a ocho (6-8)"], "correct": 0, "hint": "Son términos esenciales que describen los aspectos más importantes del estudio.", "explanation": "El estándar APA sugiere la inclusión de $$\\text{3 a 5 palabras clave}$$."}, {"q": "En la normativa APA, el texto del cuerpo debe estar alineado a la ____ sin justificar.", "options": ["Izquierda (left)", "Derecha (right)", "Centro (centered)"], "correct": 0, "hint": "Es la configuración de párrafo que evita espacios desiguales entre palabras.", "explanation": "El texto debe estar $$\\text{alineado a la izquierda}$$ y con sangría en la primera línea."}, {"q": "La sección que conecta los hallazgos con la teoría previa y responde a las preguntas iniciales es la ____.", "options": ["Discusión (o Hallazgos)", "Resultados (Resultados)", "Introducción (Intro)"], "correct": 0, "hint": "Es el apartado del 'por qué' de los datos obtenidos.", "explanation": "La $$\\text{Discusión}$$ interpreta los resultados a la luz de la literatura previa."}, {"q": "Los materiales adicionales que podrían distraer en el cuerpo principal se incluyen en los ____.", "options": ["Anexos (Apéndices)", "Pies de página (PF)", "Resúmenes extensos"], "correct": 0, "hint": "Deben etiquetarse con letras y mencionarse en el texto principal.", "explanation": "Los $$\\text{anexos}$$ contienen escalas, instrucciones o diapositivas complementarias."}, {"q": "A diferencia de las revisiones de literatura, los metaanálisis realizan un análisis ____ de los hallazgos.", "options": ["Sistemático / síntesis", "Narrativo / informal", "Subjetivo / teórico"], "correct": 0, "hint": "Utilizan técnicas para extraer una conclusión general basada en datos de múltiples estudios.", "explanation": "El metaanálisis es una $$\\text{síntesis}$$ sistemática (cuantitativa o cualitativa) de estudios previos."}, {"q": "El nivel de significación estadística que suele denotar una mejora significativa en los síntomas se expresa como ____.", "options": ["$(p < 0.01)$ o similar", "$(p > 0.05)$ o superior", "$(p = 1.00)$ o total"], "correct": 0, "hint": "Representa la probabilidad de que el resultado sea fruto del azar.", "explanation": "Valores como $$\\text{p < 0.01}$$ indican una alta significación estadística en los resultados."}, {"q": "La asignación ____ de participantes es un requisito fundamental en los diseños experimentales sólidos.", "options": ["Aleatoria (random)", "Sistemática (fixed)", "Intencional (bias)"], "correct": 0, "hint": "Busca igualar los grupos antes de la manipulación de la variable independiente.", "explanation": "La $$\\text{asignación aleatoria}$$ es clave para la validez interna del experimento."}, {"q": "En el contexto de la normativa APA 7.ª ed., la lista de referencias bibliográficas debe cumplir con ____.", "options": ["Sangría francesa (HF)", "Doble espaciado (DS)", "Todas son correctas"], "correct": 2, "hint": "Ambos son requisitos de formato visual para la sección final de fuentes.", "explanation": "La normativa exige tanto $$\\text{sangría francesa}$$como$$\\text{doble espacio}$$ en las referencias."}, {"q": "Los artículos cualitativos se caracterizan por el uso de ____.", "options": ["Lenguaje natural (LN)", "Procesos iterativos", "Todas son correctas"], "correct": 2, "hint": "Son rasgos que definen la recolección y análisis en este paradigma.", "explanation": "La investigación cualitativa emplea $$\\text{lenguaje natural}$$y es intrínsecamente$$\\text{iterativa}$$."}, {"q": "La sección de Método en un informe científico cuantitativo debe incluir ____.", "options": ["Diseño de estudio", "Análisis de datos", "Todas son correctas"], "correct": 2, "hint": "Cubre todos los aspectos de la implementación técnica de la investigación.", "explanation": "El $$\\text{Método}$$abarca desde el diseño hasta el plan de$$\\text{análisis estadístico}$$."}, {"q": "Un título científico según APA debe ser ____.", "options": ["Claro y atractivo", "Conciso y preciso", "Todas son correctas"], "correct": 2, "hint": "Resume la idea principal sin usar palabras innecesarias o abreviaturas.", "explanation": "El título debe ser $$\\text{conciso, claro}$$ y reflejar las variables investigadas."}, {"q": "El análisis de datos en psicología es esencial porque permite ____.", "options": ["Diagnosticar bien", "Validar terapias", "Todas son correctas"], "correct": 2, "hint": "Es una herramienta poderosa que guía el buen hacer profesional.", "explanation": "La estadística fundamenta el $$\\text{diagnóstico}$$y la$$\\text{validación científica}$$ de la psicología."}, {"q": "Los metaanálisis cualitativos pueden incluir el análisis de ____.", "options": ["Estudios de caso", "Etnografías/narrativa", "Todas son correctas"], "correct": 2, "hint": "Sintetizan diversas formas de investigación no numérica.", "explanation": "Se basan en estudios $$\\text{fenomenológicos, etnográficos}$$ y de casos cualitativos."}, {"q": "En la redacción del abstract o resumen, se permite el uso de ____.", "options": ["Formato de párrafo", "Formato estructurado", "Todas son correctas"], "correct": 2, "hint": "Existen dos estilos válidos de presentación según la revista o requerimiento.", "explanation": "APA acepta tanto el formato de $$\\text{párrafo simple}$$como el$$\\text{estructurado}$$ (objetivo, método, etc.)."}, {"q": "Los diseños observacionales en investigación cualitativa permiten ____.", "options": ["Recopilar conducta", "Entorno natural (EN)", "Todas son correctas"], "correct": 2, "hint": "Ocurren sin la intervención directa del investigador sobre el fenómeno.", "explanation": "La observación cualitativa captura la $$\\text{conducta en su contexto natural}$$."}, {"q": "Las revisiones de literatura (narrativas) tienen como objetivo ____.", "options": ["Definir problemas", "Identificar vacíos", "Todas son correctas"], "correct": 2, "hint": "Buscan informar sobre el estado actual de un tema sin necesariamente usar estadística.", "explanation": "Estas revisiones $$\\text{definen problemas, resumen investigaciones}$$ e identifican vacíos teóricos."}, {"q": "El uso de tablas y figuras en un informe APA se asocia principalmente a ____.", "options": ["Sección Resultados", "Sección de Anexos", "Todas son correctas"], "correct": 2, "hint": "Se utilizan para presentar datos de manera visualmente organizada en distintas partes.", "explanation": "Se emplean en los $$\\text{Resultados}$$para los hallazgos y en$$\\text{Anexos}$$ para material extra."}, {"q": "Indique cuál de las siguientes afirmaciones sobre el abstract es INCORRECTA ____.", "options": ["Debe tener 500 pal.", "Incluye conclusiones", "Ninguna es correcta"], "correct": 0, "hint": "El límite de palabras es mucho más estricto que el de una página completa.", "explanation": "El límite es de $$\\text{250 palabras}$$, no 500; por tanto, la primera es incorrecta."}, {"q": "Respecto al formato del cuerpo del texto en APA 7.ª ed., es falso que ____.", "options": ["Se use justificado", "Haya doble espacio", "Ninguna es correcta"], "correct": 0, "hint": "Observe los requisitos de alineación lateral del párrafo.", "explanation": "El texto NO debe estar $$\\text{justificado}$$, sino alineado a la izquierda."}, {"q": "Sobre las palabras clave (keywords), señale la opción FALSA ____.", "options": ["Se usan para citar", "Ayudan indexación", "Ninguna es correcta"], "correct": 0, "hint": "Su función principal es la recuperación de información en bases de datos.", "explanation": "Las palabras clave se usan para la $$\\text{indexación}$$, no para realizar citaciones bibliográficas."}, {"q": "En un estudio cuantitativo, la sección 'Resultados' NO debe incluir ____.", "options": ["Interpretación teórica", "Análisis estadístico", "Ninguna es correcta"], "correct": 0, "hint": "La interpretación de por qué ocurrió algo pertenece a la sección posterior.", "explanation": "La $$\\text{interpretación teórica}$$ pertenece a la Discusión, no a los Resultados."}, {"q": "En relación a los metaanálisis cualitativos, es incorrecto afirmar que ____.", "options": ["Usan solo números", "Analizan casos", "Ninguna es correcta"], "correct": 0, "hint": "Se centran en investigaciones originales de corte fenomenológico o etnográfico.", "explanation": "Los metaanálisis cualitativos NO usan $$\\text{solo números}$$; analizan datos cualitativos."}, {"q": "Un título APA de alta calidad no debería contener ____.", "options": ["Abreviaturas (siglas)", "Variables de estudio", "Ninguna es correcta"], "correct": 0, "hint": "Buscan facilitar la búsqueda e indexación clara para cualquier lector.", "explanation": "Se deben evitar las $$\\text{abreviaturas}$$ en los títulos según la normativa."}, {"q": "La Declaración PRISMA (2020) NO es aplicable para ____.", "options": ["Revisiones narrativas", "Revisiones sistemát.", "Ninguna es correcta"], "correct": 0, "hint": "Está diseñada específicamente para procesos protocolizados y sistemáticos.", "explanation": "PRISMA es para $$\\text{revisiones sistemáticas}$$, no para revisiones narrativas simples."}, {"q": "En el apartado de Referencias, no es un requisito de APA ____.", "options": ["Orden de importancia", "Orden alfabético", "Ninguna es correcta"], "correct": 0, "hint": "El orden de las entradas es estrictamente formal basándose en caracteres iniciales.", "explanation": "El $$\\text{orden de importancia}$$ no existe en la lista de referencias APA."}, {"q": "Respecto a los Anexos, no es correcto que ____.", "options": ["Sean obligatorios", "Lleven letras (A, B)", "Ninguna es correcta"], "correct": 0, "hint": "Solo se incluyen si realmente aportan valor para entender o replicar el estudio.", "explanation": "Los $$\\text{anexos}$$ son opcionales, no obligatorios para todos los artículos."}, {"q": "La 'reflexividad del investigador' en estudios cualitativos excluye ____.", "options": ["Ignorar sesgos prop.", "Autoevaluar creencias", "Ninguna es correcta"], "correct": 0, "hint": "Implica una actitud crítica sobre cómo la propia perspectiva influye en el proceso.", "explanation": "La reflexividad exige $$\\text{reconocer sesgos}$$, no ignorarlos."}];
+        const jsonLaboratorio = [{"id": 1, "title": "Optimización del Muestreo Representativo", "context": "En el proceso de investigación científica en psicología, se debe seleccionar una muestra representativa de una población $N = 5000$. Para un nivel de confianza del $95\\%$ ($Z = 1.96$) y una proporción esperada $p = 0.5$, se utiliza la fórmula de muestra finita: $n = \\frac{N \\cdot Z^2 \\cdot p \\cdot q}{d^2(N-1) + Z^2 \\cdot p \\cdot q}$.", "parts": [{"id": "p1a", "label": "a)", "question": "Si el error máximo permitido $d$ es del $5\\%$ (0.05), calcule el tamaño de la muestra $n$ (redondee al entero más cercano).", "correctValue": 357, "tolerance": 1, "explanation": "$$n = \\frac{5000 \\cdot 1.96^2 \\cdot 0.25}{0.05^2(4999) + 1.96^2 \\cdot 0.25} \\approx 356.85$$"}, {"id": "p1b", "label": "b)", "question": "Si por razones presupuestarias la muestra final real es de 300 sujetos, ¿cuál es el nuevo error $d$ resultante en porcentaje? (2 decimales).", "correctValue": 5.51, "tolerance": 0.05, "explanation": "$$d = \\sqrt{\\frac{N \\cdot Z^2 \\cdot p \\cdot q - n \\cdot Z^2 \\cdot p \\cdot q}{n(N-1)}} \\approx 0.0551$$"}, {"id": "p1c", "label": "c)", "question": "En estadística descriptiva, si la media de la muestra es $\\bar{x} = 45$ con $s = 8$, calcule el límite superior del intervalo de confianza al $95\\%$ con $n=300$.", "correctValue": 45.91, "tolerance": 0.05, "explanation": "$$LS = 45 + 1.96 \\cdot \\frac{8}{\\sqrt{300}} \\approx 45.905$$"}, {"id": "p1d", "label": "d)", "question": "Si se desea reducir el error a la mitad (2.5\\%), ¿por cuánto factor debe multiplicarse aproximadamente el tamaño de la muestra original?", "correctValue": 4, "tolerance": 0.1, "explanation": "$$n \\propto \\frac{1}{d^2}, \\text{ si } d' = 0.5d \\implies n' = \\frac{n}{0.5^2} = 4n$$"}]}, {"id": 2, "title": "Análisis de Varianza en Investigaciones Cuantitativas", "context": "En un diseño experimental con $k = 4$ grupos y una muestra total $N = 80$, se evalúa el efecto de una terapia. La Suma de Cuadrados Total es $SC_T = 1200$ y la Suma de Cuadrados Intra-grupos (Error) es $SC_E = 800$.", "parts": [{"id": "p2a", "label": "a)", "question": "Calcule la Suma de Cuadrados Inter-grupos ($SC_B$).", "correctValue": 400, "tolerance": 0, "explanation": "$$SC_B = SC_T - SC_E = 1200 - 800 = 400$$"}, {"id": "p2b", "label": "b)", "question": "Calcule los grados de libertad inter-grupos ($gl_B$).", "correctValue": 3, "tolerance": 0, "explanation": "$$gl_B = k - 1 = 4 - 1 = 3$$"}, {"id": "p2c", "label": "c)", "question": "Calcule la Media Cuadrática del Error ($MC_E$).", "correctValue": 10.53, "tolerance": 0.05, "explanation": "$$MC_E = \\frac{SC_E}{N - k} = \\frac{800}{80 - 4} = \\frac{800}{76} \\approx 10.526$$"}, {"id": "p2d", "label": "d)", "question": "Calcule el estadístico $F$ de Fisher para este estudio.", "correctValue": 12.67, "tolerance": 0.1, "explanation": "$$F = \\frac{SC_B / gl_B}{MC_E} = \\frac{400 / 3}{10.526} = \\frac{133.33}{10.526} \\approx 12.67$$"}]}, {"id": 3, "title": "Mecánica del Metaanálisis Cuantitativo", "context": "Un metaanálisis sintetiza los resultados de tres estudios sobre TCC. Se utiliza la media ponderada del tamaño del efecto ($d$) según el tamaño de la muestra ($n_i$): $\\bar{d} = \\frac{\\sum (d_i \\cdot n_i)}{\\sum n_i}$. Datos: E1 ($d=0.3, n=50$), E2 ($d=0.5, n=100$), E3 ($d=0.8, n=50$).", "parts": [{"id": "p3a", "label": "a)", "question": "Calcule el tamaño de la muestra total del metaanálisis.", "correctValue": 200, "tolerance": 0, "explanation": "$$n_{total} = 50 + 100 + 50 = 200$$"}, {"id": "p3b", "label": "b)", "question": "Calcule el valor de $\\bar{d}$ (promedio ponderado).", "correctValue": 0.525, "tolerance": 0.001, "explanation": "$$\\bar{d} = \\frac{0.3(50) + 0.5(100) + 0.8(50)}{200} = \\frac{15 + 50 + 40}{200} = 0.525$$"}, {"id": "p3c", "label": "c)", "question": "Si el error típico de la síntesis es $SE = 0.08$, calcule el límite inferior del intervalo de confianza al $95\\%$.", "correctValue": 0.368, "tolerance": 0.01, "explanation": "$$LI = 0.525 - 1.96(0.08) = 0.3682$$"}, {"id": "p3d", "label": "d)", "question": "Considerando que un $d > 0.5$ es un efecto moderado, ¿cuántas unidades de desviación típica de mejora representa el promedio hallado?", "correctValue": 0.525, "tolerance": 0, "explanation": "$$\\text{El valor de } d \\text{ representa precisamente las desviaciones típicas.}$$"}]}, {"id": 4, "title": "Densidad de Información en el Resumen APA", "context": "La normativa APA (2020) limita el resumen a 250 palabras. Un investigador escribe un resumen estructurado con 5 secciones: Objetivo, Método, Resultados, Conclusión y Aplicación. La suma total de palabras es $W = 240$.", "parts": [{"id": "p4a", "label": "a)", "question": "Si cada sección tiene el mismo número de palabras, ¿cuántas palabras tiene cada una?", "correctValue": 48, "tolerance": 0, "explanation": "$$Words = 240 / 5 = 48$$"}, {"id": "p4b", "label": "b)", "question": "Si la sección de Resultados debe ocupar el $35\\%$ del espacio permitido (250 palabras) por norma, ¿cuántas palabras debería tener según ese criterio?", "correctValue": 87.5, "tolerance": 0.1, "explanation": "$$250 \\cdot 0.35 = 87.5$$"}, {"id": "p4c", "label": "c)", "question": "Si el investigador decide añadir 4 palabras clave y cada una cuenta como 1.5 palabras de 'espacio mental', ¿cuál es el porcentaje del límite de 250 ocupado por el texto (240) y las palabras clave?", "correctValue": 98.4, "tolerance": 0.1, "explanation": "$$\\text{Total} = (240 + 4 \\cdot 1.5) / 250 \\cdot 100 = 98.4\\%$$"}, {"id": "p4d", "label": "d)", "question": "Si el tiempo de lectura promedio es de 120 palabras por minuto, ¿cuántos segundos se tarda en leer el resumen de 240 palabras?", "correctValue": 120, "tolerance": 0, "explanation": "$$t = (240 / 120) \\cdot 60 = 120 \\text{ s}$$"}]}, {"id": 5, "title": "Cinética de la Asignación Aleatoria", "context": "En un diseño experimental, se asignan $n = 100$ participantes a dos condiciones (Experimental y Control) mediante una distribución binomial con $p=0.5$.", "parts": [{"id": "p5a", "label": "a)", "question": "Calcule la desviación típica del número de sujetos asignados al grupo experimental.", "correctValue": 5, "tolerance": 0, "explanation": "$$\\sigma = \\sqrt{n \\cdot p \\cdot q} = \\sqrt{100 \\cdot 0.5 \\cdot 0.5} = 5$$"}, {"id": "p5b", "label": "b)", "question": "Si se requiere que el grupo control tenga exactamente 50 personas, ¿cuál es la probabilidad teórica de este evento? (3 decimales).", "correctValue": 0.08, "tolerance": 0.01, "explanation": "$$P(X=50) = \\binom{100}{50} (0.5)^{100} \\approx 0.0796$$"}, {"id": "p5c", "label": "c)", "question": "Si se añaden 2 variables independientes adicionales con 2 niveles cada una en un diseño factorial, ¿cuántos grupos experimentales totales habría?", "correctValue": 8, "tolerance": 0, "explanation": "$$\\text{Grupos} = 2 \\times 2 \\times 2 = 8$$"}, {"id": "p5d", "label": "d)", "question": "Con 8 grupos y 100 participantes, ¿cuál es el número promedio de sujetos por grupo?", "correctValue": 12.5, "tolerance": 0, "explanation": "$$100 / 8 = 12.5$$"}]}, {"id": 6, "title": "Dinámica de Encuestas y Tasa de Respuesta", "context": "Un estudio de encuesta envía cuestionarios a 1200 individuos. Se utiliza una escala de Likert de 1 a 5. La tasa de respuesta esperada es del $40\\%$.", "parts": [{"id": "p6a", "label": "a)", "question": "Calcule el número esperado de respuestas válidas.", "correctValue": 480, "tolerance": 0, "explanation": "$$1200 \\cdot 0.40 = 480$$"}, {"id": "p6b", "label": "b)", "question": "Si cada cuestionario tiene 20 ítems, ¿cuántos datos numéricos totales se generarán?", "correctValue": 9600, "tolerance": 0, "explanation": "$$480 \\cdot 20 = 9600$$"}, {"id": "p6c", "label": "c)", "question": "Si la media de un ítem es 3.8 con varianza 1.2, calcule el error estándar de la media para ese ítem ($n=480$).", "correctValue": 0.05, "tolerance": 0.01, "explanation": "$$SE = \\sqrt{1.2 / 480} = 0.05$$"}, {"id": "p6d", "label": "d)", "question": "Si se desea un error estándar de 0.02, ¿cuántas respuestas se necesitarían aproximadamente (manteniendo la varianza 1.2)?", "correctValue": 3000, "tolerance": 10, "explanation": "$$n = 1.2 / 0.02^2 = 3000$$"}]}, {"id": 7, "title": "Estructura de Citación y Referencias APA", "context": "En un informe científico, la lista de referencias tiene una longitud total de 1500 cm si se imprimiera linealmente. Cada referencia ocupa en promedio 2.5 cm y tiene un espaciado doble ($2 \\times 0.5$ cm adicionales por línea).", "parts": [{"id": "p7a", "label": "a)", "question": "Si el informe tiene 40 referencias, ¿cuántos cm lineales ocupa el texto base de las referencias (sin espaciado)?", "correctValue": 100, "tolerance": 0, "explanation": "$$40 \\cdot 2.5 = 100$$"}, {"id": "p7b", "label": "b)", "question": "Si el manual APA exige sangría francesa de 1.27 cm (0.5 pulgadas) a partir de la segunda línea, y el $60\\%$ de las 40 referencias tiene 3 líneas, ¿cuántos cm de 'sangría' total se han aplicado?", "correctValue": 60.96, "tolerance": 0.01, "explanation": "$$40 \\cdot 0.6 = 24 \\text{ referencias de 3 líneas. Cada una tiene 2 líneas sangradas. } 24 \\cdot 2 \\cdot 1.27 = 60.96$$"}, {"id": "p7c", "label": "c)", "question": "Si un artículo tiene 7 autores, y se cita en formato abreviado (Et al.) desde la primera vez según APA 7, ¿cuántos apellidos aparecen en la cita textual (excluyendo et al.)?", "correctValue": 1, "tolerance": 0, "explanation": "$$\\text{En APA 7, para 3 o más autores, se usa el primero seguido de et al.}$$"}, {"id": "p7d", "label": "d)", "question": "Si la probabilidad de error en una referencia es del $5\\%$, ¿cuál es la probabilidad de que las 40 referencias sean perfectas? (3 decimales).", "correctValue": 0.129, "tolerance": 0.01, "explanation": "$$P = 0.95^{40} \\approx 0.1285$$"}]}, {"id": 8, "title": "Mecánica de Revisión Sistemática (PRISMA)", "context": "En una revisión sistemática, se identifican inicialmente $I = 2500$ registros en bases de datos. Tras eliminar duplicados ($20\\%$), quedan $R$ registros. Se excluyen por título/resumen el $85\\%$ de los restantes.", "parts": [{"id": "p8a", "label": "a)", "question": "Calcule el número de registros tras eliminar duplicados.", "correctValue": 2000, "tolerance": 0, "explanation": "$$2500 \\cdot 0.80 = 2000$$"}, {"id": "p8b", "label": "b)", "question": "Calcule cuántos artículos pasan a la fase de lectura a texto completo.", "correctValue": 300, "tolerance": 0, "explanation": "$$2000 \\cdot (1 - 0.85) = 2000 \\cdot 0.15 = 300$$"}, {"id": "p8c", "label": "c)", "question": "Si de esos 300, finalmente se incluyen 12 artículos en la síntesis, ¿cuál es la tasa de inclusión final respecto a los 2500 iniciales (en porcentaje)?", "correctValue": 0.48, "tolerance": 0.01, "explanation": "$$(12 / 2500) \\cdot 100 = 0.48\\%$$"}, {"id": "p8d", "label": "d)", "question": "Si el proceso de cribado de cada registro inicial toma 30 segundos, ¿cuántas horas totales se invirtieron en la primera fase (2500 registros)?", "correctValue": 20.83, "tolerance": 0.1, "explanation": "$$(2500 \\cdot 30) / 3600 \\approx 20.83$$"}]}, {"id": 9, "title": "Validez Interna y Replicabilidad", "context": "La replicabilidad es clave. Un experimento tiene una probabilidad de éxito (hallazgo significativo) del $80\\%$. Se intenta replicar el estudio 5 veces de forma independiente.", "parts": [{"id": "p9a", "label": "a)", "question": "Calcule la probabilidad de que las 5 réplicas sean exitosas.", "correctValue": 0.328, "tolerance": 0.01, "explanation": "$$0.8^5 = 0.32768$$"}, {"id": "p9b", "label": "b)", "question": "Calcule la probabilidad de que al menos una réplica falle.", "correctValue": 0.672, "tolerance": 0.01, "explanation": "$$1 - 0.32768 = 0.67232$$"}, {"id": "p9c", "label": "c)", "question": "Si el valor $p$ original fue 0.01, ¿cuál es la probabilidad combinada (Fisher method) de obtener ese resultado por azar en dos estudios idénticos? (Exprese como $10^{-4}$)", "correctValue": 1, "tolerance": 0, "explanation": "$$0.01 \\cdot 0.01 = 0.0001$$"}, {"id": "p9d", "label": "d)", "question": "Si el tamaño del efecto es $R^2 = 0.25$, ¿qué porcentaje de la varianza de la VD es explicada por la VI?", "correctValue": 25, "tolerance": 0, "explanation": "$$0.25 \\cdot 100 = 25\\%$$"}]}, {"id": 10, "title": "Análisis Cualitativo: El Proceso Iterativo", "context": "En un estudio cualitativo con 15 entrevistas, el investigador realiza un proceso iterativo de codificación. En la primera fase identifica 120 códigos. Tras refinar, los reduce en un $60\\%$.", "parts": [{"id": "p10a", "label": "a)", "question": "Calcule el número de códigos finales tras el primer refinamiento.", "correctValue": 48, "tolerance": 0, "explanation": "$$120 \\cdot 0.40 = 48$$"}, {"id": "p10b", "label": "b)", "question": "Si se agrupan estos 48 códigos en categorías de 4 códigos cada una, ¿cuántas categorías resultan?", "correctValue": 12, "tolerance": 0, "explanation": "$$48 / 4 = 12$$"}, {"id": "p10c", "label": "c)", "question": "Si cada entrevista tiene 2000 palabras, calcule el total de palabras analizadas.", "correctValue": 30000, "tolerance": 0, "explanation": "$$15 \\cdot 2000 = 30000$$"}, {"id": "p10d", "label": "d)", "question": "Si el investigador dedica 2 horas por cada 1000 palabras para la reflexividad y análisis, ¿cuántas horas totales requiere el estudio?", "correctValue": 60, "tolerance": 0, "explanation": "$$(30000 / 1000) \\cdot 2 = 60$$"}]}, {"id": 11, "title": "Confiabilidad de Instrumentos (Alpha de Cronbach)", "context": "Se valida un test para selección de personal. El test tiene $k = 10$ ítems. La suma de las varianzas de los ítems es $\\sum s_i^2 = 4$ y la varianza total del test es $s_T^2 = 16$. Fórmula: $\\alpha = \\frac{k}{k-1} (1 - \\frac{\\sum s_i^2}{s_T^2})$.", "parts": [{"id": "p11a", "label": "a)", "question": "Calcule el valor del Alpha de Cronbach para este test.", "correctValue": 0.833, "tolerance": 0.01, "explanation": "$$\\alpha = \\frac{10}{9} (1 - 4/16) = 1.111 \\cdot 0.75 = 0.83325$$"}, {"id": "p11b", "label": "b)", "question": "Si se eliminan 2 ítems y la varianza total baja a 12 y la suma de varianzas a 3.2, calcule el nuevo Alpha.", "correctValue": 0.84, "tolerance": 0.01, "explanation": "$$\\alpha = \\frac{8}{7} (1 - 3.2/12) = 1.1428 \\cdot 0.7333 \\approx 0.838$$"}, {"id": "p11c", "label": "c)", "question": "Si el error estándar de medida es $SEM = s_T \\sqrt{1-\\alpha}$, calcule el SEM para el primer caso ($s_T=4, \\alpha=0.833$).", "correctValue": 1.63, "tolerance": 0.05, "explanation": "$$SEM = 4 \\sqrt{1-0.833} = 4 \\sqrt{0.167} \\approx 1.63$$"}, {"id": "p11d", "label": "d)", "question": "Para una confiabilidad 'excelente' ($\\alpha = 0.90$), ¿cuántas veces debe ser la varianza total mayor que la suma de varianzas de los ítems (para $k=10$)?", "correctValue": 5.26, "tolerance": 0.1, "explanation": "$$0.90 = 1.111(1 - 1/R) \\implies 0.81 = 1 - 1/R \\implies 1/R = 0.19 \\implies R = 5.26$$"}]}, {"id": 12, "title": "Proporciones en el Informe Científico", "context": "Un artículo científico típico tiene 25 páginas. La distribución de espacio es: Introducción ($20\\%$), Método ($15\\%$), Resultados ($25\\%$), Discusión ($30\\%$), Referencias y otros ($10\\%$).", "parts": [{"id": "p12a", "label": "a)", "question": "Calcule el número de páginas dedicadas a Resultados.", "correctValue": 6.25, "tolerance": 0, "explanation": "$$25 \\cdot 0.25 = 6.25$$"}, {"id": "p12b", "label": "b)", "question": "Si cada página tiene 300 palabras, ¿cuántas palabras tiene la sección de Discusión?", "correctValue": 2250, "tolerance": 0, "explanation": "$$25 \\cdot 0.30 \\cdot 300 = 2250$$"}, {"id": "p12c", "label": "c)", "question": "Si las tablas ocupan el $40\\%$ de la sección de Resultados, ¿cuántas páginas de texto neto tiene Resultados?", "correctValue": 3.75, "tolerance": 0, "explanation": "$$6.25 \\cdot 0.60 = 3.75$$"}, {"id": "p12d", "label": "d)", "question": "Calcule la suma total de palabras del artículo (excluyendo Referencias).", "correctValue": 6750, "tolerance": 0, "explanation": "$$25 \\cdot 300 \\cdot 0.90 = 6750$$"}]}, {"id": 13, "title": "Probabilidad de Error Tipo I y II", "context": "En un contraste de hipótesis, se establece $\\alpha = 0.05$. La potencia del estudio ($1-\\beta$) es del $80\\%$.", "parts": [{"id": "p13a", "label": "a)", "question": "Calcule la probabilidad de cometer un Error Tipo II ($\\beta$).", "correctValue": 0.2, "tolerance": 0, "explanation": "$$\\beta = 1 - 0.80 = 0.20$$"}, {"id": "p13b", "label": "b)", "question": "Si se realizan 10 contrastes independientes con $\\alpha=0.05$, ¿cuál es la probabilidad de cometer al menos un Error Tipo I? (3 decimales).", "correctValue": 0.401, "tolerance": 0.01, "explanation": "$$P = 1 - (1-0.05)^{10} = 1 - 0.5987 = 0.4013$$"}, {"id": "p13c", "label": "c)", "question": "Si se desea reducir $\\beta$ a la mitad (0.10), y esto requiere aumentar $n$ en un $40\\%$, si la $n$ original era 120, ¿cuál es la nueva $n$?", "correctValue": 168, "tolerance": 0, "explanation": "$$120 \\cdot 1.40 = 168$$"}, {"id": "p13d", "label": "d)", "question": "En un estudio con $p = 0.03$, ¿cuál es la probabilidad de que el resultado sea un falso positivo si la tasa base de hipótesis verdaderas es del $10\\%$? (Use Teorema de Bayes simplificado: $FDR = \\frac{\\alpha(1-\\pi)}{\\alpha(1-\\pi) + (1-\\beta)\\pi}$).", "correctValue": 0.36, "tolerance": 0.05, "explanation": "$$FDR = \\frac{0.05(0.9)}{0.05(0.9) + 0.8(0.1)} = \\frac{0.045}{0.045 + 0.08} = 0.36$$"}]}, {"id": 14, "title": "Modelado de Regresión Lineal", "context": "Se estudia la relación entre 'Horas de estudio' ($X$) y 'Puntuación en test' ($Y$). Ecuación: $\\hat{Y} = 10 + 5.5X$. Coeficiente de determinación $R^2 = 0.64$.", "parts": [{"id": "p14a", "label": "a)", "question": "Calcule la puntuación esperada para un estudiante que estudia 8 horas.", "correctValue": 54, "tolerance": 0, "explanation": "$$\\hat{Y} = 10 + 5.5(8) = 10 + 44 = 54$$"}, {"id": "p14b", "label": "b)", "question": "Calcule el coeficiente de correlación de Pearson ($r$).", "correctValue": 0.8, "tolerance": 0, "explanation": "$$r = \\sqrt{0.64} = 0.8$$"}, {"id": "p14c", "label": "c)", "question": "Si la varianza total de $Y$ es $s_y^2 = 100$, ¿cuánta varianza NO es explicada por el modelo?", "correctValue": 36, "tolerance": 0, "explanation": "$$(1 - 0.64) \\cdot 100 = 36$$"}, {"id": "p14d", "label": "d)", "question": "Si se añade una variable que aumenta el $R^2$ a 0.75, ¿en qué porcentaje se reduce el error cuadrático medio respecto al modelo anterior?", "correctValue": 30.5, "tolerance": 1, "explanation": "$$\\text{Reducción} = (0.36 - 0.25) / 0.36 \\cdot 100 = 30.55\\%$$"}]}, {"id": 15, "title": "Frecuencias en Artículos Cualitativos", "context": "En un análisis cualitativo temático, se analizan 500 unidades de significado. El $30\\%$ corresponden al tema A, el $25\\%$ al tema B, y el resto se reparte equitativamente entre los temas C, D y E.", "parts": [{"id": "p15a", "label": "a)", "question": "Calcule el número de unidades de significado para el tema A.", "correctValue": 150, "tolerance": 0, "explanation": "$$500 \\cdot 0.30 = 150$$"}, {"id": "p15b", "label": "b)", "question": "Calcule cuántas unidades corresponden a cada uno de los temas restantes (C, D o E).", "correctValue": 75, "tolerance": 0, "explanation": "$$500 \\cdot (1 - 0.30 - 0.25) / 3 = 500 \\cdot 0.45 / 3 = 75$$"}, {"id": "p15c", "label": "c)", "question": "Si para publicar se exige que un tema tenga al menos el $10\\%$ de frecuencia, ¿cuál es el mínimo de unidades requeridas para el total de 500?", "correctValue": 50, "tolerance": 0, "explanation": "$$500 \\cdot 0.10 = 50$$"}, {"id": "p15d", "label": "d)", "question": "Si en la revisión el tema B pierde 20 unidades en favor de A, ¿cuál es el nuevo porcentaje del tema A?", "correctValue": 34, "tolerance": 0, "explanation": "$$(150 + 20) / 500 = 170 / 500 = 34\\%$$"}]}, {"id": 16, "title": "Distribución de Citaciones (Índice h)", "context": "Un psicólogo tiene 10 artículos publicados. El número de citas por artículo es: 25, 18, 12, 10, 8, 7, 5, 4, 2, 1.", "parts": [{"id": "p16a", "label": "a)", "question": "Calcule el índice h del autor (Número $h$ de artículos con al menos $h$ citas).", "correctValue": 7, "tolerance": 0, "explanation": "$$\\text{Artículos con citas } \\ge \\text{ rango: (1:25, 2:18, 3:12, 4:10, 5:8, 6:7, 7:5... el 7mo tiene 5, no cumple). h=6. Reintento: } 6 \\text{ arts tienen } \\ge 6. \\text{ El } 7 \\text{ tiene } 5. \\text{ h=6.}$$"}, {"id": "p16b", "label": "b)", "question": "Calcule la media de citas de sus artículos.", "correctValue": 9.2, "tolerance": 0, "explanation": "$$(25+18+12+10+8+7+5+4+2+1) / 10 = 92 / 10 = 9.2$$"}, {"id": "p16c", "label": "c)", "question": "Si el artículo con 25 citas aumenta a 50, ¿en cuánto aumenta la media?", "correctValue": 2.5, "tolerance": 0, "explanation": "$$25 / 10 = 2.5$$"}, {"id": "p16d", "label": "d)", "question": "Calcule la mediana de las citas originales.", "correctValue": 7.5, "tolerance": 0, "explanation": "$$(8 + 7) / 2 = 7.5$$"}]}, {"id": 17, "title": "Mecánica de la Escala de Likert", "context": "Un test de ansiedad tiene 10 ítems tipo Likert (0-4). La puntuación máxima es 40. Una muestra de $n=200$ obtiene una media de 24 con $s=6$.", "parts": [{"id": "p17a", "label": "a)", "question": "Calcule el porcentaje medio de la puntuación máxima alcanzado por la muestra.", "correctValue": 60, "tolerance": 0, "explanation": "$$24 / 40 \\cdot 100 = 60\\%$$"}, {"id": "p17b", "label": "b)", "question": "Calcule la puntuación $Z$ de un sujeto que obtiene 36 puntos.", "correctValue": 2, "tolerance": 0, "explanation": "$$Z = (36 - 24) / 6 = 12 / 6 = 2$$"}, {"id": "p17c", "label": "c)", "question": "Si la distribución es normal, ¿qué porcentaje de la muestra puntúa por encima de 30? ($Z=1$ equivale al $16\\%$ superior).", "correctValue": 15.87, "tolerance": 0.1, "explanation": "$$Z = (30 - 24) / 6 = 1. P(Z > 1) \\approx 0.1587$$"}, {"id": "p17d", "label": "d)", "question": "Si se añade una constante de 5 puntos a todos los sujetos, ¿cuál es la nueva desviación típica?", "correctValue": 6, "tolerance": 0, "explanation": "$$\\text{Sumar una constante no altera la dispersión.}$$"}]}, {"id": 18, "title": "Análisis de Frecuencia de Palabras Clave", "context": "En un repositorio de 5000 artículos, se analizan las palabras clave. 'Depresión' aparece en 1200, 'TCC' en 800 y ambos en 300.", "parts": [{"id": "p18a", "label": "a)", "question": "Calcule la probabilidad de que un artículo contenga 'Depresión' o 'TCC'.", "correctValue": 0.34, "tolerance": 0.01, "explanation": "$$P(A \\cup B) = (1200 + 800 - 300) / 5000 = 1700 / 5000 = 0.34$$"}, {"id": "p18b", "label": "b)", "question": "Si seleccionamos un artículo que sabemos que tiene 'Depresión', ¿cuál es la probabilidad de que también tenga 'TCC'?", "correctValue": 0.25, "tolerance": 0, "explanation": "$$300 / 1200 = 0.25$$"}, {"id": "p18c", "label": "c)", "question": "Si el número de palabras clave por artículo es exactamente 5, ¿cuántas palabras clave totales hay en el repositorio?", "correctValue": 25000, "tolerance": 0, "explanation": "$$5000 \\cdot 5 = 25000$$"}, {"id": "p18d", "label": "d)", "question": "Calcule el porcentaje de artículos que no contienen ninguna de las dos palabras clave analizadas.", "correctValue": 66, "tolerance": 0, "explanation": "$$100 - 34 = 66\\%$$"}]}, {"id": 19, "title": "Estadística Inferencial: Prueba t de Student", "context": "Se comparan dos grupos (Experimental $n_1=25$ y Control $n_2=25$). Medias: $\\bar{x}_1=15, \\bar{x}_2=12$. Varianza combinada $s_p^2 = 9$.", "parts": [{"id": "p19a", "label": "a)", "question": "Calcule el error estándar de la diferencia de medias.", "correctValue": 0.848, "tolerance": 0.01, "explanation": "$$SE = \\sqrt{9/25 + 9/25} = \\sqrt{18/25} = 0.8485$$"}, {"id": "p19b", "label": "b)", "question": "Calcule el valor del estadístico $t$.", "correctValue": 3.53, "tolerance": 0.1, "explanation": "$$t = (15 - 12) / 0.8485 = 3 / 0.8485 \\approx 3.535$$"}, {"id": "p19c", "label": "c)", "question": "Calcule los grados de libertad totales ($gl$).", "correctValue": 48, "tolerance": 0, "explanation": "$$25 + 25 - 2 = 48$$"}, {"id": "p19d", "label": "d)", "question": "Calcule el tamaño del efecto $d$ de Cohen.", "correctValue": 1, "tolerance": 0, "explanation": "$$d = (15 - 12) / \\sqrt{9} = 3 / 3 = 1$$"}]}, {"id": 20, "title": "Simulación de Revisión por Pares", "context": "Un artículo se envía a 3 revisores. La probabilidad de que un revisor acepte es $p=0.4$. Se requiere al menos 2 aceptaciones para publicar.", "parts": [{"id": "p20a", "label": "a)", "question": "Calcule la probabilidad de que exactamente 2 revisores acepten.", "correctValue": 0.288, "tolerance": 0.01, "explanation": "$$\\binom{3}{2} (0.4^2)(0.6^1) = 3 \\cdot 0.16 \\cdot 0.6 = 0.288$$"}, {"id": "p20b", "label": "b)", "question": "Calcule la probabilidad de que los 3 acepten.", "correctValue": 0.064, "tolerance": 0.01, "explanation": "$$0.4^3 = 0.064$$"}, {"id": "p20c", "label": "c)", "question": "Calcule la probabilidad total de publicación.", "correctValue": 0.352, "tolerance": 0.01, "explanation": "$$0.288 + 0.064 = 0.352$$"}, {"id": "p20d", "label": "d)", "question": "Si se envían 100 artículos, ¿cuántos se espera que sean publicados?", "correctValue": 35.2, "tolerance": 1, "explanation": "$$100 \\cdot 0.352 = 35.2$$"}]}];
+        const jsonFormulas = [{"name": "Nivel de significación estadística (p-valor)", "tex": "$$p < 0.01$$"}];
+
+        // --- TRANSFORMACIÓN DE DATOS PARA LA APP ---
+        const appDB = {
+            quiz: [...jsonTestA, ...jsonTestB],
+            laboratorio: [...jsonLaboratorio],
+            formulas: jsonFormulas.map(f => ({
+                cat: "Fórmula",
+                q: f.name,
+                a: f.tex
+            }))
+        };
+
+        // --- LÓGICA DE LA APLICACIÓN ---
+        const app = {
+            DB: appDB,
+            state: {
+                currentTool: null,
+                index: 0,
+                isFlipped: false,
+                activeData: [],
+                failedQuestions: [],
+                score: 0,
+                totalQuestions: 0
+            },
+
+            // Renderiza MathJax si está disponible
+            renderMath: function() {
+                if (window.MathJax && window.MathJax.typesetPromise) {
+                    MathJax.typesetPromise();
+                }
+            },
+
+            showView: function (view) {
+                document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+                const target = document.getElementById(`view-${view}`);
+                if (target) target.classList.remove('hidden');
+
+                const menuBtn = document.getElementById('btn-global-menu');
+                const counterBox = document.getElementById('nav-counter');
+                
+                if (view === 'home') {
+                    menuBtn.classList.remove('flex');
+                    menuBtn.classList.add('hidden');
+                    counterBox.classList.remove('flex');
+                    counterBox.classList.add('hidden');
+                } else {
+                    menuBtn.classList.remove('hidden');
+                    menuBtn.classList.add('flex');
+                    
+                    if (view === 'formulas') {
+                        counterBox.classList.remove('flex');
+                        counterBox.classList.add('hidden');
+                    } else {
+                        counterBox.classList.remove('hidden');
+                        counterBox.classList.add('flex');
+                    }
+                }
+            },
+
+            startTool: function (tool, customData = null) {
+                const baseData = this.DB[tool] || [];
+                const dataToUse = customData ? [...customData] : JSON.parse(JSON.stringify(baseData));
+
+                if (dataToUse.length === 0) return;
+
+                this.state.currentTool = tool;
+                this.state.index = 0;
+                this.state.score = 0;
+                this.state.failedQuestions = [];
+                this.state.activeData = dataToUse;
+
+                if (tool === 'laboratorio') {
+                    this.state.totalQuestions = dataToUse.reduce((acc, curr) => acc + curr.parts.length, 0);
+                } else {
+                    this.state.totalQuestions = dataToUse.length;
+                }
+
+                if (!customData && tool !== 'formulas') {
+                    this.shuffleArray(this.state.activeData);
+                }
+
+                this.updateCounter();
+                this.showView(tool);
+
+                if (tool === 'quiz') this.renderQuiz();
+                if (tool === 'laboratorio') this.renderLaboratorio();
+                if (tool === 'formulas') this.renderFormulas();
+            },
+
+            updateCounter: function () {
+                const counter = document.getElementById('global-counter');
+                if (counter && this.state.activeData.length > 0) {
+                    counter.innerText = `${this.state.index + 1}/${this.state.activeData.length}`;
+                }
+            },
+
+            shuffleArray: function (arr) {
+                for (let i = arr.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                }
+            },
+
+            finishSession: function() {
+                this.showResults();
+            },
+
+            // --- LÓGICA QUIZ ---
+            renderQuiz: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('quiz-question').innerHTML = data.q;
+                document.getElementById('quiz-feedback').classList.add('hidden');
+                document.getElementById('quiz-hint-box').classList.add('hidden');
+                
+                const container = document.getElementById('quiz-options');
+                container.innerHTML = '';
+                
+                data.options.forEach((opt, i) => {
+                    const btn = document.createElement('button');
+                    btn.className = "option-btn w-full text-left p-4 rounded-xl bg-white flex items-center gap-4 font-semibold text-slate-700 shadow-sm";
+                    btn.innerHTML = `<span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-xs text-slate-400 font-bold shrink-0">${String.fromCharCode(65 + i)}</span> <div class="math-content">${opt}</div>`;
+                    btn.onclick = () => this.quizCheck(i, btn);
+                    container.appendChild(btn);
+                });
+
+                this.renderMath();
+            },
+
+            quizToggleHint: function () {
+                const box = document.getElementById('quiz-hint-box');
+                const data = this.state.activeData[this.state.index];
+                if (data && data.hint) {
+                    box.innerHTML = `<span class="font-bold">Pista:</span> ${data.hint}`;
+                    box.classList.toggle('hidden');
+                    this.renderMath();
+                }
+            },
+
+            quizCheck: function (idx, clickedBtn) {
+                const data = this.state.activeData[this.state.index];
+                const btns = document.getElementById('quiz-options').querySelectorAll('button');
+                btns.forEach(b => b.disabled = true);
+                
+                const feedback = document.getElementById('quiz-feedback');
+                feedback.classList.remove('hidden');
+                
+                if (idx === data.correct) {
+                    this.state.score++;
+                    clickedBtn.classList.add('bg-emerald-50', 'border-emerald-500', 'text-emerald-700');
+                    document.getElementById('quiz-feedback-title').innerText = "¡Correcto!";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-emerald-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    this.state.failedQuestions.push(data);
+                    clickedBtn.classList.add('bg-red-50', 'border-red-500', 'text-red-700');
+                    btns[data.correct].classList.add('bg-emerald-50', 'border-emerald-500', 'ring-2', 'ring-emerald-200');
+                    document.getElementById('quiz-feedback-title').innerText = "Incorrecto";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-red-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+                
+                document.getElementById('quiz-explanation').innerHTML = data.explanation;
+                this.renderMath();
+            },
+
+            quizNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderQuiz();
+                    this.updateCounter();
+                } else this.showResults();
+            },
+
+            // --- LÓGICA LABORATORIO ---
+            renderLaboratorio: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('lab-problem-number').innerText = this.state.index + 1;
+                document.getElementById('lab-main-title').innerText = data.title;
+                document.getElementById('lab-context-box').innerHTML = data.context;
+                
+                const container = document.getElementById('lab-parts-container');
+                container.innerHTML = '';
+                
+                data.parts.forEach((part, i) => {
+                    const partId = `lab-part-${this.state.index}-${i}`;
+                    const letter = part.label.replace(')', '').toLowerCase();
+                    
+                    const html = `
+                        <div class="p-6 md:p-8 border-b border-slate-100 last:border-0">
+                            <div class="flex gap-4 items-start mb-6">
+                                <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex justify-center items-center font-bold shrink-0 mt-1">${letter}</div>
+                                <div class="text-slate-800 font-semibold text-lg math-content pt-1">${part.question}</div>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-4 items-center pl-0 md:pl-12">
+                                <input type="text" id="input-${partId}" class="w-full md:w-64 p-3 rounded-xl border-2 border-slate-200 outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-50 transition text-lg font-mono shadow-sm" placeholder="Respuesta...">
+                                <button id="btn-${partId}" onclick="app.labCheckPart(${this.state.index}, ${i})" class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-xl font-bold uppercase tracking-wider text-sm transition shadow-md w-full md:w-auto">Verificar</button>
+                            </div>
+                            
+                            <div id="feedback-${partId}" class="hidden pl-0 md:pl-12 mt-4 animate-fadeIn">
+                                <div id="feedback-box-${partId}" class="flex items-start gap-3 p-4 rounded-xl">
+                                    <div id="icon-${partId}" class="text-2xl shrink-0 mt-1"></div>
+                                    <div class="w-full">
+                                        <h4 id="title-${partId}" class="font-bold mb-2"></h4>
+                                        <div class="text-sm font-mono bg-slate-800 text-slate-200 p-4 rounded-lg overflow-x-auto math-content shadow-inner border border-slate-700">
+                                            <span class="text-slate-400 text-[10px] uppercase font-sans font-bold tracking-widest block mb-2">Desarrollo Matemático</span>
+                                            ${part.explanation}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.insertAdjacentHTML('beforeend', html);
+                });
+                
+                this.renderMath();
+            },
+
+            labCheckPart: function (problemIdx, partIdx) {
+                const problem = this.state.activeData[problemIdx];
+                const part = problem.parts[partIdx];
+                const partId = `lab-part-${problemIdx}-${partIdx}`;
+
+                const input = document.getElementById(`input-${partId}`);
+                const btn = document.getElementById(`btn-${partId}`);
+                const feedback = document.getElementById(`feedback-${partId}`);
+                const feedbackBox = document.getElementById(`feedback-box-${partId}`);
+                const icon = document.getElementById(`icon-${partId}`);
+                const title = document.getElementById(`title-${partId}`);
+
+                const rawVal = input.value.trim().replace(',', '.');
+                const userVal = parseFloat(rawVal);
+                
+                if (rawVal === "" || isNaN(userVal)) {
+                    input.classList.add('ring-2', 'ring-red-400');
+                    setTimeout(() => input.classList.remove('ring-2', 'ring-red-400'), 500);
+                    return; 
+                }
+
+                input.disabled = true;
+                btn.disabled = true;
+                btn.classList.remove('hover:bg-indigo-700', 'bg-indigo-600');
+                btn.classList.add('bg-slate-300', 'text-slate-500', 'cursor-not-allowed', 'shadow-none');
+                
+                feedback.classList.remove('hidden');
+
+                const diff = Math.abs(userVal - part.correctValue);
+                const isCorrect = diff <= part.tolerance;
+
+                if (isCorrect) {
+                    this.state.score++;
+                    input.classList.add('border-emerald-400', 'bg-emerald-50', 'text-emerald-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-emerald-50 border border-emerald-200";
+                    title.innerText = "¡Cálculo Exacto!";
+                    title.className = "font-black text-emerald-600";
+                    icon.innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    input.classList.add('border-red-400', 'bg-red-50', 'text-red-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-red-50 border border-red-200";
+                    title.innerText = `Cálculo Incorrecto. Respuesta esperada: ${part.correctValue} (±${part.tolerance})`;
+                    title.className = "font-black text-red-600";
+                    icon.innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+
+                this.renderMath();
+            },
+
+            labNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderLaboratorio();
+                    this.updateCounter();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else this.showResults();
+            },
+
+            // --- LÓGICA FÓRMULAS ---
+            renderFormulas: function () {
+                const grid = document.getElementById('formulas-grid');
+                grid.innerHTML = '';
+                
+                this.state.activeData.forEach(data => {
+                    const card = document.createElement('div');
+                    card.className = "glass-card p-6 rounded-2xl border-t-4 border-indigo-500 hover:shadow-lg transition-shadow bg-white flex flex-col justify-between items-center text-center h-full";
+                    card.innerHTML = `
+                        <span class="text-xs font-bold text-indigo-500 uppercase tracking-widest mb-4 w-full border-b border-slate-100 pb-2">${data.q}</span>
+                        <div class="text-2xl font-medium text-slate-800 math-content w-full overflow-x-auto py-4 flex-grow flex items-center justify-center">${data.a}</div>
+                    `;
+                    grid.appendChild(card);
+                });
+
+                this.renderMath();
+            },
+
+            // --- RESULTADOS GLOBALES ---
+            showResults: function () {
+                this.showView('results');
+                const resultText = document.getElementById('result-text');
+                
+                if (this.state.currentTool === 'flashcards' || this.state.currentTool === 'formulas') {
+                    resultText.innerHTML = `Has repasado <strong>${this.state.activeData.length}</strong> fórmulas.`;
+                } else {
+                    resultText.innerHTML = `Has acertado <strong>${this.state.score}</strong> de <strong>${this.state.totalQuestions}</strong>.`;
+                }
+
+                const failBtn = document.getElementById('btn-retry-errors');
+                if (this.state.failedQuestions.length > 0 && this.state.currentTool !== 'formulas') {
+                    failBtn.classList.remove('hidden');
+                    document.getElementById('fail-count').innerText = this.state.failedQuestions.length;
+                } else {
+                    failBtn.classList.add('hidden');
+                }
+            },
+
+            retryErrors: function () { 
+                this.startTool(this.state.currentTool, this.state.failedQuestions); 
+            }
+        };
+
+        // Iniciar en Home al cargar
+        window.onload = () => app.showView('home');
+    </script>
+</body>
+</html>

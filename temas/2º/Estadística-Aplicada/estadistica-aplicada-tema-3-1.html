@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIMAP - Tema 3.1: Medidas de Centralización y Dispersión</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Configuración de MathJax para renderizar LaTeX -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            startup: {
+                typeset: false // Lo llamaremos manualmente después de cargar las vistas
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f0f9ff;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(192, 90%, 90%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(170, 70%, 90%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(210, 80%, 90%, 1) 0, transparent 50%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 40px -10px rgba(14, 165, 233, 0.15);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 50%, #2dd4bf 100%);
+            background-size: 200% 200%;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            color: white;
+            font-weight: 700;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
+            background-position: 100% 50%;
+        }
+
+        /* Estilos Flashcards */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .card-inner.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 1.5rem;
+        }
+
+        .card-front {
+            background: white;
+            border: 2px solid #e2e8f0;
+        }
+
+        .card-back {
+            background: #4f46e5;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .option-btn {
+            transition: all 0.2s;
+            border: 2px solid #e2e8f0;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: #0ea5e9;
+            background-color: #f0f9ff;
+            transform: translateX(5px);
+        }
+
+        /* MathJax adjustments to prevent overflow */
+        mjx-container {
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Global -->
+    <header class="glass-card sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="app.showView('home')">
+                <div class="bg-sky-600 text-white p-2 rounded-lg shadow-lg">
+                    <i class="ph-bold ph-chart-line-up text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-xl tracking-tight text-slate-800" id="header-title">Tema 3.1 - Medidas de Centralización y Dispersión</h1>
+                    <p class="text-[9px] uppercase tracking-widest font-bold text-slate-500">ANÁLISIS DE DATOS Y MATEMÁTICAS</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 sm:gap-4">
+                <!-- Botón Portal Principal -->
+                <a href="../../../index.html" class="bg-slate-700 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-arrow-left text-lg"></i> <span class="hidden sm:inline">Portal Principal</span>
+                </a>
+
+                <!-- Botón Calculadora Externa -->
+                <a href="https://web2.0calc.es/" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-calculator text-lg"></i> <span class="hidden sm:inline">Calculadora</span>
+                </a>
+
+                <!-- Botón Menú Global -->
+                <button id="btn-global-menu" onclick="app.showView('home')" class="hidden bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-xl items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-house text-lg"></i> <span class="hidden sm:inline">Menú</span>
+                </button>
+
+                <!-- Contador Global -->
+                <div id="nav-counter" class="hidden items-center gap-2 bg-white/60 px-3 py-1.5 rounded-full border border-white">
+                    <span id="global-counter" class="text-sky-700 font-bold font-mono text-sm">0/0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-5xl w-full mx-auto p-6 flex flex-col items-center justify-center">
+
+        <!-- VIEW: HOME (MENU) -->
+        <section id="view-home" class="fade-in w-full">
+            <div class="text-center mb-12">
+                <h1 class="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400 mb-8 tracking-tighter opacity-80 select-none">
+                    SAIMAP</h1>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-4">¿Cómo quieres practicar hoy?</h2>
+                <h3 class="text-xl font-bold text-slate-600 mb-4">Tema 3.1 - Medidas de Centralización y Dispersión</h3>
+                <p class="text-slate-500">Selecciona la herramienta que mejor se adapte a tu objetivo de estudio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                <!-- QUIZ -->
+                <div onclick="app.startTool('quiz')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-sky-500">
+                    <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-numbers text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Test Teórico</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Preguntas de opción múltiple sobre conceptos y propiedades estadísticas.</p>
+                </div>
+
+                <!-- LABORATORIO (Reemplaza Trainer) -->
+                <div onclick="app.startTool('laboratorio')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-emerald-500">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-calculator text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Laboratorio</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Ejercicios de cálculo numérico con escenarios guiados paso a paso.</p>
+                </div>
+
+                <!-- FÓRMULAS (Reemplaza Flashcards) -->
+                <div onclick="app.startTool('formulas')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-indigo-500">
+                    <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-dashes text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fórmulas</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Glosario completo de fórmulas matemáticas para consultar rápidamente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: QUIZ -->
+        <section id="view-quiz" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-sky-500"></div>
+
+                <div class="flex justify-between items-center mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Modo Test</span>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">
+                            Finalizar Sesión
+                        </button>
+                    </div>
+                    <button id="quiz-hint-btn" onclick="app.quizToggleHint()" class="text-amber-600 font-bold text-xs flex items-center gap-1 hover:bg-amber-50 px-3 py-1.5 rounded-lg transition">
+                        <i class="ph-bold ph-lightbulb"></i> Ver Pista
+                    </button>
+                </div>
+
+                <h2 id="quiz-question" class="text-2xl font-bold text-slate-800 mb-8 math-content"></h2>
+
+                <div id="quiz-hint-box" class="hidden mb-6 p-4 bg-amber-50 border-l-4 border-amber-400 text-amber-900 text-sm italic rounded-r-xl math-content"></div>
+
+                <div id="quiz-options" class="space-y-3"></div>
+
+                <!-- Feedback Quiz -->
+                <div id="quiz-feedback" class="hidden mt-8 p-6 rounded-2xl border transition-all">
+                    <div class="flex items-start gap-4">
+                        <div id="quiz-feedback-icon" class="text-3xl"></div>
+                        <div class="w-full">
+                            <h4 id="quiz-feedback-title" class="font-bold text-lg"></h4>
+                            <div id="quiz-explanation" class="text-sm text-slate-600 mt-2 p-3 bg-slate-50 rounded-lg math-content"></div>
+                        </div>
+                    </div>
+                    <button onclick="app.quizNext()" class="mt-6 btn-primary py-4 px-8 rounded-xl w-full flex items-center justify-center gap-2">
+                        Continuar <i class="ph ph-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: LABORATORIO -->
+        <section id="view-laboratorio" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl overflow-hidden border-t-4 border-emerald-500">
+                <!-- Cabecera y Contexto -->
+                <div class="p-6 md:p-8 bg-emerald-50/50 border-b border-slate-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center font-bold" id="lab-problem-number">1</div>
+                            <h2 id="lab-main-title" class="text-xl font-bold text-slate-800"></h2>
+                        </div>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">Finalizar</button>
+                    </div>
+                    <div id="lab-context-box" class="bg-white/80 p-5 rounded-xl text-slate-700 math-content text-base border border-slate-200 shadow-inner"></div>
+                </div>
+
+                <!-- Contenedor de Apartados -->
+                <div id="lab-parts-container" class="flex flex-col bg-white">
+                    <!-- Los apartados se inyectan aquí automáticamente -->
+                </div>
+            </div>
+
+            <!-- Botón de siguiente problema -->
+            <button onclick="app.labNext()" class="mt-6 w-full bg-slate-800 hover:bg-slate-900 text-white py-4 rounded-xl font-bold shadow-lg transform active:scale-95 transition flex justify-center items-center gap-2">
+                Siguiente Problema <i class="ph-bold ph-arrow-right"></i>
+            </button>
+        </section>
+
+        <!-- VIEW: FÓRMULAS -->
+        <section id="view-formulas" class="hidden w-full fade-in space-y-6">
+            <div class="mb-6 px-2">
+                <h2 class="text-3xl font-black text-slate-800">Glosario de Fórmulas</h2>
+                <p class="text-slate-500 mt-1">Lista completa de recursos matemáticos</p>
+            </div>
+            
+            <!-- Grid Scrollable para las fórmulas -->
+            <div id="formulas-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-12">
+                <!-- Las fórmulas se inyectarán aquí -->
+            </div>
+        </section>
+
+        <!-- VIEW: RESULTS -->
+        <section id="view-results" class="hidden w-full fade-in text-center py-12">
+            <div class="glass-card p-12 rounded-[3rem] inline-block max-w-md w-full border-2 border-white shadow-2xl">
+                <div class="w-24 h-24 bg-yellow-400 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl shadow-yellow-200">
+                    <i class="ph-fill ph-trophy text-5xl"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold text-slate-800 mb-2">¡Sesión Finalizada!</h2>
+                <p id="result-text" class="text-slate-500 mb-8">Has completado todos los ejercicios.</p>
+
+                <div class="flex flex-col gap-3">
+                    <button id="btn-retry-errors" onclick="app.retryErrors()" class="hidden bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-2xl transition flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-warning-circle"></i> Repasar solo Fallos (<span id="fail-count">0</span>)
+                    </button>
+                    <button onclick="app.showView('home')" class="btn-primary w-full py-4 rounded-2xl uppercase tracking-widest text-sm shadow-md">Menú Principal</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // --- DATOS JSON VACÍOS (Inyectados dinámicamente) ---
+        const jsonTestA = [{"q": "¿Es posible rechazar la $H_0$ en una prueba t para muestras independientes si el intervalo de confianza al $95\\%$ para la diferencia de medias incluye el valor cero?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "El intervalo de confianza y el valor p son dos caras de la misma moneda en el contraste de hipótesis.", "explanation": "Si el $IC$ incluye el cero, significa que el valor de diferencia nula es plausible, por lo que $p \\ge .05$ y se debe mantener la $H_0$."}, {"q": "¿El estadístico t de Student se define matemáticamente como el cociente entre la variación no sistemática y la variación sistemática observada?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Revisa el orden de los componentes en la fórmula del estadístico t.", "explanation": "Es al revés: el estadístico t es el cociente de la variación sistemática (diferencia de medias) entre la variación no sistemática (error estándar)."}, {"q": "En una prueba t de Student para muestras independientes, ¿se asume que las poblaciones de origen deben seguir una distribución normal para que el test sea válido?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 0, "hint": "Esta es una de las condiciones fundamentales de las pruebas paramétricas.", "explanation": "La normalidad es un supuesto básico; si se viola severamente, los resultados pueden no ser válidos y se debe recurrir a pruebas no paramétricas."}, {"q": "¿El signo del estadístico t resultante ($+$ o $-$) altera la interpretación de la significación estadística en un contraste de hipótesis bilateral?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Considera qué es lo que realmente evaluamos cuando comparamos t calculada con t crítica.", "explanation": "En contrastes bilaterales lo relevante es el valor absoluto de t; el signo solo indica qué media es mayor, pero no afecta la significación."}, {"q": "¿Es la d de Cohen una medida que permite valorar la relevancia práctica de una diferencia, independientemente del tamaño de la muestra utilizada?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 0, "hint": "Diferencia la significación estadística de la magnitud del efecto.", "explanation": "A diferencia del valor p, la d de Cohen mide la magnitud del efecto y no es tan sensible al incremento del tamaño muestral."}, {"q": "¿La prueba de Levene utiliza como hipótesis nula ($H_0$) que las varianzas de los grupos comparados son significativamente distintas entre sí?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Recuerda qué significa que una prueba de supuestos 'no sea significativa'.", "explanation": "La $H_0$ de Levene plantea la igualdad de varianzas (homocedasticidad). Si $p > .05$, no hay evidencia para decir que son distintas."}, {"q": "¿Se requiere obligatoriamente que los tamaños muestrales de ambos grupos ($n_A$ y $n_B$) sean idénticos para aplicar la prueba t de Student?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Observa la fórmula del error estándar en el denominador de t.", "explanation": "La prueba t permite tamaños muestrales distintos, aunque se deben cumplir otros supuestos como la homogeneidad de varianzas."}, {"q": "¿El cálculo de los grados de libertad como $gl = n_A + n_B - 2$ es exclusivo para situaciones donde se asume homogeneidad de varianzas?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 0, "hint": "Compara este cálculo con lo que sucede cuando se aplica la corrección de Welch.", "explanation": "Cuando las varianzas no son iguales, se aplica la corrección de Welch, la cual ajusta (normalmente reduce) los grados de libertad."}, {"q": "¿Es la prueba U de Mann-Whitney la alternativa paramétrica adecuada cuando se viola el supuesto de normalidad en muestras independientes?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Fíjate bien en la clasificación del tipo de prueba mencionada.", "explanation": "La afirmación es falsa porque la prueba U de Mann-Whitney es una prueba **no paramétrica**, no una alternativa paramétrica."}, {"q": "¿Un valor de d de Cohen igual a $0.85$ indica que la diferencia observada entre las medias tiene un efecto de magnitud grande?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 0, "hint": "Recuerda los puntos de corte propuestos por Cohen.", "explanation": "Según Cohen, valores de $d \\ge 0.8$ se consideran efectos grandes, por lo que $0.85$ entra en dicha categoría."}, {"q": "Selecciona la afirmación correcta sobre la naturaleza de la Variable Independiente (VI) en una prueba t para muestras independientes:", "options": ["Debe ser una variable continua medida en escala de intervalo o razón.", "Debe ser una variable categórica dicotómica con grupos excluyentes.", "Debe ser una variable ordinal que permita establecer rangos internos."], "correct": 1, "hint": "La VI es la que define los grupos que vamos a comparar.", "explanation": "La VI debe ser nominal u ordinal con solo dos niveles o categorías independientes para poder realizar la comparación de medias."}, {"q": "Selecciona la afirmación correcta respecto al error estándar en el denominador de la fórmula del estadístico t:", "options": ["Representa la variabilidad total de la variable dependiente en la muestra.", "Representa la variabilidad no sistemática o error aleatorio del análisis.", "Representa la diferencia ponderada entre las desviaciones de cada grupo."], "correct": 1, "hint": "El denominador actúa como un 'ruido' contra el cual comparamos la señal.", "explanation": "El denominador mide la variabilidad esperada por puro azar; si la diferencia de medias supera este ruido, el t será significativo."}, {"q": "Selecciona la afirmación correcta sobre la interpretación del valor p en los resultados de SPSS:", "options": ["Si el valor p es menor que $\\alpha$, se concluye que no hay efecto real.", "Si el valor p es menor que $\\alpha$, se rechaza la hipótesis nula de igualdad.", "Si el valor p es mayor que $\\alpha$, se acepta la hipótesis del investigador."], "correct": 1, "hint": "El valor p indica la probabilidad de los datos bajo la suposición de que $H_0$ es cierta.", "explanation": "Un valor $p < \\alpha$ indica que los resultados son muy improbables bajo $H_0$, llevándonos a rechazarla en favor de $H_1$."}, {"q": "Selecciona la afirmación correcta sobre el supuesto de homogeneidad de varianzas:", "options": ["Se verifica mediante las pruebas de normalidad Kolmogorov-Smirnov.", "Se considera cumplido cuando la prueba de Levene tiene un valor $p > .05$.", "Su incumplimiento invalida cualquier tipo de comparación entre las medias."], "correct": 1, "hint": "Piensa en el significado de la significación en una prueba de igualdad.", "explanation": "Un $p > .05$ en Levene significa que no hay diferencias significativas entre las varianzas, cumpliéndose así la homocedasticidad."}, {"q": "Selecciona la afirmación correcta sobre los grados de libertad ($gl$) en la prueba t de Student:", "options": ["Se calculan restando una unidad al tamaño total de la muestra reunida.", "Determinan la forma de la distribution t para identificar el valor crítico.", "Son independientes del tamaño de la muestra de los grupos individuales."], "correct": 1, "hint": "Los $gl$ son necesarios para saber en qué fila de la tabla t debemos mirar.", "explanation": "La distribución t varía según los $gl$; a mayor $gl$, más se aproxima la distribución t a una distribución normal estándar."}, {"q": "Selecciona la afirmación correcta sobre la relación entre el estadístico t y el tamaño del efecto d de Cohen:", "options": ["El estadístico t depende del tamaño muestral, mientras que d no lo hace.", "Ambos estadísticos miden exactamente lo mismo con diferentes escalas.", "Si el estadístico t es significativo, el tamaño del efecto será siempre grande."], "correct": 0, "hint": "Considera qué sucede si aumentamos el tamaño de la muestra infinitamente.", "explanation": "Con muestras muy grandes, incluso diferencias pequeñas pueden dar un t significativo, pero la d de Cohen se mantendrá pequeña."}, {"q": "Selecciona la afirmación correcta sobre la corrección de Welch en SPSS:", "options": ["Se utiliza únicamente cuando el supuesto de normalidad ha sido violado.", "Ajusta los grados de libertad cuando las varianzas grupales son desiguales.", "Aumenta la probabilidad de cometer un error de tipo I en el análisis."], "correct": 1, "hint": "Esta corrección aparece en la fila inferior de la tabla de la prueba t en SPSS.", "explanation": "La corrección de Welch es la alternativa robusta cuando la prueba de Levene es significativa ($p < .05$)."}, {"q": "Selecciona la afirmación correcta sobre el contraste de hipótesis bilateral:", "options": ["Divide el nivel de significación $\\alpha$ entre las dos colas de la distribución.", "Solo permite detectar si la media del grupo A es superior a la del grupo B.", "Requiere un nivel de confianza del $95\\%$ para ser considerado válido."], "correct": 0, "hint": "En un test bilateral, buscamos diferencias en cualquier dirección.", "explanation": "Al no especificar dirección, el error $\\alpha$ se reparte en ambos extremos; por ello en la tabla buscamos el valor para $1 - \\alpha/2$."}, {"q": "Selecciona la afirmación correcta sobre la prueba U de Mann-Whitney:", "options": ["Compara las medias aritméticas de dos muestras de forma no paramétrica.", "Utiliza los rangos de las puntuaciones en lugar de sus valores originales.", "Requiere obligatoriamente que las muestras tengan varianzas iguales."], "correct": 1, "hint": "Las pruebas no paramétricas suelen basarse en el orden de los datos.", "explanation": "Al no basarse en parámetros como la media, la U de Mann-Whitney transforma los datos en rangos para comparar las distribuciones."}, {"q": "Selecciona la afirmación correcta sobre la hipótesis nula ($H_0$) en la prueba t:", "options": ["Plantea que la diferencia entre las medias poblacionales es igual a cero.", "Plantea que existe una relación causal entre la variable independiente y la dependiente.", "Plantea que los grupos comparados provienen de poblaciones con distribuciones distintas."], "correct": 0, "hint": "La hipótesis nula es siempre la hipótesis de 'no cambio' o 'no diferencia'.", "explanation": "Matemáticamente se expresa como $\\mu_A = \\mu_B$, lo que implica que la diferencia entre ellas es nula."}, {"q": "Selecciona la afirmación correcta sobre el supuesto de 'independencia de las observaciones':", "options": ["Significa que los datos deben ser recogidos en dos momentos distintos.", "Significa que la respuesta de un sujeto no debe influir en la de otro.", "Significa que la varianza de un grupo no debe depender del tamaño del otro."], "correct": 1, "hint": "Este supuesto se refiere a la relación entre los participantes del estudio.", "explanation": "Las observaciones son independientes si el valor medido en un sujeto no está relacionado con el valor medido en cualquier otro sujeto."}, {"q": "Selecciona la afirmación correcta sobre el efecto trivial según la escala de Cohen:", "options": ["Se da cuando el valor absoluto de d es superior a $0.20$ pero menor a $0.50$.", "Se da cuando el valor absoluto de d es inferior a $0.20$ unidades.", "Se da cuando el valor de t no alcanza la significación estadística deseada."], "correct": 1, "hint": "Es el escalón más bajo en la clasificación del tamaño del efecto.", "explanation": "Cohen estableció que valores por debajo de $0.20$ carecen de relevancia práctica suficiente para ser considerados un efecto."}, {"q": "Selecciona la afirmación correcta respecto al valor crítico T en la tabla de distribución:", "options": ["Es el punto de corte que delimita la zona de aceptación de la hipótesis alternativa.", "Es el valor que debe ser superado por el t calculado para rechazar la $H_0$.", "Es equivalente al valor p obtenido mediante los programas de análisis estadístico."], "correct": 1, "hint": "T es la frontera teórica para un nivel $\\alpha$ determinado.", "explanation": "Si el estadístico calculado t es mayor que el crítico T, caemos en la zona de rechazo de la hipótesis nula."}, {"q": "Selecciona la afirmación correcta sobre la Variable Dependiente (VD) en este análisis:", "options": ["Puede ser cualitativa siempre que se recodifique en valores numéricos.", "Debe ser cuantitativa continua para permitir el cálculo de medias y varianzas.", "Debe seguir una distribución uniforme para garantizar la potencia del test."], "correct": 1, "hint": "No podemos calcular una media aritmética sobre categorías puras.", "explanation": "La prueba t es paramétrica y requiere que la VD sea medida en una escala que permita operaciones aritméticas con sentido."}, {"q": "Selecciona la afirmación correcta sobre el valor de significación 'Sig. bilateral' en SPSS:", "options": ["Si es igual a $.000$, significa que la probabilidad de error es nula.", "Representa la probabilidad de obtener ese t si las medias fueran iguales.", "Indica que el tamaño del efecto es extremadamente grande y relevante."], "correct": 1, "hint": "Reflexiona sobre la definición de valor p.", "explanation": "El valor p es la probabilidad de observar una diferencia igual o mayor a la encontrada si la hipótesis nula fuera verdadera."}, {"q": "Selecciona la afirmación INCORRECTA sobre la lógica del análisis de la prueba t:", "options": ["La variación sistemática es la variabilidad atribuible a la variable independiente.", "La variación no sistemática refleja la variabilidad interna de los grupos.", "El estadístico t aumenta cuando la varianza interna de los grupos es muy elevada."], "correct": 2, "hint": "Fíjate en qué parte de la fracción (numerador o denominador) se sitúa la varianza.", "explanation": "Al estar la varianza en el denominador, si esta aumenta, el valor del estadístico t disminuye, dificultando la significación."}, {"q": "Selecciona la afirmación INCORRECTA sobre los supuestos de la prueba t:", "options": ["Los valores atípicos espurios deben ser mantenidos siempre para no sesgar la muestra.", "La normalidad de los datos puede verificarse visualmente mediante gráficos Q-Q.", "La VD debe estar medida obligatoriamente en una escala de intervalo o razón."], "correct": 0, "hint": "Revisa el apartado de outliers en el texto.", "explanation": "Los valores atípicos espurios (por error de medida) deben ser eliminados o corregidos, ya que influyen desproporcionadamente en los resultados."}, {"q": "Selecciona la afirmación INCORRECTA sobre el tamaño del efecto d de Cohen:", "options": ["Un valor de $d = 0.5$ se interpreta como un efecto de magnitud moderada.", "El signo de la d de Cohen es fundamental para determinar la magnitud del efecto.", "Es posible obtener un t significativo con un tamaño de efecto trivial."], "correct": 1, "hint": "Al igual que con el estadístico t, piensa en el valor absoluto.", "explanation": "Para interpretar la magnitud según las tablas de Cohen, se utiliza el valor absoluto; el signo solo indica la dirección de la diferencia."}, {"q": "Selecciona la afirmación INCORRECTA respecto a la prueba de Levene en SPSS:", "options": ["Si la significación es menor a $.05$, debemos usar la fila de varianzas desiguales.", "Se basa en el estadístico F para determinar si las varianzas son iguales.", "Su objetivo es comprobar si la distribución de la VD es normal en los grupos."], "correct": 2, "hint": "No confundas las pruebas de varianza con las de forma de la distribución.", "explanation": "El objetivo de la prueba de Levene es evaluar la homogeneidad de varianzas, no la normalidad (que se evalúa con K-S o S-W)."}, {"q": "Selecciona la afirmación INCORRECTA sobre el intervalo de confianza de la diferencia:", "options": ["Si el intervalo es $[2.5, 8.4]$, la diferencia es estadísticamente significativa.", "Indica los valores probables de la diferencia de medias en la población.", "Un intervalo más ancho indica que la estimación es mucho más precisa."], "correct": 2, "hint": "Piensa en qué significa tener un rango muy amplio de valores posibles.", "explanation": "Un intervalo ancho indica mayor incertidumbre y menor precisión en la estimación de la diferencia de medias poblacional."}, {"q": "Selecciona la afirmación INCORRECTA sobre la interpretación APA de los resultados:", "options": ["Se deben reportar los grados de libertad entre paréntesis junto a la letra t.", "El valor p debe ir acompañado del estadístico t y del tamaño del efecto.", "Es innecesario mencionar la prueba de Levene si el resultado de t es significativo."], "correct": 2, "hint": "El reporte APA debe ser transparente sobre todos los pasos del análisis.", "explanation": "Es fundamental reportar si se cumplió el supuesto de varianzas para justificar qué fila de resultados se está interpretando."}, {"q": "Selecciona la afirmación INCORRECTA sobre las hipótesis de contraste:", "options": ["La hipótesis alternativa ($H_1$) siempre plantea la ausencia de diferencias.", "La $H_0$ se mantiene si el valor p obtenido es igual o superior a $.05$.", "Las hipótesis deben formularse antes de realizar el análisis de los datos."], "correct": 0, "hint": "La hipótesis alternativa es la que suele representar el cambio que el investigador espera encontrar.", "explanation": "La $H_1$ plantea que **sí** existen diferencias significativas, mientras que la $H_0$ es la que plantea la ausencia de las mismas."}, {"q": "Selecciona la afirmación INCORRECTA sobre la distribución t de Student:", "options": ["Es una distribución simétrica con forma de campana centrada en el cero.", "Tiene colas más pesadas (más probabilidad en los extremos) que la normal.", "Su forma es constante y no depende del tamaño de las muestras comparadas."], "correct": 2, "hint": "Recuerda el papel de los grados de libertad.", "explanation": "La forma de la distribución t cambia según los grados de libertad; a medida que estos aumentan, la distribución cambia su forma."}, {"q": "Selecciona la afirmación INCORRECTA sobre la prueba U de Mann-Whitney en SPSS:", "options": ["La decisión 'Conserve la hipótesis nula' implica que $p \\ge .05$.", "SPSS muestra un gráfico de distribución de rangos para cada grupo.", "Es la prueba de elección cuando las varianzas son iguales pero las medias no."], "correct": 2, "hint": "Esta prueba no se elige por problemas de varianza, sino por problemas de normalidad.", "explanation": "Se elige cuando no se cumple la normalidad o los datos son ordinales, no simplemente porque las medias sean distintas."}, {"q": "Selecciona la afirmación INCORRECTA sobre el error de Tipo II en este contexto:", "options": ["Consiste en no rechazar la $H_0$ cuando en realidad existe un efecto real.", "Su probabilidad disminuye a medida que aumenta el tamaño del efecto.", "Es imposible cometerlo si el valor p obtenido es menor a $.05$."], "correct": 2, "hint": "Diferencia los errores falso positivo y falso negativo.", "explanation": "Si $p < .05$, rechazamos $H_0$; por tanto, el riesgo existente es el de cometer un error de Tipo I (falso positivo), no de Tipo II."}, {"q": "Selecciona la afirmación INCORRECTA sobre la fórmula del estadístico t:", "options": ["El numerador representa la distancia bruta entre los promedios grupales.", "La varianza de cada grupo ($S^2$) se divide por su respectivo tamaño muestral.", "Si aumentamos $n_A$ y $n_B$, el valor del denominador tiende a hacerse más grande."], "correct": 2, "hint": "Analiza qué sucede en una fracción cuando el número de abajo (denominador) aumenta.", "explanation": "Al aumentar $n$, el denominador (error estándar) disminuye, lo que a su vez provoca que el valor del estadístico t aumente."}, {"q": "Selecciona la afirmación INCORRECTA sobre los gráficos Q-Q de normalidad:", "options": ["Los puntos deben situarse cerca de la diagonal para asumir normalidad.", "Permiten una evaluación visual que complementa a las pruebas numéricas.", "Si los puntos forman una curva en 'S', la distribución es perfectamente normal."], "correct": 2, "hint": "La diagonal representa la distribución teórica ideal.", "explanation": "Una forma de 'S' o desviaciones sistemáticas de la diagonal indican violaciones del supuesto de normalidad."}, {"q": "Selecciona la afirmación INCORRECTA sobre la potencia estadística de la prueba t:", "options": ["Es la capacidad del test para detectar diferencias que existen realmente.", "Es independiente del nivel de significación $\\alpha$ elegido por el autor.", "Se ve incrementada cuando el tamaño de las muestras es elevado."], "correct": 1, "hint": "Existe una relación directa entre los umbrales de error y la potencia.", "explanation": "La potencia está relacionada con $\\alpha$; si somos muy estrictos con $\\alpha$ (ej. $.01$), la potencia para detectar efectos reales disminuye."}, {"q": "Selecciona la afirmación INCORRECTA sobre la escala de medida de la VI:", "options": ["Puede ser una variable nominal como 'Género' (Hombre/Mujer).", "Puede ser una variable de intervalo con múltiples niveles de respuesta.", "Debe dividir a la muestra en exactamente dos grupos independientes."], "correct": 1, "hint": "La prueba t está limitada por el número de comparaciones posibles.", "explanation": "Si la variable tiene múltiples niveles (más de dos), no se puede aplicar una prueba t directamente; se requeriría un ANOVA."}, {"q": "Selecciona la afirmación INCORRECTA sobre el valor p calculado por SPSS:", "options": ["Es la probabilidad de cometer un error tipo I si rechazamos la $H_0$.", "Nos indica directamente la importancia clínica o práctica del hallazgo.", "Si es $.049$, se considera que hay diferencias significativas al $95\\%$."], "correct": 1, "hint": "Recuerda la distinción entre significación estadística y tamaño del efecto.", "explanation": "El valor p solo informa sobre la probabilidad de azar; la importancia práctica se evalúa con el tamaño del efecto (d de Cohen)."}];
+        const jsonTestB = [{"q": "En una prueba t para muestras independientes con $n_A=12$ y $n_B=14$, los grados de libertad ($gl$) son ____", "options": ["$gl = 25$", "$gl = 26$", "$gl = 24$"], "correct": 2, "hint": "Recuerda la resta de los dos grupos de la muestra total.", "explanation": "La fórmula es $$gl = n_A + n_B - 2$$. Sustituyendo: $$12 + 14 - 2 = 24$$. Los distractores suelen ser $n-1$ o la suma total."}, {"q": "Si obtenemos un tamaño del efecto de Cohen $d = 0.55$, la magnitud del efecto se considera ____", "options": ["Moderada", "Pequeña ", "Grande   "], "correct": 0, "hint": "Revisa los umbrales de Cohen: $0.2$, $0.5$ y $0.8$.", "explanation": "Según Cohen, $d \\ge 0.5$ es un efecto moderado. Los distractores presentan otros niveles de la escala."}, {"q": "La prueba de normalidad de Shapiro-Wilk es preferible a la de Kolmogorov-Smirnov cuando ____", "options": ["$n < 30$ ", "$n > 50$ ", "$n < 50$ "], "correct": 2, "hint": "Se asocia habitualmente con el tamaño de muestra pequeño en psicología.", "explanation": "Shapiro-Wilk se utiliza para muestras pequeñas, generalmente $$n < 50$$. K-S es para muestras más grandes."}, {"q": "El estadístico $t$ se calcula dividiendo la variación sistemática por ____", "options": ["El error típico", "La varianza S2", "La suma total "], "correct": 0, "hint": "Es el denominador de la fórmula de la prueba t.", "explanation": "El denominador $$\\sqrt{\\frac{S_A^2}{n_A} + \\frac{S_B^2}{n_B}}$$ representa el error estándar de la diferencia."}, {"q": "Si el valor $p$ obtenido en la prueba $t$ es de $.003$, nuestra decisión estadística será ____", "options": ["Aceptar H1", "Mantener H0", "No decidir"], "correct": 0, "hint": "Compara $.003$ con el nivel crítico de $.05$.", "explanation": "Como $$.003 < .05$$, rechazamos $H_0$ y aceptamos $H_1$ (existen diferencias significativas)."}, {"q": "La alternativa no paramétrica de la prueba $t$ para muestras independientes es ____", "options": ["Wilcoxon ", "U de Mann", "Friedman "], "correct": 1, "hint": "Es la prueba utilizada cuando no se cumple la normalidad en dos grupos.", "explanation": "La prueba U de Mann-Whitney es la versión no paramétrica para comparar dos grupos independientes."}, {"q": "Para una prueba bilateral con $\\alpha = .05$, el valor de confianza en la tabla $t$ es ____", "options": ["$.950$ ", "$.975$ ", "$.025$ "], "correct": 1, "hint": "En pruebas bilaterales, el error se reparte en dos colas.", "explanation": "Para un contraste bilateral, se busca el percentil $$1 - (\\alpha/2)$$, es decir, $$1 - .025 = .975$$."}, {"q": "En el cálculo de Cohen, si $\\bar{X}_A=40, \\bar{X}_B=30$ y varianzas iguales a $25$, $d$ es ____", "options": ["$d = 2.0$", "$d = 1.0$", "$d = 0.4$"], "correct": 0, "hint": "Calcula la raíz de la media de las varianzas primero.", "explanation": "El denominador es $$\\sqrt{(25+25)/2} = 5$$. Entonces $$d = (40-30)/5 = 2$$. Error común: no hacer la raíz."}, {"q": "El supuesto de que las varianzas de los grupos son aproximadamente iguales se llama ____", "options": ["Normalidad", "Linealidad", "Homocedast"], "correct": 2, "hint": "Es evaluado mediante la prueba de Levene.", "explanation": "La homocedasticidad o homogeneidad de varianzas es el supuesto evaluado por la prueba de Levene."}, {"q": "Si el intervalo de confianza de la diferencia de medias incluye el valor $0$, entonces ____", "options": ["$p < .05$ ", "$p \\ge .05$ ", "$p = .000$ "], "correct": 1, "hint": "El cero implica que la diferencia podría ser nula.", "explanation": "Si el IC incluye el $0$, no hay diferencias significativas, por lo tanto el valor $$p \\ge .05$$."}, {"q": "La variable dependiente (VD) en una prueba $t$ de Student debe ser de escala ____", "options": ["Nominal  ", "Intervalo", "Ordinal  "], "correct": 1, "hint": "Debe ser una variable continua.", "explanation": "La VD debe ser de intervalo o razón para permitir el cálculo de medias y varianzas paramétricas."}, {"q": "En SPSS, si la Sig. de Levene es $.012$, debemos leer los resultados de la fila ____", "options": ["Fila sup.", "Fila inf.", "Fila med."], "correct": 1, "hint": "Recuerda que $.012$ es menor que $.05$.", "explanation": "Si Levene es significativo ($$p < .05$$), se rechaza la igualdad de varianzas y se lee 'No se asumen varianzas iguales'."}, {"q": "La corrección que ajusta los grados de libertad cuando las varianzas no son iguales es ____", "options": ["De Welch ", "De Cohen ", "De Bonfer"], "correct": 0, "hint": "Es una alternativa robusta mencionada en el texto.", "explanation": "La corrección de Welch es el procedimiento estándar en SPSS cuando se viola la homocedasticidad."}, {"q": "Bajo la Hipótesis Nula ($H_0$), se asume que la diferencia entre las medias es ____", "options": ["Máxima   ", "Azarosa  ", "Infinita "], "correct": 1, "hint": "Plantea que no hay efecto real del tratamiento.", "explanation": "$H_0$ asume que cualquier diferencia observada es producto del azar y no de la variable independiente."}, {"q": "Si $n_A=10$ y $n_B=10$, y la suma de varianzas es $18.34$, el denominador de $d$ es ____", "options": ["$9.17$    ", "$3.03$    ", "$18.34$   "], "correct": 1, "hint": "Primero divide por 2 y luego aplica la raíz cuadrada.", "explanation": "Denominador de $d = \\sqrt{(18.34/2)} = \\sqrt{9.17} = 3.03$. Error común: no aplicar la raíz."}, {"q": "En un diagrama de caja, los valores que se alejan mucho de la distribución a menudo son ____", "options": ["Promedios ", "Atípicos  ", "Medianas  "], "correct": 1, "hint": "Pueden influir desproporcionadamente en la media.", "explanation": "Los valores atípicos (outliers) son observaciones extremas que pueden invalidar los resultados de la prueba t."}, {"q": "Una d de Cohen de $0.15$ se interpreta habitualmente como un efecto ____", "options": ["Trivial  ", "Grande   ", "Moderado "], "correct": 0, "hint": "Es menor al umbral de $0.2$.", "explanation": "Según la escala de Cohen, valores inferiores a $$0.2$$ se consideran efectos triviales o despreciables."}, {"q": "La variable independiente (VI) en esta prueba debe tener exactamente ____", "options": ["Tres niv.", "Dos niv. ", "Un nivel "], "correct": 1, "hint": "Piensa en 'experimental vs control'.", "explanation": "La prueba t para muestras independientes compara exactamente dos grupos o niveles de la VI."}, {"q": "Al calcular $t$ manualmente, si el resultado es $-4.5$, usamos para la tabla el valor ____", "options": ["$-4.5$    ", "$4.5$     ", "$0.0$     "], "correct": 1, "hint": "Se trabaja con el valor absoluto.", "explanation": "Para comparar con el valor crítico $T$ de las tablas, siempre se utiliza el valor absoluto $|t|$."}, {"q": "Si $p=.06$ y $\\alpha=.05$, la conclusión correcta respecto a $H_0$ es ____", "options": ["Rechazar  ", "Mantener  ", "Anular    "], "correct": 1, "hint": "La probabilidad es mayor que el umbral de error admitido.", "explanation": "Al ser $$p > .05$$, no hay evidencia suficiente para rechazar la hipótesis nula."}, {"q": "¿Qué supuestos deben cumplirse para realizar una prueba t de Student independiente?", "options": ["Independencia de observaciones", "Normalidad de la distribución", "Todas las anteriores son correctas"], "correct": 2, "hint": "Incluye tanto la relación entre sujetos como la forma de los datos.", "explanation": "La prueba requiere independencia, normalidad, homocedasticidad y que la VD sea continua."}, {"q": "¿Qué elementos se necesitan para calcular el estadístico t de Student?", "options": ["Medias de ambos grupos (A y B)", "Tamaños muestrales (nA y nB) ", "Todas las anteriores son correctas"], "correct": 2, "hint": "Mira todos los componentes de la fracción de la fórmula t.", "explanation": "La fórmula de $t$ integra las medias, varianzas y tamaños muestrales de ambos grupos comparados."}, {"q": "¿Qué información proporciona el output de SPSS para la prueba t?", "options": ["Prueba de Levene de varianzas ", "Grados de libertad y valor p  ", "Todas las anteriores son correctas"], "correct": 2, "hint": "SPSS arroja una tabla completa con varios estadísticos de contraste.", "explanation": "El output estándar incluye descriptivos, Levene, $t$, $gl$, niveles de significación y tamaño del efecto."}, {"q": "¿Cuándo es apropiado utilizar la prueba U de Mann-Whitney?", "options": ["Si la VD es de escala ordinal  ", "Si no se cumple la normalidad   ", "Todas las anteriores son correctas"], "correct": 2, "hint": "Es la alternativa 'no paramétrica' por excelencia.", "explanation": "Se usa cuando se violan supuestos paramétricos o cuando la naturaleza de los datos es ordinal."}, {"q": "El tamaño del efecto d de Cohen se caracteriza por:", "options": ["Ignorar el signo del resultado ", "Valorar la relevancia práctica  ", "Todas las anteriores son correctas"], "correct": 2, "hint": "Complementa a la significación estadística.", "explanation": "La $d$ de Cohen mide la magnitud de la diferencia más allá de si es estadísticamente significativa o no."}, {"q": "La hipótesis nula ($H_0$) en una comparación de medias indica que:", "options": ["Las medias son equivalentes    ", "La diferencia se debe al azar   ", "Todas las anteriores son correctas"], "correct": 2, "hint": "Es la hipótesis que intentamos rechazar.", "explanation": "$H_0$ postula la ausencia de efecto, lo que matemáticamente se traduce en igualdad de medias poblacionales."}, {"q": "Para interpretar el valor p en una prueba estadística:", "options": ["Se compara con alfa ($.05$)    ", "Indica probabilidad de error I ", "Todas las anteriores son correctas"], "correct": 2, "hint": "Es el núcleo de la decisión en el contraste de hipótesis.", "explanation": "El valor $p$ determina si los resultados son lo suficientemente improbables bajo $H_0$ como para rechazarla."}, {"q": "El cumplimiento del supuesto de normalidad puede evaluarse mediante:", "options": ["Gráficos Q-Q y de caja       ", "Pruebas S-W o K-S            ", "Todas las anteriores son correctas"], "correct": 2, "hint": "Existen métodos visuales y métodos analíticos.", "explanation": "La normalidad se verifica combinando pruebas estadísticas con la inspección visual de la distribución."}, {"q": "Una diferencia estadísticamente significativa implica que:", "options": ["$p < .05$ en el contraste      ", "Se rechaza la hipótesis nula   ", "Todas las anteriores son correctas"], "correct": 2, "hint": "Asocia el valor p con la decisión sobre las hipótesis.", "explanation": "Significación estadística es sinónimo de rechazo de $H_0$ tras obtener una probabilidad menor a alfa."}, {"q": "La prueba t para muestras independientes es útil en:", "options": ["Diseños experimental vs control", "Comparación de dos tratamientos", "Todas las anteriores son correctas"], "correct": 2, "hint": "Se aplica siempre que tengamos dos grupos distintos medidos una vez.", "explanation": "Cualquier diseño con una VI dicotómica y sujetos distintos en cada nivel es apto para esta prueba."}, {"q": "Si $n_A=15$ y $n_B=15$, los grados de libertad correctos son:", "options": ["$gl = 29$ ", "$gl = 30$ ", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Aplica la fórmula $n_A + n_B - 2$.", "explanation": "El valor correcto es $$15 + 15 - 2 = 28$$. Los distractores son $N-1$ y $N$."}, {"q": "Si $t=2.5$, $T=2.8$ y $\\alpha=.05$, la conclusión estadística es:", "options": ["Rechazar H0", "Aceptar H1", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Para rechazar, el valor calculado t debe ser mayor que el crítico T.", "explanation": "Como $t < T$, no podemos rechazar $H_0$. Las opciones sugerían rechazo o aceptación de $H_1$, lo cual es falso."}, {"q": "El valor de d de Cohen si la diferencia de medias es $5$ y la varianza común es $100$ es:", "options": ["$d = 0.50$", "$d = 0.05$", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Recuerda que el denominador es la desviación típica (raíz de varianza).", "explanation": "$$d = 5 / \\sqrt{100} = 5/10 = 0.5$$. Las opciones $0.50$ y $0.05$ pueden confundir si no se opera bien."}, {"q": "Un valor p de $.000$ en SPSS significa exactamente que:", "options": ["Prob. = 0 ", "Error es 0", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Es una cuestión de redondeo del software.", "explanation": "Significa $$p < .001$$. La probabilidad nunca es exactamente cero en estadística inferencial."}, {"q": "La prueba de Levene con $F=5.2$ y $Sig=.001$ indica que:", "options": ["Hay igualdad", "Usa fila 1", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Un Sig de $.001$ es menor que $.05$, lo que implica rechazo.", "explanation": "Indica heterocedasticidad (varianzas distintas), por lo que se debe usar la fila inferior."}, {"q": "Si en una prueba t para muestras independientes $n=200$, la prueba de normalidad ideal es:", "options": ["Shapiro-W", "Prueba de t", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Para muestras grandes ($n > 50$) se usa otro autor.", "explanation": "Para muestras grandes se utiliza Kolmogorov-Smirnov (con corrección de Lilliefors)."}, {"q": "Al comparar hombres y mujeres en ansiedad, la VI es 'ansiedad' y la VD es 'sexo':", "options": ["Es correcto", "Es VD cont", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Identifica qué variable define los grupos y cuál se mide.", "explanation": "Es al revés: la VI es 'sexo' (grupos) y la VD es 'ansiedad' (puntuación)."}, {"q": "Si calculamos $gl = n - 1$ para una t de muestras independientes, el resultado es:", "options": ["Correcto  ", "Usa Welch ", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Esa fórmula corresponde a la prueba t de una sola muestra.", "explanation": "En muestras independientes el cálculo correcto es $$n_A + n_B - 2$$."}, {"q": "La d de Cohen puede tomar valores superiores a $1.0$:", "options": ["Es imposib.", "Solo al 5%", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Mide distancias en desviaciones típicas.", "explanation": "La afirmación 'Ninguna es correcta' es falsa porque la d de Cohen SÍ puede ser mayor que 1.0 (efectos muy grandes)."}];
+        const jsonLaboratorio = [{"id": 1, "title": "Eficacia de la Terapia Cognitivo-Conductual (TCC)", "context": "Un investigador compara la reducción del malestar psicológico entre un grupo TCC ($n_A = 20$, $\\overline{X}_A = 25$, $S_A^2 = 10$) y un grupo de control ($n_B = 20$, $\\overline{X}_B = 32$, $S_B^2 = 10$). Utiliza la fórmula: $t = \\frac{\\overline{X}_A - \\overline{X}_B}{\\sqrt{\\frac{S_A^2}{n_A} + \\frac{S_B^2}{n_B}}}$.", "parts": [{"id": "p1a", "label": "a)", "question": "Calcule la diferencia absoluta entre las medias de los grupos.", "correctValue": 7, "tolerance": 0, "explanation": "$$|\\overline{X}_A - \\overline{X}_B| = |25 - 32| = 7$$"}, {"id": "p1b", "label": "b)", "question": "Calcule el error estándar de la diferencia (el denominador de la fórmula t).", "correctValue": 1, "tolerance": 0.01, "explanation": "$$EE = \\sqrt{\\frac{10}{20} + \\frac{10}{20}} = \\sqrt{0.5 + 0.5} = 1$$"}, {"id": "p1c", "label": "c)", "question": "Calcule el valor absoluto del estadístico t.", "correctValue": 7, "tolerance": 0.1, "explanation": "$$t = \\frac{7}{1} = 7$$"}, {"id": "p1d", "label": "d)", "question": "Calcule los grados de libertad ($gl = n_A + n_B - 2$).", "correctValue": 38, "tolerance": 0, "explanation": "$$gl = 20 + 20 - 2 = 38$$"}]}, {"id": 2, "title": "Impacto del Sueño en el Rendimiento", "context": "Se estudia el rendimiento académico en dos grupos: Sueño Regular ($n_A = 15$, $\\overline{X}_A = 8.5$, $S_A^2 = 1.2$) y Sueño Irregular ($n_B = 15$, $\\overline{X}_B = 6.5$, $S_B^2 = 1.8$).", "parts": [{"id": "p2a", "label": "a)", "question": "Calcule la diferencia entre las medias de rendimiento.", "correctValue": 2, "tolerance": 0, "explanation": "$$\\overline{X}_A - \\overline{X}_B = 8.5 - 6.5 = 2.0$$"}, {"id": "p2b", "label": "b)", "question": "Calcule el error estándar de la diferencia.", "correctValue": 0.447, "tolerance": 0.01, "explanation": "$$EE = \\sqrt{\\frac{1.2}{15} + \\frac{1.8}{15}} = \\sqrt{0.08 + 0.12} = \\sqrt{0.2} \\approx 0.447$$"}, {"id": "p2c", "label": "c)", "question": "Calcule el estadístico t resultante.", "correctValue": 4.47, "tolerance": 0.1, "explanation": "$$t = \\frac{2}{0.447} \\approx 4.47$$"}, {"id": "p2d", "label": "d)", "question": "Calcule el tamaño del efecto usando la d de Cohen ($d = \\frac{\\overline{X}_A - \\overline{X}_B}{\\sqrt{\\frac{S_A^2 + S_B^2}{2}}}$).", "correctValue": 1.63, "tolerance": 0.1, "explanation": "$$d = \\frac{2}{\\sqrt{\\frac{1.2 + 1.8}{2}}} = \\frac{2}{\\sqrt{1.5}} \\approx 1.63$$"}]}, {"id": 3, "title": "Tiempo de Reacción: Cafeína vs Placebo", "context": "Se mide el tiempo de reacción (ms) en dos grupos independientes: Cafeína ($n_A = 25$, $\\overline{X}_A = 450$, $S_A^2 = 625$) y Placebo ($n_B = 25$, $\\overline{X}_B = 500$, $S_B^2 = 625$).", "parts": [{"id": "p3a", "label": "a)", "question": "Determine la diferencia de medias (valor absoluto).", "correctValue": 50, "tolerance": 0, "explanation": "$$|450 - 500| = 50$$"}, {"id": "p3b", "label": "b)", "question": "Determine el error estándar combinado.", "correctValue": 7.07, "tolerance": 0.1, "explanation": "$$EE = \\sqrt{\\frac{625}{25} + \\frac{625}{25}} = \\sqrt{25 + 25} = \\sqrt{50} \\approx 7.07$$"}, {"id": "p3c", "label": "c)", "question": "Calcule el valor del estadístico t.", "correctValue": 7.07, "tolerance": 0.1, "explanation": "$$t = \\frac{50}{7.07} \\approx 7.07$$"}, {"id": "p3d", "label": "d)", "question": "Indique los grados de libertad totales para esta prueba.", "correctValue": 48, "tolerance": 0, "explanation": "$$gl = 25 + 25 - 2 = 48$$"}]}, {"id": 4, "title": "Comparativa de Métodos de Relajación", "context": "Grupo A (Mindfulness, $n=10$, $\\overline{X}=12$, $S^2=4$) vs Grupo B (Yoga, $n=10$, $\\overline{X}=15$, $S^2=6$). Se evalúa el nivel de cortisol final.", "parts": [{"id": "p4a", "label": "a)", "question": "Calcule la varianza del grupo A dividida por su tamaño muestral.", "correctValue": 0.4, "tolerance": 0, "explanation": "$$\\frac{4}{10} = 0.4$$"}, {"id": "p4b", "label": "b)", "question": "Calcule el denominador de la prueba t (error estándar).", "correctValue": 1, "tolerance": 0.05, "explanation": "$$EE = \\sqrt{\\frac{4}{10} + \\frac{6}{10}} = \\sqrt{1.0} = 1.0$$"}, {"id": "p4c", "label": "c)", "question": "Calcule el valor absoluto de t para esta muestra.", "correctValue": 3, "tolerance": 0, "explanation": "$$t = \\frac{|12 - 15|}{1} = 3$$"}, {"id": "p4d", "label": "d)", "question": "Calcule el tamaño del efecto d de Cohen.", "correctValue": 1.34, "tolerance": 0.05, "explanation": "$$d = \\frac{3}{\\sqrt{\\frac{4 + 6}{2}}} = \\frac{3}{\\sqrt{5}} \\approx 1.34$$"}]}, {"id": 5, "title": "Evaluación de un Programa de Entrenamiento", "context": "Atletas entrenados con el Método Nuevo ($n=50$, $\\overline{X}=10.2s$, $S^2=0.04$) frente al Método Tradicional ($n=50$, $\\overline{X}=10.5s$, $S^2=0.05$).", "parts": [{"id": "p5a", "label": "a)", "question": "Diferencia de medias observada (Tradicional - Nuevo).", "correctValue": 0.3, "tolerance": 0, "explanation": "$$10.5 - 10.2 = 0.3$$"}, {"id": "p5b", "label": "b)", "question": "Cálculo del error estándar de la diferencia.", "correctValue": 0.042, "tolerance": 0.005, "explanation": "$$EE = \\sqrt{\\frac{0.04}{50} + \\frac{0.05}{50}} = \\sqrt{0.0018} \\approx 0.0424$$"}, {"id": "p5c", "label": "c)", "question": "Valor del estadístico t obtenido.", "correctValue": 7.07, "tolerance": 0.1, "explanation": "$$t = \\frac{0.3}{0.0424} \\approx 7.07$$"}, {"id": "p5d", "label": "d)", "question": "Determine la desviación estándar combinada (raíz de la varianza promedio).", "correctValue": 0.212, "tolerance": 0.01, "explanation": "$$S_{pooled} = \\sqrt{\\frac{0.04 + 0.05}{2}} = \\sqrt{0.045} \\approx 0.212$$"}]}, {"id": 6, "title": "Ansiedad Social en Adolescentes", "context": "Se comparan niveles de ansiedad en hombres ($n=32$, $\\overline{X}=45$, $S^2=64$) y mujeres ($n=32$, $\\overline{X}=52$, $S^2=64$).", "parts": [{"id": "p6a", "label": "a)", "question": "Calcule la diferencia entre grupos.", "correctValue": 7, "tolerance": 0, "explanation": "$$|45 - 52| = 7$$"}, {"id": "p6b", "label": "b)", "question": "Calcule el error estándar.", "correctValue": 2, "tolerance": 0, "explanation": "$$EE = \\sqrt{\\frac{64}{32} + \\frac{64}{32}} = \\sqrt{2 + 2} = 2$$"}, {"id": "p6c", "label": "c)", "question": "Valor del estadístico t.", "correctValue": 3.5, "tolerance": 0, "explanation": "$$t = \\frac{7}{2} = 3.5$$"}, {"id": "p6d", "label": "d)", "question": "Calcule la d de Cohen para cuantificar la magnitud del efecto.", "correctValue": 0.875, "tolerance": 0.01, "explanation": "$$d = \\frac{7}{\\sqrt{\\frac{64 + 64}{2}}} = \\frac{7}{8} = 0.875$$"}]}, {"id": 7, "title": "Memoria de Trabajo y Edad", "context": "Jóvenes ($n=20$, $\\overline{X}=18$, $S^2=12$) vs. Adultos Mayores ($n=20$, $\\overline{X}=14$, $S^2=18$).", "parts": [{"id": "p7a", "label": "a)", "question": "Diferencia de medias.", "correctValue": 4, "tolerance": 0, "explanation": "$$18 - 14 = 4$$"}, {"id": "p7b", "label": "b)", "question": "Error estándar de la diferencia.", "correctValue": 1.225, "tolerance": 0.01, "explanation": "$$EE = \\sqrt{\\frac{12}{20} + \\frac{18}{20}} = \\sqrt{0.6 + 0.9} = \\sqrt{1.5} \\approx 1.2247$$"}, {"id": "p7c", "label": "c)", "question": "Valor t calculado.", "correctValue": 3.27, "tolerance": 0.05, "explanation": "$$t = \\frac{4}{1.2247} \\approx 3.266$$"}, {"id": "p7d", "label": "d)", "question": "Grados de libertad.", "correctValue": 38, "tolerance": 0, "explanation": "$$20 + 20 - 2 = 38$$"}]}, {"id": 8, "title": "Efecto de la Dieta en el Colesterol", "context": "Dieta A ($n=12$, $\\overline{X}=190$, $S^2=144$) vs. Dieta B ($n=12$, $\\overline{X}=210$, $S^2=256$).", "parts": [{"id": "p8a", "label": "a)", "question": "Calcule el error estándar del primer grupo ($S_A^2 / n_A$).", "correctValue": 12, "tolerance": 0, "explanation": "$$144 / 12 = 12$$"}, {"id": "p8b", "label": "b)", "question": "Calcule el error estándar total del contraste.", "correctValue": 5.77, "tolerance": 0.1, "explanation": "$$EE = \\sqrt{12 + (256/12)} = \\sqrt{12 + 21.33} = \\sqrt{33.33} \\approx 5.77$$"}, {"id": "p8c", "label": "c)", "question": "Estadístico t absoluto.", "correctValue": 3.46, "tolerance": 0.1, "explanation": "$$t = \\frac{20}{5.77} \\approx 3.46$$"}, {"id": "p8d", "label": "d)", "question": "Cálculo de la d de Cohen.", "correctValue": 1.41, "tolerance": 0.1, "explanation": "$$d = \\frac{20}{\\sqrt{\\frac{144 + 256}{2}}} = \\frac{20}{\\sqrt{200}} \\approx 1.414$$"}]}, {"id": 9, "title": "Tiempos de Resolución de Puzles", "context": "Niños ($n=10$, $\\overline{X}=120s$, $S^2=400$) y Niñas ($n=10$, $\\overline{X}=110s$, $S^2=400$).", "parts": [{"id": "p9a", "label": "a)", "question": "Calcule la diferencia de medias.", "correctValue": 10, "tolerance": 0, "explanation": "$$120 - 110 = 10$$"}, {"id": "p9b", "label": "b)", "question": "Error estándar de la diferencia.", "correctValue": 8.94, "tolerance": 0.1, "explanation": "$$EE = \\sqrt{\\frac{400}{10} + \\frac{400}{10}} = \\sqrt{80} \\approx 8.944$$"}, {"id": "p9c", "label": "c)", "question": "Estadístico t.", "correctValue": 1.12, "tolerance": 0.05, "explanation": "$$t = \\frac{10}{8.944} \\approx 1.118$$"}, {"id": "p9d", "label": "d)", "question": "Determine si el efecto es trivial, pequeño, moderado o grande según la d de Cohen. Calcule el valor de d.", "correctValue": 0.5, "tolerance": 0, "explanation": "$$d = \\frac{10}{\\sqrt{400}} = \\frac{10}{20} = 0.5$$"}]}, {"id": 10, "title": "Satisfacción Laboral por Turno", "context": "Turno Mañana ($n=40$, $\\overline{X}=7.2$, $S^2=1.5$) vs. Turno Noche ($n=40$, $\\overline{X}=6.1$, $S^2=1.8$).", "parts": [{"id": "p10a", "label": "a)", "question": "Calcule la diferencia de medias.", "correctValue": 1.1, "tolerance": 0, "explanation": "$$7.2 - 6.1 = 1.1$$"}, {"id": "p10b", "label": "b)", "question": "Error estándar de la diferencia.", "correctValue": 0.287, "tolerance": 0.01, "explanation": "$$EE = \\sqrt{\\frac{1.5}{40} + \\frac{1.8}{40}} = \\sqrt{0.0375 + 0.045} = \\sqrt{0.0825} \\approx 0.2872$$"}, {"id": "p10c", "label": "c)", "question": "Estadístico t.", "correctValue": 3.83, "tolerance": 0.05, "explanation": "$$t = \\frac{1.1}{0.2872} \\approx 3.83$$"}, {"id": "p10d", "label": "d)", "question": "Grados de libertad.", "correctValue": 78, "tolerance": 0, "explanation": "$$40 + 40 - 2 = 78$$"}]}, {"id": 11, "title": "Productividad con Música", "context": "Grupo con Música ($n=30$, $\\overline{X}=85$, $S^2=225$) y Sin Música ($n=30$, $\\overline{X}=75$, $S^2=225$).", "parts": [{"id": "p11a", "label": "a)", "question": "Diferencia de productividad.", "correctValue": 10, "tolerance": 0, "explanation": "$$85 - 75 = 10$$"}, {"id": "p11b", "label": "b)", "question": "Error estándar del contraste.", "correctValue": 3.87, "tolerance": 0.1, "explanation": "$$EE = \\sqrt{\\frac{225}{30} + \\frac{225}{30}} = \\sqrt{15} \\approx 3.873$$"}, {"id": "p11c", "label": "c)", "question": "Valor t.", "correctValue": 2.58, "tolerance": 0.05, "explanation": "$$t = \\frac{10}{3.873} \\approx 2.58$$"}, {"id": "p11d", "label": "d)", "question": "Tamaño del efecto d de Cohen.", "correctValue": 0.67, "tolerance": 0.05, "explanation": "$$d = \\frac{10}{\\sqrt{225}} = 10/15 \\approx 0.667$$"}]}, {"id": 12, "title": "Niveles de Estrés: Rural vs Urbano", "context": "Habitantes Rurales ($n=50$, $\\overline{X}=40$, $S^2=100$) vs Urbanos ($n=50$, $\\overline{X}=55$, $S^2=225$).", "parts": [{"id": "p12a", "label": "a)", "question": "Varianza promedio ponderada (suponiendo $n$ iguales).", "correctValue": 162.5, "tolerance": 0, "explanation": "$$(100 + 225) / 2 = 162.5$$"}, {"id": "p12b", "label": "b)", "question": "Error estándar de la diferencia.", "correctValue": 2.55, "tolerance": 0.1, "explanation": "$$EE = \\sqrt{\\frac{100}{50} + \\frac{225}{50}} = \\sqrt{2 + 4.5} = \\sqrt{6.5} \\approx 2.55$$"}, {"id": "p12c", "label": "c)", "question": "Estadístico t absoluto.", "correctValue": 5.88, "tolerance": 0.1, "explanation": "$$t = 15 / 2.55 \\approx 5.88$$"}, {"id": "p12d", "label": "d)", "question": "d de Cohen.", "correctValue": 1.18, "tolerance": 0.05, "explanation": "$$d = 15 / \\sqrt{162.5} \\approx 1.176$$"}]}, {"id": 13, "title": "Aprendizaje de Idiomas por Método", "context": "Inmersión ($n=16$, $\\overline{X}=78$, $S^2=64$) vs Tradicional ($n=16$, $\\overline{X}=65$, $S^2=64$).", "parts": [{"id": "p13a", "label": "a)", "question": "Diferencia de puntuaciones.", "correctValue": 13, "tolerance": 0, "explanation": "$$78 - 65 = 13$$"}, {"id": "p13b", "label": "b)", "question": "Error estándar del contraste.", "correctValue": 2.83, "tolerance": 0.1, "explanation": "$$EE = \\sqrt{\\frac{64}{16} + \\frac{64}{16}} = \\sqrt{4+4} = \\sqrt{8} \\approx 2.828$$"}, {"id": "p13c", "label": "c)", "question": "Valor t.", "correctValue": 4.6, "tolerance": 0.1, "explanation": "$$t = 13 / 2.828 \\approx 4.596$$"}, {"id": "p13d", "label": "d)", "question": "Grados de libertad.", "correctValue": 30, "tolerance": 0, "explanation": "$$16 + 16 - 2 = 30$$"}]}, {"id": 14, "title": "Uso de Redes Sociales y Autoestima", "context": "Uso Alto ($n=100$, $\\overline{X}=30$, $S^2=100$) vs Uso Bajo ($n=100$, $\\overline{X}=35$, $S^2=100$).", "parts": [{"id": "p14a", "label": "a)", "question": "Error estándar de la diferencia.", "correctValue": 1.414, "tolerance": 0.01, "explanation": "$$EE = \\sqrt{100/100 + 100/100} = \\sqrt{2} \\approx 1.414$$"}, {"id": "p14b", "label": "b)", "question": "Valor t.", "correctValue": 3.535, "tolerance": 0.05, "explanation": "$$t = 5 / 1.414 \\approx 3.535$$"}, {"id": "p14c", "label": "c)", "question": "Grados de libertad.", "correctValue": 198, "tolerance": 0, "explanation": "$$100 + 100 - 2 = 198$$"}, {"id": "p14d", "label": "d)", "question": "d de Cohen.", "correctValue": 0.5, "tolerance": 0, "explanation": "$$d = 5 / \\sqrt{100} = 5/10 = 0.5$$"}]}, {"id": 15, "title": "Tiempo de Lectura: Papel vs Digital", "context": "Papel ($n=20$, $\\overline{X}=15min$, $S^2=9$) y Digital ($n=20$, $\\overline{X}=18min$, $S^2=16$).", "parts": [{"id": "p15a", "label": "a)", "question": "Diferencia de medias.", "correctValue": 3, "tolerance": 0, "explanation": "$$18 - 15 = 3$$"}, {"id": "p15b", "label": "b)", "question": "Error estándar de la diferencia.", "correctValue": 1.118, "tolerance": 0.01, "explanation": "$$EE = \\sqrt{\\frac{9}{20} + \\frac{16}{20}} = \\sqrt{1.25} \\approx 1.118$$"}, {"id": "p15c", "label": "c)", "question": "Valor t absoluto.", "correctValue": 2.68, "tolerance": 0.05, "explanation": "$$t = 3 / 1.118 \\approx 2.683$$"}, {"id": "p15d", "label": "d)", "question": "Varianza combinada ($S^2_{pool} = (S_A^2 + S_B^2)/2$).", "correctValue": 12.5, "tolerance": 0, "explanation": "$$(9 + 16) / 2 = 12.5$$"}]}, {"id": 16, "title": "Efecto de la Vitamina C en Resfriados", "context": "Vitamina C ($n=30$, $\\overline{X}=4.5$ días, $S^2=2.25$) vs. Placebo ($n=30$, $\\overline{X}=6.0$ días, $S^2=2.25$).", "parts": [{"id": "p16a", "label": "a)", "question": "Error estándar total.", "correctValue": 0.387, "tolerance": 0.01, "explanation": "$$EE = \\sqrt{\\frac{2.25}{30} + \\frac{2.25}{30}} = \\sqrt{0.15} \\approx 0.387$$"}, {"id": "p16b", "label": "b)", "question": "Estadístico t absoluto.", "correctValue": 3.87, "tolerance": 0.1, "explanation": "$$t = 1.5 / 0.387 \\approx 3.875$$"}, {"id": "p16c", "label": "c)", "question": "Cálculo de d de Cohen.", "correctValue": 1, "tolerance": 0, "explanation": "$$d = 1.5 / \\sqrt{2.25} = 1.5/1.5 = 1.0$$"}, {"id": "p16d", "label": "d)", "question": "Grados de libertad.", "correctValue": 58, "tolerance": 0, "explanation": "$$30 + 30 - 2 = 58$$"}]}, {"id": 17, "title": "Fuerza Muscular por Sexo", "context": "Hombres ($n=12$, $\\overline{X}=50kg$, $S^2=144$) vs Mujeres ($n=12$, $\\overline{X}=35kg$, $S^2=144$).", "parts": [{"id": "p17a", "label": "a)", "question": "Diferencia de fuerza.", "correctValue": 15, "tolerance": 0, "explanation": "$$50 - 35 = 15$$"}, {"id": "p17b", "label": "b)", "question": "Error estándar de la diferencia.", "correctValue": 4.899, "tolerance": 0.05, "explanation": "$$EE = \\sqrt{\\frac{144}{12} + \\frac{144}{12}} = \\sqrt{24} \\approx 4.899$$"}, {"id": "p17c", "label": "c)", "question": "Estadístico t.", "correctValue": 3.06, "tolerance": 0.05, "explanation": "$$t = 15 / 4.899 \\approx 3.061$$"}, {"id": "p17d", "label": "d)", "question": "Tamaño del efecto d de Cohen.", "correctValue": 1.25, "tolerance": 0, "explanation": "$$d = 15 / \\sqrt{144} = 15/12 = 1.25$$"}]}, {"id": 18, "title": "Rendimiento en Videojuegos", "context": "Jugadores Expertos ($n=10$, $\\overline{X}=9500$, $S^2=1000000$) vs Novatos ($n=10$, $\\overline{X}=6500$, $S^2=1000000$).", "parts": [{"id": "p18a", "label": "a)", "question": "Diferencia de puntuación.", "correctValue": 3000, "tolerance": 0, "explanation": "$$9500 - 6500 = 3000$$"}, {"id": "p18b", "label": "b)", "question": "Error estándar de la diferencia.", "correctValue": 447.2, "tolerance": 1, "explanation": "$$EE = \\sqrt{\\frac{10^6}{10} + \\frac{10^6}{10}} = \\sqrt{200000} \\approx 447.21$$"}, {"id": "p18c", "label": "c)", "question": "Estadístico t.", "correctValue": 6.71, "tolerance": 0.1, "explanation": "$$t = 3000 / 447.21 \\approx 6.708$$"}, {"id": "p18d", "label": "d)", "question": "d de Cohen.", "correctValue": 3, "tolerance": 0, "explanation": "$$d = 3000 / \\sqrt{10^6} = 3000/1000 = 3$$"}]}, {"id": 19, "title": "Calidad del Sueño y Ejercicio", "context": "Grupo Ejercicio ($n=40$, $\\overline{X}=8.2$, $S^2=0.64$) y Sedentario ($n=40$, $\\overline{X}=6.8$, $S^2=1.0$).", "parts": [{"id": "p19a", "label": "a)", "question": "Error estándar de la diferencia.", "correctValue": 0.202, "tolerance": 0.005, "explanation": "$$EE = \\sqrt{\\frac{0.64}{40} + \\frac{1.0}{40}} = \\sqrt{0.041} \\approx 0.2025$$"}, {"id": "p19b", "label": "b)", "question": "Valor t absoluto.", "correctValue": 6.91, "tolerance": 0.05, "explanation": "$$t = 1.4 / 0.2025 \\approx 6.913$$"}, {"id": "p19c", "label": "c)", "question": "Grados de libertad.", "correctValue": 78, "tolerance": 0, "explanation": "$$40 + 40 - 2 = 78$$"}, {"id": "p19d", "label": "d)", "question": "d de Cohen.", "correctValue": 1.55, "tolerance": 0.05, "explanation": "$$d = 1.4 / \\sqrt{(0.64 + 1.0)/2} = 1.4 / \\sqrt{0.82} \\approx 1.546$$"}]}, {"id": 20, "title": "Impacto de la Realidad Virtual en el Aprendizaje", "context": "Grupo VR ($n=15$, $\\overline{X}=92$, $S^2=25$) y Grupo Manual ($n=15$, $\\overline{X}=85$, $S^2=49$).", "parts": [{"id": "p20a", "label": "a)", "question": "Diferencia de aprendizaje.", "correctValue": 7, "tolerance": 0, "explanation": "$$92 - 85 = 7$$"}, {"id": "p20b", "label": "b)", "question": "Error estándar de la diferencia.", "correctValue": 2.22, "tolerance": 0.05, "explanation": "$$EE = \\sqrt{\\frac{25}{15} + \\frac{49}{15}} = \\sqrt{\\frac{74}{15}} \\approx 2.221$$"}, {"id": "p20c", "label": "c)", "question": "Estadístico t.", "correctValue": 3.15, "tolerance": 0.05, "explanation": "$$t = 7 / 2.221 \\approx 3.151$$"}, {"id": "p20d", "label": "d)", "question": "d de Cohen.", "correctValue": 1.15, "tolerance": 0.05, "explanation": "$$d = 7 / \\sqrt{(25 + 49)/2} = 7 / \\sqrt{37} \\approx 1.151$$"}]}];
+        const jsonFormulas = [{"name": "Estadístico t para muestras independientes", "tex": "$$t=\\frac{\\overline{X}_{A}-\\overline{X}_{B}}{\\sqrt{\\frac{S_{A}^{2}}{n_{A}}+\\frac{S_{B}^{2}}{n_{B}}}}$$"}, {"name": "Grados de libertad (varianzas iguales)", "tex": "$$gl=n_{A}+n_{B}-2$$"}, {"name": "Tamaño del efecto (d de Cohen)", "tex": "$$d=\\frac{\\overline{X}_{A}-\\overline{X}_{B}}{\\sqrt{\\frac{S_{A}^{2}+S_{B}^{2}}{2}}}$$"}, {"name": "Hipótesis Nula (Formulación matemática)", "tex": "$$H_{0}: \\overline{X}_{A} = \\overline{X}_{B}$$"}, {"name": "Hipótesis Alternativa (Formulación matemática)", "tex": "$$H_{1}: \\overline{X}_{A} \\neq \\overline{X}_{B}$$"}];
+
+        // --- TRANSFORMACIÓN DE DATOS PARA LA APP ---
+        const appDB = {
+            quiz: [...jsonTestA, ...jsonTestB],
+            laboratorio: [...jsonLaboratorio],
+            formulas: jsonFormulas.map(f => ({
+                cat: "Fórmula",
+                q: f.name,
+                a: f.tex
+            }))
+        };
+
+        // --- LÓGICA DE LA APLICACIÓN ---
+        const app = {
+            DB: appDB,
+            state: {
+                currentTool: null,
+                index: 0,
+                isFlipped: false,
+                activeData: [],
+                failedQuestions: [],
+                score: 0,
+                totalQuestions: 0
+            },
+
+            // Renderiza MathJax si está disponible
+            renderMath: function() {
+                if (window.MathJax && window.MathJax.typesetPromise) {
+                    MathJax.typesetPromise();
+                }
+            },
+
+            showView: function (view) {
+                document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+                const target = document.getElementById(`view-${view}`);
+                if (target) target.classList.remove('hidden');
+
+                const menuBtn = document.getElementById('btn-global-menu');
+                const counterBox = document.getElementById('nav-counter');
+                
+                if (view === 'home') {
+                    menuBtn.classList.remove('flex');
+                    menuBtn.classList.add('hidden');
+                    counterBox.classList.remove('flex');
+                    counterBox.classList.add('hidden');
+                } else {
+                    menuBtn.classList.remove('hidden');
+                    menuBtn.classList.add('flex');
+                    
+                    if (view === 'formulas') {
+                        counterBox.classList.remove('flex');
+                        counterBox.classList.add('hidden');
+                    } else {
+                        counterBox.classList.remove('hidden');
+                        counterBox.classList.add('flex');
+                    }
+                }
+            },
+
+            startTool: function (tool, customData = null) {
+                const baseData = this.DB[tool] || [];
+                const dataToUse = customData ? [...customData] : JSON.parse(JSON.stringify(baseData));
+
+                if (dataToUse.length === 0) return;
+
+                this.state.currentTool = tool;
+                this.state.index = 0;
+                this.state.score = 0;
+                this.state.failedQuestions = [];
+                this.state.activeData = dataToUse;
+
+                if (tool === 'laboratorio') {
+                    this.state.totalQuestions = dataToUse.reduce((acc, curr) => acc + curr.parts.length, 0);
+                } else {
+                    this.state.totalQuestions = dataToUse.length;
+                }
+
+                if (!customData && tool !== 'formulas') {
+                    this.shuffleArray(this.state.activeData);
+                }
+
+                this.updateCounter();
+                this.showView(tool);
+
+                if (tool === 'quiz') this.renderQuiz();
+                if (tool === 'laboratorio') this.renderLaboratorio();
+                if (tool === 'formulas') this.renderFormulas();
+            },
+
+            updateCounter: function () {
+                const counter = document.getElementById('global-counter');
+                if (counter && this.state.activeData.length > 0) {
+                    counter.innerText = `${this.state.index + 1}/${this.state.activeData.length}`;
+                }
+            },
+
+            shuffleArray: function (arr) {
+                for (let i = arr.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                }
+            },
+
+            finishSession: function() {
+                this.showResults();
+            },
+
+            // --- LÓGICA QUIZ ---
+            renderQuiz: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('quiz-question').innerHTML = data.q;
+                document.getElementById('quiz-feedback').classList.add('hidden');
+                document.getElementById('quiz-hint-box').classList.add('hidden');
+                
+                const container = document.getElementById('quiz-options');
+                container.innerHTML = '';
+                
+                data.options.forEach((opt, i) => {
+                    const btn = document.createElement('button');
+                    btn.className = "option-btn w-full text-left p-4 rounded-xl bg-white flex items-center gap-4 font-semibold text-slate-700 shadow-sm";
+                    btn.innerHTML = `<span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-xs text-slate-400 font-bold shrink-0">${String.fromCharCode(65 + i)}</span> <div class="math-content">${opt}</div>`;
+                    btn.onclick = () => this.quizCheck(i, btn);
+                    container.appendChild(btn);
+                });
+
+                this.renderMath();
+            },
+
+            quizToggleHint: function () {
+                const box = document.getElementById('quiz-hint-box');
+                const data = this.state.activeData[this.state.index];
+                if (data && data.hint) {
+                    box.innerHTML = `<span class="font-bold">Pista:</span> ${data.hint}`;
+                    box.classList.toggle('hidden');
+                    this.renderMath();
+                }
+            },
+
+            quizCheck: function (idx, clickedBtn) {
+                const data = this.state.activeData[this.state.index];
+                const btns = document.getElementById('quiz-options').querySelectorAll('button');
+                btns.forEach(b => b.disabled = true);
+                
+                const feedback = document.getElementById('quiz-feedback');
+                feedback.classList.remove('hidden');
+                
+                if (idx === data.correct) {
+                    this.state.score++;
+                    clickedBtn.classList.add('bg-emerald-50', 'border-emerald-500', 'text-emerald-700');
+                    document.getElementById('quiz-feedback-title').innerText = "¡Correcto!";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-emerald-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    this.state.failedQuestions.push(data);
+                    clickedBtn.classList.add('bg-red-50', 'border-red-500', 'text-red-700');
+                    btns[data.correct].classList.add('bg-emerald-50', 'border-emerald-500', 'ring-2', 'ring-emerald-200');
+                    document.getElementById('quiz-feedback-title').innerText = "Incorrecto";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-red-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+                
+                document.getElementById('quiz-explanation').innerHTML = data.explanation;
+                this.renderMath();
+            },
+
+            quizNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderQuiz();
+                    this.updateCounter();
+                } else this.showResults();
+            },
+
+            // --- LÓGICA LABORATORIO ---
+            renderLaboratorio: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('lab-problem-number').innerText = this.state.index + 1;
+                document.getElementById('lab-main-title').innerText = data.title;
+                document.getElementById('lab-context-box').innerHTML = data.context;
+                
+                const container = document.getElementById('lab-parts-container');
+                container.innerHTML = '';
+                
+                data.parts.forEach((part, i) => {
+                    const partId = `lab-part-${this.state.index}-${i}`;
+                    const letter = part.label.replace(')', '').toLowerCase();
+                    
+                    const html = `
+                        <div class="p-6 md:p-8 border-b border-slate-100 last:border-0">
+                            <div class="flex gap-4 items-start mb-6">
+                                <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex justify-center items-center font-bold shrink-0 mt-1">${letter}</div>
+                                <div class="text-slate-800 font-semibold text-lg math-content pt-1">${part.question}</div>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-4 items-center pl-0 md:pl-12">
+                                <input type="text" id="input-${partId}" class="w-full md:w-64 p-3 rounded-xl border-2 border-slate-200 outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-50 transition text-lg font-mono shadow-sm" placeholder="Respuesta...">
+                                <button id="btn-${partId}" onclick="app.labCheckPart(${this.state.index}, ${i})" class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-xl font-bold uppercase tracking-wider text-sm transition shadow-md w-full md:w-auto">Verificar</button>
+                            </div>
+                            
+                            <div id="feedback-${partId}" class="hidden pl-0 md:pl-12 mt-4 animate-fadeIn">
+                                <div id="feedback-box-${partId}" class="flex items-start gap-3 p-4 rounded-xl">
+                                    <div id="icon-${partId}" class="text-2xl shrink-0 mt-1"></div>
+                                    <div class="w-full">
+                                        <h4 id="title-${partId}" class="font-bold mb-2"></h4>
+                                        <div class="text-sm font-mono bg-slate-800 text-slate-200 p-4 rounded-lg overflow-x-auto math-content shadow-inner border border-slate-700">
+                                            <span class="text-slate-400 text-[10px] uppercase font-sans font-bold tracking-widest block mb-2">Desarrollo Matemático</span>
+                                            ${part.explanation}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.insertAdjacentHTML('beforeend', html);
+                });
+                
+                this.renderMath();
+            },
+
+            labCheckPart: function (problemIdx, partIdx) {
+                const problem = this.state.activeData[problemIdx];
+                const part = problem.parts[partIdx];
+                const partId = `lab-part-${problemIdx}-${partIdx}`;
+
+                const input = document.getElementById(`input-${partId}`);
+                const btn = document.getElementById(`btn-${partId}`);
+                const feedback = document.getElementById(`feedback-${partId}`);
+                const feedbackBox = document.getElementById(`feedback-box-${partId}`);
+                const icon = document.getElementById(`icon-${partId}`);
+                const title = document.getElementById(`title-${partId}`);
+
+                const rawVal = input.value.trim().replace(',', '.');
+                const userVal = parseFloat(rawVal);
+                
+                if (rawVal === "" || isNaN(userVal)) {
+                    input.classList.add('ring-2', 'ring-red-400');
+                    setTimeout(() => input.classList.remove('ring-2', 'ring-red-400'), 500);
+                    return; 
+                }
+
+                input.disabled = true;
+                btn.disabled = true;
+                btn.classList.remove('hover:bg-indigo-700', 'bg-indigo-600');
+                btn.classList.add('bg-slate-300', 'text-slate-500', 'cursor-not-allowed', 'shadow-none');
+                
+                feedback.classList.remove('hidden');
+
+                const diff = Math.abs(userVal - part.correctValue);
+                const isCorrect = diff <= part.tolerance;
+
+                if (isCorrect) {
+                    this.state.score++;
+                    input.classList.add('border-emerald-400', 'bg-emerald-50', 'text-emerald-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-emerald-50 border border-emerald-200";
+                    title.innerText = "¡Cálculo Exacto!";
+                    title.className = "font-black text-emerald-600";
+                    icon.innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    input.classList.add('border-red-400', 'bg-red-50', 'text-red-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-red-50 border border-red-200";
+                    title.innerText = `Cálculo Incorrecto. Respuesta esperada: ${part.correctValue} (±${part.tolerance})`;
+                    title.className = "font-black text-red-600";
+                    icon.innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+
+                this.renderMath();
+            },
+
+            labNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderLaboratorio();
+                    this.updateCounter();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else this.showResults();
+            },
+
+            // --- LÓGICA FÓRMULAS ---
+            renderFormulas: function () {
+                const grid = document.getElementById('formulas-grid');
+                grid.innerHTML = '';
+                
+                this.state.activeData.forEach(data => {
+                    const card = document.createElement('div');
+                    card.className = "glass-card p-6 rounded-2xl border-t-4 border-indigo-500 hover:shadow-lg transition-shadow bg-white flex flex-col justify-between items-center text-center h-full";
+                    card.innerHTML = `
+                        <span class="text-xs font-bold text-indigo-500 uppercase tracking-widest mb-4 w-full border-b border-slate-100 pb-2">${data.q}</span>
+                        <div class="text-2xl font-medium text-slate-800 math-content w-full overflow-x-auto py-4 flex-grow flex items-center justify-center">${data.a}</div>
+                    `;
+                    grid.appendChild(card);
+                });
+
+                this.renderMath();
+            },
+
+            // --- RESULTADOS GLOBALES ---
+            showResults: function () {
+                this.showView('results');
+                const resultText = document.getElementById('result-text');
+                
+                if (this.state.currentTool === 'flashcards' || this.state.currentTool === 'formulas') {
+                    resultText.innerHTML = `Has repasado <strong>${this.state.activeData.length}</strong> fórmulas.`;
+                } else {
+                    resultText.innerHTML = `Has acertado <strong>${this.state.score}</strong> de <strong>${this.state.totalQuestions}</strong>.`;
+                }
+
+                const failBtn = document.getElementById('btn-retry-errors');
+                if (this.state.failedQuestions.length > 0 && this.state.currentTool !== 'formulas') {
+                    failBtn.classList.remove('hidden');
+                    document.getElementById('fail-count').innerText = this.state.failedQuestions.length;
+                } else {
+                    failBtn.classList.add('hidden');
+                }
+            },
+
+            retryErrors: function () { 
+                this.startTool(this.state.currentTool, this.state.failedQuestions); 
+            }
+        };
+
+        // Iniciar en Home al cargar
+        window.onload = () => app.showView('home');
+    </script>
+</body>
+</html>

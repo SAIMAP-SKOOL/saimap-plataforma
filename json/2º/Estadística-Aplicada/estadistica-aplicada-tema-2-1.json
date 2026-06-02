@@ -1,0 +1,1694 @@
+{
+  "jsonTestA": [
+    {
+      "q": "¿Es verdadero que el supuesto de normalidad en el Modelo Lineal General debe cumplirse estrictamente en la distribución de la variable dependiente observada?",
+      "options": [
+        "Verdadero, los datos de la muestra deben ser siempre simétricos.",
+        "Falso, el supuesto se refiere técnicamente a la de los residuos.",
+        "No se puede determinar sin conocer el tamaño total de la muestra."
+      ],
+      "correct": 1,
+      "hint": "Revise la distinción entre valores observados y valores predichos.",
+      "explanation": "Aunque en pruebas como ANOVA es equivalente, técnicamente la normalidad se exige sobre los residuos $\\varepsilon = Y - \\hat{Y}$."
+    },
+    {
+      "q": "¿Es verdadero que las pruebas no paramétricas son preferibles a las paramétricas cuando se busca maximizar la potencia estadística del contraste?",
+      "options": [
+        "Verdadero, al ser más flexibles detectan efectos con más precisión.",
+        "Falso, las pruebas paramétricas tienen mayor potencia estadística.",
+        "No se sabe, la potencia no depende del tipo de prueba realizada."
+      ],
+      "correct": 1,
+      "hint": "Compare la capacidad de detectar efectos reales (Potencia).",
+      "explanation": "Las pruebas paramétricas son las más potentes siempre que se cumplan sus supuestos básicos y no existan valores atípicos."
+    },
+    {
+      "q": "¿Es verdadero que el promedio de los residuos en un modelo de regresión lineal es usualmente distinto de cero debido al error de medida?",
+      "options": [
+        "Verdadero, el error aleatorio siempre desplaza la media aritmética.",
+        "Falso, la media de los residuos es cero por construcción del modelo.",
+        "No se sabe, depende de si se ha incluido la ordenada en el origen."
+      ],
+      "correct": 1,
+      "hint": "Considere las propiedades matemáticas de la estimación por mínimos cuadrados.",
+      "explanation": "Por construcción matemática del modelo lineal, la suma (y por tanto la media) de los residuos es siempre igual a $0$."
+    },
+    {
+      "q": "¿Es verdadero que una puntuación $Z_{Asimetria} = 2.10$ permite mantener la hipótesis nula de normalidad en una muestra de gran tamaño?",
+      "options": [
+        "Verdadero, en muestras grandes el umbral puede subir a $\\pm 3.29$.",
+        "Falso, cualquier valor por encima de $\\pm 1.96$ implica asimetría.",
+        "No se sabe, las puntuaciones típicas no se usan para la asimetría."
+      ],
+      "correct": 0,
+      "hint": "Analice cómo varía el criterio de decisión según el volumen de datos.",
+      "explanation": "En muestras grandes, se usan umbrales de $\\pm 2.58$ o $\\pm 3.29$ para evitar rechazar $H_0$ por desviaciones irrelevantes."
+    },
+    {
+      "q": "¿Es verdadero que el test de Kolmogorov-Smirnov es más potente que el de Shapiro-Wilk para muestras pequeñas de aproximadamente $n = 25$?",
+      "options": [
+        "Verdadero, K-S es la prueba de referencia para muestras pequeñas.",
+        "Falso, S-W es más potente en una amplia gama de distribuciones.",
+        "No se sabe, ambas pruebas presentan la misma potencia estadística."
+      ],
+      "correct": 1,
+      "hint": "Considere las investigaciones de Razali y Wah (2011).",
+      "explanation": "Las evidencias demuestran que Shapiro-Wilk es más potente, mientras que K-S requiere muestras de $n > 100$ para ser fiable."
+    },
+    {
+      "q": "¿Es verdadero que la homocedasticidad implica que la varianza de los residuos debe ser constante para todos los niveles de la variable predictora?",
+      "options": [
+        "Verdadero, la dispersión de los errores no debe variar entre grupos.",
+        "Falso, la varianza debe ser constante solo en la variable dependiente.",
+        "No se sabe, la varianza de los residuos es siempre variable por azar."
+      ],
+      "correct": 0,
+      "hint": "Defina el concepto de homogeneidad de varianza residual.",
+      "explanation": "La homocedasticidad exige que $\\sigma^2_{\\varepsilon}$ se mantenga constante independientemente del valor de las $X_i$."
+    },
+    {
+      "q": "¿Es verdadero que la presencia de outliers en la variable dependiente invalida automáticamente el uso de cualquier prueba no paramétrica?",
+      "options": [
+        "Verdadero, los outliers distorsionan el cálculo de los rangos medios.",
+        "Falso, las pruebas no paramétricas toleran mejor los valores atípicos.",
+        "No se sabe, depende de si el outlier es por error de transcripción."
+      ],
+      "correct": 1,
+      "hint": "Evalúe la robustez de los métodos basados en orden o rangos.",
+      "explanation": "Una de las ventajas de las pruebas no paramétricas es que son menos sensibles al impacto de los valores extremos o outliers."
+    },
+    {
+      "q": "¿Es verdadero que la hipótesis nula ($H_0$) de la prueba de Shapiro-Wilk postula que la variable analizada no sigue una distribución normal?",
+      "options": [
+        "Verdadero, buscamos rechazar la normalidad para ser conservadores.",
+        "Falso, la $H_0$ establece que la distribución es de tipo normal.",
+        "No se sabe, el test de Shapiro-Wilk no utiliza hipótesis nula."
+      ],
+      "correct": 1,
+      "hint": "Recuerde la formulación $X = N(\\mu, \\sigma^2)$.",
+      "explanation": "En contrastes de supuestos, la $H_0$ suele representar la situación ideal (cumplimiento del supuesto: normalidad)."
+    },
+    {
+      "q": "¿Es verdadero que el supuesto de independencia establece que no debe existir autocorrelación entre los residuos de un modelo estadístico?",
+      "options": [
+        "Verdadero, cada error debe ser independiente de los demás errores.",
+        "Falso, la independencia se refiere solo a los sujetos de la muestra.",
+        "No se sabe, la autocorrelación es un concepto ajeno a la estadística."
+      ],
+      "correct": 0,
+      "hint": "Considere la estructura de los errores esféricos.",
+      "explanation": "La independencia es parte de los errores esféricos y prohíbe que el residuo de una observación prediga el de otra."
+    },
+    {
+      "q": "¿Es verdadero que un gráfico Q-Q donde los puntos forman una clara curva en 'S' indica que los datos siguen una distribución normal perfecta?",
+      "options": [
+        "Verdadero, la forma en 'S' representa el ajuste a la recta diagonal.",
+        "Falso, la curva en 'S' indica desviaciones sistemáticas de la normal.",
+        "No se sabe, los gráficos Q-Q solo sirven para detectar outliers."
+      ],
+      "correct": 1,
+      "hint": "Visualice la relación entre cuantiles teóricos y cuantiles muestrales.",
+      "explanation": "Para normalidad, los puntos deben alinearse sobre la diagonal; curvas o desviaciones indican distribuciones asimétricas o curtosis."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre la relación entre la variable dependiente (VD) y las independientes (VI) en el modelo lineal.",
+      "options": [
+        "La VD debe medirse siempre en una escala ordinal o nominal pura.",
+        "El supuesto de linealidad exige que la VD sea una función de las VI.",
+        "La aditividad implica que los efectos de las VI se deben multiplicar."
+      ],
+      "correct": 1,
+      "hint": "Piense en la ecuación $Y = b_0 + b_1X_1 + \\dots + \\text{error}$.",
+      "explanation": "La linealidad asume que $Y$ es explicable mediante una combinación lineal (suma de productos) de parámetros y variables."
+    },
+    {
+      "q": "Seleccione la afirmación correcta respecto al uso de histogramas para evaluar la normalidad de una distribución de datos.",
+      "options": [
+        "Un pico extremo o una cola muy alargada sugieren falta de normalidad.",
+        "La normalidad se confirma si el histograma es perfectamente plano.",
+        "El histograma es la única prueba definitiva para aceptar la normalidad."
+      ],
+      "correct": 0,
+      "hint": "Busque las características visuales de la campana de Gauss.",
+      "explanation": "La normalidad requiere simetría y ausencia de picos (leptocurtosis) o colas (asimetría) excesivas en el histograma."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre el criterio de decisión en las pruebas estadísticas de normalidad (K-S y S-W).",
+      "options": [
+        "Si $p < .05$, se mantiene la $H_0$ y se asume que los datos son normales.",
+        "Si $p > .05$, no hay evidencia suficiente para rechazar la normalidad.",
+        "El valor de $p$ debe ser exactamente $0.00$ para confirmar el supuesto."
+      ],
+      "correct": 1,
+      "hint": "Considere cuándo se considera que una diferencia es estadísticamente significativa.",
+      "explanation": "Un $p > .05$ indica que la diferencia entre nuestra muestra y la normal teórica no es significativa, cumpliendo el supuesto."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre la sensibilidad de las pruebas de normalidad al tamaño de la muestra.",
+      "options": [
+        "En muestras pequeñas, los test detectan fácilmente cualquier desvío.",
+        "En muestras grandes, desviaciones mínimas pueden resultar significativas.",
+        "El tamaño muestral no afecta a la probabilidad de obtener un $p < .05$."
+      ],
+      "correct": 1,
+      "hint": "Recuerde que a mayor $N$, mayor facilidad para encontrar significación.",
+      "explanation": "Debido a la alta sensibilidad, en muestras grandes el valor $p$ puede ser engañoso, requiriendo apoyo en métodos gráficos."
+    },
+    {
+      "q": "Seleccione la afirmación correcta respecto a la curtosis mesocúrtica en una distribución de datos estadística.",
+      "options": [
+        "Indica que la distribución es excesivamente apuntada y muy estrecha.",
+        "Representa una distribución con un grado de apuntamiento moderado.",
+        "Sugiere que la distribución es muy aplanada con colas muy gruesas."
+      ],
+      "correct": 1,
+      "hint": "Recuerde los tres tipos de curtosis.",
+      "explanation": "Una distribución mesocúrtica tiene una curtosis similar a la normal teórica, ni muy apuntada ni muy aplanada."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre el cálculo de la puntuación típica de la curtosis ($Z_{Curtosis}$) en el software SPSS.",
+      "options": [
+        "Se obtiene dividiendo el estadístico de curtosis por su error estándar.",
+        "Se calcula multiplicando la asimetría por el número total de casos.",
+        "Es el resultado de restar la media al estadístico y dividirlo por $N$."
+      ],
+      "correct": 0,
+      "hint": "Revise las fórmulas de transformación de estadísticos descriptivos.",
+      "explanation": "La fórmula estándar es $Z = \\frac{\\text{Estadístico}}{\\text{Error Estándar}}$, lo que permite estandarizar el desvío."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre la interpretación de los diagramas de caja (boxplots) en el análisis de supuestos.",
+      "options": [
+        "Una caja asimétrica con bigotes desiguales sugiere una distribución normal.",
+        "Permiten detectar outliers y evaluar la simetría de forma simultánea.",
+        "La línea central de la caja siempre representa la media aritmética."
+      ],
+      "correct": 1,
+      "hint": "Identifique los elementos de un diagrama de caja y bigotes.",
+      "explanation": "Los boxplots muestran la mediana (línea central), los cuartiles (caja) y los valores atípicos (puntos fuera de bigotes)."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre el supuesto de aditividad en el marco del Modelo Lineal General (MLG).",
+      "options": [
+        "Postula que la VD es el resultado de la suma de efectos de las VI.",
+        "Establece que las variables deben ser siempre de tipo dicotómico.",
+        "Significa que añadir más variables siempre reduce el error del modelo."
+      ],
+      "correct": 0,
+      "hint": "Relacione 'aditividad' con la operación matemática de sumar.",
+      "explanation": "El modelo lineal asume que la variable respuesta se construye sumando las aportaciones de cada predictor."
+    },
+    {
+      "q": "Seleccione la afirmación correcta respecto a la escala de medida necesaria para la variable dependiente en pruebas paramétricas.",
+      "options": [
+        "La variable dependiente debe medirse obligatoriamente en escala nominal.",
+        "La variable dependiente debe ser continua (de intervalo o de razón).",
+        "Basta con que la variable dependiente sea categórica con dos grupos."
+      ],
+      "correct": 1,
+      "hint": "Diferencie entre variables cuantitativas y cualitativas.",
+      "explanation": "Las pruebas paramétricas operan con medias y varianzas, lo que requiere variables de naturaleza cuantitativa continua."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre la heterocedasticidad en el análisis de residuos de un modelo.",
+      "options": [
+        "Indica que la varianza de los residuos es igual en todos los grupos.",
+        "Compromete la validez de los resultados en las pruebas paramétricas.",
+        "Es una condición deseable para asegurar la potencia del contraste."
+      ],
+      "correct": 1,
+      "hint": "Piense en el prefijo 'hetero-' (diferente).",
+      "explanation": "La heterocedasticidad (varianza no constante) sesga los errores estándar y afecta a la fiabilidad de las pruebas $t$ y $F$."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre el uso de gráficos de dispersión para comprobar la linealidad.",
+      "options": [
+        "Si los puntos forman una parábola, se cumple el supuesto de linealidad.",
+        "Se espera que los puntos se agrupen siguiendo una tendencia de recta.",
+        "No son útiles si la variable predictora es de tipo cuantitativo puro."
+      ],
+      "correct": 1,
+      "hint": "Revise las figuras 7 y 9 del material proporcionado.",
+      "explanation": "Una relación lineal se manifiesta visualmente como una nube de puntos que se ajusta a una trayectoria recta."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre los residuos en un diseño con variables categóricas (como ANOVA).",
+      "options": [
+        "Son las diferencias entre los valores observados y la media del grupo.",
+        "Siempre son iguales a los valores de la variable dependiente bruta.",
+        "Deben seguir una distribución uniforme para poder aplicar la prueba."
+      ],
+      "correct": 0,
+      "hint": "Defina residuo en el contexto de comparación de grupos.",
+      "explanation": "En ANOVA, el valor predicho es la media del grupo, por lo que el residuo es la desviación individual respecto a esa media."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre las 'pruebas robustas' mencionadas en el texto del capítulo.",
+      "options": [
+        "Son pruebas que no requieren ningún tipo de recogida de datos previa.",
+        "Son alternativas útiles cuando no se cumplen los supuestos básicos.",
+        "Son idénticas a las pruebas no paramétricas en todos sus aspectos."
+      ],
+      "correct": 1,
+      "hint": "Considere qué hacer ante el incumplimiento de supuestos.",
+      "explanation": "Las pruebas robustas permiten realizar análisis paramétricos ajustados que toleran violaciones de normalidad u homocedasticidad."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre la interpretación visual de un histograma platicúrtico.",
+      "options": [
+        "Presenta una forma de campana muy alta con una base muy estrecha.",
+        "Muestra una distribución aplanada con una frecuencia muy dispersa.",
+        "Es el gráfico ideal que confirma el cumplimiento de la normalidad."
+      ],
+      "correct": 1,
+      "hint": "Piense en el término 'plato' (aplanado).",
+      "explanation": "Una distribución platicúrtica tiene colas cortas y es más plana que la normal, indicando baja concentración central."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre el test de Shapiro-Wilk según la investigación de Razali y Wah (2011).",
+      "options": [
+        "Es menos preciso que el test K-S para muestras superiores a $n = 50$.",
+        "Es el test más potente para diversas distribuciones y tamaños de $N$.",
+        "Solo debe utilizarse si el histograma previo muestra simetría total."
+      ],
+      "correct": 1,
+      "hint": "Busque la recomendación basada en evidencia empírica moderna.",
+      "explanation": "S-W ha demostrado ser superior a K-S en potencia estadística para la mayoría de los escenarios prácticos."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre los requisitos de las pruebas paramétricas.",
+      "options": [
+        "La variable dependiente debe ser obligatoriamente continua.",
+        "Los datos deben estar libres de outliers significativos.",
+        "Es irrelevante si la relación entre variables es no lineal."
+      ],
+      "correct": 2,
+      "hint": "Piense en el impacto de un modelo mal especificado.",
+      "explanation": "Si la relación es no lineal, el modelo lineal será incorrecto incluso si se cumplen todos los demás supuestos."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre el supuesto de normalidad de los residuos.",
+      "options": [
+        "Los residuos son la diferencia entre valor observado y predicho.",
+        "Deben seguir una distribución con media cero y varianza unitaria.",
+        "En el ANOVA, es equivalente a la normalidad de los datos del grupo."
+      ],
+      "correct": 1,
+      "hint": "La varianza de los residuos no tiene por qué ser 1.",
+      "explanation": "El supuesto exige normalidad $N(0, \\sigma^2)$, pero la varianza $\\sigma^2$ puede ser cualquier valor constante, no solo 1."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta respecto a las ventajas de las pruebas no paramétricas.",
+      "options": [
+        "Presentan una mayor flexibilidad ante datos no convencionales.",
+        "Tienen una potencia estadística superior a las paramétricas.",
+        "Son menos sensibles al incumplimiento de supuestos teóricos."
+      ],
+      "correct": 1,
+      "hint": "Recuerde que la 'flexibilidad' tiene un coste en términos de potencia.",
+      "explanation": "Las pruebas no paramétricas suelen ser menos potentes, necesitando más datos para detectar el mismo efecto que una paramétrica."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre el análisis de la asimetría mediante puntuaciones $Z$.",
+      "options": [
+        "Un valor de $Z > 1.96$ sugiere asimetría significativa ($p < .05$).",
+        "Se calcula dividiendo el error estándar entre el estadístico obtenido.",
+        "En muestras de $n < 50$ es el método visual más recomendado."
+      ],
+      "correct": 1,
+      "hint": "Verifique el orden de los términos en la fórmula de la división.",
+      "explanation": "La afirmación es incorrecta porque el estadístico es el numerador y el error estándar es el denominador: $Z = \\frac{\\text{Estad}}{\\text{Error}}$."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre el gráfico de cuantiles normales (Q-Q plot).",
+      "options": [
+        "Si los puntos se alejan de la diagonal, la normalidad es dudosa.",
+        "Permite evaluar visualmente el ajuste a una distribución teórica.",
+        "Un ajuste perfecto se muestra como una línea horizontal en el eje $X$."
+      ],
+      "correct": 2,
+      "hint": "Visualice la trayectoria de los puntos en un ajuste normal.",
+      "explanation": "Un ajuste perfecto se muestra como una línea diagonal (bisectriz), no como una línea horizontal."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre el test de Kolmogorov-Smirnov (K-S).",
+      "options": [
+        "Requiere muestras grandes ($n > 100$) para alcanzar potencia aceptable.",
+        "Es más potente que Shapiro-Wilk para detectar asimetrías leves.",
+        "Su hipótesis nula asume que los datos proceden de una distribución normal."
+      ],
+      "correct": 1,
+      "hint": "Compare la potencia de K-S frente a S-W.",
+      "explanation": "Es incorrecto afirmar que K-S es más potente; en general, S-W supera a K-S en la mayoría de condiciones de muestreo."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre la homocedasticidad y su evaluación.",
+      "options": [
+        "La varianza de los residuos debe ser constante en toda la escala.",
+        "Se evalúa directamente sobre los datos brutos de la variable predictora.",
+        "Su incumplimiento se denomina técnicamente como heterocedasticidad."
+      ],
+      "correct": 1,
+      "hint": "Recuerde sobre qué entidad matemática se calculan los supuestos del MLG.",
+      "explanation": "La homocedasticidad, al igual que la normalidad, debe evaluarse sobre los residuos del modelo, no sobre los datos de la VI."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre las hipótesis en el supuesto de linealidad.",
+      "options": [
+        "La $H_0$ postula que la relación entre la VI y la VD es lineal.",
+        "La $H_1$ afirma que la relación es distinta a una función lineal.",
+        "La $H_0$ se rechaza siempre que el valor de $p$ sea superior a $0.05$."
+      ],
+      "correct": 2,
+      "hint": "Piense en la regla general de rechazo de la hipótesis nula.",
+      "explanation": "Es incorrecto: si $p > .05$, no se rechaza $H_0$. Se rechaza solo si $p < .05$."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre los errores esféricos en el modelo lineal.",
+      "options": [
+        "Incluyen la media cero, homocedasticidad e independencia.",
+        "La media cero se cumple casi siempre por la construcción del modelo.",
+        "La independencia de residuos no afecta a la validez del contraste."
+      ],
+      "correct": 2,
+      "hint": "Reflexione sobre qué sucede si los errores están correlacionados.",
+      "explanation": "La falta de independencia (autocorrelación) invalida las pruebas de significación al subestimar los errores estándar."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre la curtosis leptocúrtica en una distribución.",
+      "options": [
+        "Representa una distribución con un pico muy elevado y colas ligeras.",
+        "Se asocia visualmente con una forma de campana muy aplanada.",
+        "Da lugar a una puntuación $Z$ de curtosis significativamente positiva."
+      ],
+      "correct": 1,
+      "hint": "Diferencie entre leptocúrtica (puntiaguda) y platicúrtica (plana).",
+      "explanation": "La forma aplanada corresponde a la distribución platicúrtica, no a la leptocúrtica."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre el procedimiento 'Explorar' en el programa SPSS.",
+      "options": [
+        "Permite obtener estadísticos descriptivos, asimetría y curtosis.",
+        "Solo permite analizar una variable dependiente sin usar factores.",
+        "Ofrece la opción de generar gráficos de normalidad con pruebas."
+      ],
+      "correct": 1,
+      "hint": "Observe la figura 20 del PDF.",
+      "explanation": "El cuadro 'Explorar' permite usar una 'Lista de factores' para segmentar el análisis por grupos (por ejemplo, sexo)."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre el impacto de los outliers en la estadística paramétrica.",
+      "options": [
+        "Pueden distorsionar la media y aumentar la varianza del error.",
+        "Su presencia no influye en el cumplimiento del supuesto de normalidad.",
+        "Se recomienda identificarlos visualmente mediante diagramas de caja."
+      ],
+      "correct": 1,
+      "hint": "Piense en cómo un valor extremo afecta a la forma de la campana.",
+      "explanation": "Los outliers afectan drásticamente a la simetría y curtosis, provocando el incumplimiento de la normalidad."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre la aditividad de las variables en un modelo.",
+      "options": [
+        "Implica que el efecto total es la suma de los efectos individuales.",
+        "Si se viola, el modelo deja de ser representativo de la realidad.",
+        "Exige que las variables independientes sean siempre continuas."
+      ],
+      "correct": 2,
+      "hint": "Revise el apartado 2.1.1 sobre tipos de variables.",
+      "explanation": "Las VI pueden ser categóricas o cuantitativas; es la VD la que debe ser continua en pruebas paramétricas."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre la asimetría negativa en una distribución.",
+      "options": [
+        "Los datos se concentran mayoritariamente en la parte derecha (alta).",
+        "El histograma presenta una cola más larga hacia los valores bajos.",
+        "La puntuación $Z$ de asimetría será un valor positivo superior a $1.96$."
+      ],
+      "correct": 2,
+      "hint": "Relacione el signo de la asimetría con la dirección de la cola.",
+      "explanation": "La asimetría negativa produce estadísticos y puntuaciones $Z$ negativos, no positivos."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre la relación entre el modelo lineal general (MLG) y la psicología.",
+      "options": [
+        "Es el marco común de la mayoría de análisis estadísticos en psicología.",
+        "Obliga a que todos los datos psicológicos sigan siempre la normalidad.",
+        "Sus supuestos determinan la adecuación de los procedimientos analíticos."
+      ],
+      "correct": 1,
+      "hint": "Considere si la estadística impone la realidad o intenta modelarla.",
+      "explanation": "El MLG no obliga a la normalidad de los datos reales; simplemente establece que es un requisito para que sus estimaciones sean óptimas."
+    }
+  ],
+  "jsonTestB": [
+    {
+      "q": "En el marco del Modelo Lineal General, el supuesto de ____ establece que la variable resultado debe explicarse mediante una suma ponderada de los predictores.",
+      "options": [
+        "Aditividad de las variables",
+        "Linealidad de los residuos",
+        "Normalidad de los errores"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la forma en que se combinan las variables independientes.",
+      "explanation": "La aditividad implica que el efecto total es la suma de los efectos individuales de las $$\\text{VI}$$ en la fórmula $$\\text{Y} = b_0 + b_1X_1 + ...$$"
+    },
+    {
+      "q": "Si un investigador obtiene un estadístico de asimetría de $0.028$ con un error estándar de $0.314$, su puntuación $Z_{Asimetría}$ es igual a ____.",
+      "options": [
+        "0.089 unidades tipificadas",
+        "11.214 unidades tipificadas",
+        "0.008 unidades tipificadas"
+      ],
+      "correct": 0,
+      "hint": "La fórmula es el cociente entre el estadístico y su error estándar.",
+      "explanation": "Aplicando $$Z = \\frac{\\text{Estadístico}}{\\text{Error Estándar}}$$, tenemos $$\\frac{0.028}{0.314} \\approx 0.089$$. Un error común es invertir los términos."
+    },
+    {
+      "q": "El supuesto de ____ indica que la varianza de los residuos debe permanecer constante a lo largo de todos los niveles de las variables independientes.",
+      "options": [
+        "Independencia de errores",
+        "Homocedasticidad de datos",
+        "Homocedasticidad residual"
+      ],
+      "correct": 2,
+      "hint": "Se refiere a la homogeneidad de varianzas en el modelo.",
+      "explanation": "La homocedasticidad exige que $$\\sigma^2$$ de los residuos sea constante; si varía, hablamos de heterocedasticidad."
+    },
+    {
+      "q": "Para una muestra de $N=101$, el umbral de las puntuaciones típicas $Z$ para rechazar la normalidad por asimetría suele ampliarse hasta ____.",
+      "options": [
+        "$\\pm 3.29$ desviaciones",
+        "$\\pm 1.96$ desviaciones",
+        "$\\pm 2.58$ desviaciones"
+      ],
+      "correct": 2,
+      "hint": "En muestras grandes se usan criterios más laxos para evitar significación sin relevancia clínica.",
+      "explanation": "En muestras grandes, se utiliza $$\\pm 2.58$$ ($$p < .01$$) o $$\\pm 3.29$$ ($$p < .001$$) para no ser excesivamente sensibles a desviaciones mínimas."
+    },
+    {
+      "q": "En un gráfico Q-Q normal, cuando los puntos observados forman una curva en 'S' respecto a la diagonal, estamos ante una ____.",
+      "options": [
+        "Distribución con asimetría",
+        "Distribución con curtosis",
+        "Distribución tipo lineal"
+      ],
+      "correct": 1,
+      "hint": "La forma en 'S' indica problemas en las colas de la distribución.",
+      "explanation": "Las desviaciones sistemáticas en los extremos (curva en S) indican que la curtosis no es mesocúrtica, fallando la normalidad."
+    },
+    {
+      "q": "El test de ____ se considera actualmente el más potente para verificar la normalidad en una amplia gama de distribuciones y tamaños muestrales.",
+      "options": [
+        "Kolmogorov y Smirnov",
+        "Shapiro y Wilk (S-W)",
+        "Levene y Homogeneidad"
+      ],
+      "correct": 1,
+      "hint": "Las investigaciones de Razali y Wah (2011) respaldan esta prueba.",
+      "explanation": "El test de Shapiro-Wilk es preferible por su potencia, mientras que K-S requiere muestras de $$n > 100$$ para ser aceptable."
+    },
+    {
+      "q": "Al calcular la normalidad en un ANOVA, comprobar la normalidad de los residuos es equivalente a comprobar la ____ de los datos.",
+      "options": [
+        "Media de los grupos",
+        "Varianza de errores",
+        "Distribución normal"
+      ],
+      "correct": 2,
+      "hint": "En variables categóricas, el residuo es la distancia a la media del grupo.",
+      "explanation": "Como el residuo es $$Y_{obs} - \\bar{Y}_{grupo}$$, si los datos son normales, los residuos también lo serán necesariamente."
+    },
+    {
+      "q": "Un valor de curtosis de $-1.087$ con un error de $0.618$ produce una $Z_{Curtosis}$ de ____, lo que sugiere una distribución aproximadamente normal.",
+      "options": [
+        "-1.759 unidades típicas",
+        "-0.568 unidades típicas",
+        "-0.671 unidades típicas"
+      ],
+      "correct": 0,
+      "hint": "Divide el estadístico por el error estándar.",
+      "explanation": "$$Z = \\frac{-1.087}{0.618} = -1.7588$$. Al ser menor que $$1.96$$ en valor absoluto, se mantiene $$H_0$$."
+    },
+    {
+      "q": "El supuesto de que el promedio de los residuos debe ser igual a cero se denomina ____.",
+      "options": [
+        "Media cero residual",
+        "Error esférico nulo",
+        "Aditividad de medias"
+      ],
+      "correct": 0,
+      "hint": "Es una de las tres condiciones de los errores esféricos.",
+      "explanation": "La media cero se cumple casi siempre por la construcción matemática del modelo de mínimos cuadrados."
+    },
+    {
+      "q": "Las pruebas paramétricas exigen que la variable dependiente (VD) se mida al menos en una escala ____.",
+      "options": [
+        "De tipo nominal pura",
+        "De tipo ordinal clara",
+        "De tipo continua real"
+      ],
+      "correct": 2,
+      "hint": "Las variables de intervalo o razón son necesarias para estos análisis potentes.",
+      "explanation": "Las pruebas paramétricas requieren variables cuantitativas continuas; para ordinales se usan no paramétricas."
+    },
+    {
+      "q": "Si en SPSS observamos una Sig. de $.200$ en el test de Kolmogorov-Smirnov, decidimos ____.",
+      "options": [
+        "Rechazar la hipótesis $H_0$",
+        "Mantener la hipótesis $H_0$",
+        "Aceptar la hipótesis $H_1$"
+      ],
+      "correct": 1,
+      "hint": "Compare el valor p con el nivel alpha de 0.05.",
+      "explanation": "Como $$p > .05$$, no hay evidencia suficiente para decir que la distribución no es normal, por lo que se asume normalidad."
+    },
+    {
+      "q": "Una distribución que presenta un apuntamiento excesivo y colas gruesas se define como ____.",
+      "options": [
+        "Distribución platicúrtica",
+        "Distribución mesocúrtica",
+        "Distribución leptocúrtica"
+      ],
+      "correct": 2,
+      "hint": "Viene del griego 'leptos' (estrecho).",
+      "explanation": "La leptocúrtica tiene un pico elevado y colas pesadas, alejándose de la forma de campana ideal."
+    },
+    {
+      "q": "El incumplimiento del supuesto de ____ puede provocar que los errores estándar sean incorrectos, invalidando los contrastes de hipótesis.",
+      "options": [
+        "Linealidad aditiva",
+        "Independencia residual",
+        "Simetría de variables"
+      ],
+      "correct": 1,
+      "hint": "Se refiere a la autocorrelación entre las observaciones.",
+      "explanation": "La independencia es crítica; si los errores están correlacionados, los cálculos de varianza del modelo fallan."
+    },
+    {
+      "q": "En el Generador de Gráficos de SPSS, para detectar outliers visualmente el método más adecuado es el ____.",
+      "options": [
+        "Diagrama de dispersión",
+        "Diagrama de histograma",
+        "Diagrama de caja-bigote"
+      ],
+      "correct": 2,
+      "hint": "Permite ver valores que se alejan de los cuartiles.",
+      "explanation": "El diagrama de caja (boxplot) identifica explícitamente valores atípicos mediante puntos fuera de los bigotes."
+    },
+    {
+      "q": "La formulación matemática $Y \\ne b_0 + b_1X_1 + \text{error}$ corresponde a la hipótesis ____ del supuesto de linealidad.",
+      "options": [
+        "Hipótesis nula ($H_0$)",
+        "Hipótesis teórica ($H_t$)",
+        "Hipótesis alterna ($H_1$)"
+      ],
+      "correct": 2,
+      "hint": "Representa la falta de ajuste lineal.",
+      "explanation": "La $$H_1$$ postula que la relación es distinta a la lineal (cuadrática, logarítmica, etc.)."
+    },
+    {
+      "q": "Cuando los datos muestran una relación donde la variable resultado crece de forma cada vez más lenta, estamos ante una relación ____.",
+      "options": [
+        "Relación exponencial",
+        "Relación logarítmica",
+        "Relación cuadrática"
+      ],
+      "correct": 1,
+      "hint": "Es la inversa de la función exponencial.",
+      "explanation": "La relación logarítmica muestra una pendiente decreciente a medida que aumenta la variable predictora."
+    },
+    {
+      "q": "Las pruebas ____ son menos sensibles al incumplimiento de supuestos y toleran mejor la presencia de outliers.",
+      "options": [
+        "Pruebas paramétricas",
+        "Pruebas estadísticas",
+        "Pruebas no paramétricas"
+      ],
+      "correct": 2,
+      "hint": "Son conocidas como pruebas de 'distribución libre'.",
+      "explanation": "Al no basarse en parámetros poblacionales, son más robustas ante datos 'sucios' o no normales."
+    },
+    {
+      "q": "El supuesto de que la relación entre variables debe representarse como una línea recta se llama ____.",
+      "options": [
+        "Linealidad bivariada",
+        "Linealidad predictora",
+        "Linealidad del modelo"
+      ],
+      "correct": 0,
+      "hint": "Es el primer supuesto revisado en el apartado 2.2.1.",
+      "explanation": "La linealidad asume que el cambio en $$Y$$ es proporcional al cambio en $$X$$ en todo su rango."
+    },
+    {
+      "q": "Si un residuo es positivo, significa que el valor observado está ____ del valor predicho por el modelo.",
+      "options": [
+        "Por debajo del nivel",
+        "Por encima del nivel",
+        "Al mismo nivel exacto"
+      ],
+      "correct": 1,
+      "hint": "Recuerde: Residuo = Observado - Predicho.",
+      "explanation": "Un residuo positivo indica que la realidad superó la expectativa del modelo lineal."
+    },
+    {
+      "q": "El conjunto de condiciones que permiten aplicar el MLG se conoce técnicamente como ____.",
+      "options": [
+        "Parámetros de diseño",
+        "Supuestos estadísticos",
+        "Requisitos de medida"
+      ],
+      "correct": 1,
+      "hint": "Determinan si los datos son adecuados para el análisis.",
+      "explanation": "Los supuestos estadísticos son las premisas que validan las inferencias del modelo lineal general."
+    },
+    {
+      "q": "Para aplicar pruebas paramétricas con garantías de validez, se requiere que:",
+      "options": [
+        "La variable dependiente sea continua y no existan outliers.",
+        "Se cumplan los supuestos de linealidad, normalidad y errores.",
+        "Todas las anteriores son correctas y deben verificarse antes."
+      ],
+      "correct": 2,
+      "hint": "Es una combinación de escalas de medida y supuestos del modelo.",
+      "explanation": "Se requiere escala continua, ausencia de atípicos y cumplimiento de los supuestos del MLG."
+    },
+    {
+      "q": "El modelo lineal general (MLG) se caracteriza por:",
+      "options": [
+        "Explicar la variable resultado mediante una función aditiva.",
+        "Ser el marco común para la mayoría de análisis en psicología.",
+        "Todas las anteriores son correctas en su definición básica."
+      ],
+      "correct": 2,
+      "hint": "Es el pilar de la estadística inferencial clásica.",
+      "explanation": "El MLG integra regresión, ANOVA y otras técnicas bajo una estructura lineal y aditiva común."
+    },
+    {
+      "q": "Son métodos válidos para la comprobación visual de la normalidad:",
+      "options": [
+        "El uso de histogramas con curva normal superpuesta.",
+        "La inspección de diagramas de caja y gráficos Q-Q.",
+        "Todas las anteriores son correctas para dicha evaluación."
+      ],
+      "correct": 2,
+      "hint": "Los métodos gráficos complementan a los test estadísticos.",
+      "explanation": "Histogramas, boxplots y Q-Q plots permiten ver simetría, curtosis y outliers de forma directa."
+    },
+    {
+      "q": "Una relación no lineal entre variables puede presentarse como:",
+      "options": [
+        "Relación cuadrática en forma de parábola o curva U.",
+        "Relación exponencial con crecimiento rápido constante.",
+        "Todas las anteriores son correctas y violan la linealidad."
+      ],
+      "correct": 2,
+      "hint": "Cualquier forma que no sea una recta es no lineal.",
+      "explanation": "Modelos cuadráticos, exponenciales y logarítmicos son ejemplos típicos de relaciones no lineales."
+    },
+    {
+      "q": "Los errores esféricos comprenden las siguientes condiciones:",
+      "options": [
+        "Media cero de los residuos y varianza constante (homo).",
+        "Independencia de las observaciones (sin autocorrelación).",
+        "Todas las anteriores son correctas para errores esféricos."
+      ],
+      "correct": 2,
+      "hint": "Se agrupan en tres requisitos sobre los residuos del modelo.",
+      "explanation": "Los errores esféricos requieren media nula, homocedasticidad e independencia serial."
+    },
+    {
+      "q": "El supuesto de normalidad se considera cumplido cuando:",
+      "options": [
+        "El valor p de Shapiro-Wilk es superior al nivel alpha .05.",
+        "Las puntuaciones Z de asimetría están entre $\\pm 1.96$.",
+        "Todas las anteriores son correctas para aceptar normalidad."
+      ],
+      "correct": 2,
+      "hint": "Existen criterios estadísticos y criterios basados en tipificación.",
+      "explanation": "Tanto la no significación en test como el rango aceptable en puntuaciones Z confirman la normalidad."
+    },
+    {
+      "q": "En el análisis de diagramas de caja (boxplots), observamos que:",
+      "options": [
+        "La simetría de la caja indica ausencia de sesgo notable.",
+        "La longitud de los bigotes muestra la dispersión externa.",
+        "Todas las anteriores son correctas para interpretar cajas."
+      ],
+      "correct": 2,
+      "hint": "Cada elemento del boxplot representa una medida descriptiva.",
+      "explanation": "El boxplot resume mediana, cuartiles y dispersión, permitiendo evaluar la normalidad visual."
+    },
+    {
+      "q": "Las pruebas no paramétricas presentan las siguientes ventajas:",
+      "options": [
+        "Permiten trabajar con variables medidas en escala ordinal.",
+        "Son flexibles ante el incumplimiento de la normalidad.",
+        "Todas las anteriores son correctas sobre estas pruebas."
+      ],
+      "correct": 2,
+      "hint": "Se usan cuando el MLG no es aplicable por falta de requisitos.",
+      "explanation": "Son ideales para datos que no cumplen normalidad o son de escalas cualitativas jerárquicas."
+    },
+    {
+      "q": "La precisión de los test de normalidad se ve afectada por:",
+      "options": [
+        "El tamaño de la muestra (exceso de sensibilidad en N grande).",
+        "La presencia de outliers que distorsionan el estadístico.",
+        "Todas las anteriores son correctas como factores de sesgo."
+      ],
+      "correct": 2,
+      "hint": "Los test estadísticos tienen limitaciones que exigen juicio clínico.",
+      "explanation": "Muestras pequeñas restan potencia y muestras grandes detectan desviaciones triviales como significativas."
+    },
+    {
+      "q": "Para realizar una t de Student para muestras independientes:",
+      "options": [
+        "Se debe comprobar la normalidad en cada grupo por separado.",
+        "Los residuos deben presentar una distribución mesocúrtica.",
+        "Todas las anteriores son correctas para validar la prueba."
+      ],
+      "correct": 2,
+      "hint": "Los requisitos se aplican a la estructura de comparación de grupos.",
+      "explanation": "La t de Student es paramétrica y requiere normalidad grupal y homocedasticidad."
+    },
+    {
+      "q": "La fórmula correcta para tipificar la asimetría en una muestra es:",
+      "options": [
+        "$\\text{Z} = \\frac{\\text{Error estándar}}{\\text{Estadístico de asimetría}}$",
+        "$\\text{Z} = \\text{Estadístico} \\times \\text{Error estándar}$",
+        "Ninguna de las anteriores es correcta en su planteamiento."
+      ],
+      "correct": 2,
+      "hint": "Recuerde la jerarquía: el estadístico va en el numerador.",
+      "explanation": "La fórmula correcta es $$Z = \\frac{\\text{Estadístico}}{\\text{Error estándar}}$$. Las opciones invierten o multiplican los términos."
+    },
+    {
+      "q": "Al interpretar un test de Shapiro-Wilk con $p = .001$, concluimos que:",
+      "options": [
+        "Se cumple el supuesto de normalidad para este estudio.",
+        "La muestra proviene de una población normal claramente.",
+        "Ninguna de las anteriores es correcta según la lógica p."
+      ],
+      "correct": 2,
+      "hint": "Un p pequeño rechaza la hipótesis de normalidad.",
+      "explanation": "Con $$p < .05$$, se rechaza $$H_0$$ (normalidad) y se concluye que la distribución no es normal."
+    },
+    {
+      "q": "El supuesto de linealidad se considera verificado cuando el gráfico:",
+      "options": [
+        "Muestra una dispersión aleatoria sin ninguna tendencia.",
+        "Presenta una forma de campana simétrica bien definida.",
+        "Ninguna de las anteriores es correcta para linealidad."
+      ],
+      "correct": 2,
+      "hint": "La linealidad requiere una tendencia de línea recta.",
+      "explanation": "La dispersión aleatoria indica 'Sin relación', y la campana es para normalidad, no linealidad."
+    },
+    {
+      "q": "Un histograma 'platicúrtico' se caracteriza visualmente por tener:",
+      "options": [
+        "Un pico muy elevado y colas extremadamente delgadas.",
+        "Una asimetría positiva con la cola hacia la derecha.",
+        "Ninguna de las anteriores es correcta para este caso."
+      ],
+      "correct": 2,
+      "hint": "La platicúrtica es una distribución 'aplanada'.",
+      "explanation": "La platicúrtica es baja y ancha; la opción A describe la leptocúrtica y la B el sesgo."
+    },
+    {
+      "q": "En SPSS, para calcular la homocedasticidad, el menú inicial es:",
+      "options": [
+        "Analizar > Comparar medias > Frecuencias descriptivas.",
+        "Gráficos > Cuadros de diálogo antiguos > Histograma simple.",
+        "Ninguna de las anteriores es correcta para este análisis."
+      ],
+      "correct": 2,
+      "hint": "La ruta suele pasar por el modelo lineal o descriptivos 'Explorar'.",
+      "explanation": "La homocedasticidad se suele ver en 'Explorar' (test de Levene) o en el menú de 'Regresión' / 'Modelo Lineal'."
+    },
+    {
+      "q": "El término 'residuos' en el contexto del MLG se define como:",
+      "options": [
+        "La suma total de las puntuaciones de la muestra real.",
+        "El error de medida de los instrumentos de evaluación.",
+        "Ninguna de las anteriores es correcta en su definición."
+      ],
+      "correct": 2,
+      "hint": "Es la resta entre lo que ves y lo que el modelo predice.",
+      "explanation": "Residuo es la diferencia individual entre el valor observado y el predicho ($$Y - \\hat{Y}$$)."
+    },
+    {
+      "q": "Para una variable nominal como el 'Sexo', la normalidad se calcula:",
+      "options": [
+        "Sobre los códigos numéricos asignados ($0$ y $1$).",
+        "Mediante el test de Kolmogorov-Smirnov de la variable.",
+        "Ninguna de las anteriores es correcta para nominales."
+      ],
+      "correct": 2,
+      "hint": "Las variables nominales no pueden ser 'normales'.",
+      "explanation": "La normalidad solo se aplica a variables cuantitativas (la VD), no a las VI categóricas nominales."
+    },
+    {
+      "q": "El test de Kolmogorov-Smirnov es preferible al de Shapiro-Wilk si:",
+      "options": [
+        "La muestra es pequeña, típicamente con $N < 30$ casos.",
+        "Los datos presentan muchos outliers o valores extremos.",
+        "Ninguna de las anteriores es correcta según la potencia."
+      ],
+      "correct": 2,
+      "hint": "K-S requiere muestras grandes y es menos potente que S-W.",
+      "explanation": "S-W es más potente siempre; K-S solo es aceptable en muestras muy grandes ($$N > 100$$)."
+    },
+    {
+      "q": "Si un diagrama de caja muestra la línea de la mediana cerca del Q3:",
+      "options": [
+        "Existe una asimetría positiva clara en la distribución.",
+        "La distribución es perfectamente simétrica y mesocúrtica.",
+        "Ninguna de las anteriores es correcta para esa posición."
+      ],
+      "correct": 2,
+      "hint": "Mediana cerca del tercer cuartil indica cola hacia la izquierda.",
+      "explanation": "Esa configuración indica asimetría negativa (cola a la izquierda), no positiva ni simetría."
+    },
+    {
+      "q": "La homocedasticidad es un supuesto que se aplica directamente a:",
+      "options": [
+        "La relación lineal entre la VI y la VD del modelo.",
+        "La media poblacional de la variable independiente (VI).",
+        "Ninguna de las anteriores es correcta para este supuesto."
+      ],
+      "correct": 2,
+      "hint": "Se aplica a la varianza de los residuos, no a las medias o VI.",
+      "explanation": "Es la constancia de la varianza de los errores; no describe medias ni la forma de la relación lineal."
+    }
+  ],
+  "jsonLaboratorio": [
+    {
+      "id": 1,
+      "title": "Análisis de Asimetría en Puntuaciones de Depresión",
+      "context": "En un estudio sobre salud mental, el grupo masculino presenta una asimetría de $0.028$ con un error estándar de $0.314$. Se utiliza la fórmula $Z_{Asimetría} = \\frac{Estadístico}{Error \\ estándar}$ para evaluar la normalidad.",
+      "parts": [
+        {
+          "id": "p1a",
+          "label": "a)",
+          "question": "Calcula la puntuación $Z$ de asimetría para este grupo.",
+          "correctValue": 0.089,
+          "tolerance": 0.001,
+          "explanation": "$$Z_{Asimetría} = \\frac{0.028}{0.314} = 0.08917... \\approx 0.089$$"
+        },
+        {
+          "id": "p1b",
+          "label": "b)",
+          "question": "Si el umbral crítico de normalidad es $1.96$, ¿cuál es la diferencia absoluta entre el valor obtenido y el límite?",
+          "correctValue": 1.871,
+          "tolerance": 0.001,
+          "explanation": "$$|1.96 - 0.089| = 1.871$$"
+        },
+        {
+          "id": "p1c",
+          "label": "c)",
+          "question": "Si el error estándar se redujera a $0.250$ manteniendo la asimetría, ¿cuál sería el nuevo valor de $Z$?",
+          "correctValue": 0.112,
+          "tolerance": 0.001,
+          "explanation": "$$Z = \\frac{0.028}{0.250} = 0.112$$"
+        },
+        {
+          "id": "p1d",
+          "label": "d)",
+          "question": "Con el nuevo $Z$ de $0.112$, ¿cuántas unidades falta para alcanzar el umbral de $1.96$?",
+          "correctValue": 1.848,
+          "tolerance": 0.001,
+          "explanation": "$$1.96 - 0.112 = 1.848$$"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Evaluación de la Curtosis Mesocúrtica",
+      "context": "Los datos de un test de ansiedad muestran una curtosis de $-1.087$ con un error estándar de $0.618$. El supuesto de normalidad requiere que $|Z| \\le 1.96$.",
+      "parts": [
+        {
+          "id": "p2a",
+          "label": "a)",
+          "question": "Calcula la puntuación $Z$ de curtosis.",
+          "correctValue": -1.759,
+          "tolerance": 0.001,
+          "explanation": "$$Z_{Curtosis} = \\frac{-1.087}{0.618} = -1.7588... \\approx -1.759$$"
+        },
+        {
+          "id": "p2b",
+          "label": "b)",
+          "question": "Calcula el valor absoluto de $Z$ y súmale $0.241$.",
+          "correctValue": 2.0,
+          "tolerance": 0.01,
+          "explanation": "$$|-1.759| + 0.241 = 2.0$$"
+        },
+        {
+          "id": "p2c",
+          "label": "c)",
+          "question": "Si en una muestra mayor el umbral se amplía a $2.58$, ¿cuánto margen de seguridad (diferencia) queda respecto al $Z$ absoluto original?",
+          "correctValue": 0.821,
+          "tolerance": 0.001,
+          "explanation": "$$2.58 - 1.759 = 0.821$$"
+        },
+        {
+          "id": "p2d",
+          "label": "d)",
+          "question": "Si el estadístico de curtosis se duplicara ($-2.174$) con el mismo error ($0.618$), ¿cuál sería el nuevo $Z$?",
+          "correctValue": -3.518,
+          "tolerance": 0.01,
+          "explanation": "$$Z = \\frac{-2.174}{0.618} = -3.5177... \\approx -3.518$$"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Cálculo de Residuos en el MLG",
+      "context": "En el modelo lineal general $Y = b_0 + b_1X + error$, un sujeto tiene un valor observado de satisfacción vital $Y_{obs} = 28.5$. El modelo predice un valor $Y_{pred} = 24.2$.",
+      "parts": [
+        {
+          "id": "p3a",
+          "label": "a)",
+          "question": "Calcula el residuo ($e$) para este sujeto.",
+          "correctValue": 4.3,
+          "tolerance": 0.1,
+          "explanation": "$$e = Y_{obs} - Y_{pred} = 28.5 - 24.2 = 4.3$$"
+        },
+        {
+          "id": "p3b",
+          "label": "b)",
+          "question": "Si el error cuadrático es $e^2$, ¿cuál es su valor?",
+          "correctValue": 18.49,
+          "tolerance": 0.01,
+          "explanation": "$$4.3^2 = 18.49$$"
+        },
+        {
+          "id": "p3c",
+          "label": "c)",
+          "question": "Si la media de los residuos es $0$ y tenemos $10$ sujetos con el mismo error cuadrático, ¿cuál es la varianza residual estimada (dividiendo por $N-1$)?",
+          "correctValue": 20.54,
+          "tolerance": 0.01,
+          "explanation": "$$\\frac{10 \\times 18.49}{9} = 20.544...$$"
+        },
+        {
+          "id": "p3d",
+          "label": "d)",
+          "question": "Calcula la desviación estándar residual (raíz cuadrada de la varianza anterior).",
+          "correctValue": 4.53,
+          "tolerance": 0.01,
+          "explanation": "$$\\sqrt{20.54} = 4.532...$$"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Potencia Estadística: K-S vs Shapiro-Wilk",
+      "context": "Se investiga la potencia de las pruebas de normalidad. El test Shapiro-Wilk es más potente, mientras que Kolmogorov-Smirnov requiere $N > 100$. Supongamos una muestra $N = 43$.",
+      "parts": [
+        {
+          "id": "p4a",
+          "label": "a)",
+          "question": "Si el valor $p$ obtenido en Shapiro-Wilk es $0.018$, ¿cuántas milésimas faltan para alcanzar el nivel de significación no significativo ($0.05$)?",
+          "correctValue": 32.0,
+          "tolerance": 0,
+          "explanation": "$$(0.050 - 0.018) \\times 1000 = 32$$"
+        },
+        {
+          "id": "p4b",
+          "label": "b)",
+          "question": "Si incrementamos la muestra en $60$ sujetos, ¿cuál es el nuevo $N$ total?",
+          "correctValue": 103.0,
+          "tolerance": 0,
+          "explanation": "$$43 + 60 = 103$$"
+        },
+        {
+          "id": "p4c",
+          "label": "c)",
+          "question": "Con $N = 103$, el test K-S da un estadístico de $0.123$ y un valor crítico de $0.087$. ¿Cuál es la diferencia positiva entre ambos?",
+          "correctValue": 0.036,
+          "tolerance": 0.001,
+          "explanation": "$$0.123 - 0.087 = 0.036$$"
+        },
+        {
+          "id": "p4d",
+          "label": "d)",
+          "question": "Si rechazamos $H_0$ cuando el estadístico supera al crítico, y el valor $p$ asociado es $0.031$, ¿cuál es el valor de $1 - p$?",
+          "correctValue": 0.969,
+          "tolerance": 0.001,
+          "explanation": "$$1 - 0.031 = 0.969$$"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Diagramas de Caja y Outliers",
+      "context": "En un diagrama de caja, el primer cuartil ($Q_1$) es $22$ y el tercer cuartil ($Q_3$) es $69$. Un valor se considera atípico si supera $Q_3 + 1.5 \\times IQR$.",
+      "parts": [
+        {
+          "id": "p5a",
+          "label": "a)",
+          "question": "Calcula el rango intercuartil ($IQR$).",
+          "correctValue": 47.0,
+          "tolerance": 0,
+          "explanation": "$$IQR = 69 - 22 = 47$$"
+        },
+        {
+          "id": "p5b",
+          "label": "b)",
+          "question": "Calcula el límite superior para detectar outliers.",
+          "correctValue": 139.5,
+          "tolerance": 0.1,
+          "explanation": "$$69 + (1.5 \\times 47) = 69 + 70.5 = 139.5$$"
+        },
+        {
+          "id": "p5c",
+          "label": "c)",
+          "question": "Si un sujeto tiene una puntuación de $150$, ¿por cuántas unidades supera el límite de outlier?",
+          "correctValue": 10.5,
+          "tolerance": 0.1,
+          "explanation": "$$150 - 139.5 = 10.5$$"
+        },
+        {
+          "id": "p5d",
+          "label": "d)",
+          "question": "Si movemos la mediana ($54$) al centro exacto del $IQR$, ¿qué valor debería tener?",
+          "correctValue": 45.5,
+          "tolerance": 0.1,
+          "explanation": "$$\\frac{69 + 22}{2} = 45.5$$"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Estimación de Error Estándar",
+      "context": "El error estándar de la asimetría se estima aproximadamente como $\\sqrt{\\frac{6}{N}}$. Considera una muestra de $N = 58$.",
+      "parts": [
+        {
+          "id": "p6a",
+          "label": "a)",
+          "question": "Calcula el error estándar estimado mediante la fórmula.",
+          "correctValue": 0.322,
+          "tolerance": 0.01,
+          "explanation": "$$\\sqrt{6/58} = \\sqrt{0.1034} = 0.3216... \\approx 0.322$$"
+        },
+        {
+          "id": "p6b",
+          "label": "b)",
+          "question": "Si el error estándar real reportado es $0.314$, ¿cuál es la diferencia absoluta con el estimado?",
+          "correctValue": 0.008,
+          "tolerance": 0.001,
+          "explanation": "$$|0.322 - 0.314| = 0.008$$"
+        },
+        {
+          "id": "p6c",
+          "label": "c)",
+          "question": "Calcula el valor de $Z$ si la asimetría es $0.028$ usando el error estimado de $0.322$.",
+          "correctValue": 0.087,
+          "tolerance": 0.001,
+          "explanation": "$$0.028 / 0.322 = 0.0869... \\approx 0.087$$"
+        },
+        {
+          "id": "p6d",
+          "label": "d)",
+          "question": "Si triplicamos la muestra ($N=174$), ¿cuál sería el nuevo error estándar estimado?",
+          "correctValue": 0.186,
+          "tolerance": 0.005,
+          "explanation": "$$\\sqrt{6/174} = \\sqrt{0.03448} = 0.1856... \\approx 0.186$$"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Comparación de Grupos y Normalidad",
+      "context": "En un estudio comparativo, el grupo femenino ($n=43$) tiene una media de $51.19$ y una desviación estándar de $31.424$.",
+      "parts": [
+        {
+          "id": "p7a",
+          "label": "a)",
+          "question": "Calcula la varianza del grupo.",
+          "correctValue": 987.47,
+          "tolerance": 0.1,
+          "explanation": "$$31.424^2 = 987.4677...$$"
+        },
+        {
+          "id": "p7b",
+          "label": "b)",
+          "question": "Calcula el error estándar de la media ($SE = \\frac{SD}{\\sqrt{n}}$).",
+          "correctValue": 4.792,
+          "tolerance": 0.001,
+          "explanation": "$$31.424 / \\sqrt{43} = 31.424 / 6.557... = 4.792$$"
+        },
+        {
+          "id": "p7c",
+          "label": "c)",
+          "question": "Si el límite inferior del intervalo de confianza al $95\\%$ es $41.52$, ¿cuál es el margen de error total respecto a la media?",
+          "correctValue": 9.67,
+          "tolerance": 0.01,
+          "explanation": "$$51.19 - 41.52 = 9.67$$"
+        },
+        {
+          "id": "p7d",
+          "label": "d)",
+          "question": "Si el valor crítico de $t$ para este margen es $2.018$, divide el margen de error ($9.67$) por este valor crítico para verificar el $SE$.",
+          "correctValue": 4.79,
+          "tolerance": 0.01,
+          "explanation": "$$9.67 / 2.018 = 4.7918...$$"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Linealidad y Predicción",
+      "context": "Un modelo lineal relaciona Autoestima ($X$) con Satisfacción Vital ($Y$): $Y = 5.2 + 2.1X$.",
+      "parts": [
+        {
+          "id": "p8a",
+          "label": "a)",
+          "question": "Si un sujeto tiene $X = 8$, ¿cuál es su satisfacción vital predicha?",
+          "correctValue": 22.0,
+          "tolerance": 0,
+          "explanation": "$$5.2 + (2.1 \\times 8) = 5.2 + 16.8 = 22.0$$"
+        },
+        {
+          "id": "p8b",
+          "label": "b)",
+          "question": "Si el valor real es $25.4$, ¿cuál es el residuo?",
+          "correctValue": 3.4,
+          "tolerance": 0.1,
+          "explanation": "$$25.4 - 22.0 = 3.4$$"
+        },
+        {
+          "id": "p8c",
+          "label": "c)",
+          "question": "Si aumentamos $X$ en $2$ unidades, ¿cuántas unidades aumenta la predicción de $Y$ (según la pendiente)?",
+          "correctValue": 4.2,
+          "tolerance": 0.1,
+          "explanation": "$$2.1 \\times 2 = 4.2$$"
+        },
+        {
+          "id": "p8d",
+          "label": "d)",
+          "question": "Calcula el valor de $Y$ predicho para $X=10$.",
+          "correctValue": 26.2,
+          "tolerance": 0.1,
+          "explanation": "$$5.2 + (2.1 \\times 10) = 26.2$$"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Homocedasticidad: Ratio de Varianzas",
+      "context": "El supuesto de homocedasticidad se puede evaluar comparando la varianza de dos grupos. Varianza Grupo A = $848.17$, Varianza Grupo B = $987.44$.",
+      "parts": [
+        {
+          "id": "p9a",
+          "label": "a)",
+          "question": "Calcula la razón de varianzas (Varianza Mayor / Varianza Menor).",
+          "correctValue": 1.164,
+          "tolerance": 0.001,
+          "explanation": "$$987.44 / 848.17 = 1.1642... \\approx 1.164$$"
+        },
+        {
+          "id": "p9b",
+          "label": "b)",
+          "question": "Si la regla del pulgar dice que el ratio debe ser menor a $1.5$ para asumir homogeneidad, ¿qué diferencia queda hasta ese límite?",
+          "correctValue": 0.336,
+          "tolerance": 0.001,
+          "explanation": "$$1.5 - 1.164 = 0.336$$"
+        },
+        {
+          "id": "p9c",
+          "label": "c)",
+          "question": "Si la Varianza del Grupo B aumentara a $1300$, ¿cuál sería el nuevo ratio?",
+          "correctValue": 1.533,
+          "tolerance": 0.001,
+          "explanation": "$$1300 / 848.17 = 1.5327... \\approx 1.533$$"
+        },
+        {
+          "id": "p9d",
+          "label": "d)",
+          "question": "En el caso anterior ($1.533$), ¿por cuántas unidades superamos el límite de $1.5$?",
+          "correctValue": 0.033,
+          "tolerance": 0.001,
+          "explanation": "$$1.533 - 1.5 = 0.033$$"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Distribución de Residuos",
+      "context": "En un histograma de residuos, se observa una media de $0.05$ y una desviación estándar de $1.2$.",
+      "parts": [
+        {
+          "id": "p10a",
+          "label": "a)",
+          "question": "Calcula el valor $Z$ para un residuo de $2.45$.",
+          "correctValue": 2.0,
+          "tolerance": 0,
+          "explanation": "$$(2.45 - 0.05) / 1.2 = 2.4 / 1.2 = 2.0$$"
+        },
+        {
+          "id": "p10b",
+          "label": "b)",
+          "question": "Si el $95\\%$ de los residuos deben estar entre $\\pm1.96$ desviaciones, ¿supera este residuo el límite?",
+          "correctValue": 1.0,
+          "tolerance": 0,
+          "explanation": "$$1 = Sí; 0 = No. Como 2.0 > 1.96, la respuesta es Sí (1)$$."
+        },
+        {
+          "id": "p10c",
+          "label": "c)",
+          "question": "Calcula el valor real del residuo que marcaría el límite superior ($+1.96SD$).",
+          "correctValue": 2.402,
+          "tolerance": 0.001,
+          "explanation": "$$0.05 + (1.96 \\times 1.2) = 0.05 + 2.352 = 2.402$$"
+        },
+        {
+          "id": "p10d",
+          "label": "d)",
+          "question": "Calcula el valor real del residuo que marcaría el límite inferior ($-1.96SD$).",
+          "correctValue": -2.302,
+          "tolerance": 0.001,
+          "explanation": "$$0.05 - (1.96 \\times 1.2) = 0.05 - 2.352 = -2.302$$"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Ajuste Visual Q-Q Plot",
+      "context": "Un gráfico Q-Q compara cuantiles observados vs teóricos. Si la pendiente de la línea de ajuste es $1$ y la ordenada es $0$, hay ajuste perfecto.",
+      "parts": [
+        {
+          "id": "p11a",
+          "label": "a)",
+          "question": "Si un punto observado tiene un cuantil de $2.1$ y el teórico es $1.9$, ¿cuál es el error de ajuste lineal ($y - x$)?",
+          "correctValue": 0.2,
+          "tolerance": 0.1,
+          "explanation": "$$2.1 - 1.9 = 0.2$$"
+        },
+        {
+          "id": "p11b",
+          "label": "b)",
+          "question": "Si la suma de errores de $10$ puntos es $1.5$, ¿cuál es el error promedio?",
+          "correctValue": 0.15,
+          "tolerance": 0.01,
+          "explanation": "$$1.5 / 10 = 0.15$$"
+        },
+        {
+          "id": "p11c",
+          "label": "c)",
+          "question": "Si el error promedio se eleva al cuadrado, ¿cuál es su valor?",
+          "correctValue": 0.0225,
+          "tolerance": 0.0001,
+          "explanation": "$$0.15^2 = 0.0225$$"
+        },
+        {
+          "id": "p11d",
+          "label": "d)",
+          "question": "Si para considerar 'normalidad visual' el error cuadrático medio debe ser inferior a $0.05$, ¿se cumple el supuesto con $0.0225$?",
+          "correctValue": 1.0,
+          "tolerance": 0,
+          "explanation": "$$1 = Sí; 0 = No. Como 0.0225 < 0.05, es Sí (1)$$."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Parámetros de Normalidad: Muestra Grande",
+      "context": "En muestras muy grandes ($N > 200$), se recomienda usar un nivel de significación de $\\pm3.29$ para $Z$ de asimetría y curtosis.",
+      "parts": [
+        {
+          "id": "p12a",
+          "label": "a)",
+          "question": "Calcula el estadístico de asimetría máximo permitido si el error estándar es $0.150$ (usando umbral $3.29$).",
+          "correctValue": 0.494,
+          "tolerance": 0.001,
+          "explanation": "$$0.150 \\times 3.29 = 0.4935 \\approx 0.494$$"
+        },
+        {
+          "id": "p12b",
+          "label": "b)",
+          "question": "Si obtenemos un estadístico de $0.510$, ¿por cuánto supera al máximo permitido?",
+          "correctValue": 0.016,
+          "tolerance": 0.001,
+          "explanation": "$$0.510 - 0.494 = 0.016$$"
+        },
+        {
+          "id": "p12c",
+          "label": "c)",
+          "question": "Si cambiamos al umbral de $2.58$, ¿cuál sería el estadístico máximo permitido con el mismo error?",
+          "correctValue": 0.387,
+          "tolerance": 0.001,
+          "explanation": "$$0.150 \\times 2.58 = 0.387$$"
+        },
+        {
+          "id": "p12d",
+          "label": "d)",
+          "question": "Calcula la diferencia entre el máximo permitido con umbral $3.29$ y el de $2.58$.",
+          "correctValue": 0.107,
+          "tolerance": 0.001,
+          "explanation": "$$0.494 - 0.387 = 0.107$$"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Relación entre Varianza y Varianza Residual",
+      "context": "La varianza total de $Y$ es $150.0$. La varianza explicada por el modelo es $110.0$. El resto es varianza residual.",
+      "parts": [
+        {
+          "id": "p13a",
+          "label": "a)",
+          "question": "Calcula la varianza residual.",
+          "correctValue": 40.0,
+          "tolerance": 0,
+          "explanation": "$$150.0 - 110.0 = 40.0$$"
+        },
+        {
+          "id": "p13b",
+          "label": "b)",
+          "question": "Calcula la proportion de varianza no explicada (Varianza Residual / Varianza Total).",
+          "correctValue": 0.267,
+          "tolerance": 0.001,
+          "explanation": "$$40.0 / 150.0 = 0.2666... \\approx 0.267$$"
+        },
+        {
+          "id": "p13c",
+          "label": "c)",
+          "question": "Calcula el coeficiente de determinación $R^2$ (Varianza Explicada / Varianza Total).",
+          "correctValue": 0.733,
+          "tolerance": 0.001,
+          "explanation": "$$110.0 / 150.0 = 0.7333... \\approx 0.733$$"
+        },
+        {
+          "id": "p13d",
+          "label": "d)",
+          "question": "Suma los resultados de b) y c). Debería ser igual a 1.",
+          "correctValue": 1.0,
+          "tolerance": 0,
+          "explanation": "$$0.267 + 0.733 = 1.0$$"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Interpretación de P-Valores",
+      "context": "Se realizan dos pruebas de normalidad. K-S da $p = 0.200$ y Shapiro-Wilk da $p = 0.011$. Alpha = $0.05$.",
+      "parts": [
+        {
+          "id": "p14a",
+          "label": "a)",
+          "question": "Diferencia entre el p-valor de K-S y el alpha.",
+          "correctValue": 0.15,
+          "tolerance": 0.01,
+          "explanation": "$$0.200 - 0.05 = 0.15$$"
+        },
+        {
+          "id": "p14b",
+          "label": "b)",
+          "question": "Diferencia entre el alpha y el p-valor de Shapiro-Wilk.",
+          "correctValue": 0.039,
+          "tolerance": 0.001,
+          "explanation": "$$0.05 - 0.011 = 0.039$$"
+        },
+        {
+          "id": "p14c",
+          "label": "c)",
+          "question": "Si promediamos ambos p-valores, ¿cuál es el resultado?",
+          "correctValue": 0.105,
+          "tolerance": 0.001,
+          "explanation": "$$(0.200 + 0.011) / 2 = 0.1055$$"
+        },
+        {
+          "id": "p14d",
+          "label": "d)",
+          "question": "¿Es el promedio anterior mayor a alpha? (1 = Sí, 0 = No)",
+          "correctValue": 1.0,
+          "tolerance": 0,
+          "explanation": "$$0.1055 > 0.05$$, por tanto Sí (1)."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Cálculo de Error Estándar de la Curtosis",
+      "context": "El error estándar de la curtosis se estima como $\\sqrt{\\frac{24}{N}}$. Considera $N = 101$.",
+      "parts": [
+        {
+          "id": "p15a",
+          "label": "a)",
+          "question": "Calcula el error estándar estimado de la curtosis.",
+          "correctValue": 0.488,
+          "tolerance": 0.005,
+          "explanation": "$$\\sqrt{24/101} = \\sqrt{0.2376} = 0.4874... \\approx 0.488$$"
+        },
+        {
+          "id": "p15b",
+          "label": "b)",
+          "question": "Si el error estándar reportado es $0.478$, ¿cuál es la diferencia absoluta?",
+          "correctValue": 0.01,
+          "tolerance": 0.001,
+          "explanation": "$$|0.488 - 0.478| = 0.01$$"
+        },
+        {
+          "id": "p15c",
+          "label": "c)",
+          "question": "Si la curtosis es $-1.20$, calcula $Z$ usando el error de $0.488$.",
+          "correctValue": -2.459,
+          "tolerance": 0.01,
+          "explanation": "$$-1.20 / 0.488 = -2.4590...$$"
+        },
+        {
+          "id": "p15d",
+          "label": "d)",
+          "question": "¿Supera el valor absoluto de este $Z$ ($2.459$) al umbral de $1.96$? (1 = Sí, 0 = No)",
+          "correctValue": 1.0,
+          "tolerance": 0,
+          "explanation": "$$2.459 > 1.96$$, Sí (1)."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Variables Categóricas y Medias",
+      "context": "En un gráfico de linealidad con variable categórica, el Grupo 0 (desempleados) tiene media $10.0$ y el Grupo 1 (empleados) media $15.0$.",
+      "parts": [
+        {
+          "id": "p16a",
+          "label": "a)",
+          "question": "Calcula la diferencia de medias.",
+          "correctValue": 5.0,
+          "tolerance": 0,
+          "explanation": "$$15.0 - 10.0 = 5.0$$"
+        },
+        {
+          "id": "p16b",
+          "label": "b)",
+          "question": "Si el modelo lineal es $Y = b_0 + b_1X$ donde $X=0$ o $1$, ¿cuál es el valor de $b_0$?",
+          "correctValue": 10.0,
+          "tolerance": 0,
+          "explanation": "$$b_0$$ es la media del grupo con $$X=0$$. Por tanto $$10.0$$."
+        },
+        {
+          "id": "p16c",
+          "label": "c)",
+          "question": "¿Cuál es el valor de la pendiente $b_1$?",
+          "correctValue": 5.0,
+          "tolerance": 0,
+          "explanation": "$$b_1$$ es la diferencia entre medias: $$15.0 - 10.0 = 5.0$$."
+        },
+        {
+          "id": "p16d",
+          "label": "d)",
+          "question": "Suma intercepto y pendiente. Debería dar la media del Grupo 1.",
+          "correctValue": 15.0,
+          "tolerance": 0,
+          "explanation": "$$10.0 + 5.0 = 15.0$$"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Impacto de Outliers en la Media",
+      "context": "Una muestra de $N=5$ tiene valores: $10, 12, 11, 13, 50$. El valor $50$ es un outlier.",
+      "parts": [
+        {
+          "id": "p17a",
+          "label": "a)",
+          "question": "Calcula la media de la muestra completa.",
+          "correctValue": 19.2,
+          "tolerance": 0.1,
+          "explanation": "$$(10+12+11+13+50)/5 = 96/5 = 19.2$$"
+        },
+        {
+          "id": "p17b",
+          "label": "b)",
+          "question": "Calcula la media eliminando el outlier.",
+          "correctValue": 11.5,
+          "tolerance": 0.1,
+          "explanation": "$$(10+12+11+13)/4 = 46/4 = 11.5$$"
+        },
+        {
+          "id": "p17c",
+          "label": "c)",
+          "question": "¿Cuántas unidades se desvía la media completa de la media sin outlier?",
+          "correctValue": 7.7,
+          "tolerance": 0.1,
+          "explanation": "$$19.2 - 11.5 = 7.7$$"
+        },
+        {
+          "id": "p17d",
+          "label": "d)",
+          "question": "Calcula el porcentaje de incremento que supone el outlier sobre la media original ($7.7 / 11.5 \\times 100$).",
+          "correctValue": 66.96,
+          "tolerance": 0.1,
+          "explanation": "$$(7.7 / 11.5) \\times 100 = 66.956... \\approx 66.96$$"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Verificación de Supuestos: Mesocúrtica",
+      "context": "Una distribución perfectamente normal tiene curtosis $0$ y asimetría $0$. Nuestra muestra tiene asimetría $0.12$ y curtosis $-0.45$.",
+      "parts": [
+        {
+          "id": "p18a",
+          "label": "a)",
+          "question": "Suma los valores absolutos de ambos estadísticos.",
+          "correctValue": 0.57,
+          "tolerance": 0.01,
+          "explanation": "$$0.12 + 0.45 = 0.57$$"
+        },
+        {
+          "id": "p18b",
+          "label": "b)",
+          "question": "Si el error estándar de asimetría es $0.20$, calcula su $Z$.",
+          "correctValue": 0.6,
+          "tolerance": 0,
+          "explanation": "$$0.12 / 0.20 = 0.6$$"
+        },
+        {
+          "id": "p18c",
+          "label": "c)",
+          "question": "Si el error estándar de curtosis es $0.40$, calcula su $Z$.",
+          "correctValue": -1.125,
+          "tolerance": 0.001,
+          "explanation": "$$-0.45 / 0.40 = -1.125$$"
+        },
+        {
+          "id": "p18d",
+          "label": "d)",
+          "question": "Suma los valores absolutos de los $Z$ obtenidos ($0.6 + 1.125$).",
+          "correctValue": 1.725,
+          "tolerance": 0.001,
+          "explanation": "$$0.6 + 1.125 = 1.725$$"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Sensibilidad de las Pruebas de Normalidad",
+      "context": "En muestras pequeñas ($N < 30$), la precisión de las pruebas es baja. Supón una muestra $N = 25$ con estadístico $S-W = 0.890$ y crítico $0.918$.",
+      "parts": [
+        {
+          "id": "p19a",
+          "label": "a)",
+          "question": "Calcula la diferencia (Estadístico - Crítico).",
+          "correctValue": -0.028,
+          "tolerance": 0.001,
+          "explanation": "$$0.890 - 0.918 = -0.028$$"
+        },
+        {
+          "id": "p19b",
+          "label": "b)",
+          "question": "Si rechazamos $H_0$ si el estadístico es menor al crítico, ¿rechazamos normalidad? (1 = Sí, 0 = No)",
+          "correctValue": 1.0,
+          "tolerance": 0,
+          "explanation": "$$0.890 < 0.918$$, por tanto Sí (1)."
+        },
+        {
+          "id": "p19c",
+          "label": "c)",
+          "question": "Si el valor $p$ es $0.042$, ¿cuántas milésimas está por debajo del alpha $0.05$?",
+          "correctValue": 8.0,
+          "tolerance": 0,
+          "explanation": "$$(0.050 - 0.042) \\times 1000 = 8$$"
+        },
+        {
+          "id": "p19d",
+          "label": "d)",
+          "question": "Si triplicamos la muestra y el estadístico sube a $0.940$ con crítico $0.925$, ¿cuál es el nuevo margen positivo?",
+          "correctValue": 0.015,
+          "tolerance": 0.001,
+          "explanation": "$$0.940 - 0.925 = 0.015$$"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Cálculo Integral de Residuos",
+      "context": "Se analizan los residuos de $4$ sujetos: $2.1, -1.4, 0.8, -1.5$.",
+      "parts": [
+        {
+          "id": "p20a",
+          "label": "a)",
+          "question": "Calcula la suma algebraica de los residuos.",
+          "correctValue": 0.0,
+          "tolerance": 0.1,
+          "explanation": "$$2.1 - 1.4 + 0.8 - 1.5 = 0.0$$. (Supuesto de media cero)."
+        },
+        {
+          "id": "p20b",
+          "label": "b)",
+          "question": "Suma los cuadrados de los residuos.",
+          "correctValue": 9.26,
+          "tolerance": 0.01,
+          "explanation": "$$2.1^2 + (-1.4)^2 + 0.8^2 + (-1.5)^2 = 4.41 + 1.96 + 0.64 + 2.25 = 9.26$$"
+        },
+        {
+          "id": "p20c",
+          "label": "c)",
+          "question": "Calcula la varianza residual ($S^2 = SumaCuadrados / (N-1)$).",
+          "correctValue": 3.087,
+          "tolerance": 0.001,
+          "explanation": "$$9.26 / (4-1) = 9.26 / 3 = 3.0866...$$"
+        },
+        {
+          "id": "p20d",
+          "label": "d)",
+          "question": "Calcula la desviación estándar de los residuos.",
+          "correctValue": 1.757,
+          "tolerance": 0.001,
+          "explanation": "$$\\sqrt{3.087} = 1.7569...$$"
+        }
+      ]
+    }
+  ],
+  "jsonFormulas": [
+    {
+      "name": "Hipótesis Nula de Linealidad (MLG)",
+      "tex": "$$Y = b_0 + b_1X_1 + b_2X_2 + ... + b_nX_n + \\text{error}$$"
+    },
+    {
+      "name": "Hipótesis Alternativa de Linealidad",
+      "tex": "$$Y \\neq b_0 + b_1X_1 + b_2X_2 + ... + b_nX_n + \\text{error}$$"
+    },
+    {
+      "name": "Hipótesis Nula de Normalidad",
+      "tex": "$$X = N(\\mu, \\sigma^2)$$"
+    },
+    {
+      "name": "Hipótesis Alternativa de Normalidad",
+      "tex": "$$X \\neq N(\\mu, \\sigma^2)$$"
+    },
+    {
+      "name": "Puntuación Z de Asimetría",
+      "tex": "$$Z_{\\text{Asimetría}} = \\frac{\\text{Estadístico}}{\\text{Error estándar}}$$"
+    },
+    {
+      "name": "Puntuación Z de Curtosis",
+      "tex": "$$Z_{\\text{Curtosis}} = \\frac{\\text{Estadístico}}{\\text{Error estándar}}$$"
+    }
+  ]
+}

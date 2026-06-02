@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIMAP - Tema 5: Contraste de Hipótesis</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Configuración de MathJax para renderizar LaTeX -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            startup: {
+                typeset: false // Lo llamaremos manualmente después de cargar las vistas
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f0f9ff;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(192, 90%, 90%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(170, 70%, 90%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(210, 80%, 90%, 1) 0, transparent 50%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 40px -10px rgba(14, 165, 233, 0.15);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 50%, #2dd4bf 100%);
+            background-size: 200% 200%;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            color: white;
+            font-weight: 700;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
+            background-position: 100% 50%;
+        }
+
+        /* Estilos Flashcards */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .card-inner.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 1.5rem;
+        }
+
+        .card-front {
+            background: white;
+            border: 2px solid #e2e8f0;
+        }
+
+        .card-back {
+            background: #4f46e5;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .option-btn {
+            transition: all 0.2s;
+            border: 2px solid #e2e8f0;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: #0ea5e9;
+            background-color: #f0f9ff;
+            transform: translateX(5px);
+        }
+
+        /* MathJax adjustments to prevent overflow */
+        mjx-container {
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Global -->
+    <header class="glass-card sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="app.showView('home')">
+                <div class="bg-sky-600 text-white p-2 rounded-lg shadow-lg">
+                    <i class="ph-bold ph-chart-line-up text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-xl tracking-tight text-slate-800" id="header-title">Tema 5 - Contraste de Hipótesis</h1>
+                    <p class="text-[9px] uppercase tracking-widest font-bold text-slate-500">ANÁLISIS DE DATOS Y MATEMÁTICAS</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 sm:gap-4">
+                <!-- Botón Portal Principal -->
+                <a href="../../../index.html" class="bg-slate-700 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-arrow-left text-lg"></i> <span class="hidden sm:inline">Portal Principal</span>
+                </a>
+
+                <!-- Botón Calculadora Externa -->
+                <a href="https://web2.0calc.es/" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-calculator text-lg"></i> <span class="hidden sm:inline">Calculadora</span>
+                </a>
+
+                <!-- Botón Menú Global -->
+                <button id="btn-global-menu" onclick="app.showView('home')" class="hidden bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-xl items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-house text-lg"></i> <span class="hidden sm:inline">Menú</span>
+                </button>
+
+                <!-- Contador Global -->
+                <div id="nav-counter" class="hidden items-center gap-2 bg-white/60 px-3 py-1.5 rounded-full border border-white">
+                    <span id="global-counter" class="text-sky-700 font-bold font-mono text-sm">0/0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-5xl w-full mx-auto p-6 flex flex-col items-center justify-center">
+
+        <!-- VIEW: HOME (MENU) -->
+        <section id="view-home" class="fade-in w-full">
+            <div class="text-center mb-12">
+                <h1 class="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400 mb-8 tracking-tighter opacity-80 select-none">
+                    SAIMAP</h1>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-4">¿Cómo quieres practicar hoy?</h2>
+                <h3 class="text-xl font-bold text-slate-600 mb-4">Tema 5 - Contraste de Hipótesis</h3>
+                <p class="text-slate-500">Selecciona la herramienta que mejor se adapte a tu objetivo de estudio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                <!-- QUIZ -->
+                <div onclick="app.startTool('quiz')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-sky-500">
+                    <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-numbers text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Test Teórico</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Preguntas de opción múltiple sobre conceptos y propiedades estadísticas.</p>
+                </div>
+
+                <!-- LABORATORIO (Reemplaza Trainer) -->
+                <div onclick="app.startTool('laboratorio')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-emerald-500">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-calculator text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Laboratorio</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Ejercicios de cálculo numérico con escenarios guiados paso a paso.</p>
+                </div>
+
+                <!-- FÓRMULAS (Reemplaza Flashcards) -->
+                <div onclick="app.startTool('formulas')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-indigo-500">
+                    <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-dashes text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fórmulas</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Glosario completo de fórmulas matemáticas para consultar rápidamente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: QUIZ -->
+        <section id="view-quiz" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-sky-500"></div>
+
+                <div class="flex justify-between items-center mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Modo Test</span>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">
+                            Finalizar Sesión
+                        </button>
+                    </div>
+                    <button id="quiz-hint-btn" onclick="app.quizToggleHint()" class="text-amber-600 font-bold text-xs flex items-center gap-1 hover:bg-amber-50 px-3 py-1.5 rounded-lg transition">
+                        <i class="ph-bold ph-lightbulb"></i> Ver Pista
+                    </button>
+                </div>
+
+                <h2 id="quiz-question" class="text-2xl font-bold text-slate-800 mb-8 math-content"></h2>
+
+                <div id="quiz-hint-box" class="hidden mb-6 p-4 bg-amber-50 border-l-4 border-amber-400 text-amber-900 text-sm italic rounded-r-xl math-content"></div>
+
+                <div id="quiz-options" class="space-y-3"></div>
+
+                <!-- Feedback Quiz -->
+                <div id="quiz-feedback" class="hidden mt-8 p-6 rounded-2xl border transition-all">
+                    <div class="flex items-start gap-4">
+                        <div id="quiz-feedback-icon" class="text-3xl"></div>
+                        <div class="w-full">
+                            <h4 id="quiz-feedback-title" class="font-bold text-lg"></h4>
+                            <div id="quiz-explanation" class="text-sm text-slate-600 mt-2 p-3 bg-slate-50 rounded-lg math-content"></div>
+                        </div>
+                    </div>
+                    <button onclick="app.quizNext()" class="mt-6 btn-primary py-4 px-8 rounded-xl w-full flex items-center justify-center gap-2">
+                        Continuar <i class="ph ph-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: LABORATORIO -->
+        <section id="view-laboratorio" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl overflow-hidden border-t-4 border-emerald-500">
+                <!-- Cabecera y Contexto -->
+                <div class="p-6 md:p-8 bg-emerald-50/50 border-b border-slate-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center font-bold" id="lab-problem-number">1</div>
+                            <h2 id="lab-main-title" class="text-xl font-bold text-slate-800"></h2>
+                        </div>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">Finalizar</button>
+                    </div>
+                    <div id="lab-context-box" class="bg-white/80 p-5 rounded-xl text-slate-700 math-content text-base border border-slate-200 shadow-inner"></div>
+                </div>
+
+                <!-- Contenedor de Apartados -->
+                <div id="lab-parts-container" class="flex flex-col bg-white">
+                    <!-- Los apartados se inyectan aquí automáticamente -->
+                </div>
+            </div>
+
+            <!-- Botón de siguiente problema -->
+            <button onclick="app.labNext()" class="mt-6 w-full bg-slate-800 hover:bg-slate-900 text-white py-4 rounded-xl font-bold shadow-lg transform active:scale-95 transition flex justify-center items-center gap-2">
+                Siguiente Problema <i class="ph-bold ph-arrow-right"></i>
+            </button>
+        </section>
+
+        <!-- VIEW: FÓRMULAS -->
+        <section id="view-formulas" class="hidden w-full fade-in space-y-6">
+            <div class="mb-6 px-2">
+                <h2 class="text-3xl font-black text-slate-800">Glosario de Fórmulas</h2>
+                <p class="text-slate-500 mt-1">Lista completa de recursos matemáticos</p>
+            </div>
+            
+            <!-- Grid Scrollable para las fórmulas -->
+            <div id="formulas-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-12">
+                <!-- Las fórmulas se inyectarán aquí -->
+            </div>
+        </section>
+
+        <!-- VIEW: RESULTS -->
+        <section id="view-results" class="hidden w-full fade-in text-center py-12">
+            <div class="glass-card p-12 rounded-[3rem] inline-block max-w-md w-full border-2 border-white shadow-2xl">
+                <div class="w-24 h-24 bg-yellow-400 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl shadow-yellow-200">
+                    <i class="ph-fill ph-trophy text-5xl"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold text-slate-800 mb-2">¡Sesión Finalizada!</h2>
+                <p id="result-text" class="text-slate-500 mb-8">Has completado todos los ejercicios.</p>
+
+                <div class="flex flex-col gap-3">
+                    <button id="btn-retry-errors" onclick="app.retryErrors()" class="hidden bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-2xl transition flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-warning-circle"></i> Repasar solo Fallos (<span id="fail-count">0</span>)
+                    </button>
+                    <button onclick="app.showView('home')" class="btn-primary w-full py-4 rounded-2xl uppercase tracking-widest text-sm shadow-md">Menú Principal</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // --- DATOS JSON VACÍOS (Inyectados dinámicamente) ---
+        const jsonTestA = [{"q": "¿Es verdadero que el ANOVA de dos factores calcula un único valor $F$ global para determinar la validez de todo el modelo experimental?", "options": ["Verdadero, pues se busca una significación general del diseño", "Falso, ya que se obtienen tres valores $F$ estadísticamente independientes", "No se puede determinar sin conocer los grados de libertad del error"], "correct": 1, "hint": "Recuerde que el modelo evalúa efectos principales y la interacción por separado.", "explanation": "$$\\text{En el ANOVA de dos factores se calculan tres estadísticos } F: \\text{ uno para el factor A, uno para el B y uno para la interacción } A \\times B.$$"}, {"q": "¿Es verdadero que la interacción $A \\times B$ es significativa si el efecto de un factor es constante en todos los niveles del otro factor?", "options": ["Verdadero, la constancia es el indicador de una interacción pura", "Falso, la interacción implica que el efecto varía según el nivel", "No se puede determinar si no se cumplen los supuestos de normalidad"], "correct": 1, "hint": "Piense en la definición de independencia de los efectos de los factores.", "explanation": "$$\\text{La interacción significativa ocurre cuando el impacto de una VI sobre la VD se ve modificado por los niveles de la otra VI.}$$"}, {"q": "¿Es verdadero que el ANOVA mixto requiere que los sujetos de los distintos grupos del factor intersujetos sean totalmente independientes?", "options": ["Verdadero, la independencia es un supuesto crítico intersujetos", "Falso, el diseño mixto permite correlación entre todos los grupos", "No se puede determinar dado que se incluyen medidas repetidas"], "correct": 0, "hint": "Considere la naturaleza de la variabilidad entre grupos en diseños factoriales.", "explanation": "$$\\text{El supuesto de independencia de las observaciones es fundamental para la validez del factor intersujetos en modelos mixtos.}$$"}, {"q": "¿Es verdadero que el tamaño del efecto en el ANOVA factorial se reporta mediante un único valor de $\\eta_p^2$ para el conjunto de las variables?", "options": ["Verdadero, para simplificar la interpretación del rendimiento global", "Falso, se debe reportar un $\\eta_p^2$ específico por cada efecto", "No se puede determinar si el diseño tiene factores de medidas repetidas"], "correct": 1, "hint": "Cada fuente de varianza explicada tiene su propia magnitud de asociación.", "explanation": "$$\\text{Al igual que el estadístico } F, \\text{ el tamaño del efecto } \\eta_p^2 \\text{ se calcula de forma independiente para cada factor e interacción.}$$"}, {"q": "¿Es verdadero que la prueba de Tukey es preferible a la de Bonferroni cuando los tamaños de los grupos son significativamente desiguales?", "options": ["Verdadero, Tukey es más robusto ante la desigualdad de las varianzas", "Falso, Bonferroni se recomienda específicamente ante muestras desiguales", "No se puede determinar sin verificar previamente el supuesto de esfericidad"], "correct": 1, "hint": "Considere cuál de las dos pruebas es más conservadora ante el error tipo I.", "explanation": "$$\\text{La prueba de Bonferroni es más conservadora y adecuada para tamaños muestrales desiguales o múltiples comparaciones no planeadas.}$$"}, {"q": "¿Es verdadero que la corrección de Greenhouse-Geisser se aplica cuando se vulnera el supuesto de homogeneidad de varianzas intersujetos?", "options": ["Verdadero, pues ajusta los grados de libertad para corregir el sesgo", "Falso, dicha corrección se aplica ante el incumplimiento de esfericidad", "No se puede determinar si el factor intrasujetos tiene solo dos niveles"], "correct": 1, "hint": "Esta corrección es específica para diseños de medidas repetidas o factores intrasujetos.", "explanation": "$$\\text{La corrección de Greenhouse-Geisser se utiliza para ajustar los grados de libertad cuando no se cumple la esfericidad en factores intrasujetos.}$$"}, {"q": "¿Es verdadero que el ANOVA mixto es capaz de evaluar simultáneamente un factor de medidas independientes y un factor de medidas repetidas?", "options": ["Verdadero, esa es precisamente la funcionalidad que define al diseño", "Falso, el ANOVA mixto solo evalúa variables continuas no relacionadas", "No se puede determinar si la variable dependiente no es estrictamente ordinal"], "correct": 0, "hint": "Recuerde el término 'mixto' en el contexto de la procedencia de los datos.", "explanation": "$$\\text{El ANOVA mixto integra factores intersujetos (independientes) e intrasujetos (repetidos) en un mismo modelo de análisis de varianza.}$$"}, {"q": "¿Es verdadero que en un ANOVA de dos factores la variabilidad del error incluye la variabilidad explicada por la interacción de los factores?", "options": ["Verdadero, la interacción siempre se suma al residuo para el cálculo", "Falso, la variabilidad de la interacción es un componente independiente", "No se puede determinar si el diseño es equilibrado o tiene celdas vacías"], "correct": 1, "hint": "Repase la descomposición de la varianza total en el modelo factorial.", "explanation": "$$\\text{La variabilidad total se divide en Factor A, Factor B, Interacción } A \\times B \\text{ y Error; son componentes mutuamente excluyentes.}$$"}, {"q": "¿Es verdadero que la hipótesis nula para el factor intrasujetos en un ANOVA mixto afirma que no hay cambios a lo largo del tiempo o condiciones?", "options": ["Verdadero, asume que las medias de los distintos momentos son iguales", "Falso, asume que la interacción entre el tiempo y el grupo es nula", "No se puede determinar sin realizar primero las comparaciones post hoc"], "correct": 0, "hint": "Recuerde que $H_0$ siempre postula la ausencia de efecto o diferencia significativa.", "explanation": "$$\\text{La } H_0 \\text{ del factor intrasujetos plantea que el efecto de los diferentes niveles o momentos sobre la VD es nulo o inexistente.}$$"}, {"q": "¿Es verdadero que si encontramos una interacción significativa en un ANOVA mixto, debemos proceder directamente a interpretar los efectos principales?", "options": ["Verdadero, los efectos principales son más informativos que la interacción", "Falso, la interacción significativa puede enmascarar los efectos principales", "No se puede determinar sin conocer el nivel de significación prefijado"], "correct": 1, "hint": "La interacción indica que el efecto de un factor depende del otro, lo que complica la interpretación aislada.", "explanation": "$$\\text{Una interacción significativa requiere realizar comparaciones simples, ya que los efectos principales pueden ser engañosos por sí solos.}$$"}, {"q": "Seleccione la afirmación correcta respecto a la descomposición de la varianza en un diseño factorial de dos factores (A y B).", "options": ["La variabilidad total es la suma de la varianza inter-grupos e intra-grupos", "La variación sistemática incluye los factores A, B y su interacción conjunta", "El error aleatorio absorbe la varianza debida al factor con mayor niveles"], "correct": 1, "hint": "Piense en qué partes del modelo son controladas por el investigador y cuáles no.", "explanation": "$$\\text{En el ANOVA factorial, la variación sistemática se desglosa en los efectos de los factores principales y su interacción específica.}$$"}, {"q": "Seleccione la afirmación correcta sobre el cálculo de los grados de libertad para la interacción $A \\times B$ en un ANOVA de dos factores.", "options": ["Es el producto de los grados de libertad de los factores individuales", "Es la suma de los grados de libertad de A y B restando la unidad total", "Es igual al número total de sujetos menos el producto de los niveles"], "correct": 0, "hint": "Recuerde la fórmula algebraica que relaciona los niveles de cada factor (a-1) y (b-1).", "explanation": "$$\\text{Los grados de libertad de la interacción se calculan como } (a-1) \\times (b-1), \\text{ donde } a \\text{ y } b \\text{ son los niveles de los factores.}$$"}, {"q": "Identifique la afirmación correcta sobre el uso de pruebas post hoc en el contexto de un ANOVA factorial con interacción no significativa.", "options": ["Solo se realizan post hoc para factores con efecto significativo y >2 niveles", "Se deben realizar pruebas de Tukey para todos los factores sin excepción", "Las comparaciones simples son obligatorias para interpretar el error residual"], "correct": 0, "hint": "Las pruebas post hoc buscan diferencias específicas cuando el $F$ general es significativo.", "explanation": "$$\\text{Si la interacción no es significativa, se analizan los efectos principales y se aplican post hoc solo a factores significativos con más de dos niveles.}$$"}, {"q": "Señale la afirmación correcta sobre el supuesto de esfericidad en el diseño de ANOVA mixto de medidas repetidas.", "options": ["Exige que las varianzas de las diferencias entre niveles sean homogéneas", "Requiere que los grupos independientes presenten una varianza poblacional nula", "Se comprueba mediante la prueba de Levene para garantizar la independencia"], "correct": 0, "hint": "La esfericidad es una extensión de la homogeneidad para datos correlacionados.", "explanation": "$$\\text{La esfericidad asume que las varianzas de las diferencias entre todas las combinaciones de niveles del factor intrasujetos son iguales.}$$"}, {"q": "Elija la afirmación correcta sobre la interpretación de un valor $p < 0.05$ para la interacción en un ANOVA de dos factores.", "options": ["Indica que el efecto de un factor varía dependiendo del nivel del otro factor", "Sugiere que ambos factores principales son significativos por definición propia", "Demuestra que el error residual es insuficiente para explicar la varianza total"], "correct": 0, "hint": "La interacción habla de la dependencia mutua entre las variables independientes.", "explanation": "$$\\text{Un resultado significativo en la interacción indica que no podemos generalizar el efecto de un factor sin considerar el nivel del otro factor.}$$"}, {"q": "Seleccione la afirmación correcta sobre la variable dependiente (VD) en los modelos de ANOVA factorial discutidos.", "options": ["Debe ser obligatoriamente una variable medida en escala de intervalo o razón", "Puede ser categórica siempre que los factores independientes sean continuos", "Debe presentar una distribución bimodal en cada combinación de los niveles"], "correct": 0, "hint": "Considere los requisitos de los análisis paramétricos sobre la naturaleza de la VD.", "explanation": "$$\\text{Para realizar un ANOVA, la variable dependiente debe ser continua (escala de intervalo o razón) para permitir el cálculo de medias y varianzas.}$$"}, {"q": "Identifique la afirmación correcta sobre el factor intersujetos en el marco de un diseño de ANOVA mixto.", "options": ["Sus niveles se aplican a diferentes grupos de participantes independientes", "Mide a los mismos sujetos en diferentes momentos o condiciones críticas", "Requiere que cada sujeto pase por todos los niveles de la variable tratada"], "correct": 0, "hint": "Piense en la diferencia entre 'entre sujetos' y 'dentro de sujetos'.", "explanation": "$$\\text{El factor intersujetos divide la muestra en grupos distintos, donde cada participante pertenece a un único nivel de dicho factor.}$$"}, {"q": "Señale la afirmación correcta sobre la utilidad de la prueba de Bonferroni en las comparaciones del factor intrasujetos.", "options": ["Evita el incremento de la probabilidad de cometer un error de tipo I (falso positivo)", "Aumenta la potencia estadística reduciendo la probabilidad del error de tipo II", "Garantiza que la esfericidad se mantenga constante durante el análisis post hoc"], "correct": 0, "hint": "Las comparaciones múltiples inflan el riesgo de encontrar diferencias por azar.", "explanation": "$$\\text{Bonferroni ajusta el nivel de significación dividiéndolo por el número de comparaciones para controlar la tasa de error familiar.}$$"}, {"q": "Elija la afirmación correcta sobre el componente de 'Variabilidad del error' en un ANOVA de dos factores.", "options": ["Representa la variabilidad atribuida al azar o variables no controladas", "Es la diferencia entre las medias de los niveles del factor A y del factor B", "Incluye exclusivamente los errores de medida derivados del software estadístico"], "correct": 0, "hint": "Es la varianza que el modelo no logra explicar mediante sus predictores.", "explanation": "$$\\text{La variabilidad del error o residual es aquella fracción de la varianza de la VD que no es explicada por los efectos principales ni la interacción.}$$"}, {"q": "Seleccione la afirmación correcta respecto a la toma de decisiones estadísticas en el ANOVA de dos factores.", "options": ["Se rechaza $H_0$ si el valor $p$ obtenido es menor que el nivel de significación", "La decisión depende exclusivamente del tamaño del efecto $\\eta_p^2$ reportado", "Se acepta $H_1$ para la interacción si el estadístico $F$ es menor que la unidad"], "correct": 0, "hint": "Es el criterio estándar de contraste de hipótesis en estadística inferencial.", "explanation": "$$\\text{Si } p < \\alpha, \\text{ existen evidencias suficientes para rechazar la hipótesis nula de igualdad de medias o ausencia de interacción.}$$"}, {"q": "Identifique la afirmación correcta sobre el diseño de un ANOVA de dos factores $2 \\times 3$.", "options": ["Implica que existen 2 niveles para el factor A y 3 niveles para el factor B", "Significa que se realizan 6 mediciones repetidas sobre un único grupo de sujetos", "Indica que hay 2 variables dependientes y 3 variables independientes en total"], "correct": 0, "hint": "La notación factorial describe la estructura de los niveles de las VIs.", "explanation": "$$\\text{En la notación } 2 \\times 3, \\text{ el primer número indica los niveles de la VI-A y el segundo los niveles de la VI-B.}$$"}, {"q": "Elija la afirmación correcta sobre las comparaciones simples en una interacción significativa.", "options": ["Analizan el efecto de un factor dentro de cada nivel específico del otro factor", "Permiten ignorar los efectos principales si el tamaño de la sample es grande", "Sustituyen al supuesto de normalidad cuando los residuos son heterogéneos"], "correct": 0, "hint": "Es el paso lógico para 'descomponer' el significado de una interacción.", "explanation": "$$\\text{Las comparaciones simples examinan cómo varía el efecto de un factor en función de los niveles concretos del segundo factor.}$$"}, {"q": "Señale la afirmación correcta sobre el supuesto de normalidad en el ANOVA mixto.", "options": ["La VD debe distribuirse normalmente en cada combinación de niveles de los factores", "Basta con que la muestra total sea normal sin considerar los subgrupos creados", "Se aplica solo al factor intersujetos ignorando la distribución de las medidas repetidas"], "correct": 0, "hint": "Considere la distribución dentro de cada celda del diseño experimental.", "explanation": "$$\\text{La normalidad debe verificarse para la VD en todas las celdas resultantes del cruce de los factores inter e intrasujetos.}$$"}, {"q": "Seleccione la afirmación correcta sobre la relación entre el ANOVA unifactorial y el factorial.", "options": ["El factorial permite evaluar la interacción, capacidad inexistente en el unifactorial", "El unifactorial es siempre más potente para detectar efectos de múltiples variables", "Ambos requieren que las variables independientes sean continuas y de intervalo"], "correct": 0, "hint": "Piense en qué aporta añadir una segunda variable independiente al modelo.", "explanation": "$$\\text{La gran ventaja del ANOVA factorial es la posibilidad de estudiar cómo interactúan dos o más variables independientes sobre la dependiente.}$$"}, {"q": "Identifique la afirmación correcta sobre los componentes de la variabilidad en el ANOVA mixto.", "options": ["El modelo genera tres valores $F$: intersujetos, intrasujetos y su interacción", "La variabilidad total se divide únicamente en efectos fijos y efectos aleatorios", "El factor intrasujetos no posee varianza de error propia en el cálculo del estadístico"], "correct": 0, "hint": "Repase los tres efectos principales que se analizan en un diseño mixto.", "explanation": "$$\\text{El ANOVA mixto evalúa el efecto del grupo, el efecto del tiempo/condición y si la evolución temporal depende del grupo de pertenencia.}$$"}, {"q": "Señale la afirmación incorrecta sobre la lógica del ANOVA de dos factores en la investigación.", "options": ["Divide la variabilidad total para evaluar el impacto de cada factor por separado", "Permite estudiar el efecto de dos variables independientes sobre una dependiente", "Requiere que las variables independientes sean medidas de forma repetida obligatoriamente"], "correct": 2, "hint": "Considere si las medidas repetidas son una condición necesaria para el ANOVA de dos factores estándar.", "explanation": "$$\\text{El ANOVA de dos factores no requiere medidas repetidas; cuando las incluye, se denomina ANOVA de medidas repetidas o mixto.}$$"}, {"q": "Identifique la afirmación incorrecta respecto a las hipótesis de contraste en el ANOVA factorial.", "options": ["La hipótesis nula del factor A afirma que no hay diferencias entre sus niveles", "La hipótesis alternativa de la interacción niega la existencia de un efecto conjunto", "Existen tres conjuntos de hipótesis: para el factor A, el factor B y la interacción"], "correct": 1, "hint": "Recuerde qué postula la hipótesis alternativa ($H_1$) frente a la nula ($H_0$).", "explanation": "$$\\text{La hipótesis alternativa } H_1 \\text{ para la interacción afirma que sí existe una interacción significativa entre los factores.}$$"}, {"q": "Elija la afirmación incorrecta sobre el estadístico $F$ en el análisis de varianza factorial.", "options": ["Compara la variación sistemática explicada con la variación aleatoria residual", "Un valor de $F$ cercano a 0 suele indicar la presencia de un efecto muy significativo", "Se calcula un valor $F$ distinto para cada uno de los efectos evaluados en el modelo"], "correct": 1, "hint": "Piense en la relación entre el valor de $F$ y la probabilidad de rechazar $H_0$.", "explanation": "$$\\text{Valores de } F \\text{ altos (superiores al crítico) son los que indican efectos significativos y llevan al rechazo de } H_0.$$ "}, {"q": "Señale la afirmación incorrecta sobre los supuestos del ANOVA de dos factores intersujetos.", "options": ["Las observaciones dentro de cada grupo deben ser totalmente independientes", "La variable dependiente debe ser categórica con al menos tres niveles distintos", "Las varianzas de los grupos comparados deben ser aproximadamente homogéneas"], "correct": 1, "hint": "Revise el nivel de medida requerido para la variable que queremos explicar.", "explanation": "$$\\text{La variable dependiente en un ANOVA debe ser continua; las variables independientes son las que son categóricas o nominales.}$$"}, {"q": "Identifique la afirmación incorrecta sobre la prueba de Tukey en el contexto del post hoc.", "options": ["Es adecuada para realizar comparaciones por pares con grupos de tamaño similar", "Garantiza el control del error tipo I al realizar múltiples comparaciones de medias", "Debe aplicarse solo cuando el estadístico $F$ de la interacción ha resultado no significativo"], "correct": 2, "hint": "Tukey se usa para efectos principales significativos independientemente de la interacción.", "explanation": "$$\\text{La prueba de Tukey se puede aplicar a cualquier factor principal significativo con más de dos niveles, haya o no interacción.}$$"}, {"q": "Elija la afirmación incorrecta sobre el ANOVA mixto de medidas repetidas en psicología.", "options": ["Es útil para comparar un grupo control frente a un experimental a través del tiempo", "Permite analizar si la mejora en una terapia depende del grupo de intervención", "Requiere que todos los factores del modelo sean evaluados en los mismos sujetos"], "correct": 2, "hint": "El término 'mixto' implica que no todos los factores son del mismo tipo.", "explanation": "$$\\text{En el ANOVA mixto, al menos un factor es intersujetos (diferentes personas) y al menos uno es intrasujetos (mismas personas).}$$"}, {"q": "Señale la afirmación incorrecta sobre el supuesto de esfericidad en el software SPSS.", "options": ["Se evalúa comúnmente mediante la prueba de esfericidad de Mauchly en el output", "Su incumplimiento se corrige automáticamente mediante la prueba de Levene de varianzas", "Si se rechaza la esfericidad, se utilizan los valores de Greenhouse-Geisser o Huynh-Feldt"], "correct": 1, "hint": "Levene y Mauchly evalúan supuestos distintos en el análisis de varianza.", "explanation": "$$\\text{La prueba de Levene evalúa la homogeneidad de varianzas, mientras que la de Mauchly evalúa la esfericidad del factor intrasujetos.}$$"}, {"q": "Identifique la afirmación incorrecta sobre la variabilidad de la interacción $A \\times B$.", "options": ["Mide si el impacto de un factor sobre la VD es constante en todos los niveles del otro", "Representa una fuente de variación sistemática que el investigador desea cuantificar", "Se calcula restando la variabilidad del error de la variabilidad total de los sujetos"], "correct": 2, "hint": "Considere si la interacción es el único componente restante tras el error.", "explanation": "$$\\text{La variabilidad de la interacción es un componente específico y no se obtiene por simple resta del error a la varianza total.}$$"}, {"q": "Elija la afirmación incorrecta sobre el factor intrasujetos en un diseño experimental mixto.", "options": ["Permite reducir la variabilidad del error al usar a los sujetos como su propio control", "Asegura que las diferencias entre condiciones se deben solo a variables extrañas", "Sus niveles suelen representar diferentes momentos temporales de una evaluación"], "correct": 1, "hint": "Piense en la finalidad de los diseños de medidas repetidas.", "explanation": "$$\\text{Los diseños intrasujetos buscan detectar el efecto del tratamiento/tiempo, no asegurar que las diferencias se deban a variables extrañas.}$$"}, {"q": "Señale la afirmación incorrecta sobre el tamaño del efecto $\\eta_p^2$ (Eta cuadrado parcial).", "options": ["Indica la proporción de varianza de la VD explicada por un efecto determinado", "Sus valores oscilan siempre entre -1 y +1 dependiendo de la dirección del efecto", "Permite comparar la relevancia de los factores más allá de la significación estadística"], "correct": 1, "hint": "Recuerde que se basa en sumas de cuadrados, que son siempre valores no negativos.", "explanation": "$$\\text{El tamaño del efecto } \\eta_p^2 \\text{ es una proporción de varianza explicada, por lo que su rango es de 0 a 1.}$$"}, {"q": "Identifique la afirmación incorrecta sobre las hipótesis nulas ($H_0$) en el ANOVA mixto.", "options": ["La $H_0$ de interacción sostiene que la evolución temporal es igual en todos los grupos", "La $H_0$ intersujetos afirma que las medias de los grupos independientes son idénticas", "La $H_0$ intrasujetos plantea que existe al menos una diferencia entre dos momentos"], "correct": 2, "hint": "Recuerde la definición estándar de cualquier hipótesis nula.", "explanation": "$$\\text{La hipótesis nula siempre plantea igualdad o ausencia de efecto; la afirmación de diferencias corresponde a la hipótesis alternativa.}$$"}, {"q": "Elija la afirmación incorrecta sobre el análisis de datos mediante el programa estadístico SPSS.", "options": ["El ANOVA factorial requiere que los datos estén organizados en columnas por variables", "El ANOVA mixto no permite el uso de variables independientes de naturaleza continua", "La interpretación de resultados se basa fundamentalmente en el nivel de significación"], "correct": 1, "hint": "Considere la flexibilidad de los modelos lineales generales en el software.", "explanation": "$$\\text{Aunque el ANOVA usa factores categóricos, el modelo lineal general permite incluir covariables continuas si fuera necesario.}$$"}, {"q": "Señale la afirmación incorrecta sobre la independencia de las observaciones en ANOVA.", "options": ["Es un supuesto que se asume por el procedimiento de muestreo y asignación", "Su violación invalida el cálculo de los grados de libertad y el estadístico $F$", "Se soluciona aplicando la corrección de Bonferroni a todos los niveles del factor"], "correct": 2, "hint": "La independencia es una cuestión de diseño, no de ajuste de significación post hoc.", "explanation": "$$\\text{La violación de la independencia no se soluciona con post hoc; requiere cambios en el diseño o modelos de análisis alternativos.}$$"}, {"q": "Identifique la afirmación incorrecta sobre la lógica de la varianza sistemática en el factorial.", "options": ["Es la parte de la variabilidad que puede ser explicada por los factores del modelo", "Engloba los efectos principales del factor A, del factor B y de su interacción conjunta", "Es idéntica a la variabilidad intragrupos que se observa en el ANOVA unifactorial"], "correct": 2, "hint": "Diferencie entre la varianza explicada (sistemática) y la no explicada (error).", "explanation": "$$\\text{La variabilidad intragrupos representa el error o azar, mientras que la varianza sistemática es la variabilidad entre grupos.}$$"}, {"q": "Elija la afirmación incorrecta sobre el diseño factorial con interacción significativa.", "options": ["Los efectos de los factores principales pueden interpretarse de forma independiente", "El gráfico de perfiles mostrará probablemente líneas que no son paralelas entre sí", "Es necesario realizar un análisis de los efectos simples para entender el fenómeno"], "correct": 0, "hint": "La interacción significa que los factores están 'entrelazados' en su efecto.", "explanation": "$$\\text{Cuando hay interacción, el efecto de un factor depende del otro, por lo que no deben interpretarse los efectos principales de forma aislada.}$$"}];
+        const jsonTestB = [{"q": "En el ANOVA de dos factores, el estadístico $F$ para el factor A se obtiene al dividir la varianza sistemática de dicho factor por la varianza de ___.", "options": ["la interacción $A \\times B$", "la varianza del error", "el factor principal B"], "correct": 1, "hint": "Recuerda que el error o residuo es el denominador común en el ANOVA de medidas independientes.", "explanation": "En el ANOVA de dos factores, cada efecto (Factor A, Factor B e Interacción) se contrasta contra la variabilidad no explicada: $F_A = MS_A / MS_{error}$."}, {"q": "Si en un ANOVA mixto el factor intrasujetos no cumple el supuesto de esfericidad, se debe aplicar la corrección de ____.", "options": ["Bonferroni-Dunn", "Greenhouse-Geisser", "Levene-Welch test"], "correct": 1, "hint": "Es un ajuste sobre los grados de libertad para corregir la inflación del error Tipo I.", "explanation": "Cuando se viola la esfericidad en medidas repetidas, se utilizan estimadores como $\\epsilon$ de Greenhouse-Geisser para ajustar los grados de libertad."}, {"q": "La hipótesis nula para la interacción $A \\times B$ postula que el efecto de un factor sobre la variable dependiente es ____ en los niveles del otro.", "options": ["totalmente nulo", "siempre constante", "altamente variable"], "correct": 1, "hint": "La ausencia de interacción implica independencia de los efectos de los factores.", "explanation": "Si no hay interacción ($H_0$), el efecto de un factor no cambia independientemente del nivel del otro factor en el que nos encontremos."}, {"q": "En un ANOVA de dos factores, la variabilidad total se descompone en ____ fuentes de variación sistemática y una de error.", "options": ["dos distintas", "tres distintas", "cuatro distintas"], "correct": 1, "hint": "Cuenta los factores individuales y su combinación.", "explanation": "Las fuentes sistemáticas son tres: Efecto Principal A, Efecto Principal B y Efecto de la Interacción $A \\times B$."}, {"q": "El tamaño del efecto $\\eta_p^2$ representa la proporción de varianza ____ por un factor, controlando el resto de los efectos del modelo.", "options": ["total explicada", "parcial explicada", "residual explicada"], "correct": 1, "hint": "El subíndice 'p' en el estadístico indica su naturaleza.", "explanation": "El eta cuadrado parcial ($\\eta_p^2$) mide la varianza explicada por un efecto eliminando la varianza explicada por otros efectos del diseño."}, {"q": "Para el factor intersujetos en un ANOVA mixto, el supuesto de igualdad de varianzas entre los grupos se denomina ____.", "options": ["homocedasticidad", "auto-correlación", "multicolinealidad"], "correct": 0, "hint": "Se refiere a la uniformidad de la dispersión en grupos independientes.", "explanation": "La homocedasticidad es el supuesto de que las poblaciones de las que provienen las muestras tienen varianzas iguales."}, {"q": "La prueba post hoc de ____ es más conservadora y se recomienda cuando se realizan múltiples comparaciones para controlar el error Tipo I.", "options": ["Student-Newman", "Bonferroni-Dunn", "Tukey-HSD-test"], "correct": 1, "hint": "Implica dividir el nivel de significación por el número de comparaciones.", "explanation": "Bonferroni ajusta el nivel $\\alpha$ dividiéndolo entre el número de contrastes, siendo más estricta que Tukey."}, {"q": "Un factor intrasujetos se define porque todos los participantes pasan por ____ los niveles de dicha variable independiente.", "options": ["al menos uno de", "la totalidad de", "la mitad de los"], "correct": 1, "hint": "Es la base de los diseños de medidas repetidas.", "explanation": "En un factor intrasujetos, cada individuo es evaluado en todas las condiciones o momentos temporales definidos por el factor."}, {"q": "En un diseño factorial $2 \\times 3$, el número total de grupos o condiciones experimentales (celdas) resultantes es de ____.", "options": ["cinco grupos", "seis grupos", "ocho grupos"], "correct": 1, "hint": "Multiplica los niveles del Factor A por los niveles del Factor B.", "explanation": "El producto de los niveles de los factores ($2 \\times 3 = 6$) determina el número de combinaciones únicas en el diseño."}, {"q": "Cuando existe una interacción significativa, el efecto de un factor sobre la variable dependiente ____ según el nivel del otro factor.", "options": ["se mantiene", "se modifica", "desaparece"], "correct": 1, "hint": "La interacción implica dependencia mutua.", "explanation": "La presencia de interacción significa que el impacto de la VI sobre la VD no es uniforme a través de los niveles de la otra VI."}, {"q": "La varianza residual en el modelo ANOVA de dos factores también es conocida técnicamente como varianza del ____.", "options": ["factor estable", "error aleatorio", "modelo global"], "correct": 1, "hint": "Representa la variabilidad no controlada por el investigador.", "explanation": "La variabilidad del error (o residual) es la parte de la dispersión de la VD que no se puede atribuir a los factores ni a su interacción."}, {"q": "Si obtenemos un valor $p = 0,023$ para el factor B con un $\\alpha = 0,05$, decidimos que existen diferencias ____ entre sus niveles.", "options": ["muy irrelevantes", "significativas", "no concluyentes"], "correct": 1, "hint": "Compara el valor p con el nivel de riesgo establecido.", "explanation": "Al ser $p < \\alpha$ ($0,023 < 0,05$), se rechaza la hipótesis nula de igualdad de medias."}, {"q": "El ANOVA factorial es una técnica que permite estudiar simultáneamente ____ variables independientes sobre una variable dependiente.", "options": ["una sola de las", "dos o más de las", "solo tres de las"], "correct": 1, "hint": "Supera la limitación del ANOVA unifactorial.", "explanation": "Los diseños factoriales se caracterizan por incluir al menos dos factores o variables independientes."}, {"q": "En el ANOVA mixto, el factor ____ es aquel cuyos niveles se aplican a diferentes grupos de participantes independientes.", "options": ["intrasujetos", "intersujetos", "covariable-X"], "correct": 1, "hint": "Se refiere a la comparación 'entre' personas.", "explanation": "El factor intersujetos (between-subjects) implica que cada nivel del factor es asignado a un grupo de individuos distinto."}, {"q": "Los grados de libertad de la interacción $A \\times B$ se calculan como el producto de $(a-1) \\times$ ____.", "options": ["$(b-1)$", "$(N-a)$", "$(N-k)$"], "correct": 0, "hint": "Donde $a$ y $b$ son el número de niveles de cada factor.", "explanation": "Los $gl$ de una interacción son el producto de los grados de libertad de los factores individuales que la componen: $(a-1)(b-1)$."}, {"q": "El supuesto de ____ asume que las diferencias entre los niveles del factor intrasujetos tienen varianzas similares.", "options": ["linealidad", "esfericidad", "normalidad"], "correct": 1, "hint": "Es la extensión de la homocedasticidad para medidas repetidas.", "explanation": "La esfericidad (medida por la W de Mauchly) es necesaria para que las pruebas F en diseños intrasujetos sean válidas."}, {"q": "Si en un gráfico de perfiles las líneas que representan los niveles de los factores son ____, es probable que no haya interacción.", "options": ["convergentes", "paralelas", "divergentes"], "correct": 1, "hint": "Indica que la diferencia entre niveles es constante.", "explanation": "El paralelismo visual en los gráficos de medias indica que el efecto de un factor es el mismo en todos los niveles del otro."}, {"q": "En el ANOVA mixto, la interacción analiza si la evolución de la variable intrasujetos ____ entre los distintos grupos intersujetos.", "options": ["es idéntica", "difiere", "se anula"], "correct": 1, "hint": "Es el efecto más interesante en diseños de intervención.", "explanation": "La interacción en un ANOVA mixto nos dice si el cambio (ej. a lo largo del tiempo) depende del grupo al que pertenece el sujeto."}, {"q": "La VD en un ANOVA factorial debe medirse, al menos, en una escala de ____ para cumplir con los requisitos paramétricos.", "options": ["nominal", "intervalo/razón", "ordinal"], "correct": 1, "hint": "Se requiere que sea una variable continua.", "explanation": "El ANOVA asume que la variable dependiente es continua para poder calcular medias y varianzas con sentido estadístico."}, {"q": "Para evaluar los efectos del factor intrasujetos dentro de cada nivel del factor intersujetos cuando hay interacción, se realizan _.", "options": ["efectos principales", "comparaciones simples", "pruebas de sesgo"], "correct": 1, "hint": "Desglosa la interacción para entender dónde están las diferencias.", "explanation": "Los efectos simples (o comparaciones simples) analizan un factor manteniendo fijo un nivel del otro factor."}, {"q": "¿Cuáles de las siguientes son fuentes de variabilidad en un ANOVA de dos factores?", "options": ["Varianza del factor A y del factor B", "Varianza de la interacción $A \\times B$", "Todas las anteriores son correctas"], "correct": 2, "hint": "El modelo factorial descompone la varianza en efectos principales e interacción.", "explanation": "El modelo completo incluye $SS_{Total} = SS_A + SS_B + SS_{AB} + SS_{Error}$."}, {"q": "¿Qué supuestos deben cumplirse en un ANOVA mixto?", "options": ["Normalidad de la VD y esfericidad", "Independencia y homogeneidad", "Todas las anteriores son correctas"], "correct": 2, "hint": "Combina supuestos de medidas independientes y repetidas.", "explanation": "El ANOVA mixto requiere normalidad, independencia (entre grupos), homocedasticidad y esfericidad (intra-sujetos)."}, {"q": "¿Qué permite determinar el ANOVA de dos factores según el manual?", "options": ["Efecto del método de enseñanza", "Impacto del nivel de motivación", "Todas las anteriores son correctas"], "correct": 2, "hint": "Revisa los ejemplos de aplicación del tema 5.", "explanation": "El ANOVA de dos factores evalúa el efecto principal de cada variable independiente por separado."}, {"q": "¿Qué pruebas se recomiendan para realizar comparaciones post hoc en ANOVA?", "options": ["Prueba de Tukey para tamaños similares", "Bonferroni para muchas comparaciones", "Todas las anteriores son correctas"], "correct": 2, "hint": "Son las pruebas clásicas para controlar la tasa de error familiar.", "explanation": "Ambas son opciones válidas según las condiciones de la muestra y el número de contrastes."}, {"q": "En la lógica del análisis del ANOVA de dos factores, la variabilidad se divide en:", "options": ["Diferencias explicadas por el factor A", "Diferencias explicadas por el factor B", "Todas las anteriores son correctas"], "correct": 2, "hint": "La variabilidad total se particiona en componentes específicos.", "explanation": "Se calculan variabilidades para A, B, la interacción y el residuo o error."}, {"q": "¿Qué hipótesis nulas se ponen a prueba en un ANOVA de dos factores?", "options": ["$H_0$ de los efectos principales A y B", "$H_0$ del efecto de interacción $A \\times B$", "Todas las anteriores son correctas"], "correct": 2, "hint": "Cada fuente de variación sistemática tiene su propio contraste.", "explanation": "Se realizan tres contrastes de hipótesis independientes en un diseño de dos factores."}, {"q": "¿Cuáles son las condiciones para utilizar un ANOVA mixto?", "options": ["Tener al menos un factor intersujetos", "Tener al menos un factor intrasujetos", "Todas las anteriores son correctas"], "correct": 2, "hint": "La palabra 'mixto' se refiere a la combinación de tipos de factores.", "explanation": "El diseño mixto requiere obligatoriamente la presencia de ambos tipos de variables independientes."}, {"q": "¿Qué se evalúa al calcular el tamaño del efecto $\\eta_p^2$?", "options": ["La magnitud del efecto del Factor A", "La magnitud del efecto de Interacción", "Todas las anteriores son correctas"], "correct": 2, "hint": "Es un índice de relevancia clínica o experimental.", "explanation": "Se debe reportar un tamaño del efecto para cada fuente de variación significativa."}, {"q": "Sobre el ANOVA mixto, ¿cuáles de estas afirmaciones son ciertas?", "options": ["Es útil para evaluar cambios en el tiempo", "Compara distintos grupos de participantes", "Todas las anteriores son correctas"], "correct": 2, "hint": "Considera el ejemplo del manual sobre la memoria.", "explanation": "Es el diseño por excelencia para estudios pre-post con grupo control."}, {"q": "Respecto a los supuestos del ANOVA de dos factores, ¿cuáles se mencionan?", "options": ["Independencia de las observaciones", "Normalidad de las poblaciones", "Todas las anteriores son correctas"], "correct": 2, "hint": "Son los mismos que en el ANOVA unifactorial.", "explanation": "Requiere los supuestos básicos del Modelo Lineal General paramétrico."}, {"q": "Si en un ANOVA mixto $N = 40$ y el factor intrasujetos tiene 3 niveles, ¿los grados de libertad del error son $(N-1)$?", "options": ["Sí, siempre coinciden con $N-1$", "Solo si hay un solo grupo inter", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Los grados de libertad del error son mucho más complejos en diseños mixtos.", "explanation": "Los $gl$ del error se calculan de forma distinta para la parte inter (basada en sujetos) e intra (basada en observaciones)."}, {"q": "¿Es correcto afirmar que la prueba de Tukey es más conservadora que la de Bonferroni?", "options": ["Sí, Tukey protege más el error Tipo I", "Sí, excepto con muestras desiguales", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Compara la severidad de los ajustes de cada prueba.", "explanation": "Generalmente, Bonferroni es considerada más conservadora (estricta) que Tukey al realizar muchas comparaciones."}, {"q": "¿El ANOVA de dos factores solo permite determinar si el factor A es significativo ignorando el factor B?", "options": ["Sí, se analizan de forma excluyente", "Solo si no hay interacción alguna", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "La utilidad principal es el análisis simultáneo.", "explanation": "El ANOVA factorial analiza todos los efectos (principales e interacción) de forma conjunta e integrada."}, {"q": "Si obtenemos un $\\eta_p^2 = -0,25$, ¿cómo interpretamos la magnitud del efecto?", "options": ["Como un efecto pequeño negativo", "Como un error de medición grave", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Considera la definición matemática de una proporción de varianza al cuadrado.", "explanation": "El eta cuadrado es una proporción de variabilidad (basada en sumas de cuadrados), por lo que nunca puede ser negativo."}, {"q": "En el supuesto de normalidad, ¿es suficiente con que la muestra total sea normal sin mirar los grupos?", "options": ["Sí, la normalidad es global siempre", "Solo en el ANOVA de medidas repetidas", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "La normalidad se exige en las distribuciones de las poblaciones de cada celda.", "explanation": "La normalidad debe comprobarse para la VD en cada combinación de niveles de los factores."}, {"q": "Si la interacción es significativa, ¿podemos ignorar los efectos principales aunque sean significativos?", "options": ["Sí, la interacción los anula", "No, siempre prevalecen los principales", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "La interpretación de los efectos principales se vuelve compleja ante la interacción.", "explanation": "Si hay interacción, los efectos principales deben interpretarse con cautela, pero no se 'ignoran' sin más; se analizan los efectos simples."}, {"q": "¿Es la prueba de Levene la que se utiliza para comprobar el supuesto de esfericidad?", "options": ["Sí, es la prueba estándar para ello", "Solo en diseños de dos factores inter", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Recuerda el nombre de la prueba específica para esfericidad mencionada en estadística.", "explanation": "La prueba de Levene es para la homogeneidad de varianzas; para la esfericidad se usa habitualmente la W de Mauchly."}, {"q": "Si el valor $F$ calculado es menor que $1$, ¿podemos afirmar que hay diferencias significativas?", "options": ["Sí, si los grados de libertad son altos", "Sí, si el tamaño del efecto es grande", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "El valor F es una razón de varianzas; piensa qué significa que el numerador sea menor que el denominador.", "explanation": "Un valor $F < 1$ indica que la varianza sistemática es menor que la del error, por lo que nunca será estadísticamente significativo."}, {"q": "¿El ANOVA mixto requiere que los sujetos sean los mismos en todos los grupos del factor intersujetos?", "options": ["Sí, esa es la definición de mixto", "Sí, para mantener la homogeneidad", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Revisa la definición de factor intersujetos.", "explanation": "En el factor intersujetos, los grupos deben estar formados por participantes diferentes e independientes."}, {"q": "¿Es posible realizar un ANOVA factorial con variables independientes de naturaleza continua?", "options": ["Sí, el ANOVA no requiere categorías", "Solo si la variable dependiente es nominal", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "El ANOVA requiere factores con niveles definidos (variables categóricas).", "explanation": "Las variables independientes en el ANOVA deben ser categóricas (nominales u ordinales con pocos niveles)."}];
+        const jsonLaboratorio = [{"id": 1, "title": "Estructura del ANOVA de Dos Factores", "context": "Se investiga el impacto de 3 tipos de terapia (Factor A) y 4 niveles de edad (Factor B) sobre el bienestar emocional en una muestra total de $N = 120$ participantes repartidos equitativamente. La fórmula para los grados de libertad de la interacción es $df_{A \\times B} = (a - 1)(b - 1)$.", "parts": [{"id": "p1a", "label": "a)", "question": "Calcula los grados de libertad para el Factor A ($df_A$).", "correctValue": 2, "tolerance": 0, "explanation": "$$df_A = a - 1 = 3 - 1 = 2$$"}, {"id": "p1b", "label": "b)", "question": "Calcula los grados de libertad para el Factor B ($df_B$).", "correctValue": 3, "tolerance": 0, "explanation": "$$df_B = b - 1 = 4 - 1 = 3$$"}, {"id": "p1c", "label": "c)", "question": "Determina los grados de libertad de la interacción ($df_{A \\times B}$).", "correctValue": 6, "tolerance": 0, "explanation": "$$df_{A \\times B} = (3-1) \\times (4-1) = 2 \\times 3 = 6$$"}, {"id": "p1d", "label": "d)", "question": "Calcula los grados de libertad del error ($df_{error}$) sabiendo que $df_{error} = N - (a \\times b)$.", "correctValue": 108, "tolerance": 0, "explanation": "$$df_{error} = 120 - (3 \\times 4) = 120 - 12 = 108$$"}]}, {"id": 2, "title": "Variabilidad y Sumas de Cuadrados", "context": "En un experimento, la Suma de Cuadrados Total ($SS_{total}$) es 500. Se sabe que $SS_A = 120$, $SS_B = 80$ y $SS_{A \\times B} = 50$.", "parts": [{"id": "p2a", "label": "a)", "question": "Calcula la Suma de Cuadrados del Error ($SS_{error}$).", "correctValue": 250, "tolerance": 0, "explanation": "$$SS_{error} = SS_{total} - (SS_A + SS_B + SS_{A \\times B}) = 500 - (120+80+50) = 250$$"}, {"id": "p2b", "label": "b)", "question": "Si $df_A = 2$, calcula el Cuadrado Medio del Factor A ($MS_A$).", "correctValue": 60, "tolerance": 0, "explanation": "$$MS_A = \\frac{SS_A}{df_A} = \\frac{120}{2} = 60$$"}, {"id": "p2c", "label": "c)", "question": "Si $df_{error} = 50$, calcula el Cuadrado Medio del Error ($MS_{error}$).", "correctValue": 5, "tolerance": 0, "explanation": "$$MS_{error} = \\frac{SS_{error}}{df_{error}} = \\frac{250}{50} = 5$$"}, {"id": "p2d", "label": "d)", "question": "Calcula el estadístico $F$ para el Factor A.", "correctValue": 12, "tolerance": 0, "explanation": "$$F_A = \\frac{MS_A}{MS_{error}} = \\frac{60}{5} = 12$$"}]}, {"id": 3, "title": "Tamaño del Efecto (Eta Parcial)", "context": "Para evaluar la magnitud del efecto de un método educativo, se utiliza el Eta cuadrado parcial: $\\eta_p^2 = \\frac{SS_{efecto}}{SS_{efecto} + SS_{error}}$.", "parts": [{"id": "p3a", "label": "a)", "question": "Si $SS_A = 40$ y $SS_{error} = 160$, calcula $\\eta_p^2$ para el Factor A.", "correctValue": 0.2, "tolerance": 0.01, "explanation": "$$\\eta_p^2 = \\frac{40}{40 + 160} = \\frac{40}{200} = 0.2$$"}, {"id": "p3b", "label": "b)", "question": "Expresa ese valor en porcentaje de varianza explicada.", "correctValue": 20, "tolerance": 0, "explanation": "$$0.2 \\times 100 = 20\\%$$"}, {"id": "p3c", "label": "c)", "question": "Si el $SS_{A \\times B} = 10$, calcula $\\eta_p^2$ para la interacción (usando el mismo $SS_{error} = 160$).", "correctValue": 0.0588, "tolerance": 0.001, "explanation": "$$\\eta_p^2 = \\frac{10}{10 + 160} = \\frac{10}{170} \\approx 0.0588$$"}, {"id": "p3d", "label": "d)", "question": "Si el tamaño del efecto total sumado de los factores e interacción fuera $SS_{model} = 90$ y $SS_{total} = 250$, calcula el $\\eta^2$ (eta cuadrado total).", "correctValue": 0.36, "tolerance": 0.01, "explanation": "$$\\eta^2 = \\frac{SS_{model}}{SS_{total}} = \\frac{90}{250} = 0.36$$"}]}, {"id": 4, "title": "Diseño de ANOVA Mixto", "context": "Un investigador estudia el efecto de un fármaco (Factor Intersujetos: Placebo vs Dosis Real) en 3 momentos temporales (Factor Intrasujetos: Pre, Post, Seguimiento) con 20 sujetos por grupo.", "parts": [{"id": "p4a", "label": "a)", "question": "Calcula el número total de participantes ($N$).", "correctValue": 40, "tolerance": 0, "explanation": "$$N = 20 \\text{ sujetos} \\times 2 \\text{ grupos} = 40$$"}, {"id": "p4b", "label": "b)", "question": "Calcula los grados de libertad para el factor Intersujetos ($df_{inter}$).", "correctValue": 1, "tolerance": 0, "explanation": "$$df_{inter} = 2 - 1 = 1$$"}, {"id": "p4c", "label": "c)", "question": "Calcula los grados de libertad para el factor Intrasujetos (tiempo, $df_{intra}$).", "correctValue": 2, "tolerance": 0, "explanation": "$$df_{intra} = 3 - 1 = 2$$"}, {"id": "p4d", "label": "d)", "question": "Calcula los grados de libertad de la interacción Tiempo $\\times$ Grupo.", "correctValue": 2, "tolerance": 0, "explanation": "$$df_{interaccion} = (2-1) \\times (3-1) = 1 \\times 2 = 2$$"}]}, {"id": 5, "title": "Inferencia y Valores Críticos", "context": "Se obtiene un valor $F_{calculado} = 4.25$ para una interacción con $df = (2, 60)$. El valor crítico para $\\alpha = 0.05$ es $F_{critico} = 3.15$.", "parts": [{"id": "p5a", "label": "a)", "question": "Calcula la diferencia entre el valor calculado y el crítico.", "correctValue": 1.1, "tolerance": 0.01, "explanation": "$$4.25 - 3.15 = 1.1$$"}, {"id": "p5b", "label": "b)", "question": "¿Es el efecto estadísticamente significativo? (Responde 1 para SÍ, 0 para NO).", "correctValue": 1, "tolerance": 0, "explanation": "Como $F_{calc} > F_{crit}$ (4.25 > 3.15), se rechaza $H_0$, por lo que es significativo."}, {"id": "p5c", "label": "c)", "question": "Si el nivel de significación fuera $\\alpha = 0.01$ y el $F_{critico}$ fuera 4.98, ¿sería significativo? (1 para SÍ, 0 para NO).", "correctValue": 0, "tolerance": 0, "explanation": "Como $4.25 < 4.98$, no se rechazaría $H_0$ en este nivel."}, {"id": "p5d", "label": "d)", "question": "Si el $p-valor$ asociado es 0.018, ¿qué decisión se toma para $\\alpha = 0.05$? (1: Rechazar $H_0$, 0: Mantener $H_0$).", "correctValue": 1, "tolerance": 0, "explanation": "Como $0.018 < 0.05$, se rechaza la hipótesis nula."}]}, {"id": 6, "title": "Comparaciones Post Hoc (Bonferroni)", "context": "Se realizan 6 comparaciones por pares. El nivel de significación global es $\\alpha = 0.05$. La corrección de Bonferroni ajusta el nivel por comparación como $\\alpha' = \\frac{\\alpha}{k}$.", "parts": [{"id": "p6a", "label": "a)", "question": "Calcula el nivel de significación ajustado $\\alpha'$.", "correctValue": 0.0083, "tolerance": 0.0001, "explanation": "$$\\alpha' = \\frac{0.05}{6} \\approx 0.00833$$"}, {"id": "p6b", "label": "b)", "question": "Si una comparación tiene un $p = 0.01$, ¿es significativa tras el ajuste? (1 para SÍ, 0 para NO).", "correctValue": 0, "tolerance": 0, "explanation": "Como $0.01 > 0.0083$, no es significativa bajo el criterio estricto de Bonferroni."}, {"id": "p6c", "label": "c)", "question": "Si el $p-valor$ original fuera 0.04 y lo multiplicamos por $k$ para obtener el $p$ ajustado, ¿cuál sería el resultado?", "correctValue": 0.24, "tolerance": 0, "explanation": "$$0.04 \\times 6 = 0.24$$"}, {"id": "p6d", "label": "d)", "question": "Si realizáramos solo 2 comparaciones, ¿cuál sería el nuevo $\\alpha'$?", "correctValue": 0.025, "tolerance": 0, "explanation": "$$0.05 / 2 = 0.025$$"}]}, {"id": 7, "title": "Cuadrados Medios de Interacción", "context": "En un ANOVA 2x2, $SS_A=10, SS_B=20, SS_{A \\times B}=30$. El error tiene $SS_{error}=400$ y $df_{error}=40$.", "parts": [{"id": "p7a", "label": "a)", "question": "Calcula $df_{A \\times B}$.", "correctValue": 1, "tolerance": 0, "explanation": "$$df_{A \\times B} = (2-1) \\times (2-1) = 1$$"}, {"id": "p7b", "label": "b)", "question": "Calcula el Cuadrado Medio de la Interacción ($MS_{A \\times B}$).", "correctValue": 30, "tolerance": 0, "explanation": "$$MS_{A \\times B} = \\frac{30}{1} = 30$$"}, {"id": "p7c", "label": "c)", "question": "Calcula el Cuadrado Medio del Error ($MS_{error}$).", "correctValue": 10, "tolerance": 0, "explanation": "$$MS_{error} = \\frac{400}{40} = 10$$"}, {"id": "p7d", "label": "d)", "question": "Calcula el valor $F$ para la interacción.", "correctValue": 3, "tolerance": 0, "explanation": "$$F = \\frac{30}{10} = 3$$"}]}, {"id": 8, "title": "Esfericidad y Corrección", "context": "En un ANOVA mixto, el factor intrasujetos tiene 4 niveles. Se detecta una falta de esfericidad con un valor de Greenhouse-Geisser $\\epsilon = 0.75$.", "parts": [{"id": "p8a", "label": "a)", "question": "Calcula los grados de libertad originales para el factor intrasujetos.", "correctValue": 3, "tolerance": 0, "explanation": "$$df = 4 - 1 = 3$$"}, {"id": "p8b", "label": "b)", "question": "Calcula los grados de libertad corregidos para el factor intrasujetos usando $\\epsilon$.", "correctValue": 2.25, "tolerance": 0.01, "explanation": "$$3 \\times 0.75 = 2.25$$"}, {"id": "p8c", "label": "c)", "question": "Si el $df_{error}$ original era 90, calcula el $df_{error}$ corregido.", "correctValue": 67.5, "tolerance": 0.1, "explanation": "$$90 \\times 0.75 = 67.5$$"}, {"id": "p8d", "label": "d)", "question": "¿Qué valor de $\\epsilon$ indicaría un cumplimiento perfecto de la esfericidad?", "correctValue": 1, "tolerance": 0, "explanation": "Un valor de $\\epsilon = 1$ significa que se cumple el supuesto de esfericidad."}]}, {"id": 9, "title": "Varianza Explicada en ANOVA Factorial", "context": "En un estudio sobre rendimiento académico, se encuentra que el modelo total explica una Suma de Cuadrados de 450, mientras que la Suma de Cuadrados Total es de 1000.", "parts": [{"id": "p9a", "label": "a)", "question": "Calcula la proporción de varianza total explicada por el modelo ($R^2$).", "correctValue": 0.45, "tolerance": 0.01, "explanation": "$$R^2 = \\frac{450}{1000} = 0.45$$"}, {"id": "p9b", "label": "b)", "question": "Si $SS_A = 150$, ¿qué porcentaje de la varianza total es debida únicamente al Factor A?", "correctValue": 15, "tolerance": 0, "explanation": "$$\\frac{150}{1000} \\times 100 = 15\\%$$"}, {"id": "p9c", "label": "c)", "question": "Si $SS_{error} = 550$, comprueba el valor de $SS_{total}$ (suma de modelo y error).", "correctValue": 1000, "tolerance": 0, "explanation": "$$450 + 550 = 1000$$"}, {"id": "p9d", "label": "d)", "question": "Calcula el $\\eta_p^2$ del Factor A sabiendo que $SS_A = 150$ y $SS_{error} = 550$.", "correctValue": 0.214, "tolerance": 0.01, "explanation": "$$\\eta_p^2 = \\frac{150}{150 + 550} = \\frac{150}{700} \\approx 0.214$$"}]}, {"id": 10, "title": "Equilibrio en Celdas de Diseño", "context": "Un diseño factorial 3x3 tiene un total de $N=180$ sujetos asignados aleatoriamente de forma balanceada.", "parts": [{"id": "p10a", "label": "a)", "question": "Calcula el número total de celdas o combinaciones de tratamiento.", "correctValue": 9, "tolerance": 0, "explanation": "$$3 \\times 3 = 9$$"}, {"id": "p10b", "label": "b)", "question": "Calcula el número de sujetos por cada celda ($n$).", "correctValue": 20, "tolerance": 0, "explanation": "$$180 / 9 = 20$$"}, {"id": "p10c", "label": "c)", "question": "Calcula $df_{error}$ para este diseño ($N - ab$).", "correctValue": 171, "tolerance": 0, "explanation": "$$180 - 9 = 171$$"}, {"id": "p10d", "label": "d)", "question": "Si quisiéramos 30 sujetos por celda, ¿cuál debería ser el tamaño muestral total?", "correctValue": 270, "tolerance": 0, "explanation": "$$30 \\times 9 = 270$$"}]}, {"id": 11, "title": "Cálculo de F de un Factor", "context": "Se reportan los siguientes datos: $MS_{efecto} = 124.5$ y $MS_{error} = 30.2$.", "parts": [{"id": "p11a", "label": "a)", "question": "Calcula el valor de la razón F.", "correctValue": 4.1225, "tolerance": 0.01, "explanation": "$$F = \\frac{124.5}{30.2} = 4.1225$$"}, {"id": "p11b", "label": "b)", "question": "Si $df_{efecto} = 3$, ¿cuál es el valor de $SS_{efecto}$?", "correctValue": 373.5, "tolerance": 0.1, "explanation": "$$SS = MS \\times df = 124.5 \\times 3 = 373.5$$"}, {"id": "p11c", "label": "c)", "question": "Si $df_{error} = 40$, ¿cuál es el valor de $SS_{error}$?", "correctValue": 1208, "tolerance": 1, "explanation": "$$30.2 \\times 40 = 1208$$"}, {"id": "p11d", "label": "d)", "question": "Calcula el $\\eta_p^2$ con los datos obtenidos en b) y c).", "correctValue": 0.236, "tolerance": 0.01, "explanation": "$$\\frac{373.5}{373.5 + 1208} \\approx 0.236$$"}]}, {"id": 12, "title": "Interacción y Efectos Simples", "context": "En un gráfico de interacción, las medias del Grupo A son (10, 20) y las del Grupo B son (15, 15) para los niveles 1 y 2 del Factor B.", "parts": [{"id": "p12a", "label": "a)", "question": "Calcula la diferencia (Nivel 2 - Nivel 1) para el Grupo A.", "correctValue": 10, "tolerance": 0, "explanation": "$$20 - 10 = 10$$"}, {"id": "p12b", "label": "b)", "question": "Calcula la diferencia (Nivel 2 - Nivel 1) para el Grupo B.", "correctValue": 0, "tolerance": 0, "explanation": "$$15 - 15 = 0$$"}, {"id": "p12c", "label": "c)", "question": "Calcula la magnitud de la interacción (Diferencia de diferencias).", "correctValue": 10, "tolerance": 0, "explanation": "$$|10 - 0| = 10$$"}, {"id": "p12d", "label": "d)", "question": "Si las líneas del gráfico fueran paralelas, ¿cuál sería la magnitud de la interacción?", "correctValue": 0, "tolerance": 0, "explanation": "En líneas paralelas, el efecto de un factor es constante y la interacción es nula."}]}, {"id": 13, "title": "ANOVA Mixto: Participantes y Medidas", "context": "Un estudio clínico tiene 3 grupos de tratamiento (intersujetos) y se evalúa a cada paciente en 5 ocasiones (intrasujetos). Hay 15 pacientes por grupo.", "parts": [{"id": "p13a", "label": "a)", "question": "Calcula el número total de observaciones en la base de datos.", "correctValue": 225, "tolerance": 0, "explanation": "$$3 \\text{ grupos} \\times 15 \\text{ sujetos} \\times 5 \\text{ medidas} = 225$$"}, {"id": "p13b", "label": "b)", "question": "Calcula $df_{entre-grupos}$.", "correctValue": 2, "tolerance": 0, "explanation": "$$3 - 1 = 2$$"}, {"id": "p13c", "label": "c)", "question": "Calcula $df_{dentro-sujetos}$ (tiempo).", "correctValue": 4, "tolerance": 0, "explanation": "$$5 - 1 = 4$$"}, {"id": "p13d", "label": "d)", "question": "Calcula $df$ para la interacción Grupo $\\times$ Tiempo.", "correctValue": 8, "tolerance": 0, "explanation": "$$2 \\times 4 = 8$$"}]}, {"id": 14, "title": "Análisis de Suma de Cuadrados Mixto", "context": "En un ANOVA mixto, la Suma de Cuadrados Total se descompone en Intersujetos (SS=300) e Intrasujetos (SS=700).", "parts": [{"id": "p14a", "label": "a)", "question": "Calcula la Suma de Cuadrados Total ($SS_{total}$).", "correctValue": 1000, "tolerance": 0, "explanation": "$$300 + 700 = 1000$$"}, {"id": "p14b", "label": "b)", "question": "Si el factor intersujetos (Grupo) explica $SS_{grupo} = 100$, ¿cuál es el $SS_{error-inter}$?", "correctValue": 200, "tolerance": 0, "explanation": "$$300 - 100 = 200$$"}, {"id": "p14c", "label": "c)", "question": "Si el factor intrasujetos (Tiempo) explica $SS_{tiempo} = 400$ y la interacción $SS_{int} = 100$, ¿cuál es el $SS_{error-intra}$?", "correctValue": 200, "tolerance": 0, "explanation": "$$700 - (400 + 100) = 200$$"}, {"id": "p14d", "label": "d)", "question": "Calcula el $\\eta_p^2$ para el tiempo con los datos de c).", "correctValue": 0.667, "tolerance": 0.01, "explanation": "$$\\eta_p^2 = \\frac{400}{400 + 200} = 0.666...$$"}]}, {"id": 15, "title": "Grados de Libertad del Error (Mixto)", "context": "Sea un diseño mixto con $g$ grupos y $n$ sujetos por grupo, evaluados en $k$ momentos. Los grados de libertad del error intersujetos son $df_{err-inter} = g(n - 1)$. $g=2, n=25, k=3$.", "parts": [{"id": "p15a", "label": "a)", "question": "Calcula $df_{err-inter}$.", "correctValue": 48, "tolerance": 0, "explanation": "$$2 \\times (25 - 1) = 2 \\times 24 = 48$$"}, {"id": "p15b", "label": "b)", "question": "Calcula $df$ de la interacción Grupo $\\times$ Tiempo.", "correctValue": 2, "tolerance": 0, "explanation": "$$(2-1) \\times (3-1) = 1 \\times 2 = 2$$"}, {"id": "p15c", "label": "c)", "question": "Calcula $df_{err-intra}$ (Fórmula: $g(n-1)(k-1)$).", "correctValue": 96, "tolerance": 0, "explanation": "$$2 \\times (25-1) \\times (3-1) = 2 \\times 24 \\times 2 = 96$$"}, {"id": "p15d", "label": "d)", "question": "Calcula la suma de todos los $df$ del modelo (Inter, Intra, Int, Err-Inter, Err-Int) sin incluir el total.", "correctValue": 149, "tolerance": 0, "explanation": "$$1(Inter) + 2(Intra) + 2(Int) + 48 + 96 = 149$$"}]}, {"id": 16, "title": "Potencia Estadística y F", "context": "Si el valor de $MS_{error}$ disminuye de 50 a 25 mientras las sumas de cuadrados de los efectos se mantienen constantes.", "parts": [{"id": "p16a", "label": "a)", "question": "¿En qué factor aumenta el valor de F?", "correctValue": 2, "tolerance": 0, "explanation": "Como $F = MS_{efecto} / MS_{error}$, si el denominador se reduce a la mitad, el valor de F se duplica."}, {"id": "p16b", "label": "b)", "question": "Si el $F$ original era 3.5, ¿cuál es el nuevo valor de $F$?", "correctValue": 7, "tolerance": 0, "explanation": "$$3.5 \\times 2 = 7$$"}, {"id": "p16c", "label": "c)", "question": "Si el valor crítico es 4.0, ¿se vuelve significativo el efecto? (1 para SÍ, 0 para NO).", "correctValue": 1, "tolerance": 0, "explanation": "Sí, porque $7 > 4.0$."}, {"id": "p16d", "label": "d)", "question": "¿Cómo afecta esto al Error Tipo II? (1: Aumenta, -1: Disminuye, 0: Igual).", "correctValue": -1, "tolerance": 0, "explanation": "Al aumentar la potencia y el valor de F, la probabilidad de cometer un error tipo II disminuye."}]}, {"id": 17, "title": "Interpretación de Resultados de SPSS", "context": "Una tabla de ANOVA muestra: Factor A (Sig. = 0.001), Factor B (Sig. = 0.450), Interacción A*B (Sig. = 0.032).", "parts": [{"id": "p17a", "label": "a)", "question": "¿Cuántos efectos principales son significativos al $\\alpha = 0.05$?", "correctValue": 1, "tolerance": 0, "explanation": "Solo el Factor A (0.001 < 0.05). El Factor B no lo es (0.450 > 0.05)."}, {"id": "p17b", "label": "b)", "question": "¿Es significativa la interacción al $\\alpha = 0.05$? (1 para SÍ, 0 para NO).", "correctValue": 1, "tolerance": 0, "explanation": "Sí, porque $0.032 < 0.05$."}, {"id": "p17c", "label": "c)", "question": "¿Es significativa la interacción al $\\alpha = 0.01$? (1 para SÍ, 0 para NO).", "correctValue": 0, "tolerance": 0, "explanation": "No, porque $0.032 > 0.01$."}, {"id": "p17d", "label": "d)", "question": "En presencia de interacción significativa, ¿qué análisis es prioritario según el manual? (1: Efectos Principales, 2: Efectos Simples/Post hoc).", "correctValue": 2, "tolerance": 0, "explanation": "La interacción indica que el efecto de un factor depende del otro, por lo que se deben analizar los efectos simples."}]}, {"id": 18, "title": "Error Medio Cuadrático y Desviación", "context": "El $MS_{error}$ es una estimación de la varianza poblacional residual $\\sigma^2$. Supón un $MS_{error} = 16$.", "parts": [{"id": "p18a", "label": "a)", "question": "Calcula la desviación típica residual (Error estándar residual).", "correctValue": 4, "tolerance": 0, "explanation": "$$\\sqrt{16} = 4$$"}, {"id": "p18b", "label": "b)", "question": "Si duplicamos el tamaño de la muestra manteniendo la dispersión, ¿qué le ocurre al valor esperado del $MS_{error}$? (1: Aumenta, 2: Disminuye, 3: Se mantiene estable).", "correctValue": 3, "tolerance": 0, "explanation": "El Cuadrado Medio del Error es una estimación de la varianza, que no depende del tamaño de la muestra (aunque su precisión sí)."}, {"id": "p18c", "label": "c)", "question": "Si $SS_{error}$ es 640, calcula $df_{error}$ dado que $MS_{error} = 16$.", "correctValue": 40, "tolerance": 0, "explanation": "$$640 / 16 = 40$$"}, {"id": "p18d", "label": "d)", "question": "Si el diseño es un 2x2 y $N=44$, ¿se corresponde este $df_{error}$ con la fórmula $N-ab$? (1: SÍ, 0: NO).", "correctValue": 1, "tolerance": 0, "explanation": "$$44 - (2 \\times 2) = 44 - 4 = 40$$. Correcto."}]}, {"id": 19, "title": "Comparación de Modelos ANOVA", "context": "Un investigador duda entre usar un ANOVA unifactorial (Factor A: 3 niveles) o un ANOVA de dos factores (Factor A: 3 niveles, Factor B: 2 niveles). $N=60$.", "parts": [{"id": "p19a", "label": "a)", "question": "Calcula $df_{error}$ para el ANOVA unifactorial ($N - a$).", "correctValue": 57, "tolerance": 0, "explanation": "$$60 - 3 = 57$$"}, {"id": "p19b", "label": "b)", "question": "Calcula $df_{error}$ para el ANOVA de dos factores ($N - ab$).", "correctValue": 54, "tolerance": 0, "explanation": "$$60 - (3 \\times 2) = 54$$"}, {"id": "p19c", "label": "c)", "question": "Si al incluir el Factor B, el $SS_{error}$ baja de 600 a 400, calcula el nuevo $MS_{error}$ del diseño factorial.", "correctValue": 7.41, "tolerance": 0.01, "explanation": "$$400 / 54 \\approx 7.407$$"}, {"id": "p19d", "label": "d)", "question": "¿Cómo se denomina a la variable que se incluye para reducir el error residual? (1: Variable Dependiente, 2: Factor de Bloque/Control, 3: Error Tipo I).", "correctValue": 2, "tolerance": 0, "explanation": "Se denomina factor de control o diseño de bloques para reducir la varianza no explicada."}]}, {"id": 20, "title": "Resumen Final de ANOVA Factorial", "context": "En un ANOVA 3x4 con $n=10$ por celda, se obtienen las siguientes Sumas de Cuadrados: $SS_A=60$, $SS_B=120$, $SS_{A \\times B}=180$, $SS_{total}=1000$.", "parts": [{"id": "p20a", "label": "a)", "question": "Calcula el $SS_{error}$.", "correctValue": 640, "tolerance": 0, "explanation": "$$1000 - (60 + 120 + 180) = 1000 - 360 = 640$$"}, {"id": "p20b", "label": "b)", "question": "Calcula el $df_{error}$.", "correctValue": 108, "tolerance": 0, "explanation": "$$N = 3 \\times 4 \\times 10 = 120$$. $df = 120 - 12 = 108$$"}, {"id": "p20c", "label": "c)", "question": "Calcula el $\\eta_p^2$ para la interacción.", "correctValue": 0.22, "tolerance": 0.01, "explanation": "$$\\eta_p^2 = \\frac{180}{180 + 640} = \\frac{180}{820} \\approx 0.2195$$"}, {"id": "p20d", "label": "d)", "question": "Si el $F_{critico}$ es 2.10, y el $MS_{A \\times B} = 180 / 6 = 30$, calcula el F de la interacción ($MS_{error} = 640/108$).", "correctValue": 5.06, "tolerance": 0.1, "explanation": "$$MS_{error} = 5.92$$. $F = 30 / 5.92 \\approx 5.06$$. Como 5.06 > 2.10, es significativo."}]}];
+        const jsonFormulas = [{"name": "Lógica del estadístico F (General)", "tex": "$$F = \\frac{\\text{Variación sistemática}}{\\text{Variación aleatoria o residual}}$$"}, {"name": "Componentes de la Variabilidad en ANOVA de dos factores", "tex": "$$VT = VA + VB + V(A \\times B) + V_{error}$$"}, {"name": "Interacción entre factores", "tex": "$$A \\times B$$"}, {"name": "Tamaño del efecto (Eta cuadrado parcial)", "tex": "$$\\eta_{p}^{2}$$"}, {"name": "Hipótesis nula para el Factor A", "tex": "$$H_{0}: \\mu_{a1} = \\mu_{a2} = \\dots = \\mu_{ak}$$"}, {"name": "Hipótesis de interacción nula", "tex": "$$H_{0}: \\text{No existe interacción entre A y B}$$"}];
+
+        // --- TRANSFORMACIÓN DE DATOS PARA LA APP ---
+        const appDB = {
+            quiz: [...jsonTestA, ...jsonTestB],
+            laboratorio: [...jsonLaboratorio],
+            formulas: jsonFormulas.map(f => ({
+                cat: "Fórmula",
+                q: f.name,
+                a: f.tex
+            }))
+        };
+
+        // --- LÓGICA DE LA APLICACIÓN ---
+        const app = {
+            DB: appDB,
+            state: {
+                currentTool: null,
+                index: 0,
+                isFlipped: false,
+                activeData: [],
+                failedQuestions: [],
+                score: 0,
+                totalQuestions: 0
+            },
+
+            // Renderiza MathJax si está disponible
+            renderMath: function() {
+                if (window.MathJax && window.MathJax.typesetPromise) {
+                    MathJax.typesetPromise();
+                }
+            },
+
+            showView: function (view) {
+                document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+                const target = document.getElementById(`view-${view}`);
+                if (target) target.classList.remove('hidden');
+
+                const menuBtn = document.getElementById('btn-global-menu');
+                const counterBox = document.getElementById('nav-counter');
+                
+                if (view === 'home') {
+                    menuBtn.classList.remove('flex');
+                    menuBtn.classList.add('hidden');
+                    counterBox.classList.remove('flex');
+                    counterBox.classList.add('hidden');
+                } else {
+                    menuBtn.classList.remove('hidden');
+                    menuBtn.classList.add('flex');
+                    
+                    if (view === 'formulas') {
+                        counterBox.classList.remove('flex');
+                        counterBox.classList.add('hidden');
+                    } else {
+                        counterBox.classList.remove('hidden');
+                        counterBox.classList.add('flex');
+                    }
+                }
+            },
+
+            startTool: function (tool, customData = null) {
+                const baseData = this.DB[tool] || [];
+                const dataToUse = customData ? [...customData] : JSON.parse(JSON.stringify(baseData));
+
+                if (dataToUse.length === 0) return;
+
+                this.state.currentTool = tool;
+                this.state.index = 0;
+                this.state.score = 0;
+                this.state.failedQuestions = [];
+                this.state.activeData = dataToUse;
+
+                if (tool === 'laboratorio') {
+                    this.state.totalQuestions = dataToUse.reduce((acc, curr) => acc + curr.parts.length, 0);
+                } else {
+                    this.state.totalQuestions = dataToUse.length;
+                }
+
+                if (!customData && tool !== 'formulas') {
+                    this.shuffleArray(this.state.activeData);
+                }
+
+                this.updateCounter();
+                this.showView(tool);
+
+                if (tool === 'quiz') this.renderQuiz();
+                if (tool === 'laboratorio') this.renderLaboratorio();
+                if (tool === 'formulas') this.renderFormulas();
+            },
+
+            updateCounter: function () {
+                const counter = document.getElementById('global-counter');
+                if (counter && this.state.activeData.length > 0) {
+                    counter.innerText = `${this.state.index + 1}/${this.state.activeData.length}`;
+                }
+            },
+
+            shuffleArray: function (arr) {
+                for (let i = arr.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                }
+            },
+
+            finishSession: function() {
+                this.showResults();
+            },
+
+            // --- LÓGICA QUIZ ---
+            renderQuiz: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('quiz-question').innerHTML = data.q;
+                document.getElementById('quiz-feedback').classList.add('hidden');
+                document.getElementById('quiz-hint-box').classList.add('hidden');
+                
+                const container = document.getElementById('quiz-options');
+                container.innerHTML = '';
+                
+                data.options.forEach((opt, i) => {
+                    const btn = document.createElement('button');
+                    btn.className = "option-btn w-full text-left p-4 rounded-xl bg-white flex items-center gap-4 font-semibold text-slate-700 shadow-sm";
+                    btn.innerHTML = `<span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-xs text-slate-400 font-bold shrink-0">${String.fromCharCode(65 + i)}</span> <div class="math-content">${opt}</div>`;
+                    btn.onclick = () => this.quizCheck(i, btn);
+                    container.appendChild(btn);
+                });
+
+                this.renderMath();
+            },
+
+            quizToggleHint: function () {
+                const box = document.getElementById('quiz-hint-box');
+                const data = this.state.activeData[this.state.index];
+                if (data && data.hint) {
+                    box.innerHTML = `<span class="font-bold">Pista:</span> ${data.hint}`;
+                    box.classList.toggle('hidden');
+                    this.renderMath();
+                }
+            },
+
+            quizCheck: function (idx, clickedBtn) {
+                const data = this.state.activeData[this.state.index];
+                const btns = document.getElementById('quiz-options').querySelectorAll('button');
+                btns.forEach(b => b.disabled = true);
+                
+                const feedback = document.getElementById('quiz-feedback');
+                feedback.classList.remove('hidden');
+                
+                if (idx === data.correct) {
+                    this.state.score++;
+                    clickedBtn.classList.add('bg-emerald-50', 'border-emerald-500', 'text-emerald-700');
+                    document.getElementById('quiz-feedback-title').innerText = "¡Correcto!";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-emerald-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    this.state.failedQuestions.push(data);
+                    clickedBtn.classList.add('bg-red-50', 'border-red-500', 'text-red-700');
+                    btns[data.correct].classList.add('bg-emerald-50', 'border-emerald-500', 'ring-2', 'ring-emerald-200');
+                    document.getElementById('quiz-feedback-title').innerText = "Incorrecto";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-red-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+                
+                document.getElementById('quiz-explanation').innerHTML = data.explanation;
+                this.renderMath();
+            },
+
+            quizNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderQuiz();
+                    this.updateCounter();
+                } else this.showResults();
+            },
+
+            // --- LÓGICA LABORATORIO ---
+            renderLaboratorio: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('lab-problem-number').innerText = this.state.index + 1;
+                document.getElementById('lab-main-title').innerText = data.title;
+                document.getElementById('lab-context-box').innerHTML = data.context;
+                
+                const container = document.getElementById('lab-parts-container');
+                container.innerHTML = '';
+                
+                data.parts.forEach((part, i) => {
+                    const partId = `lab-part-${this.state.index}-${i}`;
+                    const letter = part.label.replace(')', '').toLowerCase();
+                    
+                    const html = `
+                        <div class="p-6 md:p-8 border-b border-slate-100 last:border-0">
+                            <div class="flex gap-4 items-start mb-6">
+                                <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex justify-center items-center font-bold shrink-0 mt-1">${letter}</div>
+                                <div class="text-slate-800 font-semibold text-lg math-content pt-1">${part.question}</div>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-4 items-center pl-0 md:pl-12">
+                                <input type="text" id="input-${partId}" class="w-full md:w-64 p-3 rounded-xl border-2 border-slate-200 outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-50 transition text-lg font-mono shadow-sm" placeholder="Respuesta...">
+                                <button id="btn-${partId}" onclick="app.labCheckPart(${this.state.index}, ${i})" class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-xl font-bold uppercase tracking-wider text-sm transition shadow-md w-full md:w-auto">Verificar</button>
+                            </div>
+                            
+                            <div id="feedback-${partId}" class="hidden pl-0 md:pl-12 mt-4 animate-fadeIn">
+                                <div id="feedback-box-${partId}" class="flex items-start gap-3 p-4 rounded-xl">
+                                    <div id="icon-${partId}" class="text-2xl shrink-0 mt-1"></div>
+                                    <div class="w-full">
+                                        <h4 id="title-${partId}" class="font-bold mb-2"></h4>
+                                        <div class="text-sm font-mono bg-slate-800 text-slate-200 p-4 rounded-lg overflow-x-auto math-content shadow-inner border border-slate-700">
+                                            <span class="text-slate-400 text-[10px] uppercase font-sans font-bold tracking-widest block mb-2">Desarrollo Matemático</span>
+                                            ${part.explanation}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.insertAdjacentHTML('beforeend', html);
+                });
+                
+                this.renderMath();
+            },
+
+            labCheckPart: function (problemIdx, partIdx) {
+                const problem = this.state.activeData[problemIdx];
+                const part = problem.parts[partIdx];
+                const partId = `lab-part-${problemIdx}-${partIdx}`;
+
+                const input = document.getElementById(`input-${partId}`);
+                const btn = document.getElementById(`btn-${partId}`);
+                const feedback = document.getElementById(`feedback-${partId}`);
+                const feedbackBox = document.getElementById(`feedback-box-${partId}`);
+                const icon = document.getElementById(`icon-${partId}`);
+                const title = document.getElementById(`title-${partId}`);
+
+                const rawVal = input.value.trim().replace(',', '.');
+                const userVal = parseFloat(rawVal);
+                
+                if (rawVal === "" || isNaN(userVal)) {
+                    input.classList.add('ring-2', 'ring-red-400');
+                    setTimeout(() => input.classList.remove('ring-2', 'ring-red-400'), 500);
+                    return; 
+                }
+
+                input.disabled = true;
+                btn.disabled = true;
+                btn.classList.remove('hover:bg-indigo-700', 'bg-indigo-600');
+                btn.classList.add('bg-slate-300', 'text-slate-500', 'cursor-not-allowed', 'shadow-none');
+                
+                feedback.classList.remove('hidden');
+
+                const diff = Math.abs(userVal - part.correctValue);
+                const isCorrect = diff <= part.tolerance;
+
+                if (isCorrect) {
+                    this.state.score++;
+                    input.classList.add('border-emerald-400', 'bg-emerald-50', 'text-emerald-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-emerald-50 border border-emerald-200";
+                    title.innerText = "¡Cálculo Exacto!";
+                    title.className = "font-black text-emerald-600";
+                    icon.innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    input.classList.add('border-red-400', 'bg-red-50', 'text-red-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-red-50 border border-red-200";
+                    title.innerText = `Cálculo Incorrecto. Respuesta esperada: ${part.correctValue} (±${part.tolerance})`;
+                    title.className = "font-black text-red-600";
+                    icon.innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+
+                this.renderMath();
+            },
+
+            labNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderLaboratorio();
+                    this.updateCounter();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else this.showResults();
+            },
+
+            // --- LÓGICA FÓRMULAS ---
+            renderFormulas: function () {
+                const grid = document.getElementById('formulas-grid');
+                grid.innerHTML = '';
+                
+                this.state.activeData.forEach(data => {
+                    const card = document.createElement('div');
+                    card.className = "glass-card p-6 rounded-2xl border-t-4 border-indigo-500 hover:shadow-lg transition-shadow bg-white flex flex-col justify-between items-center text-center h-full";
+                    card.innerHTML = `
+                        <span class="text-xs font-bold text-indigo-500 uppercase tracking-widest mb-4 w-full border-b border-slate-100 pb-2">${data.q}</span>
+                        <div class="text-2xl font-medium text-slate-800 math-content w-full overflow-x-auto py-4 flex-grow flex items-center justify-center">${data.a}</div>
+                    `;
+                    grid.appendChild(card);
+                });
+
+                this.renderMath();
+            },
+
+            // --- RESULTADOS GLOBALES ---
+            showResults: function () {
+                this.showView('results');
+                const resultText = document.getElementById('result-text');
+                
+                if (this.state.currentTool === 'flashcards' || this.state.currentTool === 'formulas') {
+                    resultText.innerHTML = `Has repasado <strong>${this.state.activeData.length}</strong> fórmulas.`;
+                } else {
+                    resultText.innerHTML = `Has acertado <strong>${this.state.score}</strong> de <strong>${this.state.totalQuestions}</strong>.`;
+                }
+
+                const failBtn = document.getElementById('btn-retry-errors');
+                if (this.state.failedQuestions.length > 0 && this.state.currentTool !== 'formulas') {
+                    failBtn.classList.remove('hidden');
+                    document.getElementById('fail-count').innerText = this.state.failedQuestions.length;
+                } else {
+                    failBtn.classList.add('hidden');
+                }
+            },
+
+            retryErrors: function () { 
+                this.startTool(this.state.currentTool, this.state.failedQuestions); 
+            }
+        };
+
+        // Iniciar en Home al cargar
+        window.onload = () => app.showView('home');
+    </script>
+</body>
+</html>

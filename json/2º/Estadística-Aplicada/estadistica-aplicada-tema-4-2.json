@@ -1,0 +1,1661 @@
+{
+  "jsonTestA": [
+    {
+      "q": "En el ANOVA de medidas repetidas, la variabilidad residual incluye tanto la variabilidad intersujeto como la correlación entre mediciones.",
+      "options": [
+        "Es una afirmación correcta",
+        "Es una afirmación errónea",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Revisa la definición de variabilidad residual en el apartado 4.3.1 del material.",
+      "explanation": "Según el texto, la variabilidad residual ($MC_R$) no explicada incluye la variabilidad por diferencias individuales y la correlación entre medidas del mismo sujeto."
+    },
+    {
+      "q": "La hipótesis nula ($H_0$) en un ANOVA de medidas dependientes postula que al menos una de las medias es significativamente distinta a las demás.",
+      "options": [
+        "Es una afirmación correcta",
+        "Es una afirmación errónea",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Recuerda la diferencia entre la definición de la hipótesis nula y la hipótesis alternativa.",
+      "explanation": "La $H_0$ postula igualdad de medias ($\\\\overline{X}_1 = \\\\overline{X}_2 = \\\\dots = \\\\overline{X}_k$), mientras que la diferencia es la $H_1$."
+    },
+    {
+      "q": "El estadístico $F$ en este modelo se define como el cociente entre la media cuadrática del modelo ($MC_M$) y la media cuadrática del error ($MC_R$).",
+      "options": [
+        "Es una afirmación correcta",
+        "Es una afirmación errónea",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Consulta la fórmula fundamental del valor F presentada en el apartado de lógica del análisis.",
+      "explanation": "La fórmula es $F = \\\\frac{MC_M}{MC_R}$, donde el numerador representa la variabilidad entre condiciones."
+    },
+    {
+      "q": "Para calcular $MC_M$, se divide la suma cuadrática del modelo ($SC_M$) por el número total de observaciones menos el número de condiciones.",
+      "options": [
+        "Es una afirmación correcta",
+        "Es una afirmación errónea",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Fíjate en los grados de libertad asociados a la variabilidad entre condiciones o tratamientos.",
+      "explanation": "La $MC_M$ se calcula dividiendo la $SC_M$ por $k - 1$, no por $n - k$ (que corresponde al error)."
+    },
+    {
+      "q": "La prueba de Mauchly se utiliza específicamente para verificar si las diferencias entre pares de condiciones presentan varianzas que son iguales.",
+      "options": [
+        "Es una afirmación correcta",
+        "Es una afirmación errónea",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Este es el supuesto específico que diferencia al ANOVA de medidas repetidas del de independientes.",
+      "explanation": "La esfericidad implica igualdad de varianzas en las diferencias de los pares, evaluada mediante el test de Mauchly."
+    },
+    {
+      "q": "Si el valor $p$ asociado a la prueba de Mauchly es inferior a $.05$, se asume que se cumple satisfactoriamente el supuesto de esfericidad.",
+      "options": [
+        "Es una afirmación correcta",
+        "Es una afirmación errónea",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Recuerda qué significa que una prueba de contraste de supuestos resulte estadísticamente significativa.",
+      "explanation": "Un valor $p < .05$ en Mauchly indica que se viola el supuesto de esfericidad, requiriendo correcciones posteriores."
+    },
+    {
+      "q": "La corrección de Greenhouse-Geisser se aplica sobre los grados de libertad para proteger el análisis ante la falta de esfericidad de los datos.",
+      "options": [
+        "Es una afirmación correcta",
+        "Es una afirmación errónea",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Esta técnica es fundamental cuando el test de Mauchly resulta significativo en el output de SPSS.",
+      "explanation": "Greenhouse-Geisser ajusta los grados de libertad para controlar el error tipo I cuando no hay esfericidad."
+    },
+    {
+      "q": "El test de Friedman es la alternativa paramétrica recomendada cuando la variable dependiente no sigue una distribución normal en la muestra.",
+      "options": [
+        "Es una afirmación correcta",
+        "Es una afirmación errónea",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre pruebas paramétricas y no paramétricas según la naturaleza de la distribución.",
+      "explanation": "El test de Friedman es una prueba no paramétrica, basada en rangos para medidas repetidas."
+    },
+    {
+      "q": "La prueba post hoc de Bonferroni es considerada conservadora porque reduce el nivel de significación al dividirlo por el total de comparaciones.",
+      "options": [
+        "Es una afirmación correcta",
+        "Es una afirmación errónea",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Analiza cómo afecta el ajuste de Bonferroni a la probabilidad de cometer un error de Tipo I.",
+      "explanation": "Bonferroni ajusta $\\\\alpha$ dividiéndolo por el número de contrastes para evitar el inflado del error tipo I."
+    },
+    {
+      "q": "En el ANOVA de medidas repetidas, la independencia de las observaciones debe cumplirse tanto dentro de los sujetos como entre sujetos distintos.",
+      "options": [
+        "Es una afirmación correcta",
+        "Es una afirmación errónea",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Lee con atención el supuesto número 3 en el apartado 4.3.4 sobre la dependencia de los datos.",
+      "explanation": "Las mediciones dentro de un sujeto están correlacionadas (dependientes); solo deben ser independientes entre sujetos."
+    },
+    {
+      "q": "Indique la afirmación correcta respecto a la potencia estadística del diseño de medidas repetidas frente al diseño de medidas independientes.",
+      "options": [
+        "El diseño de medidas repetidas suele presentar mayor potencia al reducir la varianza debida a diferencias individuales.",
+        "El diseño de medidas repetidas suele presentar menor potencia al requerir un mayor número de sujetos para el análisis.",
+        "El diseño de medidas repetidas suele presentar igual potencia dado que el cálculo de la $F$ sigue la misma estructura."
+      ],
+      "correct": 0,
+      "hint": "Considera qué ocurre con el error residual cuando el sujeto actúa como su propio control.",
+      "explanation": "Al usar los mismos sujetos, se elimina la variabilidad intersujeto del término de error, aumentando la sensibilidad ($F$)."
+    },
+    {
+      "q": "Indique la afirmación correcta sobre el cálculo de los grados de libertad del error ($gl_R$) en un ANOVA de medidas dependientes.",
+      "options": [
+        "Se calculan restando el número de condiciones al número total de observaciones realizadas en el estudio completo.",
+        "Se calculan restando el número de sujetos al número total de condiciones evaluadas durante la fase experimental.",
+        "Se calculan restando una unidad al número total de sujetos que han participado en todas las fases de la medida."
+      ],
+      "correct": 0,
+      "hint": "Revisa la definición de $n$ y $k$ en el cálculo de la media cuadrática residual ($MC_R$).",
+      "explanation": "Según la fórmula $MC_R = \\\\frac{SC_R}{n-k}$, los grados de libertad del error son $n$ (observaciones) menos $k$ (condiciones)."
+    },
+    {
+      "q": "Indique la afirmación correcta sobre el uso de la prueba de Games-Howell en el contexto de comparaciones múltiples post hoc.",
+      "options": [
+        "Es una alternativa robusta que se utiliza cuando no se asume igualdad de varianzas ni homogeneidad de covarianzas.",
+        "Es una alternativa conservadora que requiere estrictamente el cumplimiento del supuesto de esfericidad de Mauchly.",
+        "Es una alternativa paramétrica que solo puede aplicarse si el tamaño del efecto es superior a un valor $\\\\eta^2 = .14$."
+      ],
+      "correct": 0,
+      "hint": "Esta prueba se menciona como alternativa cuando fallan los supuestos de varianza y covarianza.",
+      "explanation": "Games-Howell no asume varianzas iguales ni esfericidad, siendo más flexible que Bonferroni en esos casos."
+    },
+    {
+      "q": "Indique la afirmación correcta sobre la interpretación del tamaño del efecto mediante el estadístico eta cuadrado parcial ($\\\\eta_p^2$).",
+      "options": [
+        "Representa la proporción de varianza de la VD explicada por la VI tras excluir otras fuentes de variabilidad.",
+        "Representa la diferencia absoluta entre las medias de las condiciones dividida por la desviación típica global.",
+        "Representa la probabilidad de rechazar la hipótesis nula cuando esta es falsa en la población de referencia."
+      ],
+      "correct": 0,
+      "hint": "El término 'parcial' implica que se está controlando o eliminando parte de la varianza total.",
+      "explanation": "La $\\\\eta_p^2$ mide el impacto de la VI sobre la VD eliminando la variabilidad no relacionada del denominador."
+    },
+    {
+      "q": "Indique la afirmación correcta sobre el procedimiento en SPSS para realizar el ANOVA de medidas dependientes.",
+      "options": [
+        "Se debe acceder a través de Analizar > Modelo lineal general > Medidas repetidas y definir el factor intra-sujeto.",
+        "Se debe acceder a través de Analizar > Comparar medias > ANOVA de un factor y seleccionar la opción de dependencia.",
+        "Se debe acceder a través de Analizar > Estadísticos descriptivos > Explorar y marcar la opción de medidas repetidas."
+      ],
+      "correct": 0,
+      "hint": "Visualiza la ruta del menú de SPSS descrita en las capturas de pantalla del material.",
+      "explanation": "La ruta correcta utiliza el 'Modelo lineal general' para definir factores intra-sujetos y sus niveles."
+    },
+    {
+      "q": "Indique la afirmación correcta sobre la interpretación de la tabla 'Pruebas de efectos intra-sujetos' si Mauchly es significativo.",
+      "options": [
+        "Se debe consultar la fila de Greenhouse-Geisser para obtener los valores de significación ajustados correctamente.",
+        "Se debe consultar la fila de Esfericidad asumida para garantizar que el error tipo II se mantiene bajo control.",
+        "Se debe consultar la fila de Límite inferior para maximizar la potencia estadística del contraste de hipótesis."
+      ],
+      "correct": 0,
+      "hint": "Busca la recomendación técnica para cuando se viola el supuesto de esfericidad ($p < .05$).",
+      "explanation": "Si se viola la esfericidad, la fila 'Esfericidad asumida' no es válida y se recurre a correcciones como Greenhouse-Geisser."
+    },
+    {
+      "q": "Indique la afirmación correcta sobre la utilidad de los gráficos Q-Q en el análisis previo al ANOVA de medidas repetidas.",
+      "options": [
+        "Permiten valorar visualmente si la distribución de la variable dependiente se ajusta razonablemente a la normalidad.",
+        "Permiten identificar si la varianza de las diferencias entre pares de condiciones es constante en toda la muestra.",
+        "Permiten determinar si existe una correlación lineal significativa entre las medidas pre y post de los sujetos."
+      ],
+      "correct": 0,
+      "hint": "Estos gráficos aparecen en el apartado de comprobación de supuestos de normalidad.",
+      "explanation": "Los gráficos Q-Q comparan los cuantiles observados con los esperados bajo una distribución normal teórica."
+    },
+    {
+      "q": "Indique la afirmación correcta respecto al test de Friedman y sus comparaciones por parejas en el output de SPSS.",
+      "options": [
+        "El diagrama de comparaciones marca en azul las relaciones significativas y en granate las que no presentan diferencias.",
+        "El diagrama de comparaciones marca en verde las relaciones significativas y en rojo las que no presentan diferencias.",
+        "El diagrama de comparaciones marca en negro las relaciones significativas y en gris las que no presentan diferencias."
+      ],
+      "correct": 0,
+      "hint": "Consulta la descripción visual del output del test de Friedman en la página 106.",
+      "explanation": "El manual especifica que el diagrama utiliza el color azul para los pares con diferencias significativas ($p < .05$)."
+    },
+    {
+      "q": "Indique la afirmación correcta sobre el supuesto de normalidad en el ANOVA de medidas repetidas con muestras grandes.",
+      "options": [
+        "El ANOVA es robusto ante violaciones de la normalidad cuando el tamaño muestral es suficientemente elevado.",
+        "El ANOVA requiere normalidad estricta independientemente del tamaño de la muestra para evitar errores tipo I.",
+        "El ANOVA debe ser sustituido siempre por el test de Friedman si el estadístico de Shapiro-Wilk es significativo."
+      ],
+      "correct": 0,
+      "hint": "Busca el comentario sobre la robustez del ANOVA en el supuesto 4 del apartado 4.3.4.",
+      "explanation": "El texto señala que el ANOVA es robusto ante la falta de normalidad si la muestra es grande, por lo que no suele ser crítico."
+    },
+    {
+      "q": "Indique la afirmación correcta sobre la interpretación de la columna 'Sig. ajust.' en las comparaciones por parejas.",
+      "options": [
+        "Muestra el valor $p$ tras haber aplicado una corrección (como Bonferroni) para compensar los múltiples contrastes.",
+        "Muestra el valor de la probabilidad de que la esfericidad sea nula tras ajustar los grados de libertad del error.",
+        "Muestra el nivel de confianza del intervalo tras haber eliminado los valores atípicos detectados en el gráfico."
+      ],
+      "correct": 0,
+      "hint": "El término 'ajustado' suele referirse a correcciones por comparaciones múltiples.",
+      "explanation": "La 'Sig. ajust.' es el valor $p$ corregido para evitar el aumento del error tipo I al realizar muchas comparaciones."
+    },
+    {
+      "q": "Indique la afirmación correcta sobre la relación entre el método de Bonferroni y el supuesto de esfericidad.",
+      "options": [
+        "Bonferroni es especialmente robusto para controlar el error tipo I incluso cuando se viola el supuesto de esfericidad.",
+        "Bonferroni requiere que el supuesto de esfericidad se cumpla estrictamente para poder ser calculado por SPSS.",
+        "Bonferroni pierde toda su potencia estadística si el valor del épsilon de Greenhouse-Geisser es menor a $.75$."
+      ],
+      "correct": 0,
+      "hint": "Esta relación se menciona al final del apartado sobre supuestos (pág. 97).",
+      "explanation": "El material indica que Bonferroni es una opción recomendable y robusta cuando se prioriza la fiabilidad ante la falta de esfericidad."
+    },
+    {
+      "q": "Indique la afirmación correcta sobre la representación gráfica de las medidas dependientes en el análisis de perfil.",
+      "options": [
+        "Se utilizan gráficos de líneas para reflejar la continuidad existente entre las medidas tomadas a un mismo sujeto.",
+        "Se utilizan gráficos de barras separadas para enfatizar que cada condición es independiente de las evaluaciones previas.",
+        "Se utilizan gráficos de dispersión con líneas de regresión para predecir el valor futuro de la variable dependiente."
+      ],
+      "correct": 0,
+      "hint": "Compara la elección de gráficos para medidas independientes frente a medidas dependientes (pág. 103).",
+      "explanation": "Las líneas unen las medias para simbolizar que los datos provienen de los mismos individuos a lo largo del tiempo."
+    },
+    {
+      "q": "Indique la afirmación correcta sobre el valor del estadístico $\\\\chi^2$ en la prueba de esfericidad de Mauchly.",
+      "options": [
+        "Es el valor transformado que se utiliza para determinar la probabilidad de que las varianzas sean homogéneas.",
+        "Es el valor de la varianza residual que se obtiene tras restar la variabilidad intersujetos del modelo total.",
+        "Es el valor de la media cuadrática del modelo expresado en unidades estandarizadas de la distribución normal."
+      ],
+      "correct": 0,
+      "hint": "Observa los parámetros reportados en la interpretación APA del ejemplo de depresión.",
+      "explanation": "Mauchly utiliza una distribución chi-cuadrado para contrastar la hipótesis de esfericidad de la matriz de covarianzas."
+    },
+    {
+      "q": "Indique la afirmación correcta sobre el término de error en la fórmula de $F$ para medidas repetidas ($MC_R$).",
+      "options": [
+        "Representa la variabilidad que no ha sido explicada por el efecto de las condiciones o momentos temporales.",
+        "Representa la variabilidad total de la muestra antes de ser descompuesta en factores intrasujeto e intersujeto.",
+        "Representa la variabilidad sistemática debida exclusivamente a la manipulación de la variable independiente."
+      ],
+      "correct": 0,
+      "hint": "¿Qué es aquello que queda 'residual' tras explicar el modelo?",
+      "explanation": "El error o residuo es la variabilidad aleatoria no controlada por el factor principal del diseño experimental."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta respecto a los supuestos del ANOVA para medidas repetidas o dependientes.",
+      "options": [
+        "La variable dependiente puede ser de naturaleza categórica siempre que el número de categorías sea superior a cuatro.",
+        "Las observaciones deben ser independientes entre los sujetos para garantizar que no existan sesgos de agrupación.",
+        "Cada participante debe ser medido obligatoriamente en todas y cada una de las condiciones de la investigación."
+      ],
+      "correct": 0,
+      "hint": "Revisa el nivel de medida requerido para la VD en el primer supuesto (apartado 4.3.4).",
+      "explanation": "La VD debe ser continua (intervalo o razón), no categórica; esta última requeriría otro tipo de análisis."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre la prueba de Friedman como alternativa no paramétrica para este diseño.",
+      "options": [
+        "Requiere que la variable independiente sea de naturaleza intersujeto para poder asignar los rangos correctamente.",
+        "Se basa en la ordenación por rangos de las puntuaciones de cada sujeto en las diferentes condiciones medidas.",
+        "Es útil cuando se viola el supuesto de normalidad y no se desea recurrir a la robustez del modelo paramétrico."
+      ],
+      "correct": 0,
+      "hint": "Considera qué tipo de variable independiente (VI) estamos estudiando en todo este capítulo.",
+      "explanation": "Friedman es para medidas repetidas (VI intrasujeto); una VI intersujeto requeriría la prueba de Kruskal-Wallis."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre el planteamiento de la hipótesis alternativa ($H_1$) en este análisis.",
+      "options": [
+        "La hipótesis alternativa afirma que todas y cada una de las medias de las condiciones son distintas entre sí.",
+        "La hipótesis alternativa afirma que al menos una de las medias es significativamente diferente a las restantes.",
+        "La hipótesis alternativa se acepta únicamente cuando el valor $p$ obtenido es menor al nivel crítico de alfa."
+      ],
+      "correct": 0,
+      "hint": "Piensa si es necesario que 'todas' las medias difieran para rechazar la igualdad global.",
+      "explanation": "Basta con que un par de medias sea diferente para rechazar $H_0$; no es necesario que todas las combinaciones difieran."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre la variabilidad entre condiciones en la lógica del ANOVA de medidas repetidas.",
+      "options": [
+        "Indica la variabilidad debida exclusivamente a las diferencias individuales existentes entre los participantes.",
+        "Nos indica si las diferencias observadas entre momentos son mayores de lo que cabría esperar por puro azar.",
+        "Es el componente de la variabilidad total que se utiliza como numerador para el cálculo del estadístico $F$."
+      ],
+      "correct": 0,
+      "hint": "¿La variabilidad 'entre condiciones' mide personas o tratamientos?",
+      "explanation": "La variabilidad entre condiciones mide el efecto del tratamiento/tiempo, no las diferencias individuales de los sujetos."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre la corrección de Huynh-Feldt en el output de efectos intra-sujetos.",
+      "options": [
+        "Es una corrección que aumenta los grados de libertad para compensar el exceso de esfericidad en los datos.",
+        "Es una alternativa a la corrección de Greenhouse-Geisser que suele ser menos conservadora en sus resultados.",
+        "Aparece en la tabla de SPSS junto con otras opciones de ajuste cuando se detectan problemas de esfericidad."
+      ],
+      "correct": 0,
+      "hint": "¿Qué hacen las correcciones con los grados de libertad: aumentarlos o disminuirlos?",
+      "explanation": "Las correcciones reducen (ajustan a la baja) los grados de libertad para ser más estrictas, no los aumentan."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre la prueba post hoc de Tukey en el contexto de medidas dependientes.",
+      "options": [
+        "Es la opción más recomendable cuando se viola el supuesto de esfericidad debido a su gran robustez teórica.",
+        "Ofrece una mayor potencia estadística que el método de Bonferroni si se cumple el supuesto de esfericidad.",
+        "En algunos menús de SPSS se identifica mediante las siglas DMS, aunque el manual matiza esta equivalencia."
+      ],
+      "correct": 0,
+      "hint": "Lee la recomendación sobre Tukey vs Bonferroni en la página 97.",
+      "explanation": "El texto indica que Tukey es preferible si hay esfericidad; si se viola, se recomienda Bonferroni por su robustez."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre la suma cuadrática del error ($SC_R$) en el modelo de varianza.",
+      "options": [
+        "Representa la variabilidad total de la variable dependiente antes de considerar cualquier factor de estudio.",
+        "Es el componente necesario para calcular la media cuadrática residual que actúa como denominador de la $F$.",
+        "Incluye la parte de la varianza que no puede ser atribuida a los cambios sistemáticos producidos por la VI."
+      ],
+      "correct": 0,
+      "hint": "Diferencia entre Suma de Cuadrados Total y Suma de Cuadrados del Error.",
+      "explanation": "La $SC_R$ es solo una parte de la variabilidad; la variabilidad 'total' es la $SC_{Total}$."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre el supuesto de independencia de observaciones entre sujetos.",
+      "options": [
+        "Implica que la respuesta de un participante en el tiempo $1$ no debe influir en su propia respuesta en el tiempo $2$.",
+        "Significa que los datos obtenidos de un sujeto deben ser totalmente independientes de los datos de otros sujetos.",
+        "Es un supuesto fundamental para asegurar que los errores no estén correlacionados entre los diferentes grupos."
+      ],
+      "correct": 0,
+      "hint": "Recuerda que estamos en 'medidas repetidas'. ¿Es posible la independencia dentro del mismo sujeto?",
+      "explanation": "En medidas repetidas, las respuestas de un mismo sujeto SÍ están relacionadas; la independencia es solo 'entre' sujetos."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre la tabla de 'Comparaciones por parejas' del test de Friedman.",
+      "options": [
+        "El estadístico de prueba estándar es idéntico al valor de la media cuadrática del modelo independiente.",
+        "Muestra la diferencia de rangos promedio entre los diferentes pares de mediciones temporales analizadas.",
+        "Incluye una columna de significación ajustada mediante la corrección de Bonferroni para varias pruebas."
+      ],
+      "correct": 0,
+      "hint": "Piensa si una prueba de rangos no paramétrica usaría 'medias cuadráticas' de un modelo lineal.",
+      "explanation": "Los estadísticos de Friedman se basan en rangos y distribuciones asociadas, no en las medias cuadráticas del ANOVA."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre los resultados del ANOVA de depresión en el seguimiento a los tres meses.",
+      "options": [
+        "Las diferencias significativas encontradas demuestran que la terapia es la única causa del cambio observado.",
+        "El valor $F = 13.07$ permite rechazar la hipótesis nula de igualdad de medias con una confianza superior al $95\\\\%$.",
+        "El ajuste de Bonferroni confirma que todas las mediciones difieren significativamente entre sí ($p < .05$)."
+      ],
+      "correct": 0,
+      "hint": "Considera las limitaciones de la estadística inferencial respecto a la causalidad absoluta.",
+      "explanation": "La estadística muestra diferencias significativas, pero la causalidad 'única' es una afirmación extra-estadística excesiva."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre el uso de la opción 'Medias marginales estimadas' en el menú de SPSS.",
+      "options": [
+        "Sirve exclusivamente para calcular la potencia observada del test cuando el tamaño de la muestra es pequeño.",
+        "Permite solicitar comparaciones post hoc seleccionando ajustes como Bonferroni o Sidak en la ventana.",
+        "Facilita la obtención de medias ajustadas para cada nivel del factor intra-sujetos definido por el usuario."
+      ],
+      "correct": 0,
+      "hint": "Revisa la Figura 70 y los pasos descritos en la página 101.",
+      "explanation": "Se usa para obtener las medias de cada nivel y realizar los contrastes post hoc, no solo para la potencia."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre el épsilon (Epsilon) en la prueba de esfericidad de Mauchly de SPSS.",
+      "options": [
+        "Un valor de épsilon igual a $1$ indica que se viola gravemente el supuesto de esfericidad en la muestra.",
+        "El valor de épsilon se utiliza para multiplicar los grados de libertad y obtener el ajuste de Greenhouse-Geisser.",
+        "Representa el grado en que la matriz de covarianzas se aleja de la condición de esfericidad ideal teórica."
+      ],
+      "correct": 0,
+      "hint": "¿Qué valor de épsilon representa la esfericidad perfecta?",
+      "explanation": "Un épsilon de $1$ significa esfericidad perfecta; cuanto más se aleja de $1$ (hacia abajo), mayor es la violación."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre la variabilidad residual en comparación con la variabilidad del modelo.",
+      "options": [
+        "La variabilidad residual siempre debe ser mayor que la variabilidad del modelo para que el test sea significativo.",
+        "La variabilidad del modelo recoge las diferencias entre las medias de las condiciones o momentos temporales.",
+        "Si la variabilidad residual es muy alta en relación al modelo, el valor de $F$ será pequeño y $p$ será grande."
+      ],
+      "correct": 0,
+      "hint": "Piensa en la fórmula $F = MC_M / MC_R$. ¿Qué hace que $F$ sea grande?",
+      "explanation": "Para que sea significativo, $MC_M$ (modelo) debe ser significativamente mayor que $MC_R$ (residuo), no al revés."
+    }
+  ],
+  "jsonTestB": [
+    {
+      "q": "En el ANOVA de medidas repetidas, la variabilidad total se descompone en variabilidad entre condiciones y variabilidad ____.",
+      "options": [
+        "residual o varianza del error",
+        "inter-sujetos no correlacionada",
+        "intra-grupos de diseño aleatorio"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la porción de varianza no explicada por el factor principal.",
+      "explanation": "Según la página 95, la variabilidad total se divide en variabilidad entre condiciones y variabilidad residual (o del error) $\\\\text{MC}_R$."
+    },
+    {
+      "q": "Para un diseño con $k$ niveles, los grados de libertad asociados a la media cuadrática del modelo ($\\\\text{MC}_M$) son ____.",
+      "options": [
+        "El valor de $k$ menos la unidad",
+        "El valor de $n$ menos la unidad",
+        "El valor de $k$ más la unidad"
+      ],
+      "correct": 0,
+      "hint": "Es la fórmula estándar para los grados de libertad del numerador en F.",
+      "explanation": "La fórmula en la pág. 96 indica que $\\\\text{MC}_M = \\\\frac{\\\\text{SC}_M}{k-1}$, por lo tanto $\\\\text{gl}_M = k-1$."
+    },
+    {
+      "q": "El estadístico $F$ en este análisis se obtiene mediante el cociente entre la media cuadrática del modelo y ____.",
+      "options": [
+        "La media cuadrática de los residuos",
+        "La suma cuadrática de las medidas",
+        "La desviación típica de la muestra"
+      ],
+      "correct": 0,
+      "hint": "Representa el ruido o variabilidad no sistemática en el denominador.",
+      "explanation": "La fórmula es $F = \\\\frac{\\\\text{MC}_M}{\\\\text{MC}_R}$. Un error común es usar la $\\\\text{SC}$ en lugar de la $\\\\text{MC}$."
+    },
+    {
+      "q": "El supuesto de ____ implica que las varianzas de las diferencias entre todos los pares de condiciones son iguales.",
+      "options": [
+        "Esfericidad (prueba de Mauchly)",
+        "Homocedasticidad (test Levene)",
+        "Normalidad (test de Shapiro)"
+      ],
+      "correct": 0,
+      "hint": "Es un supuesto específico de diseños intrasujeto evaluado con $\\\\chi^2$.",
+      "explanation": "La esfericidad es el supuesto clave en medidas repetidas. Si $\\\\text{Sig.} < .05$, se viola (pág. 97)."
+    },
+    {
+      "q": "Si se viola el supuesto de esfericidad, se debe emplear la corrección de ____ para ajustar los grados de libertad.",
+      "options": [
+        "La técnica de Greenhouse-Geisser",
+        "La técnica de Bonferroni-Sidak",
+        "La técnica de Welch-Satterth"
+      ],
+      "correct": 0,
+      "hint": "Aparece en la tabla de efectos intrasujeto de SPSS.",
+      "explanation": "Greenhouse-Geisser es la corrección estándar citada en la pág. 97 ante la falta de esfericidad."
+    },
+    {
+      "q": "La prueba post hoc de ____ es la más recomendada en medidas repetidas por ser conservadora y robusta.",
+      "options": [
+        "El ajuste mediante Bonferroni",
+        "El ajuste mediante Games-Howell",
+        "El ajuste mediante Tukey-HSD"
+      ],
+      "correct": 0,
+      "hint": "Divide el nivel alfa por el número total de comparaciones realizadas.",
+      "explanation": "La pág. 96 destaca a Bonferroni como la prueba más utilizada por su control del error Tipo I."
+    },
+    {
+      "q": "En el cálculo de $\\\\text{MC}_R$, el valor de $n$ representa ____ multiplicado por el número de condiciones.",
+      "options": [
+        "El número total de los sujetos",
+        "El número total de los grupos",
+        "El número total de las medidas"
+      ],
+      "correct": 0,
+      "hint": "Es el tamaño de la muestra original antes de la repetición.",
+      "explanation": "Según la pág. 96, $n$ es el número de sujetos multiplicado por $k$ (número de condiciones)."
+    },
+    {
+      "q": "La hipótesis nula ($H_0$) postula que ____ entre las medias de las diferentes condiciones temporales.",
+      "options": [
+        "No existen diferencias notables",
+        "Existen diferencias muy grandes",
+        "No existen varianzas iguales"
+      ],
+      "correct": 0,
+      "hint": "Es la hipótesis de igualdad o ausencia de efecto.",
+      "explanation": "Se define como $\\\\mu_1 = \\\\mu_2 = ... = \\\\mu_k$, es decir, ausencia de cambios significativos (pág. 97)."
+    },
+    {
+      "q": "El tamaño del efecto en este tipo de ANOVA se suele informar mediante el estadístico ____.",
+      "options": [
+        "El valor de eta cuadrado parcial",
+        "El valor de d de Cohen corregida",
+        "El valor de coeficiente de Pearson"
+      ],
+      "correct": 0,
+      "hint": "Representa la proporción de varianza explicada por el factor.",
+      "explanation": "El texto indica que se aplica el $\\\\eta^2$ parcial tal como en el ANOVA independiente (pág. 96)."
+    },
+    {
+      "q": "Cuando no se cumple el supuesto de normalidad, se recurre a la prueba no paramétrica de ____.",
+      "options": [
+        "El contraste de Friedman",
+        "El contraste de Kruskal-Wallis",
+        "El contraste de Wilcoxon"
+      ],
+      "correct": 0,
+      "hint": "Analiza rangos para dos o más muestras relacionadas.",
+      "explanation": "La pág. 97 y 104 confirman que el test de Friedman es la alternativa no paramétrica oficial."
+    },
+    {
+      "q": "En SPSS, el factor que agrupa las medidas temporales se define como un factor ____.",
+      "options": [
+        "De naturaleza intrasujeto",
+        "De naturaleza intersujeto",
+        "De naturaleza covariante"
+      ],
+      "correct": 0,
+      "hint": "Indica que los mismos sujetos pasan por todos los niveles.",
+      "explanation": "Es un diseño 'within-subjects' o intrasujeto porque la comparación es interna al individuo (pág. 99)."
+    },
+    {
+      "q": "La prueba de Mauchly con un valor $\\\\text{Sig.} = .001$ indica que ____ el supuesto de esfericidad.",
+      "options": [
+        "Se está incumpliendo gravemente",
+        "Se está cumpliendo plenamente",
+        "No se puede calcular nunca"
+      ],
+      "correct": 0,
+      "hint": "Un p-valor menor a .05 implica rechazo de la hipótesis de igualdad.",
+      "explanation": "Si $p < .05$, se rechaza la esfericidad y se requiere corrección (pág. 103)."
+    },
+    {
+      "q": "La corrección de ____ es una alternativa a Greenhouse-Geisser cuando el valor épsilon es cercano a 1.",
+      "options": [
+        "La técnica de Huynh-Feldt",
+        "La técnica de Levene-Brown",
+        "La técnica de Box-Mauchly"
+      ],
+      "correct": 0,
+      "hint": "Es otra corrección que aparece en los outputs de SPSS.",
+      "explanation": "Huynh-Feldt es la otra corrección mencionada en la pág. 102 para ajustar los grados de libertad."
+    },
+    {
+      "q": "En el modelo, la variabilidad residual incluye la interacción entre el sujeto y ____.",
+      "options": [
+        "La condición o tratamiento",
+        "El error de medida externo",
+        "La media de la población"
+      ],
+      "correct": 0,
+      "hint": "Es lo que queda tras quitar el efecto principal y el efecto de los sujetos.",
+      "explanation": "La varianza residual captura la inconsistencia del efecto del tratamiento entre sujetos (pág. 95)."
+    },
+    {
+      "q": "Para interpretar las comparaciones por parejas en SPSS, debemos fijarnos en la columna ____.",
+      "options": [
+        "De la significación ajustada",
+        "De la desviación de la media",
+        "De la suma de los cuadrados"
+      ],
+      "correct": 0,
+      "hint": "Es el valor p tras aplicar la corrección por múltiples comparaciones.",
+      "explanation": "La pág. 95 advierte que hay que atender a 'Sig. ajust.' para evitar inflar el error alfa."
+    },
+    {
+      "q": "Un valor de $F$ significativamente alto permite rechazar la $H_0$, lo que implica que ____.",
+      "options": [
+        "Hay al menos una diferencia",
+        "Todas las medias son iguales",
+        "No hay efecto del tiempo"
+      ],
+      "correct": 0,
+      "hint": "Indica que el modelo explica más varianza de la esperada por azar.",
+      "explanation": "El rechazo de $H_0$ significa que al menos un par de medias difiere significativamente (pág. 96)."
+    },
+    {
+      "q": "El diseño longitudinal es un ejemplo típico donde se aplica el ANOVA de ____.",
+      "options": [
+        "Las medidas repetidas",
+        "Los grupos aleatorios",
+        "Los bloques completos"
+      ],
+      "correct": 0,
+      "hint": "Se evalúa al mismo grupo en distintos momentos temporales.",
+      "explanation": "Los estudios longitudinales miden a los sujetos en varios momentos, requiriendo este análisis (pág. 95)."
+    },
+    {
+      "q": "El valor de épsilon (\\\\epsilon) en la prueba de esfericidad indica el grado de ____.",
+      "options": [
+        "Desviación de la esfericidad",
+        "Normalidad de la muestra",
+        "Potencia del estadístico"
+      ],
+      "correct": 0,
+      "hint": "Cuanto más se aleja de 1, más se viola el supuesto.",
+      "explanation": "Épsilon mide la cuantía de la violación; se usa para corregir los grados de libertad (pág. 102)."
+    },
+    {
+      "q": "La variable dependiente en un ANOVA de medidas repetidas debe ser siempre de tipo ____.",
+      "options": [
+        "Escala continua numérica",
+        "Nominal de varios niveles",
+        "Ordinal de rangos cortos"
+      ],
+      "correct": 0,
+      "hint": "Requiere métricas de intervalo o de razón.",
+      "explanation": "El primer supuesto (pág. 97) exige que la VD sea continua (intervalo o razón)."
+    },
+    {
+      "q": "En la tabla de comparaciones por parejas, un asterisco (*) suele indicar que ____.",
+      "options": [
+        "La diferencia es significativa",
+        "El dato es un error de SPSS",
+        "La varianza es heterogénea"
+      ],
+      "correct": 0,
+      "hint": "Es la marca visual estándar para un p-valor inferior al nivel alfa.",
+      "explanation": "El asterisco señala diferencias estadísticamente significativas a nivel .05 (pág. 102)."
+    },
+    {
+      "q": "Sobre el supuesto de independencia en el ANOVA de medidas repetidas, señale la opción correcta:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 0,
+      "hint": "Considere la distinción entre observaciones intra e intersujeto.",
+      "explanation": "Se requiere independencia entre sujetos, aunque haya dependencia intrasujeto. Esto es una verdad absoluta del modelo."
+    },
+    {
+      "q": "Respecto a la variabilidad residual en este modelo estadístico, es cierto que:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 0,
+      "hint": "Piense en qué componentes de error se eliminan o se mantienen.",
+      "explanation": "Incluye el error aleatorio y la interacción sujeto-tratamiento, excluyendo la varianza inter-sujeto constante."
+    },
+    {
+      "q": "Las ventajas de utilizar un diseño de medidas repetidas frente a uno independiente incluyen:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 0,
+      "hint": "Piense en el número de sujetos y la potencia estadística.",
+      "explanation": "Requiere menos sujetos y aumenta la potencia al controlar la variabilidad individual (pág. 95)."
+    },
+    {
+      "q": "En relación con la prueba de esfericidad de Mauchly en el output de SPSS, se afirma que:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 0,
+      "hint": "Analice la hipótesis nula y las consecuencias de su rechazo.",
+      "explanation": "Su $H_0$ es que hay esfericidad; si $p < .05$, se aplican correcciones como Greenhouse-Geisser (pág. 103)."
+    },
+    {
+      "q": "Para realizar correctamente el análisis de normalidad previo al ANOVA en SPSS:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 0,
+      "hint": "Recuerde el menú Analizar > Estadísticos descriptivos > Explorar.",
+      "explanation": "Se deben comprobar las distribuciones en cada momento temporal (pre, post, seguimiento) (pág. 98)."
+    },
+    {
+      "q": "Las pruebas post hoc en el contexto de medidas dependientes se caracterizan por:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 0,
+      "hint": "Considere el error estándar y la corrección de Bonferroni.",
+      "explanation": "Tienen en cuenta la correlación entre medidas y suelen aplicar ajustes para comparaciones múltiples (pág. 96)."
+    },
+    {
+      "q": "Al interpretar la tabla de 'Pruebas de efectos intrasujetos', es fundamental verificar:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 0,
+      "hint": "Observe los grados de libertad, el valor F y la significación.",
+      "explanation": "Hay que elegir la fila correcta (esfericidad asumida o corregida) según el test de Mauchly (pág. 103)."
+    },
+    {
+      "q": "El estadístico F puede verse afectado negativamente si se incumplen los siguientes criterios:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 0,
+      "hint": "Piense en los supuestos de normalidad y esfericidad.",
+      "explanation": "La violación de supuestos puede inflar el error Tipo I o reducir la potencia del contraste (pág. 97)."
+    },
+    {
+      "q": "La prueba de Friedman como alternativa no paramétrica se aplica cuando:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 0,
+      "hint": "Piense en la escala de la variable y el incumplimiento de supuestos.",
+      "explanation": "Es útil para variables ordinales o cuando la normalidad se viola gravemente en muestras pequeñas (pág. 104)."
+    },
+    {
+      "q": "En la redacción de resultados según el formato APA para este análisis, debe constar:",
+      "options": [
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 0,
+      "hint": "Incluya medias, estadísticos de contraste y tamaño del efecto.",
+      "explanation": "Se informan los descriptivos, el valor de F, los gl, el p-valor y el eta cuadrado parcial (pág. 103)."
+    },
+    {
+      "q": "Si un investigador obtiene un valor $\\\\text{F} = -4.56$, podemos concluir con certeza que:",
+      "options": [
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 0,
+      "hint": "Recuerde la naturaleza de las sumas de cuadrados y las medias cuadráticas.",
+      "explanation": "El estadístico F nunca puede ser negativo, ya que es una razón de varianzas (sumas de cuadrados divididas por gl)."
+    },
+    {
+      "q": "Si la prueba de Mauchly arroja un valor $\\\\text{Sig.} = .890$, el procedimiento correcto es:",
+      "options": [
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 0,
+      "hint": "Determine si se debe usar la fila de esfericidad asumida o la corregida.",
+      "explanation": "Con $p > .05$, se asume esfericidad. Las opciones que sugieran corregir serían erróneas (pág. 103)."
+    },
+    {
+      "q": "En un ANOVA de 3 niveles con 10 sujetos, los grados de libertad del error ($\\\\text{gl}_R$) son:",
+      "options": [
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 0,
+      "hint": "Fórmula: $(N-1) \\\\times (k-1)$. Calcule $(10-1) \\\\times (3-1)$.",
+      "explanation": "$9 \\\\times 2 = 18$. Cualquier opción que dé un valor distinto de 18 sería incorrecta en el contexto de SPSS."
+    },
+    {
+      "q": "Al comparar las medias de Depresión Pre (50.5) y Seguimiento (48.1) con $p = .120$, se concluye que:",
+      "options": [
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 0,
+      "hint": "Compare el valor p con el nivel de significación estándar .05.",
+      "explanation": "Como $p > .05$, no hay diferencias significativas. Afirmar lo contrario sería un error de interpretación."
+    },
+    {
+      "q": "Es un supuesto necesario para el ANOVA de medidas repetidas que las varianzas sean:",
+      "options": [
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 0,
+      "hint": "Piense en la esfericidad, no solo en la homogeneidad simple.",
+      "explanation": "No basta con igualdad de varianzas (Levene), se requiere igualdad de varianzas de las diferencias (Mauchly)."
+    },
+    {
+      "q": "La prueba de Friedman utiliza como estadístico de contraste el valor de:",
+      "options": [
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 0,
+      "hint": "Se basa en la distribución Chi-cuadrado ($\\\\chi^2$) de rangos.",
+      "explanation": "Cualquier opción que diga 't de Student' o 'F de Snedecor' para Friedman es falsa (pág. 105)."
+    },
+    {
+      "q": "La potencia estadística en un diseño de medidas repetidas respecto a uno independiente es:",
+      "options": [
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 0,
+      "hint": "Considere el efecto de eliminar la variabilidad intersujeto del error.",
+      "explanation": "Es mayor, no menor. Las opciones que digan que es menor o igual son incorrectas (pág. 95)."
+    },
+    {
+      "q": "En SPSS, para el ANOVA de medidas repetidas, las variables se introducen en:",
+      "options": [
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 0,
+      "hint": "Revise el gráfico de la página 100 sobre la transferencia de variables.",
+      "explanation": "Se introducen como columnas separadas que representan cada nivel del factor intrasujeto."
+    },
+    {
+      "q": "Si el valor de épsilon (\\\\epsilon) es exactamente 1.000, esto significa que:",
+      "options": [
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 0,
+      "hint": "Reflexione sobre qué implica la ausencia total de violación de esfericidad.",
+      "explanation": "Significa esfericidad perfecta. Aplicar correcciones en este caso sería un error metodológico (pág. 102)."
+    },
+    {
+      "q": "El ANOVA de medidas repetidas es inválido si los datos son de tipo:",
+      "options": [
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 0,
+      "hint": "Recuerde el requisito de escala para la variable dependiente.",
+      "explanation": "Si los datos son nominales puros, el ANOVA no es aplicable. Solo se permiten escalas continuas (pág. 97)."
+    }
+  ],
+  "jsonLaboratorio": [
+    {
+      "id": 1,
+      "title": "Análisis de una Intervención en Depresión",
+      "context": "Una investigadora evalúa la depresión en $N = 51$ sujetos en tres momentos ($k = 3$): Pre, Post y Seguimiento. Se sabe que la Suma de Cuadrados del Modelo ($SC_{M}$) es $450.5$ y la Suma de Cuadrados del Error ($SC_{R}$) es $900$. El diseño es de medidas repetidas. Fórmulas: $df_{M} = k - 1$; $df_{R} = (N-1)(k-1)$.",
+      "parts": [
+        {
+          "id": "p1a",
+          "label": "a)",
+          "question": "Calcula los grados de libertad del modelo ($df_{M}$).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$df_{M} = k - 1 = 3 - 1 = 2$$"
+        },
+        {
+          "id": "p1b",
+          "label": "b)",
+          "question": "Calcula los grados de libertad del error ($df_{R}$).",
+          "correctValue": 100,
+          "tolerance": 0,
+          "explanation": "$$df_{R} = (N - 1)(k - 1) = (51 - 1)(3 - 1) = 50 \\\\times 2 = 100$$"
+        },
+        {
+          "id": "p1c",
+          "label": "c)",
+          "question": "Calcula la Media Cuadrática del Modelo ($MC_{M}$).",
+          "correctValue": 225.25,
+          "tolerance": 0.01,
+          "explanation": "$$MC_{M} = \\\\frac{SC_{M}}{df_{M}} = \\\\frac{450.5}{2} = 225.25$$"
+        },
+        {
+          "id": "p1d",
+          "label": "d)",
+          "question": "Calcula el valor del estadístico $F$.",
+          "correctValue": 25.03,
+          "tolerance": 0.05,
+          "explanation": "$$MC_{R} = \\\\frac{900}{100} = 9.0; F = \\\\frac{225.25}{9.0} = 25.027... \\\\approx 25.03$$"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Tamaño del Efecto y Varianza Explicada",
+      "context": "En un estudio sobre ansiedad laboral con $N = 31$ participantes y $4$ condiciones temporales, se obtiene $SC_{M} = 120$ y $SC_{Total} = 400$. Queremos hallar el impacto real de la variable.",
+      "parts": [
+        {
+          "id": "p2a",
+          "label": "a)",
+          "question": "Calcula los grados de libertad totales ($df_{Total}$) sabiendo que $n = N \\\\times k$.",
+          "correctValue": 123,
+          "tolerance": 0,
+          "explanation": "$$n = 31 \\\\times 4 = 124; df_{Total} = n - 1 = 123$$"
+        },
+        {
+          "id": "p2b",
+          "label": "b)",
+          "question": "Calcula el valor de Eta cuadrado parcial ($\\\\eta^{2}_{p}$) si $SC_{R} = 280$.",
+          "correctValue": 0.3,
+          "tolerance": 0.01,
+          "explanation": "$$ \\\\eta^{2}_{p} = \\\\frac{SC_{M}}{SC_{M} + SC_{R}} = \\\\frac{120}{120 + 280} = \\\\frac{120}{400} = 0.3$$"
+        },
+        {
+          "id": "p2c",
+          "label": "c)",
+          "question": "Si el resultado fuera $\\\\eta^{2} = 0.12$, ¿cómo se clasificaría según el texto? (1 = Pequeño, 2 = Moderado, 3 = Grande).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "El texto menciona un tamaño de efecto de $0.12$ como moderado."
+        },
+        {
+          "id": "p2d",
+          "label": "d)",
+          "question": "Calcula el $df_{R}$ para este diseño.",
+          "correctValue": 90,
+          "tolerance": 0,
+          "explanation": "$$df_{R} = (31-1)(4-1) = 30 \\\\times 3 = 90$$"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Corrección de Esfericidad de Mauchly",
+      "context": "Se realiza un ANOVA de medidas repetidas donde la prueba de Mauchly da un valor $p = 0.001$. Se decide aplicar la corrección de Greenhouse-Geisser ($\\\\epsilon = 0.75$). Los $df$ originales eran $df_{M}=2$ y $df_{R}=60$.",
+      "parts": [
+        {
+          "id": "p3a",
+          "label": "a)",
+          "question": "¿Se cumple el supuesto de esfericidad? (1 = Sí, 0 = No).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "Como $p < .05$, se viola el supuesto de esfericidad."
+        },
+        {
+          "id": "p3b",
+          "label": "b)",
+          "question": "Calcula los nuevos grados de libertad del modelo ($df_{M}$ ajustados).",
+          "correctValue": 1.5,
+          "tolerance": 0.01,
+          "explanation": "$$df_{M\\\\text{ ajustado}} = df_{M} \\\\times \\\\epsilon = 2 \\\\times 0.75 = 1.5$$"
+        },
+        {
+          "id": "p3c",
+          "label": "c)",
+          "question": "Calcula los nuevos grados de libertad del error ($df_{R}$ ajustados).",
+          "correctValue": 45,
+          "tolerance": 0,
+          "explanation": "$$df_{R\\\\text{ ajustado}} = 60 \\\\times 0.75 = 45$$"
+        },
+        {
+          "id": "p3d",
+          "label": "d)",
+          "question": "Si el valor $F$ original era $10.0$, ¿cuál es el valor $F$ tras la corrección? (Nota: el valor F no cambia, solo los df).",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "Las correcciones de esfericidad ajustan los grados de libertad, no el valor de F directamente."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Prueba No Paramétrica de Friedman",
+      "context": "Al no cumplirse la normalidad, se aplica el test de Friedman para 3 medidas. Los rangos promedio son: Pre ($2.18$), Post ($2.05$) y Seguimiento ($1.77$). $N=101$.",
+      "parts": [
+        {
+          "id": "p4a",
+          "label": "a)",
+          "question": "¿Cuál es la suma de los rangos promedio de las tres condiciones?",
+          "correctValue": 6,
+          "tolerance": 0.01,
+          "explanation": "$$2.18 + 2.05 + 1.77 = 6.0$$. En Friedman con $k=3$, la suma siempre es $(k+1)k/2 \\\\div k = 2$ por medida, total $k(k+1)/2$ en rangos absolutos."
+        },
+        {
+          "id": "p4b",
+          "label": "b)",
+          "question": "Si el nivel de significación ajustado entre Post y Pre es $1.000$, ¿hay diferencias? (1=Sí, 0=No).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "Un valor $p = 1.000$ indica ausencia total de significación estadística."
+        },
+        {
+          "id": "p4c",
+          "label": "c)",
+          "question": "Si el estadístico de prueba estándar para Seguimiento-Pre es $2.779$ y el error estándar es $0.141$, calcula el estadístico de prueba (Z).",
+          "correctValue": 0.39,
+          "tolerance": 0.01,
+          "explanation": "Según la tabla: $Estadístico / Error = 0.391 / 0.141 \\\\approx 2.77$. El valor pedido es el estadístico de prueba simple: $0.391$."
+        },
+        {
+          "id": "p4d",
+          "label": "d)",
+          "question": "Según el texto, ¿qué color indica diferencias significativas en el diagrama de Friedman de SPSS? (1 = Azul, 2 = Granate).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "El texto indica que el diagrama marca en azul las comparaciones significativas."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Post Hoc Bonferroni",
+      "context": "Se realizan $m = 3$ comparaciones por pares en un ANOVA. El nivel de significación alfa original es $\\\\alpha = 0.05$.",
+      "parts": [
+        {
+          "id": "p5a",
+          "label": "a)",
+          "question": "Calcula el nivel de significación corregido por Bonferroni (alfa / m).",
+          "correctValue": 0.0167,
+          "tolerance": 0.001,
+          "explanation": "$$0.05 / 3 = 0.01666...$$"
+        },
+        {
+          "id": "p5b",
+          "label": "b)",
+          "question": "Si una comparación tiene un $p$-valor de $0.04$, ¿sería significativa tras la corrección? (1 = Sí, 0 = No).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "$0.04 > 0.0167$, por lo tanto deja de ser significativa."
+        },
+        {
+          "id": "p5c",
+          "label": "c)",
+          "question": "En el SPSS de la página 8, ¿cuál es el Sig. ajustado entre Cambio 1 y 3?",
+          "correctValue": 0.001,
+          "tolerance": 0,
+          "explanation": "El valor reportado en la tabla de comparaciones por parejas es $<.001$."
+        },
+        {
+          "id": "p5d",
+          "label": "d)",
+          "question": "Si el número de sujetos es $101$ y $k=3$, ¿cuántas observaciones totales $n$ hay?",
+          "correctValue": 303,
+          "tolerance": 0,
+          "explanation": "$$n = 101 \\\\times 3 = 303$$"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Varianza Residual y Modelo",
+      "context": "Un investigador tiene los siguientes datos: $Media Cuadrática Modelo (MC_{M}) = 150$, $Media Cuadrática Residual (MC_{R}) = 15$. El número de condiciones es $k=4$.",
+      "parts": [
+        {
+          "id": "p6a",
+          "label": "a)",
+          "question": "Calcula el valor de la $F$ de Fisher.",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$F = MC_{M} / MC_{R} = 150 / 15 = 10$$"
+        },
+        {
+          "id": "p6b",
+          "label": "b)",
+          "question": "Calcula la Suma de Cuadrados del Modelo ($SC_{M}$) si $df_{M}=3$.",
+          "correctValue": 450,
+          "tolerance": 0,
+          "explanation": "$$SC_{M} = MC_{M} \\\\times df_{M} = 150 \\\\times 3 = 450$$"
+        },
+        {
+          "id": "p6c",
+          "label": "c)",
+          "question": "Calcula la Suma de Cuadrados del Error ($SC_{R}$) si el número de sujetos es $N=11$ ($df_{R}=30$).",
+          "correctValue": 450,
+          "tolerance": 0,
+          "explanation": "$$SC_{R} = MC_{R} \\\\times df_{R} = 15 \\\\times 30 = 450$$"
+        },
+        {
+          "id": "p6d",
+          "label": "d)",
+          "question": "Calcula el valor de $\\\\eta^{2}_{p}$ con estos datos.",
+          "correctValue": 0.5,
+          "tolerance": 0.05,
+          "explanation": "$$450 / (450 + 450) = 0.5$$"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Interpretación de Grados de Libertad",
+      "context": "Se presenta una tabla ANOVA de Medidas Repetidas con $df_{Modelo} = 4$ y $df_{Error} = 80$.",
+      "parts": [
+        {
+          "id": "p7a",
+          "label": "a)",
+          "question": "¿Cuántas condiciones ($k$) se midieron?",
+          "correctValue": 5,
+          "tolerance": 0,
+          "explanation": "$$k - 1 = 4 \\\\implies k = 5$$"
+        },
+        {
+          "id": "p7b",
+          "label": "b)",
+          "question": "¿Cuántos sujetos ($N$) participaron en el estudio?",
+          "correctValue": 21,
+          "tolerance": 0,
+          "explanation": "$$(N - 1)(5 - 1) = 80 \\\\implies (N - 1) \\\\times 4 = 80 \\\\implies N - 1 = 20 \\\\implies N = 21$$"
+        },
+        {
+          "id": "p7c",
+          "label": "c)",
+          "question": "Calcula el número total de observaciones ($n$).",
+          "correctValue": 105,
+          "tolerance": 0,
+          "explanation": "$$21 \\\\times 5 = 105$$"
+        },
+        {
+          "id": "p7d",
+          "label": "d)",
+          "question": "Si aplicamos la corrección de Greenhouse-Geisser con $\\\\epsilon = 0.5$, ¿cuál es el nuevo $df_{M}$?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$4 \\\\times 0.5 = 2$$"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Detección de Significatividad",
+      "context": "Un software devuelve $F(2, 100) = 4.5$. El valor crítico para $\\\\alpha = 0.05$ es $3.09$.",
+      "parts": [
+        {
+          "id": "p8a",
+          "label": "a)",
+          "question": "¿Se rechaza la hipótesis nula $H_{0}$? (1 = Sí, 0 = No).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$4.5 > 3.09$, por lo tanto se rechaza $H_{0}$."
+        },
+        {
+          "id": "p8b",
+          "label": "b)",
+          "question": "En este caso, ¿es probable que el p-valor sea menor a $0.05$? (1 = Sí, 0 = No).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Al rechazar $H_{0}$, el p-valor es necesariamente menor que el nivel de significación."
+        },
+        {
+          "id": "p8c",
+          "label": "c)",
+          "question": "¿Cómo se llama la hipótesis que afirma que 'al menos una media es diferente'? (1 = Nula, 2 = Alternativa).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "Es la definición de $H_{1}$."
+        },
+        {
+          "id": "p8d",
+          "label": "d)",
+          "question": "Si el valor F fuera $1.2$, ¿se rechazaría $H_{0}$? (1 = Sí, 0 = No).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "$1.2 < 3.09$, no se rechaza."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Cálculo de Medias en SPSS",
+      "context": "Según la tabla de estadísticos descriptivos de la pág. 8: $Media_{Pre} = 50.54$, $Media_{Post} = 49.35$, $Media_{Seg} = 48.07$.",
+      "parts": [
+        {
+          "id": "p9a",
+          "label": "a)",
+          "question": "Calcula la diferencia bruta entre el Pre y el Seguimiento.",
+          "correctValue": 2.47,
+          "tolerance": 0.01,
+          "explanation": "$$50.54 - 48.07 = 2.47$$"
+        },
+        {
+          "id": "p9b",
+          "label": "b)",
+          "question": "Si el error estándar de esa diferencia es $0.501$, calcula el valor $T$ de la comparación (Diferencia / Error).",
+          "correctValue": 4.93,
+          "tolerance": 0.01,
+          "explanation": "$$2.47 / 0.501 \\\\approx 4.93$$"
+        },
+        {
+          "id": "p9c",
+          "label": "c)",
+          "question": "¿Es esta diferencia de $2.47$ significativa según la tabla de la pág. 8? (1 = Sí, 0 = No).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "La tabla muestra un $Sig. < .001$."
+        },
+        {
+          "id": "p9d",
+          "label": "d)",
+          "question": "¿Cuál es la desviación típica (DT) reportada para el momento Post?",
+          "correctValue": 30.68,
+          "tolerance": 0.01,
+          "explanation": "Dato directo de la tabla de estadísticos descriptivos."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Descomposición de Variabilidad",
+      "context": "En ANOVA de medidas repetidas, $SC_{Total} = 1000$, $SC_{Entre-Sujetos} = 600$. La variabilidad restante es la variabilidad Intra-Sujetos.",
+      "parts": [
+        {
+          "id": "p10a",
+          "label": "a)",
+          "question": "Calcula la $SC_{Intra-Sujetos}$.",
+          "correctValue": 400,
+          "tolerance": 0,
+          "explanation": "$$1000 - 600 = 400$$"
+        },
+        {
+          "id": "p10b",
+          "label": "b)",
+          "question": "Si $SC_{M} = 250$, calcula la $SC_{R}$ (Residual).",
+          "correctValue": 150,
+          "tolerance": 0,
+          "explanation": "$$SC_{Intra} - SC_{M} = 400 - 250 = 150$$"
+        },
+        {
+          "id": "p10c",
+          "label": "c)",
+          "question": "Calcula la proporción de varianza explicada por el modelo dentro de los sujetos ($\\\\eta^{2}_{p}$).",
+          "correctValue": 0.625,
+          "tolerance": 0.01,
+          "explanation": "$$250 / (250 + 150) = 250 / 400 = 0.625$$"
+        },
+        {
+          "id": "p10d",
+          "label": "d)",
+          "question": "Si $k=3$, ¿cuál es el $df_{M}$?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$3 - 1 = 2$"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Identificación de Pruebas Post Hoc",
+      "context": "El texto menciona varias pruebas para comparaciones múltiples dependiendo de los supuestos.",
+      "parts": [
+        {
+          "id": "p11a",
+          "label": "a)",
+          "question": "¿Qué prueba es más conservadora y reduce el Error Tipo I? (1 = Bonferroni, 2 = DMS).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "El texto identifica a Bonferroni como conservadora."
+        },
+        {
+          "id": "p11b",
+          "label": "b)",
+          "question": "¿Qué prueba se recomienda si NO se cumple la esfericidad? (1 = Tukey, 2 = Games-Howell).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "Games-Howell es la opción robusta mencionada."
+        },
+        {
+          "id": "p11c",
+          "label": "c)",
+          "question": "¿A qué prueba clásica equivale la opción DMS en SPSS según el manual? (1 = Tukey, 2 = Scheffé).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "La nota en la pág. 101 indica que DMS es Tukey en este contexto."
+        },
+        {
+          "id": "p11d",
+          "label": "d)",
+          "question": "Si se cumple la esfericidad, ¿qué prueba ofrece mayor potencia estadística según Field (2024)? (1 = Bonferroni, 2 = Tukey).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "El texto cita a Tukey para mayor potencia si hay esfericidad."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Gráficos y Visualización",
+      "context": "En el análisis de varianza, los gráficos ayudan a interpretar la dirección de los efectos.",
+      "parts": [
+        {
+          "id": "p12a",
+          "label": "a)",
+          "question": "¿Qué tipo de gráfico se usa para medidas independientes para ver atípicos? (1 = Cajas, 2 = Líneas).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Los diagramas de cajas muestran cuartiles y atípicos."
+        },
+        {
+          "id": "p12b",
+          "label": "b)",
+          "question": "¿Qué tipo de gráfico se prefiere para medidas repetidas para mostrar continuidad? (1 = Barras, 2 = Líneas).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "El gráfico de líneas refleja la continuidad de las medidas en los mismos sujetos."
+        },
+        {
+          "id": "p12c",
+          "label": "c)",
+          "question": "En el gráfico de la pág. 102, ¿qué representan las barras verticales?",
+          "correctValue": 95,
+          "tolerance": 0,
+          "explanation": "Representan el intervalo de confianza al $95\\\\%$."
+        },
+        {
+          "id": "p12d",
+          "label": "d)",
+          "question": "Si la línea en un gráfico de perfil es totalmente horizontal, ¿cuánto vale $F$ aproximadamente?",
+          "correctValue": 0,
+          "tolerance": 0.1,
+          "explanation": "Si no hay cambio en las medias, la variabilidad del modelo es nula."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Normalidad en ANOVA",
+      "context": "Antes de realizar el ANOVA, se comprueba la normalidad con $N=101$.",
+      "parts": [
+        {
+          "id": "p13a",
+          "label": "a)",
+          "question": "¿Qué prueba de normalidad es preferible para $N > 50$ según la tabla? (1 = K-S, 2 = S-W).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Kolmogorov-Smirnov se usa para muestras grandes."
+        },
+        {
+          "id": "p13b",
+          "label": "b)",
+          "question": "Si el p-valor de Shapiro-Wilk es $0.001$, ¿la distribución es normal? (1 = Sí, 0 = No).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "$p < .05$ indica que la distribución NO es normal."
+        },
+        {
+          "id": "p13c",
+          "label": "c)",
+          "question": "¿Es el ANOVA robusto ante violaciones de normalidad con muestras grandes? (1 = Sí, 0 = No).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "El texto afirma que el ANOVA es bastante robusto en estos casos."
+        },
+        {
+          "id": "p13d",
+          "label": "d)",
+          "question": "¿Qué gráfico se usa para valorar visualmente el ajuste a la normalidad? (1 = Histograma, 2 = Q-Q).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "Los gráficos Q-Q son ideales para esta valoración visual."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Relación entre F y Significatividad",
+      "context": "En la tabla de la pág. 102, el origen 'Cambio' tiene una $F = 13.072$ con $df=(2, 200)$.",
+      "parts": [
+        {
+          "id": "p14a",
+          "label": "a)",
+          "question": "¿Qué valor de $p$ se asocia a esta F en la tabla?",
+          "correctValue": 0.001,
+          "tolerance": 0,
+          "explanation": "El Sig. reportado es $<.001$."
+        },
+        {
+          "id": "p14b",
+          "label": "b)",
+          "question": "Calcula el $MC_{M}$ si $SC_{M} = 309.512$ y $df=2$.",
+          "correctValue": 154.756,
+          "tolerance": 0.001,
+          "explanation": "$$309.512 / 2 = 154.756$$"
+        },
+        {
+          "id": "p14c",
+          "label": "c)",
+          "question": "Calcula el $MC_{R}$ si $SC_{R} = 2367.822$ y $df=200$.",
+          "correctValue": 11.839,
+          "tolerance": 0.001,
+          "explanation": "$$2367.822 / 200 = 11.83911$$"
+        },
+        {
+          "id": "p14d",
+          "label": "d)",
+          "question": "Divide $MC_{M} / MC_{R}$ para verificar la $F$.",
+          "correctValue": 13.072,
+          "tolerance": 0.01,
+          "explanation": "$$154.756 / 11.839 \\\\approx 13.072$$"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Muestras Relacionadas y Dependencia",
+      "context": "El ANOVA de medidas repetidas considera las correlaciones entre las medidas.",
+      "parts": [
+        {
+          "id": "p15a",
+          "label": "a)",
+          "question": "¿Cómo se llama la variabilidad que incluye las diferencias individuales y la correlación? (1 = Del modelo, 2 = Residual).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "Es la variabilidad residual o del error."
+        },
+        {
+          "id": "p15b",
+          "label": "b)",
+          "question": "Si un sujeto falta en una de las 3 medidas, ¿se puede incluir en el ANOVA estándar? (1 = Sí, 0 = No).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "El ANOVA de medidas repetidas requiere datos en todas las condiciones para cada sujeto."
+        },
+        {
+          "id": "p15c",
+          "label": "c)",
+          "question": "¿Qué supuesto implica que las varianzas de las diferencias entre pares son iguales?",
+          "correctValue": 5,
+          "tolerance": 0,
+          "explanation": "El supuesto número 5 es la esfericidad."
+        },
+        {
+          "id": "p15d",
+          "label": "d)",
+          "question": "Si $N=10$, ¿cuántas comparaciones por pares totales son posibles si $k=3$?",
+          "correctValue": 3,
+          "tolerance": 0,
+          "explanation": "Las combinaciones de 3 elementos tomados de 2 en 2 son 3 (1-2, 1-3, 2-3)."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Análisis de Datos Binarios",
+      "context": "En el menú de Pruebas No Paramétricas de SPSS (pág. 104), aparecen opciones para distintos tipos de datos.",
+      "parts": [
+        {
+          "id": "p16a",
+          "label": "a)",
+          "question": "¿Qué prueba se usa para ver cambios en datos binarios con 2 muestras? (1 = Wilcoxon, 2 = McNemar).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "La prueba de McNemar es para cambios binarios en 2 muestras."
+        },
+        {
+          "id": "p16b",
+          "label": "b)",
+          "question": "¿Y para $k$ muestras binarias? (1 = Friedman, 2 = Q de Cochran).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "La Q de Cochran es la extensión para $k$ muestras binarias."
+        },
+        {
+          "id": "p16c",
+          "label": "c)",
+          "question": "¿Qué prueba cuantifica asociaciones en este menú? (1 = Signos, 2 = W de Kendall).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "El Coeficiente de concordancia de Kendall (W) mide asociación."
+        },
+        {
+          "id": "p16d",
+          "label": "d)",
+          "question": "En el ejemplo de Friedman, ¿se rechaza la nula con $p = .006$? (1 = Sí, 0 = No).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Sí, pues $.006 < .05$."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Grados de Libertad de Welch",
+      "context": "Cuando se viola la esfericidad, se puede usar el ANOVA de Welch para medidas repetidas. Este usa una lógica de ajuste de $df$.",
+      "parts": [
+        {
+          "id": "p17a",
+          "label": "a)",
+          "question": "Si $df_{M}=3$ y $\\\\epsilon$ de Huynh-Feldt es $0.80$, ¿cuál es el $df_{M}$ corregido?",
+          "correctValue": 2.4,
+          "tolerance": 0.01,
+          "explanation": "$$3 \\\\times 0.80 = 2.4$$"
+        },
+        {
+          "id": "p17b",
+          "label": "b)",
+          "question": "¿Qué corrección es más conservadora: Greenhouse-Geisser (GG) o Huynh-Feldt (HF)? (1 = GG, 2 = HF).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Greenhouse-Geisser suele dar un $\\\\epsilon$ menor, siendo más conservadora."
+        },
+        {
+          "id": "p17c",
+          "label": "c)",
+          "question": "Si Mauchly da $W = 1.000$, ¿cuánto vale $\\\\epsilon$?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Si hay esfericidad perfecta, no hay necesidad de corrección ($\\\\epsilon = 1$)."
+        },
+        {
+          "id": "p17d",
+          "label": "d)",
+          "question": "En la tabla de la pág. 102, ¿cuál es el valor del límite inferior para el Epsilon?",
+          "correctValue": 0.5,
+          "tolerance": 0,
+          "explanation": "El valor reportado en la tabla de Mauchly para el límite inferior es $.500$."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Reporte en Formato APA",
+      "context": "Basado en el ejemplo de interpretación APA de la pág. 103.",
+      "parts": [
+        {
+          "id": "p18a",
+          "label": "a)",
+          "question": "¿Cuál fue el valor de Chi-cuadrado ($x^{2}$) reportado para la prueba de Mauchly?",
+          "correctValue": 33.65,
+          "tolerance": 0.01,
+          "explanation": "Dato del texto: $(x^{2}=33.65)$."
+        },
+        {
+          "id": "p18b",
+          "label": "b)",
+          "question": "¿Qué valor de $F$ se reportó en el texto final?",
+          "correctValue": 13.07,
+          "tolerance": 0.01,
+          "explanation": "Dato del texto: $(F=13.07)$."
+        },
+        {
+          "id": "p18c",
+          "label": "c)",
+          "question": "¿Cuál fue el tamaño del efecto (Eta cuadrado) reportado?",
+          "correctValue": 0.12,
+          "tolerance": 0,
+          "explanation": "Dato del texto: $(\\\\eta^{2}=0.12)$."
+        },
+        {
+          "id": "p18d",
+          "label": "d)",
+          "question": "¿Cuántas de las tres mediciones mostraron diferencias significativas entre sí?",
+          "correctValue": 3,
+          "tolerance": 0,
+          "explanation": "El texto dice 'entre todas las mediciones', lo que implica las 3 comparaciones posibles."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Friedman: Rangos y Decisiones",
+      "context": "En la prueba de Friedman (pág. 105), se comparan 3 muestras relacionadas.",
+      "parts": [
+        {
+          "id": "p19a",
+          "label": "a)",
+          "question": "Si el Sig. asintótico es $0.006$, ¿cuál es el Sig. ajustado (Bonferroni) si hay 3 comparaciones?",
+          "correctValue": 0.018,
+          "tolerance": 0.001,
+          "explanation": "$$0.006 \\\\times 3 = 0.018$$"
+        },
+        {
+          "id": "p19b",
+          "label": "b)",
+          "question": "En la tabla final, ¿qué par de muestras NO tiene diferencias significativas (Sig. ajust > .05)?",
+          "correctValue": 12,
+          "tolerance": 0,
+          "explanation": "Seguimiento-Post tiene un Sig. ajustado de $.114$. (Codificado como 12 por Muestra 1-2)."
+        },
+        {
+          "id": "p19c",
+          "label": "c)",
+          "question": "¿Cuál es el estadístico de prueba para el par Seguimiento-Pre?",
+          "correctValue": 0.391,
+          "tolerance": 0.001,
+          "explanation": "Dato directo de la tabla de comparaciones por parejas."
+        },
+        {
+          "id": "p19d",
+          "label": "d)",
+          "question": "Si el rango promedio de Pre es $2.18$ y el de Post es $2.05$, ¿cuál es la diferencia de rangos?",
+          "correctValue": 0.13,
+          "tolerance": 0.01,
+          "explanation": "$$2.18 - 2.05 = 0.13$$"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Resumen de Supuestos",
+      "context": "Finalizamos repasando los requisitos del ANOVA de Medidas Repetidas.",
+      "parts": [
+        {
+          "id": "p20a",
+          "label": "a)",
+          "question": "¿De qué tipo debe ser la Variable Dependiente? (1 = Categórica, 2 = Continua).",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "Debe ser de intervalo o razón."
+        },
+        {
+          "id": "p20b",
+          "label": "b)",
+          "question": "¿Cómo deben ser las observaciones ENTRE sujetos? (1 = Independientes, 2 = Correlacionadas).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Aunque dentro del sujeto hay correlación, entre sujetos deben ser independientes."
+        },
+        {
+          "id": "p20c",
+          "label": "c)",
+          "question": "¿Qué test se usa para comprobar la esfericidad?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "La prueba de Mauchly (Opción 1 en importancia de supuestos específicos)."
+        },
+        {
+          "id": "p20d",
+          "label": "d)",
+          "question": "Si la VI es 'Sueldo' con 3 niveles, ¿puede ser intrasujeto en un estudio transversal? (1 = Sí, 0 = No).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "En un estudio transversal (un solo momento) un sujeto no puede tener 3 sueldos distintos a la vez."
+        }
+      ]
+    }
+  ],
+  "jsonFormulas": [
+    {
+      "name": "Valor F (ANOVA de medidas dependientes)",
+      "tex": "$$F = \\\\frac{MC_{M}}{MC_{R}}$$"
+    },
+    {
+      "name": "Media Cuadrática del Modelo (MC_M)",
+      "tex": "$$MC_{M} = \\\\frac{SC_{M}}{k - 1}$$"
+    },
+    {
+      "name": "Media Cuadrática del Error o Residual (MC_R)",
+      "tex": "$$MC_{R} = \\\\frac{SC_{R}}{n - k}$$"
+    },
+    {
+      "name": "Contraste de Hipótesis Nula (H0)",
+      "tex": "$$H_{0}: \\\\mu_{1} = \\\\mu_{2} = \\\\dots = \\\\mu_{k}$$"
+    },
+    {
+      "name": "Contraste de Hipótesis Alternativa (H1)",
+      "tex": "$$H_{1}: \\\\exists \\\\mu_{i} \\\\neq \\\\mu_{j}$$"
+    },
+    {
+      "name": "Tamaño del efecto (Eta cuadrado parcial)",
+      "tex": "$$\\\\eta_{p}^{2}$$"
+    }
+  ]
+}
