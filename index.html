@@ -2537,9 +2537,7 @@
                         </div>
                     </div>
                 `;
-            }
-
-            if (hasExamen) {
+            } else if (hasExamen) {
                 if (isGuest) {
                     examenHTML = `
                         <div onclick="state.showPromoModal = true; render();" class="p-6 bg-slate-900/90 text-white/90 rounded-3xl shadow-md border border-slate-800 hover:shadow-xl transition-all flex flex-col justify-between cursor-pointer group h-full min-h-[220px] relative overflow-hidden">
