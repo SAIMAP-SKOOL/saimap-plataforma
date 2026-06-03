@@ -4008,6 +4008,446 @@
       "explanation": "El MLG no obliga a la normalidad de los datos reales; simplemente establece que es un requisito para que sus estimaciones sean óptimas."
     },
     {
+      "q": "En los modelos estadísticos generales, el supuesto de normalidad exige que las variables independientes originales posean una distribución empírica estricta y normal.",
+      "options": [
+        "La afirmación planteada es verdadera.",
+        "La afirmación planteada es incorrecta.",
+        "La información provista no es precisa."
+      ],
+      "correct": 1,
+      "hint": "Piensa en qué componente de la ecuación de predicción recae realmente el foco analítico.",
+      "explanation": "El foco principal de la normalidad no recae sobre las variables, sino sobre los errores predictivos. \n\n$\\text{Residuos} = Y_{\\text{obs}} - Y_{\\text{pred}}$"
+    },
+    {
+      "q": "Para pruebas inferenciales como ANOVA y t de Student, la normalidad de los datos empíricos brutos es matemáticamente equivalente a la normalidad de sus residuos.",
+      "options": [
+        "La afirmación planteada es verdadera.",
+        "La afirmación planteada es incorrecta.",
+        "La información provista no es precisa."
+      ],
+      "correct": 0,
+      "hint": "Considera cómo se definen algebraicamente las discrepancias en comparaciones grupales.",
+      "explanation": "En ANOVA, el residuo es la diferencia con la media grupal, haciendo que la normalidad del dato equivalga a la del residuo. \n\n$e_{ij} = Y_{ij} - \\bar{Y}_j$"
+    },
+    {
+      "q": "Las metodologías de análisis no paramétrico se caracterizan por presentar una evidente vulnerabilidad estadística ante la presencia de valores empíricos atípicos.",
+      "options": [
+        "La afirmación planteada es verdadera.",
+        "La afirmación planteada es incorrecta.",
+        "La información provista no es precisa."
+      ],
+      "correct": 1,
+      "hint": "Revisa las ventajas principales en la gestión de outliers en pruebas libres de distribución.",
+      "explanation": "Las pruebas no paramétricas tienen, precisamente, tolerancia y un mejor manejo de outliers frente a las pruebas paramétricas. \n\n$\\text{Tolerancia} \\rightarrow \\text{Alta}$"
+    },
+    {
+      "q": "El método de comprobación visual para el supuesto de aditividad y linealidad asume, en su hipótesis nula, que la relación geométrica describe una parábola pura.",
+      "options": [
+        "La afirmación planteada es verdadera.",
+        "La afirmación planteada es incorrecta.",
+        "La información provista no es precisa."
+      ],
+      "correct": 1,
+      "hint": "Analiza qué forma geométrica se asume en la configuración predeterminada del modelo lineal.",
+      "explanation": "La hipótesis nula establece una relación lineal (línea recta), no parabólica. \n\n$H_0: Y = b_0 + b_1X_1 + \\dots + \\epsilon$"
+    },
+    {
+      "q": "El análisis de normalidad mediante la inspección de histogramas busca identificar una distribución de tipo mesocúrtica que presente colas marcadamente alargadas.",
+      "options": [
+        "La afirmación planteada es verdadera.",
+        "La afirmación planteada es incorrecta.",
+        "La información provista no es precisa."
+      ],
+      "correct": 1,
+      "hint": "Recuerda las características morfológicas clave de la campana de Gauss respecto a sus extremos.",
+      "explanation": "Una distribución mesocúrtica carece de colas alargadas y presenta una concentración centralizada de frecuencias simétricas. \n\n$\\text{Curtosis} \\approx 0$"
+    },
+    {
+      "q": "La prueba de bondad de ajuste de Kolmogorov-Smirnov es universalmente considerada como la más potente para evaluar la normalidad en muestras extremadamente bajas.",
+      "options": [
+        "La afirmación planteada es verdadera.",
+        "La afirmación planteada es incorrecta.",
+        "La información provista no es precisa."
+      ],
+      "correct": 1,
+      "hint": "Identifica cuál prueba estadística es dependiente de los grandes volúmenes poblacionales.",
+      "explanation": "Es al contrario: K-S exige muestras grandes (\n\n$n > 100$\n\n) para lograr potencia aceptable, siendo Shapiro-Wilk superior en grupos pequeños."
+    },
+    {
+      "q": "Según el axioma de errores esféricos, el promedio matemático de las múltiples discrepancias residuales generadas por el modelo paramétrico debe igualarse a cero.",
+      "options": [
+        "La afirmación planteada es verdadera.",
+        "La afirmación planteada es incorrecta.",
+        "La información provista no es precisa."
+      ],
+      "correct": 0,
+      "hint": "Considera cómo compensan entre sí las sobrestimaciones y subestimaciones predictivas del modelo.",
+      "explanation": "Una condition estructural de estos modelos establece que la media aritmética de los residuos tiende a cero por diseño del método. \n\n$\\mathbb{E}[\\epsilon] = 0$"
+    },
+    {
+      "q": "Las puntuaciones estandarizadas (Z) utilizadas para curtosis se obtienen multiplicando el coeficiente métrico del estadístico por su respectivo error paramétrico.",
+      "options": [
+        "La afirmación planteada es verdadera.",
+        "La afirmación planteada es incorrecta.",
+        "La información provista no es precisa."
+      ],
+      "correct": 1,
+      "hint": "Revisa la operación aritmética fundamental necesaria para convertir valores empíricos en escalas tipificadas.",
+      "explanation": "La puntuación típica se obtiene mediante división, no multiplicación. \n\n$Z = \\frac{\\text{Estadístico}}{\\text{Error Estándar}}$"
+    },
+    {
+      "q": "En el caso de evaluaciones con muestras excesivamente grandes, el umbral de aceptación probabilística de las puntuaciones $Z$ debe limitarse al nivel $\\pm 1.15$.",
+      "options": [
+        "La afirmación planteada es verdadera.",
+        "La afirmación planteada es incorrecta.",
+        "La información provista no es precisa."
+      ],
+      "correct": 1,
+      "hint": "Evalúa qué ocurre con la sensibilidad estadística cuando se trabaja con volúmenes de datos masivos.",
+      "explanation": "Por la hipersensibilidad de muestras grandes, los umbrales se amplían para evitar falsos rechazos. \n\n$Z_{\\text{crítico}} \\rightarrow \\pm 2.58 \\text{ ó } \\pm 3.29$"
+    },
+    {
+      "q": "La ejecución de un contraste empírico paramétrico asume inexcusablemente que la variable dependiente (VD) debe estar medida en una métrica de escala continua.",
+      "options": [
+        "La afirmación planteada es verdadera.",
+        "La afirmación planteada es incorrecta.",
+        "La información provista no es precisa."
+      ],
+      "correct": 0,
+      "hint": "Identifica las restricciones topológicas fundamentales de las variables de resultado predictivo.",
+      "explanation": "El cumplimiento estricto del método paramétrico exige VD continuas. Las variables ordinales son dominio de la estadística no paramétrica. \n\n$VD \\in \\mathbb{R}$"
+    },
+    {
+      "q": "Identifica la afirmación correcta respecto a la capacidad descriptiva y analítica de las diferentes arquitecturas de comprobación de hipótesis paramétrica.",
+      "options": [
+        "Las pruebas paramétricas carecen de capacidad para detectar efectos reales.",
+        "Las pruebas paramétricas poseen gran capacidad para detectar efectos reales.",
+        "Las pruebas no paramétricas poseen más capacidad para hallar efectos reales."
+      ],
+      "correct": 1,
+      "hint": "Recuerda cuál paradigma estadístico maximiza la detección probabilística frente al error de tipo II.",
+      "explanation": "Si se cumplen los estrictos supuestos, las pruebas paramétricas exhiben la mayor potencia estadística disponible. \n\n$\\text{Potencia} = 1 - \\beta$"
+    },
+    {
+      "q": "Identifica la afirmación correcta en referencia al manejo matemático e inferencial que reciben los valores empíricamente extremos o estadísticamente atípicos.",
+      "options": [
+        "Los métodos paramétricos presentan una tolerancia óptima ante los outliers.",
+        "Los métodos no paramétricos presentan mejor tolerancia ante los outliers.",
+        "Los métodos de regresión lineal simple exigen la presencia de los outliers."
+      ],
+      "correct": 1,
+      "hint": "Piensa qué familia analítica resulta menos afectada por fluctuaciones marginales aisladas extremas.",
+      "explanation": "Al basarse en rangos o medianas en vez de medias estrictas, la estadística no paramétrica mitiga drásticamente el impacto de outliers. \n\n$|Y - M_d|$"
+    },
+    {
+      "q": "Identifica la afirmación correcta que describa la formulación de las hipótesis contrastables en el análisis del cumplimiento estructural de linealidad aditiva.",
+      "options": [
+        "La hipótesis nula asume que la relación estructural del modelo no es lineal.",
+        "La hipótesis nula asume que la relación estructural del modelo sí es lineal.",
+        "La hipótesis alternativa postula que la varianza residual sí resulta lineal."
+      ],
+      "correct": 1,
+      "hint": "Determina qué estado geométrico se asume por defecto como condición básica de partida en regresiones.",
+      "explanation": "La asunción fundamental ($H_0 $) es la linealidad estricta entre la VD y las predictoras. \n\n$ H_0: Y = b_0 + b_1X_1 + e$"
+    },
+    {
+      "q": "Identifica la afirmación correcta referente a la definición aritmética de los errores o residuos dentro de la especificación teórica de los modelos generales.",
+      "options": [
+        "Los residuos representan la suma absoluta entre los valores reales y teóricos.",
+        "Los residuos representan la diferencia entre los valores observados y predichos.",
+        "Los residuos representan la dispersión entre las medias paramétricas y reales."
+      ],
+      "correct": 1,
+      "hint": "Considera qué operación algebraica mide directamente la magnitud del error de estimación puntual.",
+      "explanation": "El residuo cuantifica exactamente el fallo en la estimación restando lo proyectado a lo empírico. \n\n$\\epsilon_i = Y_i - \\hat{Y}_i$"
+    },
+    {
+      "q": "Identifica la afirmación correcta en relación con las particularidades operativas del cálculo residual específico implementado en el contraste de varianza ANOVA.",
+      "options": [
+        "Los residuos del ANOVA se miden respecto a la varianza total de cada grupo.",
+        "Los residuos del ANOVA se miden respecto a la mediana total de cada muestra.",
+        "Los residuos del ANOVA se miden respecto a la media de los grupos evaluados."
+      ],
+      "correct": 2,
+      "hint": "Revisa qué estadístico de tendencia central actúa como ancla de referencia para cada nivel de factor.",
+      "explanation": "En diseños de comparaciones medias, la predicción es la media del factor, siendo el residuo la distancia a ella. \n\n$\\hat{Y}_j = \\bar{Y}_j$"
+    },
+    {
+      "q": "Identifica la afirmación correcta vinculada a la inspección visual ejecutada mediante diagramas de caja (boxplots) en el escrutinio general de la normalidad.",
+      "options": [
+        "Los diagramas de caja evalúan la asimetría buscando cajas de tamaño infinito.",
+        "Los diagramas de caja evalúan la simetría buscando cajas de tamaño moderado.",
+        "Los diagramas de caja evalúan la curtosis buscando cajas de tamaño alterado."
+      ],
+      "correct": 1,
+      "hint": "Visualiza la forma óptima que el rectángulo central debe exhibir en una distribución sin sesgos.",
+      "explanation": "La normalidad requiere gráficamente simetría central y bigotes proporcionales sin outliers. \n\n$Q_3 - Q_2 \\approx Q_2 - Q_1$"
+    },
+    {
+      "q": "Identifica la afirmación correcta sobre la ecuación de tipificación y conversión utilizada para obtener las puntuaciones Z de asimetría y curtosis en el modelo.",
+      "options": [
+        "Se calcula multiplicando el valor estadístico por su respectivo error global.",
+        "Se calcula adicionando el valor estadístico con su respectivo error muestral.",
+        "Se calcula dividiendo un valor estadístico por su respectivo error estándar."
+      ],
+      "correct": 2,
+      "hint": "Recuerda que estas métricas estandarizan la posición re-escalando la dispersión a la unidad métrica.",
+      "explanation": "La puntuación estandarizada determina cuántas unidades de error se desvía el parámetro de cero. \n\n$Z_S = \\frac{S}{SE_S}$"
+    },
+    {
+      "q": "Identifica la afirmación correcta respecto a las modificaciones dinámicas que experimentan los umbrales estandarizados al analizar muestras de gran tamaño.",
+      "options": [
+        "En muestras grandes, el límite de aceptación puede ampliarse a $\\pm 2.58$ o $\\pm 3.29$.",
+        "En muestras grandes, el límite de aceptación debe reducirse a $\\pm 1.15$ o $\\pm 1.50$.",
+        "En muestras grandes, el límite de aceptación queda anclado en $\\pm 1.96$ o $\\pm 1.99$."
+      ],
+      "correct": 0,
+      "hint": "Piensa en el mecanismo compensatorio requerido para evitar que errores ínfimos rechacen el modelo.",
+      "explanation": "Al crecer la muestra, los test sobreestiman desviaciones irrelevantes. Por ende, los umbrales de retención se expanden hacia rangos del $99\\%$ o superiores."
+    },
+    {
+      "q": "Identifica la afirmación correcta en relación al contraste de eficiencia y viabilidad entre las metodologías de Shapiro-Wilk (S-W) y Kolmogorov-Smirnov (K-S).",
+      "options": [
+        "La prueba de Kolmogorov-Smirnov posee la mayor potencia para muestras pequeñas.",
+        "La prueba de Shapiro-Wilk posee la mayor potencia para una amplia gama de datos.",
+        "La prueba de Shapiro-Wilk exige contar con más de cien observaciones continuas."
+      ],
+      "correct": 1,
+      "hint": "Considera qué prueba se posiciona como el estándar de oro en la bibliografía moderna por su robustez.",
+      "explanation": "Shapiro-Wilk demuestra máxima eficiencia (potencia) en diversas distribuciones, superando a K-S de manera contundente y transversal."
+    },
+    {
+      "q": "Identifica la afirmación correcta sobre la decisión probabilística ejecutada al inspeccionar empíricamente un resultado de significancia en el contraste de Gauss.",
+      "options": [
+        "Un valor de $p < .05$ en la prueba normal indica que se preserva la hipótesis $H_0$.",
+        "Un valor de $p < .05$ en la prueba normal indica que se rechaza la hipótesis $H_1$.",
+        "Un valor de $p < .05$ en la prueba normal indica que se rechaza la hipótesis $H_0$."
+      ],
+      "correct": 2,
+      "hint": "Recuerda la regla universal de decisión en la inferencia frecuentista frente a umbrales probabilísticos.",
+      "explanation": "Al ser inferior al margen de error aceptado (.05 \n\n), los datos divergen críticamente del axioma de normalidad nula, forzando su rechazo."
+    },
+    {
+      "q": "Identifica la afirmación correcta que define íntegramente la exigencia postulada por el requisito de errores esféricos sobre los modelos predictivos evaluados.",
+      "options": [
+        "La media aritmética de todos los residuos generados debe ser igual a la unidad.",
+        "La media aritmética de todos los residuos generados debe ser equivalente a cero.",
+        "La media aritmética de todos los residuos generados debe ser un valor infinito."
+      ],
+      "correct": 1,
+      "hint": "Visualiza el punto de equilibrio central que debe existir entre las sobreestimaciones e infraestimaciones.",
+      "explanation": "Las discrepancias del modelo frente a los datos reales se balancean, ubicando su centroide matemático exactamente en el cero. \n\n$\\mu_e = 0$"
+    },
+    {
+      "q": "Identifica la afirmación correcta en cuanto al proceso informático secuencial en SPSS requerido para la producción de análisis visuales mediante histogramas de datos.",
+      "options": [
+        "Los histogramas se generan mediante la ruta: Analizar > Estadísticos > Tablas.",
+        "Los histogramas se generan mediante la ruta: Gráficos > Generador de gráficos.",
+        "Los histogramas se generan mediante la ruta: Transformar > Calcular variables."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el menú superior del software destinado exclusivamente a representaciones morfológicas.",
+      "explanation": "Las representaciones gráficas fundamentales requieren el acceso explícito al constructor o generador visual del programa."
+    },
+    {
+      "q": "Identifica la afirmación correcta referida al panel metodológico del programa informático capaz de calcular integradamente las métricas inferenciales de S-W y K-S.",
+      "options": [
+        "Para obtener la prueba de normalidad: Analizar > Estadísticos descriptivos > Frecuencias.",
+        "Para obtener la prueba de normalidad: Analizar > Estadísticos descriptivos > Correlación.",
+        "Para obtener la prueba de normalidad: Analizar > Estadísticos descriptivos > Explorar."
+      ],
+      "correct": 2,
+      "hint": "Revisa qué subfunción descriptiva permite una exploración analítica profunda de la estructura.",
+      "explanation": "La función Explorar triangula simultáneamente pruebas estandarizadas (S-W, K-S), gráficos Q-Q y parámetros de curtosis/asimetría."
+    },
+    {
+      "q": "Identifica la afirmación correcta referente al impacto metodológico del crecimiento muestral en los niveles probabilísticos proyectados por la prueba de significancia.",
+      "options": [
+        "En muestras masivas, las desviaciones muy triviales nunca arojan un $p < .05$.",
+        "En muestras masivas, las desviaciones muy triviales logran arrojar un $p < .05$.",
+        "En muestras masivas, las desviaciones muy triviales logran mitigar un $p < .05$."
+      ],
+      "correct": 1,
+      "hint": "Ten presente el concepto de hipersensibilidad ante grandes volúmenes de observaciones analíticas.",
+      "explanation": "Al disponer de miles de observaciones, el poder estadístico se vuelve hipertrófico y condena cualquier fluctuación marginal al rechazo de $H_0$."
+    },
+    {
+      "q": "Identifica la afirmación correcta sobre el procedimiento cognitivo óptimo que un investigador debe desplegar para diagnosticar finalmente la estructura del modelo.",
+      "options": [
+        "La evaluación final requiere validar exclusivamente los índices de significación $p$.",
+        "La evaluación final integra descriptivos, gráficos y los niveles de significación $p$.",
+        "La evaluación final excluye sistemáticamente a los estadísticos de significación $p$."
+      ],
+      "correct": 1,
+      "hint": "Considera por qué la dependencia exclusiva de un único indicador acarrea severos errores de interpretación.",
+      "explanation": "Dada la vulnerabilidad de la inferencia a los sesgos de tamaño muestral, el método robusto requiere la triangulación analítica cuali-cuantitativa."
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA respecto a las características estructurales, requerimientos preestablecidos o debilidades prácticas de las pruebas paramétricas.",
+      "options": [
+        "El cumplimiento de supuestos específicos es una exigencia irrenunciable en estos modelos.",
+        "La variable dependiente puede ser medida válidamente empleando escalas de tipo nominales.",
+        "La ausencia absoluta de valores extremos o atípicos es un requisito para su implementación."
+      ],
+      "correct": 1,
+      "hint": "Examina la rigurosidad geométrica requerida por estas pruebas en torno al diseño de la métrica objetivo.",
+      "explanation": "Las pruebas paramétricas exigen taxativamente que la variable dependiente (VD) posea una base continua, jamás categórica o nominal pura."
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA respecto a los rasgos metodológicos funcionales exhibidos globalmente por los contrastes de naturaleza no paramétrica.",
+      "options": [
+        "Poseen una evidente flexibilidad metodológica ante el incumplimiento de ciertos supuestos.",
+        "Manifiestan una profunda vulnerabilidad estadística ante la presencia de valores atípicos.",
+        "Facilitan la ejecución de múltiples modelos utilizando variables de configuración ordinal."
+      ],
+      "correct": 1,
+      "hint": "Recuerda la ventaja competitiva principal que poseen estas pruebas cuando los datos poseen alta contaminación.",
+      "explanation": "Los enfoques libres de distribución se destacan precisamente por su inmensa resiliencia matemática frente a los valores extremadamente atípicos."
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA en relación con la validación de la hipótesis de proporcionalidad geométrica y su respectivo análisis probabilístico en regresión.",
+      "options": [
+        "El incumplimiento de este supuesto analítico anula la validez predictiva del modelo paramétrico.",
+        "La verificación metodológica del postulado recae sobre la construcción de diagramas de dispersión.",
+        "La hipótesis nula de linealidad asume matemáticamente que las variables describen curvas perfectas."
+      ],
+      "correct": 2,
+      "hint": "Recuerda qué forma geométrica estricta da origen a la formulación del postulado de aditividad base.",
+      "explanation": "La hipótesis nula no proyecta bajo ninguna circunstancia figuras curvilíneas, postula estrictamente una asociación rectilínea pura."
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA referida a la delimitación formal del componente sobre el cual se evalúa sustantivamente la normalidad de un modelo paramétrico.",
+      "options": [
+        "El análisis estadístico de normalidad se enfoca primordialmente en discrepancias predictivas.",
+        "En la totalidad de los modelos de regresión, se asume y verifica la normalidad del residuo.",
+        "La comprobación de este supuesto requiere invariablemente que el predictor sea siempre normal."
+      ],
+      "correct": 2,
+      "hint": "Examina si existe alguna condición impuesta sobre los constructos independientes observados per se.",
+      "explanation": "Las variables predictoras (VI) no están obligadas bajo ningún criterio matemático a poseer una conformación simétrica normal en sí mismas."
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA concerniente a los estándares morfológicos exigidos en las técnicas exploratorias visuales aplicadas sobre la varianza.",
+      "options": [
+        "El histograma perfecto debe proyectar una campana mesocúrtica desprovista de colas muy largas.",
+        "El diagrama de caja confirma la normalidad paramétrica solo cuando exhibe una asimetría pura.",
+        "Los diagramas de caja evalúan transversalmente tanto la simetría como la presencia atípica."
+      ],
+      "correct": 1,
+      "hint": "Considera qué conformación espacial debe imperar alrededor de la mediana para evitar rechazos de forma.",
+      "explanation": "La asimetría es justamente el fallo estructural. El boxplot confirmatorio debe proyectar una equidistancia simétrica, jamás asimétrica pura."
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA relativa al diseño, construcción y correcta interpretación topológica de los diagramas de cuantiles frente a cuantiles teóricos (Q-Q).",
+      "options": [
+        "Los gráficos Q-Q ejecutan una comparación entre los cuantiles empíricos y los teóricos base.",
+        "La normalidad matemática se confirma si los puntos observados describen una curva exponencial.",
+        "La distribución del modelo se asume normal cuando las coordenadas se alinean a la diagonal."
+      ],
+      "correct": 1,
+      "hint": "Identifica qué figura geométrica representa el isomorfismo exacto entre lo empírico y lo estimado probabilísticamente.",
+      "explanation": "Las proyecciones exponenciales indican violaciones severas del axioma. La alineación debe calzar con la línea recta diagonal del intercepto central."
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA relacionada con el cálculo o la interpretación de los márgenes estandarizados de tipificación descriptiva sobre los estimadores.",
+      "options": [
+        "El cálculo de la métrica divide el coeficiente descriptivo por su respectivo error paramétrico.",
+        "El rechazo de la hipótesis nula se produce sistemáticamente con un coeficiente de $Z = 1.15$.",
+        "El rango probabilístico de tolerancia estadística oscila rutinariamente en los umbrales $\\pm 1.96$."
+      ],
+      "correct": 1,
+      "hint": "Verifica si el valor especificado excede funcionalmente la frontera crítica de variabilidad aceptada por convención.",
+      "explanation": "Un marcador paramétrico de \n\n$Z = 1.15 $\n\n no supera el límite restrictivo tradicional (\n\n$\\pm 1.96$\n\n), por ende, retiene forzosamente la asunción probabilística base."
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA que aborde las condiciones de frontera o los dominios de eficiencia comparativos entre los métodos paramétricos de bondad.",
+      "options": [
+        "La herramienta de Kolmogorov-Smirnov demanda más de cien observaciones para garantizar su potencia.",
+        "El test evaluativo de Shapiro-Wilk es habitualmente considerado el instrumento de mayor potencia.",
+        "La técnica estadística de Shapiro-Wilk se restringe de manera exclusiva a distribuciones sesgadas."
+      ],
+      "correct": 2,
+      "hint": "Considera si la técnica universalmente recomendada posee restricciones morfológicas iniciales para su simple ejecución.",
+      "explanation": "La prueba metodológica no sufre restricción morfológica pre-analítica; evalúa universalmente la normalidad con indiferencia del estado primario basal de simetría."
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA en el contexto de la especificación teórica de hipótesis y la subsecuente resolución probabilística de los axiomas paramétricos.",
+      "options": [
+        "La retención probabilística de la hipótesis nula ocurre cuando el valor de $p$ es superior a $.05$.",
+        "El rechazo estadístico de la hipótesis nula certifica empíricamente que la distribución es normal.",
+        "La formulación teórica de la hipótesis alternativa asume la divergencia con la campana gaussiana."
+      ],
+      "correct": 1,
+      "hint": "Piensa exhaustivamente en las implicaciones que acarrea la negación categórica del modelo basal gaussiano.",
+      "explanation": "Rechazar analíticamente \n\n$H_0$\n\n equivale a abrazar firmemente la hipótesis alternativa que, por definición teórica formal, afirma categóricamente la no-normalidad."
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA sobre la dinámica probabilística generada artificialmente por la expansión escalar hipertrófica de las bases analíticas muestrales.",
+      "options": [
+        "Los tests inferenciales de normalidad son extremadamente vulnerables al volumen de la muestra total.",
+        "Las asimetrías matemáticas irrelevantes pueden provocar el rechazo de hipótesis en muestras grandes.",
+        "Las muestras poblacionales masivas reducen críticamente la potencia de los estadísticos descriptivos."
+      ],
+      "correct": 2,
+      "hint": "Evalúa el comportamiento asintótico de la precisión de estimación inferencial ante el escalado al infinito poblacional.",
+      "explanation": "La masificación poblacional genera el efecto totalmente inverso: maximiza exponencialmente el factor de potencia provocando rechazos superfluos ante anomalías invisibles."
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA referente a los algoritmos y capacidades integradas presentes en el paquete estadístico comercial para la validación axiomática.",
+      "options": [
+        "La función Explorar de SPSS reporta sistemáticamente métricas detalladas de asimetría y de curtosis.",
+        "La ruta analítica especificada excluye irrevocablemente la renderización automática de gráficos Q-Q.",
+        "El submenú descriptivo genera simultáneamente estadísticos para Shapiro-Wilk y Kolmogorov-Smirnov."
+      ],
+      "correct": 1,
+      "hint": "Inspecciona mentalmente el abanico total de métricas gráficas entregadas conjuntamente bajo esta misma pestaña operativa.",
+      "explanation": "La instrucción integradora de exploración incluye expresamente en su reporte matricial la construcción cruzada y automática de todos los diagramas estandarizados Q-Q."
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA relativa al fundamento topológico impuesto obligatoriamente sobre el promedio basal de las estimaciones y errores del modelo.",
+      "options": [
+        "La condition matemática estructural exige que el promedio numérico de los residuos sea igual a cero.",
+        "El postulado fundamental requiere específicamente que el promedio de las discrepancias tienda al 1.0.",
+        "El cumplimiento de este requisito estadístico suele garantizarse con la propia construcción del modelo."
+      ],
+      "correct": 1,
+      "hint": "Ubica espacialmente el punto exacto donde las sobreestimaciones neutralizan milimétricamente las infraestimaciones predictivas.",
+      "explanation": "Bajo ningún contexto la condición matemática autoriza un promedio superior. El punto aritmético forzado invariablemente oscila en cero absoluto estricto: \n\n$\\sum \\epsilon / n = 0$"
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA que describe las contingencias e implicancias derivadas del contraste inferencial del postulado de aditividad y proporcionalidad.",
+      "options": [
+        "El incumplimiento de este supuesto analítico anula la validez predictiva del modelo paramétrico.",
+        "La verificación metodológica del postulado recae sobre la construcción de diagramas de dispersión.",
+        "La hipótesis nula de linealidad asume matemáticamente que las variables describen curvas perfectas."
+      ],
+      "correct": 2,
+      "hint": "Precisa con exactitud técnica qué tipo de función paramétrica define la base epistemológica del supuesto nulo evaluado.",
+      "explanation": "Cualquier comportamiento empírico curvilíneo viola la hipótesis de origen. La hipótesis base (\n\n$H_0$\n\n) demanda sistemáticamente una linealidad paramétrica estricta general."
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA sobre la arquitectura cognitiva de decisión requerida para garantizar la robustez frente al efecto paradójico muestral excesivo.",
+      "options": [
+        "Los índices de significación deben interpretarse aisladamente para garantizar una precisión absoluta.",
+        "El analista debe complementar los valores de $p$ con inspecciones visuales sobre la curva de Gauss.",
+        "La hiper-sensibilidad muestral exige utilizar múltiples métodos antes de rechazar la normalidad base."
+      ],
+      "correct": 0,
+      "hint": "Considera críticamente la confiabilidad singular depositada sobre estimadores estocásticos que adolecen vulnerabilidad al tamaño estadístico $n$.",
+      "explanation": "La dependencia epistemológica ciega en un único índice escalar acarrea falsos diagnósticos. El paradigma metodológico ortodoxo exige una triangulación analítica integrada e interpretativa."
+    },
+    {
+      "q": "SELECCIONA LA AFIRMACIÓN INCORRECTA que detalle el acoplamiento restrictivo requerido entre la escala fundacional del factor dependiente y su herramienta de contraste.",
+      "options": [
+        "Las pruebas inferenciales paramétricas son incompatibles con variables dependientes puramente ordinales.",
+        "La arquitectura metodológica no paramétrica autoriza procesar variables que carecen de una escala real.",
+        "El marco paramétrico tradicional exhibe gran flexibilidad para modelar datos de naturaleza categórica."
+      ],
+      "correct": 2,
+      "hint": "Examina si la ecuación matemática de estimación en varianzas acepta predicciones sobre factores discontinuos puros de tipo clase.",
+      "explanation": "Los axiomas paramétricos clásicos rechazan categóricamente su implementación analítica directa sobre predictandos discontinuos nominales, careciendo de flexibilidad operativa absoluta en esas clases."
+    },
+    {
       "q": "En el marco del Modelo Lineal General, el supuesto de ____ establece que la variable resultado debe explicarse mediante una suma ponderada de los predictores.",
       "options": [
         "Aditividad de las variables",
@@ -4446,6 +4886,314 @@
       "correct": 2,
       "hint": "Se aplica a la varianza de los residuos, no a las medias o VI.",
       "explanation": "Es la constancia de la varianza de los errores; no describe medias ni la forma de la relación lineal."
+    },
+    {
+      "q": "El modelo matemático de la hipótesis nula ($$H_0$$) para el supuesto de linealidad establece la relación ____.",
+      "options": [
+        "$$Y = b_0 + b_1X_1 + \\dots + error$$",
+        "$$Y = b_0 \\times b_1X_1 \\dots + error$$",
+        "$$Y \\neq b_0 + b_1X_1 + \\dots + error$$"
+      ],
+      "correct": 0,
+      "hint": "Recuerda que la relación debe ser estrictamente lineal y de naturaleza aditiva, igualando los términos al resultado esperado.",
+      "explanation": "La hipótesis nula postula un modelo aditivo simple, formulado analíticamente como $\\text{Y = } b_0 + b_1X_1 + \\dots + error$."
+    },
+    {
+      "q": "Las pruebas paramétricas alcanzan mayor potencia estadística, pero exigen matemáticamente que la Variable Dependiente sea de escala ____.",
+      "options": [
+        "estrictamente continua y sin valores extremos observados",
+        "estrictamente ordinal y con valores atípicos controlados",
+        "estrictamente nominal y sin distribuciones paramétricas"
+      ],
+      "correct": 0,
+      "hint": "Estas pruebas fallan categóricamente si los datos solo pueden ordenarse o si presentan desviaciones atípicas.",
+      "explanation": "Las pruebas paramétricas requieren máxima precisión métrica, es decir, una escala continua y la completa ausencia de outliers."
+    },
+    {
+      "q": "En el cálculo analítico de asimetría, las puntuaciones típicas $$Z$$ se obtienen dividiendo el estadístico calculado por su ____.",
+      "options": [
+        "error estándar de la estimación total poblacional neta",
+        "error estándar empírico del estadístico proporcionado",
+        "desviación típica bruta de las distribuciones extremas"
+      ],
+      "correct": 1,
+      "hint": "Se busca relativizar la medida de forma respecto al nivel de incertidumbre inherente a la métrica evaluada.",
+      "explanation": "La puntuación típica se define como el estadístico dividido por su error estándar, permitiendo ubicarlo en la curva normal."
+    },
+    {
+      "q": "Si la muestra es masiva, para evitar rechazos espurios de la $$H_0$$, el umbral clásico de las puntuaciones $$Z$$ se amplía analíticamente a ____.",
+      "options": [
+        "intervalos de $$\\pm 2.58$$o bien márgenes de$$\\pm 3.29$$",
+        "intervalos de $$\\pm 1.96$$o bien márgenes de$$\\pm 2.05$$",
+        "intervalos de $$\\pm 3.58$$o bien márgenes de$$\\pm 4.29$$"
+      ],
+      "correct": 0,
+      "hint": "El umbral original del 95% de confianza se ensancha drásticamente para compensar la hipersensibilidad muestral.",
+      "explanation": "En grandes muestras, los umbrales de validación se elevan a 2.58 o 3.29 para evitar que desviaciones mínimas invaliden la $\\text{H}_0$."
+    },
+    {
+      "q": "La hipótesis alternativa ($$H_1$$) en el contraste del supuesto de linealidad asume intrínsecamente la desigualdad matemática ____.",
+      "options": [
+        "$$Y \\neq b_0 + b_1X_1 + \\dots + error$$ poblacional",
+        "$$Y = b_0 \\neq b_1X_1 + \\dots + error$$ poblacional",
+        "$$Y = b_0 + b_1X_1 \\neq \\dots \\times error$$ empírico"
+      ],
+      "correct": 0,
+      "hint": "Esta hipótesis indica simplemente que el modelo aditivo propuesto no logra representar a la variable de salida.",
+      "explanation": "El incumplimiento de la linealidad refleja que el modelo difiere de la suma de predictoras: $\\text{Y } \\neq b_0 + b_1X_1 + \\dots + error$."
+    },
+    {
+      "q": "En el análisis de una regresión general, la normalidad de la distribución se comprueba focalizando la evaluación directamente sobre los ____.",
+      "options": [
+        "residuos, siendo diferencias entre lo observado y predicho",
+        "valores teóricos netos y su varianza estocástica marginal",
+        "datos atípicos detectados explícitamente en los cuartiles"
+      ],
+      "correct": 0,
+      "hint": "La normalidad no se exige a los datos brutos generales, sino al error de la estimación del modelo matemático.",
+      "explanation": "Los residuos concentran la diferencia (error) entre los valores reales observados y aquellos predichos teóricamente."
+    },
+    {
+      "q": "La regla estructural de los errores esféricos exige que el promedio matemático global de dichas desviaciones residuales sea ____.",
+      "options": [
+        "exactamente equivalente a la unidad en los modelos sumados",
+        "exactamente igual a cero por construcción de las matrices",
+        "exactamente proporcional al límite de la varianza estricta"
+      ],
+      "correct": 1,
+      "hint": "Es una condición de equilibrio del modelo; todo el error positivo debe compensarse con el negativo.",
+      "explanation": "Por definición analítica, la suma estocástica de los errores debe neutralizarse, fijando una media igual a cero."
+    },
+    {
+      "q": "Durante la evaluación visual de un histograma, la distribución ideal y teórica debe manifestar una silueta morfológica del tipo ____.",
+      "options": [
+        "curva leptocúrtica pronunciada con asimetría positiva real",
+        "campana mesocúrtica simétrica carente de colas alargadas",
+        "forma platicúrtica bimodal con fuerte concentración distal"
+      ],
+      "correct": 1,
+      "hint": "El apuntamiento debe ser neutro y las colas no pueden arrastrar dispersiones extremas que deformen el centro.",
+      "explanation": "La normalidad exige visualmente una distribución con curtosis cero ( mesocúrtica ) y perfecta simetría bilateral."
+    },
+    {
+      "q": "Para rechazar formalmente la hipótesis nula ($$H_0$$) utilizando la prueba estricta de Shapiro-Wilk, la significación deberá ser ____.",
+      "options": [
+        "estrictamente el rango $$p > .05$$ en el nivel de contraste",
+        "estrictamente el rango $$p = .05$$ en el nivel de contraste",
+        "estrictamente el rango $$p < .05$$ en el nivel de contraste"
+      ],
+      "correct": 2,
+      "hint": "En las pruebas de normalidad, la H0 afirma que la muestra es normal. El rechazo se produce al bajar del umbral clásico.",
+      "explanation": "Si el valor de la significación empírica es $\\text{p <.05}$, se rechaza $\\text{H}_0$, concluyendo que no hay distribución normal."
+    },
+    {
+      "q": "Las pruebas estadísticas de tipo no paramétrico toleran una reducción analítica, aceptando variables dependientes métricamente ____.",
+      "options": [
+        "puramente continuas repletas de alta varianza y curtosis",
+        "exclusivamente dicotómicas de control experimental neto",
+        "predominantemente ordinales en lugar de métrica continua"
+      ],
+      "correct": 2,
+      "hint": "Esta característica permite evaluar rankings, niveles de gravedad o satisfacción que no admiten divisiones fraccionarias puras.",
+      "explanation": "Aportan una flexibilidad crítica para diseños con VD de naturaleza ordinal que violan la asunción de continuidad paramétrica."
+    },
+    {
+      "q": "En el marco comparativo de la prueba t de Student, la asunción de normalidad de los datos empíricos es funcionalmente homóloga a los ____.",
+      "options": [
+        "datos atípicos analizados junto a la varianza estandarizada",
+        "residuos, formados como diferencias frente a medias grupales",
+        "vectores paramétricos derivados de la dispersión cuadrática"
+      ],
+      "correct": 1,
+      "hint": "En estos contrastes, no hay una regresión clásica, sino que el valor esperado es el promedio del propio grupo experimental.",
+      "explanation": "Para ANOVA y test-t, el residuo se calcula prestando a cada sujeto su media de grupo, vinculando datos y residuos."
+    },
+    {
+      "q": "Al interpretar los diagramas de probabilidad Q-Q, se asume el cumplimiento de la normalidad si la progresión de coordenadas ____.",
+      "options": [
+        "desarrolla un patrón curvo logarítmico en áreas marginales",
+        "se alinea consistentemente junto a la diagonal del esquema",
+        "se concentra en conglomerados separados por sendos vacíos"
+      ],
+      "correct": 1,
+      "hint": "La coincidencia entre los valores que tienes y los que esperarías tener teóricamente debe formar una proporción 1 a 1 constante.",
+      "explanation": "En un gráfico Q-Q perfecto, los cuantiles empíricos y teóricos son idénticos, situando los puntos en una recta diagonal."
+    },
+    {
+      "q": "Si un investigador procesa la prueba K-S sobre una muestra pequeña de $$n = 35$$, los resultados del contraste sufrirán gravemente de ____.",
+      "options": [
+        "ausencia notable de potencia para advertir desvíos reales",
+        "exceso de sensibilidad empírica generando sesgos menores",
+        "inflación incontrolable del error estocástico de las varianzas"
+      ],
+      "correct": 0,
+      "hint": "K-S necesita muchísima información empírica para atreverse a rechazar la distribución teórica supuesta.",
+      "explanation": "El test Kolmogorov-Smirnov requiere más de 100 sujetos para lograr potencia estadística y poder descartar la falsa normalidad."
+    },
+    {
+      "q": "La violación severa del supuesto básico de linealidad en cualquier modelo general acarrea indefectiblemente que dicho análisis ____.",
+      "options": [
+        "demande un ajuste matricial del índice global de predicción",
+        "quede completamente invalidado descartando otros factores",
+        "incremente ilusoriamente su magnitud relativa de significación"
+      ],
+      "correct": 1,
+      "hint": "Es un pilar absoluto: si las variables no interactúan en proporción constante, ninguna otra corrección tiene sentido lógico.",
+      "explanation": "La ausencia de linealidad derriba el núcleo predictivo; su incumplimiento, por sí solo, anula drásticamente todo el modelo."
+    },
+    {
+      "q": "Al analizar muestras con miles de sujetos, la prueba estadística Shapiro-Wilk es propensa a emitir advertencias de falsos rechazos, un sesgo ____.",
+      "options": [
+        "donde asimetrías microscópicas generan p-valores de $$> .05$$",
+        "donde desviaciones ínfimas resultan en un p-valor de $$< .05$$",
+        "donde el rango estandarizado asume siempre un p de $$= 1.00$$"
+      ],
+      "correct": 1,
+      "hint": "La inmensa cantidad de casos hace que cualquier milímetro fuera de la curva perfecta detone la significación matemática.",
+      "explanation": "La excesiva sensibilidad muestral provoca que mínimas anomalías generen $\\text{p <.05}$, invalidando teóricamente la normalidad empírica."
+    },
+    {
+      "q": "Mediante SPSS, la interfaz 'Analizar > Estadísticos descriptivos > Explorar' expide de forma integrada los test de normalidad junto a ____.",
+      "options": [
+        "los dispersogramas cruzados para las interacciones exógenas",
+        "las gráficas predictivas bidireccionales del análisis factorial",
+        "los gráficos Q-Q junto con los descriptivos totales de forma"
+      ],
+      "correct": 2,
+      "hint": "Ofrece un panorama visual probabilístico y las métricas directas de asimetría y curtosis en una única salida integral.",
+      "explanation": "Esta ruta de SPSS consolida todo el paquete de diagnóstico: S-W, K-S, estadísticos de sesgo y gráficos Q-Q."
+    },
+    {
+      "q": "A fin de localizar valores extremadamente distantes del grueso muestral preservando el balance central intercuartílico, se usa ____.",
+      "options": [
+        "un gráfico probabilístico continuo P-P de rango matricial",
+        "un dispersograma estructural derivado del modelo empírico",
+        "un diagrama sistemático de cajas (reconocido como boxplot)"
+      ],
+      "correct": 2,
+      "hint": "Es la única representación que dibuja la mediana encerrada entre percentiles, detectando cualquier asterisco lejano.",
+      "explanation": "Los diagramas de caja (boxplots) exponen la asimetría interna y aíslan los outliers más allá de los bigotes distributivos."
+    },
+    {
+      "q": "El analista confirmará empíricamente que el modelo transgrede el axioma de aditividad lineal cuando la gráfica dispersogramática ____.",
+      "options": [
+        "exhibe una curva perfecta cóncava o convexa significativa",
+        "no dibuja una tendencia clara aproximable a la línea recta",
+        "reparte toda su matriz verticalmente cercana al eje de la Y"
+      ],
+      "correct": 1,
+      "hint": "Buscamos un río de puntos uniforme y oblicuo; si la corriente de datos forma nubes caóticas, se rompe el principio.",
+      "explanation": "Si los residuos en un scatterplot pierden todo parecido con una tendencia lineal recta, la H0 paramétrica queda anulada."
+    },
+    {
+      "q": "Teniendo una muestra modesta, la evaluación analítica de curtosis requiere que su respectivo valor tipificado $$Z$$ opere en márgenes ____.",
+      "options": [
+        "rigurosamente controlados bajo el estándar neto de $$\\pm 1.96$$",
+        "exclusivamente concentrados en los umbrales de $$\\pm 2.58$$",
+        "invariablemente expandidos hacia los absolutos de $$\\pm 3.29$$"
+      ],
+      "correct": 0,
+      "hint": "Corresponde al valor clásico de corte para un nivel de confianza del 95% en una campana poblacional regular.",
+      "explanation": "Para muestras comunes, el límite permisible de desviación $\\text{Z}$ es $\\pm 1.96$, en correspondencia con una significación de 0.05."
+    },
+    {
+      "q": "Las herramientas paramétricas aventajan a las libres de distribución por su extraordinaria capacidad para detectar los efectos, conocida como ____.",
+      "options": [
+        "robustez metodológica ante el tamaño del sesgo poblacional",
+        "potencia estadística real para el contraste de las hipótesis",
+        "homogeneidad marginal atribuible a las interacciones netas"
+      ],
+      "correct": 1,
+      "hint": "Esta característica garantiza que si la H0 es verdaderamente falsa en la realidad, el test logrará rechazarla sin cometer error.",
+      "explanation": "Esta eficacia diferencial se define rigurosamente como potencia estadística, minimizando la tasa del Error de Tipo II."
+    },
+    {
+      "q": "Respecto al uso de pruebas no paramétricas, el texto confirma empíricamente que:",
+      "options": [
+        "Son menos sensibles al incumplimiento.",
+        "Manejan variables dependientes ordinales.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Comprueba si toleran mejor las desviaciones y si aceptan categorías no matemáticas pero escalonadas.",
+      "explanation": "Son muy flexibles y su principal ventaja radica en poder operar sobre datos estrictamente no continuos (ordinales)."
+    },
+    {
+      "q": "El marco conceptual del supuesto paramétrico de linealidad y aditividad dicta que:",
+      "options": [
+        "La VD se relaciona linealmente con las VI.",
+        "La H0 asume el modelo aditivo poblacional.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Este supuesto formula el enlace entre el fenómeno a predecir y los factores sumados que lo originan en H0.",
+      "explanation": "Ambas descripciones fundamentan este requisito: la correlación es rectilínea y matemáticamente regida por una sumatoria de variables."
+    },
+    {
+      "q": "Sobre el tratamiento formal de la normalidad residual en el test ANOVA y la t-Student:",
+      "options": [
+        "Los residuos son diferencias observadas.",
+        "En ANOVA equivale a normalidad residual.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Las puntuaciones restadas a las medias conforman el núcleo del error en ambos diseños experimentales básicos.",
+      "explanation": "La métrica empírica equivale al residuo, garantizando que el análisis de asimetría global coincida con el test paramétrico subyacente."
+    },
+    {
+      "q": "En el apartado gráfico, los clásicos diagramas de caja (boxplots) son instrumentos que:",
+      "options": [
+        "Evalúan la simetría de la distribución.",
+        "Detectan la presencia de los outliers.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Observa si la caja central se inclina hacia un cuartil o si expulsa valores desconectados en los márgenes.",
+      "explanation": "Proporcionan una panorámica excelente: la mediana dicta la simetría interior y los puntos marginales revelan datos atípicos extremos."
+    },
+    {
+      "q": "El cálculo paramétrico de las puntuaciones típicas o estandarizadas (Z) permite que:",
+      "options": [
+        "El estadístico se divide por el error.",
+        "Cuantifican asimetría y la curtosis Z.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Esta transformación relativiza el tamaño del defecto morfológico según su grado de precisión muestral estimada.",
+      "explanation": "Es el método algorítmico exacto: $\\text{Z = Estadístico / Error Estándar}$, proveyendo el grado numérico exacto de deformación."
+    },
+    {
+      "q": "En lo referente a las limitaciones impuestas a la prueba estadística Kolmogorov-Smirnov:",
+      "options": [
+        "K-S necesita muestra superior a los 100.",
+        "K-S pierde potencia en muestras pequeñas.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Este es un test muy conservador y ciego si no dispone de una masa crítica masiva de individuos analizados.",
+      "explanation": "La debilidad principal del K-S es su nula capacidad para captar falta de normalidad a menos que la base de datos sea gigantesca."
+    },
+    {
+      "q": "El recorrido analítico de SPSS por 'Analizar > Estadísticos descriptivos > Explorar' produce que:",
+      "options": [
+        "La ruta genera estadísticos K-S y S-W.",
+        "La ruta también genera los gráficos Q-Q.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Es la ventana ómnibus del programa, emitiendo tablas numéricas de significación y gráficos proyectivos.",
+      "explanation": "SPSS diseña este submenú para el análisis íntegro de la distribución teórica, sumando pruebas formales y métodos visuales."
+    },
+    {
+      "q": "La condición matemática estructural referente al supuesto de los errores esféricos:",
+      "options": [
+        "Aplica condiciones a los residuos netos.",
+        "Exige un promedio algebraico de cero.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "No aplica a las predicciones absolutas, sino a lo que sobra del modelo, forzando un equilibrio central nulo.",
+      "explanation": "La matriz de error subyacente impone que, sistemáticamente, la media poblacional del término residual converja en un cero matemático."
     },
     {
       "q": "¿Es el supuesto de 'media cero' de los residuos una condición que debe verificarse empíricamente en la fase de diagnóstico del modelo lineal?",
