@@ -8771,6 +8771,446 @@
       "explanation": "El objetivo es contrastar medias, no varianzas; la igualdad de varianzas es un supuesto de otras pruebas (como t independiente)."
     },
     {
+      "q": "La hipótesis nula ($\\text{H}_0$) en una prueba t para muestras dependientes asume explícitamente que la varianza muestral de las diferencias es estadísticamente nula.",
+      "options": [
+        "La afirmación es verdadera.",
+        "La afirmación resulta falsa.",
+        "No es posible determinarlo."
+      ],
+      "correct": 1,
+      "hint": "Recuerda qué parámetro (media vs varianza) se compara entre las dos medidas.",
+      "explanation": "La hipótesis nula postula que la media de diferencias es cero, es decir $\\bar{D} = 0 $, no la varianza $\\sigma^2_D$."
+    },
+    {
+      "q": "Según Morris (2008), la corrección matemática del tamaño del efecto (d de Cohen) en medidas repetidas se justifica de forma analítica por la falta de independencia.",
+      "options": [
+        "La afirmación es verdadera.",
+        "La afirmación resulta falsa.",
+        "No es posible determinarlo."
+      ],
+      "correct": 0,
+      "hint": "Piensa en si dos medidas del mismo sujeto pueden tratarse como variables aisladas.",
+      "explanation": "El tamaño del efecto clásico subestima o sobreestima la varianza al asumir erróneamente independencia $\\rho = 0$ entre medidas."
+    },
+    {
+      "q": "El supuesto más crítico para la validez de la prueba paramétrica estipula que la medida pretest y la postest exhiban distribuciones puramente normales por separado.",
+      "options": [
+        "La afirmación es verdadera.",
+        "La afirmación resulta falsa.",
+        "No es posible determinarlo."
+      ],
+      "correct": 1,
+      "hint": "El requisito de normalidad no se aplica a las variables por separado.",
+      "explanation": "El Teorema Central del Límite y los supuestos exigen normalidad en el vector de diferencias $D = X_{post} - X_{pre}$, no independientemente."
+    },
+    {
+      "q": "Si los resultados de Kolmogorov-Smirnov y Shapiro-Wilk entran en contradicción formal, se debe descartar el análisis paramétrico sin considerar los métodos visuales.",
+      "options": [
+        "La afirmación es verdadera.",
+        "La afirmación resulta falsa.",
+        "No es posible determinarlo."
+      ],
+      "correct": 1,
+      "hint": "Los estadísticos de normalidad tienen limitaciones que se resuelven gráficamente.",
+      "explanation": "Las normativas estadísticas dictan que la asimetría gráfica asume mayor peso frente a $\\text{KS}$ y $\\text{SW}$ si la muestra es anómala."
+    },
+    {
+      "q": "En la prueba de rangos con signo de Wilcoxon, la decisión estadística sobre la hipótesis empírica se establece evaluando formalmente la mediana de las diferencias netas.",
+      "options": [
+        "La afirmación es verdadera.",
+        "La afirmación resulta falsa.",
+        "No es posible determinarlo."
+      ],
+      "correct": 0,
+      "hint": "Wilcoxon es una prueba no paramétrica basada en rangos, no en medias puras.",
+      "explanation": "Wilcoxon categoriza rangos y asume bajo $\\text{H}_0 $ que la mediana poblacional de las diferencias $\\tilde{D}$ se aproxima a $ 0$."
+    },
+    {
+      "q": "El estadístico empírico t se calcula dividiendo la suma total de las diferencias intragrupales entre la desviación típica máxima amplificada por el número de datos N.",
+      "options": [
+        "La afirmación es verdadera.",
+        "La afirmación resulta falsa.",
+        "No es posible determinarlo."
+      ],
+      "correct": 1,
+      "hint": "La T de Student estandariza la media usando el error típico.",
+      "explanation": "La razón matemática del estadístico es el promedio sobre el error estándar: $t = \\frac{\\bar{D}}{SD/\\sqrt{N}}$."
+    },
+    {
+      "q": "Un intervalo de confianza al 95% para la diferencia de medias que incluye al valor cero denota inevitablemente que la prueba estadística generará una p > .05 teórica.",
+      "options": [
+        "La afirmación es verdadera.",
+        "La afirmación resulta falsa.",
+        "No es posible determinarlo."
+      ],
+      "correct": 0,
+      "hint": "Cuando un intervalo contiene el cero, no se puede asegurar una diferencia real.",
+      "explanation": "Un $IC $ que intersecta el origen matemático $ 0 $ es matemáticamente homólogo a retener $\\text{H}_0 $ con $ p > 0.05$."
+    },
+    {
+      "q": "La existencia de un único valor atípico empírico en las observaciones originales invalida por completo el uso del modelo paramétrico forzando transformaciones previas.",
+      "options": [
+        "La afirmación es verdadera.",
+        "La afirmación resulta falsa.",
+        "No es posible determinarlo."
+      ],
+      "correct": 1,
+      "hint": "Los atípicos son problemáticos, pero no fuerzan directamente al abandono estadístico si no son espurios.",
+      "explanation": "La estadística paramétrica es robusta; valores extremos no espurios no fuerzan un cambio automático hacia pruebas no paramétricas $\\text{W}$."
+    },
+    {
+      "q": "Si una intervención psicológica genera una disminución sistemática de los síntomas clínicos, la prueba de Wilcoxon categorizará estos casos como 'diferencias negativas'.",
+      "options": [
+        "La afirmación es verdadera.",
+        "La afirmación resulta falsa.",
+        "No es posible determinarlo."
+      ],
+      "correct": 0,
+      "hint": "En terapias de reducción, una diferencia negativa significa que la puntuación final es menor.",
+      "explanation": "Si $X_{post} < X_{pre}$, el rango es negativo, indicando matemáticamente $\\Delta < 0$, un éxito en terapias de reducción."
+    },
+    {
+      "q": "En la configuración de un reporte estandarizado con formato APA, los grados de libertad reportados en la ecuación se establecen exactamente idénticos a la muestra N.",
+      "options": [
+        "La afirmación es verdadera.",
+        "La afirmación resulta falsa.",
+        "No es posible determinarlo."
+      ],
+      "correct": 1,
+      "hint": "Los grados de libertad reflejan pares de observaciones, no mediciones totales.",
+      "explanation": "En un diseño intra-sujetos puro, las mediciones están ligadas conformando pares $N $, por tanto $ gl = N - 1$."
+    },
+    {
+      "q": "Respecto al tamaño del efecto en los modelos dependientes, ¿cuál de los siguientes enunciados teóricos refleja de manera más precisa su conceptualización matemática?",
+      "options": [
+        "Cuantifica la magnitud absoluta del cambio omitiendo las varianzas de las diferencias.",
+        "Determina el valor p y su significancia sin usar correcciones por las dependencias.",
+        "Expresa la magnitud del cambio recomendando correcciones por la falta de independencia."
+      ],
+      "correct": 2,
+      "hint": "La d de Cohen requiere ajustes al tratar con el mismo grupo dos veces.",
+      "explanation": "La $d $ de Cohen es un índice estandarizado del cambio empírico absoluto que requiere correcciones $\\Delta_{adj}$ por dependencia muestral."
+    },
+    {
+      "q": "En relación con los supuestos matemáticos de la prueba T paramétrica, ¿cuál condición determina estrictamente su validez analítica?",
+      "options": [
+        "Las medidas pre y post individuales deben poseer asimetría nula y curtosis mesocúrtica exacta.",
+        "La variable construida a partir de la diferencia temporal debe ajustarse a la curva gaussiana.",
+        "Los grupos analizados deben presentar homogeneidad de varianzas mediante la prueba de Levene."
+      ],
+      "correct": 1,
+      "hint": "Lo que realmente importa es cómo se distribuye el cambio entre ambas mediciones.",
+      "explanation": "El operador de diferencia $D_i = X_{2i} - X_{1i}$ debe ser gaussiano $\\sim N(0, \\sigma^2)$ para estabilizar el contraste."
+    },
+    {
+      "q": "Al emplear el software SPSS para explorar la normalidad poblacional, ¿cómo se resuelve una contradicción inferencial entre Kolmogorov-Smirnov y Shapiro-Wilk?",
+      "options": [
+        "Se procede irrevocablemente con los rangos de Wilcoxon para eludir el error de tipo I severo.",
+        "Se inspeccionan visualmente los gráficos Q-Q y el histograma para emitir un juicio analítico.",
+        "Se recodifican las variables originales transformándolas logarítmicamente de forma automática."
+      ],
+      "correct": 1,
+      "hint": "Los tests formales de normalidad a veces fallan; la inspección humana resuelve dudas.",
+      "explanation": "Si $p_{KS}$ y $ p_{SW}$ divergen, el juicio analítico en gráficos probabilísticos (Q-Q) previene errores de tipo I $\\alpha$."
+    },
+    {
+      "q": "Considerando la construcción matemática del estadístico T para medidas repetidas, ¿qué elementos definen su cociente fundamental?",
+      "options": [
+        "La media empírica de diferencias dividida por la suma total de varianzas independientes.",
+        "El promedio del momento postest relativizado según la desviación estandarizada pretest.",
+        "La media de las diferencias intragrupales ponderada por el error típico de la muestra."
+      ],
+      "correct": 2,
+      "hint": "El contraste exige relativizar la diferencia media con el error estándar de esas diferencias.",
+      "explanation": "El estadístico pondera la magnitud media absoluta $\\bar{D}$ con el error estándar $\\frac{S_D}{\\sqrt{N}}$ de la muestra unida."
+    },
+    {
+      "q": "¿Cuál es el significado analítico de un intervalo de confianza paramétrico que incluye el cero absoluto en su estimación bilateral?",
+      "options": [
+        "Confirma estadísticamente la pertinencia y el ajuste absoluto del modelo de Wilcoxon conexo.",
+        "Indica que la verdadera diferencia poblacional entre mediciones resulta presumiblemente nula.",
+        "Demuestra una ausencia total de correlación paramétrica entre los momentos de la evaluación."
+      ],
+      "correct": 1,
+      "hint": "Contener el cero neutraliza estadísticamente el hallazgo empírico positivo.",
+      "explanation": "La retención del parámetro $\\mu = 0 $ dentro del límite bi-direccional imposibilita descartar el efecto del azar $\\epsilon$."
+    },
+    {
+      "q": "De acuerdo a la clasificación de los rangos de Wilcoxon, ¿cómo se interpretan empíricamente los casos categorizados como 'Empates'?",
+      "options": [
+        "Representan las observaciones donde el postest aumentó marginalmente frente a la media basal.",
+        "Constituyen datos donde la puntuación clínica disminuyó de manera drástica e incontrolable.",
+        "Evidencian aquellos participantes que no mostraron ninguna variación métrica entre mediciones."
+      ],
+      "correct": 2,
+      "hint": "Si la medida no varía post intervención, se anula en la ordenación empírica.",
+      "explanation": "Los casos donde $X_{pre} = X_{post}$ (diferencia $ 0 $) reducen la potencia y se anulan en la distribución $\\text{W}$."
+    },
+    {
+      "q": "¿Cómo interactúan los grados de libertad (gl) con el tamaño muestral en la distribución de medias dependientes para un grupo único?",
+      "options": [
+        "Se calculan restando una unidad a la cantidad total de pares de datos observados (N-1).",
+        "Equivalen a la suma de sujetos evaluados en ambas medidas restando dos unidades (2N-2).",
+        "Se determinan multiplicando estrictamente las variables temporales por las observaciones."
+      ],
+      "correct": 0,
+      "hint": "Para n sujetos medidos dos veces, se resta una unidad paramétrica al tamaño de muestra.",
+      "explanation": "El emparejamiento bloquea un grado de libertad $\\nu $, por tanto la distribución $ t $ asume $ gl = N - 1$ univariadamente."
+    },
+    {
+      "q": "Dentro de las matrices paramétricas de SPSS, ¿cuál es el comportamiento esperado en la tabla de correlaciones de muestras emparejadas?",
+      "options": [
+        "Debe mostrar coeficientes próximos a cero evidenciando independencia total inter-sujetos.",
+        "Ha de revelar una asociación alta y estadísticamente significativa entre ambas mediciones.",
+        "Requiere presentar covarianzas invariables para evitar la multicolinealidad estructural."
+      ],
+      "correct": 1,
+      "hint": "Al medir al mismo individuo dos veces, sus puntajes lógicamente convergen.",
+      "explanation": "El vector longitudinal genera autocovarianza intrínseca; se espera $\\rho_{XY} > 0 $ estadísticamente significativa en pares $(x_i, y_i)$."
+    },
+    {
+      "q": "¿Cuál de las siguientes condiciones es un prerrequisito estructural ineludible de la Variable Dependiente en el modelo de medidas repetidas?",
+      "options": [
+        "Debe categorizarse exclusivamente en una escala nominal de intervalos discretos y cerrados.",
+        "Requiere ser una métrica continua fundamentada en escalas clásicas de intervalo o de razón.",
+        "Necesita exhibir distribuciones asimétricas para posibilitar el análisis de los residuales."
+      ],
+      "correct": 1,
+      "hint": "El modelo paramétrico no soporta datos meramente cualitativos ni ordenamientos.",
+      "explanation": "Las métricas no paramétricas admiten ordenación categórica, pero la distribución $t $ exige $ X \\in \\mathbb{R}$ o dominio continuo."
+    },
+    {
+      "q": "¿Qué implicación directa tiene el establecimiento del valor de corte p < .05 en la toma de decisiones estadísticas del contraste emparejado?",
+      "options": [
+        "Justifica metodológicamente la retención de la Hipótesis Nula por carencia de variaciones.",
+        "Implica el rechazo de la Hipótesis Nula asumiendo que el tratamiento ejerce un efecto real.",
+        "Supone la confirmación teórica de la normalidad poblacional de todas las variables dadas."
+      ],
+      "correct": 1,
+      "hint": "Valores infinitesimales de probabilidad destruyen la creencia de nula alteración.",
+      "explanation": "El nivel de significación $\\alpha = 0.05 $ define la región crítica donde los cambios sobrepasan el margen de error $\\epsilon$."
+    },
+    {
+      "q": "En la interpretación del tamaño del efecto (d de Cohen), ¿cuál es el punto de referencia paramétrico para diagnosticar un cambio 'muy grande'?",
+      "options": [
+        "Un valor estandarizado de d que resulte matemáticamente estrictamente mayor a 0.80 netos.",
+        "Un indicador relativo de d localizado exclusivamente dentro del intervalo entre 0.2 y 0.5.",
+        "Una estimación asintótica de d que se aproxime inexorablemente al valor umbral del cero."
+      ],
+      "correct": 0,
+      "hint": "Cohen fijó un umbral específico en su manual para las alteraciones extremas.",
+      "explanation": "El criterio heurístico define impactos masivos si la desviación estandarizada media supera la asíntota empírica de $d = 0.80$."
+    },
+    {
+      "q": "¿Qué premisa ontológica justifica que las medidas T dependientes demanden análisis de supuestos distintos a las muestras independientes?",
+      "options": [
+        "La evaluación simultánea sobre el mismo grupo de sujetos anula la independencia del error.",
+        "La presencia de múltiples covariables independientes altera la regresión lineal estocástica.",
+        "La utilización de medidas dicotómicas en el postest requiere correcciones de continuidad."
+      ],
+      "correct": 0,
+      "hint": "Evaluar la misma persona dos veces crea una correlación natural ineludible.",
+      "explanation": "La covarianza poblacional anula el axioma estocástico elemental de residuales independientes $\\text{Cov}(\\epsilon_i, \\epsilon_j) = 0$."
+    },
+    {
+      "q": "Al reportar resultados en estilo APA, ¿qué información estadística se consigna inmediatamente después del valor empírico del estadístico t?",
+      "options": [
+        "La significación asintótica exacta acompañada del estimador de dispersión no paramétrico.",
+        "El valor puntual de los grados de libertad englobado rigurosamente entre los paréntesis.",
+        "El índice predictivo del tamaño del efecto con su correspondiente intervalo de predicción."
+      ],
+      "correct": 1,
+      "hint": "La formalidad académica exige indicar el tamaño de la muestra indirectamente tras el estadístico.",
+      "explanation": "La convención axiomática requiere la forma $t(gl) = X.XX$, indicando la forma geométrica univariada de la curva densimétrica."
+    },
+    {
+      "q": "¿Cuál es el proceso algorítmico específico que requiere SPSS previo a la evaluación gráfica del supuesto de distribución normal bivariada?",
+      "options": [
+        "Transformar las puntuaciones atípicas en rangos medianos mediante recodificación ordinal.",
+        "Configurar una regresión logística binaria para descartar el efecto del sesgo de desgaste.",
+        "Generar una variable inédita computando la resta directa entre la puntuación Post y la Pre."
+      ],
+      "correct": 2,
+      "hint": "SPSS no intuye el cambio; el investigador debe computarlo aritméticamente primero.",
+      "explanation": "El procesamiento pre-analítico define un vector algebraico nuevo $D = X_2 - X_1$ para someter a Kolmogorov-Smirnov."
+    },
+    {
+      "q": "En el contexto de evaluación clínica, ¿qué evidencia estadística respalda rigurosamente que una terapia reductiva ha resultado ser efectiva?",
+      "options": [
+        "Una concentración estadísticamente significativa de los rangos de las diferencias empates.",
+        "Una acumulación predominante y significativa de las diferencias sistemáticas en negativas.",
+        "Una expansión geométrica de la varianza poblacional en el espectro temporal del postest."
+      ],
+      "correct": 1,
+      "hint": "Si los síntomas se reducen, la resta del después frente al antes da un signo particular.",
+      "explanation": "El logaritmo de rangos tipifica variaciones $\\Delta < 0 $ como decrementos eficaces de la condición patológica basal $\\mu_0$."
+    },
+    {
+      "q": "Identifica la aseveración incorrecta respecto al modelado estadístico de la prueba t para mediciones temporales repetidas sobre un sujeto:",
+      "options": [
+        "Estipula irrevocablemente que todas las unidades experimentales lleguen de ramas separadas.",
+        "Exige de forma matemática la sustracción algebraica de registros para procesar la asimetría.",
+        "Asume matemáticamente bajo la nula que el vector esperado de las diferencias iguala al cero."
+      ],
+      "correct": 0,
+      "hint": "El modelo de grupos encadenados excluye usar muestras sin emparejamiento.",
+      "explanation": "La varianza intragrupo asume dependencia pura $\\text{Cov} \\neq 0$; la separación estocástica falsea radicalmente el modelo."
+    },
+    {
+      "q": "Localiza la proposición falsa en referencia a la estimación paramétrica de la dimensión del efecto mediante el indicador d de Cohen clásico:",
+      "options": [
+        "La formulación clásica ignora metodológicamente la dependencia inmanente de las variables.",
+        "El índice ponderado asume por definición una correlación muestral permanentemente negativa.",
+        "La métrica ajustada permite dilucidar empíricamente la trascendencia clínica del programa."
+      ],
+      "correct": 1,
+      "hint": "La versión no corregida sobreestima ignorando la correlación de medidas repetidas.",
+      "explanation": "La formulación clásica de varianza compartida sufre infraestimaciones si no aplica el factor corrector $\\sqrt{2(1-r)}$."
+    },
+    {
+      "q": "Determina la premisa lógicamente inconsistente sobre las comprobaciones distribucionales del análisis bivariado de las diferencias medias:",
+      "options": [
+        "La prueba paramétrica de Kolmogorov-Smirnov resulta plenamente suficiente y autoconclusiva.",
+        "El diagnóstico se suplementa analizando la asimetría mediante las puntuaciones típicas Z.",
+        "La normalidad estructural es exigible únicamente sobre el vector aritmético del incremento."
+      ],
+      "correct": 0,
+      "hint": "Pruebas gráficas siempre son requeridas ante ambigüedades numéricas de normalidad.",
+      "explanation": "Los contrastes analíticos $\\text{KS}$ limitan su validez heurística, obligando a corroborar asimetrías mediante curvas gaussianas empíricas."
+    },
+    {
+      "q": "¿Qué interpretación clínica y estadística resulta diametralmente incorrecta al evaluar el intervalo de confianza bilateral (95%) en SPSS?",
+      "options": [
+        "Un rango límite continuo de [0.15, 1.45] certifica empíricamente la falsedad de la nula.",
+        "Un acotamiento empírico de [-1.20, 0.40] avala categóricamente una alteración sustancial.",
+        "La tabla computacional proyecta el umbral donde presumiblemente orbita la disimilitud real."
+      ],
+      "correct": 1,
+      "hint": "Si el límite inferior y superior atraviesan el eje cero, el cambio es rebatible.",
+      "explanation": "Un límite paramétrico inferior a $0 $ superior a $ 0 $ encapsula la región nula, confirmando la igualdad poblacional $\\mu_1 = \\mu_2$."
+    },
+    {
+      "q": "Señala el juicio técnico erróneo relativo al despliegue computacional y la estructura algorítmica de los rangos con signo de F. Wilcoxon:",
+      "options": [
+        "Transforma las discrepancias brutas continuas hacia un espacio métrico estrictamente ordinal.",
+        "Su activación requiere obligatoriamente que las distribuciones muestrales carezcan de sesgos.",
+        "El recuento final clasifica cada emparejamiento empírico en tres subcategorías excluyentes."
+      ],
+      "correct": 1,
+      "hint": "Los métodos de distribución libre se activan justamente ante asimetrías severas.",
+      "explanation": "F. Wilcoxon procesa violaciones flagrantes al teorema central del límite cuando las asimetrías empíricas $\\gamma_1 \\neq 0$ reinan."
+    },
+    {
+      "q": "Reconoce el axioma algebraico equivocado al examinar el cociente estocástico de la estadística t para diseños experimentales unigrupales:",
+      "options": [
+        "El denominador computa la dispersión estándar dividida por la raíz de los emparejamientos.",
+        "El numerador del sistema captura exclusivamente la varianza máxima entre medidas paralelas.",
+        "Un volumen muestral muy amplio tiende inexorablemente a maximizar la potencia del hallazgo."
+      ],
+      "correct": 1,
+      "hint": "El cálculo fundamental de 't' no requiere maximizar varianzas, sino promediar las diferencias.",
+      "explanation": "La media de los deltas poblacionales $\\bar{D}$ domina el numerador analítico, no la maximización artificial de la varianza $\\sigma^2$."
+    },
+    {
+      "q": "Descubre la declaración metodológica espuria respecto a la organización operativa del software SPSS en contrastes de medias relacionadas:",
+      "options": [
+        "La ventana inicial requiere asignar la medida base a variable uno y la sucesiva a la dos.",
+        "El sistema algorítmico bloquea radicalmente el cálculo simultáneo de las magnitudes Cohen.",
+        "El log informativo expone sistemáticamente una matriz de las correlaciones intertemporales."
+      ],
+      "correct": 1,
+      "hint": "Los indicadores del efecto no están ocultos, pero demandan marcaje explícito en el menú.",
+      "explanation": "SPSS permite aislar la estimación del tamaño del efecto activando paramétricamente casillas del submenú comparativo de medias."
+    },
+    {
+      "q": "Detecta la afirmación incorrecta en relación con la notación científica APA expuesta en el ejemplo ilustrativo de los síntomas clínicos:",
+      "options": [
+        "El contraste empírico se detalla con sus grados de libertad adjuntos entre los paréntesis.",
+        "El intervalo de estimación paramétrica se notifica excluyendo las fracciones preexistentes.",
+        "Las medias de cada momento se anexan sistemáticamente clarificando toda la direccionalidad."
+      ],
+      "correct": 1,
+      "hint": "APA rechaza redondear en exceso cuando se acotan probabilidades y rangos.",
+      "explanation": "Los rangos de confianza $\\text{IC}_{95\\%}$ se publican ineludiblemente con toda su extensión decimal para certificar precisión."
+    },
+    {
+      "q": "Identifica la falacia conceptual vinculada a la hipótesis nula (H0) dentro del espectro de las pruebas t para observaciones longitudinales:",
+      "options": [
+        "Predice una superposición aritmética total de las esperanzas matemáticas en la población.",
+        "Argumenta tajantemente que el tratamiento clínico genera un cambio medible y significativo.",
+        "Sostiene metodológicamente que las alteraciones detectadas provienen del mero azar muestral."
+      ],
+      "correct": 1,
+      "hint": "La hipótesis de partida estipula un mundo donde la intervención es absolutamente inocua.",
+      "explanation": "El postulado $\\text{H}_0 $ defiende el axioma estocástico de invariabilidad poblacional paramétrica $\\mu_{\\Delta} = 0$."
+    },
+    {
+      "q": "Averigua cuál aseveración contraviene los requerimientos ontológicos de las variables operadas en el contraste t para grupos encadenados:",
+      "options": [
+        "Las desviaciones atípicas anómalas deben ser escrutadas para evitar los sesgos de distorsión.",
+        "La dimensión independiente categoriza el vector longitudinal en dos cortes de tiempo medibles.",
+        "El indicador dependiente requiere manifestar una naturaleza exclusivamente ordinal o categórica."
+      ],
+      "correct": 2,
+      "hint": "Una naturaleza de saltos discretos arruinaría las asunciones de la curva normal subyacente.",
+      "explanation": "Las variables objetivo postulan continuidad escalar continua; categorizaciones nominales rompen el espectro de integración univariada."
+    },
+    {
+      "q": "Distingue la hipótesis matemáticamente errónea sobre el cálculo y utilidad práctica de los rangos de suma con signo (Fórmula no paramétrica):",
+      "options": [
+        "Constituye el procedimiento estadístico prioritario ante la ruptura de la normalidad empírica.",
+        "El algoritmo asigna un estatus de empate invariablemente si el diferencial aritmético es cero.",
+        "Su regla de decisión rechaza la nula exclusivamente si la varianza del pretest es asimétrica."
+      ],
+      "correct": 2,
+      "hint": "El algoritmo analiza los signos del delta, no las dispersiones iniciales unilaterales.",
+      "explanation": "El conteo empírico descarta valores igualados a cero, no dependiendo su regla base de la asimetría univariada $\\text{Pre}$."
+    },
+    {
+      "q": "Selecciona el argumento inválido respecto al análisis descriptivo introductorio ejecutado en los submenús analíticos de SPSS para este modelo:",
+      "options": [
+        "Resulta imperativo computar manualmente la resta intragrupal antes del gráfico exploratorio.",
+        "La asimetría de los cambios se pondera indirectamente mediante las tipificaciones estandar Z.",
+        "Las distribuciones de los pretest y postest deben evaluarse de forma completamente inconexa."
+      ],
+      "correct": 2,
+      "hint": "Evaluar distribuciones de manera aislada rompe la lógica del emparejamiento.",
+      "explanation": "El análisis residual exige una evaluación univariada dependiente sobre la nueva matriz de deltas $\\Delta = P_{2} - P_{1}$."
+    },
+    {
+      "q": "Encuentra la interpretación defectuosa respecto a la p-asignación empírica (p > .05 vs p < .05) en el contraste paramétrico de series apareadas:",
+      "options": [
+        "Si el cuantil de probabilidad desciende de .05, el algoritmo respalda la eficacia subyacente.",
+        "Un indicador final de .01 confirma de manera absoluta que la intervención resulta irrelevante.",
+        "Valores superiores al umbral crítico consolidan la presunción teórica de inmutabilidad neta."
+      ],
+      "correct": 1,
+      "hint": "Valores muy por debajo del umbral alfa refuerzan fuertemente el modelo alternativo.",
+      "explanation": "Las p-asignaciones infinitesimales $p \\to 0 $ repudian severamente a $\\text{H}_0$, consolidando evidencia fáctica del cambio."
+    },
+    {
+      "q": "Precisa la conclusión lógicamente insostenible derivada de la matriz algorítmica 'Correlaciones de muestras emparejadas' ofrecida por el software:",
+      "options": [
+        "Su presencia ratifica que los registros corresponden a unidades experimentales equivalentes.",
+        "Un valor p significativo inferior al cinco por ciento certifica la dependencia de los datos.",
+        "La obtención de un estadígrafo de Pearson cercano a cero consolida el supuesto de inclusión."
+      ],
+      "correct": 2,
+      "hint": "La ausencia de correlación contradeciría la mismísima naturaleza del diseño intra-sujetos.",
+      "explanation": "Correlaciones cercanas a $\\rho \\approx 0$ pulverizan las bases matriciales de dependencia intragrupo obligatoria."
+    },
+    {
+      "q": "Marca el veredicto analítico inexacto acerca del tamaño del efecto, particularmente la función d referenciada en la literatura clínica de Cohen:",
+      "options": [
+        "Su métrica matemática sintetiza la proporción de desplazamiento estandarizado de la respuesta.",
+        "Un resultado superior a ochenta centésimas demuestra empíricamente un efecto terapéutico nulo.",
+        "Los ajustes estadísticos de Morris palían la sobredimensión de la covarianza intra-sujetos."
+      ],
+      "correct": 1,
+      "hint": "Los índices de gran calibre atestiguan variaciones empíricas enormes, no esterilidad terapéutica.",
+      "explanation": "Efectos mayores a la cota paramétrica estipulan varianzas desplazadas y cambios robustos $\\Delta > 0.8\\sigma$."
+    },
+    {
       "q": "Si en un estudio de medidas repetidas con $N=25$ pares obtenemos una $\\overline{D}=10$ y una varianza de las diferencias $S_D^2=100$, el valor exacto del estadístico $t$ es ____.",
       "options": [
         "El valor del estadístico es $t=5.00$",
@@ -9198,6 +9638,435 @@
       "correct": 2,
       "hint": "La fórmula usa la desviación típica de las diferencias ($S_D$), no el error típico ni la media global.",
       "explanation": "Se divide por la desviación típica de las diferencias ($S_D = \\sqrt{S_D^2}$). Las opciones propuestas son errores de concepto comunes."
+    },
+    {
+      "q": "En la estadística t para medidas repetidas, el error estándar del denominador sufre un sesgo si en lugar de dividir por la raíz de N se divide erróneamente por __________.",
+      "options": [
+        "Raíz de N menos1",
+        "N al cuadrado -1",
+        "Raíz de N más 1 "
+      ],
+      "correct": 0,
+      "hint": "Confundir la varianza poblacional ajustada genera este divisor espurio.",
+      "explanation": "El error estándar asume $\\frac{SD}{\\sqrt{N}}$. Al introducir $ N-1$ se confunden los grados de libertad con el tamaño muestral."
+    },
+    {
+      "q": "Si la varianza de las diferencias se calcula sumando las varianzas individuales sin restar adecuadamente la covarianza cruzada, el tamaño del efecto d __________.",
+      "options": [
+        "Se subestimará  ",
+        "Se sobreestimará",
+        "No se alterará  "
+      ],
+      "correct": 0,
+      "hint": "La suma independiente incrementa el divisor.",
+      "explanation": "Al ignorar la dependencia y no restar $2 \\cdot cov(x,y)$, la varianza estimada será mayor, incrementando el denominador general y disminuyendo $ d$."
+    },
+    {
+      "q": "Al derivar la variable DIF temporal, invertir el orden absoluto (Pre - Post frente a Post - Pre) provocará geométricamente que el valor absoluto de la prueba t __________.",
+      "options": [
+        "Quede invertida ",
+        "Quede idéntica  ",
+        "Quede anulada   "
+      ],
+      "correct": 1,
+      "hint": "El valor absoluto se aísla de los signos algebraicos.",
+      "explanation": "El cambio de orden afecta el signo del numerador $\\bar{D}$, pero al evaluar distancias absolutas en las colas, $|t|$ es inmutable."
+    },
+    {
+      "q": "En el cálculo algorítmico de grados de libertad, olvidar restar la unidad base asumiendo N total provocará matemáticamente que el valor crítico teórico de t sea __________.",
+      "options": [
+        "Sobreestimado   ",
+        "Subestimado     ",
+        "Indeterminado   "
+      ],
+      "correct": 1,
+      "hint": "A mayores grados de libertad, la curva t se vuelve más estrecha y leptocúrtica.",
+      "explanation": "Usar $N $ asume mayor fiabilidad, lo que reduce falsamente el umbral para el valor crítico $ t_{\\alpha}$."
+    },
+    {
+      "q": "Si al aplicar la métrica d de Cohen se eleva al cuadrado la desviación típica asumiendo por error la varianza en el denominador, las unidades resultantes estarán __________.",
+      "options": [
+        "Distorsionadas  ",
+        "Estandarizadas  ",
+        "Invariantes     "
+      ],
+      "correct": 0,
+      "hint": "No coincidirán en grado algebraico con la media de diferencias.",
+      "explanation": "La fórmula clásica $d = \\frac{\\bar{D}}{SD}$ requiere la misma dimensionalidad. Dividir por varianza desajusta la estandarización fundamental."
+    },
+    {
+      "q": "Un error grave de cálculo en Wilcoxon es asignar rangos aditivos a los empates matemáticos nulos; esto causaría un desplazamiento engañoso generando __________.",
+      "options": [
+        "Falsos rechazos ",
+        "Falsas uniones  ",
+        "Falsos empates  "
+      ],
+      "correct": 0,
+      "hint": "Se infla el peso empírico de diferencias espurias.",
+      "explanation": "Los empates deben ser excluidos del rango. Incluirlos incrementa los estadísticos de suma sumaria, conduciendo a errores Tipo I."
+    },
+    {
+      "q": "La corrección paramétrica de Morris para medidas repetidas ajusta la razón matemática ponderando la dependencia para que la estimación poblacional no sea __________.",
+      "options": [
+        "Hiperinflada    ",
+        "Minimizada      ",
+        "Inobservada     "
+      ],
+      "correct": 0,
+      "hint": "El sesgo habitual sobreestima la magnitud verdadera sin ponderación.",
+      "explanation": "Al estar correlacionadas las medidas, el sesgo estándar incrementa falazmente $d$. Morris evita su sobreestimación."
+    },
+    {
+      "q": "Al verificar la normalidad de DIF, tipificar la puntuación restando medias y dividiendo entre varianza teórica en vez de la desviación causa __________.",
+      "options": [
+        "Colas espurias  ",
+        "Curvas planas   ",
+        "Falsos picos    "
+      ],
+      "correct": 0,
+      "hint": "La compresión asimétrica en las áreas extremas de la curva se acelera.",
+      "explanation": "Al usar el cuadrado en el denominador asintótico, los valores tipificados se aglomeran incorrectamente alterando las regiones críticas de rechazo."
+    },
+    {
+      "q": "Si se agrupan las desviaciones en una desviación pooled independiente en lugar de calcular la diferencia pre-post intragrupo, se asume algorítmicamente una falsa __________.",
+      "options": [
+        "Independencia   ",
+        "Colinealidad    ",
+        "Ortogonalidad   "
+      ],
+      "correct": 0,
+      "hint": "Niega el principio mismo de 'medidas repetidas'.",
+      "explanation": "La prueba t dependiente utiliza varianza de las diferencias. El cálculo 'pooled' pertenece a medidas independientes, eliminando el emparejamiento."
+    },
+    {
+      "q": "Un IC al 95 por ciento establecido en (0.05, 2.34) rechaza la nula; si por error en las diferencias cruzadas el IC diera (-2.34, -0.05), entonces la hipótesis nula __________.",
+      "options": [
+        "Se mantendría   ",
+        "Se rechazaría   ",
+        "Se anularía     "
+      ],
+      "correct": 1,
+      "hint": "El cero sigue sin cruzar los márgenes absolutos.",
+      "explanation": "Mientras el intervalo resultante no capture el valor paramétrico cero, la diferencia se considera sistemáticamente significativa."
+    },
+    {
+      "q": "Si en lugar de calcular la distancia temporal de diferencias exactas se promedian ambos niveles aditivamente, la magnitud del efecto analítico temporal quedará __________.",
+      "options": [
+        "Neutralizada    ",
+        "Potenciada      ",
+        "Multiplicada    "
+      ],
+      "correct": 0,
+      "hint": "Se borra la noción matemática de 'cambio longitudinal'.",
+      "explanation": "El promedio estático elimina la métrica diferencial, destruyendo la posibilidad de evaluar oscilaciones en Wilcoxon y dependientes."
+    },
+    {
+      "q": "El algoritmo del estadístico t exige dividir por el error. Si se añade algebraicamente sumando en el denominador, el umbral probabilístico de la prueba perderá su __________.",
+      "options": [
+        "Estandarización ",
+        "Escala métrica  ",
+        "Significancia   "
+      ],
+      "correct": 1,
+      "hint": "La métrica t pierde su correspondencia con las distribuciones tabuladas.",
+      "explanation": "Cambiar operadores (sumar vs dividir) destruye la tipificación Student, provocando distancias sin sentido probabilístico."
+    },
+    {
+      "q": "El tamaño del efecto según Cohen excluye la raíz del muestreo. Si erróneamente se la multiplica cruzando parámetros, la magnitud devuelta se volvería dependiente __________.",
+      "options": [
+        "De la muestra   ",
+        "Del tratamiento ",
+        "Del estadístico "
+      ],
+      "correct": 0,
+      "hint": "La n de la recolección inflaría linealmente el resultado de Cohen.",
+      "explanation": "El estadístico de Cohen está diseñado para independizar la medida del tamaño del grupo investigado."
+    },
+    {
+      "q": "Al aproximar a la curva normal en Wilcoxon, si se resta la esperanza matemática en el cálculo en lugar de considerarla positivamente en la suma basal, el valor Z se volverá __________.",
+      "options": [
+        "Complementaria  ",
+        "Suplementaria   ",
+        "Idéntica a cero "
+      ],
+      "correct": 0,
+      "hint": "Generará una probabilidad asintótica inversa en el test paramétrico extendido.",
+      "explanation": "Los rangos con signo precisan ajustar $\\frac{W - \\mu_w}{\\sigma_w}$. El signo algorítmico invierte las colas evaluativas."
+    },
+    {
+      "q": "Al tipificar desviaciones residuales, si el denominador de Z erróneamente asume la covarianza empírica transversal en vez de la desviación, se mutarán las unidades a __________.",
+      "options": [
+        "Cuadráticas     ",
+        "Logarítmicas    ",
+        "Fraccionadas    "
+      ],
+      "correct": 0,
+      "hint": "La tipificación pierde la linealidad paramétrica estricta.",
+      "explanation": "Al usar la matriz covariante incorrecta en lugar de $SD$, se eleva la dimensionalidad a potencias no lineales."
+    },
+    {
+      "q": "Si el post-test exhibe matemáticamente una progresión multiplicativa respecto al pre-test, la evaluación clásica de diferencias netamente aditivas carecerá de __________.",
+      "options": [
+        "Homogeneidad    ",
+        "Linealidad      ",
+        "Simetría par    "
+      ],
+      "correct": 1,
+      "hint": "La resta asume modelos escalonados rectos.",
+      "explanation": "La prueba t dependiente evalúa distancias aritméticas lineales. Las progresiones multiplicativas exigen logaritmización previa."
+    },
+    {
+      "q": "En el resultado paramétrico, si la correlación temporal de las medidas asume un cero absoluto teórico, forzar el emparejamiento ocasionará una irrecuperable pérdida empírica de __________.",
+      "options": [
+        "Potencia estad. ",
+        "Varianza total  ",
+        "Errores tipo I  "
+      ],
+      "correct": 0,
+      "hint": "Se reducen los grados de libertad sin ninguna reducción en el ruido.",
+      "explanation": "El diseño emparejado cuesta $N-1 $ grados de libertad respecto a $ 2N-2$. Si no hay correlación compensatoria, disminuye radicalmente la potencia."
+    },
+    {
+      "q": "Cuando el p-valor asintótico bilateral es 0.08, si un investigador lo asume unidireccional erróneamente omitiendo la división, incrementará geométricamente el riesgo del error __________.",
+      "options": [
+        "Tipo II (Beta)  ",
+        "Tipo I (Alfa)   ",
+        "Tipo III (Gamma)"
+      ],
+      "correct": 0,
+      "hint": "Pierde la oportunidad de reconocer un fenómeno latente real.",
+      "explanation": "No dividir por dos el $p$-valor de dos colas para contrastes direccionales oculta efectos reales aumentando los falsos negativos."
+    },
+    {
+      "q": "Recodificar variables paramétricas puras en dicotómicas cerradas anula la varianza longitudinal, provocando que el divisor estándar en la prueba $t$ quede estadísticamente __________.",
+      "options": [
+        "Sobreestimado   ",
+        "Subestimado     ",
+        "Invariante      "
+      ],
+      "correct": 1,
+      "hint": "La restricción métrica aplasta la dispersión verdadera de las medias.",
+      "explanation": "Discretizar disminuye el rango de puntuaciones y la desviación típica temporal, subestimando gravemente el denominador del test paramétrico."
+    },
+    {
+      "q": "Durante la publicación, documentar un intervalo íntegramente negativo simultáneo a un parámetro $t$ marcadamente positivo revela en el software una innegable asimetría de __________.",
+      "options": [
+        "Signos básicos  ",
+        "Niveles de sig. ",
+        "Frecuencias Z   "
+      ],
+      "correct": 0,
+      "hint": "La aritmética central de las medias emparejadas requiere paridad.",
+      "explanation": "El signo de la prueba $t $ y los límites de su Intervalo de Confianza deben corresponder sistemáticamente a la dirección real de $\\bar{D}$."
+    },
+    {
+      "q": "Errores procedimentales críticos que distorsionan gravemente el valor crítico estandarizado del estadístico t dependiente en la evaluación metodológica:",
+      "options": [
+        "Restar desviaciones en vez de vari",
+        "Olvidar la raíz de N al dividir   ",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Ambos fallos comprometen directamente el denominador algorítmico del contraste paramétrico.",
+      "explanation": "La prueba paramétrica demanda la suma fraccionada de varianza y la raíz geométrica en el divisor del error."
+    },
+    {
+      "q": "Fallos aritméticos severos documentados que alteran de forma sustancial la correcta estimación matemática de la magnitud longitudinal del efecto Cohen:",
+      "options": [
+        "Dividir por el error estándar SE  ",
+        "No aplicar la corrección de Morris",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "El denominador debe medir ruido individual, y la dependencia debe calibrarse exhaustivamente.",
+      "explanation": "Dividir por $SE$ dispara a un falso infinito, y la correlación empírica en dependencia exige el ajuste propuesto por Morris 2008."
+    },
+    {
+      "q": "Consecuencias analíticas directas ocasionadas por violar severamente el estricto supuesto paramétrico de normalidad en la resta de ambas mediciones temporales:",
+      "options": [
+        "Incrementa el riesgo de error beta",
+        "Desvía la estimación del valor p  ",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "La asimetría en diferencias debilita el área bajo la curva probabilística en colas extremas.",
+      "explanation": "La pérdida del supuesto central imposibilita confiar en los valores asintóticos y oculta empíricamente diferencias sutiles."
+    },
+    {
+      "q": "Efectos derivados matemáticamente de calcular de manera equivocada los límites teóricos para el intervalo de confianza al 95 por ciento de la media restada:",
+      "options": [
+        "El límite superior resulta sesgado",
+        "La retención de nula puede variar ",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "El error estándar proyecta simétricamente el área de la nulidad poblacional en torno a medias.",
+      "explanation": "Cualquier desviación en el sumatorio del $SE $ muta los márgenes asintóticos del intervalo y la conclusión teórica de $ H_0$."
+    },
+    {
+      "q": "Repercusiones procedimentales derivadas de omitir deliberadamente el control absoluto de casos atípicos extremos (outliers espurios) sobre la variable diferencial:",
+      "options": [
+        "La media aritmética se ve afectada",
+        "La varianza temporal se contamina ",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Los valores extremos ejercen máxima palanca geométrica sobre las curvas Gaussianas elementales.",
+      "explanation": "Al no filtrar atípicos, estos desplazan artificialmente el centroide de la variable y sobredimensionan espuriamente las colas de la varianza."
+    },
+    {
+      "q": "Criterios estadísticos concluyentes que fuerzan irrefutablemente la transición analítica inmediata hacia la alternativa de estimación de rangos con signo de Wilcoxon:",
+      "options": [
+        "Contraste de asimetría Z elevado  ",
+        "Test de Shapiro-Wilk significativo",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Significación previa de nulidad y extremas desviaciones colapsan el uso empírico del Test t.",
+      "explanation": "Un Shapiro significativo o puntuaciones asimétricas distorsionadas reflejan un grave alejamiento gaussiano impidiendo el test estándar."
+    },
+    {
+      "q": "Anomalías analíticas desencadenadas en software estadísticos si los empates pre-post son codificados torpemente como meras ausencias absolutas de datos computables:",
+      "options": [
+        "La mediana de las diferencias baja",
+        "Los rangos positivos se penalizan ",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Desaparecer casos neutros distorsiona severamente el balance sumatorio del contraste ordinal en las pruebas.",
+      "explanation": "Excluir casos válidos empíricos reduce el N total analizado y altera completamente la métrica asintótica sumatoria en Wilcoxon."
+    },
+    {
+      "q": "Comportamiento estrictamente esperado y estandarizado del modelo probabilístico bajo una hipótesis condicional alternativa paramétrica completamente confirmada verdadera:",
+      "options": [
+        "El intervalo no incluirá el cero  ",
+        "El valor de p caerá bajo el umbral",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se manifiesta explícitamente en el p-valor empírico y en los márgenes calculados por Intervalo de Confianza.",
+      "explanation": "Para $H_1 $, la probabilidad de $ H_0 $ desciende de $\\alpha$ establecido y el intervalo expulsa matemáticamente a la nulidad."
+    },
+    {
+      "q": "Distorsiones algorítmicas catastróficas inducidas si el analista introduce el tamaño muestral puro en vez de los grados de libertad restados en las tablas tipificadas:",
+      "options": [
+        "El valor crítico de t se reduce   ",
+        "Aumenta la probabilidad alfa falsa",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Usar mayor parámetro de libertad relaja artificialmente la exigencia crítica de colas en el test.",
+      "explanation": "El incremento espurio en grados de libertad estrecha ficticiamente la campana y favorece decisiones nulas de falso rechazo constante."
+    },
+    {
+      "q": "Desajustes y aberraciones matemáticas sistemáticas originadas al intentar generar la métrica transversal restando logaritmos en vez de puntuaciones temporales continuas:",
+      "options": [
+        "Representa un ratio, no un delta  ",
+        "Altera los supuestos paramétricos ",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "La resta paramétrica en bases exponenciales encubre cocientes intrínsecos de alta no-linealidad dimensional en estadística.",
+      "explanation": "$\\ln(a) - \\ln(b)$ converge analíticamente al cociente $\\ln(\\frac{a}{b})$, destruyendo las reglas métricas y teóricas aditivas originales."
+    },
+    {
+      "q": "Consecuencia matemática irresoluble de elevar al cuadrado escalarmente la diferencia aditiva introduciéndola de forma equívoca en el numerador estricto del parámetro t:",
+      "options": [
+        "Normaliza la distribución de colas   ",
+        "Ajusta la asimetría por Morris 2008  ",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "El uso de cuadráticas puras en numeradores t rompe completamente el balance paramétrico dimensional.",
+      "explanation": "El elevar al cuadrado generaría un falso ratio $\\frac{\\bar{D}^2}{SE}$, aproximándose a esquemas no tipificados de asimetría inmanejable."
+    },
+    {
+      "q": "Resultado inferencial final si se suman los exponentes exponenciales de las varianzas en vez de extraer adecuadamente la desviación base requerida teóricamente en colas:",
+      "options": [
+        "El error típico colapsará a un cero  ",
+        "La variabilidad se vuelve negativa   ",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Modificar los grados exponenciales dispara multiplicativamente los factores numéricos al caos no representativo de la escala real.",
+      "explanation": "La varianza tiene métrica cuadrática. Sumar bases exponenciales rompe toda correlación escalar provocando denominadores estratosféricos y falsas estabilidades nulas."
+    },
+    {
+      "q": "Interpretación metodológica forzosa si el tamaño empírico de las intervenciones se evalúa sistemáticamente dividiendo las medias emparejadas por la métrica de varianza:",
+      "options": [
+        "Se obtiene la magnitud estandarizada ",
+        "La corrección de Hedges lo arregla   ",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Confundir varianzas cuadráticas con desviaciones directas no normaliza la diferencia en efecto.",
+      "explanation": "Dividir entre la varianza produce medidas no interpretables, pues las métricas numéricas del factor no coinciden algebraicamente con el numerador bruto."
+    },
+    {
+      "q": "Impacto analítico comprobado y pernicioso derivado de computar asintóticamente con muestras absolutas emparejadas N en lugar de deducir el grado único exigido de libertad:",
+      "options": [
+        "La probabilidad de error beta sube   ",
+        "La prueba pierde poder paramétrico   ",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Evitar penalizar el tamaño de la prueba sesga falsamente las garantías críticas hacia resultados menores en t.",
+      "explanation": "Asumir $N$ total reduce el factor crítico tipificado, inflando inaceptablemente falsos positivos o errores Alfa generalizados."
+    },
+    {
+      "q": "Efecto subyacente sobre el cálculo diferencial paramétrico puro si el usuario decidiera caprichosamente multiplicar todos los errores típicos del divisor por un factor de cero:",
+      "options": [
+        "El valor absoluto del test no muta   ",
+        "Wilcoxon corregirá las desviaciones  ",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "La anulación deliberada de divisores fraccionarios desencadena catástrofes algorítmicas computacionales en el denominador.",
+      "explanation": "Un factor probabilístico de cero en el denominador provoca determinaciones algebraicamente indefinidas, colapsando matemáticamente todo el análisis software."
+    },
+    {
+      "q": "Impacto deductivo grave emanado de leer forzosamente el estadístico normativo W en Shapiro-Wilk como si se tratara del contraste de medias dependientes Studentizado final:",
+      "options": [
+        "Valida la homocedasticidad cruzada   ",
+        "Garantiza el éxito del tratamiento   ",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Las pruebas de bondad de ajuste distribucional carecen de correspondencia directa sobre distancias direccionales analizadas.",
+      "explanation": "Shapiro solo detecta alejamiento Gaussiano interno. Usarlo como proxy direccional representa un fallo conceptual garrafal sobre eficacia real empírica."
+    },
+    {
+      "q": "En el hipotético suceso de que la matriz de correlación temporal cruzada sea de anulación estricta y las desviaciones se igualen uniformemente, el ratio estandarizado tenderá:",
+      "options": [
+        "Exponencialmente hiper-desarrollado  ",
+        "Igual al límite superior asintótico  ",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "La varianza de las diferencias suma ambas fuentes sin la reducción protectora del doble de su dependencia mixta.",
+      "explanation": "A correlación cero, la varianza diferencial se maximiza algebraicamente, penalizando dramáticamente el valor asintótico del test y desplomando su tamaño empírico."
+    },
+    {
+      "q": "Al interpretar computacionalmente de forma rudimentaria un reporte probabilístico idéntico a una base fija no considerando factores de colas adyacentes requeridas teóricamente:",
+      "options": [
+        "Rechazamos la hipótesis nula fuerte  ",
+        "Aceptamos la alternativa sin dudar   ",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "La exactitud estricta en el p-valor bordea ambiguamente umbrales de decisión no resueltos algorítmicamente en la estadística asintótica base.",
+      "explanation": "Un límite p estricto asume empate teórico bajo el error fijado empíricamente, no forzando dictámenes directos sin considerar tamaño y colas residuales de error."
+    },
+    {
+      "q": "La eventualidad metodológica implícita de aplicar caprichosamente métodos asintóticos paramétricos carentes de reajustes en poblaciones extremas temporalmente ínfimas provoca:",
+      "options": [
+        "Los grados de libertad se duplican   ",
+        "Evalúa los empates con mayor rigor   ",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Pequeños tamaños poblacionales desafían abiertamente las previsiones de la normalidad asintótica del teorema central límite original.",
+      "explanation": "La prueba paramétrica pierde poder demostrativo asintótico, invalidando las proyecciones gaussianas del estadístico base sumatorio y sus márgenes tipificados."
     },
     {
       "q": "¿Es correcto afirmar que el análisis de varianza (ANOVA) unifactorial de medidas independientes puede utilizarse para comparar las medias de solamente dos grupos experimentales?",
