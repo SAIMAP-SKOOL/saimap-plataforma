@@ -1,0 +1,1730 @@
+{
+  "jsonTestA": [
+    {
+      "q": "¿Es correcto afirmar que la validez es una propiedad psicométrica inherente al instrumento?",
+      "options": [
+        "Sí, pues mide la calidad estructural de los reactivos.",
+        "No, pues lo que se valida son las inferencias realizadas.",
+        "No se puede determinar sin conocer el coeficiente $\\alpha$."
+      ],
+      "correct": 1,
+      "hint": "Considera el cambio de paradigma hacia el enfoque unitario y funcional.",
+      "explanation": "Desde la perspectiva moderna, la validez no es una propiedad del test en sí, sino del grado en que las evidencias sustentan la interpretación de las puntuaciones para un uso específico."
+    },
+    {
+      "q": "¿Es posible encontrar un test con alta validez pero con una baja fiabilidad?",
+      "options": [
+        "Verdadero, pues son propiedades totalmente autónomas.",
+        "Falso, la fiabilidad es condición necesaria de la validez.",
+        "No se puede determinar sin el error típico de medida."
+      ],
+      "correct": 1,
+      "hint": "Recuerda la analogía de la diana y la estabilidad de las medidas.",
+      "explanation": "La fiabilidad establece el límite superior de la validez; un test no puede medir aquello que pretende si las medidas no son consistentes."
+    },
+    {
+      "q": "¿La red nomológica es un sistema de leyes interconectadas para validar constructos?",
+      "options": [
+        "Verdadero, permite formular hipótesis de relación empírica.",
+        "Falso, es un concepto aplicado solo a la validez aparente.",
+        "No se puede determinar sin un análisis factorial previo."
+      ],
+      "correct": 0,
+      "hint": "Fue propuesto por Cronbach y Meehl en 1955.",
+      "explanation": "La red nomológica define el marco teórico del constructo y sus relaciones con otras variables observables y latentes."
+    },
+    {
+      "q": "¿El proceso de validación de un test se considera un procedimiento finito y definitivo?",
+      "options": [
+        "Verdadero, concluye con el cálculo del coeficiente final.",
+        "Falso, es un proceso abierto a nuevas evidencias empíricas.",
+        "No se puede determinar sin la revisión de pares externos."
+      ],
+      "correct": 1,
+      "hint": "La ciencia es acumulativa y los contextos de aplicación varían.",
+      "explanation": "La validación es un proceso continuo que nunca termina, ya que siempre pueden surgir nuevas evidencias que refuercen o cuestionen las inferencias."
+    },
+    {
+      "q": "¿La validez de contenido se basa estrictamente en el análisis de representatividad?",
+      "options": [
+        "Verdadero, valora la adecuación muestral de los reactivos.",
+        "Falso, requiere obligatoriamente una medida de criterio externo.",
+        "No se puede determinar sin aplicar la fórmula de Spearman."
+      ],
+      "correct": 0,
+      "hint": "Se centra en el dominio o campo de interés del constructo.",
+      "explanation": "Su propósito es valorar si los ítems constituyen una muestra representativa del dominio conductual que se pretende medir."
+    },
+    {
+      "q": "¿El coeficiente de correlación de Spearman es apto para variables de escala métrica?",
+      "options": [
+        "Verdadero, es el estándar para medidas de razón e intervalo.",
+        "Falso, su uso está restringido a variables de tipo ordinal.",
+        "No se puede determinar sin normalidad en la distribución."
+      ],
+      "correct": 1,
+      "hint": "Se basa en el orden de los rangos de los sujetos.",
+      "explanation": "Spearman es la versión no paramétrica de Pearson, diseñada específicamente para datos en escala ordinal o rangos."
+    },
+    {
+      "q": "¿La validez concurrente implica que el test y el criterio se miden simultáneamente?",
+      "options": [
+        "Verdadero, ambas puntuaciones se obtienen en el mismo tiempo.",
+        "Falso, el criterio debe medirse siempre con un retraso temporal.",
+        "No se puede determinar sin conocer la varianza del criterio."
+      ],
+      "correct": 0,
+      "hint": "Difiere de la predictiva principalmente en el momento de la medida.",
+      "explanation": "En la validez concurrente, la medida del predictor y del criterio son coetáneas, facilitando la estimación inmediata del estado del sujeto."
+    },
+    {
+      "q": "¿La sensibilidad se maximiza cuando el test no clasifica ningún falso negativo?",
+      "options": [
+        "Verdadero, indica la capacidad de detectar casos positivos reales.",
+        "Falso, la sensibilidad depende exclusivamente de los aciertos.",
+        "No se puede determinar sin el valor de la especificidad."
+      ],
+      "correct": 0,
+      "hint": "Revisa la fórmula $S = \\frac{a}{a+c}$ en la tabla de decisión.",
+      "explanation": "Un test es 100% sensible si detecta a todos los enfermos o casos positivos, lo que implica que el valor de 'c' (falsos negativos) es cero."
+    },
+    {
+      "q": "¿El índice $\\kappa$ de Cohen permite controlar los aciertos debidos al azar?",
+      "options": [
+        "Verdadero, ajusta la concordancia observada según la aleatoria.",
+        "Falso, es un coeficiente de correlación simple entre rangos.",
+        "No se puede determinar sin una muestra superior a cien."
+      ],
+      "correct": 0,
+      "hint": "Es fundamental en el estudio de la fiabilidad interjueces y decisión.",
+      "explanation": "El índice $\\kappa$ corrige la proporción de acuerdos observados restando la proporción esperada por azar, oscilando entre $-1$ y $+1$."
+    },
+    {
+      "q": "¿El análisis factorial confirmatorio requiere una hipótesis estructural previa?",
+      "options": [
+        "Verdadero, contrasta un modelo teórico contra los datos.",
+        "Falso, es una técnica puramente descriptiva y no supervisada.",
+        "No se puede determinar sin el cálculo de las saturaciones."
+      ],
+      "correct": 0,
+      "hint": "Se diferencia del exploratorio en el control del investigador.",
+      "explanation": "A diferencia del exploratorio, el confirmatorio pone a prueba si una estructura factorial predefinida se ajusta a la matriz de datos real."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre las Normas APA/AERA/NCME de 1999:",
+      "options": [
+        "Eliminan el concepto unitario de validez de las normas previas.",
+        "Sustituyen los tipos de validez por fuentes de evidencia.",
+        "Introducen la validez aparente como una fuente fundamental."
+      ],
+      "correct": 1,
+      "hint": "Se centran en la interpretación y no en el test per se.",
+      "explanation": "Las normas de 1999 consolidan la idea de que no hay 'tipos' de validez, sino diferentes evidencias que apoyan una interpretación única."
+    },
+    {
+      "q": "Sobre el coeficiente de correlación biserial puntual ($r_{bp}$), es correcto que:",
+      "options": [
+        "Se aplica cuando ambas variables han sido dicotomizadas.",
+        "Es matemáticamente equivalente al coeficiente de Pearson.",
+        "Requiere que la variable dicotómica provenga de una continua."
+      ],
+      "correct": 1,
+      "hint": "Se utiliza para la relación entre una métrica y una dicotómica real.",
+      "explanation": "El $r_{bp}$ es una simplificación de Pearson para cuando una variable es dicotómica natural ($0, 1$), manteniendo sus propiedades matemáticas."
+    },
+    {
+      "q": "En el cálculo del índice de Hambleton para validez de contenido, es cierto que:",
+      "options": [
+        "Se basa exclusivamente en la opinión de los evaluados.",
+        "Utiliza una escala de cinco puntos para valorar el ajuste.",
+        "Requiere una correlación bivariada entre los ítems y el test."
+      ],
+      "correct": 1,
+      "hint": "Es un procedimiento cuantitativo para jueces expertos.",
+      "explanation": "Hambleton propone que los expertos califiquen el emparejamiento ítem-objetivo del 1 (mal ajuste) al 5 (ajuste excelente)."
+    },
+    {
+      "q": "Respecto a la validez de decisión y el Valor Predictivo Negativo (VPN):",
+      "options": [
+        "Es la proporción de verdaderos negativos entre todos los negativos.",
+        "Calcula la probabilidad de ser positivo si el test da negativo.",
+        "Su valor máximo se alcanza al eliminar todos los falsos positivos."
+      ],
+      "correct": 0,
+      "hint": "Fórmula: $VPN = \\frac{d}{c+d}$.",
+      "explanation": "El VPN indica la probabilidad de que un sujeto sea realmente negativo dado que el test lo clasificó como tal en la muestra."
+    },
+    {
+      "q": "Sobre el concepto de estructura simple de Thurstone, es correcto afirmar que:",
+      "options": [
+        "Cada ítem debe saturar de forma significativa en todos los factores.",
+        "Cada factor debe presentar pocos pesos altos y los demás bajos.",
+        "Los factores deben tener distribuciones de pesos casi idénticas."
+      ],
+      "correct": 1,
+      "hint": "Busca la parsimonia y la interpretabilidad de la matriz factorial.",
+      "explanation": "La estructura simple persigue que cada ítem sea un indicador claro de un solo factor, facilitando la identificación teórica del rasgo."
+    },
+    {
+      "q": "En el modelo multirrasgo-multimétodo (MTMM), la validez convergente se da si:",
+      "options": [
+        "Existen altas correlaciones monorrasgo-heterométodo en la matriz.",
+        "Hay bajas correlaciones heterorrasgo-monométodo entre los test.",
+        "Las correlaciones monorrasgo-monométodo son cercanas a cero."
+      ],
+      "correct": 0,
+      "hint": "Implica que distintos métodos coinciden al medir el mismo rasgo.",
+      "explanation": "La validez convergente se evidencia cuando medidas del mismo constructo obtenidas con métodos diferentes correlacionan altamente."
+    },
+    {
+      "q": "El coeficiente de correlación tetracórico se caracteriza correctamente por:",
+      "options": [
+        "Ser aplicable entre una variable métrica y una dicotomizada.",
+        "Asumir que las variables dicotomizadas siguen una curva normal.",
+        "Proporcionar siempre valores inferiores al coeficiente $\\phi$."
+      ],
+      "correct": 1,
+      "hint": "Es una estimación de la relación entre variables latentes continuas.",
+      "explanation": "El coeficiente tetracórico estima la correlación de Pearson que existiría si las variables no hubieran sido dicotomizadas, asumiendo normalidad."
+    },
+    {
+      "q": "Señale la afirmación correcta sobre la validez de constructo según Messick:",
+      "options": [
+        "Es un aspecto secundario frente a la validez de criterio clínico.",
+        "Integra todas las evidencias de validez en un concepto holístico.",
+        "Se limita exclusivamente al análisis de la validez factorial."
+      ],
+      "correct": 1,
+      "hint": "Considera la validez como un juicio evaluativo unitario.",
+      "explanation": "Para Messick y la psicometría moderna, toda validación es, en última instancia, validación de constructo."
+    },
+    {
+      "q": "Respecto a la relación entre la validez predictiva y la concurrente:",
+      "options": [
+        "La concurrente suele subestimar el valor de la predictiva.",
+        "Ambas se engloban hoy bajo evidencias relativas al criterio.",
+        "Son independientes y requieren constructos teóricos distintos."
+      ],
+      "correct": 1,
+      "hint": "Revisa las unificaciones propuestas por Cronbach y Meehl (1955).",
+      "explanation": "Históricamente se separaban, pero actualmente se consideran dos facetas de la evidencia de relación con variables externas (criterio)."
+    },
+    {
+      "q": "En el análisis de ítems para validez de contenido, la claridad se define como:",
+      "options": [
+        "La posibilidad de que el ítem sea interpretado de diversas formas.",
+        "La capacidad de precisión y concisión en la redacción del ítem.",
+        "El grado en que el evaluado reconoce la utilidad del test."
+      ],
+      "correct": 1,
+      "hint": "Es un criterio formal previo a la aplicación empírica.",
+      "explanation": "La claridad técnica asegura que el reactivo no sea ambiguo y que su lectura sea directa para todos los examinados."
+    },
+    {
+      "q": "Es correcto afirmar sobre el coeficiente de correlación biserial ($r_b$) que:",
+      "options": [
+        "Es un estimador equivalente al coeficiente de Pearson.",
+        "Puede tomar valores superiores a uno en distribuciones bimodales.",
+        "Se utiliza cuando la variable cualitativa es dicotómica real."
+      ],
+      "correct": 1,
+      "hint": "Su cálculo depende de la ordenada 'y' de la curva normal.",
+      "explanation": "Si la distribución no es normal (platicúrtica o bimodal), el cálculo del $r_b$ puede producir resultados fuera del rango $[-1, 1]$."
+    },
+    {
+      "q": "Sobre la validez retrospectiva, se puede afirmar correctamente que:",
+      "options": [
+        "Es el procedimiento más recomendado por su rigor temporal.",
+        "Se mide el criterio antes de la administración del predictor.",
+        "Garantiza una predicción exacta de la conducta futura del sujeto."
+      ],
+      "correct": 1,
+      "hint": "Es un diseño invertido respecto a la lógica predictiva habitual.",
+      "explanation": "En este diseño, ya se dispone de la medida del criterio (ej. diagnóstico previo) y se aplica el test para ver si coincide."
+    },
+    {
+      "q": "La especificidad de un test diagnóstico se define correctamente como:",
+      "options": [
+        "La proporción de aciertos sobre el total de casos positivos.",
+        "La proporción de negativos reales clasificados como negativos.",
+        "La probabilidad de tener la enfermedad si el test es positivo."
+      ],
+      "correct": 1,
+      "hint": "Fórmula: $E = \\frac{d}{b+d}$.",
+      "explanation": "La especificidad mide la capacidad del test para descartar la presencia del rasgo o enfermedad en sujetos sanos."
+    },
+    {
+      "q": "En el análisis factorial, una saturación o peso factorial se interpreta como:",
+      "options": [
+        "La varianza total del factor explicada por todos los ítems.",
+        "La correlación lineal existente entre un ítem y un factor.",
+        "El error de medida asociado a la dimensión latente analizada."
+      ],
+      "correct": 1,
+      "hint": "Es la carga que vincula la variable observada con la latente.",
+      "explanation": "Las saturaciones indican cuánto contribuye cada ítem a la definición del factor; valores altos sugieren mayor vinculación."
+    },
+    {
+      "q": "Respecto a la validez lógica o de muestreo, es correcto que:",
+      "options": [
+        "Se centra en la utilidad percibida por el propio evaluado.",
+        "Analiza la infra o sobrerrepresentación de facetas del dominio.",
+        "Es un cálculo basado en la matriz multirrasgo-multimétodo."
+      ],
+      "correct": 1,
+      "hint": "Es una subdivisión técnica de la validez de contenido.",
+      "explanation": "Busca asegurar que el test cubra proporcionalmente todas las áreas relevantes del constructo sin sesgos de muestreo."
+    },
+    {
+      "q": "Seleccione la afirmación incorrecta sobre el concepto unitario de validez:",
+      "options": [
+        "La validez de constructo es el núcleo que engloba a las demás.",
+        "Se valida el instrumento en sí mismo y no sus interpretaciones.",
+        "La validación del test y de la teoría son procesos simultáneos."
+      ],
+      "correct": 1,
+      "hint": "Revisa los puntos críticos de Cronbach y Meehl (1955).",
+      "explanation": "Es incorrecto decir que se valida el test; la psicometría moderna sostiene que se validan las inferencias derivadas de las puntuaciones."
+    },
+    {
+      "q": "Es incorrecto afirmar sobre la validez de contenido que:",
+      "options": [
+        "Exige un conocimiento perfecto sobre el objetivo de la medida.",
+        "Se establece a través de un análisis racional hecho por expertos.",
+        "Es el método principal para predecir el éxito laboral futuro."
+      ],
+      "correct": 2,
+      "hint": "La predicción es dominio de otro tipo de evidencia.",
+      "explanation": "La predicción del éxito futuro corresponde a la validez de criterio, no a la de contenido, que es descriptiva del dominio."
+    },
+    {
+      "q": "Sobre el coeficiente $\\phi$ (phi), señale la afirmación incorrecta:",
+      "options": [
+        "Se utiliza cuando ambas variables son de naturaleza dicotómica.",
+        "Es equivalente a aplicar Pearson sobre datos codificados 0/1.",
+        "Es el coeficiente óptimo para variables métricas normalizadas."
+      ],
+      "correct": 2,
+      "hint": "Para variables métricas se utiliza otro coeficiente estándar.",
+      "explanation": "Es falso que sea para variables métricas; para ellas se usa Pearson directamente. $\\phi$ es para tablas de contingencia $2\\times2$."
+    },
+    {
+      "q": "Señale la afirmación incorrecta respecto a la validez discriminante:",
+      "options": [
+        "Requiere que los rasgos analizados sean teóricamente afines.",
+        "Se evidencia con bajos valores heterorrasgo-monométodo.",
+        "Asegura que el test no mide constructos ajenos al pretendido."
+      ],
+      "correct": 0,
+      "hint": "Si los rasgos fueran afines, se esperaría una correlación alta.",
+      "explanation": "La validez discriminante requiere que los rasgos sean teóricamente independientes (baja correlación) para demostrar que el test diferencia bien."
+    },
+    {
+      "q": "Sobre el análisis factorial exploratorio, es incorrecto que:",
+      "options": [
+        "Permite reducir la dimensionalidad de un conjunto de ítems.",
+        "Su éxito depende de las intercorrelaciones entre las variables.",
+        "Obliga a los ítems a saturar en factores fijados de antemano."
+      ],
+      "correct": 2,
+      "hint": "Esa rigidez es propia del análisis confirmatorio.",
+      "explanation": "En el exploratorio, la técnica 'busca' la mejor agrupación sin restricciones previas; no fija los factores a priori."
+    },
+    {
+      "q": "Es incorrecto sobre el efecto de sesgo por el método en la matriz MTMM:",
+      "options": [
+        "Se sospecha si los valores heterorrasgo-monométodo son altos.",
+        "Indica que el procedimiento de medida influye en los resultados.",
+        "Ocurre cuando la validez convergente es menor que la fiabilidad."
+      ],
+      "correct": 2,
+      "hint": "El sesgo de método se relaciona con la discriminación entre rasgos.",
+      "explanation": "La baja validez convergente no indica sesgo de método per se; este se detecta cuando el método correlaciona más que el propio rasgo."
+    },
+    {
+      "q": "Señale la afirmación incorrecta sobre la sensibilidad y especificidad:",
+      "options": [
+        "Son indicadores de la capacidad de clasificación del test.",
+        "Ambas alcanzan su valor máximo cuando no hay falsos positivos.",
+        "Dependen de un punto de corte establecido en la escala del test."
+      ],
+      "correct": 1,
+      "hint": "Cada indicador se ve afectado por un tipo de error distinto.",
+      "explanation": "La sensibilidad se ve afectada por falsos negativos ($c$), mientras que la especificidad se ve afectada por falsos positivos ($b$)."
+    },
+    {
+      "q": "Respecto a los criterios de validación, es incorrecto afirmar que:",
+      "options": [
+        "Cualquier variable puede ser criterio sin necesidad de teoría.",
+        "Deben estar muy bien fundamentados y libres de dudas técnicas.",
+        "Si el criterio falla, no se puede concluir nada sobre el test."
+      ],
+      "correct": 0,
+      "hint": "La selección del criterio es un paso crítico y racional.",
+      "explanation": "Es falso que no necesiten teoría; la relación test-criterio debe estar sustentada por una hipótesis teórica fuerte para tener sentido."
+    },
+    {
+      "q": "Sobre la validez aparente, señale la afirmación incorrecta:",
+      "options": [
+        "Se refiere a si el test parece medir lo que dice medir.",
+        "Es un requisito técnico imprescindible para la validez de constructo.",
+        "A veces conviene que el test carezca de ella para evitar sesgos."
+      ],
+      "correct": 1,
+      "hint": "A veces es un estorbo para la sinceridad del evaluado.",
+      "explanation": "No es un requisito técnico; un test puede ser muy válido sin que el sujeto sepa qué se está midiendo (test disfrazado)."
+    },
+    {
+      "q": "Señale la afirmación incorrecta sobre el índice de congruencia de ítems:",
+      "options": [
+        "Requiere el cálculo de la media de jueces para cada objetivo.",
+        "Valores cercanos a cero indican un ajuste excelente del ítem.",
+        "Es una técnica cuantitativa dentro de la validez de contenido."
+      ],
+      "correct": 1,
+      "hint": "Los índices de ajuste suelen ser positivos y altos para ser buenos.",
+      "explanation": "Valores bajos indican mal ajuste; para que el ítem sea válido debe tener una congruencia alta con el objetivo evaluado."
+    },
+    {
+      "q": "Sobre el solapamiento en el análisis factorial, es incorrecto que:",
+      "options": [
+        "Ocurre cuando un ítem satura en varios factores a la vez.",
+        "Es una característica deseable para lograr la estructura simple.",
+        "Pone en duda la claridad y validez del contenido del reactivo."
+      ],
+      "correct": 1,
+      "hint": "La estructura simple busca justamente evitar esto.",
+      "explanation": "El solapamiento es un problema psicométrico; la estructura simple exige que cada ítem pese en un único factor."
+    },
+    {
+      "q": "Es incorrecto afirmar sobre la validez de las consecuencias que:",
+      "options": [
+        "Analiza el impacto social y ético de la aplicación del test.",
+        "Sustituye la necesidad de obtener evidencias de contenido.",
+        "Es una de las fuentes de evidencia propuestas en las normas de 1999."
+      ],
+      "correct": 1,
+      "hint": "Es una fuente complementaria, no excluyente.",
+      "explanation": "La validez de consecuencias no invalida las otras fuentes; se suma a ellas en el marco del concepto unitario."
+    },
+    {
+      "q": "Señale la afirmación incorrecta sobre el coeficiente tetracórico ($r_t$):",
+      "options": [
+        "Se puede considerar como una corrección al alza de Pearson.",
+        "Su cálculo manual se basa en funciones trigonométricas (coseno).",
+        "Es el coeficiente ideal cuando la relación entre variables es no lineal."
+      ],
+      "correct": 2,
+      "hint": "Asume normalidad y linealidad en las variables latentes.",
+      "explanation": "El $r_t$ asume una relación lineal entre las variables continuas subyacentes; no es apto para relaciones no lineales complejas."
+    },
+    {
+      "q": "Respecto a la validación de constructo, es incorrecto afirmar que:",
+      "options": [
+        "Es un proceso exclusivamente empírico ajeno a la teoría.",
+        "Incluye fases de especificación de interrelaciones teóricas.",
+        "Utiliza modelos de ecuaciones estructurales como herramienta."
+      ],
+      "correct": 0,
+      "hint": "Es, por definición, el aspecto más teórico de la validez.",
+      "explanation": "La validez de constructo es profundamente teórica; no puede existir sin un marco conceptual que guíe la interpretación."
+    },
+    {
+      "q": "Sobre la relación entre fiabilidad y validez, es incorrecto que:",
+      "options": [
+        "Un test puede ser fiable pero no válido para un uso dado.",
+        "La validez es la propiedad más importante de un instrumento.",
+        "Basta con demostrar alta fiabilidad para garantizar la validez."
+      ],
+      "correct": 2,
+      "hint": "La consistencia no garantiza que midas lo que pretendes.",
+      "explanation": "La fiabilidad es necesaria pero no suficiente. Puedes medir algo con mucha precisión (fiable) pero que no sea lo que querías medir."
+    }
+  ],
+  "jsonTestB": [
+    {
+      "q": "La validez se define como el grado en que las puntuaciones de un test reflejan ____ aquello que pretenden medir.",
+      "options": [
+        "con total exactitud",
+        "con mucha precisión",
+        "el rasgo o conducta"
+      ],
+      "correct": 2,
+      "hint": "Considere la definición de validez como la pertinencia de las inferencias sobre el atributo.",
+      "explanation": "La validez es el grado en que las inferencias realizadas son adecuadas para medir el $$\\text{rasgo o conducta}$$ objetivo."
+    },
+    {
+      "q": "En el cálculo del índice de congruencia de Hambleton, el valor $N$ representa el número de ____ que se pretenden cubrir.",
+      "options": [
+        "ítems del test",
+        "jueces expertos",
+        "objetivos/áreas"
+      ],
+      "correct": 2,
+      "hint": "Se refiere a la extensión del dominio que el test intenta muestrear.",
+      "explanation": "En la $$\\text{Ecuación 39}$$, $N$ es el sumatorio de los objetivos o dimensiones del constructo."
+    },
+    {
+      "q": "Si un test tiene $a=8$ (Verdaderos Positivos) y $c=2$ (Falsos Negativos), su Sensibilidad ($S$) es igual a ____.",
+      "options": [
+        "0.8000",
+        "0.6154",
+        "0.2500"
+      ],
+      "correct": 0,
+      "hint": "Divida los aciertos positivos entre el total de casos positivos reales del criterio.",
+      "explanation": "$$S = \\frac{a}{a+c} = \\frac{8}{8+2} = 0.8000$$. Un error común es dividir por el total de la fila."
+    },
+    {
+      "q": "La proporción de clasificados correctamente como negativos sobre el total de negativos por el criterio es la ____.",
+      "options": [
+        "especificidad",
+        "sensibilidad ",
+        "exhaustividad"
+      ],
+      "correct": 0,
+      "hint": "Es la capacidad del test para descartar a los individuos que no presentan el rasgo.",
+      "explanation": "La $$\\text{Especificidad (E)}$$ se define como $$\\frac{d}{b+d}$$, donde $d$ son los verdaderos negativos."
+    },
+    {
+      "q": "Para $F_c = 23, F_o = 15.67$ y $N = 30$, el valor exacto del índice Kappa ($K$) es ____.",
+      "options": [
+        "0.5115",
+        "0.2443",
+        "0.7666"
+      ],
+      "correct": 0,
+      "hint": "Aplique la fórmula que resta el azar tanto al numerador como al denominador.",
+      "explanation": "$$K = \\frac{F_c - F_o}{N - F_o} = \\frac{23 - 15.67}{30 - 15.67} = \\frac{7.33}{14.33} \\approx 0.5115$$."
+    },
+    {
+      "q": "El coeficiente de correlación ____ se aplica cuando ambas variables son de naturaleza dicotómica.",
+      "options": [
+        "phi (\\phi)",
+        "tetracórico",
+        "de Spearman"
+      ],
+      "correct": 0,
+      "hint": "Es equivalente a aplicar Pearson directamente sobre datos codificados como 0 y 1.",
+      "explanation": "El coeficiente $$\\phi$$ es el estadístico de elección para matrices de contingencia $2 \\times 2$ puras."
+    },
+    {
+      "q": "En una matriz MTMM, los valores monorrasgo-heterométodo permiten obtener evidencias de validez ___.",
+      "options": [
+        "discriminante",
+        "convergente  ",
+        "de contenido "
+      ],
+      "correct": 1,
+      "hint": "Mismo rasgo evaluado con métodos distintos debería correlacionar alto.",
+      "explanation": "La convergencia se demuestra cuando diferentes métodos de medida coinciden al evaluar el mismo $$\\text{constructo}$$."
+    },
+    {
+      "q": "El coeficiente de correlación biserial puntual ($r_{bp}$) es analíticamente equivalente al coeficiente de ____.",
+      "options": [
+        "Spearman",
+        "Pearson ",
+        "Kappa   "
+      ],
+      "correct": 1,
+      "hint": "Piense en la relación entre una variable métrica y una dicotómica real.",
+      "explanation": "El $r_{bp}$ es una simplificación de la fórmula de $$\\text{Pearson}$$ para una variable continua y una dicotómica."
+    },
+    {
+      "q": "Si $ad > bc$ en una tabla de contingencia de variables dicotomizadas, el coeficiente tetracórico se calcula con ____.",
+      "options": [
+        "cos(180\\sqrt{ad}/...)",
+        "cos(180\\sqrt{bc}/...)",
+        "cos(90\\sqrt{bc}/...) "
+      ],
+      "correct": 1,
+      "hint": "Recuerde que el coseno utiliza la raíz del producto cruzado menor en el numerador.",
+      "explanation": "$$r_t = \\cos \\left( \\frac{180^{\\circ} \\sqrt{bc}}{\\sqrt{ad} + \\sqrt{bc}} \\right)$$. Error común: usar $ad$ arriba."
+    },
+    {
+      "q": "La validez de constructo se considera un concepto ____ que integra todas las demás evidencias de validez.",
+      "options": [
+        "fragmentado",
+        "secundario ",
+        "unitario   "
+      ],
+      "correct": 2,
+      "hint": "Propuesto por autores como Cronbach y Meehl en 1955.",
+      "explanation": "La visión moderna entiende la validez como un proceso $$\\text{unitario}$$ centrado en el constructo."
+    },
+    {
+      "q": "En el análisis factorial, el fenómeno donde un ítem pesa significativamente en dos factores se denomina ____.",
+      "options": [
+        "solapamiento",
+        "saturación  ",
+        "convergencia"
+      ],
+      "correct": 0,
+      "hint": "Este problema compromete la interpretación unívoca del ítem.",
+      "explanation": "El $$\\text{solapamiento}$$ ocurre cuando el contenido de un ítem es ambiguo respecto a las dimensiones factoriales."
+    },
+    {
+      "q": "El Valor Predictivo Positivo (VPP) se calcula como la razón entre verdaderos positivos y ____.",
+      "options": [
+        "total positivos test",
+        "total de la muestra",
+        "total positivos real"
+      ],
+      "correct": 0,
+      "hint": "Considere solo a los sujetos que el test identificó como positivos.",
+      "explanation": "$$VPP = \\frac{a}{a+b}$$. Se divide por la suma de aciertos y errores positivos del test."
+    },
+    {
+      "q": "Cuando se mide el predictor después de haber obtenido el criterio, hablamos de validez ___.",
+      "options": [
+        "retrospectiva",
+        "concurrente ",
+        "predictiva  "
+      ],
+      "correct": 0,
+      "hint": "Es el procedimiento menos recomendado por invertir la lógica temporal del pronóstico.",
+      "explanation": "La validez $$\\text{retrospectiva}$$ analiza datos pasados, lo que puede sesgar la interpretación del test."
+    },
+    {
+      "q": "Un factor o variable latente es una variable ____ que agrupa variables observadas (ítems).",
+      "options": [
+        "empírica ",
+        "hipotética",
+        "constante "
+      ],
+      "correct": 1,
+      "hint": "No se mide directamente, sino que se infiere a partir de las correlaciones.",
+      "explanation": "Los factores son constructos $$\\text{hipotéticos}$$ derivados de la reducción de la dimensionalidad."
+    },
+    {
+      "q": "Si $m_p = 12, m_x = 10, S_x = 2, p = 0.5$ y $q = 0.5$, el $r_{bp}$ resultante es exactamente ____.",
+      "options": [
+        "1.0000",
+        "0.5000",
+        "2.0000"
+      ],
+      "correct": 0,
+      "hint": "Calcule la diferencia de medias, divida por la desviación y multiplique por la raíz de la proporción.",
+      "explanation": "$$r_{bp} = \\frac{12-10}{2} \\sqrt{\\frac{0.5}{0.5}} = 1 \\cdot 1 = 1.0000$$. Correlación perfecta."
+    },
+    {
+      "q": "La evidencia de validez basada en el proceso de respuesta fue introducida formalmente en las normas de ____.",
+      "options": [
+        "APA 1985",
+        "APA 1999",
+        "APA 1954"
+      ],
+      "correct": 1,
+      "hint": "Es una de las cinco fuentes de evidencia de la versión más moderna citada en el texto.",
+      "explanation": "Las normas de $$\\text{1999}$$ ampliaron los tipos de evidencia, incluyendo las consecuencias y procesos de respuesta."
+    },
+    {
+      "q": "En una estructura simple de Thurstone, cada ítem debe pesar de forma significativa en ____.",
+      "options": [
+        "varios factores",
+        "un único factor",
+        "ningún factor "
+      ],
+      "correct": 1,
+      "hint": "Busca la máxima parsimonia y claridad en la interpretación de los factores.",
+      "explanation": "La $$\\text{estructura simple}$$ exige que cada variable observada sea explicada por una sola dimensión latente."
+    },
+    {
+      "q": "El coeficiente de Spearman se utiliza para calcular la validez cuando las variables son ____.",
+      "options": [
+        "nominales",
+        "ordinales ",
+        "métricas  "
+      ],
+      "correct": 1,
+      "hint": "Se basa en el orden de los sujetos (rangos) en lugar de en sus puntuaciones directas.",
+      "explanation": "Spearman es la alternativa no paramétrica a Pearson para escalas de $$\\text{orden o rango}$$."
+    },
+    {
+      "q": "Si $d=15$ y $c=2$, el Valor Predictivo Negativo (VPN) es aproximadamente ____.",
+      "options": [
+        "0.8824",
+        "0.1176",
+        "0.7500"
+      ],
+      "correct": 0,
+      "hint": "Divida los verdaderos negativos entre la suma de verdaderos negativos y falsos negativos.",
+      "explanation": "$$VPN = \\frac{d}{c+d} = \\frac{15}{2+15} = \\frac{15}{17} \\approx 0.8824$$."
+    },
+    {
+      "q": "La red ____ es un sistema de leyes interconectadas que definen un constructo según Cronbach y Meehl.",
+      "options": [
+        "nomotética",
+        "nomológica",
+        "semántica "
+      ],
+      "correct": 1,
+      "hint": "Se refiere al marco teórico que permite formular hipótesis contrastables.",
+      "explanation": "La red $$\\text{nomológica}$$ vincula el constructo con otras variables dentro de una teoría científica."
+    },
+    {
+      "q": "Señale la opción correcta sobre las características de la validez según Cronbach y Meehl (1955):",
+      "options": [
+        "Es un concepto unitario centrado en el constructo.",
+        "Utiliza el método científico para su evaluación.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Revise los puntos 'a', 'b' y 'c' de la postura mantenida por estos autores.",
+      "explanation": "La validez es $$\\text{unitaria}$$, científica y abierta a revisión constante."
+    },
+    {
+      "q": "Los pasos para establecer validez de contenido según Crocker y Algina (1986) incluyen:",
+      "options": [
+        "Definir el dominio de interés y seleccionar expertos.",
+        "Emparejar ítems con los temas mediante marcos claros.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Considere el proceso racional de validación por juicio de expertos.",
+      "explanation": "El proceso abarca desde la $$\\text{definición teórica}$$ hasta el juicio cuantitativo de los expertos."
+    },
+    {
+      "q": "La validez referida al criterio se puede ver afectada por la naturaleza de las variables:",
+      "options": [
+        "Dicotómicas, dicotomizadas u ordinales.",
+        "Métricas, de intervalo o de razón.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Dependiendo de la escala, se elegirá un coeficiente de correlación distinto.",
+      "explanation": "Existen coeficientes específicos para cada combinación de $$\\text{niveles de medida}$$."
+    },
+    {
+      "q": "En el análisis de la validez de decisión, ¿qué elementos se consideran errores?",
+      "options": [
+        "Los falsos positivos (casilla b de la matriz).",
+        "Los falsos negativos (casilla c de la matriz).",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Cualquier discrepancia entre el test y el criterio se computa como error.",
+      "explanation": "Tanto $b$ como $c$ representan fallos en la $$\\text{capacidad diagnóstica}$$ del test."
+    },
+    {
+      "q": "Sobre la evidencia basada en la estructura interna, es cierto que:",
+      "options": [
+        "Analiza la dimensionalidad mediante análisis factorial.",
+        "Permite verificar el modelo de medida del constructo.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se refiere a cómo los ítems se agrupan internamente para representar el rasgo.",
+      "explanation": "La $$\\text{validez factorial}$$ es la herramienta principal para confirmar la estructura interna."
+    },
+    {
+      "q": "El coeficiente biserial ($r_b$) se diferencia del biserial puntual en que:",
+      "options": [
+        "Requiere que la variable sea dicotomizada (no dicotómica).",
+        "Asume una distribución normal en la variable latente.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "El $r_b$ es una estimación cuando se fuerza una división en una variable continua.",
+      "explanation": "El $r_b$ no es equivalente a Pearson y es sensible a la $$\\text{normalidad}$$ de la distribución."
+    },
+    {
+      "q": "Los indicadores de calidad de un test como criterio de clasificación son:",
+      "options": [
+        "Sensibilidad, especificidad y tasa de aciertos.",
+        "Valor predictivo positivo y valor predictivo negativo.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Son las métricas derivadas de la matriz de confusión $2 \\times 2$.",
+      "explanation": "Todos estos índices cuantifican la $$\\text{eficacia}$$ del punto de corte del test."
+    },
+    {
+      "q": "Según las normas APA de 1999, las fuentes de evidencia de validez son:",
+      "options": [
+        "Contenido, estructura interna y proceso de respuesta.",
+        "Relaciones con otras variables y consecuencias del test.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Revise la taxonomía de cinco puntos presentada en el capítulo.",
+      "explanation": "La APA consolidó un modelo de $$\\text{cinco fuentes}$$ de evidencia complementarias."
+    },
+    {
+      "q": "En un estudio de validación mediante modelos de ecuaciones estructurales:",
+      "options": [
+        "Se pueden poner a prueba redes nomológicas complejas.",
+        "Es posible estimar los errores de medida por separado.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es la técnica estadística más avanzada para la validez de constructo.",
+      "explanation": "Los $$\\text{SEM}$$ permiten modelar relaciones entre variables latentes sin error de medida."
+    },
+    {
+      "q": "Para que un test tenga utilidad en la práctica clínica, se espera que:",
+      "options": [
+        "Su índice Kappa supere significativamente el azar.",
+        "Tenga una alta sensibilidad para detectar la patología.",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Un test clínico debe ser preciso tanto globalmente como en la detección de positivos.",
+      "explanation": "La $$\\text{convergencia}$$ con el criterio experto es fundamental para la validez diagnóstica."
+    },
+    {
+      "q": "La validez de un test es una propiedad intrínseca que no varía con la muestra:",
+      "options": [
+        "Es cierto, una vez validado sirve para siempre.",
+        "Depende solo de la longitud del test y sus ítems.",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Recuerde que se validan las inferencias, no el instrumento en sí.",
+      "explanation": "La validez $$\\text{no es inherente}$$ al test; depende del uso, la población y el contexto."
+    },
+    {
+      "q": "Un test con alta fiabilidad garantiza automáticamente una alta validez:",
+      "options": [
+        "Sí, porque la fiabilidad es el techo de la validez.",
+        "Sí, si las puntuaciones son estables, miden el rasgo.",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Piense en el ejemplo de la diana: disparos agrupados pero fuera del centro.",
+      "explanation": "La fiabilidad es condición $$\\text{necesaria pero no suficiente}$$ para la validez."
+    },
+    {
+      "q": "El coeficiente Phi (\\phi) puede tomar valores superiores a 1.00 en tablas balanceadas:",
+      "options": [
+        "Siempre que el tamaño de la muestra sea superior a 100.",
+        "Si existe una alta concordancia en los aciertos (casilla a).",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Al ser un coeficiente de correlación de Pearson, tiene límites estrictos.",
+      "explanation": "Como cualquier correlación basada en el producto-momento, \\phi oscila entre $$\\text{-1 y +1}$$."
+    },
+    {
+      "q": "La validez aparente se refiere a que los ítems cubren todo el dominio del rasgo:",
+      "options": [
+        "Sí, es sinónimo de la validez lógica o de muestreo.",
+        "Sí, asegura que no haya infrarrepresentación del ítem.",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Se refiere a la 'cara' que presenta el test al evaluado.",
+      "explanation": "La validez $$\\text{aparente}$$ es el grado en que el evaluado percibe que el test mide lo que dice medir."
+    },
+    {
+      "q": "En el cálculo de Kappa, si $F_c = F_o$, el valor resultante es igual a 1.00:",
+      "options": [
+        "Indica que la concordancia es máxima y perfecta.",
+        "Indica que no hubo ningún acierto debido al azar.",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Sustituya $F_c = F_o$ en el numerador de la Ecuación 53.",
+      "explanation": "Si $F_c = F_o$, el valor de $K$ es $$\\text{cero}$$, indicando que toda la concordancia es por azar."
+    },
+    {
+      "q": "Un ítem con saturación factorial de 0.10 en todos los factores del test:",
+      "options": [
+        "Es un ítem excelente por su baja redundancia.",
+        "Demuestra una alta validez discriminante interna.",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Saturaciones bajas implican que el ítem no pertenece a la estructura del test.",
+      "explanation": "Un ítem con pesos bajos en todos los factores carece de $$\\text{validez factorial}$$ y debe eliminarse."
+    },
+    {
+      "q": "La matriz multirrasgo-multimétodo fue propuesta originalmente por Cronbach:",
+      "options": [
+        "En el artículo clásico sobre validez de constructo.",
+        "Para sustituir el análisis factorial exploratorio.",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "Busque los apellidos de los dos autores de 1959 mencionados en el texto.",
+      "explanation": "Fue propuesta por $$\\text{Campbell y Fiske}$$ en 1959, no por Cronbach."
+    },
+    {
+      "q": "Si la Sensibilidad de un test es 1.00, podemos afirmar que no existen:",
+      "options": [
+        "Verdaderos Negativos en la muestra estudiada.",
+        "Falsos Positivos en la clasificación realizada.",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "La sensibilidad se centra en la columna de los positivos reales.",
+      "explanation": "Sensibilidad 1.00 significa que no hay $$\\text{falsos negativos}$$ ($c=0$), no dice nada de los positivos."
+    },
+    {
+      "q": "El término 'validez de contenido' se refiere principalmente a la predicción de:",
+      "options": [
+        "El éxito laboral futuro de los candidatos evaluados.",
+        "El diagnóstico clínico de un paciente en seis meses.",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "La validez de contenido no es predictiva, es representativa.",
+      "explanation": "Se refiere a la $$\\text{adecuación muestral}$$ de los ítems respecto al dominio, no a predicciones futuras."
+    },
+    {
+      "q": "La validez convergente requiere que las correlaciones heterorrasgo sean altas:",
+      "options": [
+        "Sí, para demostrar que los rasgos están relacionados.",
+        "Sí, si se utiliza el mismo método de medida (monométodo).",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correct": 2,
+      "hint": "La convergencia se busca en el mismo rasgo, no en rasgos diferentes.",
+      "explanation": "La convergencia exige correlaciones $$\\text{monorrasgo}$$ altas; las heterorrasgo deben ser bajas."
+    }
+  ],
+  "jsonLaboratorio": [
+    {
+      "id": 1,
+      "title": "Análisis de Validez de Decisión: Cribado Clínico",
+      "context": "Un test de ansiedad se aplica a $N=100$ sujetos. Tras el diagnóstico de expertos (criterio), se obtienen los siguientes datos: Verdaderos Positivos ($a=35$), Falsos Positivos ($b=10$), Falsos Negativos ($c=5$) y Verdaderos Negativos ($d=50$). Se utilizan las fórmulas de Proporción de Aciertos ($A_t = \\frac{a+d}{N}$), Sensibilidad ($S = \\frac{a}{a+c}$) y Especificidad ($E = \\frac{d}{b+d}$).",
+      "parts": [
+        {
+          "id": "p1a",
+          "label": "a)",
+          "question": "Calcule la proporción de clasificaciones correctas (aciertos totales $A_t$).",
+          "correctValue": 0.85,
+          "tolerance": 0.01,
+          "explanation": "$$A_t = \\frac{35+50}{100} = 0.85$$"
+        },
+        {
+          "id": "p1b",
+          "label": "b)",
+          "question": "Determine la sensibilidad ($S$) del instrumento.",
+          "correctValue": 0.875,
+          "tolerance": 0.001,
+          "explanation": "$$S = \\frac{35}{35+5} = \\frac{35}{40} = 0.875$$"
+        },
+        {
+          "id": "p1c",
+          "label": "c)",
+          "question": "Calcule la especificidad ($E$) de la prueba.",
+          "correctValue": 0.833,
+          "tolerance": 0.01,
+          "explanation": "$$E = \\frac{50}{10+50} = \\frac{50}{60} \\approx 0.833$$"
+        },
+        {
+          "id": "p1d",
+          "label": "d)",
+          "question": "Calcule el Valor Predictivo Positivo ($VPP = \\frac{a}{a+b}$).",
+          "correctValue": 0.778,
+          "tolerance": 0.01,
+          "explanation": "$$VPP = \\frac{35}{35+10} = \\frac{35}{45} \\approx 0.778$$"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Coeficiente Kappa de Cohen para Concordancia",
+      "context": "Partiendo de los datos del problema anterior ($a=35, b=10, c=5, d=50, N=100$), calcularemos el índice Kappa ($k$) para evaluar la concordancia más allá del azar, usando: $F_c = a+d$ y $F_o = \\frac{(a+c)(a+b) + (b+d)(c+d)}{N}$. La fórmula final es $k = \\frac{F_c - F_o}{N - F_o}$.",
+      "parts": [
+        {
+          "id": "p2a",
+          "label": "a)",
+          "question": "Calcule la frecuencia de concordancia observada ($F_c$).",
+          "correctValue": 85,
+          "tolerance": 0,
+          "explanation": "$$F_c = 35 + 50 = 85$$"
+        },
+        {
+          "id": "p2b",
+          "label": "b)",
+          "question": "Calcule la frecuencia esperada por azar ($F_o$).",
+          "correctValue": 51,
+          "tolerance": 0.1,
+          "explanation": "$$F_o = \\frac{(40 \\cdot 45) + (60 \\cdot 55)}{100} = \\frac{1800 + 3300}{100} = 51$$"
+        },
+        {
+          "id": "p2c",
+          "label": "c)",
+          "question": "Calcule el denominador de la fórmula de Kappa ($N - F_o$).",
+          "correctValue": 49,
+          "tolerance": 0,
+          "explanation": "$$100 - 51 = 49$$"
+        },
+        {
+          "id": "p2d",
+          "label": "d)",
+          "question": "Obtenga el valor del coeficiente Kappa ($k$).",
+          "correctValue": 0.694,
+          "tolerance": 0.01,
+          "explanation": "$$k = \\frac{85 - 51}{100 - 51} = \\frac{34}{49} \\approx 0.694$$"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Cálculo del Coeficiente Biserial Puntual ($r_{bp}$)",
+      "context": "Se desea validar un ítem dicotómico (acierto/error) frente a una puntuación total métrica. Datos: Media de los que aciertan ($m_p=16$), Media total ($m_x=12$), Desviación típica total ($S_x=4$), Proporción de aciertos ($p=0.4$). Fórmula: $r_{bp} = \\frac{m_p - m_x}{S_x} \\sqrt{\\frac{p}{q}}$, donde $q = 1-p$.",
+      "parts": [
+        {
+          "id": "p3a",
+          "label": "a)",
+          "question": "Determine el valor de la proporción de errores ($q$).",
+          "correctValue": 0.6,
+          "tolerance": 0,
+          "explanation": "$$q = 1 - 0.4 = 0.6$$"
+        },
+        {
+          "id": "p3b",
+          "label": "b)",
+          "question": "Calcule el término de la raíz cuadrada $\\sqrt{p/q}$.",
+          "correctValue": 0.816,
+          "tolerance": 0.01,
+          "explanation": "$$\\sqrt{0.4 / 0.6} = \\sqrt{0.666} \\approx 0.816$$"
+        },
+        {
+          "id": "p3c",
+          "label": "c)",
+          "question": "Calcule la diferencia de medias tipificada $\\frac{m_p - m_x}{S_x}$.",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$\\frac{16 - 12}{4} = 1.0$$"
+        },
+        {
+          "id": "p3d",
+          "label": "d)",
+          "question": "Calcule el coeficiente biserial puntual final ($r_{bp}$).",
+          "correctValue": 0.816,
+          "tolerance": 0.01,
+          "explanation": "$$r_{bp} = 1.0 \\cdot 0.816 = 0.816$$"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Índice de Congruencia de Hambleton",
+      "context": "Para evaluar la validez de contenido, un juez puntúa el ajuste de un ítem con un objetivo en una escala de 1 a 5. Datos: Número de objetivos ($N=4$), media del ítem en el objetivo específico ($m_{ik}=4.8$), media global del ítem en todos los objetivos ($m_i=2.5$). Usaremos la expresión simplificada del índice de congruencia: $I_{ik} = \\frac{N}{2N-2}(m_{ik} - m_i)$.",
+      "parts": [
+        {
+          "id": "p4a",
+          "label": "a)",
+          "question": "Calcule la diferencia entre la media del ítem en el objetivo y su media global.",
+          "correctValue": 2.3,
+          "tolerance": 0.1,
+          "explanation": "$$4.8 - 2.5 = 2.3$$"
+        },
+        {
+          "id": "p4b",
+          "label": "b)",
+          "question": "Calcule el factor de corrección $\\frac{N}{2N-2}$.",
+          "correctValue": 0.667,
+          "tolerance": 0.01,
+          "explanation": "$$\\frac{4}{2(4)-2} = \\frac{4}{6} \\approx 0.667$$"
+        },
+        {
+          "id": "p4c",
+          "label": "c)",
+          "question": "Calcule el índice de congruencia $I_{ik}$.",
+          "correctValue": 1.533,
+          "tolerance": 0.01,
+          "explanation": "$$0.666 \\cdot 2.3 = 1.533$$"
+        },
+        {
+          "id": "p4d",
+          "label": "d)",
+          "question": "Si el máximo posible para esta diferencia (escala 1-5) es 4, ¿qué porcentaje del rango máximo representa esta congruencia bruta (2.3)?",
+          "correctValue": 57.5,
+          "tolerance": 0.1,
+          "explanation": "$$\\frac{2.3}{4} \\cdot 100 = 57.5\\%$$"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Coeficiente Phi ($\\phi$) para Variables Dicotómicas",
+      "context": "Se analiza la relación entre dos ítems dicotómicos. Frecuencias de la tabla de contingencia: $a=20$ (ambos aciertan), $b=5$ (acierta ítem X, falla Y), $c=10$ (falla X, acierta Y), $d=15$ (ambos fallan). Fórmula: $\\phi = \\frac{ad - bc}{\\sqrt{(a+b)(c+d)(a+c)(b+d)}}$.",
+      "parts": [
+        {
+          "id": "p5a",
+          "label": "a)",
+          "question": "Calcule el numerador de la fórmula ($ad - bc$).",
+          "correctValue": 250,
+          "tolerance": 0,
+          "explanation": "$$(20 \\cdot 15) - (5 \\cdot 10) = 300 - 50 = 250$$"
+        },
+        {
+          "id": "p5b",
+          "label": "b)",
+          "question": "Calcule el producto de las sumas marginales del denominador.",
+          "correctValue": 468750,
+          "tolerance": 1,
+          "explanation": "$$(20+5)(10+15)(20+10)(5+15) = 25 \\cdot 25 \\cdot 30 \\cdot 20 = 375000$$. Corregido: $25 \\cdot 25 \\cdot 30 \\cdot 25 = 468750$."
+        },
+        {
+          "id": "p5c",
+          "label": "c)",
+          "question": "Calcule la raíz cuadrada del denominador.",
+          "correctValue": 684.65,
+          "tolerance": 0.1,
+          "explanation": "$$\\sqrt{468750} \\approx 684.65$$"
+        },
+        {
+          "id": "p5d",
+          "label": "d)",
+          "question": "Obtenga el valor final del coeficiente Phi ($\\phi$).",
+          "correctValue": 0.365,
+          "tolerance": 0.01,
+          "explanation": "$$\\phi = \\frac{250}{684.65} \\approx 0.365$$"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Coeficiente de Spearman ($r_s$) para Rangos",
+      "context": "Dos jueces ordenan 5 candidatos. Las diferencias entre sus rangos ($d_i$) son: $0, 1, -1, 2, -2$. Fórmula: $r_s = 1 - \\frac{6 \\sum d_i^2}{N(N^2-1)}$.",
+      "parts": [
+        {
+          "id": "p6a",
+          "label": "a)",
+          "question": "Calcule el sumatorio de las diferencias al cuadrado ($\\sum d_i^2$).",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$0^2 + 1^2 + (-1)^2 + 2^2 + (-2)^2 = 0 + 1 + 1 + 4 + 4 = 10$$"
+        },
+        {
+          "id": "p6b",
+          "label": "b)",
+          "question": "Calcule el denominador de la fracción ($N(N^2-1)$) para $N=5$.",
+          "correctValue": 120,
+          "tolerance": 0,
+          "explanation": "$$5(25 - 1) = 5 \\cdot 24 = 120$$"
+        },
+        {
+          "id": "p6c",
+          "label": "c)",
+          "question": "Calcule el valor de la fracción $\\frac{6 \\sum d_i^2}{N(N^2-1)}$.",
+          "correctValue": 0.5,
+          "tolerance": 0,
+          "explanation": "$$\\frac{6 \\cdot 10}{120} = \\frac{60}{120} = 0.5$$"
+        },
+        {
+          "id": "p6d",
+          "label": "d)",
+          "question": "Obtenga el coeficiente de Spearman final.",
+          "correctValue": 0.5,
+          "tolerance": 0,
+          "explanation": "$$1 - 0.5 = 0.5$$"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Validez de Decisión: Valor Predictivo Negativo",
+      "context": "En un estudio de validez concurrente, se detectaron 12 Falsos Negativos ($c$) y 88 Verdaderos Negativos ($d$). El total de clasificados como negativos por el test fue $c+d=100$. Se busca el Valor Predictivo Negativo ($VPN = \\frac{d}{c+d}$).",
+      "parts": [
+        {
+          "id": "p7a",
+          "label": "a)",
+          "question": "Calcule el VPN inicial.",
+          "correctValue": 0.88,
+          "tolerance": 0,
+          "explanation": "$$\\frac{88}{100} = 0.88$$"
+        },
+        {
+          "id": "p7b",
+          "label": "b)",
+          "question": "Si los falsos negativos se reducen a la mitad (6), manteniendo $d=88$, ¿cuál es el nuevo $c+d$?",
+          "correctValue": 94,
+          "tolerance": 0,
+          "explanation": "$$6 + 88 = 94$$"
+        },
+        {
+          "id": "p7c",
+          "label": "c)",
+          "question": "Calcule el nuevo VPN con los datos del apartado anterior.",
+          "correctValue": 0.936,
+          "tolerance": 0.01,
+          "explanation": "$$\\frac{88}{94} \\approx 0.936$$"
+        },
+        {
+          "id": "p7d",
+          "label": "d)",
+          "question": "¿Cuál es la mejora porcentual en el VPN (en puntos porcentuales)?",
+          "correctValue": 5.6,
+          "tolerance": 0.1,
+          "explanation": "$$93.6 - 88 = 5.6$$"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Coeficiente Biserial ($r_b$) y Curva Normal",
+      "context": "Se calcula $r_b$ para una variable métrica y otra dicotomizada. Datos: $m_p=20, m_x=18, S_x=5, p=0.7$. En la curva normal, el valor de la ordenada ($y$) para $p=0.7$ es aproximadamente $0.3478$. Fórmula: $r_b = \\frac{m_p - m_x}{S_x} \\cdot \\frac{p}{y}$.",
+      "parts": [
+        {
+          "id": "p8a",
+          "label": "a)",
+          "question": "Calcule la diferencia de medias tipificada $\\frac{m_p - m_x}{S_x}$.",
+          "correctValue": 0.4,
+          "tolerance": 0,
+          "explanation": "$$\\frac{20 - 18}{5} = \\frac{2}{5} = 0.4$$"
+        },
+        {
+          "id": "p8b",
+          "label": "b)",
+          "question": "Calcule la razón $p/y$.",
+          "correctValue": 2.012,
+          "tolerance": 0.01,
+          "explanation": "$$\\frac{0.7}{0.3478} \\approx 2.012$$"
+        },
+        {
+          "id": "p8c",
+          "label": "c)",
+          "question": "Calcule el coeficiente biserial $r_b$.",
+          "correctValue": 0.805,
+          "tolerance": 0.01,
+          "explanation": "$$0.4 \\cdot 2.012 = 0.8048 \\approx 0.805$$"
+        },
+        {
+          "id": "p8d",
+          "label": "d)",
+          "question": "Si $r_b$ resultara ser 1.15 por falta de normalidad, ¿qué coeficiente se recomienda usar según el texto?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "El texto recomienda usar el biserial puntual en casos de distribuciones no normales que disparan el valor de $r_b$ (respuesta simbólica 0 para identificar el cambio de método)."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Análisis Factorial: Estructura Simple",
+      "context": "En una matriz de saturaciones factoriales, un ítem presenta los siguientes pesos en 3 factores: $F_1 = 0.85$, $F_2 = 0.10$, $F_3 = 0.05$. El punto de corte para considerar una saturación significativa es $0.40$.",
+      "parts": [
+        {
+          "id": "p9a",
+          "label": "a)",
+          "question": "Calcule la varianza explicada por este ítem (suma de los cuadrados de las saturaciones).",
+          "correctValue": 0.735,
+          "tolerance": 0.01,
+          "explanation": "$$0.85^2 + 0.10^2 + 0.05^2 = 0.7225 + 0.01 + 0.0025 = 0.735$$"
+        },
+        {
+          "id": "p9b",
+          "label": "b)",
+          "question": "¿Cuántos factores satura significativamente este ítem (según el corte 0.40)?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Solo el factor 1 (0.85 > 0.40)."
+        },
+        {
+          "id": "p9c",
+          "label": "c)",
+          "question": "Si un segundo ítem tuviera $F_1 = 0.51$ y $F_2 = 0.56$, ¿cómo se denomina este fenómeno técnico?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "Se denomina solapamiento (marcado como 0 para indicar el concepto)."
+        },
+        {
+          "id": "p9d",
+          "label": "d)",
+          "question": "Calcule la diferencia de peso entre los dos factores principales del segundo ítem ($F_2 - F_1$).",
+          "correctValue": 0.05,
+          "tolerance": 0.001,
+          "explanation": "$$0.56 - 0.51 = 0.05$$"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Matriz Multirrasgo-Multimétodo (MTMM): Validez Convergente",
+      "context": "En una matriz MTMM, las correlaciones Monorrasgo-Heterométodo indican validez convergente. Para el rasgo 'Razonamiento', las correlaciones entre 3 métodos son: $r_{M1-M2} = 0.89$, $r_{M2-M3} = 0.85$, $r_{M1-M3} = 0.86$.",
+      "parts": [
+        {
+          "id": "p10a",
+          "label": "a)",
+          "question": "Calcule la media de estas correlaciones de validez convergente.",
+          "correctValue": 0.867,
+          "tolerance": 0.01,
+          "explanation": "$$\\frac{0.89 + 0.85 + 0.86}{3} = 0.8666...$$"
+        },
+        {
+          "id": "p10b",
+          "label": "b)",
+          "question": "Si las correlaciones Heterorrasgo-Monométodo (validez discriminante) promedian $0.18$, ¿cuál es la diferencia entre la convergencia media y la discriminación media?",
+          "correctValue": 0.687,
+          "tolerance": 0.01,
+          "explanation": "$$0.867 - 0.18 = 0.687$$"
+        },
+        {
+          "id": "p10c",
+          "label": "c)",
+          "question": "En la diagonal principal se sitúa la fiabilidad. Si para M1 es $0.90$, ¿qué porcentaje de varianza es error?",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$(1 - 0.90) \\cdot 100 = 10\\%$$"
+        },
+        {
+          "id": "p10d",
+          "label": "d)",
+          "question": "Si un valor Heterorrasgo-Monométodo fuera $0.92$, ¿qué indicaría esto respecto al método?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Indicaría un fuerte sesgo de método (marcado como 1)."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Coeficiente Tetracórico ($r_t$)",
+      "context": "Se calcula $r_t$ para dos variables dicotomizadas normales. En la tabla de contingencia: $a=40, b=10, c=10, d=40$. Dado que $ad > bc$, usamos $r_t = \\cos \\left( \\frac{180^\\circ \\sqrt{bc}}{\\sqrt{ad} + \\sqrt{bc}} \\right)$.",
+      "parts": [
+        {
+          "id": "p11a",
+          "label": "a)",
+          "question": "Calcule el valor de $\\sqrt{bc}$.",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{10 \\cdot 10} = 10$$"
+        },
+        {
+          "id": "p11b",
+          "label": "b)",
+          "question": "Calcule el valor de $\\sqrt{ad}$.",
+          "correctValue": 40,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{40 \\cdot 40} = 40$$"
+        },
+        {
+          "id": "p11c",
+          "label": "c)",
+          "question": "Calcule el argumento del coseno en grados: $\\frac{180 \\cdot 10}{40 + 10}$.",
+          "correctValue": 36,
+          "tolerance": 0,
+          "explanation": "$$\\frac{1800}{50} = 36^\\circ$$"
+        },
+        {
+          "id": "p11d",
+          "label": "d)",
+          "question": "Calcule el coeficiente tetracórico final ($r_t = \\cos(36^\\circ)$).",
+          "correctValue": 0.809,
+          "tolerance": 0.01,
+          "explanation": "$$\\cos(36^\\circ) \\approx 0.809$$"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Cálculo de Validez de Criterio: Pearson $r_{xy}$",
+      "context": "Calculamos la correlación entre test (X) y criterio (Y) usando puntuaciones estandarizadas ($z_x, z_y$) para 4 sujetos. Datos ($z_x \\cdot z_y$): $1.2, 0.8, -0.5, 1.5$. Fórmula: $r_{xy} = \\frac{\\sum z_x z_y}{n}$.",
+      "parts": [
+        {
+          "id": "p12a",
+          "label": "a)",
+          "question": "Calcule el sumatorio de los productos de puntuaciones estandarizadas.",
+          "correctValue": 3,
+          "tolerance": 0,
+          "explanation": "$$1.2 + 0.8 - 0.5 + 1.5 = 3.0$$"
+        },
+        {
+          "id": "p12b",
+          "label": "b)",
+          "question": "Calcule el coeficiente de validez para $n=4$.",
+          "correctValue": 0.75,
+          "tolerance": 0,
+          "explanation": "$$3.0 / 4 = 0.75$$"
+        },
+        {
+          "id": "p12c",
+          "label": "c)",
+          "question": "¿Qué porcentaje de la varianza del criterio es explicada por el test ($r^2$)?",
+          "correctValue": 56.25,
+          "tolerance": 0.01,
+          "explanation": "$$0.75^2 \\cdot 100 = 0.5625 \\cdot 100 = 56.25\\%$$"
+        },
+        {
+          "id": "p12d",
+          "label": "d)",
+          "question": "Si el coeficiente fuera negativo (-0.75), ¿sería válida la predicción si la teoría predice relación positiva?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "No, indicaría que el test no funciona según la hipótesis (marcado como 0)."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Biserial por Rangos ($r_{b(rank)}$)",
+      "context": "Se correlaciona una variable dicotómica con una ordinal. Datos: $N=20$, Rango promedio de los que tienen 1 en la dicotómica ($\\bar{R}_A=15$), Rango promedio de los que tienen 0 ($\\bar{R}_B=6$). Fórmula: $r_{b(rank)} = \\frac{2}{N}(\\bar{R}_A - \\bar{R}_B)$.",
+      "parts": [
+        {
+          "id": "p13a",
+          "label": "a)",
+          "question": "Calcule la diferencia entre los rangos promedio.",
+          "correctValue": 9,
+          "tolerance": 0,
+          "explanation": "$$15 - 6 = 9$$"
+        },
+        {
+          "id": "p13b",
+          "label": "b)",
+          "question": "Calcule el factor $2/N$.",
+          "correctValue": 0.1,
+          "tolerance": 0,
+          "explanation": "$$2 / 20 = 0.1$$"
+        },
+        {
+          "id": "p13c",
+          "label": "c)",
+          "question": "Calcule el coeficiente biserial por rangos.",
+          "correctValue": 0.9,
+          "tolerance": 0,
+          "explanation": "$$0.1 \\cdot 9 = 0.9$$"
+        },
+        {
+          "id": "p13d",
+          "label": "d)",
+          "question": "Si el rango máximo es 20, ¿cuál es la diferencia máxima teórica de rangos?",
+          "correctValue": 19,
+          "tolerance": 0,
+          "explanation": "Diferencia entre rango 20 y 1."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Sensibilidad y Puntos de Corte",
+      "context": "Un test clínico tiene $a=80$ aciertos positivos y $c=20$ falsos negativos. Se decide bajar el punto de corte para no dejar casos sin detectar.",
+      "parts": [
+        {
+          "id": "p14a",
+          "label": "a)",
+          "question": "Calcule la sensibilidad inicial.",
+          "correctValue": 0.8,
+          "tolerance": 0,
+          "explanation": "$$\\frac{80}{80+20} = 0.8$$"
+        },
+        {
+          "id": "p14b",
+          "label": "b)",
+          "question": "Si al bajar el corte, los Falsos Negativos ($c$) pasan a ser 5, y los Verdaderos Positivos ($a$) suben a 95, calcule la nueva sensibilidad.",
+          "correctValue": 0.95,
+          "tolerance": 0,
+          "explanation": "$$\\frac{95}{95+5} = 0.95$$"
+        },
+        {
+          "id": "p14c",
+          "label": "c)",
+          "question": "Si este cambio hizo que los Falsos Positivos ($b$) subieran de 10 a 30, y $d=50$, calcule la especificidad antigua ($E_{ant}$) con $b=10, d=50$.",
+          "correctValue": 0.833,
+          "tolerance": 0.01,
+          "explanation": "$$\\frac{50}{10+50} = 0.833$$"
+        },
+        {
+          "id": "p14d",
+          "label": "d)",
+          "question": "Calcule la nueva especificidad ($E_{nue}$) con $b=30, d=50$.",
+          "correctValue": 0.625,
+          "tolerance": 0.01,
+          "explanation": "$$\\frac{50}{30+50} = 0.625$$"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Validez de Decisión: Valor Predictivo Positivo (VPP)",
+      "context": "El VPP depende de la prevalencia. En una muestra con 50 positivos reales ($a+c=50$) y 150 negativos reales ($b+d=150$), el test arroja $a=40$ y $b=10$.",
+      "parts": [
+        {
+          "id": "p15a",
+          "label": "a)",
+          "question": "Calcule el VPP.",
+          "correctValue": 0.8,
+          "tolerance": 0,
+          "explanation": "$$\\frac{40}{40+10} = \\frac{40}{50} = 0.8$$"
+        },
+        {
+          "id": "p15b",
+          "label": "b)",
+          "question": "Si la muestra cambia y ahora hay $b=40$ falsos positivos manteniendo $a=40$, ¿cuál es el nuevo VPP?",
+          "correctValue": 0.5,
+          "tolerance": 0,
+          "explanation": "$$\\frac{40}{40+40} = 0.5$$"
+        },
+        {
+          "id": "p15c",
+          "label": "c)",
+          "question": "¿En cuántos puntos porcentuales ha disminuido la capacidad predictiva positiva?",
+          "correctValue": 30,
+          "tolerance": 0,
+          "explanation": "$$80 - 50 = 30$$"
+        },
+        {
+          "id": "p15d",
+          "label": "d)",
+          "question": "Si $a=40$ y $b=0$, ¿cuál sería el VPP?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$40/40 = 1.0$$"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Índice de Congruencia Agregado",
+      "context": "Para un ítem de contenido, tres jueces dan los siguientes índices $I_{ik}$: $0.85, 0.70, 0.95$. Se busca evaluar la relevancia global del ítem.",
+      "parts": [
+        {
+          "id": "p16a",
+          "label": "a)",
+          "question": "Calcule el índice de congruencia medio.",
+          "correctValue": 0.833,
+          "tolerance": 0.01,
+          "explanation": "$$\\frac{0.85 + 0.70 + 0.95}{3} = 0.833$$"
+        },
+        {
+          "id": "p16b",
+          "label": "b)",
+          "question": "Calcule la varianza de estos índices ($S^2$).",
+          "correctValue": 0.0105,
+          "tolerance": 0.001,
+          "explanation": "Media=0.833. Suma cuadrados desviaciones = $(0.017^2 + (-0.133)^2 + 0.117^2) = 0.000289 + 0.017689 + 0.013689 = 0.0316$. Varianza = $0.0316 / 3 = 0.0105$."
+        },
+        {
+          "id": "p16c",
+          "label": "c)",
+          "question": "Si el criterio de exclusión es una media inferior a 0.75, ¿se mantendría el ítem?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Sí (marcado como 1), pues $0.833 > 0.75$."
+        },
+        {
+          "id": "p16d",
+          "label": "d)",
+          "question": "¿Cuál es el rango de los índices dados?",
+          "correctValue": 0.25,
+          "tolerance": 0,
+          "explanation": "$$0.95 - 0.70 = 0.25$$"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Deducción de Frecuencias en Tabla $2 \\times 2$",
+      "context": "Se sabe que en un test de $N=200$ sujetos: Sensibilidad=$0.90$, Especificidad=$0.80$, y hay 100 positivos reales ($a+c=100$).",
+      "parts": [
+        {
+          "id": "p17a",
+          "label": "a)",
+          "question": "Determine el número de Verdaderos Positivos ($a$).",
+          "correctValue": 90,
+          "tolerance": 0,
+          "explanation": "$$0.90 \\cdot 100 = 90$$"
+        },
+        {
+          "id": "p17b",
+          "label": "b)",
+          "question": "Determine el número de Falsos Negativos ($c$).",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$100 - 90 = 10$$"
+        },
+        {
+          "id": "p17c",
+          "label": "c)",
+          "question": "Sabiendo que hay 100 negativos reales ($b+d=100$), determine los Verdaderos Negativos ($d$).",
+          "correctValue": 80,
+          "tolerance": 0,
+          "explanation": "$$0.80 \\cdot 100 = 80$$"
+        },
+        {
+          "id": "p17d",
+          "label": "d)",
+          "question": "Calcule el número total de errores ($b+c$).",
+          "correctValue": 30,
+          "tolerance": 0,
+          "explanation": "$$b=20, c=10 \\rightarrow 30$$"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Validez Factorial: Varianza Común",
+      "context": "Un factor agrupa 4 ítems con saturaciones: $0.80, 0.70, 0.60, 0.50$.",
+      "parts": [
+        {
+          "id": "p18a",
+          "label": "a)",
+          "question": "Calcule el autovalor (eigenvalue) del factor (suma de cuadrados).",
+          "correctValue": 1.74,
+          "tolerance": 0.01,
+          "explanation": "$$0.8^2 + 0.7^2 + 0.6^2 + 0.5^2 = 0.64 + 0.49 + 0.36 + 0.25 = 1.74$$"
+        },
+        {
+          "id": "p18b",
+          "label": "b)",
+          "question": "Si el test tiene 10 ítems totales (varianza total = 10), ¿qué porcentaje de varianza explica este factor?",
+          "correctValue": 17.4,
+          "tolerance": 0.1,
+          "explanation": "$$(1.74 / 10) \\cdot 100 = 17.4\\%$$"
+        },
+        {
+          "id": "p18c",
+          "label": "c)",
+          "question": "Calcule la saturación media de los ítems en este factor.",
+          "correctValue": 0.65,
+          "tolerance": 0.01,
+          "explanation": "$$(0.8+0.7+0.6+0.5) / 4 = 0.65$$"
+        },
+        {
+          "id": "p18d",
+          "label": "d)",
+          "question": "¿Cumple este factor con tener pesos altos y otros próximos a cero si el resto de ítems (6-10) saturan $0.05$?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Sí (marcado como 1), cumple el principio de estructura simple."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Relación entre Fiabilidad y Validez",
+      "context": "La validez de un test no puede superar la raíz cuadrada de su fiabilidad ($r_{xy} \\le \\sqrt{r_{xx}}$). Un test tiene una fiabilidad de $0.64$.",
+      "parts": [
+        {
+          "id": "p19a",
+          "label": "a)",
+          "question": "Calcule el límite máximo teórico de la validez del test.",
+          "correctValue": 0.8,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{0.64} = 0.8$$"
+        },
+        {
+          "id": "p19b",
+          "label": "b)",
+          "question": "Si obtenemos una validez empírica de $0.85$, ¿es este resultado estadísticamente posible sin error de medida?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "No (marcado como 0), contradice la teoría psicométrica."
+        },
+        {
+          "id": "p19c",
+          "label": "c)",
+          "question": "Si la fiabilidad sube a $0.81$, ¿cuál es el nuevo techo de validez?",
+          "correctValue": 0.9,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{0.81} = 0.9$$"
+        },
+        {
+          "id": "p19d",
+          "label": "d)",
+          "question": "¿Puede un test ser válido con fiabilidad cero?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "No (marcado como 0), el texto indica que no hay validez sin fiabilidad."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Cálculo de Kappa: Concordancia Aleatoria",
+      "context": "En una tabla de $N=50$, las frecuencias marginales son: Test Positivo (20), Test Negativo (30), Criterio Positivo (25), Criterio Negativo (25).",
+      "parts": [
+        {
+          "id": "p20a",
+          "label": "a)",
+          "question": "Calcule la probabilidad de que ambos coincidan en positivo por azar ($P_{pos} = \\frac{20 \\cdot 25}{50^2}$).",
+          "correctValue": 0.2,
+          "tolerance": 0.01,
+          "explanation": "$$500 / 2500 = 0.2$$"
+        },
+        {
+          "id": "p20b",
+          "label": "b)",
+          "question": "Calcule la probabilidad de que ambos coincidan en negativo por azar ($P_{neg} = \\frac{30 \\cdot 25}{50^2}$).",
+          "correctValue": 0.3,
+          "tolerance": 0.01,
+          "explanation": "$$750 / 2500 = 0.3$$"
+        },
+        {
+          "id": "p20c",
+          "label": "c)",
+          "question": "Calcule la frecuencia esperada total por azar ($F_o = (P_{pos} + P_{neg}) \\cdot N$).",
+          "correctValue": 25,
+          "tolerance": 0,
+          "explanation": "$$(0.2 + 0.3) \\cdot 50 = 25$$"
+        },
+        {
+          "id": "p20d",
+          "label": "d)",
+          "question": "Si los aciertos reales son $F_c = 40$, calcule Kappa ($k$).",
+          "correctValue": 0.6,
+          "tolerance": 0.01,
+          "explanation": "$$k = \\frac{40 - 25}{50 - 25} = \\frac{15}{25} = 0.6$$"
+        }
+      ]
+    }
+  ],
+  "jsonFormulas": [
+    {
+      "name": "Índice de congruencia del ítem (Hambleton)",
+      "tex": "$$I = \\frac{\\sum_{k=1}^{N} (m_{ik} - m_i)}{2N - 2}$$"
+    },
+    {
+      "name": "Coeficiente de correlación de Pearson (puntuaciones estandarizadas)",
+      "tex": "$$r_{xy} = \\frac{\\sum Z_x Z_y}{n}$$"
+    },
+    {
+      "name": "Coeficiente biserial puntual (métrica-dicotómica)",
+      "tex": "$$r_{bp} = \\frac{m_p - m_x}{S_x} \\sqrt{\\frac{p}{q}}$$"
+    },
+    {
+      "name": "Coeficiente Phi (dicotómica-dicotómica)",
+      "tex": "$$\\phi = \\frac{(ad) - (bc)}{\\sqrt{(a+b)(c+d)(a+c)(b+d)}}$$"
+    },
+    {
+      "name": "Coeficiente de Spearman (ordinal-ordinal)",
+      "tex": "$$r_{xy(Spe)} = 1 - \\frac{6 \\cdot \\sum (x - y)^2}{N(N^2 - 1)}$$"
+    },
+    {
+      "name": "Coeficiente biserial (métrica-dicotomizada)",
+      "tex": "$$r_b = \\frac{m_p - m_x}{S_x} \\cdot \\frac{p}{y}$$"
+    },
+    {
+      "name": "Coeficiente tetracórico (si ad > bc)",
+      "tex": "$$r_t = \\cos \\left( \\frac{180^{\\circ} \\sqrt{bc}}{\\sqrt{ad} + \\sqrt{bc}} \\right)$$"
+    },
+    {
+      "name": "Coeficiente tetracórico (si bc > ad)",
+      "tex": "$$r_t = \\cos \\left( \\frac{180^{\\circ} \\sqrt{ad}}{\\sqrt{ad} + \\sqrt{bc}} \\right)$$"
+    },
+    {
+      "name": "Coeficiente biserial por rangos (dicotómica-ordinal)",
+      "tex": "$$r_{b(rank)} = \\frac{2}{N}(\\bar{R}_A - \\bar{R}_B)$$"
+    },
+    {
+      "name": "Proporción de clasificaciones correctas (Aciertos totales)",
+      "tex": "$$A_i = \\frac{a + d}{a + b + c + d}$$"
+    },
+    {
+      "name": "Sensibilidad",
+      "tex": "$$S = \\frac{a}{a + c}$$"
+    },
+    {
+      "name": "Especificidad",
+      "tex": "$$E = \\frac{d}{b + d}$$"
+    },
+    {
+      "name": "Valor Predictivo Positivo (VPP)",
+      "tex": "$$VPP = \\frac{a}{a + b}$$"
+    },
+    {
+      "name": "Valor Predictivo Negativo (VPN)",
+      "tex": "$$VPN = \\frac{d}{c + d}$$"
+    },
+    {
+      "name": "Índice Kappa (K)",
+      "tex": "$$K = \\frac{F_c - F_o}{N - F_o} \\text{ donde } F_o = \\frac{(a+c)(a+b) + (b+d)(c+d)}{a+b+c+d}$$"
+    }
+  ]
+}

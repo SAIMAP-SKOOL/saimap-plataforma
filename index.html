@@ -99,7 +99,8 @@
             { id: "Psicofarmacología", name: "Psicofarmacología", year: "3º", folder: "Psicofarmacología" },
             { id: "psicologia_clinica", name: "Psicología Clínica", year: "3º", folder: "Psicología Clínica" },
             { id: "psicologia_salud", name: "Psicología de la Salud", year: "3º", folder: "Psicología de la Salud" },
-            { id: "PTO", name: "Psicología del Trabajo y las Organizaciones", year: "3º", folder: "Psicología del Trabajo y las Organizaciones" }
+            { id: "PTO", name: "Psicología del Trabajo y las Organizaciones", year: "3º", folder: "Psicología del Trabajo y las Organizaciones" },
+            { id: "psicometria", name: "Psicometría", year: "3º", folder: "Psicometría" }
         ];
 
         // Subtítulos de los temas por asignatura
@@ -331,6 +332,17 @@
                 '8': 'Work Engagement y Autoeficacia Laboral',
                 '9': 'Cultura y Clima en las Organizaciones',
                 '10': 'Cambio y Desarrollo Organizacional'
+            },
+            'psicometria': {
+                '1': 'Conceptos Fundamentales y Evolución de la Psicometría',
+                '2': 'Construcción, Taxonomía y Formatos de los Test Psicológicos',
+                '3': 'La Teoría Clásica de los Test y la Fiabilidad',
+                '4': 'Análisis de Ítems y Construcción de Test',
+                '5': 'La Validez y sus Evidencias',
+                '6': 'Fiabilidad, Validez y el Efecto de la Longitud del Test',
+                '7': 'Transformación y Equiparación de Puntuaciones',
+                '8': 'Evaluación de la Calidad y Uso Ético de los Test',
+                '9': 'De la TCT a la Teoría de la Respuesta al Ítem (TRI) y los TAI'
             }
         };
 
@@ -2497,7 +2509,7 @@
                                             <h4 class="font-bold text-slate-800 text-sm ${isLocked ? '' : 'group-hover:text-indigo-600'} transition-colors">${displayTitle}</h4>
                                             ${(isGuest && isTheme1) ? `<span class="px-1.5 py-0.5 text-[8px] font-extrabold bg-amber-100 text-amber-800 rounded uppercase tracking-wider">Gratis</span>` : ''}
                                         </div>
-                                        <p class="text-[10px] text-slate-400">Modo de Aprendizaje: ${subjectId === 'fundamentos-de-estadistica' ? 'Test Teórico, Laboratorio y Fórmulas' : 'Test, Flashcards y Abiertas'}</p>
+                                        <p class="text-[10px] text-slate-400">Modo de Aprendizaje: ${(subjectId === 'fundamentos-de-estadistica' || subjectId === 'psicometria') ? 'Test Teórico, Laboratorio y Fórmulas' : 'Test, Flashcards y Abiertas'}</p>
                                     </div>
                                 </div>
                                 ${badgeHTML}

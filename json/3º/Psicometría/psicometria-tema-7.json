@@ -1,0 +1,1722 @@
+{
+  "jsonTestA": [
+    {
+      "q": "1. Bajo los supuestos de la TCT, las puntuaciones transformadas añaden información sustantiva nueva a las puntuaciones directas obtenidas por los evaluados.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Revisa la definición de transformación en el apartado 7.1.",
+      "explanation": "Según el texto, las puntuaciones transformadas no añaden información a las puntuaciones directas; simplemente se expresan en otra escala para facilitar su interpretación respecto al grupo normativo."
+    },
+    {
+      "q": "2. La transformación de puntuaciones directas en percentiles se considera una transformación de tipo no lineal de la variable original.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Considera la relación entre las distancias en puntuaciones directas y en percentiles.",
+      "explanation": "Se trata de una transformación no lineal porque diferencias iguales entre percentiles no implican necesariamente diferencias iguales en las puntuaciones directas originales."
+    },
+    {
+      "q": "3. En una distribución de puntuaciones estandarizadas $Z$, la media siempre es igual a 1 y la desviación estándar es igual a 0.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Recuerda las propiedades estadísticas de la tipificación de variables.",
+      "explanation": "El proceso de estandarización convierte la distribución original en una nueva con media $\\mu = 0$ y desviación estándar $\\sigma = 1$."
+    },
+    {
+      "q": "4. Las escalas de puntuaciones derivadas, como la Escala T, se utilizan principalmente para eliminar los valores negativos y los decimales de las puntuaciones $Z$.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Analiza la utilidad práctica de transformar una escala bipolar centrada en cero.",
+      "explanation": "Las puntuaciones derivadas buscan hacer más manejable la escala original de $Z$ (que oscila entre $-\\infty$ y $+\\infty$) mediante un cambio de origen y unidad."
+    },
+    {
+      "q": "5. El cálculo de la frecuencia acumulada $j$ de una puntuación directa incluye exclusivamente a las personas que obtuvieron esa puntuación exacta.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre frecuencia absoluta y frecuencia acumulada en el contexto de baremos.",
+      "explanation": "La frecuencia acumulada $j$ es igual al número de personas que han obtenido esa puntuación más todas aquellas que han obtenido una puntuación inferior."
+    },
+    {
+      "q": "6. Una puntuación típica $z = -1,4$ indica que el individuo se encuentra exactamente a 1,4 desviaciones estándar por debajo de la media del grupo.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "La magnitud del valor $z$ representa la distancia en unidades de desviación estándar.",
+      "explanation": "Por definición, las puntuaciones $Z$ indican el número de desviaciones estándar que un individuo se aparta de la media poblacional."
+    },
+    {
+      "q": "7. En la escala $CI_{SB}$ de Stanford-Binet, una puntuación $Z = 0$ corresponde a un Cociente Intelectual de 100 y una desviación estándar de 16.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Sustituye $Z=0$ en la fórmula lineal $CI_{SB} = 100 + 16Z_{x}$.",
+      "explanation": "La escala de Stanford-Binet establece una media de 100 y una desviación estándar de 16, por lo que $Z=0$ resulta en $CI = 100$."
+    },
+    {
+      "q": "8. Las puntuaciones eneatipos o estaninas dividen la distribución normal en 10 áreas iguales para facilitar el manejo de los datos psicológicos.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "El nombre 'stanine' proviene de 'standard nine' en inglés.",
+      "explanation": "Las estaninas o eneatipos dividen la distribución en 9 áreas, mientras que son los decatipos (sten) los que utilizan 10 áreas."
+    },
+    {
+      "q": "9. Para calcular el error estándar de la diferencia entre dos test, es necesario que ambos test sean estrictamente paralelos según la TCT.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Revisa la propuesta de Meliá (1993) sobre el contraste de puntuaciones.",
+      "explanation": "El método propuesto permite efectuar contrastes independientemente de si los test son paralelos o no, siempre que se transformen a una escala común."
+    },
+    {
+      "q": "10. El valor de la Diferencia Significativa Mínima (DSM) depende directamente del nivel de confianza elegido y del error estándar de la diferencia.",
+      "options": [
+        "Verdadero",
+        "Falso",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Observa los componentes de la fórmula $DSM = z_{c} \\cdot S_{d}$.",
+      "explanation": "La DSM se obtiene multiplicando el valor crítico $z_{c}$ (asociado al nivel de confianza) por el error estándar de la diferencia $S_{d}$."
+    },
+    {
+      "q": "11. Seleccione la afirmación correcta respecto a las escalas de Cociente Intelectual (CI) mencionadas en el texto educativo:",
+      "options": [
+        "La escala Wechsler ($CI_{W}$) emplea una desviación estándar de 15 con una media de 100.",
+        "La escala Stanford-Binet utiliza una desviación estándar de 15 para el cálculo del CI.",
+        "Ambas escalas de CI comparten la misma desviación estándar pero difieren en su media."
+      ],
+      "correct": 0,
+      "hint": "Diferencia los parámetros de Terman (Stanford-Binet) frente a los de la serie Wechsler.",
+      "explanation": "El texto especifica que $CI_{W}$ usa $S=15$ y media 100, mientras que $CI_{SB}$ usa $S=16$ y media 100."
+    },
+    {
+      "q": "12. Seleccione la afirmación correcta sobre la interpretación de las puntuaciones percentiles en un ensayo muestral normativo:",
+      "options": [
+        "Un percentil 20 implica que el sujeto ha superado al 80% de su grupo de referencia.",
+        "Las puntuaciones percentiles permiten comparar distancias absolutas entre los sujetos evaluados.",
+        "El percentil indica el porcentaje de sujetos que obtienen una puntuación inferior o igual."
+      ],
+      "correct": 2,
+      "hint": "Recuerda la definición de rango percentilar y su naturaleza como escala ordinal.",
+      "explanation": "La interpretación de un percentil se realiza en términos del porcentaje de evaluados con puntuación inferior o igual al rango."
+    },
+    {
+      "q": "13. Seleccione la afirmación correcta sobre el proceso de cálculo de los decatipos (puntuaciones sten) según el manual:",
+      "options": [
+        "La fórmula de transformación lineal aplicada para obtener decatipos es $DEC = 2Z + 5,5$.",
+        "Los decatipos dividen la distribución en 9 áreas discretas para simplificar la evaluación.",
+        "El redondeo de decatipos no es necesario al ser una escala de naturaleza continua."
+      ],
+      "correct": 0,
+      "hint": "Identifica la constante de origen y la pendiente de la escala sten en el apartado 7.1.2.",
+      "explanation": "Para los decatipos se emplea $DEC = 2Z + 5,5$, generando una escala de 10 áreas con media 5,5 y desviación estándar 0,5 en unidades $Z$."
+    },
+    {
+      "q": "14. Seleccione la afirmación correcta sobre el contraste de diferencias de puntuaciones propuesto por Meliá (1993):",
+      "options": [
+        "Solo es aplicable cuando comparamos al mismo individuo en dos test totalmente idénticos.",
+        "Requiere transformar las puntuaciones a una escala común si proceden de test diferentes.",
+        "El error estándar de la diferencia es la media aritmética de los errores de cada test."
+      ],
+      "correct": 1,
+      "hint": "Considera la necesidad de comparabilidad métrica antes de realizar la resta de valores.",
+      "explanation": "Para que la diferencia tenga sentido al venir de escalas distintas, es imperativo transformarlas primero a puntuaciones estándar $Z$."
+    },
+    {
+      "q": "15. Seleccione la afirmación correcta respecto a la varianza de la diferencia en el contraste de puntuaciones:",
+      "options": [
+        "La varianza de la diferencia es la suma de las varianzas de error de cada puntuación.",
+        "La varianza de la diferencia es igual a la raíz cuadrada de los errores típicos sumados.",
+        "Esta varianza solo depende del coeficiente de fiabilidad global del test más preciso."
+      ],
+      "correct": 0,
+      "hint": "Revisa la Ecuación 60 del texto sobre la composición de $S_{d}^{2}$.",
+      "explanation": "El texto establece que $S_{d}^{2} = S_{e_{1}}^{2} + S_{e_{2}}^{2}$, es decir, la suma de las varianzas de error asociadas."
+    },
+    {
+      "q": "16. Seleccione la afirmación correcta sobre las puntuaciones estandarizadas derivadas normalizadas:",
+      "options": [
+        "Mantienen toda la información original sobre la posición relativa dentro de cada categoría.",
+        "Su principal desventaja es que no permiten expresar la posición mediante un único dígito.",
+        "Son escalas discretas que representan áreas, lo que conlleva cierta pérdida de información."
+      ],
+      "correct": 2,
+      "hint": "Piensa en el efecto de agrupar valores continuos de $Z$ en categorías enteras como eneatipos.",
+      "explanation": "Al ser escalas discretas, se pierde la posición exacta del individuo dentro de la categoría, aunque ganan en facilidad de interpretación."
+    },
+    {
+      "q": "17. Seleccione la afirmación correcta sobre el cálculo de la puntuación típica $Z$ a partir de una puntuación $X$:",
+      "options": [
+        "El valor $Z$ se obtiene restando la media y dividiendo por la desviación estándar original.",
+        "La puntuación típica $Z$ resultante siempre oscila de forma empírica entre los valores 0 y 100.",
+        "La escala $Z$ es de tipo ordinal y no permite conocer la distancia relativa respecto a la media."
+      ],
+      "correct": 0,
+      "hint": "Identifica los componentes de la Ecuación 58: $Z = \\frac{x_{i} - m_{x}}{S_{x}}$.",
+      "explanation": "La estandarización consiste en centrar la variable (restar media) y reducirla (dividir por desviación típica)."
+    },
+    {
+      "q": "18. Seleccione la afirmación correcta sobre la Escala T mencionada en las transformaciones lineales:",
+      "options": [
+        "Tiene una media de 50 y un rango habitual entre 20 y 80 para valores de $\\pm 3Z$.",
+        "Es una escala que divide la distribución en 9 áreas según la fórmula $T = 10Z + 50$.",
+        "Fue desarrollada originalmente para la serie de pruebas de inteligencia de Wechsler."
+      ],
+      "correct": 0,
+      "hint": "Relaciona los límites habituales de $Z$ con la transformación de la Escala T.",
+      "explanation": "Con media 50 y $S=10$, los valores $\\pm 3Z$ se corresponden con $50 \\pm 30$, es decir, de 20 a 80."
+    },
+    {
+      "q": "19. Seleccione la afirmación correcta sobre la construcción de baremos normativos en psicometría:",
+      "options": [
+        "Se basa en el cálculo de puntuaciones percentiles sobre una muestra de baremación.",
+        "Los baremos son independientes de la calidad del diseño de extracción de la muestra.",
+        "El uso de intervalos de puntuación es obligatorio para evitar perder precisión estadística."
+      ],
+      "correct": 0,
+      "hint": "Consulta la sección 7.1.1 sobre cómo se generan los perfiles de referencia.",
+      "explanation": "Los baremos se construyen aplicando el cálculo de percentiles sobre las puntuaciones directas del ensayo muestral normativo."
+    },
+    {
+      "q": "20. Seleccione la afirmación correcta sobre el error estándar del test ($S_{e}$) en el ejemplo del texto:",
+      "options": [
+        "Se calcula multiplicando la desviación estándar por la raíz de uno menos la fiabilidad.",
+        "Es un valor constante que es igual a 1,96 para cualquier test con fiabilidad superior a 0,90.",
+        "Su valor es independiente de la variabilidad de las puntuaciones directas en la muestra."
+      ],
+      "correct": 0,
+      "hint": "Revisa el cálculo inicial del ejemplo en la página 82: $S_{e} = 4,15 \\sqrt{1 - 0,93}$.",
+      "explanation": "El error típico de medida se deriva de la desviación estándar de la prueba y su coeficiente de fiabilidad ($S_{e} = S_{x} \\sqrt{1 - r_{xx}}$)."
+    },
+    {
+      "q": "21. Seleccione la afirmación correcta sobre los límites de las áreas en la escala de eneatipos:",
+      "options": [
+        "Los límites de las 9 áreas se fijan en función de valores críticos de $Z$ normalizados.",
+        "El eneatipo central (5) abarca todas las puntuaciones $Z$ que se encuentran entre -1 y +1.",
+        "Cada eneatipo representa exactamente el 10% de la población bajo la curva normal."
+      ],
+      "correct": 0,
+      "hint": "Observa la Tabla 15 y cómo se distribuyen los puntos de corte en el eje de abscisas.",
+      "explanation": "Los límites se establecen sobre valores $Z$ (ej. $-1,75$, $-1,25$, etc.) para definir las 9 categorías de la escala."
+    },
+    {
+      "q": "22. Seleccione la afirmación correcta sobre el contraste de la diferencia estandarizada $Z_{d}$:",
+      "options": [
+        "Un valor obtenido de $2,576$ indica diferencias significativas al nivel de confianza del 95%.",
+        "Si el valor de $Z_{d}$ es menor que $1,96$, se rechaza la hipótesis de no diferencias.",
+        "La diferencia estandarizada solo puede calcularse si las varianzas de error son idénticas."
+      ],
+      "correct": 0,
+      "hint": "Compara el valor empírico del ejemplo con el valor crítico teórico de 1,96.",
+      "explanation": "Como $2,576 > 1,96$, el resultado cae en la región de rechazo de la hipótesis nula, siendo significativo."
+    },
+    {
+      "q": "23. Seleccione la afirmación correcta sobre el significado de una puntuación percentil de 77,14:",
+      "options": [
+        "Significa que el evaluado supera al 77,14% de los sujetos de su grupo normativo.",
+        "Indica que el sujeto ha respondido correctamente al 77,14% de los ítems del examen.",
+        "Representa una posición de 0,77 desviaciones estándar por encima de la media del grupo."
+      ],
+      "correct": 0,
+      "hint": "No confundas el porcentaje de sujetos superados con el porcentaje de aciertos.",
+      "explanation": "El percentil informa de la posición relativa; estar en el percentil 77,14 significa dejar por debajo a ese porcentaje de la muestra."
+    },
+    {
+      "q": "24. Seleccione la afirmación correcta sobre la varianza de error en el ejemplo del capítulo:",
+      "options": [
+        "Al usar el mismo test en dos momentos, se asume el mismo error estándar para ambos.",
+        "La varianza de error se duplica automáticamente al pasar de un test a dos aplicaciones.",
+        "El error estándar de la diferencia es siempre menor que el error estándar de un solo test."
+      ],
+      "correct": 0,
+      "hint": "Analiza cómo se aplica la Ecuación 61 cuando las fuentes de error provienen del mismo instrumento.",
+      "explanation": "En el ejemplo, al ser el mismo test, se introduce $1,098^{2}$ dos veces en la raíz para hallar el error de la diferencia."
+    },
+    {
+      "q": "25. Seleccione la afirmación correcta sobre la utilidad de las puntuaciones estandarizadas derivadas:",
+      "options": [
+        "Permiten convertir la escala original en una nueva escala más fácil de interpretar.",
+        "Su función principal es aumentar artificialmente la fiabilidad de las medidas obtenidas.",
+        "Sustituyen por completo la necesidad de calcular errores típicos de medida en el test."
+      ],
+      "correct": 0,
+      "hint": "Considera por qué preferimos usar CI o escalas T en lugar de valores decimales con signo.",
+      "explanation": "Buscan manejar escalas positivas y sin decimales excesivos, manteniendo la información de la puntuación típica original."
+    },
+    {
+      "q": "26. Seleccione la afirmación incorrecta sobre la naturaleza de las puntuaciones percentiles:",
+      "options": [
+        "Constituyen una escala de intervalo donde la distancia entre percentiles es constante.",
+        "Se calculan a partir de la frecuencia acumulada dividida por el total de individuos.",
+        "Son útiles para ubicar a un sujeto respecto a su población sin requerir normalidad."
+      ],
+      "correct": 0,
+      "hint": "Revisa si en una escala ordinal las unidades de medida son equivalentes en todo el rango.",
+      "explanation": "Incorrecto: Los percentiles son una escala ordinal, por lo que no se cumple la igualdad de intervalos entre puntos."
+    },
+    {
+      "q": "27. Seleccione la afirmación incorrecta respecto a las puntuaciones típicas o estandarizadas $Z$:",
+      "options": [
+        "Su valor indica el número de desviaciones estándar que el sujeto se aleja de la media.",
+        "La distribución de puntuaciones $Z$ tiene siempre una media de cero y varianza de uno.",
+        "Son puntuaciones discretas que solo pueden tomar valores enteros entre el rango -3 y +3."
+      ],
+      "correct": 2,
+      "hint": "Piensa en si $Z$ es una variable continua que admite decimales o una escala de categorías.",
+      "explanation": "Incorrecto: Las puntuaciones $Z$ son continuas y pueden tomar cualquier valor decimal, no están limitadas a enteros."
+    },
+    {
+      "q": "28. Seleccione la afirmación incorrecta sobre las puntuaciones derivadas normalizadas (stanines/sten):",
+      "options": [
+        "Se pierde información sobre la posición exacta del individuo dentro de cada categoría.",
+        "Son escalas continuas que permiten un contraste paramétrico directo entre individuos.",
+        "Permiten expresar la posición de una persona mediante el uso de un único dígito entero."
+      ],
+      "correct": 1,
+      "hint": "Determina si una escala dividida en 9 o 10 'cajas' cerradas puede considerarse continua.",
+      "explanation": "Incorrecto: Son escalas discretas representadas por áreas, lo que precisamente implica pérdida de continuidad."
+    },
+    {
+      "q": "29. Seleccione la afirmación incorrecta sobre la equiparación de puntuaciones en psicometría:",
+      "options": [
+        "Dos puntuaciones directas se consideran equivalentes si tienen percentiles iguales.",
+        "La equiparación es innecesaria cuando comparamos test que miden distintos constructos.",
+        "Solo se pueden equiparar puntuaciones si los test tienen exactamente la misma media."
+      ],
+      "correct": 2,
+      "hint": "Considera la utilidad de la tipificación para hacer comparables escalas con métricas distintas.",
+      "explanation": "Incorrecto: Precisamente se equiparan puntuaciones porque las medias y desviaciones originales suelen ser distintas."
+    },
+    {
+      "q": "30. Seleccione la afirmación incorrecta sobre el error estándar de la diferencia ($S_{d}$):",
+      "options": [
+        "Se define matemáticamente como la raíz cuadrada de la suma de las varianzas de error.",
+        "Aumenta proporcionalmente a medida que los test comparados ganan en fiabilidad.",
+        "Es el denominador utilizado para estandarizar la diferencia bruta entre dos medidas."
+      ],
+      "correct": 1,
+      "hint": "Piensa en la relación inversa entre el error de medida ($S_{e}$) y la fiabilidad ($r_{xx}$).",
+      "explanation": "Incorrecto: Si la fiabilidad aumenta, el error típico disminuye, y por ende el error de la diferencia también disminuye."
+    },
+    {
+      "q": "31. Seleccione la afirmación incorrecta respecto al cálculo de percentiles según la Ecuación 57:",
+      "options": [
+        "El valor $N$ corresponde a la frecuencia acumulada de la puntuación directa más alta.",
+        "La variable $j$ representa la frecuencia absoluta de la puntuación que se desea transformar.",
+        "El resultado se multiplica por 100 para expresar la posición en términos de porcentaje."
+      ],
+      "correct": 1,
+      "hint": "Verifica el significado de $j$ en el texto de la página 77.",
+      "explanation": "Incorrecto: $j$ es la frecuencia acumulada de la puntuación, no la frecuencia absoluta simple."
+    },
+    {
+      "q": "32. Seleccione la afirmación incorrecta sobre el rango de las escalas de Cociente Intelectual:",
+      "options": [
+        "La escala $CI_{SB}$ puede tomar teóricamente valores entre 20 y 180 para $\\pm 5$ sigmas.",
+        "Los valores empíricos más habituales para el $CI_{W}$ se sitúan entre 55 y 145 puntos.",
+        "Ambas escalas de CI tienen un valor mínimo absoluto de cero puntos en cualquier sujeto."
+      ],
+      "correct": 2,
+      "hint": "Analiza los límites teóricos mencionados para las escalas $CI_{SB}$ y $CI_{W}$.",
+      "explanation": "Incorrecto: Las escalas de CI suelen tener suelos teóricos por encima de cero (ej. 20 o 25) según su transformación lineal."
+    },
+    {
+      "q": "33. Seleccione la afirmación incorrecta sobre el proceso de estandarización de una variable $X$:",
+      "options": [
+        "Al estandarizar, la forma de la distribución original se mantiene (es transformación lineal).",
+        "La nueva desviación estándar de la distribución de puntuaciones $Z$ siempre es igual a 1.",
+        "El proceso requiere obligatoriamente que la muestra original siga una distribución normal."
+      ],
+      "correct": 2,
+      "hint": "Diferencia entre estandarizar (lineal) y normalizar (no lineal).",
+      "explanation": "Incorrecto: Se puede calcular $Z$ para cualquier distribución, aunque no sea normal; otra cosa es la normalización posterior."
+    },
+    {
+      "q": "34. Seleccione la afirmación incorrecta sobre el contraste de medias y diferencias de puntuación:",
+      "options": [
+        "El valor crítico de $Z$ para un nivel de confianza del 95% es aproximadamente de 1,96.",
+        "La hipótesis nula en este tipo de contrastes asume que existen diferencias significativas.",
+        "La DSM permite conocer el umbral mínimo de puntos para alcanzar significación estadística."
+      ],
+      "correct": 1,
+      "hint": "Recuerda la definición estándar de Hipótesis Nula ($H_{0}$).",
+      "explanation": "Incorrecto: La hipótesis nula es la hipótesis de 'no diferencias'; se asume que la diferencia es cero por azar."
+    },
+    {
+      "q": "35. Seleccione la afirmación incorrecta sobre la Escala de Decatipos (Sten):",
+      "options": [
+        "Cada categoría de la escala se redondea y representa mediante un solo dígito entero.",
+        "Las franjas extremas de la escala quedan abiertas para incluir puntuaciones muy alejadas.",
+        "La media de esta escala es 5 y su desviación estándar es 2 en unidades de la escala original."
+      ],
+      "correct": 2,
+      "hint": "Deduce la media y desviación a partir de la fórmula $DEC = 2Z + 5,5$.",
+      "explanation": "Incorrecto: La media de los decatipos es 5,5 (cuando $Z=0$) y la desviación estándar es 2 (la pendiente de la recta)."
+    },
+    {
+      "q": "36. Seleccione la afirmación incorrecta sobre los baremos en psicología clínica:",
+      "options": [
+        "Permiten determinar si una puntuación en depresión es preocupante respecto a la norma.",
+        "Son herramientas que otorgan un significado absoluto e independiente a la puntuación directa.",
+        "Su calidad es sensible a los sesgos producidos por una mala selección de la muestra."
+      ],
+      "correct": 1,
+      "hint": "Revisa el primer párrafo del capítulo 7.1 sobre el significado de las puntuaciones.",
+      "explanation": "Incorrecto: Bajo la TCT la puntuación no tiene significado absoluto; solo adquiere sentido en comparación con la norma."
+    },
+    {
+      "q": "37. Seleccione la afirmación incorrecta sobre la varianza de error ($S_{e}^{2}$) en el contraste de Meliá:",
+      "options": [
+        "Es un componente crítico para determinar el error estándar de la diferencia entre test.",
+        "Se calcula elevando al cuadrado el producto de la desviación típica por la fiabilidad.",
+        "Representa la incertidumbre asociada a la medida de un constructo en un test dado."
+      ],
+      "correct": 1,
+      "hint": "Revisa la fórmula del error típico de medida en la página 82.",
+      "explanation": "Incorrecto: $S_{e}$ usa $\\sqrt{1-r_{xx}}$, no la fiabilidad directa; la varianza de error es el cuadrado de ese término."
+    },
+    {
+      "q": "38. Seleccione la afirmación incorrecta sobre la relación entre $Z$ y los eneatipos:",
+      "options": [
+        "Un valor $Z = 0$ daría como resultado un eneatipo de 5 según la fórmula de transformación.",
+        "La escala de eneatipos abarca un rango de valores que se divide en exactamente 9 áreas.",
+        "Para asignar el área, basta con multiplicar el valor $Z$ por 5,5 y sumarle 2 unidades."
+      ],
+      "correct": 2,
+      "hint": "Verifica la fórmula exacta para los eneatipos: $E = 2Z + 5$.",
+      "explanation": "Incorrecto: La fórmula descrita (multiplicar por 5,5) no se corresponde con los eneatipos ni con los decatipos."
+    },
+    {
+      "q": "39. Seleccione la afirmación incorrecta sobre la utilidad de las puntuaciones transformadas:",
+      "options": [
+        "Facilitan la comunicación de resultados a profesionales y usuarios de los test.",
+        "Permiten la comparación de puntuaciones obtenidas por diferentes personas en un test.",
+        "Aumentan la precisión de la medida al reducir el error aleatorio inherente al instrumento."
+      ],
+      "correct": 2,
+      "hint": "Piensa si cambiar la escala de un termómetro hace que este sea más preciso midiendo.",
+      "explanation": "Incorrecto: Transformar la puntuación no reduce el error de medida; el error es una propiedad del test y su aplicación."
+    },
+    {
+      "q": "40. Seleccione la afirmación incorrecta sobre el ejemplo del test aplicado en dos momentos (pág. 82):",
+      "options": [
+        "La diferencia observada de 4 puntos resultó ser estadísticamente significativa.",
+        "La DSM calculada para el test fue de 3,04 puntos con una probabilidad del 95%.",
+        "El coeficiente de fiabilidad del test (0,93) es irrelevante para calcular el valor $Z_{d}$."
+      ],
+      "correct": 2,
+      "hint": "Analiza qué datos fueron necesarios para obtener el denominador de la fracción.",
+      "explanation": "Incorrecto: La fiabilidad es fundamental para calcular el error típico de medida, que a su vez define el error de la diferencia."
+    }
+  ],
+  "jsonTestB": [
+    {
+      "q": "Si un evaluado obtiene una puntuación directa de 120 en un test con $\\mu=100$ y $\\sigma=15$, su puntuación $Z$ transformada es ____.",
+      "options": [
+        "$Z = +1,33$",
+        "$Z = +1,25$",
+        "$Z = +1,50$"
+      ],
+      "correct": 0,
+      "hint": "Recuerda que la fórmula es $(X - \\mu) / \\sigma$.",
+      "explanation": "Aplicando $Z = \\frac{120 - 100}{15} = \\frac{20}{15} = 1,333...$. Los errores comunes incluyen invertir el numerador."
+    },
+    {
+      "q": "En una escala de eneatipos, un sujeto con una puntuación típica $Z = -0,85$ obtendría un valor de ____ redondeado al entero más próximo.",
+      "options": [
+        "$E = 3,30$",
+        "$E = 3,00$",
+        "$E = 4,00$"
+      ],
+      "correct": 1,
+      "hint": "La fórmula de transformación es $E = 2Z + 5$.",
+      "explanation": "Calculando $E = 2(-0,85) + 5 = -1,7 + 5 = 3,3$. Al ser una escala discreta, se redondea al valor entero 3."
+    },
+    {
+      "q": "Para un test de inteligencia Wechsler ($CI_W$), una puntuación $Z = 1,45$ se traduce en un CI de ____.",
+      "options": [
+        "$CI = 121,75$",
+        "$CI = 123,20$",
+        "$CI = 121,50$"
+      ],
+      "correct": 0,
+      "hint": "Usa la media 100 y desviación estándar 15.",
+      "explanation": "La escala $CI_W$ es $100 + 15(1,45) = 100 + 21,75 = 121,75$. Un error común es usar $\\sigma=16$ de la escala SB."
+    },
+    {
+      "q": "Si el error estándar de medida de un test es $S_{e} = 2,45$, el error estándar de la diferencia para dos aplicaciones del mismo test es ____.",
+      "options": [
+        "$S_{d} = 3,46$",
+        "$S_{d} = 4,90$",
+        "$S_{d} = 3,12$"
+      ],
+      "correct": 0,
+      "hint": "La fórmula es $\\sqrt{S_{e1}^2 + S_{e2}^2}$.",
+      "explanation": "Como es el mismo test: $\\sqrt{2,45^2 + 2,45^2} = \\sqrt{6,0025 + 6,0025} = \\sqrt{12,005} \\approx 3,46$."
+    },
+    {
+      "q": "Un evaluado con una puntuación percentil $P_{j} = 85$ en una muestra de $N=240$ sujetos posee una frecuencia acumulada de ____.",
+      "options": [
+        "$j = 204$",
+        "$j = 198$",
+        "$j = 212$"
+      ],
+      "correct": 0,
+      "hint": "Despeja $j$ de la fórmula $P = (j \\cdot 100) / N$.",
+      "explanation": "Despejando: $j = (P \\cdot N) / 100 = (85 \\cdot 240) / 100 = 204$. No confundir con la frecuencia absoluta."
+    },
+    {
+      "q": "La puntuación estandarizada derivada en escala T para un individuo con $Z = -2,12$ es exactamente ____.",
+      "options": [
+        "$T = 28,80$",
+        "$T = 30,20$",
+        "$T = 29,40$"
+      ],
+      "correct": 0,
+      "hint": "La escala T tiene $\\mu=50$ y $\\sigma=10$.",
+      "explanation": "Calculamos $T = 50 + 10(-2,12) = 50 - 21,2 = 28,8$. El error típico es sumar en lugar de restar."
+    },
+    {
+      "q": "En el contraste de puntuaciones, si $S_{d} = 1,55$ y deseamos un NC del 95% ($Z_c=1,96$), la Diferencia Significativa Mínima (DSM) es ____.",
+      "options": [
+        "$DSM = 3,04$",
+        "$DSM = 3,15$",
+        "$DSM = 2,98$"
+      ],
+      "correct": 0,
+      "hint": "La fórmula es $DSM = Z_c \\cdot S_{d}$.",
+      "explanation": "Operando: $1,96 \\cdot 1,55 = 3,038$. Redondeando obtenemos 3,04. Un error es dividir en lugar de multiplicar."
+    },
+    {
+      "q": "Un decatipo (sten) correspondiente a una puntuación típica $Z = 0,75$ se calcula como ____.",
+      "options": [
+        "$DEC = 7,00$",
+        "$DEC = 6,50$",
+        "$DEC = 7,50$"
+      ],
+      "correct": 0,
+      "hint": "La fórmula es $DEC = 2Z + 5,5$.",
+      "explanation": "Sustituyendo: $2(0,75) + 5,5 = 1,5 + 5,5 = 7,0$. No confundir con la fórmula de eneatipos ($2Z+5$)."
+    },
+    {
+      "q": "Si un test tiene una $S_x = 10$ y una fiabilidad $r_{xx} = 0,84$, su error estándar de medida ($S_e$) es ____.",
+      "options": [
+        "$S_e = 4,00$",
+        "$S_e = 6,00$",
+        "$S_e = 2,50$"
+      ],
+      "correct": 0,
+      "hint": "Usa la fórmula $S_e = S_x \\sqrt{1 - r_{xx}}$.",
+      "explanation": "Cálculo: $10 \\sqrt{1 - 0,84} = 10 \\sqrt{0,16} = 10 \\cdot 0,4 = 4$. Un error común es no sacar la raíz cuadrada."
+    },
+    {
+      "q": "La transformación de puntuaciones directas a percentiles se considera una transformación de tipo ____.",
+      "options": [
+        "No lineal",
+        "Lineal $ $",
+        "Uniforme"
+      ],
+      "correct": 0,
+      "hint": "Consulta la sección 7.1.1 del texto.",
+      "explanation": "Los percentiles son una transformación no lineal ya que no mantienen la igualdad de intervalos de la escala original."
+    },
+    {
+      "q": "Un cociente intelectual Stanford-Binet ($CI_{SB}$) de 116 equivale a una puntuación típica $Z$ de ____.",
+      "options": [
+        "$Z = +1,00$",
+        "$Z = +1,06$",
+        "$Z = +1,15$"
+      ],
+      "correct": 0,
+      "hint": "Despeja $Z$ de $100 + 16Z = 116$.",
+      "explanation": "Restamos 100 a 116 y dividimos por 16: $16 / 16 = 1$. El distractor 1,06 viene de usar $\\sigma=15$ por error."
+    },
+    {
+      "q": "Si un sujeto pasa de $Z = 1$ a $Z = 2$, su eneatipo aumenta en ____ unidades.",
+      "options": [
+        "2 unidades",
+        "1 unidad $ $",
+        "3 unidades"
+      ],
+      "correct": 0,
+      "hint": "Compara $E = 2(1)+5$ frente a $E = 2(2)+5$.",
+      "explanation": "Eneotipo para $Z=1$ es 7. Para $Z=2$ es 9. La diferencia es $9 - 7 = 2$. Es la pendiente de la recta."
+    },
+    {
+      "q": "En una distribución normal, una puntuación típica $Z = 0$ corresponde siempre a un percentil ____.",
+      "options": [
+        "$P = 50,00$",
+        "$P = 0,00 $",
+        "$P = 100,0$"
+      ],
+      "correct": 0,
+      "hint": "La media en una normal divide la distribución en dos partes iguales.",
+      "explanation": "Por definición, en una distribución simétrica, la media (donde $Z=0$) deja el 50% de los casos por debajo."
+    },
+    {
+      "q": "La varianza de la diferencia ($S_d^2$) entre dos test con errores $S_{e1}=3$ y $S_{e2}=4$ es ____.",
+      "options": [
+        "$S_d^2 = 25,0$",
+        "$S_d^2 = 5,00$",
+        "$S_d^2 = 7,00$"
+      ],
+      "correct": 0,
+      "hint": "La varianza de la diferencia es la suma de las varianzas de error.",
+      "explanation": "Fórmula: $S_{e1}^2 + S_{e2}^2 = 3^2 + 4^2 = 9 + 16 = 25$. El distractor 5 es la desviación estándar, no la varianza."
+    },
+    {
+      "q": "Si un evaluado obtiene un decatipo de 10, su puntuación típica mínima debe ser ____.",
+      "options": [
+        "$Z \\ge 2,25$",
+        "$Z \\ge 2,00$",
+        "$Z \\ge 2,50$"
+      ],
+      "correct": 0,
+      "hint": "Resuelve $2Z + 5,5 = 10$.",
+      "explanation": "Calculando: $2Z = 10 - 5,5 = 4,5 \\rightarrow Z = 2,25$. Puntuaciones superiores se truncan a 10."
+    },
+    {
+      "q": "Un aumento de 15 puntos en la escala $CI_W$ equivale a un aumento de ____ en la escala T.",
+      "options": [
+        "10 unidades",
+        "15 unidades",
+        "1 unidad $ $"
+      ],
+      "correct": 0,
+      "hint": "Ambos representan una desviación estándar ($1\\sigma$).",
+      "explanation": "15 puntos en $CI_W$ es $1Z$. En la escala T, $1Z$ equivale a 10 puntos (su desviación estándar)."
+    },
+    {
+      "q": "Si comparamos dos puntuaciones $X_1=45$ y $X_2=40$ con $S_d = 2$, el valor de la diferencia estandarizada $Z_d$ es ____.",
+      "options": [
+        "$Z_d = 2,50$",
+        "$Z_d = 5,00$",
+        "$Z_d = 2,25$"
+      ],
+      "correct": 0,
+      "hint": "Aplica $Z_d = (X_1 - X_2) / S_d$.",
+      "explanation": "Cálculo: $(45 - 40) / 2 = 5 / 2 = 2,5$. Errores comunes incluyen no dividir por el error estándar."
+    },
+    {
+      "q": "Una puntuación típica de $Z = -3$ en la escala de Stanford-Binet resulta en un valor de ____.",
+      "options": [
+        "$CI = 52,00$",
+        "$CI = 55,00$",
+        "$CI = 48,00$"
+      ],
+      "correct": 0,
+      "hint": "Usa $100 + 16Z$.",
+      "explanation": "Cálculo: $100 + 16(-3) = 100 - 48 = 52$. El valor 55 corresponde a la escala Wechsler."
+    },
+    {
+      "q": "Si la frecuencia acumulada de una puntuación es $j=50$ en una muestra de $N=50$, el percentil es ____.",
+      "options": [
+        "$P = 100,0$",
+        "$P = 50,00$",
+        "$P = 1,00 $"
+      ],
+      "correct": 0,
+      "hint": "Aplica la fórmula del percentil directamente.",
+      "explanation": "$(50 \\cdot 100) / 50 = 100$. Es la puntuación más alta de la distribución."
+    },
+    {
+      "q": "Un eneatipo de 5 abarca el intervalo de puntuaciones típicas $Z$ entre ____.",
+      "options": [
+        "-0,25 a 0,25",
+        "-0,50 a 0,50",
+        "-0,75 a 0,75"
+      ],
+      "correct": 0,
+      "hint": "Consulta la Tabla 15 del documento.",
+      "explanation": "Según el baremo de eneatipos, el valor central (5) se sitúa entre $-0,25$ y $+0,25$ desviaciones típicas."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre las puntuaciones percentiles es correcta según el texto?",
+      "options": [
+        "Son una escala ordinal",
+        "Son transformaciones",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Revisa las características de los percentiles en la página 77.",
+      "explanation": "Los percentiles son escalas ordinales y transformaciones no lineales que indican posición relativa."
+    },
+    {
+      "q": "Las puntuaciones estandarizadas $Z$ permiten conocer de forma inmediata:",
+      "options": [
+        "La distancia media",
+        "El signo relativo",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Analiza las propiedades de la media y desviación en la página 79.",
+      "explanation": "Indican la distancia a la media en unidades de desviación estándar y si la puntuación es superior o inferior."
+    },
+    {
+      "q": "Para que el contraste de puntuaciones de Meliá (1993) sea válido, se requiere:",
+      "options": [
+        "Error estándar $ $",
+        "Escala común $ $",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Revisa los requisitos de comparación en la página 81.",
+      "explanation": "Requiere calcular el error de la diferencia y que ambas puntuaciones estén en la misma métrica (usualmente Z)."
+    },
+    {
+      "q": "La escala de eneatipos o estaninas se caracteriza por lo siguiente:",
+      "options": [
+        "Tener 9 áreas $ $",
+        "Media igual a 5 ",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Ver la definición de 'standard nine' en la página 80.",
+      "explanation": "Divide la distribución en 9 áreas, tiene media 5 y cada unidad equivale a $0,5Z$ (pendiente 2)."
+    },
+    {
+      "q": "Las puntuaciones estandarizadas derivadas (T, CI, E) tienen como objetivo:",
+      "options": [
+        "Evitar decimales",
+        "Eliminar signos",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Lee la justificación de estas escalas en la página 79.",
+      "explanation": "Se crean para evitar valores negativos y decimales, facilitando la interpretación clínica y educativa."
+    },
+    {
+      "q": "¿Qué elementos intervienen en el cálculo de la Diferencia Significativa Mínima (DSM)?",
+      "options": [
+        "Valor crítico Z ",
+        "Error estándar $d$",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Mira la Ecuación 63 en el documento.",
+      "explanation": "La DSM depende del nivel de confianza (Z crítico) y de la dispersión del error de la diferencia ($S_d$)."
+    },
+    {
+      "q": "Sobre las puntuaciones transformadas en general, el texto afirma que:",
+      "options": [
+        "No dan más info",
+        "Ubican al sujeto",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Lee la introducción del capítulo 7.",
+      "explanation": "No añaden información técnica a la directa, solo cambian la escala para facilitar la ubicación grupal."
+    },
+    {
+      "q": "El cálculo de la frecuencia acumulada ($j$) para un percentil implica:",
+      "options": [
+        "Sumar absolutas",
+        "Ordenación total",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Revisa los pasos de tabulación en la página 77.",
+      "explanation": "Requiere ordenar las puntuaciones de menor a mayor y sumar las frecuencias de los valores inferiores."
+    },
+    {
+      "q": "Las puntuaciones típicas normalizadas se diferencian de las derivadas en que:",
+      "options": [
+        "Son áreas de $Z$",
+        "Son discretas $ $",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Revisa la sección de escalas normalizadas en la página 80.",
+      "explanation": "Representan rangos o áreas bajo la curva normal y suelen expresarse en valores enteros únicos."
+    },
+    {
+      "q": "En el ejemplo del test de depresión (pág 78), un percentil 20 indica que:",
+      "options": [
+        "Puntuación baja ",
+        "80% superan $ $",
+        "Todas las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Interpreta el significado de 'estar por debajo' en un constructo clínico.",
+      "explanation": "Estar en el percentil 20 significa que el 80% de la población tiene niveles de depresión superiores."
+    },
+    {
+      "q": "Si un test tiene fiabilidad perfecta ($r_{xx} = 1,0$), el error estándar de la diferencia es:",
+      "options": [
+        "$S_d = 1,00$",
+        "$S_d = 0,50$",
+        "Ninguna de las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Si $r_{xx}=1$, ¿cuánto vale $S_e$?",
+      "explanation": "Si la fiabilidad es 1, $S_e = 0$, por lo que $S_d = \\sqrt{0^2 + 0^2} = 0$. Ninguna opción es 0."
+    },
+    {
+      "q": "Un sujeto con $Z = 4,0$ en la escala de eneatipos obtendría un valor de:",
+      "options": [
+        "$E = 12,0$",
+        "$E = 11,0$",
+        "Ninguna de las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Recuerda los límites de la escala de eneatipos.",
+      "explanation": "Aunque $2(4)+5 = 13$, la escala está limitada a 9 categorías. El valor máximo es 9."
+    },
+    {
+      "q": "La puntuación $Z$ que deja por debajo de sí al 97,5% de la población es:",
+      "options": [
+        "$Z = 1,64$",
+        "$Z = 2,33$",
+        "Ninguna de las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Es el valor crítico para un nivel de confianza bilateral del 95%.",
+      "explanation": "El valor exacto es $Z = 1,96$. Los valores proporcionados son para el 90% y 99% (unilaterales)."
+    },
+    {
+      "q": "Si $X_1 = 10, X_2 = 10$, $S_{e1} = 1$ y $S_{e2} = 1$, la probabilidad de que la diferencia sea azarosa es:",
+      "options": [
+        "$p < 0,05$",
+        "$p < 0,01$",
+        "Ninguna de las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Calcula $Z_d$ para una diferencia de cero.",
+      "explanation": "Como la diferencia es 0, $Z_d = 0$. Esto no es significativo; la probabilidad es mucho mayor que 0,05."
+    },
+    {
+      "q": "En la escala Wechsler ($CI_W$), una puntuación de 100 corresponde a un eneatipo de:",
+      "options": [
+        "$E = 6,00$",
+        "$E = 4,00$",
+        "Ninguna de las anteriores"
+      ],
+      "correct": 2,
+      "hint": "100 es la media en CI. ¿Cuál es la media en eneatipos?",
+      "explanation": "La media en $CI_W$ es 100 ($Z=0$). El eneatipo para $Z=0$ es $E=5$. Ninguna opción es 5."
+    },
+    {
+      "q": "El valor del percentil para la puntuación directa 10 en la Tabla 14 es:",
+      "options": [
+        "$P = 98,57$",
+        "$P = 99,00$",
+        "Ninguna de las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Fíjate en la última fila de la frecuencia acumulada.",
+      "explanation": "En la tabla 14, para PD=10, la frecuencia acumulada es $N=70$, por lo que $P=100$."
+    },
+    {
+      "q": "Una puntuación T de 80 en términos de desviación estándar se sitúa a:",
+      "options": [
+        "$1,5\\sigma$",
+        "$2,0\\sigma$",
+        "Ninguna de las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Despeja $Z$ de $50 + 10Z = 80$.",
+      "explanation": "Calculando: $10Z = 30 \\rightarrow Z = 3$. Se sitúa a 3 desviaciones estándar, no a 1,5 o 2."
+    },
+    {
+      "q": "Para una muestra de $N=1000$, un sujeto en la posición $j=1$ tiene un percentil de:",
+      "options": [
+        "$P = 0,01$",
+        "$P = 0,10$",
+        "Ninguna de las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Aplica $(j \\cdot 100) / N$.",
+      "explanation": "Cálculo: $(1 \\cdot 100) / 1000 = 100 / 1000 = 0,1$. La opción A es incorrecta por un decimal."
+    },
+    {
+      "q": "Si la varianza de error aumenta al doble, el error estándar de la diferencia:",
+      "options": [
+        "Sube el doble",
+        "Baja mitad ",
+        "Ninguna de las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Analiza la relación de la raíz cuadrada.",
+      "explanation": "Si $S_e^2$ se duplica, $S_d = \\sqrt{2S_e^2 + 2S_e^2} = \\sqrt{4S_e^2} = 2S_e$. Sube por un factor de $\\sqrt{2}$ por test."
+    },
+    {
+      "q": "La escala $CI_{SB}$ para un valor $Z = -5$ arroja una puntuación de:",
+      "options": [
+        "$CI = 25,00$",
+        "$CI = 30,00$",
+        "Ninguna de las anteriores"
+      ],
+      "correct": 2,
+      "hint": "Calcula $100 + 16(-5)$.",
+      "explanation": "Cálculo: $100 - 80 = 20$. Las opciones 25 y 30 son incorrectas."
+    }
+  ],
+  "jsonLaboratorio": [
+    {
+      "id": 1,
+      "title": "Cálculo de Percentiles en una Distribución Normativa",
+      "context": "En un proceso de baremación, se ha administrado un test de aptitud espacial a una muestra de $N = 250$ estudiantes. Se utiliza la fórmula del percentil: $$P = \\frac{j \\cdot 100}{N}$$, donde $j$ es la frecuencia acumulada de la puntuación directa.",
+      "parts": [
+        {
+          "id": "p1a",
+          "label": "a)",
+          "question": "Si un estudiante tiene una frecuencia acumulada de $j = 50$, ¿cuál es su puntuación percentil?",
+          "correctValue": 20,
+          "tolerance": 0,
+          "explanation": "$$P = \\frac{50 \\cdot 100}{250} = 20$$"
+        },
+        {
+          "id": "p1b",
+          "label": "b)",
+          "question": "Si otro estudiante se sitúa en la mediana de la distribución, ¿qué valor de frecuencia acumulada ($j$) le corresponde?",
+          "correctValue": 125,
+          "tolerance": 0,
+          "explanation": "$$j = \\frac{P \\cdot N}{100} = \\frac{50 \\cdot 250}{100} = 125$$"
+        },
+        {
+          "id": "p1c",
+          "label": "c)",
+          "question": "Para un percentil $P = 80$, ¿cuál es el valor de $j$ necesario?",
+          "correctValue": 200,
+          "tolerance": 0,
+          "explanation": "$$j = \\frac{80 \\cdot 250}{100} = 200$$"
+        },
+        {
+          "id": "p1d",
+          "label": "d)",
+          "question": "Si la muestra aumentara a $N = 500$, ¿cuál sería la frecuencia acumulada para el mismo percentil 80?",
+          "correctValue": 400,
+          "tolerance": 0,
+          "explanation": "$$j = \\frac{80 \\cdot 500}{100} = 400$$"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Transformaciones Lineales: Puntuaciones Z y Escala T",
+      "context": "Un test de memoria tiene una media de $m_x = 100$ y una desviación estándar de $S_x = 20$. Un sujeto obtiene una puntuación directa de $X_i = 130$. Fórmulas: $$Z = \\frac{X_i - m_x}{S_x}$$y$$T = 50 + 10Z$$.",
+      "parts": [
+        {
+          "id": "p2a",
+          "label": "a)",
+          "question": "Calcule la puntuación típica $Z$ del sujeto.",
+          "correctValue": 1.5,
+          "tolerance": 0.01,
+          "explanation": "$$Z = \\frac{130 - 100}{20} = \\frac{30}{20} = 1,5$$"
+        },
+        {
+          "id": "p2b",
+          "label": "b)",
+          "question": "Transforme dicha puntuación $Z$ a la escala T.",
+          "correctValue": 65,
+          "tolerance": 0,
+          "explanation": "$$T = 50 + 10(1,5) = 65$$"
+        },
+        {
+          "id": "p2c",
+          "label": "c)",
+          "question": "Si quisiéramos convertir esta $Z$ a la escala de CI de Wechsler ($m=100, S=15$), ¿qué valor obtendríamos?",
+          "correctValue": 122.5,
+          "tolerance": 0.1,
+          "explanation": "$$CI_W = 100 + 15(1,5) = 122,5$$"
+        },
+        {
+          "id": "p2d",
+          "label": "d)",
+          "question": "Calcule el valor en la escala de CI de Stanford-Binet ($m=100, S=16$) para el mismo sujeto.",
+          "correctValue": 124,
+          "tolerance": 0,
+          "explanation": "$$CI_{SB} = 100 + 16(1,5) = 124$$"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Error Estándar de Medida y Contraste de Puntuaciones",
+      "context": "En un test con coeficiente de fiabilidad $r_{xx} = 0,91$ y desviación estándar $S_x = 10$, comparamos dos puntuaciones de un sujeto: $X_1 = 85$ y $X_2 = 78$. Fórmulas: $$S_e = S_x \\sqrt{1 - r_{xx}}$$y$$S_d = \\sqrt{S_{e1}^2 + S_{e2}^2}$$.",
+      "parts": [
+        {
+          "id": "p3a",
+          "label": "a)",
+          "question": "Calcule el error estándar de medida ($S_e$) del test.",
+          "correctValue": 3,
+          "tolerance": 0.1,
+          "explanation": "$$S_e = 10 \\sqrt{1 - 0,91} = 10 \\sqrt{0,09} = 10 \\cdot 0,3 = 3$$"
+        },
+        {
+          "id": "p3b",
+          "label": "b)",
+          "question": "Calcule el error estándar de la diferencia ($S_d$) para el mismo test aplicado dos veces.",
+          "correctValue": 4.24,
+          "tolerance": 0.01,
+          "explanation": "$$S_d = \\sqrt{3^2 + 3^2} = \\sqrt{18} \\approx 4,2426$$"
+        },
+        {
+          "id": "p3c",
+          "label": "c)",
+          "question": "Calcule la diferencia estandarizada ($Z_d$) entre $X_1$ y $X_2$.",
+          "correctValue": 1.65,
+          "tolerance": 0.05,
+          "explanation": "$$Z_d = \\frac{85 - 78}{4,2426} = \\frac{7}{4,2426} \\approx 1,65$$"
+        },
+        {
+          "id": "p3d",
+          "label": "d)",
+          "question": "Determine la Diferencia Significativa Mínima (DSM) para un nivel de confianza del 95% ($Z_c = 1,96$).",
+          "correctValue": 8.32,
+          "tolerance": 0.05,
+          "explanation": "$$DSM = 1,96 \\cdot 4,2426 \\approx 8,3155$$"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Eneatipos y Decatipos a partir de Puntuaciones Típicas",
+      "context": "Para facilitar la interpretación clínica, transformamos puntuaciones típicas en escalas discretas. Suponiendo una puntuación típica $Z = -0,75$. Fórmulas: $E = 2Z + 5$ y $Dec = 2Z + 5,5$.",
+      "parts": [
+        {
+          "id": "p4a",
+          "label": "a)",
+          "question": "Calcule el valor exacto en la escala de Eneatipos (estaninas).",
+          "correctValue": 3.5,
+          "tolerance": 0,
+          "explanation": "$$E = 2(-0,75) + 5 = -1,5 + 5 = 3,5$$"
+        },
+        {
+          "id": "p4b",
+          "label": "b)",
+          "question": "Calcule el valor exacto en la escala de Decatipos (sten).",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$Dec = 2(-0,75) + 5,5 = -1,5 + 5,5 = 4$$"
+        },
+        {
+          "id": "p4c",
+          "label": "c)",
+          "question": "Si un sujeto tiene un Decatipo de 7.5, ¿cuál es su puntuación típica Z?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$7,5 = 2Z + 5,5 \\implies 2 = 2Z \\implies Z = 1$$"
+        },
+        {
+          "id": "p4d",
+          "label": "d)",
+          "question": "Para esa $Z = 1$, ¿cuál sería el Eneatipo correspondiente?",
+          "correctValue": 7,
+          "tolerance": 0,
+          "explanation": "$$E = 2(1) + 5 = 7$$"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Equiparación de Test mediante Puntuaciones Z",
+      "context": "Queremos comparar el rendimiento de un alumno en dos asignaturas distintas. En Matemáticas ($m=60, S=12$) obtuvo 78 puntos. En Lengua ($m=50, S=10$) obtuvo 68 puntos.",
+      "parts": [
+        {
+          "id": "p5a",
+          "label": "a)",
+          "question": "Calcule la puntuación $Z$ en Matemáticas.",
+          "correctValue": 1.5,
+          "tolerance": 0,
+          "explanation": "$$Z_{mat} = \\frac{78 - 60}{12} = 1,5$$"
+        },
+        {
+          "id": "p5b",
+          "label": "b)",
+          "question": "Calcule la puntuación $Z$ en Lengua.",
+          "correctValue": 1.8,
+          "tolerance": 0,
+          "explanation": "$$Z_{len} = \\frac{68 - 50}{10} = 1,8$$"
+        },
+        {
+          "id": "p5c",
+          "label": "c)",
+          "question": "¿Cuál es la diferencia en unidades de desviación estándar entre ambas asignaturas?",
+          "correctValue": 0.3,
+          "tolerance": 0,
+          "explanation": "$$1,8 - 1,5 = 0,3$$"
+        },
+        {
+          "id": "p5d",
+          "label": "d)",
+          "question": "Si transformamos la nota de Lengua a la escala de Matemáticas, ¿qué puntuación directa obtendría?",
+          "correctValue": 81.6,
+          "tolerance": 0.1,
+          "explanation": "$$X = m_{mat} + S_{mat}(Z_{len}) = 60 + 12(1,8) = 60 + 21,6 = 81,6$$"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Impacto de la Fiabilidad en la Diferencia Significativa",
+      "context": "Un psicólogo evalúa la mejora tras una terapia. El test tiene $S_x = 15$. Queremos ver cómo varía el margen de error según la fiabilidad.",
+      "parts": [
+        {
+          "id": "p6a",
+          "label": "a)",
+          "question": "Si $r_{xx} = 0,75$, calcule el Error Estándar de Medida ($S_e$).",
+          "correctValue": 7.5,
+          "tolerance": 0.1,
+          "explanation": "$$S_e = 15 \\sqrt{1 - 0,75} = 15 \\cdot 0,5 = 7,5$$"
+        },
+        {
+          "id": "p6b",
+          "label": "b)",
+          "question": "Con $r_{xx} = 0,75$, calcule la Diferencia Significativa Mínima (DSM) al 95% ($Z_c=1,96$).",
+          "correctValue": 20.79,
+          "tolerance": 0.1,
+          "explanation": "$$S_d = \\sqrt{7,5^2 + 7,5^2} = 10,6066 \\implies DSM = 1,96 \\cdot 10,6066 = 20,7889$$"
+        },
+        {
+          "id": "p6c",
+          "label": "c)",
+          "question": "Si la fiabilidad sube a $r_{xx} = 0,96$, ¿cuál es el nuevo $S_e$?",
+          "correctValue": 3,
+          "tolerance": 0.1,
+          "explanation": "$$S_e = 15 \\sqrt{1 - 0,96} = 15 \\cdot 0,2 = 3$$"
+        },
+        {
+          "id": "p6d",
+          "label": "d)",
+          "question": "Con $r_{xx} = 0,96$, ¿cuál es la nueva DSM al 95%?",
+          "correctValue": 8.32,
+          "tolerance": 0.1,
+          "explanation": "$$S_d = \\sqrt{3^2 + 3^2} = 4,2426 \\implies DSM = 1,96 \\cdot 4,2426 = 8,3155$$"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Análisis de Frecuencias y Percentiles",
+      "context": "En un aula de 80 alumnos, se han tabulado las frecuencias de un test de 5 ítems. Las frecuencias absolutas para las puntuaciones 0, 1, 2, 3, 4, 5 son: 4, 6, 10, 20, 25, 15 respectivamente.",
+      "parts": [
+        {
+          "id": "p7a",
+          "label": "a)",
+          "question": "Calcule la frecuencia acumulada ($j$) para la puntuación de 2.",
+          "correctValue": 20,
+          "tolerance": 0,
+          "explanation": "$$j_2 = f_0 + f_1 + f_2 = 4 + 6 + 10 = 20$$"
+        },
+        {
+          "id": "p7b",
+          "label": "b)",
+          "question": "¿Cuál es el percentil correspondiente a la puntuación de 2?",
+          "correctValue": 25,
+          "tolerance": 0,
+          "explanation": "$$P_2 = \\frac{20 \\cdot 100}{80} = 25$$"
+        },
+        {
+          "id": "p7c",
+          "label": "c)",
+          "question": "Calcule el percentil para la puntuación de 4.",
+          "correctValue": 81.25,
+          "tolerance": 0.01,
+          "explanation": "$$j_4 = 4+6+10+20+25 = 65 \\implies P_4 = \\frac{65 \\cdot 100}{80} = 81,25$$"
+        },
+        {
+          "id": "p7d",
+          "label": "d)",
+          "question": "¿Qué porcentaje de alumnos obtuvo una puntuación superior a 4?",
+          "correctValue": 18.75,
+          "tolerance": 0.01,
+          "explanation": "$$100 - 81,25 = 18,75$$"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Comparativa entre Escalas de Inteligencia",
+      "context": "Un sujeto con altas capacidades tiene una puntuación típica $Z = 2,5$. Queremos comparar su posición en las escalas clásicas de CI.",
+      "parts": [
+        {
+          "id": "p8a",
+          "label": "a)",
+          "question": "Calcule su puntuación en la escala Stanford-Binet ($S=16$).",
+          "correctValue": 140,
+          "tolerance": 0,
+          "explanation": "$$CI_{SB} = 100 + 16(2,5) = 140$$"
+        },
+        {
+          "id": "p8b",
+          "label": "b)",
+          "question": "Calcule su puntuación en la escala Wechsler ($S=15$).",
+          "correctValue": 137.5,
+          "tolerance": 0,
+          "explanation": "$$CI_{W} = 100 + 15(2,5) = 137,5$$"
+        },
+        {
+          "id": "p8c",
+          "label": "c)",
+          "question": "¿Cuál es la diferencia de puntos entre ambas escalas para este sujeto?",
+          "correctValue": 2.5,
+          "tolerance": 0,
+          "explanation": "$$140 - 137,5 = 2,5$$"
+        },
+        {
+          "id": "p8d",
+          "label": "d)",
+          "question": "Si el sujeto tuviera un CI de Wechsler de 115, ¿cuál sería su puntuación Z?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$115 = 100 + 15Z \\implies 15 = 15Z \\implies Z = 1$$"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Desviación Típica y Escala de Decatipos",
+      "context": "Un investigador utiliza decatipos ($m=5,5, S=2$) para clasificar a sus sujetos. Un individuo tiene una puntuación directa de 82 en un test donde la media es 70 y la desviación típica es 8.",
+      "parts": [
+        {
+          "id": "p9a",
+          "label": "a)",
+          "question": "Calcule la puntuación $Z$ del individuo.",
+          "correctValue": 1.5,
+          "tolerance": 0,
+          "explanation": "$$Z = \\frac{82 - 70}{8} = 1,5$$"
+        },
+        {
+          "id": "p9b",
+          "label": "b)",
+          "question": "Calcule el valor en decatipos utilizando la fórmula $Dec = 2Z + 5,5$.",
+          "correctValue": 8.5,
+          "tolerance": 0,
+          "explanation": "$$Dec = 2(1,5) + 5,5 = 3 + 5,5 = 8,5$$"
+        },
+        {
+          "id": "p9c",
+          "label": "c)",
+          "question": "Transforme la $Z$ a la escala de Eneatipos ($E = 2Z + 5$).",
+          "correctValue": 8,
+          "tolerance": 0,
+          "explanation": "$$E = 2(1,5) + 5 = 8$$"
+        },
+        {
+          "id": "p9d",
+          "label": "d)",
+          "question": "Si el sujeto estuviera 2 desviaciones típicas por debajo de la media, ¿qué decatipo tendría?",
+          "correctValue": 1.5,
+          "tolerance": 0,
+          "explanation": "$$Z = -2 \\implies Dec = 2(-2) + 5,5 = 1,5$$"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Inversión de Escalas: De T a Puntuación Directa",
+      "context": "En un informe psicopedagógico, solo se facilita la puntuación $T = 35$ de un alumno. Sabemos que el test original tenía una media $m_x = 50$ y una desviación estándar $S_x = 10$.",
+      "parts": [
+        {
+          "id": "p10a",
+          "label": "a)",
+          "question": "Calcule la puntuación $Z$ correspondiente a $T = 35.",
+          "correctValue": -1.5,
+          "tolerance": 0,
+          "explanation": "$$35 = 50 + 10Z \\implies -15 = 10Z \\implies Z = -1,5$$"
+        },
+        {
+          "id": "p10b",
+          "label": "b)",
+          "question": "Determine la puntuación directa $X_i$ que obtuvo el alumno.",
+          "correctValue": 35,
+          "tolerance": 0,
+          "explanation": "$$X_i = m_x + S_x(Z) = 50 + 10(-1,5) = 50 - 15 = 35$$"
+        },
+        {
+          "id": "p10c",
+          "label": "c)",
+          "question": "¿A qué Eneatipo equivale esta puntuación?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$E = 2(-1,5) + 5 = 2$$"
+        },
+        {
+          "id": "p10d",
+          "label": "d)",
+          "question": "Si el alumno subiera su puntuación directa a 60, ¿cuál sería su nueva $Z$?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$Z = \\frac{60 - 50}{10} = 1$$"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Análisis de Significatividad en el Cambio de Puntuación",
+      "context": "Un paciente es evaluado en dos momentos ($X_1=45, X_2=52$). El test tiene $S_x = 8$ y fiabilidad $r_{xx} = 0,84$. Nivel de confianza 95% ($Z_c=1,96$).",
+      "parts": [
+        {
+          "id": "p11a",
+          "label": "a)",
+          "question": "Calcule el error estándar de medida ($S_e$).",
+          "correctValue": 3.2,
+          "tolerance": 0.01,
+          "explanation": "$$S_e = 8 \\sqrt{1 - 0,84} = 8 \\sqrt{0,16} = 8 \\cdot 0,4 = 3,2$$"
+        },
+        {
+          "id": "p11b",
+          "label": "b)",
+          "question": "Calcule el error estándar de la diferencia ($S_d$).",
+          "correctValue": 4.53,
+          "tolerance": 0.05,
+          "explanation": "$$S_d = \\sqrt{3,2^2 + 3,2^2} = \\sqrt{20,48} \\approx 4,525$$"
+        },
+        {
+          "id": "p11c",
+          "label": "c)",
+          "question": "Calcule el valor empírico de la diferencia estandarizada ($Z_d$).",
+          "correctValue": 1.55,
+          "tolerance": 0.05,
+          "explanation": "$$Z_d = \\frac{52 - 45}{4,525} = \\frac{7}{4,525} \\approx 1,547$$"
+        },
+        {
+          "id": "p11d",
+          "label": "d)",
+          "question": "Introduzca 1 si el cambio es significativo al 95% o 0 si no lo es.",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "$$Z_d (1,547) < Z_c (1,96)$$, por lo tanto no es significativo."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Baremación y Cambio de Tamaño Muestral",
+      "context": "En un test de personalidad, un sujeto tiene una frecuencia acumulada de $j = 120$ en una muestra de $N = 400$.",
+      "parts": [
+        {
+          "id": "p12a",
+          "label": "a)",
+          "question": "¿Qué percentil ocupa el sujeto?",
+          "correctValue": 30,
+          "tolerance": 0,
+          "explanation": "$$P = \\frac{120 \\cdot 100}{400} = 30$$"
+        },
+        {
+          "id": "p12b",
+          "label": "b)",
+          "question": "Si el percentil deseado para pasar a una segunda fase es 75, ¿qué $j$ se requiere?",
+          "correctValue": 300,
+          "tolerance": 0,
+          "explanation": "$$j = \\frac{75 \\cdot 400}{100} = 300$$"
+        },
+        {
+          "id": "p12c",
+          "label": "c)",
+          "question": "Si en otra muestra el mismo sujeto mantiene su percentil 30 pero la muestra es $N=1000$, ¿cuál es su nueva $j$?",
+          "correctValue": 300,
+          "tolerance": 0,
+          "explanation": "$$j = \\frac{30 \\cdot 1000}{100} = 300$$"
+        },
+        {
+          "id": "p12d",
+          "label": "d)",
+          "question": "Si un sujeto tiene $j = 380$ con $N=400$, ¿qué percentil tiene?",
+          "correctValue": 95,
+          "tolerance": 0,
+          "explanation": "$$P = \\frac{380 \\cdot 100}{400} = 95$$"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Diferencia Significativa Mínima en Diagnóstico",
+      "context": "Un test de screening tiene $S_x = 5$ y $r_{xx} = 0,90$. Se establece un contraste al 99% ($Z_c = 2,58$).",
+      "parts": [
+        {
+          "id": "p13a",
+          "label": "a)",
+          "question": "Calcule $S_e$ del test.",
+          "correctValue": 1.58,
+          "tolerance": 0.01,
+          "explanation": "$$S_e = 5 \\sqrt{1 - 0,90} = 5 \\sqrt{0,1} \\approx 1,581$$"
+        },
+        {
+          "id": "p13b",
+          "label": "b)",
+          "question": "Calcule $S_d$ para comparaciones intra-sujeto.",
+          "correctValue": 2.24,
+          "tolerance": 0.05,
+          "explanation": "$$S_d = \\sqrt{1,581^2 + 1,581^2} = \\sqrt{5} \\approx 2,236$$"
+        },
+        {
+          "id": "p13c",
+          "label": "c)",
+          "question": "Calcule la DSM al 99%.",
+          "correctValue": 5.77,
+          "tolerance": 0.05,
+          "explanation": "$$DSM = 2,58 \\cdot 2,236 \\approx 5,768$$"
+        },
+        {
+          "id": "p13d",
+          "label": "d)",
+          "question": "Si la fiabilidad bajara a 0,84, ¿cuál sería el nuevo $S_e$?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$S_e = 5 \\sqrt{1 - 0,84} = 5 \\cdot 0,4 = 2$$"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Relación entre Escalas de 9 y 10 Áreas",
+      "context": "Un psicometrista quiere comparar Eneatipos y Decatipos para un valor de $Z = 1,25$.",
+      "parts": [
+        {
+          "id": "p14a",
+          "label": "a)",
+          "question": "Calcule el Eneatipo.",
+          "correctValue": 7.5,
+          "tolerance": 0,
+          "explanation": "$$E = 2(1,25) + 5 = 2,5 + 5 = 7,5$$"
+        },
+        {
+          "id": "p14b",
+          "label": "b)",
+          "question": "Calcule el Decatipo.",
+          "correctValue": 8,
+          "tolerance": 0,
+          "explanation": "$$Dec = 2(1,25) + 5,5 = 2,5 + 5,5 = 8$$"
+        },
+        {
+          "id": "p14c",
+          "label": "c)",
+          "question": "Si el Decatipo es 4.5, ¿cuál es la $Z$?",
+          "correctValue": -0.5,
+          "tolerance": 0,
+          "explanation": "$$4,5 = 2Z + 5,5 \\implies -1 = 2Z \\implies Z = -0,5$$"
+        },
+        {
+          "id": "p14d",
+          "label": "d)",
+          "question": "Para esa $Z = -0,5$, ¿cuál es el valor en la escala T?",
+          "correctValue": 45,
+          "tolerance": 0,
+          "explanation": "$$T = 50 + 10(-0,5) = 45$$"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Equiparación de Puntuaciones Directas",
+      "context": "Dos test, A y B, miden el mismo constructo. Test A ($m=40, S=5$). Test B ($m=100, S=15$). Un sujeto saca 48 en el Test A.",
+      "parts": [
+        {
+          "id": "p15a",
+          "label": "a)",
+          "question": "Calcule su puntuación $Z$ en el Test A.",
+          "correctValue": 1.6,
+          "tolerance": 0,
+          "explanation": "$$Z = \\frac{48 - 40}{5} = 1,6$$"
+        },
+        {
+          "id": "p15b",
+          "label": "b)",
+          "question": "Calcule la puntuación equivalente en el Test B.",
+          "correctValue": 124,
+          "tolerance": 0,
+          "explanation": "$$X_B = 100 + 15(1,6) = 124$$"
+        },
+        {
+          "id": "p15c",
+          "label": "c)",
+          "question": "¿Qué puntuación T tiene el sujeto?",
+          "correctValue": 66,
+          "tolerance": 0,
+          "explanation": "$$T = 50 + 10(1,6) = 66$$"
+        },
+        {
+          "id": "p15d",
+          "label": "d)",
+          "question": "Calcule el CI de Wechsler para este nivel.",
+          "correctValue": 124,
+          "tolerance": 0,
+          "explanation": "En este caso, la escala B ya es una escala tipo Wechsler ($m=100, S=15$)."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Cálculo de Desviación Estándar a partir de Escalas",
+      "context": "Sabemos que un sujeto ha obtenido una puntuación directa de $X = 112$ en un test con media $m = 100$. Su puntuación transformada es $T = 65$.",
+      "parts": [
+        {
+          "id": "p16a",
+          "label": "a)",
+          "question": "Determine la puntuación $Z$ del sujeto.",
+          "correctValue": 1.5,
+          "tolerance": 0,
+          "explanation": "$$65 = 50 + 10Z \\implies 15 = 10Z \\implies Z = 1,5$$"
+        },
+        {
+          "id": "p16b",
+          "label": "b)",
+          "question": "Calcule la desviación típica ($S_x$) del test original.",
+          "correctValue": 8,
+          "tolerance": 0,
+          "explanation": "$$1,5 = \\frac{112 - 100}{S_x} \\implies 1,5 S_x = 12 \\implies S_x = 8$$"
+        },
+        {
+          "id": "p16c",
+          "label": "c)",
+          "question": "¿Qué CI de Stanford-Binet le corresponde?",
+          "correctValue": 124,
+          "tolerance": 0,
+          "explanation": "$$CI_{SB} = 100 + 16(1,5) = 124$$"
+        },
+        {
+          "id": "p16d",
+          "label": "d)",
+          "question": "¿Cuál sería su Decatipo?",
+          "correctValue": 8.5,
+          "tolerance": 0,
+          "explanation": "$$Dec = 2(1,5) + 5,5 = 8,5$$"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Comparación de dos sujetos en el mismo test",
+      "context": "Dos opositores obtienen 55 y 62 puntos en un examen ($m=50, S=10, r_{xx}=0,84$).",
+      "parts": [
+        {
+          "id": "p17a",
+          "label": "a)",
+          "question": "Calcule el error estándar de la diferencia ($S_d$).",
+          "correctValue": 5.66,
+          "tolerance": 0.05,
+          "explanation": "$$S_e = 10 \\sqrt{0,16} = 4 \\implies S_d = \\sqrt{4^2 + 4^2} \\approx 5,6569$$"
+        },
+        {
+          "id": "p17b",
+          "label": "b)",
+          "question": "Calcule la diferencia estandarizada entre ambos ($Z_d$).",
+          "correctValue": 1.24,
+          "tolerance": 0.05,
+          "explanation": "$$Z_d = \\frac{62 - 55}{5,6569} = \\frac{7}{5,6569} \\approx 1,237$$"
+        },
+        {
+          "id": "p17c",
+          "label": "c)",
+          "question": "¿Cuál es la diferencia significativa mínima al 95%?",
+          "correctValue": 11.09,
+          "tolerance": 0.1,
+          "explanation": "$$DSM = 1,96 \\cdot 5,6569 \\approx 11,087$$"
+        },
+        {
+          "id": "p17d",
+          "label": "d)",
+          "question": "Introduzca 1 si la diferencia es significativa al 95% o 0 si no lo es.",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "$$7 < 11,09$$, por lo que no es significativa."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Transformación a Escala T a partir de Percentiles",
+      "context": "Suponiendo una distribución normal donde un percentil 93,32 corresponde aproximadamente a una $Z = 1,5$.",
+      "parts": [
+        {
+          "id": "p18a",
+          "label": "a)",
+          "question": "¿Qué puntuación T le corresponde?",
+          "correctValue": 65,
+          "tolerance": 0,
+          "explanation": "$$T = 50 + 10(1,5) = 65$$"
+        },
+        {
+          "id": "p18b",
+          "label": "b)",
+          "question": "¿Qué CI de Wechsler le corresponde?",
+          "correctValue": 122.5,
+          "tolerance": 0.1,
+          "explanation": "$$CI_W = 100 + 15(1,5) = 122,5$$"
+        },
+        {
+          "id": "p18c",
+          "label": "c)",
+          "question": "¿Qué Eneatipo le corresponde?",
+          "correctValue": 8,
+          "tolerance": 0,
+          "explanation": "$$E = 2(1,5) + 5 = 8$$"
+        },
+        {
+          "id": "p18d",
+          "label": "d)",
+          "question": "Si el sujeto tuviera $Z=0$, ¿cuál sería su percentil?",
+          "correctValue": 50,
+          "tolerance": 0,
+          "explanation": "La media en una distribución normal corresponde al percentil 50."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Error de Medida y Longitud del Test",
+      "context": "Un test breve tiene $S_e = 4$. Si duplicamos su longitud y la fiabilidad sube, el nuevo $S_e$ se reduce. Supongamos que tras la mejora, el nuevo $S_e$ es 2,5.",
+      "parts": [
+        {
+          "id": "p19a",
+          "label": "a)",
+          "question": "Calcule la $S_d$ con el test inicial ($S_e=4$).",
+          "correctValue": 5.66,
+          "tolerance": 0.05,
+          "explanation": "$$S_d = \\sqrt{4^2 + 4^2} = \\sqrt{32} \\approx 5,6569$$"
+        },
+        {
+          "id": "p19b",
+          "label": "b)",
+          "question": "Calcule la $S_d$ con el test mejorado ($S_e=2,5$).",
+          "correctValue": 3.54,
+          "tolerance": 0.05,
+          "explanation": "$$S_d = \\sqrt{2,5^2 + 2,5^2} = \\sqrt{12,5} \\approx 3,5355$$"
+        },
+        {
+          "id": "p19c",
+          "label": "c)",
+          "question": "Calcule la DSM (95%) para el test inicial.",
+          "correctValue": 11.09,
+          "tolerance": 0.1,
+          "explanation": "$$1,96 \\cdot 5,6569 = 11,0875$$"
+        },
+        {
+          "id": "p19d",
+          "label": "d)",
+          "question": "Calcule la DSM (95%) para el test mejorado.",
+          "correctValue": 6.93,
+          "tolerance": 0.1,
+          "explanation": "$$1,96 \\cdot 3,5355 = 6,9296$$"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Equiparación de Baremos: De Escala A a Escala B",
+      "context": "Un test A tiene baremos en T y el test B en CI Wechsler. Un sujeto tiene $T = 72$.",
+      "parts": [
+        {
+          "id": "p20a",
+          "label": "a)",
+          "question": "Determine la $Z$ del sujeto.",
+          "correctValue": 2.2,
+          "tolerance": 0,
+          "explanation": "$$72 = 50 + 10Z \\implies 22 = 10Z \\implies Z = 2,2$$"
+        },
+        {
+          "id": "p20b",
+          "label": "b)",
+          "question": "Calcule el CI Wechsler equivalente.",
+          "correctValue": 133,
+          "tolerance": 0,
+          "explanation": "$$100 + 15(2,2) = 133$$"
+        },
+        {
+          "id": "p20c",
+          "label": "c)",
+          "question": "Calcule el Eneatipo equivalente.",
+          "correctValue": 9.4,
+          "tolerance": 0,
+          "explanation": "$$2(2,2) + 5 = 4,4 + 5 = 9,4$$"
+        },
+        {
+          "id": "p20d",
+          "label": "d)",
+          "question": "Calcule el Decatipo equivalente.",
+          "correctValue": 9.9,
+          "tolerance": 0,
+          "explanation": "$$2(2,2) + 5,5 = 4,4 + 5,5 = 9,9$$"
+        }
+      ]
+    }
+  ],
+  "jsonFormulas": [
+    {
+      "name": "Puntuación Percentil (P)",
+      "tex": "$$P = \\frac{j(100)}{N}$$"
+    },
+    {
+      "name": "Puntuación Estandarizada o Típica (Z)",
+      "tex": "$$Z = \\frac{x_{i} - m_{x}}{S_{x}}$$"
+    },
+    {
+      "name": "Transformación Lineal (Puntuaciones Derivadas)",
+      "tex": "$$y_{i} = m_{y} + S_{y}(z_{x})$$"
+    },
+    {
+      "name": "Escala T",
+      "tex": "$$T = 50 + 10Z$$"
+    },
+    {
+      "name": "Cociente Intelectual Stanford-Binet (CI_SB)",
+      "tex": "$$CI_{SB} = 100 + 16Z_{x}$$"
+    },
+    {
+      "name": "Cociente Intelectual Wechsler (CI_W)",
+      "tex": "$$CI_{W} = 100 + 15Z_{x}$$"
+    },
+    {
+      "name": "Escala de Eneatipos (Estaninas)",
+      "tex": "$$E = 2Z + 5$$"
+    },
+    {
+      "name": "Decatipos (Sten)",
+      "tex": "$$DEC = 2Z + 5,5$$"
+    },
+    {
+      "name": "Varianza de la Diferencia",
+      "tex": "$$S_{d}^{2} = S_{e_{1}}^{2} + S_{e_{2}}^{2}$$"
+    },
+    {
+      "name": "Error Estándar de la Diferencia",
+      "tex": "$$S_{d} = \\sqrt{S_{e_{1}}^{2} + S_{e_{2}}^{2}}$$"
+    },
+    {
+      "name": "Diferencia Estandarizada (z_d)",
+      "tex": "$$z_{d} = \\frac{X_{1} - X_{2}}{\\sqrt{S_{e_{1}}^{2} + S_{e_{2}}^{2}}}$$"
+    },
+    {
+      "name": "Diferencia Significativa Mínima (DSM)",
+      "tex": "$$DSM = z_{c} \\cdot S_{d}$$"
+    },
+    {
+      "name": "Error Estándar del Test (Cálculo auxiliar)",
+      "tex": "$$S_{e} = S_{x} \\sqrt{1 - r_{xx}}$$"
+    }
+  ]
+}

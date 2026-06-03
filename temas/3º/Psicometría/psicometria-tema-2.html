@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIMAP - Tema 2: Construcción, Taxonomía y Formatos de los Test Psicológicos</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Configuración de MathJax para renderizar LaTeX -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            startup: {
+                typeset: false // Lo llamaremos manualmente después de cargar las vistas
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #ecfeff;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(180, 80%, 92%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(160, 70%, 92%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(195, 80%, 92%, 1) 0, transparent 50%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 40px -10px rgba(6, 182, 212, 0.15);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0891b2 0%, #06b6d4 50%, #14b8a6 100%);
+            background-size: 200% 200%;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            color: white;
+            font-weight: 700;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(6, 182, 212, 0.4);
+            background-position: 100% 50%;
+        }
+
+        /* Estilos Flashcards */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .card-inner.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 1.5rem;
+        }
+
+        .card-front {
+            background: white;
+            border: 2px solid #e2e8f0;
+        }
+
+        .card-back {
+            background: #4f46e5;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .option-btn {
+            transition: all 0.2s;
+            border: 2px solid #e2e8f0;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: #06b6d4;
+            background-color: #ecfeff;
+            transform: translateX(5px);
+        }
+
+        /* MathJax adjustments to prevent overflow */
+        mjx-container {
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Global -->
+    <header class="glass-card sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="app.showView('home')">
+                <div class="bg-sky-600 text-white p-2 rounded-lg shadow-lg">
+                    <i class="ph-bold ph-chart-line-up text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-xl tracking-tight text-slate-800" id="header-title">Tema 2 - Construcción, Taxonomía y Formatos de los Test Psicológicos</h1>
+                    <p class="text-[9px] uppercase tracking-widest font-bold text-slate-500">ANÁLISIS DE DATOS Y MATEMÁTICAS</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 sm:gap-4">
+                <!-- Botón Portal Principal -->
+                <a href="../../../index.html" class="bg-slate-700 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-arrow-left text-lg"></i> <span class="hidden sm:inline">Portal Principal</span>
+                </a>
+
+                <!-- Botón Calculadora Externa -->
+                <a href="https://web2.0calc.es/" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-calculator text-lg"></i> <span class="hidden sm:inline">Calculadora</span>
+                </a>
+
+                <!-- Botón Menú Global -->
+                <button id="btn-global-menu" onclick="app.showView('home')" class="hidden bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-xl items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-house text-lg"></i> <span class="hidden sm:inline">Menú</span>
+                </button>
+
+                <!-- Contador Global -->
+                <div id="nav-counter" class="hidden items-center gap-2 bg-white/60 px-3 py-1.5 rounded-full border border-white">
+                    <span id="global-counter" class="text-sky-700 font-bold font-mono text-sm">0/0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-5xl w-full mx-auto p-6 flex flex-col items-center justify-center">
+
+        <!-- VIEW: HOME (MENU) -->
+        <section id="view-home" class="fade-in w-full">
+            <div class="text-center mb-12">
+                <h1 class="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400 mb-8 tracking-tighter opacity-80 select-none">
+                    SAIMAP</h1>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-4">¿Cómo quieres practicar hoy?</h2>
+                <h3 class="text-xl font-bold text-slate-600 mb-4">Tema 2 - Construcción, Taxonomía y Formatos de los Test Psicológicos</h3>
+                <p class="text-slate-500">Selecciona la herramienta que mejor se adapte a tu objetivo de estudio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                <!-- QUIZ -->
+                <div onclick="app.startTool('quiz')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-sky-500">
+                    <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-numbers text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Test Teórico</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Preguntas de opción múltiple sobre conceptos y propiedades estadísticas.</p>
+                </div>
+
+                <!-- LABORATORIO (Reemplaza Trainer) -->
+                <div onclick="app.startTool('laboratorio')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-emerald-500">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-calculator text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Laboratorio</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Ejercicios de cálculo numérico con escenarios guiados paso a paso.</p>
+                </div>
+
+                <!-- FÓRMULAS (Reemplaza Flashcards) -->
+                <div onclick="app.startTool('formulas')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-indigo-500">
+                    <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-dashes text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fórmulas</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Glosario completo de fórmulas matemáticas para consultar rápidamente.</p>
+                </div>
+            </div>
+        
+
+            <!-- Contenedor para botones de navegación de temas -->
+            <div id="theme-navigation-container" class="mt-12 flex justify-between items-center w-full max-w-xl mx-auto gap-4 pt-6 border-t border-slate-200/60"></div>
+        </section>
+
+        <!-- VIEW: QUIZ -->
+        <section id="view-quiz" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-sky-500"></div>
+
+                <div class="flex justify-between items-center mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Modo Test</span>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">
+                            Finalizar Sesión
+                        </button>
+                    </div>
+                    <button id="quiz-hint-btn" onclick="app.quizToggleHint()" class="text-amber-600 font-bold text-xs flex items-center gap-1 hover:bg-amber-50 px-3 py-1.5 rounded-lg transition">
+                        <i class="ph-bold ph-lightbulb"></i> Ver Pista
+                    </button>
+                </div>
+
+                <h2 id="quiz-question" class="text-2xl font-bold text-slate-800 mb-8 math-content"></h2>
+
+                <div id="quiz-hint-box" class="hidden mb-6 p-4 bg-amber-50 border-l-4 border-amber-400 text-amber-900 text-sm italic rounded-r-xl math-content"></div>
+
+                <div id="quiz-options" class="space-y-3"></div>
+
+                <!-- Feedback Quiz -->
+                <div id="quiz-feedback" class="hidden mt-8 p-6 rounded-2xl border transition-all">
+                    <div class="flex items-start gap-4">
+                        <div id="quiz-feedback-icon" class="text-3xl"></div>
+                        <div class="w-full">
+                            <h4 id="quiz-feedback-title" class="font-bold text-lg"></h4>
+                            <div id="quiz-explanation" class="text-sm text-slate-600 mt-2 p-3 bg-slate-50 rounded-lg math-content"></div>
+                        </div>
+                    </div>
+                    <button onclick="app.quizNext()" class="mt-6 btn-primary py-4 px-8 rounded-xl w-full flex items-center justify-center gap-2">
+                        Continuar <i class="ph ph-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: LABORATORIO -->
+        <section id="view-laboratorio" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl overflow-hidden border-t-4 border-emerald-500">
+                <!-- Cabecera y Contexto -->
+                <div class="p-6 md:p-8 bg-emerald-50/50 border-b border-slate-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center font-bold" id="lab-problem-number">1</div>
+                            <h2 id="lab-main-title" class="text-xl font-bold text-slate-800"></h2>
+                        </div>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">Finalizar</button>
+                    </div>
+                    <div id="lab-context-box" class="bg-white/80 p-5 rounded-xl text-slate-700 math-content text-base border border-slate-200 shadow-inner"></div>
+                </div>
+
+                <!-- Contenedor de Apartados -->
+                <div id="lab-parts-container" class="flex flex-col bg-white">
+                    <!-- Los apartados se inyectan aquí automáticamente -->
+                </div>
+            </div>
+
+            <!-- Botón de siguiente problema -->
+            <button onclick="app.labNext()" class="mt-6 w-full bg-slate-800 hover:bg-slate-900 text-white py-4 rounded-xl font-bold shadow-lg transform active:scale-95 transition flex justify-center items-center gap-2">
+                Siguiente Problema <i class="ph-bold ph-arrow-right"></i>
+            </button>
+        </section>
+
+        <!-- VIEW: FÓRMULAS -->
+        <section id="view-formulas" class="hidden w-full fade-in space-y-6">
+            <div class="mb-6 px-2">
+                <h2 class="text-3xl font-black text-slate-800">Glosario de Fórmulas</h2>
+                <p class="text-slate-500 mt-1">Lista completa de recursos matemáticos</p>
+            </div>
+            
+            <!-- Grid Scrollable para las fórmulas -->
+            <div id="formulas-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-12">
+                <!-- Las fórmulas se inyectarán aquí -->
+            </div>
+        </section>
+
+        <!-- VIEW: RESULTS -->
+        <section id="view-results" class="hidden w-full fade-in text-center py-12">
+            <div class="glass-card p-12 rounded-[3rem] inline-block max-w-md w-full border-2 border-white shadow-2xl">
+                <div class="w-24 h-24 bg-yellow-400 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl shadow-yellow-200">
+                    <i class="ph-fill ph-trophy text-5xl"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold text-slate-800 mb-2">¡Sesión Finalizada!</h2>
+                <p id="result-text" class="text-slate-500 mb-8">Has completado todos los ejercicios.</p>
+
+                <div class="flex flex-col gap-3">
+                    <button id="btn-retry-errors" onclick="app.retryErrors()" class="hidden bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-2xl transition flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-warning-circle"></i> Repasar solo Fallos (<span id="fail-count">0</span>)
+                    </button>
+                    <button onclick="app.showView('home')" class="btn-primary w-full py-4 rounded-2xl uppercase tracking-widest text-sm shadow-md">Menú Principal</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // --- DATOS JSON VACÍOS (Inyectados dinámicamente) ---
+        const jsonTestA = [{"q": "¿Es correcto afirmar que la isomorfía en un test implica que la muestra de conductas representa exactamente la totalidad del constructo latente?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Revise la relación entre 'muestra de conductas' y 'población de conductas posibles'.", "explanation": "El texto indica que el test busca representar de la manera más isomorfa *posible* el constructo, pero reconoce que es una muestra y, por tanto, una pequeña proporción de la población de conductas."}, {"q": "¿La estandarización garantiza que la variabilidad observada en las puntuaciones se deba exclusivamente a las diferencias individuales en el atributo medido?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 0, "hint": "Piense en el objetivo primordial de uniformar el procedimiento de aplicación.", "explanation": "La estandarización busca que la varianza no se deba al procedimiento de medida, permitiendo que las diferencias reflejen el constructo del evaluado: $$\\sigma^2_X \\approx \\sigma^2_{constructo}$$."}, {"q": "¿Según Crocker y Algina (1986), existe una aproximación única y universalmente aceptada para la medición de cualquier constructo psicológico?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Considere la multiplicidad de formulaciones teóricas mencionadas en los problemas de los test.", "explanation": "Uno de los principales problemas es que no hay una aproximación única; distintas teorías pueden llevar a operacionalizaciones y conclusiones diferentes."}, {"q": "¿Es la falta de unidades bien definidas en las escalas de medida un problema técnico que afecta la interpretación de los valores obtenidos?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 0, "hint": "Reflexione sobre el etiquetado de unidades y las propiedades de la escala.", "explanation": "La ausencia de unidades físicas claras en psicología dificulta definir las propiedades de la escala e interpretar la magnitud de los valores $$\\psi$$."}, {"q": "¿Las pruebas proyectivas, como el test de Rorschach, se caracterizan por utilizar normas cuantitativas estandarizadas para su interpretación?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Diferencie entre criterios globales/cualitativos y normas cuantitativas.", "explanation": "Las pruebas proyectivas utilizan criterios globales y cualitativos, generalmente no estandarizados, a diferencia de los test psicométricos."}, {"q": "¿La Teoría de la Respuesta al Ítem (TRI) asume un modelo lineal para relacionar la probabilidad de respuesta con el rasgo latente?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Recuerde el tipo de función (logística) mencionada en el texto.", "explanation": "La TRI utiliza funciones no lineales (generalmente logísticas) para modelar la probabilidad de respuesta $P(\\theta)$ en función del rasgo $\\theta$."}, {"q": "¿En los test de velocidad, la variabilidad de las puntuaciones depende fundamentalmente de la calidad y complejidad técnica de las respuestas?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Compare las demandas de rapidez frente a las de potencia o dificultad.", "explanation": "En los test de velocidad, los ítems no tienen dificultad objetiva; las diferencias dependen de la rapidez. La calidad es propia de los test de potencia."}, {"q": "¿El proceso de construcción de un test debe seguir un enfoque 'top-down' desde la definición teórica hacia los datos empíricos?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 0, "hint": "Piense en la estructura latente y cuándo se establecen las hipótesis de medida.", "explanation": "El modelo de medida debe establecerse previamente a la generación de ítems para que los datos empíricos confirmen o no la estructura hipotetizada."}, {"q": "¿Es necesario que el pool inicial de ítems sea de 1,5 a 3 veces superior al número final de ítems que compondrán el test definitivo?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 0, "hint": "Busque la recomendación cuantitativa para la fase de construcción de ítems.", "explanation": "Los autores señalan esta proporción para asegurar un banco de ítems suficiente tras los análisis psicométricos de selección."}, {"q": "¿Los test de ejecución típica se caracterizan por la existencia de un criterio inequívoco sobre la corrección de las respuestas dadas?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Considere las instrucciones sobre 'sinceridad' y la ausencia de respuestas correctas.", "explanation": "En los test de ejecución típica (personalidad, actitudes) no hay respuestas correctas; se mide el comportamiento habitual o grado de posición."}, {"q": "Elegir la afirmación correcta: Sobre la sistematización de Martínez-Arias (1995) respecto a la naturaleza de los test.", "options": ["Un test es un procedimiento estándar para obtener valores de indicadores de un determinado constructo teórico.", "La medición psicológica es independiente del uso de instrumentos de medida para la obtención de datos cuantitativos.", "El objetivo de un test es medir la totalidad de las conductas que componen un rasgo latente de forma exhaustiva."], "correct": 0, "hint": "Busque la definición técnica que vincula el procedimiento con los indicadores del constructo.", "explanation": "El test se define como el procedimiento estándar para operacionalizar el constructo mediante indicadores empíricos cuantificables."}, {"q": "Elegir la afirmación correcta: Respecto a los problemas identificados por Crocker y Algina (1986).", "options": ["La medición de variables latentes inobservables genera menor cantidad de error que la medición de variables directas.", "Un mismo individuo probablemente obtendrá resultados distintos al ser medido en dos ocasiones debido al error de medida.", "Los constructos psicológicos se definen exclusivamente a través de definiciones operacionales sin necesidad de teorías."], "correct": 1, "hint": "Considere la variabilidad intraindividual vinculada a la naturaleza de la medición psicológica.", "explanation": "Debido a que la medición está sujeta a error, un individuo puede fluctuar en sus resultados: $X = T + e$, donde $e \\neq 0$."}, {"q": "Elegir la afirmación correcta: Sobre la clasificación de los test según el modelo estadístico subyacente.", "options": ["La Teoría de la Generalizabilidad rechaza el modelo lineal y se basa únicamente en el análisis cualitativo de la varianza.", "La Teoría Clásica de los Test (TCT) relaciona la puntuación observada con la verdadera mediante un modelo no lineal.", "La Teoría de la Respuesta al Ítem (TRI) modela la probabilidad de acierto según la posición del sujeto en el rasgo latente."], "correct": 2, "hint": "Diferencie entre la linealidad de la TCT y el enfoque probabilístico de la TRI.", "explanation": "La TRI utiliza funciones de enlace (como la logística) para vincular el rasgo $\\theta$ con la probabilidad de respuesta correcta."}, {"q": "Elegir la afirmación correcta: Sobre los test referidos al criterio (TRC) y la aproximación del dominio.", "options": ["Los TRC ponen el énfasis principal en determinar el grado de ejecución del individuo sobre un dominio específico.", "La aproximación al dominio ignora la ejecución sobre criterios externos para centrarse solo en los rasgos latentes.", "Los test referidos al criterio buscan ubicar a las personas a lo largo de un continuo indefinido de rasgos abstractos."], "correct": 0, "hint": "Vincule la terminología 'dominio' con la finalidad de estos test específicos.", "explanation": "La aproximación al dominio evalúa el desempeño en relación con un criterio o dominio de contenido claramente delimitado."}, {"q": "Elegir la afirmación correcta: Respecto a la modalidad de aplicación de los test computarizados adaptativos.", "options": ["El ordenador selecciona los ítems de forma aleatoria sin tener en cuenta el nivel previo estimado del evaluado.", "La presentación de unos u otros ítems depende directamente de las respuestas sucesivas dadas por el sujeto evaluado.", "Los test adaptativos administran siempre el mismo pool de ítems a todos los sujetos para garantizar la estandarización."], "correct": 1, "hint": "Piense en el término 'adaptativo' y cómo se ajusta la dificultad al nivel del evaluado.", "explanation": "En los test adaptativos computarizados (CAT), la selección del siguiente ítem se basa en la estimación actual del rasgo $\\theta$ del sujeto."}, {"q": "Elegir la afirmación correcta: Sobre los test objetivos según la clasificación de Martínez-Arias.", "options": ["Son test de lápiz y papel que utilizan protocolos escritos para minimizar la subjetividad del evaluador presente.", "Se caracterizan por utilizar instrumentos específicos que efectúan un registro automático de respuestas psicofisiológicas.", "Son procedimientos que dependen de la interpretación cualitativa de normas globales no estandarizadas por el autor."], "correct": 1, "hint": "Diferencie el concepto de 'objetivo' como registro mecánico/fisiológico del concepto general de test psicométrico.", "explanation": "Los test objetivos registran automáticamente variables como el tiempo de reacción o respuestas fisiológicas sin mediación del evaluador."}, {"q": "Elegir la afirmación correcta: Sobre los test de ejecución máxima según el planteamiento de resolución.", "options": ["Plantean situaciones habituales donde el sujeto debe responder de la manera más sincera y honesta posible.", "Requieren que el individuo ponga en funcionamiento sus capacidades en alto grado para resolver problemas planteados.", "Se utilizan exclusivamente para medir actitudes y personalidad mediante escalas de respuesta graduada tipo Likert."], "correct": 1, "hint": "Considere la exigencia de rendimiento (competencias) frente al comportamiento típico.", "explanation": "Los test de ejecución máxima buscan evaluar el límite superior de la capacidad del sujeto (inteligencia, aptitudes, rendimiento)."}, {"q": "Elegir la afirmación correcta: Respecto a la fase de identificación y definición de conductas específicas en la construcción de un test.", "options": ["Esta fase es irrelevante si el constructo teórico ha sido definido de manera vaga o excesivamente generalista.", "Los indicadores empíricos seleccionados son los que permiten la operativización efectiva del constructo inobservable.", "La calidad de los ítems se analiza únicamente después de que el test ha sido comercializado y aplicado masivamente."], "correct": 1, "hint": "Relacione el paso 3 de la construcción con la transición de lo latente a lo observable.", "explanation": "Definir conductas específicas (indicadores) es esencial para medir algo que no se observa directamente (constructo)."}, {"q": "Elegir la afirmación correcta: Sobre el análisis de la validez según el modelo de Prieto y Muñiz (2000).", "options": ["El análisis de la validez de contenido debe realizarse después de elaborar los baremos definitivos del instrumento.", "La validez de constructo y la validez predictiva son componentes fundamentales en el ensayo muestral de calidad.", "El modelo de Prieto y Muñiz recomienda ignorar el análisis de ítems para centrarse solo en la fiabilidad del test."], "correct": 1, "hint": "Revise los tipos de validez mencionados en la fase 8 del proceso de construcción.", "explanation": "El proceso de validación incluye el análisis de contenido, constructo y criterio como pilares de la calidad psicométrica."}, {"q": "Elegir la afirmación correcta: Sobre la elaboración de los baremos de un test (fase 9).", "options": ["El grupo normativo utilizado para los baremos debe ser menor que el utilizado en los ensayos de validación previos.", "La calidad de un test depende de las condiciones de interpretación que permiten sus baremos respecto a la población.", "Los baremos son instrucciones de corrección que no requieren una muestra representativa de la población de referencia."], "correct": 1, "hint": "Piense en la utilidad de comparar la puntuación de un sujeto con su grupo de referencia.", "explanation": "Los baremos permiten la interpretación normativa de las puntuaciones, por lo que deben basarse en muestras amplias y representativas."}, {"q": "Elegir la afirmación correcta: Sobre la definición de 'ítem' proporcionada por Osterlind (1998).", "options": ["Es un estímulo ambiguo que busca provocar una respuesta cualitativa libre sin ninguna interpretación numérica posterior.", "Se define como una unidad de medida con un estímulo y una forma prescriptiva de respuesta para inferir un rendimiento.", "Un ítem es cualquier pregunta oral que se realiza en un contexto clínico sin estandarización de las instrucciones."], "correct": 1, "hint": "Busque los elementos clave: unidad de medida, estímulo, forma de respuesta e inferencia.", "explanation": "El ítem es el bloque básico estandarizado que permite cuantificar el constructo psicológico mediante una respuesta específica."}, {"q": "Elegir la afirmación correcta: Sobre la construcción de ítems de elección múltiple.", "options": ["Es recomendable utilizar formulaciones en sentido negativo para aumentar la carga cognitiva y dificultad del ítem.", "Un ítem está bien elaborado si el evaluado que no conoce la respuesta duda por igual entre todas las alternativas.", "Los distractores deben ser claramente inverosímiles para que el evaluado pueda descartarlos sin necesidad de saber."], "correct": 1, "hint": "Considere la función de los distractores y la plausibilidad para quienes no dominan el contenido.", "explanation": "La efectividad de la elección múltiple reside en que los distractores sean atractivos para quienes desconocen la respuesta correcta."}, {"q": "Elegir la afirmación correcta: Sobre la escala de respuesta graduada de Likert (1932).", "options": ["Se basa en la presentación de adjetivos antónimos situados en los polos de una escala de 7 a 11 puntos de intensidad.", "Consiste en una afirmación a la que el evaluado asigna un valor sobre una escala graduada discreta de acuerdo.", "Es un formato exclusivo de los test de rendimiento máximo para evaluar la velocidad de procesamiento cognitivo."], "correct": 1, "hint": "Diferencie el formato de afirmación/acuerdo del formato de adjetivos bipolares.", "explanation": "Likert utiliza afirmaciones y niveles de acuerdo (ej: 1 a 5), mientras que los adjetivos bipolares son propios del Diferencial Semántico."}, {"q": "Elegir la afirmación correcta: Respecto a los ítems de emparejamiento.", "options": ["La lista de elementos a emparejar debe ser lo más extensa posible, superando siempre los 20 elementos por columna.", "Combinan la objetividad de los ítems de elección con el control del reconocimiento de la respuesta correcta de forma eficiente.", "Siempre debe haber una correspondencia biunívoca exacta sin posibilidad de utilizar elementos de distracción o máscara."], "correct": 1, "hint": "Considere las ventajas de este formato frente a la elección simple y el número recomendado de elementos.", "explanation": "Permiten evaluar relaciones de forma objetiva y controlada. El texto recomienda no exceder los 15 elementos."}, {"q": "Elegir la afirmación correcta: Sobre el Diferencial Semántico de Osgood (1952).", "options": ["Evalúa el valor denotativo y objetivo que las personas asocian a conceptos mediante preguntas de respuesta breve.", "Utiliza escalas bipolares compuestas por adjetivos antónimos para medir el valor connotativo asociado a conceptos.", "Es una técnica de ordenación donde el sujeto debe jerarquizar una lista de 10 dibujos siguiendo un criterio lógico."], "correct": 1, "hint": "Vincule la técnica con el análisis de significados y el uso de polos opuestos.", "explanation": "El diferencial semántico mide actitudes a través del significado connotativo usando pares de adjetivos como 'Bueno-Malo'."}, {"q": "Elegir la afirmación incorrecta: Características generales de los test.", "options": ["Un test implica normalmente una predicción o inferencia acerca de conductas más importantes que las observadas.", "La posición inferida en el constructo solo afecta al conjunto limitado de conductas que han sido observadas en el test.", "Un test se caracteriza por comparar la respuesta de un evaluado con las puntuaciones de su grupo normativo de referencia."], "correct": 1, "hint": "Reflexione sobre el alcance de la inferencia psicométrica (¿se queda solo en el test?).", "explanation": "La inferencia no se limita solo a las conductas del test; se pretende generalizar la posición del sujeto en el constructo global."}, {"q": "Elegir la afirmación incorrecta: Problemas en el desarrollo de instrumentos según Crocker y Algina.", "options": ["La determinación del número de ítems necesario para una muestra adecuada de conductas es un problema central.", "La medición realizada en psicología está siempre sujeta a error, cobrando mayor fuerza al medir variables latentes.", "Los constructos psicológicos se definen exclusivamente por definiciones operacionales, sin requerir comportamiento relacional."], "correct": 2, "hint": "Busque la condición adicional necesaria para definir constructos más allá de la operacionalización.", "explanation": "El texto afirma que los constructos *no* pueden ser definidos solo operacionalmente; deben mostrar comportamiento relacional con otras variables."}, {"q": "Elegir la afirmación incorrecta: Taxonomía de los test según Martínez-Arias (1995).", "options": ["Según la finalidad, los test pueden clasificarse en aplicaciones orientadas a la investigación o al diagnóstico evaluador.", "Por el grado de aculturación, se define un continuo entre test desprovistos de contenido cultural y test puramente verbales.", "Según el área de medida, los test se dividen únicamente en test de inteligencia y test de problemas de salud mental."], "correct": 2, "hint": "Revise la Figura 2 y el texto sobre el área sustantiva para ver si la lista es cerrada o abierta.", "explanation": "El área de medida incluye rendimiento académico, inteligencia, personalidad, actitudes y 'otras' áreas; no es una clasificación binaria."}, {"q": "Elegir la afirmación incorrecta: Sobre los test según el método (Psicométricos vs Proyectivos).", "options": ["Los test psicométricos consideran de forma independiente todos sus elementos para obtener una puntuación cuantitativa.", "Las pruebas proyectivas carecen de problemas de estandarización debido a que el dominio de respuestas posibles es finito.", "El test de Rorschach es un ejemplo de prueba proyectiva que utiliza manchas de tinta para inferir problemas psicológicos."], "correct": 1, "hint": "Identifique uno de los tres problemas fundamentales de las pruebas proyectivas mencionados en el texto.", "explanation": "Al contrario, la estandarización del *infinito* dominio de respuestas es uno de los problemas fundamentales de las pruebas proyectivas."}, {"q": "Elegir la afirmación incorrecta: Aproximaciones conceptuales de los atributos humanos.", "options": ["La aproximación a los rasgos latentes trata de ubicar a las personas a lo largo del continuo que define el constructo.", "La aproximación de procesamiento de la información se centra en el grado de ejecución sobre un dominio o criterio externo.", "La aproximación de procesamiento de la información intenta determinar los procesos cognitivos subyacentes a las respuestas."], "correct": 1, "hint": "No confunda la aproximación de procesamiento de información con la aproximación al dominio (TRC).", "explanation": "La aproximación al dominio (TRC) es la que se centra en el grado de ejecución sobre un criterio, no la de procesamiento de información."}, {"q": "Elegir la afirmación incorrecta: Modalidades de aplicación de los test.", "options": ["En los test orales, las instrucciones y respuestas son siempre verbales, permitiendo analizar componentes no verbales.", "Los test situacionales colocan a los evaluados en situaciones artificiales que evocan la realidad para recoger su conducta.", "Los test de lápiz y papel son protocolos rígidos que no admiten variedad en los formatos de presentación de los estímulos."], "correct": 2, "hint": "Considere la versatilidad de los formatos escritos (cuadernillos, hojas, etc.).", "explanation": "El texto afirma explícitamente que los test de lápiz y papel 'admiten una gran variedad de formatos de presentación'."}, {"q": "Elegir la afirmación incorrecta: Demandas exigidas al sujeto.", "options": ["En los test de potencia, las diferencias individuales se valoran en relación con la calidad de las respuestas dadas.", "En los test de velocidad, el tiempo de ejecución está rigurosamente controlado para determinar la capacidad máxima.", "En los test de potencia, el tiempo de ejecución es el factor crítico que determina la variabilidad de las puntuaciones."], "correct": 2, "hint": "Diferencie el factor crítico en potencia (calidad/dificultad) frente a velocidad (tiempo).", "explanation": "En los test de potencia, el factor crítico es la dificultad o calidad de la respuesta, no el tiempo (que es propio de los de velocidad)."}, {"q": "Elegir la afirmación incorrecta: Fases en la construcción de un test.", "options": ["La fase 1 implica identificar el propósito del test y la naturaleza de las inferencias que se pretenden realizar.", "La fase 4 establece que el modelo de medida debe definirse mediante un proceso 'bottom-up' a partir de los ítems.", "La fase 5 consiste en especificar el formato de los ítems buscando eficiencia entre constructo y propiedades del formato."], "correct": 1, "hint": "Revise la dirección del flujo de diseño (de la teoría a los datos o viceversa).", "explanation": "El proceso debe ser 'top-down' (de la teoría a los datos), no 'bottom-up'. Los datos confirman la estructura previamente hipotetizada."}, {"q": "Elegir la afirmación incorrecta: Objetivos de los test psicométricos (Prieto y Delgado, 1996).", "options": ["La medición de un constructo teórico implica establecer reglas de correspondencia con conductas observables.", "En la evaluación académica, los ítems deben muestrearse de un dominio cuyos límites están determinados por objetivos.", "En la selección de personal, el diseño del test es independiente de los conocimientos y destrezas requeridos para el puesto."], "correct": 2, "hint": "Piense en la relevancia del contenido en un contexto laboral o de selección.", "explanation": "Al contrario, el diseño en selección de personal estará influido por los conocimientos y destrezas requeridos para el puesto de trabajo."}, {"q": "Elegir la afirmación incorrecta: Formato de ítems de respuesta dicotómica.", "options": ["Este formato obliga al evaluado a posicionarse de forma polar respecto al enunciado (ej: Verdadero/Falso).", "Se utiliza predominantemente en test de rendimiento típico, estando prohibido su uso en test de rendimiento máximo.", "El evaluado debe tratar de establecer un promedio representativo de su comportamiento habitual ante la afirmación."], "correct": 1, "hint": "Busque el uso compartido de este formato en distintos tipos de rendimiento.", "explanation": "El texto afirma que este tipo de formato 'se utiliza tanto en los test de rendimiento máximo como de rendimiento típico'."}, {"q": "Elegir la afirmación incorrecta: Formato de ítems de respuesta breve.", "options": ["Permiten obtener una idea más precisa de los conocimientos de la persona al requerir la elaboración de la respuesta.", "Su principal ventaja es la facilidad para estandarizar y puntuar de forma objetiva el infinito dominio de respuestas.", "Se recomienda utilizar verbos como 'enumere' o 'compare' en lugar de fórmulas abierta como 'escriba cuanto sepa'."], "correct": 1, "hint": "Identifique el mayor inconveniente de las respuestas abiertas para el psicometrista.", "explanation": "Al contrario, presentan el inconveniente de ser muy difíciles de puntuar y estandarizar debido al dominio de respuestas casi infinito."}, {"q": "Elegir la afirmación incorrecta: Ítems de ordenación y manipulación.", "options": ["En los ítems de ordenación, es recomendable no sobrepasar el número de 10 elementos por la complejidad de la tarea.", "Los ítems de tipo manipulativo suelen implicar tareas como resolver rompecabezas o coordinación psicomotriz.", "En los ítems de ordenación, los elementos presentados deben ser heterogéneos para evaluar la discriminación visual."], "correct": 2, "hint": "Busque el requisito de consistencia interna de los elementos en una lista de ordenación.", "explanation": "El texto especifica que 'todos los elementos deben ser homogéneos' en los ítems de ordenación para una correcta ejecución."}, {"q": "Elegir la afirmación incorrecta: Sobre el manual del test (fase 10).", "options": ["Debe incluir normas claras de corrección de los ítems y directrices para la interpretación de las puntuaciones.", "El manual es un material opcional que solo debe desarrollarse si el test se va a utilizar en investigación académica.", "Debe figurar el procedimiento para la obtención de la puntuación observada a partir de las respuestas del sujeto."], "correct": 1, "hint": "Considere la importancia de la estandarización también en la fase de corrección/interpretación.", "explanation": "La elaboración del manual es la fase final y obligatoria para garantizar la correcta administración, corrección e interpretación del test."}, {"q": "Elegir la afirmación incorrecta: Análisis psicométrico (fase 8).", "options": ["El análisis de ítems permite eliminar o reformular aquellos que no cumplen con los criterios de calidad preestablecidos.", "El análisis de la fiabilidad se realiza una única vez antes de la construcción de los ítems para asegurar su estabilidad.", "El modelo de evaluación de Prieto y Muñiz (2000) es el referente citado para efectuar los análisis fundamentales."], "correct": 1, "hint": "Reflexione sobre cuándo se puede calcular empíricamente la estabilidad o consistencia de un instrumento.", "explanation": "La fiabilidad se analiza en la fase 8, tras administrar la versión preliminar a una muestra, no antes de construir los ítems."}, {"q": "Elegir la afirmación incorrecta: Sobre la clasificación diagnóstica.", "options": ["Los ítems deben seleccionar conductas críticas relevantes para diferenciar entre categorías de clasificación.", "Es un objetivo de los test psicométricos orientado fundamentalmente al avance de teorías puramente abstractas.", "Se busca identificar síntomas o patrones que permitan ubicar al sujeto en una categoría clínica o diagnóstica."], "correct": 1, "hint": "Diferencie el objetivo de 'medición de constructo teórico' del objetivo de 'clasificación diagnóstica'.", "explanation": "La clasificación diagnóstica está más relacionada con el ejercicio profesional y la diferenciación de categorías, no con teorías puramente abstractas."}];
+        const jsonTestB = [{"q": "Un test se define formalmente como un procedimiento estándar para obtener valores de los indicadores de un determinado ____.", "options": ["Constructo psicológico", "Criterio de evaluación", "Atributo conductual  "], "correct": 0, "hint": "Se refiere a la variable latente inobservable que se intenta operacionalizar.", "explanation": "$$\\text{Un test es la herramienta para medir el } \\Psi \\text{ (constructo) mediante indicadores empíricos.}$$"}, {"q": "La operativización del constructo se realiza sobre la base de una pequeña proporción de la ____.", "options": ["Muestra representativa", "Población de conductas", "Variabilidad de ítems "], "correct": 1, "hint": "No se pueden evaluar todos los comportamientos posibles asociados a un rasgo.", "explanation": "$$\\text{Isomorfismo: El test debe representar fielmente la } P(c) \\text{ o población de conductas.}$$"}, {"q": "La estandarización garantiza que la variabilidad de las puntuaciones se deba al constructo y no al ____.", "options": ["Evaluador del proceso", "Procedimiento de medida", "Sesgo del participante"], "correct": 1, "hint": "Asegura que las condiciones de aplicación sean constantes para todos.", "explanation": "$$\\text{Estandarización } \\rightarrow \\sigma^2_{total} = \\sigma^2_{constructo} + \\cancel{\\sigma^2_{procedimiento}}.$$"}, {"q": "Según Crocker y Algina, uno de los problemas fundamentales es que la medición realizada está siempre sujeta a ____.", "options": ["Error de medida ", "Sesgo sistemático", "Falta de validez"], "correct": 0, "hint": "Es la diferencia entre la puntuación observada y la verdadera.", "explanation": "$$\\text{Modelo Clásico: } X = V + E \\text{, donde } E \\ne 0 \\text{ siempre en Psicología.}$$"}, {"q": "Las pruebas proyectivas, a diferencia de los test psicométricos, utilizan normas o criterios de tipo ____.", "options": ["Global y cualitativo", "Estándar y numérico ", "Lógico y descriptivo"], "correct": 0, "hint": "No suelen estar estandarizadas y analizan la respuesta de forma holística.", "explanation": "$$\\text{Psicométricos } \\rightarrow \\text{ Cuantitativos; Proyectivos } \\rightarrow \\text{ Cualitativos.}$$"}, {"q": "La Teoría de la Respuesta al Ítem (TRI) modela la probabilidad de respuesta mediante una función ____.", "options": ["Lineal de regresión", "Logística no lineal", "Normal acumulativa "], "correct": 1, "hint": "Relaciona la probabilidad de acierto con el nivel del rasgo latente $(\\theta)$.", "explanation": "$$P(\\theta) = \\frac{e^{D a (\\theta - b)}}{1 + e^{D a (\\theta - b)}} \\text{ (Función Logística).}$$"}, {"q": "En los test de ____, las diferencias individuales dependen básicamente de la rapidez de la respuesta.", "options": ["Potencia o nivel  ", "Velocidad o rapidez", "Ejecución típica   "], "correct": 1, "hint": "Los ítems no tienen dificultad objetiva alta, el factor crítico es el tiempo.", "explanation": "$$\\text{Test de Velocidad: } t \\rightarrow \\min, \\text{ Dificultad } \\approx 0 \\text{ para el sujeto.}$$"}, {"q": "Los test de ____ plantean situaciones habituales donde no hay respuestas correctas ni incorrectas.", "options": ["Ejecución máxima ", "Ejecución típica ", "Rendimiento puro"], "correct": 1, "hint": "Miden personalidad, actitudes o intereses.", "explanation": "$$\\text{Ejecución Típica: Comportamiento más frecuente; sin criterio de veracidad.}$$"}, {"q": "El conjunto de factores de un test que cubren las áreas de interés del constructo se denomina ____.", "options": ["Estructura latente", "Dominio de medida ", "Banco de reactivos"], "correct": 0, "hint": "Es el modelo de medida que se establece de forma previa en un proceso top-down.", "explanation": "$$\\text{Estructura Latente = Modelo de medida que confirma la estructura hipotetizada.}$$"}, {"q": "Para constituir el banco de ítems (pool), se recomienda elaborar de ____ el número final de ítems.", "options": ["1,0 a 2,0 veces", "1,5 a 3,0 veces", "3,5 a 5,0 veces"], "correct": 1, "hint": "Se necesita un excedente para descartar los que no funcionen tras el análisis.", "explanation": "$$\\text{Pool de ítems: } n_{inicial} \\in [1.5n, 3n] \\text{ para asegurar calidad final.}$$"}, {"q": "Los test ____ son aquellos en los que el ordenador selecciona los ítems según el nivel del individuo.", "options": ["De potencia pura", "Adaptativos    ", "Automatizados  "], "correct": 1, "hint": "La presentación de reactivos depende de las respuestas sucesivas del evaluado.", "explanation": "$$\\text{Test Adaptativo: Ajuste dinámico de dificultad basándose en } \\theta \\text{ estimado.}$$"}, {"q": "Un ítem de elección múltiple está bien elaborado si los distractores son igualmente ____.", "options": ["Complejos de leer", "Plausibles o atractivos", "Cortos y simétricos  "], "correct": 1, "hint": "Deben confundir a quien no conoce la respuesta correcta.", "explanation": "$$\\text{Distractores: Deben ser elegidos con probabilidad } p \\approx 1/(k-1) \\text{ por azar.}$$"}, {"q": "La escala Likert suele utilizar valores graduados discretos llamados ____, generalmente entre 1 y 5.", "options": ["Niveles de rango ", "Puntos de anclaje", "Grados de acuerdo"], "correct": 1, "hint": "Indican la magnitud del acuerdo o desacuerdo con el enunciado.", "explanation": "$$\\text{Likert: Escala ordinal de } k \\text{ puntos de anclaje (generalmente impares).}$$"}, {"q": "El diferencial semántico de Osgood utiliza escalas bipolares compuestas por ____.", "options": ["Sinónimos de intensidad", "Adjetivos antónimos   ", "Valores de preferencia"], "correct": 1, "hint": "Se evalúa el valor connotativo situando la respuesta entre dos polos opuestos.", "explanation": "$$\\text{Diferencial Semántico: } [\\text{Bueno}] \\longleftrightarrow [\\text{Malo}] \\text{ en escala de 7-11 puntos.}$$"}, {"q": "En los ítems de emparejamiento, se recomienda que la lista no exceda de ____ elementos.", "options": ["10 elementos", "15 elementos", "20 elementos"], "correct": 1, "hint": "Un número mayor dificulta excesivamente la tarea de reconocimiento.", "explanation": "$$\\text{Emparejamiento: Máximo 15 elementos para mantener la carga cognitiva controlada.}$$"}, {"q": "El tamaño de la muestra para elaborar los baremos del test se denomina ____.", "options": ["Muestra de ensayo", "Grupo normativo ", "Población diana "], "correct": 1, "hint": "Debe representar adecuadamente a la población de referencia para la interpretación.", "explanation": "$$\\text{Baremación: Comparación del sujeto con su Grupo Normativo } (G_N).$$"}, {"q": "El modelo de Prieto y Muñiz (2000) evalúa la calidad del test analizando ítems, fiabilidad y ____.", "options": ["Puntuación bruta", "Validez de medida", "Escala nominal  "], "correct": 1, "hint": "Incluye contenido, constructo y predictiva.", "explanation": "$$\\text{Calidad del Test: } f(\\text{Análisis Ítems, } \\rho_{xx'}, \\text{ Validez}).$$"}, {"q": "En la construcción de un test, la fase de identificar el propósito implica definir la naturaleza de las ____.", "options": ["Inferencias a realizar", "Variables de control ", "Muestras de sujetos "], "correct": 0, "hint": "Se refiere a qué uso se le dará a las puntuaciones obtenidas.", "explanation": "$$\\text{Propósito: Determinar el tipo de inferencia } \\Psi \\rightarrow X \\text{ deseada.}$$"}, {"q": "Los test de ____ solicitan a los evaluados resolver rompecabezas o tareas de destreza física.", "options": ["Situación real  ", "Manipulativos   ", "Papel y lápiz   "], "correct": 1, "hint": "Utilizan material físico que el sujeto debe operar.", "explanation": "$$\\text{Test Manipulativos: Evaluación de coordinación bimanual, visualización, etc.}$$"}, {"q": "La aproximación de ____ intenta determinar los procesos cognitivos tras las respuestas.", "options": ["Rasgos latentes     ", "Procesamiento de información", "Dominio o criterios "], "correct": 1, "hint": "Se centra en el 'cómo' se llega a la respuesta, no solo en el resultado.", "explanation": "$$\\text{Enfoque Cognitivo: Ítems diseñados para descomponer procesos mentales.}$$"}, {"q": "¿Cuáles son características de la aplicación sistemática de un test según Martínez-Arias (1995)?", "options": ["Estímulos dispuestos previamente", "Reglas o instrucciones fijadas   ", "Todas las anteriores son correctas"], "correct": 2, "hint": "Implica tanto la preparación del material como el protocolo de respuesta.", "explanation": "$$\\text{Sistemática: Estímulos + Reglas + Estandarización de respuestas.}$$"}, {"q": "¿Qué problemas se presentan habitualmente en el desarrollo de instrumentos psicométricos?", "options": ["Muestras limitadas de conductas", "Ausencia de unidades bien definidas", "Todas las anteriores son correctas"], "correct": 2, "hint": "Incluye tanto la representatividad como la escala de medida.", "explanation": "$$\\text{Limitaciones: Error de muestreo + Arbitrariedad de la escala + Error latente.}$$"}, {"q": "¿Qué modelos estadísticos se mencionan para la elaboración de la teoría de los test?", "options": ["Teoría Clásica de los Test (TCT)", "Teoría de la Respuesta al Ítem (TRI)", "Todas las anteriores son correctas"], "correct": 2, "hint": "Incluye modelos lineales y modelos no lineales logísticos.", "explanation": "$$\\text{Modelos: TCT (Lineal), TRI (Logístico), TG (Experimental).}$$"}, {"q": "¿Qué tipos de test existen según la modalidad de aplicación?", "options": ["Orales, lápiz y papel, u objetivos", "Manipulativos o computarizados    ", "Todas las anteriores son correctas"], "correct": 2, "hint": "Abarca desde el registro psicofisiológico hasta la interacción verbal.", "explanation": "$$\\text{Modalidades: Oral, Escrito, Manipulativo, Situacional, PC, Objetivo.}$$"}, {"q": "¿Qué objetivos deben cubrir los test psicométricos según Prieto y Delgado (1996)?", "options": ["Medición de constructos teóricos", "Selección de personal y diagnóstico", "Todas las anteriores son correctas"], "correct": 2, "hint": "Incluye tanto el ámbito académico como el profesional e investigador.", "explanation": "$$\\text{Objetivos: Teoría, Evaluación Académica, Selección, Diagnóstico.}$$"}, {"q": "¿Qué elementos se deben considerar para una correcta redacción de ítems de elección múltiple?", "options": ["Evitar formulaciones negativas   ", "Evitar expresiones como 'a veces'", "Todas las anteriores son correctas"], "correct": 2, "hint": "Se busca claridad léxica y evitar la ambigüedad en las alternativas.", "explanation": "$$\\text{Redacción: Claridad + No negatividad + Unicidad de respuesta correcta.}$$"}, {"q": "¿En qué fases consiste el análisis psicométrico fundamental de un test?", "options": ["Análisis de ítems y su selección", "Estudio de la validez y fiabilidad", "Todas las anteriores son correctas"], "correct": 2, "hint": "Se refiere al paso 8 de la construcción del test.", "explanation": "$$\\text{Psicometría: } \\text{Análisis de Ítems } + \\text{ Validez } + \\text{ Fiabilidad.}$$"}, {"q": "¿Qué tipos de test se distinguen según el planteamiento de resolución?", "options": ["De ejecución máxima (habilidades)", "De ejecución típica (personalidad)", "Todas las anteriores son correctas"], "correct": 2, "hint": "Cronbach distinguía estos dos tipos según el criterio de corrección.", "explanation": "$$\\text{Máxima (Verdad/Falso) vs Típica (Escala de frecuencia/acuerdo).}$$"}, {"q": "¿Cuáles son los problemas fundamentales de las pruebas proyectivas como el Rorschach?", "options": ["Ausencia de teoría sustentadora ", "Dificultad de estandarización   ", "Todas las anteriores son correctas"], "correct": 2, "hint": "Se critica la falta de escala de medida y la subjetividad interpretativa.", "explanation": "$$\\text{Críticas: No Teoría + No Escala + No Estandarización de respuestas.}$$"}, {"q": "¿Qué aspectos debe incluir el manual de un test según la fase 10 de construcción?", "options": ["Instrucciones para la aplicación", "Normas de corrección y baremos   ", "Todas las anteriores son correctas"], "correct": 2, "hint": "Es el documento que permite a otros profesionales usar el instrumento.", "explanation": "$$\\text{Manual: Instrucciones } + \\text{ Puntuación } + \\text{ Interpretación.}$$"}, {"q": "En un test de ejecución típica, la instrucción 'marque la respuesta correcta' es ____.", "options": ["Esencial para la puntuación", "Fijada para evitar el azar ", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Recuerda que en estos test no existen respuestas correctas.", "explanation": "$$\\text{En ejecución típica NO hay respuestas correctas, se pide sinceridad.}$$"}, {"q": "Un test de velocidad se caracteriza por tener ítems de ____.", "options": ["Dificultad objetiva muy alta ", "Complejidad cognitiva máxima", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Los ítems en velocidad suelen ser muy fáciles para el sujeto.", "explanation": "$$\\text{Test Velocidad: Dificultad } \\approx 0 \\text{; la discriminación es por rapidez.}$$"}, {"q": "El término 'pool de ítems' hace referencia a ____.", "options": ["La muestra de sujetos final   ", "La varianza del error de medida", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Se refiere al conjunto inicial de reactivos elaborados.", "explanation": "$$\\text{Pool de ítems: Banco o conjunto de reactivos candidatos al test final.}$$"}, {"q": "En la escala Likert, el punto neutro se incluye obligatoriamente para ____.", "options": ["Aumentar la varianza del ítem ", "Garantizar la validez interna", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "El texto menciona que en ocasiones se omite para evitar tendencias centrales.", "explanation": "$$\\text{Punto Neutro: Opcional; se elimina para forzar el posicionamiento.}$$"}, {"q": "La aproximación al dominio (TRC) tiene como objetivo principal ____.", "options": ["Comparar al sujeto con el grupo", "Medir rasgos latentes inestables", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Se centra en el grado de ejecución sobre un criterio u objetivo específico.", "explanation": "$$\\text{TRC (Criterio): Énfasis en la ejecución sobre el dominio, no en normas.}$$"}, {"q": "Un ítem de diferencial semántico se puntúa típicamente mediante ____.", "options": ["Un criterio de acierto/error  ", "Una lista de categorías cerradas", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Se utiliza una escala entre adjetivos antónimos.", "explanation": "$$\\text{Diferencial Semántico: Puntuación en un continuo bipolar connotativo.}$$"}, {"q": "La técnica Rorschach se clasifica dentro de los test de ____.", "options": ["Rendimiento máximo objetivo", "Ejecución típica psicométrica", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Es una prueba proyectiva, no psicométrica.", "explanation": "$$\\text{Rorschach: Prueba Proyectiva (Cualitativa), no test psicométrico.}$$"}, {"q": "La fase de 'delimitar la proporción de ítems' (fase 4) se conoce como ____.", "options": ["Estandarización del manual", "Análisis de fiabilidad total", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Se refiere al modelo de medida o estructura latente.", "explanation": "$$\\text{Fase 4: Establecimiento del Modelo de Medida / Estructura Latente.}$$"}, {"q": "En los ítems de respuesta breve, la principal ventaja es ____.", "options": ["La facilidad de estandarización", "La sencillez de la corrección ", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Su desventaja es precisamente que son difíciles de puntuar.", "explanation": "$$\\text{Respuesta Breve: Ventaja es la precisión; Desventaja es la corrección.}$$"}, {"q": "El grado de aculturación de un test se refiere exclusivamente a ____.", "options": ["La edad de los destinatarios ", "La modalidad de aplicación oral", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Se refiere al peso de los contenidos culturales en la ejecución.", "explanation": "$$\\text{Aculturación: Continuo de dependencia de contenidos culturales.}$$"}];
+        const jsonLaboratorio = [{"id": 1, "title": "Estimación del Banco de Ítems (Pool)", "context": "Según Crocker y Algina (1986), para construir un test se debe elaborar inicialmente entre $1.5$ y $3$ veces el número final de ítems deseado ($N_f$). Un investigador desea un test final de $60$ ítems.", "parts": [{"id": "p1a", "label": "a)", "question": "¿Cuál es el número mínimo de ítems que debe contener el pool inicial?", "correctValue": 90, "tolerance": 0, "explanation": "$$N_{min} = 60 \\times 1.5 = 90$$"}, {"id": "p1b", "label": "b)", "question": "¿Cuál es el número máximo de ítems recomendado para el pool inicial?", "correctValue": 180, "tolerance": 0, "explanation": "$$N_{max} = 60 \\times 3 = 180$$"}, {"id": "p1c", "label": "c)", "question": "Si tras el análisis de ítems se descarta el $45\\%$ del pool máximo (180), ¿cuántos ítems quedarían?", "correctValue": 99, "tolerance": 0, "explanation": "$$N_{restante} = 180 \\times (1 - 0.45) = 99$$"}, {"id": "p1d", "label": "d)", "question": "Con los 99 ítems restantes, ¿cuántos ítems exceden el objetivo final de 60?", "correctValue": 39, "tolerance": 0, "explanation": "$$Excedente = 99 - 60 = 39$$"}]}, {"id": 2, "title": "Puntuación en Escala Likert", "context": "Se administra una escala tipo Likert de $25$ ítems con anclajes del $1$ al $7$ (donde 1 es 'Totalmente en desacuerdo' y 7 'Totalmente de acuerdo').", "parts": [{"id": "p2a", "label": "a)", "question": "¿Cuál es la puntuación mínima posible en el test?", "correctValue": 25, "tolerance": 0, "explanation": "$$X_{min} = 25 \\times 1 = 25$$"}, {"id": "p2b", "label": "b)", "question": "¿Cuál es la puntuación máxima posible?", "correctValue": 175, "tolerance": 0, "explanation": "$$X_{max} = 25 \\times 7 = 175$$"}, {"id": "p2c", "label": "c)", "question": "¿Cuál es el valor de la puntuación neutra teórica?", "correctValue": 100, "tolerance": 0, "explanation": "$$X_{neutral} = 25 \\times 4 = 100$$"}, {"id": "p2d", "label": "d)", "question": "Si un sujeto obtiene 120 puntos, ¿cuál es su media por ítem?", "correctValue": 4.8, "tolerance": 0.1, "explanation": "$$\\bar{x} = \\frac{120}{25} = 4.8$$"}]}, {"id": 3, "title": "Corrección del Azar en Elección Múltiple", "context": "En un test de ejecución máxima de $50$ ítems, cada ítem tiene $4$ alternativas de respuesta. Se aplica la fórmula de corrección: $X_c = A - \\frac{E}{k-1}$.", "parts": [{"id": "p3a", "label": "a)", "question": "Si un alumno tiene 40 aciertos (A) y 9 errores (E), ¿cuál es su puntuación corregida?", "correctValue": 37, "tolerance": 0.1, "explanation": "$$X_c = 40 - \\frac{9}{4-1} = 40 - 3 = 37$$"}, {"id": "p3b", "label": "b)", "question": "Si otro alumno deja 5 preguntas en blanco y falla 12, ¿cuántos aciertos tuvo?", "correctValue": 33, "tolerance": 0, "explanation": "$$A = 50 - 5 - 12 = 33$$"}, {"id": "p3c", "label": "c)", "question": "Calcule la puntuación corregida del segundo alumno (A=33, E=12, k=4).", "correctValue": 29, "tolerance": 0.1, "explanation": "$$X_c = 33 - \\frac{12}{3} = 29$$"}, {"id": "p3d", "label": "d)", "question": "¿Cuál es el porcentaje de aciertos corregidos sobre el total del primer alumno?", "correctValue": 74, "tolerance": 0.1, "explanation": "$$P = \\frac{37}{50} \\times 100 = 74\\%$$"}]}, {"id": 4, "title": "Diferencial Semántico y Distancia Eclídea", "context": "Se evalúa la actitud hacia 'Psicometría' mediante $5$ escalas bipolares de $7$ puntos ($-3$ a $+3$). El Perfil A es $[2, 1, 3, 0, -1]$ y el Perfil B es $[1, 0, 1, 1, 1]$.", "parts": [{"id": "p4a", "label": "a)", "question": "Calcule la suma de las puntuaciones del Perfil A.", "correctValue": 5, "tolerance": 0, "explanation": "$$2 + 1 + 3 + 0 + (-1) = 5$$"}, {"id": "p4b", "label": "b)", "question": "Calcule la suma de los cuadrados de las diferencias entre el Perfil A y el Perfil B.", "correctValue": 11, "tolerance": 0, "explanation": "$$(2-1)^2 + (1-0)^2 + (3-1)^2 + (0-1)^2 + (-1-1)^2 = 1+1+4+1+4 = 11$$"}, {"id": "p4c", "label": "c)", "question": "Calcule la distancia D (raíz cuadrada de la suma de diferencias al cuadrado).", "correctValue": 3.31, "tolerance": 0.02, "explanation": "$$D = \\sqrt{11} \\approx 3.31$$"}, {"id": "p4d", "label": "d)", "question": "¿Cuál sería la distancia si ambos perfiles fueran idénticos?", "correctValue": 0, "tolerance": 0, "explanation": "La distancia entre dos puntos idénticos es 0."}]}, {"id": 5, "title": "Análisis de Tiempos en Test de Velocidad", "context": "Un test de velocidad consta de $100$ ítems muy sencillos. El tiempo total concedido es de $5$ minutos ($300$ segundos).", "parts": [{"id": "p5a", "label": "a)", "question": "¿Cuántos segundos tiene el sujeto de media por ítem?", "correctValue": 3, "tolerance": 0, "explanation": "$$T_{item} = \\frac{300}{100} = 3$$"}, {"id": "p5b", "label": "b)", "question": "Si un sujeto responde 85 ítems en el tiempo límite, ¿cuál es su velocidad en ítems por minuto?", "correctValue": 17, "tolerance": 0.1, "explanation": "$$V = \\frac{85}{5} = 17$$"}, {"id": "p5c", "label": "c)", "question": "Si el sujeto cometió 5 errores, ¿cuántos aciertos netos (A-E) tuvo?", "correctValue": 80, "tolerance": 0, "explanation": "$$85 - 5 = 80$$"}, {"id": "p5d", "label": "d)", "question": "¿Qué porcentaje del test total completó el sujeto?", "correctValue": 85, "tolerance": 0, "explanation": "$$P = \\frac{85}{100} \\times 100 = 85\\%$$"}]}, {"id": 6, "title": "Muestreo de Conductas y Representatividad", "context": "Un constructo se compone de $4$ dimensiones. La Dimensión 1 representa el $40\\%$, la 2 el $30\\%$, la 3 el $20\\%$ y la 4 el $10\\%$. Se quiere un test de $80$ ítems.", "parts": [{"id": "p6a", "label": "a)", "question": "¿Cuántos ítems deben asignarse a la Dimensión 1?", "correctValue": 32, "tolerance": 0, "explanation": "$$80 \\times 0.40 = 32$$"}, {"id": "p6b", "label": "b)", "question": "¿Cuántos ítems corresponden a la Dimensión 3?", "correctValue": 16, "tolerance": 0, "explanation": "$$80 \\times 0.20 = 16$$"}, {"id": "p6c", "label": "c)", "question": "Si se duplica el tamaño del test a 160 ítems, ¿cuántos ítems tendrá la Dimensión 2?", "correctValue": 48, "tolerance": 0, "explanation": "$$160 \\times 0.30 = 48$$"}, {"id": "p6d", "label": "d)", "question": "¿Cuál es la suma total de ítems de las dimensiones 3 y 4 en el test de 80 ítems?", "correctValue": 24, "tolerance": 0, "explanation": "$$(0.20 + 0.10) \\times 80 = 24$$"}]}, {"id": 7, "title": "Probabilidad de Acierto por Azar", "context": "En un ítem de elección múltiple con $k$ alternativas, la probabilidad de acertar por puro azar es $P(z) = 1/k$.", "parts": [{"id": "p7a", "label": "a)", "question": "¿Cuál es la probabilidad de acierto por azar si hay 5 alternativas?", "correctValue": 0.2, "tolerance": 0.01, "explanation": "$$P = \\frac{1}{5} = 0.2$$"}, {"id": "p7b", "label": "b)", "question": "En un test de 20 ítems con 4 alternativas cada uno, ¿cuántos aciertos se esperan por azar?", "correctValue": 5, "tolerance": 0, "explanation": "$$E(X) = 20 \\times \\frac{1}{4} = 5$$"}, {"id": "p7c", "label": "c)", "question": "Si reducimos a 2 alternativas (dicotómico), ¿cuántos aciertos se esperan por azar en 20 ítems?", "correctValue": 10, "tolerance": 0, "explanation": "$$20 \\times 0.5 = 10$$"}, {"id": "p7d", "label": "d)", "question": "¿Qué porcentaje aumenta la probabilidad de acierto por azar al pasar de 4 a 2 alternativas?", "correctValue": 25, "tolerance": 0, "explanation": "$$0.50 - 0.25 = 0.25 \\rightarrow 25\\%$$"}]}, {"id": 8, "title": "Escalado de Baremos", "context": "Para elaborar los baremos de un test, se aplica a una muestra normativa. Un sujeto obtiene una puntuación directa de $75$ en un test con media $\\mu = 60$ y desviación típica $\\sigma = 10$.", "parts": [{"id": "p8a", "label": "a)", "question": "Calcule la puntuación típica $z$ ($z = (X - \\mu) / \\sigma$).", "correctValue": 1.5, "tolerance": 0.1, "explanation": "$$z = \\frac{75 - 60}{10} = 1.5$$"}, {"id": "p8b", "label": "b)", "question": "Transforme $z$ a una escala $T$ ($T = 50 + 10z$).", "correctValue": 65, "tolerance": 0, "explanation": "$$T = 50 + 10(1.5) = 65$$"}, {"id": "p8c", "label": "c)", "question": "Si otro sujeto tiene una $z = -1$, ¿cuál es su puntuación directa?", "correctValue": 50, "tolerance": 0, "explanation": "$$X = 60 + 10(-1) = 50$$"}, {"id": "p8d", "label": "d)", "question": "¿Cuál es la puntuación $T$ del sujeto con $z = -1$?", "correctValue": 40, "tolerance": 0, "explanation": "$$T = 50 + 10(-1) = 40$$"}]}, {"id": 9, "title": "Items de Emparejamiento y Combinatoria", "context": "Un ítem de emparejamiento tiene dos columnas de $6$ elementos cada una. Es una tarea de emparejamiento exhaustivo (unívoco).", "parts": [{"id": "p9a", "label": "a)", "question": "¿Cuántas formas diferentes hay de emparejar el primer elemento de la columna A?", "correctValue": 6, "tolerance": 0, "explanation": "Hay 6 opciones disponibles en la columna B."}, {"id": "p9b", "label": "b)", "question": "Si ya se han emparejado 4 elementos correctamente, ¿cuántas opciones quedan para el quinto elemento?", "correctValue": 2, "tolerance": 0, "explanation": "$$6 - 4 = 2$$"}, {"id": "p9c", "label": "c)", "question": "¿Cuántas combinaciones totales posibles (permutaciones) existen para las dos columnas de 6?", "correctValue": 720, "tolerance": 0, "explanation": "$$6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720$$"}, {"id": "p9d", "label": "d)", "question": "Si un sujeto acierta los 5 primeros, ¿cuál es la probabilidad de que el último sea correcto por azar?", "correctValue": 1, "tolerance": 0, "explanation": "En un emparejamiento exhaustivo, si $n-1$ son correctos, el último es necesariamente correcto."}]}, {"id": 10, "title": "Planificación de Fases de Construcción", "context": "Se estima que la Fase de 'Construcción de ítems' (Fase 6) toma $40$ días. Esta fase representa el $25\\%$ del tiempo total del proyecto de construcción del test.", "parts": [{"id": "p10a", "label": "a)", "question": "¿Cuál es la duración total estimada del proyecto en días?", "correctValue": 160, "tolerance": 0, "explanation": "$$Total = \\frac{40}{0.25} = 160$$"}, {"id": "p10b", "label": "b)", "question": "Si la 'Identificación del propósito' (Fase 1) consume el $5\\%$ del total, ¿cuántos días dura?", "correctValue": 8, "tolerance": 0, "explanation": "$$160 \\times 0.05 = 8$$"}, {"id": "p10c", "label": "c)", "question": "La elaboración de baremos (Fase 9) dura el doble que la Fase 1. ¿Cuántos días son?", "correctValue": 16, "tolerance": 0, "explanation": "$$8 \\times 2 = 16$$"}, {"id": "p10d", "label": "d)", "question": "¿Cuántos días restan para las demás fases?", "correctValue": 96, "tolerance": 0, "explanation": "$$160 - (40 + 8 + 16) = 96$$"}]}, {"id": 11, "title": "Cálculo de Ítems según Áreas de Contenido", "context": "Un test de inteligencia mide 3 aptitudes: Verbal ($V$), Numérica ($N$) y Espacial ($E$). Se decide una proporción de $2:2:1$ respectivamente para un test de $100$ ítems.", "parts": [{"id": "p11a", "label": "a)", "question": "¿Cuál es la suma de las partes de la proporción?", "correctValue": 5, "tolerance": 0, "explanation": "$$2 + 2 + 1 = 5$$"}, {"id": "p11b", "label": "b)", "question": "¿Cuántos ítems corresponden a la aptitud Espacial?", "correctValue": 20, "tolerance": 0, "explanation": "$$\\frac{1}{5} \\times 100 = 20$$"}, {"id": "p11c", "label": "c)", "question": "¿Cuántos ítems corresponden a la aptitud Verbal?", "correctValue": 40, "tolerance": 0, "explanation": "$$\\frac{2}{5} \\times 100 = 40$$"}, {"id": "p11d", "label": "d)", "question": "Si se desea que la aptitud Numérica tenga 50 ítems manteniendo la proporción, ¿cuántos ítems totales tendría el test?", "correctValue": 125, "tolerance": 0, "explanation": "Si $2k = 50 \\rightarrow k=25$. Total $5k = 125$."}]}, {"id": 12, "title": "Muestra de Baremación", "context": "Se requiere que el grupo normativo para los baremos sea $5$ veces mayor que la muestra de validación. La muestra de validación fue de $250$ sujetos.", "parts": [{"id": "p12a", "label": "a)", "question": "¿Cuántos sujetos debe tener el grupo normativo?", "correctValue": 1250, "tolerance": 0, "explanation": "$$250 \\times 5 = 1250$$"}, {"id": "p12b", "label": "b)", "question": "Si el $12\\%$ de la muestra normativa son 'casos clínicos', ¿cuántos sujetos clínicos hay?", "correctValue": 150, "tolerance": 0, "explanation": "$$1250 \\times 0.12 = 150$$"}, {"id": "p12c", "label": "c)", "question": "Si se pierden 50 sujetos por falta de respuesta, ¿cuál es la muestra final útil?", "correctValue": 1200, "tolerance": 0, "explanation": "$$1250 - 50 = 1200$$"}, {"id": "p12d", "label": "d)", "question": "¿Qué porcentaje de la muestra inicial (1250) representa la pérdida de 50 sujetos?", "correctValue": 4, "tolerance": 0, "explanation": "$$\\frac{50}{1250} \\times 100 = 4\\%$$"}]}, {"id": 13, "title": "Estandarización de Instrucciones", "context": "En un test computerizado, el tiempo de lectura de instrucciones es de $120$ segundos y el tiempo máximo por ítem es de $15$ segundos para $40$ ítems.", "parts": [{"id": "p13a", "label": "a)", "question": "¿Cuál es el tiempo total de ejecución del test en segundos (instrucciones + ítems)?", "correctValue": 720, "tolerance": 0, "explanation": "$$120 + (40 \\times 15) = 120 + 600 = 720$$"}, {"id": "p13b", "label": "b)", "question": "¿Cuántos minutos dura la sesión completa?", "correctValue": 12, "tolerance": 0, "explanation": "$$720 / 60 = 12$$"}, {"id": "p13c", "label": "c)", "question": "Si el software añade un descanso de 3 minutos a la mitad (ítem 20), ¿cuánto dura ahora en total?", "correctValue": 15, "tolerance": 0, "explanation": "$$12 + 3 = 15$$"}, {"id": "p13d", "label": "d)", "question": "¿Qué porcentaje del tiempo total (15 min) se dedica exclusivamente a responder ítems (10 min)?", "correctValue": 66.6, "tolerance": 0.2, "explanation": "$$\\frac{10}{15} \\times 100 \\approx 66.66\\%$$"}]}, {"id": 14, "title": "Fiabilidad y Error de Medida", "context": "Un test tiene una desviación típica de puntuaciones observadas $S_x = 8$ y un coeficiente de fiabilidad $r_{xx} = 0.75$. El error típico de medida es $S_e = S_x \\sqrt{1 - r_{xx}}$.", "parts": [{"id": "p14a", "label": "a)", "question": "Calcule el valor de $(1 - r_{xx})$.", "correctValue": 0.25, "tolerance": 0, "explanation": "$$1 - 0.75 = 0.25$$"}, {"id": "p14b", "label": "b)", "question": "Calcule la raíz cuadrada de dicho valor.", "correctValue": 0.5, "tolerance": 0, "explanation": "$$\\sqrt{0.25} = 0.5$$"}, {"id": "p14c", "label": "c)", "question": "Calcule el error típico de medida ($S_e$).", "correctValue": 4, "tolerance": 0, "explanation": "$$8 \\times 0.5 = 4$$"}, {"id": "p14d", "label": "d)", "question": "Si la fiabilidad sube a 0.91, ¿cuál sería el nuevo $S_e$?", "correctValue": 2.4, "tolerance": 0.1, "explanation": "$$8 \\times \\sqrt{1-0.91} = 8 \\times \\sqrt{0.09} = 8 \\times 0.3 = 2.4$$"}]}, {"id": 15, "title": "Ítems de Ordenación", "context": "Se presenta una tarea de ordenación de $5$ elementos (dibujos de una historia).", "parts": [{"id": "p15a", "label": "a)", "question": "¿Cuántas secuencias totales posibles hay?", "correctValue": 120, "tolerance": 0, "explanation": "$$5! = 120$$"}, {"id": "p15b", "label": "b)", "question": "¿Cuál es la probabilidad de acertar la secuencia correcta por azar?", "correctValue": 0.0083, "tolerance": 0.0001, "explanation": "$$P = 1/120 \\approx 0.00833$$"}, {"id": "p15c", "label": "c)", "question": "Si el sujeto coloca el primer elemento bien, ¿cuántas secuencias posibles quedan para los otros 4?", "correctValue": 24, "tolerance": 0, "explanation": "$$4! = 24$$"}, {"id": "p15d", "label": "d)", "question": "¿Cuántos elementos como máximo recomienda el texto para este tipo de ítems?", "correctValue": 10, "tolerance": 0, "explanation": "El texto menciona que no se debe sobrepasar el número de 10."}]}, {"id": 16, "title": "Estructura Latente y Factores", "context": "Un test tiene una estructura latente de $3$ factores. El Factor 1 tiene $12$ ítems, el Factor 2 tiene $8$ ítems y el Factor 3 tiene $5$ ítems.", "parts": [{"id": "p16a", "label": "a)", "question": "¿Cuál es el número total de ítems del test?", "correctValue": 25, "tolerance": 0, "explanation": "$$12 + 8 + 5 = 25$$"}, {"id": "p16b", "label": "b)", "question": "¿Qué porcentaje del test representa el Factor 1?", "correctValue": 48, "tolerance": 0, "explanation": "$$\\frac{12}{25} \\times 100 = 48\\%$$"}, {"id": "p16c", "label": "c)", "question": "Si se desea que todos los factores tengan el mismo número de ítems basándose en el Factor 1, ¿cuántos ítems tendría el test?", "correctValue": 36, "tolerance": 0, "explanation": "$$12 \\times 3 = 36$$"}, {"id": "p16d", "label": "d)", "question": "¿Cuántos ítems habría que añadir al Factor 3 para que iguale al Factor 2?", "correctValue": 3, "tolerance": 0, "explanation": "$$8 - 5 = 3$$"}]}, {"id": 17, "title": "Análisis de Alternativas Atractivas", "context": "En un ítem con 4 alternativas (A, B, C, D), la correcta es la A. En un piloto con 100 personas, los resultados fueron: A=60, B=10, C=10, D=20.", "parts": [{"id": "p17a", "label": "a)", "question": "¿Cuál es el índice de dificultad del ítem ($p = A/N$)?", "correctValue": 0.6, "tolerance": 0.01, "explanation": "$$60 / 100 = 0.6$$"}, {"id": "p17b", "label": "b)", "question": "¿Cuál es la frecuencia del distractor más atractivo?", "correctValue": 20, "tolerance": 0, "explanation": "El distractor D fue elegido por 20 personas."}, {"id": "p17c", "label": "c)", "question": "Si queremos que todos los distractores sean igualmente atractivos, ¿cuántas personas deberían haber elegido cada uno (B, C, D)?", "correctValue": 13.3, "tolerance": 0.1, "explanation": "$$(100 - 60) / 3 = 40 / 3 \\approx 13.33$$"}, {"id": "p17d", "label": "d)", "question": "¿Cuál es la frecuencia total de errores?", "correctValue": 40, "tolerance": 0, "explanation": "$$10 + 10 + 20 = 40$$"}]}, {"id": 18, "title": "Conversión de Tiempo en Test de Rapidez", "context": "Un sujeto resuelve un test de $60$ ítems en $4$ minutos. Otro sujeto resuelve el mismo test en $200$ segundos.", "parts": [{"id": "p18a", "label": "a)", "question": "¿Cuántos segundos tardó el primer sujeto?", "correctValue": 240, "tolerance": 0, "explanation": "$$4 \\times 60 = 240$$"}, {"id": "p18b", "label": "b)", "question": "¿Cuál es la velocidad del segundo sujeto en ítems por segundo?", "correctValue": 0.3, "tolerance": 0.01, "explanation": "$$60 / 200 = 0.3$$"}, {"id": "p18c", "label": "c)", "question": "¿Cuál es la diferencia de tiempo en segundos entre ambos sujetos?", "correctValue": 40, "tolerance": 0, "explanation": "$$240 - 200 = 40$$"}, {"id": "p18d", "label": "d)", "question": "¿Cuántos ítems por minuto resuelve el primer sujeto?", "correctValue": 15, "tolerance": 0, "explanation": "$$60 / 4 = 15$$"}]}, {"id": 19, "title": "Items de Respuesta Graduada", "context": "Una escala de personalidad usa un formato tipo Likert de $0$ a $4$. Se calcula la puntuación sumando los $20$ ítems, pero $5$ ítems son inversos (se puntúan $4-x$).", "parts": [{"id": "p19a", "label": "a)", "question": "Un sujeto marca '4' en un ítem directo. ¿Cuántos puntos suma?", "correctValue": 4, "tolerance": 0, "explanation": "En ítems directos la puntuación es igual al valor marcado."}, {"id": "p19b", "label": "b)", "question": "El mismo sujeto marca '1' en un ítem inverso. ¿Cuántos puntos suma?", "correctValue": 3, "tolerance": 0, "explanation": "$$4 - 1 = 3$$"}, {"id": "p19c", "label": "c)", "question": "Si el sujeto marca '2' en todos los ítems (directos e inversos), ¿cuál es su puntuación total?", "correctValue": 40, "tolerance": 0, "explanation": "En todos sumaría 2. $$20 \\times 2 = 40$$. (Inverso de 2 es $$4-2=2$$)."}, {"id": "p19d", "label": "d)", "question": "¿Cuál es la puntuación máxima posible en este test?", "correctValue": 80, "tolerance": 0, "explanation": "$$20 \\times 4 = 80$$"}]}, {"id": 20, "title": "Proporción de Contenidos", "context": "En la Fase 4 de construcción, se delimita que el $60\\%$ de los ítems sean de 'Razonamiento Lógico' y el resto de 'Comprensión Lectora'. El test final tendrá $30$ ítems.", "parts": [{"id": "p20a", "label": "a)", "question": "¿Cuántos ítems de Razonamiento Lógico habrá?", "correctValue": 18, "tolerance": 0, "explanation": "$$30 \\times 0.60 = 18$$"}, {"id": "p20b", "label": "b)", "question": "¿Cuántos ítems de Comprensión Lectora habrá?", "correctValue": 12, "tolerance": 0, "explanation": "$$30 - 18 = 12$$"}, {"id": "p20c", "label": "c)", "question": "Si en el pool inicial (Fase 6) se crearon el triple de ítems totales necesarios, ¿cuántos ítems se crearon?", "correctValue": 90, "tolerance": 0, "explanation": "$$30 \\times 3 = 90$$"}, {"id": "p20d", "label": "d)", "question": "Si se mantienen las proporciones en el pool de 90, ¿cuántos ítems de Comprensión Lectora se redactaron?", "correctValue": 36, "tolerance": 0, "explanation": "$$90 \\times 0.40 = 36$$"}]}];
+        const jsonFormulas = [{"name": "Modelo Lineal de la Teoría Clásica de los Test (TCT)", "tex": "$$X = V + E$$"}, {"name": "Criterio de Elaboración del Banco de Ítems (Pool)", "tex": "$$N_{pool} = [1.5 \\cdot N_{final}, 3 \\cdot N_{final}]$$"}, {"name": "Rango Típico del Diferencial Semántico (Osgood)", "tex": "$$R = [-3, +3]$$"}, {"name": "Modelo Logístico de la Teoría de Respuesta al Ítem (TRI)", "tex": "$$P(\\theta) = \\frac{e^{D a (\\theta - b)}}{1 + e^{D a (\\theta - b)}}$$"}];
+
+        // --- TRANSFORMACIÓN DE DATOS PARA LA APP ---
+        const appDB = {
+            quiz: [...jsonTestA, ...jsonTestB],
+            laboratorio: [...jsonLaboratorio],
+            formulas: jsonFormulas.map(f => ({
+                cat: "Fórmula",
+                q: f.name,
+                a: f.tex
+            }))
+        };
+
+        // --- LÓGICA DE LA APLICACIÓN ---
+        const app = {
+            DB: appDB,
+            state: {
+                currentTool: null,
+                index: 0,
+                isFlipped: false,
+                activeData: [],
+                failedQuestions: [],
+                score: 0,
+                totalQuestions: 0
+            },
+
+            // Renderiza MathJax si está disponible
+            renderMath: function() {
+                if (window.MathJax && window.MathJax.typesetPromise) {
+                    MathJax.typesetPromise();
+                }
+            },
+
+            showView: function (view) {
+                document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+                const target = document.getElementById(`view-${view}`);
+                if (target) target.classList.remove('hidden');
+
+                const menuBtn = document.getElementById('btn-global-menu');
+                const counterBox = document.getElementById('nav-counter');
+                
+                if (view === 'home') {
+                    menuBtn.classList.remove('flex');
+                    menuBtn.classList.add('hidden');
+                    counterBox.classList.remove('flex');
+                    counterBox.classList.add('hidden');
+                } else {
+                    menuBtn.classList.remove('hidden');
+                    menuBtn.classList.add('flex');
+                    
+                    if (view === 'formulas') {
+                        counterBox.classList.remove('flex');
+                        counterBox.classList.add('hidden');
+                    } else {
+                        counterBox.classList.remove('hidden');
+                        counterBox.classList.add('flex');
+                    }
+                }
+            },
+
+            startTool: function (tool, customData = null) {
+                const baseData = this.DB[tool] || [];
+                const dataToUse = customData ? [...customData] : JSON.parse(JSON.stringify(baseData));
+
+                if (dataToUse.length === 0) return;
+
+                this.state.currentTool = tool;
+                this.state.index = 0;
+                this.state.score = 0;
+                this.state.failedQuestions = [];
+                this.state.activeData = dataToUse;
+
+                if (tool === 'laboratorio') {
+                    this.state.totalQuestions = dataToUse.reduce((acc, curr) => acc + curr.parts.length, 0);
+                } else {
+                    this.state.totalQuestions = dataToUse.length;
+                }
+
+                if (!customData && tool !== 'formulas') {
+                    this.shuffleArray(this.state.activeData);
+                }
+
+                this.updateCounter();
+                this.showView(tool);
+
+                if (tool === 'quiz') this.renderQuiz();
+                if (tool === 'laboratorio') this.renderLaboratorio();
+                if (tool === 'formulas') this.renderFormulas();
+            },
+
+            updateCounter: function () {
+                const counter = document.getElementById('global-counter');
+                if (counter && this.state.activeData.length > 0) {
+                    counter.innerText = `${this.state.index + 1}/${this.state.activeData.length}`;
+                }
+            },
+
+            shuffleArray: function (arr) {
+                for (let i = arr.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                }
+            },
+
+            finishSession: function() {
+                this.showResults();
+            },
+
+            // --- LÓGICA QUIZ ---
+            renderQuiz: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('quiz-question').innerHTML = data.q;
+                document.getElementById('quiz-feedback').classList.add('hidden');
+                document.getElementById('quiz-hint-box').classList.add('hidden');
+                
+                const container = document.getElementById('quiz-options');
+                container.innerHTML = '';
+                
+                data.options.forEach((opt, i) => {
+                    const btn = document.createElement('button');
+                    btn.className = "option-btn w-full text-left p-4 rounded-xl bg-white flex items-center gap-4 font-semibold text-slate-700 shadow-sm";
+                    btn.innerHTML = `<span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-xs text-slate-400 font-bold shrink-0">${String.fromCharCode(65 + i)}</span> <div class="math-content">${opt}</div>`;
+                    btn.onclick = () => this.quizCheck(i, btn);
+                    container.appendChild(btn);
+                });
+
+                this.renderMath();
+            },
+
+            quizToggleHint: function () {
+                const box = document.getElementById('quiz-hint-box');
+                const data = this.state.activeData[this.state.index];
+                if (data && data.hint) {
+                    box.innerHTML = `<span class="font-bold">Pista:</span> ${data.hint}`;
+                    box.classList.toggle('hidden');
+                    this.renderMath();
+                }
+            },
+
+            quizCheck: function (idx, clickedBtn) {
+                const data = this.state.activeData[this.state.index];
+                const btns = document.getElementById('quiz-options').querySelectorAll('button');
+                btns.forEach(b => b.disabled = true);
+                
+                const feedback = document.getElementById('quiz-feedback');
+                feedback.classList.remove('hidden');
+                
+                if (idx === data.correct) {
+                    this.state.score++;
+                    clickedBtn.classList.add('bg-emerald-50', 'border-emerald-500', 'text-emerald-700');
+                    document.getElementById('quiz-feedback-title').innerText = "¡Correcto!";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-emerald-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    this.state.failedQuestions.push(data);
+                    clickedBtn.classList.add('bg-red-50', 'border-red-500', 'text-red-700');
+                    btns[data.correct].classList.add('bg-emerald-50', 'border-emerald-500', 'ring-2', 'ring-emerald-200');
+                    document.getElementById('quiz-feedback-title').innerText = "Incorrecto";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-red-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+                
+                document.getElementById('quiz-explanation').innerHTML = data.explanation;
+                this.renderMath();
+            },
+
+            quizNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderQuiz();
+                    this.updateCounter();
+                } else this.showResults();
+            },
+
+            // --- LÓGICA LABORATORIO ---
+            renderLaboratorio: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('lab-problem-number').innerText = this.state.index + 1;
+                document.getElementById('lab-main-title').innerText = data.title;
+                document.getElementById('lab-context-box').innerHTML = data.context;
+                
+                const container = document.getElementById('lab-parts-container');
+                container.innerHTML = '';
+                
+                data.parts.forEach((part, i) => {
+                    const partId = `lab-part-${this.state.index}-${i}`;
+                    const letter = part.label.replace(')', '').toLowerCase();
+                    
+                    const html = `
+                        <div class="p-6 md:p-8 border-b border-slate-100 last:border-0">
+                            <div class="flex gap-4 items-start mb-6">
+                                <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex justify-center items-center font-bold shrink-0 mt-1">${letter}</div>
+                                <div class="text-slate-800 font-semibold text-lg math-content pt-1">${part.question}</div>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-4 items-center pl-0 md:pl-12">
+                                <input type="text" id="input-${partId}" class="w-full md:w-64 p-3 rounded-xl border-2 border-slate-200 outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-50 transition text-lg font-mono shadow-sm" placeholder="Respuesta...">
+                                <button id="btn-${partId}" onclick="app.labCheckPart(${this.state.index}, ${i})" class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-xl font-bold uppercase tracking-wider text-sm transition shadow-md w-full md:w-auto">Verificar</button>
+                            </div>
+                            
+                            <div id="feedback-${partId}" class="hidden pl-0 md:pl-12 mt-4 animate-fadeIn">
+                                <div id="feedback-box-${partId}" class="flex items-start gap-3 p-4 rounded-xl">
+                                    <div id="icon-${partId}" class="text-2xl shrink-0 mt-1"></div>
+                                    <div class="w-full">
+                                        <h4 id="title-${partId}" class="font-bold mb-2"></h4>
+                                        <div class="text-sm font-mono bg-slate-800 text-slate-200 p-4 rounded-lg overflow-x-auto math-content shadow-inner border border-slate-700">
+                                            <span class="text-slate-400 text-[10px] uppercase font-sans font-bold tracking-widest block mb-2">Desarrollo Matemático</span>
+                                            ${part.explanation}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.insertAdjacentHTML('beforeend', html);
+                });
+                
+                this.renderMath();
+            },
+
+            labCheckPart: function (problemIdx, partIdx) {
+                const problem = this.state.activeData[problemIdx];
+                const part = problem.parts[partIdx];
+                const partId = `lab-part-${problemIdx}-${partIdx}`;
+
+                const input = document.getElementById(`input-${partId}`);
+                const btn = document.getElementById(`btn-${partId}`);
+                const feedback = document.getElementById(`feedback-${partId}`);
+                const feedbackBox = document.getElementById(`feedback-box-${partId}`);
+                const icon = document.getElementById(`icon-${partId}`);
+                const title = document.getElementById(`title-${partId}`);
+
+                const rawVal = input.value.trim().replace(',', '.');
+                const userVal = parseFloat(rawVal);
+                
+                if (rawVal === "" || isNaN(userVal)) {
+                    input.classList.add('ring-2', 'ring-red-400');
+                    setTimeout(() => input.classList.remove('ring-2', 'ring-red-400'), 500);
+                    return; 
+                }
+
+                input.disabled = true;
+                btn.disabled = true;
+                btn.classList.remove('hover:bg-indigo-700', 'bg-indigo-600');
+                btn.classList.add('bg-slate-300', 'text-slate-500', 'cursor-not-allowed', 'shadow-none');
+                
+                feedback.classList.remove('hidden');
+
+                const diff = Math.abs(userVal - part.correctValue);
+                const isCorrect = diff <= part.tolerance;
+
+                if (isCorrect) {
+                    this.state.score++;
+                    input.classList.add('border-emerald-400', 'bg-emerald-50', 'text-emerald-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-emerald-50 border border-emerald-200";
+                    title.innerText = "¡Cálculo Exacto!";
+                    title.className = "font-black text-emerald-600";
+                    icon.innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    input.classList.add('border-red-400', 'bg-red-50', 'text-red-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-red-50 border border-red-200";
+                    title.innerText = `Cálculo Incorrecto. Respuesta esperada: ${part.correctValue} (±${part.tolerance})`;
+                    title.className = "font-black text-red-600";
+                    icon.innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+
+                this.renderMath();
+            },
+
+            labNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderLaboratorio();
+                    this.updateCounter();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else this.showResults();
+            },
+
+            // --- LÓGICA FÓRMULAS ---
+            renderFormulas: function () {
+                const grid = document.getElementById('formulas-grid');
+                grid.innerHTML = '';
+                
+                this.state.activeData.forEach(data => {
+                    const card = document.createElement('div');
+                    card.className = "glass-card p-6 rounded-2xl border-t-4 border-indigo-500 hover:shadow-lg transition-shadow bg-white flex flex-col justify-between items-center text-center h-full";
+                    card.innerHTML = `
+                        <span class="text-xs font-bold text-indigo-500 uppercase tracking-widest mb-4 w-full border-b border-slate-100 pb-2">${data.q}</span>
+                        <div class="text-2xl font-medium text-slate-800 math-content w-full overflow-x-auto py-4 flex-grow flex items-center justify-center">${data.a}</div>
+                    `;
+                    grid.appendChild(card);
+                });
+
+                this.renderMath();
+            },
+
+            // --- RESULTADOS GLOBALES ---
+            showResults: function () {
+                this.showView('results');
+                const resultText = document.getElementById('result-text');
+                
+                if (this.state.currentTool === 'flashcards' || this.state.currentTool === 'formulas') {
+                    resultText.innerHTML = `Has repasado <strong>${this.state.activeData.length}</strong> fórmulas.`;
+                } else {
+                    resultText.innerHTML = `Has acertado <strong>${this.state.score}</strong> de <strong>${this.state.totalQuestions}</strong>.`;
+                }
+
+                const failBtn = document.getElementById('btn-retry-errors');
+                if (this.state.failedQuestions.length > 0 && this.state.currentTool !== 'formulas') {
+                    failBtn.classList.remove('hidden');
+                    document.getElementById('fail-count').innerText = this.state.failedQuestions.length;
+                } else {
+                    failBtn.classList.add('hidden');
+                }
+            },
+
+            retryErrors: function () { 
+                this.startTool(this.state.currentTool, this.state.failedQuestions); 
+            }
+        };
+
+        // Iniciar en Home al cargar
+                // --- NAVEGACIÓN ENTRE TEMAS ---
+        function setupThemeNavigation() {
+            const courseId = "3º";
+            const folderId = "Psicometría";
+            const subjectId = "psicometria";
+            const shortId = "psicometria";
+            const currentKey = "2";
+            const themeNames = {"1": "Conceptos Fundamentales y Evolución de la Psicometría", "2": "Construcción, Taxonomía y Formatos de los Test Psicológicos", "3": "La Teoría Clásica de los Test y la Fiabilidad", "4": "Análisis de Ítems y Construcción de Test", "5": "La Validez y sus Evidencias", "6": "Fiabilidad, Validez y el Efecto de la Longitud del Test", "7": "Transformación y Equiparación de Puntuaciones", "8": "Evaluación de la Calidad y Uso Ético de los Test", "9": "De la TCT a la Teoría de la Respuesta al Ítem (TRI) y los TAI"};
+            
+            const keys = Object.keys(themeNames);
+            const sortedKeys = keys.map(k => {
+                const parts = k.split('.').map(Number);
+                return { key: k, parts: parts };
+            }).sort((a, b) => {
+                for (let i = 0; i < Math.max(a.parts.length, b.parts.length); i++) {
+                    const pa = a.parts[i] !== undefined ? a.parts[i] : 0;
+                    const pb = b.parts[i] !== undefined ? b.parts[i] : 0;
+                    if (pa !== pb) return pa - pb;
+                }
+                return 0;
+            }).map(x => x.key);
+
+            const currentIdx = sortedKeys.indexOf(currentKey);
+            const container = document.getElementById('theme-navigation-container');
+            if (!container || currentIdx === -1) return;
+
+            const prevKey = sortedKeys[currentIdx - 1];
+            const nextKey = sortedKeys[currentIdx + 1];
+            const isLastTheme = currentIdx === sortedKeys.length - 1;
+
+            let prevButtonHTML = '';
+            if (prevKey) {
+                const temaFilePart = String(prevKey).replace(/\./g, '-');
+                const prevUrl = `../../../temas/${encodeURIComponent(courseId)}/${encodeURIComponent(folderId)}/${shortId}-tema-${temaFilePart}.html`;
+                prevButtonHTML = `
+                    <a href="${prevUrl}" class="flex-1 py-4 border border-slate-200 text-slate-600 rounded-2xl font-bold hover:bg-slate-50 transition text-sm flex items-center justify-center gap-2 bg-white shadow-sm hover:border-slate-300">
+                        <i class="ph-bold ph-arrow-left"></i> Tema Anterior (${prevKey})
+                    </a>
+                `;
+            } else {
+                prevButtonHTML = `<div class="flex-1"></div>`;
+            }
+
+            let nextButtonHTML = '';
+            if (nextKey) {
+                const temaFilePart = String(nextKey).replace(/\./g, '-');
+                const nextUrl = `../../../temas/${encodeURIComponent(courseId)}/${encodeURIComponent(folderId)}/${shortId}-tema-${temaFilePart}.html`;
+                nextButtonHTML = `
+                    <a href="${nextUrl}" class="flex-1 py-4 text-white rounded-2xl font-bold transition text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700" style="box-shadow: 0 8px 25px rgba(2, 132, 199, 0.3);">
+                        Tema Siguiente (${nextKey}) <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                `;
+            } else if (isLastTheme) {
+                nextButtonHTML = `
+                    <a href="../../../index.html?asignatura=${subjectId}" class="flex-1 py-4 text-white rounded-2xl font-bold transition text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700" style="box-shadow: 0 8px 25px rgba(2, 132, 199, 0.3);">
+                        <i class="ph-bold ph-trophy"></i> Ir al Examen Final <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                `;
+            } else {
+                nextButtonHTML = `<div class="flex-1"></div>`;
+            }
+
+            container.innerHTML = prevButtonHTML + nextButtonHTML;
+        }
+
+        // Iniciar en Home al cargar
+        window.onload = () => {
+            app.showView('home');
+            setupThemeNavigation();
+        };
+    </script>
+</body>
+</html>

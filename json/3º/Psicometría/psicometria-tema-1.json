@@ -1,0 +1,1694 @@
+{
+  "jsonTestA": [
+    {
+      "q": "¿Es correcto afirmar que la psicometría se define como un conjunto de procedimientos que permiten la medición directa de los constructos psicológicos?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre la naturaleza del constructo y la del indicador empírico.",
+      "explanation": "La psicometría mide variables inobservables de manera **indirecta** a través de indicadores empíricos; la medida directa no es posible en constructos psicológicos. $$\\text{Inferencia} \\neq \\text{Medida Directa}$$."
+    },
+    {
+      "q": "¿Es la operacionalización el proceso que vincula los indicadores empíricos observables con el constructo teórico subyacente que se pretende medir?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Revisa la relación entre teoría psicológica y criterios de operacionalización.",
+      "explanation": "La operacionalización establece la fortaleza del vínculo entre lo observable (indicador) y lo inobservable (constructo), permitiendo el modelado de la realidad psicológica."
+    },
+    {
+      "q": "¿Sostuvo Cattell que el método de la introspección era la herramienta fundamental para inferir las estructuras subyacentes del individuo?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Cattell se alejó de las corrientes subjetivistas de su época.",
+      "explanation": "Cattell rechazó explícitamente el método de la introspección y el hecho de inferir estructuras subyacentes, centrándose en datos empíricos y tiempos de reacción."
+    },
+    {
+      "q": "¿Fue el matemático Quetelet quien introdujo el concepto de 'hombre promedio' al aplicar el modelo de distribución normal a medidas físicas?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Quetelet es citado como antecedente del trabajo estadístico de Galton.",
+      "explanation": "En 1835, Quetelet demostró que variables como la estatura se distribuyen según la curva normal, sentando las bases para el concepto de $$\\text{hombre promedio}$$."
+    },
+    {
+      "q": "¿Establece la ley de Weber que la diferencia apenas perceptible entre dos objetos es una magnitud absoluta e independiente del estímulo?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Analiza si la percepción del cambio depende del valor inicial del estímulo.",
+      "explanation": "Weber observó que la diferencia no es absoluta, sino relativa a la magnitud del estímulo inicial, siendo una fracción constante $$\\frac{\\Delta E}{E} = K$$."
+    },
+    {
+      "q": "¿Propuso Franz Brentano una función de tipo logarítmico para explicar la relación entre la magnitud del estímulo y la sensación percibida?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre las propuestas de Fechner y Brentano.",
+      "explanation": "Brentano propuso una función **exponencial**, mientras que Fechner fue quien propuso la relación logarítmica entre estímulo y respuesta."
+    },
+    {
+      "q": "¿Comprende la aplicación psicométrica la investigación sobre la fundamentación matemática y los métodos de escalamiento de los test?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre el núcleo teórico y la práctica de construcción de instrumentos.",
+      "explanation": "La fundamentación matemática y el escalamiento pertenecen a la **teoría psicométrica**. La aplicación se centra en el desarrollo de instrumentos concretos y su baremación."
+    },
+    {
+      "q": "¿Fue Galton el inventor de la técnica del análisis factorial como herramienta para la reducción de la dimensionalidad en psicología?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Busca el origen de esta técnica en el año 1904.",
+      "explanation": "El origen del análisis factorial se remonta a Spearman (1904), no a Galton, aunque este último sí desarrolló el método de correlación con Pearson."
+    },
+    {
+      "q": "¿Es el cociente intelectual (CI) una escala que asigna siempre un valor de 100 puntos a la media y una desviación estándar de 15 puntos?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre el concepto de Stern/Terman y la escala de Wechsler.",
+      "explanation": "La asignación de media 100 y desviación 15 es propia de las escalas de **Wechsler**, no del concepto original de CI evolutivo de Stern y Terman."
+    },
+    {
+      "q": "¿Se basa el test Army Beta en una formulación no verbal para evaluar a reclutas analfabetos o que no dominaban el idioma inglés?",
+      "options": [
+        "Es una afirmación verdadera",
+        "Es una afirmación falsa",
+        "No se puede determinar"
+      ],
+      "correct": 0,
+      "hint": "Analiza las características de las pruebas aplicadas en la Primera Guerra Mundial.",
+      "explanation": "El test Beta utilizaba laberintos y puzles para evitar barreras lingüísticas, a diferencia del Alpha, que era de naturaleza verbal."
+    },
+    {
+      "q": "Seleccione la afirmación correcta respecto a la definición de psicometría según Martínez-Arias (1995):",
+      "options": [
+        "Se centra en el análisis de diferencias individuales y el conocimiento de estas",
+        "Aglutina modelos formales que posibilitan la medición y sus condiciones de base",
+        "Define la psicometría como un campo de la psicología que trata solo de los test"
+      ],
+      "correct": 1,
+      "hint": "Busca la definición que mencione modelos formales y bases del proceso.",
+      "explanation": "Martínez-Arias enfatiza el conjunto de modelos formales y las condiciones que permiten llevar a cabo el proceso de medición de forma adecuada."
+    },
+    {
+      "q": "Sobre la Ley de Weber aplicada a la medición de líneas, ¿cuál de las siguientes opciones es correcta?",
+      "options": [
+        "Estableció una proporción constante de $$\\frac{1}{1000}$$para la apreciación visual",
+        "Determinó que la fracción constante para discriminar longitudes era de$$\\frac{1}{100}$$",
+        "Postuló que la diferencia detectable aumenta de forma logarítmica con la línea"
+      ],
+      "correct": 1,
+      "hint": "El dato numérico específico aparece en la descripción de 1834.",
+      "explanation": "Weber estableció como estímulo estándar para las líneas la fracción $$\\frac{1}{100}$$, lo que permitía apreciar esa proporción en comparaciones."
+    },
+    {
+      "q": "Identifique la afirmación correcta sobre la contribución de Gustav Theodor Fechner a la psicofísica:",
+      "options": [
+        "Empleó el estímulo estándar en lugar del umbral como unidad de medición",
+        "Encontró una relación funcional no lineal de tipo logarítmico entre estímulo y respuesta",
+        "Formuló que el cambio de respuesta es proporcional a la magnitud previa al cambio"
+      ],
+      "correct": 1,
+      "hint": "Relaciona a Fechner con la forma de la curva y el uso del umbral.",
+      "explanation": "Fechner empleó el **umbral** como unidad y determinó la relación logarítmica, superando problemas de la ley lineal de Weber."
+    },
+    {
+      "q": "Con respecto a los métodos estadísticos desarrollados por Galton, es correcto afirmar que:",
+      "options": [
+        "Utilizó la distribución normal como base y desarrolló el método de correlación",
+        "Rechazó el uso de la mediana por considerarla una medida poco representativa",
+        "Se limitó al estudio de procesos mentales complejos ignorando los simples"
+      ],
+      "correct": 0,
+      "hint": "Pearson fue un colaborador clave en sus desarrollos estadísticos.",
+      "explanation": "Galton utilizó la distribución normal y, con ayuda de Pearson, inventó la correlación, además del uso de la mediana y el rating-scale."
+    },
+    {
+      "q": "Señale la afirmación correcta sobre el primer test de inteligencia desarrollado por Binet y Simon:",
+      "options": [
+        "Se basaba en el supuesto de que las capacidades intelectuales son estables",
+        "Clasificaba a los niños por edades mentales según los ítems resueltos",
+        "Daba prioridad a las tareas motrices sobre las funciones psicológicas superiores"
+      ],
+      "correct": 1,
+      "hint": "El concepto de edad mental fue central en su escala de 1905 y 1908.",
+      "explanation": "El test de Binet permitía clasificar a los niños por edades mentales, asumiendo que las capacidades aumentan con el desarrollo biológico."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones describe correctamente la Teoría Clásica de los Test?",
+      "options": [
+        "Fue establecida por Spearman en 1904 y es la base de la mayoría de test actuales",
+        "Se centra exclusivamente en métodos psicofísicos ignorando las teorías estadísticas",
+        "Fue desarrollada por Yerkes para la selección de soldados en la Armada británica"
+      ],
+      "correct": 0,
+      "hint": "La fecha y el autor son fundamentales para identificar el origen de la TCT.",
+      "explanation": "Spearman estableció en 1904 los fundamentos de la teoría clásica, la cual rige el desarrollo de la inmensa mayoría de instrumentos actuales."
+    },
+    {
+      "q": "Sobre el concepto de cociente de inteligencia (CI), ¿qué afirmación es teóricamente correcta?",
+      "options": [
+        "Stern fue el autor que acuñó el término y Terman lo desarrolló en EE. UU.",
+        "El CI de Stern se basaba en una desviación estándar fija de 15 puntos poblacionales",
+        "Fue propuesto originalmente por Binet en su primera escala de inteligencia de 1905"
+      ],
+      "correct": 0,
+      "hint": "Diferencia al creador del término del autor que lo estandarizó.",
+      "explanation": "Stern es el pionero del concepto 'cociente de inteligencia', mientras que Terman lo utilizó para su escala evolutiva en Estados Unidos."
+    },
+    {
+      "q": "En el mapa conceptual de la psicometría, la relación entre ésta y las teorías psicológicas es:",
+      "options": [
+        "Unidireccional: la psicometría solo recibe definiciones de la teoría psicológica",
+        "Inexistente: la psicometría es una disciplina puramente matemática e independiente",
+        "Bidireccional: ambas se nutren mutuamente para validación y operacionalización"
+      ],
+      "correct": 2,
+      "hint": "Observa el sentido de las flechas en la Figura 1 del texto.",
+      "explanation": "Existe una relación bidireccional donde la teoría aporta definiciones y la psicometría aporta evidencias empíricas para consolidar dichas teorías."
+    },
+    {
+      "q": "Identifique la afirmación correcta sobre el test de inteligencia Army Alpha de Yerkes:",
+      "options": [
+        "Consistía en una prueba de formulación verbal para la selección de soldados",
+        "Fue diseñado para evaluar específicamente a personas analfabetas o inmigrantes",
+        "Se centraba en la resolución de laberintos, puzles y construcciones geométricas"
+      ],
+      "correct": 0,
+      "hint": "Alpha es a verbal lo que Beta es a no verbal.",
+      "explanation": "El Army Alpha era la versión verbal del test de Yerkes, mientras que el Beta era la versión no verbal para evitar sesgos lingüísticos."
+    },
+    {
+      "q": "Sobre las escalas de inteligencia de Wechsler (WAIS y WISC), es correcto afirmar que:",
+      "options": [
+        "Emplean el concepto de edad mental de Binet para calcular el resultado final",
+        "Asignan una media de 100 y una desviación de 15 a la distribución poblacional",
+        "Fueron los primeros test en utilizar laberintos y series para medir la inteligencia"
+      ],
+      "correct": 1,
+      "hint": "Busca los parámetros estadísticos que definen estas escalas.",
+      "explanation": "Wechsler abandonó el CI evolutivo y utilizó puntuaciones normalizadas con media 100 y una desviación estándar fija de 15 puntos."
+    },
+    {
+      "q": "Respecto a la Teoría Psicométrica, ¿cuál de estas afirmaciones es correcta según Nunnally?",
+      "options": [
+        "Se refiere a los contenidos psicológicos específicos como la personalidad",
+        "Comprende la teoría de los test, la estadística y los métodos de escalamiento",
+        "Se ocupa únicamente de la aplicación práctica y la baremación de instrumentos"
+      ],
+      "correct": 1,
+      "hint": "La teoría psicométrica es el núcleo formal, no el contenido.",
+      "explanation": "La teoría psicométrica es el cuerpo teórico que aglutina la teoría de los test, la fundamentación estadística y el escalamiento."
+    },
+    {
+      "q": "Señale la afirmación correcta sobre la investigación de Cattell en 1894:",
+      "options": [
+        "Sentó las bases para demostrar que rasgos psicológicos siguen la curva normal",
+        "Fue el primer autor en proponer el uso de tareas no motrices en la inteligencia",
+        "Creó el test de dominó (D48) para la medición de la inteligencia en la Armada"
+      ],
+      "correct": 0,
+      "hint": "Cattell es considerado padre de la psicología diferencial.",
+      "explanation": "En 1894, Cattell demostró empíricamente que muchas características psicológicas se ajustan al modelo de la distribución normal."
+    },
+    {
+      "q": "¿Qué autor es correctamente asociado con el estudio de las 'funciones psicológicas superiores'?",
+      "options": [
+        "Galton, a través de sus medidas antropométricas en el laboratorio de Londres",
+        "Binet, al proponer el estudio de la memoria, comprensión y fuerza de voluntad",
+        "Weber, mediante el análisis de las diferencias apenas perceptibles en pesos"
+      ],
+      "correct": 1,
+      "hint": "Binet criticó los test sensoriales por ser demasiado simples.",
+      "explanation": "Binet propuso estudiar funciones complejas como la memoria y la atención, alejándose de los índices puramente sensoriales de sus predecesores."
+    },
+    {
+      "q": "Sobre el test de dominó (D48), es correcto afirmar que:",
+      "options": [
+        "Fue elaborado por Anstey bajo una filosofía factorialista de la inteligencia",
+        "Fue diseñado originalmente por Eysenck para medir rasgos de personalidad",
+        "Se basa en la teoría clásica de los test de Cattell para reducir dimensiones"
+      ],
+      "correct": 0,
+      "hint": "Busca la relación entre el autor y la institución donde se aplicó.",
+      "explanation": "Anstey elaboró el D48 para medir la inteligencia en la Armada británica siguiendo los principios de la medida de inteligencia general."
+    },
+    {
+      "q": "Seleccione la afirmación correcta sobre la 'Aplicación Psicométrica':",
+      "options": [
+        "Establece las bases matemáticas para que el proceso sea fidedigno e isomorfo",
+        "Incluye la construcción, validación y elaboración de baremos de test concretos",
+        "Se ubica en el núcleo principal de la psicometría y es independiente del uso"
+      ],
+      "correct": 1,
+      "hint": "La aplicación es el 'hacer funcionar' la teoría para un fin específico.",
+      "explanation": "La aplicación psicométrica se encarga de la parte práctica: construir, validar y baremar instrumentos específicos para un constructo."
+    },
+    {
+      "q": "Identifique la afirmación incorrecta sobre los problemas fundamentales de la medición en psicología:",
+      "options": [
+        "Los constructos psicológicos no son observables de forma directa sino indirecta",
+        "Existen unidades de medida universales y bien establecidas para la inteligencia",
+        "Es necesario crear escalas de medida junto con los constructos que se evalúan"
+      ],
+      "correct": 1,
+      "hint": "El texto menciona la ausencia de unidades preestablecidas.",
+      "explanation": "El texto afirma explícitamente que **no hay disponibles unidades de medida bien establecidas**, por lo que es preciso crearlas."
+    },
+    {
+      "q": "Señale la afirmación incorrecta respecto a la Ley de Brentano (1874):",
+      "options": [
+        "Propone una función exponencial entre la magnitud del estímulo y la respuesta",
+        "Postula que el cambio de respuesta en el individuo es constante para todo estímulo",
+        "Recoge que el cambio es proporcional a la magnitud del estímulo antes del cambio"
+      ],
+      "correct": 1,
+      "hint": "Brentano defendía la proporcionalidad, no la constancia absoluta.",
+      "explanation": "Brentano afirmaba que el cambio **no es constante**, sino proporcional a la magnitud previa, lo que define su función exponencial."
+    },
+    {
+      "q": "Indique la afirmación incorrecta sobre la figura de Sir Francis Galton:",
+      "options": [
+        "Instaló un laboratorio antropométrico en la International Health Exhibition",
+        "Centró su interés en el estudio de las diferencias desde una perspectiva biológica",
+        "Rechazó el uso de la curva normal por considerarla inadecuada para la psique"
+      ],
+      "correct": 2,
+      "hint": "Galton fue un pionero en la aplicación de la estadística normal.",
+      "explanation": "Es incorrecto que rechazara la curva normal; de hecho, la utilizó como base de su trabajo y desarrolló herramientas adicionales cuando ésta no bastaba."
+    },
+    {
+      "q": "¿Cuál de las siguientes afirmaciones sobre James McKeen Cattell es incorrecta?",
+      "options": [
+        "Se le debe la introducción del concepto de 'test mental' en la psicometría",
+        "Rechazó inferir estructuras subyacentes y se centró en tiempos de reacción",
+        "Propuso la inteligencia como un constructo innato desligado de lo sensorial"
+      ],
+      "correct": 2,
+      "hint": "Compara el enfoque de Cattell con el de Binet.",
+      "explanation": "Los test de Cattell se centraban precisamente en índices antropométricos y sensomotores, no en constructos abstractos innatos desligados de lo sensorial."
+    },
+    {
+      "q": "Identifique la opción incorrecta sobre el desarrollo de los test Army Alpha y Beta:",
+      "options": [
+        "Fueron desarrollados por Yerkes durante el periodo de la Primera Guerra Mundial",
+        "El test Beta incluía laberintos y puzles para evaluar a personas no angloparlantes",
+        "Ambos test fueron aplicados exclusivamente en la Armada británica por Anstey"
+      ],
+      "correct": 2,
+      "hint": "Diferencia entre el ejército de EE. UU. y la Armada británica.",
+      "explanation": "Los test Alpha y Beta se aplicaron a reclutas en EE. UU. El test de la Armada británica mencionado es el D48 de Anstey."
+    },
+    {
+      "q": "Señale la afirmación incorrecta respecto a la Escala de Inteligencia de Binet y Simon:",
+      "options": [
+        "Fue encargada por el Gobierno francés para detectar niños con problemas cognitivos",
+        "En su versión de 1908, agrupaba los ítems por edades hasta los catorce años",
+        "Fue la primera prueba en utilizar el análisis factorial para validar sus resultados"
+      ],
+      "correct": 2,
+      "hint": "El análisis factorial tiene otro autor y otra fecha de inicio.",
+      "explanation": "El análisis factorial fue introducido por Spearman en 1904. Binet utilizó un método de clasificación por edades mentales."
+    },
+    {
+      "q": "Indique la afirmación incorrecta sobre la relación entre Psicometría y Teoría Psicométrica:",
+      "options": [
+        "La teoría psicométrica se ubica en el núcleo principal de la propia psicometría",
+        "La teoría psicométrica incluye de forma consustancial la estadística matemática",
+        "La teoría psicométrica es la que se encarga de la baremación de test específicos"
+      ],
+      "correct": 2,
+      "hint": "Baremación es sinónimo de aplicación práctica.",
+      "explanation": "La baremación de test específicos es una tarea de la **aplicación psicométrica**, no de la teoría psicométrica general."
+    },
+    {
+      "q": "Sobre la historia de los test de personalidad, señale la afirmación incorrecta:",
+      "options": [
+        "El 16PF es un instrumento desarrollado por Cattell bajo la filosofía factorialista",
+        "Eysenck desarrolló el Eysenck Personality Inventory para la medida de la personalidad",
+        "La medida de la personalidad fue iniciada originalmente por Weber y Fechner"
+      ],
+      "correct": 2,
+      "hint": "Weber y Fechner trabajaban en psicofísica, no en personalidad.",
+      "explanation": "Weber y Fechner se centraron en la psicofísica (sensación/estímulo). Los test de personalidad surgieron mucho después con autores como Cattell o Eysenck."
+    },
+    {
+      "q": "Identifique la afirmación incorrecta sobre el concepto de 'isomorfismo' en la medida:",
+      "options": [
+        "Busca que la representación de la realidad sea lo más fidedigna posible",
+        "Implica que los procedimientos de medida deben ser independientes de la teoría",
+        "Se trata de modelar la realidad mediante una estructura que guarde relación real"
+      ],
+      "correct": 1,
+      "hint": "La psicometría depende estrechamente de las definiciones teóricas.",
+      "explanation": "Es falso que el isomorfismo sea independiente de la teoría; la medida requiere una base teórica para ser representativa de la realidad psicológica."
+    },
+    {
+      "q": "Señale la afirmación incorrecta sobre las matrices progresivas de Raven:",
+      "options": [
+        "Son un ejemplo de la extensión de la filosofía factorialista a la inteligencia",
+        "Se basan en tareas verbales complejas para evitar problemas de analfabetismo",
+        "Siguen utilizándose actualmente como instrumentos de medición psicológica"
+      ],
+      "correct": 1,
+      "hint": "Recuerda el formato de las matrices (dibujos, patrones).",
+      "explanation": "Las matrices de Raven son una prueba **no verbal**, diseñada precisamente para medir la inteligencia general sin depender del lenguaje."
+    },
+    {
+      "q": "Indique la afirmación incorrecta sobre la definición de Psicometría de Muñiz (2001):",
+      "options": [
+        "La define como el conjunto de métodos, técnicas y teorías para medir variables",
+        "Es una de las definiciones más generales y simples presentadas en el manual",
+        "Sostiene que la psicometría solo debe aplicarse al estudio de la inteligencia"
+      ],
+      "correct": 2,
+      "hint": "La definición de Muñiz es amplia y abarca todas las variables psicológicas.",
+      "explanation": "Muñiz define la psicometría para la medición de las variables psicológicas en general, no se restringe únicamente a la inteligencia."
+    },
+    {
+      "q": "Sobre la Teoría de los Test Mentales, ¿cuál es la afirmación incorrecta?",
+      "options": [
+        "Es uno de los componentes principales que integran la teoría psicométrica",
+        "Fue iniciada por Brentano mediante la formulación de la función exponencial",
+        "Busca fundamentar la adecuación de los métodos de medida en psicología"
+      ],
+      "correct": 1,
+      "hint": "Brentano no trabajó en la teoría de test, sino en leyes psicofísicas.",
+      "explanation": "La teoría de los test mentales tiene sus raíces en autores como Spearman; Brentano pertenece a la tradición de la psicofísica temprana."
+    },
+    {
+      "q": "Identifique la afirmación incorrecta sobre la inferencia en psicometría:",
+      "options": [
+        "Permite deducir el grado de un constructo a partir de indicadores empíricos",
+        "Es un mecanismo necesario debido a la inobservabilidad de lo psicológico",
+        "Garantiza por sí misma la exactitud absoluta de la medición del constructo"
+      ],
+      "correct": 2,
+      "hint": "La inferencia es un acercamiento, no una garantía de perfección.",
+      "explanation": "La psicometría trata de *optimizar* el proceso inferencial para acercarse a lo intangible, pero no garantiza una exactitud absoluta e incuestionable."
+    },
+    {
+      "q": "Señale la afirmación incorrecta respecto a Stern y el CI:",
+      "options": [
+        "Stern es considerado pionero en la psicología de la personalidad e inteligencia",
+        "Propuso el cociente intelectual como la división entre edad mental y cronológica",
+        "Su concepto de CI fue rechazado por Terman por carecer de rigor científico"
+      ],
+      "correct": 2,
+      "hint": "Terman usó el trabajo de Stern para sus propias escalas.",
+      "explanation": "Terman no rechazó el trabajo de Stern, sino que lo utilizó y lo desarrolló para crear la escala evolutiva de CI en la revisión del test de Binet."
+    },
+    {
+      "q": "Sobre el 'Estímulo Estándar' en la Ley de Weber, ¿qué afirmación es incorrecta?",
+      "options": [
+        "Constituía la unidad de medición inicial en los experimentos de Weber",
+        "Es un valor fijo sobre el cual se calcula la fracción constante de diferencia",
+        "Fue mantenido por Fechner como la unidad de medida en su ley logarítmica"
+      ],
+      "correct": 2,
+      "hint": "Fechner introdujo un cambio fundamental en la unidad de medida.",
+      "explanation": "Es incorrecto que Fechner lo mantuviera; él pasó a emplear el **umbral** y no el estímulo estándar como unidad de medición principal."
+    }
+  ],
+  "jsonTestB": [
+    {
+      "q": "Según la ley de Weber, si el estímulo estándar para la longitud de líneas es $I = 250$ unidades, el incremento mínimo perceptible es ____.",
+      "options": [
+        "$02.500$ unidades",
+        "$25.000$ unidades",
+        "$00.250$ unidades"
+      ],
+      "correct": 0,
+      "hint": "Recuerde la fracción constante establecida por Weber para esta modalidad sensorial específica.",
+      "explanation": "La constante de Weber para líneas es $K = \\frac{1}{100}$. Por tanto, $\\Delta I = I \\cdot K = 250 \\cdot 0.01 = 2.5$. Un error común es multiplicar por $0.1$ o dividir."
+    },
+    {
+      "q": "La relación funcional entre el estímulo físico ($E$) y la sensación ($S$) propuesta por Fechner en su ley fundamental es de tipo ____.",
+      "options": [
+        "$\\text{Logarítmica}$",
+        "$\\text{Exponencial}$",
+        "$\\text{Polinómica}$"
+      ],
+      "correct": 0,
+      "hint": "Fechner utilizó el umbral como unidad de medida para corregir la linealidad de Weber.",
+      "explanation": "Fechner estableció que $S = K \\cdot \\log(E)$, representando una progresión aritmética de sensaciones frente a una geométrica de estímulos."
+    },
+    {
+      "q": "En el modelo de Brentano (1874), la función matemática que relaciona la respuesta del individuo con la magnitud del estímulo es ____.",
+      "options": [
+        "$\\text{Exponencial}$",
+        "$\\text{Logarítmica}$",
+        "$\\text{Fraccionaria}$"
+      ],
+      "correct": 0,
+      "hint": "Esta ley propone que el cambio en la respuesta es proporcional a la magnitud del estímulo previo.",
+      "explanation": "A diferencia de Fechner, Brentano defendió una función exponencial donde la respuesta no es constante para todas las diferencias."
+    },
+    {
+      "q": "El concepto de 'hombre promedio', basado en la aplicación de la distribución normal a variables físicas, fue introducido por ____ en 1835.",
+      "options": [
+        "$\\text{L. Quetelet}$",
+        "$\\text{F. Galton}$",
+        "$\\text{K. Pearson}$"
+      ],
+      "correct": 0,
+      "hint": "Se trata del matemático belga que mostró que la estatura se distribuye según la curva de Gauss.",
+      "explanation": "Quetelet fue pionero en aplicar leyes estadísticas a datos sociales y físicos, sentando las bases para Galton."
+    },
+    {
+      "q": "James McKeen Cattell rechazó explícitamente el método de la ____ para centrarse en mediciones objetivas de tiempos de reacción.",
+      "options": [
+        "$\\text{Introspección}$",
+        "$\\text{Observación}$",
+        "$\\text{Experimentación}$"
+      ],
+      "correct": 0,
+      "hint": "Cattell buscaba una psicología puramente empírica y diferencial alejada de lo subjetivo.",
+      "explanation": "Cattell, influenciado por Wundt pero centrado en las diferencias, eliminó el informe subjetivo del proceso de medición."
+    },
+    {
+      "q": "El primer test de inteligencia desarrollado por Binet y Simon en 1905 permitía clasificar a los niños según su ____.",
+      "options": [
+        "$\\text{Edad Mental}$",
+        "$\\text{Edad Cronológica}$",
+        "$\\text{Edad Madurativa}$"
+      ],
+      "correct": 0,
+      "hint": "El constructo se basaba en la premisa de que las capacidades crecen con el desarrollo biológico.",
+      "explanation": "Binet introdujo la 'Edad Mental' como el nivel de ítems que un niño podía resolver, antes de la llegada del CI ratio."
+    },
+    {
+      "q": "El test Army Beta, diseñado por Yerkes, se caracterizaba por ser una prueba de aplicación ____ para personal analfabeto.",
+      "options": [
+        "$\\text{No Verbal}$",
+        "$\\text{Individual}$",
+        "$\\text{Proyectiva}$"
+      ],
+      "correct": 0,
+      "hint": "Se utilizó para evitar sesgos culturales e idiomáticos durante la reclutación militar.",
+      "explanation": "El Army Beta utilizaba laberintos y cubos para medir la inteligencia sin depender de la competencia lingüística."
+    },
+    {
+      "q": "En las escalas de Wechsler (WAIS/WISC), se asigna una media de 100 puntos y una desviación estándar de ____.",
+      "options": [
+        "$\\sigma = 15.00$",
+        "$\\sigma = 10.00$",
+        "$\\sigma = 05.00$"
+      ],
+      "correct": 0,
+      "hint": "Esta desviación estándar es la base para el cálculo de los rangos de normalidad modernos.",
+      "explanation": "Wechsler abandonó el CI de Stern/Terman por un sistema de puntuaciones estandarizadas con $\\mu=100$ y $\\sigma=15$."
+    },
+    {
+      "q": "La teoría clásica de los test (TCT), sobre la que se fundamentan la mayoría de instrumentos actuales, fue establecida por ____ en 1904.",
+      "options": [
+        "$\\text{C. Spearman}$",
+        "$\\text{K. Pearson}$",
+        "$\\text{E. Thorndike}$"
+      ],
+      "correct": 0,
+      "hint": "Este autor también es el creador del análisis factorial original.",
+      "explanation": "Spearman formuló los pilares de la TCT y el análisis de la dimensionalidad a principios del siglo XX."
+    },
+    {
+      "q": "La psicometría es la disciplina que se encarga de transformar lo ____ en indicadores empíricos cuantificables.",
+      "options": [
+        "$\\text{Inobservable}$",
+        "$\\text{Fisiológico}$",
+        "$\\text{Sociológico}$"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la medición indirecta de constructos psicológicos latentes.",
+      "explanation": "Dado que los rasgos psicológicos son inobservables, la psicometría utiliza la operacionalización para medirlos indirectamente."
+    },
+    {
+      "q": "Para un estímulo de peso con constante de Weber $K = 0.02$ y estímulo estándar $I = 1000$g, el incremento perceptible es de ____.",
+      "options": [
+        "$20.000$ gramos",
+        "$02.000$ gramos",
+        "$200.00$ gramos"
+      ],
+      "correct": 0,
+      "hint": "Aplique la fórmula $\\Delta I = I \\cdot K$ cuidando la posición de los decimales.",
+      "explanation": "$\\Delta I = 1000 \\cdot 0.02 = 20$. Un error frecuente es confundir $0.02$ con $0.2$ ($200$) o $0.002$ ($2$)."
+    },
+    {
+      "q": "El laboratorio antropométrico instalado por ____ en 1884 es considerado uno de los hitos fundacionales de la psicología diferencial.",
+      "options": [
+        "$\\text{Francis Galton}$",
+        "$\\text{Wilhelm Wundt}$",
+        "$\\text{Alfred Binet}$"
+      ],
+      "correct": 0,
+      "hint": "Este autor defendía una perspectiva adaptativa y biológica de las capacidades humanas.",
+      "explanation": "Galton midió procesos simples en Londres, utilizando por primera vez métodos estadísticos aplicados a lo psicológico."
+    },
+    {
+      "q": "La teoría de los test y los métodos de escalamiento forman parte del núcleo principal denominado ____.",
+      "options": [
+        "$\\text{Teoría Psicométrica}$",
+        "$\\text{Uso Psicométrico}$",
+        "$\\text{Psicología Aplicada}$"
+      ],
+      "correct": 0,
+      "hint": "Se refiere al conjunto de enunciados teóricos de fundamentación matemática.",
+      "explanation": "La Teoría Psicométrica aglutina los modelos formales y estadísticos, diferenciándose de la aplicación práctica."
+    },
+    {
+      "q": "Cuando inferimos la inteligencia a partir de la resolución de problemas lógicos, estamos utilizando dichos problemas como ____.",
+      "options": [
+        "$\\text{Indicador Empírico}$",
+        "$\\text{Constructo Teórico}$",
+        "$\\text{Unidad de Medida}$"
+      ],
+      "correct": 0,
+      "hint": "Es la manifestación observable de la variable latente.",
+      "explanation": "El constructo es la inteligencia (latente); los problemas resueltos son los indicadores empíricos (observables)."
+    },
+    {
+      "q": "El desarrollo de baremos y el estudio de la validez de un test concreto pertenecen al campo de la ____.",
+      "options": [
+        "$\\text{Aplicación Psicométrica}$",
+        "$\\text{Teoría Psicométrica}$",
+        "$\\text{Teoría Estadística}$"
+      ],
+      "correct": 0,
+      "hint": "Es la fase donde la teoría se pone al servicio de la creación de un instrumento específico.",
+      "explanation": "La aplicación psicométrica cubre la construcción, validación y baremación de instrumentos particulares."
+    },
+    {
+      "q": "En el modelo logarítmico de Fechner, si $K = 10$ y el estímulo se decuplica ($10I$), la sensación se incrementa en ____.",
+      "options": [
+        "$10.000$ unidades",
+        "$100.00$ unidades",
+        "$01.000$ unidades"
+      ],
+      "correct": 0,
+      "hint": "Recuerde que $\\log(10) = 1$ en base 10.",
+      "explanation": "$\\Delta S = K \\cdot \\log(10I) - K \\cdot \\log(I) = K \\cdot \\log(10) = 10 \\cdot 1 = 10$. El error típico es multiplicar $10 \\cdot 10$."
+    },
+    {
+      "q": "Terman revisó el trabajo de Binet en EE.UU. y popularizó el índice conocido como ____.",
+      "options": [
+        "$\\text{Cociente Intelectual}$",
+        "$\\text{Puntuación Estándar}$",
+        "$\\text{Centil Evolutivo}$"
+      ],
+      "correct": 0,
+      "hint": "Este índice calculaba originalmente la relación entre edad mental y cronológica.",
+      "explanation": "Terman desarrolló la escala Stanford-Binet utilizando el CI propuesto inicialmente por Stern."
+    },
+    {
+      "q": "El autor que definió la psicometría como el campo que trata de los métodos psicofísicos y la teoría de los test fue ____.",
+      "options": [
+        "$\\text{Mariano Yela}$",
+        "$\\text{José Muñiz}$",
+        "$\\text{R. Martínez Arias}$"
+      ],
+      "correct": 0,
+      "hint": "Es uno de los psicólogos españoles más relevantes del siglo XX.",
+      "explanation": "Yela (1984) aportó una definición clásica centrada en la dualidad de la psicofísica y los test."
+    },
+    {
+      "q": "La necesidad de establecer una unidad de medida isomorfa a la realidad es uno de los problemas de la ____.",
+      "options": [
+        "$\\text{Psicometría}$",
+        "$\\text{Fisiología}$",
+        "$\\text{Antropometría}$"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la dificultad de dimensionar constructos sin unidades naturales preexistentes.",
+      "explanation": "Medir variables psicológicas requiere crear escalas de medida desde cero, a diferencia de las ciencias físicas."
+    },
+    {
+      "q": "Si un evaluado resuelve correctamente 15 problemas de 30, estamos realizando una ____ del grado de su aptitud.",
+      "options": [
+        "$\\text{Inferencia}$",
+        "$\\text{Medida Directa}$",
+        "$\\text{Observación}$"
+      ],
+      "correct": 0,
+      "hint": "La aptitud numérica no se 've', se deduce de la ejecución.",
+      "explanation": "La psicometría se basa en procesos inferenciales para acercarse a los rasgos latentes inobservables."
+    },
+    {
+      "q": "¿Cuáles de los siguientes elementos forman parte de los problemas fundamentales de la medición en psicología?",
+      "options": [
+        "$\\text{Todas las anteriores son correctas}$",
+        "$\\text{Ausencia de unidades de medida}$",
+        "$\\text{Inobservabilidad de constructos}$"
+      ],
+      "correct": 0,
+      "hint": "Repase las dificultades citadas por Martínez Arias sobre la intangibilidad de lo psicológico.",
+      "explanation": "Ambos son los pilares de la dificultad métrica en psicología: la falta de observación directa y de unidades físicas."
+    },
+    {
+      "q": "¿Qué componentes integran la definición de Teoría Psicométrica según el modelo de Meliá (1990)?",
+      "options": [
+        "$\\text{Todas las anteriores son correctas}$",
+        "$\\text{Métodos de escalamiento}$",
+        "$\\text{Teoría de los test}$"
+      ],
+      "correct": 0,
+      "hint": "Consulte el mapa conceptual sobre los fundamentos teóricos de la disciplina.",
+      "explanation": "La teoría psicométrica engloba la teoría de los test, la estadística aplicada y los métodos de escalamiento."
+    },
+    {
+      "q": "¿Qué hitos estadísticos se atribuyen a la influencia de Galton y Pearson en la psicometría inicial?",
+      "options": [
+        "$\\text{Todas las anteriores son correctas}$",
+        "$\\text{Métodos de correlación}$",
+        "$\\text{Uso de la mediana}$"
+      ],
+      "correct": 0,
+      "hint": "Galton inventó herramientas adicionales al no encontrar suficiente la curva normal simple.",
+      "explanation": "Galton introdujo la correlación, las medidas estándar, la mediana y las escalas de clasificación (rating-scales)."
+    },
+    {
+      "q": "¿Qué funciones psicológicas propuso estudiar Binet frente a los test puramente sensoriales de su época?",
+      "options": [
+        "$\\text{Todas las anteriores son correctas}$",
+        "$\\text{Memoria y Atención}$",
+        "$\\text{Comprensión y Sugestión}$"
+      ],
+      "correct": 0,
+      "hint": "Binet se interesó por las funciones superiores, no solo por procesos motores simples.",
+      "explanation": "Binet criticó los test sensoriales y propuso medir memoria, atención, juicio, fuerza de voluntad y moralidad."
+    },
+    {
+      "q": "¿Qué tareas formaban parte del protocolo del Army Beta test para evaluar a soldados analfabetos?",
+      "options": [
+        "$\\text{Todas las anteriores son correctas}$",
+        "$\\text{Construcciones geométricas}$",
+        "$\\text{Series de números}$"
+      ],
+      "correct": 0,
+      "hint": "Piense en tareas manipulativas y visuales que no requieran lectura.",
+      "explanation": "El Army Beta incluía laberintos, cubos, puzles, series y símbolos para evitar la barrera del idioma."
+    },
+    {
+      "q": "¿Qué procesos se incluyen dentro de la denominación 'Aplicación Psicométrica'?",
+      "options": [
+        "$\\text{Todas las anteriores son correctas}$",
+        "$\\text{Elaboración de baremos}$",
+        "$\\text{Validación de instrumentos}$"
+      ],
+      "correct": 0,
+      "hint": "Es la parte práctica e investigativa sobre instrumentos de medida concretos.",
+      "explanation": "La aplicación psicométrica abarca desde la construcción del ítem hasta el análisis de su bondad y uso práctico."
+    },
+    {
+      "q": "¿Cuál es la función de las teorías psicológicas en su relación bidireccional con la psicometría?",
+      "options": [
+        "$\\text{Todas las anteriores son correctas}$",
+        "$\\text{Aportar operacionalización}$",
+        "$\\text{Definir constructos}$"
+      ],
+      "correct": 0,
+      "hint": "La psicometría no puede medir algo que no esté definido teóricamente de forma previa.",
+      "explanation": "Las teorías definen qué se mide y cómo se vincula con la conducta, mientras la psicometría valida esas teorías."
+    },
+    {
+      "q": "¿Qué aspectos abordó Fechner para resolver las limitaciones de la primera ley de Weber?",
+      "options": [
+        "$\\text{Todas las anteriores son correctas}$",
+        "$\\text{Umbral mínimo sensorial}$",
+        "$\\text{Umbral máximo sensorial}$"
+      ],
+      "correct": 0,
+      "hint": "Fechner introdujo el concepto de umbral como punto de partida de la sensación.",
+      "explanation": "Fechner usó el umbral en lugar del estímulo estándar, permitiendo modelar los límites de la percepción."
+    },
+    {
+      "q": "¿Qué instrumentos surgieron bajo la influencia de la filosofía factorialista de la inteligencia?",
+      "options": [
+        "$\\text{Todas las anteriores son correctas}$",
+        "$\\text{Matrices de Raven}$",
+        "$\\text{Test de Dominó D48}$"
+      ],
+      "correct": 0,
+      "hint": "Son pruebas basadas en la reducción de dimensionalidad y factores generales.",
+      "explanation": "Tanto el Raven como el Dominó D48 de Anstey se basan en la tradición factorialista para medir factor 'g'."
+    },
+    {
+      "q": "¿Qué autores han aportado definiciones formales al corpus de la psicometría citados en el texto?",
+      "options": [
+        "$\\text{Todas las anteriores son correctas}$",
+        "$\\text{Jum Nunnally (1973)}$",
+        "$\\text{Muñiz (2001)}$"
+      ],
+      "correct": 0,
+      "hint": "El texto repasa varias definiciones que coinciden en el objeto de la disciplina.",
+      "explanation": "El capítulo cita a Nunnally, Yela, Muñiz y Martínez Arias para delimitar conceptualmente la psicometría."
+    },
+    {
+      "q": "Si la fracción de Weber para el peso es $1/50$, ¿qué incremento de peso es necesario para notar diferencia en $500$g?",
+      "options": [
+        "$\\text{Ninguna de las anteriores}$",
+        "$005.00$ gramos",
+        "$050.00$ gramos"
+      ],
+      "correct": 0,
+      "hint": "Realice el cálculo $\\Delta I = 500 \\cdot (1/50)$.",
+      "explanation": "El resultado correcto es $10$g. Las opciones $5$g y $50$g son errores de cálculo por división incorrecta."
+    },
+    {
+      "q": "La ley de Fechner establece que la sensación es proporcional al cuadrado del estímulo ($S = K \\cdot E^2$):",
+      "options": [
+        "$\\text{Ninguna de las anteriores}$",
+        "$\\text{Afirmación Verdadera}$",
+        "$\\text{Ley de Weber-Fechner}$"
+      ],
+      "correct": 0,
+      "hint": "Repase el tipo de función matemática (logarítmica vs cuadrática).",
+      "explanation": "La ley de Fechner es logarítmica ($S = K \\log E$). La función cuadrática no corresponde a su modelo."
+    },
+    {
+      "q": "Spearman publicó sus fundamentos de la Teoría Clásica de los Test en el año:",
+      "options": [
+        "$\\text{Ninguna de las anteriores}$",
+        "$1940$",
+        "$1917$"
+      ],
+      "correct": 0,
+      "hint": "Fue a principios del siglo XX, coincidiendo con sus primeros trabajos sobre inteligencia.",
+      "explanation": "Spearman publicó sus fundamentos en $1904$. Los años $1917$ y $1940$ son distractores históricos."
+    },
+    {
+      "q": "El test WAIS de Wechsler utiliza el concepto de Cociente Intelectual (CI) de Stern para su puntuación final:",
+      "options": [
+        "$\\text{Ninguna de las anteriores}$",
+        "$\\text{Afirmación Verdadera}$",
+        "$\\text{Solo en niños (WISC)}$"
+      ],
+      "correct": 0,
+      "hint": "Wechsler introdujo un cambio fundamental en el cálculo de la puntuación en adultos.",
+      "explanation": "Wechsler abandonó el CI (EM/EC) para usar puntuaciones normalizadas con media 100 y DE 15."
+    },
+    {
+      "q": "Según el texto, la estatura humana se distribuye según el modelo de la distribución de Poisson:",
+      "options": [
+        "$\\text{Ninguna de las anteriores}$",
+        "$\\text{Afirmación Verdadera}$",
+        "$\\text{Según Quetelet}$"
+      ],
+      "correct": 0,
+      "hint": "Revise el tipo de curva estadística mencionada por Quetelet y Galton.",
+      "explanation": "Se distribuye según el modelo de la distribución NORMAL o de Gauss, no de Poisson."
+    },
+    {
+      "q": "Binet basó su escala de 1905 exclusivamente en tareas motrices y tiempos de reacción simples:",
+      "options": [
+        "$\\text{Ninguna de las anteriores}$",
+        "$\\text{Afirmación Verdadera}$",
+        "$\\text{Siguiendo a Cattell}$"
+      ],
+      "correct": 0,
+      "hint": "Recuerde su crítica a los test sensoriales de la época.",
+      "explanation": "Binet fue el primero en trabajar con tareas NO motrices, centrándose en funciones superiores."
+    },
+    {
+      "q": "El estímulo estándar para las líneas en la ley de Weber se estableció en la fracción:",
+      "options": [
+        "$\\text{Ninguna de las anteriores}$",
+        "$1/10$",
+        "$1/20$"
+      ],
+      "correct": 0,
+      "hint": "Es la proporción que permite apreciar la diferencia de longitud.",
+      "explanation": "La fracción correcta es $1/100$. Las opciones $1/10$ y $1/20$ son incorrectas."
+    },
+    {
+      "q": "La psicofísica nació oficialmente con las observaciones de Ernst Heinrich Weber en el año:",
+      "options": [
+        "$\\text{Ninguna de las anteriores}$",
+        "$1874$",
+        "$1905$"
+      ],
+      "correct": 0,
+      "hint": "Es un año de la primera mitad del siglo XIX.",
+      "explanation": "Weber presentó sus observaciones en $1834$. $1874$ es de Brentano y $1905$ de Binet."
+    },
+    {
+      "q": "En psicometría, los constructos como la personalidad son medibles de manera directa mediante observación:",
+      "options": [
+        "$\\text{Ninguna de las anteriores}$",
+        "$\\text{Afirmación Verdadera}$",
+        "$\\text{Según Nunnally}$"
+      ],
+      "correct": 0,
+      "hint": "Piense en la naturaleza 'latente' de las variables psicológicas.",
+      "explanation": "Son inobservables y solo medibles de manera INDIRECTA a través de indicadores empíricos."
+    },
+    {
+      "q": "El test Army Alpha fue diseñado específicamente para personas que no hablaban inglés:",
+      "options": [
+        "$\\text{Ninguna de las anteriores}$",
+        "$\\text{Afirmación Verdadera}$",
+        "$\\text{Para analfabetos}$"
+      ],
+      "correct": 0,
+      "hint": "Diferencie entre la versión Alpha y la versión Beta de Yerkes.",
+      "explanation": "El Army Alpha era para alfabetizados que hablaban inglés; el Beta era para no hablantes o analfabetos."
+    }
+  ],
+  "jsonLaboratorio": [
+    {
+      "id": 1,
+      "title": "La Ley de Weber y la Proporcionalidad Sensorial",
+      "context": "Ernst Weber (1834) postuló que el incremento mínimo perceptible ($\\Delta I$) es proporcional al estímulo inicial ($I$) mediante una constante $K$. La fórmula base es: $\\Delta I = K \\cdot I$. Supongamos un estímulo de peso inicial $I = 400$ gramos y una constante de Weber $K = 0.02$.",
+      "parts": [
+        {
+          "id": "p1a",
+          "label": "a)",
+          "question": "¿Cuál es el valor del incremento mínimo perceptible ($\\Delta I$) en gramos?",
+          "correctValue": 8,
+          "tolerance": 0,
+          "explanation": "$$\\Delta I = 400 \\cdot 0.02 = 8$$"
+        },
+        {
+          "id": "p1b",
+          "label": "b)",
+          "question": "Si el estímulo aumenta a $I = 650$ gramos, ¿cuál será el nuevo $\\Delta I$ manteniendo la misma constante?",
+          "correctValue": 13,
+          "tolerance": 0,
+          "explanation": "$$\\Delta I = 650 \\cdot 0.02 = 13$$"
+        },
+        {
+          "id": "p1c",
+          "label": "c)",
+          "question": "Si un sujeto solo percibe cambios a partir de 20 gramos, ¿cuál es su constante $K$ para un estímulo de 500 gramos?",
+          "correctValue": 0.04,
+          "tolerance": 0.01,
+          "explanation": "$$K = \\frac{20}{500} = 0.04$$"
+        },
+        {
+          "id": "p1d",
+          "label": "d)",
+          "question": "Usando la constante del apartado c), ¿qué peso inicial $I$ requeriría un incremento de 10 gramos para ser detectado?",
+          "correctValue": 250,
+          "tolerance": 0,
+          "explanation": "$$I = \\frac{10}{0.04} = 250$$"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Cálculo del Cociente Intelectual (CI) de Terman",
+      "context": "Lewis Terman desarrolló el concepto de CI basándose en la Edad Mental ($EM$) y la Edad Cronológica ($EC$). La fórmula es: $CI = \\frac{EM}{EC} \\cdot 100$. Un niño tiene una $EC = 8$ años.",
+      "parts": [
+        {
+          "id": "p2a",
+          "label": "a)",
+          "question": "Si el niño resuelve ítems equivalentes a una $EM = 10$ años, ¿cuál es su CI?",
+          "correctValue": 125,
+          "tolerance": 0,
+          "explanation": "$$CI = \\frac{10}{8} \\cdot 100 = 125$$"
+        },
+        {
+          "id": "p2b",
+          "label": "b)",
+          "question": "Si otro niño de la misma edad ($EC=8$) tiene un $CI = 75$, ¿cuál es su edad mental?",
+          "correctValue": 6,
+          "tolerance": 0,
+          "explanation": "$$EM = \\frac{75 \\cdot 8}{100} = 6$$"
+        },
+        {
+          "id": "p2c",
+          "label": "c)",
+          "question": "¿Cuál es la diferencia en años de edad mental entre el niño del apartado a y el del b?",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$10 - 6 = 4$$"
+        },
+        {
+          "id": "p2d",
+          "label": "d)",
+          "question": "Si el primer niño cumple 10 años ($EC=10$) y mantiene su CI de 125, ¿cuál sería su nueva $EM$?",
+          "correctValue": 12.5,
+          "tolerance": 0.1,
+          "explanation": "$$EM = \\frac{125 \\cdot 10}{100} = 12.5$$"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Escalas de Inteligencia de Wechsler",
+      "context": "Wechsler introdujo la desviación estándar en la medida de la inteligencia. La puntuación estándar ($CI$) se calcula como: $CI = 100 + 15 \\cdot z$, donde $z = \\frac{x - \\mu}{\\sigma}$. Considera una población con media $\\mu = 100$ y $\\sigma = 15$.",
+      "parts": [
+        {
+          "id": "p3a",
+          "label": "a)",
+          "question": "Si un individuo obtiene una puntuación directa con una $z = 1.2$, ¿cuál es su CI de Wechsler?",
+          "correctValue": 118,
+          "tolerance": 0,
+          "explanation": "$$CI = 100 + 15(1.2) = 118$$"
+        },
+        {
+          "id": "p3b",
+          "label": "b)",
+          "question": "Un sujeto tiene un CI de 130. ¿Cuál es su puntuación $z$?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$z = \\frac{130 - 100}{15} = 2$$"
+        },
+        {
+          "id": "p3c",
+          "label": "c)",
+          "question": "Si la desviación estándar fuera de 16 puntos (como en otros tests), ¿qué CI tendría el sujeto del apartado b con su misma $z$?",
+          "correctValue": 132,
+          "tolerance": 0,
+          "explanation": "$$CI = 100 + 16(2) = 132$$"
+        },
+        {
+          "id": "p3d",
+          "label": "d)",
+          "question": "¿Cuántos puntos de diferencia hay entre el CI de Wechsler ($SD=15$) y el CI con $SD=16$ para una $z = -1$?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$| (100 - 15) - (100 - 16) | = |85 - 84| = 1$$"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "La Ley Logarítmica de Fechner",
+      "context": "Gustav Fechner propuso que la sensación ($S$) es proporcional al logaritmo del estímulo ($I$): $S = k \\cdot \\ln(I)$. Supongamos una constante $k = 10$.",
+      "parts": [
+        {
+          "id": "p4a",
+          "label": "a)",
+          "question": "Calcula la sensación $S$ para un estímulo $I = 50$ (usa $\\ln(50) \\approx 3.91$).",
+          "correctValue": 39.1,
+          "tolerance": 0.1,
+          "explanation": "$$S = 10 \\cdot 3.91 = 39.1$$"
+        },
+        {
+          "id": "p4b",
+          "label": "b)",
+          "question": "Si el estímulo se duplica a $I = 100$, ¿cuál es la nueva sensación $S$ ($\\ln(100) \\approx 4.61$)?",
+          "correctValue": 46.1,
+          "tolerance": 0.1,
+          "explanation": "$$S = 10 \\cdot 4.61 = 46.1$$"
+        },
+        {
+          "id": "p4c",
+          "label": "c)",
+          "question": "¿Cuál es el incremento de sensación ($\\Delta S$) al pasar de $I=50$ a $I=100$?",
+          "correctValue": 7,
+          "tolerance": 0.1,
+          "explanation": "$$46.1 - 39.1 = 7.0$$"
+        },
+        {
+          "id": "p4d",
+          "label": "d)",
+          "question": "¿Qué valor de $I$ se necesita para una sensación $S = 20$? (Aproxima $e^2 \\approx 7.39$)",
+          "correctValue": 7.39,
+          "tolerance": 0.1,
+          "explanation": "$$20 = 10 \\ln(I) \\rightarrow 2 = \\ln(I) \\rightarrow I = e^2$$"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Teoría Clásica de los Tests (Spearman)",
+      "context": "Charles Spearman propuso que la puntuación observada ($X$) es la suma de la puntuación verdadera ($V$) y el error ($E$): $X = V + E$. Un test de aptitud tiene un error típico de medida de $E = 4$.",
+      "parts": [
+        {
+          "id": "p5a",
+          "label": "a)",
+          "question": "Si un alumno tiene una puntuación verdadera $V = 85$, ¿cuál es su puntuación observada $X$ si el error es positivo e igual al error típico?",
+          "correctValue": 89,
+          "tolerance": 0,
+          "explanation": "$$X = 85 + 4 = 89$$"
+        },
+        {
+          "id": "p5b",
+          "label": "b)",
+          "question": "Si otro alumno obtuvo $X = 72$ y sabemos que su $V = 76$, ¿qué valor tuvo el error $E$?",
+          "correctValue": -4,
+          "tolerance": 0,
+          "explanation": "$$E = 72 - 76 = -4$$"
+        },
+        {
+          "id": "p5c",
+          "label": "c)",
+          "question": "Si la varianza de las puntuaciones verdaderas es $\\sigma_V^2 = 64$ y la del error es $\\sigma_E^2 = 16$, ¿cuál es la varianza de las puntuaciones observadas $\\sigma_X^2$?",
+          "correctValue": 80,
+          "tolerance": 0,
+          "explanation": "$$\\sigma_X^2 = 64 + 16 = 80$$"
+        },
+        {
+          "id": "p5d",
+          "label": "d)",
+          "question": "Calcula el coeficiente de fiabilidad $r_{xx} = \\frac{\\sigma_V^2}{\\sigma_X^2}$ con los datos del apartado c.",
+          "correctValue": 0.8,
+          "tolerance": 0.01,
+          "explanation": "$$r_{xx} = \\frac{64}{80} = 0.8$$"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "La Ley de Brentano y el Cambio Exponencial",
+      "context": "Franz Brentano (1874) sugirió que la respuesta es una función exponencial de la magnitud del estímulo. Una forma simplificada es $R = a \\cdot e^{b \\cdot I}$. Supongamos $a = 5$ y $b = 0.1$.",
+      "parts": [
+        {
+          "id": "p6a",
+          "label": "a)",
+          "question": "Calcula la respuesta $R$ para un estímulo $I = 0$ (considera $e^0 = 1$).",
+          "correctValue": 5,
+          "tolerance": 0,
+          "explanation": "$$R = 5 \\cdot e^{0.1 \\cdot 0} = 5 \\cdot 1 = 5$$"
+        },
+        {
+          "id": "p6b",
+          "label": "b)",
+          "question": "Calcula $R$ para $I = 10$ (considera $e^1 \\approx 2.72$).",
+          "correctValue": 13.6,
+          "tolerance": 0.1,
+          "explanation": "$$R = 5 \\cdot 2.72 = 13.6$$"
+        },
+        {
+          "id": "p6c",
+          "label": "c)",
+          "question": "Si el estímulo sube a $I = 20$, calcula $R$ ($e^2 \\approx 7.39$).",
+          "correctValue": 36.95,
+          "tolerance": 0.1,
+          "explanation": "$$R = 5 \\cdot 7.39 = 36.95$$"
+        },
+        {
+          "id": "p6d",
+          "label": "d)",
+          "question": "¿Cuál es la razón de crecimiento $\\frac{R(20)}{R(10)}$?",
+          "correctValue": 2.71,
+          "tolerance": 0.05,
+          "explanation": "$$\\frac{36.95}{13.6} \\approx 2.716$$"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Estadística Galtoniana: El Hombre Promedio",
+      "context": "Quetelet y Galton aplicaron la distribución normal a variables físicas. En una muestra de 1000 reclutas, la altura media es $\\mu = 175$ cm con $\\sigma = 7$ cm.",
+      "parts": [
+        {
+          "id": "p7a",
+          "label": "a)",
+          "question": "Según la regla empírica, ¿qué porcentaje de sujetos (en número de personas) mide entre 168 y 182 cm (un $\\pm 1\\sigma$)?",
+          "correctValue": 680,
+          "tolerance": 10,
+          "explanation": "$$0.68 \\cdot 1000 = 680$$"
+        },
+        {
+          "id": "p7b",
+          "label": "b)",
+          "question": "¿A qué altura corresponde una puntuación $z = 2$?",
+          "correctValue": 189,
+          "tolerance": 0,
+          "explanation": "$$175 + 2(7) = 189$$"
+        },
+        {
+          "id": "p7c",
+          "label": "c)",
+          "question": "Si un recluta está en el percentil 50, ¿cuál es su altura?",
+          "correctValue": 175,
+          "tolerance": 0,
+          "explanation": "En una distribución normal, el percentil 50 coincide con la media."
+        },
+        {
+          "id": "p7d",
+          "label": "d)",
+          "question": "¿Cuál es la puntuación $z$ de un recluta que mide 161 cm?",
+          "correctValue": -2,
+          "tolerance": 0,
+          "explanation": "$$z = \\frac{161 - 175}{7} = -2$$"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Procesamiento de Datos en el Laboratorio de Galton",
+      "context": "Galton cobraba 3 peniques por medir variables. Supongamos que en un día atiende a 120 personas. Recauda el total y lo divide entre 2 variables principales analizadas: Medida y Peso.",
+      "parts": [
+        {
+          "id": "p8a",
+          "label": "a)",
+          "question": "¿Cuántos peniques totales recaudó Galton en ese día?",
+          "correctValue": 360,
+          "tolerance": 0,
+          "explanation": "$$120 \\cdot 3 = 360$$"
+        },
+        {
+          "id": "p8b",
+          "label": "b)",
+          "question": "Si el 40% de los sujetos eran niños y pagaban solo 1 penique, ¿cuál sería la nueva recaudación total (60% adultos a 3p, 40% niños a 1p)?",
+          "correctValue": 264,
+          "tolerance": 0,
+          "explanation": "$$(72 \\cdot 3) + (48 \\cdot 1) = 216 + 48 = 264$$"
+        },
+        {
+          "id": "p8c",
+          "label": "c)",
+          "question": "Galton calcula la correlación entre altura y peso. Si la suma de productos de desviaciones es 2400 y el producto de sus desviaciones típicas multiplicadas por $N$ es 3000, ¿cuál es el coeficiente de correlación $r$?",
+          "correctValue": 0.8,
+          "tolerance": 0,
+          "explanation": "$$r = \\frac{2400}{3000} = 0.8$$"
+        },
+        {
+          "id": "p8d",
+          "label": "d)",
+          "question": "Con $r = 0.8$, ¿cuál es el coeficiente de determinación $r^2$?",
+          "correctValue": 0.64,
+          "tolerance": 0,
+          "explanation": "$$0.8^2 = 0.64$$"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Selección Militar: Army Alpha y Beta",
+      "context": "En 1917, Yerkes evaluó reclutas. El Test Alpha (verbal) tenía 8 subtests. Supongamos que cada subtest tiene 20 ítems.",
+      "parts": [
+        {
+          "id": "p9a",
+          "label": "a)",
+          "question": "¿Cuál es el número total de ítems en el test Alpha?",
+          "correctValue": 160,
+          "tolerance": 0,
+          "explanation": "$$8 \\cdot 20 = 160$$"
+        },
+        {
+          "id": "p9b",
+          "label": "b)",
+          "question": "Si para ser oficial se requiere superar el 75% de los ítems, ¿cuántos ítems debe responder correctamente el recluta?",
+          "correctValue": 120,
+          "tolerance": 0,
+          "explanation": "$$160 \\cdot 0.75 = 120$$"
+        },
+        {
+          "id": "p9c",
+          "label": "c)",
+          "question": "En el Test Beta (no verbal), un recluta tarda 45 segundos por puzle. Si hay 12 puzles, ¿cuántos minutos tarda en completar esa sección?",
+          "correctValue": 9,
+          "tolerance": 0,
+          "explanation": "$$\\frac{45 \\cdot 12}{60} = \\frac{540}{60} = 9$$"
+        },
+        {
+          "id": "p9d",
+          "label": "d)",
+          "question": "Si el 15% de 1.000.000 de soldados fueron analfabetos y realizaron el Test Beta, ¿cuántos soldados hicieron el Alpha?",
+          "correctValue": 850000,
+          "tolerance": 0,
+          "explanation": "$$1000000 \\cdot (1 - 0.15) = 850000$$"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Escalamiento de Binet-Simon",
+      "context": "Binet agrupaba ítems por edad. Para la edad de 10 años, había 5 ítems. Cada ítem superado añade 0.2 años a la edad mental base.",
+      "parts": [
+        {
+          "id": "p10a",
+          "label": "a)",
+          "question": "Un niño tiene una edad base de 9 años. Supera todos los ítems de los 10 años. ¿Cuál es su $EM$?",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$9 + (5 \\cdot 0.2) = 10$$"
+        },
+        {
+          "id": "p10b",
+          "label": "b)",
+          "question": "Si el niño anterior ($EM=10$) tiene una $EC = 8$, ¿cuál es su CI?",
+          "correctValue": 125,
+          "tolerance": 0,
+          "explanation": "$$\\frac{10}{8} \\cdot 100 = 125$$"
+        },
+        {
+          "id": "p10c",
+          "label": "c)",
+          "question": "¿Cuántos ítems adicionales de la escala de 11 años debería superar para alcanzar un CI de 130 (manteniendo $EC=8$)?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$CI=130 \\rightarrow EM = 10.4$$. Como ya tiene 10, le faltan 0.4 años. Cada ítem son 0.2, luego $$0.4 / 0.2 = 2$$ ítems."
+        },
+        {
+          "id": "p10d",
+          "label": "d)",
+          "question": "Si un niño supera 15 ítems por encima de su edad base de 7 años, ¿cuál es su $EM$ final?",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$7 + (15 \\cdot 0.2) = 10$$"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "La Constante de Weber en Diferentes Modalidades",
+      "context": "Weber encontró que $K$ varía según el estímulo. Para longitud de líneas $K = 0.01$ y para peso $K = 0.02$.",
+      "parts": [
+        {
+          "id": "p11a",
+          "label": "a)",
+          "question": "Para una línea de 100 mm, ¿cuál es el $\\Delta I$?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$100 \\cdot 0.01 = 1$$"
+        },
+        {
+          "id": "p11b",
+          "label": "b)",
+          "question": "Para un peso de 100 g, ¿cuál es el $\\Delta I$?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$100 \\cdot 0.02 = 2$$"
+        },
+        {
+          "id": "p11c",
+          "label": "c)",
+          "question": "¿Cuántas veces es mayor el incremento necesario en peso que en longitud para un valor base de 100 unidades?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$2 / 1 = 2$$"
+        },
+        {
+          "id": "p11d",
+          "label": "d)",
+          "question": "Si un estímulo mixto requiere un $\\Delta I = 5$ para un base de 200, ¿cuál es la constante $K$ resultante?",
+          "correctValue": 0.025,
+          "tolerance": 0.001,
+          "explanation": "$$5 / 200 = 0.025$$"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Análisis Factorial Temprano (Spearman)",
+      "context": "Spearman analizó la varianza de un test como $\\sigma_{total}^2 = \\sigma_g^2 + \\sigma_s^2$, donde $g$ es inteligencia general y $s$ es factor específico. Un test tiene una varianza total de 100.",
+      "parts": [
+        {
+          "id": "p12a",
+          "label": "a)",
+          "question": "Si el factor $g$ explica el 60% de la varianza, ¿cuál es el valor de $\\sigma_g^2$?",
+          "correctValue": 60,
+          "tolerance": 0,
+          "explanation": "$$100 \\cdot 0.6 = 60$$"
+        },
+        {
+          "id": "p12b",
+          "label": "b)",
+          "question": "¿Cuál es el valor de la varianza específica $\\sigma_s^2$?",
+          "correctValue": 40,
+          "tolerance": 0,
+          "explanation": "$$100 - 60 = 40$$"
+        },
+        {
+          "id": "p12c",
+          "label": "c)",
+          "question": "Si la correlación con el factor $g$ (carga factorial) es la raíz cuadrada de la proporción de varianza explicada, ¿cuál es la carga factorial de $g$?",
+          "correctValue": 0.77,
+          "tolerance": 0.02,
+          "explanation": "$$\\sqrt{0.6} \\approx 0.774$$"
+        },
+        {
+          "id": "p12d",
+          "label": "d)",
+          "question": "Si se añade un nuevo factor que explica 10 unidades de la varianza específica, ¿cuánta varianza queda como error residual?",
+          "correctValue": 30,
+          "tolerance": 0,
+          "explanation": "$$40 - 10 = 30$$"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Tiempos de Reacción de Cattell",
+      "context": "James McKeen Cattell midió tiempos de reacción ($TR$). Un sujeto realiza 10 ensayos con los siguientes tiempos en ms: 200, 220, 210, 190, 230, 200, 210, 220, 190, 230.",
+      "parts": [
+        {
+          "id": "p13a",
+          "label": "a)",
+          "question": "¿Cuál es el tiempo de reacción promedio (media) del sujeto?",
+          "correctValue": 210,
+          "tolerance": 0,
+          "explanation": "$$\\frac{2100}{10} = 210$$"
+        },
+        {
+          "id": "p13b",
+          "label": "b)",
+          "question": "¿Cuál es el rango (Máximo - Mínimo) de los tiempos?",
+          "correctValue": 40,
+          "tolerance": 0,
+          "explanation": "$$230 - 190 = 40$$"
+        },
+        {
+          "id": "p13c",
+          "label": "c)",
+          "question": "Si Cattell aplica un factor de corrección de fatiga restando 5ms a cada ensayo, ¿cuál es la nueva media?",
+          "correctValue": 205,
+          "tolerance": 0,
+          "explanation": "$$210 - 5 = 205$$"
+        },
+        {
+          "id": "p13d",
+          "label": "d)",
+          "question": "¿Cuál es la desviación media respecto a la media de 210 (promedio de los valores absolutos de las diferencias)?",
+          "correctValue": 12,
+          "tolerance": 1,
+          "explanation": "$$|200-210|=10, |220-210|=10, |210-210|=0, |190-210|=20, |230-210|=20... \\text{Suma} = 120. \\text{Media} = 12.$$"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Distribución de Puntuaciones en el WAIS",
+      "context": "El WAIS (Wechsler Adult Intelligence Scale) tiene $\\mu = 100$ y $\\sigma = 15$. El retraso mental se solía situar por debajo de 2 desviaciones típicas.",
+      "parts": [
+        {
+          "id": "p14a",
+          "label": "a)",
+          "question": "¿Qué puntuación de CI marca el límite de las 2 desviaciones típicas por debajo de la media?",
+          "correctValue": 70,
+          "tolerance": 0,
+          "explanation": "$$100 - 2(15) = 70$$"
+        },
+        {
+          "id": "p14b",
+          "label": "b)",
+          "question": "Si una persona tiene un CI de 145, ¿a cuántas desviaciones típicas está de la media?",
+          "correctValue": 3,
+          "tolerance": 0,
+          "explanation": "$$\\frac{145 - 100}{15} = 3$$"
+        },
+        {
+          "id": "p14c",
+          "label": "c)",
+          "question": "En una población de 2000 adultos, ¿cuántos se espera que tengan un CI superior a 130 (z > 2)? (Usa el 2.3% de la curva normal).",
+          "correctValue": 46,
+          "tolerance": 2,
+          "explanation": "$$2000 \\cdot 0.023 = 46$$"
+        },
+        {
+          "id": "p14d",
+          "label": "d)",
+          "question": "¿Cuál es la puntuación de CI que deja al 16% de la población por debajo (z = -1)?",
+          "correctValue": 85,
+          "tolerance": 0,
+          "explanation": "$$100 - 1(15) = 85$$"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "La Curva Normal y el Error de Medida",
+      "context": "Un test tiene una media de 50 y una desviación típica de 10. El error típico de medida (SEM) es de 3 puntos.",
+      "parts": [
+        {
+          "id": "p15a",
+          "label": "a)",
+          "question": "Para un nivel de confianza del 68% (\\pm 1 SEM), ¿cuál es el intervalo de la puntuación verdadera para una observada de $X = 55$?",
+          "correctValue": 52,
+          "tolerance": 0,
+          "explanation": "Límite inferior: $$55 - 3 = 52$$ (se pide el valor numérico del límite inferior)."
+        },
+        {
+          "id": "p15b",
+          "label": "b)",
+          "question": "¿Cuál es el límite superior del intervalo anterior?",
+          "correctValue": 58,
+          "tolerance": 0,
+          "explanation": "$$55 + 3 = 58$$"
+        },
+        {
+          "id": "p15c",
+          "label": "c)",
+          "question": "Si queremos un nivel de confianza del 95% (aprox \\pm 2 SEM), ¿cuál es el ancho total del intervalo?",
+          "correctValue": 12,
+          "tolerance": 0,
+          "explanation": "$$2 \\cdot (2 \\cdot 3) = 12$$"
+        },
+        {
+          "id": "p15d",
+          "label": "d)",
+          "question": "Si el SEM se reduce a 2 puntos por mejorar el test, ¿cuál sería el nuevo ancho del intervalo al 95%?",
+          "correctValue": 8,
+          "tolerance": 0,
+          "explanation": "$$2 \\cdot (2 \\cdot 2) = 8$$"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Evolución del CI de Binet a Terman",
+      "context": "Originalmente Binet usaba la diferencia ($EM - EC$). Terman propuso la razón. Un niño tiene $EM = 12$ y $EC = 10$.",
+      "parts": [
+        {
+          "id": "p16a",
+          "label": "a)",
+          "question": "¿Cuál es la diferencia de edad según el método original de Binet?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$12 - 10 = 2$$"
+        },
+        {
+          "id": "p16b",
+          "label": "b)",
+          "question": "¿Cuál es el CI según el método de Terman?",
+          "correctValue": 120,
+          "tolerance": 0,
+          "explanation": "$$\\frac{12}{10} \\cdot 100 = 120$$"
+        },
+        {
+          "id": "p16c",
+          "label": "c)",
+          "question": "Si el niño tuviera 5 años ($EC=5$) y la misma diferencia de Binet ($+2$ años), ¿cuál sería su nueva $EM$?",
+          "correctValue": 7,
+          "tolerance": 0,
+          "explanation": "$$5 + 2 = 7$$"
+        },
+        {
+          "id": "p16d",
+          "label": "d)",
+          "question": "Con los datos del apartado c ($EM=7, EC=5$), ¿cuál sería su CI de Terman?",
+          "correctValue": 140,
+          "tolerance": 0,
+          "explanation": "$$\\frac{7}{5} \\cdot 100 = 140$$"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Matrices de Raven y Percentiles",
+      "context": "El test de Raven utiliza percentiles. Un sujeto obtiene una puntuación directa que corresponde al percentil 75 en una población con $\\mu = 40$ y $\\sigma = 8$.",
+      "parts": [
+        {
+          "id": "p17a",
+          "label": "a)",
+          "question": "Si el percentil 75 corresponde a una $z = 0.67$, ¿cuál es su puntuación directa?",
+          "correctValue": 45.36,
+          "tolerance": 0.1,
+          "explanation": "$$40 + 0.67(8) = 45.36$$"
+        },
+        {
+          "id": "p17b",
+          "label": "b)",
+          "question": "¿Cuál sería el CI de Wechsler equivalente para esa $z = 0.67$?",
+          "correctValue": 110.05,
+          "tolerance": 0.1,
+          "explanation": "$$100 + 15(0.67) = 110.05$$"
+        },
+        {
+          "id": "p17c",
+          "label": "c)",
+          "question": "Si el sujeto mejora su puntuación en 8 puntos, ¿cuál es su nueva $z$?",
+          "correctValue": 1.67,
+          "tolerance": 0.1,
+          "explanation": "$$0.67 + \\frac{8}{8} = 1.67$$"
+        },
+        {
+          "id": "p17d",
+          "label": "d)",
+          "question": "¿A qué percentil aproximado corresponde $z = 1.67$ (usa 95%)?",
+          "correctValue": 95,
+          "tolerance": 1,
+          "explanation": "Una $z$ de 1.64 deja aproximadamente el 95% por debajo."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Escalamiento Psicológico: Método de Intervalos",
+      "context": "Se presentan 11 categorías para evaluar la actitud. Un ítem es evaluado por 100 jueces. 20 jueces lo ponen en la categoría 4, 50 en la 5 y 30 en la 6.",
+      "parts": [
+        {
+          "id": "p18a",
+          "label": "a)",
+          "question": "¿Cuál es la frecuencia acumulada hasta la categoría 5?",
+          "correctValue": 70,
+          "tolerance": 0,
+          "explanation": "$$20 + 50 = 70$$"
+        },
+        {
+          "id": "p18b",
+          "label": "b)",
+          "question": "¿Cuál es la proporción de jueces que eligieron la categoría 5 o inferior?",
+          "correctValue": 0.7,
+          "tolerance": 0,
+          "explanation": "$$70 / 100 = 0.7$$"
+        },
+        {
+          "id": "p18c",
+          "label": "c)",
+          "question": "Si la mediana es el valor de escala, y cae en la categoría 5, ¿cuántos jueces quedan por debajo de la mediana exacta (50%)?",
+          "correctValue": 50,
+          "tolerance": 0,
+          "explanation": "El 50% de 100 es 50."
+        },
+        {
+          "id": "p18d",
+          "label": "d)",
+          "question": "Si la categoría 5 tiene límites reales entre 4.5 y 5.5, y el percentil 50 se calcula proporcionalmente, ¿qué valor exacto tiene (sabiendo que 20 jueces están por debajo de 4.5)?",
+          "correctValue": 5.1,
+          "tolerance": 0.1,
+          "explanation": "$$4.5 + \\left(\\frac{50 - 20}{50}\\right) \\cdot 1 = 4.5 + 0.6 = 5.1$$"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Psicofísica de la Audición",
+      "context": "El umbral absoluto de audición es $I_0 = 10^{-12} W/m^2$. El nivel de intensidad en decibelios se calcula como $dB = 10 \\cdot \\log_{10}(I / I_0)$.",
+      "parts": [
+        {
+          "id": "p19a",
+          "label": "a)",
+          "question": "Si un sonido tiene una intensidad $I = 10^{-8} W/m^2$, ¿cuántos dB tiene?",
+          "correctValue": 40,
+          "tolerance": 0,
+          "explanation": "$$10 \\cdot \\log(10^4) = 40$$"
+        },
+        {
+          "id": "p19b",
+          "label": "b)",
+          "question": "Si la intensidad se multiplica por 100, ¿cuántos dB se añaden?",
+          "correctValue": 20,
+          "tolerance": 0,
+          "explanation": "$$10 \\cdot \\log(100) = 20$$"
+        },
+        {
+          "id": "p19c",
+          "label": "c)",
+          "question": "Un susurro de 20 dB, ¿qué intensidad $I$ tiene en $W/m^2$?",
+          "correctValue": 1e-10,
+          "tolerance": 0,
+          "explanation": "$$20 = 10 \\log(I/I_0) \\rightarrow 2 = \\log(I/I_0) \\rightarrow I = I_0 \\cdot 10^2 = 10^{-10}$$"
+        },
+        {
+          "id": "p19d",
+          "label": "d)",
+          "question": "¿Cuál es la razón de intensidades entre un sonido de 60 dB y uno de 40 dB?",
+          "correctValue": 100,
+          "tolerance": 0,
+          "explanation": "Cada 10 dB es un factor 10, 20 dB es un factor 100."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Fiabilidad y Varianza de Error",
+      "context": "La fiabilidad se define como $r_{xx} = 1 - \\frac{\\sigma_e^2}{\\sigma_x^2}$. Un test tiene una varianza observada de 25 y una fiabilidad de 0.84.",
+      "parts": [
+        {
+          "id": "p20a",
+          "label": "a)",
+          "question": "¿Cuál es la varianza de error $\\sigma_e^2$?",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$0.84 = 1 - \\frac{\\sigma_e^2}{25} \\rightarrow \\frac{\\sigma_e^2}{25} = 0.16 \\rightarrow \\sigma_e^2 = 4$$"
+        },
+        {
+          "id": "p20b",
+          "label": "b)",
+          "question": "¿Cuál es el error típico de medida (SEM), que es la raíz de la varianza de error?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{4} = 2$$"
+        },
+        {
+          "id": "p20c",
+          "label": "c)",
+          "question": "¿Qué porcentaje de la varianza total es varianza verdadera?",
+          "correctValue": 84,
+          "tolerance": 0,
+          "explanation": "La fiabilidad indica la proporción de varianza verdadera (0.84 = 84%)."
+        },
+        {
+          "id": "p20d",
+          "label": "d)",
+          "question": "Si duplicamos la longitud del test y la fiabilidad sube a 0.92, ¿cuál sería la nueva varianza de error si la observada se mantiene constante?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$0.92 = 1 - \\frac{\\sigma_e^2}{25} \\rightarrow 0.08 = \\frac{\\sigma_e^2}{25} \\rightarrow \\sigma_e^2 = 2$$"
+        }
+      ]
+    }
+  ],
+  "jsonFormulas": [
+    {
+      "name": "Ley de Weber (Fracción constante)",
+      "tex": "$$\\frac{\\Delta I}{I} = K$$"
+    },
+    {
+      "name": "Ley de Fechner (Relación logarítmica)",
+      "tex": "$$S = K \\cdot \\ln(I)$$"
+    },
+    {
+      "name": "Ley de Brentano (Función exponencial)",
+      "tex": "$$S = k \\cdot I^n$$"
+    },
+    {
+      "name": "Cociente Intelectual (Terman)",
+      "tex": "$$CI = \\frac{EM}{EC} \\times 100$$"
+    },
+    {
+      "name": "Puntuación Estándar de Wechsler",
+      "tex": "$$\\mu = 100, \\sigma = 15$$"
+    },
+    {
+      "name": "Relación Estímulo-Sensación (Fracción de Weber para líneas)",
+      "tex": "$$K = \\frac{1}{100}$$"
+    }
+  ]
+}

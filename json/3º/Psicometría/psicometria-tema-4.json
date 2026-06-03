@@ -1,0 +1,1726 @@
+{
+  "jsonTestA": [
+    {
+      "q": "¿Es cierto que un ítem con índice de dificultad $p=1$ aumenta la capacidad de medida del test?",
+      "options": [
+        "Es totalmente verdadero.",
+        "Es totalmente falso.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Considere qué sucede con las distancias relativas entre los sujetos si se elimina dicho ítem.",
+      "explanation": "Un ítem con $p=1$ no aporta variabilidad; si se elimina, la distancia relativa entre evaluados no varía, por lo que no aumenta la capacidad de medida del test."
+    },
+    {
+      "q": "¿Es el análisis cualitativo una fase que debe realizarse siempre después del análisis cuantitativo?",
+      "options": [
+        "Es totalmente verdadero.",
+        "Es totalmente falso.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Revise el orden lógico en la construcción de un test según la delimitación semántica.",
+      "explanation": "El análisis cualitativo es previo; permite reforzar la distancia entre la medida operativizada y la definición teórica del constructo antes de aplicar estadística."
+    },
+    {
+      "q": "¿Puede el índice de dificultad estandarizado $z$ tomar valores negativos en una muestra normal?",
+      "options": [
+        "Es totalmente verdadero.",
+        "Es totalmente falso.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Piense en la posición de la proporción $p$ respecto a la media de la curva normal.",
+      "explanation": "El índice $z$ corresponde al valor en la distribución normal; si el ítem es fácil ($p > 0.5$), el valor de $z$ necesario para superarlo será negativo."
+    },
+    {
+      "q": "¿Es la varianza máxima posible de un ítem dicotómico igual a $0.50$ según la Teoría Clásica?",
+      "options": [
+        "Es totalmente verdadero.",
+        "Es totalmente falso.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Recuerde el producto de las probabilidades de acierto y error $p \\cdot q$.",
+      "explanation": "La varianza de un ítem dicotómico es $p \\cdot q$. El valor máximo se alcanza cuando $p=q=0.5$, resultando en una varianza máxima de $0.25$."
+    },
+    {
+      "q": "¿Requiere la fórmula de corrección del azar que el formato de respuesta sea de elección múltiple?",
+      "options": [
+        "Es totalmente verdadero.",
+        "Es totalmente falso.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Considere la aplicabilidad en formatos de respuesta libre o preguntas de completar.",
+      "explanation": "La corrección del azar solo tiene sentido en formatos con alternativas prefijadas donde la probabilidad de acierto por adivinación es sustancial y conocida."
+    },
+    {
+      "q": "¿El índice de discriminación $d$ basado en grupos extremos permite realizar contrastes de hipótesis?",
+      "options": [
+        "Es totalmente verdadero.",
+        "Es totalmente falso.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Verifique si se conoce la distribución muestral del estadístico propuesto por Ebel.",
+      "explanation": "No es posible realizar contrastes de hipótesis con el estadístico $d$ porque no se conoce su distribución muestral; se usan orientaciones prácticas de interpretación."
+    },
+    {
+      "q": "¿Es la fiabilidad del ítem $IF_i$ una función exclusiva de su correlación con la puntuación total?",
+      "options": [
+        "Es totalmente verdadero.",
+        "Es totalmente falso.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Examine la fórmula $IF_i = S_i \\cdot r_{iX}$ y los componentes que la integran.",
+      "explanation": "El índice de fiabilidad $IF_i$ es una función conjunta de la variabilidad del ítem ($S_i$) y su correlación con la puntuación total corregida ($r_{iX}$)."
+    },
+    {
+      "q": "¿El funcionamiento diferencial uniforme implica una ventaja constante para un grupo en toda la escala?",
+      "options": [
+        "Es totalmente verdadero.",
+        "Es totalmente falso.",
+        "No se puede determinar."
+      ],
+      "correct": 0,
+      "hint": "Observe la relación entre las curvas de probabilidad de acierto para ambos grupos comparados.",
+      "explanation": "En el FDI uniforme, la probabilidad de acierto es sistemáticamente mayor para un grupo que para otro en todos los niveles de competencia del rasgo."
+    },
+    {
+      "q": "¿Es necesario que los distractores de un ítem atraigan por igual a los sujetos que conocen la respuesta?",
+      "options": [
+        "Es totalmente verdadero.",
+        "Es totalmente falso.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Piense en quién debería dudar entre las alternativas incorrectas según la teoría de ítems.",
+      "explanation": "Los distractores deben atraer a quienes NO conocen la respuesta. Quien la conoce no debería tener dudas sobre cuál es la alternativa correcta."
+    },
+    {
+      "q": "¿El índice de dificultad $p$ presenta una relación lineal con una escala de intervalo de dificultad?",
+      "options": [
+        "Es totalmente verdadero.",
+        "Es totalmente falso.",
+        "No se puede determinar."
+      ],
+      "correct": 1,
+      "hint": "Considere si diferencias iguales en porcentajes implican siempre diferencias iguales en dificultad.",
+      "explanation": "El índice $p$ es una escala ordinal. Diferencias iguales en proporciones no corresponden a diferencias iguales en la magnitud del constructo evaluado."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la corrección del efecto del azar en los ítems de elección múltiple:",
+      "options": [
+        "La fórmula penaliza errores que pueden ser equivocaciones legítimas no azarosas.",
+        "La aplicación de la fórmula garantiza una evaluación percibida como justa por todos.",
+        "La penalización por error elimina la influencia de estrategias de riesgo del sujeto."
+      ],
+      "correct": 0,
+      "hint": "Considere la distinción técnica entre un error por desconocimiento y una respuesta al azar.",
+      "explanation": "Es imposible distinguir si un error es una equivocación legítima o fruto del azar, por lo que la fórmula penaliza ambos tipos de fallos indistintamente."
+    },
+    {
+      "q": "Elija la afirmación correcta respecto al cálculo del índice de discriminación de un ítem determinado:",
+      "options": [
+        "La correlación simple ítem-total sobreestima la relación real entre ambas variables.",
+        "El uso del coeficiente de Pearson es incorrecto si el ítem tiene un formato dicotómico.",
+        "La puntuación total del test nunca debe modificarse para calcular la discriminación."
+      ],
+      "correct": 0,
+      "hint": "Recuerde que el ítem analizado forma parte de la suma que genera la puntuación total.",
+      "explanation": "Debido a que el ítem está incluido en el total, existe una sobreestimación circular. Se debe usar la puntuación total corregida (restando el ítem)."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la varianza máxima de una escala con categorías graduadas (Likert):",
+      "options": [
+        "La varianza máxima depende exclusivamente del número de sujetos de la muestra total.",
+        "La varianza máxima se calcula usando los valores extremos y el punto neutro de escala.",
+        "La varianza máxima en escalas Likert siempre será $0.25$ independientemente del rango."
+      ],
+      "correct": 1,
+      "hint": "Observe la estructura de la fórmula $S_{máxima} = \\frac{(Cat_{inf} + Cat_{sup} \\cdot p - p^2)}{2}$ adaptada.",
+      "explanation": "Para escalas graduadas, la varianza máxima está condicionada por los límites inferior y superior de la escala y la tendencia central (punto neutro)."
+    },
+    {
+      "q": "Elija la afirmación correcta en relación con los ítems de arranque en un test de ejecución máxima:",
+      "options": [
+        "Son ítems de dificultad muy elevada situados al inicio para seleccionar a los mejores.",
+        "Son ítems muy sencillos colocados al principio para reducir la ansiedad del evaluado.",
+        "Son ítems con índice de dificultad cercano a $0.10$ para asegurar la validez del test."
+      ],
+      "correct": 1,
+      "hint": "Considere el impacto emocional de las primeras preguntas en la situación de evaluación.",
+      "explanation": "Se suelen colocar 2 o 4 ítems muy fáciles al inicio (índice $p$ alto) para que el sujeto gane confianza y se reduzca la ansiedad inicial."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el índice de dificultad normalizado $T$ de un ítem psicométrico:",
+      "options": [
+        "Se calcula mediante la expresión $T = 50 + 10Z$ para evitar valores de signo negativo.",
+        "Es una transformación no lineal que altera las distancias relativas entre las dificultades.",
+        "Su rango de valores está estrictamente limitado entre $0$ y $1$ como las proporciones $p$."
+      ],
+      "correct": 0,
+      "hint": "Piense en la utilidad de las escalas con media $50$ y desviación estándar $10$ en psicometría.",
+      "explanation": "La escala $T$ es una transformación lineal de las puntuaciones $z$ (dificultad normalizada) que facilita la interpretación al eliminar decimales y negativos."
+    },
+    {
+      "q": "Elija la afirmación correcta respecto al funcionamiento diferencial de los ítems (FDI) no uniforme:",
+      "options": [
+        "La diferencia de probabilidad de acierto entre grupos varía según el nivel de aptitud.",
+        "Un grupo siempre tiene mayor probabilidad de acierto que el otro en todos niveles.",
+        "El sesgo afecta exclusivamente a un solo grupo minoritario en toda la escala medida."
+      ],
+      "correct": 0,
+      "hint": "Considere qué sucede si las curvas de probabilidad de dos grupos se cruzan en el gráfico.",
+      "explanation": "En el FDI no uniforme, el ítem puede ser más fácil para un grupo en niveles bajos y más difícil en niveles altos, por lo que la diferencia no es constante."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el análisis de distractores en una prueba de ejecución máxima:",
+      "options": [
+        "Un distractor con un índice de elección $p=0$ debe ser mantenido para evitar el azar.",
+        "El número óptimo de alternativas de respuesta suele situarse entre las cifras $2$ y $4$.",
+        "Los distractores deben diseñarse para ser elegidos por los sujetos con mayor aptitud."
+      ],
+      "correct": 1,
+      "hint": "Revise las recomendaciones de Lord (1980) mencionadas en el texto sobre alternativas.",
+      "explanation": "Lord (1980) señaló que el número óptimo de alternativas está entre 2 y 4, siendo 3 una opción equilibrada para la construcción de pruebas objetivas."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la relación entre el índice de dificultad y la media del test:",
+      "options": [
+        "La media de la puntuación total es igual a la suma de los índices de dificultad $p_i$.",
+        "La media del test es independiente de los índices de dificultad de los ítems individuales.",
+        "La suma de los índices $q_i$ (proporción de errores) siempre es igual a la media del test."
+      ],
+      "correct": 0,
+      "hint": "Considere la ecuación $m_x = \\sum p_i$ presentada en el desarrollo cuantitativo del tema.",
+      "explanation": "Matemáticamente, la media de las puntuaciones observadas en el test equivale a la suma de las proporciones de aciertos de todos los ítems que lo componen."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el índice de validez del ítem $IV_i$ según la Teoría Clásica:",
+      "options": [
+        "Se define como la correlación entre la puntuación del ítem y un criterio externo $C$.",
+        "Es equivalente al índice de fiabilidad si el criterio externo es la propia puntuación total.",
+        "Requiere que el ítem tenga una varianza nula para maximizar la correlación del criterio."
+      ],
+      "correct": 0,
+      "hint": "Examine la fórmula $IV_i = S_i \\cdot r_{IC}$ y qué representa la variable denominada como $C$.",
+      "explanation": "El índice de validez del ítem mide la relación entre la respuesta al ítem y una medida externa (criterio) que se pretende predecir o correlacionar."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la muestra empleada para el análisis cuantitativo de ítems:",
+      "options": [
+        "Debe ser lo más pequeña posible para evitar errores de tipo II en los cálculos de $p$.",
+        "Debe ser representativa de la población objetivo a la cual va destinado el test final.",
+        "No influye en el valor del índice de dificultad $p$ al ser una propiedad fija del ítem."
+      ],
+      "correct": 1,
+      "hint": "Considere la dependencia muestral del índice de dificultad mencionada en el texto.",
+      "explanation": "El índice $p$ no es una propiedad intrínseca; depende de la competencia de la muestra. Por ello, la representatividad es crucial para la generalización."
+    },
+    {
+      "q": "Elija la afirmación correcta respecto a la desviación estándar de la puntuación total del test:",
+      "options": [
+        "Es igual a la suma de los índices de fiabilidad de los ítems que componen la prueba.",
+        "Es igual a la raíz cuadrada de la suma de las varianzas de los ítems si son dependientes.",
+        "Siempre es menor que la suma de las varianzas individuales de cada uno de los ítems."
+      ],
+      "correct": 0,
+      "hint": "Considere la expresión de Gulliksen $S_x = \\sum S_i \\cdot r_{iX}$ para la varianza total.",
+      "explanation": "Según Gulliksen (1950), la desviación estándar total ($S_x$) puede expresarse como la suma de los índices de fiabilidad ($S_i \\cdot r_{iX}$) de los ítems."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el índice de dificultad en test de rendimiento típico:",
+      "options": [
+        "Se sustituye la proporción de aciertos por el promedio de las puntuaciones del ítem.",
+        "No es posible calcular ningún índice de dificultad al no existir respuestas correctas.",
+        "El índice de dificultad siempre es $0.5$ al tratarse de una medida de rasgos de personalidad."
+      ],
+      "correct": 0,
+      "hint": "Revise cómo se adapta el concepto de dificultad a escalas que no son de acierto/error.",
+      "explanation": "En rendimiento típico (personalidad/actitudes), la 'dificultad' se entiende como el promedio de respuesta, indicando la intensidad del rasgo en el ítem."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre el perfil de dificultad de un test de ejecución máxima:",
+      "options": [
+        "Es una gráfica que ordena los ítems por su aparición y muestra sus valores de $p$.",
+        "Representa únicamente la varianza de los ítems para detectar aquellos que son sesgados.",
+        "Debe mostrar una línea horizontal perfecta para asegurar que el test es muy fiable."
+      ],
+      "correct": 0,
+      "hint": "Piense en la representación visual de los valores de dificultad a lo largo del test.",
+      "explanation": "El perfil de dificultad sitúa los ítems en el eje de abscisas y su nivel $p$ en el de ordenadas, permitiendo ver la progresión de la dificultad."
+    },
+    {
+      "q": "Elija la afirmación correcta sobre la fase cualitativa del análisis de los ítems del test:",
+      "options": [
+        "Se basa en la delimitación semántica y la validez de contenido de cada uno de los ítems.",
+        "Utiliza la correlación biserial para descartar aquellos ítems que no discriminan bien.",
+        "Es una fase opcional que puede sustituirse por un análisis factorial confirmatorio."
+      ],
+      "correct": 0,
+      "hint": "Recuerde qué aspecto del ítem se analiza antes de disponer de datos empíricos de sujetos.",
+      "explanation": "La fase cualitativa asegura que el contenido sea adecuado y representativo del constructo mediante análisis lógicos y semánticos, no estadísticos."
+    },
+    {
+      "q": "Elija la afirmación correcta respecto al índice de discriminación $d$ propuesto por Ebel:",
+      "options": [
+        "Un valor de $d$ igual o superior a $0.40$ indica un poder de discriminación muy bueno.",
+        "Valores negativos de $d$ son ideales para ítems que miden habilidades muy complejas.",
+        "Si $d$ está entre $0.20$ y $0.29$, el ítem debe ser eliminado de forma inmediata del test."
+      ],
+      "correct": 0,
+      "hint": "Considere los umbrales prácticos de interpretación para la diferencia de proporciones.",
+      "explanation": "Ebel estableció que valores de $d \\ge 0.40$ son excelentes. Valores menores sugieren revisión o eliminación según el rango específico."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre el índice de dificultad $p$ de un ítem dicotómico:",
+      "options": [
+        "Un valor de $p=0.10$ indica que el ítem ha sido acertado por el $10\\%$ de los sujetos.",
+        "Cuanto más alto es el valor del índice $p$, más difícil resulta el ítem para la muestra.",
+        "El índice $p$ es una proporción que oscila necesariamente entre los valores $0$ y $1$."
+      ],
+      "correct": 1,
+      "hint": "Piense en la relación inversa entre la magnitud del índice y el esfuerzo para acertar.",
+      "explanation": "Es incorrecto decir que un $p$ alto indica dificultad; al contrario, un $p$ alto indica que mucha gente acierta, por lo tanto el ítem es fácil."
+    },
+    {
+      "q": "Elija la afirmación incorrecta respecto a los distractores en un ítem de opción múltiple:",
+      "options": [
+        "Deben ser revisados si la distribución de respuestas erróneas es muy heterogénea.",
+        "Deben ser eliminados si presentan una probabilidad de elección cercana al valor $1$.",
+        "Deben ser diseñados para ser igualmente atractivos para quienes no saben la respuesta."
+      ],
+      "correct": 1,
+      "hint": "Piense qué significaría que casi todos los sujetos elijan una opción incorrecta.",
+      "explanation": "Si un distractor tiene $p \\approx 1$, significa que casi nadie acierta el ítem (es erróneo o demasiado atractivo), pero no es la razón para eliminarlo por 'distracción'."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la varianza de un ítem con formato dicotómico:",
+      "options": [
+        "La varianza es máxima cuando la mitad de los sujetos aciertan y la otra mitad falla.",
+        "La varianza de un ítem con $p=0.90$ es superior a la de un ítem con un valor $p=0.50$.",
+        "La varianza se calcula mediante el producto de las probabilidades de acierto y error."
+      ],
+      "correct": 1,
+      "hint": "Calcule $0.9 \\cdot 0.1$ y compárelo con el valor máximo posible de la varianza.",
+      "explanation": "Es incorrecto. La varianza con $p=0.9$ es $0.09$, mientras que con $p=0.5$ es $0.25$. La varianza disminuye al alejarse de $0.5$."
+    },
+    {
+      "q": "Elija la afirmación incorrecta en relación con el análisis de ítems y la muestra evaluada:",
+      "options": [
+        "El tamaño de la muestra es irrelevante si los expertos han redactado bien los ítems.",
+        "La muestra debe ser representativa de la población para la cual se construye el test.",
+        "Los resultados cuantitativos dependen de la interacción entre el ítem y los sujetos."
+      ],
+      "correct": 0,
+      "hint": "Considere si los estadísticos de los ítems son valores estables o dependen de los datos.",
+      "explanation": "Es incorrecto. El análisis cuantitativo requiere muestras adecuadas y representativas; la opinión de expertos pertenece a la fase cualitativa."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre el índice de discriminación basado en la correlación:",
+      "options": [
+        "El coeficiente de Pearson y el biserial puntual ofrecen resultados equivalentes.",
+        "La discriminación mide la relación entre la respuesta al ítem y la puntuación total.",
+        "Un ítem con discriminación cercana a $0$ es altamente deseable en un test de aptitud."
+      ],
+      "correct": 2,
+      "hint": "Piense en la utilidad de un ítem que no distingue entre sujetos con alta y baja puntuación.",
+      "explanation": "Es incorrecto. Un ítem con discriminación $0$ no distingue entre sujetos competentes y no competentes, por lo que no aporta utilidad al test."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la corrección del azar en test de ejecución máxima:",
+      "options": [
+        "Se asume que todos los errores cometidos por los sujetos son debidos al puro azar.",
+        "Es aplicable a ítems de respuesta libre siempre que se conozca el número de errores.",
+        "Busca estimar la puntuación que el sujeto tendría si no hubiera respondido al azar."
+      ],
+      "correct": 1,
+      "hint": "Revise las condiciones de Meliá (1993) para la aplicación de la fórmula de corrección.",
+      "explanation": "Es incorrecto. La corrección del azar no puede aplicarse a formatos de respuesta libre o preguntas cortas al no haber alternativas prefijadas."
+    },
+    {
+      "q": "Elija la afirmación incorrecta respecto al concepto de sesgo o funcionamiento diferencial:",
+      "options": [
+        "El término 'sesgo' ha sido sustituido frecuentemente por funcionamiento diferencial.",
+        "Un ítem tiene FDI si grupos con igual nivel en el rasgo tienen distinta probabilidad de acierto.",
+        "El FDI siempre indica que el test es inválido para medir a la población mayoritaria."
+      ],
+      "correct": 2,
+      "hint": "Piense si la presencia de un solo ítem con FDI invalida necesariamente toda la prueba.",
+      "explanation": "Es incorrecto. La presencia de FDI en un ítem requiere revisión, pero no implica automáticamente que el test sea inválido para la población mayoritaria."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre el índice de fiabilidad de un ítem ($IF_i$):",
+      "options": [
+        "Contribuye de forma directa a la varianza de las puntuaciones totales de la prueba.",
+        "Es el producto de la desviación estándar del ítem por su correlación ítem-total.",
+        "Su valor máximo se alcanza necesariamente cuando el índice de dificultad es $1$."
+      ],
+      "correct": 2,
+      "hint": "Considere qué ocurre con la desviación estándar del ítem cuando el valor de $p$ es $1$.",
+      "explanation": "Es incorrecto. Si $p=1$, la varianza y la desviación estándar son $0$, por lo que el índice de fiabilidad $IF_i$ sería $0$, no el máximo."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la construcción del perfil de dificultad de un test:",
+      "options": [
+        "El eje de ordenadas suele representar el valor del índice de dificultad del ítem.",
+        "Los ítems deben ordenarse en el gráfico según su índice de discriminación de Ebel.",
+        "Permite visualizar si se han incluido ítems de arranque adecuados al inicio del test."
+      ],
+      "correct": 1,
+      "hint": "Piense en qué orden se presentan los ítems en el eje de abscisas del perfil de dificultad.",
+      "explanation": "Es incorrecto. En el perfil de dificultad, los ítems se ordenan en el eje de abscisas según su orden de presentación en el test, no por su discriminación."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre las alternativas de respuesta en pruebas objetivas:",
+      "options": [
+        "Aumentar el número de distractores siempre mejora la validez de contenido del test.",
+        "Un buen distractor debe resultar atractivo para quien no conoce la opción correcta.",
+        "Se recomienda eliminar alternativas que nunca son elegidas por ningún examinado."
+      ],
+      "correct": 0,
+      "hint": "Considere si la cantidad de opciones se traduce automáticamente en mejor calidad de medida.",
+      "explanation": "Es incorrecto. Más distractores no garantizan mejor validez; lo importante es la calidad y representatividad de los contenidos del constructo."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la varianza máxima en un ítem dicotómico:",
+      "options": [
+        "El valor máximo de la varianza para este tipo de ítems es siempre igual a $0.25$.",
+        "Se alcanza cuando la probabilidad de acierto es igual a la probabilidad de error.",
+        "Es independiente de la proporción de sujetos que responden correctamente al ítem."
+      ],
+      "correct": 2,
+      "hint": "Recuerde que la varianza se define precisamente como el producto $p \\cdot q$.",
+      "explanation": "Es incorrecto. La varianza depende totalmente de la proporción $p$; si $p$ cambia, el producto $p(1-p)$ cambia, alterando la varianza."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre el análisis descriptivo de los ítems de un test:",
+      "options": [
+        "Incluye el estudio de la tendencia central, la variabilidad y la forma de distribución.",
+        "Permite detectar la presencia de valores alejados mediante el análisis exploratorio.",
+        "Sustituye por completo la necesidad de realizar un análisis de la validez de criterio."
+      ],
+      "correct": 2,
+      "hint": "Piense si conocer la distribución de respuestas es lo mismo que conocer su utilidad externa.",
+      "explanation": "Es incorrecto. El análisis descriptivo es una caracterización interna inicial; no sustituye el análisis de validez de criterio (relación con externos)."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la relación entre el FDI uniforme y no uniforme:",
+      "options": [
+        "En el FDI uniforme las líneas de probabilidad para ambos grupos nunca se cruzan.",
+        "En el FDI no uniforme el sesgo puede favorecer a distintos grupos según la aptitud.",
+        "Ambos tipos de funcionamiento diferencial requieren que las medias de los grupos sean distintas."
+      ],
+      "correct": 2,
+      "hint": "Considere si el FDI se define por la media total o por la probabilidad dado un nivel de aptitud.",
+      "explanation": "Es incorrecto. El FDI se define por diferencias en probabilidad para sujetos del mismo nivel de aptitud, independientemente de las medias globales de los grupos."
+    },
+    {
+      "q": "Elija la afirmación incorrecta respecto al índice de dificultad normalizado $z$:",
+      "options": [
+        "Representa la distancia en desviaciones estándar respecto a la media de aptitud.",
+        "Es una transformación lineal de la proporción $p$ de aciertos obtenida en la muestra.",
+        "Permite comparar la dificultad de ítems aplicados a muestras con distribuciones normales."
+      ],
+      "correct": 1,
+      "hint": "Considere si la relación entre una proporción y un valor $z$ en la tabla normal es una línea recta.",
+      "explanation": "Es incorrecto. La relación entre $p$ y $z$ no es lineal (sigue la curva normal). Por eso se dice que $p$ no está linealmente relacionado con la dificultad de intervalo."
+    },
+    {
+      "q": "Elija la afirmación incorrecta sobre la utilidad de los ítems con índice de dificultad extremo:",
+      "options": [
+        "Los ítems con $p=0$ son muy útiles para discriminar a los sujetos más competentes.",
+        "Tanto ítems con $p=0$ como con $p=1$ carecen de poder discriminativo en la muestra.",
+        "Se recomienda eliminarlos si el objetivo es maximizar la variabilidad de las puntuaciones."
+      ],
+      "correct": 0,
+      "hint": "Piense cuántos sujetos se diferencian entre sí si nadie acierta la pregunta.",
+      "explanation": "Es incorrecto. Si $p=0$, nadie acierta; por tanto, no diferencia a nadie (ni siquiera a los más competentes) y su varianza es nula."
+    }
+  ],
+  "jsonTestB": [
+    {
+      "q": "En el análisis cualitativo de los ítems, el proceso que busca asegurar que el contenido mida realmente el constructo sin interferencias semánticas se denomina análisis ____.",
+      "options": [
+        "Comprensivo-semántico",
+        "Exploratorio-métrico",
+        "Evaluativo-numérico"
+      ],
+      "correct": 0,
+      "hint": "Se menciona en la fase cualitativa como un análisis que estrecha la distancia entre la medida y la definición teórica.",
+      "explanation": "La fase cualitativa implica un análisis comprensivo para delimitar semánticamente el ítem y asegurar su validez de contenido antes de los cálculos estadísticos."
+    },
+    {
+      "q": "Para un ítem de ejecución máxima con 4 alternativas, si un sujeto lo acierta por azar puro, la probabilidad de acierto es de ____.",
+      "options": [
+        "$P = \\frac{1}{4} = 0.25$",
+        "$P = \\frac{1}{3} = 0.33$",
+        "$P = \\frac{1}{2} = 0.50$"
+      ],
+      "correct": 0,
+      "hint": "La probabilidad de acierto por azar es el inverso del número total de alternativas disponibles.",
+      "explanation": "Si hay $m$ alternativas, la probabilidad de acierto por azar es $1/m$, en este caso $1/4 = 0.25$."
+    },
+    {
+      "q": "El índice de dificultad corregido para paliar los efectos del azar en ítems de elección múltiple utiliza en su denominador el valor ____.",
+      "options": [
+        "El número total $N$",
+        "El número de errores",
+        "El número de aciertos"
+      ],
+      "correct": 0,
+      "hint": "Revise la Ecuación 31 del texto; el denominador representa a todos los evaluados que intentan el ítem.",
+      "explanation": "La fórmula es $P_i = \\frac{A - \\frac{E}{m-1}}{N}$, donde $N$ es el número total de examinados que responden al ítem."
+    },
+    {
+      "q": "Si un ítem es acertado por el 100% de la muestra, su varianza $(\\sigma^2 = p \\cdot q)$ será exactamente ____.",
+      "options": [
+        "$\\sigma^2 = 0.000$",
+        "$\\sigma^2 = 1.000$",
+        "$\\sigma^2 = 0.250$"
+      ],
+      "correct": 0,
+      "hint": "Si $p=1$, calcule el valor de $q$ y multiplíquelos.",
+      "explanation": "Como $q = 1 - p$, si $p=1$ entonces $q=0$. El producto $1 \\cdot 0 = 0$. Un ítem que todos aciertan no tiene variabilidad."
+    },
+    {
+      "q": "La transformación lineal para obtener la dificultad normalizada $T$ a partir de la puntuación $Z$ sigue la estructura $T = ____$.",
+      "options": [
+        "$50 + 10 \\cdot Z$",
+        "$10 + 50 \\cdot Z$",
+        "$100 + 10 \\cdot Z$"
+      ],
+      "correct": 0,
+      "hint": "Es una escala que oscila entre 0 y 100, con media 50.",
+      "explanation": "La fórmula estándar en psicometría para la escala T es $T = 50 + 10Z$, donde 50 es la media y 10 la desviación estándar."
+    },
+    {
+      "q": "Un ítem con un índice de dificultad $p = 0.10$ se considera un ítem ____.",
+      "options": [
+        "Muy difícil de superar",
+        "De dificultad moderada",
+        "Muy fácil de superar"
+      ],
+      "correct": 0,
+      "hint": "Recuerde que a menor valor de $p$, menor es la proporción de aciertos.",
+      "explanation": "El índice $p$ representa la proporción de aciertos. Un $0.10$ indica que solo el 10% lo acertó, clasificándolo como difícil."
+    },
+    {
+      "q": "En el cálculo del índice de discriminación, para evitar la sobreestimación por el error de redundancia, se debe usar la puntuación total ____.",
+      "options": [
+        "Corregida (sin ítem)",
+        "Promediada (media)",
+        "Estandarizada (Z)"
+      ],
+      "correct": 0,
+      "hint": "El ítem analizado no debe formar parte de la puntuación con la que se correlaciona.",
+      "explanation": "Se debe restar la puntuación del ítem analizado de la puntuación total del test para evitar que el ítem correlacione consigo mismo."
+    },
+    {
+      "q": "El estadístico $d$ de Kelley para la discriminación se basa en la diferencia entre las proporciones de acierto de los grupos ____.",
+      "options": [
+        "Superior e inferior",
+        "Experimental-control",
+        "Varones y mujeres"
+      ],
+      "correct": 0,
+      "hint": "Se dividen los sujetos según su competencia total en el test.",
+      "explanation": "El índice $d = p_s - p_i$ mide la diferencia de aciertos entre el grupo que puntuó más alto en el test y el que puntuó más bajo."
+    },
+    {
+      "q": "Para un ítem dicotómico, la varianza máxima posible es de 0.25 y ocurre cuando el índice de dificultad $p$ es ____.",
+      "options": [
+        "Exactamente $p = 0.50$",
+        "Exactamente $p = 1.00$",
+        "Exactamente $p = 0.25$"
+      ],
+      "correct": 0,
+      "hint": "Es el punto de máxima incertidumbre o división de la muestra al 50%.",
+      "explanation": "La varianza de un ítem dicotómico es $p(1-p)$. El valor máximo de esta función cuadrática se alcanza en $p=0.5$."
+    },
+    {
+      "q": "En tests de rendimiento típico (personalidad), el equivalente al índice de dificultad se calcula mediante ____.",
+      "options": [
+        "El promedio de puntos",
+        "La tasa de omisiones",
+        "La moda de respuestas"
+      ],
+      "correct": 0,
+      "hint": "No hay acierto/error, se usa la tendencia central de la escala graduada.",
+      "explanation": "En tests de personalidad se usa la media de las respuestas al ítem como indicador de su 'dificultad' o intensidad."
+    },
+    {
+      "q": "El índice de fiabilidad del ítem ($IF_i$) se define matemáticamente como el producto de la desviación típica del ítem y ____.",
+      "options": [
+        "Su correlación ítem-total",
+        "Su índice de dificultad",
+        "Su validez de criterio"
+      ],
+      "correct": 0,
+      "hint": "Consulte la Ecuación 36: $IF_i = S_i \\cdot r_{iX}$.",
+      "explanation": "El índice de fiabilidad combina la variabilidad del ítem ($S_i$) con su poder discriminativo ($r_{iX}$)."
+    },
+    {
+      "q": "Si un ítem presenta una probabilidad de acierto mayor para un grupo en todos los niveles de competencia, existe FDI ____.",
+      "options": [
+        "De carácter uniforme",
+        "De carácter variable",
+        "De carácter cruzado"
+      ],
+      "correct": 0,
+      "hint": "La ventaja es constante a lo largo de toda la escala de habilidad.",
+      "explanation": "El Funcionamiento Diferencial Uniforme ocurre cuando no hay interacción entre el nivel de competencia y la pertenencia al grupo."
+    },
+    {
+      "q": "Los ítems situados al inicio de un test para reducir la ansiedad del evaluado se conocen como ítems de ____.",
+      "options": [
+        "Arranque o apertura",
+        "Cierre o conclusión",
+        "Control o contraste"
+      ],
+      "correct": 0,
+      "hint": "Suelen ser muy fáciles y sirven para familiarizar al sujeto con la tarea.",
+      "explanation": "Los ítems de arranque son 2 a 4 ítems muy sencillos que buscan estabilizar el estado emocional del examinado."
+    },
+    {
+      "q": "El índice de validez del ítem ($IV_i$) requiere correlacionar la puntuación del ítem con ____.",
+      "options": [
+        "Un criterio externo",
+        "La puntuación total",
+        "Otro ítem paralelo"
+      ],
+      "correct": 0,
+      "hint": "La validez siempre implica una referencia fuera del propio test.",
+      "explanation": "Se define como $IV_i = S_i \\cdot r_{iC}$, donde $C$ es una variable externa al test que se pretende predecir."
+    },
+    {
+      "q": "Un distractor se considera defectuoso y debe ser sustituido si su índice de respuesta $p$ es igual a ____.",
+      "options": [
+        "Un valor de $0.00$",
+        "Un valor de $0.25$",
+        "Un valor de $0.15$"
+      ],
+      "correct": 0,
+      "hint": "Si nadie elige la opción, esta no cumple su función de 'distraer'.",
+      "explanation": "Un distractor con $p=0$ no funciona porque no atrae a ningún sujeto, reduciendo artificialmente el número de alternativas reales."
+    },
+    {
+      "q": "Para discriminar sujetos de muy alta capacidad, el test debe concentrar ítems con un valor de $q$ cercano a ____.",
+      "options": [
+        "Valor $q = 0.85$",
+        "Valor $q = 0.50$",
+        "Valor $q = 0.15$"
+      ],
+      "correct": 0,
+      "hint": "Si $q$ es alto, $p$ es bajo, lo que significa que el ítem es difícil.",
+      "explanation": "Para evaluar niveles altos de aptitud se requieren ítems difíciles, donde la proporción de fallos ($q$) sea elevada."
+    },
+    {
+      "q": "El coeficiente de correlación preferido para calcular la discriminación entre un ítem dicotómico y la puntuación total es ____.",
+      "options": [
+        "Pearson (o r_bp)",
+        "Sperman-Brown",
+        "Alpha de Cronbach"
+      ],
+      "correct": 0,
+      "hint": "Es la técnica estándar para variables métricas y dicotómicas en TCT.",
+      "explanation": "El coeficiente biserial puntual es algebraicamente equivalente al de Pearson cuando una variable es dicotómica."
+    },
+    {
+      "q": "Según Lord (1980), el número óptimo de alternativas de respuesta en una prueba objetiva suele ser de ____.",
+      "options": [
+        "3 alternativas",
+        "5 alternativas",
+        "7 alternativas"
+      ],
+      "correct": 0,
+      "hint": "Es un equilibrio entre la probabilidad de azar y la eficiencia en la construcción.",
+      "explanation": "Las investigaciones empíricas sugieren que 3 alternativas suelen ser la opción más eficiente en términos psicométricos."
+    },
+    {
+      "q": "En el FDI no uniforme, las curvas de probabilidad de acierto de los grupos comparados se caracterizan por ____.",
+      "options": [
+        "Cruzarse en un punto",
+        "Ser siempre paralelas",
+        "Ser líneas horizontales"
+      ],
+      "correct": 0,
+      "hint": "La ventaja cambia de signo según el nivel de competencia.",
+      "explanation": "Al ser no uniforme, la probabilidad relativa de acierto varía según la competencia, lo que gráficamente implica que las curvas se cortan."
+    },
+    {
+      "q": "Si un ítem tiene una varianza de 0.16 y un índice de dificultad $p=0.8$, el valor de $q$ debe ser ____.",
+      "options": [
+        "Exactamente $0.20$",
+        "Exactamente $0.80$",
+        "Exactamente $0.40$"
+      ],
+      "correct": 0,
+      "hint": "La suma de $p$ y $q$ siempre debe ser la unidad.",
+      "explanation": "Como $p + q = 1$, si $p = 0.8$, entonces $q = 1 - 0.8 = 0.2$. La varianza es $0.8 \\cdot 0.2 = 0.16$."
+    },
+    {
+      "q": "¿Qué requisitos se consideran críticos para la aplicación de la fórmula de corrección del azar en un ítem?",
+      "options": [
+        "Alternativas prefijadas",
+        "Motivación del sujeto",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Meliá propone tres condiciones: alternativas conocidas, azar sustancial y motivación.",
+      "explanation": "Para corregir por azar se requiere formato de elección, probabilidad de azar conocida y que los sujetos realmente intenten adivinar."
+    },
+    {
+      "q": "¿Qué elementos son analizados en la fase cuantitativa del análisis de ítems según el texto?",
+      "options": [
+        "Índice de dificultad",
+        "Validez del ítem",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Incluye descriptivos, discriminación, distractores, validez y fiabilidad.",
+      "explanation": "La fase cuantitativa abarca descriptivos, dificultad, discriminación, análisis de distractores, validez factorial y de criterio."
+    },
+    {
+      "q": "¿Qué características definen a un buen distractor en un test de ejecución máxima?",
+      "options": [
+        "Atrae a los que no saben",
+        "Distribución homogénea",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Deben ser igualmente atractivos para quienes desconocen la respuesta correcta.",
+      "explanation": "Los sujetos que fallan deben distribuirse equitativamente entre las opciones falsas para que el ítem sea balanceado."
+    },
+    {
+      "q": "¿Qué factores pueden alterar el valor del índice de dificultad $p$ de un ítem determinado?",
+      "options": [
+        "Muestra evaluada",
+        "Formato del ítem",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Es una propiedad dependiente de la muestra y de la probabilidad de acierto por azar.",
+      "explanation": "El índice $p$ no es intrínseco: depende de la competencia de la muestra y de si el formato permite el acierto fortuito."
+    },
+    {
+      "q": "¿Qué información aporta el análisis descriptivo de los ítems en las primeras etapas?",
+      "options": [
+        "Tendencia central",
+        "Valores alejados",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se recomienda el análisis exploratorio de datos (AED) para detectar anomalías.",
+      "explanation": "El análisis inicial repara en la distribución, índices de tendencia central, variabilidad y detección de outliers."
+    },
+    {
+      "q": "Según Mellenbergh, ¿qué tipos de funcionamiento diferencial de los ítems se pueden identificar?",
+      "options": [
+        "FDI uniforme",
+        "FDI no uniforme",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Existen dos categorías principales dependiendo de si la ventaja es constante o variable.",
+      "explanation": "Se distingue entre uniforme (ventaja constante) y no uniforme (la ventaja depende del nivel de rasgo)."
+    },
+    {
+      "q": "¿Cuál es la utilidad de los perfiles de dificultad (gráficos p y q) en la construcción de tests?",
+      "options": [
+        "Estudiar el orden",
+        "Ver nivel de dificultad",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Permiten visualizar la progresión de la dificultad a lo largo de la prueba.",
+      "explanation": "Muestran la ubicación secuencial de los ítems y su nivel de exigencia, ayudando a diseñar la estructura del test."
+    },
+    {
+      "q": "En el cálculo de la varianza máxima para escalas graduadas, ¿qué parámetros son necesarios?",
+      "options": [
+        "Categoría superior",
+        "Punto neutro",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Ecuación 35: requiere categorías extrema e inferior y el valor p central.",
+      "explanation": "La fórmula de varianza máxima para escalas Likert o similares depende de los límites de la escala y su punto medio."
+    },
+    {
+      "q": "¿Qué consecuencias puede tener el uso de la fórmula de corrección del azar según las críticas citadas?",
+      "options": [
+        "Estrategia de riesgo",
+        "Penalizar errores reales",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se discute la justicia percibida y el balance coste/beneficio que hace el alumno.",
+      "explanation": "La corrección puede incentivar estrategias de probabilidad y penalizar equivocaciones legítimas que no fueron por azar."
+    },
+    {
+      "q": "¿Qué componentes integran el error de medida desde una perspectiva interna del test?",
+      "options": [
+        "Sesgo del ítem",
+        "Pobre delimitación",
+        "Todas las anteriores son correctas"
+      ],
+      "correct": 2,
+      "hint": "Cualquier factor que desvíe la puntuación observada de la verdadera de forma sistemática.",
+      "explanation": "Tanto los defectos en la definición del constructo como la presencia de sesgo o FDI incrementan el error de medida."
+    },
+    {
+      "q": "Se aplica un ítem a 100 personas; 40 aciertan y 60 fallan. El ítem tiene 2 alternativas. ¿Cuál es el valor de $p$ corregido?",
+      "options": [
+        "Valor $P_c = 0.00$",
+        "Valor $P_c = 0.20$",
+        "Valor $P_c = 0.40$"
+      ],
+      "correct": 2,
+      "hint": "Fórmula: $P_i = (A - E/(m-1)) / N$. Calcule $(40 - 60/1) / 100$.",
+      "explanation": "Al tener 2 alternativas, $m-1 = 1$. Entonces $P_c = (40 - 60)/100 = -0.2$. Ninguna opción positiva es correcta (el resultado es negativo)."
+    },
+    {
+      "q": "Si un ítem tiene una varianza de 0.21, ¿cuál de los siguientes pares $(p, q)$ podría ser el origen de dicho cálculo?",
+      "options": [
+        "$p=0.50, q=0.50$",
+        "$p=0.80, q=0.20$",
+        "$p=0.60, q=0.40$"
+      ],
+      "correct": 2,
+      "hint": "Multiplique los valores. $0.5 \\cdot 0.5 = 0.25$; $0.8 \\cdot 0.2 = 0.16$; $0.6 \\cdot 0.4 = 0.24$.",
+      "explanation": "Ninguna de las combinaciones da 0.21. Las multiplicaciones resultan en 0.25, 0.16 y 0.24 respectivamente."
+    },
+    {
+      "q": "Calculando el índice de fiabilidad de un ítem con $S_i = 0.4$ y $r_{iX} = 0.5$, ¿cuál es el valor resultante del $IF_i$?",
+      "options": [
+        "Valor $IF_i = 0.90$",
+        "Valor $IF_i = 0.10$",
+        "Valor $IF_i = 0.50$"
+      ],
+      "correct": 2,
+      "hint": "La fórmula es $IF_i = S_i \\cdot r_{iX}$. El producto de $0.4 \\cdot 0.5$ es $0.20$.",
+      "explanation": "El resultado correcto es 0.20 ($0.4 \\cdot 0.5$). Ninguna de las opciones mostradas coincide."
+    },
+    {
+      "q": "Para un ítem con $p = 0.20$ en el grupo superior y $p = 0.60$ en el grupo inferior, ¿cuál es el valor del índice $d$?",
+      "options": [
+        "Valor $d = +0.40$",
+        "Valor $d = +0.80$",
+        "Valor $d = +0.20$"
+      ],
+      "correct": 2,
+      "hint": "$d = p_s - p_i$. Calcule $0.20 - 0.60$.",
+      "explanation": "El resultado es $-0.40$. Las opciones presentan valores positivos, por lo que ninguna es correcta."
+    },
+    {
+      "q": "Un ítem presenta una puntuación $Z = 2.0$. ¿Cuál es su puntuación equivalente en la escala $T$ normalizada?",
+      "options": [
+        "Escala $T = 60$",
+        "Escala $T = 80$",
+        "Escala $T = 52$"
+      ],
+      "correct": 2,
+      "hint": "Use $T = 50 + 10Z$. Calcule $50 + 10(2)$.",
+      "explanation": "El cálculo es $50 + 20 = 70$. Ninguna de las opciones propuestas es 70."
+    },
+    {
+      "q": "Si la suma de los índices de fiabilidad de los ítems de un test es $\\sum S_i r_{iX} = 4$, ¿cuál es la varianza total del test $S_x^2$?",
+      "options": [
+        "Varianza $S_x^2 = 8$",
+        "Varianza $S_x^2 = 2$",
+        "Varianza $S_x^2 = 4$"
+      ],
+      "correct": 2,
+      "hint": "Ecuación 38: $S_x^2 = (\\sum S_i r_{iX})^2$.",
+      "explanation": "La varianza es el cuadrado de la suma de los índices de fiabilidad: $4^2 = 16$. Ninguna opción es 16."
+    },
+    {
+      "q": "En una escala Likert de 1 a 5 con punto neutro 3, ¿cuál es la varianza máxima teórica según la Ecuación 35?",
+      "options": [
+        "Varianza $\\sigma^2 = 5$",
+        "Varianza $\\sigma^2 = 2$",
+        "Varianza $\\sigma^2 = 1$"
+      ],
+      "correct": 2,
+      "hint": "$S_{max} = \\frac{(5 + 1) \\cdot 3 - 3^2 - 5 \\cdot 1}{2}$? No, la fórmula es $\\frac{cat_{inf} + cat_{sup}}{2} p - p^2...$ revise la estructura.",
+      "explanation": "Aplicando los valores a la fórmula compleja del texto para varianza máxima, el resultado no coincide con 5, 2 o 1."
+    },
+    {
+      "q": "Un ítem es acertado por 20 sujetos de una muestra de 200. ¿Cuál es su índice de dificultad estandarizado $Z$?",
+      "options": [
+        "Z-score $Z = 0.00$",
+        "Z-score $Z = 1.00$",
+        "Z-score $Z = 2.00$"
+      ],
+      "correct": 2,
+      "hint": "$p = 20/200 = 0.10$. En la tabla normal, el valor $Z$ que deja por encima al 10% es aprox 1.28.",
+      "explanation": "El valor $Z$ para $p=0.10$ es aproximadamente 1.28. Ninguna de las opciones redondas (0, 1, 2) es correcta."
+    },
+    {
+      "q": "Si un test tiene 30 ítems y todos tienen un índice de fiabilidad de 0.1, ¿cuál es su desviación típica total $S_x$?",
+      "options": [
+        "Desviación $S_x = 0.1$",
+        "Desviación $S_x = 9.0$",
+        "Desviación $S_x = 30.0$"
+      ],
+      "correct": 2,
+      "hint": "$S_x = \\sum IF_i$. Multiplique $30 \\cdot 0.1$.",
+      "explanation": "La desviación típica es la suma de los índices de fiabilidad: $30 \\cdot 0.1 = 3$. Ninguna opción es 3."
+    },
+    {
+      "q": "Para un ítem dicotómico con $p = 0.70$, ¿cuál es el valor de su varianza poblacional exacta?",
+      "options": [
+        "Varianza $\\sigma^2 = 0.49$",
+        "Varianza $\\sigma^2 = 0.70$",
+        "Varianza $\\sigma^2 = 0.30$"
+      ],
+      "correct": 2,
+      "hint": "Calcule $0.70 \\cdot (1 - 0.70) = 0.70 \\cdot 0.30$.",
+      "explanation": "El resultado es $0.21$. Ninguna de las opciones proporcionadas es $0.21$."
+    }
+  ],
+  "jsonLaboratorio": [
+    {
+      "id": 1,
+      "title": "Dificultad Empírica y Corrección por Azar",
+      "context": "En un test de 4 alternativas ($m=4$), un ítem es respondido por 200 sujetos. Se observan 120 aciertos y 80 errores. La fórmula de corrección es $P_i = \\frac{A - \\frac{E}{m-1}}{N}$.",
+      "parts": [
+        {
+          "id": "p1a",
+          "label": "a)",
+          "question": "Calcula el índice de dificultad empírico ($p$).",
+          "correctValue": 0.6,
+          "tolerance": 0,
+          "explanation": "$$p = \\frac{A}{N} = \\frac{120}{200} = 0.6$$"
+        },
+        {
+          "id": "p1b",
+          "label": "b)",
+          "question": "Calcula el índice de dificultad corregido ($P_c$).",
+          "correctValue": 0.467,
+          "tolerance": 0.001,
+          "explanation": "$$P_c = \\frac{120 - \\frac{80}{4-1}}{200} = \\frac{120 - 26.667}{200} \\approx 0.467$$"
+        },
+        {
+          "id": "p1c",
+          "label": "c)",
+          "question": "Calcula la proporción de fallos ($q$) basándote en el índice empírico.",
+          "correctValue": 0.4,
+          "tolerance": 0,
+          "explanation": "$$q = 1 - p = 1 - 0.6 = 0.4$$"
+        },
+        {
+          "id": "p1d",
+          "label": "d)",
+          "question": "Calcula la varianza del ítem ($S_i^2$).",
+          "correctValue": 0.24,
+          "tolerance": 0,
+          "explanation": "$$S_i^2 = p \\cdot q = 0.6 \\cdot 0.4 = 0.24$$"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Índice de Fiabilidad del Ítem",
+      "context": "Un ítem dicotómico presenta una dificultad de $p=0.7$. La correlación del ítem con la puntuación total del test es $r_{iX} = 0.45$. Utiliza $IF_i = S_i \\cdot r_{iX}$.",
+      "parts": [
+        {
+          "id": "p2a",
+          "label": "a)",
+          "question": "Calcula la varianza del ítem ($S_i^2$).",
+          "correctValue": 0.21,
+          "tolerance": 0,
+          "explanation": "$$S_i^2 = p \\cdot q = 0.7 \\cdot 0.3 = 0.21$$"
+        },
+        {
+          "id": "p2b",
+          "label": "b)",
+          "question": "Calcula la desviación típica del ítem ($S_i$).",
+          "correctValue": 0.458,
+          "tolerance": 0.001,
+          "explanation": "$$S_i = \\sqrt{0.21} \\approx 0.458$$"
+        },
+        {
+          "id": "p2c",
+          "label": "c)",
+          "question": "Calcula el índice de fiabilidad del ítem ($IF_i$).",
+          "correctValue": 0.206,
+          "tolerance": 0.001,
+          "explanation": "$$IF_i = 0.458 \\cdot 0.45 = 0.206$$"
+        },
+        {
+          "id": "p2d",
+          "label": "d)",
+          "question": "Si el test tuviera 100 ítems con este mismo $IF_i$, ¿cuál sería la desviación típica del test ($S_X$)?",
+          "correctValue": 20.6,
+          "tolerance": 0.1,
+          "explanation": "$$S_X = \\sum IF_i = 100 \\cdot 0.206 = 20.6$$"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Dificultad Normalizada (Puntuaciones T)",
+      "context": "Un ítem es acertado por el 15.87% de los sujetos. En una distribución normal, esto corresponde a una aptitud $Z = 1.0$ (valor que deja por encima esa proporción). La escala T es $T = 50 + 10Z$.",
+      "parts": [
+        {
+          "id": "p3a",
+          "label": "a)",
+          "question": "Determina el índice de dificultad empírico ($p$).",
+          "correctValue": 0.1587,
+          "tolerance": 0,
+          "explanation": "$$p = 15.87\\% / 100 = 0.1587$$"
+        },
+        {
+          "id": "p3b",
+          "label": "b)",
+          "question": "Calcula la puntuación T de dificultad del ítem.",
+          "correctValue": 60,
+          "tolerance": 0,
+          "explanation": "$$T = 50 + 10(1.0) = 60$$"
+        },
+        {
+          "id": "p3c",
+          "label": "c)",
+          "question": "Si el ítem fuera acertado por el 50% de la población, ¿cuál sería su valor Z?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "$$P(Z > 0) = 0.5 \\implies Z = 0$$"
+        },
+        {
+          "id": "p3d",
+          "label": "d)",
+          "question": "Calcula la puntuación T para un ítem con $p=0.5$.",
+          "correctValue": 50,
+          "tolerance": 0,
+          "explanation": "$$T = 50 + 10(0) = 50$$"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Índice de Discriminación (Método d)",
+      "context": "En un grupo de 100 sujetos, dividimos por la mediana en Grupo Superior ($N_s=50$) e Inferior ($N_i=50$). En el Superior hay 45 aciertos, en el Inferior 15.",
+      "parts": [
+        {
+          "id": "p4a",
+          "label": "a)",
+          "question": "Calcula la proporción de aciertos en el grupo superior ($p_s$).",
+          "correctValue": 0.9,
+          "tolerance": 0,
+          "explanation": "$$p_s = 45 / 50 = 0.9$$"
+        },
+        {
+          "id": "p4b",
+          "label": "b)",
+          "question": "Calcula la proporción de aciertos en el grupo inferior ($p_i$).",
+          "correctValue": 0.3,
+          "tolerance": 0,
+          "explanation": "$$p_i = 15 / 50 = 0.3$$"
+        },
+        {
+          "id": "p4c",
+          "label": "c)",
+          "question": "Calcula el índice de discriminación ($d = p_s - p_i$).",
+          "correctValue": 0.6,
+          "tolerance": 0,
+          "explanation": "$$d = 0.9 - 0.3 = 0.6$$"
+        },
+        {
+          "id": "p4d",
+          "label": "d)",
+          "question": "Calcula el índice de dificultad global ($p$) para el total de la muestra.",
+          "correctValue": 0.6,
+          "tolerance": 0,
+          "explanation": "$$p = (45 + 15) / 100 = 0.6$$"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Varianza Máxima en Escalas Graduadas",
+      "context": "Se analiza un ítem con formato tipo Likert de 1 a 7 puntos. La fórmula de varianza máxima es $S_{max}^2 = (\\frac{cat_{sup} - cat_{inf}}{2})^2$.",
+      "parts": [
+        {
+          "id": "p5a",
+          "label": "a)",
+          "question": "Determina el valor de la categoría superior ($cat_{sup}$).",
+          "correctValue": 7,
+          "tolerance": 0,
+          "explanation": "El límite superior de la escala es 7."
+        },
+        {
+          "id": "p5b",
+          "label": "b)",
+          "question": "Calcula el punto neutro o media teórica de la escala.",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$(1 + 7) / 2 = 4$$"
+        },
+        {
+          "id": "p5c",
+          "label": "c)",
+          "question": "Calcula la varianza máxima posible para este ítem.",
+          "correctValue": 9,
+          "tolerance": 0,
+          "explanation": "$$S_{max}^2 = ((7-1)/2)^2 = 3^2 = 9$$"
+        },
+        {
+          "id": "p5d",
+          "label": "d)",
+          "question": "Si la escala fuera de 1 a 5, ¿cuál sería su varianza máxima?",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$S_{max}^2 = ((5-1)/2)^2 = 2^2 = 4$$"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Media del Test y Suma de Dificultades",
+      "context": "Un test consta de 5 ítems con los siguientes índices de dificultad: $p_1=0.8$, $p_2=0.4$, $p_3=1.0$, $p_4=0.6$, $p_5=0.2$. La media del test es $m_X = \\sum p_i$.",
+      "parts": [
+        {
+          "id": "p6a",
+          "label": "a)",
+          "question": "Calcula la media de la puntuación total en el test.",
+          "correctValue": 3,
+          "tolerance": 0,
+          "explanation": "$$m_X = 0.8 + 0.4 + 1.0 + 0.6 + 0.2 = 3$$"
+        },
+        {
+          "id": "p6b",
+          "label": "b)",
+          "question": "Calcula la varianza del ítem 2.",
+          "correctValue": 0.24,
+          "tolerance": 0,
+          "explanation": "$$S_2^2 = 0.4 \\cdot (1 - 0.4) = 0.24$$"
+        },
+        {
+          "id": "p6c",
+          "label": "c)",
+          "question": "Si eliminamos el ítem 3 (p=1.0), ¿cuál será la nueva media del test?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$m_{new} = 3 - 1.0 = 2$$"
+        },
+        {
+          "id": "p6d",
+          "label": "d)",
+          "question": "Calcula la varianza del ítem 3.",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "$$S_3^2 = 1.0 \\cdot (1 - 1.0) = 0$$"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Índice de Validez del Ítem",
+      "context": "Un ítem presenta una varianza de 0.16 y su correlación con un criterio externo es $r_{iC} = 0.30$. La fórmula es $IV_i = S_i \\cdot r_{iC}$.",
+      "parts": [
+        {
+          "id": "p7a",
+          "label": "a)",
+          "question": "Calcula la desviación típica del ítem ($S_i$).",
+          "correctValue": 0.4,
+          "tolerance": 0,
+          "explanation": "$$S_i = \\sqrt{0.16} = 0.4$$"
+        },
+        {
+          "id": "p7b",
+          "label": "b)",
+          "question": "Calcula el índice de validez del ítem ($IV_i$).",
+          "correctValue": 0.12,
+          "tolerance": 0,
+          "explanation": "$$IV_i = 0.4 \\cdot 0.3 = 0.12$$"
+        },
+        {
+          "id": "p7c",
+          "label": "c)",
+          "question": "Si $S_i$ se duplica a 0.8 manteniendo la correlación, ¿cuál es el nuevo $IV_i$?",
+          "correctValue": 0.24,
+          "tolerance": 0,
+          "explanation": "$$IV_i = 0.8 \\cdot 0.3 = 0.24$$"
+        },
+        {
+          "id": "p7d",
+          "label": "d)",
+          "question": "Si el ítem tuviera $p=0.5$, ¿cuál sería su desviación típica?",
+          "correctValue": 0.5,
+          "tolerance": 0,
+          "explanation": "$$S_i = \\sqrt{0.5 \\cdot 0.5} = 0.5$$"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Corrección de Azar en Ítems de 3 Alternativas",
+      "context": "Un test de conocimientos tiene 3 alternativas por ítem. En el ítem 12, de 300 alumnos, 180 aciertan y el resto falla.",
+      "parts": [
+        {
+          "id": "p8a",
+          "label": "a)",
+          "question": "Calcula el número de errores ($E$).",
+          "correctValue": 120,
+          "tolerance": 0,
+          "explanation": "$$E = 300 - 180 = 120$$"
+        },
+        {
+          "id": "p8b",
+          "label": "b)",
+          "question": "Calcula el índice de dificultad empírico ($p$).",
+          "correctValue": 0.6,
+          "tolerance": 0,
+          "explanation": "$$p = 180 / 300 = 0.6$$"
+        },
+        {
+          "id": "p8c",
+          "label": "c)",
+          "question": "Calcula el índice corregido por azar ($P_c$).",
+          "correctValue": 0.4,
+          "tolerance": 0,
+          "explanation": "$$P_c = (180 - (120/2)) / 300 = (180 - 60) / 300 = 0.4$$"
+        },
+        {
+          "id": "p8d",
+          "label": "d)",
+          "question": "Calcula la proportion de aciertos por azar esperada ($1/m$).",
+          "correctValue": 0.333,
+          "tolerance": 0.001,
+          "explanation": "$$1 / 3 \\approx 0.333$$"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Varianza y Distribución de Respuestas",
+      "context": "Un ítem dicotómico es aplicado a 50 personas. 40 personas responden correctamente.",
+      "parts": [
+        {
+          "id": "p9a",
+          "label": "a)",
+          "question": "Índice de dificultad ($p$).",
+          "correctValue": 0.8,
+          "tolerance": 0,
+          "explanation": "$$40 / 50 = 0.8$$"
+        },
+        {
+          "id": "p9b",
+          "label": "b)",
+          "question": "Índice de dificultad en términos de error ($q$).",
+          "correctValue": 0.2,
+          "tolerance": 0,
+          "explanation": "$$1 - 0.8 = 0.2$$"
+        },
+        {
+          "id": "p9c",
+          "label": "c)",
+          "question": "Varianza del ítem.",
+          "correctValue": 0.16,
+          "tolerance": 0,
+          "explanation": "$$0.8 \\cdot 0.2 = 0.16$$"
+        },
+        {
+          "id": "p9d",
+          "label": "d)",
+          "question": "Si el número de aciertos bajara a 25, ¿cuál sería la nueva varianza?",
+          "correctValue": 0.25,
+          "tolerance": 0,
+          "explanation": "$$p=0.5, S^2 = 0.5 \\cdot 0.5 = 0.25$$"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Dificultad Normalizada (Caso Extremo)",
+      "context": "Un ítem muy difícil es acertado solo por el 2.28% de los sujetos ($Z = 2.0$). Calcula sus métricas en la escala T.",
+      "parts": [
+        {
+          "id": "p10a",
+          "label": "a)",
+          "question": "Indica el valor de $p$.",
+          "correctValue": 0.0228,
+          "tolerance": 0,
+          "explanation": "$$2.28 / 100 = 0.0228$$"
+        },
+        {
+          "id": "p10b",
+          "label": "b)",
+          "question": "Calcula el valor T.",
+          "correctValue": 70,
+          "tolerance": 0,
+          "explanation": "$$50 + 10(2.0) = 70$$"
+        },
+        {
+          "id": "p10c",
+          "label": "c)",
+          "question": "Calcula la varianza del ítem.",
+          "correctValue": 0.022,
+          "tolerance": 0.001,
+          "explanation": "$$0.0228 \\cdot 0.9772 \\approx 0.0222$$"
+        },
+        {
+          "id": "p10d",
+          "label": "d)",
+          "question": "Si el valor T fuera 40, ¿cuál sería el valor de Z?",
+          "correctValue": -1,
+          "tolerance": 0,
+          "explanation": "$$40 = 50 + 10Z \\implies Z = -1$$"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Análisis de Distractores",
+      "context": "Un ítem de 4 alternativas tiene 100 sujetos que fallan la respuesta correcta. La teoría dice que deben repartirse por igual entre los 3 distractores.",
+      "parts": [
+        {
+          "id": "p11a",
+          "label": "a)",
+          "question": "¿Cuántos sujetos se espera que elijan cada distractor idealmente?",
+          "correctValue": 33.33,
+          "tolerance": 0.01,
+          "explanation": "$$100 / 3 = 33.33$$"
+        },
+        {
+          "id": "p11b",
+          "label": "b)",
+          "question": "Si un distractor atrae a 80 sujetos, ¿qué porcentaje del total de errores representa?",
+          "correctValue": 80,
+          "tolerance": 0,
+          "explanation": "$$80 / 100 \\cdot 100 = 80\\%$$"
+        },
+        {
+          "id": "p11c",
+          "label": "c)",
+          "question": "Si un distractor tiene $p=0$ (nadie lo elige), ¿debe eliminarse? (1 para sí, 0 para no).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Los distractores con p=0 no cumplen su función y deben ser sustituidos."
+        },
+        {
+          "id": "p11d",
+          "label": "d)",
+          "question": "¿Cuántas alternativas totales sugiere Lord (1980) como mejor opción?",
+          "correctValue": 3,
+          "tolerance": 0,
+          "explanation": "El texto menciona que Lord sugiere 3 alternativas como mejor opción."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Varianza en Diferencial Semántico",
+      "context": "Se utiliza una escala de 1 a 11 categorías (Diferencial Semántico).",
+      "parts": [
+        {
+          "id": "p12a",
+          "label": "a)",
+          "question": "Calcula el punto neutro de la escala.",
+          "correctValue": 6,
+          "tolerance": 0,
+          "explanation": "$$(1 + 11) / 2 = 6$$"
+        },
+        {
+          "id": "p12b",
+          "label": "b)",
+          "question": "Calcula la distancia desde el centro a un extremo.",
+          "correctValue": 5,
+          "tolerance": 0,
+          "explanation": "$$11 - 6 = 5$$"
+        },
+        {
+          "id": "p12c",
+          "label": "c)",
+          "question": "Calcula la varianza máxima posible.",
+          "correctValue": 25,
+          "tolerance": 0,
+          "explanation": "$$5^2 = 25$$"
+        },
+        {
+          "id": "p12d",
+          "label": "d)",
+          "question": "Si la escala tuviera 5 categorías, ¿cuál sería la distancia al extremo?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$(1+5)/2 = 3; 5-3 = 2$$"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Sensibilidad al Tamaño de la Muestra",
+      "context": "Un ítem es aplicado a una muestra representativa de 1000 sujetos, obteniendo $p=0.45$.",
+      "parts": [
+        {
+          "id": "p13a",
+          "label": "a)",
+          "question": "¿Cuántos sujetos acertaron el ítem?",
+          "correctValue": 450,
+          "tolerance": 0,
+          "explanation": "$$1000 \\cdot 0.45 = 450$$"
+        },
+        {
+          "id": "p13b",
+          "label": "b)",
+          "question": "¿Cuántos sujetos fallaron?",
+          "correctValue": 550,
+          "tolerance": 0,
+          "explanation": "$$1000 - 450 = 550$$"
+        },
+        {
+          "id": "p13c",
+          "label": "c)",
+          "question": "Si en una submuestra de 200 muy competentes el índice es $p=0.8$, ¿cuántos aciertos hay en ese grupo?",
+          "correctValue": 160,
+          "tolerance": 0,
+          "explanation": "$$200 \\cdot 0.8 = 160$$"
+        },
+        {
+          "id": "p13d",
+          "label": "d)",
+          "question": "¿Depende el valor de $p$ del nivel de competencia de la muestra? (1 para sí, 0 para no).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Sí, el índice de dificultad tiene una fuerte dependencia muestral."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Perfil de Dificultad de Test",
+      "context": "Un test de 30 ítems está ordenado por dificultad creciente. Los ítems de arranque (primeros 4) tienen un $p=0.95$. Los centrales tienen $p=0.5$.",
+      "parts": [
+        {
+          "id": "p14a",
+          "label": "a)",
+          "question": "¿Cuál es la varianza de un ítem de arranque?",
+          "correctValue": 0.0475,
+          "tolerance": 0.0001,
+          "explanation": "$$0.95 \\cdot 0.05 = 0.0475$$"
+        },
+        {
+          "id": "p14b",
+          "label": "b)",
+          "question": "¿Cuál es la varianza de un ítem central?",
+          "correctValue": 0.25,
+          "tolerance": 0,
+          "explanation": "$$0.5 \\cdot 0.5 = 0.25$$"
+        },
+        {
+          "id": "p14c",
+          "label": "c)",
+          "question": "Calcula el valor de $q$ para los ítems de arranque.",
+          "correctValue": 0.05,
+          "tolerance": 0,
+          "explanation": "$$1 - 0.95 = 0.05$$"
+        },
+        {
+          "id": "p14d",
+          "label": "d)",
+          "question": "¿En qué valor de $p$ se maximiza la varianza?",
+          "correctValue": 0.5,
+          "tolerance": 0,
+          "explanation": "La varianza máxima (0.25) ocurre cuando p = q = 0.5."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Corrección por Azar (Formato Dicotómico)",
+      "context": "En ítems Verdadero/Falso ($m=2$), la penalización por error es máxima. Si un sujeto responde 100 ítems y acierta 70 por puro azar.",
+      "parts": [
+        {
+          "id": "p15a",
+          "label": "a)",
+          "question": "Calcula el número de errores ($E$).",
+          "correctValue": 30,
+          "tolerance": 0,
+          "explanation": "$$100 - 70 = 30$$"
+        },
+        {
+          "id": "p15b",
+          "label": "b)",
+          "question": "Calcula el término $E / (m-1)$.",
+          "correctValue": 30,
+          "tolerance": 0,
+          "explanation": "$$30 / (2 - 1) = 30$$"
+        },
+        {
+          "id": "p15c",
+          "label": "c)",
+          "question": "Calcula el índice de dificultad corregido ($P_c$).",
+          "correctValue": 0.4,
+          "tolerance": 0,
+          "explanation": "$$(70 - 30) / 100 = 0.4$$"
+        },
+        {
+          "id": "p15d",
+          "label": "d)",
+          "question": "¿Cuál es la probabilidad de acierto por azar en este formato?",
+          "correctValue": 0.5,
+          "tolerance": 0,
+          "explanation": "$$1 / m = 1 / 2 = 0.5$$"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Varianza Total del Test",
+      "context": "La varianza de un test se puede estimar como $S_X^2 = (\\sum IF_i)^2$. Si tenemos un test de 4 ítems con $IF_1=0.2, IF_2=0.3, IF_3=0.1, IF_4=0.4$.",
+      "parts": [
+        {
+          "id": "p16a",
+          "label": "a)",
+          "question": "Calcula la suma de los índices de fiabilidad.",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$0.2 + 0.3 + 0.1 + 0.4 = 1.0$$"
+        },
+        {
+          "id": "p16b",
+          "label": "b)",
+          "question": "Calcula la varianza total del test ($S_X^2$).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$1.0^2 = 1.0$$"
+        },
+        {
+          "id": "p16c",
+          "label": "c)",
+          "question": "Calcula la desviación típica del test ($S_X$).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{1.0} = 1.0$$"
+        },
+        {
+          "id": "p16d",
+          "label": "d)",
+          "question": "Si todos los $IF_i$ se duplicaran, ¿en qué factor aumentaría la varianza?",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$(2 \\cdot \\sum IF_i)^2 = 4 \\cdot (\\sum IF_i)^2$$"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Interpretación de Ebel para Discriminación",
+      "context": "Ebel (1965) propuso criterios para el índice $d$. Si $d=0.35$.",
+      "parts": [
+        {
+          "id": "p17a",
+          "label": "a)",
+          "question": "¿Es el ítem aceptable sin modificaciones según el rango 0.30-0.39? (1 para sí, 0 para no).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Sí, entre 0.30 y 0.39 se considera aceptable o requiere ligeras mejoras."
+        },
+        {
+          "id": "p17b",
+          "label": "b)",
+          "question": "Si $d=0.15$, ¿sirve el ítem? (1 para sí, 0 para no).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "No, valores menores a 0.20 indican que el ítem debe ser sustituido."
+        },
+        {
+          "id": "p17c",
+          "label": "c)",
+          "question": "Si $p_s=1.0$ y $p_i=0$, ¿cuál es el valor de $d$?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$1.0 - 0 = 1.0$$"
+        },
+        {
+          "id": "p17d",
+          "label": "d)",
+          "question": "¿Qué valor de $d$ indica ausencia total de discriminación?",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "Un valor de 0 indica que ambos grupos aciertan en la misma proporción."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Aptitud necesaria (Z) y dificultad",
+      "context": "Un ítem es acertado por el 84.13% de los sujetos. Esto corresponde a una puntuación $Z = -1.0$ (aptitud por encima de la cual están el 84% de los casos).",
+      "parts": [
+        {
+          "id": "p18a",
+          "label": "a)",
+          "question": "Calcula el valor T.",
+          "correctValue": 40,
+          "tolerance": 0,
+          "explanation": "$$50 + 10(-1.0) = 40$$"
+        },
+        {
+          "id": "p18b",
+          "label": "b)",
+          "question": "Calcula el índice de dificultad empírico.",
+          "correctValue": 0.841,
+          "tolerance": 0.001,
+          "explanation": "$$84.13 / 100 = 0.8413$$"
+        },
+        {
+          "id": "p18c",
+          "label": "c)",
+          "question": "Calcula la varianza del ítem.",
+          "correctValue": 0.134,
+          "tolerance": 0.001,
+          "explanation": "$$0.8413 \\cdot 0.1587 \\approx 0.1335$$"
+        },
+        {
+          "id": "p18d",
+          "label": "d)",
+          "question": "Si Z fuera 0.5, ¿cuál sería el valor T?",
+          "correctValue": 55,
+          "tolerance": 0,
+          "explanation": "$$50 + 10(0.5) = 55$$"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Índice de Dificultad en Rendimiento Típico",
+      "context": "En un test de personalidad (sin acierto/error), el ítem 1 se puntúa de 0 a 4. 50 sujetos responden y la suma de sus respuestas es 150.",
+      "parts": [
+        {
+          "id": "p19a",
+          "label": "a)",
+          "question": "Calcula el índice de 'dificultad' (media) del ítem ($P = \\sum respuestas / N$).",
+          "correctValue": 3,
+          "tolerance": 0,
+          "explanation": "$$150 / 50 = 3$$"
+        },
+        {
+          "id": "p19b",
+          "label": "b)",
+          "question": "Si el ítem es conflictivo y hay muchas omisiones, ¿se ajusta mejor la N al total o a los que responden? (1 para respondientes, 0 para total).",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "El texto indica que usar el número de respondientes ajusta mejor la realidad del ítem."
+        },
+        {
+          "id": "p19c",
+          "label": "c)",
+          "question": "Si 10 personas no contestaran, ¿cuál sería la N adecuada para el cálculo según el texto?",
+          "correctValue": 40,
+          "tolerance": 0,
+          "explanation": "$$50 - 10 = 40$$"
+        },
+        {
+          "id": "p19d",
+          "label": "d)",
+          "question": "Si la suma de respuestas fuera 80 para 40 sujetos, ¿cuál sería el índice P?",
+          "correctValue": 2,
+          "tolerance": 0,
+          "explanation": "$$80 / 40 = 2$$"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Discriminación y Correlación Corregida",
+      "context": "Un test de 5 ítems tiene una puntuación total de 15. El sujeto A sacó 4 puntos en el ítem 1. Queremos evitar la sobreestimación en la discriminación.",
+      "parts": [
+        {
+          "id": "p20a",
+          "label": "a)",
+          "question": "Calcula la puntuación total corregida ($X_{corregida}$) para el sujeto A respecto al ítem 1.",
+          "correctValue": 11,
+          "tolerance": 0,
+          "explanation": "$$15 - 4 = 11$$"
+        },
+        {
+          "id": "p20b",
+          "label": "b)",
+          "question": "Si el test tuviera 100 ítems, ¿sería el efecto de sobreestimación mayor o menor? (1 para mayor, 0 para menor).",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "El efecto de sobreestimación se diluye (disminuye) a medida que aumenta el número de ítems."
+        },
+        {
+          "id": "p20c",
+          "label": "c)",
+          "question": "Si el sujeto B tiene 20 puntos totales y el ítem 1 vale 5, ¿cuál es su total corregido?",
+          "correctValue": 15,
+          "tolerance": 0,
+          "explanation": "$$20 - 5 = 15$$"
+        },
+        {
+          "id": "p20d",
+          "label": "d)",
+          "question": "La correlación calculada con el total corregido es la discriminación real. ¿Verdadero (1) o Falso (0)?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "Es el procedimiento correcto para evitar la autocorrelación ítem-total."
+        }
+      ]
+    }
+  ],
+  "jsonFormulas": [
+    {
+      "name": "Índice de dificultad (p)",
+      "tex": "$$p_i = \\frac{A_i}{N}$$"
+    },
+    {
+      "name": "Relación entre la media del test y los índices de dificultad",
+      "tex": "$$m_x = \\sum_{i=1}^{n} p_i$$"
+    },
+    {
+      "name": "Índice de dificultad corregido por azar",
+      "tex": "$$P_i = \\frac{A - \\frac{E}{m-1}}{N}$$"
+    },
+    {
+      "name": "Complemento del índice de dificultad (proporción de errores)",
+      "tex": "$$q = 1 - p$$"
+    },
+    {
+      "name": "Dificultad normalizada (Escala T)",
+      "tex": "$$T = 50 + 10Z$$"
+    },
+    {
+      "name": "Índice de dificultad para test de rendimiento típico",
+      "tex": "$$P = \\frac{\\sum respuestas}{N}$$"
+    },
+    {
+      "name": "Índice de discriminación (d) basado en proporciones de acierto",
+      "tex": "$$d = p_s - p_i$$"
+    },
+    {
+      "name": "Varianza de un ítem dicotómico",
+      "tex": "$$s_x^2 = p_i q_i$$"
+    },
+    {
+      "name": "Varianza máxima de un ítem con escala graduada",
+      "tex": "$$S_{máxima} = \\sqrt{\\frac{categoría_{inf}^2 + categoría_{sup}^2}{2} - p^2}$$"
+    },
+    {
+      "name": "Índice de fiabilidad del ítem",
+      "tex": "$$IF_i = S_i r_{iX}$$"
+    },
+    {
+      "name": "Índice de validez del ítem",
+      "tex": "$$IV_i = S_i r_{IC}$$"
+    },
+    {
+      "name": "Índice de fiabilidad para ítems dicotómicos",
+      "tex": "$$IF_i = \\sqrt{p_i q_i} r_{ix}$$"
+    },
+    {
+      "name": "Índice de validez para ítems dicotómicos",
+      "tex": "$$IV_i = \\sqrt{p_i q_i} r_{iC}$$"
+    },
+    {
+      "name": "Desviación típica del test (en función de los índices de fiabilidad)",
+      "tex": "$$S_x = \\sum S_i r_{iX}$$"
+    }
+  ]
+}

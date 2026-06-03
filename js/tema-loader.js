@@ -234,6 +234,17 @@ const THEME_SUBTITLES = {
         '8': 'Work Engagement y Autoeficacia Laboral',
         '9': 'Cultura y Clima en las Organizaciones',
         '10': 'Cambio y Desarrollo Organizacional'
+    },
+    'psicometria': {
+        '1': 'Conceptos Fundamentales y Evolución de la Psicometría',
+        '2': 'Construcción, Taxonomía y Formatos de los Test Psicológicos',
+        '3': 'La Teoría Clásica de los Test y la Fiabilidad',
+        '4': 'Análisis de Ítems y Construcción de Test',
+        '5': 'La Validez y sus Evidencias',
+        '6': 'Fiabilidad, Validez y el Efecto de la Longitud del Test',
+        '7': 'Transformación y Equiparación de Puntuaciones',
+        '8': 'Evaluación de la Calidad y Uso Ético de los Test',
+        '9': 'De la TCT a la Teoría de la Respuesta al Ítem (TRI) y los TAI'
     }
 };
 
@@ -634,6 +645,24 @@ const THEME_CONFIG = {
         titleGradient: 'from-sky-500 to-blue-500',
         borderCard: 'border-b-sky-500',
         borderCardAlt: 'border-b-blue-500',
+    },
+    'psicometria': {
+        name: 'Psicometría',
+        icon: 'ph-chart-bar',
+        bg: '#ecfeff',
+        gradients: 'radial-gradient(at 0% 0%, hsla(180, 80%, 92%, 1) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(160, 70%, 92%, 1) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(195, 80%, 92%, 1) 0, transparent 50%)',
+        primary: '#0891b2',
+        primaryGrad: 'linear-gradient(135deg, #0891b2 0%, #06b6d4 50%, #14b8a6 100%)',
+        primaryShadow: 'rgba(6, 182, 212, 0.4)',
+        accent: '#06b6d4',
+        accentBg: '#ecfeff',
+        accentLight: '#cffafe',
+        textAccent: '#0891b2',
+        optionHoverBorder: '#06b6d4',
+        optionHoverBg: '#ecfeff',
+        titleGradient: 'from-cyan-500 to-teal-500',
+        borderCard: 'border-b-cyan-500',
+        borderCardAlt: 'border-b-teal-500',
     },
     '_default': {
         name: 'Asignatura',

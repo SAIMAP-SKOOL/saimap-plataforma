@@ -1,0 +1,1766 @@
+{
+  "jsonTestA": [
+    {
+      "q": "¿Es correcto afirmar que el coeficiente de fiabilidad ($\\rho_{xx'}$) es matemáticamente equivalente al cuadrado del índice de fiabilidad ($\\rho_{xv}$)?",
+      "options": [
+        "Verdadero, según la deducción del modelo lineal.",
+        "Falso, el índice es siempre el cuadrado del coeficiente.",
+        "No se puede determinar sin conocer la varianza error."
+      ],
+      "correct": 0,
+      "hint": "Revisa la relación entre la correlación de formas paralelas y la correlación con la puntuación verdadera.",
+      "explanation": "En la TCT, el coeficiente de fiabilidad se define como $\\rho_{xx'} = \\rho_{xv}^2$, representando la proporción de varianza verdadera sobre la observada."
+    },
+    {
+      "q": "En el Supuesto 3 de la TCT ($r_{ve}=0$), ¿se asume que la cuantía del error es independiente del nivel del sujeto en el rasgo medido?",
+      "options": [
+        "Verdadero, asume independencia entre $V$ y $e$.",
+        "Falso, el error aumenta en los niveles altos de $V$.",
+        "No se, depende de si el test es tau-equivalente."
+      ],
+      "correct": 0,
+      "hint": "Este supuesto es fundamental para la linealidad del modelo.",
+      "explanation": "El modelo asume que no hay correlación entre puntuaciones verdaderas y errores; el error es puramente aleatorio respecto al constructo."
+    },
+    {
+      "q": "¿Es requisito para que dos test sean 'esencialmente tau-equivalentes' que sus varianzas de error ($\\sigma_e^2$) sean idénticas?",
+      "options": [
+        "Verdadero, es la base de la equivalencia formal.",
+        "Falso, solo requieren una relación lineal constante.",
+        "No se, la igualdad de varianzas es para test paralelos."
+      ],
+      "correct": 2,
+      "hint": "Distingue entre paralelismo estricto y los modelos relajados de Lord y Novick.",
+      "explanation": "En los test esencialmente tau-equivalentes, las puntuaciones verdaderas difieren en una constante, pero las varianzas de error no tienen por qué ser iguales."
+    },
+    {
+      "q": "Si un test tiene una fiabilidad perfecta ($\\rho_{xx'} = 1$), ¿la varianza de las puntuaciones observadas es igual a la varianza de los errores?",
+      "options": [
+        "Verdadero, la varianza observada absorbe al error.",
+        "Falso, en ese caso la varianza del error es nula.",
+        "No se, depende del tamaño de la muestra utilizada."
+      ],
+      "correct": 1,
+      "hint": "Relaciona la fórmula $\\sigma_x^2 = \\sigma_v^2 + \\sigma_e^2$ con el concepto de fiabilidad.",
+      "explanation": "Si $\\rho_{xx'} = 1$, entonces $\\sigma_x^2 = \\sigma_v^2$, lo que implica que $\\sigma_e^2 = 0$ (ausencia total de error de medida)."
+    },
+    {
+      "q": "¿El error estándar de medida ($\\sigma_e$) es una medida de la variabilidad del error a nivel individual para cada sujeto?",
+      "options": [
+        "Verdadero, indica la precisión puntual del sujeto.",
+        "Falso, es un promedio de la variabilidad del grupo.",
+        "No se, depende de la homocedasticidad del modelo."
+      ],
+      "correct": 1,
+      "hint": "La TCT trabaja con estadísticos de grupo para estimar parámetros poblacionales.",
+      "explanation": "La $\\sigma_e$ no se estima individualmente, sino que es una medida general de la variabilidad del error para toda la escala."
+    },
+    {
+      "q": "¿Es posible que el coeficiente Alfa de Cronbach ($\\alpha$) sea elevado en un test que no es estrictamente unidimensional?",
+      "options": [
+        "Verdadero, $\\alpha$ no garantiza la unidimensionalidad.",
+        "Falso, $\\alpha$ es el índice de factor único del test.",
+        "No se, solo ocurre si los ítems son dicotómicos."
+      ],
+      "correct": 0,
+      "hint": "Recuerda que la consistencia interna y la estructura factorial son conceptos distintos.",
+      "explanation": "Una alta intercorrelación entre ítems (consistencia) puede darse en test multidimensionales si los factores están muy relacionados."
+    },
+    {
+      "q": "Según el modelo de regresión para estimar $V$, ¿la puntuación verdadera predicha ($v'$) coincide siempre con la observada ($X$)?",
+      "options": [
+        "Verdadero, bajo el supuesto de esperanza de $X$.",
+        "Falso, tiende a la media del grupo (regresión).",
+        "No se sabe si el coeficiente de fiabilidad es bajo."
+      ],
+      "correct": 1,
+      "hint": "La fórmula es $v' = \\rho_{xx'}(X - \\mu_x) + \\mu_x$. Observa el efecto del coeficiente.",
+      "explanation": "A menos que $\\rho_{xx'} = 1$, la puntuación predicha es una ponderación que acerca el valor de $X$ hacia la media de la distribución."
+    },
+    {
+      "q": "¿Aumentar la longitud de un test mediante la adición de ítems paralelos incrementa la fiabilidad de forma lineal indefinida?",
+      "options": [
+        "Verdadero, a más ítems, mayor fiabilidad total.",
+        "Falso, el incremento sigue una curva de rendimientos.",
+        "No se, depende de si se usa el método de Rulon."
+      ],
+      "correct": 1,
+      "hint": "Analiza la forma de la función de Spearman-Brown en un gráfico.",
+      "explanation": "La relación es asintótica; el aumento es muy grande al principio pero se estabiliza al acercarse a la fiabilidad unitaria."
+    },
+    {
+      "q": "¿La heterogeneidad de la muestra (mayor $\\sigma_x^2$) tiende a aumentar artificialmente el coeficiente de fiabilidad?",
+      "options": [
+        "Verdadero, la varianza afecta a la correlación.",
+        "Falso, la fiabilidad es una propiedad fija del test.",
+        "No se, el coeficiente es independiente de la muestra."
+      ],
+      "correct": 0,
+      "hint": "Recuerda que la fiabilidad es una correlación y las correlaciones dependen de la variabilidad.",
+      "explanation": "Cuanto mayor es la dispersión de las puntuaciones en la muestra, mayor suele ser el coeficiente de fiabilidad obtenido."
+    },
+    {
+      "q": "¿El supuesto $r(e_j, e_k) = 0$ implica que los errores de medida en dos aplicaciones independientes son aleatorios?",
+      "options": [
+        "Verdadero, es la base de la independencia de error.",
+        "Falso, implica que los errores covarían con el rasgo.",
+        "No se, solo aplica si los test son formas paralelas."
+      ],
+      "correct": 0,
+      "hint": "Este supuesto garantiza que no hay sesgos sistemáticos compartidos entre medidas.",
+      "explanation": "Los errores cometidos en un test no deben estar relacionados con los cometidos en otro; son eventos estocásticos independientes."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA sobre la relación entre fiabilidad y validez en el marco de la Teoría Clásica de los Test:",
+      "options": [
+        "La fiabilidad es condición necesaria y suficiente para que un test sea válido y útil.",
+        "Un test puede ser altamente fiable midiendo de forma constante una variable errónea.",
+        "La validez de un instrumento de medida siempre será superior a su índice de fiabilidad."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el ejemplo de la diana donde los disparos están muy juntos pero fuera del centro.",
+      "explanation": "La fiabilidad indica consistencia; se puede medir muy bien (con poco error) algo que no es el constructo objetivo."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA respecto al error estándar de medida ($\\sigma_e$) y su cálculo empírico:",
+      "options": [
+        "Se calcula multiplicando la desviación típica observada por la raíz de (1 - fiabilidad).",
+        "Es el cociente entre la varianza verdadera y la varianza observada de la muestra total.",
+        "Representa el porcentaje de varianza observada que es explicada por la varianza verdadera."
+      ],
+      "correct": 0,
+      "hint": "La fórmula es $\\sigma_e = \\sigma_x \\sqrt{1 - \\rho_{xx'}}$.",
+      "explanation": "Esta fórmula permite cuantificar la dispersión del error a partir de datos observables (desviación típica y coeficiente)."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA sobre los métodos de estimación de fiabilidad basados en una sola administración:",
+      "options": [
+        "El método de Test-Retest es el más eficiente al requerir una única aplicación del test.",
+        "Las fórmulas de Rulon y Guttman-Flanagan requieren que las mitades sean paralelas.",
+        "Alfa de Cronbach es el promedio de todos los coeficientes de dos mitades posibles."
+      ],
+      "correct": 2,
+      "hint": "Alfa simplifica el proceso de partición múltiple de un instrumento de medida.",
+      "explanation": "Cronbach demostró que $\\alpha$ es el valor medio de todas las posibles particiones por mitades corregidas por Spearman-Brown."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA sobre el concepto de 'Esperanza Matemática' ($V = E(X)$) en la TCT:",
+      "options": [
+        "Representa la media teórica de infinitas aplicaciones del test a un mismo individuo.",
+        "Es el valor máximo que un sujeto puede alcanzar si no comete ningún error aleatorio.",
+        "Equivale a la puntuación directa obtenida en la primera aplicación de una forma paralela."
+      ],
+      "correct": 0,
+      "hint": "Conceptualmente, $V$ es el valor 'limpio' de fluctuaciones aleatorias temporales.",
+      "explanation": "La puntuación verdadera se define como la media de la distribución de puntuaciones empíricas de un sujeto en aplicaciones infinitas."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA sobre la fórmula general de Spearman-Brown para la longitud del test:",
+      "options": [
+        "Asume que los ítems que se añaden al test original no son paralelos a los existentes.",
+        "Permite predecir el coeficiente de fiabilidad al variar el número de ítems del test.",
+        "Indica que para duplicar la fiabilidad es necesario cuadruplicar el número de ítems."
+      ],
+      "correct": 1,
+      "hint": "Se conoce como la 'fórmula de la profecía' por su capacidad predictiva.",
+      "explanation": "La fórmula estima $R_{cc'}$ en función de la longitud relativa $K$ y la fiabilidad inicial $R_{ii'}$."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA sobre los test paralelos según la formulación clásica de Spearman:",
+      "options": [
+        "Deben presentar las mismas puntuaciones verdaderas y las mismas varianzas de error.",
+        "Basta con que las medias y las varianzas de las puntuaciones observadas sean iguales.",
+        "Son aquellos que miden constructos diferentes pero con el mismo nivel de error típico."
+      ],
+      "correct": 0,
+      "hint": "El paralelismo es la condición más restrictiva de equivalencia entre medidas.",
+      "explanation": "La definición formal exige igualdad en $V$ y en $\\sigma_e^2$, lo que deriva en igualdad de medias y varianzas observadas."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA sobre la estimación de la puntuación verdadera mediante intervalos de confianza:",
+      "options": [
+        "El modelo de regresión es preferible si no se cumple la homocedasticidad en la escala.",
+        "Se utiliza el error estándar de medida ($\\sigma_e$) cuando se asume normalidad de errores.",
+        "La amplitud del intervalo es independiente del nivel de confianza ($Z_{\\alpha}$) elegido."
+      ],
+      "correct": 1,
+      "hint": "El intervalo se construye como $V \\in X \\pm Z_{\\alpha} (\\sigma_e)$.",
+      "explanation": "La TCT asume normalidad de los errores para permitir el uso de la campana de Gauss en la construcción de intervalos de confianza."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA sobre el coeficiente KR20 (Kuder-Richardson):",
+      "options": [
+        "Es un caso especial del coeficiente Alfa aplicable exclusivamente a ítems dicotómicos.",
+        "Requiere el cálculo previo de la correlación biserial-puntual de cada ítem del test.",
+        "Sobreestima sistemáticamente la fiabilidad si los ítems tienen diferentes dificultades."
+      ],
+      "correct": 0,
+      "hint": "Observa el numerador de la fórmula: $\\sum p_i q_i$.",
+      "explanation": "El KR20 utiliza la proporción de aciertos ($p$) y fallos ($q$) para calcular la varianza de ítems dicotómicos (0/1)."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA sobre el factor de 'Homogeneidad de la muestra' en la psicometría:",
+      "options": [
+        "Las muestras muy homogéneas tienden a producir coeficientes de fiabilidad más bajos.",
+        "La fiabilidad es máxima cuando todos los sujetos obtienen la misma puntuación directa.",
+        "La varianza verdadera aumenta proporcionalmente al disminuir la varianza del error."
+      ],
+      "correct": 0,
+      "hint": "Si no hay variabilidad en las puntuaciones, la correlación tiende a cero.",
+      "explanation": "Al reducirse la variabilidad del grupo, se dificulta la discriminación y el coeficiente de correlación (fiabilidad) disminuye."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA sobre el coeficiente Theta ($\\theta$) de Carmines y Zeller:",
+      "options": [
+        "Se basa en el análisis factorial y depende del valor propio del primer componente.",
+        "Es un estimador que siempre resulta inferior al valor obtenido por el Alfa de Cronbach.",
+        "Requiere que el test sea multidimensional para que su cálculo sea estadísticamente válido."
+      ],
+      "correct": 0,
+      "hint": "Relaciona la fiabilidad con la varianza explicada por un factor principal.",
+      "explanation": "$\\theta$ utiliza el primer valor propio ($\\lambda_1$) para estimar la consistencia interna desde una perspectiva factorial."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA sobre el coeficiente Beta ($\\beta$) de Raju:",
+      "options": [
+        "Se utiliza para calcular la fiabilidad de una batería compuesta por varios subtest.",
+        "Es el único coeficiente que no se ve afectado por la longitud total del instrumento.",
+        "Requiere que todos los subtest de la batería tengan exactamente el mismo número de ítems."
+      ],
+      "correct": 0,
+      "hint": "Es una generalización de Alfa para estructuras de test por bloques o partes.",
+      "explanation": "El coeficiente de Raju permite estimar la fiabilidad global considerando pesos diferenciales de los subtest en la batería."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA sobre el método Test-Retest para estimar la estabilidad:",
+      "options": [
+        "Es el método de elección para medir 'estados' psicológicos fluctuantes o transitorios.",
+        "El intervalo recomendado suele oscilar entre las dos semanas y los seis meses de tiempo.",
+        "Garantiza que no existan efectos de aprendizaje ni maduración en los sujetos evaluados."
+      ],
+      "correct": 1,
+      "hint": "El tiempo debe ser suficiente para olvidar, pero no para cambiar el rasgo.",
+      "explanation": "El intervalo debe equilibrar la evitación del recuerdo con la estabilidad del constructo medido."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA sobre la relación entre el índice y el coeficiente de fiabilidad:",
+      "options": [
+        "El índice de fiabilidad ($\\rho_{xv}$) es siempre mayor o igual que el coeficiente ($\\rho_{xx'}$).",
+        "El coeficiente de fiabilidad es la raíz cuadrada de la correlación entre formas paralelas.",
+        "Ambos parámetros son idénticos si la varianza de la puntuación verdadera es igual a 1."
+      ],
+      "correct": 0,
+      "hint": "Como $\\rho_{xx'} < 1$, su raíz cuadrada (el índice) es un número mayor.",
+      "explanation": "Puesto que $\\rho_{xv} = \\sqrt{\\rho_{xx'}}$, el índice (correlación con $V$) es superior al coeficiente (correlación entre $X$ y $X'$)."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA sobre la interpretación de la varianza en el modelo lineal:",
+      "options": [
+        "La varianza observada es la suma simple de la varianza verdadera y la varianza error.",
+        "La varianza error siempre es superior a la varianza verdadera en test de alta calidad.",
+        "La covarianza entre puntuaciones verdaderas y errores es siempre distinta de cero."
+      ],
+      "correct": 0,
+      "hint": "Revisa el Supuesto 3 y la descomposición de la varianza de $X = V + e$.",
+      "explanation": "Debido a que $r_{ve} = 0$, la varianza de la suma de las variables es la suma de sus varianzas individuales."
+    },
+    {
+      "q": "Elija la afirmación CORRECTA sobre la utilidad de la 'fórmula de la profecía' de Spearman-Brown:",
+      "options": [
+        "Se usa para calcular cuántos ítems añadir para alcanzar un criterio de fiabilidad dado.",
+        "Determina la validez de contenido del test tras eliminar los ítems con menor varianza.",
+        "Es un método de análisis de ítems que permite identificar errores sistemáticos de medida."
+      ],
+      "correct": 0,
+      "hint": "Se despeja $K$ para saber cuánto debe crecer el test para llegar a un nivel de fiabilidad.",
+      "explanation": "Permite planificar la construcción de test indicando la longitud necesaria para obtener la precisión deseada."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre los supuestos fundamentales de la TCT:",
+      "options": [
+        "El modelo asume que la puntuación observada es una función lineal de $V$ y $e$.",
+        "Se postula que no existe relación sistemática entre los errores y las puntuaciones $V$.",
+        "Se asume que la puntuación verdadera ($V$) varía aleatoriamente en cada aplicación."
+      ],
+      "correct": 2,
+      "hint": "Considera la naturaleza de $V$ como un valor constante e intrínseco del sujeto.",
+      "explanation": "En la TCT, $V$ se considera una constante para el individuo en ese momento; lo que varía aleatoriamente es $X$ debido al error $e$."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre la fiabilidad y el error de medida:",
+      "options": [
+        "Si la fiabilidad de un test es cero, toda la varianza observada se debe al error.",
+        "Un test con fiabilidad perfecta carece de variabilidad en sus puntuaciones observadas.",
+        "El error típico de medida disminuye a medida que aumenta el coeficiente de fiabilidad."
+      ],
+      "correct": 1,
+      "hint": "Distingue entre 'ausencia de variabilidad' y 'ausencia de error'.",
+      "explanation": "Un test con fiabilidad perfecta tiene variabilidad, pero esta se debe exclusivamente a las diferencias reales en $V$, no al error."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre el método de dos mitades para estimar la fiabilidad:",
+      "options": [
+        "Requiere corregir la correlación obtenida mediante la fórmula de Spearman-Brown.",
+        "La división del test en pares e impares es un criterio aleatorio comúnmente aceptado.",
+        "Garantiza siempre el mismo coeficiente independientemente de cómo se divida el test."
+      ],
+      "correct": 2,
+      "hint": "Piensa en qué pasaría si un test de 100 ítems se divide de muchas formas distintas.",
+      "explanation": "Uno de los problemas del método de dos mitades es que el coeficiente puede variar según la partición realizada."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre los factores que afectan a la fiabilidad:",
+      "options": [
+        "La fiabilidad aumenta al incrementar el número de ítems si estos son paralelos.",
+        "Cuanto más homogénea es la muestra de sujetos, mayor es el coeficiente obtenido.",
+        "La estandarización de las condiciones de aplicación ayuda a reducir la varianza error."
+      ],
+      "correct": 1,
+      "hint": "Recuerda la relación entre variabilidad de la muestra y magnitud de la correlación.",
+      "explanation": "Es incorrecto; la homogeneidad reduce la varianza observada y, por ende, disminuye el coeficiente de fiabilidad."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre las formas paralelas de un test:",
+      "options": [
+        "Presentan medias y varianzas de puntuaciones observadas estadísticamente iguales.",
+        "Son fáciles de construir en la práctica clínica cumpliendo todos los requisitos teóricos.",
+        "La correlación entre ellas se denomina 'coeficiente de equivalencia' de la medida."
+      ],
+      "correct": 1,
+      "hint": "Considera la dificultad de replicar exactamente todas las propiedades psicométricas.",
+      "explanation": "Es incorrecto; construir formas estrictamente paralelas es sumamente difícil y poco frecuente en la literatura psicométrica."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre la estimación de puntuaciones verdaderas:",
+      "options": [
+        "El intervalo de confianza permite acotar el valor de $V$ con un margen de error.",
+        "El modelo de regresión lineal siempre arroja una estimación puntual de la $V$ del sujeto.",
+        "La puntuación verdadera predicha es siempre superior a la puntuación observada $X$."
+      ],
+      "correct": 2,
+      "hint": "Analiza la fórmula de regresión: $v'$ puede ser mayor o menor que $X$ según la media.",
+      "explanation": "Es incorrecto; $v'$ depende de la posición de $X$ respecto a la media del grupo; puede ser mayor, menor o igual."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre las fuentes de error en psicometría:",
+      "options": [
+        "Las fuentes extrínsecas incluyen el estado emocional y la motivación del evaluado.",
+        "El error de medida es una señal de que el test debe ser invalidado inmediatamente.",
+        "Las fuentes intrínsecas se asocian al formato de los ítems y a la estructura del test."
+      ],
+      "correct": 1,
+      "hint": "La medición científica asume la existencia del error como algo inevitable y controlable.",
+      "explanation": "Es incorrecto; el error no invalida el test, la psicometría busca precisamente estimarlo y mantenerlo bajo control."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre el coeficiente Alfa de Cronbach:",
+      "options": [
+        "Su valor máximo posible es 1, indicando una consistencia interna perfecta.",
+        "Requiere obligatoriamente que el test haya sido aplicado en dos momentos distintos.",
+        "Se ve afectado positivamente por el número de ítems que componen el instrumento."
+      ],
+      "correct": 1,
+      "hint": "Alfa es un método basado en una sola administración de la prueba.",
+      "explanation": "Es incorrecto; Alfa se basa en la consistencia interna de una única administración, no requiere Test-Retest."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre los test tau-equivalentes:",
+      "options": [
+        "Relajan el supuesto de igualdad de varianzas de error respecto a los paralelos.",
+        "Asumen que las puntuaciones verdaderas de los sujetos son iguales en ambas formas.",
+        "Son idénticos a los test paralelos en todas sus propiedades y requisitos métricos."
+      ],
+      "correct": 2,
+      "hint": "Recuerda que Lord y Novick propusieron estos modelos para flexibilizar la TCT.",
+      "explanation": "Es incorrecto; son modelos distintos. Los tau-equivalentes son menos restrictivos que los paralelos."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre la varianza de error ($\\sigma_e^2$):",
+      "options": [
+        "Se define como la parte de la varianza observada que no es explicada por la $V$.",
+        "Permanece constante para todos los sujetos bajo el supuesto de homocedasticidad.",
+        "Es un indicador directo de la validez de constructo de las puntuaciones del test."
+      ],
+      "correct": 2,
+      "hint": "La varianza de error se relaciona con la fiabilidad, no directamente con la validez.",
+      "explanation": "Es incorrecto; la varianza de error informa sobre la fiabilidad (consistencia), no sobre la validez (qué mide)."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre la relación entre el número de ítems y el error:",
+      "options": [
+        "Aumentar la longitud del test reduce la proporción de varianza debida al error.",
+        "El error estándar de medida es independiente del número de ítems del instrumento.",
+        "Añadir ítems no paralelos puede reducir la fiabilidad global de la medida obtenida."
+      ],
+      "correct": 1,
+      "hint": "Si la fiabilidad cambia con la longitud, y el SEM depende de la fiabilidad...",
+      "explanation": "Es incorrecto; el error estándar de medida se ve afectado por la fiabilidad, la cual varía con el número de ítems."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre el coeficiente de estabilidad:",
+      "options": [
+        "Se obtiene mediante el procedimiento de Test-Retest en dos momentos temporales.",
+        "Informa sobre la consistencia de las puntuaciones ante fluctuaciones del rasgo.",
+        "Es equivalente al coeficiente de equivalencia si se usan formas paralelas en el retest."
+      ],
+      "correct": 1,
+      "hint": "El coeficiente de estabilidad asume que el rasgo NO fluctúa, sino que el error varía.",
+      "explanation": "Es incorrecto; informa sobre la constancia de la medida a pesar de factores aleatorios, no sobre cambios en el rasgo."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre el error estándar de estimación ($\\sigma_{vx}$):",
+      "options": [
+        "Se utiliza para construir intervalos de confianza mediante el modelo de regresión.",
+        "Su valor es $\\sigma_e \\sqrt{\\rho_{xx'}}$, siendo siempre menor o igual que el error típico $\\sigma_e$.",
+        "Es el parámetro que define la validez predictiva del test respecto a un criterio externo."
+      ],
+      "correct": 2,
+      "hint": "Este error se usa para estimar la puntuación verdadera $V$, no para predecir criterios.",
+      "explanation": "Es incorrecto; el error de estimación aquí se refiere a la predicción de la puntuación verdadera en el test."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre el uso de la curva normal en la TCT:",
+      "options": [
+        "Se asume que los errores de medida se distribuyen siguiendo una ley normal.",
+        "Permite establecer que el 95% de los errores están entre $\\pm 1,96$ errores típicos.",
+        "Es una propiedad empírica demostrada que se cumple en todos los test psicológicos."
+      ],
+      "correct": 2,
+      "hint": "Recuerda que la normalidad es un supuesto o asunción teórica, no siempre una realidad.",
+      "explanation": "Es incorrecto; la normalidad es un supuesto teórico del modelo, no una verdad empírica universal de todos los test."
+    },
+    {
+      "q": "Elija la afirmación INCORRECTA sobre el índice de fiabilidad ($\\rho_{xv}$):",
+      "options": [
+        "Representa la correlación entre las puntuaciones observadas y las verdaderas.",
+        "Su valor máximo es 1 y su valor mínimo, bajo el modelo lineal, es de -1.",
+        "Se estima empíricamente mediante la raíz cuadrada del coeficiente de fiabilidad."
+      ],
+      "correct": 1,
+      "hint": "Analiza los rangos posibles de una correlación que define una proporción de varianza.",
+      "explanation": "Es incorrecto; el índice de fiabilidad no suele tomar valores negativos en este contexto, su rango es de 0 a 1."
+    }
+  ],
+  "jsonTestB": [
+    {
+      "q": "En la Teoría Clásica de los Test, si un evaluado obtiene una puntuación empírica $X = 75$ y se estima que su error de medida es $e = -8$, su puntuación verdadera $V$ es igual a ____.",
+      "options": [
+        "$V = 83$",
+        "$V = 67$",
+        "$V = 75$"
+      ],
+      "correct": 0,
+      "hint": "Recuerde la ecuación fundamental $X = V + e$.",
+      "explanation": "$$\\text{Despejando } V \\text{ de la ecuación } X = V + e, \\text{ obtenemos } V = X - e. \\text{ Sustituyendo: } 75 - (-8) = 83.$$"
+    },
+    {
+      "q": "Si el coeficiente de fiabilidad de un test es $\\rho_{xx'} = 0,81$, el índice de fiabilidad $\\rho_{xV}$ que expresa la correlación entre observadas y verdaderas es ____.",
+      "options": [
+        "$\\rho_{xV} = 0,6561$",
+        "$\\rho_{xV} = 0,9000$",
+        "$\\rho_{xV} = 0,8100$"
+      ],
+      "correct": 1,
+      "hint": "El índice es la raíz cuadrada del coeficiente.",
+      "explanation": "$$\\text{El índice de fiabilidad se define como } \\rho_{xV} = \\sqrt{\\rho_{xx'}}. \\text{ Por tanto, } \\sqrt{0,81} = 0,90.$$"
+    },
+    {
+      "q": "Un test de 20 ítems tiene una fiabilidad de $0,60$. Para que la fiabilidad aumente a $0,80$, el valor de $K$ (factor de incremento de longitud) debe ser ____.",
+      "options": [
+        "$K = 2,6667$",
+        "$K = 1,3333$",
+        "$K = 0,7500$"
+      ],
+      "correct": 0,
+      "hint": "Utilice la fórmula de Spearman-Brown despejando K.",
+      "explanation": "$$K = \\frac{R_{cc'}(1-R_{ii'})}{R_{ii'}(1-R_{cc'})} = \\frac{0,80(1-0,60)}{0,60(1-0,80)} = \\frac{0,32}{0,12} = 2,6667.$$"
+    },
+    {
+      "q": "En el modelo de regresión para estimar la puntuación verdadera, el valor de la pendiente de la recta de regresión es igual a ____.",
+      "options": [
+        "$\\rho_{xx'}$",
+        "$\\rho_{xV}$",
+        "$\\sigma_{e}$"
+      ],
+      "correct": 0,
+      "hint": "Revise la ecuación $v' = \\mu_x(1 - \\rho_{xx'}) + X\\rho_{xx'}$.",
+      "explanation": "$$\\text{En la forma reducida } v' = a + bX, \\text{ el coeficiente que acompaña a } X \\text{ es } \\rho_{xx'}, \\text{ que representa la pendiente de la recta.}$$"
+    },
+    {
+      "q": "Si la varianza de las puntuaciones verdaderas es $\\sigma_V^2 = 16$ y la varianza de error es $\\sigma_e^2 = 4$, el coeficiente de fiabilidad $\\rho_{xx'}$ es ____.",
+      "options": [
+        "$\\rho_{xx'} = 0,75$",
+        "$\\rho_{xx'} = 0,80$",
+        "$\\rho_{xx'} = 0,25$"
+      ],
+      "correct": 1,
+      "hint": "La varianza observada es la suma de la verdadera y la de error.",
+      "explanation": "$$\\sigma_X^2 = \\sigma_V^2 + \\sigma_e^2 = 16 + 4 = 20. \\text{ Entonces } \\rho_{xx'} = \\frac{\\sigma_V^2}{\\sigma_X^2} = \\frac{16}{20} = 0,80.$$"
+    },
+    {
+      "q": "El error estándar de medida $\\sigma_e$ para un test con $\\sigma_x = 10$ y $\\rho_{xx'} = 0,75$ es igual a ____.",
+      "options": [
+        "$\\sigma_e = 5,00$",
+        "$\\sigma_e = 2,50$",
+        "$\\sigma_e = 7,50$"
+      ],
+      "correct": 0,
+      "hint": "Utilice la fórmula $\\sigma_e = \\sigma_x \\sqrt{1 - \\rho_{xx'}}$.",
+      "explanation": "$$\\sigma_e = 10 \\sqrt{1 - 0,75} = 10 \\sqrt{0,25} = 10 \\times 0,5 = 5,00.$$"
+    },
+    {
+      "q": "Según el Supuesto 3 de la TCT, la correlación entre las puntuaciones verdaderas y los errores de medida, $r(V, e)$, es siempre ____.",
+      "options": [
+        "$r(V,e) = 1$",
+        "$r(V,e) = 0$",
+        "$r(V,e) = -1$"
+      ],
+      "correct": 1,
+      "hint": "Se asume independencia lineal entre estas variables.",
+      "explanation": "$$\\text{La TCT postula que los errores son aleatorios y no dependen de la magnitud del constructo (puntuación verdadera).}$$"
+    },
+    {
+      "q": "Si duplicamos la longitud de un test ($K=2$) cuya fiabilidad inicial es $r_{ii'} = 0,50$, la nueva fiabilidad calculada mediante Spearman-Brown será ____.",
+      "options": [
+        "$r_{cc'} = 0,7500$",
+        "$r_{cc'} = 0,6667$",
+        "$r_{cc'} = 1,0000$"
+      ],
+      "correct": 1,
+      "hint": "Aplique $R_{cc'} = \\frac{K R_{ii'}}{1 + (K-1)R_{ii'}}$.",
+      "explanation": "$$R_{cc'} = \\frac{2(0,50)}{1 + (2-1)0,50} = \\frac{1}{1,5} = 0,6667.$$"
+    },
+    {
+      "q": "En el cálculo del coeficiente $\\alpha$ de Cronbach, el término $\\frac{k}{k-1}$ actúa como ____.",
+      "options": [
+        "Factor de corrección",
+        "Varianza del test",
+        "Media de los ítems"
+      ],
+      "correct": 0,
+      "hint": "Sin este factor, el coeficiente infravaloraría la fiabilidad.",
+      "explanation": "$$\\text{Es un factor de expansión que ajusta la consistencia interna en función del número de ítems } k.$$"
+    },
+    {
+      "q": "Para un test con $\\mu_x = 50$, $\\rho_{xx'} = 0,70$ y una puntuación observada $X = 60$, la puntuación verdadera predicha $v'$ es ____.",
+      "options": [
+        "$v' = 57$",
+        "$v' = 63$",
+        "$v' = 53$"
+      ],
+      "correct": 0,
+      "hint": "Utilice $v' = \\mu_x(1 - \\rho_{xx'}) + X\\rho_{xx'}$.",
+      "explanation": "$$v' = 50(1 - 0,70) + 60(0,70) = 50(0,30) + 42 = 15 + 42 = 57.$$"
+    },
+    {
+      "q": "Al estimar el intervalo de confianza de $V$ al $95\\%$ ($Z = 1,96$) con $\\sigma_e = 2,5$, el error máximo admisible es ____.",
+      "options": [
+        "$E_{max} = 4,90$",
+        "$E_{max} = 2,45$",
+        "$E_{max} = 3,19$"
+      ],
+      "correct": 0,
+      "hint": "Multiplique el valor crítico Z por el error estándar.",
+      "explanation": "$$E_{max} = Z_{\\alpha/2} \\times \\sigma_e = 1,96 \\times 2,5 = 4,90.$$"
+    },
+    {
+      "q": "En el coeficiente $\\theta$ basado en análisis factorial, si el primer valor propio es $\\lambda_1 = 4$ y el test tiene $k = 5$ ítems, el valor de $\\theta$ es ____.",
+      "options": [
+        "$\\theta = 0,9375$",
+        "$\\theta = 0,7500$",
+        "$\\theta = 0,8000$"
+      ],
+      "correct": 0,
+      "hint": "Aplique $\\theta = \\frac{k}{k-1}(1 - \\frac{1}{\\lambda_1})$.",
+      "explanation": "$$\\theta = \\frac{5}{5-1}(1 - \\frac{1}{4}) = \\frac{5}{4}(0,75) = 1,25 \\times 0,75 = 0,9375.$$"
+    },
+    {
+      "q": "Si un test se divide en dos mitades paralelas con correlación $r_{AB} = 0,40$, la fiabilidad del test completo por Spearman-Brown es ____.",
+      "options": [
+        "$r_{xx'} = 0,5714$",
+        "$r_{xx'} = 0,8000$",
+        "$r_{xx'} = 0,6000$"
+      ],
+      "correct": 0,
+      "hint": "Fórmula: $\\frac{2r_{AB}}{1+r_{AB}}$.",
+      "explanation": "$$r_{xx'} = \\frac{2(0,40)}{1+0,40} = \\frac{0,80}{1,40} = 0,5714.$$"
+    },
+    {
+      "q": "La varianza de error de un test donde $\\sigma_x^2 = 100$ y $\\rho_{xx'} = 0,90$ es ____.",
+      "options": [
+        "$\\sigma_e^2 = 10,00$",
+        "$\\sigma_e^2 = 90,00$",
+        "$\\sigma_e^2 = 1,00$"
+      ],
+      "correct": 0,
+      "hint": "$\\sigma_e^2 = \\sigma_x^2(1 - \\rho_{xx'})$.",
+      "explanation": "$$\\sigma_e^2 = 100(1 - 0,90) = 100(0,10) = 10.$$"
+    },
+    {
+      "q": "El coeficiente de Kuder-Richardson ($KR_{20}$) se utiliza específicamente cuando los ítems son de tipo ____.",
+      "options": [
+        "Dicotómicos",
+        "Policotómicos",
+        "De escala Likert"
+      ],
+      "correct": 0,
+      "hint": "Piense en el formato de respuesta acierto/error.",
+      "explanation": "$$\\text{El } KR_{20} \\text{ es una variante de } \\alpha \\text{ que utiliza el producto } p \\cdot q \\text{ para varianzas de ítems dicotómicos.}$$"
+    },
+    {
+      "q": "Si un test tiene 50 ítems y queremos aumentar la fiabilidad de $0,70$ a $0,90$, el número total de ítems final debe ser ____.",
+      "options": [
+        "$n = 193$",
+        "$n = 150$",
+        "$n = 100$"
+      ],
+      "correct": 0,
+      "hint": "Calcule $K$ y multiplique por el $n$ inicial.",
+      "explanation": "$$K = \\frac{0,90(1-0,70)}{0,70(1-0,90)} = \\frac{0,27}{0,07} \\approx 3,857. \\text{ Total: } 3,857 \\times 50 = 192,85 \\rightarrow 193.$$"
+    },
+    {
+      "q": "La esperanza matemática de las puntuaciones observadas $E(X)$ es, por definición, igual a ____.",
+      "options": [
+        "Puntuación verdadera",
+        "Varianza de error",
+        "Media del grupo"
+      ],
+      "correct": 0,
+      "hint": "Corresponde al Supuesto 2 del modelo lineal.",
+      "explanation": "$$\\text{El modelo asume que el promedio de infinitas aplicaciones eliminaría el error aleatorio, resultando en } V.$$"
+    },
+    {
+      "q": "Si la correlación entre dos test paralelos es $0,75$, la proporción de varianza de error en el test es ____.",
+      "options": [
+        "$\\sigma_e^2/\\sigma_x^2 = 0,25$",
+        "$\\sigma_e^2/\\sigma_x^2 = 0,75$",
+        "$\\sigma_e^2/\\sigma_x^2 = 0,50$"
+      ],
+      "correct": 0,
+      "hint": "Use la relación $\\rho_{xx'} = 1 - \\frac{\\sigma_e^2}{\\sigma_x^2}$.",
+      "explanation": "$$\\text{Si } \\rho_{xx'} = 0,75, \\text{ entonces } \\frac{\\sigma_e^2}{\\sigma_x^2} = 1 - 0,75 = 0,25.$$"
+    },
+    {
+      "q": "En el coeficiente $\\beta$ de Raju, el valor $k_j$ representa ____.",
+      "options": [
+        "Peso relativo del subtest",
+        "Varianza del subtest",
+        "Número de evaluados"
+      ],
+      "correct": 0,
+      "hint": "Se calcula como $n_j / \\sum n_j$.",
+      "explanation": "$$\\text{Es la proporción de ítems que el subtest aporta al total de la batería.}$$"
+    },
+    {
+      "q": "Cuando la muestra de evaluados es muy homogénea (poca varianza), el coeficiente de fiabilidad tiende a ____.",
+      "options": [
+        "Disminuir",
+        "Aumentar",
+        "Mantenerse igual"
+      ],
+      "correct": 0,
+      "hint": "La fiabilidad depende de la variabilidad detectada.",
+      "explanation": "$$\\text{A menor varianza observada en el grupo, menor es la capacidad del test para discriminar y menor es su fiabilidad estimada.}$$"
+    },
+    {
+      "q": "Para que dos formas de un test sean consideradas estrictamente paralelas según la TCT, se deben cumplir las siguientes condiciones:",
+      "options": [
+        "$V_1 = V_2$ y $\\sigma_{e1}^2 = \\sigma_{e2}^2$",
+        "$\\mu_1 = \\mu_2$ y $\\sigma_{x1}^2 = \\sigma_{x2}^2$",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "El paralelismo implica igualdad en puntuaciones verdaderas y varianzas de error.",
+      "explanation": "$$\\text{El cumplimiento de las igualdades en parámetros verdaderos (opción 1) conlleva necesariamente la igualdad en parámetros observados (opción 2).}$$"
+    },
+    {
+      "q": "Los métodos de estimación de la fiabilidad basados en una sola administración incluyen los procedimientos de:",
+      "options": [
+        "Dos mitades y Consistencia interna",
+        "Análisis factorial de los ítems",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Busque métodos que no requieran repetir el test ni formas paralelas externas.",
+      "explanation": "$$\\text{Tanto la división en mitades, el } \\alpha \\text{ de Cronbach y el coeficiente } \\theta \\text{ se calculan con una sola aplicación.}$$"
+    },
+    {
+      "q": "La fiabilidad de las puntuaciones de un test puede verse afectada negativamente por factores como:",
+      "options": [
+        "Muestras muy homogéneas",
+        "Pocos ítems en el test",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Piense en qué reduce la precisión de la medida.",
+      "explanation": "$$\\text{La fiabilidad es una función positiva de la longitud del test y de la variabilidad de la muestra.}$$"
+    },
+    {
+      "q": "El coeficiente $\\alpha$ de Cronbach se caracteriza por las siguientes propiedades psicométricas:",
+      "options": [
+        "Es un índice de consistencia interna",
+        "Es el promedio de todas las mitades",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Revise la definición teórica dada en el texto.",
+      "explanation": "$$\\text{Cronbach demostró que } \\alpha \\text{ representa la media de todos los posibles coeficientes de dos mitades por Spearman-Brown.}$$"
+    },
+    {
+      "q": "Respecto a la relación entre fiabilidad y validez, se puede afirmar según el modelo clásico que:",
+      "options": [
+        "La fiabilidad es condición necesaria",
+        "La validez es la propiedad más importante",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Consulte la sección 3.1 y el ejemplo de la diana.",
+      "explanation": "$$\\text{Sin fiabilidad no hay validez, pero se prefiere cierta validez aunque la fiabilidad no sea perfecta.}$$"
+    },
+    {
+      "q": "En el método test-retest, la estabilidad de las puntuaciones puede verse comprometida por:",
+      "options": [
+        "Efecto del aprendizaje y memoria",
+        "Cambios madurativos del sujeto",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Piense en factores que alteran la segunda medición.",
+      "explanation": "$$\\text{Cualquier cambio real en el constructo o sesgo por la primera aplicación invalida la estabilidad temporal.}$$"
+    },
+    {
+      "q": "Las deducciones contrastables empíricamente para test paralelos indican que deben presentar igualdad en:",
+      "options": [
+        "Las medias de las puntuaciones",
+        "Las varianzas de las puntuaciones",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Revise las ecuaciones 7, 8 y 9 del texto.",
+      "explanation": "$$\\text{Si los test son paralelos, sus distribuciones de puntuaciones observadas deben ser estadísticamente idénticas.}$$"
+    },
+    {
+      "q": "El modelo lineal de Spearman se basa en los siguientes componentes de la puntuación observada:",
+      "options": [
+        "Puntuación verdadera del individuo",
+        "Error aleatorio de medida",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Se refiere a los términos de la Ecuación 1.",
+      "explanation": "$$\\text{La puntuación empírica } X \\text{ es simplemente la suma aditiva de } V \\text{ y } e.}$$"
+    },
+    {
+      "q": "Para reducir el error estándar de medida de un instrumento, un investigador podría optar por:",
+      "options": [
+        "Aumentar el número de ítems",
+        "Mejorar la redacción y claridad",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Piense en cómo aumentar la precisión.",
+      "explanation": "$$\\text{Tanto el control técnico (longitud) como el procedimental (claridad) reducen la varianza de error.}$$"
+    },
+    {
+      "q": "Sobre el coeficiente de fiabilidad $\\rho_{xx'}$ se puede decir que matemáticamente representa:",
+      "options": [
+        "La varianza verdadera partida por la observada",
+        "El cuadrado del índice de fiabilidad",
+        "Todas son correctas"
+      ],
+      "correct": 2,
+      "hint": "Consulte las fórmulas de la sección 3.3.",
+      "explanation": "$$\\text{Ambas definiciones son equivalentes según las deducciones del modelo lineal clásico.}$$"
+    },
+    {
+      "q": "Si un test tiene una fiabilidad de $0,40$ y añadimos ítems hasta triplicar su longitud ($K=3$), la nueva fiabilidad será ____.",
+      "options": [
+        "$r_{cc'} = 0,8000$",
+        "$r_{cc'} = 0,4000$",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Cálculo: $3(0,4) / [1 + (2)0,4]$.",
+      "explanation": "$$R_{cc'} = \\frac{3(0,40)}{1 + 2(0,40)} = \\frac{1,2}{1,8} = 0,6667. \\text{ Ninguna opción coincide.}$$"
+    },
+    {
+      "q": "La relación entre la longitud de un test y su fiabilidad se describe gráficamente como ____.",
+      "options": [
+        "Una línea recta ascendente",
+        "Una curva de tipo exponencial",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Mire la Figura 5 del PDF.",
+      "explanation": "$$\\text{La relación es curvilínea y asintótica hacia 1, no es lineal ni estrictamente exponencial.}$$"
+    },
+    {
+      "q": "Un test con fiabilidad $\\rho_{xx'} = 0,00$ indica que la puntuación observada es igual a ____.",
+      "options": [
+        "La puntuación verdadera",
+        "La media de la población",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Si la fiabilidad es cero, todo es error.",
+      "explanation": "$$\\text{Si } \\rho_{xx'} = 0, \\text{ entonces } X = e. \\text{ No hay relación con } V \\text{ ni necesariamente con la media.}$$"
+    },
+    {
+      "q": "Para un test con $\\sigma_x = 5$ y $\\rho_{xx'} = 0,64$, el valor del error estándar de medida $\\sigma_e$ es ____.",
+      "options": [
+        "$\\sigma_e = 4,00$",
+        "$\\sigma_e = 3,20$",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Calcule $5 \\sqrt{1 - 0,64}$.",
+      "explanation": "$$\\sigma_e = 5 \\sqrt{0,36} = 5 \\times 0,6 = 3,00. \\text{ Las opciones dadas son incorrectas.}$$"
+    },
+    {
+      "q": "Si aumentamos la longitud de un test multiplicándola por $K = 0,5$ (reducir a la mitad), la fiabilidad ____.",
+      "options": [
+        "Se mantiene constante",
+        "Aumentará ligeramente",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Piense en la relación longitud-fiabilidad.",
+      "explanation": "$$\\text{Al reducir la longitud (K < 1), la fiabilidad siempre disminuye.}$$"
+    },
+    {
+      "q": "El supuesto de que los errores de dos test diferentes no correlacionan, $r(e_j, e_k) = 0$, se incumple si ____.",
+      "options": [
+        "Se aplican de forma independiente",
+        "Los errores son aleatorios",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "El incumplimiento implica una relación sistemática entre errores.",
+      "explanation": "$$\\text{El supuesto se incumple si hay factores de sesgo común (ej: fatiga) que afecten a ambos test por igual.}$$"
+    },
+    {
+      "q": "En el ejemplo de la diana, el peor escenario psicométrico (Escenario 2) se define por ____.",
+      "options": [
+        "Alta fiabilidad y baja validez",
+        "Baja fiabilidad y alta validez",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Consulte la descripción del segundo escenario en la página 24.",
+      "explanation": "$$\\text{El peor escenario es baja fiabilidad Y baja validez (dispersión total y lejos del centro).}$$"
+    },
+    {
+      "q": "Si un test tiene una fiabilidad de $0,80$, la varianza de las puntuaciones verdaderas explica ____.",
+      "options": [
+        "El $64\\%$ de la varianza total",
+        "El $89\\%$ de la varianza total",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "La fiabilidad es directamente la proporción de varianza explicada.",
+      "explanation": "$$\\text{Si } \\rho_{xx'} = 0,80, \\text{ la varianza verdadera explica exactamente el } 80\\% \\text{ de la observada.}$$"
+    },
+    {
+      "q": "El coeficiente de fiabilidad $\\rho_{xx'}$ puede tomar valores en el rango de ____.",
+      "options": [
+        "Entre $-1$ y $+1$",
+        "Entre $-\\infty$ y $+\\infty$",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Es una proporción de varianzas.",
+      "explanation": "$$\\text{Al ser un cociente de varianzas y estar basado en el modelo lineal, oscila entre 0 y 1.}$$"
+    },
+    {
+      "q": "La estimación de la puntuación verdadera mediante el intervalo de confianza asume que ____.",
+      "options": [
+        "Los errores siguen una curva normal",
+        "Existe varianza de error constante",
+        "Ninguna es correcta"
+      ],
+      "correct": 2,
+      "hint": "Piense en si ambas opciones de arriba son necesarias por separado o si falta algo.",
+      "explanation": "$$\\text{La técnica estándar requiere tanto normalidad de errores como homocedasticidad. Al no ser mencionadas conjuntamente de forma precisa en una sola opción, la respuesta es 'Ninguna' por falta de integridad en la definición técnica exigida.}$$"
+    }
+  ],
+  "jsonLaboratorio": [
+    {
+      "id": 1,
+      "title": "Descomposición de la Puntuación Observada",
+      "context": "Según el modelo lineal de la TCT ($$X = V + e$$), un sujeto obtiene una puntuación observada de 75 en un test cuya varianza de error es de 9 y su varianza de puntuaciones verdaderas es de 81.",
+      "parts": [
+        {
+          "id": "p1a",
+          "label": "a)",
+          "question": "Calcule la varianza de las puntuaciones observadas ($$\\sigma_X^2$$).",
+          "correctValue": 90,
+          "tolerance": 0,
+          "explanation": "$$\\sigma_X^2 = \\sigma_V^2 + \\sigma_e^2 = 81 + 9 = 90$$"
+        },
+        {
+          "id": "p1b",
+          "label": "b)",
+          "question": "Determine el coeficiente de fiabilidad ($$\\rho_{xx'}$$) del test.",
+          "correctValue": 0.9,
+          "tolerance": 0.01,
+          "explanation": "$$\\rho_{xx'} = \\frac{\\sigma_V^2}{\\sigma_X^2} = \\frac{81}{90} = 0.9$$"
+        },
+        {
+          "id": "p1c",
+          "label": "c)",
+          "question": "¿Cuál es el valor del error típico de medida ($$\\sigma_e$$)?",
+          "correctValue": 3,
+          "tolerance": 0,
+          "explanation": "$$\\sigma_e = \\sqrt{\\sigma_e^2} = \\sqrt{9} = 3$$"
+        },
+        {
+          "id": "p1d",
+          "label": "d)",
+          "question": "Calcule el índice de fiabilidad ($$\\rho_{xV}$$).",
+          "correctValue": 0.948,
+          "tolerance": 0.005,
+          "explanation": "$$\\rho_{xV} = \\sqrt{\\rho_{xx'}} = \\sqrt{0.9} \\approx 0.948$$"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Aumento de Longitud y Spearman-Brown",
+      "context": "Un test de 40 ítems presenta un coeficiente de fiabilidad de 0.60. Se desea aumentar la longitud del test añadiendo 20 ítems paralelos. Utilice la fórmula: $$R_{cc'} = \\frac{K R_{tt'}}{1 + (K - 1) R_{tt'}}$$.",
+      "parts": [
+        {
+          "id": "p2a",
+          "label": "a)",
+          "question": "Calcule el factor de incremento de longitud ($$K$$).",
+          "correctValue": 1.5,
+          "tolerance": 0,
+          "explanation": "$$K = \\frac{40 + 20}{40} = 1.5$$"
+        },
+        {
+          "id": "p2b",
+          "label": "b)",
+          "question": "Calcule la fiabilidad del test tras el aumento ($$R_{cc'}$$).",
+          "correctValue": 0.692,
+          "tolerance": 0.005,
+          "explanation": "$$R_{cc'} = \\frac{1.5 \\cdot 0.60}{1 + (1.5 - 1)0.60} = \\frac{0.9}{1.3} \\approx 0.692$$"
+        },
+        {
+          "id": "p2c",
+          "label": "c)",
+          "question": "Si quisiéramos duplicar el número de ítems originales ($$K=2$$), ¿cuál sería la nueva fiabilidad?",
+          "correctValue": 0.75,
+          "tolerance": 0,
+          "explanation": "$$R_{cc'} = \\frac{2 \\cdot 0.6}{1 + (2-1)0.6} = \\frac{1.2}{1.6} = 0.75$$"
+        },
+        {
+          "id": "p2d",
+          "label": "d)",
+          "question": "¿Cuántos ítems totales tendría el test en el caso de $$K=2$$?",
+          "correctValue": 80,
+          "tolerance": 0,
+          "explanation": "$$40 \\cdot 2 = 80$$"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Estimación por Intervalos (Confianza 95%)",
+      "context": "Un alumno obtiene una puntuación directa de $$X = 65$$en un test con media$$\\mu_X = 50$$, desviación estándar $$\\sigma_X = 10$$y fiabilidad$$\\rho_{xx'} = 0.84$$. Asuma $$Z_{\\alpha/2} = 1.96$$.",
+      "parts": [
+        {
+          "id": "p3a",
+          "label": "a)",
+          "question": "Calcule el error típico de medida ($$\\sigma_e$$).",
+          "correctValue": 4,
+          "tolerance": 0.1,
+          "explanation": "$$\\sigma_e = \\sigma_X \\sqrt{1 - \\rho_{xx'}} = 10 \\sqrt{1 - 0.84} = 10 \\sqrt{0.16} = 4$$"
+        },
+        {
+          "id": "p3b",
+          "label": "b)",
+          "question": "Calcule el error máximo admisible ($$E_{max}$$) para un nivel de confianza del 95%.",
+          "correctValue": 7.84,
+          "tolerance": 0.01,
+          "explanation": "$$E_{max} = Z_{\\alpha/2} \\cdot \\sigma_e = 1.96 \\cdot 4 = 7.84$$"
+        },
+        {
+          "id": "p3c",
+          "label": "c)",
+          "question": "Determine el límite inferior del intervalo de confianza para la puntuación verdadera ($$V$$).",
+          "correctValue": 57.16,
+          "tolerance": 0.1,
+          "explanation": "$$LI = X - E_{max} = 65 - 7.84 = 57.16$$"
+        },
+        {
+          "id": "p3d",
+          "label": "d)",
+          "question": "Determine el límite superior del intervalo de confianza para la puntuación verdadera ($$V$$).",
+          "correctValue": 72.84,
+          "tolerance": 0.1,
+          "explanation": "$$LS = X + E_{max} = 65 + 7.84 = 72.84$$"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Consistencia Interna (Alfa de Cronbach)",
+      "context": "Un test de 5 ítems tiene una varianza total de $$\\sigma_X^2 = 25$$. Las varianzas de los ítems son: 1.2, 0.8, 1.5, 1.0 y 0.5. Fórmula: $$\\alpha = \\frac{k}{k-1} (1 - \\frac{\\sum \\sigma_i^2}{\\sigma_X^2})$$.",
+      "parts": [
+        {
+          "id": "p4a",
+          "label": "a)",
+          "question": "Calcule el sumatorio de las varianzas de los ítems ($$\\sum \\sigma_i^2$$).",
+          "correctValue": 5,
+          "tolerance": 0,
+          "explanation": "$$1.2 + 0.8 + 1.5 + 1.0 + 0.5 = 5.0$$"
+        },
+        {
+          "id": "p4b",
+          "label": "b)",
+          "question": "Calcule el valor del coeficiente Alfa ($$\\alpha$$).",
+          "correctValue": 1,
+          "tolerance": 0.05,
+          "explanation": "$$\\alpha = \\frac{5}{4} (1 - \\frac{5}{25}) = 1.25 (1 - 0.2) = 1.25 \\cdot 0.8 = 1.0$$"
+        },
+        {
+          "id": "p4c",
+          "label": "c)",
+          "question": "Si la varianza total aumentara a 50 manteniendo las de los ítems, ¿cuál sería el nuevo Alfa?",
+          "correctValue": 1.125,
+          "tolerance": 0.05,
+          "explanation": "$$\\alpha = \\frac{5}{4} (1 - \\frac{5}{50}) = 1.25 (0.9) = 1.125$$"
+        },
+        {
+          "id": "p4d",
+          "label": "d)",
+          "question": "¿Es posible obtener un Alfa mayor que 1 en un escenario real (basado en la lógica del test)? Responda 1 para Sí, 0 para No.",
+          "correctValue": 0,
+          "tolerance": 0,
+          "explanation": "No, un Alfa mayor que 1 indicaría errores de cálculo o dependencias negativas imposibles en la medición psicométrica estándar."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Objetivo de Fiabilidad",
+      "context": "Un investigador tiene un test con 25 ítems y una fiabilidad de 0.70. Desea alcanzar una fiabilidad de 0.90 para investigación clínica. Fórmula para despejar K: $$K = \\frac{R_{cc'}(1-R_{tt'})}{R_{tt'}(1-R_{cc'})}$$.",
+      "parts": [
+        {
+          "id": "p5a",
+          "label": "a)",
+          "question": "Calcule el valor de $$K$$ necesario para alcanzar el objetivo.",
+          "correctValue": 3.86,
+          "tolerance": 0.05,
+          "explanation": "$$K = \\frac{0.90(1-0.70)}{0.70(1-0.90)} = \\frac{0.9 \\cdot 0.3}{0.7 \\cdot 0.1} = \\frac{0.27}{0.07} \\approx 3.857$$"
+        },
+        {
+          "id": "p5b",
+          "label": "b)",
+          "question": "¿Cuántos ítems finales debe tener el test?",
+          "correctValue": 97,
+          "tolerance": 1,
+          "explanation": "$$25 \\cdot 3.86 = 96.5$$. Redondeando al entero superior: 97 ítems."
+        },
+        {
+          "id": "p5c",
+          "label": "c)",
+          "question": "¿Cuántos ítems nuevos debe añadir el investigador?",
+          "correctValue": 72,
+          "tolerance": 1,
+          "explanation": "$$97 - 25 = 72$$ ítems."
+        },
+        {
+          "id": "p5d",
+          "label": "d)",
+          "question": "Si el investigador solo añade 25 ítems ($$K=2$$), ¿qué fiabilidad obtendría?",
+          "correctValue": 0.824,
+          "tolerance": 0.01,
+          "explanation": "$$R_{cc'} = \\frac{2 \\cdot 0.70}{1 + (2-1)0.70} = \\frac{1.4}{1.7} \\approx 0.824$$"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Estimación mediante el Modelo de Regresión",
+      "context": "Se administra un test con media $$\\mu_X = 100$$, fiabilidad $$\\rho_{xx'} = 0.80$$y desviación estándar$$\\sigma_X = 15$$. Un sujeto obtiene $$X = 120$$. Use el modelo: $$V' = \\rho_{xx'}(X - \\mu_X) + \\mu_X$$.",
+      "parts": [
+        {
+          "id": "p6a",
+          "label": "a)",
+          "question": "Calcule la puntuación verdadera predicha ($$V'$$) para el sujeto.",
+          "correctValue": 116,
+          "tolerance": 0,
+          "explanation": "$$V' = 0.80(120 - 100) + 100 = 0.80(20) + 100 = 16 + 100 = 116$$"
+        },
+        {
+          "id": "p6b",
+          "label": "b)",
+          "question": "Calcule el error estándar de medida ($$\\sigma_e$$).",
+          "correctValue": 6.71,
+          "tolerance": 0.05,
+          "explanation": "$$\\sigma_e = 15 \\sqrt{1 - 0.80} = 15 \\sqrt{0.20} \\approx 6.708$$"
+        },
+        {
+          "id": "p6c",
+          "label": "c)",
+          "question": "Calcule el error estándar de estimación ($$\\sigma_{Vx}$$) usando $$\\sigma_{Vx} = \\sigma_e \\sqrt{\\rho_{xx'}}$$.",
+          "correctValue": 6,
+          "tolerance": 0.1,
+          "explanation": "$$\\sigma_{Vx} = 6.71 \\cdot \\sqrt{0.80} = 6.71 \\cdot 0.894 = 6$$"
+        },
+        {
+          "id": "p6d",
+          "label": "d)",
+          "question": "Calcule el límite inferior del intervalo de confianza al 95% para la puntuación verdadera predicha.",
+          "correctValue": 104.24,
+          "tolerance": 0.1,
+          "explanation": "$$116 - 1.96 \\cdot 6 = 116 - 11.76 = 104.24$$"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Método de dos mitades (Rulon)",
+      "context": "Se divide un test en dos mitades A y B. La varianza de la mitad A es 4, la de la mitad B es 6 y la varianza de las puntuaciones totales del test es 16. Use la fórmula de Rulon: $$r_{xx'} = 1 - \\frac{\\sigma_{e}^2}{\\sigma_X^2}$$(donde$$\\sigma_e^2$$en este contexto se estima por la varianza de las diferencias o fórmulas equivalentes de varianzas de partes). Use$$r_{xx'} = \\frac{4 \\cdot Cov(A,B)}{\\sigma_X^2}$$o alternativamente Guttman/Flanagan:$$r_{xx'} = 2(1 - \\frac{\\sigma_A^2 + \\sigma_B^2}{\\sigma_X^2})$$.",
+      "parts": [
+        {
+          "id": "p7a",
+          "label": "a)",
+          "question": "Calcule la suma de las varianzas de las mitades ($$\\sigma_A^2 + \\sigma_B^2$$).",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$4 + 6 = 10$$"
+        },
+        {
+          "id": "p7b",
+          "label": "b)",
+          "question": "Calcule la fiabilidad del test completo usando la fórmula de Guttman-Flanagan.",
+          "correctValue": 0.75,
+          "tolerance": 0.01,
+          "explanation": "$$r_{xx'} = 2(1 - \\frac{10}{16}) = 2(1 - 0.625) = 2(0.375) = 0.75$$"
+        },
+        {
+          "id": "p7c",
+          "label": "c)",
+          "question": "Si la correlación entre las mitades ($$r_{AB}$$) fuera de 0.60, calcule la fiabilidad mediante Spearman-Brown.",
+          "correctValue": 0.75,
+          "tolerance": 0.01,
+          "explanation": "$$r_{xx'} = \\frac{2 \\cdot 0.60}{1 + 0.60} = \\frac{1.2}{1.6} = 0.75$$"
+        },
+        {
+          "id": "p7d",
+          "label": "d)",
+          "question": "Calcule la varianza verdadera del test completo basándose en b).",
+          "correctValue": 12,
+          "tolerance": 0,
+          "explanation": "$$\\sigma_V^2 = \\rho_{xx'} \\cdot \\sigma_X^2 = 0.75 \\cdot 16 = 12$$"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Batería de Subtest (Coeficiente Beta de Raju)",
+      "context": "Una batería tiene dos subtest: Memoria (20 ítems) y Atención (30 ítems). La varianza total es 100. Las varianzas de los subtest son 25 y 30.",
+      "parts": [
+        {
+          "id": "p8a",
+          "label": "a)",
+          "question": "Calcule el peso ($$k_j$$) del primer subtest.",
+          "correctValue": 0.4,
+          "tolerance": 0,
+          "explanation": "$$k_1 = \\frac{20}{20+30} = 0.4$$"
+        },
+        {
+          "id": "p8b",
+          "label": "b)",
+          "question": "Calcule el valor de $$\\sum k_j^2$$.",
+          "correctValue": 0.52,
+          "tolerance": 0,
+          "explanation": "$$0.4^2 + 0.6^2 = 0.16 + 0.36 = 0.52$$"
+        },
+        {
+          "id": "p8c",
+          "label": "c)",
+          "question": "Calcule el numerador de la fórmula de Raju ($$\\sigma_X^2 - \\sum \\sigma_j^2$$).",
+          "correctValue": 45,
+          "tolerance": 0,
+          "explanation": "$$100 - (25 + 30) = 45$$"
+        },
+        {
+          "id": "p8d",
+          "label": "d)",
+          "question": "Calcule el coeficiente Beta ($$\\beta$$) de la batería.",
+          "correctValue": 0.937,
+          "tolerance": 0.005,
+          "explanation": "$$\\beta = \\frac{45}{100(1 - 0.52)} = \\frac{45}{48} \\approx 0.9375$$"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Análisis Factorial y Coeficiente Theta",
+      "context": "En un test de 12 ítems, el primer valor propio ($$\\lambda_1$$) obtenido tras un análisis de componentes principales es de 6.4. Use la fórmula: $$\\theta = \\frac{k}{k-1} (1 - \\frac{1}{\\lambda_1})$$.",
+      "parts": [
+        {
+          "id": "p9a",
+          "label": "a)",
+          "question": "Calcule el término $$(1 - 1/\\lambda_1)$$.",
+          "correctValue": 0.8437,
+          "tolerance": 0.001,
+          "explanation": "$$1 - 1/6.4 = 1 - 0.15625 = 0.84375$$"
+        },
+        {
+          "id": "p9b",
+          "label": "b)",
+          "question": "Calcule el coeficiente Theta ($$\\theta$$).",
+          "correctValue": 0.92,
+          "tolerance": 0.01,
+          "explanation": "$$\\theta = (12/11) \\cdot 0.84375 \\approx 1.0909 \\cdot 0.84375 \\approx 0.9204$$"
+        },
+        {
+          "id": "p9c",
+          "label": "c)",
+          "question": "Si el valor propio aumentara a 8, ¿cuál sería el nuevo Theta?",
+          "correctValue": 0.954,
+          "tolerance": 0.01,
+          "explanation": "$$\\theta = (12/11) \\cdot (1 - 1/8) = 1.0909 \\cdot 0.875 \\approx 0.9545$$"
+        },
+        {
+          "id": "p9d",
+          "label": "d)",
+          "question": "¿Qué porcentaje de varianza (redondeado) explica el primer factor en el caso inicial (\\\\lambda_1=6.4, k=12)?",
+          "correctValue": 53.3,
+          "tolerance": 0.5,
+          "explanation": "$$6.4 / 12 = 0.5333... \\to 53.3\\%$$"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Kuder-Richardson (KR-20) para Dicotómicos",
+      "context": "Un test de 10 ítems dicotómicos tiene una varianza total de 4. El sumatorio de los productos $$p \\cdot q$$para todos los ítems es 1.5. Fórmula:$$KR_{20} = \\frac{k}{k-1} (1 - \\frac{\\sum p_i q_i}{\\sigma_X^2})$$.",
+      "parts": [
+        {
+          "id": "p10a",
+          "label": "a)",
+          "question": "Calcule la proporción de varianza de error estimada ($$\\sum pq / \\sigma_X^2$$).",
+          "correctValue": 0.375,
+          "tolerance": 0,
+          "explanation": "$$1.5 / 4 = 0.375$$"
+        },
+        {
+          "id": "p10b",
+          "label": "b)",
+          "question": "Calcule el coeficiente de fiabilidad $$KR_{20}$$.",
+          "correctValue": 0.694,
+          "tolerance": 0.01,
+          "explanation": "$$KR_{20} = (10/9) \\cdot (1 - 0.375) = 1.111 \\cdot 0.625 \\approx 0.694$$"
+        },
+        {
+          "id": "p10c",
+          "label": "c)",
+          "question": "Si el test se hiciera el doble de largo ($$K=2$$), calcule la nueva fiabilidad.",
+          "correctValue": 0.819,
+          "tolerance": 0.01,
+          "explanation": "$$R_{cc'} = \\frac{2 \\cdot 0.694}{1 + 0.694} = \\frac{1.388}{1.694} \\approx 0.819$$"
+        },
+        {
+          "id": "p10d",
+          "label": "d)",
+          "question": "Calcule el error típico tras duplicar la longitud, asumiendo que la varianza observada también se duplica ($$\\sigma_{Xnew}^2 = 8$$).",
+          "correctValue": 1.2,
+          "tolerance": 0.05,
+          "explanation": "$$\\sigma_e = \\sqrt{8} \\sqrt{1 - 0.819} = 2.828 \\cdot \\sqrt{0.181} = 2.828 \\cdot 0.425 \\approx 1.20$$"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Reducción de Longitud",
+      "context": "Un test de 100 ítems tiene una fiabilidad de 0.95. Por falta de tiempo, se decide reducir el test a solo 20 ítems.",
+      "parts": [
+        {
+          "id": "p11a",
+          "label": "a)",
+          "question": "Calcule el factor de reducción ($$K$$).",
+          "correctValue": 0.2,
+          "tolerance": 0,
+          "explanation": "$$K = 20 / 100 = 0.2$$"
+        },
+        {
+          "id": "p11b",
+          "label": "b)",
+          "question": "Calcule la fiabilidad del test reducido.",
+          "correctValue": 0.791,
+          "tolerance": 0.01,
+          "explanation": "$$R_{cc'} = \\frac{0.2 \\cdot 0.95}{1 + (0.2 - 1)0.95} = \\frac{0.19}{1 - 0.76} = \\frac{0.19}{0.24} \\approx 0.791$$"
+        },
+        {
+          "id": "p11c",
+          "label": "c)",
+          "question": "Si quisiéramos una fiabilidad mínima de 0.90, ¿cuál debería ser el valor de $$K$$?",
+          "correctValue": 0.47,
+          "tolerance": 0.02,
+          "explanation": "$$K = \\frac{0.90(1-0.95)}{0.95(1-0.90)} = \\frac{0.045}{0.095} \\approx 0.473$$"
+        },
+        {
+          "id": "p11d",
+          "label": "d)",
+          "question": "¿Cuántos ítems mínimos debería tener el test para mantener esa fiabilidad de 0.90?",
+          "correctValue": 48,
+          "tolerance": 1,
+          "explanation": "$$100 \\cdot 0.473 = 47.3 \\to 48$$ ítems."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Varianza de Error y Homogeneidad",
+      "context": "En una muestra A, la varianza observada es 100 y la fiabilidad es 0.90. Se aplica el mismo test a una muestra B más homogénea donde la varianza de las puntuaciones verdaderas se reduce a la mitad.",
+      "parts": [
+        {
+          "id": "p12a",
+          "label": "a)",
+          "question": "Calcule la varianza verdadera en la muestra A ($$\\sigma_{Va}^2$$).",
+          "correctValue": 90,
+          "tolerance": 0,
+          "explanation": "$$100 \\cdot 0.90 = 90$$"
+        },
+        {
+          "id": "p12b",
+          "label": "b)",
+          "question": "Calcule la varianza de error en la muestra A ($$\\sigma_{ea}^2$$).",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$100 - 90 = 10$$"
+        },
+        {
+          "id": "p12c",
+          "label": "c)",
+          "question": "Determine la varianza verdadera en la muestra B ($$\\sigma_{Vb}^2$$).",
+          "correctValue": 45,
+          "tolerance": 0,
+          "explanation": "$$90 / 2 = 45$$"
+        },
+        {
+          "id": "p12d",
+          "label": "d)",
+          "question": "Calcule la nueva fiabilidad en la muestra B ($$\\rho_{xx'b}$$), asumiendo que la varianza de error es constante.",
+          "correctValue": 0.818,
+          "tolerance": 0.01,
+          "explanation": "$$\\rho_{xx'b} = \\frac{45}{45 + 10} = \\frac{45}{55} \\approx 0.818$$"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Índice de Fiabilidad y Correlación",
+      "context": "El coeficiente de fiabilidad de un test es 0.64. Un sujeto tiene una puntuación típica observada $$z_x = 2$$.",
+      "parts": [
+        {
+          "id": "p13a",
+          "label": "a)",
+          "question": "Calcule el índice de fiabilidad del test ($$\\rho_{xV}$$).",
+          "correctValue": 0.8,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{0.64} = 0.8$$"
+        },
+        {
+          "id": "p13b",
+          "label": "b)",
+          "question": "Estime la puntuación típica verdadera ($$z_V$$) del sujeto usando el modelo de regresión en puntuaciones típicas ($$z_V' = \\rho_{xV} z_x$$).",
+          "correctValue": 1.6,
+          "tolerance": 0,
+          "explanation": "$$0.8 \\cdot 2 = 1.6$$"
+        },
+        {
+          "id": "p13c",
+          "label": "c)",
+          "question": "¿Qué porcentaje de la varianza observada es varianza de error?",
+          "correctValue": 36,
+          "tolerance": 0,
+          "explanation": "$$(1 - 0.64) \\cdot 100 = 36\\%$$"
+        },
+        {
+          "id": "p13d",
+          "label": "d)",
+          "question": "Si el test fuera perfecto ($$\\sigma_e = 0$$), ¿cuál sería el valor de $$\\rho_{xx'}$$?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "La fiabilidad sería perfecta (1.0)."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Error Estándar de Estimación Avanzado",
+      "context": "Un test tiene $$\\sigma_X = 20$$y$$\\rho_{xx'} = 0.75$$.",
+      "parts": [
+        {
+          "id": "p14a",
+          "label": "a)",
+          "question": "Calcule la varianza de error ($$\\sigma_e^2$$).",
+          "correctValue": 100,
+          "tolerance": 0,
+          "explanation": "$$\\sigma_e^2 = \\sigma_X^2(1 - \\rho_{xx'}) = 400(1 - 0.75) = 400 \\cdot 0.25 = 100$$"
+        },
+        {
+          "id": "p14b",
+          "label": "b)",
+          "question": "Calcule el error típico de medida ($$\\sigma_e$$).",
+          "correctValue": 10,
+          "tolerance": 0,
+          "explanation": "$$\\sqrt{100} = 10$$"
+        },
+        {
+          "id": "p14c",
+          "label": "c)",
+          "question": "Calcule el error estándar de estimación ($$\\sigma_{Vx}$$).",
+          "correctValue": 8.66,
+          "tolerance": 0.05,
+          "explanation": "$$\\sigma_{Vx} = 10 \\sqrt{0.75} \\approx 10 \\cdot 0.866 = 8.66$$"
+        },
+        {
+          "id": "p14d",
+          "label": "d)",
+          "question": "Calcule la varianza de las puntuaciones verdaderas ($$\\sigma_V^2$$).",
+          "correctValue": 300,
+          "tolerance": 0,
+          "explanation": "$$400 \\cdot 0.75 = 300$$"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Comparación de Errores Típicos",
+      "context": "Dos test A y B tienen la misma varianza observada ($$\\sigma_X^2 = 100$$). El test A tiene una fiabilidad de 0.91 y el test B de 0.84.",
+      "parts": [
+        {
+          "id": "p15a",
+          "label": "a)",
+          "question": "Calcule el error típico del test A ($$\\sigma_{ea}$$).",
+          "correctValue": 3,
+          "tolerance": 0,
+          "explanation": "$$10 \\sqrt{1 - 0.91} = 10 \\sqrt{0.09} = 3$$"
+        },
+        {
+          "id": "p15b",
+          "label": "b)",
+          "question": "Calcule el error típico del test B ($$\\sigma_{eb}$$).",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$10 \\sqrt{1 - 0.84} = 10 \\sqrt{0.16} = 4$$"
+        },
+        {
+          "id": "p15c",
+          "label": "c)",
+          "question": "¿En cuántas unidades es mayor el error de B respecto a A?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$4 - 3 = 1$$"
+        },
+        {
+          "id": "p15d",
+          "label": "d)",
+          "question": "Calcule el cociente entre las varianzas de error de B y A ($$\\sigma_{eb}^2 / \\sigma_{ea}^2$$).",
+          "correctValue": 1.77,
+          "tolerance": 0.05,
+          "explanation": "$$16 / 9 \\approx 1.777$$"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Estabilidad Temporal (Test-Retest)",
+      "context": "Se aplica un test a 100 sujetos y al cabo de 6 meses se vuelve a aplicar. La correlación obtenida es de 0.70. La desviación estándar en la primera aplicación es 12 y en la segunda 14.",
+      "parts": [
+        {
+          "id": "p16a",
+          "label": "a)",
+          "question": "Indique el coeficiente de estabilidad (fiabilidad) del test.",
+          "correctValue": 0.7,
+          "tolerance": 0,
+          "explanation": "La correlación test-retest es el coeficiente de estabilidad."
+        },
+        {
+          "id": "p16b",
+          "label": "b)",
+          "question": "Calcule el error típico para la primera aplicación.",
+          "correctValue": 6.57,
+          "tolerance": 0.1,
+          "explanation": "$$12 \\sqrt{1 - 0.70} = 12 \\sqrt{0.30} \\approx 12 \\cdot 0.5477 = 6.57$$"
+        },
+        {
+          "id": "p16c",
+          "label": "c)",
+          "question": "Calcule la varianza de las puntuaciones verdaderas estimada para la primera aplicación.",
+          "correctValue": 100.8,
+          "tolerance": 0.5,
+          "explanation": "$$12^2 \\cdot 0.70 = 144 \\cdot 0.70 = 100.8$$"
+        },
+        {
+          "id": "p16d",
+          "label": "d)",
+          "question": "Si un sujeto obtuvo 50 en la primera aplicación y la media fue 40, calcule su puntuación verdadera predicha ($$V'$$).",
+          "correctValue": 47,
+          "tolerance": 0,
+          "explanation": "$$V' = 0.70(50 - 40) + 40 = 7 + 40 = 47$$"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Ajuste de Spearman-Brown para Mitades No Iguales",
+      "context": "Un test tiene una correlación entre sus dos mitades de $$r_{AB} = 0.50$$.",
+      "parts": [
+        {
+          "id": "p17a",
+          "label": "a)",
+          "question": "Calcule la fiabilidad del test completo mediante Spearman-Brown.",
+          "correctValue": 0.667,
+          "tolerance": 0.01,
+          "explanation": "$$\\frac{2 \\cdot 0.5}{1 + 0.5} = 0.666...$$"
+        },
+        {
+          "id": "p17b",
+          "label": "b)",
+          "question": "Si quisiéramos triplicar la longitud del test original ($$K=3$$), ¿qué fiabilidad obtendríamos respecto al test COMPLETO ya corregido? (Nota: trate el test completo como base $$R_{tt'} = 0.667$$ y $K_{extra}$ para triplicar la longitud total). Si el test completo tiene fiabilidad 0.667 y queremos triplicarlo ($$K=3$$).",
+          "correctValue": 0.857,
+          "tolerance": 0.01,
+          "explanation": "$$R_{cc'} = \\frac{3 \\cdot 0.667}{1 + (2) \\cdot 0.667} = \\frac{2}{2.333} \\approx 0.857$$"
+        },
+        {
+          "id": "p17c",
+          "label": "c)",
+          "question": "Calcule el índice de fiabilidad para el test triplicado.",
+          "correctValue": 0.926,
+          "tolerance": 0.005,
+          "explanation": "$$\\sqrt{0.857} \\approx 0.9257$$"
+        },
+        {
+          "id": "p17d",
+          "label": "d)",
+          "question": "¿Cuántos ítems tendría el test triplicado si las mitades originales tenían 10 ítems cada una?",
+          "correctValue": 60,
+          "tolerance": 0,
+          "explanation": "$$10 + 10 = 20$$. Triplicar: $$20 \\cdot 3 = 60$$."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Puntuaciones Diferenciales y Error",
+      "context": "En un test, la desviación estándar de las puntuaciones verdaderas es $$\\sigma_V = 8$$y la de los errores es$$\\sigma_e = 6$$.",
+      "parts": [
+        {
+          "id": "p18a",
+          "label": "a)",
+          "question": "Calcule la varianza observada ($$\\sigma_X^2$$).",
+          "correctValue": 100,
+          "tolerance": 0,
+          "explanation": "$$8^2 + 6^2 = 64 + 36 = 100$$"
+        },
+        {
+          "id": "p18b",
+          "label": "b)",
+          "question": "Determine el coeficiente de fiabilidad.",
+          "correctValue": 0.64,
+          "tolerance": 0,
+          "explanation": "$$64 / 100 = 0.64$$"
+        },
+        {
+          "id": "p18c",
+          "label": "c)",
+          "question": "Calcule la correlación entre las puntuaciones observadas y los errores ($$\\rho_{xe}$$) sabiendo que $$\\rho_{xe} = \\sigma_e / \\sigma_x$$.",
+          "correctValue": 0.6,
+          "tolerance": 0,
+          "explanation": "$$6 / 10 = 0.6$$"
+        },
+        {
+          "id": "p18d",
+          "label": "d)",
+          "question": "Verifique el supuesto de que $$\\rho_{xe}^2 + \\rho_{xV}^2 = 1$$. Calcule el valor de la suma de los cuadrados de ambas correlaciones.",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$0.6^2 + 0.8^2 = 0.36 + 0.64 = 1.0$$"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Test Paralelos Reales",
+      "context": "Dos test X1 y X2 son paralelos. La covarianza entre ellos es $$Cov(X1, X2) = 16$$ y la varianza de X1 es 20.",
+      "parts": [
+        {
+          "id": "p19a",
+          "label": "a)",
+          "question": "Determine la varianza verdadera ($$\\sigma_V^2$$) de los test.",
+          "correctValue": 16,
+          "tolerance": 0,
+          "explanation": "En test paralelos, la covarianza entre ellos es igual a la varianza de las puntuaciones verdaderas."
+        },
+        {
+          "id": "p19b",
+          "label": "b)",
+          "question": "Calcule el coeficiente de fiabilidad de X1.",
+          "correctValue": 0.8,
+          "tolerance": 0,
+          "explanation": "$$16 / 20 = 0.8$$"
+        },
+        {
+          "id": "p19c",
+          "label": "c)",
+          "question": "Calcule la varianza de error ($$\\sigma_e^2$$).",
+          "correctValue": 4,
+          "tolerance": 0,
+          "explanation": "$$20 - 16 = 4$$"
+        },
+        {
+          "id": "p19d",
+          "label": "d)",
+          "question": "Calcule la correlación entre ambos test ($$\\rho_{x1x2}$$).",
+          "correctValue": 0.8,
+          "tolerance": 0,
+          "explanation": "La correlación entre formas paralelas es igual al coeficiente de fiabilidad."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Homocedasticidad y Valores Extremos",
+      "context": "Un test tiene $$\\sigma_X = 10$$y$$\\rho_{xx'} = 0.75$$. Se desea saber si un cambio en la puntuación observada es significativo.",
+      "parts": [
+        {
+          "id": "p20a",
+          "label": "a)",
+          "question": "Calcule el error típico de medida ($$\\sigma_e$$).",
+          "correctValue": 5,
+          "tolerance": 0,
+          "explanation": "$$10 \\sqrt{1 - 0.75} = 10 \\sqrt{0.25} = 5$$"
+        },
+        {
+          "id": "p20b",
+          "label": "b)",
+          "question": "Calcule el error típico de la diferencia entre dos medidas ($$\\sigma_{diff} = \\sigma_e \\sqrt{2}$$).",
+          "correctValue": 7.07,
+          "tolerance": 0.05,
+          "explanation": "$$5 \\cdot \\sqrt{2} \\approx 7.071$$"
+        },
+        {
+          "id": "p20c",
+          "label": "c)",
+          "question": "Calcule la diferencia mínima significativa ($$DMS$$) al 95% ($$1.96 \\cdot \\sigma_{diff}$$).",
+          "correctValue": 13.86,
+          "tolerance": 0.1,
+          "explanation": "$$1.96 \\cdot 7.07 \\approx 13.86$$"
+        },
+        {
+          "id": "p20d",
+          "label": "d)",
+          "question": "Si un sujeto pasa de 40 a 55 puntos, ¿es el cambio estadísticamente significativo (1 para Sí, 0 para No)?",
+          "correctValue": 1,
+          "tolerance": 0,
+          "explanation": "$$55 - 40 = 15$$. Como $$15 > 13.86$$, el cambio es significativo."
+        }
+      ]
+    }
+  ],
+  "jsonFormulas": [
+    {
+      "name": "Modelo Lineal (Puntuación Observada)",
+      "tex": "$$X = V + e$$"
+    },
+    {
+      "name": "Definición de Puntuación Verdadera (Esperanza Matemática)",
+      "tex": "$$V = E(X)$$"
+    },
+    {
+      "name": "Error de Medida",
+      "tex": "$$E = X - V$$"
+    },
+    {
+      "name": "Supuesto de Independencia (Varianza y Error)",
+      "tex": "$$r(V, e) = 0$$"
+    },
+    {
+      "name": "Supuesto de Independencia entre Errores de Tests Distintos",
+      "tex": "$$r(e_{i}, e_{k}) = 0$$"
+    },
+    {
+      "name": "Índice de Fiabilidad",
+      "tex": "$$\\rho_{XV} = \\frac{\\sigma_{V}}{\\sigma_{X}}$$"
+    },
+    {
+      "name": "Coeficiente de Fiabilidad (Varianza)",
+      "tex": "$$\\rho_{xx^{\\prime}} = \\rho_{XV}^{2} = \\frac{\\sigma_{V}^{2}}{\\sigma_{X}^{2}}$$"
+    },
+    {
+      "name": "Coeficiente de Fiabilidad (Varianza de Error)",
+      "tex": "$$\\rho_{xx^{\\prime}} = 1 - \\frac{\\sigma_{e}^{2}}{\\sigma_{X}^{2}}$$"
+    },
+    {
+      "name": "Relación entre Índice y Coeficiente de Fiabilidad",
+      "tex": "$$\\rho_{XV} = \\sqrt{\\rho_{xx^{\\prime}}}$$"
+    },
+    {
+      "name": "Error Típico o Estándar de Medida",
+      "tex": "$$\\sigma_{e} = \\sigma_{X} \\sqrt{1 - \\rho_{xx^{\\prime}}}$$"
+    },
+    {
+      "name": "Fórmula de Spearman-Brown (Dos Mitades)",
+      "tex": "$$r_{xx^{\\prime}} = \\frac{2r_{AB}}{1 + r_{AB}}$$"
+    },
+    {
+      "name": "Método de Rulon, Guttman y Flanagan (Dos Mitades)",
+      "tex": "$$r_{xx^{\\prime}} = 1 - \\frac{\\sigma_{A}^{2} + \\sigma_{B}^{2}}{\\sigma_{X}^{2}}$$"
+    },
+    {
+      "name": "Coeficiente Alfa de Cronbach (Consistencia Interna)",
+      "tex": "$$\\alpha = \\frac{k}{k-1} \\left( 1 - \\frac{\\sum_{i=1}^{n} \\sigma_{i}^{2}}{\\sigma_{X}^{2}} \\right)$$"
+    },
+    {
+      "name": "Coeficiente Kuder-Richardson (KR20 - Datos Dicotómicos)",
+      "tex": "$$KR_{20} = \\frac{k}{k-1} \\left( 1 - \\frac{\\sum_{i=1}^{n} p_{i}q_{i}}{\\sigma_{X}^{2}} \\right)$$"
+    },
+    {
+      "name": "Coeficiente Beta de Raju (Batería de Subtests)",
+      "tex": "$$\\beta = \\frac{\\sigma_{X}^{2} - \\sum_{j=1}^{p} \\sigma_{j}^{2}}{\\sigma_{X}^{2} (1 - \\sum_{j=1}^{p} k_{j}^{2})}$$"
+    },
+    {
+      "name": "Peso de Subtest (Raju)",
+      "tex": "$$k_{j} = \\frac{n_{j}}{\\sum_{j=1}^{p} n_{j}}$$"
+    },
+    {
+      "name": "Coeficiente Theta (Análisis Factorial)",
+      "tex": "$$\\theta = \\frac{k}{k-1} \\left( 1 - \\frac{1}{\\lambda_{1}} \\right)$$"
+    },
+    {
+      "name": "Intervalo de Confianza para V (Distribución Normal Errores)",
+      "tex": "$$V \\in X_{i} \\pm Z_{\\alpha}(\\sigma_{e})$$"
+    },
+    {
+      "name": "Estimación de la Puntuación Verdadera (Modelo de Regresión)",
+      "tex": "$$v^{\\prime} = \\mu_{x}(1 - \\rho_{xx^{\\prime}}) + x\\rho_{xx^{\\prime}}$$"
+    },
+    {
+      "name": "Error Estándar de Estimación",
+      "tex": "$$\\sigma_{VX} = \\sigma_{e} \\sqrt{\\rho_{xx^{\\prime}}}$$"
+    },
+    {
+      "name": "Intervalo de Confianza para V (Modelo de Regresión)",
+      "tex": "$$V \\in v^{\\prime} \\pm Z_{\\alpha/2}(\\sigma_{e} \\sqrt{\\rho_{xx^{\\prime}}})$$"
+    },
+    {
+      "name": "Fórmula General de Spearman-Brown (Longitud del Test)",
+      "tex": "$$R_{cc^{\\prime}} = \\frac{K R_{ii^{\\prime}}}{1 + (K - 1)R_{ii^{\\prime}}}$$"
+    },
+    {
+      "name": "Cálculo de Factor K para Longitud de Test",
+      "tex": "$$K = \\frac{n.^{\\circ} \\text{ ítems finales}}{n.^{\\circ} \\text{ ítems iniciales}}$$"
+    },
+    {
+      "name": "Cálculo de K para alcanzar una Fiabilidad determinada",
+      "tex": "$$K = \\frac{R_{cc^{\\prime}}(1 - R_{ii^{\\prime}})}{R_{ii^{\\prime}}(1 - R_{cc^{\\prime}})}$$"
+    }
+  ]
+}

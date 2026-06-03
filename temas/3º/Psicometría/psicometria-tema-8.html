@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIMAP - Tema 8: Evaluación de la Calidad y Uso Ético de los Test</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Configuración de MathJax para renderizar LaTeX -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            startup: {
+                typeset: false // Lo llamaremos manualmente después de cargar las vistas
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #ecfeff;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(180, 80%, 92%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(160, 70%, 92%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(195, 80%, 92%, 1) 0, transparent 50%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 40px -10px rgba(6, 182, 212, 0.15);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0891b2 0%, #06b6d4 50%, #14b8a6 100%);
+            background-size: 200% 200%;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            color: white;
+            font-weight: 700;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(6, 182, 212, 0.4);
+            background-position: 100% 50%;
+        }
+
+        /* Estilos Flashcards */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .card-inner.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 1.5rem;
+        }
+
+        .card-front {
+            background: white;
+            border: 2px solid #e2e8f0;
+        }
+
+        .card-back {
+            background: #4f46e5;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .option-btn {
+            transition: all 0.2s;
+            border: 2px solid #e2e8f0;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: #06b6d4;
+            background-color: #ecfeff;
+            transform: translateX(5px);
+        }
+
+        /* MathJax adjustments to prevent overflow */
+        mjx-container {
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Global -->
+    <header class="glass-card sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="app.showView('home')">
+                <div class="bg-sky-600 text-white p-2 rounded-lg shadow-lg">
+                    <i class="ph-bold ph-chart-line-up text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-xl tracking-tight text-slate-800" id="header-title">Tema 8 - Evaluación de la Calidad y Uso Ético de los Test</h1>
+                    <p class="text-[9px] uppercase tracking-widest font-bold text-slate-500">ANÁLISIS DE DATOS Y MATEMÁTICAS</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 sm:gap-4">
+                <!-- Botón Portal Principal -->
+                <a href="../../../index.html" class="bg-slate-700 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-arrow-left text-lg"></i> <span class="hidden sm:inline">Portal Principal</span>
+                </a>
+
+                <!-- Botón Calculadora Externa -->
+                <a href="https://web2.0calc.es/" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-calculator text-lg"></i> <span class="hidden sm:inline">Calculadora</span>
+                </a>
+
+                <!-- Botón Menú Global -->
+                <button id="btn-global-menu" onclick="app.showView('home')" class="hidden bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-xl items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-house text-lg"></i> <span class="hidden sm:inline">Menú</span>
+                </button>
+
+                <!-- Contador Global -->
+                <div id="nav-counter" class="hidden items-center gap-2 bg-white/60 px-3 py-1.5 rounded-full border border-white">
+                    <span id="global-counter" class="text-sky-700 font-bold font-mono text-sm">0/0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-5xl w-full mx-auto p-6 flex flex-col items-center justify-center">
+
+        <!-- VIEW: HOME (MENU) -->
+        <section id="view-home" class="fade-in w-full">
+            <div class="text-center mb-12">
+                <h1 class="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400 mb-8 tracking-tighter opacity-80 select-none">
+                    SAIMAP</h1>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-4">¿Cómo quieres practicar hoy?</h2>
+                <h3 class="text-xl font-bold text-slate-600 mb-4">Tema 8 - Evaluación de la Calidad y Uso Ético de los Test</h3>
+                <p class="text-slate-500">Selecciona la herramienta que mejor se adapte a tu objetivo de estudio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                <!-- QUIZ -->
+                <div onclick="app.startTool('quiz')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-sky-500">
+                    <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-numbers text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Test Teórico</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Preguntas de opción múltiple sobre conceptos y propiedades estadísticas.</p>
+                </div>
+
+                <!-- LABORATORIO (Reemplaza Trainer) -->
+                <div onclick="app.startTool('laboratorio')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-emerald-500">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-calculator text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Laboratorio</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Ejercicios de cálculo numérico con escenarios guiados paso a paso.</p>
+                </div>
+
+                <!-- FÓRMULAS (Reemplaza Flashcards) -->
+                <div onclick="app.startTool('formulas')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-indigo-500">
+                    <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-dashes text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fórmulas</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Glosario completo de fórmulas matemáticas para consultar rápidamente.</p>
+                </div>
+            </div>
+        
+
+            <!-- Contenedor para botones de navegación de temas -->
+            <div id="theme-navigation-container" class="mt-12 flex justify-between items-center w-full max-w-xl mx-auto gap-4 pt-6 border-t border-slate-200/60"></div>
+        </section>
+
+        <!-- VIEW: QUIZ -->
+        <section id="view-quiz" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-sky-500"></div>
+
+                <div class="flex justify-between items-center mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Modo Test</span>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">
+                            Finalizar Sesión
+                        </button>
+                    </div>
+                    <button id="quiz-hint-btn" onclick="app.quizToggleHint()" class="text-amber-600 font-bold text-xs flex items-center gap-1 hover:bg-amber-50 px-3 py-1.5 rounded-lg transition">
+                        <i class="ph-bold ph-lightbulb"></i> Ver Pista
+                    </button>
+                </div>
+
+                <h2 id="quiz-question" class="text-2xl font-bold text-slate-800 mb-8 math-content"></h2>
+
+                <div id="quiz-hint-box" class="hidden mb-6 p-4 bg-amber-50 border-l-4 border-amber-400 text-amber-900 text-sm italic rounded-r-xl math-content"></div>
+
+                <div id="quiz-options" class="space-y-3"></div>
+
+                <!-- Feedback Quiz -->
+                <div id="quiz-feedback" class="hidden mt-8 p-6 rounded-2xl border transition-all">
+                    <div class="flex items-start gap-4">
+                        <div id="quiz-feedback-icon" class="text-3xl"></div>
+                        <div class="w-full">
+                            <h4 id="quiz-feedback-title" class="font-bold text-lg"></h4>
+                            <div id="quiz-explanation" class="text-sm text-slate-600 mt-2 p-3 bg-slate-50 rounded-lg math-content"></div>
+                        </div>
+                    </div>
+                    <button onclick="app.quizNext()" class="mt-6 btn-primary py-4 px-8 rounded-xl w-full flex items-center justify-center gap-2">
+                        Continuar <i class="ph ph-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: LABORATORIO -->
+        <section id="view-laboratorio" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl overflow-hidden border-t-4 border-emerald-500">
+                <!-- Cabecera y Contexto -->
+                <div class="p-6 md:p-8 bg-emerald-50/50 border-b border-slate-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center font-bold" id="lab-problem-number">1</div>
+                            <h2 id="lab-main-title" class="text-xl font-bold text-slate-800"></h2>
+                        </div>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">Finalizar</button>
+                    </div>
+                    <div id="lab-context-box" class="bg-white/80 p-5 rounded-xl text-slate-700 math-content text-base border border-slate-200 shadow-inner"></div>
+                </div>
+
+                <!-- Contenedor de Apartados -->
+                <div id="lab-parts-container" class="flex flex-col bg-white">
+                    <!-- Los apartados se inyectan aquí automáticamente -->
+                </div>
+            </div>
+
+            <!-- Botón de siguiente problema -->
+            <button onclick="app.labNext()" class="mt-6 w-full bg-slate-800 hover:bg-slate-900 text-white py-4 rounded-xl font-bold shadow-lg transform active:scale-95 transition flex justify-center items-center gap-2">
+                Siguiente Problema <i class="ph-bold ph-arrow-right"></i>
+            </button>
+        </section>
+
+        <!-- VIEW: FÓRMULAS -->
+        <section id="view-formulas" class="hidden w-full fade-in space-y-6">
+            <div class="mb-6 px-2">
+                <h2 class="text-3xl font-black text-slate-800">Glosario de Fórmulas</h2>
+                <p class="text-slate-500 mt-1">Lista completa de recursos matemáticos</p>
+            </div>
+            
+            <!-- Grid Scrollable para las fórmulas -->
+            <div id="formulas-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-12">
+                <!-- Las fórmulas se inyectarán aquí -->
+            </div>
+        </section>
+
+        <!-- VIEW: RESULTS -->
+        <section id="view-results" class="hidden w-full fade-in text-center py-12">
+            <div class="glass-card p-12 rounded-[3rem] inline-block max-w-md w-full border-2 border-white shadow-2xl">
+                <div class="w-24 h-24 bg-yellow-400 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl shadow-yellow-200">
+                    <i class="ph-fill ph-trophy text-5xl"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold text-slate-800 mb-2">¡Sesión Finalizada!</h2>
+                <p id="result-text" class="text-slate-500 mb-8">Has completado todos los ejercicios.</p>
+
+                <div class="flex flex-col gap-3">
+                    <button id="btn-retry-errors" onclick="app.retryErrors()" class="hidden bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-2xl transition flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-warning-circle"></i> Repasar solo Fallos (<span id="fail-count">0</span>)
+                    </button>
+                    <button onclick="app.showView('home')" class="btn-primary w-full py-4 rounded-2xl uppercase tracking-widest text-sm shadow-md">Menú Principal</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // --- DATOS JSON VACÍOS (Inyectados dinámicamente) ---
+        const jsonTestA = [{"q": "¿Es la calidad de las inferencias dependiente exclusivamente de las propiedades psicométricas intrínsecas del instrumento de medida $\\psi$?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Considere la interacción entre el instrumento y el comportamiento del profesional.", "explanation": "La calidad de las inferencias depende tanto del instrumento como de su uso psicométrico profesional, según se indica en la sección $8.1$."}, {"q": "¿Fue el modelo de Prieto y Muñiz (2000) auspiciado por el Consejo General de Colegios de Psicólogos en el ámbito nacional?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 0, "hint": "Revise el organismo que respaldó la propuesta técnica en España.", "explanation": "El texto explicita que la propuesta de Prieto y Muñiz (2000) fue auspiciada por dicho Consejo General."}, {"q": "¿Es lícito el uso de fotocopias de material psicotécnico si se garantiza la seguridad de las plantillas originales de corrección?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Piense en las implicaciones legales relativas a la propiedad intelectual.", "explanation": "Hacer fotocopias supone actuar de forma ilegal respecto a los derechos de autor, independientemente de la seguridad de las plantillas."}, {"q": "¿Asume el protocolo de Moreland et al. (1995) que los baremos de un grupo $G_1$ son automáticamente transferibles a un grupo $G_2$?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Considere la estabilidad de las normas entre poblaciones diversas.", "explanation": "La directriz número 12 prohíbe asumir que los baremos de un grupo son automáticamente aplicables a otro distinto."}, {"q": "¿Incluye la Parte II de los estándares de la APA (1999) el tratamiento de la evaluación en personas con discapacidades cognitivas?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 0, "hint": "Observe la estructura tripartita de los estándares internacionales.", "explanation": "La sección $II.4$ de los estándares conjuntos de APA, AERA y NCME se dedica específicamente a la evaluación de personas con discapacidades."}, {"q": "¿Es la formación deficiente de los usuarios la causa estadística y teórica más relevante del uso inapropiado de los test $\\tau$?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 0, "hint": "Identifique el factor humano crítico mencionado por los expertos.", "explanation": "Los expertos coinciden en que la formación deficiente es la causa primordial del uso inapropiado, según la sección $8.3$."}, {"q": "¿Se recomienda semánticamente el uso del término 'individuo esquizofrénico' para optimizar la precisión del diagnóstico clínico?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Analice la diferencia entre la etiqueta diagnóstica y la persona.", "explanation": "Se debe hablar de 'personas con esquizofrenia' y evitar etiquetar basándose exclusivamente en las puntuaciones."}, {"q": "¿El modelo de Prieto y Muñiz (2000) se limita exclusivamente al análisis de los ítems y la fiabilidad $\\rho_{xx'}$ del test?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Piense en si el cuestionario incluye aspectos estructurales y de baremación.", "explanation": "El cuestionario incide también en la validez, elaboración de baremos y todos los aspectos estructurales del test."}, {"q": "¿Las directrices de la ITC (2001) consideran los derechos de las personas implicadas como un eje central del proceso evaluativo?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 0, "hint": "Evalúe si el enfoque es puramente técnico o incluye dimensiones éticas.", "explanation": "Las directrices de la ITC prestan especial atención a las necesidades y derechos de las personas implicadas en la evaluación."}, {"q": "¿La aplicación sistemática de un test informatizado exime al evaluador de poseer conocimientos profundos sobre la teoría de los test?", "options": ["Verdadero", "Falso", "No se puede determinar"], "correct": 1, "hint": "Considere si la tecnología sustituye la competencia psicométrica básica.", "explanation": "La utilización adecuada requiere conocimientos sólidos de la teoría de test, independientemente de si son informatizados o no."}, {"q": "Seleccione la afirmación correcta sobre el cuestionario de evaluación de Prieto y Muñiz (2000) en el contexto psicométrico:", "options": ["Pretende que los autores de test conozcan los estándares de calidad exigidos.", "Sustituye la necesidad de realizar estudios de validez $\\gamma$ independientes.", "Es un modelo de aplicación obligatoria por ley para todos los editores privados."], "correct": 0, "hint": "Considere el beneficio colateral mencionado para los desarrolladores.", "explanation": "El sistema busca que los autores conozcan los estándares técnicos que deben cumplir las nuevas pruebas del mercado."}, {"q": "Seleccione la afirmación correcta respecto a la administración de los test según las directrices del COP:", "options": ["El evaluador debe responder cualquier pregunta con máximo detalle técnico.", "Se debe establecer una relación de confianza para asegurar la calidad de la respuesta.", "Las instrucciones pueden ser modificadas para optimizar el rendimiento del sujeto."], "correct": 1, "hint": "Busque el elemento que vincula el clima psicológico con la validez de la respuesta.", "explanation": "La directriz 10 señala que la calidad de la respuesta depende del grado de confianza en el proceso de administración."}, {"q": "Seleccione la afirmación correcta sobre la estructura de los estándares APA, AERA y NCME (1999):", "options": ["La Parte I se centra en los derechos y responsabilidades de los evaluados.", "La Parte III aborda la aplicación en selección de personal y políticas públicas.", "La Parte II se dedica exclusivamente a la fiabilidad y el error de medida $\\sigma_e$."], "correct": 1, "hint": "Recuerde qué sección trata sobre los ámbitos de aplicación práctica.", "explanation": "La Parte III cubre aplicaciones específicas como selección de personal, educación y evaluación de programas."}, {"q": "Seleccione la afirmación correcta sobre las directrices de la International Test Commission (ITC) (2001):", "options": ["Se centran exclusivamente en el cálculo del error típico de medida $\\text{SEM}$.", "Su Parte I se enfoca en el uso ético y la competencia profesional del usuario.", "Fueron redactadas sin considerar la participación de colegios oficiales nacionales."], "correct": 1, "hint": "Analice la división entre ética y técnica en el documento de la ITC.", "explanation": "La Parte I de las directrices de la ITC trata sobre el actuar ético, la competencia y la responsabilidad del usuario."}, {"q": "Seleccione la afirmación correcta respecto a la formación necesaria para el uso de test psicológicos:", "options": ["Los conocimientos requeridos son universales y no varían según el área aplicada.", "Es necesario comprender la teoría, modelos y constructos medidos por el test.", "Saber aplicar el test es suficiente para garantizar una evaluación psicológica."], "correct": 1, "hint": "Considere los pilares necesarios para una interpretación pertinente.", "explanation": "Se requiere conocimiento de la teoría y constructos para elegir pruebas pertinentes e interpretar resultados adecuadamente."}, {"q": "Seleccione la afirmación correcta sobre el entorno de aplicación según los estándares de calidad:", "options": ["El entorno físico es irrelevante si el sujeto posee una alta motivación intrínseca.", "Se deben controlar parámetros físicos y psicológicos para un rendimiento óptimo.", "El entorno debe ser estrictamente clínico para garantizar la validez convergente."], "correct": 1, "hint": "Piense en la estandarización de las condiciones de administración.", "explanation": "La directriz 5 exige aplicar los test en condiciones que permitan un rendimiento óptimo, cuidando el entorno físico y psicológico."}, {"q": "Seleccione la afirmación correcta sobre la relación entre medición y evaluación psicológica:", "options": ["La evaluación psicológica es isomorfa a la aplicación de un test psicométrico.", "Una buena medida es condición necesaria pero no suficiente para una evaluación.", "El éxito de la intervención depende únicamente de la calidad de los ítems del test."], "correct": 1, "hint": "Diferencie entre el proceso global y la técnica instrumental específica.", "explanation": "El texto advierte no identificar la evaluación con la mera aplicación, aunque una buena medida sea imprescindible."}, {"q": "Seleccione la afirmación correcta sobre las directrices para la traducción y adaptación de test:", "options": ["Fueron publicadas por la ITC para responder a los avances de finales del s. XX.", "Sostienen que una traducción literal garantiza la equivalencia del constructo $\\psi$.", "Son un apéndice menor de los estándares de la APA sin relevancia internacional."], "correct": 0, "hint": "Piense en el origen y propósito de las guías de Muñiz et al. (2013).", "explanation": "Estas directrices responden a los cambios en la medición y el proceso de globalización de los instrumentos psicológicos."}, {"q": "Seleccione la afirmación correcta sobre el entrenamiento de los evaluados en los ítems del test:", "options": ["Es una práctica recomendada para reducir la ansiedad ante la evaluación.", "Supone un efecto de sobrevaloración artificial del nivel en el constructo.", "No afecta a la fiabilidad $\\rho_{xx'}$ si el entrenamiento es igual para todos."], "correct": 1, "hint": "Evalúe cómo altera esto la representatividad de la puntuación obtenida.", "explanation": "La directriz 6 prohíbe el entrenamiento porque distorsiona la medida real del nivel del sujeto en el constructo."}, {"q": "Seleccione la afirmación correcta sobre las hojas de respuesta de elaboración propia (caseras):", "options": ["Son una alternativa ecológica y económica validada por el Colegio de Psicólogos.", "Pueden generar errores de corrección al no ajustarse con precisión a la plantilla.", "Mejoran la validez de contenido al adaptarse al formato del aula de aplicación."], "correct": 1, "hint": "Piense en la precisión mecánica durante la fase de corrección manual.", "explanation": "La directriz 9 desaconseja su uso para evitar desajustes con la plantilla original y errores en la obtención de puntuaciones."}, {"q": "Seleccione la afirmación correcta sobre el control de calidad en la obtención de puntuaciones (ITC, 2011):", "options": ["Se centra fundamentalmente en los procedimientos psicométricos del proceso.", "Elimina la responsabilidad del evaluador si se utiliza un software de corrección.", "Es una directriz que solo se aplica a los test de inteligencia de alta complejidad."], "correct": 0, "hint": "Identifique el enfoque de esta publicación específica de la ITC.", "explanation": "Esta directriz trabaja sobre los aspectos más relacionados con los procedimientos psicométricos y el análisis de test."}, {"q": "Seleccione la afirmación correcta sobre la interpretación de las puntuaciones obtenidas:", "options": ["Las puntuaciones deben entregarse sin asesoramiento para evitar sesgos subjetivos.", "El profesional debe estar dispuesto a interpretar y aconsejar en sesiones ad hoc.", "La interpretación es automática y depende exclusivamente del baremo estadístico."], "correct": 1, "hint": "Recuerde la finalidad de la medición según el texto de referencia.", "explanation": "La directriz 7 establece que no tiene sentido medir por medir y se debe aconsejar a los individuos tras la aplicación."}, {"q": "Seleccione la afirmación correcta sobre los estándares conjuntos de APA, AERA y NCME (1999):", "options": ["Establecen que la validez es el primer capítulo de la construcción de los test.", "Consideran que la fiabilidad es el único criterio de calidad técnica necesario.", "Son directrices de ámbito exclusivamente europeo sin aplicación en Norteamérica."], "correct": 0, "hint": "Observe el orden jerárquico de los conceptos en la Parte I de los estándares.", "explanation": "En la Parte I, el punto $1.1$ se dedica específicamente a la validez como pilar fundamental de la construcción."}, {"q": "Seleccione la afirmación correcta sobre los apéndices de las directrices de la ITC:", "options": ["El Apéndice C trata sobre la aplicación de test a personas con discapacidad.", "El Apéndice A se dedica al desarrollo de contratos legales entre las partes.", "El Apéndice B establece políticas institucionales sobre el uso de los test."], "correct": 0, "hint": "Relacione cada letra del apéndice con su temática específica.", "explanation": "El Apéndice C contiene directrices específicas para aplicar test a personas con alguna discapacidad."}, {"q": "Seleccione la afirmación correcta sobre la causa primordial de la mala praxis profesional:", "options": ["La falta de instrumentos con evidencias de validez $\\gamma$ en el mercado actual.", "La deficiente formación psicométrica de los usuarios que administran los test.", "El alto coste de las licencias originales de los test más utilizados en clínica."], "correct": 1, "hint": "Busque el factor interno del profesional mencionado al final del capítulo.", "explanation": "Los expertos coinciden en que la causa más importante es una formación deficiente de los usuarios de los test."}, {"q": "Seleccione la afirmación incorrecta sobre el modelo de Prieto y Muñiz (2000):", "options": ["Incluye un cuestionario para evaluar la calidad de los baremos y normas.", "Su único objetivo es sancionar a los autores que publiquen test de baja calidad.", "Busca generar información técnica facilitada para el ejercicio profesional."], "correct": 1, "hint": "Analice si el tono del modelo es punitivo o formativo/informativo.", "explanation": "El objetivo es la descripción del proceso de revisión y facilitar información, no sancionar a los autores."}, {"q": "Seleccione la afirmación incorrecta sobre las 12 directrices mínimas para el uso de test:", "options": ["Se debe evitar el etiquetado de personas basándose en las puntuaciones.", "Es recomendable responder preguntas con más detalle que el manual si es útil.", "Se debe mantener la seguridad de los materiales para conservar su funcionamiento."], "correct": 1, "hint": "Revise el límite que impone el manual del test a la interacción del evaluador.", "explanation": "La directriz 11 prohíbe expresamente responder con mayor detalle que lo permitido por el manual para evitar sesgos."}, {"q": "Seleccione la afirmación incorrecta sobre la Parte II de las directrices de la ITC:", "options": ["Trata sobre la elección de test técnicamente correctos y adecuados.", "Incluye la comunicación de los resultados de forma clara y precisa.", "Se dedica exclusivamente al secreto profesional y la confidencialidad $\\sigma$."], "correct": 2, "hint": "Diferencie entre la utilización adecuada (técnica) y el uso ético.", "explanation": "La confidencialidad pertenece a la Parte I (Uso ético), mientras que la Parte II se centra en la utilización técnica adecuada."}, {"q": "Seleccione la afirmación incorrecta respecto a los conocimientos específicos del usuario:", "options": ["Debe conocer los avances técnicos recientes como los bancos de ítems.", "Debe conocer los editores correspondientes de los test disponibles.", "Debe ignorar la teoría del constructo para no sesgar la medida objetiva."], "correct": 2, "hint": "Evalúe si el desconocimiento del constructo es una ventaja o una carencia.", "explanation": "El conocimiento de la teoría, modelos y constructos es imprescindible para una elección pertinente e interpretación adecuada."}, {"q": "Seleccione la afirmación incorrecta sobre la administración de test según el texto:", "options": ["Asegurarse de que todos los individuos evaluados siguen las instrucciones.", "Permitir que los evaluados utilicen sus propios baremos si son más actuales.", "Evitar cometer errores al obtener las puntuaciones totales de la prueba."], "correct": 1, "hint": "Piense en quién tiene la potestad de elegir y aplicar los baremos normativos.", "explanation": "Es responsabilidad del evaluador aplicar baremos adecuados; el evaluado no decide sobre la baremación estadística."}, {"q": "Seleccione la afirmación incorrecta sobre los estándares de la APA (1999):", "options": ["La sección $II.3$ trata sobre personas de diversidad lingüística.", "La sección $I.2$ aborda la fiabilidad y el error de medida $\\sigma_e$.", "La sección $III.5$ trata sobre la psicofisiología del estrés en la evaluación."], "correct": 2, "hint": "Busque el contenido real de la última sección de la Parte III.", "explanation": "La sección $III.5$ se dedica a la medición en evaluación de programas y políticas públicas, no a la psicofisiología."}, {"q": "Seleccione la afirmación incorrecta sobre la seguridad de los materiales del test:", "options": ["Es una responsabilidad ética incluida en la Parte I de las directrices ITC.", "Su fin es asegurar que los instrumentos conserven su buen funcionamiento.", "Se refiere únicamente a guardar los test bajo llave en una caja fuerte digital."], "correct": 2, "hint": "Considere si la seguridad abarca aspectos más amplios que el almacenamiento físico.", "explanation": "La seguridad de los materiales implica que conserven su validez y funcionamiento, no solo el almacenamiento físico."}, {"q": "Seleccione la afirmación incorrecta sobre el proceso de traducción de test:", "options": ["Muñiz et al. (2013) publicaron directrices específicas sobre este proceso.", "Una traducción precisa es suficiente para ignorar el sesgo cultural del test.", "Responde a los avances producidos en la medición a finales del siglo XX."], "correct": 1, "hint": "Piense en si el lenguaje es el único factor de adaptación de un test.", "explanation": "La traducción es solo una parte; se requiere una adaptación cultural profunda para evitar el sesgo del instrumento."}, {"q": "Seleccione la afirmación incorrecta sobre el uso adecuado de los test $\\tau$:", "options": ["Depende de disponer de un buen instrumento con evidencia psicométrica.", "Se basa en protocolos que salvaguardan la calidad técnica y la ética.", "Es una práctica que no requiere actualización frente a cambios legislativos."], "correct": 2, "hint": "Evalúe la naturaleza estática o dinámica de las directrices profesionales.", "explanation": "Las directrices están sometidas a cambios para adaptarse a variaciones en la teoría, uso o ámbito legislativo."}, {"q": "Seleccione la afirmación incorrecta sobre la calidad de la respuesta en un test:", "options": ["Depende significativamente del grado de confianza con el evaluador.", "Es independiente de si el evaluado comprende o no las instrucciones dadas.", "Se ve afectada negativamente por un entorno físico ruidoso o inadecuado."], "correct": 1, "hint": "Considere la importancia del seguimiento de instrucciones en la directriz 4.", "explanation": "Asegurarse de que se siguen las instrucciones es crítico; si no se comprenden, la calidad de la respuesta es nula."}, {"q": "Seleccione la afirmación incorrecta sobre la ética en la evaluación (Parte I ITC):", "options": ["El evaluador debe responsabilizarse del uso que hace de los test.", "Los resultados de los test deben tratarse siempre de forma confidencial.", "La competencia para el uso de test se adquiere solo con la lectura del test."], "correct": 2, "hint": "Reflexione sobre si leer el test basta para ser un profesional competente.", "explanation": "La competencia requiere formación sólida en psicometría y evaluación, no solo conocer el contenido del test."}, {"q": "Seleccione la afirmación incorrecta sobre la utilidad potencial de un test (II.1 ITC):", "options": ["Debe estimarse antes de iniciar cualquier situación evaluativa formal.", "Es irrelevante si el test tiene una alta fiabilidad $\\rho_{xx'}$ teórica.", "Se debe considerar el contexto específico en el cual se llevará a cabo."], "correct": 1, "hint": "Piense si la fiabilidad técnica es el único criterio para decidir usar un test.", "explanation": "La utilidad potencial es un paso previo necesario; la fiabilidad es técnica, pero la utilidad depende del objetivo clínico."}, {"q": "Seleccione la afirmación incorrecta sobre la comunicación de resultados (II.8 ITC):", "options": ["Debe realizarse de forma clara para que el evaluado pueda entenderlos.", "Debe ser precisa y evitar ambigüedades en la interpretación técnica.", "Debe ser lo más compleja posible para demostrar la pericia del psicólogo."], "correct": 2, "hint": "Evalúe el objetivo de la comunicación según las directrices éticas.", "explanation": "La comunicación debe ser clara y precisa, no innecesariamente compleja o críptica."}, {"q": "Seleccione la afirmación incorrecta sobre los conocimientos psicométricos requeridos:", "options": ["Incluyen la estandarización, el sesgo y el análisis de los ítems.", "Se limitan al conocimiento de los editores y el precio de los manuales.", "Abarcan la teoría de los test y las propiedades de sus puntuaciones."], "correct": 1, "hint": "Diferencie entre conocimiento logístico y conocimiento científico-técnico.", "explanation": "Los conocimientos requeridos son profundos (teoría, propiedades, constructos), no meramente logísticos."}, {"q": "Seleccione la afirmación incorrecta sobre el fin de la medición psicológica:", "options": ["Siempre se ha de medir con un fin determinado y justificado.", "Medir por medir es una práctica aceptable si los test son gratuitos.", "El éxito de la intervención depende de la calidad de la evaluación previa."], "correct": 1, "hint": "Busque la frase lapidaria sobre la finalidad de la medición en la directriz 7.", "explanation": "El texto afirma rotundamente que 'No tiene ningún sentido medir por medir', independientemente del coste."}];
+        const jsonTestB = [{"q": "La calidad de las inferencias depende no solo del instrumento, sino también de su utilización y su ____ en el ámbito profesional.", "options": ["Uso psicométrico", "Marco axiológico", "Rigor estadístico"], "correct": 0, "hint": "Se refiere a la aplicación práctica de la medición.", "explanation": "El texto indica explícitamente que la calidad depende del instrumento y de su $$\\text{uso psicométrico}$$ profesional."}, {"q": "Prieto y Muñiz (2000) desarrollaron un modelo para evaluar la calidad de los test cuyo cuestionario incide en aspectos como la ____.", "options": ["Fiabilidad y validez", "Ética y deontología", "Inversión y costes"], "correct": 0, "hint": "Son las dos propiedades psicométricas fundamentales mencionadas en el texto.", "explanation": "El cuestionario evalúa fiabilidad, validez, análisis de ítems y baremos según el modelo de $$\\text{Prieto y Muñiz (2000)}$$."}, {"q": "El objetivo del trabajo de Prieto y Muñiz es la descripción de un proceso de revisión y la presentación del ____ utilizado para tales revisiones.", "options": ["Modelo de cuestionario", "Protocolo de actuación", "Esquema de resultados"], "correct": 0, "hint": "Es el instrumento físico que proponen para la evaluación.", "explanation": "El objetivo es presentar el $$\\text{modelo de cuestionario}$$ auspiciado por el Consejo General de Colegios de Psicólogos."}, {"q": "Según Moreland et al. (1995), se debe evitar etiquetar a las personas; por ejemplo, no hablar de individuos esquizofrénicos, sino de personas con ____.", "options": ["Esquizofrenia clínica", "Trastorno disociativo", "Esquizofrenia aguda"], "correct": 0, "hint": "Busca una terminología que priorice a la persona sobre la patología.", "explanation": "Se debe hablar de $$\\text{personas con esquizofrenia}$$ para evitar el etiquetado reduccionista."}, {"q": "Para que los materiales conserven su buen funcionamiento, el profesional debe mantener la ____ de las plantillas y del resto de materiales.", "options": ["Seguridad absoluta", "Integridad física", "Vigencia temporal"], "correct": 0, "hint": "Evita que el contenido del test se filtre o degrade.", "explanation": "El requisito 3 de Moreland exige mantener la $$\\text{seguridad}$$ de los materiales del test."}, {"q": "Abstenerse de entrenar a las personas en los ítems del test es crucial para evitar un efecto de ____ de su nivel en el constructo.", "options": ["Sobrevaloración", "Infravaloración", "Sesgo sistemático"], "correct": 0, "hint": "El entrenamiento artificial altera la medida real.", "explanation": "El entrenamiento provoca una $$\\text{sobrevaloración}$$ ficticia de la aptitud o rasgo medido."}, {"q": "El profesional debe estar dispuesto a interpretar las puntuaciones y aconsejar a los individuos en ____ diseñadas para ello.", "options": ["Sesiones clínicas", "Entrevistas fijas", "Pruebas de ensayo"], "correct": 0, "hint": "La medición siempre debe tener un fin comunicativo y de ayuda.", "explanation": "No tiene sentido medir por medir; se requiere interpretar en $$\\text{sesiones}$$ específicas."}, {"q": "Hacer fotocopias del material psicotécnico puede suponer actuar de forma ilegal respecto a los ____.", "options": ["Derechos de autor", "Secretos de estado", "Leyes de imprenta"], "correct": 0, "hint": "Protección de la propiedad intelectual del editor.", "explanation": "El requisito 8 prohíbe las fotocopias por violar los $$\\text{derechos de autor}$$."}, {"q": "El uso de hojas de respuesta caseras debe evitarse porque pueden generar errores en la ____ al no ajustarse a la plantilla.", "options": ["Corrección final", "Aplicación total", "Baremación grupal"], "correct": 0, "hint": "Afecta a la precisión de la obtención de la puntuación directa.", "explanation": "Las hojas caseras comprometen la exactitud de la $$\\text{corrección}$$ manual o mecánica."}, {"q": "Establecer una buena relación con los evaluados es fundamental, ya que la calidad de la respuesta depende del grado de ____ establecido.", "options": ["Confianza mutua", "Rigor profesional", "Empatía cognitiva"], "correct": 0, "hint": "Es el 'rapport' necesario en la administración.", "explanation": "La calidad de la respuesta depende del grado de $$\\text{confianza}$$ en el proceso administrativo."}, {"q": "Para evitar sesgos inducidos por el evaluador, no se deben responder preguntas con mayor detalle que el permitido por el ____.", "options": ["Manual del test", "Código de ética", "Libro de estilo"], "correct": 0, "hint": "Es el documento técnico de referencia de cada prueba.", "explanation": "El evaluador debe ceñirse estrictamente a las instrucciones del $$\\text{manual}$$."}, {"q": "No se debe asumir que un baremo para una evaluación determinada es automáticamente aplicable a un ____ distinto.", "options": ["Grupo o muestra", "Sujeto o cliente", "Rango o entorno"], "correct": 0, "hint": "La representatividad de la norma es específica.", "explanation": "Los baremos no son universales; dependen del $$\\text{grupo}$$ de referencia original."}, {"q": "La Parte I de los estándares de APA (1999) se titula 'Construcción de los test, evaluación y ____'.", "options": ["Documentación", "Planificación", "Baremación"], "correct": 0, "hint": "Se refiere al registro técnico necesario.", "explanation": "La Parte I cubre construcción, evaluación y $$\\text{documentación}$$ técnica de apoyo."}, {"q": "La Parte II de los estándares de APA trata sobre la evaluación de personas con ____.", "options": ["Discapacidades", "Altas capacidades", "Rasgos atípicos"], "correct": 0, "hint": "Busca la equidad en grupos con necesidades especiales.", "explanation": "El estándar II.4 se dedica específicamente a la evaluación de personas con $$\\text{discapacidades}$$."}, {"q": "Las directrices internacionales de la ITC (2001) prestan especial atención a las necesidades y ____ de los implicados.", "options": ["Derechos legales", "Deberes cívicos", "Aptitudes base"], "correct": 0, "hint": "Enfoque en la protección del evaluado.", "explanation": "La ITC enfatiza los $$\\text{derechos}$$ de las personas en el proceso evaluativo."}, {"q": "La ITC (2011) publicó directrices para el control de calidad en la obtención de ____ y análisis de test.", "options": ["Puntuaciones", "Estadísticos", "Coeficientes"], "correct": 0, "hint": "Es el dato numérico primario tras la aplicación.", "explanation": "Se centra en el control de calidad de las $$\\text{puntuaciones}$$ y su posterior análisis."}, {"q": "Una de las propuestas recientes de la ITC se centra específicamente en el proceso de ____ y adaptación de los test.", "options": ["Traducción", "Codificación", "Depuración"], "correct": 0, "hint": "Crucial para el uso transcultural de instrumentos.", "explanation": "Muñiz et al. (2013) establecen directrices para la $$\\text{traducción}$$ y adaptación."}, {"q": "El éxito de las intervenciones psicológicas depende directamente de la calidad de la ____ que seamos capaces de hacer.", "options": ["Evaluación", "Medición", "Baremación"], "correct": 0, "hint": "Es el proceso global, no solo la aplicación de un test.", "explanation": "La $$\\text{evaluación}$$ es el pilar sobre el que se asienta la intervención efectiva."}, {"q": "La causa más importante del uso inapropiado de los test es una ____ deficiente de los usuarios.", "options": ["Formación técnica", "Ética personal", "Actitud social"], "correct": 0, "hint": "Relacionado con el nivel de conocimientos adquiridos.", "explanation": "Los expertos señalan la $$\\text{formación}$$ deficiente como la causa primordial de errores."}, {"q": "En el uso de los test es imperativo conocer los avances técnicos recientes, tales como los test ____ o bancos de ítems.", "options": ["Informatizados", "Proyectivos", "Individuales"], "correct": 0, "hint": "Nuevas tecnologías aplicadas a la psicometría.", "explanation": "El conocimiento de test $$\\text{informatizados}$$ es un requisito competencial moderno."}, {"q": "¿Qué elementos se incluyen en la Parte I (Uso ético) de las directrices de la ITC?", "options": ["Asegurar competencia", "Tratar resultados", "Todas las anteriores son correctas"], "correct": 2, "hint": "Recuerda los 5 puntos de la Parte I de la ITC.", "explanation": "La Parte I incluye competencia, confidencialidad, responsabilidad y $$\\text{ética}$$ profesional."}, {"q": "¿Sobre qué aspectos incide el cuestionario de evaluación de Prieto y Muñiz (2000)?", "options": ["Análisis de ítems", "Fiabilidad-validez", "Todas las anteriores son correctas"], "correct": 2, "hint": "Abarca los pilares técnicos de la psicometría.", "explanation": "El cuestionario evalúa todos los aspectos estructurales, incluyendo $$\\text{baremos}$$ y análisis técnico."}, {"q": "¿Qué requisitos de Moreland et al. (1995) afectan a la fase de administración?", "options": ["Seguir instrucciones", "Entorno físico", "Todas las anteriores son correctas"], "correct": 2, "hint": "Considera tanto la conducta del evaluado como el contexto.", "explanation": "Asegurar el seguimiento de instrucciones y un $$\\text{entorno}$$ óptimo son requisitos clave."}, {"q": "¿Qué aplicaciones del uso de test se detallan en la Parte III de los estándares APA (1999)?", "options": ["Medición educativa", "Selección personal", "Todas las anteriores son correctas"], "correct": 2, "hint": "Son los diversos campos de actuación profesional.", "explanation": "La Parte III cubre educación, psicología clínica y $$\\text{selección de personal}$$."}, {"q": "¿Qué conocimientos específicos debe poseer un usuario para el uso adecuado de los test?", "options": ["Teoría de los test", "Constructos medidos", "Todas las anteriores son correctas"], "correct": 2, "hint": "La competencia técnica requiere múltiples niveles de saber.", "explanation": "Se requiere dominar la teoría, los modelos y el $$\\text{catálogo}$$ de test disponibles."}, {"q": "¿Qué se debe evitar según las recomendaciones nacionales e internacionales?", "options": ["Entrenar en ítems", "Fotocopiar material", "Todas las anteriores son correctas"], "correct": 2, "hint": "Prácticas que invalidan la prueba o infringen la ley.", "explanation": "Tanto el entrenamiento como la $$\\text{reproducción ilegal}$$ son prácticas prohibidas."}, {"q": "¿Qué objetivos persigue la publicación de sistemas y criterios de evaluación de test?", "options": ["Informar al usuario", "Estándares autores", "Todas las anteriores son correctas"], "correct": 2, "hint": "Tiene beneficios tanto para quien aplica como para quien crea.", "explanation": "Busca mejorar la formación del profesional y elevar la $$\\text{calidad}$$ de los nuevos test."}, {"q": "¿Qué aspectos de la Parte II (Utilización adecuada) de la ITC son críticos?", "options": ["Elegir test correctos", "Interpretar bien", "Todas las anteriores son correctas"], "correct": 2, "hint": "Abarca desde la selección hasta la comunicación.", "explanation": "La Parte II incluye elección, aplicación, puntuación e $$\\text{interpretación}$$ de resultados."}, {"q": "¿Qué apéndices incluyen las directrices de la ITC para casos especiales?", "options": ["Políticas de uso", "Contratos partes", "Todas las anteriores son correctas"], "correct": 2, "hint": "Son guías complementarias A, B y C.", "explanation": "Los apéndices tratan políticas, contratos y evaluación de personas con $$\\text{discapacidad}$$."}, {"q": "¿Qué pilares sustentan el uso adecuado de los test según las conclusiones del tema?", "options": ["Conocimiento sólido", "Comprensión proceso", "Todas las anteriores son correctas"], "correct": 2, "hint": "Combina el saber técnico con el saber procedimental.", "explanation": "Se requiere base $$\\text{psicométrica}$$ y visión integral de la evaluación psicológica."}, {"q": "¿Cuál de los siguientes autores es el principal responsable de las directrices APA de 2011?", "options": ["Gerardo Prieto", "José Muñiz", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Fíjate en las siglas de la organización internacional.", "explanation": "Las directrices de 2011 son de la $$\\text{ITC (International Test Commission)}$$, no de autores individuales españoles."}, {"q": "En relación al error de medida $$\\sigma_e$$, ¿qué estándar de la APA prohíbe su cálculo en test de personalidad?", "options": ["Estándar 1.2", "Estándar 2.4", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Los estándares promueven el cálculo, no lo prohíben.", "explanation": "Ningún estándar prohíbe el cálculo del $$\\text{error de medida}$$; al contrario, exigen su documentación."}, {"q": "¿Qué requisito de Moreland obliga a utilizar exclusivamente test de respuesta abierta?", "options": ["Requisito 7", "Requisito 11", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Los requisitos no limitan el tipo de formato de respuesta del test.", "explanation": "Los requisitos de Moreland no imponen el formato del test, sino la $$\\text{calidad}$$ en su uso."}, {"q": "¿Qué directriz de la ITC permite el uso de hojas de respuesta caseras si el presupuesto es bajo?", "options": ["Directriz II.5", "Directriz I.4", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Revisa la postura sobre la precisión en la corrección.", "explanation": "Las hojas caseras están explícitamente $$\\text{desaconsejadas}$$ por el riesgo de error en la corrección."}, {"q": "Según el texto, ¿qué autor propuso que la ética es menos importante que la fiabilidad $$\\rho_{xx'}$$?", "options": ["Prieto (2000)", "Muñiz (2013)", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "El texto equilibra ambos aspectos sin jerarquizarlos así.", "explanation": "El texto afirma que la calidad depende de la técnica $$\\text{y}$$ de la ética conjuntamente."}, {"q": "¿Qué parte de los estándares APA (1999) se dedica exclusivamente a la psicofisiología?", "options": ["Parte IV", "Parte V", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "El documento solo tiene tres partes principales.", "explanation": "Los estándares APA (1999) se dividen en $$\\text{tres partes}$$, ninguna exclusiva de psicofisiología."}, {"q": "¿Cuál es el enlace de interés para descargar el software gratuito de corrección de la ITC?", "options": ["ITC-Software.org", "Test-Quality.com", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "El texto proporciona enlaces a directrices, no a software.", "explanation": "Los enlaces proporcionados dirigen a $$\\text{PDFs de directrices}$$ y artículos, no a descargas de software."}, {"q": "¿Qué artículo de la Constitución Española se cita como base del modelo de Prieto y Muñiz?", "options": ["Artículo 10", "Artículo 14", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "El texto es técnico-psicométrico, no constitucional.", "explanation": "El texto no hace referencia a ningún $$\\text{artículo constitucional}$$ específico."}, {"q": "¿Qué autor afirma que los test informatizados son menos éticos que los de papel y lápiz?", "options": ["Moreland (1995)", "ITC (2005)", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "Se consideran avances técnicos, no retrocesos éticos.", "explanation": "El texto menciona los test informatizados como un $$\\text{avance técnico}$$ que el usuario debe conocer."}, {"q": "¿En qué año se publicó la versión traducida de los estándares APA que sustituyó a la de 1999?", "options": ["Año 2008", "Año 2015", "Ninguna de las anteriores es correcta"], "correct": 2, "hint": "El texto solo menciona la versión de 1999.", "explanation": "Dentro de la información del capítulo, solo se referencian los estándares de $$\\text{1999}$$."}];
+        const jsonLaboratorio = [{"id": 1, "title": "Evaluación de Calidad: Modelo de Prieto y Muñiz", "context": "El modelo de Prieto y Muñiz (2000) permite obtener un Índice de Calidad Global ($Q$) mediante la ponderación de la Fiabilidad ($F$, peso 0.4) y la Validez ($V$, peso 0.6). Un test de personalidad obtiene $F = 0.88$ y $V = 0.72$. La fórmula es $Q = 0.4F + 0.6V$.", "parts": [{"id": "p1a", "label": "a)", "question": "Calcule el índice de calidad global $Q$ del test.", "correctValue": 0.784, "tolerance": 0.001, "explanation": "$$Q = (0.4 \\times 0.88) + (0.6 \\times 0.72) = 0.352 + 0.432 = 0.784$$"}, {"id": "p1b", "label": "b)", "question": "Si el estándar de calidad exige $Q \\ge 0.80$, ¿cuánto debería aumentar la Validez si la Fiabilidad se mantiene constante?", "correctValue": 0.027, "tolerance": 0.001, "explanation": "$$0.80 = (0.4 \\times 0.88) + 0.6V \\implies 0.80 = 0.352 + 0.6V \\implies V = 0.7466$$. El aumento es $$0.7466 - 0.72 = 0.0266...$$"}, {"id": "p1c", "label": "c)", "question": "Calcule el porcentaje de varianza no explicada por el índice global ($1 - Q$).", "correctValue": 0.216, "tolerance": 0.001, "explanation": "$$1 - 0.784 = 0.216$$"}, {"id": "p1d", "label": "d)", "question": "Si se aplicara una penalización ética de $-0.10$ por falta de seguridad en materiales, ¿cuál sería el nuevo $Q$?", "correctValue": 0.684, "tolerance": 0.001, "explanation": "$$0.784 - 0.10 = 0.684$$"}]}, {"id": 2, "title": "Errores de Corrección y Registro (Moreland et al.)", "context": "Siguiendo a Moreland et al. (1995), evitar errores de corrección es crítico. Un evaluador tiene una probabilidad de error manual de $p = 0.02$ por cada ítem. Un test tiene $n = 50$ ítems. Se asume una distribución binomial para el número de errores $X$.", "parts": [{"id": "p2a", "label": "a)", "question": "Calcule el número esperado de errores ($E[X]$) en la corrección del test.", "correctValue": 1, "tolerance": 0, "explanation": "$$E[X] = n \\times p = 50 \\times 0.02 = 1$$"}, {"id": "p2b", "label": "b)", "question": "Calcule la desviación típica de los errores.", "correctValue": 0.99, "tolerance": 0.01, "explanation": "$$\\sigma = \\sqrt{n \\cdot p \\cdot (1-p)} = \\sqrt{50 \\cdot 0.02 \\cdot 0.98} = \\sqrt{0.98} \\approx 0.9899$$"}, {"id": "p2c", "label": "c)", "question": "Calcule la probabilidad de cometer exactamente 0 errores usando la fórmula $P(0) = (1-p)^n$.", "correctValue": 0.364, "tolerance": 0.001, "explanation": "$$P(0) = (0.98)^{50} \\approx 0.3641$$"}, {"id": "p2d", "label": "d)", "question": "Calcule la probabilidad de cometer al menos un error ($1 - P(0)$).", "correctValue": 0.636, "tolerance": 0.001, "explanation": "$$1 - 0.3641 = 0.6359$$"}]}, {"id": 3, "title": "Efecto del Entrenamiento Prohibido en el Constructo", "context": "La ética prohíbe entrenar en los ítems específicos. Un grupo control tiene $\\mu = 100$ y $\\sigma = 15$. Un grupo 'entrenado' ilegalmente muestra un aumento del constructo artificial de $d = 0.8$ desviaciones típicas (Tamaño del efecto de Cohen).", "parts": [{"id": "p3a", "label": "a)", "question": "Calcule la nueva media teórica del grupo entrenado.", "correctValue": 112, "tolerance": 0, "explanation": "$$\\mu_{new} = \\mu + (d \\cdot \\sigma) = 100 + (0.8 \\times 15) = 112$$"}, {"id": "p3b", "label": "b)", "question": "Si el punto de corte para una plaza es 115, ¿cuál es la puntuación típica $Z$ para el grupo entrenado?", "correctValue": 0.2, "tolerance": 0.01, "explanation": "$$Z = (115 - 112) / 15 = 3 / 15 = 0.2$$"}, {"id": "p3c", "label": "c)", "question": "Calcule la puntuación típica $Z$ para el grupo control respecto al mismo punto de corte (115).", "correctValue": 1, "tolerance": 0, "explanation": "$$Z = (115 - 100) / 15 = 15 / 15 = 1$$"}, {"id": "p3d", "label": "d)", "question": "Calcule la diferencia en unidades de desviación típica entre ambos grupos.", "correctValue": 0.8, "tolerance": 0, "explanation": "La diferencia es el valor de $d$ dado inicialmente: $0.8$."}]}, {"id": 4, "title": "Fiabilidad y Error Estándar de Medida (SEM)", "context": "Éticamente, el psicólogo debe informar de intervalos de confianza, no puntos aislados. Un test tiene una desviación típica $S_x = 10$ y un coeficiente de fiabilidad $r_{xx} = 0.91$. La fórmula del SEM es $SEM = S_x \\sqrt{1 - r_{xx}}$.", "parts": [{"id": "p4a", "label": "a)", "question": "Calcule el Error Estándar de Medida (SEM).", "correctValue": 3, "tolerance": 0, "explanation": "$$SEM = 10 \\sqrt{1 - 0.91} = 10 \\sqrt{0.09} = 10 \\times 0.3 = 3$$"}, {"id": "p4b", "label": "b)", "question": "Calcule el error máximo para un nivel de confianza del 95% ($Z = 1.96$).", "correctValue": 5.88, "tolerance": 0.01, "explanation": "$$E_{max} = 1.96 \\times 3 = 5.88$$"}, {"id": "p4c", "label": "c)", "question": "Si un sujeto obtiene 100 puntos, ¿cuál es el límite superior del intervalo al 95%?", "correctValue": 105.88, "tolerance": 0.01, "explanation": "$$100 + 5.88 = 105.88$$"}, {"id": "p4d", "label": "d)", "question": "Si la fiabilidad subiera a $r_{xx} = 0.96$, ¿cuál sería el nuevo SEM?", "correctValue": 2, "tolerance": 0, "explanation": "$$SEM = 10 \\sqrt{1 - 0.96} = 10 \\times 0.2 = 2$$"}]}, {"id": 5, "title": "Baremos Inadecuados y Sesgo Normativo", "context": "Las directrices prohíben usar baremos de un grupo en otro distinto sin justificación. Suponga que un baremo A tiene $\\mu = 50, \\sigma = 10$ y un baremo B tiene $\\mu = 60, \\sigma = 12$. Un sujeto obtiene una puntuación directa de $PD = 62$.", "parts": [{"id": "p5a", "label": "a)", "question": "Calcule la puntuación $Z$ si se usa el baremo A.", "correctValue": 1.2, "tolerance": 0.01, "explanation": "$$Z = (62 - 50) / 10 = 1.2$$"}, {"id": "p5b", "label": "b)", "question": "Calcule la puntuación $Z$ si se usa el baremo B.", "correctValue": 0.166, "tolerance": 0.001, "explanation": "$$Z = (62 - 60) / 12 = 0.1666...$$"}, {"id": "p5c", "label": "c)", "question": "Calcule la diferencia absoluta entre ambas puntuaciones $Z$ (error por uso inadecuado de baremo).", "correctValue": 1.034, "tolerance": 0.01, "explanation": "$$|1.2 - 0.166...| = 1.0333...$$"}, {"id": "p5d", "label": "d)", "question": "Si se transforman las $Z$ del baremo A a una escala $T$ ($10Z + 50$), ¿cuál es el valor?", "correctValue": 62, "tolerance": 0, "explanation": "$$10(1.2) + 50 = 12 + 50 = 62$$"}]}, {"id": 6, "title": "Traducción y Adaptación de Test (ITC)", "context": "La ITC (2013) enfatiza la equivalencia métrica en traducciones. Se correlaciona la versión original con la traducida en bilingües, obteniendo $r = 0.85$. La varianza compartida indica el grado de éxito de la adaptación.", "parts": [{"id": "p6a", "label": "a)", "question": "Calcule el coeficiente de determinación ($r^2$) como medida de equivalencia.", "correctValue": 0.722, "tolerance": 0.001, "explanation": "$$0.85^2 = 0.7225$$"}, {"id": "p6b", "label": "b)", "question": "Calcule el porcentaje de varianza 'error' o no compartida entre versiones.", "correctValue": 27.75, "tolerance": 0.01, "explanation": "$$(1 - 0.7225) \\times 100 = 27.75$$"}, {"id": "p6c", "label": "c)", "question": "Si el $r$ mínimo exigido por la ITC fuera de $0.90$, ¿cuál sería la varianza compartida mínima?", "correctValue": 0.81, "tolerance": 0, "explanation": "$$0.90^2 = 0.81$$"}, {"id": "p6d", "label": "d)", "question": "Si la muestra bilingüe es de $N=100$, calcule los grados de libertad para la prueba de significación ($N-2$).", "correctValue": 98, "tolerance": 0, "explanation": "$$100 - 2 = 98$$"}]}, {"id": 7, "title": "Seguridad de Materiales y Derechos de Autor", "context": "Fotocopiar material es ilegal y antiético. Un test cuesta 250 € (incluye 25 hojas de respuesta). Un centro hace 100 evaluaciones usando fotocopias ilegales.", "parts": [{"id": "p7a", "label": "a)", "question": "Calcule el coste por hoja de respuesta legal (asumiendo que el manual/plantilla vale el 60% del kit).", "correctValue": 4, "tolerance": 0, "explanation": "Valor consumible = $250 \\times 0.40 = 100$ €. Coste/hoja = $100 / 25 = 4$ €."}, {"id": "p7b", "label": "b)", "question": "Calcule el perjuicio económico directo causado a la editorial por las 100 evaluaciones.", "correctValue": 400, "tolerance": 0, "explanation": "$$100 \\times 4 = 400$$ €."}, {"id": "p7c", "label": "c)", "question": "Si la multa ética es del 300% del perjuicio causado, ¿a cuánto asciende?", "correctValue": 1200, "tolerance": 0, "explanation": "$$400 \\times 3 = 1200$$ €."}, {"id": "p7d", "label": "d)", "question": "Si el centro legaliza su situación comprando 4 kits nuevos (25 hojas c/u), ¿cuánto gasta?", "correctValue": 1000, "tolerance": 0, "explanation": "$$4 \\times 250 = 1000$$ €."}]}, {"id": 8, "title": "Competencia Profesional y Calidad de la Aplicación", "context": "La formación deficiente es la causa principal del mal uso. Un psicólogo novel comete un sesgo inducido que aumenta la varianza de error en un 15%. La varianza total original era $S_x^2 = 100$ con $r_{xx} = 0.80$.", "parts": [{"id": "p8a", "label": "a)", "question": "Calcule la varianza de error original ($S_e^2 = S_x^2(1-r_{xx})$).", "correctValue": 20, "tolerance": 0, "explanation": "$$100 \\times (1 - 0.80) = 20$$"}, {"id": "p8b", "label": "b)", "question": "Calcule la nueva varianza de error tras el sesgo del novel (aumento del 15%).", "correctValue": 23, "tolerance": 0.1, "explanation": "$$20 \\times 1.15 = 23$$"}, {"id": "p8c", "label": "c)", "question": "Calcule la nueva varianza total (suponiendo varianza verdadera constante $S_v^2 = 80$).", "correctValue": 103, "tolerance": 0.1, "explanation": "$$80 + 23 = 103$$"}, {"id": "p8d", "label": "d)", "question": "Calcule la nueva fiabilidad aproximada ($S_v^2 / S_x^2_{new}$).", "correctValue": 0.776, "tolerance": 0.001, "explanation": "$$80 / 103 \\approx 0.7766$$"}]}, {"id": 9, "title": "Test Informatizados y Latencia (ITC 2005)", "context": "La ITC regula los test informatizados. Un factor crítico es la latencia de respuesta. En formato papel, la media es 1200ms. En digital, debido a la interfaz, sube a 1350ms.", "parts": [{"id": "p9a", "label": "a)", "question": "Calcule el factor de incremento de tiempo en formato digital.", "correctValue": 1.125, "tolerance": 0.001, "explanation": "$$1350 / 1200 = 1.125$$"}, {"id": "p9b", "label": "b)", "question": "Calcule el porcentaje de aumento del tiempo.", "correctValue": 12.5, "tolerance": 0.1, "explanation": "$$(1.125 - 1) \\times 100 = 12.5$$%"}, {"id": "p9c", "label": "c)", "question": "Si un ítem requiere 2000ms en papel, ¿cuánto tardará en digital bajo este modelo?", "correctValue": 2250, "tolerance": 1, "explanation": "$$2000 \\times 1.125 = 2250$$ ms."}, {"id": "p9d", "label": "d)", "question": "Si el límite ético de discrepancia es del 10%, ¿cumple este sistema informático la norma?", "correctValue": 0, "tolerance": 0, "explanation": "No (0). El 12.5% supera el 10% permitido."}]}, {"id": 10, "title": "Confidencialidad y Tratamiento de Datos", "context": "La ITC exige tratar los resultados confidencialmente. Una base de datos contiene $N = 5000$ perfiles. Se aplica un algoritmo de anonimización que tiene una tasa de error de re-identificación del $0.05\\%$.", "parts": [{"id": "p10a", "label": "a)", "question": "Calcule el número esperado de individuos que podrían ser re-identificados.", "correctValue": 2.5, "tolerance": 0, "explanation": "$$5000 \\times 0.0005 = 2.5$$"}, {"id": "p10b", "label": "b)", "question": "Si el protocolo exige que el riesgo sea $< 1$ persona, ¿por qué factor debe reducirse la tasa de error?", "correctValue": 2.5, "tolerance": 0, "explanation": "$$2.5 / 1 = 2.5$$. Debe ser al menos 2.5 veces menor."}, {"id": "p10c", "label": "c)", "question": "Calcule la nueva tasa de error necesaria ($0.05 / 2.5$).", "correctValue": 0.02, "tolerance": 0.001, "explanation": "$$0.05 / 2.5 = 0.02$$%"}, {"id": "p10d", "label": "d)", "question": "Si se duplica la base de datos ($N=10000$), ¿cuántas personas se re-identificarían con la tasa original?", "correctValue": 5, "tolerance": 0, "explanation": "$$10000 \\times 0.0005 = 5$$"}]}, {"id": 11, "title": "Evaluación de Personas con Discapacidad (APA/ITC)", "context": "Adaptar test para discapacitados es una obligación ética. Un test de velocidad tiene un tiempo límite de 10 minutos. Para una persona con discapacidad motriz, se estima que el tiempo de ejecución es $1.5$ veces más lento.", "parts": [{"id": "p11a", "label": "a)", "question": "Calcule el tiempo adaptado (en minutos) necesario para la equidad.", "correctValue": 15, "tolerance": 0, "explanation": "$$10 \\times 1.5 = 15$$"}, {"id": "p11b", "label": "b)", "question": "Calcule el porcentaje de tiempo extra concedido.", "correctValue": 50, "tolerance": 0, "explanation": "$$((15-10)/10) \\times 100 = 50$$%"}, {"id": "p11c", "label": "c)", "question": "Si el test tiene 60 ítems, calcule la cadencia de segundos por ítem en el tiempo original.", "correctValue": 10, "tolerance": 0, "explanation": "$$(10 \\times 60) / 60 = 10$$ seg/ítem."}, {"id": "p11d", "label": "d)", "question": "Calcule la cadencia en el tiempo adaptado.", "correctValue": 15, "tolerance": 0, "explanation": "$$(15 \\times 60) / 60 = 15$$ seg/ítem."}]}, {"id": 12, "title": "Análisis de Sesgo de Ítem (DIF)", "context": "Detectar el sesgo (DIF) es un mandato ético. Se analiza un ítem en dos grupos (A y B). La probabilidad de acierto en el grupo A es $P(A) = 0.80$ y en el grupo B es $P(B) = 0.50$ para el mismo nivel de capacidad.", "parts": [{"id": "p12a", "label": "a)", "question": "Calcule la razón de probabilidades (Odds Ratio) $OR = [P(A)/(1-P(A))] / [P(B)/(1-P(B))]$.", "correctValue": 4, "tolerance": 0, "explanation": "$$(0.8/0.2) / (0.5/0.5) = 4 / 1 = 4$$"}, {"id": "p12b", "label": "b)", "question": "Calcule el valor Delta de Mantel-Haenszel ($\\Delta_{MH} = -2.35 \\ln(OR)$).", "correctValue": -3.25, "tolerance": 0.05, "explanation": "$$-2.35 \\cdot \\ln(4) = -2.35 \\cdot 1.386 = -3.257$$"}, {"id": "p12c", "label": "c)", "question": "Si un ítem tiene DIF moderado si $|\\Delta_{MH}| > 1.5$, ¿tiene este ítem sesgo moderado?", "correctValue": 1, "tolerance": 0, "explanation": "Sí (1), porque $3.25 > 1.5$."}, {"id": "p12d", "label": "d)", "question": "Calcule la diferencia bruta de probabilidades de acierto.", "correctValue": 0.3, "tolerance": 0, "explanation": "$$0.80 - 0.50 = 0.30$$"}]}, {"id": 13, "title": "Fiabilidad y Longitud del Test (Profecía de Spearman-Brown)", "context": "Asegurar fiabilidad suficiente es ético. Un test tiene $r_{xx} = 0.60$. Las directrices recomiendan al menos $0.80$ para diagnósticos clínicos.", "parts": [{"id": "p13a", "label": "a)", "question": "Calcule el factor $k$ de incremento de ítems necesario para llegar a $0.80$.", "correctValue": 2.66, "tolerance": 0.01, "explanation": "$$k = [0.80(1-0.60)] / [0.60(1-0.80)] = 0.32 / 0.12 = 2.666...$$"}, {"id": "p13b", "label": "b)", "question": "Si el test original tiene 20 ítems, ¿cuántos ítems totales debe tener ahora?", "correctValue": 54, "tolerance": 1, "explanation": "$$20 \\times 2.66... = 53.33$$. Redondeando al alza: 54."}, {"id": "p13c", "label": "c)", "question": "Si se triplica la longitud ($k=3$), ¿cuál sería la nueva fiabilidad?", "correctValue": 0.818, "tolerance": 0.001, "explanation": "$$(3 \\times 0.60) / [1 + (3-1)0.60] = 1.8 / 2.2 = 0.8181$$"}, {"id": "p13d", "label": "d)", "question": "Calcule el incremento porcentual de fiabilidad al triplicar el test respecto al original.", "correctValue": 36.3, "tolerance": 0.1, "explanation": "$$((0.818 - 0.60) / 0.60) \\times 100 = 36.33$$%"}]}, {"id": 14, "title": "Validez Concurrente y Selección Ética", "context": "Elegir test técnicamente correctos es un deber (ITC II.2). Se comparan dos test para selección. El Test A tiene validez $r_{xy} = 0.40$ y el Test B tiene $r_{xy} = 0.25$.", "parts": [{"id": "p14a", "label": "a)", "question": "Calcule el coeficiente de determinación del Test A.", "correctValue": 0.16, "tolerance": 0, "explanation": "$$0.40^2 = 0.16$$"}, {"id": "p14b", "label": "b)", "question": "Calcule cuántas veces es más explicativo el Test A que el Test B ($0.4^2 / 0.25^2$).", "correctValue": 2.56, "tolerance": 0.01, "explanation": "$$0.16 / 0.0625 = 2.56$$"}, {"id": "p14c", "label": "c)", "question": "Si el coste de aplicación es igual, ¿qué porcentaje de mejora en validez (r) ofrece A sobre B?", "correctValue": 60, "tolerance": 0, "explanation": "$$((0.40-0.25)/0.25) \\times 100 = 60$$%"}, {"id": "p14d", "label": "d)", "question": "Si se usan ambos test (suponiendo que son independientes), calcule la validez múltiple combinada $R = \\sqrt{r_1^2 + r_2^2}$.", "correctValue": 0.47, "tolerance": 0.01, "explanation": "$$\\sqrt{0.40^2 + 0.25^2} = \\sqrt{0.16 + 0.0625} = \\sqrt{0.2225} \\approx 0.4716$$"}]}, {"id": 15, "title": "Consentimiento Informado y Tasa de Respuesta", "context": "La buena relación (ITC 10) influye en la calidad. En un estudio, con consentimiento claro y buena relación, el 95% de los sujetos completa el test. Sin ello, baja al 70%.", "parts": [{"id": "p15a", "label": "a)", "question": "En una muestra de $N=200$, ¿cuántos sujetos adicionales completan el test gracias a la buena ética profesional?", "correctValue": 50, "tolerance": 0, "explanation": "$$200 \\times (0.95 - 0.70) = 200 \\times 0.25 = 50$$"}, {"id": "p15b", "label": "b)", "question": "Calcule la probabilidad de que 2 sujetos seguidos no completen el test en la condición de baja calidad ética.", "correctValue": 0.09, "tolerance": 0, "explanation": "$$(1 - 0.70)^2 = 0.3^2 = 0.09$$"}, {"id": "p15c", "label": "c)", "question": "Si cada evaluación incompleta supone una pérdida de 15 €, ¿cuánto dinero se 'salva' en la muestra de 200 por actuar éticamente?", "correctValue": 750, "tolerance": 0, "explanation": "$$50 \\times 15 = 750$$ €."}, {"id": "p15d", "label": "d)", "question": "Calcule el ratio de éxito (Ético / No Ético).", "correctValue": 1.357, "tolerance": 0.001, "explanation": "$$0.95 / 0.70 = 1.3571...$$"}]}, {"id": 16, "title": "Interpretación de Puntuaciones y Sesiones de Feedback", "context": "No tiene sentido medir por medir (ITC 7). Una sesión de feedback aumenta la auto-eficacia del paciente con un tamaño del efecto de $d = 0.5$. La media inicial es $\\mu = 50, \\sigma = 10$.", "parts": [{"id": "p16a", "label": "a)", "question": "Calcule la media de auto-eficacia tras la sesión.", "correctValue": 55, "tolerance": 0, "explanation": "$$50 + (0.5 \\times 10) = 55$$"}, {"id": "p16b", "label": "b)", "question": "Si el paciente estaba en el percentil 50 ($Z=0$), ¿en qué $Z$ está ahora respecto a la población original?", "correctValue": 0.5, "tolerance": 0, "explanation": "$$(55 - 50) / 10 = 0.5$$"}, {"id": "p16c", "label": "c)", "question": "Si una segunda sesión añade $d = 0.3$ adicionales, ¿cuál es la media final?", "correctValue": 58, "tolerance": 0, "explanation": "$$55 + (0.3 \\times 10) = 58$$"}, {"id": "p16d", "label": "d)", "question": "Calcule el incremento total en puntos de la escala.", "correctValue": 8, "tolerance": 0, "explanation": "$$58 - 50 = 8$$"}]}, {"id": 17, "title": "Evaluación de Programas y Políticas Públicas", "context": "La medición en evaluación de programas (APA III.5) requiere precisión. Un programa educativo se considera exitoso si aumenta la puntuación media en al menos $0.25$ errores estándar de la media ($SEM_M = \\sigma / \\sqrt{N}$). Datos: $\\sigma = 15, N = 100$.", "parts": [{"id": "p17a", "label": "a)", "question": "Calcule el Error Estándar de la Media ($SEM_M$).", "correctValue": 1.5, "tolerance": 0, "explanation": "$$15 / \\sqrt{100} = 15 / 10 = 1.5$$"}, {"id": "p17b", "label": "b)", "question": "Calcule el umbral de éxito en puntos absolutos ($0.25 \\times SEM_M$).", "correctValue": 0.375, "tolerance": 0.001, "explanation": "$$0.25 \\times 1.5 = 0.375$$"}, {"id": "p17c", "label": "c)", "question": "Si la media sube de $70$ a $71.2$, ¿se considera exitoso?", "correctValue": 1, "tolerance": 0, "explanation": "Sí (1), porque $1.2 > 0.375$."}, {"id": "p17d", "label": "d)", "question": "Calcule el valor $Z$ de la mejora ($1.2 / SEM_M$).", "correctValue": 0.8, "tolerance": 0, "explanation": "$$1.2 / 1.5 = 0.8$$"}]}, {"id": 18, "title": "Diversidad Lingüística y Varianza Sistemática", "context": "Evaluar a personas de diversidad lingüística (APA II.3) sin adaptar el test introduce varianza ajena al constructo ($S_{bias}^2$). Un test tiene $S_{total}^2 = 100$. En nativos, $S_e^2 = 10$. En no nativos, sube a $S_e^2 = 25$ debido al idioma.", "parts": [{"id": "p18a", "label": "a)", "question": "Calcule la varianza debida al sesgo lingüístico ($25 - 10$).", "correctValue": 15, "tolerance": 0, "explanation": "$$25 - 10 = 15$$"}, {"id": "p18b", "label": "b)", "question": "Calcule qué porcentaje de la varianza total en no nativos es sesgo lingüístico.", "correctValue": 15, "tolerance": 0, "explanation": "$$(15 / 100) \\times 100 = 15$$%"}, {"id": "p18c", "label": "c)", "question": "Calcule la fiabilidad en el grupo de nativos ($1 - 10/100$).", "correctValue": 0.9, "tolerance": 0, "explanation": "$$1 - 0.10 = 0.90$$"}, {"id": "p18d", "label": "d)", "question": "Calcule la fiabilidad en el grupo de no nativos ($1 - 25/100$).", "correctValue": 0.75, "tolerance": 0, "explanation": "$$1 - 0.25 = 0.75$$"}]}, {"id": 19, "title": "Leyes de Derechos de Autor y Hojas de Respuesta", "context": "Abstenerse de utilizar hojas de respuesta caseras (COP 9). Un escáner profesional comete $0.1\\%$ de errores. Una hoja casera aumenta el error al $2\\%$.", "parts": [{"id": "p19a", "label": "a)", "question": "Calcule cuántas veces es más probable un error con la hoja casera.", "correctValue": 20, "tolerance": 0, "explanation": "$$2 / 0.1 = 20$$"}, {"id": "p19b", "label": "b)", "question": "En 1000 exámenes, ¿cuántos errores se esperan con hojas caseras?", "correctValue": 20, "tolerance": 0, "explanation": "$$1000 \\times 0.02 = 20$$"}, {"id": "p19c", "label": "c)", "question": "Calcule la diferencia de errores esperados entre caseras y profesionales en 1000 casos.", "correctValue": 19, "tolerance": 0, "explanation": "$$20 - (1000 \\times 0.001) = 20 - 1 = 19$$"}, {"id": "p19d", "label": "d)", "question": "Si cada error de corrección implica una revisión manual que cuesta 50 €, ¿cuál es el sobrecoste por usar hojas caseras en esos 1000 casos?", "correctValue": 950, "tolerance": 0, "explanation": "$$19 \\times 50 = 950$$ €."}]}, {"id": 20, "title": "Puntuaciones y Etiquetas Éticas (COP 2)", "context": "Es importante no etiquetar a las personas. Se define 'Esquizofrenia' si $Z > 2.5$. Un test tiene $\\mu = 50, \\sigma = 10$.", "parts": [{"id": "p20a", "label": "a)", "question": "Calcule la puntuación directa mínima para recibir la etiqueta.", "correctValue": 75, "tolerance": 0, "explanation": "$$50 + (2.5 \\times 10) = 75$$"}, {"id": "p20b", "label": "b)", "question": "Si el SEM es 3, calcule el límite inferior del intervalo al 68% ($1$ SEM) para un sujeto con $PD = 75$.", "correctValue": 72, "tolerance": 0, "explanation": "$$75 - 3 = 72$$"}, {"id": "p20c", "label": "c)", "question": "Dado que el límite inferior (72) es menor que el corte (75), ¿es éticamente prudente etiquetar al sujeto sin más pruebas?", "correctValue": 0, "tolerance": 0, "explanation": "No (0). Existe duda razonable por el error de medida."}, {"id": "p20d", "label": "d)", "question": "Si se usa un test más fiable con $SEM = 1$, ¿cuál sería el límite inferior?", "correctValue": 74, "tolerance": 0, "explanation": "$$75 - 1 = 74$$"}]}];
+        const jsonFormulas = [];
+
+        // --- TRANSFORMACIÓN DE DATOS PARA LA APP ---
+        const appDB = {
+            quiz: [...jsonTestA, ...jsonTestB],
+            laboratorio: [...jsonLaboratorio],
+            formulas: jsonFormulas.map(f => ({
+                cat: "Fórmula",
+                q: f.name,
+                a: f.tex
+            }))
+        };
+
+        // --- LÓGICA DE LA APLICACIÓN ---
+        const app = {
+            DB: appDB,
+            state: {
+                currentTool: null,
+                index: 0,
+                isFlipped: false,
+                activeData: [],
+                failedQuestions: [],
+                score: 0,
+                totalQuestions: 0
+            },
+
+            // Renderiza MathJax si está disponible
+            renderMath: function() {
+                if (window.MathJax && window.MathJax.typesetPromise) {
+                    MathJax.typesetPromise();
+                }
+            },
+
+            showView: function (view) {
+                document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+                const target = document.getElementById(`view-${view}`);
+                if (target) target.classList.remove('hidden');
+
+                const menuBtn = document.getElementById('btn-global-menu');
+                const counterBox = document.getElementById('nav-counter');
+                
+                if (view === 'home') {
+                    menuBtn.classList.remove('flex');
+                    menuBtn.classList.add('hidden');
+                    counterBox.classList.remove('flex');
+                    counterBox.classList.add('hidden');
+                } else {
+                    menuBtn.classList.remove('hidden');
+                    menuBtn.classList.add('flex');
+                    
+                    if (view === 'formulas') {
+                        counterBox.classList.remove('flex');
+                        counterBox.classList.add('hidden');
+                    } else {
+                        counterBox.classList.remove('hidden');
+                        counterBox.classList.add('flex');
+                    }
+                }
+            },
+
+            startTool: function (tool, customData = null) {
+                const baseData = this.DB[tool] || [];
+                const dataToUse = customData ? [...customData] : JSON.parse(JSON.stringify(baseData));
+
+                if (dataToUse.length === 0) return;
+
+                this.state.currentTool = tool;
+                this.state.index = 0;
+                this.state.score = 0;
+                this.state.failedQuestions = [];
+                this.state.activeData = dataToUse;
+
+                if (tool === 'laboratorio') {
+                    this.state.totalQuestions = dataToUse.reduce((acc, curr) => acc + curr.parts.length, 0);
+                } else {
+                    this.state.totalQuestions = dataToUse.length;
+                }
+
+                if (!customData && tool !== 'formulas') {
+                    this.shuffleArray(this.state.activeData);
+                }
+
+                this.updateCounter();
+                this.showView(tool);
+
+                if (tool === 'quiz') this.renderQuiz();
+                if (tool === 'laboratorio') this.renderLaboratorio();
+                if (tool === 'formulas') this.renderFormulas();
+            },
+
+            updateCounter: function () {
+                const counter = document.getElementById('global-counter');
+                if (counter && this.state.activeData.length > 0) {
+                    counter.innerText = `${this.state.index + 1}/${this.state.activeData.length}`;
+                }
+            },
+
+            shuffleArray: function (arr) {
+                for (let i = arr.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                }
+            },
+
+            finishSession: function() {
+                this.showResults();
+            },
+
+            // --- LÓGICA QUIZ ---
+            renderQuiz: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('quiz-question').innerHTML = data.q;
+                document.getElementById('quiz-feedback').classList.add('hidden');
+                document.getElementById('quiz-hint-box').classList.add('hidden');
+                
+                const container = document.getElementById('quiz-options');
+                container.innerHTML = '';
+                
+                data.options.forEach((opt, i) => {
+                    const btn = document.createElement('button');
+                    btn.className = "option-btn w-full text-left p-4 rounded-xl bg-white flex items-center gap-4 font-semibold text-slate-700 shadow-sm";
+                    btn.innerHTML = `<span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-xs text-slate-400 font-bold shrink-0">${String.fromCharCode(65 + i)}</span> <div class="math-content">${opt}</div>`;
+                    btn.onclick = () => this.quizCheck(i, btn);
+                    container.appendChild(btn);
+                });
+
+                this.renderMath();
+            },
+
+            quizToggleHint: function () {
+                const box = document.getElementById('quiz-hint-box');
+                const data = this.state.activeData[this.state.index];
+                if (data && data.hint) {
+                    box.innerHTML = `<span class="font-bold">Pista:</span> ${data.hint}`;
+                    box.classList.toggle('hidden');
+                    this.renderMath();
+                }
+            },
+
+            quizCheck: function (idx, clickedBtn) {
+                const data = this.state.activeData[this.state.index];
+                const btns = document.getElementById('quiz-options').querySelectorAll('button');
+                btns.forEach(b => b.disabled = true);
+                
+                const feedback = document.getElementById('quiz-feedback');
+                feedback.classList.remove('hidden');
+                
+                if (idx === data.correct) {
+                    this.state.score++;
+                    clickedBtn.classList.add('bg-emerald-50', 'border-emerald-500', 'text-emerald-700');
+                    document.getElementById('quiz-feedback-title').innerText = "¡Correcto!";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-emerald-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    this.state.failedQuestions.push(data);
+                    clickedBtn.classList.add('bg-red-50', 'border-red-500', 'text-red-700');
+                    btns[data.correct].classList.add('bg-emerald-50', 'border-emerald-500', 'ring-2', 'ring-emerald-200');
+                    document.getElementById('quiz-feedback-title').innerText = "Incorrecto";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-red-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+                
+                document.getElementById('quiz-explanation').innerHTML = data.explanation;
+                this.renderMath();
+            },
+
+            quizNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderQuiz();
+                    this.updateCounter();
+                } else this.showResults();
+            },
+
+            // --- LÓGICA LABORATORIO ---
+            renderLaboratorio: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('lab-problem-number').innerText = this.state.index + 1;
+                document.getElementById('lab-main-title').innerText = data.title;
+                document.getElementById('lab-context-box').innerHTML = data.context;
+                
+                const container = document.getElementById('lab-parts-container');
+                container.innerHTML = '';
+                
+                data.parts.forEach((part, i) => {
+                    const partId = `lab-part-${this.state.index}-${i}`;
+                    const letter = part.label.replace(')', '').toLowerCase();
+                    
+                    const html = `
+                        <div class="p-6 md:p-8 border-b border-slate-100 last:border-0">
+                            <div class="flex gap-4 items-start mb-6">
+                                <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex justify-center items-center font-bold shrink-0 mt-1">${letter}</div>
+                                <div class="text-slate-800 font-semibold text-lg math-content pt-1">${part.question}</div>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-4 items-center pl-0 md:pl-12">
+                                <input type="text" id="input-${partId}" class="w-full md:w-64 p-3 rounded-xl border-2 border-slate-200 outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-50 transition text-lg font-mono shadow-sm" placeholder="Respuesta...">
+                                <button id="btn-${partId}" onclick="app.labCheckPart(${this.state.index}, ${i})" class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-xl font-bold uppercase tracking-wider text-sm transition shadow-md w-full md:w-auto">Verificar</button>
+                            </div>
+                            
+                            <div id="feedback-${partId}" class="hidden pl-0 md:pl-12 mt-4 animate-fadeIn">
+                                <div id="feedback-box-${partId}" class="flex items-start gap-3 p-4 rounded-xl">
+                                    <div id="icon-${partId}" class="text-2xl shrink-0 mt-1"></div>
+                                    <div class="w-full">
+                                        <h4 id="title-${partId}" class="font-bold mb-2"></h4>
+                                        <div class="text-sm font-mono bg-slate-800 text-slate-200 p-4 rounded-lg overflow-x-auto math-content shadow-inner border border-slate-700">
+                                            <span class="text-slate-400 text-[10px] uppercase font-sans font-bold tracking-widest block mb-2">Desarrollo Matemático</span>
+                                            ${part.explanation}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.insertAdjacentHTML('beforeend', html);
+                });
+                
+                this.renderMath();
+            },
+
+            labCheckPart: function (problemIdx, partIdx) {
+                const problem = this.state.activeData[problemIdx];
+                const part = problem.parts[partIdx];
+                const partId = `lab-part-${problemIdx}-${partIdx}`;
+
+                const input = document.getElementById(`input-${partId}`);
+                const btn = document.getElementById(`btn-${partId}`);
+                const feedback = document.getElementById(`feedback-${partId}`);
+                const feedbackBox = document.getElementById(`feedback-box-${partId}`);
+                const icon = document.getElementById(`icon-${partId}`);
+                const title = document.getElementById(`title-${partId}`);
+
+                const rawVal = input.value.trim().replace(',', '.');
+                const userVal = parseFloat(rawVal);
+                
+                if (rawVal === "" || isNaN(userVal)) {
+                    input.classList.add('ring-2', 'ring-red-400');
+                    setTimeout(() => input.classList.remove('ring-2', 'ring-red-400'), 500);
+                    return; 
+                }
+
+                input.disabled = true;
+                btn.disabled = true;
+                btn.classList.remove('hover:bg-indigo-700', 'bg-indigo-600');
+                btn.classList.add('bg-slate-300', 'text-slate-500', 'cursor-not-allowed', 'shadow-none');
+                
+                feedback.classList.remove('hidden');
+
+                const diff = Math.abs(userVal - part.correctValue);
+                const isCorrect = diff <= part.tolerance;
+
+                if (isCorrect) {
+                    this.state.score++;
+                    input.classList.add('border-emerald-400', 'bg-emerald-50', 'text-emerald-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-emerald-50 border border-emerald-200";
+                    title.innerText = "¡Cálculo Exacto!";
+                    title.className = "font-black text-emerald-600";
+                    icon.innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    input.classList.add('border-red-400', 'bg-red-50', 'text-red-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-red-50 border border-red-200";
+                    title.innerText = `Cálculo Incorrecto. Respuesta esperada: ${part.correctValue} (±${part.tolerance})`;
+                    title.className = "font-black text-red-600";
+                    icon.innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+
+                this.renderMath();
+            },
+
+            labNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderLaboratorio();
+                    this.updateCounter();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else this.showResults();
+            },
+
+            // --- LÓGICA FÓRMULAS ---
+            renderFormulas: function () {
+                const grid = document.getElementById('formulas-grid');
+                grid.innerHTML = '';
+                
+                this.state.activeData.forEach(data => {
+                    const card = document.createElement('div');
+                    card.className = "glass-card p-6 rounded-2xl border-t-4 border-indigo-500 hover:shadow-lg transition-shadow bg-white flex flex-col justify-between items-center text-center h-full";
+                    card.innerHTML = `
+                        <span class="text-xs font-bold text-indigo-500 uppercase tracking-widest mb-4 w-full border-b border-slate-100 pb-2">${data.q}</span>
+                        <div class="text-2xl font-medium text-slate-800 math-content w-full overflow-x-auto py-4 flex-grow flex items-center justify-center">${data.a}</div>
+                    `;
+                    grid.appendChild(card);
+                });
+
+                this.renderMath();
+            },
+
+            // --- RESULTADOS GLOBALES ---
+            showResults: function () {
+                this.showView('results');
+                const resultText = document.getElementById('result-text');
+                
+                if (this.state.currentTool === 'flashcards' || this.state.currentTool === 'formulas') {
+                    resultText.innerHTML = `Has repasado <strong>${this.state.activeData.length}</strong> fórmulas.`;
+                } else {
+                    resultText.innerHTML = `Has acertado <strong>${this.state.score}</strong> de <strong>${this.state.totalQuestions}</strong>.`;
+                }
+
+                const failBtn = document.getElementById('btn-retry-errors');
+                if (this.state.failedQuestions.length > 0 && this.state.currentTool !== 'formulas') {
+                    failBtn.classList.remove('hidden');
+                    document.getElementById('fail-count').innerText = this.state.failedQuestions.length;
+                } else {
+                    failBtn.classList.add('hidden');
+                }
+            },
+
+            retryErrors: function () { 
+                this.startTool(this.state.currentTool, this.state.failedQuestions); 
+            }
+        };
+
+        // Iniciar en Home al cargar
+                // --- NAVEGACIÓN ENTRE TEMAS ---
+        function setupThemeNavigation() {
+            const courseId = "3º";
+            const folderId = "Psicometría";
+            const subjectId = "psicometria";
+            const shortId = "psicometria";
+            const currentKey = "8";
+            const themeNames = {"1": "Conceptos Fundamentales y Evolución de la Psicometría", "2": "Construcción, Taxonomía y Formatos de los Test Psicológicos", "3": "La Teoría Clásica de los Test y la Fiabilidad", "4": "Análisis de Ítems y Construcción de Test", "5": "La Validez y sus Evidencias", "6": "Fiabilidad, Validez y el Efecto de la Longitud del Test", "7": "Transformación y Equiparación de Puntuaciones", "8": "Evaluación de la Calidad y Uso Ético de los Test", "9": "De la TCT a la Teoría de la Respuesta al Ítem (TRI) y los TAI"};
+            
+            const keys = Object.keys(themeNames);
+            const sortedKeys = keys.map(k => {
+                const parts = k.split('.').map(Number);
+                return { key: k, parts: parts };
+            }).sort((a, b) => {
+                for (let i = 0; i < Math.max(a.parts.length, b.parts.length); i++) {
+                    const pa = a.parts[i] !== undefined ? a.parts[i] : 0;
+                    const pb = b.parts[i] !== undefined ? b.parts[i] : 0;
+                    if (pa !== pb) return pa - pb;
+                }
+                return 0;
+            }).map(x => x.key);
+
+            const currentIdx = sortedKeys.indexOf(currentKey);
+            const container = document.getElementById('theme-navigation-container');
+            if (!container || currentIdx === -1) return;
+
+            const prevKey = sortedKeys[currentIdx - 1];
+            const nextKey = sortedKeys[currentIdx + 1];
+            const isLastTheme = currentIdx === sortedKeys.length - 1;
+
+            let prevButtonHTML = '';
+            if (prevKey) {
+                const temaFilePart = String(prevKey).replace(/\./g, '-');
+                const prevUrl = `../../../temas/${encodeURIComponent(courseId)}/${encodeURIComponent(folderId)}/${shortId}-tema-${temaFilePart}.html`;
+                prevButtonHTML = `
+                    <a href="${prevUrl}" class="flex-1 py-4 border border-slate-200 text-slate-600 rounded-2xl font-bold hover:bg-slate-50 transition text-sm flex items-center justify-center gap-2 bg-white shadow-sm hover:border-slate-300">
+                        <i class="ph-bold ph-arrow-left"></i> Tema Anterior (${prevKey})
+                    </a>
+                `;
+            } else {
+                prevButtonHTML = `<div class="flex-1"></div>`;
+            }
+
+            let nextButtonHTML = '';
+            if (nextKey) {
+                const temaFilePart = String(nextKey).replace(/\./g, '-');
+                const nextUrl = `../../../temas/${encodeURIComponent(courseId)}/${encodeURIComponent(folderId)}/${shortId}-tema-${temaFilePart}.html`;
+                nextButtonHTML = `
+                    <a href="${nextUrl}" class="flex-1 py-4 text-white rounded-2xl font-bold transition text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700" style="box-shadow: 0 8px 25px rgba(2, 132, 199, 0.3);">
+                        Tema Siguiente (${nextKey}) <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                `;
+            } else if (isLastTheme) {
+                nextButtonHTML = `
+                    <a href="../../../index.html?asignatura=${subjectId}" class="flex-1 py-4 text-white rounded-2xl font-bold transition text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700" style="box-shadow: 0 8px 25px rgba(2, 132, 199, 0.3);">
+                        <i class="ph-bold ph-trophy"></i> Ir al Examen Final <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                `;
+            } else {
+                nextButtonHTML = `<div class="flex-1"></div>`;
+            }
+
+            container.innerHTML = prevButtonHTML + nextButtonHTML;
+        }
+
+        // Iniciar en Home al cargar
+        window.onload = () => {
+            app.showView('home');
+            setupThemeNavigation();
+        };
+    </script>
+</body>
+</html>

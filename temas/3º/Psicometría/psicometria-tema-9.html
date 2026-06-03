@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIMAP - Tema 9: De la TCT a la Teoría de la Respuesta al Ítem (TRI) y los TAI</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Configuración de MathJax para renderizar LaTeX -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            startup: {
+                typeset: false // Lo llamaremos manualmente después de cargar las vistas
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #ecfeff;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(180, 80%, 92%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(160, 70%, 92%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(195, 80%, 92%, 1) 0, transparent 50%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 40px -10px rgba(6, 182, 212, 0.15);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0891b2 0%, #06b6d4 50%, #14b8a6 100%);
+            background-size: 200% 200%;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            color: white;
+            font-weight: 700;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(6, 182, 212, 0.4);
+            background-position: 100% 50%;
+        }
+
+        /* Estilos Flashcards */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .card-inner.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 1.5rem;
+        }
+
+        .card-front {
+            background: white;
+            border: 2px solid #e2e8f0;
+        }
+
+        .card-back {
+            background: #4f46e5;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .option-btn {
+            transition: all 0.2s;
+            border: 2px solid #e2e8f0;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: #06b6d4;
+            background-color: #ecfeff;
+            transform: translateX(5px);
+        }
+
+        /* MathJax adjustments to prevent overflow */
+        mjx-container {
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Global -->
+    <header class="glass-card sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="app.showView('home')">
+                <div class="bg-sky-600 text-white p-2 rounded-lg shadow-lg">
+                    <i class="ph-bold ph-chart-line-up text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-xl tracking-tight text-slate-800" id="header-title">Tema 9 - De la TCT a la Teoría de la Respuesta al Ítem (TRI) y los TAI</h1>
+                    <p class="text-[9px] uppercase tracking-widest font-bold text-slate-500">ANÁLISIS DE DATOS Y MATEMÁTICAS</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 sm:gap-4">
+                <!-- Botón Portal Principal -->
+                <a href="../../../index.html" class="bg-slate-700 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-arrow-left text-lg"></i> <span class="hidden sm:inline">Portal Principal</span>
+                </a>
+
+                <!-- Botón Calculadora Externa -->
+                <a href="https://web2.0calc.es/" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-4 rounded-xl flex items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-calculator text-lg"></i> <span class="hidden sm:inline">Calculadora</span>
+                </a>
+
+                <!-- Botón Menú Global -->
+                <button id="btn-global-menu" onclick="app.showView('home')" class="hidden bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-xl items-center gap-2 transition shadow-md text-sm">
+                    <i class="ph-bold ph-house text-lg"></i> <span class="hidden sm:inline">Menú</span>
+                </button>
+
+                <!-- Contador Global -->
+                <div id="nav-counter" class="hidden items-center gap-2 bg-white/60 px-3 py-1.5 rounded-full border border-white">
+                    <span id="global-counter" class="text-sky-700 font-bold font-mono text-sm">0/0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-5xl w-full mx-auto p-6 flex flex-col items-center justify-center">
+
+        <!-- VIEW: HOME (MENU) -->
+        <section id="view-home" class="fade-in w-full">
+            <div class="text-center mb-12">
+                <h1 class="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400 mb-8 tracking-tighter opacity-80 select-none">
+                    SAIMAP</h1>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-4">¿Cómo quieres practicar hoy?</h2>
+                <h3 class="text-xl font-bold text-slate-600 mb-4">Tema 9 - De la TCT a la Teoría de la Respuesta al Ítem (TRI) y los TAI</h3>
+                <p class="text-slate-500">Selecciona la herramienta que mejor se adapte a tu objetivo de estudio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                <!-- QUIZ -->
+                <div onclick="app.startTool('quiz')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-sky-500">
+                    <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-numbers text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Test Teórico</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Preguntas de opción múltiple sobre conceptos y propiedades estadísticas.</p>
+                </div>
+
+                <!-- LABORATORIO (Reemplaza Trainer) -->
+                <div onclick="app.startTool('laboratorio')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-emerald-500">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-calculator text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Laboratorio</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Ejercicios de cálculo numérico con escenarios guiados paso a paso.</p>
+                </div>
+
+                <!-- FÓRMULAS (Reemplaza Flashcards) -->
+                <div onclick="app.startTool('formulas')" class="glass-card p-8 rounded-3xl cursor-pointer hover:scale-105 transition-all group border-b-4 border-b-indigo-500">
+                    <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <i class="ph-bold ph-list-dashes text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fórmulas</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Glosario completo de fórmulas matemáticas para consultar rápidamente.</p>
+                </div>
+            </div>
+        
+
+            <!-- Contenedor para botones de navegación de temas -->
+            <div id="theme-navigation-container" class="mt-12 flex justify-between items-center w-full max-w-xl mx-auto gap-4 pt-6 border-t border-slate-200/60"></div>
+        </section>
+
+        <!-- VIEW: QUIZ -->
+        <section id="view-quiz" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-sky-500"></div>
+
+                <div class="flex justify-between items-center mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Modo Test</span>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">
+                            Finalizar Sesión
+                        </button>
+                    </div>
+                    <button id="quiz-hint-btn" onclick="app.quizToggleHint()" class="text-amber-600 font-bold text-xs flex items-center gap-1 hover:bg-amber-50 px-3 py-1.5 rounded-lg transition">
+                        <i class="ph-bold ph-lightbulb"></i> Ver Pista
+                    </button>
+                </div>
+
+                <h2 id="quiz-question" class="text-2xl font-bold text-slate-800 mb-8 math-content"></h2>
+
+                <div id="quiz-hint-box" class="hidden mb-6 p-4 bg-amber-50 border-l-4 border-amber-400 text-amber-900 text-sm italic rounded-r-xl math-content"></div>
+
+                <div id="quiz-options" class="space-y-3"></div>
+
+                <!-- Feedback Quiz -->
+                <div id="quiz-feedback" class="hidden mt-8 p-6 rounded-2xl border transition-all">
+                    <div class="flex items-start gap-4">
+                        <div id="quiz-feedback-icon" class="text-3xl"></div>
+                        <div class="w-full">
+                            <h4 id="quiz-feedback-title" class="font-bold text-lg"></h4>
+                            <div id="quiz-explanation" class="text-sm text-slate-600 mt-2 p-3 bg-slate-50 rounded-lg math-content"></div>
+                        </div>
+                    </div>
+                    <button onclick="app.quizNext()" class="mt-6 btn-primary py-4 px-8 rounded-xl w-full flex items-center justify-center gap-2">
+                        Continuar <i class="ph ph-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: LABORATORIO -->
+        <section id="view-laboratorio" class="hidden w-full fade-in space-y-6">
+            <div class="glass-card rounded-3xl overflow-hidden border-t-4 border-emerald-500">
+                <!-- Cabecera y Contexto -->
+                <div class="p-6 md:p-8 bg-emerald-50/50 border-b border-slate-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center font-bold" id="lab-problem-number">1</div>
+                            <h2 id="lab-main-title" class="text-xl font-bold text-slate-800"></h2>
+                        </div>
+                        <button onclick="app.finishSession()" class="text-red-500 font-bold text-[10px] uppercase tracking-tighter hover:bg-red-50 px-2 py-1 rounded-lg transition border border-red-100">Finalizar</button>
+                    </div>
+                    <div id="lab-context-box" class="bg-white/80 p-5 rounded-xl text-slate-700 math-content text-base border border-slate-200 shadow-inner"></div>
+                </div>
+
+                <!-- Contenedor de Apartados -->
+                <div id="lab-parts-container" class="flex flex-col bg-white">
+                    <!-- Los apartados se inyectan aquí automáticamente -->
+                </div>
+            </div>
+
+            <!-- Botón de siguiente problema -->
+            <button onclick="app.labNext()" class="mt-6 w-full bg-slate-800 hover:bg-slate-900 text-white py-4 rounded-xl font-bold shadow-lg transform active:scale-95 transition flex justify-center items-center gap-2">
+                Siguiente Problema <i class="ph-bold ph-arrow-right"></i>
+            </button>
+        </section>
+
+        <!-- VIEW: FÓRMULAS -->
+        <section id="view-formulas" class="hidden w-full fade-in space-y-6">
+            <div class="mb-6 px-2">
+                <h2 class="text-3xl font-black text-slate-800">Glosario de Fórmulas</h2>
+                <p class="text-slate-500 mt-1">Lista completa de recursos matemáticos</p>
+            </div>
+            
+            <!-- Grid Scrollable para las fórmulas -->
+            <div id="formulas-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-12">
+                <!-- Las fórmulas se inyectarán aquí -->
+            </div>
+        </section>
+
+        <!-- VIEW: RESULTS -->
+        <section id="view-results" class="hidden w-full fade-in text-center py-12">
+            <div class="glass-card p-12 rounded-[3rem] inline-block max-w-md w-full border-2 border-white shadow-2xl">
+                <div class="w-24 h-24 bg-yellow-400 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl shadow-yellow-200">
+                    <i class="ph-fill ph-trophy text-5xl"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold text-slate-800 mb-2">¡Sesión Finalizada!</h2>
+                <p id="result-text" class="text-slate-500 mb-8">Has completado todos los ejercicios.</p>
+
+                <div class="flex flex-col gap-3">
+                    <button id="btn-retry-errors" onclick="app.retryErrors()" class="hidden bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-2xl transition flex items-center justify-center gap-2">
+                        <i class="ph-bold ph-warning-circle"></i> Repasar solo Fallos (<span id="fail-count">0</span>)
+                    </button>
+                    <button onclick="app.showView('home')" class="btn-primary w-full py-4 rounded-2xl uppercase tracking-widest text-sm shadow-md">Menú Principal</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // --- DATOS JSON VACÍOS (Inyectados dinámicamente) ---
+        const jsonTestA = [{"q": "La Teoría de la Respuesta al Ítem (TRI) invalida y sustituye por completo los resultados obtenidos mediante la Teoría Clásica de los Test (TCT).", "options": ["Verdadero", "Falso", "No se sabe"], "correct": 1, "hint": "Revisa la relación entre ambas teorías según Muñiz (2001).", "explanation": "Según Muñiz (2001), la TRI no excluye la TCT; ambas conviven y son complementarias en la construcción de tests psicológicos modernos."}, {"q": "En la TRI, el error de medida se mantiene constante a lo largo de todos los niveles de habilidad ($\\theta$) de los sujetos evaluados.", "options": ["Verdadero", "Falso", "No se sabe"], "correct": 1, "hint": "Considera la función de información del test.", "explanation": "A diferencia de la TCT, en la TRI el error de medida varía según el nivel de habilidad, siendo inversamente proporcional a la raíz de la información."}, {"q": "El supuesto de independencia local implica que, para un nivel fijo de $\\theta$, las respuestas a los ítems no presentan correlación entre sí.", "options": ["Verdadero", "Falso", "No se sabe"], "correct": 0, "hint": "Analiza la definición de probabilidad conjunta en modelos unidimensionales.", "explanation": "La independencia local exige que la probabilidad de un patrón de respuesta sea el producto de las probabilidades individuales para un $\\theta$ dado."}, {"q": "Un espacio latente se considera 'completo' si todos los rasgos necesarios para explicar la conducta han sido especificados convenientemente.", "options": ["Verdadero", "Falso", "No se sabe"], "correct": 0, "hint": "Consulta la definición de De Gruijter y Van der Kamp (1984).", "explanation": "El espacio latente está completo cuando se han definido todos los rasgos (unidimensionales o multidimensionales) que explican la respuesta al ítem."}, {"q": "El parámetro $b$ en la TRI se mide en una escala distinta a la del rasgo latente $\\theta$ para evitar la circularidad en la estimación.", "options": ["Verdadero", "Falso", "No se sabe"], "correct": 1, "hint": "Observa la representación en el eje de abscisas de la CCI.", "explanation": "En la TRI, tanto la dificultad del ítem ($b$) como la habilidad del sujeto ($\\theta$) se sitúan en la misma escala métrica de la variable latente."}, {"q": "El modelo de Rasch (1PL) asume que todos los ítems del test poseen exactamente el mismo índice de discriminación (parámetro $a$).", "options": ["Verdadero", "Falso", "No se sabe"], "correct": 0, "hint": "Evalúa las restricciones de parámetros en los modelos logísticos.", "explanation": "El modelo de Rasch es un modelo de un solo parámetro ($b$), asumiendo que $a$ es constante (generalmente 1) para todos los ítems del test."}, {"q": "La validez consecuencial (Messick, 1989) excluye las consecuencias sociales del uso de los tests de los estudios formales de validación.", "options": ["Verdadero", "Falso", "No se sabe"], "correct": 1, "hint": "Considera el marco integrador propuesto por Messick.", "explanation": "La validez consecuencial integra precisamente las consecuencias sociales y prácticas del uso de las puntuaciones en el marco de la validación."}, {"q": "El estadístico $Q_2$ de ajuste al modelo sigue una distribución $\\chi^2$ con un número de grados de libertad igual al número de categorías $k$.", "options": ["Verdadero", "Falso", "No se sabe"], "correct": 1, "hint": "Revisa la fórmula de Wright y Panchapakesan (1969).", "explanation": "El estadístico $Q_2$ se distribuye según $\\chi^2$ con $k - 1$ grados de libertad, donde $k$ es el número de categorías de aptitud consideradas."}, {"q": "En un Test Adaptativo Informatizado (TAI), la precisión de la medida aumenta a medida que se reduce el número de ítems administrados.", "options": ["Verdadero", "Falso", "No se sabe"], "correct": 1, "hint": "Analiza la eficiencia frente a la precisión absoluta.", "explanation": "Aunque el TAI es más eficiente, la precisión (error de medida) suele ser el criterio de parada; no aumenta simplemente por reducir ítems."}, {"q": "La estimación de máxima verosimilitud en la TRI requiere obligatoriamente el uso de cálculo informatizado debido a su carácter iterativo.", "options": ["Verdadero", "Falso", "No se sabe"], "correct": 0, "hint": "Analiza el proceso de aproximaciones sucesivas.", "explanation": "Dada la complejidad de las funciones logísticas y la necesidad de iteraciones sucesivas, el apoyo informático es imprescindible en la práctica."}, {"q": "Elija la afirmación correcta sobre la dependencia muestral en los estadísticos de la Teoría Clásica de los Test (TCT).", "options": ["El índice de discriminación es independiente de la variabilidad de la muestra.", "La dificultad del ítem calculada en la TCT depende de la habilidad del grupo.", "Los coeficientes de fiabilidad son invariantes respecto al grupo normativo."], "correct": 1, "hint": "Considera cómo se calcula la proporción de aciertos en la TCT.", "explanation": "En la TCT, el índice de dificultad ($p$) depende directamente del nivel de aptitud de la muestra sobre la que se calcula el estadístico."}, {"q": "Elija la afirmación correcta respecto al parámetro de discriminación ($a$) en los modelos logísticos de la TRI.", "options": ["Es inversamente proporcional a la pendiente de la recta tangente en el punto $b$.", "Representa la probabilidad de acertar el ítem cuando el nivel de habilidad es bajo.", "Es proporcional a la pendiente de la curva en el punto de máxima inclinación."], "correct": 2, "hint": "Revisa la interpretación geométrica de la CCI.", "explanation": "El parámetro $a$ determina la capacidad del ítem para diferenciar sujetos y equivale a la pendiente de la CCI en su punto de inflexión."}, {"q": "Elija la afirmación correcta sobre el modelo de tres parámetros (3PL) según la Ecuación 69 del texto.", "options": ["Incorpora el parámetro $c$ para modelar los aciertos por adivinación o azar.", "Elimina el parámetro $a$ para simplificar la estimación de la función logística.", "Asume que la probabilidad mínima de acierto es siempre cero para todo sujeto."], "correct": 0, "hint": "Identifica qué factor añade el tercer parámetro a la función.", "explanation": "El modelo 3PL añade el parámetro $c$ (pseudo-adivinación), que representa la asíntota inferior de la curva característica del ítem."}, {"q": "Elija la afirmación correcta sobre la función de información del test ($I(\\theta)$) definida por Birnbaum (1968).", "options": ["Equivale a la media aritmética de las funciones de información de cada ítem.", "Se define como la suma de las funciones de información de los ítems del test.", "Es un valor constante que no depende del nivel de habilidad del examinado."], "correct": 1, "hint": "Consulta la Ecuación 73 para la agregación de información.", "explanation": "La información total del test es la suma aditiva de la información proporcionada por cada ítem de manera independiente para cada nivel $\\theta$."}, {"q": "Elija la afirmación correcta sobre los requisitos de tamaño muestral para la estabilidad de parámetros en la TRI.", "options": ["Los modelos de un solo parámetro requieren muestras mínimas de 500 sujetos.", "El modelo 3PL puede estimarse de forma robusta con apenas 100 evaluados.", "La inestabilidad de parámetros es un riesgo alto con menos de 250 sujetos."], "correct": 2, "hint": "Revisa las recomendaciones de Reeve y Fayers (2005).", "explanation": "Reeve y Fayers (2005) situaron el límite de riesgo para la inestabilidad de los parámetros en muestras inferiores a 250 evaluados."}, {"q": "Elija la afirmación correcta respecto a la 'independencia local' en los modelos de un solo rasgo latente.", "options": ["Impide que las respuestas a los ítems estén correlacionadas en la muestra total.", "Exige que la correlación entre ítems sea nula tras controlar el nivel de $\\theta$.", "Solo es necesaria cuando se utilizan ítems encadenados o dependientes entre sí."], "correct": 1, "hint": "Analiza el papel de $\\theta$ como variable mediadora de la asociación.", "explanation": "La independencia local significa que la relación entre ítems se explica totalmente por la aptitud común, desapareciendo al fijar dicha variable."}, {"q": "Elija la afirmación correcta sobre el procedimiento multinivel en los Test Adaptativos Informatizados (TAI).", "options": ["Aplica un test estándar a todos los sujetos antes de iniciar la fase adaptativa.", "Comienza con un ítem de dificultad media y ajusta según las respuestas dadas.", "Requiere que el sujeto responda a todos los ítems del banco en orden creciente."], "correct": 1, "hint": "Identifica la estrategia de selección de ítems paso a paso.", "explanation": "El procedimiento multinivel selecciona ítems uno a uno, ajustando la dificultad en tiempo real basándose en el patrón de aciertos y errores."}, {"q": "Elija la afirmación correcta sobre la relación entre el parámetro $a$ y la correlación biserial ($r_b$) de la TCT.", "options": ["El valor de $a$ es idéntico al índice de discriminación calculado en la TCT.", "Bajo normalidad, $a = r_{it} / \\sqrt{1-r_{it}^2}$ según la expresión de Lord (1980).", "El parámetro $a$ es independiente de la correlación ítem-test de la muestra."], "correct": 1, "hint": "Observa la Ecuación 65 y las condiciones de su aplicación.", "explanation": "Bajo el supuesto de normalidad en $\\theta$, el parámetro $a$ se vincula con la discriminación clásica mediante la función $a = \\frac{r_{it}}{\\sqrt{1-r_{it}^2}}$."}, {"q": "Elija la afirmación correcta sobre la interpretación del parámetro $b$ en la curva característica del ítem.", "options": ["Es el valor de $\\theta$ para el cual la probabilidad de acierto es siempre 0,50.", "Representa el punto de la escala de capacidad donde el ítem discrimina mejor.", "Indica la probabilidad de acertar el ítem cuando la habilidad tiende a $-\\infty$."], "correct": 1, "hint": "Relaciona el parámetro con la pendiente máxima de la función.", "explanation": "El parámetro $b$ localiza el punto de máxima pendiente de la CCI, que es donde el ítem ofrece su máxima capacidad de discriminación."}, {"q": "Elija la afirmación correcta sobre las ventajas de la TRI respecto a la TCT según Lord y Stocking (1988).", "options": ["Permite predecir propiedades del test antes de su administración empírica.", "Garantiza que la construcción de formas paralelas sea un proceso automático.", "Reduce el error de medida a cero mediante la estimación de rasgos latentes."], "correct": 0, "hint": "Busca la utilidad de los parámetros invariantes de los ítems.", "explanation": "Una ventaja clave es la posibilidad de predecir el comportamiento del test a partir de los parámetros invariantes de los ítems que lo componen."}, {"q": "Elija la afirmación correcta sobre la estimación de la puntuación verdadera en la TCT frente a la TRI.", "options": ["En la TCT, la estimación es independiente de la media del grupo normativo.", "En la TRI, la posición en la escala latente depende del test específico usado.", "En la TCT, la estimación depende de la fiabilidad obtenida en una muestra."], "correct": 2, "hint": "Revisa las limitaciones 5 y 7 recogidas en la introducción.", "explanation": "En la TCT, el intervalo de confianza de la puntuación verdadera depende de la fiabilidad y variabilidad de la muestra de referencia."}, {"q": "Elija la afirmación correcta sobre el concepto de 'análisis de clase latente'.", "options": ["Se aplica cuando la escala del rasgo latente es de naturaleza continua.", "Se utiliza cuando la escala de medida del rasgo latente es categórica.", "Es un sinónimo exacto de la Teoría de la Respuesta al Ítem tradicional."], "correct": 1, "hint": "Distingue entre modelos según la naturaleza de la escala latente.", "explanation": "El análisis de clase latente se diferencia de la TRI en que considera el rasgo latente como una variable de tipo categórico o discreto."}, {"q": "Elija la afirmación correcta sobre el parámetro $c$ en el modelo logístico de tres parámetros.", "options": ["Se estima empíricamente como el cociente entre aciertos y errores totales.", "Representa la probabilidad de acierto para sujetos con niveles muy bajos de $\\theta$.", "Su valor óptimo es siempre 0,5 independientemente del número de opciones."], "correct": 1, "hint": "Analiza el comportamiento de la CCI cuando $\\theta \\to -\\infty$.", "explanation": "El parámetro $c$ es la asíntota inferior de la curva, reflejando la probabilidad de acierto por azar en niveles ínfimos de competencia."}, {"q": "Elija la afirmación correcta sobre la varianza del error en la TRI (Ecuación 72).", "options": ["Es el recíproco de la suma de las funciones de información de los ítems.", "Equivale al cuadrado del error típico de medida utilizado en la TCT.", "Se calcula como el producto de $P_i(\\theta)$ por $Q_i(\\theta)$ para cada ítem del test."], "correct": 0, "hint": "Relaciona la varianza del error con el concepto de información.", "explanation": "La varianza del error de estimación de $\\theta$ es igual a $1 / I(\\theta)$, donde $I(\\theta)$ es la función de información del test."}, {"q": "Elija la afirmación correcta sobre el algoritmo de arranque en un Test Adaptativo Informatizado (TAI).", "options": ["Finaliza la prueba cuando se alcanza un nivel de precisión preestablecido.", "Determina qué ítem se presenta inicialmente para comenzar la evaluación.", "Calcula la estimación final de la habilidad tras la presentación de ítems."], "correct": 1, "hint": "Identifica la función de la fase inicial según el diagrama de flujo.", "explanation": "La estrategia de arranque es el componente del algoritmo encargado de decidir con qué ítem o nivel de dificultad se inicia la sesión."}, {"q": "Elija la afirmación incorrecta respecto a las limitaciones de la Teoría Clásica de los Test (TCT).", "options": ["Las medidas dependen de la muestra de sujetos utilizada para el cálculo.", "No permite explicar la respuesta de un individuo a cada ítem por separado.", "Asume que el error de medida varía según el nivel de habilidad del sujeto."], "correct": 2, "hint": "Busca el supuesto del error en la TCT según el punto 6 del texto.", "explanation": "La TCT asume erróneamente que el error de medida es idéntico para todas las puntuaciones, independientemente del nivel de habilidad."}, {"q": "Elija la afirmación incorrecta sobre los supuestos fundamentales de la Teoría de la Respuesta al Ítem (TRI).", "options": ["Las respuestas se explican por uno o varios rasgos latentes no observables.", "La probabilidad de acierto depende exclusivamente de las opciones del ítem.", "Se asume la independencia local entre los ítems para un valor de $\\theta$ dado."], "correct": 1, "hint": "Considera los dos factores que determinan la respuesta en la TRI.", "explanation": "Es incorrecto que dependa solo del ítem; la respuesta depende de la interacción entre la habilidad del sujeto y las características del ítem."}, {"q": "Elija la afirmación incorrecta sobre la Curva Característica del Ítem (CCI).", "options": ["Representa la relación funcional entre el rasgo latente y la probabilidad de acierto.", "La forma general de las CCI utilizadas en la TRI suele ser de tipo sigmoide o 'S'.", "Todas las CCI de un test deben ser idénticas para garantizar la unidimensionalidad."], "correct": 2, "hint": "Revisa si la CCI es específica de cada ítem o general para el test.", "explanation": "Cada ítem tiene su propia CCI caracterizada por sus parámetros específicos ($a, b, c$), aunque compartan una misma forma funcional."}, {"q": "Elija la afirmación incorrecta sobre el parámetro de dificultad ($b$) en los modelos de la TRI.", "options": ["Su valor coincide con el punto de máxima pendiente en los modelos logísticos.", "En el modelo de Rasch, es el único parámetro del ítem que se debe estimar.", "Se calcula como la proporción de sujetos que fallan el ítem en la muestra."], "correct": 2, "hint": "Distingue entre el cálculo de dificultad en TCT y en TRI.", "explanation": "La afirmación es incorrecta porque describe el índice de dificultad de la TCT ($p$ o $q$), no el parámetro $b$ de la escala latente en la TRI."}, {"q": "Elija la afirmación incorrecta respecto al estadístico de contraste $Q_2$ (Ecuación 70).", "options": ["Se utiliza para evaluar el ajuste de los datos empíricos al modelo TRI elegido.", "Compara las probabilidades predichas por el modelo con las proporciones reales.", "Requiere que el número de evaluados en cada categoría de aptitud sea idéntico."], "correct": 2, "hint": "Observa el término $n_j$ en la sumatoria del estadístico.", "explanation": "El estadístico $Q_2$ contempla el número de personas en cada categoría ($n_j$), pero este no tiene por qué ser el mismo en todas ellas."}, {"q": "Elija la afirmación incorrecta sobre el procedimiento de 'doble nivel' en la aplicación de los TAI.", "options": ["Comienza con la aplicación de un test estándar idéntico para todos los sujetos.", "Selecciona el siguiente ítem basándose en la respuesta inmediata al anterior.", "Utiliza la puntuación de la primera fase para asignar un test adaptativo final."], "correct": 1, "hint": "Distingue entre el procedimiento de doble nivel y el multinivel.", "explanation": "La selección ítem a ítem según la respuesta previa es característica del procedimiento multinivel, no del de doble nivel."}, {"q": "Elija la afirmación incorrecta sobre las ventajas del uso de ordenadores en psicometría (TAI).", "options": ["Permiten evaluar procesos psicológicos básicos de forma mucho más dinámica.", "Garantizan que todos los sujetos reciban exactamente el mismo conjunto de ítems.", "Facilitan el registro de información adicional como los tiempos de respuesta."], "correct": 1, "hint": "Recuerda la definición central de 'adaptativo'.", "explanation": "Lo característico de los TAI es precisamente que los ítems varían para cada sujeto según su nivel, no que sean idénticos para todos."}, {"q": "Elija la afirmación incorrecta sobre el modelo logístico de un parámetro o modelo de Rasch.", "options": ["Es el modelo más parsimonioso de la TRI al estimar solo la dificultad ($b$).", "Asume que el parámetro de conjetura ($c$) es igual a 0,5 en todos los ítems.", "Se ha mostrado robusto ante variaciones moderadas en la discriminación."], "correct": 1, "hint": "Revisa los supuestos del modelo de Rasch sobre el azar.", "explanation": "El modelo de Rasch asume que no hay aciertos por azar, por lo que el parámetro $c$ se considera implícitamente igual a cero."}, {"q": "Elija la afirmación incorrecta sobre el 'espacio latente' en psicometría moderna.", "options": ["Es un espacio k-dimensional donde se sitúan los puntos de los individuos.", "Debe tener tantas dimensiones como rasgos influyan en el resultado del test.", "Es siempre unidimensional por definición para poder calcular el error típico."], "correct": 2, "hint": "Considera la diferencia entre modelos uni y multidimensionales.", "explanation": "El espacio latente puede ser multidimensional si se requiere más de un rasgo para explicar la conducta; la unidimensionalidad es solo un caso."}, {"q": "Elija la afirmación incorrecta sobre las condiciones para el uso de los TAI según Wainer y Eignor (2000).", "options": ["Tienen sentido cuando el test debe ofrecerse de forma continua en el tiempo.", "Son recomendables si la naturaleza del constructo se beneficia de la informática.", "Deben usarse siempre que se disponga de un ordenador, sin importar el banco."], "correct": 2, "hint": "Busca la importancia de la calibración previa del banco de ítems.", "explanation": "El uso de TAI requiere un banco de ítems perfectamente calibrado bajo la TRI; disponer de hardware no justifica su uso por sí solo."}, {"q": "Elija la afirmación incorrecta sobre el parámetro $a$ bajo la condición de normalidad.", "options": ["Es proporcional a la tangente de la pendiente de la función en el punto $b$.", "Se relaciona con la correlación biserial ítem-test de la teoría clásica.", "Su valor aumenta linealmente con la media de las puntuaciones del grupo."], "correct": 2, "hint": "Evalúa la invarianza de los parámetros en la TRI.", "explanation": "En la TRI, los parámetros de los ítems son invariantes y no dependen de la media de las puntuaciones del grupo que responde."}, {"q": "Elija la afirmación incorrecta sobre la independencia local y los ítems encadenados.", "options": ["La independencia local es compatible con el uso de ítems que dependen entre sí.", "Si un ítem depende de la respuesta anterior, se viola el supuesto de independencia.", "En ítems encadenados, la probabilidad conjunta no es el producto de las simples."], "correct": 0, "hint": "Revisa el último párrafo del apartado 9.1.4.", "explanation": "El texto establece explícitamente que el supuesto de independencia local no puede ser asumido si se utilizan ítems encadenados."}, {"q": "Elija la afirmación incorrecta sobre la 'invarianza' de los parámetros en la TRI.", "options": ["Los parámetros de los ítems no varían según la población a la que se apliquen.", "La posición del sujeto en el rasgo latente depende de los ítems específicos usados.", "El parámetro de capacidad permanece invariante a través de distintos conjuntos de ítems."], "correct": 1, "hint": "Revisa la síntesis de Meliá (1990) sobre la invarianza.", "explanation": "La invarianza implica que la estimación de $\\theta$ es independiente del conjunto específico de ítems utilizados, siempre que midan el mismo rasgo."}, {"q": "Elija la afirmación incorrecta sobre la estimación de máxima verosimilitud conjunta.", "options": ["Busca los valores que maximizan la probabilidad de observar los datos reales.", "Permite estimar simultáneamente los parámetros de los ítems y los de las personas.", "Es un método directo que no requiere aproximaciones sucesivas ni iteraciones."], "correct": 2, "hint": "Analiza la complejidad del proceso de estimación descrito en el texto.", "explanation": "La estimación de máxima verosimilitud es un proceso iterativo que se realiza por aproximaciones sucesivas, no es un cálculo directo."}, {"q": "Elija la afirmación incorrecta sobre la contradicción de Meliá (1993) respecto a la TCT.", "options": ["Señala que para saber si dos pruebas son paralelas hay que calcular la fiabilidad.", "Sostiene que la correlación entre formas no paralelas es el coeficiente de fiabilidad.", "Afirma que el único contacto con la realidad es el cálculo de la fiabilidad si hay paralelismo."], "correct": 1, "hint": "Analiza la lógica circular descrita en el punto 4 del apartado 9.1.1.", "explanation": "La contradicción radica en que si las formas no son paralelas, su correlación NO es el coeficiente de fiabilidad, invalidando el proceso."}];
+        const jsonTestB = [{"q": "En la TRI, si un ítem presenta una correlación biserial $r_{bi} = 0,80$, el valor del parámetro de discriminación $a$ es ____.", "options": ["$a = 1,333$", "$a = 1,250$", "$a = 1,777$"], "correct": 0, "hint": "Recuerde la fórmula $a = r_{bi} / \\sqrt{1 - r_{bi}^2}$ y no olvide elevar al cuadrado antes de la resta.", "explanation": "Aplicando la Ecuación 65: $a = 0,8 / \\sqrt{1 - 0,64} = 0,8 / 0,6 = 1,333$. Los distractores simulan olvidar la raíz o el cuadrado."}, {"q": "Si la proporción de aciertos es $0,1587$ ($Z_p = -1,00$) y $r_{bi} = 0,50$, el índice de dificultad $b$ en la escala $\\theta$ es ____.", "options": ["$b = -2,000$", "$b = +2,000$", "$b = +0,500$"], "correct": 1, "hint": "La fórmula de transformación requiere un signo negativo previo: $b = -Z_p / r_{bi}$.", "explanation": "Según la Ecuación 66: $b = -(-1,0) / 0,5 = 2,0$. Un error común es omitir el signo negativo de la fórmula, resultando en $-2$."}, {"q": "Bajo el modelo de Rasch, la probabilidad de acierto para un sujeto con $\\theta = 2,0$ ante un ítem con $b = 2,0$ es exactamente ____.", "options": ["$P(\\theta) = 0,500$", "$P(\\theta) = 0,850$", "$P(\\theta) = 1,000$"], "correct": 0, "hint": "En el punto donde la habilidad iguala a la dificultad, el exponente de $e$ se anula.", "explanation": "Si $\\theta = b$, el exponente $D(\\theta - b) = 0$. Dado que $e^0 = 1$, la probabilidad es $1 / (1+1) = 0,5$."}, {"q": "En un modelo 2PL con $a = 1,0$, $b = 1,0$ y $D = 1,7$, la probabilidad de acierto para $\\theta = 2,0$ es aproximadamente ____.", "options": ["$P(\\theta) = 0,845$", "$P(\\theta) = 0,731$", "$P(\\theta) = 0,670$"], "correct": 0, "hint": "Calcule el exponente como $1,7 \\cdot 1,0 \\cdot (2,0 - 1,0)$ antes de aplicar la función logística.", "explanation": "Exponente $= 1,7(1) = 1,7$. $P = e^{1,7} / (1 + e^{1,7}) = 5,47 / 6,47 \\approx 0,845$. El valor $0,731$ surge de omitir $D=1,7$."}, {"q": "Para un ítem con $a = 1,5$, $b = 0$ y $c = 0,20$, la probabilidad de acierto para un sujeto con $\\theta = 0$ es ____.", "options": ["$P(\\theta) = 0,600$", "$P(\\theta) = 0,500$", "$P(\\theta) = 0,350$"], "correct": 0, "hint": "En el modelo 3PL, cuando la logística base es $0,5$, el resultado es $c + (1-c) \\cdot 0,5$.", "explanation": "La logística es $0,5$ porque $\\theta = b$. Entonces $P = 0,2 + (0,8 \\cdot 0,5) = 0,2 + 0,4 = 0,6$. El error común es ignorar el parámetro $c$."}, {"q": "Si el error estándar de medida en TRI es $0,50$, el valor de la Función de Información del Test ($I(\\theta)$) en ese punto es ____.", "options": ["$I(\\theta) = 4,000$", "$I(\\theta) = 2,000$", "$I(\\theta) = 0,250$"], "correct": 0, "hint": "El error estándar es la raíz cuadrada de la varianza del error, que a su vez es el recíproco de la información.", "explanation": "$SE = \\sqrt{1/I}$. Si $SE = 0,5$, la varianza es $0,25$. Por tanto, $I = 1 / 0,25 = 4$."}, {"q": "El estadístico $Q_2$ de Wright para un ítem analizado en $6$ categorías de aptitud se distribuye como $\\chi^2$ con ____ grados de libertad.", "options": ["$gl = 5,000$", "$gl = 6,000$", "$gl = 4,000$"], "correct": 0, "hint": "Los grados de libertad para una sola variable categórica en este ajuste son $k - 1$.", "explanation": "Según la teoría de Wright y Panchapakesan, para un ítem el estadístico sigue una distribución $\\chi^2$ con $k-1$ grados de libertad."}, {"q": "En el cálculo de $Q_2$, si la probabilidad predicha $P(\\theta_j)$ es $0,80$ y la empírica $P_e(\\theta_j)$ es $0,70$ con $n_j=100$, el sumando es ____.", "options": ["$Sum = 6,250$", "$Sum = 0,625$", "$Sum = 1,000$"], "correct": 0, "hint": "Aplique la fórmula $n_j(P-P_e)^2 / (P(1-P))$. No confunda el denominador con la varianza empírica.", "explanation": "Numerador: $100(0,1)^2 = 1$. Denominador: $0,8 \\cdot 0,2 = 0,16$. Resultado: $1 / 0,16 = 6,25$."}, {"q": "Un test de $20$ ítems analizado en $5$ categorías mediante $Q_{2T}$ genera una distribución $\\chi^2$ con ____ grados de libertad.", "options": ["$gl = 76,00$", "$gl = 100,0$", "$gl = 80,00$"], "correct": 0, "hint": "Utilice la fórmula $(k-1)(r-1)$ donde $r$ es el número total de ítems.", "explanation": "Ecuación 71: $(5-1)(20-1) = 4 \\cdot 19 = 76$. Multiplicar directamente $k \\cdot r$ es un error frecuente."}, {"q": "Si la varianza del error para un nivel $\\theta$ es $0,16$, el intervalo de confianza al $95\\%$ para una estimación $\\hat{\\theta}=1,0$ es ____.", "options": ["$[0,21; 1,78]$", "$[0,61; 1,39]$", "$[0,84; 1,16]$"], "correct": 0, "hint": "Calcule el error estándar como la raíz de $0,16$ antes de multiplicar por el valor crítico $1,96$.", "explanation": "$SE = \\sqrt{0,16} = 0,4$. Error máximo $= 0,4 \\cdot 1,96 = 0,784$. Intervalo: $1 \\pm 0,784$, es decir, $[0,216; 1,784]$."}, {"q": "En un ítem de elección múltiple con $5$ alternativas, el valor teórico del parámetro $c$ es ____.", "options": ["$c = 0,200$", "$c = 0,250$", "$c = 0,050$"], "correct": 0, "hint": "El parámetro de conjetura se estima como el recíproco del número de opciones de respuesta.", "explanation": "$c = 1/m$. Con $5$ alternativas, $1/5 = 0,20$. Confundir con $4$ alternativas ($0,25$) es un error típico."}, {"q": "La probabilidad de acierto al azar en la TCT para un test de $4$ opciones es idéntica al parámetro ____ de la TRI.", "options": ["$c = 0,250$", "$b = 0,250$", "$a = 0,250$"], "correct": 0, "hint": "Busque el parámetro que representa la asíntota inferior de la curva característica.", "explanation": "El parámetro $c$ (pseudo-adivinación) representa la probabilidad de acierto por azar, que en TCT es $1/m = 1/4 = 0,25$."}, {"q": "Para un ítem con $I(\\theta, u_i) = 0,64$, el error estándar específico de ese ítem (si fuera el único en el test) sería ____.", "options": ["$SE = 1,250$", "$SE = 0,800$", "$SE = 1,562$"], "correct": 0, "hint": "Recuerde que el error estándar es la inversa de la raíz de la información: $1 / \\sqrt{I}$.", "explanation": "$\\sqrt{0,64} = 0,8$. $SE = 1 / 0,8 = 1,25$. Un error común es calcular simplemente $\\sqrt{I}$ o $1/I$."}, {"q": "En el modelo de Rasch, si el nivel de aptitud $\\theta$ aumenta en $1$ unidad por encima de $b$, la razón de probabilidades (odds) de acierto es ____.", "options": ["$Odds = 5,47$", "$Odds = 2,71$", "$Odds = 1,70$"], "correct": 0, "hint": "La razón de probabilidades en el modelo logístico con $D=1,7$ es $e^{D(\\theta-b)}$.", "explanation": "$e^{1,7(1)} = e^{1,7} \\approx 5,47$. Omitir la constante $D$ daría $2,71$."}, {"q": "Si un banco de ítems para un TAI tiene parámetros $a$ promediando $1,2$, el ítem que aporta máxima información para $\\theta=b$ tendrá un valor de $a^2 \\cdot 0,25 \\cdot 1,7^2$. Con $a=1,2$, esto es ____.", "options": ["$Inf = 1,040$", "$Inf = 0,360$", "$Inf = 0,612$"], "correct": 0, "hint": "La información máxima de un ítem 2PL en $\\theta=b$ es $D^2 a^2 / 4$.", "explanation": "$1,7^2 \\cdot 1,2^2 / 4 = 2,89 \\cdot 1,44 / 4 = 1,0404$."}, {"q": "Un sujeto con $\\theta = -1,5$ se enfrenta a un ítem con $b = -1,5$. La pendiente de la CCI en ese punto exacto es ____.", "options": ["$Pend = 0,425$", "$Pend = 0,250$", "$Pend = 1,700$"], "correct": 0, "hint": "La pendiente máxima de la función logística $P(1-P)D a$ ocurre cuando $P=0,5$. Considere $a=1$ si no se indica.", "explanation": "Pendiente $= 0,5 \\cdot (1-0,5) \\cdot 1,7 \\cdot 1 = 0,25 \\cdot 1,7 = 0,425$."}, {"q": "Para asegurar estabilidad en los parámetros de un modelo 3PL, el tamaño muestral mínimo recomendado suele ser de ____ sujetos.", "options": ["$N = 500,0$", "$N = 100,0$", "$N = 250,0$"], "correct": 0, "hint": "A mayor número de parámetros, mayor es el requisito de participantes para evitar la inestabilidad.", "explanation": "Embretson y Reise sugieren $500$ como mínimo para modelos complejos como el 3PL."}, {"q": "En el modelo 1PL, la primera derivada de la función de respuesta $P'_i(\\theta)$ evaluada en $\\theta = b$ resulta en ____.", "options": ["$P' = 0,425$", "$P' = 0,250$", "$P' = 0,500$"], "correct": 0, "hint": "La derivada de la logística es $D \\cdot P \\cdot (1-P)$.", "explanation": "$1,7 \\cdot 0,5 \\cdot 0,5 = 0,425$. Es la pendiente máxima del modelo de Rasch."}, {"q": "Si un TAI utiliza el criterio de parada de error estándar $\\le 0,30$, la información acumulada mínima requerida es ____.", "options": ["$Inf = 11,11$", "$Inf = 3,333$", "$Inf = 9,000$"], "correct": 0, "hint": "Relacione la información con el error mediante $I = 1 / SE^2$.", "explanation": "$I = 1 / (0,3^2) = 1 / 0,09 = 11,111$."}, {"q": "El parámetro de discriminación $a$ en la TRI es proporcional a la ____ de la recta tangente en el punto de máxima pendiente.", "options": ["$Pendiente$", "$Asintota$", "$Ordenada$"], "correct": 0, "hint": "Es el valor que determina cuán 'empinada' es la curva en su centro.", "explanation": "El parámetro $a$ define la inclinación o pendiente de la curva en el punto de inflexión."}, {"q": "Respecto a las limitaciones de la Teoría Clásica de los Test (TCT), se puede afirmar que ____.", "options": ["Todas las anteriores son correctas", "Existe dependencia de la muestra", "El error es constante para todos"], "correct": 0, "hint": "Revise los puntos del 1 al 8 detallados en la introducción del Capítulo 9.", "explanation": "La TCT sufre de dependencia muestral, asume error constante y tiene dificultades con grupos extremos."}, {"q": "Las ventajas de la TRI sobre la TCT, según Lord y Stocking (1988), incluyen que ____.", "options": ["Todas las anteriores son correctas", "Describe ítems sin usar muestras", "Predice propiedades antes de test"], "correct": 0, "hint": "Estas ventajas se basan en la propiedad de invarianza de los parámetros.", "explanation": "La TRI permite la independencia de la muestra de sujetos y de ítems, además de la predicción de propiedades."}, {"q": "El supuesto de independencia local en la TRI implica necesariamente que ____.", "options": ["Todas las anteriores son correctas", "La aptitud $\\theta$ explica la varianza", "Las respuestas no están enlazadas"], "correct": 0, "hint": "Sin independencia local, la unidimensionalidad del rasgo se vería comprometida.", "explanation": "Requiere que la probabilidad de un patrón sea el producto de probabilidades individuales dado $\\theta$."}, {"q": "Sobre los modelos logísticos utilizados en la TRI, es correcto afirmar que ____.", "options": ["Todas las anteriores son correctas", "El 1PL solo estima la dificultad", "El 3PL añade el acierto por azar"], "correct": 0, "hint": "Cada modelo añade un parámetro al anterior para capturar más complejidad del ítem.", "explanation": "Los modelos de 1, 2 y 3 parámetros se diferencian por la inclusión de $b$, $a$ y $c$ respectivamente."}, {"q": "En el marco de los Tests Adaptativos Informatizados (TAI), se puede asegurar que ____.", "options": ["Todas las anteriores son correctas", "Aumentan la precisión de medida", "Reducen el tiempo de aplicación"], "correct": 0, "hint": "Los TAI optimizan la evaluación seleccionando los ítems más informativos para el sujeto.", "explanation": "Al ajustar la dificultad al nivel de competencia, se gana precisión y eficiencia temporal."}, {"q": "La validez consecuencial (Messick, 1989) propone integrar en la validación ____.", "options": ["Todas las anteriores son correctas", "Consecuencias sociales del uso", "Utilidad de las puntuaciones"], "correct": 0, "hint": "Este enfoque va más allá de la estructura interna para mirar el impacto del test.", "explanation": "Busca un equilibrio entre la finalidad instrumental y los efectos derivados del uso del test."}, {"q": "Los elementos fundamentales que constituyen un algoritmo de TAI son ____.", "options": ["Todas las anteriores son correctas", "Un banco de ítems calibrado", "Un criterio de parada preciso"], "correct": 0, "hint": "Un TAI requiere infraestructura (banco), lógica (selección) y estadística (estimación).", "explanation": "Se necesita el banco, reglas de inicio/fin y un método de estimación de rasgos."}, {"q": "Los beneficios de la aplicación informatizada de test (Olea y Hontangas) incluyen ____.", "options": ["Todas las anteriores son correctas", "Feedback inmediato al evaluado", "Control de seguridad de la prueba"], "correct": 0, "hint": "La digitalización permite automatizar procesos que en papel son lentos o propensos a error.", "explanation": "Incluye rapidez, menores errores de corrección y registro de tiempos de respuesta."}, {"q": "Sobre la estimación de parámetros en la TRI, se puede decir que ____.", "options": ["Todas las anteriores son correctas", "Usa Máxima Verosimilitud (ML)", "Requiere cálculo informatizado"], "correct": 0, "hint": "Dada la complejidad de las funciones logísticas, se requieren procesos iterativos.", "explanation": "La estimación busca los valores que hacen más verosímiles los datos observados mediante iteraciones."}, {"q": "La función de información de un ítem $I(\\theta, u_i)$ depende de ____.", "options": ["Todas las anteriores son correctas", "La pendiente de la curva (a)", "La probabilidad de acierto (P)"], "correct": 0, "hint": "La fórmula involucra tanto la derivada de la CCI como el producto $P \\cdot Q$.", "explanation": "La precisión está ligada a la discriminación del ítem y a su cercanía al nivel de aptitud del sujeto."}, {"q": "Un supuesto falso sobre la invarianza de los parámetros en la TRI es que ____.", "options": ["Ninguna de las anteriores es correcta", "Depende del grupo normativo", "Varía según el test aplicado"], "correct": 0, "hint": "La invarianza es la propiedad estrella de la TRI, lo opuesto a la TCT.", "explanation": "Los parámetros de la TRI son precisamente invariantes respecto a la muestra y al instrumento."}, {"q": "Es incorrecto afirmar sobre el parámetro de dificultad $b$ que ____.", "options": ["Ninguna de las anteriores es correcta", "Representa la pendiente máxima", "Es independiente de la escala $\\theta$"], "correct": 0, "hint": "Recuerde que $b$ se mide en las mismas unidades que la aptitud.", "explanation": "$b$ es el punto de máxima pendiente y se sitúa en la escala $\\theta$, no es independiente de ella."}, {"q": "Sobre la relación entre el error de medida y la aptitud en la TRI, es falso que ____.", "options": ["Ninguna de las anteriores es correcta", "El error sea igual para todos", "La información sea constante"], "correct": 0, "hint": "En la TRI, la precisión es local y varía a lo largo de la escala de habilidad.", "explanation": "El error varía según el nivel de habilidad; no es constante como asume la TCT."}, {"q": "Sobre los modelos de clase latente, es falso afirmar que ____.", "options": ["Ninguna de las anteriores es correcta", "Consideran el rasgo continuo", "Son idénticos a los de la TRI"], "correct": 0, "hint": "Distinga entre variables categóricas y continuas en el análisis del rasgo latente.", "explanation": "El análisis de clase latente usa escalas categóricas, mientras que la TRI asume continuidad."}, {"q": "Respecto a la independencia local, no es cierto que ____.", "options": ["Ninguna de las anteriores es correcta", "Impida la correlación entre ítems", "Permita el uso de ítems encadenados"], "correct": 0, "hint": "Los ítems cuyas respuestas dependen de aciertos previos violan este supuesto.", "explanation": "La correlación es permitida si se debe a $\\theta$, pero los ítems encadenados invalidan el supuesto."}, {"q": "Sobre el estadístico $Q_2$ de ajuste, es falso que ____.", "options": ["Ninguna de las anteriores es correcta", "Siga una distribución normal Z", "Se use para estimar la validez"], "correct": 0, "hint": "Este estadístico compara frecuencias observadas y esperadas bajo $\\chi^2$.", "explanation": "$Q_2$ se distribuye como $\\chi^2$ y mide ajuste al modelo, no es una prueba de validez ni es Normal Z."}, {"q": "En cuanto al procedimiento multinivel de un TAI, es falso afirmar que ____.", "options": ["Ninguna de las anteriores es correcta", "Se apliquen todos los ítems", "No requiera uso de ordenadores"], "correct": 0, "hint": "Este procedimiento es la esencia de la 'adaptabilidad' dinámica.", "explanation": "Solo se aplican los ítems necesarios y el soporte informático es imprescindible para el cálculo en tiempo real."}, {"q": "Sobre la muestra necesaria para el modelo de Rasch, es falso que ____.", "options": ["Ninguna de las anteriores es correcta", "Se necesiten más de $1000$ sujetos", "Sea el modelo más inestable"], "correct": 0, "hint": "El modelo de un parámetro es el más robusto ante muestras pequeñas.", "explanation": "Rasch puede funcionar con $50$-$100$ sujetos y es muy robusto/estable."}, {"q": "Sobre la Función de Información del Test, es falso afirmar que ____.", "options": ["Ninguna de las anteriores es correcta", "Sea el recíproco del error", "Equivale a la media de dificultad"], "correct": 0, "hint": "La información es una medida de precisión, no una tendencia central de dificultad.", "explanation": "La información es la inversa de la varianza del error y es acumulativa, no una media de dificultad."}, {"q": "Es falso que la Teoría de Respuesta al Ítem (TRI) ____.", "options": ["Ninguna de las anteriores es correcta", "Invalide los resultados de la TCT", "Excluya el uso del modelo lineal"], "correct": 0, "hint": "Muñiz (2001) destaca la convivencia y complementariedad de ambas teorías.", "explanation": "La TRI no invalida a la TCT ni la excluye; ambas coexisten en la construcción de tests actual."}];
+        const jsonLaboratorio = [{"id": 1, "title": "Conversión de Parámetros TCT a TRI: Discriminación", "context": "En la Teoría Clásica de los Test (TCT), la discriminación se mide a menudo mediante la correlación biserial ítem-test ($r_{it}$). En la TRI, el parámetro de discriminación $a$ se relaciona con esta correlación (bajo el supuesto de normalidad) mediante la fórmula: $a = \\frac{r_{it}}{\\sqrt{1-r_{it}^2}}$. Un psicómetra analiza un ítem con $r_{it} = 0.7071$.", "parts": [{"id": "1a", "label": "a)", "question": "Calcule el parámetro de discriminación $a$ para este ítem.", "correctValue": 1, "tolerance": 0.01, "explanation": "$$a = \\frac{0.7071}{\\sqrt{1 - 0.7071^2}} = \\frac{0.7071}{\\sqrt{1 - 0.5}} = \\frac{0.7071}{0.7071} = 1$$"}, {"id": "1b", "label": "b)", "question": "Si la correlación sube a $r_{it} = 0.8$, ¿cuál sería el nuevo valor de $a$?", "correctValue": 1.33, "tolerance": 0.01, "explanation": "$$a = \\frac{0.8}{\\sqrt{1 - 0.8^2}} = \\frac{0.8}{\\sqrt{0.36}} = \\frac{0.8}{0.6} = 1.333...$$"}, {"id": "1c", "label": "c)", "question": "Usando el valor de $a=1.33$ y el modelo de Rasch (1PL) con $b=0$ y $D=1.7$, calcule el exponente $D(\\theta - b)$ si $\\theta = 0.5$.", "correctValue": 0.85, "tolerance": 0.01, "explanation": "$$Exp = 1.7 \\times (0.5 - 0) = 0.85$$"}, {"id": "1d", "label": "d)", "question": "Calcule la probabilidad de acierto $P(\\theta)$ para el caso anterior ($Exp=0.85$).", "correctValue": 0.7, "tolerance": 0.01, "explanation": "$$P(\\theta) = \\frac{e^{0.85}}{1 + e^{0.85}} = \\frac{2.3396}{3.3396} \\approx 0.70$$"}]}, {"id": 2, "title": "El Índice de Dificultad Invariante", "context": "El parámetro de dificultad $b$ en la TRI se relaciona con la TCT mediante $b = \\frac{-Z_p}{r_{it}}$, donde $Z_p$ es el valor de la curva normal para la proporción de aciertos. Tenemos un ítem donde el 84.13% de la muestra acertó ($Z_p = 1$) y la correlación $r_{it} = 0.5$.", "parts": [{"id": "2a", "label": "a)", "question": "Calcule el parámetro de dificultad $b$ inicial.", "correctValue": -2, "tolerance": 0, "explanation": "$$b = \\frac{-1}{0.5} = -2$$"}, {"id": "2b", "label": "b)", "question": "Si la proporción de aciertos baja al 50% ($Z_p = 0$), ¿cuál es el nuevo valor de $b$?", "correctValue": 0, "tolerance": 0, "explanation": "$$b = \\frac{-0}{0.5} = 0$$"}, {"id": "2c", "label": "c)", "question": "Si un evaluado tiene una habilidad $\\theta = 0$ y el ítem tiene $b = 0$, ¿cuál es la probabilidad de acierto según el modelo de Rasch?", "correctValue": 0.5, "tolerance": 0, "explanation": "$$P(0) = \\frac{e^{1.7(0-0)}}{1+e^{1.7(0-0)}} = \\frac{1}{2} = 0.5$$"}, {"id": "2d", "label": "d)", "question": "Si el evaluado mejora su habilidad a $\\theta = 2$ para un ítem de $b=0$, calcule la probabilidad (D=1.7).", "correctValue": 0.967, "tolerance": 0.01, "explanation": "$$P(2) = \\frac{e^{1.7(2)}}{1+e^{1.7(2)}} = \\frac{e^{3.4}}{1+e^{3.4}} = \\frac{29.96}{30.96} \\approx 0.967$$"}]}, {"id": 3, "title": "Modelo Logístico de un Parámetro (Rasch)", "context": "El modelo de Rasch utiliza la fórmula $P_i(\\theta) = \\frac{e^{D(\\theta-b_i)}}{1+e^{D(\\theta-b_i)}}$ con $D=1.7$. Analizamos un ítem con dificultad $b = 1.2$ para un sujeto con $\\theta = 1.8$.", "parts": [{"id": "3a", "label": "a)", "question": "Calcule la diferencia $(\\theta - b)$.", "correctValue": 0.6, "tolerance": 0, "explanation": "$$1.8 - 1.2 = 0.6$$"}, {"id": "3b", "label": "b)", "question": "Calcule el valor del exponente $L = D(\\theta - b)$.", "correctValue": 1.02, "tolerance": 0.01, "explanation": "$$1.7 \\times 0.6 = 1.02$$"}, {"id": "3c", "label": "c)", "question": "Calcule la probabilidad de acierto $P(\\theta)$.", "correctValue": 0.735, "tolerance": 0.01, "explanation": "$$P = \\frac{e^{1.02}}{1+e^{1.02}} = \\frac{2.773}{3.773} \\approx 0.735$$"}, {"id": "3d", "label": "d)", "question": "Si el sujeto tuviera un 50% de probabilidad de acierto, ¿cuál debería ser su nivel $\\theta$?", "correctValue": 1.2, "tolerance": 0, "explanation": "$$\\text{Para } P=0.5, \\theta = b. \\text{ Por tanto, } \\theta = 1.2$$"}]}, {"id": 4, "title": "Modelo de Dos Parámetros (2PL)", "context": "El modelo 2PL añade la discriminación: $P_i(\\theta) = \\frac{e^{Da(\\theta-b)}}{1+e^{Da(\\theta-b)}}$. Sea un ítem con $a = 1.5$ y $b = 0.5$. Evaluamos a un sujeto con $\\theta = 1.0$.", "parts": [{"id": "4a", "label": "a)", "question": "Calcule el producto $a(\\theta - b)$.", "correctValue": 0.75, "tolerance": 0.01, "explanation": "$$1.5 \\times (1.0 - 0.5) = 0.75$$"}, {"id": "4b", "label": "b)", "question": "Calcule el exponente total con $D=1.7$.", "correctValue": 1.275, "tolerance": 0.01, "explanation": "$$1.7 \\times 0.75 = 1.275$$"}, {"id": "4c", "label": "c)", "question": "Determine la probabilidad de acierto.", "correctValue": 0.782, "tolerance": 0.01, "explanation": "$$P = \\frac{e^{1.275}}{1+e^{1.275}} = \\frac{3.5787}{4.5787} \\approx 0.7816$$"}, {"id": "4d", "label": "d)", "question": "Si el ítem fuera menos discriminativo ($a=0.5$), ¿cuál sería la probabilidad para el mismo sujeto?", "correctValue": 0.605, "tolerance": 0.01, "explanation": "$$L = 1.7 \\times 0.5 \\times 0.5 = 0.425 \\implies P = \\frac{e^{0.425}}{1+e^{0.425}} = \\frac{1.529}{2.529} \\approx 0.6047$$"}]}, {"id": 5, "title": "Modelo de Tres Parámetros (3PL): Efecto del Azar", "context": "El modelo 3PL incluye el parámetro de conjetura $c$: $P(\\theta) = c + (1-c)\\frac{e^{Da(\\theta-b)}}{1+e^{Da(\\theta-b)}}$. Un ítem de opción múltiple con 4 alternativas tiene $c=0.25$, $a=1.2$ y $b=1.0$. Un sujeto tiene $\\theta=1.0$.", "parts": [{"id": "5a", "label": "a)", "question": "Calcule la probabilidad de acertar el ítem 'por conocimiento' (la parte logística de la ecuación) cuando $\\theta=b$.", "correctValue": 0.5, "tolerance": 0, "explanation": "$$\\text{Si } \\theta=b, \\text{ el exponente es 0 y } e^0/(1+e^0) = 0.5$$"}, {"id": "5b", "label": "b)", "question": "Calcule la probabilidad total de acierto $P(\\theta)$ para este sujeto.", "correctValue": 0.625, "tolerance": 0.01, "explanation": "$$P = 0.25 + (1-0.25) \\times 0.5 = 0.25 + 0.375 = 0.625$$"}, {"id": "5c", "label": "c)", "question": "Si el sujeto tiene una habilidad muy baja ($\\theta \\to -\\infty$), ¿a qué valor tiende su probabilidad de acierto?", "correctValue": 0.25, "tolerance": 0, "explanation": "$$\\text{Al parámetro } c, \\text{ que es } 0.25$$"}, {"id": "5d", "label": "d)", "question": "Si el ítem tuviera 5 alternativas ($c=0.2$), ¿cuál sería la probabilidad para $\\theta=1.0$?", "correctValue": 0.6, "tolerance": 0, "explanation": "$$0.2 + (0.8 \\times 0.5) = 0.6$$"}]}, {"id": 6, "title": "Ajuste del Modelo: Estadístico Q2", "context": "El ajuste se evalúa comparando frecuencias observadas y esperadas. Para un ítem con $b=2$, dividimos la muestra. En una categoría de $\\theta$ promedio 0.5, hay 340 personas y 34 acertaron ($P_e = 0.10$). La probabilidad predicha por el modelo es $P(\\theta) = 0.07$.", "parts": [{"id": "6a", "label": "a)", "question": "Calcule el numerador de la fórmula $Q_2$: $n_j[P(\\theta_j) - P_e(\\theta_j)]^2$.", "correctValue": 0.306, "tolerance": 0.001, "explanation": "$$340 \\times (0.07 - 0.10)^2 = 340 \\times (-0.03)^2 = 340 \\times 0.0009 = 0.306$$"}, {"id": "6b", "label": "b)", "question": "Calcule el denominador: $P(\\theta_j)[1 - P(\\theta_j)]$.", "correctValue": 0.0651, "tolerance": 0.0001, "explanation": "$$0.07 \\times (1 - 0.07) = 0.07 \\times 0.93 = 0.0651$$"}, {"id": "6c", "label": "c)", "question": "Calcule el valor de la discrepancia parcial para esta categoría.", "correctValue": 4.7, "tolerance": 0.01, "explanation": "$$0.306 / 0.0651 \\approx 4.7004$$"}, {"id": "6d", "label": "d)", "question": "Si la suma total de discrepancias es $Q_2 = 11.65$ y el valor crítico de $\\chi^2$ para 4 g.l. al 99% es 13.28, ¿se rechaza el modelo? (1=Sí, 0=No).", "correctValue": 0, "tolerance": 0, "explanation": "$$\\text{Como } 11.65 < 13.28, \\text{ no se rechaza el ajuste (0).}$$"}]}, {"id": 7, "title": "Error Estándar de Medida en TRI", "context": "El error estándar de medida (EEM) en TRI depende de la habilidad $\\theta$. Un test de 25 ítems arroja un $EEM = 0.40$ para un sujeto con $\\theta = 1.75$. Queremos calcular el intervalo de confianza al 95% ($Z=1.96$).", "parts": [{"id": "7a", "label": "a)", "question": "Calcule el error máximo admisible ($E_{max} = Z \\times EEM$).", "correctValue": 0.784, "tolerance": 0.01, "explanation": "$$1.96 \\times 0.40 = 0.784$$"}, {"id": "7b", "label": "b)", "question": "Calcule el límite inferior del intervalo de confianza para la habilidad verdadera.", "correctValue": 0.966, "tolerance": 0.01, "explanation": "$$1.75 - 0.784 = 0.966$$"}, {"id": "7c", "label": "c)", "question": "Calcule el límite superior del intervalo.", "correctValue": 2.534, "tolerance": 0.01, "explanation": "$$1.75 + 0.784 = 2.534$$"}, {"id": "7d", "label": "d)", "question": "Si el $EEM$ se redujera a la mitad (0.20), ¿cuál sería la amplitud total del nuevo intervalo?", "correctValue": 0.784, "tolerance": 0.01, "explanation": "$$E_{max} = 1.96 \\times 0.20 = 0.392. \\text{ Amplitud } = 0.392 \\times 2 = 0.784$$"}]}, {"id": 8, "title": "Función de Información del Ítem", "context": "En el modelo de Rasch, la información de un ítem se simplifica a $I(\\theta, i) = P_i(\\theta) \\cdot Q_i(\\theta) \\cdot D^2$. Consideremos un ítem con $b=0.5$ y un evaluado con $\\theta=0.5$. Use $D=1.7$.", "parts": [{"id": "8a", "label": "a)", "question": "Calcule la probabilidad de acierto $P(\\theta)$.", "correctValue": 0.5, "tolerance": 0, "explanation": "$$\\text{Como } \\theta = b, P = 0.5$$"}, {"id": "8b", "label": "b)", "question": "Calcule la varianza del ítem $P \\cdot Q$.", "correctValue": 0.25, "tolerance": 0, "explanation": "$$0.5 \\times 0.5 = 0.25$$"}, {"id": "8c", "label": "c)", "question": "Calcule la información del ítem $I(\\theta)$ usando $D^2 = 2.89$.", "correctValue": 0.7225, "tolerance": 0.001, "explanation": "$$0.25 \\times 2.89 = 0.7225$$"}, {"id": "8d", "label": "d)", "question": "Si tenemos un test compuesto por 10 ítems idénticos a este, ¿cuál es la información total del test?", "correctValue": 7.225, "tolerance": 0.01, "explanation": "$$10 \\times 0.7225 = 7.225$$"}]}, {"id": 9, "title": "Relación entre Información y Error", "context": "La varianza del error de estimación es el recíproco de la información: $Var(\\hat{\\theta}) = 1/I(\\theta)$. Un test proporciona una información total $I(\\theta) = 6.25$ para un nivel de aptitud dado.", "parts": [{"id": "9a", "label": "a)", "question": "Calcule la varianza del error.", "correctValue": 0.16, "tolerance": 0, "explanation": "$$1 / 6.25 = 0.16$$"}, {"id": "9b", "label": "b)", "question": "Calcule el error estándar de medida ($EEM$).", "correctValue": 0.4, "tolerance": 0, "explanation": "$$\\sqrt{0.16} = 0.4$$"}, {"id": "9c", "label": "c)", "question": "Si queremos reducir el $EEM$ a 0.2, ¿qué información total $I(\\theta)$ debe tener el test?", "correctValue": 25, "tolerance": 0, "explanation": "$$I = 1 / (0.2^2) = 1 / 0.04 = 25$$"}, {"id": "9d", "label": "d)", "question": "Si cada ítem aporta $I=0.5$, ¿cuántos ítems adicionales se necesitan para pasar de $I=6.25$ a $I=25$?", "correctValue": 37.5, "tolerance": 0.1, "explanation": "$$ (25 - 6.25) / 0.5 = 18.75 / 0.5 = 37.5$$"}]}, {"id": 10, "title": "Probabilidad Condicional e Independencia Local", "context": "El supuesto de independencia local implica que $P(u_1, u_2 | \\theta) = P(u_1 | \\theta) \\cdot P(u_2 | \\theta)$. Un sujeto con $\\theta = 0.8$ se enfrenta a dos ítems: Ítem A ($b=0.5, P=0.62$) e Ítem B ($b=1.2, P=0.34$).", "parts": [{"id": "10a", "label": "a)", "question": "Calcule la probabilidad de que el sujeto acierte AMBOS ítems.", "correctValue": 0.2108, "tolerance": 0.001, "explanation": "$$0.62 \\times 0.34 = 0.2108$$"}, {"id": "10b", "label": "b)", "question": "Calcule la probabilidad de que falle AMBOS ítems.", "correctValue": 0.2508, "tolerance": 0.001, "explanation": "$$ (1 - 0.62) \\times (1 - 0.34) = 0.38 \\times 0.66 = 0.2508$$"}, {"id": "10c", "label": "c)", "question": "Calcule la probabilidad de que acierte el primero y falle el segundo.", "correctValue": 0.4092, "tolerance": 0.001, "explanation": "$$0.62 \\times 0.66 = 0.4092$$"}, {"id": "10d", "label": "d)", "question": "Sume las probabilidades de todos los patrones posibles (1,1; 0,0; 1,0; 0,1) para verificar la unidad. ¿Cuál es el resultado?", "correctValue": 1, "tolerance": 0, "explanation": "$$0.2108 + 0.2508 + 0.4092 + (0.38 \\times 0.34) = 0.8708 + 0.1292 = 1.0$$"}]}, {"id": 11, "title": "Análisis de Estabilidad Muestral", "context": "Según Embretson y Reise (2000), el tamaño mínimo de muestra para que los parámetros de la TRI sean estables es de 500 evaluados. Reeve y Fayers (2005) bajaron el límite a 250. Un investigador tiene una muestra de 125 personas.", "parts": [{"id": "11a", "label": "a)", "question": "Si el investigador decide usar el modelo de Rasch (1 parámetro), ¿está dentro del límite sugerido por Linacre (50-100)? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "$$\\text{Sí, 125 > 100, cumple con Linacre.}$$"}, {"id": "11b", "label": "b)", "question": "Si quisiera usar el modelo 3PL, ¿cuántos sujetos le faltan para llegar al mínimo de Embretson?", "correctValue": 375, "tolerance": 0, "explanation": "$$500 - 125 = 375$$"}, {"id": "11c", "label": "c)", "question": "En porcentaje, ¿qué fracción representa su muestra actual (125) respecto a la recomendada por Reeve (250)?", "correctValue": 0.5, "tolerance": 0, "explanation": "$$125 / 250 = 0.5$$"}, {"id": "11d", "label": "d)", "question": "Si el investigador duplica su muestra actual dos veces, ¿superará el límite de Embretson? (1=Sí, 0=No).", "correctValue": 1, "tolerance": 0, "explanation": "$$125 \\times 2 \\times 2 = 500. \\text{ Lo iguala/supera.}$$"}]}, {"id": 12, "title": "Adivinación en el Modelo de Tres Parámetros", "context": "En un test con ítems de 5 alternativas, el parámetro de conjetura estimado es $c = 1/5 = 0.20$. La probabilidad logística de acierto para un nivel $\\theta$ es $0.40$.", "parts": [{"id": "12a", "label": "a)", "question": "Calcule la probabilidad total de acierto.", "correctValue": 0.52, "tolerance": 0.01, "explanation": "$$P = 0.20 + (1 - 0.20) \\times 0.40 = 0.20 + 0.32 = 0.52$$"}, {"id": "12b", "label": "b)", "question": "Si el ítem fuera de Verdadero/Falso ($c=0.50$), ¿cuál sería la probabilidad total para la misma probabilidad logística (0.40)?", "correctValue": 0.7, "tolerance": 0.01, "explanation": "$$0.50 + (0.50 \\times 0.40) = 0.50 + 0.20 = 0.70$$"}, {"id": "12c", "label": "c)", "question": "Calcule la ganancia de probabilidad debida exclusivamente al azar en el caso V/F.", "correctValue": 0.3, "tolerance": 0, "explanation": "$$0.70 - 0.40 = 0.30$$"}, {"id": "12d", "label": "d)", "question": "Para el caso V/F, ¿qué valor de $P$ se obtendría si el sujeto tuviera $\\theta=b$?", "correctValue": 0.75, "tolerance": 0, "explanation": "$$0.50 + (0.50 \\times 0.50) = 0.75$$"}]}, {"id": 13, "title": "Máxima Verosimilitud y Probabilidad de Patrón", "context": "La estimación en TRI busca maximizar la verosimilitud de los datos. Para un sujeto con $\\theta=1$, las probabilidades de acertar tres ítems son $P_1=0.8, P_2=0.5, P_3=0.2$.", "parts": [{"id": "13a", "label": "a)", "question": "Calcule la verosimilitud del patrón de respuesta (1, 1, 0).", "correctValue": 0.32, "tolerance": 0.01, "explanation": "$$0.8 \\times 0.5 \\times (1 - 0.2) = 0.8 \\times 0.5 \\times 0.8 = 0.32$$"}, {"id": "13b", "label": "b)", "question": "Calcule la verosimilitud del patrón (1, 0, 1).", "correctValue": 0.08, "tolerance": 0.01, "explanation": "$$0.8 \\times (1 - 0.5) \\times 0.2 = 0.8 \\times 0.5 \\times 0.2 = 0.08$$"}, {"id": "13c", "label": "c)", "question": "Si el sujeto acierta todos (1, 1, 1), ¿cuál es la probabilidad?", "correctValue": 0.08, "tolerance": 0.01, "explanation": "$$0.8 \\times 0.5 \\times 0.2 = 0.08$$"}, {"id": "13d", "label": "d)", "question": "Basado en estas verosimilitudes, ¿cuál es el patrón más probable para este sujeto? (0: 101, 1: 110, 2: 111).", "correctValue": 1, "tolerance": 0, "explanation": "$$\\text{El patrón (1,1,0) tiene } L=0.32, \\text{ el más alto.}$$"}]}, {"id": 14, "title": "Invarianza de los Parámetros", "context": "Una ventaja de la TRI es la invarianza. Un ítem tiene $b=1.0$. Se aplica a un grupo 'A' (media $\\theta=0$) y a un grupo 'B' (media $\\theta=2$).", "parts": [{"id": "14a", "label": "a)", "question": "Calcule la probabilidad de acierto para un individuo promedio del grupo A (Rasch, D=1.7).", "correctValue": 0.154, "tolerance": 0.01, "explanation": "$$P = e^{1.7(0-1)} / (1+e^{1.7(-1)}) = 0.182 / 1.182 \\approx 0.154$$"}, {"id": "14b", "label": "b)", "question": "Calcule la probabilidad para un individuo promedio del grupo B.", "correctValue": 0.846, "tolerance": 0.01, "explanation": "$$P = e^{1.7(2-1)} / (1+e^{1.7(1)}) = 5.47 / 6.47 \\approx 0.846$$"}, {"id": "14c", "label": "c)", "question": "Según la TRI, ¿cuál será el valor del parámetro de dificultad $b$ calculado en el grupo B?.", "correctValue": 1, "tolerance": 0, "explanation": "$$\\text{El parámetro es invariante, sigue siendo } 1.0$$"}, {"id": "14d", "label": "d)", "question": "Si en la TCT el índice de dificultad es la proporción de aciertos ($p$), ¿cuál es la diferencia de dificultad TCT entre grupos ($p_B - p_A$)?", "correctValue": 0.692, "tolerance": 0.01, "explanation": "$$0.846 - 0.154 = 0.692$$"}]}, {"id": 15, "title": "Comparación de Curvas Características (CCI)", "context": "Comparamos dos ítems: Ítem 1 ($b=0, a=1.0$) e Ítem 2 ($b=0, a=2.0$). Ambos se evalúan para un sujeto con $\\theta=0.5$. Use $D=1.7$.", "parts": [{"id": "15a", "label": "a)", "question": "Calcule $P(\\theta)$ para el Ítem 1.", "correctValue": 0.7, "tolerance": 0.01, "explanation": "$$L = 1.7 \\times 1 \\times 0.5 = 0.85 \\implies P = 0.70$$"}, {"id": "15b", "label": "b)", "question": "Calcule $P(\\theta)$ para el Ítem 2.", "correctValue": 0.846, "tolerance": 0.01, "explanation": "$$L = 1.7 \\times 2 \\times 0.5 = 1.7 \\implies P = e^{1.7}/(1+e^{1.7}) \\approx 0.846$$"}, {"id": "15c", "label": "c)", "question": "Si el sujeto tuviera $\\theta = -0.5$, ¿cuál sería $P(\\theta)$ para el Ítem 2?", "correctValue": 0.154, "tolerance": 0.01, "explanation": "$$L = 1.7 \\times 2 \\times (-0.5) = -1.7 \\implies P \\approx 0.154$$"}, {"id": "15d", "label": "d)", "question": "Calcule el rango de probabilidad ($P_{pos} - P_{neg}$) para el Ítem 2 en el intervalo $\\theta \\in [-0.5, 0.5]$.", "correctValue": 0.692, "tolerance": 0.01, "explanation": "$$0.846 - 0.154 = 0.692$$"}]}, {"id": 16, "title": "Test Adaptativos Informatizados (TAI): Selección de Ítems", "context": "En un TAI, se busca maximizar la información. Un sujeto tiene una estimación provisional $\\hat{\\theta} = 1.2$. Tenemos tres ítems disponibles en el banco con dificultades: $b_1=0.5, b_2=1.2, b_3=2.0$.", "parts": [{"id": "16a", "label": "a)", "question": "¿Cuál ítem proporciona la máxima información para este sujeto? (Indique el número del ítem: 1, 2 o 3).", "correctValue": 2, "tolerance": 0, "explanation": "$$\\text{La información es máxima cuando } b = \\theta$$"}, {"id": "16b", "label": "b)", "question": "Si el sujeto falla el ítem 2, su nueva estimación será menor. Si baja a $\\hat{\\theta}=0.6$, ¿qué ítem elegiría ahora?", "correctValue": 1, "tolerance": 0, "explanation": "$$\\text{El ítem 1 } (b=0.5) \\text{ es el más cercano a } 0.6$$"}, {"id": "16c", "label": "c)", "question": "Si la varianza del error después de 10 ítems es 0.04, ¿cuál es el EEM?", "correctValue": 0.2, "tolerance": 0, "explanation": "$$\\sqrt{0.04} = 0.2$$"}, {"id": "16d", "label": "d)", "question": "Si el criterio de parada es $EEM \\le 0.15$, ¿se detiene el test? (1=Sí, 0=No).", "correctValue": 0, "tolerance": 0, "explanation": "$$0.2 > 0.15, \\text{ debe continuar (0).}$$"}]}, {"id": 17, "title": "Precisión y Tamaño del Banco", "context": "Un banco de ítems bien calibrado es esencial para los TAI. Supongamos que un banco tiene 500 ítems distribuidos uniformemente entre $b = -3$ y $b = +3$.", "parts": [{"id": "17a", "label": "a)", "question": "¿Cuántos ítems hay por cada unidad de la escala $\\theta$? (Rango total = 6).", "correctValue": 83.33, "tolerance": 0.01, "explanation": "$$500 / 6 = 83.333...$$"}, {"id": "17b", "label": "b)", "question": "Si un sujeto se encuentra en $\\theta = 0$, ¿cuántos ítems tienen una dificultad entre $-0.5$ y $0.5$?", "correctValue": 83.33, "tolerance": 0.1, "explanation": "$$\\text{Es una unidad de rango, por lo tanto 83.33 ítems.}$$"}, {"id": "17c", "label": "c)", "question": "Si cada ítem seleccionado aporta una información media de $I=0.8$, ¿cuántos ítems se requieren para que $I_{total} = 16$?", "correctValue": 20, "tolerance": 0, "explanation": "$$16 / 0.8 = 20$$"}, {"id": "17d", "label": "d)", "question": "Con esa información total (16), ¿cuál es el error estándar de medida?", "correctValue": 0.25, "tolerance": 0, "explanation": "$$\\sqrt{1 / 16} = 0.25$$"}]}, {"id": 18, "title": "Derivada y Pendiente de la CCI", "context": "La discriminación $a$ es proporcional a la pendiente de la recta tangente en el punto de máxima pendiente ($b=\\theta$). Para el modelo logístico, esta pendiente máxima es $S_{max} = D \\cdot a / 4$.", "parts": [{"id": "18a", "label": "a)", "question": "Si $a=1.5$ y $D=1.7$, calcule la pendiente máxima.", "correctValue": 0.6375, "tolerance": 0.001, "explanation": "$$1.7 \\times 1.5 / 4 = 2.55 / 4 = 0.6375$$"}, {"id": "18b", "label": "b)", "question": "Si la pendiente máxima es $0.425$, ¿cuál es el valor de $a$?", "correctValue": 1, "tolerance": 0.01, "explanation": "$$a = (0.425 \\times 4) / 1.7 = 1.7 / 1.7 = 1.0$$"}, {"id": "18c", "label": "c)", "question": "Para un modelo de Rasch ($a=1$), ¿cuál es la pendiente máxima?", "correctValue": 0.425, "tolerance": 0.01, "explanation": "$$1.7 / 4 = 0.425$$"}, {"id": "18d", "label": "d)", "question": "Si duplicamos la discriminación $a$, ¿qué sucede con la pendiente máxima? (Multiplicador).", "correctValue": 2, "tolerance": 0, "explanation": "$$\\text{Es una relación lineal directa con } a, \\text{ se duplica.}$$"}]}, {"id": 19, "title": "Información de un Ítem con Azar", "context": "En el modelo 3PL, la información se reduce debido al azar. La fórmula aproximada para $\\theta=b$ es $I = \\frac{D^2 a^2}{1+c}$. Consideremos $a=1$, $D=1.7$ ($D^2=2.89$) y $c=0.25$.", "parts": [{"id": "19a", "label": "a)", "question": "Calcule la información en el punto de dificultad si $c=0$ (Modelo 2PL).", "correctValue": 0.7225, "tolerance": 0.001, "explanation": "$$2.89 \\times 1^2 / 4 = 0.7225 \\text{ (Nota: la fórmula completa es } D^2 a^2 PQ, \\text{ en } b=\\theta, PQ=0.25)$$"}, {"id": "19b", "label": "b)", "question": "Calcule el denominador $(1+c)$ para $c=0.25$.", "correctValue": 1.25, "tolerance": 0, "explanation": "$$1 + 0.25 = 1.25$$"}, {"id": "19c", "label": "c)", "question": "Estime la información reducida por el azar usando $I_{2PL} / (1+c)$ como aproximación simple.", "correctValue": 0.578, "tolerance": 0.01, "explanation": "$$0.7225 / 1.25 = 0.578$$"}, {"id": "19d", "label": "d)", "question": "¿Qué porcentaje de información se pierde aproximadamente debido a este parámetro de conjetura (0.25)?", "correctValue": 20, "tolerance": 0.1, "explanation": "$$1 - (0.578/0.7225) = 1 - 0.8 = 0.2 \\implies 20\\%$$"}]}, {"id": 20, "title": "Caso Final: Evaluación Integral", "context": "Un psicólogo aplica un test de 50 ítems. La información total para $\\theta=0$ es $I=16$. El sujeto obtiene una puntuación estimada $\\hat{\\theta} = 0.5$.", "parts": [{"id": "20a", "label": "a)", "question": "Calcule el error estándar de medida para este sujeto.", "correctValue": 0.25, "tolerance": 0, "explanation": "$$\\sqrt{1/16} = 0.25$$"}, {"id": "20b", "label": "b)", "question": "Calcule el intervalo de confianza al 68% (aprox. $Z=1$).", "correctValue": 0.5, "tolerance": 0.01, "explanation": "$$0.5 \\pm 0.25 \\implies [0.25, 0.75]. \\text{ Amplitud } = 0.5$$"}, {"id": "20c", "label": "c)", "question": "Si el psicólogo añade 50 ítems más de igual calidad, ¿cuál será la nueva información total?", "correctValue": 32, "tolerance": 0, "explanation": "$$16 + 16 = 32$$"}, {"id": "20d", "label": "d)", "question": "Calcule el nuevo $EEM$ con 100 ítems.", "correctValue": 0.177, "tolerance": 0.01, "explanation": "$$\\sqrt{1/32} \\approx 0.1767$$"}]}];
+        const jsonFormulas = [{"name": "Vector de rasgos latentes (Espacio latente)", "tex": "$$\\theta=(\\theta_{1},\\theta_{2},...,\\theta_{j},...,\\theta_{k})$$"}, {"name": "Relación entre el índice de discriminación (a) y la correlación ítem-test (TCT)", "tex": "$$a = \\frac{r_{it}}{\\sqrt{1-r_{it}^{2}}}$$"}, {"name": "Relación entre el índice de dificultad (b) y la proporción de aciertos (TCT)", "tex": "$$b \\equiv \\frac{-Z_{p}}{r_{bis}}$$"}, {"name": "Modelo logístico de un parámetro (Modelo de Rasch)", "tex": "$$P_{i}(\\theta)=\\frac{e^{D(\\theta-b_{i})}}{1+e^{D(\\theta-b_{i})}}$$"}, {"name": "Modelo logístico de dos parámetros (Incorpora discriminación a)", "tex": "$$P_{i}(\\theta)=\\frac{e^{Da_{i}(\\theta-b_{i})}}{1+e^{Da_{i}(\\theta-b_{i})}}$$"}, {"name": "Modelo logístico de tres parámetros (Incorpora adivinación c)", "tex": "$$P_{i}(\\theta)=c_{i}+(1-c_{i})\\cdot\\frac{e^{Da_{i}(\\theta-b_{i})}}{1+e^{Da_{i}(\\theta-b_{i})}}$$"}, {"name": "Estadístico de ajuste Q2 para un ítem", "tex": "$$Q_{2}=\\sum_{j=1}^{k}\\frac{n_{j}[P(\\theta_{j})-P_{e}(\\theta_{j})]^{2}}{P(\\theta_{j})[1-P(\\theta_{j})]}$$"}, {"name": "Estadístico de ajuste global Q2T para el test", "tex": "$$Q_{2T}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}\\frac{n_{j}[P(\\theta_{ji})-P_{e}(\\theta_{ji})]^{2}}{P(\\theta_{ji})(1-P(\\theta_{ji}))}$$"}, {"name": "Varianza del error de medida en la TRI", "tex": "$$Var(\\hat{\\theta}|\\theta)=\\frac{1}{\\sum_{i=1}^{n}\\frac{[P_{i}'(\\theta)]^{2}}{P_{i}(\\theta)\\cdot Q_{i}(\\theta)}}$$"}, {"name": "Función de información del ítem", "tex": "$$I(\\theta,u_{i})=\\frac{[P_{i}'(\\theta)]^{2}}{P_{i}(\\theta)\\cdot Q_{i}(\\theta)}$$"}, {"name": "Función de información del test (Birnbaum)", "tex": "$$I(\\theta)=\\sum_{i=1}^{n}I(\\theta,u_{i})$$"}];
+
+        // --- TRANSFORMACIÓN DE DATOS PARA LA APP ---
+        const appDB = {
+            quiz: [...jsonTestA, ...jsonTestB],
+            laboratorio: [...jsonLaboratorio],
+            formulas: jsonFormulas.map(f => ({
+                cat: "Fórmula",
+                q: f.name,
+                a: f.tex
+            }))
+        };
+
+        // --- LÓGICA DE LA APLICACIÓN ---
+        const app = {
+            DB: appDB,
+            state: {
+                currentTool: null,
+                index: 0,
+                isFlipped: false,
+                activeData: [],
+                failedQuestions: [],
+                score: 0,
+                totalQuestions: 0
+            },
+
+            // Renderiza MathJax si está disponible
+            renderMath: function() {
+                if (window.MathJax && window.MathJax.typesetPromise) {
+                    MathJax.typesetPromise();
+                }
+            },
+
+            showView: function (view) {
+                document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+                const target = document.getElementById(`view-${view}`);
+                if (target) target.classList.remove('hidden');
+
+                const menuBtn = document.getElementById('btn-global-menu');
+                const counterBox = document.getElementById('nav-counter');
+                
+                if (view === 'home') {
+                    menuBtn.classList.remove('flex');
+                    menuBtn.classList.add('hidden');
+                    counterBox.classList.remove('flex');
+                    counterBox.classList.add('hidden');
+                } else {
+                    menuBtn.classList.remove('hidden');
+                    menuBtn.classList.add('flex');
+                    
+                    if (view === 'formulas') {
+                        counterBox.classList.remove('flex');
+                        counterBox.classList.add('hidden');
+                    } else {
+                        counterBox.classList.remove('hidden');
+                        counterBox.classList.add('flex');
+                    }
+                }
+            },
+
+            startTool: function (tool, customData = null) {
+                const baseData = this.DB[tool] || [];
+                const dataToUse = customData ? [...customData] : JSON.parse(JSON.stringify(baseData));
+
+                if (dataToUse.length === 0) return;
+
+                this.state.currentTool = tool;
+                this.state.index = 0;
+                this.state.score = 0;
+                this.state.failedQuestions = [];
+                this.state.activeData = dataToUse;
+
+                if (tool === 'laboratorio') {
+                    this.state.totalQuestions = dataToUse.reduce((acc, curr) => acc + curr.parts.length, 0);
+                } else {
+                    this.state.totalQuestions = dataToUse.length;
+                }
+
+                if (!customData && tool !== 'formulas') {
+                    this.shuffleArray(this.state.activeData);
+                }
+
+                this.updateCounter();
+                this.showView(tool);
+
+                if (tool === 'quiz') this.renderQuiz();
+                if (tool === 'laboratorio') this.renderLaboratorio();
+                if (tool === 'formulas') this.renderFormulas();
+            },
+
+            updateCounter: function () {
+                const counter = document.getElementById('global-counter');
+                if (counter && this.state.activeData.length > 0) {
+                    counter.innerText = `${this.state.index + 1}/${this.state.activeData.length}`;
+                }
+            },
+
+            shuffleArray: function (arr) {
+                for (let i = arr.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                }
+            },
+
+            finishSession: function() {
+                this.showResults();
+            },
+
+            // --- LÓGICA QUIZ ---
+            renderQuiz: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('quiz-question').innerHTML = data.q;
+                document.getElementById('quiz-feedback').classList.add('hidden');
+                document.getElementById('quiz-hint-box').classList.add('hidden');
+                
+                const container = document.getElementById('quiz-options');
+                container.innerHTML = '';
+                
+                data.options.forEach((opt, i) => {
+                    const btn = document.createElement('button');
+                    btn.className = "option-btn w-full text-left p-4 rounded-xl bg-white flex items-center gap-4 font-semibold text-slate-700 shadow-sm";
+                    btn.innerHTML = `<span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-xs text-slate-400 font-bold shrink-0">${String.fromCharCode(65 + i)}</span> <div class="math-content">${opt}</div>`;
+                    btn.onclick = () => this.quizCheck(i, btn);
+                    container.appendChild(btn);
+                });
+
+                this.renderMath();
+            },
+
+            quizToggleHint: function () {
+                const box = document.getElementById('quiz-hint-box');
+                const data = this.state.activeData[this.state.index];
+                if (data && data.hint) {
+                    box.innerHTML = `<span class="font-bold">Pista:</span> ${data.hint}`;
+                    box.classList.toggle('hidden');
+                    this.renderMath();
+                }
+            },
+
+            quizCheck: function (idx, clickedBtn) {
+                const data = this.state.activeData[this.state.index];
+                const btns = document.getElementById('quiz-options').querySelectorAll('button');
+                btns.forEach(b => b.disabled = true);
+                
+                const feedback = document.getElementById('quiz-feedback');
+                feedback.classList.remove('hidden');
+                
+                if (idx === data.correct) {
+                    this.state.score++;
+                    clickedBtn.classList.add('bg-emerald-50', 'border-emerald-500', 'text-emerald-700');
+                    document.getElementById('quiz-feedback-title').innerText = "¡Correcto!";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-emerald-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    this.state.failedQuestions.push(data);
+                    clickedBtn.classList.add('bg-red-50', 'border-red-500', 'text-red-700');
+                    btns[data.correct].classList.add('bg-emerald-50', 'border-emerald-500', 'ring-2', 'ring-emerald-200');
+                    document.getElementById('quiz-feedback-title').innerText = "Incorrecto";
+                    document.getElementById('quiz-feedback-title').className = "font-black text-xl text-red-600";
+                    document.getElementById('quiz-feedback-icon').innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+                
+                document.getElementById('quiz-explanation').innerHTML = data.explanation;
+                this.renderMath();
+            },
+
+            quizNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderQuiz();
+                    this.updateCounter();
+                } else this.showResults();
+            },
+
+            // --- LÓGICA LABORATORIO ---
+            renderLaboratorio: function () {
+                const data = this.state.activeData[this.state.index];
+                if (!data) return;
+                
+                document.getElementById('lab-problem-number').innerText = this.state.index + 1;
+                document.getElementById('lab-main-title').innerText = data.title;
+                document.getElementById('lab-context-box').innerHTML = data.context;
+                
+                const container = document.getElementById('lab-parts-container');
+                container.innerHTML = '';
+                
+                data.parts.forEach((part, i) => {
+                    const partId = `lab-part-${this.state.index}-${i}`;
+                    const letter = part.label.replace(')', '').toLowerCase();
+                    
+                    const html = `
+                        <div class="p-6 md:p-8 border-b border-slate-100 last:border-0">
+                            <div class="flex gap-4 items-start mb-6">
+                                <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex justify-center items-center font-bold shrink-0 mt-1">${letter}</div>
+                                <div class="text-slate-800 font-semibold text-lg math-content pt-1">${part.question}</div>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-4 items-center pl-0 md:pl-12">
+                                <input type="text" id="input-${partId}" class="w-full md:w-64 p-3 rounded-xl border-2 border-slate-200 outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-50 transition text-lg font-mono shadow-sm" placeholder="Respuesta...">
+                                <button id="btn-${partId}" onclick="app.labCheckPart(${this.state.index}, ${i})" class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-xl font-bold uppercase tracking-wider text-sm transition shadow-md w-full md:w-auto">Verificar</button>
+                            </div>
+                            
+                            <div id="feedback-${partId}" class="hidden pl-0 md:pl-12 mt-4 animate-fadeIn">
+                                <div id="feedback-box-${partId}" class="flex items-start gap-3 p-4 rounded-xl">
+                                    <div id="icon-${partId}" class="text-2xl shrink-0 mt-1"></div>
+                                    <div class="w-full">
+                                        <h4 id="title-${partId}" class="font-bold mb-2"></h4>
+                                        <div class="text-sm font-mono bg-slate-800 text-slate-200 p-4 rounded-lg overflow-x-auto math-content shadow-inner border border-slate-700">
+                                            <span class="text-slate-400 text-[10px] uppercase font-sans font-bold tracking-widest block mb-2">Desarrollo Matemático</span>
+                                            ${part.explanation}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.insertAdjacentHTML('beforeend', html);
+                });
+                
+                this.renderMath();
+            },
+
+            labCheckPart: function (problemIdx, partIdx) {
+                const problem = this.state.activeData[problemIdx];
+                const part = problem.parts[partIdx];
+                const partId = `lab-part-${problemIdx}-${partIdx}`;
+
+                const input = document.getElementById(`input-${partId}`);
+                const btn = document.getElementById(`btn-${partId}`);
+                const feedback = document.getElementById(`feedback-${partId}`);
+                const feedbackBox = document.getElementById(`feedback-box-${partId}`);
+                const icon = document.getElementById(`icon-${partId}`);
+                const title = document.getElementById(`title-${partId}`);
+
+                const rawVal = input.value.trim().replace(',', '.');
+                const userVal = parseFloat(rawVal);
+                
+                if (rawVal === "" || isNaN(userVal)) {
+                    input.classList.add('ring-2', 'ring-red-400');
+                    setTimeout(() => input.classList.remove('ring-2', 'ring-red-400'), 500);
+                    return; 
+                }
+
+                input.disabled = true;
+                btn.disabled = true;
+                btn.classList.remove('hover:bg-indigo-700', 'bg-indigo-600');
+                btn.classList.add('bg-slate-300', 'text-slate-500', 'cursor-not-allowed', 'shadow-none');
+                
+                feedback.classList.remove('hidden');
+
+                const diff = Math.abs(userVal - part.correctValue);
+                const isCorrect = diff <= part.tolerance;
+
+                if (isCorrect) {
+                    this.state.score++;
+                    input.classList.add('border-emerald-400', 'bg-emerald-50', 'text-emerald-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-emerald-50 border border-emerald-200";
+                    title.innerText = "¡Cálculo Exacto!";
+                    title.className = "font-black text-emerald-600";
+                    icon.innerHTML = '<i class="ph-fill ph-check-circle text-emerald-500"></i>';
+                } else {
+                    input.classList.add('border-red-400', 'bg-red-50', 'text-red-700');
+                    feedbackBox.className = "flex items-start gap-3 p-4 rounded-xl bg-red-50 border border-red-200";
+                    title.innerText = `Cálculo Incorrecto. Respuesta esperada: ${part.correctValue} (±${part.tolerance})`;
+                    title.className = "font-black text-red-600";
+                    icon.innerHTML = '<i class="ph-fill ph-x-circle text-red-500"></i>';
+                }
+
+                this.renderMath();
+            },
+
+            labNext: function () {
+                this.state.index++;
+                if (this.state.index < this.state.activeData.length) {
+                    this.renderLaboratorio();
+                    this.updateCounter();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else this.showResults();
+            },
+
+            // --- LÓGICA FÓRMULAS ---
+            renderFormulas: function () {
+                const grid = document.getElementById('formulas-grid');
+                grid.innerHTML = '';
+                
+                this.state.activeData.forEach(data => {
+                    const card = document.createElement('div');
+                    card.className = "glass-card p-6 rounded-2xl border-t-4 border-indigo-500 hover:shadow-lg transition-shadow bg-white flex flex-col justify-between items-center text-center h-full";
+                    card.innerHTML = `
+                        <span class="text-xs font-bold text-indigo-500 uppercase tracking-widest mb-4 w-full border-b border-slate-100 pb-2">${data.q}</span>
+                        <div class="text-2xl font-medium text-slate-800 math-content w-full overflow-x-auto py-4 flex-grow flex items-center justify-center">${data.a}</div>
+                    `;
+                    grid.appendChild(card);
+                });
+
+                this.renderMath();
+            },
+
+            // --- RESULTADOS GLOBALES ---
+            showResults: function () {
+                this.showView('results');
+                const resultText = document.getElementById('result-text');
+                
+                if (this.state.currentTool === 'flashcards' || this.state.currentTool === 'formulas') {
+                    resultText.innerHTML = `Has repasado <strong>${this.state.activeData.length}</strong> fórmulas.`;
+                } else {
+                    resultText.innerHTML = `Has acertado <strong>${this.state.score}</strong> de <strong>${this.state.totalQuestions}</strong>.`;
+                }
+
+                const failBtn = document.getElementById('btn-retry-errors');
+                if (this.state.failedQuestions.length > 0 && this.state.currentTool !== 'formulas') {
+                    failBtn.classList.remove('hidden');
+                    document.getElementById('fail-count').innerText = this.state.failedQuestions.length;
+                } else {
+                    failBtn.classList.add('hidden');
+                }
+            },
+
+            retryErrors: function () { 
+                this.startTool(this.state.currentTool, this.state.failedQuestions); 
+            }
+        };
+
+        // Iniciar en Home al cargar
+                // --- NAVEGACIÓN ENTRE TEMAS ---
+        function setupThemeNavigation() {
+            const courseId = "3º";
+            const folderId = "Psicometría";
+            const subjectId = "psicometria";
+            const shortId = "psicometria";
+            const currentKey = "9";
+            const themeNames = {"1": "Conceptos Fundamentales y Evolución de la Psicometría", "2": "Construcción, Taxonomía y Formatos de los Test Psicológicos", "3": "La Teoría Clásica de los Test y la Fiabilidad", "4": "Análisis de Ítems y Construcción de Test", "5": "La Validez y sus Evidencias", "6": "Fiabilidad, Validez y el Efecto de la Longitud del Test", "7": "Transformación y Equiparación de Puntuaciones", "8": "Evaluación de la Calidad y Uso Ético de los Test", "9": "De la TCT a la Teoría de la Respuesta al Ítem (TRI) y los TAI"};
+            
+            const keys = Object.keys(themeNames);
+            const sortedKeys = keys.map(k => {
+                const parts = k.split('.').map(Number);
+                return { key: k, parts: parts };
+            }).sort((a, b) => {
+                for (let i = 0; i < Math.max(a.parts.length, b.parts.length); i++) {
+                    const pa = a.parts[i] !== undefined ? a.parts[i] : 0;
+                    const pb = b.parts[i] !== undefined ? b.parts[i] : 0;
+                    if (pa !== pb) return pa - pb;
+                }
+                return 0;
+            }).map(x => x.key);
+
+            const currentIdx = sortedKeys.indexOf(currentKey);
+            const container = document.getElementById('theme-navigation-container');
+            if (!container || currentIdx === -1) return;
+
+            const prevKey = sortedKeys[currentIdx - 1];
+            const nextKey = sortedKeys[currentIdx + 1];
+            const isLastTheme = currentIdx === sortedKeys.length - 1;
+
+            let prevButtonHTML = '';
+            if (prevKey) {
+                const temaFilePart = String(prevKey).replace(/\./g, '-');
+                const prevUrl = `../../../temas/${encodeURIComponent(courseId)}/${encodeURIComponent(folderId)}/${shortId}-tema-${temaFilePart}.html`;
+                prevButtonHTML = `
+                    <a href="${prevUrl}" class="flex-1 py-4 border border-slate-200 text-slate-600 rounded-2xl font-bold hover:bg-slate-50 transition text-sm flex items-center justify-center gap-2 bg-white shadow-sm hover:border-slate-300">
+                        <i class="ph-bold ph-arrow-left"></i> Tema Anterior (${prevKey})
+                    </a>
+                `;
+            } else {
+                prevButtonHTML = `<div class="flex-1"></div>`;
+            }
+
+            let nextButtonHTML = '';
+            if (nextKey) {
+                const temaFilePart = String(nextKey).replace(/\./g, '-');
+                const nextUrl = `../../../temas/${encodeURIComponent(courseId)}/${encodeURIComponent(folderId)}/${shortId}-tema-${temaFilePart}.html`;
+                nextButtonHTML = `
+                    <a href="${nextUrl}" class="flex-1 py-4 text-white rounded-2xl font-bold transition text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700" style="box-shadow: 0 8px 25px rgba(2, 132, 199, 0.3);">
+                        Tema Siguiente (${nextKey}) <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                `;
+            } else if (isLastTheme) {
+                nextButtonHTML = `
+                    <a href="../../../index.html?asignatura=${subjectId}" class="flex-1 py-4 text-white rounded-2xl font-bold transition text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700" style="box-shadow: 0 8px 25px rgba(2, 132, 199, 0.3);">
+                        <i class="ph-bold ph-trophy"></i> Ir al Examen Final <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                `;
+            } else {
+                nextButtonHTML = `<div class="flex-1"></div>`;
+            }
+
+            container.innerHTML = prevButtonHTML + nextButtonHTML;
+        }
+
+        // Iniciar en Home al cargar
+        window.onload = () => {
+            app.showView('home');
+            setupThemeNavigation();
+        };
+    </script>
+</body>
+</html>
