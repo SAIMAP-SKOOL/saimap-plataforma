@@ -20,7 +20,7 @@
       ],
       "correct": 1,
       "hint": "Piense en la definición de independencia de los efectos de los factores.",
-      "explanation": "$$\\text{La interacción significativa ocurre cuando el impacto de una VI sobre la VD se ve modificado por los niveles de la otra VI.}$$"
+      "explanation": "La interacción significativa ocurre cuando el impacto de una VI sobre la VD se ve modificado por los niveles de la otra VI."
     },
     {
       "q": "¿Es verdadero que el ANOVA mixto requiere que los sujetos de los distintos grupos del factor intersujetos sean totalmente independientes?",
@@ -31,7 +31,7 @@
       ],
       "correct": 0,
       "hint": "Considere la naturaleza de la variabilidad entre grupos en diseños factoriales.",
-      "explanation": "$$\\text{El supuesto de independencia de las observaciones es fundamental para la validez del factor intersujetos en modelos mixtos.}$$"
+      "explanation": "El supuesto de independencia de las observaciones es fundamental para la validez del factor intersujetos en modelos mixtos."
     },
     {
       "q": "¿Es verdadero que el tamaño del efecto en el ANOVA factorial se reporta mediante un único valor de $\\eta_p^2$ para el conjunto de las variables?",
@@ -53,7 +53,7 @@
       ],
       "correct": 1,
       "hint": "Considere cuál de las dos pruebas es más conservadora ante el error tipo I.",
-      "explanation": "$$\\text{La prueba de Bonferroni es más conservadora y adecuada para tamaños muestrales desiguales o múltiples comparaciones no planeadas.}$$"
+      "explanation": "La prueba de Bonferroni es más conservadora y adecuada para tamaños muestrales desiguales o múltiples comparaciones no planeadas."
     },
     {
       "q": "¿Es verdadero que la corrección de Greenhouse-Geisser se aplica cuando se vulnera el supuesto de homogeneidad de varianzas intersujetos?",
@@ -64,7 +64,7 @@
       ],
       "correct": 1,
       "hint": "Esta corrección es específica para diseños de medidas repetidas o factores intrasujetos.",
-      "explanation": "$$\\text{La corrección de Greenhouse-Geisser se utiliza para ajustar los grados de libertad cuando no se cumple la esfericidad en factores intrasujetos.}$$"
+      "explanation": "La corrección de Greenhouse-Geisser se utiliza para ajustar los grados de libertad cuando no se cumple la esfericidad en factores intrasujetos."
     },
     {
       "q": "¿Es verdadero que el ANOVA mixto es capaz de evaluar simultáneamente un factor de medidas independientes y un factor de medidas repetidas?",
@@ -75,7 +75,7 @@
       ],
       "correct": 0,
       "hint": "Recuerde el término 'mixto' en el contexto de la procedencia de los datos.",
-      "explanation": "$$\\text{El ANOVA mixto integra factores intersujetos (independientes) e intrasujetos (repetidos) en un mismo modelo de análisis de varianza.}$$"
+      "explanation": "El ANOVA mixto integra factores intersujetos (independientes) e intrasujetos (repetidos) en un mismo modelo de análisis de varianza."
     },
     {
       "q": "¿Es verdadero que en un ANOVA de dos factores la variabilidad del error incluye la variabilidad explicada por la interacción de los factores?",
@@ -108,7 +108,7 @@
       ],
       "correct": 1,
       "hint": "La interacción indica que el efecto de un factor depende del otro, lo que complica la interpretación aislada.",
-      "explanation": "$$\\text{Una interacción significativa requiere realizar comparaciones simples, ya que los efectos principales pueden ser engañosos por sí solos.}$$"
+      "explanation": "Una interacción significativa requiere realizar comparaciones simples, ya que los efectos principales pueden ser engañosos por sí solos."
     },
     {
       "q": "Seleccione la afirmación correcta respecto a la descomposición de la varianza en un diseño factorial de dos factores (A y B).",
@@ -119,7 +119,7 @@
       ],
       "correct": 1,
       "hint": "Piense en qué partes del modelo son controladas por el investigador y cuáles no.",
-      "explanation": "$$\\text{En el ANOVA factorial, la variación sistemática se desglosa en los efectos de los factores principales y su interacción específica.}$$"
+      "explanation": "En el ANOVA factorial, la variación sistemática se desglosa en los efectos de los factores principales y su interacción específica."
     },
     {
       "q": "Seleccione la afirmación correcta sobre el cálculo de los grados de libertad para la interacción $A \\times B$ en un ANOVA de dos factores.",
@@ -141,7 +141,7 @@
       ],
       "correct": 0,
       "hint": "Las pruebas post hoc buscan diferencias específicas cuando el $F$ general es significativo.",
-      "explanation": "$$\\text{Si la interacción no es significativa, se analizan los efectos principales y se aplican post hoc solo a factores significativos con más de dos niveles.}$$"
+      "explanation": "Si la interacción no es significativa, se analizan los efectos principales y se aplican post hoc solo a factores significativos con más de dos niveles."
     },
     {
       "q": "Señale la afirmación correcta sobre el supuesto de esfericidad en el diseño de ANOVA mixto de medidas repetidas.",
@@ -152,7 +152,7 @@
       ],
       "correct": 0,
       "hint": "La esfericidad es una extensión de la homogeneidad para datos correlacionados.",
-      "explanation": "$$\\text{La esfericidad asume que las varianzas de las diferencias entre todas las combinaciones de niveles del factor intrasujetos son iguales.}$$"
+      "explanation": "La esfericidad asume que las varianzas de las diferencias entre todas las combinaciones de niveles del factor intrasujetos son iguales."
     },
     {
       "q": "Elija la afirmación correcta sobre la interpretación de un valor $p < 0.05$ para la interacción en un ANOVA de dos factores.",
@@ -163,7 +163,7 @@
       ],
       "correct": 0,
       "hint": "La interacción habla de la dependencia mutua entre las variables independientes.",
-      "explanation": "$$\\text{Un resultado significativo en la interacción indica que no podemos generalizar el efecto de un factor sin considerar el nivel del otro factor.}$$"
+      "explanation": "Un resultado significativo en la interacción indica que no podemos generalizar el efecto de un factor sin considerar el nivel del otro factor."
     },
     {
       "q": "Seleccione la afirmación correcta sobre la variable dependiente (VD) en los modelos de ANOVA factorial discutidos.",
@@ -174,7 +174,7 @@
       ],
       "correct": 0,
       "hint": "Considere los requisitos de los análisis paramétricos sobre la naturaleza de la VD.",
-      "explanation": "$$\\text{Para realizar un ANOVA, la variable dependiente debe ser continua (escala de intervalo o razón) para permitir el cálculo de medias y varianzas.}$$"
+      "explanation": "Para realizar un ANOVA, la variable dependiente debe ser continua (escala de intervalo o razón) para permitir el cálculo de medias y varianzas."
     },
     {
       "q": "Identifique la afirmación correcta sobre el factor intersujetos en el marco de un diseño de ANOVA mixto.",
@@ -185,7 +185,7 @@
       ],
       "correct": 0,
       "hint": "Piense en la diferencia entre 'entre sujetos' y 'dentro de sujetos'.",
-      "explanation": "$$\\text{El factor intersujetos divide la muestra en grupos distintos, donde cada participante pertenece a un único nivel de dicho factor.}$$"
+      "explanation": "El factor intersujetos divide la muestra en grupos distintos, donde cada participante pertenece a un único nivel de dicho factor."
     },
     {
       "q": "Señale la afirmación correcta sobre la utilidad de la prueba de Bonferroni en las comparaciones del factor intrasujetos.",
@@ -196,7 +196,7 @@
       ],
       "correct": 0,
       "hint": "Las comparaciones múltiples inflan el riesgo de encontrar diferencias por azar.",
-      "explanation": "$$\\text{Bonferroni ajusta el nivel de significación dividiéndolo por el número de comparaciones para controlar la tasa de error familiar.}$$"
+      "explanation": "Bonferroni ajusta el nivel de significación dividiéndolo por el número de comparaciones para controlar la tasa de error familiar."
     },
     {
       "q": "Elija la afirmación correcta sobre el componente de 'Variabilidad del error' en un ANOVA de dos factores.",
@@ -207,7 +207,7 @@
       ],
       "correct": 0,
       "hint": "Es la varianza que el modelo no logra explicar mediante sus predictores.",
-      "explanation": "$$\\text{La variabilidad del error o residual es aquella fracción de la varianza de la VD que no es explicada por los efectos principales ni la interacción.}$$"
+      "explanation": "La variabilidad del error o residual es aquella fracción de la varianza de la VD que no es explicada por los efectos principales ni la interacción."
     },
     {
       "q": "Seleccione la afirmación correcta respecto a la toma de decisiones estadísticas en el ANOVA de dos factores.",
@@ -240,7 +240,7 @@
       ],
       "correct": 0,
       "hint": "Es el paso lógico para 'descomponer' el significado de una interacción.",
-      "explanation": "$$\\text{Las comparaciones simples examinan cómo varía el efecto de un factor en función de los niveles concretos del segundo factor.}$$"
+      "explanation": "Las comparaciones simples examinan cómo varía el efecto de un factor en función de los niveles concretos del segundo factor."
     },
     {
       "q": "Señale la afirmación correcta sobre el supuesto de normalidad en el ANOVA mixto.",
@@ -251,7 +251,7 @@
       ],
       "correct": 0,
       "hint": "Considere la distribución dentro de cada celda del diseño experimental.",
-      "explanation": "$$\\text{La normalidad debe verificarse para la VD en todas las celdas resultantes del cruce de los factores inter e intrasujetos.}$$"
+      "explanation": "La normalidad debe verificarse para la VD en todas las celdas resultantes del cruce de los factores inter e intrasujetos."
     },
     {
       "q": "Seleccione la afirmación correcta sobre la relación entre el ANOVA unifactorial y el factorial.",
@@ -262,7 +262,7 @@
       ],
       "correct": 0,
       "hint": "Piense en qué aporta añadir una segunda variable independiente al modelo.",
-      "explanation": "$$\\text{La gran ventaja del ANOVA factorial es la posibilidad de estudiar cómo interactúan dos o más variables independientes sobre la dependiente.}$$"
+      "explanation": "La gran ventaja del ANOVA factorial es la posibilidad de estudiar cómo interactúan dos o más variables independientes sobre la dependiente."
     },
     {
       "q": "Identifique la afirmación correcta sobre los componentes de la variabilidad en el ANOVA mixto.",
@@ -273,7 +273,7 @@
       ],
       "correct": 0,
       "hint": "Repase los tres efectos principales que se analizan en un diseño mixto.",
-      "explanation": "$$\\text{El ANOVA mixto evalúa el efecto del grupo, el efecto del tiempo/condición y si la evolución temporal depende del grupo de pertenencia.}$$"
+      "explanation": "El ANOVA mixto evalúa el efecto del grupo, el efecto del tiempo/condición y si la evolución temporal depende del grupo de pertenencia."
     },
     {
       "q": "Señale la afirmación incorrecta sobre la lógica del ANOVA de dos factores en la investigación.",
@@ -284,7 +284,7 @@
       ],
       "correct": 2,
       "hint": "Considere si las medidas repetidas son una condición necesaria para el ANOVA de dos factores estándar.",
-      "explanation": "$$\\text{El ANOVA de dos factores no requiere medidas repetidas; cuando las incluye, se denomina ANOVA de medidas repetidas o mixto.}$$"
+      "explanation": "El ANOVA de dos factores no requiere medidas repetidas; cuando las incluye, se denomina ANOVA de medidas repetidas o mixto."
     },
     {
       "q": "Identifique la afirmación incorrecta respecto a las hipótesis de contraste en el ANOVA factorial.",
@@ -306,7 +306,7 @@
       ],
       "correct": 1,
       "hint": "Piense en la relación entre el valor de $F$ y la probabilidad de rechazar $H_0$.",
-      "explanation": "$$\\text{Valores de } F \\text{ altos (superiores al crítico) son los que indican efectos significativos y llevan al rechazo de } H_0.$$ "
+      "explanation": "$$\\text{Valores de } F \\text{ altos (superiores al crítico) son los que indican efectos significativos y llevan al rechazo de } H_0.$$"
     },
     {
       "q": "Señale la afirmación incorrecta sobre los supuestos del ANOVA de dos factores intersujetos.",
@@ -317,7 +317,7 @@
       ],
       "correct": 1,
       "hint": "Revise el nivel de medida requerido para la variable que queremos explicar.",
-      "explanation": "$$\\text{La variable dependiente en un ANOVA debe ser continua; las variables independientes son las que son categóricas o nominales.}$$"
+      "explanation": "La variable dependiente en un ANOVA debe ser continua; las variables independientes son las que son categóricas o nominales."
     },
     {
       "q": "Identifique la afirmación incorrecta sobre la prueba de Tukey en el contexto del post hoc.",
@@ -328,7 +328,7 @@
       ],
       "correct": 2,
       "hint": "Tukey se usa para efectos principales significativos independientemente de la interacción.",
-      "explanation": "$$\\text{La prueba de Tukey se puede aplicar a cualquier factor principal significativo con más de dos niveles, haya o no interacción.}$$"
+      "explanation": "La prueba de Tukey se puede aplicar a cualquier factor principal significativo con más de dos niveles, haya o no interacción."
     },
     {
       "q": "Elija la afirmación incorrecta sobre el ANOVA mixto de medidas repetidas en psicología.",
@@ -339,7 +339,7 @@
       ],
       "correct": 2,
       "hint": "El término 'mixto' implica que no todos los factores son del mismo tipo.",
-      "explanation": "$$\\text{En el ANOVA mixto, al menos un factor es intersujetos (diferentes personas) y al menos uno es intrasujetos (mismas personas).}$$"
+      "explanation": "En el ANOVA mixto, al menos un factor es intersujetos (diferentes personas) y al menos uno es intrasujetos (mismas personas)."
     },
     {
       "q": "Señale la afirmación incorrecta sobre el supuesto de esfericidad en el software SPSS.",
@@ -350,7 +350,7 @@
       ],
       "correct": 1,
       "hint": "Levene y Mauchly evalúan supuestos distintos en el análisis de varianza.",
-      "explanation": "$$\\text{La prueba de Levene evalúa la homogeneidad de varianzas, mientras que la de Mauchly evalúa la esfericidad del factor intrasujetos.}$$"
+      "explanation": "La prueba de Levene evalúa la homogeneidad de varianzas, mientras que la de Mauchly evalúa la esfericidad del factor intrasujetos."
     },
     {
       "q": "Identifique la afirmación incorrecta sobre la variabilidad de la interacción $A \\times B$.",
@@ -361,7 +361,7 @@
       ],
       "correct": 2,
       "hint": "Considere si la interacción es el único componente restante tras el error.",
-      "explanation": "$$\\text{La variabilidad de la interacción es un componente específico y no se obtiene por simple resta del error a la varianza total.}$$"
+      "explanation": "La variabilidad de la interacción es un componente específico y no se obtiene por simple resta del error a la varianza total."
     },
     {
       "q": "Elija la afirmación incorrecta sobre el factor intrasujetos en un diseño experimental mixto.",
@@ -372,7 +372,7 @@
       ],
       "correct": 1,
       "hint": "Piense en la finalidad de los diseños de medidas repetidas.",
-      "explanation": "$$\\text{Los diseños intrasujetos buscan detectar el efecto del tratamiento/tiempo, no asegurar que las diferencias se deban a variables extrañas.}$$"
+      "explanation": "Los diseños intrasujetos buscan detectar el efecto del tratamiento/tiempo, no asegurar que las diferencias se deban a variables extrañas."
     },
     {
       "q": "Señale la afirmación incorrecta sobre el tamaño del efecto $\\eta_p^2$ (Eta cuadrado parcial).",
@@ -394,7 +394,7 @@
       ],
       "correct": 2,
       "hint": "Recuerde la definición estándar de cualquier hipótesis nula.",
-      "explanation": "$$\\text{La hipótesis nula siempre plantea igualdad o ausencia de efecto; la afirmación de diferencias corresponde a la hipótesis alternativa.}$$"
+      "explanation": "La hipótesis nula siempre plantea igualdad o ausencia de efecto; la afirmación de diferencias corresponde a la hipótesis alternativa."
     },
     {
       "q": "Elija la afirmación incorrecta sobre el análisis de datos mediante el programa estadístico SPSS.",
@@ -405,7 +405,7 @@
       ],
       "correct": 1,
       "hint": "Considere la flexibilidad de los modelos lineales generales en el software.",
-      "explanation": "$$\\text{Aunque el ANOVA usa factores categóricos, el modelo lineal general permite incluir covariables continuas si fuera necesario.}$$"
+      "explanation": "Aunque el ANOVA usa factores categóricos, el modelo lineal general permite incluir covariables continuas si fuera necesario."
     },
     {
       "q": "Señale la afirmación incorrecta sobre la independencia de las observaciones en ANOVA.",
@@ -416,7 +416,7 @@
       ],
       "correct": 2,
       "hint": "La independencia es una cuestión de diseño, no de ajuste de significación post hoc.",
-      "explanation": "$$\\text{La violación de la independencia no se soluciona con post hoc; requiere cambios en el diseño o modelos de análisis alternativos.}$$"
+      "explanation": "La violación de la independencia no se soluciona con post hoc; requiere cambios en el diseño o modelos de análisis alternativos."
     },
     {
       "q": "Identifique la afirmación incorrecta sobre la lógica de la varianza sistemática en el factorial.",
@@ -427,7 +427,7 @@
       ],
       "correct": 2,
       "hint": "Diferencie entre la varianza explicada (sistemática) y la no explicada (error).",
-      "explanation": "$$\\text{La variabilidad intragrupos representa el error o azar, mientras que la varianza sistemática es la variabilidad entre grupos.}$$"
+      "explanation": "La variabilidad intragrupos representa el error o azar, mientras que la varianza sistemática es la variabilidad entre grupos."
     },
     {
       "q": "Elija la afirmación incorrecta sobre el diseño factorial con interacción significativa.",
@@ -438,7 +438,7 @@
       ],
       "correct": 0,
       "hint": "La interacción significa que los factores están 'entrelazados' en su efecto.",
-      "explanation": "$$\\text{Cuando hay interacción, el efecto de un factor depende del otro, por lo que no deben interpretarse los efectos principales de forma aislada.}$$"
+      "explanation": "Cuando hay interacción, el efecto de un factor depende del otro, por lo que no deben interpretarse los efectos principales de forma aislada."
     }
   ],
   "jsonTestB": [
@@ -572,7 +572,7 @@
       ],
       "correct": 1,
       "hint": "Compara el valor p con el nivel de riesgo establecido.",
-      "explanation": "Al ser $p < \\alpha$ ($0,023 < 0,05$), se rechaza la hipótesis nula de igualdad de medias."
+      "explanation": "Al ser $p < \\alpha $ ($ 0,023 < 0,05$), se rechaza la hipótesis nula de igualdad de medias."
     },
     {
       "q": "El ANOVA factorial es una técnica que permite estudiar simultáneamente ____ variables independientes sobre una variable dependiente.",
@@ -605,7 +605,7 @@
       ],
       "correct": 0,
       "hint": "Donde $a$ y $b$ son el número de niveles de cada factor.",
-      "explanation": "Los $gl$ de una interacción son el producto de los grados de libertad de los factores individuales que la componen: $(a-1)(b-1)$."
+      "explanation": "Los $gl $ de una interacción son el producto de los grados de libertad de los factores individuales que la componen: $(a-1)(b-1)$."
     },
     {
       "q": "El supuesto de ____ asume que las diferencias entre los niveles del factor intrasujetos tienen varianzas similares.",

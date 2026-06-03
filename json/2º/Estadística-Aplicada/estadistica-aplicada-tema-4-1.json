@@ -20,7 +20,7 @@
       ],
       "correct": 1,
       "hint": "Revisa la formulación matemática de la hipótesis de igualdad total de los parámetros poblacionales.",
-      "explanation": "La $H_{0}$ postula la igualdad de todas las medias $(\\mu_{1} = \\mu_{2} = ... = \\mu_{k})$, no la diferencia entre algunas de ellas."
+      "explanation": "La $H_{0}$ postula la igualdad de todas las medias $(\\mu_{1} = \\mu_{2} =... = \\mu_{k})$, no la diferencia entre algunas de ellas."
     },
     {
       "q": "¿Es posible obtener un valor negativo en el cálculo del tamaño del efecto mediante el estadístico eta cuadrado $(\\eta^{2})$ debido a una alta variabilidad residual?",
@@ -97,7 +97,7 @@
       ],
       "correct": 1,
       "hint": "Distingue entre el tamaño muestral total y los grados de libertad asociados a la variabilidad entre grupos.",
-      "explanation": "La $MC_{M}$ se calcula dividiendo la $SC_{M}$ por sus grados de libertad, que son $k - 1$, donde $k$ es el número de grupos o niveles."
+      "explanation": "La $MC_{M}$ se calcula dividiendo la $ SC_{M}$ por sus grados de libertad, que son $ k - 1 $, donde $ k$ es el número de grupos o niveles."
     },
     {
       "q": "Un resultado de ANOVA con $F(2, 98) = 4,67$ y $p < 0,05$ permite concluir exactamente qué par de medias presenta la diferencia significativa encontrada.",
@@ -152,7 +152,7 @@
       ],
       "correct": 0,
       "hint": "Consulta los puntos de corte de Cohen para la interpretación de la magnitud del efecto en el análisis de varianza.",
-      "explanation": "Según los criterios de Cohen, valores de $\\eta^{2} \\ge 0,06$ se consideran moderados y $\\ge 0,14$ se consideran efectos grandes."
+      "explanation": "Según los criterios de Cohen, valores de $\\eta^{2} \\ge 0,06 $ se consideran moderados y $\\ge 0,14$ se consideran efectos grandes."
     },
     {
       "q": "Al analizar los resultados de un ANOVA en SPSS, la tabla denominada 'Pruebas de efectos inter-sujetos' permite identificar:",
@@ -185,7 +185,7 @@
       ],
       "correct": 0,
       "hint": "Aplica las fórmulas $gl_{M} = k - 1$ y $gl_{R} = n - k$ utilizando los datos proporcionados en el enunciado.",
-      "explanation": "Con $k=3$ grupos, $gl_{M} = 3-1 = 2$. Con $n=101$ sujetos, $gl_{R} = 101-3 = 98$. La suma total es $n-1 = 100$."
+      "explanation": "Con $k=3 $ grupos, $ gl_{M} = 3-1 = 2 $. Con $ n=101 $ sujetos, $ gl_{R} = 101-3 = 98 $. La suma total es $ n-1 = 100$."
     },
     {
       "q": "¿Cuál es la principal ventaja de realizar un ANOVA en lugar de múltiples pruebas t cuando se comparan más de dos grupos?",
@@ -251,7 +251,7 @@
       ],
       "correct": 0,
       "hint": "Recuerda que el punto de corte para considerar un efecto como 'grande' en $\\eta^{2}$ se sitúa en $0,14$.",
-      "explanation": "Cualquier valor de $\\eta^{2}$ superior a $0,14$ se interpreta como un efecto de gran magnitud en el contexto de las ciencias de la conducta."
+      "explanation": "Cualquier valor de $\\eta^{2}$ superior a $ 0,14$ se interpreta como un efecto de gran magnitud en el contexto de las ciencias de la conducta."
     },
     {
       "q": "La prueba de Welch se presenta como una alternativa útil en el análisis global de varianza principalmente cuando:",
@@ -328,7 +328,7 @@
       ],
       "correct": 0,
       "hint": "Piensa en el significado de 'proporción de varianza explicada' y los límites matemáticos de un porcentaje.",
-      "explanation": "El $\\eta^{2}$ es una proporción de varianza, por lo que su valor máximo posible es $1,0$ ($100\\%$ de la varianza explicada)."
+      "explanation": "El $\\eta^{2}$ es una proporción de varianza, por lo que su valor máximo posible es $ 1,0 $ ($ 100\\%$ de la varianza explicada)."
     },
     {
       "q": "En referencia a la interpretación de la prueba de Levene en SPSS, elija la opción que sea INCORRECTA:",
@@ -451,7 +451,7 @@
       ],
       "correct": 0,
       "hint": "Recuerda que el estadístico contrasta la variabilidad sistemática frente a la no sistemática.",
-      "explanation": "El estadístico F se define como el cociente entre la varianza entre-grupos ($$MC_{M}$$) y la varianza dentro-grupos ($$MC_{R}$$)."
+      "explanation": "El estadístico F se define como el cociente entre la varianza entre-grupos ($MC_{M}$) y la varianza dentro-grupos ($ MC_{R}$)."
     },
     {
       "q": "Para un estudio con $$k = 4$$grupos y un total de$$n = 84$$ observaciones, los grados de libertad del error ($$gl_{R}$$) son ____.",
@@ -462,7 +462,7 @@
       ],
       "correct": 1,
       "hint": "La fórmula es $$n - k$$.",
-      "explanation": "Los grados de libertad del error se calculan restando el número de grupos al total de la muestra: $$84 - 4 = 80$$. El valor 81 es un error común al usar $$n-k+1$$."
+      "explanation": "Los grados de libertad del error se calculan restando el número de grupos al total de la muestra: $84 - 4 = 80 $. El valor 81 es un error común al usar $ n-k+1$."
     },
     {
       "q": "Si la suma de cuadrados del modelo es $$SC_{M} = 120.50$$y el número de grupos es$$k = 3$$, la media cuadrática del modelo ($$MC_{M}$$) es ____.",
@@ -473,7 +473,7 @@
       ],
       "correct": 1,
       "hint": "Divide por los grados de libertad del modelo ($$k-1$$).",
-      "explanation": "La $$MC_{M} = SC_{M} / (k-1)$$. En este caso: $$120.50 / (3-1) = 120.50 / 2 = 60.25$$. El distractor 40.17 proviene de dividir por $$k$$en lugar de$$k-1$$."
+      "explanation": "La $MC_{M} = SC_{M} / (k-1)$. En este caso: $ 120.50 / (3-1) = 120.50 / 2 = 60.25 $. El distractor 40.17 proviene de dividir por $ k$en lugar de k-1."
     },
     {
       "q": "El tamaño del efecto $$\\eta^{2}$$ cuantifica la proporción de la varianza de la VD que es explicada por ____.",
@@ -484,7 +484,7 @@
       ],
       "correct": 1,
       "hint": "Se asocia a la relevancia práctica del modelo.",
-      "explanation": "El valor $$\\eta^{2}$$ indica cuánta variabilidad de la variable dependiente se debe al efecto del factor o variable independiente manipulada."
+      "explanation": "El valor $\\eta^{2}$ indica cuánta variabilidad de la variable dependiente se debe al efecto del factor o variable independiente manipulada."
     },
     {
       "q": "Un valor de $$\\eta^{2} = 0.087$$ se interpreta, según los criterios de Cohen, como un efecto de magnitud ____.",
@@ -506,7 +506,7 @@
       ],
       "correct": 1,
       "hint": "Busca la condición de balance en el diseño.",
-      "explanation": "La prueba de Tukey asume homogeneidad y es óptima con tamaños muestrales equilibrados ($$n_{1} = n_{2} = ...$$)."
+      "explanation": "La prueba de Tukey asume homogeneidad y es óptima con tamaños muestrales equilibrados ($n_{1} = n_{2} =...$)."
     },
     {
       "q": "La prueba de Bonferroni ajusta el nivel de significación dividiendo $$\\alpha$$ entre el número de ____.",
@@ -517,7 +517,7 @@
       ],
       "correct": 1,
       "hint": "Es un ajuste conservador para controlar el error Tipo I.",
-      "explanation": "El ajuste de Bonferroni consiste en $$\\alpha_{ajustado} = \\alpha / m$$, donde $$m$$ es el número total de contrastes por pares realizados."
+      "explanation": "El ajuste de Bonferroni consiste en $\\alpha_{ajustado} = \\alpha / m $, donde $ m$ es el número total de contrastes por pares realizados."
     },
     {
       "q": "El supuesto de homogeneidad de varianzas en el ANOVA se verifica comúnmente mediante la prueba de ____.",
@@ -561,7 +561,7 @@
       ],
       "correct": 1,
       "hint": "Compara el valor con el nivel crítico de $$.05$$.",
-      "explanation": "Como $$p < .05$$, hay evidencia suficiente para rechazar $$H_{0}$$ y concluir que existen diferencias significativas."
+      "explanation": "Como $p <.05 $, hay evidencia suficiente para rechazar $ H_{0}$ y concluir que existen diferencias significativas."
     },
     {
       "q": "La suma de cuadrados total ($$SC_{T}$$) es el resultado de sumar la $$SC_{M}$$ y la ____.",
@@ -572,7 +572,7 @@
       ],
       "correct": 0,
       "hint": "Es la descomposición fundamental de la varianza.",
-      "explanation": "La variabilidad total se divide en variabilidad explicada por el modelo ($$SC_{M}$$) y variabilidad no explicada o residuo ($$SC_{R}$$)."
+      "explanation": "La variabilidad total se divide en variabilidad explicada por el modelo ($SC_{M}$) y variabilidad no explicada o residuo ($ SC_{R}$)."
     },
     {
       "q": "Para detectar qué pares de grupos específicos difieren tras un ANOVA significativo, se realizan análisis ____.",
@@ -616,7 +616,7 @@
       ],
       "correct": 1,
       "hint": "Plantea la ausencia de efecto o diferencia.",
-      "explanation": "La $$H_{0}$$ asume igualdad de medias en todos los niveles de la variable independiente."
+      "explanation": "La $H_{0}$ asume igualdad de medias en todos los niveles de la variable independiente."
     },
     {
       "q": "Si en la prueba de Levene obtenemos $$p = .819$$, concluimos que las varianzas son ____.",
@@ -627,7 +627,7 @@
       ],
       "correct": 1,
       "hint": "Recuerda que aquí buscamos no rechazar la hipótesis de igualdad.",
-      "explanation": "Al ser $$p > .05$$, mantenemos la hipótesis de igualdad de varianzas (homocedasticidad)."
+      "explanation": "Al ser $p >.05$, mantenemos la hipótesis de igualdad de varianzas (homocedasticidad)."
     },
     {
       "q": "Para calcular el estadístico F, si $$MC_{M} = 3715.37$$y$$MC_{R} = 796.34$$, el valor resultante es ____.",
@@ -638,7 +638,7 @@
       ],
       "correct": 0,
       "hint": "Divide el valor mayor entre el menor en este caso típico.",
-      "explanation": "$$3715.37 / 796.34 \\approx 4.665$$. El valor 0.214 es el inverso (error común)."
+      "explanation": "$3715.37 / 796.34 \\approx 4.665$. El valor 0.214 es el inverso (error común)."
     },
     {
       "q": "En un diseño de medidas repetidas, se deben tener en cuenta las ____ entre las diferentes medidas de un mismo sujeto.",
@@ -660,7 +660,7 @@
       ],
       "correct": 0,
       "hint": "Es necesario para conocer la relevancia práctica además de la estadística.",
-      "explanation": "El estilo APA requiere informar del estadístico descriptivo, los resultados del contraste y la magnitud del efecto ($$\\eta^{2}$$)."
+      "explanation": "El estilo APA requiere informar del estadístico descriptivo, los resultados del contraste y la magnitud del efecto ($\\eta^{2}$)."
     },
     {
       "q": "¿Cuáles de los siguientes son supuestos críticos para la validez de un ANOVA de medidas independientes?",
@@ -704,7 +704,7 @@
       ],
       "correct": 2,
       "hint": "Analiza la relación entre el valor p y la conclusión.",
-      "explanation": "Como $$p < .05$$, se rechaza la igualdad de medias y se confirma la existencia de diferencias."
+      "explanation": "Como $p <.05$, se rechaza la igualdad de medias y se confirma la existencia de diferencias."
     },
     {
       "q": "Para comprobar la normalidad en SPSS, ¿qué opciones se seleccionan en el menú 'Explorar'?",
@@ -759,7 +759,7 @@
       ],
       "correct": 2,
       "hint": "La transparencia estadística requiere descriptivos e inferenciales.",
-      "explanation": "Un reporte completo necesita contextualizar la muestra ($$M$$y$$DT$$) y detallar el contraste realizado."
+      "explanation": "Un reporte completo necesita contextualizar la muestra ($M$ y DT ) y detallar el contraste realizado."
     },
     {
       "q": "La lógica de la variabilidad residual en medidas repetidas considera:",
@@ -792,7 +792,7 @@
       ],
       "correct": 2,
       "hint": "Un p bajo en Levene significa que se viola un supuesto.",
-      "explanation": "Si $$p < .05$$ en Levene, hay heterocedasticidad. Deberíamos usar Welch o un ANOVA robusto, no el estándar."
+      "explanation": "Si $p <.05$ en Levene, hay heterocedasticidad. Deberíamos usar Welch o un ANOVA robusto, no el estándar."
     },
     {
       "q": "El valor máximo posible que puede alcanzar el eta cuadrado ($$\\eta^{2}$$) es:",
@@ -803,7 +803,7 @@
       ],
       "correct": 2,
       "hint": "Es una proporción de varianza explicada.",
-      "explanation": "Al ser una proporción ($$SC_{M}/SC_{T}$$), su rango está estrictamente entre 0 y 1."
+      "explanation": "Al ser una proporción ($SC_{M}/SC_{T}$), su rango está estrictamente entre 0 y 1."
     },
     {
       "q": "Si comparamos dos grupos independientes mediante un ANOVA, el resultado será:",
@@ -814,7 +814,7 @@
       ],
       "correct": 2,
       "hint": "El ANOVA es una generalización de la prueba t.",
-      "explanation": "Cuando $$k=2$$, el ANOVA es equivalente a la prueba t ($$F = t^{2}$$). No es inválido ni necesariamente más potente."
+      "explanation": "Cuando $k=2 $, el ANOVA es equivalente a la prueba t ($ F = t^{2}$). No es inválido ni necesariamente más potente."
     },
     {
       "q": "Para un diseño con $$k = 3$$y$$n = 30$$, los grados de libertad del modelo son:",
@@ -825,7 +825,7 @@
       ],
       "correct": 2,
       "hint": "La fórmula es $$k - 1$$.",
-      "explanation": "Los grados de libertad del modelo son $$3 - 1 = 2$$. Las opciones presentadas son errores comunes (usar $$k$$o usar$$n$$)."
+      "explanation": "Los grados de libertad del modelo son $3 - 1 = 2 $. Las opciones presentadas son errores comunes (usar $ k $o usar$ n$)."
     },
     {
       "q": "Un valor de $$p = .060$$ en el ANOVA unifactorial nos permite:",
@@ -836,7 +836,7 @@
       ],
       "correct": 2,
       "hint": "Compara con el umbral estándar de $$.05$$.",
-      "explanation": "Como $$.06 > .05$$, no podemos rechazar la hipótesis nula. No aceptamos $$H_{1}$$ni rechazamos$$H_{0}$$. "
+      "explanation": "Como $.06 >.05 $, no podemos rechazar la hipótesis nula. No aceptamos $ H_{1}$ni rechazamos $ H_{0}$."
     },
     {
       "q": "En el ANOVA de medidas repetidas, si un sujeto no realiza una de las tres mediciones:",
@@ -858,7 +858,7 @@
       ],
       "correct": 2,
       "hint": "La relación es $$SC_{T} = SC_{M} + SC_{R}$$.",
-      "explanation": "La fórmula correcta es $$SC_{R} = SC_{T} - SC_{M}$$. Las opciones propuestas invierten los términos o mezclan sumas con medias."
+      "explanation": "La fórmula correcta es $SC_{R} = SC_{T} - SC_{M}$. Las opciones propuestas invierten los términos o mezclan sumas con medias."
     },
     {
       "q": "Si en las comparaciones post hoc de Tukey todos los pares tienen $$p > .05$$ pero el ANOVA global fue significativo:",

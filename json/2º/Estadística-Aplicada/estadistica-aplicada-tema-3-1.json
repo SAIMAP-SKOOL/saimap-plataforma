@@ -9,7 +9,7 @@
       ],
       "correct": 1,
       "hint": "El intervalo de confianza y el valor p son dos caras de la misma moneda en el contraste de hipótesis.",
-      "explanation": "Si el $IC$ incluye el cero, significa que el valor de diferencia nula es plausible, por lo que $p \\ge .05$ y se debe mantener la $H_0$."
+      "explanation": "Si el $IC $ incluye el cero, significa que el valor de diferencia nula es plausible, por lo que $ p \\ge.05 $ y se debe mantener la $ H_0$."
     },
     {
       "q": "¿El estadístico t de Student se define matemáticamente como el cociente entre la variación no sistemática y la variación sistemática observada?",
@@ -64,7 +64,7 @@
       ],
       "correct": 1,
       "hint": "Recuerda qué significa que una prueba de supuestos 'no sea significativa'.",
-      "explanation": "La $H_0$ de Levene plantea la igualdad de varianzas (homocedasticidad). Si $p > .05$, no hay evidencia para decir que son distintas."
+      "explanation": "La $H_0 $ de Levene plantea la igualdad de varianzas (homocedasticidad). Si $ p >.05$, no hay evidencia para decir que son distintas."
     },
     {
       "q": "¿Se requiere obligatoriamente que los tamaños muestrales de ambos grupos ($n_A$ y $n_B$) sean idénticos para aplicar la prueba t de Student?",
@@ -108,7 +108,7 @@
       ],
       "correct": 0,
       "hint": "Recuerda los puntos de corte propuestos por Cohen.",
-      "explanation": "Según Cohen, valores de $d \\ge 0.8$ se consideran efectos grandes, por lo que $0.85$ entra en dicha categoría."
+      "explanation": "Según Cohen, valores de $d \\ge 0.8 $ se consideran efectos grandes, por lo que $ 0.85$ entra en dicha categoría."
     },
     {
       "q": "Selecciona la afirmación correcta sobre la naturaleza de la Variable Independiente (VI) en una prueba t para muestras independientes:",
@@ -141,7 +141,7 @@
       ],
       "correct": 1,
       "hint": "El valor p indica la probabilidad de los datos bajo la suposición de que $H_0$ es cierta.",
-      "explanation": "Un valor $p < \\alpha$ indica que los resultados son muy improbables bajo $H_0$, llevándonos a rechazarla en favor de $H_1$."
+      "explanation": "Un valor $p < \\alpha $ indica que los resultados son muy improbables bajo $ H_0 $, llevándonos a rechazarla en favor de $ H_1$."
     },
     {
       "q": "Selecciona la afirmación correcta sobre el supuesto de homogeneidad de varianzas:",
@@ -152,7 +152,7 @@
       ],
       "correct": 1,
       "hint": "Piensa en el significado de la significación en una prueba de igualdad.",
-      "explanation": "Un $p > .05$ en Levene significa que no hay diferencias significativas entre las varianzas, cumpliéndose así la homocedasticidad."
+      "explanation": "Un $p >.05$ en Levene significa que no hay diferencias significativas entre las varianzas, cumpliéndose así la homocedasticidad."
     },
     {
       "q": "Selecciona la afirmación correcta sobre los grados de libertad ($gl$) en la prueba t de Student:",
@@ -163,7 +163,7 @@
       ],
       "correct": 1,
       "hint": "Los $gl$ son necesarios para saber en qué fila de la tabla t debemos mirar.",
-      "explanation": "La distribución t varía según los $gl$; a mayor $gl$, más se aproxima la distribución t a una distribución normal estándar."
+      "explanation": "La distribución t varía según los $gl $; a mayor $ gl$, más se aproxima la distribución t a una distribución normal estándar."
     },
     {
       "q": "Selecciona la afirmación correcta sobre la relación entre el estadístico t y el tamaño del efecto d de Cohen:",
@@ -185,7 +185,7 @@
       ],
       "correct": 1,
       "hint": "Esta corrección aparece en la fila inferior de la tabla de la prueba t en SPSS.",
-      "explanation": "La corrección de Welch es la alternativa robusta cuando la prueba de Levene es significativa ($p < .05$)."
+      "explanation": "La corrección de Welch es la alternativa robusta cuando la prueba de Levene es significativa ($p <.05$)."
     },
     {
       "q": "Selecciona la afirmación correcta sobre el contraste de hipótesis bilateral:",
@@ -196,7 +196,7 @@
       ],
       "correct": 0,
       "hint": "En un test bilateral, buscamos diferencias en cualquier dirección.",
-      "explanation": "Al no especificar dirección, el error $\\alpha$ se reparte en ambos extremos; por ello en la tabla buscamos el valor para $1 - \\alpha/2$."
+      "explanation": "Al no especificar dirección, el error $\\alpha $ se reparte en ambos extremos; por ello en la tabla buscamos el valor para $ 1 - \\alpha/2$."
     },
     {
       "q": "Selecciona la afirmación correcta sobre la prueba U de Mann-Whitney:",
@@ -350,7 +350,7 @@
       ],
       "correct": 0,
       "hint": "La hipótesis alternativa es la que suele representar el cambio que el investigador espera encontrar.",
-      "explanation": "La $H_1$ plantea que **sí** existen diferencias significativas, mientras que la $H_0$ es la que plantea la ausencia de las mismas."
+      "explanation": "La $H_1 $ plantea que **sí** existen diferencias significativas, mientras que la $ H_0$ es la que plantea la ausencia de las mismas."
     },
     {
       "q": "Selecciona la afirmación INCORRECTA sobre la distribución t de Student:",
@@ -383,7 +383,7 @@
       ],
       "correct": 2,
       "hint": "Diferencia los errores falso positivo y falso negativo.",
-      "explanation": "Si $p < .05$, rechazamos $H_0$; por tanto, el riesgo existente es el de cometer un error de Tipo I (falso positivo), no de Tipo II."
+      "explanation": "Si $p <.05 $, rechazamos $ H_0$; por tanto, el riesgo existente es el de cometer un error de Tipo I (falso positivo), no de Tipo II."
     },
     {
       "q": "Selecciona la afirmación INCORRECTA sobre la fórmula del estadístico t:",
@@ -416,7 +416,7 @@
       ],
       "correct": 1,
       "hint": "Existe una relación directa entre los umbrales de error y la potencia.",
-      "explanation": "La potencia está relacionada con $\\alpha$; si somos muy estrictos con $\\alpha$ (ej. $.01$), la potencia para detectar efectos reales disminuye."
+      "explanation": "La potencia está relacionada con $\\alpha $; si somos muy estrictos con $\\alpha $ (ej. $.01$), la potencia para detectar efectos reales disminuye."
     },
     {
       "q": "Selecciona la afirmación INCORRECTA sobre la escala de medida de la VI:",
@@ -451,7 +451,7 @@
       ],
       "correct": 2,
       "hint": "Recuerda la resta de los dos grupos de la muestra total.",
-      "explanation": "La fórmula es $$gl = n_A + n_B - 2$$. Sustituyendo: $$12 + 14 - 2 = 24$$. Los distractores suelen ser $n-1$ o la suma total."
+      "explanation": "La fórmula es $gl = n_A + n_B - 2 $. Sustituyendo: $ 12 + 14 - 2 = 24 $. Los distractores suelen ser $ n-1$ o la suma total."
     },
     {
       "q": "Si obtenemos un tamaño del efecto de Cohen $d = 0.55$, la magnitud del efecto se considera ____",
@@ -473,7 +473,7 @@
       ],
       "correct": 2,
       "hint": "Se asocia habitualmente con el tamaño de muestra pequeño en psicología.",
-      "explanation": "Shapiro-Wilk se utiliza para muestras pequeñas, generalmente $$n < 50$$. K-S es para muestras más grandes."
+      "explanation": "Shapiro-Wilk se utiliza para muestras pequeñas, generalmente $n < 50$. K-S es para muestras más grandes."
     },
     {
       "q": "El estadístico $t$ se calcula dividiendo la variación sistemática por ____",
@@ -484,7 +484,7 @@
       ],
       "correct": 0,
       "hint": "Es el denominador de la fórmula de la prueba t.",
-      "explanation": "El denominador $$\\sqrt{\\frac{S_A^2}{n_A} + \\frac{S_B^2}{n_B}}$$ representa el error estándar de la diferencia."
+      "explanation": "El denominador $\\sqrt{\\frac{S_A^2}{n_A} + \\frac{S_B^2}{n_B}}$ representa el error estándar de la diferencia."
     },
     {
       "q": "Si el valor $p$ obtenido en la prueba $t$ es de $.003$, nuestra decisión estadística será ____",
@@ -495,7 +495,7 @@
       ],
       "correct": 0,
       "hint": "Compara $.003$ con el nivel crítico de $.05$.",
-      "explanation": "Como $$.003 < .05$$, rechazamos $H_0$ y aceptamos $H_1$ (existen diferencias significativas)."
+      "explanation": "Como $.003 <.05 $, rechazamos $ H_0 $ y aceptamos $ H_1$ (existen diferencias significativas)."
     },
     {
       "q": "La alternativa no paramétrica de la prueba $t$ para muestras independientes es ____",
@@ -517,7 +517,7 @@
       ],
       "correct": 1,
       "hint": "En pruebas bilaterales, el error se reparte en dos colas.",
-      "explanation": "Para un contraste bilateral, se busca el percentil $$1 - (\\alpha/2)$$, es decir, $$1 - .025 = .975$$."
+      "explanation": "Para un contraste bilateral, se busca el percentil $1 - (\\alpha/2)$, es decir, $ 1 -.025 =.975$."
     },
     {
       "q": "En el cálculo de Cohen, si $\\bar{X}_A=40, \\bar{X}_B=30$ y varianzas iguales a $25$, $d$ es ____",
@@ -528,7 +528,7 @@
       ],
       "correct": 0,
       "hint": "Calcula la raíz de la media de las varianzas primero.",
-      "explanation": "El denominador es $$\\sqrt{(25+25)/2} = 5$$. Entonces $$d = (40-30)/5 = 2$$. Error común: no hacer la raíz."
+      "explanation": "El denominador es $\\sqrt{(25+25)/2} = 5 $. Entonces $ d = (40-30)/5 = 2$. Error común: no hacer la raíz."
     },
     {
       "q": "El supuesto de que las varianzas de los grupos son aproximadamente iguales se llama ____",
@@ -550,7 +550,7 @@
       ],
       "correct": 1,
       "hint": "El cero implica que la diferencia podría ser nula.",
-      "explanation": "Si el IC incluye el $0$, no hay diferencias significativas, por lo tanto el valor $$p \\ge .05$$."
+      "explanation": "Si el IC incluye el $0 $, no hay diferencias significativas, por lo tanto el valor $ p \\ge.05$."
     },
     {
       "q": "La variable dependiente (VD) en una prueba $t$ de Student debe ser de escala ____",
@@ -572,7 +572,7 @@
       ],
       "correct": 1,
       "hint": "Recuerda que $.012$ es menor que $.05$.",
-      "explanation": "Si Levene es significativo ($$p < .05$$), se rechaza la igualdad de varianzas y se lee 'No se asumen varianzas iguales'."
+      "explanation": "Si Levene es significativo ($p <.05$), se rechaza la igualdad de varianzas y se lee 'No se asumen varianzas iguales'."
     },
     {
       "q": "La corrección que ajusta los grados de libertad cuando las varianzas no son iguales es ____",
@@ -627,7 +627,7 @@
       ],
       "correct": 0,
       "hint": "Es menor al umbral de $0.2$.",
-      "explanation": "Según la escala de Cohen, valores inferiores a $$0.2$$ se consideran efectos triviales o despreciables."
+      "explanation": "Según la escala de Cohen, valores inferiores a 0.2 se consideran efectos triviales o despreciables."
     },
     {
       "q": "La variable independiente (VI) en esta prueba debe tener exactamente ____",
@@ -649,7 +649,7 @@
       ],
       "correct": 1,
       "hint": "Se trabaja con el valor absoluto.",
-      "explanation": "Para comparar con el valor crítico $T$ de las tablas, siempre se utiliza el valor absoluto $|t|$."
+      "explanation": "Para comparar con el valor crítico $T $ de las tablas, siempre se utiliza el valor absoluto $|t|$."
     },
     {
       "q": "Si $p=.06$ y $\\alpha=.05$, la conclusión correcta respecto a $H_0$ es ____",
@@ -660,7 +660,7 @@
       ],
       "correct": 1,
       "hint": "La probabilidad es mayor que el umbral de error admitido.",
-      "explanation": "Al ser $$p > .05$$, no hay evidencia suficiente para rechazar la hipótesis nula."
+      "explanation": "Al ser $p >.05$, no hay evidencia suficiente para rechazar la hipótesis nula."
     },
     {
       "q": "¿Qué supuestos deben cumplirse para realizar una prueba t de Student independiente?",
@@ -693,7 +693,7 @@
       ],
       "correct": 2,
       "hint": "SPSS arroja una tabla completa con varios estadísticos de contraste.",
-      "explanation": "El output estándar incluye descriptivos, Levene, $t$, $gl$, niveles de significación y tamaño del efecto."
+      "explanation": "El output estándar incluye descriptivos, Levene, $t $, $ gl$, niveles de significación y tamaño del efecto."
     },
     {
       "q": "¿Cuándo es apropiado utilizar la prueba U de Mann-Whitney?",
@@ -737,7 +737,7 @@
       ],
       "correct": 2,
       "hint": "Es el núcleo de la decisión en el contraste de hipótesis.",
-      "explanation": "El valor $p$ determina si los resultados son lo suficientemente improbables bajo $H_0$ como para rechazarla."
+      "explanation": "El valor $p $ determina si los resultados son lo suficientemente improbables bajo $ H_0$ como para rechazarla."
     },
     {
       "q": "El cumplimiento del supuesto de normalidad puede evaluarse mediante:",
@@ -781,7 +781,7 @@
       ],
       "correct": 2,
       "hint": "Aplica la fórmula $n_A + n_B - 2$.",
-      "explanation": "El valor correcto es $$15 + 15 - 2 = 28$$. Los distractores son $N-1$ y $N$."
+      "explanation": "El valor correcto es $15 + 15 - 2 = 28 $. Los distractores son $ N-1 $ y $ N$."
     },
     {
       "q": "Si $t=2.5$, $T=2.8$ y $\\alpha=.05$, la conclusión estadística es:",
@@ -792,7 +792,7 @@
       ],
       "correct": 2,
       "hint": "Para rechazar, el valor calculado t debe ser mayor que el crítico T.",
-      "explanation": "Como $t < T$, no podemos rechazar $H_0$. Las opciones sugerían rechazo o aceptación de $H_1$, lo cual es falso."
+      "explanation": "Como $t < T $, no podemos rechazar $ H_0 $. Las opciones sugerían rechazo o aceptación de $ H_1$, lo cual es falso."
     },
     {
       "q": "El valor de d de Cohen si la diferencia de medias es $5$ y la varianza común es $100$ es:",
@@ -803,7 +803,7 @@
       ],
       "correct": 2,
       "hint": "Recuerda que el denominador es la desviación típica (raíz de varianza).",
-      "explanation": "$$d = 5 / \\sqrt{100} = 5/10 = 0.5$$. Las opciones $0.50$ y $0.05$ pueden confundir si no se opera bien."
+      "explanation": "$d = 5 / \\sqrt{100} = 5/10 = 0.5 $. Las opciones $ 0.50 $ y $ 0.05$ pueden confundir si no se opera bien."
     },
     {
       "q": "Un valor p de $.000$ en SPSS significa exactamente que:",
@@ -814,7 +814,7 @@
       ],
       "correct": 2,
       "hint": "Es una cuestión de redondeo del software.",
-      "explanation": "Significa $$p < .001$$. La probabilidad nunca es exactamente cero en estadística inferencial."
+      "explanation": "Significa $p <.001$. La probabilidad nunca es exactamente cero en estadística inferencial."
     },
     {
       "q": "La prueba de Levene con $F=5.2$ y $Sig=.001$ indica que:",
@@ -858,7 +858,7 @@
       ],
       "correct": 2,
       "hint": "Esa fórmula corresponde a la prueba t de una sola muestra.",
-      "explanation": "En muestras independientes el cálculo correcto es $$n_A + n_B - 2$$."
+      "explanation": "En muestras independientes el cálculo correcto es $n_A + n_B - 2$."
     },
     {
       "q": "La d de Cohen puede tomar valores superiores a $1.0$:",

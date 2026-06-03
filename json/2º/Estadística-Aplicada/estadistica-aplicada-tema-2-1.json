@@ -42,7 +42,7 @@
       ],
       "correct": 0,
       "hint": "Analice cómo varía el criterio de decisión según el volumen de datos.",
-      "explanation": "En muestras grandes, se usan umbrales de $\\pm 2.58$ o $\\pm 3.29$ para evitar rechazar $H_0$ por desviaciones irrelevantes."
+      "explanation": "En muestras grandes, se usan umbrales de $\\pm 2.58 $ o $\\pm 3.29 $ para evitar rechazar $ H_0$ por desviaciones irrelevantes."
     },
     {
       "q": "¿Es verdadero que el test de Kolmogorov-Smirnov es más potente que el de Shapiro-Wilk para muestras pequeñas de aproximadamente $n = 25$?",
@@ -64,7 +64,7 @@
       ],
       "correct": 0,
       "hint": "Defina el concepto de homogeneidad de varianza residual.",
-      "explanation": "La homocedasticidad exige que $\\sigma^2_{\\varepsilon}$ se mantenga constante independientemente del valor de las $X_i$."
+      "explanation": "La homocedasticidad exige que $\\sigma^2_{\\varepsilon}$ se mantenga constante independientemente del valor de las $ X_i$."
     },
     {
       "q": "¿Es verdadero que la presencia de outliers en la variable dependiente invalida automáticamente el uso de cualquier prueba no paramétrica?",
@@ -141,7 +141,7 @@
       ],
       "correct": 1,
       "hint": "Considere cuándo se considera que una diferencia es estadísticamente significativa.",
-      "explanation": "Un $p > .05$ indica que la diferencia entre nuestra muestra y la normal teórica no es significativa, cumpliendo el supuesto."
+      "explanation": "Un $p >.05$ indica que la diferencia entre nuestra muestra y la normal teórica no es significativa, cumpliendo el supuesto."
     },
     {
       "q": "Seleccione la afirmación correcta sobre la sensibilidad de las pruebas de normalidad al tamaño de la muestra.",
@@ -218,7 +218,7 @@
       ],
       "correct": 1,
       "hint": "Piense en el prefijo 'hetero-' (diferente).",
-      "explanation": "La heterocedasticidad (varianza no constante) sesga los errores estándar y afecta a la fiabilidad de las pruebas $t$ y $F$."
+      "explanation": "La heterocedasticidad (varianza no constante) sesga los errores estándar y afecta a la fiabilidad de las pruebas $t $ y $ F$."
     },
     {
       "q": "Seleccione la afirmación correcta sobre el uso de gráficos de dispersión para comprobar la linealidad.",
@@ -361,7 +361,7 @@
       ],
       "correct": 2,
       "hint": "Piense en la regla general de rechazo de la hipótesis nula.",
-      "explanation": "Es incorrecto: si $p > .05$, no se rechaza $H_0$. Se rechaza solo si $p < .05$."
+      "explanation": "Es incorrecto: si $p >.05 $, no se rechaza $ H_0 $. Se rechaza solo si $ p <.05$."
     },
     {
       "q": "Seleccione la afirmación incorrecta sobre los errores esféricos en el modelo lineal.",
@@ -451,7 +451,7 @@
       ],
       "correct": 0,
       "hint": "Se refiere a la forma en que se combinan las variables independientes.",
-      "explanation": "La aditividad implica que el efecto total es la suma de los efectos individuales de las $$\\text{VI}$$ en la fórmula $$\\text{Y} = b_0 + b_1X_1 + ...$$"
+      "explanation": "La aditividad implica que el efecto total es la suma de los efectos individuales de las VI en la fórmula $\\text{Y} = b_0 + b_1X_1 +...$"
     },
     {
       "q": "Si un investigador obtiene un estadístico de asimetría de $0.028$ con un error estándar de $0.314$, su puntuación $Z_{Asimetría}$ es igual a ____.",
@@ -462,7 +462,7 @@
       ],
       "correct": 0,
       "hint": "La fórmula es el cociente entre el estadístico y su error estándar.",
-      "explanation": "Aplicando $$Z = \\frac{\\text{Estadístico}}{\\text{Error Estándar}}$$, tenemos $$\\frac{0.028}{0.314} \\approx 0.089$$. Un error común es invertir los términos."
+      "explanation": "Aplicando $Z = \\frac{\\text{Estadístico}}{\\text{Error Estándar}}$, tenemos $\\frac{0.028}{0.314} \\approx 0.089$. Un error común es invertir los términos."
     },
     {
       "q": "El supuesto de ____ indica que la varianza de los residuos debe permanecer constante a lo largo de todos los niveles de las variables independientes.",
@@ -473,7 +473,7 @@
       ],
       "correct": 2,
       "hint": "Se refiere a la homogeneidad de varianzas en el modelo.",
-      "explanation": "La homocedasticidad exige que $$\\sigma^2$$ de los residuos sea constante; si varía, hablamos de heterocedasticidad."
+      "explanation": "La homocedasticidad exige que $\\sigma^2$ de los residuos sea constante; si varía, hablamos de heterocedasticidad."
     },
     {
       "q": "Para una muestra de $N=101$, el umbral de las puntuaciones típicas $Z$ para rechazar la normalidad por asimetría suele ampliarse hasta ____.",
@@ -484,7 +484,7 @@
       ],
       "correct": 2,
       "hint": "En muestras grandes se usan criterios más laxos para evitar significación sin relevancia clínica.",
-      "explanation": "En muestras grandes, se utiliza $$\\pm 2.58$$ ($$p < .01$$) o $$\\pm 3.29$$ ($$p < .001$$) para no ser excesivamente sensibles a desviaciones mínimas."
+      "explanation": "En muestras grandes, se utiliza $\\pm 2.58 $ ($ p <.01 $) o $\\pm 3.29 $ ($ p <.001$) para no ser excesivamente sensibles a desviaciones mínimas."
     },
     {
       "q": "En un gráfico Q-Q normal, cuando los puntos observados forman una curva en 'S' respecto a la diagonal, estamos ante una ____.",
@@ -506,7 +506,7 @@
       ],
       "correct": 1,
       "hint": "Las investigaciones de Razali y Wah (2011) respaldan esta prueba.",
-      "explanation": "El test de Shapiro-Wilk es preferible por su potencia, mientras que K-S requiere muestras de $$n > 100$$ para ser aceptable."
+      "explanation": "El test de Shapiro-Wilk es preferible por su potencia, mientras que K-S requiere muestras de $n > 100$ para ser aceptable."
     },
     {
       "q": "Al calcular la normalidad en un ANOVA, comprobar la normalidad de los residuos es equivalente a comprobar la ____ de los datos.",
@@ -517,7 +517,7 @@
       ],
       "correct": 2,
       "hint": "En variables categóricas, el residuo es la distancia a la media del grupo.",
-      "explanation": "Como el residuo es $$Y_{obs} - \\bar{Y}_{grupo}$$, si los datos son normales, los residuos también lo serán necesariamente."
+      "explanation": "Como el residuo es $Y_{obs} - \\bar{Y}_{grupo}$, si los datos son normales, los residuos también lo serán necesariamente."
     },
     {
       "q": "Un valor de curtosis de $-1.087$ con un error de $0.618$ produce una $Z_{Curtosis}$ de ____, lo que sugiere una distribución aproximadamente normal.",
@@ -528,7 +528,7 @@
       ],
       "correct": 0,
       "hint": "Divide el estadístico por el error estándar.",
-      "explanation": "$$Z = \\frac{-1.087}{0.618} = -1.7588$$. Al ser menor que $$1.96$$ en valor absoluto, se mantiene $$H_0$$."
+      "explanation": "$$Z = \\frac{-1.087}{0.618} = -1.7588$$. Al ser menor que 1.96 en valor absoluto, se mantiene $$H_0$$."
     },
     {
       "q": "El supuesto de que el promedio de los residuos debe ser igual a cero se denomina ____.",
@@ -561,7 +561,7 @@
       ],
       "correct": 1,
       "hint": "Compare el valor p con el nivel alpha de 0.05.",
-      "explanation": "Como $$p > .05$$, no hay evidencia suficiente para decir que la distribución no es normal, por lo que se asume normalidad."
+      "explanation": "Como $p >.05$, no hay evidencia suficiente para decir que la distribución no es normal, por lo que se asume normalidad."
     },
     {
       "q": "Una distribución que presenta un apuntamiento excesivo y colas gruesas se define como ____.",
@@ -605,7 +605,7 @@
       ],
       "correct": 2,
       "hint": "Representa la falta de ajuste lineal.",
-      "explanation": "La $$H_1$$ postula que la relación es distinta a la lineal (cuadrática, logarítmica, etc.)."
+      "explanation": "La $H_1$ postula que la relación es distinta a la lineal (cuadrática, logarítmica, etc.)."
     },
     {
       "q": "Cuando los datos muestran una relación donde la variable resultado crece de forma cada vez más lenta, estamos ante una relación ____.",
@@ -638,7 +638,7 @@
       ],
       "correct": 0,
       "hint": "Es el primer supuesto revisado en el apartado 2.2.1.",
-      "explanation": "La linealidad asume que el cambio en $$Y$$ es proporcional al cambio en $$X$$ en todo su rango."
+      "explanation": "La linealidad asume que el cambio en $Y $ es proporcional al cambio en $ X$ en todo su rango."
     },
     {
       "q": "Si un residuo es positivo, significa que el valor observado está ____ del valor predicho por el modelo.",
@@ -781,7 +781,7 @@
       ],
       "correct": 2,
       "hint": "Recuerde la jerarquía: el estadístico va en el numerador.",
-      "explanation": "La fórmula correcta es $$Z = \\frac{\\text{Estadístico}}{\\text{Error estándar}}$$. Las opciones invierten o multiplican los términos."
+      "explanation": "La fórmula correcta es $Z = \\frac{\\text{Estadístico}}{\\text{Error estándar}}$. Las opciones invierten o multiplican los términos."
     },
     {
       "q": "Al interpretar un test de Shapiro-Wilk con $p = .001$, concluimos que:",
@@ -792,7 +792,7 @@
       ],
       "correct": 2,
       "hint": "Un p pequeño rechaza la hipótesis de normalidad.",
-      "explanation": "Con $$p < .05$$, se rechaza $$H_0$$ (normalidad) y se concluye que la distribución no es normal."
+      "explanation": "Con $p <.05 $, se rechaza $ H_0$ (normalidad) y se concluye que la distribución no es normal."
     },
     {
       "q": "El supuesto de linealidad se considera verificado cuando el gráfico:",
@@ -836,7 +836,7 @@
       ],
       "correct": 2,
       "hint": "Es la resta entre lo que ves y lo que el modelo predice.",
-      "explanation": "Residuo es la diferencia individual entre el valor observado y el predicho ($$Y - \\hat{Y}$$)."
+      "explanation": "Residuo es la diferencia individual entre el valor observado y el predicho ($Y - \\hat{Y}$)."
     },
     {
       "q": "Para una variable nominal como el 'Sexo', la normalidad se calcula:",
@@ -858,7 +858,7 @@
       ],
       "correct": 2,
       "hint": "K-S requiere muestras grandes y es menos potente que S-W.",
-      "explanation": "S-W es más potente siempre; K-S solo es aceptable en muestras muy grandes ($$N > 100$$)."
+      "explanation": "S-W es más potente siempre; K-S solo es aceptable en muestras muy grandes ($N > 100$)."
     },
     {
       "q": "Si un diagrama de caja muestra la línea de la mediana cerca del Q3:",

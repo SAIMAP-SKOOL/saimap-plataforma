@@ -20,7 +20,7 @@
       ],
       "correct": 0,
       "hint": "Considera el número de pares de datos disponibles.",
-      "explanation": "A diferencia de las muestras independientes ($N_1 + N_2 - 2$), en medidas dependientes se utiliza el número de pares menos uno: $gl = N - 1$."
+      "explanation": "A diferencia de las muestras independientes ($N_1 + N_2 - 2 $), en medidas dependientes se utiliza el número de pares menos uno: $ gl = N - 1$."
     },
     {
       "q": "¿La hipótesis nula ($H_0$) en una prueba t para medidas dependientes postula siempre que la media de las diferencias en la población es igual a cero?",
@@ -31,7 +31,7 @@
       ],
       "correct": 0,
       "hint": "Piensa en lo que implica la ausencia de efecto del tratamiento.",
-      "explanation": "Matemáticamente, $H_0: \\mu_1 = \\mu_2$ equivale a postular que la media de las diferencias es nula: $H_0: \\bar{D} = 0$."
+      "explanation": "Matemáticamente, $H_0: \\mu_1 = \\mu_2 $ equivale a postular que la media de las diferencias es nula: $ H_0: \\bar{D} = 0$."
     },
     {
       "q": "Si obtenemos un valor $p = .729$ en un contraste de medias relacionadas, ¿debemos concluir que existen evidencias para rechazar la hipótesis nula?",
@@ -42,7 +42,7 @@
       ],
       "correct": 1,
       "hint": "Compara el valor de significación con el nivel alfa estándar.",
-      "explanation": "Dado que $p > .05$, no hay evidencia suficiente para rechazar $H_0$, concluyéndose que las diferencias observadas se deben probablemente al azar."
+      "explanation": "Dado que $p >.05 $, no hay evidencia suficiente para rechazar $ H_0$, concluyéndose que las diferencias observadas se deben probablemente al azar."
     },
     {
       "q": "¿La prueba de los rangos con signo de Wilcoxon es la alternativa no paramétrica adecuada cuando se incumple el supuesto de normalidad de las diferencias?",
@@ -64,7 +64,7 @@
       ],
       "correct": 1,
       "hint": "Diferencia entre significación estadística y relevancia práctica.",
-      "explanation": "La $d$ de Cohen mide la magnitud del cambio o relevancia práctica, mientras que el valor $p$ determina la significación estadística."
+      "explanation": "La $d $ de Cohen mide la magnitud del cambio o relevancia práctica, mientras que el valor $ p$ determina la significación estadística."
     },
     {
       "q": "¿Un intervalo de confianza (IC) para la diferencia de medias que incluye el valor cero indica la ausencia de diferencias estadísticamente significativas?",
@@ -75,7 +75,7 @@
       ],
       "correct": 0,
       "hint": "Analiza el significado de que el valor nulo sea plausible.",
-      "explanation": "Si el IC del $95\\%$ contiene al cero, no podemos descartar que la diferencia real sea nula, lo que es coherente con un valor $p > .05$."
+      "explanation": "Si el IC del $95\\%$ contiene al cero, no podemos descartar que la diferencia real sea nula, lo que es coherente con un valor $ p >.05$."
     },
     {
       "q": "¿La prueba t para medidas dependientes requiere que la variable dependiente sea medida en una escala de intervalo o de razón?",
@@ -152,7 +152,7 @@
       ],
       "correct": 1,
       "hint": "Recuerda los puntos de corte establecidos por Cohen para su interpretación.",
-      "explanation": "Valores de $d > 0.80$ se consideran efectos grandes; un valor de $2.68$ refuerza de forma contundente la relevancia de los resultados."
+      "explanation": "Valores de $d > 0.80 $ se consideran efectos grandes; un valor de $ 2.68$ refuerza de forma contundente la relevancia de los resultados."
     },
     {
       "q": "Al interpretar la prueba de Wilcoxon en SPSS, ¿qué representan exactamente los denominados 'rangos negativos'?",
@@ -196,7 +196,7 @@
       ],
       "correct": 1,
       "hint": "Aplica la lógica del contraste de hipótesis a las pruebas de normalidad.",
-      "explanation": "En las pruebas de normalidad, un valor $p < .05$ indica que la distribución de la muestra difiere significativamente de la normal."
+      "explanation": "En las pruebas de normalidad, un valor $p <.05$ indica que la distribución de la muestra difiere significativamente de la normal."
     },
     {
       "q": "¿Cuál es la formulación matemática correcta de la hipótesis alternativa ($H_1$) en un contraste bilateral?",
@@ -273,7 +273,7 @@
       ],
       "correct": 1,
       "hint": "Relaciona el valor de significación con la probabilidad del error tipo I.",
-      "explanation": "Un valor $p$ tan bajo indica que la diferencia observada es muy improbable bajo el supuesto de que $H_0$ sea cierta."
+      "explanation": "Un valor $p $ tan bajo indica que la diferencia observada es muy improbable bajo el supuesto de que $ H_0$ sea cierta."
     },
     {
       "q": "Señale la afirmación incorrecta sobre los supuestos de la prueba t para medidas dependientes:",
@@ -394,7 +394,7 @@
       ],
       "correct": 1,
       "hint": "Recuerda cuál es la hipótesis que atribuye los resultados a la casualidad.",
-      "explanation": "Es la hipótesis nula ($H_0$) la que atribuye las diferencias al azar; la alternativa ($H_1$) las atribuye al efecto del modelo."
+      "explanation": "Es la hipótesis nula ($H_0 $) la que atribuye las diferencias al azar; la alternativa ($ H_1$) las atribuye al efecto del modelo."
     },
     {
       "q": "Señale la afirmación incorrecta sobre el intervalo de confianza del $95\\%$:",
@@ -451,7 +451,7 @@
       ],
       "correct": 0,
       "hint": "Recuerde que el denominador es el error típico de la diferencia: $\\sqrt{S_D^2/N}$.",
-      "explanation": "Aplicando la fórmula\n$$t=\\frac{\\overline{D}}{\\sqrt{S_D^2/N}} = \\frac{10}{\\sqrt{100/25}} = \\frac{10}{2} = 5.00$$\n. Un error común es no calcular la raíz del cociente."
+      "explanation": "Aplicando la fórmula\n$t=\\frac{\\overline{D}}{\\sqrt{S_D^2/N}} = \\frac{10}{\\sqrt{100/25}} = \\frac{10}{2} = 5.00$. Un error común es no calcular la raíz del cociente."
     },
     {
       "q": "En la prueba $t$ para medidas dependientes, los grados de libertad ($gl$) para un grupo de 45 sujetos evaluados en dos momentos son ____.",
@@ -462,7 +462,7 @@
       ],
       "correct": 1,
       "hint": "En muestras relacionadas, los grados de libertad dependen del número de pares.",
-      "explanation": "La fórmula para muestras dependientes es\n$$gl=N-1$$\n. Con $N=45$, el resultado es $44$."
+      "explanation": "La fórmula para muestras dependientes es\n$gl=N-1 $. Con $ N=45 $, el resultado es $ 44$."
     },
     {
       "q": "Si deseamos calcular el tamaño del efecto (d de Cohen) con una $\\overline{D}=7.5$ y una $S_D^2=7.83$, el resultado redondeado a dos decimales es ____.",
@@ -473,7 +473,7 @@
       ],
       "correct": 1,
       "hint": "Utilice la desviación típica de las diferencias, no la varianza ni el error típico.",
-      "explanation": "La fórmula es\n$$d=\\frac{\\overline{D}}{\\sqrt{S_D^2}} = \\frac{7.5}{\\sqrt{7.83}} = \\frac{7.5}{2.798} \\approx 2.68$$\n."
+      "explanation": "La fórmula es\n$d=\\frac{\\overline{D}}{\\sqrt{S_D^2}} = \\frac{7.5}{\\sqrt{7.83}} = \\frac{7.5}{2.798} \\approx 2.68$."
     },
     {
       "q": "Al realizar el cálculo de la variable de diferencia en SPSS para una prueba pre-post, la expresión numérica correcta en el cuadro de diálogo es ____.",
@@ -495,7 +495,7 @@
       ],
       "correct": 1,
       "hint": "Diferencie entre el valor de un factor (unilateral) y dos factores (bilateral).",
-      "explanation": "Según la Figura 49 del documento, para un contraste de dos factores con $t=2.073$, el valor $p$ es $.041$."
+      "explanation": "Según la Figura 49 del documento, para un contraste de dos factores con $t=2.073 $, el valor $ p $ es $.041$."
     },
     {
       "q": "El supuesto de normalidad en la prueba $t$ dependiente debe verificarse específicamente sobre ____.",
@@ -517,7 +517,7 @@
       ],
       "correct": 2,
       "hint": "Los empates (diferencia cero) se excluyen del cálculo de rangos en Wilcoxon.",
-      "explanation": "Si hay $101$ sujetos y $11$ empates, solo $90$ sujetos presentan diferencias positivas o negativas utilizables."
+      "explanation": "Si hay $101 $ sujetos y $ 11 $ empates, solo $ 90$ sujetos presentan diferencias positivas o negativas utilizables."
     },
     {
       "q": "Para un valor de $\\overline{D}=1.198$ y un error típico de la media de $0.578$, el límite superior del IC al $95\\%$ es ____.",
@@ -539,7 +539,7 @@
       ],
       "correct": 1,
       "hint": "Compare el valor p con el nivel alpha estándar de .05.",
-      "explanation": "Como $p < .05$, rechazamos la hipótesis nula de normalidad, indicando que los datos no son normales."
+      "explanation": "Como $p <.05$, rechazamos la hipótesis nula de normalidad, indicando que los datos no son normales."
     },
     {
       "q": "El error típico de la diferencia en una muestra de $N=10$ con varianza $S_D^2=7.83$ es aproximadamente ____.",
@@ -550,7 +550,7 @@
       ],
       "correct": 1,
       "hint": "La fórmula del error típico es $\\sqrt{S_D^2/N}$.",
-      "explanation": "Calculando\n$$\\sqrt{7.83/10} = \\sqrt{0.783} \\approx 0.88$$\n. Un error común es olvidar la raíz cuadrada."
+      "explanation": "Calculando\n$\\sqrt{7.83/10} = \\sqrt{0.783} \\approx 0.88$. Un error común es olvidar la raíz cuadrada."
     },
     {
       "q": "En el análisis de Wilcoxon del PDF, el número de diferencias negativas observado fue de ____.",
@@ -605,7 +605,7 @@
       ],
       "correct": 0,
       "hint": "Despeje la media de la fórmula: $\\overline{D} = t \\times Error Típico$.",
-      "explanation": "\n$$8.52 \\times 0.88 \\approx 7.497$$\n, lo que redondea a $7.5$ según los datos del ejemplo del texto."
+      "explanation": "$8.52 \\times 0.88 \\approx 7.497 $, lo que redondea a $ 7.5$ según los datos del ejemplo del texto."
     },
     {
       "q": "Un tamaño del efecto $d=0.21$ se interpreta, según las convenciones estadísticas, como un efecto ____.",
@@ -616,7 +616,7 @@
       ],
       "correct": 1,
       "hint": "Recuerde los puntos de corte de Cohen: 0.20, 0.50 y 0.80.",
-      "explanation": "Valores cercanos a $0.20$ se consideran pequeños o bajos, mientras que mayores de $0.80$ son grandes."
+      "explanation": "Valores cercanos a $0.20 $ se consideran pequeños o bajos, mientras que mayores de $ 0.80$ son grandes."
     },
     {
       "q": "Si el IC al $95\\%$ para la diferencia de medias incluye el valor cero, la decisión estadística es ____.",
@@ -627,7 +627,7 @@
       ],
       "correct": 1,
       "hint": "El cero representa la ausencia de diferencia; si es plausible, no hay efecto significativo.",
-      "explanation": "Si el intervalo contiene al cero, la diferencia observada no es estadísticamente significativa ($p > .05$)."
+      "explanation": "Si el intervalo contiene al cero, la diferencia observada no es estadísticamente significativa ($p >.05$)."
     },
     {
       "q": "La prueba de Wilcoxon utiliza ____ para determinar si hay cambios significativos entre dos momentos.",
@@ -649,7 +649,7 @@
       ],
       "correct": 0,
       "hint": "La media se obtiene dividiendo la suma total entre el número de pares.",
-      "explanation": "\n$$75 / 10 = 7.5$$\n. Es el cálculo básico de la media de las diferencias antes de aplicar la prueba $t$."
+      "explanation": "$75 / 10 = 7.5 $. Es el cálculo básico de la media de las diferencias antes de aplicar la prueba $ t$."
     },
     {
       "q": "Cuando el supuesto de normalidad de las diferencias se incumple gravemente, la alternativa correcta es ____.",
@@ -737,7 +737,7 @@
       ],
       "correct": 0,
       "hint": "El reporte debe ser completo para permitir la interpretación de la magnitud y significación.",
-      "explanation": "Se reporta el valor $t$, los grados de libertad, el valor $p$, las medias, las DT y el tamaño del efecto."
+      "explanation": "Se reporta el valor $t $, los grados de libertad, el valor $ p$, las medias, las DT y el tamaño del efecto."
     },
     {
       "q": "¿Qué factores pueden alterar la potencia de una prueba $t$ para medidas dependientes?",
@@ -748,7 +748,7 @@
       ],
       "correct": 1,
       "hint": "La potencia depende de la muestra, la variabilidad y la magnitud real del cambio.",
-      "explanation": "El tamaño de la muestra ($N$), la varianza de las diferencias ($S_D^2$) y la magnitud del efecto ($d$)."
+      "explanation": "El tamaño de la muestra ($N $), la varianza de las diferencias ($ S_D^2 $) y la magnitud del efecto ($ d$)."
     },
     {
       "q": "¿Qué supuestos comparte la prueba $t$ dependiente con la independiente?",
@@ -803,7 +803,7 @@
       ],
       "correct": 2,
       "hint": "Consulte una tabla de distribución $t$ para $gl=99$.",
-      "explanation": "Para $gl=99$ y $\\alpha=.05$ bilateral, el valor crítico es aproximadamente $1.98$, no $1.64$ (unilateral) ni $2.58$ ($\\alpha=.01$)."
+      "explanation": "Para $gl=99 $ y $\\alpha=.05 $ bilateral, el valor crítico es aproximadamente $ 1.98 $, no $ 1.64 $ (unilateral) ni $ 2.58 $ ($\\alpha=.01$)."
     },
     {
       "q": "Para calcular los grados de libertad en muestras relacionadas, sumamos las $N$ de ambos momentos y restamos ____.",
@@ -814,7 +814,7 @@
       ],
       "correct": 2,
       "hint": "Revise la fórmula de $gl$ para muestras dependientes vs independientes.",
-      "explanation": "En muestras relacionadas $gl = N-1$ (donde $N$ es el número de pares). La fórmula de $N_1 + N_2 - 2$ es para muestras independientes."
+      "explanation": "En muestras relacionadas $gl = N-1 $ (donde $ N $ es el número de pares). La fórmula de $ N_1 + N_2 - 2$ es para muestras independientes."
     },
     {
       "q": "Si la correlación entre el pre-test y el post-test es exactamente $r=0.00$, la prueba $t$ dependiente resultará ____.",
@@ -858,7 +858,7 @@
       ],
       "correct": 2,
       "hint": "Si las sumas de rangos son iguales, no hay evidencia de cambio sistemático.",
-      "explanation": "Si las diferencias están equilibradas, el valor $p$ será alto (cercano a $1.0$), no significativo y nunca cero."
+      "explanation": "Si las diferencias están equilibradas, el valor $p $ será alto (cercano a $ 1.0$), no significativo y nunca cero."
     },
     {
       "q": "El valor de la $d$ de Cohen en medidas dependientes se calcula dividiendo la $\\overline{D}$ entre ____.",

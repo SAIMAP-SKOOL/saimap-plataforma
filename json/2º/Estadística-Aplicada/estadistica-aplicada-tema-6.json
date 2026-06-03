@@ -9,7 +9,7 @@
       ],
       "correct": 1,
       "hint": "Recuerda la ecuación $Y = \\beta_0 + \\beta_1x + \\epsilon$.",
-      "explanation": "En la ecuación de la recta, $$\\beta_0$$es el intercepto o constante, mientras que$$\\beta_1$$ es el parámetro que indica la pendiente o gradiente."
+      "explanation": "En la ecuación de la recta, $\\beta_0 $ es el intercepto o constante, mientras que$\\beta_1$ es el parámetro que indica la pendiente o gradiente."
     },
     {
       "q": "¿Representa la Suma de Cuadrados del Error ($SC_R$) la variabilidad explicada por el modelo de regresión?",
@@ -20,7 +20,7 @@
       ],
       "correct": 1,
       "hint": "Analiza qué parte de la varianza total corresponde al error.",
-      "explanation": "La variabilidad explicada es la $$\\hat{SC_M}$$. La $SC_R$ representa la parte de la variabilidad que el modelo NO llega a predecir."
+      "explanation": "La variabilidad explicada es la $\\hat{SC_M}$. La $ SC_R$ representa la parte de la variabilidad que el modelo NO llega a predecir."
     },
     {
       "q": "¿Es el método de Mínimos Cuadrados Ordinarios (OLS) el encargado de minimizar la suma de los errores al cuadrado?",
@@ -31,7 +31,7 @@
       ],
       "correct": 0,
       "hint": "Busca el objetivo matemático del algoritmo OLS.",
-      "explanation": "El método OLS estima los coeficientes minimizando la suma de cuadrados de los residuos: $$SC_R = \\sum(Y_i - \\hat{Y}_i)^2$$."
+      "explanation": "El método OLS estima los coeficientes minimizando la suma de cuadrados de los residuos: $SC_R = \\sum(Y_i - \\hat{Y}_i)^2$."
     },
     {
       "q": "¿Se calcula el estadístico F en el ANOVA dividiendo la media cuadrática del modelo entre la de los residuos?",
@@ -42,7 +42,7 @@
       ],
       "correct": 0,
       "hint": "Revisa la estructura de la tabla ANOVA para regresión.",
-      "explanation": "El valor F se obtiene mediante la razón de varianzas explicada y no explicada: $$F = \\frac{MC_M}{MC_R}$$."
+      "explanation": "El valor F se obtiene mediante la razón de varianzas explicada y no explicada: $F = \\frac{MC_M}{MC_R}$."
     },
     {
       "q": "¿Es la hipótesis nula ($H_0$) del ANOVA que al menos uno de los coeficientes de regresión es distinto de cero?",
@@ -53,7 +53,7 @@
       ],
       "correct": 1,
       "hint": "Diferencia entre la hipótesis de igualdad y la de diferencia.",
-      "explanation": "La $$H_0$$ plantea que el modelo no explica nada, es decir, todos los coeficientes son cero ($$\\beta_1 = \\beta_2 = ... = \\beta_n = 0$$)."
+      "explanation": "La $H_0 $ plantea que el modelo no explica nada, es decir, todos los coeficientes son cero ($\\beta_1 = \\beta_2 =... = \\beta_n = 0$)."
     },
     {
       "q": "¿Es el coeficiente de determinación ($R^2$) una medida de la proporción de varianza de la VD explicada por el modelo?",
@@ -64,7 +64,7 @@
       ],
       "correct": 0,
       "hint": "Analiza la definición técnica de este indicador.",
-      "explanation": "El $$R^2$$ indica qué porcentaje de la variabilidad de la variable dependiente es capturado por las variables independientes."
+      "explanation": "El $R^2$ indica qué porcentaje de la variabilidad de la variable dependiente es capturado por las variables independientes."
     },
     {
       "q": "¿Se recomienda usar el $R^2$ ajustado en regresión simple para evitar la sobreestimación del tamaño del efecto?",
@@ -75,7 +75,7 @@
       ],
       "correct": 1,
       "hint": "¿Cuándo se vuelve crítico corregir por el número de predictores?",
-      "explanation": "El $$R^2$$ ajustado es especialmente relevante en la regresión lineal múltiple, ya que corrige la sobreestimación basada en el número de predictores ($k$)."
+      "explanation": "El $R^2 $ ajustado es especialmente relevante en la regresión lineal múltiple, ya que corrige la sobreestimación basada en el número de predictores ($ k$)."
     },
     {
       "q": "¿Es un supuesto de la regresión lineal que la varianza de los errores debe ser constante (homocedasticidad)?",
@@ -108,7 +108,7 @@
       ],
       "correct": 0,
       "hint": "Distingue entre significación global y significación parcial.",
-      "explanation": "Mientras que F evalúa el modelo global, el estadístico $$t_i = \\frac{\\hat{\\beta}_i}{SE(\\hat{\\beta}_i)}$$ evalúa cada variable de forma independiente."
+      "explanation": "Mientras que F evalúa el modelo global, el estadístico $t_i = \\frac{\\hat{\\beta}_i}{SE(\\hat{\\beta}_i)}$ evalúa cada variable de forma independiente."
     },
     {
       "q": "Seleccione la afirmación correcta respecto a la descomposición de la varianza en el modelo de regresión lineal:",
@@ -119,7 +119,7 @@
       ],
       "correct": 0,
       "hint": "Piense en la relación $SC_T = SC_M + SC_R$.",
-      "explanation": "Matemáticamente, la variabilidad total ($$SC_T$$) es la suma de la variabilidad explicada ($$SC_M$$) y la no explicada ($$SC_R$$)."
+      "explanation": "Matemáticamente, la variabilidad total ($SC_T $) es la suma de la variabilidad explicada ($ SC_M $) y la no explicada ($ SC_R$)."
     },
     {
       "q": "Seleccione la afirmación correcta sobre los grados de libertad de la media cuadrática de los errores ($MC_R$):",
@@ -130,7 +130,7 @@
       ],
       "correct": 1,
       "hint": "Consulte los denominadores del estadístico F.",
-      "explanation": "Para la varianza residual, los grados de libertad son $$n - k - 1$$, restando un grado por cada predictor y uno por el intercepto."
+      "explanation": "Para la varianza residual, los grados de libertad son n - k - 1, restando un grado por cada predictor y uno por el intercepto."
     },
     {
       "q": "Seleccione la afirmación correcta sobre la interpretación de un coeficiente de regresión $\\beta_1$ significativo:",
@@ -141,7 +141,7 @@
       ],
       "correct": 1,
       "hint": "Piense en el rechazo de la hipótesis nula $H_0: \\beta_1 = 0$.",
-      "explanation": "Si el contraste de hipótesis para $$\\beta_1$$ resulta significativo ($$p < .05$$), concluimos que $X_1$ aporta información relevante para predecir Y."
+      "explanation": "Si el contraste de hipótesis para $\\beta_1 $ resulta significativo ($ p <.05 $), concluimos que $ X_1$ aporta información relevante para predecir Y."
     },
     {
       "q": "Seleccione la afirmación correcta sobre el supuesto de linealidad en el análisis de regresión lineal:",
@@ -163,7 +163,7 @@
       ],
       "correct": 2,
       "hint": "Considere qué parte de la distancia a la media captura la regresión.",
-      "explanation": "La $$SC_M$$cuantifica cuánto se alejan las predicciones de la media:$$\\sum(\\hat{Y}_i - \\bar{Y})^2$$."
+      "explanation": "La $SC_M $ cuantifica cuánto se alejan las predicciones de la media:$\\sum(\\hat{Y}_i - \\bar{Y})^2$."
     },
     {
       "q": "Seleccione la afirmación correcta sobre el gráfico de probabilidad normal (P-P) en la regresión:",
@@ -196,7 +196,7 @@
       ],
       "correct": 1,
       "hint": "Piense en la corrección por 'ruido' al añadir predictores.",
-      "explanation": "El $$R^2$$ ajustado evita la inflación artificial del éxito del modelo cuando se añaden variables que no tienen poder explicativo real."
+      "explanation": "El $R^2$ ajustado evita la inflación artificial del éxito del modelo cuando se añaden variables que no tienen poder explicativo real."
     },
     {
       "q": "Seleccione la afirmación correcta sobre el supuesto de independencia de los residuos:",
@@ -251,7 +251,7 @@
       ],
       "correct": 0,
       "hint": "Piense en el intercepto con el eje Y.",
-      "explanation": "Si $X=0$, la ecuación $Y = \\beta_0 + \\beta_1(0)$ simplifica el resultado a $Y = \\beta_0$."
+      "explanation": "Si $X=0 $, la ecuación $ Y = \\beta_0 + \\beta_1(0)$ simplifica el resultado a $ Y = \\beta_0$."
     },
     {
       "q": "Seleccione la afirmación correcta sobre el supuesto de homocedasticidad visualmente:",
@@ -284,7 +284,7 @@
       ],
       "correct": 1,
       "hint": "¿Puede un cuadrado de una razón de varianzas ser menor que cero?",
-      "explanation": "El $$R^2$$está acotado entre 0 y 1. La dirección de la relación (positiva o negativa) la indica el signo del coeficiente$$\\beta$$, no el $$R^2$$."
+      "explanation": "El $R^2 $ está acotado entre 0 y 1. La dirección de la relación (positiva o negativa) la indica el signo del coeficiente$\\beta $, no el $ R^2$."
     },
     {
       "q": "Seleccione la afirmación incorrecta sobre la hipótesis nula del análisis global (ANOVA):",
@@ -295,7 +295,7 @@
       ],
       "correct": 1,
       "hint": "Fíjese bien en qué coeficientes se incluyen en la $H_0$.",
-      "explanation": "La hipótesis nula excluye el intercepto ($$\\beta_0$$). Solo plantea que los predictores ($$\\beta_1, \\beta_2...$$) son nulos."
+      "explanation": "La hipótesis nula excluye el intercepto ($\\beta_0 $). Solo plantea que los predictores ($\\beta_1, \\beta_2...$) son nulos."
     },
     {
       "q": "Seleccione la afirmación incorrecta sobre el supuesto de normalidad de los errores:",
@@ -339,7 +339,7 @@
       ],
       "correct": 2,
       "hint": "Observe la fórmula de $SC_T$ y busque si aparece $\\hat{Y}_i$.",
-      "explanation": "La $$SC_T = \\sum(Y_i - \\bar{Y})^2$$ solo depende de los datos observados y su media, no de las predicciones del modelo."
+      "explanation": "La $SC_T = \\sum(Y_i - \\bar{Y})^2$ solo depende de los datos observados y su media, no de las predicciones del modelo."
     },
     {
       "q": "Seleccione la afirmación incorrecta sobre el error medio esperado en la regresión:",
@@ -350,7 +350,7 @@
       ],
       "correct": 2,
       "hint": "¿El error medio cero depende de la calidad del ajuste?",
-      "explanation": "El error medio cero es un supuesto teórico del modelo, independientemente de si el $$R^2$$ es alto o bajo."
+      "explanation": "El error medio cero es un supuesto teórico del modelo, independientemente de si el $R^2$ es alto o bajo."
     },
     {
       "q": "Seleccione la afirmación incorrecta sobre los residuos de la regresión:",
@@ -383,7 +383,7 @@
       ],
       "correct": 2,
       "hint": "¿El valor de F determina por sí solo la magnitud del efecto?",
-      "explanation": "El tamaño del efecto se mide con el $$R^2$$. El valor F depende del tamaño de la muestra y solo indica significación estadística, no magnitud."
+      "explanation": "El tamaño del efecto se mide con el $R^2$. El valor F depende del tamaño de la muestra y solo indica significación estadística, no magnitud."
     },
     {
       "q": "Seleccione la afirmación incorrecta sobre la independencia de los errores:",
@@ -416,7 +416,7 @@
       ],
       "correct": 2,
       "hint": "¿Qué significa que algo NO sea significativo?",
-      "explanation": "Si $$p > .05$$, la variable NO contribuye significativamente al modelo, por lo que no puede ser la que más varianza aporta."
+      "explanation": "Si $p >.05$, la variable NO contribuye significativamente al modelo, por lo que no puede ser la que más varianza aporta."
     },
     {
       "q": "Seleccione la afirmación incorrecta sobre la ecuación de la recta de regresión:",
@@ -427,7 +427,7 @@
       ],
       "correct": 2,
       "hint": "Recuerde el término $\\epsilon$ en la ecuación.",
-      "explanation": "La regresión lineal es un modelo probabilístico; siempre existe un error de predicción ($$\\epsilon$$) salvo en casos hipotéticos perfectos."
+      "explanation": "La regresión lineal es un modelo probabilístico; siempre existe un error de predicción ($\\epsilon$) salvo en casos hipotéticos perfectos."
     },
     {
       "q": "Seleccione la afirmación incorrecta sobre el uso de la regresión en psicología de la salud:",
@@ -451,7 +451,7 @@
       ],
       "correct": 0,
       "hint": "Recuerda que $SC_T = SC_M + SC_R$.",
-      "explanation": "Utilizando la identidad fundamental de la varianza: $$SC_R = SC_T - SC_M = 8335.528 - 7526.673 = 808.855$$"
+      "explanation": "Utilizando la identidad fundamental de la varianza: $SC_R = SC_T - SC_M = 8335.528 - 7526.673 = 808.855$"
     },
     {
       "q": "Para un modelo con $n = 101$ sujetos y $k = 4$ predictores, la Media Cuadrática del Error ($MC_R$) se obtiene dividiendo $SC_R$ entre ____ grados de libertad.",
@@ -462,7 +462,7 @@
       ],
       "correct": 0,
       "hint": "Los grados de libertad del residuo son $n - k - 1$.",
-      "explanation": "Los $gl$ del error se calculan como $$n - k - 1 = 101 - 4 - 1 = 96$$"
+      "explanation": "Los $gl $ del error se calculan como $ n - k - 1 = 101 - 4 - 1 = 96$"
     },
     {
       "q": "Si el coeficiente de determinación es $R^2 = 0.903$, el porcentaje de varianza de la VD que el modelo NO logra explicar es ____.",
@@ -473,7 +473,7 @@
       ],
       "correct": 0,
       "hint": "La varianza no explicada es $1 - R^2$.",
-      "explanation": "El residuo o varianza no explicada es $1 - 0.903 = 0.097$, lo que equivale al $$9.7\\%$$"
+      "explanation": "El residuo o varianza no explicada es $1 - 0.903 = 0.097 $, lo que equivale al $ 9.7\\%$"
     },
     {
       "q": "El estadístico $F$ global del modelo, dado que $MC_M = 1881.668$ y $MC_R = 8.426$, es igual a ____.",
@@ -484,7 +484,7 @@
       ],
       "correct": 1,
       "hint": "Calcula el cociente exacto entre las medias cuadráticas.",
-      "explanation": "El estadístico $F$ se define como $$F = \\frac{MC_M}{MC_R} = \\frac{1881.668}{8.426} = 223.328$$"
+      "explanation": "El estadístico $F $ se define como $ F = \\frac{MC_M}{MC_R} = \\frac{1881.668}{8.426} = 223.328$"
     },
     {
       "q": "En la ecuación de regresión: $Bienestar = 65.097 - 0.239 \\cdot Ansiedad - 0.365 \\cdot Depresión + 0.335 \\cdot Autoestima - 1.052 \\cdot Mod$, el valor de Bienestar si todas las VI son 0 es ____.",
@@ -495,7 +495,7 @@
       ],
       "correct": 0,
       "hint": "Busca el valor del intercepto $\\beta_0$.",
-      "explanation": "Cuando todas las $X_i = 0$, el valor predicho es la constante o intercepto $$\\beta_0 = 65.097$$"
+      "explanation": "Cuando todas las $X_i = 0 $, el valor predicho es la constante o intercepto $\\beta_0 = 65.097$"
     },
     {
       "q": "Si el error estándar del coeficiente de Ansiedad es $0.049$ y su $\\beta$ es $-0.239$, el valor absoluto del estadístico $t$ para esta variable es ____.",
@@ -506,7 +506,7 @@
       ],
       "correct": 1,
       "hint": "Divide el coeficiente por su error estándar.",
-      "explanation": "El estadístico $t$ se calcula como $$t = \\frac{\\hat{\\beta}}{SE(\\hat{\\beta})} = \\frac{-0.239}{0.049} = -4.8775...$$, cuyo valor absoluto redondeado es $4.872$ según la tabla."
+      "explanation": "El estadístico $t $ se calcula como $ t = \\frac{\\hat{\\beta}}{SE(\\hat{\\beta})} = \\frac{-0.239}{0.049} = -4.8775...$, cuyo valor absoluto redondeado es $ 4.872$ según la tabla."
     },
     {
       "q": "En una regresión lineal simple con una sola VI, el número de grados de libertad del modelo ($gl_M$) es ____.",
@@ -517,7 +517,7 @@
       ],
       "correct": 0,
       "hint": "Representa el número de predictores ($k$).",
-      "explanation": "En la regresión lineal simple, el número de predictores $k$ es siempre $$1$$"
+      "explanation": "En la regresión lineal simple, el número de predictores $k$ es siempre 1"
     },
     {
       "q": "El supuesto que indica que la varianza de los residuos debe ser constante para todos los niveles de la VI se denomina ____.",
@@ -528,7 +528,7 @@
       ],
       "correct": 0,
       "hint": "Viene del griego 'homo' (igual) y 'cedasticidad' (dispersión).",
-      "explanation": "La $$Homocedasticidad$$ es la constancia de la varianza de los errores."
+      "explanation": "La Homocedasticidad es la constancia de la varianza de los errores."
     },
     {
       "q": "El estadístico Durbin-Watson del output es $2.038$. Esto indica que existe ____ entre los errores.",
@@ -539,7 +539,7 @@
       ],
       "correct": 0,
       "hint": "Valores cercanos a 2 sugieren falta de autocorrelación.",
-      "explanation": "Un valor de Durbin-Watson cercano a 2 (en este caso $2.038$) confirma el cumplimiento del supuesto de $$Independencia$$"
+      "explanation": "Un valor de Durbin-Watson cercano a 2 (en este caso $2.038$) confirma el cumplimiento del supuesto de Independencia"
     },
     {
       "q": "En el ANOVA de regresión, el estadístico $F$ contrasta la hipótesis nula de que todos los coeficientes de regresión (excepto el intercepto) son ____.",
@@ -550,7 +550,7 @@
       ],
       "correct": 0,
       "hint": "La $H_0$ global asume que el modelo no predice nada.",
-      "explanation": "La hipótesis nula global es $$H_0: \\beta_1 = \\beta_2 = ... = \\beta_n = 0$$"
+      "explanation": "La hipótesis nula global es $H_0: \\beta_1 = \\beta_2 =... = \\beta_n = 0$"
     },
     {
       "q": "Dada la ecuación del modelo, por cada unidad que aumenta la Autoestima (manteniendo el resto constante), el Bienestar aumenta ____ unidades.",
@@ -561,7 +561,7 @@
       ],
       "correct": 0,
       "hint": "Identifica el coeficiente $\\beta$ asociado a la Autoestima.",
-      "explanation": "El coeficiente asociado a la Autoestima es $$\\beta = 0.335$$, lo que indica el cambio unitario esperado."
+      "explanation": "El coeficiente asociado a la Autoestima es $\\beta = 0.335$, lo que indica el cambio unitario esperado."
     },
     {
       "q": "Si un investigador obtiene una $R^2 = 0.25$ en una regresión múltiple con $k=2$ y $n=10$, el valor de $R^2$ ajustado será ____.",
@@ -572,7 +572,7 @@
       ],
       "correct": 0,
       "hint": "Usa la fórmula $1 - \\frac{(1-R^2)(n-1)}{n-k-1}$.",
-      "explanation": "Aplicando la fórmula: $$1 - \\frac{(1-0.25)(9)}{10-2-1} = 1 - \\frac{6.75}{7} = 1 - 0.964 = 0.036$$"
+      "explanation": "Aplicando la fórmula: $1 - \\frac{(1-0.25)(9)}{10-2-1} = 1 - \\frac{6.75}{7} = 1 - 0.964 = 0.036$"
     },
     {
       "q": "En la regresión lineal, el método que busca minimizar la suma de los residuos al cuadrado se denomina ____.",
@@ -583,7 +583,7 @@
       ],
       "correct": 0,
       "hint": "Sus siglas en inglés son OLS.",
-      "explanation": "El método estándar es el de $$Mínimos\\ Cuadrados\\ Ordinarios\\ (OLS)$$"
+      "explanation": "El método estándar es el de Mínimos Cuadrados Ordinarios (OLS)"
     },
     {
       "q": "El Gráfico P-P normal de los residuos se utiliza para verificar visualmente el supuesto de ____ de los errores.",
@@ -594,7 +594,7 @@
       ],
       "correct": 0,
       "hint": "Analiza si los puntos se ajustan a la diagonal.",
-      "explanation": "El gráfico P-P es la herramienta visual principal para evaluar la $$Normalidad$$"
+      "explanation": "El gráfico P-P es la herramienta visual principal para evaluar la Normalidad"
     },
     {
       "q": "Si en una regresión simple el coeficiente $\\beta_1$ es negativo, la correlación de Pearson ($r$) entre $X$ e $Y$ será ____.",
@@ -605,7 +605,7 @@
       ],
       "correct": 0,
       "hint": "El signo de la pendiente y la correlación siempre coinciden.",
-      "explanation": "En la regresión simple, el signo de la pendiente $\\beta_1$ determina la dirección de la relación, por tanto es $$Negativa$$"
+      "explanation": "En la regresión simple, el signo de la pendiente $\\beta_1$ determina la dirección de la relación, por tanto es Negativa"
     },
     {
       "q": "El valor del intercepto $\\beta_0$ en el modelo SPSS analizado ($65.097$) representa el Bienestar cuando todas las VI están en su valor ____.",
@@ -616,7 +616,7 @@
       ],
       "correct": 0,
       "hint": "Es el punto donde la recta corta el eje Y.",
-      "explanation": "Por definición, el intercepto es el valor de $Y$ cuando todas las $X = 0$, es decir, valor $$Cero$$"
+      "explanation": "Por definición, el intercepto es el valor de $Y $ cuando todas las $ X = 0$, es decir, valor Cero"
     },
     {
       "q": "Si aumentamos el número de predictores en un modelo, el valor de $R^2$ (no ajustado) siempre ____.",
@@ -627,7 +627,7 @@
       ],
       "correct": 0,
       "hint": "Considera la propiedad matemática de la suma de cuadrados explicada.",
-      "explanation": "Añadir variables nunca reduce la varianza explicada matemática, por lo que $R^2$ siempre $$Aumenta\\ o\\ se\\ mantiene\\ igual$$"
+      "explanation": "Añadir variables nunca reduce la varianza explicada matemática, por lo que $R^2$ siempre Aumenta o se mantiene igual"
     },
     {
       "q": "En el output de SPSS, la columna 'Beta' (sin la letra griega $\\beta$) suele referirse a los coeficientes ____.",
@@ -638,7 +638,7 @@
       ],
       "correct": 0,
       "hint": "Son útiles para comparar la importancia relativa de las variables.",
-      "explanation": "La columna Beta en SPSS muestra los coeficientes $$Estandarizados$$"
+      "explanation": "La columna Beta en SPSS muestra los coeficientes Estandarizados"
     },
     {
       "q": "La diferencia entre el valor observado $Y_i$ y el valor predicho $\\hat{Y}_i$ se define técnicamente como ___.",
@@ -649,7 +649,7 @@
       ],
       "correct": 0,
       "hint": "Es el error de predicción del modelo.",
-      "explanation": "Dicha diferencia se denomina $$Residuo$$ o error residual."
+      "explanation": "Dicha diferencia se denomina Residuo o error residual."
     },
     {
       "q": "Para que un modelo de regresión lineal múltiple sea válido y sus inferencias sean fiables, se debe cumplir que:",
@@ -737,7 +737,7 @@
       ],
       "correct": 2,
       "hint": "¿Qué mide la prueba $t$ en cada fila de la tabla de coeficientes?",
-      "explanation": "La prueba $t$ contrasta la $H_0: \\beta_i = 0$ para cada variable independiente de forma individual."
+      "explanation": "La prueba $t $ contrasta la $ H_0: \\beta_i = 0$ para cada variable independiente de forma individual."
     },
     {
       "q": "Para interpretar correctamente una regresión múltiple, es necesario:",
@@ -748,7 +748,7 @@
       ],
       "correct": 2,
       "hint": "Es un proceso paso a paso desde lo general a lo específico.",
-      "explanation": "Primero se valida el modelo global ($F$) y luego se analizan los efectos específicos de cada variable ($t$)."
+      "explanation": "Primero se valida el modelo global ($F $) y luego se analizan los efectos específicos de cada variable ($ t$)."
     },
     {
       "q": "En el modelo analizado, si un sujeto tiene 0 en Ansiedad, Depresión y Autoestima, su Bienestar predicho será de $0$ porque:",
@@ -814,7 +814,7 @@
       ],
       "correct": 2,
       "hint": "¿Qué pasa con el error cuando la predicción es perfecta?",
-      "explanation": "Si $R^2 = 1$, entonces $SC_R = 0$, es decir, no hay error de predicción."
+      "explanation": "Si $R^2 = 1 $, entonces $ SC_R = 0$, es decir, no hay error de predicción."
     },
     {
       "q": "Un valor de Durbin-Watson de $0.5$ indicaría según la lógica estadística:",
@@ -847,7 +847,7 @@
       ],
       "correct": 2,
       "hint": "Piensa en cómo afecta un cambio en el origen de $Y$ a la pendiente.",
-      "explanation": "Sumar una constante a la VD solo cambia el intercepto ($\\beta_0$), pero las pendientes ($\\beta_i$) permanecen idénticas."
+      "explanation": "Sumar una constante a la VD solo cambia el intercepto ($\\beta_0 $), pero las pendientes ($\\beta_i$) permanecen idénticas."
     }
   ],
   "jsonLaboratorio": [

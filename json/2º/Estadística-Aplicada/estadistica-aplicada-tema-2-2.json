@@ -86,7 +86,7 @@
       ],
       "correct": 0,
       "hint": "Recuerda el ejemplo sobre depresión y los gráficos Q-Q.",
-      "explanation": "Puntuaciones $z$ dentro de $\\pm 1.96$ refuerzan la conclusión de que la distribución no se aleja significativamente de la normalidad."
+      "explanation": "Puntuaciones $z $ dentro de $\\pm 1.96$ refuerzan la conclusión de que la distribución no se aleja significativamente de la normalidad."
     },
     {
       "q": "¿La heterocedasticidad invalida siempre los resultados aunque los tamaños de los grupos sean iguales?",
@@ -119,7 +119,7 @@
       ],
       "correct": 0,
       "hint": "Considera qué ocurre con el valor $p$ cuando el denominador de la fracción aumenta.",
-      "explanation": "En muestras grandes, pequeñas diferencias triviales pueden resultar significativas ($p < .05$), llevando a rechazar erróneamente la homocedasticidad."
+      "explanation": "En muestras grandes, pequeñas diferencias triviales pueden resultar significativas ($p <.05$), llevando a rechazar erróneamente la homocedasticidad."
     },
     {
       "q": "Sobre el uso de gráficos Q-Q para evaluar la normalidad, elija la afirmación correcta:",
@@ -240,7 +240,7 @@
       ],
       "correct": 0,
       "hint": "Recuerda qué significa 'no significativo' en las pruebas de supuestos.",
-      "explanation": "Si $p > .05$, no hay evidencia suficiente para rechazar $H_0$, por lo que se asume homogeneidad de varianzas."
+      "explanation": "Si $p >.05 $, no hay evidencia suficiente para rechazar $ H_0$, por lo que se asume homogeneidad de varianzas."
     },
     {
       "q": "Sobre el procedimiento de análisis visual en SPSS, elija la afirmación correcta:",
@@ -361,7 +361,7 @@
       ],
       "correct": 0,
       "hint": "Revisa el ejemplo inicial y la regla para $n = 43$.",
-      "explanation": "Para $n = 43$, la regla tradicional sugiere el test de Shapiro-Wilk ($n \\le 50$), no el Kolmogorov-Smirnov."
+      "explanation": "Para $n = 43 $, la regla tradicional sugiere el test de Shapiro-Wilk ($ n \\le 50$), no el Kolmogorov-Smirnov."
     },
     {
       "q": "Respecto a la formulación de hipótesis en Levene, elija la afirmación incorrecta:",
@@ -372,7 +372,7 @@
       ],
       "correct": 0,
       "hint": "Compara las fórmulas de $H_0$ y $H_1$ en las notas al pie 5 y 6.",
-      "explanation": "La hipótesis alternativa ($H_1$) es $\\sigma_1^2 \\neq \\sigma_2^2$, indicando que las varianzas son diferentes."
+      "explanation": "La hipótesis alternativa ($H_1 $) es $\\sigma_1^2 \\neq \\sigma_2^2$, indicando que las varianzas son diferentes."
     },
     {
       "q": "Sobre las pruebas no paramétricas, elija la afirmación incorrecta:",
@@ -451,7 +451,7 @@
       ],
       "correct": 1,
       "hint": "Es una condición que se cumple por construcción del modelo lineal.",
-      "explanation": "Por definición del modelo de regresión de mínimos cuadrados, la suma de los residuos es cero, por lo tanto, $$\\mu_{\\epsilon} = 0$$."
+      "explanation": "Por definición del modelo de regresión de mínimos cuadrados, la suma de los residuos es cero, por lo tanto, $\\mu_{\\epsilon} = 0$."
     },
     {
       "q": "En el contexto de la independencia de errores, la hipótesis nula se formula matemáticamente como ____.",
@@ -462,7 +462,7 @@
       ],
       "correct": 0,
       "hint": "La independencia implica ausencia total de correlación entre residuos.",
-      "explanation": "La independencia exige que no haya autocorrelación, lo que se traduce en un coeficiente de correlación $$\\rho$$ igual a cero."
+      "explanation": "La independencia exige que no haya autocorrelación, lo que se traduce en un coeficiente de correlación $\\rho$ igual a cero."
     },
     {
       "q": "Para una muestra de $n=100$ con asimetría positiva, la transformación más adecuada para aproximar la normalidad es ____.",
@@ -572,7 +572,7 @@
       ],
       "correct": 1,
       "hint": "Pequeñas diferencias triviales pueden resultar significativas.",
-      "explanation": "Con grandes N, el error estándar disminuye y cualquier desviación mínima de la igualdad de varianzas genera un $p < .05$."
+      "explanation": "Con grandes N, el error estándar disminuye y cualquier desviación mínima de la igualdad de varianzas genera un $p <.05$."
     },
     {
       "q": "Para una variable con outliers donde se desea reducir su impacto sin eliminarlos, el estadístico de Levene debe basarse en ____.",
@@ -781,7 +781,7 @@
       ],
       "correct": 1,
       "hint": "Si $p < .05$, rechazamos la hipótesis nula.",
-      "explanation": "Un $p = .001$ significa que los datos **no** siguen una distribución normal, por lo que las opciones dadas son falsas."
+      "explanation": "Un $p =.001$ significa que los datos **no** siguen una distribución normal, por lo que las opciones dadas son falsas."
     },
     {
       "q": "Un estadístico de Durbin-Watson de $d = 0.5$ sugiere que existe:",
@@ -803,7 +803,7 @@
       ],
       "correct": 1,
       "hint": "La varianza debe ser constante, no cero ni proporcional.",
-      "explanation": "Homocedasticidad significa varianza constante ($$\\sigma^{2} = k$$), no que varíe con X o que sea nula."
+      "explanation": "Homocedasticidad significa varianza constante ($\\sigma^{2} = k$), no que varíe con X o que sea nula."
     },
     {
       "q": "Para una distribución con asimetría negativa (cola a la izquierda), ¿qué transformación es la recomendada?",
@@ -825,7 +825,7 @@
       ],
       "correct": 1,
       "hint": "Compare estrictamente con el nivel crítico de .05.",
-      "explanation": "Al ser $p < .05$, rechazamos $H_{0}$ y concluimos heterocedasticidad; 'Aceptar' es incorrecto."
+      "explanation": "Al ser $p <.05 $, rechazamos $ H_{0}$ y concluimos heterocedasticidad; 'Aceptar' es incorrecto."
     },
     {
       "q": "El supuesto de media cero en los residuos se comprueba mediante:",

@@ -20,7 +20,7 @@
       ],
       "correct": 0,
       "hint": "Piense en $\\alpha$ como el riesgo de 'falso positivo' que estamos dispuestos a tolerar.",
-      "explanation": "El nivel de significación $\\alpha$ es, por definición, la probabilidad de rechazar la $H_{0}$ cuando esta es verdadera, lo que constituye el error de tipo I."
+      "explanation": "El nivel de significación $\\alpha $ es, por definición, la probabilidad de rechazar la $ H_{0}$ cuando esta es verdadera, lo que constituye el error de tipo I."
     },
     {
       "q": "¿Un aumento en el tamaño de la muestra ($n$) reduce automáticamente la probabilidad de cometer un error de tipo I ($\\alpha$)?",
@@ -31,7 +31,7 @@
       ],
       "correct": 1,
       "hint": "Diferencie entre los parámetros fijados por el investigador y los resultados del análisis.",
-      "explanation": "El nivel $\\alpha$ es un valor preestablecido por convención (habitualmente $.05$) y no cambia con el tamaño de la muestra. Lo que sí cambia con $n$ es la potencia estadística ($1-\\beta$)."
+      "explanation": "El nivel $\\alpha $ es un valor preestablecido por convención (habitualmente $.05 $) y no cambia con el tamaño de la muestra. Lo que sí cambia con $ n $ es la potencia estadística ($ 1-\\beta$)."
     },
     {
       "q": "¿La potencia estadística ($1-\\beta$) es la probabilidad de rechazar la hipótesis nula cuando esta es realmente falsa?",
@@ -53,7 +53,7 @@
       ],
       "correct": 1,
       "hint": "El valor $p$ siempre se calcula asumiendo que la hipótesis nula es la que rige el escenario.",
-      "explanation": "El valor $p$ es la probabilidad de obtener los datos observados (o más extremos) si la $H_{0}$ fuera cierta. No es la probabilidad de que una hipótesis sea verdadera o falsa en sí misma."
+      "explanation": "El valor $p $ es la probabilidad de obtener los datos observados (o más extremos) si la $ H_{0}$ fuera cierta. No es la probabilidad de que una hipótesis sea verdadera o falsa en sí misma."
     },
     {
       "q": "¿Según las normas APA, los valores de probabilidad menores a $1$ deben escribirse siempre con un cero inicial (ej: $0.05$)?",
@@ -75,7 +75,7 @@
       ],
       "correct": 0,
       "hint": "Piense en qué ocurre con el punto de corte si intentamos ser extremadamente estrictos con los falsos positivos.",
-      "explanation": "Al disminuir $\\alpha$ para evitar falsos positivos, el punto de corte se desplaza exigiendo una evidencia más extrema, lo que aumenta la probabilidad de no detectar efectos reales ($\\beta$)."
+      "explanation": "Al disminuir $\\alpha $ para evitar falsos positivos, el punto de corte se desplaza exigiendo una evidencia más extrema, lo que aumenta la probabilidad de no detectar efectos reales ($\\beta$)."
     },
     {
       "q": "¿El tamaño del efecto es un índice que depende exclusivamente del tamaño de la muestra utilizada en el estudio?",
@@ -97,7 +97,7 @@
       ],
       "correct": 1,
       "hint": "Identifique cuál de las dos hipótesis representa el 'status quo' o la ausencia de efecto.",
-      "explanation": "Es la hipótesis nula ($H_{0}$) la que postula la ausencia de efecto o diferencia. La $H_{1}$ es la que afirma la existencia del fenómeno estudiado."
+      "explanation": "Es la hipótesis nula ($H_{0}$) la que postula la ausencia de efecto o diferencia. La $ H_{1}$ es la que afirma la existencia del fenómeno estudiado."
     },
     {
       "q": "¿Un resultado estadísticamente significativo ($p < .05$) garantiza siempre que el efecto encontrado tiene relevancia práctica?",
@@ -119,7 +119,7 @@
       ],
       "correct": 0,
       "hint": "Piense en el papel que juega la 'falsación' en el método científico según el texto.",
-      "explanation": "El investigador busca evidencia para rechazar la $H_{0}$ y así poder dar apoyo a su hipótesis de trabajo ($H_{1}$), que es lo que espera encontrar."
+      "explanation": "El investigador busca evidencia para rechazar la $H_{0}$ y así poder dar apoyo a su hipótesis de trabajo ($ H_{1}$), que es lo que espera encontrar."
     },
     {
       "q": "Sobre el valor $p$, ¿cuál de las siguientes opciones describe correctamente su interpretación técnica?",
@@ -130,7 +130,7 @@
       ],
       "correct": 1,
       "hint": "El valor $p$ es un resultado del análisis, no una decisión previa del investigador.",
-      "explanation": "El valor $p$ es una probabilidad condicional: $P(\\text{Datos} | H_{0})$. Indica qué tan inusuales son los datos si no hubiera efecto real."
+      "explanation": "El valor $p $ es una probabilidad condicional: $ P(\\text{Datos} | H_{0})$. Indica qué tan inusuales son los datos si no hubiera efecto real."
     },
     {
       "q": "En el contexto del riesgo de errores, ¿qué define fundamentalmente al Error de Tipo II?",
@@ -141,7 +141,7 @@
       ],
       "correct": 0,
       "hint": "Asocie este error con el concepto de 'falso negativo'.",
-      "explanation": "El Error Tipo II ($\\beta$) ocurre cuando no somos capaces de detectar un efecto que sí existe, por lo que mantenemos una $H_{0}$ que es falsa."
+      "explanation": "El Error Tipo II ($\\beta $) ocurre cuando no somos capaces de detectar un efecto que sí existe, por lo que mantenemos una $ H_{0}$ que es falsa."
     },
     {
       "q": "¿Cuál es la relación correcta entre el tamaño de la muestra y las distribuciones de probabilidad de las hipótesis?",
@@ -152,7 +152,7 @@
       ],
       "correct": 2,
       "hint": "Piense en cómo afecta la cantidad de datos a la variabilidad de los resultados.",
-      "explanation": "Al aumentar $n$, la variabilidad disminuye, las distribuciones se vuelven más delgadas y el solapamiento entre $H_{0}$ y $H_{1}$ se reduce, facilitando la detección de efectos."
+      "explanation": "Al aumentar $n $, la variabilidad disminuye, las distribuciones se vuelven más delgadas y el solapamiento entre $ H_{0}$ y $ H_{1}$ se reduce, facilitando la detección de efectos."
     },
     {
       "q": "Respecto a la toma de decisiones, identifique la afirmación correcta sobre el nivel de significación ($\\alpha$):",
@@ -163,7 +163,7 @@
       ],
       "correct": 0,
       "hint": "Recuerde por qué se eligió ese umbral específico mencionado en el manual.",
-      "explanation": "El valor $.05$ es un consenso que permite un margen de error aceptable ($5\\%$) sin ser tan estricto que impida detectar efectos reales con frecuencia."
+      "explanation": "El valor $.05 $ es un consenso que permite un margen de error aceptable ($ 5\\%$) sin ser tan estricto que impida detectar efectos reales con frecuencia."
     },
     {
       "q": "¿Qué implica obtener un tamaño del efecto grande en una investigación científica según el texto?",
@@ -218,7 +218,7 @@
       ],
       "correct": 1,
       "hint": "Compare $.024$ con $.050$.",
-      "explanation": "Como $.024 < .05$, el resultado se considera estadísticamente significativo, lo que autoriza el rechazo de la $H_{0}$."
+      "explanation": "Como $.024 <.05 $, el resultado se considera estadísticamente significativo, lo que autoriza el rechazo de la $ H_{0}$."
     },
     {
       "q": "Sobre la potencia estadística, ¿cuál de estos factores aumenta su valor de forma directa?",
@@ -229,7 +229,7 @@
       ],
       "correct": 1,
       "hint": "Más sujetos suelen dar 'más fuerza' para ver lo que está pasando realmente.",
-      "explanation": "A mayor $n$, menor error estándar y mayor capacidad para rechazar una $H_{0}$ falsa (potencia)."
+      "explanation": "A mayor $n $, menor error estándar y mayor capacidad para rechazar una $ H_{0}$ falsa (potencia)."
     },
     {
       "q": "Identifique la afirmación correcta sobre la relación entre significación y práctica:",
@@ -240,7 +240,7 @@
       ],
       "correct": 1,
       "hint": "Busque la combinación que da máxima seguridad al investigador.",
-      "explanation": "La combinación de significación estadística ($p < .05$) y significación práctica (efecto grande) es el escenario ideal en investigación."
+      "explanation": "La combinación de significación estadística ($p <.05$) y significación práctica (efecto grande) es el escenario ideal en investigación."
     },
     {
       "q": "¿Qué significa 'mantener la $H_{0}$' en términos de probabilidad según el texto?",
@@ -295,7 +295,7 @@
       ],
       "correct": 1,
       "hint": "¿Cambia $\\alpha$ solo por tener más sujetos?",
-      "explanation": "Es incorrecto decir que el error tipo I desaparece. $\\alpha$ sigue siendo $.05$ (o el valor fijado) sin importar cuán grande sea la muestra."
+      "explanation": "Es incorrecto decir que el error tipo I desaparece. $\\alpha $ sigue siendo $.05$ (o el valor fijado) sin importar cuán grande sea la muestra."
     },
     {
       "q": "Identifique la afirmación incorrecta sobre el valor $p$:",
@@ -306,7 +306,7 @@
       ],
       "correct": 1,
       "hint": "Compare $.06$ con el umbral $.05$.",
-      "explanation": "Es incorrecto decir que $.06$ permite rechazar $H_{0}$. Al ser $.06 > .05$, no hay significación estadística y se debe mantener $H_{0}$."
+      "explanation": "Es incorrecto decir que $.06 $ permite rechazar $ H_{0}$. Al ser $.06 >.05 $, no hay significación estadística y se debe mantener $ H_{0}$."
     },
     {
       "q": "Sobre el tamaño del efecto, señale la afirmación incorrecta:",
@@ -361,7 +361,7 @@
       ],
       "correct": 2,
       "hint": "¿Qué significa 'Nula'?",
-      "explanation": "Es incorrecto decir que la $H_{0}$ afirma una relación fuerte. La $H_{0}$ afirma justamente lo contrario: que no hay relación o que el efecto es nulo."
+      "explanation": "Es incorrecto decir que la $H_{0}$ afirma una relación fuerte. La $ H_{0}$ afirma justamente lo contrario: que no hay relación o que el efecto es nulo."
     },
     {
       "q": "Identifique la afirmación incorrecta sobre el Escenario 2 (Error Tipo I):",
@@ -405,7 +405,7 @@
       ],
       "correct": 2,
       "hint": "¿El área de 'mantenimiento de $H_{0}$' tiene algo que ver con 'aceptar $H_{1}$'?",
-      "explanation": "Es incorrecto. El nivel de aceptación se refiere a la probabilidad de mantener $H_{0}$ cuando es cierta, no tiene que ver con aceptar $H_{1}$ erróneamente."
+      "explanation": "Es incorrecto. El nivel de aceptación se refiere a la probabilidad de mantener $H_{0}$ cuando es cierta, no tiene que ver con aceptar $ H_{1}$ erróneamente."
     },
     {
       "q": "Señale la afirmación incorrecta sobre la relación entre $n$ y el error de tipo II:",
@@ -430,7 +430,7 @@
       ],
       "correct": 0,
       "hint": "Es el umbral de riesgo que el investigador decide asumir a priori.",
-      "explanation": "El nivel de significación $\\alpha$ define la región de rechazo bajo la $H_{0}$, cuantificando el riesgo de falso positivo."
+      "explanation": "El nivel de significación $\\alpha $ define la región de rechazo bajo la $ H_{0}$, cuantificando el riesgo de falso positivo."
     },
     {
       "questionNumber": 2,
@@ -442,7 +442,7 @@
       ],
       "correct": 0,
       "hint": "Recuerda la relación complementaria entre potencia y riesgo de falso negativo.",
-      "explanation": "La potencia se define como $1-\\beta$; por tanto, $\\beta = 1 - .80 = .20$."
+      "explanation": "La potencia se define como $1-\\beta $; por tanto, $\\beta = 1 -.80 =.20$."
     },
     {
       "questionNumber": 3,
@@ -454,7 +454,7 @@
       ],
       "correct": 0,
       "hint": "Compare si el p-valor es estrictamente menor que el umbral preestablecido.",
-      "explanation": "Dado que $.051 > .05$, no se alcanza el umbral de rareza necesario para rechazar la $H_{0}$."
+      "explanation": "Dado que $.051 >.05 $, no se alcanza el umbral de rareza necesario para rechazar la $ H_{0}$."
     },
     {
       "questionNumber": 4,
@@ -466,7 +466,7 @@
       ],
       "correct": 0,
       "hint": "Las probabilidades en APA omiten el cero a la izquierda del punto decimal.",
-      "explanation": "En APA, valores que no pueden superar la unidad (como $p$ o $\\alpha$) no llevan cero inicial."
+      "explanation": "En APA, valores que no pueden superar la unidad (como $p $ o $\\alpha$) no llevan cero inicial."
     },
     {
       "questionNumber": 5,
@@ -478,7 +478,7 @@
       ],
       "correct": 0,
       "hint": "La zona crítica se sitúa en las colas de la distribución de probabilidad.",
-      "explanation": "Un resultado es estadísticamente significativo cuando su probabilidad $p$ es menor que $\\alpha$."
+      "explanation": "Un resultado es estadísticamente significativo cuando su probabilidad $p $ es menor que $\\alpha$."
     },
     {
       "questionNumber": 6,
@@ -490,7 +490,7 @@
       ],
       "correct": 0,
       "hint": "Es el área complementaria al error de tipo I en la curva de la hipótesis nula.",
-      "explanation": "La zona de aceptación es el rango de valores compatibles con $H_{0}$, definido por $1-\\alpha$."
+      "explanation": "La zona de aceptación es el rango de valores compatibles con $H_{0}$, definido por $ 1-\\alpha$."
     },
     {
       "questionNumber": 7,
@@ -526,7 +526,7 @@
       ],
       "correct": 0,
       "hint": "Existe un compromiso (trade-off) inverso entre los riesgos de error tipo I y tipo II.",
-      "explanation": "Un $\\alpha$ más laxo (mayor) facilita el rechazo de $H_{0}$, reduciendo el riesgo $\\beta$ de no detectar efectos."
+      "explanation": "Un $\\alpha $ más laxo (mayor) facilita el rechazo de $ H_{0}$, reduciendo el riesgo $\\beta$ de no detectar efectos."
     },
     {
       "questionNumber": 10,
@@ -562,7 +562,7 @@
       ],
       "correct": 0,
       "hint": "Se asocia con la falta de sensibilidad del análisis para detectar la realidad.",
-      "explanation": "$\\beta$ es la probabilidad de no rechazar $H_{0}$ cuando la alternativa $H_{1}$ es la verdadera."
+      "explanation": "$\\beta $ es la probabilidad de no rechazar $ H_{0}$ cuando la alternativa $ H_{1}$ es la verdadera."
     },
     {
       "questionNumber": 13,
@@ -586,7 +586,7 @@
       ],
       "correct": 0,
       "hint": "Es el punto de corte estándar mencionado repetidamente en el manual.",
-      "explanation": "El estándar de .05 equilibra el riesgo de falso positivo en las ciencias sociales."
+      "explanation": "El estándar de.05 equilibra el riesgo de falso positivo en las ciencias sociales."
     },
     {
       "questionNumber": 15,
@@ -598,7 +598,7 @@
       ],
       "correct": 0,
       "hint": "La baja potencia significa incapacidad para detectar efectos existentes.",
-      "explanation": "Si la potencia ($1-\\beta$) es baja, $\\beta$ es necesariamente alto, aumentando los falsos negativos."
+      "explanation": "Si la potencia ($1-\\beta $) es baja, $\\beta$ es necesariamente alto, aumentando los falsos negativos."
     },
     {
       "questionNumber": 16,
@@ -610,7 +610,7 @@
       ],
       "correct": 0,
       "hint": "Observa cómo cambia el área naranja de la potencia al mover la línea vertical.",
-      "explanation": "Al reducir $\\alpha$, se incrementa el área de $\\beta$ y se reduce el área de potencia $1-\\beta$."
+      "explanation": "Al reducir $\\alpha $, se incrementa el área de $\\beta $ y se reduce el área de potencia $ 1-\\beta$."
     },
     {
       "questionNumber": 17,
@@ -646,7 +646,7 @@
       ],
       "correct": 0,
       "hint": "El p-valor siempre se calcula asumiendo que el efecto es inexistente.",
-      "explanation": "El valor $p$ es la probabilidad de los datos observados bajo la suposición de $H_{0}$ cierta."
+      "explanation": "El valor $p $ es la probabilidad de los datos observados bajo la suposición de $ H_{0}$ cierta."
     },
     {
       "questionNumber": 20,
@@ -754,7 +754,7 @@
       ],
       "correct": 2,
       "hint": "Es el escenario del 'falso negativo' o pérdida de hallazgos relevantes.",
-      "explanation": "$\\beta$ ocurre cuando fallamos en rechazar una $H_{0}$ falsa debido a falta de potencia."
+      "explanation": "$\\beta $ ocurre cuando fallamos en rechazar una $ H_{0}$ falsa debido a falta de potencia."
     },
     {
       "questionNumber": 29,
@@ -814,7 +814,7 @@
       ],
       "correct": 2,
       "hint": "Busque la opción que omita el cero inicial y use punto decimal.",
-      "explanation": "La forma correcta sería $p = .024$, sin el cero inicial."
+      "explanation": "La forma correcta sería $p =.024$, sin el cero inicial."
     },
     {
       "questionNumber": 34,
@@ -826,7 +826,7 @@
       ],
       "correct": 2,
       "hint": "Estas acciones suelen reducir la sensibilidad de la prueba, no aumentarla.",
-      "explanation": "Para aumentar la potencia se debe aumentar $n$, aumentar $\\alpha$ o aumentar el tamaño del efecto."
+      "explanation": "Para aumentar la potencia se debe aumentar $n $, aumentar $\\alpha$ o aumentar el tamaño del efecto."
     },
     {
       "questionNumber": 35,
@@ -838,7 +838,7 @@
       ],
       "correct": 2,
       "hint": "La zona de aceptación es $1-\\alpha$. Si $\\alpha$ aumenta, $1-\\alpha$ disminuye.",
-      "explanation": "Para ampliar la zona de aceptación ($1-\\alpha$), se debe disminuir el nivel de significación $\\alpha$."
+      "explanation": "Para ampliar la zona de aceptación ($1-\\alpha $), se debe disminuir el nivel de significación $\\alpha$."
     },
     {
       "questionNumber": 36,
@@ -886,7 +886,7 @@
       ],
       "correct": 2,
       "hint": "El proceso requiere reformular las ideas teóricas en hipótesis estadísticas.",
-      "explanation": "Se traduce en hipótesis estadísticas ($H_{0}$ y $H_{1}$), no en los términos propuestos en las opciones."
+      "explanation": "Se traduce en hipótesis estadísticas ($H_{0}$ y $ H_{1}$), no en los términos propuestos en las opciones."
     },
     {
       "questionNumber": 40,

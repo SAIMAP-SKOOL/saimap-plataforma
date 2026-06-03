@@ -20,7 +20,7 @@
       ],
       "correct": 1,
       "hint": "Recuerda la diferencia entre la definición de la hipótesis nula y la hipótesis alternativa.",
-      "explanation": "La $H_0$ postula igualdad de medias ($\\\\overline{X}_1 = \\\\overline{X}_2 = \\\\dots = \\\\overline{X}_k$), mientras que la diferencia es la $H_1$."
+      "explanation": "La $H_0 $ postula igualdad de medias ($\\\\overline{X}_1 = \\\\overline{X}_2 = \\\\dots = \\\\overline{X}_k $), mientras que la diferencia es la $ H_1$."
     },
     {
       "q": "El estadístico $F$ en este modelo se define como el cociente entre la media cuadrática del modelo ($MC_M$) y la media cuadrática del error ($MC_R$).",
@@ -42,7 +42,7 @@
       ],
       "correct": 1,
       "hint": "Fíjate en los grados de libertad asociados a la variabilidad entre condiciones o tratamientos.",
-      "explanation": "La $MC_M$ se calcula dividiendo la $SC_M$ por $k - 1$, no por $n - k$ (que corresponde al error)."
+      "explanation": "La $MC_M $ se calcula dividiendo la $ SC_M $ por $ k - 1 $, no por $ n - k$ (que corresponde al error)."
     },
     {
       "q": "La prueba de Mauchly se utiliza específicamente para verificar si las diferencias entre pares de condiciones presentan varianzas que son iguales.",
@@ -64,7 +64,7 @@
       ],
       "correct": 1,
       "hint": "Recuerda qué significa que una prueba de contraste de supuestos resulte estadísticamente significativa.",
-      "explanation": "Un valor $p < .05$ en Mauchly indica que se viola el supuesto de esfericidad, requiriendo correcciones posteriores."
+      "explanation": "Un valor $p <.05$ en Mauchly indica que se viola el supuesto de esfericidad, requiriendo correcciones posteriores."
     },
     {
       "q": "La corrección de Greenhouse-Geisser se aplica sobre los grados de libertad para proteger el análisis ante la falta de esfericidad de los datos.",
@@ -130,7 +130,7 @@
       ],
       "correct": 0,
       "hint": "Revisa la definición de $n$ y $k$ en el cálculo de la media cuadrática residual ($MC_R$).",
-      "explanation": "Según la fórmula $MC_R = \\\\frac{SC_R}{n-k}$, los grados de libertad del error son $n$ (observaciones) menos $k$ (condiciones)."
+      "explanation": "Según la fórmula $MC_R = \\\\frac{SC_R}{n-k}$, los grados de libertad del error son $ n $ (observaciones) menos $ k$ (condiciones)."
     },
     {
       "q": "Indique la afirmación correcta sobre el uso de la prueba de Games-Howell en el contexto de comparaciones múltiples post hoc.",
@@ -196,7 +196,7 @@
       ],
       "correct": 0,
       "hint": "Consulta la descripción visual del output del test de Friedman en la página 106.",
-      "explanation": "El manual especifica que el diagrama utiliza el color azul para los pares con diferencias significativas ($p < .05$)."
+      "explanation": "El manual especifica que el diagrama utiliza el color azul para los pares con diferencias significativas ($p <.05$)."
     },
     {
       "q": "Indique la afirmación correcta sobre el supuesto de normalidad en el ANOVA de medidas repetidas con muestras grandes.",
@@ -339,7 +339,7 @@
       ],
       "correct": 0,
       "hint": "Diferencia entre Suma de Cuadrados Total y Suma de Cuadrados del Error.",
-      "explanation": "La $SC_R$ es solo una parte de la variabilidad; la variabilidad 'total' es la $SC_{Total}$."
+      "explanation": "La $SC_R $ es solo una parte de la variabilidad; la variabilidad 'total' es la $ SC_{Total}$."
     },
     {
       "q": "Seleccione la afirmación incorrecta sobre el supuesto de independencia de observaciones entre sujetos.",
@@ -394,7 +394,7 @@
       ],
       "correct": 0,
       "hint": "¿Qué valor de épsilon representa la esfericidad perfecta?",
-      "explanation": "Un épsilon de $1$ significa esfericidad perfecta; cuanto más se aleja de $1$ (hacia abajo), mayor es la violación."
+      "explanation": "Un épsilon de $1 $ significa esfericidad perfecta; cuanto más se aleja de $ 1$ (hacia abajo), mayor es la violación."
     },
     {
       "q": "Seleccione la afirmación incorrecta sobre la variabilidad residual en comparación con la variabilidad del modelo.",
@@ -405,7 +405,7 @@
       ],
       "correct": 0,
       "hint": "Piensa en la fórmula $F = MC_M / MC_R$. ¿Qué hace que $F$ sea grande?",
-      "explanation": "Para que sea significativo, $MC_M$ (modelo) debe ser significativamente mayor que $MC_R$ (residuo), no al revés."
+      "explanation": "Para que sea significativo, $MC_M $ (modelo) debe ser significativamente mayor que $ MC_R$ (residuo), no al revés."
     }
   ],
   "jsonTestB": [
@@ -451,7 +451,7 @@
       ],
       "correct": 0,
       "hint": "Es un supuesto específico de diseños intrasujeto evaluado con $\\\\chi^2$.",
-      "explanation": "La esfericidad es el supuesto clave en medidas repetidas. Si $\\\\text{Sig.} < .05$, se viola (pág. 97)."
+      "explanation": "La esfericidad es el supuesto clave en medidas repetidas. Si $\\\\text{Sig.} <.05$, se viola (pág. 97)."
     },
     {
       "q": "Si se viola el supuesto de esfericidad, se debe emplear la corrección de ____ para ajustar los grados de libertad.",
@@ -484,7 +484,7 @@
       ],
       "correct": 0,
       "hint": "Es el tamaño de la muestra original antes de la repetición.",
-      "explanation": "Según la pág. 96, $n$ es el número de sujetos multiplicado por $k$ (número de condiciones)."
+      "explanation": "Según la pág. 96, $n $ es el número de sujetos multiplicado por $ k$ (número de condiciones)."
     },
     {
       "q": "La hipótesis nula ($H_0$) postula que ____ entre las medias de las diferentes condiciones temporales.",
@@ -495,7 +495,7 @@
       ],
       "correct": 0,
       "hint": "Es la hipótesis de igualdad o ausencia de efecto.",
-      "explanation": "Se define como $\\\\mu_1 = \\\\mu_2 = ... = \\\\mu_k$, es decir, ausencia de cambios significativos (pág. 97)."
+      "explanation": "Se define como $\\\\mu_1 = \\\\mu_2 =... = \\\\mu_k$, es decir, ausencia de cambios significativos (pág. 97)."
     },
     {
       "q": "El tamaño del efecto en este tipo de ANOVA se suele informar mediante el estadístico ____.",
@@ -539,7 +539,7 @@
       ],
       "correct": 0,
       "hint": "Un p-valor menor a .05 implica rechazo de la hipótesis de igualdad.",
-      "explanation": "Si $p < .05$, se rechaza la esfericidad y se requiere corrección (pág. 103)."
+      "explanation": "Si $p <.05$, se rechaza la esfericidad y se requiere corrección (pág. 103)."
     },
     {
       "q": "La corrección de ____ es una alternativa a Greenhouse-Geisser cuando el valor épsilon es cercano a 1.",
@@ -627,7 +627,7 @@
       ],
       "correct": 0,
       "hint": "Es la marca visual estándar para un p-valor inferior al nivel alfa.",
-      "explanation": "El asterisco señala diferencias estadísticamente significativas a nivel .05 (pág. 102)."
+      "explanation": "El asterisco señala diferencias estadísticamente significativas a nivel.05 (pág. 102)."
     },
     {
       "q": "Sobre el supuesto de independencia en el ANOVA de medidas repetidas, señale la opción correcta:",
@@ -671,7 +671,7 @@
       ],
       "correct": 0,
       "hint": "Analice la hipótesis nula y las consecuencias de su rechazo.",
-      "explanation": "Su $H_0$ es que hay esfericidad; si $p < .05$, se aplican correcciones como Greenhouse-Geisser (pág. 103)."
+      "explanation": "Su $H_0 $ es que hay esfericidad; si $ p <.05$, se aplican correcciones como Greenhouse-Geisser (pág. 103)."
     },
     {
       "q": "Para realizar correctamente el análisis de normalidad previo al ANOVA en SPSS:",
@@ -759,7 +759,7 @@
       ],
       "correct": 0,
       "hint": "Determine si se debe usar la fila de esfericidad asumida o la corregida.",
-      "explanation": "Con $p > .05$, se asume esfericidad. Las opciones que sugieran corregir serían erróneas (pág. 103)."
+      "explanation": "Con $p >.05$, se asume esfericidad. Las opciones que sugieran corregir serían erróneas (pág. 103)."
     },
     {
       "q": "En un ANOVA de 3 niveles con 10 sujetos, los grados de libertad del error ($\\\\text{gl}_R$) son:",
@@ -781,7 +781,7 @@
       ],
       "correct": 0,
       "hint": "Compare el valor p con el nivel de significación estándar .05.",
-      "explanation": "Como $p > .05$, no hay diferencias significativas. Afirmar lo contrario sería un error de interpretación."
+      "explanation": "Como $p >.05$, no hay diferencias significativas. Afirmar lo contrario sería un error de interpretación."
     },
     {
       "q": "Es un supuesto necesario para el ANOVA de medidas repetidas que las varianzas sean:",
