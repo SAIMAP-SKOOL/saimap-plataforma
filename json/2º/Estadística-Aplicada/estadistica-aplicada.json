@@ -7231,6 +7231,446 @@
       "explanation": "El valor p solo informa sobre la probabilidad de azar; la importancia práctica se evalúa con el tamaño del efecto (d de Cohen)."
     },
     {
+      "q": "En la prueba t independiente, los grados de libertad asumiendo varianzas homogéneas se determinan sistemáticamente mediante la expresión $gl = n_A + n_B - 1$.",
+      "options": [
+        "La afirmación deducida es verdadera.",
+        "La afirmación deducida es incorrecta.",
+        "La información dada es insuficiente."
+      ],
+      "correct": 1,
+      "hint": "Recuerda cuántos parámetros muestrales se estiman para calcular los grados de libertad en este diseño bifactorial.",
+      "explanation": "Es incorrecto porque para dos muestras independientes con varianzas iguales, se pierde un grado de libertad por cada media estimada, siendo la fórmula correcta $gl = n_A + n_B - 2$."
+    },
+    {
+      "q": "La $d$ de Cohen evalúa la relevancia práctica para descartar la posibilidad de que una diferencia estadísticamente significativa se deba únicamente a una muestra masiva.",
+      "options": [
+        "La afirmación deducida es verdadera.",
+        "La afirmación deducida es incorrecta.",
+        "La información dada es insuficiente."
+      ],
+      "correct": 0,
+      "hint": "Considera la diferencia entre la significación estadística (dependiente de la $n$) y el tamaño del efecto.",
+      "explanation": "Es correcto. Un valor $p <.05$ puede derivarse exclusivamente de un tamaño muestral masivo (alta potencia), por lo que la estadística de Cohen aisla la magnitud real del efecto estandarizado."
+    },
+    {
+      "q": "Si empíricamente el estadístico $t$ obtenido es menor que el valor crítico de $T$, la conclusión teórica exige rechazar incondicionalmente la hipótesis nula del modelo.",
+      "options": [
+        "La afirmación deducida es verdadera.",
+        "La afirmación deducida es incorrecta.",
+        "La información dada es insuficiente."
+      ],
+      "correct": 1,
+      "hint": "Compara la posición del estadístico empírico respecto a la zona de rechazo de la distribución teórica de Student.",
+      "explanation": "Es incorrecto. Si $t < T_{\\text{crítico}}$, el valor cae en la zona de retención de $ H_0$, implicando que la variabilidad observada no supera a la variación estocástica o de error."
+    },
+    {
+      "q": "La prueba $U$ de Mann-Whitney contrasta empíricamente las distribuciones de rangos en lugar de operar directamente con las medias aritméticas poblacionales.",
+      "options": [
+        "La afirmación deducida es verdadera.",
+        "La afirmación deducida es incorrecta.",
+        "La información dada es insuficiente."
+      ],
+      "correct": 0,
+      "hint": "Identifica qué característica matemática sacrifica esta prueba no paramétrica al carecer del supuesto de normalidad.",
+      "explanation": "Es verdadero. Al ser no paramétrica y no requerir el cálculo continuo de $\\bar{X}$, la prueba ordena jerárquicamente las observaciones y compara las sumas de rangos para contrastar grupos."
+    },
+    {
+      "q": "Una variable dependiente capturada mediante una escala ordinal cumple plenamente el supuesto paramétrico exigido para ejecutar una prueba t de muestras independientes.",
+      "options": [
+        "La afirmación deducida es verdadera.",
+        "La afirmación deducida es incorrecta.",
+        "La información dada es insuficiente."
+      ],
+      "correct": 1,
+      "hint": "Repasa las tipologías de escalas de medición requeridas para asegurar la continuidad métrica paramétrica.",
+      "explanation": "Es falso. La prueba paramétrica exige variables continuas medidas en escalas de intervalo o razón, ya que una escala ordinal imposibilita la delimitación precisa de una media matemática $\\mu$."
+    },
+    {
+      "q": "La variabilidad sistemática en el análisis $t$ de Student se representa analíticamente a través de la varianza interna residual de cada uno de los grupos comparados.",
+      "options": [
+        "La afirmación deducida es verdadera.",
+        "La afirmación deducida es incorrecta.",
+        "La información dada es insuficiente."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre el efecto propio de la manipulación experimental y el ruido aleatorio intrínseco de los sujetos.",
+      "explanation": "Falso. La varianza interna representa la variabilidad NO sistemática (azar). La variación sistemática es impulsada por la variable independiente y reside en el numerador diferencial $\\bar{X}_A - \\bar{X}_B$."
+    },
+    {
+      "q": "En el contraste t dependiente, el estadístico pondera rigurosamente si la alteración intra-grupo excede la variabilidad no sistemática natural del modelo analizado.",
+      "options": [
+        "La afirmación deducida es verdadera.",
+        "La afirmación deducida es incorrecta.",
+        "La información dada es insuficiente."
+      ],
+      "correct": 0,
+      "hint": "Considera la lógica del ratio estadístico al contrastar momentos pre-test y post-test en una misma entidad.",
+      "explanation": "Verdadero. La métrica analiza el cambio directo dentro de los sujetos (numerador) frente al margen de error esperado por fluctuaciones estocásticas típicas en mediciones secuenciales análogas."
+    },
+    {
+      "q": "Si la prueba de Levene arroja sistemáticamente un valor $p < .05$, la estadística estipula la obligación de integrar la corrección distributiva formulada por Welch.",
+      "options": [
+        "La afirmación deducida es verdadera.",
+        "La afirmación deducida es incorrecta.",
+        "La información dada es insuficiente."
+      ],
+      "correct": 0,
+      "hint": "Analiza qué asunción del teorema del límite central paramétrico se quiebra al obtener dicha significación en Levene.",
+      "explanation": "Es correcto. Un valor $p <.05 $ rechaza la hipótesis de homocedasticidad ($\\sigma_1^2 = \\sigma_2^2$). Por ende, no se asumen varianzas iguales y Welch corrige los grados de libertad resultantes."
+    },
+    {
+      "q": "Un Intervalo de Confianza (IC) para la diferencia ponderada de medias que atrapa explícitamente el valor cero constituye una prueba irrefutable para rechazar $H_0$.",
+      "options": [
+        "La afirmación deducida es verdadera.",
+        "La afirmación deducida es incorrecta.",
+        "La información dada es insuficiente."
+      ],
+      "correct": 1,
+      "hint": "Piensa en qué significa aritméticamente que la diferencia entre dos parámetros oscile estadísticamente alrededor del cero.",
+      "explanation": "Falso. Si el intervalo incluye el valor cero, significa que es matemáticamente plausible que la diferencia real poblacional $\\mu_A - \\mu_B $ sea inexistente (cero), lo que refuerza mantener $ H_0$."
+    },
+    {
+      "q": "Las pruebas de normalidad algorítmica de Shapiro-Wilk y Kolmogorov-Smirnov funcionan estrictamente para determinar la homogeneidad de la varianza entre las muestras.",
+      "options": [
+        "La afirmación deducida es verdadera.",
+        "La afirmación deducida es incorrecta.",
+        "La información dada es insuficiente."
+      ],
+      "correct": 1,
+      "hint": "Determina qué parámetro paramétrico evalúa S-W en contraposición al parámetro evaluado por el test de Levene.",
+      "explanation": "Totalmente falso. K-S y S-W examinan la distribución normal de la variable dependiente de forma independiente, mientras que la homocedasticidad cruzada recae sobre el test de Levene poblacional."
+    },
+    {
+      "q": "En el contexto empírico de contrastes bivariados, identifica la aseveración analítica que define correctamente la constitución matemática de la prueba t de Student.",
+      "options": [
+        "Evalúa la diferencia de las medias frente a la variabilidad interna aleatoria del modelo.",
+        "Evalúa la varianza interna de cada grupo frente a la diferencia sistemática de las medias.",
+        "Evalúa la suma de las varianzas muestrales frente a la diferencia estandarizada del grupo."
+      ],
+      "correct": 0,
+      "hint": "El estadístico t representa una proporción (o ratio) entre lo que quieres medir y el error que deseas descartar.",
+      "explanation": "La alternativa correcta describe exactamente la ecuación de t: un cociente donde el numerador plasma la diferencia de medias ($\\bar{X}_A - \\bar{X}_B$) y el denominador el error estándar derivado de las varianzas poblacionales."
+    },
+    {
+      "q": "A partir de la descomposición estructural de la varianza estadística paramétrica, escoge el planteamiento normativo correcto sobre el componente de variación teórica.",
+      "options": [
+        "La variación sistemática refleja la dispersión aleatoria interna dentro de cada muestra.",
+        "La variación sistemática refleja la variabilidad atribuible a la variable independiente.",
+        "La variación no sistemática refleja la diferencia exacta observada entre ambas varianzas."
+      ],
+      "correct": 1,
+      "hint": "Recuerda qué elemento causal persigue el investigador en un diseño enfocado al contraste experimental analítico.",
+      "explanation": "El investigador impone una manipulación (variable independiente). El impacto empírico derivado de ella se define como variación sistemática, distinguible netamente del ruido blanco inter-sujeto aleatorio."
+    },
+    {
+      "q": "En lo referente a la d de Cohen para cuantificar el impacto paramétrico, señala el criterio que responde de manera unívoca a los umbrales de la escala estandarizada.",
+      "options": [
+        "La d de Cohen mayor a 0.2 indica siempre un efecto masivo en muestras de gran magnitud.",
+        "La d de Cohen menor a 0.2 indica siempre un efecto moderado debido a errores aleatorios.",
+        "La d de Cohen mayor a 0.8 indica siempre un efecto grande según la escala estandarizada."
+      ],
+      "correct": 2,
+      "hint": "Evoca las proporciones pautadas por Cohen en 1988 para magnitudes de corte transversal.",
+      "explanation": "Según la escala convencional (Cohen, 1988), magnitudes absolutas de $d \\ge 0.8$ determinan inequívocamente tamaños de efecto calificados operativamente como 'grandes' en el ecosistema paramétrico."
+    },
+    {
+      "q": "En el marco de las presunciones fundamentales de modelos, elige la estipulación correcta relacionada directamente a las métricas de la Variable Dependiente observada.",
+      "options": [
+        "La VD debe medirse en escala nominal o métrica para asegurar una correcta distribución.",
+        "La VD debe medirse en escala de intervalo o razón para asegurar su naturaleza continua.",
+        "La VD debe medirse en escala ordinal o absoluta para asegurar una simetría distributiva."
+      ],
+      "correct": 1,
+      "hint": "La estimación de medias y varianzas sólidas resulta matemáticamente impracticable sobre etiquetas o rangos cualitativos.",
+      "explanation": "El cálculo válido de parámetros poblacionales requeridos en el estadístico $t$ demanda datos continuos formales. Las clasificaciones intervalares o de razón garantizan dicha continuidad métrica matemática."
+    },
+    {
+      "q": "Bajo la interpretación empírica de la prueba del error estándar, señala la opción correcta vinculada al dictamen del nivel de significación sobre la Homocedasticidad.",
+      "options": [
+        "Si el p de Levene es menor a .05, asumimos que las varianzas poblacionales son iguales.",
+        "Si el p de Levene es mayor a .05, asumimos que las varianzas poblacionales son atípicas.",
+        "Si el p de Levene es mayor a .05, asumimos que las varianzas poblacionales son análogas."
+      ],
+      "correct": 2,
+      "hint": "La hipótesis nula de este test particular postula explícitamente la igualdad distributiva.",
+      "explanation": "En el test de Levene, $H_0 $ dictamina varianzas equivalentes. No rechazar dicha hipótesis ($ p \\ge.05$) implica carecer de pruebas para contradecir la homogeneidad analítica transversal requerida."
+    },
+    {
+      "q": "Respecto al proceso para legitimar la inferencia paramétrica bivariada, señala el argumento verídico en función a la validación empírica previa sobre cada muestra.",
+      "options": [
+        "Las pruebas K-S y S-W se usan para verificar si existe homogeneidad en ambas varianzas.",
+        "Las pruebas K-S y S-W se usan para verificar si los datos siguen la distribución normal.",
+        "Las pruebas K-S y S-W se usan para verificar si las muestras dependientes son simétricas."
+      ],
+      "correct": 1,
+      "hint": "Kolmogorov-Smirnov y Shapiro-Wilk comparan una distribución muestral contra un perfil de campana gaussiana ideal.",
+      "explanation": "Ambas constituyen pruebas clásicas de bondad de ajuste. Analizan las divergencias entre las distribuciones fácticas recopiladas y las curvas teóricas normales dictadas por los umbrales de probabilidad."
+    },
+    {
+      "q": "Acorde a las nociones fundamentales de diseño de contrastes empíricos, selecciona la premisa matemáticamente correcta respecto a las condiciones que rigen el test t.",
+      "options": [
+        "La hipótesis alternativa señala que las diferencias dadas son simple producto del azar.",
+        "La hipótesis nula señala que las diferencias dadas se deben solo al efecto del modelo.",
+        "La hipótesis nula señala que las diferencias dadas derivan del azar y no de un efecto."
+      ],
+      "correct": 2,
+      "hint": "Identifica la postulación estadística que niega inherentemente la efectividad del tratamiento o variable independiente.",
+      "explanation": "La estructura probabilística formal de la Hipótesis Nula ($H_0 $) define la equivalencia paramétrica poblacional ($\\mu_A = \\mu_B$), asumiendo cualquier variación aislada como mera fluctuación aleatoria muestral."
+    },
+    {
+      "q": "Dado el mecanismo probabilístico de interpretación de salidas estadísticas, elige el principio lógico que fundamenta la acción final frente a un contraste diferencial.",
+      "options": [
+        "Un valor p mayor o igual a .05 proporciona evidencia para rechazar la hipótesis nula H0.",
+        "Un valor p menor estricto a .05 proporciona evidencia para mantener la hipótesis nula H0.",
+        "Un valor p menor estricto a .05 proporciona evidencia para rechazar la hipótesis nula H0."
+      ],
+      "correct": 2,
+      "hint": "Una probabilidad de azar diminuta fundamenta la validez matemática y empírica del efecto experimentado evaluado.",
+      "explanation": "La probabilidad ($p $) simboliza el riesgo de equivocarse al negar el azar. Un $ p <.05 $ testifica un margen de riesgo tan exiguo que empodera al analista a descartar $ H_0$ de forma matemáticamente validada."
+    },
+    {
+      "q": "Considerando las fronteras del modelado con restricciones de datos, selecciona la tesis correcta respecto a la arquitectura formal del estadístico U de Mann-Whitney.",
+      "options": [
+        "Se fundamenta en contrastar las distribuciones de rangos en lugar de comparar las medias.",
+        "Se fundamenta en contrastar las varianzas ponderadas en lugar de comparar los cuantiles.",
+        "Se fundamenta en contrastar los tamaños muestrales en lugar de comparar las asimetrías."
+      ],
+      "correct": 0,
+      "hint": "Identifica qué operador matemático abandona este test por ser excesivamente vulnerable frente a sesgos distribucionales.",
+      "explanation": "Al rehusar la operatividad de promedios debido a anomalías y fallas en la asunción de normalidad, este test convierte observaciones a posiciones ordinales (rangos), mitigando el impacto de valores espurios."
+    },
+    {
+      "q": "En el estudio longitudinal pre-post con muestras intrínsecamente ligadas, marca el enunciado preciso para instrumentar analíticamente una t para grupos emparejados.",
+      "options": [
+        "Su aplicación omite la verificación de normalidad por tratarse de muestras vinculadas.",
+        "Su aplicación requiere la verificación de supuestos paramétricos previos a su ejecución.",
+        "Su aplicación asume la variabilidad no sistemática como el efecto principal intra-grupo."
+      ],
+      "correct": 1,
+      "hint": "La correlación inherente de las medidas temporales interconectadas no cancela los mandatos inferenciales continuos.",
+      "explanation": "Aun cuando las observaciones están temporalmente conectadas neutralizando gran varianza inter-sujeto, el sustrato del estadístico t demanda la verificación implacable de la normalidad referida a la diferencia $\\Delta = X_{post} - X_{pre}$."
+    },
+    {
+      "q": "Tomando en cuenta la fragilidad inferencial producida por la dependencia escalar, identifica el postulado concluyente sobre el rol metodológico de la $d$ de Cohen.",
+      "options": [
+        "La d de Cohen se calcula porque la significación estadística es inmune al tamaño muestral.",
+        "La d de Cohen se calcula porque un tamaño muestral grande puede arrojar p significativas.",
+        "La d de Cohen se calcula porque un tamaño muestral masivo suele ocultar el efecto central."
+      ],
+      "correct": 1,
+      "hint": "Piensa en el impacto analítico que una gran $N$ provoca directamente sobre el error estándar del denominador.",
+      "explanation": "El denominador del error estándar decrece notablemente con $N $ inmensas, elevando asintóticamente la cifra $ t $ hasta sobrepasar un corte de $ p<.05$ aun si la distancia aritmética estricta resulta de nulo interés práctico."
+    },
+    {
+      "q": "Basado en los prerrequisitos fundacionales que previenen un solapamiento en contrastes transversales, elige el dictamen fidedigno sobre la Independencia paramétrica.",
+      "options": [
+        "Exige que cada participante be medido repetidamente en todos los grupos del experimento.",
+        "Exige que cada participante actúe como su propio control en dos momentos interdependientes.",
+        "Exige que cada participante pertenezca a un solo grupo y aporte una medición individual."
+      ],
+      "correct": 2,
+      "hint": "La contaminación transversal de un mismo caso figurando en estratos opuestos desintegra enteramente este test independiente.",
+      "explanation": "En un diseño genuinamente independiente inter-sujetos (Between-Subjects), la arquitectura restringe severamente las participaciones: exclusividad grupal plena y un dato atómico singular por ente analizado."
+    },
+    {
+      "q": "Acerca del volcado matricial resultante provisto por SPSS en comparaciones bivariadas empíricas, indica el principio correcto con respecto al Intervalo de Confianza.",
+      "options": [
+        "Si el IC incluye el cero absoluto, se debilita enormemente la retención de la hipótesis H0.",
+        "Si el IC incluye el cero absoluto, se refuerza la decisión de mantener la hipótesis de H0.",
+        "Si el IC excluye el cero absoluto, se confirma la aceptación definitiva de la hipótesis H0."
+      ],
+      "correct": 1,
+      "hint": "El rango límite superior e inferior predetermina probabilísticamente dónde orbita la distinción real de las poblaciones.",
+      "explanation": "Un Intervalo que fluctúa de negativos a positivos atravesando el factor 0 (ej., [-2.5, 4.1] ) certifica empíricamente que la disparidad $\\mu_1 - \\mu_2$ nula constituye un horizonte de evento absolutamente lícito."
+    },
+    {
+      "q": "Examinando el comportamiento relacional entre la densidad empírica evaluada y los umbrales críticos de una campana estandarizada, distingue la afirmación axiomática.",
+      "options": [
+        "Un t empírico menor que el valor T crítico fuerza el rechazo de la hipótesis de nulidad.",
+        "Un t empírico menor que el valor T crítico indica falta de diferencia muy significativa.",
+        "Un t empírico mayor que el valor T crítico indica ausencia absoluta de variación casual."
+      ],
+      "correct": 1,
+      "hint": "Un $t$ bajo representa que el cociente entre efecto sistemático y el azar residual resulta estadísticamente ínfimo.",
+      "explanation": "Si el contraste computado ($t $ empírico) no cruza la barrera preestablecida para considerarse atípico bajo el esquema del azar (valor crítico $ T $), la insuficiencia de evidencia concluye en retener sólidamente $ H_0$."
+    },
+    {
+      "q": "Abordando minuciosamente la deconstrucción aritmética de las proporciones aplicadas a estimaciones bivariadas, precisa la definición acertada de la ecuación t analizada.",
+      "options": [
+        "El denominador de su ecuación cuantifica exactamente la variación sistemática de los datos.",
+        "El numerador de su ecuación cuantifica precisamente la diferencia de medias de los grupos.",
+        "El numerador de su ecuación representa analíticamente la varianza agrupada del experimento."
+      ],
+      "correct": 1,
+      "hint": "Observa el componente posicionado en la cúspide de la fracción, el cual cristaliza el vector experimental propuesto.",
+      "explanation": "La disparidad observable ($\\bar{X}_1 - \\bar{X}_2$), figurando exclusivamente en el numerador fraccionario, captura materialmente la divergencia aritmética, ergo, la manifestación directa y empírica del efecto estipulado."
+    },
+    {
+      "q": "Analizando exhaustivamente las definiciones algorítmicas de los grados de libertad dentro de los contrastes, señala de forma determinante cuál es la aserción INCORRECTA.",
+      "options": [
+        "Para medidas independientes, se estiman mediante el producto de tamaños muestrales menos 2.",
+        "Para medidas independientes, se definen como la suma de las dos muestras menos 2 unidades.",
+        "Para medidas independientes, la ecuación asume la condición de homogeneidad de la varianza."
+      ],
+      "correct": 0,
+      "hint": "Revisa detalladamente los operadores aritméticos fundamentales (suma vs. multiplicación) presentes en esta métrica teórica.",
+      "explanation": "La operación es enteramente aditiva ($n_A + n_B - 2$), enmarcando la amalgama conjunta de información disponible, por lo que emplear multiplicadores cruzados (producto escalar) quebranta brutalmente la definición geométrica subyacente."
+    },
+    {
+      "q": "Frente a los veredictos dicotómicos derivados explícitamente de las significaciones probabilísticas en las contrastaciones paramétricas, identifica la afirmación INCORRECTA.",
+      "options": [
+        "Al obtener un p menor a .05, la conclusión formal exige rechazar que no exista una diferencia.",
+        "Al obtener un t mayor al crítico, la decisión formal respalda una diferencia muy significativa.",
+        "Al obtener un p mayor a .05, la conclusión lógica obliga a rechazar el modelo paramétrico."
+      ],
+      "correct": 2,
+      "hint": "Rechazar un diseño inferencial completo difiere cardinalmente de tomar una postura concreta ante una hipótesis de azar.",
+      "explanation": "Una cifra $p \\ge.05 $ obliga exclusivamente a preservar la condición de Nulidad teórica ($ H_0$), asumiendo temporalmente una similitud de poblaciones, pero jamás exige desechar retrospectivamente el test de tipo paramétrico ejecutado."
+    },
+    {
+      "q": "A fin de medir consistentemente la preeminencia de un fenómeno más allá del escrutinio numérico del estadístico base, discrimina la sentencia INCORRECTA de la $d$ de Cohen.",
+      "options": [
+        "Una d de Cohen equivalente a 0.25 refleja un impacto de magnitud estrictamente catalogada de pequeña.",
+        "Una d de Cohen equivalente a 0.15 refleja un impacto de magnitud moderada según la métrica estándar.",
+        "Una d de Cohen equivalente a 0.85 refleja un impacto de magnitud verdaderamente considerada grande."
+      ],
+      "correct": 1,
+      "hint": "Coteja los escalones taxonómicos y localiza aquel marcador subyacente por debajo de la cota mínima de interés (0.2).",
+      "explanation": "Una magnitud tabulada de $d < 0.2$ ostenta una calificación canónica de efecto imperceptible o categóricamente 'trivial', desvirtuando por completo la aseveración que etiqueta este coeficiente minúsculo como estadísticamente 'moderado'."
+    },
+    {
+      "q": "En consideración a las premisas fundamentales que prohíben alteraciones severas en las campanas gaussianas subyacentes empíricas, elige la declaración que sea INCORRECTA.",
+      "options": [
+        "Su presencia extrema contamina severamente el promedio y distorsiona el contraste de grupos.",
+        "Su análisis preventivo debe omitirse si el test de Kolmogorov-Smirnov comprueba normalidad.",
+        "Su eliminación metódica es verdaderamente un requisito vital para los tests paramétricos."
+      ],
+      "correct": 1,
+      "hint": "Cuestiona si un test de ajuste asintótico garantiza lógicamente el veto o purga de observaciones marginales aberrantes (outliers).",
+      "explanation": "Corroborar normalidad estadística ómnibus con K-S no subsana la obligación metodológica de rastrear observaciones extremas (outliers) focalizadas, dado que estas alteran gravosamente las medias ($\\bar{X}$) por separado al elevar artificialmente el sesgo algorítmico."
+    },
+    {
+      "q": "Basado en la grilla visual de diagnóstico inferencial que provee software especializado como SPSS, detecta meticulosamente la aseveración técnica que resulte INCORRECTA.",
+      "options": [
+        "El apartado 'P de dos factores' proporciona el p-valor para hipótesis de rango bilaterales.",
+        "La fila superior de Levene se utiliza cuando dicho estadístico indica no significatividad.",
+        "La fila inferior de Levene asume automáticamente la distribución homogénea de la muestra."
+      ],
+      "correct": 2,
+      "hint": "Determina bajo qué contingencia metodológica de varianza es mandatorio seleccionar la fila procesada alternativamente debajo.",
+      "explanation": "Al rebatir la condición igualitaria empírica (Levene arroja $p <.05$), el analista transita hacia la fila inferior explícitamente designada para situaciones donde imperan dispersiones métricamente desiguales (heterocedasticidad paramétrica declarada)."
+    },
+    {
+      "q": "Enfocándose estrictamente en las directrices orgánicas de la contrastación enfocada sobre grupos intrínsecamente solapados y dependientes, elige la premisa INCORRECTA.",
+      "options": [
+        "Este tipo de análisis resulta óptimo para los diseños donde convergen el pre-test y post-test.",
+        "Este estadístico de contraste pondera si el cambio de la intervención supera a la variación estocástica.",
+        "Este estadístico de contraste contrasta las medias agrupadas de dos conjuntos muestrales independientes."
+      ],
+      "correct": 2,
+      "hint": "Cruza epistemológicamente la base relacional intra-sujetos descrita en este test frente al contraste de dos universos disociados.",
+      "explanation": "El instrumento de correlato dependiente es analíticamente improcedente e inherentemente fallido ante agrupaciones empíricas exógenas (independientes), requiriendo de manera forzosa nexos pareados intrínsecos entre las cuantificaciones efectuadas iterativamente."
+    },
+    {
+      "q": "Escrutando las exigencias primarias para validar analíticamente una parametrización de varianza con tendencia gaussiana comprobada, detecta el principio categóricamente INCORRECTO.",
+      "options": [
+        "Se asume empíricamente cuando las pruebas de bondad de ajuste S-W no logran significancia.",
+        "Se confirma inequívocamente cuando la prueba ómnibus de Levene arroja un valor p inferior.",
+        "Se evalúa analíticamente para todos los subgrupos que integran la variable independiente."
+      ],
+      "correct": 1,
+      "hint": "Discrimina nítidamente entre la validación funcional de una campana de distribución frente a la igualdad cruzada de residuales grupales.",
+      "explanation": "El algoritmo estandarizado de Levene califica la analogía de las dispersiones (varianzas), quedando enteramente inhabilitado metodológicamente para avalar simetrías referidas a curvas teóricas (tarea atribuida a estadísticos como Shapiro-Wilk o K-S estipulados convencionalmente)."
+    },
+    {
+      "q": "Respecto a las fuerzas latentes que modelan matemáticamente la estructura operativa de cualquier ecuación fraccionaria de ratios de medias empíricas, indica la opción INCORRECTA.",
+      "options": [
+        "Se encuentra explicada en su totalidad por la influencia causal de la variable independiente.",
+        "Se manifiesta analíticamente a través de la varianza residual dentro de cada grupo medido.",
+        "Se sitúa en el denominador de la ecuación que estructura el ratio t de Student analizado."
+      ],
+      "correct": 0,
+      "hint": "Cuestiona si todo residuo fraccional numérico surge invariablemente de la manipulación metódica o por azares impredecibles colaterales.",
+      "explanation": "Esa premisa desvirtúa la ontología de la 'variación NO sistemática o aleatoria', la cual está exenta del influjo causal de la variable independiente y engloba estrictamente variaciones de ruido blanco o falencias sistémicas de instrumentación intragrupal observada."
+    },
+    {
+      "q": "Evaluando las respuestas metodológicas formales derivadas del colapso paramétrico por severos quiebres distributivos transversales, escoge la afirmación que resulta INCORRECTA.",
+      "options": [
+        "Sustituye al t-test independiente si la distribución de datos quiebra la curva de Gauss.",
+        "Construye su significación a partir de las diferencias aritméticas entre ambas medianas.",
+        "Mantiene la hipótesis nula si la p de significancia resulta numéricamente mayor a 0.05."
+      ],
+      "correct": 1,
+      "hint": "Considera qué métrica transformacional emplea esencialmente esta alternativa, eludiendo cómputos agregados como promedios o cuantiles puros de dispersión.",
+      "explanation": "El proceso de Mann-Whitney jamás cruza medianas brutas explícitamente. Despliega su test jerarquizando posicionalmente las entidades amalgamadas para luego cuantificar si los 'rangos ordenados' (ranks empíricos) evidencian agrupamientos tendenciosos que subvierten drásticamente el azar dictaminado probabilísticamente."
+    },
+    {
+      "q": "Considerando las reglas sintácticas del diseño estadístico binario que polarizan todo el conjunto inferencial de probabilidades continuas contrastadas, selecciona la tesis INCORRECTA.",
+      "options": [
+        "La condición nula H0 asegura matemáticamente que la sustracción de medias equivaldrá a cero.",
+        "La condición alterna H1 advierte que el tratamiento induce una discrepancia poblacional real.",
+        "La condición nula H0 garantiza analíticamente que las varianzas cruzadas no serán aleatorias."
+      ],
+      "correct": 2,
+      "hint": "Verifica qué elemento central de los dos parámetros modelados aborda primariamente este vector de postulación teórica bivariada referida.",
+      "explanation": "La axiomatización básica de $H_0 $ referida al estadístico $ t $ clásico restringe tajantemente su enfoque analítico a la analogía central de promedios ($\\mu_1 = \\mu_2$). Imponer lógicamente garantías sobre las varianzas transgrede los límites sintácticos conceptuales del postulado originario centrado en medias muestrales."
+    },
+    {
+      "q": "Durante la preselección de la variable operativa clave dictada como núcleo para instrumentaciones paramétricas bivariadas contiguas interdependientes, escoge la afirmación INCORRECTA.",
+      "options": [
+        "Una métrica en formato de razón facilita cumplir la exigencia paramétrica de continuidad.",
+        "Una métrica de intervalo satisface plenamente la asunción de una variable continua dada.",
+        "Una métrica estrictamente ordinal es suficiente para validar un t-test de muestras libres."
+      ],
+      "correct": 2,
+      "hint": "Juzga la capacidad de un índice meramente secuencial carente de distancias equidistantes objetivas para formular una media.",
+      "explanation": "Una codificación discreta basada en categorías ordenadas (ordinal) carece matemáticamente de magnitudes simétricas entre umbrales paramétricos. Operar una ecuación $t$ sobre este estrato desmorona la solidez distributiva indispensable ligada a perfiles gaussianos contiguos formalizados algorítmicamente."
+    },
+    {
+      "q": "Analizando en profundidad el factor analítico correctivo asociado empíricamente a la magnitud censal de las observaciones agregadas (gl referidos), identifica el aserto INCORRECTO.",
+      "options": [
+        "Representan explícitamente los datos que son libres para variar durante dicha estimación.",
+        "Corresponden al total de la muestra general habiéndole restado las dos medias grupales.",
+        "Aumentan directamente la varianza esperada para blindar matemáticamente las diferencias."
+      ],
+      "correct": 2,
+      "hint": "Cuestiona si restringir magnitudes maestras aumenta intencionalmente el ruido residual inter-variable, o únicamente recalibra penalizaciones.",
+      "explanation": "Los denominados gl no persiguen activamente aumentar artificialmente asimetrías de varianza ni 'blindar' divergencias empíricas halladas. Constituyen sencillamente el factor atenuador que descuenta las estimaciones fijadas paramétricamente, permitiendo extrapolar la varianza estocástica del sistema de forma limpia sin generar estimadores erráticos sesgados matemáticamente."
+    },
+    {
+      "q": "Interpretando los corolarios estadísticos dictados tras correlacionar matemáticamente el estimador de base contra un umbral axiomático tabulado poblacionalmente, halla la alternativa INCORRECTO.",
+      "options": [
+        "Un estadístico empírico masivo se traduce ordinariamente en un p-valor sumamente bajo.",
+        "Un estadístico empírico mínimo superará invariablemente al marcador crítico establecido.",
+        "Un p-valor infinitesimal conduce lógicamente al descarte formal de la hipótesis de azar."
+      ],
+      "correct": 1,
+      "hint": "Rastrea la lógica implícita de las zonas periféricas de rechazo; los valores diminutos se aglutinan en densidades masivas centrales invariablemente.",
+      "explanation": "Un cociente empírico ínfimo (estadístico cercano a cero absoluto paramétrico) delata contundentemente que la diferencia sistemática no pudo doblegar el espectro del error; cayendo estrepitosamente en el valle central de contención estocástica, siendo totalmente irreal que un marcador mínimo franquee exitosamente la valla del valor crítico exigido (T alfa referencial paramétrico estandarizado globalmente)."
+    },
+    {
+      "q": "Inspeccionando la deconstrucción escalar paramétrica originaria subyacente que motoriza dinámicamente la fórmula empírica de un contraste Student consolidado empíricamente, delinea la falsedad.",
+      "options": [
+        "El cociente decrecerá si los tamaños muestrales introducidos se achican dramáticamente.",
+        "El cociente aumenta si la dispersión interna de cada conjunto muestral resulta minimizada.",
+        "El cociente crece de forma exponencial si se reduce la discrepancia entre las dos medias."
+      ],
+      "correct": 2,
+      "hint": "Estudia el vector de la proporcionalidad algorítmica: reducir el componente superior debilita ineludiblemente la magnitud total dictada.",
+      "explanation": "Minimizar la distancia entre perfiles paramétricos ($\\bar{X}_1 - \\bar{X}_2$) comprime drásticamente el estrato del numerador central de la fórmula; originando como reacción matemática inmediata un decaimiento terminal absoluto del valor final evaluado probabilísticamente, destruyendo falazmente la aseveración incorrecta referida a un crecimiento exponencial hipotético de orden sistemático opuesto al postulado central."
+    },
+    {
+      "q": "Considerando las maniobras matemáticas contingentes previstas en la arquitectura inferencial frente a fallos sistémicos de variabilidad simétrica inter-sujetos validada, señala la estipulación INCORRECTA.",
+      "options": [
+        "Ajusta directamente la disparidad de las medias sumándole un coeficiente predeterminado.",
+        "Garantiza la solidez del contraste cuando la prueba de homocedasticidad resulta rechazada.",
+        "Compensa la asimetría de la dispersión reevaluando la distribución paramétrica estimada."
+      ],
+      "correct": 0,
+      "hint": "Coteja si este mecanismo de blindaje opera invadiendo artificiosamente los vectores de efectos sistemáticos detectados, o si simplemente castiga rigurosamente los grados.",
+      "explanation": "La ecuación transformacional de Welch jamás infunde valores artificiales, ni vulnera directamente las medias censadas agregando coeficientes espurios al vector central de contraste poblacional. Su operación de rescate opera reajustando restrictivamente y fraccionando aritméticamente a la baja los grados de libertad ( gl empíricos computados) para engrosar prudencialmente la ventana umbral del valor crítico frente al que se combate estadísticamente."
+    },
+    {
       "q": "En una prueba t para muestras independientes con $n_A=12$ y $n_B=14$, los grados de libertad ($gl$) son ____",
       "options": [
         "$gl = 25$",
@@ -7658,6 +8098,237 @@
       "correct": 2,
       "hint": "Mide distancias en desviaciones típicas.",
       "explanation": "La afirmación 'Ninguna es correcta' es falsa porque la d de Cohen SÍ puede ser mayor que 1.0 (efectos muy grandes)."
+    },
+    {
+      "q": "En la prueba t, la variabilidad interna de cada grupo, no debida a la VI, se denomina variación _______.",
+      "options": [
+        "sistemática basada en la causalidad.",
+        "no sistemática referida al puro azar.",
+        "multivariada originada en el modelo."
+      ],
+      "correct": 1,
+      "hint": "Busca el concepto contrario a la influencia directa de la variable independiente.",
+      "explanation": "La variabilidad que no depende de la VI es el azar, originando la variación no sistemática. \n\n$\\text{Variación Aleatoria} = \\text{Error}$"
+    },
+    {
+      "q": "Los grados de libertad para muestras independientes asumiendo varianzas iguales se calculan con la fórmula $gl =$ ______.",
+      "options": [
+        "los grados se restan: $n_A + n_B - 2$.",
+        "los grados se suman: $n_A + n_B + 2$.",
+        "los grados se cruzan: $n_A \\cdot n_B$."
+      ],
+      "correct": 0,
+      "hint": "Recuerda que se resta un grado matemático de libertad por cada bloque o grupo.",
+      "explanation": "$$gl = n_A - 1 + n_B - 1 = n_A + n_B - 2$$"
+    },
+    {
+      "q": "Según la regla de decisión de la prueba t, si $t < T{\\text{crítico}}$, la conclusión estadística es _______ la hipótesis nula.",
+      "options": [
+        "mantener la hipótesis sin rechazarla",
+        "rechazar absolutamente la nula ahora",
+        "invertir la decisión de significación"
+      ],
+      "correct": 0,
+      "hint": "Si el valor empírico calculado no supera el umbral crítico, carecemos de evidencia.",
+      "explanation": "Mantener significa que no hay evidencia estadística. $t < T \\implies \\text{Mantenemos } H_0$"
+    },
+    {
+      "q": "En la prueba t, la hipótesis nula ($H_0$) plantea matemáticamente que _______.",
+      "options": [
+        "$\\bar{X}_A = \\bar{X}_B$ asumiendo total azar",
+        "$\\bar{X}_A > \bar{X}_B$ con sesgo estipulado",
+        "$\\bar{X}_A \\neq \\bar{X}_B$ multiplicando fallos"
+      ],
+      "correct": 0,
+      "hint": "La ausencia total de efecto equivale metodológicamente a una igualdad paramétrica.",
+      "explanation": "Afirma igualdad poblacional asumiendo diferencias aleatorias. \n\n$H_0: \\bar{X}_A = \\bar{X}_B \\implies \\bar{X}_A - \\bar{X}_B = 0$"
+    },
+    {
+      "q": "La d de Cohen es un estadístico cuyo valor absoluto funciona como indicador clave para medir _______.",
+      "options": [
+        "un p-valor superior a $0.05$ crítico",
+        "la varianza cruzada inter-muestral",
+        "el tamaño de efecto práctico final"
+      ],
+      "correct": 2,
+      "hint": "El criterio de Cohen busca observar la relevancia clínica o práctica más allá de la p.",
+      "explanation": "La importancia práctica se valora con la d de Cohen libre de sesgo por n: \n\n$d = \\frac{|\\bar{X}_A - \\bar{X}_B|}{S}$"
+    },
+    {
+      "q": "Un valor absoluto de la d de Cohen igual a $0.55$ se interpreta como un efecto de magnitud _______.",
+      "options": [
+        "moderado, al ubicarse por sobre $0.5$",
+        "trivial, al estar muy cerca de $0.05$",
+        "grande, al multiplicar $0.55 \\times 2$"
+      ],
+      "correct": 0,
+      "hint": "En la escala clásica de Cohen (1988), el valor de corte es 0.5.",
+      "explanation": "Según la escala de Cohen: \n\n$d \\ge 0.5$ \n\n representa un efecto moderado."
+    },
+    {
+      "q": "El supuesto de homocedasticidad exige formalmente que las varianzas de los grupos comparados sean _______.",
+      "options": [
+        "diametralmente distintas y cruzadas",
+        "homogéneas asumiendo similitud base",
+        "dependientes del factor de corrección"
+      ],
+      "correct": 1,
+      "hint": "Etimológicamente 'homo' significa igual o semejante y 'cedasticidad' dispersión.",
+      "explanation": "El supuesto de homocedasticidad paramétrica implica la homogeneidad de varianzas: \n\n$S_A^2 \\approx S_B^2$"
+    },
+    {
+      "q": "Para evaluar la normalidad empírica de la distribución en muestras pequeñas, se utiliza habitualmente la prueba de _______.",
+      "options": [
+        "Levene con corrección de Welch ($W$)",
+        "Shapiro-Wilk ($S-W$) sobre asimetría",
+        "Mann-Whitney ($U$) cruzando rangos"
+      ],
+      "correct": 1,
+      "hint": "Los nombres de los autores están directamente asociados al análisis de curvas gaussianas empíricas.",
+      "explanation": "Se utilizan algoritmos para contrastar $H_0 $ de normalidad poblacional distributiva: \n\n$ S-W \\text{ o } K-S$"
+    },
+    {
+      "q": "Si en la prueba de Levene obtenemos de forma empírica un valor de $p < .05$, debemos aplicar forzosamente la corrección de ______.",
+      "options": [
+        "Welch para ajustar grados libertad",
+        "Yates para correlacionar factores",
+        "Cohen para maximizar efecto total"
+      ],
+      "correct": 0,
+      "hint": "La corrección reduce los grados de libertad para compensar la heterocedasticidad confirmada.",
+      "explanation": "Si $p_{\\text{Levene}} <.05 $, las varianzas difieren ($ S_A^2 \\neq S_B^2$), exigiendo aplicar la corrección de Welch."
+    },
+    {
+      "q": "La alternativa clásica no paramétrica a la prueba t independiente, usada si falla la normalidad, es la prueba de _______.",
+      "options": [
+        "Kruskal-Wallis dividiendo las medias",
+        "Wilcoxon Signed Rank sumando bases",
+        "U de Mann-Whitney evaluando rangos"
+      ],
+      "correct": 2,
+      "hint": "Esta técnica sustituye el análisis de distancias absolutas por un esquema basado en ordenaciones u.",
+      "explanation": "La alternativa robusta que reordena valores no gaussianos en secuencias lógicas es la \n\n$U \\text{ de Mann-Whitney}$"
+    },
+    {
+      "q": "En lugar de comparar de manera directa las medias, la prueba U de Mann-Whitney fundamenta su análisis comparando _______.",
+      "options": [
+        "la diferencia cruda de las medias",
+        "los rangos de las distribuciones",
+        "las medias agrupadas ponderadas"
+      ],
+      "correct": 1,
+      "hint": "Las alternativas no paramétricas siempre suelen usar posiciones relativas u ordinales para operar matemáticamente.",
+      "explanation": "Las medias son sustituidas rigurosamente por un contraste de sumatoria de posiciones o rangos relacionales: \n\n$R_A \\text{ vs } R_B$"
+    },
+    {
+      "q": "La prueba t para medidas dependientes evalúa cambios intra-grupo, siendo muy comúnmente utilizada en diseños de tipo _____.",
+      "options": [
+        "diseños experimentales transversales",
+        "modelos predictivos inter-sujetos",
+        "estudios repetidos o pre-post test"
+      ],
+      "correct": 2,
+      "hint": "Recuerda que se toman exactamente dos evaluaciones secuenciales sobre la misma base de participantes en línea del tiempo.",
+      "explanation": "Consiste en una comparación puramente intra-sujetos para analizar la diferencia media matemática emparejada: $\\Delta = X_{\\text{post}} - X_{\\text{pre}}$"
+    },
+    {
+      "q": "El numerador matemático de la fórmula del estadístico t para medidas independientes calcula la diferencia exacta entre _______.",
+      "options": [
+        "sumar medias ($\bar{X}_A + \bar{X}_B$)",
+        "restar medias ($\bar{X}_A - \bar{X}_B$)",
+        "dividir medias ($\bar{X}_A / \bar{X}_B$)"
+      ],
+      "correct": 1,
+      "hint": "La variación sistemática no es más que la distancia numérica visible entre los promedios brutos principales.",
+      "explanation": "La operación en el numerador del clásico estadístico de Student se resume en aislar la diferencia real: $\\text{Diferencia} = \\bar{X}_A - \\bar{X}_B$"
+    },
+    {
+      "q": "La variación sistemática en el núcleo matemático y contexto del estadístico t es la variabilidad atribuible directamente a _______.",
+      "options": [
+        "un factor externo de aleatorización",
+        "el nivel medido en factor dependiente",
+        "el efecto real de factor independiente"
+      ],
+      "correct": 2,
+      "hint": "Esta varianza es la esperada o planificada, generada por el manipulador del diseño a nivel macro.",
+      "explanation": "La valiosa varianza explicada se genera intencionalmente por la separación de grupos conformando la base algorítmica: $\\sigma^2_{\\text{sistemática}}$"
+    },
+    {
+      "q": "Si el Intervalo de Confianza (IC) para la diferencia de medias incluye en su espectro el valor cero, esta situación _______ la $H_0$.",
+      "options": [
+        "asume una falta de varianza normal",
+        "refuerza mantener la hipótesis nula",
+        "rechaza fuertemente hipótesis nula"
+      ],
+      "correct": 1,
+      "hint": "Al incluir este valor de nulidad analítica, la premisa teórica de 'no hay efecto real apreciable' cobra total validez.",
+      "explanation": "Un Intervalo de Confianza abarcando 0 respalda decididamente retener la base de indiferencia estadística: \n\n$\\Delta \\in [-a, +b] \\implies 0 \\text{ es posible}$"
+    },
+    {
+      "q": "Un error común al interpretar el sistema es rechazar $H_0$ cuando $p \\ge .05$; en este caso específico la decisión correcta es _______.",
+      "options": [
+        "es mantener la hipótesis nula ($H_0$)",
+        "es sostener la hipótesis alterna ($H_1$)",
+        "es restar la probabilidad al nivel $t$"
+      ],
+      "correct": 0,
+      "hint": "Un umbral de probabilidad tan sumamente alto implica sin dudas que el mero azar es una excusa totalmente probable y real.",
+      "explanation": "Bajo la convención estándar global, si $p \\ge.05 $, fallamos irremediablemente en rechazar asumiendo entonces: \n\n$\\text{Mantenemos } H_0$"
+    },
+    {
+      "q": "El requisito metodológico básico de escala para la Variable Dependiente en una prueba t paramétrica exige que esta sea de _______.",
+      "options": [
+        "un formato nominal u ordinal discreto",
+        "una categorización dicotómica pura",
+        "un tipo numérico de intervalo/razón"
+      ],
+      "correct": 2,
+      "hint": "El propio sistema exige un nivel de rigor y medición de tipo cuantitativo puro y matemáticamente denso.",
+      "explanation": "La matriz paramétrica de la VD debe tolerar calculations analíticos exactos como varianzas de escala continua numérica: \n\n Intervalo o Razón"
+    },
+    {
+      "q": "En el entorno de SPSS, si la \"Sig.\" devuelta en la prueba previa de Levene es $0.082$, el investigador lee la fila de _______.",
+      "options": [
+        "rechazo de varianzas ($p < .05$ falso)",
+        "asunción de homogeneidad varianzas",
+        "corrección estricta de grados Welch"
+      ],
+      "correct": 1,
+      "hint": "Un $p$-valor estrictamente mayor al punto $.05$ indica que fracasamos matemáticamente en denotar diferencia en dispersiones.",
+      "explanation": "Dado matemáticamente que $p = 0.082 > 0.05 $, no se puede rechazar el estatus central de pura homocedasticidad analítica: \n\n$ S_A^2 = S_B^2$"
+    },
+    {
+      "q": "La prueba t de Student paramétrica tradicional exige para su validez matemática la total y absoluta ausencia empírica de _____.",
+      "options": [
+        "p-valores estadísticamente dudosos",
+        "asimetrías de distribución gaussiana",
+        "errores atípicos y datos espurios"
+      ],
+      "correct": 2,
+      "hint": "Son elementos de deformación extrema por errores graves de la recolección, desviando seriamente las medias calculadas por fórmulas.",
+      "explanation": "Tanto outliers severos como registros equivocados sesgan masivamente la media $\bar{X}$, por lo que se asume un postulado inquebrantable: \n\n Ausencia de espurios"
+    },
+    {
+      "q": "En las hipótesis, si estipulamos que las discrepancias observadas se deben puramente al azar no controlado, formulamos la .",
+      "options": [
+        "modelo teórico alternativo final ($H_1$)",
+        "supuesto nulo de medias iguales ($H_0$)",
+        "contraste direccional de varianzas"
+      ],
+      "correct": 1,
+      "hint": "Esta es, por excelencia de manual estadístico clásico, la proposición profundamente conservadora que postula 'no hay fenómeno medible'.",
+      "explanation": "Denota explícita y matemáticamente la base fundacional de ausencia estructural de diferencia asumiendo estocasticidad: \n\n$H_0: \\mu_A - \\mu_B = 0$"
+    },
+    {
+      "q": "Al evaluar los supuestos analíticos necesarios para aplicar con éxito la prueba t de Student para muestras independientes, requerimos que:",
+      "options": [
+        "VD en escala de intervalo o de razón.",
+        "Independencia total inter-observación.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Repasa las exigentes reglas matriciales básicas y exclusivas del diseño experimental sobre métricas puras continuas estandarizadas.",
+      "explanation": "Exigen ineludiblemente métricas escalares, observaciones separadas, normalidad estructural e isovarianza empírica pura: $\\text{Supuestos t: } VD_{\\text{cont}}, \\text{Indep}, \\text{S-W}, \\text{Levene}$"
     },
     {
       "q": "¿Es correcto afirmar que el supuesto de normalidad en la prueba t para medidas dependientes debe verificarse individualmente en cada momento temporal ($X_1$ y $X_2$)?",
