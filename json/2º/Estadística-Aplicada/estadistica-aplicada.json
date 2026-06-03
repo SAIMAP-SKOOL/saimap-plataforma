@@ -2168,6 +2168,446 @@
       "explanation": "Es incorrecto. $\\alpha$ no se desplaza ni cambia por el tamaño de la muestra; es un valor constante fijado por el investigador."
     },
     {
+      "q": "El valor $p$ representa la probabilidad de que la hipótesis nula sea cierta dado un resultado empírico extremo.",
+      "options": [
+        "La afirmación planteada es muy cierta.",
+        "La afirmación planteada es incorrecta.",
+        "No existe información para determinar."
+      ],
+      "correct": 1,
+      "hint": "Dirección de la probabilidad en inferencia.",
+      "explanation": "$$\\text{El valor } p \\text{ es la probabilidad de los datos asumiendo } H_0 \\text{ cierta, no al revés.}$$"
+    },
+    {
+      "q": "Según la normativa APA (2020), el valor del nivel de significación debe escribirse siempre con un cero inicial (ej. $0.05$).",
+      "options": [
+        "La afirmación planteada es muy cierta.",
+        "La afirmación planteada es incorrecta.",
+        "No existe información para determinar."
+      ],
+      "correct": 1,
+      "hint": "Revisa la regla para valores que no superan la unidad.",
+      "explanation": "$$\\text{La APA estipula omitir el cero inicial en probabilidades y significaciones, ej: } \\alpha =.05$$"
+    },
+    {
+      "q": "El Error de Tipo II consiste en rechazar la hipótesis nula cuando en realidad existe un efecto estadístico verdadero.",
+      "options": [
+        "La afirmación planteada es muy cierta.",
+        "La afirmación planteada es incorrecta.",
+        "No existe información para determinar."
+      ],
+      "correct": 1,
+      "hint": "Asociado estrechamente a los falsos negativos.",
+      "explanation": "$$\\text{El Error Tipo II } (\\beta) \\text{ ocurre al mantener la } H_0 \\text{ cuando la } H_1 \\text{ es verdaderamente cierta.}$$"
+    },
+    {
+      "q": "Aumentar el tamaño de la muestra estrecha las distribuciones de probabilidad y eleva la potencia estadística.",
+      "options": [
+        "La afirmación planteada es muy cierta.",
+        "La afirmación planteada es incorrecta.",
+        "No existe información para determinar."
+      ],
+      "correct": 0,
+      "hint": "Impacto de recoger una mayor cantidad de datos.",
+      "explanation": "$$\\text{Una muestra } n \\text{ grande reduce varianza y eleva la potencia estadística } 1-\\beta$$"
+    },
+    {
+      "q": "La hipótesis nula ($H_0$) jamás se acepta de forma definitiva; únicamente se mantiene por falta de evidencia.",
+      "options": [
+        "La afirmación planteada es muy cierta.",
+        "La afirmación planteada es incorrecta.",
+        "No existe información para determinar."
+      ],
+      "correct": 0,
+      "hint": "El grado de conservadurismo en el método científico.",
+      "explanation": "$$\\text{La } H_0 \\text{ asume la nulidad y solo se mantiene, jamás se prueba definitivamente como cierta.}$$"
+    },
+    {
+      "q": "Si el valor $p$ obtenido es muy alto, lo metodológicamente correcto es concluir que la hipótesis alternativa es falsa.",
+      "options": [
+        "La afirmación planteada es muy cierta.",
+        "La afirmación planteada es incorrecta.",
+        "No existe información para determinar."
+      ],
+      "correct": 1,
+      "hint": "Significado profundo de un valor habitual bajo la nula.",
+      "explanation": "$$\\text{Si } p \\text{ es alto, se mantiene } H_0; \\text{ no significa que hayamos demostrado que } H_1 \\text{ sea falsa.}$$"
+    },
+    {
+      "q": "Una investigación robusta exige considerar la significación estadística del estudio junto al tamaño del efecto.",
+      "options": [
+        "La afirmación planteada es muy cierta.",
+        "La afirmación planteada es incorrecta.",
+        "No existe información para determinar."
+      ],
+      "correct": 0,
+      "hint": "Diferencia entre estadística pura y relevancia clínica.",
+      "explanation": "$$\\text{La significación estadística } (p <.05) \\text{ exige el tamaño del efecto para probar relevancia.}$$"
+    },
+    {
+      "q": "En el formato APA para citar un capítulo de libro, se debe incluir el rango de páginas exacto dentro de la obra.",
+      "options": [
+        "La afirmación planteada es muy cierta.",
+        "La afirmación planteada es incorrecta.",
+        "No existe información para determinar."
+      ],
+      "correct": 0,
+      "hint": "Elemento diferenciador frente a la cita de libros.",
+      "explanation": "$$\\text{Para capítulos, se incluye el rango exacto } (\\text{pp. xx-xx}) \\text{, a diferencia de libros completos.}$$"
+    },
+    {
+      "q": "Un tamaño del efecto excesivamente pequeño puede conducir siempre a cometer un Error de Tipo I sistemático.",
+      "options": [
+        "La afirmación planteada es muy cierta.",
+        "La afirmación planteada es incorrecta.",
+        "No existe información para determinar."
+      ],
+      "correct": 1,
+      "hint": "Consecuencia matemática de no lograr percibir un efecto.",
+      "explanation": "$$\\text{Efectos pequeños sin la muestra } n \\text{ suficiente elevan el riesgo de Error Tipo II } (\\beta).$$"
+    },
+    {
+      "q": "Reducir el nivel de significación ($\\alpha$) disminuye la probabilidad del falso positivo y aumenta el falso negativo.",
+      "options": [
+        "La afirmación planteada es muy cierta.",
+        "La afirmación planteada es incorrecta.",
+        "No existe información para determinar."
+      ],
+      "correct": 0,
+      "hint": "Balanceo inevitable de umbrales probabilísticos.",
+      "explanation": "$$\\text{Al bajar } \\alpha \\text{, somos más conservadores con } H_0 \\text{, elevando el riesgo } \\beta \\text{ de omitir hallazgos.}$$"
+    },
+    {
+      "q": "Estructura correcta para un artículo académico de revista en formato APA:",
+      "options": [
+        "Se debe especificar el volumen, el número, las páginas y el enlace DOI.",
+        "Se debe especificar la edición, el número, las páginas y el enlace DOI.",
+        "Se debe especificar el volumen, la ciudad, las páginas y el enlace DOI."
+      ],
+      "correct": 0,
+      "hint": "Información requerida para rastrear revistas periódicas.",
+      "explanation": "La norma exige: Título de la Revista, volumen(número), páginas. DOI/URL."
+    },
+    {
+      "q": "Regla APA sobre la representación numérica de cifras menores a uno:",
+      "options": [
+        "Emplear comas fraccionarias y omitir el cero inicial en escalas 0-1.",
+        "Emplear puntos decimales y omitir el cero inicial en las escalas 0-1.",
+        "Emplear puntos decimales y añadir el cero inicial en las escalas 0-1."
+      ],
+      "correct": 1,
+      "hint": "Adopción estandarizada del sistema anglosajón.",
+      "explanation": "La normativa de la APA (2020) exige el uso del punto y la supresión del cero antes del decimal."
+    },
+    {
+      "q": "Condición definitoria de las hipótesis teóricas en el contraste analítico:",
+      "options": [
+        "La $H_0$ afirma que sí hay efecto y nunca se rechaza de forma definitiva.",
+        "La $H_1$ afirma que no hay efecto y jamás se acepta de forma definitiva.",
+        "La $H_0$ afirma que no hay efecto y jamás se acepta de forma definitiva."
+      ],
+      "correct": 2,
+      "hint": "El rechazo o mantenimiento rige el método científico.",
+      "explanation": "$$\\text{La } H_0 \\text{ es el supuesto de nulidad y estadísticamente jamás se llega a aceptar de forma plena.}$$"
+    },
+    {
+      "q": "Interpretación teórica rigurosa del concepto de valor $p$ estadístico:",
+      "options": [
+        "El valor $p$ evalúa la probabilidad del dato asumiendo que la $H_0$ es cierta.",
+        "El valor $p$ evalúa la probabilidad de $H_0$ asumiendo que el dato es cierto.",
+        "El valor $p$ evalúa la probabilidad del dato asumiendo que la $H_1$ es cierta."
+      ],
+      "correct": 0,
+      "hint": "Se asume la hipótesis conservadora por defecto.",
+      "explanation": "$$\\text{El } p\\text{-valor evalúa } P(D|H_0) \\text{, es decir, cuán raros son los datos asumiendo } H_0 \\text{ como válida.}$$"
+    },
+    {
+      "q": "Criterio de decisión estándar para establecer la significancia en datos:",
+      "options": [
+        "Un resultado es significativo si el umbral $\\alpha$ es menor que el valor $p$.",
+        "Un resultado es significativo si el valor $p$ es menor que el umbral $\\alpha$.",
+        "Un resultado es significativo si el valor $p$ equivale a la métrica $\\beta$."
+      ],
+      "correct": 1,
+      "hint": "La probabilidad calculada frente a la exigida.",
+      "explanation": "$$\\text{Para declarar significación, el valor } p \\text{ debe ser estrictamente menor al límite } \\alpha \\text{ fijado.}$$"
+    },
+    {
+      "q": "Definición probabilística del denominado falso positivo en estadística:",
+      "options": [
+        "El Error Tipo I es un falso negativo que ocurre al mantener la $H_0$ cierta.",
+        "El Error Tipo I es un falso positivo que ocurre al rechazar la $H_1$ cierta.",
+        "El Error Tipo I es un falso positivo que ocurre al rechazar la $H_0$ cierta."
+      ],
+      "correct": 2,
+      "hint": "Riesgo de ver un hallazgo que no está realmente allí.",
+      "explanation": "$$\\text{El Error Tipo I } (\\alpha) \\text{ ocurre al declarar falsamente un hallazgo cuando } H_0 \\text{ era correcta.}$$"
+    },
+    {
+      "q": "Definición probabilística del denominado falso negativo en estadística:",
+      "options": [
+        "Se comete Error Tipo II al mantener la $H_0$ cuando realmente la $H_1$ es cierta.",
+        "Se comete Error Tipo II al rechazar la $H_0$ cuando realmente la $H_1$ es cierta.",
+        "Se comete Error Tipo II al mantener la $H_1$ cuando realmente la $H_0$ es cierta."
+      ],
+      "correct": 0,
+      "hint": "Carencia de sensibilidad en las pruebas numéricas.",
+      "explanation": "$$\\text{El Error Tipo II } (\\beta) \\text{ implica no detectar un efecto real, lo cual ocurre al mantener } H_0. $$"
+    },
+    {
+      "q": "Concepto teórico de potencia en la metodología de investigación:",
+      "options": [
+        "La potencia equivale a la capacidad de rechazar un efecto que es verdadero.",
+        "La potencia equivale a la capacidad de detectar un efecto que es verdadero.",
+        "La potencia equivale a la aptitud de detectar un efecto que es inexistente."
+      ],
+      "correct": 1,
+      "hint": "La probabilidad de estar en lo correcto detectando $H_1$.",
+      "explanation": "$$\\text{La potencia } 1-\\beta \\text{ es la probabilidad matemática de detectar y confirmar un efecto real.}$$"
+    },
+    {
+      "q": "Impacto técnico de modificar el volumen de participantes analizados:",
+      "options": [
+        "Una muestra grande amplía variabilidad y reduce la potencia estadística.",
+        "Una muestra grande reduce variabilidad y mitiga la potencia estadística.",
+        "Una muestra grande reduce variabilidad y eleva la potencia estadística."
+      ],
+      "correct": 2,
+      "hint": "Mayor masa de datos comprime el error estándar.",
+      "explanation": "$$\\text{Incrementar } n \\text{ disminuye el error estándar, elevando directamente la potencia estadística.}$$"
+    },
+    {
+      "q": "Consecuencias prácticas al combinar un efecto débil y un diseño muestral:",
+      "options": [
+        "Un efecto pequeño puede inducir a un Error Tipo II en muestras muy breves.",
+        "Un efecto pequeño puede inducir a un Error Tipo I en muestras muy grandes.",
+        "Un efecto inmenso puede inducir a un Error Tipo II en muestras muy breves."
+      ],
+      "correct": 0,
+      "hint": "Dificultad intrínseca para notar la leve diferencia.",
+      "explanation": "$$\\text{Los efectos tenues exigen un gran valor de } n \\text{ para evitar el incremento desmedido de } \\beta. $$"
+    },
+    {
+      "q": "Diferenciación estructural entre las fuentes de libros y capítulos:",
+      "options": [
+        "Al referenciar libros, se omite rango de páginas exigido en el capítulo.",
+        "Al referenciar libros, se añade rango de páginas obviado en el capítulo.",
+        "Al referenciar libros, se omite casa editorial exigida por el capítulo."
+      ],
+      "correct": 0,
+      "hint": "Puntualización espacial de los contenidos referidos.",
+      "explanation": "En la referencia general de un libro no se exige rango de páginas, en los capítulos sí."
+    },
+    {
+      "q": "Motivo histórico que validó la aplicación del contraste riguroso:",
+      "options": [
+        "La frenología de Gall se consagró debido a la falta de apoyo empírico real.",
+        "La frenología de Gall se descartó debido a la sobra de apoyo empírico real.",
+        "La frenología de Gall se descartó debido a la falta de apoyo empírico real."
+      ],
+      "correct": 2,
+      "hint": "Las medidas del cráneo jamás predijeron resultados.",
+      "explanation": "La propuesta de Gall fue finalmente desestimada por la ausencia de comprobación empírica."
+    },
+    {
+      "q": "Consecuencia lógica del balanceo generalizado de riesgos de inferencia:",
+      "options": [
+        "Disminuir el parámetro $\\alpha$ suele aumentar el riesgo de un Error Tipo II.",
+        "Aumentar el parámetro $\\alpha$ siempre aumenta el riesgo de un Error Tipo II.",
+        "Disminuir el parámetro $\\beta$ siempre aumenta el riesgo de un Error Tipo II."
+      ],
+      "correct": 0,
+      "hint": "La relación inversa ineludible en probabilidad.",
+      "explanation": "$$\\text{Minimizar el falso positivo } (\\alpha) \\text{ incrementa proporcionalmente el falso negativo } (\\beta). $$"
+    },
+    {
+      "q": "Identificación visual del nivel de aceptación de la hipótesis nula:",
+      "options": [
+        "La zona de aceptación comprende el $1-\\beta$ de la distribución bajo la $H_0$.",
+        "La zona de aceptación comprende el $1-\\alpha$ de la distribución bajo la $H_0$.",
+        "La zona de aceptación comprende el $1-\\alpha$ de la distribución bajo la $H_1$."
+      ],
+      "correct": 1,
+      "hint": "Representación correcta asumiendo inexistencia.",
+      "explanation": "$$\\text{Si } H_0 \\text{ es cierta, mantenerla representa la decisión correcta, denotada por la zona } 1-\\alpha. $$"
+    },
+    {
+      "q": "Consecuencia ineludible de rehusarse a mantener la hipótesis nula:",
+      "options": [
+        "El rechazo de la $H_1$ implica asumir la probabilidad de error denotada $\\alpha$.",
+        "El fracaso de la $H_0$ implica asumir la probabilidad de error denotada $\\beta$.",
+        "El rechazo de la $H_0$ implica asumir la probabilidad de error denotada $\\alpha$."
+      ],
+      "correct": 2,
+      "hint": "El umbral máximo consentido por los investigadores.",
+      "explanation": "$$\\text{Rechazar la hipótesis de nulidad asume voluntariamente el riesgo de error límite denotado } \\alpha. $$"
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA sobre el formato web en normas APA:",
+      "options": [
+        "Una cita web siempre exige indicar la fecha de recuperación del documento.",
+        "Una cita web exige indicar también el nombre del sitio web y su enlace URL.",
+        "Una cita web siempre exige indicar el autor y año de publicación original."
+      ],
+      "correct": 0,
+      "hint": "Fecha del texto frente a fecha de la simple consulta.",
+      "explanation": "Se exige Año, Mes y Día de publicación original del documento, no de la consulta online."
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA sobre normas APA bibliográficas:",
+      "options": [
+        "El título del artículo aparece en la referencia de una revista académica.",
+        "El nombre del editor principal aparece en la referencia de un libro entero.",
+        "El nombre de la organización aparece en la referencia de una conferencia."
+      ],
+      "correct": 1,
+      "hint": "El responsable global del volumen frente a una parte.",
+      "explanation": "El rol de 'Editor' aparece para los capítulos ('En E. Editor...'), no para el libro en sí."
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA sobre el formato numérico decimal:",
+      "options": [
+        "El número decimal para la significación exige omitir el cero a la izquierda.",
+        "El número decimal para la probabilidad exige omitir el cero de la izquierda.",
+        "El número decimal para la significación exige añadir un cero a la izquierda."
+      ],
+      "correct": 2,
+      "hint": "Valores que no pueden superar matemáticamente a 1.",
+      "explanation": "$$\\text{Si la métrica no supera el límite de } 1 \\text{, la normativa indica omitir el cero, ej: } p =.05$$"
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA acerca de la historia investigativa:",
+      "options": [
+        "La frenología de Franz Joseph Gall fue respaldada por evidencia estadística.",
+        "La frenología de Franz Joseph Gall fue rechazada por escaso rigor empírico.",
+        "La frenología de Franz Joseph Gall fue refutada tras comprobación empírica."
+      ],
+      "correct": 0,
+      "hint": "Razones por las que un dogma pierde todo su peso.",
+      "explanation": "La frenología careció sistemáticamente de soporte estadístico, empírico y metodológico."
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA referida a la teoría de hipótesis:",
+      "options": [
+        "La hipótesis nula plantea teóricamente la ausencia total del efecto medido.",
+        "La hipótesis nula establece empíricamente la existencia de un efecto robusto.",
+        "La hipótesis alternativa establece teóricamente la presencia del efecto real."
+      ],
+      "correct": 1,
+      "hint": "Dirección de los efectos según la hipótesis.",
+      "explanation": "$$\\text{La } H_0 \\text{ asume que el efecto es cero; la existencia del efecto es competencia de la } H_1. $$"
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA sobre el tamaño del p-valor hallado:",
+      "options": [
+        "Un valor $p$ gigantesco indica que el resultado es altamente habitual en la $H_0$.",
+        "Un valor $p$ decreciente indica que el resultado es altamente habitual en la $H_0$.",
+        "Un valor $p$ muy bajo indica que el resultado es extremadamente raro bajo la $H_0$."
+      ],
+      "correct": 1,
+      "hint": "Proporcionalidad entre p-valor y extremidad estadística.",
+      "explanation": "$$\\text{Un } p\\text{-valor disminuido significa que obtener estos datos bajo } H_0 \\text{ es matemáticamente raro.}$$"
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA sobre la convención del parámetro $\\alpha$:",
+      "options": [
+        "El nivel de significación $\\alpha$ suele establecerse de manera universal en $.01$.",
+        "El nivel de significación $\\alpha$ suele establecerse de manera universal en $.05$.",
+        "El nivel de significación $\\alpha$ funciona como un límite máximo para error tipo I."
+      ],
+      "correct": 0,
+      "hint": "El consenso más aplicado a través de la psicología.",
+      "explanation": "$$\\text{La convención generalizada en psicología es fijar } \\alpha =.05 \\text{, no un umbral restrictivo de }.01$$"
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA respecto a los falsos positivos/negativos:",
+      "options": [
+        "El Error de Tipo I se asocia con rechazar una $H_0$ que en realidad es correcta.",
+        "El Error de Tipo II se asocia con rechazar una $H_0$ que en realidad es cierta.",
+        "El Error de Tipo II se asocia al hecho de mantener una $H_0$ que resulta falsa."
+      ],
+      "correct": 1,
+      "hint": "Acepción rigurosa de las decisiones erradas.",
+      "explanation": "$$\\text{El Error Tipo II } (\\beta) \\text{ consiste exclusivamente en no rechazar una } H_0 \\text{ que sí es falsa.}$$"
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA referida a la potencia de detección:",
+      "options": [
+        "La potencia estadística equivale matemáticamente a detectar un efecto genuino.",
+        "La potencia estadística se calcula matemáticamente mediante la fórmula $1-\\beta$.",
+        "La potencia estadística se calcula matemáticamente mediante la fórmula $1+\\beta$."
+      ],
+      "correct": 2,
+      "hint": "Espacio sobrante probabilístico tras el error.",
+      "explanation": "$$\\text{La fórmula correcta de la potencia excluye el margen de falso negativo, calculándose } 1-\\beta. $$"
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA sobre la relación muestral en estadística:",
+      "options": [
+        "Una muestra excesivamente pequeña reduce el riesgo general de un Error Tipo II.",
+        "Una muestra excesivamente masiva reduce el riesgo general de un Error Tipo II.",
+        "Una muestra excesivamente masiva estrecha las distribuciones probabilísticas."
+      ],
+      "correct": 0,
+      "hint": "Falta de cantidad se transforma en falta visualización.",
+      "explanation": "$$\\text{Muestras pequeñas limitan la sensibilidad, ampliando curvas e incrementando el error } \\beta. $$"
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA concerniente a la separación matemática:",
+      "options": [
+        "Un efecto grande incrementa drásticamente la separación estadística de $H_0$ y $H_1$.",
+        "Un efecto grande disminuye drásticamente la separación estadística de $H_0$ y $H_1$.",
+        "Un efecto grande facilita notablemente la distinción estadística entre $H_0$ y $H_1$."
+      ],
+      "correct": 1,
+      "hint": "Magnitud visible entre campanas de Gauss.",
+      "explanation": "$$\\text{A mayor tamaño del efecto, las curvas se separan más, reduciendo considerablemente } \\beta. $$"
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA respecto a validez vs significancia:",
+      "options": [
+        "La significación estadística ($p<.05$) exige valorar también tamaño del efecto.",
+        "La significación estadística ($p<.05$) es un criterio necesario pero incompleto.",
+        "La significación estadística ($p<.05$) es habitualmente suficiente en ciencia."
+      ],
+      "correct": 2,
+      "hint": "Lo estadístico contra la verdadera implicación real.",
+      "explanation": "$$\\text{Obtener } p <.05 \\text{ es un requisito indispensable, pero no demuestra la relevancia clínica.}$$"
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA sobre el estado real probabilístico:",
+      "options": [
+        "Cuando $H_0$ es falsa y decidimos mantenerla, logramos una decisión correcta.",
+        "Cuando $H_0$ es cierta y decidimos mantenerla, logramos una decisión correcta.",
+        "Cuando $H_0$ es falsa y decidimos rechazarla, logramos una decisión correcta."
+      ],
+      "correct": 0,
+      "hint": "Confundir el error con una aserción atinada.",
+      "explanation": "$$\\text{Mantener } H_0 \\text{ cuando es falsa es la definición precisa de un Error Tipo II o falso negativo.}$$"
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA sobre referencias APA particulares:",
+      "options": [
+        "En el formato de capítulos, se especifica el título del libro y las páginas.",
+        "En el formato de congresos, se omite el rol organizador del llamado 'Chair'.",
+        "En un formato de conferencias, se incluye el nombre y la organización final."
+      ],
+      "correct": 1,
+      "hint": "Estatus del dirigente o persona líder en un panel.",
+      "explanation": "La APA requiere explícitamente nombrar al presidente de la mesa u organización como 'Chair'."
+    },
+    {
+      "q": "Selecciona la afirmación INCORRECTA referida al solapamiento estadístico:",
+      "options": [
+        "El solapamiento entre las curvas de $H_0$ y $H_1$ produce los falsos positivos.",
+        "El solapamiento entre las curvas de $H_0$ y $H_1$ produce los falsos negativos.",
+        "El solapamiento entre las curvas de $H_0$ y $H_1$ elimina todo margen de error."
+      ],
+      "correct": 2,
+      "hint": "Inevitabilidad de las fallas de la deducción formal.",
+      "explanation": "$$\\text{El solapamiento distribucional impide que los márgenes de error } \\alpha \\text{ y } \\beta \\text{ sean nulos.}$$"
+    },
+    {
       "questionNumber": 1,
       "q": "En un diseño experimental, el valor de ____ representa la probabilidad de cometer un error de tipo I al rechazar la hipótesis nula siendo esta verdadera.",
       "options": [
@@ -2646,6 +3086,486 @@
       "correct": 2,
       "hint": "Mantener solo significa falta de evidencia para rechazar en ese momento.",
       "explanation": "Mantener $H_{0}$ significa que no hay evidencia suficiente hoy, no que sea verdadera."
+    },
+    {
+      "q": "Según la APA, en métricas limitadas entre $0$ y $1$, el valor probabilístico de 0.05 se escribe estrictamente como ________.",
+      "options": [
+        "el valor formal $\\alpha=0.05$ en texto",
+        "la magnitud total $\\alpha=0,05$ escrita",
+        "el formato exacto $\\alpha=.05$ exigido"
+      ],
+      "correct": 2,
+      "hint": "Recuerda la regla sobre la escritura de decimales y el cero inicial en límites cerrados.",
+      "explanation": "La normativa APA estipula usar puntos en vez de comas y omitir el cero inicial en variables como $\\alpha $ o $ p $ que no pueden exceder el valor $ 1$.",
+      "questionNumber": 41
+    },
+    {
+      "q": "El valor $p$ es la probabilidad matemática de obtener un estadístico empírico tan extremo asumiendo previamente que ________ es cierta.",
+      "options": [
+        "la hipótesis de trabajo subyacente $H_1$",
+        "la hipótesis estadística alternativa $H_a$",
+        "la hipótesis nula de investigación $H_0$"
+      ],
+      "correct": 2,
+      "hint": "El punto de partida del contraste siempre es la suposición de la ausencia del efecto.",
+      "explanation": "El valor $p $ cuantifica la rareza de los datos obtenidos exclusivamente bajo la distribución poblacional dictada por la $ H_0$.",
+      "questionNumber": 42
+    },
+    {
+      "q": "Rechazar analíticamente la hipótesis $H_0$ cuando en la realidad poblacional no existe el efecto investigado constituye un ________.",
+      "options": [
+        "Error de Tipo II o Falso Negativo empírico",
+        "Error de Tipo I o Falso Positivo estadístico",
+        "Sesgo de Potencia y Nivel de Aceptación base"
+      ],
+      "correct": 1,
+      "hint": "Detectar algo que en realidad no existe equivale a encender una falsa alarma.",
+      "explanation": "Dar por cierto un efecto irreal es rechazar incorrectamente la $H_0 $, lo que define formalmente al Error Tipo I, cuyo riesgo máximo está fijado por $\\alpha$.",
+      "questionNumber": 43
+    },
+    {
+      "q": "La capacidad matemática de un modelo para detectar correctamente un efecto cuando este realmente existe se denomina teóricamente ________.",
+      "options": [
+        "El Nivel de Aceptación muestral $(1-\\alpha)$",
+        "La Potencia Estadística analítica $(1-\\beta)$",
+        "La Probabilidad del Error Tipo II estandarizado"
+      ],
+      "correct": 1,
+      "hint": "Es el complemento métrico directo a cometer un falso negativo.",
+      "explanation": "La detección correcta bajo el supuesto de que $H_1 $ es verdadera representa la Sensibilidad o Potencia, expresada matemáticamente como $ 1-\\beta$.",
+      "questionNumber": 44
+    },
+    {
+      "q": "Un tamaño del efecto verdaderamente grande genera una mayor separación probabilística y visual entre las distribuciones de ________.",
+      "options": [
+        "los tamaños muestrales empíricos $(n)$",
+        "las tasas de Falsos Positivos y Negativos",
+        "las hipótesis contrastadas $H_0$ y $H_1$"
+      ],
+      "correct": 2,
+      "hint": "El efecto separa las curvas teóricas de lo que pasaría si no hay tratamiento vs si lo hay.",
+      "explanation": "Un tamaño del efecto amplio aleja los centros de masa poblacionales de $H_0 $ y $ H_1 $, disminuyendo el solapamiento y reduciendo la probabilidad del Error $\beta$.",
+      "questionNumber": 45
+    },
+    {
+      "q": "En la estructura de citación de un artículo de revista según la APA, tras el título de la propia revista se debe indicar el ________.",
+      "options": [
+        "volumen(número), las páginas y luego el DOI",
+        "número(volumen), el identificador y páginas",
+        "volumen editorial, páginas y número de cita"
+      ],
+      "correct": 0,
+      "hint": "La secuencia desciende de la publicación más grande a la ubicación más pequeña antes del enlace.",
+      "explanation": "El formato estricto APA para artículos exige la secuencia: Título de la Revista, volumen(número), páginas. Y cierra con DOI/URL.",
+      "questionNumber": 46
+    },
+    {
+      "q": "Incrementar drásticamente el tamaño de la muestra empírica $(n)$ en un estudio tiene como consecuencia directa y matemática ________.",
+      "options": [
+        "aumentar exponencialmente el riesgo de Error I",
+        "estrechar las distribuciones de probabilidades",
+        "ampliar notoriamente la varianza poblacional"
+      ],
+      "correct": 1,
+      "hint": "Una muestra masiva reduce la incertidumbre y comprime gráficamente los resultados posibles.",
+      "explanation": "Al aumentar $n $, el error típico disminuye, lo que hace que las curvas poblacionales de probabilidad se estrechen, aumentando así la Potencia $(1-\\beta)$.",
+      "questionNumber": 47
+    },
+    {
+      "q": "El caso histórico de Franz Joseph Gall y su controvertida teoría de la frenología ejemplifica de forma clara un rechazo por ________.",
+      "options": [
+        "absoluta falta de evidencia empírica rigurosa",
+        "un exceso de Error de Tipo II en las muestras",
+        "solapamiento de las predicciones en la $H_1$"
+      ],
+      "correct": 0,
+      "hint": "Su hipótesis pretendía ser cierta pero los datos tangibles nunca la respaldaron.",
+      "explanation": "Las afirmaciones pseudocientíficas de Gall fueron descartadas porque, al someterse a contraste riguroso empírico estadístico, los datos no apoyaron las predicciones esperadas bajo su $H_1$.",
+      "questionNumber": 48
+    },
+    {
+      "q": "Para referenciar un capítulo de libro en APA 2020, el nombre del editor del volumen general va obligatoriamente seguido de ________.",
+      "options": [
+        "la abreviatura (Ed.) y el título general",
+        "el año exacto de publicación del compendio",
+        "las páginas referidas pp. xx-xx del texto"
+      ],
+      "correct": 0,
+      "hint": "Tras nombrar al coordinador, hay que aclarar su rol y posteriormente de qué obra se trata.",
+      "explanation": "La estructura normativa marca: 'En E. Editor (Ed.), Título del libro (pp. xx-xx). Editorial'. Por tanto, la denominación (Ed.) va inmediatamente después.",
+      "questionNumber": 49
+    },
+    {
+      "q": "Desde un punto de vista epistemológico y puramente estadístico, la denominada Hipótesis Nula $(H_0)$ bajo ningún concepto se ________.",
+      "options": [
+        "acepta como cierta de manera irrefutable",
+        "rechaza si el umbral del valor $p$ es bajo",
+        "mantiene si el modelo carece de pruebas"
+      ],
+      "correct": 0,
+      "hint": "La falta de pruebas contra ella no demuestra categóricamente su verdad absoluta universal.",
+      "explanation": "Una premisa fundamental del contraste es que la $H_0 $ simplemente se mantiene provisionalmente. Jamás se 'acepta' asumiendo que el efecto estudiado está $ 100\\%$ ausente matemáticamente.",
+      "questionNumber": 50
+    },
+    {
+      "q": "Un resultado analítico obtenido con un valor $p$ muy alto implica fundamentalmente que el estadístico inferencial es un valor ________.",
+      "options": [
+        "muy poco frecuente bajo el supuesto estricto de la $H_0$",
+        "altamente habitual bajo el supuesto estricto de la $H_0$",
+        "plenamente significativo bajo la presunción de la $H_1$"
+      ],
+      "correct": 1,
+      "hint": "Un área de probabilidad grande significa que el evento cae en la parte central y común de la campana.",
+      "explanation": "Si el valor $p $ es elevado, significa que hay alta probabilidad de ver resultados así si la $ H_0$ fuera cierta, siendo por ende un valor habitual que impide descartarla.",
+      "questionNumber": 51
+    },
+    {
+      "q": "En el campo de la investigación psicológica, el umbral de error máximo permitido y fijado por consenso empírico se denota como ________.",
+      "options": [
+        "el límite de probabilidad invertido $\\beta=.05$",
+        "el nivel estándar de significación $\\alpha=.05$",
+        "la máxima potencia estadística base $1-\\alpha=.05$"
+      ],
+      "correct": 1,
+      "hint": "Representa el riesgo de Falso Positivo que los investigadores consienten asumir a priori.",
+      "explanation": "El nivel de significación, operativizado por la letra $\\alpha $, es la cota superior del Error Tipo I. Por convención clínica y psicológica se establece habitualmente en $ 0.05 $ (un $ 5\\%$).",
+      "questionNumber": 52
+    },
+    {
+      "q": "Al decidir reducir el nivel de significación $(\\alpha)$ para evitar confirmar falsos positivos, colateral y matemáticamente se ________.",
+      "options": [
+        "disminuye severamente la tasa límite de $\\beta$",
+        "aumenta el riesgo base de cometer Error Tipo II",
+        "maximiza la potencia global de la prueba de $H_1$"
+      ],
+      "correct": 1,
+      "hint": "Exigir demasiada seguridad para aceptar un descubrimiento incrementa la ceguera ante descubrimientos reales.",
+      "explanation": "Al achicar artificialmente la región de rechazo de $\\alpha $, el solapamiento con la distribución de $ H_1 $ provoca una expansión geométrica directa del área correspondiente al Error de Tipo II $(\\beta)$.",
+      "questionNumber": 53
+    },
+    {
+      "q": "Al elaborar una referencia académica de una tesis, el nombre exacto de la universidad otorgante debe figurar estructuralmente ________.",
+      "options": [
+        "por fuera del paréntesis de tipo de documento",
+        "por dentro del paréntesis de tipo de documento",
+        "justo después de declarar la base de datos web"
+      ],
+      "correct": 1,
+      "hint": "El tipo de grado y la institución conforman una sola unidad de información descriptiva.",
+      "explanation": "Según la directriz APA, la universidad se adjunta en el mismo bloque parentético: '(Tipo de trabajo académico, Nombre de la Universidad)' seguido por la base de datos.",
+      "questionNumber": 54
+    },
+    {
+      "q": "La demostración de significación estadística $(p<.05)$ es un requisito que en la investigación moderna se considera de forma ________.",
+      "options": [
+        "plena y suficiente para la relevancia aplicada",
+        "aislada e irrelevante si la muestra es grande",
+        "estrictamente necesaria pero a la vez insuficiente"
+      ],
+      "correct": 2,
+      "hint": "Superar el umbral probabilístico es solo el primer paso, pues se necesita medir la magnitud real.",
+      "explanation": "Tener un $p<\\alpha $ valida el rechazo estadístico de $ H_0$, pero es insuficiente si no se acompaña de un Tamaño del Efecto idóneo que justifique la utilidad del ensayo clínico o poblacional.",
+      "questionNumber": 55
+    },
+    {
+      "q": "La evidente falta de sensibilidad del análisis que conlleva irremediablemente a omitir hallazgos reales existentes se asocia con ________.",
+      "options": [
+        "el indicador estadístico del llamado Error $\\beta$",
+        "el parámetro inferencial de significación $\\alpha$",
+        "la capacidad teórica de Potencia $(1-\\alpha)$"
+      ],
+      "correct": 0,
+      "hint": "Se trata del Falso Negativo, donde la miopía estadística nos impide observar un fenómeno genuino.",
+      "explanation": "El Error de Tipo II, denotado por $\\beta $, consiste precisamente en no poseer la sensibilidad suficiente para rechazar una $ H_0 $ falsa, contrariando a la Potencia $(1-\\beta)$.",
+      "questionNumber": 56
+    },
+    {
+      "q": "El inevitable solapamiento matemático entre las distribuciones teóricas de la hipótesis $H_0$ y de la $H_1$ termina generando ________.",
+      "options": [
+        "dos escenarios puros de decisión resolutiva total",
+        "tres alternativas probables de contraste empírico",
+        "cuatro posibles escenarios matriciales de inferencia"
+      ],
+      "correct": 2,
+      "hint": "Resulta de cruzar la dicotomía de la decisión analítica frente a la dicotomía de la realidad teórica.",
+      "explanation": "La tabla 2x2 crea cuatro cuadrantes definidos por la Decisión (Rechazar/Mantener $H_0 $) cruzada con la Realidad ($ H_0 $ cierta/falsa), resultando en dos decisiones correctas y dos errores ($\\alpha $, $\\beta$).",
+      "questionNumber": 57
+    },
+    {
+      "q": "De acuerdo con el manual APA, los parámetros limitados estadísticamente entre $0$ y $1$ (como los valores probabilísticos) no usarán ________.",
+      "options": [
+        "dos o más dígitos decimales de precisión",
+        "el cero numérico inicial antes del punto",
+        "comas para el aislamiento de las fracciones"
+      ],
+      "correct": 1,
+      "hint": "La economía del lenguaje elimina los dígitos que no añaden información en magnitudes acotadas.",
+      "explanation": "Al no poder superar el entero $1 $, la sintaxis estandarizada exige purgar el dígito cero en las probabilidades, quedando únicamente el punto decimal (ej: $ p=.01$).",
+      "questionNumber": 58
+    },
+    {
+      "q": "Descubrir un tamaño del efecto verdaderamente diminuto, especialmente si la muestra de estudio no es suficientemente masiva, causará ________.",
+      "options": [
+        "un mantenimiento erróneo sistemático de la $H_0$",
+        "el rechazo infundado y categórico de una $H_0$ real",
+        "la proliferación evidente y directa de Errores I"
+      ],
+      "correct": 0,
+      "hint": "Si la lupa es pequeña y el objeto minúsculo, jamás lo verás, creyendo que ahí no hay nada.",
+      "explanation": "Un efecto pequeño con baja Potencia (por muestra reducida) dispara las probabilidades del Error Tipo II ($\\beta $), el cual consiste explícitamente en el mantenimiento erróneo de la $ H_0$.",
+      "questionNumber": 59
+    },
+    {
+      "q": "En la meticulosa redacción de la cita de una conferencia o ponencia, inmediatamente después de la nomenclatura '(Chair)' se pone ________.",
+      "options": [
+        "el título exacto de la presentación del autor",
+        "el ente de organización del evento presencial",
+        "el título general de la conferencia referida"
+      ],
+      "correct": 2,
+      "hint": "La procedencia del coloquio debe especificarse tras el coordinador general.",
+      "explanation": "La norma indica: 'En E. Editor (Chair), Título de la conferencia. Organización'. Por ende, sigue el macro título general del congreso.",
+      "questionNumber": 60
+    },
+    {
+      "q": "Respecto a los rigurosos estándares de redacción científica de la normativa APA y sus reglas matemáticas asociadas:",
+      "options": [
+        "Para los valores de probabilidad, como $p = .04$, se omite escribir el cero a la izquierda.",
+        "La estandarización busca preservar la precisión técnica y la trazabilidad de las referencias.",
+        "Todas las aseveraciones anteriores resultan analítica y teóricamente correctas sin excepción."
+      ],
+      "correct": 2,
+      "hint": "Evalúa tanto las reglas decimales explícitas como la finalidad de la estructuración global.",
+      "explanation": "Es totalmente cierto que los valores probabilísticos restringen el uso del $0$ inicial y que el corpus normativo completo persigue la perfecta trazabilidad de datos y autores.",
+      "questionNumber": 61
+    },
+    {
+      "q": "En relación a la matriz de toma de decisiones estadísticas y sus correspondientes niveles de aceptación en el contraste:",
+      "options": [
+        "El nivel conocido matemáticamente como $(1-\\alpha)$ es la zona donde es razonable mantener $H_0$.",
+        "La potencia métrica cuantificada como $(1-\\beta)$ es la capacidad real de detectar efectos ciertos.",
+        "Todas las aseveraciones anteriores resultan analítica y teóricamente correctas sin excepción."
+      ],
+      "correct": 2,
+      "hint": "Considera la relación entre la exactitud del modelo frente a H0 y la sensibilidad analítica general.",
+      "explanation": "El área de Confianza $(1-\\alpha)$ valida la conservación fundamentada de $ H_0 $, mientras que la Potencia $(1-\\beta)$ refleja la exactitud empírica al descubrir realidades bajo la $ H_1$.",
+      "questionNumber": 62
+    },
+    {
+      "q": "Evaluando el rol del parámetro probabilístico $p$ (valor p) en el contraste de hipótesis paramétrico:",
+      "options": [
+        "Un indicador de $p$ alto denota un resultado completamente esperable si asumimos cierta la $H_0$.",
+        "Un valor numérico $p < .05$ obliga analíticamente a rechazar $H_0$ y apostar por la alternativa $H_1$.",
+        "Todas las aseveraciones anteriores resultan analítica y teóricamente correctas sin excepción."
+      ],
+      "correct": 2,
+      "hint": "Los valores altos retienen el estatus neutral, los muy bajos franquean los umbrales de significación.",
+      "explanation": "Al asumir siempre $H_0 $ al inicio, si la probabilidad de un hallazgo es ordinaria ($ p $ alto), no hay prueba para desecharla. Si es inusual ($ p <.05 $), sobrepasa el límite del Error Tipo I y se respalda a $ H_1$.",
+      "questionNumber": 63
+    },
+    {
+      "q": "Analizando la optimización de la investigación basada en el volumen del tamaño muestral $(n)$ disponible:",
+      "options": [
+        "Recopilar una muestra extensa disminuye la variabilidad y estrecha geométricamente las curvas.",
+        "Una $n$ cuantiosa potencia la capacidad de detectar diferencias y atenúa la probabilidad de Error II.",
+        "Todas las aseveraciones anteriores resultan analítica y teóricamente correctas sin excepción."
+      ],
+      "correct": 2,
+      "hint": "Más sujetos experimentales equivalen a un microscopio de mayor aumento y resolución analítica.",
+      "explanation": "El incremento en $n $ colapsa el Error Estándar reduciendo variabilidad empírica, lo que aísla visual y matemáticamente las distribuciones poblacionales y rescata potencia $(1-\\beta)$.",
+      "questionNumber": 64
+    },
+    {
+      "q": "Considerando la importancia trascendental del concepto del Tamaño del Efecto en las pruebas empíricas:",
+      "options": [
+        "Un tamaño verdaderamente amplio incrementa la confianza en la aplicabilidad clínica del ensayo.",
+        "Un efecto reducido incrementa drásticamente las papeletas de caer en el temido Error de Tipo II.",
+        "Todas las aseveraciones anteriores resultan analítica y teóricamente correctas sin excepción."
+      ],
+      "correct": 2,
+      "hint": "Un efecto grande otorga validez externa; uno sutil es escurridizo si no dispones de gran potencial.",
+      "explanation": "La magnitud pura de la separación indica qué tan útil es el tratamiento hallado. Si esta brecha es pequeña y el diseño débil, lo más fácil estadísticamente es omitir el efecto (Error $\beta$).",
+      "questionNumber": 65
+    },
+    {
+      "q": "Sobre la naturaleza binaria y antagónica en la formulación de las hipótesis investigativas base:",
+      "options": [
+        "La hipótesis nula postula siempre la completa ausencia del efecto pronosticado.",
+        "La hipótesis alternativa defiende la existencia empírica del fenómeno investigado.",
+        "Todas las aseveraciones anteriores resultan analítica y teóricamente correctas sin excepción."
+      ],
+      "correct": 2,
+      "hint": "Constituyen la tesis y la antítesis sobre las que orbita el experimento estadístico general.",
+      "explanation": "La matemática dicta que $H_0 $ (nula) es el estado plano de 'nada está ocurriendo', siendo su complementaria teórica diametralmente opuesta la $ H_1$ que certifica el hallazgo del efecto.",
+      "questionNumber": 66
+    },
+    {
+      "q": "Reflexionando sobre la filosofía inherente a las decisiones probabilísticas en inferencia estadística:",
+      "options": [
+        "Cualquier decisión tomada conlleva un margen ineludible de error por el traslape de densidades.",
+        "La hipótesis que plantea la nulidad jamás se da por demostrada veraz de manera 100% definitiva.",
+        "Todas las aseveraciones anteriores resultan analítica y teóricamente correctas sin excepción."
+      ],
+      "correct": 2,
+      "hint": "La estadística basada en densidades de probabilidad no ofrece certezas binarias totales.",
+      "explanation": "Puesto que las colas de las distribuciones teóricas bajo $H_0 $ y $ H_1 $ se extienden al infinito, es imposible suprimir simultáneamente el Error $\u0007lpha $ y $\beta $, y por ende $ H_0$ sobrevive solo como 'mantenida'.",
+      "questionNumber": 67
+    },
+    {
+      "q": "Revisando minuciosamente las normas bibliográficas de la directriz APA para distintas fuentes:",
+      "options": [
+        "En el documento de tesis, la especialidad y universidad deben constar dentro de los paréntesis.",
+        "Para recuperar un artículo web, es estrictamente imperativo incluir el hipervínculo o URL final.",
+        "Todas las aseveraciones anteriores resultan analítica y teóricamente correctas sin excepción."
+      ],
+      "correct": 2,
+      "hint": "La institución que cobija una tesis académica es inseparable del tipo de archivo.",
+      "explanation": "El manual establece expresamente la inclusión simultánea entre paréntesis del carácter académico del estudio y su universidad, así como el URL para referencias extraídas directamente de Sitios Web.",
+      "questionNumber": 68
+    },
+    {
+      "q": "Explorando la balanza de riesgos entre el Error Tipo I y el Error Tipo II en un estudio científico:",
+      "options": [
+        "El nivel $\\alpha$ opera como la frontera límite estricta o umbral máximo para los falsos positivos.",
+        "Restringir excesivamente la $\\alpha$ desencadena un incremento probabilístico del sesgo tipo $\\beta$.",
+        "Todas las aseveraciones anteriores resultan analítica y teóricamente correctas sin excepción."
+      ],
+      "correct": 2,
+      "hint": "Ambos parámetros compiten diametralmente por la partición geométrica de las áreas de la curva.",
+      "explanation": "Al reducir $\\alpha $ (ej. de $ 0.05 $ a $ 0.01 $), exigimos pruebas más extraordinarias para descartar $ H_0 $, lo que inevitablemente arrastra la frontera hacia la distribución $ H_1 $, inflando de forma directa a $\beta$.",
+      "questionNumber": 69
+    },
+    {
+      "q": "En torno a la conclusión incisiva sobre la interacción de $p$, tamaño del efecto y volumen de muestra:",
+      "options": [
+        "Una investigación no debe basar su relevancia técnica de forma exclusiva en tener un $p < .05$.",
+        "Omitir estos índices de magnitud arriesga el rechazo injusto de intervenciones muy prometedoras.",
+        "Todas las aseveraciones anteriores resultan analítica y teóricamente correctas sin excepción."
+      ],
+      "correct": 2,
+      "hint": "La significación solo afirma existencia, pero no cuantifica la trascendencia o impacto social.",
+      "explanation": "La significación estocástica es insuficiente aisladamente. Obviar la magnitud real del efecto incurre en graves negligencias analíticas donde un tratamiento útil resulta silenciado por una $n$ pobre.",
+      "questionNumber": 70
+    },
+    {
+      "q": "En relación a las equivalencias matemáticas de las decisiones teóricas en la matriz inferencial:",
+      "options": [
+        "La zona probabilística de aceptación es formal y numéricamente equivalente al cálculo de $(1-\\beta)$.",
+        "La significación marginal dictamina y blinda la certeza matemática absoluta del valor inferencial.",
+        "Ninguna de las opciones propuestas resulta teórica ni procedimentalmente precisa en este contexto."
+      ],
+      "correct": 2,
+      "hint": "Cruza con cuidado qué letra griega representa el área de la nulidad vs la zona de la alternativa.",
+      "explanation": "El nivel de Aceptación es $(1-\\alpha)$, no $(1-\\beta)$ que pertenece a la Potencia. Además, el parámetro $\u0007lpha$ jamás ofrece 'certeza absoluta', solo modula riesgos probabilísticos.",
+      "questionNumber": 71
+    },
+    {
+      "q": "Acerca de las rigurosas convenciones numéricas exigidas por el manual de publicación científica APA:",
+      "options": [
+        "Los autores deben emplear recurrentemente las comas bajas para dividir los intervalos decimales.",
+        "Cualquier guarismo de nivel de significación idéntico al cinco por ciento se digita como $0,05$.",
+        "Ninguna de las opciones propuestas resulta teórica ni procedimentalmente precisa en este contexto."
+      ],
+      "correct": 2,
+      "hint": "En la reglamentación estandarizada actual existen prohibiciones para puntuaciones europeas clásicas.",
+      "explanation": "La APA repudia la coma en favor de los puntos para decimales. Más aún, un nivel referencial del cinco por ciento en rango de cero a uno se escribiría excluyendo el cero, debiendo ser $.05$.",
+      "questionNumber": 72
+    },
+    {
+      "q": "Evaluando la terminología del marco de riesgo y su asociación con los diferentes falsos resultados:",
+      "options": [
+        "Incurrir en el llamado Error Tipo I engloba retener a la $H_0$ cuando esta es esencialmente falsa.",
+        "Incurrir en un fatal Error Tipo II o falso positivo implica renegar injustificadamente de la $H_0$.",
+        "Ninguna de las opciones propuestas resulta teórica ni procedimentalmente precisa en este contexto."
+      ],
+      "correct": 2,
+      "hint": "Asegúrate de qué número arábigo corresponde al positivo fallido y cuál al negativo fallido.",
+      "explanation": "Totalmente a la inversa: retener una $H_0 $ falsa es un Falso Negativo (Error Tipo II o $\beta $), mientras que descartar sin justificación idónea la $ H_0 $ es un Falso Positivo (Error Tipo I o $\u0007lpha$).",
+      "questionNumber": 73
+    },
+    {
+      "q": "Analizando la interpretación epistemológica ligada a la dimensión del valor $p$ de un contraste:",
+      "options": [
+        "Cosechar un $p < .05$ reafirma que nuestras observaciones son sumamente esperables asumiendo la $H_0$.",
+        "Un coeficiente de $p$ sumamente elevado consagra empíricamente a la $H_0$ como una verdad definitiva.",
+        "Ninguna de las opciones propuestas resulta teórica ni procedimentalmente precisa en este contexto."
+      ],
+      "correct": 2,
+      "hint": "Un valor diminuto de convergencia implica algo profundamente atípico de suceder de forma azarosa.",
+      "explanation": "Un $p<.05 $ denota sucesos altamente atípicos y anómalos, forzando el rechazo de $ H_0 $. A su vez, un valor enorme no corona a la $ H_0$ de absoluta certidumbre, tan solo impide desestimarla.",
+      "questionNumber": 74
+    },
+    {
+      "q": "Respecto a las pautas de referenciación exclusivas para libros y capítulos en la vigente norma APA:",
+      "options": [
+        "Al diseccionar el capítulo de un tomo ajeno, el año original de edición se puede soslayar por fin.",
+        "La obligatoriedad de citar al coordinador usando '(Ed.)' expira si este concuerda con los autores.",
+        "Ninguna de las opciones propuestas resulta teórica ni procedimentalmente precisa en este contexto."
+      ],
+      "correct": 2,
+      "hint": "Hay campos cronológicos y nomenclaturas sintácticas que jamás pueden evadirse en la estructura.",
+      "explanation": "Toda referencia sin excepción exige el año entre paréntesis justo al lado del nombre del autor, y la mención explícita del rol de Editor bajo la partícula '(Ed.)' es obligatoria y estructural.",
+      "questionNumber": 75
+    },
+    {
+      "q": "Teniendo en cuenta el papel determinante de la manipulación de la variable referida a la muestra $(n)$:",
+      "options": [
+        "Cimentar un ensayo sobre una base muestral diminuta blindará algorítmicamente contra el Error I.",
+        "Multiplicar desproporcionadamente la cantidad de $n$ engrosará dramáticamente la varianza de base.",
+        "Ninguna de las opciones propuestas resulta teórica ni procedimentalmente precisa en este contexto."
+      ],
+      "correct": 2,
+      "hint": "Recuerda el impacto directo del tamaño de la recolección sobre la anchura de las curvas paramétricas.",
+      "explanation": "Reducir la muestra desploma la Potencia $(1-\\beta)$ más que blindar el $\u0007lpha $. Al revés de lo propuesto, expandir geométricamente a $ n$ estrecha diametralmente la varianza, no la engrosa.",
+      "questionNumber": 76
+    },
+    {
+      "q": "Al profundizar conceptualmente en las premisas de la asunción de posturas probabilísticas opuestas:",
+      "options": [
+        "La hipótesis $H_1$ defiende que el factor explorado carece de repercusiones tangibles.",
+        "La directiva nula $(H_0)$ se concibe y cristaliza ex post facto al recabar los indicadores de campo.",
+        "Ninguna de las opciones propuestas resulta teórica ni procedimentalmente precisa en este contexto."
+      ],
+      "correct": 2,
+      "hint": "Las hipótesis delimitan el problema y deben enunciarse a priori como punto de partida de la estadística.",
+      "explanation": "La $H_1 $ es justamente quien postula la existencia del efecto investigado. Además, la $ H_0$ no surge después de compilar la data empírica, sino que es la piedra angular inicial que se intenta derribar.",
+      "questionNumber": 77
+    },
+    {
+      "q": "Al repasar los hitos empíricos y el desmentido en el ilustrativo episodio de la doctrina frenológica:",
+      "options": [
+        "Franz Joseph Gall reescribió y sepultó su postulado fundacional a instancias de su propio ensayo.",
+        "Las métricas empíricas de Gall sentaron precedentes que robustecieron la potencia del Error $\\beta$.",
+        "Ninguna de las opciones propuestas resulta teórica ni procedimentalmente precisa en este contexto."
+      ],
+      "correct": 2,
+      "hint": "Gall nunca descartó sus propias intuiciones, fue el rodillo matemático de la ciencia moderna quien lo hizo.",
+      "explanation": "Gall proclamó la validez de su hipótesis y fue la comprobación objetiva del resto de la esfera científica lo que expuso su carencia de evidencia genuina, llevando a su destierro científico definitivo.",
+      "questionNumber": 78
+    },
+    {
+      "q": "Considerando las reflexiones conclusivas sobre la tricotomía métrica del efecto, muestra y valor $p$:",
+      "options": [
+        "Demostrar la deseada significación estadística $p < .05$ atestigua infaliblemente su valor clínico.",
+        "Cuantificar un tamaño del efecto exiguo atestigua poseer una aplastante potencia en la población.",
+        "Ninguna de las opciones propuestas resulta teórica ni procedimentalmente precisa en este contexto."
+      ],
+      "correct": 2,
+      "hint": "Un resultado estadístico no garantiza relevancia clínica.",
+      "explanation": "La significación estadística ($p <.05$) no garantiza la relevancia clínica. Asimismo, efectos pequeños exigen muestras grandes para lograr potencia, por lo que ambas opciones anteriores son incorrectas.",
+      "questionNumber": 79
+    },
+    {
+      "q": "En el contraste de hipótesis, si fijamos un nivel de significación más estricto (por ejemplo, pasando de $.05$ a $.01$):",
+      "options": [
+        "Disminuimos el riesgo de Error Tipo I y aumentamos el riesgo de Error Tipo II.",
+        "Aumentamos el riesgo de Error Tipo I y disminuimos el riesgo de Error Tipo II.",
+        "Disminuimos simultáneamente la probabilidad de cometer ambos tipos de errores."
+      ],
+      "correct": 0,
+      "hint": "Relación inversa entre los límites críticos de decisión.",
+      "explanation": "Al reducir $\\alpha $, se disminuye la probabilidad de falso positivo (Error Tipo I), pero se incrementa la probabilidad $\\beta$ de falso negativo (Error Tipo II).",
+      "questionNumber": 80
     },
     {
       "q": "¿Es verdadero que el supuesto de normalidad en el Modelo Lineal General debe cumplirse estrictamente en la distribución de la variable dependiente observada?",
