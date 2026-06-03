@@ -441,6 +441,435 @@
       "explanation": "$$\\text{La normativa APA prohíbe el texto justificado; el manuscrito debe estar alineado a la izquierda para evitar espacios raros.}$$"
     },
     {
+      "q": "La estadística inferencial obtiene conclusiones poblacionales mediante el contraste de hipótesis.",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No lo sé."
+      ],
+      "correct": 0,
+      "hint": "Piensa en el mecanismo que permite extrapolar datos de una muestra limitada.",
+      "explanation": "La inferencia usa el contraste de hipótesis para rechazar la hipótesis nula, matemáticamente expresado como $$P(\\text{Datos} | \\mathcal{H}_0) < \\alpha$$, permitiendo extrapolar."
+    },
+    {
+      "q": "En el ámbito clínico, la estadística descriptiva se usa exclusivamente para emitir un diagnóstico.",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No lo sé."
+      ],
+      "correct": 1,
+      "hint": "Recuerda si también se pueden medir los avances longitudinales del paciente.",
+      "explanation": "No es exclusiva de diagnósticos; también analiza la tasa de avance y sentimientos, lo cual se puede modelar como $$f(t) = \\frac{d}{dt}\\text{Progreso}(t)$$."
+    },
+    {
+      "q": "La estadística descriptiva permite extrapolar conclusiones finales a toda la población evaluada.",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No lo sé."
+      ],
+      "correct": 1,
+      "hint": "Reflexiona sobre los límites de resumir únicamente la muestra actual.",
+      "explanation": "La descriptiva sintetiza, pero no infiere poblacionalmente. No se puede asumir que $$\\mu = \\bar{X}$$ sin un estadístico de contraste."
+    },
+    {
+      "q": "Las encuestas analizan asociaciones generalizables sin buscar establecer relaciones causales.",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No lo sé."
+      ],
+      "correct": 0,
+      "hint": "Distingue entre la manipulación experimental y la mera observación correlacional.",
+      "explanation": "Las encuestas encuentran correlación, pero la correlación no implica causalidad por defecto: $$\\rho_{xy} \\neq 0 \\nRightarrow \\text{Causalidad}$$."
+    },
+    {
+      "q": "La investigación cualitativa se caracteriza por aplicar un proceso iterativo de autocorrección.",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No lo sé."
+      ],
+      "correct": 0,
+      "hint": "Analiza si el método es rígido o se adapta continuamente al contexto estudiado.",
+      "explanation": "El proceso iterativo es una actualización constante del modelo metodológico, análogo a una sucesión evaluada: $$M_{i+1} = f(M_i, \\text{Error}_i)$$."
+    },
+    {
+      "q": "Los artículos de enfoque cuantitativo sintetizan estudios puramente fenomenológicos y sociales.",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No lo sé."
+      ],
+      "correct": 1,
+      "hint": "Relaciona el término 'fenomenológico' con los enfoques numéricos vs verbales.",
+      "explanation": "El enfoque fenomenológico es netamente cualitativo. El cuantitativo requiere variables numéricas discretas o continuas: $$\\text{Cuantitativo} \\implies \\text{Datos} \\in \\mathbb{R}$$."
+    },
+    {
+      "q": "Según la normativa APA, la primera línea de cada párrafo en el cuerpo debe llevar sangría.",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No lo sé."
+      ],
+      "correct": 0,
+      "hint": "Revisa los requerimientos de formato estructural básicos para manuscritos.",
+      "explanation": "El formato APA exige sangría al inicio de cada párrafo nuevo, estableciendo una constante matemática de formato de $$\\text{Sangría} = 1.27\\text{ cm}$$."
+    },
+    {
+      "q": "La sección de introducción de un informe define pormenorizadamente a todos los participantes.",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No lo sé."
+      ],
+      "correct": 1,
+      "hint": "Identifica qué sección es la encargada formal de relatar el 'Cómo' del estudio.",
+      "explanation": "Los participantes se definen estrictamente en la sección de Método, separando conjuntos de información: $$\\text{Participantes} \\in \\text{Sección M\\acute{e}todo}$$."
+    },
+    {
+      "q": "Los estudios de caso cualitativos realizan un análisis profundo de grupos bajo un enfoque sistémico.",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No lo sé."
+      ],
+      "correct": 0,
+      "hint": "Piensa en el tamaño muestral y el grado de detalle exhaustivo en la evaluación.",
+      "explanation": "Los estudios de caso reducen n para maximizar las dimensiones cualitativas estudiadas, donde $$n \\to 1 \\implies \\text{An\\acute{a}lisis Hol\\acute{\\imath}stico}$$."
+    },
+    {
+      "q": "El formato general APA exige que el texto del documento deba presentarse completamente justificado.",
+      "options": [
+        "Verdadero.",
+        "Falso.",
+        "No lo sé."
+      ],
+      "correct": 1,
+      "hint": "Recuerda las normativas sobre los márgenes rectos frente a márgenes irregulares.",
+      "explanation": "APA requiere explícitamente alineación a la izquierda (bandera a la derecha), por lo que la restricción lógica es $$\\text{Alineaci\\acute{o}n} \\equiv \\text{Izquierda}$$."
+    },
+    {
+      "q": "Elige la afirmación correcta sobre la investigación experimental y sus variables.",
+      "options": [
+        "La experimentación aísla el efecto de la variable independiente usando aleatorización estricta.",
+        "La encuesta establece relaciones causales directas controlando la variable independiente evaluada.",
+        "Los estudios cualitativos buscan leyes universales mediante el control de grupos poblacionales."
+      ],
+      "correct": 0,
+      "hint": "Busca el diseño que manipula elementos intencionalmente para ver un resultado.",
+      "explanation": "Solo el experimento puede determinar causalidad mediante la función $$Y = \\beta_0 + \\beta_1 X_1 + \\epsilon$$, donde $$X_1$$ es la VI aislada y manipulada."
+    },
+    {
+      "q": "Elige la afirmación correcta sobre las diferentes ramas de la estadística aplicadas a la investigación.",
+      "options": [
+        "El muestreo sintetiza los datos para analizar la situación actual de toda la población evaluada.",
+        "La estadística descriptiva organiza los datos empíricos para comprender la muestra seleccionada.",
+        "La estadística inferencial omite los contrastes de hipótesis para extrapolar los datos medidos."
+      ],
+      "correct": 1,
+      "hint": "Distingue qué rama se encarga únicamente de agrupar y sintetizar los datos ya recopilados.",
+      "explanation": "La descriptiva organiza información calculando parámetros internos de la muestra como la varianza muestral $$s^2 = \\frac{1}{n-1}\\sum (x_i - \\bar{x})^2$$."
+    },
+    {
+      "q": "Elige la afirmación correcta sobre los diferentes tipos de revisiones y metaanálisis científicos.",
+      "options": [
+        "Las revisiones de literatura siguen protocolos estrictos como PRISMA para obtener conclusiones.",
+        "Los metaanálisis cualitativos reportan el tamaño del efecto usando estadísticos estandarizados.",
+        "Los metaanálisis cuantitativos sintetizan resultados numéricos para reportar el tamaño de efecto."
+      ],
+      "correct": 2,
+      "hint": "Identifica qué metodología utiliza técnicas matemáticas para unificar la magnitud de resultados.",
+      "explanation": "El metaanálisis cuantitativo estandariza el tamaño del efecto a través de métricas matemáticas globales como la d de Cohen: $$d = \\frac{\\bar{X}_1 - \\bar{X}_2}{S_p}$$."
+    },
+    {
+      "q": "Elige la afirmación correcta sobre los requerimientos que definen a la sección del resumen (Abstract).",
+      "options": [
+        "El resumen debe tener un mínimo de trescientas palabras y omitir la descripción metodológica.",
+        "El resumen no debe exceder las doscientas cincuenta palabras y puede poseer formato estructurado.",
+        "El resumen requiere más de cuatrocientas palabras e incluye todas las referencias consultadas."
+      ],
+      "correct": 1,
+      "hint": "Recuerda la estricta limitación superior de conteo de palabras establecida por APA 7.ª ed.",
+      "explanation": "El manual establece que el resumen es una síntesis breve cuyo dominio en conteo debe ser estrictamente $$\\text{N}_{\\text{palabras}} \\leq 250$$."
+    },
+    {
+      "q": "Elige la afirmación correcta sobre las funciones de las secciones teóricas en los artículos científicos.",
+      "options": [
+        "La discusión define el problema inicial y expone detalladamente todos los objetivos planteados.",
+        "La introducción interpreta hallazgos empíricos y reconoce las limitaciones teóricas del estudio.",
+        "La introducción revisa la literatura previa y define con claridad las hipótesis de investigación."
+      ],
+      "correct": 2,
+      "hint": "Determina qué sección corresponde cronológicamente a establecer el 'Qué' de la investigación.",
+      "explanation": "La introducción establece el marco teórico inicial que deriva matemáticamente y lógicamente en las hipótesis: $$\\text{Intro} \\implies \\text{Definici\\acute{o}n de } \\mathcal{H}_0 \\text{ y } \\mathcal{H}_1$$."
+    },
+    {
+      "q": "Elige la afirmación correcta referente a las exigencias de formato y estilo de la normativa APA.",
+      "options": [
+        "El documento requiere espaciado doble en su totalidad y alineación exclusiva hacia la izquierda.",
+        "El documento requiere espaciado simple en su totalidad y alineación justificada a ambos márgenes.",
+        "El documento requiere espaciado múltiple en su totalidad y alineación centrada para los textos."
+      ],
+      "correct": 0,
+      "hint": "Rememora las reglas de separación vertical entre líneas exigidas para la legibilidad formal.",
+      "explanation": "APA 7.ª estandariza rígidamente la distancia vertical entre renglones, siendo una constante inalterable representada por $$\\text{Interlineado} = 2.0$$."
+    },
+    {
+      "q": "Elige la afirmación correcta referente al uso de metodologías de investigación científica cualitativa.",
+      "options": [
+        "Busca establecer leyes empíricas universales evaluando objetivamente el comportamiento observado.",
+        "Emplea la reflexividad del investigador para la evaluación constante de posibles sesgos internos.",
+        "Utiliza escalas psicométricas estandarizadas para medir la experiencia humana de forma numérica."
+      ],
+      "correct": 1,
+      "hint": "Reflexiona sobre cómo los métodos cualitativos abordan el factor de subjetividad de quien investiga.",
+      "explanation": "La reflexividad es el proceso de iterar y reducir el sesgo subjetivo inherente, equivalente a minimizar la divergencia: $$\\text{Sesgo} = \\mathbb{E}[\\hat{\\theta}] - \\theta$$."
+    },
+    {
+      "q": "Elige la afirmación correcta sobre el rol que desempeña la estadística en diversos campos psicológicos.",
+      "options": [
+        "En el ámbito clínico, la estadística aplica tests para la selección eficiente de los empleados.",
+        "En recursos humanos, se evalúa exclusivamente el progreso terapéutico de individuos en consulta.",
+        "En el ámbito educativo, se emplea para el estudio riguroso del comportamiento en adolescentes."
+      ],
+      "correct": 2,
+      "hint": "Correlaciona correctamente cada campo de la psicología (clínica, organizacional, educacional) con su propósito.",
+      "explanation": "La estadística analiza descriptiva e inferencialmente cohortes de estudiantes, analizando varianzas poblacionales: $$\\text{Educaci\\acute{o}n} \\implies \\text{An\\acute{a}lisis Varianza}$$."
+    },
+    {
+      "q": "Elige la afirmación correcta sobre el contenido que debe incluir la sección de Método en un artículo.",
+      "options": [
+        "Describe la interpretación teórica de los hallazgos y las posibles limitaciones metodológicas.",
+        "Describe minuciosamente el diseño, los participantes, los materiales y el análisis de los datos.",
+        "Describe la literatura previa, las palabras clave para indexación y los objetivos de la muestra."
+      ],
+      "correct": 1,
+      "hint": "Enfócate en la sección conocida como el 'Cómo' del documento, encargada de la reproducibilidad.",
+      "explanation": "El método es un conjunto cerrado de elementos operacionales que definen el experimento rigurosamente: $$\\text{M\\acute{e}todo} = \\{D, P, M, A\\}$$."
+    },
+    {
+      "q": "Elige la afirmación correcta respecto al control de las variables dentro del diseño empírico experimental.",
+      "options": [
+        "Se busca aislar activamente el efecto generado por la variable independiente sobre la dependiente.",
+        "Se busca alterar la variable dependiente para medir su impacto causal sobre la independiente.",
+        "Se busca eliminar completamente todas las variables controladas para no sesgar a los evaluados."
+      ],
+      "correct": 0,
+      "hint": "Analiza la dirección de la relación causal: qué variable se manipula para observar a la otra.",
+      "explanation": "Se analiza la tasa de cambio de la variable dependiente (VD) al alterar la independiente (VI), esto es: $$\\frac{\\partial \\text{VD}}{\\partial \\text{VI}} \\neq 0$$."
+    },
+    {
+      "q": "Elige la afirmación correcta acerca de la utilización formal de las palabras clave en artículos APA.",
+      "options": [
+        "Consisten en listas de diez o más términos que resumen los resultados obtenidos en el análisis.",
+        "Consisten en tres a cinco términos clave que facilitan la indexación en diversas bases de datos.",
+        "Consisten en uno o dos términos técnicos que describen la limitación teórica de la evaluación."
+      ],
+      "correct": 1,
+      "hint": "Recuerda el rango numérico estricto dictado para la indexación y búsqueda en bibliotecas.",
+      "explanation": "La normativa impone un dominio estricto para el recuento del vector de términos de indexación definido por: $$3 \\leq n_{\\text{keys}} \\leq 5$$."
+    },
+    {
+      "q": "Elige la afirmación correcta respecto a las metodologías usadas en las Revisiones Sistemáticas.",
+      "options": [
+        "Siguen protocolos formales muy estrictos, frecuentemente fundamentados en la declaración PRISMA.",
+        "Consisten en resúmenes puramente narrativos evitando emplear protocolos formales estandarizados.",
+        "Emplean diseños experimentales aleatorizados buscando evaluar la experiencia subjetiva humana."
+      ],
+      "correct": 0,
+      "hint": "Asocia la palabra 'Sistemática' con el rigor procedimental para minimizar el sesgo documental.",
+      "explanation": "PRISMA provee un rigor algorítmico que maximiza la confiabilidad, de forma que el proceso garantiza alta reproducibilidad: $$P(\\text{Reproducibilidad} | \\text{PRISMA}) \\approx 1$$."
+    },
+    {
+      "q": "Elige la afirmación correcta sobre las diferencias entre la sección de referencias y la de los anexos.",
+      "options": [
+        "Las referencias presentan material complementario que pudiese distraer la lectura del texto.",
+        "Los anexos listan alfabéticamente las obras citadas garantizando localización bibliográfica.",
+        "Las referencias consisten en listas alfabéticas que garantizan el respaldo documental del texto."
+      ],
+      "correct": 2,
+      "hint": "Distingue entre el soporte bibliográfico y los materiales agregados de evaluación (escalas, fotos).",
+      "explanation": "Existe una relación biyectiva de dependencia: toda cita en el artículo exige un elemento en la lista, $$\\forall \\text{Cita} \\in \\text{Texto} \\implies \\text{Cita} \\in \\text{Referencias}$$."
+    },
+    {
+      "q": "Elige la afirmación correcta respecto al formateo exigido sobre la alineación de párrafos bajo la normativa APA.",
+      "options": [
+        "Obliga a justificar el texto para garantizar la máxima elegibilidad en las revistas científicas.",
+        "Obliga a centrar el contenido principal del documento para mejorar su estética visual narrativa.",
+        "Obliga a alinear el texto hacia la izquierda sin justificación para cumplir la normativa actual."
+      ],
+      "correct": 2,
+      "hint": "Determina si el margen derecho debe quedar recto (justificado) o asimétrico (alineado izquierda).",
+      "explanation": "La justificación aplica una distribución uniforme forzada del espacio, pero APA la rechaza, por lo que $$\\text{Simetr\\acute{\\imath}a}_{L-R} = \\text{Falso}$$."
+    },
+    {
+      "q": "Elige la afirmación correcta en relación con la importancia que cobra la estadística en la investigación científica.",
+      "options": [
+        "Es el área que menos utiliza herramientas metodológicas para fundamentar las disciplinas clínicas.",
+        "Es el área que más se nutre de análisis estadísticos para fundamentar la psicología como ciencia.",
+        "Es el área que prohíbe usar las métricas descriptivas garantizando su validez epistemológica."
+      ],
+      "correct": 1,
+      "hint": "Evalúa el papel del análisis cuantitativo y probabilístico en el fundamento del rigor científico.",
+      "explanation": "El rigor epistemológico de la psicología científica es directamente proporcional a la sofisticación y validez de su estadística matemática: $$\\text{Ciencia} \\propto \\text{Estad\\acute{\\imath}stica}$$."
+    },
+    {
+      "q": "Elige la afirmación INCORRECTA sobre las diferencias entre las subdisciplinas descriptiva e inferencial.",
+      "options": [
+        "La estadística inferencial organiza los datos para comprender la situación actual de una muestra.",
+        "La estadística inferencial contrasta hipótesis logrando extrapolar hallazgos a una población.",
+        "La estadística descriptiva centra la síntesis de datos sin extrapolar a la población total."
+      ],
+      "correct": 0,
+      "hint": "Revisa qué rama se encarga exclusivamente de la organización y comprensión sin cruzar la barrera muestral.",
+      "explanation": "La inferencia sobrepasa los estadísticos de la muestra para estimar parámetros poblacionales, realizando el mapeo inverso: $$\\text{Descriptiva} \\to \\text{Muestra}, \\text{Inferencial} \\to \\text{Poblaci\\acute{o}n}$$."
+    },
+    {
+      "q": "Elige la afirmación INCORRECTA sobre los enfoques de las metodologías cualitativas y cuantitativas.",
+      "options": [
+        "Los artículos cuantitativos logran establecer relaciones numéricas entre muchas variables.",
+        "Los artículos cualitativos establecen leyes causales universales mediante controles numéricos.",
+        "Los artículos cualitativos demandan el proceso de reflexividad constante del investigador."
+      ],
+      "correct": 1,
+      "hint": "Recuerda que lo cualitativo se centra en la experiencia situada y el contexto, no en la universalidad.",
+      "explanation": "Lo cualitativo rechaza leyes generalizables abstractas en favor de significados, lógicamente representado como $$\\text{Cualitativo} \\implies \\text{Contexto Local} \\neq \\forall x$$."
+    },
+    {
+      "q": "Elige la afirmación INCORRECTA respecto a las características requeridas para el título de un artículo.",
+      "options": [
+        "El título del artículo debe resultar plenamente conciso y lograr atraer la atención del lector.",
+        "El título del artículo debe reflejar de forma directa a las principales variables evaluadas.",
+        "El título del artículo debe incluir metodologías detalladas superando siempre treinta palabras."
+      ],
+      "correct": 2,
+      "hint": "Considera si un título científico debe ser largo y descriptivo, o corto y sintético.",
+      "explanation": "APA exige máxima concisión y rechaza la verborrea, imponiendo una cota superior estricta sobre su tamaño: $$\\text{L}_{t\\acute{\\imath}tulo} \\ll 30$$ palabras."
+    },
+    {
+      "q": "Elige la afirmación INCORRECTA acerca del contenido permitido en la sección de discusión científica.",
+      "options": [
+        "La discusión expone los hallazgos netamente empíricos utilizando diversas tablas numéricas.",
+        "La discusión requiere conectar los varios resultados obtenidos con la literatura teórica previa.",
+        "La discusión demanda que los investigadores reconozcan abiertamente las limitaciones del estudio."
+      ],
+      "correct": 0,
+      "hint": "Distingue la sección que expone las tablas numéricas del apartado encargado de interpretar su significado.",
+      "explanation": "Las tablas son arreglos matriciales de datos puros y pertenecen estrictamente al apartado de resultados: $$\\text{Tablas} \\in \\text{Resultados}$$."
+    },
+    {
+      "q": "Elige la afirmación INCORRECTA respecto a los fundamentos del muestreo en una investigación.",
+      "options": [
+        "El proceso de muestreo busca primordialmente seleccionar una fracción poblacional representativa.",
+        "El proceso de muestreo asume que todos los subgrupos están exentos de representatividad inicial.",
+        "El proceso de muestreo representa el paso previo necesario a la estadística analítica posterior."
+      ],
+      "correct": 1,
+      "hint": "Cuestiona si un buen diseño estadístico asume homogeneidad irreal o si busca capturar las proporciones reales.",
+      "explanation": "El muestreo probabilístico exige que las características matemáticas de la cohorte estimen a la global: $$n \\subset N \\land \\bar{x} \\approx \\mu$$."
+    },
+    {
+      "q": "Elige la afirmación INCORRECTA acerca de la manipulación variable en los estudios experimentales.",
+      "options": [
+        "Requieren aislar a la variable dependiente manipulando directamente las variables controladas.",
+        "Requieren el control de las variables para establecer sólidas relaciones empíricas de causalidad.",
+        "Requieren asignar a todos los participantes aleatoriamente y usar grupos de control definidos."
+      ],
+      "correct": 0,
+      "hint": "Revisa cuidadosamente cuál variable actúa como 'causa' aislada y manipulada, y cuál como 'efecto'.",
+      "explanation": "La variable independiente se manipula matemáticamente, la dependiente solo observa la proyección de sus variaciones: $$\\text{Se manipula VI, se mide VD}$$."
+    },
+    {
+      "q": "Elige la afirmación INCORRECTA con respecto al objetivo central de los métodos investigativos por encuesta.",
+      "options": [
+        "Emplean sistemáticamente escalas estandarizadas para analizar las tendencias de la población.",
+        "Evitan la búsqueda de relaciones causales para centrarse en asociaciones ampliamente generales.",
+        "Aíslan intencionalmente grupos de individuos buscando alterar ciertas variables demográficas."
+      ],
+      "correct": 2,
+      "hint": "Identifica si las encuestas permiten intervención activa en el medio ambiente del evaluado.",
+      "explanation": "La encuesta es observacional, por lo tanto no altera la varianza del medio ni perturba al sistema demográfico original: $$\\Delta \\text{Demograf\\acute{\\imath}a} \\approx 0$$."
+    },
+    {
+      "q": "Elige la afirmación INCORRECTA en relación con la naturaleza estructural de los estudios cualitativos.",
+      "options": [
+        "Tienen un enfoque muy rígidamente estructurado que imposibilita la revisión metodológica.",
+        "Asumen que la investigación siempre se encuentra situada dentro de un contexto específico.",
+        "Valoran profundamente la experiencia subjetiva humana analizando el uso natural del habla."
+      ],
+      "correct": 0,
+      "hint": "Recuerda el concepto de proceso iterativo y reflexivo de la metodología cualitativa.",
+      "explanation": "El proceso iterativo cualitativo requiere que la derivada del método con respecto al tiempo o información no sea nula: $$\\frac{d(\\text{M\\acute{e}todo})}{dt} \\neq 0$$."
+    },
+    {
+      "q": "Elige la afirmación INCORRECTA en torno al sistema de sangrías regulado por las normativas de la APA.",
+      "options": [
+        "La bibliografía debe redactarse empleando sangría de primera línea en lugar de sangría francesa.",
+        "El documento técnico demanda la aplicación de sangría en las líneas iniciales de los párrafos.",
+        "Las referencias bibliográficas citadas requieren obligatoriamente el uso de una sangría francesa."
+      ],
+      "correct": 0,
+      "hint": "Identifica qué tipo particular de indentación se utiliza de forma exclusiva para las referencias.",
+      "explanation": "Por regla topográfica estricta, las referencias invierten el paradigma de sangrado, generando el vector formativo especial: $$\\text{Sangr\\acute{\\imath}a}(\\text{Ref}) = \\text{Francesa}$$."
+    },
+    {
+      "q": "Elige la afirmación INCORRECTA respecto al enfoque de las Revisiones de Literatura frente a las Sistemáticas.",
+      "options": [
+        "Consisten en resúmenes narrativos críticos que proceden a evaluar múltiples hallazgos teóricos.",
+        "Tienen como uno de sus objetivos principales identificar vacíos vitales en el área científica.",
+        "Utilizan los análisis numéricos determinando la causalidad experimental sin revisar la teoría."
+      ],
+      "correct": 2,
+      "hint": "Asegúrate de recordar si una revisión es una síntesis documental o un análisis causal experimental.",
+      "explanation": "Una revisión agrupa resultados preexistentes, su intersección con un diseño manipulativo experimental es nula: $$\\text{Revisi\\acute{o}n} \\cap \\text{Experimento} = \\emptyset$$."
+    },
+    {
+      "q": "Elige la afirmación INCORRECTA sobre el papel que cumple la sección de Resultados dentro del esquema APA.",
+      "options": [
+        "Esta sección interpreta los datos estadísticos para lograr formular las teorías universales.",
+        "Esta sección expone los descubrimientos numéricos utilizando descripciones de texto y gráficos.",
+        "Esta sección concentra la presentación de la evidencia empírica antes de discutir su relevancia."
+      ],
+      "correct": 0,
+      "hint": "Cuestiona dónde se realiza formalmente el proceso inferencial de interpretar el significado teórico.",
+      "explanation": "Los resultados entregan objetividad y la métrica de cálculo; el mapeo cognitivo y valoración corresponde puramente a la Discusión: $$\\text{Interpretaci\\acute{o}n} \\in \\text{Discusi\\acute{o}n}$$."
+    },
+    {
+      "q": "Elige la afirmación INCORRECTA referente a cómo la psicología logra fundamentarse como ciencia estricta.",
+      "options": [
+        "El avance continuo del buen hacer en el área psicológica requiere métodos estadísticos rigurosos.",
+        "La psicología fundamenta su precisión epistemológica descartando toda medición probabilística.",
+        "La investigación es el campo que más requiere el uso de estadística para fundamentar la ciencia."
+      ],
+      "correct": 1,
+      "hint": "Analiza si las ciencias fácticas alcanzan verdades universales sin valerse del cálculo de probabilidades.",
+      "explanation": "Como la certeza absoluta no existe empíricamente empujando el axioma probabilístico, es vital utilizar estimación en la incerteza: $$P(\\text{Certeza}) < 1 \\implies \\text{Probabilidad}$$."
+    },
+    {
+      "q": "Elige la afirmación INCORRECTA sobre el abordaje investigativo perteneciente a los Estudios de Caso.",
+      "options": [
+        "Constituyen un enfoque fundamentalmente cualitativo para comprender a grupos muy reducidos.",
+        "Buscan promediar el comportamiento masivo mediante complejas ecuaciones de regresión lineal.",
+        "Efectúan análisis de gran profundidad sobre los individuos manteniendo una mirada sistémica."
+      ],
+      "correct": 1,
+      "hint": "Asocia la cantidad de sujetos (n) de este tipo de estudios con las técnicas masivas poblacionales.",
+      "explanation": "Los casos únicos no satisfacen las condiciones mínimas del teorema central del límite para regresiones, siendo el tamaño de la cohorte diminuto: $$N_{casos} \\to 1 \\implies \\text{Regresi\\acute{o}n Imposible}$$."
+    },
+    {
+      "q": "Elige la afirmación INCORRECTA acerca de las funciones que cumplen los constructos de variable.",
+      "options": [
+        "La variable independiente es la manipulada para registrar alteraciones en otros constructos.",
+        "La variable dependiente recibe y muestra el hipotético efecto que el diseño intenta comprobar.",
+        "La variable independiente y dependiente siempre representan constructos idénticos inalterables."
+      ],
+      "correct": 2,
+      "hint": "Piensa en el significado lógico de 'independencia' versus 'dependencia' en una matriz de evaluación.",
+      "explanation": "La VI y VD son constructos con roles opuestos (causa y efecto), representados en el modelo como $$Y = f(X)$$, donde $$X \\neq Y$$."
+    },
+    {
       "q": "El proceso mediante el cual se generalizan las conclusiones obtenidas en una muestra representativa a toda la población se denomina ____.",
       "options": [
         "Estadística inferencial",
@@ -879,6 +1308,446 @@
       "correct": 0,
       "hint": "Implica una actitud crítica sobre cómo la propia perspectiva influye en el proceso.",
       "explanation": "La reflexividad exige $$\\text{reconocer sesgos}$$, no ignorarlos."
+    },
+    {
+      "q": "La estadística inferencial busca ____ la muestra.",
+      "options": [
+        "extrapolar los datos y conclusiones.",
+        "interpolar las cifras descriptivas. ",
+        "sintetizar gráficamente la varianza."
+      ],
+      "correct": 0,
+      "hint": "Piensa en ir de lo particular a lo general poblacional.",
+      "explanation": "$$\\text{La inferencia extrapola (generaliza) hallazgos de la muestra a toda la población.}$$"
+    },
+    {
+      "q": "La experimentación aísla el impacto de la ____.",
+      "options": [
+        "$\\text{VI}$ frente a los cambios de $\\text{VD}$.",
+        "$\\text{VD}$ frente a los cambios de $\\text{VI}$.",
+        "$\\text{VE}$ frente a los cambios de $\\text{VC}$."
+      ],
+      "correct": 0,
+      "hint": "Una se manipula activamente y la otra se mide empíricamente.",
+      "explanation": "$$\\text{Se aísla el efecto de la VI (independiente) sobre la VD (dependiente).}$$"
+    },
+    {
+      "q": "El enfoque cualitativo destaca por ser ____.",
+      "options": [
+        "iterativo de autocorrección continua",
+        "estático de observación matemática. ",
+        "lineal y de causalidad determinista."
+      ],
+      "correct": 0,
+      "hint": "Se revisa y ajusta el proceso constantemente sobre la marcha.",
+      "explanation": "$$\\text{El paradigma cualitativo es iterativo, permitiendo autocorrección en cada fase.}$$"
+    },
+    {
+      "q": "El Abstract en normas APA tiene máximo de ____.",
+      "options": [
+        "exactamente $250$ palabras como límite",
+        "exactamente $150$ palabras como límite",
+        "exactamente $350$ palabras como límite"
+      ],
+      "correct": 0,
+      "hint": "Es una cifra exacta que limita drásticamente la extensión.",
+      "explanation": "$$\\text{La normativa APA 7 fija un límite estricto de } 250 \\text{ palabras para el Abstract.}$$"
+    },
+    {
+      "q": "La cantidad ideal de palabras clave es de ____.",
+      "options": [
+        "$3$ a $5$ términos que ayuden al rastreo",
+        "$5$ a $7$ términos que ayuden al rastreo",
+        "$1$ a $3$ términos que ayuden al rastreo"
+      ],
+      "correct": 0,
+      "hint": "Son muy pocos términos, generalmente menos de media docena.",
+      "explanation": "$$\\text{Se exigen explícitamente entre } 3 \\text{ y } 5 \\text{ palabras clave (Keywords) para indexación.}$$"
+    },
+    {
+      "q": "La investigación cualitativa se basa en ____.",
+      "options": [
+        "un enfoque situado en el contexto.",
+        "un aislamiento estricto de grupos.",
+        "una búsqueda de las leyes puras.  "
+      ],
+      "correct": 0,
+      "hint": "No busca universalidad abstracta, sino comprender el entorno.",
+      "explanation": "$$\\text{Los métodos cualitativos estudian fenómenos situados directamente en su contexto.}$$"
+    },
+    {
+      "q": "El muestreo estadístico exige una selección ____.",
+      "options": [
+        "altamente representativa de grupos",
+        "intencionalmente sesgada de grupos",
+        "absolutamente exhaustiva de grupos"
+      ],
+      "correct": 0,
+      "hint": "La muestra debe ser un fiel reflejo proporcional del total.",
+      "explanation": "$$\\text{Un buen diseño de muestreo exige alta representatividad poblacional.}$$"
+    },
+    {
+      "q": "Los metaanálisis cuantitativos informan de ____.",
+      "options": [
+        "el tamaño del efecto estandarizado",
+        "la regresión direccional del error",
+        "el volumen cualitativo del sistema"
+      ],
+      "correct": 0,
+      "hint": "Mide la verdadera magnitud matemática del impacto clínico.",
+      "explanation": "$$\\text{Los metaanálisis cuantitativos reportan el tamaño del efecto global } (d, r, \\text{etc.})$$"
+    },
+    {
+      "q": "La sección Introducción presenta objetivos y ____.",
+      "options": [
+        "las hipótesis a contrastar en test",
+        "los gráficos de resultados finales",
+        "las conclusiones de la evaluación "
+      ],
+      "correct": 0,
+      "hint": "Responde al 'Qué' y qué se espera descubrir antes del ensayo.",
+      "explanation": "$$\\text{La introducción delimita teóricamente el problema y expone las hipótesis.}$$"
+    },
+    {
+      "q": "La sección Método detalla participantes y ____.",
+      "options": [
+        "el diseño y el análisis estadístico",
+        "la estructura del marco conceptual ",
+        "el límite empírico de la conclusión"
+      ],
+      "correct": 0,
+      "hint": "Responde rigurosamente al 'Cómo' metodológico del informe.",
+      "explanation": "$$\\text{Describe diseño, muestra, materiales, procedimientos y el análisis de datos.}$$"
+    },
+    {
+      "q": "La Discusión debe conectar resultados con la ____.",
+      "options": [
+        "teoría previa revisada en el texto ",
+        "hipótesis experimental no evaluada ",
+        "variable dependiente independiente "
+      ],
+      "correct": 0,
+      "hint": "Responde al 'Por qué' final basándose en conocimiento previo.",
+      "explanation": "$$\\text{La discusión vincula bidireccionalmente los hallazgos empíricos con la teoría base.}$$"
+    },
+    {
+      "q": "Las Revisiones Sistemáticas siguen la norma ____.",
+      "options": [
+        "Declaración PRISMA a nivel global  ",
+        "Declaración CONSORT a nivel global ",
+        "Declaración HELSINKI a nivel global"
+      ],
+      "correct": 0,
+      "hint": "Es un protocolo internacional muy conocido en síntesis médica.",
+      "explanation": "$$\\text{Las revisiones sistemáticas operan bajo el protocolo de la Declaración PRISMA.}$$"
+    },
+    {
+      "q": "En el análisis cualitativo existen estudios de ____.",
+      "options": [
+        "casos únicos con enfoque sistémico ",
+        "varianzas y regresión multivariada ",
+        "causalidad empírica muy controlada "
+      ],
+      "correct": 0,
+      "hint": "Analiza sujetos o grupos sumamente específicos a gran fondo.",
+      "explanation": "$$\\text{El enfoque cualitativo emplea estudios de casos para análisis profundos.}$$"
+    },
+    {
+      "q": "Los anexos albergan material auxiliar como las ____.",
+      "options": [
+        "escalas y las instrucciones de test",
+        "conclusiones finales del desarrollo",
+        "tablas principales de los hallazgos"
+      ],
+      "correct": 0,
+      "hint": "Material voluminoso que interrumpiría el flujo normal del texto.",
+      "explanation": "$$\\text{Los anexos contienen escalas, cuestionarios en crudo o instrucciones completas.}$$"
+    },
+    {
+      "q": "En recursos humanos, se analizan tests para ____.",
+      "options": [
+        "seleccionar al personal idóneo.    ",
+        "reducir las variables secundarias. ",
+        "eliminar las muestras atípicas.    "
+      ],
+      "correct": 0,
+      "hint": "El objetivo es filtrar candidatos que encajen en el perfil.",
+      "explanation": "$$\\text{En RRHH, la estadística evalúa la fiabilidad de tests para selección de personal.}$$"
+    },
+    {
+      "q": "La estadística descriptiva facilita la previa ____.",
+      "options": [
+        "organización y síntesis de datos.  ",
+        "extrapolación de leyes universales.",
+        "inferencia poblacional y causal.   "
+      ],
+      "correct": 0,
+      "hint": "Aporta un panorama inicial o fotografía matemática de la muestra.",
+      "explanation": "$$\\text{Permite la organización y síntesis visual/numérica de los datos recolectados.}$$"
+    },
+    {
+      "q": "El formato APA 7 requiere sangría francesa en ____.",
+      "options": [
+        "todas las referencias bibliográficas",
+        "todos los párrafos de introducción  ",
+        "todas las tablas y figuras de datos "
+      ],
+      "correct": 0,
+      "hint": "El primer renglón se mantiene al margen y los siguientes entran.",
+      "explanation": "$$\\text{La sangría francesa } (1.27 \\text{ cm) es obligatoria para las referencias bibliográficas.}$$"
+    },
+    {
+      "q": "Las encuestas buscan generalizar sin certificar ____.",
+      "options": [
+        "una estricta causalidad subyacente. ",
+        "una muestra altamente significativa.",
+        "una asociación clara de parámetros. "
+      ],
+      "correct": 0,
+      "hint": "Miden qué eventos ocurren juntos, pero no afirman que uno cause el otro.",
+      "explanation": "$$\\text{Las encuestas hallan asociaciones y tendencias poblacionales, pero no causalidad estricta.}$$"
+    },
+    {
+      "q": "La primera línea de cada párrafo debe utilizar ____.",
+      "options": [
+        "una sangría izquierda por defecto.  ",
+        "una sangría de tipo francesa base.  ",
+        "un espaciado doble ininterrumpido.  "
+      ],
+      "correct": 0,
+      "hint": "Es un hueco tradicional al inicio exclusivo del primer renglón.",
+      "explanation": "$$\\text{APA exige sangría regular izquierda al inicio de cada nuevo párrafo de texto.}$$"
+    },
+    {
+      "q": "El título del manuscrito refleja de manera clara ____.",
+      "options": [
+        "todas las variables investigadas.   ",
+        "todas las limitaciones encontradas. ",
+        "todas las citas de la bibliografía. "
+      ],
+      "correct": 0,
+      "hint": "Debe nombrar los constructos fundamentales que se están midiendo.",
+      "explanation": "$$\\text{Un título científico conciso debe reflejar las variables y su hipotética relación.}$$"
+    },
+    {
+      "q": "La estadística inferencial en psicología clínica...",
+      "options": [
+        "Verifica fenómenos extrapolables.  ",
+        "Permite contrastar las hipótesis.  ",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Esta rama estadística cumple una doble función esencial de comprobación.",
+      "explanation": "$$\\text{La inferencia extrapola contrastando sistemáticamente hipótesis empíricas } (H_0, H_1)$$"
+    },
+    {
+      "q": "La experimentación cuantitativa exige que haya...",
+      "options": [
+        "Asignación aleatoria de los sujetos",
+        "Exige estricto uso del grupo control",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Ambos son requerimientos fundamentales para garantizar validez interna.",
+      "explanation": "$$\\text{La experimentación exige asignación aleatoria y grupos control para aislar varianzas.}$$"
+    },
+    {
+      "q": "El enfoque cualitativo científico destaca por...",
+      "options": [
+        "Emplear autocorrección iterativa.  ",
+        "Exigir reflexividad al investigador",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Integra adaptabilidad metodológica y profunda consciencia del propio sesgo.",
+      "explanation": "$$\\text{Combina la reflexividad del sesgo propio con un proceso metodológico iterativo.}$$"
+    },
+    {
+      "q": "Las revisiones de literatura científica...",
+      "options": [
+        "Evalúan rigurosamente las teorías. ",
+        "Identifican vacíos en la evidencia.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Hacen un balance de lo publicado y señalan qué falta por investigar.",
+      "explanation": "$$\\text{Evalúan la literatura preexistente hallando contradicciones y vacíos teóricos.}$$"
+    },
+    {
+      "q": "El Resumen o Abstract estructurado incluye...",
+      "options": [
+        "Detalles precisos de los objetivos.",
+        "Exposición del método y resultados.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Condensa todas las partes fundamentales del IMRyD.",
+      "explanation": "$$\\text{El resumen estructurado sintetiza el núcleo: Objetivos, Método, Resultados y Conclusiones.}$$"
+    },
+    {
+      "q": "La Discusión dentro de un informe APA debe...",
+      "options": [
+        "Conectar los hallazgos con teorías.",
+        "Reconocer todas las limitaciones.  ",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Brinda una interpretación teórica reconociendo posibles fallos empíricos.",
+      "explanation": "$$\\text{Conecta el } \\text{Resultado empírico con el } \\text{Marco Teórico e identifica límites metodológicos.}$$"
+    },
+    {
+      "q": "Las reglas de formato APA 7 establecen que...",
+      "options": [
+        "El texto principal va a la izquierda.",
+        "Se requiere espaciado doble siempre. ",
+        "Todas las anteriores son correctas.  "
+      ],
+      "correct": 2,
+      "hint": "Aplica normativas inflexibles para el diseño visual de los márgenes y líneas.",
+      "explanation": "$$\\text{APA 7 exige alineación a la izquierda (sin justificar) y espaciado doble integral.}$$"
+    },
+    {
+      "q": "En cuanto a sangrías, el estándar APA dicta...",
+      "options": [
+        "Uso de sangría en la primera línea.",
+        "Sangría francesa en la bibliografía",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Varía su aplicación dependiendo si es texto ordinario o listado final.",
+      "explanation": "$$\\text{Sangría regular en nuevos párrafos y sangría francesa estricta en referencias.}$$"
+    },
+    {
+      "q": "El título de un artículo científico APA debe...",
+      "options": [
+        "Ser conciso y altamente atractivo. ",
+        "Reflejar las variables de estudio. ",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Busca atrapar al lector y simultáneamente mostrar qué constructos cruza.",
+      "explanation": "$$\\text{Debe sintetizar de forma clara y atractiva el análisis conjunto de las variables.}$$"
+    },
+    {
+      "q": "Los metaanálisis en investigación pueden...",
+      "options": [
+        "Sintetizar estudios cuantitativos. ",
+        "Agrupar estudios fenomenológicos.  ",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Es una herramienta versátil válida para amalgamar ambos grandes paradigmas.",
+      "explanation": "$$\\text{Existen metaanálisis estadísticos (tamaño del efecto) y cualitativos (fenomenología).}$$"
+    },
+    {
+      "q": "Sobre la alineación del texto en formato APA:",
+      "options": [
+        "El texto debe estar todo justificado. ",
+        "Requiere alineación hacia la derecha. ",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Recuerda que el margen derecho debe quedar dentado o irregular.",
+      "explanation": "$$\\text{La normativa prohíbe explícitamente justificar el texto; siempre va alineado a la izquierda.}$$"
+    },
+    {
+      "q": "El número recomendado de Palabras Clave es:",
+      "options": [
+        "Exactamente diez términos indexados.  ",
+        "Un mínimo de ocho términos de rastreo.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "La exigencia real es mucho menor, de menos de seis conceptos.",
+      "explanation": "$$\\text{El rango exacto estipulado para las keywords es de } 3 \\text{ a } 5 \\text{ términos.}$$"
+    },
+    {
+      "q": "La encuesta cuantitativa se caracteriza por:",
+      "options": [
+        "Aislar la causalidad de las variables.",
+        "Emplear estricto control experimental.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Esta técnica solo mide opiniones o tendencias, carece de manipulación pura.",
+      "explanation": "$$\\text{La encuesta halla asociaciones generalizables, pero metodológicamente no prueba causalidad.}$$"
+    },
+    {
+      "q": "Los metaanálisis cualitativos se centran en:",
+      "options": [
+        "Reportar siempre el tamaño del efecto.",
+        "Calcular regresiones muy sofisticadas.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Cuidado, esas opciones describen operaciones puramente matemáticas.",
+      "explanation": "$$\\text{El cálculo del tamaño del efecto empírico es exclusivo del metaanálisis cuantitativo.}$$"
+    },
+    {
+      "q": "La reflexividad en metodología cualitativa:",
+      "options": [
+        "Ignora los sesgos del investigador.   ",
+        "Promueve el encuentro de leyes puras. ",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Al contrario, exige un análisis profundo de la propia posición y prejuicios.",
+      "explanation": "$$\\text{La reflexividad implica que el investigador examine e integre activamente sus propios sesgos.}$$"
+    },
+    {
+      "q": "La Introducción de un artículo científico:",
+      "options": [
+        "Presenta los gráficos de resultados.  ",
+        "Describe la selección de los sujetos. ",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Esos apartados pertenecen a secciones metodológicas o resolutivas posteriores.",
+      "explanation": "$$\\text{Los gráficos pertenecen a Resultados; la muestra de sujetos va detallada en el Método.}$$"
+    },
+    {
+      "q": "El espaciado general del documento APA es:",
+      "options": [
+        "Exclusivamente un interlineado simple.",
+        "Estrictamente interlineado de un punto",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "El formato exige un gran espacio entre líneas para facilitar las revisiones de texto.",
+      "explanation": "$$\\text{La normativa internacional exige un espaciado doble } (2.0) \\text{ ininterrumpido en todo el texto.}$$"
+    },
+    {
+      "q": "El diseño cualitativo persigue activamente:",
+      "options": [
+        "Demostrar relaciones de la causalidad.",
+        "Formular las leyes universales puras. ",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "No busca verdades absolutas, sino interpretaciones dependientes del ecosistema social.",
+      "explanation": "$$\\text{El paradigma cualitativo se sitúa en un contexto; no aísla variables ni formula leyes universales.}$$"
+    },
+    {
+      "q": "La estadística descriptiva se utiliza para:",
+      "options": [
+        "Extrapolar hallazgos poblacionales.   ",
+        "Contrastar hipótesis de investigación.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Sus límites terminan matemáticamente donde acaban los datos de la muestra.",
+      "explanation": "$$\\text{Extrapolar variables y contrastar hipótesis son funciones exclusivas de la Estadística Inferencial.}$$"
+    },
+    {
+      "q": "Los anexos en el formato APA 7 se usan para:",
+      "options": [
+        "Reemplazar la lista de referencias.   ",
+        "Presentar la discusión teórica final. ",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct": 2,
+      "hint": "Es un apartado de soporte, no puede sustituir partes principales de la investigación.",
+      "explanation": "$$\\text{Los anexos agrupan material complementario secundario; nunca sustituyen las secciones clave nucleares.}$$"
     },
     {
       "q": "¿Es correcto afirmar que cuando los resultados no son significativos, aceptamos la hipótesis nula ($H_{0}$) como una verdad científica probada?",
