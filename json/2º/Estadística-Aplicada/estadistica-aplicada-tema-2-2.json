@@ -439,6 +439,446 @@
       "correct": 0,
       "hint": "Recuerda la definición de asimetría positiva en el ejemplo de disfunción.",
       "explanation": "La asimetría positiva implica muchos valores bajos y algunos muy altos (cola a la derecha), no una acumulación de valores altos."
+    },
+    {
+      "q": "El estadístico Kolmogorov-Smirnov ha demostrado consistentemente una potencia superior a Shapiro-Wilk independientemente del tamaño n.",
+      "options": [
+        "Afirmación 100% correcta",
+        "Afirmación 100% inexacta",
+        "No es posible deducirlo."
+      ],
+      "correct": 1,
+      "hint": "Revisa la evolución reciente de los criterios para muestras generales.",
+      "explanation": "Tradicionalmente se usaba K-S para $n>50 $, pero la evidencia actual favorece a S-W por su mayor potencia general. $\\text{Potencia} = 1 - \\beta$"
+    },
+    {
+      "q": "Para rechazar la normalidad de una distribución, resulta metodológicamente deficiente depender en exclusiva del estadístico p < .05.",
+      "options": [
+        "Afirmación 100% correcta",
+        "Afirmación 100% inexacta",
+        "No es posible deducirlo."
+      ],
+      "correct": 0,
+      "hint": "Considera el rol de los análisis visuales e indicadores complementarios.",
+      "explanation": "El texto explicita que no se debe depender exclusivamente del valor $p $. Se recomienda apoyo de gráficos Q-Q. $\\text{Criterio Complejo} \\neq (p < \\alpha)$"
+    },
+    {
+      "q": "La existencia de puntuaciones z restringidas exactamente al intervalo ±1.96 es un factor que debilita el supuesto clásico de normalidad.",
+      "options": [
+        "Afirmación 100% correcta",
+        "Afirmación 100% inexacta",
+        "No es posible deducirlo."
+      ],
+      "correct": 1,
+      "hint": "Recuerda las propiedades del área bajo la curva normal tipificada.",
+      "explanation": "Los valores dentro de $\\pm 1.96 $ refuerzan, no debilitan, la conclusión de normalidad, al abarcar el 95% del área central. $\\int_{-1.96}^{1.96} \\phi(z) dz \\approx 0.95$"
+    },
+    {
+      "q": "El modelo de análisis estadístico asume que los errores o residuos poblacionales presentan covarianza nula a lo largo de las mediciones.",
+      "options": [
+        "Afirmación 100% correcta",
+        "Afirmación 100% inexacta",
+        "No es posible deducirlo."
+      ],
+      "correct": 0,
+      "hint": "Piensa en el significado técnico de la independencia de los residuos.",
+      "explanation": "La independencia de los residuos significa matemáticamente que los errores no están correlacionados entre sí. $\\text{Cov}(\\epsilon_i, \\epsilon_j) = 0 \\quad \\forall i \\ne j$"
+    },
+    {
+      "q": "Si los tamaños de los grupos experimentales son estadísticamente equivalentes, violar el supuesto de homocedasticidad invalida el modelo.",
+      "options": [
+        "Afirmación 100% correcta",
+        "Afirmación 100% inexacta",
+        "No es posible deducirlo."
+      ],
+      "correct": 1,
+      "hint": "Evalúa el impacto del tamaño de muestra frente a la homocedasticidad.",
+      "explanation": "Si los tamaños de grupo son iguales o similares, el efecto de violar la homocedasticidad es mínimo, no invalidante. $\\text{Si } n_1 = n_2 \\implies \\text{Robustez}$"
+    },
+    {
+      "q": "La prueba de Levene calculada en base a la media recortada ofrece mayor resistencia matemática frente a una distribución muy asimétrica.",
+      "options": [
+        "Afirmación 100% correcta",
+        "Afirmación 100% inexacta",
+        "No es posible deducirlo."
+      ],
+      "correct": 2,
+      "hint": "Diferencia entre media recortada y mediana en SPSS.",
+      "explanation": "Aunque es una opción en SPSS, el texto asocia explícitamente la robustez ante la asimetría y outliers con la prueba basada en la mediana, no la media recortada. $\\text{Mediana} = Q_2$"
+    },
+    {
+      "q": "El registro de un índice de Durbin-Watson marcadamente alejado del valor numérico 2 apoya la falta de autocorrelación en los residuales.",
+      "options": [
+        "Afirmación 100% correcta",
+        "Afirmación 100% inexacta",
+        "No es posible deducirlo."
+      ],
+      "correct": 1,
+      "hint": "Recuerda el punto óptimo del estadístico D-W.",
+      "explanation": "Un valor alejado de 2 sugiere correlación en los errores, es decir, pérdida de independencia, no su cumplimiento. $\\text{Independencia} \\implies DW \\approx 2$"
+    },
+    {
+      "q": "La función paramétrica Windsorización actúa reemplazando los cuantiles atípicos extremos por el valor no extremo empíricamente contiguo.",
+      "options": [
+        "Afirmación 100% correcta",
+        "Afirmación 100% inexacta",
+        "No es posible deducirlo."
+      ],
+      "correct": 0,
+      "hint": "Define cómo este método robusto trata los límites.",
+      "explanation": "Windsorización consiste precisamente en sustituir los extremos por el límite no atípico más próximo. $\\text{Windsor}(x) = \\max(Q_\\alpha, \\min(x, Q_{1-\\alpha}))$"
+    },
+    {
+      "q": "El teorema del bootstrapping permite estimar parámetros sin basarse en supuestos paramétricos mediante muestreos aleatorios iterativos.",
+      "options": [
+        "Afirmación 100% correcta",
+        "Afirmación 100% inexacta",
+        "No es posible deducirlo."
+      ],
+      "correct": 0,
+      "hint": "Conecta remuestreo con fiabilidad sin supuestos.",
+      "explanation": "Es correcto, el Bootstrapping genera estimaciones y robustez computando distribuciones empíricas con reemplazo. $\\hat{\\theta}_{\\text{boot}} = f(X^*)$"
+    },
+    {
+      "q": "El enfoque estadístico establece que aplicar una raíz cuadrada a la variable dependiente carece de todo riesgo frente a métodos robustos.",
+      "options": [
+        "Afirmación 100% correcta",
+        "Afirmación 100% inexacta",
+        "No es posible deducirlo."
+      ],
+      "correct": 1,
+      "hint": "Revisa la advertencia sobre alterar la Variable Dependiente.",
+      "explanation": "Transformar la variable resultado (VD) se considera riesgoso y se prefieren métodos robustos o transformar la VI. $\\text{Riesgo}(\\sqrt{Y}) > \\text{Riesgo}(\\text{Robustos})$"
+    },
+    {
+      "q": "Elegir la afirmación correcta respecto a las herramientas estadísticas modernas para evaluar el supuesto de normalidad en las distribuciones.",
+      "options": [
+        "La prueba de Kolmogorov-Smirnov asegura superioridad matemática irrefutable con n>50.",
+        "La técnica de Shapiro-Wilk resulta plenamente desaconsejada ante grandes asimetrías.",
+        "La herramienta Shapiro-Wilk es fuertemente preferida por su mayor potencia en general."
+      ],
+      "correct": 2,
+      "hint": "Identifica cuál es el consenso empírico actual según la fuente.",
+      "explanation": "La evidencia reciente recomienda S-W en más casos por su superior capacidad probabilística de rechazar $H_0 $ cuando es falsa. $\\text{Potencia}_{SW} > \\text{Potencia}_{KS}$"
+    },
+    {
+      "q": "Elegir la afirmación correcta sobre la interpretación de gráficos Q-Q en el contexto de la vulneración incipiente de normalidad clásica.",
+      "options": [
+        "Una dispersión caótica rechaza varianzas asumiendo total independencia estocástica.",
+        "Una estructura diagonal valida la campana tolerando desviaciones menores del modelo.",
+        "Una correlación negativa extrema consolida innegablemente toda curva gausiana pura."
+      ],
+      "correct": 1,
+      "hint": "Valora la relación entre la diagonal ideal y los tests formales.",
+      "explanation": "Si los puntos se alinean a la diagonal, la distribución se tolera pese a pequeños rechazos del valor $p $. $\\text{Puntos} \\approx Y=X \\implies \\text{Aceptable}$"
+    },
+    {
+      "q": "Elegir la afirmación correcta acerca de los requisitos axiológicos que definen a la homocedasticidad en modelos de análisis multivariante.",
+      "options": [
+        "Exige varianzas constantes de residuales en absolutamente todos los niveles de la VI.",
+        "Requiere dispersión divergente de residuos limitando severamente la métrica nominal.",
+        "Impone covarianzas idénticas entre errores mitigando sistemáticamente la dependencia."
+      ],
+      "correct": 0,
+      "hint": "Enfócate en la relación entre los residuos y los niveles predictivos.",
+      "explanation": "La homogeneidad de varianzas requiere que estas permanezcan constantes en cada nivel de la VI. $\\forall k, \\sigma_k^2 = c \\implies \\text{Homocedasticidad}$"
+    },
+    {
+      "q": "Elegir la afirmación correcta sobre las implicaciones probabilísticas de la prueba de Levene en torno al rechazo o no de la hipótesis nula.",
+      "options": [
+        "Un valor del estadístico p inferior a .05 confirma la homocedasticidad incondicional.",
+        "Un índice p superior a .05 mantiene la hipótesis nula presumiendo varianzas iguales.",
+        "Un contraste p igual a .05 destruye la capacidad resolutiva para hipótesis alternas."
+      ],
+      "correct": 1,
+      "hint": "Piensa en cuál es la H0 de esta prueba en particular.",
+      "explanation": "En Levene, $H_0 $ postula varianzas iguales. Si $ p >.05 $, no se rechaza, asumiendo homocedasticidad. $ H_0: \\sigma^2_{A} = \\sigma^2_{B} \\implies p>.05 \\text{ la mantiene}$"
+    },
+    {
+      "q": "Elegir la afirmación correcta sobre la interacción teórica entre el tamaño muestral y los problemas emergentes de la heterocedasticidad.",
+      "options": [
+        "Distintas magnitudes n grupales eximen al modelo de corregir dispersiones anómalas.",
+        "Asimetrías leves de varianza destruyen el modelo si todos los grupos son idénticos.",
+        "Ligeras diferencias de varianza pueden invalidar todo resultado si la n es desigual."
+      ],
+      "correct": 2,
+      "hint": "Considera la sinergia negativa entre asimetría muestral y varianzas diferentes.",
+      "explanation": "La combinación de varianzas desiguales con tamaños de muestra muy desiguales maximiza el error tipo I/II e invalida el análisis. $\\text{Si } n_1 \\ne n_2 \\land \\sigma^2_1 \\ne \\sigma^2_2 \\implies \\text{Peligro}$"
+    },
+    {
+      "q": "Elegir la afirmación correcta relativa a las limitaciones operativas intrínsecas del contraste clásico de homogeneidad de Levene de SPSS.",
+      "options": [
+        "En n masivos su sensibilidad extrema fuerza alertas por mínimas variaciones triviales.",
+        "En n pequeños su hipervigilancia destruye toda comparativa arrojando falsos errores.",
+        "En n medianos su ceguera absoluta impide aislar diferencias poblacionales verdaderas."
+      ],
+      "correct": 0,
+      "hint": "Relaciona la masa de datos con la potencia excesiva.",
+      "explanation": "Con muestras muy grandes, la prueba paramétrica se vuelve hipersensible, detectando diferencias sin relevancia práctica. $\\lim_{n \\to \\infty} \\text{Sensibilidad} = \\text{Falsos Positivos Triviales}$"
+    },
+    {
+      "q": "Elegir la afirmación correcta sobre el procedimiento metodológico en SPSS para aislar heterocedasticidad al usar predictoras categóricas.",
+      "options": [
+        "Implica programar regresiones múltiples con factores de inflación residual muy bajos.",
+        "Sugiere utilizar el menú Explorar generando matrices de dispersión altamente simples.",
+        "Propone configurar matrices de covarianzas simétricas omitiendo análisis descriptivo."
+      ],
+      "correct": 1,
+      "hint": "Se relaciona con herramientas visuales básicas en la suite analítica.",
+      "explanation": "Para predictoras categóricas, SPSS permite gráficos de dispersión simple o Levene vía el comando Explorar. $\\text{Predictora} \\in \\text{Categorías} \\implies \\text{SPSS Explorar}$"
+    },
+    {
+      "q": "Elegir la afirmación correcta respecto al indicador estadístico Durbin-Watson dentro de la validación de un modelo predictivo inferencial.",
+      "options": [
+        "Resultados exactos de cero certifican la anulación definitiva del sesgo exógeno base.",
+        "Cálculos que promedian un valor dos denotan independencia estructural de residuales.",
+        "Índices cercanos a la cota cuatro demuestran covarianza positiva exenta de patrones."
+      ],
+      "correct": 1,
+      "hint": "Identifica el anclaje central de la escala DW.",
+      "explanation": "Un valor DW próximo a 2 indica que los residuos carecen de autocorrelación serial de primer orden. $\\text{Independencia} \\iff DW \\approx 2$"
+    },
+    {
+      "q": "Elegir la afirmación correcta relacionada con la conceptualización epistemológica detrás del supuesto paramétrico de independencia global.",
+      "options": [
+        "Rechazar el supuesto implica la nula actividad sistemática de factores estocásticos.",
+        "Violar esta restricción evidencia interacciones ajenas influyendo sistemáticamente.",
+        "Validar esta métrica confirma empíricamente la dependencia funcional entre sujetos."
+      ],
+      "correct": 1,
+      "hint": "Cuestiona qué significa que los datos 'no sean independientes'.",
+      "explanation": "La falta de independencia indica la intromisión de fuentes externas, como actividades compartidas, sesgando sistemáticamente. $\\epsilon_i \\sim \\text{Factor Externo} \\implies \\text{Fallo de Supuesto}$"
+    },
+    {
+      "q": "Elegir la afirmación correcta referente al tratamiento riguroso de casos extremos (outliers) previo al modelado general paramétrico formal.",
+      "options": [
+        "Deben ser aislados del conjunto solo si provienen empíricamente de poblaciones ajenas.",
+        "Deben eliminarse inexorablemente por corromper la media así formen parte de la base.",
+        "Deben recodificarse obligatoriamente bajo lógicas exponenciales en cualquier diseño."
+      ],
+      "correct": 0,
+      "hint": "Diferencia entre un dato atípico legítimo y un simple error de registro.",
+      "explanation": "Los verdaderos atípicos poblacionales no deben suprimirse pues representaría un sesgo de la realidad; solo los errores obvios. $X_{\\text{outlier}} \\in \\text{Población} \\implies \\text{Conservar}$"
+    },
+    {
+      "q": "Elegir la afirmación correcta en torno a los efectos algebraicos derivados de implementar una transformación logarítmica en base temporal.",
+      "options": [
+        "Atenúa las densidades mínimas generando expansión severa en distribuciones negativas.",
+        "Expande las cúspides acortando asimetrías negativas en muestras paramétricas firmes.",
+        "Comprime métricas desproporcionadas corrigiendo eficientemente asimetrías positivas."
+      ],
+      "correct": 2,
+      "hint": "Visualiza cómo el logaritmo acorta distancias numéricas muy amplias.",
+      "explanation": "El logaritmo aplana las colas derechas extendidas, agrupando los valores altos fuertemente dispersos. $\\log(x) \\text{ corrige } g_1 > 0$"
+    },
+    {
+      "q": "Elegir la afirmación correcta que aborda los riesgos inherentes de aplicar transformaciones funcionales sobre las variables del experimento.",
+      "options": [
+        "Es menos perjudicial transformar la respuesta que acudir a remuestreos tipo bootstrap.",
+        "Transmutar la predictora arroja coeficientes con graves distorsiones interpretativas.",
+        "Alterar la métrica de la variable dependiente conlleva un serio riesgo probabilístico."
+      ],
+      "correct": 2,
+      "hint": "Compara VD vs VI frente a los procesos de modificación.",
+      "explanation": "El texto advierte tajantemente sobre la alta peligrosidad de transformar la Variable Dependiente frente a transformar la Predictora. $\\Delta(\\text{VD}) = \\text{Arriesgado} \\implies \\Delta(\\text{VI}) \\text{ preferible}$"
+    },
+    {
+      "q": "Elegir la afirmación correcta que define metodológicamente a las técnicas analíticas agrupadas bajo el gran paraguas de 'métodos robustos'.",
+      "options": [
+        "Exigen distribuciones homocedásticas como condición obligatoria de todo su proceso.",
+        "Constituyen vías alternativas dotadas de fiabilidad operando al margen de los clásicos.",
+        "Requieren conversiones previas de los datos base a métricas no paramétricas ordinales."
+      ],
+      "correct": 1,
+      "hint": "Considera su rol como alternativa fiable y flexible.",
+      "explanation": "Aportan fiabilidad precisamente al no depender del cumplimiento estricto de los exigentes supuestos clásicos distribucionales. $\\text{Robustez} \\implies \\text{Independencia de Normalidad}$"
+    },
+    {
+      "q": "Elegir la afirmación correcta sobre los campos contemporáneos de aplicación válidos para las pruebas tradicionales de libre distribución.",
+      "options": [
+        "Demuestran absoluta pertinencia operando métricas categóricas o si el n es diminuto.",
+        "Quedaron completamente marginadas ante el advenimiento de algoritmos tipo Windsor.",
+        "Sustituyen eficientemente a los GLM en distribuciones gausianas de rango ilimitado."
+      ],
+      "correct": 0,
+      "hint": "Recuerda en qué casos extremos las transformaciones fallan y la robustez duda.",
+      "explanation": "Las pruebas no paramétricas siguen siendo cruciales y válidas cuando los datos son intrínsecamente categóricos o las muestras minúsculas. $\\text{Categorías} \\lor (n \\to 0) \\implies \\text{No paramétricas}$"
+    },
+    {
+      "q": "Elegir la afirmación correcta que vincule las puntuaciones de estandarización normal con la validación geométrica inicial del modelo.",
+      "options": [
+        "Índices tipificados desbordando $\\pm 1.96$ apoyan sólidamente la campana de Gauss global.",
+        "Métricas z estrictamente abarcadas por $\\pm 1.96$ fundamentan el cumplimiento analítico.",
+        "Puntuaciones $Z$ que oscilan el umbral $\\pm 2.58$ rechazan perentoriamente la simetría."
+      ],
+      "correct": 1,
+      "hint": "Conecta el rango del 95% de probabilidad con la asunción visual.",
+      "explanation": "Estar dentro de $\\pm 1.96 $ (valores típicos correspondientes a $\\alpha=0.05 $) es un marcador empírico a favor de la normalidad central. $\\mu \\pm 1.96\\sigma \\implies \\text{Integridad Normal}$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta en torno al panorama y la cronología evolutiva de las principales pruebas de bondad de ajuste normal clásico.",
+      "options": [
+        "La técnica Shapiro-Wilk está rigurosamente prohibida por su baja potencia generalizada.",
+        "El abordaje Kolmogorov-Smirnov representó la elección convencional ante los $n > 50$.",
+        "El protocolo sugiere no subordinar el análisis gausiano a una pauta p aislada y única."
+      ],
+      "correct": 0,
+      "hint": "Evalúa qué prueba recomienda realmente la evidencia más actual.",
+      "explanation": "El texto explicita que S-W se recomienda ahora en una gama mucho más amplia de casos por ostentar mayor potencia estadística, no menor. $\\text{Test}_{SW} = \\text{Mayor Potencia Contemporánea}$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta acerca de la interacción existente entre los test paramétricos formales y la inspección visual complementaria.",
+      "options": [
+        "Rehusar la distribución únicamente por el umbral p<.05 es metodológicamente sesgado.",
+        "Un mapeo Q-Q rectilíneo excusa fluctuaciones infinitesimales marcadas por contrastes.",
+        "Los perfiles Q-Q diagonales exigen paralelamente un rechazo irrestricto de normalidad."
+      ],
+      "correct": 2,
+      "hint": "Busca la afirmación que contradiga la lógica de la tolerancia visual.",
+      "explanation": "Si el Q-Q muestra puntos alineados con la diagonal, es un indicador a favor (se acepta), y no una justificación para el rechazo. $\\text{Alineación } Q-Q \\implies \\text{Tolerancia}$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta referente a la topología conceptual de la heterocedasticidad y su consecuente amenaza en los modelos GLM.",
+      "options": [
+        "Representa analíticamente la violación de dispersión equilibrada a lo largo de los ejes.",
+        "Requiere mandatoriamente un comportamiento estático inalterable de los valores del VD.",
+        "Perjudica agudamente la validación inferencial cuando se carece de simetría muestral."
+      ],
+      "correct": 1,
+      "hint": "Define sobre qué elemento estadístico actúa la varianza constante.",
+      "explanation": "La homocedasticidad demanda varianza constante de los 'residuos' en todos los niveles de la 'Variable Independiente', no el estatismo de la VD. $\\text{Var}(\\epsilon_i | X) = \\text{constante}$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta sobre la relación directa expuesta por Zimmerman (2004) referida a varianzas grupales y sus tamaños poblacionales.",
+      "options": [
+        "Las asimetrías de varianza acarrean consecuencias triviales si los grupos son análogos.",
+        "Volúmenes muestrales discordantes neutralizan totalmente la letalidad heterocedástica.",
+        "Ligeras divergencias variánicas dinamitan análisis donde las frecuencias n contrastan."
+      ],
+      "correct": 1,
+      "hint": "Cruza heterocedasticidad ligera con tamaños n muy desiguales.",
+      "explanation": "Tamaños muy desiguales multiplican el efecto destructivo de la heterocedasticidad, no lo neutralizan bajo ninguna circunstancia. $\\text{Impacto} \\propto |n_1 - n_2| \\cdot |\\sigma_1^2 - \\sigma_2^2|$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta enfocada en las propiedades algorítmicas o vulnerabilidades computacionales de la popular prueba de Levene.",
+      "options": [
+        "El soporte probabilístico p>.05 determina invariablemente la vigencia de la hipótesis nula",
+        "Grupos con registros masivos originan una peligrosa hipersensibilidad al falso desvío.",
+        "Muestras exiguas elevan dramáticamente su destreza detectando todo milimétrico fallo."
+      ],
+      "correct": 2,
+      "hint": "Observa cómo se comporta con muy pocos datos disponibles.",
+      "explanation": "En muestras pequeñas/desiguales, Levene carece de potencia y puede NO detectar violaciones graves, es decir, su destreza disminuye drásticamente. $\\lim_{n \\to 0} \\text{Potencia}_{Levene} \\approx 0$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta que describe los parámetros de customización accesibles mediante el entorno computacional de IBM SPSS Stat.",
+      "options": [
+        "Admite explorar dispersiones primarias para contrastar el comportamiento categórico.",
+        "La modalidad orientada en medianas carece totalmente de solidez asumiendo asimetrías.",
+        "El cálculo inferencial fundado en la media opera como el predeterminado para normal."
+      ],
+      "correct": 1,
+      "hint": "Analiza la ventaja de la mediana en escenarios adversos.",
+      "explanation": "La opción basada en la mediana es destacada explícitamente en el texto como la 'más robusta' ante asimetrías o casos atípicos, no carente de solidez. $\\text{Mediana} \\implies \\text{Alta Robustez}$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta relativa al mecanismo metodológico para constatar y auditar la dependencia serial entre unidades residuales.",
+      "options": [
+        "El mapeo disperso ajustado debe dibujar concentraciones rectilíneas fuertemente unidas",
+        "Indagar en dinámicas extracurriculares de la cohorte permite dilucidar el sesgo final.",
+        "Un contraste cercano a dos en la métrica DW mitiga sospechas probabilísticas seriales."
+      ],
+      "correct": 0,
+      "hint": "Piensa cómo debe lucir un gráfico de residuos independiente.",
+      "explanation": "Los gráficos de residuos frente a ajustados deben ser totalmente aleatorios y 'sin patrones', no rectilíneos. Un patrón denota sesgo. $\\text{Residuos} \\sim U(a,b) \\text{ (sin patrón)}$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta vinculada estrictamente al desarrollo epistemológico del estadístico Durbin-Watson frente al axioma de independencia.",
+      "options": [
+        "Un anclaje paramétrico posicionado en dos ratifica ausencia algorítmica autocorrelada.",
+        "Las mediciones DW en distancias lejanas al dos exacerban las suposiciones dependientes",
+        "El rango total de valores DW comprueba definitivamente homocedasticidades de residuales"
+      ],
+      "correct": 2,
+      "hint": "Distingue entre los distintos supuestos (covarianza vs autocorrelación).",
+      "explanation": "D-W mide autocorrelación o independencia, NO homocedasticidad. Mezclar estos supuestos es un error teórico fundamental. $DW = f(\\text{Autocorrelación}) \\neq f(\\text{Heterocedasticidad})$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta acerca de los lineamientos dictaminados para extirpar variables extremas procedentes de bases multivariantes.",
+      "options": [
+        "Los atípicos que integran genuinamente el núcleo poblacional garantizan análisis puro.",
+        "Los fallos ortográficos o etarios ameritan una exclusión expedita para evadir errores.",
+        "Los casos extremos genuinos deben fulminarse por defecto a fin de limpiar la dispersión."
+      ],
+      "correct": 2,
+      "hint": "Analiza la regla sobre extremos reales y sesgo de la muestra.",
+      "explanation": "Los casos extremos verdaderos NO deben fulminarse, ya que su eliminación generaría un sesgo en la representación real del fenómeno poblacional. $X_{real} \\notin \\text{Eliminar}$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta que examina críticamente las herramientas algebraicas empleadas para rectificar distribuciones no conformes.",
+      "options": [
+        "La manipulación logarítmica es completamente ineficaz reduciendo la asimetría positiva",
+        "Intervenir matemáticamente la VI o predictora es metodológicamente la ruta más segura.",
+        "La radicación y funciones recíprocas engrosan el arsenal de correcciones distribucionales"
+      ],
+      "correct": 0,
+      "hint": "Recuerda para qué giro se inventó el arreglo logarítmico.",
+      "explanation": "La transformación logarítmica es específicamente 'útil para asimetría positiva', al comprimir los valores extremos superiores generadores del sesgo. $\\text{Logaritmo} \\iff \\text{Asimetría Positiva}$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta enfocada a describir analíticamente la técnica robusta de interpolación conocida usualmente como Windsorización.",
+      "options": [
+        "Ejerce una erradicación completa de los registros ubicados en franjas muy periféricas.",
+        "Modifica el vector numérico anómalo igualándolo a su vecino paramétrico más contiguo.",
+        "Preserva en su plenitud la masa total de los sujetos procesados por el marco de datos."
+      ],
+      "correct": 0,
+      "hint": "Diferencia erradicar un sujeto versus alterar su valor extremo.",
+      "explanation": "Windsorización no elimina ('erradica') sujetos; los retiene y simplemente reemplaza el valor de su puntuación extrema por uno conservador cercano. $\\text{Sustitución} \\neq \\text{Erradicación}$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta referida a la utilidad procedimental vigente de las pruebas inferenciales tildadas de libre distribución.",
+      "options": [
+        "Poseen aplicabilidad metodológica innegable frente a naturalezas estrictamente nominales",
+        "Garantizan una vía de escape resolutiva si los métodos transformacionales han colapsado",
+        "Preceden jerárquicamente a los métodos robustos por su deslumbrante potencia de cálculo"
+      ],
+      "correct": 2,
+      "hint": "Atiende al orden de preferencia actual en la comunidad científica.",
+      "explanation": "El texto aclara categóricamente que 'los métodos robustos son preferibles en la actualidad', superando jerárquicamente a las pruebas no paramétricas. $\\text{Robustos} > \\text{No paramétricos}$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta que articule los supuestos estructurales de modelos GLM frente a variables con marcadas fluctuaciones atípicas.",
+      "options": [
+        "El recorte paramétrico disminuye sutilmente la N extirpando franjas marginales raras.",
+        "Los métodos robustos precisan cumplir axiomáticamente cada suposición del GLM clásico.",
+        "Apalancar estimaciones mediante el algoritmo Bootstrap no exige asunciones limitantes."
+      ],
+      "correct": 1,
+      "hint": "Identifica la esencia y el propósito principal de los robustos.",
+      "explanation": "La ventaja definitoria de los métodos robustos es precisamente 'ofrecer fiabilidad sin depender estrictamente de los supuestos clásicos' del GLM. $\\text{Robustos} \\implies \\neg \\text{Exigencia Clásica}$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta sobre los efectos combinados expuestos en la verificación visual y matemática de matrices residuales y gausianas.",
+      "options": [
+        "La tipificación excedente a la cota absoluta 1.96 fortalece enormemente la curva real",
+        "El gráfico de residuales debe arrojar una nube carente de toda orientación sistemática",
+        "Un Levene calculado empleando meridianas previene engaños metodológicos por distorsión."
+      ],
+      "correct": 0,
+      "hint": "Revisa los límites de confianza tradicionales de Z.",
+      "explanation": "Puntuaciones $Z $ que superen en valor absoluto $\\pm 1.96 $ caen fuera de la región del 95% y cuestionan, no fortalecen, el supuesto de normalidad empírica. $|Z| > 1.96 \\implies \\text{Cola Crítica}$"
+    },
+    {
+      "q": "Elegir la afirmación incorrecta abarcando las decisiones estructurales expuestas para afrontar el temido incumplimiento analítico global.",
+      "options": [
+        "La transmutación logarítmica expande el espectro de la base albergando valores mínimos",
+        "La supresión total conforma la solución universal para cualquier registro poco usual.",
+        "Bootstrapping extrae estimadores muestreando estocásticamente bajo matrices repetidas."
+      ],
+      "correct": 1,
+      "hint": "Contrasta soluciones genéricas vs soluciones particularizadas.",
+      "explanation": "La supresión NO es una solución universal; se reserva de forma estricta para casos que no pertenecen a la población o errores claros. $\\text{Universalidad Supresión} = \\text{Falso}$"
     }
   ],
   "jsonTestB": [
@@ -881,6 +1321,281 @@
       "correct": 1,
       "hint": "Es una alternativa al ANOVA tradicional.",
       "explanation": "La corrección de Welch se usa ante la violación de la homocedasticidad (varianzas desiguales), no para independencia."
+    },
+    {
+      "q": "La evaluación de normalidad contemporánea dicta: \"La prueba de _______ se recomienda por su mayor potencia estadística frente a _______.\"",
+      "options": [
+        "Shapiro-Wilk (S-W) / la tradicional técnica paramétrica Kolmogorov-Smirnov",
+        "Kolmogorov-Smirnov (K-S) / la tradicional técnica paramétrica Shapiro-Wilk",
+        "Estadístico de Levene (L-V) / la moderna técnica de análisis Durbin-Watson"
+      ],
+      "correct": 0,
+      "hint": "Evalúa qué contraste minimiza el error de tipo II en asimetrías leves.",
+      "explanation": "Tradicionalmente se usaba K-S para grandes tamaños, pero la evidencia actual avala a S-W por su mayor eficiencia y potencia: $\\text{Potencia}_{SW} > \\text{Potencia}_{KS}$."
+    },
+    {
+      "q": "En el análisis de residuos Q-Q, si los puntos empíricos se _______, la distribución se acepta a pesar de _______.",
+      "options": [
+        "disgreguen de la diagonal base / la significación $p$ revelada marginalmente",
+        "alineen a la diagonal del eje / desviaciones locales del valor $p$ empírico",
+        "agrupen en las colas del área / la confirmación de homocedasticidad latente"
+      ],
+      "correct": 1,
+      "hint": "Recuerda el comportamiento geométrico esperado bajo el supuesto de normalidad estricta.",
+      "explanation": "La inspección gráfica requiere que los puntos sigan la línea teórica de $\\pm 45^{\\circ}$. Esta aproximación visual mitiga el problema de falsos positivos al evaluar $ H_0$."
+    },
+    {
+      "q": "Las puntuaciones típicas ($z$) comprendidas en el umbral de _______ refuerzan analíticamente la asunción subyacente de _______.",
+      "options": [
+        "$\\pm 2.58$ en las colas / una asimetría matricial de orden estocástico puro",
+        "$\\pm 3.14$ en las colas / la independencia absoluta de las covarianzas dadas",
+        "$\\pm 1.96$ en su matriz / la normalidad paramétrica de la muestra estudiada"
+      ],
+      "correct": 2,
+      "hint": "Piensa en el intervalo de confianza del $95\\%$ de una distribución normal estándar.",
+      "explanation": "Para una distribución Gaussiana, el $95\\%$ de los datos residen en el intervalo $[ -1.96, +1.96 ]$, lo que apoya sólidamente la asunción poblacional de $ N(\\mu, \\sigma^2)$."
+    },
+    {
+      "q": "El modelo exige que la varianza residual se mantenga _______ en todos y cada uno de los niveles de la _______.",
+      "options": [
+        "constante y estabilizada / Variable Independiente (VI) de orden categórico",
+        "aleatoria y sin patrón / Variable Dependiente (VD) de naturaleza continua",
+        "inversamente proyectada / Variable Covariada (CV) de estructura factorial"
+      ],
+      "correct": 0,
+      "hint": "Identifica qué condición métrica define al fenómeno de homocedasticidad paramétrica.",
+      "explanation": "La homocedasticidad asume que la matriz de error exhibe un vector estacionario: $Var(\\epsilon_i) = \\sigma^2$ a lo largo de las variaciones de la VI predictora."
+    },
+    {
+      "q": "En contingencias de grupos marcadamente _______, diferencias minúsculas en sus respectivas varianzas tienen la capacidad de _______.",
+      "options": [
+        "proporcionales y simétricos / robustecer totalmente el supuesto paramétrico",
+        "desiguales o desbalanceados / invalidar radicalmente el modelo estadístico",
+        "masivos pero muy empíricos / transformar drásticamente las raíces residuales"
+      ],
+      "correct": 1,
+      "hint": "Observa cómo la heterocedasticidad se comporta ante nudos asimétricos muestrales.",
+      "explanation": "Zimmerman (2004) demostró que si $n_1 \\neq n_2 $, el ratio de las varianzas incrementa logarítmicamente la tasa de rechazo espurio de $ H_0 $, sesgando el estadístico $ F$."
+    },
+    {
+      "q": "El test homogeneizador de Levene garantiza matemáticamente el supuesto general si su contraste devuelve _______.",
+      "options": [
+        "asimetría de cola negativa / el factor final $p < .05$ en la región crítica",
+        "autocorrelación matricial / el factor final $p = .05$ en la frontera de rechazo",
+        "igualdad en varianzas base / el factor final $p > .05$ en las estimaciones"
+      ],
+      "correct": 2,
+      "hint": "Reflexiona sobre qué hipótesis (nula o alternativa) defiende la igualdad de las varianzas.",
+      "explanation": "Levene evalúa la nulidad $H_0: \\sigma_1^2 = \\sigma_2^2 = \\dots = \\sigma_k^2 $. Para conservar dicha hipótesis paramétrica, es indispensable que estadísticamente $ p > \\alpha$."
+    },
+    {
+      "q": "En el software SPSS, recalcular la prueba homocedástica anclándola sobre _______ resulta algorítmicamente _______.",
+      "options": [
+        "el núcleo de la mediana / más robusta al lidiar con atípicos y asimetrías",
+        "la media geométrica base / más sensible cuando existen variables extremas",
+        "el rango intercuartílico / más débil si convergen factores perturbadores"
+      ],
+      "correct": 0,
+      "hint": "Identifica la medida de tendencia central más resiliente ante valores aberrantes.",
+      "explanation": "La prueba de Levene-Brown-Forsythe utiliza la desviación absoluta respecto a la mediana ($\\tilde{x}$), lo cual aísla el ruido estocástico generado por la presencia de valores anómalos."
+    },
+    {
+      "q": "Aplicar estadísticos de varianza en estudios con enormes volúmenes de datos las hace _______ detectando sesgos _______.",
+      "options": [
+        "ciega al error real / severas anomalías en los tamaños muestrales internos",
+        "sumamente hiper-sensible / variaciones triviales e intrascendentes de base",
+        "matemáticamente inviable / fluctuaciones aleatorias y correlaciones nulas"
+      ],
+      "correct": 1,
+      "hint": "Considera la asimetría de sobre-potencia que afecta a los contrastes en diseños masivos.",
+      "explanation": "Con un tamaño de efecto $\\Delta \\to 0 $ y un $ N \\to \\infty $, la varianza asintótica se reduce excesivamente, provocando rechazos de $ H_0$ ante fluctuaciones insignificantes."
+    },
+    {
+      "q": "El requisito ineludible de la Independencia de los Residuos impone que los errores del modelo _______ ante _______.",
+      "options": [
+        "tienen varianza constante / una relación lineal demostrable y predecible",
+        "están correlacionados / un sesgo inter-sujetos y heterocedasticidad nula",
+        "carecen de correlaciones / una fuente externa actuando de forma sistémica"
+      ],
+      "correct": 2,
+      "hint": "Recuerda cómo afecta metodológicamente una variable confusora compartida a la matriz.",
+      "explanation": "El axioma teórico postula que el valor esperado covarianza es nulo: $Cov(\\epsilon_i, \\epsilon_j) = 0$. La alteración de esto alerta de interdependencias inter-sujeto."
+    },
+    {
+      "q": "Al graficar visualmente los residuos predictivos estandarizados contra los previstos, se espera una banda _______.",
+      "options": [
+        "libre de patrón sistemático / dependencia cruzada en la matriz inferencial",
+        "conglomerada en el eje focal / homocedasticidad asintótica en sus vectores",
+        "proporcional al estadístico / esfericidad comprobable mediante sus medias"
+      ],
+      "correct": 0,
+      "hint": "El ruido blanco residual no debe exhibir trayectorias deterministas ni embudos geométricos.",
+      "explanation": "Los residuos paramétricos deben mostrar una nube estocástica idéntica al ruido blanco, comprobando gráficamente la asunción de Homocedasticidad y carencia de Sesgo."
+    },
+    {
+      "q": "El ratio empírico de Durbin-Watson arroja un umbral en _______ para verificar de facto la _______.",
+      "options": [
+        "cero perfecto aritmético / correlación autocorrelacionada muy significativa",
+        "dos unidades estandarizadas / independencia y ausencia de error sistemático",
+        "cinco desviaciones típicas / dispersión heterocedástica altamente anómala"
+      ],
+      "correct": 1,
+      "hint": "Identifica el valor intermedio del estadístico DW que corrobora la hipótesis nula en serie.",
+      "explanation": "Matemáticamente, $DW \\approx 2(1 - \\rho)$. Si la correlación serial $\\rho = 0$, el estadístico asintóticamente tenderá a un valor convergente de 2.0."
+    },
+    {
+      "q": "Desde un criterio metodológico conservador, solo se justifica desechar atípicos extremos si el caso _______.",
+      "options": [
+        "distorsiona drásticamente medias / afecta fuertemente la curva paramétrica",
+        "incrementa las varianzas nulas / rompe la homocedasticidad de los errores",
+        "está ajeno a la población base / representa ciertamente un error de medida"
+      ],
+      "correct": 2,
+      "hint": "Diferencia un outlier estadísticamente genuino de uno introducido por fallos humanos.",
+      "explanation": "Los casos con alta varianza pero pertenecientes a la curva no deben ser censurados, ya que alteraría el muestreo poblacional (truncamiento empírico de la función de masa)."
+    },
+    {
+      "q": "Implementar matemáticamente la función _______ es un método idóneo para comprimir matrices con _______.",
+      "options": [
+        "logarítmica natural simple / asimetrías de naturaleza marcadamente positiva",
+        "exponencial y multiplicativa / asimetrías de comportamiento muy platicúrtico",
+        "polinómica de segundo orden / asimetrías severas de orientación bimodal"
+      ],
+      "correct": 0,
+      "hint": "Reconoce la operación que reduce el impacto de colas largas a la derecha de la campana.",
+      "explanation": "Para variables $X > 0 $, la función $ X' = \\ln(X)$ o $ X' = \\log_{10}(X)$ tracciona las observaciones extremas superiores hacia el centro de gravedad métrico."
+    },
+    {
+      "q": "Las normativas de análisis inferencial advierten que transformar arbitrariamente la _______ es más pernicioso que adaptar la _______.",
+      "options": [
+        "covariada interviniente real / constante estructural dependiente predictiva",
+        "variable criterio a predecir / variable independiente o predictor exógeno",
+        "fuente de error asistemático / desviación típica de los residuales netos"
+      ],
+      "correct": 1,
+      "hint": "Considera qué variable afecta a la interpretación del resultado directo del sujeto u objeto.",
+      "explanation": "Modificar la VD altera la escala de significado (e.g., predecir el logaritmo de la depresión en lugar de la depresión real), oscureciendo la dimensionalidad del contraste."
+    },
+    {
+      "q": "La corrección heurística conocida como _______ suprime el impacto negativo sustituyendo el fallo mediante _______.",
+      "options": [
+        "promedios aritméticos móviles / la varianza total marginada por los ejes",
+        "valores centrales fraccionados / la regresión múltiple del vector cruzado",
+        "Windsorización metodológica / el valor no extremo válido que más se acerque"
+      ],
+      "correct": 2,
+      "hint": "Se trata de un método de recorte modificado que sustituye límites en lugar de vaciarlos.",
+      "explanation": "La Windsorización al $10\\%$ sustituye el límite inferior atípico por el percentil 10, y el límite superior por el percentil 90, estabilizando fuertemente la desviación típica poblacional."
+    },
+    {
+      "q": "Los métodos inferenciales robustos como el _______ estiman coeficientes extrayendo iterativamente múltiples _______.",
+      "options": [
+        "Bootstrapping probabilístico / muestras aleatorizadas remuestreadas al azar",
+        "Montecarlo estocástico lineal / matrices simuladas desde parámetros ocultos",
+        "Mínimos Cuadrados Ordinarios / residuales ortogonales con varianza cero"
+      ],
+      "correct": 0,
+      "hint": "Piensa en el mecanismo de reemplazo muestral sobre la matriz poblacional original empírica.",
+      "explanation": "El Bootstrapping es un marco estocástico no paramétrico que permite estimar los errores estándar $\\sigma_{\\theta}$ mediante submuestras (con reemplazo) extraídas del pool iterativo empírico."
+    },
+    {
+      "q": "La implementación de enfoques estrictamente _______ se autoriza si se presentan ante un _______.",
+      "options": [
+        "paramétricas de corte estricto / n masivo que propicia error de hiper-potencia",
+        "libres de distribución teórica / n muy reducido o de transformaciones fallidas",
+        "robustas de estimación sesgada / n categórico nominal de esfericidad comprobada"
+      ],
+      "correct": 1,
+      "hint": "Busca la situación crítica que fuerza el abandono definitivo del espacio gaussiano continuo.",
+      "explanation": "Cuando el teorema del Límite Central fracasa ($N \\ll 30$) y los algoritmos como la raíz cuadrada colapsan, se aplican métricas ordinales basadas puramente en estadísticos de rangos."
+    },
+    {
+      "q": "Depurar sujetos que marcan valores inusuales pero que explícitamente _______ provoca catastróficos _______.",
+      "options": [
+        "inducen sesgos confirmatorios / asimetrías indeseadas en matrices de error",
+        "afectan las dispersiones base / heterocedasticidades de corte endógeno neto",
+        "pertenecen al universo diana / sesgos por purgar variabilidad que es genuina"
+      ],
+      "correct": 2,
+      "hint": "Analiza las consecuencias teóricas de recortar información legítima de la función probabilística.",
+      "explanation": "Eliminar casos atípicos legítimos disminuye artificialmente $\\sigma^2 $ e infla artificialmente el estadístico $ t $ o $ F$, llevando inexorablemente a conclusiones estocásticas apócrifas."
+    },
+    {
+      "q": "La praxis de la inferencia estadística prefiere abrumadoramente el uso de _______ antes que optar por _______.",
+      "options": [
+        "análisis robustos modernos / descartar datos masivamente y sin fundamento",
+        "transformaciones exponenciales / mantener variables nominales desbalanceadas",
+        "algoritmos bayesianos puros / integrar vectores latentes no estandarizados"
+      ],
+      "correct": 0,
+      "hint": "Identifica la alternativa paramétrica que no destruye el espacio de la muestra matriz base.",
+      "explanation": "Los métodos computacionales robustos (como Trimming y Windsorización) superan a las alternativas de borrado de lista general (Listwise Deletion) porque no penalizan drásticamente los Grados de Libertad ( gl )."
+    },
+    {
+      "q": "En menús computacionales como SPSS, el test de varianzas con _______ actúa como barrera contra _______.",
+      "options": [
+        "prueba enfocada en la media / los efectos visuales del modelo no paramétrico",
+        "función centrada en mediana / distribuciones fuertemente sesgadas y atípicas",
+        "método de varianza cruzada / regresiones multivariadas de corte categórico"
+      ],
+      "correct": 1,
+      "hint": "Selecciona la métrica direccional que anula el poder de la asimetría de masa intrínseca.",
+      "explanation": "Brown y Forsythe comprobaron fehacientemente que fijar la hipótesis sobre la Mediana proporciona tasas de falso rechazo nominal ($\\alpha =.05$) mucho más consistentes bajo fuerte Leptocurtosis matricial."
+    },
+    {
+      "q": "Acerca de los fundamentos en la comprobación analítica de la Normalidad:",
+      "options": [
+        "Shapiro-Wilk ostenta mayor potencia estadística que Kolmogorov-Smirnov.",
+        "Los gráficos Q-Q son un complemento diagnóstico al umbral de valor $p$.",
+        "Todas las opciones previas resultan teóricamente veraces y correctas."
+      ],
+      "correct": 2,
+      "hint": "Ambos enunciados sintetizan las conclusiones formales sobre sensibilidad y evaluación visual.",
+      "explanation": "Efectivamente, la literatura actual destituye a la prueba K-S tradicional y abraza un modelo integral empírico donde $p <.05$ no es exclusivo si el diagrama exhibe linealidad escalar pura."
+    },
+    {
+      "q": "Respecto al principio de homocedasticidad y la fluctuación de casos intra-grupo:",
+      "options": [
+        "Ante tamaños muestrales idénticos, violar la varianza impacta muy poco.",
+        "Con tamaños muy dispares, minúsculas variaciones invalidan el modelo.",
+        "Todas las opciones previas resultan teóricamente veraces y correctas."
+      ],
+      "correct": 2,
+      "hint": "Identifica cómo la asimetría matricial cataliza o mitiga la divergencia de los residuos.",
+      "explanation": "La robustez geométrica de la prueba paramétrica ( ANOVA ) se incrementa exponencialmente bajo un diseño completamente ortogonal ($n_1 = n_2 = \\dots = n_k$)."
+    },
+    {
+      "q": "Acerca de la vulnerabilidad implícita en la prueba de homogeneidad de Levene:",
+      "options": [
+        "Para tamaños muestrales masivos, el test castiga variaciones triviales.",
+        "En diseños de baja muestra, la prueba no logra detectar sesgos severos.",
+        "Todas las opciones previas resultan teóricamente veraces y correctas."
+      ],
+      "correct": 2,
+      "hint": "Considera los extremos paramétricos y la paradoja de la varianza en tamaños asintóticos limítrofes.",
+      "explanation": "Es el clásico problema de la sensibilidad muestral cruzada: $n \\to \\infty $ provoca hiper-potencia (falso positivo), mientras que $ n \\to 10$ causa ceguera heurística (falso negativo)."
+    },
+    {
+      "q": "Referente a la independencia paramétrica y la correlación estocástica de errores:",
+      "options": [
+        "La interdependencia de residuos acusa un factor interviniente externo.",
+        "Durbin-Watson alrededor del dígito dos confirma la independencia pura.",
+        "Todas las opciones previas resultan teóricamente veraces y correctas."
+      ],
+      "correct": 2,
+      "hint": "Las afirmaciones evalúan la causa del error serial y su coeficiente de verificación canónico.",
+      "explanation": "La ecuación subyacente al modelo confirma que violar $Cov(\\epsilon_t, \\epsilon_{t-1}) = 0$ es síntoma crítico de un factor mediador espurio no controlado en fase de medición empírica."
+    },
+    {
+      "q": "En el tratamiento estocástico de las anomalías muestrales (outliers extremos):",
+      "options": [
+        "Los valores atípicos logran distorsionar severamente la media muestral.",
+        "Los extremos que sí son poblacionales deben conservarse en la matriz.",
+        "Todas las opciones previas resultan teóricamente veraces y correctas."
+      ],
+      "correct": 2,
+      "hint": "Valora si los atípicos genuinos deben mantenerse y si distorsionan la media.",
+      "explanation": "Los valores atípicos distorsionan la media, pero los atípicos poblacionales genuinos deben conservarse en la matriz para evitar sesgos."
     }
   ],
   "jsonLaboratorio": [
