@@ -694,38 +694,44 @@
 
             if (!REQUIRE_AUTH) {
                 authState.isAuthenticated = true;
-                render();
-                return;
-            }
-            
-            const savedEmail = localStorage.getItem('saimap_user_email');
-            if (!savedEmail) {
-                authState.isAuthenticated = false;
-                render();
-                return;
+            } else {
+                const savedEmail = localStorage.getItem('saimap_user_email');
+                if (!savedEmail) {
+                    authState.isAuthenticated = false;
+                } else {
+                    authState.loading = true;
+                    render();
+                    try {
+                        const isValid = await validateEmail(savedEmail);
+                        if (isValid) {
+                            authState.email = savedEmail;
+                            authState.isAuthenticated = true;
+                            await syncUserData('load');
+                        } else {
+                            localStorage.removeItem('saimap_user_email');
+                            authState.email = '';
+                            authState.isAuthenticated = false;
+                            authState.error = 'Tu acceso ha caducado o no está activo en la academia.';
+                        }
+                    } catch (err) {
+                        console.warn('No se pudo validar el correo con el servidor. Usando sesión local offline.', err);
+                        authState.email = savedEmail;
+                        authState.isAuthenticated = true;
+                        await syncUserData('load');
+                    } finally {
+                        authState.loading = false;
+                    }
+                }
             }
 
-            authState.loading = true;
-            render();
-            try {
-                const isValid = await validateEmail(savedEmail);
-                if (isValid) {
-                    authState.email = savedEmail;
-                    authState.isAuthenticated = true;
-                    await syncUserData('load');
-                } else {
-                    localStorage.removeItem('saimap_user_email');
-                    authState.email = '';
-                    authState.isAuthenticated = false;
-                    authState.error = 'Tu acceso ha caducado o no está activo en la academia.';
-                }
-            } catch (err) {
-                console.warn('No se pudo validar el correo con el servidor. Usando sesión local offline.', err);
-                authState.email = savedEmail;
-                authState.isAuthenticated = true;
-                await syncUserData('load');
-            } finally {
-                authState.loading = false;
+            // --- CARGA DE DATOS DESDE URL ---
+            const asignaturaParam = params.get('asignatura');
+            const temaParam = params.get('tema');
+
+            if (asignaturaParam) {
+                unlockSubjectAndTema(asignaturaParam, temaParam);
+                loadSubject(asignaturaParam, temaParam, false);
+            } else {
                 render();
             }
         }
@@ -779,14 +785,7 @@
         }
 
         // --- CARGA DE DATOS ---
-        const urlParams = new URLSearchParams(window.location.search);
-        const asignaturaParam = urlParams.get('asignatura');
-        const temaParam = urlParams.get('tema');
-
-        if (asignaturaParam) {
-            unlockSubjectAndTema(asignaturaParam, temaParam);
-            loadSubject(asignaturaParam, temaParam, false);
-        }
+        // La carga inicial ahora se gestiona de forma diferida al final de checkAuthOnLoad()
 
         async function loadCustomThemes(subjectId, folder, year, shortId, themesList) {
             const promises = themesList.map(t => {
@@ -845,6 +844,15 @@
         }
 
         function loadSubject(id, tema = null, updateHistoryState = true) {
+            const isGuest = !authState.isAuthenticated;
+            if (isGuest && !tema) {
+                // Si es un invitado y se intenta cargar el examen global (sin tema),
+                // redirigimos a la vista de carpeta y mostramos el modal de promo.
+                state.showPromoModal = true;
+                appMethods.enterSubjectFolder(id);
+                return;
+            }
+
             state.selectedSubjectId = id;
             const subject = AVAILABLE_SUBJECTS.find(s => s.id === id);
             const folder = subject ? subject.folder : 'Otros';
