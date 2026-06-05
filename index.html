@@ -3320,7 +3320,7 @@
 
         function renderPromoModalHTML() {
             return `
-                <div onclick="if(event.target === this) { state.showPromoModal = false; render(); }" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-md flex items-center justify-center p-4">
+                <div onclick="if(event.target === this) { state.showPromoModal = false; render(); }" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-md flex items-start justify-center p-4 overflow-y-auto md:items-center">
                     <div class="w-full max-w-lg bg-white/90 backdrop-blur-xl border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.15)] rounded-[32px] p-8 relative scale-in">
                         
                         <!-- Close Button -->
@@ -3421,7 +3421,7 @@
             ` : '';
 
             return `
-                <div onclick="if(event.target === this) { state.showLoginModal = false; render(); }" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-md flex items-center justify-center p-4">
+                <div onclick="if(event.target === this) { state.showLoginModal = false; render(); }" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-md flex items-start justify-center p-4 overflow-y-auto md:items-center">
                     <div class="w-full max-w-md bg-white/90 backdrop-blur-xl border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.15)] rounded-[32px] p-8 md:p-10 relative scale-in">
                         ${loadingSpinner}
                         
