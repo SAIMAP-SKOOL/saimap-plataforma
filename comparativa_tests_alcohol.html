@@ -1180,131 +1180,131 @@
         }
 
         // RENDERIZADOR CALCULADORES ISCA
-        function renderIscaCalculators() {
-            const container = document.getElementById('isca-grid-container');
-            container.innerHTML = '';
+function renderIscaCalculators() {
+    const container = document.getElementById('isca-grid-container');
+    container.innerHTML = '';
 
-            const isComparative = state.mode === 'comparative';
+    const isComparative = state.mode === 'comparative';
+    
+    // Card Persona A
+    let html = `
+        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-5 space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                <span class="font-bold text-slate-800 flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> ${state.nameA} (${state.genderA === 'female' ? 'Mujer' : 'Hombre'})
+                </span>
+                <span class="text-xs font-black text-indigo-650 bg-indigo-50 border border-indigo-100 px-2 py-0.5 rounded" id="isca-total-a">0 UBEs/semana</span>
+            </div>
             
-            // Card Persona A
-            let html = `
-                <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-5 space-y-4">
-                    <div class="flex items-center justify-between border-b border-slate-200 pb-2">
-                        <span class="font-bold text-slate-800 flex items-center gap-1.5">
-                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> {state.nameA} ({state.genderA === 'female' ? 'Mujer' : 'Hombre'})
-                        </span>
-                        <span class="text-xs font-black text-indigo-650 bg-indigo-50 border border-indigo-100 px-2 py-0.5 rounded" id="isca-total-a">0 UBEs/semana</span>
-                    </div>
-                    
-                    <!-- Días Laborables -->
-                    <div class="space-y-1">
-                        <div class="flex justify-between text-[11px] font-bold text-slate-500">
-                            <span>Días de consumo (Lunes a Viernes)</span>
-                            <span id="lbl-days-lab-a">{state.answersA[0].daysLaboral} días</span>
-                        </div>
-                        <input type="range" min="0" max="5" step="1" value="{state.answersA[0].daysLaboral}" 
-                            oninput="updateIscaValue('A', 'daysLaboral', this.value)" 
-                            class="w-full accent-indigo-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
-                    </div>
-                    
-                    <!-- UBEs Laborables -->
-                    <div class="space-y-1">
-                        <div class="flex justify-between text-[11px] font-bold text-slate-500">
-                            <span>Consumo medio diario (días laborables)</span>
-                            <span id="lbl-qty-lab-a">{state.answersA[0].qtyLaboral} UBEs</span>
-                        </div>
-                        <input type="range" min="0" max="15" step="0.5" value="{state.answersA[0].qtyLaboral}" 
-                            oninput="updateIscaValue('A', 'qtyLaboral', this.value)" 
-                            class="w-full accent-indigo-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
-                    </div>
-                    
-                    <!-- Días Festivos -->
-                    <div class="space-y-1 pt-2 border-t border-slate-100">
-                        <div class="flex justify-between text-[11px] font-bold text-slate-500">
-                            <span>Días de consumo (Fin de semana y festivos)</span>
-                            <span id="lbl-days-fest-a">{state.answersA[0].daysFestivo} días</span>
-                        </div>
-                        <input type="range" min="0" max="2" step="1" value="{state.answersA[0].daysFestivo}" 
-                            oninput="updateIscaValue('A', 'daysFestivo', this.value)" 
-                            class="w-full accent-indigo-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
-                    </div>
-                    
-                    <!-- UBEs Festivos -->
-                    <div class="space-y-1">
-                        <div class="flex justify-between text-[11px] font-bold text-slate-500">
-                            <span>Consumo medio diario (fin de semana/festivos)</span>
-                            <span id="lbl-qty-fest-a">{state.answersA[0].qtyFestivo} UBEs</span>
-                        </div>
-                        <input type="range" min="0" max="20" step="0.5" value="{state.answersA[0].qtyFestivo}" 
-                            oninput="updateIscaValue('A', 'qtyFestivo', this.value)" 
-                            class="w-full accent-indigo-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
-                    </div>
+            <!-- Días Laborables -->
+            <div class="space-y-1">
+                <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                    <span>Días de consumo (Lunes a Viernes)</span>
+                    <span id="lbl-days-lab-a">${state.answersA[0].daysLaboral} días</span>
                 </div>
-            `;
+                <input type="range" min="0" max="5" step="1" value="${state.answersA[0].daysLaboral}" 
+                    oninput="updateIscaValue('A', 'daysLaboral', this.value)" 
+                    class="w-full accent-indigo-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+            </div>
             
-            if (isComparative) {
-                container.className = "grid md:grid-cols-2 gap-6";
-                html += `
-                    <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-5 space-y-4">
-                        <div class="flex items-center justify-between border-b border-slate-200 pb-2">
-                            <span class="font-bold text-slate-800 flex items-center gap-1.5">
-                                <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span> {state.nameB} ({state.genderB === 'female' ? 'Mujer' : 'Hombre'})
-                            </span>
-                            <span class="text-xs font-black text-rose-600 bg-rose-50 border border-rose-100 px-2 py-0.5 rounded" id="isca-total-b">0 UBEs/semana</span>
-                        </div>
-                        
-                        <!-- Días Laborables B -->
-                        <div class="space-y-1">
-                            <div class="flex justify-between text-[11px] font-bold text-slate-500">
-                                <span>Días de consumo (Lunes a Viernes)</span>
-                                <span id="lbl-days-lab-b">{state.answersB[0].daysLaboral} días</span>
-                            </div>
-                            <input type="range" min="0" max="5" step="1" value="{state.answersB[0].daysLaboral}" 
-                                oninput="updateIscaValue('B', 'daysLaboral', this.value)" 
-                                class="w-full accent-rose-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
-                        </div>
-                        
-                        <!-- UBEs Laborables B -->
-                        <div class="space-y-1">
-                            <div class="flex justify-between text-[11px] font-bold text-slate-500">
-                                <span>Consumo medio diario (días laborables)</span>
-                                <span id="lbl-qty-lab-b">{state.answersB[0].qtyLaboral} UBEs</span>
-                            </div>
-                            <input type="range" min="0" max="15" step="0.5" value="{state.answersB[0].qtyLaboral}" 
-                                oninput="updateIscaValue('B', 'qtyLaboral', this.value)" 
-                                class="w-full accent-rose-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
-                        </div>
-                        
-                        <!-- Días Festivos B -->
-                        <div class="space-y-1 pt-2 border-t border-slate-100">
-                            <div class="flex justify-between text-[11px] font-bold text-slate-500">
-                                <span>Días de consumo (Fin de semana y festivos)</span>
-                                <span id="lbl-days-fest-b">{state.answersB[0].daysFestivo} días</span>
-                            </div>
-                            <input type="range" min="0" max="2" step="1" value="{state.answersB[0].daysFestivo}" 
-                                oninput="updateIscaValue('B', 'daysFestivo', this.value)" 
-                                class="w-full accent-rose-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
-                        </div>
-                        
-                        <!-- UBEs Festivos B -->
-                        <div class="space-y-1">
-                            <div class="flex justify-between text-[11px] font-bold text-slate-500">
-                                <span>Consumo medio diario (fin de semana/festivos)</span>
-                                <span id="lbl-qty-fest-b">{state.answersB[0].qtyFestivo} UBEs</span>
-                            </div>
-                            <input type="range" min="0" max="20" step="0.5" value="{state.answersB[0].qtyFestivo}" 
-                                oninput="updateIscaValue('B', 'qtyFestivo', this.value)" 
-                                class="w-full accent-rose-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
-                        </div>
+            <!-- UBEs Laborables -->
+            <div class="space-y-1">
+                <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                    <span>Consumo medio diario (días laborables)</span>
+                    <span id="lbl-qty-lab-a">${state.answersA[0].qtyLaboral} UBEs</span>
+                </div>
+                <input type="range" min="0" max="15" step="0.5" value="${state.answersA[0].qtyLaboral}" 
+                    oninput="updateIscaValue('A', 'qtyLaboral', this.value)" 
+                    class="w-full accent-indigo-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+            </div>
+            
+            <!-- Días Festivos -->
+            <div class="space-y-1 pt-2 border-t border-slate-100">
+                <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                    <span>Días de consumo (Fin de semana y festivos)</span>
+                    <span id="lbl-days-fest-a">${state.answersA[0].daysFestivo} días</span>
+                </div>
+                <input type="range" min="0" max="2" step="1" value="${state.answersA[0].daysFestivo}" 
+                    oninput="updateIscaValue('A', 'daysFestivo', this.value)" 
+                    class="w-full accent-indigo-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+            </div>
+            
+            <!-- UBEs Festivos -->
+            <div class="space-y-1">
+                <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                    <span>Consumo medio diario (fin de semana/festivos)</span>
+                    <span id="lbl-qty-fest-a">${state.answersA[0].qtyFestivo} UBEs</span>
+                </div>
+                <input type="range" min="0" max="20" step="0.5" value="${state.answersA[0].qtyFestivo}" 
+                    oninput="updateIscaValue('A', 'qtyFestivo', this.value)" 
+                    class="w-full accent-indigo-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+            </div>
+        </div>
+    `;
+    
+    if (isComparative) {
+        container.className = "grid md:grid-cols-2 gap-6";
+        html += `
+            <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-5 space-y-4">
+                <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                    <span class="font-bold text-slate-800 flex items-center gap-1.5">
+                        <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span> ${state.nameB} (${state.genderB === 'female' ? 'Mujer' : 'Hombre'})
+                    </span>
+                    <span class="text-xs font-black text-rose-600 bg-rose-50 border border-rose-100 px-2 py-0.5 rounded" id="isca-total-b">0 UBEs/semana</span>
+                </div>
+                
+                <!-- Días Laborables B -->
+                <div class="space-y-1">
+                    <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                        <span>Días de consumo (Lunes a Viernes)</span>
+                        <span id="lbl-days-lab-b">${state.answersB[0].daysLaboral} días</span>
                     </div>
-                `;
-            } else {
-                container.className = "grid gap-6 max-w-xl mx-auto";
-            }
-            
-            container.innerHTML = html;
-            recalcIscaTotals();
-        }
+                    <input type="range" min="0" max="5" step="1" value="${state.answersB[0].daysLaboral}" 
+                        oninput="updateIscaValue('B', 'daysLaboral', this.value)" 
+                        class="w-full accent-rose-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+                </div>
+                
+                <!-- UBEs Laborables B -->
+                <div class="space-y-1">
+                    <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                        <span>Consumo medio diario (días laborables)</span>
+                        <span id="lbl-qty-lab-b">${state.answersB[0].qtyLaboral} UBEs</span>
+                    </div>
+                    <input type="range" min="0" max="15" step="0.5" value="${state.answersB[0].qtyLaboral}" 
+                        oninput="updateIscaValue('B', 'qtyLaboral', this.value)" 
+                        class="w-full accent-rose-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+                </div>
+                
+                <!-- Días Festivos B -->
+                <div class="space-y-1 pt-2 border-t border-slate-100">
+                    <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                        <span>Días de consumo (Fin de semana y festivos)</span>
+                        <span id="lbl-days-fest-b">${state.answersB[0].daysFestivo} días</span>
+                    </div>
+                    <input type="range" min="0" max="2" step="1" value="${state.answersB[0].daysFestivo}" 
+                        oninput="updateIscaValue('B', 'daysFestivo', this.value)" 
+                        class="w-full accent-rose-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+                </div>
+                
+                <!-- UBEs Festivos B -->
+                <div class="space-y-1">
+                    <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                        <span>Consumo medio diario (fin de semana/festivos)</span>
+                        <span id="lbl-qty-fest-b">${state.answersB[0].qtyFestivo} UBEs</span>
+                    </div>
+                    <input type="range" min="0" max="20" step="0.5" value="${state.answersB[0].qtyFestivo}" 
+                        oninput="updateIscaValue('B', 'qtyFestivo', this.value)" 
+                        class="w-full accent-rose-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+                </div>
+            </div>
+        `;
+    } else {
+        container.className = "grid gap-6 max-w-xl mx-auto";
+    }
+    
+    container.innerHTML = html;
+    recalcIscaTotals();
+}
 
         function updateIscaValue(person, field, val) {
             const numericVal = parseFloat(val);
