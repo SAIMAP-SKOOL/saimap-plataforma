@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIMAP - Comparador y Evaluador Clínico de Consumo de Alcohol</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#F1F5F9', // Gris claro para fondos de cajas internas
+                            card: '#FFFFFF', // Blanco puro para tarjetas
+                            border: '#E2E8F0', // Borde slate-200
+                            indigo: '#4F46E5', // Indigo-600
+                            emerald: '#059669', // Esmeralda-600
+                            rose: '#E11D48', // Rosa-600
+                            amber: '#D97706' // Ámbar-600
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #1E293B; /* Slate-800 */
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #F1F5F9;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #4F46E5;
+        }
+        
+        /* Estilos de impresión clínica optimizada */
+        @media print {
+            body {
+                background: white !important;
+                color: black !important;
+                font-family: 'Times New Roman', Times, serif !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .print-card {
+                background: white !important;
+                border: 1px solid #ddd !important;
+                color: black !important;
+                box-shadow: none !important;
+                margin-bottom: 20px !important;
+                page-break-inside: avoid;
+            }
+            .print-text {
+                color: black !important;
+            }
+            .print-border {
+                border-color: black !important;
+            }
+            .progress-bar-print {
+                border: 1px solid black !important;
+                background: white !important;
+            }
+            .progress-fill-print {
+                background: black !important;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased min-h-screen flex flex-col custom-scrollbar">
+
+    <!-- CABECERA DE LA APLICACIÓN -->
+    <header class="border-b border-slate-200 bg-white/85 backdrop-blur-md sticky top-0 z-30 no-print">
+        <div class="max-w-6xl w-full mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-indigo-600/10 border border-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-600">
+                    <i data-lucide="activity" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <h1 class="text-base font-extrabold tracking-tight text-slate-800 flex items-center gap-1.5">
+                        SAIMAP <span class="text-[10px] font-bold bg-indigo-600/10 text-indigo-600 border border-indigo-500/20 px-1.5 py-0.5 rounded">CLÍNICA</span>
+                    </h1>
+                    <p class="text-[10px] text-slate-500 font-medium">Evaluador & Comparador de Adicciones</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="text-xs text-slate-500 font-medium">Herramienta de Diagnóstico Compartido</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="max-w-6xl w-full mx-auto px-4 py-8 flex-grow flex flex-col justify-center">
+        
+        <!-- PANTALLA 1: CONFIGURACIÓN E INTRODUCCIÓN -->
+        <section id="screen-setup" class="space-y-8 fade-in">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <span class="px-3 py-1 bg-indigo-600/10 text-indigo-600 border border-indigo-500/20 rounded-full text-xs font-bold tracking-wider uppercase inline-flex items-center gap-1.5">
+                    <i data-lucide="shield-check" class="w-4 h-4"></i> Herramienta de Reflexión y Confrontación
+                </span>
+                <h2 class="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">
+                    Desarmando la Negación
+                </h2>
+                <p class="text-sm text-slate-500 leading-relaxed">
+                    Un espacio neutro para evaluar de forma rigurosa y objetiva el impacto real del alcohol. Realiza el test de forma individual o compáralo side-by-side con una persona de confianza para analizar diferencias.
+                </p>
+            </div>
+
+            <!-- PANEL CONFIG -->
+            <div class="grid md:grid-cols-3 gap-8 items-start">
+                
+                <!-- COLUMNA 1: CONFIGURACIÓN DE MODOS -->
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 space-y-6 shadow-md md:col-span-1">
+                    <h3 class="text-sm font-bold text-slate-800 uppercase tracking-wider flex items-center gap-2 border-b border-slate-200 pb-3">
+                        <i data-lucide="sliders" class="w-4.5 h-4.5 text-indigo-600"></i> Configuración
+                    </h3>
+
+                    <!-- Modo de ejecución -->
+                    <div class="space-y-3">
+                        <label class="text-xs font-bold text-slate-500 uppercase">Modo del Test</label>
+                        <div class="grid grid-cols-2 gap-2 bg-slate-100 p-1.5 rounded-2xl border border-slate-200">
+                            <button onclick="setMode('individual')" id="btn-mode-ind" class="py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 bg-white text-indigo-600 shadow-sm border border-slate-200/50">
+                                <i data-lucide="user" class="w-3.5 h-3.5"></i> Individual
+                            </button>
+                            <button onclick="setMode('comparative')" id="btn-mode-comp" class="py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-slate-500 hover:text-slate-800">
+                                <i data-lucide="users" class="w-3.5 h-3.5"></i> Comparativo
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Nombres y Género de Participantes -->
+                    <div class="space-y-4 pt-2">
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold text-slate-600 uppercase flex items-center gap-1">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Nombre Persona A (Tú)
+                            </label>
+                            <input type="text" id="name-a" value="Tú" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 focus:outline-none focus:bg-white focus:border-brand-indigo transition-all" />
+                            
+                            <!-- Género A -->
+                            <div class="flex items-center gap-2 mt-1">
+                                <span class="text-[10px] font-bold text-slate-400 uppercase">Género:</span>
+                                <div class="grid grid-cols-2 gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200/60 w-36">
+                                    <button type="button" onclick="setGender('A', 'male')" id="btn-gender-a-male" class="py-1 rounded-lg text-[10px] font-bold transition-all bg-white text-indigo-600 shadow-sm border border-slate-250/20">Hombre</button>
+                                    <button type="button" onclick="setGender('A', 'female')" id="btn-gender-a-female" class="py-1 rounded-lg text-[10px] font-bold transition-all text-slate-500 hover:text-slate-850">Mujer</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="wrapper-name-b" class="space-y-2 hidden">
+                            <label class="text-xs font-bold text-slate-600 uppercase flex items-center gap-1">
+                                <span class="w-2 h-2 rounded-full bg-rose-500"></span> Nombre Persona B (Ella)
+                            </label>
+                            <input type="text" id="name-b" value="Amiga" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 focus:outline-none focus:bg-white focus:border-brand-indigo transition-all" />
+                            
+                            <!-- Género B -->
+                            <div class="flex items-center gap-2 mt-1">
+                                <span class="text-[10px] font-bold text-slate-400 uppercase">Género:</span>
+                                <div class="grid grid-cols-2 gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200/60 w-36">
+                                    <button type="button" onclick="setGender('B', 'male')" id="btn-gender-b-male" class="py-1 rounded-lg text-[10px] font-bold transition-all text-slate-500 hover:text-slate-850">Hombre</button>
+                                    <button type="button" onclick="setGender('B', 'female')" id="btn-gender-b-female" class="py-1 rounded-lg text-[10px] font-bold transition-all bg-white text-indigo-600 shadow-sm border border-slate-250/20">Mujer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUMNA 2: SELECCIÓN DEL CUESTIONARIO -->
+                <div class="md:col-span-2 space-y-4">
+                    <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-2 border-b border-slate-200 pb-3">
+                        <i data-lucide="clipboard-list" class="w-4 h-4 text-indigo-600"></i> Selecciona un Cuestionario Clínico
+                    </h3>
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        
+                        <!-- CARD AUDIT -->
+                        <div onclick="selectTest('audit')" id="card-test-audit" class="bg-white border-2 border-brand-indigo rounded-3xl p-6 shadow-sm hover:shadow-md hover:border-brand-indigo transition-all cursor-pointer group flex flex-col justify-between h-56">
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-start">
+                                    <div class="p-2.5 bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white rounded-xl transition-colors">
+                                        <i data-lucide="file-text" class="w-5 h-5"></i>
+                                    </div>
+                                    <span class="px-2 py-0.5 text-[9px] font-extrabold bg-indigo-50 text-indigo-600 rounded uppercase border border-indigo-200">Estándar OMS</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-extrabold text-slate-800 text-base">Test AUDIT</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                                        10 preguntas desarrolladas por la OMS. Mide frecuencia, volumen y el patrón de atracón de fin de semana.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-[10px] text-slate-400 font-bold border-t border-slate-100 pt-3 flex items-center gap-1">
+                                <i data-lucide="help-circle" class="w-3.5 h-3.5"></i> 10 ítems • Puntuación Máx: 40
+                            </div>
+                        </div>
+
+                        <!-- CARD CAGE -->
+                        <div onclick="selectTest('cage')" id="card-test-cage" class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm hover:shadow-md hover:border-brand-indigo transition-all cursor-pointer group flex flex-col justify-between h-56">
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-start">
+                                    <div class="p-2.5 bg-slate-100 text-slate-500 group-hover:bg-indigo-600 group-hover:text-white rounded-xl transition-colors">
+                                        <i data-lucide="zap" class="w-5 h-5"></i>
+                                    </div>
+                                    <span class="px-2 py-0.5 text-[9px] font-extrabold bg-amber-50 text-amber-600 rounded uppercase border border-amber-200">Cribado Rápido</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-extrabold text-slate-800 text-base">Test CAGE</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                                        4 preguntas clave enfocadas en la pérdida de control subjetiva, irritación ante las críticas y sentimientos de culpa.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-[10px] text-slate-400 font-bold border-t border-slate-100 pt-3 flex items-center gap-1">
+                                <i data-lucide="help-circle" class="w-3.5 h-3.5"></i> 4 ítems (Sí/No) • Punto de corte: 2
+                            </div>
+                        </div>
+
+                        <!-- CARD SADQ -->
+                        <div onclick="selectTest('sadq')" id="card-test-sadq" class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm hover:shadow-md hover:border-brand-indigo transition-all cursor-pointer group flex flex-col justify-between h-56">
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-start">
+                                    <div class="p-2.5 bg-slate-100 text-slate-500 group-hover:bg-indigo-600 group-hover:text-white rounded-xl transition-colors">
+                                        <i data-lucide="heart-pulse" class="w-5 h-5"></i>
+                                    </div>
+                                    <span class="px-2 py-0.5 text-[9px] font-extrabold bg-rose-50 text-rose-600 rounded uppercase border border-rose-200">Gravedad Física</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-extrabold text-slate-800 text-base">Test SADQ</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                                        33 preguntas clínicas exhaustivas. Mide la severidad física de la abstinencia, rumiación y el malestar al despertar.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-[10px] text-slate-400 font-bold border-t border-slate-100 pt-3 flex items-center gap-1">
+                                <i data-lucide="help-circle" class="w-3.5 h-3.5"></i> 33 ítems • Puntuación Máx: 99
+                            </div>
+                        </div>
+
+                        <!-- CARD MAST -->
+                        <div onclick="selectTest('mast')" id="card-test-mast" class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm hover:shadow-md hover:border-brand-indigo transition-all cursor-pointer group flex flex-col justify-between h-56">
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-start">
+                                    <div class="p-2.5 bg-slate-100 text-slate-500 group-hover:bg-indigo-600 group-hover:text-white rounded-xl transition-colors">
+                                        <i data-lucide="alert-triangle" class="w-5 h-5"></i>
+                                    </div>
+                                    <span class="px-2 py-0.5 text-[9px] font-extrabold bg-emerald-50 text-emerald-600 rounded uppercase border border-emerald-200">Consecuencias Vitales</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-extrabold text-slate-800 text-base">Test MAST</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                                        25 preguntas dicotómicas. Analiza cómo el alcohol afecta a las relaciones familiares, laborales, legales y la salud.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-[10px] text-slate-400 font-bold border-t border-slate-100 pt-3 flex items-center gap-1">
+                                <i data-lucide="help-circle" class="w-3.5 h-3.5"></i> 25 ítems (Sí/No) • Puntuación Máx: 53
+                            </div>
+                        </div>
+
+                        <!-- CARD MALT -->
+                        <div onclick="selectTest('malt')" id="card-test-malt" class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm hover:shadow-md hover:border-brand-indigo transition-all cursor-pointer group flex flex-col justify-between h-56">
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-start">
+                                    <div class="p-2.5 bg-slate-100 text-slate-500 group-hover:bg-indigo-600 group-hover:text-white rounded-xl transition-colors">
+                                        <i data-lucide="check-square" class="w-5 h-5"></i>
+                                    </div>
+                                    <span class="px-2 py-0.5 text-[9px] font-extrabold bg-slate-100 text-slate-650 rounded uppercase border border-slate-200">Autoinforme + Clínico</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-extrabold text-slate-800 text-base">Test MALT</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                                        Munich Alcoholism Test (34 ítems). Vincula la percepción subjetiva del paciente con indicadores médicos reales.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-[10px] text-slate-400 font-bold border-t border-slate-100 pt-3 flex items-center gap-1">
+                                <i data-lucide="help-circle" class="w-3.5 h-3.5"></i> 34 ítems (Sí/No) • Puntuación Máx: 55
+                            </div>
+                        </div>
+
+                        <!-- CARD ISCA -->
+                        <div onclick="selectTest('isca')" id="card-test-isca" class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm hover:shadow-md hover:border-brand-indigo transition-all cursor-pointer group flex flex-col justify-between h-56">
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-start">
+                                    <div class="p-2.5 bg-slate-100 text-slate-500 group-hover:bg-indigo-600 group-hover:text-white rounded-xl transition-colors">
+                                        <i data-lucide="calculator" class="w-5 h-5"></i>
+                                    </div>
+                                    <span class="px-2 py-0.5 text-[9px] font-extrabold bg-indigo-50 text-indigo-650 rounded uppercase border border-indigo-200">Cuantificación UBE</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-extrabold text-slate-800 text-base">Test ISCA</h4>
+                                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                                        Interrogatorio Sistematizado de Consumos. Calcula la ingesta semanal de alcohol puro en Unidades de Bebida Estándar (UBEs).
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-[10px] text-slate-400 font-bold border-t border-slate-100 pt-3 flex items-center gap-1">
+                                <i data-lucide="help-circle" class="w-3.5 h-3.5"></i> Grilla de Registro (28 UBEs H / 17 UBEs M)
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pt-6 flex justify-end">
+                        <button onclick="startTestWizard()" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-2xl font-bold shadow-lg shadow-indigo-600/10 transition-all flex items-center justify-center gap-2">
+                            Comenzar Cuestionario <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PANTALLA 2: WIZARD DE PREGUNTAS -->
+        <section id="screen-wizard" class="hidden max-w-3xl w-full mx-auto space-y-6">
+            
+            <!-- Cabecera de progreso -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-4 flex items-center justify-between shadow-sm">
+                <button onclick="abortTest()" class="text-xs font-bold text-slate-500 hover:text-slate-850 flex items-center gap-1">
+                    <i data-lucide="x" class="w-4 h-4"></i> Salir del Test
+                </button>
+                <div class="text-center">
+                    <span id="wizard-title" class="text-xs font-extrabold text-indigo-600 uppercase tracking-wider">TEST AUDIT</span>
+                    <p id="wizard-progress-text" class="text-[10px] text-slate-400 font-bold uppercase mt-0.5">Pregunta 1 de 10</p>
+                </div>
+                <div class="w-20 bg-slate-100 rounded-full h-2 overflow-hidden border border-slate-200">
+                    <div id="wizard-progress-fill" class="bg-brand-indigo h-full" style="width: 10%"></div>
+                </div>
+            </div>
+
+            <!-- CARD DE PREGUNTA PRINCIPAL -->
+            <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-md space-y-8">
+                
+                <!-- Contenedor estándar (se oculta para ISCA) -->
+                <div id="standard-question-layout" class="space-y-8">
+                    <!-- Enunciado -->
+                    <div class="space-y-2 text-center md:text-left">
+                        <div class="flex items-center gap-2">
+                            <span id="question-category" class="px-2 py-0.5 text-[9px] font-extrabold bg-slate-100 text-slate-650 rounded uppercase tracking-wider">Frecuencia de Consumo</span>
+                            <span id="question-section-badge" class="hidden px-2 py-0.5 text-[9px] font-extrabold bg-indigo-50 text-indigo-650 border border-indigo-200 rounded uppercase tracking-wider">MALT-S</span>
+                        </div>
+                        <h3 id="question-text" class="text-lg md:text-xl font-bold text-slate-800 leading-snug">¿Con qué frecuencia consume alguna bebida alcohólica?</h3>
+                    </div>
+
+                    <!-- BLOQUE DE RESPUESTAS INDIVIDUAL -->
+                    <div id="answers-individual-wrapper" class="space-y-3">
+                        <h4 class="text-[10px] font-black uppercase text-slate-500 tracking-wider flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Respuesta de <span class="name-a-lbl">Tú</span>
+                        </h4>
+                        <div id="options-container-ind" class="grid gap-2.5">
+                            <!-- Las opciones se inyectan dinámicamente -->
+                        </div>
+                    </div>
+
+                    <!-- BLOQUE DE RESPUESTAS COMPARATIVO -->
+                    <div id="answers-comparative-wrapper" class="hidden space-y-6">
+                        <!-- Respuestas de Persona A -->
+                        <div class="space-y-3">
+                            <h4 class="text-[10px] font-black uppercase text-slate-500 tracking-wider flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Respuesta de <span class="name-a-lbl">Tú</span>
+                            </h4>
+                            <div id="options-container-comp-a" class="flex flex-wrap gap-2">
+                                <!-- Inyectado dinámicamente -->
+                            </div>
+                        </div>
+                        
+                        <!-- Divisor -->
+                        <div class="border-t border-slate-100 my-2"></div>
+
+                        <!-- Respuestas de Persona B -->
+                        <div class="space-y-3">
+                            <h4 class="text-[10px] font-black uppercase text-slate-500 tracking-wider flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span> Respuesta de <span class="name-b-lbl">Amiga</span>
+                            </h4>
+                            <div id="options-container-comp-b" class="flex flex-wrap gap-2">
+                                <!-- Inyectado dinámicamente -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenedor ISCA (se muestra solo para ISCA) -->
+                <div id="isca-calculator-wrapper" class="hidden space-y-6">
+                    <div class="text-center max-w-xl mx-auto space-y-1.5">
+                        <span class="px-2 py-0.5 text-[9px] font-extrabold bg-indigo-50 text-indigo-650 border border-indigo-200 rounded uppercase tracking-wider">Calculadora de Consumo Semanal (ISCA)</span>
+                        <h3 class="text-lg font-bold text-slate-800 leading-snug">¿Cuántas UBEs consume habitualmente entre semana y los fines de semana?</h3>
+                        <p class="text-[10px] text-slate-400">Desplace los valores para reflejar su consumo medio semanal.</p>
+                    </div>
+
+                    <div id="isca-grid-container" class="grid gap-6">
+                        <!-- Las columnas de la calculadora se inyectan dinámicamente en base a si es Individual o Comparativo -->
+                    </div>
+
+                    <!-- Guía visual de equivalencias UBE -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 space-y-3">
+                        <h4 class="text-[10px] font-black text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
+                            <i data-lucide="info" class="w-3.5 h-3.5 text-indigo-550"></i> Guía Rápida de Equivalencias de UBE (Unidad de Bebida Estándar = 10g de alcohol)
+                        </h4>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
+                            <div class="bg-white border border-slate-150 p-2.5 rounded-xl">
+                                <div class="text-xs font-bold text-slate-800">1 UBE</div>
+                                <div class="text-[10px] text-slate-500 mt-0.5">1 Caña de cerveza (200ml)</div>
+                                <div class="text-[9px] text-slate-400">o 1 copa de vino (100ml)</div>
+                            </div>
+                            <div class="bg-white border border-slate-150 p-2.5 rounded-xl">
+                                <div class="text-xs font-bold text-slate-800">1 UBE</div>
+                                <div class="text-[10px] text-slate-500 mt-0.5">1 Chupito de licor</div>
+                                <div class="text-[9px] text-slate-400">bebidas destiladas (40ml)</div>
+                            </div>
+                            <div class="bg-white border border-slate-150 p-2.5 rounded-xl">
+                                <div class="text-xs font-bold text-slate-800">1.5 UBEs</div>
+                                <div class="text-[10px] text-slate-500 mt-0.5">1 Tercio de cerveza</div>
+                                <div class="text-[9px] text-slate-400">o botellín (330ml)</div>
+                            </div>
+                            <div class="bg-white border border-slate-150 p-2.5 rounded-xl">
+                                <div class="text-xs font-bold text-slate-800">2 UBEs</div>
+                                <div class="text-[10px] text-slate-500 mt-0.5">1 Combinado / Cubata</div>
+                                <div class="text-[9px] text-slate-400">o jarra de cerveza (400ml)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- NAVEGACIÓN -->
+            <div class="flex items-center justify-between">
+                <button onclick="prevQuestion()" id="btn-prev" class="px-6 py-3 bg-white hover:bg-slate-50 border border-slate-200 text-xs font-bold text-slate-650 rounded-xl transition-all flex items-center gap-1.5 disabled:opacity-40 disabled:cursor-not-allowed shadow-sm">
+                    <i data-lucide="chevron-left" class="w-4 h-4"></i> Anterior
+                </button>
+                <button onclick="nextQuestion()" id="btn-next" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-xs font-bold text-white rounded-xl transition-all flex items-center gap-1.5 disabled:opacity-40 disabled:cursor-not-allowed shadow-md shadow-indigo-600/5">
+                    Siguiente <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- PANTALLA 3: PANTALLA DE RESULTADOS -->
+        <section id="screen-results" class="hidden space-y-8">
+            
+            <!-- CABECERA DE RESULTADOS -->
+            <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-md flex flex-col md:flex-row md:items-center justify-between gap-6 print-card">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="px-3 py-1 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-full text-xs font-bold tracking-wider uppercase inline-flex items-center gap-1">
+                            <i data-lucide="activity" class="w-3.5 h-3.5"></i> Informe de Evaluación Clínico
+                        </span>
+                    </div>
+                    <h2 class="text-2xl font-black text-slate-800" id="results-headline">Resultados del Cuestionario</h2>
+                    <p class="text-xs text-slate-400 font-medium" id="results-meta-text">Fecha de evaluación: 06 de junio de 2026 • Instrumento: AUDIT (OMS)</p>
+                </div>
+                <div class="flex gap-3 no-print">
+                    <button onclick="window.print()" class="px-5 py-2.5 bg-white border border-slate-200 hover:bg-slate-50 text-xs font-bold text-slate-650 rounded-xl transition-all flex items-center gap-2 shadow-sm">
+                        <i data-lucide="printer" class="w-4 h-4"></i> Imprimir Reporte
+                    </button>
+                    <button onclick="restartApp()" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-xs font-bold text-white rounded-xl transition-all flex items-center gap-2 shadow-lg shadow-indigo-600/10">
+                        <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Realizar otro Test
+                    </button>
+                </div>
+            </div>
+
+            <!-- RESULTADOS INDIVIDUALES / COMPARATIVOS (Gauges de puntuación) -->
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                
+                <!-- GAUGES O BARRAS DE PROGRESO DE PUNTUACIÓN -->
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-md flex flex-col justify-between print-card">
+                    <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-2 border-b border-slate-200 pb-3">
+                        <i data-lucide="bar-chart-2" class="w-4.5 h-4.5 text-indigo-600"></i> Puntuaciones Obtenidas
+                    </h3>
+                    
+                    <div class="space-y-8 py-6">
+                        <!-- Score Persona A -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="font-bold text-slate-700 flex items-center gap-2">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> <span class="name-a-lbl">Tú</span>
+                                </span>
+                                <span class="font-black text-slate-800"><span id="score-val-a">0</span> <span class="text-slate-400 text-xs font-normal">/ <span class="max-score-lbl">40</span></span></span>
+                            </div>
+                            <div class="w-full bg-slate-100 rounded-full h-3.5 border border-slate-200 overflow-hidden progress-bar-print">
+                                <div id="score-bar-a" class="bg-emerald-500 h-full rounded-full transition-all duration-1000 progress-fill-print" style="width: 0%"></div>
+                            </div>
+                            <div class="flex justify-between items-center text-[10px] text-slate-400 font-bold uppercase">
+                                <span id="risk-badge-a" class="text-emerald-600">Sin Riesgo</span>
+                                <span class="max-score-lbl-full">Max: 40 pts</span>
+                            </div>
+                        </div>
+
+                        <!-- Score Persona B (Solo en comparativo) -->
+                        <div id="wrapper-results-b" class="space-y-2 hidden">
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="font-bold text-slate-700 flex items-center gap-2">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span> <span class="name-b-lbl">Amiga</span>
+                                </span>
+                                <span class="font-black text-slate-800"><span id="score-val-b">0</span> <span class="text-slate-400 text-xs font-normal">/ <span class="max-score-lbl">40</span></span></span>
+                            </div>
+                            <div class="w-full bg-slate-100 rounded-full h-3.5 border border-slate-200 overflow-hidden progress-bar-print">
+                                <div id="score-bar-b" class="bg-rose-500 h-full rounded-full transition-all duration-1000 progress-fill-print" style="width: 0%"></div>
+                            </div>
+                            <div class="flex justify-between items-center text-[10px] text-slate-400 font-bold uppercase">
+                                <span id="risk-badge-b" class="text-rose-600">Riesgo Alto</span>
+                                <span class="max-score-lbl-full">Max: 40 pts</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interpretación rápida clínica -->
+                    <div id="clinical-summary-box" class="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs text-slate-650 leading-relaxed print-card">
+                        <!-- Inyectado dinámicamente -->
+                    </div>
+                </div>
+
+                <!-- DIAGNÓSTICO COMPARATIVO Y CLAVES PSICOLÓGICAS -->
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-md flex flex-col justify-between print-card">
+                    <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-2 border-b border-slate-200 pb-3">
+                        <i data-lucide="brain" class="w-4.5 h-4.5 text-indigo-600"></i> Análisis de Procesos y Conclusiones
+                    </h3>
+
+                    <div id="analysis-insights-container" class="space-y-4 py-4 flex-grow custom-scrollbar overflow-y-auto max-h-[300px] text-xs leading-relaxed text-slate-600">
+                        <!-- Las conclusiones de reestructuración y reducción de daños se inyectan aquí -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMPARTIMENTACIÓN Y TABLA DE PREGUNTAS (DETALLE) -->
+            <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-md print-card">
+                <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-2 border-b border-slate-200 pb-4 mb-4">
+                    <i data-lucide="list" class="w-4.5 h-4.5 text-indigo-600"></i> Desglose de Respuestas e Impacto Clínico
+                </h3>
+
+                <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-slate-50/50">
+                    <table class="w-full text-left border-collapse text-xs">
+                        <thead>
+                            <tr class="bg-slate-100 border-b border-slate-200 text-slate-600 font-bold">
+                                <th class="p-4 w-12 text-center">Nº</th>
+                                <th class="p-4">Pregunta / Ítem Clínico</th>
+                                <th class="p-4 w-40 text-center name-a-col"><span class="name-a-lbl">Tú</span></th>
+                                <th class="p-4 w-40 text-center name-b-col hidden"><span class="name-b-lbl">Amiga</span></th>
+                            </tr>
+                        </thead>
+                        <tbody id="results-table-body" class="divide-y divide-slate-150 text-slate-700">
+                            <!-- Inyectado dinámicamente -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- SECCIÓN DE RECURSOS CLÍNICOS Y AYUDA (PÚBLICO Y GRATUITO EN ESPAÑA) -->
+            <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-md space-y-4 print-card">
+                <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-2 border-b border-slate-200 pb-4">
+                    <i data-lucide="help-circle" class="w-4.5 h-4.5 text-indigo-600"></i> Red de Apoyo y Recursos de Ayuda Gratuitos (España)
+                </h3>
+                
+                <div class="grid md:grid-cols-3 gap-6 pt-2">
+                    
+                    <!-- Recurso 1: Médico de Cabecera y UCAs -->
+                    <div class="bg-slate-50 border border-slate-200/60 rounded-2xl p-5 space-y-3">
+                        <div class="flex items-center gap-2 text-indigo-600 font-bold text-xs">
+                            <i data-lucide="stethoscope" class="w-4 h-4"></i>
+                            <span>Atención Primaria y UCAs / CADs</span>
+                        </div>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">
+                            El <b>Médico de Cabecera</b> de la Seguridad Social es la vía de acceso directo y gratuita. Él se encargará de realizar la derivación a especialistas en salud mental o a la <b>UCA (Unidad de Conductas Adictivas)</b> o <b>CAD (Centro de Atención a las Adicciones)</b> del municipio, que ofrecen terapia psicológica especializada sin costes.
+                        </p>
+                    </div>
+
+                    <!-- Recurso 2: CAARFE -->
+                    <div class="bg-slate-50 border border-slate-200/60 rounded-2xl p-5 space-y-3">
+                        <div class="flex items-center gap-2 text-indigo-600 font-bold text-xs">
+                            <i data-lucide="users" class="w-4 h-4"></i>
+                            <span>CAARFE (Asociaciones de Alcohólicos)</span>
+                        </div>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">
+                            La **Confederación de Alcohólicos Adictos Liberados (CAARFE)** agrupa a asociaciones de toda España. Ofrecen orientación y terapia de grupo de forma totalmente confidencial y gratuita para personas que desean revisar o cesar su consumo de alcohol.
+                        </p>
+                        <a href="https://caarfe.org" target="_blank" class="text-[10px] font-bold text-indigo-600 hover:underline flex items-center gap-1.5 no-print">
+                            Visitar web de CAARFE <i data-lucide="external-link" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+
+                    <!-- Recurso 3: Al-Anon / Grupos Familiares -->
+                    <div class="bg-slate-50 border border-slate-200/60 rounded-2xl p-5 space-y-3">
+                        <div class="flex items-center gap-2 text-indigo-600 font-bold text-xs">
+                            <i data-lucide="shield-check" class="w-4 h-4"></i>
+                            <span>Al-Anon y Alateen (Familiares)</span>
+                        </div>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">
+                            Específico para **familiares y amigos de alcohólicos**. Ayuda de manera gratuita a gestionar las emociones, entender la codependencia y liberar el dolor de traumas familiares sistémicos (padres, hermanos). No es necesario que el familiar consumidor esté en tratamiento para asistir.
+                        </p>
+                        <a href="https://al-anon-es.org" target="_blank" class="text-[10px] font-bold text-indigo-600 hover:underline flex items-center gap-1.5 no-print">
+                            Visitar Al-Anon España <i data-lucide="external-link" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-200 bg-white py-6 text-center text-xs text-slate-400 no-print mt-auto">
+        <p>© 2026 SAIMAP. Desarrollado con base en guías clínicas y protocolos oficiales de la Organización Mundial de la Salud (OMS).</p>
+    </footer>
+
+    <!-- LOGICA JAVASCRIPT DE LA APLICACIÓN -->
+    <script>
+        // CUESTIONARIOS CLÍNICOS DEFINIDOS
+        const testData = {
+            audit: {
+                title: "Test AUDIT (OMS)",
+                description: "Cuestionario de Identificación de Trastornos por Consumo de Alcohol",
+                maxScore: 40,
+                questions: [
+                    {
+                        q: "¿Con qué frecuencia consume alguna bebida alcohólica?",
+                        category: "Consumo y Frecuencia",
+                        opts: [
+                            { text: "Nunca", val: 0 },
+                            { text: "Una o menos veces al mes", val: 1 },
+                            { text: "Dos a cuatro veces al mes", val: 2 },
+                            { text: "Dos o tres veces a la semana", val: 3 },
+                            { text: "Cuatro o más veces a la semana", val: 4 }
+                        ]
+                    },
+                    {
+                        q: "¿Cuántas consumiciones de alcohol suele realizar en un día de consumo normal?",
+                        category: "Consumo y Frecuencia",
+                        opts: [
+                            { text: "1 o 2 consumiciones (caña, vino, chupito)", val: 0 },
+                            { text: "3 o 4 consumiciones", val: 1 },
+                            { text: "5 o 6 consumiciones", val: 2 },
+                            { text: "7 a 9 consumiciones", val: 3 },
+                            { text: "10 o más consumiciones (5 cubatas)", val: 4 }
+                        ]
+                    },
+                    {
+                        q: "¿Con qué frecuencia toma seis o más consumiciones en una sola ocasión? (Binge drinking)",
+                        category: "Consumo y Frecuencia",
+                        opts: [
+                            { text: "Nunca", val: 0 },
+                            { text: "Menos de una vez al mes", val: 1 },
+                            { text: "Mensualmente", val: 2 },
+                            { text: "Semanalmente", val: 3 },
+                            { text: "A diario o casi a diario", val: 4 }
+                        ]
+                    },
+                    {
+                        q: "¿Con qué frecuencia en el curso del último año ha sido incapaz de parar de beber una vez había empezado?",
+                        category: "Dependencia Psicológica",
+                        opts: [
+                            { text: "Nunca", val: 0 },
+                            { text: "Menos de una vez al mes", val: 1 },
+                            { text: "Mensualmente", val: 2 },
+                            { text: "Semanalmente", val: 3 },
+                            { text: "A diario o casi a diario", val: 4 }
+                        ]
+                    },
+                    {
+                        q: "¿Con qué frecuencia en el curso del último año no pudo hacer lo que se esperaba de usted porque había bebido?",
+                        category: "Daño Social y Laboral",
+                        opts: [
+                            { text: "Nunca", val: 0 },
+                            { text: "Menos de una vez al mes", val: 1 },
+                            { text: "Mensualmente", val: 2 },
+                            { text: "Semanalmente", val: 3 },
+                            { text: "A diario o casi a diario", val: 4 }
+                        ]
+                    },
+                    {
+                        q: "¿Con qué frecuencia en el curso del último año ha necesitado beber en ayunas para recuperarse después de haber bebido mucho el día anterior?",
+                        category: "Dependencia Física",
+                        opts: [
+                            { text: "Nunca", val: 0 },
+                            { text: "Menos de una vez al mes", val: 1 },
+                            { text: "Mensualmente", val: 2 },
+                            { text: "Semanalmente", val: 3 },
+                            { text: "A diario o casi a diario", val: 4 }
+                        ]
+                    },
+                    {
+                        q: "¿Con qué frecuencia en el curso del último año ha tenido remordimientos o sentimientos de culpa después de haber bebido? (Bajón emocional)",
+                        category: "Consecuencias Afectivas",
+                        opts: [
+                            { text: "Nunca", val: 0 },
+                            { text: "Menos de una vez al mes", val: 1 },
+                            { text: "Mensualmente", val: 2 },
+                            { text: "Semanalmente", val: 3 },
+                            { text: "A diario o casi a diario", val: 4 }
+                        ]
+                    },
+                    {
+                        q: "¿Con qué frecuencia en el curso del último año no ha podido recordar lo que sucedió la noche anterior porque había estado bebiendo? (Lagunas de memoria)",
+                        category: "Daño Cognitivo",
+                        opts: [
+                            { text: "Nunca", val: 0 },
+                            { text: "Menos de una vez al mes", val: 1 },
+                            { text: "Mensualmente", val: 2 },
+                            { text: "Semanalmente", val: 3 },
+                            { text: "A diario o casi a diario", val: 4 }
+                        ]
+                    },
+                    {
+                        q: "¿Usted o alguna otra persona han resultado heridos porque usted había bebido?",
+                        category: "Riesgos Físicos",
+                        opts: [
+                            { text: "No", val: 0 },
+                            { text: "Sí, pero no en el último año", val: 2 },
+                            { text: "Sí, durante el último año", val: 4 }
+                        ]
+                    },
+                    {
+                        q: "¿Algún familiar, amigo o profesional sanitario se ha preocupado por su consumo o le ha sugerido que deje de beber?",
+                        category: "Percepción del Entorno",
+                        opts: [
+                            { text: "No", val: 0 },
+                            { text: "Sí, pero no en el último año", val: 2 },
+                            { text: "Sí, durante el último año", val: 4 }
+                        ]
+                    }
+                ]
+            },
+            cage: {
+                title: "Test CAGE",
+                description: "Cribado de Dependencia de Alcohol",
+                maxScore: 4,
+                questions: [
+                    {
+                        q: "¿Ha tenido alguna vez la impresión de que debería beber menos?",
+                        category: "Control",
+                        opts: [{ text: "Sí", val: 1 }, { text: "No", val: 0 }]
+                    },
+                    {
+                        q: "¿Le ha molestado alguna vez que la gente critique su forma de beber?",
+                        category: "Reactividad Social",
+                        opts: [{ text: "Sí", val: 1 }, { text: "No", val: 0 }]
+                    },
+                    {
+                        q: "¿Se ha sentido alguna vez mal o culpable por su costumbre de beber?",
+                        category: "Culpa",
+                        opts: [{ text: "Sí", val: 1 }, { text: "No", val: 0 }]
+                    },
+                    {
+                        q: "¿Alguna vez lo primero que ha hecho por la mañana ha sido beber para calmar sus nervios o librarse de una resaca?",
+                        category: "Dependencia Física",
+                        opts: [{ text: "Sí", val: 1 }, { text: "No", val: 0 }]
+                    }
+                ]
+            },
+            sadq: {
+                title: "Test SADQ",
+                description: "Cuestionario de Gravedad de la Dependencia al Alcohol",
+                maxScore: 99,
+                questions: [] // Se rellena en la inicialización
+            },
+            mast: {
+                title: "Test MAST",
+                description: "Michigan Alcoholism Screening Test",
+                maxScore: 53,
+                questions: [] // Se rellena en la inicialización
+            },
+            malt: {
+                title: "Test MALT (Múnich)",
+                description: "Munich Alcoholism Test (MALT-S y MALT-O)",
+                maxScore: 55,
+                questions: [] // Se rellena en la inicialización
+            },
+            isca: {
+                title: "Test ISCA",
+                description: "Interrogatorio Sistematizado de Consumos Alcohólicos",
+                maxScore: 50,
+                questions: [
+                    {
+                        q: "Calculadora de Consumo Semanal (ISCA)",
+                        category: "Consumo Semanal",
+                        opts: []
+                    }
+                ]
+            }
+        };
+
+        // INICIALIZACIÓN DE PREGUNTAS SADQ
+        const sadqQuestions = [
+            "Me despertaba sudando",
+            "Tenía palpitaciones a primera hora de la mañana",
+            "Me temblaban las manos a primera hora de la mañana",
+            "Tenía náuseas a primera hora de la mañana",
+            "Todo mi cuerpo temblaba violentamente, si no bebía algo",
+            "Me despertaba completamente bañado en sudor",
+            "Vomitaba a primera hora de la mañana",
+            "Temía que llegase la hora de levantarme",
+            "Temía encontrarme con alguien a primera hora de la mañana",
+            "Me encontraba a disgusto al despertarme por la mañana",
+            "Me sentía próximo a la desesperación al despertarme",
+            "Me sentía aturdido al despertarme",
+            "Me sentía muy nervioso al despertarme",
+            "Me sentía asustado al despertarme",
+            "Me gustaba beber alcohol por la mañana",
+            "Me aseguraba de que me quedara algo de alcohol para por la mañana",
+            "Tenía ganas de beber alcohol al despertarme",
+            "Me tomaba lo antes posible y de un trago las primeras copas de la mañana",
+            "Consumía por lo menos 4 copas de licor durante la hora siguiente a haberme levantado (el equivalente es una botella de vino o 9 cañas de cerveza)",
+            "Bebía por la mañana para calmar los temblores",
+            "Sentía una fuerte necesidad de alcohol al despertarme",
+            "Bebía más de 4 copas de licor al día (el equivalente es una botella de vino o 9 cañas de cerveza)",
+            "Bebía más de 8 copas de licor al día (el equivalente son 2 botellas de vino o 18 cañas de cerveza)",
+            "Bebía más de 16 copas de licor al día (el equivalente son 4 botellas de vino o 36 cañas de cerveza)",
+            "Bebía más de 32 copas de licor al día (el equivalente son 8 botellas de vino o 72 cañas de cerveza)",
+            "Llegaba a beber en menos de 1 hora 8 copas de licor (el equivalente son 2 botellas de vino o 18 cañas de cerveza)",
+            "Llegaba a beber en menos de 1 hora 16 copas de licor (el equivalente son 4 botellas de vino o 36 cañas de cerveza)",
+            // Bloque recaída
+            "Por la mañana comenzaría a sudar",
+            "Tendría palpitaciones",
+            "Tendría temblor en las manos",
+            "Tendría náuseas",
+            "Mi cuerpo temblaría",
+            "Mis deseos por beber serían"
+        ];
+
+        // Añadir a SADQ
+        sadqQuestions.forEach((qText, idx) => {
+            const isRelapse = idx >= 27;
+            const category = isRelapse ? "Síntomas tras recaída" : (idx < 14 ? "Síntomas físicos/afectivos de retirada" : (idx < 20 ? "Alivio por mañana" : "Volumen de consumo"));
+            const opts = isRelapse ? [
+                { text: "Nada", val: 0 },
+                { text: "Un poco", val: 1 },
+                { text: "Moderadamente", val: 2 },
+                { text: "Bastante", val: 3 }
+            ] : [
+                { text: "Nunca o casi nunca", val: 0 },
+                { text: "A veces", val: 1 },
+                { text: "Frecuentemente", val: 2 },
+                { text: "Casi siempre", val: 3 }
+            ];
+            testData.sadq.questions.push({
+                q: isRelapse ? `[En caso de recaída de 2 días] ${qText}` : qText,
+                category: category,
+                opts: opts
+            });
+        });
+
+        // INICIALIZACIÓN DE PREGUNTAS MAST
+        const mastQuestionsText = [
+            "¿Se considera un bebedor normal?", // 1 (NO=2)
+            "¿Se ha despertado en alguna ocasión por la mañana, después de beber la noche anterior, y se ha dado cuenta de que no puede recordar parte de lo ocurrido esa noche?", // 2 (SI=2)
+            "¿Su familia o amigos se preocupan por lo que bebe?", // 3 (SI=2)
+            "¿Puede dejar de beber sin dificultad después de una o dos copas?", // 4 (NO=2)
+            "¿Alguna vez se ha sentido culpable por lo que bebe?", // 5 (SI=1)
+            "¿Piensan sus amigos o familiares que es usted un bebedor normal?", // 6 (NO=2)
+            "¿Ha intentado limitar su consumo de alcohol a algunos momentos del día o algunos lugares?", // 7 (SI=2)
+            "¿Es siempre capaz de parar de beber cuando se lo propone?", // 8 (NO=2)
+            "¿Ha ido en alguna ocasión a una reunión de Alcohólicos Anónimos o cualquier otro grupo de autoayuda?", // 9 (SI=5)
+            "¿Alguna vez se ha metido en peleas cuando ha bebido?", // 10 (SI=1)
+            "¿Ha tenido problemas con sus amigos o familiares a causa de la bebida?", // 11 (SI=2)
+            "¿Sus amigos o familiares han buscado ayuda para solucionar su consumo?", // 12 (SI=2)
+            "¿Alguna vez ha perdido un trabajo o ha sido expulsado del colegio por motivos relacionados con el alcohol?", // 13 (SI=2)
+            "¿Se ha metido en problemas en el trabajo por haber bebido?", // 14 (SI=2)
+            "¿Ha perdido algún trabajo por motivo de su consumo de alcohol?", // 15 (SI=2)
+            "¿Alguna vez por haber bebido no ha cumplido con sus obligaciones, su familia o su trabajo, durante dos o más días consecutivos?", // 16 (SI=2)
+            "¿Bebe antes de mediodía?", // 17 (SI=1)
+            "¿Le han diagnosticado algún problema de hígado, como por ejemplo cirrosis?", // 18 (SI=2)
+            "¿Alguna vez ha tenido un Deliriums Tremens, convulsiones o alucinaciones?", // 19 (SI=5)
+            "¿Ha solicitado ayuda en relación con su bebida?", // 20 (SI=5)
+            "¿Ha necesitado atención hospitalaria urgente por motivos relacionados con el alcohol?", // 21 (SI=5)
+            "¿Ha estado ingresado como paciente en algún hospital psiquiátrico en el que la bebida fuera uno de los problemas tratados?", // 22 (SI=2)
+            "¿Ha recibido atención médica ambulatoria, o de algún trabajador social o confesor, por problemas emocionales que estuvieran relacionados de algún modo con el alcohol?", // 23 (SI=2)
+            "¿Alguna vez ha sido arrestado, incluso unas pocas horas, debido a su conducta como consecuencia del alcohol?", // 24 (SI=2)
+            "¿Ha sido detenido por conducir bajo los efectos del alcohol?" // 25 (SI=2)
+        ];
+
+        const mastWeights = {
+            1: { type: 'normal_no', val: 2 },
+            2: { type: 'yes', val: 2 },
+            3: { type: 'yes', val: 2 },
+            4: { type: 'normal_no', val: 2 },
+            5: { type: 'yes', val: 1 },
+            6: { type: 'normal_no', val: 2 },
+            7: { type: 'yes', val: 2 },
+            8: { type: 'normal_no', val: 2 },
+            9: { type: 'yes', val: 5 },
+            10: { type: 'yes', val: 1 },
+            11: { type: 'yes', val: 2 },
+            12: { type: 'yes', val: 2 },
+            13: { type: 'yes', val: 2 },
+            14: { type: 'yes', val: 2 },
+            15: { type: 'yes', val: 2 },
+            16: { type: 'yes', val: 2 },
+            17: { type: 'yes', val: 1 },
+            18: { type: 'yes', val: 2 },
+            19: { type: 'yes', val: 5 },
+            20: { type: 'yes', val: 5 },
+            21: { type: 'yes', val: 5 },
+            22: { type: 'yes', val: 2 },
+            23: { type: 'yes', val: 2 },
+            24: { type: 'yes', val: 2 },
+            25: { type: 'yes', val: 2 }
+        };
+
+        mastQuestionsText.forEach((qText, idx) => {
+            const qNum = idx + 1;
+            const category = qNum === 9 || qNum === 20 || qNum === 22 || qNum === 23 ? "Búsqueda de ayuda" : (qNum === 13 || qNum === 14 || qNum === 15 || qNum === 16 || qNum === 24 || qNum === 25 ? "Consecuencias sociales/legales" : (qNum === 1 || qNum === 4 || qNum === 8 ? "Control del consumo" : "Síntomas físicos/afectivos"));
+            testData.mast.questions.push({
+                q: qText,
+                category: category,
+                opts: [
+                    { text: "Sí", val: mastWeights[qNum].type === 'yes' ? mastWeights[qNum].val : 0 },
+                    { text: "No", val: mastWeights[qNum].type === 'normal_no' ? mastWeights[qNum].val : 0 }
+                ]
+            });
+        });
+
+        // INICIALIZACIÓN DE PREGUNTAS MALT
+        const maltQuestionsList = [
+            { q: "En los últimos tiempos me tiemblan a menudo las manos.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "A temporadas, sobre todo por las mañanas, tengo una sensación nauseosa o ganas de vomitar.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Alguna vez he intentado calmar la resaca, el temblor o la náusea matutina con alcohol.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Actualmente, me siento amargado/a por mis problemas y dificultades.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "No es raro que beba alcohol antes del desayuno o del almuerzo.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Tras los primeros vasos de una bebida alcohólica, a veces siento la necesidad irresistible de seguir bebiendo.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "A menudo pienso en el alcohol.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "A veces he bebido alcohol, incluso cuando el médico/a me lo había prohibido.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "En las temporadas en que bebo más, como menos.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "En el trabajo, me han llamado ya la atención por mis ingestas de alcohol y/o alguna vez he faltado al trabajo por haber bebido.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Últimamente prefiero beber el alcohol a solas (y sin que me vean).", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Bebo de un trago y más de prisa que los demás.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Desde que bebo más, soy menos activo/a.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "A menudo me remuerde la conciencia (sentimiento de culpa) después de haber bebido.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "He ensayado un sistema para beber (p. ej., no beber antes de determinadas horas).", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Creo que debería limitar mis ingestas de alcohol.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Sin alcohol, no tendría tantos problemas.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Cuando estoy excitado/a, bebo alcohol para calmarme.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Creo que el alcohol está destruyendo mi vida.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Tan pronto quiero dejar de beber como cambio de idea y vuelvo a beber.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Otras personas no pueden comprender por qué bebo.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Si yo no bebiera, me llevaría mejor con mi esposa o pareja.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Ya he probado pasar temporadas sin alcohol.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Si no bebiera, estaría contento conmigo mismo/a.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Repetidamente me han mencionado mi “aliento alcohólico”.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "Aguanto cantidades importantes de alcohol sin apenas notarlo.", category: "Autoinforme (MALT-S)", isClinical: false },
+            { q: "A veces, al despertar después de un día de haber bebido mucho, aunque sin embriagarme, no recuerdo en absoluto las cosas que ocurrieron la víspera.", category: "Autoinforme (MALT-S)", isClinical: false },
+            
+            // MALT-O
+            { q: "Enfermedad hepática (mínimo un síntoma clínico; p.ej. consistencia aumentada, hepatomegalia, dolor a la presión, etc, y al menos un valor de laboratorio patológico: p.ej. GOT, GPT o GGT alcohólica/desconocida).", category: "Valoración Clínica (MALT-O)", isClinical: true },
+            { q: "Polineuropatía (sólo procede cuando no existen otras causas conocidas, p.ej. diabetes mellitus o intoxicaciones crónicas específicas).", category: "Valoración Clínica (MALT-O)", isClinical: true },
+            { q: "Delirium tremens (actual o en la anamnesis).", category: "Valoración Clínica (MALT-O)", isClinical: true },
+            { q: "Consumo alcohólico superior a los 150 ml (en la mujer, 120 ml) de alcohol puro al día, al menos durante unos meses.", category: "Valoración Clínica (MALT-O)", isClinical: true },
+            { q: "Consumo alcohólico superior a los 300 ml (en la mujer, 240 ml) de alcohol puro, una o más veces al mes.", category: "Valoración Clínica (MALT-O)", isClinical: true },
+            { q: "Fetor alcohólico (en el momento de la exploración médica).", category: "Valoración Clínica (MALT-O)", isClinical: true },
+            { q: "Los familiares o allegados ya han buscado, en una ocasión, consejo acerca del problema alcohólico del paciente.", category: "Valoración Clínica (MALT-O)", isClinical: true }
+        ];
+
+        maltQuestionsList.forEach(q => {
+            testData.malt.questions.push({
+                q: q.q,
+                category: q.category,
+                isClinical: q.isClinical,
+                opts: [
+                    { text: "Sí", val: q.isClinical ? 4 : 1 },
+                    { text: "No", val: 0 }
+                ]
+            });
+        });
+
+        // ESTADO GLOBAL DE LA APP
+        let state = {
+            mode: 'individual', // 'individual' o 'comparative'
+            selectedTest: 'audit',
+            currentQuestionIndex: 0,
+            nameA: 'Tú',
+            nameB: 'Amiga',
+            genderA: 'male',   // 'male' o 'female'
+            genderB: 'female', // 'male' o 'female'
+            answersA: {}, // questionIndex -> optIndex
+            answersB: {}  // questionIndex -> optIndex
+        };
+
+        // EVENTOS DE CAMBIO DE GÉNERO
+        function setGender(person, gender) {
+            if (person === 'A') {
+                state.genderA = gender;
+                const btnMale = document.getElementById('btn-gender-a-male');
+                const btnFemale = document.getElementById('btn-gender-a-female');
+                if (gender === 'male') {
+                    btnMale.className = "py-1 rounded-lg text-[10px] font-bold transition-all bg-white text-indigo-600 shadow-sm border border-slate-250/20";
+                    btnFemale.className = "py-1 rounded-lg text-[10px] font-bold transition-all text-slate-500 hover:text-slate-850";
+                } else {
+                    btnFemale.className = "py-1 rounded-lg text-[10px] font-bold transition-all bg-white text-indigo-600 shadow-sm border border-slate-250/20";
+                    btnMale.className = "py-1 rounded-lg text-[10px] font-bold transition-all text-slate-500 hover:text-slate-850";
+                }
+            } else {
+                state.genderB = gender;
+                const btnMale = document.getElementById('btn-gender-b-male');
+                const btnFemale = document.getElementById('btn-gender-b-female');
+                if (gender === 'male') {
+                    btnMale.className = "py-1 rounded-lg text-[10px] font-bold transition-all bg-white text-indigo-600 shadow-sm border border-slate-250/20";
+                    btnFemale.className = "py-1 rounded-lg text-[10px] font-bold transition-all text-slate-500 hover:text-slate-850";
+                } else {
+                    btnFemale.className = "py-1 rounded-lg text-[10px] font-bold transition-all bg-white text-indigo-600 shadow-sm border border-slate-250/20";
+                    btnMale.className = "py-1 rounded-lg text-[10px] font-bold transition-all text-slate-500 hover:text-slate-850";
+                }
+            }
+        }
+
+        // EVENTOS DE CAMBIO DE MODO
+        function setMode(mode) {
+            state.mode = mode;
+            const btnInd = document.getElementById('btn-mode-ind');
+            const btnComp = document.getElementById('btn-mode-comp');
+            const wrapperNameB = document.getElementById('wrapper-name-b');
+
+            if (mode === 'individual') {
+                btnInd.className = "py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 bg-white text-indigo-600 shadow-sm border border-slate-200/50";
+                btnComp.className = "py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-slate-500 hover:text-slate-800";
+                wrapperNameB.classList.add('hidden');
+            } else {
+                btnComp.className = "py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 bg-white text-indigo-600 shadow-sm border border-slate-200/50";
+                btnInd.className = "py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-slate-500 hover:text-slate-800";
+                wrapperNameB.classList.remove('hidden');
+            }
+        }
+
+        // EVENTO DE SELECCIÓN DE CUESTIONARIO
+        function selectTest(testKey) {
+            state.selectedTest = testKey;
+            
+            // Actualizar clases de los bordes
+            ['audit', 'cage', 'sadq', 'mast', 'malt', 'isca'].forEach(key => {
+                const card = document.getElementById(`card-test-${key}`);
+                if (!card) return;
+                if (key === testKey) {
+                    card.className = "bg-white border-2 border-brand-indigo rounded-3xl p-6 shadow-sm hover:shadow-md hover:border-brand-indigo transition-all cursor-pointer group flex flex-col justify-between h-56";
+                    const badge = card.querySelector('div div');
+                    badge.className = "p-2.5 bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white rounded-xl transition-colors";
+                } else {
+                    card.className = "bg-white border border-slate-200 rounded-3xl p-6 shadow-sm hover:shadow-md hover:border-brand-indigo transition-all cursor-pointer group flex flex-col justify-between h-56";
+                    const badge = card.querySelector('div div');
+                    badge.className = "p-2.5 bg-slate-100 text-slate-500 group-hover:bg-indigo-600 group-hover:text-white rounded-xl transition-colors";
+                }
+            });
+        }
+
+        // CONTROLADORES DE PANTALLA
+        function startTestWizard() {
+            // Guardar nombres
+            state.nameA = document.getElementById('name-a').value.trim() || 'Tú';
+            state.nameB = document.getElementById('name-b').value.trim() || 'Amiga';
+
+            // Actualizar etiquetas en la interfaz
+            document.querySelectorAll('.name-a-lbl').forEach(el => el.textContent = state.nameA);
+            document.querySelectorAll('.name-b-lbl').forEach(el => el.textContent = state.nameB);
+
+            // Reiniciar respuestas
+            state.answersA = {};
+            state.answersB = {};
+            state.currentQuestionIndex = 0;
+
+            if (state.selectedTest === 'isca') {
+                state.answersA[0] = { daysLaboral: 0, qtyLaboral: 0, daysFestivo: 0, qtyFestivo: 0 };
+                state.answersB[0] = { daysLaboral: 0, qtyLaboral: 0, daysFestivo: 0, qtyFestivo: 0 };
+            }
+
+            // Cambiar de pantalla
+            document.getElementById('screen-setup').classList.add('hidden');
+            document.getElementById('screen-wizard').classList.remove('hidden');
+
+            // Actualizar UI del wizard
+            updateWizardUI();
+        }
+
+        function abortTest() {
+            if (confirm("¿Estás seguro de que quieres salir del cuestionario? Se perderán las respuestas introducidas.")) {
+                restartApp();
+            }
+        }
+
+        function restartApp() {
+            document.getElementById('screen-wizard').classList.add('hidden');
+            document.getElementById('screen-results').classList.add('hidden');
+            document.getElementById('screen-setup').classList.remove('hidden');
+            window.scrollTo(0, 0);
+        }
+
+        // RENDERIZADO DEL WIZARD DE PREGUNTAS
+        function updateWizardUI() {
+            const test = testData[state.selectedTest];
+            const qCount = test.questions.length;
+            const currentQ = test.questions[state.currentQuestionIndex];
+
+            // Título y progreso
+            document.getElementById('wizard-title').textContent = test.title.toUpperCase();
+            document.getElementById('wizard-progress-text').textContent = `Pregunta ${state.currentQuestionIndex + 1} de ${qCount}`;
+            
+            const progressPercent = ((state.currentQuestionIndex + 1) / qCount) * 100;
+            document.getElementById('wizard-progress-fill').style.width = `${progressPercent}%`;
+
+            // Ocultar o mostrar layout estándar vs calculadora ISCA
+            const standardLayout = document.getElementById('standard-question-layout');
+            const iscaLayout = document.getElementById('isca-calculator-wrapper');
+
+            if (state.selectedTest === 'isca') {
+                standardLayout.classList.add('hidden');
+                iscaLayout.classList.remove('hidden');
+                renderIscaCalculators();
+            } else {
+                standardLayout.classList.remove('hidden');
+                iscaLayout.classList.add('hidden');
+
+                // Si es MALT, mostrar un badge para indicar si es MALT-S o MALT-O
+                const maltBadge = document.getElementById('question-section-badge');
+                if (state.selectedTest === 'malt') {
+                    maltBadge.classList.remove('hidden');
+                    if (state.currentQuestionIndex < 27) {
+                        maltBadge.textContent = "MALT-S (Autoinforme)";
+                        maltBadge.className = "px-2 py-0.5 text-[9px] font-extrabold bg-indigo-50 text-indigo-650 border border-indigo-200 rounded uppercase tracking-wider";
+                    } else {
+                        maltBadge.textContent = "MALT-O (Clínico)";
+                        maltBadge.className = "px-2 py-0.5 text-[9px] font-extrabold bg-rose-50 text-rose-600 border border-rose-200 rounded uppercase tracking-wider";
+                    }
+                } else {
+                    maltBadge.classList.add('hidden');
+                }
+
+                // Categoría y enunciado
+                document.getElementById('question-category').textContent = currentQ.category;
+                document.getElementById('question-text').textContent = currentQ.q;
+
+                // Mostrar u ocultar contenedores según el modo
+                const indWrapper = document.getElementById('answers-individual-wrapper');
+                const compWrapper = document.getElementById('answers-comparative-wrapper');
+
+                if (state.mode === 'individual') {
+                    indWrapper.classList.remove('hidden');
+                    compWrapper.classList.add('hidden');
+                    
+                    renderIndividualOptions(currentQ);
+                } else {
+                    indWrapper.classList.add('hidden');
+                    compWrapper.classList.remove('hidden');
+                    
+                    renderComparativeOptions(currentQ);
+                }
+            }
+
+            if (state.selectedTest !== 'isca') {
+                // Habilitar/Deshabilitar botones de navegación
+                document.getElementById('btn-prev').disabled = state.currentQuestionIndex === 0;
+                
+                // Para el botón siguiente, solo habilitar si se ha respondido a la pregunta actual
+                const hasAnsweredA = state.answersA[state.currentQuestionIndex] !== undefined;
+                const hasAnsweredB = state.answersB[state.currentQuestionIndex] !== undefined;
+                
+                if (state.mode === 'individual') {
+                    document.getElementById('btn-next').disabled = !hasAnsweredA;
+                } else {
+                    document.getElementById('btn-next').disabled = !(hasAnsweredA && hasAnsweredB);
+                }
+            } else {
+                document.getElementById('btn-prev').disabled = true;
+                document.getElementById('btn-next').disabled = false;
+            }
+
+            // Actualizar iconos lucide
+            lucide.createIcons();
+        }
+
+        // RENDERIZADOR CALCULADORES ISCA
+        function renderIscaCalculators() {
+            const container = document.getElementById('isca-grid-container');
+            container.innerHTML = '';
+
+            const isComparative = state.mode === 'comparative';
+            
+            // Card Persona A
+            let html = `
+                <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-5 space-y-4">
+                    <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                        <span class="font-bold text-slate-800 flex items-center gap-1.5">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> {state.nameA} ({state.genderA === 'female' ? 'Mujer' : 'Hombre'})
+                        </span>
+                        <span class="text-xs font-black text-indigo-650 bg-indigo-50 border border-indigo-100 px-2 py-0.5 rounded" id="isca-total-a">0 UBEs/semana</span>
+                    </div>
+                    
+                    <!-- Días Laborables -->
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                            <span>Días de consumo (Lunes a Viernes)</span>
+                            <span id="lbl-days-lab-a">{state.answersA[0].daysLaboral} días</span>
+                        </div>
+                        <input type="range" min="0" max="5" step="1" value="{state.answersA[0].daysLaboral}" 
+                            oninput="updateIscaValue('A', 'daysLaboral', this.value)" 
+                            class="w-full accent-indigo-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+                    </div>
+                    
+                    <!-- UBEs Laborables -->
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                            <span>Consumo medio diario (días laborables)</span>
+                            <span id="lbl-qty-lab-a">{state.answersA[0].qtyLaboral} UBEs</span>
+                        </div>
+                        <input type="range" min="0" max="15" step="0.5" value="{state.answersA[0].qtyLaboral}" 
+                            oninput="updateIscaValue('A', 'qtyLaboral', this.value)" 
+                            class="w-full accent-indigo-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+                    </div>
+                    
+                    <!-- Días Festivos -->
+                    <div class="space-y-1 pt-2 border-t border-slate-100">
+                        <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                            <span>Días de consumo (Fin de semana y festivos)</span>
+                            <span id="lbl-days-fest-a">{state.answersA[0].daysFestivo} días</span>
+                        </div>
+                        <input type="range" min="0" max="2" step="1" value="{state.answersA[0].daysFestivo}" 
+                            oninput="updateIscaValue('A', 'daysFestivo', this.value)" 
+                            class="w-full accent-indigo-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+                    </div>
+                    
+                    <!-- UBEs Festivos -->
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                            <span>Consumo medio diario (fin de semana/festivos)</span>
+                            <span id="lbl-qty-fest-a">{state.answersA[0].qtyFestivo} UBEs</span>
+                        </div>
+                        <input type="range" min="0" max="20" step="0.5" value="{state.answersA[0].qtyFestivo}" 
+                            oninput="updateIscaValue('A', 'qtyFestivo', this.value)" 
+                            class="w-full accent-indigo-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+                    </div>
+                </div>
+            `;
+            
+            if (isComparative) {
+                container.className = "grid md:grid-cols-2 gap-6";
+                html += `
+                    <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-5 space-y-4">
+                        <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                            <span class="font-bold text-slate-800 flex items-center gap-1.5">
+                                <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span> {state.nameB} ({state.genderB === 'female' ? 'Mujer' : 'Hombre'})
+                            </span>
+                            <span class="text-xs font-black text-rose-600 bg-rose-50 border border-rose-100 px-2 py-0.5 rounded" id="isca-total-b">0 UBEs/semana</span>
+                        </div>
+                        
+                        <!-- Días Laborables B -->
+                        <div class="space-y-1">
+                            <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                                <span>Días de consumo (Lunes a Viernes)</span>
+                                <span id="lbl-days-lab-b">{state.answersB[0].daysLaboral} días</span>
+                            </div>
+                            <input type="range" min="0" max="5" step="1" value="{state.answersB[0].daysLaboral}" 
+                                oninput="updateIscaValue('B', 'daysLaboral', this.value)" 
+                                class="w-full accent-rose-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+                        </div>
+                        
+                        <!-- UBEs Laborables B -->
+                        <div class="space-y-1">
+                            <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                                <span>Consumo medio diario (días laborables)</span>
+                                <span id="lbl-qty-lab-b">{state.answersB[0].qtyLaboral} UBEs</span>
+                            </div>
+                            <input type="range" min="0" max="15" step="0.5" value="{state.answersB[0].qtyLaboral}" 
+                                oninput="updateIscaValue('B', 'qtyLaboral', this.value)" 
+                                class="w-full accent-rose-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+                        </div>
+                        
+                        <!-- Días Festivos B -->
+                        <div class="space-y-1 pt-2 border-t border-slate-100">
+                            <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                                <span>Días de consumo (Fin de semana y festivos)</span>
+                                <span id="lbl-days-fest-b">{state.answersB[0].daysFestivo} días</span>
+                            </div>
+                            <input type="range" min="0" max="2" step="1" value="{state.answersB[0].daysFestivo}" 
+                                oninput="updateIscaValue('B', 'daysFestivo', this.value)" 
+                                class="w-full accent-rose-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+                        </div>
+                        
+                        <!-- UBEs Festivos B -->
+                        <div class="space-y-1">
+                            <div class="flex justify-between text-[11px] font-bold text-slate-500">
+                                <span>Consumo medio diario (fin de semana/festivos)</span>
+                                <span id="lbl-qty-fest-b">{state.answersB[0].qtyFestivo} UBEs</span>
+                            </div>
+                            <input type="range" min="0" max="20" step="0.5" value="{state.answersB[0].qtyFestivo}" 
+                                oninput="updateIscaValue('B', 'qtyFestivo', this.value)" 
+                                class="w-full accent-rose-600 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer" />
+                        </div>
+                    </div>
+                `;
+            } else {
+                container.className = "grid gap-6 max-w-xl mx-auto";
+            }
+            
+            container.innerHTML = html;
+            recalcIscaTotals();
+        }
+
+        function updateIscaValue(person, field, val) {
+            const numericVal = parseFloat(val);
+            if (person === 'A') {
+                state.answersA[0][field] = numericVal;
+                if (field === 'daysLaboral' || field === 'daysFestivo') {
+                    document.getElementById(`lbl-${field === 'daysLaboral' ? 'days-lab-a' : 'days-fest-a'}`).textContent = `${val} días`;
+                } else {
+                    document.getElementById(`lbl-${field === 'qtyLaboral' ? 'qty-lab-a' : 'qty-fest-a'}`).textContent = `${val} UBEs`;
+                }
+            } else {
+                state.answersB[0][field] = numericVal;
+                if (field === 'daysLaboral' || field === 'daysFestivo') {
+                    document.getElementById(`lbl-${field === 'daysLaboral' ? 'days-lab-b' : 'days-fest-b'}`).textContent = `${val} días`;
+                } else {
+                    document.getElementById(`lbl-${field === 'qtyLaboral' ? 'qty-lab-b' : 'qty-fest-b'}`).textContent = `${val} UBEs`;
+                }
+            }
+            recalcIscaTotals();
+        }
+
+        function recalcIscaTotals() {
+            const totalA = (state.answersA[0].daysLaboral * state.answersA[0].qtyLaboral) + (state.answersA[0].daysFestivo * state.answersA[0].qtyFestivo);
+            document.getElementById('isca-total-a').textContent = `${totalA.toFixed(1)} UBEs/semana`;
+            
+            if (state.mode === 'comparative') {
+                const totalB = (state.answersB[0].daysLaboral * state.answersB[0].qtyLaboral) + (state.answersB[0].daysFestivo * state.answersB[0].qtyFestivo);
+                document.getElementById('isca-total-b').textContent = `${totalB.toFixed(1)} UBEs/semana`;
+            }
+            document.getElementById('btn-next').disabled = false;
+        }
+
+        function renderIndividualOptions(question) {
+            const container = document.getElementById('options-container-ind');
+            container.innerHTML = '';
+
+            const selectedOpt = state.answersA[state.currentQuestionIndex];
+
+            question.opts.forEach((opt, idx) => {
+                const isSelected = selectedOpt === idx;
+                const activeClasses = isSelected 
+                    ? 'border-brand-indigo bg-indigo-50 text-indigo-950 font-bold ring-1 ring-indigo-500/20' 
+                    : 'border-slate-200 bg-slate-50/50 text-slate-700 hover:border-slate-400 hover:text-slate-900';
+
+                container.innerHTML += `
+                    <button onclick="selectOptionSingle(${idx})" class="w-full text-left p-4 border rounded-2xl ${activeClasses} transition-all flex items-center justify-between group">
+                        <span>${opt.text}</span>
+                        <div class="w-5 h-5 rounded-full border ${isSelected ? 'border-brand-indigo bg-brand-indigo flex items-center justify-center' : 'border-slate-400'} transition-all">
+                            ${isSelected ? '<i data-lucide="check" class="w-3.5 h-3.5 text-white"></i>' : ''}
+                        </div>
+                    </button>
+                `;
+            });
+        }
+
+        function renderComparativeOptions(question) {
+            const containerA = document.getElementById('options-container-comp-a');
+            const containerB = document.getElementById('options-container-comp-b');
+
+            containerA.innerHTML = '';
+            containerB.innerHTML = '';
+
+            const selectedA = state.answersA[state.currentQuestionIndex];
+            const selectedB = state.answersB[state.currentQuestionIndex];
+
+            question.opts.forEach((opt, idx) => {
+                const isSelected = selectedA === idx;
+                const activeClasses = isSelected 
+                    ? 'border-emerald-500 bg-emerald-50 text-emerald-955 font-bold' 
+                    : 'border-slate-200 bg-slate-50/40 text-slate-605 hover:border-slate-400 hover:text-slate-800';
+
+                containerA.innerHTML += `
+                    <button onclick="selectOptionComp('A', ${idx})" class="px-4 py-3 border rounded-xl ${activeClasses} text-xs transition-all flex items-center gap-2">
+                        <span>${opt.text}</span>
+                        ${isSelected ? '<i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>' : ''}
+                    </button>
+                `;
+            });
+
+            question.opts.forEach((opt, idx) => {
+                const isSelected = selectedB === idx;
+                const activeClasses = isSelected 
+                    ? 'border-rose-500 bg-rose-50 text-rose-955 font-bold' 
+                    : 'border-slate-200 bg-slate-50/40 text-slate-605 hover:border-slate-400 hover:text-slate-800';
+
+                containerB.innerHTML += `
+                    <button onclick="selectOptionComp('B', ${idx})" class="px-4 py-3 border rounded-xl ${activeClasses} text-xs transition-all flex items-center gap-2">
+                        <span>${opt.text}</span>
+                        ${isSelected ? '<i data-lucide="check" class="w-3.5 h-3.5 text-rose-600"></i>' : ''}
+                    </button>
+                `;
+            });
+        }
+
+        function selectOptionSingle(optIdx) {
+            state.answersA[state.currentQuestionIndex] = optIdx;
+            updateWizardUI();
+            
+            setTimeout(() => {
+                nextQuestion();
+            }, 200);
+        }
+
+        function selectOptionComp(target, optIdx) {
+            if (target === 'A') {
+                state.answersA[state.currentQuestionIndex] = optIdx;
+            } else {
+                state.answersB[state.currentQuestionIndex] = optIdx;
+            }
+            updateWizardUI();
+        }
+
+        // NAVEGACIÓN ENTRE PREGUNTAS
+        function prevQuestion() {
+            if (state.currentQuestionIndex > 0) {
+                state.currentQuestionIndex--;
+                updateWizardUI();
+            }
+        }
+
+        function nextQuestion() {
+            const test = testData[state.selectedTest];
+            const qCount = test.questions.length;
+
+            if (state.currentQuestionIndex < qCount - 1) {
+                state.currentQuestionIndex++;
+                updateWizardUI();
+            } else {
+                showResults();
+            }
+        }
+
+        // COMPILACIÓN Y CÁLCULO DE RESULTADOS
+        function showResults() {
+            document.getElementById('screen-wizard').classList.add('hidden');
+            document.getElementById('screen-results').classList.remove('hidden');
+
+            const test = testData[state.selectedTest];
+            const qCount = test.questions.length;
+
+            let scoreA = 0;
+            let scoreB = 0;
+
+            if (state.selectedTest === 'isca') {
+                scoreA = (state.answersA[0].daysLaboral * state.answersA[0].qtyLaboral) + (state.answersA[0].daysFestivo * state.answersA[0].qtyFestivo);
+                scoreA = parseFloat(scoreA.toFixed(1));
+                if (state.mode === 'comparative') {
+                    scoreB = (state.answersB[0].daysLaboral * state.answersB[0].qtyLaboral) + (state.answersB[0].daysFestivo * state.answersB[0].qtyFestivo);
+                    scoreB = parseFloat(scoreB.toFixed(1));
+                }
+            } else {
+                for (let i = 0; i < qCount; i++) {
+                    const q = test.questions[i];
+                    
+                    const optIdxA = state.answersA[i];
+                    if (optIdxA !== undefined) {
+                        scoreA += q.opts[optIdxA].val;
+                    }
+
+                    if (state.mode === 'comparative') {
+                        const optIdxB = state.answersB[i];
+                        if (optIdxB !== undefined) {
+                            scoreB += q.opts[optIdxB].val;
+                        }
+                    }
+                }
+            }
+
+            document.querySelectorAll('.max-score-lbl').forEach(el => el.textContent = test.maxScore);
+            document.querySelectorAll('.max-score-lbl-full').forEach(el => el.textContent = `Puntuación Máxima: ${test.maxScore} ${state.selectedTest === 'isca' ? 'UBEs' : 'Puntos'}`);
+            
+            document.getElementById('results-headline').textContent = `Resultados del Cuestionario: ${test.title}`;
+            const today = new Date();
+            document.getElementById('results-meta-text').textContent = `Fecha de evaluación: ${today.toLocaleDateString()} • Metodología: ${test.title} (${state.mode === 'comparative' ? 'Modo Comparativo' : 'Modo Individual'})`;
+
+            // Rellenar datos de Persona A
+            document.getElementById('score-val-a').textContent = scoreA;
+            const pctA = Math.min(100, (scoreA / test.maxScore) * 100);
+            const scoreBarA = document.getElementById('score-bar-a');
+            scoreBarA.style.width = `${pctA}%`;
+
+            const catA = getRiskCategory(state.selectedTest, scoreA, state.genderA);
+            const riskBadgeA = document.getElementById('risk-badge-a');
+            riskBadgeA.textContent = catA.label;
+            riskBadgeA.className = `text-[10px] font-black uppercase ${catA.colorClass}`;
+            scoreBarA.className = `${catA.barClass} h-full rounded-full transition-all duration-1000 progress-fill-print`;
+
+            // Rellenar datos de Persona B (Si procede)
+            const wrapperResultsB = document.getElementById('wrapper-results-b');
+            const nameBCol = document.querySelectorAll('.name-b-col');
+            if (state.mode === 'comparative') {
+                wrapperResultsB.classList.remove('hidden');
+                nameBCol.forEach(el => el.classList.remove('hidden'));
+
+                document.getElementById('score-val-b').textContent = scoreB;
+                const pctB = Math.min(100, (scoreB / test.maxScore) * 100);
+                const scoreBarB = document.getElementById('score-bar-b');
+                scoreBarB.style.width = `${pctB}%`;
+
+                const catB = getRiskCategory(state.selectedTest, scoreB, state.genderB);
+                const riskBadgeB = document.getElementById('risk-badge-b');
+                riskBadgeB.textContent = catB.label;
+                riskBadgeB.className = `text-[10px] font-black uppercase ${catB.colorClass}`;
+                scoreBarB.className = `${catB.barClass} h-full rounded-full transition-all duration-1000 progress-fill-print`;
+            } else {
+                wrapperResultsB.classList.add('hidden');
+                nameBCol.forEach(el => el.classList.add('hidden'));
+            }
+
+            renderDetailedResultsTable(test);
+            generateClinicalSummary(scoreA, scoreB);
+            lucide.createIcons();
+            window.scrollTo(0, 0);
+        }
+
+        // LÓGICA DE BAREMACIÓN CLÍNICA
+        function getRiskCategory(testKey, score, gender = 'male') {
+            if (testKey === 'audit') {
+                const cutoffLow = (gender === 'female') ? 5 : 7;
+                if (score <= cutoffLow) {
+                    return { label: 'Consumo de bajo riesgo', colorClass: 'text-emerald-600', barClass: 'bg-emerald-500' };
+                } else if (score <= 12) {
+                    return { label: 'Consumo de riesgo (Bebedor de riesgo)', colorClass: 'text-amber-600', barClass: 'bg-amber-500' };
+                } else {
+                    return { label: 'Consumo perjudicial / Probable Dependencia', colorClass: 'text-rose-600', barClass: 'bg-rose-500' };
+                }
+            } else if (testKey === 'cage') {
+                if (score < 2) {
+                    return { label: 'Consumo sin sospecha de dependencia', colorClass: 'text-emerald-600', barClass: 'bg-emerald-500' };
+                } else if (score <= 3) {
+                    return { label: 'Indicios claros de alcoholismo (Sospecha alta)', colorClass: 'text-amber-600', barClass: 'bg-amber-500' };
+                } else {
+                    return { label: 'Confirmatorio de alcoholismo (Pérdida de control total)', colorClass: 'text-rose-600', barClass: 'bg-rose-500' };
+                }
+            } else if (testKey === 'sadq') {
+                if (score <= 15) {
+                    return { label: 'Dependencia leve de alcohol', colorClass: 'text-emerald-600', barClass: 'bg-emerald-500' };
+                } else if (score <= 30) {
+                    return { label: 'Dependencia moderada de alcohol', colorClass: 'text-amber-600', barClass: 'bg-amber-500' };
+                } else {
+                    return { label: 'Dependencia severa de alcohol', colorClass: 'text-rose-600', barClass: 'bg-rose-500' };
+                }
+            } else if (testKey === 'mast') {
+                if (score <= 4) {
+                    return { label: 'Sin problemas detectados', colorClass: 'text-emerald-600', barClass: 'bg-emerald-500' };
+                } else if (score <= 9) {
+                    return { label: 'Consumo con problemas posibles', colorClass: 'text-amber-600', barClass: 'bg-amber-500' };
+                } else if (score <= 11) {
+                    return { label: 'Problemas probables con el alcohol', colorClass: 'text-amber-600', barClass: 'bg-amber-600' };
+                } else {
+                    return { label: 'Alcoholismo (Consecuencias clínicas y sociales)', colorClass: 'text-rose-600', barClass: 'bg-rose-500' };
+                }
+            } else if (testKey === 'malt') {
+                if (score <= 5) {
+                    return { label: 'Consumo sin sospecha de alcoholismo', colorClass: 'text-emerald-600', barClass: 'bg-emerald-500' };
+                } else if (score <= 10) {
+                    return { label: 'Sospecha de alcoholismo', colorClass: 'text-amber-600', barClass: 'bg-amber-500' };
+                } else {
+                    return { label: 'Alcoholismo (Confirmación diagnóstica)', colorClass: 'text-rose-600', barClass: 'bg-rose-500' };
+                }
+            } else if (testKey === 'isca') {
+                if (gender === 'female') {
+                    if (score < 11) {
+                        return { label: 'Consumo de bajo riesgo', colorClass: 'text-emerald-600', barClass: 'bg-emerald-500' };
+                    } else if (score <= 16) {
+                        return { label: 'Consumo Limítrofe (Riesgo Moderado / Zona Gris)', colorClass: 'text-amber-600', barClass: 'bg-amber-500' };
+                    } else {
+                        return { label: 'Consumo de riesgo (Riesgo Alto)', colorClass: 'text-rose-600', barClass: 'bg-rose-500' };
+                    }
+                } else {
+                    if (score <= 28) {
+                        return { label: 'Consumo de bajo riesgo', colorClass: 'text-emerald-600', barClass: 'bg-emerald-500' };
+                    } else {
+                        return { label: 'Consumo de riesgo (Riesgo Alto)', colorClass: 'text-rose-600', barClass: 'bg-rose-500' };
+                    }
+                }
+            }
+            return { label: 'Sin determinar', colorClass: 'text-slate-500', barClass: 'bg-slate-500' };
+        }
+
+        // TABLA DE DESGLOSE DE PREGUNTAS
+        function renderDetailedResultsTable(test) {
+            const tbody = document.getElementById('results-table-body');
+            tbody.innerHTML = '';
+
+            if (state.selectedTest === 'isca') {
+                const answersA = state.answersA[0];
+                const subtotalLabA = answersA.daysLaboral * answersA.qtyLaboral;
+                const subtotalFestA = answersA.daysFestivo * answersA.qtyFestivo;
+                
+                let answersB = null;
+                let subtotalLabB = 0;
+                let subtotalFestB = 0;
+                if (state.mode === 'comparative') {
+                    answersB = state.answersB[0];
+                    subtotalLabB = answersB.daysLaboral * answersB.qtyLaboral;
+                    subtotalFestB = answersB.daysFestivo * answersB.qtyFestivo;
+                }
+
+                // Fila 1: Laborales
+                let comparativeLabHTML = '';
+                if (state.mode === 'comparative') {
+                    comparativeLabHTML = `
+                        <td class="p-4 text-center border-l border-slate-100 name-b-col">
+                            <div class="${subtotalLabB > 0 ? 'text-amber-600 font-bold' : 'text-emerald-600 font-bold'}">
+                                ${answersB.daysLaboral} días x ${answersB.qtyLaboral} UBEs
+                            </div>
+                            <div class="text-[9px] text-slate-400 mt-0.5 font-semibold">Subtotal: ${subtotalLabB.toFixed(1)} UBEs</div>
+                        </td>
+                    `;
+                }
+                const row1 = `
+                    <tr class="hover:bg-slate-50 transition-colors odd:bg-slate-50/20">
+                        <td class="p-4 text-center font-bold text-slate-400 border-r border-slate-100">1</td>
+                        <td class="p-4">
+                            <div class="font-medium text-slate-800">Consumo en días laborales (Semana)</div>
+                            <div class="text-[9px] text-indigo-650 font-bold uppercase mt-1 tracking-wider">Lunes a Viernes</div>
+                        </td>
+                        <td class="p-4 text-center border-l border-slate-100 name-a-col">
+                            <div class="${subtotalLabA > 0 ? 'text-amber-600 font-bold' : 'text-emerald-600 font-bold'}">
+                                ${answersA.daysLaboral} días x ${answersA.qtyLaboral} UBEs
+                            </div>
+                            <div class="text-[9px] text-slate-400 mt-0.5 font-semibold">Subtotal: ${subtotalLabA.toFixed(1)} UBEs</div>
+                        </td>
+                        ${comparativeLabHTML}
+                    </tr>
+                `;
+
+                // Fila 2: Festivos
+                let comparativeFestHTML = '';
+                if (state.mode === 'comparative') {
+                    comparativeFestHTML = `
+                        <td class="p-4 text-center border-l border-slate-100 name-b-col">
+                            <div class="${subtotalFestB > 0 ? 'text-amber-600 font-bold' : 'text-emerald-600 font-bold'}">
+                                ${answersB.daysFestivo} días x ${answersB.qtyFestivo} UBEs
+                            </div>
+                            <div class="text-[9px] text-slate-400 mt-0.5 font-semibold">Subtotal: ${subtotalFestB.toFixed(1)} UBEs</div>
+                        </td>
+                    `;
+                }
+                const row2 = `
+                    <tr class="hover:bg-slate-50 transition-colors odd:bg-slate-50/20">
+                        <td class="p-4 text-center font-bold text-slate-400 border-r border-slate-100">2</td>
+                        <td class="p-4">
+                            <div class="font-medium text-slate-800">Consumo en fin de semana y festivos (Fin de semana)</div>
+                            <div class="text-[9px] text-indigo-650 font-bold uppercase mt-1 tracking-wider">Sábados, Domingos y Festivos</div>
+                        </td>
+                        <td class="p-4 text-center border-l border-slate-100 name-a-col">
+                            <div class="${subtotalFestA > 0 ? 'text-amber-600 font-bold' : 'text-emerald-600 font-bold'}">
+                                ${answersA.daysFestivo} días x ${answersA.qtyFestivo} UBEs
+                            </div>
+                            <div class="text-[9px] text-slate-400 mt-0.5 font-semibold">Subtotal: ${subtotalFestA.toFixed(1)} UBEs</div>
+                        </td>
+                        ${comparativeFestHTML}
+                    </tr>
+                `;
+
+                tbody.innerHTML = row1 + row2;
+            } else {
+                test.questions.forEach((q, idx) => {
+                    const optA = q.opts[state.answersA[idx]];
+                    const textA = optA ? optA.text : '-';
+                    const valA = optA ? optA.val : 0;
+                    
+                    let statusColorA = 'text-emerald-600 font-bold';
+                    if (valA > 0) {
+                        statusColorA = valA >= 3 ? 'text-rose-600 font-black' : 'text-amber-600 font-bold';
+                    }
+
+                    let comparativeHTML = '';
+                    if (state.mode === 'comparative') {
+                        const optB = q.opts[state.answersB[idx]];
+                        const textB = optB ? optB.text : '-';
+                        const valB = optB ? optB.val : 0;
+
+                        let statusColorB = 'text-emerald-600 font-bold';
+                        if (valB > 0) {
+                            statusColorB = valB >= 3 ? 'text-rose-600 font-black' : 'text-amber-600 font-bold';
+                        }
+
+                        comparativeHTML = `
+                            <td class="p-4 text-center border-l border-slate-100 name-b-col">
+                                <div class="${statusColorB}">${textB}</div>
+                                <div class="text-[9px] text-slate-400 mt-0.5 font-semibold">Puntos: ${valB}</div>
+                            </td>
+                        `;
+                    }
+
+                    tbody.innerHTML += `
+                        <tr class="hover:bg-slate-50 transition-colors odd:bg-slate-50/20">
+                            <td class="p-4 text-center font-bold text-slate-400 border-r border-slate-100">${idx + 1}</td>
+                            <td class="p-4">
+                                <div class="font-medium text-slate-800">${q.q}</div>
+                                <div class="text-[9px] text-indigo-650 font-bold uppercase mt-1 tracking-wider">${q.category}</div>
+                            </td>
+                            <td class="p-4 text-center border-l border-slate-100 name-a-col">
+                                <div class="${statusColorA}">${textA}</div>
+                                <div class="text-[9px] text-slate-400 mt-0.5 font-semibold">Puntos: ${valA}</div>
+                            </td>
+                            ${comparativeHTML}
+                        </tr>
+                    `;
+                });
+            }
+        }
+
+        // GENERADOR DE RESUMEN Y CONTEXTO
+        function generateClinicalSummary(scoreA, scoreB) {
+            const summaryBox = document.getElementById('clinical-summary-box');
+            const insightsContainer = document.getElementById('analysis-insights-container');
+
+            let summaryHTML = '';
+            let insightsHTML = '';
+
+            const test = testData[state.selectedTest];
+            const catA = getRiskCategory(state.selectedTest, scoreA, state.genderA);
+            
+            let catB = null;
+            if (state.mode === 'comparative') {
+                catB = getRiskCategory(state.selectedTest, scoreB, state.genderB);
+            }
+
+            // Generar Resumen Rápido
+            if (state.mode === 'individual') {
+                let text = `Para ${state.nameA}, la puntuación de <b>${scoreA}</b> sobre ${test.maxScore} se clasifica como <b>${catA.label}</b>.`;
+                if (state.selectedTest === 'isca') {
+                    text = `Para ${state.nameA}, el consumo semanal calculado es de <b>${scoreA} UBEs</b> (Unidades de Bebida Estándar), lo que se clasifica como <b>${catA.label}</b>.`;
+                }
+                const isRisk = state.selectedTest === 'isca'
+                    ? scoreA > (state.genderA === 'female' ? 17 : 28)
+                    : (state.selectedTest === 'audit'
+                        ? scoreA > (state.genderA === 'female' ? 5 : 7)
+                        : scoreA > 5);
+
+                summaryHTML = `
+                    <h4 class="font-bold text-slate-800 mb-1 flex items-center gap-1.5"><i data-lucide="info" class="w-4 h-4 text-indigo-655"></i> Nota de Interpretación del Test:</h4>
+                    ${text} 
+                    ${isRisk ? 'Este resultado indica que el patrón de bebida requiere de una atención o cambios de comportamiento para reducir daños a la salud física y psicológica.' : 'Este resultado sugiere una relación estable y de bajo impacto biológico/social con el alcohol.'}
+                `;
+            } else {
+                let diffText = `La comparativa visual muestra una diferencia de ${Math.abs(scoreA - scoreB)} puntos en el grado de riesgo.`;
+                if (state.selectedTest === 'isca') {
+                    diffText = `La comparativa muestra una diferencia de ${Math.abs(scoreA - scoreB).toFixed(1)} UBEs consumidas a la semana.`;
+                }
+                summaryHTML = `
+                    <h4 class="font-bold text-slate-800 mb-1 flex items-center gap-1.5"><i data-lucide="info" class="w-4 h-4 text-indigo-655"></i> Contraste de Perfiles Clínicos:</h4>
+                    • <b>${state.nameA} (${state.genderA === 'female' ? 'Mujer' : 'Hombre'}):</b> ${scoreA} ${state.selectedTest === 'isca' ? 'UBEs' : 'puntos'} (${catA.label}).<br>
+                    • <b>${state.nameB} (${state.genderB === 'female' ? 'Mujer' : 'Hombre'}):</b> ${scoreB} ${state.selectedTest === 'isca' ? 'UBEs' : 'puntos'} (${catB.label}).<br>
+                    <p class="mt-2 text-slate-500 font-medium">${diffText} Esto sirve de anclaje de realidad para desmitificar justificaciones como "beber de esta forma el fin de semana es lo normal".</p>
+                `;
+            }
+            summaryBox.innerHTML = summaryHTML;
+
+            // Generar Claves Psicológicas (Insights)
+            if (state.mode === 'individual') {
+                if (state.selectedTest === 'isca') {
+                    insightsHTML = `
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-2">
+                                <span class="p-1 bg-indigo-50 text-indigo-600 rounded-lg mt-0.5"><i data-lucide="shield-alert" class="w-3.5 h-3.5"></i></span>
+                                <div>
+                                    <h5 class="font-bold text-slate-700 text-xs">Carga Biológica y Hepatotoxicidad</h5>
+                                    <p class="text-slate-500 mt-0.5">Cada UBE equivale a 10 gramos de alcohol puro. Superar los límites recomendados por la OMS (${state.genderA === 'female' ? '17 UBEs' : '28 UBEs'} semanales) expone al organismo a un daño progresivo en hígado y sistema cardiovascular.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="p-1 bg-indigo-50 text-indigo-605 rounded-lg mt-0.5"><i data-lucide="alert-circle" class="w-3.5 h-3.5"></i></span>
+                                <div>
+                                    <h5 class="font-bold text-slate-700 text-xs">Patrón de Atracón (Binge Drinking)</h5>
+                                    <p class="text-slate-500 mt-0.5">Incluso si la suma semanal es moderada, concentrar más de 4-5 UBEs en una sola sesión de fin de semana produce picos de toxicidad neuronal y deshidratación celular severa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                } else if (state.selectedTest === 'malt') {
+                    insightsHTML = `
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-2">
+                                <span class="p-1 bg-indigo-50 text-indigo-605 rounded-lg mt-0.5"><i data-lucide="shield-alert" class="w-3.5 h-3.5"></i></span>
+                                <div>
+                                    <h5 class="font-bold text-slate-700 text-xs">Estructura del Diagnóstico Mixto</h5>
+                                    <p class="text-slate-500 mt-0.5">El MALT cruza tu percepción subjetiva (MALT-S) con indicadores médicos (MALT-O). Si el MALT-O es positivo, hay afectación física objetivable que desarma cualquier intento de negación mental.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="p-1 bg-indigo-50 text-indigo-605 rounded-lg mt-0.5"><i data-lucide="alert-circle" class="w-3.5 h-3.5"></i></span>
+                                <div>
+                                    <h5 class="font-bold text-slate-700 text-xs">Pérdida de control y Automatismo</h5>
+                                    <p class="text-slate-500 mt-0.5">Puntuaciones elevadas en la escala autoadministrada reflejan conductas automáticas (beber rápido, a solas, o para calmar el temblor), que son pilares de la dependencia conductual.</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    insightsHTML = `
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-2">
+                                <span class="p-1 bg-indigo-50 text-indigo-605 rounded-lg mt-0.5"><i data-lucide="shield-alert" class="w-3.5 h-3.5"></i></span>
+                                <div>
+                                    <h5 class="font-bold text-slate-700 text-xs">Función del consumo</h5>
+                                    <p class="text-slate-500 mt-0.5">Evalúa si estás utilizando el alcohol como automedicación (para "apagar la mente" del estrés). Si la puntuación del test es alta, el consumo es un síntoma de rumiación.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="p-1 bg-indigo-50 text-indigo-605 rounded-lg mt-0.5"><i data-lucide="alert-circle" class="w-3.5 h-3.5"></i></span>
+                                <div>
+                                    <h5 class="font-bold text-slate-700 text-xs">Reducción de daños</h5>
+                                    <p class="text-slate-500 mt-0.5">Prioriza reducir la velocidad y volumen por ocasión (como la regla de beber agua entre copas) en vez de intentar una abstinencia forzada inmediata si genera más ansiedad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            } else {
+                const highRiskName = scoreA > scoreB ? state.nameA : state.nameB;
+                const lowRiskName = scoreA > scoreB ? state.nameB : state.nameA;
+                
+                let specificAnalysis = '';
+                if (state.selectedTest === 'isca') {
+                    specificAnalysis = `
+                        El test ISCA demuestra cuantitativamente que <b>${highRiskName}</b> consume una dosis semanal que multiplica los niveles fisiológicos de <b>${lowRiskName}</b>. Esta sobrecarga de UBEs produce inflamación hepática constante y un rebote neuroquímico de ansiedad en los periodos de sobriedad.
+                    `;
+                } else if (state.selectedTest === 'malt') {
+                    specificAnalysis = `
+                        La comparativa del MALT desglosa tanto los aspectos subjetivos como los indicadores biológicos. Si <b>${highRiskName}</b> puntúa alto en el MALT-O (clínico), significa que el cuerpo ya muestra signos medibles de alcoholismo (como hepatomegalia o polineuropatía), lo cual invalida el discurso de que "no pasa nada".
+                    `;
+                } else {
+                    specificAnalysis = `
+                        La diferencia de puntuación evidencia que la forma de beber de <b>${highRiskName}</b> conlleva un nivel de afectación y toxicidad en el sistema nervioso muy superior al consumo social normal de <b>${lowRiskName}</b>.
+                    `;
+                }
+
+                insightsHTML = `
+                    <div class="space-y-4 text-slate-655 text-xs">
+                        <div class="border-l-2 border-brand-indigo pl-3 space-y-1">
+                            <h5 class="font-bold text-slate-800 uppercase text-[10px] tracking-wider text-indigo-650">El poder del contraste objetivo</h5>
+                            <p class="text-slate-500">
+                                ${specificAnalysis}
+                            </p>
+                        </div>
+                        
+                        <div class="border-l-2 border-amber-500 pl-3 space-y-1">
+                            <h5 class="font-bold text-slate-800 uppercase text-[10px] tracking-wider text-amber-650">Desarmando la Negación ("Sólo el fin de semana")</h5>
+                            <p class="text-slate-500">
+                                El test penaliza intensamente la concentración del consumo. Aunque ${highRiskName} sea una persona "responsable, deportista y trabajadora" de lunes a viernes, los datos clínicos confirman que un consumo concentrado genera <b>depresión biológica del sistema nervioso y rebote de ansiedad (bajón) al metabolizarse el alcohol</b>.
+                            </p>
+                        </div>
+
+                        <div class="border-l-2 border-rose-500 pl-3 space-y-1">
+                            <h5 class="font-bold text-slate-800 uppercase text-[10px] tracking-wider text-rose-650">Paradoja de la Evitación y Trauma Familiar</h5>
+                            <p class="text-slate-500">
+                                El consumo recurrente responde a un intento de apagar el dolor mental o estrés financiero/laboral. El miedo a repetir la historia de familiares (padres alcohólicos o hermanos con adicciones) genera ansiedad que empuja a seguir el mismo patrón familiar evasivo. El cambio requiere romper este ciclo y buscar herramientas de regulación emocional sobrias y <b>apoyo profesional en la red gratuita de salud mental (CAD/UCA)</b>.
+                            </p>
+                        </div>
+                    </div>
+                `;
+            }
+
+            insightsContainer.innerHTML = insightsHTML;
+        }
+
+        // INICIALIZACIÓN DE ICONOS AL CARGAR LA PÁGINA
+        document.addEventListener("DOMContentLoaded", function() {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
