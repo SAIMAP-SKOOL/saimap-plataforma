@@ -1822,46 +1822,45 @@ function renderIscaCalculators() {
                 const highRiskName = scoreA > scoreB ? state.nameA : state.nameB;
                 const lowRiskName = scoreA > scoreB ? state.nameB : state.nameA;
                 
-                let specificAnalysis = '';
-                if (state.selectedTest === 'isca') {
-                    specificAnalysis = `
-                        El test ISCA demuestra cuantitativamente que <b>${highRiskName}</b> consume una dosis semanal que multiplica los niveles fisiológicos de <b>${lowRiskName}</b>. Esta sobrecarga de UBEs produce inflamación hepática constante y un rebote neuroquímico de ansiedad en los periodos de sobriedad.
-                    `;
-                } else if (state.selectedTest === 'malt') {
-                    specificAnalysis = `
-                        La comparativa del MALT desglosa tanto los aspectos subjetivos como los indicadores biológicos. Si <b>${highRiskName}</b> puntúa alto en el MALT-O (clínico), significa que el cuerpo ya muestra signos medibles de alcoholismo (como hepatomegalia o polineuropatía), lo cual invalida el discurso de que "no pasa nada".
-                    `;
-                } else {
-            specificAnalysis = `
-La diferencia de puntuación evidencia que la forma de beber de <b>${highRiskName}</b> conlleva un nivel de afectación, tolerancia y toxicidad en el sistema nervioso superior al patrón de consumo registrado para <b>${lowRiskName}</b>.
-`;
-        }
-
-                insightsHTML = `
-                    <div class="space-y-4 text-slate-655 text-xs">
-                        <div class="border-l-2 border-brand-indigo pl-3 space-y-1">
-                            <h5 class="font-bold text-slate-800 uppercase text-[10px] tracking-wider text-indigo-650">El poder del contraste objetivo</h5>
-                            <p class="text-slate-500">
-                                ${specificAnalysis}
-                            </p>
-                        </div>
-                        
-                        <div class="border-l-2 border-amber-500 pl-3 space-y-1">
-                            <h5 class="font-bold text-slate-800 uppercase text-[10px] tracking-wider text-amber-650">Desarmando la Negación ("Sólo el fin de semana")</h5>
-                            <p class="text-slate-500">
-                                El test penaliza intensamente la concentración del consumo (patrón de atracón o <i>binge drinking</i>). Aunque la persona mantenga un rendimiento laboral, social o académico aparentemente funcional durante la semana, los datos clínicos confirman que concentrar la ingesta genera <b>toxicidad neuronal aguda, depresión del sistema nervioso y un rebote neuroquímico de ansiedad (bajón) al metabolizarse el alcohol</b>.
-                            </p>
-                        </div>
-
-                        <div class="border-l-2 border-rose-500 pl-3 space-y-1">
-                            <h5 class="font-bold text-slate-800 uppercase text-[10px] tracking-wider text-rose-650">Mecanismos de Afrontamiento y Regulación Emocional</h5>
-                            <p class="text-slate-500">
-                                El consumo recurrente o concentrado a menudo actúa como un mecanismo de automedicación disfuncional para evadir el malestar emocional, el estrés o la ansiedad. El uso del alcohol como evasión impide desarrollar estrategias saludables de autorregulación y puede cronificar patrones de dependencia conductual. El cambio requiere romper este ciclo de evitación y buscar herramientas de afrontamiento saludables y, si es necesario, <b>apoyo profesional especializado en salud mental (CAD/UCA o psicología clínica)</b>.
-                            </p>
-                        </div>
-                    </div>
+                            let specificAnalysis = '';
+            if (state.selectedTest === 'isca') {
+                specificAnalysis = `
+                    El test ISCA demuestra cuantitativamente que el volumen semanal estimado en UBEs para <b>${highRiskName}</b> es superior al registrado para <b>${lowRiskName}</b>, lo que indica un nivel de exposición y riesgo orgánico proporcionalmente más elevado.
+                `;
+            } else if (state.selectedTest === 'malt') {
+                specificAnalysis = `
+                    La comparativa del MALT desglosa los aspectos subjetivos (MALT-S) y los indicadores clínicos objetivos (MALT-O). En caso de existir afectación física o indicadores positivos en el MALT-O, esto confirma la presencia de daño orgánico cuantificable derivado del consumo de alcohol.
+                `;
+            } else {
+                specificAnalysis = `
+                    La diferencia de puntuación evidencia que la forma de beber de <b>${highRiskName}</b> conlleva un nivel de afectación, tolerancia y toxicidad en el sistema nervioso superior al patrón de consumo registrado para <b>${lowRiskName}</b>.
                 `;
             }
+
+            insightsHTML = `
+                <div class="space-y-4 text-slate-655 text-xs">
+                    <div class="border-l-2 border-brand-indigo pl-3 space-y-1">
+                        <h5 class="font-bold text-slate-800 uppercase text-[10px] tracking-wider text-indigo-650">Contraste de Gravedad y Riesgo Clínico</h5>
+                        <p class="text-slate-500">
+                            ${specificAnalysis}
+                        </p>
+                    </div>
+                    
+                    <div class="border-l-2 border-amber-500 pl-3 space-y-1">
+                        <h5 class="font-bold text-slate-800 uppercase text-[10px] tracking-wider text-amber-650">Patrón y Frecuencia de Consumo</h5>
+                        <p class="text-slate-500">
+                            Una puntuación elevada en este test evidencia un patrón de consumo (bien por frecuencia continuada o por ingesta concentrada) que sobrepasa los límites de metabolización hepática estándar. Clínicamente, esto se traduce en una mayor habituación del sistema nervioso central, induciendo fenómenos de tolerancia y aumentando el riesgo de experimentar sintomatología de rebote (como ansiedad o bajón físico/emocional) durante los periodos de abstinencia.
+                        </p>
+                    </div>
+
+                    <div class="border-l-2 border-rose-500 pl-3 space-y-1">
+                        <h5 class="font-bold text-slate-800 uppercase text-[10px] tracking-wider text-rose-650">Recomendación de Abordaje y Regulación</h5>
+                        <p class="text-slate-500">
+                            Para la persona con mayor puntuación de riesgo, la recomendación clínica principal es el inicio de un registro diario de consumo y la planificación de metas de reducción progresiva. En casos donde se observe dificultad para mantener estos límites o aparezcan síntomas de malestar físico o ansiedad, se aconseja consultar con profesionales de atención primaria o especialistas de la red pública de salud mental (CAD/UCA) para un abordaje terapéutico personalizado.
+                        </p>
+                    </div>
+                </div>
+            `;
 
             insightsContainer.innerHTML = insightsHTML;
         }
