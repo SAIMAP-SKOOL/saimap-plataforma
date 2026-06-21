@@ -3778,7 +3778,8 @@
 
         function resetBrainCamera() {
             if (window.brainCamera) {
-                window.brainCamera.position.set(0, 2.3, 4.2);
+                window.brainCamera.position.set(0, 0.8, 4.2);
+                window.brainCamera.lookAt(0, -0.15, 0);
             }
         }
 
@@ -3808,7 +3809,8 @@
             scene.background = new THREE.Color(0x0f172a);
 
             const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
-            camera.position.set(0, 2.3, 4.2);
+            camera.position.set(0, 0.8, 4.2);
+            camera.lookAt(0, -0.15, 0);
             window.brainCamera = camera;
 
             const renderer = new THREE.WebGLRenderer({ antialias: true });
