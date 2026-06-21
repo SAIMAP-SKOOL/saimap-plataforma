@@ -6,6 +6,7 @@
     <title>SAIMAP Plataforma de Exámenes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <!-- Configuración de MathJax para renderizar LaTeX -->
     <script>
         MathJax = {
@@ -386,7 +387,11 @@
             plannerDate: new Date(),
             selectedPlannerDay: new Date().toISOString().split('T')[0],
             // Achievements state
-            achievements: JSON.parse(localStorage.getItem('saimap_achievements')) || []
+            achievements: JSON.parse(localStorage.getItem('saimap_achievements')) || [],
+            // Brain 3D state
+            brainSubTab: 'anatomy',
+            selectedRegion: '',
+            brain3dAnimId: null
         };
 
         // --- SISTEMA DE ACCESO Y AUTENTICACIÓN (WHITELIST) ---
@@ -1620,6 +1625,9 @@
                     </button>
                     <button onclick="state.gameState = 'achievements'; render();" class="pb-3 border-b-2 transition-all ${activeTab === 'achievements' ? 'border-indigo-600 text-indigo-600' : 'border-transparent hover:text-slate-600'} flex items-center gap-2">
                         <i data-lucide="award" class="w-4.5 h-4.5"></i> Mis Logros
+                    </button>
+                    <button onclick="state.gameState = 'brain3d'; render();" class="pb-3 border-b-2 transition-all ${activeTab === 'brain3d' ? 'border-indigo-600 text-indigo-600' : 'border-transparent hover:text-slate-600'} flex items-center gap-2">
+                        <i data-lucide="brain" class="w-4.5 h-4.5"></i> Cerebro 3D
                     </button>
                 </div>
             `;
@@ -3514,6 +3522,9 @@
                 app.innerHTML = renderPlanner();
             } else if (state.gameState === 'achievements') {
                 app.innerHTML = renderAchievements();
+            } else if (state.gameState === 'brain3d') {
+                app.innerHTML = renderBrain3D();
+                setTimeout(initBrain3D, 50);
             }
 
             if (state.showPromoModal) {
@@ -3530,6 +3541,882 @@
             }
             window.scrollTo(0, 0);
         }
+
+        function renderBrain3D() {
+            if (!state.brainSubTab) state.brainSubTab = 'anatomy';
+            if (!state.selectedRegion) state.selectedRegion = '';
+
+            const subTab = state.brainSubTab;
+            const region = state.selectedRegion;
+
+            const regionInfo = {
+                'frontal': {
+                    name: 'Lóbulo Frontal',
+                    functions: 'Funciones ejecutivas, planificación, toma de decisiones, control motor voluntario (córtex motor primario), y producción del lenguaje (área de Broca).',
+                    chemical: 'Principal vía dopaminérgica del córtex frontal (mesocortical), involucrada en la motivación y la working memory (memoria de trabajo).',
+                    psych: 'Clave en la personalidad, la regulación emocional y la inhibición de impulsos. Su daño se asocia a desinhibición o apatía.'
+                },
+                'parietal': {
+                    name: 'Lóbulo Parietal',
+                    functions: 'Procesamiento de la información sensorial somática (tacto, presión, temperatura y dolor) en el córtex somatosensorial primario.',
+                    chemical: 'Integración multimodal de señales eléctricas procedentes de los núcleos talámicos sensoriales.',
+                    psych: 'Esencial para la percepción espacial, el esquema corporal, la atención visoespacial y la lectura/cálculo.'
+                },
+                'temporal': {
+                    name: 'Lóbulo Temporal',
+                    functions: 'Procesamiento auditivo primario, comprensión del lenguaje (área de Wernicke) y almacenamiento de recuerdos (conectado con el hipocampo).',
+                    chemical: 'Alta densidad de receptores de acetilcolina en áreas temporo-mediales críticas para la consolidación de la memoria.',
+                    psych: 'Implicado en la memoria a largo plazo, el reconocimiento de caras (área fusiforme) y la atribución del significado emocional de estímulos.'
+                },
+                'occipital': {
+                    name: 'Lóbulo Occipital',
+                    functions: 'Córtex visual primario (V1) y áreas de asociación visual encargadas de analizar formas, colores, distancias y movimiento.',
+                    chemical: 'Transmisión visual mediada por fotorreceptores retinianos hacia las vías geniculoestriadas glutamatérgicas.',
+                    psych: 'Soporte fundamental de la percepción visual. Lesiones en esta zona pueden causar ceguera cortical o agnosias visuales.'
+                },
+                'cerebelo': {
+                    name: 'Cerebelo',
+                    functions: 'Coordinación motora fina, mantenimiento de la postura, equilibrio dinámico y tono muscular.',
+                    chemical: 'Sistema altamente regulado por células de Purkinje inhibidoras mediadas por el neurotransmisor GABA.',
+                    psych: 'Implicado en el aprendizaje motor (adquisición de hábitos y destrezas motrices automatizadas) y en la sincronización cognitiva.'
+                },
+                'tronco': {
+                    name: 'Tronco Encefálico',
+                    functions: 'Control de funciones vitales autónomas vegetativas (respiración, ritmo cardíaco, presión arterial y digestión).',
+                    chemical: 'Origen de las principales vías monoaminérgicas (Locus Coeruleus para Noradrenalina, Núcleos del Rafe para Serotonina).',
+                    psych: 'Regula los ciclos de sueño/vigilia a través del Sistema Activador Reticular Ascendente (SARA) y el estado de arousal basal.'
+                }
+            };
+
+            return `
+                <div class="max-w-5xl w-full mx-auto px-4 py-8 space-y-8 flex-grow fade-in">
+                    ${renderBannerHTML()}
+
+                    ${renderNavigationTabs('brain3d')}
+
+                    <div class="grid md:grid-cols-12 gap-8 items-stretch">
+                        <!-- Panel de Visualización 3D (Izquierda) -->
+                        <div class="md:col-span-7 flex flex-col space-y-4">
+                            <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm flex flex-col flex-grow min-h-[480px]">
+                                <div class="flex justify-between items-center mb-4">
+                                    <div class="space-y-0.5">
+                                        <h3 class="font-bold text-slate-800 text-sm flex items-center gap-2">
+                                            <i data-lucide="eye" class="w-4 h-4 text-indigo-600"></i> Modelado Tridimensional del Cerebro
+                                        </h3>
+                                        <p class="text-[11px] text-slate-400">Arrastra para rotar, rueda para hacer zoom</p>
+                                    </div>
+                                    <button onclick="resetBrainCamera()" class="p-1.5 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg text-xs font-bold flex items-center gap-1 transition-all">
+                                        <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i> Centrar
+                                    </button>
+                                </div>
+
+                                <!-- Contenedor del canvas de Three.js -->
+                                <div id="brain-3d-container" class="relative w-full h-[320px] sm:h-[360px] bg-slate-900 rounded-2xl overflow-hidden shadow-inner border border-slate-800 flex items-center justify-center">
+                                    <div id="brain-loading" class="absolute text-slate-400 text-xs flex flex-center gap-2">
+                                        <div class="animate-spin rounded-full h-4 w-4 border-2 border-slate-400 border-t-transparent"></div>
+                                        Cargando motor 3D...
+                                    </div>
+                                </div>
+
+                                <!-- Botones de selección rápida -->
+                                <div class="grid grid-cols-3 gap-2 mt-4">
+                                    <button onclick="selectBrainRegion('frontal')" class="px-2 py-2.5 ${region === 'frontal' ? 'bg-blue-600 text-white shadow-md' : 'bg-blue-50 hover:bg-blue-100 text-blue-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-blue-200/50">Lóbulo Frontal</button>
+                                    <button onclick="selectBrainRegion('parietal')" class="px-2 py-2.5 ${region === 'parietal' ? 'bg-purple-600 text-white shadow-md' : 'bg-purple-50 hover:bg-purple-100 text-purple-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-purple-200/50">Lóbulo Parietal</button>
+                                    <button onclick="selectBrainRegion('temporal')" class="px-2 py-2.5 ${region === 'temporal' ? 'bg-yellow-600 text-white shadow-md' : 'bg-yellow-50 hover:bg-yellow-100 text-yellow-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-yellow-200/50">Lóbulo Temporal</button>
+                                    <button onclick="selectBrainRegion('occipital')" class="px-2 py-2.5 ${region === 'occipital' ? 'bg-green-600 text-white shadow-md' : 'bg-green-50 hover:bg-green-100 text-green-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-green-200/50">Lóbulo Occipital</button>
+                                    <button onclick="selectBrainRegion('cerebelo')" class="px-2 py-2.5 ${region === 'cerebelo' ? 'bg-red-600 text-white shadow-md' : 'bg-red-50 hover:bg-red-100 text-red-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-red-200/50">Cerebelo</button>
+                                    <button onclick="selectBrainRegion('tronco')" class="px-2 py-2.5 ${region === 'tronco' ? 'bg-orange-600 text-white shadow-md' : 'bg-orange-50 hover:bg-orange-100 text-orange-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-orange-200/50">Tronco</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel de Control e Información (Derecha) -->
+                        <div class="md:col-span-5 flex flex-col">
+                            <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm flex flex-col flex-grow">
+                                <!-- Pestañas del submenú lateral -->
+                                <div class="flex border-b border-slate-200 gap-4 mb-5 text-xs font-bold text-slate-400">
+                                    <button onclick="changeBrainSubTab('anatomy')" class="pb-2 border-b-2 transition-all ${subTab === 'anatomy' ? 'border-indigo-600 text-indigo-600 font-extrabold' : 'border-transparent hover:text-slate-600'}">Anatomía</button>
+                                    <button onclick="changeBrainSubTab('synapse')" class="pb-2 border-b-2 transition-all ${subTab === 'synapse' ? 'border-indigo-600 text-indigo-600 font-extrabold' : 'border-transparent hover:text-slate-600'}">Sinapsis Química</button>
+                                    <button onclick="changeBrainSubTab('action_potential')" class="pb-2 border-b-2 transition-all ${subTab === 'action_potential' ? 'border-indigo-600 text-indigo-600 font-extrabold' : 'border-transparent hover:text-slate-600'}">Potencial de Acción</button>
+                                </div>
+
+                                <!-- Contenido dinámico según la sub-pestaña activa -->
+                                <div class="flex-grow flex flex-col justify-between">
+                                    <div class="flex-grow">
+                                        ${subTab === 'anatomy' ? `
+                                            <!-- ANATOMÍA -->
+                                            ${region ? `
+                                                <div class="space-y-4 fade-in">
+                                                    <div class="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100">
+                                                        <h4 class="font-extrabold text-indigo-900 text-base flex items-center gap-2">
+                                                            <span class="w-3 h-3 rounded-full ${region === 'frontal' ? 'bg-blue-500' : region === 'parietal' ? 'bg-purple-500' : region === 'temporal' ? 'bg-yellow-500' : region === 'occipital' ? 'bg-green-500' : region === 'cerebelo' ? 'bg-red-500' : 'bg-orange-500'}"></span>
+                                                            ${regionInfo[region].name}
+                                                        </h4>
+                                                        <p class="text-[10px] text-slate-400 mt-1 uppercase font-bold tracking-wider">Región Cerebral Activa</p>
+                                                    </div>
+
+                                                    <div class="space-y-3.5 text-xs text-slate-600">
+                                                        <div class="space-y-0.5">
+                                                            <h5 class="font-black text-slate-700 flex items-center gap-1">⚙️ Funciones Principales</h5>
+                                                            <p class="leading-relaxed text-[11px]">${regionInfo[region].functions}</p>
+                                                        </div>
+                                                        <div class="space-y-0.5">
+                                                            <h5 class="font-black text-slate-700 flex items-center gap-1">🔬 Implicación Química</h5>
+                                                            <p class="leading-relaxed text-[11px]">${regionInfo[region].chemical}</p>
+                                                        </div>
+                                                        <div class="space-y-0.5">
+                                                            <h5 class="font-black text-slate-700 flex items-center gap-1">🧠 Implicación Psicológica</h5>
+                                                            <p class="leading-relaxed text-[11px]">${regionInfo[region].psych}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            ` : `
+                                                <div class="flex-grow flex flex-col items-center justify-center text-center p-6 text-slate-400 space-y-3 mt-8">
+                                                    <i data-lucide="info" class="w-10 h-10 text-slate-300"></i>
+                                                    <h4 class="font-bold text-slate-600 text-sm">Ninguna región seleccionada</h4>
+                                                    <p class="text-[11px] text-slate-400 max-w-xs leading-relaxed">
+                                                        Haz clic en las distintas regiones del cerebro en el modelo 3D o usa los selectores rápidos para ver su implicación fisiológica y psicológica.
+                                                    </p>
+                                                </div>
+                                            `}
+                                        ` : subTab === 'synapse' ? `
+                                            <!-- SINAPSIS INTERACTIVA -->
+                                            <div class="space-y-4 flex-grow flex flex-col fade-in">
+                                                <div class="space-y-1">
+                                                    <h4 class="font-extrabold text-slate-800 text-sm">Transmisión Sináptica Química</h4>
+                                                    <p class="text-[11px] text-slate-400 leading-relaxed">Simula la liberación de neurotransmisores y su unión a los receptores postsinápticos.</p>
+                                                </div>
+
+                                                <!-- Canvas de Sinapsis -->
+                                                <div class="relative w-full h-[180px] bg-slate-950 rounded-2xl overflow-hidden border border-slate-800">
+                                                    <canvas id="synapse-canvas" class="w-full h-full block"></canvas>
+                                                    
+                                                    <!-- Barra lateral indicadora de voltaje postsináptico -->
+                                                    <div class="absolute right-3 top-3 bottom-3 w-2.5 bg-slate-850 rounded-full overflow-hidden border border-slate-700/50 flex flex-col justify-end">
+                                                        <div id="synapse-voltage-bar" class="w-full bg-indigo-500 transition-all duration-350" style="height: 40%"></div>
+                                                    </div>
+                                                    <div class="absolute right-7 top-2 text-[8px] font-bold text-slate-500 uppercase tracking-widest leading-none">Psp</div>
+                                                </div>
+
+                                                <!-- Controles de Neurotransmisores -->
+                                                <div class="grid grid-cols-2 gap-2">
+                                                    <button onclick="triggerSynapse('dopamine')" class="p-2 bg-yellow-50 hover:bg-yellow-100 border border-yellow-200 text-yellow-800 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
+                                                        <span class="w-2 h-2 rounded-full bg-yellow-500 inline-block animate-pulse"></span> Dopamina
+                                                    </button>
+                                                    <button onclick="triggerSynapse('serotonin')" class="p-2 bg-cyan-50 hover:bg-cyan-100 border border-cyan-200 text-cyan-800 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
+                                                        <span class="w-2 h-2 rounded-full bg-cyan-500 inline-block animate-pulse"></span> Serotonina
+                                                    </button>
+                                                    <button onclick="triggerSynapse('glutamate')" class="p-2 bg-orange-50 hover:bg-orange-100 border border-orange-200 text-orange-800 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
+                                                        <span class="w-2 h-2 rounded-full bg-orange-500 inline-block animate-pulse"></span> Glutamato (+)
+                                                    </button>
+                                                    <button onclick="triggerSynapse('gaba')" class="p-2 bg-purple-50 hover:bg-purple-100 border border-purple-200 text-purple-800 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
+                                                        <span class="w-2 h-2 rounded-full bg-purple-500 inline-block animate-pulse"></span> GABA (-)
+                                                    </button>
+                                                </div>
+
+                                                <div id="synapse-info" class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-[10px] text-slate-500 min-h-[50px] leading-relaxed">
+                                                    Haz clic en un neurotransmisor para activar la transmisión química y ver sus efectos biológicos.
+                                                </div>
+                                            </div>
+                                        ` : `
+                                            <!-- POTENCIAL DE ACCIÓN -->
+                                            <div class="space-y-4 flex-grow flex flex-col fade-in">
+                                                <div class="space-y-1">
+                                                    <h4 class="font-extrabold text-slate-800 text-sm">Fisiología del Impulso Eléctrico</h4>
+                                                    <p class="text-[11px] text-slate-400 leading-relaxed">Simulación de la despolarización y repolarización de la membrana neuronal.</p>
+                                                </div>
+
+                                                <!-- Canvas Potencial de Acción -->
+                                                <div class="relative w-full h-[180px] bg-slate-950 rounded-2xl overflow-hidden border border-slate-800">
+                                                    <canvas id="ap-canvas" class="w-full h-full block"></canvas>
+                                                </div>
+
+                                                <div class="flex items-center justify-between gap-4">
+                                                    <button id="ap-play-btn" onclick="toggleAPSimulation()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1.5">
+                                                        <i data-lucide="play" class="w-4 h-4"></i> Disparar Impulso
+                                                    </button>
+                                                    <div id="ap-state-label" class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+                                                        Estado: Reposo (-70 mV)
+                                                    </div>
+                                                </div>
+
+                                                <div id="ap-info" class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-[10px] text-slate-500 min-h-[50px] leading-relaxed">
+                                                    Presiona "Disparar Impulso" para simular la apertura de canales de Sodio (Na+) y Potasio (K+) a lo largo del axón.
+                                                </div>
+                                            </div>
+                                        `}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function changeBrainSubTab(tab) {
+            state.brainSubTab = tab;
+            render();
+        }
+
+        function selectBrainRegion(regionId) {
+            state.selectedRegion = regionId;
+            if (window.brainMeshes) {
+                Object.keys(window.brainMeshes).forEach(key => {
+                    const mesh = window.brainMeshes[key];
+                    if (key === regionId) {
+                        mesh.material.emissiveIntensity = 0.7;
+                        mesh.material.opacity = 0.95;
+                    } else {
+                        mesh.material.emissiveIntensity = 0.15;
+                        mesh.material.opacity = 0.4;
+                    }
+                });
+            }
+            render();
+        }
+
+        function resetBrainCamera() {
+            if (window.brainCamera) {
+                window.brainCamera.position.set(0, 2.3, 4.2);
+            }
+        }
+
+        function initBrain3D() {
+            const loader = document.getElementById('brain-loading');
+            if (loader) loader.style.display = 'none';
+
+            initThreeJSBrain();
+
+            if (state.brainSubTab === 'synapse') {
+                initSynapseSimulator();
+            } else if (state.brainSubTab === 'action_potential') {
+                initActionPotentialSimulator();
+            }
+        }
+
+        function initThreeJSBrain() {
+            const container = document.getElementById('brain-3d-container');
+            if (!container) return;
+            
+            container.innerHTML = '';
+
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+
+            const scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x0f172a);
+
+            const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
+            camera.position.set(0, 2.3, 4.2);
+            window.brainCamera = camera;
+
+            const renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setSize(width, height);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            container.appendChild(renderer.domElement);
+
+            const brainGroup = new THREE.Group();
+            scene.add(brainGroup);
+
+            let isDragging = false;
+            let previousMousePosition = { x: 0, y: 0 };
+
+            const handleStart = (clientX, clientY) => {
+                isDragging = true;
+                previousMousePosition = { x: clientX, y: clientY };
+            };
+
+            const handleMove = (clientX, clientY) => {
+                if (!isDragging) return;
+                const deltaMove = {
+                    x: clientX - previousMousePosition.x,
+                    y: clientY - previousMousePosition.y
+                };
+                brainGroup.rotation.y += deltaMove.x * 0.007;
+                brainGroup.rotation.x += deltaMove.y * 0.007;
+                previousMousePosition = { x: clientX, y: clientY };
+            };
+
+            container.addEventListener('mousedown', (e) => handleStart(e.clientX, e.clientY));
+            container.addEventListener('mousemove', (e) => handleMove(e.clientX, e.clientY));
+            window.addEventListener('mouseup', () => isDragging = false);
+
+            container.addEventListener('touchstart', (e) => {
+                if (e.touches.length === 1) handleStart(e.touches[0].clientX, e.touches[0].clientY);
+            });
+            container.addEventListener('touchmove', (e) => {
+                if (e.touches.length === 1) handleMove(e.touches[0].clientX, e.touches[0].clientY);
+            });
+            window.addEventListener('touchend', () => isDragging = false);
+
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                const zoomSpeed = 0.03;
+                const scale = brainGroup.scale.x - e.deltaY * zoomSpeed * 0.01;
+                const clampedScale = Math.max(0.6, Math.min(1.8, scale));
+                brainGroup.scale.set(clampedScale, clampedScale, clampedScale);
+            }, { passive: false });
+
+            const createWrinkledLobe = (color, scaleX, scaleY, scaleZ, offsetX, offsetY, offsetZ, regionId, wrinkleFreq = 12, wrinkleAmp = 0.12) => {
+                const geometry = new THREE.SphereGeometry(0.7, 24, 24);
+                const position = geometry.attributes.position;
+                for (let i = 0; i < position.count; i++) {
+                    let x = position.getX(i);
+                    let y = position.getY(i);
+                    let z = position.getZ(i);
+                    
+                    const wrinkle = wrinkleAmp * Math.sin(x * wrinkleFreq) * Math.sin(y * wrinkleFreq) * Math.sin(z * wrinkleFreq);
+                    position.setX(i, x * (1 + wrinkle));
+                    position.setY(i, y * (1 + wrinkle));
+                    position.setZ(i, z * (1 + wrinkle));
+                }
+                geometry.computeVertexNormals();
+                
+                const material = new THREE.MeshPhongMaterial({
+                    color: color,
+                    emissive: color,
+                    emissiveIntensity: state.selectedRegion === regionId ? 0.7 : 0.15,
+                    shininess: 40,
+                    transparent: true,
+                    opacity: state.selectedRegion ? (state.selectedRegion === regionId ? 0.95 : 0.4) : 0.85,
+                    flatShading: true
+                });
+                
+                const mesh = new THREE.Mesh(geometry, material);
+                mesh.scale.set(scaleX, scaleY, scaleZ);
+                mesh.position.set(offsetX, offsetY, offsetZ);
+                mesh.userData = { regionId: regionId };
+                return mesh;
+            };
+
+            const createStem = (color, regionId) => {
+                const geometry = new THREE.CylinderGeometry(0.18, 0.14, 1.2, 16);
+                geometry.computeVertexNormals();
+                const material = new THREE.MeshPhongMaterial({
+                    color: color,
+                    emissive: color,
+                    emissiveIntensity: state.selectedRegion === regionId ? 0.7 : 0.15,
+                    shininess: 30,
+                    transparent: true,
+                    opacity: state.selectedRegion ? (state.selectedRegion === regionId ? 0.95 : 0.4) : 0.85,
+                    flatShading: true
+                });
+                const mesh = new THREE.Mesh(geometry, material);
+                mesh.position.set(0, -0.65, 0.1);
+                mesh.rotation.x = 0.15;
+                mesh.userData = { regionId: regionId };
+                return mesh;
+            };
+
+            const meshes = {
+                'frontal': createWrinkledLobe(0x3b82f6, 1.2, 0.9, 1.0, 0, 0.25, 0.45, 'frontal', 10, 0.08),
+                'parietal': createWrinkledLobe(0x8b5cf6, 1.05, 0.85, 0.9, 0, 0.4, -0.35, 'parietal', 12, 0.1),
+                'temporal': createWrinkledLobe(0xeab308, 1.35, 0.6, 0.85, 0, -0.2, 0.05, 'temporal', 11, 0.09),
+                'occipital': createWrinkledLobe(0x10b981, 0.95, 0.75, 0.7, 0, 0.05, -0.85, 'occipital', 14, 0.11),
+                'cerebelo': createWrinkledLobe(0xef4444, 0.8, 0.5, 0.65, 0, -0.6, -0.55, 'cerebelo', 24, 0.06),
+                'tronco': createStem(0xf97316, 'tronco')
+            };
+
+            window.brainMeshes = meshes;
+            Object.values(meshes).forEach(mesh => brainGroup.add(mesh));
+
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
+            scene.add(ambientLight);
+
+            const dirLight1 = new THREE.DirectionalLight(0xffffff, 0.8);
+            dirLight1.position.set(5, 10, 7);
+            scene.add(dirLight1);
+
+            const dirLight2 = new THREE.DirectionalLight(0xffffff, 0.3);
+            dirLight2.position.set(-5, 5, -5);
+            scene.add(dirLight2);
+
+            const raycaster = new THREE.Raycaster();
+            const mouse = new THREE.Vector2();
+
+            container.addEventListener('click', (e) => {
+                const rect = container.getBoundingClientRect();
+                mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+                mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+
+                raycaster.setFromCamera(mouse, camera);
+                const intersects = raycaster.intersectObjects(brainGroup.children);
+
+                if (intersects.length > 0) {
+                    const clickedRegionId = intersects[0].object.userData.regionId;
+                    selectBrainRegion(clickedRegionId);
+                }
+            });
+
+            if (state.brain3dAnimId) {
+                cancelAnimationFrame(state.brain3dAnimId);
+                state.brain3dAnimId = null;
+            }
+
+            function animate() {
+                if (state.gameState !== 'brain3d') return;
+                state.brain3dAnimId = requestAnimationFrame(animate);
+
+                if (!isDragging) {
+                    brainGroup.rotation.y += 0.003;
+                }
+
+                renderer.render(scene, camera);
+            }
+
+            animate();
+
+            const resizeObserver = new ResizeObserver(() => {
+                if (!container || container.clientWidth === 0) return;
+                const w = container.clientWidth;
+                const h = container.clientHeight;
+                camera.aspect = w / h;
+                camera.updateProjectionMatrix();
+                renderer.setSize(w, h);
+            });
+            resizeObserver.observe(container);
+        }
+
+        let synapseParticles = [];
+        let pspVoltage = 40;
+
+        function initSynapseSimulator() {
+            const canvas = document.getElementById('synapse-canvas');
+            if (!canvas) return;
+
+            const ctx = canvas.getContext('2d');
+            let animId;
+
+            const resizeCanvas = () => {
+                if (!canvas.parentElement) return;
+                canvas.width = canvas.parentElement.clientWidth;
+                canvas.height = canvas.parentElement.clientHeight;
+            };
+            resizeCanvas();
+
+            const receptors = [
+                { x: 0.2, active: false, activeTimer: 0 },
+                { x: 0.35, active: false, activeTimer: 0 },
+                { x: 0.5, active: false, activeTimer: 0 },
+                { x: 0.65, active: false, activeTimer: 0 },
+                { x: 0.8, active: false, activeTimer: 0 }
+            ];
+
+            function draw() {
+                if (state.gameState !== 'brain3d' || state.brainSubTab !== 'synapse') {
+                    cancelAnimationFrame(animId);
+                    return;
+                }
+                animId = requestAnimationFrame(draw);
+
+                const w = canvas.width;
+                const h = canvas.height;
+
+                ctx.clearRect(0, 0, w, h);
+
+                ctx.fillStyle = '#1e293b';
+                ctx.beginPath();
+                ctx.moveTo(0, 0);
+                ctx.lineTo(w, 0);
+                ctx.lineTo(w, 40);
+                ctx.bezierCurveTo(w * 0.7, 45, w * 0.7, 60, w * 0.5, 60);
+                ctx.bezierCurveTo(w * 0.3, 60, w * 0.3, 45, 0, 40);
+                ctx.closePath();
+                ctx.fill();
+
+                ctx.strokeStyle = '#334155';
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                ctx.moveTo(0, 40);
+                ctx.bezierCurveTo(w * 0.3, 45, w * 0.3, 60, w * 0.5, 60);
+                ctx.bezierCurveTo(w * 0.7, 60, w * 0.7, 45, w, 40);
+                ctx.stroke();
+
+                ctx.fillStyle = '#1e293b';
+                ctx.beginPath();
+                ctx.moveTo(0, h);
+                ctx.lineTo(w, h);
+                ctx.lineTo(w, h - 30);
+                ctx.bezierCurveTo(w * 0.8, h - 35, w * 0.7, h - 45, w * 0.5, h - 45);
+                ctx.bezierCurveTo(w * 0.3, h - 45, w * 0.2, h - 35, 0, h - 30);
+                ctx.closePath();
+                ctx.fill();
+
+                ctx.strokeStyle = '#334155';
+                ctx.beginPath();
+                ctx.moveTo(0, h - 30);
+                ctx.bezierCurveTo(w * 0.2, h - 35, w * 0.3, h - 45, w * 0.5, h - 45);
+                ctx.bezierCurveTo(w * 0.7, h - 45, w * 0.8, h - 35, w, h - 30);
+                ctx.stroke();
+
+                receptors.forEach(rec => {
+                    const rx = rec.x * w;
+                    const ry = h - 45;
+
+                    ctx.fillStyle = rec.active ? '#6366f1' : '#475569';
+                    ctx.beginPath();
+                    ctx.arc(rx, ry, 6, Math.PI, 0);
+                    ctx.fill();
+
+                    ctx.strokeStyle = rec.active ? '#a5b4fc' : '#64748b';
+                    ctx.lineWidth = 1.5;
+                    ctx.beginPath();
+                    ctx.arc(rx, ry, 8, Math.PI, 0);
+                    ctx.stroke();
+
+                    if (rec.active) {
+                        rec.activeTimer -= 1;
+                        if (rec.activeTimer <= 0) rec.active = false;
+                    }
+                });
+
+                synapseParticles.forEach((p, idx) => {
+                    p.y += p.speed;
+                    p.x += Math.sin(p.y * 0.1) * 0.5;
+
+                    if (p.y >= h - 48 && p.y <= h - 42) {
+                        receptors.forEach(rec => {
+                            const rx = rec.x * w;
+                            if (Math.abs(p.x - rx) < 18) {
+                                rec.active = true;
+                                rec.activeTimer = 40;
+                                pspVoltage = Math.max(10, Math.min(95, pspVoltage + p.impact));
+                                const bar = document.getElementById('synapse-voltage-bar');
+                                if (bar) bar.style.height = `${pspVoltage}%`;
+                            }
+                        });
+                        synapseParticles.splice(idx, 1);
+                        return;
+                    }
+
+                    if (p.y > h) {
+                        synapseParticles.splice(idx, 1);
+                        return;
+                    }
+
+                    ctx.fillStyle = p.color;
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    ctx.strokeStyle = p.glow;
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size + 1.5, 0, Math.PI * 2);
+                    ctx.stroke();
+                });
+
+                if (Math.abs(pspVoltage - 40) > 0.1) {
+                    pspVoltage += (40 - pspVoltage) * 0.005;
+                    const bar = document.getElementById('synapse-voltage-bar');
+                    if (bar) bar.style.height = `${pspVoltage}%`;
+                }
+            }
+
+            draw();
+            window.addEventListener('resize', resizeCanvas);
+        }
+
+        window.triggerSynapse = (type) => {
+            const canvas = document.getElementById('synapse-canvas');
+            if (!canvas) return;
+
+            const w = canvas.width;
+            const descriptions = {
+                'dopamine': {
+                    desc: '<strong>Dopamina (Motivación y Placer)</strong>: Activación de receptores mesolímbicos. Estimula un potencial excitador (PPSE) moderado y refuerza el aprendizaje conductual positivo.',
+                    color: '#eab308',
+                    glow: 'rgba(234, 179, 8, 0.4)',
+                    impact: 4
+                },
+                'serotonin': {
+                    desc: '<strong>Serotonina (Estado de Ánimo y Estabilidad)</strong>: Modulación homeostática de receptores 5-HT. Regula el humor, el ciclo de sueño y modera los niveles de activación general.',
+                    color: '#06b6d4',
+                    glow: 'rgba(6, 182, 212, 0.4)',
+                    impact: 2
+                },
+                'glutamate': {
+                    desc: '<strong>Glutamato (Memoria y Excitación Fuerte)</strong>: El principal neurotransmisor excitador. Abre canales de Na+ y Ca2+, provocando un potencial excitador (PPSE) rápido y potente.',
+                    color: '#f97316',
+                    glow: 'rgba(249, 115, 22, 0.4)',
+                    impact: 7
+                },
+                'gaba': {
+                    desc: '<strong>GABA (Tranquilidad e Inhibición Cerebral)</strong>: Principal neurotransmisor inhibidor del Sistema Nervioso. Abre canales de Cloro (Cl-), hiperpolarizando la membrana (PPSI) y reduciendo el disparo neuronal.',
+                    color: '#a855f7',
+                    glow: 'rgba(168, 85, 247, 0.4)',
+                    impact: -5
+                }
+            };
+
+            const info = descriptions[type];
+            const infoDiv = document.getElementById('synapse-info');
+            if (infoDiv) infoDiv.innerHTML = info.desc;
+
+            for (let i = 0; i < 18; i++) {
+                synapseParticles.push({
+                    x: (w * 0.3) + Math.random() * (w * 0.4),
+                    y: 50 + Math.random() * 10,
+                    size: 3 + Math.random() * 2,
+                    speed: 2 + Math.random() * 2,
+                    color: info.color,
+                    glow: info.glow,
+                    impact: info.impact
+                });
+            }
+        };
+
+        let apActive = false;
+        let apProgress = 0;
+
+        function initActionPotentialSimulator() {
+            const canvas = document.getElementById('ap-canvas');
+            if (!canvas) return;
+
+            const ctx = canvas.getContext('2d');
+            let animId;
+
+            const resizeCanvas = () => {
+                if (!canvas.parentElement) return;
+                canvas.width = canvas.parentElement.clientWidth;
+                canvas.height = canvas.parentElement.clientHeight;
+            };
+            resizeCanvas();
+
+            function draw() {
+                if (state.gameState !== 'brain3d' || state.brainSubTab !== 'action_potential') {
+                    cancelAnimationFrame(animId);
+                    return;
+                }
+                animId = requestAnimationFrame(draw);
+
+                const w = canvas.width;
+                const h = canvas.height;
+                const graphY = h - 20;
+                const graphH = 80;
+                const membraneY = 40;
+
+                ctx.clearRect(0, 0, w, h);
+
+                ctx.fillStyle = '#1e293b';
+                ctx.fillRect(10, membraneY - 4, w - 20, 8);
+                ctx.fillStyle = '#0f172a';
+                ctx.fillRect(10, membraneY - 1, w - 20, 2);
+
+                const naChannelX = w * 0.35;
+                const kChannelX = w * 0.65;
+
+                let naOpen = false;
+                let kOpen = false;
+                let stateText = 'Reposo (-70 mV)';
+                let infoText = 'Membrana en potencial de reposo. Los canales de Sodio y Potasio están cerrados.';
+                let currentVoltage = -70;
+
+                if (apActive) {
+                    apProgress += 1.5;
+                    if (apProgress >= 200) {
+                        apProgress = 0;
+                        apActive = false;
+                        const playBtn = document.getElementById('ap-play-btn');
+                        if (playBtn) playBtn.innerHTML = '<i data-lucide="play" class="w-4 h-4"></i> Disparar Impulso';
+                        lucide.createIcons();
+                    }
+                }
+
+                if (apActive) {
+                    if (apProgress < 30) {
+                        currentVoltage = -70 + (apProgress / 30) * 15;
+                        stateText = 'Estímulo Inicial';
+                        infoText = 'Un estímulo despolariza la membrana hasta alcanzar el umbral de disparo (-55 mV).';
+                    } else if (apProgress >= 30 && apProgress < 75) {
+                        naOpen = true;
+                        const factor = (apProgress - 30) / 45;
+                        currentVoltage = -55 + factor * 85;
+                        stateText = 'Despolarización (+30 mV)';
+                        infoText = '¡Umbral alcanzado! Los canales de Sodio (Na+) se abren masivamente, permitiendo la entrada de cargas positivas al interior celular.';
+                    } else if (apProgress >= 75 && apProgress < 125) {
+                        kOpen = true;
+                        const factor = (apProgress - 75) / 50;
+                        currentVoltage = 30 - factor * 110;
+                        stateText = 'Repolarización';
+                        infoText = 'Los canales de Sodio se cierran e inactivan. Se abren los canales de Potasio (K+), que sale rápidamente al exterior para restablecer la carga negativa.';
+                    } else if (apProgress >= 125 && apProgress < 170) {
+                        const factor = (apProgress - 125) / 45;
+                        currentVoltage = -80 - Math.sin(factor * Math.PI) * 10;
+                        stateText = 'Hiperpolarización (-90 mV)';
+                        infoText = 'Los canales de Potasio se cierran lentamente, provocando que el potencial sea más negativo que el de reposo (periodo refractario).';
+                    } else {
+                        const factor = (apProgress - 170) / 30;
+                        currentVoltage = -80 + factor * 10;
+                        stateText = 'Restablecimiento';
+                        infoText = 'La bomba de Sodio-Potasio restaura las concentraciones iónicas basales y el potencial de reposo de -70 mV.';
+                    }
+                }
+
+                const stateLabel = document.getElementById('ap-state-label');
+                if (stateLabel) stateLabel.innerText = `Estado: ${stateText}`;
+                const infoDiv = document.getElementById('ap-info');
+                if (infoDiv) infoDiv.innerHTML = infoText;
+
+                ctx.fillStyle = naOpen ? '#22c55e' : '#ef4444';
+                ctx.fillRect(naChannelX - 15, membraneY - 10, 30, 20);
+                ctx.fillStyle = '#ffffff';
+                ctx.font = 'bold 8px Inter';
+                ctx.textAlign = 'center';
+                ctx.fillText('Na+', naChannelX, membraneY + 3);
+
+                ctx.fillStyle = kOpen ? '#22c55e' : '#ef4444';
+                ctx.fillRect(kChannelX - 15, membraneY - 10, 30, 20);
+                ctx.fillStyle = '#ffffff';
+                ctx.font = 'bold 8px Inter';
+                ctx.textAlign = 'center';
+                ctx.fillText('K+', kChannelX, membraneY + 3);
+
+                if (naOpen) {
+                    ctx.fillStyle = '#eab308';
+                    for (let i = 0; i < 4; i++) {
+                        const ionY = (membraneY - 20) + ((apProgress * 3 + i * 20) % 40);
+                        ctx.beginPath();
+                        ctx.arc(naChannelX + (i % 2 === 0 ? 5 : -5), ionY, 3, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                }
+                if (kOpen) {
+                    ctx.fillStyle = '#06b6d4';
+                    for (let i = 0; i < 4; i++) {
+                        const ionY = (membraneY + 20) - ((apProgress * 3 + i * 20) % 40);
+                        ctx.beginPath();
+                        ctx.arc(kChannelX + (i % 2 === 0 ? 5 : -5), ionY, 3, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                }
+
+                ctx.fillStyle = '#94a3b8';
+                ctx.font = 'bold 7px Inter';
+                ctx.fillText('EXTERIOR CELULAR', 30, membraneY - 15);
+                ctx.fillText('INTERIOR CELULAR (AXÓN)', 30, membraneY + 25);
+
+                const startX = w * 0.15;
+                const endX = w * 0.85;
+                const graphW = endX - startX;
+
+                ctx.strokeStyle = '#334155';
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(startX, graphY - graphH);
+                ctx.lineTo(startX, graphY);
+                ctx.lineTo(endX, graphY);
+                ctx.stroke();
+
+                const getVoltageY = (v) => {
+                    const fraction = (v + 90) / 130;
+                    return graphY - fraction * graphH;
+                };
+
+                ctx.strokeStyle = '#1e293b';
+                ctx.lineWidth = 1;
+                ctx.setLineDash([4, 4]);
+
+                ctx.beginPath();
+                ctx.moveTo(startX, getVoltageY(-70));
+                ctx.lineTo(endX, getVoltageY(-70));
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(startX, getVoltageY(0));
+                ctx.lineTo(endX, getVoltageY(0));
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(startX, getVoltageY(30));
+                ctx.lineTo(endX, getVoltageY(30));
+                ctx.stroke();
+                ctx.setLineDash([]);
+
+                ctx.fillStyle = '#64748b';
+                ctx.font = '7px Inter';
+                ctx.textAlign = 'right';
+                ctx.fillText('+30 mV', startX - 5, getVoltageY(30) + 2);
+                ctx.fillText('0 mV', startX - 5, getVoltageY(0) + 2);
+                ctx.fillText('-70 mV', startX - 5, getVoltageY(-70) + 2);
+                ctx.fillText('-90 mV', startX - 5, getVoltageY(-90) + 2);
+
+                ctx.strokeStyle = '#475569';
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+
+                const getCurvePoint = (progress) => {
+                    const cx = startX + (progress / 200) * graphW;
+                    let cy;
+                    if (progress < 30) {
+                        cy = getVoltageY(-70 + (progress / 30) * 15);
+                    } else if (progress >= 30 && progress < 75) {
+                        const factor = (progress - 30) / 45;
+                        cy = getVoltageY(-55 + factor * 85);
+                    } else if (progress >= 75 && progress < 125) {
+                        const factor = (progress - 75) / 50;
+                        cy = getVoltageY(30 - factor * 110);
+                    } else if (progress >= 125 && progress < 170) {
+                        const factor = (progress - 125) / 45;
+                        const v = -80 - Math.sin(factor * Math.PI) * 10;
+                        cy = getVoltageY(v);
+                    } else {
+                        const factor = (progress - 170) / 30;
+                        cy = getVoltageY(-80 + factor * 10);
+                    }
+                    return { x: cx, y: cy };
+                };
+
+                for (let p = 0; p <= 200; p++) {
+                    const pt = getCurvePoint(p);
+                    if (p === 0) ctx.moveTo(pt.x, pt.y);
+                    else ctx.lineTo(pt.x, pt.y);
+                }
+                ctx.stroke();
+
+                if (apActive) {
+                    ctx.strokeStyle = '#eab308';
+                    ctx.lineWidth = 3;
+                    ctx.beginPath();
+                    for (let p = 0; p <= apProgress; p++) {
+                        const pt = getCurvePoint(p);
+                        if (p === 0) ctx.moveTo(pt.x, pt.y);
+                        else ctx.lineTo(pt.x, pt.y);
+                    }
+                    ctx.stroke();
+
+                    const curPt = getCurvePoint(apProgress);
+                    ctx.fillStyle = '#facc15';
+                    ctx.beginPath();
+                    ctx.arc(curPt.x, curPt.y, 4, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    ctx.strokeStyle = '#ffffff';
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.arc(curPt.x, curPt.y, 4, 0, Math.PI * 2);
+                    ctx.stroke();
+                }
+            }
+
+            draw();
+            window.addEventListener('resize', resizeCanvas);
+        }
+
+        window.toggleAPSimulation = () => {
+            const playBtn = document.getElementById('ap-play-btn');
+            if (apActive) {
+                apActive = false;
+                apProgress = 0;
+                if (playBtn) playBtn.innerHTML = '<i data-lucide="play" class="w-4 h-4"></i> Disparar Impulso';
+            } else {
+                apActive = true;
+                apProgress = 0;
+                if (playBtn) playBtn.innerHTML = '<i data-lucide="square" class="w-4 h-4"></i> Detener';
+            }
+            lucide.createIcons();
+        };
 
         checkAuthOnLoad();
     </script>
