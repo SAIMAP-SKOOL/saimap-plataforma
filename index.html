@@ -3548,14 +3548,18 @@
             { id: 'plastinated_brain', name: '🔬 Cerebro Plastinado Real (UBC)' },
             { id: 'limbic_system', name: '🌀 Sistema Límbico (UBC)' },
             { id: 'brainstem_willis', name: '💉 Tronco Encefálico y Círculo de Willis' },
-            { id: 'brainstem_cranial', name: '🏷️ Tronco y Pares Craneales Etiquetados' }
+            { id: 'brainstem_cranial', name: '🏷️ Tronco y Pares Craneales Etiquetados' },
+            { id: 'hemi_brain', name: '🌓 Hemi-Cerebro con Cerebelo (UBC)' },
+            { id: 'dti_tractography', name: '🌈 Tractografía DTI (Fibras Blancas) (UBC)' }
         ];
 
         const SKETCHFAB_MODELS = {
             plastinated_brain: '2df234ff65b0483fb5b5e15e40efa65d',
             limbic_system: 'e7379d750c3d4a23b98c568574d6c698',
             brainstem_willis: '35a11c2106094a46a67f082e01b3152c',
-            brainstem_cranial: '104975d71c4c478685e173e32e850406'
+            brainstem_cranial: '104975d71c4c478685e173e32e850406',
+            hemi_brain: 'b258674d817d471587d58f334a17cdb3',
+            dti_tractography: '11880486c99c43d3b73315a6396e9527'
         };
 
         const modelInfo = {
@@ -3578,6 +3582,16 @@
                 name: 'Pares Craneales y Tronco Encefálico',
                 desc: 'Modelo anatómico con etiquetas interactivas que muestra el origen real de los doce pares de nervios craneales que emergen del tronco encefálico.',
                 details: 'Desde el nervio olfatorio (I) hasta el nervio hipogloso (XII). Permite estudiar los puntos exactos de emergencia de las vías sensitivas y motoras que inervan la cabeza, cuello y vísceras.'
+            },
+            hemi_brain: {
+                name: 'Hemi-Cerebro con Cerebelo',
+                desc: 'Una vista sagital media de un hemisferio cerebral humano y el cerebelo. Muestra de forma nítida la cara interna de la corteza, el cuerpo calloso y el tronco encefálico.',
+                details: 'Permite estudiar la anatomía interna del cerebro: el cuerpo calloso (que comunica ambos hemisferios), el tálamo, el hipotálamo, el fórnix y la estructura ramificada del cerebelo.'
+            },
+            dti_tractography: {
+                name: 'Tractografía DTI (Sustancia Blanca)',
+                desc: 'Visualización tridimensional de las vías de sustancia blanca del cerebro humano mediante Tensores de Difusión (DTI). Muestra los tractos nerviosos que conectan distintas regiones corticales y subcorticales.',
+                details: 'Las fibras están codificadas por colores según su dirección: rojo para izquierda-derecha (ej. cuerpo calloso), verde para adelante-atrás (ej. fascículos longitudinales) y azul para arriba-abajo (ej. vía corticoespinal). Espectacular para visualizar la conectividad cerebral real.'
             }
         };
 
