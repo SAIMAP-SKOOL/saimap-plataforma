@@ -392,7 +392,7 @@
             brainSubTab: 'anatomy',
             selectedRegion: '',
             brain3dAnimId: null,
-            selectedBrainModel: 'procedural'
+            selectedBrainModel: 'plastinated_brain'
         };
 
         // --- SISTEMA DE ACCESO Y AUTENTICACIÓN (WHITELIST) ---
@@ -3544,7 +3544,6 @@
         }
 
         const BRAIN_MODELS = [
-            { id: 'procedural', name: '🧠 Modelo Interactivo (Anatomía / Sinapsis)' },
             { id: 'plastinated_brain', name: '🔬 Cerebro Plastinado Real (UBC)' },
             { id: 'limbic_system', name: '🌀 Sistema Límbico (UBC)' },
             { id: 'brainstem_willis', name: '💉 Tronco Encefálico y Círculo de Willis' },
@@ -3596,51 +3595,9 @@
         };
 
         function renderBrain3D() {
-            if (!state.selectedBrainModel) state.selectedBrainModel = 'procedural';
-            if (!state.brainSubTab) state.brainSubTab = 'anatomy';
-            if (!state.selectedRegion) state.selectedRegion = '';
-
-            const subTab = state.brainSubTab;
-            const region = state.selectedRegion;
-
-            const regionInfo = {
-                'frontal': {
-                    name: 'Lóbulo Frontal',
-                    functions: 'Funciones ejecutivas, planificación, toma de decisiones, control motor voluntario (córtex motor primario), y producción del lenguaje (área de Broca).',
-                    chemical: 'Principal vía dopaminérgica del córtex frontal (mesocortical), involucrada en la motivación y la working memory (memoria de trabajo).',
-                    psych: 'Clave en la personalidad, la regulación emocional y la inhibición de impulsos. Su daño se asocia a desinhibición o apatía.'
-                },
-                'parietal': {
-                    name: 'Lóbulo Parietal',
-                    functions: 'Procesamiento de la información sensorial somática (tacto, presión, temperatura y dolor) en el córtex somatosensorial primario.',
-                    chemical: 'Integración multimodal de señales eléctricas procedentes de los núcleos talámicos sensoriales.',
-                    psych: 'Esencial para la percepción espacial, el esquema corporal, la atención visoespacial y la lectura/cálculo.'
-                },
-                'temporal': {
-                    name: 'Lóbulo Temporal',
-                    functions: 'Procesamiento auditivo primario, comprensión del lenguaje (área de Wernicke) y almacenamiento de recuerdos (conectado con el hipocampo).',
-                    chemical: 'Alta densidad de receptores de acetilcolina en áreas temporo-mediales críticas para la consolidación de la memoria.',
-                    psych: 'Implicado en la memoria a largo plazo, el reconocimiento de caras (área fusiforme) y la atribución del significado emocional de estímulos.'
-                },
-                'occipital': {
-                    name: 'Lóbulo Occipital',
-                    functions: 'Córtex visual primario (V1) y áreas de asociación visual encargadas de analizar formas, colores, distancias y movimiento.',
-                    chemical: 'Transmisión visual mediada por fotorreceptores retinianos hacia las vías geniculoestriadas glutamatérgicas.',
-                    psych: 'Soporte fundamental de la percepción visual. Lesiones en esta zona pueden causar ceguera cortical o agnosias visuales.'
-                },
-                'cerebelo': {
-                    name: 'Cerebelo',
-                    functions: 'Coordinación motora fina, mantenimiento de la postura, equilibrio dinámico y tono muscular.',
-                    chemical: 'Sistema altamente regulado por células de Purkinje inhibidoras mediadas por el neurotransmisor GABA.',
-                    psych: 'Implicado en el aprendizaje motor (adquisición de hábitos y destrezas motrices automatizadas) y en la sincronización cognitiva.'
-                },
-                'tronco': {
-                    name: 'Tronco Encefálico',
-                    functions: 'Control de funciones vitales autónomas vegetativas (respiración, ritmo cardíaco, presión arterial y digestión).',
-                    chemical: 'Origen de las principales vías monoaminérgicas (Locus Coeruleus para Noradrenalina, Núcleos del Rafe para Serotonina).',
-                    psych: 'Regula los ciclos de sueño/vigilia a través del Sistema Activador Reticular Ascendente (SARA) y el estado de arousal basal.'
-                }
-            };
+            if (!state.selectedBrainModel || state.selectedBrainModel === 'procedural') {
+                state.selectedBrainModel = 'plastinated_brain';
+            }
 
             return `
                 <div class="max-w-5xl w-full mx-auto px-4 py-8 space-y-8 flex-grow fade-in">
@@ -3657,7 +3614,7 @@
                                         <h3 class="font-bold text-slate-800 text-sm flex items-center gap-2">
                                             <i data-lucide="eye" class="w-4 h-4 text-indigo-600"></i> Modelos 3D
                                         </h3>
-                                        <p class="text-[11px] text-slate-400">Explora la anatomía interactiva y escaneos reales</p>
+                                        <p class="text-[11px] text-slate-400">Explora escaneos y reconstrucciones anatómicas reales</p>
                                     </div>
                                     <div class="flex gap-2 items-center">
                                         <select onchange="changeBrainModel(this.value)" class="text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border-none rounded-xl py-2 px-3 focus:ring-2 focus:ring-indigo-500 transition-all cursor-pointer">
@@ -3665,202 +3622,64 @@
                                                 <option value="${m.id}" ${state.selectedBrainModel === m.id ? 'selected' : ''}>${m.name}</option>
                                             `).join('')}
                                         </select>
-                                        ${state.selectedBrainModel === 'procedural' ? `
-                                            <button onclick="resetBrainCamera()" class="p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-xl text-xs font-bold flex items-center gap-1 transition-all" title="Centrar cámara">
-                                                <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
-                                            </button>
-                                        ` : ''}
                                     </div>
                                 </div>
 
-                                ${state.selectedBrainModel === 'procedural' ? `
-                                    <!-- Contenedor del canvas de Three.js -->
-                                    <div id="brain-3d-container" class="relative w-full h-[320px] sm:h-[360px] bg-slate-900 rounded-2xl overflow-hidden shadow-inner border border-slate-800 flex items-center justify-center">
-                                        <div id="brain-loading" class="absolute text-slate-400 text-xs flex flex-center gap-2">
-                                            <div class="animate-spin rounded-full h-4 w-4 border-2 border-slate-400 border-t-transparent"></div>
-                                            Cargando motor 3D...
-                                        </div>
-                                    </div>
+                                <!-- Contenedor del Iframe de Sketchfab -->
+                                <div class="relative w-full h-[320px] sm:h-[400px] bg-slate-950 rounded-2xl overflow-hidden shadow-md border border-slate-800 flex items-center justify-center">
+                                    <iframe class="w-full h-full border-none" 
+                                            title="Modelo 3D Sketchfab" 
+                                            allowfullscreen 
+                                            mozallowfullscreen="true" 
+                                            webkitallowfullscreen="true" 
+                                            allow="autoplay; fullscreen; xr-spatial-tracking" 
+                                            xr-spatial-tracking 
+                                            execution-while-out-of-viewport 
+                                            execution-while-not-rendered 
+                                            web-share 
+                                            src="https://sketchfab.com/models/${SKETCHFAB_MODELS[state.selectedBrainModel]}/embed?autostart=1&ui_annotations=1&ui_controls=1&ui_infos=0&ui_stop=0">
+                                    </iframe>
+                                </div>
 
-                                    <!-- Botones de selección rápida -->
-                                    <div class="grid grid-cols-3 gap-2 mt-4">
-                                        <button onclick="selectBrainRegion('frontal')" class="px-2 py-2.5 ${region === 'frontal' ? 'bg-blue-600 text-white shadow-md' : 'bg-blue-50 hover:bg-blue-100 text-blue-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-blue-200/50">Lóbulo Frontal</button>
-                                        <button onclick="selectBrainRegion('parietal')" class="px-2 py-2.5 ${region === 'parietal' ? 'bg-purple-600 text-white shadow-md' : 'bg-purple-50 hover:bg-purple-100 text-purple-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-purple-200/50">Lóbulo Parietal</button>
-                                        <button onclick="selectBrainRegion('temporal')" class="px-2 py-2.5 ${region === 'temporal' ? 'bg-yellow-600 text-white shadow-md' : 'bg-yellow-50 hover:bg-yellow-100 text-yellow-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-yellow-200/50">Lóbulo Temporal</button>
-                                        <button onclick="selectBrainRegion('occipital')" class="px-2 py-2.5 ${region === 'occipital' ? 'bg-green-600 text-white shadow-md' : 'bg-green-50 hover:bg-green-100 text-green-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-green-200/50">Lóbulo Occipital</button>
-                                        <button onclick="selectBrainRegion('cerebelo')" class="px-2 py-2.5 ${region === 'cerebelo' ? 'bg-red-600 text-white shadow-md' : 'bg-red-50 hover:bg-red-100 text-red-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-red-200/50">Cerebelo</button>
-                                        <button onclick="selectBrainRegion('tronco')" class="px-2 py-2.5 ${region === 'tronco' ? 'bg-orange-600 text-white shadow-md' : 'bg-orange-50 hover:bg-orange-100 text-orange-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-orange-200/50">Tronco</button>
+                                <!-- Leyenda informativa -->
+                                <div class="mt-4 p-4 bg-slate-50 border border-slate-200/60 rounded-2xl flex items-start gap-3">
+                                    <i data-lucide="info" class="w-4 h-4 text-indigo-500 mt-0.5 flex-shrink-0"></i>
+                                    <div class="space-y-1">
+                                        <h4 class="text-xs font-bold text-slate-700">Modelo Escaneado en 3D</h4>
+                                        <p class="text-[10px] text-slate-400 leading-relaxed">
+                                            Este modelo interactivo es una prosección real o reconstrucción en 3D provista por la Facultad de Medicina de la <strong>Universidad de British Columbia (UBC)</strong> para fines educativos de neuroanatomía. Puedes interactuar con él, hacer zoom y rotarlo.
+                                        </p>
                                     </div>
-                                ` : `
-                                    <!-- Contenedor del Iframe de Sketchfab -->
-                                    <div class="relative w-full h-[320px] sm:h-[360px] bg-slate-950 rounded-2xl overflow-hidden shadow-md border border-slate-800 flex items-center justify-center">
-                                        <iframe class="w-full h-full border-none" 
-                                                title="Modelo 3D Sketchfab" 
-                                                allowfullscreen 
-                                                mozallowfullscreen="true" 
-                                                webkitallowfullscreen="true" 
-                                                allow="autoplay; fullscreen; xr-spatial-tracking" 
-                                                xr-spatial-tracking 
-                                                execution-while-out-of-viewport 
-                                                execution-while-not-rendered 
-                                                web-share 
-                                                src="https://sketchfab.com/models/${SKETCHFAB_MODELS[state.selectedBrainModel]}/embed?autostart=1&ui_annotations=1&ui_controls=1&ui_infos=0&ui_stop=0">
-                                        </iframe>
-                                    </div>
-
-                                    <!-- Leyenda informativa -->
-                                    <div class="mt-4 p-4 bg-slate-50 border border-slate-200/60 rounded-2xl flex items-start gap-3">
-                                        <i data-lucide="info" class="w-4 h-4 text-indigo-500 mt-0.5 flex-shrink-0"></i>
-                                        <div class="space-y-1">
-                                            <h4 class="text-xs font-bold text-slate-700">Modelo Escaneado en 3D</h4>
-                                            <p class="text-[10px] text-slate-400 leading-relaxed">
-                                                Este modelo interactivo es una prosección real o reconstrucción en 3D provista por la Facultad de Medicina de la <strong>Universidad de British Columbia (UBC)</strong> para fines educativos de neuroanatomía. Puedes interactuar con él, hacer zoom y rotarlo.
-                                            </p>
-                                        </div>
-                                    </div>
-                                `}
+                                </div>
                             </div>
                         </div>
 
                         <!-- Panel de Control e Información (Derecha) -->
                         <div class="md:col-span-5 flex flex-col">
                             <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm flex flex-col flex-grow">
-                                <!-- Pestañas del submenú lateral -->
-                                <div class="flex border-b border-slate-200 gap-4 mb-5 text-xs font-bold text-slate-400">
-                                    <button onclick="changeBrainSubTab('anatomy')" class="pb-2 border-b-2 transition-all ${subTab === 'anatomy' ? 'border-indigo-600 text-indigo-600 font-extrabold' : 'border-transparent hover:text-slate-600'}">Anatomía</button>
-                                    <button onclick="changeBrainSubTab('synapse')" class="pb-2 border-b-2 transition-all ${subTab === 'synapse' ? 'border-indigo-600 text-indigo-600 font-extrabold' : 'border-transparent hover:text-slate-600'}">Sinapsis Química</button>
-                                    <button onclick="changeBrainSubTab('action_potential')" class="pb-2 border-b-2 transition-all ${subTab === 'action_potential' ? 'border-indigo-600 text-indigo-600 font-extrabold' : 'border-transparent hover:text-slate-600'}">Potencial de Acción</button>
-                                </div>
-
-                                <!-- Contenido dinámico según la sub-pestaña activa -->
                                 <div class="flex-grow flex flex-col justify-between">
                                     <div class="flex-grow">
-                                        ${subTab === 'anatomy' ? `
-                                            <!-- ANATOMÍA -->
-                                            ${state.selectedBrainModel === 'procedural' ? `
-                                                ${region ? `
-                                                    <div class="space-y-4 fade-in">
-                                                        <div class="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100">
-                                                            <h4 class="font-extrabold text-indigo-900 text-base flex items-center gap-2">
-                                                                <span class="w-3 h-3 rounded-full ${region === 'frontal' ? 'bg-blue-500' : region === 'parietal' ? 'bg-purple-500' : region === 'temporal' ? 'bg-yellow-500' : region === 'occipital' ? 'bg-green-500' : region === 'cerebelo' ? 'bg-red-500' : 'bg-orange-500'}"></span>
-                                                                ${regionInfo[region].name}
-                                                            </h4>
-                                                            <p class="text-[10px] text-slate-400 mt-1 uppercase font-bold tracking-wider">Región Cerebral Activa</p>
-                                                        </div>
+                                        <!-- DETALLES MODELO REAL DE SKETCHFAB -->
+                                        <div class="space-y-4 fade-in">
+                                            <div class="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100">
+                                                <h4 class="font-extrabold text-indigo-900 text-base flex items-center gap-2">
+                                                    <i data-lucide="bookmark" class="w-4 h-4 text-indigo-600"></i>
+                                                    ${modelInfo[state.selectedBrainModel].name}
+                                                </h4>
+                                                <p class="text-[10px] text-slate-400 mt-1 uppercase font-bold tracking-wider">Modelo 3D Activo</p>
+                                            </div>
 
-                                                        <div class="space-y-3.5 text-xs text-slate-600">
-                                                            <div class="space-y-0.5">
-                                                                <h5 class="font-black text-slate-700 flex items-center gap-1">⚙️ Funciones Principales</h5>
-                                                                <p class="leading-relaxed text-[11px]">${regionInfo[region].functions}</p>
-                                                            </div>
-                                                            <div class="space-y-0.5">
-                                                                <h5 class="font-black text-slate-700 flex items-center gap-1">🔬 Implicación Química</h5>
-                                                                <p class="leading-relaxed text-[11px]">${regionInfo[region].chemical}</p>
-                                                            </div>
-                                                            <div class="space-y-0.5">
-                                                                <h5 class="font-black text-slate-700 flex items-center gap-1">🧠 Implicación Psicológica</h5>
-                                                                <p class="leading-relaxed text-[11px]">${regionInfo[region].psych}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                ` : `
-                                                    <div class="flex-grow flex flex-col items-center justify-center text-center p-6 text-slate-400 space-y-3 mt-8">
-                                                        <i data-lucide="info" class="w-10 h-10 text-slate-300"></i>
-                                                        <h4 class="font-bold text-slate-600 text-sm">Ninguna región seleccionada</h4>
-                                                        <p class="text-[11px] text-slate-400 max-w-xs leading-relaxed">
-                                                            Haz clic en las distintas regiones del cerebro en el modelo 3D o usa los selectores rápidos para ver su implicación fisiológica y psicológica.
-                                                        </p>
-                                                    </div>
-                                                `}
-                                            ` : `
-                                                <!-- DETALLES MODELO REAL DE SKETCHFAB -->
-                                                <div class="space-y-4 fade-in">
-                                                    <div class="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100">
-                                                        <h4 class="font-extrabold text-indigo-900 text-base flex items-center gap-2">
-                                                            <i data-lucide="bookmark" class="w-4 h-4 text-indigo-600"></i>
-                                                            ${modelInfo[state.selectedBrainModel].name}
-                                                        </h4>
-                                                        <p class="text-[10px] text-slate-400 mt-1 uppercase font-bold tracking-wider">Modelo 3D Activo</p>
-                                                    </div>
-
-                                                    <div class="space-y-3.5 text-xs text-slate-600">
-                                                        <div class="space-y-0.5">
-                                                            <h5 class="font-black text-slate-700 flex items-center gap-1">⚙️ Descripción Estructural</h5>
-                                                            <p class="leading-relaxed text-[11px]">${modelInfo[state.selectedBrainModel].desc}</p>
-                                                        </div>
-                                                        <div class="space-y-0.5">
-                                                            <h5 class="font-black text-slate-700 flex items-center gap-1">🧠 Implicación en Neuroanatomía</h5>
-                                                            <p class="leading-relaxed text-[11px]">${modelInfo[state.selectedBrainModel].details}</p>
-                                                        </div>
-                                                    </div>
+                                            <div class="space-y-3.5 text-xs text-slate-600">
+                                                <div class="space-y-0.5">
+                                                    <h5 class="font-black text-slate-700 flex items-center gap-1">⚙️ Descripción Estructural</h5>
+                                                    <p class="leading-relaxed text-[11px]">${modelInfo[state.selectedBrainModel].desc}</p>
                                                 </div>
-                                            `}
-                                        ` : subTab === 'synapse' ? `
-                                            <!-- SINAPSIS INTERACTIVA -->
-                                            <div class="space-y-4 flex-grow flex flex-col fade-in">
-                                                <div class="space-y-1">
-                                                    <h4 class="font-extrabold text-slate-800 text-sm">Transmisión Sináptica Química</h4>
-                                                    <p class="text-[11px] text-slate-400 leading-relaxed">Simula la liberación de neurotransmisores y su unión a los receptores postsinápticos.</p>
-                                                </div>
-
-                                                <!-- Canvas de Sinapsis -->
-                                                <div class="relative w-full h-[180px] bg-slate-950 rounded-2xl overflow-hidden border border-slate-800">
-                                                    <canvas id="synapse-canvas" class="w-full h-full block"></canvas>
-                                                    
-                                                    <!-- Barra lateral indicadora de voltaje postsináptico -->
-                                                    <div class="absolute right-3 top-3 bottom-3 w-2.5 bg-slate-850 rounded-full overflow-hidden border border-slate-700/50 flex flex-col justify-end">
-                                                        <div id="synapse-voltage-bar" class="w-full bg-indigo-500 transition-all duration-350" style="height: 40%"></div>
-                                                    </div>
-                                                    <div class="absolute right-7 top-2 text-[8px] font-bold text-slate-500 uppercase tracking-widest leading-none">Psp</div>
-                                                </div>
-
-                                                <!-- Controles de Neurotransmisores -->
-                                                <div class="grid grid-cols-2 gap-2">
-                                                    <button onclick="triggerSynapse('dopamine')" class="p-2 bg-yellow-50 hover:bg-yellow-100 border border-yellow-200 text-yellow-800 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
-                                                        <span class="w-2 h-2 rounded-full bg-yellow-500 inline-block animate-pulse"></span> Dopamina
-                                                    </button>
-                                                    <button onclick="triggerSynapse('serotonin')" class="p-2 bg-cyan-50 hover:bg-cyan-100 border border-cyan-200 text-cyan-800 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
-                                                        <span class="w-2 h-2 rounded-full bg-cyan-500 inline-block animate-pulse"></span> Serotonina
-                                                    </button>
-                                                    <button onclick="triggerSynapse('glutamate')" class="p-2 bg-orange-50 hover:bg-orange-100 border border-orange-200 text-orange-800 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
-                                                        <span class="w-2 h-2 rounded-full bg-orange-500 inline-block animate-pulse"></span> Glutamato (+)
-                                                    </button>
-                                                    <button onclick="triggerSynapse('gaba')" class="p-2 bg-purple-50 hover:bg-purple-100 border border-purple-200 text-purple-800 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-1.5">
-                                                        <span class="w-2 h-2 rounded-full bg-purple-500 inline-block animate-pulse"></span> GABA (-)
-                                                    </button>
-                                                </div>
-
-                                                <div id="synapse-info" class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-[10px] text-slate-500 min-h-[50px] leading-relaxed">
-                                                    Haz clic en un neurotransmisor para activar la transmisión química y ver sus efectos biológicos.
+                                                <div class="space-y-0.5">
+                                                    <h5 class="font-black text-slate-700 flex items-center gap-1">🧠 Implicación en Neuroanatomía</h5>
+                                                    <p class="leading-relaxed text-[11px]">${modelInfo[state.selectedBrainModel].details}</p>
                                                 </div>
                                             </div>
-                                        ` : `
-                                            <!-- POTENCIAL DE ACCIÓN -->
-                                            <div class="space-y-4 flex-grow flex flex-col fade-in">
-                                                <div class="space-y-1">
-                                                    <h4 class="font-extrabold text-slate-800 text-sm">Fisiología del Impulso Eléctrico</h4>
-                                                    <p class="text-[11px] text-slate-400 leading-relaxed">Simulación de la despolarización y repolarización de la membrana neuronal.</p>
-                                                </div>
-
-                                                <!-- Canvas Potencial de Acción -->
-                                                <div class="relative w-full h-[180px] bg-slate-950 rounded-2xl overflow-hidden border border-slate-800">
-                                                    <canvas id="ap-canvas" class="w-full h-full block"></canvas>
-                                                </div>
-
-                                                <div class="flex items-center justify-between gap-4">
-                                                    <button id="ap-play-btn" onclick="toggleAPSimulation()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1.5">
-                                                        <i data-lucide="play" class="w-4 h-4"></i> Disparar Impulso
-                                                    </button>
-                                                    <div id="ap-state-label" class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
-                                                        Estado: Reposo (-70 mV)
-                                                    </div>
-                                                </div>
-
-                                                <div id="ap-info" class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-[10px] text-slate-500 min-h-[50px] leading-relaxed">
-                                                    Presiona "Disparar Impulso" para simular la apertura de canales de Sodio (Na+) y Potasio (K+) a lo largo del axón.
-                                                </div>
-                                            </div>
-                                        `}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
