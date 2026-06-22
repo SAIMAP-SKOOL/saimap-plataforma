@@ -391,7 +391,8 @@
             // Brain 3D state
             brainSubTab: 'anatomy',
             selectedRegion: '',
-            brain3dAnimId: null
+            brain3dAnimId: null,
+            selectedBrainModel: 'procedural'
         };
 
         // --- SISTEMA DE ACCESO Y AUTENTICACIÓN (WHITELIST) ---
@@ -1627,7 +1628,7 @@
                         <i data-lucide="award" class="w-4.5 h-4.5"></i> Mis Logros
                     </button>
                     <button onclick="state.gameState = 'brain3d'; render();" class="pb-3 border-b-2 transition-all ${activeTab === 'brain3d' ? 'border-indigo-600 text-indigo-600' : 'border-transparent hover:text-slate-600'} flex items-center gap-2">
-                        <i data-lucide="brain" class="w-4.5 h-4.5"></i> Cerebro 3D
+                        <i data-lucide="brain" class="w-4.5 h-4.5"></i> Modelos 3D
                     </button>
                 </div>
             `;
@@ -3542,7 +3543,46 @@
             window.scrollTo(0, 0);
         }
 
+        const BRAIN_MODELS = [
+            { id: 'procedural', name: '🧠 Modelo Interactivo (Anatomía / Sinapsis)' },
+            { id: 'plastinated_brain', name: '🔬 Cerebro Plastinado Real (UBC)' },
+            { id: 'limbic_system', name: '🌀 Sistema Límbico (UBC)' },
+            { id: 'brainstem_willis', name: '💉 Tronco Encefálico y Círculo de Willis' },
+            { id: 'brainstem_cranial', name: '🏷️ Tronco y Pares Craneales Etiquetados' }
+        ];
+
+        const SKETCHFAB_MODELS = {
+            plastinated_brain: '2df234ff65b0483fb5b5e15e40efa65d',
+            limbic_system: 'e7379d750c3d4a23b98c568574d6c698',
+            brainstem_willis: '35a11c2106094a46a67f082e01b3152c',
+            brainstem_cranial: '104975d71c4c478685e173e32e850406'
+        };
+
+        const modelInfo = {
+            plastinated_brain: {
+                name: 'Cerebro Humano Plastinado',
+                desc: 'Un cerebro humano real completo sometido a plastinación. Permite apreciar la estructura macroscópica de los giros (circunvoluciones) y surcos corticales, la fisura longitudinal y la división hemisférica.',
+                details: 'Puedes observar la base del cerebro con el cerebelo en posición inferior y el inicio de la médula espinal. Es ideal para comprender la escala, volumen y forma orgánica real de la corteza cerebral.'
+            },
+            limbic_system: {
+                name: 'El Sistema Límbico',
+                desc: 'Una reconstrucción del circuito límbico, el "cerebro emocional". Incluye estructuras subcorticales clave para la supervivencia y la adaptación del organismo.',
+                details: 'Se aprecian el hipocampo (memoria a largo plazo), la amígdala (procesamiento del miedo y emociones), el fórnix, los cuerpos mamilares y el giro cingulado. Clave en los procesos de motivación y aprendizaje.'
+            },
+            brainstem_willis: {
+                name: 'Tronco Encefálico y Polígono de Willis',
+                desc: 'Prosección que detalla el tronco encefálico (mesencéfalo, protuberancia y bulbo raquídeo) junto al Polígono de Willis (círculo arterial cerebral).',
+                details: 'El Polígono de Willis es un anillo anastomótico de arterias que suministra sangre al cerebro, proporcionando flujo colateral de seguridad. Se aprecian las arterias carótidas internas, basilar y vertebrales.'
+            },
+            brainstem_cranial: {
+                name: 'Pares Craneales y Tronco Encefálico',
+                desc: 'Modelo anatómico con etiquetas interactivas que muestra el origen real de los doce pares de nervios craneales que emergen del tronco encefálico.',
+                details: 'Desde el nervio olfatorio (I) hasta el nervio hipogloso (XII). Permite estudiar los puntos exactos de emergencia de las vías sensitivas y motoras que inervan la cabeza, cuello y vísceras.'
+            }
+        };
+
         function renderBrain3D() {
+            if (!state.selectedBrainModel) state.selectedBrainModel = 'procedural';
             if (!state.brainSubTab) state.brainSubTab = 'anatomy';
             if (!state.selectedRegion) state.selectedRegion = '';
 
@@ -3598,35 +3638,73 @@
                         <!-- Panel de Visualización 3D (Izquierda) -->
                         <div class="md:col-span-7 flex flex-col space-y-4">
                             <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm flex flex-col flex-grow min-h-[480px]">
-                                <div class="flex justify-between items-center mb-4">
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-4">
                                     <div class="space-y-0.5">
                                         <h3 class="font-bold text-slate-800 text-sm flex items-center gap-2">
-                                            <i data-lucide="eye" class="w-4 h-4 text-indigo-600"></i> Modelado Tridimensional del Cerebro
+                                            <i data-lucide="eye" class="w-4 h-4 text-indigo-600"></i> Modelos 3D
                                         </h3>
-                                        <p class="text-[11px] text-slate-400">Arrastra para rotar, rueda para hacer zoom</p>
+                                        <p class="text-[11px] text-slate-400">Explora la anatomía interactiva y escaneos reales</p>
                                     </div>
-                                    <button onclick="resetBrainCamera()" class="p-1.5 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-lg text-xs font-bold flex items-center gap-1 transition-all">
-                                        <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i> Centrar
-                                    </button>
+                                    <div class="flex gap-2 items-center">
+                                        <select onchange="changeBrainModel(this.value)" class="text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border-none rounded-xl py-2 px-3 focus:ring-2 focus:ring-indigo-500 transition-all cursor-pointer">
+                                            ${BRAIN_MODELS.map(m => `
+                                                <option value="${m.id}" ${state.selectedBrainModel === m.id ? 'selected' : ''}>${m.name}</option>
+                                            `).join('')}
+                                        </select>
+                                        ${state.selectedBrainModel === 'procedural' ? `
+                                            <button onclick="resetBrainCamera()" class="p-2 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-xl text-xs font-bold flex items-center gap-1 transition-all" title="Centrar cámara">
+                                                <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+                                            </button>
+                                        ` : ''}
+                                    </div>
                                 </div>
 
-                                <!-- Contenedor del canvas de Three.js -->
-                                <div id="brain-3d-container" class="relative w-full h-[320px] sm:h-[360px] bg-slate-900 rounded-2xl overflow-hidden shadow-inner border border-slate-800 flex items-center justify-center">
-                                    <div id="brain-loading" class="absolute text-slate-400 text-xs flex flex-center gap-2">
-                                        <div class="animate-spin rounded-full h-4 w-4 border-2 border-slate-400 border-t-transparent"></div>
-                                        Cargando motor 3D...
+                                ${state.selectedBrainModel === 'procedural' ? `
+                                    <!-- Contenedor del canvas de Three.js -->
+                                    <div id="brain-3d-container" class="relative w-full h-[320px] sm:h-[360px] bg-slate-900 rounded-2xl overflow-hidden shadow-inner border border-slate-800 flex items-center justify-center">
+                                        <div id="brain-loading" class="absolute text-slate-400 text-xs flex flex-center gap-2">
+                                            <div class="animate-spin rounded-full h-4 w-4 border-2 border-slate-400 border-t-transparent"></div>
+                                            Cargando motor 3D...
+                                        </div>
                                     </div>
-                                </div>
 
-                                <!-- Botones de selección rápida -->
-                                <div class="grid grid-cols-3 gap-2 mt-4">
-                                    <button onclick="selectBrainRegion('frontal')" class="px-2 py-2.5 ${region === 'frontal' ? 'bg-blue-600 text-white shadow-md' : 'bg-blue-50 hover:bg-blue-100 text-blue-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-blue-200/50">Lóbulo Frontal</button>
-                                    <button onclick="selectBrainRegion('parietal')" class="px-2 py-2.5 ${region === 'parietal' ? 'bg-purple-600 text-white shadow-md' : 'bg-purple-50 hover:bg-purple-100 text-purple-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-purple-200/50">Lóbulo Parietal</button>
-                                    <button onclick="selectBrainRegion('temporal')" class="px-2 py-2.5 ${region === 'temporal' ? 'bg-yellow-600 text-white shadow-md' : 'bg-yellow-50 hover:bg-yellow-100 text-yellow-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-yellow-200/50">Lóbulo Temporal</button>
-                                    <button onclick="selectBrainRegion('occipital')" class="px-2 py-2.5 ${region === 'occipital' ? 'bg-green-600 text-white shadow-md' : 'bg-green-50 hover:bg-green-100 text-green-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-green-200/50">Lóbulo Occipital</button>
-                                    <button onclick="selectBrainRegion('cerebelo')" class="px-2 py-2.5 ${region === 'cerebelo' ? 'bg-red-600 text-white shadow-md' : 'bg-red-50 hover:bg-red-100 text-red-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-red-200/50">Cerebelo</button>
-                                    <button onclick="selectBrainRegion('tronco')" class="px-2 py-2.5 ${region === 'tronco' ? 'bg-orange-600 text-white shadow-md' : 'bg-orange-50 hover:bg-orange-100 text-orange-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-orange-200/50">Tronco</button>
-                                </div>
+                                    <!-- Botones de selección rápida -->
+                                    <div class="grid grid-cols-3 gap-2 mt-4">
+                                        <button onclick="selectBrainRegion('frontal')" class="px-2 py-2.5 ${region === 'frontal' ? 'bg-blue-600 text-white shadow-md' : 'bg-blue-50 hover:bg-blue-100 text-blue-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-blue-200/50">Lóbulo Frontal</button>
+                                        <button onclick="selectBrainRegion('parietal')" class="px-2 py-2.5 ${region === 'parietal' ? 'bg-purple-600 text-white shadow-md' : 'bg-purple-50 hover:bg-purple-100 text-purple-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-purple-200/50">Lóbulo Parietal</button>
+                                        <button onclick="selectBrainRegion('temporal')" class="px-2 py-2.5 ${region === 'temporal' ? 'bg-yellow-600 text-white shadow-md' : 'bg-yellow-50 hover:bg-yellow-100 text-yellow-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-yellow-200/50">Lóbulo Temporal</button>
+                                        <button onclick="selectBrainRegion('occipital')" class="px-2 py-2.5 ${region === 'occipital' ? 'bg-green-600 text-white shadow-md' : 'bg-green-50 hover:bg-green-100 text-green-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-green-200/50">Lóbulo Occipital</button>
+                                        <button onclick="selectBrainRegion('cerebelo')" class="px-2 py-2.5 ${region === 'cerebelo' ? 'bg-red-600 text-white shadow-md' : 'bg-red-50 hover:bg-red-100 text-red-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-red-200/50">Cerebelo</button>
+                                        <button onclick="selectBrainRegion('tronco')" class="px-2 py-2.5 ${region === 'tronco' ? 'bg-orange-600 text-white shadow-md' : 'bg-orange-50 hover:bg-orange-100 text-orange-700'} text-[10px] sm:text-xs font-bold rounded-xl transition-all border border-orange-200/50">Tronco</button>
+                                    </div>
+                                ` : `
+                                    <!-- Contenedor del Iframe de Sketchfab -->
+                                    <div class="relative w-full h-[320px] sm:h-[360px] bg-slate-950 rounded-2xl overflow-hidden shadow-md border border-slate-800 flex items-center justify-center">
+                                        <iframe class="w-full h-full border-none" 
+                                                title="Modelo 3D Sketchfab" 
+                                                allowfullscreen 
+                                                mozallowfullscreen="true" 
+                                                webkitallowfullscreen="true" 
+                                                allow="autoplay; fullscreen; xr-spatial-tracking" 
+                                                xr-spatial-tracking 
+                                                execution-while-out-of-viewport 
+                                                execution-while-not-rendered 
+                                                web-share 
+                                                src="https://sketchfab.com/models/${SKETCHFAB_MODELS[state.selectedBrainModel]}/embed?autostart=1&ui_annotations=1&ui_controls=1&ui_infos=0&ui_stop=0">
+                                        </iframe>
+                                    </div>
+
+                                    <!-- Leyenda informativa -->
+                                    <div class="mt-4 p-4 bg-slate-50 border border-slate-200/60 rounded-2xl flex items-start gap-3">
+                                        <i data-lucide="info" class="w-4 h-4 text-indigo-500 mt-0.5 flex-shrink-0"></i>
+                                        <div class="space-y-1">
+                                            <h4 class="text-xs font-bold text-slate-700">Modelo Escaneado en 3D</h4>
+                                            <p class="text-[10px] text-slate-400 leading-relaxed">
+                                                Este modelo interactivo es una prosección real o reconstrucción en 3D provista por la Facultad de Medicina de la <strong>Universidad de British Columbia (UBC)</strong> para fines educativos de neuroanatomía. Puedes interactuar con él, hacer zoom y rotarlo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                `}
                             </div>
                         </div>
 
@@ -3645,38 +3723,62 @@
                                     <div class="flex-grow">
                                         ${subTab === 'anatomy' ? `
                                             <!-- ANATOMÍA -->
-                                            ${region ? `
+                                            ${state.selectedBrainModel === 'procedural' ? `
+                                                ${region ? `
+                                                    <div class="space-y-4 fade-in">
+                                                        <div class="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100">
+                                                            <h4 class="font-extrabold text-indigo-900 text-base flex items-center gap-2">
+                                                                <span class="w-3 h-3 rounded-full ${region === 'frontal' ? 'bg-blue-500' : region === 'parietal' ? 'bg-purple-500' : region === 'temporal' ? 'bg-yellow-500' : region === 'occipital' ? 'bg-green-500' : region === 'cerebelo' ? 'bg-red-500' : 'bg-orange-500'}"></span>
+                                                                ${regionInfo[region].name}
+                                                            </h4>
+                                                            <p class="text-[10px] text-slate-400 mt-1 uppercase font-bold tracking-wider">Región Cerebral Activa</p>
+                                                        </div>
+
+                                                        <div class="space-y-3.5 text-xs text-slate-600">
+                                                            <div class="space-y-0.5">
+                                                                <h5 class="font-black text-slate-700 flex items-center gap-1">⚙️ Funciones Principales</h5>
+                                                                <p class="leading-relaxed text-[11px]">${regionInfo[region].functions}</p>
+                                                            </div>
+                                                            <div class="space-y-0.5">
+                                                                <h5 class="font-black text-slate-700 flex items-center gap-1">🔬 Implicación Química</h5>
+                                                                <p class="leading-relaxed text-[11px]">${regionInfo[region].chemical}</p>
+                                                            </div>
+                                                            <div class="space-y-0.5">
+                                                                <h5 class="font-black text-slate-700 flex items-center gap-1">🧠 Implicación Psicológica</h5>
+                                                                <p class="leading-relaxed text-[11px]">${regionInfo[region].psych}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                ` : `
+                                                    <div class="flex-grow flex flex-col items-center justify-center text-center p-6 text-slate-400 space-y-3 mt-8">
+                                                        <i data-lucide="info" class="w-10 h-10 text-slate-300"></i>
+                                                        <h4 class="font-bold text-slate-600 text-sm">Ninguna región seleccionada</h4>
+                                                        <p class="text-[11px] text-slate-400 max-w-xs leading-relaxed">
+                                                            Haz clic en las distintas regiones del cerebro en el modelo 3D o usa los selectores rápidos para ver su implicación fisiológica y psicológica.
+                                                        </p>
+                                                    </div>
+                                                `}
+                                            ` : `
+                                                <!-- DETALLES MODELO REAL DE SKETCHFAB -->
                                                 <div class="space-y-4 fade-in">
                                                     <div class="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100">
                                                         <h4 class="font-extrabold text-indigo-900 text-base flex items-center gap-2">
-                                                            <span class="w-3 h-3 rounded-full ${region === 'frontal' ? 'bg-blue-500' : region === 'parietal' ? 'bg-purple-500' : region === 'temporal' ? 'bg-yellow-500' : region === 'occipital' ? 'bg-green-500' : region === 'cerebelo' ? 'bg-red-500' : 'bg-orange-500'}"></span>
-                                                            ${regionInfo[region].name}
+                                                            <i data-lucide="bookmark" class="w-4 h-4 text-indigo-600"></i>
+                                                            ${modelInfo[state.selectedBrainModel].name}
                                                         </h4>
-                                                        <p class="text-[10px] text-slate-400 mt-1 uppercase font-bold tracking-wider">Región Cerebral Activa</p>
+                                                        <p class="text-[10px] text-slate-400 mt-1 uppercase font-bold tracking-wider">Modelo 3D Activo</p>
                                                     </div>
 
                                                     <div class="space-y-3.5 text-xs text-slate-600">
                                                         <div class="space-y-0.5">
-                                                            <h5 class="font-black text-slate-700 flex items-center gap-1">⚙️ Funciones Principales</h5>
-                                                            <p class="leading-relaxed text-[11px]">${regionInfo[region].functions}</p>
+                                                            <h5 class="font-black text-slate-700 flex items-center gap-1">⚙️ Descripción Estructural</h5>
+                                                            <p class="leading-relaxed text-[11px]">${modelInfo[state.selectedBrainModel].desc}</p>
                                                         </div>
                                                         <div class="space-y-0.5">
-                                                            <h5 class="font-black text-slate-700 flex items-center gap-1">🔬 Implicación Química</h5>
-                                                            <p class="leading-relaxed text-[11px]">${regionInfo[region].chemical}</p>
-                                                        </div>
-                                                        <div class="space-y-0.5">
-                                                            <h5 class="font-black text-slate-700 flex items-center gap-1">🧠 Implicación Psicológica</h5>
-                                                            <p class="leading-relaxed text-[11px]">${regionInfo[region].psych}</p>
+                                                            <h5 class="font-black text-slate-700 flex items-center gap-1">🧠 Implicación en Neuroanatomía</h5>
+                                                            <p class="leading-relaxed text-[11px]">${modelInfo[state.selectedBrainModel].details}</p>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            ` : `
-                                                <div class="flex-grow flex flex-col items-center justify-center text-center p-6 text-slate-400 space-y-3 mt-8">
-                                                    <i data-lucide="info" class="w-10 h-10 text-slate-300"></i>
-                                                    <h4 class="font-bold text-slate-600 text-sm">Ninguna región seleccionada</h4>
-                                                    <p class="text-[11px] text-slate-400 max-w-xs leading-relaxed">
-                                                        Haz clic en las distintas regiones del cerebro en el modelo 3D o usa los selectores rápidos para ver su implicación fisiológica y psicológica.
-                                                    </p>
                                                 </div>
                                             `}
                                         ` : subTab === 'synapse' ? `
@@ -3759,6 +3861,15 @@
             render();
         }
 
+        function changeBrainModel(modelId) {
+            state.selectedBrainModel = modelId;
+            if (modelId !== 'procedural' && state.brain3dAnimId) {
+                cancelAnimationFrame(state.brain3dAnimId);
+                state.brain3dAnimId = null;
+            }
+            render();
+        }
+
         function selectBrainRegion(regionId) {
             state.selectedRegion = regionId;
             if (window.brainMeshes) {
@@ -3784,6 +3895,12 @@
         }
 
         function initBrain3D() {
+            if (state.selectedBrainModel !== 'procedural') {
+                const loader = document.getElementById('brain-loading');
+                if (loader) loader.style.display = 'none';
+                return;
+            }
+
             const loader = document.getElementById('brain-loading');
             if (loader) loader.style.display = 'none';
 
@@ -4050,7 +4167,7 @@
             }
 
             function animate() {
-                if (state.gameState !== 'brain3d') return;
+                if (state.gameState !== 'brain3d' || state.selectedBrainModel !== 'procedural') return;
                 state.brain3dAnimId = requestAnimationFrame(animate);
                 if (!isDragging) {
                     brainGroup.rotation.y += 0.003;
