@@ -355,6 +355,13 @@
 
         // Inicializar
         document.addEventListener('DOMContentLoaded', () => {
+            // Verificar si el usuario está registrado/iniciado sesión
+            const savedEmail = localStorage.getItem('saimap_user_email');
+            if (!savedEmail) {
+                window.location.href = 'index.html?lock=true&tab=brain3d';
+                return;
+            }
+
             activeModelId = getModelParam();
             initModelSelector();
             updateModelInfoText();
