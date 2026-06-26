@@ -350,6 +350,16 @@
         let ALL_QUESTIONS = [];
         let subjectName = "Examen Autocargado";
 
+        // --- DATOS DE PROGRESO DE PREGUNTAS POR USUARIO ---
+        // seenQuestions: { subjectId: [id1, id2, ...] }  → preguntas ya vistas
+        // questionStats:  { subjectId: { qId: { correct, wrong, nextReview } } } → Anki
+        // marathonState:  { subjectId: { remainingIds: [], done: 0 } } → modo maratón
+        let userQuestionData = {
+            seenQuestions: {},
+            questionStats: {},
+            marathonState: {}
+        };
+
         let state = {
             gameState: 'select',      // 'select' (dashboard/menu), 'playing', 'finished'
             favorites: JSON.parse(localStorage.getItem('saimap_favorites')) || [],
@@ -392,7 +402,9 @@
             brainSubTab: 'anatomy',
             selectedRegion: '',
             brain3dAnimId: null,
-            selectedBrainModel: 'plastinated_brain'
+            selectedBrainModel: 'plastinated_brain',
+            // Modo maratón
+            isMarathon: false
         };
 
         // --- SISTEMA DE ACCESO Y AUTENTICACIÓN (WHITELIST) ---
@@ -630,6 +642,38 @@
                             needsSave = true;
                         }
 
+                        // 5. Preguntas vistas (JSON string)
+                        if (fields.seenQuestions && fields.seenQuestions.stringValue) {
+                            try {
+                                const remote = JSON.parse(fields.seenQuestions.stringValue);
+                                // Merge: unión de vistos locales y remotos
+                                for (const subId in remote) {
+                                    const localSeen = new Set(userQuestionData.seenQuestions[subId] || []);
+                                    remote[subId].forEach(id => localSeen.add(id));
+                                    userQuestionData.seenQuestions[subId] = [...localSeen];
+                                }
+                            } catch(e) { console.warn('seenQuestions parse error', e); }
+                        }
+
+                        // 6. Estadísticas Anki (JSON string)
+                        if (fields.questionStats && fields.questionStats.stringValue) {
+                            try {
+                                const remote = JSON.parse(fields.questionStats.stringValue);
+                                for (const subId in remote) {
+                                    if (!userQuestionData.questionStats[subId]) userQuestionData.questionStats[subId] = {};
+                                    Object.assign(userQuestionData.questionStats[subId], remote[subId]);
+                                }
+                            } catch(e) { console.warn('questionStats parse error', e); }
+                        }
+
+                        // 7. Estado maratón (JSON string)
+                        if (fields.marathonState && fields.marathonState.stringValue) {
+                            try {
+                                const remote = JSON.parse(fields.marathonState.stringValue);
+                                Object.assign(userQuestionData.marathonState, remote);
+                            } catch(e) { console.warn('marathonState parse error', e); }
+                        }
+
                         render();
 
                         // Si detectamos cambios locales que no estaban en la nube, sincronizamos de vuelta
@@ -664,11 +708,20 @@
                             },
                             weeklyFocus: {
                                 stringValue: localFocus
+                            },
+                            seenQuestions: {
+                                stringValue: JSON.stringify(userQuestionData.seenQuestions)
+                            },
+                            questionStats: {
+                                stringValue: JSON.stringify(userQuestionData.questionStats)
+                            },
+                            marathonState: {
+                                stringValue: JSON.stringify(userQuestionData.marathonState)
                             }
                         }
                     };
 
-                    const updateMaskQuery = 'updateMask.fieldPaths=favorites&updateMask.fieldPaths=achievements&updateMask.fieldPaths=plannerTasks&updateMask.fieldPaths=weeklyFocus';
+                    const updateMaskQuery = 'updateMask.fieldPaths=favorites&updateMask.fieldPaths=achievements&updateMask.fieldPaths=plannerTasks&updateMask.fieldPaths=weeklyFocus&updateMask.fieldPaths=seenQuestions&updateMask.fieldPaths=questionStats&updateMask.fieldPaths=marathonState';
                     const patchUrl = `${docUrl}?${updateMaskQuery}`;
 
                     const response = await fetch(patchUrl, {
@@ -1016,12 +1069,45 @@
         };
 
         // --- MÉTODOS DEL JUEGO ---
+        // --- SELECCIÓN INTELIGENTE DE PREGUNTAS (Anti-repetición + Anki) ---
+        function getSmartQuestions(count) {
+            const subId = state.selectedSubjectId || '__global__';
+            const seen = new Set(userQuestionData.seenQuestions[subId] || []);
+            const stats = userQuestionData.questionStats[subId] || {};
+            const now = Date.now();
+
+            // Categoría 1: No vistas nunca → máxima prioridad (barajadas)
+            const unseen = shuffleArray(ALL_QUESTIONS.filter(q => !seen.has(q.id)));
+
+            // Categoría 2: Vistas y con revisión pendiente según Anki
+            const dueForReview = shuffleArray(
+                ALL_QUESTIONS.filter(q => seen.has(q.id) && (!stats[q.id] || stats[q.id].nextReview <= now))
+            );
+
+            // Categoría 3: Vistas y Anki dice que aún no toca revisarlas
+            const notDueYet = shuffleArray(
+                ALL_QUESTIONS.filter(q => seen.has(q.id) && stats[q.id] && stats[q.id].nextReview > now)
+            );
+
+            // Ordenar cat. 3 por las más falladas primero (mayor ratio de fallos)
+            notDueYet.sort((a, b) => {
+                const rA = stats[a.id] ? (stats[a.id].wrong || 0) / Math.max((stats[a.id].correct || 0) + (stats[a.id].wrong || 0), 1) : 0;
+                const rB = stats[b.id] ? (stats[b.id].wrong || 0) / Math.max((stats[b.id].correct || 0) + (stats[b.id].wrong || 0), 1) : 0;
+                return rB - rA;
+            });
+
+            const pool = [...unseen, ...dueForReview, ...notDueYet];
+            return pool.slice(0, count);
+        }
+
         const appMethods = {
             setQuestionCount: (n) => { state.questionCount = n; render(); },
             startExam: (selectedMode) => {
                 state.mode = selectedMode;
+                state.isMarathon = false;
                 let count = Math.min(state.questionCount, ALL_QUESTIONS.length);
-                let selected = shuffleArray(ALL_QUESTIONS).slice(0, count);
+                // --- ANTI-REPETICIÓN + ANKI: selección inteligente de preguntas ---
+                let selected = getSmartQuestions(count);
 
                 state.activeQuestions = selected.map(q => {
                     let opts = q.options.map((text, idx) => ({ text, isCorrect: idx === q.correct }));
@@ -1060,14 +1146,77 @@
                 }
                 render();
             },
+            startMarathon: () => {
+                // --- MODO MARATÓN: recorre TODO el banco priorizando no vistas ---
+                const subId = state.selectedSubjectId || '__global__';
+                const ms = userQuestionData.marathonState[subId];
+                let remainingIds;
+                // Si hay maratón guardado y quedan preguntas, retomarlo
+                if (ms && ms.remainingIds && ms.remainingIds.length > 0) {
+                    remainingIds = ms.remainingIds;
+                } else {
+                    // Nueva ronda: todas las preguntas, no vistas primero
+                    const seen = new Set(userQuestionData.seenQuestions[subId] || []);
+                    const unseen = shuffleArray(ALL_QUESTIONS.filter(q => !seen.has(q.id)));
+                    const seenArr = shuffleArray(ALL_QUESTIONS.filter(q => seen.has(q.id)));
+                    remainingIds = [...unseen, ...seenArr].map(q => q.id);
+                }
+                userQuestionData.marathonState[subId] = { remainingIds: [...remainingIds], done: ALL_QUESTIONS.length - remainingIds.length };
+
+                // Tomar las primeras 30 para este bloque
+                const batchIds = remainingIds.slice(0, 30);
+                const qMap = new Map(ALL_QUESTIONS.map(q => [q.id, q]));
+                const selected = batchIds.map(id => qMap.get(id)).filter(Boolean);
+
+                state.mode = 'sim';
+                state.isMarathon = true;
+                state.activeQuestions = selected.map(q => {
+                    let opts = q.options.map((text, idx) => ({ text, isCorrect: idx === q.correct }));
+                    let shuffledOpts = shuffleArray(opts);
+                    return {
+                        ...q,
+                        options: shuffledOpts.map(o => o.text),
+                        correctIndex: shuffledOpts.findIndex(o => o.isCorrect)
+                    };
+                });
+
+                state.gameState = 'playing';
+                state.currentIndex = 0;
+                state.userAnswers = {};
+                state.simFeedback = null;
+                state.hiddenOptions = [];
+                state.timeSpentSeconds = 0;
+                if(state.playInterval) clearInterval(state.playInterval);
+                state.playInterval = setInterval(() => { state.timeSpentSeconds++; }, 1000);
+                render();
+            },
             handleAnswer: (optionIndex) => {
                 const currentQ = state.activeQuestions[state.currentIndex];
                 if (state.mode === 'sim' && state.simFeedback) return;
                 
+                const isCorrect = optionIndex === currentQ.correctIndex;
                 if (state.mode === 'sim') {
-                    state.simFeedback = { isCorrect: optionIndex === currentQ.correctIndex, selected: optionIndex };
+                    state.simFeedback = { isCorrect, selected: optionIndex };
                 }
                 state.userAnswers[currentQ.id] = optionIndex;
+
+                // --- ANKI: actualizar estadísticas de la pregunta ---
+                const subId = state.selectedSubjectId || '__global__';
+                const qId = currentQ.id;
+                if (!userQuestionData.questionStats[subId]) userQuestionData.questionStats[subId] = {};
+                const qs = userQuestionData.questionStats[subId][qId] || { correct: 0, wrong: 0, nextReview: 0 };
+                if (isCorrect) {
+                    qs.correct = (qs.correct || 0) + 1;
+                    // Backoff exponencial: 2^correct días (máx 64 días)
+                    const days = Math.min(Math.pow(2, qs.correct), 64);
+                    qs.nextReview = Date.now() + days * 86400000;
+                } else {
+                    qs.wrong = (qs.wrong || 0) + 1;
+                    qs.nextReview = Date.now() + 3600000; // 1h para las falladas
+                }
+                qs.lastSeen = Date.now();
+                userQuestionData.questionStats[subId][qId] = qs;
+
                 render();
             },
             nextQuestion: () => {
@@ -1075,6 +1224,8 @@
                     state.currentIndex++;
                     state.simFeedback = null;
                     state.hiddenOptions = [];
+                    // 1. AUTO-SCROLL: volver al inicio al cambiar pregunta
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                     render();
                 } else {
                     appMethods.finishExam();
@@ -1085,6 +1236,8 @@
                     state.currentIndex--;
                     state.simFeedback = null; 
                     state.hiddenOptions = [];
+                    // 1. AUTO-SCROLL: volver al inicio al cambiar pregunta
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                     render();
                 }
             },
@@ -1107,6 +1260,29 @@
                     timeSpent: formatTime(state.timeSpentSeconds)
                 });
 
+                // --- MARCAR PREGUNTAS COMO VISTAS (anti-repetición) ---
+                const subId = state.selectedSubjectId || '__global__';
+                if (!userQuestionData.seenQuestions[subId]) userQuestionData.seenQuestions[subId] = [];
+                const seenSet = new Set(userQuestionData.seenQuestions[subId]);
+                state.activeQuestions.forEach(q => seenSet.add(q.id));
+                userQuestionData.seenQuestions[subId] = [...seenSet];
+
+                // --- ACTUALIZAR ESTADO DEL MARATÓN ---
+                if (state.isMarathon) {
+                    const ms = userQuestionData.marathonState[subId];
+                    if (ms && ms.remainingIds) {
+                        const usedIds = new Set(state.activeQuestions.map(q => q.id));
+                        ms.remainingIds = ms.remainingIds.filter(id => !usedIds.has(id));
+                        ms.done = ALL_QUESTIONS.length - ms.remainingIds.length;
+                        userQuestionData.marathonState[subId] = ms;
+                    }
+                }
+
+                // --- SINCRONIZAR PROGRESO CON FIREBASE ---
+                if (authState.isAuthenticated) {
+                    syncUserData('save');
+                }
+
                 // Desbloqueo de logros
                 appMethods.unlockAchievement('first_steps');
                 const historyCount = getHistory().length;
@@ -1116,15 +1292,15 @@
 
                 // Medallas por examen perfecto (específicas por asignatura)
                 if (correct === total) {
-                    const subId = state.selectedSubjectId || 'otros';
+                    const subId2 = state.selectedSubjectId || 'otros';
                     if (total === 30) {
-                        appMethods.unlockAchievement(`medal_bronze_${subId}`);
+                        appMethods.unlockAchievement(`medal_bronze_${subId2}`);
                     } else if (total === 75) {
-                        appMethods.unlockAchievement(`medal_silver_${subId}`);
+                        appMethods.unlockAchievement(`medal_silver_${subId2}`);
                     } else if (total === 150) {
-                        appMethods.unlockAchievement(`medal_gold_${subId}`);
+                        appMethods.unlockAchievement(`medal_gold_${subId2}`);
                     } else if (total === 300) {
-                        appMethods.unlockAchievement(`medal_platinum_${subId}`);
+                        appMethods.unlockAchievement(`medal_platinum_${subId2}`);
                     }
                 }
 
@@ -2718,8 +2894,36 @@
 
             let menuContentHTML = '';
             if (state.studyMode === 'test') {
+                // --- INDICADOR DE COBERTURA DEL BANCO ---
+                const subId = state.selectedSubjectId || '__global__';
+                const totalQ = ALL_QUESTIONS.length;
+                const seenCount = (userQuestionData.seenQuestions[subId] || []).length;
+                const seenPct = totalQ > 0 ? Math.round((seenCount / totalQ) * 100) : 0;
+                const seenColor = seenPct < 30 ? 'bg-red-400' : seenPct < 70 ? 'bg-amber-400' : 'bg-green-500';
+
+                // --- MARATÓN: estado actual ---
+                const ms = userQuestionData.marathonState[subId];
+                const marathonRemaining = ms && ms.remainingIds ? ms.remainingIds.length : totalQ;
+                const marathonDone = totalQ - marathonRemaining;
+                const marathonPct = totalQ > 0 ? Math.round((marathonDone / totalQ) * 100) : 0;
+                const marathonLabel = (ms && ms.remainingIds && ms.remainingIds.length > 0 && ms.remainingIds.length < totalQ)
+                    ? `Continuar Maratón (quedan ${marathonRemaining})`
+                    : 'Modo Maratón 🏃';
+
                 menuContentHTML = `
                     <div class="space-y-6">
+                        <!-- Indicador de cobertura del banco -->
+                        <div class="bg-slate-50 border border-slate-100 rounded-2xl p-4 space-y-2">
+                            <div class="flex items-center justify-between text-xs">
+                                <span class="font-bold text-slate-500 flex items-center gap-1.5"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Banco explorado</span>
+                                <span class="font-black text-slate-700">${seenCount} / ${totalQ} preguntas (${seenPct}%)</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2">
+                                <div class="${seenColor} h-2 rounded-full transition-all" style="width: ${seenPct}%"></div>
+                            </div>
+                            <p class="text-xs text-slate-400">${seenPct < 100 ? 'Los nuevos exámenes priorizan preguntas que aún no has visto.' : '¡Has explorado todo el banco! Las preguntas con más fallos aparecerán primero.'}</p>
+                        </div>
+
                         <div class="space-y-4">
                             <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Número de Preguntas</h3>
                             <div class="grid grid-cols-4 gap-3">
@@ -2733,7 +2937,7 @@
                                     <div class="p-2 bg-green-100 rounded-lg"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
                                     <span>Modo Repaso</span>
                                 </div>
-                                <p class="text-xs text-slate-500 pl-11">Corrección instantánea con explicaciones al momento. Ideal para estudiar.</p>
+                                <p class="text-xs text-slate-500 pl-11">Corrección instantánea. Prioriza preguntas nuevas y las que más has fallado.</p>
                             </button>
                             
                             <button onclick="appMethods.startExam('exam')" class="flex flex-col p-5 border-2 border-slate-100 rounded-2xl hover:border-indigo-500 hover:bg-indigo-50/30 transition-all text-left group">
@@ -2741,7 +2945,24 @@
                                     <div class="p-2 bg-indigo-100 rounded-lg"><i data-lucide="timer" class="w-5 h-5"></i></div>
                                     <span>Modo Examen (1H)</span>
                                 </div>
-                                <p class="text-xs text-slate-500 pl-11">Sin ayudas. Temporizador de 1 hora. Corrección y explicaciones al final de la prueba.</p>
+                                <p class="text-xs text-slate-500 pl-11">Sin ayudas. Temporizador de 1 hora. Corrección y explicaciones al final.</p>
+                            </button>
+                        </div>
+
+                        <!-- Modo Maratón -->
+                        <div class="border-t border-slate-100 pt-4">
+                            <button onclick="appMethods.startMarathon()" class="w-full flex items-center justify-between p-4 border-2 border-dashed border-purple-200 rounded-2xl hover:border-purple-500 hover:bg-purple-50/30 transition-all group">
+                                <div class="flex items-center gap-3">
+                                    <div class="p-2 bg-purple-100 rounded-lg"><i data-lucide="zap" class="w-5 h-5 text-purple-600"></i></div>
+                                    <div class="text-left">
+                                        <div class="font-bold text-purple-700 text-sm">${marathonLabel}</div>
+                                        <div class="text-xs text-slate-400">Recorre todo el banco en bloques de 30. Progreso guardado en la nube.</div>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-xs font-black text-purple-600">${marathonPct}%</div>
+                                    <div class="text-xs text-slate-400">${marathonDone}/${totalQ}</div>
+                                </div>
                             </button>
                         </div>
                     </div>
@@ -3540,7 +3761,10 @@
                 MathJax.typesetClear([app]);
                 MathJax.typesetPromise([app]).catch(err => console.log('MathJax typeset error:', err));
             }
-            window.scrollTo(0, 0);
+            // Solo scroll al inicio si no estamos en una pantalla de examen en curso (el scroll suave lo hacen next/prevQuestion)
+            if (state.gameState !== 'playing') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
         }
 
         const BRAIN_MODELS = [
