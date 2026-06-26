@@ -3036,7 +3036,7 @@
                                             </span>
                                         `}
                                         <div class="flex items-center gap-2">
-                                            <span class="text-[10px] font-bold text-slate-400">${year} Curso</span>
+                                            <span class="text-[10px] font-bold text-slate-400">${year === 'PIR' || year === 'Idiomas' ? year : year + ' Curso'}</span>
                                             <button onclick="appMethods.toggleFavorite('${id}', event)" class="p-1 hover:bg-slate-100 rounded-full transition-colors flex items-center justify-center text-slate-400 hover:text-rose-500" title="${state.favorites.includes(id) ? 'Quitar de favoritas' : 'Marcar como favorita'}">
                                                 <i data-lucide="heart" class="w-3.5 h-3.5 ${state.favorites.includes(id) ? 'fill-rose-500 text-rose-500' : ''}"></i>
                                             </button>
@@ -3086,9 +3086,9 @@
                             </h3>
                             <!-- Filtros de Curso -->
                             <div class="flex bg-slate-200/60 p-1 rounded-xl text-xs font-bold text-slate-500 self-start">
-                                ${['Todos', 'Favoritas', '1º', '2º', '3º'].map(y => `
+                                ${['Todos', 'Favoritas', '1º', '2º', '3º', 'PIR', 'Idiomas'].map(y => `
                                 <button onclick="appMethods.setFilterYear('${y}')" class="px-4 py-1.5 rounded-lg transition-all ${state.filterYear === y ? 'bg-white text-slate-800 shadow-sm' : 'hover:text-slate-700'}">
-                                    ${y === 'Todos' ? 'Todos' : (y === 'Favoritas' ? 'Favoritas' : y + ' Curso')}
+                                    ${y === 'Todos' ? 'Todos' : (y === 'Favoritas' ? 'Favoritas' : (y === 'PIR' || y === 'Idiomas' ? y : y + ' Curso'))}
                                 </button>
                                 `).join('')}
                             </div>
@@ -3393,7 +3393,7 @@
                                     <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 border border-indigo-100 rounded-md text-[10px] font-bold uppercase tracking-wider">
                                         Asignatura
                                     </span>
-                                    <span class="text-[10px] font-bold text-slate-400">• ${year} Curso</span>
+                                    <span class="text-[10px] font-bold text-slate-400">• ${year === 'PIR' || year === 'Idiomas' ? year : year + ' Curso'}</span>
                                 </div>
                                 <h1 class="text-2xl md:text-3xl font-black text-slate-800 tracking-tight leading-none">${sub.name}</h1>
                             </div>
