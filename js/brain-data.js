@@ -258,6 +258,13 @@ const ANATOMY_DB = {
         psy:'Lesiones de la vía óptica → patrones campimétricos diagnósticos: ceguera monocular (nervio), hemianopsia bitemporal (quiasma/tumor hipofisario), hemianopsia homónima (cintilla).',
         tags:['Neuropsicología','Psicología de la Percepción']
     },
+    'optic chiasm': {
+        name:'Quiasma Óptico', emoji:'👁️', category:'Pares Craneales',
+        fn:'Punto de cruce e integración de las vías visuales de ambos ojos.',
+        details:'Estructura en forma de X situada en la fosa cerebral media, inmediatamente anterior a la silla turca. Aquí decusan (cruzan al hemisferio opuesto) las fibras ópticas de las mitades nasales de la retina, mientras que las de las mitades temporales siguen una trayectoria directa.',
+        psy:'Su compresión típica por un adenoma de hipófisis causa hemianopsia bitemporal (pérdida de la visión en los campos temporales externos o "visión en túnel").',
+        tags:['Neuropsicología','Psicología de la Percepción']
+    },
     'oculomotor': {
         name:'Nervio Oculomotor (III)', emoji:'👁️', category:'Pares Craneales',
         fn:'Controla cuatro músculos oculares extrínsecos, el elevador del párpado y la constricción pupilar (parasimpático).',
