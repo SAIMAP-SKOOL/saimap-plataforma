@@ -428,19 +428,70 @@ const ANATOMY_DB = {
     }
 };
 
+// Mapeo específico de anotaciones numéricas para modelos que vienen etiquetados solo con números
+const MODEL_ANNOTATION_MAPS = {
+    'plastinated_brain': {
+        '1': 'olfactory', // Bulbo olfatorio
+        '2': 'optic', // Nervio óptico / Quiasma
+        '3': 'oculomotor', // III par
+        '4': 'trochlear', // IV par
+        '5': 'trigeminal', // V par
+        '6': 'abducens', // VI par
+        '7': 'facial', // VII par
+        '8': 'vestibulocochlear', // VIII par
+        '9': 'glossopharyngeal', // IX par
+        '10': 'vagus', // X par
+        '11': 'accessory', // XI par
+        '12': 'hypoglossal', // XII par
+        '13': 'precentral gyrus', // Giro motor
+        '14': 'postcentral gyrus', // Giro somatosensorial
+        '15': 'cerebellum', // Cerebelo
+        '16': 'pons', // Protuberancia
+        '17': 'medulla', // Bulbo raquídeo
+        '18': 'midbrain', // Mesencéfalo
+        '19': 'corpus callosum', // Cuerpo calloso
+        '20': 'lateral sulcus' // Cisura de Silvio
+    }
+};
+
 /** Busca descripción para el nombre de una anotación (tolerante: exacto → parcial → palabras → genérico) */
-function getZoneDescription(title) {
+function getZoneDescription(title, modelId = null) {
     if (!title) return null;
-    const norm = title.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
+    
+    let lookupTitle = title;
+    
+    // Traducir si es un marcador numérico en un modelo que tiene su respectivo mapa
+    if (modelId && MODEL_ANNOTATION_MAPS[modelId]) {
+        const cleanTitle = title.trim();
+        if (MODEL_ANNOTATION_MAPS[modelId][cleanTitle]) {
+            lookupTitle = MODEL_ANNOTATION_MAPS[modelId][cleanTitle];
+        }
+    }
+    
+    const norm = lookupTitle.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
     const db = ANATOMY_DB;
-    if (db[norm]) return { ...db[norm], matchTitle: title };
-    for (const k of Object.keys(db)) if (norm.includes(k)) return { ...db[k], matchTitle: title };
-    for (const k of Object.keys(db)) if (k.includes(norm)) return { ...db[k], matchTitle: title };
+    
+    if (db[norm]) return { ...db[norm], matchTitle: title, originalTitle: lookupTitle };
+    for (const k of Object.keys(db)) if (norm.includes(k)) return { ...db[k], matchTitle: title, originalTitle: lookupTitle };
+    for (const k of Object.keys(db)) if (k.includes(norm)) return { ...db[k], matchTitle: title, originalTitle: lookupTitle };
+    
     const words = norm.split(' ').filter(w => w.length > 4);
-    for (const w of words) for (const k of Object.keys(db)) if (k.includes(w)) return { ...db[k], matchTitle: title };
-    return { name: title, emoji: '📍', category: 'Estructura Anatómica',
+    for (const w of words) {
+        for (const k of Object.keys(db)) {
+            if (k.includes(w)) return { ...db[k], matchTitle: title, originalTitle: lookupTitle };
+        }
+    }
+    
+    return { 
+        name: isNaN(lookupTitle) ? lookupTitle : `Estructura ${lookupTitle}`, 
+        emoji: '📍', 
+        category: 'Estructura Anatómica',
         fn: 'Estructura anatómica identificada en el modelo 3D.',
         details: 'Explora el modelo 3D para examinar esta estructura en detalle.',
         psy: 'Consulta la literatura de neuroanatomía para conocer la relevancia clínica y psicológica de esta estructura.',
-        tags: [], matchTitle: title };
+        tags: [], 
+        matchTitle: title,
+        originalTitle: lookupTitle
+    };
 }
+

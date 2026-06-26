@@ -14,17 +14,18 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700;800&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #090d16;
-            color: #f1f5f9;
+            background-color: #f7f3eb; /* Fondo sepia suave */
+            color: #3c2f2f; /* Texto marrón oscuro/carbón */
         }
         .font-outfit {
             font-family: 'Outfit', sans-serif;
         }
         .glass-panel {
-            background: rgba(15, 23, 42, 0.45);
+            background: rgba(253, 251, 247, 0.85); /* Fondo sepia claro */
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(139, 92, 26, 0.12); /* Borde café muy sutil */
+            box-shadow: 0 10px 30px -10px rgba(74, 58, 46, 0.08);
         }
         .scrollbar-hide::-webkit-scrollbar {
             display: none;
@@ -34,9 +35,10 @@
             scrollbar-width: none;
         }
         .active-tab {
-            background-color: rgba(99, 102, 241, 0.15);
-            border-color: rgba(99, 102, 241, 0.5);
-            color: #a5b4fc;
+            background-color: rgba(124, 76, 36, 0.08); /* Fondo café sutil */
+            border-color: rgba(124, 76, 36, 0.35);
+            color: #7c4c24; /* Color café cuero */
+            font-weight: 800 !important;
         }
         .success-pulse {
             animation: successPulse 1.2s infinite ease-in-out;
@@ -62,20 +64,20 @@
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col antialiased selection:bg-indigo-500/30 selection:text-indigo-200">
+<body class="min-h-screen flex flex-col antialiased selection:bg-[#7c4c24]/20 selection:text-[#7c4c24]">
 
     <!-- Header / Navbar -->
-    <header class="w-full py-4 px-6 border-b border-white/5 bg-slate-950/80 backdrop-blur-md sticky top-0 z-40 flex items-center justify-between">
+    <header class="w-full py-4 px-6 border-b border-[#ebdcd0] bg-[#fbf9f6]/95 backdrop-blur-md sticky top-0 z-40 flex items-center justify-between">
         <div class="flex items-center gap-4">
-            <button onclick="goBack()" class="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 hover:border-white/10 text-slate-300 hover:text-white transition-all active:scale-95 flex items-center justify-center shadow-sm cursor-pointer" title="Volver al Panel">
+            <button onclick="goBack()" class="p-2.5 rounded-xl bg-[#f5efe6] hover:bg-[#ebdcd0] border border-[#ebdcd0] hover:border-[#dfcbb7] text-[#5c4a3c] hover:text-[#3d3025] transition-all active:scale-95 flex items-center justify-center shadow-sm cursor-pointer" title="Volver al Panel">
                 <i data-lucide="arrow-left" class="w-5 h-5"></i>
             </button>
             <div class="space-y-0.5">
                 <div class="flex items-center gap-2">
                     <span id="model-emoji" class="text-xl">🧠</span>
-                    <h1 id="model-title" class="text-base sm:text-lg font-black font-outfit text-white tracking-tight leading-none">Cargando modelo...</h1>
+                    <h1 id="model-title" class="text-base sm:text-lg font-black font-outfit text-[#3d3025] tracking-tight leading-none">Cargando modelo...</h1>
                 </div>
-                <p id="model-subtitle" class="text-[10px] sm:text-xs font-semibold text-slate-400">Neuroanatomía Interactiva · SAIMAP</p>
+                <p id="model-subtitle" class="text-[10px] sm:text-xs font-semibold text-[#8f7864]">Neuroanatomía Interactiva · SAIMAP</p>
             </div>
         </div>
 
@@ -85,7 +87,7 @@
                 Visor 3D Activo
             </div>
             
-            <select id="model-selector" onchange="changeModel(this.value)" class="text-xs font-bold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/5 focus:border-indigo-500/40 rounded-xl py-2 px-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 transition-all cursor-pointer">
+            <select id="model-selector" onchange="changeModel(this.value)" class="text-xs font-bold text-[#5c4a3c] bg-[#faf6f0] hover:bg-[#efe9df] border border-[#ebdcd0] focus:border-[#7c4c24] rounded-xl py-2 px-3 focus:outline-none focus:ring-2 focus:ring-[#7c4c24]/20 transition-all cursor-pointer">
                 <!-- Se rellena con js -->
             </select>
         </div>
@@ -96,17 +98,17 @@
         
         <!-- Visor 3D (Izquierda/Arriba) -->
         <section class="md:col-span-7 lg:col-span-8 flex flex-col gap-4">
-            <div class="relative w-full aspect-video md:h-full md:min-h-[500px] bg-slate-950/80 rounded-[28px] overflow-hidden border border-white/5 shadow-2xl flex flex-col">
+            <div class="relative w-full aspect-video md:h-full md:min-h-[500px] bg-[#ebdcd0]/30 rounded-[28px] overflow-hidden border border-[#ebdcd0] shadow-xl flex flex-col">
                 <!-- Loading State -->
-                <div id="iframe-loading" class="absolute inset-0 z-30 bg-slate-950 flex flex-col justify-center items-center gap-4 transition-opacity duration-700">
+                <div id="iframe-loading" class="absolute inset-0 z-30 bg-[#faf6f0] flex flex-col justify-center items-center gap-4 transition-opacity duration-700">
                     <div class="relative w-16 h-16 flex items-center justify-center">
-                        <div class="absolute inset-0 border-4 border-indigo-500/10 rounded-full"></div>
-                        <div id="loading-spinner" class="absolute inset-0 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin"></div>
-                        <i data-lucide="brain" class="w-6 h-6 text-indigo-400 animate-pulse"></i>
+                        <div class="absolute inset-0 border-4 border-[#7c4c24]/10 rounded-full"></div>
+                        <div id="loading-spinner" class="absolute inset-0 border-4 border-[#7c4c24] border-t-transparent rounded-full animate-spin"></div>
+                        <i data-lucide="brain" class="w-6 h-6 text-[#7c4c24] animate-pulse"></i>
                     </div>
                     <div class="text-center space-y-1.5">
-                        <p class="text-sm font-bold text-slate-300">Iniciando Sketchfab 3D</p>
-                        <p id="loading-status" class="text-[10px] text-slate-500 font-medium tracking-wide uppercase">Cargando marcadores anatómicos...</p>
+                        <p class="text-sm font-bold text-[#5c4a3c]">Iniciando Sketchfab 3D</p>
+                        <p id="loading-status" class="text-[10px] text-[#8f7864] font-medium tracking-wide uppercase">Cargando marcadores anatómicos...</p>
                     </div>
                 </div>
 
@@ -121,8 +123,8 @@
                 </iframe>
 
                 <!-- Panel Flotante del Visor (Consejo rápido) -->
-                <div class="absolute bottom-4 left-4 z-20 pointer-events-none hidden sm:flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-slate-900/90 backdrop-blur-md border border-white/5 text-slate-400 shadow-xl max-w-sm">
-                    <i data-lucide="info" class="w-4 h-4 text-indigo-400 shrink-0"></i>
+                <div class="absolute bottom-4 left-4 z-20 pointer-events-none hidden sm:flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-[#faf6f0]/95 backdrop-blur-md border border-[#ebdcd0] text-[#5c4a3c] shadow-lg max-w-sm">
+                    <i data-lucide="info" class="w-4 h-4 text-[#7c4c24] shrink-0"></i>
                     <p class="text-[10px] leading-relaxed font-medium">Usa el ratón o pantalla táctil para <strong>rotar, hacer zoom y arrastrar</strong> el modelo. Haz clic en las etiquetas para explorarlas.</p>
                 </div>
             </div>
@@ -130,17 +132,17 @@
 
         <!-- Panel Lateral Interactivo (Derecha/Abajo) -->
         <section class="md:col-span-5 lg:col-span-4 flex flex-col">
-            <div class="glass-panel rounded-[28px] p-5 shadow-2xl flex flex-col h-full min-h-[500px] border border-white/5">
+            <div class="glass-panel rounded-[28px] p-5 shadow-2xl flex flex-col h-full min-h-[500px] border border-[#ebdcd0]">
                 
                 <!-- Tabs de Navegación del Panel -->
-                <div class="flex border-b border-white/5 mb-5 p-1 bg-white/5 rounded-xl gap-1 shrink-0">
+                <div class="flex border-b border-[#ebdcd0] mb-5 p-1 bg-[#f5efe6] rounded-xl gap-1 shrink-0">
                     <button onclick="switchTab('explore')" id="tab-btn-explore" class="flex-grow py-2 px-3 rounded-lg font-bold text-xs transition-all flex items-center justify-center gap-1.5 active-tab">
                         <i data-lucide="eye" class="w-3.5 h-3.5"></i> Explorar
                     </button>
-                    <button onclick="switchTab('quiz-recon')" id="tab-btn-quiz-recon" class="flex-grow py-2 px-3 rounded-lg font-bold text-xs transition-all flex items-center justify-center gap-1.5 text-slate-400 hover:text-slate-200">
+                    <button onclick="switchTab('quiz-recon')" id="tab-btn-quiz-recon" class="flex-grow py-2 px-3 rounded-lg font-bold text-xs transition-all flex items-center justify-center gap-1.5 text-[#8f7864] hover:text-[#5c4a3c]">
                         <i data-lucide="target" class="w-3.5 h-3.5"></i> Quiz 3D Clic
                     </button>
-                    <button onclick="switchTab('quiz-ident')" id="tab-btn-quiz-ident" class="flex-grow py-2 px-3 rounded-lg font-bold text-xs transition-all flex items-center justify-center gap-1.5 text-slate-400 hover:text-slate-200">
+                    <button onclick="switchTab('quiz-ident')" id="tab-btn-quiz-ident" class="flex-grow py-2 px-3 rounded-lg font-bold text-xs transition-all flex items-center justify-center gap-1.5 text-[#8f7864] hover:text-[#5c4a3c]">
                         <i data-lucide="help-circle" class="w-3.5 h-3.5"></i> Quiz 3D Test
                     </button>
                 </div>
@@ -152,57 +154,57 @@
                     <div id="tab-content-explore" class="space-y-5 flex-grow flex flex-col">
                         <!-- Lista de zonas (acordeón o lista con clic) -->
                         <div class="space-y-2 shrink-0">
-                            <h3 class="text-xs font-black text-slate-400 uppercase tracking-wider flex items-center gap-1.5 mb-3">
-                                <i data-lucide="list" class="w-4 h-4 text-indigo-400"></i> Estructuras del Modelo
+                            <h3 class="text-xs font-black text-[#8f7864] uppercase tracking-wider flex items-center gap-1.5 mb-3">
+                                <i data-lucide="list" class="w-4 h-4 text-[#7c4c24]"></i> Estructuras del Modelo
                             </h3>
                             <div id="annotations-list" class="grid grid-cols-2 gap-2 max-h-[160px] overflow-y-auto pr-1 scrollbar-hide">
                                 <!-- Cargado dinámicamente -->
-                                <div class="col-span-full py-4 text-center text-xs text-slate-500 font-medium">Cargando etiquetas...</div>
+                                <div class="col-span-full py-4 text-center text-xs text-[#8f7864] font-medium">Cargando etiquetas...</div>
                             </div>
                         </div>
 
                         <!-- Ficha de Detalles de la Zona Seleccionada -->
-                        <div id="detail-card-container" class="flex-grow flex flex-col justify-end pt-4 border-t border-white/5">
-                            <div id="no-selection-card" class="bg-white/5 border border-white/5 rounded-2xl p-6 text-center space-y-3 flex-grow flex flex-col justify-center items-center">
-                                <div class="w-12 h-12 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 flex items-center justify-center animate-pulse">
+                        <div id="detail-card-container" class="flex-grow flex flex-col justify-end pt-4 border-t border-[#ebdcd0]">
+                            <div id="no-selection-card" class="bg-[#faf6f0]/50 border border-[#ebdcd0] rounded-2xl p-6 text-center space-y-3 flex-grow flex flex-col justify-center items-center">
+                                <div class="w-12 h-12 rounded-full bg-[#7c4c24]/10 text-[#7c4c24] border border-[#7c4c24]/20 flex items-center justify-center animate-pulse">
                                     <i data-lucide="pointer" class="w-5 h-5"></i>
                                 </div>
-                                <h4 class="text-xs font-bold text-slate-200">Explora la Anatomía</h4>
-                                <p class="text-[10px] text-slate-400 leading-relaxed max-w-[200px]">Haz clic en cualquier zona de la lista superior o directamente en una etiqueta del modelo 3D para revelar su ficha clínica detallada.</p>
+                                <h4 class="text-xs font-bold text-[#3d3025]">Explora la Anatomía</h4>
+                                <p class="text-[10px] text-[#7a6652] leading-relaxed max-w-[200px]">Haz clic en cualquier zona de la lista superior o directamente en una etiqueta del modelo 3D para revelar su ficha clínica detallada.</p>
                             </div>
 
-                            <div id="active-detail-card" class="hidden bg-white/5 border border-white/5 rounded-2xl p-5 space-y-4 flex-grow flex flex-col justify-between fade-in-up">
+                            <div id="active-detail-card" class="hidden bg-[#fcfaf7] border border-[#ebdcd0] rounded-2xl p-5 space-y-4 flex-grow flex flex-col justify-between fade-in-up">
                                 <div class="space-y-3.5">
                                     <!-- Header -->
                                     <div class="flex items-start justify-between gap-3">
                                         <div class="space-y-1">
                                             <div class="flex items-center gap-2">
                                                 <span id="zone-emoji" class="text-lg">📍</span>
-                                                <h4 id="zone-name" class="text-sm font-black text-white font-outfit">Lóbulo Frontal</h4>
+                                                <h4 id="zone-name" class="text-sm font-black text-[#3d3025] font-outfit">Lóbulo Frontal</h4>
                                             </div>
-                                            <span id="zone-category" class="inline-block px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider bg-white/5 border border-white/5 text-slate-400">Corteza Cerebral</span>
+                                            <span id="zone-category" class="inline-block px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider bg-[#f5efe6] border border-[#ebdcd0] text-[#7a6652]">Corteza Cerebral</span>
                                         </div>
                                     </div>
 
                                     <!-- Content lists -->
-                                    <div class="space-y-3 text-[11px] leading-relaxed text-slate-300 overflow-y-auto max-h-[220px] scrollbar-hide pr-1">
+                                    <div class="space-y-3 text-[11px] leading-relaxed text-[#3c2f2f] overflow-y-auto max-h-[220px] scrollbar-hide pr-1">
                                         <div class="space-y-0.5">
-                                            <span class="font-bold text-slate-400 flex items-center gap-1"><i data-lucide="activity" class="w-3.5 h-3.5 text-indigo-400"></i> Función Fisiológica</span>
+                                            <span class="font-bold text-[#7a6652] flex items-center gap-1"><i data-lucide="activity" class="w-3.5 h-3.5 text-[#7c4c24]"></i> Función Fisiológica</span>
                                             <p id="zone-function">Control motor voluntario, planificación, decisiones...</p>
                                         </div>
                                         <div class="space-y-0.5">
-                                            <span class="font-bold text-slate-400 flex items-center gap-1"><i data-lucide="book-open" class="w-3.5 h-3.5 text-indigo-400"></i> Detalles Anatómicos</span>
-                                            <p id="zone-details" class="text-slate-400">El lóbulo más grande, etc.</p>
+                                            <span class="font-bold text-[#7a6652] flex items-center gap-1"><i data-lucide="book-open" class="w-3.5 h-3.5 text-[#7c4c24]"></i> Detalles Anatómicos</span>
+                                            <p id="zone-details" class="text-[#5c4a3c]">El lóbulo más grande, etc.</p>
                                         </div>
                                         <div class="space-y-0.5">
-                                            <span class="font-bold text-slate-400 flex items-center gap-1"><i data-lucide="shield-alert" class="w-3.5 h-3.5 text-indigo-400"></i> Relevancia Clínica / PIR</span>
-                                            <p id="zone-psy" class="text-indigo-200/90 font-medium">Lesiones prefrontales causan síndrome disejecutivo...</p>
+                                            <span class="font-bold text-[#7a6652] flex items-center gap-1"><i data-lucide="shield-alert" class="w-3.5 h-3.5 text-[#8a2542]"></i> Relevancia Clínica / PIR</span>
+                                            <p id="zone-psy" class="text-[#8a2542] font-semibold bg-[#fcf0f2] p-2.5 rounded-xl border border-[#f5d6dc]">Lesiones prefrontales causan síndrome disejecutivo...</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- Tags de asignaturas -->
-                                <div id="zone-tags" class="flex flex-wrap gap-1.5 pt-2 border-t border-white/5">
+                                <div id="zone-tags" class="flex flex-wrap gap-1.5 pt-2 border-t border-[#ebdcd0]">
                                     <!-- Se añade dinámicamente -->
                                 </div>
                             </div>
@@ -215,27 +217,27 @@
                         <div class="space-y-4">
                             <div class="flex items-center justify-between shrink-0">
                                 <div class="space-y-0.5">
-                                    <h3 class="text-xs font-black text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
-                                        <i data-lucide="target" class="w-4 h-4 text-emerald-400"></i> Quiz de Localización 3D
+                                    <h3 class="text-xs font-black text-[#8f7864] uppercase tracking-wider flex items-center gap-1.5">
+                                        <i data-lucide="target" class="w-4 h-4 text-[#2e7d32]"></i> Quiz de Localización 3D
                                     </h3>
-                                    <p class="text-[9px] text-slate-500 font-bold uppercase tracking-wider">Interactúa con el modelo 3D</p>
+                                    <p class="text-[9px] text-[#7a6652] font-bold uppercase tracking-wider">Interactúa con el modelo 3D</p>
                                 </div>
-                                <div class="px-3 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-black" id="recon-score-badge">
+                                <div class="px-3 py-1.5 rounded-xl bg-[#2e7d32]/10 border border-[#2e7d32]/25 text-[#2e7d32] text-xs font-black" id="recon-score-badge">
                                     0 / 0
                                 </div>
                             </div>
 
                             <!-- Barra de progreso -->
-                            <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden border border-white/5 shrink-0">
-                                <div id="recon-progress" class="bg-gradient-to-r from-emerald-500 to-indigo-500 h-full transition-all duration-500" style="width: 0%;"></div>
+                            <div class="w-full bg-[#ebdcd0]/40 h-2 rounded-full overflow-hidden border border-[#ebdcd0] shrink-0">
+                                <div id="recon-progress" class="bg-gradient-to-r from-[#2e7d32] to-[#7c4c24] h-full transition-all duration-500" style="width: 0%;"></div>
                             </div>
 
                             <!-- Tarjeta de la Pregunta Activa -->
-                            <div id="recon-question-box" class="bg-white/5 border border-white/5 rounded-2xl p-6 text-center space-y-4 shadow-inner">
-                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[9px] font-black uppercase bg-indigo-500/15 text-indigo-400 border border-indigo-500/20">Modo Clic</span>
-                                <p class="text-xs text-slate-400 font-bold leading-normal uppercase tracking-wider">Localiza en el modelo 3D:</p>
-                                <h4 id="recon-target-name" class="text-lg sm:text-xl font-black text-white font-outfit tracking-tight">Cargando pregunta...</h4>
-                                <p class="text-[10px] text-slate-500 leading-normal max-w-xs mx-auto">Haz zoom y rota el modelo para encontrar y hacer clic en el pin interactivo correcto en el modelo 3D.</p>
+                            <div id="recon-question-box" class="bg-[#faf6f0] border border-[#ebdcd0] rounded-2xl p-6 text-center space-y-4 shadow-sm">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[9px] font-black uppercase bg-[#7c4c24]/10 text-[#7c4c24] border border-[#7c4c24]/20">Modo Clic</span>
+                                <p class="text-xs text-[#7a6652] font-bold leading-normal uppercase tracking-wider">Localiza en el modelo 3D:</p>
+                                <h4 id="recon-target-name" class="text-lg sm:text-xl font-black text-[#3d3025] font-outfit tracking-tight">Cargando pregunta...</h4>
+                                <p class="text-[10px] text-[#8f7864] leading-normal max-w-xs mx-auto">Haz zoom y rota el modelo para encontrar y hacer clic en el pin interactivo correcto en el modelo 3D.</p>
                             </div>
                         </div>
 
@@ -247,7 +249,7 @@
                             </div>
 
                             <div class="flex gap-2">
-                                <button onclick="startQuizRecon()" class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold text-xs shadow-md transition-all active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer">
+                                <button onclick="startQuizRecon()" class="w-full py-3.5 bg-[#2e7d32] hover:bg-[#1b5e20] text-white rounded-xl font-bold text-xs shadow-md transition-all active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer">
                                     <i data-lucide="play" class="w-4 h-4"></i> Iniciar Quiz de Clic
                                 </button>
                             </div>
@@ -260,33 +262,33 @@
                         <div class="space-y-4">
                             <div class="flex items-center justify-between shrink-0">
                                 <div class="space-y-0.5">
-                                    <h3 class="text-xs font-black text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
-                                        <i data-lucide="help-circle" class="w-4 h-4 text-purple-400"></i> Quiz de Opción Múltiple
+                                    <h3 class="text-xs font-black text-[#8f7864] uppercase tracking-wider flex items-center gap-1.5">
+                                        <i data-lucide="help-circle" class="w-4 h-4 text-purple-600"></i> Quiz de Opción Múltiple
                                     </h3>
-                                    <p class="text-[9px] text-slate-500 font-bold uppercase tracking-wider">Identifica la zona señalada</p>
+                                    <p class="text-[9px] text-[#7a6652] font-bold uppercase tracking-wider">Identifica la zona señalada</p>
                                 </div>
-                                <div class="px-3 py-1.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-black" id="ident-score-badge">
+                                <div class="px-3 py-1.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-700 text-xs font-black" id="ident-score-badge">
                                     0 / 0
                                 </div>
                             </div>
 
                             <!-- Barra de progreso -->
-                            <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden border border-white/5 shrink-0">
-                                <div id="ident-progress" class="bg-gradient-to-r from-purple-500 to-indigo-500 h-full transition-all duration-500" style="width: 0%;"></div>
+                            <div class="w-full bg-[#ebdcd0]/40 h-2 rounded-full overflow-hidden border border-[#ebdcd0] shrink-0">
+                                <div id="ident-progress" class="bg-gradient-to-r from-purple-600 to-[#7c4c24] h-full transition-all duration-500" style="width: 0%;"></div>
                             </div>
 
                             <!-- Pantalla de Pregunta -->
-                            <div id="ident-question-box" class="bg-white/5 border border-white/5 rounded-2xl p-4 text-center space-y-2.5">
-                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[9px] font-black uppercase bg-indigo-500/15 text-indigo-400 border border-indigo-500/20">Identificación</span>
-                                <h4 class="text-xs text-slate-300 font-extrabold uppercase tracking-wide">El visor ha enfocado una estructura. ¿Cómo se llama?</h4>
-                                <p class="text-[9.5px] text-slate-400 leading-normal max-w-xs mx-auto">Vuela a la zona del pin parpadeante en el modelo 3D y selecciona la respuesta correcta.</p>
+                            <div id="ident-question-box" class="bg-[#faf6f0] border border-[#ebdcd0] rounded-2xl p-4 text-center space-y-2.5 shadow-sm">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[9px] font-black uppercase bg-[#7c4c24]/10 text-[#7c4c24] border border-[#7c4c24]/20">Identificación</span>
+                                <h4 class="text-xs text-[#3c2f2f] font-extrabold uppercase tracking-wide">El visor ha enfocado una estructura. ¿Cómo se llama?</h4>
+                                <p class="text-[9.5px] text-[#7a6652] leading-normal max-w-xs mx-auto">Vuela a la zona del pin parpadeante en el modelo 3D y selecciona la respuesta correcta.</p>
                             </div>
                         </div>
 
                         <!-- Opciones Múltiples (4 botones) -->
                         <div id="ident-options-grid" class="flex-grow flex flex-col justify-center gap-2 py-4">
                             <!-- Botones generados dinámicamente -->
-                            <button disabled class="w-full py-3 bg-white/5 border border-white/5 rounded-xl text-xs text-slate-400 font-bold transition-all text-center">Cargando opciones...</button>
+                            <button disabled class="w-full py-3 bg-[#faf6f0] border border-[#ebdcd0] rounded-xl text-xs text-[#8f7864] font-bold transition-all text-center">Cargando opciones...</button>
                         </div>
 
                         <!-- Feedback de Respuesta y Botón de Inicio -->
@@ -296,7 +298,7 @@
                                 <!-- Dinámico -->
                             </div>
 
-                            <button onclick="startQuizIdent()" id="ident-start-btn" class="w-full py-3.5 bg-purple-600 hover:bg-purple-700 text-white rounded-xl font-bold text-xs shadow-md transition-all active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer">
+                            <button onclick="startQuizIdent()" id="ident-start-btn" class="w-full py-3.5 bg-purple-700 hover:bg-purple-800 text-white rounded-xl font-bold text-xs shadow-md transition-all active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer">
                                 <i data-lucide="play" class="w-4 h-4"></i> Iniciar Quiz Test
                             </button>
                         </div>
@@ -309,7 +311,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full py-4 text-center opacity-30 text-[10px] font-bold text-slate-400 shrink-0 border-t border-white/5 mt-auto">
+    <footer class="w-full py-4 text-center opacity-40 text-[10px] font-bold text-[#8f7864] shrink-0 border-t border-[#ebdcd0] mt-auto">
         SAIMAP · © 2026 Plataforma de Repaso Premium. Todos los derechos reservados.
     </footer>
 
@@ -490,19 +492,19 @@
             container.innerHTML = '';
             
             if (modelAnnotations.length === 0) {
-                container.innerHTML = '<div class="col-span-full py-4 text-center text-xs text-slate-500 font-medium">Este modelo no tiene marcadores guardados.</div>';
+                container.innerHTML = '<div class="col-span-full py-4 text-center text-xs text-[#8f7864] font-medium">Este modelo no tiene marcadores guardados.</div>';
                 return;
             }
             
             modelAnnotations.forEach((ann, index) => {
-                const desc = getZoneDescription(ann.title);
+                const desc = getZoneDescription(ann.name, activeModelId);
                 const button = document.createElement('button');
                 button.onclick = () => selectAnnotation(index);
-                button.className = "flex items-center gap-2 p-2.5 rounded-xl border border-white/5 bg-white/5 hover:bg-indigo-500/10 hover:border-indigo-500/20 text-slate-300 hover:text-white transition-all text-left text-xs font-semibold cursor-pointer truncate active:scale-95";
+                button.className = "flex items-center gap-2 p-2.5 rounded-xl border border-[#ebdcd0] bg-[#faf6f0] hover:bg-[#efe5d9] hover:border-[#7c4c24]/30 text-[#5c4a3c] hover:text-[#3d3025] transition-all text-left text-xs font-semibold cursor-pointer truncate active:scale-95";
                 
                 button.innerHTML = `
-                    <span class="flex-shrink-0 w-5 h-5 rounded-lg bg-indigo-500/10 flex items-center justify-center text-[10px] text-indigo-400 font-bold">${index + 1}</span>
-                    <span class="truncate">${desc ? desc.name : ann.title}</span>
+                    <span class="flex-shrink-0 w-5 h-5 rounded-lg bg-[#7c4c24]/10 flex items-center justify-center text-[10px] text-[#7c4c24] font-bold">${index + 1}</span>
+                    <span class="truncate">${desc ? desc.name : ann.name}</span>
                 `;
                 container.appendChild(button);
             });
@@ -523,7 +525,7 @@
         // Mostrar ficha técnica de la zona seleccionada
         function showAnnotationCard(index) {
             const ann = modelAnnotations[index];
-            const desc = getZoneDescription(ann.title);
+            const desc = getZoneDescription(ann.name, activeModelId);
             
             document.getElementById('no-selection-card').style.display = 'none';
             const card = document.getElementById('active-detail-card');
@@ -531,7 +533,7 @@
             
             // Rellenar datos
             document.getElementById('zone-emoji').innerText = desc.emoji || '📍';
-            document.getElementById('zone-name').innerText = desc.name || ann.title;
+            document.getElementById('zone-name').innerText = desc.name || ann.name;
             document.getElementById('zone-category').innerText = desc.category || 'Marcador Anatómico';
             document.getElementById('zone-function').innerHTML = desc.fn || 'Estructura anatómica identificada en el modelo 3D.';
             document.getElementById('zone-details').innerHTML = desc.details || 'Explora el visor 3D para examinar esta estructura en detalle.';
@@ -548,7 +550,7 @@
                 tagsContainer.classList.remove('hidden');
                 tagsList.forEach(t => {
                     const pill = document.createElement('span');
-                    pill.className = 'px-2 py-1 bg-indigo-500/10 text-indigo-300 rounded-lg text-[9px] font-extrabold border border-indigo-500/10';
+                    pill.className = 'px-2 py-1 bg-[#7c4c24]/5 text-[#7c4c24] rounded-lg text-[9px] font-extrabold border border-[#7c4c24]/15';
                     pill.innerText = t;
                     tagsContainer.appendChild(pill);
                 });
@@ -663,10 +665,10 @@
             
             reconTargetIndex = reconQuestionsPool[reconCurrentIndex];
             const targetAnn = modelAnnotations[reconTargetIndex];
-            const desc = getZoneDescription(targetAnn.title);
+            const desc = getZoneDescription(targetAnn.name, activeModelId);
             
             // Mostrar nombre de la pregunta
-            document.getElementById('recon-target-name').innerText = desc.name || targetAnn.title;
+            document.getElementById('recon-target-name').innerText = desc.name || targetAnn.name;
             
             // Ocultar feedback anterior
             const feedback = document.getElementById('recon-feedback');
@@ -687,7 +689,7 @@
                 reconScore++;
                 reconCurrentIndex++;
                 
-                feedback.classList.add('bg-emerald-500/10', 'border-emerald-500/20', 'text-emerald-400');
+                feedback.classList.add('bg-emerald-500/10', 'border-emerald-500/25', 'text-emerald-700');
                 feedback.innerHTML = '<i data-lucide="check-circle" class="w-4 h-4"></i> ¡Correcto! Excelente memoria.';
                 lucide.createIcons();
                 
@@ -702,7 +704,7 @@
                 }, 1300);
             } else {
                 // Incorrecto!
-                feedback.classList.add('bg-rose-500/10', 'border-rose-500/20', 'text-rose-400');
+                feedback.classList.add('bg-rose-500/10', 'border-rose-500/25', 'text-rose-700');
                 feedback.innerHTML = '<i data-lucide="x-circle" class="w-4 h-4"></i> Incorrecto. Vuelve a intentarlo.';
                 lucide.createIcons();
                 
@@ -717,11 +719,11 @@
         function finishQuizRecon() {
             quizReconActive = false;
             const targetBox = document.getElementById('recon-target-name');
-            targetBox.innerHTML = `¡Quiz Completado!<br><span class="text-sm font-bold text-emerald-400">Puntuación: ${reconScore} / ${reconTotal}</span>`;
+            targetBox.innerHTML = `¡Quiz Completado!<br><span class="text-sm font-bold text-emerald-600">Puntuación: ${reconScore} / ${reconTotal}</span>`;
             
             const feedback = document.getElementById('recon-feedback');
-            feedback.classList.remove('hidden', 'bg-rose-500/10', 'border-rose-500/20', 'text-rose-400');
-            feedback.classList.add('bg-emerald-500/10', 'border-emerald-500/20', 'text-emerald-400', 'success-pulse');
+            feedback.classList.remove('hidden', 'bg-[#2e7d32]/10', 'border-[#2e7d32]/25', 'text-[#2e7d32]');
+            feedback.classList.add('bg-emerald-500/10', 'border-emerald-500/25', 'text-emerald-700', 'success-pulse');
             feedback.innerHTML = '<i data-lucide="award" class="w-5 h-5"></i> ¡Felicidades! Has completado todas las zonas.';
             lucide.createIcons();
             
@@ -742,7 +744,7 @@
             document.getElementById('ident-progress').style.width = '0%';
             
             const grid = document.getElementById('ident-options-grid');
-            grid.innerHTML = '<button disabled class="w-full py-3 bg-white/5 border border-white/5 rounded-xl text-xs text-slate-400 font-bold transition-all text-center">Pulsa Jugar de abajo</button>';
+            grid.innerHTML = '<button disabled class="w-full py-3 bg-[#faf6f0] border border-[#ebdcd0] rounded-xl text-xs text-[#8f7864] font-bold transition-all text-center">Pulsa Jugar de abajo</button>';
             
             const feedback = document.getElementById('ident-feedback');
             feedback.classList.add('hidden');
@@ -789,8 +791,8 @@
             identChecked = false;
             identTargetIndex = identQuestionsPool[identCurrentIndex];
             const targetAnn = modelAnnotations[identTargetIndex];
-            const desc = getZoneDescription(targetAnn.title);
-            const correctName = desc.name || targetAnn.title;
+            const desc = getZoneDescription(targetAnn.name, activeModelId);
+            const correctName = desc.name || targetAnn.name;
             
             // Volar a la zona en 3D
             if (api) {
@@ -807,8 +809,8 @@
             
             for (let i = 0; i < 3 && i < otherIndices.length; i++) {
                 const wrongAnn = modelAnnotations[otherIndices[i]];
-                const wrongDesc = getZoneDescription(wrongAnn.title);
-                options.push(wrongDesc.name || wrongAnn.title);
+                const wrongDesc = getZoneDescription(wrongAnn.name, activeModelId);
+                options.push(wrongDesc.name || wrongAnn.name);
             }
             
             // Barajar opciones
@@ -820,9 +822,9 @@
             
             options.forEach(opt => {
                 const btn = document.createElement('button');
-                btn.className = "w-full py-3.5 px-4 bg-white/5 hover:bg-white/10 active:scale-[0.99] border border-white/5 focus:outline-none rounded-xl text-left text-xs font-bold text-slate-300 hover:text-white transition-all cursor-pointer flex items-center gap-3";
+                btn.className = "w-full py-3.5 px-4 bg-[#faf6f0] hover:bg-[#efe5d9] active:scale-[0.99] border border-[#ebdcd0] focus:outline-none rounded-xl text-left text-xs font-bold text-[#5c4a3c] hover:text-[#3d3025] transition-all cursor-pointer flex items-center gap-3";
                 btn.innerHTML = `
-                    <span class="w-5 h-5 rounded-lg bg-indigo-500/10 flex items-center justify-center text-[10px] text-indigo-400 border border-indigo-500/10">o</span>
+                    <span class="w-5 h-5 rounded-lg bg-[#7c4c24]/10 flex items-center justify-center text-[10px] text-[#7c4c24] border border-[#7c4c24]/15">o</span>
                     <span>${opt}</span>
                 `;
                 btn.onclick = () => checkIdentAnswer(opt, correctName, btn);
@@ -848,12 +850,12 @@
                 btn.disabled = true;
                 const text = btn.querySelector('span:last-child').innerText;
                 if (text === correct) {
-                    btn.className = "w-full py-3.5 px-4 bg-emerald-500/20 border border-emerald-500/50 rounded-xl text-left text-xs font-bold text-emerald-300 flex items-center gap-3";
-                    btn.querySelector('span:first-child').className = "w-5 h-5 rounded-lg bg-emerald-500/30 flex items-center justify-center text-[10px] text-emerald-200 border border-emerald-500/20";
+                    btn.className = "w-full py-3.5 px-4 bg-emerald-500/10 border border-emerald-500/40 rounded-xl text-left text-xs font-bold text-emerald-800 flex items-center gap-3";
+                    btn.querySelector('span:first-child').className = "w-5 h-5 rounded-lg bg-emerald-500/20 flex items-center justify-center text-[10px] text-emerald-800 border border-emerald-500/30";
                     btn.querySelector('span:first-child').innerHTML = '<i data-lucide="check" class="w-3.5 h-3.5"></i>';
                 } else if (btn === buttonElement) {
-                    btn.className = "w-full py-3.5 px-4 bg-rose-500/20 border border-rose-500/50 rounded-xl text-left text-xs font-bold text-rose-300 flex items-center gap-3";
-                    btn.querySelector('span:first-child').className = "w-5 h-5 rounded-lg bg-rose-500/30 flex items-center justify-center text-[10px] text-rose-200 border border-rose-500/20";
+                    btn.className = "w-full py-3.5 px-4 bg-rose-500/10 border border-rose-500/40 rounded-xl text-left text-xs font-bold text-rose-800 flex items-center gap-3";
+                    btn.querySelector('span:first-child').className = "w-5 h-5 rounded-lg bg-rose-500/20 flex items-center justify-center text-[10px] text-rose-800 border border-rose-500/30";
                     btn.querySelector('span:first-child').innerHTML = '<i data-lucide="x" class="w-3.5 h-3.5"></i>';
                 }
             });
