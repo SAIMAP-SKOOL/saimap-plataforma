@@ -3548,17 +3548,17 @@
             { id: 'limbic_system', name: '🌀 Sistema Límbico (UBC)' },
             { id: 'brainstem_willis', name: '💉 Tronco Encefálico y Círculo de Willis' },
             { id: 'brainstem_cranial', name: '🏷️ Tronco y Pares Craneales Etiquetados' },
-            { id: 'hemi_brain', name: '🌓 Hemi-Cerebro con Cerebelo (UBC)' },
-            { id: 'dti_tractography', name: '🌈 Tractografía DTI (Fibras Blancas) (UBC)' }
+            { id: 'commissural_fibers', name: '🌐 Fibras Comisurales (Cuerpo Calloso)' },
+            { id: 'subcortical_fibers', name: '🕸️ Fibras Subcorticales (Sustancia Blanca)' }
         ];
 
         const SKETCHFAB_MODELS = {
             plastinated_brain: '2df234ff65b0483fb5b5e15e40efa65d',
-            limbic_system: 'e7379d750c3d4a23b98c568574d6c698',
-            brainstem_willis: '35a11c2106094a46a67f082e01b3152c',
-            brainstem_cranial: '104975d71c4c478685e173e32e850406',
-            hemi_brain: 'b258674d817d471587d58f334a17cdb3',
-            dti_tractography: '11880486c99c43d3b73315a6396e9527'
+            limbic_system: 'f201c8699b7f4f1dad569783d86ec41f',
+            brainstem_willis: '6ae262548bfd459cbfd1ec1e137a1bd6',
+            brainstem_cranial: '160a7a89ba4e48c48b626da63856bce6',
+            commissural_fibers: '63324fd8a8284edbaf897edc35f57da0',
+            subcortical_fibers: '0033fa844e9f4e55a6b940fba3fe45d5'
         };
 
         const modelInfo = {
@@ -3582,15 +3582,15 @@
                 desc: 'Modelo anatómico con etiquetas interactivas que muestra el origen real de los doce pares de nervios craneales que emergen del tronco encefálico.',
                 details: 'Desde el nervio olfatorio (I) hasta el nervio hipogloso (XII). Permite estudiar los puntos exactos de emergencia de las vías sensitivas y motoras que inervan la cabeza, cuello y vísceras.'
             },
-            hemi_brain: {
-                name: 'Hemi-Cerebro con Cerebelo',
-                desc: 'Una vista sagital media de un hemisferio cerebral humano y el cerebelo. Muestra de forma nítida la cara interna de la corteza, el cuerpo calloso y el tronco encefálico.',
-                details: 'Permite estudiar la anatomía interna del cerebro: el cuerpo calloso (que comunica ambos hemisferios), el tálamo, el hipotálamo, el fórnix y la estructura ramificada del cerebelo.'
+            commissural_fibers: {
+                name: 'Fibras Comisurales (Cuerpo Calloso)',
+                desc: 'Visualización de las fibras comisurales que interconectan ambos hemisferios cerebrales, con especial protagonismo del cuerpo calloso, la comisura anterior y la comisura posterior.',
+                details: 'Las fibras comisurales permiten la comunicación interhemisférica y la integración de la información sensorial, motora y cognitiva. El cuerpo calloso es la estructura comisural más grande del encéfalo humano.'
             },
-            dti_tractography: {
-                name: 'Tractografía DTI (Sustancia Blanca)',
-                desc: 'Visualización tridimensional de las vías de sustancia blanca del cerebro humano mediante Tensores de Difusión (DTI). Muestra los tractos nerviosos que conectan distintas regiones corticales y subcorticales.',
-                details: 'Las fibras están codificadas por colores según su dirección: rojo para izquierda-derecha (ej. cuerpo calloso), verde para adelante-atrás (ej. fascículos longitudinales) y azul para arriba-abajo (ej. vía corticoespinal). Espectacular para visualizar la conectividad cerebral real.'
+            subcortical_fibers: {
+                name: 'Fibras Subcorticales (Sustancia Blanca)',
+                desc: 'Representación de los tractos de fibras de la sustancia blanca subcortical que conectan áreas corticales adyacentes y regiones subcorticales del cerebro.',
+                details: 'Incluye las fibras de asociación cortas (fibras en U) que conectan circunvoluciones contiguas, así como tractos más largos como el fascículo uncinado y el fascículo occipito-frontal inferior, esenciales para el procesamiento cognitivo superior.'
             }
         };
 
