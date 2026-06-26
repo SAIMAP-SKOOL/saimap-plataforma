@@ -2613,6 +2613,13 @@
                         
                         ${isExpanded ? `
                             <div class="px-4 pb-4 pt-2 border-t border-slate-100 space-y-4 text-xs text-slate-700 bg-slate-50/30 fade-in">
+                                ${test.description ? `
+                                <div class="bg-indigo-50/30 border border-indigo-100/50 rounded-2xl p-3.5 space-y-1">
+                                    <span class="text-[9px] font-bold text-indigo-600 uppercase tracking-wider block">Descripción General</span>
+                                    <p class="text-slate-700 leading-relaxed font-medium">${test.description}</p>
+                                </div>
+                                ` : ''}
+
                                 <div class="grid sm:grid-cols-2 gap-4">
                                     <div>
                                         <span class="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-0.5">Constructo / Objetivo</span>
@@ -2635,14 +2642,10 @@
                                     </div>
                                 </div>
 
-                                ${test.key_concepts && test.key_concepts.length > 0 ? `
+                                ${test.key_concepts ? `
                                 <div class="border-t border-slate-100 pt-3">
                                     <span class="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Conceptos Clave</span>
-                                    <div class="flex flex-wrap gap-1.5">
-                                        ${test.key_concepts.map(concept => `
-                                            <span class="bg-indigo-50/50 text-indigo-700 border border-indigo-100/50 px-2 py-0.5 rounded-md text-[10px] font-medium">${concept}</span>
-                                        `).join('')}
-                                    </div>
+                                    <p class="text-slate-600 leading-relaxed">${test.key_concepts}</p>
                                 </div>
                                 ` : ''}
 
