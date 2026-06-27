@@ -1,0 +1,2057 @@
+{
+  "quiz": [
+    {
+      "q": "El procedimiento conceptual mediante el cual identificamos categorías y organizamos en ellas entidades clínicas individuales en función de atributos, propiedades o relaciones comunes se denomina:",
+      "options": [
+        "Clasificación",
+        "Diagnóstico",
+        "Nosología",
+        "Taxonomía"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la organización general de las clases o agrupaciones, no al acto de asignar a un paciente concreto a una de ellas.",
+      "explanation": "La clasificación es el procedimiento conceptual general para organizar entidades clínicas en base a atributos compartidos. Se distingue del diagnóstico (que es la asignación de un sujeto a una categoría ya establecida) y de la taxonomía (el estudio de las reglas de clasificación)."
+    },
+    {
+      "q": "Cuando un clínico asigna a un paciente específico a una determinada categoría nosológica que ya ha sido descrita y establecida previamente dentro de un sistema clasificatorio, está realizando una tarea de:",
+      "options": [
+        "Nosografía",
+        "Clasificación",
+        "Diagnóstico",
+        "Taxonomía"
+      ],
+      "correct": 2,
+      "hint": "Implica la traducción de las manifestaciones del paciente al lenguaje técnico del sistema.",
+      "explanation": "El diagnóstico es el proceso clínico de asignación de un sujeto o sus manifestaciones a una categoría preexistente del sistema taxonómico, traduciendo los signos y síntomas a un lenguaje técnico común."
+    },
+    {
+      "q": "La rama de la medicina y de la psicopatología que se ocupa de describir, explicar, diferenciar y clasificar sistemáticamente las enfermedades y trastornos mentales, asumiendo que son entidades clínico-semiológicas estables, se define como:",
+      "options": [
+        "Nosografía",
+        "Nosología",
+        "Taxonomía",
+        "Fenética"
+      ],
+      "correct": 1,
+      "hint": "Esta disciplina asume que las patologías tienen causas, cursos y pronósticos específicos que van más allá de la mera descripción.",
+      "explanation": "La nosología es la disciplina científica que clasifica, explica y diferencia las enfermedades basándose en etiología, curso clínico, respuesta terapéutica y pronóstico."
+    },
+    {
+      "q": "A diferencia de la nosología, la nosografía se caracteriza fundamentalmente por ser una disciplina de carácter:",
+      "options": [
+        "Explicativo y etiológico",
+        "Estrictamente descriptivo",
+        "Estadístico y multivariado",
+        "Filosófico y ontológico"
+      ],
+      "correct": 1,
+      "hint": "Esta disciplina se limita a delinear los síntomas observables sin introducir especulaciones teóricas.",
+      "explanation": "La nosografía es estrictamente descriptiva; detalla los síntomas y el curso clínico observable de los trastornos mentales sin postular hipótesis teóricas o etiológicas sobre su origen."
+    },
+    {
+      "q": "El estudio formal de los principios, reglas, métodos y procedimientos sistemáticos aplicados a la clasificación científica se denomina:",
+      "options": [
+        "Nosología",
+        "Ontología",
+        "Taxonomía",
+        "Fenómeno clínico"
+      ],
+      "correct": 2,
+      "hint": "Es la ciencia o teoría que estudia cómo se debe clasificar.",
+      "explanation": "La taxonomía es el estudio formal de las reglas y principios de clasificación, buscando organizar la información científica de manera lógica y coherente."
+    },
+    {
+      "q": "Las clasificaciones de tipo filético en medicina y psicopatología se caracterizan por estructurar sus categorías según:",
+      "options": [
+        "El número máximo de rasgos fenotípicos observados y calculados estadísticamente",
+        "Relaciones de parentesco esencial, origen común o causas etiológicas compartidas",
+        "La flexibilidad de los criterios diagnósticos y el solapamiento con la normalidad",
+        "El grado de incapacidad psicosocial evaluado de forma multidimensional"
+      ],
+      "correct": 1,
+      "hint": "Tienen una base de inspiración darviniana y aristotélica que busca la 'esencia' causal.",
+      "explanation": "Las clasificaciones filéticas organizan las categorías en función de su etiología, origen común o relaciones de parentesco esencial (causas genéticas, infecciosas o biológicas)."
+    },
+    {
+      "q": "Las clasificaciones fenéticas o numéricas, propuestas por Sneath y Sokal, basan su ordenación nosológica en:",
+      "options": [
+        "La deducción teórica de la etiología neuroquímica subyacente",
+        "El análisis racional de la dinámica inconsciente del paciente",
+        "El cómputo matemático y estadístico de la similitud de rasgos externos observables",
+        "Los principios de exclusión jerárquica de la psiquiatría clásica"
+      ],
+      "correct": 2,
+      "hint": "Rechazan la especulación teórica sobre causas ocultas y aplican análisis estadísticos multivariantes.",
+      "explanation": "Las clasificaciones fenéticas computan estadísticamente el grado de solapamiento de características observables (rasgos externos o fenotipos), agrupándolos mediante algoritmos como el análisis de conglomerados."
+    },
+    {
+      "q": "Una limitación principal para desarrollar clasificaciones filéticas puras en psicopatología es que:",
+      "options": [
+        "Los sistemas computacionales actuales no pueden procesar análisis multifactoriales",
+        "La etiología de la mayoría de los trastornos mentales es desconocida o multifactorial",
+        "Los clínicos rechazan sistemáticamente los enfoques basados en la biología molecular",
+        "Las fronteras entre las categorías psiquiátricas son excesivamente rígidas"
+      ],
+      "correct": 1,
+      "hint": "Las clasificaciones filéticas requieren conocer la causa primaria (etiología), algo difícil en salud mental.",
+      "explanation": "Dado que se desconoce la etiología exacta de la inmensa mayoría de las psicopatologías, o bien estas tienen un origen multicausal, no es posible establecer un sistema puramente filético."
+    },
+    {
+      "q": "Las clasificaciones monotéticas se estructuran de manera que, para pertenecer a una categoría diagnóstica, el sujeto debe:",
+      "options": [
+        "Cumplir una proporción variable de los criterios sin ningún síntoma obligatorio",
+        "Presentar una alta correlación matemática en un análisis factorial de segundo orden",
+        "Reunir obligatoriamente todos y cada uno de los criterios definitorios establecidos",
+        "Mostrar un parecido familiar difuso con el caso clínico prototípico"
+      ],
+      "correct": 2,
+      "hint": "Exigen una homogeneidad absoluta. Un solo fallo en los criterios excluye el diagnóstico.",
+      "explanation": "En las clasificaciones monotéticas, todos los criterios son obligatorios. Esto garantiza que todos los miembros de la categoría posean las mismas características definitorias (máxima homogeneidad)."
+    },
+    {
+      "q": "El principal inconveniente clínico de los sistemas clasificatorios monotéticos es que:",
+      "options": [
+        "Generan una excesiva comorbilidad entre diferentes trastornos clínicos",
+        "Carecen de flexibilidad para adaptarse a la variabilidad individual, causando falsos negativos",
+        "Permiten que dos sujetos compartan el mismo diagnóstico sin tener síntomas comunes",
+        "Requieren excesivo tiempo de administración al usar algoritmos difusos"
+      ],
+      "correct": 1,
+      "hint": "Al ser sistemas tan rígidos, la mayoría de los pacientes reales quedan excluidos.",
+      "explanation": "Su extrema rigidez impide adaptarse a la variabilidad real de los pacientes, lo que genera una alta tasa de falsos negativos o diagnósticos desiertos al no cumplirse la totalidad de los criterios exigidos."
+    },
+    {
+      "q": "Los sistemas clasificatorios politéticos (como el DSM-5 y la CIE-11) organizan sus categorías exigiendo que:",
+      "options": [
+        "El sujeto cumpla obligatoriamente todos y cada uno de los síntomas de la lista",
+        "El clínico realice una puntuación dimensional continua del 1 al 100",
+        "El sujeto cumpla una proporción significativa de un amplio conjunto de criterios",
+        "Se verifique la presencia de una lesión orgánica patognomónica"
+      ],
+      "correct": 2,
+      "hint": "Ejemplo clásico: cumplir al menos 5 de un listado de 9 síntomas potenciales.",
+      "explanation": "Las clasificaciones politéticas no tienen síntomas patognomónicos obligatorios para todos; se requiere alcanzar un número mínimo preestablecido de criterios de una lista amplia de síntomas clínicos."
+    },
+    {
+      "q": "Aunque las clasificaciones politéticas son muy flexibles y realistas clínicamente, presentan como desventaja:",
+      "options": [
+        "El incremento desmedido de falsos negativos y diagnósticos vacíos",
+        "Una elevada heterogeneidad intragrupo entre pacientes con el mismo diagnóstico",
+        "La imposibilidad de codificar los diagnósticos en bases de datos de salud pública",
+        "El rechazo al uso de categorías no especificadas o residuales"
+      ],
+      "correct": 1,
+      "hint": "Al no haber síntomas obligatorios, dos personas con el mismo diagnóstico pueden tener cuadros clínicos muy distintos.",
+      "explanation": "La laxitud de los sistemas politéticos fomenta la heterogeneidad intragrupo, permitiendo que dos personas reciban el mismo diagnóstico compartiendo muy pocos síntomas (o incluso ninguno en algunos algoritmos)."
+    },
+    {
+      "q": "Una clasificación de clase clásica o de fronteras netas parte del supuesto fundamental de que las categorías diagnósticas son:",
+      "options": [
+        "Compartimentos estancos, cerrados y mutuamente excluyentes",
+        "Dimensiones continuas que se solapan con la conducta normal",
+        "Prototipos ideales basados en el parecido familiar de Wittgenstein",
+        "Redes asociativas dinámicas basadas en la comorbilidad empírica"
+      ],
+      "correct": 0,
+      "hint": "En este modelo se pertenece o no se pertenece a la categoría, sin gradaciones ni zonas grises.",
+      "explanation": "Las clasificaciones clásicas asumen fronteras discretas, netas y disyuntivas: los trastornos son compartimentos estancos y mutuamente excluyentes, y todos sus miembros poseen propiedades idénticas."
+    },
+    {
+      "q": "Las clasificaciones prototípicas o de pertenencia difusa organizan sus categorías diagnósticas evaluando:",
+      "options": [
+        "La presencia de una única mutación genética que causa la patología",
+        "El grado de similitud, parecido familiar o solapamiento con un caso clínico ideal",
+        "La puntuación estandarizada en tests neuropsicológicos automatizados",
+        "El cumplimiento de todos los criterios sin excepción posible"
+      ],
+      "correct": 1,
+      "hint": "Se basan en un 'ejemplo ideal' (prototipo) y admiten la existencia de límites difusos.",
+      "explanation": "Las clasificaciones prototípicas juzgan la pertenencia al evaluar el parecido familiar con un prototipo o caso ideal, lo que permite límites difusos y variabilidad entre los miembros diagnosticados."
+    },
+    {
+      "q": "La adopción de una aproximación prototípica en el DSM y la CIE tiene como consecuencia directa que:",
+      "options": [
+        "Se elimine por completo la comorbilidad en la práctica psicopatológica",
+        "Los límites diagnósticos sean difusos y existan casos marginales o no especificados",
+        "Todos los pacientes diagnosticados de un trastorno sean clínicamente idénticos",
+        "Los diagnósticos de la personalidad se realicen bajo criterios monotéticos rígidos"
+      ],
+      "correct": 1,
+      "hint": "Los límites borrosos del prototipo permiten solapamiento de síntomas y comorbilidad.",
+      "explanation": "Al organizarse en torno a prototipos, las fronteras entre trastornos o con la normalidad son borrosas, explicando la elevada comorbilidad y el uso recurrente de categorías residuales."
+    },
+    {
+      "q": "El concepto de 'taxón' en la taxonomía psicopatológica hace referencia a:",
+      "options": [
+        "Una dimensión artificial creada por el clínico para medir síntomas",
+        "Una discontinuidad o categoría natural real existente en la naturaleza",
+        "El código numérico asignado a un síntoma en la clasificación de la OMS",
+        "Una medida de discapacidad psicosocial en la escala WHODAS"
+      ],
+      "correct": 1,
+      "hint": "Se opone a las agrupaciones arbitrarias creadas por convención.",
+      "explanation": "En taxonomía, un taxón representa una entidad o categoría natural real que refleja una discontinuidad objetiva en la naturaleza, y no una simple división conceptual o arbitraria."
+    },
+    {
+      "q": "El DSM-5 y la CIE-11 son sistemas clasificatorios que combinan a nivel conceptual los principios de tipo:",
+      "options": [
+        "Monotético y clásico de fronteras netas",
+        "Politético y clásico de exclusión jerárquica",
+        "Politético y prototípico de pertenencia difusa",
+        "Monotético y dimensional puro"
+      ],
+      "correct": 2,
+      "hint": "Requieren el cumplimiento de un número mínimo de síntomas de una lista y se organizan alrededor de casos clínicos típicos.",
+      "explanation": "Los manuales diagnósticos modernos (DSM y CIE) son de naturaleza politética (se requiere cumplir una fracción de criterios) y prototípica (basados en parecido con un caso prototipo)."
+    },
+    {
+      "q": "Dentro del estudio de las clasificaciones psicopatológicas, ¿cuál de los siguientes términos representa una postura estrictamente fenomenológica e historiográfica que elude juicios etiológicos?",
+      "options": [
+        "Nosología",
+        "Taxonomía",
+        "Nosografía",
+        "Análisis filético"
+      ],
+      "correct": 2,
+      "hint": "Su nombre alude a la mera descripción escrita de las enfermedades.",
+      "explanation": "La nosografía tiene un carácter meramente descriptivo (focalizado en el curso clínico y síntomas observables), prescindiendo de las hipótesis causales de la nosología."
+    },
+    {
+      "q": "En el marco de la biología sistemática, los autores Sneath y Sokal propusieron un modelo alternativo que inspiró las agrupaciones estadísticas en salud mental, denominado:",
+      "options": [
+        "Taxonomía de clases clásicas",
+        "Clasificación filética analítica",
+        "Clasificación fenética o numérica",
+        "Aproximación monotética estructural"
+      ],
+      "correct": 2,
+      "hint": "Se basa en el procesamiento numérico y matemático de la similitud fenotípica observable.",
+      "explanation": "Sneath y Sokal fundaron la clasificación fenética o taxonometría numérica, agrupando entidades por la similitud matemática de rasgos externos observables analizados estadísticamente."
+    },
+    {
+      "q": "El modelo clasificatorio que asume la existencia de una esencia patológica interna y única para explicar las manifestaciones clínicas de un trastorno se corresponde con una aproximación de tipo:",
+      "options": [
+        "Fenética",
+        "Politética",
+        "Filética",
+        "Prototípica"
+      ],
+      "correct": 2,
+      "hint": "Busca ordenar las clases de acuerdo con su origen o causa subyacente compartida.",
+      "explanation": "La clasificación filética agrupa las entidades según sus relaciones de origen común o causas etiológicas compartidas, asumiendo una esencia patológica definitoria subyacente."
+    },
+    {
+      "q": "Cuando un sistema de diagnóstico tiene una alta homogeneidad intragrupo, de forma que todos los pacientes con el mismo diagnóstico son idénticos en las variables críticas, estamos ante una estructura:",
+      "options": [
+        "Monotética",
+        "Politética",
+        "Dimensional",
+        "Transdiagnóstica"
+      ],
+      "correct": 0,
+      "hint": "Esto ocurre porque se exige el cumplimiento de todos los criterios a todos los sujetos.",
+      "explanation": "Las clasificaciones monotéticas exigen la coincidencia exacta de todos los rasgos diagnósticos definitorios entre todos los miembros, produciendo la máxima homogeneidad intragrupo."
+    },
+    {
+      "q": "La principal consecuencia psicopatológica de la heterogeneidad intragrupo propiciada por los modelos politéticos es que:",
+      "options": [
+        "Facilita la investigación biológica al homogeneizar las muestras clínicas",
+        "Permite diagnosticar a sujetos con el mismo trastorno que comparten pocos o ningún síntoma",
+        "Elimina por completo la necesidad de un diagnóstico diferencial entre trastornos",
+        "Impide la aplicación de cualquier tratamiento farmacológico estandarizado"
+      ],
+      "correct": 1,
+      "hint": "Al haber múltiples combinaciones de criterios, los perfiles clínicos de los pacientes diagnosticados difieren notablemente.",
+      "explanation": "La estructura politética permite la heterogeneidad intragrupo, de manera que dos personas con la misma etiqueta diagnóstica pueden tener síntomas clínicos muy distintos."
+    },
+    {
+      "q": "Un modelo de categorización de límites netos, en el cual una persona pertenece o no pertenece a una categoría sin posibilidad de grados intermedios, define a:",
+      "options": [
+        "Un modelo prototípico",
+        "Un modelo categorial o clásico",
+        "Un modelo dimensional continuo",
+        "Un modelo circular interpersonal"
+      ],
+      "correct": 1,
+      "hint": "Se basa en la lógica de la presencia o ausencia cualitativa del trastorno.",
+      "explanation": "El modelo categorial clásico conceptualiza los trastornos como clases discretas y excluyentes de fronteras rígidas, aplicando juicios dicotómicos de presencia/ausencia."
+    },
+    {
+      "q": "El parecido familiar postulado por Ludwig Wittgenstein es la base filosófica principal de:",
+      "options": [
+        "Las clasificaciones de tipo clásico",
+        "Las clasificaciones monotéticas",
+        "Las clasificaciones de tipo prototípico",
+        "Las clasificaciones filéticas puras"
+      ],
+      "correct": 2,
+      "hint": "Esta teoría sostiene que los miembros de una clase comparten rasgos solapados sin necesidad de una esencia única común.",
+      "explanation": "Las clasificaciones prototípicas se basan en el concepto de parecido familiar, donde la pertenencia depende del grado de solapamiento global de rasgos con un prototipo ideal."
+    },
+    {
+      "q": "Si un psicólogo clínico afirma que la depresión y la ansiedad no son categorías separadas, sino puntos en un espectro continuo de afecto negativo, está defendiendo una perspectiva:",
+      "options": [
+        "Categorial clásica",
+        "Monotética y filética",
+        "Dimensional",
+        "De exclusión jerárquica"
+      ],
+      "correct": 2,
+      "hint": "Concibe la psicopatología como un continuo cuantitativo con la normalidad.",
+      "explanation": "La perspectiva dimensional evalúa la psicopatología a lo largo de continuos lineales o dimensiones cuantitativas de funcionamiento, en lugar de clases discretas."
+    },
+    {
+      "q": "Las clasificaciones que buscan causas biológicas compartidas (como la genética o neuroquímica) se asocian con el enfoque ________, mientras que las que agrupan síntomas por correlaciones estadísticas externas se asocian al enfoque ________:",
+      "options": [
+        "Monotético; Politético",
+        "Filético; Fenético",
+        "Fenético; Filético",
+        "Categorial; Dimensional"
+      ],
+      "correct": 1,
+      "hint": "La primera busca el origen o 'parentesco esencial', y la segunda computa rasgos observables empíricamente.",
+      "explanation": "El enfoque filético se orienta al origen causal y de parentesco esencial (etiología biológica), mientras que el fenético recurre a la agregación numérica y estadística de rasgos clínicos externos observables."
+    },
+    {
+      "q": "El término nosología se diferencia del término nosografía en que la nosología:",
+      "options": [
+        "Se limita a la descripción externa de los síntomas de la enfermedad",
+        "Estudia las leyes científicas de la clasificación en su vertiente teórica",
+        "Introduce la etiología, el curso clínico y el pronóstico de los trastornos",
+        "Evalúa exclusivamente la comorbilidad y las escalas dimensionales"
+      ],
+      "correct": 2,
+      "hint": "Nosología va más allá de la simple descripción; intenta comprender el origen y evolución natural de la patología.",
+      "explanation": "La nosología describe y clasifica las enfermedades considerando su etiología, curso y pronóstico, mientras que la nosografía es de naturaleza meramente descriptiva."
+    },
+    {
+      "q": "Las taxonomías empíricas contemporáneas utilizan técnicas multivariadas como el análisis de conglomerados (cluster analysis) para agrupar síntomas. Esta metodología es típica de:",
+      "options": [
+        "Las clasificaciones de tipo filético",
+        "Las clasificaciones de tipo fenético",
+        "Las clasificaciones monotéticas puras",
+        "Los sistemas de exclusión jerárquica de Jaspers"
+      ],
+      "correct": 1,
+      "hint": "Es un enfoque numérico basado en cuantificar la similitud entre rasgos observados.",
+      "explanation": "El análisis multivariante para agrupar sintomatología por coeficientes de similitud matemática es la base de las clasificaciones fenéticas o numéricas."
+    },
+    {
+      "q": "El supuesto de que existen 'taxones' o discontinuidades reales en la naturaleza psicopatológica que no dependen de la arbitrariedad del investigador es postulado por la:",
+      "options": [
+        "Psiquiatría dimensional pura",
+        "Taxonomía científica formal",
+        "Aproximación prototípica de Wittgenstien",
+        "Metodología transdiagnóstica de Barlow"
+      ],
+      "correct": 1,
+      "hint": "Busca encontrar clases biológicas reales que representan cortes discretos en la naturaleza.",
+      "explanation": "La taxonomía científica busca descubrir 'taxones' o discontinuidades reales (naturales) en la naturaleza de los fenómenos, diferenciándose de agrupaciones arbitrarias de conveniencia clínica."
+    },
+    {
+      "q": "En psicopatología clínica, la imposibilidad de cumplir plenamente los criterios diagnósticos monotéticos estrictos genera con frecuencia:",
+      "options": [
+        "Un exceso de comorbilidad entre trastornos del desarrollo",
+        "Falsos negativos y el problema de los diagnósticos vacíos",
+        "Una excesiva heterogeneidad entre los pacientes de la misma categoría",
+        "El sobrediagnóstico masivo en la población general"
+      ],
+      "correct": 1,
+      "hint": "Si un sistema exige el 100% de los criterios y el paciente solo cumple el 90%, queda sin diagnóstico.",
+      "explanation": "El principal defecto de los sistemas monotéticos es su rigidez diagnóstica, la cual deja a muchos pacientes sin etiqueta diagnóstica (falsos negativos/diagnósticos vacíos) a pesar de tener un malestar clínico claro."
+    },
+    {
+      "q": "El modelo clasificatorio categorial se caracteriza principalmente por:",
+      "options": [
+        "Definir los trastornos como continuos cuantitativos sin límites claros",
+        "Clasificar las perturbaciones en clases discretas y cualitativamente distintas",
+        "Utilizar exclusivamente coeficientes de correlación y análisis factoriales",
+        "Medir la gravedad de los síntomas del 1 al 100 mediante la escala WHODAS"
+      ],
+      "correct": 1,
+      "hint": "Funciona bajo una lógica dicotómica de presencia o ausencia del trastorno.",
+      "explanation": "El modelo categorial divide la psicopatología en clases cualitativamente distintas y separadas. Se basa en una lógica binaria: el sujeto presenta o no el trastorno."
+    },
+    {
+      "q": "Uno de los principales inconvenientes de los modelos categoriales en psicopatología es que:",
+      "options": [
+        "Presentan una baja economía cognitiva para los profesionales",
+        "Dificultan las decisiones binarias urgentes como la hospitalización",
+        "Producen una pérdida importante de información clínica y aumentan la comorbilidad artificial",
+        "Carecen de utilidad diagnóstica en el ámbito institucional sanitario"
+      ],
+      "correct": 2,
+      "hint": "Al clasificar con límites rígidos de todo o nada, se pierde la gradación de gravedad y se solapan diagnósticos.",
+      "explanation": "Los modelos categoriales fuerzan límites artificiales que causan pérdida de información sobre la severidad y aumentan la comorbilidad artificial, obligando al uso de categorías residuales."
+    },
+    {
+      "q": "La principal ventaja de los modelos dimensionales en comparación con los categoriales es:",
+      "options": [
+        "Su facilidad para simplificar la comunicación clínica y la codificación estadística",
+        "Su adaptación inmediata a las exigencias de toma de decisiones dicotómicas",
+        "Que reflejan fielmente la gravedad sintomática y evitan categorías residuales artificiales",
+        "Que cuentan con un consenso universal absoluto sobre el número de dimensiones requeridas"
+      ],
+      "correct": 2,
+      "hint": "Permiten situar al paciente en un continuo lineal sin cortes artificiales de presencia/ausencia.",
+      "explanation": "Los modelos dimensionales minimizan la pérdida de información al reflejar con exactitud la severidad sintomática y eliminar las categorías 'no especificadas' o residuales."
+    },
+    {
+      "q": "El modelo clasificatorio que propone realizar primero una asignación cualitativa a una categoría y luego una evaluación cuantitativa de su gravedad se conoce como:",
+      "options": [
+        "Modelo monotético puro",
+        "Modelo jerárquico-vertical",
+        "Modelo híbrido (Clase-Cuantitativo de Skinner)",
+        "Modelo fenético-filético de Sokal"
+      ],
+      "correct": 2,
+      "hint": "Fue propuesto por Harvey A. Skinner para integrar las ventajas categoriales y dimensionales.",
+      "explanation": "El modelo híbrido de Skinner combina la clasificación categorial (el tipo o clase de trastorno) con la valoración dimensional (severidad y perfil sintomático)."
+    },
+    {
+      "q": "En el DSM-5, un ejemplo de la aplicación práctica de un modelo clasificatorio híbrido se observa en:",
+      "options": [
+        "El Trastorno Depresivo Mayor en la Sección II",
+        "El Trastorno de Pánico y sus criterios de exclusión",
+        "El Modelo Alternativo para los Trastornos de la Personalidad de la Sección III",
+        "La escala de gravedad única de la Esquizofrenia basada en el Eje II"
+      ],
+      "correct": 2,
+      "hint": "Combina una valoración de rasgos dimensionales con categorías diagnósticas de personalidad.",
+      "explanation": "El Modelo Alternativo para los Trastornos de la Personalidad de la Sección III del DSM-5 es un modelo híbrido estructurado, evaluando tanto el nivel de funcionamiento de la personalidad (categorial/gravedad) como rasgos patológicos (dimensional)."
+    },
+    {
+      "q": "La estructura relacional entre categorías que organiza los trastornos en niveles jerárquicos de abstracción creciente (como espectros que agrupan síndromes) se denomina:",
+      "options": [
+        "Estructura jerárquica o vertical",
+        "Estructura multiaxial u horizontal",
+        "Estructura circular o circumpleja",
+        "Estructura politética secuencial"
+      ],
+      "correct": 0,
+      "hint": "Se asemeja a un árbol taxonómico donde los factores superiores explican a los inferiores.",
+      "explanation": "La estructura jerárquica (o vertical) organiza las categorías de lo general a lo específico. Los niveles superiores engloban y explican las comorbilidades de los niveles inferiores."
+    },
+    {
+      "q": "Una estructura de clasificación multiaxial (u horizontal) se caracteriza por:",
+      "options": [
+        "Subordinar unas categorías diagnósticas a otras en función de su etiología molecular",
+        "Distribuir los trastornos en un espacio circular basado en variables ortogonales",
+        "Segmentar la evaluación clínica en múltiples ejes independientes y paralelos",
+        "Exigir el cumplimiento monotético de todos los criterios psicosociales"
+      ],
+      "correct": 2,
+      "hint": "Cada eje representa un plano de información diferente e independiente.",
+      "explanation": "La estructura multiaxial organiza la información clínica en varios ejes paralelos e independientes, proporcionando una visión holística del funcionamiento del paciente."
+    },
+    {
+      "q": "Los modelos de estructura circular o circumpleja ordenan sus categorías en una circunferencia definida por dos ejes principales ortogonales. Un ejemplo clásico en psicopatología es:",
+      "options": [
+        "Los espectros internalizante y externalizante de HiTOP",
+        "Las taxonomías interpersonales de Timothy Leary y los modelos de Millon",
+        "Los ejes multiaxiales del DSM-IV-TR",
+        "La clasificación de psicosis orgánicas y funcionales de Kraepelin"
+      ],
+      "correct": 1,
+      "hint": "Se define por dimensiones polares adyacentes y opuestas, como amor-odio o dominación-sumisión.",
+      "explanation": "El modelo circumplejo (como el interpersonal de Leary o los de Theodore Millon) ordena categorías de forma contigua en un círculo bidimensional, donde lo opuesto representa la polaridad clínica."
+    },
+    {
+      "q": "El DSM-I (1952) fue publicado originalmente por la Asociación Psiquiátrica Americana (APA) con el fin primordial de:",
+      "options": [
+        "Unificar la nomenclatura diagnóstica caótica de los hospitales militares tras la Segunda Guerra Mundial",
+        "Implementar los criterios operativos de Feighner para homogeneizar la investigación",
+        "Sustituir la CIE-6 de la Organización Mundial de la Salud en todo el mundo",
+        "Introducir un modelo jerárquico-dimensional basado en neuroimagen"
+      ],
+      "correct": 0,
+      "hint": "Nació tras la necesidad de organizar el registro psiquiátrico de los veteranos de guerra de EE. UU.",
+      "explanation": "El DSM-I nació en 1952 para estandarizar la caótica clasificación y terminología diagnóstica utilizada en el ámbito militar estadounidense tras la Segunda Guerra Mundial."
+    },
+    {
+      "q": "Los manuales DSM-I (1952) y DSM-II (1968) estuvieron fuertemente influidos a nivel teórico y epistemológico por:",
+      "options": [
+        "La corriente neo-kraepeliana empírica y ateórica",
+        "La teoría psicodinámica y los postulados de la psiquiatría social de Adolf Meyer",
+        "Los modelos dimensionales de rasgos de la personalidad de la CIE-10",
+        "Los avances de la genética cuantitativa y la psicofarmacología molecular"
+      ],
+      "correct": 1,
+      "hint": "Concibieron las patologías mentales como respuestas disfuncionales o 'reacciones'.",
+      "explanation": "El DSM-I y el DSM-II reflejaban una profunda influencia del psicoanálisis y de la psiquiatría psicobiológica y social de Adolf Meyer."
+    },
+    {
+      "q": "En el DSM-I, el término nosológico 'reacción' (por ejemplo, 'reacción esquizofrénica') expresaba conceptualmente que:",
+      "options": [
+        "El trastorno era una respuesta biológica hereditaria inmutable",
+        "Los síntomas eran respuestas adaptativas disfuncionales a conflictos inconscientes o estresores",
+        "El cuadro clínico representaba un reflejo condicionado clásico no generalizable",
+        "La patología dependía de un desequilibrio químico exclusivo de neurotransmisores"
+      ],
+      "correct": 1,
+      "hint": "Asumía que la psicopatología era una reacción a estresores psicosociales y dinámicas del sujeto.",
+      "explanation": "El término 'reacción' indicaba que los trastornos no eran enfermedades biológicas fijas, sino respuestas adaptativas desadaptativas ante conflictos psicológicos o problemas del entorno."
+    },
+    {
+      "q": "El principal problema psicométrico y metodológico de los manuales DSM-I y DSM-II fue:",
+      "options": [
+        "El elevado número de ejes diagnósticos que sobrecargaban al clínico",
+        "Su bajísima fiabilidad diagnóstica interjueces debido a sus descripciones narrativas e imprecisas",
+        "La exclusión radical de cualquier trastorno de origen orgánico o físico",
+        "Su rechazo a las explicaciones psicodinámicas y psicoanalíticas clásicas"
+      ],
+      "correct": 1,
+      "hint": "Al ser narraciones subjetivas, dos médicos raramente coincidían en el mismo diagnóstico.",
+      "explanation": "Al carecer de criterios explícitos y basarse en narrativas teóricas subjetivas, la fiabilidad interjueces era alarmantemente baja, lo que motivó la revolución metodológica posterior."
+    },
+    {
+      "q": "La corriente Neo-Kraepeliana, que impulsó el desarrollo del DSM-III (1980), se originó fundamentalmente en:",
+      "options": [
+        "La Universidad de Harvard en Boston",
+        "La Universidad de Washington en San Luis",
+        "La Universidad de Heidelberg en Alemania",
+        "El Instituto de Psiquiatría de Londres"
+      ],
+      "correct": 1,
+      "hint": "Asociada a figuras como Eli Robins, Samuel Guze y George Winokur.",
+      "explanation": "El movimiento neo-kraepeliano se gestó en la Universidad de Washington en San Luis (Missouri), propugnando la vuelta a la psiquiatría empírico-descriptiva de Kraepelin."
+    },
+    {
+      "q": "El postulado central de la corriente Neo-Kraepeliana de psiquiatría sostiene que:",
+      "options": [
+        "La psiquiatría debe abandonar el modelo médico y centrarse en la psicoterapia conductual",
+        "La psiquiatría es una rama de la medicina que debe basarse en la investigación empírica descriptiva",
+        "Los trastornos mentales son respuestas afectivas normales ante una sociedad enferma",
+        "Los modelos dimensionales puros son superiores a cualquier sistema categorial"
+      ],
+      "correct": 1,
+      "hint": "Buscaba recuperar la tradición médica y descartar la especulación psicoanalítica.",
+      "explanation": "Los neo-kraepelianos defendían el modelo médico de la psiquiatría, centrado en la observación empírica, la clasificación precisa de síntomas y la validación de las categorías clínicas."
+    },
+    {
+      "q": "Los llamados Criterios Feighner, publicados en 1972 por investigadores de la Universidad de Washington, representan:",
+      "options": [
+        "El primer listado de criterios diagnósticos operativos diseñado para homogeneizar muestras de investigación",
+        "La base oficial de codificación del Capítulo V de la CIE-6 de la OMS",
+        "Un conjunto de escalas de gravedad para valorar la esquizofrenia en niños",
+        "La primera propuesta transdiagnóstica de tratamiento unificado de la ansiedad"
+      ],
+      "correct": 0,
+      "hint": "Definieron criterios operativos claros para 14 trastornos psiquiátricos.",
+      "explanation": "Los Criterios Feighner (1972) fueron el primer intento exitoso de formular criterios operativos explícitos y precisos (para 14 trastornos), con el fin de unificar los criterios de selección de muestras científicas."
+    },
+    {
+      "q": "Los Criterios Diagnósticos de Investigación (RDC), publicados en 1975 por Spitzer, Endicott y Robins, ampliaron los Criterios Feighner a:",
+      "options": [
+        "100 trastornos clínicos y dieron origen a la escala de autoinforme SCL-90",
+        "25 trastornos clínicos y sirvieron de base directa para estructurar la entrevista diagnóstica SADS",
+        "14 trastornos infantiles, excluyendo por primera vez la patología adulta",
+        "Una taxonomía dimensional de 5 dominios basada en el funcionamiento de circuitos"
+      ],
+      "correct": 1,
+      "hint": "Fueron el paso intermedio directo antes de la redacción definitiva del DSM-III.",
+      "explanation": "Los RDC (1975) ampliaron a 25 los trastornos clínicos con criterios explícitos y se asociaron con el diseño de la entrevista SADS, sirviendo como precursores inmediatos del DSM-III."
+    },
+    {
+      "q": "La entrevista diagnóstica semiestructurada SADS (Schedule for Affective Disorders and Schizophrenia) se diseñó originalmente para dar soporte operativo a:",
+      "options": [
+        "Los Criterios Feighner (1972)",
+        "Los Criterios Diagnósticos de Investigación (RDC, 1975)",
+        "La CIE-10 (1992)",
+        "El DSM-I (1952)"
+      ],
+      "correct": 1,
+      "hint": "Esta entrevista fue creada por Spitzer y colaboradores en los años 70.",
+      "explanation": "La SADS se desarrolló específicamente para evaluar operativamente los 25 trastornos clínicos recogidos en los RDC (Research Diagnostic Criteria)."
+    },
+    {
+      "q": "El DSM-III (1980) adoptó un enfoque 'ateórico' respecto a la etiología de los trastornos con el fin de:",
+      "options": [
+        "Demostrar que los trastornos mentales no tienen una causa biológica",
+        "Facilitar el consenso diagnóstico entre clínicos de distintas orientaciones terapéuticas",
+        "Sustituir el diagnóstico descriptivo por un modelo cognitivo-conductual",
+        "Limitar el uso de fármacos y centrar el tratamiento en intervenciones sociales"
+      ],
+      "correct": 1,
+      "hint": "Al evitar teorías no probadas (como las psicoanalíticas), clínicos de cualquier escuela podían usarlo.",
+      "explanation": "El enfoque ateórico y descriptivo del DSM-III buscaba que el manual fuera de utilidad para clínicos de diversas orientaciones conceptuales, consensuando solo lo observable fenomenológicamente."
+    },
+    {
+      "q": "Una de las decisiones más polémicas del DSM-III (1980) fue la eliminación de una categoría histórica clásica como término unificador, la cual fue redistribuida en otros apartados. Nos referimos a:",
+      "options": [
+        "La psicosis esquizofrénica",
+        "La homosexualidad egodistónica",
+        "La neurosis",
+        "La hipocondría orgánica"
+      ],
+      "correct": 2,
+      "hint": "Se eliminó este concepto psicoanalítico y se redistribuyeron sus componentes en trastornos de ansiedad, somatomorfos, etc.",
+      "explanation": "El DSM-III eliminó formalmente el término de 'neurosis' para consolidar su enfoque ateórico, redistribuyendo los antiguos trastornos neuróticos en categorías descriptivas como ansiedad o trastornos afectivos."
+    },
+    {
+      "q": "El Principio de Parsimonia diagnóstica, integrado en los manuales diagnósticos modernos e influido por las tesis de Karl Jaspers, establece que el clínico debe:",
+      "options": [
+        "Realizar el diagnóstico único más simple y económico que englobe la totalidad de los síntomas",
+        "Diagnosticar todos los trastornos que cumplan criterios, independientemente del solapamiento",
+        "Excluir diagnósticos afectivos si existe un trastorno de ansiedad previo",
+        "Evaluar por separado la gravedad del síntoma y el nivel de discapacidad social"
+      ],
+      "correct": 0,
+      "hint": "Es una regla de economía diagnóstica.",
+      "explanation": "El principio de parsimonia orienta al clínico a preferir el diagnóstico más simple y unitario que explique de forma completa el cuadro clínico observado, evitando multiplicidad innecesaria."
+    },
+    {
+      "q": "El Principio de Jerarquía diagnóstica del DSM-III establece que:",
+      "options": [
+        "Los trastornos psicosociales del Eje IV tienen prioridad sobre los trastornos físicos del Eje III",
+        "Los trastornos de mayor gravedad clínica o naturaleza orgánica excluyen a los trastornos situados por debajo",
+        "Los diagnósticos de la personalidad en el Eje II deben realizarse siempre en primer lugar",
+        "Los síntomas cognitivos anulan por completo la clasificación de síntomas psicomotores"
+      ],
+      "correct": 1,
+      "hint": "Por ejemplo, un delirium orgánico excluye el diagnóstico independiente de una depresión o ansiedad reactiva.",
+      "explanation": "El principio de jerarquía determina que los trastornos clínicamente más graves o de etiología orgánica conocida (escalón superior) anulan o engloban el diagnóstico de trastornos de menor gravedad (depresión, ansiedad)."
+    },
+    {
+      "q": "En el sistema multiaxial original introducido por el DSM-III (1980), el Eje I estaba reservado para la evaluación de:",
+      "options": [
+        "Los trastornos específicos del desarrollo y los trastornos de la personalidad",
+        "Los trastornos psiquiátricos o clínicos principales",
+        "Las enfermedades médicas generales concomitantes",
+        "La escala de evaluación de la actividad global (EEAG)"
+      ],
+      "correct": 1,
+      "hint": "Contenía los trastornos agudos o síndromes clínicos principales por los que solía consultar el paciente.",
+      "explanation": "El Eje I del DSM-III clasificaba los síndromes clínicos o trastornos psiquiátricos principales, diferenciándolos del Eje II."
+    },
+    {
+      "q": "El Eje II del sistema multiaxial del DSM-III se diseñó con el propósito específico de registrar:",
+      "options": [
+        "Los problemas psicosociales y estresores ambientales agudos",
+        "Las patologías médicas crónicas concomitantes",
+        "Los trastornos de la personalidad y los trastornos específicos del desarrollo",
+        "La discapacidad social medida a través del cuestionario WHODAS 2.0"
+      ],
+      "correct": 2,
+      "hint": "Buscaba evitar que condiciones crónicas y estables de la persona pasaran desapercibidas frente a los síntomas agudos del Eje I.",
+      "explanation": "El Eje II se reservó para los trastornos de personalidad y del desarrollo, asegurando que patrones de funcionamiento estables a largo plazo fueran evaluados junto al cuadro agudo del Eje I."
+    },
+    {
+      "q": "El Eje III del sistema multiaxial del DSM-III servía para documentar:",
+      "options": [
+        "La escala dimensional de funcionamiento adaptativo del último año",
+        "Los estresores psicosociales del entorno del paciente",
+        "Las enfermedades físicas o problemas orgánicos concomitantes",
+        "Los rasgos disfuncionales de personalidad subclínicos"
+      ],
+      "correct": 2,
+      "hint": "Permite registrar factores biológicos y médicos generales útiles para el tratamiento psiquiátrico.",
+      "explanation": "El Eje III registraba afecciones médicas generales o trastornos físicos concomitantes que pudieran ser relevantes para comprender o tratar el trastorno mental."
+    },
+    {
+      "q": "El Eje IV en el DSM-III original valoraba conceptualmente:",
+      "options": [
+        "La presencia de mecanismos de defensa adaptativos del sujeto",
+        "La severidad de los estresores psicosociales en una escala dimensional",
+        "El nivel de discapacidad interpersonal del paciente en el último mes",
+        "El grado de concordancia diagnóstica entre diferentes jueces clínicos"
+      ],
+      "correct": 1,
+      "hint": "Evaluaba el impacto de los acontecimientos ambientales estresantes.",
+      "explanation": "El Eje IV del DSM-III evaluaba la gravedad de los estresores psicosociales ambientales, estimando su impacto en el desarrollo y mantenimiento del trastorno."
+    },
+    {
+      "q": "El Eje V introducido en el DSM-III medía:",
+      "options": [
+        "La presencia de rasgos psicopáticos subclínicos en el Eje II",
+        "El nivel más alto de funcionamiento adaptativo del sujeto en el último año",
+        "El número total de síntomas físicos no justificados médicamente",
+        "La cronicidad del trastorno a lo largo del ciclo vital"
+      ],
+      "correct": 1,
+      "hint": "Estimaba la adaptación psicosocial, ocupacional y de ocio del sujeto antes de la crisis actual.",
+      "explanation": "El Eje V original del DSM-III medía el nivel máximo de funcionamiento adaptativo alcanzado por el paciente en el último año, sirviendo como indicador pronóstico."
+    },
+    {
+      "q": "La diferencia conceptual clave entre los Criterios Feighner (1972) y los RDC (1975) estriba en que estos últimos:",
+      "options": [
+        "Suprimieron los criterios de inclusión para centrarse solo en criterios de exclusión",
+        "Fueron creados por la OMS y se aplicaron a la salud pública general",
+        "Ampliaron las categorías a 25 trastornos clínicos y sirvieron para desarrollar la entrevista SADS",
+        "Excluyeron la esquizofrenia y el trastorno bipolar de la clasificación"
+      ],
+      "correct": 2,
+      "hint": "Los RDC fueron una extensión directa de Feighner, duplicando casi el catálogo de trastornos evaluables con criterios explícitos.",
+      "explanation": "Los Research Diagnostic Criteria (RDC) de 1975 expandieron el listado a 25 trastornos clínicos e incluyeron la entrevista SADS, facilitando de forma directa la transición hacia el DSM-III."
+    },
+    {
+      "q": "El principal impulsor intelectual y metodológico del cambio de paradigma que supuso el DSM-III (1980) fue el psiquiatra estadounidense:",
+      "options": [
+        "Harvey A. Skinner",
+        "Robert Spitzer",
+        "Adolf Meyer",
+        "Theodore Millon"
+      ],
+      "correct": 1,
+      "hint": "Fue el presidente del grupo de trabajo (Task Force) de la APA para el DSM-III.",
+      "explanation": "Robert Spitzer lideró la reforma que culminó en el DSM-III, introduciendo criterios operativos, el sistema multiaxial y defendiendo el enfoque ateórico neo-kraepeliano."
+    },
+    {
+      "q": "En la historia de la clasificación psicopatológica, el abandono de la teoría psicoanalítica oficial en las clasificaciones del DSM se produce a partir de la publicación de:",
+      "options": [
+        "El DSM-II en 1968",
+        "El DSM-III en 1980",
+        "El DSM-IV en 1994",
+        "El DSM-5 en 2013"
+      ],
+      "correct": 1,
+      "hint": "En este manual se instauró la revolución neo-kraepeliana descriptiva.",
+      "explanation": "Fue la publicación del DSM-III en 1980 la que marcó el abandono de la orientación psicodinámica dominante en favor de una psiquiatría ateórica basada en síntomas observables."
+    },
+    {
+      "q": "El modelo de Emil Kraepelin, recuperado por el enfoque Neo-Kraepeliano de los años 70, concibe los trastornos de forma ________, a diferencia del modelo psicodinámico previo que los concebía de forma ________:",
+      "options": [
+        "Dimensional; Categorial",
+        "Monotética; Politética",
+        "Categorial y descriptiva; Continua e interpretativa",
+        "Filética causal; Fenética estadística"
+      ],
+      "correct": 2,
+      "hint": "Kraepelin delimitaba enfermedades discretas; el psicoanálisis hablaba de conflictos continuos subyacentes.",
+      "explanation": "El enfoque neo-kraepeliano asume que la psiquiatría clasifica categorías discretas observables empíricamente (visión kraepeliana), en contraste con el enfoque dinámico que interpretaba las manifestaciones en un continuo de conflicto neurótico."
+    },
+    {
+      "q": "En el DSM-III-TR (1987), ¿cuál de las siguientes categorías diagnósticas históricas fue eliminada de forma definitiva del manual?",
+      "options": [
+        "El Trastorno de Personalidad Pasivo-Agresiva",
+        "La Homosexualidad Egodistónica",
+        "La Dependencia de Sustancias Psicotrópicas",
+        "El Trastorno Depresivo Mayor Eje II"
+      ],
+      "correct": 1,
+      "hint": "Esta categoría, que patologizaba la orientación sexual bajo ciertas condiciones subjetivas, se suprimió en esta revisión de texto.",
+      "explanation": "El DSM-III-TR eliminó definitivamente la homosexualidad egodistónica, completando el proceso de despatologización de la homosexualidad iniciado en la APA en 1973."
+    },
+    {
+      "q": "Con respecto a la codificación de los trastornos por sustancias, el DSM-III-TR (1987) introdujo una modificación provisional al:",
+      "options": [
+        "Añadir el trastorno por consumo de tabaco como un eje psicopatológico independiente",
+        "Eliminar la distinción entre abuso y dependencia en el Eje I (separados de nuevo en el DSM-IV)",
+        "Clasificar el alcoholismo crónico como un trastorno del neurodesarrollo en el Eje II",
+        "Suprimir todos los códigos alfanuméricos asociados al síndrome de abstinencia"
+      ],
+      "correct": 1,
+      "hint": "Unificó temporalmente ambas condiciones, una decisión que se revirtió en la siguiente edición mayor.",
+      "explanation": "El DSM-III-TR unificó provisionalmente el abuso y la dependencia de sustancias en una única categoría, distinción que el DSM-IV volvió a separar con criterios propios."
+    },
+    {
+      "q": "En la evaluación de estresores psicosociales en el Eje IV, el DSM-III-TR introdujo la novedad metodológica de distinguir entre:",
+      "options": [
+        "Estresores agudos y estresores crónicos o duraderos",
+        "Estresores biológicos primarios y estresores ambientales secundarios",
+        "Estresores infantiles familiares y estresores adultos laborales",
+        "Estresores modificables y estresores no modificables"
+      ],
+      "correct": 0,
+      "hint": "Se focalizó en la duración temporal y cronicidad del estresor.",
+      "explanation": "El DSM-III-TR modificó el Eje IV para diferenciar explícitamente entre acontecimientos estresantes agudos (ej. muerte de un familiar) y crónicos/duraderos (ej. desempleo prolongado)."
+    },
+    {
+      "q": "La Escala de Evaluación de la Actividad Global (EEAG o GAF), que puntúa de 1 a 100 el funcionamiento adaptativo, se incorporó en el Eje V a partir de:",
+      "options": [
+        "El DSM-III (1980)",
+        "El DSM-III-TR (1987)",
+        "El DSM-IV (1994)",
+        "El DSM-IV-TR (2000)"
+      ],
+      "correct": 1,
+      "hint": "Fue una novedad de la revisión de texto del DSM-III que sustituyó la anterior escala de adaptación general del último año.",
+      "explanation": "La EEAG/GAF se introdujo en el Eje V del DSM-III-TR (1987) para evaluar en una escala numérica única el funcionamiento psicosocial global del paciente."
+    },
+    {
+      "q": "La publicación del DSM-III-TR (1987) coincidió temporalmente con el desarrollo de un instrumento de entrevista estructurada de referencia para operativizar sus criterios, denominado:",
+      "options": [
+        "SCAN",
+        "CIDI",
+        "SCID",
+        "IPDE"
+      ],
+      "correct": 2,
+      "hint": "Sus siglas en inglés significan Structured Clinical Interview for DSM.",
+      "explanation": "La entrevista SCID (Entrevista Clínica Estructurada para el DSM) fue diseñada originalmente a finales de los 80 para evaluar los diagnósticos de los Ejes I y II del DSM-III-TR."
+    },
+    {
+      "q": "El proceso de elaboración del DSM-IV (1994) se diferenció de los anteriores principalmente por exigir que cualquier cambio en las categorías nosológicas estuviese condicionado a:",
+      "options": [
+        "El consenso exclusivo de los directores de las clínicas psicoanalíticas americanas",
+        "Sólida evidencia empírica contrastada mediante revisiones sistemáticas, análisis secundarios y estudios de campo",
+        "Su equivalencia exacta con el modelo jerárquico HiTOP de covariación sintomática",
+        "La eliminación de cualquier escala dimensional o cuantitativa del Eje V"
+      ],
+      "correct": 1,
+      "hint": "Se basó en un riguroso proceso de validación empírica y metodológica de tres fases.",
+      "explanation": "El DSM-IV basó su desarrollo en tres pilares empíricos: revisiones sistemáticas de la literatura, reanálisis de bases de datos existentes y amplios estudios de campo empíricos."
+    },
+    {
+      "q": "En el sistema multiaxial del DSM-IV y DSM-IV-TR, ¿dónde se ubicaba la codificación de los mecanismos de defensa del paciente (PIR)?",
+      "options": [
+        "En el Eje I, como condiciones clínicas agudas",
+        "En el Eje II, junto a los trastornos de la personalidad",
+        "En el Eje III, como trastornos médicos protectores",
+        "En el Eje IV, dentro de los problemas psicosociales"
+      ],
+      "correct": 1,
+      "hint": "Se codificaban en el mismo eje que los rasgos desadaptativos estables y el retraso mental.",
+      "explanation": "En el DSM-IV, los estilos defensivos o mecanismos de defensa se registran en el Eje II, permitiendo evaluar la estructura adaptativa de la personalidad junto a sus trastornos."
+    },
+    {
+      "q": "De acuerdo con las reglas de codificación del DSM-IV, si un paciente cumple criterios para múltiples trastornos en el Eje I:",
+      "options": [
+        "El clínico debe codificar solo el de mayor jerarquía y descartar los demás",
+        "Se deben registrar todos, colocando en primer lugar el diagnóstico principal o motivo de consulta",
+        "Se debe trasladar el de menor gravedad al Eje II de forma cualitativa",
+        "Se codifica obligatoriamente un trastorno no especificado mixto"
+      ],
+      "correct": 1,
+      "hint": "Fomenta el registro completo de la comorbilidad clínica de Eje I, priorizando el motivo de atención principal.",
+      "explanation": "El manual estipula que deben registrarse todos los diagnósticos clínicos aplicables del Eje I, listando en primer término el que motiva la atención (diagnóstico principal)."
+    },
+    {
+      "q": "Según los criterios del DSM-IV y DSM-IV-TR, ¿cómo deben registrarse los rasgos de personalidad desadaptativos de un sujeto que no alcanzan el umbral para un trastorno específico del Eje II?",
+      "options": [
+        "Se codifican obligatoriamente con el código del Trastorno de la Personalidad No Especificado",
+        "No deben codificarse con un código de trastorno del Eje II, sino anotarse de forma cualitativa",
+        "Deben ser registrados en el Eje I como condiciones clínicas de atención",
+        "Se trasladan al Eje V restando 10 puntos en la escala de funcionamiento"
+      ],
+      "correct": 1,
+      "hint": "Se anotan cualitativamente para no sobrediagnosticar trastornos de personalidad ausentes.",
+      "explanation": "Los rasgos desadaptativos que no cumplen el umbral diagnóstico no reciben código en el Eje II, sino que se describen cualitativamente (ej. 'rasgos paranoides de personalidad') mediante anotación escrita."
+    },
+    {
+      "q": "El cambio organizativo y estructural más relevante introducido en el DSM-5 (2013) con respecto al DSM-IV-TR consistió en:",
+      "options": [
+        "La implantación de un sistema multiaxial de 7 ejes de evaluación",
+        "La fusión de los antiguos Ejes I, II y III en un único registro diagnóstico integrado",
+        "La sustitución de todos los criterios diagnósticos categoriales por dimensiones puras",
+        "La reubicación de los trastornos de la personalidad exclusivamente en la Sección III"
+      ],
+      "correct": 1,
+      "hint": "Supuso el fin de la clásica estructura de 5 ejes del diagnóstico psiquiátrico.",
+      "explanation": "El DSM-5 eliminó la separación multiaxial, fusionando los Ejes I, II y III en un único registro clínico para simplificar el diagnóstico y reflejar el solapamiento patológico."
+    },
+    {
+      "q": "Tras la reestructuración del DSM-5, ¿cómo se procedió a registrar los antiguos Ejes IV y V?",
+      "options": [
+        "El Eje IV pasó a registrarse mediante códigos Z de la CIE y el Eje V (EEAG) fue suprimido",
+        "El Eje IV se eliminó completamente y el Eje V pasó a ser de uso voluntario en la Sección I",
+        "Ambos se unificaron en el Eje II bajo la etiqueta de trastornos adaptativos sociales",
+        "El Eje IV se transformó en la escala WHODAS y el Eje V en la entrevista cultural"
+      ],
+      "correct": 0,
+      "hint": "Los problemas ambientales se codifican con la CIE y la escala EEAG desapareció por sus defectos psicométricos.",
+      "explanation": "El Eje IV se sustituyó por códigos de problemas psicosociales y ambientales de la CIE, mientras que el Eje V (escala GAF) se suprimió en el DSM-5."
+    },
+    {
+      "q": "La principal razón científica y metodológica por la que el DSM-5 decidió suprimir la clásica escala EEAG (GAF) del Eje V fue:",
+      "options": [
+        "Que exigía demasiado tiempo de administración al clínico",
+        "Que carecía de un rango numérico adaptado a pacientes psiquiátricos graves",
+        "Que solapaba y confundía la gravedad de los síntomas con el nivel de discapacidad social y laboral del sujeto",
+        "Que fue sustituida por el cuestionario CIDI administrado por familiares"
+      ],
+      "correct": 2,
+      "hint": "La escala unificaba de manera errónea la severidad clínica y la adaptación vital en una sola puntuación.",
+      "explanation": "La EEAG fue retirada porque mezclaba inapropiadamente síntomas (ej. ideación suicida) con limitaciones funcionales (ej. no mantener un empleo), restándole validez psicométrica."
+    },
+    {
+      "q": "En sustitución de la escala EEAG, el DSM-5 incorporó de forma dimensional para la evaluación del funcionamiento y la discapacidad cotidiana el cuestionario de la OMS denominado:",
+      "options": [
+        "CIDI 3.0",
+        "SCAN-2",
+        "WHODAS 2.0 (World Health Organization Disability Assessment Schedule)",
+        "IPDE-5"
+      ],
+      "correct": 2,
+      "hint": "Es un cuestionario autoadministrado o evaluado por el clínico que mide la discapacidad en 6 áreas de la vida diaria.",
+      "explanation": "El DSM-5 propone el uso de la escala WHODAS 2.0, herramienta de la OMS basada en la CIF (Clasificación Internacional del Funcionamiento), que evalúa la discapacidad en 6 dominios independientes."
+    },
+    {
+      "q": "El cuestionario WHODAS 2.0 evalúa el nivel de discapacidad y funcionamiento diario del sujeto a través de:",
+      "options": [
+        "3 dimensiones diagnósticas basadas exclusivamente en el temperamento infantil",
+        "5 ejes correspondientes a la estructura clásica del DSM-IV-TR",
+        "6 dominios del funcionamiento cotidiano (como cognición, movilidad, cuidado personal y relaciones)",
+        "100 ítems que arrojan una puntuación única de exclusión jerárquica"
+      ],
+      "correct": 2,
+      "hint": "Las áreas exploradas incluyen entendimiento, movilidad, autocuidado, relaciones interpersonales, actividades cotidianas y participación.",
+      "explanation": "La WHODAS 2.0 mide la discapacidad en 6 dominios de la vida diaria: cognición, movilidad, cuidado personal, relación con otras personas, actividades vitales y participación social."
+    },
+    {
+      "q": "La Sección I del DSM-5 está destinada a describir:",
+      "options": [
+        "Los criterios diagnósticos oficiales para los trastornos infantiles del neurodesarrollo",
+        "Los conceptos básicos del manual, su estructura organizativa y las pautas para su uso clínico",
+        "Las medidas de evaluación emergentes y el modelo dimensional de la personalidad",
+        "La tabla de correspondencias alfanuméricas con la CIE-11"
+      ],
+      "correct": 1,
+      "hint": "Es la parte introductoria del manual.",
+      "explanation": "La Sección I introduce las directrices generales, el desarrollo del manual y las instrucciones para realizar una evaluación diagnóstica estandarizada."
+    },
+    {
+      "q": "La Sección II del DSM-5 contiene los criterios diagnósticos oficiales y códigos de los trastornos, los cuales se encuentran ordenados según:",
+      "options": [
+        "Su gravedad clínica, de menor a mayor significación patológica",
+        "El ciclo vital de las personas (desarrollo ontogénico, de infancia a senectud)",
+        "La frecuencia epidemiológica observada en los estudios de campo de la APA",
+        "El orden alfabético estricto de las etiquetas nosológicas en inglés"
+      ],
+      "correct": 1,
+      "hint": "Comienza por los trastornos del neurodesarrollo y finaliza con los trastornos neurocognitivos.",
+      "explanation": "El DSM-5 organiza su Sección II bajo una perspectiva evolutiva o ontogénica, colocando al principio los trastornos que debutan en la infancia y al final los propios del envejecimiento."
+    },
+    {
+      "q": "La Sección III del DSM-5 está reservada para:",
+      "options": [
+        "Los criterios diagnósticos de los trastornos de inicio en la infancia y adolescencia",
+        "Las medidas de evaluación emergentes, la formulación cultural y el modelo dimensional de la personalidad",
+        "El glosario de términos técnicos y el índice alfabético de materias",
+        "La descripción de los códigos de problemas psicosociales del Eje IV"
+      ],
+      "correct": 1,
+      "hint": "Contiene herramientas y modelos en fase de investigación o de aplicación clínica emergente.",
+      "explanation": "La Sección III recopila escalas dimensionales, la Entrevista de Formulación Cultural (EFC) y el modelo alternativo híbrido de trastornos de la personalidad."
+    },
+    {
+      "q": "Con la desaparición de la categoría clásica 'Trastornos de inicio en la infancia, niñez o adolescencia' en el DSM-5, los trastornos que la integraban:",
+      "options": [
+        "Fueron eliminados por completo del manual debido a su baja fiabilidad",
+        "Se integraron bajo la categoría de Trastornos del Neurodesarrollo y el resto se reubicaron en apartados de adultos",
+        "Pasaron a codificarse exclusivamente en la Sección III como medidas emergentes",
+        "Se trasladaron de forma íntegra al capítulo de Trastornos Adaptativos"
+      ],
+      "correct": 1,
+      "hint": "Aquellos de base neurobiológica obvia forman un nuevo grupo; los demás se agrupan con sus equivalentes adultos.",
+      "explanation": "El DSM-5 eliminó el bloque de trastornos infantiles; los vinculados al desarrollo neurológico pasaron a 'Trastornos del Neurodesarrollo', y los demás se dispersaron en los capítulos de adultos correspondientes."
+    },
+    {
+      "q": "En la reestructuración diagnóstica del DSM-5, el Trastorno de Ansiedad por Separación fue reubicado en el capítulo de:",
+      "options": [
+        "Trastornos del Neurodesarrollo",
+        "Trastornos de Ansiedad",
+        "Trastornos relacionados con el Trauma y Estresores",
+        "Trastornos del Control de los Impulsos"
+      ],
+      "correct": 1,
+      "hint": "Salió del apartado infantil para integrarse en la categoría general de los trastornos de ansiedad en adultos.",
+      "explanation": "El Trastorno de Ansiedad por Separación se trasladó al capítulo general de 'Trastornos de Ansiedad', reconociéndose que también puede diagnosticarse e iniciar en la etapa adulta."
+    },
+    {
+      "q": "El Trastorno de Conducta (antiguo trastorno disocial en el DSM-IV) se reubicó en el DSM-5 dentro del capítulo de:",
+      "options": [
+        "Trastornos del Neurodesarrollo",
+        "Trastornos de la Personalidad de tipo Antisocial",
+        "Trastornos destructivos, del control de los impulsos y de la conducta",
+        "Trastornos relacionados con sustancias y conductas adictivas"
+      ],
+      "correct": 2,
+      "hint": "Se agrupó con patologías que comparten problemas de autocontrol conductual y emocional.",
+      "explanation": "El Trastorno de Conducta se reubicó en el capítulo de 'Trastornos destructivos, del control de los impulsos y de la conducta', junto a trastornos como el negativista desafiante."
+    },
+    {
+      "q": "En el DSM-5, el Trastorno Reactivo de la Vinculación se clasifica actualmente dentro del grupo de los:",
+      "options": [
+        "Trastornos del Neurodesarrollo de tipo afectivo",
+        "Trastornos de Ansiedad de inicio en la infancia",
+        "Trastornos relacionados con traumas y factores de estrés",
+        "Trastornos del espectro de la esquizofrenia afectiva"
+      ],
+      "correct": 2,
+      "hint": "Su etiología está ligada directamente a experiencias de negligencia o cuidado deprivado severo en la infancia.",
+      "explanation": "El Trastorno Reactivo de la Vinculación se reubicó en el capítulo de 'Trastornos relacionados con traumas y factores de estrés' debido a su estrecha vinculación etiológica con el maltrato o deprivación afectiva."
+    },
+    {
+      "q": "La principal novedad nosológica y diagnóstica incorporada formalmente en la Sección II del DSM-5-TR (2022) es:",
+      "options": [
+        "El Trastorno por Estrés Postraumático Complejo",
+        "El Trastorno por Duelo Prolongado",
+        "El Trastorno por Comportamiento Sexual Compulsivo",
+        "El Trastorno por Uso de Videojuegos"
+      ],
+      "correct": 1,
+      "hint": "Se caracteriza por una respuesta de dolor y anhelo persistente y desadaptativa tras una pérdida significativa.",
+      "explanation": "El DSM-5-TR (2022) introdujo como diagnóstico oficial el Trastorno por Duelo Prolongado, respondiendo a la necesidad clínica de clasificar los duelos patológicos crónicos."
+    },
+    {
+      "q": "Para el diagnóstico del Trastorno por Duelo Prolongado en el DSM-5-TR, se exige que la respuesta de anhelo y pena intensa persista tras la muerte de un ser querido por un periodo mínimo de:",
+      "options": [
+        "Al menos 3 meses en adultos y de 1 mes en niños y adolescentes",
+        "Al menos 6 meses en adultos y de 3 meses en niños y adolescentes",
+        "Al menos 12 meses en adultos y de 6 meses en niños y adolescentes",
+        "Al menos 24 meses tanto en adultos como en niños y adolescentes"
+      ],
+      "correct": 2,
+      "hint": "El umbral temporal en adultos dobla al establecido para la población infantil.",
+      "explanation": "El DSM-5-TR establece un criterio temporal de al menos 12 meses tras la pérdida en población adulta, y de al menos 6 meses en niños y adolescentes."
+    },
+    {
+      "q": "Con el fin de facilitar la recogida de datos y la atención preventiva, el DSM-5-TR incorporó en su actualización códigos específicos para registrar de forma independiente:",
+      "options": [
+        "La conducta suicida y las autolesiones no suicidas",
+        "El ciberacoso y la adicción a las compras online",
+        "El Burnout y el estrés por teletrabajo pandémico",
+        "La fobia social específica a hablar en público mediante mascarillas"
+      ],
+      "correct": 0,
+      "hint": "Son condiciones que ahora pueden codificarse de forma independiente en el apartado de otras afecciones que pueden ser objeto de atención.",
+      "explanation": "El DSM-5-TR añadió códigos de registro independientes para las conductas suicidas y las autolesiones no suicidas sin catalogarlas como trastornos mentales per se, facilitando su monitorización clínica."
+    },
+    {
+      "q": "En relación a la Disforia de Género, la actualización del DSM-5-TR (2022) procedió a realizar:",
+      "options": [
+        "Su reclasificación en la Sección III como medida de evaluación emergente",
+        "La actualización de sus términos para emplear un lenguaje menos estigmatizante y sensible a la diversidad",
+        "Su eliminación del manual y traslado al capítulo de salud sexual de la CIE",
+        "Su fusión con los trastornos del neurodesarrollo sexual infantil"
+      ],
+      "correct": 1,
+      "hint": "El manual mantiene la categoría pero revisa la redacción de los criterios y las explicaciones para evitar la estigmatización de género.",
+      "explanation": "El DSM-5-TR actualizó la terminología de la Disforia de Género para usar un lenguaje respetuoso y desestigmatizante (ej. sustituir 'el sexo deseado' por 'el género deseado')."
+    },
+    {
+      "q": "El rango numérico completo de puntuación de la Escala de Evaluación de la Actividad Global (EEAG) de los DSM previos era de:",
+      "options": [
+        "0 a 10",
+        "1 a 100",
+        "0 a 100",
+        "1 a 10"
+      ],
+      "correct": 1,
+      "hint": "Evaluaba el funcionamiento en intervalos de 10 puntos, comenzando en el nivel más grave y acabando en el óptimo.",
+      "explanation": "La EEAG/GAF constaba de un rango de 1 a 100 puntos, divididos en diez intervalos donde las puntuaciones más bajas indicaban peor funcionamiento o síntomas más graves."
+    },
+    {
+      "q": "En el DSM-IV-TR (2000), ¿cuál de las siguientes categorías diagnósticas se codificaba obligatoriamente en el Eje II?",
+      "options": [
+        "El Trastorno Obsesivo-Compulsivo de la personalidad y el Retraso Mental",
+        "La Esquizofrenia paranoide y el autismo infantil",
+        "La Depresión Mayor y la Distimia crónica",
+        "Los trastornos por consumo de sustancias y los tics motores"
+      ],
+      "correct": 0,
+      "hint": "Este eje contenía las patologías caracterizadas por ser crónicas, estables y de inicio temprano.",
+      "explanation": "El Eje II del DSM-IV-TR alojaba los trastornos de la personalidad y el Retraso Mental (discapacidad intelectual), además de registrar cualitativamente estilos de defensa."
+    },
+    {
+      "q": "El Eje IV del DSM-IV-TR servía específicamente para registrar:",
+      "options": [
+        "El nivel de discapacidad social del sujeto",
+        "Las enfermedades médicas relevantes",
+        "Los problemas psicosociales y ambientales que afectaban al sujeto",
+        "Los mecanismos de defensa adaptativos del yo"
+      ],
+      "correct": 2,
+      "hint": "Por ejemplo, problemas familiares, económicos, laborales o de acceso a los servicios de salud.",
+      "explanation": "El Eje IV del DSM-IV-TR recopilaba de forma estructurada los problemas psicosociales y ambientales que interferían con el diagnóstico, tratamiento o pronóstico del sujeto."
+    },
+    {
+      "q": "El Eje III del DSM-IV-TR estaba reservado para la codificación de:",
+      "options": [
+        "Las escalas dimensionales de discapacidad cotidiana",
+        "Las enfermedades médicas generales que fuesen potencialmente relevantes para el trastorno",
+        "Los trastornos específicos de la infancia y de la personalidad",
+        "Los acontecimientos vitales altamente estresantes del último año"
+      ],
+      "correct": 1,
+      "hint": "Incluye cualquier patología médica codificada en la CIE-10 que guarde relación clínica con el paciente.",
+      "explanation": "El Eje III registraba afecciones médicas generales del paciente, necesarias para la formulación completa del caso clínico."
+    },
+    {
+      "q": "La principal objeción teórica a la escala EEAG (GAF) que forzó su exclusión en el DSM-5 es que un paciente con síntomas moderados pero severos problemas laborales y un paciente con síntomas muy graves pero buena adaptación social:",
+      "options": [
+        "Podían recibir puntuaciones radicalmente dispares imposibles de computar",
+        "Recibían obligatoriamente un código Z en la CIE-10",
+        "Podían recibir la misma puntuación en la escala, ocultando perfiles clínicos muy distintos",
+        "Eran excluidos por el principio de jerarquía de Jaspers"
+      ],
+      "correct": 2,
+      "hint": "Una misma puntuación global ocultaba si el problema era de gravedad del síntoma o de adaptación social.",
+      "explanation": "Al integrar dos variables distintas (síntomas y discapacidad) en un solo valor numérico, la puntuación de la EEAG era ambigua, impidiendo saber si el paciente sufría síntomas severos o incapacidad social."
+    },
+    {
+      "q": "La aportación histórica más destacada de la CIE-6 (1948), coordinada por la OMS, al ámbito de la salud mental consistió en:",
+      "options": [
+        "Incorporar por primera vez en su historia una sección específica (Capítulo V) para clasificar las enfermedades mentales",
+        "Establecer el sistema multiaxial de cinco ejes copiado posteriormente por el DSM-I",
+        "Formular los criterios operativos Feighner para el diagnóstico de la psicosis",
+        "Sustituir el concepto de neurosis por el de espectros psicopatológicos"
+      ],
+      "correct": 0,
+      "hint": "Marcó el inicio de la participación oficial de la OMS en el registro y codificación de los trastornos mentales.",
+      "explanation": "La CIE-6 (1948) fue la primera edición de la clasificación internacional de la OMS en incluir una sección dedicada específicamente a los trastornos mentales (el Capítulo V)."
+    },
+    {
+      "q": "La sección de trastornos mentales de la CIE-6 (1948) organizó de forma simple sus diagnósticos en tres grandes apartados clínicos:",
+      "options": [
+        "Psicosis, desórdenes neuróticos, y trastornos del carácter, comportamiento e inteligencia",
+        "Trastornos internalizantes, externalizantes y de desapego interpersonal",
+        "Esquizofrenia, trastorno bipolar y neurosis histeria de conversión",
+        "Trastornos de la personalidad, del neurodesarrollo y reacciones psicosomáticas"
+      ],
+      "correct": 0,
+      "hint": "Reflejaba la división tripartita psiquiátrica clásica de mediados del siglo XX.",
+      "explanation": "La CIE-6 dividía los trastornos mentales de manera sencilla en psicosis, desórdenes neuróticos y trastornos del carácter, comportamiento e inteligencia."
+    },
+    {
+      "q": "En la CIE-10 (1992), el Capítulo V está codificado mediante un sistema alfanumérico bajo la denominación de Capítulo F, cuyos códigos abarcan desde:",
+      "options": [
+        "F00 hasta F99",
+        "F01 hasta F50",
+        "Z00 hasta Z99",
+        "F100 hasta F199"
+      ],
+      "correct": 0,
+      "hint": "Es la numeración clásica que va del F00 (demencias) al F99 (trastorno mental no especificado).",
+      "explanation": "El Capítulo F (Trastornos Mentales y del Comportamiento) de la CIE-10 comprende los códigos alfanuméricos desde el F00 hasta el F99."
+    },
+    {
+      "q": "La CIE-10 propuso un esquema multiaxial opcional de tres ejes. ¿Qué se evaluaba específicamente en el Eje I?",
+      "options": [
+        "Los factores ambientales, sociales y del estilo de vida mediante códigos Z",
+        "El nivel de discapacitación o funcionamiento socio-personal del paciente",
+        "Los diagnósticos clínicos principales (psiquiátricos, somáticos, infantiles y de personalidad unificados)",
+        "Los mecanismos de defensa del yo y los rasgos disfuncionales subclínicos"
+      ],
+      "correct": 2,
+      "hint": "A diferencia del DSM-IV, unificaba personalidad y síntomas clínicos en un solo eje.",
+      "explanation": "El Eje I de la CIE-10 unifica en un solo registro los diagnósticos psiquiátricos generales, infantiles, médicos y los trastornos de la personalidad."
+    },
+    {
+      "q": "El Eje II del esquema multiaxial propuesto opcionalmente por la CIE-10 valora:",
+      "options": [
+        "La severidad de los estresores psicosociales familiares",
+        "El grado de discapacitación o el nivel de funcionamiento del sujeto en diversas áreas de su vida",
+        "Las enfermedades somáticas concomitantes codificadas por la OMS",
+        "Los rasgos disfuncionales de la personalidad adulta"
+      ],
+      "correct": 1,
+      "hint": "Mide el funcionamiento sociopersonal y el nivel de discapacidad del paciente.",
+      "explanation": "El Eje II de la CIE-10 se centra en la discapacidad del individuo en áreas como el cuidado personal, el trabajo, la familia y el funcionamiento social."
+    },
+    {
+      "q": "El Eje III de la propuesta multiaxial simplificada de la CIE-10 se reserva para documentar:",
+      "options": [
+        "Las patologías médicas concomitantes del paciente",
+        "Los factores ambientales, sociales y del estilo de vida (códigos Z de la CIE-10)",
+        "Los trastornos del desarrollo que debutan en la primera infancia",
+        "Las medidas dimensionales de la gravedad clínica de la psicosis"
+      ],
+      "correct": 1,
+      "hint": "Contiene los códigos que registran estresores psicosociales y problemas del entorno.",
+      "explanation": "El Eje III de la CIE-10 registra los factores ambientales y del estilo de vida que guardan relación con el trastorno mental, empleando para ello los códigos Z."
+    },
+    {
+      "q": "La entrevista diagnóstica CIDI (Composite International Diagnostic Interview) fue diseñada bajo el auspicio de la OMS como una herramienta:",
+      "options": [
+        "Totalmente estructurada, pensada para ser administrada por entrevistadores no profesionales en estudios epidemiológicos",
+        "Semiestructurada, orientada a clínicos expertos con un entrenamiento riguroso en neuropsiquiatría",
+        "Exclusiva para diagnosticar los trastornos de la personalidad según el DSM-IV",
+        "Dimensional para medir el nivel de discapacidad física y neurológica"
+      ],
+      "correct": 0,
+      "hint": "Es altamente estructurada y adecuada para investigadores laicos en encuestas poblacionales.",
+      "explanation": "La CIDI es una entrevista totalmente estructurada y estandarizada que pueden administrar entrevistadores no clínicos en estudios epidemiológicos a gran escala."
+    },
+    {
+      "q": "El instrumento de evaluación SCAN (Schedules for Clinical Assessment in Neuropsychiatry) de la CIE-10 se caracteriza por ser un sistema:",
+      "options": [
+        "Diseñado para uso exclusivo de investigadores no clínicos en encuestas de opinión pública",
+        "Semiestructurado para la evaluación clínica neuropsiquiátrica, dirigido a profesionales de la salud mental entrenados",
+        "Específico y exclusivo para los trastornos de la personalidad y conductas suicidas infantiles",
+        "Destinado a calcular de forma matemática el factor p jerárquico"
+      ],
+      "correct": 1,
+      "hint": "Requiere juicio clínico y entrenamiento especializado; sus siglas indican evaluación en neuropsiquiatría.",
+      "explanation": "El SCAN es una batería de cuestionarios clínicos semiestructurados desarrollados para que profesionales de la salud mental adecuadamente entrenados realicen diagnósticos clínicos."
+    },
+    {
+      "q": "El IPDE (International Personality Disorder Examination) es una entrevista semiestructurada cuyo diseño específico permite diagnosticar:",
+      "options": [
+        "Trastornos afectivos y del neurodesarrollo en la infancia",
+        "Los trastornos de la personalidad de acuerdo con los criterios tanto de la CIE-10 como del DSM",
+        "La discapacidad psicosocial del sujeto mediante 6 dominios de funcionamiento",
+        "La presencia de conductas adictivas por uso de videojuegos"
+      ],
+      "correct": 1,
+      "hint": "Evalúa de forma operativa la patología de la personalidad en ambos sistemas internacionales de clasificación.",
+      "explanation": "El IPDE es la entrevista clínica semiestructurada de referencia internacional diseñada específicamente para evaluar de forma operativa y diagnosticar la patología de la personalidad según el DSM y la CIE."
+    },
+    {
+      "q": "En la CIE-11, aprobada en 2019 y en vigor desde enero de 2022, los trastornos mentales, del comportamiento o del neurodesarrollo se ubican en el:",
+      "options": [
+        "Capítulo V (Letra F)",
+        "Capítulo 06",
+        "Capítulo 17",
+        "Capítulo 24"
+      ],
+      "correct": 1,
+      "hint": "Abandona las letras clásicas en favor de capítulos numerados con dígitos de dos cifras.",
+      "explanation": "En la CIE-11, los trastornos mentales pasaron de llamarse Capítulo V (F) a estar integrados de forma oficial en el Capítulo 06."
+    },
+    {
+      "q": "La CIE-11 introdujo el concepto de Trastorno por Estrés Postraumático (TEPT) Complejo. Esta entidad diagnóstica añade a la tríada clásica del TEPT:",
+      "options": [
+        "Tres dimensiones graves de alteración de la autorregulación: afectiva, autoimagen devaluada y dificultades interpersonales",
+        "Alucinaciones auditivas persistentes e ideación delirante de persecución crónica",
+        "Una escala de discapacidad laboral obligatoria evaluada por el cuestionario SCAN",
+        "Criterios de exclusión jerárquica para cualquier trastorno de ansiedad concomitante"
+      ],
+      "correct": 0,
+      "hint": "Implica alteraciones graves en el funcionamiento personal secundarias a traumas crónicos o repetidos.",
+      "explanation": "El TEPT Complejo en la CIE-11 añade al TEPT clásico alteraciones graves y estables de la autorregulación: desregulación afectiva, autoconcepto persistentemente devaluado (de inutilidad o culpa) y disfunción relacional."
+    },
+    {
+      "q": "A diferencia del DSM-5-TR, el Trastorno por Duelo Prolongado en la CIE-11 establece un criterio temporal de persistencia de los síntomas tras la pérdida de:",
+      "options": [
+        "Al menos 3 meses en todas las edades de forma homogénea",
+        "Al menos 6 meses tanto para adultos como para niños y adolescentes",
+        "Al menos 12 meses en adultos y de 6 meses en población infantil",
+        "Al menos 24 meses en adultos y de 12 meses en adolescentes"
+      ],
+      "correct": 1,
+      "hint": "La CIE-11 unifica el plazo en un periodo más corto que los 12 meses exigidos por el DSM-5-TR en adultos.",
+      "explanation": "La CIE-11 establece el criterio temporal del Duelo Prolongado en al menos 6 meses tras la pérdida para todas las edades, mientras que el DSM-5-TR exige 12 meses en adultos."
+    },
+    {
+      "q": "En la CIE-11, el Trastorno por Uso de Videojuegos (Gaming Disorder) ha sido formalmente incorporado dentro de la categoría de:",
+      "options": [
+        "Trastornos del Neurodesarrollo y la atención infantil",
+        "Trastornos por comportamientos adictivos (junto al juego patológico)",
+        "Trastornos del control de los impulsos de tipo compulsivo",
+        "Otras condiciones que no representan trastornos de salud mental"
+      ],
+      "correct": 1,
+      "hint": "Se clasifica dentro del espectro de las adicciones no químicas o comportamentales.",
+      "explanation": "El Trastorno por Uso de Videojuegos se codifica en la CIE-11 bajo la sección de 'Trastornos por comportamientos adictivos', reconociendo su perfil de adicción conductual."
+    },
+    {
+      "q": "El revolucionario modelo de la CIE-11 para clasificar los Trastornos de la Personalidad consiste en:",
+      "options": [
+        "Añadir tres nuevos ejes multiaxiales exclusivos para la personalidad histriónica",
+        "Eliminar todas las categorías tradicionales (límite, esquizoide, etc.), sustituyéndolas por un diagnóstico único graduado por gravedad y rasgos",
+        "Exigir el cumplimiento de criterios monotéticos rígidos para cada una de las 10 categorías clásicas",
+        "Trasladar todos los trastornos de la personalidad al Capítulo 17 de Salud Sexual"
+      ],
+      "correct": 1,
+      "hint": "Abandona el enfoque categorial clásico de la personalidad en favor de un enfoque dimensional integrado.",
+      "explanation": "La CIE-11 suprimió las categorías clásicas de personalidad. Ahora se diagnostica 'Trastorno de la Personalidad' especificando su severidad (Leve/Moderado/Grave) y describiéndolo mediante 5 rasgos dimensionales."
+    },
+    {
+      "q": "La gravedad del Trastorno de la Personalidad en el modelo dimensional de la CIE-11 se gradúa de forma obligatoria en tres niveles diagnósticos, que son:",
+      "options": [
+        "Leve, Moderado y Grave",
+        "Subclínico, Clínico y Crónico",
+        "Evitativo, Antisocial y Límite",
+        "Tipo A, Tipo B y Tipo C"
+      ],
+      "correct": 0,
+      "hint": "Son las categorías de severidad global del trastorno.",
+      "explanation": "El clínico debe determinar la severidad del trastorno de personalidad clasificándolo en Leve, Moderado o Grave, según la afectación del funcionamiento del self y de las relaciones sociales."
+    },
+    {
+      "q": "El modelo de personalidad de la CIE-11 permite describir el perfil del paciente puntuando en 5 dominios de rasgos de personalidad, que son Afecto Negativo, Desapego, Disocialidad, Desinhibición y:",
+      "options": [
+        "Anancastia",
+        "Psicoticismocidad",
+        "Somatización",
+        "Evitación"
+      ],
+      "correct": 0,
+      "hint": "Se refiere a la rigidez, perfeccionismo y control conductual, equivalente a los rasgos obsesivo-compulsivos.",
+      "explanation": "Los 5 dominios de rasgos de la CIE-11 son: Afecto Negativo, Desapego, Disocialidad (Antagonismo), Desinhibición y Anancastia (obsesividad/perfeccionamiento)."
+    },
+    {
+      "q": "A pesar de haber eliminado las categorías clásicas de personalidad, la CIE-11 permite opcionalmente añadir un especificador de patrón de personalidad para:",
+      "options": [
+        "El patrón esquizoide",
+        "El patrón obsesivo-anancástico",
+        "El patrón límite (borderline)",
+        "El patrón histriónico-disocial"
+      ],
+      "correct": 2,
+      "hint": "Se mantuvo este especificador por su alta utilidad clínica y relevancia en salud mental.",
+      "explanation": "Para facilitar la transición y responder a la demanda clínica, la CIE-11 conservó el especificador de 'patrón de personalidad límite' junto al diagnóstico general dimensional."
+    },
+    {
+      "q": "En la CIE-11, los trastornos del sueño-vigilia sufrieron una reubicación nosológica destacada al ser trasladados de salud mental hacia el:",
+      "options": [
+        "Capítulo 06 de trastornos neurológicos",
+        "Capítulo 07 (Trastornos del sueño-vigilia)",
+        "Capítulo 17 de Salud Sexual y reproductiva",
+        "Capítulo 24 de respuestas transitorias normales"
+      ],
+      "correct": 1,
+      "hint": "Fueron independizados en un capítulo propio en el manual general de enfermedades físicas.",
+      "explanation": "La CIE-11 independizó la patología del sueño de la psiquiatría, trasladándola al Capítulo 07 específico para trastornos del sueño-vigilia."
+    },
+    {
+      "q": "Con el fin de evitar la patologización psiquiátrica de la sexualidad y el género, la CIE-11 trasladó las disfunciones sexuales y la incongruencia de género al:",
+      "options": [
+        "Capítulo 06 junto a la discapacidad intelectual",
+        "Capítulo 07 de trastornos del sueño asociados",
+        "Capítulo 17 (Condiciones relacionadas con la Salud Sexual)",
+        "Capítulo 24 de factores ambientales condicionantes"
+      ],
+      "correct": 2,
+      "hint": "Esta medida persigue desestigmatizar y normalizar estas condiciones de salud sexual.",
+      "explanation": "La CIE-11 trasladó la incongruencia de género y las disfunciones sexuales al nuevo Capítulo 17 de 'Condiciones relacionadas con la salud sexual', eliminándolas de los trastornos mentales."
+    },
+    {
+      "q": "En la CIE-11, el Trastorno por Estrés Agudo (Reacción al Estrés Agudo) sufrió un cambio nosológico radical consistente en:",
+      "options": [
+        "Considerarse un trastorno psicótico del neurodesarrollo en el Capítulo 06",
+        "Dejar de clasificarse como un trastorno mental, pasando al Capítulo 24 como una respuesta transitoria normal ante estresores graves",
+        "Fusionarse formalmente con el Trastorno de Pánico en el Capítulo 07",
+        "Ser un especificador obligatorio de todos los trastornos de la personalidad"
+      ],
+      "correct": 1,
+      "hint": "Ya no se considera una patología psiquiátrica formal, sino una reacción protectora y adaptativa inicial lógica ante un evento catastrófico.",
+      "explanation": "En la CIE-11, la reacción a estrés agudo deja de ser un trastorno mental oficial (Capítulo 06) y pasa al Capítulo 24 como una respuesta fisiológica y psicológica normal y temporal ante un evento traumático grave."
+    },
+    {
+      "q": "Un grupo de trastornos mentales que figura de forma independiente y específica en la CIE-11 pero que en el DSM-5 se clasifica únicamente como un especificador clínico es el de:",
+      "options": [
+        "Los trastornos asociados al embarazo, parto o puerperio",
+        "La catatonia primaria orgánica",
+        "Los trastornos destructivos de la conducta infantil",
+        "Los trastornos facticios autoinfligidos"
+      ],
+      "correct": 0,
+      "hint": "El DSM-5 registra estas manifestaciones afectivas solo con el especificador de inicio en el periparto.",
+      "explanation": "La CIE-11 cuenta con un grupo propio e independiente para los trastornos mentales asociados al embarazo, parto o puerperio, a diferencia del DSM-5 que los clasifica como especificadores dentro del estado de ánimo."
+    },
+    {
+      "q": "Con respecto a la catatonia, ¿cómo se clasifica en la CIE-11 en comparación con el DSM-5?",
+      "options": [
+        "Se clasifica como un grupo independiente, superando su subordinación tradicional a la esquizofrenia",
+        "Se considera exclusivamente una disfunción sexual del Capítulo 17",
+        "Se mantiene subordinada obligatoriamente a los trastornos delirantes del neurodesarrollo",
+        "Se eliminó completamente por carecer de utilidad semiológica descriptiva"
+      ],
+      "correct": 0,
+      "hint": "Ha sido elevada a la categoría de grupo nosológico independiente.",
+      "explanation": "La CIE-11 categoriza la catatonia como un grupo independiente, superando la visión psiquiátrica clásica de considerarla un subtipo o síntoma subordinado de la esquizofrenia."
+    },
+    {
+      "q": "En la CIE-11, el Trastorno por Comportamiento Sexual Compulsivo se incluye dentro del grupo de:",
+      "options": [
+        "Las parafilias y disfunciones del Capítulo 17",
+        "Los trastornos del control de los impulsos (Capítulo 06)",
+        "Los trastornos por comportamientos adictivos conductuales",
+        "Los trastornos del neurodesarrollo psicosexual infantil"
+      ],
+      "correct": 1,
+      "hint": "Se clasifica junto al juego patológico, la cleptomanía y la piromanía en un grupo independiente de impulsos.",
+      "explanation": "El comportamiento sexual compulsivo se clasifica en la CIE-11 en el capítulo de trastornos mentales dentro del grupo de 'Trastornos del control de los impulsos'."
+    },
+    {
+      "q": "El grupo de los Trastornos Facticios, caracterizado por la simulación o producción deliberada de síntomas, fue clasificado en la CIE-11 como:",
+      "options": [
+        "Un especificador de los trastornos adaptativos graves",
+        "Un grupo independiente de trastornos dentro de la clasificación",
+        "Un código Z del Eje III sobre estilo de vida disfuncional",
+        "Una respuesta normal transitoria del Capítulo 24"
+      ],
+      "correct": 1,
+      "hint": "Fue elevado a la categoría de grupo independiente en la nosología de salud mental.",
+      "explanation": "La CIE-11 eleva los trastornos facticios a la categoría de grupo independiente, diferenciándolos netamente de otras condiciones clínicas."
+    },
+    {
+      "q": "En el contexto de la CIE-10, los códigos alfanuméricos que comienzan por la letra 'Z' (como Z56 sobre problemas de empleo) representan:",
+      "options": [
+        "Los trastornos psicóticos de inicio tardío",
+        "Los factores ambientales, sociales y del estilo de vida registrados en el Eje III",
+        "Los trastornos de personalidad específicos del neurodesarrollo",
+        "Las medidas dimensionales de discapacidad evaluadas por la WHODAS"
+      ],
+      "correct": 1,
+      "hint": "Registran circunstancias y estresores ambientales, no trastornos propiamente dichos.",
+      "explanation": "Los códigos Z de la CIE-10 codifican factores influyentes en el estado de salud y contacto con los servicios sanitarios, utilizándose en el Eje III multiaxial para recoger estresores psicosociales."
+    },
+    {
+      "q": "Para recordar los instrumentos de entrevista de la CIE-10 (SCAN, CIDI, IPDE), se puede usar la regla 'SCI'. En esta fórmula, la 'S' representa el SCAN, que se caracteriza por ser de uso para:",
+      "options": [
+        "Entrevistadores no clínicos en estudios epidemiológicos masivos",
+        "Profesionales clínicos expertos debidamente formados",
+        "Padres y cuidadores de niños con trastornos del neurodesarrollo",
+        "La evaluación cuantitativa rápida en centros de atención primaria"
+      ],
+      "correct": 1,
+      "hint": "Es un instrumento clínico neuropsiquiátrico semiestructurado que exige pericia diagnóstica.",
+      "explanation": "El SCAN (Schedules for Clinical Assessment in Neuropsychiatry) requiere juicio clínico y está destinado a profesionales de la salud mental entrenados para su aplicación."
+    },
+    {
+      "q": "En la mnemotecnia 'SCI', la letra 'C' corresponde al CIDI, cuya característica esencial es ser:",
+      "options": [
+        "Un cuestionario autoadministrado de solo 10 preguntas sobre el dolor",
+        "Una entrevista totalmente estructurada para personal no clínico en estudios epidemiológicos",
+        "Una prueba proyectiva de evaluación de mecanismos de defensa",
+        "Una entrevista para el diagnóstico diferencial del duelo prolongado infantil"
+      ],
+      "correct": 1,
+      "hint": "Su nombre alude a una entrevista compuesta de carácter totalmente cerrado/estructurado.",
+      "explanation": "La CIDI (Composite International Diagnostic Interview) es totalmente estructurada y cerrada, permitiendo que personal laico (no clínico) recopile datos epidemiológicos de salud mental."
+    },
+    {
+      "q": "En la regla mnemotécnica 'SCI' de las entrevistas diagnósticas de la CIE-10, la 'I' hace referencia al IPDE, cuyo foco exclusivo de evaluación es:",
+      "options": [
+        "La discapacidad psicosocial evaluada dimensionalmente",
+        "Los trastornos de la personalidad",
+        "Los trastornos afectivos infantiles del neurodesarrollo",
+        "Las reacciones psicosomáticas ante estresores orgánicos"
+      ],
+      "correct": 1,
+      "hint": "Sus siglas en inglés significan International Personality Disorder Examination.",
+      "explanation": "El IPDE es una entrevista semiestructurada diseñada específicamente para valorar y diagnosticar los trastornos de la personalidad."
+    },
+    {
+      "q": "A diferencia del DSM-5-TR, que mantiene la 'Disforia de Género' dentro de su catálogo psiquiátrico de la Sección II, la CIE-11 despatologiza esta condición al denominarla y ubicarla en:",
+      "options": [
+        "Incongruencia de Género, en el Capítulo 17 (Salud Sexual)",
+        "Disforia de Género Infantil, en el Capítulo 06 (Trastornos del Neurodesarrollo)",
+        "Respuesta Transitoria de Género, en el Capítulo 24 (Respuestas Normales)",
+        "Trastorno del Rol de Género, en el Capítulo 07 (Trastornos del Sueño)"
+      ],
+      "correct": 0,
+      "hint": "Corta la relación conceptual entre diversidad de género y enfermedad psiquiátrica.",
+      "explanation": "La CIE-11 renombró la disforia de género como 'Incongruencia de género' y la trasladó al Capítulo 17 de Salud Sexual, retirándola de la categoría de trastornos mentales."
+    },
+    {
+      "q": "El dominio de rasgo denominado 'Anancastia' en el modelo dimensional de la personalidad de la CIE-11 se caracteriza fenomenológicamente por:",
+      "options": [
+        "La inestabilidad emocional y la tendencia a la ira explosiva",
+        "La disocialidad, frialdad afectiva y la violación sistemática de normas",
+        "El perfeccionismo rígido, control conductual extremo y la preocupación por el detalle",
+        "La evitación activa del contacto social por miedo a la evaluación negativa"
+      ],
+      "correct": 2,
+      "hint": "Representa el núcleo del comportamiento obsesivo-compulsivo de la personalidad clásica.",
+      "explanation": "La Anancastia es el dominio de rasgos de la CIE-11 caracterizado por la rigidez cognitiva, el perfeccionismo obsesivo, la preocupación por el orden y un estricto autocontrol conductual."
+    },
+    {
+      "q": "El modelo HiTOP (Hierarchical Taxonomy of Psychopathology), propuesto en 2017 por un consorcio internacional de investigadores, se define conceptualmente como:",
+      "options": [
+        "Un sistema categorial monotético basado en la etiología genética mendeliana",
+        "Una taxonomía jerárquica y dimensional de la psicopatología basada en la covariación empírica de los síntomas",
+        "Un protocolo psicoterapéutico unificado para el tratamiento transdiagnóstico",
+        "Un manual estadístico de salud pública dependiente de la Asamblea de la OMS"
+      ],
+      "correct": 1,
+      "hint": "Propone estructurar los trastornos en dimensiones continuas a partir de la correlación natural de sus manifestaciones.",
+      "explanation": "HiTOP es un modelo taxonómico jerárquico y dimensional que organiza los síntomas clínicos en base a sus covariaciones matemáticas y correlaciones naturales en grandes muestras."
+    },
+    {
+      "q": "A diferencia de las clasificaciones categoriales tradicionales, el modelo HiTOP busca eliminar la comorbilidad artificial asumiendo que:",
+      "options": [
+        "Los trastornos coocurren debido a que comparten dimensiones de vulnerabilidad comunes",
+        "Los pacientes fingen deliberadamente padecer múltiples patologías simultáneas",
+        "Los clínicos aplican de forma errónea las exclusiones del principio de jerarquía",
+        "Solo existe un trastorno mental único de etiología puramente infecciosa"
+      ],
+      "correct": 0,
+      "hint": "La coocurrencia de trastornos se explica porque estos se derivan de las mismas dimensiones subyacentes.",
+      "explanation": "HiTOP sostiene que la alta comorbilidad clínica no es un error de diagnóstico, sino el reflejo de que diferentes síndromes comparten factores de vulnerabilidad o dimensiones comunes."
+    },
+    {
+      "q": "En la organización jerárquica del modelo HiTOP, el nivel más elemental y atómico de la conducta psicopatológica está constituido por:",
+      "options": [
+        "Los síndromes clínicos tradicionales",
+        "Los espectros transdiagnósticos generales",
+        "Los signos y síntomas individuales",
+        "Los superespectros o factores generales"
+      ],
+      "correct": 2,
+      "hint": "Representan los datos clínicos básicos y observables de primer orden.",
+      "explanation": "El nivel inferior y más específico de la estructura jerárquica de HiTOP está compuesto por los signos y síntomas clínicos individuales."
+    },
+    {
+      "q": "En la jerarquía de HiTOP, las agrupaciones estables de síntomas (como la anhedonia o la evitación social) constituyen el nivel de:",
+      "options": [
+        "Componentes y rasgos",
+        "Síndromes clínicos",
+        "Subfactores dimensionales",
+        "Espectros de orden superior"
+      ],
+      "correct": 0,
+      "hint": "Son rasgos clínicamente consistentes pero situados por debajo del síndrome completo.",
+      "explanation": "El segundo nivel de inclusividad en HiTOP corresponde a los componentes y rasgos de personalidad o de síntoma, que agrupan manifestaciones estrechamente correlacionadas."
+    },
+    {
+      "q": "Dentro del espectro Internalizante en el modelo HiTOP, ¿cuáles son los dos subfactores o dimensiones intermedias identificadas empíricamente?",
+      "options": [
+        "Miedo (Fear) y Distrés (Distress)",
+        "Disociación y Somatización afectiva",
+        "Desinhibición y Antagonismo hostil",
+        "Obsesividad y Neuroticismo primario"
+      ],
+      "correct": 0,
+      "hint": "Uno responde a trastornos de ansiedad aguda (fobias, pánico) y el otro a malestar crónico (depresión, distimia).",
+      "explanation": "HiTOP subdivide el espectro internalizante en dos subfactores: Miedo (trastornos de pánico, fobias) y Distrés o malestar (trastorno depresivo mayor, ansiedad generalizada)."
+    },
+    {
+      "q": "El modelo HiTOP unifica los síndromes clínicos tradicionales en 6 grandes dimensiones mayores de la psicopatología denominadas:",
+      "options": [
+        "Ejes de evaluación psicométrica general",
+        "Espectros (como Internalizante, Somatoformo y Exteriorizante)",
+        "Dominios de circuitos de valencia positiva y cognitiva",
+        "Factores Z de vulnerabilidad ambiental o de estilo"
+      ],
+      "correct": 1,
+      "hint": "Son dimensiones de orden superior que integran patologías clínicamente afines.",
+      "explanation": "HiTOP define 6 espectros mayores: Internalizante, Exteriorizante Desinhibido, Exteriorizante Antagonista, Trastorno del Pensamiento/Psicótico, Desapego y Somatoformo."
+    },
+    {
+      "q": "El espectro Exteriorizante en el modelo HiTOP se caracteriza por dividirse de forma empírica en dos grandes espectros independientes denominados:",
+      "options": [
+        "Exteriorizante Desinhibido (impulsivo) y Exteriorizante Antagonista (antisocial/hostil)",
+        "Exteriorizante Afectivo (maníaco) y Exteriorizante Cognitivo (psicótico)",
+        "Exteriorizante Infantil (conducta) y Exteriorizante Adulto (personalidad)",
+        "Exteriorizante Social y Exteriorizante Somatoformo"
+      ],
+      "correct": 0,
+      "hint": "Una rama se asocia a la impulsividad y abuso de sustancias, y la otra a la agresión e insensibilidad interpersonal.",
+      "explanation": "El factor exteriorizante se bifurca en el espectro Exteriorizante Desinhibido (TDAH, abuso de sustancias) y el Exteriorizante Antagonista (trastorno antisocial, conducta oposicionista)."
+    },
+    {
+      "q": "En la cúspide jerárquica del modelo HiTOP se sitúa el nivel de los Superespectros, el cual representa la máxima vulnerabilidad transdiagnóstica general, conocida como:",
+      "options": [
+        "El factor general de psicopatología o factor 'p'",
+        "El espectro internalizante primario absoluto",
+        "La escala dimensional de disfunción ejecutiva",
+        "El coeficiente de comorbilidad residual"
+      ],
+      "correct": 0,
+      "hint": "Es la dimensión que resume la vulnerabilidad común a desarrollar cualquier tipo de trastorno mental.",
+      "explanation": "La cima jerárquica de HiTOP está ocupada por los superespectros, destacando el factor general de psicopatología (factor 'p'), indicador de vulnerabilidad transdiagnóstica general."
+    },
+    {
+      "q": "El proyecto RDoC (Research Domain Criteria) fue iniciado y desarrollado bajo el amparo de la institución estadounidense denominada:",
+      "options": [
+        "Asociación Psiquiátrica Americana (APA)",
+        "Instituto Nacional de Salud Mental (NIMH)",
+        "Organización Panamericana de la Salud (OPS)",
+        "Consorcio Internacional HiTOP"
+      ],
+      "correct": 1,
+      "hint": "Es el mayor organismo federal de investigación en salud mental de los Estados Unidos.",
+      "explanation": "El marco RDoC fue creado por el NIMH (National Institute of Mental Health) como alternativa de investigación a los manuales categoriales tradicionales."
+    },
+    {
+      "q": "La premisa fundamental de la que parte el proyecto RDoC para reformular la clasificación psicopatológica es que los trastornos mentales son:",
+      "options": [
+        "Conflictos inconscientes reprimidos que deben evaluarse de forma narrativa",
+        "Disfunciones de circuitos cerebrales específicos que deben medirse dimensionalmente",
+        "Constructos artificiales sin ninguna correlación biológica o conductual real",
+        "Respuestas normales del comportamiento que dependen de la etiqueta social"
+      ],
+      "correct": 1,
+      "hint": "Adopta los principios de la medicina de precisión y la neurociencia cognitiva.",
+      "explanation": "RDoC asume que los trastornos mentales son patologías de circuitos cerebrales específicos evaluables de forma continua (desde el funcionamiento normal al patológico)."
+    },
+    {
+      "q": "La estructura del marco RDoC se organiza a través de una matriz bidimensional constituida por:",
+      "options": [
+        "Cinco ejes diagnósticos cruzados con tres secciones clínicas",
+        "Dominios de Funcionamiento (filas) y Unidades de Análisis (columnas)",
+        "Niveles jerárquicos de inclusión y coeficientes de covariación empírica",
+        "Trastornos de la personalidad cruzados con especificadores de gravedad"
+      ],
+      "correct": 1,
+      "hint": "Relaciona los sistemas de comportamiento fundamentales con las herramientas biológicas de medición.",
+      "explanation": "La matriz RDoC cruza constructos conductuales y neurobiológicos estructurados en Dominios de Funcionamiento con diferentes Unidades de Análisis biológicas e instrumentales."
+    },
+    {
+      "q": "Actualmente, la matriz RDoC de investigación en salud mental contempla un total de:",
+      "options": [
+        "3 dominios de funcionamiento",
+        "5 dominios de funcionamiento",
+        "6 dominios de funcionamiento",
+        "10 dominios de funcionamiento"
+      ],
+      "correct": 2,
+      "hint": "Originalmente eran 5, pero se añadió posteriormente un sexto dominio motor.",
+      "explanation": "El marco RDoC consta de 6 dominios: Valencia Negativa, Valencia Positiva, Sistemas Cognitivos, Procesos Sociales, Activación/Regulación, y Sistemas Sensorimotores (añadido más recientemente)."
+    },
+    {
+      "q": "En la matriz RDoC, ¿cuál de las siguientes opciones constituye un Dominio de Funcionamiento oficial?",
+      "options": [
+        "Sistemas de Valencia Negativa",
+        "Trastornos de la Personalidad Desapegada",
+        "Mecanismos de Defensa de Segundo Orden",
+        "Estresores Crónicos del Entorno Físico"
+      ],
+      "correct": 0,
+      "hint": "Incluye procesos básicos como el miedo condicionado, la ansiedad y la respuesta ante la pérdida.",
+      "explanation": "El dominio de 'Sistemas de Valencia Negativa' es fundamental en RDoC y evalúa procesos como el miedo, la ansiedad y el afecto de pérdida."
+    },
+    {
+      "q": "Las Unidades de Análisis de la matriz RDoC hacen referencia a:",
+      "options": [
+        "Las escalas de gravedad clínica empleadas en la Sección III del DSM-5",
+        "Las herramientas científicas y metodológicas utilizadas para medir cada dominio (ej. genes, circuitos, conducta)",
+        "Los diferentes tipos de entrevistas diagnósticas como SCAN, CIDI o IPDE",
+        "Los niveles jerárquicos que agrupan a los síntomas y componentes clínicos"
+      ],
+      "correct": 1,
+      "hint": "Abarcan desde el nivel micro (molecular, celular) hasta el macro (conducta, autoinforme).",
+      "explanation": "Las Unidades de Análisis son los niveles experimentales de medición: Genes, Moléculas, Células, Circuitos, Fisiología, Conducta y Autoinformes."
+    },
+    {
+      "q": "Con respecto a la aplicación práctica del sistema RDoC, es fundamental destacar que este marco:",
+      "options": [
+        "Está diseñado exclusivamente para la investigación básica y no para el diagnóstico clínico diario",
+        "Sustituyó oficialmente a la CIE-11 en la práctica de salud pública de EE. UU.",
+        "Se utiliza de forma prioritaria para la toma de decisiones asistenciales y peritajes forenses",
+        "Contiene una lista exhaustiva de códigos alfanuméricos de facturación sanitaria"
+      ],
+      "correct": 0,
+      "hint": "Es un modelo traslacional de investigación, carente de valor diagnóstico o legal en la actualidad.",
+      "explanation": "RDoC es una matriz de investigación neurocientífica impulsada por el NIMH; no pretende usarse en la práctica clínica diaria ni tiene códigos de diagnóstico o tratamiento."
+    },
+    {
+      "q": "La perspectiva del Transdiagnóstico en psicología clínica y psicopatología se define como un enfoque que propone estudiar los trastornos a partir de:",
+      "options": [
+        "Las diferencias biológicas absolutas que separan a cada categoría diagnóstica",
+        "Los procesos de vulnerabilidad y mantenimiento disfuncionales comunes a múltiples trastornos",
+        "Los factores de exclusión jerárquica del DSM-5-TR",
+        "Las clasificaciones numéricas de parentesco filético"
+      ],
+      "correct": 1,
+      "hint": "Busca los mecanismos cognitivos o afectivos comunes que subyacen a distintas etiquetas clínicas.",
+      "explanation": "El transdiagnóstico analiza los procesos comunes (cognitivos, emocionales y conductuales) de vulnerabilidad y mantenimiento que subyacen y explican diferentes trastornos."
+    },
+    {
+      "q": "En el enfoque transdiagnóstico, representan ejemplos clásicos de procesos comunes de mantenimiento:",
+      "options": [
+        "La intolerancia a la incertidumbre, la rumiación cognitiva y la evitación experiencial",
+        "Las alucinaciones auditivas, la afasia motora y los temblores parkinsonianos",
+        "Los códigos Z del Eje III y las escalas de discapacidad del periparto",
+        "Los genes del receptor de dopamina D2 y los circuitos de la amígdala"
+      ],
+      "correct": 0,
+      "hint": "Son patrones de procesamiento y afrontamiento desadaptativos presentes en la ansiedad, depresión y TFE.",
+      "explanation": "Procesos como la intolerancia a la incertidumbre, rumiación, evitación experiencial y desregulación emocional son variables transdiagnósticas transversales a muchas patologías."
+    },
+    {
+      "q": "Una de las aplicaciones terapéuticas más destacadas de la perspectiva transdiagnóstica es el Protocolo Unificado desarrollado por:",
+      "options": [
+        "Robert Spitzer para la neurosis",
+        "David H. Barlow para los trastornos emocionales",
+        "Theodore Millon para la personalidad",
+        "Harvey A. Skinner para las adicciones"
+      ],
+      "correct": 1,
+      "hint": "Es un tratamiento unificado diseñado para intervenir sobre los procesos de desregulación emocional comunes a la ansiedad y depresión.",
+      "explanation": "El Protocolo Unificado de David Barlow es la intervención transdiagnóstica de referencia, orientada a tratar de forma conjunta trastornos emocionales (ansiedad, estado de ánimo)."
+    },
+    {
+      "q": "En el modelo HiTOP, el espectro que engloba de forma empírica los trastornos de ansiedad, depresivos y somatomorfos se clasifica como:",
+      "options": [
+        "Espectro Internalizante",
+        "Espectro Exteriorizante Antagonista",
+        "Espectro de Trastornos del Pensamiento",
+        "Espectro de Desapego Interpersonal"
+      ],
+      "correct": 0,
+      "hint": "Se asocia al malestar emocional volcado hacia el propio sujeto.",
+      "explanation": "El espectro Internalizante agrupa en la taxonomía HiTOP a las patologías caracterizadas por el distrés emocional y el afecto negativo (ansiedad, depresión)."
+    },
+    {
+      "q": "El factor general 'p' de psicopatología representa estadísticamente:",
+      "options": [
+        "La gravedad del trastorno por dolor crónico orgánico",
+        "Un factor común subyacente que refleja el riesgo general de desarrollar cualquier trastorno mental",
+        "El porcentaje de error de medida en la entrevista IPDE",
+        "El número de síntomas atípicos del Trastorno por Duelo Prolongado"
+      ],
+      "correct": 1,
+      "hint": "Es análogo al factor 'g' de inteligencia general.",
+      "explanation": "El factor 'p' es una dimensión transdiagnóstica de orden superior que representa la propensión genérica de un sujeto a padecer psicopatología, explicando la covariación de todos los espectros."
+    },
+    {
+      "q": "Al contrastar los modelos clasificatorios, ¿cuál de los siguientes marcos nosológicos está orientado al ámbito clínico y de gestión sanitaria bajo una lógica predominantemente categorial?",
+      "options": [
+        "HiTOP",
+        "RDoC",
+        "DSM-5-TR",
+        "Transdiagnóstico procesual"
+      ],
+      "correct": 2,
+      "hint": "Es el manual de la APA utilizado de forma universal en la clínica y seguros médicos.",
+      "explanation": "El DSM-5-TR es un sistema de uso clínico y administrativo que mantiene una lógica de diagnóstico categorial (politético) para responder a las necesidades de la práctica asistencial."
+    },
+    {
+      "q": "El marco RDoC se diferencia de HiTOP principalmente en que RDoC:",
+      "options": [
+        "Se basa en el análisis correlacional de los síntomas subjetivos de los pacientes",
+        "Parte de unidades de análisis neurobiológicas y conductuales medibles (bottom-up)",
+        "Tiene como finalidad prioritaria facilitar la facturación de seguros médicos",
+        "Utiliza la entrevista semiestructurada IPDE de personalidad"
+      ],
+      "correct": 1,
+      "hint": "RDoC es de naturaleza biológica y descendente/ascendente desde los circuitos, mientras que HiTOP analiza la estructura estadística de la sintomatología clínica.",
+      "explanation": "RDoC construye su clasificación desde las bases biológicas y moleculares (enfoque neurocientífico), a diferencia de HiTOP, que se basa en la fenomenología correlacional de los síntomas."
+    },
+    {
+      "q": "En el transdiagnóstico, el proceso caracterizado por la focalización repetitiva y pasiva del pensamiento en las causas y consecuencias del malestar emocional se denomina:",
+      "options": [
+        "Rumiación cognitiva",
+        "Evitación experiencial",
+        "Intolerancia a la incertidumbre",
+        "Perfeccionismo desadaptativo"
+      ],
+      "correct": 0,
+      "hint": "Es un proceso mantenedor clave en la depresión y la ansiedad generalizada.",
+      "explanation": "La rumiación cognitiva es un proceso transdiagnóstico caracterizado por dar vueltas obsesivas y repetitivas a las causas y consecuencias del malestar sin orientarse a la solución de problemas."
+    },
+    {
+      "q": "Al analizar la comorbilidad clínica desde la perspectiva del transdiagnóstico, esta se entiende como:",
+      "options": [
+        "Un error metodológico de los manuales del DSM que carece de correlato clínico",
+        "La coincidencia de trastornos debido a la presencia de procesos causales y mantenedores comunes",
+        "Un intento voluntario del paciente de simular múltiples patologías físicas",
+        "La aplicación del principio de jerarquía de Jaspers en el Eje II"
+      ],
+      "correct": 1,
+      "hint": "Los trastornos coocurren porque comparten los mismos mecanismos psicológicos mantenedores.",
+      "explanation": "El transdiagnóstico defiende que la comorbilidad ocurre de forma natural porque los trastornos comparten procesos de vulnerabilidad psicológica y de mantenimiento (ej. evitación de emociones)."
+    },
+    {
+      "q": "En el modelo HiTOP, el espectro caracterizado por rasgos de insensibilidad, agresividad, manipulación y comportamientos antisociales se denomina:",
+      "options": [
+        "Espectro Exteriorizante Antagonista",
+        "Espectro Exteriorizante Desinhibido",
+        "Espectro de Desapego Social",
+        "Espectro Psicótico del Pensamiento"
+      ],
+      "correct": 0,
+      "hint": "Se asocia a rasgos de oposición y conflicto interpersonal directo.",
+      "explanation": "El espectro Exteriorizante Antagonista engloba la patología caracterizada por la hostilidad, agresión y vulneración relacional (trastornos de conducta y personalidad antisocial)."
+    },
+    {
+      "q": "El modelo HiTOP y el proyecto RDoC comparten como punto en común:",
+      "options": [
+        "La defensa del diagnóstico categorial clásico del DSM-IV",
+        "El rechazo a los límites artificiales categoriales en favor de enfoques dimensionales",
+        "El uso de la escala EEAG para valorar el funcionamiento global",
+        "Su subordinación directa a los capítulos de salud sexual de la CIE-11"
+      ],
+      "correct": 1,
+      "hint": "Ambos critican la rigidez categorial de los sistemas tradicionales.",
+      "explanation": "Tanto HiTOP como RDoC critican los cortes categoriales artificiales de los manuales tradicionales, proponiendo aproximaciones basadas en dimensiones continuas."
+    },
+    {
+      "q": "En la matriz RDoC, ¿cuál de las siguientes opciones constituye una de sus Unidades de Análisis oficiales?",
+      "options": [
+        "Moléculas",
+        "Espectros",
+        "Ejes multiaxiales",
+        "Subfactores"
+      ],
+      "correct": 0,
+      "hint": "Es un nivel de análisis biológico situado entre los genes y las células.",
+      "explanation": "Las Moléculas constituyen una de las Unidades de Análisis de la matriz RDoC, situadas en los niveles biológicos básicos de investigación."
+    },
+    {
+      "q": "El dominio de RDoC que investiga los ritmos circadianos, la vigilia y los estados de alerta se denomina:",
+      "options": [
+        "Sistemas de Activación y Regulación (Arousal/Regulatory)",
+        "Sistemas Sensorimotores de Acción",
+        "Sistemas Cognitivos del Sueño",
+        "Sistemas de Valencia Positiva"
+      ],
+      "correct": 0,
+      "hint": "Está implicado en la activación orgánica y el ciclo sueño-vigilia.",
+      "explanation": "El dominio de 'Sistemas de Activación y Regulación' (Arousal and Regulatory Systems) analiza los mecanismos neuronales del arousal, ritmos circadianos y homeostasis."
+    },
+    {
+      "q": "El Protocolo Unificado de Barlow para los trastornos emocionales interviene prioritariamente sobre un proceso transdiagnóstico generalizado consistente en:",
+      "options": [
+        "La evitación emocional y la desregulación afectiva",
+        "Las creencias disfuncionales sobre la catatonia",
+        "La simulación intencionada de síntomas facticios",
+        "Los déficits de atención del neurodesarrollo infantil"
+      ],
+      "correct": 0,
+      "hint": "Entrena al paciente en la aceptación de las emociones y el cese de conductas de evitación.",
+      "explanation": "El protocolo unificado interviene sobre la evitación y resistencia a experimentar emociones negativas (desregulación emocional), ayudando a tolerar y procesar adecuadamente el afecto."
+    },
+    {
+      "q": "La principal aportación conceptual del modelo jerárquico-dimensional HiTOP a la clínica psicopatológica es que permite:",
+      "options": [
+        "Mantener los estrictos diagnósticos de exclusión del DSM-III",
+        "Clasificar de forma más precisa a pacientes con cuadros clínicos mixtos o atípicos",
+        "Prescribir tratamientos farmacológicos específicos para cada gen molecular",
+        "Reducir las evaluaciones clínicas a una sola escala de autoinforme"
+      ],
+      "correct": 1,
+      "hint": "Al no forzar límites rígidos, sitúa a los pacientes en sus dimensiones correlativas reales.",
+      "explanation": "HiTOP ofrece flexibilidad para describir clínicamente a pacientes complejos o mixtos (que tradicionalmente recibían múltiples comorbilidades o etiquetas 'no especificadas') a través de sus perfiles dimensionales."
+    }
+  ],
+  "trainer": [],
+  "flashcards": [
+    {
+      "cat": "Definiciones Fundacionales",
+      "q": "¿Qué es la clasificación en psicopatología?",
+      "a": "El procedimiento conceptual para identificar categorías y organizar entidades clínicas en base a atributos comunes."
+    },
+    {
+      "cat": "Definiciones Fundacionales",
+      "q": "¿Qué es el diagnóstico clínico?",
+      "a": "El proceso de asignar un sujeto o manifestaciones clínicas a una categoría clasificatoria preestablecida."
+    },
+    {
+      "cat": "Definiciones Fundacionales",
+      "q": "¿Qué diferencia a la nosología de la nosografía?",
+      "a": "La nosología estudia la etiología, curso y pronóstico de las enfermedades; la nosografía solo describe los síntomas observables."
+    },
+    {
+      "cat": "Definiciones Fundacionales",
+      "q": "¿Qué es la taxonomía?",
+      "a": "El estudio formal de las reglas, principios y procedimientos de la clasificación."
+    },
+    {
+      "cat": "Atributos Clasificatorios",
+      "q": "¿Qué define a una clasificación filética?",
+      "a": "La agrupación de entidades según su origen etiológico común o relaciones de parentesco esencial."
+    },
+    {
+      "cat": "Atributos Clasificatorios",
+      "q": "¿Qué define a una clasificación fenética?",
+      "a": "La agrupación empírica y numérica de entidades basada en la similitud estadística de sus rasgos observables."
+    },
+    {
+      "cat": "Atributos Clasificatorios",
+      "q": "¿Qué es una clasificación monotética?",
+      "a": "Aquella en la que todos los miembros de una categoría deben cumplir de forma obligatoria todos los criterios diagnósticos."
+    },
+    {
+      "cat": "Atributos Clasificatorios",
+      "q": "¿Qué es una clasificación politética?",
+      "a": "Aquella en la que los miembros deben cumplir un número mínimo de criterios de una lista, sin síntomas obligatorios."
+    },
+    {
+      "cat": "Atributos Clasificatorios",
+      "q": "¿Cuál es la consecuencia diagnóstica de un sistema politético?",
+      "a": "Flexibilidad clínica a costa de una elevada heterogeneidad intragrupo entre pacientes con el mismo diagnóstico."
+    },
+    {
+      "cat": "Atributos Clasificatorios",
+      "q": "¿En qué consiste una clasificación prototípica?",
+      "a": "Se organiza en torno a un caso clínico ideal (prototipo), evaluando la pertenencia según el parecido familiar difuso."
+    },
+    {
+      "cat": "Modelos de Clasificación",
+      "q": "¿Cuáles son las ventajas del modelo categorial?",
+      "a": "Alta economía cognitiva, facilita la comunicación profesional y la toma de decisiones clínicas binarias."
+    },
+    {
+      "cat": "Modelos de Clasificación",
+      "q": "¿Cuál es la principal debilidad del modelo categorial?",
+      "a": "Pérdida de información clínica (gravedad matizada) e incremento artificial de la comorbilidad."
+    },
+    {
+      "cat": "Modelos de Clasificación",
+      "q": "¿Qué define al modelo híbrido de Skinner?",
+      "a": "Un proceso secuencial: primero asignación cualitativa (categoría) y segundo valoración cuantitativa (severidad/perfil dimensional)."
+    },
+    {
+      "cat": "Relaciones de Categorías",
+      "q": "¿Cómo organiza un sistema jerárquico o vertical los trastornos?",
+      "a": "En niveles de inclusividad creciente, donde los factores de rango superior (p.ej., Internalizante) engloban a los inferiores (p.ej., Fobia)."
+    },
+    {
+      "cat": "Relaciones de Categorías",
+      "q": "¿En qué consiste una estructura de clasificación multiaxial?",
+      "a": "En evaluar al paciente en varios ejes paralelos e independientes, valorando distintas áreas clínicas y psicosociales."
+    },
+    {
+      "cat": "Relaciones de Categorías",
+      "q": "¿Qué es una estructura circular o circumpleja?",
+      "a": "Ordena categorías de forma contigua en un círculo bidimensional (ejes ortogonales). Lo adyacente se solapa; lo opuesto difiere."
+    },
+    {
+      "cat": "Historia del DSM",
+      "q": "¿Por qué el DSM-I (1952) usó el término 'reacción'?",
+      "a": "Reflejaba la influencia psicodinámica y de Adolf Meyer: los trastornos eran reacciones adaptativas disfuncionales a estresores."
+    },
+    {
+      "cat": "Historia del DSM",
+      "q": "¿Qué caracterizó a la corriente Neo-Kraepeliana de los años 70?",
+      "a": "Defensa del modelo médico, rechazo de explicaciones teóricas no probadas y fomento del diagnóstico empírico-descriptivo."
+    },
+    {
+      "cat": "Historia del DSM",
+      "q": "¿Qué importancia tuvieron los Criterios Feighner (1972)?",
+      "a": "Fueron el primer listado de criterios diagnósticos operativos explícitos (para 14 trastornos) diseñado para homogeneizar muestras de investigación."
+    },
+    {
+      "cat": "Historia del DSM",
+      "q": "¿Qué introdujeron los Criterios Diagnósticos de Investigación (RDC, 1975)?",
+      "a": "Ampliaron la lista a 25 trastornos clínicos, diseñaron la entrevista SADS y fueron la base directa para el DSM-III."
+    },
+    {
+      "cat": "Historia del DSM",
+      "q": "¿Qué supresión destacada de homosexualidad hubo en el DSM-III-TR (1987)?",
+      "a": "Se eliminó definitivamente la categoría diagnóstica de 'Homosexualidad Egodistónica'."
+    },
+    {
+      "cat": "Historia del DSM",
+      "q": "¿Qué novedad temporal introdujo el Eje IV del DSM-III-TR?",
+      "a": "Diferenció entre estresores psicosociales agudos y estresores crónicos o duraderos."
+    },
+    {
+      "cat": "Evaluación Multiaxial",
+      "q": "¿Qué se codificaba en el Eje II del DSM-IV?",
+      "a": "Los trastornos de la personalidad, el retraso mental y los mecanismos de defensa del sujeto."
+    },
+    {
+      "cat": "Estructura del DSM-5",
+      "q": "¿Qué cambio estructural mayor aportó el DSM-5 respecto a los ejes?",
+      "a": "Eliminó la estructura multiaxial, fusionando los antiguos Ejes I, II y III en un único registro diagnóstico."
+    },
+    {
+      "cat": "Estructura del DSM-5",
+      "q": "¿Por qué instrumento se sustituyó la escala EEAG (GAF) en el DSM-5?",
+      "a": "Por el cuestionario de discapacidad WHODAS 2.0 de la OMS (evalúa de forma dimensional e independiente 6 dominios)."
+    },
+    {
+      "cat": "Estructura del DSM-5",
+      "q": "¿Cuáles son las tres secciones del DSM-5?",
+      "a": "Sección I (conceptos básicos), Sección II (criterios diagnósticos y códigos) y Sección III (medidas emergentes)."
+    },
+    {
+      "cat": "Estructura del DSM-5",
+      "q": "¿Cómo se organizan los trastornos en la Sección II del DSM-5?",
+      "a": "En base a una estructura evolutiva o del ciclo vital (comenzando en infancia y terminando en vejez)."
+    },
+    {
+      "cat": "Estructura del DSM-5",
+      "q": "¿Qué ocurrió con los trastornos infantiles del DSM-IV en el DSM-5?",
+      "a": "Se suprimió su categoría general. Los de base neurológica forman los Trastornos del Neurodesarrollo y los demás se integraron en capítulos de adultos."
+    },
+    {
+      "cat": "DSM-5-TR",
+      "q": "¿Cuál es la principal novedad diagnóstica del DSM-5-TR (2022)?",
+      "a": "El Trastorno por Duelo Prolongado (12 meses de duración en adultos, 6 meses en niños)."
+    },
+    {
+      "cat": "DSM-5-TR",
+      "q": "¿Qué códigos de comportamiento independiente introdujo el DSM-5-TR?",
+      "a": "Códigos para registrar la conducta suicida y las autolesiones no suicidas de forma independiente."
+    },
+    {
+      "cat": "Historia de la CIE",
+      "q": "¿Qué hito histórico supuso la CIE-6 (1948) para la salud mental?",
+      "a": "Fue la primera edición en incluir un capítulo específico (Capítulo V) de trastornos mentales."
+    },
+    {
+      "cat": "Evaluación CIE-10",
+      "q": "¿Qué evalúa cada uno de los 3 ejes opcionales de la CIE-10?",
+      "a": "Eje I: Diagnósticos clínicos unificados. Eje II: Nivel de funcionamiento/discapacidad. Eje III: Factores psicosociales (códigos Z)."
+    },
+    {
+      "cat": "Entrevistas CIE-10",
+      "q": "¿Qué significan las siglas de la fórmula 'S-C-I' de las entrevistas CIE-10?",
+      "a": "SCAN (para clínicos expertos en neuropsiquiatría), CIDI (para no clínicos en epidemiología), e IPDE (para evaluar personalidad)."
+    },
+    {
+      "cat": "CIE-11",
+      "q": "¿Qué capítulo de la CIE-11 aloja los trastornos mentales?",
+      "a": "Se ubican en el Capítulo 06 (Trastornos mentales, del comportamiento o del neurodesarrollo)."
+    },
+    {
+      "cat": "CIE-11",
+      "q": "¿Qué tres dimensiones de autorregulación añade el TEPT Complejo de la CIE-11?",
+      "a": "Desregulación afectiva, autoimagen persistentemente devaluada y graves dificultades interpersonales."
+    },
+    {
+      "cat": "CIE-11 vs DSM-5-TR",
+      "q": "¿Qué diferencia temporal hay en el Trastorno por Duelo Prolongado en la CIE-11 vs DSM-5-TR?",
+      "a": "La CIE-11 exige al menos 6 meses tras la pérdida para todas las edades; el DSM-5-TR exige 12 meses en adultos (6 en niños)."
+    },
+    {
+      "cat": "CIE-11 Personalidad",
+      "q": "¿Cómo clasifica la CIE-11 los trastornos de personalidad?",
+      "a": "Elimina las categorías tradicionales. Establece un diagnóstico general de Trastorno de Personalidad según su gravedad (Leve/Mod/Grave) y 5 rasgos."
+    },
+    {
+      "cat": "CIE-11 Personalidad",
+      "q": "¿Cuáles son los 5 dominios de rasgos de personalidad de la CIE-11?",
+      "a": "Afecto Negativo, Desapego, Disocialidad, Desinhibición y Anancastia."
+    },
+    {
+      "cat": "CIE-11 Reubicaciones",
+      "q": "¿Adónde se trasladaron la disforia de género y disfunciones sexuales en la CIE-11?",
+      "a": "Al nuevo Capítulo 17 de Condiciones relacionadas con la Salud Sexual, despatologizándolas de la salud mental."
+    },
+    {
+      "cat": "CIE-11 Reubicaciones",
+      "q": "¿Qué cambio sufrió el Trastorno por Estrés Agudo en la CIE-11?",
+      "a": "Salió de salud mental y pasó al Capítulo 24 como una respuesta transitoria normal ante estresores graves."
+    },
+    {
+      "cat": "Modelos Alternativos",
+      "q": "¿Qué propone la taxonomía HiTOP (2017)?",
+      "a": "Un marco jerárquico-dimensional basado en la covariación empírica y correlación estadística natural de los síntomas."
+    },
+    {
+      "cat": "Modelos Alternativos",
+      "q": "¿Cuáles son los niveles jerárquicos de HiTOP?",
+      "a": "Síntomas/signos, componentes/rasgos, síndromes, subfactores, espectros y superespectros."
+    },
+    {
+      "cat": "Modelos Alternativos",
+      "q": "¿Qué es el factor 'p' general de psicopatología?",
+      "a": "Un superespectro en HiTOP que representa la propensión y vulnerabilidad transdiagnóstica común a desarrollar trastornos."
+    },
+    {
+      "cat": "Modelos Alternativos",
+      "q": "¿Qué es el marco RDoC del NIMH?",
+      "a": "Un sistema de clasificación dimensional orientado a la investigación básica que asume los trastornos como disfunciones de circuitos cerebrales."
+    },
+    {
+      "cat": "Modelos Alternativos",
+      "q": "¿Cuáles son los 6 Dominios de Funcionamiento de RDoC?",
+      "a": "Valencia Negativa, Valencia Positiva, Sistemas Cognitivos, Procesos Sociales, Activación/Regulación, y Sistemas Sensorimotores."
+    },
+    {
+      "cat": "Modelos Alternativos",
+      "q": "¿Cuáles son las 7 Unidades de Análisis de RDoC?",
+      "a": "Genes, Moléculas, Células, Circuitos, Fisiología, Conducta y Autoinformes."
+    },
+    {
+      "cat": "Modelos Alternativos",
+      "q": "¿Cuál es el ámbito exclusivo de aplicación de RDoC?",
+      "a": "La investigación científica neurocientífica básica (no se usa para diagnóstico clínico diario ni tiene códigos)."
+    },
+    {
+      "cat": "Transdiagnóstico",
+      "q": "¿Qué defiende el enfoque transdiagnóstico?",
+      "a": "Analizar la psicopatología a partir de los procesos psicológicos de vulnerabilidad y mantenimiento comunes a múltiples trastornos."
+    },
+    {
+      "cat": "Transdiagnóstico",
+      "q": "¿Cuáles son ejemplos de procesos transdiagnósticos?",
+      "a": "Rumiación, intolerancia a la incertidumbre, evitación experiencial y desregulación emocional."
+    },
+    {
+      "cat": "Transdiagnóstico",
+      "q": "¿Qué es el Protocolo Unificado de Barlow?",
+      "a": "Una psicoterapia transdiagnóstica de referencia dirigida a intervenir sobre los trastornos emocionales (ansiedad/estado de ánimo)."
+    }
+  ]
+}
