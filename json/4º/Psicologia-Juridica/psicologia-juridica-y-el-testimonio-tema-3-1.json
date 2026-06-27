@@ -1,0 +1,2463 @@
+{
+  "quiz": [
+    {
+      "q": "¿Es correcto afirmar que la exactitud se refiere exclusivamente al grado de seguridad o realismo que se atribuye socialmente a la declaración del testigo?",
+      "options": [
+        "Es una afirmación verdadera según el texto.",
+        "Es una afirmación falsa según el texto.",
+        "El texto no permite confirmar esta premisa."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre fidelidad a los hechos y seguridad percibida.",
+      "explanation": "La descripción corresponde a la credibilidad. La exactitud se preocupa por el ajuste entre lo relatado y lo que realmente ocurrió."
+    },
+    {
+      "q": "Según López Latorre (2006), ¿los errores de comisión en el testimonio implican la omisión involuntaria de datos por falta de recuerdo?",
+      "options": [
+        "Esta definición es técnicamente correcta.",
+        "Esta definición es técnicamente incorrecta.",
+        "No se especifica dicha distinción técnica."
+      ],
+      "correct": 1,
+      "hint": "Revisa los tipos de errores asociados a la exactitud.",
+      "explanation": "Los errores de comisión ocurren cuando el testigo añade datos que no tuvieron lugar; la omisión es cuando no declara datos que sí ocurrieron."
+    },
+    {
+      "q": "¿La consolidación de la memoria se inicia tras el aprendizaje y finaliza cuando la información se establece en un almacén persistente?",
+      "options": [
+        "Verdadero, es el proceso descrito en el texto.",
+        "Falso, ese proceso corresponde a la codificación.",
+        "No sabe / No se menciona en el documento."
+      ],
+      "correct": 0,
+      "hint": "Fases del proceso de memoria.",
+      "explanation": "El texto define la consolidación como el periodo que se inicia tras la codificación y finaliza con el establecimiento en un almacén persistente."
+    },
+    {
+      "q": "¿La memoria de trabajo se considera un subsegmento funcional dentro de la clasificación de la memoria a corto plazo?",
+      "options": [
+        "Es una clasificación válida según el autor.",
+        "Es una clasificación errónea según el autor.",
+        "No sabe / No se aporta información suficiente."
+      ],
+      "correct": 0,
+      "hint": "Relación entre memoria temporal y operativa.",
+      "explanation": "El documento incluye la memoria de trabajo dentro del tipo de memoria a corto plazo, usada para destrezas complejas simultáneas."
+    },
+    {
+      "q": "¿La memoria declarativa o explícita engloba tanto el conocimiento del mundo como los acontecimientos biográficos del individuo?",
+      "options": [
+        "Verdadero, incluye la semántica y la episódica.",
+        "Falso, solo incluye los eventos de tipo biográfico.",
+        "No sabe / No se define la memoria declarativa."
+      ],
+      "correct": 0,
+      "hint": "Subdivisiones de la memoria consciente.",
+      "explanation": "La memoria declarativa se divide en episódica (biográfica) y semántica (conocimiento del mundo)."
+    },
+    {
+      "q": "¿El efecto priming y el condicionamiento clásico se categorizan técnicamente dentro de la memoria declarativa consciente?",
+      "options": [
+        "Es correcto, requieren un recuerdo voluntario.",
+        "Es incorrecto, pertenecen a la no declarativa.",
+        "No sabe / No se mencionan tales conceptos."
+      ],
+      "correct": 1,
+      "hint": "Procesos automáticos vs. voluntarios.",
+      "explanation": "El priming y el condicionamiento son parte de la memoria no declarativa (implícita), caracterizada por su automatismo."
+    },
+    {
+      "q": "¿Elizabeth Loftus demostró en 1974 que la memoria puede ser manipulada mediante la inserción de palabras en el interrogatorio?",
+      "options": [
+        "Verdadero, mediante el experimento de los coches.",
+        "Falso, ella estudió únicamente el efecto Mandela.",
+        "No sabe / El texto no cita el año del estudio."
+      ],
+      "correct": 0,
+      "hint": "Investigaciones sobre falsas memorias.",
+      "explanation": "Loftus y Palmer (1974) corroboraron científicamente la capacidad de manipular la memoria por medio de la palabra."
+    },
+    {
+      "q": "¿Se han hallado diferencias significativas de género en la capacidad global para realizar identificaciones faciales correctas?",
+      "options": [
+        "Sí, los hombres son significativamente superiores.",
+        "No, no se han encontrado diferencias de género.",
+        "No sabe / El texto indica que es un tema polémico."
+      ],
+      "correct": 1,
+      "hint": "Factores del testigo: Género.",
+      "explanation": "El texto afirma explícitamente que no se han encontrado diferencias de género en la habilidad para identificaciones correctas."
+    },
+    {
+      "q": "¿Los niños muestran mayores dificultades que los adultos para distinguir entre realidad y fantasía en sus testimonios?",
+      "options": [
+        "Verdadero, es una característica de la infancia.",
+        "Falso, no parece que tengan más dificultades.",
+        "No sabe / Solo se menciona su falta de exactitud."
+      ],
+      "correct": 1,
+      "hint": "Capacidades de los testigos infantiles.",
+      "explanation": "El documento señala que los niños no parecen tener más dificultades que los adultos en distinguir realidad y fantasía."
+    },
+    {
+      "q": "¿Los ancianos son más propensos a tomar decisiones arriesgadas en identificaciones positivas comparados con los jóvenes?",
+      "options": [
+        "Verdadero, debido al deterioro cognitivo leve.",
+        "Falso, son más prudentes al tomar decisiones.",
+        "No sabe / No se comparan grupos de edad así."
+      ],
+      "correct": 1,
+      "hint": "Conducta del testigo anciano en ruedas de reconocimiento.",
+      "explanation": "El texto indica que los ancianos son más prudentes a la hora de tomar decisiones en el contexto del testimonio."
+    },
+    {
+      "q": "¿La familiaridad con los estímulos de un suceso facilita la realización de un procesamiento cognitivo más profundo?",
+      "options": [
+        "Verdadero, permite organizar mejor la memoria.",
+        "Falso, la familiaridad genera sesgos de omisión.",
+        "No sabe / El texto solo habla de la iluminación."
+      ],
+      "correct": 0,
+      "hint": "Efecto del conocimiento previo sobre la situación.",
+      "explanation": "La familiaridad permite organizar el conocimiento en unidades mayores y facilita un procesamiento más profundo."
+    },
+    {
+      "q": "¿La ley de Yerkes-Dodson establece que niveles extremos de arousal (muy altos o bajos) optimizan el recuerdo?",
+      "options": [
+        "Es una premisa correcta sobre el rendimiento.",
+        "Es una premisa incorrecta sobre el rendimiento.",
+        "No sabe / El texto no menciona dicha ley física."
+      ],
+      "correct": 1,
+      "hint": "Relación entre estrés y memoria.",
+      "explanation": "La ley indica que niveles moderados facilitan el rendimiento, mientras que niveles muy altos o bajos lo perjudican."
+    },
+    {
+      "q": "¿El testimonio tiende a ser más fiable cuando existen cambios bruscos de luz o deslumbramientos repentinos?",
+      "options": [
+        "Verdadero, el contraste ayuda a la percepción.",
+        "Falso, estos factores dificultan la fiabilidad.",
+        "No sabe / No se menciona la luz en el texto."
+      ],
+      "correct": 1,
+      "hint": "Condiciones ambientales de codificación.",
+      "explanation": "El testimonio será menos fiable cuando existan cambios bruscos de luz, según se detalla en los factores de la situación."
+    },
+    {
+      "q": "¿Los sucesos violentos suelen recordarse mejor que los neutros debido al impacto emocional en el testigo?",
+      "options": [
+        "Verdadero, la emoción fija el recuerdo exacto.",
+        "Falso, se recuerdan peor debido al alto estrés.",
+        "No sabe / El texto dice que depende del género."
+      ],
+      "correct": 1,
+      "hint": "Efecto de la violencia en la exactitud.",
+      "explanation": "Los sucesos violentos se recuerdan peor que los neutros, probablemente por el elevado nivel de estrés vivido."
+    },
+    {
+      "q": "¿La frecuencia de exposición a un suceso incrementa el detalle recordado pero aumenta los errores de comisión?",
+      "options": [
+        "Verdadero, debido a la interferencia memoria.",
+        "Falso, la frecuencia elimina errores de comisión.",
+        "No sabe / El texto solo habla de sucesos únicos."
+      ],
+      "correct": 0,
+      "hint": "Exposiciones repetidas a un mismo delito.",
+      "explanation": "A mayor frecuencia, más detalles se recuerdan, pero también se producen más errores de comisión por interferencia."
+    },
+    {
+      "q": "¿Los rostros identificados como 'típicos' o 'normales' se reconocen con mayor facilidad que los rostros peculiares?",
+      "options": [
+        "Verdadero, por ser patrones familiares comunes.",
+        "Falso, los rostros peculiares se reconocen mejor.",
+        "No sabe / No se analizan tipos de fisonomías."
+      ],
+      "correct": 1,
+      "hint": "Peculiaridad facial y reconocimiento.",
+      "explanation": "El texto afirma que los rostros más peculiares se reconocen mejor que los rostros típicos o normales."
+    },
+    {
+      "q": "¿La recuperación múltiple de un recuerdo garantiza la eliminación progresiva de distorsiones en el testimonio?",
+      "options": [
+        "Verdadero, la repetición depura el error fáctico.",
+        "Falso, también deteriora el recuerdo y añade errores.",
+        "No sabe / No se menciona la recuperación múltiple."
+      ],
+      "correct": 1,
+      "hint": "Efectos del repaso sobre la huella de memoria.",
+      "explanation": "Si bien el repaso puede prolongar el recuerdo, la recuperación múltiple también deteriora el recuerdo y añade errores."
+    },
+    {
+      "q": "¿Es más difícil distinguir entre huellas de memoria reales y sugeridas tras recibir información post-suceso?",
+      "options": [
+        "Verdadero, la información se incorpora al recuerdo.",
+        "Falso, el cerebro separa lo visto de lo oído.",
+        "No sabe / No se aborda la sugestión post-evento."
+      ],
+      "correct": 0,
+      "hint": "Vulnerabilidad de la memoria a influencias externas.",
+      "explanation": "El texto señala que suele ser muy difícil distinguir entre huellas reales y sugeridas tras la información post-suceso."
+    },
+    {
+      "q": "¿La información sensorial es más susceptible a la distorsión por información post-suceso que la información inferencial?",
+      "options": [
+        "Verdadero, los sentidos son altamente engañables.",
+        "Falso, la sensorial es menos susceptible al efecto.",
+        "No sabe / Ambas son igual de sensibles al efecto."
+      ],
+      "correct": 1,
+      "hint": "Grados de resistencia a la sugestión según el dato.",
+      "explanation": "La información inferencial es muy susceptible, mientras que los detalles sensoriales concretos son menos susceptibles."
+    },
+    {
+      "q": "¿El formato interrogativo de toma de declaración suele proporcionar más cantidad de información que el narrativo?",
+      "options": [
+        "Verdadero, aunque conlleva más distorsiones.",
+        "Falso, el narrativo es superior en cantidad de datos.",
+        "No sabe / Ambos formatos rinden resultados iguales."
+      ],
+      "correct": 0,
+      "hint": "Comparativa entre interrogatorio y narración libre.",
+      "explanation": "El formato interrogativo proporciona más información pero con más distorsiones; el narrativo es más exacto pero más pobre."
+    },
+    {
+      "q": "¿Interrogar siguiendo la secuencia temporal del suceso produce una mayor exactitud en el testimonio del testigo?",
+      "options": [
+        "Verdadero, facilita la recuperación estructurada.",
+        "Falso, el orden aleatorio evita sesgos de guion.",
+        "No sabe / El orden no influye en la exactitud."
+      ],
+      "correct": 0,
+      "hint": "Orden de las preguntas en el interrogatorio.",
+      "explanation": "Si se interroga con preguntas ordenadas según la secuencia temporal del suceso, se produce una mayor exactitud."
+    },
+    {
+      "q": "¿La transferencia inconsciente ocurre cuando se identifica al autor de un hecho basándose en un rostro visto previamente?",
+      "options": [
+        "Verdadero, se confunde el contexto del rostro.",
+        "Falso, eso se denomina sesgo de estereotipo físico.",
+        "No sabe / La transferencia es un proceso físico."
+      ],
+      "correct": 0,
+      "hint": "Confusión de fuentes en la identificación.",
+      "explanation": "Se trata de identificar equivocadamente a alguien visto en otro lugar o momento cercano como el autor del delito."
+    },
+    {
+      "q": "¿El acuerdo intersujeto se refiere a la coherencia que mantiene un mismo testigo en su declaración a través del tiempo?",
+      "options": [
+        "Es una definición correcta de acuerdo intersujeto.",
+        "Es una definición incorrecta de acuerdo intersujeto.",
+        "No sabe / El texto no menciona acuerdos entre sujetos."
+      ],
+      "correct": 1,
+      "hint": "Diferencia entre acuerdo intra e intersujeto.",
+      "explanation": "El acuerdo intersujeto es la coincidencia entre distintos testigos. La coherencia de un mismo sujeto es el acuerdo intrasujeto."
+    },
+    {
+      "q": "¿La metamemoria es uno de los factores que deben tenerse en cuenta para evaluar la credibilidad del testimonio?",
+      "options": [
+        "Verdadero, junto con otros tres tipos de datos.",
+        "Falso, la metamemoria solo afecta a la exactitud.",
+        "No sabe / No se menciona la palabra metamemoria."
+      ],
+      "correct": 0,
+      "hint": "Evaluación subjetiva de la credibilidad.",
+      "explanation": "Para evaluar la credibilidad, además de la metamemoria, se consideran la info condicional y los acuerdos intra/intersujeto."
+    },
+    {
+      "q": "¿Se tiende a creer más a un testigo si existe una coincidencia clara entre las declaraciones de diferentes testigos (acuerdo intersujeto)?",
+      "options": [
+        "Verdadero, aumenta la percepción de credibilidad.",
+        "Falso, el acuerdo múltiple levanta sospechas de pacto.",
+        "No sabe / La credibilidad es un proceso individual."
+      ],
+      "correct": 0,
+      "hint": "Influencia de la mayoría en la percepción de verdad.",
+      "explanation": "Tendemos a creer que es difícil que todos se equivoquen, por lo que el acuerdo intersujeto refuerza la credibilidad percibida."
+    },
+    {
+      "q": "Seleccione la opción correcta respecto a la definición de Psicología del Testimonio según el texto:",
+      "options": [
+        "Estudio exclusivo de la exactitud de declaraciones judiciales.",
+        "Campo de estudio de la memoria compuesto por exactitud y credibilidad.",
+        "Investigación sobre la intención criminal de los testigos oculares."
+      ],
+      "correct": 1,
+      "hint": "Revisa los componentes básicos mencionados al inicio.",
+      "explanation": "La psicología del testimonio estudia la memoria de los testigos y se compone de dos aspectos: exactitud y credibilidad."
+    },
+    {
+      "q": "¿Qué autor define la memoria como la persistencia del aprendizaje en un estado accesible posteriormente?",
+      "options": [
+        "López Latorre (2006).",
+        "Squire (1987).",
+        "Tulving (1983)."
+      ],
+      "correct": 1,
+      "hint": "Definición técnica de memoria.",
+      "explanation": "Squire (1987) define la memoria como la persistencia del aprendizaje en un estado al que se pueda acceder posteriormente."
+    },
+    {
+      "q": "La fase en la que el individuo recibe, procesa y combina la información nueva se denomina formalmente:",
+      "options": [
+        "Consolidación de la información.",
+        "Codificación o aprendizaje.",
+        "Recuperación de la información."
+      ],
+      "correct": 1,
+      "hint": "Primera fase del proceso de memoria.",
+      "explanation": "La codificación es el proceso mediante el cual el individuo recibe, procesa y combina información nueva."
+    },
+    {
+      "q": "Si un testigo recuerda el nombre de sus abuelos, ¿qué tipo de memoria temporal está utilizando primordialmente?",
+      "options": [
+        "Memoria a corto plazo.",
+        "Memoria intermedia.",
+        "Memoria a largo plazo."
+      ],
+      "correct": 2,
+      "hint": "Duración de los recuerdos estables.",
+      "explanation": "La memoria a largo plazo se retiene durante periodos prolongados, como años, incluyendo nombres de familiares."
+    },
+    {
+      "q": "¿Qué tipo de memoria se utiliza durante el aprendizaje de destrezas complejas como un problema matemático difícil?",
+      "options": [
+        "Memoria semántica pura.",
+        "Memoria de trabajo.",
+        "Memoria no declarativa."
+      ],
+      "correct": 1,
+      "hint": "Procesamiento simultáneo de información.",
+      "explanation": "La memoria de trabajo se utiliza en destrezas complejas que requieren representación simultánea de información."
+    },
+    {
+      "q": "La memoria que almacena información sobre el conocimiento del mundo (hechos, conceptos) se denomina:",
+      "options": [
+        "Memoria episódica.",
+        "Memoria semántica.",
+        "Memoria implícita."
+      ],
+      "correct": 1,
+      "hint": "División de la memoria declarativa.",
+      "explanation": "La memoria semántica almacena información sobre el conocimiento del mundo, como hechos y conceptos."
+    },
+    {
+      "q": "¿Cuál de los siguientes procesos se incluye dentro de la memoria no declarativa o implícita?",
+      "options": [
+        "Conocimiento del vocabulario.",
+        "Acontecimientos biográficos.",
+        "Habilidades perceptivas y motoras."
+      ],
+      "correct": 2,
+      "hint": "Recuerdo no consciente o automático.",
+      "explanation": "La memoria no declarativa incluye habilidades motoras, reglas, priming y condicionamiento."
+    },
+    {
+      "q": "Respecto a la edad, ¿qué factor caracteriza específicamente a los ancianos en la realización de testimonios?",
+      "options": [
+        "Mayor susceptibilidad a la sugestión que los niños.",
+        "Prudencia en decisiones y exactitud en datos concretos.",
+        "Inexistencia de problemas perceptivos en distancias cortas."
+      ],
+      "correct": 1,
+      "hint": "Características diferenciales del testigo mayor.",
+      "explanation": "Los ancianos son más prudentes al decidir y tan exactos como los jóvenes en datos como la identificación de personas."
+    },
+    {
+      "q": "El fenómeno por el cual es más fácil reconocer caras de la propia etnia que de etnias diferentes se basa en:",
+      "options": [
+        "La frecuencia de contacto y la actitud del testigo.",
+        "La superioridad genética de los rasgos familiares.",
+        "La falta total de entrenamiento en policías locales."
+      ],
+      "correct": 0,
+      "hint": "Factores de identificación interétnica.",
+      "explanation": "La identificación mejora según la frecuencia de contacto, la experiencia y la actitud hacia esa etnia."
+    },
+    {
+      "q": "La tendencia a atribuir conductas anormales a personas con fisonomía anormal es un ejemplo de influencia por:",
+      "options": [
+        "Entrenamiento policial deficiente.",
+        "Expectativas y estereotipos.",
+        "Estrés y ansiedad elevados."
+      ],
+      "correct": 1,
+      "hint": "Prejuicios aplicados a la identificación.",
+      "explanation": "Los estereotipos llevan a asociar fisonomía anormal con conducta anormal y a ser indulgentes con los atractivos."
+    },
+    {
+      "q": "Sobre el entrenamiento policial en reconocimiento de rostros, el texto indica que:",
+      "options": [
+        "Asegura siempre una identificación facial perfecta.",
+        "Es difícil de mejorar, pero dan descripciones más completas.",
+        "No sirve para mejorar ninguna categoría descriptiva."
+      ],
+      "correct": 1,
+      "hint": "Habilidades específicas de los agentes de seguridad.",
+      "explanation": "El entrenamiento no asegura mejor reconocimiento facial, pero los policías suelen dar descripciones más detalladas."
+    },
+    {
+      "q": "En situaciones de estrés negativo, el testigo tiende generalmente a realizar una:",
+      "options": [
+        "Subestimación de la duración del suceso.",
+        "Sobreestimación de la duración del suceso.",
+        "Estimación exacta debido al estado de alerta."
+      ],
+      "correct": 1,
+      "hint": "Percepción temporal bajo presión emocional.",
+      "explanation": "Existe una tendencia por parte del testigo a sobreestimar la duración de los sucesos negativos y estresantes."
+    },
+    {
+      "q": "¿Qué ocurre con la exactitud cuando un detalle del suceso destaca excesivamente?",
+      "options": [
+        "La exactitud global aumenta por el foco atencional.",
+        "Otros detalles relevantes pasan desapercibidos.",
+        "El testigo entra en un estado de amnesia retrógrada."
+      ],
+      "correct": 1,
+      "hint": "Atención selectiva en la codificación.",
+      "explanation": "Un detalle muy llamativo desvía la atención, haciendo que otros elementos pasen desapercibidos."
+    },
+    {
+      "q": "El recuerdo de un suceso común o rutinario suele ser, comparado con uno inusual:",
+      "options": [
+        "Mejor, debido a la habituación del testigo.",
+        "Peor, porque no atrae la atención ni el interés.",
+        "Igual, la naturaleza del suceso no afecta al interés."
+      ],
+      "correct": 1,
+      "hint": "Influencia de la novedad en la memoria.",
+      "explanation": "Sucesos inusuales atraen atención y se recuerdan mejor; los rutinarios no atraen interés y se recuerdan peor."
+    },
+    {
+      "q": "¿Qué factor de la situación aumenta el número de detalles recordados pero también los errores de comisión?",
+      "options": [
+        "La alta violencia del acto delictivo.",
+        "La frecuencia de exposición al suceso.",
+        "La presencia de un solo agresor peculiar."
+      ],
+      "correct": 1,
+      "hint": "Efectos de la repetición del estímulo.",
+      "explanation": "A mayor frecuencia, más detalles se recuerdan pero aumentan los errores de comisión por interferencia."
+    },
+    {
+      "q": "Ante la ausencia de un agresor en una rueda de identificación con varios culpables, el testigo puede:",
+      "options": [
+        "Reconocer correctamente que falta el sujeto.",
+        "Identificar falsamente a un espectador inocente.",
+        "Sufrir un bloqueo cognitivo total e irreversible."
+      ],
+      "correct": 1,
+      "hint": "Errores en ruedas con múltiples sospechosos.",
+      "explanation": "Si falta uno de los agresores, el testigo puede reconocer equivocadamente a un espectador como autor del delito."
+    },
+    {
+      "q": "¿Qué tipo de información post-suceso es incorporada con mayor facilidad por el testigo a su recuerdo original?",
+      "options": [
+        "Información sensorial de baja intensidad.",
+        "Información inferencial basada en estimaciones.",
+        "Información irrelevante de testigos expertos."
+      ],
+      "correct": 1,
+      "hint": "Susceptibilidad diferencial según el tipo de dato.",
+      "explanation": "La información inferencial es muy susceptible de verse afectada por la información post-suceso."
+    },
+    {
+      "q": "La información post-suceso suele ser aceptada con más facilidad si proviene de:",
+      "options": [
+        "Personas con autoridad moral o conocimientos.",
+        "Familiares directos con fuerte carga emocional.",
+        "Medios de comunicación de carácter sensacionalista."
+      ],
+      "correct": 0,
+      "hint": "Credibilidad de la fuente de sugestión.",
+      "explanation": "Si la información es proporcionada por personas con autoridad moral o conocimientos, será más fácilmente aceptada."
+    },
+    {
+      "q": "El formato narrativo de toma de declaración se caracteriza principalmente por:",
+      "options": [
+        "Proporcionar una gran cantidad de detalles menores.",
+        "Conllevar más exactitud y menos distorsiones.",
+        "Utilizar preguntas cerradas de tipo dicotómico."
+      ],
+      "correct": 1,
+      "hint": "Ventajas de la narración libre.",
+      "explanation": "El formato narrativo conlleva más exactitud y menos distorsiones, aunque sea más pobre en detalles."
+    },
+    {
+      "q": "Una atmósfera acogedora durante el interrogatorio es especialmente beneficiosa para:",
+      "options": [
+        "Testigos ancianos con problemas de audición.",
+        "Testigos infantiles, para dar mejor información.",
+        "Agresores reincidentes en fase de confesión."
+      ],
+      "correct": 1,
+      "hint": "Influencia del clima emocional en menores.",
+      "explanation": "Si la atmósfera es acogedora, los testigos (especialmente niños) darán más y mejor información."
+    },
+    {
+      "q": "El riesgo principal de la identificación previa por fotografías es que:",
+      "options": [
+        "Elimina por completo la memoria a largo plazo.",
+        "Induce a sesgos y eleva falsas identificaciones.",
+        "Reduce la fatiga cognitiva del testigo ocular."
+      ],
+      "correct": 1,
+      "hint": "Problemas de las fases previas de identificación.",
+      "explanation": "La identificación previa por fotos presenta riesgos de sesgos y eleva la posibilidad de identificaciones falsas."
+    },
+    {
+      "q": "¿Qué ocurre si se presentan demasiadas caras en una identificación fotográfica previa?",
+      "options": [
+        "Se mejora la precisión por comparación múltiple.",
+        "Se interfiere con la memoria original del suceso.",
+        "Se activa la memoria de trabajo de forma óptima."
+      ],
+      "correct": 1,
+      "hint": "Efectos de la interferencia proactiva/retroactiva.",
+      "explanation": "Ver muchas caras interfiere con la memoria original, incrementando las identificaciones erróneas."
+    },
+    {
+      "q": "La información condicional en la evaluación de la credibilidad hace referencia a:",
+      "options": [
+        "La coherencia interna de los datos aportados.",
+        "Las condiciones de percepción (luz, tiempo, etc.).",
+        "El grado de acuerdo entre distintos observadores."
+      ],
+      "correct": 1,
+      "hint": "Factores contextuales del incidente.",
+      "explanation": "La información condicional se refiere a las condiciones en las que se produjo la percepción (duración, luz, etc.)."
+    },
+    {
+      "q": "Si un testigo se equivoca en la identificación porque vio esa cara en otro contexto, estamos ante:",
+      "options": [
+        "Un error de omisión por interferencia semántica.",
+        "Una transferencia inconsciente por falta de fuente.",
+        "Un efecto Mandela por sugestión post-suceso."
+      ],
+      "correct": 1,
+      "hint": "Confusión de la ubicación espacial de una cara.",
+      "explanation": "La transferencia inconsciente es identificar como autor a alguien visto en otro lugar o momento cercano."
+    },
+    {
+      "q": "El acuerdo intrasujeto es un criterio de credibilidad que evalúa:",
+      "options": [
+        "Si varios testigos dicen exactamente lo mismo.",
+        "Si la declaración de un sujeto es coherente en el tiempo.",
+        "Si el testigo tiene una buena capacidad de aprendizaje."
+      ],
+      "correct": 1,
+      "hint": "Consistencia interna del relato individual.",
+      "explanation": "El acuerdo intrasujeto implica que la información de un mismo sujeto debe ser coherente en toda la declaración."
+    },
+    {
+      "q": "Indique cuál de las siguientes opciones es INCORRECTA respecto a los errores de exactitud:",
+      "options": [
+        "El error de comisión implica añadir datos que no existieron.",
+        "El error de omisión ocurre cuando el testigo calla por miedo.",
+        "La exactitud mide el ajuste entre relato y realidad fáctica."
+      ],
+      "correct": 1,
+      "hint": "Definición técnica de omisión en memoria.",
+      "explanation": "El error de omisión se debe normalmente a que el testigo no recuerda los datos, no necesariamente a miedo o silencio voluntario."
+    },
+    {
+      "q": "Identifique la afirmación INCORRECTA sobre las fases de la memoria según el texto:",
+      "options": [
+        "La codificación es también conocida como adquisición.",
+        "La consolidación finaliza justo al terminar el aprendizaje.",
+        "La recuperación consiste en la evocación de información."
+      ],
+      "correct": 1,
+      "hint": "Revisa los límites temporales de la consolidación.",
+      "explanation": "La consolidación finaliza cuando la memoria se establece en un almacén persistente, no inmediatamente al terminar el aprendizaje."
+    },
+    {
+      "q": "Sobre la memoria a corto plazo, señale la opción que NO es correcta según el documento:",
+      "options": [
+        "La información está disponible solo segundos o minutos.",
+        "Incluye funcionalmente a la llamada memoria episódica.",
+        "Se usa para retener temporalmente datos recién adquiridos."
+      ],
+      "correct": 1,
+      "hint": "Tipos de memoria temporal vs. de contenido.",
+      "explanation": "La memoria episódica es una subdivisión de la memoria declarativa (largo plazo), no de la memoria a corto plazo."
+    },
+    {
+      "q": "Indique la afirmación FALSA respecto a la clasificación de la memoria de Squire (1987):",
+      "options": [
+        "La memoria declarativa implica un recuerdo consciente.",
+        "La memoria no declarativa incluye el condicionamiento.",
+        "La memoria semántica almacena vivencias biográficas."
+      ],
+      "correct": 2,
+      "hint": "Diferencia entre semántica y episódica.",
+      "explanation": "La memoria semántica almacena conocimientos del mundo; las vivencias biográficas corresponden a la memoria episódica."
+    },
+    {
+      "q": "Sobre el efecto Mandela citado en el texto, señale la opción INCORRECTA:",
+      "options": [
+        "Es un falso recuerdo compartido por muchas personas.",
+        "Darth Vader dijo 'Luke, yo soy tu padre' realmente.",
+        "Es un ejemplo de distorsión de la memoria colectiva."
+      ],
+      "correct": 1,
+      "hint": "Ejemplo específico del texto sobre Star Wars.",
+      "explanation": "El texto aclara que Darth Vader nunca dijo esa frase, sino 'No, yo soy tu padre'. Es un falso recuerdo compartido."
+    },
+    {
+      "q": "Respecto a los factores del testigo, señale la afirmación que NO es correcta:",
+      "options": [
+        "Las mujeres tienden a hacer ligeramente más falsas alarmas.",
+        "Los hombres son siempre más exactos en descripciones físicas.",
+        "Las diferencias individuales afectan a la interpretación final."
+      ],
+      "correct": 1,
+      "hint": "Revisa las conclusiones sobre género del texto.",
+      "explanation": "El texto afirma que no se han encontrado diferencias de género en la habilidad para identificaciones correctas."
+    },
+    {
+      "q": "Sobre los niños como testigos, indique la afirmación INCORRECTA según el documento:",
+      "options": [
+        "Son más inexactos recordando apariencias de adultos.",
+        "No son mucho más susceptibles a la sugestión que adultos.",
+        "Confunden sistemáticamente la realidad con la fantasía."
+      ],
+      "correct": 2,
+      "hint": "Capacidades cognitivas infantiles mencionadas.",
+      "explanation": "El texto dice que NO parece que tengan más dificultades que los adultos en distinguir realidad y fantasía."
+    },
+    {
+      "q": "Sobre la etnia en la identificación facial, señale la opción FALSA:",
+      "options": [
+        "Es más fácil reconocer caras de la propia etnia del sujeto.",
+        "El contacto frecuente con otra etnia mejora su identificación.",
+        "La actitud del testigo no influye en el reconocimiento facial."
+      ],
+      "correct": 2,
+      "hint": "Factores que modulan el sesgo interétnico.",
+      "explanation": "El texto indica que la identificación interétnica depende, entre otros factores, de la actitud que el testigo tenga hacia esa etnia."
+    },
+    {
+      "q": "Respecto al estrés y la memoria, señale la opción INCORRECTA según el texto:",
+      "options": [
+        "Niveles moderados de activación facilitan el rendimiento.",
+        "La ley de Yerkes-Dodson explica la curva de rendimiento.",
+        "El estrés siempre mejora la memoria por el estado de alerta."
+      ],
+      "correct": 2,
+      "hint": "Efectos perjudiciales de la ansiedad extrema.",
+      "explanation": "Niveles muy altos de estrés perjudican el rendimiento en memoria, según la ley de Yerkes-Dodson mencionada."
+    },
+    {
+      "q": "Sobre la duración del suceso, indique la opción que NO es correcta según el documento:",
+      "options": [
+        "A menor duración del suceso, menor exactitud se espera.",
+        "Una exposición prolongada garantiza siempre el éxito total.",
+        "El tiempo de exposición excesivo no implica reconocimiento."
+      ],
+      "correct": 1,
+      "hint": "Límites de la exposición prolongada.",
+      "explanation": "El texto especifica que un tiempo de exposición prolongado no implica necesariamente un reconocimiento exacto."
+    },
+    {
+      "q": "Respecto a las condiciones ambientales, señale la afirmación FALSA:",
+      "options": [
+        "La oscuridad reduce el campo visual y dificulta colores.",
+        "La distancia dificulta la visión de detalles del suceso.",
+        "Los deslumbramientos incrementan la fiabilidad del relato."
+      ],
+      "correct": 2,
+      "hint": "Efectos ópticos sobre la codificación de datos.",
+      "explanation": "Los deslumbramientos (cambios bruscos de luz) dificultan la fiabilidad del testimonio, no la incrementan."
+    },
+    {
+      "q": "Sobre la implicación en el suceso, señale la opción INCORRECTA según el texto:",
+      "options": [
+        "A mayor implicación, más factores emocionales en juego.",
+        "La implicación de la víctima ayuda a no distorsionar datos.",
+        "La implicación personal puede distorsionar los recuerdos."
+      ],
+      "correct": 1,
+      "hint": "Efecto de la subjetividad emocional en el recuerdo.",
+      "explanation": "A mayor implicación, más se distorsionarán los recuerdos debido a los factores emocionales involucrados."
+    },
+    {
+      "q": "Indique la afirmación FALSA respecto a la violencia del suceso según el documento:",
+      "options": [
+        "Los sucesos violentos se recuerdan peor que los neutros.",
+        "El estrés del suceso violento ayuda a fijar todos los detalles.",
+        "El nivel de estrés vivido perjudica la memoria del testigo."
+      ],
+      "correct": 1,
+      "hint": "Relación entre nivel de trauma y precisión detallada.",
+      "explanation": "El estrés del suceso violento perjudica el recuerdo, haciendo que se recuerden peor que los neutros."
+    },
+    {
+      "q": "Respecto al número de agresores, señale la opción que NO es correcta según el texto:",
+      "options": [
+        "A mayor número de personas a identificar, más errores.",
+        "El testigo suele compensar el número con mayor atención.",
+        "Se puede identificar erróneamente a un simple espectador."
+      ],
+      "correct": 1,
+      "hint": "Limitaciones de la capacidad de procesamiento facial.",
+      "explanation": "El texto dice que cuanto mayor es el número de personas, más errores se cometen; no menciona compensación atencional."
+    },
+    {
+      "q": "Sobre los efectos de demora en la retención, señale la afirmación INCORRECTA:",
+      "options": [
+        "A mayor tiempo pasado, mayor probabilidad de olvido.",
+        "El olvido depende únicamente del paso del tiempo físico.",
+        "La calidad del recuerdo inicial afecta al proceso de olvido."
+      ],
+      "correct": 1,
+      "hint": "Factores que influyen en la huella de memoria demorada.",
+      "explanation": "El olvido depende de la calidad del recuerdo y de qué se haga con la información almacenada, no solo del tiempo."
+    },
+    {
+      "q": "Respecto a la recuperación múltiple, señale la opción FALSA según el documento:",
+      "options": [
+        "Repasar lo aprendido puede prolongar el recuerdo útil.",
+        "La recuperación múltiple siempre mejora la fidelidad fáctica.",
+        "Repasar muchas veces dificulta reconocer los errores cometidos."
+      ],
+      "correct": 1,
+      "hint": "Riesgos del repaso repetitivo del testimonio.",
+      "explanation": "El texto indica que la recuperación múltiple también deteriora el recuerdo y aumenta la dificultad para ver errores."
+    },
+    {
+      "q": "Sobre la información post-suceso, indique la premisa INCORRECTA según el texto:",
+      "options": [
+        "Puede provenir de medios de comunicación o de abogados.",
+        "Es fácil para el testigo separar su recuerdo de lo sugerido.",
+        "El testigo puede completar huecos de memoria adivinando."
+      ],
+      "correct": 1,
+      "hint": "Naturaleza de la integración de la información falsa.",
+      "explanation": "El texto afirma que suele ser muy difícil distinguir entre huellas de memoria reales y sugeridas."
+    },
+    {
+      "q": "Identifique la afirmación FALSA sobre la sensibilidad a la información post-suceso:",
+      "options": [
+        "La información irrelevante es más fácilmente modificable.",
+        "La información sensorial es la más sensible de todas.",
+        "La información inferencial se ve muy afectada por el efecto."
+      ],
+      "correct": 1,
+      "hint": "Resistencia de los datos sensoriales directos.",
+      "explanation": "Los detalles sensoriales concretos son menos susceptibles del efecto de la information post-suceso."
+    },
+    {
+      "q": "Sobre el formato de recuperación, señale la opción que NO es correcta según el texto:",
+      "options": [
+        "La forma de tomar declaración afecta a la exactitud real.",
+        "El interrogatorio produce menos distorsiones que el relato.",
+        "El formato narrativo es más exacto pero pobre en detalles."
+      ],
+      "correct": 1,
+      "hint": "Inconvenientes del método interrogativo directo.",
+      "explanation": "Es el formato narrativo el que conlleva menos distorsiones; el interrogativo conlleva más distorsiones."
+    },
+    {
+      "q": "Respecto a la secuencia de las preguntas, indique la opción INCORRECTA:",
+      "options": [
+        "El orden temporal de las preguntas ayuda a la exactitud.",
+        "No importa el orden de las preguntas para la fidelidad.",
+        "Las preguntas falsas pueden inducir testimonios falsos."
+      ],
+      "correct": 1,
+      "hint": "Efectos de la estructuración del interrogatorio.",
+      "explanation": "El texto dice que el orden sí importa: preguntas ordenadas temporalmente producen mayor exactitud."
+    },
+    {
+      "q": "Sobre la transferencia inconsciente, señale la afirmación FALSA del documento:",
+      "options": [
+        "Es un error de identificación por confusión de contexto.",
+        "La cara es más fácil de recordar que el lugar donde se vio.",
+        "Ocurre siempre por un deseo consciente de culpar a alguien."
+      ],
+      "correct": 2,
+      "hint": "Naturaleza del sesgo (consciente vs. inconsciente).",
+      "explanation": "La transferencia es inconsciente y se debe a fallos de memoria, no a un deseo consciente de culpabilizar."
+    },
+    {
+      "q": "Sobre la identificación de fotografías, señale la opción INCORRECTA:",
+      "options": [
+        "Presenta riesgos porque induce a sesgos identificativos.",
+        "Incrementa la precisión si se ven muchas caras parecidas.",
+        "Ver muchas caras interfiere con la memoria original del acto."
+      ],
+      "correct": 1,
+      "hint": "Efecto de la carga de estímulos faciales.",
+      "explanation": "Ver muchas caras produce un incremento de las identificaciones erróneas por interferencia, no mejora la precisión."
+    },
+    {
+      "q": "Respecto a la credibilidad del testimonio, indique la premisa FALSA:",
+      "options": [
+        "Es una evaluación subjetiva basada en diversos factores.",
+        "Solo depende de la capacidad de memoria del testigo.",
+        "La metamemoria es uno de los elementos a considerar."
+      ],
+      "correct": 1,
+      "hint": "Factores externos e internos en la credibilidad.",
+      "explanation": "La credibilidad depende de la metamemoria, info condicional y acuerdos intra/intersujeto, no solo de la memoria."
+    },
+    {
+      "q": "Sobre los acuerdos intrasujeto e intersujeto, señale la opción INCORRECTA:",
+      "options": [
+        "El intrasujeto se refiere a la coherencia de un solo sujeto.",
+        "El intersujeto se refiere a la coincidencia entre testigos.",
+        "El acuerdo intrasujeto es más importante que la exactitud."
+      ],
+      "correct": 2,
+      "hint": "Relación entre coherencia y verdad fáctica.",
+      "explanation": "El texto no establece que la coherencia (credibilidad) sea más importante que la exactitud (realidad)."
+    },
+    {
+      "q": "Indique la afirmación FALSA sobre la percepción social de los testigos múltiples:",
+      "options": [
+        "Se cree que es difícil que todos los testigos se equivoquen.",
+        "El acuerdo intersujeto garantiza siempre la verdad absoluta.",
+        "Si varios señalan al mismo inocente, solemos creerlos."
+      ],
+      "correct": 1,
+      "hint": "Límites del consenso como garantía de verdad.",
+      "explanation": "Aunque el consenso aumenta la credibilidad percibida, el texto aclara que pueden señalar a un inocente por error."
+    },
+    {
+      "q": "La ____ se preocupa por el análisis de los factores que pueden incidir sobre la fidelidad entre lo que realmente ocurrió y lo que el testigo relata.",
+      "options": [
+        "Exactitud del testimonio fáctico",
+        "Credibilidad del relato percibido",
+        "Veracidad de la memoria episódica"
+      ],
+      "correct": 0,
+      "hint": "Se refiere al ajuste entre la realidad y el relato, no a la creencia del observador.",
+      "explanation": "Según el texto, la exactitud analiza la fidelidad entre lo ocurrido y lo relatado, mientras que la credibilidad es el grado de seguridad atribuido."
+    },
+    {
+      "q": "Se entiende por errores de ____ cuando el testigo no declara algunos datos que sí ocurrieron, normalmente por falta de recuerdo.",
+      "options": [
+        "Interferencia proactiva sistemática",
+        "Omisión por déficit de recuperación",
+        "Comisión por falso reconocimiento"
+      ],
+      "correct": 1,
+      "hint": "Es el error donde falta información que estuvo presente en el suceso original.",
+      "explanation": "El texto define errores de omisión como aquellos donde el testigo no declara datos que sí ocurrieron."
+    },
+    {
+      "q": "El proceso de ____ se inicia tras el aprendizaje y finaliza cuando la memoria se establece en un almacén persistente.",
+      "options": [
+        "Consolidación de la huella mnésica",
+        "Codificación de información nueva",
+        "Recuperación de datos almacenados"
+      ],
+      "correct": 0,
+      "hint": "Es la fase intermedia entre la adquisición y la evocación.",
+      "explanation": "La consolidación es la fase donde la información se almacena definitivamente tras ser codificada."
+    },
+    {
+      "q": "La memoria ____ se utiliza durante el aprendizaje de destrezas complejas que requieren representación simultánea de información.",
+      "options": [
+        "Semántica de conceptos globales",
+        "Declarativa de hechos biográficos",
+        "De trabajo para el procesamiento"
+      ],
+      "correct": 2,
+      "hint": "Está ligada a la resolución de problemas como los matemáticos complejos.",
+      "explanation": "La memoria de trabajo es un tipo de memoria a corto plazo usada para procesar información simultáneamente en tareas complejas."
+    },
+    {
+      "q": "La memoria ____ almacena información sobre el conocimiento del mundo, como hechos, conceptos y vocabulario general.",
+      "options": [
+        "Semántica basada en el contexto",
+        "Episódica de eventos personales",
+        "Procedimental de actos motores"
+      ],
+      "correct": 0,
+      "hint": "Es una subdivisión de la memoria declarativa que no es biográfica.",
+      "explanation": "Tulving (1983) distingue la memoria semántica como la que almacena el conocimiento general del mundo."
+    },
+    {
+      "q": "El efecto ____ se define como un falso recuerdo compartido por un gran número de personas sobre un hecho no ocurrido.",
+      "options": [
+        "Loftus de sugestión lingüística",
+        "Mandela de memoria colectiva",
+        "Yerkes de activación emocional"
+      ],
+      "correct": 1,
+      "hint": "El ejemplo típico es la frase inexistente de Darth Vader a Luke Skywalker.",
+      "explanation": "El efecto Mandela es un falso recuerdo compartido masivamente, como se menciona en el texto sobre Darth Vader."
+    },
+    {
+      "q": "En cuanto al género, las ____ tienden ligeramente a realizar más identificaciones exactas pero también más falsas alarmas.",
+      "options": [
+        "Mujeres en contextos de estrés",
+        "Personas con alto entrenamiento",
+        "Víctimas de delitos violentos"
+      ],
+      "correct": 0,
+      "hint": "El texto menciona una ligera tendencia superior en un grupo específico.",
+      "explanation": "El texto indica que las mujeres tienden ligeramente a realizar más identificaciones exactas y más falsas alarmas."
+    },
+    {
+      "q": "Los ____ suelen ser más inexactos a la hora de recordar la apariencia de las personas, especialmente si son adultos.",
+      "options": [
+        "Ancianos con déficit cognitivo",
+        "Niños ante estímulos complejos",
+        "Testigos con bajo nivel de alerta"
+      ],
+      "correct": 1,
+      "hint": "A pesar de distinguir realidad de fantasía, fallan en la descripción física adulta.",
+      "explanation": "Según el documento, los niños son más inexactos al recordar la apariencia de personas, sobre todo adultos."
+    },
+    {
+      "q": "La ley de ____ establece que niveles moderados de arousal facilitan el rendimiento en memoria.",
+      "options": [
+        "Squire sobre la persistencia",
+        "López Latorre de exactitud",
+        "Yerkes-Dodson de activación"
+      ],
+      "correct": 2,
+      "hint": "Relaciona el estrés/ansiedad con la eficacia de la recuperación mnésica.",
+      "explanation": "La ley de Yerkes-Dodson indica que el rendimiento óptimo de la memoria se da con niveles moderados de activación."
+    },
+    {
+      "q": "Existe una tendencia a ____ la duración de los sucesos que son perceivedos como negativos y estresantes.",
+      "options": [
+        "Subestimar por el choque",
+        "Sobreestimar por la tensión",
+        "Normalizar por el bloqueo"
+      ],
+      "correct": 1,
+      "hint": "Es un sesgo común en la percepción temporal de eventos traumáticos.",
+      "explanation": "El testigo tiende a sobreestimar la duración de sucesos negativos y estresantes."
+    },
+    {
+      "q": "La información ____ es la que procede de estimaciones que los testigos realizan basándose en conocimientos previos.",
+      "options": [
+        "Sensorial de detalles visuales",
+        "Inferencial de datos sugeridos",
+        "Declarativa de hechos reales"
+      ],
+      "correct": 1,
+      "hint": "Es muy susceptible de verse afectada por la información post-suceso.",
+      "explanation": "La información inferencial procede de estimaciones y es muy sensible a la información post-suceso según el texto."
+    },
+    {
+      "q": "La ____ se produce cuando un testigo identifica erróneamente a alguien visto en un lugar distinto al del crimen.",
+      "options": [
+        "Transferencia inconsciente",
+        "Interferencia post-suceso",
+        "Falsa alarma interétnica"
+      ],
+      "correct": 0,
+      "hint": "Ocurre porque la cara se recuerda mejor que el contexto donde fue vista.",
+      "explanation": "La transferencia inconsciente es la identificación errónea de una persona vista en un contexto o momento diferente."
+    },
+    {
+      "q": "La memoria ____ se refiere al recuerdo consciente o voluntario de información aprendida previamente.",
+      "options": [
+        "Declarativa o tipo explícita",
+        "Implícita o tipo automática",
+        "Sensorial o tipo inmediata"
+      ],
+      "correct": 0,
+      "hint": "Incluye tanto acontecimientos biográficos como hechos del mundo.",
+      "explanation": "La memoria declarativa (explícita) es la que requiere un esfuerzo consciente para la recuperación de información."
+    },
+    {
+      "q": "Los errores de ____ ocurren cuando el testigo añade datos inexistentes al relato de los hechos presenciados.",
+      "options": [
+        "Comisión por falso aporte",
+        "Omisión por olvido parcial",
+        "Sesgo por estereotipia facial"
+      ],
+      "correct": 0,
+      "hint": "Se diferencia de la omisión en que aquí se 'crea' información nueva.",
+      "explanation": "Los errores de comisión implican que el testigo añade datos que no ocurrieron realmente."
+    },
+    {
+      "q": "La memoria ____ tiene un curso temporal de horas y nunca llega a establecerse en el almacén a largo plazo.",
+      "options": [
+        "Intermedia de datos fugaces",
+        "De trabajo para cálculos",
+        "A corto plazo de segundos"
+      ],
+      "correct": 0,
+      "hint": "Ejemplo: recordar la hora de un vuelo que solo sirve para ese día.",
+      "explanation": "La memoria intermedia retiene información durante unas horas pero no se consolida a largo plazo."
+    },
+    {
+      "q": "La ____ es la fase de la memoria que consiste en la evocación de información almacenada para su uso.",
+      "options": [
+        "Recuperación de la huella",
+        "Codificación del estímulo",
+        "Consolidación del sistema"
+      ],
+      "correct": 0,
+      "hint": "Es la tercera fase mencionada en el proceso complejo de memoria.",
+      "explanation": "La recuperación es el proceso de evocar información previamente almacenada para ser utilizada."
+    },
+    {
+      "q": "En la identificación interétnica, el reconocimiento es mejor cuanto mayor es la ____ con personas de esa etnia.",
+      "options": [
+        "Frecuencia de contacto real",
+        "Distancia física del sujeto",
+        "Similitud de los rasgos"
+      ],
+      "correct": 0,
+      "hint": "Depende de la experiencia previa y actitud del testigo hacia ese grupo.",
+      "explanation": "La identificación interétnica mejora según la frecuencia de contacto y la realidad de la experiencia con esa etnia."
+    },
+    {
+      "q": "El formato de interrogatorio ____ proporciona más información pero conlleva la aparición de más distorsiones.",
+      "options": [
+        "Interrogativo de preguntas",
+        "Narrativo de relato libre",
+        "Cognitivo de claves visuales"
+      ],
+      "correct": 0,
+      "hint": "Se opone al formato narrativo, que es más exacto pero menos detallado.",
+      "explanation": "El texto indica que el formato interrogativo da más información pero con más distorsiones que el narrativo."
+    },
+    {
+      "q": "Los rostros más ____ se reconocen con mayor facilidad que aquellos que son considerados típicos o normales.",
+      "options": [
+        "Peculiares por sus rasgos",
+        "Atractivos por simetría",
+        "Familiares por exposición"
+      ],
+      "correct": 0,
+      "hint": "La excepcionalidad fisonómica ayuda al proceso de codificación y recuperación.",
+      "explanation": "Según el texto, los rostros peculiares se reconocen mejor que los rostros típicos o normales."
+    },
+    {
+      "q": "La ____ es el campo de estudio que analiza la exactitud y credibilidad de las declaraciones de los testigos.",
+      "options": [
+        "Psicología del testimonio",
+        "Victimología de campo",
+        "Criminología de la memoria"
+      ],
+      "correct": 0,
+      "hint": "Se basa en las investigaciones sobre la memoria humana aplicadas al ámbito legal.",
+      "explanation": "La psicología del testimonio es el campo que estudia la memoria de los testigos, su exactitud y credibilidad."
+    },
+    {
+      "q": "Se observa una tendencia a ser más ____ con aquellas personas que poseen un físico atractivo.",
+      "options": [
+        "Indulgentes en el juicio",
+        "Punitivos en la condena",
+        "Exigentes en el relato"
+      ],
+      "correct": 0,
+      "hint": "Forma parte de los sesgos basados en estereotipos y expectativas personales.",
+      "explanation": "El texto menciona la tendencia a ser más indulgentes con personas atractivas debido a los estereotipos."
+    },
+    {
+      "q": "La memoria ____ no necesita de la consciencia para su adquisición y se caracteriza por su automatismo.",
+      "options": [
+        "No declarativa o implícita",
+        "Declarativa o explícita",
+        "Semántica de significados"
+      ],
+      "correct": 0,
+      "hint": "Incluye habilidades motoras, condicionamiento y el efecto priming.",
+      "explanation": "La memoria no declarativa (implícita) funciona de forma automática sin necesidad de recuperación consciente."
+    },
+    {
+      "q": "A menor ____ del suceso presenciado, menor será la exactitud del testimonio prestado por el testigo.",
+      "options": [
+        "Duración temporal real",
+        "Violencia del agresor",
+        "Número de implicados"
+      ],
+      "correct": 0,
+      "hint": "El tiempo de exposición es crítico para un correcto registro y codificación.",
+      "explanation": "El texto afirma que a menor duración del suceso, menor es la exactitud del testimonio."
+    },
+    {
+      "q": "La información ____, referida a detalles concretos del suceso, es menos susceptible al efecto post-suceso.",
+      "options": [
+        "Sensorial de tipo visual",
+        "Inferencial de tipo lógico",
+        "Episódica de tipo vital"
+      ],
+      "correct": 0,
+      "hint": "Los datos directos de los sentidos son más resistentes que las deducciones posteriores.",
+      "explanation": "La información sensorial es menos susceptible de verse afectada por la información post-suceso que la inferencial."
+    },
+    {
+      "q": "La ____ múltiple de un recuerdo puede prolongarlo indefinidamente pero también deteriorar su fidelidad.",
+      "options": [
+        "Recuperación del suceso",
+        "Codificación de la cara",
+        "Consolidación del dato"
+      ],
+      "correct": 0,
+      "hint": "Repasar lo aprendido ayuda a retenerlo pero induce más errores de comisión.",
+      "explanation": "El texto explica que la recuperación múltiple ayuda a retener el recuerdo pero también lo deteriora."
+    },
+    {
+      "q": "Un suceso ____ atrae más la atención y se recuerda mejor que uno que resulta común o rutinario.",
+      "options": [
+        "Novedoso o inusual",
+        "Violento o traumático",
+        "Breve o instantáneo"
+      ],
+      "correct": 0,
+      "hint": "La excepcionalidad del evento actúa como un facilitador de la codificación.",
+      "explanation": "Los sucesos inusuales o extraordinarios atraen la atención y por tanto se recuerdan mejor."
+    },
+    {
+      "q": "El ____ de fotografías del sospechoso antes de una rueda induce sesgos y eleva las identificaciones falsas.",
+      "options": [
+        "Reconocimiento previo",
+        "Análisis descriptivo",
+        "Estudio antropométrico"
+      ],
+      "correct": 0,
+      "hint": "Ver muchas caras interfiere con la huella de memoria original del suceso.",
+      "explanation": "La identificación previa por fotografías presenta riesgos ya que induce a sesgos e identificaciones erróneas."
+    },
+    {
+      "q": "La ____ es una información condicional clave para evaluar subjetivamente la credibilidad del testigo.",
+      "options": [
+        "Duración del incidente",
+        "Personalidad del autor",
+        "Motivación de la víctima"
+      ],
+      "correct": 0,
+      "hint": "Forma parte de las variables que Wells y Lindsay (1983) consideran esenciales.",
+      "explanation": "La información condicional incluye factores como la duración del incidente o la luminosidad."
+    },
+    {
+      "q": "El acuerdo ____ se refiere a la coincidencia entre las declaraciones de diferentes testigos de un mismo hecho.",
+      "options": [
+        "Intersujeto de versiones",
+        "Intrasujeto de coherencia",
+        "Transversal de tiempos"
+      ],
+      "correct": 0,
+      "hint": "Es uno de los tres tipos de información para evaluar la credibilidad.",
+      "explanation": "El acuerdo intersujeto es la coincidencia entre las declaraciones de diversos testigos."
+    },
+    {
+      "q": "El acuerdo ____ implica que la información de un mismo sujeto debe mantener coherencia a través del tiempo.",
+      "options": [
+        "Intrasujeto o interno",
+        "Intersujeto o externo",
+        "Multimodal o sensorial"
+      ],
+      "correct": 0,
+      "hint": "Busca la estabilidad del relato en las sucesivas declaraciones de una persona.",
+      "explanation": "El acuerdo intrasujeto significa que la declaración de un mismo sujeto debe ser coherente en sí misma."
+    },
+    {
+      "q": "Los ____ son más prudentes al tomar decisiones y tan exactos como los jóvenes en la identificación de personas.",
+      "options": [
+        "Ancianos en su relato",
+        "Policías entrenados",
+        "Testigos presenciales"
+      ],
+      "correct": 0,
+      "hint": "A pesar de posibles problemas de percepción, compensan con cautela.",
+      "explanation": "El texto indica que los ancianos son más prudentes y exactos en datos como la identificación de personas."
+    },
+    {
+      "q": "La ____ de los sucesos negativos tiende a ser sobreestimada por parte de los testigos presenciales.",
+      "options": [
+        "Duración temporal",
+        "Gravedad delictiva",
+        "Distancia de visión"
+      ],
+      "correct": 0,
+      "hint": "Es un error de estimación perceptiva bajo condiciones de estrés.",
+      "explanation": "Existe una tendencia del testigo a sobreestimar la duración de sucesos negativos."
+    },
+    {
+      "q": "Un mayor ____ por parte del testigo en el suceso determinará una mayor distorsión de los recuerdos.",
+      "options": [
+        "Grado de implicación",
+        "Tiempo de observación",
+        "Nivel de formación"
+      ],
+      "correct": 0,
+      "hint": "Entran en juego más factores emocionales que alteran la huella mnésica.",
+      "explanation": "A mayor implicación en el suceso por la víctima o testigo, más se distorsionarán los recuerdos."
+    },
+    {
+      "q": "La ____ de exposición a un suceso aumenta los detalles recordados pero también los errores de comisión.",
+      "options": [
+        "Frecuencia sistemática",
+        "Violencia extrema",
+        "Novedad absoluta"
+      ],
+      "correct": 0,
+      "hint": "La interferencia entre las distintas veces que se ha visto el suceso causa errores.",
+      "explanation": "A mayor frecuencia de exposición, se recuerdan más detalles pero hay más interferencia y errores de comisión."
+    },
+    {
+      "q": "Si la atmósfera de la declaración es ____, los testigos (especialmente niños) darán mejor información.",
+      "options": [
+        "Acogedora y cercana",
+        "Tensas y desafiante",
+        "Formal y burocrática"
+      ],
+      "correct": 0,
+      "hint": "El entorno emocional influye en la calidad y cantidad del relato recuperado.",
+      "explanation": "Una atmósfera acogedora favorece que los testigos den más y mejor información."
+    },
+    {
+      "q": "Interrogar al testigo con preguntas ordenadas según la ____ del suceso produce mayor exactitud.",
+      "options": [
+        "Secuencia temporal",
+        "Gravedad de hechos",
+        "Lógica del espacio"
+      ],
+      "correct": 0,
+      "hint": "Respetar el orden cronológico facilita la recuperación de la información.",
+      "explanation": "La secuencia temporal en las preguntas favorece una mayor exactitud en el testimonio."
+    },
+    {
+      "q": "La memoria ____ almacena acontecimientos experimentados a lo largo de la vida del individuo.",
+      "options": [
+        "Episódica biográfica",
+        "Semántica de hechos",
+        "Implícita de reglas"
+      ],
+      "correct": 0,
+      "hint": "Es una subdivisión de la memoria declarativa junto a la semántica.",
+      "explanation": "La memoria episódica almacena los sucesos y experiencias personales vividas."
+    },
+    {
+      "q": "Los sucesos que implican mayor ____ se recuerdan peor que los neutros por el alto nivel de estrés vivido.",
+      "options": [
+        "Grado de violencia",
+        "Número de detalles",
+        "Tiempo de exposición"
+      ],
+      "correct": 0,
+      "hint": "El impacto emocional extremo perjudica la calidad de la codificación.",
+      "explanation": "Sucesos muy violentos se recuerdan peor debido al estrés que vive el testigo."
+    },
+    {
+      "q": "La ____ de la información post-suceso es mayor si proviene de personas con autoridad moral.",
+      "options": [
+        "Aceptación por parte",
+        "Rechazo por parte",
+        "Negación por parte"
+      ],
+      "correct": 0,
+      "hint": "El prestigio de la fuente facilita que se incorpore información falsa al recuerdo.",
+      "explanation": "La información post-suceso es más fácilmente aceptada si viene de personas con autoridad o conocimientos."
+    },
+    {
+      "q": "La memoria de trabajo se incluye dentro del tipo de memoria a ____.",
+      "options": [
+        "Corto plazo temporal",
+        "Largo plazo remota",
+        "Intermedia de horas"
+      ],
+      "correct": 0,
+      "hint": "Su disponibilidad es de apenas unos segundos o minutos tras el aprendizaje.",
+      "explanation": "La memoria de trabajo es una variante de la memoria a corto plazo para tareas simultáneas."
+    },
+    {
+      "q": "Indique cuál de las siguientes afirmaciones sobre la exactitud y credibilidad es correcta:",
+      "options": [
+        "La exactitud se centra en la fidelidad entre lo real y lo relatado.",
+        "La credibilidad es el realismo que el observador otorga al relato.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Ambos términos son pilares de la psicología del testimonio pero tienen focos distintos.",
+      "explanation": "La exactitud mide la realidad fáctica y la credibilidad la confianza percibida en el testimonio."
+    },
+    {
+      "q": "Sobre las fases de la memoria según el texto, es cierto que:",
+      "options": [
+        "La codificación consiste en procesar y combinar información nueva.",
+        "La recuperación es la evocación de datos almacenados previamente.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Las tres fases (codificación, consolidación y recuperación) son parte del proceso complejo.",
+      "explanation": "El texto define la codificación como adquisición y la recuperación como evocación de lo almacenado."
+    },
+    {
+      "q": "Respecto a la clasificación de la memoria por su contenido, se afirma que:",
+      "options": [
+        "La declarativa codifica hechos biográficos y conocimientos del mundo.",
+        "La no declarativa incluye habilidades motoras y el efecto priming.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Squire (1987) divide la memoria en explícita (declarativa) e implícita (no declarativa).",
+      "explanation": "La declarativa es consciente (episódica/semántica) y la no declarativa es automática (habilidades/priming)."
+    },
+    {
+      "q": "En relación a los factores del testigo en la codificación, es correcto que:",
+      "options": [
+        "Los niños tienen dificultad para recordar apariencias de adultos.",
+        "Los ancianos son más prudentes que los jóvenes al decidir datos.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "La edad influye en la precisión descriptiva y en el estilo de toma de decisiones.",
+      "explanation": "El texto señala que los niños fallan en rasgos faciales adultos y los ancianos son cautos en sus juicios."
+    },
+    {
+      "q": "Sobre los estereotipos en la percepción de delincuentes, el texto indica que:",
+      "options": [
+        "Existe tendencia a atribuir conductas anormales a rostros anormales.",
+        "Se suele recurrir a estereotipos cuando no se puede precisar un dato.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Bull y Green (1980) estudiaron cómo los prejuicios sesgan la identificación.",
+      "explanation": "Los estereotipos actúan como 'rellenos' de memoria y guías interpretativas ante la ambigüedad."
+    },
+    {
+      "q": "Acerca de la ley de Yerkes-Dodson aplicada a la memoria, se puede afirmar que:",
+      "options": [
+        "Niveles muy bajos de arousal perjudican el rendimiento mnésico.",
+        "Niveles moderados de activación facilitan el rendimiento mnésico.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "La relación entre activación y memoria sigue una forma de U invertida.",
+      "explanation": "El rendimiento óptimo se alcanza con estrés moderado; los extremos (muy alto o muy bajo) son perjudiciales."
+    },
+    {
+      "q": "En cuanto a los factores del suceso que influyen en la exactitud, es cierto que:",
+      "options": [
+        "La oscuridad dificulta la visión de características como colores.",
+        "Los rostros peculiares se reconocen mejor que los rostros típicos.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Factores ambientales y del estímulo son determinantes en la fase de codificación.",
+      "explanation": "Tanto las condiciones lumínicas como la singularidad del rostro afectan directamente a la calidad del registro."
+    },
+    {
+      "q": "Respecto a la información post-suceso, el texto establece que:",
+      "options": [
+        "Puede ser incorporada por el testigo como si fuera el recuerdo original.",
+        "La información sensorial es menos susceptible que la inferencial.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Elizabeth Loftus demostró cómo la información externa puede contaminar la memoria.",
+      "explanation": "El testigo integra datos externos y los detalles inferenciales (estimaciones) son los más vulnerables."
+    },
+    {
+      "q": "Sobre el formato de toma de declaración, se puede asegurar que:",
+      "options": [
+        "El formato narrativo conlleva más exactitud y menos distorsión.",
+        "El formato interrogativo aporta más cantidad de detalles al relato.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "López Latorre (2006) analiza cómo la técnica de entrevista afecta al testimonio.",
+      "explanation": "Hay un equilibrio entre calidad (narrativo) y cantidad (interrogativo) en las declaraciones."
+    },
+    {
+      "q": "En la evaluación de la credibilidad de Wells y Lindsay (1983), se incluye:",
+      "options": [
+        "Información condicional sobre la percepción del incidente real.",
+        "Información sobre el grado de acuerdo entre los diversos testigos.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Proponen variables externas e internas para juzgar si un testigo es creíble.",
+      "explanation": "Incluyen factores ambientales (condicional) y coherencia grupal (intersujeto) para evaluar la credibilidad."
+    },
+    {
+      "q": "Son características de la memoria no declarativa las siguientes:",
+      "options": [
+        "Incluye el aprendizaje de ciertas reglas y el efecto priming.",
+        "Se caracteriza por su automatismo y falta de consciencia inicial.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Es la memoria que nos permite realizar tareas sin 'pensar' en cómo se hacen.",
+      "explanation": "La memoria implícita abarca habilidades motoras y condicionamientos que no requieren evocación consciente."
+    },
+    {
+      "q": "Sobre el entrenamiento de los testigos, el texto afirma que:",
+      "options": [
+        "Un mayor entrenamiento no asegura necesariamente un mejor reconocimiento.",
+        "Los policías suelen dar descripciones más completas por su costumbre.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Malpass (1981) indica que reconocer caras es una habilidad difícil de mejorar con práctica.",
+      "explanation": "Aunque la capacidad de reconocimiento no mejore, el uso de categorías descriptivas sí es superior en expertos."
+    },
+    {
+      "q": "Respecto a la duración del suceso y su recuerdo, se menciona que:",
+      "options": [
+        "A menor tiempo de exposición, peor es el registro y la codificación.",
+        "Tiempos prolongados no garantizan un reconocimiento siempre exacto.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "La duración es una variable de la situación clave para la fidelidad del testimonio.",
+      "explanation": "La relación tiempo-exactitud es positiva hasta cierto punto, pero no es una garantía absoluta de infalibilidad."
+    },
+    {
+      "q": "Sobre la transferencia inconsciente, es cierto que ocurre porque:",
+      "options": [
+        "La cara es más fácil de recordar que el lugar exacto donde se vio.",
+        "Se identifica al autor como alguien visto en un momento contiguo.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Es un error de atribución de contexto en la recuperación de la información.",
+      "explanation": "El testigo confunde la familiaridad de un rostro visto en otro lugar con la autoría del delito presenciado."
+    },
+    {
+      "q": "En relación a la identificación de fotografías, el texto advierte que:",
+      "options": [
+        "Ver muchas caras interfiere con la huella de la memoria original.",
+        "Presentar la foto de una persona eleva el riesgo de identificación falsa.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Es un procedimiento de alto riesgo por la sugestión e interferencia que genera.",
+      "explanation": "La exposición previa a fotos contamina la memoria y puede sustituir la imagen real del agresor."
+    },
+    {
+      "q": "Sobre el acuerdo intrasujeto en la credibilidad, se afirma que:",
+      "options": [
+        "La información del mismo sujeto debe ser coherente en toda la declaración.",
+        "La información debe mantenerse estable a través de las diversas tomas.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Mide la consistencia interna del relato de un único individuo.",
+      "explanation": "Para ser creíble, un testigo no debe contradecirse en diferentes momentos o partes de su relato."
+    },
+    {
+      "q": "Acerca de la memoria episódica y semántica (Tulving, 1983):",
+      "options": [
+        "La episódica almacena acontecimientos de la vida del individuo.",
+        "La semántica almacena hechos, conceptos y vocabulario del mundo.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Ambas son formas de conocimiento declarativo o explícito.",
+      "explanation": "La división de Tulving separa los recuerdos personales (episódica) del conocimiento general (semántica)."
+    },
+    {
+      "q": "Son factores de la situación que influyen en el testimonio:",
+      "options": [
+        "La familiaridad con los estímulos percibidos en la escena.",
+        "El grado de violencia implicado en el desarrollo del suceso.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": 2,
+      "hint": "Son variables ajenas a las características personales del testigo.",
+      "explanation": "Tanto el conocimiento previo del entorno como la carga emocional del acto afectan la exactitud."
+    },
+    {
+      "q": "Indique cuál de las siguientes definiciones de memoria es incorrecta según Squire (1987):",
+      "options": [
+        "La memoria es la persistencia del aprendizaje en un estado accesible.",
+        "La memoria es el proceso por el cual se adquiere información nueva.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Squire diferencia claramente entre aprendizaje (adquisición) y memoria (persistencia).",
+      "explanation": "La opción B describe el aprendizaje, no la memoria, por lo que las definiciones dadas no son ambas correctas como memoria."
+    },
+    {
+      "q": "Sobre los errores de comisión, señale la afirmación falsa:",
+      "options": [
+        "Ocurren cuando el testigo no recuerda datos que sí sucedieron.",
+        "Se asocian habitualmente al proceso de interferencia post-suceso.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Recuerde que el error de comisión implica 'añadir', no 'olvidar'.",
+      "explanation": "La opción A define el error de omisión, por lo que es falsa. Al ser la premisa 'señale la falsa', la estructura de 'ninguna es correcta' aquí sirve para invalidar las propuestas erróneas."
+    },
+    {
+      "q": "Respecto a la memoria a corto plazo, es falso que:",
+      "options": [
+        "Su información está disponible durante meses tras el aprendizaje.",
+        "Se caracteriza por almacenar destrezas motoras automáticas.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "La memoria a corto plazo dura segundos o minutos y no es procedimental.",
+      "explanation": "Ambas opciones A y B son falsas, por lo tanto ninguna afirmación sobre la MCP en el par es correcta."
+    },
+    {
+      "q": "Sobre la memoria intermedia, el texto indica erróneamente que:",
+      "options": [
+        "Se establece definitivamente en los almacenes a largo plazo.",
+        "Retiene información durante un periodo de apenas segundos.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "La memoria intermedia dura horas y no se consolida permanentemente.",
+      "explanation": "La opción A es falsa (no se consolida) y la B es falsa (dura horas, no segundos)."
+    },
+    {
+      "q": "Acerca de los niños como testigos, es incorrecto afirmar que:",
+      "options": [
+        "Son mucho más susceptibles a la sugestión que los adultos.",
+        "Tienen graves dificultades para distinguir realidad y fantasía.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "El texto desmitifica estas creencias comunes sobre los menores.",
+      "explanation": "El texto dice que no parece que tengan más dificultad en distinguir realidad/fantasía ni sean más sugestionables."
+    },
+    {
+      "q": "Sobre el entrenamiento policial en identificación, es falso que:",
+      "options": [
+        "Garantice una habilidad de reconocimiento de caras infalible.",
+        "Les permita obviar los sesgos de etnia al reconocer sospechosos.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "El entrenamiento mejora la descripción verbal, no la capacidad biológica visual.",
+      "explanation": "El reconocimiento de caras es difícil de mejorar incluso con entrenamiento, y los sesgos persisten."
+    },
+    {
+      "q": "En relación al estrés y la memoria, es una afirmación falsa que:",
+      "options": [
+        "Niveles máximos de arousal facilitan siempre la recuperación.",
+        "La ansiedad no influye en absoluto en la exactitud del testigo.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Siga la ley de Yerkes-Dodson para entender la relación estrés-rendimiento.",
+      "explanation": "Tanto A (niveles máximos son malos) como B (la ansiedad sí influye) son proposiciones falsas."
+    },
+    {
+      "q": "Sobre los factores de la situación, señale la opción incorrecta:",
+      "options": [
+        "La sobreestimación temporal ocurre en sucesos muy agradables.",
+        "Un suceso común y rutinario atrae más atención que uno inusual.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Piense en cómo la novedad y el estrés afectan la atención y percepción.",
+      "explanation": "La sobreestimación ocurre en sucesos negativos (A es falsa) y lo inusual atrae más atención (B es falsa)."
+    },
+    {
+      "q": "Respecto a la violencia en los sucesos, es falso que:",
+      "options": [
+        "Los sucesos violentos se recuerden mejor que los actos neutros.",
+        "El alto nivel de estrés del testigo facilite los detalles finos.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "La violencia genera un nivel de activación que suele bloquear la codificación.",
+      "explanation": "Los sucesos violentos se recuerdan peor (A es falsa) y el estrés alto perjudica detalles (B es falsa)."
+    },
+    {
+      "q": "Sobre la recuperación múltiple de recuerdos, es incorrecto decir que:",
+      "options": [
+        "Siempre garantiza la fidelidad absoluta del relato original.",
+        "Elimina por completo la posibilidad de errores de comisión.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Repasar ayuda a retener, pero también cristaliza las distorsiones.",
+      "explanation": "La recuperación múltiple puede deteriorar el recuerdo e inducir más errores de comisión."
+    },
+    {
+      "q": "Acerca de la información post-suceso, el texto señala falsamente que:",
+      "options": [
+        "Solo puede ser proporcionada por miembros de la propia policía.",
+        "No afecta en absoluto a la información de tipo inferencial.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Muchas fuentes externas pueden contaminar el relato del testigo presencial.",
+      "explanation": "Puede venir de muchas fuentes (A falsa) y afecta especialmente a lo inferencial (B falsa)."
+    },
+    {
+      "q": "Sobre el interrogatorio con preguntas falsas, es incorrecto que:",
+      "options": [
+        "Evite que los testigos incorporen información errónea al relato.",
+        "Mejore la exactitud al obligar al testigo a filtrar la verdad.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "Las preguntas sugestivas o falsas son una fuente de distorsión grave.",
+      "explanation": "Las preguntas falsas inducen al testigo a incluir esa información falsa en su testimonio posterior."
+    },
+    {
+      "q": "Sobre el número de agresores y la exactitud, es falso que:",
+      "options": [
+        "A mayor número de personas a identificar, menos errores se cometen.",
+        "Nunca se confunde a un espectador con un autor en ruedas grandes.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "La carga cognitiva de identificar a varios sujetos aumenta la probabilidad de fallo.",
+      "explanation": "A más agresores, más errores (A falsa) y es común confundir espectadores (B falsa)."
+    },
+    {
+      "q": "En cuanto a la credibilidad del testimonio, es una premisa falsa que:",
+      "options": [
+        "Dependa exclusivamente de la metamemoria del propio testigo.",
+        "El acuerdo intersujeto sea irrelevante para juzgar el realismo.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "La evaluación de la credibilidad es un proceso multifactorial y social.",
+      "explanation": "No depende solo de la metamemoria (A falsa) y el acuerdo intersujeto es fundamental (B falsa)."
+    },
+    {
+      "q": "Respecto a la fase de consolidación de la memoria, es incorrecto que:",
+      "options": [
+        "Finalice inmediatamente antes de que se produzca la codificación.",
+        "Sea el proceso de recibir, procesar y combinar datos nuevos.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "La consolidación es posterior a la adquisición y anterior a la evocación estable.",
+      "explanation": "Ocurre tras la codificación (A falsa) y la definición de B corresponde a la codificación."
+    },
+    {
+      "q": "Sobre la memoria episódica, señale la afirmación falsa:",
+      "options": [
+        "Almacena conceptos abstractos y vocabulario técnico general.",
+        "Es un tipo de memoria no declarativa caracterizada por el eco.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "La episódica es biográfica y consciente (declarativa).",
+      "explanation": "La opción A describe la semántica y la B yerra al decir que es no declarativa."
+    },
+    {
+      "q": "En relación a la identificación interétnica, es falso afirmar que:",
+      "options": [
+        "Sea igual de fácil reconocer caras de cualquier etnia humana.",
+        "La actitud del testigo no influya en la calidad del reconocimiento.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "El efecto de 'propia etnia' está ampliamente documentado en psicología.",
+      "explanation": "Es más fácil reconocer la propia etnia (A falsa) y la actitud sí influye (B falsa)."
+    },
+    {
+      "q": "Sobre la exactitud y los errores de omisión, es incorrecto que:",
+      "options": [
+        "Consistan en añadir detalles que no ocurrieron en la realidad.",
+        "Sean menos comunes que los errores de comisión por sugestión.",
+        "Ninguna es correcta."
+      ],
+      "correct": 2,
+      "hint": "La omisión es 'quitar' o 'faltar', no 'añadir'.",
+      "explanation": "Añadir detalles es comisión (A falsa) y el texto no establece que sean menos comunes."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "¿Cómo se diferencian y relacionan los conceptos de exactitud y credibilidad en el marco de la psicología del testimonio?",
+      "keywords": [
+        "exactitud",
+        "credibilidad",
+        "fidelidad",
+        "realismo"
+      ],
+      "answer": "La exactitud se refiere a la fidelidad entre lo ocurrido y lo relatado, centrándose en la realidad de los hechos y errores de comisión u omisión. La credibilidad es el grado de seguridad o realismo que se atribuye a la declaración. Aunque están relacionadas, un testimonio puede ser muy creíble (seguro) pero poco exacto (erróneo)."
+    },
+    {
+      "q": "Analice los errores de comisión y omisión en la exactitud de un testimonio.",
+      "keywords": [
+        "comisión",
+        "omisión",
+        "exactitud",
+        "error"
+      ],
+      "answer": "Los errores de comisión ocurren cuando el testigo añade datos falsos o inexistentes al relato (falsas memorias). Los errores de omisión suceden cuando el testigo no declara datos que sí ocurrieron, generalmente por olvido o falta de codificación."
+    },
+    {
+      "q": "Explique la relación entre aprendizaje y memoria según Squire (1987).",
+      "keywords": [
+        "aprendizaje",
+        "memoria",
+        "persistencia",
+        "adquisición"
+      ],
+      "answer": "El aprendizaje se define como el proceso de adquisición de nueva información, mientras que la memoria es la persistencia de ese aprendizaje en un estado que permite su acceso posterior. Ambos procesos configuran la experiencia individual y la conducta futura."
+    },
+    {
+      "q": "Describa las fases de la memoria y su relevancia en la toma de un testimonio.",
+      "keywords": [
+        "codificación",
+        "consolidación",
+        "recuperación",
+        "fases"
+      ],
+      "answer": "1. Codificación: adquisición y procesamiento de información nueva. 2. Consolidación: almacenamiento de la información hasta que se vuelve persistente. 3. Recuperación: evocación de la información para su uso. Fallos en cualquiera de estas fases afectan la calidad del testimonio final."
+    },
+    {
+      "q": "Diferencie la memoria episódica de la memoria semántica dentro de la memoria declarativa.",
+      "keywords": [
+        "episódica",
+        "semántica",
+        "declarativa",
+        "conocimiento"
+      ],
+      "answer": "La memoria episódica almacena eventos biográficos y experiencias personales del individuo. La memoria semántica contiene el conocimiento general del mundo, conceptos y vocabulario. En un testimonio, predomina la recuperación de la memoria episódica."
+    },
+    {
+      "q": "Explique el concepto de memoria de trabajo y su función en tareas complejas.",
+      "keywords": [
+        "memoria de trabajo",
+        "procesamiento cognitivo",
+        "corto plazo"
+      ],
+      "answer": "Es un subtipo de memoria a corto plazo que permite la representación simultánea de distintos tipos de información para su procesamiento cognitivo inmediato. Es crucial para resolver problemas complejos o aprender destrezas que requieren integración de datos."
+    },
+    {
+      "q": "Analice las implicaciones del experimento de Loftus y Palmer (1974) sobre la maleabilidad de la memoria.",
+      "keywords": [
+        "Elizabeth Loftus",
+        "manipulación",
+        "sugestión",
+        "falsas memorias"
+      ],
+      "answer": "Demostró científicamente que la memoria puede ser manipulada mediante la palabra y la formulación de preguntas. Los testigos pueden integrar información falsa sugerida externamente en sus propios recuerdos originales del suceso."
+    },
+    {
+      "q": "Defina el 'Efecto Mandela' y ponga un ejemplo relacionado con la cultura popular.",
+      "keywords": [
+        "Efecto Mandela",
+        "falso recuerdo",
+        "colectivo"
+      ],
+      "answer": "Es un falso recuerdo compartido por un gran número de personas. Un ejemplo es la creencia de que Darth Vader dice 'Luke, yo soy tu padre', cuando en realidad la frase original es 'No, yo soy tu padre'."
+    },
+    {
+      "q": "Evalúe las diferencias de género en la exactitud del testimonio.",
+      "keywords": [
+        "género",
+        "identificación",
+        "detalles",
+        "falsas alarmas"
+      ],
+      "answer": "No hay diferencias significativas en la habilidad general de identificación. Sin embargo, las mujeres tienden a realizar ligeramente más identificaciones exactas pero también más falsas alarmas. Las diferencias suelen radicar más en el tipo de detalles descritos por factores individuales o educativos."
+    },
+    {
+      "q": "¿Cómo influye la edad en la exactitud de los testigos niños y ancianos?",
+      "keywords": [
+        "edad",
+        "niños",
+        "ancianos",
+        "percepción"
+      ],
+      "answer": "Los niños distinguen bien realidad de fantasía pero son más inexactos describiendo la apariencia física de adultos. Los ancianos pueden tener déficits perceptivos, pero suelen ser más prudentes en sus decisiones y tan exactos como los jóvenes en identificaciones concretas."
+    },
+    {
+      "q": "Explique el efecto de la etnia en el reconocimiento facial.",
+      "keywords": [
+        "etnia",
+        "reconocimiento facial",
+        "contacto",
+        "identificación"
+      ],
+      "answer": "Es más fácil reconocer caras de la propia etnia. La identificación interétnica mejora con la frecuencia de contacto previo, la actitud del testigo hacia esa etnia y la realidad de su experiencia."
+    },
+    {
+      "q": "Analice cómo los estereotipos y expectativas sesgan la percepción del delincuente.",
+      "keywords": [
+        "estereotipos",
+        "expectativas",
+        "sesgo",
+        "prejuicios"
+      ],
+      "answer": "Existe una tendencia a atribuir conductas anormales a personas con fisonomía 'anormal' y ser indulgentes con personas atractivas. Los prejuicios personales rellenan huecos de información ambigua, especialmente bajo presión para identificar positivamente."
+    },
+    {
+      "q": "¿Es el entrenamiento policial un factor determinante para un mejor reconocimiento facial?",
+      "keywords": [
+        "entrenamiento",
+        "policía",
+        "descripción",
+        "reconocimiento"
+      ],
+      "answer": "No necesariamente, ya que la habilidad para reconocer caras es difícil de mejorar. Sin embargo, los policías entrenados suelen ofrecer descripciones más completas porque dominan mejor las categorías descriptivas de sospechosos."
+    },
+    {
+      "q": "Relacione la Ley de Yerkes-Dodson con el rendimiento de la memoria bajo estrés.",
+      "keywords": [
+        "Yerkes-Dodson",
+        "estrés",
+        "arousal",
+        "activación"
+      ],
+      "answer": "Postula que el rendimiento es óptimo con niveles moderados de activación (arousal). Niveles muy bajos (desinterés) o muy altos (pánico/estrés extremo) perjudican la capacidad de recordar adecuadamente un suceso."
+    },
+    {
+      "q": "¿Cómo afecta la duración del suceso y su estimación subjetiva a la exactitud?",
+      "keywords": [
+        "duración",
+        "tiempo",
+        "sobreestimación",
+        "exactitud"
+      ],
+      "answer": "A menor duración, menor exactitud debido a un registro pobre. Existe una tendencia subjetiva a sobreestimar la duración de sucesos negativos o estresantes por parte del testigo."
+    },
+    {
+      "q": "Discuta el impacto de las condiciones de iluminación y distancia en la fiabilidad del testimonio.",
+      "keywords": [
+        "luz",
+        "distancia",
+        "visión",
+        "fiabilidad"
+      ],
+      "answer": "La oscuridad reduce el campo visual y dificulta la percepción de colores. Cambios bruscos de luz (deslumbramientos) y grandes distancias merman la fiabilidad al impedir la captación de detalles finos y características clave."
+    },
+    {
+      "q": "Explique por qué un suceso inusual se recuerda mejor que uno rutinario.",
+      "keywords": [
+        "novedad",
+        "atención",
+        "codificación",
+        "interés"
+      ],
+      "answer": "Los sucesos novedosos o extraordinarios atraen más la atención y sostienen el interés del observador, facilitando una codificación más profunda. Los hechos comunes o insignificantes pasan desapercibidos y se olvidan pronto."
+    },
+    {
+      "q": "¿De qué manera el grado de violencia de un suceso afecta la memoria del testigo?",
+      "keywords": [
+        "violencia",
+        "estrés",
+        "recuerdo",
+        "interferencia"
+      ],
+      "answer": "Sucesos muy violentos suelen recordarse peor que los neutros debido al alto nivel de estrés experimentado, lo que interfiere con la capacidad de procesamiento de información según la relación activación-rendimiento."
+    },
+    {
+      "q": "Analice el riesgo de la frecuencia de exposición a un suceso repetitivo.",
+      "keywords": [
+        "frecuencia",
+        "interferencia",
+        "error de comisión"
+      ],
+      "answer": "Aunque permite recordar más detalles, aumenta los errores de comisión debido a la interferencia entre las distintas ocasiones en que se presenció el hecho, dificultando distinguir qué ocurrió en qué momento."
+    },
+    {
+      "q": "¿Cómo influye el número de agresores y la peculiaridad del rostro en la identificación?",
+      "keywords": [
+        "agresores",
+        "rostro",
+        "peculiaridad",
+        "identificación"
+      ],
+      "answer": "A mayor número de agresores, más errores de identificación. Por otro lado, los rostros con rasgos peculiares o inusuales se reconocen y recuerdan significativamente mejor que los rostros típicos o comunes."
+    },
+    {
+      "q": "Evalúe los efectos de la demora y la recuperación múltiple en el olvido.",
+      "keywords": [
+        "demora",
+        "olvido",
+        "recuperación múltiple",
+        "deterioro"
+      ],
+      "answer": "La demora aumenta la probabilidad de olvido. La recuperación múltiple (repasar el recuerdo) puede prolongarlo, pero también deteriorarlo al introducir errores que se consolidan con el tiempo y se vuelven difíciles de detectar."
+    },
+    {
+      "q": "¿Qué es la información post-suceso y por qué es tan crítica en procesos judiciales?",
+      "keywords": [
+        "información post-suceso",
+        "contaminación",
+        "sugestión",
+        "huella de memoria"
+      ],
+      "answer": "Es información adquirida tras el hecho (por medios, policía o terceros) que el testigo incorpora erróneamente a su recuerdo original. Es crítica porque es difícil distinguir la huella real de la sugerida, contaminando el testimonio."
+    },
+    {
+      "q": "Diferencie entre información sensorial e información inferencial ante el efecto post-suceso.",
+      "keywords": [
+        "sensorial",
+        "inferencial",
+        "sugestión",
+        "sensibilidad"
+      ],
+      "answer": "La información sensorial (detalles concretos percibidos) es más resistente a la modificación. La información inferencial (estimaciones basadas en conocimientos previos o deducciones) es muy susceptible de verse alterada por sugestiones externas."
+    },
+    {
+      "q": "Compare el formato narrativo frente al interrogativo en la toma de declaración.",
+      "keywords": [
+        "narrativo",
+        "interrogativo",
+        "exactitud",
+        "detalles"
+      ],
+      "answer": "El formato narrativo genera testimonios más exactos y con menos distorsiones, pero con menos detalles. El formato interrogativo aporta más cantidad de información, pero aumenta considerablemente el riesgo de distorsiones y errores."
+    },
+    {
+      "q": "¿Cómo influye la atmósfera y la secuencia de preguntas en la exactitud del testimonio?",
+      "keywords": [
+        "atmósfera",
+        "secuencia temporal",
+        "interrogatorio"
+      ],
+      "answer": "Una atmósfera acogedora favorece la calidad del relato, especialmente en niños. Una secuencia de preguntas que respete el orden temporal de los hechos aumenta significativamente la exactitud de la declaración."
+    },
+    {
+      "q": "Explique el fenómeno de la transferencia inconsciente.",
+      "keywords": [
+        "transferencia inconsciente",
+        "contexto",
+        "error de identificación"
+      ],
+      "answer": "Ocurre cuando un testigo identifica como autor a alguien que vio en un contexto distinto o contiguo al suceso. Se debe a que la cara se recuerda con más facilidad que el contexto o lugar donde fue vista originalmente."
+    },
+    {
+      "q": "Analice los riesgos asociados a la identificación mediante fotografías.",
+      "keywords": [
+        "fotografías",
+        "sesgo",
+        "interferencia",
+        "identificación errónea"
+      ],
+      "answer": "Induce sesgos y eleva la probabilidad de identificaciones falsas. Además, ver múltiples fotografías interfiere con la memoria original del rostro del culpable, incrementando el error."
+    },
+    {
+      "q": "¿Qué papel juega la información condicional en la evaluación de la credibilidad?",
+      "keywords": [
+        "información condicional",
+        "credibilidad",
+        "percepción"
+      ],
+      "answer": "Se refiere a las circunstancias físicas y temporales del incidente (luz, duración, tiempo transcurrido). Es fundamental para juzgar subjetivamente si el testigo realmente pudo percibir lo que afirma."
+    },
+    {
+      "q": "Diferencie entre acuerdo intrasujeto y acuerdo intersujeto en el análisis de credibilidad.",
+      "keywords": [
+        "intrasujeto",
+        "intersujeto",
+        "coherencia",
+        "coincidencia"
+      ],
+      "answer": "El acuerdo intrasujeto es la coherencia interna del relato de un mismo testigo a lo largo del tiempo. El acuerdo intersujeto es la coincidencia entre los testimonios de diferentes testigos sobre el mismo hecho."
+    },
+    {
+      "q": "Discuta el peligro de la 'creencia en la mayoría' en el acuerdo intersujeto.",
+      "keywords": [
+        "mayoría",
+        "intersujeto",
+        "error colectivo",
+        "credibilidad"
+      ],
+      "answer": "Existe la tendencia a creer que si muchos testigos coinciden, deben tener razón. Sin embargo, si todos señalan a un inocente basándose en los mismos sesgos o información post-suceso compartida, la mayoría puede estar colectivamente equivocada."
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Introducción",
+      "q": "¿Cómo define López Latorre (2006) la memoria de testigos?",
+      "a": "Como el conjunto de conocimientos e investigaciones basados en la memoria humana que intentan determinar la calidad de los testimonios sobre delitos y accidentes."
+    },
+    {
+      "cat": "Conceptos Básicos",
+      "q": "¿Cuál es la creencia incorrecta más común sobre la capacidad de los testigos?",
+      "a": "Creer que si una persona presencia un suceso necesariamente será capaz de relatar cómo ocurrió realmente."
+    },
+    {
+      "cat": "Psicología del Testimonio",
+      "q": "¿De qué dos aspectos principales se compone el campo de estudio de la psicología del testimonio?",
+      "a": "De la exactitud y de la credibilidad de las declaraciones de los testigos."
+    },
+    {
+      "cat": "Exactitud",
+      "q": "¿Qué analiza específicamente la 'exactitud' en el testimonio?",
+      "a": "Los factores que inciden en la fidelidad entre lo que realmente ocurrió y lo que el testigo relata."
+    },
+    {
+      "cat": "Exactitud",
+      "q": "¿En qué consiste un error de 'comisión' en el testimonio?",
+      "a": "Ocurre cuando el testigo añade datos o detalles que no tuvieron lugar en la realidad."
+    },
+    {
+      "cat": "Exactitud",
+      "q": "¿En qué consiste un error de 'omisión' en el testimonio?",
+      "a": "Ocurre cuando el testigo no declara datos que sí sucedieron, generalmente por falta de recuerdo."
+    },
+    {
+      "cat": "Credibilidad",
+      "q": "¿A qué hace referencia la 'credibilidad' en la psicología del testimonio?",
+      "a": "Al grado de seguridad, realismo o confianza que se atribuye a la declaración del testigo."
+    },
+    {
+      "cat": "Aprendizaje y Memoria",
+      "q": "¿Cómo diferencia Squire (1987) entre aprendizaje y memoria?",
+      "a": "El aprendizaje es el proceso de adquirir nueva información; la memoria es la persistencia de dicho aprendizaje para acceder a él después."
+    },
+    {
+      "cat": "Fases de la Memoria",
+      "q": "¿Qué ocurre durante la fase de codificación de la memoria?",
+      "a": "El individuo recibe, procesa y combina la información nueva para su adquisición."
+    },
+    {
+      "cat": "Fases de la Memoria",
+      "q": "¿Cuál es el proceso que define la fase de consolidación?",
+      "a": "Es el almacenamiento de la información codificada hasta que se establece definitivamente en un almacén persistente."
+    },
+    {
+      "cat": "Fases de la Memoria",
+      "q": "¿En qué consiste la fase de recuperación de la memoria?",
+      "a": "En la evocación de información que ha sido almacenada previamente para poder ser utilizada."
+    },
+    {
+      "cat": "Tipos de Memoria",
+      "q": "¿Qué caracteriza a la memoria a corto plazo?",
+      "a": "Es la retención temporal de información recién adquirida, disponible solo durante unos segundos o minutos."
+    },
+    {
+      "cat": "Tipos de Memoria",
+      "q": "¿Cuál es la función de la memoria de trabajo?",
+      "a": "Se usa para el aprendizaje de destrezas complejas que requieren procesar simultáneamente distintos tipos de información."
+    },
+    {
+      "cat": "Tipos de Memoria",
+      "q": "¿Qué es la memoria intermedia?",
+      "a": "Es un tipo de memoria que dura horas pero no llega a consolidarse como memoria a largo plazo."
+    },
+    {
+      "cat": "Tipos de Memoria",
+      "q": "¿Cómo se define la memoria a largo plazo?",
+      "a": "Es el tipo de memoria que retiene información durante periodos prolongados, desde meses hasta años."
+    },
+    {
+      "cat": "Tipos de Memoria",
+      "q": "¿A qué se refiere la memoria declarativa o explícita?",
+      "a": "Al recuerdo consciente y voluntario de acontecimientos biográficos y conocimientos de hechos."
+    },
+    {
+      "cat": "Tipos de Memoria",
+      "q": "¿Qué diferencia a la memoria episódica de la semántica según Tulving?",
+      "a": "La episódica almacena vivencias personales; la semántica almacena conocimiento general del mundo y conceptos."
+    },
+    {
+      "cat": "Tipos de Memoria",
+      "q": "¿Qué procesos incluye la memoria no declarativa o implícita?",
+      "a": "Habilidades motoras, reglas automáticas, efecto priming y condicionamiento asociativo y no asociativo."
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Qué demostró Elizabeth Loftus en su experimento de los coches en 1974?",
+      "a": "La capacidad de manipular y transformar la memoria de los testigos mediante el uso de palabras específicas."
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿En qué consiste el denominado 'efecto Mandela'?",
+      "a": "Es un falso recuerdo compartido de manera idéntica por un gran número de personas."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Cómo influye el género en la exactitud de las identificaciones?",
+      "a": "No hay diferencias significativas en habilidad, aunque las mujeres tienden a dar más detalles y tener más falsas alarmas."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Qué dificultad específica presentan los niños al recordar personas?",
+      "a": "Tienden a ser más inexactos al recordar la apariencia física, especialmente cuando se trata de adultos."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Cuál es la característica principal de los ancianos como testigos?",
+      "a": "Tienen más problemas de percepción, pero son más prudentes al decidir y exactos en datos concretos de identificación."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Qué es el sesgo de etnia en el reconocimiento de rostros?",
+      "a": "Es la mayor facilidad para reconocer caras de la propia etnia que de etnias diferentes."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿De qué depende la mejora en la identificación interétnica?",
+      "a": "De la frecuencia de contacto, la experiencia real y la actitud del testigo hacia esa etnia."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Qué tendencia existe respecto a los estereotipos y la fisonomía?",
+      "a": "La tendencia a atribuir conductas anormales a personas con fisonomía anormal y ser indulgentes con los atractivos."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Cómo afectan las expectativas y prejuicios a la percepción de los hechos?",
+      "a": "Sesgan la interpretación, especialmente si la percepción del autor es ambigua o hay presión para identificar."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Qué ocurre cuando un testigo no puede precisar un dato específico?",
+      "a": "Suele recurrir a estereotipos previos en lugar de reconocer que no recuerda el dato."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Asegura el entrenamiento policial un mejor reconocimiento de caras?",
+      "a": "No, la habilidad de reconocer caras es difícil de mejorar, aunque los policías dan descripciones más completas por hábito."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Qué establece la ley de Yerkes-Dodson respecto al estrés y la memoria?",
+      "a": "Niveles moderados de activación facilitan la memoria, mientras que niveles muy altos o bajos la perjudican."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Cómo influye la duración del suceso en el testimonio?",
+      "a": "A menor duración, menor exactitud debido a un peor registro y codificación de la información."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Qué tendencia de estimación temporal tienen los testigos en sucesos estresantes?",
+      "a": "Existe una tendencia a sobreestimar la duración de los sucesos negativos y estresantes."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Qué impacto tiene un detalle muy llamativo en el recuerdo general?",
+      "a": "Desvía la atención hacia sí mismo, provocando que otros detalles relevantes pasen desapercibidos."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Cómo afecta la oscuridad a la fiabilidad del testimonio?",
+      "a": "Reduce el campo visual y dificulta la percepción de características críticas como los colores."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Por qué la familiaridad con los estímulos mejora la memoria?",
+      "a": "Permite organizar la información en unidades mayores y realizar un procesamiento más profundo."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Qué tipo de sucesos se recuerdan mejor según su naturaleza?",
+      "a": "Los sucesos inusuales o extraordinarios, porque atraen y sostienen mejor la atención."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Cómo afecta la implicación emocional del testigo a la memoria?",
+      "a": "A mayor implicación, más factores emocionales distorsionan el recuerdo original del suceso."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Cómo influye el grado de violencia en el recuerdo del delito?",
+      "a": "Los sucesos muy violentos se recuerdan peor que los neutros debido al alto nivel de estrés del testigo."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Qué efecto tiene la frecuencia de exposición a un suceso repetitivo?",
+      "a": "Aumenta los detalles recordados pero también los errores de comisión por interferencia entre episodios."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Qué riesgo existe cuando hay un gran número de agresores?",
+      "a": "Aumentan los errores de identificación y se puede confundir a un espectador con el autor."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Qué tipo de rostros son más fáciles de reconocer?",
+      "a": "Los rostros peculiares se reconocen mejor que los rostros típicos o normales."
+    },
+    {
+      "cat": "Retención y Recuperación",
+      "q": "¿Cuál es el efecto de la demora temporal en el recuerdo?",
+      "a": "Cuanto más tiempo pasa, más probable es el olvido, dependiendo de la calidad inicial de la huella."
+    },
+    {
+      "cat": "Retención y Recuperación",
+      "q": "¿Cómo afecta la recuperación múltiple al recuerdo?",
+      "a": "Repasar prolonga el recuerdo, pero también aumenta el número de errores y la dificultad para reconocerlos."
+    },
+    {
+      "cat": "Retención y Recuperación",
+      "q": "¿Qué es la información post-suceso?",
+      "a": "Información adquirida tras el evento (por prensa, amigos o policía) que el testigo incorpora a su propio recuerdo."
+    },
+    {
+      "cat": "Retención y Recuperación",
+      "q": "¿Por qué es peligrosa la información post-suceso?",
+      "a": "Porque deteriora el recuerdo original y es difícil distinguir entre memorias reales y sugeridas."
+    },
+    {
+      "cat": "Retención y Recuperación",
+      "q": "¿Qué tipo de información es más susceptible a la distorsión post-suceso?",
+      "a": "La información inferencial (estimaciones) es muy sensible, mientras que la sensorial es más resistente."
+    },
+    {
+      "cat": "Retención y Recuperación",
+      "q": "¿Qué información se modifica más fácilmente: la relevante o la irrelevante?",
+      "a": "La información irrelevante, ya que su recuerdo original suele ser más pobre."
+    },
+    {
+      "cat": "Retención y Recuperación",
+      "q": "¿Qué fuente de información post-suceso tiene más probabilidad de ser aceptada?",
+      "a": "La proveniente de personas con autoridad moral, conocimientos del caso o que se perciben como imparciales."
+    },
+    {
+      "cat": "Toma de Declaración",
+      "q": "¿Qué ventajas e inconvenientes tiene el formato narrativo?",
+      "a": "Tiene más exactitud y menos distorsiones, pero es más pobre en cantidad de detalles."
+    },
+    {
+      "cat": "Toma de Declaración",
+      "q": "¿Qué caracteriza al formato interrogativo en la toma de declaración?",
+      "a": "Proporciona una mayor cantidad de información pero conlleva más distorsiones."
+    },
+    {
+      "cat": "Toma de Declaración",
+      "q": "¿Cómo influye la atmósfera del interrogatorio?",
+      "a": "Una atmósfera acogedora favorece la cantidad y calidad de información, especialmente en niños."
+    },
+    {
+      "cat": "Toma de Declaración",
+      "q": "¿Cómo debe ser la secuencia de preguntas para maximizar la exactitud?",
+      "a": "Las preguntas deben seguir la secuencia temporal en la que ocurrió el suceso."
+    },
+    {
+      "cat": "Toma de Declaración",
+      "q": "¿Qué efecto producen las preguntas falsas durante el interrogatorio?",
+      "a": "Provocan que el testigo incluya esa información falsa en su testimonio posterior."
+    },
+    {
+      "cat": "Transferencia Inconsciente",
+      "q": "¿Qué es la transferencia inconsciente?",
+      "a": "Identificar erróneamente a alguien visto en otro lugar o momento como el autor del delito."
+    },
+    {
+      "cat": "Transferencia Inconsciente",
+      "q": "¿Por qué ocurre la transferencia inconsciente?",
+      "a": "Porque la cara de una persona puede recordarse con más facilidad que el lugar o contexto donde fue vista."
+    },
+    {
+      "cat": "Identificación fotográfica",
+      "q": "¿Qué riesgo principal conlleva la identificación por fotografías?",
+      "a": "Induce sesgos y eleva la probabilidad de identificar falsamente a un inocente como delincuente."
+    },
+    {
+      "cat": "Identificación fotográfica",
+      "q": "¿Cómo afecta ver muchas fotos a la memoria original?",
+      "a": "Interfiere con la memoria original, incrementando las identificaciones erróneas."
+    },
+    {
+      "cat": "Credibilidad",
+      "q": "¿Qué tres tipos de información propone Wells y Lindsay (1983) para evaluar la credibilidad?",
+      "a": "Información condicional, acuerdo intrasujeto y acuerdo intersujeto."
+    },
+    {
+      "cat": "Credibilidad",
+      "q": "¿Qué es la información condicional en la evaluación de credibilidad?",
+      "a": "Se refiere a las condiciones de percepción (duración, luz, tiempo transcurrido hasta la declaración)."
+    },
+    {
+      "cat": "Credibilidad",
+      "q": "¿Qué define al acuerdo intrasujeto?",
+      "a": "La coherencia que mantiene la declaración de un mismo sujeto a través del tiempo."
+    },
+    {
+      "cat": "Credibilidad",
+      "q": "¿Qué es el acuerdo intersujeto?",
+      "a": "La coincidencia o consenso entre las declaraciones de diferentes testigos de un mismo hecho."
+    },
+    {
+      "cat": "Credibilidad",
+      "q": "¿Qué sesgo social existe respecto al acuerdo intersujeto?",
+      "a": "Tendemos a creer que si muchos coinciden es imposible que se equivoquen, aunque señalen a un inocente."
+    },
+    {
+      "cat": "Exactitud",
+      "q": "¿Cuál es la relación entre exactitud y realidad en el testimonio?",
+      "a": "La exactitud mide el ajuste entre lo relatado por el testigo y lo que ocurrió verdaderamente."
+    },
+    {
+      "cat": "Exactitud",
+      "q": "¿Cómo se garantiza el proceso de exactitud en psicología forense?",
+      "a": "Mediante el desarrollo de estrategias que aseguren la fidelidad del relato con los hechos reales."
+    },
+    {
+      "cat": "Memoria",
+      "q": "¿Por qué se dice que los individuos somos fruto de nuestras experiencias pasadas?",
+      "a": "Porque la experiencia configura nuestras características mediante el aprendizaje y la memoria."
+    },
+    {
+      "cat": "Fases de la Memoria",
+      "q": "¿Cuándo finaliza exactamente la fase de consolidación?",
+      "a": "Cuando la memoria se establece definitivamente en un almacén persistente."
+    },
+    {
+      "cat": "Tipos de Memoria",
+      "q": "¿Qué tipo de información retiene la memoria a corto plazo?",
+      "a": "Información reciente y puntual, como un número de teléfono o una clave de activación."
+    },
+    {
+      "cat": "Tipos de Memoria",
+      "q": "¿En qué situaciones es crucial la memoria de trabajo?",
+      "a": "En la resolución de problemas matemáticos complejos o tareas que requieren representación simultánea de datos."
+    },
+    {
+      "cat": "Tipos de Memoria",
+      "q": "¿Cómo afecta la memoria declarativa al conocimiento del mundo?",
+      "a": "Codifica la información mediante la memoria semántica, que guarda hechos, conceptos y vocabulario."
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Cuál es la definición técnica de falsos recuerdos?",
+      "a": "Recuerdos de sucesos que no ocurrieron o que ocurrieron de una manera distinta a la descrita."
+    },
+    {
+      "cat": "Falsas Memorias",
+      "q": "¿Cuál es la frase real de Darth Vader que se suele citar mal por el efecto Mandela?",
+      "a": "La frase real es 'No, yo soy tu padre', en lugar de 'Luke, yo soy tu padre'."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Por qué varían las declaraciones de diferentes testigos ante un mismo hecho?",
+      "a": "Debido a factores individuales del testigo y factores ambientales del momento de la codificación."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿A qué se deben las diferencias de detalle entre hombres y mujeres?",
+      "a": "A diferencias individuales, educativas y a las condiciones específicas del suceso presenciado."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Qué capacidad mantienen los niños similar a los adultos en el testimonio?",
+      "a": "La capacidad para distinguir entre realidad y fantasía, y su nivel de sugestibilidad."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Qué ventaja presentan los ancianos en tareas de identificación?",
+      "a": "Pueden ser tan exactos como los jóvenes en datos concretos de identificación de personas."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿De qué depende la calidad de la identificación interétnica?",
+      "a": "Fundamentalmente del contacto previo y la actitud hacia la etnia de la persona a identificar."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Cómo influye el atractivo físico en los procesos judiciales?",
+      "a": "Existe un sesgo que tiende a ser más indulgente con las personas que se consideran atractivas."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Por qué un nivel muy bajo de arousal perjudica la memoria?",
+      "a": "Porque no hay suficiente activación para procesar y codificar la información de forma efectiva."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Por qué el tiempo prolongado de exposición no garantiza un reconocimiento exacto?",
+      "a": "Porque la exactitud depende de más factores que solo el tiempo, aunque este sea necesario para la codificación."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Qué efecto tienen los deslumbramientos en el testimonio?",
+      "a": "Hacen que el testimonio sea menos fiable debido a la distorsión visual provocada por el cambio de luz."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Qué permite el procesamiento profundo de la información en un suceso?",
+      "a": "Un conocimiento previo o familiaridad con los estímulos que se están percibiendo."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Por qué los sucesos rutinarios se recuerdan peor?",
+      "a": "Porque al ser comunes o insignificantes, no logran atraer ni mantener la atención del testigo."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Cómo influye la violencia en los niveles de estrés del testigo?",
+      "a": "La violencia extrema eleva el estrés, lo que según Yerkes-Dodson, deteriora la capacidad de recuerdo."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Qué error es común tras exposiciones frecuentes a un mismo tipo de suceso?",
+      "a": "Los errores de comisión, causados por la interferencia de los detalles de las distintas ocasiones."
+    },
+    {
+      "cat": "Retención y Recuperación",
+      "q": "¿De qué factores depende el olvido de las caras de sospechosos?",
+      "a": "Del significado atribuido a la cara y del tiempo total durante el cual se la observó."
+    },
+    {
+      "cat": "Retención y Recuperación",
+      "q": "¿Qué mecanismo usa el testigo para 'rellenar' huecos de memoria?",
+      "a": "Utiliza conocimientos generales sobre sucesos similares para guiar la adivinación."
+    },
+    {
+      "cat": "Retención y Recuperación",
+      "q": "¿Cuál es la diferencia entre información inferencial y sensorial?",
+      "a": "La inferencial proviene de estimaciones lógicas; la sensorial proviene de detalles físicos y directos."
+    },
+    {
+      "cat": "Retención y Recuperación",
+      "q": "¿Por qué la información sensorial es menos susceptible al post-suceso?",
+      "a": "Porque son detalles concretos más difíciles de modificar que las suposiciones o inferencias."
+    },
+    {
+      "cat": "Toma de Declaración",
+      "q": "¿Qué tres variables del interrogatorio afectan la exactitud según López Latorre?",
+      "a": "La forma de iniciar el interrogatorio, la atmósfera creada y la manipulación de las frases/preguntas."
+    },
+    {
+      "cat": "Toma de Declaración",
+      "q": "¿Qué efecto tiene una atmósfera tensa o desafiante?",
+      "a": "Reduce la cantidad y calidad de la información proporcionada por el testigo."
+    },
+    {
+      "cat": "Toma de Declaración",
+      "q": "¿Qué ocurre si se cambia el orden temporal en las preguntas de un interrogatorio?",
+      "a": "Se reduce la exactitud del testimonio en comparación con un orden cronológico."
+    },
+    {
+      "cat": "Identificación fotográfica",
+      "q": "¿Por qué ver muchas caras en archivos policiales es contraproducente?",
+      "a": "Porque las nuevas caras interfieren con la huella de memoria original del culpable."
+    },
+    {
+      "cat": "Credibilidad",
+      "q": "¿Qué papel juega la metamemoria en la credibilidad?",
+      "a": "Es un factor adicional necesario para evaluar de forma subjetiva cuán creíble es un testimonio."
+    },
+    {
+      "cat": "Conceptos Básicos",
+      "q": "¿Cómo influye la experiencia pasada en la conducta futura según el PDF?",
+      "a": "A través del aprendizaje y la memoria, que permiten adquirir respuestas que determinan el comportamiento."
+    },
+    {
+      "cat": "Fases de la Memoria",
+      "q": "¿Qué proceso sigue inmediatamente a la codificación?",
+      "a": "La fase de consolidación o almacenamiento de la información."
+    },
+    {
+      "cat": "Tipos de Memoria",
+      "q": "¿Qué almacena la memoria episódica específicamente?",
+      "a": "Acontecimientos experimentados directamente a lo largo de la vida del individuo."
+    },
+    {
+      "cat": "Factores de Exactitud",
+      "q": "¿Cuál es la relación entre distancia y fiabilidad del testimonio?",
+      "a": "A mayor distancia, mayor dificultad para ver detalles, lo que reduce drásticamente la fiabilidad."
+    },
+    {
+      "cat": "Factores de la Situación",
+      "q": "¿Cómo afecta el número de personas a identificar a la tasa de acierto?",
+      "a": "Cuantas más personas deba identificar el testigo, mayor es la probabilidad de cometer errores."
+    },
+    {
+      "cat": "Toma de Declaración",
+      "q": "¿Qué ocurre al volver a interrogar a un testigo tras preguntas falsas?",
+      "a": "Es muy probable que el testigo incluya esa información falsa como si fuera parte de su recuerdo real."
+    },
+    {
+      "cat": "Credibilidad",
+      "q": "¿A qué se refiere la coherencia en la información del mismo sujeto?",
+      "a": "Al acuerdo intrasujeto: la estabilidad del relato del testigo en diferentes momentos del tiempo."
+    }
+  ]
+}

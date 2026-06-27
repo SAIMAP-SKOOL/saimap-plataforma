@@ -296,6 +296,17 @@ const THEME_SUBTITLES = {
         '13': 'Tratamiento de las Adicciones a Sustancias',
         '14': 'Tratamiento de las Adicciones Comportamentales',
         '15': 'Conducta Suicida y Situaciones de Crisis'
+    },
+    'psicologia-juridica-y-el-testimonio': {
+        '1-1': 'Introducción e Historia de la Psicología Jurídica',
+        '1-2': 'La Psicología Jurídica en España',
+        '2': 'Psicología y Decisiones Judiciales',
+        '3-1': 'Psicología del Testimonio: Memoria y Exactitud',
+        '3-2': 'Factores del Testimonio e Interrogatorio',
+        '4': 'Psicología Policial y Fuerzas de Seguridad',
+        '5': 'Psicología Penitenciaria: Historia y Legislación',
+        '6': 'Evaluación e Intervención en el Ámbito Penitenciario',
+        '7': 'Mediación y Resolución de Conflictos'
     }
 };
 
@@ -806,6 +817,24 @@ const THEME_CONFIG = {
         borderCard: 'border-b-amber-600',
         borderCardAlt: 'border-b-yellow-500',
     },
+    'psicologia-juridica-y-el-testimonio': {
+        name: 'Psicología Jurídica y del Testimonio',
+        icon: 'ph-scales',
+        bg: '#f0fdfa',
+        gradients: 'radial-gradient(at 0% 0%, hsla(170,100%,96%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(180,100%,96%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(160,100%,96%,1) 0,transparent 50%)',
+        primary: '#0f766e',
+        primaryGrad: 'linear-gradient(135deg, #0f766e 0%, #14b8a6 50%, #5eead4 100%)',
+        primaryShadow: 'rgba(15, 118, 110, 0.4)',
+        accent: '#14b8a6',
+        accentBg: '#f0fdfa',
+        accentLight: '#ccfbf1',
+        textAccent: '#0f766e',
+        optionHoverBorder: '#14b8a6',
+        optionHoverBg: '#f0fdfa',
+        titleGradient: 'from-teal-700 to-teal-500',
+        borderCard: 'border-b-teal-700',
+        borderCardAlt: 'border-b-teal-500',
+    },
 
 '_default': {
         name: 'Asignatura',
@@ -1227,8 +1256,13 @@ document.addEventListener("DOMContentLoaded", () => {
     applyTheme(theme);
 
     // 5. Cargar base de datos de preguntas de forma asíncrona (JSON externo)
-    const temaFilePart = String(TEMA_KEY).replace(/\./g, '-');
-    const fetchUrl = `../../../json/${COURSE_ID}/${FOLDER_ID}/${SUBJECT_ID}-tema-${temaFilePart}.json`;
+    let fetchUrl;
+    if (TEMA_KEY === 'examen') {
+        fetchUrl = `../../../json/${COURSE_ID}/${FOLDER_ID}/${SUBJECT_ID}.json`;
+    } else {
+        const temaFilePart = String(TEMA_KEY).replace(/\./g, '-');
+        fetchUrl = `../../../json/${COURSE_ID}/${FOLDER_ID}/${SUBJECT_ID}-tema-${temaFilePart}.json`;
+    }
 
     fetch(fetchUrl)
         .then(res => {
@@ -1305,15 +1339,16 @@ function applyTheme(t) {
     document.body.style.backgroundImage = t.gradients;
 
     // Title
+    const isExamen = TEMA_KEY === 'examen';
     const cleanKey = String(TEMA_KEY).replace(/-/g, '.');
-    const temaLabel = `Tema ${cleanKey}`;
-    const subtitle = THEME_SUBTITLES[SUBJECT_ID]?.[cleanKey] || "";
+    const temaLabel = isExamen ? 'Examen Final' : `Tema ${cleanKey}`;
+    const subtitle = isExamen ? 'Evaluación y simulacro global' : (THEME_SUBTITLES[SUBJECT_ID]?.[cleanKey] || "");
     document.title = `${temaLabel}${subtitle ? ': ' + subtitle : ''} - ${t.name} - SAIMAP`;
     document.getElementById('header-title').textContent = subtitle ? `${temaLabel}: ${subtitle}` : temaLabel;
     document.getElementById('header-subtitle').textContent = t.name;
     document.getElementById('header-subtitle').style.color = t.textAccent;
     document.getElementById('header-icon-bg').style.backgroundColor = t.primary;
-    document.getElementById('header-icon').className = `ph-bold ${t.icon} text-2xl`;
+    document.getElementById('header-icon').className = `ph-bold ${isExamen ? 'ph-shield' : t.icon} text-2xl`;
 
     // Back button hover styles
     const bb = document.getElementById('back-btn');

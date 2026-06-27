@@ -112,6 +112,9 @@
             { id: "PTO", name: "Psicología del Trabajo y las Organizaciones", year: "3º", folder: "Psicología del Trabajo y las Organizaciones" },
             { id: "psicometria", name: "Psicometría", year: "3º", folder: "Psicometría" },
             
+            // 4º Curso
+            { id: "psicologia-juridica-y-el-testimonio", name: "Psicología Jurídica y del Testimonio", year: "4º", folder: "Psicologia-Juridica" },
+
             // PIR
             { id: "pir-clinica", name: "Psicología Clínica (PIR)", year: "PIR", folder: "PIR-Clinica" },
             { id: "pir-psicopatologia", name: "Psicopatología (PIR)", year: "PIR", folder: "PIR-Psicopatologia" },
@@ -422,6 +425,17 @@
                 '1': 'Vocabulaire de la Psychologie',
                 '2': 'Lecture de Textes Scientifiques',
                 '3': 'Rédaction de Rapports Cliniques'
+            },
+            'psicologia-juridica-y-el-testimonio': {
+                '1-1': 'Introducción e Historia de la Psicología Jurídica',
+                '1-2': 'La Psicología Jurídica en España',
+                '2': 'Psicología y Decisiones Judiciales',
+                '3-1': 'Psicología del Testimonio: Memoria y Exactitud',
+                '3-2': 'Factores del Testimonio e Interrogatorio',
+                '4': 'Psicología Policial y Fuerzas de Seguridad',
+                '5': 'Psicología Penitenciaria: Historia y Legislación',
+                '6': 'Evaluación e Intervención en el Ámbito Penitenciario',
+                '7': 'Mediación y Resolución de Conflictos'
             }
         };
 
@@ -3141,7 +3155,7 @@
                                             Todos los cursos
                                         </button>
                                         <div class="h-px bg-slate-100 my-1"></div>
-                                        ${['1º', '2º', '3º'].map(curso => `
+                                        ${['1º', '2º', '3º', '4º'].map(curso => `
                                             <button onclick="appMethods.setFilterYear('${curso}'); document.getElementById('uni-details').removeAttribute('open');" class="px-4 py-2 hover:bg-slate-50 text-left transition-colors flex items-center justify-between ${state.filterYear === curso ? 'text-indigo-600 font-bold bg-indigo-50/30' : ''}">
                                                 ${curso} Curso
                                             </button>
