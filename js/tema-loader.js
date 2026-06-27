@@ -245,8 +245,7 @@ const THEME_SUBTITLES = {
         '7': 'Transformación y Equiparación de Puntuaciones',
         '8': 'Evaluación de la Calidad y Uso Ético de los Test',
         '9': 'De la TCT a la Teoría de la Respuesta al Ítem (TRI) y los TAI'
-    }
-};
+    },
 
     'pir-clinica': {
         '1': 'Espectro de la Esquizofrenia y otros Trastornos Psicóticos',
@@ -297,7 +296,8 @@ const THEME_SUBTITLES = {
         '13': 'Tratamiento de las Adicciones a Sustancias',
         '14': 'Tratamiento de las Adicciones Comportamentales',
         '15': 'Conducta Suicida y Situaciones de Crisis'
-    },
+    }
+};
 
 // Configuración de temas visuales por asignatura
 const THEME_CONFIG = {
@@ -770,6 +770,43 @@ const THEME_CONFIG = {
         borderCardAlt: 'border-b-teal-500',
     },
 
+    'idiomas-ingles': {
+        name: 'Inglés para Psicólogos',
+        icon: 'ph-flag',
+        bg: '#f0f9ff',
+        gradients: 'radial-gradient(at 0% 0%, hsla(210,90%,94%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(220,90%,94%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(200,90%,94%,1) 0,transparent 50%)',
+        primary: '#1d4ed8',
+        primaryGrad: 'linear-gradient(135deg, #1d4ed8 0%, #3b82f6 50%, #93c5fd 100%)',
+        primaryShadow: 'rgba(29, 78, 216, 0.4)',
+        accent: '#3b82f6',
+        accentBg: '#eff6ff',
+        accentLight: '#dbeafe',
+        textAccent: '#1d4ed8',
+        optionHoverBorder: '#3b82f6',
+        optionHoverBg: '#eff6ff',
+        titleGradient: 'from-blue-700 to-blue-400',
+        borderCard: 'border-b-blue-700',
+        borderCardAlt: 'border-b-blue-400',
+    },
+    'idiomas-frances': {
+        name: 'Français pour Psychologues',
+        icon: 'ph-flag',
+        bg: '#fff9f0',
+        gradients: 'radial-gradient(at 0% 0%, hsla(30,100%,96%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(15,100%,96%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(45,100%,96%,1) 0,transparent 50%)',
+        primary: '#d97706',
+        primaryGrad: 'linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #fcd34d 100%)',
+        primaryShadow: 'rgba(217, 119, 6, 0.4)',
+        accent: '#f59e0b',
+        accentBg: '#fffbeb',
+        accentLight: '#fef3c7',
+        textAccent: '#d97706',
+        optionHoverBorder: '#f59e0b',
+        optionHoverBg: '#fffbeb',
+        titleGradient: 'from-amber-600 to-yellow-500',
+        borderCard: 'border-b-amber-600',
+        borderCardAlt: 'border-b-yellow-500',
+    },
+
 '_default': {
         name: 'Asignatura',
         icon: 'ph-brain',
@@ -1191,7 +1228,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 5. Cargar base de datos de preguntas de forma asíncrona (JSON externo)
     const temaFilePart = String(TEMA_KEY).replace(/\./g, '-');
-    const fetchUrl = `../../../json/${encodeURIComponent(COURSE_ID)}/${encodeURIComponent(FOLDER_ID)}/${SUBJECT_ID}-tema-${temaFilePart}.json`;
+    const fetchUrl = `../../../json/${COURSE_ID}/${FOLDER_ID}/${SUBJECT_ID}-tema-${temaFilePart}.json`;
 
     fetch(fetchUrl)
         .then(res => {
