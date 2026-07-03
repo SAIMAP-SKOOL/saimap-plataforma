@@ -316,6 +316,14 @@ const THEME_SUBTITLES = {
         '6': 'Recursos Técnicos Generales',
         '7': 'Escuelas de Terapia Familiar Sistémica',
         '8': 'Terapia Breve Estratégica'
+    },
+    'tratamiento-cognitivo-conductual': {
+        '1': 'Introducción a la historia y situación actual de la TCC',
+        '2': 'Evaluación y formulación de caso',
+        '3': 'Proceso de intervención',
+        '4': 'Aplicaciones clínicas en adultos',
+        '5': 'Aplicaciones clínicas en niños/as y adolescentes',
+        '6': 'Glosario'
     }
 };
 
@@ -861,6 +869,24 @@ const THEME_CONFIG = {
         titleGradient: 'from-orange-700 to-amber-500',
         borderCard: 'border-b-orange-700',
         borderCardAlt: 'border-b-amber-500',
+    },
+    'tratamiento-cognitivo-conductual': {
+        name: 'Tratamiento Cognitivo - Conductual',
+        icon: 'ph-brain',
+        bg: '#f0fdfa',
+        gradients: 'radial-gradient(at 0% 0%, hsla(170,100%,96%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(185,100%,96%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(160,100%,96%,1) 0,transparent 50%)',
+        primary: '#0d9488',
+        primaryGrad: 'linear-gradient(135deg, #0d9488 0%, #14b8a6 50%, #2dd4bf 100%)',
+        primaryShadow: 'rgba(13, 148, 136, 0.4)',
+        accent: '#14b8a6',
+        accentBg: '#f0fdfa',
+        accentLight: '#ccfbf1',
+        textAccent: '#0d9488',
+        optionHoverBorder: '#14b8a6',
+        optionHoverBg: '#f0fdfa',
+        titleGradient: 'from-teal-700 to-cyan-500',
+        borderCard: 'border-b-teal-700',
+        borderCardAlt: 'border-b-cyan-500',
     },
 
 '_default': {
