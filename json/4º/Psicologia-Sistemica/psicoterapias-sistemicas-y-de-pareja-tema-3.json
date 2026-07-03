@@ -1,0 +1,2651 @@
+{
+  "quiz": [
+    {
+      "q": "¿Cómo define Bateson (1972) el concepto de 'sistema'?",
+      "options": [
+        "Cualquier unidad estructurada en retroalimentación.",
+        "Un conjunto de elementos con relaciones estrictamente lineales.",
+        "Una estructura cerrada incapaz de importar energía del medio."
+      ],
+      "correct": 0,
+      "hint": "Bateson vinculó el concepto de sistema con el feedback cibernético.",
+      "explanation": "Bateson (1972) define un sistema como cualquier unidad estructurada en retroalimentación, enfatizando la interacción y la comunicación circular."
+    },
+    {
+      "q": "El principio de totalidad en la Teoría General de Sistemas establece que:",
+      "options": [
+        "El sistema es idéntico a la suma de las características de sus miembros.",
+        "El sistema trasciende las características individuales y es indivisible.",
+        "Las partes individuales son más complejas que el sistema en su conjunto."
+      ],
+      "correct": 1,
+      "hint": "Establece una propiedad emergente del grupo.",
+      "explanation": "El principio de totalidad postula que el sistema trasciende las características de sus miembros, actuando como una unidad indivisible con cualidades emergentes."
+    },
+    {
+      "q": "¿Qué autor sugirió en 1965 que la familia opera como un sistema basado en un conjunto de reglas?",
+      "options": [
+        "Gregory Bateson.",
+        "Don Jackson.",
+        "Ludwig von Bertalanffy."
+      ],
+      "correct": 1,
+      "hint": "Fundó el MRI y se centró en las reglas interaccionales de la familia.",
+      "explanation": "Don Jackson (1965) sugirió que la familia es un sistema porque opera sobre la base de un conjunto de reglas de interacción estables."
+    },
+    {
+      "q": "¿Qué es el input en la dinámica de un sistema abierto?",
+      "options": [
+        "La importación de recursos como energía, materia o información del ambiente.",
+        "La corriente de salida y desechos del sistema hacia su entorno.",
+        "La resistencia que ofrece el sistema a la comunicación externa."
+      ],
+      "correct": 0,
+      "hint": "Es la entrada de recursos necesarios para la supervivencia.",
+      "explanation": "El input se refiere a la importación de recursos (energía, materia o información) que el sistema requiere de su medio para funcionar."
+    },
+    {
+      "q": "La diferencia en la conservación entre la energía y la información radica en que la información:",
+      "options": [
+        "Se reduce a la mitad cada vez que es transmitida a otro receptor.",
+        "Es acumulativa y su transmisión no la elimina del emisor original.",
+        "Sigue estrictamente la ley física de conservación sin variaciones."
+      ],
+      "correct": 1,
+      "hint": "Pensar en qué ocurre cuando compartes un dato o un mensaje.",
+      "explanation": "A diferencia de la energía, la comunicación de información no la elimina del emisor; es acumulativa y la salida no resta contenido al sistema."
+    },
+    {
+      "q": "¿Qué caracteriza a un sistema cerrado en la Teoría General de Sistemas?",
+      "options": [
+        "Intercambia información constante pero nunca materia con el medio.",
+        "Ningún elemento de afuera entra y ningún elemento de adentro sale.",
+        "Posee límites permeables que facilitan una adaptación continua."
+      ],
+      "correct": 1,
+      "hint": "Es la ausencia absoluta de intercambio con el exterior.",
+      "explanation": "Un sistema es cerrado cuando no hay intercambio de elementos (materia, energía o información) con el exterior, manteniéndose aislado."
+    },
+    {
+      "q": "En la jerarquía de sistemas, ¿qué nivel representa la comunidad respecto a la familia?",
+      "options": [
+        "El suprasistema.",
+        "El subsistema.",
+        "El sistema intermedio."
+      ],
+      "correct": 0,
+      "hint": "Es el nivel superior que engloba a los sistemas menores.",
+      "explanation": "La comunidad actúa como suprasistema, que es el sistema de nivel superior que integra a los sistemas subordinados como las familias."
+    },
+    {
+      "q": "El principio de sinergia establece que:",
+      "options": [
+        "El análisis por separado de las partes explica todo el comportamiento.",
+        "El análisis de cada parte por separado no explica el comportamiento global.",
+        "Las partes se extinguen cuando el sistema alcanza el equilibrio homeostático."
+      ],
+      "correct": 1,
+      "hint": "Se relaciona con el postulado de Aristóteles sobre el todo y las partes.",
+      "explanation": "La sinergia implica que el comportamiento del sistema no puede predecirse analizando las partes por separado, derivando de sus interacciones."
+    },
+    {
+      "q": "¿Qué propiedad sistémica describe la capacidad para modificar la forma y estructura para conservarse?",
+      "options": [
+        "Morfostasis.",
+        "Morfogénesis.",
+        "Homeostasis."
+      ],
+      "correct": 1,
+      "hint": "Su nombre alude al origen o cambio de la forma.",
+      "explanation": "La morfogénesis es el proceso de cambio en la forma, estructura y estado del sistema que facilita su desarrollo y adaptación al ambiente."
+    },
+    {
+      "q": "¿Qué propiedad sistémica tiende a preservar o mantener una organización dada del sistema?",
+      "options": [
+        "Morfostasis.",
+        "Morfogénesis.",
+        "Entropía."
+      ],
+      "correct": 0,
+      "hint": "Se asocia a la retroalimentación negativa y la estabilidad.",
+      "explanation": "La morfostasis comprende los procesos que tienden a mantener la estabilidad, organización o estado dado de un sistema, controlando las desviaciones."
+    },
+    {
+      "q": "¿En qué consiste la equifinalidad en los sistemas abiertos?",
+      "options": [
+        "Partiendo de condiciones iniciales iguales se llega a resultados distintos.",
+        "Partiendo de condiciones iniciales distintas se puede llegar al mismo estado final.",
+        "Todos los sistemas cerrados terminan extinguiéndose en el mismo periodo."
+      ],
+      "correct": 1,
+      "hint": "Los caminos y orígenes son distintos, pero la meta final es la misma.",
+      "explanation": "La equifinalidad (Bertalanffy) establece que el sistema puede alcanzar el mismo estado final partiendo de condiciones diferentes y siguiendo itinerarios distintos."
+    },
+    {
+      "q": "¿Qué describe el concepto de multifinalidad?",
+      "options": [
+        "Condiciones iniciales similares pueden llevar a estados finales diferentes.",
+        "Condiciones iniciales diferentes llevan necesariamente a estados idénticos.",
+        "Un solo sistema tiene múltiples funciones concurrentes en el suprasistema."
+      ],
+      "correct": 0,
+      "hint": "Es el proceso inverso a la equifinalidad.",
+      "explanation": "La multifinalidad es el proceso opuesto a la equifinalidad: condiciones iniciales idénticas o similares pueden conducir a resultados finales muy diversos."
+    },
+    {
+      "q": "La equipotencialidad en la Teoría General de Sistemas se define como la capacidad de:",
+      "options": [
+        "Todas las partes de influir por igual en el suprasistema.",
+        "Las partes restantes de asumir las funciones de las partes extinguidas.",
+        "El sistema de autorregularse sin recurrir al feedback negativo."
+      ],
+      "correct": 1,
+      "hint": "Implica la reorganización interna cuando falta un componente.",
+      "explanation": "La equipotencialidad permite que las partes restantes de un sistema asuman las tareas o funciones de componentes que se han perdido o extinguido."
+    },
+    {
+      "q": "La retroalimentación negativa en un sistema familiar se asocia principalmente a:",
+      "options": [
+        "El crecimiento y desarrollo de nuevas estructuras de interacción.",
+        "Los procesos de autorregulación, control y mantenimiento de la homeostasis.",
+        "La amplificación de las desviaciones y el colapso del sistema."
+      ],
+      "correct": 1,
+      "hint": "Busca reducir la desviación respecto a las metas del sistema.",
+      "explanation": "La retroalimentación negativa busca el control y la autorregulación, reduciendo desviaciones para mantener la homeostasis familiar."
+    },
+    {
+      "q": "¿Qué efecto tiene la retroalimentación positiva en el sistema?",
+      "options": [
+        "Reduce y bloquea las variaciones para preservar el equilibrio.",
+        "Amplifica las desviaciones y propicia el crecimiento o cambio.",
+        "Aísla al sistema del suprasistema para evitar la entropía."
+      ],
+      "correct": 1,
+      "hint": "Está asociada con los fenómenos de diferenciación y morfogénesis.",
+      "explanation": "La retroalimentación positiva amplifica las variaciones iniciales, facilitando el cambio de estructura, el crecimiento y el desarrollo de metas nuevas."
+    },
+    {
+      "q": "¿Qué autor acuñó el término 'cibernética' y en qué año?",
+      "options": [
+        "Norbert Wiener en 1948.",
+        "Gregory Bateson en 1952.",
+        "Paul Watzlawick en 1967."
+      ],
+      "correct": 0,
+      "hint": "Estudió la retroalimentación en máquinas y seres vivos.",
+      "explanation": "Norbert Wiener definió y acuñó el término Cibernética en su publicación de 1948, introduciendo el concepto de feedback."
+    },
+    {
+      "q": "La entropía es un principio físico que establece que los sistemas tienden a:",
+      "options": [
+        "La organización creciente e importación de recursos.",
+        "La desorganización y la homogeneización con su ambiente.",
+        "La estabilidad absoluta y la resistencia total al cambio."
+      ],
+      "correct": 1,
+      "hint": "Proviene de la termodinámica y alude al caos.",
+      "explanation": "La entropía describe la tendencia natural de los sistemas a perder organización y diluirse con el ambiente si no importan energía."
+    },
+    {
+      "q": "¿Qué permite la negentropía a los sistemas abiertos?",
+      "options": [
+        "Aumentar la desorganización interna de forma voluntaria.",
+        "Conservar estados de organización importando energía del ambiente.",
+        "Eliminar por completo la comunicación con otros subsistemas."
+      ],
+      "correct": 1,
+      "hint": "Es la energía importada para contrarrestar la entropía.",
+      "explanation": "La negentropía es la importación de energía y recursos del medio que permite a los sistemas abiertos mantener y desarrollar su organización."
+    },
+    {
+      "q": "El paso de lo intrapsíquico a lo interpersonal en terapia sistémica implica:",
+      "options": [
+        "Buscar la patología en los rasgos de personalidad del paciente.",
+        "Ver los problemas como el resultado de procesos de interacción entre personas.",
+        "Rechazar el estudio de la comunicación a favor de la asociación libre."
+      ],
+      "correct": 1,
+      "hint": "El foco cambia de la mente individual a las relaciones.",
+      "explanation": "La terapia sistémica sitúa la patología y los problemas en el nivel interpersonal, considerándolos fruto de las dinámicas relacionales."
+    },
+    {
+      "q": "En el funcionalismo del síntoma de la terapia familiar temprana, se sostiene que:",
+      "options": [
+        "El síntoma desaparece si se ignoran las dinámicas de pareja.",
+        "El síntoma ofrece alguna forma de ganancia o utilidad para el sistema.",
+        "La conducta sintomática es un fallo orgánico puramente individual."
+      ],
+      "correct": 2,
+      "hint": "El síntoma puede 'distraer' o regular conflictos mayores.",
+      "explanation": "El funcionalismo plantea que el síntoma sobrevive porque ofrece una ganancia secundaria (como cohesionar o distraer un conflicto conyugal)."
+    },
+    {
+      "q": "En el modelo lineal de comunicación de Shannon y Weaver (1949), ¿cuál es el canal?",
+      "options": [
+        "El medio físico a través del cual se transmite el mensaje.",
+        "El conjunto de signos utilizados para codificar la información.",
+        "La persona o grupo que interpreta el mensaje final."
+      ],
+      "correct": 0,
+      "hint": "Puede ser natural como el aire o artificial como un cable.",
+      "explanation": "El canal es el medio físico (aire, cable, papel) por el cual viaja el mensaje codificado desde el emisor al receptor."
+    },
+    {
+      "q": "¿Qué limitación principal presentaba el modelo de Shannon y Weaver?",
+      "options": [
+        "No definía de forma clara el papel del emisor y del receptor.",
+        "Era una estructura puramente lineal que no contemplaba la retroalimentación.",
+        "Excluía el código del análisis de los mensajes de telecomunicación."
+      ],
+      "correct": 1,
+      "hint": "La Cibernética resolvió esta limitación posteriormente.",
+      "explanation": "El modelo de Shannon y Weaver era estrictamente lineal y unidireccional. La circularidad se incorporó con el feedback de la Cibernética."
+    },
+    {
+      "q": "Según las leyes de la comunicación, ¿quién es el primer responsable del éxito del intercambio?",
+      "options": [
+        "El receptor, al tener la obligación de decodificar de forma objetiva.",
+        "El emisor, quien debe adaptar y verificar cómo se recibe el mensaje.",
+        "El canal, que debe garantizar la ausencia absoluta de ruido ambiental."
+      ],
+      "correct": 1,
+      "hint": "Es la segunda ley de la comunicación.",
+      "explanation": "La segunda ley establece que el emisor es el primer responsable de los resultados de la comunicación y de asegurar su correcta recepción."
+    },
+    {
+      "q": "La primera ley de la comunicación postula que:",
+      "options": [
+        "Lo importante es lo que expone el emisor con claridad digital.",
+        "Lo importante no es lo que expone el emisor, sino lo que recibe el receptor.",
+        "La comunicación no verbal carece de valor en ausencia de palabras."
+      ],
+      "correct": 1,
+      "hint": "El foco está en la recepción y decodificación final del mensaje.",
+      "explanation": "La primera ley indica que lo relevante es lo que capta e interpreta el receptor, no meramente lo que el emisor cree haber transmitido."
+    },
+    {
+      "q": "En el proceso comunicativo, una barrera del emisor puede consistir en:",
+      "options": [
+        "Manifestar incoherencia entre lo que dice verbalmente y lo que hace.",
+        "La distracción o incapacidad para escuchar del receptor.",
+        "El ruido de fondo presente en el canal físico."
+      ],
+      "correct": 0,
+      "hint": "Es un obstáculo generado por quien emite el mensaje.",
+      "explanation": "La incoherencia entre lo verbal y conductual es una barrera clásica del emisor, dificultando una codificación coherente."
+    },
+    {
+      "q": "El primer axioma de la comunicación de Watzlawick establece que:",
+      "options": [
+        "Toda comunicación es digital en interacciones interpersonales.",
+        "Es imposible no comunicar, pues toda conducta tiene valor de mensaje.",
+        "La metacomunicación es el único nivel válido en las relaciones."
+      ],
+      "correct": 1,
+      "hint": "Incluso el silencio o la inactividad transmiten información.",
+      "explanation": "Al ser imposible no comportarse, y dado que toda conducta en interacción comunica, Watzlawick concluye que es imposible no comunicar."
+    },
+    {
+      "q": "Según el segundo axioma de Watzlawick, toda comunicación posee:",
+      "options": [
+        "Un nivel de emisor y un nivel de canal de retroalimentación.",
+        "Un nivel de contenido (aspecto denotativo) y uno relacional (aspecto conativo).",
+        "Un canal físico y un código verbal puramente analógicos."
+      ],
+      "correct": 1,
+      "hint": "Uno dice qué se transmite; el otro cómo debe entenderse según la relación.",
+      "explanation": "Toda comunicación transmite datos (contenido/denotativo) e indica cómo debe interpretarse (relación/conativo), determinando este último al primero."
+    },
+    {
+      "q": "El tercer axioma de la comunicación de Watzlawick se refiere a:",
+      "options": [
+        "La puntuación de las secuencias de comunicación entre interlocutores.",
+        "La preeminencia de la comunicación analógica sobre la digital.",
+        "La imposibilidad de resolver paradojas mediante metacomunicación."
+      ],
+      "correct": 0,
+      "hint": "Se relaciona con quién toma la iniciativa o define causa y efecto.",
+      "explanation": "La naturaleza de la relación depende de cómo los interlocutores puntúan la secuencia de hechos, organizando la interacción."
+    },
+    {
+      "q": "El conflicto conyugal expresado como 'me retraigo porque me regañas' y 'te regaño porque te retraes' ilustra:",
+      "options": [
+        "Una discrepancia en la puntuación de las secuencias de hechos.",
+        "La imposibilidad física de establecer retroalimentación positiva.",
+        "Una confusión pura entre comunicación digital y analógica."
+      ],
+      "correct": 0,
+      "hint": "Ambos discuten sobre qué conducta es la causa y cuál el efecto.",
+      "explanation": "Este es el ejemplo clásico de discrepancia en la puntuación, donde cada miembro de la pareja sitúa el inicio de la cadena en la conducta del otro."
+    },
+    {
+      "q": "¿Qué distingue la comunicación analógica de la digital en el cuarto axioma?",
+      "options": [
+        "La digital es no verbal; la analógica se basa en el lenguaje verbal.",
+        "La digital es verbal (arbitraria); la analógica es no verbal (gestos, tono, posturas).",
+        "La analógica tiene una estructura lógica compleja capaz de negar de forma directa."
+      ],
+      "correct": 1,
+      "hint": "La palabra 'perro' es digital; un dibujo de un perro es analógico.",
+      "explanation": "La comunicación digital emplea signos arbitrarios (palabras), mientras que la analógica incluye el lenguaje corporal, gestos, tono de voz y similitudes físicas."
+    },
+    {
+      "q": "Según Watzlawick, ¿cuál es una limitación de la comunicación analógica?",
+      "options": [
+        "Carece de riqueza y expresividad en el ámbito emocional.",
+        "No puede representar valores negativos o contradicciones lógicas puras.",
+        "Es demasiado abstracta y difícil de descodificar por el receptor."
+      ],
+      "correct": 1,
+      "hint": "Las lágrimas pueden ser de alegría o de tristeza, no hay un 'no lágrimas'.",
+      "explanation": "La comunicación analógica no cuenta con una sintaxis lógica para representar la negación ('no'); por ejemplo, llorar puede significar dolor o alegría."
+    },
+    {
+      "q": "El quinto axioma clasifica los intercambios comunicacionales en:",
+      "options": [
+        "Denotativos o conativos según el nivel de abstracción del mensaje.",
+        "Simétricos (basados en igualdad) o complementarios (basados en diferencia).",
+        "Digitales o analógicos en función del canal de transmisión."
+      ],
+      "correct": 1,
+      "hint": "Depende de si los participantes mantienen la misma jerarquía o roles opuestos.",
+      "explanation": "Los intercambios son simétricos cuando los miembros interactúan en plano de igualdad, y complementarios si uno adopta una posición superior y otro inferior."
+    },
+    {
+      "q": "¿Qué es la metacomunicación?",
+      "options": [
+        "La transmisión de mensajes a través de un canal no físico.",
+        "La comunicación que habla acerca de la comunicación misma.",
+        "La interferencia o ruido que bloquea la interpretación del mensaje."
+      ],
+      "correct": 1,
+      "hint": "Su prefijo indica que va 'más allá' o trata 'sobre' el mismo proceso.",
+      "explanation": "La metacomunicación ocurre cuando los interlocutores usan la comunicación para hacer referencia a las reglas o la interacción que está teniendo lugar."
+    },
+    {
+      "q": "¿Qué tipo de intervención resulta útil para deshacer las paradojas del lenguaje?",
+      "options": [
+        "La metacomunicación, aclarando cómo interpretar la instrucción contradictoria.",
+        "El aumento de la retroalimentación positiva para forzar la homeostasis.",
+        "La adopción de una postura de retraimiento pasivo por parte del emisor."
+      ],
+      "correct": 0,
+      "hint": "Permite hablar sobre el mandato incongruente del mensaje.",
+      "explanation": "La metacomunicación es el recurso idóneo para deshacer paradojas (como 'sé espontáneo'), permitiendo verbalizar la contradicción implícita."
+    },
+    {
+      "q": "En el ejemplo gráfico de circularidad entre María y Juan, ¿qué mantiene el nivel de inseguridad de María?",
+      "options": [
+        "Sus rasgos de personalidad invariables e introversión heredada.",
+        "El comportamiento de desapego y alejamiento de Juan.",
+        "Las presiones externas del suprasistema comunitario."
+      ],
+      "correct": 1,
+      "hint": "Las conductas de ambos se retroalimentan recíprocamente.",
+      "explanation": "Desde la causalidad circular, la inseguridad de María no es un rasgo fijo, sino un comportamiento mantenido por la conducta de alejamiento de Juan."
+    },
+    {
+      "q": "¿Qué sostiene la causalidad circular respecto a buscar el inicio de un conflicto?",
+      "options": [
+        "Es una tarea fundamental para identificar al miembro culpable del síntoma.",
+        "Es un acto improductivo, ya que toda acción es a la vez una respuesta.",
+        "Solo es útil en las primeras entrevistas para definir la homeostasis lineal."
+      ],
+      "correct": 1,
+      "hint": "En un círculo no hay principio ni fin claros.",
+      "explanation": "La circularidad sostiene que buscar el origen o 'quién empezó' carece de sentido clínico, dado que cada acción es respuesta a una interacción previa."
+    },
+    {
+      "q": "¿Cómo define Watzlawick el concepto de circularidad?",
+      "options": [
+        "Patrones de interacción esencialmente repetitivos.",
+        "La secuencia lineal donde el emisor controla el código.",
+        "El estado de desorganización máxima por efecto de la entropía."
+      ],
+      "correct": 0,
+      "hint": "Alude a bucles de comportamiento que vuelven al punto de partida.",
+      "explanation": "Watzlawick utilizó el término circularidad para referirse a los patrones de interacción que se repiten de forma cíclica en las relaciones."
+    },
+    {
+      "q": "El modelo de Watzlawick de la comunicación humana se centra en estudiar:",
+      "options": [
+        "Las variables psicodinámicas del inconsciente familiar.",
+        "Los efectos que la comunicación ejerce sobre la conducta.",
+        "La estructura física de los canales de telecomunicación."
+      ],
+      "correct": 1,
+      "hint": "Se interesa por el aspecto pragmático del intercambio.",
+      "explanation": "La Teoría de la Comunicación Humana (1952) aborda la comunicación analizando sus efectos pragmáticos sobre la conducta de los interactuantes."
+    },
+    {
+      "q": "En la comunicación, ¿cuál es un ejemplo de paradoja pragmática?",
+      "options": [
+        "Un cartel que contiene el mensaje escrito: 'No leer esto'.",
+        "El retraso en el canal físico que deforma la información del código.",
+        "La discrepancia de opinión sobre un hecho del ciclo vital familiar."
+      ],
+      "correct": 0,
+      "hint": "Es una instrucción que se contradice a sí misma al intentar seguirla.",
+      "explanation": "El cartel 'No leer esto' es una paradoja pragmática: para obedecer la orden, primero es necesario leerla, lo que constituye una infracción del mandato."
+    },
+    {
+      "q": "La morfostasis se asocia fundamentalmente con qué mecanismo cibernético:",
+      "options": [
+        "La retroalimentación positiva.",
+        "La retroalimentación negativa.",
+        "El input de información lineal."
+      ],
+      "correct": 1,
+      "hint": "Busca mantener el statu quo y reducir las desviaciones.",
+      "explanation": "La morfostasis (preservación de la forma) se apoya en mecanismos de retroalimentación negativa que corrigen las desviaciones del sistema."
+    },
+    {
+      "q": "La morfogénesis se asocia fundamentalmente con qué mecanismo cibernético:",
+      "options": [
+        "La retroalimentación positiva.",
+        "La retroalimentación negativa.",
+        "El aislamiento del suprasistema."
+      ],
+      "correct": 0,
+      "hint": "Promueve la transformación, diferenciación y crecimiento de la estructura.",
+      "explanation": "La morfogénesis (cambio de forma o estructura) se asocia a la retroalimentación positiva, la cual amplifica las desviaciones para propiciar la adaptación."
+    },
+    {
+      "q": "¿Qué representa un subsistema dentro de la estructura familiar?",
+      "options": [
+        "La red de amigos e instituciones del barrio.",
+        "Un grupo funcional específico dentro de la familia, como la díada conyugal.",
+        "El paciente identificado que manifiesta la sintomatología."
+      ],
+      "correct": 1,
+      "hint": "Es un nivel de organización inferior dentro del sistema familiar completo.",
+      "explanation": "Un subsistema es un componente funcional específico de la familia (por ejemplo, el subsistema parental, conyugal o filial) con límites propios."
+    },
+    {
+      "q": "El principio de Bertalanffy que dice que las modificaciones de un sistema son independientes de sus condiciones iniciales es:",
+      "options": [
+        "Equipotencialidad.",
+        "Equifinalidad.",
+        "Morfogénesis."
+      ],
+      "correct": 1,
+      "hint": "Indica que se puede llegar a la misma meta por diferentes caminos.",
+      "explanation": "La equifinalidad implica que el estado final del sistema abierto es independiente de las condiciones de partida y de los procesos iniciales."
+    },
+    {
+      "q": "En el modelo sistémico, los problemas individuales se interpretan como:",
+      "options": [
+        "Fallas de los mecanismos intrapsíquicos de defensa del self.",
+        "Manifestaciones de la interacción disfuncional del grupo de pertenencia.",
+        "Consecuencias inevitables de traumas infantiles fijos."
+      ],
+      "correct": 1,
+      "hint": "Se cambia el foco del interior del sujeto a sus relaciones.",
+      "explanation": "Los problemas se conceptualizan como resultantes de interacciones relacionales disfuncionales en el sistema familiar o social inmediato."
+    },
+    {
+      "q": "Según el quinto axioma, una relación complementaria se caracteriza por:",
+      "options": [
+        "La presencia de roles idénticos y toma de decisiones paritaria.",
+        "La desigualdad en la interacción, con una posición superior y otra inferior.",
+        "El conflicto constante por la puntuación de las secuencias de hechos."
+      ],
+      "correct": 1,
+      "hint": "Las conductas de ambos participantes difieren pero encajan recíprocamente.",
+      "explanation": "En una relación complementaria, las conductas se basan en la diferencia, existiendo una posición superior (one-up) y otra inferior (one-down) que se acoplan."
+    },
+    {
+      "q": "Según el quinto axioma, una relación simétrica se caracteriza por:",
+      "options": [
+        "La tendencia a minimizar la diferencia y basarse en la igualdad de los participantes.",
+        "El sometimiento absoluto de uno de los miembros a la jerarquía del otro.",
+        "La incomunicación analógica entre los diferentes niveles lógicos."
+      ],
+      "correct": 0,
+      "hint": "Los participantes tienen el mismo nivel de poder y los mismos derechos.",
+      "explanation": "La relación simétrica se basa en la igualdad de condiciones, donde los participantes tienden a reflejar la conducta del otro de manera recíproca."
+    },
+    {
+      "q": "¿Cuál es un ejemplo de barrera en el canal de comunicación?",
+      "options": [
+        "El desconocimiento del emisor sobre el tema del mensaje.",
+        "La deformación del mensaje por la presencia de intermediarios.",
+        "La actitud desinteresada compartida por ambos interlocutores."
+      ],
+      "correct": 1,
+      "hint": "Afecta a la vía física o medio de transporte de la información.",
+      "explanation": "Los intermediarios que distorsionan el mensaje actúan como una barrera o ruido en el canal por el cual viaja la información."
+    },
+    {
+      "q": "¿Qué elemento del modelo lineal de Shannon y Weaver representa los signos para estructurar el mensaje?",
+      "options": [
+        "El código.",
+        "El receptor.",
+        "El contexto."
+      ],
+      "correct": 0,
+      "hint": "Puede ser el idioma hablado o las señales luminosas de un semáforo.",
+      "explanation": "El código es el conjunto estructurado de signos y reglas lingüísticas o de otra naturaleza que permite dar forma comprensible al mensaje."
+    },
+    {
+      "q": "La homeostasis familiar, como compensación interna, busca:",
+      "options": [
+        "Amplificar el cambio para reestructurar el sistema de pareja.",
+        "Mantener el equilibrio estable frente a variaciones externas sin realizar cambios estructurales.",
+        "Permitir la entropía del sistema en situaciones de crisis evolutiva."
+      ],
+      "correct": 1,
+      "hint": "Bloquea o compensa las fluctuaciones del entorno para seguir igual.",
+      "explanation": "La homeostasis comprende las compensaciones internas destinadas a contrarrestar fluctuaciones ambientales para preservar el equilibrio sin alterar las reglas del sistema."
+    },
+    {
+      "q": "¿Qué sucede cuando el nivel de tensión excede la capacidad homeostática de un sistema?",
+      "options": [
+        "El sistema se ve forzado a cambiar su estructura (morfogénesis) o entra en disfunción.",
+        "El sistema reduce de forma automática su entropía sin importar energía.",
+        "Las relaciones complementarias se vuelven instantáneamente simétricas."
+      ],
+      "correct": 0,
+      "hint": "El equilibrio previo ya no es sostenible sin transformaciones.",
+      "explanation": "Si la tensión supera el rango tolerable, los mecanismos homeostáticos fallan, obligando al sistema a reestructurarse (morfogénesis) o a manifestar sintomatología."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿cómo define bateson (1972) el concepto de 'sistema'?",
+      "options": [
+        "Cualquier unidad estructurada en retroalimentación.",
+        "Un conjunto de elementos con relaciones estrictamente lineales.",
+        "Una estructura cerrada incapaz de importar energía del medio."
+      ],
+      "correct": 0,
+      "hint": "Bateson vinculó el concepto de sistema con el feedback cibernético.",
+      "explanation": "Bateson (1972) define un sistema como cualquier unidad estructurada en retroalimentación, enfatizando la interacción y la comunicación circular."
+    },
+    {
+      "q": "En relación con la terapia sistémica, el principio de totalidad en la teoría general de sistemas establece que:",
+      "options": [
+        "El sistema es idéntico a la suma de las características de sus miembros.",
+        "El sistema trasciende las características individuales y es indivisible.",
+        "Las partes individuales son más complejas que el sistema en su conjunto."
+      ],
+      "correct": 1,
+      "hint": "Establece una propiedad emergente del grupo.",
+      "explanation": "El principio de totalidad postula que el sistema trasciende las características de sus miembros, actuando como una unidad indivisible con cualidades emergentes."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué autor sugirió en 1965 que la familia opera como un sistema basado en un conjunto de reglas?",
+      "options": [
+        "Gregory Bateson.",
+        "Don Jackson.",
+        "Ludwig von Bertalanffy."
+      ],
+      "correct": 1,
+      "hint": "Fundó el MRI y se centró en las reglas interaccionales de la familia.",
+      "explanation": "Don Jackson (1965) sugirió que la familia es un sistema porque opera sobre la base de un conjunto de reglas de interacción estables."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué es el input en la dinámica de un sistema abierto?",
+      "options": [
+        "La importación de recursos como energía, materia o información del ambiente.",
+        "La corriente de salida y desechos del sistema hacia su entorno.",
+        "La resistencia que ofrece el sistema a la comunicación externa."
+      ],
+      "correct": 0,
+      "hint": "Es la entrada de recursos necesarios para la supervivencia.",
+      "explanation": "El input se refiere a la importación de recursos (energía, materia o información) que el sistema requiere de su medio para funcionar."
+    },
+    {
+      "q": "En relación con la terapia sistémica, la diferencia en la conservación entre la energía y la información radica en que la información:",
+      "options": [
+        "Se reduce a la mitad cada vez que es transmitida a otro receptor.",
+        "Es acumulativa y su transmisión no la elimina del emisor original.",
+        "Sigue estrictamente la ley física de conservación sin variaciones."
+      ],
+      "correct": 1,
+      "hint": "Pensar en qué ocurre cuando compartes un dato o un mensaje.",
+      "explanation": "A diferencia de la energía, la comunicación de información no la elimina del emisor; es acumulativa y la salida no resta contenido al sistema."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué caracteriza a un sistema cerrado en la teoría general de sistemas?",
+      "options": [
+        "Intercambia información constante pero nunca materia con el medio.",
+        "Ningún elemento de afuera entra y ningún elemento de adentro sale.",
+        "Posee límites permeables que facilitan una adaptación continua."
+      ],
+      "correct": 1,
+      "hint": "Es la ausencia absoluta de intercambio con el exterior.",
+      "explanation": "Un sistema es cerrado cuando no hay intercambio de elementos (materia, energía o información) con el exterior, manteniéndose aislado."
+    },
+    {
+      "q": "En relación con la terapia sistémica, en la jerarquía de sistemas, ¿qué nivel representa la comunidad respecto a la familia?",
+      "options": [
+        "El suprasistema.",
+        "El subsistema.",
+        "El sistema intermedio."
+      ],
+      "correct": 0,
+      "hint": "Es el nivel superior que engloba a los sistemas menores.",
+      "explanation": "La comunidad actúa como suprasistema, que es el sistema de nivel superior que integra a los sistemas subordinados como las familias."
+    },
+    {
+      "q": "En relación con la terapia sistémica, el principio de sinergia establece que:",
+      "options": [
+        "El análisis por separado de las partes explica todo el comportamiento.",
+        "El análisis de cada parte por separado no explica el comportamiento global.",
+        "Las partes se extinguen cuando el sistema alcanza el equilibrio homeostático."
+      ],
+      "correct": 1,
+      "hint": "Se relaciona con el postulado de Aristóteles sobre el todo y las partes.",
+      "explanation": "La sinergia implica que el comportamiento del sistema no puede predecirse analizando las partes por separado, derivando de sus interacciones."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué propiedad sistémica describe la capacidad para modificar la forma y estructura para conservarse?",
+      "options": [
+        "Morfostasis.",
+        "Morfogénesis.",
+        "Homeostasis."
+      ],
+      "correct": 1,
+      "hint": "Su nombre alude al origen o cambio de la forma.",
+      "explanation": "La morfogénesis es el proceso de cambio en la forma, estructura y estado del sistema que facilita su desarrollo y adaptación al ambiente."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué propiedad sistémica tiende a preservar o mantener una organización dada del sistema?",
+      "options": [
+        "Morfostasis.",
+        "Morfogénesis.",
+        "Entropía."
+      ],
+      "correct": 0,
+      "hint": "Se asocia a la retroalimentación negativa y la estabilidad.",
+      "explanation": "La morfostasis comprende los procesos que tienden a mantener la estabilidad, organización o estado dado de un sistema, controlando las desviaciones."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿en qué consiste la equifinalidad en los sistemas abiertos?",
+      "options": [
+        "Partiendo de condiciones iniciales iguales se llega a resultados distintos.",
+        "Partiendo de condiciones iniciales distintas se puede llegar al mismo estado final.",
+        "Todos los sistemas cerrados terminan extinguiéndose en el mismo periodo."
+      ],
+      "correct": 1,
+      "hint": "Los caminos y orígenes son distintos, pero la meta final es la misma.",
+      "explanation": "La equifinalidad (Bertalanffy) establece que el sistema puede alcanzar el mismo estado final partiendo de condiciones diferentes y siguiendo itinerarios distintos."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué describe el concepto de multifinalidad?",
+      "options": [
+        "Condiciones iniciales similares pueden llevar a estados finales diferentes.",
+        "Condiciones iniciales diferentes llevan necesariamente a estados idénticos.",
+        "Un solo sistema tiene múltiples funciones concurrentes en el suprasistema."
+      ],
+      "correct": 0,
+      "hint": "Es el proceso inverso a la equifinalidad.",
+      "explanation": "La multifinalidad es el proceso opuesto a la equifinalidad: condiciones iniciales idénticas o similares pueden conducir a resultados finales muy diversos."
+    },
+    {
+      "q": "En relación con la terapia sistémica, la equipotencialidad en la teoría general de sistemas se define como la capacidad de:",
+      "options": [
+        "Todas las partes de influir por igual en el suprasistema.",
+        "Las partes restantes de asumir las funciones de las partes extinguidas.",
+        "El sistema de autorregularse sin recurrir al feedback negativo."
+      ],
+      "correct": 1,
+      "hint": "Implica la reorganización interna cuando falta un componente.",
+      "explanation": "La equipotencialidad permite que las partes restantes de un sistema asuman las tareas o funciones de componentes que se han perdido o extinguido."
+    },
+    {
+      "q": "En relación con la terapia sistémica, la retroalimentación negativa en un sistema familiar se asocia principalmente a:",
+      "options": [
+        "El crecimiento y desarrollo de nuevas estructuras de interacción.",
+        "Los procesos de autorregulación, control y mantenimiento de la homeostasis.",
+        "La amplificación de las desviaciones y el colapso del sistema."
+      ],
+      "correct": 1,
+      "hint": "Busca reducir la desviación respecto a las metas del sistema.",
+      "explanation": "La retroalimentación negativa busca el control y la autorregulación, reduciendo desviaciones para mantener la homeostasis familiar."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué efecto tiene la retroalimentación positiva en el sistema?",
+      "options": [
+        "Reduce y bloquea las variaciones para preservar el equilibrio.",
+        "Amplifica las desviaciones y propicia el crecimiento o cambio.",
+        "Aísla al sistema del suprasistema para evitar la entropía."
+      ],
+      "correct": 1,
+      "hint": "Está asociada con los fenómenos de diferenciación y morfogénesis.",
+      "explanation": "La retroalimentación positiva amplifica las variaciones iniciales, facilitando el cambio de estructura, el crecimiento y el desarrollo de metas nuevas."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué autor acuñó el término 'cibernética' y en qué año?",
+      "options": [
+        "Norbert Wiener en 1948.",
+        "Gregory Bateson en 1952.",
+        "Paul Watzlawick en 1967."
+      ],
+      "correct": 0,
+      "hint": "Estudió la retroalimentación en máquinas y seres vivos.",
+      "explanation": "Norbert Wiener definió y acuñó el término Cibernética en su publicación de 1948, introduciendo el concepto de feedback."
+    },
+    {
+      "q": "En relación con la terapia sistémica, la entropía es un principio físico que establece que los sistemas tienden a:",
+      "options": [
+        "La organización creciente e importación de recursos.",
+        "La desorganización y la homogeneización con su ambiente.",
+        "La estabilidad absoluta y la resistencia total al cambio."
+      ],
+      "correct": 1,
+      "hint": "Proviene de la termodinámica y alude al caos.",
+      "explanation": "La entropía describe la tendencia natural de los sistemas a perder organización y diluirse con el ambiente si no importan energía."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué permite la negentropía a los sistemas abiertos?",
+      "options": [
+        "Aumentar la desorganización interna de forma voluntaria.",
+        "Conservar estados de organización importando energía del ambiente.",
+        "Eliminar por completo la comunicación con otros subsistemas."
+      ],
+      "correct": 1,
+      "hint": "Es la energía importada para contrarrestar la entropía.",
+      "explanation": "La negentropía es la importación de energía y recursos del medio que permite a los sistemas abiertos mantener y desarrollar su organización."
+    },
+    {
+      "q": "En relación con la terapia sistémica, el paso de lo intrapsíquico a lo interpersonal en terapia sistémica implica:",
+      "options": [
+        "Buscar la patología en los rasgos de personalidad del paciente.",
+        "Ver los problemas como el resultado de procesos de interacción entre personas.",
+        "Rechazar el estudio de la comunicación a favor de la asociación libre."
+      ],
+      "correct": 1,
+      "hint": "El foco cambia de la mente individual a las relaciones.",
+      "explanation": "La terapia sistémica sitúa la patología y los problemas en el nivel interpersonal, considerándolos fruto de las dinámicas relacionales."
+    },
+    {
+      "q": "En relación con la terapia sistémica, en el funcionalismo del síntoma de la terapia familiar temprana, se sostiene que:",
+      "options": [
+        "El síntoma desaparece si se ignoran las dinámicas de pareja.",
+        "El síntoma ofrece alguna forma de ganancia o utilidad para el sistema.",
+        "La conducta sintomática es un fallo orgánico puramente individual."
+      ],
+      "correct": 2,
+      "hint": "El síntoma puede 'distraer' o regular conflictos mayores.",
+      "explanation": "El funcionalismo plantea que el síntoma sobrevive porque ofrece una ganancia secundaria (como cohesionar o distraer un conflicto conyugal)."
+    },
+    {
+      "q": "En relación con la terapia sistémica, en el modelo lineal de comunicación de shannon y weaver (1949), ¿cuál es el canal?",
+      "options": [
+        "El medio físico a través del cual se transmite el mensaje.",
+        "El conjunto de signos utilizados para codificar la información.",
+        "La persona o grupo que interpreta el mensaje final."
+      ],
+      "correct": 0,
+      "hint": "Puede ser natural como el aire o artificial como un cable.",
+      "explanation": "El canal es el medio físico (aire, cable, papel) por el cual viaja el mensaje codificado desde el emisor al receptor."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué limitación principal presentaba el modelo de shannon y weaver?",
+      "options": [
+        "No definía de forma clara el papel del emisor y del receptor.",
+        "Era una estructura puramente lineal que no contemplaba la retroalimentación.",
+        "Excluía el código del análisis de los mensajes de telecomunicación."
+      ],
+      "correct": 1,
+      "hint": "La Cibernética resolvió esta limitación posteriormente.",
+      "explanation": "El modelo de Shannon y Weaver era estrictamente lineal y unidireccional. La circularidad se incorporó con el feedback de la Cibernética."
+    },
+    {
+      "q": "En relación con la terapia sistémica, según las leyes de la comunicación, ¿quién es el primer responsable del éxito del intercambio?",
+      "options": [
+        "El receptor, al tener la obligación de decodificar de forma objetiva.",
+        "El emisor, quien debe adaptar y verificar cómo se recibe el mensaje.",
+        "El canal, que debe garantizar la ausencia absoluta de ruido ambiental."
+      ],
+      "correct": 1,
+      "hint": "Es la segunda ley de la comunicación.",
+      "explanation": "La segunda ley establece que el emisor es el primer responsable de los resultados de la comunicación y de asegurar su correcta recepción."
+    },
+    {
+      "q": "En relación con la terapia sistémica, la primera ley de la comunicación postula que:",
+      "options": [
+        "Lo importante es lo que expone el emisor con claridad digital.",
+        "Lo importante no es lo que expone el emisor, sino lo que recibe el receptor.",
+        "La comunicación no verbal carece de valor en ausencia de palabras."
+      ],
+      "correct": 1,
+      "hint": "El foco está en la recepción y decodificación final del mensaje.",
+      "explanation": "La primera ley indica que lo relevante es lo que capta e interpreta el receptor, no meramente lo que el emisor cree haber transmitido."
+    },
+    {
+      "q": "En relación con la terapia sistémica, en el proceso comunicativo, una barrera del emisor puede consistir en:",
+      "options": [
+        "Manifestar incoherencia entre lo que dice verbalmente y lo que hace.",
+        "La distracción o incapacidad para escuchar del receptor.",
+        "El ruido de fondo presente en el canal físico."
+      ],
+      "correct": 0,
+      "hint": "Es un obstáculo generado por quien emite el mensaje.",
+      "explanation": "La incoherencia entre lo verbal y conductual es una barrera clásica del emisor, dificultando una codificación coherente."
+    },
+    {
+      "q": "En relación con la terapia sistémica, el primer axioma de la comunicación de watzlawick establece que:",
+      "options": [
+        "Toda comunicación es digital en interacciones interpersonales.",
+        "Es imposible no comunicar, pues toda conducta tiene valor de mensaje.",
+        "La metacomunicación es el único nivel válido en las relaciones."
+      ],
+      "correct": 1,
+      "hint": "Incluso el silencio o la inactividad transmiten información.",
+      "explanation": "Al ser imposible no comportarse, y dado que toda conducta en interacción comunica, Watzlawick concluye que es imposible no comunicar."
+    },
+    {
+      "q": "En relación con la terapia sistémica, según el segundo axioma de watzlawick, toda comunicación posee:",
+      "options": [
+        "Un nivel de emisor y un nivel de canal de retroalimentación.",
+        "Un nivel de contenido (aspecto denotativo) y uno relacional (aspecto conativo).",
+        "Un canal físico y un código verbal puramente analógicos."
+      ],
+      "correct": 1,
+      "hint": "Uno dice qué se transmite; el otro cómo debe entenderse según la relación.",
+      "explanation": "Toda comunicación transmite datos (contenido/denotativo) e indica cómo debe interpretarse (relación/conativo), determinando este último al primero."
+    },
+    {
+      "q": "En relación con la terapia sistémica, el tercer axioma de la comunicación de watzlawick se refiere a:",
+      "options": [
+        "La puntuación de las secuencias de comunicación entre interlocutores.",
+        "La preeminencia de la comunicación analógica sobre la digital.",
+        "La imposibilidad de resolver paradojas mediante metacomunicación."
+      ],
+      "correct": 0,
+      "hint": "Se relaciona con quién toma la iniciativa o define causa y efecto.",
+      "explanation": "La naturaleza de la relación depende de cómo los interlocutores puntúan la secuencia de hechos, organizando la interacción."
+    },
+    {
+      "q": "En relación con la terapia sistémica, el conflicto conyugal expresado como 'me retraigo porque me regañas' y 'te regaño porque te retraes' ilustra:",
+      "options": [
+        "Una discrepancia en la puntuación de las secuencias de hechos.",
+        "La imposibilidad física de establecer retroalimentación positiva.",
+        "Una confusión pura entre comunicación digital y analógica."
+      ],
+      "correct": 0,
+      "hint": "Ambos discuten sobre qué conducta es la causa y cuál el efecto.",
+      "explanation": "Este es el ejemplo clásico de discrepancia en la puntuación, donde cada miembro de la pareja sitúa el inicio de la cadena en la conducta del otro."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué distingue la comunicación analógica de la digital en el cuarto axioma?",
+      "options": [
+        "La digital es no verbal; la analógica se basa en el lenguaje verbal.",
+        "La digital es verbal (arbitraria); la analógica es no verbal (gestos, tono, posturas).",
+        "La analógica tiene una estructura lógica compleja capaz de negar de forma directa."
+      ],
+      "correct": 1,
+      "hint": "La palabra 'perro' es digital; un dibujo de un perro es analógico.",
+      "explanation": "La comunicación digital emplea signos arbitrarios (palabras), mientras que la analógica incluye el lenguaje corporal, gestos, tono de voz y similitudes físicas."
+    },
+    {
+      "q": "En relación con la terapia sistémica, según watzlawick, ¿cuál es una limitación de la comunicación analógica?",
+      "options": [
+        "Carece de riqueza y expresividad en el ámbito emocional.",
+        "No puede representar valores negativos o contradicciones lógicas puras.",
+        "Es demasiado abstracta y difícil de descodificar por el receptor."
+      ],
+      "correct": 1,
+      "hint": "Las lágrimas pueden ser de alegría o de tristeza, no hay un 'no lágrimas'.",
+      "explanation": "La comunicación analógica no cuenta con una sintaxis lógica para representar la negación ('no'); por ejemplo, llorar puede significar dolor o alegría."
+    },
+    {
+      "q": "En relación con la terapia sistémica, el quinto axioma clasifica los intercambios comunicacionales en:",
+      "options": [
+        "Denotativos o conativos según el nivel de abstracción del mensaje.",
+        "Simétricos (basados en igualdad) o complementarios (basados en diferencia).",
+        "Digitales o analógicos en función del canal de transmisión."
+      ],
+      "correct": 1,
+      "hint": "Depende de si los participantes mantienen la misma jerarquía o roles opuestos.",
+      "explanation": "Los intercambios son simétricos cuando los miembros interactúan en plano de igualdad, y complementarios si uno adopta una posición superior y otro inferior."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué es la metacomunicación?",
+      "options": [
+        "La transmisión de mensajes a través de un canal no físico.",
+        "La comunicación que habla acerca de la comunicación misma.",
+        "La interferencia o ruido que bloquea la interpretación del mensaje."
+      ],
+      "correct": 1,
+      "hint": "Su prefijo indica que va 'más allá' o trata 'sobre' el mismo proceso.",
+      "explanation": "La metacomunicación ocurre cuando los interlocutores usan la comunicación para hacer referencia a las reglas o la interacción que está teniendo lugar."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué tipo de intervención resulta útil para deshacer las paradojas del lenguaje?",
+      "options": [
+        "La metacomunicación, aclarando cómo interpretar la instrucción contradictoria.",
+        "El aumento de la retroalimentación positiva para forzar la homeostasis.",
+        "La adopción de una postura de retraimiento pasivo por parte del emisor."
+      ],
+      "correct": 0,
+      "hint": "Permite hablar sobre el mandato incongruente del mensaje.",
+      "explanation": "La metacomunicación es el recurso idóneo para deshacer paradojas (como 'sé espontáneo'), permitiendo verbalizar la contradicción implícita."
+    },
+    {
+      "q": "En relación con la terapia sistémica, en el ejemplo gráfico de circularidad entre maría y juan, ¿qué mantiene el nivel de inseguridad de maría?",
+      "options": [
+        "Sus rasgos de personalidad invariables e introversión heredada.",
+        "El comportamiento de desapego y alejamiento de Juan.",
+        "Las presiones externas del suprasistema comunitario."
+      ],
+      "correct": 1,
+      "hint": "Las conductas de ambos se retroalimentan recíprocamente.",
+      "explanation": "Desde la causalidad circular, la inseguridad de María no es un rasgo fijo, sino un comportamiento mantenido por la conducta de alejamiento de Juan."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué sostiene la causalidad circular respecto a buscar el inicio de un conflicto?",
+      "options": [
+        "Es una tarea fundamental para identificar al miembro culpable del síntoma.",
+        "Es un acto improductivo, ya que toda acción es a la vez una respuesta.",
+        "Solo es útil en las primeras entrevistas para definir la homeostasis lineal."
+      ],
+      "correct": 1,
+      "hint": "En un círculo no hay principio ni fin claros.",
+      "explanation": "La circularidad sostiene que buscar el origen o 'quién empezó' carece de sentido clínico, dado que cada acción es respuesta a una interacción previa."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿cómo define watzlawick el concepto de circularidad?",
+      "options": [
+        "Patrones de interacción esencialmente repetitivos.",
+        "La secuencia lineal donde el emisor controla el código.",
+        "El estado de desorganización máxima por efecto de la entropía."
+      ],
+      "correct": 0,
+      "hint": "Alude a bucles de comportamiento que vuelven al punto de partida.",
+      "explanation": "Watzlawick utilizó el término circularidad para referirse a los patrones de interacción que se repiten de forma cíclica en las relaciones."
+    },
+    {
+      "q": "En relación con la terapia sistémica, el modelo de watzlawick de la comunicación humana se centra en estudiar:",
+      "options": [
+        "Las variables psicodinámicas del inconsciente familiar.",
+        "Los efectos que la comunicación ejerce sobre la conducta.",
+        "La estructura física de los canales de telecomunicación."
+      ],
+      "correct": 1,
+      "hint": "Se interesa por el aspecto pragmático del intercambio.",
+      "explanation": "La Teoría de la Comunicación Humana (1952) aborda la comunicación analizando sus efectos pragmáticos sobre la conducta de los interactuantes."
+    },
+    {
+      "q": "En relación con la terapia sistémica, en la comunicación, ¿cuál es un ejemplo de paradoja pragmática?",
+      "options": [
+        "Un cartel que contiene el mensaje escrito: 'No leer esto'.",
+        "El retraso en el canal físico que deforma la información del código.",
+        "La discrepancia de opinión sobre un hecho del ciclo vital familiar."
+      ],
+      "correct": 0,
+      "hint": "Es una instrucción que se contradice a sí misma al intentar seguirla.",
+      "explanation": "El cartel 'No leer esto' es una paradoja pragmática: para obedecer la orden, primero es necesario leerla, lo que constituye una infracción del mandato."
+    },
+    {
+      "q": "En relación con la terapia sistémica, la morfostasis se asocia fundamentalmente con qué mecanismo cibernético:",
+      "options": [
+        "La retroalimentación positiva.",
+        "La retroalimentación negativa.",
+        "El input de información lineal."
+      ],
+      "correct": 1,
+      "hint": "Busca mantener el statu quo y reducir las desviaciones.",
+      "explanation": "La morfostasis (preservación de la forma) se apoya en mecanismos de retroalimentación negativa que corrigen las desviaciones del sistema."
+    },
+    {
+      "q": "En relación con la terapia sistémica, la morfogénesis se asocia fundamentalmente con qué mecanismo cibernético:",
+      "options": [
+        "La retroalimentación positiva.",
+        "La retroalimentación negativa.",
+        "El aislamiento del suprasistema."
+      ],
+      "correct": 0,
+      "hint": "Promueve la transformación, diferenciación y crecimiento de la estructura.",
+      "explanation": "La morfogénesis (cambio de forma o estructura) se asocia a la retroalimentación positiva, la cual amplifica las desviaciones para propiciar la adaptación."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué representa un subsistema dentro de la estructura familiar?",
+      "options": [
+        "La red de amigos e instituciones del barrio.",
+        "Un grupo funcional específico dentro de la familia, como la díada conyugal.",
+        "El paciente identificado que manifiesta la sintomatología."
+      ],
+      "correct": 1,
+      "hint": "Es un nivel de organización inferior dentro del sistema familiar completo.",
+      "explanation": "Un subsistema es un componente funcional específico de la familia (por ejemplo, el subsistema parental, conyugal o filial) con límites propios."
+    },
+    {
+      "q": "En relación con la terapia sistémica, el principio de bertalanffy que dice que las modificaciones de un sistema son independientes de sus condiciones iniciales es:",
+      "options": [
+        "Equipotencialidad.",
+        "Equifinalidad.",
+        "Morfogénesis."
+      ],
+      "correct": 1,
+      "hint": "Indica que se puede llegar a la misma meta por diferentes caminos.",
+      "explanation": "La equifinalidad implica que el estado final del sistema abierto es independiente de las condiciones de partida y de los procesos iniciales."
+    },
+    {
+      "q": "En relación con la terapia sistémica, en el modelo sistémico, los problemas individuales se interpretan como:",
+      "options": [
+        "Fallas de los mecanismos intrapsíquicos de defensa del self.",
+        "Manifestaciones de la interacción disfuncional del grupo de pertenencia.",
+        "Consecuencias inevitables de traumas infantiles fijos."
+      ],
+      "correct": 1,
+      "hint": "Se cambia el foco del interior del sujeto a sus relaciones.",
+      "explanation": "Los problemas se conceptualizan como resultantes de interacciones relacionales disfuncionales en el sistema familiar o social inmediato."
+    },
+    {
+      "q": "En relación con la terapia sistémica, según el quinto axioma, una relación complementaria se caracteriza por:",
+      "options": [
+        "La presencia de roles idénticos y toma de decisiones paritaria.",
+        "La desigualdad en la interacción, con una posición superior y otra inferior.",
+        "El conflicto constante por la puntuación de las secuencias de hechos."
+      ],
+      "correct": 1,
+      "hint": "Las conductas de ambos participantes difieren pero encajan recíprocamente.",
+      "explanation": "En una relación complementaria, las conductas se basan en la diferencia, existiendo una posición superior (one-up) y otra inferior (one-down) que se acoplan."
+    },
+    {
+      "q": "En relación con la terapia sistémica, según el quinto axioma, una relación simétrica se caracteriza por:",
+      "options": [
+        "La tendencia a minimizar la diferencia y basarse en la igualdad de los participantes.",
+        "El sometimiento absoluto de uno de los miembros a la jerarquía del otro.",
+        "La incomunicación analógica entre los diferentes niveles lógicos."
+      ],
+      "correct": 0,
+      "hint": "Los participantes tienen el mismo nivel de poder y los mismos derechos.",
+      "explanation": "La relación simétrica se basa en la igualdad de condiciones, donde los participantes tienden a reflejar la conducta del otro de manera recíproca."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿cuál es un ejemplo de barrera en el canal de comunicación?",
+      "options": [
+        "El desconocimiento del emisor sobre el tema del mensaje.",
+        "La deformación del mensaje por la presencia de intermediarios.",
+        "La actitud desinteresada compartida por ambos interlocutores."
+      ],
+      "correct": 1,
+      "hint": "Afecta a la vía física o medio de transporte de la información.",
+      "explanation": "Los intermediarios que distorsionan el mensaje actúan como una barrera o ruido en el canal por el cual viaja la información."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué elemento del modelo lineal de shannon y weaver representa los signos para estructurar el mensaje?",
+      "options": [
+        "El código.",
+        "El receptor.",
+        "El contexto."
+      ],
+      "correct": 0,
+      "hint": "Puede ser el idioma hablado o las señales luminosas de un semáforo.",
+      "explanation": "El código es el conjunto estructurado de signos y reglas lingüísticas o de otra naturaleza que permite dar forma comprensible al mensaje."
+    },
+    {
+      "q": "En relación con la terapia sistémica, la homeostasis familiar, como compensación interna, busca:",
+      "options": [
+        "Amplificar el cambio para reestructurar el sistema de pareja.",
+        "Mantener el equilibrio estable frente a variaciones externas sin realizar cambios estructurales.",
+        "Permitir la entropía del sistema en situaciones de crisis evolutiva."
+      ],
+      "correct": 1,
+      "hint": "Bloquea o compensa las fluctuaciones del entorno para seguir igual.",
+      "explanation": "La homeostasis comprende las compensaciones internas destinadas a contrarrestar fluctuaciones ambientales para preservar el equilibrio sin alterar las reglas del sistema."
+    },
+    {
+      "q": "En relación con la terapia sistémica, ¿qué sucede cuando el nivel de tensión excede la capacidad homeostática de un sistema?",
+      "options": [
+        "El sistema se ve forzado a cambiar su estructura (morfogénesis) o entra en disfunción.",
+        "El sistema reduce de forma automática su entropía sin importar energía.",
+        "Las relaciones complementarias se vuelven instantáneamente simétricas."
+      ],
+      "correct": 0,
+      "hint": "El equilibrio previo ya no es sostenible sin transformaciones.",
+      "explanation": "Si la tensión supera el rango tolerable, los mecanismos homeostáticos fallan, obligando al sistema a reestructurarse (morfogénesis) o a manifestar sintomatología."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿cómo define bateson (1972) el concepto de 'sistema'?",
+      "options": [
+        "Cualquier unidad estructurada en retroalimentación.",
+        "Un conjunto de elementos con relaciones estrictamente lineales.",
+        "Una estructura cerrada incapaz de importar energía del medio."
+      ],
+      "correct": 0,
+      "hint": "Bateson vinculó el concepto de sistema con el feedback cibernético.",
+      "explanation": "Bateson (1972) define un sistema como cualquier unidad estructurada en retroalimentación, enfatizando la interacción y la comunicación circular."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, el principio de totalidad en la teoría general de sistemas establece que:",
+      "options": [
+        "El sistema es idéntico a la suma de las características de sus miembros.",
+        "El sistema trasciende las características individuales y es indivisible.",
+        "Las partes individuales son más complejas que el sistema en su conjunto."
+      ],
+      "correct": 1,
+      "hint": "Establece una propiedad emergente del grupo.",
+      "explanation": "El principio de totalidad postula que el sistema trasciende las características de sus miembros, actuando como una unidad indivisible con cualidades emergentes."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué autor sugirió en 1965 que la familia opera como un sistema basado en un conjunto de reglas?",
+      "options": [
+        "Gregory Bateson.",
+        "Don Jackson.",
+        "Ludwig von Bertalanffy."
+      ],
+      "correct": 1,
+      "hint": "Fundó el MRI y se centró en las reglas interaccionales de la familia.",
+      "explanation": "Don Jackson (1965) sugirió que la familia es un sistema porque opera sobre la base de un conjunto de reglas de interacción estables."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué es el input en la dinámica de un sistema abierto?",
+      "options": [
+        "La importación de recursos como energía, materia o información del ambiente.",
+        "La corriente de salida y desechos del sistema hacia su entorno.",
+        "La resistencia que ofrece el sistema a la comunicación externa."
+      ],
+      "correct": 0,
+      "hint": "Es la entrada de recursos necesarios para la supervivencia.",
+      "explanation": "El input se refiere a la importación de recursos (energía, materia o información) que el sistema requiere de su medio para funcionar."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, la diferencia en la conservación entre la energía y la información radica en que la información:",
+      "options": [
+        "Se reduce a la mitad cada vez que es transmitida a otro receptor.",
+        "Es acumulativa y su transmisión no la elimina del emisor original.",
+        "Sigue estrictamente la ley física de conservación sin variaciones."
+      ],
+      "correct": 1,
+      "hint": "Pensar en qué ocurre cuando compartes un dato o un mensaje.",
+      "explanation": "A diferencia de la energía, la comunicación de información no la elimina del emisor; es acumulativa y la salida no resta contenido al sistema."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué caracteriza a un sistema cerrado en la teoría general de sistemas?",
+      "options": [
+        "Intercambia información constante pero nunca materia con el medio.",
+        "Ningún elemento de afuera entra y ningún elemento de adentro sale.",
+        "Posee límites permeables que facilitan una adaptación continua."
+      ],
+      "correct": 1,
+      "hint": "Es la ausencia absoluta de intercambio con el exterior.",
+      "explanation": "Un sistema es cerrado cuando no hay intercambio de elementos (materia, energía o información) con el exterior, manteniéndose aislado."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, en la jerarquía de sistemas, ¿qué nivel representa la comunidad respecto a la familia?",
+      "options": [
+        "El suprasistema.",
+        "El subsistema.",
+        "El sistema intermedio."
+      ],
+      "correct": 0,
+      "hint": "Es el nivel superior que engloba a los sistemas menores.",
+      "explanation": "La comunidad actúa como suprasistema, que es el sistema de nivel superior que integra a los sistemas subordinados como las familias."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, el principio de sinergia establece que:",
+      "options": [
+        "El análisis por separado de las partes explica todo el comportamiento.",
+        "El análisis de cada parte por separado no explica el comportamiento global.",
+        "Las partes se extinguen cuando el sistema alcanza el equilibrio homeostático."
+      ],
+      "correct": 1,
+      "hint": "Se relaciona con el postulado de Aristóteles sobre el todo y las partes.",
+      "explanation": "La sinergia implica que el comportamiento del sistema no puede predecirse analizando las partes por separado, derivando de sus interacciones."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué propiedad sistémica describe la capacidad para modificar la forma y estructura para conservarse?",
+      "options": [
+        "Morfostasis.",
+        "Morfogénesis.",
+        "Homeostasis."
+      ],
+      "correct": 1,
+      "hint": "Su nombre alude al origen o cambio de la forma.",
+      "explanation": "La morfogénesis es el proceso de cambio en la forma, estructura y estado del sistema que facilita su desarrollo y adaptación al ambiente."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué propiedad sistémica tiende a preservar o mantener una organización dada del sistema?",
+      "options": [
+        "Morfostasis.",
+        "Morfogénesis.",
+        "Entropía."
+      ],
+      "correct": 0,
+      "hint": "Se asocia a la retroalimentación negativa y la estabilidad.",
+      "explanation": "La morfostasis comprende los procesos que tienden a mantener la estabilidad, organización o estado dado de un sistema, controlando las desviaciones."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿en qué consiste la equifinalidad en los sistemas abiertos?",
+      "options": [
+        "Partiendo de condiciones iniciales iguales se llega a resultados distintos.",
+        "Partiendo de condiciones iniciales distintas se puede llegar al mismo estado final.",
+        "Todos los sistemas cerrados terminan extinguiéndose en el mismo periodo."
+      ],
+      "correct": 1,
+      "hint": "Los caminos y orígenes son distintos, pero la meta final es la misma.",
+      "explanation": "La equifinalidad (Bertalanffy) establece que el sistema puede alcanzar el mismo estado final partiendo de condiciones diferentes y siguiendo itinerarios distintos."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué describe el concepto de multifinalidad?",
+      "options": [
+        "Condiciones iniciales similares pueden llevar a estados finales diferentes.",
+        "Condiciones iniciales diferentes llevan necesariamente a estados idénticos.",
+        "Un solo sistema tiene múltiples funciones concurrentes en el suprasistema."
+      ],
+      "correct": 0,
+      "hint": "Es el proceso inverso a la equifinalidad.",
+      "explanation": "La multifinalidad es el proceso opuesto a la equifinalidad: condiciones iniciales idénticas o similares pueden conducir a resultados finales muy diversos."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, la equipotencialidad en la teoría general de sistemas se define como la capacidad de:",
+      "options": [
+        "Todas las partes de influir por igual en el suprasistema.",
+        "Las partes restantes de asumir las funciones de las partes extinguidas.",
+        "El sistema de autorregularse sin recurrir al feedback negativo."
+      ],
+      "correct": 1,
+      "hint": "Implica la reorganización interna cuando falta un componente.",
+      "explanation": "La equipotencialidad permite que las partes restantes de un sistema asuman las tareas o funciones de componentes que se han perdido o extinguido."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, la retroalimentación negativa en un sistema familiar se asocia principalmente a:",
+      "options": [
+        "El crecimiento y desarrollo de nuevas estructuras de interacción.",
+        "Los procesos de autorregulación, control y mantenimiento de la homeostasis.",
+        "La amplificación de las desviaciones y el colapso del sistema."
+      ],
+      "correct": 1,
+      "hint": "Busca reducir la desviación respecto a las metas del sistema.",
+      "explanation": "La retroalimentación negativa busca el control y la autorregulación, reduciendo desviaciones para mantener la homeostasis familiar."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué efecto tiene la retroalimentación positiva en el sistema?",
+      "options": [
+        "Reduce y bloquea las variaciones para preservar el equilibrio.",
+        "Amplifica las desviaciones y propicia el crecimiento o cambio.",
+        "Aísla al sistema del suprasistema para evitar la entropía."
+      ],
+      "correct": 1,
+      "hint": "Está asociada con los fenómenos de diferenciación y morfogénesis.",
+      "explanation": "La retroalimentación positiva amplifica las variaciones iniciales, facilitando el cambio de estructura, el crecimiento y el desarrollo de metas nuevas."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué autor acuñó el término 'cibernética' y en qué año?",
+      "options": [
+        "Norbert Wiener en 1948.",
+        "Gregory Bateson en 1952.",
+        "Paul Watzlawick en 1967."
+      ],
+      "correct": 0,
+      "hint": "Estudió la retroalimentación en máquinas y seres vivos.",
+      "explanation": "Norbert Wiener definió y acuñó el término Cibernética en su publicación de 1948, introduciendo el concepto de feedback."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, la entropía es un principio físico que establece que los sistemas tienden a:",
+      "options": [
+        "La organización creciente e importación de recursos.",
+        "La desorganización y la homogeneización con su ambiente.",
+        "La estabilidad absoluta y la resistencia total al cambio."
+      ],
+      "correct": 1,
+      "hint": "Proviene de la termodinámica y alude al caos.",
+      "explanation": "La entropía describe la tendencia natural de los sistemas a perder organización y diluirse con el ambiente si no importan energía."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué permite la negentropía a los sistemas abiertos?",
+      "options": [
+        "Aumentar la desorganización interna de forma voluntaria.",
+        "Conservar estados de organización importando energía del ambiente.",
+        "Eliminar por completo la comunicación con otros subsistemas."
+      ],
+      "correct": 1,
+      "hint": "Es la energía importada para contrarrestar la entropía.",
+      "explanation": "La negentropía es la importación de energía y recursos del medio que permite a los sistemas abiertos mantener y desarrollar su organización."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, el paso de lo intrapsíquico a lo interpersonal en terapia sistémica implica:",
+      "options": [
+        "Buscar la patología en los rasgos de personalidad del paciente.",
+        "Ver los problemas como el resultado de procesos de interacción entre personas.",
+        "Rechazar el estudio de la comunicación a favor de la asociación libre."
+      ],
+      "correct": 1,
+      "hint": "El foco cambia de la mente individual a las relaciones.",
+      "explanation": "La terapia sistémica sitúa la patología y los problemas en el nivel interpersonal, considerándolos fruto de las dinámicas relacionales."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, en el funcionalismo del síntoma de la terapia familiar temprana, se sostiene que:",
+      "options": [
+        "El síntoma desaparece si se ignoran las dinámicas de pareja.",
+        "El síntoma ofrece alguna forma de ganancia o utilidad para el sistema.",
+        "La conducta sintomática es un fallo orgánico puramente individual."
+      ],
+      "correct": 2,
+      "hint": "El síntoma puede 'distraer' o regular conflictos mayores.",
+      "explanation": "El funcionalismo plantea que el síntoma sobrevive porque ofrece una ganancia secundaria (como cohesionar o distraer un conflicto conyugal)."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, en el modelo lineal de comunicación de shannon y weaver (1949), ¿cuál es el canal?",
+      "options": [
+        "El medio físico a través del cual se transmite el mensaje.",
+        "El conjunto de signos utilizados para codificar la información.",
+        "La persona o grupo que interpreta el mensaje final."
+      ],
+      "correct": 0,
+      "hint": "Puede ser natural como el aire o artificial como un cable.",
+      "explanation": "El canal es el medio físico (aire, cable, papel) por el cual viaja el mensaje codificado desde el emisor al receptor."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué limitación principal presentaba el modelo de shannon y weaver?",
+      "options": [
+        "No definía de forma clara el papel del emisor y del receptor.",
+        "Era una estructura puramente lineal que no contemplaba la retroalimentación.",
+        "Excluía el código del análisis de los mensajes de telecomunicación."
+      ],
+      "correct": 1,
+      "hint": "La Cibernética resolvió esta limitación posteriormente.",
+      "explanation": "El modelo de Shannon y Weaver era estrictamente lineal y unidireccional. La circularidad se incorporó con el feedback de la Cibernética."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, según las leyes de la comunicación, ¿quién es el primer responsable del éxito del intercambio?",
+      "options": [
+        "El receptor, al tener la obligación de decodificar de forma objetiva.",
+        "El emisor, quien debe adaptar y verificar cómo se recibe el mensaje.",
+        "El canal, que debe garantizar la ausencia absoluta de ruido ambiental."
+      ],
+      "correct": 1,
+      "hint": "Es la segunda ley de la comunicación.",
+      "explanation": "La segunda ley establece que el emisor es el primer responsable de los resultados de la comunicación y de asegurar su correcta recepción."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, la primera ley de la comunicación postula que:",
+      "options": [
+        "Lo importante es lo que expone el emisor con claridad digital.",
+        "Lo importante no es lo que expone el emisor, sino lo que recibe el receptor.",
+        "La comunicación no verbal carece de valor en ausencia de palabras."
+      ],
+      "correct": 1,
+      "hint": "El foco está en la recepción y decodificación final del mensaje.",
+      "explanation": "La primera ley indica que lo relevante es lo que capta e interpreta el receptor, no meramente lo que el emisor cree haber transmitido."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, en el proceso comunicativo, una barrera del emisor puede consistir en:",
+      "options": [
+        "Manifestar incoherencia entre lo que dice verbalmente y lo que hace.",
+        "La distracción o incapacidad para escuchar del receptor.",
+        "El ruido de fondo presente en el canal físico."
+      ],
+      "correct": 0,
+      "hint": "Es un obstáculo generado por quien emite el mensaje.",
+      "explanation": "La incoherencia entre lo verbal y conductual es una barrera clásica del emisor, dificultando una codificación coherente."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, el primer axioma de la comunicación de watzlawick establece que:",
+      "options": [
+        "Toda comunicación es digital en interacciones interpersonales.",
+        "Es imposible no comunicar, pues toda conducta tiene valor de mensaje.",
+        "La metacomunicación es el único nivel válido en las relaciones."
+      ],
+      "correct": 1,
+      "hint": "Incluso el silencio o la inactividad transmiten información.",
+      "explanation": "Al ser imposible no comportarse, y dado que toda conducta en interacción comunica, Watzlawick concluye que es imposible no comunicar."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, según el segundo axioma de watzlawick, toda comunicación posee:",
+      "options": [
+        "Un nivel de emisor y un nivel de canal de retroalimentación.",
+        "Un nivel de contenido (aspecto denotativo) y uno relacional (aspecto conativo).",
+        "Un canal físico y un código verbal puramente analógicos."
+      ],
+      "correct": 1,
+      "hint": "Uno dice qué se transmite; el otro cómo debe entenderse según la relación.",
+      "explanation": "Toda comunicación transmite datos (contenido/denotativo) e indica cómo debe interpretarse (relación/conativo), determinando este último al primero."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, el tercer axioma de la comunicación de watzlawick se refiere a:",
+      "options": [
+        "La puntuación de las secuencias de comunicación entre interlocutores.",
+        "La preeminencia de la comunicación analógica sobre la digital.",
+        "La imposibilidad de resolver paradojas mediante metacomunicación."
+      ],
+      "correct": 0,
+      "hint": "Se relaciona con quién toma la iniciativa o define causa y efecto.",
+      "explanation": "La naturaleza de la relación depende de cómo los interlocutores puntúan la secuencia de hechos, organizando la interacción."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, el conflicto conyugal expresado como 'me retraigo porque me regañas' y 'te regaño porque te retraes' ilustra:",
+      "options": [
+        "Una discrepancia en la puntuación de las secuencias de hechos.",
+        "La imposibilidad física de establecer retroalimentación positiva.",
+        "Una confusión pura entre comunicación digital y analógica."
+      ],
+      "correct": 0,
+      "hint": "Ambos discuten sobre qué conducta es la causa y cuál el efecto.",
+      "explanation": "Este es el ejemplo clásico de discrepancia en la puntuación, donde cada miembro de la pareja sitúa el inicio de la cadena en la conducta del otro."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué distingue la comunicación analógica de la digital en el cuarto axioma?",
+      "options": [
+        "La digital es no verbal; la analógica se basa en el lenguaje verbal.",
+        "La digital es verbal (arbitraria); la analógica es no verbal (gestos, tono, posturas).",
+        "La analógica tiene una estructura lógica compleja capaz de negar de forma directa."
+      ],
+      "correct": 1,
+      "hint": "La palabra 'perro' es digital; un dibujo de un perro es analógico.",
+      "explanation": "La comunicación digital emplea signos arbitrarios (palabras), mientras que la analógica incluye el lenguaje corporal, gestos, tono de voz y similitudes físicas."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, según watzlawick, ¿cuál es una limitación de la comunicación analógica?",
+      "options": [
+        "Carece de riqueza y expresividad en el ámbito emocional.",
+        "No puede representar valores negativos o contradicciones lógicas puras.",
+        "Es demasiado abstracta y difícil de descodificar por el receptor."
+      ],
+      "correct": 1,
+      "hint": "Las lágrimas pueden ser de alegría o de tristeza, no hay un 'no lágrimas'.",
+      "explanation": "La comunicación analógica no cuenta con una sintaxis lógica para representar la negación ('no'); por ejemplo, llorar puede significar dolor o alegría."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, el quinto axioma clasifica los intercambios comunicacionales en:",
+      "options": [
+        "Denotativos o conativos según el nivel de abstracción del mensaje.",
+        "Simétricos (basados en igualdad) o complementarios (basados en diferencia).",
+        "Digitales o analógicos en función del canal de transmisión."
+      ],
+      "correct": 1,
+      "hint": "Depende de si los participantes mantienen la misma jerarquía o roles opuestos.",
+      "explanation": "Los intercambios son simétricos cuando los miembros interactúan en plano de igualdad, y complementarios si uno adopta una posición superior y otro inferior."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué es la metacomunicación?",
+      "options": [
+        "La transmisión de mensajes a través de un canal no físico.",
+        "La comunicación que habla acerca de la comunicación misma.",
+        "La interferencia o ruido que bloquea la interpretación del mensaje."
+      ],
+      "correct": 1,
+      "hint": "Su prefijo indica que va 'más allá' o trata 'sobre' el mismo proceso.",
+      "explanation": "La metacomunicación ocurre cuando los interlocutores usan la comunicación para hacer referencia a las reglas o la interacción que está teniendo lugar."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué tipo de intervención resulta útil para deshacer las paradojas del lenguaje?",
+      "options": [
+        "La metacomunicación, aclarando cómo interpretar la instrucción contradictoria.",
+        "El aumento de la retroalimentación positiva para forzar la homeostasis.",
+        "La adopción de una postura de retraimiento pasivo por parte del emisor."
+      ],
+      "correct": 0,
+      "hint": "Permite hablar sobre el mandato incongruente del mensaje.",
+      "explanation": "La metacomunicación es el recurso idóneo para deshacer paradojas (como 'sé espontáneo'), permitiendo verbalizar la contradicción implícita."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, en el ejemplo gráfico de circularidad entre maría y juan, ¿qué mantiene el nivel de inseguridad de maría?",
+      "options": [
+        "Sus rasgos de personalidad invariables e introversión heredada.",
+        "El comportamiento de desapego y alejamiento de Juan.",
+        "Las presiones externas del suprasistema comunitario."
+      ],
+      "correct": 1,
+      "hint": "Las conductas de ambos se retroalimentan recíprocamente.",
+      "explanation": "Desde la causalidad circular, la inseguridad de María no es un rasgo fijo, sino un comportamiento mantenido por la conducta de alejamiento de Juan."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué sostiene la causalidad circular respecto a buscar el inicio de un conflicto?",
+      "options": [
+        "Es una tarea fundamental para identificar al miembro culpable del síntoma.",
+        "Es un acto improductivo, ya que toda acción es a la vez una respuesta.",
+        "Solo es útil en las primeras entrevistas para definir la homeostasis lineal."
+      ],
+      "correct": 1,
+      "hint": "En un círculo no hay principio ni fin claros.",
+      "explanation": "La circularidad sostiene que buscar el origen o 'quién empezó' carece de sentido clínico, dado que cada acción es respuesta a una interacción previa."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿cómo define watzlawick el concepto de circularidad?",
+      "options": [
+        "Patrones de interacción esencialmente repetitivos.",
+        "La secuencia lineal donde el emisor controla el código.",
+        "El estado de desorganización máxima por efecto de la entropía."
+      ],
+      "correct": 0,
+      "hint": "Alude a bucles de comportamiento que vuelven al punto de partida.",
+      "explanation": "Watzlawick utilizó el término circularidad para referirse a los patrones de interacción que se repiten de forma cíclica en las relaciones."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, el modelo de watzlawick de la comunicación humana se centra en estudiar:",
+      "options": [
+        "Las variables psicodinámicas del inconsciente familiar.",
+        "Los efectos que la comunicación ejerce sobre la conducta.",
+        "La estructura física de los canales de telecomunicación."
+      ],
+      "correct": 1,
+      "hint": "Se interesa por el aspecto pragmático del intercambio.",
+      "explanation": "La Teoría de la Comunicación Humana (1952) aborda la comunicación analizando sus efectos pragmáticos sobre la conducta de los interactuantes."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, en la comunicación, ¿cuál es un ejemplo de paradoja pragmática?",
+      "options": [
+        "Un cartel que contiene el mensaje escrito: 'No leer esto'.",
+        "El retraso en el canal físico que deforma la información del código.",
+        "La discrepancia de opinión sobre un hecho del ciclo vital familiar."
+      ],
+      "correct": 0,
+      "hint": "Es una instrucción que se contradice a sí misma al intentar seguirla.",
+      "explanation": "El cartel 'No leer esto' es una paradoja pragmática: para obedecer la orden, primero es necesario leerla, lo que constituye una infracción del mandato."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, la morfostasis se asocia fundamentalmente con qué mecanismo cibernético:",
+      "options": [
+        "La retroalimentación positiva.",
+        "La retroalimentación negativa.",
+        "El input de información lineal."
+      ],
+      "correct": 1,
+      "hint": "Busca mantener el statu quo y reducir las desviaciones.",
+      "explanation": "La morfostasis (preservación de la forma) se apoya en mecanismos de retroalimentación negativa que corrigen las desviaciones del sistema."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, la morfogénesis se asocia fundamentalmente con qué mecanismo cibernético:",
+      "options": [
+        "La retroalimentación positiva.",
+        "La retroalimentación negativa.",
+        "El aislamiento del suprasistema."
+      ],
+      "correct": 0,
+      "hint": "Promueve la transformación, diferenciación y crecimiento de la estructura.",
+      "explanation": "La morfogénesis (cambio de forma o estructura) se asocia a la retroalimentación positiva, la cual amplifica las desviaciones para propiciar la adaptación."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué representa un subsistema dentro de la estructura familiar?",
+      "options": [
+        "La red de amigos e instituciones del barrio.",
+        "Un grupo funcional específico dentro de la familia, como la díada conyugal.",
+        "El paciente identificado que manifiesta la sintomatología."
+      ],
+      "correct": 1,
+      "hint": "Es un nivel de organización inferior dentro del sistema familiar completo.",
+      "explanation": "Un subsistema es un componente funcional específico de la familia (por ejemplo, el subsistema parental, conyugal o filial) con límites propios."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, el principio de bertalanffy que dice que las modificaciones de un sistema son independientes de sus condiciones iniciales es:",
+      "options": [
+        "Equipotencialidad.",
+        "Equifinalidad.",
+        "Morfogénesis."
+      ],
+      "correct": 1,
+      "hint": "Indica que se puede llegar a la misma meta por diferentes caminos.",
+      "explanation": "La equifinalidad implica que el estado final del sistema abierto es independiente de las condiciones de partida y de los procesos iniciales."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, en el modelo sistémico, los problemas individuales se interpretan como:",
+      "options": [
+        "Fallas de los mecanismos intrapsíquicos de defensa del self.",
+        "Manifestaciones de la interacción disfuncional del grupo de pertenencia.",
+        "Consecuencias inevitables de traumas infantiles fijos."
+      ],
+      "correct": 1,
+      "hint": "Se cambia el foco del interior del sujeto a sus relaciones.",
+      "explanation": "Los problemas se conceptualizan como resultantes de interacciones relacionales disfuncionales en el sistema familiar o social inmediato."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, según el quinto axioma, una relación complementaria se caracteriza por:",
+      "options": [
+        "La presencia de roles idénticos y toma de decisiones paritaria.",
+        "La desigualdad en la interacción, con una posición superior y otra inferior.",
+        "El conflicto constante por la puntuación de las secuencias de hechos."
+      ],
+      "correct": 1,
+      "hint": "Las conductas de ambos participantes difieren pero encajan recíprocamente.",
+      "explanation": "En una relación complementaria, las conductas se basan en la diferencia, existiendo una posición superior (one-up) y otra inferior (one-down) que se acoplan."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, según el quinto axioma, una relación simétrica se caracteriza por:",
+      "options": [
+        "La tendencia a minimizar la diferencia y basarse en la igualdad de los participantes.",
+        "El sometimiento absoluto de uno de los miembros a la jerarquía del otro.",
+        "La incomunicación analógica entre los diferentes niveles lógicos."
+      ],
+      "correct": 0,
+      "hint": "Los participantes tienen el mismo nivel de poder y los mismos derechos.",
+      "explanation": "La relación simétrica se basa en la igualdad de condiciones, donde los participantes tienden a reflejar la conducta del otro de manera recíproca."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿cuál es un ejemplo de barrera en el canal de comunicación?",
+      "options": [
+        "El desconocimiento del emisor sobre el tema del mensaje.",
+        "La deformación del mensaje por la presencia de intermediarios.",
+        "La actitud desinteresada compartida por ambos interlocutores."
+      ],
+      "correct": 1,
+      "hint": "Afecta a la vía física o medio de transporte de la información.",
+      "explanation": "Los intermediarios que distorsionan el mensaje actúan como una barrera o ruido en el canal por el cual viaja la información."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué elemento del modelo lineal de shannon y weaver representa los signos para estructurar el mensaje?",
+      "options": [
+        "El código.",
+        "El receptor.",
+        "El contexto."
+      ],
+      "correct": 0,
+      "hint": "Puede ser el idioma hablado o las señales luminosas de un semáforo.",
+      "explanation": "El código es el conjunto estructurado de signos y reglas lingüísticas o de otra naturaleza que permite dar forma comprensible al mensaje."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, la homeostasis familiar, como compensación interna, busca:",
+      "options": [
+        "Amplificar el cambio para reestructurar el sistema de pareja.",
+        "Mantener el equilibrio estable frente a variaciones externas sin realizar cambios estructurales.",
+        "Permitir la entropía del sistema en situaciones de crisis evolutiva."
+      ],
+      "correct": 1,
+      "hint": "Bloquea o compensa las fluctuaciones del entorno para seguir igual.",
+      "explanation": "La homeostasis comprende las compensaciones internas destinadas a contrarrestar fluctuaciones ambientales para preservar el equilibrio sin alterar las reglas del sistema."
+    },
+    {
+      "q": "Teniendo en cuenta los apuntes de la asignatura, ¿qué sucede cuando el nivel de tensión excede la capacidad homeostática de un sistema?",
+      "options": [
+        "El sistema se ve forzado a cambiar su estructura (morfogénesis) o entra en disfunción.",
+        "El sistema reduce de forma automática su entropía sin importar energía.",
+        "Las relaciones complementarias se vuelven instantáneamente simétricas."
+      ],
+      "correct": 0,
+      "hint": "El equilibrio previo ya no es sostenible sin transformaciones.",
+      "explanation": "Si la tensión supera el rango tolerable, los mecanismos homeostáticos fallan, obligando al sistema a reestructurarse (morfogénesis) o a manifestar sintomatología."
+    }
+  ],
+  "trainer": [
+    {
+      "q": "Explica los conceptos de morfogénesis y morfostasis en la TGS. (Variación de estudio 1)",
+      "keywords": [
+        "morfogénesis",
+        "morfostasis",
+        "TGS",
+        "cambio",
+        "estructura",
+        "estabilidad"
+      ],
+      "page": 22,
+      "answer": "Respuesta detallada para la pregunta sobre explica los conceptos de morfogénesis y morfostasis en la tgs. basada en los apuntes de la asignatura en la página 22. El alumno debe desarrollar los conceptos clave como morfogénesis, morfostasis, TGS, cambio y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Describe las seis leyes fundamentales de la comunicación humana según el manual. (Variación de estudio 2)",
+      "keywords": [
+        "leyes",
+        "comunicación",
+        "emisor",
+        "receptor",
+        "feedback",
+        "subjetivo"
+      ],
+      "page": 25,
+      "answer": "Respuesta detallada para la pregunta sobre describe las seis leyes fundamentales de la comunicación humana según el manual. basada en los apuntes de la asignatura en la página 25. El alumno debe desarrollar los conceptos clave como leyes, comunicación, emisor, receptor y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Detalla los cinco axiomas de la comunicación humana planteados por Watzlawick. (Variación de estudio 3)",
+      "keywords": [
+        "axiomas",
+        "comunicación",
+        "imposible no comunicar",
+        "contenido",
+        "relación",
+        "puntuación",
+        "digital",
+        "analógico",
+        "simétrico",
+        "complementario"
+      ],
+      "page": 27,
+      "answer": "Respuesta detallada para la pregunta sobre detalla los cinco axiomas de la comunicación humana planteados por watzlawick. basada en los apuntes de la asignatura en la página 27. El alumno debe desarrollar los conceptos clave como axiomas, comunicación, imposible no comunicar, contenido y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Explica en qué consiste la circularidad frente a la causalidad lineal. (Variación de estudio 4)",
+      "keywords": [
+        "circularidad",
+        "causalidad circular",
+        "lineal",
+        "retroalimentación",
+        "María y Juan",
+        "bucle"
+      ],
+      "page": 30,
+      "answer": "Respuesta detallada para la pregunta sobre explica en qué consiste la circularidad frente a la causalidad lineal. basada en los apuntes de la asignatura en la página 30. El alumno debe desarrollar los conceptos clave como circularidad, causalidad circular, lineal, retroalimentación y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Define los conceptos de equifinalidad y multifinalidad, dando un ejemplo clínico. (Variación de estudio 5)",
+      "keywords": [
+        "equifinalidad",
+        "multifinalidad",
+        "Bertalanffy",
+        "condiciones iniciales",
+        "resultado final"
+      ],
+      "page": 23,
+      "answer": "Respuesta detallada para la pregunta sobre define los conceptos de equifinalidad y multifinalidad, dando un ejemplo clínico. basada en los apuntes de la asignatura en la página 23. El alumno debe desarrollar los conceptos clave como equifinalidad, multifinalidad, Bertalanffy, condiciones iniciales y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "¿Qué es la metacomunicación y qué utilidad clínica posee para resolver paradojas? (Variación de estudio 6)",
+      "keywords": [
+        "metacomunicación",
+        "paradojas",
+        "Watzlawick",
+        "nivel relacional",
+        "clarificación"
+      ],
+      "page": 29,
+      "answer": "Respuesta detallada para la pregunta sobre ¿qué es la metacomunicación y qué utilidad clínica posee para resolver paradojas? basada en los apuntes de la asignatura en la página 29. El alumno debe desarrollar los conceptos clave como metacomunicación, paradojas, Watzlawick, nivel relacional y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Explica la diferencia entre un sistema abierto y uno cerrado según la TGS. (Variación de estudio 7)",
+      "keywords": [
+        "sistema abierto",
+        "sistema cerrado",
+        "límites",
+        "energía",
+        "información",
+        "intercambio"
+      ],
+      "page": 21,
+      "answer": "Respuesta detallada para la pregunta sobre explica la diferencia entre un sistema abierto y uno cerrado según la tgs. basada en los apuntes de la asignatura en la página 21. El alumno debe desarrollar los conceptos clave como sistema abierto, sistema cerrado, límites, energía y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Analiza la transición del modelo lineal de Shannon y Weaver al modelo circular cibernético. (Variación de estudio 8)",
+      "keywords": [
+        "Shannon",
+        "Weaver",
+        "Wiener",
+        "cibernética",
+        "feedback",
+        "circular"
+      ],
+      "page": 25,
+      "answer": "Respuesta detallada para la pregunta sobre analiza la transición del modelo lineal de shannon y weaver al modelo circular cibernético. basada en los apuntes de la asignatura en la página 25. El alumno debe desarrollar los conceptos clave como Shannon, Weaver, Wiener, cibernética y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Describe los componentes básicos de un sistema (elementos, relaciones, estructura, límites). (Variación de estudio 9)",
+      "keywords": [
+        "componentes",
+        "elementos",
+        "relaciones",
+        "estructura",
+        "límites",
+        "Buckley"
+      ],
+      "page": 20,
+      "answer": "Respuesta detallada para la pregunta sobre describe los componentes básicos de un sistema (elementos, relaciones, estructura, límites). basada en los apuntes de la asignatura en la página 20. El alumno debe desarrollar los conceptos clave como componentes, elementos, relaciones, estructura y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Explica los conceptos de entropía y negentropía en el funcionamiento sistémico. (Variación de estudio 10)",
+      "keywords": [
+        "entropía",
+        "negentropía",
+        "organización",
+        "termodinámica",
+        "energía"
+      ],
+      "page": 23,
+      "answer": "Respuesta detallada para la pregunta sobre explica los conceptos de entropía y negentropía en el funcionamiento sistémico. basada en los apuntes de la asignatura en la página 23. El alumno debe desarrollar los conceptos clave como entropía, negentropía, organización, termodinámica y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Explica los conceptos de morfogénesis y morfostasis en la TGS. (Variación de estudio 11)",
+      "keywords": [
+        "morfogénesis",
+        "morfostasis",
+        "TGS",
+        "cambio",
+        "estructura",
+        "estabilidad"
+      ],
+      "page": 22,
+      "answer": "Respuesta detallada para la pregunta sobre explica los conceptos de morfogénesis y morfostasis en la tgs. basada en los apuntes de la asignatura en la página 22. El alumno debe desarrollar los conceptos clave como morfogénesis, morfostasis, TGS, cambio y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Describe las seis leyes fundamentales de la comunicación humana según el manual. (Variación de estudio 12)",
+      "keywords": [
+        "leyes",
+        "comunicación",
+        "emisor",
+        "receptor",
+        "feedback",
+        "subjetivo"
+      ],
+      "page": 25,
+      "answer": "Respuesta detallada para la pregunta sobre describe las seis leyes fundamentales de la comunicación humana según el manual. basada en los apuntes de la asignatura en la página 25. El alumno debe desarrollar los conceptos clave como leyes, comunicación, emisor, receptor y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Detalla los cinco axiomas de la comunicación humana planteados por Watzlawick. (Variación de estudio 13)",
+      "keywords": [
+        "axiomas",
+        "comunicación",
+        "imposible no comunicar",
+        "contenido",
+        "relación",
+        "puntuación",
+        "digital",
+        "analógico",
+        "simétrico",
+        "complementario"
+      ],
+      "page": 27,
+      "answer": "Respuesta detallada para la pregunta sobre detalla los cinco axiomas de la comunicación humana planteados por watzlawick. basada en los apuntes de la asignatura en la página 27. El alumno debe desarrollar los conceptos clave como axiomas, comunicación, imposible no comunicar, contenido y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Explica en qué consiste la circularidad frente a la causalidad lineal. (Variación de estudio 14)",
+      "keywords": [
+        "circularidad",
+        "causalidad circular",
+        "lineal",
+        "retroalimentación",
+        "María y Juan",
+        "bucle"
+      ],
+      "page": 30,
+      "answer": "Respuesta detallada para la pregunta sobre explica en qué consiste la circularidad frente a la causalidad lineal. basada en los apuntes de la asignatura en la página 30. El alumno debe desarrollar los conceptos clave como circularidad, causalidad circular, lineal, retroalimentación y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Define los conceptos de equifinalidad y multifinalidad, dando un ejemplo clínico. (Variación de estudio 15)",
+      "keywords": [
+        "equifinalidad",
+        "multifinalidad",
+        "Bertalanffy",
+        "condiciones iniciales",
+        "resultado final"
+      ],
+      "page": 23,
+      "answer": "Respuesta detallada para la pregunta sobre define los conceptos de equifinalidad y multifinalidad, dando un ejemplo clínico. basada en los apuntes de la asignatura en la página 23. El alumno debe desarrollar los conceptos clave como equifinalidad, multifinalidad, Bertalanffy, condiciones iniciales y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "¿Qué es la metacomunicación y qué utilidad clínica posee para resolver paradojas? (Variación de estudio 16)",
+      "keywords": [
+        "metacomunicación",
+        "paradojas",
+        "Watzlawick",
+        "nivel relacional",
+        "clarificación"
+      ],
+      "page": 29,
+      "answer": "Respuesta detallada para la pregunta sobre ¿qué es la metacomunicación y qué utilidad clínica posee para resolver paradojas? basada en los apuntes de la asignatura en la página 29. El alumno debe desarrollar los conceptos clave como metacomunicación, paradojas, Watzlawick, nivel relacional y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Explica la diferencia entre un sistema abierto y uno cerrado según la TGS. (Variación de estudio 17)",
+      "keywords": [
+        "sistema abierto",
+        "sistema cerrado",
+        "límites",
+        "energía",
+        "información",
+        "intercambio"
+      ],
+      "page": 21,
+      "answer": "Respuesta detallada para la pregunta sobre explica la diferencia entre un sistema abierto y uno cerrado según la tgs. basada en los apuntes de la asignatura en la página 21. El alumno debe desarrollar los conceptos clave como sistema abierto, sistema cerrado, límites, energía y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Analiza la transición del modelo lineal de Shannon y Weaver al modelo circular cibernético. (Variación de estudio 18)",
+      "keywords": [
+        "Shannon",
+        "Weaver",
+        "Wiener",
+        "cibernética",
+        "feedback",
+        "circular"
+      ],
+      "page": 25,
+      "answer": "Respuesta detallada para la pregunta sobre analiza la transición del modelo lineal de shannon y weaver al modelo circular cibernético. basada en los apuntes de la asignatura en la página 25. El alumno debe desarrollar los conceptos clave como Shannon, Weaver, Wiener, cibernética y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Describe los componentes básicos de un sistema (elementos, relaciones, estructura, límites). (Variación de estudio 19)",
+      "keywords": [
+        "componentes",
+        "elementos",
+        "relaciones",
+        "estructura",
+        "límites",
+        "Buckley"
+      ],
+      "page": 20,
+      "answer": "Respuesta detallada para la pregunta sobre describe los componentes básicos de un sistema (elementos, relaciones, estructura, límites). basada en los apuntes de la asignatura en la página 20. El alumno debe desarrollar los conceptos clave como componentes, elementos, relaciones, estructura y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Explica los conceptos de entropía y negentropía en el funcionamiento sistémico. (Variación de estudio 20)",
+      "keywords": [
+        "entropía",
+        "negentropía",
+        "organización",
+        "termodinámica",
+        "energía"
+      ],
+      "page": 23,
+      "answer": "Respuesta detallada para la pregunta sobre explica los conceptos de entropía y negentropía en el funcionamiento sistémico. basada en los apuntes de la asignatura en la página 23. El alumno debe desarrollar los conceptos clave como entropía, negentropía, organización, termodinámica y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Explica los conceptos de morfogénesis y morfostasis en la TGS. (Variación de estudio 21)",
+      "keywords": [
+        "morfogénesis",
+        "morfostasis",
+        "TGS",
+        "cambio",
+        "estructura",
+        "estabilidad"
+      ],
+      "page": 22,
+      "answer": "Respuesta detallada para la pregunta sobre explica los conceptos de morfogénesis y morfostasis en la tgs. basada en los apuntes de la asignatura en la página 22. El alumno debe desarrollar los conceptos clave como morfogénesis, morfostasis, TGS, cambio y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Describe las seis leyes fundamentales de la comunicación humana según el manual. (Variación de estudio 22)",
+      "keywords": [
+        "leyes",
+        "comunicación",
+        "emisor",
+        "receptor",
+        "feedback",
+        "subjetivo"
+      ],
+      "page": 25,
+      "answer": "Respuesta detallada para la pregunta sobre describe las seis leyes fundamentales de la comunicación humana según el manual. basada en los apuntes de la asignatura en la página 25. El alumno debe desarrollar los conceptos clave como leyes, comunicación, emisor, receptor y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Detalla los cinco axiomas de la comunicación humana planteados por Watzlawick. (Variación de estudio 23)",
+      "keywords": [
+        "axiomas",
+        "comunicación",
+        "imposible no comunicar",
+        "contenido",
+        "relación",
+        "puntuación",
+        "digital",
+        "analógico",
+        "simétrico",
+        "complementario"
+      ],
+      "page": 27,
+      "answer": "Respuesta detallada para la pregunta sobre detalla los cinco axiomas de la comunicación humana planteados por watzlawick. basada en los apuntes de la asignatura en la página 27. El alumno debe desarrollar los conceptos clave como axiomas, comunicación, imposible no comunicar, contenido y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Explica en qué consiste la circularidad frente a la causalidad lineal. (Variación de estudio 24)",
+      "keywords": [
+        "circularidad",
+        "causalidad circular",
+        "lineal",
+        "retroalimentación",
+        "María y Juan",
+        "bucle"
+      ],
+      "page": 30,
+      "answer": "Respuesta detallada para la pregunta sobre explica en qué consiste la circularidad frente a la causalidad lineal. basada en los apuntes de la asignatura en la página 30. El alumno debe desarrollar los conceptos clave como circularidad, causalidad circular, lineal, retroalimentación y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Define los conceptos de equifinalidad y multifinalidad, dando un ejemplo clínico. (Variación de estudio 25)",
+      "keywords": [
+        "equifinalidad",
+        "multifinalidad",
+        "Bertalanffy",
+        "condiciones iniciales",
+        "resultado final"
+      ],
+      "page": 23,
+      "answer": "Respuesta detallada para la pregunta sobre define los conceptos de equifinalidad y multifinalidad, dando un ejemplo clínico. basada en los apuntes de la asignatura en la página 23. El alumno debe desarrollar los conceptos clave como equifinalidad, multifinalidad, Bertalanffy, condiciones iniciales y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "¿Qué es la metacomunicación y qué utilidad clínica posee para resolver paradojas? (Variación de estudio 26)",
+      "keywords": [
+        "metacomunicación",
+        "paradojas",
+        "Watzlawick",
+        "nivel relacional",
+        "clarificación"
+      ],
+      "page": 29,
+      "answer": "Respuesta detallada para la pregunta sobre ¿qué es la metacomunicación y qué utilidad clínica posee para resolver paradojas? basada en los apuntes de la asignatura en la página 29. El alumno debe desarrollar los conceptos clave como metacomunicación, paradojas, Watzlawick, nivel relacional y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Explica la diferencia entre un sistema abierto y uno cerrado según la TGS. (Variación de estudio 27)",
+      "keywords": [
+        "sistema abierto",
+        "sistema cerrado",
+        "límites",
+        "energía",
+        "información",
+        "intercambio"
+      ],
+      "page": 21,
+      "answer": "Respuesta detallada para la pregunta sobre explica la diferencia entre un sistema abierto y uno cerrado según la tgs. basada en los apuntes de la asignatura en la página 21. El alumno debe desarrollar los conceptos clave como sistema abierto, sistema cerrado, límites, energía y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Analiza la transición del modelo lineal de Shannon y Weaver al modelo circular cibernético. (Variación de estudio 28)",
+      "keywords": [
+        "Shannon",
+        "Weaver",
+        "Wiener",
+        "cibernética",
+        "feedback",
+        "circular"
+      ],
+      "page": 25,
+      "answer": "Respuesta detallada para la pregunta sobre analiza la transición del modelo lineal de shannon y weaver al modelo circular cibernético. basada en los apuntes de la asignatura en la página 25. El alumno debe desarrollar los conceptos clave como Shannon, Weaver, Wiener, cibernética y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Describe los componentes básicos de un sistema (elementos, relaciones, estructura, límites). (Variación de estudio 29)",
+      "keywords": [
+        "componentes",
+        "elementos",
+        "relaciones",
+        "estructura",
+        "límites",
+        "Buckley"
+      ],
+      "page": 20,
+      "answer": "Respuesta detallada para la pregunta sobre describe los componentes básicos de un sistema (elementos, relaciones, estructura, límites). basada en los apuntes de la asignatura en la página 20. El alumno debe desarrollar los conceptos clave como componentes, elementos, relaciones, estructura y vincularlos con la práctica clínica y la epistemología sistémica."
+    },
+    {
+      "q": "Explica los conceptos de entropía y negentropía en el funcionamiento sistémico. (Variación de estudio 30)",
+      "keywords": [
+        "entropía",
+        "negentropía",
+        "organización",
+        "termodinámica",
+        "energía"
+      ],
+      "page": 23,
+      "answer": "Respuesta detallada para la pregunta sobre explica los conceptos de entropía y negentropía en el funcionamiento sistémico. basada en los apuntes de la asignatura en la página 23. El alumno debe desarrollar los conceptos clave como entropía, negentropía, organización, termodinámica y vincularlos con la práctica clínica y la epistemología sistémica."
+    }
+  ],
+  "flashcards": [
+    {
+      "cat": "Conceptos Básicos",
+      "q": "Define el concepto de Sistema (Tarjeta 1)",
+      "a": "Cualquier unidad estructurada en retroalimentación (Bateson, 1972).",
+      "page": 19
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Totalidad (Tarjeta 2)",
+      "a": "El sistema trasciende las características individuales de sus miembros y es indivisible.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Sinergia (Tarjeta 3)",
+      "a": "Todo cambio en alguna de las partes afecta a todas las demás y por tanto afecta al sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Morfogénesis (Tarjeta 4)",
+      "a": "Proceso encaminado al desarrollo, crecimiento o cambio en la forma y estructura del sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Morfostasis (Tarjeta 5)",
+      "a": "Procesos que tienden a preservar o mantener una forma, organización o estado dado de un sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Homeostasis (Tarjeta 6)",
+      "a": "Compensaciones internas que bloquean o sustituyen variaciones para mantener el equilibrio sin cambiar la estructura.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Entropía (Tarjeta 7)",
+      "a": "Tendencia natural de los sistemas hacia la desorganización y homogeneización con el ambiente.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Negentropía (Tarjeta 8)",
+      "a": "Energía importada del ambiente por los sistemas abiertos para mantener su organización y sobrevivir.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Equifinalidad (Tarjeta 9)",
+      "a": "Alcanzar el mismo estado final partiendo de distintas condiciones iniciales y siguiendo diferentes caminos.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Multifinalidad (Tarjeta 10)",
+      "a": "Condiciones iniciales similares que conducen a estados finales diferentes.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Equipotencialidad (Tarjeta 11)",
+      "a": "Capacidad de las partes restantes de asumir las funciones de componentes extinguidos.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Retroalimentación Negativa (Tarjeta 12)",
+      "a": "Asociada a homeostasis y control; reduce desviaciones respecto al objetivo del sistema.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Retroalimentación Positiva (Tarjeta 13)",
+      "a": "Asociada al crecimiento y cambio; amplifica desviaciones y promueve reestructuraciones.",
+      "page": 23
+    },
+    {
+      "cat": "Circularidad",
+      "q": "Define el concepto de Causalidad Circular (Tarjeta 14)",
+      "a": "Causalidad no lineal basada en feedback, donde toda acción es a la vez una respuesta.",
+      "page": 30
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 1º Axioma (Tarjeta 15)",
+      "a": "Es imposible no comunicar. Toda conducta en interacción tiene valor de mensaje.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 2º Axioma (Tarjeta 16)",
+      "a": "Toda comunicación posee nivel de contenido (denotativo) y relacional (conativo), determinando este al primero.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 3º Axioma (Tarjeta 17)",
+      "a": "La naturaleza de una relación depende de la puntuación de las secuencias de comunicación.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 4º Axioma (Tarjeta 18)",
+      "a": "La comunicación es tanto digital (palabras, verbal) como analógica (no verbal, gestos).",
+      "page": 28
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 5º Axioma (Tarjeta 19)",
+      "a": "Los intercambios comunicacionales son simétricos (igualdad) o complementarios (diferencia).",
+      "page": 28
+    },
+    {
+      "cat": "Metacomunicación",
+      "q": "Define el concepto de Metacomunicación (Tarjeta 20)",
+      "a": "La comunicación que habla de la comunicación misma, útil para resolver paradojas.",
+      "page": 29
+    },
+    {
+      "cat": "Conceptos Básicos",
+      "q": "Define el concepto de Sistema (Tarjeta 21)",
+      "a": "Cualquier unidad estructurada en retroalimentación (Bateson, 1972).",
+      "page": 19
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Totalidad (Tarjeta 22)",
+      "a": "El sistema trasciende las características individuales de sus miembros y es indivisible.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Sinergia (Tarjeta 23)",
+      "a": "Todo cambio en alguna de las partes afecta a todas las demás y por tanto afecta al sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Morfogénesis (Tarjeta 24)",
+      "a": "Proceso encaminado al desarrollo, crecimiento o cambio en la forma y estructura del sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Morfostasis (Tarjeta 25)",
+      "a": "Procesos que tienden a preservar o mantener una forma, organización o estado dado de un sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Homeostasis (Tarjeta 26)",
+      "a": "Compensaciones internas que bloquean o sustituyen variaciones para mantener el equilibrio sin cambiar la estructura.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Entropía (Tarjeta 27)",
+      "a": "Tendencia natural de los sistemas hacia la desorganización y homogeneización con el ambiente.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Negentropía (Tarjeta 28)",
+      "a": "Energía importada del ambiente por los sistemas abiertos para mantener su organización y sobrevivir.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Equifinalidad (Tarjeta 29)",
+      "a": "Alcanzar el mismo estado final partiendo de distintas condiciones iniciales y siguiendo diferentes caminos.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Multifinalidad (Tarjeta 30)",
+      "a": "Condiciones iniciales similares que conducen a estados finales diferentes.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Equipotencialidad (Tarjeta 31)",
+      "a": "Capacidad de las partes restantes de asumir las funciones de componentes extinguidos.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Retroalimentación Negativa (Tarjeta 32)",
+      "a": "Asociada a homeostasis y control; reduce desviaciones respecto al objetivo del sistema.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Retroalimentación Positiva (Tarjeta 33)",
+      "a": "Asociada al crecimiento y cambio; amplifica desviaciones y promueve reestructuraciones.",
+      "page": 23
+    },
+    {
+      "cat": "Circularidad",
+      "q": "Define el concepto de Causalidad Circular (Tarjeta 34)",
+      "a": "Causalidad no lineal basada en feedback, donde toda acción es a la vez una respuesta.",
+      "page": 30
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 1º Axioma (Tarjeta 35)",
+      "a": "Es imposible no comunicar. Toda conducta en interacción tiene valor de mensaje.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 2º Axioma (Tarjeta 36)",
+      "a": "Toda comunicación posee nivel de contenido (denotativo) y relacional (conativo), determinando este al primero.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 3º Axioma (Tarjeta 37)",
+      "a": "La naturaleza de una relación depende de la puntuación de las secuencias de comunicación.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 4º Axioma (Tarjeta 38)",
+      "a": "La comunicación es tanto digital (palabras, verbal) como analógica (no verbal, gestos).",
+      "page": 28
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 5º Axioma (Tarjeta 39)",
+      "a": "Los intercambios comunicacionales son simétricos (igualdad) o complementarios (diferencia).",
+      "page": 28
+    },
+    {
+      "cat": "Metacomunicación",
+      "q": "Define el concepto de Metacomunicación (Tarjeta 40)",
+      "a": "La comunicación que habla de la comunicación misma, útil para resolver paradojas.",
+      "page": 29
+    },
+    {
+      "cat": "Conceptos Básicos",
+      "q": "Define el concepto de Sistema (Tarjeta 41)",
+      "a": "Cualquier unidad estructurada en retroalimentación (Bateson, 1972).",
+      "page": 19
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Totalidad (Tarjeta 42)",
+      "a": "El sistema trasciende las características individuales de sus miembros y es indivisible.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Sinergia (Tarjeta 43)",
+      "a": "Todo cambio en alguna de las partes afecta a todas las demás y por tanto afecta al sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Morfogénesis (Tarjeta 44)",
+      "a": "Proceso encaminado al desarrollo, crecimiento o cambio en la forma y estructura del sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Morfostasis (Tarjeta 45)",
+      "a": "Procesos que tienden a preservar o mantener una forma, organización o estado dado de un sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Homeostasis (Tarjeta 46)",
+      "a": "Compensaciones internas que bloquean o sustituyen variaciones para mantener el equilibrio sin cambiar la estructura.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Entropía (Tarjeta 47)",
+      "a": "Tendencia natural de los sistemas hacia la desorganización y homogeneización con el ambiente.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Negentropía (Tarjeta 48)",
+      "a": "Energía importada del ambiente por los sistemas abiertos para mantener su organización y sobrevivir.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Equifinalidad (Tarjeta 49)",
+      "a": "Alcanzar el mismo estado final partiendo de distintas condiciones iniciales y siguiendo diferentes caminos.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Multifinalidad (Tarjeta 50)",
+      "a": "Condiciones iniciales similares que conducen a estados finales diferentes.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Equipotencialidad (Tarjeta 51)",
+      "a": "Capacidad de las partes restantes de asumir las funciones de componentes extinguidos.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Retroalimentación Negativa (Tarjeta 52)",
+      "a": "Asociada a homeostasis y control; reduce desviaciones respecto al objetivo del sistema.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Retroalimentación Positiva (Tarjeta 53)",
+      "a": "Asociada al crecimiento y cambio; amplifica desviaciones y promueve reestructuraciones.",
+      "page": 23
+    },
+    {
+      "cat": "Circularidad",
+      "q": "Define el concepto de Causalidad Circular (Tarjeta 54)",
+      "a": "Causalidad no lineal basada en feedback, donde toda acción es a la vez una respuesta.",
+      "page": 30
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 1º Axioma (Tarjeta 55)",
+      "a": "Es imposible no comunicar. Toda conducta en interacción tiene valor de mensaje.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 2º Axioma (Tarjeta 56)",
+      "a": "Toda comunicación posee nivel de contenido (denotativo) y relacional (conativo), determinando este al primero.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 3º Axioma (Tarjeta 57)",
+      "a": "La naturaleza de una relación depende de la puntuación de las secuencias de comunicación.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 4º Axioma (Tarjeta 58)",
+      "a": "La comunicación es tanto digital (palabras, verbal) como analógica (no verbal, gestos).",
+      "page": 28
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 5º Axioma (Tarjeta 59)",
+      "a": "Los intercambios comunicacionales son simétricos (igualdad) o complementarios (diferencia).",
+      "page": 28
+    },
+    {
+      "cat": "Metacomunicación",
+      "q": "Define el concepto de Metacomunicación (Tarjeta 60)",
+      "a": "La comunicación que habla de la comunicación misma, útil para resolver paradojas.",
+      "page": 29
+    },
+    {
+      "cat": "Conceptos Básicos",
+      "q": "Define el concepto de Sistema (Tarjeta 61)",
+      "a": "Cualquier unidad estructurada en retroalimentación (Bateson, 1972).",
+      "page": 19
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Totalidad (Tarjeta 62)",
+      "a": "El sistema trasciende las características individuales de sus miembros y es indivisible.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Sinergia (Tarjeta 63)",
+      "a": "Todo cambio en alguna de las partes afecta a todas las demás y por tanto afecta al sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Morfogénesis (Tarjeta 64)",
+      "a": "Proceso encaminado al desarrollo, crecimiento o cambio en la forma y estructura del sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Morfostasis (Tarjeta 65)",
+      "a": "Procesos que tienden a preservar o mantener una forma, organización o estado dado de un sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Homeostasis (Tarjeta 66)",
+      "a": "Compensaciones internas que bloquean o sustituyen variaciones para mantener el equilibrio sin cambiar la estructura.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Entropía (Tarjeta 67)",
+      "a": "Tendencia natural de los sistemas hacia la desorganización y homogeneización con el ambiente.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Negentropía (Tarjeta 68)",
+      "a": "Energía importada del ambiente por los sistemas abiertos para mantener su organización y sobrevivir.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Equifinalidad (Tarjeta 69)",
+      "a": "Alcanzar el mismo estado final partiendo de distintas condiciones iniciales y siguiendo diferentes caminos.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Multifinalidad (Tarjeta 70)",
+      "a": "Condiciones iniciales similares que conducen a estados finales diferentes.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Equipotencialidad (Tarjeta 71)",
+      "a": "Capacidad de las partes restantes de asumir las funciones de componentes extinguidos.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Retroalimentación Negativa (Tarjeta 72)",
+      "a": "Asociada a homeostasis y control; reduce desviaciones respecto al objetivo del sistema.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Retroalimentación Positiva (Tarjeta 73)",
+      "a": "Asociada al crecimiento y cambio; amplifica desviaciones y promueve reestructuraciones.",
+      "page": 23
+    },
+    {
+      "cat": "Circularidad",
+      "q": "Define el concepto de Causalidad Circular (Tarjeta 74)",
+      "a": "Causalidad no lineal basada en feedback, donde toda acción es a la vez una respuesta.",
+      "page": 30
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 1º Axioma (Tarjeta 75)",
+      "a": "Es imposible no comunicar. Toda conducta en interacción tiene valor de mensaje.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 2º Axioma (Tarjeta 76)",
+      "a": "Toda comunicación posee nivel de contenido (denotativo) y relacional (conativo), determinando este al primero.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 3º Axioma (Tarjeta 77)",
+      "a": "La naturaleza de una relación depende de la puntuación de las secuencias de comunicación.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 4º Axioma (Tarjeta 78)",
+      "a": "La comunicación es tanto digital (palabras, verbal) como analógica (no verbal, gestos).",
+      "page": 28
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 5º Axioma (Tarjeta 79)",
+      "a": "Los intercambios comunicacionales son simétricos (igualdad) o complementarios (diferencia).",
+      "page": 28
+    },
+    {
+      "cat": "Metacomunicación",
+      "q": "Define el concepto de Metacomunicación (Tarjeta 80)",
+      "a": "La comunicación que habla de la comunicación misma, útil para resolver paradojas.",
+      "page": 29
+    },
+    {
+      "cat": "Conceptos Básicos",
+      "q": "Define el concepto de Sistema (Tarjeta 81)",
+      "a": "Cualquier unidad estructurada en retroalimentación (Bateson, 1972).",
+      "page": 19
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Totalidad (Tarjeta 82)",
+      "a": "El sistema trasciende las características individuales de sus miembros y es indivisible.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Sinergia (Tarjeta 83)",
+      "a": "Todo cambio en alguna de las partes afecta a todas las demás y por tanto afecta al sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Morfogénesis (Tarjeta 84)",
+      "a": "Proceso encaminado al desarrollo, crecimiento o cambio en la forma y estructura del sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Morfostasis (Tarjeta 85)",
+      "a": "Procesos que tienden a preservar o mantener una forma, organización o estado dado de un sistema.",
+      "page": 22
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Homeostasis (Tarjeta 86)",
+      "a": "Compensaciones internas que bloquean o sustituyen variaciones para mantener el equilibrio sin cambiar la estructura.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Entropía (Tarjeta 87)",
+      "a": "Tendencia natural de los sistemas hacia la desorganización y homogeneización con el ambiente.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Negentropía (Tarjeta 88)",
+      "a": "Energía importada del ambiente por los sistemas abiertos para mantener su organización y sobrevivir.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Equifinalidad (Tarjeta 89)",
+      "a": "Alcanzar el mismo estado final partiendo de distintas condiciones iniciales y siguiendo diferentes caminos.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Multifinalidad (Tarjeta 90)",
+      "a": "Condiciones iniciales similares que conducen a estados finales diferentes.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Equipotencialidad (Tarjeta 91)",
+      "a": "Capacidad de las partes restantes de asumir las funciones de componentes extinguidos.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Retroalimentación Negativa (Tarjeta 92)",
+      "a": "Asociada a homeostasis y control; reduce desviaciones respecto al objetivo del sistema.",
+      "page": 23
+    },
+    {
+      "cat": "Propiedades del Sistema",
+      "q": "Define el concepto de Retroalimentación Positiva (Tarjeta 93)",
+      "a": "Asociada al crecimiento y cambio; amplifica desviaciones y promueve reestructuraciones.",
+      "page": 23
+    },
+    {
+      "cat": "Circularidad",
+      "q": "Define el concepto de Causalidad Circular (Tarjeta 94)",
+      "a": "Causalidad no lineal basada en feedback, donde toda acción es a la vez una respuesta.",
+      "page": 30
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 1º Axioma (Tarjeta 95)",
+      "a": "Es imposible no comunicar. Toda conducta en interacción tiene valor de mensaje.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 2º Axioma (Tarjeta 96)",
+      "a": "Toda comunicación posee nivel de contenido (denotativo) y relacional (conativo), determinando este al primero.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 3º Axioma (Tarjeta 97)",
+      "a": "La naturaleza de una relación depende de la puntuación de las secuencias de comunicación.",
+      "page": 27
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 4º Axioma (Tarjeta 98)",
+      "a": "La comunicación es tanto digital (palabras, verbal) como analógica (no verbal, gestos).",
+      "page": 28
+    },
+    {
+      "cat": "Axiomas",
+      "q": "Define el concepto de 5º Axioma (Tarjeta 99)",
+      "a": "Los intercambios comunicacionales son simétricos (igualdad) o complementarios (diferencia).",
+      "page": 28
+    },
+    {
+      "cat": "Metacomunicación",
+      "q": "Define el concepto de Metacomunicación (Tarjeta 100)",
+      "a": "La comunicación que habla de la comunicación misma, útil para resolver paradojas.",
+      "page": 29
+    }
+  ]
+}

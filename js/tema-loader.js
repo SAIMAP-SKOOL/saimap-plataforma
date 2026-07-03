@@ -307,6 +307,15 @@ const THEME_SUBTITLES = {
         '5': 'Psicología Penitenciaria: Historia y Legislación',
         '6': 'Evaluación e Intervención en el Ámbito Penitenciario',
         '7': 'Mediación y Resolución de Conflictos'
+    },
+    'psicoterapias-sistemicas-y-de-pareja': {
+        '1-2': 'Introducción y Marcos Teóricos',
+        '3': 'Conceptos Básicos: Sistema y Comunicación',
+        '4': 'Variables del Funcionamiento Familiar',
+        '5': 'La Teoría del Doble Vínculo',
+        '6': 'Recursos Técnicos Generales',
+        '7': 'Escuelas de Terapia Familiar Sistémica',
+        '8': 'Terapia Breve Estratégica'
     }
 };
 
@@ -834,6 +843,24 @@ const THEME_CONFIG = {
         titleGradient: 'from-teal-700 to-teal-500',
         borderCard: 'border-b-teal-700',
         borderCardAlt: 'border-b-teal-500',
+    },
+    'psicoterapias-sistemicas-y-de-pareja': {
+        name: 'Psicoterapias Sistémicas y de Pareja',
+        icon: 'ph-users-four',
+        bg: '#fff7ed',
+        gradients: 'radial-gradient(at 0% 0%, hsla(25,100%,96%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(35,100%,96%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(15,100%,96%,1) 0,transparent 50%)',
+        primary: '#c2410c',
+        primaryGrad: 'linear-gradient(135deg, #c2410c 0%, #ea580c 50%, #fb923c 100%)',
+        primaryShadow: 'rgba(194, 65, 12, 0.4)',
+        accent: '#ea580c',
+        accentBg: '#fff7ed',
+        accentLight: '#ffedd5',
+        textAccent: '#c2410c',
+        optionHoverBorder: '#ea580c',
+        optionHoverBg: '#fff7ed',
+        titleGradient: 'from-orange-700 to-amber-500',
+        borderCard: 'border-b-orange-700',
+        borderCardAlt: 'border-b-amber-500',
     },
 
 '_default': {
