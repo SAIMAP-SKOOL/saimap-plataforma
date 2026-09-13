@@ -79,6 +79,45 @@
     return a;
   }
 
+  // ---------- Sesión aleatoria de ejercicios (con repaso de lecciones previas) ----------
+  const SESSION_SIZE = 10;
+  const REVIEW_COUNT = 2;
+
+  // A partir del banco completo de una lección (hasta ~24 ejercicios) construye
+  // la sesión de 10 que se juega esta vez: aleatoria dentro del banco propio y,
+  // salvo en la primerísima lección del curso, con 2 preguntas "de repaso"
+  // tomadas al azar de lecciones anteriores ya vistas, para reforzar el
+  // aprendizaje continuo. allLessons debe venir en el orden real del curso.
+  function buildLessonSession(allLessons, lessonId) {
+    const index = allLessons.findIndex((l) => l.id === lessonId);
+    const lesson = allLessons[index];
+    if (!lesson) return null;
+
+    const ownBank = lesson.exercises;
+    const isFirstLesson = index === 0;
+
+    let session;
+    if (isFirstLesson) {
+      session = _shuffle(ownBank).slice(0, Math.min(SESSION_SIZE, ownBank.length));
+    } else {
+      const reviewPool = [];
+      for (let i = 0; i < index; i++) {
+        reviewPool.push(...allLessons[i].exercises);
+      }
+      const reviewCount = Math.min(REVIEW_COUNT, reviewPool.length);
+      const ownCount = Math.min(SESSION_SIZE - reviewCount, ownBank.length);
+
+      const ownPicks = _shuffle(ownBank).slice(0, ownCount);
+      const reviewPicks = _shuffle(reviewPool)
+        .slice(0, reviewCount)
+        .map((ex) => Object.assign({}, ex, { _review: true }));
+
+      session = _shuffle(ownPicks.concat(reviewPicks));
+    }
+
+    return Object.assign({}, lesson, { exercises: session });
+  }
+
   function _normalize(str) {
     return String(str)
       .trim()
@@ -281,7 +320,14 @@
       const exercise = lesson.exercises[index];
       container.innerHTML = `
         ${renderProgressBar()}
-        <div class="text-[11px] font-bold text-violet-500 uppercase tracking-widest mb-2">Ejercicio ${index + 1} / ${lesson.exercises.length}</div>
+        <div class="flex items-center gap-2 mb-2">
+          <div class="text-[11px] font-bold text-violet-500 uppercase tracking-widest">Ejercicio ${index + 1} / ${lesson.exercises.length}</div>
+          ${
+            exercise._review
+              ? '<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-amber-50 text-amber-600 text-[10px] font-bold uppercase tracking-wide border border-amber-200">↻ Repaso</span>'
+              : ''
+          }
+        </div>
         <div class="text-lg font-extrabold text-slate-800 leading-snug mb-1">${exercise.prompt || ''}</div>
         <div class="gl-body"></div>
         <div class="gl-feedback mt-4 hidden rounded-2xl px-4 py-3 font-bold text-sm"></div>
@@ -368,6 +414,7 @@
   global.GuidedLessonEngine = {
     getCourseProgress,
     recordLessonComplete,
+    buildLessonSession,
     runLesson
   };
 })(window);
