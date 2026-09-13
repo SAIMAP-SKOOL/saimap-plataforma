@@ -124,7 +124,10 @@ function startLesson(lesson) {
   pickerView.classList.add('hidden');
   runnerView.classList.remove('hidden');
   window.scrollTo({ top: 0, behavior: 'smooth' });
-  window.GuidedLessonEngine.runLesson(runnerEl, lesson, {
+  // Sesión aleatoria de 10 ejercicios del banco de la lección (con 2 de
+  // repaso de lecciones anteriores, salvo en la primera lección del curso).
+  const session = window.GuidedLessonEngine.buildLessonSession(LESSONS, lesson.id) || lesson;
+  window.GuidedLessonEngine.runLesson(runnerEl, session, {
     courseId: COURSE_ID,
     onFinish: () => {
       const backBtn = document.createElement('button');
