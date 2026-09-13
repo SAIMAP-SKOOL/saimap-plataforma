@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interfaz de Estudio Guiado — Psicología del Pensamiento | SAIMAP</title>
+<meta name="description" content="Aprende Psicología del Pensamiento con una ruta de lecciones graduales estilo Duolingo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+  body { font-family: 'Inter', sans-serif; background: #f5f3ff; }
+  .gl-active-pulse { animation: gl-pulse 2s ease-in-out infinite; }
+  @keyframes gl-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(109,40,217,0.35); }
+    50% { box-shadow: 0 0 0 8px rgba(109,40,217,0); }
+  }
+  .gl-bg-radial {
+    background-image:
+      radial-gradient(at 0% 0%, hsla(265,75%,95%,1) 0, transparent 50%),
+      radial-gradient(at 50% 0%, hsla(275,75%,95%,1) 0, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(255,75%,95%,1) 0, transparent 50%);
+  }
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="gl-bg-radial min-h-screen flex flex-col">
+
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200 px-4 sm:px-6 py-3.5">
+    <div class="max-w-3xl mx-auto flex items-center justify-between gap-3">
+      <a href="../../../index.html?asignatura=psicologia-del-pensamiento" class="flex items-center gap-2.5 group">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center text-white shadow-md flex-shrink-0" style="background: linear-gradient(135deg,#6d28d9 0%,#8b5cf6 100%);">
+          <i class="ph-bold ph-lightbulb text-xl"></i>
+        </div>
+        <div class="leading-tight">
+          <div class="font-black text-slate-800 text-sm group-hover:text-violet-700 transition-colors">Psicología del Pensamiento</div>
+          <div class="text-[10px] font-bold uppercase tracking-widest text-violet-500">Estudio Guiado</div>
+        </div>
+      </a>
+      <a href="../../../index.html?asignatura=psicologia-del-pensamiento" class="inline-flex items-center gap-1.5 px-3.5 py-2 border border-slate-200 rounded-xl font-bold text-xs text-slate-600 bg-white shadow-sm hover:border-violet-300 hover:text-violet-700 transition-all flex-shrink-0">
+        <i class="ph-bold ph-arrow-left"></i> <span class="hidden sm:inline">Volver a la Asignatura</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-3xl w-full mx-auto px-4 sm:px-6 py-8">
+
+    <!-- VISTA: CAMINO DE LECCIONES -->
+    <section id="view-picker">
+      <div class="text-center mb-8">
+        <h1 class="text-4xl sm:text-5xl font-black tracking-tighter mb-3 bg-clip-text text-transparent" style="background-image: linear-gradient(135deg,#6d28d9 0%,#8b5cf6 100%); -webkit-background-clip: text;">SAIMAP</h1>
+        <h2 class="text-xl sm:text-2xl font-extrabold text-slate-800">Tu ruta de aprendizaje guiado</h2>
+        <p class="text-sm text-slate-500 mt-1">Avanza lección a lección por los 7 temas de Psicología del Pensamiento.</p>
+      </div>
+
+      <div class="flex justify-center gap-3 mb-8 flex-wrap">
+        <div class="bg-white border border-violet-100 rounded-2xl px-4 py-2.5 shadow-sm flex items-center gap-2">
+          <i class="ph-bold ph-lightning text-amber-500"></i>
+          <span class="text-xs font-bold text-slate-500">XP</span>
+          <span id="xpDisplay" class="font-black text-slate-800">0</span>
+        </div>
+        <div class="bg-white border border-violet-100 rounded-2xl px-4 py-2.5 shadow-sm flex items-center gap-2">
+          <i class="ph-bold ph-flame text-orange-500"></i>
+          <span class="text-xs font-bold text-slate-500">Racha</span>
+          <span id="streakDisplay" class="font-black text-slate-800">0</span>
+        </div>
+        <div class="bg-white border border-violet-100 rounded-2xl px-4 py-2.5 shadow-sm flex items-center gap-2">
+          <i class="ph-bold ph-check-circle text-emerald-500"></i>
+          <span class="text-xs font-bold text-slate-500">Completadas</span>
+          <span id="completedDisplay" class="font-black text-slate-800">0 / 0</span>
+        </div>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-3xl shadow-sm p-6 sm:p-8">
+        <div id="lessonPicker"></div>
+      </div>
+    </section>
+
+    <!-- VISTA: LECCIÓN EN CURSO -->
+    <section id="view-runner" class="hidden">
+      <div class="bg-white border border-slate-200 rounded-3xl shadow-sm p-6 sm:p-8">
+        <div id="lessonRunner"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-6 text-[11px] text-slate-400">
+    © 2026 SAIMAP. Interfaz de Estudio Guiado de Plataforma SAIMAP.
+  </footer>
+
+<script src="../../../js/guided-lesson-engine.js"></script>
+<script src="../../../js/guided-skill-path.js"></script>
+<script>
+const COURSE_ID = 'psicologia-del-pensamiento';
+const pickerView = document.getElementById('view-picker');
+const runnerView = document.getElementById('view-runner');
+const pickerEl = document.getElementById('lessonPicker');
+const runnerEl = document.getElementById('lessonRunner');
+
+let LESSONS = [];
+
+function renderProgressChips() {
+  const p = window.GuidedLessonEngine.getCourseProgress(COURSE_ID);
+  document.getElementById('xpDisplay').textContent = p.xp;
+  document.getElementById('streakDisplay').textContent = p.streak;
+  document.getElementById('completedDisplay').textContent = `${p.completedLessons.length} / ${LESSONS.length}`;
+  return p;
+}
+
+function renderPicker() {
+  const progress = renderProgressChips();
+  const nodes = window.GuidedSkillPath.computeStates(LESSONS, progress.completedLessons);
+  window.GuidedSkillPath.render(pickerEl, nodes, {
+    onSelect: (node) => {
+      const lesson = LESSONS.find((l) => l.id === node.id);
+      if (lesson) startLesson(lesson);
+    }
+  });
+}
+
+function startLesson(lesson) {
+  pickerView.classList.add('hidden');
+  runnerView.classList.remove('hidden');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.GuidedLessonEngine.runLesson(runnerEl, lesson, {
+    courseId: COURSE_ID,
+    onFinish: () => {
+      const backBtn = document.createElement('button');
+      backBtn.type = 'button';
+      backBtn.className = 'w-full mt-4 py-3.5 border-2 border-slate-200 rounded-2xl font-bold text-sm text-slate-600 hover:border-violet-300 hover:text-violet-700 transition-all';
+      backBtn.textContent = 'Volver a la ruta de lecciones';
+      backBtn.addEventListener('click', () => {
+        runnerView.classList.add('hidden');
+        pickerView.classList.remove('hidden');
+        renderPicker();
+      });
+      runnerEl.appendChild(backBtn);
+    }
+  });
+}
+
+fetch('lecciones.json')
+  .then((res) => {
+    if (!res.ok) throw new Error('No se pudo cargar lecciones.json');
+    return res.json();
+  })
+  .then((data) => {
+    LESSONS = data;
+    renderPicker();
+  })
+  .catch((err) => {
+    pickerEl.innerHTML = `<p class="text-center text-red-500 font-semibold text-sm py-8">Error al cargar la ruta de lecciones: ${err.message}</p>`;
+    console.error(err);
+  });
+</script>
+</body>
+</html>
