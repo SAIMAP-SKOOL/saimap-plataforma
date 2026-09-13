@@ -324,6 +324,15 @@ const THEME_SUBTITLES = {
         '4': 'Aplicaciones clínicas en adultos',
         '5': 'Aplicaciones clínicas en niños/as y adolescentes',
         '6': 'Glosario'
+    },
+    'psicologia-del-pensamiento': {
+        '1': 'Naturaleza y Fundamentos Históricos del Pensamiento',
+        '2': 'Pensamiento y Procesos Cognitivos Básicos',
+        '3.1': 'Pensamiento Lógico-Analítico y Reflexivo',
+        '3.2': 'Pensamiento Crítico y Creativo',
+        '4.1': 'Razonamiento Deductivo',
+        '4.2': 'Razonamiento Inductivo y Reflexivo',
+        '5': 'Solución de Problemas y Toma de Decisiones'
     }
 };
 
@@ -887,6 +896,24 @@ const THEME_CONFIG = {
         titleGradient: 'from-teal-700 to-cyan-500',
         borderCard: 'border-b-teal-700',
         borderCardAlt: 'border-b-cyan-500',
+    },
+    'psicologia-del-pensamiento': {
+        name: 'Psicología del Pensamiento',
+        icon: 'ph-lightbulb',
+        bg: '#f5f3ff', // Violet
+        gradients: 'radial-gradient(at 0% 0%, hsla(265,75%,95%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(275,75%,95%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(255,75%,95%,1) 0,transparent 50%)',
+        primary: '#6d28d9',
+        primaryGrad: 'linear-gradient(135deg, #6d28d9 0%, #8b5cf6 50%, #c4b5fd 100%)',
+        primaryShadow: 'rgba(109, 40, 217, 0.4)',
+        accent: '#8b5cf6',
+        accentBg: '#f5f3ff',
+        accentLight: '#ede9fe',
+        textAccent: '#6d28d9',
+        optionHoverBorder: '#8b5cf6',
+        optionHoverBg: '#f5f3ff',
+        titleGradient: 'from-violet-700 to-purple-500',
+        borderCard: 'border-b-violet-700',
+        borderCardAlt: 'border-b-purple-500',
     },
 
 '_default': {
