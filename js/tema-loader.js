@@ -333,6 +333,19 @@ const THEME_SUBTITLES = {
         '4.1': 'Razonamiento Deductivo',
         '4.2': 'Razonamiento Inductivo y Reflexivo',
         '5': 'Solución de Problemas y Toma de Decisiones'
+    },
+    'ansiedad-estres-y-salud': {
+        '1': 'Introducción',
+        '2.1': 'El Estrés: Concepto, Aproximación Psicosocial y Fuentes',
+        '2.2': 'Afrontamiento y Psicofisiología del Estrés',
+        '3.1': 'La Ansiedad: Concepto, Modelos Explicativos y Trastornos',
+        '3.2': 'Evaluación de la Ansiedad',
+        '4.1': 'Concepto y Proceso Emocional',
+        '4.2': 'Teorías, Función y Tipos de Emociones',
+        '4.3': 'Influencia de las Emociones sobre la Salud',
+        '5': 'Cognición, Emoción y Ansiedad',
+        '6': 'Personalidad, Estrés y Salud',
+        '7': 'Programas y Técnicas de Intervención'
     }
 };
 
@@ -914,6 +927,24 @@ const THEME_CONFIG = {
         titleGradient: 'from-violet-700 to-purple-500',
         borderCard: 'border-b-violet-700',
         borderCardAlt: 'border-b-purple-500',
+    },
+    'ansiedad-estres-y-salud': {
+        name: 'Ansiedad, Estrés y Salud',
+        icon: 'ph-heartbeat',
+        bg: '#f0f9ff', // Sky
+        gradients: 'radial-gradient(at 0% 0%, hsla(199,90%,95%,1) 0,transparent 50%),radial-gradient(at 50% 0%, hsla(190,90%,95%,1) 0,transparent 50%),radial-gradient(at 100% 0%, hsla(210,90%,95%,1) 0,transparent 50%)',
+        primary: '#0369a1',
+        primaryGrad: 'linear-gradient(135deg, #0369a1 0%, #0ea5e9 50%, #7dd3fc 100%)',
+        primaryShadow: 'rgba(3, 105, 161, 0.4)',
+        accent: '#0ea5e9',
+        accentBg: '#f0f9ff',
+        accentLight: '#e0f2fe',
+        textAccent: '#0369a1',
+        optionHoverBorder: '#0ea5e9',
+        optionHoverBg: '#f0f9ff',
+        titleGradient: 'from-sky-700 to-cyan-500',
+        borderCard: 'border-b-sky-700',
+        borderCardAlt: 'border-b-cyan-500',
     },
 
 '_default': {
